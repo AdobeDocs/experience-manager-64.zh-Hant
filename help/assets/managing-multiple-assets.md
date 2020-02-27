@@ -3,7 +3,7 @@ title: 大量編輯多個資產和系列的中繼資料
 description: 瞭解如何同時編輯許多資產和系列的中繼資料，以快速傳播常見的中繼資料變更。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
 
 ---
 
@@ -52,26 +52,6 @@ Adobe Enterprise Manager(AEM)Assets可讓您同時編輯多個資產的中繼資
    >
    >對於單值欄位，即使您選擇「附加模式」，新元資料也不會附加到欄位中的現 **[!UICONTROL 有值]**。
 
-## 編輯多個系列的中繼資料屬性 {#editing-metadata-properties-of-multiple-collections}
-
-1. 從「系列」控制台中，選取您要編輯的系列。
-1. 從工具列點選／按一下「屬 **[!UICONTROL 性]** 」圖示，以開啟所選系列的屬性頁面。
-1. 在各種標籤下修改所選系列的中繼資料屬性。
-
-   >[!NOTE]
-   >
-   >您為所選系列新增的中繼資料會覆寫這些系列的先前中繼資料，但標籤除外。 您在「標籤」欄位中新 **[!UICONTROL 增的任何標籤]** ，都會附加至中繼資料中現有的標籤清單。
-
-1. 若要檢視特定系列的中繼資料屬性，請取消選取系列清單中的其餘系列。 中繼資料編輯器欄位會填入特定系列的中繼資料。
-
-   >[!NOTE]
-   >
-   >* 在系列屬性頁面中，您可以取消選取系列，從系列清單中移除系列。 系列清單預設會選取所有系列。 您移除之系列的中繼資料不會更新。
-   >* 在清單頂端，選取「標題」( **Title** )附近的核取方塊，在選取系列和清除清單之間切換。
-
-
-1. 儲存變更。
-
 ## 設定大量中繼資料更新的限制 {#configure-limit-for-bulk-metadata-update}
 
 為避免DOS類似情況，AEM會限制Sling請求中支援的參數數。 一次更新許多資產的中繼資料時，您可能會達到限制，而且無法針對更多資產更新中繼資料。 AEM會在記錄檔中產生下列警告：
@@ -79,3 +59,7 @@ Adobe Enterprise Manager(AEM)Assets可讓您同時編輯多個資產的中繼資
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
 To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+
+>[!MORELIKETHIS]
+>
+>* [大量編輯多個系列的中繼資料](managing-collections-touch-ui.md#editing-collection-metadata-in-bulk)
