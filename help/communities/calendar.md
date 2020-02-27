@@ -1,0 +1,219 @@
+---
+title: 日曆功能
+seo-title: 日曆功能
+description: 以日曆格式提供社群活動資訊
+seo-description: 以日曆格式提供社群活動資訊
+uuid: 6f1f327f-bf4b-4357-b8fd-4bec74016921
+contentOwner: msm-service
+products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
+topic-tags: authoring
+content-type: reference
+discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
+translation-type: tm+mt
+source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+
+---
+
+
+# 日曆功能 {#calendar-feature}
+
+## 簡介 {#introduction}
+
+日曆功能支援以日曆格式為所有網站訪客或僅登入網站訪客（社群成員）提供社群事件資訊，而只有授權的成員可新增事件。
+
+本節說明：
+
+* 新增日曆功能至AEM網站
+* 元件的配置設 `Calendar`置
+
+## 新增日曆至頁面 {#adding-a-calendar-to-a-page}
+
+若要在作 `Calendar` 者模式中將元件新增至頁面，請使用元件瀏覽器來尋找
+
+* `Communities / Calendar`
+
+並將它拖曳至頁面上，例如與功能相對的位置，讓使用者檢視。
+
+如需必要資訊，請造 [訪Communities Components Basics](basics.md)。
+
+當包含 [所需的用戶端程式庫](calendar-basics-for-developers.md#essentials-for-client-side) ，元件的顯示方式 `Calendar` 就是這樣。
+
+![chlimage_1-112](assets/chlimage_1-112.png)
+
+### 設定日曆 {#configuring-calendar}
+
+選擇要訪問 `Calendar`的已放置元件，並選 `Configure` 擇開啟編輯對話框的表徵圖。
+
+![chlimage_1-113](assets/chlimage_1-113.png) ![chlimage_1-114](assets/chlimage_1-114.png)
+
+#### 「設定」頁籤 {#settings-tab}
+
+在「設 **[!UICONTROL 定]** 」標籤下，指定是否允許將標籤套用至日曆項目。
+
+* **[!UICONTROL 每個頁面的事件]**
+
+   定義每頁顯示的事件數。 預設值為10。
+
+* **[!UICONTROL 已審核]**
+
+   如果勾選，則必須先核准張貼日曆事件和留言，才能顯示在發佈網站上。 預設為未勾選。
+
+* **[!UICONTROL 已關閉]**
+
+   如果勾選，日曆將關閉至新事件項目和留言。 預設為未勾選。
+
+* **[!UICONTROL RTF 編輯器]**
+
+   如果勾選，則可輸入帶有標注的日曆事件和注釋。 已勾選預設值。
+
+* **[!UICONTROL 允許標記]**
+
+   如果勾選，允許成員將標籤標籤新增至他們張貼的事件(請參 **閱標籤欄位** 標籤)。 已勾選預設值。
+
+* **[!UICONTROL 允許檔案上傳]**
+
+   如果勾選，允許將檔案附件新增至日曆事件或註解。 已勾選預設值。
+
+* **[!UICONTROL 允許關注]**
+
+   如果勾選，允許成員關注張貼至日曆的事件。 已勾選預設值。
+
+* **[!UICONTROL 最大檔案大小]**
+
+   僅在勾選時 `Allow File Uploads` 相關。 此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
+
+* **[!UICONTROL 允許的檔案類型]**
+
+   僅在勾選時 `Allow File Uploads` 相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
+
+* **[!UICONTROL 附加影像檔案最大大小]**
+
+   僅在勾選「允許檔案上傳」時相關。 上傳的影像檔案的位元組數上限。 預設值為2097152(2 Mb)。
+
+* **[!UICONTROL 允許的封面影像類型]**
+
+   以逗號分隔的影像副檔名清單，並使用&quot;dot&quot;分隔符號。 預設為 `.jpg,.jpeg,.png,.gif,.bmp`。
+
+* **[!UICONTROL 允許執行緒式回覆]**
+
+   如果勾選，允許回覆張貼至日曆事件的留言。 已勾選預設值。
+
+* **[!UICONTROL 允許使用者刪除評論和事件]**
+
+   如果勾選，允許成員刪除其張貼的留言和日曆事件。 已勾選預設值。
+
+* **[!UICONTROL 允許投票]**
+
+   如果勾選，請將「投票」功能與日曆事件一起加入。 已勾選預設值。
+
+* **[!UICONTROL 顯示階層連結]**
+
+   在事件頁面上顯示階層連結. 已勾選預設值。
+
+* **[!UICONTROL 日期範圍篩選]**
+
+   定義新增至目前日期的天數，以計算日曆事件清單頁面篩選的「至」值。 預設數字為30。
+
+* **[!UICONTROL 允許主要內容]**
+
+   若勾選，此構想即可識別為特 [色內容](featured.md)。 預設為未勾選。
+
+在「使用 **[!UICONTROL 者協調]** 」標籤下，指定如何管理已張貼的主題和回覆（使用者產生的內容）。 如需詳細資訊，請參閱 [協調使用者產生的內容](moderate-ugc.md)。
+
+#### 使用者協調標籤 {#user-moderation-tab}
+
+* **[!UICONTROL 拒絕貼文]**
+
+   如果勾選，則可讓受信任的會員協調者拒絕貼文，並防止貼文出現在公開論壇。 已勾選預設值。
+
+* **[!UICONTROL 關閉 / 重新開啟事件]**
+
+   如果勾選，受信任的成員協調者可關閉事件以進一步編輯和留言，也可重新開啟事件。 已勾選預設值。
+
+* **[!UICONTROL 標籤貼文]**
+
+   如果勾選，允許成員將其他事件或留言標籤為不適當。 已勾選預設值。
+
+* **[!UICONTROL 標籤原因清單]**
+
+   如果勾選，允許成員從下拉式清單中選擇其標籤事件或留言為不適當的理由。 預設為未勾選。
+
+* **[!UICONTROL 自訂標幟原因]**
+
+   如果勾選，允許成員輸入自己為標籤事件或留言的原因，將其標籤為不適當。 預設為未勾選。
+
+* **[!UICONTROL 協調臨界值]**
+
+   輸入成員在通知協調者之前必須標籤事件或留言的次數。 預設值為1（一次）。
+
+* **[!UICONTROL 標幟限制]**
+
+   輸入事件或留言在公開檢視中隱藏前必須加以標幟的次數。 如果設為-1，則標籤的主題或留言永遠不會隱藏在公開檢視中。 否則，此數字必須大於或等於「協調臨界值」。 預設值為5。
+
+#### 「標籤」欄位頁籤 {#tag-field-tab}
+
+在「標 **[!UICONTROL 記」欄位]** (Tag field **** )標籤下，可套用的標籤（如果允許）會根據選擇的名稱空間加以限制。
+
+* **[!UICONTROL 允許的命名空間]**
+
+   如果已勾選 `Allow Tagging` 「設定」標籤下 **[!UICONTROL 的選項]** ，則相關。 可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
+
+* **[!UICONTROL 建議限制]**
+
+   輸入要作為建議顯示給發佈到論壇的成員的標籤數。 預設值 `-1` 為（無限制）。
+
+>[!NOTE]
+>
+>請造 [訪管理標籤](../../help/sites-administering/tags.md) ，瞭解如何新增標籤命名空間（分類）。
+
+#### 翻譯標籤 {#translation-tab}
+
+在「轉 **[!UICONTROL 譯]** 」標籤下，如果為社群網站啟用了轉譯，則可將翻譯設定為翻譯整個主題（事件和注釋），而不是翻譯特定帖子。
+
+* **[!UICONTROL 全部轉換]**
+
+   如果勾選，事件和留言會轉譯為使用者偏好的語言。 已勾選預設值。
+
+## 網站訪客體驗 {#site-visitor-experience}
+
+在發佈環境中，日曆功能將顯示具有預設日期範圍的搜尋欄位，以及任何落在該範圍內的日曆事件。
+
+選擇日曆事件時，將顯示日曆事件詳細資訊、說明和注釋。
+
+其他功能取決於網站訪客是協調者、管理員、社群成員、特權成員還是匿名。
+
+### 協調者與管理員 {#moderators-and-administrators}
+
+當登入的使用者具有協調者或管理員權限時，他們就可以對張貼至事件的所有日曆事件和留言執行協調 [任務](moderate-ugc.md) （依照元件的設定許可）。
+
+![chlimage_1-115](assets/chlimage_1-115.png)
+
+### 成員 {#members}
+
+當登入使用者是社群成員或特權 [成員](users.md#privileged-members-group) （視設定而定）時，他們可以選擇 `New Event` 建立並張貼新的日曆事件。
+
+具體而言，他們可能
+
+* 建立新的日曆事件
+* 將留言張貼至日曆事件
+* 編輯自己的日曆事件或留言
+* 刪除其自己的日曆事件或留言
+* 標籤其他人的日曆事件或注釋
+
+![chlimage_1-116](assets/chlimage_1-116.png) ![chlimage_1-117](assets/chlimage_1-117.png)
+
+### 匿名 {#anonymous}
+
+未登入的網站訪客只能閱讀已張貼的日曆事件、翻譯事件（如果支援），但不得新增事件或留言，也不得標籤其他人的事件或留言。
+
+![chlimage_1-118](assets/chlimage_1-118.png)
+
+## 其他資訊 {#additional-information}
+
+如需詳細資訊，請參閱開發人 [員的Calendar Essentials](calendar-basics-for-developers.md) （行事歷）頁面。
+
+如需日曆事件和留言的協調，請參閱協 [調使用者產生的內容](moderate-ugc.md)。
+
+如需標籤日曆事件和注釋，請參閱 [標籤使用者產生的內容](tag-ugc.md)。
+
+有關日曆事件和注釋的翻譯，請參 [閱翻譯用戶生成的內容](translate-ugc.md)。
