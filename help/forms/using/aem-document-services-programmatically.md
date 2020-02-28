@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 90ea3f4aa53b00e975542a62da08b348f6097be1
 
 ---
 
@@ -4257,7 +4257,7 @@ String outputFolder="C:/Output";
 
 ## 表單服務 {#forms-service}
 
-Forms服務提供API，可匯入資料至互動式PDF表單，以及從其匯出資料。 互動式PDF表單是PDF檔案，包含一或多個欄位，用來顯示和收集使用者的資訊。 服務支援下列API:
+Forms服務提供API，可匯入和匯出互動式PDF表單的資料。 互動式PDF表單是PDF檔案，包含一或多個欄位，用來顯示和收集使用者的資訊。 服務支援下列API:
 
 * **[](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p)exportData **:從PDF表單匯出資料。
 * **[](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p)importData **:將資料匯入互動式PDF表單。
@@ -4441,39 +4441,38 @@ GeneratePDFService提供API，可將各種檔案格式，例如。doc、.docx、
 
 #### PDF Generator API適用於Microsoft windows和Linux {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>API</strong></td> 
-   <td><p><strong>Microsoft Windows </strong></p> </td> 
-   <td><strong>Linux </strong></td> 
-  </tr> 
-  <tr> 
-   <td>createPDF</td> 
-   <td><strong>✓</strong></td> 
-   <td><strong>✓</strong></td> 
-  </tr> 
-  <tr> 
-   <td>exportPDF</td> 
-   <td><strong>✓</strong></td> 
-   <td><strong>✓</strong></td> 
-  </tr> 
-  <tr> 
-   <td>最佳化PDF</td> 
-   <td><strong>✓</strong></td> 
-   <td>✖</td> 
-  </tr> 
-  <tr> 
-   <td>exportPDF</td> 
-   <td><strong>✓</strong></td> 
-   <td>✖</td> 
-  </tr> 
-  <tr> 
-   <td>OCR PDF（可搜尋的PDF）</td> 
-   <td><strong>✓</strong></td> 
-   <td>✖</td> 
-  </tr> 
- </tbody> 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>API</strong></td>
+   <td><p><strong>Microsoft Windows </strong></p> </td>
+   <td><strong>Linux </strong></td>
+  </tr>
+  <tr>
+   <td>createPDF</td>
+   <td><strong>✓</strong></td>
+   <td><strong>✓</strong></td>
+  </tr>
+  <tr>
+   <td>htmlToPDF</td>
+   <td><strong>✓</strong></td>
+   <td><strong>✓</strong></td>
+  </tr>
+   <td>最佳化PDF</td>
+   <td><strong>✓</strong></td>
+   <td>✖</td>
+  </tr>
+  <tr>
+   <td>exportPDF</td>
+   <td><strong>✓</strong></td>
+   <td>✖</td>
+  </tr>
+  <tr>
+   <td>OCR PDF（可搜尋的PDF）</td>
+   <td><strong>✓</strong></td>
+   <td>✖</td>
+  </tr>
+ </tbody>
 </table>
 
 #### createPDF {#createpdf}
