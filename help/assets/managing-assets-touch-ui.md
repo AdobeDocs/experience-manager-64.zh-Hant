@@ -4,7 +4,7 @@ description: 瞭解各種資產管理和編輯工作，您可使用AEM Assets的
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 28ebd6c7648e4f32203e20dbc8a7d7f205acb740
+source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
 
 ---
 
@@ -381,7 +381,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
 不會結轉資產特定副本的少數屬性。 例如：
 
-* 相對路徑、資產ID、建立日期和時間，以及版本和版本記錄。 有些屬性由屬性、 `dam:relativePath`、 `jcr:uuid``jcr:created`和表示 `cq:name`。
+* 資產ID、建立日期和時間，以及版本和版本記錄。 有些屬性由屬性、 `jcr:uuid`和 `jcr:created`指示 `cq:name`。
 
 * 每個資產及其每個轉譯的建立時間和參考路徑都是唯一的。
 
@@ -628,7 +628,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-與清單檢視類似， **[!UICONTROL 當您將滑鼠圖示暫留在縮圖上方（在欄檢視中的資產或檔案夾名稱之前）時，會顯示「選取(Select]** )」。
+與清單檢視類似， **[!UICONTROL 當您將滑鼠圖示暫留在縮圖上方（在欄檢視中的資產或資料夾名稱之前）時，會顯示「選取(Select]** )」。
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
