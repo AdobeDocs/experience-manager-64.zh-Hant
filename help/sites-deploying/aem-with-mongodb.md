@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 3c59ec8f-b72f-48dd-bac8-9817005ae210
 translation-type: tm+mt
-source-git-commit: f9a147ee60d3088bb9245258146323d52c747642
+source-git-commit: 77997d6d8744cf1498add91a0aa2dab4e29f8e3d
 
 ---
 
@@ -40,7 +40,7 @@ MongoDB通常用於支援符合下列條件之一的AEM作者部署：
 
 ### AEM的MongoDB部署最少 {#minimal-mongodb-deployment-for-aem}
 
-以下是AEM在MongoDB上的最低部署。 為簡單起見，SSL終止和HTTP proxy元件已推廣。 它由一個MongoBD複製副本集組成，具有一個主映像和兩個輔助映像。
+以下是AEM在MongoDB上的最低部署。 為簡單起見，SSL終止和HTTP proxy元件已推廣。 它由一個MongoDB複製副本集組成，具有一個主映像和兩個輔助映像。
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -264,7 +264,7 @@ MongoDB可在多種作業系統上執行，包括多種Linux風格、Windows和M
 * 在來賓VM中使用用於虛擬化驅動器的noop磁碟調度程式。
 * 禁用NUMA或將vm.zone_reclaim_mode設定為0並運行 [mongod](https://docs.mongodb.com/manual/administration/production-notes/#readahead) instances with node interrang. 請參閱：MongoDB [和NUMA硬體](https://docs.mongodb.com/manual/administration/production-notes/#readahead) ，以取得詳細資訊。
 
-* 調整硬體上的上限值，以符合您的使用案例。 如果多 [個mongod](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) 或 [](https://docs.mongodb.com/manual/reference/program/mongos/#bin.mongos) mongos例項在同一個使用者下執行，請相應地縮放ulimit值。 請參閱： [UNIX上限設定](https://docs.mongodb.com/manual/reference/ulimit/) ，以瞭解詳細資訊。
+* 調整硬體上的上限值以符合您的使用案例。 如果多 [個mongod](https://docs.mongodb.com/manual/reference/program/mongod/#bin.mongod) 或 [](https://docs.mongodb.com/manual/reference/program/mongos/#bin.mongos) mongos例項在同一個使用者下執行，請相應地縮放ulimit值。 請參閱： [UNIX上限設定](https://docs.mongodb.com/manual/reference/ulimit/) ，以瞭解詳細資訊。
 
 * 對 [dbPath裝載點使用noatime](https://docs.mongodb.com/manual/reference/configuration-options/#storage.dbPath) 。
 * 為部署配置足夠的檔案句柄(fs.file-max)、內核pid限制(kernel.pid_max)和每個進程的最大線程(kernel.threads-max)。 對於大型系統，以下值提供了良好的起點：
