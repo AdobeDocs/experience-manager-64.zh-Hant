@@ -3,7 +3,7 @@ title: 階層式中繼資料
 description: 本文說明如何定義資產的階層式中繼資料。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -106,9 +106,8 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
    ![視訊資產的階層式中繼資料](assets/video_asset.png)
 
-   **** 圖：視訊 *資產的階層式中繼資料*
+   *圖：視訊資產的階層式中繼資料*
 
    ![檔案資產的階層式中繼資料](assets/doc_type_fields.png)
 
-   **** 圖：文 *件資產的階層式中繼資料*
-
+   *圖：檔案資產的階層式中繼資料*
