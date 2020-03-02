@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: 154f92ac459ff4d4a69bcad9b8beae440582beec
+source-git-commit: 274c043eadbb6dda125062bf53ed145a5b101a2e
 
 ---
 
@@ -215,7 +215,7 @@ Options:
 
 以下是在VLT中執行的一些常見任務。 有關每個命令的詳細資訊，請參見各 [個命令](#vlt-commands)。
 
-### 檢出Aubtree {#checking-out-a-subtree}
+### 檢出子樹 {#checking-out-a-subtree}
 
 例如，如果只想簽出儲存庫的子樹， `/apps/geometrixx`則可通過鍵入以下內容來執行此操作：
 
