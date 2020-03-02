@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: c703f4af30c2093d9600d0771dc1034cd6465c8c
+source-git-commit: 1d02401f6b1946062eb238baa2fb70bbd47881a6
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: c703f4af30c2093d9600d0771dc1034cd6465c8c
 | 版本 | 6.4.7.0 |
 | 類型 | Service pack版本 |
 | 日期 | 2019年12月12日 |
-| 下載URL | AEM 6.4.7.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0), [Software Distribution](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.7.zip) |
+| 下載URL | AEM 6.4.7.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0) |
 
 ## AEM 6.4.7.0包含的功能 {#what-s-included-in-aem}
 
@@ -143,7 +143,7 @@ AEM 6.4.7.0的一些主要亮點是：
 
 ### Sling {#sling-6470}
 
-* 將webconsole安全提供者套件版本更新為1.2.4，以移除webconsolesecurityprovider(NPR-30885)中launchpad啟動器api的依賴性。
+* 將webconsole安全提供者套件版本更新為1.2.4，以移除webconsolesecurityprovider(NPR-30885)中launchpad啟動器API的相依性。
 
 ### 平台 {#platform}
 
@@ -791,7 +791,7 @@ AEM 6.4.4.0的一些主要亮點是：
 * 每當在服務啟動期間調用getTaskRenders時，ProjectTaskListServlet就會洩漏ResourceResolver。 NPR-27590:CQ-4258011的修補程式
 * 如果目錄的子目錄數多於頁面大小，並且排序依日期或大小而定，則錯誤會阻止您跳過第一頁。 NPR-28867:CQ-4265039的修補程式
 * 在DAM檢視器中支援跨網站指令碼(XSS)修正。 NPR-28106: CQ-4253215的修補程式
-* 項目管理員無法將頁面添加到翻譯項目，因為將新頁面添加到翻譯項目的連結不可見。 CQ-4266334的修補程式
+* 無法由項目管理員將頁面添加到翻譯項目中，因為將新頁面添加到翻譯項目的連結不可見。 CQ-4266334的修補程式
 
 **工作流程**
 
