@@ -4,7 +4,7 @@ description: 瞭解各種資產管理和編輯工作，您可使用AEM Assets的
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
+source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
 
 ---
 
@@ -21,7 +21,9 @@ source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
 
 >[!NOTE]
 >
->共用至Marketing cloud時，不 `sling:OrderedFolder` 支援共用類型的「資產」檔案夾。 如果要共用資料夾，請不要在建立資料夾時選擇「已排序」。
+>* 共用至Marketing cloud時，不 `sling:OrderedFolder` 支援共用類型的「資產」檔案夾。 如果要共用資料夾，請不要在建立資料夾時選擇「已排序」。
+>* Experience manager不允許將 `subassets` Word用作資料夾的名稱。 它是為節點保留的關鍵字，其中包含複合資產的子資產。
+
 
 1. 導覽至您要建立新資料夾的數位資產檔案夾。
 1. 在功能表中，按一下「 **[!UICONTROL 建立]**」。 選擇「 **[!UICONTROL 新建資料夾]**」。
