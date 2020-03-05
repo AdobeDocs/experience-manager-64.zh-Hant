@@ -21,8 +21,8 @@ source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
 
 >[!NOTE]
 >
->* 共用至Marketing cloud時，不 `sling:OrderedFolder` 支援共用類型的「資產」檔案夾。 如果要共用資料夾，請不要在建立資料夾時選擇「已排序」。
->* Experience manager不允許將 `subassets` Word用作資料夾的名稱。 它是為節點保留的關鍵字，其中包含複合資產的子資產。
+>* 共用至Marketing Cloud時，不 `sling:OrderedFolder` 支援共用類型的「資產」檔案夾。 如果要共用資料夾，請不要在建立資料夾時選擇「已排序」。
+>* Experience Manager不允許將 `subassets` Word用作資料夾的名稱。 它是為節點保留的關鍵字，其中包含複合資產的子資產。
 
 
 1. 導覽至您要建立新資料夾的數位資產檔案夾。
@@ -158,7 +158,7 @@ source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
    >當您透過FTP上傳資產時，您在Dynamic Media Classic(Scene7)中設定的上傳工作選項會取代在AEM中設定的資產處理參數。
 
 1. 在「上傳工作選項」對話方塊的 **[!UICONTROL 右下角]** ，點選「 **[!UICONTROL 儲存」]**。
-1. 在「上傳」頁面的右下角，點 **[!UICONTROL 選「送出]****[!UICONTROL 上傳」]**。
+1. 在「上傳」頁面的右下角，點 **[!UICONTROL 選「提交]****[!UICONTROL 上傳」]**。
 
    若要檢視上傳的進度，請在全域導覽列上點選「工 **[!UICONTROL 作」]**。 「作 **[!UICONTROL 業]** 」頁顯示上載進度。 您可以繼續在AEM中工作，並隨時返回Dynamic Media Classic中的「工作」頁面，以檢視進行中的工作。
 
@@ -228,7 +228,7 @@ source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
 
 PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案時，您可以從檔案自動建立影像範本（選取「上傳」畫面上的「建立範本」選項）。
 
-如果您使用PSD檔案建立範本，Dynamic media會從含圖層的PSD檔案建立多張影像；它會為每個圖層建立一個影像。
+如果您使用PSD檔案建立範本，Dynamic Media會從含圖層的PSD檔案建立多張影像；它會為每個圖層建立一個影像。
 
 使用上 **[!UICONTROL 述的「裁切選]** 項 **[!UICONTROL 」和「色彩描述檔選項]**」以及Photoshop上傳選項。
 
@@ -277,7 +277,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
 | 選項 | 子選項 | 說明 |
 |---|---|---|
-| 適應性影片 |  | 單一編碼預設集可搭配任何外觀比例運作，以建立視訊，以便發佈至行動裝置、平板電腦和桌上型電腦。 使用此預設集編碼的已上傳來源影片會以固定高度設定。 不過，寬度會自動縮放，以保留視訊的外觀比例。 <br>最佳實務是使用最適化視訊編碼。 |
+| 適應性影片 |  | 單一編碼預設集，可搭配任何外觀比例建立視訊，以便發佈至行動裝置、平板電腦和桌上型電腦。 使用此預設集編碼的已上傳來源影片會以固定高度設定。 不過，寬度會自動縮放，以保留視訊的外觀比例。 <br>最佳實務是使用最適化視訊編碼。 |
 | 單一編碼預設集 | 排序編碼預設集 | 選取「名稱」或「大小」，依名稱或解析度大小來排序「案頭」、「行動裝置」和「平板電腦」下方所列的編碼預設集。 |
 |  | 桌面 | 建立MP4檔案，以提供串流或漸進式視訊體驗至桌上型電腦。選擇一或多個外觀比例，以符合您所需的解析度大小和目標資料速率。 |
 |  | 行動 | 建立MP4檔案，以便在iPhone或Android行動裝置上傳送。選取一或多個寬高比，以符合您所需的解析度大小和目標資料速率。 |
@@ -475,7 +475,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
    **刪除轉譯**
 
-   從「轉譯」面板選取 **[!UICONTROL 轉譯]** ，然後從工具列點選「 **[!UICONTROL 刪除轉譯]** 」圖 [示](/help/sites-authoring/basic-handling.md)。
+   從「轉譯」面板選取轉 **[!UICONTROL 譯]** ，然後從工具列點選「 **[!UICONTROL 刪除轉譯]** 」圖 [示](/help/sites-authoring/basic-handling.md)。
 
    ![delete_rendition圖示](assets/delete_renditionicon.png)
 
@@ -659,7 +659,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    * 選取資產，然後按一下工具 **[!UICONTROL 列中的]** 「編輯」圖示。
    * 點選 **[!UICONTROL 卡片檢視]** 中資產上顯示的「編輯」選項。
-   * 在資產頁面中，點選工 **[!UICONTROL 具列中的]** 「編輯」圖示。
+   * 在資產頁面中，點選工具 **[!UICONTROL 列中的]** 「編輯」圖示。
    ![edit_icon](assets/edit_icon.png)
 
 1. 若要裁切影像，請點選「 **[!UICONTROL 裁切」]**。
@@ -720,7 +720,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 您可以在儲存多個註解之前，先加入這些註解。
 
-您可以新增附註至視訊資產。 為視訊加上註解時，播放器會暫停，讓您在影格上加上註解。 如需詳細資訊，請參 [閱「管理視訊資產](managing-video-assets.md)」。
+您可以新增附註至視訊資產。 在為視訊加上註解時，播放器會暫停，讓您在影格上加上註解。 如需詳細資訊，請參 [閱「管理視訊資產](managing-video-assets.md)」。
 
 您也可以新增註解至系列。 不過，如果系列包含子系列，您只能將註解或註解新增至父系列。 「注 **[!UICONTROL 解]** 」選項不適用於子系列。
 
@@ -737,7 +737,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-1. 若要通知使用者註解的相關資訊，請指定使用者的電子郵件地址並新增註解。 例如，若要通知Aaron mcDonald有關註解的資訊，請輸入@aa。 所有相符使用者的提示會顯示在清單中。 從清單中選取Aaron的電子郵件地址，以便用注釋標籤他。 同樣地，您可以在注釋內或注釋之前或之後的任何地方標籤更多用戶。
+1. 若要通知使用者註解的相關資訊，請指定使用者的電子郵件地址並新增註解。 例如，若要通知Aaron McDonald有關註解的資訊，請輸入@aa。 所有相符使用者的提示會顯示在清單中。 從清單中選取Aaron的電子郵件地址，以便用注釋標籤他。 同樣地，您可以在注釋內或注釋之前或之後的任何地方標籤更多用戶。
 
    >[!NOTE]
    >
@@ -750,7 +750,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. 點選「 **[!UICONTROL 關閉]** 」以退 **[!UICONTROL 出「注釋]** 」模式。
-1. 若要檢視通知，請使用Aaron macDonald的認證登入AEM Assets，並點選「 **[!UICONTROL Notifications]** 」圖示以檢視通知。
+1. 若要檢視通知，請使用Aaron MacDonald的認證登入AEM Assets，並點選「 **[!UICONTROL Notifications]** 」圖示以檢視通知。
 
 1. 若要選擇不同的顏色以便區分使用者，請點選「描述檔」 **[!UICONTROL 圖示]** ，然後點選「我的 **[!UICONTROL 偏好設定」]**。
 
@@ -848,7 +848,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 以下是如何設定AEM以列印CJK（中文、日文和韓文）註解的範例：
 
-1. 從下列連結下載Google Noto CJK字型，並將其儲存在Font Manager service中設定的字型目錄中。
+1. 從下列連結下載Google Noto CJK字型，並將其儲存在Font Manager Service中設定的字型目錄中。
 
    * 全部整合在一個超級CJK字型中： [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
    * Noto Sans（歐洲語言版）: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
@@ -915,7 +915,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 1. 若要在資產UI中顯示此版本，請選取「 **[!UICONTROL 回復至此版本」]**。
 1. 若要比較兩個版本，請前往資產的資產頁面，點選您要與目前版本比較的版本。
 
-   ![選取資產的舊版，與目前版本比較](assets/select_version_tocompare.png)
+   ![選取資產的舊版，以與目前版本比較](assets/select_version_tocompare.png)
 
 1. 從時間軸中，選取您要比較的版本，並將滑桿拖曳至左側，將此版本重疊在目前版本上並進行比較。
 
