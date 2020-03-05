@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 ---
 
@@ -91,9 +91,9 @@ AEM 6.4 Communities GA隨附Communities套件。 若要瞭解AEM 6.4 [Communitie
 
 ### AEM 6.4更新 {#aem-updates}
 
-從AEM 6.3開始，「社群」的更新會以AEM Cumulative Fix pack和Service pack的一部份提供。
+從AEM 6.3開始，「社群」的更新會以AEM Cumulative Fix Pack和Service Pack的一部份提供。
 
-如需AEM 6.4的最新更新，請務必檢查 [Adobe Experience Manager 6.4 Cumulative Fix pack和Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)。
+如需AEM 6.4的最新更新，請務必檢查 [Adobe Experience Manager 6.4 Cumulative Fix Pack和Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)。
 
 ### 版本記錄 {#version-history}
 
@@ -132,7 +132,7 @@ MySQL連接器必須單獨獲得和安裝。
 
 1. 對所有作者和發佈例項重複步驟3和4
 
-有關安裝捆綁的詳細資訊，請參閱「 [Web控制台](../../help/sites-deploying/configuring-web-console.md#bundles) 」頁。
+有關安裝捆綁的詳細資訊，請參閱「 [Web控制台](/help/sites-deploying/web-console.md#bundles) 」頁。
 
 #### 範例：已安裝MySQL連接器包 {#example-installed-mysql-connector-bundle}
 
@@ -202,7 +202,7 @@ AEM Communities SCORM引擎是啟用功能的必 [要](overview.md#enablement-co
 
 ### 關於包共用的連結 {#about-links-to-package-share}
 
-**Adobe AEM cloud中可見的套件**
+**Adobe AEM Cloud中可見的套件**
 
 此頁面上的封裝連結不需要執行AEM例項，因為它們要在上共用 `adobeaemcloud.com`。 雖然可檢視套件，但 `Install`按鈕是用來將套件安裝至Adobe代管網站。 如果想要安裝在本機AEM例項上，選取時 `Install`會產生錯誤。
 
@@ -363,7 +363,7 @@ AEM Communities有兩項功能，需要所有AEM伺服器執行個體使用相�
 
 #### 儲存庫複製 {#repository-replication}
 
-如同AEM 6.2及舊版軟體一樣，將關鍵資料儲存在儲存庫中，可在每個AEM例項的首次啟動時指定下列系統屬性（這會建立初始儲存庫），以保留它：
+如同AEM 6.2及舊版軟體一樣，將關鍵資料儲存在儲存庫中，可在每個AEM例項的首次啟動時指定下列系統屬性（這會建立初始儲存庫），以保留：
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
