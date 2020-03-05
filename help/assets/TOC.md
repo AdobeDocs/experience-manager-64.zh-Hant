@@ -4,7 +4,7 @@ product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets User Guide
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
 
 ---
 
@@ -95,10 +95,10 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [資產移轉指南](assets-migration-guide.md)
    + [XMP 中繼資料](xmp.md)
    + [資產網路考量](assets-network-considerations.md)
-   + [AEM Assets與AEM mediaLibrary的比較](medialibrary.md)
+   + [AEM Assets與AEM MediaLibrary的比較](medialibrary.md)
    + [使用PDF點陣化器](aem-pdf-rasterizer.md)
    + [設定資產上傳限制](configuring-asset-upload-restrictions.md)
-   + [AEM與Creative cloud整合最佳實務](aem-cc-integration-best-practices.md)
+   + [AEM與Creative Cloud整合最佳實務](aem-cc-integration-best-practices.md)
    + [將AEM Assets與InDesign伺服器整合](indesign.md)
    + [中繼資料設定檔](metadata-profiles.md)
    + [資產中的數位版權管理](drm.md)
@@ -106,7 +106,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [資產卸載最佳做法](assets-offloading-best-practices.md)
    + [資產檔案格式最佳實務](assets-file-format-best-practices.md)
    + [資產監控最佳實踐](assets-monitoring-best-practices.md)
-   + [Camera raw支援](camera-raw.md)
+   + [Camera Raw支援](camera-raw.md)
    + [使用Apache Tika偵測資產的MIME類型](detect-asset-mime-type-with-tika.md)
    + [影像轉碼程式庫](imaging-transcoding-library.md)
    + [支援IPTC中繼資料](iptc-support.md)
@@ -115,11 +115,12 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
    + [浮水印](watermarking.md)
    + [大量中繼資料匯入和匯出](metadata-import-export.md)
    + [資產範本](asset-templates.md)
-   + [AEM到Creative cloud資料夾分享最佳實務](aem-cc-folder-sharing-best-practices.md)
+   + [AEM到Creative Cloud資料夾分享最佳實務](aem-cc-folder-sharing-best-practices.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [管理智慧標籤](managing-smart-tags.md)
 + 品牌入口網站 {#brandportal}
-   + [設定與品牌入口網站的AEM資產整合](brand-portal-configuring-integration.md)
+   + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
+   + [將資產發佈至品牌入口網站](brand-portal-publish-assets.md)
    + [將系列發佈至品牌入口網站](brand-portal-publish-collection.md)
    + [將資料夾發佈至品牌入口網站](brand-portal-publish-folder.md)
 + 內容片段 {#fragments}
