@@ -10,7 +10,7 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 translation-type: tm+mt
-source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
 
 ## 概覽 {#overview}
 
-**AEM Screens** 是以 ****** AEM Sites的穩固基礎為基礎，讓行銷人員和IT人員在多種數位螢幕上建立和管理體驗，進而影響建立品牌和推動需求的店內／場內目標。 AEM Screens與Sites的整合可讓您重複使用現有的內容，並有效提供連貫一致的客戶解決方案。 這提供簡化的工作流程，以建立具高成本效益和可用性的專屬數位體驗。 它進一步有助於影響品牌認知和影響決策，進而提升購買和參與度。
+**AEM Screens** 建立在 ****** AEM Sites的穩固基礎之上，可讓行銷人員和IT人員建立和管理多種數位螢幕上的體驗，進而影響建立品牌和推動需求的店內／場內目標。 AEM Screens與Sites的整合可讓您重複使用現有的內容，並有效提供連貫一致的客戶解決方案。 這提供簡化的工作流程，以建立具高成本效益和可用性的專屬數位體驗。 它進一步有助於影響品牌認知和影響決策，進而提升購買和參與度。
 
 AEM Screens是功能強大的網路解決方案，可讓您建立專屬的數位選單板、產品推薦、背景生活影像，以擴充客戶互動，並將統一且有用的品牌體驗提供至實體場所，例如商店、飯店、銀行、保健和教育機構等——從相同的AEM平台。 畫面提供許多獨特的應用程式，例如互動式顯示、路徑尋找、品牌推廣，以及根據客戶和員工部署的網域為環境增添氣氛。
 
@@ -43,11 +43,7 @@ AEM Screens是功能強大的網路解決方案，可讓您建立專屬的數位
 
 ## 啟動新的AEM畫面專案 {#starting-a-new-aem-screens-project}
 
-開始新的數位標牌體驗需要先整合角色，才能開始消費。 以下角色為建立新的畫面專案提供了起點：
-
-* [作者](authoring-screens.md)
-* [開發人員](developing-screens.md)
-* [系統管理員／技術人員](administering-screens.md)
+開始新的數位標牌體驗需要先整合角色，才能開始消費。
 
 下圖定義AEM Screens的角色及其角色。
 
