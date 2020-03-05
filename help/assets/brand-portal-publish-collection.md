@@ -3,14 +3,14 @@ title: 將系列發佈至品牌入口網站
 description: 瞭解如何將系列發佈及解除發佈至品牌入口網站。
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publish collections to Brand Portal {#publish-collections-to-brand-portal}
 
-身為Adobe Experience Manager(AEM)Assets管理員，您可以發佈系列至您組織的AEM Assets品牌入口網站例項。 不過，您必須先將AEM Assets與品牌入口網站整合。 如需詳細資訊，請 [參閱「設定AEM資產與品牌入口網站的整合](brand-portal-configuring-integration.md)」。
+身為Adobe Experience Manager(AEM)Assets管理員，您可以發佈系列至您組織的AEM Assets品牌入口網站例項。 不過，您必須先將AEM Assets與品牌入口網站整合。 如需詳細資訊，請 [參閱「設定AEM資產與品牌入口網站](configure-aem-assets-with-brand-portal.md)」。
 
 如果您在AEM Assets中對原始系列進行後續修改，這些變更將不會反映在品牌入口網站中，直到您再次發佈系列為止。 此特性可確保在品牌入口網站中無法使用進行中的變更。 品牌入口網站中僅提供管理員發佈的已核准變更。
 
