@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
@@ -56,7 +56,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 ## 全域導覽 {#global-navigation}
 
-您可以使用全域導覽面板，在控制台之間導覽。 當您按一下或點選畫面左上角的Adobe Experience manager連結時，會以全螢幕下拉式清單觸發。
+您可以使用全域導覽面板，在控制台之間導覽。 當您按一下或點選畫面左上角的Adobe Experience Manager連結時，會以全螢幕下拉式清單觸發。
 
 您可以按一下或點選「關閉」以關閉全域導覽面板， **以返回** 先前的位置。
 
@@ -64,7 +64,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
 >[!NOTE]
 >
->當您第一次登入時，會顯示導 **覽面板** 。
+>當您第一次登入時，會顯示導 **覽面** 板。
 
 全域導覽有兩個面板，由畫面左邊緣的圖示表示：
 
@@ -112,10 +112,6 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
   <tr>
    <td>專案</td> 
    <td>「專 <a href="/help/sites-authoring/touch-ui-managing-projects.md">案」主控台可讓您直接存取專案</a>。 專案是虛擬儀表板。 它們可用來建立團隊，然後讓該團隊存取資源、工作流程和工作，讓人們能夠達成共同目標。 <br /> </td> 
-  </tr>
-  <tr>
-   <td>畫面</td> 
-   <td><a href="/help/screens/authoring-screens.md">螢幕</a> ，可讓您管理任何尺寸和位置的所有客戶對應螢幕。</td> 
   </tr>
   <tr>
    <td>網站</td> 
@@ -305,39 +301,39 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
    <td>欄檢視<br /> </td> 
    <td>
     <ul> 
-     <li><br /> 案頭：按一下縮圖</li> 
-     <li><br /> 行動裝置：點選縮圖</li> 
+     <li>案頭：<br /> 按一下縮圖</li> 
+     <li>行動裝置：<br /> 點選縮圖</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> 案頭：按一下縮圖</li> 
-     <li><br /> 行動裝置：點選縮圖</li> 
+     <li>案頭：<br /> 按一下縮圖</li> 
+     <li>行動裝置：<br /> 點選縮圖</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>卡片檢視<br /> </td> 
    <td>
     <ul> 
-     <li><br /> 案頭：滑鼠移動，然後使用勾號快速動作</li> 
-     <li><br /> 行動裝置：點選並按住卡片</li> 
+     <li>案頭：<br /> 滑鼠移動，然後使用勾號快速動作</li> 
+     <li>行動裝置：<br /> 點選並按住卡片</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> 案頭：按一下資訊卡</li> 
-     <li><br /> 行動裝置：點選資訊卡</li> 
+     <li>案頭：<br /> 按一下資訊卡</li> 
+     <li>行動裝置：<br /> 點選資訊卡</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>清單檢視</td> 
    <td>
     <ul> 
-     <li><br /> 案頭：按一下縮圖</li> 
-     <li><br /> 行動裝置：點選縮圖</li> 
+     <li>案頭：<br /> 按一下縮圖</li> 
+     <li>行動裝置：<br /> 點選縮圖</li> 
     </ul> </td> 
    <td>
     <ul> 
-     <li><br /> 案頭：按一下縮圖</li> 
-     <li><br /> 行動裝置：點選縮圖</li> 
+     <li>案頭：<br /> 按一下縮圖</li> 
+     <li>行動裝置：<br /> 點選縮圖</li> 
     </ul> </td> 
   </tr>
  </tbody>
@@ -422,7 +418,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 ![screen_shot_2018-03-23at105824](assets/screen_shot_2018-03-23at105824.png)
 
 * 清單視圖列出了當前級別上每個資源的資訊。
-* 您可以點選／按一下資源名稱，然後使用標題中的階層連結進行備份，以在樹狀結構 [中向下導覽](/help/sites-authoring/basic-handling.md#the-header)。
+* 您可以點選／按一下資源名稱，然後使用標題中的階層連結進行 [備份，以在樹狀結構中瀏覽](/help/sites-authoring/basic-handling.md#the-header)。
 
 * 若要輕鬆選取清單中的所有項目，請使用清單左上角的核取方塊。
 
