@@ -3,14 +3,14 @@ title: 將資料夾發佈至品牌入口網站
 description: 瞭解如何發佈及解除發佈資料夾至品牌入口網站。
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Publish folders to Brand Portal {#publish-folders-to-brand-portal}
 
-身為Adobe Experience Manager(AEM)Assets管理員，您可以發佈資產和檔案夾至組織的AEM Assets Brand Portal例項（或排程發佈工作流程至較晚的日期／時間）。 不過，您必須先將AEM Assets與品牌入口網站整合。 如需詳細資訊，請 [參閱「設定AEM資產與品牌入口網站的整合](brand-portal-configuring-integration.md)」。
+身為Adobe Experience Manager(AEM)Assets管理員，您可以發佈資產和檔案夾至組織的AEM Assets Brand Portal例項（或排程發佈工作流程至較晚的日期／時間）。 不過，您必須先將AEM Assets與品牌入口網站整合。 如需詳細資訊，請 [參閱「設定AEM資產與品牌入口網站](configure-aem-assets-with-brand-portal.md)」。
 
 發佈資產或資料夾後，品牌入口網站的使用者即可使用它。
 
