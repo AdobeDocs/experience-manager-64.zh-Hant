@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
+source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
 | 版本 | 6.4.8.0 |
 | 類型 | Service Pack版本 |
 | 日期 | 2020年3月05日 |
-| 下載URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0) |
+| 下載URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Software Distribution(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0包含的功能 {#what-s-included-in-aem}
 
@@ -51,6 +51,9 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 ### 網站 {#sites}
 
+* 當AEM Sites頁面的URL包含冒號或百分比符號時，基礎瀏覽器會停止回應，而CPU週期會顯示尖峰(NPR-32368、NPR-31917)。
+* 當開啟AEM Sites頁面以進行編輯並複製元件時，某些預留位置仍無法使用貼上動作(NPR-32328)。
+* 啟動工作流程的要求不包含參考資產(NPR-32304)。
 * 建立Blueprint時，如果記錄數超過80，則只會顯示前80個記錄。 Blueprint會為其餘的記錄顯示空白行(NPR-32058)。
 * 使用者可以儲存內容片段，而不需在必填欄位中提供任何資訊(NPR-31988)。
 * 自動導覽不適用於核心體驗片段元件中設定的路徑(NPR-31921)。
@@ -58,7 +61,6 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
    `Error: No common ancestor found, cannot continue` (NPR-31916)。
 * 當內容在相同資料夾中移動時，頁面移動選項會停用(NPR-31841)。
 * 新增支援使用BUNSETSU方法來分割日文句子，並在適當位置加上分行(NPR-31836)。
-* 當以或結尾的URL `/_jcr_content/.html` 存取 `/jcr:content/.html` 時，CPU尖峰和AEM會停止回應(NPR-31755)。
 * 當您在Rich Text Editor(RTE)中編輯超連結時，新選取的路徑不會儲存(NPR-31659)。
 * 刪除多欄位元件並撤消刪除時，將恢復該元件，但未恢復資料(NPR-31617)。
 
@@ -109,10 +111,6 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 ### 轉換 {#translation-6480}
 
 * 針對多種語言的翻譯項目建立僅針對某些語言而不是全部生成項目，並且日誌中出現錯誤（資源解析器已關閉）(NPR-32212)。
-
-### WCM範本編輯器 {#wcm-template-editor-6480}
-
-* 當URL結尾為或被存取時，CPU尖峰和Experience Manager `/_jcr_content/.html` 會 `/jcr:content/.html` 停止回應(CQ-4280770)。
 
 ### WCM-MSM {#wcm-msm-6480}
 
@@ -598,7 +596,7 @@ AEM 6.4.5.0的一些主要亮點是：
 **平台**
 
 * 在安裝套件時，套件管理器中的跨網站指令碼(XSS)。 NPR-29734、NPR-29713、NPR-29630:GRANITE-26161、GRANITE-的修補程式
-* 在CRXDE Lite中儲存並反映多個跨網站指令碼(XSS)。 NPR-29634:GRANITE-26049的修補程式
+* 在CRXDE Lite中儲存並反映多個跨網站指令碼(XSS)。 NPR-29534:GRANITE-26049的修補程式
 * Package Share的登入功能使用GET要求，而非POST要求，使密碼顯示在網路標籤下。 NPR-29631:GRANITE-26048的修補程式
 
 **費利克斯**
@@ -1533,7 +1531,7 @@ AEM 6.4.2.0的一些主要亮點是：
 **花崗岩**
 
 * bundle SymbolicName中的錯字會導致重複的bundle。 Granite修補程式- 22155
-* CUGConfiguration不能拾取CugExclude。 Granite的修補程式- 21109
+* CUGConfiguration無法拾取CugExclude。 Granite的修補程式- 21109
 * 重新啟動Adobe Granite Workflow Core會重新執行從中間建立不必要工作流程的工作流程步驟。 NPR-25057:Granite-22218的修補程式
 * JcrResourceBundle無法正確支援多個基本名稱。 NPR-25245:Granite-22317的修補程式
 * 在安裝內容包時，ACL按主體分組，因此會破壞權限模型。 NPR-24583:Granite-21591的修補程式
@@ -1701,7 +1699,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 非管理員使用者NPR-23044無法使用mylinkshare頁面上的共用連結和頁面的連結：CQ-4239004的修補程式
 * 在6.4.0的「DAM資產更新」工作流程中防止出現空指針異常。NPR-24134:CQ-4244972的修補程式
 * 「發佈的WCM」頁面顯示熱點的預留位置圖示，OOTB檢視器遺失403錯誤的CSS檔案。 NPR-23041:CQ-4233716的修補程式
-* （詳細檢視）「下一／後退導覽」功能會在「動態轉譯」預覽區域中保留DIV覆蓋，以封鎖檢視器的存取。 NPR-23043:CQ-4238499的修補程式
+* （詳細檢視）「下一／後退導覽」功能會在「動態轉譯」預覽區域中保留DIV覆蓋，以封鎖檢視器的存取權。 NPR-23043:CQ-4238499的修補程式
 * CMYK影像轉譯的飽和度不正確。 NPR-23048:CQ-4235470的修補程式
 * Scene7ListInfoProvider的XMP中繼資料擷取需要大量資源。 NPR-23754
 * (dam-delivery)Http轉送程式不遵守HTTP Proxy設定。 NPR-24002:CQ-4244140的修補程式
@@ -1858,7 +1856,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407的修補程式
 * 「預升級影像預設集」在「轉譯」頁面上會顯示為「未發佈」，且不會產生URL。 CQ-4240406的修補程式
 * (CSS)會顯示資產——但使用的檢視器是預設的，而非OOTB檢視器。 CQ-4239839的修補程式
-* 停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
+* 已禁用清理步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
 * 影像檢視器產生錯誤，無法顯示正確的智慧裁切。 CQ-4237564的修補程式
 * /etc下的舊預設集似乎已中斷，且儲存時不會移轉至/conf下的位置。 CQ-4237416的修補程式
 * OOB VideoViewer 5.8.x中的回歸——檢視器會將iframe展開至右側，因此會中斷頁面版面配置。 CQ-4235465的修補程式
