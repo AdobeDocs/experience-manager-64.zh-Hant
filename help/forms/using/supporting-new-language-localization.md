@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
 
 ---
 
@@ -44,7 +44,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 ## 新增不支援地區設定的本地化支援 {#add-localization-support-for-non-supported-locales}
 
-AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文——巴西(pt-br)、中文-(zh-tn)、中文——台灣(zh-tw)和韓文(ko-kr)地區語言，將最適化表單內容本土化。
+AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文——巴西(pt-BR、中文-(zh-CN)、中文——台灣(zh-TW)和韓文(ko-KR)語言環境將調適性表單內容本地化。
 
 若要在最適化表單執行時期新增語言環境支援：
 
@@ -97,12 +97,12 @@ LogMessages.js
 
 ### 新增字典的地區設定支援 {#add-locale-support-for-the-dictionary-br}
 
-執行此步驟 `<locale>` 時，僅當添加 `en`不是、 `de`、 `es`、、 `fr`、 `it`、 `pt-br``zh-tn``zh-tw``ja``ko-kr`或。
+執行此步驟 `<locale>` 時，僅當添加 `en`不是、 `de`、 `es`、、 `fr`、 `it`、 `pt-br``zh-cn``zh-tw``ja``ko-kr`或。
 
 1. 在下 `nt:unstructured` 建立 `languages` 節 `etc`點（如果尚未存在）。
 
 1. 將多值字串屬性新增 `languages` 至節點（如果尚未出現）。
-1. 添加缺 `<locale>` 省區域設定 `de`值、 、 `es`、 `fr`、 `it``pt-br``zh-tn``zh-tw``ja``ko-kr`、 Locade Not present 、 Locade Not。
+1. 添加缺 `<locale>` 省區域設定 `de`值、 、 `es`、 `fr`、 `it``pt-br``zh-cn``zh-tw``ja``ko-kr`、 Locade Not present 、 Locade Not。
 
 1. 將添加 `<locale>` 到屬性的 `languages` 值中 `/etc/languages`。
 
