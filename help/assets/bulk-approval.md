@@ -3,7 +3,7 @@ title: 查看資料夾資產和集合
 description: 為資料夾或系列中的資產設定審核工作流程，並與審核者或創意合作夥伴分享，以尋求意見回應。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -108,4 +108,3 @@ Adobe Experience Manager(AEM)Assets可讓您為資料夾或系列中的資產設
    **清單檢視**
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)
-
