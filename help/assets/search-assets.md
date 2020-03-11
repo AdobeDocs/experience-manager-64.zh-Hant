@@ -3,7 +3,7 @@ title: 在AEM中搜尋資產
 description: 瞭解如何使用「篩選」面板在AEM中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -26,6 +26,8 @@ source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
 * 方向
 * 樣式
 * 分析
+
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
 您可以自訂「篩選」面板，並使用搜尋Facet新增／移除搜尋 [謂語](search-facets.md)。 要顯示「濾鏡」面板，請執行以下步驟：
 
