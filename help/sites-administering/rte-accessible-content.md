@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -24,12 +24,8 @@ AEM支援兩者：
 
 >[!NOTE]
 >
->另請參閱:
->
->* 我們 [的WCAG 2.0快速指南](/help/managing/qg-wcag.md) ，以取得詳細資訊
+>* [WCAG 2.0快速指南](/help/managing/qg-wcag.md)
 >* [建立可存取的內容（WCAG 2.0符合性）](/help/sites-authoring/creating-accessible-content.md)
->
-
 
 
 內容作者可使用RTE的功能在將內容新增至頁面時提供協助工具資訊。 這包括通過標題和段落元素添加結構資訊。
@@ -196,7 +192,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
    }
    ```
 
-1. 使用「全部儲 **存……」儲存變更**
+1. 使用「全部儲存」來儲 **存變更**
 
 >[!NOTE]
 >
@@ -206,5 +202,4 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
 >
 >* 每 `itemId` 個對應欄位的屬性會設為適當DOM屬性(`TablePropertiesDialog`)的名稱。
 >* 在DOM元素上明確設定和／或移除屬性(`Table`)。
-
 
