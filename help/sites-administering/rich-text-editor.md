@@ -1,16 +1,9 @@
 ---
 title: 設定Rich Text Editor
-seo-title: 設定Rich Text Editor
 description: 瞭解如何設定AEM Rich Text Editor。
-seo-description: 瞭解如何設定AEM Rich Text Editor。
-uuid: 82d2fe41-676a-4a49-939f-13374b9d869f
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: 9248d09c-b749-4aca-9167-1707c1dd8a53
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 01a748a6f6f92c752fc6a14005f236fee304c2eb
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -25,7 +18,7 @@ RTE可以配置為啟用、禁用和擴展編寫元件中可用的功能。 要�
 
 ![配置Rich Text Editor的典型工作流程](assets/rte_workflow_v1.png)
 
-**** 圖：配置 *Rich Text Editor的典型工作流程*
+*圖：配置Rich Text Editor的典型工作流程*
 
 ## 瞭解可觸控的UI和傳統UI {#understand-touch-enabled-ui-and-classic-ui}
 
@@ -33,18 +26,19 @@ Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環 [境推出
 
 ![啟用觸控的UI中的豐富型文字編輯器工具列](assets/chlimage_1-404.png)
 
-**** 圖：啟用 *觸控的UI中的Rich Text Editor工具列*
+*圖：啟用觸控的UI中的豐富型文字編輯器工具列*
 
 ![Classic UI中的Rich Text Editor工具列](assets/rtedefault.png)
 
-**** 圖：Classic UI中 *的Rich Text Editor工具列*
+*圖：Classic UI中的Rich Text Editor工具列*
 
-**另請參閱**:
+>[!MORELIKETHIS]
+>
+>* [UI建議](/help/sites-deploying/ui-recommendations.md)
+>* 關於取代Classic UI，請參 [閱AEM 6.4發行說明](/help/release-notes/deprecated-removed-features.md)
+>* 如需UI之間的差異，請參 [閱Touch UI和Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
+>* 若要詳細瞭解啟用觸控的UI，請參閱「AEM Touch UI [的概念」](/help/sites-developing/touch-ui-concepts.md)
 
-* [UI建議](/help/sites-deploying/ui-recommendations.md)
-* 關於取代Classic UI，請參 [閱AEM 6.4發行說明](/help/release-notes/deprecated-removed-features.md)
-* 如需UI之間的差異，請參 [閱Touch UI和Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
-* 若要詳細瞭解啟用觸控的UI，請參閱「AEM Touch UI [的概念」](/help/sites-developing/touch-ui-concepts.md)
 
 ## 各種編輯模式 {#editingmodes}
 
@@ -100,7 +94,7 @@ Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環 [境推出
 
 ![使用觸控式UI中的基本工具列進行內嵌編輯](assets/chlimage_1-405.png)
 
-**** 圖：使用 *觸控式UI中的基本工具列進行內嵌編輯*
+*圖：使用觸控式UI中的基本工具列進行內嵌編輯*
 
 在Classic UI中，按兩下元件時速度緩慢，可進行內嵌編輯，而橘色的外框會反白顯示內容。 如果Content Finder已開啟，則窗口頂部將顯示一個帶有可用RTE格式設定選項的工具欄。 如果未開啟「內容搜尋器」，則不會顯示格式選項，您只能進行基本文字編輯。
 
@@ -112,7 +106,7 @@ AEM元件可在全螢幕檢視中開啟，隱藏頁面內容並佔據可用螢�
 
 ![在啟用觸摸屏的UI中以全屏模式編輯時的詳細RTE工具欄](assets/chlimage_1-406.png)
 
-**** 圖：在 *啟用觸控的UI中以全螢幕模式編輯時的詳細RTE工具列*
+*圖：在啟用觸摸屏的UI中以全屏模式編輯時的詳細RTE工具欄*
 
 ### 對話框編輯 {#dialog-editing}
 
@@ -120,11 +114,11 @@ AEM元件可在全螢幕檢視中開啟，隱藏頁面內容並佔據可用螢�
 
 ![啟用觸控的UI中的對話編輯模式](assets/dialog_editing_modetouchui.png)
 
-**** 圖：啟用 *觸控功能的UI中的對話方塊編輯模式*
+*圖：啟用觸控的UI中的對話編輯模式*
 
 ![Classic UI中包含編輯詳細工具列的對話框](assets/chlimage_1-407.png)
 
-**** 圖：Classic UI中 *包含編輯詳細工具列的對話框*
+*圖：Classic UI中包含編輯詳細工具列的對話框*
 
 ## 關於RTE插件和相關功能 {#aboutplugins}
 
@@ -236,7 +230,7 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 
 ## 瞭解配置路徑和位置 {#understand-the-configuration-paths-and-locations}
 
-您 [為作者提供的RTE編輯模式（和UI）](#editingmodes) ，會決定啟動RTE外掛程式時的 [設定詳細資訊位置](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin):
+您 [為作者提供的RTE編輯模式（和UI）](#editingmodes) ，在激活RTE插件時，將決定配置詳細 [資訊的位置](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin):
 
 | 編輯模式 | Touch UI的位置 | Classic UI的位置 |
 |---|---|---|
@@ -287,7 +281,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 
 >[!NOTE]
 >
->Core [Components文本元件允許模板編輯器將用戶介面中的許多RTE插件配置為內容策略](https://helpx.adobe.com/experience-manager/core-components/using/text.html) ，從而無需進行技術配置。 內容策略可以如所述與RTE用戶介面配置配合使用。 如需詳細資訊，請參 [閱RTE使用者介面設定和內容政策](/help/sites-administering/rich-text-editor.md#rtecontentpolicies)、 [建立頁面範本](/help/sites-authoring/templates.md)，以及核心元件開發 [人員檔案](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)。
+>Core [Components文字元件](https://helpx.adobe.com/experience-manager/core-components/using/text.html) ，可讓範本編輯器在使用者介面中，將許多RTE外掛程式設定為內容原則，以免進行技術設定。 內容策略可以如所述與RTE用戶介面配置配合使用。 如需詳細資訊，請參 [閱RTE使用者介面設定和內容政策](/help/sites-administering/rich-text-editor.md#rtecontentpolicies)、 [建立頁面範本](/help/sites-authoring/templates.md)，以及核心元件開發 [人員檔案](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)。
 
 >[!NOTE]
 >
