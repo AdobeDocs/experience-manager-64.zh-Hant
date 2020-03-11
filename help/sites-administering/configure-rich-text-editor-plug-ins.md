@@ -1,17 +1,9 @@
 ---
 title: 設定Rich Text Editor外掛程式
-seo-title: 設定Rich Text Editor外掛程式
 description: 瞭解如何設定AEM Rich Text Editor外掛程式，以啟用個別功能。
-seo-description: 瞭解如何設定AEM Rich Text Editor外掛程式，以啟用個別功能。
-uuid: d6a029fb-e431-4f12-9002-7d794e4beb0d
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: e0328f9c-26c6-4c40-8594-3190c38cebd8
-noindex: true
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -107,7 +99,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 
 * **純文字檔案模式**:將剪貼簿內容貼為純文字。 在AEM元件中插入之前，會先從複製的內容移除所有樣式和格式元素。
 
-* **MS word模式**:從MS word複製時，使用格式化貼上文字（包括表格）。 不支援從其他來源（例如網頁或MS excel）複製和貼上文字，並僅保留部分格式。
+* **MS Word模式**:從MS Word複製時，使用格式化貼上文字（包括表格）。 不支援從其他來源（例如網頁或MS Excel）複製和貼上文字，並僅保留部分格式。
 
 ### 在RTE工具欄上配置可用的「貼上」選項 {#configure-paste-options-available-on-the-rte-toolbar}
 
@@ -117,9 +109,9 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 
 * **[!UICONTROL 貼上為文字]**:提供純文字檔案模式功能。
 
-* **[!UICONTROL 從Word貼上]**:提供MS word模式功能。
+* **[!UICONTROL 從Word貼上]**:提供MS Word模式功能。
 
-要配置RTE以顯示所需表徵圖，請遵循以下步驟。
+要配置RTE以顯示所需的表徵圖，請遵循以下步驟。
 
 1. 導覽至您的元件；例如：
 
@@ -138,7 +130,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 
 * 將剪貼簿內容貼為純文字。 在AEM元件中插入之前，會先從複製的內容移除所有樣式和格式元素。 使用下面 `plaintext` 配置。
 
-* 從MS word複製時，使用格式化貼上文字（包括表格）。 不支援從其他來源（例如網頁或MS excel）複製和貼上文字，並僅保留部分格式。 使用下面 `wordhtml` 配置。
+* 從MS Word複製時，使用格式化貼上文字（包括表格）。 不支援從其他來源（例如網頁或MS Excel）複製和貼上文字，並僅保留部分格式。 使用下面 `wordhtml` 配置。
 
 1. 在元件中，導航到節 `<rtePlugins-node>/edit` 點。 如果節點不存在，則建立這些節點。 如需詳細資訊，請 [參閱啟動外掛程式](#activateplugin)。
 1. 在節點 `edit` 中，使用以下詳細資訊建立屬性：
@@ -557,7 +549,7 @@ Rich Text Editor使用ID為的容器DOM元素， `CQrte` 可用來提供不同�
 
 ### 在表格中設定隱藏的標題以供協助工具使用 {#hiddenheader}
 
-有時，您可能會在欄標題中建立不含視覺文字的資料表格，並假設欄與其他欄的視覺關係暗示標題的用途。 在這種情況下，必須在標題儲存格的儲存格內提供隱藏的內文，讓螢幕閱讀程式和其他輔助技術協助有不同需求的讀者瞭解欄目的用途。
+有時，您可能會在欄標題中建立不含視覺文字的資料表格，並假設標題的用途是由欄與其他欄的視覺關係所隱含。 在這種情況下，必須在標題儲存格的儲存格內提供隱藏的內文，讓螢幕閱讀程式和其他輔助技術協助有不同需求的讀者瞭解欄目的用途。
 
 為了增強此類場景中的輔助功能，RTE支援隱藏的標題單元格。 此外，它還提供與表格中隱藏標題相關的配置設定。 這些設定可讓您在編輯和預覽模式中，將CSS樣式套用至隱藏的標題。 若要協助作者在編輯模式中識別隱藏的標題，請在程式碼中加入下列參數：
 
@@ -591,7 +583,7 @@ Rich Text Editor使用ID為的容器DOM元素， `CQrte` 可用來提供不同�
 若要新增更多字典，請依照下列步驟進行。
 
 1. 導覽至http://download.services.openoffice.org/contrib/dictionaries/ [頁面](http://download.services.openoffice.org/contrib/dictionaries/)。
-1. 選擇所需的語言並下載具有拼寫定義的ZIP檔案。 解壓檔案系統上的存檔內容。
+1. 選擇所需的語言，並下載具有拼字定義的ZIP檔案。 解壓檔案系統上的存檔內容。
 
    >[!CAUTION]
    僅支援 `MySpell` OpenOffice.org v2.0.1或更早版本的字典。 由於字典現在是封存檔案，因此建議您在下載後確認封存。
