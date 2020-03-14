@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
+source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
 
 ---
 
@@ -164,7 +164,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 AEM 6.4.7.0是重要的更新，其中包括效能、穩定性、安全性和重要客戶修正，以及自2018年4月AEM 6.4全面推出以來 **的增強。**
 
-這也是累積的，也就是說6.4.7.0包含之前所有的AEM 6.4 Service Pack版本。
+這也是累積的，也就是說6.4.7.0包含之前所有的AEM 6.4 Service Pack。
 
 AEM 6.4.7.0的一些主要亮點是：
 
@@ -596,7 +596,7 @@ AEM 6.4.5.0的一些主要亮點是：
 **平台**
 
 * 在安裝套件時，套件管理器中的跨網站指令碼(XSS)。 NPR-29734、NPR-29713、NPR-29630:GRANITE-26161、GRANITE-的修補程式
-* 在CRXDE Lite中儲存並反映多個跨網站指令碼(XSS)。 NPR-29534:GRANITE-26049的修補程式
+* 在CRXDE Lite中儲存並反映多個跨網站指令碼(XSS)。 NPR-29634:GRANITE-26049的修補程式
 * Package Share的登入功能使用GET要求，而非POST要求，使密碼顯示在網路標籤下。 NPR-29631:GRANITE-26048的修補程式
 
 **費利克斯**
@@ -706,7 +706,7 @@ AEM 6.4.5.0表格的主要重點為：
 **表單——檔案服務**
 
 * 無效的PDF/A檔案會報告為使用isPDFA作業的有效PDF/A。 NPR-29076:CQ-4261541的修補程式
-* PDF無法轉換為「表單」欄位的PDF/A-1b，沒有外觀規定。 NPR-29634:CQ-4269618的修補程式
+* PDF無法轉換為「表單」欄位的PDF/A-1b，沒有外觀規定。 NPR-29534:CQ-4269618的修補程式
 * PDF/A從輸出服務產生的PDF轉換無法透過Acrobat DC驗證。 NPR-29647:CQ-4270448的修補程式
 * Apache POI包失敗，但有例外。 NPR-27861、NPR-28048:CQ-4245898、CQ-4244778的修補程式
 
@@ -1243,7 +1243,7 @@ AEM 6.4.3.0表格的主要重點為：
 **PDF Generator服務**
 
 * 無法顯示PDF產生器的「標準報告」和「合規性」設定。 NPR-26715:CQ-4253384的修補程式
-* convertpdf二進位檔在AIX Forms附加元件套件中遺失，這會導致呼叫PDFA服務時發生失敗。 CQ-4257873的修補程式
+* convertpdf二進位檔在AIX Forms附加元件套件中遺失，這會在叫用PDFA服務時造成失敗。 CQ-4257873的修補程式
 
 **檔案服務**
 
@@ -1389,7 +1389,7 @@ AEM 6.4.2.0的一些主要亮點是：
 
 **社群**
 
-* （檔案庫）下載空白的資產會導致格式問題。 NPR-24260:CQ-4245159的修補程式
+* （檔案庫）下載空白的資產會導致格式問題。 NPR-23260:CQ-4245159的修補程式
 * 修正數個Adobe Social問題。 NPR-24247:CQ-4245054、CQ-4245120、CQ-4245296的修補程式
 * 成員和群組的無限捲動控制台失敗，以防作者發佈在不同的上下文路徑上執行。 NPR-24437:CQ-4246013的修補程式
 * 即使從已應答狀態移除貼文，貼文也不會返回未應答狀態，且分數不會下降。 NPR-24419:CQ-4245797、CQ-4245932的修補程式
@@ -1531,7 +1531,7 @@ AEM 6.4.2.0的一些主要亮點是：
 **花崗岩**
 
 * bundle SymbolicName中的錯字會導致重複的bundle。 Granite修補程式- 22155
-* CUGConfiguration無法拾取CugExclude。 Granite的修補程式- 21109
+* CUGConfiguration不能拾取CugExclude。 Granite的修補程式- 21109
 * 重新啟動Adobe Granite Workflow Core會重新執行從中間建立不必要工作流程的工作流程步驟。 NPR-25057:Granite-22218的修補程式
 * JcrResourceBundle無法正確支援多個基本名稱。 NPR-25245:Granite-22317的修補程式
 * 在安裝內容包時，ACL按主體分組，因此會破壞權限模型。 NPR-24583:Granite-21591的修補程式
@@ -1699,7 +1699,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 非管理員使用者NPR-23044無法使用mylinkshare頁面上的共用連結和頁面的連結：CQ-4239004的修補程式
 * 在6.4.0的「DAM資產更新」工作流程中防止出現空指針異常。NPR-24134:CQ-4244972的修補程式
 * 「發佈的WCM」頁面顯示熱點的預留位置圖示，OOTB檢視器遺失403錯誤的CSS檔案。 NPR-23041:CQ-4233716的修補程式
-* （詳細檢視）「下一／後退導覽」功能會在「動態轉譯」預覽區域中保留DIV覆蓋，以封鎖檢視器的存取權。 NPR-23043:CQ-4238499的修補程式
+* （詳細檢視）「下一／後退導覽」功能會在「動態轉譯」預覽區域中保留DIV覆蓋，以封鎖檢視器的存取。 NPR-23043:CQ-4238499的修補程式
 * CMYK影像轉譯的飽和度不正確。 NPR-23048:CQ-4235470的修補程式
 * Scene7ListInfoProvider的XMP中繼資料擷取需要大量資源。 NPR-23754
 * (dam-delivery)Http轉送程式不遵守HTTP Proxy設定。 NPR-24002:CQ-4244140的修補程式
@@ -1856,7 +1856,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407的修補程式
 * 「預升級影像預設集」在「轉譯」頁面上會顯示為「未發佈」，且不會產生URL。 CQ-4240406的修補程式
 * (CSS)會顯示資產——但使用的檢視器是預設的，而非OOTB檢視器。 CQ-4239839的修補程式
-* 已禁用清理步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
+* 停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
 * 影像檢視器產生錯誤，無法顯示正確的智慧裁切。 CQ-4237564的修補程式
 * /etc下的舊預設集似乎已中斷，且儲存時不會移轉至/conf下的位置。 CQ-4237416的修補程式
 * OOB VideoViewer 5.8.x中的回歸——檢視器會將iframe展開至右側，因此會中斷頁面版面配置。 CQ-4235465的修補程式
@@ -2144,7 +2144,7 @@ B.使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs/
 
 ### 更新動態媒體檢視器(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.0包含新版Dynamic Media檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
+<p id="Dynamic">AEM 6.4.8.0包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -2206,7 +2206,7 @@ Adobe Public Maven儲存庫中提供AEM 6.4.8.0版的Uber Jar [](https://repo.ad
 <dependency>
       <code>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.0</version>
+      <version>6.4.8</version>
       <classifier>apis</classifier>
       <scope>provided</scope>
 </dependency>
