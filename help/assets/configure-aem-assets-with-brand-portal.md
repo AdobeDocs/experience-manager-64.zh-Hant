@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM資產
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 16ed5bc3a06976d2cd616da9987cb7e70f87210f
+source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
 
 ---
 
@@ -49,7 +49,7 @@ Adobe Experience Manager(AEM)Assets是透過Adobe I/O以品牌入口網站設定
 
 ### 下載並安裝AEM 6.4 {#aemquickstart}
 
-建議您使用AEM 6.4來設定AEM作者例項。 如果您沒有啟動並執行AEM，請從下列位置下載它：
+建議您使用AEM 6.4來設定AEM作者例項。 如果您沒有啟動並執行AEM，請從下列位置下載：
 
 * 如果您是現有的AEM客戶，請從 [Adobe授權網站下載AEM 6.4](http://licensing.adobe.com)。
 
@@ -183,17 +183,19 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
    ![IMS帳戶設定](assets/create-new-integration6.png)
 
-   >[!CAUTION]
-   >
-   >僅建立一個IMS設定。 請勿建立多個IMS組態。
-
 1. 選擇IMS設定，然後按一下「 **[!UICONTROL Check Health」(檢查健康]**)。 將出現一個對話框。
 
    按一下 **[!UICONTROL 檢查]**。 在成功連線時，會出 *現成功擷取的Token* 訊息。
 
    ![](assets/create-new-integration5.png)
 
-   <br/> <br/>
+>[!CAUTION]
+>
+>僅建立一個有效的IMS設定。 請勿建立多個IMS組態。
+>
+>確保配置正常。 如果配置不健康，請將其刪除並建立新的健康配置。
+
+<br/> <br/>
 
 ### 設定雲端服務 {#configure-the-cloud-service}
 
