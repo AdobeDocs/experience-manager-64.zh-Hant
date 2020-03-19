@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
-source-git-commit: 274c043eadbb6dda125062bf53ed145a5b101a2e
+source-git-commit: f0e4d958cad182c7218314ba7b117c2347f947ca
 
 ---
 
@@ -39,7 +39,7 @@ Jackrabbit FileVault工具(VLT)是 [Apache Foundation](https://www.apache.org/) 
 
 若要使用VLT工具，您必須先安裝它。 由於它是額外的工具，因此預設不會安裝它。 此外，您還需要設定系統的環境變數。
 
-1. 從 [Apache Jackrabbit網站下載FileVault封存檔。](https://jackrabbit.apache.org/jcr/downloads.html#vlt)
+1. 從Maven對象儲存庫下載FileVault [存檔檔案。](https://repo1.maven.org/maven2/org/apache/jackrabbit/vault/vault-cli/)
    >[!NOTE]
    >
    >VLT工具的來源可在GitHub [上使用。](https://github.com/apache/jackrabbit-filevault)
@@ -91,7 +91,7 @@ VLT會根據下列規則自動處理行尾(EOF):
 * 在Linux/Unix上以 `LF`
 * 儲存庫的檔案行以 `LF`
 
-為確保VLT和SVN配置匹配，應將屬 `svn:eol-style` 性設定 `native` 為，以擴展儲存在儲存庫中的檔案。 編輯svn設定並新增下列項目：
+為確保VLT和SVN配置匹配，應將屬 `svn:eol-style` 性設定為 `native` ，以擴展儲存在儲存庫中的檔案。 編輯svn設定並新增下列項目：
 
 ```xml
 [auto-props]
@@ -775,7 +775,7 @@ VLT使用的狀態代碼為：
 * &#39;R&#39;已取代
 * &#39;?&#39; 項目不在版本控制之下
 * &#39;!&#39; 項目遺失（由非svn命令移除）或不完整
-* 「~」版本化項目被不同類型的項目阻擋
+* 「~」版本項被不同類型的某個項目阻擋
 
 ## 設定FileVault同步 {#setting-up-filevault-sync}
 
@@ -946,4 +946,4 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
 >[!NOTE]
 >
->VLT同步功能僅支援簡單檔案和資料夾，但檢測特殊的電子倉庫序列化檔案（.content.xml、dialog.xml等），並以無提示方式忽略它們。 因此，可在預設vlt結帳時使用vault同步。
+>VLT同步功能僅支援簡單檔案和資料夾，但檢測到特殊的電子倉庫序列化檔案（.content.xml、dialog.xml等），並無提示地忽略它們。 因此，可在預設vlt結帳時使用vault同步。
