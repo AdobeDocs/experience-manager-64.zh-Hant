@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
 
 ---
 
@@ -350,7 +350,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 若要驗證所有Sling ID值都不同，請在每個發佈例項上：
 
-1. 瀏覽至 [https://*host:port*/system/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)
+1. 瀏覽至 `http://<host>:<port>/system/console/status-slingsettings`
 1. 檢查 **Sling ID的值**
 
 ![chlimage_1-395](assets/chlimage_1-395.png)
@@ -417,7 +417,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 當拓撲是發佈群 [，且使用者同步已正確設定時，*user *和](/help/sites-deploying/recommended-deploys.md#tarmk-farm) user profile ** is synchronized using Sling distribution.
 
-### 使用者或使用者群組是使用Security console建立的 {#users-or-user-groups-are-created-using-security-console}
+### 使用者或使用者群組是使用Security Console建立的 {#users-or-user-groups-are-created-using-security-console}
 
 根據設計，在發佈環境中建立的使用者資料不會出現在作者環境中，反之亦然。
 
