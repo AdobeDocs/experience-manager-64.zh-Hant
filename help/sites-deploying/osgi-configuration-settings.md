@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: c255e32f1a90df0b97a89b49f74468d4f7c0be34
+source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
 
 ---
 
@@ -35,7 +35,7 @@ OSGi「提&#x200B;*供標準化的基元，允許應用程式從可重複使用�
 
 >[!NOTE]
 >
->AEM [OSGi Config Details](https://www.aemstuff.com/osgi.html) （AEM OSGi設定詳細資訊）工具可用來列出預設的OSGi設定。
+>OSGi Configuration Diff工具是 [AEM Tools的一部分](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)，可用來列出預設的OSGi組態。
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ OSGi「提&#x200B;*供標準化的基元，允許應用程式從可重複使用�
 >
 >請務必設定下列項目：
 >
->**使用者名** 稱和密碼 ****，是存取Apache Felix Web Management console本身的認證。\
+>**使用者名** 稱和密碼 ****，是存取Apache Felix Web Management Console本身的認證。\
 >在初始安裝後必須更改密碼，以確保實 [例的安](/help/sites-administering/security-checklist.md) 全性。
 
 >[!NOTE]
@@ -159,7 +159,7 @@ OSGi「提&#x200B;*供標準化的基元，允許應用程式從可重複使用�
 * **Logger** to define the category;例如，僅記錄com.day.cq的記錄。
 
 * 通過使 **用工廠配置**，可以添加任何數量的附加配置，以適應所需的各種日誌級別和類別。
-* 這類配置在開發過程中非常有用；例如，要在特定日誌檔案中記錄特定服務的TRACE消息。
+* 這類配置在開發過程中很有幫助；例如，要在特定日誌檔案中記錄特定服務的TRACE消息。
 * 這種配置在生產環境中非常有用；例如，將有關特定服務的消息記錄到單個日誌檔案中，以便更方便地進行監視。
 
 如需詳細資訊，請 [參閱「AEM記錄](/help/sites-deploying/configure-logging.md) 」 [和「Sling記錄」](https://sling.apache.org/site/logging.html)。
@@ -171,7 +171,7 @@ OSGi「提&#x200B;*供標準化的基元，允許應用程式從可重複使用�
 
 * The writer can be used by a **Apache Sling Logging Logger Configuration** configuration.
 
-* 這類配置在開發過程中非常有用；例如，要在特定日誌檔案中記錄特定服務的TRACE消息。
+* 這類配置在開發過程中很有幫助；例如，要在特定日誌檔案中記錄特定服務的TRACE消息。
 * 這種配置在生產環境中非常有用；例如，將有關特定服務的消息記錄到單個日誌檔案中，以便更方便地進行監視。
 
 如需詳細資訊，請 [參閱「AEM記錄](/help/sites-deploying/configure-logging.md) 」 [和「Sling記錄」](https://sling.apache.org/site/logging.html)。
@@ -184,7 +184,7 @@ OSGi「提&#x200B;*供標準化的基元，允許應用程式從可重複使用�
 
 * **MIME類型** ，將項目所需的類型添加到系統中。 這允許對文 `GET` 件發出請求，以設定用於連結檔案類型和應用程式的正確內容類型標題。
 
-**Apache Sling Referrer Filter** （Apache Sling反向連結篩選）：若要解決CRX webDAV和Apache Sling中跨網站要求偽造(CSRF)的已知安全性問題，您必須設定反向連結篩選。
+**Apache Sling Referrer Filter** （Apache Sling反向連結篩選）：若要解決CRX WebDAV和Apache Sling中跨網站要求偽造(CSRF)的已知安全性問題，您必須設定反向連結篩選。
 
 反向連結篩選服務是一項OSGi服務，可讓您設定：
 
@@ -434,7 +434,7 @@ AEM中 [有兩個](/help/sites-authoring/select-ui.md) UI可用：
 * **連線逾時**，連線逾時（以毫秒為單位）。 此屬性同時適用於HTTP和HTTPS連接。 預設為60秒。
 
 * **啟用HTTPS** ，是否啟用HTTPS。 預設為false。
-* **會話超時**，以分鐘為單位指定的HTTP會話的預設期限。 如果逾時為0或更少，則作業不會逾時。 預設為10分鐘。
+* **Session Timeout**, Default lifetime of an HTTP session specified in minutes. 如果逾時為0或更少，則作業不會逾時。 預設為10分鐘。
 * **除錯記錄**，是否要寫入DEBUG級別消息。 預設為false。
 * **請求緩衝區大小**，請求的緩衝區大小（以位元組為單位）。 預設值為8KB。
 * **最大線程數**，用於處理請求的線程數。 預設值為200。
