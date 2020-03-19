@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM資產
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
+source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
 
 ---
 
@@ -195,7 +195,6 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 >
 >確保配置正常。 如果配置不健康，請將其刪除並建立新的健康配置。
 
-<br/> <br/>
 
 ### 設定雲端服務 {#configure-the-cloud-service}
 
