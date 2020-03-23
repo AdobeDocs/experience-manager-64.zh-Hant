@@ -3,7 +3,7 @@ title: AEM Assets支援的檔案格式
 description: AEM Assets支援的檔案格式和MIME類型清單，以及每種格式支援的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e71ae585919f3745d36bcbce4eebe49f4477e840
+source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
 
 ---
 
@@ -37,10 +37,12 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD* | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
+
+**¹** 從PSD檔案擷取合併的影像。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
 動態媒體功能支援的點陣影像格式如下：
 
@@ -52,15 +54,15 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
 | PNM |  |  |  |  |  |
-| PGM |  |  |  |  |  |
+| PFM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD* | ✓ |  |  |  |  |
+| PSD **¹** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-&amp;ast;從PSD檔案中提取合併的影像。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+**¹** 從PSD檔案擷取合併的影像。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
 除了上述資訊外，請考慮下列事項：
 
@@ -68,7 +70,7 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 
 * 將中繼資料回寫新增至處理常式時，可用於PSB檔案格 `NComm` 式。
 
-* 若要使用Dynamic media預覽並產生EPS檔案的動態轉譯，請參閱 [Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 若要使用Dynamic Media預覽並產生EPS檔案的動態轉譯，請參閱 [Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * 對於EPS檔案，PostScript Document Structuring Convention(PS-Adobe)3.0版或更新版本支援中繼資料回寫。
 
@@ -92,7 +94,7 @@ Adobe Imaging Rodcing Library是影像處理解決方案，可執行核心影像
 
 ## Camera Raw {#supported-camera-raw}
 
-Adobe Camera raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera raw支援](camera-raw.md)。
+Adobe Camera Raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera Raw支援](camera-raw.md)。
 
 ## 檔案格式 {#supported-document-formats}
 
@@ -144,9 +146,9 @@ Adobe Camera raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera
 
 除了上述功能外，請考慮下列事項：
 
-* 若要使用Dynamic media為PDF檔案產生動態轉譯，請參閱 [Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 若要使用Dynamic Media為PDF檔案產生動態轉譯，請參閱 [Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 若要使用Dynamic media預覽並產生AI檔案的動態轉譯，請參閱 [Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 若要使用Dynamic Media預覽並產生AI檔案的動態轉譯，請參閱 [Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * 若要使用動態媒體來產生INDD檔案的動態轉譯，請參 [閱InDesign(INDD)檔案格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
 
@@ -178,7 +180,7 @@ Adobe Camera raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera
 | 視訊副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
 |---|---|---|---|
 | MP4 | MPEG-4 | H264/AVC（所有描述檔） |  |
-| MOV、QT | Apple quickTime | H264/AVC、Apple proRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHDAvid AVR | Apple Intemiderate、Apple Animation |
+| MOV、QT | Apple QuickTime | H264/AVC、Apple ProRes422 &amp; HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV(DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHDAvid AVR | Apple Intemiderate、Apple Animation |
 | FLV、F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（向量動畫檔案） |
 | WMV | Windows Media 9 | WMV3(v9)、WMV2(v8)、WMV1(v7)、GoToMeeting(G2M2、G2M3、G2M4) | Microsoft螢幕(MSS2)、Microsoft Photo Story(WVP2) |
 | MPG、VOB、M2V、MP2 | MPEG-2 | MPEG-2 |  |
@@ -204,9 +206,9 @@ Adobe Camera raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP* | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**** &amp;ast;使用演算法建立的ZIP `Deflate64` 封存檔在AEM中的支援有限。 不支援存檔和取消存檔操作。 不過，支援上傳、瀏覽和下載等作業。
+**²** 從PSD檔案中提取合併的影像。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。 使用演算法建立的ZIP `Deflate64` 封存檔在AEM中的支援有限。 不支援存檔和取消存檔操作。 不過，支援上傳、瀏覽和下載等作業。
 
 ## 其他支援的格式 {#other-supported-formats}
 
@@ -214,14 +216,14 @@ Adobe Camera raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera
 
 | 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 動態媒體傳送 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| * | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript（當設定有自己的傳送網域時） |  |  |  |  |  | ✓ |
 
-**** &amp;ast;DAM中支援其他格式，包括儲存、版本修訂、ACL、工作流程、發佈和中繼資料管理。
+***** DAM中支援其他格式，包括儲存、版本修訂、ACL、工作流程、發佈和中繼資料管理。
 
 ## Supported MIME types {#supported-mime-types}
 
