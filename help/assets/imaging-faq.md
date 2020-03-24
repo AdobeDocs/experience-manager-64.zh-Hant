@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 649b53d9ab4165f4731889495f1a63de9eb07bc1
+source-git-commit: 31efe07cd66963559ff207bcd5492bf97076f875
 
 ---
 
@@ -46,7 +46,7 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN服務完全整合的�
 * 智慧型影像可以使用「bfc」 URL參數關閉。
 * TTL（存留時間）獨立。 以前，Smart Imaging的最低TTL為12小時。
 * 以前，原始和衍生影像都會進行快取，而使快取失效的步驟是2個。 在最新的智慧型影像中，只會快取衍生產品，允許單步快取失效程式。
-* 使用規則集中自訂標題的客戶(例如，將自訂標題值新增至影像回應|Dynamic Media Classic [](https://helpx.adobe.com/in/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「允許原點計時」、「X-Robot」)將受益於最新的智慧型影像，因為這些標題不會遭到封鎖，這與舊版智慧型影像不同。
+* 使用規則集中自訂標題的客戶(例如，將自訂標題值新增至影像回應|Dynamic Media Classic [](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「允許原點計時」、「X-Robot」)將受益於最新的智慧型影像，因為這些標題不會遭到封鎖，這與舊版智慧型影像不同。
 
 ## 智慧型影像處理是否有相關的授權成本？ {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
