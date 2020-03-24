@@ -3,7 +3,7 @@ title: XMP回寫至轉譯
 description: 瞭解XMP回寫功能如何將資產的中繼資料變更傳播至資產的所有或特定轉譯。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Experience Manager(AEM)Assets中的此XMP回寫功能會將資產中繼資
 
 「XMP回寫」功能會將中繼資料變更傳播至資產的所有或特定轉譯。
 
-請考慮您將名為「**Classic Leather**」的資產的Title屬性修改為「**Nylon**」的案例。
+請考慮您修改資產 [!UICONTROL 標題] (Title)屬性的 `Classic Leather` 藍本 `Nylon`。
 
 ![中繼資料](assets/metadata.png)
 
@@ -30,9 +30,9 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 
 ## 啟用XMP回寫 {#enabling-xmp-writeback}
 
-若要啟用中繼資料變更在上傳資產時傳播至資產的轉譯，請在Configuration manager中修改 **Adobe CQ DAM Rendition Maker** configuration。
+若要啟用中繼資料變更在上傳資產時傳播至資產的轉譯，請在Configuration Manager中修改 **Adobe CQ DAM Rendition Maker** configuration。
 
-1. 從中開啟配置管 `https://[AEM_server]:[port]/system/console/configMgr`理器。
+1. 從中開啟配置管 `https://[aem_server]:[port]/system/console/configMgr`理器。
 1. 開啟 **[!UICONTROL Adobe CQ DAM Rendition Maker設定]** 。
 1. 選擇「 **[!UICONTROL 傳播XMP]** 」選項，然後保存更改。
 
@@ -44,25 +44,22 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 
 對於「XMP回寫」功能，將中繼資料傳播至轉譯縮圖140.100.png和319.319.png，請執行這些步驟。
 
-1. 點選/按一下AEM標誌，然後導覽至「工 **[!UICONTROL 具 >工 作流程 >模 型]**」。
-1. 從「模型」頁面，開啟「 **DAM中繼資料回寫** 」工作流程模型。
+1. 在Experience Manager中，導覽至「工 **[!UICONTROL 具>工作流程>模型」]**。
+1. 從「模 [!UICONTROL 型] 」頁面，開啟 **** DAM中繼資料回寫工作流程模型。
 1. 在「 **[!UICONTROL DAM中繼資料回寫]** 」屬性頁面中，開啟 **[!UICONTROL 「XMP回寫程式」步驟]** 。
-1. 在「步 驟屬性 」對話方塊中，點選/按一下「 **[!UICONTROL 處理]** 」標籤。
-1. 在「參 **[!UICONTROL 數]** 」方塊中，新增 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`，然後點選／按一下「 **[!UICONTROL 確定」]**。
+1. 在「步 **[!UICONTROL 驟屬性]** 」對話方塊中，點選/按一下「 **[!UICONTROL 處理]** 」標籤。
+1. 在「參 **[!UICONTROL 數]** 」框中，添加 `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`。 點選／按一下「 **[!UICONTROL 確定]**」。
 
    ![step_properties](assets/step_properties.png)
 
-1. 儲存變更。
-1. To regenerate the pyramid TIF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
-PTIFF轉譯只會在Dynamic Media Hybrid實作中建立並儲存在本機。
+1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
+PTIFF轉譯只會在「動態媒體混合」模式中建立並儲存在本機。 儲存工作流程。
 
-1. 儲存工作流程。
-
-中繼資料變更會傳播至資產的轉譯縮圖140.100.png和thumbnail.319.319.png，而非其他。
+中繼資料變更會傳播至資產 `thumbnail.140.100.png` 的轉 `thumbnail.319.319.png` 譯和轉譯，而非其他轉譯。
 
 >[!NOTE]
 >
->有關64位元Linux中的XMP回寫問題，請參 [閱如何在64位元RedHat linux上啟用XMP回寫](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)。
+>有關64位元Linux中的XMP回寫問題，請參 [閱如何在64位元RedHat Linux上啟用XMP回寫](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)。
 >
 >如需支援平台的詳細資訊，請參閱 [XMP中繼資料回寫的必要條件](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)。
 
@@ -78,17 +75,14 @@ XMP中繼資料的白名單篩選可讓您定義要匯入的XMP屬性，以解�
 >
 >篩選只適用於資產二進位檔中衍生自XMP來源的屬性。 對於從非XMP來源衍生的屬性（例如EXIF和IPTC格式），篩選無法運作。 例如，資產建立日期會儲存在以EXIF TIFF命名的 `CreateDate` 屬性中。 AEM在名為的中繼資料欄位中提到此值 `exif:DateTimeOriginal`。 由於來源是非XMP來源，因此篩選不適用於此屬性。
 
-1. 從中開啟配置管 `https://[AEM_server]:[port]/system/console/configMgr`理器。
+1. 從中開啟配置管 `https://[aem_server]:[port]/system/console/configMgr`理器。
 1. 開啟 **[!UICONTROL Adobe CQ DAM XmpFilter組態]** 。
 1. 若要套用白名單篩選，請選 **[!UICONTROL 取「套用白名單至XMP屬性」]**，並指定要在「白名單的XML名稱供XMP篩選」方 **[!UICONTROL 塊中匯入的屬性]** 。
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. 若要在套用白名單篩選後篩除黑名單XMP屬性，請在「XMP篩選的黑名單XML名 **[!UICONTROL 稱」方塊中指定]** 。
+1. 若要在套用白名單篩選後篩除黑名單XMP屬性，請在「XMP篩選的黑名單XML名 **[!UICONTROL 稱」方塊中指定]** 。儲存變更。
 
    >[!NOTE]
    >
-   >預設 **[!UICONTROL 情況下，「將黑名單應用於XMP屬性]** 」選項處於選中狀態。 換言之，黑名單篩選預設為啟用。 要禁用黑名單過濾，請取消選 **[!UICONTROL 擇將黑名單應用於XMP屬性]** 。
-
-1. 儲存變更。
-
+   >預設 **[!UICONTROL 情況下，「將黑名單應用於XMP屬性]** 」選項處於選中狀態。 換言之，黑名單篩選預設為啟用。 要禁用黑名單過濾，請取消選 **[!UICONTROL 擇將黑名單應用於XMP屬性]**。
