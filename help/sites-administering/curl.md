@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7b420c11603bee05ef3793fe3603c20a8e77bc56
 
 ---
 
@@ -27,7 +27,7 @@ cURL是用於執行URL操縱的開放原始碼命令列工具。 它支援多種
 
 cURL是使用URL語法取得或傳送資料的成熟且廣泛使用的工具，最初於1997年發行。 名稱cURL原意是「請參閱URL」。
 
-由於建立AEM的Sling架構具有REST風格，因此大部分工作都可縮減為URL呼叫，而URL呼叫可以使用cURL執行。 [使用cURL](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) ，可自動執行內容控制工作 [，例如啟動頁面、啟動工作流程](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 以及操作工作，例如封裝管理和管理使用者。 此外，您也可 [](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) 以針對AEM中的大部分工作建立自己的cURL指令。
+由於建立AEM的Sling架構具有REST風格，因此大部分工作都可縮減為URL呼叫，而URL呼叫可以與cURL一起執行。 [使用cURL](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) ，可自動執行內容控制工作 [，例如啟動頁面、啟動工作流程](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 以及操作工作，例如封裝管理和管理使用者。 此外，您也可 [](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) 以針對AEM中的大部分工作建立自己的cURL指令。
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/console.ht
 curl -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=build
 ```
 
-#### 重新包覆套件 {#rewrap-a-package}
+#### 重新包裝套件 {#rewrap-a-package}
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/crx/packmgr/service/.json/etc/packages/mycontent.zip?cmd=rewrap
@@ -370,13 +370,13 @@ curl -u admin:admin -F :operation=delete http://localhost:4502/etc/test/test.pro
 #### 移動節點 {#move-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=move" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### 複製節點 {#copy-a-node}
 
 ```shell
-curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://lcoalhost:4502/content
+curl -u admin:admin -F":operation=copy" -F":applyTo=/sourceurl"  -F":dest=/target/parenturl/" https://localhost:4502/content
 ```
 
 #### 使用Sling PostServlet上傳檔案 {#upload-files-using-sling-postservlet}
