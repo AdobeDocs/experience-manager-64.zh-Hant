@@ -3,7 +3,7 @@ title: 關於AEM Assets
 description: 瞭解什麼是數位資產管理、其使用案例，以及Adobe的AEM Asset產品。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
 
 ---
 
@@ -64,21 +64,21 @@ AEM Assets已與CQ WCM完全整合，而且可使用DAM圖示提供功能：
 
 在AEM中使用數位資產時，您需要瞭解下列術語：
 
-* **Collection:** A collection of assets, either based on physical location (folder), common properties (saved search folder), or user selection (lightbox folders).
+* **系列：** 資產的集合，根據實體位置（資料夾）、常用屬性（儲存的搜尋資料夾）或使用者選擇（燈箱資料夾）。
 
-* **** 中繼資料：資產有元資料；例如，作者、過期日期、DRM資訊（數位版權管理）等。 中繼資料受到存取控制。 AEM Assets支援下列各種立即可用的常用中繼資料架構：
+* **中繼資料：** 資產有元資料；例如，作者、過期日期、DRM資訊（數位版權管理）等。 中繼資料受到存取控制。 AEM Assets支援下列各種立即可用的常用中繼資料架構：
 
    * **Dublin Core**:包括作者、說明、日期、主旨等。
    * **IPTC**:包括事件、模型、位置等。
    * **WCM**:包括頁面屬性、按時和關機等。
 
-* **** 標籤：資產可以加上標籤並分類。 請參閱使用標籤和管理標籤。
+* **標籤：** 資產可以加上標籤並分類。 請參閱使用標籤和管理標籤。
 
-* **Renditions:** A rendition is the binary representation of an asset. 資產一律有主要表示法，即上傳的檔案。它們可以有不限數量的其他表示法，例如，可能是由自訂的工作流程步驟或在上傳資產時所建立。轉譯可能有不同大小、不同解析度、加上浮水印，或其他某個已變更的特性。
+* **轉譯：** 轉譯是資產的二進位表示法。 資產一律有主要表示法，即上傳的檔案。它們可以有不限數量的其他表示法，例如，可能是由自訂的工作流程步驟或在上傳資產時所建立。轉譯可能有不同大小、不同解析度、加上浮水印，或其他某個已變更的特性。
 
-* **Versions:** Versioning creates a snapshot of digital assets at a specific point in time. 請參閱「AEM資產中的版本控制」。
+* **版本：** 版本修訂會在特定時間點建立數位資產的快照。 您可以將資產還原為舊版。 請參 [閱AEM Assets中的版本控制](managing-assets-touch-ui.md#asset-versioning)。
 
-* **Sub-assets:** Sub-assets are assets that make up an asset, for example, layers in an Adobe Photoshop file or pages in a PDF file. 
+* **子資產：** 子資產是組成資產的資產，例如Adobe Photoshop檔案中的圖層或PDF檔案中的頁面。 在AEM Assets中，您可以像管理資產一樣管理子資產。
 
 ### 如何使用資產 {#how-to-work-with-assets}
 
@@ -93,6 +93,6 @@ AEM Assets已與CQ WCM完全整合，而且可使用DAM圖示提供功能：
 
 當然，您也可以手動套用工作流程。 請參 [閱「AEM Assets Media](media-handlers.md)Handler」以取得預設工作流程的清單。
 
-## AEM DAM和AEM mediaLibrary {#cq-dam-vs-cq-medialibrary}
+## AEM DAM和AEM MediaLibrary {#cq-dam-vs-cq-medialibrary}
 
 如需 [差異的相關資訊，請參閱AEM DAM和AEM MediaLibrary](medialibrary.md) 。
