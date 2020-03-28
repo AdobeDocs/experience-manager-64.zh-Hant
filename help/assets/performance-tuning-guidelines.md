@@ -3,7 +3,7 @@ title: 資產效能調整指南
 description: AEM設定、硬體、軟體和網路元件變更等重點領域，以消除瓶頸並最佳化AEM資產的效能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
 
 ---
 
@@ -26,7 +26,7 @@ AEM Assets的效能不佳可能會影響使用者在互動式效能、資產處�
 
 ### 臨時資料夾 {#temp-folder}
 
-若要改善資產上傳時間，請對Java temp目錄使用高效能儲存。 在Linux和Windows上，可使用RAM驅動器或SSD。 在雲端環境中，可使用等同的高速儲存類型。 例如，在Amazon EC2中，臨時 [驅動器驅動器](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) ，可用於臨時資料夾。
+若要改善資產上傳時間，請對Java temp目錄使用高效能儲存。 在Linux和Windows上，可使用RAM驅動器或SSD。 在雲端環境中，可使用等同的高速儲存類型。 例如，在Amazon EC2中，臨時 [驅動器驅動器](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) 可用於temp資料夾。
 
 假設伺服器記憶體充足，請配置RAM驅動器。 在Linux上，運行以下命令以建立8 GB的RAM驅動器：
 
@@ -162,11 +162,11 @@ Adobe建議啟用HTTPS，因為許多公司都有防火牆來監聽HTTP流量，
 
 ### DAM更新資產設定 {#dam-update-asset-configuration}
 
-DAM更新資產工作流程包含為工作設定的完整步驟套件，例如產生Scene7 PTIFF和InDesign server整合。 不過，大部分使用者可能不需要其中幾個步驟。 Adobe建議您建立DAM更新資產工作流程模型的自訂復本，並移除任何不必要的步驟。 在此情況下，請更新DAM更新資產的啟動器，以指向新模型。
+DAM更新資產工作流程包含為工作設定的完整步驟套件，例如產生Scene7 PTIFF和InDesign Server整合。 不過，大部分使用者可能不需要其中幾個步驟。 Adobe建議您建立DAM更新資產工作流程模型的自訂復本，並移除任何不必要的步驟。 在此情況下，請更新DAM更新資產的啟動器，以指向新模型。
 
 >[!NOTE]
 >
->深入執行DAM更新資產工作流程可大幅增加檔案資料存放區的大小。 Adobe進行的實驗結果顯示，如果在8小時內執行約5500個工作流程，資料存放區大小可增加約400 GB。
+>深入執行DAM更新資產工作流程可大幅增加檔案資料存放區的大小。 Adobe進行的實驗結果顯示，若在8小時內執行約5500個工作流程，資料存放區大小可增加約400 GB。
 >
 >這是臨時增加，在運行資料儲存廢棄項目收集任務後，資料儲存將恢復為其原始大小。
 >
@@ -242,31 +242,33 @@ To disable Page Extraction:
 1. Click **[!UICONTROL OK]**
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
 
---># Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
+-->
 
-在資產上傳期間，AEM的工作流程會針對PDF和Office檔案中的每個頁面建立個別的資產。 這些頁面本身都是資產，會佔用額外的磁碟空間，需要版本修訂和額外的工作流程處理。 如果您不需要個別頁面，請停用「子資產產生」和「頁面擷取」。
+<!--
+# Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
-若要停用子資產產生，請執行下列動作：
+During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
 
-1. 前往 **[!UICONTROL /libs/cq/workflow/content/console.html開啟Workflow Console]** (工作流程控制 *台)*
+To disable Sub Asset generation, do the following:
 
-1. 選擇「模 **[!UICONTROL 型]** 」頁籤
-1. 連按兩下「 **[!UICONTROL DAM更新資產」工作流程模型]** 。
-1. 從「 **[!UICONTROL DAM更新資產]** 」工作流程 **** 模型刪除「流程子資產」步驟。
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
-1. 按一下「儲 **[!UICONTROL 存」]**
+1. Select the **[!UICONTROL Models]** tab
+1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
+1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
 
-若要停用頁面擷取：
+1. Click on **[!UICONTROL Save]**
 
-1. 前往 **[!UICONTROL /libs/cq/workflow/content/console.html開啟Workflow Console]** (工作流程控制 *台)*
+To disable Page Extraction:
 
-1. 選擇「啟 **[!UICONTROL 動器]** 」頁籤
-1. 選取啟動 **[!UICONTROL DAM Parse Word Documents工作流程模型的啟動器]** 。
-1. 按一下「 **[!UICONTROL 編輯」]**
-1. 選擇禁 **[!UICONTROL 用]**
-1. 按一下「 **[!UICONTROL 確定」]**
-1. 對使用**DAM Parse word檔案**工作流程模型的其他啟動程式項目重複步驟3-6
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
+1. Select the **[!UICONTROL Launchers]** tab
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model.
+1. Click **[!UICONTROL Edit]**
+1. Select **[!UICONTROL Disable]**
+1. Click **[!UICONTROL OK]**
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
 ### XMP writeback {#xmp-writeback}
@@ -297,7 +299,7 @@ To disable Page Extraction:
 
 ## 搜索索引 {#search-indexes}
 
-請確定您實作了最新的Service pack和與效能相關的修補程式，因為它們通常包含系統索引的更新。 請參閱 [效能調整提示| 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) ，針對某些可套用的索引最佳化，視您的AEM版本而定。
+請確定您實作了最新的Service Pack和與效能相關的修補程式，因為它們通常包含系統索引的更新。 請參閱 [效能調整提示| 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) ，針對某些可套用的索引最佳化，視您的AEM版本而定。
 
 為經常運行的查詢建立自定義索引。 如需詳細資訊，請參 [閱分析慢速查詢和建立自訂索引](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)[的方法](/help/sites-deploying/queries-and-indexing.md)。 如需查詢和索引最佳實務的其他深入資訊，請參 [閱查詢和索引最佳實務](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 
@@ -345,13 +347,13 @@ To disable Page Extraction:
 
    type=&quot;String&quot;
 
-1. 在/oak:index/ntBaseLucene節點上，設定屬 *性reindex=true*
+1. 在/oak:index/ntBaseLucene節點上，設定屬性 `reindex=true`
 1. 按一下「 **[!UICONTROL 全部儲存」]**
 1. 監視error.log以查看索引完成時間：
 
    已完成索引的重新索引： [/oak:index/ntBaseLucene]
 
-1. 您也可以看到，在CRXDe中重新整理/oak:index/ntBaseLucene節點，因為reindex屬性會返回false，所以已完成索引
+1. 您也可以看到，在CRXDe中重新整理/oak:index/ntBaseLucene節點，將重新索引屬性返回false，即可完成索引
 1. 索引完成後，返回CRXDe，並在這兩個索 **[!UICONTROL 引上]** ，將type屬性設為disabled
 
    * */oak:index/slingResource*
@@ -396,24 +398,24 @@ AEM中有兩個與大型檔案相關的主要已知問題。 當檔案大小超�
 
 ### AEM例項測試 {#aem-instance-testing}
 
-若要透過有效的CPU使用率和負載共用，將延遲降至最低並達到高吞吐量，請定期監控AEM執行個體的效能。 特別是：
+若要透過有效的CPU使用率和負載共用，將延遲降至最低並達到高吞吐量，請定期監控AEM執行個體的效能。 尤其是：
 
 * 針對AEM例項執行載入測試
 * 監控上傳效能和UI回應速度
 
 ## AEM Assets效能檢查清單 {#aem-assets-performance-checklist}
 
-* 讓HTTPS繞過任何公司HTTP流量Sniffer
-* 使用有線連線上傳大量資產
-* 部署在Java 8。
-* 設定最佳JVM參數
-* 配置檔案系統資料儲存或S3資料儲存
-* 啟用暫時工作流程
-* 調整Granite工作流程佇列以限制併發工作
-* 配置ImageMagick以限制資源消耗
-* 從「DAM更新資產」工作流程移除不必要的步驟
-* 配置工作流和版本清除
-* 在6.2之前版本中最佳化Lucene索引組態
-* 使用最新的Service pack和修補程式來最佳化索引。 請洽詢Adobe支援，以取得任何其他可用的索引最佳化。
+* 讓HTTPS繞過任何公司HTTP流量Sniffer。
+* 使用有線連線上傳大量資產。
+* 設定最佳JVM參數。
+* 配置檔案系統資料儲存或S3資料儲存。
+* 停用子資產產生。 如果已啟用，AEM的工作流程會針對多頁資產中的每個頁面建立個別的資產。 這些頁面都是個別資產，會佔用額外的磁碟空間、需要版本修訂以及額外的工作流程處理。 如果您不需要個別頁面，請停用子資產產生和頁面擷取活動。
+* 啟用暫時性工作流程。
+* 調整Granite工作流程佇列以限制併發工作。
+* 設定ImageMagick以限制資源消耗。
+* 從「DAM更新資產」工作流程移除不必要的步驟。
+* 設定工作流程和版本清除。
+* 優化Lucene索引配置。
+* 使用最新的Service Pack和修補程式來最佳化索引。 請洽詢Adobe支援，以取得任何其他可用的索引最佳化。
 * 使用 `guessTotal` 以最佳化查詢效能。
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
