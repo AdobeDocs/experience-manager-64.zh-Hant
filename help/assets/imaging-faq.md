@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 31efe07cd66963559ff207bcd5492bf97076f875
+source-git-commit: 7d0c2e63d6ea7942cf442d61bdab8e31dd2c3e47
 
 ---
 
@@ -25,8 +25,8 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN服務完全整合的�
 
 以下影像資產範例說明新增的智慧型影像最佳化：
 
-| Image<br>(URL) | 縮圖 | 大小<br> (JPEG) | 大小(WebP)<br> (使用智 ***慧影像***) | 減少% |
-|---|:---:|:---:|:---:|:---:|:---:|
+| Image<br>(URL) | 縮圖 | 大小<br> (JPEG) | 大小(WebP)<br> （含智慧型影像） | 減少% |
+|---|---|---|---|---|
 | [影像1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture1](assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
 | [影像2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture2](assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
 | [影像3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![picture3](assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
@@ -144,7 +144,7 @@ Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 尋找標示�
 1. 完成後，支援會通知您。
 1. 為充份提升智慧型影像處理的效能，Adobe建議將「存留時間(TTL)」設定為24小時或更長。 TTL會定義CDN快取資產的時間長度。 要更改此設定，請：
 
-   1. 如果您使用Dynamic Media Classic，請按一下「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」]**。 將「預 **[!UICONTROL 設用戶端快取時間」設為]** 24或更長的「即時」值。
+   1. 如果您使用Dynamic Media Classic，請按一下「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器]**」。 將「預 **[!UICONTROL 設用戶端快取時間」設為]** 24或更長的「即時」值。
    1. 如果您使用動態媒體，請依照 [這些指示](config-dynamic.md)。 將「過 **[!UICONTROL 期]** 」值設為24小時或更長。
 
 ## 我何時可以期待我的帳戶啟用Smart Imaging? {#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
