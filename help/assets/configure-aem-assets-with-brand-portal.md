@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM資產
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
+source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
 
 ---
 
@@ -17,12 +17,14 @@ Adobe Experience Manager(AEM)Assets是透過Adobe I/O以品牌入口網站設定
 >AEM 6.4.8.0及更新版本支援透過Adobe I/O以品牌入口網站設定AEM資產。
 >
 >之前，品牌入口網站是透過舊版OAuth閘道在傳統使用者介面中設定，該閘道使用JWT代號交換來取得IMS存取代號以進行授權。
+
+
+>[!TIP]
 >
->如果您是舊版OAuth閘道上具備設定的現有品牌入口網站使用者，建議您刪除現有的設定並在Adobe I/O上建立新的設定。
+>***僅限現有客戶***
 >
->如果您是舊版OAuth閘道上具備設定的現有品牌入口網站使用者，建議您刪除現有的設定並在Adobe I/O上建立新的設定。
->
->但是，如果不修改配置，現有配置將繼續工作。
+>建議您繼續使用現有的舊版OAuth閘道設定。 萬一您遇到舊版OAuth閘道設定的問題，請刪除現有的設定，並透過Adobe I/O建立新的設定。
+
 
 本說明說明下列兩個使用案例：
 * [新配置](#configure-new-integration-64):如果您是新的品牌入口網站使用者，並想要使用品牌入口網站設定您的AEM Assets作者例項，則可以在Adobe I/O上建立新的設定。
@@ -49,7 +51,7 @@ Adobe Experience Manager(AEM)Assets是透過Adobe I/O以品牌入口網站設定
 
 ### 下載並安裝AEM 6.4 {#aemquickstart}
 
-建議您使用AEM 6.4來設定AEM作者例項。 如果您沒有啟動並執行AEM，請從下列位置下載：
+建議您使用AEM 6.4來設定AEM作者例項。 如果您沒有啟動並執行AEM，請從下列位置下載它：
 
 * 如果您是現有的AEM客戶，請從 [Adobe授權網站下載AEM 6.4](http://licensing.adobe.com)。
 
