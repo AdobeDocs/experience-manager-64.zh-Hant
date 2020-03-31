@@ -8,7 +8,7 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 68ab70332a16a9a043f0db0ede75049b85188750
 
 ---
 
@@ -45,7 +45,7 @@ ECMAScript是一種指令碼語言。 它用於用戶端指令碼和伺服器應
       |--- |--- |--- |
       | jcr:title | 字串 | 指定指令碼的名稱。 例如，選擇最接近的欄位代理。 此名稱會顯示在「指派工作」和「簽署檔案」步驟中。 |
 
-   1. 按一下「 **全部儲存**」。 此指令碼可供AEM workflow的元件中選取。
+   1. 按一下「 **全部儲存**」。 此指令碼可供AEM Workflow的元件中選取。
 
       ![指令碼](assets/script.png)
 
@@ -71,7 +71,7 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-下列範例ECMAScript會動態選取Adobe Sign步驟的受託人。 使用下列指令碼之前，請確定指令碼中提及的使用者資訊（電子郵件地址和電話號碼）正確無誤。 如果指令碼中提及的用戶資訊不正確，則相關進程可能失敗。
+下列範例ECMAScript會動態選取Adobe Sign步驟的受託人。 使用下列指令碼之前，請確定指令碼中提及的使用者資訊（電子郵件地址和電話號碼）正確無誤。 如果指令碼中提及的用戶資訊不正確，則相關進程可能會失敗。
 
 >[!NOTE]
 >
@@ -155,8 +155,8 @@ function getAdobeSignRecipients() {
        <dependencies>
            <dependency>
                <groupId>com.adobe.aemfd</groupId>
-               <artifactId>aemfd-client-sdk-test</artifactId>
-               <version>4.0.70</version>
+               <artifactId>aemfd-client-sdk</artifactId>
+               <version>5.1.100</version>
            </dependency>
            <dependency>
                <groupId>com.adobe.granite</groupId>
@@ -228,7 +228,7 @@ function getAdobeSignRecipients() {
 
    `mvn clean install`
 
-1. 將套件上傳至AEM Forms伺服器。 您可以使用AEM Package manager將搭售匯入AEM Forms伺服器。
+1. 將套件上傳至AEM Forms伺服器。 您可以使用AEM Package Manager將搭售匯入AEM Forms伺服器。
 
 匯入套件後，Adobe Sign和「指派工作」步驟中便可使用選擇動態選取使用者或群組的Java介面選項。
 
