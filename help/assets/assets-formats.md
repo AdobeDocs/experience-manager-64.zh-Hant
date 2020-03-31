@@ -3,7 +3,7 @@ title: AEM Assets支援的檔案格式
 description: AEM Assets支援的檔案格式和MIME類型清單，以及每種格式支援的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 75d2bdc6cda9a608d622e31769abfa36e847e3a3
+source-git-commit: 171186251e675094e716931b64c77e7897c03ca7
 
 ---
 
@@ -20,7 +20,7 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 |:---:|---|
 | ✓ | 支援 |
 | * | 支援附加功能 |
-| - | 不適用 |
+| − | 不適用 |
 
 ## 點陣影像格式 {#supported-raster-image-formats}
 
@@ -34,15 +34,15 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ | ✓ | ✓ | ✓ | ✓ |  | ✓ |
 | PNM | ✓ | ✓ |  |  |  |  | ✓ |
-| PGM | ✓ | ✓ |  |  |  |  | ✓ |
+| PFM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **¹** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**¹** 從PSD檔案擷取合併的影像。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+**‡** 合併的影像是從PSD檔案擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
 動態媒體功能支援的點陣影像格式如下：
 
@@ -54,15 +54,15 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | BMP | ✓ |  |  |  |  |
 | PNM |  |  |  |  |  |
-| PFM |  |  |  |  |  |
+| PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **¹** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**¹** 從PSD檔案擷取合併的影像。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+**‡** 合併的影像是從PSD檔案擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
 除了上述資訊外，請考慮下列事項：
 
@@ -156,16 +156,16 @@ Adobe Camera Raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera
 
 | 格式 | 儲存 | 中繼資料管理 | 中繼資料擷取 | 產生縮圖 | FFMPEG轉碼 |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | * |
-| MIDI | ✓ | ✓ |  | - | * |
-| 3GP | ✓ | ✓ |  | - | * |
-| MP3 | ✓ | ✓ | ✓ | - | * |
-| MPG | ✓ | ✓ |  | - | * |
-| OGA | ✓ | ✓ |  | - | * |
-| OGG | ✓ | ✓ |  | - | * |
-| RA | ✓ | ✓ |  | - | * |
-| WAV | ✓ | ✓ |  | - | * |
-| WMA | ✓ | ✓ |  | - | * |
+| AAC | ✓ | ✓ |  | − | * |
+| MIDI | ✓ | ✓ |  | − | * |
+| 3GP | ✓ | ✓ |  | − | * |
+| MP3 | ✓ | ✓ | ✓ | − | * |
+| MPG | ✓ | ✓ |  | − | * |
+| OGA | ✓ | ✓ |  | − | * |
+| OGG | ✓ | ✓ |  | − | * |
+| RA | ✓ | ✓ |  | − | * |
+| WAV | ✓ | ✓ |  | − | * |
+| WMA | ✓ | ✓ |  | − | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
@@ -206,9 +206,9 @@ Adobe Camera Raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | RAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| ZIP **²** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**²** 從PSD檔案中提取合併的影像。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。 使用演算法建立的ZIP `Deflate64` 封存檔在AEM中的支援有限。 不支援存檔和取消存檔操作。 不過，支援上傳、瀏覽和下載等作業。
+**†合** 並的影像會從PSD檔案擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。 使用演算法建立的ZIP `Deflate64` 封存檔在AEM中的支援有限。 不支援存檔和取消存檔操作。 不過，支援上傳、瀏覽和下載等作業。
 
 ## 其他支援的格式 {#other-supported-formats}
 
@@ -216,14 +216,14 @@ Adobe Camera Raw程式庫可讓AEM Assets擷取原始影像。 請參閱 [Camera
 
 | 格式 | 儲存 | 版本設定 | 工作流程 | 發佈 | 存取控制 | 動態媒體傳送 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **³** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
+| **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | JavaScript（當設定有自己的傳送網域時） |  |  |  |  |  | ✓ |
 
-***** DAM中支援其他格式，包括儲存、版本修訂、ACL、工作流程、發佈和中繼資料管理。
+**#** DAM支援其他格式，包括儲存、版本修訂、ACL、工作流程、發佈和中繼資料管理。
 
 ## Supported MIME types {#supported-mime-types}
 
@@ -271,7 +271,7 @@ CRXDE Lite中提供支援的MIME類型清單，網址為 `/conf/global/settings/
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdf選項](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PFM | application/x-font-type1 |  |  |
+| PGM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
