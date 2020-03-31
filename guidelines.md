@@ -1,5 +1,5 @@
 ---
-source-git-commit: 5bef271d6b09af577bbd9b963fe0757c1b6f822a
+source-git-commit: 10c53b92c068c4a6da76ebedbb85b0c0add7a5ed
 translation-type: tm+mt
 
 ---
@@ -7,7 +7,7 @@ translation-type: tm+mt
 
 ## AEM檔案哲學
 
-我們知道Adobe Experience manager使用者在競爭激烈的環境中工作，致力於建立讓他們與眾不同的數位體驗。 因此，當Adobe在AEM中提供進階的新工具時，必須以精確而清楚的檔案來補充這些工具，讓客戶立即運用其AEM投資並將投資報酬率提升到最大。
+我們知道Adobe Experience Manager使用者在競爭激烈的環境中工作，致力於建立讓他們與眾不同的數位體驗。 因此，當Adobe在AEM中提供進階的新工具時，必須以精確而清楚的檔案來補充這些工具，讓客戶立即運用其AEM投資並將投資報酬率提升到最大。
 
 AEM檔案的目的，是讓AEM使用者盡快掌握檔案。 因此，我們會優先處理正確、可用的檔案，並致力於不斷更新和改進。
 
@@ -17,7 +17,7 @@ AEM檔案的目的，是讓AEM使用者盡快掌握檔案。 因此，我們會�
 
 ## 檔案標準
 
-雖然我們歡迎對檔案的貢獻，但任何對AEM檔案的貢獻（無論是以拉式要求或問題的形式）都必須符合我們的貢獻和檔案標準。
+雖然我們歡迎對檔案的貢獻，但任何對AEM檔案的貢獻（無論是以拉式要求或問題的形式）都應符合我們的貢獻和檔案標準。
 
 不符合這些標準的捐款可予拒絕。
 
@@ -33,9 +33,9 @@ AEM檔案涵蓋標準使用案例。 因此，通常不會記錄錯誤、由錯�
 
 ### 檔案稿不用於回答技術問題。
 
-歡迎您提出任何必須改善AEM檔案的想法，做為貢獻。 但是，評論、問題和提取要求僅供稿 *件* 。 它們不是用來回答您有關如何使用AEM或解決技術問題的問題。
+歡迎您提出任何必須改善AEM檔案的想法，做為貢獻。 但是，評論、問題和提取要求僅供稿 *件* 。 這些項目不會用來回答您有關如何使用AEM、實作AEM專案或解決技術問題的問題。
 
-如果您對AEM的使用或技術錯誤有任何疑問，請透過 [Experience Manager支援入口網站](https://daycare.day.com/home.html) ，或在 [Experience manager社群中討論，透過一般的支援程式進行報告](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)。
+如果您對AEM的使用或技術錯誤有任何疑問，請透過 [Experience Manager支援入口網站](https://daycare.day.com/home.html) ，或在 [Experience Manager社群中討論，透過一般的支援程式進行報告](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)。
 
 ***AEM 文件稿件不會取代 Adobe 支援***，且這類稿件只要試圖解答支援相關問題，都將遭到拒絕。
 
@@ -43,13 +43,13 @@ AEM檔案涵蓋標準使用案例。 因此，通常不會記錄錯誤、由錯�
 
 如果您建立問題以建議對檔案進行改進，則必須包含受影響頁面的連結。如果您使用檔案頁面上的「編輯 **此頁面** 」連結來建立期刊，則會自動建立包含該頁面連結的期刊。
 
-這不適用於提取請求，因為提取請求依定義包含受影響的頁面。
+這不適用於提取請求，因為根據其性質引用受影響頁面的提取請求。
 
 ## 檔案准則
 
 我們要求對說明檔案的任何貢獻都遵循特定的風格准則。
 
-遵循這些准則可讓您更輕鬆地審閱您的貢獻，因此與我們檔案的整合也更快速。 然而，不遵守或不完全遵守這些准則並不意味著將拒絕這些貢獻。
+遵循這些准則可讓您更輕鬆地審閱您的貢獻，因此與我們檔案的整合也更快速。
 
 ### 語言與樣式
 
