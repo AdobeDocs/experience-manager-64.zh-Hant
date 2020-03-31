@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 6684e78caf43b49660de3c1a90e2cccd9a204420
+source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
 
 ---
 
@@ -46,6 +46,8 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 * 使用SOAP web service的表單資料模型整合現在支援元素上的選擇群組或屬性。
 
 * AEM Assets現在已透過Adobe I/O設定品牌入口網站。
+
+* 將ContextHub中捆綁的jQuery版本更新為3.4.1。
 
 ## 變更清單 {#list-of-changes}
 
@@ -379,7 +381,7 @@ AEM 6.4.6.0的一些主要亮點是：
 
 **網站**
 
-* `pageinfo.json` 請求極其緩慢，且載入時間過長。 NPR-29709:CQ-4269560的修補程式
+* `pageinfo.json` 請求極慢且載入時間過長。 NPR-29709:CQ-4269560的修補程式
 * `onTime` 或 `offTime` 者，如果AEM伺服器重新啟動，資產上儲存的中繼資料屬性不會重新啟動。 NPR-30413:CQ-4272784的修補程式
 * 由於ConfigPostProcessor類的行為不正確，暫停父頁面會刪除cq:來自子頁面的LiveRelationship混合類型。 NPR-30536、NPR-30510:CQ-4254113的修補程式
 * 跨網站指令碼(XSS)，位於「促銷活動」編輯頁面的「開始」工作流程對話方塊中。 NPR-29747:CQ-4271067的修補程式
@@ -1389,7 +1391,7 @@ AEM 6.4.2.0的一些主要亮點是：
 
 **社群**
 
-* （檔案庫）下載空白的資產會導致格式問題。 NPR-23260:CQ-4245159的修補程式
+* （檔案庫）下載空白的資產會導致格式問題。 NPR-24260:CQ-4245159的修補程式
 * 修正數個Adobe Social問題。 NPR-24247:CQ-4245054、CQ-4245120、CQ-4245296的修補程式
 * 成員和群組的無限捲動控制台失敗，以防作者發佈在不同的上下文路徑上執行。 NPR-24437:CQ-4246013的修補程式
 * 即使從已應答狀態移除貼文，貼文也不會返回未應答狀態，且分數不會下降。 NPR-24419:CQ-4245797、CQ-4245932的修補程式
@@ -1758,7 +1760,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * (Classic UI)(Touch UI)嘗試透過資產搜尋結構中的標籤述詞瀏覽標籤時，不會顯示標籤選擇器並引發例外。 NPR-23049:CQ-4239371的修補程式
 * (Classic UI)使用xtype=tags的元件會傳回null，且無法從標籤的eth清單中選取。 NPR-23050:CQ-4239937的修補程式
 * （品牌推廣）「選擇加入」對話方塊提及Adobe Marketing Cloud，而非Adobe Experience Cloud。 NPR-23210:CQ-4237799的修補程式
-* 篩選選項會在從6.3升級至6.4後，讓AEM變得呆滯。NPR-23260:CQ-4239847的修補程式（待檢查）
+* 篩選選項會在從6.3升級至6.4後，讓AEM變得呆滯。NPR-24260:CQ-4239847的修補程式（待檢查）
 * granite.omnisearch.core修正的主動式支援。 NPR-23536
 * 平台。clientlibs的主動式支援修正。 NPR-23569
 * 編輯其他頁面屬性時，雲端服務設定繼承已中斷。 NPR-23216:CQ-4239782的修補程式
@@ -1856,7 +1858,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407的修補程式
 * 「預升級影像預設集」在「轉譯」頁面上會顯示為「未發佈」，且不會產生URL。 CQ-4240406的修補程式
 * (CSS)會顯示資產——但使用的檢視器是預設的，而非OOTB檢視器。 CQ-4239839的修補程式
-* 停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
+* 已禁用清理步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
 * 影像檢視器產生錯誤，無法顯示正確的智慧裁切。 CQ-4237564的修補程式
 * /etc下的舊預設集似乎已中斷，且儲存時不會移轉至/conf下的位置。 CQ-4237416的修補程式
 * OOB VideoViewer 5.8.x中的回歸——檢視器會將iframe展開至右側，因此會中斷頁面版面配置。 CQ-4235465的修補程式
@@ -2144,7 +2146,7 @@ B.使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs/
 
 ### 更新動態媒體檢視器(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.0包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
+<p id="Dynamic">AEM 6.4.8.0包含新版Dynamic Media檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
