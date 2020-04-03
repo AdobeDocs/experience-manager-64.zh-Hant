@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 1ce49a86e954f48a7cd213558da93861794cfd33
+source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
 
 ---
 
@@ -96,7 +96,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
   </tr>
   <tr>
    <td>入口網站主管</td> 
-   <td><p>Portal Director是一組功能，可讓您在協力廠商伺服器中透過Portlet代管AEM內容。</p> <p>Adobe不打算在下列位置下進一步增強Portal Director功能。 AEM 6.4包含入口網站控制器，而從舊版升級的客戶可依現狀繼續使用。 請注意，Portal direct在遭淘汰時仍完全受支援。</p> 
+   <td><p>Portal Director是一組功能，可讓您在協力廠商伺服器中透過Portlet代管AEM內容。</p> <p>Adobe不打算在下列位置下進一步增強Portal Director功能。 AEM 6.4已隨附入口網站控制器，而從舊版升級的客戶可依現狀繼續使用。 請注意，Portal Direct在遭淘汰時仍完全受支援。</p> 
     <ul> 
      <li>/libs/portal/director</li> 
     </ul> </td> 
@@ -109,12 +109,12 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
   </tr>
   <tr>
    <td>表單</td> 
-   <td><p>Adobe Central Migration bridge服務已不再支援，因為Adobe Central產品不再受支援。</p> </td> 
+   <td><p>Adobe Central Migration Bridge服務已不再支援，因為Adobe Central產品不再受支援。</p> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>資產</td> 
-   <td><p>Assets Offloading已過時，從AEM 6.4開始</p> </td> 
+   <td><p>已淘汰資產卸載（從AEM 6.4開始）</p> </td> 
    <td> </td> 
   </tr>
  </tbody>
@@ -122,7 +122,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## Removed Features {#removed-features}
 
-本節列出已從AEM 6.4移除的功能。在舊版中，這些功能標示為已刪除。
+本節列出已從AEM 6.4移除的功能。舊版的這些功能已標示為不建議使用。
 
 <table> 
  <tbody>
@@ -185,6 +185,41 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
    <td>表單</td> 
    <td>已移除檔案片段內影像的支援。 </td> 
    <td>互動式通訊提供直接在印刷和網頁頻道使用影像的功能。<br /> </td> 
+  </tr>
+    <tr>
+   <td>表單</td> 
+   <td> 現場升級 </td> 
+   <td>不提供現場升級支援 <br/> </td> 
+  </tr>
+  <tr>
+   <td>表單</td> 
+   <td> TarMK到DocumentMK遷移的側面 </td> 
+   <td> 您可以從舊式系統匯出資料，然後匯入新安裝的系統。 如需詳細指示，請參閱JEE升級檔案上的AEM Forms <br/> </td> 
+  </tr>
+    <tr>
+   <td>表單</td> 
+ <td>AEM Forms on JEE 32位元安裝程式不提供。</td> 
+   <td>Adobe已停止在JEE 32位元安裝程式上運送AEM Forms。 您可以繼續使用64位元安裝程式，在JEE上安裝AEM Forms。 </td>  
+  </tr>
+    <tr>
+    <td>表單</td> 
+    <td>移除在檔案片段元件中使用DAM影像的支援。</td> 
+    <td> 您可以在互動式通訊的列印頻道中使用影像和圖表元件。 如果您在最適化表單中使用最適化檔案的檔案片段元件，在升級至AEM 6.4 Forms後它就會停止運作。 </td>  
+  </tr>
+  <tr>
+   <td>表單</td> 
+   <td> 移除最適化檔案功能</td> 
+   <td> 您可以使用互動式通訊功能來建立平面和網路通訊。 <br/> </td> 
+  </tr>
+    <tr>
+    <td>表單</td> 
+    <td>已移除JEE特定登陸頁面上的AEM Forms。</td> 
+    <td>AEM Forms on JEE著陸頁面已取代為AEM著陸頁面(/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>表單</td> 
+   <td>已移除預設驗證碼的支援</td> 
+   <td>使用Google提供的reCAPTCHA服務。</td> 
   </tr>
   <tr>
    <td>社群</td> 
