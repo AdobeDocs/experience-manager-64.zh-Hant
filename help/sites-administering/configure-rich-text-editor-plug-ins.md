@@ -3,7 +3,7 @@ title: 設定Rich Text Editor外掛程式
 description: 瞭解如何設定AEM Rich Text Editor外掛程式，以啟用個別功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
 
 ---
 
@@ -87,7 +87,9 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 
 ## 瞭解findreplace增效模組 {#understand--findreplace-plugin}
 
-外 `findreplace` 掛程式不需要任何設定。 它如預期般運作，立即可用。
+外 `findreplace` 掛程式不需要任何設定。 它是現成可用的。
+
+使用替換功能時，應與查找字串同時輸入要替換的替換字串。 不過，您仍可以按一下「尋找」，在取代字串之前先搜尋字串。 如果在按一下「查找」後輸入了替換字串，則搜索將重置為文本的開頭。
 
 當點按尋找時，尋找和取代對話方塊會變為透明，當點按取代時，對話方塊會變成不透明。 這可讓作者檢閱作者將要取代的文字。 如果用戶按一下「全部替換」(replace all)，則對話框將關閉並顯示已替換的數量。
 
