@@ -1,9 +1,9 @@
 ---
-source-git-commit: 56f859e9e6a31d81364b327e744749f8d5ff4da6
+source-git-commit: 56d3b9ccfa274ffb6305317bfe262060555b46a0
 translation-type: tm+mt
 
 ---
-# AEM 6.4檔案
+# Adobe Experience Manager 6.4檔案
 
 這是Adobe Experience Manager 6.4檔案的儲存庫。 本檔案涵蓋安裝、管理、編寫使用以及如何自訂AEM。
 
