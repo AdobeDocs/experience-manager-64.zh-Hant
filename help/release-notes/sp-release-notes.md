@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
+source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 
 ---
 
@@ -166,7 +166,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 AEM 6.4.7.0是重要的更新，其中包括效能、穩定性、安全性和重要客戶修正，以及自2018年4月AEM 6.4全面推出以來 **的增強。**
 
-這也是累積的，也就是說6.4.7.0包含之前所有的AEM 6.4 Service Pack。
+這也是累積的，也就是說6.4.7.0包含之前所有的AEM 6.4 Service Pack版本。
 
 AEM 6.4.7.0的一些主要亮點是：
 
@@ -1391,7 +1391,7 @@ AEM 6.4.2.0的一些主要亮點是：
 
 **社群**
 
-* （檔案庫）下載空白的資產會導致格式問題。 NPR-24260:CQ-4245159的修補程式
+* （檔案庫）下載空白的資產會導致格式問題。 NPR-23260:CQ-4245159的修補程式
 * 修正數個Adobe Social問題。 NPR-24247:CQ-4245054、CQ-4245120、CQ-4245296的修補程式
 * 成員和群組的無限捲動控制台失敗，以防作者發佈在不同的上下文路徑上執行。 NPR-24437:CQ-4246013的修補程式
 * 即使從已應答狀態移除貼文，貼文也不會返回未應答狀態，且分數不會下降。 NPR-24419:CQ-4245797、CQ-4245932的修補程式
@@ -1694,6 +1694,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 新增ARIA支援Print和PrintDialog。
 * 新增電子郵件驗證ARIA支援。
 * 平台。clientlibs的主動式支援修正。
+* 防止在未輸入顯式dataType時自動執行指令碼。
 
 **資產**
 
@@ -1742,7 +1743,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 **整合**
 
 * com.day.cq.analytics.sitecatalyst中未關閉的資源解析程式。 NPR-22340:CQ-4236515的修補程式
-* TargetContentImpl會在長時間執行的查詢期間，讓AEM變得呆滯。 NPR-22359:CQ-4236907的修補程式
+* TargetContentImpl會在長時間執行的查詢期間使AEM變得呆滯。 NPR-22359:CQ-4236907的修補程式
 * 目標引擎(mbox.js, at.js)不使用損毀的URL，並使用包含冒號的URL，因為某些部署可能會失敗。 NPR-22434:CQ-4237854的修補程式
 * 在「目標」模式中，作者可以修改從Blueprint繼承的元件，而不取消繼承。 NPR-22865:CQ-4237907的修補程式
 * （個人化）切換至「卡片」檢視時，圖示會變形。 NPR-23373、NPR-23374:CQ-4240018、CQ-4240019的修補程式
@@ -1760,7 +1761,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * (Classic UI)(Touch UI)嘗試透過資產搜尋結構中的標籤述詞瀏覽標籤時，不會顯示標籤選擇器並引發例外。 NPR-23049:CQ-4239371的修補程式
 * (Classic UI)使用xtype=tags的元件會傳回null，且無法從標籤的eth清單中選取。 NPR-23050:CQ-4239937的修補程式
 * （品牌推廣）「選擇加入」對話方塊提及Adobe Marketing Cloud，而非Adobe Experience Cloud。 NPR-23210:CQ-4237799的修補程式
-* 篩選選項會在從6.3升級至6.4後，讓AEM變得呆滯。NPR-24260:CQ-4239847的修補程式（待檢查）
+* 篩選選項會在從6.3升級至6.4後，讓AEM變得呆滯。NPR-23260:CQ-4239847的修補程式（待檢查）
 * granite.omnisearch.core修正的主動式支援。 NPR-23536
 * 平台。clientlibs的主動式支援修正。 NPR-23569
 * 編輯其他頁面屬性時，雲端服務設定繼承已中斷。 NPR-23216:CQ-4239782的修補程式
