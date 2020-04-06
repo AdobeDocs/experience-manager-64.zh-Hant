@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: fd7c589eed2977f3d06f07086008450e2e85a940
+source-git-commit: 340c267fc4e142a67ae5be3f1ab11f063417962e
 
 ---
 
@@ -28,7 +28,7 @@ Forms服務會回應來自網頁瀏覽器的HTTP要求，將表單轉譯為HTML�
 
 >[!NOTE]
 >
->當使用物件和方法轉譯包含TIFF `FormServiceClient` 影像的表格 `(Deprecated) renderHTMLForm``renderHTMLForm2` 時，在Internet explorer或Mozilla Firefox瀏覽器中顯示的轉譯HTML表格中，不會顯示TIFF影像。 這些瀏覽器不提供TIFF影像的原生支援。
+>當使用物件和方法轉譯包含TIFF `FormServiceClient` 影像的表格 `(Deprecated) renderHTMLForm``renderHTMLForm2` 時，在Internet Explorer或Mozilla Firefox瀏覽器中顯示的轉譯HTML表格中，不會顯示TIFF影像。 這些瀏覽器不提供TIFF影像的原生支援。
 
 ## HTML頁面 {#html-pages}
 
@@ -56,7 +56,7 @@ Forms服務會回應來自網頁瀏覽器的HTTP要求，將表單轉譯為HTML�
 
 >[!NOTE]
 >
->將表單傳送至Forms服務，然後讓Forms服務將表單轉譯回用戶端裝置的程式，稱為將資料轉譯回伺服器的程式。
+>將表單傳送至Forms服務，然後讓Forms服務將表單轉譯回用戶端裝置的程式，稱為將資料回傳至伺服器的程式。
 
 >[!NOTE]
 >
@@ -78,13 +78,13 @@ Forms服務會回應來自網頁瀏覽器的HTTP要求，將表單轉譯為HTML�
 
 表單作者指定指令碼是在伺服器上還是在客戶端上執行。 Forms服務建立分佈式事件處理環境，用於執行表單智慧，該智慧可通過使用屬性在客戶端和伺服器之間分 `runAt` 布。 如需此屬性或在表單設計中建立指令碼的詳細資訊，請參閱 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-Forms服務可在呈現表單時執行指令碼。 因此，您可以將資料預先填入表單，方法是將資料連接至資料庫或用戶端上可能無法使用的web services。 您也可以設定在伺服器上執 `Click` 行按鈕的事件，讓用戶端將往返資料傳送至伺服器。 這允許客戶端在用戶與表單交互時運行可能需要伺服器資源（如企業資料庫）的指令碼。 對於HTML表單，表單計算指令碼只能在伺服器上執行。 因此，您必須標籤這些指令碼才能在或 `server` 運行 `both`。
+Forms服務可在呈現表單時執行指令碼。 因此，您可以將資料預先填入表單，方法是將資料連接至資料庫或用戶端上可能無法使用的web services。 您也可以設定在伺服器上執 `Click` 行按鈕的事件，讓用戶端將往返資料傳送至伺服器。 這允許客戶端在用戶與表單交互時運行可能需要伺服器資源（如企業資料庫）的指令碼。 對於HTML表單，只能在伺服器上執行formcalc指令碼。 因此，您必須標籤這些指令碼才能在或 `server` 運行 `both`。
 
 您可以透過呼叫和方法，設計在頁面（面板）之間移動 `xfa.host.pageUp` 的表 `xfa.host.pageDown` 單。 此指令檔會置於按鈕的事 `Click` 件中，而屬 `runAt` 性會設為 `Both`。 您選擇的原 `Both` 因是，讓Adobe Reader或Acrobat（針對以PDF格式轉譯的表單）可以變更頁面，而不需前往伺服器，而HTML表單可以將資料往返於伺服器，以變更頁面。 也就是說，表單會傳送至Forms服務，而表單會呈現為HTML並顯示新頁面。
 
 建議您不要為指令碼變數和表單欄位指定相同的名稱，例如項目。 某些Web瀏覽器（例如Internet Explorer）可能無法初始化與表單欄位同名的變數，而造成指令碼錯誤。 建議您為表單欄位和指令碼變數指定不同的名稱。
 
-在呈現同時包含頁面導覽功能和表單指令碼的HTML表單時（例如，假設指令碼在每次轉譯表單時都會從資料庫擷取欄位資料），請確定表單指令碼位於form:calculate事件中，而非form:readyevent中。
+在呈現同時包含頁面導覽功能和表單指令碼的HTML表單時（例如，假設指令碼在每次呈現表單時都會從資料庫擷取欄位資料），請確定表單指令碼位於form:calculate事件中，而非form:readyevent中。
 
 位於form:ready事件中的表單指令碼在表單的初始呈現期間僅執行一次，且不會針對後續的頁面擷取執行。 相反地，會針對每個轉譯表單的頁面導覽執行表單：calculate事件。
 
@@ -175,7 +175,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
 
 如需有關數位簽署檔案的詳細資訊，請參 [閱數位簽署和認證檔案](/help/forms/developing/digitally-signing-certifying-documents.md)
 
-## 呈現符合協助工具方針的XHTML表單 {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
+## 呈現符合協助工具指引的XHTML表單 {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
 您可以轉換符合協助工具方針的完整HTML表格。 也就是說，表單會呈現在完整HTML標籤中，而非呈現在內文標籤（非完整HTML頁面）中的HTML表單。
 
@@ -240,7 +240,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
 
 [使用web service API將表單轉換為HTML](#render-a-form-as-html-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -285,7 +285,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
    * 指定標題值的 `HTTP_USER_AGENT` 字串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
    * 存 `URLSpec` 儲呈現HTML表單所需URI值的對象。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
-   該方 `(Deprecated) renderHTMLForm` 法返回包 `FormsResult` 含可寫入客戶端Web瀏覽器的表單資料流的對象。
+   該方 `(Deprecated) renderHTMLForm` 法返回包 `FormsResult` 含表單資料流的對象，該表單資料流可以寫入客戶端Web瀏覽器。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
 
@@ -303,7 +303,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
 
 [快速入門（SOAP模式）:使用Java API轉換HTML表格](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -335,7 +335,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
 
    * 指定表單設計名稱的字串值，包括檔案副檔名。 如果您參照屬於Forms應用程式一部分的表單設計，請確定您指定完整路徑，例如 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
    * 指定 `TransformTo` HTML首選項類型的枚舉值。 例如，若要轉譯與Internet Explorer 5.0或更新版本的動態HTML相容的HTML表格，請指定 `TransformTo.MSDHTML`。
-   * 包 `BLOB` 含要與表單合併的資料的對象。 如果您不想合併資料，請傳遞 `null`。 (請參 [閱「使用可排程版面預填表單」](/help/forms/developing/rendering-forms-rendering-forms preming-forms-flowable-layouts-premilting.md#preming-forms-with-flowable-layouts)。
+   * 包 `BLOB` 含要與表單合併的資料的對象。 如果您不想合併資料，請傳遞 `null`。 (請參 [閱使用可排程版面預填表單](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)。)
    * 儲存 `HTMLRenderSpec` HTML執行時期選項的物件。
    * 指定標題值的 `HTTP_USER_AGENT` 字串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。 如果您不想設定此值，可以傳遞空字串。
    * 存 `URLSpec` 儲呈現HTML表單所需URI值的對象。 (請參 [閱指定URI值](/help/forms/developing/rendering-interactive-pdf-forms.md)。)
