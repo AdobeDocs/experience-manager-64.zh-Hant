@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: 5a185a50dc9e413953be91444d5c8e76bdae0a69
 
 ---
 
@@ -82,7 +82,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 * adobe-utilities.jar（若AEM Forms部署在JBoss上，則為必要項）
 * jbossall-client.jar（如果AEM Forms部署在JBoss上，則為必要）
 
-如果AEM Forms部署在JBoss以外的支援J2EE應用程式伺服器上，您必須將adobe-utilities.jar和jbossall-client.jar檔案取代為JAR檔案，而JAR檔案是部署AEM Forms的J2EE應用程式伺服器專用的檔案。
+如果AEM Forms部署在JBoss以外的支援J2EE應用程式伺服器上，您必須將adobe-utilities.jar和jbossall-client.jar檔案取代為JAR檔案，而JAR檔案是部署AEM Forms的J2EE應用程式伺服器專用。
 
 **建立PDF匯寫程式式用戶端**
 
@@ -100,7 +100,7 @@ map.pdf檔案和directions.pdf檔案都必須放在系列物件中。 索引鍵�
 
 >[!NOTE]
 >
->如果 `*AssemblerResult*` 您叫用此操作，則會傳回包含系列物件的物 `*invokeDDX*` 件。 當您將兩個或兩個以上的輸入PDF檔案傳遞至Assembler服務時，就會使用此操作。 但是，如果只將一個輸入PDF傳遞給Assembler服務，而且只需要一個返回文檔，請調用該操 `*invokeOneDocument*` 作。 調用此操作時，將返回單個文檔。 如需使用此作業的詳細資訊，請參閱 [Massigning Encrypted PDF Documents](/help/forms/developing/compasting-encrypted-pdf-documents-massigning-encrypted-pdf-documents-massigning.md#massigning-encrypted-pdf-documentsment-documents-documents-documents-documentsing)。
+>如果 `*AssemblerResult*` 您叫用此操作，則會傳回包含系列物件的物 `*invokeDDX*` 件。 當您將兩個或兩個以上的輸入PDF檔案傳遞至Assembler服務時，就會使用此操作。 但是，如果只將一個輸入PDF傳遞給Assembler服務，而且只需要一個返回文檔，請調用該操 `*invokeOneDocument*` 作。 調用此操作時，將返回單個文檔。 如需使用此作業的詳細資訊，請參 [閱組合加密的PDF檔案](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents)。
 
 **設定執行時期選項**
 
@@ -145,7 +145,7 @@ Assembler服務返回一 `java.util.Map` 個對象，該對象可從該對象中
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -208,7 +208,7 @@ Assembler服務返回一 `java.util.Map` 個對象，該對象可從該對象中
 
 [快速入門（SOAP模式）:使用Java API組合PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
