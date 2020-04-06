@@ -1,9 +1,9 @@
 ---
 title: 中繼資料結構
-description: '中繼資料結構定義屬性頁面的版面配置，以及為資產顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
+description: '中繼資料結構定義屬性頁面的版面配置，以及資產所顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
 
 ---
 
@@ -30,31 +30,24 @@ source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
 
 1. 若要檢視表單/範本清單，請按一下 AEM 標誌，然後導覽至&#x200B;**[!UICONTROL 「工具」>「資產」>「中繼資料結構描述」]**。
 
-   ![chlimage_1-173](assets/chlimage_1-173.png)
+   ![chlimage_1-37](assets/chlimage_1-173.png)
 
    AEM提供現成可用的下列範本：
-
    * **預設**:資產的基本中繼資料結構表單。
-   以下子表單繼承預設表單的屬性：
 
-   i.影 **像**:具有MIME類型的資產的 `image`架構表單， `image/jpeg``image/png`例如、、等等。
+      以下子表單繼承預設表單的屬性：
 
-   「影像」表單包含下列子表單範本：
+      1. **影像**:MIME類型為&quot;image&quot;的資產的架構表單， `image/jpeg`例如 `image/png`、等。
 
-   a. **jpeg**:子類型jpeg資產的架構表單。
-
-   b. **tiff**:子類型為TIFF的資產的架構表單。
-
-   ii. **應用程式**:具有MIME類型應用程式的資產的架構 `application/pdf`表 `application/zip`格，例如等。
-
-   a. **pdf**:子類型為PDF的資產的架構表單。
-
-   iii. **視訊**:具有MIME類型視訊（如等）的資產 `video/avi`的 `video/mp4` 架構表單。
-
-   * **系列**:系列的結構表單
-   * **** contentfragment:內容片段的架構表單
-   * **表單**:此結構表單與 [Adobe Experience Manager Forms相關](/help/forms/home.md)
-
+         「影像」表單包含下列子表單範本：
+         * **jpeg**:子類型資產的結構表單 `jpeg`。
+         * **tiff**:子類型資產的結構表單 `tiff`。
+      1. **應用程式**:具有MIME類型的資產的 `application`架構表單， `application/pdf``application/zip`例如，等等。
+         * **pdf**:子類型資產的結構表單 `pdf`。
+      1. **視訊**:具有MIME類型的資產的 `video`架構表單， `video/avi`如 `video/mp4`、等等。
+   * **系列**:系列的結構表單。
+   * **contentfragment:** 內容片段的架構表單。
+   * **表單**:此結構表單與 [Adobe Experience Manager Forms相關](/help/forms/home.md)。
 
 >[!NOTE]
 >
@@ -95,7 +88,7 @@ source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
 
 ### 「生成表單」頁籤中的元件 {#components-within-the-build-form-tab}
 
-「建 **[!UICONTROL 立表單]** 」標籤會列出您在架構表單中使用的表單項目。 「設 **[!UICONTROL 定]** 」標籤提供您在「建置表單」標籤中選取之每 **[!UICONTROL 個項目的屬性]** 。 下表列出了「生成表單」頁籤中可 **[!UICONTROL 用的表單項]** :
+「建 **[!UICONTROL 立表單]** 」標籤會列出您在架構表單中使用的表單項目。 「設 **[!UICONTROL 定]** 」標籤提供您在「建置表單」標籤中選取之每 **[!UICONTROL 個項目的屬性]** 。 下表列出了「生成表單」頁籤中可 **[!UICONTROL 用的表單]** 項：
 
 | 元件名稱 | 說明 |
 |---|---|
@@ -136,7 +129,7 @@ source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
 
 **停用編輯**:使用此屬性可讓中繼資料屬性在屬性頁面上無法編輯。
 
-**在唯讀中顯示空白欄位**:標籤此屬性即使沒有值，也可在屬性頁面上顯示中繼資料屬性。 預設情況下，當中繼資料屬性沒有值時，該屬性不會列在屬性頁面上。
+**在唯讀中顯示空白欄位**:標籤此屬性，即使其沒有值，也可在屬性頁面上顯示中繼資料屬性。 預設情況下，當中繼資料屬性沒有值時，該屬性不會列在屬性頁面上。
 
 **顯示順序清單**:使用此屬性可顯示選擇的有序清單
 
