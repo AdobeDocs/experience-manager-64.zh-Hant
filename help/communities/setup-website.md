@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
 
 ---
 
@@ -38,9 +38,9 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 >* 節點名稱可能包含空格，但在URI中使用時，空格必須編碼為&#39;%20&#39;或&#39;+&#39;
 >* 節點名稱可能包含連字型大小和下划線，但是當它們被引用為Java檔案中的包名時，必須對其進行編碼。 連字型大小和下划線都會以下划線和其unicode值進行逸出：
    >
-   >  
-* 連字型大小變為&#39;_002d&#39;
->  * 下划線變為&#39;_005f&#39;
+   >   
+   * 連字型大小變為&#39;_002d&#39;
+   >   * 下划線變為&#39;_005f&#39;
 
 
 ## 設定應用程式目錄（/應用程式） {#setup-the-application-directory-apps}
@@ -54,8 +54,8 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
    使用 **[!UICONTROL CRXDE Lite]**，在檔案總管窗格中
 
    1. 選擇檔案 `/apps` 夾
-   1. **[!UICONTROL 按一下右鍵]**&#x200B;建立&#x200B;**[!UICONTROL ...或下拉「建]**&#x200B;立」...菜單
-   1. **[!UICONTROL 選擇]**&#x200B;建立資料夾…….
+   1. 按一下右鍵 **[!UICONTROL 建立]**...或下拉「建 **[!UICONTROL 立」...]** 菜單
+   1. 選擇 **[!UICONTROL 建立資料夾……]** .
    1. 在「建立 **[!UICONTROL 資料夾]** 」對話框中，輸入 `an-scf-sandbox`
    1. 按一下「 **[!UICONTROL 確定」]**
 
