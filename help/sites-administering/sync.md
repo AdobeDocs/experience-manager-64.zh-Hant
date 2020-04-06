@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
+source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ---
 
@@ -514,7 +514,7 @@ source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
 
 `java.lang.IllegalStateException: This tree does not exist`
 
-然後確認第 [2節。 建立授權使用者](/content/docs/en/aem/6-1/administer/security/security/sync.md#2。 已正確遵循)。
+然後確認第 [2節。 已正確遵循「建立授權使用者](#createauthuser) 」。
 
 本節說明如何建立已授權的使用者（存在於所有發佈例項上），並在作者的「機密提供者」OSGi設定中識別這些使用者。 依預設，使用者為 `admin`。
 
