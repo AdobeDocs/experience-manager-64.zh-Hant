@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
 
 ---
 
@@ -50,11 +50,11 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 1. 點選「 **建立資料字典」**。
 1. 在「屬性」畫面中，新增下列項目：
 
-   * **** 標題：（可選）輸入資料字典的標題。 標題不需要唯一，而且可以有特殊字元和非英文字元。 字母和其他檔案片段會以其標題（如果有的話）轉介，例如縮圖和資產屬性。 資料字典是以其名稱而非標題來參照。
-   * **** 名稱：資料字典的唯一名稱。 在「名稱」欄位中，您只能輸入英文字元、數字和連字型大小。 「名稱」欄位會根據「標題」欄位自動填入，而「標題」欄位中輸入的特殊字元、空格、數字和非英文字元會以連字型大小取代。 雖然「標題」欄位中的值會自動複製到「名稱」，但您可以編輯值。
+   * **標題：** （可選）輸入資料字典的標題。 標題不需要唯一，而且可以有特殊字元和非英文字元。 字母和其他檔案片段會以其標題（如果有的話）轉介，例如縮圖和資產屬性。 資料字典是以其名稱而非標題來參照。
+   * **名稱：** 資料字典的唯一名稱。 在「名稱」欄位中，您只能輸入英文字元、數字和連字型大小。 「名稱」欄位會根據「標題」欄位自動填入，而「標題」欄位中輸入的特殊字元、空格、數字和非英文字元會以連字型大小取代。 雖然「標題」欄位中的值會自動複製到「名稱」，但您可以編輯值。
 
    * **說明**:（選用）資料字典的說明。
-   * **** 標籤：（可選）若要建立自訂標籤，請在文字欄位中輸入值，然後按Enter。 您可以在標籤的文字欄位下方看到標籤。 儲存此文字時，也會建立新增的標籤。
+   * **標籤：** （可選）若要建立自訂標籤，請在文字欄位中輸入值，然後按Enter。 您可以在標籤的文字欄位下方看到標籤。 儲存此文字時，也會建立新增的標籤。
    * **擴展屬性**:（可選）點選「 **新增欄位** 」以指定資料字典的中繼資料屬性。 在「屬性名稱」列中，輸入唯一的屬性名稱。 在「值」列中，輸入要與屬性關聯的值。
    ![德文指定的資料字典屬性](do-not-localize/1_ddproperties.png)
 
@@ -261,7 +261,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Attribute</strong></td> 
+   <td><strong>屬性</strong></td> 
    <td><strong>類型</strong></td> 
    <td><strong>說明</strong></td> 
   </tr> 
@@ -283,7 +283,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
   <tr> 
    <td>說明</td> 
    <td>字串</td> 
-   <td>Description of the DDE.</td> 
+   <td>DDE的說明。</td> 
   </tr> 
   <tr> 
    <td>elementType</td> 
@@ -358,7 +358,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
   <tr> 
    <td><p>xs:maxOccurs的元素&gt; 1<br /> </p> </td> 
    <td><p>DDE類型- COLLECTION-<br /> DDE節點建立在COLLECTION DDE旁邊，該DDE從父COLLECTION節點捕獲資訊。 為簡單／複合資料類型的集合建立的集合相同。 每當您有類型複合的COLLECTION時，「資料字典」樹將捕獲為捕獲類型資訊而建立的DDE子代中的組成欄位。<br /> - DDE(COLLECTION)<br /> - DDE(COMPOSITE for type info)<br /> - DDE(STRING)欄位1<br /> - DDE(STRING)欄位2<br /><br /> </p> </td> 
-   <td>java.util.list<br /> </td> 
+   <td>java.util.List<br /> </td> 
   </tr> 
   <tr> 
    <td><p>類型屬性- xs:id <br /> </p> </td> 
@@ -424,19 +424,15 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 1. 在警 **報中點選** 「確定」。 「通信管理」會將郵遞區號檔案下載至您的電腦，其名稱為DataDictionary-&lt;Dname>.zip。
 1. Zip檔案包含。properties檔案。 此檔案定義已下載的資料字典。 屬性檔案的內容類似於：
 
-   # 星期三20日2015年5月20日16:06:23
-
+   ```
+   #Wed May 20 16:06:23 BST 2015
    DataDictionary.EmployeeDD.description=
-
    DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
-
    DataDictionaryElement.name.description=
-
    DataDictionaryElement.name.displayName=name
-
    DataDictionaryElement.person.description=
-
    DataDictionaryElement.person.displayName=person
+   ```
 
    屬性檔案的結構為每個描述定義一行以及資料字典中的資料字典元素的顯示名稱。 此外，屬性檔案為每個資料字典元素的枚舉值集定義一行。 與資料字典一樣，對應的屬性檔案可以有多個資料字典元素定義。 此外，該檔案可包含一個或多個枚舉值集的定義。
 
@@ -461,7 +457,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 在建立或更新資料字典時，資料字典編輯器將強制執行以下驗證。
 
-* Only composite type is allowed as Top-level Element in a data dictionary.
+* 在資料字典中，僅允許複合類型做為「頂層元素」。
 * 複合元素和集合元素不允許在葉層級。 葉級別僅允許基本元素（字串、日期、數字、布爾）元素。 此驗證可確保沒有包含子DDE的組合和收集元素。
 * 上傳XSD檔案以建立資料字典時，資料字典編輯器會提示輸入頂層元素（若有多個元素）以建立資料字典。
 * 名稱是資料字典唯一必要的參數。
@@ -477,7 +473,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 * 資料字典名稱只能包含英數字元。
 * 「資料字典」中的子元素清單不得為null或空白。
 * 資料字典不得包含多個頂層資料字典元素。
-* Only composite type is allowed as Top-level Element in a Data Dictionary.
+* 在「資料字典」中，僅允許複合類型做為「頂層元素」。
 
 在「資料字典元素」層級套用的驗證。
 
@@ -555,7 +551,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    <td><strong>預設XML系結</strong></td> 
   </tr> 
   <tr> 
-   <td>note</td> 
+   <td>附註</td> 
    <td>空白(null)<br /> </td> 
   </tr> 
   <tr> 
@@ -571,7 +567,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    <td>/note/heading</td> 
   </tr> 
   <tr> 
-   <td>body</td> 
+   <td>身體</td> 
    <td>/note/body</td> 
   </tr> 
  </tbody> 
@@ -579,7 +575,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 ### 對應收集元素 {#mapping-collection-elements}
 
-系列元素只會映射至其他基數> 1的系列元素。 系列DDE的子DDE與其父XML綁定有相對（本地）XML綁定。 由於收集元素的子DDE必須與父項的基數相同，因此相對綁定的強制要求是確保基數約束，以便子DDE不指向非重複的XML架構元素。 在下列範例中，「TokenID」的基數必須與「Token」相同，後者是其父系列DDE。
+系列元素只會映射至其他基數> 1的系列元素。 系列DDE的子DDE與其父XML綁定相關（本地）XML綁定。 由於收集元素的子DDE必須與父項的基數相同，因此相對綁定的強制要求是確保基數約束，以便子DDE不指向非重複的XML架構元素。 在下列範例中，「TokenID」的基數必須與「Token」相同，後者是其父系列DDE。
 
 將集合DDE映射到XML架構元素時：
 
@@ -647,7 +643,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 | **資料字典元素** | **預設XML系結** |
 |---|---|
 | 根 | 空白(null) |
-| Tokens | /Root/Token |
+| Token | /Root/Token |
 | 構成 | 空白(null) |
 | TokenID | TokenID |
 | TokenText | 空白(null) |
