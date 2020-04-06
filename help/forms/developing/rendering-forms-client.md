@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
-source-git-commit: 1d00abc71086bbe375033834db5b4811d6f89462
+source-git-commit: a750aeb9f41347da93f1ceb16c5646bc94bee67b
 
 ---
 
@@ -76,7 +76,7 @@ Forms服務會建立必須寫入客戶端Web瀏覽器的表單資料流。 當�
 
 [使用web service API在用戶端演算表格](#render-a-form-at-the-client-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -129,7 +129,7 @@ Forms服務會建立必須寫入客戶端Web瀏覽器的表單資料流。 當�
 
 [快速入門（SOAP模式）:使用Java API在用戶端轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -156,7 +156,7 @@ Forms服務會建立必須寫入客戶端Web瀏覽器的表單資料流。 當�
    叫用物 `FormsService` 件的方 `renderPDFForm` 法並傳遞下列值：
 
    * 指定表單設計名稱的字串值，包括檔案副檔名。 如果您參照屬於Forms應用程式一部分的表單設計，請確定您指定完整路徑，例如 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
-   * 包 `BLOB` 含要與表單合併的資料的對象。 如果您不想合併資料，請傳遞 `null`。 (請參 [閱「使用可排程版面預填表單」](/help/forms/developing/rendering-forms-rendering-forms preming-forms-flowable-layouts-premilting.md#preming-forms-with-flowable-layouts)。
+   * 包 `BLOB` 含要與表單合併的資料的對象。 如果您不想合併資料，請傳遞 `null`。 (請參 [閱使用可排程版面預填表單](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
    * 存 `PDFFormRenderSpec` 儲在客戶端上渲染表單所需運行時選項的對象。
    * 包 `URLSpec` 含Forms服務所需URI值的對象。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
