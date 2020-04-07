@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: 70039d5f7d6f773e64402c3a3e88198bb52fb11f
+source-git-commit: 64d4362c933ed30c2b9474cafbcd9c318d9c52bd
 
 ---
 
@@ -77,7 +77,7 @@ source-git-commit: 70039d5f7d6f773e64402c3a3e88198bb52fb11f
 **注意：** 如需AEM中內容轉譯功能的概觀，請參閱「多語 [言網站的轉譯內容」](/help/sites-administering/translation.md)。
 
 此架構的單一設定可控制如何翻譯頁面內容、社群內容和資產。
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-64.jpg)
 
 ### 站點配置屬性 {#sites-configuration-properties}
 
