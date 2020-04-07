@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
+source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
 
 ---
 
@@ -166,7 +166,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 AEM 6.4.7.0是重要的更新，其中包括效能、穩定性、安全性和重要客戶修正，以及自2018年4月AEM 6.4全面推出以來 **的增強。**
 
-這也是累積的，也就是說6.4.7.0包含之前所有的AEM 6.4 Service Pack版本。
+這也是累積的，也就是說6.4.7.0包含之前所有的AEM 6.4 Service Pack。
 
 AEM 6.4.7.0的一些主要亮點是：
 
@@ -381,7 +381,7 @@ AEM 6.4.6.0的一些主要亮點是：
 
 **網站**
 
-* `pageinfo.json` 請求極慢且載入時間過長。 NPR-29709:CQ-4269560的修補程式
+* `pageinfo.json` 請求極其緩慢，且載入時間過長。 NPR-29709:CQ-4269560的修補程式
 * `onTime` 或 `offTime` 者，如果AEM伺服器重新啟動，資產上儲存的中繼資料屬性不會重新啟動。 NPR-30413:CQ-4272784的修補程式
 * 由於ConfigPostProcessor類的行為不正確，暫停父頁面會刪除cq:來自子頁面的LiveRelationship混合類型。 NPR-30536、NPR-30510:CQ-4254113的修補程式
 * 跨網站指令碼(XSS)，位於「促銷活動」編輯頁面的「開始」工作流程對話方塊中。 NPR-29747:CQ-4271067的修補程式
@@ -689,7 +689,7 @@ AEM 6.4.5.0表格的主要重點為：
 **表單——互動式通訊與表單——通訊管理**
 
 * 建立對應UI(CCR UI)無法處理浮點數。  NPR-29210:CQ-4254201的修補程式
-* 在變數上設定的工具提示不會顯示在「建立對應UI」(CCR UI)中。 NPR-29739:CQ-4250533的修補程式
+* 在變數上設定的工具提示不會顯示在「建立對應UI」(CCR UI)中。 NPR-29839:CQ-4250533的修補程式
 * 無法從字母內的Omnisearch複製或貼上。 NPR-29808:CQ-4270783的修補程式
 
 **HTML5 Forms**
@@ -1391,7 +1391,7 @@ AEM 6.4.2.0的一些主要亮點是：
 
 **社群**
 
-* （檔案庫）下載空白的資產會導致格式問題。 NPR-23260:CQ-4245159的修補程式
+* （檔案庫）下載空白的資產會導致格式問題。 NPR-24260:CQ-4245159的修補程式
 * 修正數個Adobe Social問題。 NPR-24247:CQ-4245054、CQ-4245120、CQ-4245296的修補程式
 * 成員和群組的無限捲動控制台失敗，以防作者發佈在不同的上下文路徑上執行。 NPR-24437:CQ-4246013的修補程式
 * 即使從已應答狀態移除貼文，貼文也不會返回未應答狀態，且分數不會下降。 NPR-24419:CQ-4245797、CQ-4245932的修補程式
@@ -1694,7 +1694,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 新增ARIA支援Print和PrintDialog。
 * 新增電子郵件驗證ARIA支援。
 * 平台。clientlibs的主動式支援修正。
-* 防止在未輸入顯式dataType時自動執行指令碼。
+* 在沒有輸入明確dataType時防止自動執行指令碼（解析CVE-2015-9251）。
 
 **資產**
 
@@ -1743,7 +1743,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 **整合**
 
 * com.day.cq.analytics.sitecatalyst中未關閉的資源解析程式。 NPR-22340:CQ-4236515的修補程式
-* TargetContentImpl會在長時間執行的查詢期間使AEM變得呆滯。 NPR-22359:CQ-4236907的修補程式
+* TargetContentImpl會在長時間執行的查詢期間，讓AEM變得呆滯。 NPR-22359:CQ-4236907的修補程式
 * 目標引擎(mbox.js, at.js)不使用損毀的URL，並使用包含冒號的URL，因為某些部署可能會失敗。 NPR-22434:CQ-4237854的修補程式
 * 在「目標」模式中，作者可以修改從Blueprint繼承的元件，而不取消繼承。 NPR-22865:CQ-4237907的修補程式
 * （個人化）切換至「卡片」檢視時，圖示會變形。 NPR-23373、NPR-23374:CQ-4240018、CQ-4240019的修補程式
@@ -1859,7 +1859,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407的修補程式
 * 「預升級影像預設集」在「轉譯」頁面上會顯示為「未發佈」，且不會產生URL。 CQ-4240406的修補程式
 * (CSS)會顯示資產——但使用的檢視器是預設的，而非OOTB檢視器。 CQ-4239839的修補程式
-* 已禁用清理步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
+* 停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
 * 影像檢視器產生錯誤，無法顯示正確的智慧裁切。 CQ-4237564的修補程式
 * /etc下的舊預設集似乎已中斷，且儲存時不會移轉至/conf下的位置。 CQ-4237416的修補程式
 * OOB VideoViewer 5.8.x中的回歸——檢視器會將iframe展開至右側，因此會中斷頁面版面配置。 CQ-4235465的修補程式
@@ -2147,7 +2147,7 @@ B.使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs/
 
 ### 更新動態媒體檢視器(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.0包含新版Dynamic Media檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
+<p id="Dynamic">AEM 6.4.8.0包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -2264,7 +2264,7 @@ AEM 6.4.8.0內容套件清單
 
 * [AEM 6.4版本注意事項](../release-notes/release-notes.md)
 * [AEM產品頁面](https://www.adobe.com/solutions/web-experience-management.html)
-* [AEM 6.4 檔案](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [AEM 6.4 檔案](https://helpx.adobe.com/tw/support/experience-manager/6-4.html)
 * 訂閱 [Adobe優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### 受限制的網站 {#restricted-sites-new}
