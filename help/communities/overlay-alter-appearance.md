@@ -31,13 +31,19 @@ comment.hbs指令碼負責建立每個註解的整體HTML。
 1. 開啟覆蓋的 `comment.hbs`
    * 按兩下中的節 `comment.hbs`點 `/apps/social/commons/components/hbs/comments/comment folder`
 1. 查找以下行並刪除或注釋它們：
-   `xml <aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 刪除線條，或用&#39;&lt;!—&#39;和&#39;—>&#39;來注釋掉它們。 此外，字元「xxx」也會加入，作為頭像原本所在位置的視覺指標。
-`xml <!-- do not display avatar with comment
-<aside class="scf-comment-author">
-<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>`
+
+```xml
+<!-- do not display avatar with comment
+    <aside class="scf-comment-author">
+        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+```
 
 ## 複製覆蓋 {#replicate-the-overlay}
 
