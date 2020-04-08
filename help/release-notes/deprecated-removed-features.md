@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -110,7 +110,14 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
   <tr>
    <td>表單</td> 
    <td><p>Adobe Central Migration Bridge服務已不再支援，因為Adobe Central產品不再受支援。</p> </td> 
-   <td> </td> 
+   <td>無取代 </td> 
+  </tr>
+    <tr>
+   <td>表單</td> 
+   <td><p>不建議在Query和OperationOptions中使用JSONObject。 不建議使用下列API:
+   <ul><li>setArguments（JSONObject引數）</li><li>JSONObject getArguments()</li><li>OperationOptions（String operationId, JSONObject引數）</li><li>JSONObject getArguments()</li><li>void setArguments（JSONObject參數）</li></ul>
+   </p> </td> 
+   <td>使用IValueMap API </td> 
   </tr>
   <tr>
    <td>資產</td> 
@@ -204,17 +211,22 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
     <tr>
     <td>表單</td> 
     <td>移除在檔案片段元件中使用DAM影像的支援。</td> 
-    <td> 您可以在互動式通訊的列印頻道中使用影像和圖表元件。 如果您在最適化表單中使用最適化檔案的檔案片段元件，在升級至AEM 6.4 Forms後它就會停止運作。 </td>  
+    <td> 您可以在互動式通訊的列印頻道中使用影像和圖表元件。 如果您在最適化表單中使用最適化檔案的檔案片段元件，在升級至AEM 6.4 Forms後，它就會停止運作。 </td>  
   </tr>
   <tr>
    <td>表單</td> 
    <td> 移除最適化檔案功能</td> 
-   <td> 您可以使用互動式通訊功能來建立平面和網路通訊。 <br/> </td> 
+   <td> 您可以使用互動式通訊功能來建立平面和網路通訊。 如果您使用「最適化檔案」，請安裝相容性套件以繼續使用現有的最適化檔案<br/> </td> 
   </tr>
     <tr>
     <td>表單</td> 
     <td>已移除JEE特定登陸頁面上的AEM Forms。</td> 
     <td>AEM Forms on JEE著陸頁面已取代為AEM著陸頁面(/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>表單</td> 
+   <td>已移除預設驗證碼的支援</td> 
+   <td>使用Google提供的reCAPTCHA服務。</td> 
   </tr>
    <tr>
    <td>表單</td> 
