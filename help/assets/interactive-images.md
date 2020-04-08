@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 43a28b0d9552cfde74850dfd1a1d63d04f7e4540
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 ## 觀看互動式影像橫幅的建立方式 {#watch-how-interactive-image-banners-are-created}
 
-Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner). 您也將學習如何預覽、編輯和傳遞互動式影像橫幅。
+Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). 您也將學習如何預覽、編輯和傳遞互動式影像橫幅。
 
 ## 快速入門：互動式影像 {#quick-start-interactive-images}
 
@@ -51,7 +51,7 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 1. **（可選）建立互動式影像檢視器預設集** -自訂用於表示熱點的圖形影像。 如果您想要使用現成可用的互動式影像檢視器預設集，則不需要建立您自己的互動式影像檢視器預設集，而且此預設集的名稱是 `Shoppable_Banner` 現成的。
 
-   請參 [閱（選用）建立互動式影像檢視器預設集](managing-viewer-presets.md#creating-a-new-viewer-preset)。
+   請參 [閱（可選）建立互動式影像檢視器預設集](managing-viewer-presets.md#creating-a-new-viewer-preset)。
 
 1. **上傳影像橫幅** -上傳您想要製作互動式的影像橫幅。
 
@@ -65,7 +65,7 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 1. **在AEM中將互動式影像新增至您的網站或網站**
 
-   * 如果您使用AEM Sites或AEM eCommerce，或兩者皆使用，您可以將Interactive media元件拖曳至頁面，直接將互動影像新增至AEM的網頁。 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+   * 如果您使用AEM Sites或AEM eCommerce，或兩者皆使用，您可以將Interactive Media元件拖曳至頁面，直接將互動影像新增至AEM的網頁。 See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
    * 如果您單獨使用AEM Assets和Dynamic Media，則必須複製網站上的內嵌代碼，然後將它與您現有的Quickview整合。 請參 [閱整合互動式影像與您的網站](#integrating-an-interactive-image-with-your-website)。
    * 如果您使用協力廠商WCM(Web Content Manager)，您必須將新的互動式視訊與網站上使用的現有Quickview實作整合。 請參 [閱將互動式影像與現有的Quickview整合](#integrating-an-interactive-image-with-an-existing-quickview)。
 
@@ -81,7 +81,7 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 >
 如果您的AEM實作使用電子商務，您可以略過此工作並繼續下一個工作。
 
-首先，您可以識別現有Quickview實作所使用的動態變數，以便輸入熱點資料以建立互動式影像。
+首先，識別現有Quickview實作所使用的動態變數，以便輸入熱點資料以建立互動式影像。
 
 當您在AEM Assets中將熱點新增至橫幅影像時，您必須指派SKU(庫存保留單位；您提供的每個不同產品或服務的唯一識別碼)，以及每個熱點的可選附加變數。 這些熱點變數稍後用於匹配熱點與Quickview內容。
 
@@ -158,7 +158,7 @@ Quickview的大多數實施都採用以下模式：
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
-示範網頁包含數個產品縮圖，每個產品縮圖都有一個標有「查看更多」的 **[!UICONTROL Quickview按鈕]**。 在您的網頁瀏覽器除錯工具仍處於啟用狀態時，按一下每個按鈕並記下錄制的Quickview URL。 在您啟動頁面上所有4種可用的Quickview產品後，您會有下列Quickview要求清單給後端：
+示範網頁包含數個產品縮圖，每個產品縮圖都有一個標有「查看更多」 **[!UICONTROL 的Quickview按鈕]**。 在您的網頁瀏覽器除錯工具仍處於啟用狀態時，按一下每個按鈕並記下錄制的Quickview URL。 在您啟動頁面上所有4種可用的Quickview產品後，您會有下列Quickview要求清單給後端：
 
 * `/datafeed/Men-Windbreaker.json`
 * `/datafeed/Men-SimpleHenley.json`
@@ -231,7 +231,7 @@ Quickview的大多數實施都採用以下模式：
 
 >[!NOTE]
 >
->請注意，當您將檢視器內嵌在「體驗片段」時，不支援「互動式影像」中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
+>請注意，當您將檢視器內嵌在體驗片段時，不支援互動式影像中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
 
 **[!UICONTROL 在您目]****** 前的建立／編輯工作階段中，支援在頁面右上角附近的「復原」和「復原」選項。
 
@@ -391,7 +391,7 @@ See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages
 1. 或者，前端代碼將載入的Quickview資料轉換為HTML表示法。
 1. 前端程式碼會顯示模式對話方塊或面板，並轉譯HTML內容給使用者。
 
-這些呼叫可能不代表獨立的公用API呼叫，而網頁邏輯可透過任意步驟呼叫這些呼叫。 相反地，它是連結呼叫，在此連結呼叫中，前一個步驟的最後一個階段（回呼）中將隱藏下一個步驟。
+這些呼叫可能不代表獨立的公用API呼叫，而網頁邏輯可透過任意步驟呼叫這些呼叫。 相反地，它是連結呼叫，在此連結呼叫中，前一步驟的最後一個階段（回呼）中隱藏了每個後續步驟。
 
 在可購買互動影像取代步驟1和部分步驟2的同時，當使用者按一下可購買影像中的熱點時，檢視者會處理此類使用者互動。 檢視器會將事件傳回至網頁，其中包含先前新增至AEM Assets的所有熱點資料。
 
