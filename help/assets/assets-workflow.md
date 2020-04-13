@@ -1,48 +1,109 @@
 ---
-title: 套用工作流程來處理您的數位資產
-description: 瞭解如何將工作流程套用至AEM Assets中的資產、檔案夾和系列，以處理您的數位資產。
+title: 處理資產以完成業務流程、進行審核、實現法規遵從性並保持基本的健全性
+description: 資產處理，以轉換格式、建立轉譯、管理資產、驗證資產，以及執行工作流程。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
 
-# 將工作流程套用至資產 {#applying-workflows-to-assets}
+# 處理數位資產 {#process-assets}
 
-將工作流程套用至數位資產與網站頁面相同。 如需如何在AEM中建立和使用工作流程的完整指南，請參閱「啟 [動工作流程」](../sites-authoring/workflows-participating.md)。
+[!DNL Adobe Experience Manager Assets] 可讓您以多種方式處理您的數位資產，以便進行強穩的資產處理。 您可以使用現有的處理方法或擴充方法，以確保端對端業務流程的完成，包括使用、稽核和遵循、發現和分發數位資產，以及基本的健全性。 您可以同時完成所有這些工作，並達到所需的規模和自訂。
+
+## 瞭解工作流程 {#understand-workflows}
+
+對於資產處理，請使 [!DNL Experience Manager] 用工作流程。 工作流程可協助自動化商業邏輯或活動。 預設會提供完成特定工作的詳細步驟，而開發人員可建立其自訂步驟。 這些步驟可依邏輯順序組合，以建立工作流程。 例如，工作流程可根據特定條件（例如內嵌在影像中的中繼資料、上傳到的資料夾、影像解析度等），自動在上傳的影像上套用浮水印。 另一個例子是工作流程，其設定為以這樣的方式浮水印影像，並同時處理多種資產管理需求，例如新增中繼資料、建立轉譯、新增智慧型標籤以進行資產搜尋、發佈至資料儲存區、設定使用者存取權限等。
+
+## Experience Manager中提供的預設工作流程 {#default-workflows}
+
+依預設，所有上傳的資產都會使用 [!UICONTROL DAM更新資產工作流程] 。 工作流程會針對每個上傳的資產執行，並完成基本的資產管理工作，例如轉譯產生、中繼資料回寫、頁面擷取、媒體擷取和轉碼。
+
+要查看預設情況下可用的各種工作流模型，請參 [!UICONTROL 閱中的「工具」>「工作流」] >「模型 [!DNL Experience Manager]」。
+
+![部分預設工作流程](assets/aem-default-workflows.png)
+
+*圖：部分預設工作流程可用於[!DNL Experience Manager]*
+
+## 將工作流程套用至資產 {#applying-workflows-to-assets}
+
+將工作流程套用至數位資產與網站頁面相同。 如需如何建立和使用工作流程的完整指南，請參閱「開始工 [作流程」](/help/sites-authoring/workflows-participating.md)。
 
 在數位資產中使用工作流程來啟用資產或建立浮水印。 資產的許多工作流程都會自動開啟。 例如，編輯影像後自動建立轉譯的工作流程會自動開啟。
 
-如果傳統UI中的工作流程在觸控式UI中不可用，例如「要求啟用」和「要求停用」，請參閱「在觸控式UI中 [提供工作流程模型](../sites-developing/workflows-models.md#make-workflow-models-available-in-touchui)」。
+>[!NOTE]
+>
+>如果Classic UI中的工作流程在啟用Touch的UI中不可用，例如「 [!UICONTROL Request to Activate] 」（請求啟用）和「 [!UICONTROL Request to Deactivate]」(請參閱 [建立工作流程模型](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui))。
 
-## 套用工作流程至AEM資產 {#applying-a-workflow-to-an-aem-asset}
+## 將工作流程套用至AEM資產 {#apply-a-workflow-to-an-aem-asset}
 
-如需將工作流程套用至AEM資產的詳細資訊，請參 [閱「在資產上啟動工作流程」](managing-assets-touch-ui.md#starting-a-workflow-on-an-asset)。
+<!-- 
+TBD: Add animated GIF for these steps instead of all these screenshots.
+-->
+
+若要將工作流程套用至資產，請依照下列步驟進行：
+
+1. 導覽至您要啟動工作流程的資產所在位置，然後按一下資產以開啟資產頁面。
+
+1. 導覽至您要啟動工作流程的資產所在位置，然後按一下資產以開啟資產頁面。 從菜 **[!UICONTROL 單中選擇]** 「時間軸」(Timeline)以顯示時間軸。
+
+   ![timeline-2](assets/timeline-2.png)
+
+1. 按一 **[!UICONTROL 下底部的]** 「動作」，開啟資產可用動作清單。
+
+1. 從清 **[!UICONTROL 單中按一下「開始工作流程]** 」。
+
+1. In the **[!UICONTROL Start Workflow]** dialog box, select a workflow model from the list.
+
+   ![chlimage_1-50](assets/chlimage_1-50.png)
+
+1. （可選）指定工作流的標題，可用來參考工作流實例。
+
+   ![chlimage_1-51](assets/chlimage_1-51.png)
+
+1. 按一 **[!UICONTROL 下「開始]**」，然後按一 **[!UICONTROL 下對話方塊中的「繼續]** 」以進行確認。 工作流程的每個步驟都會以事件的形式顯示在時間軸中。
+
+   ![chlimage_1-52](assets/chlimage_1-52.png)
 
 ## 將工作流程套用至多個資產 {#applying-a-workflow-to-multiple-assets}
 
-1. 從「資產」主控台，導覽至您要啟動工作流程的資產所在的位置，然後選取資產。
-1. 按一下「GlobalNav」圖示，然後從選單中選 **[!UICONTROL 擇「時間軸]** 」以顯示時間軸。
+1. 從「資產」主控台，導覽至您要啟動工作流程的資產所在的位置，然後選取資產。 從菜 **[!UICONTROL 單中選擇]** 「時間軸」(Timeline)以顯示時間軸。
 
    ![chlimage_1-136](assets/chlimage_1-136.png)
 
-1. Click the **[!UICONTROL Actions]** (arrow) icon at the bottom.
+1. 按一下 **[!UICONTROL 下方]** 的「動作」。
 
-   ![chlimage_1-137](assets/chlimage_1-137.png)
-
-1. 按一下「 **[!UICONTROL 開始工作流程]**」。
-1. In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
+1. 按一下「 **[!UICONTROL 開始工作流程]**」。 In the **[!UICONTROL Start Workflow]** dialog, select a workflow model from the list.
 
    ![chlimage_1-138](assets/chlimage_1-138.png)
 
 1. （可選）指定工作流的標題，可用來參考工作流實例。
+
 1. 按一 **[!UICONTROL 下「開始]** 」，然後按一 **[!UICONTROL 下對話方塊中的「確認]** 」。工作流程會在您選取的所有資產上執行。
 
 ## 將工作流程套用至多個檔案夾 {#applying-a-workflow-to-multiple-folders}
 
-將工作流程套用至多個檔案夾的程式，類似於將工作流程套用至多個資產的程式。 在「資產」主控台中選取資料夾，並執行「將工作流程套用至多 [個資產」程式的步驟2-7](assets-workflow.md#applying-a-workflow-to-multiple-assets)。
+將工作流程套用至多個檔案夾的程式，類似於將工作流程套用至多個資產的程式。 在「資產」主控台中選取資料夾，並執行將工作流程套用至多 [個資產的程式步驟2-7](assets-workflow.md#applying-a-workflow-to-multiple-assets)。
 
 ## 將工作流程套用至系列 {#applying-a-workflow-to-a-collection}
 
-如需將工作流程套用至系列的詳細資訊，請參 [閱在系列上執行工作流程](managing-collections-touch-ui.md#running-a-workflow-on-a-collection)。
+如需將工作流程套用至系列的詳細資訊，請參 [閱套用系列的工作流程](managing-collections-touch-ui.md#running-a-workflow-on-a-collection)。
+
+## 自動啟動工作流程，有條件地處理資產 {#auto-execute-workflow-on-some-assets}
+
+管理員可以設定工作流程，根據預先定義的條件自動執行和處理資產。 此功能對於業務線使用者和行銷人員非常有用，例如，在特定資料夾上建立自訂工作流程。 說明機構像片拍攝的所有資產都可以浮水印，或是自由工作者上傳的所有資產都可以處理，以建立特定的轉譯。
+
+對於工作流模型，用戶可以建立執行該模型的工作流啟動程式。 工作流啟動器監視內容儲存庫中的更改並在滿足預定義條件時執行工作流。 管理員可讓行銷人員存取建立工作流程和設定啟動程式。 使用者可修改預設的 [!UICONTROL DAM更新資產工作流程] ，以新增處理特定資產所需的額外步驟。 工作流程會對所有新上傳的資產執行。 使用下列方法之一來限制特定資產上額外步驟的執行：
+
+* 製作 [!UICONTROL DAM更新資產工作流程的副本] ，並加以修改以在特定資料夾階層上執行。 此方法對於一些資料夾非常有用。
+* 可以使用 [OR拆分來添加額外的處理步驟](/help/sites-developing/workflows-step-ref.md#or-split) ，該OR拆分條件性地適用於所需數量的資料夾。
+
+>[!MORELIKETHIS]
+>
+>* [套用並參與工作流程](/help/sites-authoring/workflows.md)
+>* [建立工作流程模型並擴充工作流程功能](/help/sites-developing/workflows.md)
+>* [執行工作流程的方法](/help/sites-administering/workflows-starting.md)
+>* [工作流程最佳實務](/help/sites-developing/workflows-best-practices.md)
+>* [使用工作流程修改資產的社群文章](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+
