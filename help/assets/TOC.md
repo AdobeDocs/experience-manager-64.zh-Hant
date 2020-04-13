@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Assets User Guide
+user-guide-title: AEM 6.4 Assets使用指南
 translation-type: tm+mt
-source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -24,7 +24,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [在AEM資產中使用Adobe Stock資產](aem-assets-adobe-stock.md)
    + [查看資料夾資產和集合](bulk-approval.md)
    + [時間軸中的活動串流](activity-stream.md)
-   + [將工作流程套用至資產](assets-workflow.md)
+   + [處理資產](assets-workflow.md)
    + [新增影像地圖](image-maps.md)
    + [使用MSM重複使用資產](reuse-assets-using-msm.md)
 + 動態媒體{#dynamic}
@@ -127,7 +127,7 @@ source-git-commit: 939da6b84ebfe5b3bbd97cd6a8b7556ea5189a13
    + [使用內容片段](content-fragments.md)
    + [管理內容片段](content-fragments-managing.md)
    + [內容片段模型](content-fragments-models.md)
-   + [變化 - 製作片段內容](content-fragments-variations.md)
+   + [變化 - 編寫片段內容](content-fragments-variations.md)
    + [內容片段關聯內容](content-fragments-assoc-content.md)
    + [中繼資料 - 片段屬性](content-fragments-metadata.md)
    + [內容片段 - 刪除考量事項](content-fragments-delete.md)
