@@ -4,7 +4,7 @@ description: 瞭解各種資產管理和編輯工作，您可使用AEM Assets的
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
+source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
 
 ---
 
@@ -158,7 +158,7 @@ source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
    >當您透過FTP上傳資產時，您在Dynamic Media Classic(Scene7)中設定的上傳工作選項會取代在AEM中設定的資產處理參數。
 
 1. 在「上傳工作選項」對話方塊的 **[!UICONTROL 右下角]** ，點選「 **[!UICONTROL 儲存」]**。
-1. 在「上傳」頁面的右下角，點 **[!UICONTROL 選「提交]****[!UICONTROL 上傳」]**。
+1. 在「上傳」頁面的右下角，點 **[!UICONTROL 選「送出]****[!UICONTROL 上傳」]**。
 
    若要檢視上傳的進度，請在全域導覽列上點選「工 **[!UICONTROL 作」]**。 「作 **[!UICONTROL 業]** 」頁顯示上載進度。 您可以繼續在AEM中工作，並隨時返回Dynamic Media Classic中的「工作」頁面，以檢視進行中的工作。
 
@@ -438,7 +438,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
 1. 在「選 **[!UICONTROL 擇目標]** 」頁上，執行下列操作之一：
 
-   * 導覽至資產的新位置，然後點選「下 **[!UICONTROL 一]** 」繼續。
+   * 導覽至資產的新位置，然後點選「下 **[!UICONTROL 一步]** 」繼續。
    * 點選「 **[!UICONTROL 上一步]** 」可返回「重新 **[!UICONTROL 命名]** 」頁面。
 
 1. 如果要移動的資產有任何參照頁面、資產或系列，則「選擇目標」標籤旁 **[!UICONTROL 會顯示]** 「調整參 **[!UICONTROL 考」標籤]** 。
@@ -630,7 +630,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-與清單檢視類似， **[!UICONTROL 當您將滑鼠圖示暫留在縮圖上方（在欄檢視中的資產或資料夾名稱之前）時，會顯示「選取(Select]** )」。
+與清單檢視類似， **[!UICONTROL 當您將滑鼠圖示暫留在縮圖上方（在欄檢視中的資產或檔案夾名稱之前）時，會顯示「選取(Select]** )」。
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
@@ -877,25 +877,23 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 **要建立資產版本控制**:
 
-1. 導覽至您要建立版本的資產所在位置，然後點選以開啟其資產頁面。
+1. 導覽至您要為其建立版本的資產所在位置，然後按一下以開啟其資產頁面。
 
-1. 點選「 **[!UICONTROL 全域導覽]** 」圖示，並從選單 **[!UICONTROL 選擇「時間軸]** 」。
+1. 按一下「 **[!UICONTROL 全域導覽]** 」圖示，並從選單 **[!UICONTROL 選擇「時間軸]** 」。
 
    ![timeline-1](assets/timeline-1.png)
 
-1. 點選下 **[!UICONTROL 方的]** 「動作（箭頭）」圖示，以檢視可對資產執行的可用動作。
+1. 按一 **[!UICONTROL 下底部的]** 「動作」，以檢視您可對資產執行的可用動作。
 
-   ![chlimage_1-45](assets/chlimage_1-45.png)
-
-1. 點選 **[!UICONTROL 「另存為版本]** 」以建立資產的版本。
+1. 按一 **[!UICONTROL 下「另存為版本]** 」，為資產建立版本。
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. 新增標籤和註解，然後點選「 **[!UICONTROL 建立]** 」以建立版本。 或者，點選「 **[!UICONTROL 取消]** 」以退出操作。
+1. 新增標籤和註解，然後按一下「 **[!UICONTROL 建立]** 」以建立版本。 或者，點選「 **[!UICONTROL 取消]** 」以退出操作。
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. 若要檢視新版本，請從資產詳細資 **[!UICONTROL 訊頁面或資產UI開啟時間軸中的「顯示全部]** 」清單，然後選擇「版 **[!UICONTROL 本」]**。
+1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the [!DNL Assets] interface, and choose **[!UICONTROL Versions]**.
 
    ![versions_option](assets/versions_option.png)
 
@@ -911,9 +909,9 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, tap **[!UICONTROL Preview Version]**.
+1. To generate a preview for the version, click **[!UICONTROL Preview Version]**.
 1. 若要在資產UI中顯示此版本，請選取「 **[!UICONTROL 回復至此版本」]**。
-1. 若要比較兩個版本，請前往資產的資產頁面，點選您要與目前版本比較的版本。
+1. 若要比較兩個版本，請前往資產的資產頁面，然後按一下您要與目前版本比較的版本。
 
    ![選取資產的舊版，以與目前版本比較](assets/select_version_tocompare.png)
 
@@ -923,30 +921,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 ### 在資產上啟動工作流程 {#starting-a-workflow-on-an-asset}
 
-1. 導覽至您要啟動工作流程的資產所在位置，然後點選資產以開啟資產頁面。
-1. 點選「 **[!UICONTROL 全域導覽]** 」圖示，並從選單選擇「 **[!UICONTROL 時間軸]** 」以顯示時間軸。
-
-   ![timeline-2](assets/timeline-2.png)
-
-1. 點選下 **[!UICONTROL 方的]** 「動作（箭頭）」圖示，以開啟資產可用的動作清單。
-
-   ![chlimage_1-48](assets/chlimage_1-48.png)
-
-1. 從清 **[!UICONTROL 單中點選「開始工作流程]** 」。
-
-   ![chlimage_1-49](assets/chlimage_1-49.png)
-
-1. In the **[!UICONTROL Start Workflow]** dialog box, select a workflow model from the list.
-
-   ![chlimage_1-50](assets/chlimage_1-50.png)
-
-1. （可選）指定工作流的標題，可用來參考工作流實例。
-
-   ![chlimage_1-51](assets/chlimage_1-51.png)
-
-1. 點選「 **[!UICONTROL 開始]**」，然後點選 **[!UICONTROL 對話方塊中的「繼續]** 」以進行確認。 工作流程的每個步驟都會以事件的形式顯示在時間軸中。
-
-   ![chlimage_1-52](assets/chlimage_1-52.png)
+請參閱 [將工作流程套用至AEM資產](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
 
 ## 關於系列 {#collections}
 
@@ -955,7 +930,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 * 系列可以包含不同位置的資產，因為它們只包含這些資產的參考。 每個系列都會維護資產的參考完整性。
 * 您可以與擁有不同權限層級的多位使用者共用系列，包括編輯、檢視等。
 
-使用者可以存取多個系列。 系列是以下類型，依據其收集資產的方式：
+使用者可以存取多個系列。 系列是以下類型，根據其收集資產的方式：
 
 * 包含資產、檔 **案夾和其他系列** 之靜態參考清單的系列。
 
