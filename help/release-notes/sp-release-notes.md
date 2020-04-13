@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -68,7 +68,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 ### 資產 {#assets}
 
-* 在Experience Manager中使用Dynamic Media Scene7設定將資產從一個檔案夾移至另一個檔案夾時，無名稱的檔案夾會在SPS(Scene7 Publishing System)中建立。
+* 在Experience Manager中使用Dynamic Media Scene7設定將資產從一個檔案夾移至另一個檔案夾(NPR-32440)時，在SPS(Scene7 Publishing System)中建立無名稱的檔案夾。
 
 * PDF檔案的資產詳細資料頁面在Dynamic Media Scene7模式上執行的Experience Manager中不會顯示動作按鈕(NPR-32316)。
 
@@ -99,6 +99,8 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 * 在Experience Manager **雲端服務中設定Adobe Analytics時，一旦選取** Reporting Source **,「Company」（公司）和「Reporting****** Suite」（報表套裝）下拉式功能表就會隱藏。
 
 * 當製作連結至Adobe Campaign的電子報語言副本時，不會清除Adobe Campaign屬性，而複製或貼上連結至Adobe Campaign的電子報時，則不會清除(NPR-32540)。
+
+* ReportSuitesServlet易受SSRF攻擊(NPR-32161)。
 
 ### Sling {#sling-6480}
 
@@ -166,13 +168,13 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 AEM 6.4.7.0是重要的更新，其中包括效能、穩定性、安全性和重要客戶修正，以及自2018年4月AEM 6.4全面推出以來 **的增強。**
 
-這也是累積的，也就是說6.4.7.0包含之前所有的AEM 6.4 Service Pack。
+這也是累積的，也就是說6.4.7.0包含之前所有的AEM 6.4 Service Pack版本。
 
 AEM 6.4.7.0的一些主要亮點是：
 
 * 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.17版。
 * 新增在刪除網站頁面時設定其版本的支援。
-* 已在 **DAM清單檢視中新增建立日期的新欄，並在清單檢視中新增資產搜尋結果(****** NPR-31311)。
+* 已在 **DAM清單檢視中新增可排序的建立日期新欄，並在清單檢視中新增資產搜尋結果****** (NPR-31311)。
 * 「清單」檢視中 **已允許** ，根據「名稱」欄進行資 **產排序** 。
 * 重新處理和批次上傳的批次大小和工作流程步驟逾時現在可從動態媒體的UI進行設定。
 * 在Scene `pdfBrochure` 7雲端設定中，此設定已設為false，以在IPS儲存記憶體。
@@ -598,7 +600,7 @@ AEM 6.4.5.0的一些主要亮點是：
 **平台**
 
 * 在安裝套件時，套件管理器中的跨網站指令碼(XSS)。 NPR-29734、NPR-29713、NPR-29630:GRANITE-26161、GRANITE-的修補程式
-* 在CRXDE Lite中儲存並反映多個跨網站指令碼(XSS)。 NPR-29634:GRANITE-26049的修補程式
+* 在CRXDE Lite中儲存並反映多個跨網站指令碼(XSS)。 NPR-29534:GRANITE-26049的修補程式
 * Package Share的登入功能使用GET要求，而非POST要求，使密碼顯示在網路標籤下。 NPR-29631:GRANITE-26048的修補程式
 
 **費利克斯**
@@ -1391,7 +1393,7 @@ AEM 6.4.2.0的一些主要亮點是：
 
 **社群**
 
-* （檔案庫）下載空白的資產會導致格式問題。 NPR-24260:CQ-4245159的修補程式
+* （檔案庫）下載空白的資產會導致格式問題。 NPR-23260:CQ-4245159的修補程式
 * 修正數個Adobe Social問題。 NPR-24247:CQ-4245054、CQ-4245120、CQ-4245296的修補程式
 * 成員和群組的無限捲動控制台失敗，以防作者發佈在不同的上下文路徑上執行。 NPR-24437:CQ-4246013的修補程式
 * 即使從已應答狀態移除貼文，貼文也不會返回未應答狀態，且分數不會下降。 NPR-24419:CQ-4245797、CQ-4245932的修補程式
