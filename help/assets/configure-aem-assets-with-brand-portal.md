@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM資產
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
+source-git-commit: 608280909877d522fc69ed9723ff615dfaa0a50a
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Experience Manager(AEM)Assets是透過Adobe I/O以品牌入口網站設定
 
 ### 下載並安裝AEM 6.4 {#aemquickstart}
 
-建議您使用AEM 6.4來設定AEM作者例項。 如果您沒有啟動並執行AEM，請從下列位置下載它：
+建議您使用AEM 6.4來設定AEM作者例項。 如果您沒有啟動並執行AEM，請從下列位置下載：
 
 * 如果您是現有的AEM客戶，請從 [Adobe授權網站下載AEM 6.4](http://licensing.adobe.com)。
 
@@ -63,7 +63,7 @@ Adobe Experience Manager(AEM)Assets是透過Adobe I/O以品牌入口網站設定
 
 如需詳細指示，請參閱
 
-* [AEM 6.4 Service Pack發行說明](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [AEM 6.4 Service Pack發行說明](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 **如果您找不到** 最新的AEM套件或Service Pack，請連絡支援。
 
@@ -90,7 +90,7 @@ IMS配置包括兩個步驟：
 公開憑證可讓您在Adobe I/O上驗證個人檔案。
 
 1. 登入您的AEM Assets author instance預設URL:http:// localhost:4502/aem/start.html
-1. 從「 **Security** ![Tools](assets/tools.png)**[!UICONTROL 」面板，導覽至「]** Security **[!UICONTROL >]** Adobe IMS Configurations Tools」。
+1. 從「 **Security** ![Tools](assets/tools.png)**[!UICONTROL 」面板，導覽至「]** Security **[!UICONTROL >]** Adobe IMS Configurations」（安全性>> IMS工具）。
 
    ![Adobe IMS帳戶設定UI](assets/ims-config1.png)
 
@@ -144,7 +144,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
    ![建立整合](assets/create-new-integration2.png)
 
-1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案」]** ，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
+1. 指定整合的名稱和說明。 按一 **[!UICONTROL 下「從電腦選取檔案]** 」，並上傳 `AEM-Adobe-IMS.crt` 在「取得公用憑證」區 [段中下載的檔案](#public-certificate) 。
 
 1. 選擇組織的配置檔案。
 
@@ -193,7 +193,7 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 >[!CAUTION]
 >
->僅建立一個有效的IMS設定。 請勿建立多個IMS組態。
+>只建立一個有效的IMS設定。
 >
 >確保配置正常。 如果配置不健康，請將其刪除並建立新的健康配置。
 
