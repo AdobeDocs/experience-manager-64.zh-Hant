@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: da967c43a6b4c0021ac591477bd13f3fdb026287
 
 ---
 
@@ -26,8 +26,7 @@ AEM Forms Portal草稿和提交元件可讓使用者將表單儲存為草稿，�
 >
 >* 本文檔中說明的示例和配置是根據MySQL 5.6.24進行的，您必須將它們適當地替代到資料庫系統。
 >* 請確定您已安裝最新版的AEM Forms附加元件套件。 如需可用套件的清單，請參閱 [AEM Forms發行文章](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 。
->
-
+> * 範例套件僅能與Adaptive Forms提交動作搭配使用。
 
 
 ## 設定並設定範例 {#set-up-and-configure-the-sample}
@@ -97,7 +96,7 @@ AEM Forms Portal草稿和提交元件可讓使用者將表單儲存為草稿，�
   </tr> 
   <tr> 
    <td>JDBC驅動程式類</td> 
-   <td>com.mysql.jdbc.driver</td> 
+   <td>com.mysql.jdbc.Driver</td> 
   </tr> 
   <tr> 
    <td>JDBC連接URI<br /> </td> 
@@ -399,13 +398,13 @@ Forms Portal的資料庫實作會使用其他中繼資料表格。 該表具有�
 
 1. 將下列屬性新增至步驟2中建立的檔案夾，然後按一下「全 **[!UICONTROL 部儲存」]**。
 
-   * **** 名稱：類別
+   * **[!UICONTROL 名稱：]** 類別
 
-   * **** 類型：字串
+   * **[!UICONTROL 類型：]** 字串
 
-   * **** 值：fp.validation
+   * **[!UICONTROL 值：]** fp.validation
 
-   * **** 多選項：已啟用
+   * **[!UICONTROL 多選項：]** 已啟用
 
 1. 導覽至 `/libs/fd/af/runtime/clientlibs/guideRuntime`內嵌 `fp.validation` 屬性並附 **加值** 。
 
