@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
 
 ---
 
@@ -67,7 +67,7 @@ AEM表單會使用AEM表單儲存庫做為其資料來源。 AEM表單儲存庫�
 1. 在下一個螢幕的「Additional Properties（附加屬性）」下，按一下「Connection Pool Properties（連接池屬性）」 ，然後在「Maximum Connections（最大連接）」框和「Minimum Connections（最小連接）」框中輸入值。
 1. 按一下「確定」或「應用」，然後按一下「直接保存到主配置」。
 
-### 為WebSphere for oracle配置連接池設定 {#configure-connection-pool-settings-for-websphere-for-oracle}
+### 為WebSphere for Oracle配置連接池設定 {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. 在導航樹中，按一下「資源」>「JDBC」>「JDBC提供程式」。 在右窗格中，按一下您建立的Oracle JDBC驅動程式資料源。
 1. 在「其他屬性」下，按一下「資料來源」，然後選取IDP_DS。
@@ -109,7 +109,7 @@ AEM表單會使用AEM表單儲存庫做為其資料來源。 AEM表單儲存庫�
 
 1. 使用以下系統屬性重新啟動應用程式伺服器：
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=步驟2中&#x200B;[*指定的值*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >
@@ -147,9 +147,9 @@ JVM最大堆大小必須增加50 MB，總計為562 MB。
 
 要考慮堆碎片問題，內嵌文檔大小不能設定為高於堆總大小的0.1%。 例如，JVM最大堆大小為512 MB時，最大內嵌大小為512 MB x 0.001 = 0.512 MB或512 KB。
 
-## WebSphere Application server增強功能 {#websphere-application-server-enhancements}
+## WebSphere Application Server增強功能 {#websphere-application-server-enhancements}
 
-本節介紹WebSphere Application server環境的特定設定。
+本節介紹WebSphere Application Server環境的特定設定。
 
 ### 增加分配給JVM的最大記憶體 {#increasing-the-maximum-memory-allocated-to-the-jvm}
 
@@ -162,7 +162,7 @@ JVM最大堆大小必須增加50 MB，總計為562 MB。
 
 1. 尋找參 `-Xmx256M` 數並將其變更為較高的值，例如 `-Xmx1024M`。
 1. 儲存檔案。
-1. 使用Configuration manager運 `ejbdeploy` 行命令或重新部署。
+1. 使用Configuration Manager運 `ejbdeploy` 行命令或重新部署。
 
 ## 使用LDAP提高Windows Server 2003效能 {#improving-windows-server-2003-performance-with-ldap}
 
@@ -189,5 +189,5 @@ JVM最大堆大小必須增加50 MB，總計為562 MB。
 
 >[!NOTE]
 >
->如果使用註冊表編輯器或使用其他方法錯誤地修改註冊表，可能會出現嚴重問題。 這些問題可能需要重新安裝作業系統。 自行修改註冊表。
+>如果使用註冊表編輯器或使用其他方法錯誤地修改了註冊表，可能會出現嚴重問題。 這些問題可能需要重新安裝作業系統。 自行修改註冊表。
 
