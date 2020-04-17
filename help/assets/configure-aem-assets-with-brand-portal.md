@@ -3,7 +3,7 @@ title: 使用品牌入口網站設定AEM資產
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 608280909877d522fc69ed9723ff615dfaa0a50a
+source-git-commit: a2bd2734b1ec923c87f707c5183b3813e4511f10
 
 ---
 
@@ -90,7 +90,7 @@ IMS配置包括兩個步驟：
 公開憑證可讓您在Adobe I/O上驗證個人檔案。
 
 1. 登入您的AEM Assets author instance預設URL:http:// localhost:4502/aem/start.html
-1. 從「 **Security** ![Tools](assets/tools.png)**[!UICONTROL 」面板，導覽至「]** Security **[!UICONTROL >]** Adobe IMS Configurations」（安全性>> IMS工具）。
+1. 從「 **Security** ![Tools](assets/tools.png)**[!UICONTROL 」面板，導覽至「]** Security **[!UICONTROL >]** Adobe IMS Configurations Tools」。
 
    ![Adobe IMS帳戶設定UI](assets/ims-config1.png)
 
@@ -193,9 +193,10 @@ Adobe I/O整合會產生API金鑰、用戶端密碼和裝載(JWT)，這是設定
 
 >[!CAUTION]
 >
->只建立一個有效的IMS設定。
+>您只能有一個IMS設定。 請勿建立多個IMS組態。
 >
->確保配置正常。 如果配置不健康，請將其刪除並建立新的健康配置。
+>確保IMS配置通過健康檢查。 如果配置未通過健康檢查，則無效。 您必須刪除它並建立新的有效設定。
+
 
 
 ### 設定雲端服務 {#configure-the-cloud-service}
