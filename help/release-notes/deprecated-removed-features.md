@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
+source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
 
 ---
 
@@ -144,7 +144,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
    <td>由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。<br><br>現在 <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">應使用Adobe Analytics提供的</a> ActivityMap外掛程式。</td> 
   </tr>
   <tr>
-   <td>元件</td> 
+   <td>元件——表單</td> 
    <td>表單驗證碼<br /> (foundation/components/form/captcha)</td> 
    <td>請改用Google的ReCaptcha元件</td> 
   </tr>
@@ -185,11 +185,6 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
   </tr>
   <tr>
    <td>表單</td> 
-   <td>已移除最適化表單中預設AEM Captcha服務的支援。 </td> 
-   <td>請改用Google的ReCaptcha。</td> 
-  </tr>
-  <tr>
-   <td>表單</td> 
    <td>已移除檔案片段內影像的支援。 </td> 
    <td>互動式通訊提供直接在印刷和網頁頻道使用影像的功能。<br /> </td> 
   </tr>
@@ -222,11 +217,6 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
     <td>表單</td> 
     <td>已移除JEE特定登陸頁面上的AEM Forms。</td> 
     <td>AEM Forms on JEE著陸頁面已取代為AEM著陸頁面(/aem/start.html) </td>  
-  </tr>
-   <tr>
-   <td>表單</td> 
-   <td>已移除預設驗證碼的支援</td> 
-   <td>使用Google提供的reCAPTCHA服務。</td> 
   </tr>
    <tr>
    <td>表單</td> 
