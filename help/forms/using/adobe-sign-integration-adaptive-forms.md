@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
 
 ---
 
@@ -20,9 +20,9 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 Adobe Sign可針對最適化表單啟用電子簽名工作流程。 電子簽名可改善處理法律、銷售、薪資、人力資源管理等領域檔案的工作流程。
 
-在典型的Adobe sign和最適化表單案例中，使用者會填寫最適化表單以申請服務。 例如，信用卡申請和公民福利表。 當使用者填寫、提交及簽署申請表格時，表格會傳送給服務提供者，以做進一步的動作。 服務供應商會審核應用程式，並使用Adobe Sign來標示已核准的應用程式。 若要啟用類似的電子簽名工作流程，您可以將Adobe Sign與AEM Forms整合。
+在典型的Adobe Sign和最適化表單案例中，使用者會填寫最適化表單以申請服務。 例如，信用卡申請和公民福利表。 當使用者填寫、提交及簽署申請表格時，表格會傳送給服務提供者，以做進一步的動作。 服務供應商會審核應用程式，並使用Adobe Sign來標示已核准的應用程式。 若要啟用類似的電子簽名工作流程，您可以將Adobe Sign與AEM Forms整合。
 
-若要搭配AEM Forms使用Adobe Sign，請在AEM Cloud services中設定Adobe Sign:
+若要搭配AEM Forms使用Adobe Sign，請在AEM Cloud Services中設定Adobe Sign:
 
 ## 必備條件 {#prerequisites}
 
@@ -30,7 +30,7 @@ Adobe Sign可針對最適化表單啟用電子簽名工作流程。 電子簽名
 
 * 有效的 [Adobe Sign開發人員帳戶](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html)。
 * 啟用 [SSL的](/help/sites-administering/ssl-by-default.md) AEM Forms伺服器。
-* Adobe [Sign API應用程式](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/create_app.md)。
+* Adobe [Sign API應用程式](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)。
 * Adobe Sign API應用程式的認證（用戶端ID和用戶端密碼）。
 
 ## 使用AEM Forms設定Adobe Sign {#configure-adobe-sign-with-aem-forms}
@@ -62,7 +62,7 @@ Adobe Sign可針對最適化表單啟用電子簽名工作流程。 電子簽名
    * aggrement_send
    * widget_write
    * workflow_read
-   如需設定Adobe Sign應用程式的OAuth設定並取得索引鍵的逐步資訊，請參閱應用程式開發人員文 [件的設定](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) oAuth設定。
+   如需設定Adobe Sign應用程式的OAuth設定並取得金鑰的逐步資訊，請參閱應用程式開發人員文 [件的設定](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/configure_oauth.md) oAuth設定。
 
    ![OAuth設定](assets/oauth_config.png)
 
