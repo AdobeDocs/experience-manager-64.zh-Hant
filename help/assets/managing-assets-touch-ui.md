@@ -4,7 +4,7 @@ description: 瞭解各種資產管理和編輯工作，您可使用AEM Assets的
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -315,8 +315,6 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
 ## 預覽資產 {#previewing-assets}
 
-另請參閱 [預覽動態媒體資產。](previewing-assets.md)
-
 **若要預覽資產**:
 
 1. 從「資產」使用者介面，導覽至您要預覽的資產所在的位置。
@@ -331,6 +329,12 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
    點選「 **[!UICONTROL 重設]** 」按鈕，將檢視重設為原始大小。
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
+
+>[!MORELIKETHIS]
+>
+>* [預覽動態媒體資產](/help/assets/previewing-assets.md)。
+>* [檢視子資產](managing-linked-subassets.md#viewing-subassets)。
+
 
 ## 編輯屬性 {#editing-properties}
 
@@ -630,7 +634,7 @@ CUG是限制存取您資產的額外方式。 您也可以設定資料夾的登�
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-與清單檢視類似， **[!UICONTROL 當您將滑鼠圖示暫留在縮圖上方（在欄檢視中的資產或檔案夾名稱之前）時，會顯示「選取(Select]** )」。
+與清單檢視類似， **[!UICONTROL 當您將滑鼠圖示暫留在縮圖上方（在欄檢視中的資產或資料夾名稱之前）時，會顯示「選取(Select]** )」。
 
 ![select_quick_in_columnview](assets/select_quick_in_columnview.png)
 
