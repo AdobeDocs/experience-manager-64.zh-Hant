@@ -1,8 +1,8 @@
 ---
 title: 新增動態媒體資產至頁面
 seo-title: 新增動態媒體資產至頁面
-description: 如何在AEM中將Dynamic media元件新增至頁面
-seo-description: 如何在AEM中將Dynamic media元件新增至頁面
+description: 如何在AEM中將Dynamic Media元件新增至頁面
+seo-description: 如何在AEM中將Dynamic Media元件新增至頁面
 uuid: 77abcb87-2df7-449b-be52-540d749890b6
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+source-git-commit: ef00b3d307e01807f90bad8c8fde278204470bc3
 
 ---
 
@@ -27,7 +27,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 ## 新增動態媒體元件至頁面 {#adding-a-dynamic-media-component-to-a-page}
 
-將動態媒體或互動媒體元件新增至頁面，與將元件新增至任何頁面相同。 以下各節將詳細說明動態媒體和互動媒體元件。
+將動態媒體或互動媒體元件新增至頁面，與將元件新增至任何頁面相同。 以下各節將詳細說明動態媒體和互動式媒體元件。
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 ## 本地化動態媒體元件 {#localizing-dynamic-media-components}
 
-您可透過下列兩種方式將Dynamic media元件當地語系化：
+您可透過下列兩種方式將Dynamic Media元件當地語系化：
 
 * 在「網站」的網頁中，開啟「屬 **[!UICONTROL 性]** 」並選 **[!UICONTROL 取「進階]** 」標籤。選擇所要的本地化語言。
 
@@ -94,7 +94,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 您也可以直接在元件中設定檢視器預設集、影像預設集或影像格式。 若要讓影像回應，您可以設定中斷點或套用回應式影像預設集。
 
-按一下元件中的「編輯」圖示，然後按一下「動態媒體設定」，即可編 **[!UICONTROL 輯]** 「下列動態媒體 **[!UICONTROL 設定」]**。
+您必須先按一下元件中的「編輯」圖示，再按一下「動態媒體設定」，即可編 **[!UICONTROL 輯下列]** 「動態媒體 **[!UICONTROL 設定」]**。
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
@@ -105,7 +105,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 * **[!UICONTROL 檢視器預]**設集從下拉式選單中選取現有的檢視器預設集。 如果您所尋找的檢視器預設集不可見，您可能需要將它顯示。 請參閱管理檢視器預設集。 如果您使用影像預設集，則無法選取檢視器預設集，反之亦然。
 如果您要檢視影像集、回轉集或混合媒體集，這是唯一可用的選項。 顯示的檢視器預設集也很聰明——只會顯示相關的檢視器預設集。
 
-* **[!UICONTROL 檢視器修飾]**&#x200B;元檢視器修飾元採用名稱=值配對與&amp;分隔字元的形式，可讓您變更檢視器，如檢視器參考指南所述。 檢視器修飾元的範例為postemage=img.jpg&amp;caption=text.vtt,1，其為視訊縮圖設定不同的影像，並將隱藏字幕／子標題檔案與視訊建立關聯。
+* **[!UICONTROL 檢視器修飾]**&#x200B;元檢視器修飾元採用名稱=值配對與&amp;分隔字元的形式，讓您變更檢視器，如檢視器參考指南所述。 檢視器修飾元的範例為postemage=img.jpg&amp;caption=text.vtt,1，其為視訊縮圖設定不同的影像，並將隱藏字幕／子標題檔案與視訊建立關聯。
 
 * **[!UICONTROL 影像預設]**：從下拉式選單中選取現有的影像預設。 如果您要尋找的影像預設集不可見，您可能需要將它顯示。 請參閱管理影像預設集。 如果您使用影像預設集，則無法選取檢視器預設集，反之亦然。
 如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
@@ -133,7 +133,7 @@ You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** i
 
 ![chlimage_1-540](assets/chlimage_1-540.png)
 
-You can edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
+You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
@@ -211,7 +211,7 @@ You can edit the following **[!UICONTROL Add To Cart]** settings by clicking **[
 
 * **[!UICONTROL 顯示產品價]**&#x200B;格依預設，此值會選取。 產品價格顯示「商務」模組中定義的項目價格。 清除勾號以不顯示產品價格。
 
-* **[!UICONTROL 顯示產品表]**&#x200B;單預設情況下，不選擇此值。 「產品表單」包含任何產品變體，例如尺寸和顏色。 清除勾號，不顯示產品變數。
+* **[!UICONTROL 顯示產品表]**&#x200B;單依預設，此值未選取。 「產品表單」包含任何產品變體，例如尺寸和顏色。 清除勾號，不顯示產品變數。
 
 ### 全景媒體元件 {#panoramic-media-component}
 
@@ -238,10 +238,10 @@ HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的�
 
 >[!MORELIKETHIS]
 >
->* [瞭解使用AEM Dynamic media進行色彩管理](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
->* [搭配AEM Dynamic media使用自訂視訊縮圖](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
->* [使用AEM Dynamic media瞭解資產檢視器](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
->* [搭配AEM Dynamic media使用互動式視訊](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
->* [在AEM Dynamic media中使用視訊播放器](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
->* [搭配AEM Dynamic media使用影像銳利化](https://helpx.adobe.com/experience-manager/6-4/assets/using/best-practices-for-optimizing-the-quality-of-your-images.html)
+>* [瞭解使用AEM Dynamic Media進行色彩管理](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-color-management-technical-video-setup.html)
+>* [搭配AEM Dynamic Media使用自訂視訊縮圖](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-thumbnails-feature-video-use.html)
+>* [使用AEM Dynamic Media瞭解資產檢視器](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-viewer-feature-video-understand.html)
+>* [搭配AEM Dynamic Media使用互動式視訊](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-interactive-video-feature-video-use.html)
+>* [在AEM Dynamic Media中使用視訊播放器](https://helpx.adobe.com/experience-manager/kt/assets/using/dynamic-media-video-player-feature-video-use.html)
+>* [搭配AEM Dynamic Media使用影像銳利化](https://helpx.adobe.com/experience-manager/6-4/assets/using/best-practices-for-optimizing-the-quality-of-your-images.html)
 
