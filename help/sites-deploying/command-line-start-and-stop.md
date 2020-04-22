@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
 
 ---
 
@@ -122,4 +122,3 @@ CQ_PORT=1234 ./start
 * 建立 `bootstrap.properties` 和定義 `repository.config`
 
 同樣地，在開始實際安裝之前。
-
