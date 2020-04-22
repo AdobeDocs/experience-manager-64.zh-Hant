@@ -3,7 +3,7 @@ title: 設定Rich Text Editor
 description: 瞭解如何設定AEM Rich Text Editor。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -12,9 +12,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 富格文本編輯器(RTE)為作者提供了多種編輯其文本內容的功能。 提供圖示、選擇方塊、工具列和選單，以提供WYSIWYG文字編輯體驗。
 
-RTE可以配置為啟用、禁用和擴展編寫元件中可用的功能。 要瞭解如何使用RTE功能進行編寫，請參 [閱Use Rich Text Editor for authoring](/help/sites-authoring/rich-text-editor.md)。
-
-以下工作流說明了完成RTE配置任務的建議順序。
+要瞭解如何使用RTE功能進行編寫，請參 [閱Use Rich Text Editor for authoring](/help/sites-authoring/rich-text-editor.md)。 RTE可以配置為啟用、禁用和擴展編寫元件中可用的功能。 以下工作流程說明在Experience Manager中完成RTE配置任務的建議順序。
 
 ![配置Rich Text Editor的典型工作流程](assets/rte_workflow_v1.png)
 
@@ -44,45 +42,12 @@ Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環 [境推出
 
 作者可以使用不同的元件模式，在AEM中建立和編輯文字內容。 用於編寫和格式化內容的工具欄選項以及不同編輯模式下啟用RTE的元件的用戶體驗會因RTE配置而異。
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>編輯模式</th> 
-   <th>編輯區域</th> 
-   <th>建議啟用的功能<br /> </th> 
-   <th>Touch UI</th> 
-   <th>傳統 UI</th> 
-  </tr> 
-  <tr> 
-   <td>內嵌</td> 
-   <td>就地編輯，以快速進行小幅編輯；格式，不開啟對話方塊</td> 
-   <td>最低RTE功能</td> 
-   <td>Y</td> 
-   <td>Y</td> 
-  </tr> 
-  <tr> 
-   <td>RTE全螢幕</td> 
-   <td>涵蓋整個頁面<br /> </td> 
-   <td>所有必要的RTE功能<br /> </td> 
-   <td>Y</td> 
-   <td>N<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>對話方塊</td> 
-   <td>對話框，但不涵蓋整個頁面</td> 
-   <td>Classic UI中所有必需的RTE功能；審慎地啟用Touch UI中的功能<br /> </td> 
-   <td>Y</td> 
-   <td>Y</td> 
-  </tr> 
-  <tr> 
-   <td>全螢幕對話方塊<br /> </td> 
-   <td>與全螢幕模式相同；包含RTE旁邊對話框的欄位<br /> </td> 
-   <td>所有必要的RTE功能</td> 
-   <td>Y</td> 
-   <td>N</td> 
-  </tr> 
- </tbody> 
-</table>
+| 編輯模式 | 編輯區域 | 建議啟用的功能 | Touch UI | 傳統 UI |
+|--- |--- |--- |--- |--- |
+| 內嵌 | 就地編輯，以快速進行小幅編輯；格式，不開啟對話方塊 | 最低RTE功能 | Y | Y |
+| RTE全螢幕 | 涵蓋整個頁面 | 所有必要的RTE功能 | Y | N |
+| 對話方塊 | 對話框，但不涵蓋整個頁面 | Classic UI中所有必需的RTE功能；審慎地啟用Touch UI中的功能 | Y | Y |
+| 全螢幕對話方塊 | 與全螢幕模式相同；包含RTE旁邊對話框的欄位 | 所有必要的RTE功能 | Y | N |
 
 >[!NOTE]
 >
@@ -139,90 +104,23 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 * 屬性的允許 `features` 值。
 * 外掛程式提供的功能說明。
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>外掛程式ID<br /><br /> </p> </td> 
-   <td><p>features<br /> <br /> </p> </td> 
-   <td><p>說明<br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>編輯</p> </td> 
-   <td><p>cut<br /> copy<br /> paste-default<br /> paste-plaintext<br /> paste-wordhtml</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">剪下、複製和三種貼上模式</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td> 
-   <td><p>find<br /> replace</p> </td> 
-   <td><p>尋找和取代。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">格式</a></p> </td> 
-   <td><p>粗斜體<br /> 加底線<br /></p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">基本文字格式</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">影像</a></p> </td> 
-   <td><p>影像</p> </td> 
-   <td><p>設定一些影像屬性，例如對齊和alt文字。 從Content Finder拖放影像的基本支援可在沒有此增效模組的情況下運作。</p> <p><em>注意</em>:製作行為可能會隨瀏覽器而異。 例如，Mozilla Firefox提供重新調整大小的功能，但Google Chrome則否。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">鍵</a></p> </td> 
-   <td><p> </p> </td> 
-   <td><p>要定義此值，請參 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">閱標籤大小</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">證明</a></p> </td> 
-   <td><p>justifyleft<br /> justifycenter<br /> justifyright</p> </td> 
-   <td><p>段落對齊。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">連結</a></p> </td> 
-   <td><p>modifylink<br /> unlink錨<br /> 。</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">超連結和錨點</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">清單</a></p> </td> 
-   <td><p>有序<br /> 無序縮進<br /><br /> ，縮進</p> </td> 
-   <td><p>此外掛程式可控制縮 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">排和清單</a>;包括巢狀清單。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misctools</a></p> </td> 
-   <td><p>specialchars<br /> sourceedit</p> </td> 
-   <td>其他工具可讓作者輸入 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar" target="_blank">特殊字元</a> ，或編輯HTML來源。 此外，如果您想要定義 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">自己的清單</a> ，也可以新增一整組特殊字元。</td> 
-  </tr> 
-  <tr> 
-   <td><p>Paraformat</p> </td> 
-   <td><p>paraformat</p> </td> 
-   <td>預設段落格式為段落、標題1、標題2和標題3（&lt;p&gt;、&lt;h1&gt;、&lt;h2&gt;和&lt;h3&gt;）。 您可以 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats" target="_blank">新增更多段落格式</a> ，或擴充清單。</td> 
-  </tr> 
-  <tr> 
-   <td><p>拼字檢查</p> </td> 
-   <td><p>checktext</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict" target="_blank">語言感應拼字檢查程式</a>。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>樣式</p> </td> 
-   <td><p>樣式</p> </td> 
-   <td>支援使用CSS類別的樣式。 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="-blank">如果您想要新增</a> （或擴充）您自己的樣式範圍，以便搭配文字使用，請新增文字樣式。</td> 
-  </tr> 
-  <tr> 
-   <td><p>上標</p> </td> 
-   <td><p>下標<br /> 上標</p> </td> 
-   <td><p>基本格式的擴充功能，新增子和超指令碼。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>表</p> </td> 
-   <td><p>table<br /><br /> insertrow<br /> removerow<br /> insertcolumn<br /> column<br /> merremololls<br /><br /><br /><br /> cells wSelectrocolumns</p> </td> 
-   <td>如果 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles" target="_blank">要為整個表格或個別儲存格新增自己的樣式</a>，請參閱設定表格樣式。</td> 
-  </tr> 
-  <tr> 
-   <td><p>復原</p> </td> 
-   <td><p>撤消重做<br /></p> </td> 
-   <td>還原和重做 <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory" target="_blank">操作的歷史</a> 大小。</td> 
-  </tr> 
- </tbody> 
-</table>
+| 外掛程式ID | 功能 | 說明 |
+|--- |--- |--- |
+| 編輯 | 剪下複製貼上——預設貼上-plaintext paste-wordhtml | [剪下、複製和三種貼上模式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
+| [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | 尋找取代 | 尋找和取代。 |
+| [格式](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | 粗斜體下划線 | [基本文字格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
+| [影像](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | 影像 | 基本影像支援（從內容或內容搜尋器拖曳）。 根據瀏覽器，支援對作者有不同的行為 |
+| [鍵](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 要定義此值，請參 [閱標籤大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)。 |
+| [證明](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifleft justifcenter justifyright | 段落對齊。 |
+| [連結](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink unlink andlock | [超連結和錨點](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles)。 |
+| [清單](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 有序無序縮進 | 此外掛程式可控制縮 [排和清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin);包括巢狀清單。 |
+| [misctools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 其他工具可讓作者輸入 [特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) ，或編輯HTML來源。 此外，如果您想要定義 [自己的清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) ，也可以新增一整組特殊字元。 |
+| Paraformat | paraformat | 預設段落格式為段落、標題1、標題2和標題3(`<p>`、 `<h1>`、 `<h2>`和 `<h3>`)。 您可以 [新增更多段落格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) ，或擴充清單。 |
+| 拼字檢查 | checktext | [語言感應拼字檢查程式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)。 |
+| 樣式 | 樣式 | 支援使用CSS類別的樣式。 [如果您想要新增](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) （或擴充）您自己的樣式範圍，以便搭配文字使用，請新增文字樣式。 |
+| 上標 | 下標上標 | 基本格式的擴充功能，新增子和超指令碼。 |
+| 表 | 表removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns | 如果 [要為整個表格或個別儲存格新增自己的樣式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)，請參閱設定表格樣式。 |
+| 復原 | 撤消重做 | 還原和重做 [操作的歷史](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) 大小。 |
 
 >[!NOTE]
 >
@@ -244,12 +142,8 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 >請勿將節點命名為 `cq:inplaceEditing` 「 `config`」。 在節 `cq:inplaceEditing` 點上，定義以下屬性：
 >
 >* **名稱**: `configPath`
-   >
-   >
-* **類型**: `String`
-   >
-   >
-* **值**:包含實際配置的節點的路徑
+>* **類型**: `String`
+>* **值**:包含實際配置的節點的路徑
 >
 >
 不要將RTE配置節點命名為 `config`。 否則，RTE配置只對管理員有效，對組中的用戶無效 `content-author`。
@@ -273,7 +167,6 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 RTE功能可透過一系列外掛程式提供，每個外掛程式都包含features屬性。 您可以設定features屬性，以啟用或停用每個外掛程式的各種功能。
 
 有關RTE插件的詳細配置，請參見 [如何激活和配置RTE插件](/help/sites-administering/configure-rich-text-editor-plug-ins.md)。
-
 
 下載此示例配置以瞭解如何配置RTE。 在此套件中，所有功能都已啟用。
 
@@ -423,8 +316,8 @@ AEM 6.4 Service Pack 3之後，RTE中的可用選項會從使用者介面組態�
 * [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) 元件提供表單欄位，以編輯樣式化文字資訊(rich text)。 要瞭解富格文本表單的所有可用參數，請參閱配置選項。
 * RichText元件使用 [CQ.form.rte.plugins.Plugins下所列的外掛程式，提供多種功能](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)。 針對每個外掛程式：
 
-   * 如需可啟用（或停用）功能的詳細資訊，請參閱「功能」
-   * 如需適當外掛程式的詳細設定，請參閱所有可用參數的設定選項
+   * 如需可啟用（或停用）功能的詳細資訊，請參閱功能。
+   * 如需適當外掛程式的詳細設定，請參閱所有可用參數的設定選項。
 
 * 也提供連結的HTML規則相關詳細資訊。
 
@@ -434,9 +327,9 @@ AEM 6.4 Service Pack 3之後，RTE中的可用選項會從使用者介面組態�
 
 AEM RTE功能有下列限制：
 
-* RTE功能僅在AEM元件對話方塊中受支援。 RTE不支援精靈或基礎表單，例如啟用觸控功能 [的UI上](../sites-developing/page-properties-views.md)[的「頁面屬性」和「腳手架](../sites-authoring/scaffolding.md) 」。
+* RTE功能僅在AEM元件對話方塊中受支援。 RTE不支援精靈或基礎表單，例如啟用觸控功能 [的UI上](/help/sites-developing/page-properties-views.md)[的「頁面屬性」和「腳手架](/help/sites-authoring/scaffolding.md) 」。
 
-* AEM無法在 [Hybrid裝置上運作](../release-notes/known-issues.md)。
+* AEM無法在 [Hybrid裝置上運作](/help/release-notes/known-issues.md)。
 
 * 不要為RTE配置節點命名 `config`。 否則，RTE配置只對管理員有效，對組中的用戶無效 `content-author`。
 
