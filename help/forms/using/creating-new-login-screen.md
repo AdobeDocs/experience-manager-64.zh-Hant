@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # 建立新的登入畫面 {#creating-a-new-login-screen}
 
-您可以修改使用AEM Forms登入畫面的所有AEM Forms模組的登入畫面。 例如，這些修改會影響Forms manager和AEM Forms工作區的登入畫面。
+您可以修改使用AEM Forms登入畫面的所有AEM Forms模組的登入畫面。 例如，這些修改會影響Forms Manager和AEM Forms工作區的登入畫面。
 
 ## 先決條件 {#prerequisite}
 
@@ -288,5 +288,3 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    
    <div class="newLginContainerBkg">
    ```
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
