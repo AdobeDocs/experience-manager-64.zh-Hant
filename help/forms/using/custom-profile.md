@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # 建立HTML5表單的自訂描述檔 {#creating-a-custom-profile-for-html-forms}
 
-描述檔是 [Apache Sling中的資源節點](https://sling.apache.org/)。 它代表HTML5表單轉譯服務的自訂版本。 您可以使用HTML5表單轉譯服務來自訂HTML5表單的外觀、行為和互動。 JCR儲存庫中的文 `/content` 件夾中存在配置檔案節點。 您可以將節點直接放在資料夾或 `/content` 資料夾的任何子資料夾 `/content` 下。
+描述檔是 [Apache Sling中的資源節點](https://sling.apache.org/)。 它代表HTML5表單轉譯服務的自訂版本。 您可以使用HTML5表單轉譯服務來自訂HTML5表單的外觀、行為和互動。 JCR儲存庫中的文 `/content` 件夾中存在配置檔案節點。 您可以將節點直接放在資料夾 `/content` 或資料夾的任何子資料夾 `/content` 下。
 
 描述檔節點具 **有sling:resourceSuperType** 屬性，預設值為 **xfaforms/profile**。 節點的演算指令碼位於/libs/xfaforms/profile。
 
@@ -81,5 +81,3 @@ footer.jsp模組為空。 它允許您添加僅用於用戶交互的指令碼。
 1. 若要確認已建立描述檔，請開啟URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
 若要驗證您的表單，請 [將表單從您的本機檔案系統匯入](/help/forms/using/get-xdp-pdf-documents-aem.md) ，並在AEM伺服器 [作者例項上預覽表單](/help/forms/using/previewing-forms.md) 。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
