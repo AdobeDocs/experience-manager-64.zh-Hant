@@ -9,7 +9,7 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: ec74a1c3b1d3686a1f5216e06dfc33dc1dccfb2f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -22,7 +22,7 @@ AEM Forms Process Reporting隨附下列現 *成可用的報表* :
 
 * **[流程持續時間圖](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**:依持續時間的指定AEM Forms流程報表
 
-* **[工作流量](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**:按日期列出指定流程的運行和完成實例的報告
+* **[工作流量](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**:按日期列出指定流程的運行實例和已完成實例的報告
 
 ## 長時間運行的進程 {#long-running-processes}
 
@@ -121,4 +121,3 @@ AEM Forms Process Reporting隨附下列現 *成可用的報表* :
    * **變更圖例顏色**:選擇並變更報表圖例的顏色
    * **匯出至CSV**:將報表中的資料匯出並下載至逗號分隔的檔案
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
