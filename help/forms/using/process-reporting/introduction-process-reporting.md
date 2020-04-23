@@ -9,7 +9,7 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -38,7 +38,7 @@ Additional Process Reporting提供了一個介面，可運行臨機查詢，並�
 
 ![站點管理](assets/site-management.png)
 
-查看長期運行的進程清單、進程持續時間圖表，以及使用篩選器運行自定義查詢。
+查看長期運行進程的清單、進程持續時間圖表，以及使用篩選器運行自定義查詢。
 
 「流程報表」也提供以CSV格式匯出報表和查詢資料的選項。
 
@@ -68,4 +68,4 @@ AEM Forms伺服器會並行執行許多程式。 這些程式會持續從一種�
 
 這表示只有具有報告權限的使用者才能存取「流程報告」使用者介面。
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
+
