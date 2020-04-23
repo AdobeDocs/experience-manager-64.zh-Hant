@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ebabecb9-91c4-4991-8f5b-d27f940d2ecb
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -32,11 +32,11 @@ AEM Forms工作區是AEM Forms的一部分。 工作區除了PDF表格外，還�
 
 您可以使用AEM Forms工作區來執行下列工作：
 
-**** 啟動業務流程：AEM Forms工作區可依您組織所設計和設定的程式分類。 您可以將常用類別設為我的最愛，以快速存取類別。 當您啟動流程時，通常會填寫表單，以啟動表單工作流程控制的業務流程。 如需詳細資訊，請參 [閱啟動程式](/help/forms/using/starting-processes.md)。
+**啟動業務流程：** AEM Forms工作區可依您組織所設計和設定的程式分類。 您可以將常用類別設為我的最愛，以快速存取類別。 當您啟動流程時，通常會填寫表單，以啟動表單工作流程控制的業務流程。 如需詳細資訊，請參 [閱啟動程式](/help/forms/using/starting-processes.md)。
 
-**** 檢視並處理工作：當您查看待辦事項清單時，您會看到業務流程中分配給您的任務，或者您所屬的任何組的任務，或者您是其他用戶的共用任務。 您可以視需要開啟、處理和完成工作。 通常，完成工作需要提供資訊、核准表格或拒絕表格。 如需詳細資訊，請 [參閱使用待辦事項清單](/help/forms/using/todo-lists.md)。
+**檢視並處理工作：** 當您查看待辦事項清單時，您會看到業務流程中分配給您的任務，或者您所屬的任何組的任務，或者您是其他用戶的共用任務。 您可以視需要開啟、處理和完成工作。 通常，完成工作需要提供資訊、核准表格或拒絕表格。 如需詳細資訊，請 [參閱使用待辦事項清單](/help/forms/using/todo-lists.md)。
 
-**追蹤工作**:若要追蹤您的工作，請使用AEM Forms工作區的「追蹤」標籤。 您可以搜尋您啟動或參與的作用中或已完成的程式。 您可以檢視屬於流程一部分的工作、指派和表單。 您也可以使用先前啟動之程式的表單資料來啟動新程式。 如需詳細資訊，請參閱 [追蹤程式](/help/forms/using/tracking-processes.md)。
+**追蹤工作**:若要追蹤您的工作，請使用AEM Forms工作區的「追蹤」標籤。 您可以搜索您啟動或參與的活動或已完成的進程。 您可以檢視屬於流程一部分的工作、指派和表單。 您也可以使用先前啟動之程式的表單資料來啟動新程式。 如需詳細資訊，請參閱 [追蹤程式](/help/forms/using/tracking-processes.md)。
 
 ## AEM Forms工作區的全新方案 {#new-offering-of-aem-forms-workspace}
 
@@ -127,7 +127,7 @@ AEM Forms工作區支援多種自訂設定，以更新使用者介面的版面�
 
 自訂 [文章](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) 會說明此類自訂的類型。
 
-### 設定開發人員環境 {#set-up-the-developer-environment}
+### Set up the developer environment {#set-up-the-developer-environment}
 
 AEM Forms工作區交付項目包括部署在CRX上的CRX套件、包含完整原始碼的SDK封存、協力廠商JavaScript程式庫，以及建立AEM Forms工作區的指令碼。 使用這些設定來設定開發人員環境，以執行上述自訂設定。 如需詳細資訊，請參 [閱「建立AEM Forms工作區程式碼](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)」。
 
@@ -142,5 +142,3 @@ AEM Forms工作區交付項目包括部署在CRX上的CRX套件、包含完整�
 ## AEM Forms工作區應用程式 {#aem-forms-workspace-app}
 
 若要在行動裝置上處理您的商業程式，您可以使用AEM Forms的AEM Forms工作區應用程式方案。 如需詳細資訊，請參閱「 [AEM Forms工作區應用程式總覽」](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)。
-
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
