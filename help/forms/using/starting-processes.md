@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -128,4 +128,3 @@ AEM Forms工作區依管理員或流程設計人員設定的類別來組織流�
 
 要將進程標籤為收藏夾，請選擇其類別中的任務，然後按一下空心星形。 這顆星變黃了。 要取消將進程標籤為收藏，請再次按一下金色星形。
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
