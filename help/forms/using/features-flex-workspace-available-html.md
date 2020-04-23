@@ -2,7 +2,7 @@
 title: AEM Forms工作區不提供Flex工作區的功能
 seo-title: AEM Forms工作區不提供Flex工作區的功能
 description: AEM Forms工作區在以Flex為基礎的工作區之外有創新。 閱讀功能與功能的差異。
-seo-description: AEM Forms工作區在Flex工作區以外提供創新。 閱讀功能與功能的差異。
+seo-description: AEM Forms工作區在以Flex為基礎的工作區之外有創新。 閱讀功能與功能的差異。
 uuid: 128729b3-2367-42e8-8159-a080595e8455
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,4 +27,3 @@ AEM Forms工作區是全新的工作區。 以下是AEM Forms工作區中無法�
 * 在AEM Forms工作區中，不會接受為使用者工作設定核准容器或自訂容器。
 * 搜尋範本的選項可在「追蹤」標籤中使用，但在「目標」標籤中則不提供。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
