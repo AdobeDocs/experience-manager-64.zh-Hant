@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -103,7 +103,7 @@ AEM Forms工作區支援管理表單和檔案的任務指派和完成活動。 �
    在「定義活動」對話方塊中，選取適當的活動，例如getLetterInstanceInfo，然後按一下「 **確定**」。
 
 1. 部署應用程式。 如果出現提示登入並儲存資產。
-1. 請登入AEM表單工作區，網址為 `https://[server]:[port]/lc/content/ws`。
+1. 請登入AEM表格工作區，網址為 `https://[server]:[port]/lc/content/ws`。
 1. 開啟您新增的工作，CMRender。 此時將出現「Correportence Management（通信管理）」信函。
 
    ![cminworkspace](assets/cminworkspace.png)
@@ -114,4 +114,3 @@ AEM Forms工作區支援管理表單和檔案的任務指派和完成活動。 �
    >
    >填入字母中的所有必要變數後，「提交」按鈕才會啟用。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
