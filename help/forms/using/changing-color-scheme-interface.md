@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -58,5 +58,3 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 ## 任務元件 {#task-component}
 
 任務顯示在名為TaskList元件的中間面板中。 要更改其顏色，請修改樣式表中與。task選擇器關聯的樣式。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
