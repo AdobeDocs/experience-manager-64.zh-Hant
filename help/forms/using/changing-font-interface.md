@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -74,8 +74,6 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 1. 重新啟動工作區並清除瀏覽器快取，以便顯示變更。
 
-![](assets/change_font_before.png) change_font_before圖&#x200B;****&#x200B;中：字型自 *訂前的頂端導覽列*
+![change_font_before圖](assets/change_font_before.png)**中：** 字型自 *訂前的頂端導覽列*
 
-![](assets/change_font_after.png) change_font_after圖&#x200B;****&#x200B;中：自訂 *第一個標籤的字型後的頂端導覽列*
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
+![change_font_after圖](assets/change_font_after.png)**中：** 自訂 *第一個標籤的字型後的頂端導覽列*
