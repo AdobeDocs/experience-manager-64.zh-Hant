@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -261,7 +261,7 @@ AEM Forms工作區由可重複使 [用的元件組成](/help/forms/using/integra
 
 >[!NOTE]
 >
->TeamFilter獲取指示已從TaskList元件中選擇哪個任務的事件。 雖然這些元件共用模型類，但沒有其它相關性。
+>TeamFilter獲取指示從TaskList元件中選擇了哪個任務的事件。 雖然這些元件共用模型類，但沒有其它相關性。
 
 ## TaskDetails {#taskdetails}
 
@@ -1091,5 +1091,3 @@ AEM Forms工作區由可重複使 [用的元件組成](/help/forms/using/integra
   </tr> 
  </tbody> 
 </table>
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
