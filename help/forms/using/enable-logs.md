@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -171,9 +171,9 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 >b(xfaView):6（用戶指定的TRACE）\
 >a(xfaPerf):2（預設層級錯誤）
 
-### 使用Configuration manager啟用記錄 {#enabling-logging-using-configuration-manager}
+### 使用Configuration Manager啟用記錄 {#enabling-logging-using-configuration-manager}
 
-如果您使用Configuration manager來啟用記錄，則會為每個演算請求產生記錄，直到再次停用記錄。
+如果您使用Configuration Manager來啟用記錄，則會為每個演算請求產生記錄，直到再次停用記錄。
 
 1. 在登入CQ Configuration Manager，並使用 `https://[server]:[port]/system/console/configMgr` 管理員認證登入。
 1. 搜尋並按一下「行 **動表單設定」**。
@@ -204,6 +204,5 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    >
    >要在保存其他日誌檔案的同一目錄中建立日誌，請在「日誌檔案」屬性中指定。./logs/&lt;filename>。
 
-1. 將 **Logger** 變更為 **HTMLFormsPerfLogger** ，然後按一下「 **儲存**」。
+1. 將 **Logger** 變更為 **HTMLFormsPerfLogger** ，然後按一 **下Save**。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
