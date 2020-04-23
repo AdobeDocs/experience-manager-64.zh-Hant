@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -37,7 +37,7 @@ AEM Forms應用程式可讓您將影像、草圖筆記和文字註解附加至�
 
 若要在某個位置查看所有附件，請點選「附 ![件——應用程式」](assets/attachments-app.png)。 您可以在此處添加、更名和刪除附件。
 
-![一個位置中的所有附件](assets/attachments-screen.png)
+![所有附件在一個位置](assets/attachments-screen.png)
 
 您可以使用「附 **件」畫面中** 的+按鈕附加另一張圖片、塗鴉或文字。
 
@@ -68,7 +68,7 @@ AEM Forms應用程式可讓您將影像、草圖筆記和文字註解附加至�
 1. 在啟動的Notes使用者介面中，擷取手繪文字。
 
    ![塗鴉介面](assets/scribble-ui.png)
-   **** 圖：塗鴉 *字*
+   **圖：** 塗鴉 *字*
 
    您可以在塗鴉介面中使用下列選項：
 
@@ -85,5 +85,3 @@ AEM Forms應用程式可讓您將影像、草圖筆記和文字註解附加至�
 從AEM Forms OSGi伺服器載入應用程式中的最適化表單，不支援表單層級附件。 若要附加影像或文字附註，請在您製作表單時啟用欄位層級附件。 從欄位上的元件瀏覽器拖放檔案附件元件。
 
 在最適化表單中，您可以在記錄檔案(DoR)中檢視附加的檔案。 請參 [閱：為非XFA調適性表單產生記錄檔案](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
