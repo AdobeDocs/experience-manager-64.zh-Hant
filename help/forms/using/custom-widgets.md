@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 您可以將自訂Widget插入Mobile Forms。 您可以擴充現有的jQuery Widget，或使用外觀架構開發您自己的自訂Widget。 XFA引擎使用各種Widget，如需詳細資 [訊，請參閱最適化和HTML5表單的](/help/forms/using/introduction-widgets.md) Appearance架構。
 
-![](assets/custom-widgets.jpg) 預設和自訂介面工具集的范&#x200B;****&#x200B;例圖：預 *設和自訂介面工具集的範例*
+![預設和自訂介面工具集的范](assets/custom-widgets.jpg)**例圖：** 預 *設和自訂介面工具集的範例*
 
 ## 將自訂Widget與HTML5表單整合 {#integrating-custom-widgets-with-html-forms}
 
@@ -29,7 +29,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 ### 建立介面工具集 {#create-a-widget}
 
-HTML5表格提供Widget架構的實作，可加以擴充以建立新Widget。 實作是jQuery Widget abstractWidget ** ，可擴充以編寫新Widget。 新介面工具集只能透過擴充／覆寫下列功能，使其發揮功能。
+HTML5表格提供Widget架構的實作，可加以擴充以建立新Widget。 實作是jQuery Widget abstractWidget ** ，可擴充以編寫新Widget。 只有延伸／覆寫下列功能，才能讓新介面工具集運作。
 
 <table> 
  <tbody> 
@@ -100,5 +100,3 @@ window.formBridge.registerConfig("widgetConfig",
 | 具有名稱欄位名的特定欄位 | 識別碼：&quot;div.fieldname&quot; | 所有名稱為「fieldname」的欄位都會使用介面工具集呈現。 |
 | 所有類型為「type」的欄位（其中類型為NumericField、DateField等）。: | 識別碼：&quot;div.type&quot; | 對於Timefield和DateTimeField，類型為textfield，因為不支援這些欄位。 |
 | 所有欄位 | 識別碼：&quot;div.field&quot; |  |
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
