@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -120,7 +120,7 @@ AEM Forms工作區中會使用下列API。
    <td>getAttachment</td> 
    <td>ProcessManagementTaskService</td> 
    <td>getAttachment</td> 
-   <td>它會傳回附件可用的附件URL。</td> 
+   <td>它會傳回附件可用處的附件URL。</td> 
   </tr>
   <tr>
    <td>getAllAttachments</td> 
@@ -401,5 +401,5 @@ AEM Forms工作區中會使用下列API。
  </tbody>
 </table>
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
+
 
