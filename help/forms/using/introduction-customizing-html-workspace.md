@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -124,7 +124,7 @@ CSS自訂的頂層步驟為：
 * 新增樣式項目至此CSS。 如需詳細資訊，請參閱瞭解CSS樣式。
 * 在中更新其引用 `html.jsp`。
 
-如需進行這些自訂的確切步驟，請參閱「AEM Forms工 [作區自訂的一般步驟」](/help/forms/using/generic-steps-html-workspace-customization.md)。 AEM Forms工作區隨附的CSS檔案位於/libs/ws/css/。 若為CSS相關自訂，請使用 [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。 如需CSS相關自訂的特定範例，請參閱本文結尾的相關說明主題。
+如需完整的這些自訂步驟，請參閱「AEM Forms工 [作區自訂的一般步驟」](/help/forms/using/generic-steps-html-workspace-customization.md)。 AEM Forms工作區隨附的CSS檔案位於/libs/ws/css/。 若為CSS相關自訂，請使用 [Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。 如需CSS相關自訂的特定範例，請參閱本文結尾的相關說明主題。
 
 #### 影像 {#image}
 
@@ -378,4 +378,3 @@ mvn clean -P Dev安裝在client-pkg上
 * content.xml
 * _rep_policy.xml
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
