@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -46,5 +46,3 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 如果應用程式已連線，則工作會與AEM Forms伺服器同步，並指派給流程中指定的使用者。
 
 要處理任務清單中的任務，請參 [閱開啟任務](/help/forms/using/open-task.md)。
-
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
