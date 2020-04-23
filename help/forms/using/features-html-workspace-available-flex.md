@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -39,6 +39,5 @@ AEM Forms工作區不僅提供Flex工作區的創新功能，還提供有助於�
 
 ## 支援根據使用者裝置自訂的工作轉譯 {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-AEM Forms工作區支援XDP表單的HTML轉譯。 此支援在根據裝置或使用者代理路由至XDP不同轉譯的轉譯程式中使用時，可讓使用者在行動裝置上以HTML格式檢視XDP表單，並在案頭上以PDF格式檢視XDP表單。 這有助於為在不同設備上工作的不同環境的用戶提供流程管理無縫覆蓋。
+AEM Forms工作區支援XDP表單的HTML轉譯。 此支援在根據裝置或使用者代理路由至不同XDP轉譯的轉譯程式中使用時，可讓使用者在行動裝置上以HTML格式檢視XDP表單，並在案頭上以PDF格式檢視XDP表單。 這有助於為在不同設備上工作的不同環境的用戶提供流程管理無縫覆蓋。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
