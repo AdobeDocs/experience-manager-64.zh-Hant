@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -34,5 +34,3 @@ AEM Forms工作區設計為模組化JavaScript™元件，可個別自訂，並�
 
 * `adobe-lc-workspace-pkg-<version>.zip`:它是CRX包，即，它可以使用包管理器在CRX中部署。
 * `adobe-lc-workspace-<version>-src.zip`:此封存包含AEM Forms工作區的完整程式碼和指令碼，以建立部署套件——發運、除錯和開發套件。
-
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
