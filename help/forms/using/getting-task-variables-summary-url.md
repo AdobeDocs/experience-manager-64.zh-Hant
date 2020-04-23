@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -84,4 +84,3 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 您可以變更摘要版面，而不需修改程式。 HTML轉譯器會適當顯示摘要。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
