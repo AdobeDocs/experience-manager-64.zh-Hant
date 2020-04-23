@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7efc8ad6-2bb1-41a6-ac0b-7f8ddddbf2a6
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 表單工作流程可自動化並提供重要檔案和表單相關商業程式的可見度，進而提高組織效率。 使用「流程管理」模組，您可以建立簡化的端對端工作流程— 包括人員、系統、內容和業務規則— 線上或離線存取。Forms工作流程包含AEM Forms工作區。 AEM Forms工作區新增了擴充和整合工作區的功能，讓工作區更方便使用。
 
-AEM Forms工作區可與更多裝置和表單元素相容。 它可讓用戶端不需使用Flash® player和Adobe® Reader®進行工作管理。 除了PDF表單外，還可協助轉譯HTML表格。
+AEM Forms工作區可與更多裝置和表單元素相容。 它可讓用戶端不需使用Flash® Player和Adobe® Reader®進行工作管理。 除了PDF表格外，還可協助轉譯HTML表格。
 
 ![html-ws](assets/html-ws.png)
 
@@ -30,4 +30,3 @@ AEM Forms工作區可與更多裝置和表單元素相容。 它可讓用戶端�
 * 使用AEM Forms工作區應用程式，將商業程式延伸至線上和線下行動工作者。
 * 檢視報告以監控積壓記錄、工作佇列和關鍵績效指標(KPI)。 您可以使用API擷取資料，以利使用協力廠商報告工具進行進一步分析。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
