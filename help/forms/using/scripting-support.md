@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -119,7 +119,7 @@ HTML5表單中支援的JavaScript、FormCalc屬性和方法列於下列：
   <tr> 
    <td><code>version</code></td> 
    <td>傳回代表目前應用程式版本號碼的字串。</td> 
-   <td>它會傳回表單版本。</td> 
+   <td>它會傳回表單的版本。</td> 
   </tr> 
   <tr> 
    <td><code>calculationsEnabled</code></td> 
@@ -1140,7 +1140,7 @@ FormCalc是XFA專用的語言，用於建立e-form中心邏輯和計算根。 Fo
      <li>邏輯（及／或）</li> 
      <li>比較（大／小/等）</li> 
     </ul> </td> 
-   <td>A或1<br /> 1 &lt;&gt; 2<br /> A NE B<br /> a或1<br /><br /> 1 &lt;&gt; 2 A NE B</td> 
+   <td>A或1<br /> 1 &lt;&gt; 2<br /> A NE B<br /> A或1<br /><br /> 1 &lt;&gt; 2 A NE B</td> 
   </tr> 
   <tr> 
    <td>If運算式</td> 
@@ -1351,5 +1351,3 @@ FormCalc是XFA專用的語言，用於建立e-form中心邏輯和計算根。 Fo
 >[!NOTE]
 >
 >HTML5表格會在用戶端（瀏覽器）上轉譯。 建議使用用戶端驗證 **和計算****指令碼** ，而非伺服器端指令碼。
-
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
