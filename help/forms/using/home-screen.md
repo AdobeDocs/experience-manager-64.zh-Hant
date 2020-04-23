@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -40,4 +40,3 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 不過，在HTML Workspace中所做的變更會影響所有登入AEM Forms伺服器的AEM Forms應用程式使用者。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
