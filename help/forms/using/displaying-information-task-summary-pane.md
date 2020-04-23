@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -50,6 +50,3 @@ AEM Forms工作區可讓您在「任務摘要」窗格中顯示您選擇的網�
 
    * 設定任務摘要URL的值，如「分配任 `/lc/content/SampleSummary.html` 務」步驟中。
    * 當在AEM Forms工作區中開啟與此「指派任務」步驟相關聯的工作時， `html.esp` at會 `/apps/SampleSummary` 在任務摘要窗格中呈現。
-
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
