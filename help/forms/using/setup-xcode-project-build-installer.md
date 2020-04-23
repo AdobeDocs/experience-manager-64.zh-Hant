@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 2dec23f7-6cca-4cc9-a78a-acd23ae7da5f
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,7 +27,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 1. 下載來源套件。 當您下載套件時，它會新增至您的AEM Forms套件管理員。
 1. 下載後，導覽至：和 `https://<server>:<port>/crx/packmgr/index.jsp`安裝 `adobe-aemfd-forms-app-src-pkg-<version>.zip`。
 
-1. 若要下載原始碼封存，請在您的瀏 `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` 覽器中開啟。
+1. 若要下載原始碼封存檔，請在您的瀏 `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` 覽器中開啟。
 
    來源套件會下載在您的裝置上。
 
@@ -121,7 +121,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 
    >[!NOTE]
    >
-   >只有當AEM Forms應用程式需要連線至未遵循App Transport security要求的伺服器時，才需要此步驟。
+   >只有當AEM Forms應用程式需要連線至未遵循App Transport Security要求的伺服器時，才需要此步驟。
 
 1. 在 **PROJECT下**，選擇 **AEM Forms** ，並確保為 **Signing Identity**, DebugDebugIntity,ReleaseAndAny iOS SDK ************&#x200B;選擇適當的簽名。
 1. 將布建的iPad連接至Mac電腦。
@@ -132,7 +132,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
    已選取已布建的iPad Air 2裝置。
 
 1. 選擇「 **產品** 」>「清 **除」**。
-1. 選擇「 **產品** 」>「 **構建」**。
+1. 選擇 **產品** > **構建**。
 
 ## 建立AEM Forms應用程式的安裝程式 {#build-the-installer-for-the-mobile-workspace-app}
 
@@ -146,7 +146,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
    已選取已布建的iPad Air 2裝置。
 
 1. 選擇「 **產品** 」>「清 **除」**。
-1. 選擇「 **產品** 」>「 **構建」**。
+1. 選擇 **產品** > **構建**。
 1. 選擇「 **產品** >存 **檔」**。
 1. 在「組織工具——封存」中，選取專案的最新封存，然後按一下「分 **發」**。
 1. 選 **擇「儲存為企業用」或「臨機部署** 」做為散發方法，然後按一下「下 **一步」**。
@@ -156,10 +156,8 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 1. 在「標 **題** 」欄位中，指定AEM Forms。
 1. 按一 **下「儲存** 」並關閉Xcode。
 
-   安裝程式檔 `AEM Forms.ipa`案和屬性清單檔案 `AEM Forms-info.plist`會在指定的位置建立。
+   安裝程式檔 `AEM Forms.ipa`案和屬性清單檔案 `AEM Forms-info.plist`會建立在指定的位置。
 
 1. 在編輯器 `AEM Forms-info.plist` 中開啟檔案。
 1. 將。ipa檔案URL中的所有空格取代為%20。
 1. 儲存並關閉 `AEM Forms-info.plist` 檔案。
-
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
