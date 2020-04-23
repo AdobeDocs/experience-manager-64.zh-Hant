@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -138,7 +138,7 @@ To
                        <%}%>
    ```
 
-1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱不同，請在中修改以下代碼 `/apps/ws/js/runtime/templates/taskdetails.html`。 它添加一堆 `if-else` servlet條件，用路由操作名映射樣式。
+1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱不同，請在中修改以下代碼 `/apps/ws/js/runtime/templates/taskdetails.html`。 它添加一堆 `if-else` servlet條件，以用路由操作名映射樣式。
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -172,4 +172,3 @@ To
 1. 將文字取代為：\
    `"text!/lc/apps/ws/js/runtime/templates/taskdetails.html"`
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
