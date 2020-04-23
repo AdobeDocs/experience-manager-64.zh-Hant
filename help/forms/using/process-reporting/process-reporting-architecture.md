@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: 4afc68fc-6b39-4c31-95fa-2ef3111c57da
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -74,4 +74,3 @@ QueryDataServlet服務接受來自Process Reporting用戶介面的查詢。
 
 如需建立自訂報表的步驟，請參閱「在流程報表中自訂報表」文章中的「 [若要建立自訂報表」](/help/forms/using/process-reporting/process-reporting-custom-reports.md)。
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
