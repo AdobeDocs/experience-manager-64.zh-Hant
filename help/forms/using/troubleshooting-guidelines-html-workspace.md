@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
 
 ---
 
@@ -107,7 +107,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
    <td><p>userinfoModel</p> </td> 
   </tr> 
   <tr> 
-   <td><p>outofofficeModel</p> </td> 
+   <td><p>outofoficeModel</p> </td> 
    <td><p>startpointlistView</p> </td> 
    <td><p>userinfoView</p> </td> 
   </tr> 
@@ -192,5 +192,3 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 1. 在AEM Forms工作區中轉譯時，使用「流程屬性」在其設計中的HTML表單，會在表單中顯示「提交」按鈕。
 
    在設計表單時，當您使用「流程屬性」時，會在表單中新增「提交」按鈕。 當在AEM Forms工作區中轉譯為PDF時，一般使用者看不到「提交」按鈕。 不過，當在AEM Forms工作區中以HTML表格呈現時，一般使用者會看到「提交」按鈕。 在表單內按一下此「提交」按鈕不會啟動任何動作。 按一下AEM Forms工作區底部的「送出」按鈕（在表單外部），即可完成工作。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
