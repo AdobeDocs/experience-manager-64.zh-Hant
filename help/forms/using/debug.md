@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -113,7 +113,7 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 1. 請確定您擁有存取AEM伺服器的權限，而且您已連線至伺服器。
 1. 檢查參數submitUrl是否正確。
-1. 使用偵錯選項( [1-a5-b5-c5)，啟用HTML5表單的記錄檔](/help/forms/using/enable-logs.md) ( **Logs)中所述的用戶端記錄檔**。 然後演算表格，然後按一下「送出」。 開啟瀏覽器除錯主控台，並檢查是否有錯誤。
+1. 使用除錯選項( [1-a5-b5-c5)，啟用HTML5表單的記錄檔](/help/forms/using/enable-logs.md) ( **Logs)中所述的用戶端記錄檔**。 然後演算表格，然後按一下「送出」。 開啟瀏覽器除錯主控台，並檢查是否有錯誤。
 1. 如HTML5表單的記錄檔中 [所述，尋找伺服器記錄檔](/help/forms/using/enable-logs.md)。 檢查提交期間伺服器日誌中是否有任何錯誤。
 
 ## 問題：不顯示本地化的錯誤訊息 {#problem-localized-error-messages-do-not-display}
@@ -178,5 +178,3 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 1. 在案頭瀏覽器中，前往「開發人員工具->資源」。
 
    如果顯示影像，請在「影格」的左側檢查。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
