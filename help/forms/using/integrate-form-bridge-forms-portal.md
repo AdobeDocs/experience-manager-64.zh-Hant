@@ -1,6 +1,6 @@
 ---
-title: 將Form bridge與HTML5表單的自訂入口網站整合
-seo-title: 將Form bridge與HTML5表單的自訂入口網站整合
+title: 將Form Bridge與HTML5表單的自訂入口網站整合
+seo-title: 將Form Bridge與HTML5表單的自訂入口網站整合
 description: 您可以使用FormBridge API從HTML頁面取得或設定表單欄位的值，並送出表單。
 seo-description: 您可以使用FormBridge API從HTML頁面取得或設定表單欄位的值，並送出表單。
 uuid: 09f2189f-d584-4b84-895e-22833b6b17e3
@@ -9,12 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
-# 將Form bridge與HTML5表單的自訂入口網站整合 {#integrating-form-bridge-with-custom-portal-for-html-forms}
+# 將Form Bridge與HTML5表單的自訂入口網站整合 {#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 FormBridge是HTML5 Forms Bridge API，可讓您與表單互動。 如需FormBridge API參考，請參閱 [FormBridge API參考](/help/forms/using/form-bridge-apis.md)。
 
@@ -101,4 +101,3 @@ FormBridge是HTML5 Forms Bridge API，可讓您與表單互動。 如需FormBrid
            });
    ```
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
