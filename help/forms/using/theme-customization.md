@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -35,7 +35,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
    * 在Xcode中，導覽至「 **Capture > www > wsmobile > js > runtime > templates** 」檔案夾。
    * 在Eclipse中，導覽至「資 **產> www > wsmobile > js >執行階段>範本」資料夾** 。
-   * 在Visual studio中，導覽至「 **MWSwindows > www > wsmobile > js > runtime > templates」檔案夾** 。
+   * 在Visual Studio中，導覽至「 **MWSwindows > www > wsmobile > js > runtime > templates」檔案夾** 。
 
 1. 開啟檔 `template.html` 案以進行編輯。
 1. 找到下列字串：
@@ -62,7 +62,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
                                    </li>
    ```
 
-1. 注釋下列行並保存檔案。
+1. 注釋以下行並保存檔案。
 
    ```
    task.availableCommands.directCommands[1]%>">
@@ -74,7 +74,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
    * 在Xcode中，導覽至「 **Capture > www > wsmobile > css」**。
    * 在Eclipse中，導覽至 **資產> www > wsmobile > css**。
-   * 在Visual studio中，導覽至 **MWSwindows > www > wsmobile > css**。
+   * 在Visual Studio中，導覽至 **MWSwindows > www > wsmobile > css**。
 
 1. 開啟檔 `_style.css` 案以進行編輯。
 1. 對於「背景」影像，請 `#323232` 變更為 `#fff`。
@@ -83,4 +83,3 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
    AEM Forms應用程式現在會顯示指示而非說明。
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
