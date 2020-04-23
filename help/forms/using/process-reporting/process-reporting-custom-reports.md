@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -29,7 +29,7 @@ source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
 
 ## 使用QueryBuilder的REST介面 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX queryBuilder REST介面透過Java API和REST API公開「資產共用查詢產生器」的功能。 在執行下列步驟之 [前，瞭解如何使用CRX QueryBuilder REST介面](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html):
+CRX QueryBuilder REST介面透過Java API和REST API公開「資產共用查詢產生器」的功能。 在執行下列步驟之 [前，瞭解如何使用CRX QueryBuilder REST介面](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html):
 
 1. 瀏覽至URL `https://[server]:[port]/lc/bin/querybuilder.json`
 
@@ -438,7 +438,7 @@ public class PeriodicProcessVolume {
 
 1. （可選）將適當的錯誤處理常式新增至Ajax呼叫。
 
-同時使用OSGi service和QueryBuilder API的範例JSP程式碼為：
+同時使用OSGi Service和QueryBuilder API的範例JSP程式碼為：
 
 ```
 <%@taglib prefix="sling" uri="https://sling.apache.org/taglibs/sling/1.0"%>
@@ -635,7 +635,7 @@ response.setCharacterEncoding("utf-8");
 1. 依「建立個別UI」區段中 [所述建立個別UI](#creating-a-separate-ui-nbsp) 。
 1. 在節點上為每 `nt:unstructured` 個可插拔報告 `/content/process-reporting-runtime/custom-reports` 建立子節點。
 
-   * **id**—— 指定報表的唯一標識號。
+   * **id**—— 指定報表的唯一識別碼。
    * **name**—— 指定報表的名稱。 名稱會顯示在UI中。
    * **link**—— 指定個別UI轉譯器的相對連結。 該連結建立步驟1。
    * **description**—— 指定報表的一行說明。 您可將說明欄位保留為空白。
@@ -660,4 +660,3 @@ response.setCharacterEncoding("utf-8");
 
 [取得檔案](assets/sample-report-pkg-1.zip)
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
