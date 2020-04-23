@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 ## 若要在AEM Forms應用程式中自訂手勢 {#to-customize-gestures-in-aem-forms-app}
 
-在AEM Forms應用程式中，左側滑動會開啟新工作或「起點」，而右側滑動則不會執行任何動作。 下列範例提供在AEM Forms應用程式中執行右滑動手勢時開啟新工作或「起點」的步驟。
+在AEM Forms應用程式中，左側滑動會開啟新工作或「起點」，而右側滑動則無效。 下列範例提供在AEM Forms應用程式中執行右滑動手勢時開啟新工作或「起點」的步驟。
 
 1. 開啟您的專案。
 
@@ -33,7 +33,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
    * 在Xcode中，導覽至「 **Capture > www > wsmobile > js >執行階段>檢視」資料夾** 。
    * 在Eclipse中，導覽至「資 **產> www > wsmobile > js >執行階段>檢視資料夾** 」。
-   * 在Visual studio中，導覽至「 **MWSwindows > www > wsmobile > js > runtime > views** 」檔案夾。
+   * 在Visual Studio中，導覽至「 **MWSwindows > www > wsmobile > js > runtime >檢視」檔案夾** 。
    >[!NOTE]
    >
    >task.js檔案包含與任務或「起點」清單中列出的每個任務或「起點」相關聯的主幹視圖。
@@ -71,4 +71,3 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 同樣地，您也可以針對各種手勢、HTML元素和函陣列合，在其他檢視中進行變更。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
