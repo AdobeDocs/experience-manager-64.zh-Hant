@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -44,4 +44,3 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 1. 含有編輯圖示的表 ![單edit-draft-app](assets/edit-draft-app.png) 表示草稿。 點選草稿旁的水準省略號。
 1. 在點選水準省略號時出現的選項中，點選「刪除草稿」 **(Delete Draft**)。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
