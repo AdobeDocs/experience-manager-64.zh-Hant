@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -171,7 +171,7 @@ ProcessDataPublisher服務從AEM Forms資料庫導入流程資料，並將資料
 
    預設URL為 `https://[server]:port]/adminui/`。
 
-1. 導航至「 **Services** > **Services** > Applications and Services **>********** Open Management And Open The Publisher Service service資料」。
+1. 導航至「 **Services** > **Services** > Applications and Services **>********** Open Management And Open The Publisher Service Service資料」。
 
 ![processdatapublisherservice-1](assets/processdatapublisherservice-1.png)
 
@@ -247,40 +247,40 @@ AEM Forms環境包含環境設定時的資料。
 
 ![process-reporting-home-screen](assets/process-reporting-home-screen.png)
 
-**** 流程報告樹視圖：主螢幕左側的樹視圖包含「流程報告」模組的項。
+**流程報告樹視圖：** 主螢幕左側的樹視圖包含「流程報告」模組的項。
 
 樹視圖由下列頂層項目組成：
 
-**** 報表：此項目包含隨「流程報告」一起提供的現成報表。
+**報表：** 此項目包含隨「流程報告」一起提供的現成報表。
 
 有關預定義報表的詳細資訊，請參 [閱「在處理中預定義報表」](pre-defined-reports-in-process-reporting.md)。
 
-**** 臨機查詢：此項目包含對進程和任務執行基於篩選的搜索的選項。
+**臨機查詢：** 此項目包含對進程和任務執行基於篩選的搜索的選項。
 
 如需臨機查詢的詳細資訊，請參 [閱「處理中的臨機查詢」](adhoc-queries-in-process-reporting.md)。
 
-**** 自訂：「自訂」節點會顯示您建立的自訂報表。
+**自訂：** 「自訂」節點會顯示您建立的自訂報表。
 
 如需建立和顯示自訂報表的程式，請參閱「 [流程報表中的自訂報表」](/help/forms/using/process-reporting/process-reporting-custom-reports.md)。
 
-**** 流程報告標題欄：「流程報表」標題列包含一些在使用者介面中工作時可使用的一般選項。
+**流程報告標題欄：** 「流程報表」標題列包含一些在使用者介面中工作時可使用的一般選項。
 
-**** 流程報告標題：「流程報表」標題會顯示在標題列的左角。
+**流程報告標題：** 「流程報表」標題會顯示在標題列的左角。
 
 隨時按一下標題，返回「首頁」畫面。
 
-**** 上次更新時間：流程資料會從AEM Forms資料庫以排程方式發佈至「流程報表」儲存庫。
+**上次更新時間：** 流程資料會從AEM Forms資料庫以排程方式發佈至「流程報表」儲存庫。
 
 「上次更新時間」會顯示資料更新推送至「流程報表」儲存庫的最後日期和時間。
 
 有關資料發佈服務以及如何計畫此服務的詳細資訊，請參閱「流程報告快速入門 [」中的](/help/forms/using/process-reporting/install-start-process-reporting.md#p-schedule-process-data-publishing-p) 「計畫流程資料發佈」。
 
-**** 流程報告用戶：登入的使用者名稱會顯示在「上次更新」時間的右側。
+**流程報告用戶：** 登入的使用者名稱會顯示在「上次更新」時間的右側。
 
-**** 處理報表標題列下拉式清單：「流程報表」標題列右角的下拉式清單包含下列選項：
+**處理報表標題列下拉式清單：** 「流程報表」標題列右角的下拉式清單包含下列選項：
 
 * **[!UICONTROL 同步]**:將內嵌的Process Reporting儲存庫與AEM Forms資料庫同步。
 * **[!UICONTROL 說明]**:查看有關流程報告的幫助文檔。
 * **[!UICONTROL 註銷]**:註銷進程報告
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
+
