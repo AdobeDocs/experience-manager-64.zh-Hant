@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -44,5 +44,3 @@ MDM管理員可以將ipa和apk檔案上傳到MDM伺服器，並控制可以訪�
 * **在「密碼策略」部分** ，要求設備上的密碼
 
 若要啟 **用應用程式資料加密**，建議您在裝置上啟 **用密碼** 。 如果未在裝置上設定密碼，儲存在裝置上的應用程式資料將不會加密。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
