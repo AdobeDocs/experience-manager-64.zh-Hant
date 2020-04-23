@@ -1,15 +1,15 @@
 ---
 title: 流程報告中的臨機查詢
 seo-title: 流程報告中的臨機查詢
-description: 建立自訂查詢，以在「流程報表」中搜尋JEE流程上的AEM表單和任務詳細資訊
-seo-description: 建立自訂查詢，以在「流程報表」中搜尋JEE流程上的AEM表單和任務詳細資訊
+description: 建立自訂查詢，以在「流程報表」中搜尋JEE流程上的AEM Forms和任務詳細資訊
+seo-description: 建立自訂查詢，以在「流程報表」中搜尋JEE流程上的AEM Forms和任務詳細資訊
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -187,7 +187,7 @@ source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
 
    ![process_details](assets/process_details.png)
 
-   **** 左面板：顯示所選進程的以下詳細資訊：
+   **左面板：** 顯示所選進程的以下詳細資訊：
 
    * 進程名稱
    * 流程建立日期時間
@@ -195,7 +195,7 @@ source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
    * 處理持續時間
    * 進程狀態
    * 進程啟動器
-   **** 右上方面板：顯示組成選定進程的任務的以下詳細資訊：
+   **右上方面板：** 顯示組成選定進程的任務的以下詳細資訊：
 
    * 任務ID
    * 任務名稱
@@ -205,7 +205,7 @@ source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
    * 任務完成日期時間
    * 任務持續時間
    * 任務狀態
-   **** 右下面板：顯示所選進程的進程歷史記錄的以下詳細資訊：
+   **右下面板：** 顯示所選進程的進程歷史記錄的以下詳細資訊：
 
    * 進程名稱
    * 進程啟動器
@@ -216,7 +216,7 @@ source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
 
    ![task_details](assets/task_details.png)
 
-   **** 左面板：顯示所選任務的以下詳細資訊：
+   **左面板：** 顯示所選任務的以下詳細資訊：
 
    * 任務名稱
    * 此任務所屬的進程ID
@@ -226,13 +226,13 @@ source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
    * 任務持續時間
    * 任務狀態
    * 選定的任務路由
-   **** 右上方面板：顯示組成選定任務的表單的以下詳細資訊：
+   **右上方面板：** 顯示組成選定任務的表單的以下詳細資訊：
 
    * 表單ID
    * 表單建立日期時間
    * 表單更新日期時間
    * 表單範本Url
-   **** 右下面板：顯示所選任務的流程歷史記錄的以下詳細資訊：
+   **右下面板：** 顯示所選任務的流程歷史記錄的以下詳細資訊：
 
    * 任務分配類型
    * 任務所有者
@@ -266,4 +266,4 @@ source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
 
    對於任務，查詢結果將顯示任務中包含的表單的詳細資訊。
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
+
