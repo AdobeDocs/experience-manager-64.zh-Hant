@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -90,4 +90,3 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
    存取URL並 `https://[server]:[port]/lc/ws` 使用管理員／密碼憑證登入。 瀏覽器會重新導向 `https://[server]:[port]/lc/apps/ws/index.html`至。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
