@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -62,7 +62,7 @@ HTML5表格在觸控裝置上的運用越來越多，而支援簽名是其中一
 
 ![地理位置](assets/geolocation.png)
 
-******** 答：筆刷 **B.橡皮**&#x200B;擦C.**Geolocation** D.地理位置資訊
+**答：** 筆刷 **B.** 橡皮 **擦C.** Geolocation **D.** 地理位置資訊
 
 ### 地理標籤 {#geo-tagging}
 
@@ -100,5 +100,3 @@ HTML5表格在觸控裝置上的運用越來越多，而支援簽名是其中一
 
 * （行動裝置）長按簽名欄位，在確認對話方塊中點選「 **是」**。
 * （案頭）將滑鼠指標暫留在簽名欄位上，按一下「 **取消** 」圖示，然後在確認對話方塊上，按一下「 **是」**。
-
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
