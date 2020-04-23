@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -83,5 +83,3 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 1. 通過Workbench部署DSC。 重新啟動 `ProcessManagementClientSessionService` 服務。
 1. 您可能必須重新整理瀏覽器或再次向使用者登出／登入。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
