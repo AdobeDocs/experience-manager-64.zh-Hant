@@ -1,22 +1,22 @@
 ---
 title: HTML5 Forms服務代理
 seo-title: HTML5 Forms服務代理
-description: HTML5 Forms Service proxy是一種設定，可註冊提交服務的Proxy。 若要設定服務代理，請透過request參數submissionServiceProxy指定提交服務的URL。
-seo-description: HTML5 Forms Service proxy是一種設定，可註冊提交服務的Proxy。 若要設定服務代理，請透過request參數submissionServiceProxy指定提交服務的URL。
+description: HTML5 Forms Service Proxy是一種設定，可註冊提交服務的Proxy。 若要設定服務代理，請透過request參數submissionServiceProxy指定提交服務的URL。
+seo-description: HTML5 Forms Service Proxy是一種設定，可註冊提交服務的Proxy。 若要設定服務代理，請透過request參數submissionServiceProxy指定提交服務的URL。
 uuid: 03ee7dea-d23e-4600-8b0a-698f4530b889
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # HTML5 Forms服務代理 {#html-forms-service-proxy}
 
-HTML5 Forms Service proxy是一種設定，可註冊提交服務的Proxy。 若要設定「服務代理」，請透過request參數submissionServiceProxy指定提交服務 *的URL*。
+HTML5 Forms Service Proxy是一種設定，可註冊提交服務的Proxy。 若要設定「服務代理」，請透過request參數submissionServiceProxy指定提交服務 *的URL*。
 
 ## 服務代理的優點 {#benefits-of-service-proxy-br}
 
@@ -31,7 +31,7 @@ HTML5 Forms Service proxy是一種設定，可註冊提交服務的Proxy。 若�
 
 HTML5表格可使用下列拓撲來連線至AEM伺服器。
 
-* AEM server或HTML5表單透過POST傳送資料至伺服器的拓撲。
+* AEM Server或HTML5表單透過POST傳送資料至伺服器的拓撲。
 * 代理伺服器向伺服器發送POST資料的拓撲。
 
 ![HTML5表單服務代理拓撲](assets/topology.png)
@@ -133,4 +133,3 @@ HTML5表格會連線至AEM伺服器，以執行伺服器端的指令碼、web-se
 
 * 在傳送資料（POST要求）至伺服器之前，HTML5表格會確認伺服器的連線性與可用性。 為了驗證連線性和可用性，HTML表格會傳送空標頭要求至伺服器。 如果伺服器可用，HTML5表單會傳送資料（POST要求）至伺服器。 如果伺服器不可用，則會顯示錯 *誤訊息「無法連線至伺服器* 」。 進階偵測可避免使用者重新填寫表格的麻煩。 代理servlet處理頭請求且不拋出異常。
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
