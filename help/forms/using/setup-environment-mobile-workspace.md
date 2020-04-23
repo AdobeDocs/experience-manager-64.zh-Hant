@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,13 +23,13 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 * Microsoft Windows 8.1或Windows 10
 * Microsoft Visual Studio 2015
-* 適用於Apache Cordova的Microsoft Visual studio工具
+* 適用於Apache Cordova的Microsoft Visual Studio工具
 
 ## 適用於iOS裝置 {#for-ios-devices}
 
 * 執行Mac OS X 10.9.5或更新版本的Intel架構Apple Mac
 * iOS SDK 8.4或更新版本
-* Xcode版本：Xcode 6.4 for OS x或更新版本
+* Xcode版本：Xcode 6.4 for OS X或更新版本
 * iOS Developer Enterprise計畫的會員資格
 * 散發內建iOS應用程式的企業憑證
 * 含iOS 8.4或更新版本的Apple iPad
@@ -43,5 +43,3 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 >[!NOTE]
 >
 >adobe-lc-mobileworkspace-src.zip包含PhoneGap SDK 5.0。請確定未預先安裝PhoneGap SDK。
-
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
