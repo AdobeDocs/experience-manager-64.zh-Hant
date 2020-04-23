@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -118,4 +118,3 @@ AEM Forms僅限使用者存取使用者擁有存取控制(ACL)的工作。 這�
 
 存取直接報表的工作並處理工作
 
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
