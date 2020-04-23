@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -83,14 +83,14 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    * BillDetails
    * 客戶詳細資訊
    * BillSummary
-   * 摘要——選擇子 **表單** (Subform **)頁籤，然後從此子表單的「內容」(Content** )下拉清單中選擇「定位」(Positioned **** )。 在「摘要」子表單中插入 **以下子表** 單。
+   * 摘要——選擇子 **表單** (Subform **)頁籤，然後從此子表單的「內容** 」(Content **** )下拉清單中選擇「定位」(Positioned)。 在「摘要」子表單中插入 **以下子表** 單。
 
       * 費用
       * 圖表
    * ItemisedCalls
    * PayNow
    * ValueAddedServices
-   為節省時間，您也可以複製並貼上現有的子表單，以建立新的子表單。
+   為節省時間，您也可以複製並貼上現有的子表單以建立新的子表單。
 
    要將 **Charts** 子表單移到Charges子表單的右側，請從左窗格中選擇 **Charts** 子表單，選擇 **Layout** 頁籤，然後為 **** XAnchor欄位指定值。 值必須大於Charges子表單的 **Width** 欄位 **的值** 。 選擇「 **費用** 」子表單，然後選擇「 **佈局** 」頁籤以查看「寬 **度** 」欄位的值。
 
@@ -109,7 +109,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 使用Forms Designer建立XDP範本後，您必須將它上傳至AEM Forms伺服器，以便在建立互動通訊時使用範本。
 
-1. 選擇「 **表單** 」>「 **表單與檔案」**。
+1. 選擇「 **[!UICONTROL 表單]** 」>「 **[!UICONTROL 表單與檔案」]**。
 1. 點選「 **建立** >檔案 **上傳」**。
 
    導覽並選取 **create_first_ic_print_template** 範本(XDP)，然後點選 **Open** ，將XDP範本匯入AEM Forms伺服器。
@@ -134,7 +134,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    同樣地，將 **Cell2**、 **Cell3、Cell3**、 **Cell4、TimeCell4、** TimeCell Number、CellNumber、CellDeserCharges分別重新命名為Cell2、 **Cell3、Cell3、Cell4、****************** Cell5。
 
-1. 按一下「設計器」( **View** )中的「頁首」(Header)欄位，並將它們更名為「 **Time**」（時間）、「 **Number**」（編號）、「Acchirgs」（持續時間）和「Charges ********」（收費）。
+1. 按一下「設計器」( **View** )中的「頁首」(Header)欄位，並將它們更名為 **Time**、 **Number**、Duration和Charges ******** Charges。
 
    ![layout_fragment_print](assets/layout_fragment_print.png)
 
@@ -172,7 +172,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 1. 點選「 **工具** >設 ![](https://helpx.adobe.com/content/dam/help/en/aem-forms/icons/Tools.png) 定瀏覽器 ****」。
 1. 在「設定瀏覽器」頁面中，點選「 **建立**」。
-1. 在「創 **建配置** 」對話框中，指定 **Create_First_IC_templates** 作為資料夾的標題，選中「 **Editable Templates**」，然後 ****&#x200B;點選「建立」。
+1. 在「創 **建配置** 」對話框中，指定 **Create_First_IC_templates** 作為資料夾的標題，選中「可編輯模板 **」，然後******&#x200B;點選「建立」。
 
    ![create_first_ic_web_template](assets/create_first_ic_web_template.png)
 
@@ -208,7 +208,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    ![template_editor_initial_content](assets/template_editor_initial_content.png)
 
-1. 點選 **「Root Panel** （根面板）」，然 **** 後點選+以檢視您可新增至範本的元件清單。
+1. 點選 **「根面板** 」，然後點選 **** +以檢視可新增至範本的元件清單。
 1. 從清 **單中選擇** 「面板」，在「根面板」上方新 **增面板**。
 1. 在左窗格 **中選擇** 「內容」標籤。 在步驟8中新增的新面板會顯示在內容樹 **的「根面板** 」下方。
 
@@ -221,7 +221,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    1. 在「 **標題** 」欄位中指定「清單詳細資訊」。
    1. 從 **「欄** 數 **** 」下拉式清單中選取1。
    1. 點選 ![done_icon](assets/done_icon.png) 以儲存屬性。
-   面板的名稱會更新為內容樹 **中的Bill Details** 。
+   面板的名稱會更新為內容樹 **中的Bill Details** （清單詳細資訊）。
 
 1. 重複步驟7 - 11，將具有下列屬性的面板新增至範本：
 
