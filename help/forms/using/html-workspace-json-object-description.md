@@ -1,15 +1,15 @@
 ---
 title: AEM Forms工作區JSON物件說明
 seo-title: AEM Forms工作區JSON物件說明
-description: LiveCycle AEM Forms工作區中用於自訂、擴充、修改及重複使用之JSON javaScript物件的概念性資訊。
-seo-description: LiveCycle AEM Forms工作區中用於自訂、擴充、修改及重複使用之JSON javaScript物件的概念性資訊。
+description: LiveCycle AEM Forms工作區中用於自訂、擴充、修改及重複使用之JSON JavaScript物件的概念性資訊。
+seo-description: LiveCycle AEM Forms工作區中用於自訂、擴充、修改及重複使用之JSON JavaScript物件的概念性資訊。
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -222,7 +222,7 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>serializedImageTicket<br /> </td> 
    <td>F</td> 
-   <td>它包含與任務對應的映像票證。 <br /> 此映像票證用於任務的imageUrl欄位中，以從伺服器獲取任務的映像。 <br /> </td> 
+   <td>它包含與任務對應的映像票證。 此映像票證用於任務的imageUrl欄位中，以從伺服器獲取任務的映像。<br /> <br /> </td> 
   </tr>
   <tr>
    <td>serviceName<br /> </td> 
@@ -851,5 +851,3 @@ AEM Forms工作區中使用的JSON物件說明如下。
   </tr>
  </tbody>
 </table>
-
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
