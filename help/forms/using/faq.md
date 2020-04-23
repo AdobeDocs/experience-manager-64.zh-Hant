@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: fbe70162-ced6-4989-9322-e12772edbcbc
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ HTML5表格的版面配置、指令碼支援和範圍有一些常見問題(FAQ)�
 
 1. 為什麼條碼和簽名欄位不會出現在我的表單中？
 
-   答案：條碼和簽名欄位與HTML或行動藍本無關。 這些欄位會顯示為非互動區域。 不過，AEM Forms Designer提供新的簽名塗鴉欄位，可供使用，而非簽名欄位。 您也可以新增條碼的 [自訂介面工具集](/help/forms/using/custom-widgets.md) ，並加以整合。
+   答案：條碼和簽名欄位與HTML或行動情境無關。 這些欄位會顯示為非互動區域。 不過，AEM Forms Designer提供新的簽名塗鴉欄位，可供使用，而非簽名欄位。 您也可以新增條碼的 [自訂介面工具集](/help/forms/using/custom-widgets.md) ，並加以整合。
 
 1. XFA文字欄位是否支援豐富式文字？
 
@@ -99,11 +99,11 @@ HTML5表格的版面配置、指令碼支援和範圍有一些常見問題(FAQ)�
 
 1. vAlign和hAlign屬性是否支援HTML表單？
 
-   是的，支援vAlign和hAlign屬性。 vAlign屬性不受Internet explorer和多行欄位的支援。
+   是的，支援vAlign和hAlign屬性。 vAlign屬性不受Internet Explorer和多行欄位的支援。
 
 1. HTML5表格是否支援希伯來文字元？
 
-   HTML5表單支援除Microsoft Internet explorer外的所有瀏覽器中的希伯來文字元。
+   HTML5表單支援除Microsoft Internet Explorer外的所有瀏覽器中的希伯來文字元。
 
 1. HTML5表單對數值欄位有任何限制嗎？
 
@@ -131,7 +131,7 @@ HTML5表格的版面配置、指令碼支援和範圍有一些常見問題(FAQ)�
    答案：是的，可訪問的表具有以下限制：
 
    * 不支援表內的嵌套表和子表單。
-   * 表格頂端列或左側列僅支援標題。 中間表格元素不支援標題。 您可以將標題套用至多列，而且支援欄標題，但是所有這些列和欄都必須與表格的最上方列或最左側的欄一起使用。
+   * 表格頂端列或左側列僅支援標題。 中間表格元素不支援標題。 您可以將標題套用至多個列，而且支援欄標題，前提是所有這些列和欄都與表格的最上方列或最左側列一起。
    * `Rowspan`不 `colspan`支援從表格內的隨機位置。
    * 您無法動態新增或移除包含行範圍值大於1之元素之列的例項。
 
@@ -165,13 +165,13 @@ HTML5表格的版面配置、指令碼支援和範圍有一些常見問題(FAQ)�
 
    答案:
 
-   * xfa.connectionSet指令碼的支援有限。 對於connectionSet，僅支援伺服器端調用web服務。 如需詳細資訊，請參閱指 [令碼支援](/help/forms/using/scripting-support.md)。
+   * xfa.connectionSet指令碼的支援有限。 對於connectionSet，僅支援伺服器端調用web服務。 如需詳細資訊，請參閱指令 [碼支援](/help/forms/using/scripting-support.md)。
    * 用戶端指令碼中不支援$record和$data。 不過，如果指令碼是以formReady、layoutReady區塊編寫，則指令碼仍然有效，因為這些事件會在伺服器端執行。
    * 不支援XFA Draw元素特定的指令碼，例如變更Draw文字（或欄位中的標題文字）。
 
 1. 使用formCalc有任何限制嗎？
 
-   答案：當前只實施formCalc指令碼的子集。 如需詳細資訊，請參閱指 [令碼支援](/help/forms/using/scripting-support.md)。
+   答案：當前只實施formCalc指令碼的子集。 如需詳細資訊，請參閱指令 [碼支援](/help/forms/using/scripting-support.md)。
 
 1. 是否有建議的命名慣例，以及是否有要避免的保留關鍵字？
 
@@ -184,7 +184,7 @@ HTML5表格的版面配置、指令碼支援和範圍有一些常見問題(FAQ)�
 
    >[!NOTE]
    >
-   >依預設，這些欄位不會啟用浮動。 您可以使用Forms Designer來設定欄位的浮動屬性。
+   >依預設，這些欄位不會啟用浮動。 您可以使用表單設計器來設定欄位的浮動屬性。
 
    1. 開啟CRXde lite並導覽至節 `/content/xfaforms/profiles/default` 點。
    1. 新增String類 `mfDataDependentFloatingField` 型的屬性，並將屬性的值設為 `true`**。**
@@ -204,4 +204,3 @@ HTML5表格的版面配置、指令碼支援和範圍有一些常見問題(FAQ)�
 
    答案：所有HTML5表格API都是保留關鍵字。 對於自訂API/函式，請使用與 [HTML5表單API不相同的名稱](/help/forms/using/scripting-support.md)。 除保留關鍵字外，如果您使用以底線(_)開頭的物件名稱，建議在底線後面加入唯一首碼。 新增首碼有助於避免與HTML5表單內部API產生任何可能的衝突。 例如， `_fpField1`
 
-**[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)**
