@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -85,12 +85,10 @@ AEM Forms管理員可自訂工作區，以建立兩個不同的URL，並讓兩�
 
 1. 要參考新工 `pdf.html` 作區，請更改中的路 `pdf.html` 徑 `/apps/ws2/js/runtime/views/forms/pdftaskform.js`。
 
-1. 若要參 `pdf.html` 考新工作區，請變更中、中和中的 `pdf.html` 路 `WsNextAdapter.swf` 徑， `startprocess.html`以及 `taskdetails.html`at `processinstancehistory.html``/apps/ws2/js/runtime/templates`。
+1. 若要參 `pdf.html` 考新工作區，請變更中、中、中和中 `pdf.html` 的 `WsNextAdapter.swf` 路 `startprocess.html`徑， `taskdetails.html`以及 `processinstancehistory.html` at `/apps/ws2/js/runtime/templates`。
 
 1. 複製 `/etc/map/ws` 資料夾並貼在 `/etc/map`。 將新資料夾更名為ws2。 按一下「全部儲存」。
 
 1. 在的屬 `ws2`性中，將值 `sling:redirect` 更改為 `content/ws2`。
 
 1. 將值 `sling:match` 更改為 `^[^/\||]/[^/\||]/ws2$`。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
