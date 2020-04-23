@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -32,12 +32,10 @@ source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
 1. 下載布建設定檔並新增至Xcode和iPad。
 1. 登入已安裝並設定Xcode和iOS SDK的Mac電腦。
 1. 在Xcode中 `AEM Forms.xcodeproj` 開啟專案。
-1. 按一 **[!UICONTROL 下「AEM Forms]**」，在「 **[!UICONTROL TARGETS]**」下方選 **[!UICONTROL 取「AEM Forms]**」。 選擇「 **[!UICONTROL Build Settings]** 」(建立設定 **[!UICONTROL )頁籤，找到「Code Signing Entitlement]** 」（代碼簽名權益）部分，然後在「Entitlements」（權益）下拉式選單中，選擇 **[!UICONTROL LC Enterprise]** （LC企業版）選項。
+1. 按一 **[!UICONTROL 下「AEM Forms]**」，在「 **[!UICONTROL TARGETS]**」下方選 **[!UICONTROL 取「AEM Forms]**」。 選擇「 **[!UICONTROL Build Settings]** (構建設定 **[!UICONTROL )」頁籤，找到「Code Signing Entitlement（代碼簽名權益）」部分，然後在「Entitlements（權益）」下拉菜單中，選擇]** LC Enterprise **** （LC企業版）選項。
 1. 在Xcode中尋找並 `LC Enterprise.entitlements` 開啟檔案以進行編輯。 在**XCode權益下，**新增與布建設定檔中相同的索引鍵值對。
 1. 在「建 **[!UICONTROL 置設定]** 」索引標籤中，按一 **[!UICONTROL 下「全部]** 」，然後按一 **[!UICONTROL 下「組合]**」。
 1. 從「設定 **[!UICONTROL 」清單]** ，展開「 **[!UICONTROL 程式碼簽署」]**。
 1. 針對 **[!UICONTROL 程式碼簽署識別]**，請選取適當的簽名。 請確定已針對 **[!UICONTROL Debug]**、 **[!UICONTROL Release]**&#x200B;和 **[!UICONTROL Any iOS SDK選取相同的簽名]**。
 1. 在 **[!UICONTROL PROJECT下]**，選擇 **[!UICONTROL AEM Forms]** ，並確保為 **[!UICONTROL Signing Identity]**, DebugDebugIntity,ReleaseAndAny iOS SDK ************&#x200B;選擇適當的簽名。
 1. 建立和散發AEM Forms應用程式。 如需建立和散發AEM Forms應用程式的詳細指示，請參 [閱「建立AEM Forms應用程式的安裝程式」](/help/forms/using/setup-xcode-project-build-installer.md#main-pars-text-12)。
-
-[聯絡支援](https://www.adobe.com/account/sign-in.supportportal.html)
