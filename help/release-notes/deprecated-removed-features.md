@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
+source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
 
 ---
 
@@ -28,7 +28,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## Deprecated Features {#deprecated-features}
 
-本節列出已標示為不再提倡的AEM 6.4功能。通常，計畫在未來版本中移除的功能會先設為不建議使用，並提供其他選項。
+下表列出已標示為已在AEM 6.4中停用的功能。通常，計畫在未來版本中移除的功能會先設為不建議使用，並提供其他選項。
 
 建議客戶檢視是否在目前的部署中使用這些功能，並規劃變更實作，改為使用所提供的替代方案。
 
@@ -120,6 +120,11 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
    <td>使用IValueMap API </td> 
   </tr>
   <tr>
+   <td>表單</td> 
+   <td><p>已過時的中央遷移橋接服務</p> </td> 
+   <td> 無取代 </td> 
+  </tr>
+  <tr>
    <td>資產</td> 
    <td><p>已淘汰資產卸載（從AEM 6.4開始）</p> </td> 
    <td> </td> 
@@ -129,7 +134,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## Removed Features {#removed-features}
 
-本節列出已從AEM 6.4移除的功能。舊版的這些功能已標示為不建議使用。
+下表列出已從AEM 6.4移除的功能與功能。舊版的這些功能已標示為已過時。
 
 <table> 
  <tbody>
@@ -141,7 +146,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
   <tr>
    <td>Analytics Activity Map</td> 
    <td>AEM中包含的Activity Map版本。</td> 
-   <td>由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。<br><br>現在 <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">應使用Adobe Analytics提供的</a> ActivityMap外掛程式。</td> 
+   <td>由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。<br><br>現 <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">在應使用Adobe Analytics提供的</a> ActivityMap外掛程式。</td> 
   </tr>
   <tr>
    <td>元件——表單</td> 
@@ -215,13 +220,18 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
   </tr>
     <tr>
     <td>表單</td> 
-    <td>已移除JEE特定登陸頁面上的AEM Forms。</td> 
+    <td>已移除JEE特定著陸頁面上的AEM Forms。</td> 
     <td>AEM Forms on JEE著陸頁面已取代為AEM著陸頁面(/aem/start.html) </td>  
   </tr>
    <tr>
    <td>表單</td> 
    <td>已移除預設驗證碼的支援</td> 
    <td>使用Google提供的reCAPTCHA服務。</td> 
+  </tr>
+  <tr>
+   <td>表單</td> 
+   <td>已移除AEM Designer中對flash欄位的支援。 AEM Designer不允許編輯表單中使用的Flash欄位。</td> 
+   <td>您可以使用舊版發行的AEM Designer來編輯此類表格。</td> 
   </tr>
   <tr>
    <td>社群</td> 
@@ -233,7 +243,8 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## 下一版產品的預發佈 {#pre-announcement-for-next-release}
 
-本節用於在未來版本中預先發佈變更，這些變更不會過時，但會影響客戶。 這些是為規劃目的而提供的。
+
+下表提供未來版本的變更清單，這些變更並未過時，但可能會影響客戶。 這些是為規劃目的而提供的。
 
 <table> 
  <tbody>
