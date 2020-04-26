@@ -3,16 +3,16 @@ title: 比較AEM Assets和AEM Media Library中的可用功能
 description: AEM Assets和AEM Media Library的常見問題，包括差異。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5862cce4a061f076486a00685c37326bb4b21d9
+source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
 
 ---
 
 
-# AEM Assets與AEM mediaLibrary的比較 {#aem-assets-vs-aem-medialibrary}
+# AEM Assets與AEM MediaLibrary的比較 {#aem-assets-vs-aem-medialibrary}
 
 Adobe Experience Manager(AEM)Assets是AEM平台不可或缺的一部分。 此順暢整合被視為AEM的主要優點，可確保內容管理的一致性，並提高內容作者的生產力。
 
-## Frequently asked questions {#frequently-asked-questions}
+## 常見問題 {#frequently-asked-questions}
 
 ### 什麼是AEM Assets? {#what-is-aem-assets}
 
@@ -41,10 +41,6 @@ AEM Assets客戶僅能使用的獨特功能包括：
 
 如果您打算編輯除標題、說明和標籤以外的中繼資料，則必須取得AEM Assets的授權。
 
-#### 我想在我的網站上使用類別謂詞。 我需要AEM資產嗎？ {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
-
-是的，類別述詞，連同Geometrixx Press Center中使用的所有其他元件，皆為AEM Assets的一部分，而且需要AEM Assets授權。
-
 #### 我想在匯入時自動調整影像大小。 我需要AEM資產嗎？ {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
 否. AEM媒體庫包含調整靜態影像大小和自動工作流程導向轉換功能以及管理轉譯的功能。 這些功能不需要AEM Assets授權。
@@ -55,7 +51,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 
 ### 如果我未授權AEM Assets，該如何防止使用者使用AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可避免使用者意外使用您未授權的AEM Assets功能。
+您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可防止您的使用者意外使用您未授權的AEM Assets功能。
 
 ### 我想要將影像新增至頁面，並想要裁切這些影像並調整其大小。 我需要AEM資產嗎？ {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
@@ -64,3 +60,4 @@ AEM Assets客戶僅能使用的獨特功能包括：
 >[!MORELIKETHIS]
 >
 >* [功能差異的詳細清單](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+
