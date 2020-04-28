@@ -3,7 +3,7 @@ title: 比較AEM Assets和AEM Media Library中的可用功能
 description: AEM Assets和AEM Media Library的常見問題，包括差異。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
+source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
 
 ---
 
@@ -51,7 +51,7 @@ AEM Assets客戶僅能使用的獨特功能包括：
 
 ### 如果我未授權AEM Assets，該如何防止使用者使用AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可防止您的使用者意外使用您未授權的AEM Assets功能。
+您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可避免使用者意外使用您未授權的AEM Assets功能。
 
 ### 我想要將影像新增至頁面，並想要裁切這些影像並調整其大小。 我需要AEM資產嗎？ {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
