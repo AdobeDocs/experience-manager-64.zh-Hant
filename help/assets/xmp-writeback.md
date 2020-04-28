@@ -3,7 +3,7 @@ title: XMP回寫至轉譯
 description: 瞭解XMP回寫功能如何將資產的中繼資料變更傳播至資產的所有或特定轉譯。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: eb135e5898fe521498eecae7109b39f54d274cce
 
 ---
 
@@ -73,7 +73,7 @@ XMP中繼資料的白名單篩選可讓您定義要匯入的XMP屬性，以解�
 
 >[!NOTE]
 >
->篩選只適用於資產二進位檔中衍生自XMP來源的屬性。 對於從非XMP來源衍生的屬性（例如EXIF和IPTC格式），篩選無法運作。 例如，資產建立日期會儲存在以EXIF TIFF命名的 `CreateDate` 屬性中。 AEM在名為的中繼資料欄位中提到此值 `exif:DateTimeOriginal`。 由於來源是非XMP來源，因此篩選不適用於此屬性。
+>篩選只適用於資產二進位檔中衍生自XMP來源的屬性。 對於從非XMP來源衍生的屬性（例如EXIF和IPTC格式），篩選無法運作。 例如，資產建立日期會儲存在以EXIF TIFF命名的 `CreateDate` 屬性中。 AEM會將此值儲存在名為的中繼資料欄位 `exif:DateTimeOriginal`。 由於來源是非XMP來源，因此篩選不適用於此屬性。
 
 1. 從中開啟配置管 `https://[aem_server]:[port]/system/console/configMgr`理器。
 1. 開啟 **[!UICONTROL Adobe CQ DAM XmpFilter組態]** 。
