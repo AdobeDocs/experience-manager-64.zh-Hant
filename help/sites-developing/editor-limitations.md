@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 9b1b0bd53d6c9e0c2c2857ef34b3409fff8485d2
 
 ---
 
@@ -28,6 +28,10 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 編輯 [頁面時](/help/sites-authoring/editing-content.md)，連結不作用中。
 
 * [切換至 **預覽** 模式](/help/sites-authoring/editing-content.md#preview-mode) ，使用內容中的連結進行導覽。
+
+### 結構頁面 {#structure-pages}
+
+無法命名頁面 `structure`。 在頁面編輯器 `structure` 中無法編輯命名的頁面。
 
 ## CSS限制 {#css-limitations}
 
