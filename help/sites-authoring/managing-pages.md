@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
 
 ---
 
@@ -131,7 +131,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 | 標題 | 衍生名稱 |
 |---|---|
 | 捨恩 | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc—c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### 名稱 {#name}
 
@@ -362,8 +362,12 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
    >
    >為了安全起見，「刪 **** 除」頁面圖示不能作為快速動作使用。
 
-1. 有對話方塊會要求您確認，請使用:
+1. 對話方塊會要求確認。
 
+   * **您要在刪除前先封存頁面嗎?** -如果選中此選項，則刪除時將建立選定要刪除的頁的版本。
+      * [版本可在稍後還原。](/help/sites-authoring/working-with-page-versions.md)
+      * 無法還原刪除而未使用舊版的頁面。
+      * 此選項僅適用於AEM 6.4.7.0版。
    * **取消**&#x200B;來中止動作
    * **刪除**&#x200B;來確認動作：
 
