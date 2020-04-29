@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 82e065a7faefe6d91f23e2b54dd045fd240fafbb
+source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 
 ---
 
@@ -30,6 +30,7 @@ Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳
 * [程式碼缺陷](/help/sites-developing/code-pitfalls.md)
 * [JCR互動](/help/sites-developing/jcr-integration.md)
 * [OSGi Bundles](/help/sites-developing/osgi-bundles.md)
+* [Java API最佳實務](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### 其他最佳做法資訊 {#additional-best-practices-information}
 
