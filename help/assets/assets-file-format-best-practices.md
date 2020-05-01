@@ -3,25 +3,25 @@ title: 資產檔案格式最佳實務
 description: AEM Assets中檔案支援的最佳實務。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
 
 ---
 
 
 # 資產檔案格式最佳實務 {#assets-file-format-best-practices}
 
-AEM Assets支援許多專屬和協力廠商的檔案格式程式庫，以符合使用者的多種檔案支援需求。 支援的Adobe程式庫包括Adobe Camera Raw、Gibson、Adobe PDF Rasterizer和Adobe inDesign Server。 此外，AEM Assets還支援協力廠商資料庫，包括ImageMagick、TwelveMones等。
+AEM Assets支援許多專屬和協力廠商的檔案格式程式庫，以符合使用者的多種檔案支援需求。 支援的Adobe程式庫包括Adobe Camera Raw、Gibson、Adobe PDF Rasterizer和Adobe InDesign Server。 此外，AEM Assets還支援協力廠商資料庫，包括ImageMagick、TwelveMones等。
 
 如需支援的檔案格式，請參閱「 [Assets支援的格式」](assets-formats.md)。
 
-## Adobe Camera raw資料庫 {#adobe-camera-raw-library}
+## Adobe Camera Raw資料庫 {#adobe-camera-raw-library}
 
-為獲得最佳效能，Adobe建議使用Adobe Camera raw程式庫：
+為獲得最佳效能，Adobe建議使用Adobe Camera Raw程式庫：
 
 * RAW
 * DNG
 
-Adobe Camera raw程式庫支援CMYK色彩描述檔作為輸入。 但是，它僅支援JPEG格式的輸出，並且在RGB顏色空間中生成輸出。 它不會在縮圖中保留原始檔案的色域（例如CMYK）。
+Adobe Camera Raw程式庫支援CMYK色彩描述檔作為輸入。 但是，它僅支援JPEG格式的輸出，並且在RGB顏色空間中生成輸出。 它不會在縮圖中保留原始檔案的色域（例如CMYK）。
 
 如需詳細資訊，請參 [閱「AEM資產」中的](camera-raw.md) 「Camera Raw」支援。
 
@@ -35,15 +35,15 @@ Adobe Camera raw程式庫支援CMYK色彩描述檔作為輸入。 但是，它�
 
 使用PDF點陣化器產生的縮圖和預覽，比現成可用的點陣化輸出更具品質。 Adobe PDF Rasterizer程式庫不支援任何色域轉換。 不論來源PDF檔案的色域為何，Adobe PDF Rasterizer都只會產生RGB輸出。
 
-## Adobe inDesign Server {#adobe-indesign-cc-server}
+## Adobe InDesign Server {#adobe-indesign-cc-server}
 
-Adobe建議您使用Adobe inDesign伺服器來擷取Adobe inDesign專用的轉譯，例如IDML和HTML。 如需詳細資訊，請 [參閱「在Adobe inDesign中新增AEM資產作為參考」](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)。
+Adobe建議您使用Adobe InDesign伺服器來擷取Adobe InDesign專用的轉譯，例如IDML和HTML。 如需詳細資訊，請 [參閱「在Adobe InDesign中新增AEM資產作為參考」](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)。
 
 ## 動態媒體  {#dynamic-media}
 
 動態媒體透過其全球、可擴充且最佳化效能的網路，即時產生並提供多種多樣化內容。 它提供互動式檢視體驗，並簡化數位宣傳管理程式。 如需啟用動態媒體的詳細資訊，請參 [閱設定動態媒體](config-dynamic.md)。
 
-目前，動態媒體可支援每個檔案高達20 GB的內容。
+目前，動態媒體可支援每個檔案高達15 GB的內容。
 
 ## ImageMagick程式庫 {#imagemagick-library}
 
