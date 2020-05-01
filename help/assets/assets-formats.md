@@ -3,7 +3,7 @@ title: AEM Assets支援的檔案格式
 description: AEM Assets支援的檔案格式和MIME類型清單，以及每種格式支援的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
 
 ---
 
@@ -62,7 +62,7 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**‡** 合併的影像是從PSD檔案擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+**‡** 合併的影像是從PSD檔案中擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
 除了上述資訊外，請考慮下列事項：
 
@@ -73,6 +73,17 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 * 若要使用Dynamic Media預覽並產生EPS檔案的動態轉譯，請參閱 [Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * 對於EPS檔案，PostScript Document Structuring Convention(PS-Adobe)3.0版或更新版本支援中繼資料回寫。
+
+## 動態媒體中不支援的點陣影像格式(#unsupported-image-formats-dynamic-media)
+
+下列清單說明動態媒體中不支援的點陣影像檔 *案* 格式子類型。
+
+* IDAT區塊大小大於100 MB的PNG檔案。
+* PSB檔案。
+* 不支援色域不是CMYK、RGB、灰階或點陣圖的PSD檔案。 不支援DuoTone、Lab和索引色域。
+* 位元深度大於16的PSD檔案。
+* 具有浮點資料的TIFF檔案。
+* 具有Lab色域的TIFF檔案。
 
 ## PDF點陣化器程式庫 {#supported-pdf-rasterizer-library}
 
