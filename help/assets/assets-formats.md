@@ -3,7 +3,7 @@ title: AEM Assets支援的檔案格式
 description: AEM Assets支援的檔案格式和MIME類型清單，以及每種格式支援的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b54b51f03f8d5f8b9fd5888f4b59510bfd7847a8
+source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
 
 ---
 
@@ -42,7 +42,7 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**‡** 合併的影像是從PSD檔案擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+**‡** 合併的影像是從PSD檔案中擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
 動態媒體功能支援的點陣影像格式如下：
 
@@ -62,7 +62,7 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**‡** 合併的影像是從PSD檔案中擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
+**‡** 合併的影像是從PSD檔案擷取。 它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。
 
 除了上述資訊外，請考慮下列事項：
 
@@ -74,7 +74,7 @@ AEM Assets支援多種檔案格式，而各種功能對不同MIME類型的支援
 
 * 對於EPS檔案，PostScript Document Structuring Convention(PS-Adobe)3.0版或更新版本支援中繼資料回寫。
 
-## 動態媒體中不支援的點陣影像格式(#unsupported-image-formats-dynamic-media)
+## 動態媒體中不支援的點陣影像格式 {#unsupported-image-formats-dynamic-media}
 
 下列清單說明動態媒體中不支援的點陣影像檔 *案* 格式子類型。
 
