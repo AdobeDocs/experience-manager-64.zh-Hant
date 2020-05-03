@@ -3,7 +3,7 @@ title: 大量中繼資料匯入和匯出
 description: 本文說明如何大量匯入和匯出中繼資料。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 093524d47565f63c8179abee704720fe23b0d09a
+source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
 
 ---
 
@@ -36,6 +36,12 @@ AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯
    | [!UICONTROL 資產路徑欄名稱] | 定義含資產之CSV檔案的欄名。 |
 
 1. 從工具列點選/ **[!UICONTROL 按一下]** 「匯入」。 匯入中繼資料後，通知會傳送至您的通知收件匣。 導覽至資產屬性頁面，並驗證是否正確匯入資產的中繼資料值。
+
+若要在匯入中繼資料時新增日期和時間戳記，請 `YYYY-MM-DDThh:mm:ss.fff-00:00` 使用日期和時間格式。 日期和時間以24小時 `T`格式 `hh` 的小時、納秒和時區偏移 `fff``-00:00` 分隔。 例如， `2020-03-26T11:26:00.000-07:00` 是2020年3月26日太平洋標準時間上午11:26:00.000。
+
+>[!CAUTION]
+>
+>如果日期格式不符 `YYYY-MM-DDThh:mm:ss.fff-00:00`合，則不設定日期值。 匯出的中繼資料CSV檔案的日期格式為格式 `YYYY-MM-DDThh:mm:ss-00:00`。 如果要匯入，請新增以表示的納秒值，將它轉換為可接受的格式 `fff`。
 
 ## 匯出存中繼資料 {#export-metadata}
 
