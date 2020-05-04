@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
 # SPA和伺服器端演算{#spa-and-server-side-rendering}
 
 >[!NOTE]
->「單頁應用程式(SPA)編輯器」功能需要 [AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) 或更新版本。
+>「單頁應用程式(SPA)編輯器」功能需要 [AEM 6.4 Service Pack 2](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html) 或更新版本。
 >
 >SPA編輯器是建議的解決方案，適用於需要以SPA架構為基礎的用戶端轉換（例如React或Angular）的專案。
 
@@ -40,8 +40,8 @@ source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
 
 SSR通常在以下任一問題有明確的「是」時提供一些值：
 
-* **** SEO:SSR是否仍需要SSR才能讓帶來流量的搜尋引擎正確建立索引？ 請記住，主要搜尋引擎爬蟲程式現在會評估JS。
-* **** 頁面速度：SSR是否可大幅提升實際環境中的速度，並增加整體使用體驗？
+* **SEO:** SSR是否仍需要SSR才能讓帶來流量的搜尋引擎正確建立索引？ 請記住，主要搜尋引擎爬蟲程式現在會評估JS。
+* **頁面速度：** SSR是否可大幅提升實際環境中的速度，並增加整體使用體驗？
 
 只有當這兩個問題中至少有一個問題以明確的「是」回答時，Adobe才建議實作SSR。 以下各節將說明如何使用Adobe I/O Runtime進行此項作業。
 
@@ -141,7 +141,7 @@ AEM中SSR的SPA需要Adobe I/O Runtime，這是轉換應用程式內容伺服器
 >We. [Retail Journal應用程式僅供展示之用](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) ，因此使用Node.js做為簡單範例，而非建議的Adobe I/O Runtime。 此範例不應用於任何專案工作。
 
 >[!NOTE]
->AEM上的所有SPA專案都應以 [Maven Archetype for SPA Starter Kit為基礎](https://github.com/adobe/aem-spa-project-archetype)。
+>任何AEM專案都應運用 [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ## 使用Node.js {#using-node-js}
 
@@ -157,15 +157,15 @@ Adobe代管的AEM例項不支援Node.js。
 
 ## 遠端內容轉譯器 {#remote-content-renderer}
 
-在AEM [中搭配SPA使用SSR所需的遠端內容轉譯器設定](#remote-content-renderer-configuration) ，可點選更廣泛的轉譯服務，以因應您的需求加以擴充和自訂。
+在AEM [中搭配SPA使用SSR所需的遠端內容轉譯器設定](#remote-content-renderer-configuration) ，可點選更廣泛的轉譯服務，以符合您的需求加以擴充和自訂。
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` 是OSGi服務，可擷取在遠端伺服器上轉譯的內容，例如從Adobe I/O轉譯。傳送至遠端伺服器的內容是根據傳遞的要求參數。
+`RemoteContentRenderingService` 是OSGi服務，可擷取在遠端伺服器上轉譯的內容，例如從Adobe I/O轉譯。 傳送至遠端伺服器的內容是根據傳遞的要求參數。
 
 `RemoteContentRenderingService` 可在需要額外的內容控制時，透過互依性反轉插入自訂Sling模型或servlet。
 
-此服務由 [RemoteContentRendererRequestHandlerServlet內部使用](#remotecontentrendererrequesthandlerservlet)。
+此服務由 [RemoteContentRendererRequestHandlerServlet在內部使用](#remotecontentrendererrequesthandlerservlet)。
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
@@ -203,4 +203,4 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 ### 需求 {#requirements}
 
-Servlet運用Sling Model Exporter序列化元件資料。 依預設，和 `com.adobe.cq.export.json.ContainerExporter` 都 `com.adobe.cq.export.json.ComponentExporter` 支援做為Sling model適配器。 如有必要，您可以添加類，請求應適應使用和實 `RemoteContentRendererServlet` 施類 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`。 其他類必須擴展 `ComponentExporter`。
+Servlet運用Sling Model Exporter序列化元件資料。 依預設，和 `com.adobe.cq.export.json.ContainerExporter` 都 `com.adobe.cq.export.json.ComponentExporter` 支援做為Sling Model適配器。 如有必要，您可以添加類，請求應適應使用和實 `RemoteContentRendererServlet` 施類 `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses`。 其他類必須擴展 `ComponentExporter`。
