@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -120,9 +120,9 @@ module.exports = {
 
 建立後，套件就可以上傳至AEM例項。
 
-### SPA Starter Kit的Maven Archetype {#maven-archetype-for-spa-starter-kit}
+### AEM Project Archetype {#aem-project-archetype}
 
-Adobe建議您運用 [Maven Archetype for SPA Starter Kit](https://github.com/adobe/aem-spa-project-archetype) ，協助您針對AEM開始自己的SPA專案。
+任何AEM專案都應運用 [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ## 應用程式結構 {#application-structure}
 
@@ -273,9 +273,9 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 單頁應用程式中的元件必須定期共用資訊。 有幾種建議的方法可做到，如下列出，增加了複雜性。
 
-* **** 選項1:例如，使用React Context將邏輯和廣播集中到必要的元件。
-* **** 選項2:使用狀態庫（例如Redux）來共用元件狀態。
-* **** 選項3:自訂和擴充容器元件，以運用物件階層。
+* **選項1:** 例如，使用React Context將邏輯和廣播集中到必要的元件。
+* **選項2:** 使用狀態庫（例如Redux）來共用元件狀態。
+* **選項3:** 自訂和擴充容器元件，以運用物件階層。
 
 
 ## 後續步驟 {#next-steps}
