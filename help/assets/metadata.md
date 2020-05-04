@@ -3,14 +3,14 @@ title: 在[!DNL Adobe Experience Manager]中管理數位資產的中繼資料。
 description: 瞭解中繼資料的類型，以及[!DNL Adobe Experience Manager Assets]如何協助管理資產的中繼資料，讓資產分類和組織更輕鬆。 [!DNL Experience Manager]可讓資產根據其中繼資料自動組織和處理。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6687d6ae059dcd5d91986ae144d2f0367d8189e1
+source-git-commit: 7f8f35b9f62f61f5bb8c175062e76ba5f4966dbe
 
 ---
 
 
 # 管理數位資產的中繼資料 {#managing-metadata-for-digital-assets}
 
-[!DNL Adobe Experience Manager Assets] 保留每個資產的中繼資料。 這可讓資產的分類和組織更輕鬆，並協助尋找特定資產的人。 中繼資料管理可從上傳至的檔案擷取中繼資 [!DNL Experience Manager Assets]料，與創意工作流程整合。 透過使用您的資產保留和管理中繼資料的功能， [!DNL Experience Manager Assets] 您可以根據資產的中繼資料自動組織和處理資產。
+[!DNL Adobe Experience Manager Assets] 保留每個資產的中繼資料。 它可讓資產的分類和組織更輕鬆，並協助尋找特定資產的人。 中繼資料管理可從上傳至的檔案擷取中繼資 [!DNL Experience Manager Assets]料，與創意工作流程整合。 透過使用資產保留和管理中繼資料的能力，您可以根據資產的中繼資料自動組織及處理資產。
 
 * [XMP 中繼資料](xmp.md).
 * [如何編輯或新增中繼資料](meta-edit.md)。
@@ -28,7 +28,7 @@ source-git-commit: 6687d6ae059dcd5d91986ae144d2f0367d8189e1
 * 包含在中的資料夾的名稱。
 * 相關資產或套用的標籤。
 
-這些是可管理資產的基本中繼資料屬性，可讓使用者查看所有資產（例如，依其上次修改日期排序），在嘗試發現哪些資產最近新增至儲存庫時非常實用。 [!DNL Experience Manager]
+以上是可管理資產的基本中繼資 [!DNL Experience Manager] 料屬性，可讓使用者查看所有資產。 例如，在嘗試尋找最近新增的資產時，可使用上次修改日期來排序資產。
 
 您可以新增更多高階資料至數位資產，例如：
 
@@ -38,13 +38,13 @@ source-git-commit: 6687d6ae059dcd5d91986ae144d2f0367d8189e1
 * 資產的說明。
 * 指派給資產的標籤。
 
-更多中繼資料可協助您進一步分類資產，並隨著數位資訊的增加而有所幫助。 僅根據檔名管理幾百個檔案是可能的。 然而，這種方法不具可擴充性，而且當參與人數和受管理資產數量增加時，會迅速縮短。
+更多中繼資料可協助您進一步分類資產，並隨著數位資訊的增加而有所幫助。 僅根據檔名管理幾百個檔案是可能的。 但是，這種方法不具可擴充性。 當涉案人數和管理的資產數量增加時，這個數字就會不夠。
 
 隨著中繼資料的增加，數位資產的價值會增加，因為資產會變成，
 
 * 更容易存取——系統和使用者可輕鬆找到。
 * 管理起來更輕鬆——您可以更輕鬆地尋找具有相同屬性集的資產，並套用變更。
-* 更完整——您新增的中繼資料越多，資料和內容就越豐富。
+* 完整——資產包含更多資訊和內容，以及更多中繼資料。
 
 基於這些原因， [!DNL Assets] 您可以為數位資產提供建立、管理和交換中繼資料的適當方式。
 
@@ -61,24 +61,20 @@ source-git-commit: 6687d6ae059dcd5d91986ae144d2f0367d8189e1
 
 描述性中繼資料是與應用程式網域相關的中繼資料，例如資產來自的業務。 無法自動確定描述性中繼資料。 系統會手動或半自動建立。 例如，可使用GPS的相機可自動追蹤經緯度，並新增地理標籤影像。
 
-由於建立描述性中繼資料資訊需要耗費大量人力，因此已制定標準，以簡化跨軟體系統和組織的中繼資料交換。
-
-[!DNL Experience Manager Assets] 支援中繼資料管理的所有相關標準。
-
-由於中繼資料的重要性以及建立中繼資料需要大量的人工參與，因此已建立標準，讓交換變得更輕鬆。
+手動建立描述性中繼資料資訊的成本很高。 因此，建立標準是為了簡化跨軟體系統和組織的中繼資料交換。 [!DNL Experience Manager Assets] 支援中繼資料管理的所有相關標準。
 
 ## 編碼標準 {#encoding-standards}
 
 在檔案中內嵌中繼資料有多種方式。 支援多種編碼標準：
 
-* XMP:用於將提 [!DNL Assets] 取的元資料儲存在儲存庫中。
-* ID3:音訊和視訊檔案。
-* 例如：的雙曲餘切值。
-* 其他／舊版：從Microsoft Word、PowerPoint、Excel等。
+* XMP: 用於將提 [!DNL Assets] 取的元資料儲存在儲存庫中。
+* ID3: 音訊和視訊檔案。
+* 例如： 的雙曲餘切值。
+* 其他／舊版： 從 [!DNL Microsoft Word]、 [!DNL PowerPoint][!DNL Excel]等。
 
 ### XMP {#xmp}
 
-可擴充中繼資料平台(XMP)是開放標準，適用於所 [!DNL Experience Manager Assets] 有中繼資料管理。 此標準提供通用中繼資料編碼，可嵌入所有檔案格式。 Adobe和其他公司支援XMP標準，因為它提供多樣化內容模型。 使用XMP標準和XMP標準的 [!DNL Experience Manager Assets] 使用者擁有強大的平台。 如需詳細資訊，請參 [閱XMP](https://www.adobe.com/products/xmp.html)。
+[!DNL Extensible Metadata Platform] (XMP)是開放標準，供所有中繼資料 [!DNL Experience Manager Assets] 管理使用。 此標準提供通用中繼資料編碼，可嵌入所有檔案格式。 Adobe和其他公司支援XMP標準，因為它提供多樣化內容模型。 使用XMP標準和XMP標準的 [!DNL Experience Manager Assets] 使用者擁有強大的平台。 如需詳細資訊，請參 [閱XMP](https://www.adobe.com/products/xmp.html)。
 
 ### ID3 {#id}
 
@@ -94,15 +90,15 @@ ID3標籤是針對MP3檔案格式而設計。 有關格式的其他資訊：
 
 ### Exif {#exif}
 
-可交換的影像檔案格式(Exif)是數位攝影中最常用的中繼資料格式。 它提供以多種檔案格式（例如JPEG、TIFF、RIFF和WAV）嵌入固定的中繼資料屬性辭彙的方式。 Exif將中繼資料儲存為中繼資料名稱與中繼資料值的配對。 這些中繼資料名稱——值配對也稱為標籤，不要與中的標籤混淆 [!DNL Experience Manager]。 由於Exif是由現代數位相機自動建立，並透過現代圖形軟體提供支援，因此可視為中繼資料管理的最低共性。
+可交換的影像檔案格式(Exif)是數位攝影中最常用的中繼資料格式。 它提供以多種檔案格式（例如JPEG、TIFF、RIFF和WAV）嵌入固定的中繼資料屬性辭彙的方式。 Exif將中繼資料儲存為中繼資料名稱與中繼資料值的配對。 這些中繼資料名稱——值配對也稱為標籤，不要與中的標籤混淆 [!DNL Experience Manager]。 現代數位相機可建立Exif中繼資料，而現代圖形軟體也支援它。 Exif格式是中繼資料管理的最低公分母，尤其是影像。
 
 Exif的主要限制是不支援一些常用的影像檔案格式，例如BMP、GIF或PNG。
 
-通常由Exif定義的中繼資料欄位具有技術性，在描述性中繼資料管理中使用有限。 因此，提供 [!DNL Experience Manager Assets] Exif屬性對應至常用中 [繼資料架構](metadata-schemas.md) ，以及 [XMP](xmp-writeback.md)。
+Exif定義的中繼資料欄位通常具有技術性，在描述性中繼資料管理中使用有限。 因此，提供 [!DNL Experience Manager Assets] Exif屬性對應至常用中 [繼資料架構](metadata-schemas.md) ，以及 [XMP](xmp-writeback.md)。
 
 ### 其他中繼資料 {#other-metadata}
 
-可從檔案內嵌的其他中繼資料包括Microsoft Word、PowerPoint、Excel等。
+可從檔案內嵌的其他中繼資 [!DNL Microsoft Word]料 [!DNL PowerPoint]包括 [!DNL Excel]、、等等。
 
 ## 中繼資料圖式 {#metadata-schemata}
 
@@ -114,62 +110,62 @@ Exif的主要限制是不支援一些常用的影像檔案格式，例如BMP、G
 
 ### 標準中繼資料 {#standard-metadata}
 
-* dc - Dublin Core —— 最重要且廣泛使用的中繼資料集。
+* DC —— 是 [!DNL Dublin Core] 一組重要且廣泛使用的元資料。
 * DICOM —— 數位影像與醫學通訊。
-* Iptc4xmpCore &amp; iptc4xmpExt —— 國際新聞通訊標準——許多特定主題的中繼資料。
-* rdf —— 資源描述框架——通用語義Web元資料。
-* xmp —— 可擴充的中繼資料平台。
-* xmpBJ —— 基本工作訂票。
+* `Iptc4xmpCore` 和 `iptc4xmpExt` - International Press Communications Standard包含許多特定主題的中繼資料。
+* RDF —— 資源描述框架——通用語義Web元資料。
+* XMP - [!DNL Extensible Metadata Platform].
+* `xmpBJ` -基本工作訂票。
 
 ### 應用程式專用的中繼資料 {#application-specific-metadata}
 
-應用程式專用的中繼資料包含技術和描述性中繼資料。 如果您使用這些功能，其他應用程式可能無法使用中繼資料。 例如，如果您有包含中繼資料的資產，而另一個影像轉換應用程 [!DNL Adobe Photoshop] 式則嘗試存取中繼資料，則可能無法存取中繼資料。 如果您發現資產中有許多應用程式特定的中繼資料，可以建立將應用程式特定屬性變更為標準屬性的工作流程步驟。
+應用程式專用的中繼資料包含技術和描述性中繼資料。 如果您使用此類中繼資料，其他應用程式可能無法使用中繼資料。 例如，不同的影像轉換應用程式可能無法存取中繼 [!DNL Adobe Photoshop] 資料。 您可以建立工作流程步驟，將應用程式特定屬性變更為標準屬性。
 
-* acdsee —— 由ACDSee程式管理的元 [資料www.acdsee.com/](https://www.acdsee.com/)。
-* 相簿- Adobe Photoshop Album。
-* cq —— 用於 [!DNL Experience Manager Assets]。
-* dam —— 用於 [!DNL Experience Manager Assets]。
-* dex - Optima SC說明瀏覽器。
-* crs - Adobe Photoshop Camera Raw。
-* lr - Adobe Lightroom。
-* mediapro - Ivew MediaPro。
+* ACDSee —— 由程式管理的元 [!DNL ACDSee] 資料。 請參 [閱www.acdsee.com/](https://www.acdsee.com/)。
+* 相簿- [!DNL Adobe Photoshop Album].
+* CQ —— 使用者 [!DNL Experience Manager Assets]。
+* DAM —— 用於 [!DNL Experience Manager Assets]。
+* DEX - [Optima SC描述檔案總管](http://www.optimasc.com/products/dex/index.html) ，是Windows作業系統中中繼資料和檔案管理工具的集合。
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
+* LR - [!DNL Adobe Lightroom].
+* MediaPro - [iView MediaPro](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
 * MicrosoftPhoto和MP - Microsoft Photo。
-* pdf和pdfx。
-* photoshop &amp; psAux - Adobe Photoshop。
+* PDF和PDF/X。
+* Photoshop和psAux - [!DNL Adobe Photoshop].
 
 ### 數位版權管理中繼資料 {#digital-rights-management-metadata}
 
-* cc —— 創意共用
-* xmpRights
-* plus —— 圖片授權通用系統- https://www.useplus.com/
-* prism - https://www.idealliance.org/prism-metadata業界標準中繼資料的發佈需求
-* prl —— 稜鏡版權語言
-* pur —— 稜鏡使用權
-* xmpPlus —— 整合PLUS與XMP
+* CC - [!DNL Creative Commons].
+* [!DNL XMPRights]。
+* PLUS —— 圖 [片授權通用系統](https://www.useplus.com)。
+* PRISM —— 發佈 [業界標準中繼資料的需求](https://www.idealliance.org/prism-metadata)。
+* PRL —— 稜鏡版權語言。
+* PUR —— 稜鏡使用權。
+* `xmpPlus` -將PLUS與XMP整合。
 
 ### 攝影專用中繼資料 {#photography-specific-metadata}
 
-* exif —— 相機提供的大量技術資訊，包括GPS位置
-* crs - photoshop相機原始資料
-* Iptc4xmpCore和iptc4xmpExt
-* TIFF —— 影像中繼資料（不僅適用於TIFF影像）
+* Exif —— 相機的技術資訊，包括GPS位置。
+* CRS —— 方 [!DNL Camera Raw] 案。
+* `iptc4xmpCore` 和 `iptc4xmpExt`.
+* TIFF —— 影像中繼資料（不僅適用於TIFF影像）。
 
 ### 列印專用的中繼資料 {#print-specific-metadata}
 
-* pdf和pdfx - Adobe PDF和協力廠商應用程式
-* prism - [www.prismstandard.org業界標準中繼資料](https://www.prismstandard.org) （英文）的發佈需求
-* xmp
-* xmpPG —— 分頁文字的xmp
+* PDF和PDF/X - Adobe PDF和協力廠商應用程式。
+* PRISM —— 發佈 [業界標準中繼資料的需求](https://www.prismstandard.org)。
+* XMP - [!DNL Extensible Metadata Platform].
+* `xmpPG` -分頁文字的XMP中繼資料。
 
 ### 多媒體特定中繼資料 {#multimedia-specific-metadata}
 
-* xmpDM —— 動態媒體
-* xmpMM —— 媒體管理
+* `xmpDM` - [!DNL Dynamic Media].
+* `xmpMM` -媒體管理。
 
 ## 中繼資料導向的工作流程 {#metadata-driven-workflows}
 
 建立中繼資料導向的工作流程可協助您自動化某些程式，進而提高效率。 在元資料驅動的工作流中，工作流管理系統讀取該工作流並因此執行一些預定義的操作。 例如，您可使用中繼資料導向工作流程的一些方式：
 
-* 工作流程可檢查影像是否有標題。 如果沒有，系統會通知特定使用者新增標題。
-* 工作流程可以檢查資產上的版權聲明是否允許散發。 如果有，系統會將資產傳送至一個伺服器。 如果沒有，系統會將資產傳送至另一伺服器。
-* 工作流程可以檢查資產是否沒有預先定義的強制中繼資料，或是包含 *無效* 中繼資料。
+* 工作流程可以檢查影像是否有標題。 如果沒有，系統會通知您新增標題。
+* 工作流程可以檢查資產上的版權聲明是否允許散發。 因此，系統會將資產傳送至一或另一伺服器。
+* 工作流程可以檢查資產是否沒有預先定義的強制中繼資料，或是包含無效中繼資料 *的資* 產。
