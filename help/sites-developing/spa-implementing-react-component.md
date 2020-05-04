@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
-source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -37,7 +37,7 @@ SPA製作功能提供完整的解決方案，以支援AEM中的SPA。 本文舉�
 >[!CAUTION]
 >本檔案僅將 [We.Retail Journal應用程式用於展示用途](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) 。 它不應用於任何項目工作。
 >
->AEM上的所有SPA專案都應以 [Maven Archetype for SPA Starter Kit為基礎](https://github.com/adobe/aem-spa-project-archetype)。
+>任何AEM專案都應運用 [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ## The Weather Component {#the-weather-component}
 
@@ -69,12 +69,12 @@ We.Retail Journal應用程式的左上角有氣象元件。 它顯示已定義�
 
 在We.Retail Journal應用程式中檢閱自訂氣象 `Weather.js`元件()的程式碼：
 
-* **第16行**:React Open Weather Widget會視需要載入。
-* **第46行**:此函 `MapTo` 數將此React元件與對應的AEM元件關聯，以便在SPA編輯器中編輯它。
+* **第16行**: React Open Weather Widget會視需要載入。
+* **第46行**: 此函 `MapTo` 數將此React元件與對應的AEM元件關聯，以便在SPA編輯器中編輯它。
 
-* **第22-29行**:已定 `EditConfig` 義，檢查城市是否已填入，並定義值（如果空）。
+* **第22-29行**: 已定 `EditConfig` 義，檢查城市是否已填入，並定義值（如果空）。
 
-* **第31-44行**:Weather元件擴展了類 `Component` 別並提供React Open Weather元件的NPM使用文檔中定義的所需資料，並呈現該元件。
+* **第31-44行**: Weather元件擴展了類 `Component` 別並提供React Open Weather元件的NPM使用文檔中定義的所需資料，並呈現該元件。
 
 ```
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
