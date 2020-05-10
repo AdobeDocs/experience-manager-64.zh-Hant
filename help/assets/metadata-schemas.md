@@ -3,7 +3,10 @@ title: 中繼資料結構
 description: '中繼資料結構定義屬性頁面的版面配置，以及資產所顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
+source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+workflow-type: tm+mt
+source-wordcount: '2524'
+ht-degree: 12%
 
 ---
 
@@ -32,22 +35,34 @@ source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
 
    ![chlimage_1-37](assets/chlimage_1-173.png)
 
-   AEM提供現成可用的下列範本：
-   * **預設**:資產的基本中繼資料結構表單。
+## 預設可用的中繼資料結構表單 {#available-metadata-schema-templates}
 
-      以下子表單繼承預設表單的屬性：
+[!DNL Experience Manager] 提供以下元資料架構表單模板：
 
-      1. **影像**:MIME類型為&quot;image&quot;的資產的架構表單， `image/jpeg`例如 `image/png`、等。
+### 預設 {#default-template}
 
-         「影像」表單包含下列子表單範本：
-         * **jpeg**:子類型資產的結構表單 `jpeg`。
-         * **tiff**:子類型資產的結構表單 `tiff`。
-      1. **應用程式**:具有MIME類型的資產的 `application`架構表單， `application/pdf``application/zip`例如，等等。
-         * **pdf**:子類型資產的結構表單 `pdf`。
-      1. **視訊**:具有MIME類型的資產的 `video`架構表單， `video/avi`如 `video/mp4`、等等。
-   * **系列**:系列的結構表單。
-   * **contentfragment:** 內容片段的架構表單。
-   * **表單**:此結構表單與 [Adobe Experience Manager Forms相關](/help/forms/home.md)。
+預設 [!UICONTROL 值是] 「資產」的基本中繼資料結構表單。 以下子表單繼承預設表單的屬性：
+
+* **image** 是MIME類型為&quot;image&quot;的資產的架構表單。 例如， `image/jpeg`、 `image/png`等等。 「影像」表單包含下列子表單範本：
+   * **jpeg** 是子類型資產的架構表單 `jpeg`。
+
+   * **Tiff** 是子類型資產的架構表單 `tiff`。
+
+* **application** 是具有MIME類型資產的架構表 `application`單。 例如， `application/pdf`、 `application/zip`等等。 **pdf** 是子類型資產的架構表單 `pdf`。
+
+* **video** 是具有MIME類型的資產 `video`( `video/avi`如、 `video/mp4`等)的架構表單。
+
+### 集合 {#collection-template}
+
+系列 [!UICONTROL 是系列的] 「方案」表單。
+
+### contentfragment {#contentfragment-template}
+
+內容 [!UICONTROL 片段] 是內容片段的架構表單。
+
+### forms {#forms-template}
+
+表 [!UICONTROL 單結構] 表單與 [Adobe Experience Manager Forms相關](/help/forms/home.md)。
 
 >[!NOTE]
 >
@@ -111,33 +126,33 @@ source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
 
 要編輯表單上元資料元件的屬性，請按一下該元件，然後在「設定」頁籤中編輯以下所有或子 **[!UICONTROL 集]** 。
 
-**欄位標籤**:顯示在資產屬性頁面上的中繼資料屬性名稱。
+**欄位標籤**: 顯示在資產屬性頁面上的中繼資料屬性名稱。
 
-**對應至屬性**:此屬性指定資產節點的相對路徑／名稱，該資產節點保存在CRX儲存庫中。 它以開 `./` 頭，因為它表示路徑位於資產的節點下。
+**對應至屬性**: 此屬性指定資產節點的相對路徑／名稱，該資產節點保存在CRX儲存庫中。 開頭為 `./` 因為表示路徑位於資產節點下。
 
 以下是此屬性的有效值：
 
 * `./jcr:content/metadata/dc:title`:將值儲存在資產的中繼資料節點，做為屬性 `dc:title`。
 
-* `./jcr:created`:在資產的節點顯示JCR屬性。 如果您在檢視屬性上設定這些屬性，建議您將它們標示為「停用編輯」，因為這些屬性受到保護。Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`: 在資產的節點顯示JCR屬性。 如果您在檢視屬性上設定這些屬性，建議您將它們標示為「停用編輯」，因為這些屬性受到保護。Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
 
 為確保元資料架構表單中的元件正確顯示，屬性路徑不應包含任何空格。
 
-**預留位置**:使用此屬性可指定與中繼資料屬性相關的預留位置文字。
+**預留位置**: 使用此屬性可指定與中繼資料屬性相關的預留位置文字。
 
-**必要**:使用此屬性可將中繼資料屬性標示為屬性頁面上的必要屬性。
+**必要**: 使用此屬性可將中繼資料屬性標示為屬性頁面上的必要屬性。
 
-**停用編輯**:使用此屬性可讓中繼資料屬性在屬性頁面上無法編輯。
+**停用編輯**: 使用此屬性可讓中繼資料屬性在屬性頁面上無法編輯。
 
-**在唯讀中顯示空白欄位**:標籤此屬性，即使其沒有值，也可在屬性頁面上顯示中繼資料屬性。 預設情況下，當中繼資料屬性沒有值時，該屬性不會列在屬性頁面上。
+**在唯讀中顯示空白欄位**: 標籤此屬性，即使其沒有值，也可在屬性頁面上顯示中繼資料屬性。 預設情況下，當中繼資料屬性沒有值時，該屬性不會列在屬性頁面上。
 
-**顯示順序清單**:使用此屬性可顯示選擇的有序清單
+**顯示順序清單**: 使用此屬性可顯示選擇的有序清單
 
-**選擇**:使用此屬性可指定清單中的選擇
+**選擇**: 使用此屬性可指定清單中的選擇
 
-**說明** :使用此屬性可為中繼資料元件新增簡短說明。
+**說明** : 使用此屬性可為中繼資料元件新增簡短說明。
 
-**類別**:屬性與關聯的對象類。
+**類別**: 屬性與關聯的對象類。
 
 **刪除表徵圖** ：按一下此表徵圖可從架構表單中刪除元件。
 
@@ -165,7 +180,7 @@ source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
 
 架構編輯器可讓您新增或刪除標籤。預設模式表單包 **[!UICONTROL 括Basic]**、 **[!UICONTROL Advanced]** 、 **[!UICONTROL IPTC]**&#x200B;和 **** IPTC Extension頁籤，預設情況下。
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 單 `+` 擊可在架構表單上添加新頁籤。 依預設，新標籤的名稱為 `Unnamed-1`。 您可以從「設定」索引標籤修 **[!UICONTROL 改名稱]** 。 按一 `X` 下以刪除標籤。
 
