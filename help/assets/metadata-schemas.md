@@ -3,9 +3,9 @@ title: 中繼資料結構
 description: '中繼資料結構定義屬性頁面的版面配置，以及資產所顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: baecd478801154048e8be7fc27a3fbd7d8a72f6d
+source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
 workflow-type: tm+mt
-source-wordcount: '2524'
+source-wordcount: '2511'
 ht-degree: 12%
 
 ---
@@ -31,38 +31,22 @@ ht-degree: 12%
 
    若要修改資產的MIME類型，請使用自訂中繼資料結構表單或修改現有表單。 如需詳 [細資訊，請參閱編輯中繼資料結構](metadata-schemas.md#editing-metadata-schema-forms) 表單。 如果您修改特定MIME類型的中繼資料架構，則會修改目前MIME類型資產和所有資產子類型的屬性頁面配置。 例如，在下修改 `jpeg` 架構時， `default/image` 僅會修改MIME類型資產的中繼資料配置（資產屬性） `IMAGE/JPEG`。 不過，如果您編輯預設結構，您的變更會修改所有類型資產的中繼資料配置。
 
-1. 若要檢視表單/範本清單，請按一下 AEM 標誌，然後導覽至&#x200B;**[!UICONTROL 「工具」>「資產」>「中繼資料結構描述」]**。
+## 中繼資料結構表單 {#default-metadata-schema-forms}
 
-   ![chlimage_1-37](assets/chlimage_1-173.png)
-
-## 預設可用的中繼資料結構表單 {#available-metadata-schema-templates}
+若要檢視表單／範本清單，請在介面中導 [!DNL Experience Manager] 覽至「工 **[!UICONTROL 具]** >資 **[!UICONTROL 產]** >中繼資 **[!UICONTROL 料結構]**」。
 
 [!DNL Experience Manager] 提供以下元資料架構表單模板：
 
-### 預設 {#default-template}
-
-預設 [!UICONTROL 值是] 「資產」的基本中繼資料結構表單。 以下子表單繼承預設表單的屬性：
-
-* **image** 是MIME類型為&quot;image&quot;的資產的架構表單。 例如， `image/jpeg`、 `image/png`等等。 「影像」表單包含下列子表單範本：
-   * **jpeg** 是子類型資產的架構表單 `jpeg`。
-
-   * **Tiff** 是子類型資產的架構表單 `tiff`。
-
-* **application** 是具有MIME類型資產的架構表 `application`單。 例如， `application/pdf`、 `application/zip`等等。 **pdf** 是子類型資產的架構表單 `pdf`。
-
-* **video** 是具有MIME類型的資產 `video`( `video/avi`如、 `video/mp4`等)的架構表單。
-
-### 集合 {#collection-template}
-
-系列 [!UICONTROL 是系列的] 「方案」表單。
-
-### contentfragment {#contentfragment-template}
-
-內容 [!UICONTROL 片段] 是內容片段的架構表單。
-
-### forms {#forms-template}
-
-表 [!UICONTROL 單結構] 表單與 [Adobe Experience Manager Forms相關](/help/forms/home.md)。
+| 範本 |  | 說明 |
+|---|---|---|
+| [!UICONTROL 預設] |  | 資產的基本中繼資料結構表單。 |
+|  | 以下子表單繼承預設表單的 [!UICONTROL 屬性] : |  |
+|  | <ul><li> [!UICONTROL 影像]</li></ul> | 具有MIME類型「image」的資產的架構表單，例如image/jpeg、image/png等。 <br> 影 [!UICONTROL 像表單] 包含下列子表單範本： <ul><li> [!UICONTROL jpeg]: 子類型 [!UICONTROL jpeg資產的架構表單]。</li> <li>[!UICONTROL tiff]: 子類型Tiff的資產的結構表 [!UICONTROL 單]。</li></ul> |
+|  | <ul><li> [!UICONTROL 應用程式]</li></ul> | MIME類型為「應用程式」的資產的架構表單，例如application/ pdf、application/ zip等。 <br>[!UICONTROL pdf]: 子類型pdf的資產的架構表單。 |
+|  | <ul><li>[!UICONTROL 視訊]</li></ul> | MIME類型為「video」的資產的架構表單，例如video/avi、video/mp4等。 |
+| [!UICONTROL 集合] |  | 系列的結構表單。 |
+| [!UICONTROL contentfragment] |  | 內容片段的架構表單。 |
+| [!UICONTROL 表單] |  | 此結構表單與 [Adobe Experience Manager Forms相關](/help/forms/home.md)。 |
 
 >[!NOTE]
 >
@@ -78,7 +62,7 @@ ht-degree: 12%
 
 1. 在對話框中，輸入模式表單的標題，然後按一下 **[!UICONTROL 建立]** ，完成表單建立過程。
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 ## 編輯中繼資料結構表單 {#editing-metadata-schema-forms}
 
