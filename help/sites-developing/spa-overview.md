@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+workflow-type: tm+mt
+source-wordcount: '1698'
+ht-degree: 0%
 
 ---
 
@@ -200,12 +203,16 @@ SPA編輯器SDK支援下列最低版本：
 
 您可建置其他SPA架構，以搭配AEM SPA Editor SDK使用。 請參閱 [SPA Blueprint](/help/sites-developing/spa-blueprint.md) 檔案，瞭解架構建立由模組、元件和服務組成的架構特定層，以便與AEM SPA編輯器搭配使用時必須滿足的需求。
 
+### 使用多個選擇器 {#multiple-selectors}
+
+您可以定義其他自訂選擇器，並將其用作為AEM SPA SDK所開發的SPA的一部分。 不過，這項支援需要選 `model` 擇器是第一個選擇器，而副檔名 `.json` 則 [必須符合JSON匯出器的要求。](json-exporter-components.md#multiple-selectors)
+
 ### 文字編輯器需求 {#text-editor-requirements}
 
 如果要使用在SPA中建立的文本元件的就地編輯器，則需要進行其他配置。
 
 1. 在包含文字HTML的容器包裝函式元素上設定屬性（可以是任何屬性）。 如果是WKND Journal樣本內容，則此為元 `<div>` 素，而已使用的選擇器 `data-rte-editelement`。
-1. 設定對 `editElementQuery` 應AEM文字元件上指向該選 `cq:InplaceEditingConfig` 取器的設定，例如 `data-rte-editelement`。 這可讓編輯者知道哪些HTML元素會包住HTML文字。
+1. 設定對 `editElementQuery` 應AEM文字元件上指向該選 `cq:InplaceEditingConfig` 取器的設定，例如 `data-rte-editelement`. 這可讓編輯者知道哪些HTML元素會包住HTML文字。
 
 有關如何執行此操作的示例，請參見 [WKND Journal示例內容。](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
