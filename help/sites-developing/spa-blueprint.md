@@ -9,7 +9,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 7cced63c97b36ec3ab69e2fdcd347fffc3edf947
+source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+workflow-type: tm+mt
+source-wordcount: '2128'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: 7cced63c97b36ec3ab69e2fdcd347fffc3edf947
 >
 >雖然AEM的SPA功能與架構無關，但目前僅支援React和Angular架構。
 
-若要讓作者使用AEM頁面編輯器來編輯「單頁應用程式」架構所公開的資料，專案必須能夠解譯模型的結構，以表示AEM儲存庫中應用程式所儲存資料的語義。 為了實現此目標，提供了兩個框架不可知庫：還有 `PageModelManager` 那個 `ComponentMapping`。
+若要讓作者使用AEM頁面編輯器來編輯「單頁應用程式」架構所公開的資料，專案必須能夠解譯模型的結構，以表示AEM儲存庫中應用程式所儲存資料的語義。 為了實現此目標，提供了兩個框架不可知庫： 還有 `PageModelManager` 那個 `ComponentMapping`。
 
 ### PageModelManager {#pagemodelmanager}
 
@@ -80,15 +83,15 @@ SPA元件必須與頁面模型同步，並隨之更新其內容。 必須使用�
 
 頁面模型運用JSON模型匯出器，它本身是以 [Sling Model](https://sling.apache.org/documentation/bundles/models.html) API為基礎。 可匯出的吊索模型會公開下列欄位清單，以便啟用基礎程式庫解譯資料模型：
 
-* `:type`:AEM資源的類型（預設=資源類型）
-* `:children`:當前資源的分層子項。 子項不屬於當前資源的內部內容（可在代表頁面的項目上找到）
-* `:hierarchyType`:資源的分層類型。 目前 `PageModelManager` 支援頁面類型
+* `:type`: AEM資源的類型（預設=資源類型）
+* `:children`: 當前資源的分層子項。 子項不屬於當前資源的內部內容（可在代表頁面的項目上找到）
+* `:hierarchyType`: 資源的分層類型。 目前 `PageModelManager` 支援頁面類型
 
-* `:items`:目前資源的子內容資源（巢狀結構，僅存在於容器上）
-* `:itemsOrder`:已排列子系的清單。 JSON地圖物件無法保證其欄位順序。 API的使用者同時擁有地圖和目前的陣列，可享有這兩種架構的優點
-* `:path`:項目的內容路徑（顯示在代表頁面的項目上）
+* `:items`: 目前資源的子內容資源（巢狀結構，僅存在於容器上）
+* `:itemsOrder`: 子代的有序清單。 JSON地圖物件無法保證其欄位順序。 API的使用者同時擁有地圖和目前的陣列，可享有這兩種架構的優點
+* `:path`: 項目的內容路徑（顯示在代表頁面的項目上）
 
-另請參 [閱「AEM Content services快速入門」。](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
+另請參 [閱「AEM Content Services快速入門」。](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html)
 
 ### 框架特定模組 {#framework-specific-module}
 
@@ -107,7 +110,7 @@ npm模組： [@adobe/cq-react-editable-components](https://www.npmjs.com/package
 
 #### 角度 {#angular}
 
-npm模組：即將推出
+npm模組： 即將推出
 
 ## 主要服務與元件 {#main-services-and-components}
 
@@ -127,14 +130,14 @@ Component Decorator負責裝飾每個元件實例的元素的外部HTML，並具
 
 下列中繼資料必須新增至專案元件產生的外部HTML元素。 它們可讓頁面編輯器擷取對應的編輯設定。
 
-* `data-cq-data-path`:資源相對於 `jcr:content`
+* `data-cq-data-path`: 資源相對於 `jcr:content`
 
 #### 編輯功能聲明和佔位符 {#editing-capability-declaration-and-placeholder}
 
 下列中繼資料和類別名稱必須新增至專案元件產生的外部HTML元素。 它們可讓頁面編輯器提供相關功能。
 
-* `cq-placeholder`:用於標識空元件佔位符的類名
-* `data-emptytext`:元件例項空白時，覆蓋顯示的標籤
+* `cq-placeholder`: 用於標識空元件佔位符的類名
+* `data-emptytext`: 元件例項空白時，覆蓋顯示的標籤
 
 **空元件的預留位置**
 
@@ -182,15 +185,15 @@ SPA元件會對應至圖形容器（例如回應式格線），且在製作內�
 >
 >頁面編輯器目前需要範例中使用的類別名稱。
 >
->* `"new section"`:指出目前元素是容器的預留位置
->* `"aem-Grid-newComponent"`:標準化版面製作的元件
+>* `"new section"`: 指出目前元素是容器的預留位置
+>* `"aem-Grid-newComponent"`: 標準化版面製作的元件
 >
 
 
 
 #### Component Mapping {#component-mapping}
 
-基礎組 [件映射庫](/help/sites-developing/spa-blueprint.md#componentmapping)`MapTo` 及其功能可以封裝和擴展，以提供與當前元件類附帶的編輯配置相關的功能。
+基礎庫 [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) 及其功 `MapTo` 能可以封裝和擴展，以提供與當前元件類附帶的編輯配置相關的功能。
 
 ```
 const EditConfig = {
@@ -212,7 +215,7 @@ class MyComponent extends Component {
 MapTo('component/resource/path')(MyComponent, EditConfig);
 ```
 
-在上述實施中，項目元件在實際註冊到元件映射儲存之前，以空 [洞功能擴展](/help/sites-developing/spa-blueprint.md#componentmapping) 。 這是通過封裝和擴展 [ComponentMapping庫來實現的](#componentmapping) ，它引入了對配置對 `EditConfig` 像的支援：
+在上述實施中，項目元件在實際註冊到元件映射儲存之前，以空 [洞功能擴展](/help/sites-developing/spa-blueprint.md#componentmapping) 。 通過封裝和擴展庫來 [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) 引入對配置對象的 `EditConfig` 支援：
 
 ```
 /**
@@ -235,11 +238,11 @@ MapTo('component/resource/path')(MyComponent, EditConfig);
 ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 ```
 
-## 與頁面編輯器合約 {#contract-wtih-the-page-editor}
+## 與頁面編輯器合約 {#contract-with-the-page-editor}
 
 專案元件必須至少產生下列資料屬性，才能讓編輯者與它們互動。
 
-* `data-cq-data-path`:由（例如，）提供的組 `PageModel` 件的相對路 `"root/responsivegrid/image"`徑。 不應將此屬性新增至頁面。
+* `data-cq-data-path`: 由（例如，）提供的組 `PageModel` 件的相對路 `"root/responsivegrid/image"`徑。 不應將此屬性新增至頁面。
 
 總之，要讓頁面編輯器將項目元件解釋為可編輯，項目元件必須遵守以下合同：
 
