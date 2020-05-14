@@ -3,9 +3,9 @@ title: 中繼資料結構
 description: '中繼資料結構定義屬性頁面的版面配置，以及資產所顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
+source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
 workflow-type: tm+mt
-source-wordcount: '2527'
+source-wordcount: '2528'
 ht-degree: 12%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 12%
 
 # 中繼資料結構 {#metadata-schemas}
 
-在中， [!DNL Experience Manager Assets]元資料模式定義屬性頁的佈局以及為使用特定模式的資產顯示的元資料屬性。 中繼資料屬性包括標題、說明、MIME類型、標籤等。
+在中， [!DNL Experience Manager Assets]元資料模式定義屬性頁的佈局以及為使用特定模式的資產顯示的元資料屬性。 中繼資料屬性包括標題、說明、MIME類型、標籤等。 您可以使用中繼資料結構表單編輯器來修改現有結構或新增自訂中繼資料結構。
 
-您可以使用中繼資料結構表單編輯器來修改現有結構或新增自訂中繼資料結構。 若要檢視和編輯資產的屬性頁面，請依照下列步驟進行：
+若要檢視和編輯資產的屬性頁面，請依照下列步驟進行：
 
 1. 按一下或點選「卡 **[!UICONTROL 片檢視」中資產圖格上的「檢視屬性]** 」快速動作。
 
@@ -25,7 +25,7 @@ ht-degree: 12%
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. 您可以編輯可編輯的中繼資料屬性，位於可用標籤下。 但是，您無法修改屬 [!UICONTROL 性頁面] 「基本  」索引標籤中的資產類型。
+1. 您可以編輯可用標籤下的各種可編輯中繼資料屬性。 但是，您無法修改屬 [!UICONTROL 性頁面] 「基本  」索引標籤中的資產類型。
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -62,7 +62,7 @@ ht-degree: 12%
 
 1. 在對話框中，輸入模式表單的標題，然後按一下 **[!UICONTROL 建立]** ，完成表單建立過程。
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 ## 編輯中繼資料結構表單 {#editing-metadata-schema-forms}
 
@@ -77,7 +77,7 @@ ht-degree: 12%
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. 在「元數 **[!UICONTROL 據結構編輯器]** 」頁中，通過將一個或多個元件從「構建表單」頁籤中的元件類型清單拖到「基本」頁籤，自定義資產的屬性頁 ******** 。
 
@@ -112,7 +112,7 @@ ht-degree: 12%
 
 **欄位標籤**: 顯示在資產屬性頁面上的中繼資料屬性名稱。
 
-**對應至屬性**: 此屬性指定資產節點的相對路徑／名稱，該資產節點保存在CRX儲存庫中。 它以開 `./` 頭，因為它表示路徑位於資產的節點下。
+**對應至屬性**: 此屬性指定資產節點的相對路徑／名稱，該資產節點保存在CRX儲存庫中。 開頭為 `./` 因為表示路徑位於資產節點下。
 
 以下是此屬性的有效值：
 
@@ -164,7 +164,7 @@ ht-degree: 12%
 
 架構編輯器可讓您新增或刪除標籤。預設模式表單包 **[!UICONTROL 括Basic]**、 **[!UICONTROL Advanced]** 、 **[!UICONTROL IPTC]**&#x200B;和 **** IPTC Extension頁籤，預設情況下。
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 單 `+` 擊可在架構表單上添加新頁籤。 依預設，新標籤的名稱為 `Unnamed-1`。 您可以從「設定」索引標籤修 **[!UICONTROL 改名稱]** 。 按一 `X` 下以刪除標籤。
 
