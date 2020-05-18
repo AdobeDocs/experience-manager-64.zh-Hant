@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ef00b3d307e01807f90bad8c8fde278204470bc3
+source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 4%
 
 ---
 
@@ -27,22 +30,50 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 ## 新增動態媒體元件至頁面 {#adding-a-dynamic-media-component-to-a-page}
 
-將動態媒體或互動媒體元件新增至頁面，與將元件新增至任何頁面相同。 以下各節將詳細說明動態媒體和互動式媒體元件。
+新增動態媒體元件至頁面與新增元件至任何頁面相同。 Dynamic Media元件在下列章節中有詳細說明。
 
 >[!NOTE]
 >
->如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷；由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
+>如果網頁上有動態媒體元件由具有唯讀權限的使用者存取，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷； 由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
 >  
 >若要避免此問題，請確定AEM Sites使用者擁有必要的存取資產權限。
 
-1. 在AEM中，開啟您要新增動態媒體或互動媒體元件的頁面。
-1. 在左窗格中，按一下「 **[!UICONTROL 元件]** 」圖示並篩選 **[!UICONTROL 動態媒體]**。 如果沒有可用的動態媒體元件，您必須啟用動態媒體元件。 如需詳 [細資訊，請參閱編輯頁面範本](/help/sites-authoring/templates.md#editing-templates-template-authors) 。
+1. 在AEM中，開啟您要新增動態媒體元件的頁面。
+1. 在頁面左側的面板（您可能需要切換側面板的顯示）中，按一下「元件」 **[!UICONTROL 圖示]** 。
+1. 在「元 **[!UICONTROL 件]** 」標題下方的下拉式清單中，選取「動 **[!UICONTROL 態媒體」]**。 如果沒有可用的動態媒體元件清單，您可能需要啟用您要使用的動態媒體元件。 請參閱 [啟用動態媒體元件](#enabling-dynamic-media-components)。
 
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
-1. 將 **[!UICONTROL Dynamic Media]** 或 **** Interactive Media元件拖曳至所需位置的頁面。
+1. 將您要使用的動態媒體元件拖曳至所需位置的頁面。
 1. 按一下元件周圍的藍色方塊，然後點選「 **[!UICONTROL Configuration]** （扳手）」圖示。
 1. [視需要編輯元件](#dynamic-media-components) ，然後按一下核取標籤以儲存變更。
+
+### 啟用動態媒體元件 {#enabling-dynamic-media-components}
+
+如果沒有可新增至頁面的動態媒體元件，可能表示您需要啟用元件。
+
+1. 在AEM中，開啟您要新增動態媒體元件的頁面。
+1. 在工具列的左側，在頁面頂端附近點選「頁面資訊」圖示，然後從下拉式清單中點選「 **[!UICONTROL Edit Template]** 」（編輯範本）。
+
+   ![edit-template](/help/assets/assets-dm/edit-template.png)
+
+1. 在工具列右側，靠近頁面頂部，從下拉式清單中點選「結構」( **[!UICONTROL Structure]**)。
+
+![政策](/help/assets/assets-dm/structure-mode.png)
+
+1. 在頁面底部附近，點選「 **[!UICONTROL Layout Container]** 」以開啟其工具列，然後點選「Policy」（原則）圖示。
+1. 在「配 **[!UICONTROL 置容器]** 」頁面的「屬性」標題下，請確定已選取「允 **[!UICONTROL 許的元件]****** 」標籤。
+
+![允許的元件](/help/assets/assets-dm/allowed-components.png)
+
+1. 捲動直到您看到 **[!UICONTROL 動態媒體]**。
+1. 點選 **[!UICONTROL Dynamic Media]** （動態媒體）左側的>圖示以展開清單，選取您要啟用的動態媒體元件。
+
+![動態媒體元件清單](/help/assets/assets-dm/dm-components-select.png)
+
+1. 在「版面容器」頁面的右上角 **[!UICONTROL 附近]** ，點選「完成（勾選）」圖示。
+
+1. 在工具列的右側，靠近頁面頂端，從下拉式清單中點選「初始內容 **[!UICONTROL 」，然]**&#x200B;後照常將動態媒體元件新增至頁面 [](#adding-a-dynamic-media-component-to-a-page) 。
 
 ## 本地化動態媒體元件 {#localizing-dynamic-media-components}
 
@@ -74,7 +105,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 >[!NOTE]
 >
->如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷；由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
+>如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷； 由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
 >  
 >若要避免此問題，請確定AEM Sites使用者擁有必要的存取資產權限。
 
@@ -191,7 +222,7 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 
 >[!NOTE]
 >
->如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷；由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
+>如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷； 由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
 > 
 >若要避免此問題，請確定AEM Sites使用者擁有必要的存取資產權限。
 
