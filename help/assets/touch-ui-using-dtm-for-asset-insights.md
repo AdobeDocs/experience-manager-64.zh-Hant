@@ -3,7 +3,10 @@ title: 透過DTM啟用資產見解
 description: 瞭解如何使用Adobe動態標籤管理(DTM)來啟用資產分析。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '629'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Adobe動態標籤管理是可啟動數位行銷工具的工具。 Adobe Analytic
    * 視需要更新欄位，並點選／按一下「 **[!UICONTROL 建立屬性]** 」( [請參閱檔案](https://helpx.adobe.com/experience-manager/using/dtm.html))。
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
-1. 在「規 **[!UICONTROL 則]** 」標籤中，從導覽窗格 **[!UICONTROL 選取「頁面載入規則]** 」，並點選／按一 **[!UICONTROL 下「建立新規則」]**。
+1. 在「規 **[!UICONTROL 則]** 」標籤中，從導覽窗格 **[!UICONTROL 選取「頁面載入規則]** 」，並點選／按一下「 **[!UICONTROL 建立新規則」]**。
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -64,7 +67,7 @@ Adobe動態標籤管理是可啟動數位行銷工具的工具。 Adobe Analytic
 
 1. 在視窗中貼上下列程式碼：
 
-   ```
+   ```java
    var sObj;
    
    if (arguments.length > 0) {
