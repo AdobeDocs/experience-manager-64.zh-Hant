@@ -3,7 +3,10 @@ title: 從 AEM 下載資產
 description: 瞭解如何從AEM下載資產並啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '768'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 ![從AEM Assets下載資產時的可用選項](assets/asset_download_dialog.png)
 
-以下是「匯出／下載」選項。 動態轉譯是Dynamic media獨有的，可讓您除了選取的資產外，即時產生轉譯——只有在您啟用「動態媒體」時，這個選項才可用。
+以下是「匯出／下載」選項。 動態轉譯是Dynamic Media獨有的，可讓您除了選取的資產外，即時產生轉譯——只有在您啟用「動態媒體」時，這個選項才可用。
 
 | 匯出或下載選項 | 說明 |
 |---|---|
@@ -48,7 +51,7 @@ AEM中的預設servlet可讓已驗證的使用者發出任意大型的並行下�
 1. 在config資料夾中，建立名為的新文 `nt:file` 件 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`。
 1. 填 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config` 入下列。 將下載的最大大小（以位元組為單位）設定為值 `asset.download.prezip.maxcontentsize`。 下面的示例將ZIP下載的最大大小配置為不超過100 kB。
 
-```
+```java
 enabled=B"true"
 asset.download.prezip.maxcontentsize=I"102400"
 ```
@@ -57,9 +60,7 @@ asset.download.prezip.maxcontentsize=I"102400"
 
 您可 `Asset Download Servlet` 以在AEM Publish例項上停用此功能，方法是更新分派器組態以封鎖任何資產下載請求。 也可以通過OSGi控制台手動禁用servlet。
 
-1. 若要透過分派器設定封鎖資產下載請求，請編 `dispatcher.any` 輯設定，並新增規則至篩 [選區段](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)。
-
-   ```/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }```
+1. 若要透過分派器設定封鎖資產下載請求，請編 `dispatcher.any` 輯設定並新增規則至篩選 [器區段](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter) `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 您可以在Publish實例上手動禁用OSGi元件，方法是導航到位於的OSGi控制台 `<aem-host>/system/console/components`。 找到並 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` 按一下「 **[!UICONTROL Disable]**（禁用）」。
 
@@ -67,5 +68,5 @@ asset.download.prezip.maxcontentsize=I"102400"
 >
 >* [下載受DRM保護的資產](drm.md)
 >* [在Win或Mac案頭上使用AEM案頭應用程式下載資產](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)
->* [從支援的Adobe Creative cloud應用程式使用Adobe Assets Link下載資產](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [從支援的Adobe Creative Cloud應用程式使用Adobe Assets Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)
 
