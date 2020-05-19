@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2865'
 ht-degree: 4%
 
 ---
@@ -45,12 +45,13 @@ To add the dynamic media functionality to assets you use on your websites, you c
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. 將您要使用的動態媒體元件拖曳至所需位置的頁面。
-1. 按一下元件周圍的藍色方塊，然後點選「 **[!UICONTROL Configuration]** （扳手）」圖示。
+1. 將滑鼠指標直接暫留在元件上。 當元件被藍色方塊包圍時，點選一次即可顯示元件的工具列。 點選「 **[!UICONTROL Configuration]** （扳手）」圖示。
 1. [視需要編輯元件](#dynamic-media-components) ，然後按一下核取標籤以儲存變更。
+1. 
 
 ### 啟用動態媒體元件 {#enabling-dynamic-media-components}
 
-如果沒有可新增至頁面的動態媒體元件，可能表示您需要啟用元件。
+如果沒有可新增至頁面的動態媒體元件，可能表示您必須先啟用要使用的元件。
 
 1. 在AEM中，開啟您要新增動態媒體元件的頁面。
 1. 在工具列的左側，在頁面頂端附近點選「頁面資訊」圖示，然後從下拉式清單中點選「 **[!UICONTROL Edit Template]** 」（編輯範本）。
@@ -59,17 +60,17 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 1. 在工具列右側，靠近頁面頂部，從下拉式清單中點選「結構」( **[!UICONTROL Structure]**)。
 
-![政策](/help/assets/assets-dm/structure-mode.png)
+   ![政策](/help/assets/assets-dm/structure-mode.png)
 
 1. 在頁面底部附近，點選「 **[!UICONTROL Layout Container]** 」以開啟其工具列，然後點選「Policy」（原則）圖示。
 1. 在「配 **[!UICONTROL 置容器]** 」頁面的「屬性」標題下，請確定已選取「允 **[!UICONTROL 許的元件]****** 」標籤。
 
-![允許的元件](/help/assets/assets-dm/allowed-components.png)
+   ![允許的元件](/help/assets/assets-dm/allowed-components.png)
 
 1. 捲動直到您看到 **[!UICONTROL 動態媒體]**。
 1. 點選 **[!UICONTROL Dynamic Media]** （動態媒體）左側的>圖示以展開清單，選取您要啟用的動態媒體元件。
 
-![動態媒體元件清單](/help/assets/assets-dm/dm-components-select.png)
+   ![動態媒體元件清單](/help/assets/assets-dm/dm-components-select.png)
 
 1. 在「版面容器」頁面的右上角 **[!UICONTROL 附近]** ，點選「完成（勾選）」圖示。
 
