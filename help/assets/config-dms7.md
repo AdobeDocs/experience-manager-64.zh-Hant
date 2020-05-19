@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 48f7e9ca8038ab0217af251be31b4b0e98f75912
+workflow-type: tm+mt
+source-wordcount: '5552'
+ht-degree: 3%
 
 ---
 
@@ -23,11 +26,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 以下架構圖說明Dynamic Media - Scene7模式的運作方式。
 
-有了新的架構，AEM負責主要資產並與Dynamic media同步，以處理和發佈資產：
+有了新的架構，AEM負責主要資產並與Dynamic Media同步，以處理和發佈資產：
 
-1. 當主資產上傳至AEM時，它會複製至Dynamic Media。 此時，Dynamic media會處理所有資產處理和轉譯產生，例如影像的視訊編碼和動態變數。
+1. 當主資產上傳至AEM時，它會複製至Dynamic Media。 此時，Dynamic Media會處理所有資產處理和轉譯產生，例如影像的視訊編碼和動態變數。
 1. 產生轉譯後，AEM可以安全地存取和預覽遠端的Dynamic Media轉譯（不會將二進位檔傳回至AEM例項）。
-1. 內容準備好發佈及核准後，它會觸發Dynamic media服務將內容推出至傳送伺服器，並在CDN快取內容。
+1. 內容準備好發佈及核准後，它會觸發Dynamic Media服務將內容推出至傳送伺服器，並在CDN快取內容。
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -69,13 +72,13 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## Configuring Dynamic Media Cloud Services {#configuring-dynamic-media-cloud-services}
 
-在您設定Dynamic Media cloud服務之前，請變更密碼。 在您收到具有動態媒體憑證的布建電子郵件後， [您必須登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
+在您設定Dynamic Media Cloud服務之前，請變更密碼。 在您收到具有動態媒體憑證的布建電子郵件後， [您必須登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
 
 >[!NOTE]
 >
 >依預設，雲端服務的設定路徑為 `/content/dam`。 任何其他設定路徑都不受Dynamic Media - Scene7模式支援。
 
-若要設定Dynamic Media cloud服務：
+若要設定Dynamic Media Cloud服務：
 
 1. 在AEM中，點選AEM標誌以存取全域導覽主控台，並點選「工具」圖示，然後點選「 **[!UICONTROL Cloud Services >動態媒體設定」]**。
 1. 在「動態媒體設定瀏覽器」頁面的左窗格中，點選全域 **[!UICONTROL 並點]** 選「 **[!UICONTROL 建立」]**。 請勿點選或選取全域左側的資料夾 [!UICONTROL 圖示]。
@@ -85,7 +88,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    >[!NOTE]
    >
-   >在您收到具有動態媒體憑證的布建電子郵件後，請 [登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media cloud服務。
+   >在您收到具有動態媒體憑證的布建電子郵件後，請 [登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud服務。
 
 1. 如果連接成功，您還可以設定以下內容：
 
@@ -106,14 +109,14 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 1. 點選「 **[!UICONTROL 儲存]**」。
 1. 若要在動態媒體內容發佈之前安全地預覽，您必須將AEM作者例項「白名單」以連線至動態媒體：
 
-   * 登入您的Dynamic Media Classic帳戶： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
+   * 登入您的Dynamic Media Classic帳戶： [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). 您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
    * 在頁面右上角的導覽列上，點選「設定>應用程 **[!UICONTROL 式設定>發佈設定>影像伺服器」]**。
    * 在「影像伺服器發佈」頁面的「發佈內容」下拉式清單中，選取「測試影 **[!UICONTROL 像伺服」]**。
    * 在「用戶端位址篩選」中，點選「 **[!UICONTROL 新增」]**。
    * 選取核取方塊以啟用（開啟）此位址，然後輸入AEM Author例項的IP位址（而非Dispatcher IP）。
    * 點選「 **[!UICONTROL 儲存]**」。
 
-您現在已完成基本配置；您已準備好使用Dynamic Media - Scene7模式。
+您現在已完成基本配置； 您已準備好使用Dynamic Media - Scene7模式。
 
 如果您想要進一步自訂設定，可以選擇性地完成「在動態媒體- Scene7模式中設定進階設定」 [（選用）下的任何工作](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)。
 
@@ -145,7 +148,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
 
-若要設定發佈設定：在Dynamic Media Classic中，點選「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」]**。
+若要設定發佈設定： 在Dynamic Media Classic中，點選「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」]**。
 
 「影像伺服器」畫面會建立傳送影像的預設設定。 請參閱使用者介面以取得每個設定的說明。
 
@@ -163,7 +166,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 **[!UICONTROL 伺服器]** -在帳戶布建時，動態媒體會自動為您的公司提供指派的伺服器。 這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非AEM支援明確指示，否則請勿變更任何伺服器名稱。
 
-**[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
+**[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產： 不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
 
 * **[!UICONTROL 覆寫目前檔案夾中的基本影像名稱／副檔名]** -此選項是最嚴格的取代規則。 它要求您將取代影像上傳至與原始影像相同的檔案夾，而取代影像的副檔名與原始影像的副檔名相同。 如果這些需求未達成，則會建立復本。
 
@@ -171,7 +174,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 >
 >若要與AEM保持一致性，請選取「在目 **[!UICONTROL 前檔案夾中覆寫，相同的基本影像名稱／副檔名]**」。
 
-* **[!UICONTROL 在任何資料夾中覆寫基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同(例如，取代 `chair.jpg` 而非 `chair.jpg``chair.tif`)。 不過，您可以將取代的影像上傳到原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
+* **[!UICONTROL 在任何資料夾中覆寫基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同(例如，取代 `chair.jpg` 而非 `chair.jpg``chair.tif`)。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中； 在檔案的原始位置中無法再找到該檔案。
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。 您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
 
 **[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，請參閱設定](#configuring-color-management) 色彩管理。
@@ -211,7 +214,7 @@ For example, you could set the **[!UICONTROL RGB Default Color Space]** to `sRGB
 
 #### 設定資產處理 {#configuring-asset-processing}
 
-您可以定義Dynamic media應處理哪些資產類型，並自訂進階資產處理參數。 例如，您可以指定資產處理參數以執行下列作業：
+您可以定義Dynamic Media應處理哪些資產類型，並自訂進階資產處理參數。 例如，您可以指定資產處理參數以執行下列作業：
 
 * 將Adobe PDF轉換為eCatalog資產。
 * 將Adobe Photoshop檔案(.PSD)轉換為橫幅範本資產，以利個人化。
@@ -347,7 +350,7 @@ For example, you could set the **[!UICONTROL RGB Default Color Space]** to `sRGB
 
 動態媒體使用批次集預設集將資產組織成一組影像（替代影像、顏色選項、360回轉），以便在檢視器中顯示。 批次集預設集會自動在動態媒體中與資產上傳程式一起執行。
 
-您可以建立、編輯和管理批次集預設集。 批集預設定義有兩種形式：一個代表您可能已設定的預設命名慣例，另一個代表您即時建立的自訂命名慣例。
+您可以建立、編輯和管理批次集預設集。 批集預設定義有兩種形式： 一個代表您可能已設定的預設命名慣例，另一個代表您即時建立的自訂命名慣例。
 
 您可以使用表單欄位方法來定義批次集預設集，或使用程式碼方法來使用規則運算式。 如同在預設命名中，您可以在「表單檢視」中定義的同時選擇「 [!UICONTROL View Code] 」（檢視程式碼），並使用規則運算式來建立您的定義。 或者，您可以取消選中任一視圖以獨佔使用一個視圖或另一個視圖。
 
@@ -466,11 +469,26 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 ### （可選）調整動態媒體- Scene7模式的效能 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-為了讓動態媒體（具有dynamicmedia_scene7執行模式）順利執行，Adobe建議使用下列同步效能／延展性微調提示：
+為了讓Dynamic Media - Scene7模式順利執行，Adobe建議使用下列同步效能／延展性微調提示：
 
+* 更新預定義的作業參數，以處理不同的檔案格式。
 * 更新預先定義的Granite工作流程（視訊資產）佇列工作程式執行緒。
-* 更新預先定義的Granite暫時性工作流程（影像和非視訊資產）佇列工作線程。
-* 更新Dynamic Media Classic伺服器的上傳連線上限。
+* 更新預先定義的Granite暫時工作流程（影像和非視訊資產）佇列工作線程。
+* 更新到Dynamic Media Classic伺服器的上傳連線上限。
+
+#### 更新預定義的作業參數，以處理不同的檔案格式
+
+您可以在上傳檔案時調整工作參數，以加快處理速度。 例如，如果您上傳PSD檔案，但不想以範本的形式處理，則可將圖層擷取設為false(off)。 在這種情況下，已調整的作業參數將顯示為 `process=None&createTemplate=false`。
+
+Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作參數：
+
+| 檔案類型 | 建議的作業參數 |
+| ---| ---|
+| PDF | `pdfprocess=Rasterize&resolution=150&colorspace=Auto&pdfbrochure=false&keywords=false&links=false` |
+| Postscript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Rasterize&airesolution=150&aicolorspace=Auto&aialpha=false` |
+| PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
+
+若要更新這些參數，請遵循啟用 [MIME類型型資產／動態媒體經典上傳工作參數支援中的步驟](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
 
 #### 更新Granite瞬態工作流隊列 {#updating-the-granite-transient-workflow-queue}
 
@@ -478,7 +496,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 **要更新Granite瞬態工作流隊列**:
 
-1. 導覽至 [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) ，並搜尋 **[!UICONTROL 佇列：Granite暫時工作流程佇列]**。
+1. 導覽至 [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) ，並搜尋 **[!UICONTROL 佇列： Granite暫時工作流程佇列]**。
 
    >[!NOTE]
    >
@@ -500,7 +518,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 **要更新Granite工作流隊列，請執行以下操作：**
 
-1. 導覽至 `https://<server>/system/console/configMgr` 並搜尋佇 **[!UICONTROL 列：Granite工作流程佇列]**。
+1. 導覽至 `https://<server>/system/console/configMgr` 並搜尋佇 **[!UICONTROL 列： Granite工作流程佇列]**。
 
    >[!NOTE]
    >
@@ -525,7 +543,7 @@ Scene7「上傳連線」設定會將AEM資產同步至Dynamic Media Classic伺�
 1. 導航到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在「連 [!UICONTROL 接數」欄位] 和／或「作 [!UICONTROL 用中作業逾時」欄位中] ，視需要變更數目。
 
-   「連 **[!UICONTROL 線數」設定]** ，會控制AEM至「動態媒體」上傳所允許的HTTP連線數上限；通常，10個連接的預定義值就足夠了。
+   「連 **[!UICONTROL 線數」設定]** ，會控制AEM至「動態媒體」上傳所允許的HTTP連線數上限； 通常，10個連接的預定義值就足夠了。
 
    「作 **[!UICONTROL 用中工作逾時]** 」設定會決定上傳之動態媒體資產在傳送伺服器中發佈的等待時間。 此值預設為2100秒或35分鐘。
 
@@ -570,7 +588,7 @@ Scene7「上傳連線」設定會將AEM資產同步至Dynamic Media Classic伺�
    <td>開始於 <strong>影片/</strong></td> 
    <td>現成可用的「filter-video」將： 
     <ul> 
-     <li><br /> 排除原始視訊和靜態縮圖轉譯的複製。 <br /> </li> 
+     <li>排除原始視訊和靜態縮圖轉譯的複製。<br /> <br /> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
