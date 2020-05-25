@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
    * [典型部署](#typical-deployment-scenarios)
 
       * [內部部署](#on-premise)
-      * [使用Cloud manager的受管理服務](#managed-services-using-cloud-manager)
+      * [使用Cloud Manager的受管理服務](#managed-services-using-cloud-manager)
 
 * [快速入門](#getting-started)
 
@@ -48,13 +51,13 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
 * [升級至AEM 6.4](/help/sites-deploying/upgrade.md)
 * [電子商務](/help/sites-deploying/ecommerce.md)
 * [設定操作說明文章](/help/sites-deploying/ht-deploy.md)
-* [Web 控制台](/help/sites-deploying/web-console.md)
+* [Web 主控台](/help/sites-deploying/web-console.md)
 * [複製故障排除](/help/sites-deploying/troubleshoot-rep.md)
 * [最佳實務](/help/sites-deploying/best-practices.md)
 * [部署社群](/help/communities/deploy-communities.md)
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 * [效能准則](/help/sites-deploying/performance-guidelines.md)
-* [AEM mobile快速入門](/help/mobile/getting-started-aem-mobile.md)
+* [AEM Mobile快速入門](/help/mobile/getting-started-aem-mobile.md)
 * [更新發行工具定義](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [什麼是AEM Screens?](/help/screens/aem-screens-introduction.md)
 
@@ -62,13 +65,13 @@ source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
 
 ### 什麼是AEM? {#what-is-aem}
 
-Adobe Experience manager是一套基於Web的主從式系統，用於建立、管理和部署商業網站及相關服務。 它將許多基礎架構級別和應用程式級別的功能結合到單個整合軟體包中。
+Adobe Experience Manager是一套基於Web的主從式系統，用於建立、管理和部署商業網站及相關服務。 它將許多基礎架構級別和應用程式級別的功能結合到單個整合軟體包中。
 
 在基礎架構層級，AEM提供下列功能：
 
-* **Web應用程式伺服器**:AEM可部署在獨立模式（其中包含整合的Jetty Web伺服器），或部署為協力廠商應用程式伺服器（WebLogic、WebSphere等）中的Web應用程式。
-* **Web應用程式框架**:AEM整合了Sling Web Application Framework，可簡化REST風格、內容導向網頁應用程式的編寫。
-* **內容儲存庫**:AEM包含Java內容儲存庫(JCR)，這是一種階層式資料庫，專為非結構化和半結構化資料而設計。 儲存庫不僅儲存面向用戶的內容，還儲存應用程式使用的所有代碼、模板和內部資料。
+* **Web應用程式伺服器**: AEM可部署在獨立模式（其中包含整合的Jetty Web伺服器），或部署為協力廠商應用程式伺服器（WebLogic、WebSphere等）中的Web應用程式。
+* **Web應用程式框架**: AEM整合了Sling Web Application Framework，可簡化REST風格、內容導向網頁應用程式的編寫。
+* **內容儲存庫**: AEM包含Java內容儲存庫(JCR)，這是一種階層式資料庫，專為非結構化和半結構化資料而設計。 儲存庫不僅儲存面向用戶的內容，還儲存應用程式使用的所有代碼、模板和內部資料。
 
 AEM也以此為基礎，提供許多應用程式層級的功能，以管理：
 
@@ -88,44 +91,44 @@ AEM伺服器是以 **Java為基礎** ，並可在支援該平台的大部分作�
 
 在AEM術語中，「例項」是伺服器上執行的AEM復本。 AEM安裝通常至少需要兩個例項，通常在不同的電腦上執行：
 
-* **作者**:用於建立、上傳和編輯內容以及管理網站的AEM例項。 內容一旦準備好上線，就會複製到發佈實例。
-* **發佈**:為公眾提供已發佈內容的AEM例項。
+* **作者**: 用於建立、上傳和編輯內容以及管理網站的AEM例項。 內容一旦準備好上線，就會複製到發佈實例。
+* **發佈**: 為公眾提供已發佈內容的AEM例項。
 
 這些實例與已安裝的軟體相同。 它們僅按配置區分。 此外，大多數安裝都使用調度程式：
 
-* **Dispatcher**:靜態Web伺服器（Apache httpd、Microsoft IIS等）已擴充至AEM Dispatcher模組。 它會快取由發佈例項產生的網頁，以改善效能。
+* **Dispatcher**: 靜態Web伺服器（Apache httpd、Microsoft IIS等） 已擴充至AEM Dispatcher模組。 它會快取由發佈例項產生的網頁，以改善效能。
 
 該系統有許多高級選項和詳細說明，但作者、發佈和調度器的基本模式是大多數部署的核心。 首先，我們將關注一個相對簡單的機構。 下面將討論高級部署選項。
 
 以下幾節將說明這兩種情況：
 
-* **內部部署**:AEM已部署並管理在您的公司環境中。
+* **內部部署**: AEM已部署並管理在您的公司環境中。
 
-* **受管理服務——適用於Adobe Experience Manager的Cloud Manager**:由Adobe Managed services部署和管理的AEM。
+* **受管理服務——適用於Adobe Experience Manager的Cloud Manager**: 由Adobe Managed Services部署和管理的AEM。
 
 ### On-premise {#on-premise}
 
-您可以在公司環境的伺服器上安裝AEM。 典型安裝實例包括：開發、測試和發佈環境。 如需如何讓AEM軟 [](/help/sites-deploying/deploy.md#getting-started) 體在本機安裝的基本詳細資訊，請參閱「快速入門」一節。
+您可以在公司環境的伺服器上安裝AEM。 典型安裝實例包括： 開發、測試和發佈環境。 如需如何讓AEM軟 [](/help/sites-deploying/deploy.md#getting-started) 體在本機安裝的基本詳細資訊，請參閱「快速入門」一節。
 
 若要進一步瞭解典型的內部部署，請參閱建議 [的部署](/help/sites-deploying/recommended-deploys.md)。
 
-### 使用Cloud manager的受管理服務 {#managed-services-using-cloud-manager}
+### 使用Cloud Manager的受管理服務 {#managed-services-using-cloud-manager}
 
-AEM Managed services是數位體驗管理的完整解決方案。 它提供雲端體驗傳遞解決方案的優點，同時保留內部部署的所有控制、安全性和自訂優點。 AEM Managed services可讓客戶透過部署在雲端，以及依賴Adobe的最佳實務與支援，以更快速地啟動產品。 企業組織和商業使用者可以在最短的時間內吸引客戶，推動市場份額，並專注於創新的行銷宣傳，同時減輕IT人員的負擔。
+AEM Managed Services是數位體驗管理的完整解決方案。 它提供雲端體驗傳遞解決方案的優點，同時保留內部部署的所有控制、安全性和自訂優點。 AEM Managed Services可讓客戶透過部署在雲端，以及仰賴Adobe的最佳實務與支援，以更快的速度啟動產品。 企業組織和商業使用者可以在最短的時間內吸引客戶，推動市場份額，並專注於創新的行銷宣傳，同時減輕IT人員的負擔。
 
 有了AEM Managed Services，客戶就可以獲得下列好處：
 
-**** 縮短上市時間：有了Adobe Managed services的靈活雲端基礎架構，企業組織可以快速規劃、啟動並最佳化成功的數位體驗。 Adobe管理雲端架構時不需額外的資金、硬體或軟體，Adobe的客戶成功工程師可協助您處理AEM架構、布建、自訂以連接至後端應用程式和上線最佳實務。
+**縮短上市時間：** 有了Adobe Managed Services的靈活雲端基礎架構，企業組織可以快速規劃、啟動並最佳化成功的數位體驗。 Adobe管理雲端架構時不需額外的資金、硬體或軟體，Adobe的客戶成功工程師可協助您處理AEM架構、布建、自訂以連接至後端應用程式和上線最佳實務。
 
-**** 更高的效能：提供可靠的數位體驗，包括4個服務可用性選項：99.5%、99.9%、99.95%和99.99%。 此外，它還允許自動備份和多模式災難恢復模型，以幫助確保可靠性和應急管理。
+**更高的效能：** 提供可靠的數位體驗，包括4個服務可用性選項：99.5%、99.9%、99.95%和99.99%。 此外，它還允許自動備份和多模式災難恢復模型，以幫助確保可靠性和應急管理。
 
-**** 優化的IT成本：主動引導和專業知識可協助組織掌握最新版AEM。 Adobe白金級維護與支援會自動納入AMS企業／基礎的新部署，提供技術專業知識和營運經驗，以協助組織維護其關鍵任務應用程式。 免費的基本Analytics或Target功能可為分析和個人化需求有限的中端市場組織提供額外價值。
+**優化的IT成本：** 主動引導和專業知識可協助組織掌握最新版AEM。 Adobe白金級維護與支援會自動納入AMS企業／基礎的新部署，提供技術專業知識和營運經驗，以協助組織維護其關鍵任務應用程式。 免費的基本Analytics或Target功能可為分析和個人化需求有限的中端市場組織提供額外價值。
 
-**** 最高安全性：將客戶應用程式托管在受限存取的設施、防火牆系統後或虛擬專用雲端，以確保企業級的物理、網路和資料安全。 它包含單一租用戶虛擬機，具備強穩的資料儲存加密、抗病毒和資料隔離功能。
+**最高安全性：** 將客戶應用程式托管在受限存取的設施、防火牆系統後或虛擬專用雲端，以確保企業級的物理、網路和資料安全。 它包含單一租用戶虛擬機，具備強穩的資料儲存加密、抗病毒和資料隔離功能。
 
-**Cloud Manager**:Cloud Manager是Adobe Experience Manager Managed services產品的一部分，是自助服務入口網站，可讓組織在雲端自行管理Adobe Experience Manager。 它包含最新的持續整合與持續傳送(CI/CD)管道，可讓IT團隊與實施合作夥伴加速傳送自訂或更新，而不影響效能或安全性。 Cloud manager僅適用於Adobe Managed service客戶。
+**Cloud Manager**: Cloud Manager是Adobe Experience Manager Managed Services產品的一部分，是自助服務入口網站，可讓組織在雲端自行管理Adobe Experience Manager。 它包含最新的持續整合與持續傳送(CI/CD)管道，可讓IT團隊與實施合作夥伴加速傳送自訂或更新，而不影響效能或安全性。 Cloud Manager僅適用於Adobe Managed Service客戶。
 
-若要進一步瞭解Cloud Manager及其資源，請參閱 [**Cloud Manager使用指南&#x200B;**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)。
+若要進一步瞭解Cloud Manager及其資源，請參閱《 [**Cloud Manager使用指南》**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)。
 
 ## 快速入門 {#getting-started}
 
@@ -133,19 +136,19 @@ AEM Managed services是數位體驗管理的完整解決方案。 它提供雲�
 
 雖然生產例項通常在執行正式支援作業系統的專用機器上執行(請參閱 [Technical Requirements](/help/sites-deploying/technical-requirements.md))，但Experience Manager伺服器實際上將可在支援 [**Java Standard Edition 8的任何系統上執行&#x200B;**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)。
 
-為了熟悉情況並在AEM上開發，您很常會使用安裝在執行Apple OS x或Microsoft windows或Linux案頭版本之本機電腦上的執行個體。
+為了熟悉情況並在AEM上開發，您很常會使用安裝在執行Apple OS X或Microsoft Windows或Linux案頭版本之本機電腦上的執行個體。
 
 在用戶端上，AEM可與所有現代瀏覽器(**Microsoft Edge**、 **Internet Explorer 11、** Chrome **51+、********** Firefox47+、Safari Adoging Tablet+)搭配使用，並可在桌上型電腦和作業系統上使用Afari Adoging。 如需詳 [細資訊，請參閱支援的](/help/sites-deploying/technical-requirements.md#supported-client-platforms) 「用戶端平台」。
 
 ### 取得軟體 {#getting-the-software}
 
-擁有有效維護與支援合約的客戶應該已收到含有程式碼的電子郵件通知，並可從 [**Adobe授權網站下載AEM **](https://licensing.adobe.com/)。 商業合作夥伴可要求從spphelp@adobe.com取得下載[**存取權**](mailto:spphelp@adobe.com)。
+擁有有效維護與支援合約的客戶應該已收到含有程式碼的電子郵件通知，並可從 [**Adobe授權網站下載AEM **](https://licensing.adobe.com/)。 商業合作夥伴可要求從spphelp@adobe.com取得下載[**存取權&#x200B;**](mailto:spphelp@adobe.com)。
 
 AEM軟體套件提供兩種格式：
 
-* **** cq-quickstart-6.4.0.jar:獨立的可執 *行檔案* jar檔案，包含啟動和運行所需的一切。
+* **cq-quickstart-6.4.0.jar:** 獨立的可執 *行檔案* jar檔案，包含啟動和運行所需的一切。
 
-* **** cq-quickstart-6.4.0.war:用於 *在協力廠商* （協力廠商）應用程式伺服器中部署的war檔案。
+* **cq-quickstart-6.4.0.war:** 用於 *在協力廠商* （協力廠商）應用程式伺服器中部署的war檔案。
 
 在下節中，我們將說明獨立 **安裝**。 如需在應用程式伺服器中安裝AEM的詳細資訊，請參閱「應用 [程式伺服器安裝」](/help/sites-deploying/application-server-install.md)。
 
@@ -274,16 +277,16 @@ AEM需要幾分鐘的時間才能解壓縮jar檔案、自行安裝並啟動。 �
 
 此資料夾包含以下Unix bash shell指令碼：
 
-* **`start`**:啟動實例
-* `stop`:停止實例
-* **`status`**:報告實例的狀態
-* **`quickstart`**:用於配置啟動資訊（如果需要）。
+* **`start`**: 啟動實例
+* `stop`: 停止實例
+* **`status`**: 報告實例的狀態
+* **`quickstart`**: 用於配置啟動資訊（如果需要）。
 
 此外，Windows也有相 **`bat`** 當的檔案。 如需詳細資訊，請參閱：
 
 * [命令行啟動和停止](/help/sites-deploying/command-line-start-and-stop.md)
 
-AEM會啟動您的網頁瀏覽器並自動將其重新導向至適當的頁面，通常是登入頁面；例如：
+AEM會啟動您的網頁瀏覽器並自動將其重新導向至適當的頁面，通常是登入頁面； 例如：
 
 `http://localhost:4502/`
 
@@ -310,13 +313,13 @@ AEM會啟動您的網頁瀏覽器並自動將其重新導向至適當的頁面�
 * [升級至AEM 6.4](/help/sites-deploying/upgrade.md)
 * [電子商務](/help/sites-deploying/ecommerce.md)
 * [設定操作說明文章](/help/sites-deploying/ht-deploy.md)
-* [Web 控制台](/help/sites-deploying/web-console.md)
+* [Web 主控台](/help/sites-deploying/web-console.md)
 * [複製故障排除](/help/sites-deploying/troubleshoot-rep.md)
 * [最佳實務](/help/sites-deploying/best-practices.md)
 * [部署社群](/help/communities/deploy-communities.md)
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 * [效能准則](/help/sites-deploying/performance-guidelines.md)
-* [AEM mobile快速入門](/help/mobile/getting-started-aem-mobile.md)
+* [AEM Mobile快速入門](/help/mobile/getting-started-aem-mobile.md)
 * [更新發行工具定義](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [什麼是AEM Screens?](/help/screens/aem-screens-introduction.md)
 
