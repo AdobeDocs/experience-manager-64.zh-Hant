@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
+source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 4%
@@ -47,7 +47,6 @@ To add the dynamic media functionality to assets you use on your websites, you c
 1. 將您要使用的動態媒體元件拖曳至所需位置的頁面。
 1. 將滑鼠指標直接暫留在元件上。 當元件被藍色方塊包圍時，點選一次即可顯示元件的工具列。 點選「 **[!UICONTROL Configuration]** （扳手）」圖示。
 1. [視需要編輯元件](#dynamic-media-components) ，然後按一下核取標籤以儲存變更。
-1. 
 
 ### 啟用動態媒體元件 {#enabling-dynamic-media-components}
 
