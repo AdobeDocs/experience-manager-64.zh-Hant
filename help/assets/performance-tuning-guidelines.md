@@ -3,9 +3,9 @@ title: 資產效能調整指南
 description: AEM設定、硬體、軟體和網路元件變更等重點領域，以消除瓶頸並最佳化AEM資產的效能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3201'
+source-wordcount: '3202'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Adobe Experience Manager(AEM)資產設定包含許多硬體、軟體和網路元
 
 此外，識別並遵守特定硬體和軟體最佳化准則，有助於建立健全的基礎，讓您的AEM Assets部署符合效能、延展性和可靠性的期望。
 
-AEM Assets的效能不佳可能會影響使用者在互動式效能、資產處理、下載速度和其他方面的使用體驗。
+AEM Assets的效能不佳可能會影響使用者在互動式效能、資產處理、下載速度等方面的體驗。
 
 事實上，效能最佳化是您在建立任何專案的目標量度之前所執行的基本工作。
 
@@ -181,7 +181,7 @@ DAM更新資產工作流程包含為工作設定的完整步驟套件，例如�
 
 客戶在其網站上使用各種大小和格式的影像，或將影像發佈給商業合作夥伴。 由於每個轉譯都會增加資產在儲存庫中的佔用空間，Adobe建議您審慎地使用此功能。 為了減少處理和儲存影像所需的資源量，您可以在執行時期產生這些影像，而不是在擷取時當做轉譯。
 
-許多網站客戶會實作影像servlet，在要求影像時調整大小並裁切影像，這會對發佈例項造成額外負載。 不過，只要可以快取這些影像，挑戰就可以減輕。
+許多網站客戶會實作影像servlet，在要求影像時調整影像大小並裁切影像，這會對發佈例項造成額外負載。 不過，只要可以快取這些影像，挑戰就可以減輕。
 
 另一種方法是使用Scene7技術完全放棄影像控制。 此外，您還可以部署品牌入口網站，它不僅負責從AEM基礎架構產生轉譯的責任，還負責整個發佈層。
 
@@ -417,6 +417,6 @@ AEM中有兩個與大型檔案相關的主要已知問題。 當檔案大小超�
 * 從「DAM更新資產」工作流程移除不必要的步驟。
 * 設定工作流程和版本清除。
 * 優化Lucene索引配置。
-* 使用最新的Service Pack和修補程式來最佳化索引。 請洽詢Adobe支援，以取得任何其他可用的索引最佳化。
+* 使用最新的Service Pack和修補程式來最佳化索引。 請洽詢Adobe客戶服務，以取得其他可用的索引最佳化。
 * 使用 `guessTotal` 以最佳化查詢效能。
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
