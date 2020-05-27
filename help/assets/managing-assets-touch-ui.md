@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯工作，您可使用AEM Assets的
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '9812'
+source-wordcount: '9813'
 ht-degree: 2%
 
 ---
@@ -142,7 +142,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->若要透過FTP在Dynamic Media中上傳資產——在AEM作者上傳Scene7模式安裝功能套件(FP)18912。 請聯絡Adobe支援以取得FP-18912的存取權，並完成FTP帳戶的設定。 如需 [大量資產移轉，請參閱安裝功能套件18912](/help/assets/bulk-ingest-migrate.md)。
+>若要透過FTP在Dynamic Media中上傳資產——在AEM作者上傳Scene7模式安裝功能套件(FP)18912。 請聯絡Adobe客戶服務以取得FP-18912的存取權，並完成FTP帳戶的設定。 如需 [大量資產移轉，請參閱安裝功能套件18912](/help/assets/bulk-ingest-migrate.md)。
 如果您使用FTP來上傳資產，則會忽略AEM中指定的上傳設定。 而是使用Dynamic Media Classic中定義的檔案處理規則。
 
 **若要使用FTP上傳資產**
@@ -445,7 +445,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
 1. 在「選 **[!UICONTROL 擇目標]** 」頁上，執行下列操作之一：
 
-   * 導覽至資產的新位置，然後點選「下 **[!UICONTROL 一步]** 」繼續。
+   * 導覽至資產的新位置，然後點選「下 **[!UICONTROL 一]** 」繼續。
    * 點選「 **[!UICONTROL 上一步]** 」可返回「重新 **[!UICONTROL 命名]** 」頁面。
 
 1. 如果要移動的資產有任何參照頁面、資產或系列，則「選擇目標」標籤旁 **[!UICONTROL 會顯示]** 「調整參 **[!UICONTROL 考」標籤]** 。
