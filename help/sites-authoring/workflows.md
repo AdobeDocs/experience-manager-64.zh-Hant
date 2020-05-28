@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 AEM工作流程可讓您自動化在（一或多個）頁面和／或資產上執行的一連串步驟。
 
-例如，發佈時，編輯器必須先檢閱內容——網站管理員才能啟動頁面。 一個自動化此示例的工作流，在每個參與者執行其所需工作時通知他們：
+例如，發佈時，編輯器必須先檢閱內容——網站管理員才能啟動頁面。 自動執行此示例的工作流在每個參與者需要執行其所需工作時通知他們：
 
 1. 作者會將工作流程套用至頁面。
 1. 編輯器會收到一個工作項目，指出需要他們檢閱頁面內容。 完成後，他們會指出其工作項目已完成。
