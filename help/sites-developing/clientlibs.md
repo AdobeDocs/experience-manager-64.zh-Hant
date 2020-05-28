@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 263e66f6a24a68e1fd64e1b35bf4830f4cba3a44
+source-git-commit: 50d57997496e6809361277f7025f3858857e14af
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -134,7 +134,7 @@ Web客戶端必須具有訪問節點的 `cq:ClientLibraryFolder` 權限。 您�
 
 >[!NOTE]
 >
->客戶端庫資料夾下的靜態資源必須位於名為resources的文 *件夾*。 如果您在資料夾資源下方沒有靜態資源（例如影像） **，則無法在發佈例項上參考它。 以下是範例： http://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>客戶端庫資料夾下的靜態資源必須位於名為resources的文 *件夾*。 如果您在資料夾資源下方沒有靜態資源（例如影像） **，則無法在發佈例項上參考它。 以下是範例： http://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
