@@ -1,8 +1,8 @@
 ---
 title: 動態媒體影像設定檔
 seo-title: 動態媒體影像設定檔
-description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的影像描述檔，然後將描述檔套用至影像資產的資料夾。
-seo-description: 建立包含非銳利遮色片和智慧型裁切或智慧型色票（或兩者）的設定的影像描述檔，然後將描述檔套用至影像資產的資料夾。
+description: 建立包含非銳利遮色片設定、智慧型裁切或智慧型色票（或兩者）的影像描述檔，然後將描述檔套用至影像資產的檔案夾。
+seo-description: 建立包含非銳利遮色片設定、智慧型裁切或智慧型色票（或兩者）的影像描述檔，然後將描述檔套用至影像資產的檔案夾。
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,10 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 036bb0f6fc00a089e282145cbfde2d48a098ede9
+source-git-commit: 3a9b145395b5a251071129b0cee5ad57ca32fff6
 workflow-type: tm+mt
-source-wordcount: '2626'
-ht-degree: 12%
+source-wordcount: '2627'
+ht-degree: 11%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 12%
 
 ## Crop options {#crop-options}
 
-您有兩個影像裁切選項可供選擇，還有一個選項可自動建立顏色和影像色票。
+<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
 
->[!IMPORTANT]
->
->請注意，您建立的每個智慧型裁切產生都需要額外處理。 例如，新增超過5種智慧型裁切外觀比例會導致資產擷取速度變慢。 它還可能增加系統的負載。 由於您可以在資料夾層級套用「智慧裁切」,Adobe建議您僅在需要智慧裁切的 *資料夾* 上使用它。
+請注意，您建立的每個智慧型裁切產生都需要額外的處理。 例如，新增超過5種智慧型裁切外觀比例會導致資產擷取速度變慢。 它還可能增加系統的負載。 由於您可以在資料夾層級套用「智慧裁切」,Adobe建議您僅在需要智慧裁切的 *資料夾* 上使用它。
+
+您有兩個影像裁切選項可供選擇。 您也可以選擇自動建立顏色和影像色票。
 
 <table> 
  <tbody> 
@@ -51,7 +51,7 @@ ht-degree: 12%
      <li>裁切起點： 左邊是X，上邊是Y</li> 
      <li>水準計算： 原始影像的水準像素尺寸減去「左」，然後減去「右」。</li> 
      <li>垂直計算： 垂直像素高度減去「頂端」，然後減去「底部」。</li> 
-    </ul> <p>例如，假設您有4000 x 3000像素的影像。 您使用值： Top=250; 底部=500; 左=300; 右=700。</p> <p>從左上角(300,250)，使用（4000-300-700、3000-250-500或3000,2250）的填滿空間進行裁切。</p> </td> 
+    </ul> <p>例如，假設您有4000 x 3000像素的影像。 您使用值： Top=250,Bottom=500,Left=300,Right=700。</p> <p>從左上角(300,250)，使用（4000-300-700、3000-250-500或3000,2250）的填滿空間進行裁切。</p> </td> 
   </tr> 
   <tr> 
    <td>智慧型裁切</td> 
@@ -74,7 +74,7 @@ You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final do
 
 >[!NOTE]
 >
->非銳利化遮色片只會套用至PTIFF（金字塔型Tiff）中縮小取樣超過50%的轉譯。 這表示Ptiff中最大尺寸的轉譯不受非銳利遮色片影響，而較小尺寸的轉譯（例如縮圖）則會變更（並顯示非銳利遮色片）。
+>非銳利化遮色片只會套用至PTIFF（金字塔型Tiff）中縮小取樣超過50%的轉譯。 這表示PTIFF中最大尺寸的轉譯不受非銳利遮色片影響，而較小尺寸的轉譯（例如縮圖）則會變更（並顯示非銳利遮色片）。
 
 在「 **遮色片銳利化**」中，您有下列篩選選項：
 
@@ -201,7 +201,7 @@ You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final do
 
 1. 點選資料夾以開啟其內容。
 1. 點選您要調整其智慧裁切或智慧色票的影像。
-1. 在工具列上，點選「智慧 **[!UICONTROL 裁切」]**。
+1. 在工具列中，點選「智慧 **[!UICONTROL 裁切」]**。
 
 1. 執行下列任一操作：
 
@@ -248,7 +248,7 @@ You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final do
    * 移動智慧型裁切方塊。 執行下列任一項作業：
 
       * 如果影像只有智慧型裁切或智慧型色票，請在影像上拖曳裁切方塊至新位置。
-      * 如果影像同時具有智慧型裁切和智慧型色票，請將智慧型裁切方塊拖曳至新位置。 或者，點選或按一下影像下方的智慧型色票（色票為靜態），然後將智慧型色票裁切方塊拖曳至新位置。
+      * 如果影像同時具有智慧型裁切和智慧型色票，請將智慧型裁切方塊拖曳至新位置。 或者，點選影像下方的智慧型色票（色票為靜態），然後將智慧型色票裁切方塊拖曳至新位置。
       ![edit_smart_crobs-move](assets/edit_smart_crops-move.png)
 
    * 還原您的所有編輯，並還原原始智慧型裁切或智慧型色票（僅適用於目前的編輯工作階段）。
@@ -280,6 +280,6 @@ You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final do
 1. 點選AEM標誌並導覽 **[!UICONTROL Assets]** ，然後前往您要從中移除影像描述檔的檔案夾。
 1. 在資料夾上，點選核取標籤以選取它，然後點選「 **[!UICONTROL 屬性]**」。
 1. Select the **[!UICONTROL Image Profiles]** tab.
-1. 從「描述 **[!UICONTROL 檔名稱]** 」下拉式選單中，選取「無」 **[!UICONTROL ，然後點選「]**&#x200B;儲存並關閉」 ****。
+1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save &amp; Close]**.
 
    已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
