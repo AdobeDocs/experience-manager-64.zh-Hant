@@ -4,7 +4,7 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 1%
@@ -112,7 +112,7 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 * 最適化表單： 自適應表單字典中字串的新行將字 `&#xa;` 符添加到字典(NPR-33265)。
 * 最適化表單： 用戶無法保存具有多個附件的自適應表單(NPR-33214)。
 * 最適化表單： `AddInstance` 和 `RemoveInstance` Instance Manager類別的方法不會在上為延遲載入片段新增動態 [!DNL Internet Explorer 11] 例項數(NPR-33201)。
-* 最適化表單： 內嵌在頁面中的最適化表單上啟 [!DNL Sites] 用的Analytics不會記錄「提交」和「放棄」事件的資料(NPR-31359)。
+* 最適化表單： 內嵌在頁面中的最適化表單上啟 [!DNL Sites] 用的Analytics不會記錄提交和放棄事件的資料(NPR-31359)。
 * 最適化表單： 當使用者將檔案的內容貼入 [!DNL Word] 最適化表單並送出時，提交的最適化表單包含Unicode字元。 此外，PDF轉換為PDF/A失敗，因為Unicode字元(NPR-33348)。
 * 後端整合： 表單資料模型請求會因重新整理Token因非作用中狀態不正確而失敗(NPR-33168)。
 * 檔案服務： 由於伺服器上的Gibsonjar遺失，PDF服務無法將PDF檔案 [!DNL WebLogic] 轉 [!DNL Linux] 換為PostScript(NPR-33515、CQ-4292239)。
@@ -237,7 +237,7 @@ Adobe Public Maven儲存庫中提供AEM 6.4.8.1版的Uber Jar [](https://repo.ad
 
 ## 已知問題 {#known-issues}
 
-* 83版的 [!DNL chrome] 更新造成建立封裝時發生問題。 使用其他可用的瀏覽器(例如 [!DNL Internet Explorer] 和 [!DNL Edge]或其他AEM標準套件安裝選項)來解決問題。
+* 83版的 [!DNL chrome] 更新造成建立封裝時發生問題。 使用其他可用的瀏覽器(例如 [!DNL Internet Explorer] 和 [!DNL Firefox]或其他AEM標準套件安裝選項)來解決問題。
 
 * 無法使用AEM預設郵件寄件者，將電子郵件傳送至遠端SMTP伺服器，因為它僅允許使用TLS v1.2進行通訊。 從中刪 `javax.mail:mail:1.5.0-b01` 除包 `system/console` 並刷新包以解決問題。
 
