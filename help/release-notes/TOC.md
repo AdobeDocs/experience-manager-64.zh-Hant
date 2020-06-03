@@ -2,9 +2,12 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Release Notes
+user-guide-title: AEM 6.4發行說明
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 
@@ -13,7 +16,8 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
 
 + [AEM 6.4概觀](home.md)
 + [一般發行說明](release-notes.md)
-+ [Service pack發行說明](sp-release-notes.md)
++ [Service Pack發行說明](sp-release-notes.md)
++ [累積修補程式套件發行說明](cfp-release-notes.md)
 + [AEM Sites發行說明](sites.md)
 + [AEM Assets發行說明](assets.md)
 + [AEM Forms發行說明](forms.md)
