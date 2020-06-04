@@ -1,6 +1,6 @@
 ---
-title: 變化 - 製作片段內容
-seo-title: 變化 - 製作片段內容
+title: 變化 - 編寫片段內容
+seo-title: 變化 - 編寫片段內容
 description: 變數可讓您為片段製作內容，然後根據用途建立該內容的變數（如有需要）。
 seo-description: 變數可讓您為片段製作內容，然後根據用途建立該內容的變數（如有需要）。
 uuid: affccda0-be5f-47d2-85b6-8701b77ac932
@@ -10,12 +10,15 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '1845'
+ht-degree: 14%
 
 ---
 
 
-# 變化 - 製作片段內容 {#variations-authoring-fragment-content}
+# 變化 - 編寫片段內容 {#variations-authoring-fragment-content}
 
 >[!CAUTION]
 >
@@ -28,7 +31,7 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 * [輸入片段的內容](#authoring-your-content) ,
 * [建立並管理主版](#managing-variations) ( **Master** )內容的變化
 
-根據正在編輯的資料類型執行一系列其他操作；例如：
+根據正在編輯的資料類型執行一系列其他操作； 例如：
 
 * [將視覺資產插入您的片段](#inserting-assets-into-your-fragment) （影像）
 * 在富格 [文字](#rich-text)、純 [文字和標籤](#plain-text) 之間選 [](#markdown) 擇
@@ -110,16 +113,16 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 * 粗體
 * 斜體
 * 底線
-* 對齊：左，中，右
+* 對齊： 左，中，右
 * 項目符號清單
 * 編號清單
-* 縮排：增加，減少
+* 縮排： 增加，減少
 * 建立／中斷超連結
 * 開啟全螢幕編輯器，其中提供下列格式選項：
 
    * 貼上文字／從Word
    * 插入表格
-   * 段落樣式：第1/2/3段
+   * 段落樣式： 第1/2/3段
    * [插入視覺資產](#inserting-assets-into-your-fragment)
    * 搜尋
    * 尋找/取代
@@ -180,7 +183,7 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 
 >[!CAUTION]
 >
->內容片段必須有有效的語言資料夾作為祖先；這可用來決定要使用的語言模型。
+>內容片段必須有有效的語言資料夾作為祖先； 這可用來決定要使用的語言模型。
 >
 >例如， `en/` 如下列路徑：
 >
@@ -190,12 +193,13 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 >
 >英文是現成可用的。
 >
->其他語言則可從Package Share中取得：
+>其他語言可作為包共用或軟體分發的語言模型包：
 >
->* [French(fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [German(de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italian(it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spanish(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [法文(fr)來自Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) 或 [法文(fr)來自軟體散發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [德文(de)來自Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) 或德 [文(de)來自軟體散發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Package Share的義大利文(it)或](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) Software Distribution [的義大利文(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Package Share的西班牙文(es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) , [或Software Distribution的西班牙文(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+
 >
 
 
@@ -213,6 +217,7 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
    * 任何要刪除的句子都會以紅色強調顯示，並加上刪除。
    * 按一下任何反白顯示的句子，將它保留在摘要內容中。
    * 按一下任何未反白顯示的句子，即可將其刪除。
+
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. 選擇 **[!UICONTROL 摘要]** ，確認更改。
@@ -253,7 +258,7 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 
 若要簡化製作內容片段的程式，您可以直接將 [Assets](managing-assets-touch-ui.md) （影像）新增至片段。
 
-這些文字將加到片段的段落序列中，不需任何格式；當頁面上使用／參 [考片段時，可執行格式設定](/help/sites-authoring/content-fragments.md)。
+這些文字將加到片段的段落序列中，不需任何格式； 當頁面上使用／參 [考片段時，可執行格式設定](/help/sites-authoring/content-fragments.md)。
 
 >[!CAUTION]
 >
@@ -274,6 +279,7 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 
    * 導覽至DAM中的必要資產
    * 在DAM中搜尋資產
+
    找到後，按一下縮圖以選取所需的資產。
 
 1. 使用 **[!UICONTROL 「選取]** 」將資產新增至目前位置之內容片段的段落系統。
@@ -369,6 +375,7 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 
    * 綠色表示已新增（至變數）的內容
    * 紅色表示內容已移除（從變數中）
+
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. 選擇「 **[!UICONTROL 同步]**」(Synchronize)，將更新並顯示變化。
