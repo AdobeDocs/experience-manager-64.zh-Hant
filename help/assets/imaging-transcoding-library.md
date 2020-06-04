@@ -3,7 +3,10 @@ title: 影像轉碼程式庫
 description: 瞭解如何設定和使用Adobe的影像轉碼程式庫。此影像處理解決方案可執行核心影像處理功能，包括編碼、轉碼、影像重新取樣和影像大小調整。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 19973ad6f039b18fa7f248e1d18f7e7e62df699e
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '979'
+ht-degree: 1%
 
 ---
 
@@ -23,10 +26,10 @@ Adobe的影像轉碼程式庫是專屬的影像處理解決方案，可執行核
 
 除了支援多種檔案格式和設定檔外，在效能、延展性和品質方面，影像轉碼程式庫與其他協力廠商解決方案相比，有顯著的優勢。 以下是使用影像轉碼程式庫的主要優點：
 
-* **隨檔案大小或解析度的增加而調整**:縮放主要是透過Imaging Coding Library的專利功能，在解碼檔案時重新調整大小。 此功能可確保執行時期記憶體的使用永遠是最佳的，而不是增加檔案大小或解析度百萬像素的二次函式。 影像轉碼程式庫可處理大型和高解析度（包含高百萬像素）的檔案。 協力廠商工具（例如ImageMagick）無法處理大型檔案，在處理這類檔案時會當機。
-* **Photoshop品質壓縮和調整大小演算法**:在向下取樣（平滑、銳利且自動的雙立方體）和壓縮品質方面與業界標準一致。 影像轉碼程式庫進一步評估輸入影像的品質因數，並智慧地使用最佳的表格和品質設定來輸出影像。 此功能可產生最佳檔案大小，而不會影響視覺品質。
-* **** 高吞吐量：響應時間較短，吞吐量始終高於ImageMagick。 因此，影像轉碼程式庫應會縮短使用者的等待時間並降低代管成本。
-* **** 使用並行載入，可更佳地縮放：映像轉碼庫在並行負載條件下的效能最佳。 它以最佳的CPU效能、記憶體使用量和低的回應時間，提供高的總處理能力，有助於降低代管成本。
+* **隨檔案大小或解析度的增加而調整**: 縮放主要是透過Imaging Coding Library的專利功能，在解碼檔案時重新調整大小。 此功能可確保執行時期記憶體的使用永遠是最佳的，而不是增加檔案大小或解析度百萬像素的二次函式。 影像轉碼程式庫可處理大型和高解析度（包含高百萬像素）的檔案。 協力廠商工具（例如ImageMagick）無法處理大型檔案，在處理這類檔案時會當機。
+* **Photoshop品質壓縮和調整大小演算法**: 在向下取樣（平滑、銳利且自動的雙立方體）和壓縮品質方面與業界標準一致。 影像轉碼程式庫進一步評估輸入影像的品質因數，並智慧地使用最佳的表格和品質設定來輸出影像。 此功能可產生最佳檔案大小，而不會影響視覺品質。
+* **高吞吐量：** 響應時間較短，吞吐量始終高於ImageMagick。 因此，影像轉碼程式庫應會縮短使用者的等待時間並降低代管成本。
+* **使用並行載入，可更佳地縮放：** 映像轉碼庫在並行負載條件下的效能最佳。 它以最佳的CPU效能、記憶體使用量和低的回應時間，提供高的總處理能力，有助於降低代管成本。
 
 ## 支援的平台 {#supported-platforms}
 
@@ -74,7 +77,7 @@ Adobe的影像轉碼程式庫是專屬的影像處理解決方案，可執行核
 
 要配置庫，請建立。conf檔案，以使用以下步驟指示庫。 您需要管理員或根用戶權限。
 
-1. 下載 [Imaging Rodcing Library軟體包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) ，並使用軟體包管理器進行安裝。 此套件與AEM 6.5相容。
+1. 從Package Share或從Software Distribution [下載Imaging Coding Library](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)[](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) 套件，然後使用Package Manager安裝它。 此套件與AEM 6.5相容。
 
 1. 若要瞭解Bundle ID，請登 `com.day.cq.dam.cq-dam-switchengine`入Web Console並點選「 **[!UICONTROL OSGi > Bundles]**」。 或者，若要開啟組合主控台，請存取 `https://[aem_server:[port]/system/console/bundles/` URL。 找到 `com.day.cq.dam.cq-dam-switchengine` bundle及其ID。
 
@@ -126,6 +129,7 @@ Adobe的影像轉碼程式庫是專屬的影像處理解決方案，可執行核
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![石竹](assets/chlimage_1-199.png)
 
 1. （可選）使用單一命令從中介轉譯產生縮圖。 中間轉譯充當源，以生成靜態和Web轉譯。 此方法比先前的方法快。 不過，您無法使用此方法將自訂參數套用至縮圖。
