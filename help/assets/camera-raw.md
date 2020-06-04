@@ -3,14 +3,17 @@ title: Camera Raw支援
 description: 瞭解如何在Adobe Experience Manager Assets中啟用Camera Raw支援。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
 
 # 支援使用Camera Raw處理影像 {#camera-raw-support}
 
-您可以啟用Camera Raw支援來處理原始檔案格式，例如CR2、NEF和RAF，並以JPEG格式呈現影像。 Adobe Experience Manager Assets使用Camera Raw透過Package Share提供的 [Camera Raw套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) ，支援這項功能。
+您可以啟用Camera Raw支援來處理原始檔案格式，例如CR2、NEF和RAF，並以JPEG格式呈現影像。 Adobe Experience Manager Assets使用Camera Raw套件(可透過「套件共用」或「軟體散發 [」取得)支](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 援此功能 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
 
 >[!NOTE]
 >
@@ -18,7 +21,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 若要在Adobe Experience Manager Assets中啟用Camera Raw支援，請依照下列步驟進行：
 
-1. 從Package Share [下載Camera Raw](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) (Camera Raw)套件。
+1. 從「套 [件共用](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 」或從「軟體散發」下載 [Camera Raw套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
 
 1. 存取 `https://[aem_server]:[port]/workflow`. 開啟「 **[!UICONTROL DAM更新資產」工作流程]** 。
 
@@ -28,6 +31,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
    * **[!UICONTROL 縮圖]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL 略過 Mime 類型]**: `skip:image/dng, skip:image/x-raw-(.*)`
+
    ![石竹](assets/chlimage_1-334.png)
 
 1. 在「啟 **[!UICONTROL 用Web的影像]** 」標籤的「跳 **[!UICONTROL 過清單」欄位中]** ，指定 `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`。
@@ -45,6 +49,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
+
    ![chlimage_1-336](assets/chlimage_1-336.png)
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
@@ -57,11 +62,11 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
-*圖：側窗格中的選項*
+*圖： 側窗格中的選項*
 
 ![chlimage_1-338](assets/chlimage_1-338.png)
 
-*圖：使用選項對影像進行輕量型編輯*
+*圖： 使用選項對影像進行輕量型編輯*
 
 將編輯儲存至Camera Raw影像後，就會產生影 `AdjustedPreview.jpg` 像的新轉譯。 對於「Camera Raw」以外的其他影像類型，變更會反映在所有轉譯中。
 
