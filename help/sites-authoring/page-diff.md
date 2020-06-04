@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!CAUTION]
 >
->用戶必須對節 **點具有「修改／建立／刪除** 」權 `/content/versionhistory` 限，才能使用該功能。
+>如果您執行的是AEM 6.4.3之前的版本，使用者必須擁有節點的 **Modify/Create/Delete** （修改／建立／刪除） `/content/versionhistory` 權限，才能使用此功能。
 >
 >如需 [此功能的詳細技術資訊，請參閱開發與頁面比較](/help/sites-developing/pagediff.md#operation-details) 。
 
