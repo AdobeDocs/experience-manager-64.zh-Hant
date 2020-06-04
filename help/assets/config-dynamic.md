@@ -8,7 +8,10 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '8013'
+ht-degree: 1%
 
 ---
 
@@ -169,7 +172,7 @@ source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
 
       影像伺服器記錄檔名的範例： `ImageServer-57346-2019-07-25.log`
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access記錄透過和記錄對Dynamic Media提出的每個 `/is/image` 請求 `/is/content`。
-   這些記錄檔僅在啟用動態媒體時使用。 它們不包含在從 **system/console** /status-Bundlelist頁面 **[!UICONTROL 產生的Download Full]** package;如果您有動態媒體問題，請在呼叫客戶支援時，將這兩個記錄檔附加至問題。
+   這些記錄檔僅在啟用動態媒體時使用。 它們不包含在從 **system/console** /status-Bundlelist頁面 **[!UICONTROL 產生的Download Full]** package; 如果您有動態媒體問題，請在呼叫客戶支援時，將這兩個記錄檔附加至問題。
 
 ### 如果您將AEM安裝至不同的連接埠或內容路徑…… {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -189,7 +192,7 @@ source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
 >[!NOTE]
 在 [AEM Quickstart單機部署中](/help/sites-deploying/deploy.md)，自 **** 我網域通常不需要設定，因為可自動設定埠號和內容路徑。 但是，如果所有網路介面都關閉，則需要配置 **自定義** 域。
 
-## 停用動態媒體 {#disabling-dynamic-media}
+## 停用動態媒體  {#disabling-dynamic-media}
 
 動態媒體預設未啟用。 不過，如果您先前已啟用動態媒體，您稍後可能會想要關閉它。
 
@@ -215,7 +218,7 @@ source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
 
 如果您要將AEM Dynamic Media從6.3升級至6.4 —— 現在包含零停機（也稱為「選擇加入」）部署的功能——您必須執行下列curl命令，才能將所有預設集和組態從 `/etc` CRXDE `/conf` Lite移轉至。
 
-**注意**:如果您以相容模式（即，您已安裝相容性封裝）執行AEM例項，則不需要執行這些命令。
+**注意**: 如果您以相容模式（即，您已安裝相容性封裝）執行AEM例項，則不需要執行這些命令。
 
 若要將自訂預設集和組態從移轉 `/etc` 至 `/conf`，請執行下列Linux curl命令：
 
@@ -269,11 +272,12 @@ source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
 
 1. 在「編 **[!UICONTROL 輯用戶設定：動態媒體複製]** 」頁面上，展開「從KeyStore檔案添加專用密鑰 **** 」區域並添加以下內容（請參見以下影像）:
 
-   * 在「 **[!UICONTROL 新別名]** 」欄位中，輸入稍後在複製配置中使用的別名的名稱；例如，復 **制**。
+   * 在「 **[!UICONTROL 新別名]** 」欄位中，輸入稍後在複製配置中使用的別名的名稱； 例如，復 **制**。
    * 點選 **[!UICONTROL KeyStore檔案]**。 導覽至Adobe提供給您的KeyStore檔案，選取它，然後點選「開 **[!UICONTROL 啟」]**。
    * 在「KeyStore檔 **[!UICONTROL 案密碼」欄位中]** ，輸入「KeyStore檔案密碼」。 這不是 _您在步驟_ 5中建立的KeyStore密碼，而是Adobe在布建期間傳送給您的歡迎電子郵件中提供的KeyStore檔案密碼。 如果您未收到KeyStore檔案密碼，請聯絡Adobe客戶服務。
    * 在「私 **[!UICONTROL 密金鑰密碼]** 」欄位中，輸入私密金鑰密碼（可能與前一步驟中提供的私鑰密碼相同）。 Adobe會在布建期間傳送給您的歡迎電子郵件中提供私密金鑰密碼。 如果您未收到私密金鑰密碼，請聯絡Adobe客戶服務。
    * 在「私 **[!UICONTROL 鑰別名]** 」欄位中，輸入私鑰別名。 For example, `companyname-alias`. Adobe會在布建期間傳送給您的歡迎電子郵件中提供私密金鑰別名。 如果您未收到私密金鑰別名，請聯絡Adobe客戶服務。
+
    ![edit_settings_fordynamic-media-replication2](assets/edit_settings_fordynamic-media-replication2.png)
 
 1. 點選 **[!UICONTROL 「儲存並關閉]** 」，將變更儲存給此使用者。
@@ -288,10 +292,11 @@ source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
 1. 點選「 **[!UICONTROL 設定]** 」標籤，然後輸入下列：
 
    * **[!UICONTROL 啟用]** -選中此複選框可啟用複製代理。
-   * **[!UICONTROL 地區]** -設為適當的地區：北美、歐洲或亞洲
+   * **[!UICONTROL 地區]** -設為適當的地區： 北美、歐洲或亞洲
    * **[!UICONTROL 租用戶ID]** —— 此值是您發佈至複製服務的公司／租用戶的名稱。 此值是Adobe在布建期間傳送給您的歡迎電子郵件中提供的租用戶ID。 如果您未收到此訊息，請聯絡Adobe客戶服務。
-   * **[!UICONTROL 密鑰儲存別名]** -該值與在設定身份驗證中生成密鑰時設定的**新別名** [值相同](#setting-up-authentication);例如， `replication`。 (請參閱設定驗 [證的步驟](#setting-up-authentication)7)。
+   * **[!UICONTROL 密鑰儲存別名]** -該值與在設定身份驗證中生成密鑰時設定的**新別名** [值相同](#setting-up-authentication); 例如， `replication`。 (請參閱設定驗 [證的步驟](#setting-up-authentication)7)。
    * **[!UICONTROL Key Store Password]** —— 這是您點選「Create KeyStore」時建立的KeyStore **[!UICONTROL 密碼]**。 Adobe不提供此密碼。 請參閱設定驗 [證的步驟5](#setting-up-authentication)。
+
    下圖顯示了具有示例資料的複製代理：
 
    ![chlimage_1-509](assets/chlimage_1-509.png)
@@ -328,7 +333,7 @@ Replication test succeeded
 
 在設定驗證時，以下是您在其解決方案中可能遇到的一些問題。 在選中這些選項之前，請確保已設定複製。
 
-#### 問題：HTTP狀態碼401含訊息——需要授權 {#problem-http-status-code-with-message-authorization-required}
+#### 問題： HTTP狀態碼401含訊息——需要授權 {#problem-http-status-code-with-message-authorization-required}
 
 此問題可能是由於無法為用戶設定KeyStore所導致 `dynamic-media-replication` 的。
 
@@ -351,9 +356,9 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
  Server returned status code 401 with message: Authorization required.
 ```
 
-**解決方案**:檢查是否 `KeyStore` 已將 **[!UICONTROL 保存到動態媒體複製用戶]** ，並提供了正確的密碼。
+**解決方案**: 檢查是否 `KeyStore` 已將 **[!UICONTROL 保存到動態媒體複製用戶]** ，並提供了正確的密碼。
 
-#### 問題：無法解密密鑰——無法解密資料 {#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### 問題： 無法解密密鑰——無法解密資料 {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -367,9 +372,9 @@ Replication test to s7delivery:https://<localhost>:8580/is-publish/
 17.06.2016 19:00:16 - Transfer failed for ReplicationAction{type=TEST, path[0]='/content/dam', time=1466215216662, userId='admin', revision='null'}. java.lang.SecurityException: java.security.UnrecoverableKeyException: Could not decrypt key: Could not decrypt data.
 ```
 
-**解決方案**:檢查密碼。 保存在複製代理中的密碼與用於建立密鑰庫的密碼不同。
+**解決方案**: 檢查密碼。 保存在複製代理中的密碼與用於建立密鑰庫的密碼不同。
 
-#### 問題：InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
+#### 問題： InvalidAlgorithmParameterException {#problem-invalidalgorithmparameterexception}
 
 此問題是由AEM Author例項中的設定錯誤所造成。 作者上的Java進程未獲得正確的資訊 `javax.net.ssl.trustStore`。 在複製日誌中看到以下錯誤：
 
@@ -387,9 +392,9 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
         at com.scene7.is.catalog.service.publish.atomic.PublishingServiceHttp.executePost(PublishingServiceHttp.scala:195)
 ```
 
-**解決方案**:請確定AEM Author上的java進程已將系統屬性 **-Djavax.net.ssl.trustStore=** 設定為有效的信任存放區。
+**解決方案**: 請確定AEM Author上的java進程已將系統屬性 **-Djavax.net.ssl.trustStore=** 設定為有效的信任存放區。
 
-#### 問題：KeyStore未設定或未初始化 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### 問題： KeyStore未設定或未初始化 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 此問題可能是由Hot Fix或功能套件覆寫動態媒體使用者 **[!UICONTROL 或金鑰庫節點]****[!UICONTROL 所造成]** 。
 
@@ -420,7 +425,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. 點選 **[!UICONTROL 測試連線]** ，以驗證設定是否有效。
 
-#### 問題：發佈代理使用SSL而非OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
+#### 問題： 發佈代理使用SSL而非OAuth {#problem-publish-agent-is-using-ssl-instead-of-oauth}
 
 此問題可能是由Hot Fix或無法正確安裝或覆寫設定的功能套件所造成。
 
@@ -567,7 +572,7 @@ Dynamic Media Cloud服務支援雲端服務，例如混合發佈和傳送影像�
 
    * **透過AEM[!DNL Video Analytics]中的「視訊報告」工具檢查預設集**
 
-      點選「 **[!UICONTROL 工具>資產>視訊報表]** 」 `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
+      點選「 **[!UICONTROL 工具>資產>視訊報表」]** `http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
       如果您看到下列錯誤訊息，報表套裝即可使用，但未填入。 在系統收集任何資料之前，在新安裝中此錯誤是正確且必要的。
 
@@ -666,7 +671,7 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
    <td>現成可用的「filter-video」將： 
     <ul> 
      <li>包含代理視訊轉譯、視訊縮圖／海報影像、中繼資料（父視訊和視訊轉譯）以進行複製(任何轉譯以 <strong>cqdam</strong>開頭)。</li> 
-     <li>排除原始視訊和靜態縮圖轉譯的複製。<br /> <br /> 注 <strong>意：</strong> 代理視訊轉譯不包含二進位檔，而只是節點屬性。 因此，對發佈者儲存庫大小沒有影響。</li> 
+     <li>排除原始視訊和靜態縮圖轉譯的複製。<br /> <br /> <strong>注意：</strong> 代理視訊轉譯不包含二進位檔，而只是節點屬性。 因此，對發佈者儲存庫大小沒有影響。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -794,7 +799,7 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
 >[!NOTE]
 動態媒體啟用後即 [可立即運作](#enabling-dynamic-media)。 不過，您可選擇將動態媒體影像伺服器設定為符合特定規格或需求，以微調您的安裝。
 
-**先決條件**:配 _置Dynamic Media Image Server_ 之前，請確保Windows的虛擬機包含Microsoft Visual C++庫的安裝。 必須有這些庫才能運行Dynamic Media Image Server。 您可 [以從這裡下載Microsoft Visual C++ 2010 Redistributable Package(x64)](https://www.microsoft.com/en-us/download/details.aspx?id=14632)。
+**先決條件**: _在配置_ Dynamic Media Image Server之前，請確保Windows的虛擬機包含Microsoft Visual C++庫的安裝。 必須有這些庫才能運行Dynamic Media Image Server。 您可 [以從這裡下載Microsoft Visual C++ 2010 Redistributable Package(x64)](https://www.microsoft.com/en-us/download/details.aspx?id=14632)。
 
 **要配置動態媒體映像伺服器設定**:
 
@@ -958,7 +963,7 @@ Adobe色彩管理使用ICC描述檔，這是由國際色彩協會(ICC)定義的�
 * **[!UICONTROL iccEmbed]** - [https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/r_iccembed.html)
 
 >[!NOTE]
-只有在安裝了Feature Pack 12445後，才能使用標準的Adobe [色彩設定檔](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 。 所有功能包和服務包都可通過 [Package Share獲得](https://www.adobeaemcloud.com/content/packageshare.html)。 功能套件12445提供Adobe色彩描述檔。
+只有在安裝了Package Share的 [Feature Pack 12445或Software Distribution的](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) Feature Pack 12445 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 時，才能使用標準的Adobe色彩描述檔集。 所有功能包和服務包都可通過 [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) 和 [Software Distribution獲得](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。 功能套件12445提供Adobe色彩描述檔。
 
 ### 安裝功能套件12445 {#installing-feature-pack}
 
@@ -966,7 +971,7 @@ Adobe色彩管理使用ICC描述檔，這是由國際色彩協會(ICC)定義的�
 
 **要安裝功能包12445**:
 
-1. 導覽至「 [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) 」（封裝共用）並下載其中一 `cq-6.3.0-featurepack-12445`個。
+1. 導覽至「 [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) 」(封裝共用 [)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 或「Software Distribution `cq-6.3.0-featurepack-12445`」（軟體散發），然後下載。
 
    如需 [在AEM中使用「套件共用」和「套件」的詳細資訊，請參閱How to Work with Packages](/help/sites-administering/package-manager.md) 。
 
@@ -1052,7 +1057,7 @@ Adobe色彩管理使用ICC描述檔，這是由國際色彩協會(ICC)定義的�
       <td><a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_iccrenderintent.html">iccrenderintent</a></td> 
       <td>字串</td> 
       <td>相對值</td> 
-      <td><p>指定渲染方式。 可接受的值為：感知 <strong>，相對，飽和，絕對。 </strong><i></i>Adobe建議 <strong>以相 </strong><i></i>對為預設值。</p> </td> 
+      <td><p>指定渲染方式。 可接受的值為： <strong>感知，相對，飽和，絕對。 </strong><i></i>Adobe建議 <strong>以相 </strong><i></i>對為預設值。</p> </td> 
       </tr> 
     </tbody> 
     </table>
