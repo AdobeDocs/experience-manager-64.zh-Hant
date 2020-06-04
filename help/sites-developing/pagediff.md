@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '481'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,7 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 >[!CAUTION]
 >
->為了使用頁面比較功能，用戶需要在節點上擁有**修改／建立／刪除**權限 `/content/versionhistory`。
+>為了使用頁面比較功能，用戶需要對節點具有 **修改／建立／刪除** 權限 `/content/versionhistory`。
 
 ### 自AEM 6.4.3起 {#as-of-aem}
 
