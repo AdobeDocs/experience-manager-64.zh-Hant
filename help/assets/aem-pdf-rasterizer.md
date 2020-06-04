@@ -3,14 +3,17 @@ title: 使用PDF點陣化器
 description: 使用Adobe PDF Rasterizer程式庫產生高品質的縮圖和轉譯。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 0%
 
 ---
 
 
 # 使用PDF點陣化器 {#using-pdf-rasterizer}
 
-有時，當您將大型、內容密集的PDF或AI檔案上傳至Adobe Experience Manager(AEM)Assets時，預設資料庫可能無法產生正確的輸出。 在這種情況下，Adobe的PDF點陣化器程式庫可產生比預設程式庫的輸出更可靠、更精確的輸出。
+有時，當您上傳大型、內容密集的PDF或AI檔案至Adobe Experience Manager(AEM)Assets時，預設資料庫可能無法產生正確的輸出。 在這種情況下，Adobe的PDF點陣化器程式庫可產生比預設程式庫的輸出更可靠、更精確的輸出。
 
 Adobe建議針對下列項目使用PDF點陣化器程式庫：
 
@@ -20,7 +23,7 @@ Adobe建議針對下列項目使用PDF點陣化器程式庫：
 
 使用PDF點陣化器產生的縮圖和預覽，與現成可用的輸出相比，品質更佳，因此可跨裝置提供一致的檢視體驗。 Adobe PDF Rasterizer程式庫不支援任何色域轉換。 無論來源檔案的色域為何，都會輸出為RGB。
 
-1. 從「封裝共用」在您的AEM例項上安裝PDF點陣 [化器套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)。
+1. 從「Package Share」（套件共用）或「Software Distribution」（軟體散發），將PDF Rasterizer套件安 [裝在您的AEM例](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) 項上 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)。
 
    >[!NOTE]
    >
@@ -43,20 +46,20 @@ Adobe建議針對下列項目使用PDF點陣化器程式庫：
 1. 將「 **[!UICONTROL PDF點陣化器處理常式]** 」步驟從側面板拖曳至「處理縮圖」 **[!UICONTROL 步驟的下方]** 。
 1. 為「 **[!UICONTROL PDF點陣化器處理常式」步驟設定下列引數]** :
 
-   * Mime類型：應 *用程式/pdf**或應用程式/postscript*
+   * Mime類型： *application/pdf* 或application/ *postscript*
    * 命令: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * 新增縮圖大小：319:319, 140:100, 48:48。 視需要新增自訂縮圖設定。
+   * 新增縮圖大小： 319:319, 140:100, 48:48。 視需要新增自訂縮圖設定。
    該命令的命令行參 `PDFRasterizer` 數可以包括以下內容：
 
-   **-d**:標幟可讓文字、向量圖稿和影像順暢呈現。 建立更高品質的影像。 不過，加入此參數會導致命令執行緩慢，並增加影像大小。
+   **-d**: 標幟可讓文字、向量圖稿和影像順暢呈現。 建立更高品質的影像。 不過，加入此參數會導致命令執行緩慢，並增加影像大小。
 
-   `-p`:頁碼。 預設值是所有頁面。 &#39;*&#39;表示所有頁面。
+   `-p`: 頁碼。 預設值是所有頁面。 &#39;*&#39;表示所有頁面。
 
-   **-s**:最大影像尺寸（高度或寬度）。 這會針對每個頁面轉換為DPI。 如果頁面大小不同，每個頁面可能會依不同的數量進行縮放。 預設值為實際頁面大小。
+   **-s**: 最大影像尺寸（高度或寬度）。 這會針對每個頁面轉換為DPI。 如果頁面大小不同，每個頁面可能會依不同的數量進行縮放。 預設值為實際頁面大小。
 
-   **-t**:輸出影像類型。 有效類型有JPEG、PNG、GIF和BMP。 預設值為JPEG。
+   **-t**: 輸出影像類型。 有效類型有JPEG、PNG、GIF和BMP。 預設值為JPEG。
 
-   **-i**:輸入PDF的路徑。 此參數為強制參數。
+   **-i**: 輸入PDF的路徑。 此參數為強制參數。
 
    `-h`: 說明
 
@@ -76,20 +79,20 @@ Adobe建議針對下列項目使用PDF點陣化器程式庫：
 
    * Mime類型： `application/pdf` 或 `application/postscript`
    * 命令: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
-   * 新增縮圖大小：319:319, 140:100, 48:48。 視需要新增自訂縮圖設定。
+   * 新增縮圖大小： 319:319, 140:100, 48:48。 視需要新增自訂縮圖設定。
    PDFRasterizer命令的命令行參數可以包括：
 
-   **-d**:標幟可讓文字、向量圖稿和影像順暢呈現。 建立更高品質的影像。 不過，加入此參數會導致命令執行緩慢，並增加影像大小。
+   **-d**: 標幟可讓文字、向量圖稿和影像順暢呈現。 建立更高品質的影像。 不過，加入此參數會導致命令執行緩慢，並增加影像大小。
 
-   **-p**:頁碼。 預設值是所有頁面。 星號表 `*` 示所有頁面。
+   **-p**: 頁碼。 預設值是所有頁面。 星號表 `*` 示所有頁面。
 
-   **-s**:最大影像尺寸（高度或寬度）。 這會針對每個頁面轉換為DPI。 如果頁面大小不同，每個頁面可能會依不同的數量進行縮放。 預設值為實際頁面大小。
+   **-s**: 最大影像尺寸（高度或寬度）。 這會針對每個頁面轉換為DPI。 如果頁面大小不同，每個頁面可能會依不同的數量進行縮放。 預設值為實際頁面大小。
 
-   **-t**:輸出影像類型。 有效類型有JPEG、PNG、GIF和BMP。 預設值為JPEG。
+   **-t**: 輸出影像類型。 有效類型有JPEG、PNG、GIF和BMP。 預設值為JPEG。
 
-   **-i**:輸入PDF的路徑。 此參數為強制參數。
+   **-i**: 輸入PDF的路徑。 此參數為強制參數。
 
-   **-h**:說明
+   **-h**: 說明
 
 1. 要刪除中間轉譯，請選擇「刪 **[!UICONTROL 除生成的轉譯」]**。
 1. 若要讓PDF點陣化產生Web轉譯，請選取「產 **[!UICONTROL 生Web轉譯」]**。
