@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 17f5041c16996ec3f230650451a816c08170837c
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 1%
 
 ---
 
@@ -64,14 +67,6 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
    <td>
     <ul> 
      <li>建立並預覽最適化表單或互動式通訊範本</li> 
-    </ul> </td> 
-  </tr>
-  <tr>
-   <td>模板——用戶</td> 
-   <td>
-    <ul> 
-     <li>建立並預覽最適化表單或互動式通訊範本</li> 
-     <li>使用程式碼編輯器，為最適化表單或互動式通訊範本建立指令碼</li> 
     </ul> </td> 
   </tr>
   <tr>
