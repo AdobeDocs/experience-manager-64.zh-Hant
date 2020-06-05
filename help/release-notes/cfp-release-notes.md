@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
+source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
 workflow-type: tm+mt
-source-wordcount: '2142'
+source-wordcount: '2152'
 ht-degree: 1%
 
 ---
@@ -237,7 +237,7 @@ Adobe Public Maven儲存庫中提供AEM 6.4.8.1版的Uber Jar [](https://repo.ad
 
 ## 已知問題 {#known-issues}
 
-* 83版的 [!DNL chrome] 更新造成建立封裝時發生問題。 使用其他可用的瀏覽器(例如 [!DNL Internet Explorer] 和 [!DNL Firefox]或其他AEM標準套件安裝選項)來解決問題。
+* 在安裝AEM 6.4.8.1時，83版的更新 [!DNL Chrome] 會造成建立封裝時發生問題。 使用其他可用的瀏覽器(例如 [!DNL Internet Explorer] 和 [!DNL Firefox]或其他AEM標準套件安裝選項)來解決問題。 安裝AEM 6.4.8.1後，問題就解決。
 
 * 無法使用AEM預設郵件寄件者，將電子郵件傳送至遠端SMTP伺服器，因為它僅允許使用TLS v1.2進行通訊。 從中刪 `javax.mail:mail:1.5.0-b01` 除包 `system/console` 並刷新包以解決問題。
 
