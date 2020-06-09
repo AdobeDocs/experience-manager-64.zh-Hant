@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+workflow-type: tm+mt
+source-wordcount: '3223'
+ht-degree: 1%
 
 ---
 
@@ -78,6 +81,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
       * 如果您要在We.Retail範例內容以外的自訂資料夾中建立範本，您可以選擇「基礎元件」或使用「核 [心元件」](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)。
    * 如果您希望頁面作者能夠新增和移除元件，請將段落系統新增至範本。
    * 元件可以解除鎖定並再次鎖定，以便您定義初始內容。
+
    如需範本作者如何定義結構的詳細資訊，請參 [閱建立頁面範本](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)。
 
    有關結構的技術詳細資訊，請參 [閱本文](/help/sites-developing/page-templates-editable.md#structure) 中的結構。
@@ -88,6 +92,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
       * 例如，可用元件或最小／最大尺寸。
    * 這些範本（和使用範本建立的頁面）適用。
+
    如需範本作者如何定義原則的詳細資訊，請參 [閱建立頁面範本](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)。
 
    如需政策的技術詳細資訊，請參 [閱本檔案中的](/help/sites-developing/page-templates-editable.md#content-policies) 「內容政策」。
@@ -96,6 +101,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
    * 「初始內容」會定義首次根據範本建立頁面時將出現的內容。
    * 然後頁面作者就可以編輯初始內容。
+
    如需範本作者如何定義結構的詳細資訊，請參 [閱建立頁面範本](/help/sites-authoring/templates.md#editing-a-template-initial-content-author)。
 
    如需初始內容的技術詳細資訊，請參 [閱本檔案中的](/help/sites-developing/page-templates-editable.md#initial-content) 「初始內容」。
@@ -104,6 +110,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
    * 您可以為各種裝置定義範本版面。
    * 範本的互動式版面功能與網頁製作功能相同。
+
    如需範本作者如何定義範本版面的詳細資訊，請參閱「建立頁 [面範本」](/help/sites-authoring/templates.md#editing-a-template-layout-template-author)。
 
    如需範本版面的技術詳細資訊，請參 [閱本檔案中的](/help/sites-developing/page-templates-editable.md#layout) 「版面」。
@@ -112,6 +119,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
    * 範本可以啟用或停用，讓頁面作者可使用或無法使用。
    * 範本可供某些頁面分支使用或無法使用。
+
    如需範本作者如何啟用範本的詳細資訊，請參閱建 [立頁面範本](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author)。
 
    如需啟用範本的技術詳細資訊，請參 [閱本檔案中的啟用和允](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)許範本使用
@@ -120,6 +128,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
    * 使用範本建立新頁面時，靜態和可編輯範本之間沒有明顯的差異，也沒有任何指示。
    * 對於頁面作者，此程式是透明的。
+
    如需頁面作者如何使用範本建立頁面的詳細資訊，請參閱「建立 [和組織頁面」](/help/sites-authoring/managing-pages.md#templates)。
 
    如需有關使用可編輯範本建立頁面的技術詳細資訊，請參 [閱本檔案中的「產生內容頁面](/help/sites-developing/page-templates-editable.md#resultant-content-pages) 」。
@@ -196,9 +205,9 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
    名稱: `jcr:title`
 
    * 類型: `String`
-   * 值：您要顯示在「範本」控制台中的標題(資料 **夾** )。
+   * 值： 您要顯示在「範本」控制台中的標題(資料 **夾** )。
 
-1. 除了 *標準編寫權限* (例如 `content-authors`)您現在需要指派群組，並定義作者在新資料夾中建立範本所需的存取權限(ACL)。
+1. 除了 *標準編寫權限* (例如 `content-authors`)，您現在需要指派群組，並定義作者在新資料夾中建立範本所需的存取權限(ACL)。
 
    群 `template-authors` 組是需要指派的預設群組。 有關詳細資訊，請 [參見以下章節](/help/sites-developing/page-templates-editable.md#acls-and-groups) 「ACL和組」。
 
@@ -210,11 +219,11 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
    現有資料夾列在左側，包括全 ****&#x200B;局資料夾。
 
-1. 按一下 **建立**。
+1. 按一下&#x200B;**建立**。
 1. 在「創 **建配置** 」對話框中，需要配置以下欄位：
 
-   * **標題**:提供配置資料夾的標題
-   * **可編輯的範本**:勾選以允許在此資料夾內編輯範本
+   * **標題**: 提供配置資料夾的標題
+   * **可編輯的範本**: 勾選以允許在此資料夾內編輯範本
 
 1. Click **Create**
 
@@ -236,7 +245,7 @@ We.Retail參考實作的范 [本資料夾](/help/sites-developing/we-retail.md) 
 >
 >群 `template-authors` 組僅 ** 適用於必須能夠建立新範本的使用者。
 >
->編輯範本功能十分強大，如果未正確完成，現有的範本可能會中斷。 因此，此角色應該有重點，並僅包括合格用戶。
+>編輯範本功能十分強大，如果未正確完成，現有範本就會中斷。 因此，此角色應該有重點，並且僅包括合格用戶。
 
 下表詳細說明範本編輯的必要權限。
 
@@ -442,7 +451,7 @@ GITHUB代碼
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
 * `/conf/global/settings/wcm/templates`
 
-模板的根節點類型為 `cq:Template` 骨架結構：
+模板的根節點類型為： `cq:Template` 骨架結構：
 
 ```xml
 <template-name>
@@ -493,7 +502,7 @@ GITHUB代碼
 * **名稱**: `status`
 
    * **類型**: `String`
-   * **值**: `draft`、 `enabled` 或 `disabled`
+   * **值**: `draft`、 `enabled` or或 `disabled`
 
 ### 結構 {#structure}
 
@@ -570,8 +579,8 @@ GITHUB代碼
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
       * 定義屬性：
 
-         * 名稱：狀態
-         * 類型：字串
+         * 名稱： 狀態
+         * 類型： 字串
          * 值: `enabled`
 
 1. **允許的範本**
@@ -596,7 +605,7 @@ GITHUB代碼
 
    * `cq:template`
 
-      提供實際模板的動態參考；可讓範本的變更反映在實際頁面上。
+      提供實際模板的動態參考； 可讓範本的變更反映在實際頁面上。
 
    * `cq:templateType`
 
@@ -632,7 +641,7 @@ GITHUB代碼
 
    * 頁面元件將合併模 `structure/jcr:content` 板的樹和頁 `jcr:content` 面的樹。
    * 頁面元件僅允許作者編輯已標幟為可編輯的範本結構節點（以及任何子系）。
-   * 在頁面上呈現元件時，該元件的相對路徑會從節點中取 `jcr:content` 得；然後，將搜索模 `policies/jcr:content` 板節點下的相同路徑。
+   * 在頁面上呈現元件時，該元件的相對路徑會從節點中取 `jcr:content` 得； 然後，將搜索模 `policies/jcr:content` 板節點下的相同路徑。
 
       * 此節 `cq:policy` 點的屬性指向實際內容策略（即它包含該元件的設計配置）。
       * 這可讓您擁有多個範本，可重複使用相同的內容原則設定。
