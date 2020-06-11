@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+source-git-commit: 774f0e8b631f6f8328e7bd9d4172498df58459bc
 workflow-type: tm+mt
-source-wordcount: '21556'
+source-wordcount: '21555'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 | 版本 | 6.4.8.0 |
 | 類型 | Service Pack版本 |
 | 日期 | 2020年3月05日 |
-| 下載URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Software Distribution(Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| 下載URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0包含的功能 {#what-s-included-in-aem}
 
@@ -817,7 +817,7 @@ AEM 6.4.4.0的一些主要亮點是：
 * 編輯內容片段&quot;jcr:lastmodifiedby&quot;和&quot;jcr:lastmodified&quot;屬性時，值會在使用者不進行任何變更的情況下更新。 NPR-27847: CQ-4257138的修補程式
 * 內容片段版本修訂比較AEM 6.4的比較改進。 NPR-27764
 * 如果/content/experience-fragments上未定義cq:allowedTemplates，而Experience Fragments範本上使用allowedPaths，則移動／複製體驗片段時會擲回錯誤。 NPR-27487: CQ-4257489的修補程式
-* 重新整理新使用者時，「建立」按鈕會出現。 NPR-27335: CQ-4253360的修補程式
+* 重新整理新使用者時，「建立」按鈕會出現。 NPR-27335: CQ-4255360的修補程式
 * 嘗試移動已發佈頁面時，「移動頁面」精靈第一頁顯示的「參考頁面」計數不正確。 NPR-28111: CQ-4259663的修補程式
 * (Touch UI)「參考邊欄」不會顯示傳入的連結。 NPR-28529: CQ-4262306的修補程式
 * 安裝AEM 6.4.3後，無法編輯任何元件和頁面屬性。 NPR-27998: CQ-4261216、CQ-4260441的修補程式
@@ -1076,7 +1076,7 @@ AEM 6.4.3.0的一些主要亮點是：
 * 當富格文本編輯器與多個欄位組合時，Uncated TypeError: fieldAPI.getName不是發生foundation.js錯誤時的函式。 NPR-27146: CQ-4253155的修補程式
 * Salesforce整合無法使用Proxy設定。 NPR-27244: CQ-4245300的修補程式
 * 當您使用「管理出版物」選項排程頁面以供日後啟動，並切換至清單檢視時，日曆圖示會遺失。 NPR-26974: CQ-4239206的修補程式
-* 使用者無法編輯頁面屬性中的已關閉使用者群組權限。 NPR-27138: CQ-4256089的修補程式無法透過標籤編輯標籤。 NPR-26958: CQ-4254858的修補程式
+* 使用者無法編輯頁面屬性中的已關閉使用者群組權限。 NPR-27138: CQ-4256089的修補程式無法透過標籤編輯標籤。 NPR-26957: CQ-4254858的修補程式
 * 當從結構化內容片段模型參考的標籤被移動時，不會更新內容片段中標籤的現有參考。 這會在內容片段模型的編輯畫面中發生。 NPR-26776: CQ-4251805的修補程式
 * 當您建立並促銷包含數個頁面的啟動時，會為每個頁面建立多個版本。 NPR-26917: CQ-4254663的修補程式
 * AEM網站管理員不會處理輸入至瀏覽器位址列的路徑。 NPR-26780: CQ-4254097的修補程式
@@ -1113,7 +1113,7 @@ AEM 6.4.3.0的一些主要亮點是：
 * ResourceProviderTracker中的IndexOutOfBoundsException。 NPR-26968: GRANITE-23310的修補程式
 * JMX主控台會累積許多管理階段作業，每5分鐘就會開啟一個新階段作業。 NPR-26958: CQ-4251090的修補程式
 * 從6.2升級至6.4後，記錄檔會顯示未關閉資源解析程式com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck的堆疊追蹤。 NPR-26176: Granite-21734的修補程式
-* 將現成可用的調度器刷新代理配置為更新別名時，操作將失敗，並出現StackOverflowError。 NPR-26373: CQ-4243928的修補程式
+* 將現成可用的調度器刷新代理配置為更新別名時，操作將失敗，並出現StackOverflowError。 NPR-26373: CQ-4242928的修補程式
 * 複製使用過期的OAuth Token，直到失敗。 NPR-25894
 * Restricted page(Closed User Group page)with sling: 別名不會將使用者重新導向至登入頁面。 NPR-25715: Granite=22263的修補程式
 * 在發佈標籤時，UI上不會顯示任何活動。 CQ-4255961的修補程式
@@ -1142,7 +1142,7 @@ AEM 6.4.3.0的一些主要亮點是：
 * 即使群組清單已啟用分頁功能，啟用資源頁面中也只會列出10個群組。 NPR-26934: CQ-4252985的修補程式
 * 在ConfigMgr中提供啟用／停用日誌元件中「已排程貼文」搜索的選項，並且SearchScheduledPosts作業已優化。 NPR-26923: CQ-4250463的修補程式
 * 當AEM社群設為搭配DSRP運作時，依位址中關鍵字搜尋無法在日曆元件頁面中運作。 NPR-26737: CQ-4258493的修補程式
-* 為協調UI與啟用資源，實作留言的直接連結，而非留言詳細資料中的主要貼文。 NPR-26702: CQ-4251381的修補程式
+* 為協調UI與啟用資源，實作留言的直接連結，而非留言詳細資料中的主要貼文。 NPR-26704: CQ-4251381的修補程式
 * 在協調主控台上，透過多選進行協調的內容不會顯示在活動串流中。 NPR-26695: CQ-4253244的修補程式
 * 在「社群訊息」的「收件者」欄位中使用名字和姓氏進行搜尋時，不會傳回預期結果。 NPR-26385: CQ-4248673的修補程式
 * 在論壇中上傳影像以外的附件（例如。pdf）時發生錯誤。 NPR-27360: CQ-4257753的修補程式
@@ -1293,7 +1293,7 @@ AEM 6.4.2.0的一些主要亮點是：
 * 新增支援HTML範本語言(HTL)規格1.4功能
 * 已新增對MongoDB Enterprise 3.6的支援。
 * 「網站頁面編輯器」新增支援內容內容內容編輯和構圖，搭配 <a href="../sites-developing/spa-walkthrough.md">AEM的SPA編輯器JS SDK搭配使用React或Angular中建立的用戶端元件</a>。
-* 內容片段增強功能： 新增可在文字欄位中加上註解的功能，並並排比較版本。
+* 內容片段增強功能： 新增可在文字欄位中加上註解，以及並排比較版本的功能。
 * 新增 [與Adobe Stock的整合](/help/assets/aem-assets-adobe-stock.md) ，讓使用者可以直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 如需詳細資訊，請參 [閱「搭配使用Adobe Stock資產與AEM資產」](https://helpx.adobe.com/experience-manager/kt/assets/stock-assets-feature-video-use.md)。
 * 新增資產支援動態條件式中繼資料架構，以及為資產資料夾設定中繼資料架構的功能。
 * 在每個元件中新增設定，以啟用／停用資料夾縮圖建立／更新功能。
@@ -1452,7 +1452,7 @@ AEM 6.4.2.0的一些主要亮點是：
 * （網站設定）可儲存對角色所做的變更。 NPR-26274: CQ-4252187的修補程式
 * （安全性弱點）由於JSON Web Token設定錯誤而導致帳戶接管。 NPR-26458: CQ-4253314的修補程式
 * 移除回覆時不會重設分頁。 NPR-26326: CQ-4252997的修補程式
-* 編輯時，附件影像不會顯示在「草稿」中。 CQ-4253360的修補程式
+* 編輯時，附件影像不會顯示在「草稿」中。 CQ-4255360的修補程式
 * 在關係資料庫(DSRP)中附加附件時，頁面不會刷新。 CQ-4253084的修補程式
 * 群組無法在啟用網站資源中運作。 CQ-4252975的修補程式
 * 「啟用」中不會保留先決條件學習路徑。 CQ-4252948的修補程式
@@ -1542,7 +1542,7 @@ AEM 6.4.2.0的一些主要亮點是：
 **花崗岩**
 
 * bundle SymbolicName中的錯字會導致重複的bundle。 Granite修補程式- 22155
-* CUGConfiguration無法拾取CugExclude。 Granite的修補程式- 21109
+* CUGConfiguration不能拾取CugExclude。 Granite的修補程式- 21109
 * 重新啟動Adobe Granite Workflow Core會重新執行從中間建立不必要工作流程的工作流程步驟。 NPR-25057: Granite-22218的修補程式
 * JcrResourceBundle無法正確支援多個基本名稱。 NPR-25245: Granite-22317的修補程式
 * 在安裝內容包時，ACL按主體分組，因此會破壞權限模型。 NPR-24583: Granite-21591的修補程式
@@ -1802,13 +1802,13 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 「工作流動態參與者步驟」不會顯示/apps/workflow/scripts中的指令碼。 NPR-23464: Granite-21276的修補程式
 * 編輯一次工作流程後，無法編輯它。 NPR-23742: CQ-4238526的修補程式
 * （傳統UI）編輯工作流程啟動器時，條件會消失，導致工作流程在沒有任何條件的情況下啟動。 NPR-23835: CQ-4239153的修補程式
-* 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 NPR-23948: CQ-4241236的修補程式
+* 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 NPR-23947: CQ-4241236的修補程式
 * 需要在套件中公開裝載詳細資訊，讓HTL元件可在清單檢視中顯示值。 NPR-23948: CQ-4240953的修補程式
 * 無法在「對話參與者」(Dialog Participant)步驟中儲存對話資料。 NPR-23965: CQ-4234123的修補程式
 * (Touch UI)儲存工作流程模型時，「同步」按鈕會變更為「同步」，導致拼字錯誤。 CQ-4244843的修補程式
 * 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 CQ-4244436的修補程式
 * 無法在「對話方塊參與者」(Dialog Participant)步驟中選擇「對話框」(Dialogs)。 CQ-4244532的修補程式
-* granite.omnisearch.core修正的主動式支援。 NPR-23538
+* granite.omnisearch.core修正的主動式支援。 NPR-23536
 * Mobile Workspace App 6.4與共用工作的問題。 NPR-26383
 
 **WCM —— 翻譯**
@@ -1927,8 +1927,8 @@ AEM Forms的主要亮點是：
 * (FDM WSDL)獲取真實例外： java.lang.exception: createSOAPParam: 無效參數。 NPR-24264
 * (FDM Client SDK)無法測試前／後預處理器和自定義提交操作。 CQ-4238469的修補程式
 * 修正Dermis中的Javadoc問題。 CQ-4244250的修補程式
-* 增強網站服務說明語言(WSDL)的輸入。 CQ-4244133的修補程式
-* AEM 6.3和AEM 6.4中相同組態的WSDL基本驗證測試會產生不同的錯誤。 CQ-4244132的修補程式
+* 增強網站服務說明語言(WSDL)的輸入。 CQ-4245132的修補程式
+* AEM 6.3和AEM 6.4中相同組態的WSDL基本驗證測試會產生不同的錯誤。 CQ-4245132的修補程式
 * 請求將ValueUtil包含在client-sdk和javadoc中。 CQ-4242803的修補程式
 * （FDM雲配置）無法從雲配置配置配置基於SOAP的身份驗證。 CQ-4238462的修補程式
 * Dermis —— 在Javadoc中添加缺少的包。 CQ-4242815的修補程式
