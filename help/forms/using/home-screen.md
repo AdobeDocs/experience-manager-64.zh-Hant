@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '347'
+ht-degree: 0%
 
 ---
 
@@ -25,10 +28,10 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 下圖為預設「首頁」畫面上基本元件的註解。
 ![Forms應用程式首頁畫面](assets/home-screen-1.png)[按一下以放大](assets/home-screen-1-1.png)
 
-1. **功能表按鈕**:點選「**功能表**」按鈕，導覽至「工作」、「表單」、「Outbox」和「設定」。 如果您的AEM Forms應用程式已連線至AEM Forms JEE伺服器，您就可以看到「工作」選項。 「任務」選項還儲存從進程中的任務建立的草稿。 對於AEM Forms OSGi伺服器，「工作」選項會隱藏。 Outbox會先儲儲存儲存存的表單和草稿，再與伺服器同步。 當應用程式與伺服器同步時，Outbox中所有儲存的表格和草稿都會上傳到AEM Forms [伺服器](/help/forms/using/sync-app.md)。 如需「設定」的詳細資訊，請參閱「 [更新一般設定」](/help/forms/using/update-general-settings.md)。
-1. **任務或表單**:點選您要使用的清單工作或表格。
-1. **水準省略號**:表示表單有可用的動作。 點選省略號會顯示作者提供的動作和說明。 點選 **省略號時** ，會顯 **** 示「刪除草稿和完成」選項。
-1. **重新整理圖示**:點選重新整理圖示，將您的應用程式與AEM Forms伺服器同步。
+1. **功能表按鈕**: 點選「 **功能表** 」按鈕，以導覽至「工作」、「表單」、「輸出方塊」和「設定」。 如果您的AEM Forms應用程式已連線至AEM Forms JEE伺服器，您就可以看到「工作」選項。 「任務」選項還儲存從進程中的任務建立的草稿。 對於AEM Forms OSGi伺服器，「工作」選項會隱藏。 Outbox會先儲儲存儲存存的表單和草稿，再與伺服器同步。 當應用程式與伺服器同步時，Outbox中所有儲存的表格和草稿都會上傳到AEM Forms [伺服器](/help/forms/using/sync-app.md)。 如需「設定」的詳細資訊，請參閱「 [更新一般設定」](/help/forms/using/update-general-settings.md)。
+1. **任務或表單**: 點選您要使用的清單工作或表格。
+1. **水準省略號**: 表示表單有可用的動作。 點選省略號會顯示作者提供的動作和說明。 點選 **省略號時** ，會顯 **** 示「刪除草稿和完成」選項。
+1. **重新整理圖示**: 點選重新整理圖示，將您的應用程式與AEM Forms伺服器同步。
 
 ## 自訂首頁畫面 {#customizing-the-home-screen}
 
