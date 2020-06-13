@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 1%
 
 ---
 
@@ -59,13 +62,15 @@ EMC Documentum的Connector支援AEM表單與EMC Documentum之間的通信。 如
 
 您可以配置要與Documentum一起使用的儲存庫服務提供方。 儲存庫服務調用被委派給您配置的提供程式。 可使用下列選項：
 
-**** 當前儲存庫服務提供方名稱：當前儲存庫服務提供方的名稱
+**當前儲存庫服務提供方名稱：** 當前儲存庫服務提供方的名稱
 
-**** ECM Documentum儲存庫提供方：使Documentum儲存庫提供程式成為儲存庫的提供程式。 此選項已過時
+**ECM Documentum儲存庫提供方：** 使Documentum儲存庫提供程式成為儲存庫的提供程式。 此選項已過時
 
-**** 儲存庫提供方：使本機儲存庫提供程式成為儲存庫的提供程式
+**儲存庫提供方：** 使本機儲存庫提供程式成為儲存庫的提供程式
 
-***注意&#x200B;**:要選擇所列的儲存庫服務提供方以外的儲存庫服務提供方，請在「應用程式和服務」>「服務管理」中配置RepositoryService。<!-- Fix broken link (See Managing Services) -->*
+>[!NOTE]
+>
+>要選擇所列的儲存庫服務提供方以外的儲存庫服務提供方，請在「應用程式和服務」>「服務管理」中配置RepositoryService。 <!-- Fix broken link (See Managing Services) -->
 
 1. 在管理控制台中，按一下「服務」>「EMC Documentum的連接器」>「配置設定」。
 1. 在儲存庫服務提供方資訊區中，選擇替代儲存庫服務提供方。
@@ -73,7 +78,7 @@ EMC Documentum的Connector支援AEM表單與EMC Documentum之間的通信。 如
 
 ## 配置儲存庫憑據 {#configuring-repository-credentials}
 
-Documentum憑證資訊會用於AEM表單系統內容。 儲存庫憑據是Documentum中特定儲存庫的特定憑據。 您可以為任意數量的儲存庫提供憑據；但是，每個儲存庫只能指定一組憑據。
+Documentum憑證資訊會用於AEM表單系統內容。 儲存庫憑據是Documentum中特定儲存庫的特定憑據。 您可以為任意數量的儲存庫提供憑據； 但是，每個儲存庫只能指定一組憑據。
 
 ### 添加儲存庫憑據 {#add-a-repository-credential}
 
