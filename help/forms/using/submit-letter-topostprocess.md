@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 637342e8-fbdd-4cda-b175-56a805b3b480
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +27,9 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 若要將貼文程式與信件或互動式通訊建立關聯，您必須先設定貼文程式。 可在提交的信件上執行兩種工作流程：
 
-1. **** 表單工作流程：這些是JEE流程管理工作流程上的AEM Forms。 設定表單工作 [流程的指示](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3)。
+1. **表單工作流程：** 這些是JEE流程管理工作流程上的AEM Forms。 設定表單工作 [流程的指示](#formsworkflow)。
 
-1. **** AEM Workflow:AEM工作流程也可用作已提交信件的貼文處理。 設定 [AEM Workflow的指示](/help/forms/using/aem-forms-workflow.md)。
+1. **AEM Workflow:** AEM工作流程也可用作已提交信件的貼文處理。 設定 [AEM Workflow的指示](/help/forms/using/aem-forms-workflow.md)。
 
 ## 表單工作流程 {#formsworkflow}
 
@@ -56,11 +59,12 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
    前往「Adobe Experience Manager Web Console設定」頁面>「對 **[!UICONTROL 應管理設定]** 」，並設定下列參數：
 
-   1. **** inPDFoc（PDF檔案參數）:輸入PDF檔案。 此輸入包含已轉換的字母作為輸入。 所指示的參數名稱是可配置的。 它們可從配置中從「對應管理」配置進行配置。
-   1. **** inXMLDoc（XML資料參數）:輸入XML檔案。 此輸入包含使用者以XML格式輸入的資料。
-   1. **** inXDPDoc（XDP文檔參數）:輸入XML檔案。 此輸入包含基礎版面(XDP)。
-   1. **** inAttachmentDocs（Attachment Documents參數）:清單輸入參數。 此輸入包含所有作為輸入的附件。
-   1. **** 重新導向URL（重新導向URL輸出）:指示要重新導向至之URL的輸出類型。
+   1. **inPDFoc（PDF檔案參數）:** 輸入PDF檔案。 此輸入包含已轉換的字母作為輸入。 所指示的參數名稱是可配置的。 它們可從配置中從「對應管理」配置進行配置。
+   1. **inXMLDoc（XML資料參數）:** 輸入XML檔案。 此輸入包含使用者以XML格式輸入的資料。
+   1. **inXDPDoc（XDP文檔參數）:** 輸入XML檔案。 此輸入包含基礎版面(XDP)。
+   1. **inAttachmentDocs（Attachment Documents參數）:** 清單輸入參數。 此輸入包含所有作為輸入的附件。
+   1. **重新導向URL（重新導向URL輸出）:** 指示要重新導向至之URL的輸出類型。
+
    您的表單工作流程必須有PDF檔案參數或XML資料參數作為輸入，且名稱必須與「對應管理設定」中 **[!UICONTROL 指定的名稱相同]**。 此為「後置進程」下拉式清單中列出的進程所必需。
 
 ## 發佈例項的設定 {#settings-on-the-publish-instance}
@@ -117,7 +121,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 1. 點選「 **儲存**」。
 1. 使用「後置處理」設定信件後，請發佈該信件，並選擇性地在發佈例項上，在AEM DS設定服務中指定處理URL。 這可確保後置進程在處理實例上運行。
 
-## 重新載入草稿字母例項 {#reloaddraft}
+## 重新載入草稿字母例項  {#reloaddraft}
 
 您可使用下列URL，在使用者介面中重新載入草稿字母例項：
 
@@ -125,6 +129,6 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 `createcorrespondence.html?/random=$&cmLetterInstanceId=$<LetterInstanceId>`
 
-LetterInstaceID:已提交字母實例的唯一ID。
+LetterInstaceID: 已提交字母實例的唯一ID。
 
 有關保存草稿信函的詳細資訊，請參閱 [保存草稿和提交信函實例](/help/forms/using/create-correspondence.md#savingdrafts)。
