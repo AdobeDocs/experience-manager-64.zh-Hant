@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2772'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 * 將PDF檔案轉換為PostScript。
 * 將PDF檔案轉換為影像格式。
 
-   ***注意&#x200B;**:如需轉換PDF服務的詳細資訊，請參閱「AEM表[單的服務參考」](https://www.adobe.com/go/learn_aemforms_services_63)。*
+   >[!NOTE]
+   >
+   >如需轉換PDF服務的詳細資訊，請參閱「AEM表 [單的服務參考」](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 將PDF檔案轉換為PostScript {#converting-pdf-documents-to-postscript}
 
@@ -55,7 +60,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 您必須先建立「轉換PDF」服務用戶端，才能以程式設計方式執行「轉換PDF」服務作業。 如果您使用Java API，請建立物 `ConvertPdfServiceClient` 件。 如果您使用web service API，請建立物 `ConvertPDFServiceService` 件。
 
-本節使用AEM Forms中引進的Web服務功能。 若要存取新功能，您必須使用屬性來建構您的Proxy物 `lc_version` 件。 (請參閱「使用Web services叫用AEM Forms」中的「使 [用Web Services存取新功能](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)」)。
+本節使用AEM Forms中引進的Web服務功能。 若要存取新功能，您必須使用屬性來建構您的Proxy物 `lc_version` 件。 (請參閱「使用Web Services叫用AEM Forms」中的「使 [用Web Services存取新功能](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)」)。
 
 **參考PDF檔案以轉換為PostScript檔案**
 
@@ -87,7 +92,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [使用web service API將PDF檔案轉換為PS](converting-pdf-postscript-image-files.md#convert-a-pdf-document-to-ps-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -122,6 +127,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
    * 表示 `com.adobe.idp.Document` 要轉換為PostScript檔案的PDF檔案的物件。
    * 指定 `ToPSOptionsSpec` PostScript執行時間選項的物件。
+
    此方 `toPS2` 法會傳回包 `Document` 含新PostScript檔案的物件。
 
 1. 儲存PostScript檔案。
@@ -133,9 +139,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [步驟摘要](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API將PDF檔案轉換為PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API將PDF檔案轉換為PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -145,7 +151,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ConvertPDFService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ConvertPDFService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -154,7 +160,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 建立轉換PDF用戶端。
 
    * 使用其 `ConvertPdfServiceClient` 預設建構函式建立物件。
-   * 使用建 `ConvertPdfServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`。)您不需要使用屬 `lc_version` 性。 不過，請指定 `?blob=mtom`。
+   * 使用建 `ConvertPdfServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`。) 您不需要使用屬 `lc_version` 性。 不過，請指定 `?blob=mtom`。
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `ConvertPdfServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
@@ -183,6 +189,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
    * 表示 `BLOB` 要轉換為PostScript檔案的PDF檔案的物件
    * 指定 `ToPSOptionsSpec` 運行時選項的對象
+
    轉換完成後，請存取PostScript檔案的物件屬性，以擷取代表PostScript文 `BLOB` 件的二進位 `MTOM` 資料。 這會傳回一個位元組陣列，您可將其寫出至PostScript檔案。
 
 1. 儲存PostScript檔案。
@@ -231,7 +238,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **擷取要轉換的PDF檔案**
 
-您必須擷取PDF檔案才能轉換為影像。 您無法將互動式PDF檔案轉換為影像。 如果您嘗試這麼做，則會擲回例外。 若要將互動式PDF檔案轉換為影像檔案，您必須先平面化PDF檔案，才能轉換。 (請參閱 [平面化PDF檔案](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。)
+您必須擷取PDF檔案才能轉換為影像。 您無法將互動式PDF檔案轉換為影像。 如果您嘗試這麼做，則會擲回例外。 若要將互動式PDF檔案轉換為影像檔，您必須先平面化PDF檔案，才能進行轉換。 (請參閱 [平面化PDF檔案](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。)
 
 **設定執行時期選項**
 
@@ -249,7 +256,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -277,6 +284,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
    * 使用其 `ToImageOptionsSpec` 建構函式建立物件。
    * 根據需要調用屬於此對象的方法。 例如，通過調用方法並傳遞指定格 `setImageConvertFormat` 式類型的枚舉 `ImageConvertFormat` 值來設定影像類型。
+
    >[!NOTE]
    >
    >必須 `ImageConvertFormat` 設定枚舉值。
@@ -286,7 +294,8 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
    叫用物 `ConvertPdfServiceClient` 件的方 `toImage2` 法並傳遞下列值：
 
    * 表示 `com.adobe.idp.Document` 要轉換的PDF檔案的物件。
-   * 包 `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` 含目標影像格式的各種首選項的對象。
+   * 包 `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` 含目標影像格式各種首選項的對象。
+
    該方 `toImage2` 法返回包 `java.util.List` 含影像的對象。 系列中的每個元素都是例 `com.adobe.idp.Document` 項。
 
 1. 從系列擷取影像檔案。
@@ -295,7 +304,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API將PDF檔案轉換為JPEG檔案](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API將PDF檔案轉換為JPEG檔案](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 ### 使用web service API將PDF檔案轉換為影像檔 {#convert-a-pdf-document-to-image-files-using-the-web-service-api}
 
@@ -303,7 +312,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ConvertPDFService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ConvertPDFService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -312,7 +321,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 建立轉換PDF用戶端。
 
    * 使用其 `ConvertPdfServiceClient` 預設建構函式建立物件。
-   * 使用建 `ConvertPdfServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`。)您不需要使用屬 `lc_version` 性。 不過，請指定 `?blob=mtom`。
+   * 使用建 `ConvertPdfServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`。) 您不需要使用屬 `lc_version` 性。 不過，請指定 `?blob=mtom`。
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `ConvertPdfServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
@@ -334,6 +343,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
    * 使用其 `ToImageOptionsSpec` 建構函式建立物件。
    * 根據需要調用屬於此對象的方法。 例如，通過調用方法並傳遞指定格 `setImageConvertFormat` 式類型的枚 `ImageConvertFormat` 舉值來設定影像類型。
+
    >[!NOTE]
    >
    >必須 `ImageConvertFormat` 設定枚舉值。
@@ -344,6 +354,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
    * 表示 `BLOB` 要轉換的檔案的對象
    * 包 `ToImageOptionsSpec` 含目標影像格式各種首選項的對象
+
    該方 `toImage2` 法返回包 `MyArrayOfBLOB` 含新建映像檔案的對象。
 
 1. 從系列擷取影像檔案。
