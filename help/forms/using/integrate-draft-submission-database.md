@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: da967c43a6b4c0021ac591477bd13f3fdb026287
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1493'
+ht-degree: 1%
 
 ---
 
@@ -77,7 +80,9 @@ AEM Forms Portal草稿和提交元件可讓使用者將表單儲存為草稿，�
    要為資料表提供不同的名稱：
 
    * 在Web控制台配置中，查找並按一下表單門戶資料服務示例實施。 您可以變更資料來源和資料表格名稱的值。
-   **注意**:如果您變更表格名稱，請在表單入口網站設定中提供表格名稱。
+   >[!NOTE]
+   >
+   >如果您變更表格名稱，請在表單入口網站設定中提供表格名稱。
 
 1. 保持其他配置不變，然後按一下「 **[!UICONTROL 保存]**」。
 
@@ -92,7 +97,7 @@ AEM Forms Portal草稿和提交元件可讓使用者將表單儲存為草稿，�
   </tr> 
   <tr> 
    <td>資料來源名稱</td> 
-   <td><p>用於從資料源池過濾驅動程式的資料源名稱</p> <p><strong>注意：范 </strong><em>例實作使用FormsPortal作為資料來源名稱。</em></p> </td> 
+   <td><p>用於從資料源池過濾驅動程式的資料源名稱</p> <p><strong>注意： </strong><em>範例實作使用FormsPortal作為資料來源名稱。</em></p> </td> 
   </tr> 
   <tr> 
    <td>JDBC驅動程式類</td> 
@@ -317,7 +322,7 @@ AEM Forms Portal草稿和提交元件可讓使用者將表單儲存為草稿，�
 
 [取得檔案](assets/sample_package.zip)
 
-## 驗證檔案名的長度 {#verify-length-of-the-file-name}
+## 驗證檔案名的長度  {#verify-length-of-the-file-name}
 
 Forms Portal的資料庫實作會使用其他中繼資料表格。 該表具有基於表的Key和id列的複合主鍵。 MySQL允許主鍵長度高達255個字元。 您可以使用下列用戶端驗證指令碼來驗證檔案介面工具集所附加的檔案名稱長度。 驗證會在附加檔案時執行。 以下過程中提供的指令碼在檔案名大於150（包括副檔名）時顯示一條消息。 您可以修改指令碼以檢查其中是否有不同數量的字元。
 
