@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1334'
+ht-degree: 0%
 
 ---
 
@@ -21,13 +24,13 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 AEM Forms Data Integration可讓您設定並連線至不同的資料來源。 下列類型是現成可用的支援。 不過，只需少量自訂，您也可以整合其他資料來源。
 
-* 關係資料庫- mySQL、Microsoft SQL Server、IBM DB2和Oracle RDBMS。
+* 關係資料庫- MySQL、Microsoft SQL Server、IBM DB2和Oracle RDBMS。
 * AEM使用者設定檔
 * REST風格的Web服務
 * 基於SOAP的web services
 * OData服務
 
-資料整合支援OAuth2.0、基本驗證和API金鑰驗證類型立即可用，並可實作自訂驗證以存取網站服務。 雖然RESTful、SOAP架構和OData服務已在AEM Cloud services中設定，但AEM web主控台中已設定關係式資料庫的JDBC和AEM使用者設定檔的連接器。
+資料整合支援OAuth2.0、基本驗證和API金鑰驗證類型立即可用，並可實作自訂驗證以存取網站服務。 雖然RESTful、SOAP架構和OData服務已在AEM Cloud Services中設定，但AEM Web主控台中已設定關係式資料庫的JDBC和AEM使用者設定檔的連接器。
 
 ## 配置關係資料庫 {#configure-relational-database}
 
@@ -42,12 +45,14 @@ AEM Forms Data Integration可讓您設定並連線至不同的資料來源。 �
    * JDBC驅動程式的Java類名
    * JDBC連接URI
    * 用於與JDBC驅動程式建立連接的用戶名和密碼
+
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
    >在設定資料來源之前，請務必先加密機密資訊，例如密碼。 要加密：
    >
    >1. 前往 `https://[server]:[port]/system/console/crypto`.
    >1. 在「純 **[!UICONTROL 文本]** 」欄位中，指定要加密的口令或任何字串，然後按一下「保 **[!UICONTROL 護」]**。
+
    >
    >加密的文字會出現在「受保護的文字」欄位中，您可在設定中指定。
 
@@ -73,15 +78,18 @@ AEM Forms Data Integration可讓您設定並連線至不同的資料來源。 �
 
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
+
    >[!NOTE] {grayBox=&quot;true&quot;}
    >
-   >**&amp;** amp;ast;在上例中，表示CRXDE結構中AEM `profile/empLocation/` 用戶配置檔案中節點下的所有節點。 表單資料模型可以訪問節點下 `city` 任何節點 `string` 中的類型屬 `profile/empLocation/` 性。 但是，包含指定屬性的節點必須遵循一致的結構。
+   >&amp; **amp;ast;** 在上例中，表示CRXDE結構中AEM `profile/empLocation/` 用戶配置檔案中節點下的所有節點。 表單資料模型可以訪問節點下 `city` 任何節點 `string` 中的類型屬 `profile/empLocation/` 性。 但是，包含指定屬性的節點必須遵循一致的結構。
 
 1. 點選「 **[!UICONTROL 儲存]** 」以儲存設定。
 
 ## 為雲端服務設定資料夾 {#cloud-folder}
 
-**注意**:為RESTful、SOAP和OData服務配置雲端服務時，需要配置雲端服務資料夾。
+>[!NOTE]
+>
+>為RESTful、SOAP和OData服務配置雲端服務時，需要配置雲端服務資料夾。
 
 AEM中的所有雲端服務設定都會整合在AEM `/conf` 儲存庫的資料夾中。 依預設，檔 `conf` 案夾包含您 `global` 可建立雲端服務組態的檔案夾。 不過，您必須針對雲端組態手動啟用它。 您也可以在中建立其他資料夾， `conf` 以建立並組織雲端服務組態。
 
@@ -125,7 +133,7 @@ REST風格的Web服務可在Swagger定義檔 [案中使用](https://swagger.io/s
    如需 [建立和設定雲端服務組態資料夾的相關資訊](/help/forms/using/configure-data-sources.md#cloud-folder) ，請參閱雲端服務組態設定資料夾。
 
 1. 點選「 **[!UICONTROL 建立]** 」以開啟「 **[!UICONTROL 建立資料來源設定」對話方塊]**。 指定配置的名稱和標題（可選），從「服務類型」下拉式清單中選擇 **[!UICONTROL SOAP Web Service]** ，或者瀏覽並選擇配置的縮圖影像，然後點選「 **[!UICONTROL 下一步]******」。
-1. 為SOAP web服務指定以下內容：
+1. 為SOAP Web服務指定以下內容：
 
    * Web服務的WSDL URL。
    * 選擇驗證類型— 無、OAuth2.0、基本驗證或自訂驗證— 存取SOAP服務，並據以提供驗證的詳細資訊。
@@ -149,6 +157,7 @@ OData服務由其服務根URL標識。 若要在AEM雲端服務中設定OData服
 
    * 要配置的OData服務的服務根URL。
    * 選擇驗證類型— 無、OAuth2.0、基本驗證或自訂驗證— 訪問OData服務，並相應地提供驗證的詳細資訊。
+
    >[!NOTE]
    >
    >您必須選擇OAuth 2.0驗證類型，以OData端點作為服務根目錄與Microsoft Dynamics服務連接。
