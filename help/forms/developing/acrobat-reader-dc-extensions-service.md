@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +23,15 @@ Acrobat Reader DC Extensions服務提供下列快速入門。
 
 [快速入門（SOAP模式）：使用Java API套用使用權限](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[從PDF檔案移除使用權](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
+[從PDF檔案移除使用權](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
-[快速入門（SOAP模式）:使用Java API檢索憑據資訊](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API檢索憑據資訊](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應設為SOAP。
 
-***注意&#x200B;**:「使用AEM Forms進行程式設計」中的「快速入門」是以Forms伺服器作業系統為基礎。 但是，如果您使用其他作業系統（例如UNIX），請以適用作業系統支援的路徑取代Windows特定路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 (請參[閱設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。)*
+>[!NOTE]
+>
+>「使用AEM Forms進行程式設計」中的「快速入門」是以Forms伺服器作業系統為基礎。 但是，如果您使用其他作業系統（例如UNIX），請以適用作業系統支援的路徑取代Windows特定路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參 [閱設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速入門（SOAP模式）：使用Java API套用使用權限 {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
@@ -140,7 +145,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API移除PDF檔案的使用權 {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
+## 快速入門（SOAP模式）: 使用Java API移除PDF檔案的使用權 {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
 下列Java程式碼範例會從名為 *LoanUsageRights.pdf的已啟用權限的PDF檔案中移除使用權*。 (請參 [閱從PDF檔案移除使用權](/help/forms/developing/assigning-usage-rights.md)。)
 
@@ -240,7 +245,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API檢索憑據資訊 {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
+## 快速入門（SOAP模式）: 使用Java API檢索憑據資訊 {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
 以下Java代碼示例檢索有關用於將使用權限應用於名為 *LoanUsageRights.pdf的具有權限的PDF文檔的憑據的資訊*。 (請參 [閱檢索憑據資訊](/help/forms/developing/assigning-usage-rights.md)。)
 
