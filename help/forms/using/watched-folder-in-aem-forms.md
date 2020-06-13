@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
 workflow-type: tm+mt
-source-wordcount: '7663'
+source-wordcount: '7662'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM Forms中的Watched資料夾 {#watched-folder-in-aem-forms}
 
-管理員可以設定網路資料夾（稱為「Watched Folder」），如此當使用者將檔案（例如PDF檔案）置於「Watched Folder」中時，就會啟動預先設定的工作流程、服務或指令碼操作，以處理新增的檔案。 服務執行指定的操作後，會將結果檔案保存到指定的輸出資料夾中。 如需工作流程、服務和指令碼的詳細資訊，請參 [閱各種檔案處理方法](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4)。
+管理員可以設定網路資料夾（稱為「Watched Folder」），如此當使用者將檔案（例如PDF檔案）置於「Watched Folder」中時，就會啟動預先設定的工作流程、服務或指令碼操作，以處理新增的檔案。 服務執行指定的操作後，會將結果檔案保存到指定的輸出資料夾中。 如需工作流程、服務和指令碼的詳細資訊，請參 [閱各種檔案處理方法](#variousmethodsforprocessingfiles)。
 
 ## 建立Watched資料夾 {#create-a-watched-folder}
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
    資 `MyWatchedFolder`料夾不存在，AEM Forms會嘗試在指定的路徑上建立資料夾。
 
-* 在配置「監視資料夾」端點之前，在檔案系統上建立資料夾，然後在folderPath屬性中提供完整路徑。 如需folderPath屬性的詳細資訊，請參閱「 [Watched資料夾屬性」](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)。
+* 在配置「監視資料夾」端點之前，在檔案系統上建立資料夾，然後在folderPath屬性中提供完整路徑。 如需folderPath屬性的詳細資訊，請參閱「 [Watched資料夾屬性」](#watchedfolderproperties)。
 
 >[!NOTE]
 >
@@ -53,7 +53,8 @@ ht-degree: 0%
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   如需支援屬性的完整清單，請參閱「 [Watched資料夾屬性」](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)。
+
+   如需支援屬性的完整清單，請參閱「 [Watched資料夾屬性」](#watchedfolderproperties)。
 
 1. 按一下「 **全部儲存**」。 建立節點並保存屬性後。 在屬 `input`性中指 `result`定的路徑上建立、、、 `failure`和 `preserve`資料夾 `stage``folderPath` 。
 
@@ -80,8 +81,9 @@ ht-degree: 0%
    * author,publish
 
    * 發佈，作者
-
-**注意**: *如果托管「Watched資料夾」的伺服器沒有任何指定的執行模式，則無論伺服器上的執行模式為何，「Watched資料夾」一律會啟動。*
+   >[!NOTE]
+   >
+   >如果托管「Watched資料夾」的伺服器沒有任何指定的執行模式，則無論伺服器上的執行模式為何，「Watched資料夾」一律會啟動。
 
 * **outputFilePattern(String)**: 輸出檔案的模式。 可以指定資料夾或檔案模式。 如果指定了資料夾模式，則輸出檔案的名稱將如工作流中所述。 如果指定了檔案模式，則輸出檔案的名稱如檔案模式中所述。 [檔案和資料夾模式](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) ，也可以指定輸出檔案的目錄結構。 這是強制屬性。
 
@@ -139,6 +141,7 @@ ht-degree: 0%
    * %l =毫秒
    * %R =隨機數（介於0和9之間）
    * %P =進程或作業ID
+
    例如，如果在2009年7月17日下午8點，而您指定C:/Test/WF0/failure/%Y/%M/%D/%H/，則結果資料夾為C:/Test/WF0/failure/2009/07/17/20
 
    如果路徑不是絕對的，而是相對的，則會在「監視」資料夾內建立資料夾。 預設值為result/%Y/%M/%D/，這是「監視」資料夾內的「結果」資料夾。 有關檔案模式的詳細資訊，請參 [閱關於檔案模式](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
@@ -172,7 +175,7 @@ ht-degree: 0%
 * **payloadMapperFilter**: 將資料夾配置為監視資料夾時，會在監視資料夾內建立資料夾結構。 該結構具有資料夾，用於提供輸入、接收輸出（結果）、為故障保存資料、為長期進程保存資料，以及為不同階段保存資料。 「監看」資料夾的資料夾結構可當成表單導向工作流程的裝載。 有效負載映射器允許您定義使用「監視資料夾」進行輸入、輸出和處理的有效負載結構。 例如，如果您使用預設映射器，它會將Watched資料夾的內容與 [payload]\input和 [payload]\output資料夾對應。 有兩種現成可用的裝載映射器實現。 如果您沒有 [自訂實作](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)，請使用一個現成可用的實作：
 
    * **預設映射器：** 使用預設裝載映射器，將受監視資料夾的輸入和輸出內容保留在裝載中單獨的輸入和輸出資料夾中。 此外，在工作流的裝載路徑中，使 [用裝載]/輸入／和 [裝載]/輸出路徑來擷取和儲存內容。
-   * **簡單的基於檔案的負載映射器：** 使用簡單檔案式裝載映射程式，將輸入和輸出內容直接保留在裝載資料夾中。 它不建立任何額外的層次，如預設映射器。
+   * **簡單的基於檔案的負載映射器：** 使用簡單檔案型裝載映射程式，將輸入和輸出內容直接保留在裝載資料夾中。 它不建立任何額外的層次，如預設映射器。
 
 ### 自訂設定參數 {#custom-configuration-parameters}
 
@@ -534,13 +537,14 @@ Watched Folder會在每個pollInterval掃描輸入資料夾，選擇「批次大
 
    * 將「Watched資料夾」的includeFilePattern屬性變更為不符合任何新輸入檔案的項目（例如，輸入NOMATCH）。
    * 暫停正在建立新輸入檔案的進程。
+
    等到AEM Forms恢復並處理所有檔案。 大部分的檔案都應該復原，而且任何新的輸入檔案都應正確處理。 您等待Watched資料夾恢復和處理檔案的時間長度取決於要調用的操作長度和要恢復的檔案數。
 
 1. 決定哪些檔案無法處理。 如果您等了適當的時間並完成上一步驟，而且舞台檔案夾中仍保留未處理的檔案，請前往下一個步驟。
 
    >[!NOTE]
    >
-   >您可以查看舞台目錄中檔案的日期和時間戳。 您可以根據檔案的數量和正常處理時間來判斷哪些檔案已過時，可視為卡住。
+   >您可以查看舞台目錄中檔案的日期和時間戳。 根據檔案數和正常處理時間，您可以確定哪些檔案的舊版本足以被視為卡住。
 
 1. 將未處理檔案從舞台目錄複製到輸入目錄。
 
@@ -669,7 +673,7 @@ ECMAScript會使用PDF產生器的createPDF API，將Microsoft Word(.docx)檔案
    * inputProcessorId（字串）: inputProcessorId屬性的行為基於為inputProcessorType屬性指定的值。 在此示例中，inputProcessorType屬性的值為workflow。 因此，對於inputProcessorId屬性，請指定PDFG工作流的以下路徑： /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern（字串）: 輸出檔案的模式。 可以指定資料夾或檔案模式。 如果指定了資料夾模式，則輸出檔案的名稱將如工作流中所述。 如果指定了檔案模式，則輸出檔案的名稱如檔案模式中所述。
-   除了上述必要屬性外，「監視資料夾」也支援一些選用屬性。 如需選用屬性的完整清單和說明，請參閱「 [Watched資料夾屬性」](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)。
+   除了上述必要屬性外，「監視資料夾」也支援一些選用屬性。 如需選用屬性的完整清單和說明，請參閱「 [Watched資料夾屬性」](#watchedfolderproperties)。
 
 ## 將中央移轉橋接器（已過時）與監控資料夾搭配使用 {#using-central-migration-bridge-deprecated-with-a-watched-folder}
 
@@ -750,4 +754,4 @@ ECMAScript會使用PDF產生器的createPDF API，將Microsoft Word(.docx)檔案
 
    * **outputFilePattern(String)**: 輸出檔案的模式。 可以指定資料夾或檔案模式。 如果指定了資料夾模式，則輸出檔案的名稱將如工作流中所述。 如果指定了檔案模式，則輸出檔案的名稱如檔案模式中所述。
 
-除了上述必要屬性外，「監視資料夾」也支援一些選用屬性。 如需選用屬性的完整清單和說明，請參閱「 [Watched資料夾屬性」](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)。
+除了上述必要屬性外，「監視資料夾」也支援一些選用屬性。 如需選用屬性的完整清單和說明，請參閱「 [Watched資料夾屬性」](#watchedfolderproperties)。
