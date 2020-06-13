@@ -1,6 +1,6 @@
 ---
-title: Document Security|處理使用者資料
-seo-title: Document Security|處理使用者資料
+title: Document Security |處理使用者資料
+seo-title: Document Security |處理使用者資料
 description: 'null'
 seo-description: 'null'
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
@@ -8,12 +8,15 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '950'
+ht-degree: 0%
 
 ---
 
 
-# Document Security|處理使用者資料 {#document-security-handling-user-data}
+# Document Security |處理使用者資料 {#document-security-handling-user-data}
 
 AEM Forms檔案安全性可讓您建立、儲存並套用預先定義的保全設定至檔案。 它可確保只有授權的使用者才能使用檔案。 您可以使用原則來保護檔案。 原則是包含安全性設定和授權使用者清單的資訊集合。 您可以套用原則至一或多份檔案，並授權在AEM Forms JEE使用者管理中新增的使用者。
 
@@ -21,7 +24,7 @@ AEM Forms檔案安全性可讓您建立、儲存並套用預先定義的保全�
 
 ## 使用者資料與資料儲存 {#user-data-and-data-stores}
 
-Document security會將與受保護檔案相關的原則和資料儲存在資料庫中，包括使用者資料，例如My Sql、Oracle、MS SQL Server和IBM DB2。 此外，在用戶管理中儲存的策略中授權用戶的資料。 如需有關儲存在使用者管理中的資料，請參閱 [Forms使用者管理：處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
+Document Security會將與受保護檔案相關的原則和資料儲存在資料庫中，包括使用者資料，例如My Sql、Oracle、MS SQL Server和IBM DB2。 此外，在用戶管理中儲存的策略中授權用戶的資料。 如需有關儲存在使用者管理中的資料，請參閱 [Forms使用者管理： 處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
 
 下表映射了文檔安全性在資料庫表中組織資料的方式。
 
@@ -49,7 +52,7 @@ Document security會將與受保護檔案相關的原則和資料儲存在資料
   </tr> 
   <tr> 
    <td><p><code>EdcRevokationEntity</code></p> </td> 
-   <td>儲存有關撤銷和復原受保護檔案的資訊。</td> 
+   <td>儲存有關撤銷和恢復受保護檔案的資訊。</td> 
   </tr> 
   <tr> 
    <td><code>EdcMyPolicyListEntity</code></td> 
@@ -126,7 +129,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 >
 >若要從表格匯出資 `EdcAuditEntity` 料，請使用以 [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) 為參數的 [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) API，以根據、 `principalId``policyId``licenseId`、或EventSearchFilter參數匯出稽核資料。
 
-要獲取系統中用戶的完整資料，必須訪問用戶管理資料庫並從中導出資料。 如需詳細資訊，請參閱 [Forms使用者管理：處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
+要獲取系統中用戶的完整資料，必須訪問用戶管理資料庫並從中導出資料。 如需詳細資訊，請參閱 [Forms使用者管理： 處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
 
 ### 刪除使用者資料 {#delete-user-data}
 
@@ -156,6 +159,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    1. 開啟或表中每行的XML blob `EdcPolicyXMLEntity` 並 `EdcPolicyArchiveEntity` 提取XML檔案。 XML檔案類似於下方所示的檔案。
    1. 編輯XML檔案以刪除主ID的blob。
    1. 對另一個檔案重複步驟1和2。
+
    >[!NOTE]
    >
    >您必須刪除主ID標籤中的完 `Principal` 整blob，否則策略XML可能會損壞或不可用。
@@ -194,6 +198,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    1. 以管理員身分，登入Forms JEE管理主控台，網址為https://[*server*]:[*port*]/adminui。
    1. 導覽至「 **[!UICONTROL 服務> Document Security >原則集」]**。
    1. 開啟策略集並從策略中刪除用戶。
+
    **使用檔案安全性網頁**
 
    具有建立個人原則權限的檔案安全性使用者可從其原則中刪除使用者資料。 若要這麼做：
@@ -201,8 +206,11 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    1. 擁有個人原則的使用者可登入其檔案安全網頁https://[*server*]:[*port*]/edc。
    1. 導覽至「 **[!UICONTROL 服務> Document Security >我的原則」]**。
    1. 開啟原則，並從原則中刪除使用者。
-   **注意**:管理員可使用管理控制台，從「服務> Document Security >我的原則」中，從其他使用者的個人原則搜尋、存取和刪除 **[!UICONTROL 使用者]** 資料。
 
-1. 從用戶管理資料庫中刪除承擔者ID的資料。 如需詳細步驟，請參 [閱Forms使用者管理|處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
+   >[!NOTE]
+   >
+   >管理員可使用管理控制台，從「服務> Document Security >我的原則」中，從其他使用者的個人原則搜尋、存取和刪除 **[!UICONTROL 使用者]** 資料。
+
+1. 從用戶管理資料庫中刪除承擔者ID的資料。 如需詳細步驟，請參 [閱Forms使用者管理 |處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
 1. 啟動AEM Forms伺服器。
 
