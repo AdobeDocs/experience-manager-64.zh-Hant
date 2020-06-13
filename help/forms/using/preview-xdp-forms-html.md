@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 0%
 
 ---
 
@@ -43,6 +46,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >請勿在「驗證要求」欄位中複製並貼上指定的值，因為它可能會損壞值中的特殊字元。 請改為在欄位中輸入指定的值。
@@ -67,17 +71,18 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 1. 在設計工具中，轉 **至** > **選項**。
 1. 在「選項」窗口中，選擇「服 **務器選項」頁** ，提供以下詳細資訊，然後按一下「 **確定」**。
 
-   * **伺服器URL**:AEM Forms伺服器URL。
-   * **HTTP埠號**:AEM伺服器埠。 預設值為4502。
-   * **** HTML預覽內容：用於呈現XFA表單的描述檔路徑。 以下預設配置檔案用於在設計器中預覽表單。 不過，您也可以指定自訂描述檔的路徑。
+   * **伺服器URL**: AEM Forms伺服器URL。
+   * **HTTP埠號**: AEM伺服器埠。 預設值為4502。
+   * **HTML預覽內容：** 用於呈現XFA表單的描述檔路徑。 以下預設配置檔案用於在設計器中預覽表單。 不過，您也可以指定自訂描述檔的路徑。
 
       * `/content/xfaforms/profiles/default.html` （OSGi上的AEM Forms）
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
-   * **** Forms manager上下文：部署Forms Manager UI的上下文路徑。 預設值為：
+   * **Forms Manager上下文：** 部署Forms Manager UI的上下文路徑。 預設值為：
 
       * `/aem/forms` （OSGi上的AEM Forms）
       * `/lc/forms` (AEM Forms on JEE)
-   **** 注意：確 *保AEM Forms伺服器已啟動並執行。 HTML預覽會連線至CRX伺服器以*&#x200B;產生&#x200B;*預覽。*
+
+   **注意：** *請確定AEM Forms伺服器已啟動並正在執行。 HTML預覽會連線至CRX伺服器以*&#x200B;產生&#x200B;*預覽。*
 
    ![AEM Forms Designer選項 ](assets/server_options.png)
 
@@ -103,7 +108,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 1. 選擇「 **檔案」>「表單屬性」**。
 
-1. 按一下**預覽**標籤，然後在「資料檔案」方塊中，輸入測試資料檔案的完整路徑。 您也可以使用「瀏覽」按鈕來導覽至檔案。
+1. 按一下「 **預覽** 」標籤，然後在「資料檔案」方塊中，輸入測試資料檔案的完整路徑。 您也可以使用「瀏覽」按鈕來導覽至檔案。
 
 1. 按一下 **確定**。 下次在「預覽HTML **** 」索引標籤中預覽表格時，範例XML檔案中的資料值會出現在個別物件中。
 
