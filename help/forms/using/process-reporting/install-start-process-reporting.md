@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+workflow-type: tm+mt
+source-wordcount: '1737'
+ht-degree: 0%
 
 ---
 
@@ -50,19 +53,23 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 >
 >如果您正在叢集上執行AEM Forms實作，請在叢集的每個節點上執行下列步驟。
 
+#### JBoss Application Server {#jboss-application-server}
+
 1. 停止AEM Forms伺服器例項。
    * （適用於Windows）在編輯 `[*JBoss root*]/bin/run.conf.bat` 器中開啟檔案。
    * （適用於Linux、AIX和Solaris） `[*JBoss root*]/bin/run.conf.sh` 檔案。
 
 1. 添加JVM參數 `-Dreporting.publisher.cron = <expression>.`
 
-   範例：下列cron運算式會使「流程報表」每5小時將AEM Forms資料發佈至「流程報表」儲存庫：
+   範例： 下列cron運算式會使「流程報表」每5小時將AEM Forms資料發佈至「流程報表」儲存庫：
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. 儲存並關閉 `run.conf.bat` 檔案。
 
 1. 重新啟動AEM Forms伺服器例項。
+
+#### WebSphere Application Server {#websphere-application-server}
 
 1. 停止AEM Forms伺服器例項。
 1. 登入WebSphere管理控制台。 在導覽樹中，按一 **下「伺服器** >應 **用程式伺服器** 」，然後在右窗格中按一下伺服器名稱。
@@ -73,13 +80,15 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
    在「通用JVM參數」框中，添加參數 `-Dreporting.publisher.cron = <expression>.`
 
-   **範例**:下列cron運算式會使「流程報表」每5小時將AEM Forms資料發佈至「流程報表」儲存庫：
+   **範例**: 下列cron運算式會使「流程報表」每5小時將AEM Forms資料發佈至「流程報表」儲存庫：
 
    * `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
 1. 按一 **下「套用**」、按一下「確定」，然後按 **一下「直接儲存至主配置」**。
 
 1. 重新啟動AEM Forms伺服器例項。
+
+#### WebLogic應用程式伺服器 {#weblogic-application-server}
 
 1. 停止AEM Forms伺服器例項。
 1. 登入WebLogic管理控制台。 WebLogic管理控制台的預設位址為 `https://[hostname]:[port]/console`。
@@ -92,7 +101,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 1. 在「參數」框中，添加JVM參數 `-Dreporting.publisher.cron = <expression>`。
 
-   **範例**:下列cron運算式會使「流程報表」每5小時將AEM Forms資料發佈至「流程報表」儲存庫：
+   **範例**: 下列cron運算式會使「流程報表」每5小時將AEM Forms資料發佈至「流程報表」儲存庫：
 
    `-Dreporting.publisher.cron = 0_0_0/5_*_*_?`
 
@@ -108,7 +117,7 @@ ProcessDataStorageProvider服務從ProcessDataPublisher服務接收流程資料�
 
 在每個發佈週期中，資料都會儲存至預先定義之根資料夾的子檔案夾。
 
-您可以使用管理控制台來設定根目錄(預&#x200B;**設值**: `/content/reporting/pm`)位置和子資料夾(預&#x200B;**設值**: `/yyyy/mm/dd/hh/mi/ss`)將儲存流程資料的層次格式。
+您可以使用管理控制台來設定根目錄(預&#x200B;**設值**: `/content/reporting/pm`)位置和子資料夾(**預設**: `/yyyy/mm/dd/hh/mi/ss`)儲存流程資料的分層結構格式。
 
 #### 要配置Process Reporting儲存庫位置，請執行以下操作： {#to-configure-the-process-reporting-repository-locations}
 
@@ -165,7 +174,7 @@ Process Reporting使用ReportConfiguration服務來配置流程報告查詢服�
 
 ProcessDataPublisher服務從AEM Forms資料庫導入流程資料，並將資料發佈到ProcessDataStorageProvider服務以進行儲存。
 
-#### 要配置ProcessDataPublisher服務 {#to-configure-processdatapublisher-service-nbsp}
+#### 要配置ProcessDataPublisher服務   {#to-configure-processdatapublisher-service-nbsp}
 
 1. 使用管理員 **憑證登入** 「管理控制台」。
 
@@ -279,8 +288,8 @@ AEM Forms環境包含環境設定時的資料。
 
 **處理報表標題列下拉式清單：** 「流程報表」標題列右角的下拉式清單包含下列選項：
 
-* **[!UICONTROL 同步]**:將內嵌的Process Reporting儲存庫與AEM Forms資料庫同步。
-* **[!UICONTROL 說明]**:查看有關流程報告的幫助文檔。
-* **[!UICONTROL 註銷]**:註銷進程報告
+* **[!UICONTROL 同步]**: 將內嵌的Process Reporting儲存庫與AEM Forms資料庫同步。
+* **[!UICONTROL 說明]**: 查看有關流程報告的幫助文檔。
+* **[!UICONTROL 註銷]**: 註銷進程報告
 
 
