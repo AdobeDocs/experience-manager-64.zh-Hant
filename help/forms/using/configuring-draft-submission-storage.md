@@ -9,7 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 有了AEM Forms，您可以儲存：
 
-* **草稿**:使用者可填寫並儲存的進行中表單，以供稍後提交。
+* **草稿**: 使用者可填寫並儲存的進行中表單，以供稍後提交。
 
-* **提交**:已提交包含使用者提供資料的表單。
+* **提交**: 已提交包含使用者提供資料的表單。
 
 AEM Forms Portal資料和中繼資料服務可支援草稿和提交。 依預設，資料會儲存在發佈例項中，然後反向複製至已設定的作者例項，以便滲濾至其他發佈例項。
 
@@ -38,7 +41,7 @@ AEM Forms Portal資料和中繼資料服務可支援草稿和提交。 依預設
 
 ## 設定Forms Portal草稿和提交服務 {#configuring-forms-portal-drafts-and-submissions-services}
 
-在「AEM Web Console設定」( `https://[*host*]:[*port*]/system/console/configMgr`)中，按一下以編輯模 **式開啟「表單入口網站草稿和提交設定** 」。
+在「AEM Web Console設定」( `https://[*host*]:[*port*]/system/console/configMgr`)中，按一下以編輯模 **式開啟「Forms Portal Draft and Submission Configuration** 」。
 
 根據您的需求指定屬性的值，如下所述：
 
@@ -102,7 +105,7 @@ AEM Forms Portal資料和中繼資料服務可支援草稿和提交。 依預設
 
 除了上述指定的配置外，請提供有關已配置遠程處理實例的資訊。
 
-在「AEM Web Console設定」( `https://[*host*]:[*port*]/system/console/configMgr`)中，按一下以編輯模式開啟**AEM DS設定服務**。 在「AEM DS設定服務」對話方塊中，提供有關處理伺服器URL、處理伺服器使用者名稱和密碼的資訊。
+在「AEM Web Console設定」( `https://[*host*]:[*port*]/system/console/configMgr`)中，按一下以編輯模 **式開啟「AEM DS Settings Service** 」。 在「AEM DS設定服務」對話方塊中，提供有關處理伺服器URL、處理伺服器使用者名稱和密碼的資訊。
 
 >[!NOTE]
 >
