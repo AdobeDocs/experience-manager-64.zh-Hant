@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1231'
+ht-degree: 3%
 
 ---
 
@@ -32,72 +35,72 @@ source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking_human_centric_long_lived_processes">調用以人為中心的長壽命進程</a></p></td> 
    <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#invoking-a-long-lived-process-using-remoting">使用（AEM表單已過時）AEM Forms Remoting叫用長期的程式</a></p></td> 
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_invocation_api">快速入門：使用調用API調用長壽命進程</a></p></td> 
-   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">快速入門：使用web service API叫用長期的程式</a></p></td> 
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_invocation_api">快速入門： 使用調用API調用長壽命進程</a></p></td> 
+   <td><p><a href="/help/forms/developing/invoking-human-centric-long-lived.md#quick_start_invoking_a_long_lived_process_using_the_web_service_api">快速入門： 使用web service API叫用長期的程式</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-java.md#invoking_a_short_lived_process_using_the_invocation_api">使用調用API調用短期進程</a></p></td> 
    <td><p>N/A</p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">快速入門：使用調用API調用短期進程</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_short_lived_process_using_the_invocation_api">快速入門： 使用調用API調用短期進程</a></p></td> 
    <td><p>N/A</p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">使用Base64編碼叫用AEM Forms</a> (Java web service proxy)</p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_java_proxy_files_and_base64_encoding">快速入門：使用Java代理檔案和Base64編碼調用服務</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_java_proxy_files_and_base64_encoding">快速入門： 使用Java代理檔案和Base64編碼調用服務</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding">使用Base64編碼</a> (.NET web service proxy)叫用AEM Forms</p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">快速入門：在Microsoft .NET項目中使用base64調用服務</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_base64_in_a_microsoft_net_project">快速入門： 在Microsoft .NET項目中使用base64調用服務</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom">使用MTOM</a> （.NET web service範例）叫用AEM Forms</p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_mtom_in_a_net_project">快速入門：在。NET專案中使用MTOM叫用服務</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_mtom_in_a_net_project">快速入門： 在。NET專案中使用MTOM叫用服務</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref">使用SwaRef叫用AEM Forms</a> （Java web service範例）</p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_swaref_in_a_java_project">快速入門：在Java項目中使用SwaRef調用服務</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_swaref_in_a_java_project">快速入門： 在Java項目中使用SwaRef調用服務</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">使用透過HTTP的BLOB資料叫用AEM Forms</a> （Java web service範例）</p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">快速入門：在。NET項目中使用通過HTTP的BLOB資料調用服務</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_net_project">快速入門： 在。NET項目中使用通過HTTP的BLOB資料調用服務</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http">使用透過HTTP的BLOB資料叫用AEM</a> Forms（.NET web service範例）</p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">快速入門：在Java項目中使用HTTP上的BLOB資料調用服務</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_blob_data_over_http_in_a_java_project">快速入門： 在Java項目中使用HTTP上的BLOB資料調用服務</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime">使用DIME叫用AEM</a> Forms（Java web service範例）</p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">快速入門：在Java專案中使用DIME叫用服務</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick_start_invoking_a_service_using_dime_in_a_java_project">快速入門： 在Java專案中使用DIME叫用服務</a></p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting">使用（AEM表單不建議使用）叫用AEM表單AEM表單Remoting</a></p></td> 
-   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">快速入門：使用（AEM表單不建議使用）AEM Forms Remoting傳遞不安全的檔案，以叫用短暫的程式</a></p></td> 
+   <td><p><a href="invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting">快速入門： 使用（AEM表單不建議使用）AEM Forms Remoting傳遞不安全的檔案，以叫用短暫的程式</a></p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#passing_secure_documents_to_invoke_processes_using_remoting">使用Remoting傳遞安全檔案以叫用程式</a></p></td> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">快速入門：使用（AEM表單不建議使用）AEM Forms Remoting傳遞安全檔案，以叫用短暫的程式</a></p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting">快速入門： 使用（AEM表單不建議使用）AEM Forms Remoting傳遞安全檔案，以叫用短暫的程式</a></p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
   </tr> 
   <tr> 
    <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking_custom_component_services_using_remoting">使用Remoting叫用自訂元件服務</a></p></td> 
-   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">快速入門：使用（AEM表單不建議使用）AEM Forms Remoting叫用客戶自訂服務</a></p></td> 
+   <td><p><a href="/help/forms/developing/invoking-aem-forms-using-remoting.md#quick-start-invoking-the-customer-custom-service-using-remoting">快速入門： 使用（AEM表單不建議使用）AEM Forms Remoting叫用客戶自訂服務</a></p></td> 
    <td><p>N/A</p></td> 
    <td><p>N/A</p></td> 
   </tr> 
@@ -106,9 +109,11 @@ source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
 
 AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應設為SOAP。
 
-***注意&#x200B;**:「使用AEM表單進行程式設計」中的「快速入門」是以部署在JBoss Application server和Microsoft windows作業系統上的Forms伺服器為基礎。 但是，如果您使用其他作業系統（例如UNIX），請以適用作業系統支援的路徑取代Windows特定路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 (請參[閱設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。)*
+>[!NOTE]
+>
+>「使用AEM表單進行程式設計」中的「快速入門」是以部署在JBoss Application Server和Microsoft Windows作業系統上的Forms伺服器為基礎。 但是，如果您使用其他作業系統（例如UNIX），請以適用作業系統支援的路徑取代Windows特定路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參 [閱設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
-## 快速入門：使用調用API調用短期進程 {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
+## 快速入門： 使用調用API調用短期進程 {#quick-start-invoking-a-short-lived-process-using-the-invocation-api}
 
 以下Java代碼示例調用名為的短期進程 `MyApplication/EncryptDocument`。 請注意，此程式會同步呼叫。 此進程的輸入參數名為 `inDoc`。 此進程的輸出參數名為 `outDoc`。 密碼加密的PDF檔案會儲存為名為的PDF檔案 `EncryptLoan.pdf`。 (請參 [閱使用調用API調用短期進程](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api)。)
 
@@ -222,7 +227,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  }
 ```
 
-## 快速入門：在Microsoft .NET項目中使用base64調用服務 {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
+## 快速入門： 在Microsoft .NET項目中使用base64調用服務 {#quick-start-invoking-a-service-using-base64-in-a-microsoft-net-project}
 
 以下C#代碼示例使用Base64編 `MyApplication/EncryptDocument` 碼調用從Microsoft .NET項目命名的進程。 (請參 [閱使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding))。
 
@@ -303,7 +308,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門：使用Java代理檔案和Base64編碼調用服務 {#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding}
+## 快速入門： 使用Java代理檔案和Base64編碼調用服務 {#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding}
 
 以下Java代碼示例調用使用 `MyApplication/EncryptDocument` JAX-WS和Base64編碼建立的Java代理檔案命名的進程。 (請參 [閱使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding))。
 
@@ -389,7 +394,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門：使用（AEM表單不建議使用）AEM Forms Remoting傳遞不安全的檔案，以叫用短暫的程式 {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
+## 快速入門： 使用（AEM表單不建議使用）AEM Forms Remoting傳遞不安全的檔案，以叫用短暫的程式 {#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting}
 
 以下Flex程式碼範例會叫用名為的短期程式 `MyApplication/EncryptDocument`。 (請參 [閱「使用（AEM表單已過時）AEM Forms Remoting叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)」)。
 
@@ -546,7 +551,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門：在。NET專案中使用DIME叫用服務 {#quick-start-invoking-a-service-using-dime-in-a-net-project}
+## 快速入門： 在。NET專案中使用DIME叫用服務 {#quick-start-invoking-a-service-using-dime-in-a-net-project}
 
 以下C#代碼示例使用Dime調用從Microsoft .NET `MyApplication/EncryptDocument` 項目命名的進程。 (請參 [閱使用Base64編碼叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding))。
 
@@ -651,7 +656,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門：在Java專案中使用DIME叫用服務 {#quick-start-invoking-a-service-using-dime-in-a-java-project}
+## 快速入門： 在Java專案中使用DIME叫用服務 {#quick-start-invoking-a-service-using-dime-in-a-java-project}
 
 以下Java代碼示例調用使用DIME命 `MyApplication/EncryptDocument` 名的進程。 (請參 [閱使用DIME叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-dime))。
 
@@ -752,11 +757,11 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門：在Java項目中使用HTTP上的BLOB資料調用服務 {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
+## 快速入門： 在Java項目中使用HTTP上的BLOB資料調用服務 {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-java-project}
 
 以下Java代碼示例調用名為通過HTTP `MyApplication/EncryptDocument` 使用資料的進程。 (請參 [閱「透過HTTP使用BLOB資料叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)」)。
 
-以名為 *Loan.pdf* 的PDF檔案為基礎的無擔保PDF檔案會使用SOAP over HTTP傳遞至AEM Forms程式。 PDF檔案位於下列URL: `https://[server]:[port]/FormsQS`。 此程式會傳回密碼加密的PDF檔案，並儲存為名為 *EncryptedDocument.pdf的PDF檔案*。
+以名為 *Loan.pdf* 的PDF檔案為基礎的無擔保PDF檔案會使用SOAP over HTTP傳遞至AEM Forms程式。 PDF檔案位於下列URL: `https://[server]:[port]/FormsQS`. 此程式會傳回密碼加密的PDF檔案，並儲存為名為 *EncryptedDocument.pdf的PDF檔案*。
 
 ```as3
  /** 
@@ -827,7 +832,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門：在。NET項目中使用通過HTTP的BLOB資料調用服務 {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
+## 快速入門： 在。NET項目中使用通過HTTP的BLOB資料調用服務 {#quick-start-invoking-a-service-using-blob-data-over-http-in-a-net-project}
 
 以下C#代碼示例使用通過HTTP的數 `MyApplication/EncryptDocument` 據調用從Microsoft .NET項目命名的進程。 (請參 [閱「透過HTTP使用BLOB資料叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-blob-data-over-http)」)。
 
@@ -927,9 +932,9 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
  
 ```
 
-## 快速入門：在。NET專案中使用MTOM叫用服務 {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
+## 快速入門： 在。NET專案中使用MTOM叫用服務 {#quick-start-invoking-a-service-using-mtom-in-a-net-project}
 
-以下C#代碼示例使用MTOM調用從 `MyApplication/EncryptDocument` Microsoft .NET項目命名的進程。 (請參 [閱「使用MTOM叫用AEM表單](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)」)。
+以下C#代碼示例使用MTOM調用從 `MyApplication/EncryptDocument` Microsoft .NET項目命名的進程。 (請參 [閱使用MTOM叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom))。
 
 以PDF檔案(名為 *loan.pdf* )為基礎的無擔保PDF檔案，會使用MTOM傳遞至AEM Forms程式。 此程式會傳回密碼加密的PDF檔案，並儲存為名為 *EncryptedDocument.pdf的PDF檔案*。
 
@@ -1017,7 +1022,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
 >
 >許多快速入門說明如何執行AEM Forms服務作業，包括MTOM程式碼範例。
 
-## 快速入門：在Java項目中使用SwaRef調用服務 {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
+## 快速入門： 在Java項目中使用SwaRef調用服務 {#quick-start-invoking-a-service-using-swaref-in-a-java-project}
 
 以下Java代碼示例調用從Java項目 `MyApplication/EncryptDocument` 命名的進程。 此Java項目使用使用使用JAX-WS和SwaRef作為編碼類型建立的代理類。 (請參 [閱使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref))
 
