@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
@@ -31,9 +34,11 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
 
    這些類型的進程稱為長期進程。 非同步地執行長壽命進程，允許系統在資源許可的情況下進行交互，並允許跟蹤和監視操作。 當呼叫長期進程時，AEM Forms會建立呼叫識別碼值，作為追蹤長期進程狀態的記錄的一部分。 記錄會儲存在AEM Forms資料庫中。 您可以在不再需要長期流程記錄時清除這些記錄。
 
-   *注&#x200B;**意**:當呼叫短期處理時，AEM Forms不會建立記錄。*
+>[!NOTE]
+>
+>當呼叫短期處理時，AEM Forms不會建立記錄。
 
-   使用調用標識符值，可以跟蹤長壽命進程的狀態。 例如，您可以使用進程調用標識符值來執行進程管理器操作，如終止正在運行的進程實例。
+使用調用標識符值，可以跟蹤長壽命進程的狀態。 例如，您可以使用進程調用標識符值來執行進程管理器操作，如終止正在運行的進程實例。
 
 **短壽命流程示例**
 
