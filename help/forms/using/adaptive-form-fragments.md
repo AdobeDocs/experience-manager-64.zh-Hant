@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2090'
+ht-degree: 0%
 
 ---
 
@@ -35,8 +38,9 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 1. 按一下以開啟「 **[!UICONTROL 表單模型]** 」(Form Model **[!UICONTROL )頁籤，然後從「從]** 選擇」(Select From)下拉菜單中，為該片段選擇以下模型之一：
 
-   * **[!UICONTROL 無]**:指定從頭開始建立片段，而不使用任何表單模型。
-   * **[!UICONTROL 表單範本]**:指定使用上傳至AEM Forms的XDP範本建立片段。 選擇適當的XDP範本作為片段的表單模型。
+   * **[!UICONTROL 無]**: 指定從頭開始建立片段，而不使用任何表單模型。
+   * **[!UICONTROL 表單範本]**: 指定使用上傳至AEM Forms的XDP範本建立片段。 選擇適當的XDP範本作為片段的表單模型。
+
    ![使用表單模板作為模型建立自適應表單](assets/form-template-model.png)
 
    還顯示在所選表單模板中標籤為片段的子表單。 您可以從下拉式清單中選取最適化表單片段的子表單。
@@ -45,7 +49,8 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
    此外，您還可以通過在下拉框中指定子表單的SOM表達式，使用未在表單模板中標籤為片段的子表單建立自適應表單片段。
 
-   * **[!UICONTROL XML架構]**:指定使用上傳至AEM Forms的XML架構來建立片段。 您可以上傳或從可用的XML結構描述中選擇，作為片段的表單模型。
+   * **[!UICONTROL XML架構]**: 指定使用上傳至AEM Forms的XML架構來建立片段。 您可以上傳或從可用的XML結構描述中選擇，作為片段的表單模型。
+
    ![以XML架構為模型建立自適應表單片段](assets/xml-schema-model.png)
 
    您也可以從下拉式方塊中選取出現在所選架構中的complexType，以建立最適化表單片段。
@@ -69,23 +74,26 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 1. 在「片段建立」對話方塊中，指定下列資訊：
 
-   * **[!UICONTROL 名稱]**:片段的名稱。 預設值是面板的元素名稱。 這是一個強制欄位。
+   * **[!UICONTROL 名稱]**: 片段的名稱。 預設值是面板的元素名稱。 這是一個強制欄位。
 
-      ***注意&#x200B;**:請確定您指定片段的唯一名稱。 如果已存在同名的另一個片段，則無法建立該片段。*
+      >[!NOTE]
+      >
+      >請確定您指定片段的唯一名稱。 如果已存在同名的另一個片段，則無法建立該片段。
 
-   * **[!UICONTROL 標題]**:片段的標題。 預設值是面板的標題。
-   * **[!UICONTROL 說明]**:片段說明。
-   * **[!UICONTROL 標籤]**:標籤片段的中繼資料。
-   * **[!UICONTROL 目標路徑]**:保存片段的儲存庫路徑。 如果不指定路徑，則在包含自適應表單的節點旁邊建立與片段名稱相同的節點。 片段保存在此節點中。
-   * **[!UICONTROL 表單模型]**:根據最適化表單的表單模型，此欄位會顯示 **[!UICONTROL XML架構]**、 **[!UICONTROL 表單範本]**&#x200B;或 **[!UICONTROL 無]**。 這是不可編輯的欄位。
-   * **[!UICONTROL 片段模型根]**:僅出現在XSD式最適化表單中。 它指定片段模型的根。 您可以從下 **拉式清單** 中選擇／或XSD複雜類型。 請注意，只有在選擇複雜類型作為片段模型根時，才能在另一個自適應形式中重用片段。
+   * **[!UICONTROL 標題]**: 片段的標題。 預設值是面板的標題。
+   * **[!UICONTROL 說明]**: 片段說明。
+   * **[!UICONTROL 標籤]**: 標籤片段的中繼資料。
+   * **[!UICONTROL 目標路徑]**: 保存片段的儲存庫路徑。 如果不指定路徑，則在包含自適應表單的節點旁邊建立與片段名稱相同的節點。 片段將保存在此節點中。
+   * **[!UICONTROL 表單模型]**: 根據最適化表單的表單模型，此欄位會顯示 **[!UICONTROL XML架構]**、 **[!UICONTROL 表單範本]**&#x200B;或 **[!UICONTROL 無]**。 這是不可編輯的欄位。
+   * **[!UICONTROL 片段模型根]**: 僅出現在XSD式最適化表單中。 它指定片段模型的根。 您可以從下 **拉式清單** 中選擇／或XSD複雜類型。 請注意，只有在選擇複雜類型作為片段模型根時，才能在另一個自適應形式中重用片段。
 
       如果選擇 **/** 作為片段模型根，則根目錄中的完整XSD樹將顯示在自適應表單資料模型頁籤中。 對於複雜類型片段模型根，只有所選複雜類型的子體在自適應表單資料模型頁籤中可見。
 
-   * **[!UICONTROL XSD參照]**:僅出現在XSD式最適化表單中。 它顯示XML架構的位置。
-   * **[!UICONTROL XDP參考]**:僅出現在以XDP為基礎的調適性表單中。 它顯示XDP表單模板的位置。
+   * **[!UICONTROL XSD參照]**: 僅出現在XSD式最適化表單中。 它顯示XML架構的位置。
+   * **[!UICONTROL XDP參考]**: 僅出現在以XDP為基礎的調適性表單中。 它顯示XDP表單模板的位置。
+
    ![save-fragment](assets/save-fragment.png)
-   **** 圖：「另 *存為片段」對話框*
+   **圖：** *另存為片段對話框*
 
 1. 按一下 **[!UICONTROL 確定]**。
 
@@ -126,7 +134,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 ### 以最適化形式嵌入片段 {#embed-a-fragment-in-adaptive-form}
 
-您可以按一下「內嵌資產」，選擇將最適化表單片段內嵌在最適化表 **[!UICONTROL 單中：已&#x200B;*新增片段的面板工具列上的fragmentName *]**按鈕，如下列範例影像所示。
+您可以按一下「內嵌資產」，選擇將最適化表單片段內嵌在最適化表 **[!UICONTROL 單中：*fragmentName *]**按鈕（位於新增片段的面板工具列上），如下列範例影像所示。
 
 ![在最適化表單中嵌入表單片段](assets/embed-fragment.png)
 
@@ -168,39 +176,39 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
   </tr> 
   <tr> 
    <td><p>開啟</p> </td> 
-   <td><p><br /> 在編輯模式下開啟選定的自適應表單片段。 <br /> </p> </td> 
+   <td><p>在編輯模式下開啟選定的自適應表單片段。<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>檢視屬性</p> </td> 
-   <td><p>開啟「屬性」面板。 從「屬性」面板，您可以檢視和編輯屬性、產生預覽，以及上傳所選片段的縮圖影像。 <a href="/help/forms/using/manage-form-metadata.md" target="_blank"> 如需詳細資訊，請參 </a>閱管理中繼資料<br />。 <br /> </p> </td> 
+   <td><p>開啟「屬性」面板。 從「屬性」面板，您可以檢視和編輯屬性、產生預覽，以及上傳所選片段的縮圖影像。 如需詳細資訊，請參 <a href="/help/forms/using/manage-form-metadata.md" target="_blank">閱管理中繼資料</a>。<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>複製</p> </td> 
-   <td><p>複製所選片段。 <br /> 「貼上」按鈕會出現在工具列中。 <br /> </p> </td> 
+   <td><p>複製所選片段。 「貼上」按鈕會出現在工具列中。<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>下載</p> </td> 
-   <td><p><br /> 下載所選片段。 <br /> </p> </td> 
+   <td><p>下載所選片段。<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>預覽</p> </td> 
-   <td><p>提供選項，可將XML檔案中的資料與片段合併，以HTML或自訂預覽形式預覽片段。 <a href="/help/forms/using/previewing-forms.md" target="_blank"> 如需詳細資訊，請參 </a>閱預覽表格<br />。 <br /> </p> </td> 
+   <td><p>提供選項，可將XML檔案中的資料與片段合併，以HTML或自訂預覽形式預覽片段。 如需詳細資訊，請參 <a href="/help/forms/using/previewing-forms.md" target="_blank">閱預覽表格</a>。<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>開始審閱／管理審閱</p> </td> 
-   <td><p>允許啟動和管理選定片段的審核。 <a href="/help/forms/using/create-reviews-forms.md" target="_blank"> 如需詳細資訊，請參 </a>閱建立和管理審核<br />。 <br /> </p> </td> 
+   <td><p>允許啟動和管理選定片段的審核。 如需詳細資訊，請參 <a href="/help/forms/using/create-reviews-forms.md" target="_blank">閱建立和管理審核</a>。<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>建立字典</p> </td> 
-   <td><p>生成用於定位所選片段的字典。 <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank"> 如需詳細資訊，請參閱本 </a>地化最適化表單<br />。 <br /> </p> </td> 
+   <td><p>生成用於定位所選片段的字典。 如需詳細資訊，請參閱本 <a href="/help/forms/using/lazy-loading-adaptive-forms.md" target="_blank">地化最適化表單</a>。<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>發佈／取消發佈</p> </td> 
-   <td><p><br /> 發佈／取消發佈所選片段。 <br /> </p> </td> 
+   <td><p>發佈／取消發佈所選片段。<br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>刪除</p> </td> 
-   <td><p><br /> 刪除選定的片段。 <br /> </p> </td> 
+   <td><p>刪除選定的片段。<br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -229,7 +237,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
    `127.0.0.1 <Host machine>`
 
-   **主機**:部署AEM Forms的Apple mac電腦。
+   **主機**: 部署AEM Forms的Apple Mac電腦。
 
 ## 參考片段 {#reference-fragments}
 
