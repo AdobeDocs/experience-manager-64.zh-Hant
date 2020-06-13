@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '5409'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ Adobe開發人員網站包含下列文章，討論如何使用Java API叫用AEM 
 
 [包含AEM Forms Java程式庫檔案](#including-aem-forms-java-library-files)
 
-[調用以人為中心的長壽命進程](/help/forms/developing/invoking-human-centric-long-lived.md#main-pars-text-0)
+[調用以人為中心的長壽命進程](invoking-human-centric-long-lived.md)
 
 [使用Web Services叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md)
 
@@ -433,24 +436,29 @@ Adobe開發人員網站包含下列文章，討論如何使用Java API叫用AEM 
    * WebSphere: `iiop://<ServerName>:2809 (default port)`
    * WebLogic: `t3://<ServerName>:7001 (default port)`
 
-* **DSC_DEFAULT_SOAP_ENDPOINT**:如果您使用SOAP連接模式，此值表示發送調用請求的端點。 若要遠端叫用AEM Forms，請指定部署AEM Forms的J2EE應用程式伺服器名稱。 如果您的用戶端應用程式位於相同的J2EE應用程式伺服器上，您可 `localhost` 以指定(例如 `http://localhost:8080`。)
+* **DSC_DEFAULT_SOAP_ENDPOINT**: 如果您使用SOAP連接模式，此值表示發送調用請求的端點。 若要遠端叫用AEM Forms，請指定部署AEM Forms的J2EE應用程式伺服器名稱。 如果您的用戶端應用程式位於相同的J2EE應用程式伺服器上，您可 `localhost` 以指定(例如 `http://localhost:8080`。)
 
    * 如果J2EE應 `8080` 用程式是JBoss，則埠值適用。 如果J2EE應用程式伺服器是IBM® WebSphere®，請使用連接埠 `9080`。 同樣地，如果J2EE應用程式伺服器是WebLogic，請使用連接埠 `7001`。 (這些值是預設埠值。 如果更改了埠值，請使用適用的埠號。)
 
-* **DSC_TRANSPORT_PROTOCOL**:如果使用EJB連接模式，請為 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 此值指定。 如果您使用SOAP連接模式，請指定 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`。
-* **DSC_SERVER_TYPE**:指定部署AEM Forms的J2EE應用程式伺服器。 有效值 `JBoss`為 `WebSphere`、 `WebLogic`。
+* **DSC_TRANSPORT_PROTOCOL**: 如果使用EJB連接模式，請為 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 此值指定。 如果您使用SOAP連接模式，請指定 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`。
+* **DSC_SERVER_TYPE**: 指定部署AEM Forms的J2EE應用程式伺服器。 有效值 `JBoss`為 `WebSphere`、 `WebLogic`。
 
    * 如果將此連接屬性設 `WebSphere`置為， `java.naming.factory.initial` 則值將設定為 `com.ibm.ws.naming.util.WsnInitCtxFactory`。
    * 如果將此連接屬性設 `WebLogic`置為， `java.naming.factory.initial` 則值將設定為 `weblogic.jndi.WLInitialContextFactory`。
    * 同樣地，如果將此連接屬性設 `JBoss`置為， `java.naming.factory.initial` 則值將設定為 `org.jnp.interfaces.NamingContextFactory`。
    * 如果您不 `java.naming.factory.initial` 想使用預設值，可將屬性設為符合您需求的值。
-   *注&#x200B;**意**:您可以使用類的靜態成 `DSC_SERVER_TYPE` 員，而不是使用字串來設定連接屬 `ServiceClientFactoryProperties` 性。 可使用下列值： `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`、 `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`或 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`。
+
+   >[!NOTE]
+   >
+   >您可以使用類的靜態成 `DSC_SERVER_TYPE` 員，而不是使用字串來設定連接屬 `ServiceClientFactoryProperties` 性。 可使用下列值： `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`、 `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`或 `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`。
 
 * **DSC_CREDENTIAL_USERNAME:** 指定AEM表單使用者名稱。 若要讓使用者成功叫用AEM Forms服務，他們需要「服務使用者」角色。 用戶也可以具有包含「服務調用」權限的其他角色。 否則，當他們嘗試調用服務時會拋出異常。 如果服務安全性被禁用，則無需指定此連接屬性。
 * **DSC_CREDENTIAL_PASSWORD:** 指定相應的口令值。 如果服務安全性被禁用，則無需指定此連接屬性。
 * **DSC_REQUEST_TIMEOUT:** SOAP請求的預設請求逾時限制為1200000毫秒（20分鐘）。 有時，完成操作的請求可能需要更長的時間。 例如，擷取大量記錄的SOAP請求可能需要較長的逾時限制。 您可以使用 `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` 來增加SOAP請求的請求呼叫逾時限制。
 
-   **注意**:只有基於SOAP的調用支援DSC_REQUEST_TIMEOUT屬性。
+   >[!NOTE]
+   >
+   >只有基於SOAP的調用支援DSC_REQUEST_TIMEOUT屬性。
 
 要設定連接屬性，請執行以下任務：
 
@@ -459,6 +467,7 @@ Adobe開發人員網站包含下列文章，討論如何使用Java API叫用AEM 
 
    * 枚舉 `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` 值
    * 一個字串值，指定代管AEM Forms的J2EE應用程式伺服器URL
+
    >[!NOTE]
    >
    >如果您使用SOAP連接模式，請指定枚舉 `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` 值而不是枚舉 `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` 值。
@@ -467,6 +476,7 @@ Adobe開發人員網站包含下列文章，討論如何使用Java API叫用AEM 
 
    * 枚舉 `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` 值
    * 枚舉 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 值
+
    >[!NOTE]
    >
    >如果您使用SOAP連接模式，請指定枚舉 `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`值而不是枚舉 `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` 值。
@@ -701,7 +711,7 @@ AEM Forms服務不接受PDF檔案做為其他資料類型，例如物 `java.io.I
 
 如果宣傳檔案駐留在同一檔案系統上，建立對象的 `com.adobe.idp.Document` 速度會更快。 如果宣傳檔案駐留在遠程檔案系統上，則必須執行複製操作，這會影響效能。
 
-應用程式可同時包含 `com.adobe.idp.Document` 資料 `org.w3c.dom.Document` 類型。 不過，請確定您完全符合資料 `org.w3c.dom.Document` 類型的資格。 有關將對象轉換為對 `org.w3c.dom.Document` 像的資訊，請 `com.adobe.idp.Document` 參閱快速 [啟動（EJB模式）:使用Java API將可排程的版面預先填入表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)。
+應用程式可同時包含 `com.adobe.idp.Document` 資料 `org.w3c.dom.Document` 類型。 不過，請確定您完全符合資料 `org.w3c.dom.Document` 類型的資格。 有關將對象轉換為對 `org.w3c.dom.Document` 像的資訊，請 `com.adobe.idp.Document` 參閱快速 [啟動（EJB模式）: 使用Java API將可排程的版面預先填入表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)。
 
 >[!NOTE]
 >
@@ -984,6 +994,7 @@ AEM Forms服務作業可使用服務的強式型別API（稱為Java用戶端程�
    * 指定唯一的ID值 `new Id()`。
    * 通過指定唯一的UUID值 `new Lid()`。
    * 資源的名稱。 可以指定XDP檔案的檔案名。
+
    將返回值轉換為 `Resource`。
 
 1. 調用 `ResourceContent` 物件的方法並 `RepositoryInfomodelFactoryBean` 將傳回值 `newImage` 轉換為，以建立物件 `ResourceContent`。 此對象表示添加到儲存庫的內容。
@@ -991,7 +1002,7 @@ AEM Forms服務作業可使用服務的強式型別API（稱為Java用戶端程�
 1. 調用物件的方 `com.adobe.idp.Document` 法，將物 `ResourceContent` 件的內容新 `ResourceContent` 增至物 `setDataDocument` 件。 傳遞物 `com.adobe.idp.Document` 件。
 1. 調用物件的方法並傳遞，以設定要新增至儲存庫的XDP `ResourceContent` 檔案的MIME `setMimeType` 類型 `application/vnd.adobe.xdp+xml`。
 1. 調用對象的方 `ResourceContent` 法並傳遞對 `Resource` 像，將對象的內容 `Resource` 添加到對象 `setContent``ResourceContent` 中。
-1. 通過調用對象的方法並傳遞 `Resource` 表示資源 `setDescription` 說明的字串值，添加資源說明。
+1. 通過調用對象的方法並傳遞 `Resource` 表示資源 `setDescription` 說明的字串值來添加資源說明。
 1. 調用物件的方法並傳遞下列值，將表 `ResourceRepositoryClient` 單設計新 `writeResource` 增至儲存庫：
 
    * 一個字串值，它指定包含新資源的資源集合的路徑
@@ -999,7 +1010,7 @@ AEM Forms服務作業可使用服務的強式型別API（稱為Java用戶端程�
 
 **另請參閱**
 
-[快速啟動（EJB模式）:使用Java API編寫資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[快速啟動（EJB模式）: 使用Java API編寫資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [使用Java API叫用AEM Forms](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
@@ -1067,7 +1078,7 @@ AEM Forms服務作業可使用服務的強式型別API（稱為Java用戶端程�
 
 **另請參閱**
 
-[快速入門：使用調用API調用短期進程](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-using-the-invocation-api)
+[快速入門： 使用調用API調用短期進程](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-using-the-invocation-api)
 
 [調用以人為中心的長壽命進程](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
