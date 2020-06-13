@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '900'
+ht-degree: 0%
 
 ---
 
@@ -27,15 +30,15 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 快取的可用選項如下：
 
-* **無**:強制不快取任何對象。 實際上，這會降低效能，並且由於缺少快取而需要高記憶體可用性。
-* **保守**:指定僅快取在呈現表單之前生成的中間對象，例如包含內嵌片段和影像的模板。
-* **咄咄逼人**:強制快取幾乎所有可快取的項目，包括從「保守」快取層級轉換的HTML內容。 它會產生最佳效能，但也會耗用更多記憶體來儲存快取的工件。 積極的快取策略意味著，當快取轉譯內容時，您在轉譯表格時，會獲得持續的時間效能。
+* **無**: 強制不快取任何對象。 實際上，這會降低效能，並且由於缺少快取而需要高記憶體可用性。
+* **保守**: 指定僅快取在呈現表單之前生成的中間對象，例如包含內嵌片段和影像的模板。
+* **咄咄逼人**: 強制快取幾乎所有可快取的項目，包括從「保守」快取層級轉換的HTML內容。 它會產生最佳效能，但也會耗用更多記憶體來儲存快取的工件。 積極的快取策略意味著，當快取轉譯內容時，您在轉譯表格時，會獲得持續的時間效能。
 
 AEM Forms的預設快取設定可能不足以達到最佳效能。 因此，建議使用下列設定：
 
-* **快取策略**:攻擊性
-* **快取大小** （表單數）:視需要
-* **最大物件大小**:視需要
+* **快取策略**: 攻擊性
+* **快取大小** （表單數）: 視需要
+* **最大物件大小**: 視需要
 
 ![行動表單設定](assets/snap.png)
 
@@ -54,7 +57,9 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:PermSize=256m
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 ```
 
-**注意**:建議的設定適用於Windows 2008 R2 8 Core和Oracle HotSpot 1.7（64位元）JDK，應根據您的系統配置放大或縮小。
+>[!NOTE]
+>
+>建議的設定適用於Windows 2008 R2 8 Core和Oracle HotSpot 1.7（64位元）JDK，應根據您的系統配置放大或縮小。
 
 ## 使用Web伺服器 {#using-a-web-server}
 
@@ -62,15 +67,17 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 例如，執行以下步驟以對具有JBoss的Apache Web Server 2.0 32位啟用壓縮：
 
-***注意&#x200B;**:以下說明不適用於除Apache Web Server 2.0 32位元以外的任何伺服器。 如需其他伺服器的特定步驟，請參閱相應的產品檔案。*
+>[!NOTE]
+>
+>以下說明不適用於除Apache Web Server 2.0 32位元以外的任何伺服器。 如需其他伺服器的特定步驟，請參閱相應的產品檔案。
 
 以下步驟演示了使用Apache Web Server啟用壓縮所需的更改
 
 **取得適用於您作業系統的Apache網路伺服器軟體**
 
-* Windows:從Apache HTTP Server項目站點下載Apache Web伺服器。
-* Solaris 64位：從Sunfreeware for Solaris網站下載Apache Web伺服器。
-* Linux:apache web伺服器已預安裝在Linux系統上。
+* Windows: 從Apache HTTP Server項目站點下載Apache Web伺服器。
+* Solaris 64位： 從Sunfreeware for Solaris網站下載Apache Web伺服器。
+* Linux: apache Web伺服器已預安裝在Linux系統上。
 
 Apache可以使用HTTP通訊協定與CRX通訊。 這些配置是用於使用HTTP進行優化的。
 
