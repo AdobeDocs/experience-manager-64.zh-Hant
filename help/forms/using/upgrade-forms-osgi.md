@@ -10,7 +10,10 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 0%
 
 ---
 
@@ -23,20 +26,20 @@ source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
 
 您可以直接從AEM 6.2 Forms或AEM 6.3 Forms升級至AEM 6.4 Forms。 執行下列動作：
 
-1. 將現有的AEM例項升級至AEM 6.4。步驟如下：
+1. 將現有的AEM例項升級至AEM 6.4。 步驟如下：
 
    1. 安裝AEM 6.2 Forms或AEM 6.3 Forms的最新Service Pack和修補程式。 如需詳細資訊，請參閱：
 
-      * [AEM 6.2版本注意事項](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
-      * [AEM 6.3版本注意事項](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
+      * [AEM 6.2版本注意事項](https://helpx.adobe.com/tw/experience-manager/6-2/release-notes.html)
+      * [AEM 6.3版本注意事項](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html)
       * [AEM維護中樞](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)
    1. 準備升級的源實例。 如需詳細步驟，請 [參閱「升級至AEM 6.4」](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance)。
-   1. 下載 [AEM 6.4 quickStart](/help/sites-deploying/deploy.md#getting%20the%20software)。
+   1. 下載 [AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software)。
    1. **（僅限基於Unix/Linux的安裝）** ，如果您使用UNIX或Linux作為基礎作業系統，請開啟終端窗口，導航到包含crx-quickstart的資料夾，然後運行以下命令：
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. 將您的AEM實例升級至AEM 6.3。如需逐步指示，請參 [閱升級至AEM 6.4](/help/sites-deploying/upgrade.md)。
+   1. 將您的AEM實例升級至AEM 6.3。 如需逐步指示，請參 [閱升級至AEM 6.4](/help/sites-deploying/upgrade.md)。
 
       在繼續後續步驟之前，請等待&lt;crx-repository>/error.log檔案中停止顯示ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息。
 
@@ -73,7 +76,7 @@ source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
 
       移轉公用程式可讓舊版的最適化表單和通訊管理資產與AEM 6.4表單相容。 您可以從AEM套件共用下載公用程式。 有關配置和使用遷移實用程式的逐步資訊，請參見遷移實 [用程式](/help/forms/using/migration-utility.md)。
 
-      如果您使用 [Sample將草稿和提交元件與資料庫整合併從舊版升級](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html) ，則在執行升級後運行以下SQL查詢：
+      如果您使用 [Sample將草稿和提交元件與資料庫整合併從舊版升級](integrate-draft-submission-database.md) ，則在執行升級後運行以下SQL查詢：
 
       ```
       UPDATE metadata m, additionalmetadatatable am
@@ -89,7 +92,7 @@ source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
 
    * **（如果僅從AEM 6.2 Forms或舊版升級）重新設定Adobe Sign**
 
-      如果您在舊版AEM Forms中設定了Adobe Sign，請從AEM cloud服務重新設定Adobe Sign。 如需詳細資訊，請參 [閱「將Adobe Sign與AEM Forms整合」](/help/forms/using/adobe-sign-integration-adaptive-forms.md)。
+      如果您在舊版AEM Forms中設定了Adobe Sign，請從AEM Cloud服務重新設定Adobe Sign。 如需詳細資訊，請參 [閱「將Adobe Sign與AEM Forms整合」](/help/forms/using/adobe-sign-integration-adaptive-forms.md)。
 
    * **（如果僅從AEM 6.2 Forms或舊版升級）重新設定分析和報表**
 
@@ -97,13 +100,14 @@ source-git-commit: d2657bc364b7a814fac9228afdec60f96faaf175
 
 1. 驗證伺服器是否升級成功，所有資料也成功遷移，並且可以正常運行。
 
-   * **** 驗證捆綁的狀態：確保所有捆綁包都處於活動狀態。
-   * **** 驗證複製和反向複製：發佈、填寫及送出幾份移轉的表格。 也驗證已提交的資料。
-   * **** 驗證管理員和開發人員使用者介面的存取權：從管理帳戶登入AEM例項，並確認您擁有下列URL的存取權：
+   * **驗證捆綁的狀態：** 確保所有捆綁包都處於活動狀態。
+   * **驗證複製和反向複製：** 發佈、填寫及送出幾份移轉的表格。 也驗證已提交的資料。
+   * **驗證管理員和開發人員使用者介面的存取權：** 從管理帳戶登入AEM例項，並確認您擁有下列URL的存取權：
 
       * `https://[server]:[port]/crx/packmgr`
       * `https://[server]:[port]/crx/de`
       * `https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments`
+
    >[!NOTE]
    在AEM 6.4 Forms中，crx-repository的結構已變更。 升級至AEM 6.4表單後，請使用您重新建立的自訂變更路徑。 如需變更路徑的完整清單，請參 [閱AEM 6.4中的Forms Repository Restructing](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)。
 
