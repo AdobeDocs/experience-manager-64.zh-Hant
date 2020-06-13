@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 0%
 
 ---
 
@@ -40,8 +43,8 @@ IBM FileNet P8 Content Engine提供軟體服務，用於管理FileNet內容儲�
 
 1. 在「憑據保護方案」清單中，選擇以下保護級別之一：
 
-   * **** 清除：以未受保護模式在網路中發送憑據
-   * **** 對稱：通過網路發送加密憑據
+   * **清除：** 以未受保護模式在網路中發送憑據
+   * **對稱：** 通過網路發送加密憑據
 
 1. 在「加密檔案位置」框中，輸入加密檔案的路徑：
 
@@ -54,7 +57,7 @@ IBM FileNet P8 Content Engine提供軟體服務，用於管理FileNet內容儲�
 
 ## 配置流程引擎設定 {#configure-the-process-engine-settings}
 
-IBM FileNet的連接器包含用於與IBM FileNet Process engine交互的IBM FileNet Connector服務。 您可以設定此服務的設定。
+IBM FileNet的連接器包含用於與IBM FileNet Process Engine交互的IBM FileNet Connector服務。 您可以設定此服務的設定。
 
 1. 在管理控制台中，按一下「服務」>「IBM FileNet的連接器」。
 1. 要啟用IBM FileNet服務的Process Engine Connector，請選擇Use Process Engine Connector Service。
@@ -78,14 +81,15 @@ IBM FileNet的連接器包含用於與IBM FileNet Process engine交互的IBM Fil
 
 可使用下列選項：
 
-**** 當前儲存庫提供程式名稱：當前儲存庫服務提供方的名稱
+**當前儲存庫提供程式名稱：** 當前儲存庫服務提供方的名稱
 
-**** IBM FileNet Repository Provider:使FileNet儲存庫提供程式成為儲存庫的提供程式。 此選項已過時。
+**IBM FileNet Repository Provider:** 使FileNet儲存庫提供程式成為儲存庫的提供程式。 此選項已過時。
 
-**** 儲存庫提供方：使本機儲存庫提供程式成為儲存庫的提供程式
+**儲存庫提供方：** 使本機儲存庫提供程式成為儲存庫的提供程式
 
-***注意&#x200B;**:要選擇所列的儲存庫服務提供方以外的儲存庫服務提供方，請在「應用程式和服務」中配置RepositoryService。<!-- Fix broken link(See Managing Services) -->*
+>[!NOTE]
+>
+>要選擇所列的儲存庫服務提供方以外的儲存庫服務提供方，請在「應用程式和服務」中配置RepositoryService。 <!-- Fix broken link(See Managing Services) -->
 
 1. 在管理控制台中，按一下「服務」>「IBM FileNet的連接器」。
 1. 在儲存庫服務提供方資訊區中，選擇替代儲存庫服務提供方，然後按一下保存。
-
