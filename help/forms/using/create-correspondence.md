@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '3726'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 使用下列步驟選擇要預覽的字母：
 
-1. 在「字母」頁面上，點選「選 **擇」**。
+1. 在「字母」頁面上，點選「 **選擇」**。
 1. 點選適當的字母以選取它。
 
    ![選擇字母](assets/1_selectletter.png)
@@ -38,8 +41,9 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 1. 要能夠在預覽通信時呈現通信，您應是管理員或下列組之一的一員：
 
-   * forms-users（在作者實例上預覽）
+   * forms-users（若要在作者例項上預覽）
    * cm-agent-users（用於發佈實例上的轉譯）
+
    如果您沒有必要的權限，請向管理員要求適當的存取權。 如需建立使用者及新增使用者至群組的詳細資訊，請 [參閱新增使用者或群組至群組](/help/sites-administering/security.md)。 如果您嘗試在沒有適當權限的情況下轉譯對應內容，則會顯示404錯誤頁面。
 
 1. 如果您已選取「預 **覽** >自 **訂**」，則會開啟對話方塊。 在對話框中，選擇與資料字典對應的資料檔案，以預覽字母，然後選擇「預 **覽」**。 基於特定字母的資料字典建立資料檔案。 如需資料檔案的詳細資訊，請參閱資 [料字典](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)。
@@ -50,7 +54,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    如需行動表單及其支援功能的詳細資訊，請參閱 [行動表單與PDF表單的功能區隔](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)。
 
-   有三個標籤：資料、內容和附件。 如果沒有資料元素（預留位置變數和版面欄位），則字母會直接在中開啟，並顯示「內容」索引標籤。 附件頁籤僅在附件存在或庫訪問被啟用時可用。
+   有三個標籤： 資料、內容和附件。 如果沒有資料元素（預留位置變數和版面欄位），則字母會直接在中開啟，並顯示「內容」索引標籤。 附件頁籤僅在附件存在或庫訪問被啟用時可用。
 
    >[!NOTE]
 
@@ -76,13 +80,13 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 1. 視需要在「內容」索引標籤中編輯內容模組。 若要將焦點放在內容階層中的相關內容模組，您可以在字母預覽中點選相關行或段落，或直接在內容階層中點選內容模組。
 
-   例如，「我們已檢閱……」在下圖中選取，而「內容」索引標籤中會選取相關的內容模組。
+   例如，「我們已檢閱…… 」在下圖中選取，而「內容」索引標籤中會選取相關的內容模組。
 
    ![4-highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
-   在「內容」或「資料」索引標籤中，只要點選HTML字母預覽左上角的「反白標示選取的模組」(反白標示選取的模組incontentccr ![](assets/highlightselectedmodulesincontentccr.png))，您就可以在字母預覽中選取相關文字、段落或資料欄位時停用或啟用功能，以前往內容／資料模組。
+   在「內容」或「資料」索引標籤中，只要點選HTML字母預覽左上角的「反白標示選取的模組」（反白標示選取的模組），您就可停用或啟用功能，以在字母預覽中選取相關文字、段落或資料欄位時移至內容／資料模組。 ![](assets/highlightselectedmodulesincontentccr.png)
 
-   有關「建立對應」用戶介面中各模組可用操作的詳細資訊，請參閱「建立對應」 [用戶介面中的「操作」和「資訊」](/help/forms/using/create-letter.md#main-pars-header-9)。
+   有關「建立對應」用戶介面中各模組可用操作的詳細資訊，請參閱「建立對應」 [用戶介面中的「操作」和「資訊」](create-letter.md)。
 
 1. 若要尋找內容模組，請使用「尋找」欄位。 輸入內容模組的完整或部分名稱或標題，以在對應中搜索內容模組。
 1. 點選清單、文 ![字](assets/display.png)、條件或目標區域前面的「顯示」圖示（顯示），以顯示或隱藏在字母中。
@@ -98,11 +102,11 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    您可能想要重複使用另一個檔案應用程式中存在的多段文字。 您可以直接複製和貼上文字，例如從MS Word、HTML頁面或任何其他應用程式複製和貼上。
 
-   您可以在可編輯的文字模組中複製和貼上一或多個文欄位落。 例如，您可能有MS word檔案，其中包含可接受的居住證明項目清單，如下所示：
+   您可以在可編輯的文字模組中複製和貼上一或多個文欄位落。 例如，您可能有MS Word檔案，其中包含可接受的居住證明項目清單，如下所示：
 
    ![pastetextmsword-1](assets/pastetextmsword-1.png)
 
-   您可以直接將MS word檔案中的文字複製並貼至可編輯的文字模組。 文字模組會保留項目清單、字型和文字顏色等格式。
+   您可以直接將MS Word檔案中的文字複製並貼至可編輯的文字模組。 文字模組會保留項目清單、字型和文字顏色等格式。
 
    ![basteteditablemodule](assets/pastetexteditablemodule.png)
 
@@ -114,7 +118,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    ![tabspaces](assets/tabspaces.png)
 
-   範例：使用Tab鍵將多欄文字對齊成表格格式
+   範例： 使用Tab鍵將多欄文字對齊成表格格式
 
    >[!NOTE]
    >
@@ -125,6 +129,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    * 貨幣符號，例如€、¥和英鎊
    * 數學符號，如∑、√、÷和^
    * 標點符號‟，例如&quot;
+
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
    Commense Management已內建210個特殊字元的支援。 管理員可 [以透過自訂新增更多／自訂特殊字元的支援](/help/forms/using/custom-special-characters.md)。
@@ -155,6 +160,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    * 必填欄位。
    * 版面欄位（若為必填欄位），並系結至使用者。
    * 僅唯一變數例項。 如果模組、目標區域或字母模板包含兩個或兩個以上相同變數的實例，計數將顯示為1(1)。 但是，對於每個實例，計數顯示為1。
+
    未填入的變數計數不包含取消選取的模組。 如果模組包含在字母模板中，但不在字母中，則不顯示此模組中未填充變數的計數。
 
    對於目標區域、模組和變數，計數顯示在字母模板中每個對象的右側。 不過，對於完整範本，計數會顯示在「建立對應」狀態列中。
@@ -165,6 +171,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
    * **條件** ：顯示條件中包含的唯一非填充條件變數和結果模組中包含的變數的總和。
    * **清單** ：顯示指派給清單之模組中所含所有唯一未填入變數的總和。
    * **目標區域** ：顯示指派給目標區域的模組中所包含之所有唯一未填色變數的總和。
+
    請注意以下關於具有預設值的變數：
 
    * 布林變數欄位預設為 *false*。 不過，變數會被視為未填入。 這表示變數計數包含所有具有值false的布林變數 *欄位*。
@@ -176,27 +183,27 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 **目標區域**
 
-* 插入空白行：插入新的空行。
-* 插入內嵌文字：插入新文本模組。
-* 訂購鎖定（資訊）:表示無法更改內容的順序。
-* 未填充的值（資訊）:指出目標區域中未填入的變數數目。
+* 插入空白行： 插入新的空行。
+* 插入內嵌文字： 插入新文本模組。
+* 訂購鎖定（資訊）: 表示無法更改內容的順序。
+* 未填充的值（資訊）: 指出目標區域中未填入變數的數目。
 
 **模組**
 
-* 選取範圍（眼睛圖示）:Includes\excludes module from the letter.
-* 跳過項目符號（適用於清單模組及其子模組）:跳過特定模組中的項目符號。
-* 分頁前（適用於目標區域的子模組）:在模組前插入分頁符。
-* 後分頁符（適用於目標區域的子模組）:在模組前插入分頁符。
-* 未填充的值（資訊）:指出目標區域中未填入的變數數目。
-* 編輯（僅限文字模組）:開啟豐富式文字編輯器，以編輯文字模組。
-* 資料面板（文字與條件模組）:開啟模組的所有變數。
+* 選取範圍（眼睛圖示）: Includes\excludes module from the letter.
+* 跳過項目符號（適用於清單模組及其子模組）: 跳過特定模組中的項目符號。
+* 分頁前（適用於目標區域的子模組）: 在模組前插入分頁符。
+* 後分頁符（適用於目標區域的子模組）: 在模組前插入分頁符。
+* 未填充的值（資訊）: 指出目標區域中未填入變數的數目。
+* 編輯（僅限文字模組）: 開啟豐富式文字編輯器，以編輯文字模組。
+* 資料面板（文字與條件模組）: 開啟模組的所有變數。
 
 **清單模組**
 
-* 插入空白行：插入新的空行。
-* 內容庫：開啟內容庫以新增模組至清單。
+* 插入空白行： 插入新的空行。
+* 內容庫： 開啟內容庫以新增模組至清單。
 * 清單設定（僅限巢狀清單）:
-* 訂購鎖定（資訊）:指出無法變更清單項目的順序。
+* 訂購鎖定（資訊）: 指出無法變更清單項目的順序。
 
 ### 管理附件 {#manage-attachments}
 
@@ -228,7 +235,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    點選「在內容中反白顯示選取的模組」(反白顯示選取的模組 ![incontentccr](assets/highlightselectedmodulesincontentccr.png))後，當在字母預覽中點選相關文字、段落或資料欄位時，您就可以停用或啟用「內容」索引標籤中反白顯示內容模組的功能。
 
-   有關「建立對應」用戶介面中各模組可用操作的詳細資訊，請參閱「建立對應」 [用戶介面中的「操作」和「資訊」](/help/forms/using/create-letter.md#main-pars-header-9)。
+   有關「建立對應」用戶介面中各模組可用操作的詳細資訊，請參閱「建立對應」 [用戶介面中的「操作」和「資訊」](create-letter.md)。
 
 1. 若要將分頁符新增至字母，請點選您要插入分頁符的位置，然後選取「分頁前」或「分頁後」( ![pagebreakfere](assets/pagebreakbeforeafter.png))。
 
@@ -244,7 +251,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    ![saveasdraft](assets/saveasdraft.png)
 
-   出現「繪製字母名稱」(Draft Letter Name)對話框，其中包含字母實例ID。 您可以選擇編輯此ID。 記下字母Id，然後點選「 **Done**」。 您稍後可以使用此ID [重新載入草稿字母](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-1)。
+   出現「繪製字母名稱」(Draft Letter Name)對話框，其中包含字母實例ID。 您可以選擇編輯此ID。 記下字母Id，然後點選「 **Done**」。 您稍後可以使用此ID [重新載入草稿字母](submit-letter-topostprocess.md#reloaddraft)。
 
 1. 若要將字母預覽為平面化PDF，並在提交時具有精確的版面配置和分頁符，請點選(預 ![覽](assets/preview.png))預覽。
 
@@ -268,19 +275,19 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 在「建立對應」使用者介面中轉譯信函時，您可將信函儲存為已檢視。
 
-可以保存兩種類型的字母實例：草稿實例和提交實例。
+可以保存兩種類型的字母實例： 草稿實例和提交實例。
 
-* **草稿實例**:草稿例項會擷取您預覽之信件的目前狀態。 要保存草稿實例，請先確保字母和字母引用的所有資產處於「已發佈」狀態。 如需有關發佈信件的詳細資訊，請參 [閱發佈資產](/help/forms/using/publishing-unpublishing-forms.md#publishanasset)。 您必須先發佈字母，才能將它儲存為草稿，因為當您發佈字母時，會建立該字母的版本、其相依資產和該時間點的資料。 您或其他使用者無法編輯信件的發佈版本，而且稍後可以還原，而不會與發佈版本有任何意外的差異。 您稍後可以返回此實例，然後從您離開的位置繼續。
+* **草稿實例**: 草稿例項會擷取您預覽之信件的目前狀態。 要保存草稿實例，請先確保字母和字母引用的所有資產處於「已發佈」狀態。 如需有關發佈信件的詳細資訊，請參 [閱發佈資產](/help/forms/using/publishing-unpublishing-forms.md#publishanasset)。 您必須先發佈字母，才能將它儲存為草稿，因為當您發佈字母時，會建立該字母的版本、其相依資產和該時間點的資料。 您或其他使用者無法編輯信件的發佈版本，而且稍後可以還原，而不會與發佈版本有任何意外的差異。 您稍後可以返回此實例，然後從您離開的位置繼續。
 
-* **提交實例**:提交實例會在提交時捕獲字母的狀態。 提交實例會在信件實例後處理後儲存其PDF狀態，以及用戶在「建立對應」用戶介面中輸入的資料。
+* **提交實例**: 提交實例會在提交時捕獲字母的狀態。 提交實例會在信件實例後處理後儲存其PDF狀態，以及用戶在「建立對應」用戶介面中輸入的資料。
 
 只有在發佈例項上檢視字母時，才能儲存這類例項。 預設情況下，會關閉對實例的保存。 要啟用字母實例的保存，請執行以下步驟。
 
-1. 在AEM中，使用下列URL開啟您伺服器的Adobe Experience Manager Web Console設定：https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+1. 在AEM中，使用下列URL開啟您伺服器的Adobe Experience Manager Web Console設定： https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. 找到 **[!UICONTROL Correponsent Management Configurations]** ，然後按一下它。
 1. 勾選「 **[!UICONTROL 在發佈設定上管理字母例項]** 」，然後按一下「 **[!UICONTROL 儲存」]**。
 
-開啟字母實例的保存時，您可以選擇保存字母實例的位置。 保存字母實例有兩個選項：本地保存或遠程保存。
+開啟字母實例的保存時，您可以選擇保存字母實例的位置。 保存字母實例有兩個選項： 本地保存或遠程保存。
 
 ### 本機儲存 {#local-save}
 
@@ -302,7 +309,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    ![Adobe Experience Manager Web Console設定](assets/2configmanager.png)
 
-1. 在本頁面上，找出「Adobe liveCycle Client SDK Configuration」，然後按一下以展開它。
+1. 在本頁面上，找出「Adobe LiveCycle Client SDK Configuration」，然後按一下以展開它。
 
 1. 在「處理伺服器URL」中，輸入LiveCycle伺服器的名稱，提供登入資訊，然後按一下「儲 **存**」。
 
@@ -317,7 +324,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 * 當使用「建立對應」使用者介面載入與信件範本相關的貼文程式，作為「提交或完成對應」作業的一部分時，附件會以AttachmentDocs參數中的List&lt;com.adobe.idp.Document>的形式傳遞。
 * 現成可用的傳送機制（例如電子郵件和列印）也會傳送附件，以及產生之信件的PDF。
 
-## 字母預覽的轉譯模式：行動表單預覽和PDF預覽 {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## 字母預覽的轉譯模式： 行動表單預覽和PDF預覽 {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
 AEM Forms Correponse Management會在「建立對應UI」中將字母顯示為HTML。 不過，「對應管理」仍支援回復為PDF預覽，而非HTML預覽。 如需在HTML和PDF預覽模式之間切換的詳細資訊，請參 [閱變更字母轉譯模式](#changerenditionmode)。
 
@@ -325,15 +332,15 @@ AEM Forms Correponse Management會在「建立對應UI」中將字母顯示為HT
 
 **行動表單/HTML預覽的優點**
 
-* **點選資料欄位值以反白標示對應的資料欄位**:在「建立對應」使用者介面中，您可以點選字母中的資料欄位值，以反白標示「資料」標籤中的對應資料欄位。 如需詳細資訊，請參 [閱輸入資料](#enterdata)。
+* **點選資料欄位值以反白標示對應的資料欄位**: 在「建立對應」使用者介面中，您可以點選字母中的資料欄位值，以反白標示「資料」標籤中的對應資料欄位。 如需詳細資訊，請參 [閱輸入資料](#enterdata)。
 
-* **瀏覽器支援**:瀏覽器逐漸支援NPAPI，這會影響PDF的字母預覽。 HTML/行動表單字母預覽不受此影響。
-* **在字母中反白標示可編輯的內容**:在「建立對應」使用者介面中，您可以點選「反白標示可編輯內容」，以灰色反白標示字母中的所有可編輯內容。 如需詳細資訊，請參 [閱管理內容](#managecontent)。
+* **瀏覽器支援**: 瀏覽器逐漸支援NPAPI，這會影響PDF的字母預覽。 HTML/行動表單字母預覽不受此影響。
+* **在字母中反白標示可編輯的內容**: 在「建立對應」使用者介面中，您可以點選「反白標示可編輯內容」，以灰色反白標示字母中的所有可編輯內容。 如需詳細資訊，請參 [閱管理內容](#managecontent)。
 
 **PDF預覽的優點**
 
-* **分頁符**:在PDF預覽中，您可以確切檢視字母中的分頁符號如何影響其輸出。
-* **最終預覽**:在PDF預覽中，您可以檢視字母的確切格式和外觀，因為字母會出現在其輸出中。
+* **分頁符**: 在PDF預覽中，您可以確切檢視字母中的分頁符號如何影響其輸出。
+* **最終預覽**: 在PDF預覽中，您可以檢視字母的確切格式和外觀，因為字母會出現在其輸出中。
 
 如需PDF表單中指令碼支援的詳細資訊，請參閱指令碼 [支援](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)。
 
