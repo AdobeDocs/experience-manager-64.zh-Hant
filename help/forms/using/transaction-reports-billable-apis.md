@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 0d0c6c6e536bf91ddc579382593c07144bd0ba8f
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1881'
+ht-degree: 6%
 
 ---
 
@@ -29,14 +32,14 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
 * 使用AEM工作流程的指派工作步驟和檔案服務步驟
 * 在自適應表單中使用自適應表單
 
-帳單API不會計入頁數、檔案或表單的長度，或轉譯檔案的最終格式。 事務處理報表將事務處理分為三類：已處理的檔案、已轉譯的檔案和已提交的表單。
+帳單API不會計入頁數、檔案或表單的長度，或轉譯檔案的最終格式。 事務處理報表將事務處理分為三類： 已處理的檔案、已轉譯的檔案和已提交的表單。
 
-* **** 提交的表單：當從使用AEM Forms建立的任何類型表單提交資料，且資料會提交至任何資料儲存存放庫或資料庫時，即視為表單提交。 例如，提交最適化表單、HTML5表單、PDF表單和表單集都會視為提交的表單。 表單集中的每個表單都被視為提交。 例如，如果表單集有5個表單，提交表單集時，事務報告服務會將其計為5個提交。
-* **** 轉譯的檔案：通過組合模板和資料、數字地簽名或認證文檔、使用文檔服務的可計費文檔服務API或將文檔從一種格式轉換為另一種格式來生成文檔，被視為所呈現的文檔。
+* **提交的表單：** 當從使用AEM Forms建立的任何類型表單提交資料，且資料會提交至任何資料儲存存放庫或資料庫時，即視為表單提交。 例如，提交最適化表單、HTML5表單、PDF表單和表單集都會視為提交的表單。 表單集中的每個表單都被視為提交。 例如，如果表單集有5個表單，提交表單集時，事務報告服務會將其計為5個提交。
+* **轉譯的檔案：** 通過組合模板和資料、數字地簽名或認證文檔、使用文檔服務的可計費文檔服務API或將文檔從一種格式轉換為另一種格式來生成文檔，被視為所呈現的文檔。
 
 >[!NOTE]
 >
->交易報表UI會顯示三個類別：已提交的表單、已轉譯的檔案和已處理的檔案。 所呈現的文檔和所處理的文檔均作為所呈現的文檔入賬。
+>交易報表UI會顯示三個類別： 已提交的表單、已轉譯的檔案和已處理的檔案。 所呈現的文檔和所處理的文檔均作為所呈現的文檔入賬。
 
 ## 可計費的檔案服務API {#billable-document-services-apis}
 
@@ -81,7 +84,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
    <td> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#htmlFileToPdf-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-">htmlFileToPdf</a></td> 
    <td><p>從HTML頁面建立PDF。</p> </td> 
    <td>已處理的文件<br /> </td> 
    <td> </td> 
@@ -274,8 +277,8 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
    <td>其他資訊</td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">調用</a></td> 
-   <td>執行指定的DDX文檔並返回包 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">含結果文檔的AssemblerResult</a> 對象。 </td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">調用</a></td> 
+   <td>執行指定的DDX文檔並返回包 <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">含結果文檔的AssemblerResult</a> 對象。 </td> 
    <td>已處理的文件</td> 
    <td>下列業務不會作為交易入賬：
     <ul> 
@@ -285,7 +288,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">調用</a></td> 
-   <td>執行指定的DDX文檔並返回包含 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> 合成文檔的AssemblerResult</a> 對象。 </td> 
+   <td>執行指定的DDX文檔並返回包含 <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> 合成文檔的AssemblerResult</a> 對象。 </td> 
    <td>已處理的文件</td> 
    <td>Assembler服務支援PDF產生器、表單和輸出服務支援的所有輸入檔案格式，支援所有這些格式做為輸出檔案格式。 </td> 
   </tr>
@@ -302,11 +305,12 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
 >
 >* 匯編器服務的調用API可以根據輸入在內部調用另一服務的計費API。 因此，調用API可以作為無、單個或多個事務處理來處理。 計算的交易數量取決於輸入和呼叫的內部API。
 >* 使用匯編器服務生成的單個PDF文檔可以作為無、單個或多個事務處理來處理。 計算的交易數量取決於提供的DDX代碼。
+
 >
 
 
 
-### PDF公用程式服務 {#pdf-utility-service}
+### PDF公用程式服務  {#pdf-utility-service}
 
 <table> 
  <tbody>
@@ -459,7 +463,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### OSGi上的表單導向AEM工作流程 {#form-centric-aem-workflows-on-osgi}
+### OSGi上的表單導向AEM工作流程  {#form-centric-aem-workflows-on-osgi}
 
 <table> 
  <tbody>
