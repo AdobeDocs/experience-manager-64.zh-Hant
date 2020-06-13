@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
@@ -38,4 +41,4 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 1. 從「設定 **[!UICONTROL 」清單]** ，展開「 **[!UICONTROL 程式碼簽署」]**。
 1. 針對 **[!UICONTROL 程式碼簽署識別]**，請選取適當的簽名。 請確定已針對 **[!UICONTROL Debug]**、 **[!UICONTROL Release]**&#x200B;和 **[!UICONTROL Any iOS SDK選取相同的簽名]**。
 1. 在 **[!UICONTROL PROJECT下]**，選擇 **[!UICONTROL AEM Forms]** ，並確保為 **[!UICONTROL Signing Identity]**, DebugDebugIntity,ReleaseAndAny iOS SDK ************&#x200B;選擇適當的簽名。
-1. 建立和散發AEM Forms應用程式。 如需建立和散發AEM Forms應用程式的詳細指示，請參 [閱「建立AEM Forms應用程式的安裝程式」](/help/forms/using/setup-xcode-project-build-installer.md#main-pars-text-12)。
+1. 建立和散發AEM Forms應用程式。 如需建立和散發AEM Forms應用程式的詳細指示，請參 [閱「建立AEM Forms應用程式的安裝程式」](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)。
