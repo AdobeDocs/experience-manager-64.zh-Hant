@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 0%
 
 ---
 
@@ -47,8 +50,9 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 >
 >桌上型裝置上的多選：
 >
->* Windows:按住Ctrl鍵並按一下所需元件。
->* MAC OS:按住Command鍵並按一下所需元件。
+>* Windows: 按住Ctrl鍵並按一下所需元件。
+>* MAC OS: 按住Command鍵並按一下所需元件。
+
 >
 
 
@@ -67,7 +71,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 >
 >標有&#39;&amp;ast;&#39;的快速鍵可在Mac OS上搭配Ctrl和Command鍵運作。
 
-## 內容瀏覽器 {#contentbrowser}
+## 內容瀏覽器  {#contentbrowser}
 
 | **動作** | **Windows上的捷徑** | **Mac OS上的捷徑** |
 |---|---|---|
@@ -85,7 +89,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 本節列出了各種鍵盤和輔助功能快速鍵，可在「通信管理」文本編輯器中使用。 您可以在下列情況下使用這些捷徑：
 
-* 建立或編輯文 [字資產](/help/forms/using/document-fragments.md#main-pars-header-0)
+* 建立或編輯文 [字資產](document-fragments.md)
 * 在建立對應時點選相關的「編輯」圖示( ![edittextmodule](assets/edittextmodule.png))後， [編輯文字模組](/help/forms/using/create-correspondence.md)。
 
 ### 文字選取和移動游標 {#text-selection-and-moving-the-cursor-around}
@@ -173,7 +177,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
    <td>Fn+Shift+向下鍵</td> 
   </tr>
   <tr>
-   <td><p>將游標移至頁面結尾</p> </td> 
+   <td><p>將游標移動到頁面結尾</p> </td> 
    <td><p>向下頁面</p> </td> 
    <td>Fn+向下鍵</td> 
   </tr>
