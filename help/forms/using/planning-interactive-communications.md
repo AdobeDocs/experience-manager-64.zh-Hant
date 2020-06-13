@@ -1,5 +1,5 @@
 ---
-title: 「教學課程：規劃互動式通訊」
+title: 「教學課程： 規劃互動式通訊」
 seo-title: 規劃您的互動式通訊
 description: 規劃互動式通訊的結構
 seo-description: 規劃互動式通訊的結構
@@ -8,12 +8,15 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 2%
 
 ---
 
 
-# 教學課程：規劃互動式通訊 {#tutorial-plan-the-interactive-communication}
+# 教學課程： 規劃互動式通訊 {#tutorial-plan-the-interactive-communication}
 
 規劃互動式通訊的結構
 
@@ -49,7 +52,7 @@ source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
 * 條件式資料
 * 影像
 
-在每個區段中，粗體文字代表靜態文字。 資料庫包括客戶、帳單和呼叫表。 表單資料模型可接收這些表格中的任何一個資料。 如需詳細資訊，請參 [閱建立表單資料模型](/help/forms/using/create-form-data-model0.md)。
+在每個區段中，粗體文字代表靜態文字。 資料庫包括客戶、帳單和呼叫表。 表單資料模型可接收這些表格中的任何一個資料。 如需詳細資訊，請參 [閱建立表單資料模型](create-form-data-model-tutorial.md)。
 
 下表說明互動式通訊結構中各欄位的資料來源：
 
