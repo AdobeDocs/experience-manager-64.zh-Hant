@@ -1,5 +1,5 @@
 ---
-title: 「教學課程：建立檔案片段」
+title: 「教學課程： 建立檔案片段」
 seo-title: 建立檔案片段以進行互動式通訊
 description: 建立檔案片段以進行互動式通訊
 seo-description: 建立檔案片段以進行互動式通訊
@@ -8,12 +8,15 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '1695'
+ht-degree: 2%
 
 ---
 
 
-# 教學課程：建立檔案片段 {#tutorial-create-document-fragments}
+# 教學課程： 建立檔案片段 {#tutorial-create-document-fragments}
 
 建立檔案片段以進行互動式通訊
 
@@ -46,9 +49,9 @@ source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 在本教學課程中建立檔案片段時，會為使用代理UI接收資料的欄位建立變數。
 
-使用 **FDM_Create_First_IC**(如 [Create form data model](/help/forms/using/create-form-data-model0.md) section中所述)作為本教程中建立文檔片段的表單資料模型。
+使用 **FDM_Create_First_IC**(如 [Create form data model](create-form-data-model-tutorial.md) section中所述)作為本教程中建立文檔片段的表單資料模型。
 
-## 步驟1:建立清單詳細資訊文本文檔片段 {#step-create-bill-details-text-document-fragment}
+## 步驟1: 建立清單詳細資訊文本文檔片段 {#step-create-bill-details-text-document-fragment}
 
 「清單詳細資訊」單據分段包含以下欄位：
 
@@ -81,8 +84,8 @@ source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
    重複步驟4和5以建立下列變數：
 
-   * 開單期間：字串類型
-   * BillDate:日期類型
+   * 開單期間： 字串類型
+   * BillDate: 日期類型
    ![variables_bill_details](assets/variables_bill_details.png)
 
 1. 使用右窗格建立下列欄位的靜態文字：
@@ -103,7 +106,7 @@ source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 1. 按一下 **保存** ，建立「清單詳細資訊」文本文檔片段。
 
-## 步驟2:建立客戶詳細資料文字檔案片段 {#step-create-customer-details-text-document-fragment}
+## 步驟2: 建立客戶詳細資料文字檔案片段 {#step-create-customer-details-text-document-fragment}
 
 Customer Details文檔片段包含以下欄位：
 
@@ -137,8 +140,8 @@ Customer Details文檔片段包含以下欄位：
    1. 點選「 **建立**」。
    重複步驟4和5以建立下列變數：
 
-   * 狀態碼：數字類型
-   * 連接數：數字類型
+   * 狀態碼： 數字類型
+   * 連接數： 數字類型
 
 
 1. 選擇「 **Data Model Objects** 」(資料模型對象 **)頁籤，將游標置於右窗格中，然後按兩下** customer **>** name（客戶>名稱）屬性。
@@ -154,8 +157,8 @@ Customer Details文檔片段包含以下欄位：
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. 將游標置於「行 **動號碼** 」欄位旁，然後按兩下 **customer** > **mobilenum** 屬性。
-1. 將游標置於「備用聯 **系人號碼** 」欄位旁，按兩下** customer** > **** alternatemobilenumber屬性。
-1. 將游標置於「關係編號」( **Relationship Number** )欄位旁，並按兩下 **customer** > **** relationshipnumber屬性。
+1. 將游標置於「替代聯 **系人號碼** 」欄位旁，並按兩下 **customer** > **** alternatemobilenumber屬性。
+1. 將游標放在「關係編號」( **Relationship Number** )欄位旁，並按兩下 **customer** > **** relationshipnumber屬性。
 1. 選擇「 **變數** 」頁籤，將游標置於「供應地點」( **Place of Supply** )欄位旁，然後按兩下「 **Placesupply** 」（供應地點）變數。
 1. 將游標置於「狀態代碼 **」欄位旁** ，然後按兩下「狀態 **代碼** 」變數。
 1. 將游標置於「連接數 **」欄位旁** ，並按兩下 **Numberconnections** 變數。
@@ -164,7 +167,7 @@ Customer Details文檔片段包含以下欄位：
 
 1. 按一 **下「儲存** 」以建立「客戶詳細資料」文字檔案片段。
 
-## 步驟3:建立清單匯總文本文檔片段 {#step-create-bill-summary-text-document-fragment}
+## 步驟3: 建立清單匯總文本文檔片段 {#step-create-bill-summary-text-document-fragment}
 
 「清單匯總」單據片段包括以下欄位：
 
@@ -196,10 +199,10 @@ Customer Details文檔片段包含以下欄位：
    1. 點選「 **建立**」。
    重複步驟4和5以建立下列變數：
 
-   * 付款：數字類型
-   * 調整：數字類型
-   * 應付金額：數字類型
-   * Duedate:日期類型
+   * 付款： 數字類型
+   * 調整： 數字類型
+   * 應付金額： 數字類型
+   * Duedate: 日期類型
 
 
 1. 使用右窗格建立下列欄位的靜態文字：
@@ -224,7 +227,7 @@ Customer Details文檔片段包含以下欄位：
 
 1. 按一 **下「儲存** 」以建立「客戶詳細資料」文字檔案片段。
 
-## 步驟4:建立費用摘要文本文檔片段 {#step-create-summary-of-charges-text-document-fragment}
+## 步驟4: 建立費用摘要文本文檔片段 {#step-create-summary-of-charges-text-document-fragment}
 
 費用匯總單據片段包含以下欄位：
 
@@ -246,7 +249,7 @@ Customer Details文檔片段包含以下欄位：
 1. 選擇「 **建立** > **文字」**。
 1. 指定下列資訊：
 
-   1. 在「標題」欄位中輸入**summary_charges_first_ic **作為 **名稱** 。 標題會自動填入「名稱」欄位。
+   1. 在「 **標題」(Title)欄位中輸入** summary_charges_first_ic **作為名稱** 。 標題會自動填入「名稱」欄位。
    1. 從「 **資料模型」(Data Model** )部分 **選擇「表單資料模型** 」(Form Data Model)。
    1. 選 **擇FDM_Create_First_IC** 作為表單資料模型，並點選 **選擇**。
    1. 點選「 **下一步**」。
