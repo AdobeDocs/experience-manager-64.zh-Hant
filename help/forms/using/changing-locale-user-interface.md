@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+source-git-commit: 1b6f00462cc0d7b90af033d59e68fbaabe020064
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ AEM Forms工作區提供現成可用的英文、法文、德文和日文支援�
 
 ## 本地化收合的類別、隊列和流程 {#localizing-collapsed-categories-queues-and-processes}
 
-AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您需要開發套件才能將這些標題當地語系化。 如需建立開發套件的詳細資訊，請參閱「 [建立AEM Forms工作區程式碼」。](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您需要開發套件才能將這些標題當地語系化。 如需建立開發套件的詳細資訊，請參閱「 [建立AEM Forms工作區程式碼」。](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 在下列步驟中，假設新的本地化影像檔案為 *Categories_nw.png*、 *Queue_nw.png*&#x200B;和 *Processes_nw.png*。 建議的影像寬度為19像素。
 
@@ -108,7 +111,7 @@ AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您�
 
 ## 本地化日期選擇器 {#localizing-date-picker}
 
-您需要開發套件來本地化*datepicker *API。 如需建立開發套件的詳細資訊，請參閱「 [建立AEM Forms工作區程式碼」](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)。
+您需要開發套件來本地化*datepicker *API。 如需建立開發套件的詳細資訊，請參閱「 [建立AEM Forms工作區程式碼」](introduction-customizing-html-workspace.md#building-html-workspace-code)。
 
 1. 下載並解壓 [jQuery UI Package](https://jqueryui.com/download/all/)，導覽至 *&lt;解壓縮jquery UI package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n。
 1. 將jquery.ui.datepicker-nw.js檔案的地區設定程式碼新複製到apps/ws/js/libs/jquerui，並對檔案進行地區設定特定變更。
@@ -123,6 +126,7 @@ AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您�
 
    * `js/runtime/views/outofoffice.js`
    * `js/runtime/views/searchtemplatedetails.js`
+
    以下范常式式碼說明如何新增jquery.ui.datepicker-nw.js項目：
 
    ```
@@ -164,6 +168,7 @@ AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您�
 
    * apps\ws\js\runtime\views\searchtemplatedetails.js
    * apps\ws\js\runtime\views\outofoffice.js
+
    變更下列程式碼以新增地區設定：
 
    ```
