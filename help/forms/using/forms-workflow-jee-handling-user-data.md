@@ -1,6 +1,6 @@
 ---
-title: Forms JEE工作流程|處理使用者資料
-seo-title: Forms JEE工作流程|處理使用者資料
+title: Forms JEE工作流程 |處理使用者資料
+seo-title: Forms JEE工作流程 |處理使用者資料
 description: 'null'
 seo-description: 'null'
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
@@ -8,12 +8,15 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1371'
+ht-degree: 0%
 
 ---
 
 
-# Forms JEE工作流程|處理使用者資料 {#forms-jee-workflows-handling-user-data}
+# Forms JEE工作流程 |處理使用者資料 {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE工作流程提供設計、建立和管理商業程式的工具。 工作流進程由一系列按指定順序執行的步驟組成。 每個步驟都會執行特定動作，例如指派工作給使用者或傳送電子郵件訊息。 程式可與資產、使用者帳戶和服務互動，並可使用下列任一方法來觸發：
 
@@ -35,9 +38,9 @@ AEM Forms JEE工作流程提供設計、建立和管理商業程式的工具。 
 
 但是，在以下情況下，您無法標識啟動器的進程實例ID:
 
-* **透過受監視資料夾觸發的程式**:如果進程由受監視資料夾觸發，則無法使用其啟動器來標識進程實例。 在這種情況下，用戶資訊被編碼在儲存的資料中。
-* **從發佈AEM例項開始的程式**:所有從AEM發佈例項觸發的程式例項都不會擷取有關啟動器的資訊。 但是，用戶資料可以以與進程相關聯的形式捕獲，該形式儲存在工作流變數中。
-* **透過電子郵件啟動的程式**:傳送者的電子郵件ID會擷取為資料庫表格中不透明blob欄的 `tb_job_instance` 屬性，無法直接查詢。
+* **透過受監視資料夾觸發的程式**: 如果進程由受監視資料夾觸發，則無法使用其啟動器來標識進程實例。 在這種情況下，用戶資訊被編碼在儲存的資料中。
+* **從發佈AEM例項開始的程式**: 所有從AEM發佈例項觸發的程式例項都不會擷取有關啟動器的資訊。 但是，用戶資料可以以與進程相關聯的形式捕獲，該形式儲存在工作流變數中。
+* **透過電子郵件啟動的程式**: 傳送者的電子郵件ID會擷取為資料庫表格中不透明blob欄的 `tb_job_instance` 屬性，無法直接查詢。
 
 ### 在已知工作流啟動器或參與者時識別流程實例ID {#initiator-participant}
 
@@ -59,8 +62,8 @@ AEM Forms JEE工作流程提供設計、建立和管理商業程式的工具。 
 
    查詢返回由指定 `initiator`_啟動的任 `principal_id`務。 任務分為兩種類型：
 
-   * **完成的任務**:這些任務已提交，並在欄位中顯示一個字母 `process_instance_id` 數字值。 記下已提交任務的所有進程實例ID並繼續執行步驟。
-   * **已啟動但未完成的任務**:這些任務已啟動，但尚未提交。 這些任務 `process_instance_id` 的欄位值 **為** 0（零）。 在這種情況下，請記下相應的任務ID並參 [閱使用孤立任務](#orphan)。
+   * **完成的任務**: 這些任務已提交，並在欄位中顯示一個字母 `process_instance_id` 數字值。 記下已提交任務的所有進程實例ID並繼續執行步驟。
+   * **已啟動但未完成的任務**: 這些任務已啟動，但尚未提交。 這些任務 `process_instance_id` 的欄位值 **為** 0（零）。 在這種情況下，請記下相應的任務ID並參 [閱使用孤立任務](#orphan)。
 
 1. (對&#x200B;**於工作流參與者**)執行以下命令，從資料庫表中檢索與啟動器的進程參與者的主ID關聯的進程實例 `tb_assignment` ID。
 
@@ -72,17 +75,17 @@ AEM Forms JEE工作流程提供設計、建立和管理商業程式的工具。 
 
    記下已提交任務的所有進程實例ID並繼續執行步驟。
 
-   對於孤立任務或任務（零） `process_instance_id` 為0（零）時，請記下相應的任務ID，並參閱 [使用孤立任務](#orphan)。
+   對於孤立任務或任務（零） `process_instance_id` 為0（零）時，請記下相應的任務ID，並參 [閱使用孤立任務](#orphan)。
 
 1. 按照「根據流程實 [例ID從工作流實例中清除用戶資料](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) 」部分中的說明刪除已標識的流程實例ID的用戶資料。
 
 ### 識別將使用者資料儲存在基本變數中的流程例項ID {#primitive}
 
-可以設計工作流，以便用戶資料被捕獲到一個變數中，該變數作為blob儲存在資料庫中。 在這種情況下，只有當使用者資料儲存在下列原始類型變數中時，您才能查詢使用者資料：
+可以設計工作流，以便用戶資料被捕獲到一個變數中，該變數作為blob儲存在資料庫中。 在這種情況下，只有當使用者資料儲存在下列原始類型變數中時，您才可以查詢使用者資料：
 
-* **字串**:直接包含用戶ID或作為子字串包含用戶ID，可使用SQL查詢。
-* **數值**:直接包含使用者ID。
-* **XML**:在儲存為資料庫文字欄的文字中，以子字串形式包含使用者ID，並可像字串一樣查詢。
+* **字串**: 直接包含用戶ID或作為子字串，可使用SQL查詢。
+* **數值**: 直接包含使用者ID。
+* **XML**: 在儲存為資料庫文字欄的文字中，以子字串形式包含使用者ID，並可像字串一樣查詢。
 
 執行下列步驟，以判斷以基本類型變數儲存資料的工作流程是否包含使用者的資料：
 
@@ -126,11 +129,11 @@ AEM Forms JEE工作流程提供設計、建立和管理商業程式的工具。 
 
 1. 使用具有正確連接設 `ProcessManager` 置的實例建立公 `com.adobe.idp.workflow.client.ProcessManager``ServiceClientFactory` 用客戶端()實例。
 
-   如需詳細資訊，請參閱類別ProcessManager的Java API [參考](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)。
+   如需詳細資訊，請參閱類別ProcessManager的Java API [參考](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)。
 
 1. 檢查工作流實例的狀態。 如果狀態不是2(COMPLETE)或4(TERMINATED)，請先呼叫下列方法以終止例項：
 
-   `ProcessManager.terminateProcess(<long_lived_invocation_id>)`.
+   `ProcessManager.terminateProcess(<long_lived_invocation_id>)`。
 
 1. 通過調用以下方法清除工作流實例：
 
