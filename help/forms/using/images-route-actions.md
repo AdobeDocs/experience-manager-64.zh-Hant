@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
    `/apps/ws/css/newStyle.css`
 
-   例如：新增名為下方 `myStyle1`所示的新樣式，並使用WebDAV用戶 `myStyleIcon1.png` 端將影 `/apps/ws/image`像檔案上傳至s資料夾。
+   例如： 新增名為下方 `myStyle1`所示的新樣式，並使用WebDAV用戶 `myStyleIcon1.png` 端將影 `/apps/ws/image`像檔案上傳至s資料夾。
 
    >[!NOTE]
    >
@@ -44,7 +47,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## 任務清單任務操作彈出窗口 {#task-list-task-action-popup}
 
-1. 建立工作清單動作快顯功能，請參 [閱「建立AEM Forms工作區代碼」](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)。 需要使用dev套件。
+1. 建立工作清單動作快顯功能，請參 [閱「建立AEM Forms工作區代碼」](introduction-customizing-html-workspace.md#building-html-workspace-code)。 需要使用dev套件。
 
 1. 複製 `/libs/ws/js/runtime/templates/task.html` 至 `/apps/ws/js/runtime/templates/task.html`。
 
