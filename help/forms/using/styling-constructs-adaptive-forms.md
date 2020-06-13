@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2184'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
 
 ## 可自訂的內容 {#what-can-be-customized}
 
-文章會列出可公開使用的最適化表單css類別。 您可以利用這些類別來設定最適化表單的各種元件樣式。 撰寫元件的樣式，例如顯示警告的對話方塊和狀態列，超出本文的範圍。 只有當您無法使用主題編輯器來設定元件的樣式時，才可使用這些樣式結構來建立樣 [式（使用CSS或Less）](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)。
+文章會列出可公開使用的最適化表單css類別。 您可以利用這些類別來設定最適化表單的各種元件樣式。 撰寫元件的樣式，例如顯示警告的對話方塊和狀態列，超出本文的範圍。 只有當您無法使用主題編輯器來設定元件的樣式時，才可使用這些樣式結構來建立樣 [式（使用CSS或Less）](themes.md)。
 
 ## 自訂最適化表單中的樣式 {#customizing-styles-in-adaptive-forms}
 
@@ -495,7 +498,7 @@ Widget也會依其類型而包含類別。 通常，Widget會包含 `guideFieldW
   </tr> 
   <tr> 
    <td><p><code>questionmark-font-color</code></p> </td> 
-   <td><p>表徵圖顏色</p> </td> 
+   <td><p>圖示顏色</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>questionmark-hover-font-color</code></p> </td> 
