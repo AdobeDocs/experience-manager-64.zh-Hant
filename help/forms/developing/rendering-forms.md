@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: 09e069f1b0f5653dc13de3c2d5580235a7dc5dd1
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,9 @@ Forms服務可讓您建立互動式資料擷取用戶端應用程式，以驗證
 * Web服務(Java Base64)示例是Java servlet。
 * web service(MTOM)範例是主控台應用程式（並非所有快速啟動都有MTOM範例）。
 
-   ***注意&#x200B;**:有關建立使用java servlet調用Forms服務的Web應用程式的資訊，請參[閱建立轉換表單的Web應用程式](/help/forms/developing/creating-web-applications-renders-forms.md)。*
+   >[!NOTE]
+   >
+   >有關建立使用java servlet調用Forms服務的Web應用程式的資訊，請參 [閱建立轉換表單的Web應用程式](/help/forms/developing/creating-web-applications-renders-forms.md)。
 
    您可以使用下列兩種方式之一，將表單設計（XDP檔案）或PDF檔案傳遞至Forms服務：
 
@@ -52,5 +57,5 @@ Forms服務可讓您建立互動式資料擷取用戶端應用程式，以驗證
 * 計算表單資料。 (請參閱 [計算表單資料](/help/forms/developing/calculating-form-data.md)。)
 * 最佳化應用程式。 (請參 [閱最佳化Forms服務的效能](/help/forms/developing/optimizing-performance-forms-service.md)。)
 
-   ***提示&#x200B;**:Adobe開發人員網站包含下列文章，討論如何建立叫用Forms服務並轉譯表單的ASP.NET應用程式。 請參[閱建立表單渲染ASP.NET應用程式](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)。*
+   ***提示&#x200B;**: Adobe開發人員網站包含下列文章，討論如何建立叫用Forms服務並轉譯表單的ASP.NET應用程式。 請參[閱建立表單渲染ASP.NET應用程式](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)。*
 
