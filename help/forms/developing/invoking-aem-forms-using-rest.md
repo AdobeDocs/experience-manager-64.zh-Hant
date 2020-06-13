@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2492'
+ht-degree: 0%
 
 ---
 
@@ -49,15 +52,19 @@ HTML用戶端有兩種類型。 第一個HTML用戶端是以JavaScript編寫的A
    如果使用HTTP POST方法調用Froms服務，則會在HTTP請求主體內傳遞參數。 如果AEM Forms服務的簽名有字串輸入參數，請求主體可以包含輸入參數的文字值。 如果服務的簽名定義了多個字串參數，請求可遵循HTTP的記號， `application/x-www-form-urlencoded` 並使用參數名稱做為表單的欄位名稱。
 
    如果Forms服務返回字串參數，則結果是輸出參數的文本表示。 如果服務返回多個字串參數，則結果是XML文檔以下列格式對輸出參數進行編碼：
-   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`*注&#x200B;**意**:值 `output-paramater1` 表示輸出參數名稱。*
+   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+
+   >[!NOTE]
+   >
+   >值 `output-paramater1` 表示輸出參數名稱。
 
    如果Forms服務需要參 `com.adobe.idp.Document` 數，則只能使用HTTP POST方法調用該服務。 如果服務需要一 `com.adobe.idp.Document` 個參數，則HTTP請求主體會變成輸入Document物件的內容。
 
-   如果AEM Forms服務需要多個輸入參數，HTTP請求主體必須是RFC 1867所定義的多部分MIME訊息。 （RFC 1867是Web瀏覽器將檔案上傳到網站的標準。）每個輸入參數都必須作為多部分消息的單獨部分發送，並以格式進行編 `multipart/form-data` 碼。 每個部件的名稱必須與參數的名稱匹配。
+   如果AEM Forms服務需要多個輸入參數，HTTP請求主體必須是RFC 1867所定義的多部分MIME訊息。 （RFC 1867是Web瀏覽器將檔案上傳到網站的標準。） 每個輸入參數都必須作為多部分消息的單獨部分發送，並以格式進行編 `multipart/form-data` 碼。 每個部件的名稱必須與參數的名稱匹配。
 
    清單和地圖也會用作在Workbench中建立的AEM Forms流程的輸入值。 因此，在使用REST請求時，您可以使用這些資料類型。 不支援Java陣列，因為它們不會用作AEM Forms程式的輸入值。
 
-   如果輸入參數是清單，REST客戶端可以通過多次指定該參數來發送該參數（對於清單中的每個項，一次）。 例如，如果A是文檔清單，則輸入必須是由多個名為A的部件組成的多部件消息。在這種情況下，每個名為A的部件都會成為輸入清單中的項目。 如果B是字串清單，則輸入可以是由多個名 `application/x-www-form-urlencoded` 為B的欄位所組成的訊息。在這種情況下，每個名為B的表單欄位都會變成輸入清單中的項目。
+   如果輸入參數是清單，REST客戶端可以通過多次指定該參數來發送該參數（對於清單中的每個項，一次）。 例如，如果A是文檔清單，則輸入必須是由多個名為A的部件組成的多部件消息。 在這種情況下，每個名為A的部件都會成為輸入清單中的項目。 如果B是字串清單，則輸入可以是由多個名 `application/x-www-form-urlencoded` 為B的欄位所組成的訊息。 在這種情況下，每個名為B的表單欄位都會變成輸入清單中的項目。
 
    如果輸入參數是映射，並且它是僅服務的輸入參數，則輸入消息的每個部分／欄位將成為映射中的鍵／值記錄。 每個部件／欄位的名稱會成為記錄的索引鍵。 每個部件／欄位的內容都會變成記錄的值。
 
@@ -138,7 +145,7 @@ AEM Forms服務可以以呼叫URL中的 `services` 取代 `async_invoke` 來非�
 
 ## 安全性與驗證 {#security-and-authentication}
 
-若要為REST呼叫提供安全傳輸，AEM Forms管理員可在代管AEM Forms的J2EE應用程式伺服器上啟用HTTPS通訊協定。 此組態是J2EE應用程式伺服器專用的；它不是表單伺服器組態的一部分。
+若要為REST呼叫提供安全傳輸，AEM Forms管理員可在代管AEM Forms的J2EE應用程式伺服器上啟用HTTPS通訊協定。 此組態是J2EE應用程式伺服器專用的； 它不是表單伺服器組態的一部分。
 
 >[!NOTE]
 >
@@ -178,7 +185,7 @@ AEM Forms服務可以以呼叫URL中的 `services` 取代 `async_invoke` 來非�
 
 **將布爾值傳遞至流程**
 
-下列HTML範例會將兩個 `Boolean` 值傳遞給名為的AEM Forms程式 `RestTest2`。 調用方法的名稱 `invoke` 為，版本為1.0。請注意，已使用HTML Post方法。
+下列HTML範例會將兩個 `Boolean` 值傳遞給名為的AEM Forms程式 `RestTest2`。 調用方法的名稱 `invoke` 為，版本為1.0。 請注意，已使用HTML Post方法。
 
 ```as3
  <html> 
@@ -306,7 +313,7 @@ AEM Forms服務可以以呼叫URL中的 `services` 取代 `async_invoke` 來非�
     </body>
    ```
 
-**從Acrobat叫用MyApplication/EncryptDocument程式**{#invoke-process-acrobat}
+**從Acrobat叫用MyApplication/EncryptDocument程式** {#invoke-process-acrobat}
 
 您可以使用REST要求從Acrobat叫用表單程式。 例如，您可以叫用 *MyApplication/EncryptDocument* 進程。 若要從Acrobat叫用表單程式，請在Designer中的XDP檔案上放置送出按鈕。 (請參 [閱設計人員說明](https://www.adobe.com/go/learn_aemforms_designer_63)。)
 
@@ -314,6 +321,6 @@ AEM Forms服務可以以呼叫URL中的 `services` 取代 `async_invoke` 來非�
 
 要叫用此程式的完整URL為https://hiro-xp:8080/rest/services/MyApplication/EncryptDocument。
 
-如果程式需要PDF檔案作為輸入值，請確定您以PDF格式提交表單，如上圖所示。 此外，若要成功叫用程式，程式必須傳回PDF檔案。 否則，Acrobat無法處理返回值，並會出現錯誤。 您不必指定輸入流程變數的名稱。 例如，* myApplication/EncryptDocument*進程有一個名為的輸入變數 `inDoc`。 只要表單已提交為PDF，您就不需要指定inDoc。
+如果程式需要PDF檔案作為輸入值，請確定您以PDF格式提交表單，如上圖所示。 此外，若要成功叫用程式，程式必須傳回PDF檔案。 否則，Acrobat無法處理返回值，並會出現錯誤。 您不必指定輸入流程變數的名稱。 例如，* MyApplication/EncryptDocument*進程有一個名為的輸入變數 `inDoc`。 只要表單已提交為PDF，您就不需要指定inDoc。
 
-您也可以將表單資料以XML格式提交至表單流程，若要提交XML資料，請確定下拉式清單 `Submit As` 會指定XML。 由於程式的返回值必須是PDF檔案，因此PDF檔案會顯示在Acrobat中。
+您也可以將表單資料以XML格式提交至表單流程，若要提交XML資料，請確定下拉式清單 `Submit As` 會指定XML。 由於程式的傳回值必須是PDF檔案，因此PDF檔案會顯示在Acrobat中。
