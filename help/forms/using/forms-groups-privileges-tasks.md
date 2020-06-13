@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: 17f5041c16996ec3f230650451a816c08170837c
+source-git-commit: f87d70515a385fb23b36797e468325fa1a5e9ff4
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
    <td>任務</td> 
   </tr>
   <tr>
-   <td>forms-user <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>forms-user <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>建立、預覽、發佈及提交最適化表單</li> 
@@ -63,7 +63,7 @@ ht-degree: 1%
     </ul> </td> 
   </tr>
   <tr>
-   <td>範本作者 <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>範本作者 <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>建立並預覽最適化表單或互動式通訊範本</li> 
