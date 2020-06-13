@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: 7a5fb38ada7e7ad76525449e35f64b133aa5e39f
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '1271'
+ht-degree: 0%
 
 ---
 
@@ -56,32 +59,32 @@ source-git-commit: 7a5fb38ada7e7ad76525449e35f64b133aa5e39f
     //alert(options.path);
     if(options.path){/ options.path最適化表單
     
-    //的URL，例如：http:myserver:4503/content/forms/af/ABC，其中ABC是最適化表單
-    //注意：如果AEM伺服器是在內容路徑上執行，則最適化表單URL必須包含內容
+    //的URL，例如： http:myserver:4503/content/forms/af/ABC，其中ABC是最適化表單
+    //注意： 如果AEM伺服器是在內容路徑上執行，則最適化表單URL必須包含內容
     pathvar path = options.path;
     path += &quot;/jcr:content/guideContainer.html&quot;;
     $.ajax({
-    url:路徑，
-    類型：&quot;GET&quot;,
-    資料：{
+    url: 路徑，
+    類型： &quot;GET&quot;,
+    資料： {
     // Set the wcmmode to be
-    disabledwcmmode:&quot;disabled&quot;
+    disabledwcmmode: &quot;disabled&quot;
     // Set the data reference, if any
-    // &quot;dataRef&quot;:options.dataRef
+    // &quot;dataRef&quot;: options.dataRef
     //為表單object
-    // &quot;themeOverride&quot;指定不同的主題：options.themepath
+    // &quot;themeOverride&quot;指定不同的主題： options.themepath
     },
-    async:false,
-    成功：函式(data){
+    async: false,
+    成功： 函式(data){
     //如果已載入jquery，請設定container
     //的內部html。如果未載入jquery，請使用檔案提供的API來設定內部HTML，但這些API不會依據HTML5 spec
-    ///評估HTML中的指令碼標籤，例如：document.getElementById()。
+    ///評估HTML中的指令碼標籤，例如： document.getElementById()。
     innerHTMLif(window)。$ &amp;&amp; options.CSS_Selector){
     // HTML API of jquery會擷取標籤、更新DOM，並評估內嵌在指令碼標籤中的程式碼。
     $(options.CSS_Selector)。html(data);
     }
     },
-    錯誤：函式(data){
+    錯誤： 函式(data){
     // any error handler
     }
     });
@@ -113,7 +116,7 @@ source-git-commit: 7a5fb38ada7e7ad76525449e35f64b133aa5e39f
 * 在原始最適化表單中設定的體驗定位和A/B測試無法在內嵌表單中運作。
 * 如果Adobe Analytics是在原始表單上設定，則分析資料會在Adobe Analytics伺服器中擷取。 但是，Forms分析報表中不提供它。
 
-## 設定反向代理 {#reveseproxy}
+## 設定反向代理  {#reveseproxy}
 
 內嵌最適化表單的外部網頁會傳送要求至AEM伺服器，而AEM伺服器通常位於私人網路的防火牆後方。 為確保請求安全地導向至AEM伺服器，建議您設定反向代理伺服器。
 
@@ -160,11 +163,11 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 * 請確定網頁CSS中定義的樣式規則與表單物件CSS不衝突。 若要避免衝突，您可以使用AEM用戶端程式庫，在最適化表單主題中重複使用網頁CSS。 如需在最適化表單主題中使用用戶端程式庫的詳細資訊，請參 [閱「AEM表單中的主題」](/help/forms/using/themes.md)。
 * 讓網頁中的表格容器使用整個視窗寬度。 它可確保為行動裝置設定的CSS規則可正常運作，而不需做任何變更。 如果表單容器不佔用整個視窗寬度，您需要編寫自訂CSS，讓表單能適應不同的行動裝置。
-* 使用 ` [getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API在用戶端中取得表單資料的XML或JSON表示法。
-* 使用 ` [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API從HTML DOM中卸載最適化表單。
+* 使用 [getData](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API，在用戶端中取得表單資料的XML或JSON表示法。
+* 使用 [unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/GuideBridge.html) API從HTML DOM卸載自適應表單。
 * 從AEM伺服器傳送回應時，請設定存取控制原點標題。
 
-## 啟用AEM Forms，以針對跨網域網站提供最適化表單 {#cross-domain-sites}
+## 啟用AEM Forms，以針對跨網域網站提供最適化表單  {#cross-domain-sites}
 
 1. 在AEM作者例項上，請前往AEM Web Console Configuration Manager(網址為 `http://[server]:[port]/system/console/configMgr`)。
 1. 找到並開啟 **Apache Sling Referrer** Filter設定。
