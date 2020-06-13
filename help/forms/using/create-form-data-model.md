@@ -1,5 +1,5 @@
 ---
-title: 「教學課程：建立表單資料模型"
+title: 「教學課程： 建立表單資料模型"
 seo-title: 建立表單資料模型教學課程
 description: 'null'
 seo-description: 'null'
@@ -9,7 +9,10 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 116995858cd81f69d330b77fbae6a4cff97a5c2d
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '1444'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ AEM Forms資料整合模組可讓您從不同的後端資料來源建立表單�
 
 ![form-data-model-l](assets/form-data-model_l.png)
 
-**********答：已設定資料來源** B.資料源結 **構** C.可用服 **務D.資料模型物**&#x200B;件E.已配置服務
+**答：** 已設定資料來源 **B.** 資料源結 **構** C.可用服 **務D.** 資料模型物 **件E.** 已配置服務
 
 ## 必備條件 {#prerequisites}
 
@@ -47,7 +50,7 @@ AEM Forms資料整合模組可讓您從不同的後端資料來源建立表單�
 * MySQL JDBC驅動程式的OSGi包，如捆綁JDBC數 [據庫驅動程式中所述](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
 * 如第一個教學課程中所述的最適化表 [單建立最適化表單](/help/forms/using/create-adaptive-form.md)
 
-## 步驟1:將MySQL資料庫配置為資料源 {#config-database}
+## 步驟1: 將MySQL資料庫配置為資料源 {#config-database}
 
 您可以設定不同類型的資料來源以建立表單資料模型。 在本教程中，我們將配置您配置的MySQL資料庫，並用示例資料填充該資料庫。 如需其他支援資料來源的詳細資訊以及如何設定這些資料來源，請參 [閱AEM Forms Data Integration](/help/forms/using/data-integration.md)。
 
@@ -67,16 +70,17 @@ AEM Forms資料整合模組可讓您從不同的後端資料來源建立表單�
    1. 找到 **Apache Sling Connection Pooled DataSource組態** 。 點選以在編輯模式中開啟設定。
    1. 在設定對話方塊中，指定下列詳細資訊：
 
-      * **** 資料來源名稱：您可以指定任何名稱。 例如，指定 **WeRetailMySQL**。
-      * **DataSource服務屬性名稱**:指定包含DataSource名稱的服務屬性名稱。 在將資料源實例註冊為OSGi服務時指定。 例如， **datasource.name**。
-      * **JDBC驅動程式類**:指定JDBC驅動程式的Java類名。 對於MySQL資料庫，請 **指定com.mysql.jdbc.Driver**。
-      * **JDBC連接URI**:指定資料庫的連線URL。 對於在埠3306和模式weretail上運行的MySQL資料庫，URL為： `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
-      * **** 使用者名稱：資料庫的用戶名。 必須啟用JDBC驅動程式才能與資料庫建立連接。
-      * **** 密碼：資料庫的口令。 必須啟用JDBC驅動程式才能與資料庫建立連接。
-      * **** 借閱測試：啟用「 **借閱時測試** 」選項。
-      * **** 回訪時測試：啟用「 **Test on Return** 」選項。
-      * **** 驗證查詢：指定SQL SELECT查詢以驗證池中的連接。 查詢至少必須返回一行。 例如，選 **擇&amp;ast;客戶詳細資訊**。
-      * **事務隔離**:將值設定為 **READ_COMMITTED**。
+      * **資料來源名稱：** 您可以指定任何名稱。 例如，指定 **WeRetailMySQL**。
+      * **DataSource服務屬性名稱**: 指定包含DataSource名稱的服務屬性名稱。 在將資料源實例註冊為OSGi服務時指定。 例如， **datasource.name**。
+      * **JDBC驅動程式類**: 指定JDBC驅動程式的Java類名。 對於MySQL資料庫，請 **指定com.mysql.jdbc.Driver**。
+      * **JDBC連接URI**: 指定資料庫的連線URL。 對於在埠3306和模式weretail上運行的MySQL資料庫，URL為： `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **使用者名稱：** 資料庫的用戶名。 必須啟用JDBC驅動程式才能與資料庫建立連接。
+      * **密碼：** 資料庫的口令。 必須啟用JDBC驅動程式才能與資料庫建立連接。
+      * **借閱測試：** 啟用「 **借閱時測試** 」選項。
+      * **回訪時測試：** 啟用「 **Test on Return** 」選項。
+      * **驗證查詢：** 指定SQL SELECT查詢以驗證池中的連接。 查詢至少必須返回一行。 例如，選 **擇&amp;ast; 客戶詳細資訊**。
+      * **事務隔離**: 將值設定為 **READ_COMMITTED**。
+
       將其他屬性保留為預設 [值](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) ，然後點 **選「儲存**」。
    系統會建立類似下列的設定。
 
@@ -84,7 +88,7 @@ AEM Forms資料整合模組可讓您從不同的後端資料來源建立表單�
 
 ## Step 2: Create form data model {#create-fdm}
 
-AEM Forms提供直覺式使用者介面，可 [從設定的資料來源](/help/forms/using/data-integration.md#main-pars-header-1524967585)建立表單資料模型。 您可以在表單資料模型中使用多個資料來源。 對於我們的使用案例，我們將使用已配置的MySQL資料源。
+AEM Forms提供直覺式使用者介面，可 [從設定的資料來源建立表單](data-integration.md) 資料模型。 您可以在表單資料模型中使用多個資料來源。 對於我們的使用案例，我們將使用已配置的MySQL資料源。
 
 執行下列動作以建立表單資料模型：
 
@@ -97,7 +101,7 @@ AEM Forms提供直覺式使用者介面，可 [從設定的資料來源](/help/f
 
 建 **立客戶運送——帳單——詳細資訊** ，表單資料模型。
 
-## 步驟3:設定表單資料模型 {#config-fdm}
+## 步驟3: 設定表單資料模型 {#config-fdm}
 
 配置表單資料模型涉及：
 
@@ -113,7 +117,7 @@ AEM Forms提供直覺式使用者介面，可 [從設定的資料來源](/help/f
 
    ![default-fdm](assets/default-fdm.png)
 
-1. 展開WeRailMySQL資料源樹。 從Weretail **> customerdetails架構選擇下列資料模型物****** 件和服務，以建立資料模型：
+1. 展開WeRailMySQL資料源樹。 從Weretail **>** customerdetails **** schema選擇下列資料模型物件和服務，以建立資料模型：
 
    * **資料模型物件**:
 
@@ -127,6 +131,7 @@ AEM Forms提供直覺式使用者介面，可 [從設定的資料來源](/help/f
 
       * get
       * 更新
+
    點選 **「新增選取項** 」，將選取的資料模型物件和服務新增至表單資料模型。
 
    ![weretail-schema](assets/weretail-schema.png)
@@ -161,16 +166,17 @@ AEM Forms提供直覺式使用者介面，可 [從設定的資料來源](/help/f
    1. 選擇get服務 **並點選** 「編輯 **屬性」**。 屬性對話框開啟。
    1. 在「編輯屬性」對話方塊中指定下列項目：
 
-      * **標題**:指定服務的標題。 例如：檢索發運地址。
-      * **說明**:指定包含服務詳細功能的說明。 例如：
+      * **標題**: 指定服務的標題。 例如： 檢索發運地址。
+      * **說明**: 指定包含服務詳細功能的說明。 例如：
 
          此服務從MySQL資料庫中檢索發運地址和其他客戶詳細資訊
 
-      * **輸出模型對象**:選擇包含客戶資料的結構。 例如：
+      * **輸出模型對象**: 選擇包含客戶資料的結構。 例如：
 
          customerdetail架構
-      * **返回陣列**:禁用「 **Return array** （返回陣列）」選項。
-      * **引數**:選擇名為 **ID的引數**。
+      * **返回陣列**: 禁用「 **Return array** （返回陣列）」選項。
+      * **引數**: 選擇名為 **ID的引數**。
+
       點選「 **完成**」。 已配置從MySQL資料庫檢索客戶詳細資訊的服務。
 
       ![Shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
@@ -179,18 +185,19 @@ AEM Forms提供直覺式使用者介面，可 [從設定的資料來源](/help/f
 
    1. 在「編輯屬性」對話方塊中指定下列項目：
 
-      * **標題**:指定服務的標題。 例如，更新發運地址。
+      * **標題**: 指定服務的標題。 例如，更新發運地址。
 
-      * **說明**:指定包含服務詳細功能的說明。 例如：
+      * **說明**: 指定包含服務詳細功能的說明。 例如：
 
          此服務會更新MySQL資料庫中的送貨地址和相關欄位
 
-      * **輸入模型物件**:選擇包含客戶資料的結構。 例如：
+      * **輸入模型物件**: 選擇包含客戶資料的結構。 例如：
 
          customerdetail架構
 
-      * **輸出類型**:選擇 **布爾**。
-      * **引數**:選擇名為 **ID的引數** 和 **客戶詳細資訊**。
+      * **輸出類型**: 選擇 **布爾**。
+      * **引數**: 選擇名為 **ID的引數** 和 **客戶詳細資訊**。
+
       點選「 **完成**」。 已 **配置** MySQL資料庫中用於更新客戶詳細資訊的更新服務。
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
@@ -206,7 +213,7 @@ AEM Forms提供直覺式使用者介面，可 [從設定的資料來源](/help/f
 執行下列動作以執行測試：
 
 1. 轉至「模 **型** 」標籤，選取 **customerdetails** 資料模型物件，並點選「 **測試模型物件」**。
-1. 在「測 **試模型／服務** 」窗口中，從「選擇模型／服務」下拉式清單中選擇「讀取模型對象」(Read model object ******** )。
+1. 在「測 **試模型／服務** 」窗口中，從「選擇模型／服務」下拉式清單中選擇「讀取模型對象 ******** 」。
 1. 在customerdetails **節中，為配置的MySQL資料庫中** 存在的 **id** 參數指定值，然後點選 **Test**。
 
    會擷取與指定ID相關的客戶詳細資訊，並顯示在「輸 **出** 」區段中，如下所示。
