@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '8118'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **關於加密服務**
 
-加密服務可讓您加密和解密檔案。 當文檔加密時，其內容將變得不可讀。 授權用戶可以解密文檔以獲得對內容的訪問。 如果PDF檔案使用密碼加密，使用者必須先指定開啟的密碼，才能在Adobe reader或Adobe Acrobat中檢視該檔案。 同樣地，如果PDF檔案使用憑證加密，使用者必須使用與用來加密PDF檔案的憑證（私密金鑰）對應的公開金鑰來解密PDF檔案。
+加密服務可讓您加密和解密檔案。 當文檔加密時，其內容將變得不可讀。 授權用戶可以解密文檔以獲得對內容的訪問。 如果PDF檔案使用密碼加密，使用者必須先指定開啟的密碼，才能在Adobe Reader或Adobe Acrobat中檢視該檔案。 同樣地，如果PDF檔案使用憑證加密，使用者必須使用與用來加密PDF檔案的憑證（私密金鑰）對應的公開金鑰來解密PDF檔案。
 
 您可以使用Encryption服務完成以下任務：
 
@@ -30,7 +33,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 * 解除鎖定PDF檔案，以便執行其他服務作業。 例如，在解除鎖定密碼加密的PDF檔案後，您就可以套用數位簽章。 (請參閱解 [除加密的PDF檔案鎖定](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents)。)
 * 確定安全PDF檔案的加密類型。 (請參閱 [確定加密類型](encrypting-decrypting-pdf-documents.md#determining-encryption-type)。)
 
-   ***注意&#x200B;**:如需Encryption服務的詳細資訊，請參閱「AEM[表格的服務參考」](https://www.adobe.com/go/learn_aemforms_services_63)。*
+   >[!NOTE]
+   >
+   >如需Encryption服務的詳細資訊，請參閱「AEM [表格的服務參考」](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 使用密碼加密PDF檔案 {#encrypting-pdf-documents-with-a-password}
 
@@ -104,7 +109,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [使用web service API加密PDF檔案](encrypting-decrypting-pdf-documents.md#encrypting-a-pdf-document-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -157,9 +162,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [步驟摘要](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API加密PDF檔案](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API加密PDF檔案](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -169,7 +174,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -178,7 +183,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 建立加密客戶端API對象。
 
    * 使用其 `EncryptionServiceClient` 預設建構函式建立物件。
-   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。)您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
+   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。) 您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `EncryptionServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
@@ -271,8 +276,8 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application server上，則為必需）
+* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
+* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
 
 **建立加密客戶端API對象**
 
@@ -306,7 +311,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [使用web service API使用憑證加密PDF檔案](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -370,9 +375,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [步驟摘要](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API使用憑證加密PDF檔案](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API使用憑證加密PDF檔案](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -382,7 +387,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -391,7 +396,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 建立加密客戶端API對象。
 
    * 使用其 `EncryptionServiceClient` 預設建構函式建立物件。
-   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。)您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
+   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。) 您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `EncryptionServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
@@ -479,8 +484,8 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application server上，則為必需）
+* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
+* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
 
 **建立加密服務客戶端**
 
@@ -500,7 +505,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **儲存PDF檔案**
 
-從加密的PDF檔案移除憑證式加密後，您就可將PDF檔案儲存為PDF檔案。 使用者可在Adobe reader或Acrobat中開啟PDF檔案。
+從加密的PDF檔案移除憑證式加密後，您就可將PDF檔案儲存為PDF檔案。 使用者可在Adobe Reader或Acrobat中開啟PDF檔案。
 
 **另請參閱**
 
@@ -508,7 +513,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [使用web service API移除憑證式加密](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -549,9 +554,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [步驟摘要](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API移除憑證式加密](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API移除憑證式加密](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -561,7 +566,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -570,7 +575,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 建立加密服務客戶端。
 
    * 使用其 `EncryptionServiceClient` 預設建構函式建立物件。
-   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。)您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
+   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。) 您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `EncryptionServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
@@ -659,7 +664,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -700,7 +705,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API移除密碼加密](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API移除密碼加密](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-password-based-encryption-using-the-java-api)
 
 ### 使用web service API移除密碼加密 {#remove-password-based-encryption-using-the-web-service-api}
 
@@ -708,7 +713,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -717,7 +722,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 建立加密服務客戶端。
 
    * 使用其 `EncryptionServiceClient` 預設建構函式建立物件。
-   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。)您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
+   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。) 您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `EncryptionServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
@@ -783,8 +788,8 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application server上，則為必需）
+* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
+* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
 
 **建立加密服務客戶端**
 
@@ -810,7 +815,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [使用web service API解除鎖定加密的PDF檔案](encrypting-decrypting-pdf-documents.md#unlock-an-encrypted-pdf-document-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -846,7 +851,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
    * 包 `com.adobe.idp.Document` 含憑證加密PDF檔案的物件。
    * 一個字串值，它指定與用於加密PDF文檔的私鑰相對應的公鑰的別名。
-   這些 `unlockPDFUsingPassword` 和 `unlockPDFUsingCredential` 方法都會傳回您傳 `com.adobe.idp.Document` 遞至另一個AEM Forms java方法以執行作業的物件。
+   這些 `unlockPDFUsingPassword` 和 `unlockPDFUsingCredential` 方法都會傳回您 `com.adobe.idp.Document` 傳遞至其他AEM Forms Java方法以執行作業的物件。
 
 1. 執行AEM Forms作業。
 
@@ -856,11 +861,11 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [步驟摘要](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) （SOAP模式）解除加密的PDF檔案鎖定
+[快速入門（SOAP模式）: 使用Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-unlocking-an-encrypted-pdf-document-using-the-java-api) （SOAP模式）解除加密的PDF檔案鎖定
 
 [將使用權套用至PDF檔案](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -870,7 +875,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -879,7 +884,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 1. 建立加密服務客戶端。
 
    * 使用其 `EncryptionServiceClient` 預設建構函式建立物件。
-   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。)您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
+   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。) 您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `EncryptionServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
@@ -956,8 +961,8 @@ PDF檔案可受下列加密類型保護：
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application server上，則為必需）
+* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
+* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
 
 **建立服務客戶端**
 
@@ -977,7 +982,7 @@ PDF檔案可受下列加密類型保護：
 
 [使用web service API確定加密類型](encrypting-decrypting-pdf-documents.md#determine-the-encryption-type-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1012,9 +1017,9 @@ PDF檔案可受下列加密類型保護：
 
 [步驟摘要](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API確定加密類型](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API確定加密類型](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1024,7 +1029,7 @@ PDF檔案可受下列加密類型保護：
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/EncryptionService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -1033,7 +1038,7 @@ PDF檔案可受下列加密類型保護：
 1. 建立服務客戶端。
 
    * 使用其 `EncryptionServiceClient` 預設建構函式建立物件。
-   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。)您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
+   * 使用建 `EncryptionServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/EncryptionService?WSDL`。) 您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。)
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `EncryptionServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
