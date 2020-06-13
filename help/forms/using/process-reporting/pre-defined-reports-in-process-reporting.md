@@ -9,7 +9,10 @@ topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +21,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 AEM Forms Process Reporting隨附下列現 *成可用的報表* :
 
-* **[長時間運行的進程](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**:所有AEM Forms進程的報表，這些流程需要超過指定的時間才能完成
+* **[長時間運行的進程](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: 所有AEM Forms進程的報表，這些流程需要超過指定的時間才能完成
 
-* **[流程持續時間圖](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**:依持續時間的指定AEM Forms流程報表
+* **[流程持續時間圖](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**: 依持續時間的指定AEM Forms流程報表
 
-* **[工作流量](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**:按日期列出指定流程的運行實例和已完成實例的報告
+* **[工作流量](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**: 按日期列出指定流程的運行實例和已完成實例的報告
 
 ## 長時間運行的進程 {#long-running-processes}
 
@@ -41,25 +44,25 @@ AEM Forms Process Reporting隨附下列現 *成可用的報表* :
 
    參數:
 
-   * **持續時間**(*必填*):指定持續時間和時間單位。 顯示已執行超過指定期間的所有AEM Forms進程。
-   * **Started After** (*可選*):選擇日期。 篩選報表以顯示指定日期之後開始的流程例項。
-   * **開始前** (*可選*):選擇日期。 篩選報表以顯示指定日期之前開始的流程例項。
+   * **持續時間**(*必填*): 指定持續時間和時間單位。 顯示已執行超過指定期間的所有AEM Forms進程。
+   * **Started After** (*可選*): 選擇日期。 篩選報表以顯示指定日期之後開始的流程例項。
+   * **開始前** (*可選*): 選擇日期。 篩選報表以顯示指定日期之前開始的流程例項。
 
 1. 按一 **下開始** ，執行報表。
 
-   報表顯示在「流程報表」視窗右側的「**報表*」 **面板中** 。
+   報表會顯示在「 **流程報表** 」視窗右側的「報表 **」面板中** 。
 
    ![long_running_processes](assets/long_running_processes.png)
 
-   使用**報表**面板右上角的選項，對報表執行下列操作。
+   使用「報告」面板右上角的選 **項** ，對報告執行下列操作。
 
-   * **刷新**:在儲存區中重新整理含有最新資料的報表
-   * **變更圖例顏色**:選擇並變更報表圖例的顏色
-   * **匯出至CSV**:將報表中的資料匯出並下載至逗號分隔的檔案
+   * **刷新**: 在儲存區中重新整理含有最新資料的報表
+   * **變更圖例顏色**: 選擇並變更報表圖例的顏色
+   * **匯出至CSV**: 將報表中的資料匯出並下載至逗號分隔的檔案
 
 ## 流程持續時間報告 {#process-duration-report-br}
 
-「流程持續時間」報表按每個實例已運行的天數顯示表單流程的實例數。
+「流程持續時間」報表會依據每個例項已執行的天數，顯示表單流程的例項數。
 
 ### 要執行「進程持續時間」報告，請執行以下操作： {#to-execute-a-process-duration-report-br}
 
@@ -74,7 +77,7 @@ AEM Forms Process Reporting隨附下列現 *成可用的報表* :
 
    參數:
 
-   * **選擇流程** (必&#x200B;*備*):選取AEM Forms程式。
+   * **選擇流程** (必&#x200B;*備*): 選取AEM Forms程式。
 
 1. 按一 **下開始** ，執行報表。
 
@@ -84,9 +87,9 @@ AEM Forms Process Reporting隨附下列現 *成可用的報表* :
 
    使用「報告」面板右上角的選 **項** ，對報告執行下列操作。
 
-   * **刷新**:在儲存區中重新整理含有最新資料的報表
-   * **變更圖例顏色**:選擇並變更報表圖例的顏色
-   * **匯出至CSV**:將報表中的資料匯出並下載至逗號分隔的檔案
+   * **刷新**: 在儲存區中重新整理含有最新資料的報表
+   * **變更圖例顏色**: 選擇並變更報表圖例的顏色
+   * **匯出至CSV**: 將報表中的資料匯出並下載至逗號分隔的檔案
 
 ## 「Workflow Volume」報告 {#workflow-volume-report}
 
@@ -105,9 +108,9 @@ AEM Forms Process Reporting隨附下列現 *成可用的報表* :
 
    參數:
 
-   * **選擇流程**(必&#x200B;*備*):選取AEM Forms程式。
-   * **Started After** (*可選*):選擇日期。 篩選報表以顯示指定日期之後開始的流程例項。
-   * **開始前** (*可選*):選擇日期。 篩選報表以顯示指定日期之前開始的流程例項。
+   * **選擇流程**(必&#x200B;*備*): 選取AEM Forms程式。
+   * **Started After** (*可選*): 選擇日期。 篩選報表以顯示指定日期之後開始的流程例項。
+   * **開始前** (*可選*): 選擇日期。 篩選報表以顯示指定日期之前開始的流程例項。
 
 1. 按一 **下開始** ，執行報表。
 
@@ -117,7 +120,7 @@ AEM Forms Process Reporting隨附下列現 *成可用的報表* :
 
    使用「報告」面板右上角的選 **項** ，對報告執行下列操作。
 
-   * **刷新**:在儲存區中重新整理含有最新資料的報表
-   * **變更圖例顏色**:選擇並變更報表圖例的顏色
-   * **匯出至CSV**:將報表中的資料匯出並下載至逗號分隔的檔案
+   * **刷新**: 在儲存區中重新整理含有最新資料的報表
+   * **變更圖例顏色**: 選擇並變更報表圖例的顏色
+   * **匯出至CSV**: 將報表中的資料匯出並下載至逗號分隔的檔案
 
