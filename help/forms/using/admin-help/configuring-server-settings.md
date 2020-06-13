@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2657'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
    >[!NOTE]
    >
-   >如果您使用Microsoft Exchange Server且電子郵件地址是無效的電子郵件地址，則Microsoft exchange伺服器無法向分發清單發送電子郵件。 要解決此問題，請為Microsoft exchange服務 **器上的每個分發清單分別選擇「啟用外部通信** 」選項。
+   >如果您使用Microsoft Exchange Server且電子郵件地址是無效的電子郵件地址，則Microsoft Exchange伺服器無法向分發清單發送電子郵件。 要解決此問題，請為Microsoft Exchange服務 **器上的每個分發清單分別選擇「啟用外部通信** 」選項。
 
 1. 按一下「儲存」。
 
@@ -77,7 +80,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 * 任務分配
 * 期限
 
-若要產生群組的電子郵件通知，請在「使用者管理」中指定群組的電子郵件地址。 <!--Fix broken link See Setting up and organizing users -->當表單工作流程傳送電子郵件通知給群組時，群組內指定電子郵件地址的每位成員都會收到電子郵件通知。 當群組成員收到電子郵件通知並想要申請該任務時，該成員必須按一下電子郵件通知中的報銷申請連結，此連結會在「工作區」中開啟任務詳細資訊頁面。 從那裡，成員可以主張或主張並開啟工作項目。
+若要產生群組的電子郵件通知，請在「使用者管理」中指定群組的電子郵件地址。 <!--Fix broken link See Setting up and organizing users -->當表單工作流程傳送電子郵件通知給群組時，群組內指定電子郵件地址的每位成員都會收到電子郵件通知。 當群組成員收到電子郵件通知並想要申請工作時，該成員必須按一下電子郵件通知中的報銷申請連結，此連結會在「工作區」中開啟工作詳細資訊頁面。 從那裡，成員可以主張或主張並開啟工作項目。
 
 >[!NOTE]
 >
@@ -144,7 +147,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 1. 在管理控制台中，按一下「服務>表單工作流程>伺服器設定>管理員通知」。
 1. 在「通知類型」下，按一下「停止的分支」。
 1. 選擇「啟用停止的分支」。
-1. 在「電子郵件地址」方塊中，輸入分支停止時要通知的使用者地址。 使用user@domain.com格式，並以逗號分隔每個地址。 通常，此電子郵件地址是供管理員使用。
+1. 在「電子郵件地址」方塊中，輸入分支停止時要通知的使用者地址。 使用user@domain.com格式，並以逗號分隔每個位址。 通常，此電子郵件地址是供管理員使用。
 1. 在「主旨」方塊中，輸入電子郵件訊息主旨行的文字。 此欄位會預先填入預設文字。 如需自訂此欄位的詳細資訊，請參 [閱自訂通知的內容](configuring-server-settings.md#customizing-the-content-of-notifications)。
 1. 在「通知範本」方塊中，輸入電子郵件內文的文字。 此欄位會預先填入預設文字。 如需自訂此欄位的詳細資訊，請參 [閱自訂通知的內容](configuring-server-settings.md#customizing-the-content-of-notifications)。
 1. 在「訊息格式」清單中，選取電子郵件訊息的傳送格式（HTML或文字）。 預設格式為HTML。
@@ -158,7 +161,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 1. 在管理控制台中，按一下「服務>表單工作流程>伺服器設定>管理員通知」。
 1. 在「通知類型」下，按一下「停止操作」。
 1. 選擇「啟用停止的操作」。
-1. 在「電子郵件地址」方塊中，輸入作業停止時要通知的使用者地址。 使用user@domain.com格式，並以逗號分隔每個地址。 通常，此電子郵件地址是供管理員使用。
+1. 在「電子郵件地址」方塊中，輸入作業停止時要通知的使用者地址。 使用user@domain.com格式，並以逗號分隔每個位址。 通常，此電子郵件地址是供管理員使用。
 1. 在「主旨」方塊中，輸入電子郵件訊息主旨行的文字。 此欄位會預先填入預設文字。 如需自訂此欄位的詳細資訊，請參 [閱自訂通知的內容](configuring-server-settings.md#customizing-the-content-of-notifications)
 1. 在「通知範本」方塊中，輸入電子郵件內文的文字。 此欄位會預先填入預設文字。 如需自訂此欄位的詳細資訊，請參 [閱自訂通知的內容](configuring-server-settings.md#customizing-the-content-of-notifications)。
 1. 按一下「儲存」。
@@ -195,15 +198,17 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 `<`*PORT *是應用`>`程式伺服器的HTTP偵聽器的埠號。 支援的應用程式伺服器的預設HTTP偵聽器埠如下：
 
-**** JBoss:郵遞區號8080
+**JBoss:** 郵遞區號8080
 
-**** Oracle webLogic Server:郵編：7001
+**Oracle WebLogic Server:** 郵編：7001
 
-**** IBM webSphere:郵遞區號9080
+**IBM WebSphere:** 郵遞區號9080
 
 要使這些URL正常運作，請 `<`*用適&#x200B;*合您環境的埠號替換PORT`>`。
 
-***注意&#x200B;**:如果您使用Forms以外的自訂Web應用程式來讓使用者存取工作，則必須改用適合您自訂應用程式的URL格式。*
+>[!NOTE]
+>
+>如果您使用Forms以外的自訂Web應用程式來讓使用者存取工作，則必須改用適合您自訂應用程式的URL格式。
 
 ### 可變選擇器 {#variable-picker}
 
@@ -229,7 +234,9 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 **group-name** 指派工作項目的群組名稱。
 
-**注意**:如 *果變數沒有值，則不會傳回任何內容。*
+>[!NOTE]
+>
+>如果變數沒有值，則不會傳回任何內容。
 
 對於停止的分支，您可以在「主旨」和「通知範本」方塊中使用下列變數：
 
@@ -271,7 +278,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 ## 配置業務活動監視連接 {#configuring-business-activity-monitoring-connections}
 
-Business Activity Monitoring（可選模組）提供一組操作儀表板，可即時查看您的操作和關鍵效能指標。
+Business Activity Monitoring是一個可選模組，提供一組操作儀表板，可即時查看您的操作和關鍵效能指標。
 
 在「BAM配置設定」頁上，可以設定到運行BAM的伺服器的連接，以便跟蹤進程相關事件並將其發送到該伺服器。
 
