@@ -3,7 +3,10 @@ title: 組織您的數位資產
 description: 使用Experience Manager組織您的數位資產、影像、檔案、檔案夾等。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
 
    * **開發資料夾** -包含您目前正在處理的數位資產。
    * **用戶端資料夾** -包含以用戶端或專案名稱為基礎的數位資產。
-   * **主資料夾** -包含原始的來源數位資產。
+   * **主要資料夾** -包含原始的來源數位資產。
    * **轉譯資料夾** -包含原始來源數位資產的轉譯和副本。
    * **檔案大小檔案夾** -包含以小型、中型或大型檔案大小為基礎的數位資產。
    * **測試資料夾** -包含可立即在您的網站上發佈的數位資產。
@@ -48,7 +51,7 @@ Adobe Experience Manager Assets使用自學演算法建立高度描述性的標�
 
 ## 組織為系列 {#organize-as-collections}
 
-透過Experience Manager Assets中的資產收集，您可以簡化在使用者之間建立、編輯和共用資產的功能。 根據您的使用方式建立數種系列，包括包含資產、檔案夾和系列之靜態參考清單的系列，以及根據搜尋准則提取資產的系列。  您也可以使用不同位置的資產建立系列，並與具有不同存取、檢視和編輯權限等級的多名使用者共用。
+透過Experience Manager Assets中的資產收集，您可以簡化在使用者之間建立、編輯和共用資產的功能。 根據您的使用方式建立數種系列，包括包含資產、檔案夾和系列之靜態參考清單的系列，以及根據搜尋准則提取資產的系列。  您也可以使用不同位置的資產建立系列，並與具有不同存取、檢視和編輯權限等級的多位使用者共用。
 
 如需詳細資訊，請參閱「管 [理系列」](managing-collections-touch-ui.md)
 
