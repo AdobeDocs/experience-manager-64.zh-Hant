@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯工作，您可使用AEM Assets的
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
-source-wordcount: '9813'
+source-wordcount: '9812'
 ht-degree: 2%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 2%
 
    * 在工具列上，點選「建 **[!UICONTROL 立]** 」圖示。 然後，在功能表上，點選「 **[!UICONTROL 檔案」]**。 如有需要，可在顯示的對話框中更名檔案。
    * 在支援HTML5的瀏覽器中，直接將資產拖曳至介面。 不會顯示要更名檔案的對話框。
+
    ![create_menu](assets/create_menu.png)
 
    要選擇多個檔案，請按Ctrl/Command鍵，然後在檔案選擇器對話框中選擇資產。 在iPad中，您一次只能選取一個檔案。
@@ -116,6 +117,7 @@ ht-degree: 2%
    但是，不支援下列（以空格分隔的）字元清單：
    * 資產檔案名稱不可包含  `* / : [ \ \ ] | # % { } ? &`
    * 資產資料夾名稱不可包含  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+
    此外，「資產」介面會顯示您上傳的最新資產，或您在所有檢視(「卡片檢視」、「清單檢視」和「**[!UICONTROL 欄檢視」]****[!UICONTROL )中先建立的]**&#x200B;資料夾 ****。
 
    通常，在同時上傳大型資產或多個資產時，視覺指標可讓您評估進度。 「上 **[!UICONTROL 傳進度]** 」對話方塊會顯示成功上傳檔案的計數，以及無法上傳的檔案。
@@ -161,7 +163,7 @@ ht-degree: 2%
    >當您透過FTP上傳資產時，您在Dynamic Media Classic(Scene7)中設定的上傳工作選項會取代在AEM中設定的資產處理參數。
 
 1. 在「上傳工作選項」對話方塊的 **[!UICONTROL 右下角]** ，點選「 **[!UICONTROL 儲存」]**。
-1. 在「上傳」頁面的右下角，點 **[!UICONTROL 選「送出]****[!UICONTROL 上傳」]**。
+1. 在「上傳」頁面的右下角，點 **[!UICONTROL 選「提交]****[!UICONTROL 上傳」]**。
 
    若要檢視上傳的進度，請在全域導覽列上點選「工 **[!UICONTROL 作」]**。 「作 **[!UICONTROL 業]** 」頁顯示上載進度。 您可以繼續在AEM中工作，並隨時返回Dynamic Media Classic中的「工作」頁面，以檢視進行中的工作。
 
@@ -192,7 +194,7 @@ ht-degree: 2%
 
 上傳影像檔案（包括AI、EPS和PSD檔案）時，您可以在「上傳工作選項」對話方塊中執 **[!UICONTROL 行下列編輯動作]** :
 
-* 從影像邊緣裁切空白（請參閱上表的說明）。
+* 從影像邊緣裁切空白字元（請參閱上表的說明）。
 * 從影像側手動裁切（請參閱上表的說明）。
 * 選擇顏色描述檔（請參閱上表中的選項說明）。
 * 從剪裁路徑建立遮色片。
@@ -296,7 +298,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
 如果您上傳許多資產，AEM伺服器的I/O呼叫會大幅增加，這會降低上傳效率，甚至會導致逾時。 AEM Assets支援串流上傳資產。 串流上傳可避免在將磁碟複製到儲存庫之前，先在伺服器上的臨時資料夾中儲存資產，從而減少上傳操作期間的磁碟I/O。 而是直接將資料傳輸到儲存庫。 這樣，上傳大型資產的時間和逾時的可能性就會減少。 AEM Assets預設會啟用串流上傳。
 
-對於在JEE伺服器上執行且Servlet-api版本低於3.1的AEM，會停用串流上傳。
+在JEE伺服器上執行且Servlet-api版本低於3.1的AEM，會停用串流上傳。
 
 ### 解壓縮包含資產的ZIP封存 {#extract-zip-archive-containing-assets}
 
@@ -379,6 +381,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
    * 檢視或下載資產的次數。
    * 使用資產的通道／裝置。
    * 最近使用資產的創意解決方案。
+
    如需詳細資訊，請參 [閱資產分析](touch-ui-asset-insights.md)。
 
 1. 點選「 **[!UICONTROL 儲存並關閉]**」。
@@ -432,6 +435,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
    * 指定資產移動後的名稱。 然後點選「 **[!UICONTROL Next]** （下一步）」繼續。
    * 點選「 **[!UICONTROL 取消]** 」以停止程式。
+
    >[!NOTE]
    >
    >如果新位置沒有同名的資產，您可以指定該資產的相同名稱。 但是，如果您將資產移至同名資產所在的位置，則應使用不同的名稱。 如果您使用相同的名稱，系統會自動產生名稱的變化。 例如，如果您的資產名稱為Square，系統會為其副本產生名稱Square1。
@@ -456,6 +460,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
    * 從「調 **[!UICONTROL 整」欄]** ，選取或取消選取資產的參考。
    * 點選「 **[!UICONTROL 上一步]** 」可返回「選 **[!UICONTROL 擇目標]** 」頁面。
    * 點選「 **[!UICONTROL 取消]** 」以停止移動操作。
+
    如果您不更新參照，則參照會繼續指向資產的先前路徑。 如果您調整參照，它們會更新為新資產路徑。
 
 ## 管理轉譯 {#managing-renditions}
@@ -535,6 +540,7 @@ PSD（Photoshop檔案）檔案最常用於建立影像範本。 上傳PSD檔案�
 
       * 如果資產沒有參考，則會刪除資產。
       * 如果資產有參考，則會出現錯誤訊息通知您 **[!UICONTROL 已參考一或多個資產]**。 您可以選取&#x200B;**[!UICONTROL 強制刪除]**&#x200B;或&#x200B;**[!UICONTROL 取消]**。
+
    >[!NOTE]
    >
    >若要解析或移除其他頁面的傳入參照，請先更新相關參照，再刪除資產。
@@ -666,7 +672,8 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    * 選取資產，然後按一下工具 **[!UICONTROL 列中的]** 「編輯」圖示。
    * 點選 **[!UICONTROL 卡片檢視]** 中資產上顯示的「編輯」選項。
-   * 在資產頁面中，點選工具 **[!UICONTROL 列中的]** 「編輯」圖示。
+   * 在資產頁面中，點選工 **[!UICONTROL 具列中的]** 「編輯」圖示。
+
    ![edit_icon](assets/edit_icon.png)
 
 1. 若要裁切影像，請點選「 **[!UICONTROL 裁切」]**。
@@ -738,6 +745,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    * [快速動作](managing-assets-touch-ui.md#quick-actions)
    * 在選取資產或導覽至資產頁面後，從工具列
+
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. 在時間軸底部的 **[!UICONTROL 「注釋]** 」方塊中新增注釋。Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
