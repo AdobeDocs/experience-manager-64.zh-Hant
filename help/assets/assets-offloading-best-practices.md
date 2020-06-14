@@ -1,12 +1,12 @@
 ---
 title: 資產卸載最佳做法
 description: 建議在AEM Assets中卸載資產擷取和複製工作流程的使用案例和最佳實務。
-uuid: 7d08fda2-1c59-44ad-bd35-83d199642e01
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: cdb175f4-a7c6-4d9f-994a-5fc8eca51f03
 translation-type: tm+mt
-source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1818'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
 
 >[!WARNING]
 >
->此功能已過時，不再支援AEM 6.4，並在AEM 6.5中移除。相應計畫。
+>此功能已過時，不再支援AEM 6.4，並在AEM 6.5中移除。 相應計畫。
 
 在Adobe Experience Manager(AEM)Assets中處理大型檔案和執行工作流程可能會耗用大量的CPU、記憶體和I/O資源。 尤其是，資產的大小、工作流程、使用者人數和資產擷取頻率都會影響整體系統效能。 最耗用資源的作業包括AEM資產擷取和複製工作流程。 在單一AEM製作例項上大量使用這些工作流程可能會對製作效率造成負面影響。
 
@@ -33,15 +33,15 @@ AEM Assets會建置原生資產特定的工作流程擴充功能，以進行卸�
 
 ### DAM更新資產卸載工作流程 {#dam-update-asset-offloading-workflow}
 
-DAM更新資產卸載工作流程會在使用者上傳資產的主版（作者）上執行。 此工作流程是由一般工作流程啟動程式所觸發。 此卸載工作流程不會處理已上載的資產，而是使用主題 *com/adobe/granite/workflow/offloading建立新工作*。 卸載工作流將添加目標工作流的名稱——在此例中為「DAM更新資產」工作流，並添加資產路徑到作業的裝載。 在建立卸載作業後，主版上的卸載工作流將等待卸載作業運行。
+DAM更新資產卸載工作流程會在使用者上傳資產的主要（作者）伺服器上執行。 此工作流程是由一般工作流程啟動程式所觸發。 此卸載工作流程不會處理已上載的資產，而是使用主題 *com/adobe/granite/workflow/offloading建立新工作*。 卸載工作流將添加目標工作流的名稱——在此例中為「DAM更新資產」工作流，以及資產路徑到作業裝載。 在建立卸載作業後，主實例上的卸載工作流將等待卸載作業運行。
 
 ### 工作管理員 {#job-manager}
 
-作業管理器將新作業分發給工作器實例。 在設計分發機制時，必須考慮主題啟用。 作業只能指派給啟用作業主題的例項。 在主版上停 *用主題com/adobe/granite/workflow/offloading* ，並在工作器上啟用它，以確保將工作指派給工作器。
+作業管理器將新作業分發給工作器實例。 在設計分發機制時，必須考慮主題啟用。 作業只能指派給啟用作業主題的例項。 禁用主 `com/adobe/granite/workflow/offloading` 卷上的主題，並在工作器上啟用該主題，以確保將作業分配給該工作器。
 
 ### AEM卸載 {#aem-offloading}
 
-卸載框架標識分配給工作器實例的工作流卸載作業，並使用複製將它們物理地傳輸給工作器，包括它們的裝載（例如，要捕獲的映像）。
+卸載框架標識分配給工作器實例的工作流卸載作業，並使用複製將它們物理地傳輸到工作器，包括它們的裝載（例如，要捕獲的映像）。
 
 ### 工作流程卸載作業使用者 {#workflow-offloading-job-consumer}
 
@@ -104,14 +104,17 @@ Adobe建議您關閉自動代理管理，因為它不支援無二進位複製，
 
 ### 使用正向複製 {#using-forward-replication}
 
-預設情況下，卸載傳輸使用反向複製將卸載的資產從工作器拉回主設備。 反向複製代理不支援無二進位複製。 您應將卸載配置為使用正向複製將卸載的資產從工作者推回主設備。
+預設情況下，卸載傳輸使用反向複製將卸載的資產從工作器拉回主伺服器。 反向複製代理不支援無二進位複製。 您應將卸載配置為使用轉發複製將卸載的資產從工作器推回主伺服器。
 
-1. 如果使用反向複製從預設配置遷移，請禁用或刪除主和工作器上名為「 `offloading_outbox`」和「 `offloading_reverse_*`」的所有代理，其中&amp;ast;代表目標例項的Sling ID。
-1. 在每個工作器上，建立指向主伺服器的新的轉發複製代理。 此過程與從主代理向工作者建立轉發代理相同。 有關設 [置卸載複製代理的說明](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) ，請參閱建立卸載的複製代理。
+1. 如果使用反向複製從預設配置遷移，請禁用或刪除主和工作器上名為「 `offloading_outbox`」和「 `offloading_reverse_*`」的所有代理，其中&amp;ast; 代表目標例項的Sling ID。
+1. 在每個工作器上，建立指向主伺服器的新轉發複製代理。 該過程與從主代理向工作者建立轉發代理相同。 有關設 [置卸載複製代理的說明](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) ，請參閱建立卸載的複製代理。
 1. 開啟( `OffloadingDefaultTransporter` )的`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`設定。
 1. 將屬性的值 `default.transport.agent-to-master.prefix` 從 `offloading_reverse` 更改為 `offloading`。
 
-### 在作者和工作者之間使用共用資料儲存和無二進位複製 {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+<!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+-->
+
+### 在作者和工作者之間使用共用資料儲存和無二進位複製  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
 建議使用無二進位複製以減少資產卸載的傳輸開銷。 要瞭解如何為共用資料儲存設定無二進位複製，請參 [閱在AEM中配置節點儲存和資料儲存](/help/sites-deploying/data-store-config.md)。 對於Assets卸載，此過程並不不同，只是涉及其他複製代理。 由於無二進位複製只適用於轉發複製代理，因此您還應對所有卸載代理使用轉發複製。
 
@@ -139,7 +142,7 @@ Adobe建議您關閉自動代理管理，因為它不支援無二進位複製，
 
 ### 優化輪詢間隔 {#optimizing-the-polling-interval}
 
-工作流卸載是使用主伺服器上的外部工作流實現的，該工作流輪詢工作器上卸載的工作流是否完成。 外部工作流進程的預設輪詢間隔為5秒。 Adobe建議您將「資產」卸載步驟的輪詢間隔提高至少15秒，以降低主版的卸載開銷。
+工作流卸載是使用主伺服器上的外部工作流實現的，該外部工作流輪詢工作器上卸載的工作流是否完成。 外部工作流進程的預設輪詢間隔為5秒。 Adobe建議您將「資產」卸載步驟的輪詢間隔提高至少15秒，以降低主要系統的卸載開銷。
 
 1. 從http://localhost:4502/libs/cq/workflow/content/console.html開啟工作流程 [主控台](http://localhost:4502/libs/cq/workflow/content/console.html)。
 
@@ -151,7 +154,7 @@ Adobe建議您關閉自動代理管理，因為它不支援無二進位複製，
 
 ## 更多資源 {#more-resources}
 
-本檔案著重於資產卸載。 以下是有關卸載的其他文檔：
+本檔案著重於資產卸載。 以下是有關卸載的一些其他文檔：
 
 * [卸載作業](/help/sites-deploying/offloading.md)
 * [資產工作流程卸載程式](/help/sites-administering/workflow-offloader.md)
