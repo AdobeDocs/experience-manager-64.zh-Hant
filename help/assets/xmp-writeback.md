@@ -3,7 +3,10 @@ title: XMP回寫至轉譯
 description: 瞭解XMP回寫功能如何將資產的中繼資料變更傳播至資產的所有或特定轉譯。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: eb135e5898fe521498eecae7109b39f54d274cce
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '794'
+ht-degree: 3%
 
 ---
 
@@ -65,11 +68,21 @@ PTIFF轉譯只會在「動態媒體混合」模式中建立並儲存在本機。
 
 ## 篩選XMP中繼資料 {#filtering-xmp-metadata}
 
-AEM Assets支援黑名單和白名單篩選XMP中繼資料的屬性／節點，從資產二進位檔案讀取，並在收錄資產時儲存在JCR中。
+[!DNL Experience Manager Assets] 支援從資產二進位檔案讀取並在收錄資產時儲存在JCR中的XMP中繼資料的封鎖清單和允許的屬性／節點清單篩選。
 
-黑名單篩選功能可讓您匯入除為排除而指定的屬性以外的所有XMP中繼資料屬性。 不過，對於資產類型（例如具有大量XMP中繼資料的INDD檔案）（例如1000個節點，具有10,000個屬性），篩選的節點名稱不一定都會事先知道。 如果黑名單篩選允許匯入大量包含大量XMP中繼資料的資產，AEM例項／叢集可能會遇到穩定性問題，例如阻塞的觀察佇列。
+使用封鎖清單進行篩選可讓您匯入所有XMP中繼資料屬性，但為排除指定的屬性除外。 不過，對於資產類型（例如具有大量XMP中繼資料的INDD檔案）（例如1000個節點，具有10,000個屬性），篩選的節點名稱不一定都會事先知道。 如果使用封鎖清單進行篩選可讓大量包含大量XMP中繼資料的資產匯入，AEM例項或叢集可能會遇到穩定性問題，例如阻塞的觀察佇列。
 
-XMP中繼資料的白名單篩選可讓您定義要匯入的XMP屬性，以解決此問題。 這樣，將忽略其他／未知的XMP屬性。 您可以將這些屬性中的某些屬性添加到黑名單過濾器中，以便向後相容。
+透過允許的清單篩選XMP中繼資料可讓您定義要匯入的XMP屬性，以解決此問題。 如此，就會忽略任何其他或未知的XMP屬性。 為了向後相容性，您可以將其中某些屬性新增至使用封鎖清單的篩選器。
+
+<!-- TBD: The instructions don't seem to match the UI. I see com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.description
+in Config Manager. And the settings are,
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_whitelist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.whitelist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.apply_blacklist.name
+com.day.cq.dam.commons.metadata.XmpFilterBlackWhite.xmp.filter.blacklist.name
+ 
+TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
 
 >[!NOTE]
 >
@@ -77,12 +90,12 @@ XMP中繼資料的白名單篩選可讓您定義要匯入的XMP屬性，以解�
 
 1. 從中開啟配置管 `https://[aem_server]:[port]/system/console/configMgr`理器。
 1. 開啟 **[!UICONTROL Adobe CQ DAM XmpFilter組態]** 。
-1. 若要套用白名單篩選，請選 **[!UICONTROL 取「套用白名單至XMP屬性」]**，並指定要在「白名單的XML名稱供XMP篩選」方 **[!UICONTROL 塊中匯入的屬性]** 。
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. 若要在套用白名單篩選後篩除黑名單XMP屬性，請在「XMP篩選的黑名單XML名 **[!UICONTROL 稱」方塊中指定]** 。儲存變更。
+1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box. 儲存變更。
 
    >[!NOTE]
    >
-   >預設 **[!UICONTROL 情況下，「將黑名單應用於XMP屬性]** 」選項處於選中狀態。 換言之，黑名單篩選預設為啟用。 要禁用黑名單過濾，請取消選 **[!UICONTROL 擇將黑名單應用於XMP屬性]**。
+   >預設 **[!UICONTROL 情況下，「將黑名單應用於XMP屬性]** 」選項處於選中狀態。 換言之，預設會啟用使用封鎖清單進行篩選。 要禁用此類篩選，請取消選 **[!UICONTROL 擇「將黑名單應用於XMP屬性]** 」選項。
