@@ -1,27 +1,30 @@
 ---
-title: 將AEM資產與Adobe inDesign Server整合
-description: 瞭解如何將AEM Assets與InDesign server整合。
+title: 將AEM資產與Adobe InDesign Server整合
+description: 瞭解如何將AEM Assets與InDesign Server整合。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1685'
+ht-degree: 4%
 
 ---
 
 
-# 將AEM資產與Adobe inDesign Server整合 {#integrating-aem-assets-with-indesign-server}
+# 將AEM資產與Adobe InDesign Server整合 {#integrating-aem-assets-with-indesign-server}
 
 Adobe Experience Manager(AEM)資產使用：
 
 * 一個代理，用於分配特定處理任務的負載。 Proxy是AEM例項，可與Proxy工作者通訊以完成特定工作，而其他AEM例項則可傳送結果。
 * 用於定義和管理特定任務的代理工作器。
 
-這些工作可以涵蓋各種任務；例如，使用Adobe inDesign server處理檔案。
+這些工作可以涵蓋各種任務； 例如，使用Adobe InDesign Server處理檔案。
 
-若要將檔案完整上傳至您使用Adobe inDesign建立的AEM資產，會使用Proxy。 這會使用代理工作者與Adobe inDesign server通訊，在Adobe inDesign Server中執行指令碼 [](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ，以擷取中繼資料並產生AEM Assets的各種轉譯。 Proxy工作者可讓InDesign server和雲端組態中的AEM例項進行雙向通訊。
+若要將檔案完整上傳至您使用Adobe InDesign建立的AEM資產，會使用Proxy。 這會使用代理工作者與Adobe InDesign Server通訊，在Adobe InDesign Server中執行指令碼 [](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ，以擷取中繼資料並產生AEM Assets的各種轉譯。 Proxy工作者可讓InDesign Server和雲端組態中的AEM例項進行雙向通訊。
 
 >[!NOTE]
 >
->Adobe inDesign提供兩種產品：
+>Adobe InDesign提供兩種產品：
 >
 >* [InDesign](https://www.adobe.com/products/indesign.html)\
    >  這可讓您設計用於列印和／或數位散發的頁面版面。
@@ -30,13 +33,14 @@ Adobe Experience Manager(AEM)資產使用：
 * [InDesign Server](https://www.adobe.com/products/indesignserver.html)\
    >  此引擎可讓您根據您使用InDesign建立的內容，以程式設計方式建立自動化檔案。 它以服務的形式運作，為其 [ExtendScript引擎提供介面](https://www.adobe.com/devnet/scripting.html) 。\
    >  這些指令碼是以ExtendScript編寫，類似於javascript。 如需Indesign指令碼的詳細資訊，請參 [閱https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
+
 >
 
 
 
 ## 抽取的運作方式 {#how-the-extraction-works}
 
-InDesign server可與AEM Assets整合，讓使用InDesign( `.indd`)建立的檔案可以上傳、產生轉譯、提取 *所有媒體* （例如視訊）並儲存為資產：
+InDesign Server可與AEM Assets整合，讓使用InDesign( `.indd`)建立的檔案可以上傳、產生轉譯、提取 *所有媒體* （例如視訊）並儲存為資產：
 
 >[!NOTE]
 >
@@ -48,21 +52,22 @@ InDesign server可與AEM Assets整合，讓使用InDesign( `.indd`)建立的檔�
    此命令指令碼將：
 
    * 檢索文 `.indd` 件。
-   * 執行InDesign server命令：
+   * 執行InDesign Server命令：
 
       * 會擷取結構、文字和任何媒體檔案。
       * 產生PDF和JPG轉譯。
       * 產生HTML和IDML轉譯。
    * 將產生的檔案張貼回AEM Assets。
+
    >[!NOTE]
    >
    >IDML是以XML為基礎的格式，可轉換 *InDesign檔案* 中的所有項目。 它會使用 [Zip壓縮儲存為壓縮的](https://www.techterms.com/definition/zip) 套件。
    >
-   >如需詳 [細資訊，請參閱Adobe inDesign Interchange Formats INX和IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&seqNum=8) 。
+   >如需詳 [細資訊，請參閱Adobe InDesign Interchange Formats INX和IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8) 。
 
    >[!CAUTION]
    >
-   >如果InDesign server未安裝或未設定，則您仍可將檔案上 `.indd` 傳至AEM。 不過，產生的轉譯將限 `png` 制為 `jpeg`和，您將無法產生 `html`, `idml` 或頁面轉譯。
+   >如果InDesign Server未安裝或未設定，則您仍可將檔案上 `.indd` 傳至AEM。 不過，產生的轉譯將限 `png` 制為 `jpeg`和，您將無法產生 `html`, `idml` 或頁面轉譯。
 
 1. 擷取和轉譯產生後：
 
@@ -70,9 +75,9 @@ InDesign server可與AEM Assets整合，讓使用InDesign( `.indd`)建立的檔�
    * 擷取的文字和檔案會儲存在AEM Assets中。
    * 所有轉譯都儲存在AEM Assets、資產本身。
 
-## 整合InDesign server與AEM {#integrating-the-indesign-server-with-aem}
+## 整合InDesign Server與AEM {#integrating-the-indesign-server-with-aem}
 
-若要整合InDesign server以便與AEM Assets搭配使用，以及在設定Proxy後，您必須：
+若要整合InDesign Server以便與AEM Assets搭配使用，以及在設定Proxy後，您必須：
 
 1. [安裝InDesign Server](#installing-the-indesign-server)。
 1. 如有需要， [請設定AEM Assets工作流程](#configuring-the-aem-assets-workflow)。
@@ -85,13 +90,13 @@ InDesign server可與AEM Assets整合，讓使用InDesign( `.indd`)建立的檔�
 
 若要安裝並啟動InDesign Server以搭配AEM使用：
 
-1. 下載並安裝Adobe inDesign Server。
+1. 下載並安裝Adobe InDesign Server。
 
    >[!NOTE]
    >
    >InDesign Server（CS6和更新版本）。
 
-1. 如有需要，您可自訂InDesign server例項的設定。
+1. 如有需要，您可自訂InDesign Server例項的設定。
 
 1. 從命令行啟動伺服器：
 
@@ -101,7 +106,7 @@ InDesign server可與AEM Assets整合，讓使用InDesign( `.indd`)建立的檔�
 
    >[!NOTE]
    >
-   >如果要將輸出消息保存到檔案，則使用重定向；例如，在Windows下：
+   >如果要將輸出消息保存到檔案，則使用重定向； 例如，在Windows下：
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
@@ -112,7 +117,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 * [媒體提取](#media-extraction)
 * [頁面提取](#page-extraction)
 
-此工作流程會設定預設值，以適合您在各種作者例項上的設定(此為標準工作流程，因此在「編輯工作流程」( [Editing a Workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step))下會提供詳細資訊。 如果您使用預設值（包括SOAP埠），則不需要任何設定。
+此工作流程會設定預設值，這些預設值可適用於您在各種作者例項上的設定(此為標準工作流程，因此在「編輯工作流程」( [Editing a Workflow](/help/sites-developing/workflows-models.md#configuring-a-workflow-step))下會提供更多資訊。 如果您使用預設值（包括SOAP埠），則不需要任何設定。
 
 在設定後，上傳InDesign檔案至AEM Assets（透過任何一種常用方法）將觸發處理資產和準備各種轉譯所需的工作流程。 將檔案上傳至AEM Assets以 `.indd` 測試您的設定，確認您看到IDS在 `<*your_asset*>.indd/Renditions`
 
@@ -126,15 +131,15 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 媒體擷取引數和指令碼路徑
 
-* **ExtendScript程式庫**:這是其他指令碼所需的簡單http get/post方法程式庫。
+* **ExtendScript程式庫**: 這是其他指令碼所需的簡單http get/post方法程式庫。
 
-* **擴充指令碼**:您可以在此處指定不同的指令碼組合。 如果您想要在InDesign server上執行您自己的指令碼，請將指令碼儲存在 `/apps/settings/dam/indesign/scripts`。
+* **擴充指令碼**: 您可以在此處指定不同的指令碼組合。 如果您想要在InDesign Server上執行您自己的指令碼，請將指令碼儲存在 `/apps/settings/dam/indesign/scripts`。
 
    如需Indesign指令碼的詳細資訊，請參 [閱https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
 
 >[!CAUTION]
 >
->請 勿變更ExtendScript程式庫。程式庫提供與Sling通訊所需的HTTP功能。 此設定會指定要傳送至Adobe inDesign server以供其使用的程式庫。
+>請 勿變更ExtendScript程式庫。程式庫提供與Sling通訊所需的HTTP功能。 此設定會指定要傳送至Adobe InDesign Server以供其使用的程式庫。
 
 「媒 `ThumbnailExport.jsx` 體擷取」工作流程步驟執行的指令碼會產生。jpg格式的縮圖轉譯。 「處理縮圖」工作流程步驟會使用此轉譯，以產生AEM所需的靜態轉譯。
 
@@ -148,18 +153,18 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
-* **頁面擷取處理常式**:從下拉式清單中，選取您要使用的處理常式。 擷取處理常式會針對由相關人員選擇的特定轉譯 `RenditionPicker` 進行操作(請參 `ExtractionHandler` 閱API)。
+* **頁面擷取處理常式**: 從下拉式清單中，選取您要使用的處理常式。 擷取處理常式會針對由相關人員選擇的特定轉譯 `RenditionPicker` 進行操作(請參 `ExtractionHandler` 閱API)。
 依預設，IDML匯出擷取處理常式可供使用。 它會對在「媒體擷 `IDML` 取」步驟中產生的轉譯執行。
 
-* **頁面名稱**:指定您要指派給產生頁面的名稱。 若保留空白，則名稱為「page」（若「page」已存在，則為衍生值）。
+* **頁面名稱**: 指定您要指派給產生頁面的名稱。 若保留空白，則名稱為「page」（若「page」已存在，則為衍生值）。
 
-* **頁面標題**:指定您要指派給產生頁面的標題。
+* **頁面標題**: 指定您要指派給產生頁面的標題。
 
-* **頁面根路徑**:結果頁面的根位置路徑。 如果保留為空白，則會使用保存資產轉譯的節點。
+* **頁面根路徑**: 結果頁面的根位置路徑。 如果保留為空白，則會使用保存資產轉譯的節點。
 
-* **頁面範本**:產生產生頁面時要使用的範本。
+* **頁面範本**: 產生產生頁面時要使用的範本。
 
-* **頁面設計**:產生產生頁面時要使用的頁面設計。
+* **頁面設計**: 產生產生頁面時要使用的頁面設計。
 
 ### 為InDesign Server設定Proxy Worker {#configuring-the-proxy-worker-for-indesign-server}
 
@@ -175,11 +180,11 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
-   * **IDS池**:用於與InDesign server通訊的SOAP端點。 您可以新增、移除和訂購項目。
+   * **IDS池**: 用於與InDesign Server通訊的SOAP端點。 您可以新增、移除和訂購項目。
 
 1. 按一 **[!UICONTROL 下「確定]** 」以儲存。
 
-### 設定Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
+### 設定Day CQ Link Externalizer  {#configuring-day-cq-link-externalizer}
 
 如果InDesign伺服器和AEM在不同的主機上執行，或這兩個應用程式中的任一個或兩個都未在預設埠上執行，請設定 **Day CQ Link Externalizer** ，以設定InDesign伺服器的主機名稱、埠和內容路徑。
 
@@ -193,14 +198,14 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 您現在可以啟用IDS的並行作業處理。
 
-首先，您需要確定InDesign server可處理的最大並行 `x`作業數():
+首先，您需要確定InDesign Server可處理的最大並行 `x`作業數():
 
-* 在單一多處理器機器上，InDesign server可處理的並行作業(x)最大數目比執行IDS的處理器數目少1。
+* 在單一多處理器機器上，InDesign Server可處理的並行作業(x)最大數目比執行IDS的處理器數目少1。
 * 在多台電腦上運行IDS時，您需要計算可用處理器總數（即所有電腦上），然後減去電腦總數。
 
 要配置並行IDS作業數：
 
-1. 開啟 **[!UICONTROL Felix]** Console的「設定」標籤；例如：
+1. 開啟 **[!UICONTROL Felix]** Console的「設定」標籤； 例如：
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -221,29 +226,32 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
    >[!NOTE]
    >
-   >在使用IDS員工池時，您可以選擇啟用「黑名單」。
+   >使用工作池時，可以啟用IDS工作池的阻止清單。
    >
    >要執行此操作，請啟用配置下的「enable.retry.name」複選框，該 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 複選框將啟用IDS作業檢索。
    >
-   >此外，在配置 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 下，為max.errors.to.blacklist參數設定正值，該參數在禁止IDS進入作業處理程式清單之前確定作業檢索的數量
+   >此外，在配 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 置下，為參數設定正值，該值在將IDS從作業處理器列 `max.errors.to.blacklist` 表禁止之前確定作業檢索的數量
    >
-   >預設情況下，在以分鐘為單位的可配置(retry.interval.to.whitelist.name)時間之後，IDS工作器將重新驗證。 如果線上找到該員工，則會將其從黑名單中刪除
+   >預設情況下，在IDS工作器經過可配`retry.interval.to.whitelist.name`置（分鐘）時間後重新驗證。 如果線上找到該工作器，則會將其從被阻止的清單中刪除。
 
-## 啟用Adobe inDesign Server 10.0或更新版本的支援 {#enabling-support-for-indesign-server-or-higher}
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+-->
+
+## 啟用Adobe InDesign Server 10.0或更新版本的支援 {#enabling-support-for-indesign-server-or-higher}
 
 對於InDesign Server 10.0或更新版本，請執行下列步驟以啟用多階段作業支援。
 
-1. 從您的AEM Assets例項開啟Configuration Manager `https://[AEM_server]:[port]/system/console/configMgr`。
+1. 從實例中開啟配置管 [!DNL Assets] 理器 `https://[aem_server]:[port]/system/console/configMgr`。
 1. 編輯配置 `com.day.cq.dam.ids.impl.IDSJobProcessor.name`。
-1. 選取「ids.cc.en **[!UICONTROL ()]** 」選項，然後按一 **[!UICONTROL 下「儲存]**」。
+1. 選擇 **[!UICONTROL ids.cc.enable]** ()選項，然後按一 **[!UICONTROL 下「儲存]**」。
 
 >[!NOTE]
 >
->對於與AEM Assets整合的InDesign server，請使用多核心處理器，因為整合所需的「工作階段支援」功能在單核系統上不受支援。
+>為 [!DNL InDesign Server] 與整 [!DNL Assets]合，請使用多核處理器，因為整合所需的作業階段支援功能在單核系統上不受支援。
 
-## 設定AEM認證 {#configure-aem-credentials}
+## 設定Experience Manager憑證 {#configure-aem-credentials}
 
-您可以變更從AEM例項存取InDesign伺服器的預設管理員認證（使用者名稱和密碼），而不會中斷與Adobe inDesign伺服器的整合。
+您可以變更從AEM例項存取InDesign伺服器的預設管理員認證（使用者名稱和密碼），而不會中斷與Adobe InDesign伺服器的整合。
 
 1. 前往 `/etc/cloudservices/proxy.html`.
 1. 在對話方塊中，指定新的使用者名稱和密碼。
