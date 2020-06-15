@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 358d32bc-be5f-4500-9637-525d35cdbeff
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: adbbccd09fd76418d020b9fd2b6b9c4f585b0924
+workflow-type: tm+mt
+source-wordcount: '2023'
+ht-degree: 13%
 
 ---
 
@@ -33,9 +36,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 活動會顯示一個標籤，說明定義的活動類型：
 
-* XT - Adobe target體驗目標
+* XT - Adobe Target體驗目標
 * A/B - Adobe Target A/B測試
-* AEM - Adobe Experience manager目標鎖定（contexthub或clientcontext driven）
+* AEM - Adobe Experience Manager目標鎖定（contexthub或clientcontext driven）
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -49,13 +52,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * If the **xt_only** options is **not** enabled on the Adobe Target tenant (clientcode), then you can create **both** XT and A/B activities in AEM.
 >
 >
-**** 其他附註： **xt_only** options是套用在特定Target租用戶（客戶代碼）上的設定，只能在Adobe Target中直接修改。 您無法在AEM中啟用或停用此選項。
+**其他附註：** **xt_only** options是套用在特定Target租用戶(clientcode)上的設定，只能在Adobe Target中直接修改。 您無法在AEM中啟用或停用此選項。
 
 >[!CAUTION]
 >
 >您必須保護發佈例項上的活動設 **定節點cq:ActivitySettings** ，如此一般使用者便無法存取它。 處理Adobe Target活動同步的服務只能訪問活動設定節點。
 >
->如需詳 [細資訊，請參閱與Adobe target整合的必要條件](/help/sites-administering/target-requirements.md) 。
+>如需詳 [細資訊，請參閱與Adobe Target整合的必要條件](/help/sites-administering/target-requirements.md) 。
 
 ## 使用活動控制台建立品牌 {#creating-a-brand-using-the-activities-console}
 
@@ -80,7 +83,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * **** 定位引擎：AEM [](/help/sites-authoring/personalization.md#aem) 或 [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) ，做為目標內容的引擎。
 
 * **** 選擇目標配置： (僅限Adobe Target) 此活動應用來連線至Adobe Target的雲端設定。只有在為「定位引擎」選取Adobe Target時，才會顯示此選項。
-* **** 活動類型：活動類型- A/B測試或體驗定位
+* **活動類型：** 活動類型- A/B測試或體驗定位
 * **** 目標：(可選) 活動的說明。
 * **** 體驗：對象名稱與您所定位之行銷區段之間的對應。
 * **** 流量百分比：如果選取A/B測試，您可以變更每個體驗的流量 (百分比)。
@@ -101,7 +104,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 活動的名稱。
    * 要使用的定位引擎。 預設會選取ContextHub(AEM)。 如果您需要使用Adobe Target，請在目標內容編輯器中建立活動。
-   * 如果您選取Adobe target做為定位引擎，請選取／編輯雲端設定，以用來連線至Adobe Target。 （請注意，您不要選取您為雲端設定所建立的架構。）
+   * 如果您選取Adobe Target做為定位引擎，請選取／編輯雲端設定，以用來連線至Adobe Target。 （請注意，您不要選取您為雲端設定所建立的架構。）
    * （可選）活動的目標或說明。
    * 選擇活動類型。
 
@@ -111,6 +114,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下或點選**選取對象**，然後選取您的體驗目標群體。
    1. 按一下或點選「 **新增體驗**」，輸入名稱，然後按一下或點選「 **確定」**。
    1. 按一下或點選「 **下一步**」。
+
    如果您使用Adobe Target A/B測試：
 
    1. 按一下或點選「觀眾」方塊中的鉛筆，以選取觀眾。
@@ -121,16 +125,16 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 若要指定活動何時啟動，請使用「 **開始** 」下拉式功能表來選取下列值之一：
 
-   * **** 啟動時：活動會在包含目標內容的頁面被啟用時開始。
-   * **** 指定的日期和時間：特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定啟動活動的時間。
+   * **啟動時：** 活動會在包含目標內容的頁面被啟用時開始。
+   * **指定的日期和時間：** 特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定啟動活動的時間。
 
 1. 要指定活動何時結束，請使用「結束」下拉菜單選擇以下值之一：
 
-   * **停用時**:當包含目標內容的頁面停用時，活動便會結束。
-   * **指定的日期和時間**:特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定結束活動的時間。
+   * **停用時**: 當包含目標內容的頁面停用時，活動便會結束。
+   * **指定的日期和時間**: 特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定結束活動的時間。
 
 1. 要指定活動的優先順序，請使用滑塊選擇「低 **」**、「 **正常**」或「 **高」**。
-1. 如果您使用Adobe target做為定位引擎，請選取您要使用此活動來測量的項目。 如需 [可用成功度量的詳細資訊](/help/sites-authoring/content-targeting-touch.md) ，請參閱設定活動和設定目標。 您必須至少選擇一個目標。
+1. 如果您使用Adobe Target做為定位引擎，請選取您要使用此活動來測量的項目。 如需 [可用成功度量的詳細資訊](/help/sites-authoring/content-targeting-touch.md) ，請參閱設定活動和設定目標。 您必須至少選擇一個目標。
 1. 按一下或點選「 **儲存**」。
 
    >[!NOTE]
@@ -143,7 +147,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->取消發佈活動時，
+>取消發佈活動時，除非重新整理頁面，否則活動的狀態不會變更。
 
 若要發佈或取消發佈活動：
 
@@ -156,7 +160,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 作者與發佈例項的活動 {#activities-on-author-and-publish-instances}
 
-啟用使用Adobe target目標引擎的活動時，會在發佈例項上建立第二個活動：
+啟用使用Adobe Target目標引擎的活動時，會在發佈例項上建立第二個活動：
 
 * 作者例項上的活動會追蹤作者例項上的活動，對於模擬訪客體驗非常有用。 針對此活動記錄的分析只反映作者例項的發生。
 * 發佈實例上的活動反映並響應發佈伺服器上的活動。 這是在公共網站上執行的活動。 只有發佈活動與追蹤和分析實際公開網站的使用情況相關。
@@ -179,6 +183,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 它會停用目前的活動
    * 修改所有頁面，並以成功體驗的實際內容取代目標內容。 成功體驗的內容會成為正常頁面的一部分，而無 **目標** 。
+
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
    成功體驗是指根據轉換率在報表中產生更多提升度的體驗。
@@ -195,7 +200,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 這些條件適用於作者和發佈例項的活動。
 
-同步活動時，Adobe target會建立對應的促銷活動：
+同步活動時，Adobe Target會建立對應的促銷活動：
 
 * 發佈例項上的活動與對應的Adobe Target促銷活動具有相同名稱。
 * 作者例項上的活動會與名稱相同且加上尾碼的Target促銷 `_author` 活動。
@@ -208,7 +213,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 活動同步疑難排解 {#troubleshooting-activity-synchronization}
 
-當AEM與Adobe Target同步活動時，AEM會包含名為的活動屬性 `thirdPartyId`。 此屬性的值以AEM儲存庫中活動的路徑為基礎。 Adobe target中沒有兩個促銷活動可以具有相同的屬性 `thirdPartyId` 值。 因此，如果Adobe Target中的現有促銷活動（AB,XT類型不同）使用相同的值，則無法同步活動 `thirdPartyId`。
+當AEM與Adobe Target同步活動時，AEM會包含名為的活動屬性 `thirdPartyId`。 此屬性的值以AEM儲存庫中活動的路徑為基礎。 Adobe Target中沒有兩個促銷活動可以具有相同的屬性 `thirdPartyId` 值。 因此，如果Adobe Target中的現有促銷活動（AB,XT類型不同）使用相同的值，則無法同步活動 `thirdPartyId`。
 
 這種情況可能發生在以下情況下：
 
@@ -224,7 +229,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->當您在Adobe target中建立促銷活動時，會指派一個名為每個促銷活動 `thirdPartyId t`的屬性。 當您在Adobe target中刪除促銷活動時， `thirdPartyId` 不會刪除。 您無法針對不同類 `thirdPartyId` 型(AB、XT)的促銷活動重新使用，且無法手動移除。 為避免此問題，請為每個促銷活動命名一個唯一的名稱；因此，促銷活動名稱無法重複用於不同的促銷活動類型。
+>當您在Adobe Target中建立促銷活動時，會指派一個名為每個促銷活動 `thirdPartyId t`的屬性。 當您在Adobe Target中刪除促銷活動時， `thirdPartyId` 不會刪除。 您無法針對不同類 `thirdPartyId` 型(AB、XT)的促銷活動重新使用，且無法手動移除。 為避免此問題，請為每個促銷活動命名一個唯一的名稱； 因此，促銷活動名稱無法重複用於不同的促銷活動類型。
 >
 >如果您在相同的促銷活動類型中使用相同的名稱，您將會覆寫現有的促銷活動。
 >
