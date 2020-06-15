@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -104,6 +104,7 @@ SPA的頁面元件不會透過JSP或HTL檔案提供其子元件的HTML元素。 
 >* SPA總是負責其展示。
 >* SPA編輯器與SPA本身隔離。
 >* 在生產（發佈）中，SPA編輯器從未載入。
+
 >
 
 
@@ -194,8 +195,8 @@ SPA的頁面元件不會透過JSP或HTL檔案提供其子元件的HTML元素。 
 
 SPA編輯器SDK支援下列最低版本：
 
-* React 16.3
-* 角度6.x
+* React 16.x和更高版本
+* 6.x和更高角度
 
 這些架構的舊版可能與AEM SPA Editor SDK搭配使用，但不受支援。
 
