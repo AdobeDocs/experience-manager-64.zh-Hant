@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 2dbe18c1-8d79-4685-911b-3c6fe87d7e2c
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bb200d5361b8927c37683ec1cc0534d1d99176c7
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,9 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 ## 教學課程 {#tutorials}
 
-如需建立單頁應用程式的端對端範例，其中AEM可從透過應用程式路由的專案設定開始進行編輯，請參閱 [Getting Started with the AEM SPA Editor - WKND Events Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)。 React和Angular架構的教學課程有各種版本。
+如需建立您自己的單頁應用程式的端對端範例（可透過應用程式路由從專案設定開始，AEM進行編輯），請參閱WKND SPA教學課程：
+
+* [AEM SPA編輯器和Angular快速入門](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [AEM SPA編輯器快速入門與回應](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
 不過，在您開始自己的AEM SPA專案之前，請務必先檢閱AEM的 [Developing SPA](/help/sites-developing/spa-architecture.md) 檔案。
-
