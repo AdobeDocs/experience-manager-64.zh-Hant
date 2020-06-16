@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2792'
+ht-degree: 3%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 ## 概覽 {#overview}
 
-Adobe Analytics和Adobe Experience Manager(AEM)都是Adobe Marketing cloud的解決方案。
+Adobe Analytics和Adobe Experience Manager(AEM)都是Adobe Marketing Cloud的解決方案。
 
 Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援的「社群」功能互動時，事件就會傳送至產生報表的Adobe Analytics。
 
@@ -85,9 +88,9 @@ Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援�
 
 ## 適用於視訊報告的Adobe Analytics報表套裝 {#adobe-analytics-report-suite-for-video-reporting}
 
-使用Adobe Marketing cloud的「報表套裝管 [理員」](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)，可以設定Analytics報表套裝，讓社群網站能夠提供社群功能的報表。
+使用Adobe Marketing Cloud的「報表套裝管 [理員」](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)，可以設定Analytics報表套裝，讓社群網站能夠提供社群功能的報表。
 
-透過使用公 [司名稱和使用者名稱登入Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html)[](analytics.md#prerequisites)，您就可以設定新的或現有的報表套裝：
+透過「公司名 [稱」和「使用者名稱」登入](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) Adobe Marketing Cloud [](analytics.md#prerequisites)，您可以設定新的或現有的報表套裝，以便：
 
 * [11轉換變數](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) (evar)
 
@@ -151,11 +154,11 @@ Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援�
 
 若未啟用，則不會執行個體化視訊心率程式碼，且只會將視訊進度和繼續位置追蹤持續保存至SRP以進行報告。
 
-## AEM Analytics cloud服務設定 {#aem-analytics-cloud-service-configuration}
+## AEM Analytics Cloud服務設定 {#aem-analytics-cloud-service-configuration}
 
 若要建立新的Analytics整合，並使用作者例項上的標準UI，將Adobe Analytics與AEM社群網站整合：
 
-* 從全域導覽：工 **[!UICONTROL 具>部署>雲端服務]**
+* 從全域導覽： **[!UICONTROL 工具>部署>雲端服務]**
 * 向下捲動至 **[!UICONTROL Adobe Analytics]**
 * 選擇「 **[!UICONTROL 立即配置]** 」或 **[!UICONTROL 「顯示配置」]**
 
@@ -298,7 +301,7 @@ Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援�
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-Analytic雲端服務與架構現已完成。 在啟用此Analytics服務後建立社群網站後，將會定義對應。
+Analytic雲端服務與架構現已完成。 在啟用此Analytics服務後，社群網站建立後，即會定義映射。
 
 ## 啟用社群網站的Analytics {#enable-analytics-for-a-community-site}
 
@@ -372,7 +375,7 @@ Analytics會自動用於數個Communities功能。
 
 ![chlimage_1-273](assets/chlimage_1-273.png)
 
-注意：元 `journal` 件用於實作部落格功能。
+注意： 元 `journal` 件用於實作部落格功能。
 
 ### 將Analytics對應至AEM變數 {#mapped-analytics-to-aem-variables}
 
@@ -399,16 +402,16 @@ Analytics會自動用於數個Communities功能。
 
 **eVar值的範例：**
 
-* [MIME類型](https://www.iana.org/assignments/media-types):video/mp4
-* [社群網站標題](sites-console.md#step13asitetemplate):Geometrixx Communities
-* [社群函式名稱](functions.md):論壇
-* [社群群組名稱](creating-groups.md#creating-a-new-group):遠足
-* 社群群組內容的路徑：/content/sites/communities/tw/groups/hiking
-* [UGC元件resourceType](essentials.md):social/forum/components/hbs/topic
-* UGC元件標題：遠足主題
-* 登入（可授權的Id）:aaron.mcdonald@mailinator.com
-* SRP到UGC的路徑：/content/usergenerated/asi/.../forum/jmtz-topic3或元 *件的路徑*:/content/sites/communities/tw/jcr:content/content/primary/forum
-* 社群網站內容的路徑：/content/sites/community/tw
+* [MIME類型](https://www.iana.org/assignments/media-types): video/mp4
+* [社群網站標題](sites-console.md#step13asitetemplate): Geometrixx Communities
+* [社群函式名稱](functions.md): 論壇
+* [社群群組名稱](creating-groups.md#creating-a-new-group): 遠足
+* 社群群組內容的路徑： /content/sites/communities/tw/groups/hiking
+* [UGC元件resourceType](essentials.md): social/forum/components/hbs/topic
+* UGC元件標題： 遠足主題
+* 登入（可授權的Id）: aaron.mcdonald@mailinator.com
+* SRP到UGC的路徑： /content/usergenerated/asi/.../forum/jmtz-topic3或元 *件的路徑*: /content/sites/communities/tw/jcr:content/content/primary/forum
+* 社群網站內容的路徑： /content/sites/community/tw
 
 ### 修改Analytics變數對應 {#modifying-analytics-variable-mapping}
 
@@ -416,7 +419,7 @@ Analytics會自動用於數個Communities功能。
 
 啟用Analytics後，在社群網站發佈之前，從左側導軌拖曳所需的Analytics evar或事件並拖曳至對應表格的相關列，即可在架構中變更對應。
 
-若要避免重複映射，請務必將已取代的Analytics evar或事件暫留在行上，並選取顯示在Analytics變數元素右側的&quot;X&quot;，以便從行中移除。
+若要避免重複映射，請務必將滑鼠指標暫留在行上並選取Analytics變數元素右側的「X」，以移除已取代的Analytics evar或事件。
 
 如果「社群」evar和事件覆寫報表套裝中預先存在的映射，則為避免資料遺失，請將「社群」功能的AEM變數指派給其他Analytics evar和／或事件，並還原原始映射。
 
@@ -424,15 +427,15 @@ Analytics會自動用於數個Communities功能。
 >
 >在啟用Analytics的情況下發佈社群網站前，請務必重 [新對應](#publishing-the-community-site) ，否則就有資料遺失的風險。
 
-#### 範例步驟1:將Analytics evar14拖曳至對應表格 {#example-step-dragging-analytics-evar-into-mapping-table}
+#### 範例步驟1: 將Analytics evar14拖曳至對應表格 {#example-step-dragging-analytics-evar-into-mapping-table}
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
-#### 範例步驟2:選取&#39;x&#39;以移除已取代的evar11 {#example-step-selecting-x-to-remove-replaced-evar}
+#### 範例步驟2: 選取&#39;x&#39;以移除已取代的evar11 {#example-step-selecting-x-to-remove-replaced-evar}
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-#### 範例步驟3:AEM var eventdata.siteId已重新映射至Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
+#### 範例步驟3: AEM var eventdata.siteId已重新映射至Analytics evar14 {#example-step-aem-var-eventdata-siteid-remapped-to-analytics-evar}
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
@@ -475,11 +478,11 @@ Analytics會自動用於數個Communities功能。
 
 ### 複製加密密鑰 {#replicate-the-crypto-key}
 
-Adobe Analytics認證會加密。 若要協助作者和發佈者之間複製或傳輸加密的分析憑證，所有AEM例項都必須共用相同的主加密金鑰。
+Adobe Analytics認證會加密。 若要協助作者和發佈者之間複製或傳輸加密的分析憑證，所有AEM例項都必須共用相同的主要加密金鑰。
 
 要執行此操作，請按照複製加密密 [鑰中的說明操作](deploy-communities.md#replicate-the-crypto-key)。
 
-### 發佈社群網站和Analytics cloud服務 {#publish-community-site-and-analytics-cloud-service}
+### 發佈社群網站和Analytics Cloud服務 {#publish-community-site-and-analytics-cloud-service}
 
 在社群網站啟用Analytics雲端服務後，並視需要調整Analytics與 [AEM變數的對應](#mapped-analytics-to-aem-variables)，就必須透過 [（重新）發佈社群網站，將設定複製至發佈環境](sites-console.md#publishing-the-site)。
 
@@ -548,5 +551,5 @@ Adobe Analytics提供可讓您存取、匯出和刪除使用者資料的API。 �
 
 * Adobe Marketing Cloud: [Analytics說明與參考](https://marketing.adobe.com/resources/help/en_US/reference/)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
-* AEM:Analytics與外 [部提供者](../../help/sites-administering/external-providers.md)
+* AEM: [Analytics與外部提供者](../../help/sites-administering/external-providers.md)
 
