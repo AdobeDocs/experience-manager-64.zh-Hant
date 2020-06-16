@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2139'
+ht-degree: 0%
 
 ---
 
@@ -73,6 +76,7 @@ source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
          * UGC從未複製
          * UGC僅可在輸入AEM例項或叢集上顯示
       * 預設值為JSRP
+
    針對啟 **[用功能](overview.md#enablement-community)**
 
    * [安裝和配置FFmpeg](ffmpeg.md)
@@ -85,7 +89,7 @@ source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 
 
 
-## 最新版本 {#latest-releases}
+## Latest Releases {#latest-releases}
 
 AEM 6.4 Communities GA隨附Communities套件。 若要瞭解AEM 6.4 [Communities的更新](/help/release-notes/release-notes.md#experience-manager-communities)，請 [參閱AEM 6.4發行說明](/help/release-notes/release-notes.md#release-information)。
 
@@ -103,8 +107,8 @@ AEM 6.4 Communities GA隨附Communities套件。 若要瞭解AEM 6.4 [Communitie
 
 兩個社區功能使用MySQL資料庫：
 
-* 若要 [啟用](enablement.md):錄制SCORM活動和學員
-* 針對 [DSRP](dsrp.md):儲存使用者產生的內容(UGC)
+* 若要 [啟用](enablement.md): 錄制SCORM活動和學員
+* 針對 [DSRP](dsrp.md): 儲存使用者產生的內容(UGC)
 
 MySQL連接器必須單獨獲得和安裝。
 
@@ -120,7 +124,7 @@ MySQL連接器必須單獨獲得和安裝。
 
    * 例如，http://localhost:4502/system/console/bundles
    * 選取 **`Install/Update`**
-   * 瀏覽……若要選取從下載的ZIP封存解壓縮的套件
+   * 瀏覽…… 若要選取從下載的ZIP封存解壓縮的套件
    * 檢查 *Oracle Corporation的MySQLcom.mysql.jdbc* JDBC驅動程式是否處於活動狀態，如果沒有，則啟動它（或檢查日誌）
 
 1. 如果在配置JDBC後在現有部署上安裝，則通過從Web控制台中保存JDBC配置，將JDBC重新綁定到新連接器：
@@ -134,7 +138,7 @@ MySQL連接器必須單獨獲得和安裝。
 
 有關安裝捆綁的詳細資訊，請參閱「 [Web控制台](/help/sites-deploying/web-console.md#bundles) 」頁。
 
-#### 範例：已安裝MySQL連接器包 {#example-installed-mysql-connector-bundle}
+#### 範例： 已安裝MySQL連接器包 {#example-installed-mysql-connector-bundle}
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
@@ -227,9 +231,9 @@ AEM Communities SCORM引擎是啟用功能的必 [要](overview.md#enablement-co
 
 通用商店支援在發佈環境中協調和分析UGC，同時不需要復 [制](sync.md) UGC。
 
-* [社群內容商店](working-with-srp.md):討論AEM社群的SRP儲存選項
+* [社群內容商店](working-with-srp.md): 討論AEM社群的SRP儲存選項
 
-* [建議的拓撲](topologies.md):根據使用案例和SRP選擇討論要使用的拓撲
+* [建議的拓撲](topologies.md): 根據使用案例和SRP選擇討論要使用的拓撲
 
 ## 升級 {#upgrading}
 
@@ -273,7 +277,7 @@ AEM Communities SCORM引擎是啟用功能的必 [要](overview.md#enablement-co
 
 * 在作者上訪問複製控制台
 
-   * 從全域導覽：「工 **[!UICONTROL 具>部署>複製>作者代理」]**
+   * 從全域導覽： **[!UICONTROL 工具>部署>複製>作者代理]**
 
 * 對於兩個代理，請遵循相同的流程：
 
@@ -342,7 +346,7 @@ AEM Communities有兩項功能，需要所有AEM伺服器執行個體使用相�
       例如，
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * 複製hmac和主檔案
+   * 複製hmac和主節點檔案
 
 
 
@@ -359,7 +363,7 @@ AEM Communities有兩項功能，需要所有AEM伺服器執行個體使用相�
 
 >[!CAUTION]
 >
->如果已經配置了基於加密密鑰的其他安全功能，則複製加密密鑰可能會損壞配置。 如需協助，請 [聯絡客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
+>如果已經配置了基於加密密鑰的其他安全功能，則複製加密密鑰可能會損壞配置。 如需協助，請 [聯絡客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
 
 #### 儲存庫複製 {#repository-replication}
 
