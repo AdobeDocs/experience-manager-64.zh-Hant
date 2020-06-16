@@ -1,6 +1,6 @@
 ---
-title: ASRP - adobe儲存資源供應商
-seo-title: ASRP - adobe儲存資源供應商
+title: ASRP - Adobe儲存資源供應商
+seo-title: ASRP - Adobe儲存資源供應商
 description: 設定AEM Communities，以使用關聯式資料庫做為其公用儲存
 seo-description: 設定AEM Communities，以使用關聯式資料庫做為其公用儲存
 uuid: 29826b44-633d-4586-8553-cd87ebe269a2
@@ -10,12 +10,15 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
 translation-type: tm+mt
-source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 2%
 
 ---
 
 
-# ASRP - adobe儲存資源供應商 {#asrp-adobe-storage-resource-provider}
+# ASRP - Adobe儲存資源供應商 {#asrp-adobe-storage-resource-provider}
 
 ## 關於ASRP {#about-asrp}
 
@@ -44,7 +47,7 @@ source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
 
 **作者**:
 
-* 從全域導覽：「工 **[!UICONTROL 具>社群>儲存設定」]**
+* 從全域導覽： **[!UICONTROL 「工具>社群>儲存組態」]**
 
 ![chlimage_1-310](assets/chlimage_1-310.png)
 
@@ -82,7 +85,7 @@ source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
 
 ### 複製加密密鑰 {#replicate-the-crypto-key}
 
-消費者金鑰和機密金鑰會加密。 為了正確加密／解密密鑰，主Granite Crypto密鑰在所有AEM實例上必須相同。
+消費者金鑰和機密金鑰會加密。 為了正確加密／解密密鑰，所有AEM實例上的主Granite Crypto密鑰必須相同。
 
 按照複製加密密 [鑰中的說明操作](deploy-communities.md#replicate-the-crypto-key)。
 
