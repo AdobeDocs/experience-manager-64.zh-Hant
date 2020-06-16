@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '1202'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +55,7 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 在作者中，要訪問儲存配置控制台：
 
-* 從全域導覽：「工 **[!UICONTROL 具>社群>儲存設定」]**
+* 從全域導覽： **[!UICONTROL 「工具>社群>儲存組態」]**
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -61,19 +64,19 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
    * **[!UICONTROL mongoDB URI]**
 
-      *預設*:mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+      *預設*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
    * **[!UICONTROL mongoDB 資料庫]**
 
-      *預設*:社區
+      *預設*: 社區
 
    * **[!UICONTROL mongoDB UGC 集合]**
 
-      *預設*:內容
+      *預設*: 內容
 
    * **[!UICONTROL mongoDB 附件集合]**
 
-      *預設*:附件
+      *預設*: 附件
 
 * **[!UICONTROL SolrConfiguration]**
 
@@ -82,10 +85,12 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
       在 [SolrCloud模式下與外部ZooKeeper一起執行時，將此值設為](solr.md#solrcloud-mode) ZooKeeper的值，例如 `HOST:PORT` my.server.com:2181 *For a ZooKeeper Ensemble，輸入逗號分隔*&#x200B;值，例如 `HOST:PORT`** host1:2181,host2:2181如果使用內部ZooKeeper以獨立模式運行Solr，請將其留空。\
       *預設值*: *&lt;blank>*
    * **[!UICONTROL Solr URL]**在獨立模式下與Solr通訊的URL。
-如果在SolrCloud模式中執行，請留空。\
-      *預設值*:https://127.0.0.1:8983/solr/
-   * **[!UICONTROL Solr系列]** Solr系列名稱。\
-      *預設值*:collection1
+如果在SolrCloud模式中執行，請留空。
+\
+      *預設值*: https://127.0.0.1:8983/solr/
+   * **[!UICONTROL Solr系列]** Solr系列名稱。
+\
+      *預設值*: collection1
 * 選擇「提 **[!UICONTROL 交」]**
 
 >[!NOTE]
@@ -94,13 +99,13 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ### MongoDB複製副本集 {#mongodb-replica-set}
 
-對於生產環境，強烈建議設定複製副本集，即實施主從複製和自動故障切換的MongoDB伺服器群集。
+對於生產環境，強烈建議設定複製副本集，即實施主次複製和自動故障切換的MongoDB伺服器群集。
 
 要瞭解有關複製副本集的更多資訊，請訪問MongoDB的 [Replication](https://docs.mongodb.org/manual/replication/) 文檔。
 
 要使用複製副本集並瞭解如何定義應用程式與MongoDB實例之間的連接，請訪問MongoDB的 [Connection String URI格式文檔](https://docs.mongodb.org/manual/reference/connection-string/) 。
 
-#### 用於連接到複製副本集的示例Url {#example-url-for-connecting-to-a-replica-set}
+#### 用於連接到複製副本集的示例Url  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -116,7 +121,7 @@ Solr安裝可以通過使用不同的集合在節點儲存(Oak)和公共儲存(M
 
 如果Oak和MSRP系列都已大量使用，則可能會因效能原因安裝第二個Solr。
 
-對於生產環境， [SolrCloud模式比獨立模式](solr.md#solrcloud-mode) （單一本機Solr設定）提供更佳的效能。
+對於生產環境， [SolrCloud模式比獨立模式](solr.md#solrcloud-mode) （單一本機Solr設定）提供了更佳的效能。
 
 有關配置詳細資訊，請 [參閱SRP的Solr配置](solr.md)。
 
@@ -154,7 +159,7 @@ MSRP必須被識別為所有作者和發佈例項上的公用商店。
 
 在安裝新配置檔案或修復損壞的Solr索引時，有一個HTTP端點用於為MSRP的Solr重新編製索引。
 
-MongoDB是MSRP的真 *相* ;只需對MongoDB執行備份。
+MongoDB是MSRP的真 *相* ; 只需對MongoDB執行備份。
 
 整個UGC樹可以重新編製索引，或僅對*path *data參數指定的特定子樹進行索引。
 
@@ -176,7 +181,7 @@ MongoDB是MSRP的真 *相* ;只需對MongoDB執行備份。
 cURL -u *簽名* -d *data**reindex-url*
 
 *signin* = administrator-id:password\
-例如：admin:admin
+例如： admin:admin
 
 *data* = &quot;batchSize=*size*&amp;path=*path&quot;*
 
@@ -233,7 +238,7 @@ GitHub上提供開放原始碼工具，可用於：
 
 如果日誌中出現以下錯誤，表示Solr架構檔案配置不正確。
 
-#### JsonMappingException:未定義的欄位provider_id {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException: 未定義的欄位provider_id {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
