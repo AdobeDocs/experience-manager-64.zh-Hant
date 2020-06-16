@@ -3,7 +3,7 @@ title: XMP回寫至轉譯
 description: 瞭解XMP回寫功能如何將資產的中繼資料變更傳播至資產的所有或特定轉譯。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b7180dcc7b50dca1c101a3fd28e031ef8e08f37f
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 3%
@@ -90,12 +90,12 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. 從中開啟配置管 `https://[aem_server]:[port]/system/console/configMgr`理器。
 1. 開啟 **[!UICONTROL Adobe CQ DAM XmpFilter組態]** 。
-1. To apply filtering via an allowed list, select **[!UICONTROL Apply Whitelist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Whitelisted XML Names for XMP filtering]** box.
+1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. To filter out blocked XMP properties after applying filtering via allowed list, specify those in the **[!UICONTROL Blacklisted XML Names for XMP filtering]** box. 儲存變更。
+1. 若要在透過允許的清單套用篩選後篩選已封鎖的XMP屬性，請在「XMP篩選的封鎖的XML **[!UICONTROL 名稱」方塊中指定]** 。 儲存變更。
 
    >[!NOTE]
    >
-   >預設 **[!UICONTROL 情況下，「將黑名單應用於XMP屬性]** 」選項處於選中狀態。 換言之，預設會啟用使用封鎖清單進行篩選。 要禁用此類篩選，請取消選 **[!UICONTROL 擇「將黑名單應用於XMP屬性]** 」選項。
+   >預設 **[!UICONTROL 情況下，「將塊清單應用到XMP屬性]** 」選項處於選中狀態。 換言之，預設會啟用使用封鎖清單進行篩選。 要禁用此類過濾，請取消選 **[!UICONTROL 擇「將塊清單應用到XMP屬性]** 」選項。
