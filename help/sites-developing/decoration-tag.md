@@ -2,7 +2,7 @@
 title: 裝飾標籤
 description: 當轉譯網頁中的元件時，可產生HTML元素，並將轉譯的元件包裝在其中。 對於開發人員，AEM提供清晰簡單的邏輯，來控制包含元件的裝飾標籤。
 translation-type: tm+mt
-source-git-commit: 440a514fa1b0b5d685fe7717caf40400e5288e02
+source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# 裝飾標籤{#decoration-tag}
+# 裝飾標籤 {#decoration-tag}
 
 當轉譯網頁中的元件時，可產生HTML元素，並將轉譯的元件包裝在其中。 這主要有兩個目的：
 
@@ -38,9 +38,7 @@ ht-degree: 0%
 下列屬性和節點可套用至元件，以控制其裝飾標籤的行為：
 
 * **`cq:noDecoration {boolean}`:**此屬性可新增至元件，而true值會強制AEM不在元件上產生任何包裝函式元素。
-
 * **`cq:htmlTag`節點：**此節點可以添加到元件下，並具有以下屬性：
-
    * **`cq:tagName {String}`:**這可用來指定自訂HTML標籤，以用於封裝元件，而非預設DIV元素。
    * **`class {String}`:**這可用來指定要新增至包裝函式的css類別名稱。
    * 其他屬性名稱將會新增為HTML屬性，其字串值與提供的相同。
