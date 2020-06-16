@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2885'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
 
 ## 概覽 {#overview}
 
-AEM Communities計分和標章功能提供識別和獎勵社群成員的能力。
+AEM Communities評分和標章功能提供識別和獎勵社群成員的能力。
 
 評分和徽章的主要方面是：
 
@@ -147,7 +150,7 @@ Communities [Badges控制台](badges.md) （Communities Badges控制台）提供
 
 布爾屬性 `allowBadges`啟用／禁用元件實例的標誌顯示。 它可在論壇、QnA的組 [件編輯對話框中配置](author-communities.md) ，並通過標有「顯示標章」的複選框對元件 **進行注釋**。
 
-#### 範例：「論壇」元件實例的allowBadges {#example-allowbadges-for-forum-component-instance}
+#### 範例： 「論壇」元件實例的allowBadges {#example-allowbadges-for-forum-component-instance}
 
 ![chlimage_1-368](assets/chlimage_1-368.png)
 
@@ -178,9 +181,9 @@ Communities [Badges控制台](badges.md) （Communities Badges控制台）提供
 
 >[!NOTE]
 >
->最佳實務：為每個計分規則指定唯一名稱。
+>最佳實務： 為每個計分規則指定唯一名稱。
 >
->計分規則名稱應全局唯一；他們不應以同名結尾。
+>計分規則名稱應全局唯一； 他們不應以同名結尾。
 >
 >不要做 *的* 範例：\
 >/etc/community/scoring/rules/site1/forums-scoring\
@@ -219,7 +222,7 @@ Communities [Badges控制台](badges.md) （Communities Badges控制台）提供
    <td>長整數</td> 
    <td> 
     <ul> 
-     <li>必要；動詞與事件動作相對應</li> 
+     <li>必要； 動詞與事件動作相對應</li> 
      <li>至少有一個動詞屬性</li> 
      <li>動詞必須輸入全部大寫</li> 
      <li>有多個動詞屬性，但沒有重複</li> 
@@ -233,8 +236,8 @@ Communities [Badges控制台](badges.md) （Communities Badges控制台）提供
    <td>String[]</td> 
    <td> 
     <ul> 
-     <li>可選；將子規則限制為由事件主題標識的社區元件</li> 
-     <li>如果已指定，則：值是事件主題的多值字串</li> 
+     <li>可選； 將子規則限制為由事件主題標識的社區元件</li> 
+     <li>如果已指定，則： 值是事件主題的多值字串</li> 
      <li>發行中的主題清單位於「主題和動 <a href="#topics-and-verbs">詞」部分</a></li> 
      <li>default is to apply to all topics associated with verb(s)</li> 
     </ul> </td> 
@@ -244,7 +247,7 @@ Communities [Badges控制台](badges.md) （Communities Badges控制台）提供
    <td>布林值 (Boolean)</td> 
    <td> 
     <ul> 
-     <li>可選；與會員根據其擁有的內容行事無關</li> 
+     <li>可選； 與會員根據其擁有的內容行事無關</li> 
      <li>若為真，則對所處理內容的擁有者套用分數</li> 
      <li>如果為false，請將分數套用至執行動作的成員</li> 
      <li>default is false</li> 
@@ -255,7 +258,7 @@ Communities [Badges控制台](badges.md) （Communities Badges控制台）提供
    <td>字串</td> 
    <td> 
     <ul> 
-     <li>可選；識別計分引擎</li> 
+     <li>可選； 識別計分引擎</li> 
      <li>如果為"basic"，則根據數量指定計分引擎 
       <ul> 
        <li>包含在發行中</li> 
@@ -342,7 +345,7 @@ Communities [Badges控制台](badges.md) （Communities Badges控制台）提供
 
 >[!NOTE]
 >
->最佳實務：建立每個AEM網站專屬的徽章影像。
+>最佳實務： 建立每個AEM網站專屬的徽章影像。
 
 ![chlimage_1-369](assets/chlimage_1-369.png)
 
@@ -361,7 +364,7 @@ Communities [Badges控制台](badges.md) （Communities Badges控制台）提供
      <li>數字=分數</li> 
      <li>| =垂直線字元(U+007C)</li> 
      <li>路徑=標籤映像資源的完整路徑</li> 
-    </ul> 字串必須依序排列，如此數字值就會增加，數字和路徑之間不應出現空格。<br /><br /> 範例項目： <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
+    </ul> 字串必須依序排列，如此數字值就會增加，數字和路徑之間不應出現空白空格。<br /> 範例項目：<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
   </tr> 
   <tr> 
    <td>badgingType</td> 
@@ -407,17 +410,17 @@ cURL -i -X POST -H標 *題* -u *signin * -F *操作* -F *badge * *member-profile
 要傳遞至伺服器的自訂標題（必要）
 
 *signin* = administrator-id:password\
-例如：admin:admin
+例如： admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OR &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
 *badge-image-file* = badge映像檔案在儲存庫中的位置\
-例如：/etc/community/badging/images/coldrator/jcr/content/moderator.png
+例如： /etc/community/badging/images/coldrator/jcr/content/moderator.png
 
 *member-profile-url* =發佈時成員描述檔的端點\
-例如：https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+例如： https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -429,7 +432,7 @@ cURL -i -X POST -H標 *題* -u *signin * -F *操作* -F *badge * *member-profile
 
 
 
-### 範例： {#examples}
+### Examples: {#examples}
 
 #### 指派協調者徽章 {#assign-a-moderator-badge}
 
@@ -556,7 +559,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 對於自訂元件，會執行個體化SocialEvent，以記錄元件的事 `actions`件為發生 `topic`。
 
-若要支援計分，SocialEvent需要覆寫方法， `getVerb()` 以便針對每 `verb`個方法傳回適當 `action`。 針 `verb` 對動作傳回的可能是常用(例如 `POST`)或專用於元件(例如 `ADD RATING`)。 和之 *間有* n- `actions`1關係 `verbs`。
+若要支援計分，SocialEvent必須覆寫方法， `getVerb()` 以針對每個方 `verb`法傳回適當的 `action`。 針 `verb` 對動作傳回的可能是常用(例如 `POST`)或專用於元件(例如 `ADD RATING`)。 和之 *間有* n- `actions`1關係 `verbs`。
 
 ## 疑難排解 {#troubleshooting}
 
@@ -633,11 +636,11 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 最後，
 
 * 瀏覽至發佈例項上的元件
-* 以社群成員身分登入(例如：weston.mccall@dodgit.com /密碼)
+* 以社群成員身分登入(例如： weston.mccall@dodgit.com /密碼)
 * 張貼新論壇主題
 * 頁面必須重新整理，才能顯示徽章
 
-   * 註銷並作為不同的社區成員登錄(例如：aaron.mcdonald@mailinator.com /密碼)
+   * 註銷並作為不同的社區成員登錄(例如： aaron.mcdonald@mailinator.com /密碼)
 
 * 選擇論壇
 
