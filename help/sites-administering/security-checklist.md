@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
 translation-type: tm+mt
-source-git-commit: 0e04ab8cd32dfdff47e333169c4f202e81a82fe3
+source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 0%
 
 ---
 
@@ -71,20 +74,20 @@ AEM管理員帳戶的密碼可透過 [Granite Operations - Users](/help/sites-ad
 >
 >變更管理員帳戶也會變更OSGi網頁主控台帳戶。 變更管理員帳戶後，您應將OSGi帳戶變更為其他項目。
 
-#### 更改OSGi web控制台密碼的重要性 {#importance-of-changing-the-osgi-web-console-password}
+#### 更改OSGi Web控制台密碼的重要性 {#importance-of-changing-the-osgi-web-console-password}
 
 除了AEM帳戶 `admin` 外，若無法變更OSGi網頁主控台密碼的預設密碼，可能會導致：
 
 * 在啟動和關閉期間使用預設密碼的伺服器曝光（大型伺服器可能需要幾分鐘的時間）;
 * 當儲存庫關閉／重新啟動綁定——且OSGI正在運行時，伺服器的暴露。
 
-有關更改Web控制台密碼的詳細資訊，請參 [閱下面的更改OSGi web控制台管理密碼](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) 。
+有關更改Web控制台密碼的詳細資訊，請參 [閱下面的更改OSGi Web控制台管理密碼](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) 。
 
 #### 變更OSGi網頁主控台管理密碼 {#changing-the-osgi-web-console-admin-password}
 
 您還必須更改用於訪問Web控制台的口令。 這是透過設定 [Apache Felix OSGi Management Console的下列屬性來完成](/help/sites-deploying/osgi-configuration-settings.md):
 
-**使用者名** 稱和密碼 ****，是存取Apache Felix Web Management console本身的認證。\
+**使用者名** 稱和密碼 ****，是存取Apache Felix Web Management Console本身的認證。\
 在初始安裝後必須更改密碼，以確保實例的安全性。
 
 要執行此操作：
@@ -162,15 +165,15 @@ AEM 6.1提供一種機制，可協助保護免受跨網站偽造要求攻擊，�
 
 #### The Sling Referrer Filter {#the-sling-referrer-filter}
 
-若要解決CRX webDAV和Apache Sling中跨網站要求偽造(CSRF)的已知安全性問題，您必須新增反向連結篩選器的設定，才能使用它。
+若要解決CRX WebDAV和Apache Sling中跨網站要求偽造(CSRF)的已知安全性問題，您必須新增反向連結篩選器的設定，才能使用它。
 
 反向連結篩選服務是一項OSGi服務，可讓您設定：
 
 * 哪些http方法應加以篩選
 * 是否允許空的反向連結標題
-* 以及除伺服器主機外還允許的伺服器的白名單。
+* 以及除伺服器主機外允許的伺服器清單。
 
-預設情況下，綁定到伺服器的localhost和當前主機名的所有變化都在白名單中。
+   預設情況下，綁定伺服器的localhost和當前主機名的所有變化都在清單中。
 
 若要設定反向連結篩選服務：
 
@@ -239,13 +242,13 @@ AEM 6.1提供一種機制，可協助保護免受跨網站偽造要求攻擊，�
 
 如需詳細資訊，請參 [閱OSGi組態設定](/help/sites-deploying/osgi-configuration-settings.md)。
 
-使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+使用AEM時，有幾種方法可管理此類服務的組態設定； 如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
 ## 進一步閱讀 {#further-readings}
 
 ### 緩解拒絕服務(DoS)攻擊 {#mitigate-denial-of-service-dos-attacks}
 
-拒絕服務(DoS)攻擊是企圖使電腦資源對其預定用戶不可用。 這通常是通過超載資源實現的；例如：
+拒絕服務(DoS)攻擊是企圖使電腦資源對其預定用戶不可用。 這通常是通過超載資源實現的； 例如：
 
 * 來自外部來源的大量請求。
 * 系統無法成功傳遞更多資訊。
@@ -278,7 +281,7 @@ Sling是以 *內容為中心*。 這表示處理會以JCR資源（儲存庫節�
 
 為協助防止誤用DoS，您可以：
 
-1. 在應用程式層級整合控制項；由於可能的變化數量，預設配置不可行。
+1. 在應用程式層級整合控制項； 由於可能的變化數量，預設配置不可行。
 
    在您的應用程式中，您應：
 
@@ -297,7 +300,7 @@ Sling是以 *內容為中心*。 這表示處理會以JCR資源（儲存庫節�
 
       **JSON最大結果** ( `json.maximumresults`)
 
-      在 [Apache Sling GET servlet的設定中](/help/sites-deploying/osgi-configuration-settings.md)。 超過此限制時，演算將會收合。 AEM中Sling的預設值為 `200`。
+      在 [Apache Sling GET Servlet的設定中](/help/sites-deploying/osgi-configuration-settings.md)。 超過此限制時，演算將會收合。 AEM中Sling的預設值為 `200`。
 
    * 作為預防措施，可禁用其他預設渲染器（HTML、純文字檔案、XML）。 再次設定 [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md)。
    >[!CAUTION]
@@ -314,7 +317,7 @@ Sling是以 *內容為中心*。 這表示處理會以JCR資源（儲存庫節�
 >
 >此緩解措施僅應在未使用Forms的AEM環境上執行。
 
-由於AEM不會為提供立即可用的索引 `FormChooserServlet`，因此在查詢中使用表單選擇器會觸發代價昂貴的儲存庫周遊，通常會使AEM例項停止。 表單選擇器可通過存在 **&amp;ast;.form來檢測。** &amp;ast;字串。
+由於AEM不會為提供立即可用的索引 `FormChooserServlet`，因此在查詢中使用表單選擇器會觸發代價昂貴的儲存庫周遊，通常會使AEM例項停止。 表單選擇器可通過存在 **&amp;ast;.form來檢測。&amp;ast;** 字串。
 
 為減輕此問題，請遵循下列步驟：
 
