@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '820'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ ht-degree: 0%
 
 ### 設定Apache Sling Authentication Service {#configure-apache-sling-authentication-service}
 
-1. 前往https://[*server*]:[*port*]/system/console/configMgr on AEM Forms running on OSGi或
+1. 前往OSGi `https://[server]:[port]/system/console/configMgr` 或
 
-   https:// Server [**]:JEE上執&#x200B;[*行的AEM Forms上的port*]/lc/system/console/configMgr。
+   `https://[server]:[port]/lc/system/console/configMgr` 在JEE上執行的AEM Forms。
 
 1. 找到並按一 **下Apache Sling Authentication Service** configuration，以在編輯模式中開啟它。
 
@@ -60,8 +60,8 @@ ht-degree: 0%
 
 1. 以管理員身分登入AEM Web Console。
 
-   * OSGi上AEM Forms的URL是https://[server]:[port]/system/console/configMgr
-   * JEE上AEM Forms的URL是https://[*server*]:[*port*]/lc/system/console/configMgr
+   * OSGi上的AEM表格URL `https://[server]:[port]/system/console/configMgr`
+   * JEE上的AEM Forms URL is `https://[server]:[port]/lc/system/console/configMgr`
 
 1. 開啟 **[!UICONTROL 行動表單設定]** ，以進行編輯。
 1. 取消選取「 **[!UICONTROL 保護模式]** 」選項，然後按 **[!UICONTROL 一下「儲存]**」。
