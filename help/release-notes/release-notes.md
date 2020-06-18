@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '2746'
+ht-degree: 3%
 
 ---
 
@@ -46,13 +49,13 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 ### Trivia {#trivia}
 
-此版Adobe Experience manager的發行週期從2017年4月27日開始，經過22次品質保證和錯誤修正，並於2018年3月22日結束。 這一版發行中修正的客戶相關問題，包括加強與新功能，總共有 704 個。
+此版Adobe Experience Manager的發行週期從2017年4月27日開始，經過22次品質保證和錯誤修正，並於2018年3月22日結束。 這一版發行中修正的客戶相關問題，包括加強與新功能，總共有 704 個。
 
 Adobe Experience Manager 6.4自2018年4月4日起正式推出。
 
 >[!NOTE]
 >
->Adobe建議安裝最新的Service Pack，因為所有新功能套件都只能透過 [Service Pack提供](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)。
+>Adobe建議安裝最新的Service Pack，因為所有新功能套件都只能透過 [Service Pack提供](https://helpx.adobe.com/tw/experience-manager/maintenance-releases-roadmap.html)。
 
 ## 新功能 {#what-s-new}
 
@@ -64,7 +67,7 @@ Adobe Experience Manager 6.4是Adobe Experience Manager 6.3程式碼庫的升級
 
 [AEM Foundation變更的完整清單](wcm-platform.md)。
 
-Adobe Experience Manager 6.4平台以OSGi架構（Apache Sling和Apache Felix）的更新版本和Java Content Repository為基礎：Apache Jackrabbit Oak 1.8.2.
+Adobe Experience Manager 6.4平台以OSGi架構（Apache Sling和Apache Felix）的更新版本和Java Content Repository為基礎： Apache Jackrabbit Oak 1.8.2.
 
 快速入門使用Eclipse Jetty 9.3.22做為servlet引擎。
 
@@ -87,7 +90,7 @@ UI已做了各種增強功能，讓它更有生產力，也更容易使用。
 
 #### 內容儲存庫 {#content-repository}
 
-* 透過「線上修訂清除」更快速有效地壓縮。 內部測試顯示，與AEM 6.3相比，新的尾部壓縮速度提高了10倍，並且可以以更少的IOPS回收更多磁碟空間。這樣，在運行「線上修訂清除」時，對效能的影響會降低。 如需詳細資訊，請參 [閱說明檔案頁面](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes)。
+* 透過「線上修訂清除」更快速有效地壓縮。 內部測試顯示，與AEM 6.3相比，新的尾部壓縮速度提高了10倍，並且可以以更少的IOPS回收更多磁碟空間。 這樣，在運行「線上修訂清除」時，對效能的影響會降低。 如需詳細資訊，請參 [閱說明檔案頁面](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes)。
 
 * MongoMK的「連續修訂清除」取代計畫的清除維護
 * 改善檔案記錄檔的修訂清除效率
@@ -118,9 +121,9 @@ UI已做了各種增強功能，讓它更有生產力，也更容易使用。
 
 #### 從舊版升級 {#upgrade-from-earlier-version}
 
-* [向後相容性](/help/sites-deploying/backward-compatibility.md):6.4版中向後相容的功能可協助您的自訂程式碼在大多數情況下仍能相容，並降低升級工作量。
-* [升級複雜性評估](/help/sites-deploying/pattern-detector.md):全新的模式偵測器工具，可在您升級之前，先評估升級的複雜性。
-* [儲存庫重組](/help/sites-deploying/repository-restructuring.md):大幅重組（主要是/etc），以利更輕鬆的升級並促進實施最佳做法
+* [向後相容性](/help/sites-deploying/backward-compatibility.md): 6.4版中向後相容的功能可協助您的自訂程式碼在大多數情況下仍能相容，並降低升級工作量。
+* [升級複雜性評估](/help/sites-deploying/pattern-detector.md): 全新的模式偵測器工具，可在您升級之前，先評估升級的複雜性。
+* [儲存庫重組](/help/sites-deploying/repository-restructuring.md): 大幅重組（主要是/etc），以利更輕鬆的升級並促進實施最佳做法
 * 有關升級的更多一般資訊，請參閱 [本頁](/help/sites-deploying/upgrade.md) ，以取得詳細資訊。
 
 ### Experience Manager Sites {#experience-manager-sites}
@@ -147,13 +150,13 @@ Sling Model Exporter和Core Components的各種增強功能已包含在內，以
 
 AEM 6.4完成對新一代元件模型的轉換。 AEM 6.3中引進的核心元件概念現在已與樣式系統結合，提供建立新網站和擴充現有網站的有效方式。
 
-建議的教學課程，以瞭解如何最佳運用新元件模型：AEM [網站快速入門- WKND教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+建議的教學課程，以瞭解如何最佳運用新元件模型： [AEM Sites快速入門- WKND教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
 #### 畫面附加元件 {#screens-add-on}
 
-AEM Screens代表的是在所有行銷通道（包括數位標牌和資訊站網路）中傳遞一致的訊息。 AEM 6.4新增支援，可在Microsoft windows和Google Chrome OS硬體上執行Signage Player。 此外，還提供遠端裝置管理與排程（頻道群組）的增強功能。
+AEM Screens代表的是在所有行銷通道（包括數位標牌和資訊站網路）中傳遞一致的訊息。 AEM 6.4新增支援，可在Microsoft Windows和Google Chrome OS硬體上執行Signage Player。 此外，還提供遠端裝置管理與排程（頻道群組）的增強功能。
 
-如需「畫面」更新的詳細資訊，請參閱「 [AEM畫面使用指南」](/help/screens/home.md)。
+如需「畫面」更新的詳細資訊，請參閱「 [AEM畫面使用指南」](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)。
 
 ### Experience Manager Communities {#experience-manager-communities}
 
@@ -203,15 +206,15 @@ AEM 6.4為Assets提供多項新功能和增強功能，包括全新、改良的C
 
 **Adobe Asset Link**
 
-適用於企業的Creative cloud中的Adobe Asset Link可簡化創意人員與行銷人員在內容建立程式中的協作。 它是適用於企業的Creative cloud中新的原生功能，可將Photoshop CC、Illustrator CC和InDesign CC與AEM連接— 創意人員不必離開自己的選擇工具。
+適用於企業的Creative Cloud中的Adobe Asset Link可簡化創意人員與行銷人員在內容建立程式中的協作。 它是適用於企業的Creative Cloud中新的原生功能，可將Photoshop CC、Illustrator CC和InDesign CC與AEM連接— 創意人員不必離開自己的選擇工具。
 
-如需進一步瞭解此功能、必要條件及如何存取，請參閱 [Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)。
+如需進一步瞭解此功能、必要條件及如何存取，請參閱 [Adobe Asset Link](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)。
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
 **AEM案頭應用程式**
 
-AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。AEM案頭應用程式的完整變更清單會提供在專屬的 [AEM案頭應用程式版本注意事項檔案中](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) 。
+AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。 AEM案頭應用程式的完整變更清單會提供在專屬的 [AEM案頭應用程式版本注意事項檔案中](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) 。
 
 自AEM 6.3版本以來所推出的改良功能包括可在背景上傳階層式資料夾、可監控資產背景作業的新UI、增強的快取、網路和登入，以及整體穩定性的改善。 說明檔案也包含最 [佳實務指南](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)。
 
@@ -239,7 +242,7 @@ AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。AEM案頭應用程�
 
 #### 動態媒體附加元件 {#dynamic-media-add-on}
 
-AEM 6.4包含許多Dynamic media的新功能和增強功能。 完整清單可在 [AEM Assets中使用](assets.md)。 主要亮點包括：
+AEM 6.4包含許多Dynamic Media的新功能和增強功能。 完整清單可在 [AEM Assets中使用](assets.md)。 主要亮點包括：
 
 **智慧型裁切**
 
@@ -265,7 +268,7 @@ Smart Crop採用Adobe Sensei技術，可自動提供影像的非破壞性裁切�
 
 **3D資產**
 
-與Creative cloud應用 [程式Adobe Dimension CC](https://www.adobe.com/products/dimension.html)（製作3D體驗的Creative cloud應用程式）全新整合。
+與Creative Cloud應用 [程式Adobe Dimension CC](https://www.adobe.com/products/dimension.html)（製作3D體驗的Creative Cloud應用程式）全新整合。
 
 請參 [閱使用3D資產檔案](/help/assets/assets-3d.md) ，瞭解更多資訊。
 
@@ -293,7 +296,7 @@ AEM 6.4 Forms提供多項新功能和增強功能。 重點包括：
 
 Adobe採用以客戶為中心的開發模型，讓客戶在規格、開發和測試期間，對開發流程的所有階段都有貢獻。 在此過程中，我們感謝所有有貢獻的客戶和合作夥伴。
 
-Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以客戶為中心的錯誤解決方案和增強功能要求開發。 Adobe [Marketing cloud支援入口網站](https://helpx.adobe.com/marketing-cloud/contact-support.html) ，已與Adobe增強與缺陷追蹤系統整合。 客戶問題會盡可能與客戶服務確認並解決。 呈報至研發時，會擷取所有客戶資訊，並用於優先排序和報告用途。 在開發時，優先考慮付費支援和擔保問題以及付費客戶增強功能。
+Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以客戶為中心的錯誤解決方案和增強功能要求開發。 Adobe [Marketing Cloud支援入口網站](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html) ，已與Adobe增強與缺陷追蹤系統整合。 客戶問題會盡可能與客戶服務確認並解決。 呈報至研發時，會擷取所有客戶資訊，並用於優先排序和報告用途。 在開發時，優先考慮付費支援和擔保問題以及付費客戶增強功能。
 
 此優先順序排列程式已在AEM 6.4中修正超過500項以客戶為主的變更。
 
@@ -301,8 +304,8 @@ Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以
 
 **基礎**
 
-* 獨立快速入門：cq-quickstart-6.4.0.jar
-* 應用程式伺服器快速啟動：cq-quickstart-6.4.0.war
+* 獨立快速入門： cq-quickstart-6.4.0.jar
+* 應用程式伺服器快速啟動： cq-quickstart-6.4.0.war
 * Dispatcher 4.3.1或更新版本，適用於各種Web伺服器和平台(下[載連結](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
 * Eclipse IDE增效模組(詳[細內容及下載](/help/sites-developing/aem-eclipse.md))
 
@@ -326,7 +329,7 @@ Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以
 
 **資產**
 
-* Adobe Experience manager案頭應用程式([閱讀詳細內容](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)[及下載](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
+* Adobe Experience Manager案頭應用程式([閱讀詳細內容](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)[及下載](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
 
 * 封裝以新增增強的PDF點陣化器([閱讀更多](/help/assets/aem-pdf-rasterizer.md)[和下載](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -367,7 +370,7 @@ Experience Manager 6.4已通過GB18030-2005 CITS認證，可使用中文編碼�
 
 ## 支援的平台 {#supported-platforms}
 
-請尋找完整的支援平台矩陣，包括[AEM 6.4技術需求的支援層級](/help/sites-deploying/technical-requirements.md)
+請尋找完整的支援平台矩陣，包括 [AEM 6.4技術需求的支援層級](/help/sites-deploying/technical-requirements.md)
 
 >[!NOTE]
 >
@@ -399,7 +402,7 @@ Adobe會持續評估產品中的功能，並隨著時間推移，計畫以功能
 
 這些網站僅提供給客戶使用。 如果您是客戶，需要存取權，請聯絡您的Adobe客戶經理。
 
-* [](https://daycare.day.com) 產 [品下載，請造訪licensing.adobe.com](https://licensing.adobe.com/)
+* [](https://daycare.day.com) [產品下載，請造訪licensing.adobe.com](https://licensing.adobe.com/)
 
 * [daycare.day.com的客戶支援](https://daycare.day.com)
 
