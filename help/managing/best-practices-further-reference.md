@@ -10,7 +10,10 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 translation-type: tm+mt
-source-git-commit: 8145f71848e956647cb4321aaa432b33b9ef9383
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+workflow-type: tm+mt
+source-wordcount: '3767'
+ht-degree: 1%
 
 ---
 
@@ -27,12 +30,12 @@ source-git-commit: 8145f71848e956647cb4321aaa432b33b9ef9383
 
 ### AEM中的功能 {#features-within-aem}
 
-實作AEM（尤其是首次）時，您需要檢閱AEM [的功能和工作流程](https://www.adobe.com/marketing/experience-manager.html) ，以確定您需要／需要哪些區域。
+實作AEM（尤其是首次）時，您需要檢閱AEM [的功能和工作流程](https://www.adobe.com/tw/marketing/experience-manager.html) ，以確定您需要／需要哪些區域。
 
-考慮您將要使用的AEM功能，以及對您設計的影響；例如：
+考慮您將要使用的AEM功能，以及對您設計的影響； 例如：
 
 * [商務](/help/sites-administering/ecommerce.md)
-* [畫面](/help/screens/aem-screens-introduction.md)
+* [畫面](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [資產](/help/assets/assets.md)
 * [標記](/help/sites-administering/tags.md)
 * [多網站管理與翻譯](/help/sites-administering/msm-and-translation.md)
@@ -66,7 +69,7 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 
 >[!NOTE]
 >
->這些點子是一般的，「最 [佳實務檢查清單](/help/managing/best-practices.md) 」會說明與AEM相關的細節。
+>這些點是一般的，「最 [佳實務檢查清單](/help/managing/best-practices.md) 」會說明與AEM相關的細節。
 
 * **角色**
 
@@ -94,7 +97,7 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 
    要定義的流程將取決於您的個別項目。 請再次嘗試保持這些簡單，同時考慮：
 
-   * 定義與任何第三方互動的程式（和通訊途徑）;例如設計機構和第三方軟體供應商等。
+   * 定義與任何第三方互動的程式（和通訊途徑）; 例如設計機構和第三方軟體供應商等。
    * 客戶通常有自己的「項目管理和報告」流程和工具。
 
 * **追蹤工具**
@@ -109,7 +112,7 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 
    * 個別發行（如果使用了反覆發行程式，而且不論是交付給客戶還是內部測試團隊）。
    * AEM專案。
-   * 整個項目；包括任何協力廠商軟體、其對測試的影響、組織問題等。
+   * 整個項目； 包括任何協力廠商軟體、其對測試的影響、組織問題等。
    * 對於某些方面來說，說明項目範圍內 *的內容* ，也很有用。 這有助於避免混淆和錯誤假設，儘管它應限於基本問題。
 
 * **報告**
@@ -124,11 +127,11 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 
    * 定義所做的任何假設。
 
-這些資訊可在項目手冊中定義；使用Wiki還有助於確保有效地處理正在進行的更改。 無論這些定義如何，關鍵因素是：
+這些資訊可在項目手冊中定義； 使用Wiki還有助於確保有效地處理正在進行的更改。 無論這些定義如何，關鍵因素是：
 
 * 定義並維護資訊
 * 向所有相關人員清楚傳達資訊。 雖然標準的項目管理實踐，但明確的角色定義和良好的溝通是無法讓項目成為或中斷的。
-* 所追蹤的任何資訊只保留一個版本；例如，錯誤追蹤、期刊追蹤等。
+* 所追蹤的任何資訊只保留一個版本； 例如，錯誤追蹤、期刊追蹤等。
 
 ## 關鍵績效指標和目標量度 {#key-performance-indicators-and-target-metrics}
 
@@ -179,7 +182,7 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 
 在專案開發期間，可視需要更新和調整這些專案。 在成功實施項目後，這些項目可幫助您控制安裝並監控／維護持續操作所需的服務級別。
 
-當使用正確時，這些量度可提供有用的工具；如果用起來不負責任，那就會浪費時間分散注意力。 和以往一樣，您需要瞭解您所測量的內容、您如何測量它，以及測量原因。
+當使用正確時，這些量度可提供有用的工具； 如果用起來不負責任，那就會浪費時間分散注意力。 和以往一樣，您需要瞭解您所測量的內容、您如何測量它，以及測量原因。
 
 >[!NOTE]
 >
@@ -206,8 +209,8 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 
 要定義或評估基礎架構，它將幫助定義目標值，例如：
 
-* 訪客／日；均值和峰值
-* 點擊／日；均值和峰值
+* 訪客／日； 均值和峰值
+* 點擊／日； 均值和峰值
 * 提供的網頁數
 * 網頁內容量
 
@@ -233,7 +236,7 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 
 關鍵問題是您的網站回應訪客要求所花的時間。
 
-雖然此值會因每個請求而異，但可以定義平均目標值。 一旦這個值被證明是可實現和可維護的，它就可以用來監控網站的效能並指出潛在問題的發展
+雖然此值會因每個請求而異，但可以定義平均目標值。 一旦這個值被證明是可實現和可維護的，它就可用來監控網站的效能並指出潛在問題的發展
 
 作者和發佈環境的不同目標
 
@@ -269,7 +272,7 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 * 70%的頁面要求應在100毫秒內回覆。
 * 25%的頁面要求應在100毫秒至300毫秒內回應。
 * 4%的頁面要求應在300毫秒-500毫秒內回應。
-* 1%的頁面要求應在500ms-1000ms內回應。
+* 1%的頁面要求應在500毫秒-1000毫秒內回應。
 * 任何頁面的回應速度都不應慢於1秒。
 
 上述數字假設下列條件：
@@ -310,21 +313,21 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 * 評估與其他目標相比使用搜索的頻率
 * 您的永續性管理員
 * 搜索索引
-* 搜索功能的複雜性；一個僅允許輸入1個搜索詞的基本搜索函式比允許用戶使用AND/OR/NOT建立複雜搜索語句的高級搜索更快。
+* 搜索功能的複雜性； 一個僅允許輸入1個搜索詞的基本搜索函式比允許用戶使用AND/OR/NOT建立複雜搜索語句的高級搜索更快。
 
 從您的專案開始，就應規劃並整合這些項目。 可監控的機制包括：
 
 * **使用AEM request.log監控搜尋回應時間**
 
-   同樣，request.log可以用來監控搜索請求的響應時間；如需詳 [細資訊，請參閱](/help/sites-deploying/configuring-performance.md) 「效能最佳化」。
+   同樣，request.log可以用來監控搜索請求的響應時間； 如需詳 [細資訊，請參閱](/help/sites-deploying/configuring-performance.md) 「效能最佳化」。
 
 * **用於測量搜索響應時間的寫程式機構**
 
-   若要自訂您收集的搜尋請求相關資訊及其效能，建議將資訊收集納入您的專案原始碼中；如需詳 [細資訊，請參閱](/help/sites-deploying/configuring-performance.md) 「效能最佳化」。
+   若要自訂您收集的搜尋請求相關資訊及其效能，建議將資訊收集納入您的專案原始碼中； 如需詳 [細資訊，請參閱](/help/sites-deploying/configuring-performance.md) 「效能最佳化」。
 
 ### 並行 {#concurrency}
 
-您的網站將可供許多使用者／訪客在作者和發佈環境中使用。 測試時，數字通常比您所用的要多，但也會波動，難以預測。 您的網站需要針對平均同時使用者／訪客數量進行設計，而不需注意到負面效能影響。 同樣， `request.log` 可用於併發測試；如需詳 [細資訊，請參閱](/help/sites-deploying/configuring-performance.md) 「效能最佳化」。
+您的網站將可供許多使用者／訪客在作者和發佈環境中使用。 測試時，數字通常比您所用的要多，但也會波動，難以預測。 您的網站需要針對平均同時使用者／訪客數量進行設計，而不需注意到負面效能影響。 同樣， `request.log` 可用於併發測試； 如需詳 [細資訊，請參閱](/help/sites-deploying/configuring-performance.md) 「效能最佳化」。
 
 併發用戶數的目標取決於環境類型：
 
@@ -383,8 +386,9 @@ The [Security Checklist](/help/sites-administering/security-checklist.md) detail
 >以下：
 >
 >* 提供與AEM專案第 *一次實作* 相關的概觀。
->* 以抽象概述為目的；請參 [閱專案檢查清單](/help/managing/best-practices.md) ，以瞭解特定階段／里程碑／任務。
+>* 以抽象概觀為目的； 請參閱 [專案檢查清單](/help/managing/best-practices.md) ，瞭解特定階段／里程碑／任務。
 >* 任何時間尺度都是理論上的。
+
 >
 
 
@@ -436,9 +440,9 @@ The [Security Checklist](/help/sites-administering/security-checklist.md) detail
 
       * 定義效能需求。
       * 定義績效目標（即明確定義預期）。
-      * 定義硬體和基礎架構架構；包括調整大小。
+      * 定義硬體和基礎架構架構； 包括調整大小。
       * 定義部署。
-   * 使用數個迭代；對於第一次衝刺和初始配置準備：
+   * 使用數個迭代； 對於第一次衝刺和初始配置準備：
 
       * 開發環境。
       * 開發流程。
@@ -523,7 +527,7 @@ The [Security Checklist](/help/sites-administering/security-checklist.md) detail
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM本身提供多種機制，可協助您監控、測試、調查和除錯應用程式；包括：</p>
+   <td><p>AEM本身提供多種機制，可協助您監控、測試、調查和除錯應用程式； 包括：</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">開發人員模式</a></li>
      <li>測試 <a href="/help/sites-developing/hobbes.md">主控台</a></li>
