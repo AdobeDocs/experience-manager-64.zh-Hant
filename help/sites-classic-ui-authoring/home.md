@@ -4,7 +4,10 @@ seo-title: AEM 6.4 Classic UI編寫使用指南
 description: '本指南涵蓋在傳統使用者介面中於AEM中編寫內容的概念。 '
 seo-description: '涵蓋在傳統UI中在AEM中編寫內容的概念。 '
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 15%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 | [管理指南](/help/sites-administering/home.md) | 瞭解如何管理AEM |
 | [編寫指南](/help/sites-authoring/home.md) | 本指南說明在AEM中編寫內容的概念。 |
 | [Classic UI編寫指南](/help/sites-classic-ui-authoring/home.md) | 本指南說明在傳統使用者介面中在AEM中編寫內容的概念。 |
-| [畫面使用指南](/help/screens/home.md) | 瞭解數位標牌解決方案，以發佈動態互動式數位體驗。 |
+| [畫面使用指南](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | 瞭解數位標牌解決方案，以發佈動態互動式數位體驗。 |
 | [部署使用指南](/help/sites-deploying/home.md) | 本指南會向您展示AEM的基本資訊。 |
 | [開發使用指南](/help/sites-developing/home.md) | 瞭解如何建立您的AEM實例。 |
 | [管理使用手冊](/help/managing/home.md) | 本指南說明如何成功管理AEM專案。 |
@@ -42,9 +45,9 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 * [AEM教學課程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [《 Dispatcher使用手冊》](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL使用指南](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
-* [核心元件使用指南](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [HTL使用指南](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
+* [核心元件使用指南](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
+* [Cloud Manager](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [GDPR 整備](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM 社群論壇](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
