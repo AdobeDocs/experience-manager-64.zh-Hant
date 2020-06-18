@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e3f2dc5a-ef5e-432c-be07-b3dedbd6549b
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ SharePoint連接器支援下列基本功能：
 
 ## 安裝SharePoint連接器 {#installing-sharepoint-connector}
 
-連接器是便於安裝的內容封裝。 使用Package manager安裝套件，然後設定SharePoint伺服器URL\
+連接器是便於安裝的內容封裝。 使用Package Manager安裝套件，然後設定SharePoint伺服器URL\
 和其他配置選項。 SharePoint內容可在AEM儲存庫中使用。
 
 ### 安裝需求 {#installation-requirements}
@@ -101,7 +104,7 @@ AEM Package Share可用來散發產品功能、範例和Hotfix。 如需詳細�
 1. 點選／按一 **下套件** 「說明」頁面中的「安裝」。
 1. 在「安裝 **套件」對話方塊中** ，點選／按一下「 **安裝」**。
 
-   **注意**:請確定您是以管理員身分登入。
+   **注意**: 請確定您是以管理員身分登入。
 
 1. 安裝軟體包後，點選／按一下「 **Close（關閉）**」。
 
@@ -115,7 +118,7 @@ AEM Package Share可用來散發產品功能、範例和Hotfix。 如需詳細�
 
 要設定SharePoint伺服器的URL和高級選項，請執行以下步驟：
 
-1. 導覽至OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
+1. 導覽至OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. 搜尋Microsoft Sharepoint **搭售版的Day JCR Connector** 。
 1. 編輯配置值。
 1. 將SharePoint伺服器URL設為工作區的 **值**。
@@ -132,11 +135,11 @@ AEM Package Share可用來散發產品功能、範例和Hotfix。 如需詳細�
 `<name>` 是JCR工作區的名稱，\
 `<url>` 是該工作區的SharePoint伺服器URL。
 
-在AEM中，請執行上述設定步驟以外的另一個步驟。 將「**com.day.cq.dam.cq-dam-jcr-connectors**」套裝清單列入白名單。
+在AEM中，請執行上述設定步驟以外的另一個步驟。 允許列出「**com.day.cq.dam.cq-dam-jcr-connectors**」套件。
 
-若要在AEM中建立白名單組合，請執行下列步驟：
+若要允許AEM中的清單組合，請執行下列步驟：
 
-1. 導覽至OSGi Management Console:http://localhost:4502/system/console/configMgr。
+1. 導覽至OSGi Management Console: http://localhost:4502/system/console/configMgr。
 
 1. 搜尋「Apache Sling Login Admin Whitelist」服務。
 
@@ -166,7 +169,7 @@ AEM Package Share可用來散發產品功能、範例和Hotfix。 如需詳細�
 
 若要將SharePoint Assets與AEM同步，請執行下列步驟：
 
-1. 導覽至OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
+1. 導覽至OSGi Management Console: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. 搜索「預設DAMAssetSynchronization」服務。
 1. 編輯配置值。
 1. 設定有權在SharePoint網站上存取之使用者的使用者名稱和對應密碼。
@@ -200,10 +203,10 @@ Sharepoint包含「經典」和「基於索賠的」驗證方法，這兩種方�
 * 基本索賠
 * 基於索賠表單
 
-AEM JCR Connector for Microsoft SharePoint 2010和Microsoft SharePoint 2013,4.0版。支援基於索賠的驗證（由Microsoft建議），該驗證在以下模式下運行：
+AEM JCR Connector for Microsoft SharePoint 2010和Microsoft SharePoint 2013,4.0版。 支援基於索賠的驗證（由Microsoft建議），該驗證在以下模式下運行：
 
-* **基本/NTLM身份驗證**:連接器首先嘗試使用基本驗證進行連接。 如果不可用，則切換到基於NTLM的身份驗證。
-* **表單式驗證**:Sharepoint會根據使用者在登入表單（通常是網頁）中輸入的認證來驗證使用者。 該系統為已驗證的請求發出令牌，該令牌包含用於為後續請求重新建立標識的密鑰。
+* **基本/NTLM身份驗證**: 連接器首先嘗試使用基本驗證進行連接。 如果不可用，則切換到基於NTLM的身份驗證。
+* **表單式驗證**: Sharepoint會根據使用者在登入表單（通常是網頁）中輸入的認證來驗證使用者。 該系統為已驗證的請求發出令牌，該令牌包含用於為後續請求重新建立標識的密鑰。
 
 **配置基於表單的驗證**
 
