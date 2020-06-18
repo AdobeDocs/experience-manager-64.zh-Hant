@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '2803'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 
 ## 簡介 {#introduction}
 
-卸載會在拓撲中分發包含Experience manager實例的處理任務。 借由卸載，您可以使用特定的Experience manager實例來執行特定類型的處理。 專業化的處理可讓您最大化可用伺服器資源的使用。
+卸載會在拓撲中分發包含Experience Manager實例的處理任務。 借由卸載，您可以使用特定的Experience Manager實例來執行特定類型的處理。 專業化的處理可讓您最大化可用伺服器資源的使用。
 
-Offloading是以 [Apache Sling Discovery和Sling JobManager功能為基礎](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) 。 要使用卸載，請將Experience manager群集添加到拓撲中，並標識群集處理的作業主題。 叢集由一或多個Experience manager實例組成，因此單一實例被視為叢集。
+Offloading是以 [Apache Sling Discovery和Sling JobManager功能為基礎](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) 。 要使用卸載，請將Experience Manager群集添加到拓撲中，並標識群集處理的作業主題。 叢集由一或多個Experience Manager實例組成，因此單一實例被視為叢集。
 
 有關向拓撲添加實例的資訊，請參見管 [理拓撲](/help/sites-deploying/offloading.md#administering-topologies)。
 
@@ -29,8 +32,8 @@ Offloading是以 [Apache Sling Discovery和Sling JobManager功能為基礎](http
 
 Sling JobManager和JobConsumer可建立在拓撲中處理的工作：
 
-* JobManager:為特定主題建立作業的服務。
-* JobConsumer:執行一個或多個主題的作業的服務。 可針對相同主題註冊多個JobConsumer服務。
+* JobManager: 為特定主題建立作業的服務。
+* JobConsumer: 執行一個或多個主題的作業的服務。 可針對相同主題註冊多個JobConsumer服務。
 
 當JobManager建立作業時，卸載框架在拓撲中選擇Experience Manager群集以執行該作業：
 
@@ -51,12 +54,12 @@ Sling JobManager和JobConsumer可建立在拓撲中處理的工作：
 
 ## 管理拓撲 {#administering-topologies}
 
-拓撲是鬆散耦合的Experience manager群集，它們參與卸載。 群集由一個或多個Experience manager伺服器實例（單個實例被視為群集）組成。
+拓撲是鬆散耦合的Experience Manager群集，它們參與卸載。 群集由一個或多個Experience Manager伺服器實例（單個實例被視為群集）組成。
 
-每個Experience manager實例都運行以下卸載相關服務：
+每個Experience Manager實例都運行以下卸載相關服務：
 
-* 發現服務：向拓撲連接器發送請求以加入拓撲。
-* 拓撲連接器：接收加入請求，並接受或拒絕每個請求。
+* 發現服務： 向拓撲連接器發送請求以加入拓撲。
+* 拓撲連接器： 接收加入請求，並接受或拒絕每個請求。
 
 拓撲的所有成員的發現服務指向其中一個成員的拓撲連接器。 在以下幾節中，此成員稱為根成員。
 
@@ -66,13 +69,13 @@ Sling JobManager和JobConsumer可建立在拓撲中處理的工作：
 
 ### 查看拓撲 {#viewing-the-topology}
 
-使用拓撲瀏覽器來探索Experience manager實例參與的拓撲狀態。 拓撲瀏覽器顯示拓撲的群集和實例。
+使用拓撲瀏覽器來探索Experience Manager實例參與的拓撲狀態。 拓撲瀏覽器顯示拓撲的群集和實例。
 
 對於每個群集，您會看到一個群整合員清單，其中指明每個成員加入群集的順序以及哪個成員是「領導者」。 「目前」屬性會指出您目前管理的例項。
 
 對於群集中的每個實例，您可以看到幾個與拓撲相關的屬性：
 
-* 實例的工作使用者主題的白名單。
+* 實例的作業使用者的允許主題清單。
 * 用於與拓撲連接的端點。
 * 已註冊實例以卸載的作業主題。
 * 實例處理的作業主題。
@@ -105,10 +108,10 @@ Sling JobManager和JobConsumer可建立在拓撲中處理的工作：
 
 Apache Sling Resource-Based Discovery Service會在每個執行個體上執行，以控制Experience Manager執行個體與拓撲互動的方式。
 
-Discovery service會定期向拓撲連接器服務發送POST請求（心跳），以建立和維護與拓撲的連接。 拓撲連接器服務維護允許加入拓撲的IP地址或主機名的白名單：
+Discovery服務會定期向拓撲連接器服務發送POST請求（心跳），以建立和維護與拓撲的連接。 拓撲連接器服務維護允許加入拓撲的IP地址或主機名清單：
 
 * 要將實例連接到拓撲，請指定根成員的拓撲連接器服務的URL。
-* 要啟用實例加入拓撲，請將實例添加到根成員的拓撲連接器服務的白名單中。
+* 要啟用實例加入拓撲，請將實例添加到根成員的拓撲連接器服務的允許清單中。
 
 使用Web Console或sling:OsgiConfig節點來設定org.apache.sling.discovery.impt.Config服務的下列屬性：
 
@@ -145,7 +148,7 @@ Discovery service會定期向拓撲連接器服務發送POST請求（心跳）�
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>拓撲連接器白名單</td> 
+   <td>拓撲連接器允許清單</td> 
    <td>topologyConnector白名單</td> 
    <td>本地拓撲連接器服務允許的IP地址或主機名清單。 </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -166,16 +169,16 @@ Discovery service會定期向拓撲連接器服務發送POST請求（心跳）�
 1. 按一下配置發現服務。
 1. 將項添加到拓撲連接器URL屬性中，並指定根拓撲成員的拓撲連接器服務的URL。 URL的格式為https://rootservername:4502/libs/sling/topology/connector。
 
-對拓撲的根成員執行以下過程。 該過程將其他拓撲成員的名稱添加到其Discovery服務白名單中。
+對拓撲的根成員執行以下過程。 該過程將其他拓撲成員的名稱添加到其Discovery服務允許清單中。
 
 1. 在瀏覽器中開啟Web Console。 ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. 按一下主>拓撲管理。
 1. 按一下配置發現服務。
-1. 對於拓撲的每個成員，將一個項添加到「拓撲連接器白名單」屬性，並指定拓撲成員的主機名或IP地址。
+1. 對於拓撲的每個成員，將一個項添加到拓撲連接器允許清單屬性，並指定拓撲成員的主機名或IP地址。
 
 ## 配置主題使用 {#configuring-topic-consumption}
 
-使用卸載瀏覽器為拓撲中的Experience manager實例配置主題使用。 您可以針對每個例項指定其所使用的主題。 例如，要配置拓撲以便只有一個實例使用特定類型的主題，請禁用除一個實例以外的所有實例上的主題。
+使用卸載瀏覽器為拓撲中的Experience Manager實例配置主題使用。 您可以針對每個例項指定其所使用的主題。 例如，要配置拓撲以便只有一個實例使用特定類型的主題，請禁用除一個實例以外的所有實例上的主題。
 
 作業是使用循環邏輯啟用相關主題的分佈數量例項。
 
@@ -194,14 +197,15 @@ Discovery service會定期向拓撲連接器服務發送POST請求（心跳）�
 
 1. 按一下主題旁邊的以下按鈕之一以配置實例的衝減行為，然後按一下保存：
 
-   * 啟用：此實例將使用此主題的作業。
-   * 停用：此實例不會使用此主題的作業。
-   * 獨家：此實例僅會使用此主題的作業。
-   **** 注意：為主題選擇「獨佔」時，所有其它主題都會自動設定為「禁用」。
+   * 啟用： 此實例將使用此主題的作業。
+   * 停用： 此實例不會使用此主題的作業。
+   * 獨家： 此實例僅會使用此主題的作業。
+
+   **注意：** 為主題選擇「獨佔」時，所有其它主題都會自動設定為「禁用」。
 
 ### 已安裝的作業使用者 {#installed-job-consumers}
 
-Experience manager已安裝數個JobConsumer實作。 這些JobConsumers註冊的主題會顯示在卸載瀏覽器中。 出現的其他主題是自訂JobConsumers已註冊的主題。 下表說明預設的JobConsumers。
+Experience Manager已安裝數個JobConsumer實作。 這些JobConsumers註冊的主題會顯示在卸載瀏覽器中。 出現的其他主題是自訂JobConsumers已註冊的主題。 下表說明預設的JobConsumers。
 
 | 工作主題 | 服務PID | 說明 |
 |---|---|---|
@@ -211,18 +215,18 @@ Experience manager已安裝數個JobConsumer實作。 這些JobConsumers註冊�
 
 ### 禁用和啟用實例的主題 {#disabling-and-enabling-topics-for-an-instance}
 
-Apache Sling Job Consumer Manager服務提供主題白名單和黑名單屬性。 設定這些屬性，以啟用或停用Experience manager例項上特定主題的處理。
+Apache Sling Job Consumer Manager服務提供主題allow list和區塊清單屬性。 設定這些屬性，以啟用或停用Experience Manager例項上特定主題的處理。
 
-**** 注意：如果實例屬於拓撲，您也可以在拓撲中的任何電腦上使用卸載瀏覽器來啟用或禁用主題。
+**注意：** 如果實例屬於拓撲，您也可以在拓撲中的任何電腦上使用卸載瀏覽器來啟用或禁用主題。
 
-建立已啟用主題清單的邏輯首先允許白名單中的所有主題，然後刪除黑名單中的主題。預設情況下，所有主題都處於啟用狀態(白名單值為 `*`)且不禁用任何主題（黑名單沒有值）。
+建立啟用主題清單的邏輯首先允許允許清單中的所有主題，然後刪除塊清單中的主題。預設情況下，所有主題都被啟用(允許清單值為 `*`)，並且不禁用任何主題（塊清單沒有值）。
 
 使用Web控制台或節 `sling:OsgiConfig` 點來配置以下屬性。 對 `sling:OsgiConfig` 於節點，Job Consumer Manager服務的PID是org.apache.sling.event.impl.jobs.JobConsumerManager。
 
 | Web Console中的屬性名稱 | OSGi ID | 說明 |
 |---|---|---|
-| 主題白名單 | job.counsmermanager.whitelist | 本地JobManager服務處理的主題清單。 &amp;ast；的預設值使所有主題都發送到註冊的TopicConsumer服務。 |
-| 主題黑名單 | job.counspermanager.blacklist | 本地JobManager服務不處理的主題清單。 |
+| 主題白名單 | job.consumermanager.whitelist | 本地JobManager服務處理的主題清單。 &amp;ast；的預設值 使所有主題都發送到註冊的TopicConsumer服務。 |
+| 主題黑名單 | job.consumermanager.blacklist | 本地JobManager服務不處理的主題清單。 |
 
 ## 建立用於卸載的複製代理 {#creating-replication-agents-for-offloading}
 
@@ -256,13 +260,13 @@ Apache Sling Job Consumer Manager服務提供主題白名單和黑名單屬性�
 
 `offloading_<slingid>`，其 `<slingid>` 中是worker實例的Sling ID。
 
-例如: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
+範例: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **在作者實例上命名反向代理：**
 
 `offloading_reverse_<slingid>`，其 `<slingid>` 中是worker實例的Sling ID。
 
-例如: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
+範例: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **在工作器實例上命名外框：**
 
@@ -284,7 +288,7 @@ Apache Sling Job Consumer Manager服務提供主題白名單和黑名單屬性�
 
 ### 建立反向代理 {#creating-the-reverse-agent}
 
-1. 在作者 **上建立反向複製** Agent。 (請參見 [有關複製代理的文檔](/help/sites-deploying/replication.md)。)指定任何 **標題**。 名 **稱必** 須遵循命名慣例。
+1. 在作者 **上建立反向複製** Agent。 (請參見 [有關複製代理的文檔](/help/sites-deploying/replication.md)。) 指定任何 **標題**。 名 **稱必** 須遵循命名慣例。
 1. 使用以下屬性建立代理：
 
    | 屬性 | 值 |
@@ -297,7 +301,7 @@ Apache Sling Job Consumer Manager服務提供主題白名單和黑名單屬性�
 
 ### 建立外框代理 {#creating-the-outbox-agent}
 
-1. 在工作 **器實例上建立複製代理** 。 (請參見 [有關複製代理的文檔](/help/sites-deploying/replication.md)。)指定任何 **標題**。 名 **稱必** 須 `offloading_outbox`。
+1. 在工作 **器實例上建立複製代理** 。 (請參見 [有關複製代理的文檔](/help/sites-deploying/replication.md)。) 指定任何 **標題**。 名 **稱必** 須 `offloading_outbox`。
 1. 使用下列屬性建立代理。
 
    | 屬性 | 值 |
@@ -317,7 +321,7 @@ Apache Sling Job Consumer Manager服務提供主題白名單和黑名單屬性�
 
 配置拓撲實例，使特定實例執行在DAM中添加或更新的資產的後台處理。
 
-依預設，當DAM資產變更或新增DAM時，Experience manager會執行DAM更新資產工作流程。 變更預設行為，讓Experience Manager改為執行DAM更新資產卸載程式工作流程。 此工作流將生成一個主題為的JobManager作業 `com/adobe/granite/workflow/offloading`。 然後，配置拓撲，以便將作業卸載到專用工作器。
+依預設，當DAM資產變更或新增DAM時，Experience Manager會執行DAM更新資產工作流程。 變更預設行為，讓Experience Manager改為執行DAM更新資產卸載程式工作流程。 此工作流將生成一個主題為的JobManager作業 `com/adobe/granite/workflow/offloading`。 然後，配置拓撲，以便將作業卸載到專用工作器。
 
 >[!CAUTION]
 >
@@ -325,11 +329,11 @@ Apache Sling Job Consumer Manager服務提供主題白名單和黑名單屬性�
 
 以下過程假定卸載拓撲具有以下特徵：
 
-* 一或多個Experience manager實例正在編寫使用者與之互動的例項，以新增或更新DAM資產。
-* 使用者不需直接與處理DAM資產的一或多個Experience manager例項互動。 這些例項專用於DAM資產的背景處理。
+* 一或多個Experience Manager實例正在編寫使用者與之互動的例項，以新增或更新DAM資產。
+* 使用者不需直接與處理DAM資產的一或多個Experience Manager例項互動。 這些例項專用於DAM資產的背景處理。
 
-1. 在每個Experience manager實例上，配置Discovery服務，使其指向根拓撲連接器。 (請參閱 [配置拓撲成員資格](#title4)。)
-1. 配置根拓撲連接器，使連接實例位於白名單中。
+1. 在每個Experience Manager實例上，配置Discovery服務，使其指向根拓撲連接器。 (請參閱 [配置拓撲成員資格](#title4)。)
+1. 配置根拓撲連接器，使連接實例位於允許清單中。
 1. 開啟「卸載瀏覽器」，並停 `com/adobe/granite/workflow/offloading` 用使用者與之互動以上傳或變更DAM資產之例項的主題。
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
