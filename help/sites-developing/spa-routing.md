@@ -10,7 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 translation-type: tm+mt
-source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+source-git-commit: 04a369c5eb4c0cb87f3dae8cd4360678315ebe2a
+workflow-type: tm+mt
+source-wordcount: '527'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +66,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-請注意，SPA的每條路由都應對應AEM中的可存取資源(例如，「 `/content/mysite/mypage"`)，因為一旦選取路由， `PageModelManager` 就會自動嘗試載入對應的頁面模型。 不過，如果需要，SPA也可以定義「黑名單」路由，該路由應被以下項忽略 `PageModelManager`:
+請注意，SPA的每條路由都應對應AEM中的可存取資源(例如，「 `/content/mysite/mypage"`)，因為一旦選取路由， `PageModelManager` 就會自動嘗試載入對應的頁面模型。 不過，如果需要，SPA也可以定義路由的「塊清單」，該清單應被以下項忽略 `PageModelManager`:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
