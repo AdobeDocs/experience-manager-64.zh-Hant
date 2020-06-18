@@ -6,7 +6,10 @@ seo-description: 說明AEM 6.4的基本功能
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
-source-git-commit: 565dec566e02effb18b211a8691b2c694d8cae1e
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 4%
 
 ---
 
@@ -38,15 +41,15 @@ AEM Forms將表單製作、管理和發佈功能，以及通訊管理功能、�
 
 ## AEM Screens {#aem-screens}
 
-畫面是Adobe Experience manager的功能，可讓您發佈動態互動式數位體驗和互動，其中涉及不同螢幕類型，並搭配完整的數位行銷平台。  [了解更多.](/help/screens/home.md)
+畫面是Adobe Experience Manager的功能，可讓您發佈動態互動式數位體驗和互動，其中涉及不同螢幕類型，並搭配完整的數位行銷平台。  [了解更多.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-社群是Adobe Experience manager的功能，可協助您建立對客戶、員工和品牌有價值的線上社群體驗，包括論壇、使用者群組、學習資源和其他社交功能。 [了解更多.](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+社群是Adobe Experience Manager的功能，可協助您建立對客戶、員工和品牌有價值的線上社群體驗，包括論壇、使用者群組、學習資源和其他社交功能。 [了解更多.](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre是全新的Adobe Experience manager功能，可讓您點選網路上共用的一切，在您自己的網站上建立持續不斷的新鮮高品質內容。 [進一步瞭解](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) ，或 [直接進入我們的指南。](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre是全新的Adobe Experience Manager功能，可讓您點選網路上共用的一切，在您自己的網站上建立持續不斷的新鮮高品質內容。 [進一步瞭解](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) ，或 [直接進入我們的指南。](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM Foundation {#aem-foundation}
 
