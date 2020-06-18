@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
 workflow-type: tm+mt
-source-wordcount: '1827'
+source-wordcount: '1843'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
 * [效能准則](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile快速入門](/help/mobile/getting-started-aem-mobile.md)
 * [更新發行工具定義](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [什麼是AEM Screens?](/help/screens/aem-screens-introduction.md)
+* [什麼是AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## 基本概念 {#basic-concepts}
 
@@ -128,7 +128,7 @@ AEM Managed Services是數位體驗管理的完整解決方案。 它提供雲�
 
 **Cloud Manager**: Cloud Manager是Adobe Experience Manager Managed Services產品的一部分，是自助服務入口網站，可讓組織在雲端自行管理Adobe Experience Manager。 它包含最新的持續整合與持續傳送(CI/CD)管道，可讓IT團隊與實施合作夥伴加速傳送自訂或更新，而不影響效能或安全性。 Cloud Manager僅適用於Adobe Managed Service客戶。
 
-若要進一步瞭解Cloud Manager及其資源，請參閱《 [**Cloud Manager使用指南》**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)。
+若要進一步瞭解Cloud Manager及其資源，請參閱 [**Cloud Manager使用指南&#x200B;**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html)。
 
 ## 快速入門 {#getting-started}
 
@@ -321,5 +321,5 @@ AEM會啟動您的網頁瀏覽器並自動將其重新導向至適當的頁面�
 * [效能准則](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile快速入門](/help/mobile/getting-started-aem-mobile.md)
 * [更新發行工具定義](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [什麼是AEM Screens?](/help/screens/aem-screens-introduction.md)
+* [什麼是AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
