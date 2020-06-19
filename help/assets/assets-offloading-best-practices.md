@@ -3,7 +3,7 @@ title: 資產卸載最佳做法
 description: 建議在AEM Assets中卸載資產擷取和複製工作流程的使用案例和最佳實務。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 0%
@@ -112,6 +112,7 @@ Adobe建議您關閉自動代理管理，因為它不支援無二進位複製，
 1. 將屬性的值 `default.transport.agent-to-master.prefix` 從 `offloading_reverse` 更改為 `offloading`。
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
 ### 在作者和工作者之間使用共用資料儲存和無二進位複製  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
