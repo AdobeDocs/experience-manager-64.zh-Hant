@@ -7,7 +7,10 @@ uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+workflow-type: tm+mt
+source-wordcount: '1697'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
 
 ## 簡介 {#introduction}
 
-企業會收集和處理來自多個表單、後端系統和其他資料來源的資料。 資料處理包括審核和核准程式、重複性工作以及資料封存。 例如，檢閱表格並將其轉換為PDF檔案。 手動完成重複性任務時，可能需要大量的時間和資源。
+企業會收集和處理來自多個表單、後端系統和其他資料來源的資料。 資料處理包括審核和核准程式、重複性工作以及資料封存。 例如，檢閱表單並將其轉換為PDF檔案。 手動完成重複性任務時，可能需要大量的時間和資源。
 
 您可以在OSGi上 [使用以表單為中心的工作流程](/help/forms/using/aem-forms-workflow.md) ，快速建立以表單為主的調適性工作流程。 這些工作流程可協助您自動化審閱和核准工作流程、商業程式工作流程和其他重複性工作。 這些工作流程也有助於處理檔案（建立、組合、分發和封存PDF檔案、新增數位簽章以限制檔案存取、解碼條碼表格等），並搭配表格和檔案使用Adobe Sign簽章工作流程。
 
@@ -53,16 +56,16 @@ OSGi上的AEM Forms以表單為中心的工作流程會在AEM Forms的「作者�
 * AEM例項的安裝路徑不包含空格。
 * AEM例項已啟動並執行。 在AEM術語中，「例項」是在作者或發佈模式下伺服器上執行的AEM復本。 您至少需要一個AEM例項（作者或處理），才能在OSGi上執行以表單為中心的工作流程：
 
-   * **作者**:用於建立、上傳和編輯內容以及管理網站的AEM例項。 內容一旦準備好上線，就會複製到發佈實例。
-   * **** 處理：處理例項是硬 [化的AEM Author例項](/help/forms/using/hardening-securing-aem-forms-environment.md) 。 您可以設定Author例項，並在執行安裝後加強它。
-   * **發佈**:透過網際網路或內部網路為大眾提供已發佈內容的AEM例項。
+   * **作者**: 用於建立、上傳和編輯內容以及管理網站的AEM例項。 內容一旦準備好上線，就會複製到發佈實例。
+   * **處理：** 處理例項是硬 [化的AEM Author例項](/help/forms/using/hardening-securing-aem-forms-environment.md) 。 您可以設定Author例項，並在執行安裝後加強它。
+   * **發佈**: 透過網際網路或內部網路為大眾提供已發佈內容的AEM例項。
 
 * 符合記憶體需求。 AEM Forms附加元件套件需要：
 
-   * 15 GB的臨時空間，用於基於Microsoft windows的安裝。
+   * 15 GB的臨時空間，用於基於Microsoft Windows的安裝。
    * 6 GB的臨時空間，用於基於UNIX的安裝。
 
-* 基於UNIX的系統的額外要求：如果您使用基於UNIX的作業系統，請從相應作業系統的安裝介質安裝以下軟體包。
+* 基於UNIX的系統的額外要求： 如果您使用基於UNIX的作業系統，請從相應作業系統的安裝介質安裝以下軟體包。
 
 <table> 
  <tbody>
@@ -115,7 +118,7 @@ AEM Forms有一些必備和選用的設定。 必備配置包括配置BuncyCastl
 
 ### 強制安裝後配置 {#mandatory-post-installation-configurations}
 
-#### 配置RSA和BuncyCastle庫 {#configure-rsa-and-bouncycastle-libraries}
+#### 配置RSA和BuncyCastle庫  {#configure-rsa-and-bouncycastle-libraries}
 
 對所有「作者」(Author)和「發佈」(Publish)實例執行以下步驟以引導委派庫：
 
@@ -142,18 +145,18 @@ AEM Forms有一些必備和選用的設定。 必備配置包括配置BuncyCastl
 
 #### 設定序列化代理 {#configure-the-serialization-agent}
 
-對所有「作者」和「發佈」實例執行以下步驟，以將軟體包列入白名單：
+對所有「作者」(Author)和「發佈」(Publish)實例執行以下步驟，將包添加到allowlist:
 
 1. 在瀏覽器視窗中開啟AEM Configuration Manager。 預設URL為 `https://[server]:[port]/system/console/configMgr`。
 1. 搜尋並開啟還原 **序列化防火牆設定**。
-1. 將 **sun.util.calendar** 包添加到白 **名單欄位** 。 按一下「儲存」。
+1. 將 **sun.util.calendar** 包添加到 **allowlist** 欄位。 按一下「儲存」。
 1. 對所有「作者」和「發佈」例項重複步驟1-3。
 
 ### 可選安裝後配置 {#optional-post-installation-configurations}
 
 #### 配置Dispatcher {#configure-dispatcher}
 
-Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保護AEM伺服器不受攻擊。 您可搭配使用Dispatcher與企業級Web伺服器，以提高AEM例項的安全性。 如果您使 [用Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
+Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保護AEM伺服器不受攻擊。 您可搭配使用Dispatcher與企業級Web伺服器，以提高AEM例項的安全性。 如果您使 [用Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
 
 1. 設定AEM Forms的存取權：
 
@@ -161,7 +164,7 @@ Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   儲存並關閉檔案。 有關篩選器的詳細資訊，請參 [閱Dispatcher文檔](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)。
+   儲存並關閉檔案。 有關篩選器的詳細資訊，請參 [閱Dispatcher文檔](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)。
 
 1. 設定反向連結篩選服務：
 
@@ -171,7 +174,7 @@ Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保�
 
 快取是一種機制，可縮短資料存取時間、減少延遲，並改善輸入／輸出(I/O)速度。 最適化表單快取只儲存最適化表單的HTML內容和JSON結構，而不儲存任何預先填入的資料。 它有助於縮短轉換最適化表單所需的時間。
 
-* 在使用最適化表單快取時，請使用 [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) ，快取最適化表單的用戶端程式庫（CSS和JavaScript）。
+* 在使用最適化表單快取時，請使用 [AEM Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html) ，快取最適化表單的用戶端程式庫（CSS和JavaScript）。
 * 在開發自訂元件時，請在用於開發的伺服器上停用最適化表單快取。
 
 執行以下步驟以配置自適應表單快取：
