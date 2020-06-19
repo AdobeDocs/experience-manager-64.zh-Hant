@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -88,7 +88,7 @@ AEM表單備份策略包含兩種備份類型：
    1. 按一 **下管理選項**。
    1. 按一 **下「開始** 」，從儲存庫同步資產。
 
-1. 在叢集環境中，主節點（與AEM相關）應在從節點之前啟動。
+1. 在叢集環境中，主節點（與AEM相關）應位於次要節點之前。
 1. 確保在驗證系統正常操作之前，不會從內部或外部源（如Web、SOAP或EJB進程啟動器）啟動進程。
 
 如果主要AEM表單資料庫已移動或變更，請參閱與您的應用程式伺服器相關的安裝指南，以取得更新AEM表單資料來源IDP_DS和EDC_DS資料庫連線資訊的相關資訊。
