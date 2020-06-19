@@ -3,7 +3,10 @@ title: 在AEM資產中使用Adobe Stock資產
 description: 在AEM中搜尋、擷取、授權及管理Adobe Stock資產。 將授權資產視為任何其他AEM資產。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+workflow-type: tm+mt
+source-wordcount: '1176'
+ht-degree: 19%
 
 ---
 
@@ -26,20 +29,23 @@ Adobe Stock服務可讓設計人員和企業針對其所有創意專案，取用
 >
 >只有組織的AEM管理員和Admin Console管理員才能執行整合，因為它需要管理員權限。
 
-### 建立IMS設定 {#create-an-ims-configuration}
+### Create an IMS configuration {#create-an-ims-configuration}
 
 1. 按一下「AEM logo」。導覽至「 **[!UICONTROL 工具]** >安 **[!UICONTROL 全]** > **[!UICONTROL Adobe IMS設定」]**。按一 **[!UICONTROL 下「建立]** 」，然後選 **[!UICONTROL 取「雲端解決方案]** > **[!UICONTROL Adobe Stock]**」。
 1. 重複使用現有證書或選擇「 **[!UICONTROL 建立新證書」]**。
-1. 按一 **[!UICONTROL 下建立憑證]**。 建立後，請下載公開金鑰。 按一 **[!UICONTROL 下「下一步]**」。
+1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。建立後，請下載公開金鑰。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 在標題為&#x200B;**[!UICONTROL 「標題」]**、**[!UICONTROL 「授權伺服器」]**、**[!UICONTROL 「API 金鑰」]**、**[!UICONTROL 「用戶端密碼」]**&#x200B;和&#x200B;**[!UICONTROL 「裝載」]**&#x200B;的欄位中提供適當的值。如需如何從 Adobe I/O 擷取這些值的詳細資訊，請參閱 [JWT 驗證快速入門](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)。
 1. 將下載的公開金鑰新增至您的Adobe I/O服務帳戶。
+
+<!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+-->
 
 ### 在AEM中建立Adobe Stock設定 {#create-adobe-stock-configuration-in-aem}
 
 1. In AEM user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. 按一 **[!UICONTROL 下「建立]** 」以建立組態，並將它與您現有的IMS組態建立關聯。 選擇 `PROD` 作為環境參數。
 1. 在「 **[!UICONTROL 授權資產路徑]** 」欄位中，保留原狀位置。 請勿變更您要儲存Adobe Stock資產的位置。
-1. 新增所有必要屬性以完成建立。 按一 **[!UICONTROL 下儲存並關閉]**。
+1. 新增所有必要屬性以完成建立。 Click **[!UICONTROL Save &amp; Close]**.
 1. 新增AEM使用者或群組，讓其授權資產。
 
 >[!NOTE]
@@ -50,11 +56,11 @@ Adobe Stock服務可讓設計人員和企業針對其所有創意專案，取用
 
 使用這項功能，組織可讓其使用者在AEM Assets中使用Adobe Stock資產。 在AEM使用者介面中，使用者可以搜尋Adobe Stock資產並授權所需的資產。
 
-在AEM中授權Adobe Stock資產後，就可像一般資產一樣使用和管理。 在AEM中，使用者可以搜尋和預覽資產；複製及發佈資產；在品牌入口網站分享資產；透過AEM案頭應用程式存取及使用資產；等等。
+在AEM中授權Adobe Stock資產後，就可像一般資產一樣使用和管理。 在AEM中，使用者可以搜尋和預覽資產； 複製及發佈資產； 在品牌入口網站分享資產； 透過AEM案頭應用程式存取及使用資產； 等等。
 
 ![搜尋Adobe Stock資產並篩選AEM工作區的結果](assets/adobe-stock-search-results-workspace.png)
 
-*圖：搜尋Adobe Stock資產並篩選AEM工作區的結果*
+*圖： 搜尋Adobe Stock資產並篩選AEM工作區的結果*
 
 **A.** 搜尋與已提供 Adobe Stock ID 之資產的類似資產。**B.** 搜尋與您選取的型態或方向相符的資產。**C.** 搜尋一或多個支援的資產類型 **D.** 開啟或收合篩選器窗格 **E.** 在 AEM 中為選取的資產授權並加以儲存 **F.** 將資產儲存在 AEM 中並加上浮水印 **G.** 在 Adobe Stock 網站上探索與選取的資產類似的資產 **H.** 在 Adobe Stock 網站上檢視選取的資產 **I.** 搜尋結果中選取的資產數目 **J.** 在卡片檢視與清單檢視之間切換
 
@@ -74,7 +80,7 @@ Adobe Stock服務可讓設計人員和企業針對其所有創意專案，取用
 
 ![AEM中的搜尋篩選器，並在搜尋結果中反白顯示Adobe Stock資產](assets/aem-search-filters2.jpg)
 
-*圖：AEM中的搜尋篩選器，並在搜尋結果中反白顯示Adobe Stock資產*
+*圖： AEM中的搜尋篩選器，並在搜尋結果中反白顯示Adobe Stock資產*
 
 ### 儲存並檢視所需資產 {#saveassets}
 
@@ -92,7 +98,7 @@ Adobe Stock服務可讓設計人員和企業針對其所有創意專案，取用
 
 ![對話方塊可授權並儲存AEM Assets中的Adobe Stock資產](assets/aem-stock_licenseandsave.jpg)
 
-*圖：對話方塊可授權並儲存AEM Assets中的Adobe Stock資產*
+*圖： 對話方塊可授權並儲存AEM Assets中的Adobe Stock資產*
 
 ### 存取中繼資料和資產屬性 {#access-metadata-and-asset-properties}
 
@@ -102,7 +108,7 @@ Adobe Stock服務可讓設計人員和企業針對其所有創意專案，取用
 
 ![檢視及存取已儲存資產的中繼資料和授權參考](assets/metadata_properties.jpg)
 
-*圖：檢視及存取已儲存資產的中繼資料和授權參考*
+*圖： 檢視及存取已儲存資產的中繼資料和授權參考*
 
 ## 已知限制 {#known-limitations}
 
