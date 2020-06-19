@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 0%
@@ -164,7 +164,7 @@ ht-degree: 0%
 
 * **overwriteDuplicateFilename（布林）**: 當設定為True時，將覆蓋結果資料夾和保留資料夾中的檔案。 當設定為False時，名稱將使用帶有數字索引尾碼的檔案和資料夾。 預設值為False。
 * **preserveOnFailure（布林）**: 在無法對服務執行操作時保留輸入檔案。 預設值為true。
-* **inputFilePattern(String)**: 指定「監視」資料夾的輸入檔案模式。 建立檔案的白名單。
+* **inputFilePattern(String)**: 指定「監視」資料夾的輸入檔案模式。 建立檔案的允許清單。
 * **asynch（布林值）**: 將調用類型標識為非同步或同步。 預設值為true（非同步）。 檔案處理是一項耗用資源的任務，請將非同步標誌的值保持為true以防止阻塞掃描作業的主線程。 在叢集環境中，請務必使標幟為true，以便在可用伺服器上處理檔案時，能夠進行負載平衡。 如果標籤為false，則掃描作業會嘗試對其自身線程內的每個頂層檔案／資料夾按順序執行處理。 請勿在沒有特定原因的情況下將標幟設為false，例如在單一伺服器設定上進行以工作流程為基礎的處理。
 
 >[!NOTE]
