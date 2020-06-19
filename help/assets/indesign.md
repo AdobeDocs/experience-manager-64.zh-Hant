@@ -3,7 +3,7 @@ title: 將AEM資產與Adobe InDesign Server整合
 description: 瞭解如何將AEM Assets與InDesign Server整合。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 4%
@@ -234,7 +234,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
    >
    >預設情況下，在IDS工作器經過可配`retry.interval.to.whitelist.name`置（分鐘）時間後重新驗證。 如果線上找到該工作器，則會將其從被阻止的清單中刪除。
 
-<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
 ## 啟用Adobe InDesign Server 10.0或更新版本的支援 {#enabling-support-for-indesign-server-or-higher}
@@ -247,7 +247,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 >[!NOTE]
 >
->為 [!DNL InDesign Server] 與整 [!DNL Assets]合，請使用多核處理器，因為整合所需的作業階段支援功能在單核系統上不受支援。
+>為 [!DNL InDesign Server] 與整 [!DNL Assets]合，請使用多核處理器，因為單核系統不支援整合所需的階段作業支援功能。
 
 ## 設定Experience Manager憑證 {#configure-aem-credentials}
 
