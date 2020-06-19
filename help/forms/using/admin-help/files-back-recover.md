@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 請考慮以下有關備份和恢復的要點：
 
 * 應在GDS和AEM資料庫之前備份資料庫。
-* 如果需要關閉群集環境中的節點進行備份，請確保在主節點之前關閉從節點。 否則，會導致叢集或伺服器不一致。 此外，主節點應在任何從節點之前變為活動節點。
+* 如果需要關閉群集環境中的節點進行備份，請確保在主節點之前關閉輔助節點。 否則，會導致叢集或伺服器不一致。 此外，主節點應在任何輔助節點之前處於活動狀態。
 * 對於群集的恢復操作，應停止群集中每個節點的應用程式伺服器。
 
 ## 全局文檔儲存目錄 {#global-document-storage-directory}
@@ -61,7 +61,7 @@ GDS的位置是在AEM表單安裝程式期間或更新版本中，使用管理�
 
 ## AEM存放庫 {#aem-repository}
 
-如果在安裝AEM表單時設定crx-repository，則會建立AEM存放庫(crx-repository)。 crx-repository目錄的位置是在AEM表單安裝程式期間決定。 AEM儲存庫備份和還原需要資料庫和GDS，才能在AEM表單中取得一致的AEM表單資料。 AEM儲存庫包含Correponsement Management Solution、Forms Manager和AEM Forms Workspace的資料。
+如果在安裝AEM表單時設定crx-repository，則會建立AEM資料庫(crx-repository)。 crx-repository目錄的位置是在AEM表單安裝程式期間決定。 AEM儲存庫備份和還原需要資料庫和GDS，才能在AEM表單中取得一致的AEM表單資料。 AEM儲存庫包含Correponsement Management Solution、Forms Manager和AEM Forms Workspace的資料。
 
 ### 通信管理解決方案 {#correspondence-management-solution}
 
