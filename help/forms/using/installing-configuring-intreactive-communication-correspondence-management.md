@@ -7,7 +7,10 @@ uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+workflow-type: tm+mt
+source-wordcount: '1482'
+ht-degree: 1%
 
 ---
 
@@ -41,16 +44,16 @@ AEM Forms Interactive Communications會在AEM Forms的「作者」例項上執�
 * AEM例項的安裝路徑不包含空格。
 * AEM例項已啟動並執行。 在AEM術語中，「例項」是在作者或發佈模式下伺服器上執行的AEM復本。 您至少需要一個AEM例項（作者或處理）才能執行AEM Forms互動式通訊和通訊管理功能：
 
-   * **作者**:用於建立、上傳和編輯內容以及管理網站的AEM例項。 內容一旦準備好上線，就會複製到發佈實例。
-   * **** 處理：處理例項是硬 [化的AEM Author例項](/help/forms/using/hardening-securing-aem-forms-environment.md) 。 您可以設定Author例項，並在執行安裝後加強它。
-   * **發佈**:透過網際網路或內部網路為大眾提供已發佈內容的AEM例項。
+   * **作者**: 用於建立、上傳和編輯內容以及管理網站的AEM例項。 內容一旦準備好上線，就會複製到發佈實例。
+   * **處理：** 處理例項是硬 [化的AEM Author例項](/help/forms/using/hardening-securing-aem-forms-environment.md) 。 您可以設定Author例項，並在執行安裝後加強它。
+   * **發佈**: 透過網際網路或內部網路為大眾提供已發佈內容的AEM例項。
 
 * 符合記憶體需求。 AEM Forms附加元件套件需要：
 
-   * 15 GB的臨時空間，用於基於Microsoft windows的安裝。
+   * 15 GB的臨時空間，用於基於Microsoft Windows的安裝。
    * 6 GB的臨時空間，用於基於UNIX的安裝。
 
-* 基於UNIX的系統的額外要求：如果您使用基於UNIX的作業系統，請從相應作業系統的安裝介質安裝以下軟體包。
+* 基於UNIX的系統的額外要求： 如果您使用基於UNIX的作業系統，請從相應作業系統的安裝介質安裝以下軟體包。
 
 <table> 
  <tbody> 
@@ -103,7 +106,7 @@ AEM Forms有一些必備和選用的設定。 必備配置包括配置BuncyCastl
 
 ### 強制安裝後配置 {#mandatory-post-installation-configurations}
 
-#### 配置RSA和BuncyCastle庫 {#configure-rsa-and-bouncycastle-libraries}
+#### 配置RSA和BuncyCastle庫  {#configure-rsa-and-bouncycastle-libraries}
 
 對所有「作者」(Author)和「發佈」(Publish)實例執行以下步驟以引導委派庫：
 
@@ -130,11 +133,11 @@ AEM Forms有一些必備和選用的設定。 必備配置包括配置BuncyCastl
 
 #### 設定序列化代理 {#configure-the-serialization-agent}
 
-對所有「作者」和「發佈」實例執行以下步驟，以將軟體包列入白名單：
+對所有「作者」(Author)和「發佈」(Publish)實例執行以下步驟，將包添加到allowlist:
 
 1. 在瀏覽器視窗中開啟AEM Configuration Manager。 預設URL為 `https://[server]:[port]/system/console/configMgr`。
 1. 搜尋並開啟還原 **序列化防火牆設定**。
-1. 將 **sun.util.calendar** 包添加到白 **名單欄位** 。 按一下「儲存」。
+1. 將 **sun.util.calendar** 包添加到 **allowlist** 欄位。 按一下「儲存」。
 1. 對所有「作者」和「發佈」例項重複步驟1-3。
 
 ### 可選安裝後配置 {#optional-post-installation-configurations}
@@ -152,7 +155,7 @@ AEMFD相容性套件可讓您使用AEM 6.3 Forms和AEM 6.2 Forms on AEM 6.4 Form
 
 #### 配置Dispatcher {#configure-dispatcher}
 
-Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保護AEM伺服器不受攻擊。 您可搭配使用Dispatcher與企業級Web伺服器，以提高AEM例項的安全性。 如果您使 [用Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
+Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保護AEM伺服器不受攻擊。 您可搭配使用Dispatcher與企業級Web伺服器，以提高AEM例項的安全性。 如果您使 [用Dispatcher](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)，請針對AEM Forms執行下列設定：
 
 1. 設定AEM Forms的存取權：
 
@@ -160,7 +163,7 @@ Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   儲存並關閉檔案。 有關篩選器的詳細資訊，請參 [閱Dispatcher文檔](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html)。
+   儲存並關閉檔案。 有關篩選器的詳細資訊，請參 [閱Dispatcher文檔](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html)。
 
 1. 設定反向連結篩選服務：
 
@@ -170,9 +173,9 @@ Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保�
 
 如果您的客戶提供的體驗不吸引人，他們可能會放棄互動式通訊。 雖然這令客戶感到挫折，但也可以提升組織的支援數量和成本。 識別並提供適當的客戶體驗以提高轉化率，這既重要，也極具挑戰性。 AEM表格是此問題的關鍵。
 
-AEM表單與Adobe Marketing cloud解決方案Adobe Target整合，跨多個數位通道提供個人化且吸引人的客戶體驗。 若要使用Adobe target個人化互動式通訊，請 [將Adobe Target與AEM Forms整合](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)。
+AEM表單與Adobe Marketing Cloud解決方案Adobe Target整合，跨多個數位通道提供個人化且吸引人的客戶體驗。 若要使用Adobe Target個人化互動式通訊，請 [將Adobe Target與AEM Forms整合](/help/forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)。
 
-#### 為表單資料模型配置SSL通信 {#configure-ssl-communcation-for-form-data-model}
+#### 為表單資料模型配置SSL通信  {#configure-ssl-communcation-for-form-data-model}
 
 您可以為表單資料模型啟用SSL通訊。 若要啟用表單資料模型的SSL通訊，請在啟動任何AEM Forms例項之前，將憑證新增至所有例項的Java信任存放區。 您可以執行以下命令來添加證書：
 
