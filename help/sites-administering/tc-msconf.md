@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: ec8492b5190ea9006d80269aa97849a5ee3af95e
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
 1. 輸入您設定的標題。 標題可識別雲端服務主控台以及頁面屬性下拉式清單中的設定。 預設名稱是以標題為基礎。 （可選）鍵入用於儲存配置的儲存庫節點的名稱。 您應使用「父配置」屬性的預設值，該屬性是儲存庫節點的路徑。
-1. 按一下 建立。
+1. 按一下建立。
 1. 在出現的對話方塊中，輸入屬性值，然後按一下「確定」。
 
 ## Microsoft Translator雲端服務配置示例 {#sample-microsoft-translator-cloud-service-configurations}
@@ -79,6 +82,6 @@ Microsoft Translator試用版授權- Geometrixx-outdoors組態是與Geometrixx O
 
 您需要啟用雲端服務設定，以支援複製至發佈例項的翻譯內容。 使用激活完 [整部分（樹）](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) ，激活儲存Microsoft Translator或第三方雲服務配置的儲存庫節點。 節點位於以下父節點下：
 
-* Microsoft翻譯服務：/etc/cloudservices/msft-translation
-* 第三方翻譯：/etc/cloudservices/machine-translation
+* Microsoft翻譯服務： /libs/settings/cloudconfigs/translation/msft-translation
+* 第三方翻譯： /etc/cloudservices/machine-translation
 
