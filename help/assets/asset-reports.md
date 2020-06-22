@@ -3,9 +3,9 @@ title: 有關數位資產的使用與分享的報告。
 description: 有關您資產的報 [!DNL Adobe Experience Manager Assets] 告，可協助您瞭解數位資產的使用、活動和共用。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3caa4ffb4fd1f7c43d3bb1bf5ec59c9ee80a7937
+source-git-commit: a5e9b38cd7ed7a513c2ca6b6c0c3b5d0830dfdab
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1056'
 ht-degree: 8%
 
 ---
@@ -60,6 +60,10 @@ ht-degree: 8%
    >[!NOTE]
    >
    >依預設，「內容片段」和連結分享會包含在「已下載資產」報表中。 選取適當的選項，以建立連結共用的報表，或從下載報表中排除內容片段。
+
+   >[!NOTE]
+   >
+   >「下 [!UICONTROL 載] 」報表只會顯示個別選取及下載之資產的詳細資訊。 但是，它不包含已下載資料夾中資產的詳細資料。
 
 1. 在儲存報表的CRX儲存庫中設定報表詳細資訊，例如標題、說明、縮圖和資料夾路徑。 預設情況下，資料夾路徑為 `/content/dam`。 您可以指定不同的路徑。
 
