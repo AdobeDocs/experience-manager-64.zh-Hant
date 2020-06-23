@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 9fa89ca34843d41a5ab5711c1090fcc7a1077760
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -48,73 +48,69 @@ AEM Communities的訊息功能可讓登入網站訪客（成員）彼此傳送�
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-* **[!UICONTROL 消息欄位允許列]**&#x200B;表指定合成消息元件用戶可以編輯和保存的屬性。 如果新增了表單元素，則需要新增元素ID，才能儲存在SRP中。 預設為兩個項目： *主題* 和 *內容*。
-**[!UICONTROL 消息框大小限]**&#x200B;制每個用戶消息框中的最大位元組數。 預設 *為1073741824* (1 GB)。**
+* **[!UICONTROL 消息欄位允許列]**&#x200B;表指定合成消息元件用戶可以編輯和保存的屬性。 如果新增了表單元素，則需要新增元素ID，才能儲存在SRP中。 預設為兩個項目： 
+*主題* 和 *內容*。
 
-* **[!UICONTROL 消息計數限制]**&#x200B;每個用戶允許的消息總數。 值-1表示允許的消息數不限，但須受消息框大小限制。 預設值 *為1000* (10k)。
-**[!UICONTROL 通知傳送失敗]**&#x200B;如果勾選，則在某些收件者無法傳送訊息時通知傳送者。 已勾選預 *設值*。*
+* **[!UICONTROL 消息框大小限]**&#x200B;制每個用戶消息框中的最大位元組數。 預設值為 
+*1073741824* (1 GB)。
 
-* **[!UICONTROL 失敗傳送傳送者id]**&#x200B;傳送失敗訊息中顯示之傳送者名稱。 預設值為 *failureNotifier*。
-**[!UICONTROL 失敗消息模板路徑]**&#x200B;傳遞失敗消息模板根的絕對路徑。 預設值 *為/etc/notification/messaging/default*。*
+* **[!UICONTROL 消息計數限制]**&#x200B;每個用戶允許的消息總數。 值-1表示允許的消息數不限，但須受消息框大小限制。 預設值為 
+*10000* (10k)。
 
-* **[!UICONTROL maxRetries.name]**&#x200B;嘗試重新傳送失敗訊息的次數。 預設值 *為3*。
-**[!UICONTROL minWaitBetweenRetries.name]**&#x200B;在嘗試重新傳送訊息失敗時，等待的秒數。 預設值為*100 *（秒）。*
+* **[!UICONTROL 通知傳送失敗]**&#x200B;如果勾選，則在某些收件者無法傳送訊息時通知傳送者。 預設值為 
+*已勾選*.
 
-* **[!UICONTROL 計數更新池大]**&#x200B;小用於計數更新的併發線程數。 預設值 *為10*。
-**[!UICONTROL inbox.path.name]**(*必要*)用於資料夾的路徑(相對於用戶節點(/home/users/*username*) **`inbox`** 。 路徑不能以尾隨正斜線&#39;/&#39;結束。 預設值 *為/mail/inbox* 。*
+* **[!UICONTROL 失敗傳送傳送者id]**&#x200B;傳送失敗訊息中顯示之傳送者名稱。 預設值為 
+*failureNotifier*。
 
-* **[!UICONTROL sentitems.path.name]**(*必要*)用於資料夾的路徑，相對於使用者節點(/home/users/*username*) **`senditems`** 。 路徑不能以尾隨正斜線&#39;/&#39;結束。 預設值 *為/mail/sentitems* 。
-**[!UICONTROL supportAttachments.name]**&#x200B;如果選中，用戶可以將附件添加到其郵件中。 已勾選預 *設值*。*
+* **[!UICONTROL 失敗消息模板路徑]**&#x200B;傳遞失敗消息模板根的絕對路徑。 預設值為 
+*/etc/notification/messaging/default*。
 
-* **[!UICONTROL batchSize.name傳]**&#x200B;送給大量收件者時，要一起批次傳送的訊息數。 預設值 *為100*。
-**[!UICONTROL maxTotalAttachmentSize.name]**&#x200B;如果選中supportAttachments，此值將指定所有附件的最大允許總大小（以位元組為單位）。 預設值 *為104857600* (100 MB)。*
+* **[!UICONTROL maxRetries.name]**&#x200B;嘗試重新傳送失敗訊息的次數。 預設值為 
+*3*.
 
-* **[!UICONTROL attachmentTypeAllowlist.name]**&#x200B;副檔名的區塊清單，前置詞為&#39;**。**&#x200B;被制度拒絕。 如果未列出阻止，則允許擴展。 可使用「**+**」和「**-**」圖示新增或移除延伸模組。 預設值 *為DEFAULT*。
+* **[!UICONTROL minWaitBetweenRetries.name]**&#x200B;在嘗試重新傳送訊息失敗時，等待的秒數。 預設值為*100 *（秒）。
 
-* **[!UICONTROL allowedAttachmentTypes.name]**
+* **[!UICONTROL 計數更新池大]**&#x200B;小用於計數更新的併發線程數。 預設值為 
+*10*.
 
-**(需&#x200B;*要操作*** )檔案副檔名的允許清單，與塊清單相反。 要允許除列出的塊外的所有檔案副檔名，請使用「**-**」表徵圖刪除單個空條目。
+* **[!UICONTROL inbox.path.name]**(
+*必要*)相對於使用者節點(/home/users/*username*)的路徑，用於資料 **`inbox`** 夾。 路徑不能以尾隨正斜線&#39;/&#39;結束。 預設值 *為/mail/inbox* 。
 
-* **[!UICONTROL serviceSelector.name]**(*必要*)調用服務的絕對路徑（端點）（虛擬資源）。 所選路徑的根必須包含在OSGi配置的「 *Execution Paths* （執行路徑）」配 [ 置設定中， `Apache Sling Servlet/Script Resolver and Error Handler`[#$tu39]如 `/bin/`、 `/apps/`和中 `/services/`。 要為站點的消息功能選擇此配置，此端點將作為 **`Service selector`** 的值提 `Message List and Compose Message components` 供(請 [參閱消息功能](configure-messaging.md))。 預設值為 */bin/messaging* 。
+* **[!UICONTROL sentitems.path.name]**(
+*必要*)相對於使用者節點(/home/users/*username*)的路徑，用於資料 **`senditems`** 夾。 路徑不能以尾隨正斜線&#39;/&#39;結束。 預設值 *為/mail/sentitems* 。
 
+* **[!UICONTROL supportAttachments.name]**&#x200B;如果選中，用戶可以將附件添加到其郵件中。 預設值為 
+*已勾選*.
 
-* 
+* **[!UICONTROL batchSize.name傳]**&#x200B;送給大量收件者時，要一起批次傳送的訊息數。 預設值為 
+*100*.
 
+* **[!UICONTROL maxTotalAttachmentSize.name]**&#x200B;如果選中supportAttachments，此值將指定所有附件的最大允許總大小（以位元組為單位）。 預設值為 
+*104857600* (100 MB)。
 
-* 
-
-
-* 
-
-
-* 
-*104857600* (100 MB).
-
-* **[!UICONTROL attachmentTypeAllowlist.name]**
-A blocklist of file extensions, prefixed with &#39;
-**.**&#39;, that will be rejected by the system. If not blocklisted, then the extension is allowed. Extensions may be added or removed using the &#39;**+**&#39; and &#39;**-**&#39; icons. Default is *DEFAULT*.
+* **[!UICONTROL attachmentTypeBlocklist.name]**&#x200B;副檔名的區塊清單，前置詞為&#39;
+**。**&#x200B;被制度拒絕。 如果未列出阻止，則允許擴展。 可使用「**+**」和「**-**」圖示新增或移除延伸模組。 預設值 *為DEFAULT*。
 
 * **[!UICONTROL allowedAttachmentTypes.name]**
 
-   **(*Action Required*)** An allowlist of file extensions, the opposite of the blocklist. To allow all file extensions, except for those blocklisted, use the &#39;**-**&#39; icon to remove the single empty entry.
+   **(需&#x200B;*要操作*** )檔案副檔名的允許清單，與塊清單相反。 要允許除列出的塊外的所有檔案副檔名，請使用「**-**」表徵圖刪除單個空條目。
 
-* **[!UICONTROL serviceSelector.name]**
-(*Required*) An absolute path (endpoint) through which the service is invoked (a virtual resource). The root of the path chosen must be one included in the *Execution Paths* configuration setting of OSGi config [ `Apache Sling Servlet/Script Resolver and Error Handler`-ERR:REF-NOT-FOUND-, such as `/bin/`, `/apps/`, and `/services/`. To select this configuration for a site&#39;s messaging feature, this endpoint is provided as the **`Service selector`** value for the `Message List and Compose Message components` (see [Message Feature](configure-messaging.md)). The default is */bin/messaging* .
+* **[!UICONTROL serviceSelector.name]**(*必要*)調用服務的絕對路徑（端點）（虛擬資源）。 所選路徑的根必須包含在OSGi配置的「 *Execution Paths* （執行路徑）」配 [ 置設定中， `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)如 `/bin/`、 `/apps/`和中 `/services/`。 要為站點的消息功能選擇此配置，此端點將作為 **`Service selector`** 的值提 `Message List and Compose Message components` 供(請 [參閱消息功能](configure-messaging.md))。 預設值為 */bin/messaging* 。
 
-* **[!UICONTROL fieldAllowlist.name]**
-Use 
-**Message Fields Allowlist**.
+* **[!UICONTROL fieldAllowlist.name]** Use 
+**消息欄位允許清單**。
 
 >[!CAUTION]
 >
->Each time a `Messaging Operations Service` configuration is opened for edit, if `allowedAttachmentTypes.name` had been removed, an empty entry is re-added to make the property configurable. A single empty entry effectively disables file attachments.
+>每次開啟 `Messaging Operations Service` 配置進行編輯時，如果已刪 `allowedAttachmentTypes.name` 除，則會重新添加一個空條目，使屬性可配置。 單個空條目有效地禁用檔案附件。
 >
->To allow all file extensions, except for those blocklisted, use the &#39;**-**&#39; icon to (again) remove the single empty entry before clicking **[!UICONTROL Save]**.
+>要允許除列出的塊外的所有檔案副檔名，請使用「**-**」表徵圖刪除單個空條目（再次），然後按一下「保 **[!UICONTROL 存」]**。
 
-## Troubleshooting {#troubleshooting}
+## 疑難排解 {#troubleshooting}
 
-One way to troubleshoot problems is to enable [debugging messages in the log.](../../help/sites-administering/troubleshooting.md)
+疑難排解問題的一種方式是啟用 [記錄檔中的除錯訊息。](../../help/sites-administering/troubleshooting.md)
 
-See also [Loggers and Writers for Individual Services](../../help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services).
+另請參閱 [個別服務的記錄者和撰寫者](../../help/sites-deploying/configure-logging.md#loggers-and-writers-for-individual-services)。
 
-The package to monitor is `com.adobe.cq.social.messaging`.
+要監視的包是 `com.adobe.cq.social.messaging`。
