@@ -10,14 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '1776'
+ht-degree: 1%
 
 ---
 
 
 # 設定Adobe Analytics的視訊追蹤{#configuring-video-tracking-for-adobe-analytics}
 
-有數種可追蹤視訊事件的方法，其中2種是舊版Adobe Analytics的舊版選項。 這些舊版選項包括：舊里程碑和舊秒數。
+有數種可追蹤視訊事件的方法，其中2種是舊版Adobe Analytics的舊版選項。 這些舊版選項包括： 舊里程碑和舊秒數。
 
 >[!NOTE]
 >
@@ -78,7 +81,7 @@ XX字尾是定義里程碑的軌道偏移。 例如，指定4、8、16、20和28
   </tr> 
   <tr> 
    <td>eventdata.videoName </td> 
-   <td>若在DAM中設定，則映射 <strong>至此變數的變數將包含視訊的</strong> (<strong>Title</strong>)使用者友好名稱；如果未設定，則會改 <strong>為傳送視訊</strong> 的檔案名稱。 播放視訊時，只傳送一次。</td> 
+   <td>若在DAM中設定，則映射 <strong>至此變數的變數將包含視訊的</strong> (<strong>Title</strong>)使用者友好名稱； 如果未設定，則會改 <strong>為傳送視訊</strong> 的檔案名稱。 播放視訊時，只傳送一次。</td> 
   </tr> 
   <tr> 
    <td>eventdata.videoFileName </td> 
@@ -110,7 +113,7 @@ XX字尾是定義里程碑的軌道偏移。 例如，指定4、8、16、20和28
   </tr> 
   <tr> 
    <td>eventdata.a.contentType </td> 
-   <td>每個里程碑都傳送；在Adobe Analytics呼叫中顯示為pev3，通常以「視訊」傳送<br /> </td> 
+   <td>每個里程碑都傳送； 在Adobe Analytics呼叫中顯示為pev3，通常以「視訊」傳送<br /> </td> 
   </tr> 
   <tr> 
    <td>eventdata.a.media.name </td> 
@@ -137,7 +140,7 @@ XX字尾是定義里程碑的軌道偏移。 例如，指定4、8、16、20和28
 
 1. 若要將CQ變數對應至Adobe Analytics屬性，請從元件上CQ變數旁的ContentFinder拖曳Adobe Analytics屬性。
 
-   如需最佳化映射的詳細資訊，請參 [閱Adobe Analytics中的測量視訊](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html) 。
+   如需最佳化映射的詳細資訊，請參 [閱Adobe Analytics中的測量視訊](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) 。
 
 1. [將架構新增](/help/sites-administering/adobeanalytics.md) 至頁面。
 1. 若要在「預覽」模式中測 **試設定**，請播放影片以取得要觸發的Adobe Analytics呼叫。
@@ -272,7 +275,7 @@ eventdata.events.milestoneXX
 
 1. 若要將CQ變數對應至Adobe Analytics屬性，請從元件上CQ變數旁的ContentFinder拖曳Adobe Analytics屬性。
 
-   如需最佳化映射的詳細資訊，請參 [閱Adobe Analytics中的測量視訊](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html) 。
+   如需最佳化映射的詳細資訊，請參 [閱Adobe Analytics中的測量視訊](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) 。
 
 1. [將架構新增](/help/sites-administering/adobeanalytics.md) 至頁面。
 1. 若要在「預覽」模式中測 **試設定**，請播放影片以取得要觸發的Adobe Analytics呼叫。
@@ -287,14 +290,15 @@ eventdata.events.milestoneXX
 
 1. 設定「軌跡偏移」。
 
-   * 例如10,50,75,100
-   此外，傳送至Adobe Analytics的資訊可自訂性較低；僅有3個變數可用於映射：
+   * e.g.10,50,75,100
+
+   此外，傳送至Adobe Analytics的資訊可自訂性較低； 僅有3個變數可用於映射：
 
 <table> 
  <tbody> 
   <tr> 
    <td>eventdata.videoName <br /> </td> 
-   <td>若在DAM中設定，則映射 <strong>至此變數的變數將包含視訊的</strong> (<strong>Title</strong>)使用者友好名稱；如果未設定「標題」，則會改 <strong>為傳送視訊的檔</strong> 案名稱。 播放視訊時，只傳送一次。<br /> </td> 
+   <td>若在DAM中設定，則映射 <strong>至此變數的變數將包含視訊的</strong> (<strong>Title</strong>)使用者友好名稱； 如果未設定「標題」，則會改 <strong>為傳送視訊的檔</strong> 案名稱。 播放視訊時，只傳送一次。<br /> </td> 
   </tr> 
   <tr> 
    <td>eventdata.videoFileName </td> 
@@ -315,7 +319,7 @@ eventdata.events.milestoneXX
 
    呼叫 **中的其餘相關資訊** ，將會連結至名為pev3的 **一** 個變數 **中**。
 
-   **使用Digital** Pulse除錯程式檢視時，使用所提供範例對Adobe Analytics的範例呼叫應如下所示：
+   **使用Digital** Pulse除錯程式檢視時，使用提供範例對Adobe Analytics的範例呼叫應如下所示：
 
    ![lmilestones1](assets/lmilestones1.png)
 
@@ -323,7 +327,7 @@ eventdata.events.milestoneXX
 
    * *Name* —— 視訊檔案的名稱(*film.avi*)
    * *長度* -視訊檔案的長度，以秒為單位(*100*)
-   * *播放器名稱* -用來播放視訊檔案的視訊播放器(*HTML5視訊*)
+   * *播放器名稱* -用於播放視訊檔案的視訊播放器(*HTML5視訊*)
    * *播放秒數總計* -影片播放的秒數總計(*25*)
    * *開始時間戳記* -識別視訊播放開始時間的時間戳記(*1331035567*)
    * *播放作業* -播放作業的詳細資訊。 此欄位指出使用者與視訊的互動方式。 這可能包括資料，例如他們開始播放視訊的位置、他們是否使用視訊滑桿來推進視訊，以及他們停止播放視訊的位置(*L10E24S58L58 —— 視訊在秒內停止。 第10節的25節，然後跳至秒。 48*)
@@ -345,7 +349,7 @@ eventdata.events.milestoneXX
  <tbody> 
   <tr> 
    <td>eventdata.videoName <br /> </td> 
-   <td>若在DAM中設定，則映射 <strong>至此變數的變數將包含視訊的</strong> (<strong>Title</strong>)使用者友好名稱；如果未設定「標題」，則會改 <strong>為傳送視訊的檔</strong> 案名稱。 播放視訊時，只傳送一次。<br /> </td> 
+   <td>若在DAM中設定，則映射 <strong>至此變數的變數將包含視訊的</strong> (<strong>Title</strong>)使用者友好名稱； 如果未設定「標題」，則會改 <strong>為傳送視訊的檔</strong> 案名稱。 播放視訊時，只傳送一次。<br /> </td> 
   </tr> 
   <tr> 
    <td>eventdata.videoFileName </td> 
@@ -374,4 +378,4 @@ eventdata.events.milestoneXX
 
 **本教學課程中使用的參考：**
 
-[0][https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/setup-overview.html)
+[0][https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
