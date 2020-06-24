@@ -10,7 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 6eb03b035793a21eafd120ac848a6d62eaf6e6ec
+workflow-type: tm+mt
+source-wordcount: '6231'
+ht-degree: 1%
 
 ---
 
@@ -34,11 +37,11 @@ AEM 6中的Operations Dashboard可協助系統營運商監控AEM系統狀況。 
 >
 >為了能夠存取「作業控制面板」，登入的使用者必須是「營運商」使用者群組的一部分。 如需詳細資訊，請參閱「使用者、群 [組和存取權限管理」相關檔案](/help/sites-administering/user-group-ac-admin.md)。
 
-## 健康狀況報告 {#health-reports}
+## 健全狀態報表 {#health-reports}
 
 The Health Report system provides on the health of an AEM instance through Sling Health Checks. 這可以透過OSGI、JMX、HTTP要求（透過JSON）或Touch UI來完成。 它提供特定可設定計數器的度量和臨界值，在某些情況下，將提供如何解決問題的資訊。
 
-它具有多項功能，說明如下。
+它有幾項功能，說明如下。
 
 ## 健康狀態檢查 {#health-checks}
 
@@ -50,7 +53,7 @@ The Health Reports interface can be accessed by the **Tools** - **Operations** -
 
 ![chlimage_1-414](assets/chlimage_1-414.png)
 
-卡系統會顯示三種可能的狀態：好 **的**, **警告** , **嚴重**。 狀態是規則和臨界值的結果，可將滑鼠暫留在卡片上，然後按一下動作列中的齒輪圖示來設定：
+卡系統會顯示三種可能的狀態： **確定**, **警告** , **緊急**。 狀態是規則和臨界值的結果，可將滑鼠暫留在卡片上，然後按一下動作列中的齒輪圖示來設定：
 
 ![chlimage_1-415](assets/chlimage_1-415.png)
 
@@ -61,7 +64,7 @@ AEM 6中有兩種類型的健康檢查：
 1. Individual Health Checks
 1. Composite Health Checks
 
-An **Individual Health Check** is a single health check that corresponds to a status card. Individual Health Checks can be configured with rules or thresholds and they can provide one or more hints and links to solve indited health issues. 讓我們以「記錄錯誤」檢查為例：如果實例日誌中有ERROR條目，您將在運行狀況檢查的詳細資訊頁面上找到它們。 在頁面頂部，您將在「診斷工具」部分看到指向「日誌消息」分析器的連結，該連結將使您能夠更詳細地分析這些錯誤並重新配置記錄器。
+An **Individual Health Check** is a single health check that corresponds to a status card. Individual Health Checks can be configured with rules or thresholds and they can provide one or more hints and links to solve indited health issues. 讓我們以「記錄錯誤」檢查為例： 如果實例日誌中有ERROR條目，您將在運行狀況檢查的詳細資訊頁面上找到它們。 在頁面頂部，您將在「診斷工具」部分看到指向「日誌消息」分析器的連結，該連結將使您能夠更詳細地分析這些錯誤並重新配置記錄器。
 
 A **Composite Health Check** is a check that aggregates information from endividual checks.
 
@@ -73,7 +76,7 @@ Composite health checks are configured with the aid of **filter tags**. 在實�
 
 ### Creating an individual Health Check {#creating-an-individual-health-check}
 
-Creating an individual Health Check inverted two steps:實作a Sling Health Check，並新增Dashboard設定節點中Health Check的項目。
+Creating an individual Health Check inverted two steps: 實作a Sling Health Check，並新增Dashboard設定節點中Health Check的項目。
 
 1. 若要建立Sling Health Check，您必須建立實作Sling HealthCheck介面的OSGI元件。 您會將此元件新增至套件中。 元件的屬性將完全標識Health Check。 在安裝此元件後，將自動為Health Check（運行狀況檢查）建立JMX MBean。 如需詳細資 [訊，請參閱Sling Health Check Documentation](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) 。
 
@@ -103,17 +106,18 @@ Creating an individual Health Check inverted two steps:實作a Sling Health Chec
 
    在新節點上應設定以下屬性：
 
-   * **** 名稱： `sling:resourceType`
+   * **名稱：** `sling:resourceType`
 
-      * **** 類型： `String`
-      * **** 值： `granite/operations/components/mbean`
-   * **** 名稱： `resource`
+      * **類型：** `String`
+      * **值：** `granite/operations/components/mbean`
+   * **名稱：** `resource`
 
-      * **** 類型： `String`
-      * **** 值： `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+      * **類型：** `String`
+      * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+
    >[!NOTE]
    >
-   >上面的資源路徑建立如下：如果Health Check的mbean名稱為&quot;test&quot;，請將&quot;test&quot;新增至路徑的結尾 `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
+   >上面的資源路徑建立如下： 如果Health Check的mbean名稱為&quot;test&quot;，請將&quot;test&quot;新增至路徑的結尾 `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
    >
    >因此，最終的路徑是：
    >
@@ -137,7 +141,7 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
 
 1. 前往OSGI主控台的Web組態管理器。 您可以透過存取 `https://serveraddress:port/system/console/configMgr`
 
-1. 搜尋名為 **Apache Sling Composite Health Check的項目**。 在找到它後，請注意已有兩種配置可供使用：一個代表系統檢查，另一個代表安全檢查。
+1. 搜尋名為 **Apache Sling Composite Health Check的項目**。 在找到它後，請注意已有兩種配置可供使用： 一個代表系統檢查，另一個代表安全檢查。
 1. 按配置右側的「+」按鈕，建立新配置。 將會出現新視窗，如下所示：
 
    ![chlimage_1-63](assets/chlimage_1-63.jpeg)
@@ -146,31 +150,34 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
 
    每個配置屬性的用途如下：
 
-   * **** 名稱(hc.name):The name of the Composite Health Check. 建議使用有意義的名稱。
-   * **** 標籤(hc.tags):此Health Check的標籤。 如果此複合健康狀況檢查是另一個複合健康狀況檢查的一部分（例如，在健康狀況檢查的層次中），請添加與此複合相關的標籤。
-   * **** MBean名稱(hc.mbean.name):The name of the Mbean that will be gived to the JMX MBean of this composite health check.
-   * **** 篩選標籤(filter.tags):This is a property specific to composite health checks. 這些是複合應該聚合的標籤。 The composite health check will aggregate under its group all the health checks that have any tag matching any of the filter tags of this composite. 例如，具有filter **test** and **check** 的Health check will aggregate all the individual and composite health checks that have any of the **test and******`hc.tags`checkComposite tags in their tags property(chomposite)。
+   * **名稱(hc.name):** The name of the Composite Health Check. 建議使用有意義的名稱。
+   * **標籤(hc.tags):** 此Health Check的標籤。 如果此複合健康狀況檢查是另一個複合健康狀況檢查的一部分（例如，在健康狀況檢查的層次中），請添加與此複合相關的標籤。
+   * **MBean名稱(hc.mbean.name):** The name of the Mbean that will be gived to the JMX MBean of this composite health check.
+   * **篩選標籤(filter.tags):** This is a property specific to composite health checks. 這些是複合應該聚合的標籤。 The composite health check will aggregate under its group all the health checks that have any tag matching any of the filter tags of this composite. 例如，具有filter **test** and **check** 的Health check will aggregate all the individual and composite health checks that have any of the **test and******`hc.tags`checkComposite tags in their tags property(chomposite)。
+
    >[!NOTE]
    >
    >A new JMX Mbean is created for each new configuration of the Apache Sling Composite Health Check.**
 
-1. 最後，剛建立的複合健康檢查項需要添加到「操作儀表板」配置節點中。 此過程與使用單個健康檢查的過程相同：需要在下 **建立nt:unstructured** 類型的節點 `/apps/settings/granite/operations/hc`。 節點的資源屬性將由OSGI配置中的 **hc.mean.name** 值定義。
+1. 最後，剛建立的複合健康檢查項需要添加到「操作儀表板」配置節點中。 此過程與使用單個健康檢查的過程相同： 需要在下 **建立nt:unstructured** 類型的節點 `/apps/settings/granite/operations/hc`。 節點的資源屬性將由OSGI配置中的 **hc.mean.name** 值定義。
 
    例如，如果您建立了配置並將 **hc.mbean.name** 值設定為 **diskusage**，則配置節點將如下所示：
 
-   * **** 名稱： `Composite Health Check`
+   * **名稱：** `Composite Health Check`
 
-      * **** 類型： `nt:unstructured`
+      * **類型：** `nt:unstructured`
+
    使用下列屬性：
 
-   * **** 名稱： `sling:resourceType`
+   * **名稱：** `sling:resourceType`
 
-      * **** 類型： `String`
-      * **** 值： `granite/operations/components/mbean`
-   * **** 名稱： `resource`
+      * **類型：** `String`
+      * **值：** `granite/operations/components/mbean`
+   * **名稱：** `resource`
 
-      * **** 類型： `String`
-      * **** 值： `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+      * **類型：** `String`
+      * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+
    >[!NOTE]
    >
    >如果您建立邏輯上屬於複合檢查的個別健康檢查（預設情況下，該複合檢查已存在於儀表板中），則它們將自動被捕獲並分組到相應的複合檢查下。 因此，無需為這些檢查建立新的配置節點。
@@ -190,7 +197,7 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
    <td><p>AEM 6.4中已簡 <strong>化此健康狀況檢查</strong>，現在會檢查最近重構的 <code>Oak QueryStats</code> MBean，尤其是屬 <code>SlowQueries </code>性。 如果統計資訊包含任何慢速查詢，則健康檢查返回警告。 否則，它返回「確定」狀態。<br /> </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=querysStatus,type=HealthCheck</a>。</p> </td> 
   </tr> 
   <tr> 
-   <td>觀察佇列長度</td> 
+   <td>觀測佇列長度</td> 
    <td><p>觀察佇列長度會重複所有事件聆聽器和背景觀察器，並將其與 <code>queueSize </code>其和 <code>maxQueueSize</code> 比較：</p> 
     <ul> 
      <li>如果值超過值(即 <code>queueSize</code> 事件將被 <code>maxQueueSize</code> 丟棄時)，則返回嚴重狀態</li> 
@@ -226,7 +233,7 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
        <li>如果45分鐘前狀態不到，則返回「正常」狀態 </li> 
       </ul> </li> 
      <li>如果未滿足這些條件，則返回「確定」狀態</li> 
-    </ul> <p>「嚴重」和「警告」狀態閾值都可配置。 The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>。</p> <p><strong>注意：此 </strong>健康狀態檢查適用於AEM 6.4，並已備份至AEM 6.3.0.1。</p> </td> 
+    </ul> <p>「嚴重」和「警告」狀態閾值都可配置。 The Mbean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=asyncIndexHealthCheck,type=HealthCheck</a>。</p> <p><strong>注意： </strong>AEM 6.4提供此健康狀況檢查，並已備份至AEM 6.3.0.1。</p> </td> 
   </tr> 
   <tr> 
    <td>大型 Lucene 索引</td> 
@@ -234,7 +241,7 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
     <ul> 
      <li>a警告狀態（如果有索引包含超過10億份檔案）</li> 
      <li>a如果索引包含超過15億份檔案，則處於關鍵狀態</li> 
-    </ul> <p>The thresholds are configurable and the MBean for the health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck。</a></p> <p><strong>注意：此 </strong>檢查適用於AEM 6.4，並已備份至AEM 6.3.2.0。</p> </td> 
+    </ul> <p>The thresholds are configurable and the MBean for the health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck:name=largeIndexHealthCheck,type=HealthCheck。</a></p> <p><strong>注意： </strong>此檢查適用於AEM 6.4，並已備份至AEM 6.3.2.0。</p> </td> 
   </tr> 
   <tr> 
    <td>系統維護</td> 
@@ -301,7 +308,7 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
   </tr> 
   <tr> 
    <td>程式碼快取檢查</td> 
-   <td><p>This is a Health Check that verifies forme JVM conditions that can trigger a codeCache bug present in Java 7:</p> 
+   <td><p>This is a Health Check that verifies forme JVM conditions that can trigger a CodeCache bug present in Java 7:</p> 
     <ul> 
      <li>在啟用「程式碼快取」清除的情況下，如果執行個體在Java 7上執行，則傳回警告</li> 
      <li>如果實例在Java 7上運行，且保留代碼快取大小小於最小閾值（預設值為90MB），則返回警告</li> 
@@ -326,15 +333,16 @@ Health Check Dashboard可透過Granite JMX Mbeans與Nagios整合。 下列範例
 
    >[!NOTE]
    >
-   >有關如何在您的系統上安裝Nagios和NRPE的更多資訊，請參閱 [Nagios檔案](https://library.nagios.com/library/products/nagioscore/manuals/)。
+   >有關如何在您的系統上安裝Nagios和NRPE的更多資訊，請參閱 [Nagios Documentation](https://library.nagios.com/library/products/nagioscore/manuals/)。
 
-1. 新增AEM伺服器的主機定義。 這可以透過Nagios XI web介面，使用Configuration Manager:
+1. 新增AEM伺服器的主機定義。 這可以透過Nagios XI Web介面，使用Configuration Manager:
 
    1. 開啟瀏覽器並指向Nagios伺服器。
    1. 按頂 **部菜單** 中的「配置」按鈕。
    1. 在左窗格中，按「Advanced Configuration（高級配置）」下 **的「Core Config Manager** (核心配 **置管理器)」**。
    1. 按「監 **視** 」部分下的 **Hosts** 連結。
    1. 添加主機定義：
+
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
    以下是主機配置檔案的示例，以防您使用Nagios Core:
@@ -410,9 +418,9 @@ Health Check Dashboard可透過Granite JMX Mbeans與Nagios整合。 下列範例
 範例：
 
 * 如果您計畫捕獲所有 **ERROR** 消息，則無需配置。 預設情況下，將捕獲所有ERROR消息。
-* 如果計畫捕獲所有 **ERROR**、 **WARN** 和 **INFO** messages - the logger name should be set to:&quot;**root**&quot;，和the logger level to:資 **訊**。
+* 如果計畫捕獲所有 **ERROR**、 **WARN** 和 **INFO** messages - the logger name should be set to: &quot;**root**&quot;，和the logger level to: **資訊**。
 
-* 如果您計畫擷取來自特定封裝的所有訊息（例如com.adobe.granite）-記錄器名稱應設為：&quot;com.adobe.granite&quot;和logger level to: **DEBUG** (這將捕獲所有 **ERROR**、 **WARN**、DEBUG Messages中的INFO和 ******** DEBUG消息)，如下圖所示。
+* 如果您計畫擷取來自特定封裝的所有訊息（例如com.adobe.granite）-記錄器名稱應設為： &quot;com.adobe.granite&quot;和logger level to: **DEBUG** (這將捕獲所有 **ERROR**、 **WARN**、 **INFO****** and DEBUG消息，如下圖所示)。
 
 ![chlimage_1-419](assets/chlimage_1-419.png)
 
@@ -550,7 +558,7 @@ UI可用來篩選表格中的索引，方法是在螢幕左上角的搜尋方塊
 
 每日維護視窗的預設時間為2到5 AM。 在週六的上午1點到2點之間，配置為在每週維護窗口中運行的任務將執行。
 
-您也可以按下兩張維護卡上的齒輪圖示來設定計時：
+您也可以按下兩個維護卡上的齒輪圖示來設定計時：
 
 ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -605,7 +613,7 @@ UI可用來篩選表格中的索引，方法是在螢幕左上角的搜尋方塊
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
-**有了AEM 6.4**，您可以按如下方式停止「版本清除」維護任務：
+**有了AEM 6.4**，您可以依下列方式停止「版本清除」維護工作：
 
 * 自動——如果計畫維護窗口在任務完成之前關閉，則任務將自動停止。 下次維護視窗開啟時，它會繼續。
 * 手動——要手動停止任務，請在「版本清除」維護卡上按一下「停 **止** 」表徵圖。 在下次執行時，任務將安全恢復。
