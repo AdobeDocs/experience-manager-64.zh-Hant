@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 211d6f13eba0000bbab92e0bd014420f5ca88e4d
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '4247'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 211d6f13eba0000bbab92e0bd014420f5ca88e4d
 路徑: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 例如，3.5 SDK: [https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
 
-另請參閱 [Adobe檢視器參考指南](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)。
+另請參閱 [Adobe檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
 
 本節說明如何建立、編輯和管理檢視器預設集。 您可以隨時預覽資產，將檢視器預設套用至資產。 請參閱 [套用檢視器預設集](viewer-presets.md)。
 
@@ -37,7 +40,7 @@ source-git-commit: 211d6f13eba0000bbab92e0bd014420f5ca88e4d
 
 所有立即可用的檢視器都支援鍵盤協助功能。
 
-另請參閱 [鍵盤輔助功能和導航](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_keyboard_accessibility.html)。
+另請參閱 [鍵盤輔助功能和導航](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## Managing Dynamic Media viewer presets {#managing-presets}
 
@@ -51,16 +54,16 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 
 ## 對多方互動設計網頁的檢視器支援 {#viewer-support-for-responsive-designed-web-pages}
 
-不同的網頁有不同的需求。 例如，有時您想要的網頁提供在個別瀏覽器視窗中開啟HTML5檢視器的連結。 在其他情況下，可能需要將HTML5檢視器直接內嵌在代管頁面上。 在後一種情況下，網頁可能具有靜態版面。 或者，它可能是互動式 *的* ，並在不同裝置上或不同瀏覽器視窗大小顯示不同。 為滿足這些需求，Dynamic media隨附的所有預先定義、現成可用的HTML5檢視器都支援靜態網頁和互動式設計網頁。
+不同的網頁有不同的需求。 例如，有時您想要的網頁提供在個別瀏覽器視窗中開啟HTML5檢視器的連結。 在其他情況下，可能需要將HTML5檢視器直接內嵌在代管頁面上。 在後一種情況下，網頁可能具有靜態版面。 或者，它可能是互動式 *的* ，並在不同裝置上或不同瀏覽器視窗大小顯示不同。 為滿足這些需求，Dynamic Media隨附的所有預先定義、現成可用的HTML5檢視器都支援靜態網頁和互動式設計網頁。
 
-如需 [如何將互動式檢視器內嵌至網頁的詳細資訊，請參閱](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/c_about_responsive_static_image_library.html) Scene7 Image Serving API說明中的互動式影像庫 ** 。
+如需 [如何將互動式檢視器內嵌至網頁的詳細資訊，請參](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)** 閱「影像伺服API說明」中的「互動式影像庫」。
 
 >[!NOTE]
 >
 >請注意，您必須先發佈所有立即可用的檢視器，才能首次使用。\
 >請參 [閱Publishing Viewer預設集。](#publishing-viewer-presets)
 
-## 檢視器預設集系統相容性 {#viewer-preset-system-compatibility}
+## 檢視器預設集系統相容性  {#viewer-preset-system-compatibility}
 
 動態媒體隨附的所有現成可用的檢視器預設集都與下列系統完全相容：
 
@@ -69,7 +72,7 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 * Apple iPad
 * Android Smartphone
 * Android Tablet
-* 對於視訊，Blackberry和 [Windows Phone提供MP4播放](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) 的額外支 [](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)援。
+* 針對視訊，Blackberry和 [Windows Phone 8提供MP4播放的額外支援](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)[](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)。
 
 ### 檢視器預設集的豐富型媒體類型 {#rich-media-types-for-viewer-presets}
 
@@ -79,7 +82,7 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 |:---|:---|
 | **傳送集** | 熱點或影像映射，或兩者都添加到一系列兩個或多個影像中。 客戶可以向左或向右平移影像，然後按一下影像上的熱點以取得其他詳細資訊，或直接從網站的類別、首頁或登陸頁面購買。 |
 | **彈出式縮放** | 在原始影像旁顯示縮放區域的第二個影像。 沒有可使用的控制項——使用者將選取範圍移至要檢視的區域。 |
-|  | 在決定此檢視器的完整頻寬使用時，請考慮主影像和彈出影像都會在檢視器中提供。 主影像大小（「舞台寬度」和「高度」）和「縮放比例」會決定彈出影像大小。 若要避免彈出檔案大小變得過大，請平衡下列兩個值：如果您的主影像大小較大，請降低「縮放比例」值。 （「彈出寬度」和「彈出高度」會決定彈出視窗的大小，但不決定提供給檢視器的彈出影像的大小。） |
+|  | 在決定此檢視器的完整頻寬使用時，請考慮主影像和彈出影像都會在檢視器中提供。 主影像大小（「舞台寬度」和「高度」）和「縮放比例」會決定彈出影像大小。 若要避免彈出檔案大小變得過大，請平衡下列兩個值： 如果您的主影像大小較大，請降低「縮放比例」值。 （「彈出寬度」和「彈出高度」會決定彈出視窗的大小，但不決定提供給檢視器的彈出影像的大小。） |
 |  | 例如，如果您的主影像大小是350 x 350像素，而「縮放系數」是3，則產生的彈出影像是1050 x 1050像素。 如果您的主影像大小是300 x 300像素，而「縮放系數」是4，則彈出影像是1200 x 1200像素。 根據JPEG品質設定（建議的設定介於80-90之間），您可以大幅降低檔案大小。 建議的縮放系數為2.5到4，視主影像大小而定。 |
 | **內嵌縮放** | 在原始檢視器中顯示縮放區域的影像。 沒有可使用的控制項。 也就是說，使用者會將選取範圍移至要檢視的區域。 |
 | **影像集** | 在「影像集」檢視器中，使用者可以按一下縮圖影像，以看到項目的不同檢視或顏色變化。 此檢視器也提供縮放工具，以密切檢查影像。 |
@@ -89,21 +92,21 @@ You can add, edit, delete, publish, unpublish, and preview viewer presets in AEM
 | **全景影像** | 全景影像和全景VR檢視器可演算球面全景影像，讓使用者體驗360°的房間、房產、位置或風景觀賞體驗。 |
 |  | 若要將上傳的影像符合球形全景，它必須具備下列其中一項或兩項： <ul><li>寬高比為2:1。</li><li>使用等長方形、球形和全景、球形和全景的關鍵字加上標籤。 請參 [閱使用標籤](../sites-authoring/tags.md)。</li></ul> |
 |  | 外觀比例和關鍵字准則都適用於資產詳細資料頁面和「全景媒體」WCM元件的全景資產。 |
-|  | 重要：此檢視器僅適用於動態媒體- Scene7模式。 |
+|  | 重要： 此檢視器僅適用於動態媒體- Scene7模式。 |
 | **迴轉集** | 提供影像的多種檢視，讓使用者可以旋轉物件來檢查不同的側面和角度。 |
 | **影片** | 使用漸進式或可調式位元速率串流來播放視訊。 可調式位元速率串流會自動執行裝置和頻寬偵測，以適當的格式提供適當品質的視訊。 |
-| **垂直縮放** | 「垂直縮放」檢視器可讓您最大化產品影像檢視體驗，讓您的使用者獲得最佳的產品呈現。 色票的垂直位置會執行下列動作： <ul><li>確保色票在折疊上方。 使用水準色票時，視使用者的案頭螢幕大小而定，除非使用者向下捲動頁面，否則無法顯示色票。 將色票垂直放置在檢視器中，可確保不論使用者的螢幕大小，都能顯示色票。</li><li>最大化主映像大小。 使用水準色票時，必須保留頁面上的空間，以確保它們可見。 此定位可縮小主影像的大小。 但是，使用垂直色票版面時，您不需要分配此空間。 因此，您可以將主影像大小最大化。</li></ul> |
+| **垂直縮放** | 「垂直縮放」檢視器可讓您最大化產品影像檢視體驗，讓您的使用者獲得最佳的產品呈現。 色票的垂直位置會執行下列動作： <ul><li>確保色票在折疊上方。 使用水準色票時，視使用者的案頭螢幕大小而定，除非使用者向下捲動頁面，否則無法顯示色票。 將色票垂直放置在檢視器中，可確保不論使用者的螢幕大小，都能顯示色票。</li><li>最大化主映像大小。 使用水準色票時，必須保留頁面上的空格，以確保其可見。 此定位可縮小主影像的大小。 但是，使用垂直色票版面時，您不需要分配此空間。 因此，您可以將主影像大小最大化。</li></ul> |
 | **縮放** | 可讓使用者按一下區域以放大檢視。 使用者可以按一下控制項來放大、縮小並將影像重設為預設大小。 |
 
 ## 立即可用的檢視器預設集清單 {#list-of-out-of-the-box-viewer-presets}
 
 下表列出動態媒體隨附的所有預先定義、立即可用的檢視器預設集。
 
-另請參閱檢 [視器參考資料庫範例](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html)[和即時示範](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)。
+另請參閱 <!-- [SAVE THIS REFERENCE Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [即時示範](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)。
 
-如需檢視器支援網頁瀏覽器和作業系統版本的詳細資訊，請參閱檢視器版本注意事項。
+如需檢視器支援的網頁瀏覽器和作業系統版本的詳細資訊，請參閱檢視器版本注意事項。
 
-請參 *閱檢視器參考指南* (Viewers Reference Guide)目錄 [中的檢視器發行說明](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)。
+請參 *閱檢視器參考指南* (Viewers Reference Guide)目錄 [中的檢視器發行說明](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
 
 >[!NOTE]
 >
@@ -208,15 +211,15 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
       視覺編輯器可讓您查看特定屬性對樣式有何影響。 只要設定或調整任何屬性，即可使用編輯器左側的範例，立即查看它對檢視器有何影響。
 
-      檢視器參考指南中的「自訂 *&lt;viewer_name>* Viewer」說明主題說明每種檢視器預設集的CSS樣式 [屬性](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)。
+      檢視器參考指南中的「自訂 *&lt;viewer_name>* Viewer」說明主題說明每種檢視器預設集的CSS樣式 [屬性](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
 
-      例如，如果您要建立類型的檢視器預設集，請參 `Mixed_Media`閱自訂 [混合媒體檢視器](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_mixedmedia_viewer_customizingviewer.html) ，以取得每個屬性的清單和說明。
+      例如，如果您要建立類型的檢視器預設集，請參 `Mixed_Media`閱自訂 [混合媒體檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) ，以取得每個屬性的清單和說明。
 
    * 如果您已在個別的CSS檔案中定義樣式設定，則可將CSS檔案上傳至AEM Assets。 Tap **[!UICONTROL Import CSS]** below the **[!UICONTROL Selected Type]** pull-down menu (you may need to scroll the visual editor up to see it) to find the uploaded CSS file and associate it with the viewer preset.
 
       當您匯入CSS檔案時，視覺編輯器會檢查CSS是否使用正確的檢視器標籤。 例如，如果您要建立縮放檢視器，您匯入的所有CSS規則都必須使用父檢視器元素上定義的檢視器 `.s7mixedmediaviewer` 類別名稱來定義。
 
-      只要正確定義特定檢視器的CSS標籤，您就可匯入任意手工的CSS。 (CSS標籤在檢視器參考指南的「自訂 *&lt;檢視器名稱>* 檢視器」說明 [主題中說明](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/)。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱自 [訂縮放檢視器](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/c_html5_20_zoom_viewer_customizingviewer.html)。)但是，視覺編輯器可能不瞭解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍能運作。
+      只要正確定義特定檢視器的CSS標籤，您就可匯入任意手工的CSS。 (CSS標籤在檢視器參考指南的「自訂 *&lt;檢視器名稱>* 檢視器」說明 [主題中說明](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱自 [訂縮放檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，視覺編輯器可能不瞭解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍能運作。
    >[!NOTE]
    >
    >如果您偏好直接以原始格式編輯CSS，請點選「選取類型」下拉式選單下方的「顯示/隱藏CSS **** 」 (您可能需要向上捲動視覺編輯器才能檢視)。****
@@ -233,7 +236,7 @@ AEM會在從「詳細資料檢視>檢視器」檢視資產時，顯示各種 **[
 
    視覺編輯器中的許多元件都有相關的詳細說明。 展開元件以顯示其相關參數時，這些說明會顯示在藍色方塊中。
 
-   有些檢視器類型具有可讓您在「 **IS Command」 (IS命令) 文字欄位中指定「Image Serving** 」 (影像伺服) 命令的元件。如需您可使用的指令清單，請參 [閱影像伺服API參考](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/image_serving_api_ref.html)。
+   有些檢視器類型具有可讓您在「 **IS Command」 (IS命令) 文字欄位中指定「Image Serving** 」 (影像伺服) 命令的元件。如需您可使用的指令清單，請參 [閱影像伺服API參考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
 
    >[!NOTE]
    >
@@ -282,7 +285,7 @@ When you create or edit an interactive video viewer preset, you access **[!UICON
 
 * 子區段數=捨入至下一個子區段（縮圖數／縮圖面板中可見的位置數，視瀏覽器視窗大小而定）。
 
-   使用上表中的範例，9個縮圖/ 4個插槽= 2.25;檢視器邏輯最多四捨五入3個子區段。
+   使用上表中的範例，9個縮圖/ 4個插槽= 2.25; 檢視器邏輯最多四捨五入3個子區段。
 
 * 縮圖數=最多捨入至下一個縮圖（縮圖數／視訊子區段數）。
 
@@ -309,7 +312,7 @@ When you create or edit an interactive video viewer preset, you access **[!UICON
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Viewer Presets]**.
 1. 在「檢 **[!UICONTROL 視器預設集]****** 」頁面的「狀態」欄標題下，點選切換以啟用或停用檢視器預設集。
 
-   啟動的檢視器預設集會在右側、藍色方塊內切換；停用的檢視器預設集會讓切換畫面出現在左側的淺灰色方塊中。
+   啟動的檢視器預設集會在右側、藍色方塊內切換； 停用的檢視器預設集會讓切換畫面出現在左側的淺灰色方塊中。
 
 ## Publishing Dynamic Media viewer presets {#publishing-viewer-presets}
 
