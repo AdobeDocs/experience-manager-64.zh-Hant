@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2830'
 ht-degree: 4%
 
 ---
@@ -91,11 +91,11 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 ## 動態媒體元件 {#dynamic-media-components}
 
-「元件」中的「動態媒體」標籤下方提供「動 [!UICONTROL 態媒體] 」和「互 [!UICONTROL 動媒體」]。 您可將互動式媒體]元件用於任何互動式資產，例如互動式視訊、互動式影像或轉盤集。 對於所有其他動態媒體元件，請使用動態媒體元件。
+「元件」中的「動態媒體」標籤下方提供「動 [!UICONTROL 態媒體] 」和「互 [!UICONTROL 動媒體」]。 您可將互動 [!UICONTROL 式媒體元件用於任何互動式資產] ，例如互動式視訊、互動式影像或轉盤集。 對於所有其他動態媒體元件，請使用動態媒體元件。
 
 >[!NOTE]
 >
->這些元件預設不可用，在使用之前必須先透過範本編輯器提供。 [在範本編輯器中提](/help/sites-authoring/templates.md#editing-templates-template-authors)供這些元件後，您就可以像新增其他AEM元件一樣，將元件新增至您的頁面。
+>這些元件預設不可用，在使用之前必須先透過範本編輯器提供。 [在範本編輯器中使用](/help/sites-authoring/templates.md#editing-templates-template-authors) 「元件」後，您可以像新增其他AEM元件一樣，將元件新增至頁面。
 
 ![chlimage_1-539](assets/chlimage_1-539.png)
 
@@ -115,6 +115,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 >
 >* 您已啟 [用動態媒體](config-dynamic.md)。 動態媒體預設為停用。
 >* 該影像具有金字塔tiff檔案。 在啟用動態媒體之前匯入的影像沒有金字塔tiff檔案。
+
 >
 
 
@@ -176,8 +177,8 @@ You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edi
 
    例如，您可以使用檢視器修飾元執行下列動作：
 
-   * 將標題檔案與影片https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html建立關聯 [性](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
-   * 將導覽檔案與影片https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html建立關 [聯](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
+   * 將標題檔案與視訊標題關 [聯](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 將導覽檔案與視訊導覽關 [聯](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONTROL Edit]** in the component.
 
