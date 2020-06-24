@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '2894'
+ht-degree: 0%
 
 ---
 
@@ -147,7 +150,7 @@ AEM提供下列Dynamic Media Classic元件：
 
 ### 飛出 {#flyout}
 
-在HTML5 **[!UICONTROL Flyout元件中]** ，資產顯示為分割畫面；將資產保留在指定的大小；右側顯示縮放部分。 點選 **[!UICONTROL 編輯]** ，以設定元件。 使用此元件，您可以設 [定所有Dynamic Media Classic元件的共同設定](#settings-common-to-all-scene-components)。
+在HTML5 **[!UICONTROL Flyout元件中]** ，資產顯示為分割畫面； 將資產保留在指定的大小； 右側顯示縮放部分。 點選 **[!UICONTROL 編輯]** ，以設定元件。 使用此元件，您可以設 [定所有Dynamic Media Classic元件的共同設定](#settings-common-to-all-scene-components)。
 
 >[!NOTE]
 >
@@ -177,9 +180,9 @@ Dynamic Media Classic **[!UICONTROL Image]** （動態媒體經典影像）元�
 
 * **[!UICONTROL 輸出格]**&#x200B;式選擇影像的輸出格式，例如jpeg。 視您選擇的輸出格式而定，您可能會有其他設定選項。 請參 [閱影像預設集最佳實務](/help/assets/managing-image-presets.md#image-preset-options)。
 
-* **[!UICONTROL 銳利]**&#x200B;化選取影像銳利化的方式。 銳利化會在影像預設集最佳實 [務和銳利化最佳實務中](/help/assets/managing-image-presets.md#image-preset-options)[詳細說明](/help/assets/assets/s7_sharpening_images.pdf)。
+* **[!UICONTROL 銳利]**&#x200B;化選取影像銳利化的方式。 「影像預設集」最佳實務和「銳利化」最 [佳實務中會詳細說明](/help/assets/managing-image-presets.md#image-preset-options)[銳利化功能](/help/assets/assets/s7_sharpening_images.pdf)。
 
-* **[!UICONTROL URL修飾元]**：您可以提供額外的Dynamic Media Classic影像指令來變更影像效果。 這些說明在「影像預 [設集」和](/help/assets/managing-image-presets.md) 「命 [令」參考中](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/http_ref/c_command_reference.html)。
+* **[!UICONTROL URL修飾元]**：您可以提供額外的Dynamic Media Classic影像指令來變更影像效果。 這些說明在「影像預 [設集」和](/help/assets/managing-image-presets.md) 「命 [令」參考中](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)。
 
 * **[!UICONTROL 中斷點]**&#x200B;如果您的網站是互動式的，您需要調整中斷點。 中斷點必須以逗號(,)分隔。
 
@@ -238,11 +241,11 @@ Dynamic Media Classic **[!UICONTROL Image]** （動態媒體經典影像）元�
 
 ### 視訊元件 {#video-component}
 
-Dynamic Media Classic **** Video元件（可從側腳的Dynamic Media Classic區段取得）使用裝置和頻寬偵測，為每個螢幕提供正確的視訊。 此元件為HTML5視訊播放器；它是可跨通道使用的單一檢視器。
+Dynamic Media Classic **** Video元件（可從側腳的Dynamic Media Classic區段取得）使用裝置和頻寬偵測，為每個螢幕提供正確的視訊。 此元件為HTML5視訊播放器； 它是可跨通道使用的單一檢視器。
 
 它可用於最適化視訊集、單一MP4視訊或單一F4V視訊。
 
-如需 [視訊](s7-video.md) ，請參閱視訊以取得視訊如何與Dynamic Media Classic整合運作的詳細資訊。 此外，請參 [閱Dynamic Media Classic視訊元件與Foundation video元件](s7-video.md)。
+如需 [視訊](s7-video.md) ，請參閱視訊以取得視訊如何與Dynamic Media Classic整合運作的詳細資訊。 此外，請參 [閱Dynamic Media Classic視訊元件與Foundation Video元件](s7-video.md)。
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
@@ -269,7 +272,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 >* 對於視訊，Dynamic Media Classic內容瀏覽器支援：
    >
    >  
-* 最適化視訊集：容器，以便在多個螢幕上順暢播放所需的所有視訊轉譯
+* 最適化視訊集： 容器，以便在多個螢幕上順暢播放所需的所有視訊轉譯
 >  * 單一MP4視訊
 >  * 單一F4V視訊
 
@@ -327,7 +330,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
-* **[!UICONTROL 資產類]**&#x200B;型在Dynamic Media Classic瀏覽器中，您可以篩選結果以包含下列任一項：影像、範本、視訊和最適化視訊集。 如果您未選取任何資產類型，AEM依預設會搜尋所有資產類型。
+* **[!UICONTROL 資產類]**&#x200B;型在Dynamic Media Classic瀏覽器中，您可以篩選結果以包含下列任一項： 影像、範本、視訊和最適化視訊集。 如果您未選取任何資產類型，AEM依預設會搜尋所有資產類型。
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 
@@ -342,7 +345,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 
 
 
-* **[!UICONTROL 發佈狀態]**&#x200B;您可以根據發佈狀態篩選資產：未發 **[!UICONTROL 布]** 或已 **[!UICONTROL 發佈]**。 如果您未選取任何「發 **[!UICONTROL 布狀態]**」,AEM依預設會搜尋所有發佈狀態。
+* **[!UICONTROL 發佈狀態]**&#x200B;您可以根據發佈狀態篩選資產： **[!UICONTROL 未發佈]** 或 **[!UICONTROL 已發佈]**。 如果您未選取任何「發 **[!UICONTROL 布狀態]**」,AEM依預設會搜尋所有發佈狀態。
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
