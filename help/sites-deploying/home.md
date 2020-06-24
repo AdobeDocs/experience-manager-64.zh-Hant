@@ -4,7 +4,7 @@ seo-title: AEM 6.4部署使用指南
 description: '本指南涵蓋所有AEM部署工作，例如安裝和部署AEM。 '
 seo-description: '涵蓋所有AEM部署工作，例如安裝和部署AEM。 '
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 16%
@@ -39,11 +39,11 @@ ht-degree: 16%
 | [開發使用指南](/help/sites-developing/home.md) | 瞭解如何建立您的AEM實例。 |
 | [管理使用手冊](/help/managing/home.md) | 本指南說明如何成功管理AEM專案。 |
 | [行動使用指南](/help/mobile/home.md) | 本指南說明如何建立和管理行動應用程式的內容。 |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | 本指南說明如何與Livefyre共用使用者產生的內容。 |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 本指南說明如何與Livefyre共用使用者產生的內容。 |
 
 ## 關鍵AEM資源
 
-* [AEM教學課程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM tutorials](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [《 Dispatcher使用手冊》](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL使用指南](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
 * [核心元件使用指南](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
