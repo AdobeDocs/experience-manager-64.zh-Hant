@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2792'
+source-wordcount: '2787'
 ht-degree: 3%
 
 ---
@@ -88,16 +88,16 @@ Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援�
 
 ## 適用於視訊報告的Adobe Analytics報表套裝 {#adobe-analytics-report-suite-for-video-reporting}
 
-使用Adobe Marketing Cloud的「報表套裝管 [理員」](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)，可以設定Analytics報表套裝，讓社群網站能夠提供社群功能的報表。
+使用Adobe Marketing Cloud的「報表套裝管 [理員」](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)，可以設定Analytics報表套裝，讓社群網站能夠提供社群功能的報表。
 
-透過「公司名 [稱」和「使用者名稱」登入](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) Adobe Marketing Cloud [](analytics.md#prerequisites)，您可以設定新的或現有的報表套裝，以便：
+透過使用公 [司名稱和使用者名稱登入Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html)[](analytics.md#prerequisites)，您就可以設定新的或現有的報表套裝：
 
-* [11轉換變數](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) (evar)
+* [11轉換變數](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (evar)
 
    * **`evar1`** 啟用 **`evar11`**
    * 可重複使用（重新命名）現有的evar，或建立新evar以用於社群功能
 
-* [7成功事件](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) （事件）
+* [7成功事件](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) （事件）
 
    * **`event1`** 啟用 **`event7`**
    * 類型 **`Counter`**
@@ -106,7 +106,7 @@ Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援�
    * 可重新使用（重新命名）現有事件或建立新事件以用於社群功能
 
 
-* [視訊管理](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
+* [視訊管理](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
    * 視訊報告主控台
 
@@ -381,7 +381,7 @@ Analytics會自動用於數個Communities功能。
 
 在啟用Analytics並選取雲端設定架構的情況下儲存社群網站後，AEM變數會自動對應至分別以evar1和event1開頭的Analytics evar和事件，並遞增1。
 
-如果使用現有報表套裝來映射evar1到evar11和event1到event7中的任何變數，則必須重新 [](#modifying-analytics-variable-mapping) 映射AEM變數並還原原始對應。
+如果使用現有報表套裝來映射evar1到evar11和event1到event7中的任何變數，則必須重新 [](#modifying-analytics-variable-mapping) 映射AEM變數並還原原始映射。
 
 以下是遵循快速入門教學課程後的預 [設映射範例](getting-started-enablement.md):
 
@@ -419,7 +419,7 @@ Analytics會自動用於數個Communities功能。
 
 啟用Analytics後，在社群網站發佈之前，從左側導軌拖曳所需的Analytics evar或事件並拖曳至對應表格的相關列，即可在架構中變更對應。
 
-若要避免重複映射，請務必將滑鼠指標暫留在行上並選取Analytics變數元素右側的「X」，以移除已取代的Analytics evar或事件。
+若要避免重複映射，請務必將已取代的Analytics evar或事件暫留在行上，並選取顯示在Analytics變數元素右側的&quot;X&quot;，以便從行中移除。
 
 如果「社群」evar和事件覆寫報表套裝中預先存在的映射，則為避免資料遺失，請將「社群」功能的AEM變數指派給其他Analytics evar和／或事件，並還原原始映射。
 
@@ -545,11 +545,11 @@ Adobe Analytics認證會加密。 若要協助作者和發佈者之間複製或�
 
 ## 在Analytics中管理使用者資料 {#manage-user-data-in-analytics}
 
-Adobe Analytics提供可讓您存取、匯出和刪除使用者資料的API。 如需詳細資訊，請參 [閱提交存取權和刪除請求](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)。
+Adobe Analytics提供可讓您存取、匯出和刪除使用者資料的API。 如需詳細資訊，請參 [閱提交存取權和刪除請求](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)。
 
 ## 資源 {#resources}
 
-* Adobe Marketing Cloud: [Analytics說明與參考](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Analytics說明與參考](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics與外部提供者](../../help/sites-administering/external-providers.md)
 
