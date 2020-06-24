@@ -4,7 +4,7 @@ seo-title: AEM 6.4發行說明
 description: AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援的平台、已過時和已移除的功能，以及已知問題。
 seo-description: AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援的平台、已過時和已移除的功能，以及已知問題。
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 14%
@@ -37,7 +37,7 @@ AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援�
 | [開發使用指南](/help/sites-developing/home.md) | 瞭解如何建立您的AEM實例。 |
 | [管理使用手冊](/help/managing/home.md) | 本指南說明如何成功管理AEM專案。 |
 | [行動使用指南](/help/mobile/home.md) | 本指南說明如何建立和管理行動應用程式的內容。 |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | 本指南說明如何與Livefyre共用使用者產生的內容。 |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 本指南說明如何與Livefyre共用使用者產生的內容。 |
 
 ## 關鍵AEM資源
 
@@ -52,6 +52,6 @@ AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援�
 
 ## 版權、授權和免責聲明 {#copyright-licenses-and-disclaimers}
 
-如需詳細資訊，請參閱 [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+For further information see [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 第三方授權通知： [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
