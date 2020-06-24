@@ -10,7 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3350bb2d-78a7-45e2-9816-0277a40d3986
 translation-type: tm+mt
-source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '1222'
+ht-degree: 0%
 
 ---
 
@@ -26,9 +29,9 @@ source-git-commit: 6b38a85f8c6b7dd2f344d977cb24df9a80560d32
 >
 >當您在AEM作者中定位元件時，元件會對Adobe Target進行一連串的伺服器端呼叫，以註冊促銷活動、設定選件及擷取Adobe Target區段（如果已設定）。 AEM發佈至Adobe Target時，不會進行伺服器端呼叫。
 
-## 在您的頁面上使用Adobe target啟用定位 {#enabling-targeting-with-adobe-target-on-your-pages}
+## 在您的頁面上使用Adobe Target啟用定位 {#enabling-targeting-with-adobe-target-on-your-pages}
 
-若要在頁面中使用與Adobe target互動的目標元件，請在元素中加入特定用戶端程 `<head>` 式碼。
+若要在頁面中使用與Adobe Target互動的目標元件，請在元素中加入特定用戶端程 `<head>` 式碼。
 
 ### 標題區 {#the-head-section}
 
@@ -190,11 +193,11 @@ JSP會新增所需的分析javascript物件和用戶端javascript程式庫的參
 
 >[!NOTE]
 >
->依預設，mbox會隱藏- mboxDefault類別會決定此行為。 隱藏mbox可確保訪客在交換預設內容之前不會看到預設內容；但是，隱藏mbox會影響感知的效能。
+>依預設，mbox會隱藏- mboxDefault類別會決定此行為。 隱藏mbox可確保訪客在交換預設內容之前不會看到預設內容； 但是，隱藏mbox會影響感知的效能。
 
 用於建立mbox的預設mbox.js檔案位於 `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`。 若要使用客戶mbox.js檔案，請將檔案新增至Target雲端設定。 要添加檔案，檔案 `mbox.js` 必須在檔案系統上可用。
 
-例如，如果您想要使用 [Marketing Cloud ID服務](https://marketing.adobe.com/resources/help/en_US/mcvid/) ，則需要下載mbox.js，以便其包含以您的租用戶為基礎之變數的 `imsOrgID` 正確值。 此變數是與Marketing Cloud ID服務整合的必要項。 如需詳細資訊，請 [參閱「Adobe Analytics」作為Adobe Target的報表來源](https://marketing.adobe.com/resources/help/en_US/target/a4t/a4t.html) ，以 [及實作之前](https://marketing.adobe.com/resources/help/en_US/target/a4t/c_before_implement.html)。
+例如，如果您想要使用 [Marketing Cloud ID服務](https://docs.adobe.com/content/help/en/id-service/using/home.html) ，則需要下載mbox.js，以便其包含以您的租用戶為基礎之變數的 `imsOrgID` 正確值。 此變數是與Marketing Cloud ID服務整合的必要項。 如需詳細資訊，請 [參閱「Adobe Analytics」作為Adobe Target的報表來源](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) ，以 [及實作之前](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html)。
 
 >[!NOTE]
 >
@@ -204,7 +207,7 @@ JSP會新增所需的分析javascript物件和用戶端javascript程式庫的參
 1. 在樹狀結構中，選取「Adobe Target」，然後在設定清單中，按兩下您的Target設定。
 1. 在設定頁面上，按一下編輯。
 1. 對於自訂mbox.js屬性，按一下「瀏覽」並選取檔案。
-1. 若要套用變更，請輸入Adobe target帳戶的密碼，按一下「重新連線至目標」，然後在連線成功時按一下「確定」。 然後，在「編輯元件」(Edit Component)對話方塊中按一下「確定」(OK)。
+1. 若要套用變更，請輸入Adobe Target帳戶的密碼，按一下「重新連線至目標」，然後在連線成功時按一下「確定」。 然後，在「編輯元件」(Edit Component)對話方塊中按一下「確定」(OK)。
 
 您的Target設定包含自訂mbox.js檔案， [](/help/sites-developing/target.md#the-head-section) 頁面標題區段中的必要程式碼會將檔案新增至用戶端程式庫架構，而非對testandtarget.js程式庫的參考。
 
@@ -222,7 +225,7 @@ JSP會新增所需的分析javascript物件和用戶端javascript程式庫的參
 
 例如，若要停用Geometrixx Demo Site頁面標題元件的定位，請將屬性新增至節 `/apps/geometrixx/components/title/cq:editConfig` 點。
 
-![chlimage_1-174](assets/chlimage_1-174.png)
+![chlimage_1-175](assets/chlimage_1-174.png)
 
 ## 傳送訂單確認資訊至Adobe Target {#sending-order-confirmation-information-to-adobe-target}
 
@@ -230,11 +233,11 @@ JSP會新增所需的分析javascript物件和用戶端javascript程式庫的參
 >
 >如果您未使用DTM，請傳送訂單確認至Adobe Target。
 
-若要追蹤您網站的效能，請從訂購確認頁面傳送購買資訊至Adobe Target。 (請參 [閱Adobe Target檔案中的建立orderConfirmPage Mbox](https://marketing.adobe.com/resources/help/en_US/dtm/target/order-confirmation-mbox.html) 。)當您的MBox名稱為且使用下列特定參數名稱時，Adobe Target會將mbox資料辨識 `orderConfirmPage` 為訂購確認資料：
+若要追蹤您網站的效能，請從訂購確認頁面傳送購買資訊至Adobe Target。 (請參 [閱Adobe Target檔案中的建立orderConfirmPage Mbox](https://docs.adobe.com/content/help/en/dtm/implementing/target/configure-target/mboxes/order-confirmation-mbox.html) 。) 當您的MBox名稱為且使用下列特定參數名稱時，Adobe Target會將mbox資料辨識 `orderConfirmPage` 為訂購確認資料：
 
-* productPurchasedId:識別購買產品的ID清單。
-* orderId:訂單的ID。
-* orderTotal:購買的總金額。
+* productPurchasedId: 識別購買產品的ID清單。
+* orderId: 訂單的ID。
+* orderTotal: 購買的總金額。
 
 建立mbox的轉譯HTML頁面上的程式碼類似下列範例：
 
@@ -314,7 +317,7 @@ String orderID = session.getOrderId();
 
 ## 瞭解Target元件 {#understanding-the-target-component}
 
-Target元件可讓作者從CQ內容元件建立動態mbox。 (請參閱 [內容定位](/help/sites-authoring/content-targeting-touch.md)。)Target元件位於/libs/cq/personalization/components/target。
+Target元件可讓作者從CQ內容元件建立動態mbox。 (請參閱 [內容定位](/help/sites-authoring/content-targeting-touch.md)。) Target元件位於/libs/cq/personalization/components/target。
 
 target.jsp指令碼會存取頁面屬性，以決定要用於元件的定位引擎，然後執行適當的指令碼：
 
@@ -327,9 +330,9 @@ target.jsp指令碼會存取頁面屬性，以決定要用於元件的定位引�
 
 >[!NOTE]
 >
->依預設，mbox會隱藏- mboxDefault類別會決定此行為。 隱藏mbox可確保訪客在交換預設內容之前不會看到預設內容；但是，隱藏mbox會影響感知的效能。
+>依預設，mbox會隱藏- mboxDefault類別會決定此行為。 隱藏mbox可確保訪客在交換預設內容之前不會看到預設內容； 但是，隱藏mbox會影響感知的效能。
 
-當Adobe target推動內容定位時，engine_tnt.jsp指令碼會建立包含定位體驗內容的mbox:
+當Adobe Target推動內容定位時，engine_tnt.jsp指令碼會建立包含定位體驗內容的mbox:
 
 * 根據 `div` Adobe Target API的要 `mboxDefault`求，新增包含類別的元素。
 
