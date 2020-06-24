@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '5374'
+ht-degree: 6%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 * 模擬使用者體驗。
 * 如需更多自訂，請設定Target元件。
 
-您可以使用AEM或Adobe Target作為定位引擎（您必須有有效的Adobe target帳戶才能使用Adobe Target）。 如果您使用Adobe Target，則必須先設定整合。 請參 [閱與Adobe Target整合的指示](/help/sites-administering/target.md)。
+您可以使用AEM或Adobe Target作為定位引擎（您必須有有效的Adobe Target帳戶才能使用Adobe Target）。 如果您使用Adobe Target，則必須先設定整合。 請參 [閱與Adobe Target整合的指示](/help/sites-administering/target.md)。
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -39,7 +42,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!NOTE]
 >
->當您在Adobe target中建立促銷活動時，會指派一個名為的屬 `thirdPartyId` 性給每個促銷活動。 當您在Adobe target中刪除促銷活動時，不會刪除thirdPartyId。 您無法針對不同類 `thirdPartyId` 型(AB、XT)的促銷活動重新使用，且無法手動移除。 為避免此問題，請為每個促銷活動命名一個唯一的名稱；因此，促銷活動名稱無法重複用於不同的促銷活動類型。
+>當您在Adobe Target中建立促銷活動時，會指派一個名為的屬 `thirdPartyId` 性給每個促銷活動。 當您在Adobe Target中刪除促銷活動時，不會刪除thirdPartyId。 您無法針對不同類 `thirdPartyId` 型(AB、XT)的促銷活動重新使用，且無法手動移除。 為避免此問題，請為每個促銷活動命名一個唯一的名稱； 因此，促銷活動名稱無法重複用於不同的促銷活動類型。
 >
 >如果您在相同的促銷活動類型中使用相同的名稱，您將會覆寫現有的促銷活動。
 >
@@ -70,7 +73,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 您也可以從AEM建立和管理Adobe Target活動，並選擇目標引擎- AEM或Adobe Target —— 和選擇活動類型——體驗定位或A/B測試。
 
-此外，您還可以管理所有Adobe target活動的目標和量度，並管理您的Adobe target受眾。 Adobe target活動報告也包含轉換A/B測試得獎者的功能。
+此外，您還可以管理所有Adobe Target活動的目標和量度，並管理您的Adobe Target受眾。 Adobe Target活動報告也包含轉換A/B測試得獎者的功能。
 
 添加活動時，該活動也會出現在「活動」控 [制台中](/help/sites-authoring/activitylib.md)。
 
@@ -102,13 +105,13 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 體驗定位——從AEM管理Adobe Target活動。
    * A/B測試——從AEM在Adobe Target中建立／管理A/B測試活動。
 
-## 定位程式：建立、定位及目標與設定 {#the-targeting-process-create-target-and-goals-settings}
+## 定位程式： 建立、定位及目標與設定 {#the-targeting-process-create-target-and-goals-settings}
 
 定位模式可讓您設定活動的多個方面。 使用下列三步驟程式，建立品牌活動的目標內容：
 
-1. [建立](#create-authoring-the-experiences):新增或移除體驗，並新增每個體驗的選件。
-1. [目標](#target-configuring-the-audiences):指定每個體驗目標的對象。 您可以定位特定對象，如果使用A/B測試決定哪一個體驗的流量百分比。
-1. [目標與設定](#goals-settings-configuring-the-activity-and-setting-goals):排程活動並設定優先順序。 您也可以設定成功度量目標。
+1. [建立](#create-authoring-the-experiences): 新增或移除體驗，並新增每個體驗的選件。
+1. [目標](#target-configuring-the-audiences): 指定每個體驗目標的對象。 您可以定位特定對象，如果使用A/B測試決定哪一個體驗的流量百分比。
+1. [目標與設定](#goals-settings-configuring-the-activity-and-setting-goals): 排程活動並設定優先順序。 您也可以設定成功度量目標。
 
 請依照下列程式，開始活動的內容定位程式。
 
@@ -128,7 +131,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    >
    >若要變更您所使用的活動，請按一下或點選「上 **一步」**。
 
-## 建立：製作體驗 {#create-authoring-the-experiences}
+## 建立： 製作體驗 {#create-authoring-the-experiences}
 
 建立內容定位的步驟包括建立體驗。 在此步驟中，您可以建立或刪除活動的體驗，並新增選件至每個體驗。
 
@@ -303,7 +306,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 如果您決定該選件可用於其他體驗，則可建立自訂選件並 [將其新增至程式庫](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library)。 如需使用選件主控台建立可重複使用選件的詳細資訊，請參 [閱新增選件至選件程式庫](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)。
 
-1. 選擇您要新增選件的體驗。
+1. 選擇要新增選件的體驗。
 1. 若要顯現元件選單，請按一下或點選您要新增選件的目標元件。
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
@@ -324,7 +327,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 您無法將程式庫選件新增至預設體驗。
 
-1. 選擇您要新增選件的體驗。
+1. 選擇要新增選件的體驗。
 1. 若要顯現元件選單，請按一下或點選您要新增選件的目標元件。
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
@@ -340,17 +343,20 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    選件選擇器可讓您瀏覽或篩選選件。 當瀏覽或篩選時，您也可能想要排序選件，並變更檢視選件的方式。 右上方的數字表示目前資料庫中有多少選件可用。
 
    * 按一下或點選「 **瀏覽** 」以導覽至其他資料夾。 導覽窗格隨即開啟，您按一下箭頭即可深入檢視資料夾。 再按一下或點 **選「瀏覽** 」以關閉導覽窗格。
+
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
    * 按一下或點選「 **篩選** 」，以針對關鍵字或標籤篩選選件。 您輸入關鍵字，然後從下拉式選單中選取標籤。 再按一下或點 **選「篩選** 」，以關閉篩選窗格。
+
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
    * 按一下或點選「最新至最舊」旁的箭頭，以變更選件 **的排序方式**。 選件可以從最新到最舊，或從最舊到最新。
+
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
    按一下或點選「檢視方式」旁 **的圖示** ，即可將選件檢視為拼貼或清單。
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 #### 新增自訂選件至程式庫 {#adding-a-custom-offer-to-a-library}
 
@@ -359,7 +365,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 如需使用選件主控台建立可重複使用選件的詳細資訊，請參 [閱新增選件至選件程式庫](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)。
 
 1. 選取體驗以顯示自訂選件。
-1. 按一下或點選自訂選件以顯示選件選單，然後按一下或點選「將選 **件儲存至選件程式庫** 」圖示。
+1. 按一下或點選自訂選件以顯示選件選單，然後按一下或點選「將選件儲 **存至選件程式庫** 」圖示。
 
    ![](do-not-localize/chlimage_1-4.png)
 
@@ -384,7 +390,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 1. 將它儲存回資料庫。 請參 [閱新增自訂選件至資料庫](#adding-a-custom-offer-to-a-library)。
 
-## 目標：設定觀眾 {#target-configuring-the-audiences}
+## 目標： 設定觀眾 {#target-configuring-the-audiences}
 
 定位程式的「 [目標」步驟](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) ，包括將觀眾與您在「建立」步驟中使用的體驗對應。 「目標」頁面顯示每個體驗所定位的對象。 您可以指定或變更每個體驗的對象。 如果您使用Adobe Target，也可以建立A/B測試，讓您針對特定體驗的對象流量百分比進行定位。
 
@@ -426,11 +432,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 1. 輸入百分比，以設定將觀眾流量路由至每個體驗的方式。 總數必須等於100。
 1. （可選）按一下體驗名稱旁的下拉式選單，編輯體驗名稱。
 
-## 目標與設定：設定活動和設定目標 {#goals-settings-configuring-the-activity-and-setting-goals}
+## 目標與設定： 設定活動和設定目標 {#goals-settings-configuring-the-activity-and-setting-goals}
 
 定位程式的「目標與 [設定」步驟](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) ，包括設定品牌活動的行為。 指定活動的開始和結束時間，以及活動優先順序。 此外，您也可追蹤目標。 具體來說，您可以決定要測量哪些活動。
 
-目標量度僅在您將Adobe target用於目標引擎時可用。 您必須至少定義一個目標量度。 如果您已設定Adobe Analytics，且有A4T Analytics雲端設定，則可以選取報表來源是Adobe target還是Adobe Analytics。
+目標量度僅在您將Adobe Target用於目標引擎時可用。 您必須至少定義一個目標量度。 如果您已設定Adobe Analytics，且有A4T Analytics雲端設定，則可以選取報表來源是Adobe Target還是Adobe Analytics。
 
 目標量度僅會針對已發佈的促銷活動進行測量。
 
@@ -438,7 +444,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-如果使用Adobe target做為定位引擎：
+如果使用Adobe Target做為定位引擎：
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -519,7 +525,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
  </tbody> 
 </table>
 
-如需 [成功度量的詳細資訊](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) ，請參閱Adobe Target檔案。
+如需 [成功度量的詳細資訊](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) ，請參閱Adobe Target檔案。
 
 ### 設定設定（AEM定位） {#configuring-settings-aem-targeting}
 
@@ -527,13 +533,13 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 1. 若要指定活動何時啟動，請使用「 **開始** 」下拉式功能表來選取下列值之一：
 
-   * **啟動時**:活動會在包含目標內容的頁面被啟用時開始。
-   * **Specified Date &amp; Time**: A specific time. 選取此選項時，按一下或點選日曆圖示，選取日期，並指定啟動活動的時間。
+   * **啟動時**: 活動會在包含目標內容的頁面被啟用時開始。
+   * **指定的日期和時間**: 特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定啟動活動的時間。
 
 1. 要指定活動何時結束，請使用「結 **束** 」(End)下拉菜單選擇以下值之一：
 
-   * **When Deactivated**: The activity ends when the page that contains the targeted content is deactivated.
-   * **Specified Date &amp; Time**: A specific time. 
+   * **停用時**: 當包含目標內容的頁面停用時，活動便會結束。
+   * **指定的日期和時間**: 特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定結束活動的時間。
 
 1. 要指定活動的優先順序，請使用滑塊選擇「低 **」**、「 **正常**」或「 **高」**。
 
@@ -543,13 +549,13 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 1. 若要指定活動何時啟動，請使用「 **開始** 」下拉式功能表來選取下列值之一：
 
-   * **When Activated**: The activity starts when the page that contains the targeted content is activated.
-   * **Specified Date &amp; Time**: A specific time. 選取此選項時，按一下或點選日曆圖示，選取日期，並指定啟動活動的時間。
+   * **啟動時**: 活動會在包含目標內容的頁面被啟用時開始。
+   * **指定的日期和時間**: 特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定啟動活動的時間。
 
 1. 要指定活動何時結束，請使用「結 **束** 」(End)下拉菜單選擇以下值之一：
 
-   * **When Deactivated**: The activity ends when the page that contains the targeted content is deactivated.
-   * **Specified Date &amp; Time**: A specific time. 
+   * **停用時**: 當包含目標內容的頁面停用時，活動便會結束。
+   * **指定的日期和時間**: 特定時間。 選取此選項時，按一下或點選日曆圖示，選取日期，並指定結束活動的時間。
 
 1. 要指定活動的優先順序，請使用滑塊選擇「低 **」**、「 **正常**」或「 **高」**。
 1. If you have configured Adobe Anaytics with your Adobe Target Account, then you see the **Reporting Source** drop-down menu. 選取 **Adobe Target****或** Adobe Analytics做為來源。
@@ -558,13 +564,13 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
-1. 在「目 **標量度** 」區域的「我的主要目標 **** 」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或觀眾採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) 。
+1. 在「目 **標量度** 」區域的「我的主要目標 **** 」下方，選取您要追蹤的成功量度——轉換、收入、參與——並輸入量度的測量方式 (或觀眾採取哪些動作來指出已達成目標)。請參閱上表中目標量度的定義，並參閱 [Adobe Target成功量度的相關檔案](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以按一下右上角的三個點並選取「重新命名」，以重新命名目 **標**。
 
    如果您需要清除所有欄位，請按一下右上角的三個點，然後選取「清除所 **有欄位」**。
 
-   所有量度也有進階設定，您可加以定義。 選取 **進階設定** ，以存取這些設定。 請參閱上表中如何計算成功度量的定義，並參閱 [Adobe Target檔案](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html)。
+   所有量度也有進階設定，您可加以定義。 選取 **進階設定** ，以存取這些設定。 請參閱上表中如何計算成功度量的定義，並參閱 [Adobe Target檔案](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html)。
 
    >[!NOTE]
    您必須至少定義一個目標。
@@ -588,7 +594,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ## 模擬體驗 {#simulating-an-experience}
 
-模擬訪客的體驗，以驗證頁面內容是否如預期般根據您的目標內容設計顯示。 在模擬時，載入不同的使用者描述檔，並查看該使用者的目標內容。
+模擬訪客的體驗，以驗證頁面內容是否依您所定位內容的設計而如預期顯示。 在模擬時，載入不同的使用者描述檔，並查看該使用者的目標內容。
 
 下列條件會決定模擬訪客體驗時顯示的內容：
 
@@ -601,12 +607,12 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 如果載入描述檔時頁面上出現非預期的內容，請檢查此清單中每個項目的設定。
 
 >[!NOTE]
-如果您使用A/B測試，則模擬體驗時會根據流量百分比顯示。 這由Adobe target控制，可能會導致作者出現意外結果。 （_author活動會與允許在模擬期間重新評估的特定設定同步。）作者可能需要重新整理，才能根據其流量設定來檢視其他體驗。
+如果您使用A/B測試，則模擬體驗時會根據流量百分比顯示。 這由Adobe Target控制，可能會導致作者出現意外結果。 （_author活動會與允許在模擬期間重新評估的特定設定同步。） 作者可能需要重新整理，才能根據其流量設定來檢視其他體驗。
 
 若要模擬訪客的體驗，請使用下列工具：
 
-* 定位模式下的模擬活動：該頁面會顯示目前在Context Hub中選取之使用者的選件。 您可以編輯以使用者為目標的選件。
-* 預覽模式：使用內容中樞來選取符合體驗所依據之區段標準的使用者和位置。 當您的「內容中樞」選項變更時，目標內容會隨之變更。
+* 定位模式下的模擬活動： 該頁面會顯示目前在Context Hub中選取之使用者的選件。 您可以編輯以使用者為目標的選件。
+* 預覽模式： 使用內容中樞來選取符合體驗所依據之區段標準的使用者和位置。 當您的「內容中樞」選項變更時，目標內容會隨之變更。
 
 1. 若要切換至「預覽」模式，請在工具列上按一下或點選「預 **覽」**。
 1. 在工具列上，按一下或點選「內容中樞」圖示。
@@ -672,7 +678,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
   </tr> 
   <tr> 
    <td><strong>準確定位</strong></td> 
-   <td><p>啟用正確定位可讓元件等候用戶端內容或上下文中心資料可用，再將請求傳送至Adobe Target。 它可能會增載入入時間。 製作時，一律會啟用精確定位。</p> <p>如果您選取「準 <strong>確定位</strong> 」核取方塊，mbox會先執行一個 <code>mboxDefine</code> Ajax請求，然後 <code>mboxUpdate</code> 在資料可用時產生Ajax請求。</p> <p>如果您未選取「精確定位 <strong>」核取方塊，mbox會立即執行</strong><code>mboxCreate</code> 導致同步請求的動作（在此例中，並非所有上下文資料都可用）。</p> <p><strong></strong> 注意：對特定元件啟用或停用精確定位不會影響您已全域設定的設定。 您永遠可以在元件中選取「精確定位」來覆寫全域設定。</p> </td> 
+   <td><p>啟用正確定位可讓元件等候用戶端內容或上下文中心資料可用，再將請求傳送至Adobe Target。 它可能會增載入入時間。 製作時，一律會啟用精確定位。</p> <p>如果您選取「準 <strong>確定位</strong> 」核取方塊，mbox會先執行一個 <code>mboxDefine</code> Ajax請求，然後 <code>mboxUpdate</code> 在資料可用時產生Ajax請求。</p> <p>如果您未選取「精確定位 <strong>」核取方塊，mbox會立即執行</strong><code>mboxCreate</code> 導致同步請求的動作（在此例中，並非所有上下文資料都可用）。</p> <p><strong>注意：</strong> 對特定元件啟用或停用精確定位不會影響您已全域設定的設定。 您永遠可以在元件中選取「精確定位」來覆寫全域設定。</p> </td> 
   </tr> 
   <tr> 
    <td><strong>包括已解析的區段</strong></td> 
@@ -707,12 +713,12 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    <td><strong>說明</strong></td> 
   </tr> 
   <tr> 
-   <td><strong>Options for client side - Strategy</strong></td> 
+   <td><strong>用戶端選項——策略</strong></td> 
    <td><p>從以下選項中選擇：</p> 
     <ul> 
-     <li><strong>第一</strong>:清單中最上層的體驗，如促銷活動中的順序。</li> 
-     <li><strong>隨機</strong>:任何體驗都會使用。</li> 
-     <li><strong>點按流分數</strong>:使用用戶端內容中追蹤的標籤和相關標籤點擊。 比較摘要頁面上定義之標籤的點擊率。</li> 
+     <li><strong>第一</strong>: 清單中最上層的體驗，如促銷活動中的順序。</li> 
+     <li><strong>隨機</strong>: 任何體驗都會使用。</li> 
+     <li><strong>點按流分數</strong>: 使用用戶端內容中追蹤的標籤和相關標籤點擊。 比較摘要頁面上定義之標籤的點擊率。</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -720,5 +726,5 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 如果您 **要整合AEM與Adobe Campaign** ，請選取Adobe Campaign作為引擎。 如需詳 [細資訊，請參閱「整合AEM與Adobe Campaign](/help/sites-administering/campaign.md) 」。
 
-如果您 **使用ContextHub進行定位，請選取ContextHub** 作為引擎。 請參 [閱設定ContextHub。](/help/sites-administering/contexthub-config.md)
+如果您 **使用ContextHub進行定位** ，請選取ContextHub做為引擎。 請參 [閱設定ContextHub。](/help/sites-administering/contexthub-config.md)
 
