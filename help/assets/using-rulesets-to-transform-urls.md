@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
+source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+workflow-type: tm+mt
+source-wordcount: '841'
+ht-degree: 5%
 
 ---
 
@@ -22,27 +25,27 @@ source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
 * 添加MIME類型尾碼。 許多服務和網站都需要影像字尾，例如 `.jpg` 新增至URL。
 * 建立URL的資料夾路徑，以利搜尋引擎最佳化(SEO)。
 
-   了 [解Adobe Scene7 Publishing system如何支援搜尋引擎最佳化](/help/assets/assets/s7_seo.pdf)。
+   了 [解Adobe Scene7 Publishing System如何支援搜尋引擎最佳化](/help/assets/assets/s7_seo.pdf)。
 
 * 新增中繼資料至URL，以利搜尋引擎最佳化(Search Engine Optimization)。
 
-   了 [解Adobe Scene7 Publishing system如何支援搜尋引擎最佳化](/help/assets/assets/s7_seo.pdf)。
+   了 [解Adobe Scene7 Publishing System如何支援搜尋引擎最佳化](/help/assets/assets/s7_seo.pdf)。
 
 * 設定內容配置以觸發下載。
 * 簡化影像伺服範本URL以利個人化。 例如，將 `rgb{XX,YY,ZZ}` RTF轉換為 `\redXX\greenYY\blueZZ`
 
-* 請求對某些字元進行編碼( `$`如、 `{`和 `}`)，並向ImageServer解碼某些字元。 例如，Facebook在包含特殊字元的URL上無法正常運作。
+* 要求對某些字元進行編碼( `$`例如 `{`、 `}`和)，並對某些字元進行解碼。 例如，Facebook在包含特殊字元的URL上無法正常運作。
 
    請參 [閱從URL移除特殊字元](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html)。
 
-在Dynamic media中，使用XML系統來管理資產資訊的網站可將XML檔案上傳至Dynamic Media。 您可以指定其中一個檔案為提供動態媒體資產的預處理規則集檔案。 此檔案會重新架構標準URL通訊協定格式，以符合與Dynamic media整合之系統的商業邏輯。 您可以指定XML檔案作為規則集定義檔案路徑。
+在Dynamic Media中，使用XML系統來管理資產資訊的網站可將XML檔案上傳至Dynamic Media。 您可以指定其中一個檔案為提供動態媒體資產的預處理規則集檔案。 此檔案會重新架構標準URL通訊協定格式，以符合與Dynamic Media整合之系統的商業邏輯。 您可以指定XML檔案作為規則集定義檔案路徑。
 
 >[!CAUTION]
 >
->使用規則集時請謹慎；它們可防止動態媒體內容顯示在您的網站上。
+>使用規則集時請謹慎； 它們可防止動態媒體內容顯示在您的網站上。
 
 有可用的範例規則集可協助您建立自己的規則集。\
-請參 [閱規則集參考](https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/c_rule_set_reference.html)。
+請參 [閱規則集參考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
 
 如同建立所有規則集一樣，請使用XMLVALID等XML驗證程式，在上傳XML檔案之前，先確定其有效性。\
 另請參閱 [疑難排解規則集](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)。
@@ -66,7 +69,7 @@ source-git-commit: ea520d6a1b714a21f2b3aeb36932a50d958bd162
 
 1. 執行下列動作，上傳規則集檔案：
 
-   * 在全域導覽列上，按一下「上 **[!UICONTROL 傳]**」。
+   * 在全域導覽列上，按一下「上 **[!UICONTROL 傳」]**。
    * 在「上 **[!UICONTROL 傳]** 」頁面的左上角附近，按一下「 **[!UICONTROL 瀏覽」]**。
    * 在「開 **[!UICONTROL 啟]** 」對話方塊中，瀏覽至您的規則集檔案(XML)。
    * 選取檔案，然後按一下「 **[!UICONTROL 開啟]**」。
