@@ -4,7 +4,7 @@ seo-title: AEM 6.4 Classic UI編寫使用指南
 description: '本指南涵蓋在傳統使用者介面中於AEM中編寫內容的概念。 '
 seo-description: '涵蓋在傳統UI中在AEM中編寫內容的概念。 '
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 15%
@@ -39,7 +39,7 @@ ht-degree: 15%
 | [開發使用指南](/help/sites-developing/home.md) | 瞭解如何建立您的AEM實例。 |
 | [管理使用手冊](/help/managing/home.md) | 本指南說明如何成功管理AEM專案。 |
 | [行動使用指南](/help/mobile/home.md) | 本指南說明如何建立和管理行動應用程式的內容。 |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | 本指南說明如何與Livefyre共用使用者產生的內容。 |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 本指南說明如何與Livefyre共用使用者產生的內容。 |
 
 ## 關鍵AEM資源
 
