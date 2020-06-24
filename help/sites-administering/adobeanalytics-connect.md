@@ -10,17 +10,20 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 translation-type: tm+mt
-source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '1546'
+ht-degree: 3%
 
 ---
 
 
 # 連線至Adobe Analytics和建立架構{#connecting-to-adobe-analytics-and-creating-frameworks}
 
-若要在Adobe Analytics中追蹤AEM頁面的網頁資料，請建立Adobe Analytics Cloud services設定和Adobe Analytics架構：
+若要在Adobe Analytics中追蹤AEM頁面的網頁資料，請建立Adobe Analytics Cloud Services設定和Adobe Analytics架構：
 
-* **** Adobe Analytics設定：Adobe Analytics帳戶的相關資訊。 Adobe Analytics設定可讓AEM連線至Adobe Analytics。 為您使用的每個帳戶建立Adobe Analytics設定。
-* **** Adobe Analytics Framework:Adobe Analytics報表套裝屬性與CQ變數之間的一組映射。 使用架構來設定網站資料填入Adobe Analytics報表的方式。 架構與Adobe Analytics組態相關聯。 您可以為每個配置建立多個框架。
+* **Adobe Analytics設定：** Adobe Analytics帳戶的相關資訊。 Adobe Analytics設定可讓AEM連線至Adobe Analytics。 為您使用的每個帳戶建立Adobe Analytics設定。
+* **Adobe Analytics Framework:** Adobe Analytics報表套裝屬性與CQ變數之間的一組映射。 使用架構來設定網站資料填入Adobe Analytics報表的方式。 架構與Adobe Analytics組態相關聯。 您可以為每個配置建立多個框架。
 
 將網頁與框架關聯時，框架將對該頁和該頁的後代執行跟蹤。 然後，可從Adobe Analytics擷取頁面檢視，並顯示在「網站」主控台中。
 
@@ -86,7 +89,7 @@ AEM依預設會使用聖荷西(https://api.omniture.com/admin/1.4/rest/)資料�
 >
 >現在 [應使用Adobe Analytics提供的](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) ActivityMap外掛程式。
 
-## 為Activity map設定 {#configuring-for-the-activity-map}
+## 為Activity Map設定 {#configuring-for-the-activity-map}
 
 >[!CAUTION]
 >
@@ -98,9 +101,9 @@ AEM依預設會使用聖荷西(https://api.omniture.com/admin/1.4/rest/)資料�
 
 對於您使用的報表套裝ID(RSID)，您可以控制哪些伺服器例項（作者、發佈或兩者）將資料貢獻至報表套裝：
 
-* **全部**:來自作者和發佈例項的資訊都會填入報表套裝。
-* **作者**:只有作者例項的資訊會填入報表套裝。
-* **發佈**:只有來自發佈例項的資訊會填入報表套裝。
+* **全部**: 來自作者和發佈例項的資訊都會填入報表套裝。
+* **作者**: 只有作者例項的資訊會填入報表套裝。
+* **發佈**: 只有來自發佈例項的資訊會填入報表套裝。
 
 >[!NOTE]
 >
@@ -117,6 +120,7 @@ AEM依預設會使用聖荷西(https://api.omniture.com/admin/1.4/rest/)資料�
    * 指定 **標題**。
    * 或者，您可以為儲存 **在儲存庫中的框架詳細資訊的節點指定名稱**。
    * 選取 **Adobe Analytics Framework**
+
    然後按一下 **建立**。
 
    此框架將開啟以供編輯。
@@ -180,7 +184,7 @@ AEM依預設會使用聖荷西(https://api.omniture.com/admin/1.4/rest/)資料�
 1. 選擇「 **儲存並關閉**」。
 1. **[發佈頁](/help/sites-authoring/publishing-pages.md)**，以啟動頁面和任何連接的組態／檔案。
 1. 最後一個步驟是造訪發佈例項上的頁面，並使用 **** Search元件搜尋關鍵字（例如茄子）。
-1. 然後，您可以使用適當的工具檢查對Adobe Analytics的呼叫；例如 [Adobe Marketing cloud除錯程式](https://marketing.adobe.com/resources/help/en_US/sc/implement/debugger_install.html)。
+1. 然後，您可以使用適當的工具檢查對Adobe Analytics的呼叫； 例如， [Adobe Experience Cloud除錯程式](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html)。
 1. 在提供的範例中，呼叫應包含eVar7中輸入的值（即茄子），而事件清單應包含event3。
 
 ### 頁面檢視 {#page-views}
