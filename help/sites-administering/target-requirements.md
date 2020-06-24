@@ -1,8 +1,8 @@
 ---
-title: 與Adobe target整合的先決條件
-seo-title: 與Adobe target整合的先決條件
-description: 瞭解與Adobe target整合的必要條件。
-seo-description: 瞭解與Adobe target整合的必要條件。
+title: 與Adobe Target整合的先決條件
+seo-title: 與Adobe Target整合的先決條件
+description: 瞭解與Adobe Target整合的必要條件。
+seo-description: 瞭解與Adobe Target整合的必要條件。
 uuid: 88be6a97-c964-4e42-a3a2-ed9b2c9ee49e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,27 +10,30 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 translation-type: tm+mt
-source-git-commit: 152f60a7c9579d89cca5dc326679dc5a08d4dd5f
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '540'
+ht-degree: 0%
 
 ---
 
 
-# 與Adobe target整合的先決條件{#prerequisites-for-integrating-with-adobe-target}
+# 與Adobe Target整合的先決條件{#prerequisites-for-integrating-with-adobe-target}
 
 在整合AEM [和Adobe Target時](/help/sites-administering/target.md)，您必須向Adobe Target註冊、設定複製代理，以及在發佈節點上保護活動設定。
 
 ## 向Adobe Target註冊 {#registering-with-adobe-target}
 
-若要將AEM與Adobe Target整合，您必須擁有有效的Adobe Target帳戶。 此帳戶至少必須具有**批准者**級別權限。 當您向Adobe Target註冊時，會收到用戶端代碼。 您需要用戶端程式碼和Adobe target登入名稱及密碼，才能將AEM連接至Adobe Target。
+若要將AEM與Adobe Target整合，您必須擁有有效的Adobe Target帳戶。 此帳戶至少必須具有**批准者**級別權限。 當您向Adobe Target註冊時，會收到用戶端代碼。 您需要用戶端程式碼和Adobe Target登入名稱及密碼，才能將AEM連接至Adobe Target。
 
-「用戶端代碼」會在呼叫Adobe target伺服器時識別Adobe target客戶帳戶。
+「用戶端代碼」會在呼叫Adobe Target伺服器時識別Adobe Target客戶帳戶。
 
 >[!NOTE]
 >
 >您的帳戶也必須由Target團隊啟用，才能使用整合。
 >
 >
->如果不是這樣，請聯絡 [Adobe Target客戶服務](https://marketing.adobe.com/resources/help/en_US/target/target/r_problem.html)。
+>如果不是這樣，請聯絡 [Adobe Target客戶服務](https://docs.adobe.com/content/help/en/target/using/cmp-resources-and-contact-information.html)。
 
 ## 啟用目標複製代理 {#enabling-the-target-replication-agent}
 
@@ -51,7 +54,7 @@ source-git-commit: 152f60a7c9579d89cca5dc326679dc5a08d4dd5f
 
 您必須保護發佈例項上的活動設 **定節點cq:ActivitySettings** ，如此一般使用者便無法存取它。 處理Adobe Target活動同步的服務只能訪問活動設定節點。
 
-**在** CRXDE lite中，活動jcr:content節點下的`/content/campaigns/*nameofbrand*` *下，可 **&#x200B;以使用cq:ActivitySettings節點；*例如 `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`。 此節點僅在您定位元件後建立。
+在 **CRXDE lite中，活動jcr:content節點下的** *下，可 `/content/campaigns/*nameofbrand*`*以使用cq:ActivitySettings節點；* *例如 `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`。 此節點僅在您定位元件後建立。
 
 活 **** 動jcr:content下方的cq:ActivitySettings節點受以下ACL的保護：
 
@@ -63,11 +66,11 @@ source-git-commit: 152f60a7c9579d89cca5dc326679dc5a08d4dd5f
 
 ## 設定AEM外部化 {#configuring-the-aem-externalizer}
 
-在Adobe target中編輯活動時，URL會指向 **localhost** ，除非您變更AEM作者節點上的URL。
+在Adobe Target中編輯活動時，URL會指向 **localhost** ，除非您變更AEM作者節點上的URL。
 
 若要設定AEM外部化：
 
-1. 導覽至OSGi web主控台(位 **於https://&lt;server>:&lt;port>/system/console/configMgr)。**
+1. 導覽至OSGi Web主控台(位 **於https://&lt;server>:&lt;port>/system/console/configMgr)。**
 1. 尋找 **Day CQ Link Externalizer** ，然後輸入作者節點的網域。
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
