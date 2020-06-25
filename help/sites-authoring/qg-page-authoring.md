@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 5%
 
 ---
 
@@ -56,7 +59,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * [預覽模式](/help/sites-authoring/editing-content.md#preview-mode)
       * [以已發佈狀態檢視](/help/sites-authoring/editing-content.md#view-as-published)
 
-* 工作流程和版本不再由頁面編輯器啟動／建立；現在可從時間軸 [完成](/help/sites-authoring/basic-handling.md#timeline) （可從主控台存取）。
+* 工作流程和版本不再從頁面編輯器中啟動／建立； 現在可從時間軸 [完成](/help/sites-authoring/basic-handling.md#timeline) （可從主控台存取）。
 
 >[!NOTE]
 >
@@ -64,8 +67,6 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* [編輯頁面時的鍵盤快速鍵](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [控制台的鍵盤快速鍵](/help/sites-authoring/keyboard-shortcuts.md)
->
-
 
 
 ## 尋找您的頁面 {#finding-your-page}
@@ -99,11 +100,12 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 通過選擇所需資 [源，進入選擇模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) :
 
-      * 行動裝置：點選並按住
-      * 案頭：快速 [動作](/help/sites-authoring/basic-handling.md#quick-actions) -勾選圖示：
-   ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
+      * 行動裝置： 點選並按住
+      * 案頭： 快速 [動作](/help/sites-authoring/basic-handling.md#quick-actions) -勾選圖示：
 
-   * 卡片將覆蓋上勾號，以顯示已選取頁面。
+         ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
+
+      * 卡片將覆蓋上勾號，以顯示已選取頁面。
    >[!NOTE]
    >
    >一旦進入選擇模式， **「選取** 」圖示（勾選）將變更為「取消 **選取** 」圖示（交叉）。
@@ -119,7 +121,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 ## 快速動作（僅限卡片檢視／案頭） {#quick-actions-card-view-desktop-only}
 
 1. [導覽至您要對](#finding-your-page) 「頁面」採取動作的頁面。
-1. 將滑鼠指標暫留在代表您所需資源的資訊卡上；快速操作將顯示：
+1. 將滑鼠指標暫留在代表您所需資源的資訊卡上； 快速操作將顯示：
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -143,14 +145,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * 選擇元件頁籤(組 [件瀏覽器](/help/sites-authoring/author-environment-tools.md#components-browser))
       * 將所需元件拖曳至您的頁面。
       側面板可以開啟（和關閉）:
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+
+      ![](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [編輯頁面上現有元件的內容](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) :
 
       * 使用點選或按一下來開啟元件工具列。 使用「編 **輯** （鉛筆）」圖示開啟對話方塊。
       * 使用點選並按住或按兩下，開啟元件的就地編輯器。 將顯示可用的操作（對於某些元件，這將是有限的選擇）。
       * 若要查看所有可用動作，請進入全螢幕模式：
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+      ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [配置現有元件的屬性](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
@@ -162,9 +165,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * [複製（並貼上）](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) :
 
       * 使用點選或按一下來開啟元件工具列。 視需要 **使用** 「復 **制」** 、「貼上」圖示。
-   >[!NOTE]
-   >
-   >您可以 **將元件** 「貼入」至相同的頁面或不同的頁面。 如果貼到在剪下／複製操作之前已開啟的其他頁面，則該頁面需要重新整理頁面。
+      >[!NOTE]
+      >
+      >您可以 **將元件** 「貼入」至相同的頁面或不同的頁面。 如果貼到在剪下／複製操作之前已開啟的其他頁面，則該頁面需要重新整理頁面。
 
    * [刪除](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) a component:
 
@@ -172,7 +175,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * [新增註解](/help/sites-authoring/annotations.md#annotations) 至頁面：
 
       * 選取「注 **解** 」模式（語音泡泡圖示）。 使用「添加註 **釋** （加號）」表徵圖添加註釋。 使用右上角的X退出注釋模式。
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+      ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [預覽頁面](/help/sites-authoring/editing-content.md#preview-mode) （以檢視它在發佈環境中的顯示方式）
 
