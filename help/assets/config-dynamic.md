@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '7873'
+source-wordcount: '7833'
 ht-degree: 1%
 
 ---
@@ -906,37 +906,37 @@ By default, the system shows a variety of renditions when you select **[!UICONTR
   <tr> 
    <td>defaultpix</td> 
    <td>300,300</td> 
-   <td><p>預設檢視大小。 如果請求未明確使用wid=、hei=或scl=指定檢視大小，伺服器會限制回覆影像不大於此寬度和高度。</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. 其中一個或兩個值都可設為0，以保持不受約束。 不適用於巢狀／內嵌請求。</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html">DefaultPix</a> in the Image Serving API.</p> <p>Usually, however, you are using a viewer preset or image preset to deliver the asset. Defaultpix only applies to an asset that is not using a viewer preset or image preset.</p> </td> 
+   <td><p>預設檢視大小。 如果請求未明確使用wid=、hei=或scl=指定檢視大小，伺服器會限制回覆影像不大於此寬度和高度。</p> <p>指定為兩個整數，0或更大，以逗號分隔。 寬度和高度（以像素為單位）。 其中一個或兩個值都可設為0，以保持不受約束。 不適用於巢狀／內嵌請求。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html">閱Image Serving API中的</a> DefaultPix。</p> <p>不過，通常您使用檢視器預設集或影像預設集來傳送資產。 Defaultpix僅適用於未使用檢視器預設集或影像預設集的資產。</p> </td> 
   </tr> 
   <tr> 
    <td>defaultthumbpix</td> 
    <td>100,100</td> 
-   <td><p>Default thumbnail size. Used instead of attribute::DefaultPix for thumbnail requests (req=tmb).</p> <p>The server constrains reply images to be no larger than this width and height, if a thumbnail request (req=tmb) does not specify the size explicitly not specify the view size explicitly using wid=, hei=, or scl=.</p> <p>Specified as two integer numbers, 0 or larger, separated by a comma. Width and height in pixels. 其中一個或兩個值都可設為0，以保持不受約束。 </p> <p>不適用於巢狀／內嵌請求。</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">DefaultThumbPix</a> in the Image Serving API. </p> </td> 
+   <td><p>預設縮圖大小。 用於縮圖請求(req=tmb)，而非屬性：:DefaultPix。</p> <p>如果縮圖要求(req=tmb)未明確指定大小，而未明確使用wid=、hei=或scl=指定檢視大小，則伺服器會限制回覆影像不大於此寬度和高度。</p> <p>指定為兩個整數，0或更大，以逗號分隔。 寬度和高度（以像素為單位）。 其中一個或兩個值都可設為0，以保持不受約束。 </p> <p>不適用於巢狀／內嵌請求。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">閱Image Serving API中的</a> DefaultThumbPix。 </p> </td> 
   </tr> 
   <tr> 
    <td>過期</td> 
    <td>36000000</td> 
-   <td><p>Default client cache time to live. 提供預設的過期間隔，以防特定目錄記錄不包含有效的目錄：：過期值。</p> <p>實數，0或更大。 Number of milliseconds until expiration since the reply data was generated. Set to 0 to always expire the reply image immediately, which effectively disables client caching. By default, this value is set to 10 hours, which means that if a new image is published, it takes 10 hours for the old image to leave the user's cache. 如果您需要盡快清除快取，請聯絡客戶服務。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">閱影像</a> 「伺服API」中的「有效期」。</p> </td> 
+   <td><p>預設的用戶端快取上線時間。 提供預設的過期間隔，以防特定目錄記錄不包含有效的目錄：：過期值。</p> <p>實數，0或更大。 自回覆資料產生以來，到期的毫秒數。 設為0，一律會立即使回覆影像過期，這會有效停用用戶端快取。 依預設，此值會設為10小時，這表示如果發佈新影像，舊影像離開使用者快取需要10小時。 如果您需要盡快清除快取，請聯絡客戶服務。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html">閱影像</a> 「伺服API」中的「有效期」。</p> </td> 
   </tr> 
   <tr> 
    <td>jpegquality</td> 
    <td>80</td> 
-   <td><p>Default JPEG encoding attributes. 指定JPEG回覆影像的預設屬性。</p> <p>Integer number and flag, separated by a comma. 第一個值在1.100範圍內，並定義品質。 第二個值可以是0表示正常行為，或者1表示禁用JPEG編碼器通常採用的RGB色度下採樣。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">閱「影像伺服</a> API」中的JpegQuality。</p> </td> 
+   <td><p>預設JPEG編碼屬性。 指定JPEG回覆影像的預設屬性。</p> <p>整數和標幟，以逗號分隔。 第一個值在1.100範圍內，並定義品質。 第二個值可以是0表示正常行為，或者1表示禁用JPEG編碼器通常採用的RGB色度下採樣。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality.html">閱「影像伺服</a> API」中的JpegQuality。</p> </td> 
   </tr> 
   <tr> 
    <td>maxpix</td> 
    <td>2000,2000</td> 
-   <td><p>Reply image size limit. 傳回給用戶端的回覆影像寬度和高度上限。</p> <p>The server returns an error if a request causes a reply image whose width or height is larger than attribute::MaxPix.</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html">閱Image Serving</a> API中的MaxPix。</p> </td> 
+   <td><p>回覆影像大小限制。 傳回給用戶端的回覆影像寬度和高度上限。</p> <p>如果請求導致寬度或高度大於屬性：:MaxPix的回覆影像，則伺服器會傳回錯誤。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html">閱Image Serving</a> API中的MaxPix。</p> </td> 
   </tr> 
   <tr> 
    <td>resmode</td> 
    <td>SHARP2</td> 
-   <td><p>Default resampling mode. 指定用於縮放影像資料的預設重新採樣和插值屬性。</p> <p>Used when resMode= is not specified in a request.</p> <p>Allowed values include BILIN, BICUB, or SHARP2.</p> <p>列舉。 Set to 2 for bilin, 3 for bicub, or 4 for sharp2 interpolation mode. Use sharp2 for best results.</p> <p>See also <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html">ResMode</a> in the Image Serving API.</p> </td> 
+   <td><p>預設重新取樣模式。 指定用於縮放影像資料的預設重新採樣和插值屬性。</p> <p>在請求中未指定resMode=時使用。</p> <p>允許的值包括BILIN、BICUB或SHARP2。</p> <p>列舉。 若為bilin，則設為2；若為bicub，則設為3；若為sharp2內插模式，則設為4。 使用sharp2取得最佳效果。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode.html">閱Image Serving API</a> 中的ResMode。</p> </td> 
   </tr> 
   <tr> 
    <td>解析度</td> 
    <td>72</td> 
-   <td><p>預設物件解析度。 提供預設物件解析度，以防特定目錄記錄未包含有效的目錄：:Resolution值。</p> <p>實數，大於0。 Typically expressed as pixels per inch, but may also be in other units, such as pixels per meter.</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html">閱</a> Image Serving API中的解析度。</p> </td> 
+   <td><p>預設物件解析度。 提供預設物件解析度，以防特定目錄記錄未包含有效的目錄：:Resolution值。</p> <p>實數，大於0。 通常以每英吋像素表示，但也可以以其他單位表示，例如每米像素。</p> <p>另請參 <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-resolution.html">閱</a> Image Serving API中的解析度。</p> </td> 
   </tr> 
   <tr> 
    <td>thumbnaitime</td> 
@@ -963,7 +963,7 @@ Adobe色彩管理使用ICC描述檔，這是由國際色彩協會(ICC)定義的�
 * **[!UICONTROL iccEmbed]** —— 內 [嵌色彩描述檔。](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-只有在安裝了Package Share的 [Feature Pack 12445或Software Distribution的](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) Feature Pack 12445 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 時，才能使用標準的Adobe色彩描述檔集。 所有功能包和服務包都可通過 [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) 和 [Software Distribution獲得](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。 功能套件12445提供Adobe色彩描述檔。
+只有在安裝了「軟體散發」的 [Feature Pack 12445時，才能使用標準的Adobe色彩設定檔](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) 。 所有功能包和服務包都可在軟體分 [發中獲得](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。 功能套件12445提供Adobe色彩描述檔。
 
 ### 安裝功能套件12445 {#installing-feature-pack}
 
@@ -971,9 +971,9 @@ Adobe色彩管理使用ICC描述檔，這是由國際色彩協會(ICC)定義的�
 
 **要安裝功能包12445**:
 
-1. 導覽至「 [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) 」(封裝共用 [)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 或「Software Distribution `cq-6.3.0-featurepack-12445`」（軟體散發），然後下載。
+1. 導覽至「 [軟體散發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 」並下載 `cq-6.3.0-featurepack-12445`。
 
-   如需 [在AEM中使用「套件共用」和「套件」的詳細資訊，請參閱How to Work with Packages](/help/sites-administering/package-manager.md) 。
+   有關 [使用包的詳細資訊](/help/sites-administering/package-manager.md) ，請參閱如何使用包 [!DNL Adobe Experience Manager]。
 
 1. 安裝功能套件。
 
