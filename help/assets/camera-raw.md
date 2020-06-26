@@ -3,15 +3,15 @@ title: Camera Raw支援
 description: 瞭解如何在Adobe Experience Manager Assets中啟用Camera Raw支援。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: 53db84e56fa972824b90719c3c2b45b20109d45e
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '443'
 ht-degree: 1%
 
 ---
 
 
-# 支援使用Camera Raw處理影像 {#camera-raw-support}
+# 使用Camera Raw處理影像 {#camera-raw-support}
 
 您可以啟用Camera Raw支援來處理原始檔案格式，例如CR2、NEF和RAF，並以JPEG格式呈現影像。 Adobe Experience Manager Assets使用Camera Raw套件(可透過「套件共用」或「軟體散發 [」取得)支](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) 援此功能 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
 
@@ -31,7 +31,6 @@ ht-degree: 1%
 
    * **[!UICONTROL 縮圖]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL 略過 Mime 類型]**: `skip:image/dng, skip:image/x-raw-(.*)`
-
    ![石竹](assets/chlimage_1-334.png)
 
 1. 在「啟 **[!UICONTROL 用Web的影像]** 」標籤的「跳 **[!UICONTROL 過清單」欄位中]** ，指定 `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`。
@@ -49,7 +48,6 @@ ht-degree: 1%
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.319.319.jpeg 319 319`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.140.100.jpeg 140 100`
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.thumbnail.48.48.jpeg 48 48`
-
    ![chlimage_1-336](assets/chlimage_1-336.png)
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
