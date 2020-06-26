@@ -3,9 +3,9 @@ title: 使用PDF點陣化器
 description: 使用Adobe PDF Rasterizer程式庫產生高品質的縮圖和轉譯。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Adobe建議針對下列項目使用PDF點陣化器程式庫：
 
 使用PDF點陣化器產生的縮圖和預覽，與現成可用的輸出相比，品質更佳，因此可跨裝置提供一致的檢視體驗。 Adobe PDF Rasterizer程式庫不支援任何色域轉換。 無論來源檔案的色域為何，都會輸出為RGB。
 
-1. 從「Package Share」（套件共用）或「Software Distribution」（軟體散發），將PDF Rasterizer套件安 [裝在您的AEM例](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) 項上 [](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)。
+1. 從「軟體散發」將PDF點陣化器套件安裝在您的AEM [實例上](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)。
 
    >[!NOTE]
    >
@@ -34,9 +34,11 @@ Adobe建議針對下列項目使用PDF點陣化器程式庫：
 1. 設定下列項目，以略過PDF和AI檔案的預設縮圖和網頁轉譯產生：
 
    * 開啟「縮 **[!UICONTROL 圖處理]** 」步驟，並新增 `application/pdf` 或在「跳 `application/postscript` 過Mime類型」欄位中 **** 。
+
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * 在「啟用 **[!UICONTROL 網頁的影像]** 」索引標籤中，根據您的需求，在「略過清單」 `application/pdf` (Skip List `application/postscript`**** )下新增或下方。
+
    ![web_enabled_imageskiplist](assets/web_enabled_imageskiplist.png)
 
 1. 開啟「點 **[!UICONTROL 陣化PDF/AI影像預覽轉譯」步驟]** ，並移除您要略過預設產生預覽影像轉譯的MIME類型。 例如，從「MIME類型」清單中 *移除MIME類型應用程式/pdf*、 *application/postscript* 或 *application/illustrator***** 。
@@ -49,6 +51,7 @@ Adobe建議針對下列項目使用PDF點陣化器程式庫：
    * Mime類型： *application/pdf* 或application/ *postscript*
    * 命令: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * 新增縮圖大小： 319:319, 140:100, 48:48。 視需要新增自訂縮圖設定。
+
    該命令的命令行參 `PDFRasterizer` 數可以包括以下內容：
 
    **-d**: 標幟可讓文字、向量圖稿和影像順暢呈現。 建立更高品質的影像。 不過，加入此參數會導致命令執行緩慢，並增加影像大小。
@@ -80,6 +83,7 @@ Adobe建議針對下列項目使用PDF點陣化器程式庫：
    * Mime類型： `application/pdf` 或 `application/postscript`
    * 命令: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * 新增縮圖大小： 319:319, 140:100, 48:48。 視需要新增自訂縮圖設定。
+
    PDFRasterizer命令的命令行參數可以包括：
 
    **-d**: 標幟可讓文字、向量圖稿和影像順暢呈現。 建立更高品質的影像。 不過，加入此參數會導致命令執行緩慢，並增加影像大小。
