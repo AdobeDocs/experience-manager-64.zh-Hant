@@ -6,7 +6,10 @@ seo-title: 'Adobe Dynamic Media電子報 '
 solution: Dynamic Media
 title: 動態媒體電子報
 translation-type: tm+mt
-source-git-commit: 47920db04dccee30db089f28debb0e0cbc3c8153
+source-git-commit: 0516bd887799e542ddcda366a71ad2627baed73f
+workflow-type: tm+mt
+source-wordcount: '1238'
+ht-degree: 0%
 
 ---
 
@@ -23,6 +26,21 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
 
 ## 錯過了動態媒體電子報？
 
+<!-- * **[May 2020, Issue 4](https://expleague.azureedge.net/assets/aem/Experience-Insider-vol.31.html)**
+
+    In this issue:
+
+    * What business continuity means in uncertain times.
+    * Key takeaways from the first all-digital Adobe Summit.
+    * Must-watch Experience Manager breakout sessions.
+    * Summit customer spotlight: Under Armour.
+    * Never miss an Experience Insider webinar.
+    * Public sector spotlight: The urgent need for digital enrollment.
+    * Look what’s new in Experience Manager Innovation.
+    * Build your Experience Manager skills *live* with the Adobe pros.
+    * Connect with the Adobe Experience Manager Community.
+    * Fast-track your Adobe expertise with Adobe Experience League. -->
+
 * **[2020年4月第3期](http://amc-mkt-prod1-t.adobe-campaign.com/rest/head/mirrorPage/@DRPFipWV_3bgH_oxl1monOhd4auNDxFVTBWB-uKB6lM_BixlVqja2E5Ml7DbtOy6pARL78LPxljqgxEEAr7RBsRp8WOyn-Zw6hQ8MNoFn9i9WMXm.html)**
 
    在此問題中：
@@ -33,6 +51,7 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
    * 從Adobe Summit 2020線上觀看動態媒體研討會。
    * 進一步瞭解我們免費的Dynamic Media Classic稽核。
    * 認識客戶成功服務資深計畫經理John Monroe。
+
    >[!IMPORTANT]
    >
    >我們想確定我們只傳送動態媒體電子報給想要收到它的人。 若要在此期刊之後繼續收到電子報，請在這裡注 [冊](https://nam04.safelinks.protection.outlook.com/?url=http%3A%2F%2Ft.messages.adobe.com%2Fr%2F%3Fid%3Dha6c66e%2C266d7ba%2C26edbee&amp;data=02%7C01%7Crbrough%40adobe.com%7Ce0ec0f8dde0f4eb03d9c08d7e2173fd3%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C637226461801398160&amp;sdata=3c1oREsqy%2FeDPKC3dd4IO9dXomQ1XbokaBAYQl8obrk%3D&amp;reserved=0)。
@@ -142,4 +161,4 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
    * 註冊參加我們的Dynamic Media Classic隱藏功能網路研討會。
    * 瞭解我們的隨選網路研討會系列，以協助您制定豐富型媒體策略。
    * 閱讀主要的豐富式媒體使用案例及我們為他們提供的解決方案。
-   * ...還有更多！
+   * ... 還有更多！
