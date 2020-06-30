@@ -3,9 +3,9 @@ title: 為多個就地編輯器配置RTE。
 description: 在Adobe Experience Manager中設定Rich Text Editor，以建立多個就地編輯器。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a7d9ea37d26c2eb51d136de630e737616e7cf5b
+source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '445'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # 設定多個就地編輯器 {#configure-multiple-in-place-editors}
 
-您可以在Adobe Experience Manager中設定Rich Text Editor，讓它擁有多個就地編輯器。 配置後，您可以選擇適當的內容並開啟相應的編輯器。 例如：
+您可以在Adobe Experience Manager中設定Rich Text Editor，讓它擁有多個就地編輯器。 配置後，您可以選擇適當的內容並開啟相應的編輯器。
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![特定就地編輯器](assets/rte-inplace-editor.png)
 
 ## 設定多個編輯器 {#configure-multiple-editors}
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
     /**
       * Configures one child editor for a sub-component. The name of the this node is
-      * be used as DD ID.
+      * used as DD ID.
       *
       * @prop type type of the inline editor. For example, ["image"].
       * @prop title Title of the inline editor.
