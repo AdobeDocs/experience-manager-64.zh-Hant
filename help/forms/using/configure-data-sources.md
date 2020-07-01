@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1414'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,11 @@ REST風格的Web服務可在Swagger定義檔 [案中使用](https://swagger.io/s
 1. 為SOAP Web服務指定以下內容：
 
    * Web服務的WSDL URL。
-   * 選擇驗證類型— 無、OAuth2.0、基本驗證或自訂驗證— 存取SOAP服務，並據以提供驗證的詳細資訊。
+   * 服務端點. 在此欄位中指定一個值，以覆蓋WSDL中提及的服務端點。
+   * 選擇驗證類型— 無、OAuth2.0、基本驗證、自訂驗證或X509 Token — 存取SOAP服務，並據以提供驗證的詳細資訊。
+
+      如果您選取「X509 Token」做為「驗證」類型，請設定X509憑證。 如需詳細資訊，請參 [閱設定憑證](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)。
+在「金鑰別名」欄位中指定X509憑證的 **[!UICONTROL KeyStore別名]** 。 在「到線時間」欄位中，指定驗證要求保持有效的 **[!UICONTROL 時間(秒]** )。 （可選）選擇簽署消息正文或時間戳標題或兩者。
 
 1. 點選 **[!UICONTROL 「建立]** 」以建立SOAP網站服務的雲端設定。
 
