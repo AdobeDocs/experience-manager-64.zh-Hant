@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 0dced2f56fcebfb03fa6264e98cd686e8e7902c6
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 1%
 
 ---
 
@@ -63,7 +66,7 @@ AEM隨附各種機制，可協助您管理您的儲存庫：
 
 可使用下列選項：
 
-* `versionmanager.createVersionOnActivation` (布林值，預設值：true)
+* `versionmanager.createVersionOnActivation` (布林值，預設值： true)
 
    是否在啟動頁面時建立版本。
 
@@ -71,19 +74,19 @@ AEM隨附各種機制，可協助您管理您的儲存庫：
 
    只有在versionmanager.ivPaths中包含的路徑上進行啟動時，才會建立版本（請參閱下面）。
 
-* `versionmanager.ivPaths` (字串[]，預設值：{&quot;/&quot;})
+* `versionmanager.ivPaths` (字串[]，預設值： {&quot;/&quot;})
 
    如果versionmanager.createVersionOnActivation為true，則在啟動時隱式建立版本的路徑。
 
-* `versionmanager.purgingEnabled` (布林值，預設值：false)
+* `versionmanager.purgingEnabled` (布林值，預設值： false)
 
    是否在建立新版本時啟用清除
 
-* `versionmanager.purgePaths` (字串[]，預設值：{&quot;/content&quot;})
+* `versionmanager.purgePaths` (字串[]，預設值： {&quot;/content&quot;})
 
    建立新版本時，要清除版本的路徑。
 
-* `versionmanager.maxAgeDays` (int，預設值：30)
+* `versionmanager.maxAgeDays` (int，預設值： 30)
 
    清除時，任何舊於此值的版本都將被移除。 如果此值小於1，則不會根據版本的年齡執行清除
 
@@ -97,7 +100,7 @@ AEM隨附各種機制，可協助您管理您的儲存庫：
 
 >[!NOTE]
 >
->建議不要在儲存庫中保留大量版本。 因此，在配置版本清除操作時請注意不要從清除中排除太多版本，否則儲存庫大小將無法正確優化。 如果您因業務需求而保留大量版本，請聯絡Adobe支援以尋找最佳化儲存庫大小的其他方法。
+>建議不要在儲存庫中保留大量版本。 因此，在配置版本清除操作時請注意不要從清除中排除太多版本，否則儲存庫大小將無法正確優化。 如果您因業務需要而保留大量版本，請聯絡Adobe支援以尋找最佳化儲存庫大小的其他方法。
 
 ### 結合保留選項 {#combining-retention-options}
 
