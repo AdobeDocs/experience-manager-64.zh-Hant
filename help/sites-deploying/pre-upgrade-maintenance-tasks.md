@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 translation-type: tm+mt
-source-git-commit: 1d1914f760e3d77350665ab55025266e79d9f0fe
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '2178'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +56,7 @@ AEM應在開始升級之前完全備份。 請務必備份您的儲存庫、應�
 
 ## 配置工作流和審核日誌清除 {#configure-wf-audit-purging}
 
-這些 `WorkflowPurgeTask` 和任 `com.day.cq.audit.impl.AuditLogMaintenanceTask` 務需要單獨的OSGi配置，沒有它們將無法工作。 如果在升級前任務執行期間失敗，則最可能的原因是缺少配置。 因此，如果您不想運行這些任務，請務必為這些任務添加OSGi配置，或將它們從升級前優化任務清單中完全刪除。 如需設定工作流程清除工作的檔案，請參閱「管理工作流程例項 [」(](/help/sites-administering/workflows-administering.md) Administering Workflow Instances [)，而「稽核記錄維護」(audit log Maintenance in AEM 6](/help/sites-administering/operations-audit-log.md))則提供稽核記錄維護工作設定。
+這些 `WorkflowPurgeTask` 和任 `com.day.cq.audit.impl.AuditLogMaintenanceTask` 務需要單獨的OSGi配置，沒有它們將無法工作。 如果在升級前任務執行期間失敗，則最可能的原因是缺少配置。 因此，如果您不想運行這些任務，請務必為這些任務添加OSGi配置，或將它們從升級前優化任務清單中完全刪除。 如需設定工作流程清除工作的檔案，請參閱「管理工作流程例項 [」(](/help/sites-administering/workflows-administering.md) Administering Workflow Instances [)，而「稽核記錄維護」(audit log Maintenance in AEM 6](/help/sites-administering/operations-audit-log.md))中的「稽核記錄維護」(audit maintenance)工作設定。
 
 如需CQ 5.6上的工作流程和稽核記錄清除，以及AEM 6.0上的稽核記錄清除，請參閱「清 [除工作流程和稽核節點」](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)。
 
@@ -63,7 +66,7 @@ AEM應在開始升級之前完全備份。 請務必備份您的儲存庫、應�
 
 在舊版中，AEM升級也很難停止或無法安全恢復。 這會導致需要重新啟動完整升級程式或執行有缺陷的升級而未觸發任何警告的情況。
 
-為瞭解決這些問題，Adobe在升級程式中增加了數種增強功能，讓其更具彈性，而且更方便使用。 以前必須手動執行的升級前維護任務正在優化和自動化。 此外，已新增升級後報表，讓程式可以完全審查，以期更容易發現任何問題。
+為瞭解決這些問題，Adobe已在升級程式中增加數種增強功能，使其更具彈性，而且更方便使用。 以前必須手動執行的升級前維護任務正在優化和自動化。 此外，已新增升級後報表，讓程式可以完全審查，以期更容易發現任何問題。
 
 升級前維護任務目前分散在手動執行部分或全部的各種介面上。 AEM 6.3中引進的升級前維護最佳化功能，可讓您以統一的方式觸發這些工作，並可視需要檢查結果。
 
@@ -234,6 +237,7 @@ OSGI `PreUpgradeTasksMBeanImpl` 元件會預先設定升級前狀態檢查標籤
 >* JMX主控台
 >* 連線至JMX的任何外部應用程式
 >* cURL
+
 >
 
 
@@ -313,8 +317,8 @@ OSGI `PreUpgradeTasksMBeanImpl` 元件會預先設定升級前狀態檢查標籤
 >
 >只有在下列情況下，才需要執行此升級前維護任務：
 >
-> * 您是從AEM 6.3以前的AEM版本升級
-> * 在升級期間，您會遇到下列任何錯誤。
+>* 您是從AEM 6.3以前的AEM版本升級
+>* 在升級期間，您會遇到下列任何錯誤。
 
 
 有些例外的情況是，服務使用者可能會以舊版AEM錯誤地標籤為一般使用者。
