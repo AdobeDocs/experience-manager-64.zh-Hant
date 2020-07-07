@@ -5,7 +5,7 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3158'
 ht-degree: 9%
@@ -253,9 +253,9 @@ AEM可讓您使用MSM Java API來擴充功能。 對於Assets，擴充功能的�
 
 >[!NOTE]
 >
-> * MSM for Site中的Blueprint稱為MSM for Assets中的即時副本來源。
-> * MSM for Assets不支援移除建立網站精靈中的章節步驟。
-> * MSM的「資產」不支援在頁面屬性上設定MSM鎖（觸控式UI）。
+>* MSM for Site中的Blueprint稱為MSM for Assets中的即時副本來源。
+>* MSM for Assets不支援移除建立網站精靈中的章節步驟。
+>* MSM的「資產」不支援在頁面屬性上設定MSM鎖（觸控式UI）。
 
 
 ## 資產管理任務對即時拷貝的影響 {#impact-of-asset-management-tasks-on-live-copies}
