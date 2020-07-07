@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 9b7bab63c5c0b9a0a86289e895cd35a4df277e1e
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -226,12 +226,10 @@ hybris使用使用者作業來儲存資訊，例如客戶的購物車。 工作�
 >1. `size`
    >
    >
-1. 再加一個\
-   >   此額外變數是透過產品參 `variationAxis` 考的屬性選取(通常 `color` 適用於Geometrixx Outdoors)。
-
+1. 再加一個
 >
-
-
+>   
+此額外變數是透過產品參 `variationAxis` 考的屬性選取(通常 `color` 適用於Geometrixx Outdoors)。
 
 #### 產品參考資料和產品資料 {#product-references-and-product-data}
 
@@ -536,7 +534,7 @@ The owns `CommerceSession` the three elements:
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-這會利用搜尋API來查詢選取的商務引擎(請參閱 [電子商務引擎選擇](#ecommerce-engine-selection)):
+這可使用搜尋API來查詢選取的商務引擎(請參閱 [電子商務引擎選擇](#ecommerce-engine-selection)):
 
 #### 搜尋API {#search-api}
 
