@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
 translation-type: tm+mt
-source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 21%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
 * Adobe Analytics設定可讓AEM向Adobe Analytics驗證。
 * 架構可識別傳送至Adobe Analytics報表套裝的資料。
 
-資料包括頁面資料和用戶資料；例如：
+資料包括頁面資料和用戶資料； 例如：
 
 * AEM元件收集的資料
 * 連結點按
@@ -40,7 +43,7 @@ source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
 
 >[!NOTE]
 >
->另請參閱操作說明文章：使 [用DTM將AEM與Adobe target和Adobe Analytics整合](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)。
+>另請參閱操作說明文章： [使用DTM將AEM與Adobe Target和Adobe Analytics整合](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)。
 
 ## 更多資訊 {#further-information}
 
@@ -57,9 +60,8 @@ source-git-commit: ee380780bb7b62d348051b29edb9d13e14407377
    >  例如， [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Apache HTTP Components Proxy Configuration** to configure the 4.x API;\
-   >  例如， [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+* **Apache HTTP Components Proxy Configuration** to configure the 4.x API;
 >
-
-
+>  
+例如， [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 
