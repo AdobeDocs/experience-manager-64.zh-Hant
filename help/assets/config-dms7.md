@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 05595377d4a5f24e4f311e5c34f10e6dc964d35e
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '5552'
 ht-degree: 3%
@@ -40,7 +40,7 @@ ht-degree: 3%
 
 >[注意]
 >
-> 動態媒體- Scene7模式僅適用於AEM Author例項。 因此，您必須在AEM Author例 `runmode=dynamicmedia_scene7`項上進行設定，而非在AEM Publish例項上。
+>動態媒體- Scene7模式僅適用於AEM Author例項。 因此，您必須在AEM Author例 `runmode=dynamicmedia_scene7`項上進行設定，而非在AEM Publish例項上。
 
 若要啟用動態媒體，您必須在終端視窗中輸入 `dynamicmedia_scene7` 下列內容，從命令列使用runmode啟動AEM（使用的例如連接埠為4502）:
 
@@ -122,7 +122,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## （可選）在動態媒體- Scene7模式中設定進階設定 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-如果您想要進一步自訂動態媒體- Scene7模式的設定和設定，或最佳化其效能，則可完成下列一或多項選用工作：
+如果您想要進一步自訂動態媒體- Scene7模式的設定和設定，或最佳化其效能，則可以完成下列一或多項選用工作：
 
 * [（選用）動態媒體的設定與設定- Scene7模式設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
 
