@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 7a1bfd43-39b1-478b-a294-92c78eaebbf2
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +56,7 @@ AEM Forms資料整合可讓您使用分散的後端資料來源來建立表單�
 
 在基於表單資料模型建立自適應表單或自適應表單片段後，表單資料模型對象將以自適應表單編輯器顯示在內容瀏覽器的「資料模型對象」( **[!UICONTROL Data Model Objects]** )頁籤中。
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >對於自適應表單片段，只有在編寫時選擇的資料模型對象及其關聯的資料模型對象才會顯示在「資料模型對象」頁籤中。
 
