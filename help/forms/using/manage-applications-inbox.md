@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '942'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 總之，「收件箱」允許您建立新應用程式並管理分配的任務。
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >您必須是工作流程使用者群組的成員，才能使用AEM Inbox。
 
@@ -32,7 +35,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 1. 請前往「AEM收件匣」 `https://[server]:[port]/aem/inbox`。
 1. 在「收件匣」UI中，點選「 **[!UICONTROL 建立>應用程式」]**。 此時將顯示「選擇應用程式」頁。
-1. 選取應用程式，然後按一下「 **[!UICONTROL 建立]**」。 隨即開啟與應用程式相關聯的最適化表單。 填寫表單並點選「送 **[!UICONTROL 出」]**。 它會啟動關聯的工作流程，並在受託人的「收件匣」中建立工作。
+1. 選取應用程式，然後按一下「 **[!UICONTROL 建立]**」。 隨即開啟與應用程式相關聯的最適化表單。 填寫表單並點選「送 **[!UICONTROL 出」]**。 它會啟動相關的工作流程，並在受託人的「收件匣」中建立工作。
 
 ## 管理任務 {#manage-tasks}
 
@@ -49,9 +52,11 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 1. 執行下列任一項作業：
 
    * 若要委派任務，請點選「委 **[!UICONTROL 派」]**。 「委派項目」(Delegate Item)對話框開啟。 選取使用者、選擇性地新增註解，然後點選「 **[!UICONTROL 確定]**」。
+
    ![委派](assets/delegate.png)
 
    * 要聲明任務，請按一下「打 **[!UICONTROL 開」]**。 將開啟「指定給自身」對話框。 點選「 **[!UICONTROL 繼續]** 」以宣告此工作。 聲明的任務將以您作為收件箱中的受託人的身份顯示。
+
    ![索賠](assets/claim.png)
 
 ### 查看詳細資訊並對任務執行操作 {#view-details-and-perform-actions-on-tasks}
