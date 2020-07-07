@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 4c99cf4852ea21a85013d8745ade48500110e58a
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '4353'
 ht-degree: 0%
@@ -257,11 +257,11 @@ AEM Forms附加元件套件是部署在AEM上的應用程式。 通常，您只�
 >* 環境變數OpenOffice_PATH設定為安裝資料夾，而不是執行檔的路徑。
 >* 請勿為Microsoft Office應用程式（例如Word、PowerPoint、Excel和Project）或AutoCAD設定環境變數。 如果這些應用程式已安裝在伺服器上，「產生PDF」服務會自動啟動這些應用程式。
 >* 在基於UNIX的平台上，以/root身份安裝OpenOffice。 如果OpenOffice未以根目錄安裝，PDF產生器服務將無法將OpenOffice檔案轉換為PDF檔案。 如果您需要以非根用戶身份安裝並運行OpenOffice，則為非根用戶提供sudo權限。
->* 如果您在基於UNIX的平台上使用OpenOffice，請運行以下命令以設定路徑變數：\
-   >  `export OpenOffice_PATH=/opt/openoffice.org4`
+>* 如果您在基於UNIX的平台上使用OpenOffice，請運行以下命令以設定路徑變數：
 
 >
-
+>  
+`export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### （僅適用於IBM WebSphere）配置IBM SSL通訊端提供者 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -357,8 +357,7 @@ PDF產生器服務提供WebKit、WebCapture和PhantomJS路由或方法，將HTML
 
 >[!NOTE]
 >
-> 每當您將新字型安裝至字型檔案夾時，請重新啟動AEM Forms例項。
-
+>每當您將新字型安裝至字型檔案夾時，請重新啟動AEM Forms例項。
 
 ### （僅限UNIX平台）HTML至PDF轉換的額外組態  {#extra-configurations-for-html-to-pdf-conversion}
 
