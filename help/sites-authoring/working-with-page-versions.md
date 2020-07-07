@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1087'
+ht-degree: 6%
 
 ---
 
@@ -73,9 +76,10 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 建立任何頁面的版本。
 >* 初始標籤和版本節點名稱為1.0、1.1、1.2等。
->* 恢復第一個版本；即1.0。
+>* 恢復第一個版本； 即1.0。
 >* 再次建立新版本。
 >* 產生的標籤和節點名稱現在會是1.0.0、1.0.1、1.0.2等。
+
 >
 
 
@@ -164,4 +168,4 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!CAUTION]
 >
-> 時間彎曲功能是設計為工具，可協助作者瞭解並建立其內容。 它不是作為審計日誌或用於法律目的。
+>時間彎曲功能是設計為工具，可協助作者瞭解並建立其內容。 它不是作為審計日誌或用於法律目的。
