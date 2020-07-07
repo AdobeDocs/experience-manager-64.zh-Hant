@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -552,6 +552,7 @@ Maven JspC Plugin的結果也可以隨OSGi Bundle一起打包和部署，但這�
 >視您是否實際在中使用JSP程 `/libs` 式碼（亦即從中加入JSP）而定，您需要調整要複製哪些JSP以進行編譯。
 >
 >例如，如果您包 `/libs/foundation/global.jsp`含，則可以將下列組態用於，而 `maven-resources-plugin` 非上方完全跳過的組態 `/libs`。
+>
 >
 ```
 > <resource>  
