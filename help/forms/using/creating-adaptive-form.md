@@ -9,9 +9,9 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
 
    有關最適化表單製作介面和可用元件的資訊，請參 [閱製作最適化表單簡介](/help/forms/using/introduction-forms-authoring.md)。
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >允許瀏覽器中的彈出式視窗在新標籤中開啟新建立的表格。
 
@@ -130,7 +130,7 @@ XML和JSON結構描述資料由組織中的後端系統產生或使用的結構�
    * **[!UICONTROL 從磁碟上傳]** -選取此選項，並點選「上傳結構描述定義」，從您的檔案系統瀏覽及上傳XML結構描述或JSON結構描述。 已上載的架構檔案駐留在表單中，而且無法訪問其他自適應表單。
    * **[!UICONTROL 在儲存庫中搜索]** -選擇此選項可從儲存庫中可用的方案定義檔案清單中進行選擇。 選取XML或JSON結構描述檔做為表單模型。 所選模式將與表單相關聯，並且可以訪問，以用於其他自適應表單。
 
-   >[!CAUTION] {grayBox=&quot;true&quot;}
+   >[!CAUTION]
    >
    >請確定JSON結構描述檔名的結尾 **為。schema.json**。 例如： mySchema.schema.json
 
