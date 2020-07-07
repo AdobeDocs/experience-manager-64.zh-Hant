@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -103,23 +106,22 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
+
 >
 >
 例如：
 >
 >
-```>
+```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```>
-
-
+>```
 
 ### 社群網站 {#community-site}
 
 使用嚮導建立的社區站點結構將在選中時包括消息傳遞功能。 請參 `User Management` 閱社群網 [站主控台的設定](sites-console.md#user-management)。
 
-### 范常式式碼：收到的消息通知 {#sample-code-message-received-notification}
+### 范常式式碼： 收到的消息通知 {#sample-code-message-received-notification}
 
 「社交訊息」功能會擲回操作的事 `send`件， `marking read`例如 `marking delete`。 可以捕獲這些事件並對事件中包含的資料採取操作。
 
@@ -130,9 +132,9 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 1. 以管理員身分登入 ` [CRXDE|Lite](http://localhost:4502/crx/de)`
 1. 使用任 `bundle node`意 `/apps/engage/install` 名稱建立，如
 
-   * **[!UICONTROL 符號名稱]**:com.engage.media.social.messaging.MessagingNotification
-   * **[!UICONTROL 名稱]**:快速入門教學課程訊息通知
-   * **[!UICONTROL 說明]**:在使用者收到訊息時傳送電子郵件通知的範例服務
+   * **[!UICONTROL 符號名稱]**: com.engage.media.social.messaging.MessagingNotification
+   * **[!UICONTROL 名稱]**: 快速入門教學課程訊息通知
+   * **[!UICONTROL 說明]**: 在使用者收到訊息時傳送電子郵件通知的範例服務
    * **[!UICONTROL 套件]**: `com.engage.media.social.messaging.notification`
 
 1. 導航到 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
