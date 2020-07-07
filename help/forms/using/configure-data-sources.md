@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ AEM Forms Data Integration可讓您設定並連線至不同的資料來源。 �
    * JDBC連接URI
    * 用於與JDBC驅動程式建立連接的用戶名和密碼
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >在設定資料來源之前，請務必先加密機密資訊，例如密碼。 要加密：
    >
@@ -79,7 +79,7 @@ AEM Forms Data Integration可讓您設定並連線至不同的資料來源。 �
    * `name=profile/phoneNumber,type=string`
    * `name=profile/empLocation/*/city,type=string`
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >&amp; **amp;ast;** 在上例中，表示CRXDE結構中AEM `profile/empLocation/` 用戶配置檔案中節點下的所有節點。 表單資料模型可以訪問節點下 `city` 任何節點 `string` 中的類型屬 `profile/empLocation/` 性。 但是，包含指定屬性的節點必須遵循一致的結構。
 
