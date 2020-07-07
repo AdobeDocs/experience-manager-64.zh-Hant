@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 0%
 
 ---
 
@@ -34,9 +37,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 輸入注 **釋** （可選）。
 1. 若要將標籤設為版本（可選），請按一下「更多>>」 **按鈕** ，然後設定「 **Label** 」來命名版本。 如果未設定標籤，則版本會自動遞增。
-1. 按一下 **建立版本**。 頁面上會顯示灰色訊息；例如：
+1. 按一下 **建立版本**。 頁面上會顯示灰色訊息； 例如：
 
-   1.2版為：襯衫。
+   1.2版為： 襯衫。
 
 >[!NOTE]
 >
@@ -74,7 +77,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 在「網 **站** 」主控台中，導覽至您要復原的檔案夾並加以選取。
 1. 從頂部菜單中依次選 **擇工具**、 **恢復**。
-1. **選擇**&#x200B;恢復樹……開啟對話框，以便選擇要恢復的樹：
+1. 選擇 **恢復樹……** 開啟對話框，以便選擇要恢復的樹：
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
@@ -95,6 +98,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 已刪除的文字為紅色，並已穿透。
    * 已添加的文本為綠色並突出顯示。
    * 已新增或刪除的影像會以綠色框架顯示。
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. 在Sidekick中，選擇「 **Restore Version** 」(還原版本 **)子標籤，然後按一** 下「&lt;&lt;Back」（返回）按鈕以顯示目前版本。
@@ -126,7 +130,7 @@ Timewarp可從sidekick取得。
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
-1. 使用日期和時間選擇器指定您想要的日期／時間，然後按一下「 **開始**」。
+1. 使用日期和時間選擇器指定您想要的日期／時間，然後按一下「執 **行」**。
 
    時間彎曲會顯示頁面在您選擇之日期之前／之前的發佈狀態。
 
@@ -146,6 +150,7 @@ Timewarp可從sidekick取得。
 
    * **退出時間彎曲** ，以退出並返回目前的作者頁面。
    * [顯示時間軸](#using-the-timewarp-timeline) ，以檢視時間軸。
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
 ### 使用時間彎曲時間軸 {#using-the-timewarp-timeline}
@@ -159,7 +164,7 @@ Timewarp可從sidekick取得。
    1. 開啟「版 **本修訂** 」標籤，然後按一 **下「時間彎曲** 」（靠近側腳底部）。
    1. 使用使用「時間彎曲日曆」 [後顯示的側鍵對話方塊](#using-the-timewarp-calendar)。
 
-1. 按一下「 **顯示時間軸** 」(Show Timeline)-檔案的時間軸將會出現；例如：
+1. 按一下「 **顯示時間軸** 」(Show Timeline)-檔案的時間軸將會出現； 例如：
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -189,4 +194,4 @@ Timewarp可從sidekick取得。
 
 >[!CAUTION]
 >
-> 時間彎曲功能是設計為工具，可協助作者瞭解並建立其內容。 它不是作為審計日誌或用於法律目的。
+>時間彎曲功能是設計為工具，可協助作者瞭解並建立其內容。 它不是作為審計日誌或用於法律目的。
