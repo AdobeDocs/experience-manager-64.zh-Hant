@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 6eb03b035793a21eafd120ac848a6d62eaf6e6ec
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '6231'
 ht-degree: 1%
@@ -333,7 +333,7 @@ Health Check Dashboard可透過Granite JMX Mbeans與Nagios整合。 下列範例
 
    >[!NOTE]
    >
-   >有關如何在您的系統上安裝Nagios和NRPE的更多資訊，請參閱 [Nagios Documentation](https://library.nagios.com/library/products/nagioscore/manuals/)。
+   >有關如何在您的系統上安裝Nagios和NRPE的更多資訊，請參閱 [Nagios檔案](https://library.nagios.com/library/products/nagioscore/manuals/)。
 
 1. 新增AEM伺服器的主機定義。 這可以透過Nagios XI Web介面，使用Configuration Manager:
 
@@ -594,7 +594,7 @@ UI可用來篩選表格中的索引，方法是在螢幕左上角的搜尋方塊
 
 >[!NOTE]
 >
-> 有關「工作流維護」的詳細資訊，請參 [閱此頁](workflows-administering.md#regular-purging-of-workflow-instances)。
+>有關「工作流維護」的詳細資訊，請參 [閱此頁](workflows-administering.md#regular-purging-of-workflow-instances)。
 
 ### 審計日誌維護 {#audit-log-maintenance}
 
