@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1556'
 ht-degree: 3%
 
 ---
@@ -44,11 +44,11 @@ Adobe Analytics帳戶需要：
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-繼續之前，請確定您的認證可讓您登入Adobe Analytics。 透過下列其中一種方式：
+繼續之前，請確定您的認證可讓您使用下列其中一種方法登入Adobe Analytics:
 
-* [https://marketing.adobe.com](https://marketing.adobe.com)
+* [Adobe Experience Cloud登入](https://login.experiencecloud.adobe.com/exc-content/login.html)
 
-* [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
+* [Adobe Analytics登入](https://sc.omniture.com/login/)
 
 ### 設定AEM以使用您的Adobe Analytics資料中心 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
