@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '2925'
+source-wordcount: '2922'
 ht-degree: 0%
 
 ---
@@ -74,12 +74,12 @@ We.Finance和We.Gov參考網站利用現實生活中的使用案例，直接與�
   </tr> 
   <tr> 
    <td><a href="#ssl">設定SSL</a></td> 
-   <td>作者與發佈<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>啟用HTTP over SSL，以便與Adobe Sign進行安全通訊。</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">設定Day CQ Link Externalizer設定</a></p> </td> 
-   <td>作者與發佈<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td><p>參考網站使用案例會針對不同的交易傳送電子郵件。 此設定是透過電子郵件傳送電子報的必要設定。 它可確保URL和影像指向發佈例項。 </p> </td> 
   </tr> 
   <tr> 
@@ -114,12 +114,12 @@ We.Finance和We.Gov參考網站利用現實生活中的使用案例，直接與�
   </tr> 
   <tr> 
    <td><a href="#scheduler">設定Adobe Sign排程器</a></td> 
-   <td>作者與發佈<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>更改調度程式的配置，每兩分鐘檢查一次狀態。</td> 
   </tr> 
   <tr> 
    <td><a href="#sign-service">設定參考網站Adobe Sign Cloud服務</a></td> 
-   <td>作者與發佈<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>隨參考站點包一起提供的配置，需要使用有效的憑據重新配置。</td> 
   </tr> 
   <tr> 
@@ -129,7 +129,7 @@ We.Finance和We.Gov參考網站利用現實生活中的使用案例，直接與�
   </tr> 
   <tr> 
    <td><a href="#fdm">修改表單資料模型的Rest服務Swagger檔案</a></td> 
-   <td>作者與發佈<br /> </td> 
+   <td>Author and Publish<br /> </td> 
    <td>修改您環境的服務。</td> 
   </tr> 
  </tbody> 
@@ -219,12 +219,12 @@ We.Finance參考網站的電子郵件範本包含電子郵件中的個人化連�
 
 ## 部署參考站點包 {#refsite}
 
-使用軟體包共用安裝以下參考站點軟體包。
+使用「軟體分發」安裝以下參考站點軟體包。
 
 * [AEM-FORMS-6.4-FSI-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
 * [AEM-FORMS-6.4-GOV-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
 
-若要進一步瞭解如何使用套件和套件共用，請參 [閱How to Work With Packages](/help/sites-administering/package-manager.md)。
+若要進一步瞭解如何使用套件，請參 [閱How to Work With Packages](/help/sites-administering/package-manager.md)。
 
 在您安裝套件並啟動作者和發佈例項後，請造訪瀏覽器中的下列URL:
 
@@ -349,7 +349,7 @@ AEM Forms與Adobe Analytics的整合可讓您監控和分析客戶與表單和�
 
 1. 導覽至https://&lt;host>:&lt;port>/aem/forms的Forms Manager，並執行下列動作：
 
-   * 開啟We.Finance或We.Gov檔案夾，並選取您要檢視報表的表單。
+   * 開啟We.Finance或We.Gov檔案夾，並選取您要查看報表的表單。
    * 按一下「動作工具列」中的「啟用分析」。 啟用表單分析後，按一下「分析報表」。 您可以看到產生的空白報表。 產生空白報表後，您必須提供refsite套件隨附的種子資料，才能產生分析報表以進行示範。
 
    參考網站提供分析報告，提供信用卡、住房抵押和子系支援使用案例的種子資料。 如需種子資料的設定，請參 [閱We.Finance參考網站逐步說明](/help/forms/using/finance-reference-site-walkthrough.md) , [以及We.Gov參考網站逐步說明](/help/forms/using/gov-reference-site-walkthrough.md)。
