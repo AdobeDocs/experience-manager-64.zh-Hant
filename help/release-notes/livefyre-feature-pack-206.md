@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +59,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 **將UGC內容匯入AEM資產**
 
-* 使用UGC匯入工具，將Twitter和Instagram使用者產生的內容(UGC)從Livefyre studio匯入AEM Assets。
+* 使用UGC匯入工具，將Twitter和Instagram使用者產生的內容(UGC)從Livefyre Studio匯入AEM Assets。
 * 存取您的Livefyre資料庫。
 * 使用Livefyre Social搜尋在Twitter和Instagram上即時搜尋。
 * 管理UGC的權限。
@@ -71,7 +74,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 * 將您現有的產品目錄完美整合至Livefyre，以推動使用者在網站上的互動與轉化，並提供可購買的UGC體驗。
 * 編輯或刪除AEM Commerce產品目錄中的項目，並自動更新Livefyre中的變更。
 
-如需安裝的協助，請參閱 [與Livefyre整合](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)。
+如需安裝的協助，請參閱 [與Livefyre整合](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)。
 
 ### 其他發行資訊 {#additional-release-information}
 
@@ -84,13 +87,13 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 #### 新功能或改進 {#new-feature-or-improvement}
 
 * 新增在Livefyre中設定權限要求社交帳戶之前，先搜尋UGC的功能。 您必須設定社交帳戶以請求權限，或者如果您擁有內容，則覆寫權限請求。
-* Instagram和Twitter [UGC權限要求工作流程已更新](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html) ，以符合最新的API。
+* Instagram和Twitter [UGC權限要求工作流程已更新](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html) ，以符合最新的API。
 * 權限狀態和適當動作現在會顯示在權限請求畫面上。
 
 #### 錯誤修正 {#bug-fixes}
 
-* 修正在Livefyre studio中刪除用於權限要求的社交帳戶時，在AEM中載入UGC程式庫時發生錯誤的問題。
-* 修正Livefyre studio中的資產計數不符合AEM UGC程式庫中的資產計數的問題。
+* 修正在Livefyre Studio中刪除用於權限要求的社交帳戶時，在AEM中載入UGC程式庫時發生錯誤的問題。
+* 修正Livefyre Studio中的資產計數不符合AEM UGC程式庫中的資產計數的問題。
 * 修正UGC程式庫中，在重設篩選選項後顯示篩選結果的問題。
 * 修正AEM Commerce中，呼叫動作按鈕將使用者重新導向至錯誤URL的問題。
 * 修正AEM Sites中拖放多個元件至parsys預留位置的問題，此問題會導致其消失。
