@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '2746'
+source-wordcount: '2745'
 ht-degree: 3%
 
 ---
@@ -290,7 +290,7 @@ AEM 6.4 Forms提供多項新功能和增強功能。 重點包括：
 
 您可以將Livefyre與AEM 6.4執行個體整合。 有關如何將Livefyre與AEM整合的資訊，請參閱：
 
-* [整合Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [整合Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
 
 ### 運用以客戶為中心的開發 {#leverage-customer-focused-development}
 
