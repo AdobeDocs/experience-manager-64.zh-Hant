@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: b1deed95174e271bbd91814ef4aa6d4fa578cc45
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '2152'
+source-wordcount: '2119'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 1%
 | 類型 | 累積修補程式套件 |
 | 日期 | 2020年6月04日 |
 | 先決條件 | [AEM 6.4 Service Pack 8(6.4.8.0)](sp-release-notes.md) |
-| 下載URL | AEM 6.4.8.1 on [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1), [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
+| 下載URL | AEM 6.4.8.1軟體散 [發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
-## AEM 6.4.8.1包含的功能 {#what-s-included-in-aem}
+## AEM 6.4.8.0包含的功能 {#what-s-included-in-aem}
 
 AEM Cumulative Fix Pack 6.4.8.1是重要的更新，包含自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)全面推出以來的數項內部和客戶修正。
 
@@ -112,7 +112,7 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 * 最適化表單： 自適應表單字典中字串的新行將字 `&#xa;` 符添加到字典(NPR-33265)。
 * 最適化表單： 用戶無法保存具有多個附件的自適應表單(NPR-33214)。
 * 最適化表單： `AddInstance` 和 `RemoveInstance` Instance Manager類別的方法不會在上為延遲載入片段新增動態 [!DNL Internet Explorer 11] 例項數(NPR-33201)。
-* 最適化表單： 內嵌在頁面中的最適化表單上啟 [!DNL Sites] 用的Analytics不會記錄提交和放棄事件的資料(NPR-31359)。
+* 最適化表單： 內嵌在頁面中的最適化表單上啟 [!DNL Sites] 用的Analytics不會記錄「提交」和「放棄」事件的資料(NPR-31359)。
 * 最適化表單： 當使用者將檔案的內容貼入 [!DNL Word] 最適化表單並送出時，提交的最適化表單包含Unicode字元。 此外，PDF轉換為PDF/A失敗，因為Unicode字元(NPR-33348)。
 * 後端整合： 表單資料模型請求會因重新整理Token因非作用中狀態不正確而失敗(NPR-33168)。
 * 檔案服務： 由於伺服器上的Gibsonjar遺失，PDF服務無法將PDF檔案 [!DNL WebLogic] 轉 [!DNL Linux] 換為PostScript(NPR-33515、CQ-4292239)。
@@ -149,11 +149,11 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 
 請執行下列步驟，在現有的AEM 6.4.8.0例項上安裝Cumulative Fix Pack:
 
-1. 按一下「 [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/cumulativefixpack/AEM-CFP-6.4.8.1) (包共用 [)」或「Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) （軟體分發）」連結以下載包。
+1. 按一下「 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) （軟體分發）」連結以下載軟體包。
 
-1. 開啟「 [套件管理器](http://localhost:4502/crx/packmgr/index.jsp) 」，然後按一 **下「上傳套件** 」以上傳套件。
+1. 開啟「 [套件管理器](http://localhost:4502/crx/packmgr/index.jsp) 」，然後按一 **[!UICONTROL 下「上傳套件]** 」以上傳套件。
 
-1. 選擇軟體包名稱，然後按一下 **安裝**。
+1. 選擇軟體包名稱，然後按一下 **[!UICONTROL 安裝]**。
 
 >[!NOTE]
 >
