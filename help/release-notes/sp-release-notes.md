@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
+source-wordcount: '21534'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 | 版本 | 6.4.8.0 |
 | 類型 | Service Pack版本 |
 | 日期 | 2020年3月05日 |
-| 下載URL | AEM 6.4.8.0 on [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| 下載URL | AEM 6.4.8.0軟體散 [發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## AEM 6.4.8.0包含的功能 {#what-s-included-in-aem}
 
@@ -993,7 +993,7 @@ AEM 6.4.4.0表格的主要重點為：
 
 **表單——設計人員**
 
-* XDP範本中的某些JPEG影像無法正確呈現。  NPR-26702: LC-3917457的修補程式
+* XDP範本中的某些JPEG影像無法正確呈現。  NPR-26704: LC-3917457的修補程式
 
 **表單——過時**
 
@@ -1076,7 +1076,7 @@ AEM 6.4.3.0的一些主要亮點是：
 * 當富格文本編輯器與多個欄位組合時，Uncated TypeError: fieldAPI.getName不是發生foundation.js錯誤時的函式。 NPR-27146: CQ-4253155的修補程式
 * Salesforce整合無法使用Proxy設定。 NPR-27244: CQ-4245300的修補程式
 * 當您使用「管理出版物」選項排程頁面以供日後啟動，並切換至清單檢視時，日曆圖示會遺失。 NPR-26974: CQ-4239206的修補程式
-* 使用者無法編輯頁面屬性中的已關閉使用者群組權限。 NPR-27138: CQ-4256089的修補程式無法透過標籤編輯標籤。 NPR-26958: CQ-4254858的修補程式
+* 使用者無法編輯頁面屬性中的已關閉使用者群組權限。 NPR-27138: CQ-4256089的修補程式無法透過標籤編輯標籤。 NPR-26957: CQ-4254858的修補程式
 * 當從結構化內容片段模型參考的標籤被移動時，不會更新內容片段中標籤的現有參考。 這會在內容片段模型的編輯畫面中發生。 NPR-26776: CQ-4251805的修補程式
 * 當您建立並促銷包含數個頁面的啟動時，會為每個頁面建立多個版本。 NPR-26917: CQ-4254663的修補程式
 * AEM網站管理員不會處理輸入至瀏覽器位址列的路徑。 NPR-26780: CQ-4254097的修補程式
@@ -1113,7 +1113,7 @@ AEM 6.4.3.0的一些主要亮點是：
 * ResourceProviderTracker中的IndexOutOfBoundsException。 NPR-26968: GRANITE-23310的修補程式
 * JMX主控台會累積許多管理階段作業，每5分鐘就會開啟一個新階段作業。 NPR-26958: CQ-4251090的修補程式
 * 從6.2升級至6.4後，記錄檔會顯示未關閉資源解析程式com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck的堆疊追蹤。 NPR-26176: Granite-21734的修補程式
-* 將現成可用的調度器刷新代理配置為更新別名時，操作將失敗，並出現StackOverflowError。 NPR-26373: CQ-4242928的修補程式
+* 將現成可用的調度器刷新代理配置為更新別名時，操作將失敗，並出現StackOverflowError。 NPR-26373: CQ-4243928的修補程式
 * 複製使用過期的OAuth Token，直到失敗。 NPR-25894
 * Restricted page(Closed User Group page)with sling: 別名不會將使用者重新導向至登入頁面。 NPR-25715: Granite=22263的修補程式
 * 在發佈標籤時，UI上不會顯示任何活動。 CQ-4255961的修補程式
@@ -1262,7 +1262,7 @@ AEM 6.4.3.0表格的主要重點為：
 * 在循環中運行AssemblerService.toPDFA服務時，轉換失敗。 NPR-26354: CQ-4248656的修補程式
 * 無法根據PDF/A-1b標準，正確驗證PDF符合性。 NPR-26286: CQ-4227539的修補程式
 * 將AEM Forms從6.1 SP2 CFP5升級至CFP13時記憶體不足的問題。 NPR-26285: CQ-4244379的修補程式
-* 無法根據PDF/A標準正確驗證PDF符合性。 NPR-26274: CQ-4248823的修補程式
+* 無法根據PDF/A標準正確驗證PDF符合性。 NPR-26272: CQ-4248823的修補程式
 
 **表單- Foundation JEE**
 
@@ -1449,7 +1449,7 @@ AEM 6.4.2.0的一些主要亮點是：
 * 升級至最新的SCORM 2017.1版本。 NPR-25675: CQ-4240671的修補程式
 * 非社群使用者可看到「代表撰寫」欄位。 NPR-25331: CQ-4247858的修補程式
 * 即使刪除後，貼文仍會顯示在UI上，並在主控台上顯示錯誤。 NPR-26290: CQ-4252803的修補程式
-* （網站設定）可儲存對角色所做的變更。 NPR-26274: CQ-4252187的修補程式
+* （網站設定）可儲存對角色所做的變更。 NPR-26272: CQ-4252187的修補程式
 * （安全性弱點）由於JSON Web Token設定錯誤而導致帳戶接管。 NPR-26458: CQ-4253314的修補程式
 * 移除回覆時不會重設分頁。 NPR-26326: CQ-4252997的修補程式
 * 編輯時，附件影像不會顯示在「草稿」中。 CQ-4255360的修補程式
@@ -1744,7 +1744,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 國際化翻譯在語言級別不起作用。 NPR-22967、NPR-23046: Granite-21111的修補程式
 * granite.ui.commons的主動式支援修正。 NPR-23537
 * granite.ui.co內容修正的主動式支援。 NPR-23535
-* granite.ui.coralui修正的主動式支援。 NPR-23538
+* granite.ui.coralui修正的主動式支援。 NPR-23536
 * 無法一次從群組移除多個使用者。 NPR-23846
 * (OMEGA)僅以英文報告「功能」。 NPR-23989: Granite-21231的修補程式
 * （設計匯入工具）匯入頁面不會匯入js, css。 NPR-25203: Granite-22236的修補程式
@@ -1802,8 +1802,8 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 「工作流動態參與者步驟」不會顯示/apps/workflow/scripts中的指令碼。 NPR-23464: Granite-21276的修補程式
 * 編輯一次工作流程後，無法編輯它。 NPR-23742: CQ-4238526的修補程式
 * （傳統UI）編輯工作流程啟動器時，條件會消失，導致工作流程在沒有任何條件的情況下啟動。 NPR-23835: CQ-4239153的修補程式
-* 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 NPR-23947: CQ-4241236的修補程式
-* 需要在套件中公開裝載詳細資訊，讓HTL元件可在清單檢視中顯示值。 NPR-23947: CQ-4240953的修補程式
+* 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 NPR-23948: CQ-4241236的修補程式
+* 需要在套件中公開裝載詳細資訊，讓HTL元件可在清單檢視中顯示值。 NPR-23948: CQ-4240953的修補程式
 * 無法在「對話參與者」(Dialog Participant)步驟中儲存對話資料。 NPR-23965: CQ-4234123的修補程式
 * (Touch UI)儲存工作流程模型時，「同步」按鈕會變更為「同步」，導致拼字錯誤。 CQ-4244843的修補程式
 * 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 CQ-4244436的修補程式
@@ -1868,7 +1868,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407的修補程式
 * 「預升級影像預設集」在「轉譯」頁面上會顯示為「未發佈」，且不會產生URL。 CQ-4240406的修補程式
 * (CSS)會顯示資產——但使用的檢視器是預設的，而非OOTB檢視器。 CQ-4239839的修補程式
-* 停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
+* 已禁用清理步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
 * 影像檢視器產生錯誤，無法顯示正確的智慧裁切。 CQ-4237564的修補程式
 * /etc下的舊預設集似乎已中斷，且儲存時不會移轉至/conf下的位置。 CQ-4237416的修補程式
 * OOB VideoViewer 5.8.x中的回歸——檢視器會將iframe展開至右側，因此會中斷頁面版面配置。 CQ-4235465的修補程式
@@ -1927,8 +1927,8 @@ AEM Forms的主要亮點是：
 * (FDM WSDL)獲取真實例外： java.lang.exception: createSOAPParam: 無效參數。 NPR-24264
 * (FDM Client SDK)無法測試前／後預處理器和自定義提交操作。 CQ-4238469的修補程式
 * 修正Dermis中的Javadoc問題。 CQ-4244250的修補程式
-* 增強網站服務說明語言(WSDL)的輸入。 CQ-4245132的修補程式
-* AEM 6.3和AEM 6.4中相同組態的WSDL基本驗證測試會產生不同的錯誤。 CQ-4245132的修補程式
+* 增強網站服務說明語言(WSDL)的輸入。 CQ-4244132的修補程式
+* AEM 6.3和AEM 6.4中相同組態的WSDL基本驗證測試會產生不同的錯誤。 CQ-4244132的修補程式
 * 請求將ValueUtil包含在client-sdk和javadoc中。 CQ-4242803的修補程式
 * （FDM雲配置）無法從雲配置配置配置基於SOAP的身份驗證。 CQ-4238462的修補程式
 * Dermis —— 在Javadoc中添加缺少的包。 CQ-4242815的修補程式
@@ -2106,8 +2106,8 @@ AEM 6.4.1.0內容套件清單
 >
 >適用於已安裝在AEM 6.4的功能套件客戶。 Adobe提供的選購功能套件與發行版本和Service Pack有相依性。 如果您已安裝任何功能套件，請聯絡AEM客戶服務團隊，以驗證這些功能套件與AEM 6.4的此Service Pack是否相容。
 
-* AEM 6.4.8.0需要AEM 6.4。 請造訪升 [級檔案](../sites-deploying/upgrade.md) ，以取得詳細指示。
-* Adobe Package Share提供Service Pack下載，您可以直接從AEM 6.4執行個體存取。
+* AEM 6.4.8.0需要AEM 6.4。 如需詳細資訊，請參 [閱升級檔案](../sites-deploying/upgrade.md)。
+* Service Pack下載可從軟體散發入 [口網站下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 。
 * 在使用MongoDB和多個執行個體的部署中，使用「套件管理員」將AEM 6.4.8.0安裝在其中一個「作者」執行個體上。
 * 在安裝Service Pack之前，請確定您有AEM例項的快照或新鮮備份。
 * 在安裝之前重新啟動實例。 雖然只有在實例仍處於更新模式時才需要（而這是從舊版更新實例時），但通常建議在實例運行較長時間時使用。
@@ -2116,14 +2116,13 @@ AEM 6.4.1.0內容套件清單
 >
 >Adobe不建議移除或解除安裝AEM 6.4.8.0套件。
 
-### 透過Package Share安裝Service Pack {#install-the-service-pack-via-package-share}
+### 通過包管理器安裝Service Pack {#install-the-service-pack-via-package-share}
 
 請執行下列步驟，在現有的AEM 6.4執行個體上安裝Service Pack:
 
-1. 在AEM中登入「Package Share within AEM」（封裝共用），或直接從您的瀏覽器下載AEM 6.4.8.0套件。
+1. 從「軟體散發」下載套件。
 
-   （搜尋「AEM-6.4.8.0」以尋找它）
-1. 使用Package Manager安裝下載的套件。
+1. 在AEM中，登入「套件管理員」並新增已下載的AEM 6.4.8.0套件。 選取已上傳的套件，然後按一 **[!UICONTROL 下安裝]**。
 
 >[!NOTE]
 >
