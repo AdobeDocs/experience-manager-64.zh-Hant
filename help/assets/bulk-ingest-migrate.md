@@ -1,8 +1,8 @@
 ---
 title: 安裝Feature Pack 18912以進行大量資產移轉
 seo-title: 安裝Feature Pack 18912以進行大量資產移轉
-description: 功能套件18912可讓您透過FTP大量收錄資產，或在AEM中將資產從Dynamic Media Classic移轉至Dynamic Media。 Adobe支援提供此選購的功能套件。
-seo-description: 功能套件18912可讓您透過FTP大量收錄資產，或在AEM中將資產從Dynamic Media Classic移轉至Dynamic Media。 Adobe支援提供此選購的功能套件。
+description: 功能套件18912可讓您透過FTP大量收錄資產，或在AEM中將資產從Dynamic Media Classic移轉至Dynamic Media。 Adobe支援提供此選用功能套件。
+seo-description: 功能套件18912可讓您透過FTP大量收錄資產，或在AEM中將資產從Dynamic Media Classic移轉至Dynamic Media。 Adobe支援提供此選用功能套件。
 uuid: 316d77e3-3d61-4cf0-8955-726ee54e268c
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,7 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 6198e613-a867-49a8-b9a5-a05e7889821c
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
@@ -34,8 +37,8 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 **若要安裝功能套件18912以進行大量資產移轉**,
 
 1. 在您的AEM例項中，導覽至「工 **[!UICONTROL 具>安全性>使用者>建立使用者」]**。 此服務用戶必須具有對的讀／寫權限 `/content/dam`。
-1. 在「 **[!UICONTROL ID]** 」和「 **[!UICONTROL Password]** 」欄位中輸入用戶名和密碼；例如， `FTP User`。 此名稱會以建立資產的使用者身分出現在時間軸中。 當資產從FTP上傳時，當資產上傳至FTP伺服器並推送至AEM時，即視為已建立資產。
-1. 請聯 [絡Adobe Enterprise Support for Experience Manager](https://helpx.adobe.com/contact/enterprise-support.ec.html) ，要求存取功能套件18912以進行下載。 當您聯絡支援人員時，可能需要下列資訊：
+1. 在「 **[!UICONTROL ID]** 」和「 **[!UICONTROL Password]** 」欄位中輸入用戶名和密碼； 例如， `FTP User`。 此名稱會以建立資產的使用者身分出現在時間軸中。 當資產從FTP上傳時，當資產上傳至FTP伺服器並推送至AEM時，即視為已建立資產。
+1. 請聯 [絡Adobe Enterprise Support for Experience Manager](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) ，要求存取功能套件18912以進行下載。 當您聯絡支援人員時，可能需要下列資訊：
 
    * 您「作者」實例的伺服器IP地址，包括埠號（預設情況下，埠號為4502）。
    * AEM服務使用者使用者使用者名稱和密碼。
@@ -44,5 +47,4 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 1. 收到功能套件18912時，請安裝它。
 
-   如需 [在AEM中使用Package Share和Packages的詳細資訊](/help/sites-administering/package-manager.md) ，請參閱如何使用套件。
-
+   如需 [在AEM中使用「軟體散發」和「套件](/help/sites-administering/package-manager.md) 」的詳細資訊，請參閱如何使用套件。
