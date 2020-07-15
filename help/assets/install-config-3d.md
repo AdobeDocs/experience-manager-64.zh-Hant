@@ -10,7 +10,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+workflow-type: tm+mt
+source-wordcount: '1634'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
 1. 登入安裝AEM的主機。
 
-   * 如果這是Windows server部署，請以管理員身份登錄到伺服器。
+   * 如果這是Windows Server部署，請以管理員身份登錄到伺服器。
    * 如果這是MAC或Windows案頭，請確定您擁有管理員權限。
 
 1. 使用適合您作業系統的連結下載 **FBX SDK 2016.1.2版**
@@ -77,20 +80,18 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
 1. 執行下列任一項作業：
 
-   * 如果這是Windows server部署，請以管理員身份登錄到伺服器。
+   * 如果這是Windows Server部署，請以管理員身份登錄到伺服器。
    * 如果這是Mac或Windows案頭，請確定您具有管理員權限。
 
 1. 請確定您有可存取AEM的支援瀏覽器。
 
    請參閱 [系統需求](/help/release-notes/aem3d-release-notes.md#system-requirements)。
 
-1. 使用支援的瀏覽器，以管理員權限登入AEM。
-1. 在AEM中，按一下AEM標誌以存取全域導覽主控台，然後按一下「工具」圖示並導覽至「管 **[!UICONTROL 理>部署>封裝共用」]******。
-1. 在Adobe頁面上，使用您的Adobe ID認證登入您的Adobe Creative cloud帳戶。
-1. 在Adobe套件頁面上，找出3.0.1版的功 `AEM-6.4-DynamicMedia-3D` 能套件，然後下載。
+1. 存取 [軟體散發入口網站](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。 找到3.0.1版的功 `AEM-6.4-DynamicMedia-3D` 能套件並下載。
 
 1. 在AEM中，按一下「 **[!UICONTROL 工具>管理>部署>封裝管理器]**」。
-1. 找到下載的功能套件，然後按一下「 **[!UICONTROL 安裝]**」。
+
+1. 將下載的功能套件上傳至AEM。 找到它，然後按一下「 **[!UICONTROL 安裝]**」。
 
 1. 在「安裝 **[!UICONTROL 套件]** 」對話方塊中，展開「 **進階設定**」，然後將「存取控制處理」設 **[!UICONTROL 定為「]****** Merge」。
 1. 按一下 **[!UICONTROL 安裝]** ，開始安裝軟體包。
@@ -104,7 +105,7 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
 1. 在AEM中，按一下AEM標誌以存取全域導覽主控台，然後按一下「工具」圖示並導覽至「工作流程 **[!UICONTROL >模型」]******。
 1. 在「工 **[!UICONTROL 作流程模型]** 」頁面上，將滑鼠指標暫留在 **** DAM更新資產工作流程上，當出現核取標籤時，選取它。
 
-1. 在工具列上，按一下「 **[!UICONTROL 編輯」]**。
+1. 在工具列上，按一下「 **[!UICONTROL 編輯]**」。
 1. 在「 **[!UICONTROL DAM更新資產]** 」畫面的AEM浮動面板中，按一下「工作流程」右邊的「 **[!UICONTROL Plus]** 」圖示以展開清單。 在列 **[!UICONTROL 表中選擇]** 「流程步驟」。
 1. 將 **[!UICONTROL 「流程步驟]** 」拖曳至工作流程結束前的 **** DAM更新資產工作流程完成元件。
 
@@ -142,7 +143,7 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
 1. 在「資訊卡檢視」中，觀察3D資產資訊卡上顯示的訊息橫幅。
 
-   每個資產會透過數個處理步驟進行。 **[!UICONTROL 當「創]**&#x200B;建預覽……」處理步驟完成，卡片會以縮圖影像更新。 完成最終處理後，橫幅會以「新增」指示 **[!UICONTROL 器取代]** 。
+   每個資產會透過數個處理步驟進行。 當「創 **[!UICONTROL 建預覽……」]** 處理步驟完成，卡片會以縮圖影像更新。 完成最終處理後，橫幅會以「新增」指示 **[!UICONTROL 器取代]** 。
 
    >[!NOTE]
    >
@@ -236,8 +237,9 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
    1. 上傳 `logo_sphere.dn` 至資料 `test3d` 夾。 檔案位於 `sample-3D-content/models`。
 
       請注意， `sample-3D-content.zip` 先前已下載用於驗證基本3D功能。
-   1. 返回「卡 **[!UICONTROL 片檢視]** 」，並觀察已上傳資產上顯示的訊息橫幅。 **[!UICONTROL 轉換]**&#x200B;格式……橫幅會在轉換程式進行中時顯示。
+   1. 返回「卡 **[!UICONTROL 片檢視]** 」，並觀察已上傳資產上顯示的訊息橫幅。 轉換 **[!UICONTROL 格式……]** 橫幅會在轉換程式進行中時顯示。
    1. 完成所有處理後，請在「詳細資料檢視」中開啟資產 **** ，以確認已轉換的資產已正確顯示，且檢視器的導覽控制項可用。
+
    ![image2018-11-2_15-51-19](assets/image2018-11-2_15-51-19.png)
 
    如果10-15分鐘後卡片檢視的Dn資產上顯示「處 **[!UICONTROL 理錯誤]** 」，轉換失敗。
