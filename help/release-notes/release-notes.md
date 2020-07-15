@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+source-git-commit: 5cf67e97775b39d6ec78ea0db46b5bc4a4476b78
 workflow-type: tm+mt
-source-wordcount: '2745'
+source-wordcount: '2780'
 ht-degree: 3%
 
 ---
@@ -320,10 +320,10 @@ Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以
 * 適用於各種目標平台的AEM Screens Players([下載](https://download.macromedia.com/screens/))
 * 智慧型內容語言模型。 已預先安裝英文——可下載更多語言
 
-   * [德文](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [西班牙文](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [義大利文](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [法文](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
+   * [德文](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+   * [西班牙文](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+   * [義大利文](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+   * [法文](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * [Dialog Conversion Tool](/help/sites-developing/dialog-conversion.md) ，將Classic UI元件移轉至Coral 3
 
@@ -331,7 +331,7 @@ Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以
 
 * Adobe Experience Manager案頭應用程式([閱讀詳細內容](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)[及下載](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
 
-* 封裝以新增增強的PDF點陣化器([閱讀更多](/help/assets/aem-pdf-rasterizer.md)[和下載](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/assets/aem-assets-pdf-rasterizer-pkg))
+* 封裝以新增增強的PDF點陣化器([閱讀更多](/help/assets/aem-pdf-rasterizer.md)[和下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
 * 封裝以新增擴充的RAW影像支援(詳[細資訊](/help/assets/camera-raw.md))
 
