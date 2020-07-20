@@ -3,7 +3,7 @@ title: 中繼資料結構
 description: '中繼資料結構定義屬性頁面的版面配置，以及資產所顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
+source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 12%
@@ -41,7 +41,7 @@ ht-degree: 12%
 |---|---|---|
 | [!UICONTROL 預設] |  | 資產的基本中繼資料結構表單。 |
 |  | 以下子表單繼承預設表單的 [!UICONTROL 屬性] : |  |
-|  | [!UICONTROL dm_video] | 動態媒體影片的架構表單。 |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | 動態媒體影片的架構表單。 |
 |  | <ul><li> [!UICONTROL 影像]</li></ul> | 具有MIME類型「image」的資產的架構表單，例如image/jpeg、image/png等。 <br> 影 [!UICONTROL 像表單] 包含下列子表單範本： <ul><li> [!UICONTROL jpeg]: 子類型 [!UICONTROL jpeg資產的架構表單]。</li> <li>[!UICONTROL tiff]: 子類型Tiff的資產的結構表 [!UICONTROL 單]。</li></ul> |
 |  | <ul><li> [!UICONTROL 應用程式]</li></ul> | MIME類型為「應用程式」的資產的架構表單，例如application/ pdf、application/ zip等。 <br>[!UICONTROL pdf]: 子類型pdf的資產的架構表單。 |
 |  | <ul><li>[!UICONTROL 視訊]</li></ul> | MIME類型為「video」的資產的架構表單，例如video/avi、video/mp4等。 |
@@ -63,7 +63,7 @@ ht-degree: 12%
 
 1. 在對話框中，輸入模式表單的標題，然後按一下 **[!UICONTROL 建立]** ，完成表單建立過程。
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 ## 編輯中繼資料結構表單 {#editing-metadata-schema-forms}
 
@@ -78,7 +78,7 @@ ht-degree: 12%
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. 在「元數 **[!UICONTROL 據結構編輯器]** 」頁中，通過將一個或多個元件從「構建表單」頁籤中的元件類型清單拖到「基本」頁籤，自定義資產的屬性頁 ******** 。
 
