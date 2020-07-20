@@ -128,6 +128,7 @@ Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援�
 >
 >* **`evar1`** through **`evar11`**
 >* **`event1`** through **`event7`**
+
 >
 >
 **然後，在社群網站發佈之前，** 請務必移動AEM變數，在社群網站啟用Analytics時，這些AEM變數會自動對應至Analytics變數，以還原預先存在的對應。
@@ -419,7 +420,7 @@ Analytics會自動用於數個Communities功能。
 
 啟用Analytics後，在社群網站發佈之前，從左側導軌拖曳所需的Analytics evar或事件並拖曳至對應表格的相關列，即可在架構中變更對應。
 
-若要避免重複映射，請務必將已取代的Analytics evar或事件暫留在行上，並選取顯示在Analytics變數元素右側的&quot;X&quot;，以便從行中移除。
+若要避免重複映射，請務必將滑鼠指標暫留在行上並選取Analytics變數元素右側的「X」，以移除已取代的Analytics evar或事件。
 
 如果「社群」evar和事件覆寫報表套裝中預先存在的映射，則為避免資料遺失，請將「社群」功能的AEM變數指派給其他Analytics evar和／或事件，並還原原始映射。
 
@@ -456,6 +457,7 @@ Analytics會自動用於數個Communities功能。
 >
 >* **`evar1`** through **`evar11`**
 >* **`event1`** through **`event7`**
+
 >
 >
 **然後，在社群網站發佈之前，** 請務必還原預先存在的對應，並將自動映射的社群AEM變數（當社群網站的Analytics啟用時）移至其他Analytics變數。 此重新映射應在所有社區元件中保持一致。
