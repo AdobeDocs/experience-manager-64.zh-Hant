@@ -3,7 +3,10 @@ title: 加上影像浮水印
 description: 使用浮水印功能，將數位水印新增至PNG和JPEG影像。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0e0e2aa693c30c8e1ef1033b936b82d83e5b348e
+source-git-commit: 04de28347ddf0082d2e224aa3853297cad3aacd8
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 4%
 
 ---
 
@@ -32,3 +35,5 @@ Adobe Experience Manager(AEM)Assets可讓您在影像中新增數位浮水印，
 
 1. 使用浮水印 **[!UICONTROL 步驟儲存DAM更新資產]** (Dam Update Asset)工作流程。
 1. 從AEM使用者介面上傳範例資產。 浮水印會以字型大小、顏色等顯示在您在上述步驟中設定的位置。
+
+若要以程式設計方式或使用動態資訊加上PDF檔案水印，請考慮使 [用AEM Document Services方案](/help/forms/using/overview-aem-document-services.md) 。
