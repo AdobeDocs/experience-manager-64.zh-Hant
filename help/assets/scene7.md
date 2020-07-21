@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 249f2dd2553bc436a432ef68eae5cf846794ff81
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 0%
@@ -270,11 +270,9 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 >* 啟用 [「安全預覽」後](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene),Dynamic Media Classic上已發佈和未發佈的資產都會顯示在Dynamic Media Classic內容瀏覽器中。
 >* 如果您未在內容瀏覽器中將 **[!UICONTROL Dynamic Media Classic]** 或 **[!UICONTROL S7]** 圖示視為選項，您必須 [設定Dynamic Media Classic以搭配AEM運作](/help/sites-administering/scene7.md)。
 >* 對於視訊，Dynamic Media Classic內容瀏覽器支援：
-   >
-   >  
-* 最適化視訊集： 容器，以便在多個螢幕上順暢播放所需的所有視訊轉譯
->  * 單一MP4視訊
->  * 單一F4V視訊
+   >   * 最適化視訊集： 容器，以便在多個螢幕上順暢播放所需的所有視訊轉譯
+   >   * 單一MP4視訊
+   >   * 單一F4V視訊
 
 
 ### 在觸控最佳化UI中瀏覽內容 {#browsing-content-in-the-touch-optimized-ui}
@@ -289,6 +287,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 >
 >* Dynamic Media Classic內容瀏覽器會載入約100個資產，並依名稱排序。
 >* 如果您已設定安全的預覽伺服器，瀏覽器會使用該預覽伺服器來轉譯縮圖和資產。
+
 >
 
 
@@ -341,6 +340,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
    >
 * 搜尋視訊時，您會搜尋單一轉譯。 結果會傳回原始轉譯（僅&amp;ast;.mp4）和編碼轉譯。
 >* 在搜尋最適化視訊集時，您會搜尋資料夾和所有子資料夾，但前提是您已新增關鍵字至搜尋。 如果您尚未新增關鍵字，AEM不會搜尋子資料夾。
+
 >
 
 
