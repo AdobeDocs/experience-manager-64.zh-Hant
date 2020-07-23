@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '4919'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 >[!CAUTION]
 >
->本文說明如何使用JSP並以傳統的UI為基礎建立網站。 Adobe建議您運用最新的AEM技術來建立網站，如「開發AEM網站快速入門」一文 [中所述](/help/sites-developing/getting-started.md)。
+>本文說明如何使用JSP並以傳統的UI為基礎建立網站。 Adobe建議您運用最新的AEM技術來建立網站，如「開發AEM網站快速入門」一文中 [所述詳細說明](/help/sites-developing/getting-started.md)。
 
 本教學課程可讓您使用Adobe Experience Manager(AEM)建立功能完整的網站。 該網站將以一般網站為基礎，主要針對網頁開發人員。 所有開發工作都將在作者環境中進行。
 
@@ -60,7 +63,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 若要安裝AEM例項以開發您的網站，請依照指示設定部署環境與作者 [和發佈例項](/help/sites-deploying/deploy.md#author-and-publish-installs)，或執行一般 [安裝](/help/sites-deploying/deploy.md#default-local-install)。 一般安裝包括下載AEM Quickstart JAR檔案、將license.properties檔案置於與JAR檔案相同的目錄中，以及連按兩下JAR檔案。
 
-安裝AEM後，按一下「歡迎」頁面上的CRXDE Lite連結，即可存取CRXDE Lite開發環境：
+安裝AEM後，按一下「歡迎」頁面上的CRXDE Lite連結，以存取CRXDE Lite開發環境：
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -98,7 +101,7 @@ static.css檔案和影像範例
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. 在檔案夾樹狀結構中，選取「 **[!UICONTROL Designs]** 」檔案夾，然後按 **[!UICONTROL 一下「新增>新增頁面」]**。 鍵入 `mywebsite` 作為標題，然後按一下「 **[!UICONTROL 建立」]**。
+1. 在檔案夾樹狀結構中，選取「 **[!UICONTROL Designs]** 」檔案夾，然後按 **[!UICONTROL 一下「新增>新增頁面」]**。 鍵入 `mywebsite` 標題，然後按一下「 **[!UICONTROL 建立]**」。
 
 1. 如果mywebsite項目未顯示在表中，請刷新樹或表。
 
@@ -124,10 +127,11 @@ static.css檔案和影像範例
 
 1. 在「建立範本」對話方塊中，輸入下列值，然後按一下「下 **[!UICONTROL 一步]**:
 
-   * **[!UICONTROL 標籤]**:contentpage
-   * **[!UICONTROL 標題]**:我的網站內容頁面範本
-   * **[!UICONTROL 說明]**:這是我的網站內容頁面範本
-   * **[!UICONTROL 資源類型]**:mywebsite/components/contentpage
+   * **[!UICONTROL 標籤]**: contentpage
+   * **[!UICONTROL 標題]**: 我的網站內容頁面範本
+   * **[!UICONTROL 說明]**: 這是我的網站內容頁面範本
+   * **[!UICONTROL 資源類型]**: mywebsite/components/contentpage
+
    使用「排名」屬性的預設值。
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
@@ -142,7 +146,7 @@ static.css檔案和影像範例
 
    當作者在下面建立頁 `/content`面時， **** 內容頁面範本會顯示在可用範本清單中。
 
-1. 在「允 **許的父代」和「允許的子代」面板中按一下** 「[!UICONTROL Next **[!UICONTROL 」([!UICONTROL Next]** )，然後按一下「 **[!UICONTROL OK Allowed Children]** 」(確定 ****&#x200B;的子代)。 在CRXDE Lite中，按一下「全 **[!UICONTROL 部儲存」]**。
+1. 在「 **[!UICONTROL Allowed Parents(允]** 許的父項)」和「Allowed Children **[!UICONTROL (允許的子項]** )」面板中按一下「Next（下一步）」 ，然後按一下「 **[!UICONTROL OK（確定）」]******。 在CRXDE Lite中，按一下「全 **[!UICONTROL 部儲存」]**。
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -153,9 +157,10 @@ static.css檔案和影像範例
 1. 在CRXDE Lite中，以滑鼠右鍵按一下， `/apps/mywebsite/components` 然後按一 **[!UICONTROL 下「建立>元件」]**。
 1. 在「創 **[!UICONTROL 建元件]** 」對話框中，鍵入以下屬性值：
 
-   * **[!UICONTROL 標籤]**:contentpage
-   * **[!UICONTROL 標題]**:我的網站內容頁面元件
-   * **[!UICONTROL 說明]**:這是我的網站內容頁面元件
+   * **[!UICONTROL 標籤]**: contentpage
+   * **[!UICONTROL 標題]**: 我的網站內容頁面元件
+   * **[!UICONTROL 說明]**: 這是我的網站內容頁面元件
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
    新元件的位置為 `/apps/mywebsite/components/contentpage`。 此路徑與內容頁面範本的資源類型(減去路徑的 `/apps/` 初始部分)相對應。
@@ -211,53 +216,56 @@ static.css檔案和影像範例
 
 ### 建立網站頁面和內容頁面 {#creating-your-website-page-and-content-pages}
 
-在本節中，您會建立下列所有使用內容頁面範本的頁面：我的網站、英文、產品、服務和客戶。
+在本節中，您會建立下列所有使用內容頁面範本的頁面： 我的網站、英文、產品、服務和客戶。
 
 1. 在「AEM歡迎」頁面([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))上，按一下「網站」。
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
-1. 在資料夾樹狀結構中，選取「 **[!UICONTROL Websites]** 」資料夾，然後按 **[!UICONTROL 一下「新增>新頁面」]**。
+1. 在檔案夾樹狀結構中，選取「 **[!UICONTROL Websites]** 」檔案夾，然後按一 **[!UICONTROL 下「新增>新頁面」]**。
 1. 在「創 **[!UICONTROL 建頁面]** 」窗口中，輸入以下內容：
 
    * **[!UICONTROL 標題]**: `My Website`
    * **[!UICONTROL 名稱]**: `mywebsite`
    * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
+
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
-1. 按一下 **[!UICONTROL 建立]**。在資料夾樹中，選擇該頁， `/Websites/My Website` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。在資料夾樹中，選擇該頁， `/Websites/My Website` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
 1. 在「建 **[!UICONTROL 立頁面]** 」對話方塊中，輸入下列屬性值，然後按一下「建立」:
 
-   * **[!UICONTROL 標題]**:英文
-   * **[!UICONTROL 名稱]**:en
+   * **[!UICONTROL 標題]**: 英文
+   * **[!UICONTROL 名稱]**: en
    * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
 
 1. 在資料夾樹中，選擇該頁， `/Websites/My Website/English` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
 1. 在「建 **[!UICONTROL 立頁面]** 」對話方塊中，輸入下列屬性值，然後按一下「 **[!UICONTROL 建立]**:
 
-   * **[!UICONTROL 標題]**:產品
+   * **[!UICONTROL 標題]**: 產品
    * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
 
 1. 在資料夾樹中，選擇該頁， `/Websites/My Website/English` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
 1. 在「建 **[!UICONTROL 立頁面]** 」對話方塊中，輸入下列屬性值，然後按一下「 **[!UICONTROL 建立]**:
 
-   * **標題**:服務
+   * **標題**: 服務
    * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
 
 1. 在資料夾樹中，選擇該頁， `/Websites/My Website/English` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
 1. 在「建 **[!UICONTROL 立頁面]** 」對話方塊中，輸入下列屬性值，然後按一下「 **[!UICONTROL 建立]**:
 
-   * **標題**:客戶
+   * **標題**: 客戶
    * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
+
    您的結構如下所示：
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
 1. 若要將頁面連結至mywebsite設計，請在CRXDE Lite中選取節 `/content/mywebsite/en/jcr:content` 點。 在「屬 **[!UICONTROL 性]** 」索引標籤上，為新屬性輸入下列值，然後按一下「新增」:
 
-   * **[!UICONTROL 名稱]**:cq:designPath
-   * **[!UICONTROL 類型]**:字串
-   * **[!UICONTROL 值]**:/etc/designs/mywebsite
+   * **[!UICONTROL 名稱]**: cq:designPath
+   * **[!UICONTROL 類型]**: 字串
+   * **[!UICONTROL 值]**: /etc/designs/mywebsite
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. 在新的Web瀏覽器標籤或視窗中，開啟 [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) ，以檢視「產品」頁面：
@@ -283,9 +291,9 @@ static.css檔案和影像範例
    1. 選擇節 `/apps/mywebsite/components/contentpage` 點。
    1. 在「屬性」索引標籤底部，輸入下列屬性值，然後按一下「新增」:
 
-      * **[!UICONTROL 名稱]**:sling:resourceSuperType
-      * **[!UICONTROL 類型]**:字串
-      * **[!UICONTROL 值]**:foundation/components/page
+      * **[!UICONTROL 名稱]**: sling:resourceSuperType
+      * **[!UICONTROL 類型]**: 字串
+      * **[!UICONTROL 值]**: foundation/components/page
    1. 按一下「 **[!UICONTROL 全部儲存]**」。
 
 
@@ -319,7 +327,7 @@ static.css檔案和影像範例
 
 在本節中，您會建立數個指令碼，每個指令碼都會產生頁面內文的一部分。 然後，在pagecontent元件中建立body.jsp檔案，以覆寫AEM Page元件的body.jsp。 在body.jsp檔案中，您包括了生成頁面正文不同部分的指令碼。
 
-**** 提示：當元件包含與元件超類型中的檔案具有相同名稱和相對位置的檔案時，該檔案稱為 *覆蓋*。
+**提示：** 當元件包含與元件超類型中的檔案具有相同名稱和相對位置的檔案時，該檔案稱為 *覆蓋*。
 
 1. 在CRXDE Lite中，在下面建立 `left.jsp` 檔案 `/apps/mywebsite/components/contentpage`:
 
@@ -470,11 +478,11 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
 1. 在瀏覽器中，開啟「產 **[!UICONTROL 品]** 」頁面。
 1. 在「Sidekick頁面」 **[!UICONTROL 標籤上]** ，按一 **[!UICONTROL 下「頁面屬性」]**。
-1. 在對話框 **[!UICONTROL 的]** 「基本」(Basic **[!UICONTROL )頁籤上，展開「更多]** 標題和說明」(More Titles and Description **[!UICONTROL )，並為「字幕」(]** Subtitle `what we do`)屬性鍵入。 按一下 **[!UICONTROL 確定]**。
+1. 在對話框 **[!UICONTROL 的]** 「基本」(Basic **[!UICONTROL )頁籤上，展開「更多]** 標題和說明」(More Titles and Description **[!UICONTROL )，並為「字幕」(]** Subtitle `what we do`)屬性鍵入。 按一下&#x200B;**[!UICONTROL 「確定」]**。
 1. 重複上述步驟，將有關我們服務 **的副標題新增** 至「 **[!UICONTROL 服務]** 」頁面。
 1. 重複上述步驟，將我們贏得 **的信任字幕新增至** 「客 **[!UICONTROL 戶」頁面]** 。
 
-   **** 提示：在CRXDE Lite中，選擇/content/mywebsite/tw/products/jcr:content節點以查看已添加的子標題屬性。
+   **提示：** 在CRXDE Lite中，選擇/content/mywebsite/tw/products/jcr:content節點以查看已添加的子標題屬性。
 
 #### 使用影像連結增強頂端導覽 {#enhance-top-navigation-by-using-image-links}
 
@@ -649,14 +657,14 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 1. 在「網站」頁面的資 **[!UICONTROL 料夾樹狀結構]** ，選取「網站／我的網站／英文／產品 **[!UICONTROL 」項目，然後按一下「]** 新增>新頁面」 ****。
 1. 在對話方塊中輸入下列屬性值，然後按一下「建 **[!UICONTROL 立]**:
 
-   * **[!UICONTROL 標題]**:產品1.
-   * **[!UICONTROL 名稱]**:product1.
+   * **[!UICONTROL 標題]**: 產品1.
+   * **[!UICONTROL 名稱]**: product1.
    * 選擇我 **[!UICONTROL 的網站內容頁面範本]**
 
 1. 使用下列屬性值，在「產品」下方建立另一頁：
 
-   * **[!UICONTROL 標題]**:產品2
-   * **[!UICONTROL 名稱]**:product2
+   * **[!UICONTROL 標題]**: 產品2
+   * **[!UICONTROL 名稱]**: product2
    * 選擇我 **[!UICONTROL 的網站內容頁面範本]**
 
 1. 在CRXDE Lite中，設定「產品1」頁面的說明和日期：
@@ -670,9 +678,9 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
    1. 按一下&#x200B;**[!UICONTROL 「新增」]**。
    1. 在「屬 **[!UICONTROL 性]** 」索引標籤中，使用下列值建立其他屬性：
 
-      * **[!UICONTROL 名稱]**:日期
-      * **[!UICONTROL 類型]**:字串
-      * **[!UICONTROL 值]**:02/14/2008
+      * **[!UICONTROL 名稱]**: 日期
+      * **[!UICONTROL 類型]**: 字串
+      * **[!UICONTROL 值]**: 02/14/2008
       * 按一下&#x200B;**[!UICONTROL 「新增」]**。
    1. 按一下「 **[!UICONTROL 全部儲存]**」。
 
@@ -683,15 +691,15 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
    1. 選擇節 `/content/mywebsite/en/products/product2/jcr:content` 點。
    1. 在「屬 **[!UICONTROL 性]** 」標籤中，輸入下列值：
 
-      * **[!UICONTROL 名稱]**:jcr:description
-      * **[!UICONTROL 類型]**:字串
-      * **[!UICONTROL 值]**:這是產品2！的說明。
+      * **[!UICONTROL 名稱]**: jcr:description
+      * **[!UICONTROL 類型]**: 字串
+      * **[!UICONTROL 值]**: 這是產品2！的說明。
    1. 按一下&#x200B;**[!UICONTROL 「新增」]**。
    1. 在相同的文字方塊中，以下列值取代先前的值：
 
-      * **[!UICONTROL 名稱]**:日期
-      * **[!UICONTROL 類型]**:字串
-      * **[!UICONTROL 值]**:05/11/2012
+      * **[!UICONTROL 名稱]**: 日期
+      * **[!UICONTROL 類型]**: 字串
+      * **[!UICONTROL 值]**: 05/11/2012
       * 按一下&#x200B;**[!UICONTROL 「新增」]**。
    1. 按一下「 **[!UICONTROL 全部儲存]**」。
 
@@ -704,9 +712,9 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 1. 在CRXDE Lite中，按一下滑鼠右鍵 `/apps/mywebsite/components`，依序選 **[!UICONTROL 取]**「建立」 **[!UICONTROL 和「建立元件]**」。
 1. 在對話方塊中輸入下列屬性值，然後按一下「下 **[!UICONTROL 一步]**」:
 
-   * **[!UICONTROL 標籤]**:清單子項。
-   * **[!UICONTROL 標題]**:My Listchildren Component.
-   * **[!UICONTROL 說明]**:這是My Listchildren元件。
+   * **[!UICONTROL 標籤]**: 清單子項。
+   * **[!UICONTROL 標題]**: My Listchildren Component.
+   * **[!UICONTROL 說明]**: 這是My Listchildren元件。
 
 1. 繼續按「 **[!UICONTROL 下一步]** 」，直到出現「 **[!UICONTROL 允許的子項]** 」面板，然後按一下「 **[!UICONTROL 確定]**」。
 
@@ -753,7 +761,8 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
    1. 在對話框中，輸入以下屬性值並按一下確定
 
       * **[!UICONTROL 標籤]**: `dialog`
-      * **[!UICONTROL 標題]**:然 `Edit Component` 後按一下 **[!UICONTROL 確定]**。
+      * **[!UICONTROL 標題]**: `Edit Component` 然後按一 **[!UICONTROL 下確定]**。
+
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
    使用下列屬性：
@@ -767,14 +776,16 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
 1. 選擇 **tab1節點** ，然後按一下「 **[!UICONTROL 建立」>「建立節點」]**，輸入以下屬性值，然後按一下「 **[!UICONTROL 確定」]**:
 
-   * **[!UICONTROL 名稱]**:項目
-   * **[!UICONTROL 類型]**:cq:WidgetCollection
+   * **[!UICONTROL 名稱]**: 項目
+   * **[!UICONTROL 類型]**: cq:WidgetCollection
+
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. 使用以下屬性值在項目節點下建立節點：
 
-   * **[!UICONTROL 名稱]**:利斯特羅
-   * **[!UICONTROL 類型]**:cq:Widget
+   * **[!UICONTROL 名稱]**: 利斯特羅
+   * **[!UICONTROL 類型]**: cq:Widget
+
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
 1. 為listroot節點添加屬性，將其配置為文本欄位。 下表中的每一行都代表一個屬性。 完成後，按一下「 **[!UICONTROL 全部儲存」]**。
@@ -782,7 +793,7 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
    | 名稱 | 類型 | 值 |
    |---|---|---|
    | fieldLabel | 字串 | 清單根的路徑 |
-   | 名稱 | 字串 | ./listroot |
+   | 名稱 | 字串 | 。/listroot |
    | xtype | 字串 | textfield |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
@@ -818,7 +829,7 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
 1. ![chlimage_1-119](assets/chlimage_1-119.png)
 
-1. 作為清單根的路徑，輸入： `/content/mywebsite/en`。 按一下 **[!UICONTROL 確定]**。 您頁面上的listchildren元件現在如下所示：
+1. 作為清單根的路徑，輸入： `/content/mywebsite/en`. 按一下&#x200B;**[!UICONTROL 「確定」]**。您頁面上的listchildren元件現在如下所示：
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -827,7 +838,7 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 建立顯示公司標誌並提供網站首頁連結的元件。 此元件包含設計模式對話方塊，以便將屬性值儲存在網站設計(/etc/designs/mywebsite)中：
 
 * 屬性值適用於添加到使用該設計的頁面的元件的所有實例。
-* 屬性可使用使用設計頁面上的任何元件例項進行設定。
+* 屬性可使用使用設計頁面上元件的任何例項來設定。
 
 您的設計模式對話框包含用於設定影像和連結路徑的屬性。 標誌元件將放置在網站所有頁面的左上方。
 
@@ -837,7 +848,7 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
 >[!NOTE]
 >
->Adobe Experience manager提供功能更完整的標誌元件( `/libs/foundation/components/logo`)。
+>Adobe Experience Manager提供功能更完整的標誌元件( `/libs/foundation/components/logo`)。
 
 #### 建立徽標元件節點 {#creating-the-logo-component-node}
 
@@ -846,9 +857,9 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 1. 在CRXDE Lite中，以滑鼠右鍵按一下/apps/mywebsite/components，依序選取「 **[!UICONTROL 建立]**」、「 **[!UICONTROL 建立元件」]**。
 1. 在「建立元件」對話框中輸入以下屬性值，然後按一下「下一步」:
 
-   * **[!UICONTROL 標籤]**: `logo`。
+   * **[!UICONTROL 標籤]**: `logo`.
    * **[!UICONTROL 標題]**: `My Logo Component`.
-   * **[!UICONTROL 說明]**: `This is My Logo Component`。
+   * **[!UICONTROL 說明]**: `This is My Logo Component`.
 
 1. 按一下「下一步」，直到到達對話框的最終面板，然後按一下「確 **[!UICONTROL 定」]**。
 
@@ -900,7 +911,7 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
    1. 按一下右鍵該節 `/apps/mywebsite/components/logo` 點，然後按一下 **[!UICONTROL 建立>建立對話框]**。
    1. 鍵入以下屬性值，然後按一下「 **[!UICONTROL 確定]**」:
 
-      * **[!UICONTROL 標籤]**`design_dialog`
+      * **[!UICONTROL 標籤]** `design_dialog`
       * **[!UICONTROL 標題]** `Logo (Design)`
 
 1. 在design_dialog分支中按一下右鍵tab1節點，然後按一下「刪除」。 按一下「 **[!UICONTROL 全部儲存]**」。
@@ -908,9 +919,9 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
    | 名稱 | 類型 | 值 |
    |---|---|---|
-   | fileNameParameter | 字串 | ./imageName |
-   | fileReferenceParameter | 字串 | ./imageReference |
-   | 名稱 | 字串 | ./影像 |
+   | fileNameParameter | 字串 | 。/imageName |
+   | fileReferenceParameter | 字串 | 。/imageReference |
+   | 名稱 | 字串 | 。/影像 |
    | 標題 | 字串 | 影像 |
    | xtype | 字串 | html5smartimage |
 
@@ -1102,7 +1113,7 @@ public class img_GET extends AbstractImageServlet {
 
 >[!NOTE]
 >
->Adobe Experience manager提供功能更完整的影像元件( `/libs/foundation/components/image`)。
+>Adobe Experience Manager提供功能更完整的影像元件( `/libs/foundation/components/image`)。
 
 #### 建立影像元件 {#creating-the-image-component-1}
 
@@ -1113,13 +1124,13 @@ public class img_GET extends AbstractImageServlet {
 1. 選擇組 `image` 件節點，並更改以下屬性值：
 
    * `jcr:title:` 我的影像元件。
-   * `jcr:description`:這是我的影像元件。
+   * `jcr:description`: 這是我的影像元件。
 
 1. 將屬性添加到 `image` 具有以下屬性值的節點：
 
-   * **[!UICONTROL 名稱]**:componentGroup
-   * **[!UICONTROL 類型]**:字串
-   * **[!UICONTROL 值]**:MyWebsite
+   * **[!UICONTROL 名稱]**: componentGroup
+   * **[!UICONTROL 類型]**: 字串
+   * **[!UICONTROL 值]**: MyWebsite
 
 1. 在節點 `image` 下，將節點重 `design_dialog` 命名為 `dialog`。
 
@@ -1163,18 +1174,18 @@ public class img_GET extends AbstractImageServlet {
 
 1. 在CRXDE Lite中，在節點/apps/mywebsite/components/image下，按如下方式建立新節點：
 
-   * **[!UICONTROL 名稱]**:cq:editConfig。
-   * **[!UICONTROL 類型]**:cq:EditConfig。
+   * **[!UICONTROL 名稱]**: cq:editConfig。
+   * **[!UICONTROL 類型]**: cq:EditConfig。
 
 1. 在node cq:editConfig下，按如下方式建立新節點：
 
-   * **[!UICONTROL 名稱]**:cq:dropTargets。
-   * **[!UICONTROL 類型]**:cq:DropTargetConfig。
+   * **[!UICONTROL 名稱]**: cq:dropTargets。
+   * **[!UICONTROL 類型]**: cq:DropTargetConfig。
 
 1. 在node cq:dropTargets下，建立新節點，如下所示：
 
-   * **[!UICONTROL 名稱]**:影像。
-   * **[!UICONTROL 類型]**:nt：非結構化。
+   * **[!UICONTROL 名稱]**: 影像。
+   * **[!UICONTROL 類型]**: nt：非結構化。
 
 1. 在CRXDE中，按如下方式設定屬性：
 
@@ -1182,7 +1193,7 @@ public class img_GET extends AbstractImageServlet {
 |---|---|---|
 | 接受 | 字串 | image/(gif) | jpeg | PNG) |
 | 個群組 | 字串 | 媒體 |
-| propertyName | 字串 | ./imageReference |
+| propertyName | 字串 | 。/imageReference |
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
@@ -1200,9 +1211,9 @@ public class img_GET extends AbstractImageServlet {
 1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。
 1. 在Sidekick中，按一下「設 **[!UICONTROL 計模式]** 」圖示。
 1. 按一下「 **[!UICONTROL 編輯]** 」(Edit)按鈕可編輯par的設計對話框。
-1. 在對話方塊中，顯示了 **[!UICONTROL 允許的元件]** ;導覽至 **[!UICONTROL MyWebsite]**，選取「我的 **[!UICONTROL 影像元件]** 」，然後按一 **[!UICONTROL 下「確定」]**。
+1. 在對話方塊中，顯示了 **[!UICONTROL 允許的元件]** ; 導覽至 **[!UICONTROL MyWebsite]**，選取「我的 **[!UICONTROL 影像元件]** 」，然後按一 **[!UICONTROL 下「確定」]**。
 1. 返回「編 **[!UICONTROL 輯」模式]**。
-1. 連按兩下parsys影格(在 **[!UICONCONTROL拖曳元件或資產**)。 Insert New **[!UICONTROL Component]** and **[!UICONTROL Sidekick選擇器如]** 下所示：
+1. 連按兩下對應影格(在「拖曳元件或 **[!UICONTROL 資產至此處]**」)。 Insert New **[!UICONTROL Component]** and **[!UICONTROL Sidekick選擇器如]** 下所示：
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
@@ -1224,9 +1235,9 @@ public class img_GET extends AbstractImageServlet {
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. 在「AEM網站」頁面的檔案夾樹狀結構中，選取 `Websites/My Website/English`，然後按一下「 **[!UICONTROL 新增>新頁面」]**。 指定下列屬性值，然後按一下「建立」:
+1. 在「AEM網站」頁面的檔案夾樹狀結構中，選取 `Websites/My Website/English`，然後按一 **[!UICONTROL 下「新增>新頁面」]**。 指定下列屬性值，然後按一下「建立」:
 
-   * **[!UICONTROL 標題]**:工具列
+   * **[!UICONTROL 標題]**: 工具列
    * 選擇我 **[!UICONTROL 的網站內容頁面範本]**
 
 1. 在頁面清單中，以滑鼠右鍵按一下「工具列」頁 **[!UICONTROL 面]** ，然後按一下「 **[!UICONTROL 屬性」]**。 選取「 **[!UICONTROL 在導覽中隱藏]**」，然後按一 **[!UICONTROL 下「確定」]**。
@@ -1259,10 +1270,10 @@ public class img_GET extends AbstractImageServlet {
 
    1. 在第一個面板中，指定下列屬性值：
 
-      * **[!UICONTROL 標籤]**:搜尋
-      * **[!UICONTROL 標題]**:我的搜尋元件
-      * **[!UICONTROL 說明]**:這是My Search元件
-      * **[!UICONTROL 群組]**:MyWebsite
+      * **[!UICONTROL 標籤]**: 搜尋
+      * **[!UICONTROL 標題]**: 我的搜尋元件
+      * **[!UICONTROL 說明]**: 這是My Search元件
+      * **[!UICONTROL 群組]**: MyWebsite
    1. 按一 **[!UICONTROL 下「下一]**&#x200B;步」，然後再按 **[!UICONTROL 一下「下一步]** 」。
    1. 在「 **[!UICONTROL允許父項** 」面板上，按一下 **[!UICONTROL +按鈕並鍵入]**`*/parsys`。
    1. 按一下「 **[!UICONTROL Next]** (下一步 **[!UICONTROL )」 ，然後按一下「]** OK（確定）」。
@@ -1489,7 +1500,7 @@ public class img_GET extends AbstractImageServlet {
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. 導覽至您的 **[!UICONTROL 產品]** 頁面。 在輸入方塊中搜尋客戶，然後按 **[!UICONTROL Enter]**。 您會被重新導向至「 **[!UICONTROL 搜尋]** 」頁面。 切換至 **[!UICONTROL 預覽]** 模式：輸出的格式與以下類似：
+1. 導覽至您的 **[!UICONTROL 產品]** 頁面。 在輸入方塊中搜尋客戶，然後按 **[!UICONTROL Enter]**。 您會被重新導向至「 **[!UICONTROL 搜尋]** 」頁面。 切換至 **[!UICONTROL 預覽]** 模式： 輸出的格式與以下類似：
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
