@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
@@ -92,7 +95,7 @@ Pagination **[!UICONTROL 元件]** ，可讓使用者導覽多頁搜尋結果。
 
 您可讓使用者依刻面篩選搜尋結果。 「核 **[!UICONTROL 取方塊清單Facet]**」、「下拉式Facet **[!UICONTROL 」和「連結清單Facet]****** 」元件可讓使用者選取一或多個Facet進行篩選。 使用這些元件時，您也應包含 **[!UICONTROL Breadcrumbs元件]** 。 階層連結會指出目前使用的篩選條件。
 
-[! **UICONTROL Checkbox List Facet**、 **[!UICONTROL Facet]**、 **[!UICONTROL Link List Facet]** Components的每個元件都具有以下屬性，這些屬性在「編輯」模式 **** 中配置：
+List Facet ****、Dropdown Facet **[!UICONTROL 、]** Link List Facet **[!UICONTROL Components每個都具有以下屬性，您可在「編輯模式」中]****** 配置：
 
 * **[!UICONTROL Facet Name]** —— 用於篩選器的Facet名稱。
 
@@ -108,7 +111,7 @@ Pagination **[!UICONTROL 元件]** ，可讓使用者導覽多頁搜尋結果。
 
 ![sanddropdowndepartment](assets/sandpdropdowndepartment.png)
 
-「連 **[!UICONTROL 結清單Facet]** 」元件可讓客戶逐步縮小對多個Facet成員或Facet下分類項目的關注。
+「連 **[!UICONTROL 結清單Facet]** 」元件可讓客戶逐步縮小對分類在多個Facet成員或Facet下的項目的關注。
 
 Facet成員會以連結清單的形式顯示。 每個連結的文字是與目前搜尋結果相關聯之Facet成員的名稱。 當客戶按一下Facet連結時，頁面會重新載入，並顯示搜尋結果的子集。 相應地更新鏈路清單，使得聚焦更窄。
 
@@ -122,7 +125,7 @@ Breadcrumbs **[!UICONTROL 元件]** ，可讓客戶依套用順序，查看目�
 
 您可以在「編輯」模式中為Breadcrumbs設定下列屬性，以自訂元件的外觀：
 
-* **[!UICONTROL 分隔字元]** -定義字元或字元字串，以做為每個階層連結之間的分隔字元。 分隔字元欄位接受任何字元字串作為輸入。 預設設定為：&quot;>&quot;（不含引號）
+* **[!UICONTROL 分隔字元]** -定義字元或字元字串，以做為每個階層連結之間的分隔字元。 分隔字元欄位接受任何字元字串作為輸入。 預設設定為： &quot;>&quot;（不含引號）
 * **[!UICONTROL 尾隨分隔字元]** -定義要顯示在階層連結結尾的字元或字元字串。 「結尾分隔字元」欄位接受任何字元字串作為輸入。 此項的預設設定為「空白」（亦即，階層連結行的尾端不會顯示任何內容）
 
 ## 新增搜尋方塊 {#adding-search-boxes}
