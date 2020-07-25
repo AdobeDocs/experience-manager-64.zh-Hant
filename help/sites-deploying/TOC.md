@@ -3,11 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4部署指南
+user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '323'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -91,7 +92,7 @@ ht-degree: 1%
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [馬根托](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
-+ Best Practices {#practices}
++ 最佳作法 {#practices}
    + [部署最佳實務](best-practices.md)
    + [效能樹](performance-tree.md)
    + [效能測試的最佳實務](best-practices-for-performance-testing.md)
