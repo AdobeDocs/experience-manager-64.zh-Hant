@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Developing User Guide
+user-guide-title: AEM 6.4開發使用指南
+user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 7%
 
 ---
 
@@ -64,9 +68,9 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + 電子商務{#ecommerce}
       + [電子商務](ecommerce.md)
       + [開發（一般）](generic.md)
-      + [使用SAP Commerce cloud進行開發](sap-commerce-cloud.md)
+      + [使用SAP Commerce Cloud進行開發](sap-commerce-cloud.md)
 + 元件{#components}
-   + [核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+   + [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
    + [樣式系統](/help/sites-authoring/style-system.md)
    + [元件概觀](components.md)
    + [AEM元件——基本概念](components-basics.md)
@@ -117,7 +121,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [瞭解AEM中的內容片段和內容服務](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + 開發工具{#devtools}
    + [開發工具](dev-tools.md)
-   + [AEM Meduration Tools](modernization-tools.md)
+   + [AEM 現代化工具](modernization-tools.md)
    + [對話框編輯器](dialog-editor.md)
    + [對話方塊轉換工具](dialog-conversion.md)
    + [使用CRXDE Lite進行開發](developing-with-crxde-lite.md)
@@ -189,7 +193,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [檢查清單](checklists.md)
    + [艱難的一天](tough-day.md)
    + [測試您的UI](hobbes.md)
-+ Best Practices{#bestpractices}
++ 最佳作法{#bestpractices}
    + [最佳實務概觀](best-practices.md)
    + [AEM開發方針和最佳實務](dev-guidelines-bestpractices.md)
    + [開發最佳實務](development-practices.md)
