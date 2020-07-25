@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets使用指南
+user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 33%
 
 ---
 
@@ -83,7 +87,7 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [XMP回寫至轉譯](xmp-writeback.md)
    + [資產連結共用](link-sharing.md)
    + [資產報表](asset-reports.md)
-   + [增強的智慧型標籤](enhanced-smart-tags.md)
+   + [增強型智慧標記](enhanced-smart-tags.md)
    + [處理中繼資料、影像和視訊的設定檔](processing-profiles.md)
    + [階層式中繼資料](cascading-metadata.md)
    + [「建立和配置資產編輯器」頁](assets-finder-editor.md)
@@ -119,10 +123,10 @@ source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [管理智慧標籤](managing-smart-tags.md)
 + 品牌入口網站 {#brandportal}
-   + [使用品牌入口網站設定AEM資產](configure-aem-assets-with-brand-portal.md)
-   + [將資產發佈至品牌入口網站](brand-portal-publish-assets.md)
-   + [將系列發佈至品牌入口網站](brand-portal-publish-collection.md)
-   + [將資料夾發佈至品牌入口網站](brand-portal-publish-folder.md)
+   + [使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)
+   + [將資產發佈至 Brand Portal](brand-portal-publish-assets.md)
+   + [將集合發佈至 Brand Portal](brand-portal-publish-collection.md)
+   + [將資料夾發佈至 Brand Portal](brand-portal-publish-folder.md)
 + 內容片段 {#fragments}
    + [使用內容片段](content-fragments.md)
    + [管理內容片段](content-fragments-managing.md)
