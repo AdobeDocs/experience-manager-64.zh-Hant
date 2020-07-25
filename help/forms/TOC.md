@@ -4,8 +4,9 @@ product: adobe experience manager
 sub-product: '表單 '
 audience: end-user
 user-guide-title: AEM 6.4 Forms使用指南
+user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 4f6b0555b681d257c6d92490daa85a3ae2439a96
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '3702'
 ht-degree: 1%
@@ -98,7 +99,7 @@ ht-degree: 1%
       + [從AEM Forms版本升級至JEE for WebLogic上的AEM 6.4 Forms](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
       + [從LiveCycle ES4 SP1升級至WebLogic JEE上的AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
       + [從AEM Forms版本升級至JEE for WebSphere的AEM 6.4 Forms](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
-      + [從LiveCycle ES4 SP1升級至WebSphere專用JEE上的AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
+      + [從LiveCycle ES4 SP1升級至WebSphere JEE上的AEM Forms](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + 管理AEM Forms {#manage-administer-aem-forms}
    + [OSGi群組和權限上的AEM Forms](using/forms-groups-privileges-tasks.md)
    + [建立新資料夾以分類表單](using/creating-new-folders-categorize-forms.md)
