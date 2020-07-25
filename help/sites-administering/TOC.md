@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.4 Administering User Guide
+user-guide-title: AEM 6.4管理使用指南
+user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +18,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
 + [管理使用指南概觀](home.md)
 + 網站功能 {#introduction}
    + [網站管理](msm-and-translation.md)
-   + [重複使用內容：多網站管理員和即時副本](msm.md)
+   + [重複使用內容： 多網站管理員和即時副本](msm.md)
    + [即時副本概述主控台](msm-livecopy-overview.md)
    + [配置即時拷貝同步](msm-sync.md)
    + [建立和同步即時副本](msm-livecopy.md)
@@ -53,8 +57,8 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [代理伺服器工具(proxy.jar)](proxy-jar.md)
    + [為AEM應用程式設定](config-apps.md)
    + [管理工作流程](workflows.md)
-   + [配置搜索表單](search-forms.md)
-   + [工具控制台](tools-consoles.md)
+   + [設定搜尋表單](search-forms.md)
+   + [工具主控台](tools-consoles.md)
    + [報告](reporting.md)
    + [管理工作流實例](workflows-administering.md)
    + [設定版面容器和版面模式](configuring-responsive-layout.md)
@@ -69,7 +73,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [OWASP Top 10](owasp-top10.md)
    + [在生產就緒模式中執行AEM](production-ready.md)
    + [身分識別管理](identity-management.md)
-   + [AEM Managed services的Adobe IMS驗證和管理控制台支援](ims-config-and-admin-console.md)
+   + [AEM Managed Services的Adobe IMS驗證和管理控制台支援](ims-config-and-admin-console.md)
    + [建立已關閉的使用者群組](cug.md)
    + [減輕AEM中的序列化問題](mitigating-serialization-issues.md)
    + [用戶同步](sync.md)
@@ -123,7 +127,7 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [相關社群文章](related-community-articles.md)
    + [與Adobe Campaign Standard整合](campaignstandard.md)
    + [Flash 檢視器生命週期結束注意事項](flash-viewers-eol.md)
-   + [與Adobe Creative cloud整合](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
+   + [與Adobe Creative Cloud整合](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [產品摘要](product-feed.md)
    + [與Adobe動態標籤管理整合](dtm.md)
    + [選擇使用Adobe Analytics和Adobe Target](opt-in.md)
@@ -134,21 +138,21 @@ source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
    + [與BrightEdge Content Optimizer整合](brightedge.md)
    + [電子郵件範本的最佳做法](best-practices-for-email-templates.md)
    + [Catalog Producer](catalog-producer.md)
-   + [設定與Experience cloud和Creative cloud的AEM資產整合](configure-assets-cc-integration.md)
+   + [設定與Experience Cloud和Creative Cloud的AEM資產整合](configure-assets-cc-integration.md)
    + [與Silverpop Engage整合](silverpop.md)
    + [與Adobe Campaign整合](campaign.md)
    + [與ExactTarget整合](exacttarget.md)
    + [Analytics與外部提供者](external-providers.md)
-   + [與Adobe Marketing cloud整合](marketing-cloud.md)
+   + [與Adobe Marketing Cloud整合](marketing-cloud.md)
    + [手動設定與Adobe Target的整合](target-configuring.md)
-   + [與Adobe target整合的先決條件](target-requirements.md)
+   + [與Adobe Target整合的先決條件](target-requirements.md)
    + [Adobe分類](adobeanalytics-classifications.md)
    + [與Adobe Search&amp;Promote整合](search-and-promote.md)
    + [解決方案整合](integration.md)
    + [Target與體驗片段整合](experience-fragments-target.md)
    + [電子郵件範本的最佳做法](best-practices-for-email-templates.md)
-+ Best Practices {#bestpractices}
-   + [最佳實務](administer-best-practices.md)
++ 最佳作法 {#bestpractices}
+   + [最佳作法](administer-best-practices.md)
    + [翻譯最佳做法](tc-bp.md)
    + [MSM最佳實務](msm-best-practices.md)
    + [AEM Sites - GDPR就緒性](gdpr-compliance-sites.md)
