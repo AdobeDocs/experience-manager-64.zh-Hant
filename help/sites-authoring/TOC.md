@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Authoring User Guide
+user-guide-title: AEM 6.4編寫使用指南
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 44%
 
 ---
 
@@ -37,7 +41,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [製作行動裝置的頁面](mobile.md)
    + [編寫時疑難排解AEM](troubleshooting.md)
    + [編輯頁面時的鍵盤快速鍵](page-authoring-keyboard-shortcuts.md)
-   + [最佳實務](best-practices.md)
+   + [最佳作法](best-practices.md)
 + 網站和頁面功能 {#siteandpage}
    + [使用標記](tags.md)
    + [建立頁面範本](templates.md)
@@ -47,7 +51,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [元件主控台](default-components-console.md)
    + [回應式版面](responsive-layout.md)
    + [內容分析](content-insights.md)
-   + [建立可存取的內容（WCAG 2.0符合性）](creating-accessible-content.md)
+   + [建立可存取的內容 (符合 WCAG 2.0)](creating-accessible-content.md)
    + [支架](scaffolding.md)
    + [在設計模式中設定元件](default-components-designmode.md)
    + [基礎元件](default-components-foundation.md)
