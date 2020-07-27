@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 08d5fe422a8544e3b38021ccc03e655cb119dc6a
+source-git-commit: 3309352520878fd5b2bff91ce4d18d5b1a90b97d
+workflow-type: tm+mt
+source-wordcount: '2598'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,12 @@ source-git-commit: 08d5fe422a8544e3b38021ccc03e655cb119dc6a
 
 >[!NOTE]
 >
->此頁面應與「重複使用內容」 [一起閱讀：多網站管理員](/help/sites-administering/msm.md)。
+>此頁應與以下內容一起閱讀：
+>* [重複使用內容： 多網站管理員](/help/sites-administering/msm.md)。
+>* AEM 6.4中的Sites Repository Restructing:
+   >   * [多站點管理器Blueprint配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
+   >   * [多站點管理器推廣配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
+
 
 >[!CAUTION]
 >
@@ -51,7 +59,7 @@ A `Blueprint` (如 [Blueprint配置](/help/sites-administering/msm.md#source-blu
    * 藍圖設定( `Blueprint`)是選擇性的，但：
 
       * 允許作者在來源上使 **用Rovolt** （明確）將修改推送至繼承自此來源的即時副本)。
-      * 允許作者使用「 **Create Site**」;這可讓使用者輕鬆選擇語言並設定即時副本的結構。
+      * 允許作者使用「 **Create Site**」; 這可讓使用者輕鬆選擇語言並設定即時副本的結構。
       * 為任何產生的即時副本定義預設轉出設定。
 
 * **`LiveRelationship`** 指 `LiveRelationship` 定即時副本分支中的資源與其等效源／藍圖資源之間的連接（關係）。
@@ -82,20 +90,20 @@ A `Blueprint` (如 [Blueprint配置](/help/sites-administering/msm.md#source-blu
 建立自訂同步動作，以便用於轉出設定。 當安裝的操作不符合您的 [特定應用程式要求時](/help/sites-administering/msm-sync.md#installed-synchronization-actions) ，建立同步操作。 若要這麼做，請建立兩個類別：
 
 * 執行動作 [`com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 的介面實作。
-* 實作介面並建立類 [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 別例項的OSGI元 `LiveAction` 件。
+* 一種OSGI元件，用於實 [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 現介面並建立類的實 `LiveAction` 例。
 
 為 `LiveActionFactory` 給定配置創 `LiveAction` 建類的實例：
 
 * `LiveAction` 類包括以下方法：
 
-   * `getName`:傳回動作的名稱。名稱是用來參考動作的，例如在轉出設定中。
-      * `execute`:執行動作的任務。
+   * `getName`: 傳回動作的名稱。名稱是用來參考動作的，例如在轉出設定中。
+      * `execute`: 執行動作的任務。
 
 * `LiveActionFactory` 類包括以下成員：
 
-   * `LIVE_ACTION_NAME`:包含關聯名稱的欄位 `LiveAction`。 此名稱必須與類方法返回 `getName` 的值相 `LiveAction` 符。
-   * `createAction`:建立實例 `LiveAction`。 可選參 `Resource` 數可用於提供配置資訊。
-   * `createsAction`:傳回關聯的名稱 `LiveAction`。
+   * `LIVE_ACTION_NAME`: 包含關聯名稱的欄位 `LiveAction`。 此名稱必須與類方法返回 `getName` 的值相 `LiveAction` 符。
+   * `createAction`: 建立實例 `LiveAction`。 可選參 `Resource` 數可用於提供配置資訊。
+   * `createsAction`: 傳回關聯的名稱 `LiveAction`。
 
 #### 訪問LiveAction配置節點 {#accessing-the-liveaction-configuration-node}
 
@@ -103,7 +111,7 @@ A `Blueprint` (如 [Blueprint配置](/help/sites-administering/msm.md#source-blu
 
 例如，需要 `LiveAction` 儲存Blueprint作者的名稱。 配置節點的屬性包括儲存資訊的藍圖頁的屬性名稱。 在運行時， `LiveAction` 從配置中檢索屬性名稱，然後獲取屬性值。
 
-方法的參 [`LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html)`.createAction` 數是對 `Resource` 像。 此物 `Resource` 件代表轉 `cq:LiveSyncAction` 出設定中此即時動作的節點；請參閱 [建立轉出設定](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)。 與常用配置節點一樣，您應將其調整為對 `ValueMap` 像：
+方法的參 [`LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html)`.createAction` 數是對 `Resource` 像。 此物 `Resource` 件代表轉 `cq:LiveSyncAction` 出設定中此即時動作的節點； 請參閱 [建立轉出設定](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)。 與常用配置節點一樣，您應將其調整為對 `ValueMap` 像：
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -157,48 +165,72 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 #### 建立轉出設定 {#create-the-rollout-configuration}
 
-1. 在傳統 **UI中開啟** 「工具控制台」;例如， [http://localhost:4502/miscadmin#/etc](http://localhost:4502/miscadmin#/etc)
+若要建立新的轉出設定：
+
+1. 開啟CRXDE Lite; 例如：
+   [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+
+1. 導航到 :
+   `/apps/msm/<your-project>/rolloutconfigs`
+
+   >[!NOTE]
+   >這是您專案的自訂版本：
+   >`/libs/msm/wcm/rolloutconfigs`
+   >如果這是您的第一個配置，則必須建立。
 
    >[!NOTE]
    >
-   >在標準的觸控式UI中，您可以使用「工具」、「操作」和「設定」欄目，導覽至 **傳統UI工具**&#x200B;主控台 ********。
+   >您不得更改/libs路徑中的任何內容。
+   >這是因為下次升級實例時會覆寫/libs的內容（套用修補程式或功能套件時很可能會覆寫）。
+   >配置和其他更改的建議方法為：
+   >* 在/apps下重新建立必要項目（亦即，在/libs中存在）
+   >* 在/apps中進行任何變更
 
-1. 在資料夾樹中，選擇「工 **具**」、「 **MSM**」、「 **Rovolt Configurations** 」資料夾。
-1. 按一 **下「新**」，然 **後按一下「新頁面** 」以定義「轉出設定」屬性：
 
-   * **標題**:轉出設定的標題，例如我的轉出設定
-   * **名稱**:儲存屬性值的節點的名稱，如myrolloutconfig
-   * 選擇 **RolovatConfig模板**。
+1. 在此 **Create** a node with the following properties:
 
-1. 按一下 **建立**。
-1. 連按兩下您建立的轉出設定，以開啟它以進一步設定。
-1. 按一 **下編輯**。
-1. 在「轉 **出設定** 」對話方塊中，選取「同步觸發器 **[](/help/sites-administering/msm-sync.md#rollout-triggers)**」以定義導致轉出的動作。
-1. 按一下 **確定** ，保存更改。
+   * **名稱**: 轉出配置的節點名稱。 md#installed-synchronization-actions)，例如 `contentCopy` 或 `workflow`。
+   * **類型**: `cq:RolloutConfig`
+
+1. 將以下屬性添加到此節點：
+   * **名稱**: `jcr:title`
+
+      **類型**: `String`
+      **值**: UI中將會顯示的識別標題。
+   * **名稱**: `jcr:description`
+
+      **類型**: `String`
+      **值**: 可選說明。
+   * **名稱**: `cq:trigger`
+
+      **類型**: `String`
+      **值**: 要使用的 [轉出觸發](/help/sites-administering/msm-sync.md#rollout-triggers) , 從中選擇：
+      * `rollout`
+      * `modification`
+      * `publish`
+      * `deactivate`
+
+1. 按一下「 **全部儲存**」。
 
 #### 將同步操作添加到轉出配置 {#add-synchronization-actions-to-the-rollout-configuration}
 
-轉出配置儲存在節點 `/etc/msm/rolloutconfigs` 下。 添加類型的子節 `cq:LiveSyncAction` 點以向轉出配置添加同步操作。 同步操作節點的順序決定操作的發生順序。
+轉出配置儲存在您在節 [點下建立的轉出配置節點](#create-the-rollout-configuration) 下 `/apps/msm/<your-project>/rolloutconfigs` 面。
 
-1. 開啟CRXDE Lite;例如 [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
-1. 在轉出 `jcr:content` 配置節點下選擇節點。
+添加類型的子節 `cq:LiveSyncAction` 點以向轉出配置添加同步操作。 同步操作節點的順序決定操作的發生順序。
 
-   例如，對於具有 **Name** 屬性的轉出配 `myrolloutconfig`置，請選擇節點：
+1. 仍然在CRXDE Lite中，請選取您的「轉 [出設定](#create-the-rollout-configuration) 」節點。
 
-   `/etc/msm/rolloutconfigs/myrolloutconfig/jcr:content`
+   例如：
+   `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. 按一 **下「建立** 」 **和「建立節點**」。 然後配置以下節點屬性並按一下「 **確定**」:
+1. **使用** 下列節點屬性建立節點：
 
-   * **名稱**:同步操作的節點名。 名稱必須與「同步操作」( **Synchronization Actions** )下表格中的「操作名稱」( [Action Name](/help/sites-administering/msm-sync.md#installed-synchronization-actions))相同 `contentCopy` ，例如 `workflow`或。
+   * **名稱**: 同步操作的節點名。
+名稱必須與「同步操作」( **Synchronization Actions** )下表格中的「操作名稱」( [Action Name](/help/sites-administering/msm-sync.md#installed-synchronization-actions))相同 `contentCopy` ，例如 `workflow`或。
    * **類型**: `cq:LiveSyncAction`
 
-1. 選擇剛建立的操作節點，並將以下屬性添加到節點：
-
-   * **名稱**:動作的屬性名稱。 名稱必須與「同步操作」( **Synchronization Actions** )下表中的 [「屬性名稱」(Property Name](/help/sites-administering/msm-sync.md#installed-synchronization-actions))相同 `enabled`。
-   * **類型**:字串
-   * **值**:動作的屬性值。 有關有效值，請參 **閱Synchronization Actions中的** Properties列 [，例如](/help/sites-administering/msm-sync.md#installed-synchronization-actions)`true`。
-
 1. 根據需要添加和配置任意數量的同步操作節點。 重新排列動作節點，使其順序符合您希望動作節點發生的順序。 最頂端的操作節點首先出現。
+
 1. 按一下「 **全部儲存**」。
 
 ### 建立和使用簡單的LiveActionFactory類別 {#creating-and-using-a-simple-liveactionfactory-class}
@@ -416,7 +448,7 @@ GITHUB代碼
        /* get the source's cq:lastModifiedBy property */
        if (source != null && source.adaptTo(Node.class) !=  null){
         ValueMap sourcevm = source.adaptTo(ValueMap.class);
-        lastMod = sourcevm.get(com.day.cq.wcm.api.NameConstants.PN_PAGE_LAST_MOD_BY, String.class);
+        lastMod = sourcevm.get(com.day.cq.wcm.msm.api.MSMNameConstants.PN_PAGE_LAST_MOD_BY, String.class);
        }
    
        /* set the target node's la-lastModifiedBy property */
@@ -508,26 +540,19 @@ GITHUB代碼
 
 1. 使用標準過程 [建立並配置Rolovat Configuration](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) —— 並使用屬性：
 
-   1. 建立:
-
-      1. **標題**:範例轉出設定
-      1. **名稱**:examplerolloutconfig
-      1. 使用 **RovoltConfig範本**。
-   1. 編輯:
-
-      1. **同步觸發器**:啟動時
-
+   * **標題**: 範例轉出設定
+   * **名稱**: examplerolloutconfig
+   * **cq:trigger**: `publish`
 
 #### 將即時動作新增至範例轉出設定 {#add-the-live-action-to-the-example-rollout-configuration}
 
 設定您在上一個程式中建立的轉出設定，以便使用 `ExampleLiveActionFactory` 類別。
 
-1. 開啟CRXDE Lite;例如， [http://localhost:4502/crx/de](http://localhost:4502/crx/de)。
-1. 在下面建立以下節點 `/etc/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
+1. 開啟CRXDE Lite; 例如， [http://localhost:4502/crx/de](http://localhost:4502/crx/de)。
+1. 在下面建立以下節點 `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **名稱**: `exampleLiveAction`
    * **類型**: `cq:LiveSyncAction`
-   ![chlimage_1-37](assets/chlimage_1-37.png)
 
 1. 按一下「 **全部儲存**」。
 1. 選擇節 `exampleLiveAction` 點並添加以下屬性：
@@ -535,6 +560,7 @@ GITHUB代碼
    * **名稱**: `repLastModBy`
    * **類型**: `Boolean`
    * **值**: `true`
+
    此屬性向類指 `ExampleLiveAction` 示應將屬 `cq:LastModifiedBy` 性從源複製到目標節點。
 
 1. 按一下「 **全部儲存**」。
@@ -545,7 +571,7 @@ GITHUB代碼
 
 * **來源**: `/content/we-retail/language-masters/en/products`
 
-* **轉出設定**:範例轉出設定
+* **轉出設定**: 範例轉出設定
 
 激活源 **分支的** 「產品」（英文）頁，並觀察類生成的日 `LiveAction` 志消息：
 
@@ -554,23 +580,25 @@ GITHUB代碼
 16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  *** Target node lastModifiedBy property updated: admin ***
 ```
 
-### 移除「建立網站精靈」中的章節步驟 {#removing-the-chapters-step-in-the-create-site-wizard}
+<!--
+### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
-在某些情況下，「 **章節** 」選擇在建立網站精靈中不是必需的(只 **需選擇「語言** 」)。 若要移除預設We.Retail英文藍圖中的此步驟：
+In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
-1. 在CRX瀏覽器中，刪除節點：
+1. In CRX Explorer, remove the node:
 
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. 導航到 `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` 並建立新節點：
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
 
-   1. **名稱** = `chapters`; **類型** = `cq:Widget`。
+    1. **Name** = `chapters`; **Type** = `cq:Widget`.
 
-1. 向新節點添加以下屬性：
+1. Add following properties to the new node:
 
-   1. **名稱** = `name`; **類型** = `String`; **值** = `msm:chapterPages`
-   1. **名稱** = `value`; **類型** = `String`; **值** = `all`
-   1. **名稱** = `xtype`; **類型** = `String`; **值** = `hidden`
+    1. **Name** = `name`; **Type** = `String`; **Value** = `msm:chapterPages`
+    1. **Name** = `value`; **Type** = `String`; **Value** = `all`
+    1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
+-->
 
 ### 變更語言名稱和預設國家 {#changing-language-names-and-default-countries}
 
@@ -597,7 +625,7 @@ MSM會使用儲存的語言和國家代碼清單來判斷與您頁面的語言�
 
 要修改語言：
 
-1. 在網頁瀏覽器中開啟CRXDE Lite;例如， [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. 在網頁瀏覽器中開啟CRXDE Lite; 例如， [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. 選擇該文 `/apps` 件夾，然後 **按一下**「建立 **」。**
 
    命名新資料夾 `wcm`。
@@ -632,11 +660,11 @@ MSM會使用儲存的語言和國家代碼清單來判斷與您頁面的語言�
 
 * 連絡人電子郵件:
 
-   * 被排除在外部屬性之外；請參 [閱從同步中排除屬性和節點類型](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)。
+   * 被排除在外部屬性之外； 請參 [閱從同步中排除屬性和節點類型](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)。
 
 * 關鍵視覺樣式：
 
-   * 請確定您不允許在觸控式使用者介面中編輯此屬性，除非繼承已取消，您也可以重新建立繼承；通過按一下切換以指示連接狀態的鏈／斷鏈連結來控制此操作。
+   * 請確定您不允許在觸控式使用者介面中編輯此屬性，除非繼承已取消，您也可以重新建立繼承； 通過按一下切換以指示連接狀態的鏈／斷鏈連結來控制此操作。
 
 頁面屬性是否要開始，因此，在編輯時要取消／恢復繼承，由對話框屬性控制：
 
@@ -647,7 +675,7 @@ MSM會使用儲存的語言和國家代碼清單來判斷與您頁面的語言�
    * 僅當繼承取消（連結斷開）時才允許編輯
    * 僅適用於資源的第一個子級
    * **類型**: `String`
-   * **值**:持有被代價物業之名稱(及與物業價值相若 `name`;例如，請參閱
+   * **值**: 持有被代價物業之名稱(及與物業價值相若 `name`; 例如，請參閱
 
       `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
