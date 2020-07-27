@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 3309352520878fd5b2bff91ce4d18d5b1a90b97d
+source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
 workflow-type: tm+mt
-source-wordcount: '2598'
+source-wordcount: '2597'
 ht-degree: 0%
 
 ---
@@ -85,12 +85,12 @@ A `Blueprint` (如 [Blueprint配置](/help/sites-administering/msm.md#source-blu
 
    * 首次設定即時副本時，也會使用RovoltConfig（會觸發LiveActions）。
 
-### 建立新的同步操作 {#creating-a-new-synchronization-action}
+## 建立新的同步操作 {#creating-a-new-synchronization-action}
 
 建立自訂同步動作，以便用於轉出設定。 當安裝的操作不符合您的 [特定應用程式要求時](/help/sites-administering/msm-sync.md#installed-synchronization-actions) ，建立同步操作。 若要這麼做，請建立兩個類別：
 
 * 執行動作 [`com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 的介面實作。
-* 一種OSGI元件，用於實 [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 現介面並建立類的實 `LiveAction` 例。
+* 實作介面並建立類 [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 別例項的OSGI元 `LiveAction` 件。
 
 為 `LiveActionFactory` 給定配置創 `LiveAction` 建類的實例：
 
@@ -105,7 +105,7 @@ A `Blueprint` (如 [Blueprint配置](/help/sites-administering/msm.md#source-blu
    * `createAction`: 建立實例 `LiveAction`。 可選參 `Resource` 數可用於提供配置資訊。
    * `createsAction`: 傳回關聯的名稱 `LiveAction`。
 
-#### 訪問LiveAction配置節點 {#accessing-the-liveaction-configuration-node}
+### 訪問LiveAction配置節點 {#accessing-the-liveaction-configuration-node}
 
 使用存 `LiveAction` 儲庫中的配置節點來儲存影響實例運行時行為的 `LiveAction` 資訊。 儲存庫中儲存配置的節 `LiveAction` 點在運行時可供對 `LiveActionFactory` 像使用。 因此，您可以將屬性添加到配置節點，並根據需要在實施中 `LiveActionFactory` 使用這些屬性。
 
@@ -125,7 +125,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-#### 訪問目標節點、源節點和LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### 訪問目標節點、源節點和LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 以下對象作為對象方法 `execute` 的參 `LiveAction` 數：
 
@@ -150,7 +150,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >引 `Resource` 數可以是 `null` 或不適 `Resources` 應對象（如對象）的 `Node` 對 [`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 像。
 
-### 建立新的轉出設定 {#creating-a-new-rollout-configuration}
+## 建立新的轉出設定 {#creating-a-new-rollout-configuration}
 
 當安裝的轉出設定不符合您的應用程式需求時，請建立轉出設定：
 
@@ -163,7 +163,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 >
 >另請參閱自 [訂推廣的最佳實務](/help/sites-administering/msm-best-practices.md#customizing-rollouts)。
 
-#### 建立轉出設定 {#create-the-rollout-configuration}
+### 建立轉出設定 {#create-the-rollout-configuration}
 
 若要建立新的轉出設定：
 
@@ -212,7 +212,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 按一下「 **全部儲存**」。
 
-#### 將同步操作添加到轉出配置 {#add-synchronization-actions-to-the-rollout-configuration}
+### 將同步操作添加到轉出配置 {#add-synchronization-actions-to-the-rollout-configuration}
 
 轉出配置儲存在您在節 [點下建立的轉出配置節點](#create-the-rollout-configuration) 下 `/apps/msm/<your-project>/rolloutconfigs` 面。
 
@@ -233,7 +233,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 1. 按一下「 **全部儲存**」。
 
-### 建立和使用簡單的LiveActionFactory類別 {#creating-and-using-a-simple-liveactionfactory-class}
+## 建立和使用簡單的LiveActionFactory類別 {#creating-and-using-a-simple-liveactionfactory-class}
 
 請依照本節中的程式來開發並 `LiveActionFactory` 在轉出配置中使用它。 這些程式使用Maven和Eclipse來開發和部署 `LiveActionFactory`:
 
@@ -252,7 +252,7 @@ GITHUB代碼
 * [在GitHub上開啟ExperienceManager-java-msmloult專案](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * 將專案下載為 [ZIP檔案](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip)
 
-#### 建立Maven專案 {#create-the-maven-project}
+### 建立Maven專案 {#create-the-maven-project}
 
 下列程式要求您將adobe-public設定檔新增至Maven設定檔。
 
@@ -278,7 +278,7 @@ GITHUB代碼
 
 1. 啟動Eclipse並 [匯入Maven專案](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse)。
 
-#### 向POM檔案添加相關性 {#add-dependencies-to-the-pom-file}
+### 向POM檔案添加相關性 {#add-dependencies-to-the-pom-file}
 
 新增相依性，讓Eclipse編譯器可以參考程式碼中使用的 `LiveActionFactory` 類別。
 
@@ -368,7 +368,7 @@ GITHUB代碼
     </dependency>
    ```
 
-#### 實作LiveActionFactory {#implement-liveactionfactory}
+### 實作LiveActionFactory {#implement-liveactionfactory}
 
 以下類 `LiveActionFactory` 別實現一個 `LiveAction` 類，它記錄有關源和目標頁的消息，並將屬性從源節點 `cq:lastModifiedBy` 複製到目標節點。 即時動作的名稱為 `exampleLiveAction`。
 
@@ -534,7 +534,7 @@ GITHUB代碼
    13.08.2013 14:34:55.454 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle com.adobe.example.msm.MyLiveActionFactory-bundle [316]
    ```
 
-#### 建立範例轉出設定 {#create-the-example-rollout-configuration}
+### 建立範例轉出設定 {#create-the-example-rollout-configuration}
 
 建立使用您所建立之MSM轉出 `LiveActionFactory` 組態：
 
@@ -544,7 +544,7 @@ GITHUB代碼
    * **名稱**: examplerolloutconfig
    * **cq:trigger**: `publish`
 
-#### 將即時動作新增至範例轉出設定 {#add-the-live-action-to-the-example-rollout-configuration}
+### 將即時動作新增至範例轉出設定 {#add-the-live-action-to-the-example-rollout-configuration}
 
 設定您在上一個程式中建立的轉出設定，以便使用 `ExampleLiveActionFactory` 類別。
 
@@ -565,7 +565,7 @@ GITHUB代碼
 
 1. 按一下「 **全部儲存**」。
 
-#### 建立即時副本 {#create-the-live-copy}
+### 建立即時副本 {#create-the-live-copy}
 
 [使用您的轉出設定](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) ，建立We.Retail參考網站英文／產品分支的即時副本：
 
@@ -581,7 +581,7 @@ GITHUB代碼
 ```
 
 <!--
-### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
+## Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
 In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
@@ -600,7 +600,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-### 變更語言名稱和預設國家 {#changing-language-names-and-default-countries}
+## 變更語言名稱和預設國家 {#changing-language-names-and-default-countries}
 
 AEM使用預設的語言和國家代碼集。
 
@@ -630,9 +630,7 @@ MSM會使用儲存的語言和國家代碼清單來判斷與您頁面的語言�
 
    命名新資料夾 `wcm`。
 
-1. 重複上一步以建立檔案 `/apps/wcm/core` 夾樹。 在名為的核心中創 `sling:Folder` 建類型節點 `resources`。
-
-   ![chlimage_1-39](assets/chlimage_1-39.png)
+1. 重複上一步以建立檔案 `/apps/wcm/core` 夾樹。 在名為的核心中創 `sling:Folder` 建類型節點 `resources`。 <!-- ![chlimage_1-39](assets/chlimage_1-39.png) -->
 
 1. 按一下右鍵該節 `/libs/wcm/core/resources/languages` 點，然後按一下 **複製**。
 1. 按一下右鍵該文 `/apps/wcm/core/resources` 件夾並單 **擊貼上**。 根據需要修改子節點。
@@ -642,7 +640,7 @@ MSM會使用儲存的語言和國家代碼清單來判斷與您頁面的語言�
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-### 在頁面屬性上設定MSM鎖（啟用觸控的UI） {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## 在頁面屬性上設定MSM鎖（啟用觸控的UI） {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
 建立自訂頁面屬性時，您可能需要考慮新屬性是否符合推廣至任何即時副本的資格。
 
