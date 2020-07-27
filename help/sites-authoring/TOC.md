@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4編寫使用指南
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: e0b25517821971098978db078b2f205a8a380459
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '267'
 ht-degree: 44%
 
 ---
@@ -87,7 +87,7 @@ ht-degree: 44%
    + [管理對象](managing-audiences.md)
    + [建立和管理選件](offerlib.md)
    + [了解區段](segmentation-overview.md)
-+ AEM和Adobe Campaign {aem-adobe-campaign}
++ AEM和Adobe Campaign {#aem-adobe-campaign}
    + [使用Adobe Campaign](adobe-campaign.md)
    + [使用Adobe Campaign Classic和Adobe Campaign Standard](campaign.md)
    + [鎖定您的Adobe Campaign](target-adobe-campaign.md)
