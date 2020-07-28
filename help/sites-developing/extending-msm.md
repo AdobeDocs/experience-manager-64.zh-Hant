@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 6d0bd714548e62dcb63298e3d26c84c1a3d37bc9
+source-git-commit: 0cb1a323ac56b5b8ecd07f84c4840f1b466d5796
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2588'
 ht-degree: 0%
 
 ---
@@ -24,8 +24,9 @@ ht-degree: 0%
 
 * 瞭解MSM Java API的主要成員。
 * 建立可用於轉出設定的新同步動作。
-* 移除「建立網站」精靈中的「章節」步驟。
 * 修改預設語言和國家／地區代碼。
+
+<!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
@@ -90,7 +91,7 @@ A `Blueprint` (如 [Blueprint配置](/help/sites-administering/msm.md#source-blu
 建立自訂同步動作，以便用於轉出設定。 當安裝的操作不符合您的 [特定應用程式要求時](/help/sites-administering/msm-sync.md#installed-synchronization-actions) ，建立同步操作。 若要這麼做，請建立兩個類別：
 
 * 執行動作 [`com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 的介面實作。
-* 實作介面並建立類 [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 別例項的OSGI元 `LiveAction` 件。
+* 一種OSGI元件，用於實 [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 現介面並建立類的實 `LiveAction` 例。
 
 為 `LiveActionFactory` 給定配置創 `LiveAction` 建類的實例：
 
