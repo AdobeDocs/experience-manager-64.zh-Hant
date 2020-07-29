@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -92,7 +92,7 @@ GITHUB代碼
 >
 >您也可以在Maven *settings.xml檔案中設定這些儲存庫* 。
 
-其他建置系統的使用者（例如Apache Ant、Gradle）應遵循類似的步驟，以符合其所選工具的特定語法。
+其他建置系統的使用者（例如Apache Ant、Gradle）應遵循類似的步驟，並依其所選工具的特定語法進行調整。
 
 ### UberJar有什麼用？ {#what-can-i-do-with-the-uberjar}
 
@@ -429,7 +429,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 
 ### 如何使用JSP {#how-to-work-with-jsps}
 
-目前所述的Maven設定會建立內容套件，其中也可包含元件及其對應的JSP。 不過，Maven會將這些檔案視為內容套件中的任何其他檔案，甚至不會將它們辨識為JSP。
+目前所述的Maven設定會建立內容套件，其中也可包含元件及其對應的JSP。 不過，Maven會將它們視為屬於內容套件的任何其他檔案，甚至不會將它們辨識為JSP。
 
 產生的元件在AEM中都能運作，但讓Maven知道JSP有兩個主要優點
 
@@ -551,14 +551,14 @@ Maven JspC Plugin的結果也可以隨OSGi Bundle一起打包和部署，但這�
 >
 >
 ```
-> <resource>  
->           <directory>src/main/content/jcr_root</directory>  
->           <includes>  
->                   <include>apps/**</include>  
->                   <include>libs/foundation/global.jsp</include>
->       </includes>  
->   </resource>  
->  ```
+><resource>
+>       <directory>src/main/content/jcr_root</directory>
+>       <includes>
+>               <include>apps/**</include>
+>               <include>libs/foundation/global.jsp</include>
+>       </includes>
+></resource>
+>```
 
 ### 如何與SCM系統搭配使用 {#how-to-work-with-scm-systems}
 
