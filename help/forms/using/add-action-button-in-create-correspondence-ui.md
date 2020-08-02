@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
 workflow-type: tm+mt
-source-wordcount: '1912'
-ht-degree: 0%
+source-wordcount: '1896'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +61,7 @@ Correponse Management解決方案允許您將自定義操作添加到「建立�
 
       ![覆蓋節點](assets/2_defaultappoverlaynode.png)
 
-   * 按一下 **[!UICONTROL 確定]**。
+   * 按一下&#x200B;**[!UICONTROL 「確定」]**。
    * 按一下「 **[!UICONTROL 全部儲存]**」。
 
 1. 複製acmExtensionsConfig.xml檔案（存在於/libs分支下），位於/apps分支下。
@@ -139,7 +139,7 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 
    **[!UICONTROL 匹配節點類型：]** 已勾選
 
-1. 按一下 **[!UICONTROL 確定]**。
+1. 按一下&#x200B;**[!UICONTROL 「確定」]**。
 1. 按一下「 **[!UICONTROL 全部儲存]**」。
 1. 按一下右鍵以下檔案並選擇「復 **[!UICONTROL 制」]**:
 
@@ -211,7 +211,7 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 
       **[!UICONTROL 匹配節點類型：]** 已勾選
 
-   1. 按一下 **[!UICONTROL 確定]**。
+   1. 按一下&#x200B;**[!UICONTROL 「確定」]**。
    1. 按一下「 **[!UICONTROL 全部儲存]**」。
 
 1. 在js資料夾中，使用下列步驟建立名為ccrcustomization.js的檔案，其中包含按鈕動作處理的程式碼：
@@ -326,11 +326,10 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 
 在此案例中，請啟用下列元件，這些元件是附加元件。zip檔案的一部分：
 
-* DSC元件jar(DSCSample.jar)
-* 傳送信函以進行審閱流程LCA(SendLetterForReview.lca)
+* DSC元件罐(`DSCSample.jar`)
+* 發送信函以進行審核流程LCA(`SendLetterForReview.lca`)
 
-下載並解壓縮components.zip檔案，以取得DSCSample.jar和SendLetterForReview.lca檔案。 請依照下列程式指定使用這些檔案。\
-components.zip
+下載並解壓縮 `components.zip` 檔案以取得 `DSCSample.jar` 和 `SendLetterForReview.lca` 檔案。 請依照下列程式指定使用這些檔案。
 
 [取得檔案](assets/components.zip)
 
@@ -338,7 +337,7 @@ components.zip
 
 >[!NOTE]
 >
->只有當您處於「OSGI設定」中，且您所實作的自訂類型需要LC整合時，才需要此步驟。
+>只有在您處於「OSGI設定」中，且要實施的自訂類型需要LC整合時，才需要此步驟。
 
 LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入憑證。
 
@@ -408,11 +407,11 @@ LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入�
 
 #### 配置DSC服務 {#configure-the-dsc-service}
 
-若要使用Correponsement Management API，請下載DSCSample.jar（在本檔案中附加為components.zip的一部分）並將它上傳至LiveCycle伺服器。 將DSCSample.jar檔案上傳至LiveCycle伺服器後，AEM伺服器會使用DSCSample.jar檔案來存取renderLetter API。
+若要使用Correponse Management API，請下載 `DSCSample.jar` （隨附於本檔案中）並將它上 `components.zip`傳至LiveCycle伺服器。 將檔 `DSCSample.jar` 案上傳至LiveCycle伺服器後，AEM伺服器會使用檔案 `DSCSample.jar` 來存取renderLetter API。
 
 如需詳細資訊，請 [參閱「連接AEM Forms與Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)」。
 
-1. 更新DSCSample.jar中cmsa.properties中的AEM伺服器URL，此位置如下：
+1. 更新cmsa.properties中的AEM伺服器URL `DSCSample.jar`，其位於下列位置：
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
@@ -427,18 +426,18 @@ LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入�
    >
    >每次您在伺服器端進行任何變更時，請重新啟動LiveCycle Server。 如需建立您自己LiveCycle元件的詳細資訊，請參 [閱透過自訂DSC開發擴充LiveCycle ES軟體](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)。
 
-   DSCSample.jar檔案使用renderLetter API。 如需renderLetter API的詳細資訊，請參 [閱Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
+   檔 `DSCSample.jar` 案使用 `renderLetter` API。 如需renderLetter API的詳細資訊，請參 [閱Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
 
 #### 將DSC匯入LiveCyle {#import-dsc-to-livecyle}
 
-DSCSample.jar檔案使用renderLetter API，從C作為輸入提供的XML資料，將letter轉譯為PDF位元組。 如需renderLetter和其他API的詳細資訊，請參 [閱Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
+`DSCSample.jar` 檔案會使用 `renderLetter` API，從C輸入的XML資料中，將字母轉譯為PDF位元組。 如需renderLetter和其他API的詳細資訊，請參 [閱Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
 
 1. 啟動Workbench並登入。
 1. 選擇「 **[!UICONTROL 窗口」>「顯示視圖」>「元件」]**。 「元件」檢視會新增至Workbench ES2。
 
 1. 按一下右鍵「 **[!UICONTROL 元件]** 」並選擇「 **[!UICONTROL 安裝元件」]**。
 
-1. 通過文 **[!UICONTROL 件瀏覽器選擇DSCSample.jar]** 檔案，然後按一下「 **[!UICONTROL 開啟」]**。
+1. 通過文 `DSCSample.jar` 件瀏覽器選擇檔案，然後按一下 **[!UICONTROL 開啟]**。
 1. 按一下右鍵 **[!UICONTROL RenderWrapper]** ，然後選擇 **[!UICONTROL 啟動元件]**。 如果元件啟動，則元件名稱旁會出現綠色箭頭。
 
 ## 傳送信函以供審核 {#send-letter-for-review}
