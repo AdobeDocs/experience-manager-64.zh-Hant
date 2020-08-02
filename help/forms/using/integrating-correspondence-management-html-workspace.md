@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 0%
 
 ---
 
@@ -98,7 +101,7 @@ AEM Forms工作區支援管理表單和檔案的任務指派和完成活動。 �
    }
    ```
 
-   [獲取檔案](assets/dscsample.zip)下載DSC:上述DSCSample.zip檔案中提供範例DSC。 下載並解壓縮DSCSample.zip檔案。 在使用DSC服務之前，您需要對其進行配置。 有關資訊，請參 [閱配置DSC服務](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
+   [獲取檔案](assets/dscsample.zip)下載DSC: 上述檔案中提供了示 `DSCSample.zip` 例DSC。 下載並解壓縮 `DSCSample.zip` 檔案。 在使用DSC服務之前，您需要對其進行配置。 有關資訊，請參 [閱配置DSC服務](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
 
    在「定義活動」對話方塊中，選取適當的活動，例如getLetterInstanceInfo，然後按一下「 **確定**」。
 
