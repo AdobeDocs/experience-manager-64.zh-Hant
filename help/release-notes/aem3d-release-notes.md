@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '1933'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 
 **支援的作業系統**
 
-* Microsoft Windows 2012 server或更新版本
+* Microsoft Windows 2012 Server或更新版本
 * Apple OS X El Capitan 10.6或更新版本
 * RedHat Enterprise Linux 7.3
 
@@ -71,70 +74,17 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 
 ## 支援的3D檔案格式 {#supported-d-file-formats}
 
-<table> 
- <tbody>
-  <tr>
-   <td><strong>格式</strong></td> 
-   <td><strong>說明</strong></td> 
-   <td><strong>平台</strong></td> 
-   <td><strong>附註</strong></td> 
-  </tr>
-  <tr>
-   <td>DN</td> 
-   <td>Adobe Dimension</td> 
-   <td>全部</td> 
-   <td>需要存取雲端轉換服務。</td> 
-  </tr>
-  <tr>
-   <td>GLTZ</td> 
-   <td>Zipped gITF</td> 
-   <td>全部</td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>GLB</td> 
-   <td>二進位gITF</td> 
-   <td>全部</td> 
-   <td>僅下載（GLB轉譯會針對DN資產建立）。</td> 
-  </tr>
-  <tr>
-   <td>OBJ</td> 
-   <td>Wavefront OBJ 3D </td> 
-   <td>全部</td> 
-   <td> </td> 
-  </tr>
-  <tr>
-   <td>FBX</td> 
-   <td>Autodesk FBX(Kaydara Filmbox)</td> 
-   <td>全部</td> 
-   <td>Autodesk FBX SDK必須安裝在「作者」節點上。</td> 
-  </tr>
-  <tr>
-   <td>MA, MB</td> 
-   <td>Native Autodesk Maya</td> 
-   <td>僅限Windows</td> 
-   <td>Autodesk Maya在「作者」節點上必須啟用這些檔案格式。 請參 <a href="/help/assets/integrate-maya-with-3d.md" target="_blank">閱「整合AEM 3D與Autodesk Maya</a>」。</td> 
-  </tr>
-  <tr>
-   <td>JT</td> 
-   <td>Siemens PLM Open CAD</td> 
-   <td>僅限Windows</td> 
-   <td>Autodesk Maya在「作者」節點上必須啟用這些檔案格式。 請參 <a href="/help/assets/integrate-maya-with-3d.md">閱「整合AEM 3D與Autodesk Maya</a>」。</td> 
-  </tr>
-  <tr>
-   <td>*</td> 
-   <td><p>Autodesk Maya支援的其他3D輸入格式可以啟用。</p> <p>請參 <a href="/help/assets/integrate-maya-with-3d.md#enabling-additional-formats-supported-by-maya" target="_blank">閱啟用Maya支援的其他格式</a>。</p> </td> 
-   <td>僅限Windows</td> 
-   <td>Autodesk Maya在「作者」節點上必須啟用這些檔案格式。 請參 <a href="/help/assets/integrate-maya-with-3d.md">閱「整合AEM 3D與Autodesk Maya</a>」。</td> 
-  </tr>
-  <tr>
-   <td>最大值</td> 
-   <td>原生Autodesk 3ds Max</td> 
-   <td>僅限Windows</td> 
-   <td>作者節點上需要有Autodesk 3ds Max才能啟用此檔案格式。 請參 <a href="/help/assets/integrating-aem-3d-with-autodesk-3ds-max.md">閱「整合AEM 3D與Autodesk 3ds Max」</a>。</td> 
-  </tr>
- </tbody>
-</table>
+| 格式 | 說明 | 平台 | 附註 |
+|--- |--- |--- |--- |
+| DN | Adobe Dimension | 全部 | 需要存取雲端轉換服務。 |
+| GLTZ | Zipped gITF | 全部 |  |
+| GLB | 二進位gITF | 全部 | 僅下載（GLB轉譯會針對DN資產建立）。 |
+| OBJ | Wavefront OBJ 3D | 全部 |  |
+| FBX | Autodesk FBX(Kaydara Filmbox) | 全部 | Autodesk FBX SDK必須安裝在「作者」節點上。 |
+| MA, MB | Native Autodesk Maya | 僅限Windows | Autodesk Maya在「作者」節點上必須啟用這些檔案格式。 請參 [閱「整合AEM 3D與Autodesk Maya](/help/assets/integrate-maya-with-3d.md)」。 |
+| JT | Siemens PLM Open CAD | 僅限Windows | Autodesk Maya在「作者」節點上必須啟用這些檔案格式。 請參 [閱「整合AEM 3D與Autodesk Maya](/help/assets/integrate-maya-with-3d.md)」。 |
+| * | Autodesk Maya支援的其他3D輸入格式可以啟用。 請參 [閱啟用Maya支援的其他格式](/help/assets/integrate-maya-with-3d.md#enabling-additional-formats-supported-by-maya)。 | 僅限Windows | Autodesk Maya在「作者」節點上必須啟用這些檔案格式。 請參 [閱「整合AEM 3D與Autodesk Maya](/help/assets/integrate-maya-with-3d.md)」。 |
+| 最大值 | 原生Autodesk 3ds Max | 僅限Windows | 作者節點上需要有Autodesk 3ds Max才能啟用此檔案格式。 請參 [閱「整合AEM 3D與Autodesk 3ds Max」](/help/assets/integrating-aem-3d-with-autodesk-3ds-max.md)。 |
 
 ## 增強功能和新功能 {#enhancements-and-new-features}
 
@@ -168,7 +118,7 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 
 ### 一般 {#general}
 
-* **解決相依性捷徑** -此捷徑可在3D資產的卡片檢視中使用。 「卡片檢視」中的資產卡片會顯示「未解決的相依性」橫幅。 此快捷方式會開啟「 **基本屬性** 」(Basic Properties **)頁籤，而不** 是「相依性」(Dependencies)頁籤。 解決方法：手動導航至「相關性」頁籤。
+* **解決相依性捷徑** -此捷徑可在3D資產的卡片檢視中使用。 「卡片檢視」中的資產卡片會顯示「未解決的相依性」橫幅。 此快捷方式會開啟「 **基本屬性** 」(Basic Properties **)頁籤，而不** 是「相依性」(Dependencies)頁籤。 解決方法： 手動導航至「相關性」頁籤。
 
 * **舞台選擇器不可用** -包含光源的3D資產會由AEM自動標籤為3D階段。 「詳細資訊」視圖中沒有階段選擇器可用於階段。 若要將3D資產標示為3D物件，請導覽至「基本屬性」 **，將「資產類別**」變更為「 **3D物件」** ，然後按一 ********&#x200B;下「儲存對象」。
 
@@ -200,9 +150,9 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 
 * **IBL階段的背景影像** -對於某些IBL場景，背景影像可能質量較差，如過亮或過模糊。 為了最大化IBL階段的影像背景視覺品質，Adobe建議您準備個別的高解析度8位元JPEG影像，並將它附加至IBL階段，做為 **背景環境影像**。
 
-* **使用IBL舞台向Maya轉譯時的黑色影像** -此問題可能是由於Maya找不到IBL影像相依性，因為舞台所參照的原始IBL影像已由不同名稱的影像取代。 為避免此問題，請確定Maya IBL階段所引用的三個相關性中至少有一個與Maya檔案中的原始IBL檔案引用同名。
-* **IBL舞台的反背景影像** - IBL舞台的影像被有意水準翻轉，以配合隨Autodesk Maya提供的NVIDIA心理射線渲染器的行為。 解決方法：在上傳IBL階段之前，請先翻轉這些影像。
-* **IBL階段的亮度** -自動分析IBL影像可能導致場景太暗或太亮。 要調整IBL級的照明亮度，請導航到 **Basic Properties** （基本屬性），並根據需 **要調整Environment** **Lighting的亮度值** 。
+* **使用IBL舞台向Maya轉譯時的黑色影像** -此問題可能是由於Maya找不到IBL影像相依性，因為舞台所參照的原始IBL影像已由不同名稱的影像取代。 為避免此問題，請確保Maya IBL階段所引用的三個相關性中至少有一個與Maya檔案中的原始IBL檔案引用同名。
+* **IBL舞台的反背景影像** - IBL舞台的影像被有意水準翻轉，以配合隨Autodesk Maya提供的NVIDIA心理射線渲染器的行為。 解決方法： 在上傳IBL階段之前，請先翻轉這些影像。
+* **IBL階段的亮度** -自動分析IBL影像可能導致場景太暗或太亮。 要調整IBL級的照明亮度，請導航到 **Basic Properties** （基本屬性），並根據需 **要調整Environment** **Lighting的亮值** 。
 
 ### AEM Sites 3D元件 {#aem-sites-d-component}
 
@@ -215,5 +165,4 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 
 * **3D元件設定** -您必須在所有作用中的發佈節點上安裝3D功能套件，而且每個節點都必須使用 **CRXDE Lite** ，設定成相同的設定選項，位於 `/libs/settings/dam/v3D/WebGLSites`。
 
-* **發佈後遺失紋理、背景或光源** - AEM Sites中的 **Publish** 機制會自動發佈頁面的主要相依性，包括3D模型和3D元件參照的3D階段。 3D階段和3D模型通常依賴IBL影像和紋理地圖的次要資產，而「網站發佈」機制不會自動發佈。 解決方法：從「網站」發佈網頁之前，先從「資產」發佈所有3D資產。 這樣做可確保3D資產的所有相依性都可在「發佈」節點上使用。
-
+* **發佈後遺失紋理、背景或光源** - AEM Sites中的 **Publish** 機制會自動發佈頁面的主要相依性，包括3D模型和3D元件參照的3D階段。 3D階段和3D模型通常依賴IBL影像和紋理地圖的次要資產，而「網站發佈」機制不會自動發佈。 解決方法： 從「網站」發佈網頁之前，先從「資產」發佈所有3D資產。 這樣做可確保3D資產的所有相依性都可在「發佈」節點上使用。
