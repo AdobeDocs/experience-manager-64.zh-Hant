@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 1%
@@ -27,11 +27,13 @@ ht-degree: 1%
 不支援混合裝置。 使用此類裝置時可能會遇到各種問題。 下列建議的程式有助於解決許多問題：
 
 如果您使用Google Chrome做為瀏覽器：
+
 * 在地 `chrome://flags/` 址欄中鍵入，然後按Enter鍵。
 * 按一下「啟用觸控事件>停用」。
 * 重新啟動瀏覽器（所有標籤和視窗）。
 
 如果您使用Mozilla Firefox做為瀏覽器：
+
 * 在地 `about:config` 址欄中鍵入，然後按Enter鍵。
 * 篩選設定 `dom.w3c`。
 * 請確定設定是 `0` 和 `false`。
