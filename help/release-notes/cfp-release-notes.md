@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2119'
+source-wordcount: '2125'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 1%
 | 先決條件 | [AEM 6.4 Service Pack 8(6.4.8.0)](sp-release-notes.md) |
 | 下載URL | AEM 6.4.8.1軟體散 [發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fcumulativefixpack%2Faem-6.4.8-cfp-1.0.zip) |
 
-## AEM 6.4.8.0包含的功能 {#what-s-included-in-aem}
+## AEM 6.4.8.1包含的功能 {#what-s-included-in-aem}
 
 AEM Cumulative Fix Pack 6.4.8.1是重要的更新，包含自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)全面推出以來的數項內部和客戶修正。
 
@@ -112,7 +112,7 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 * 最適化表單： 自適應表單字典中字串的新行將字 `&#xa;` 符添加到字典(NPR-33265)。
 * 最適化表單： 用戶無法保存具有多個附件的自適應表單(NPR-33214)。
 * 最適化表單： `AddInstance` 和 `RemoveInstance` Instance Manager類別的方法不會在上為延遲載入片段新增動態 [!DNL Internet Explorer 11] 例項數(NPR-33201)。
-* 最適化表單： 內嵌在頁面中的最適化表單上啟 [!DNL Sites] 用的Analytics不會記錄「提交」和「放棄」事件的資料(NPR-31359)。
+* 最適化表單： 內嵌在頁面中的最適化表單上啟 [!DNL Sites] 用的Analytics不會記錄提交和放棄事件的資料(NPR-31359)。
 * 最適化表單： 當使用者將檔案的內容貼入 [!DNL Word] 最適化表單並送出時，提交的最適化表單包含Unicode字元。 此外，PDF轉換為PDF/A失敗，因為Unicode字元(NPR-33348)。
 * 後端整合： 表單資料模型請求會因重新整理Token因非作用中狀態不正確而失敗(NPR-33168)。
 * 檔案服務： 由於伺服器上的Gibsonjar遺失，PDF服務無法將PDF檔案 [!DNL WebLogic] 轉 [!DNL Linux] 換為PostScript(NPR-33515、CQ-4292239)。
@@ -175,18 +175,18 @@ B. 使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs
 
 ### 驗證安裝 {#validate-install}
 
-1. 「產品資訊」頁面(*/system/console/ productinfo *)現在應在「已安裝產品」下方顯示更新版本字串「Adobe Experience Manager, Version 6.4.8.1」。
+1. 「產品資訊」頁面(*/system/console/productinfo*)現在應在「已安裝產品」下方顯示更新版本字串「Adobe Experience Manager, Version 6.4.8.1」。
 1. 所有OSGI組合在OSGI主控台中都是ACTIVE或FRAGMENT(使用Web主控台： /system/console/bundles)。
 1. OSGI套件org.apache.jackrabbit.oak-core是1.8.17版或更新版本(使用Web Console: /system/console/bundles)。
 
 若要決定此版AEM Sites和Assets的認證執行平台，請參閱「技術 [需求」](../sites-deploying/technical-requirements.md)。
 
 >[!Note]
->成功安裝套件時，會出現>informational訊息，指出已成功安裝內容>套件，例如 **&quot;Content Package AEM-6.4-Service-Pack-7 successfully installed&quot;。**
+>成功安裝套件時，會出現資訊性訊息，指出內容套件已成功安裝，例如 **「Content Package AEM-6.4-Service-Pack-7已成功安裝」。**
 
 ### 更新動態媒體檢視器(5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
+AEM 6.4.8.1包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -200,7 +200,7 @@ B. 使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs
 
 1. 請確定您已安裝AEM Cumulative Fix Pack。
 1. 下載作業系統的 [AEM Forms版本中列出的對應表格附加元件套件](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 。
-1. 如安裝AEM Forms附加元件套件中所述，安 [裝表單附加元件套件](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage)。
+1. 如安裝AEM Forms附加元件套件中所述，安 [裝表單附加元件套件](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package)。
 
 ### 安裝AEM Forms JEE安裝程式 {#install-aem-forms-jee-installer}
 
@@ -233,7 +233,7 @@ Adobe Public Maven儲存庫中提供AEM 6.4.8.1版的Uber Jar [](https://repo.ad
 | 區域 | 功能 | 替代方案 | 版本 |
 |---|---|---|---|
 | 資產 | 管理子資產的標籤動作 | 無更換 | AEM 6.4.2.0 |
-| 資產與Adobe Creative Cloud整合 | [AEM to Creative Cloud資料夾共用](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) ，已在AEM 6.2中推出，讓創意使用者可存取AEM的資產。 Creative Cloud應用程式中發行的新功能Adobe Asset Link提供更佳的使用者體驗，並可直接從Photoshop、InDesign和Illustrator內部，以更強大的方式存取AEM中的資產。 Adobe不會進一步增強資料夾共用功能。 雖然AEM中包含此功能，但客戶會收到（我們強烈建議您使用此取代項目）。 | Adobe Asset Link或案頭應用程式。 如需詳細資訊，請參 [閱AEM Creative Cloud整合文章](/help/assets/aem-cc-integration-best-practices.md) 。 | AEM 6.4.4.0 |
+| 資產與Adobe Creative Cloud整合 | [AEM to Creative Cloud資料夾共用](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) ，已在AEM 6.2中推出，讓創意使用者可存取AEM的資產。 Creative Cloud應用程式中發行的新功能Adobe Asset Link提供更佳的使用者體驗，並可直接從Photoshop、InDesign和Illustrator內部，以更強大的方式存取AEM中的資產。 Adobe不會進一步增強資料夾共用功能。 雖然AEM中包含此功能，但客戶會收到（我們強烈建議您使用此取代項目）。 | Adobe Asset Link或案頭應用程式。 如需詳細資訊，請參 [閱AEM Creative Cloud整合文章](/help/assets/aem-cc-integration-best-practices.md) 。 | AEM 6.4.4.0 |
 
 ## 已知問題 {#known-issues}
 
