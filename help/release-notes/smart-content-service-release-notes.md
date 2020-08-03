@@ -8,7 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 4%
 
 ---
 
@@ -68,7 +71,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 ## 語言 {#languages}
 
-Smart Content service適用於下列地區設定：
+Smart Content Service適用於下列地區設定：
 
 * 英文
 * 德文
@@ -89,6 +92,7 @@ Smart Content service適用於下列地區設定：
 
 這些網站僅提供給客戶使用。 如果您是客戶且需要存取權，請連絡您的Adobe客戶經理。
 
-* [](https://daycare.day.com) 產 [品存取](https://login.marketing.adobe.com)
-
-* [Adobe客戶服務](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+* [產品存取](https://login.marketing.adobe.com)
+* [產品下載，請造訪licensing.adobe.com](https://licensing.adobe.com/)。
+* 產品更新、修補程式和套件，以取得軟體散發的 [其他功能](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。
+* [透過Admin Console的客戶支援](https://adminconsole.adobe.com/)。 如需詳細資訊，請參 [閱「新Adobe客戶支援體驗」](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。
