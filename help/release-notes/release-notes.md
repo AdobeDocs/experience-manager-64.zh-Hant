@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 5cf67e97775b39d6ec78ea0db46b5bc4a4476b78
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2780'
+source-wordcount: '2844'
 ht-degree: 3%
 
 ---
@@ -22,30 +22,12 @@ ht-degree: 3%
 
 ## 發行資訊 {#release-information}
 
-<table> 
- <tbody>
-  <tr>
-   <th>產品</th> 
-   <td>Adobe Experience Manager<br /> </td> 
-  </tr>
-  <tr>
-   <th>版本</th> 
-   <td>6.4</td> 
-  </tr>
-  <tr>
-   <th>類型</th> 
-   <td>主要版本</td> 
-  </tr>
-  <tr>
-   <th>正式上市日期</th> 
-   <td>2018年4月4日<br /> </td> 
-  </tr>
-  <tr>
-   <th>建議的更新</th> 
-   <td>請參閱 <a href="https://helpx.adobe.com/experience-manager/aem-releases-updates.html">AEM發行和更新</a></td> 
-  </tr>
- </tbody>
-</table>
+| 產品 | Adobe Experience Manager |
+|---|---|
+| 版本 | 6.4 |
+| 類型 | 主要版本 |
+| 正式上市日期 | 2018年4月4日 |
+| 建議的更新 | 請參閱 [AEM發行和更新](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) |
 
 ### Trivia {#trivia}
 
@@ -101,7 +83,7 @@ UI已做了各種增強功能，讓它更有生產力，也更容易使用。
 
    * 索引一致性檢查
    * 索引統計資料
-   * 索引配置Im/Export
+   * 索引配置導入或導出
    * 重新索引
 
 * 降低與Lucene相關的儲存庫增長，以提高整體系統效能
@@ -110,7 +92,7 @@ UI已做了各種增強功能，讓它更有生產力，也更容易使用。
 
 #### 監控 {#monitoring}
 
-* 新的「系 [統概述](/help/sites-administering/operations-dashboard.md#system-overview) 」提供了所有與效能相關的系統狀態和活動的快照視圖
+* 新的「系 [統概述](/help/sites-administering/operations-dashboard.md#system-overview) 」提供了有關所有與效能相關的系統狀態和活動的快照視圖。
 * 一組新的 [Health Checks](/help/sites-administering/operations-dashboard.md#health-checks) abourd Indexing, Queries and Maintenance
 
 #### 專案和工作流程 {#projects-and-workflows}
@@ -136,7 +118,7 @@ UI已做了各種增強功能，讓它更有生產力，也更容易使用。
 
 **[內容片段](/help/assets/content-fragments.md)**
 
-6.4中的新功能是視覺化內 [容模型編輯器](/help/assets/content-fragments-models.md) ，以及全新的可設 [定元件](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html) ，可提供彈性的HTML輸出和JSON，以加入Content Services。
+6.4中的新功能是視覺化內 [容模型編輯器](/help/assets/content-fragments-models.md) ，以及全新的可設 [定元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) ，可提供彈性的HTML輸出和JSON，以加入Content Services。
 
 **體驗片段**
 
@@ -150,7 +132,7 @@ Sling Model Exporter和Core Components的各種增強功能已包含在內，以
 
 AEM 6.4完成對新一代元件模型的轉換。 AEM 6.3中引進的核心元件概念現在已與樣式系統結合，提供建立新網站和擴充現有網站的有效方式。
 
-建議的教學課程，以瞭解如何最佳運用新元件模型： [AEM Sites快速入門- WKND教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+建議的教學課程，以瞭解如何最佳運用新元件模型： [AEM Sites快速入門- WKND教學課程](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 #### 畫面附加元件 {#screens-add-on}
 
@@ -214,9 +196,9 @@ AEM 6.4為Assets提供多項新功能和增強功能，包括全新、改良的C
 
 **AEM案頭應用程式**
 
-AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。 AEM案頭應用程式的完整變更清單會提供在專屬的 [AEM案頭應用程式版本注意事項檔案中](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) 。
+AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。 AEM案頭應用程式的完整變更清單會提供在專屬的 [AEM案頭應用程式版本注意事項檔案中](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/release-notes.html) 。
 
-自AEM 6.3版本以來所推出的改良功能包括可在背景上傳階層式資料夾、可監控資產背景作業的新UI、增強的快取、網路和登入，以及整體穩定性的改善。 說明檔案也包含最 [佳實務指南](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)。
+自AEM 6.3版本以來所推出的改良功能包括可在背景上傳階層式資料夾、可監控資產背景作業的新UI、增強的快取、網路和登入，以及整體穩定性的改善。 說明檔案也包含最 [佳實務指南](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)。
 
 **Adobe Sensei服務**
 
@@ -230,7 +212,7 @@ AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。 AEM案頭應用程
 
 **報表**
 
-在AEM 6.4中，資產報告已進行了重大改革，新的報告架構、使用者體驗，以及更多OOTB報告可供客戶使用。 若要瞭解如何產生各種報表，請參閱 [資產報表](/help/assets/asset-reports.md)。
+在AEM 6.4中，資產報告已進行大幅改革，新的報告架構、使用者體驗和更多OOTB報告都適用於客戶使用案例。 若要瞭解如何產生各種報表，請參閱 [資產報表](/help/assets/asset-reports.md)。
 
 **使用者體驗**
 
@@ -238,7 +220,7 @@ AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。 AEM案頭應用程
 
 **品牌入口網站**
 
-中繼資料、報告、數位權限、登入體驗和發佈效能等方面的各種增強功能，以利資產散發。 如需新增增強功能的詳細資訊，請參 [閱「AEM Assets品牌入口網站的新增功能](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)」。
+中繼資料、報告、數位權限、登入體驗和發佈效能等方面的各種增強功能，以利資產散發。 如需新增增強功能的詳細資訊，請參 [閱「AEM Assets品牌入口網站的新增功能](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html)」。
 
 #### 動態媒體附加元件 {#dynamic-media-add-on}
 
@@ -254,7 +236,7 @@ Smart Crop採用Adobe Sensei技術，可自動提供影像的非破壞性裁切�
 
 **智慧型影像**
 
-智慧型影像處理運用每位使用者獨特的檢視特性，自動提供最佳化的影像體驗，進而提高效能和參與度。
+智慧型影像處理運用每位使用者獨特的檢視特性，自動提供最佳化的影像體驗，進而提供更佳的效能和參與度。
 
 如需詳 [細資訊](/help/assets/imaging-faq.md) ，請參閱智慧型影像檔案。
 
@@ -290,13 +272,13 @@ AEM 6.4 Forms提供多項新功能和增強功能。 重點包括：
 
 您可以將Livefyre與AEM 6.4執行個體整合。 有關如何將Livefyre與AEM整合的資訊，請參閱：
 
-* [整合Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)
+* [整合Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
 
 ### 運用以客戶為中心的開發 {#leverage-customer-focused-development}
 
 Adobe採用以客戶為中心的開發模型，讓客戶在規格、開發和測試期間，對開發流程的所有階段都有貢獻。 在此過程中，我們感謝所有有貢獻的客戶和合作夥伴。
 
-Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以客戶為中心的錯誤解決方案和增強功能要求開發。 Adobe [Marketing Cloud支援入口網站](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html) ，已與Adobe增強與缺陷追蹤系統整合。 客戶問題會盡可能與客戶服務確認並解決。 呈報至研發時，會擷取所有客戶資訊，並用於優先排序和報告用途。 在開發時，優先考慮付費支援和擔保問題以及付費客戶增強功能。
+Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以客戶為中心的錯誤解決方案和增強功能要求開發。 Adobe [Marketing Cloud支援入口網站](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html) ，已與Adobe增強與缺陷追蹤系統整合。 客戶問題會盡可能與客戶服務確認並解決。 呈報至研發時，會擷取所有客戶資訊，並用於優先排序和報告用途。 在開發時，優先考慮付費支援和擔保問題以及付費客戶增強功能。
 
 此優先順序排列程式已在AEM 6.4中修正超過500項以客戶為主的變更。
 
@@ -306,11 +288,11 @@ Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以
 
 * 獨立快速入門： cq-quickstart-6.4.0.jar
 * 應用程式伺服器快速啟動： cq-quickstart-6.4.0.war
-* Dispatcher 4.3.1或更新版本，適用於各種Web伺服器和平台(下[載連結](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html))
-* Eclipse IDE增效模組(詳[細內容及下載](/help/sites-developing/aem-eclipse.md))
+* Dispatcher 4.3.1或更新版本，適用於各種Web伺服器和平台。 請參閱 [下載連結](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html)。
+* Eclipse IDE的增效模組。 [閱讀更多內容並下載](/help/sites-developing/aem-eclipse.md)。
 
-* Brackets程式碼編輯器的擴充功能([閱讀更多資訊並下載](/help/sites-developing/aem-brackets.md))
-* Maven/Gradle相依性(下[載連結](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/))
+* Brackets程式碼編輯器的擴充功能。 [閱讀更多內容並下載](/help/sites-developing/aem-brackets.md)。
+* Maven/Gradle相依性。 請參閱 [下載連結](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/)。
 
 **網站**
 
@@ -329,7 +311,7 @@ Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以
 
 **資產**
 
-* Adobe Experience Manager案頭應用程式([閱讀詳細內容](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)[及下載](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
+* Adobe Experience Manager案頭應用程式([閱讀詳細內容](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)[及下載](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/release-notes.html))
 
 * 封裝以新增增強的PDF點陣化器([閱讀更多](/help/assets/aem-pdf-rasterizer.md)[和下載](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -370,7 +352,7 @@ Experience Manager 6.4已通過GB18030-2005 CITS認證，可使用中文編碼�
 
 ## 支援的平台 {#supported-platforms}
 
-請尋找完整的支援平台矩陣，包括 [AEM 6.4技術需求的支援層級](/help/sites-deploying/technical-requirements.md)
+請尋找完整的支援平台矩陣，包括 AEM 6.4技術 [需求的支援層級](/help/sites-deploying/technical-requirements.md)。
 
 >[!NOTE]
 >
@@ -402,7 +384,6 @@ Adobe會持續評估產品中的功能，並隨著時間推移，計畫以功能
 
 這些網站僅提供給客戶使用。 如果您是客戶，需要存取權，請聯絡您的Adobe客戶經理。
 
-* [](https://daycare.day.com) [產品下載，請造訪licensing.adobe.com](https://licensing.adobe.com/)
-
-* [daycare.day.com的客戶支援](https://daycare.day.com)
-
+* [產品下載，請造訪licensing.adobe.com](https://licensing.adobe.com/)。
+* 產品更新、修補程式和套件，以取得軟體散發的 [其他功能](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。
+* [透過Admin Console的客戶支援](https://adminconsole.adobe.com/)。 如需詳細資訊，請參 [閱「新Adobe客戶支援體驗」](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。
