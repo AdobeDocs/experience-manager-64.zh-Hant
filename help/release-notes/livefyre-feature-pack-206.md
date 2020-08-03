@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 translation-type: tm+mt
-source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '657'
 ht-degree: 1%
 
 ---
@@ -20,38 +20,14 @@ ht-degree: 1%
 
 ## 發行資訊 {#release-information}
 
-<table> 
- <tbody>
-  <tr>
-   <td>產品</td> 
-   <td>Livefyre Feature Pack 2.0.6</td> 
-  </tr>
-  <tr>
-   <td>版本</td> 
-   <td>2.0.6</td> 
-  </tr>
-  <tr>
-   <td>類型</td> 
-   <td>功能發行</td> 
-  </tr>
-  <tr>
-   <td>日期</td> 
-   <td>2018年8月31日</td> 
-  </tr>
-  <tr>
-   <td>下載URL<br /> </td> 
-   <td>聯絡您的管理員</td> 
-  </tr>
-  <tr>
-   <td>相容性(*)</td> 
-   <td>AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1</td> 
-  </tr>
-  <tr>
-   <td>說明</td> 
-   <td>此套件可讓您將Livefyre領先業界的組織功能與AEM實例整合，讓您在幾分鐘內將重要的使用者產生內容(UGC)從社交網路發佈至您的網站。</td> 
-  </tr>
- </tbody>
-</table>
+| 產品 | Livefyre Feature Pack 2.0.6 |
+|--- |--- |
+| 版本 | 2.0.6 |
+| 類型 | 功能發行 |
+| 日期 | 2018年8月31日 |
+| 下載URL | 聯絡您的管理員 |
+| 相容性(*) | AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1 |
+| 說明 | 此套件可讓您將Livefyre領先業界的組織功能與AEM實例整合，讓您在幾分鐘內將重要的使用者產生內容(UGC)從社交網路發佈至您的網站。 |
 
 ## Livefyre Feature Pack 2.0.6包含哪些功能 {#what-is-included-in-livefyre-feature-pack}
 
@@ -74,7 +50,7 @@ ht-degree: 1%
 * 將您現有的產品目錄完美整合至Livefyre，以推動使用者在網站上的互動與轉化，並提供可購買的UGC體驗。
 * 編輯或刪除AEM Commerce產品目錄中的項目，並自動更新Livefyre中的變更。
 
-如需安裝的協助，請參閱 [與Livefyre整合](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)。
+如需安裝的協助，請參閱 [與Livefyre整合](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)。
 
 ### 其他發行資訊 {#additional-release-information}
 
@@ -87,7 +63,7 @@ ht-degree: 1%
 #### 新功能或改進 {#new-feature-or-improvement}
 
 * 新增在Livefyre中設定權限要求社交帳戶之前，先搜尋UGC的功能。 您必須設定社交帳戶以請求權限，或者如果您擁有內容，則覆寫權限請求。
-* Instagram和Twitter [UGC權限要求工作流程已更新](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html) ，以符合最新的API。
+* Instagram和Twitter [UGC權限要求工作流程已更新](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html) ，以符合最新的API。
 * 權限狀態和適當動作現在會顯示在權限請求畫面上。
 
 #### 錯誤修正 {#bug-fixes}
@@ -108,4 +84,3 @@ ht-degree: 1%
 * 修正Touch UI功能和內嵌編輯的問題。
 * 修正匯入特定Instagram影像資產時造成錯誤的問題。
 * 修正AEM中的Livefyre HTTP用戶端不支援Proxy設定的問題。
-
