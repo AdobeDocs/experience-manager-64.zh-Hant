@@ -10,14 +10,17 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 translation-type: tm+mt
-source-git-commit: 242f60c70c7cc00871d2ff9f42d2ade4125eaa31
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 4%
 
 ---
 
 
 # AEM Communities發行說明 {#aem-communities-release-notes}
 
-本節提供自6.3版以來AEM Communities的改進資訊。 若要進一步瞭解新功能，請參 [閱「AEM 6.4 Communities的新增功能」](/help/communities/whats-new-aem-communities.md)。
+本節提供自6.3版以來AEM Communities的改進資訊。 若要詳細瞭解新功能，請參 [閱「AEM 6.4 Communities的新增功能」](/help/communities/whats-new-aem-communities.md)。
 
 若要取得最新版本，請參閱文 [件的「部署社群](/help/communities/deploy-communities.md#latest-releases) 」區段。
 
@@ -58,7 +61,7 @@ source-git-commit: 242f60c70c7cc00871d2ff9f42d2ade4125eaa31
 
 與AEM 6.4的基本變更整體相容。
 
-注意：AEM 6.3也提供這些功能。請查看AEM Communities的 [6.3發行說明](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)。
+注意： AEM 6.3也提供這些功能。 請查看AEM Communities的 [6.3發行說明](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html)。
 
 ## 已知問題 {#known-issues}
 
