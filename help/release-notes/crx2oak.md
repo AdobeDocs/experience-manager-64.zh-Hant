@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
