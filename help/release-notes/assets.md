@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '1689'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 ## Adobe Asset Link {#adobe-asset-link}
 
-適用於企業的Creative cloud中的Adobe Asset Link可簡化創意人員與行銷人員在內容建立程式中的協作。 它是適用於企業的Creative cloud的新原生功能，可直接從Adobe Photoshop、Adobe Illustrator或Adobe inDesign連線至AEM資產。 而不需離開這些工具。
+適用於企業的Creative Cloud中的Adobe Asset Link可簡化創意人員與行銷人員在內容建立程式中的協作。 它是適用於企業的Creative Cloud的新原生功能，可直接從Adobe Photoshop、Adobe Illustrator或Adobe InDesign連線至AEM資產。 而不需離開這些工具。
 
-若要進一步瞭解功能、必要條件及如何存取，請參閱 [Adobe資產連結頁面](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) 。
+若要進一步瞭解功能、必要條件及如何存取，請參閱 [Adobe資產連結頁面](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 。
 
 ## 增強的智慧型標籤（由Adobe Sensei提供支援） {#enhanced-smart-tags-powered-by-adobe-sensei}
 
@@ -49,7 +52,7 @@ AEM 6.4在瀏覽、搜尋、多頁資產和管理工具等方面提供大幅的�
 瀏覽改良功能
 
 * 新的內容樹狀結構可快速導覽資產階層。 這會與清單檢視結合，將Classic UI互動模型還原為瀏覽資產階層。
-* 新的鍵盤快速鍵（例如m）可移動資產、p可開啟屬性頁面、Ctrl + c可復製作業等。
+* 新的鍵盤快速鍵（例如m）可移動資產、p可開啟屬性頁面、Ctrl + C可復製作業等。
 * 已改善捲動、在卡片和清單檢視中延遲載入的體驗，以瀏覽大量資產。
 * 改善卡片檢視，並支援根據檢視設定而調整不同大小的卡片。
 * 改善資產詳細資訊體驗，並能夠檢視、導覽至「上一個」或「下一個」資產，以及資產數目（即流動資產）。
@@ -92,32 +95,31 @@ AEM 6.4提供大幅的資產報告增強功能：
 
 ## 品牌入口網站 {#brand-portal}
 
-* **6.3平台升級**:品牌入口網站從AEM 6.0升級至AEM 6.3，並具備新功能和效能改進。
-* **平行發佈**:在AEM Assets和品牌入口網站（之前為1個）之間最多可進行複製，這可大幅改善發佈效能
-* **架構與搜尋Facet發佈**:能夠將中繼資料結構描述和自訂搜尋刻面發佈至品牌入口網站，以免重複工作。
-* **大量標籤發佈**:能夠將分類法（連同階層）發佈至品牌入口網站，以消除工作重複。
-* **自行註冊或請求存取**:品牌入口網站的非註冊使用者工作流程。
-* **應用程式內（螢幕上）維護通知**:通知會提前顯示，以避免業務中斷。
-* **報告改進**:有三份OOTB報告可供使用：下載、發佈和連結分享。
-* **DRM限制**:授權資產過期後，就無法再從Brand Portal下載。
+* **6.3平台升級**: 品牌入口網站從AEM 6.0升級至AEM 6.3，並具備新功能和效能改進。
+* **平行發佈**: 在AEM Assets和品牌入口網站（之前為1個）之間最多可進行複製，這可大幅改善發佈效能
+* **架構與搜尋Facet發佈**: 能夠將中繼資料結構描述和自訂搜尋刻面發佈至品牌入口網站，以免重複工作。
+* **大量標籤發佈**: 能夠將分類法（連同階層）發佈至品牌入口網站，以消除工作重複。
+* **自行註冊或請求存取**: 品牌入口網站的非註冊使用者工作流程。
+* **應用程式內（螢幕上）維護通知**: 通知會提前顯示，以避免業務中斷。
+* **報告改進**: 有三份OOTB報告可供使用： 下載、發佈和連結分享。
+* **DRM限制**: 授權資產過期後，就無法再從Brand Portal下載。
 
 ## AEM desktop app {#aem-desktop-app}
 
-AEM案頭應用程式已更新至1.8版，與AEM 6.4相容。AEM案頭應用程式的完整變更清單會提供在專屬的 [AEM案頭應用程式版本注意事項檔案中](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html) 。\
+AEM案頭應用程式已更新至1.8版，與AEM 6.4相容。 AEM案頭應用程式的完整變更清單會提供在專屬的 [AEM案頭應用程式版本注意事項檔案中](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/release-notes.html) 。\
 以下是自AEM 6.3發行以來AEM案頭應用程式摘要清單：
 
 * 能夠在背景上傳階層式資料夾。
 * UI可監控背景中的資產上傳。
 * 快取改進功能，包括管理快取參數的UI。
 * 更廣泛支援AEM驗證設定(SAML/SSO)和網路代理。
-* 可支援性：從使用者介面輕鬆存取記錄檔。
+* 可支援性： 從使用者介面輕鬆存取記錄檔。
 * 已改善客戶問題的穩定性和修正。
 
 為了更輕鬆地存取檔案和最佳實務，請提供下列檔案：
 
-* [使用者指南](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)，針對使用應用程式的使用者
-* [針對使用者和管理員](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app-best-practices.html)，提供最佳實務指南
-* [安裝指南](https://helpx.adobe.com/experience-manager/desktop-app/install-configure-aem-desktop-app.html)，旨在讓管理員設定AEM和AEM案頭應用程式以搭配運作
+* [使用者指南](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)，針對使用應用程式的使用者。
+* [安裝指南](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html)，旨在讓管理員設定AEM和AEM案頭應用程式以搭配運作
 
 ## 分層儲存 {#tiered-storage}
 
@@ -148,7 +150,7 @@ AEM 6.4包含一組功能，可支援各種分層儲存偏好設定並實作生�
 
 如需詳 [細資訊，請參閱影像描述檔](../assets/image-profiles.md) (Image Profiles)檔案。
 
-另請參閱 [新增動態媒體資產至頁面檔案](../assets/adding-dynamic-media-assets-to-pages.md) ，以進一步瞭解搭配動態媒體元件使用智慧型裁切。
+另請參閱 [新增動態媒體資產至頁面檔案](../assets/adding-dynamic-media-assets-to-pages.md) ，進一步瞭解搭配動態媒體元件使用智慧型裁切。
 
 ### 智慧型影像 {#smart-imaging}
 
