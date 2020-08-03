@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
 translation-type: tm+mt
-source-git-commit: 901a923b6ab2b6bee1738d2b8f1928571c8019cb
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ source-git-commit: 901a923b6ab2b6bee1738d2b8f1928571c8019cb
 * 樣式系統
 
    * 新增全新概念，以指派CSS類別至元件，並允許頁面編輯器中的使用者透過UI從樣式子集中選取
-   * 新增定義在元件周圍呈現的HTML元素名稱的功能，例如&lt;main>, &lt;ased>
+   * 新增定義在元件周圍呈現的HTML元素名稱的功能，例如 &lt;main>, &lt;ased>
 
 * 版面容器的格線系統，請參 [閱Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)。
 * 範本編輯器與原則
@@ -73,13 +76,13 @@ source-git-commit: 901a923b6ab2b6bee1738d2b8f1928571c8019cb
 * 新增AEM內容片段的增強輸出選項
 
    * 新的內容片段元件，做為核心元件的一部分。 [請參閱GitHub上的程式碼。](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment)
-   * 透過Sling Model Exporter輸出JSON的Content services支援
+   * 透過Sling Model Exporter輸出JSON的Content Services支援
 
 ### 體驗片段 {#experience-fragments}
 
 * 引入體驗片段建立區塊，透過將元件分組並允許變數中的簡單參考，以方便在體驗片段變數之間重複使用內容。
 * 新增透過參考邊欄將體驗片段新增至翻譯專案的功能
-* 透過時間軸邊欄新增使用Experience片段啟動工作流程的能力
+* 新增透過時間軸邊欄開始使用Experience片段的工作流程的功能
 * 參考邊欄現在會顯示AEM中使用體驗片段的位置
 * 範本位置的設定現在允許作者在全域或資料夾層級定義允許使用的體驗片段範本
 * 多面搜尋現在支援進階篩選，例如已發佈／未發佈、匯出至社交媒體和Adobe Target
@@ -116,7 +119,7 @@ source-git-commit: 901a923b6ab2b6bee1738d2b8f1928571c8019cb
 * 支援資料夾，以根據網站／內容來組織區段(CQ-94620)
 * 將區段的預設位置移至/conf，以便擁有網站／內容特定的區段清單。
 
-### AEM與Adobe Target {#aem-amp-adobe-target-nbsp}
+### AEM與Adobe Target  {#aem-amp-adobe-target-nbsp}
 
 * 將AEM體驗片段與Adobe Target整合。 將體驗片段同步至Target將在Adobe Target中建立選件，並可與Target的Visual Experience Composer搭配使用，以將其嵌入任何啟用Target的體驗。
 * Adobe Target mbox.js 63版現已隨附。 Adobe建議將實作切換為at.js。
@@ -140,4 +143,3 @@ source-git-commit: 901a923b6ab2b6bee1738d2b8f1928571c8019cb
 * 「裝置控制面板」清單顯示播放器的連線狀態
 * 新增AEM Screens Player的Google Chrome OS支援
 * 已新增Microsoft Windows 10 for AEM Screens Player
-
