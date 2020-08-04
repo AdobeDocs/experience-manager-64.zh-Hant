@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
 workflow-type: tm+mt
-source-wordcount: '2125'
+source-wordcount: '2159'
 ht-degree: 1%
 
 ---
@@ -55,6 +55,8 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 * 無法建立AEM Sites頁面的啟動。 啟動建立會導致錯誤(NPR-32544)。
 * 「管理出版物」在啟動工作流程的要求中不包含參考資產(NPR-32463)。
 * Dispatcher health check在日 `Invalid cookie header` 志檔案中顯示警告消息(NPR-33630)。
+* Salesforce整合易受SSRF(NPR-32671)的影響。
+* PreferencesServlet中反映的XSS(NPR-33439)。
 
 ### 資產 {#assets-6481}
 
@@ -74,6 +76,8 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 
 * 大量上傳時的資產處理會卡住(CQ-4293916)。
 
+* Experience Manager中的SSRF弱點(NPR-33437)。
+
 ### 平台 {#platform-6481}
 
 * 如果 [!DNL Sling] 在下面建立了 `sling:match` 映射條目，則不會調 `/etc/maps` 用篩選器(NPR-33308)。
@@ -89,12 +93,17 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 
 * 在運 `NullPointerException` 行翻譯作業的日誌中出現錯誤(NPR-32220)。
 
+### 整合 {#integrations-6481}
+
+* JSON的跨網站指令碼(NPR-32745)。
+
 ### 社群 {#communities-6481}
 
 * 建立新群組後，作者不會重新導向至 [!DNL Internet Explorer] 11號的「社群群組」區段(NPR-33202)。
 * 存取「活動串流」頁 [!UICONTROL 面時發生錯誤] (NPR-33152)。
 * 編輯群 [!DNL Communities] 組並變更縮圖影像並不會更新群組縮圖影像(NPR-32603)。
 * 建立使用者產生的內容(UGC)的通知和訂閱版本時，會儲存來源頁面的錯誤ID(CQ-4289703)。
+* 跨網站指令碼問題(NPR-33212)。
 
 ### 工作流程 {#workflow-6481}
 
@@ -117,6 +126,8 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 * 後端整合： 表單資料模型請求會因重新整理Token因非作用中狀態不正確而失敗(NPR-33168)。
 * 檔案服務： 由於伺服器上的Gibsonjar遺失，PDF服務無法將PDF檔案 [!DNL WebLogic] 轉 [!DNL Linux] 換為PostScript(NPR-33515、CQ-4292239)。
 * 檔案服務： 當使用者將文字檔案轉換為PDF時，日文字元無法正確顯示(NPR-33239)。
+* 將XSS與GuideSOMProviderServlet一起儲存(NPR-32701)。
+
 
 ## Install 6.4.8.1 {#install}
 
