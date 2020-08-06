@@ -1,8 +1,8 @@
 ---
 title: 如何以程式設計方式存取AEM JCR
 seo-title: 如何以程式設計方式存取AEM JCR
-description: 您可以程式設計方式修改位於AEM儲存庫中的節點和屬性，而AEM儲存庫是Adobe Marketing cloud的一部分
-seo-description: 您可以程式設計方式修改位於AEM儲存庫中的節點和屬性，而AEM儲存庫是Adobe Marketing cloud的一部分
+description: 您可以程式設計方式修改位於AEM儲存庫中的節點和屬性，而AEM儲存庫是Adobe Marketing Cloud的一部分
+seo-description: 您可以程式設計方式修改位於AEM儲存庫中的節點和屬性，而AEM儲存庫是Adobe Marketing Cloud的一部分
 uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '618'
+ht-degree: 0%
 
 ---
 
 
 # 如何以程式設計方式存取AEM JCR{#how-to-programmatically-access-the-aem-jcr}
 
-您可以程式設計方式修改位於Adobe CQ儲存庫中的節點和屬性，此儲存庫是Adobe Marketing cloud的一部分。 若要存取CQ儲存庫，請使用Java內容儲存庫(JCR)API。 您可以使用Java JCR API，對位於Adobe CQ儲存庫中的內容執行建立、取代、更新和刪除(CRUD)作業。 如需Java JCR API的詳細資訊，請參閱 [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html)。
+您可以程式設計方式修改位於Adobe CQ儲存庫中的節點和屬性，此儲存庫是Adobe Marketing Cloud的一部分。 若要存取CQ儲存庫，請使用Java內容儲存庫(JCR)API。 您可以使用Java JCR API，對位於Adobe CQ儲存庫中的內容執行建立、取代、更新和刪除(CRUD)作業。 如需Java JCR API的詳細資訊，請參閱 [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html)。
 
 >[!NOTE]
 >
