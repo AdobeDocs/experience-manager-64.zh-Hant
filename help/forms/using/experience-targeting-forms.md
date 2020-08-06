@@ -10,15 +10,18 @@ topic-tags: integrations
 discoiquuid: 6cf54a08-d429-4a58-8429-a1cb784448d1
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 0%
 
 ---
 
 
 # 在AEM Forms中建立目標體驗 {#create-targeted-experiences-in-aem-forms}
 
-## 將Adobe target與AEM Forms整合 {#integrate-adobe-target-with-aem-forms}
+## 將Adobe Target與AEM Forms整合 {#integrate-adobe-target-with-aem-forms}
 
-與AEM整合的Adobe Target可讓您為目標受眾建立自訂的體驗。 有了Adobe Target，您可以建立A/B測試、測量使用者回應，以及為目標使用者產生自訂的網頁內容。 您可以將Adobe target與AEM Forms整合，以針對最適化表單和互動式通訊的影像元件進行定位。
+與AEM整合的Adobe Target可讓您為目標受眾建立自訂的體驗。 有了Adobe Target，您可以建立A/B測試、測量使用者回應，以及為目標使用者產生自訂的網頁內容。 您可以將Adobe Target與AEM Forms整合，以針對最適化表單和互動式通訊的影像元件進行定位。
 
 在AEM中設定Adobe Target以搭配最適化表單和互動式通訊使用，請參閱「在AEM中 [建立Target設定](/help/sites-administering/target.md) 」 [和「新增架構」](/help/sites-administering/target.md)。
 
@@ -43,7 +46,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    當您建立活動時，可以指定其詳細資訊、目標和設定。
 
-   「詳細資訊」區段包含名稱、定位引擎和目標。 當您選取Adobe target做為定位引擎時，就會啟用Target雲端設定選項。 選擇您的Target雲端設定、選擇「活動類型」、提供活動目標，然後點選「下 **一步**」。 互動式通訊僅支援體驗定位活動類型。
+   「詳細資訊」區段包含名稱、定位引擎和目標。 當您選取Adobe Target做為定位引擎時，就會啟用Target雲端設定選項。 選擇您的Target雲端設定、選擇「活動類型」、提供活動目標，然後點選「下 **一步**」。 互動式通訊僅支援體驗定位活動類型。
 
    「目標」區段可讓您新增觀眾體驗並命名。 按一 **下「新增體驗** 」以啟用「選 **取對象** 」和「 **命名體驗** 」選項。 點選 **「選取對象** 」以查看對象及其來源的清單。 從「對象名稱」清單中選取對象。 點選 **「新增體驗** 」以命名體驗，點選「下 **一步」**。
 
@@ -53,7 +56,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
    >[!NOTE]
    >
-   >您可以忽略「您的活動已儲存，但未同步至Target」錯誤。 原因：如果在儲存活動時遇到下列體驗沒有選件」。
+   >您可以忽略「您的活動已儲存，但未同步至Target」錯誤。 原因： 如果在儲存活動時遇到下列體驗沒有選件」。
 
 1. 若要啟用目標，請編輯。jsp檔案，以包含您最適化表單範本所使用的用戶端程式庫。
 
@@ -71,7 +74,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 1. 若要啟用最適化表單的目標架構，請導覽至您的表單或互動式通訊，然後在編輯模式中開啟它。
 
-   若要在編輯模式中開啟表單或互動式通訊，請點選「 **選取** 」，然後點選「 **開啟」**。
+   若要在編輯模式中開啟表格或互動式通訊，請點選「 **選取** 」，然後點選「 **開啟」**。
 
    或者，當您將指標移至表格或互動式通訊圖示上時，不需選取它，就會顯示4個按鈕。 您可以點選出現 **的「編輯** 」按鈕，以在編輯模式中開啟表單。
 
