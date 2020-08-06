@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 translation-type: tm+mt
 source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ AEM中對關係型資料庫永續性的支援是使用Document Microkernel實作
 
 儲存庫是通過配置OSGi服務 `DocumentNodeStoreService` 建立的。 除了MongoDB外，它還擴展了它以支援關係資料庫持久性。
 
-若要運作，資料來源必須使用AEM進行設定。 這是透過檔案完 `org.apache.sling.datasource.DataSourceFactory.config` 成。 在本地配置中，需要分別以OSGi捆綁包的形式提供相應資料庫的JDBC驅動程式。
+若要運作，資料來源必須使用AEM進行設定。 這是透過檔案完 `org.apache.sling.datasource.DataSourceFactory.config` 成。 在本地配置中，需要將相應資料庫的JDBC驅動程式作為OSGi捆綁提供。
 
 如需建立JDBC驅動程式的OSGi搭售的步驟，請參閱 [Apache Sling網站](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) 上的本檔案。
 
@@ -56,12 +59,12 @@ AEM中對關係型資料庫永續性的支援是使用Document Microkernel實作
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
-1. 通過在資料夾中建立具有以下名稱的另一個配置檔案來配置資料源和JDBC `crx-quickstart\install` 參數：
+1. 通過在資料夾中建立另一個具有以下名稱的配置檔案來配置資料源和JDBC `crx-quickstart\install` 參數：
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
    >[!NOTE]
    >
-   >有關每個受支援資料庫的資料源配置的詳細資訊，請參 [閱資料源配置選項](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)。
+   >有關每個受支援資料庫的資料源配置的詳細資訊，請參閱 [資料源配置選項](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)。
 
 1. 接下來，準備要與AEM搭配使用的JDBC OSGi搭售：
 
