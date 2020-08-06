@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 translation-type: tm+mt
 source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 8%
 
 ---
 
@@ -82,12 +85,12 @@ Using the [User](/help/sites-authoring/user-properties.md#user-settings) option 
 
    此選項定義系統中日期的顯示方式。 可使用下列選項：
 
-   * **一律顯示確切日期**:一律會顯示確切日期（從不是相對日期）。
-   * **1天**:相對日期會顯示為一天內的日期，否則會顯示確切日期。
-   * **7天（預設值）**:相對日期會顯示在7天內的日期，否則會顯示確切日期。
-   * **1個月**:相對日期會顯示一個月內的日期，否則會顯示確切日期。
-   * **1年**:相對日期會顯示在一年內的日期，否則會顯示確切的日期。
-   * **一律顯示相對日期**:不會顯示確切日期，只顯示相對日期。
+   * **一律顯示確切日期**: 一律會顯示確切日期（從不是相對日期）。
+   * **1天**: 相對日期會顯示為一天內的日期，否則會顯示確切日期。
+   * **7天（預設值）**: 相對日期會顯示在7天內的日期，否則會顯示確切的日期。
+   * **1個月**: 相對日期會顯示一個月內的日期，否則會顯示確切日期。
+   * **1年**: 相對日期會顯示在一年內的日期，否則會顯示確切的日期。
+   * **一律顯示相對日期**: 不會顯示確切日期，只顯示相對日期。
 
 * **啟用快速鍵**
 
@@ -95,6 +98,7 @@ Using the [User](/help/sites-authoring/user-properties.md#user-settings) option 
 
    * [編輯頁面的鍵盤快速鍵](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [控制台的鍵盤快速鍵](/help/sites-authoring/keyboard-shortcuts.md)
+
    此選項可啟用鍵盤快速鍵。 依預設會啟用這些功能，但可停用（例如，如果使用者有特定的協助工具需求）。
 
 * **使用傳統製作體驗**
