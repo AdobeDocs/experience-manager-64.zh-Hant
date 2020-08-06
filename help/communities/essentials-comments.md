@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 3%
 
 ---
 
@@ -58,7 +61,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 分頁和使用URL進行快取和連結需要URL在每個留言系統中都是唯一的。 因此，每頁僅允許一個注釋系統實例。
 
-其他功能已包括註解系統。 以下是：
+其他功能已包括註解系統。 說明如下：
 
 * [部落格](blog-developer-basics.md)
 * [日曆](calendar-basics-for-developers.md)
