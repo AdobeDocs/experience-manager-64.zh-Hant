@@ -4,6 +4,9 @@ description: 視訊轉譯
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ AEM資產在用戶端上提供這些轉譯的播放支援。
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-若要為DM編碼轉譯配置代理伺服器，請 [配置Dynamic Media cloud服務。](config-dynamic.md)
+若要為DM編碼轉譯配置代理伺服器，請 [配置Dynamic Media Cloud服務。](config-dynamic.md)
 
 若要使用所需參數產生視訊轉譯，請 [建立對應的視訊描述檔](video-profiles.md)。
 
@@ -38,4 +41,4 @@ AEM資產在用戶端上提供這些轉譯的播放支援。
 >
 >在Internet Explorer 11上，OGG和WAV檔案無法播放音訊。 副檔名為OGG或WAV的資產，在資產詳細資料頁面上會顯示錯誤「無效來源」。
 >
->在MS edge和iPad上，OGG檔案不會播放，並產生「不支援的格式」錯誤。
+>在MS Edge和iPad上，OGG檔案不會播放，並產生「不支援的格式」錯誤。
