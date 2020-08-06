@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 300aa9f3-596f-42bc-8d46-e535f2bc4379
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '1189'
+ht-degree: 4%
 
 ---
 
@@ -159,8 +162,8 @@ Solr是使用架構的查詢語言的示例。
 
 * 對於多值類型，請在尾碼中添加「s」，例如：
 
-   * `viewDate_dt`:單一日期屬性
-   * `viewDates_dts`:dates屬性清單
+   * `viewDate_dt`: 單一日期屬性
+   * `viewDates_dts`: dates屬性清單
 
 ## 濾鏡 {#filters}
 
@@ -191,9 +194,9 @@ Search元件的預設實作 [使用此語法](search.md) ，如在「社群元�
 
 URL必須參照Communities元件（資源），而非放置元件的頁面：
 
-* 正確：論壇元件
+* 正確： 論壇元件
    * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
-* 錯誤：論壇頁面
+* 錯誤： 論壇頁面
    * `/content/community-components/en/forum.social.json`
 
 ## SRP工具 {#srp-tools}
@@ -218,7 +221,7 @@ curl -X POST http://localhost:4502/services/social/srp/cleanup?path=/content/use
 
 若要協助疑難排解Solr查詢的問題，請啟用
 
-`com.adobe.cq.social.srp.impl.SocialSolrConnector`.
+`com.adobe.cq.social.srp.impl.SocialSolrConnector`。
 
 實際的Solr查詢會顯示在偵錯記錄中編碼的URL:
 
