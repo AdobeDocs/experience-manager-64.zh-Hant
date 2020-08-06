@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 1%
 
 ---
 
@@ -42,13 +45,14 @@ AEM提供數種工具和資源，以建立工作流程模型、開發工作流�
 >* 請參閱「 [詢問AEM專家工作流程」網路研討會](https://bit.ly/ATACE218)。
 >* 如需端對端社群文章，請參閱「 [建立自訂Adobe Experience Manager 6.3動態參與者」步驟](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)。
 >* 對資訊位置的變更請參閱「AEM 6.4中的 [儲存庫重組」和「工作流程最](/help/sites-deploying/repository-restructuring.md) 佳實務——位置」 [](/help/sites-developing/workflows-best-practices.md#locations)。
+
 >
 
 
 
 ## 模型 {#model}
 
-A `WorkflowModel` 表示工作流的定義（模型）。 它由和 `WorkflowNodes` 構成 `WorkflowTransitions`。 這些轉變會連接節點並定義 *流*。 「模型」始終具有起始節點和終止節點。
+A `WorkflowModel` 表示工作流的定義（模型）。 它由和 `WorkflowNodes` 構成 `WorkflowTransitions`。 這些轉變會連接節點並定義 *流*。 「模型」(Model)始終具有起始節點和終止節點。
 
 ### 執行時期模型 {#runtime-model}
 
@@ -60,7 +64,7 @@ A `WorkflowModel` 表示工作流的定義（模型）。 它由和 `WorkflowNod
 
 >[!CAUTION]
 >
->執行的步驟為由執行階段模型定 [義的步驟](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model);這是在工作流模型編輯器中 **觸發Sync** 操作時生成的。
+>執行的步驟為由執行階段模型定 [義的步驟](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model); 這是在工作流模型編輯器中 **觸發Sync** 操作時生成的。
 >
 >如果在此時間點之後(未觸發 **Sync** )變更了工作流程模型，則執行階段例項將不會反映這些變更。 只有更新後產生的執行時期模型才會反映變更。 除了基礎ECMA指令碼之外，它們僅保留一次，因此對它們進行了更改。
 
@@ -68,13 +72,13 @@ A `WorkflowModel` 表示工作流的定義（模型）。 它由和 `WorkflowNod
 
 每個步驟都完成一個離散任務。 工作流步驟類型不同：
 
-* 參與者（使用者／群組）:這些步驟會產生工作項目並指派給使用者或群組。 使用者必須完成工作項目，才能進階工作流程。
-* 進程（指令碼、Java方法調用）:這些步驟由系統自動執行。 ECMA指令碼或Java類實現該步驟。 服務可以根據業務邏輯進行開發，以監聽特殊工作流事件並執行任務。
-* 容器（子工作流程）:此類型的步驟會啟動另一個工作流模型。
-* OR拆分／聯接：使用邏輯來決定在工作流程中下一步執行的步驟。
-* AND拆分／連接：允許同時執行多個步驟。
+* 參與者（使用者／群組）: 這些步驟會產生工作項目並指派給使用者或群組。 使用者必須完成工作項目，才能進階工作流程。
+* 進程（指令碼、Java方法調用）: 這些步驟由系統自動執行。 ECMA指令碼或Java類實現該步驟。 服務可以根據業務邏輯進行開發，以監聽特殊工作流事件並執行任務。
+* 容器（子工作流程）: 此類型的步驟會啟動另一個工作流模型。
+* OR拆分／聯接： 使用邏輯來決定在工作流程中下一步執行的步驟。
+* AND拆分／連接： 允許同時執行多個步驟。
 
-所有步驟都共用下列通用屬性：和 `Autoadvance` 警 `Timeout` 報（可編寫指令碼）。
+所有步驟都共用下列通用屬性： `Autoadvance` 和警 `Timeout` 報（可編寫指令碼）。
 
 ### 切換 {#transition}
 
@@ -90,13 +94,13 @@ A `WorkItem` 是通過實例的 `Workflow` 單位 `WorkflowModel`。 它包含�
 * 它用於標識任務，並放入相應的收件箱。
 * 工作流實例可以同時具有一 `WorkItems` 個或多個（取決於工作流模型）。
 * 參考 `WorkItem` 工作流實例。
-* 在儲存庫中，將 `WorkItem` 儲存在工作流實例下方。
+* 在儲存庫中，將 `WorkItem` 儲存在工作流實例的下方。
 
 ### 裝載 {#payload}
 
 引用必須通過工作流進行高級的資源。
 
-裝載實施引用儲存庫中的資源（通過路徑、UUID或URL）或序列化的java對象。 在資料庫中參照資源非常有彈性，而且與sling極具生產力；例如，可將引用節點呈現為表單。
+裝載實施引用儲存庫中的資源（通過路徑、UUID或URL）或序列化的java對象。 在資料庫中參照資源非常有彈性，而且與sling極具生產力； 例如，可將引用節點呈現為表單。
 
 ### 生命週期 {#lifecycle}
 
@@ -154,9 +158,10 @@ A `WorkItem` 是通過實例的 `Workflow` 單位 `WorkflowModel`。 它包含�
 >
 >當工作流程模型已標示為「暫時」時，仍會保留執行階段資訊的一些情況：
 >
->* 裝載類型（例如視訊）需要外部步驟來處理；在這種情況下，需要執行階段歷史記錄才能確認狀態。
->* 工作流進入 **AND Split**;在這種情況下，需要執行階段歷史記錄才能確認狀態。
->* 當過渡工作流進入參與者步驟時，它將模式（運行時）變為非過渡；當任務傳遞給需要保存歷史的人時
+>* 裝載類型（例如視訊）需要外部步驟來處理； 在這種情況下，需要執行階段歷史記錄才能確認狀態。
+>* 工作流進入 **AND Split**; 在這種情況下，需要執行階段歷史記錄才能確認狀態。
+>* 當過渡工作流進入參與者步驟時，它將模式（運行時）變為非過渡； 當任務傳遞給需要保存歷史的人時
+
 >
 
 
@@ -175,7 +180,7 @@ A `WorkItem` 是通過實例的 `Workflow` 單位 `WorkflowModel`。 它包含�
 
 ### 多重資源支援 {#multi-resource-support}
 
-啟 **動工作流模型的多資源支援** ，意味著即使您選擇多個資源，也將啟動單個工作流實例；這些將作為包裝附加。
+啟 **動工作流模型的多資源支援** ，意味著即使您選擇多個資源，也將啟動單個工作流實例； 這些將作為包裝附加。
 
 如果 **未為工作流模型激活多資源支援** ，並且選擇了多個資源，則將為每個資源啟動單個工作流實例。
 
@@ -195,6 +200,7 @@ A `WorkItem` 是通過實例的 `Workflow` 單位 `WorkflowModel`。 它包含�
 
    * 可以建立多個階段名稱。
    * 然後，將單個階段名稱分配給每個步驟（可將階段名稱分配給一個或多個步驟）。
+
    | **步驟名稱** | **舞台（指派給步驟）** |
    |---|---|
    | 步驟 1 | 建立 |
@@ -210,7 +216,7 @@ A `WorkItem` 是通過實例的 `Workflow` 單位 `WorkflowModel`。 它包含�
 
 通常，工作流程會用來處理AEM中的表單提交。 這可以與標準AEM [例項中可用的核心元件](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) ，或與 [AEM Forms解決方案一起使用](/help/forms/using/aem-forms-workflow.md)。
 
-建立新表單時，表單提交可輕鬆與工作流程模型關聯；例如，將內容儲存在儲存庫的特定位置，或通知用戶表單提交及其內容。
+建立新表單時，表單提交可輕鬆與工作流程模型關聯； 例如，將內容儲存在儲存庫的特定位置，或通知用戶表單提交及其內容。
 
 ### 工作流程與翻譯 {#workflows-and-translation}
 
