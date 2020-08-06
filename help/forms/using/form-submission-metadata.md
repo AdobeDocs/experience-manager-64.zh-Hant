@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 0%
 
 ---
 
@@ -41,9 +44,9 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
    `(agebox.value >= 21) ? true : false`
 
    ![中繼資料指令碼](assets/add-element-metadata.png)
-   **** 圖：在「中 *繼資料」索引標籤中輸入的指令碼*
+   **圖：** *在「中繼資料」索引標籤中輸入的指令碼*
 
-1. 按一下 **確定**。
+1. 按一下&#x200B;**「確定」**。
 
 當用戶在選擇為元資料欄位的元素中輸入資料後，計算資訊被記錄在元資料中。 您可以在配置為儲存元資料的儲存庫中看到元資料。
 
