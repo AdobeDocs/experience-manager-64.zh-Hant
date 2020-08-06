@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 525c4afc-e109-4546-b78c-1efee63edc43
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
    * 按一下連結會返回登入頁面，而非預期的連結。
    * 按一下連結會顯示權限錯誤。
+
    最佳實務是從其他瀏覽器（例如Mozilla Firefox）執行管理控制台，以確保沒有連結會失敗。
 
 * 在管理控制台中執行搜尋時，請勿使用反斜線字元()。
