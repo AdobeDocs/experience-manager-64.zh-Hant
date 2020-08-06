@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 0%
 
 ---
 
@@ -51,10 +54,10 @@ We.Gov是一個州管理組織，允許養父母在收養孩子時註冊子女�
 
 Sarah按一 **下「套用** 」，並在「資訊自由法案要求表單」頁面中，Sarah會輸入下列資訊：
 
-* **** 代理商：Sarah將請求所在的機構指定為司法部——資訊政策辦公室。
+* **代理商：** Sarah將請求所在的機構指定為司法部——資訊政策辦公室。
 
-* **將支付最多**:薩拉指出，她願意支付多達100美元的印刷和郵資費用。
-* **詳細說明請求**:Sarah指出，「請求2013至2016財政年度兒童與家庭管理局案件記錄副本」。
+* **將支付最多**: 薩拉指出，她願意支付多達100美元的印刷和郵資費用。
+* **詳細說明請求**: Sarah指出&quot;請求2013至2016財政年度兒童與家庭管理局案件記錄副本&quot;。
 
 ![請求復本2013至2016財政年度兒童和家庭管理局案件記錄](assets/sarahfiosform.png)
 
@@ -84,7 +87,7 @@ John Jacobs可從應用程式儀表板檢視、核准或拒絕應用程式。 Jo
 
 ![johnjacobstskdetail-1](assets/johnjacobstaskdetail-1.png)
 
-### <strong>Sarah收到確認電子郵件</strong>{#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah收到確認電子郵件</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 在John Jacobs核准申請後，Sarah會收到We.Gov網站的確認電子郵件。 Sarah會得知處理申請所需的費用和時間。 電子郵件中還包含電子郵件和電話詳細資訊，薩拉可以聯繫以獲取有關其應用程式的更新資訊。
 
