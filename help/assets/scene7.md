@@ -180,7 +180,7 @@ Dynamic Media Classic **[!UICONTROL Image]** （動態媒體經典影像）元�
 
 * **[!UICONTROL 輸出格]**&#x200B;式選擇影像的輸出格式，例如jpeg。 視您選擇的輸出格式而定，您可能會有其他設定選項。 請參 [閱影像預設集最佳實務](/help/assets/managing-image-presets.md#image-preset-options)。
 
-* **[!UICONTROL 銳利]**&#x200B;化選取影像銳利化的方式。 「影像預設集」最佳實務和「銳利化」最 [佳實務中會詳細說明](/help/assets/managing-image-presets.md#image-preset-options)[銳利化功能](/help/assets/assets/s7_sharpening_images.pdf)。
+* **[!UICONTROL 銳利]**&#x200B;化選取影像銳利化的方式。 銳利化會在影像預設集最佳實 [務和銳利化最佳實務中](/help/assets/managing-image-presets.md#image-preset-options)[詳細說明](/help/assets/assets/s7_sharpening_images.pdf)。
 
 * **[!UICONTROL URL修飾元]**：您可以提供額外的Dynamic Media Classic影像指令來變更影像效果。 這些說明在「影像預 [設集」和](/help/assets/managing-image-presets.md) 「命 [令」參考中](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)。
 
