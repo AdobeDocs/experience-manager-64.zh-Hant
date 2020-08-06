@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +87,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
 下列連結會開啟某些常用資料庫產品的下載頁面：
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
@@ -94,30 +97,30 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
 JDBC連接池( `com.day.commons.datasource.jdbcpool.JdbcPoolService`)是工廠服務。 如果需要使用不同屬性（例如只讀或讀／寫訪問）的連接，請建立多個配置。
 
-使用CQ時，管理此類服務的配置設定有幾種方法；如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+使用CQ時，管理此類服務的配置設定有幾種方法； 如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
 以下屬性可用於配置共用連接服務。 屬性名稱會列在Web控制台中顯示的位置。 節點的相應名稱將 `sling:OsgiConfig` 顯示在括弧中。 HSQLDB伺服器和別名為：的資料庫的示例值如 `mydb`下：
 
-* JDBC驅動程式類( `jdbc.driver.class`):例如，用於實現java.sql.Driver介面的Java類 `org.hsqldb.jdbc.JDBCDriver`。 資料類型為 `String`。
+* JDBC驅動程式類( `jdbc.driver.class`): 例如，用於實現java.sql.Driver介面的Java類 `org.hsqldb.jdbc.JDBCDriver`。 資料類型為 `String`。
 
-* JDBC連接URI( `jdbc.connection.uri`):用於建立連接的資料庫的URL，例如 `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`。 URL的格式必須有效，才能與java.sql.DriverManager類的getConnection方法一起使用。 資料類型為 `String`。
+* JDBC連接URI( `jdbc.connection.uri`): 用於建立連接的資料庫的URL，例如 `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`。 URL的格式必須有效，才能與java.sql.DriverManager類的getConnection方法一起使用。 資料類型為 `String`。
 
-* 用戶名( `jdbc.username`):用於向資料庫伺服器驗證的用戶名。 資料類型為 `String`。
+* 用戶名( `jdbc.username`): 用於向資料庫伺服器驗證的用戶名。 資料類型為 `String`。
 
-* 密碼( `jdbc.password`):用於用戶驗證的密碼。 資料類型為 `String`。
+* 密碼( `jdbc.password`): 用於用戶驗證的密碼。 資料類型為 `String`。
 
-* 驗證查詢( `jdbc.validation.query`):用於驗證連接是否成功的SQL陳述式，例如 `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`。 資料類型為 `String`。
+* 驗證查詢( `jdbc.validation.query`): 用於驗證連接是否成功的SQL陳述式，例如 `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`。 資料類型為 `String`。
 
-* 預設情況下為只讀(default.readonly):當您希望連接提供只讀訪問時，請選擇此選項。 資料類型為 `Boolean`。
-* 預設情況下自動提交( `default.autocommit`):選擇此選項可為發送到資料庫的每個SQL命令建立單獨的事務，並自動提交每個事務。 在代碼中明確提交事務時，請不要選擇此選項。 資料類型為 `Boolean`。
+* 預設情況下為只讀(default.readonly): 當您希望連接提供只讀訪問時，請選擇此選項。 資料類型為 `Boolean`。
+* 預設情況下自動提交( `default.autocommit`): 選擇此選項可為發送到資料庫的每個SQL命令建立單獨的事務，並自動提交每個事務。 在代碼中明確提交事務時，請不要選擇此選項。 資料類型為 `Boolean`。
 
-* 池大小( `pool.size`):要為資料庫提供的同時連接數。 資料類型為 `Long`。
+* 池大小( `pool.size`): 要為資料庫提供的同時連接數。 資料類型為 `Long`。
 
-* 池等待( `pool.max.wait.msec`):連線要求逾時前的時間量。 資料類型為 `Long`。
+* 池等待( `pool.max.wait.msec`): 連線要求逾時前的時間量。 資料類型為 `Long`。
 
-* 資料來源名稱( `datasource.name`):此資料源的名稱。 資料類型為 `String`。
+* 資料來源名稱( `datasource.name`): 此資料源的名稱。 資料類型為 `String`。
 
-* 其他服務屬性( `datasource.svc.properties`):要附加至連線URL的一組名稱／值配對。 資料類型為 `String[]`。
+* 其他服務屬性( `datasource.svc.properties`): 要附加至連線URL的一組名稱／值配對。 資料類型為 `String[]`。
 
 JDBC連接池服務是工廠。 因此，如果使用節 `sling:OsgiConfig` 點配置連接服務，則節點的名稱必須包括工廠服務PID，後面跟 *`-alias`*。 對於該PID的所有配置節點，您使用的別名必須是唯一的。 節點名稱示例為 `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`。
 
