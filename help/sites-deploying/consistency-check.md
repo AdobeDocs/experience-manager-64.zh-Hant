@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 **「工具> Web Console >主要（在功能表列上）> JMX > com.adobe.granite（儲存庫）」**
 
-**[在預設安裝中，它位於：  |顯示我|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
+在預設安裝中，它位於：  **[|顯示我|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 
 在頁面 **的** 「操作」區段中，您會找到兩種方法： **`traversalCheck`** 和 **`consistencyCheck`**。 要執行檢查，請按一下操作並輸入所需參數。
 
