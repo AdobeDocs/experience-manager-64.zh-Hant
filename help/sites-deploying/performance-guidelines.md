@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 translation-type: tm+mt
 source-git-commit: 949ec23eb548a094425622d68e1dbf4f6ec7581f
+workflow-type: tm+mt
+source-wordcount: '2993'
+ht-degree: 4%
 
 ---
 
@@ -263,11 +266,11 @@ source-git-commit: 949ec23eb548a094425622d68e1dbf4f6ec7581f
 
 您應在下列情況下使用效能准則：
 
-* **首次部署**:當第一次規劃部署AEM Sites或資產時，請務必瞭解在設定微型內核、節點儲存區和資料儲存區時可用的選項（與預設設定相比）。 例如，將TarMK的資料存放區預設設定變更為檔案資料存放區。
-* **升級至新版本**:在升級到新版本時，請務必瞭解與運行環境相比的效能差異。 例如，從AEM 6.1升級至6.2，或從AEM 6.0 CRX2升級至6.2 OAK。
-* **響應時間很慢**:當選定的Nodestore體系結構不滿足您的要求時，務必瞭解與其他拓撲選項相比的效能差異。 例如，部署TarMK而非MongoMK，或使用檔案資料儲存而非Amazon S3或Microsoft Azure資料儲存。
-* **新增更多作者**:當建議的TarMK拓撲不滿足效能要求並且Author節點已達到最大可用容量時，請務必瞭解與使用MongoMK和三個或三個以上Author節點相比的效能差異。 例如，部署MongoMK而非TarMK。
-* **新增更多內容**:當建議的Data store架構不符合您的需求時，請務必瞭解與其他Data Store選項相比的效能差異。 範例：使用Amazon S3或Microsoft Azure Data Store，而非檔案資料存放區。
+* **首次部署**: 當第一次規劃部署AEM Sites或資產時，請務必瞭解在設定微型內核、節點儲存區和資料儲存區時可用的選項（與預設設定相比）。 例如，將TarMK的資料存放區預設設定變更為檔案資料存放區。
+* **升級至新版本**: 升級至新版本時，請務必瞭解與執行環境相比的效能差異。 例如，從AEM 6.1升級至6.2，或從AEM 6.0 CRX2升級至6.2 OAK。
+* **響應時間很慢**: 當選定的Nodestore體系結構不滿足您的要求時，務必瞭解與其他拓撲選項相比的效能差異。 例如，部署TarMK而非MongoMK，或使用檔案資料儲存而非Amazon S3或Microsoft Azure資料儲存。
+* **新增更多作者**: 當建議的TarMK拓撲不滿足效能要求並且Author節點已達到最大可用容量時，請務必瞭解與使用MongoMK和三個或三個以上Author節點相比的效能差異。 例如，部署MongoMK而非TarMK。
+* **新增更多內容**: 當建議的Data Store架構不符合您的需求時，請務必瞭解與其他Data Store選項相比的效能差異。 範例： 使用Amazon S3或Microsoft Azure Data Store，而非檔案資料存放區。
 
 ## 簡介 {#introduction}
 
@@ -289,7 +292,7 @@ AEM部署有三個重要的建置區塊。 內容 **** 作者、編輯者和審�
 
 ### 微核 {#micro-kernels}
 
-Micro Kernels在AEM中擔任永續性管理員。 AEM使用三種類型的微內核：TarMK、MongoDB和關係資料庫（受限制支援）。 選擇符合您需求的項目取決於您實例的用途以及您考慮的部署類型。 有關微內核的其他資訊，請參見「建議 [的部署](/help/sites-deploying/recommended-deploys.md) 」頁。
+Micro Kernels在AEM中擔任永續性管理員。 AEM使用三種類型的微內核： TarMK、MongoDB和關係資料庫（受限制支援）。 選擇符合您需求的項目取決於您實例的用途以及您考慮的部署類型。 有關微內核的其他資訊，請參見「建議 [的部署](/help/sites-deploying/recommended-deploys.md) 」頁。
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -303,7 +306,7 @@ Micro Kernels在AEM中擔任永續性管理員。 AEM使用三種類型的微內
 
 >[!CAUTION]
 >
->關係資料庫微內核受到限制支援。 使用 [此類微內核](https://helpx.adobe.com/marketing-cloud/contact-support.html) ，請先聯絡Adobe客戶服務。
+>關係資料庫微內核受到限制支援。 使用 [此類微內核](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html) ，請先聯絡Adobe客戶服務。
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
@@ -315,9 +318,9 @@ Micro Kernels在AEM中擔任永續性管理員。 AEM使用三種類型的微內
 
 >[!NOTE]
 >
->Adobe建議選擇使用Adobe Managed services在Azure或Amazon Web Services(AWS)上部署AEM的選項，讓客戶從具備在這些雲端運算環境中部署和操作AEM的經驗和技能的團隊中獲益。 請參閱我們 [有關Adobe Managed services的其他檔案](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)。
+>Adobe建議選擇使用Adobe Managed Services在Azure或Amazon Web Services(AWS)上部署AEM的選項，讓客戶從具備在這些雲端運算環境中部署和操作AEM的經驗和技能的團隊中獲益。 請參閱我們 [有關Adobe Managed Services的其他檔案](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)。
 >
->如需有關如何在Adobe Managed services以外的Azure或AWS上部署AEM的建議，我們強烈建議直接與雲端供應商或我們其中一個合作夥伴合作，支援在您選擇的雲端環境中部署AEM。 選定的雲端供應商或合作夥伴負責其將支援的架構的規模規格、設計和實施，以滿足您的特定效能、負載、可擴充性和安全性要求。
+>如需有關如何在Adobe Managed Services以外的Azure或AWS上部署AEM的建議，我們強烈建議直接與雲端供應商或我們其中一個合作夥伴合作，支援在您選擇的雲端環境中部署AEM。 選定的雲端供應商或合作夥伴負責其將支援的架構的規模規格、設計和實施，以滿足您的特定效能、負載、可擴充性和安全性要求。
 >
 >如需詳細資訊，請參閱 [技術需求頁](/help/sites-deploying/technical-requirements.md#supported-platforms) 。
 
@@ -338,10 +341,10 @@ Micro Kernels在AEM中擔任永續性管理員。 AEM使用三種類型的微內
 **DO**
 
 * 將簡報、邏輯和內容分離
-* 使用現有的AEM API(例如：Sling)和工具(例如：複製)
+* 使用現有的AEM API(例如： Sling)和工具(例如： 複製)
 * 根據實際內容進行開發
 * 開發最佳的可快取性
-* 將節省的數量減至最少(例如：使用暫時工作流程)
+* 將節省的數量減至最少(例如： 使用暫時工作流程)
 * 確定所有HTTP端點都是RESTful
 * 限制JCR觀測範圍
 * 注意非同步線程
@@ -374,23 +377,23 @@ Micro Kernels在AEM中擔任永續性管理員。 AEM使用三種類型的微內
 
 AEM Assets:
 
-* 使用者互動：瀏覽資產／搜尋資產／下載資產／讀取資產中繼資料／更新資產中繼資料／上傳資產／執行上傳資產工作流程
-* 執行模式：併發用戶，每個用戶單次交互
+* 使用者互動： 瀏覽資產／搜尋資產／下載資產／讀取資產中繼資料／更新資產中繼資料／上傳資產／執行上傳資產工作流程
+* 執行模式： 併發用戶，每個用戶單次交互
 
 **混合產品藍本**
 
 AEM Sites + Assets:
 
-* 網站使用者互動：閱讀文章頁面／閱讀頁面／建立段落／編輯段落／建立內容頁面／啟用內容頁面／作者搜尋
-* 資產使用者互動：瀏覽資產／搜尋資產／下載資產／讀取資產中繼資料／更新資產中繼資料／上傳資產／執行上傳資產工作流程
-* 執行模式：併發用戶，每個用戶的混合交互
+* 網站使用者互動： 閱讀文章頁面／閱讀頁面／建立段落／編輯段落／建立內容頁面／啟用內容頁面／作者搜尋
+* 資產使用者互動： 瀏覽資產／搜尋資產／下載資產／讀取資產中繼資料／更新資產中繼資料／上傳資產／執行上傳資產工作流程
+* 執行模式： 併發用戶，每個用戶的混合交互
 
 **垂直使用案例藍本**
 
 媒體:
 
 * 閱讀文章頁面(27.4%)、閱讀頁面(10.9%)、建立工作階段(2.6%)、啟用內容頁面(1.7%)、建立內容頁面(0.4%)、建立段落(4.3%)、編輯段落(0.9%)、影像元件(0.9%)、瀏覽資產(20%)、讀取資產中繼資料(8.5%)、下載資產(4.2%)、搜尋資產(0.2%)、更新資產中繼資料(2.4%)、上傳資產(1.2%)、瀏覽專案(4.9%)、讀取專案(6.6%)、專案新增資產(1.2%)%)、專案新增網站(1.2%)、建立專案(0.1%)、作者搜尋(0.4%)
-* 執行模式：併發用戶，每個用戶的混合交互
+* 執行模式： 併發用戶，每個用戶的混合交互
 
 ## TarMK {#tarmk}
 
@@ -501,7 +504,7 @@ Adobe建議TarMK為所有部署案例（包括AEM Author和Publish執行個體�
 | 產品 | AEM 6.2 |
 | Nodestore | TarMK |
 | 資料儲存 | 檔案DS |
-| 藍本 | 單一產品：資產/ 30個併發線程 |
+| 藍本 | 單一產品： 資產/ 30個併發線程 |
 
 #### 效能標籤結果 {#performance-bechmark-results}
 
@@ -581,7 +584,7 @@ Adobe建議TarMK為所有部署案例（包括AEM Author和Publish執行個體�
   <tr> 
    <td>DocumentNodeStoreService</td> 
    <td><p><code>cache</code></p> <p><code>nodeCachePercentage</code></p> <p><code>childrenCachePercentage</code></p> <p><code>diffCachePercentage</code></p> <p><code>docChildrenCachePercentage</code></p> <p><code>prevDocCachePercentage</code></p> <p><code>persistentCache</code></p> </td> 
-   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>./cache,size=2048,binary=0,-compact,-compress</p> </td> 
+   <td><p>2048</p> <p>35 (25)</p> <p>20 (10)</p> <p>30 (5)</p> <p>10 (3)</p> <p>4 (4)</p> <p>。/cache,size=2048,binary=0,-compact,-compress</p> </td> 
    <td><p>快取的預設大小設定為256 MB。</p> <p>對執行快取失效所花費的時間產生影響。</p> </td> 
   </tr> 
   <tr> 
@@ -611,7 +614,7 @@ Adobe建議TarMK為所有部署案例（包括AEM Author和Publish執行個體�
 | 產品 | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | Nodestore | MongoMK | N/A |
 | 資料儲存 | 檔案DS | N/A |
-| 藍本 | 單一產品：資產/ 30個併發線程 | 單一產品：資產/ 30個併發線程 |
+| 藍本 | 單一產品： 資產/ 30個併發線程 | 單一產品： 資產/ 30個併發線程 |
 
 ### 效能基準結果 {#performance-benchmark-results}
 
@@ -641,11 +644,11 @@ Adobe建議TarMK為所有部署案例（包括AEM Author和Publish執行個體�
 
 **選擇MongoMK的標準**
 
-* 一天中連接的指名用戶數：數千個或更多
-* 並行用戶數：數百個或更多
-* 每日資產收錄量：幾十萬甚至更多
-* 每天編輯的頁數量：幾十萬甚至更多
-* 每日搜尋量：數萬甚至更多
+* 一天中連接的指名用戶數： 數千個或更多
+* 並行用戶數： 數百個或更多
+* 每日資產收錄量： 幾十萬甚至更多
+* 每天編輯的頁數量： 幾十萬甚至更多
+* 每日搜尋量： 數萬甚至更多
 
 ### TarMK與MongoMK基準比較 {#tarmk-vs-mongomk-benchmarks}
 
@@ -725,7 +728,7 @@ Adobe建議TarMK為所有部署案例（包括AEM Author和Publish執行個體�
   </tr> 
   <tr> 
    <td>藍本</td> 
-   <td><p><br /> 單一產品：資產／每次執行30個並行執行緒</p> </td> 
+   <td><p><br /> 單一產品： 資產／每次執行30個並行執行緒</p> </td> 
    <td> </td> 
    <td> </td> 
   </tr> 
@@ -812,7 +815,7 @@ Adobe建議TarMK為所有部署案例（包括AEM Author和Publish執行個體�
   </tr> 
   <tr> 
    <td>藍本</td> 
-   <td><p><br /> <br /> 垂直使用案例：媒體/ 2000個併發線程</p> </td>
+   <td><p><br /> <br /> 垂直使用案例： 媒體/ 2000個併發線程</p> </td>
    <td></td>
    <td></td>
   </tr> 
@@ -827,18 +830,18 @@ Adobe建議TarMK為所有部署案例（包括AEM Author和Publish執行個體�
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-## 績效指南摘要 {#summary-of-performance-guidelines}
+## 績效指南摘要  {#summary-of-performance-guidelines}
 
 本頁所列准則可總結如下：
 
 * **TarMK with File Datastore** is recommended architecture for marts customers:
 
-   * 最小拓撲：一個作者例項、兩個發佈例項、兩個調度程式
+   * 最小拓撲： 一個作者例項、兩個發佈例項、兩個調度程式
    * 如果檔案資料儲存是共用的，則開啟無二進位複製
 
 * **MongoMK with File Datastore** is recommended architecture for horizontal scalability of the Author tier:
 
-   * 最小拓撲：3個作者例項、3個MongoDB例項、2個發佈例項、2個調度程式
+   * 最小拓撲： 3個作者例項、3個MongoDB例項、2個發佈例項、2個調度程式
    * 如果檔案資料儲存是共用的，則開啟無二進位複製
 
 * **Nodestore** 應儲存在本地磁碟上，而不是網路連接儲存(NAS)上
