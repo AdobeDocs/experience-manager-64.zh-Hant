@@ -11,6 +11,9 @@ topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 translation-type: tm+mt
 source-git-commit: 07c0280cf0761a28eaf2d8e03a37667aba2a699c
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +30,9 @@ source-git-commit: 07c0280cf0761a28eaf2d8e03a37667aba2a699c
 
 「內容處置篩選」選項提供下列功能：
 
-* 內容處置路徑：將應用篩選器的路徑清單，後面接著要在該路徑上排除的mime類型清單。此路徑必須是絕對路徑，最後可包含通配符(&#39;&amp;ast;&#39;)，以匹配每個資源路徑與給定路徑前置詞。 例如：/content/&amp;ast;:image/jpeg,image/svg+xml &quot;將對/content（jpg和svg影像除外）中的每個節點應用過濾器
+* 內容處置路徑： 將應用篩選器的路徑清單，後面接著要在該路徑上排除的mime類型清單。此路徑必須是絕對路徑，最後可包含通配符(&#39;&amp;ast;&#39;)，以匹配每個資源路徑與給定路徑前置詞。 例如： /content/&amp;ast;:image/jpeg,image/svg+xml &quot;將對/content（jpg和svg影像除外）中的每個節點應用過濾器
 
-* 排除的資源路徑：排除的資源清單中，必須將每個資源路徑指定為絕對和完全限定路徑。 不支援首碼比對／萬用字元。
+* 排除的資源路徑： 排除的資源清單中，必須將每個資源路徑指定為絕對和完全限定路徑。 不支援首碼比對／萬用字元。
 
-* 對所有資源路徑啟用：此標誌控制是否為所有路徑啟用此篩選器，但排除資源路徑定義的排除路徑除外。 將此設為&#39;true&#39;會忽略「內容處置路徑」。 不受僅包含配置的資源路徑的限制，這些資源路徑包含名為&#39;jcr:data&#39;或&#39;jcr:content jcr:data&#39;的屬性。
+* 對所有資源路徑啟用： 此標誌控制是否為所有路徑啟用此篩選器，但排除資源路徑定義的排除路徑除外。 將此設為&#39;true&#39;會忽略「內容處置路徑」。 不受僅包含配置的資源路徑的限制，這些資源路徑包含名為&#39;jcr:data&#39;或&#39;jcr:content jcr:data&#39;的屬性。
 
