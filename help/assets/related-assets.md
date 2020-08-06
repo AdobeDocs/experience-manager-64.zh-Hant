@@ -4,6 +4,9 @@ description: 瞭解如何建立共用特定共同屬性的資產的關聯。 您
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '613'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Adobe Experience Manager(AEM)Assets可讓您使用「相關資產」功能，根
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. 若要將另一個資產與您選取的資產建立關聯，請按一下／點選工具 **[!UICONTROL 列中的]** 「建立關聯」圖示。
+1. 若要將另一個資產與您選取的資產建立關聯，請從工具列按一下／點選「 **[!UICONTROL 建立關聯]** 」圖示。
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -37,6 +40,7 @@ Adobe Experience Manager(AEM)Assets可讓您使用「相關資產」功能，根
    * 要關聯資產的源檔案，請從清單中 **[!UICONTROL 選擇]** 「源」。
    * 要關聯派生檔案，請從列 **[!UICONTROL 表中選擇]** 「派生」。
    * 若要在資產之間建立雙向關係，請從清單中選 **[!UICONTROL 取]** 「其他」。
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
 1. 從「選 **[!UICONTROL 取資產]** 」畫面，導覽至您要建立關聯的資產所在的位置，然後加以選取。
