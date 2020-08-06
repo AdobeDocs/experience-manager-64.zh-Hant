@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 5%
 
 ---
 
@@ -35,18 +38,18 @@ AEM Communities可簡化社群功能的建立與自訂，例如論壇、使用�
 
 ## 建議的部署 {#recommended-deployments}
 
-* [社群內容儲存](working-with-srp.md):討論UGC公用商店的可用SRP選擇
-* [推薦的社群拓撲](topologies.md):討論基於使用案例和SRP選擇的拓撲
+* [社群內容儲存](working-with-srp.md): 討論UGC公用商店的可用SRP選擇
+* [推薦的社群拓撲](topologies.md): 討論基於使用案例和SRP選擇的拓撲
 
 ## Social元件架構 {#social-component-framework}
 
-* [社交元件架構](scf.md):架構和API概觀
-* [SCF Handlebers](handlebars-helpers.md):拖欠傭工，如何編寫傭工
-* [用戶端自訂](client-customize.md):自訂在瀏覽器中執行的程式碼
-* [伺服器端自訂](server-customize.md):自訂伺服器上執行的程式碼
-* [儲存資源提供商(SRP)](srp.md):社群內容儲存概觀
-* [編碼准則](code-guide.md):准則、秘訣與訣竅
-* [社群元件指南](components-guide.md):互動式開發工具
+* [社交元件架構](scf.md): 架構和API概觀
+* [SCF Handlebers](handlebars-helpers.md): 拖欠傭工，如何編寫傭工
+* [用戶端自訂](client-customize.md): 自訂在瀏覽器中執行的程式碼
+* [伺服器端自訂](server-customize.md): 自訂伺服器上執行的程式碼
+* [儲存資源提供商(SRP)](srp.md): 社群內容儲存概觀
+* [編碼准則](code-guide.md): 准則、秘訣與訣竅
+* [社群元件指南](components-guide.md): 互動式開發工具
 
 ## 元件、功能和功能基本工具 {#component-function-and-feature-essentials}
 
