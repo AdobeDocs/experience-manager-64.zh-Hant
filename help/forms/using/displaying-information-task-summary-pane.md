@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 AEM Forms工作區可讓您在「任務摘要」窗格中顯示您選擇的網頁。 可以建立一個流程，以使用「工作台」顯示「任務匯總」窗格。
 
-1. 在工作台中建立分配任務流程。 有關「分配任務」操作的詳細資訊，請參閱「工作台幫助」中的「服 [務參考」主題](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/)。
+1. 在工作台中建立分配任務流程。 有關「分配任務」操作的詳細資訊，請參閱「工作台幫助」中的「服務 [參考」主題](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/)。
 
    >[!NOTE]
    >
