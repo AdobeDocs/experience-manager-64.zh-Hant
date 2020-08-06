@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1661'
+ht-degree: 0%
 
 ---
 
@@ -112,7 +115,7 @@ LDAP身份提供程式可使用以下配置選項：
   </tr> 
   <tr> 
    <td><strong>使用者額外篩選</strong></td> 
-   <td>搜尋使用者時要使用的額外LDAP篩選器。 最終篩選器的格式如下：'(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'(user.extraFilter)</td> 
+   <td>搜尋使用者時要使用的額外LDAP篩選器。 最終篩選器的格式如下： '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'(user.extraFilter)</td> 
   </tr> 
   <tr> 
    <td><strong>用戶DN路徑</strong></td> 
@@ -132,7 +135,7 @@ LDAP身份提供程式可使用以下配置選項：
   </tr> 
   <tr> 
    <td><strong>群組額外篩選</strong></td> 
-   <td>搜索組時要使用的額外LDAP篩選器。 最終篩選器的格式如下：'(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td> 
+   <td>搜索組時要使用的額外LDAP篩選器。 最終篩選器的格式如下： '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td> 
   </tr> 
   <tr> 
    <td><strong>組DN路徑</strong></td> 
@@ -277,15 +280,15 @@ AEM 6可依下列程式設定，以透過SSL使用LDAP進行驗證：
 1. 前往Web管理主控台。
 1. 尋找&quot;Apache Sling Logging Logger Configuration&quot;並建立兩個記錄程式及下列選項：
 
-* 記錄層級：除錯
+* 記錄層級： 除錯
 * 記錄檔logs/ldap.log
-* 消息模式：{0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast;{2} {3} {5}
-* 記錄器：org.apache.jackrabbit.oak.security.ldap
+* 消息模式： {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* 記錄器： org.apache.jackrabbit.oak.security.ldap
 
-* 記錄層級：除錯
-* 日誌檔案：logs/external.log
-* 消息模式：{0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast;{2} {3} {5}
-* 記錄器：org.apache.jackrabbit.oak.spi.security.authentication.external
+* 記錄層級： 除錯
+* 日誌檔案： logs/external.log
+* 消息模式： {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* 記錄器： org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## 團體關係論 {#a-word-on-group-affiliation}
 
