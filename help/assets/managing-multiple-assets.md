@@ -4,6 +4,9 @@ description: 瞭解如何同時編輯許多資產和系列的中繼資料，以�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 12%
 
 ---
 
