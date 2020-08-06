@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
@@ -86,7 +89,7 @@ API結構指定服務操作的以下詳細資訊。
 
 以下範例指令碼使用 `guidelib.dataIntegrationUtils.executeOperation` API來叫用表單資 `getAccountById` 料模型中設定的 `employeeAccount` 服務作業。
 
-此操 `getAccountById` 作將表單欄位中的值作為參數 `employeeID``empId` 的輸入，並返回相應員工的員工姓名、帳戶編號和帳戶餘額。 輸出值會填入指定的表單欄位。 例如，參數中的值 `name` 會填入表單元素中， `fullName` 而表單元素中 `accountNumber` 的參數值 `account` 中。
+此操 `getAccountById` 作將表單欄位中的值作為參數的輸 `employeeID``empId` 入，並返回相應員工的員工姓名、帳戶編號和帳戶餘額。 輸出值會填入指定的表單欄位。 例如，參數中的值會 `name` 填入表單元素中， `fullName` 而表單元素中 `accountNumber` 的參數值 `account` 中。
 
 ```
 var operationInfo = {
