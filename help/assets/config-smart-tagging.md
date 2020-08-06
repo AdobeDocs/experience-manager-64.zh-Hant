@@ -35,7 +35,7 @@ ht-degree: 33%
 
 * 智慧型內容服務已為您的組織啟用。
 
-除了上述功能外，若要啟用「增強的智慧型標籤」，請另外安裝最新的 [Experience Manager Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)。
+除了上述功能外，若要啟用「增強智慧型標籤」，請另外安裝最新 [的Experience Manager Service Pack](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)。
 
 ## 建立智慧型內容服務組態以取得公用憑證 {#obtain-public-certificate}
 
