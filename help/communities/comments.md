@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 4%
 
 ---
 
@@ -80,7 +83,7 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 * **[!UICONTROL 允許的檔案類型]**
 
-   僅在勾選「允許檔案上傳」時相關。 以逗號分隔的副檔名清單，並加上&quot;dot&quot;分隔符號。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何檔案類型，則不允許指定那些未指定的類型。 未指定預設值，因此允許所有檔案類型。
+   僅在勾選「允許檔案上傳」時相關。 以逗號分隔的副檔名清單，並加上&quot;dot&quot;分隔符號。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何檔案類型，則不允許指定那些未指定的類型。 未指定預設值，因此允許所有檔案類型。
 
 * **[!UICONTROL RTF 編輯器]**
 
