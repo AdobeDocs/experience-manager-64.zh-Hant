@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 translation-type: tm+mt
 source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 4%
 
 ---
 
@@ -99,7 +102,7 @@ source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
 
 語法包括：
 
-* 驚嘆號：!;
+* 驚嘆號： !;
 * 後面接著一組方括弧，其中包含影像的alt屬性文字；
 * 後面接著一組括弧，其中包含影像的URL或路徑，以及以雙引號或單引號括住的選用標題屬性。
 
@@ -107,7 +110,7 @@ source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
 
     `![Alt text][id]`
 
-其中，&quot;id&quot;是已定義影像參考的名稱。 影像參照的定義語法與連結參照的語法相同：
+其中，&quot;id&quot;是已定義影像參考的名稱。 使用與連結參照相同的語法來定義影像參照：
 
     `[id]: url/to/image "Optional title attribute"`
 
@@ -137,7 +140,7 @@ source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
 
 您可以建立有序清單和無序清單。
 
-要建立無序清單，請使用&amp;ast;符號。 例如：
+要建立無序清單，請使用&amp;ast; 符號。 例如：
 
     `* item in list`
 
