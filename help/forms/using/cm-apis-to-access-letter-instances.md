@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ Correponse Management會使API透過LetterInstanceService服務擷取字母例�
  </tbody> 
 </table>
 
-#### 範例1:獲取所有類型為SUBMITTED的字母實例 {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### 範例1: 獲取所有類型為SUBMITTED的字母實例 {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 下列程式碼會傳回已提交字母例項的清單。 若要只取得草稿，請將 `LetterInstanceType.COMPLETE.name()` 變更為 `LetterInstanceType.DRAFT.name().`
 
@@ -106,7 +109,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 提取由給定字母實例id標識的字母實例。 如果實例ID不匹配，則返回&#39;&#39;。
 
-**** 語法： `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
+**語法：** `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
 
 ```java
 @Reference
@@ -139,7 +142,7 @@ Letter Instance可以是「已提交」或「草稿」類型。 開啟兩個字�
 * 如果是「已提交的字母實例」，則會開啟表示字母實例的PDF。 保存在伺服器上的已提交信件例項也包含dataXML和已處理的XDP，可用來完成並進一步自訂使用案例，例如建立PDF/A。
 * 如果是「草稿」字母實例，建立對應UI會重新載入至先前的狀態，就像建立草稿時一樣
 
-### 開啟草稿字母實例 {#opening-draft-letter-instance-nbsp}
+### 開啟草稿字母實例  {#opening-draft-letter-instance-nbsp}
 
 CCR UI支援cmLetterInstanceId參數，該參數可用於重新載入字母。
 
