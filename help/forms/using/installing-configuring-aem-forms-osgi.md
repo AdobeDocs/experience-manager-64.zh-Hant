@@ -55,7 +55,7 @@ AEM Forms附加元件套件是部署在AEM上的應用程式。 您至少只需�
    * 15 GB的臨時空間，用於基於Microsoft Windows的安裝。
    * 6 GB的臨時空間，用於基於UNIX的安裝。
 
-* 為作者和發佈實例設定複製和反向複製。 有關詳細資訊，請參 [閱複製](/help/sites-deploying/replication.md)。
+* 為作者和發佈實例設定複製和反向複製。 For details, see [Replication](/help/sites-deploying/replication.md).
 * 基於UNIX的系統的額外要求： 如果您使用基於UNIX的作業系統，請從相應作業系統的安裝介質安裝以下軟體包。
 
 <table> 
@@ -161,7 +161,7 @@ Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保�
 
 1. 設定反向連結篩選服務：
 
-   以管理員身分登入Apache Felix組態管理員。 配置管理器的預設URL為 `https://[server]:[port_number]/system/console/configMgr`。 在「設 **[!UICONTROL 定]** 」選單中，選取 **[!UICONTROL Apache Sling Referrer Filter]** 選項。 在「允許主機」欄位中，輸入調度程式的主機名以允許它作為反向連接，然後按一下「保 **[!UICONTROL 存」]**。 條目的格式為 `https://[server]:[port]`。
+   以管理員身分登入Apache Felix組態管理員。 配置管理器的預設URL為 `https://[server]:[port_number]/system/console/configMgr`。 在「設 **[!UICONTROL 定]** 」選單中，選取 **[!UICONTROL Apache Sling Referrer Filter]** 選項。 在「允許主機」欄位中，輸入調度程式的主機名以允許它作為反向連接，然後按一下「保 **[!UICONTROL 存」]**。 The format of the entry is `https://[server]:[port]`.
 
 #### 配置快取 {#configure-cache}
 
