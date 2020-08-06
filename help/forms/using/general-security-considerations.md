@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 1%
 
 ---
 
@@ -59,7 +62,7 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
   </tr> 
   <tr> 
    <td><p>Red Hat® Linux® AP或ES</p> </td> 
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat Enterprise linux安全指南</a></p> </td> 
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat Enterprise Linux安全指南</a></p> </td> 
   </tr> 
   <tr> 
    <td><p>Sun Solaris 11</p> </td> 
@@ -70,7 +73,7 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
    <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">第7版安全性指南</a><br /> </td> 
   </tr> 
   <tr> 
-   <td>CentOS 7<sup></sup></td> 
+   <td>CentOS 7<sup> </sup></td> 
    <td><a href="https://wiki.centos.org/HowTos/OS_Protection" target="_blank">保護檔案</a></td> 
   </tr> 
  </tbody> 
@@ -86,7 +89,7 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
 * 啟用安全Cookie
 * 關閉不需要的埠
 * 依IP位址或網域限制用戶端
-* 使用Java™ Security manager以程式設計方式限制權限
+* 使用Java™ Security Manager以程式設計方式限制權限
 
 如需AEM Forms on JEE支援之應用程式伺服器的安全性資訊，請參閱本表格中的資源。
 
@@ -99,11 +102,11 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
  </thead> 
  <tbody>
   <tr> 
-   <td><p>Oracle webLogic®</p> </td> 
+   <td><p>Oracle WebLogic®</p> </td> 
    <td><p>如需瞭解WebLogic安全性，請造訪https://download.oracle.com/docs/ <a href="https://download.oracle.com/docs/"></a>。</p> </td> 
   </tr> 
   <tr> 
-   <td><p>IBM webSphere®</p> </td> 
+   <td><p>IBM WebSphere®</p> </td> 
    <td><p><a href="https://www.ibm.com/developerworks/websphere/zones/was/security/" target="_blank">保護應用程式及其環境的安全</a></p> </td> 
   </tr> 
   <tr> 
@@ -138,7 +141,7 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
   </tr> 
   <tr> 
    <td><p>Microsoft SQL Server 2016</p> </td> 
-   <td>在Web上搜索「SQL Server 2016:安全性」</td> 
+   <td>在Web上搜索「SQL Server 2016: 安全性」</td> 
   </tr> 
   <tr> 
    <td><p>MySQL 5</p> </td> 
@@ -210,7 +213,7 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
 
 ### 配置JBoss以使用非預設HTTP埠 {#configuring-jboss-to-use-a-non-default-http-port}
 
-JBoss Application server使用8080作為預設HTTP埠。 JBoss還具有預配置的埠8180 、 8280和8380 ，這些埠在jboss-service.xml檔案中加以注釋。 如果您的電腦上有已使用此連接埠的應用程式，請依照下列步驟變更AEM Forms on JEE使用的連接埠：
+JBoss Application Server使用8080作為預設HTTP埠。 JBoss還具有預配置的埠8180 、 8280和8380 ，這些埠在jboss-service.xml檔案中加以注釋。 如果您的電腦上有已使用此連接埠的應用程式，請依照下列步驟變更AEM Forms on JEE使用的連接埠：
 
 1. 開啟下列檔案以進行編輯：
 
@@ -247,7 +250,7 @@ lc_[database].xml檔案不應包含明文格式的口令。 請洽詢您的應�
 >
 >JEE JBoss統包安裝程式上的AEM Forms會加密資料庫密碼。
 
-預設情況下，IBM webSphere Application server和Oracle webLogic server可加密資料源密碼。 不過，請使用應用程式伺服器檔案進行確認，以確保發生此情況。
+預設情況下，IBM WebSphere Application Server和Oracle WebLogic Server可加密資料源密碼。 不過，請使用應用程式伺服器檔案進行確認，以確保發生此情況。
 
 ### 保護儲存在信任儲存中的私鑰 {#protecting-the-private-key-stored-in-trust-store}
 
