@@ -11,6 +11,9 @@ topic-tags: 3D
 discoiquuid: 0d7fefc0-6923-4ac3-9e90-335c08fa56f0
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 0%
 
 ---
 
@@ -50,6 +53,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
    1. 開啟CRXDE Lite並導覽至 `/libs/settings/dam/v3D/scripts/max`。
    1. 按兩下以 `export-fbx.bat` 開啟它。
    1. 視需要編輯指令碼的第一行，以反映實用程式的位 `3dsmaxcmd.exe` 置。 例如，如果使用3ds Max 2017，而AEM則安裝在不同的磁碟機上：
+
    ![image2018-6-22_13-35-8](assets/image2018-6-22_13-35-8.png)
 
 1. 在CRXDE Lite頁面的左上角附近，點選「全部 **[!UICONTROL 儲存」]**。
@@ -67,6 +71,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 1. 執行下列動作，以啟用3ds Max擷取：
 
    1. 在CRXDE Lite中，導覽至 `/libs/settings/dam/v3D/assetTypes/max` Enabled屬性並將 **[!UICONTROL Enabled]** 屬性設為true:
+
    ![image2018-6-22_13-50-50](assets/image2018-6-22_13-50-50.png)
 
 1. 在CRXDE Lite頁面的左上角附近，點選「全部 **[!UICONTROL 儲存」]**。
@@ -79,7 +84,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 1. 返回卡片 **[!UICONTROL 檢視]** ，並觀察已上傳資產上顯示的訊息橫幅。
 
-   當3ds max將原生3ds max格式轉換為。FBX時，會顯示「轉換格式」橫幅。
+   當3ds Max將原生3ds Max格式轉換為。FBX時，會顯示「轉換格式」橫幅。
 
 1. 處理完成後，在「詳細 `logo-sphere.max` 資訊」視 **[!UICONTROL 圖中開啟]** 。
 
