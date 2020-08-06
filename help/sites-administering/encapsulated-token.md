@@ -81,6 +81,7 @@ HMAC密鑰以二進位屬性的形式存在 `/etc/key` 在儲存庫中。 您可
 1. 在本機 `com.adobe.granite.crypto.file` 檔案系統中找到該套件。 例如，在此路徑下：
 
    * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
+
    每個 `bundle.info` 資料夾內的檔案會識別包名稱。
 
 1. 導覽至資料夾。 例如：
