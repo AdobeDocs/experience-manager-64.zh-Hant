@@ -1,8 +1,8 @@
 ---
 title: MSM推出衝突
 seo-title: MSM推出衝突
-description: 瞭解如何處理Multi Site manager的推出衝突。
-seo-description: 瞭解如何處理Multi Site manager的推出衝突。
+description: 瞭解如何處理Multi Site Manager的推出衝突。
+seo-description: 瞭解如何處理Multi Site Manager的推出衝突。
 uuid: 7a640905-aae2-498e-b95c-2c73008fa1cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -41,11 +44,11 @@ source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
 
 * blueprint: `/b`
 
-   首頁；1頁，bp-level-1
+   首頁； 1頁，bp-level-1
 
 * live copy: `/b`
 
-   在即時副本分支中手動建立的頁面；包含1個子頁面， `lc-level-1`
+   在即時副本分支中手動建立的頁面； 包含1個子頁面， `lc-level-1`
 
    * 在發佈時與子頁 `/b`面一起啟動為。
 
@@ -105,7 +108,7 @@ AEM提供：
 * 呼叫 `ResourceNameRolloutConflictHandler`
 
 * 使用此處理常式時，Blueprint頁面會優先。
-* 此處理常式的服務排名設定為低(即屬性的預設值), `service.ranking` 因為自訂處理常式需要較高的排名。 不過，排名並非確保必要時靈活性的絕對最小值。
+* 此處理常式的服務排名設定為低(即 屬性的預設值), `service.ranking` 因為自訂處理常式需要較高的排名。 不過，排名並非確保必要時靈活性的絕對最小值。
 
 此衝突處理常式優先於Blueprint。 即時副本頁 `/b` 面會移動（在即時副本分支內）至 `/b_msm_moved`。
 
@@ -129,15 +132,15 @@ AEM提供：
    <td><strong>推出後的藍圖</strong></td> 
    <td><strong>轉出後即可使用拷貝</strong><br /> </td> 
    <td></td>
-   <td><strong>推出後即時複製</strong><br /><br /><br /> </td> 
-   <td><strong>轉出後發佈</strong><br /><br /> </td> 
+   <td><strong>轉出後即可使用拷貝</strong><br /> <br /> <br /> </td> 
+   <td><strong>推出後發佈</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
    <td><code>b</code> <br /> （已推出藍圖頁面b的內容）<br /> </td> 
    <td></td>
    <td><code>b_msm_moved</code> <br /> （具有在即時副本分支中手動建立的頁b的內容）</td> 
-   <td><code>b</code> <br /> (無變動；包含在即時副本分支中手動建立的原始頁面b的內容，現在稱為b_msm_moved)<br /> </td> 
+   <td><code>b</code> <br /> (無變動； 包含在即時副本分支中手動建立的原始頁面b的內容，現在稱為b_msm_moved)<br /> </td> 
   </tr> 
   <tr> 
    <td><code> /bp-level-1</code></td> 
@@ -156,8 +159,8 @@ AEM提供：
 自訂的衝突處理常式可以：
 
 * 請根據您的需求命名。 ``
-* 根據您的需求進行開發／設定；例如，您可以開發處理常式，讓即時副本頁面優先。
-* 可設計為使用 [OSGi配置進行配置](/help/sites-deploying/configuring-osgi.md);特別是：
+* 根據您的需求進行開發／設定； 例如，您可以開發處理常式，讓即時副本頁面優先。
+* 可設計為使用 [OSGi配置進行配置](/help/sites-deploying/configuring-osgi.md); 特別是：
 
    * **服務排名**:
 
@@ -190,13 +193,13 @@ AEM提供：
  <tbody> 
   <tr> 
    <td><strong>推出後的藍圖</strong></td> 
-   <td><strong>推出後即時複製</strong><br /><br /><br /> </td> 
-   <td><strong>轉出後發佈</strong><br /><br /> </td> 
+   <td><strong>轉出後即可使用拷貝</strong><br /> <br /> <br /> </td> 
+   <td><strong>推出後發佈</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
-   <td><code>b</code> <br /> (無變動；具有在即時副本分支中手動建立的頁面b的內容)</td> 
-   <td><code>b</code> <br /> （無變動）;包含在即時副本分支中手動建立之頁面b的內容)<br /> </td> 
+   <td><code>b</code> <br /> (無變動； 具有在即時副本分支中手動建立的頁面b的內容)</td> 
+   <td><code>b</code> <br /> (無變動； 包含在即時副本分支中手動建立之頁面b的內容)<br /> </td> 
   </tr> 
   <tr> 
    <td><code> /bp-level-1</code> </td> 
