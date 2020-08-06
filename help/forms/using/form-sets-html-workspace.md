@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '384'
+ht-degree: 2%
 
 ---
 
@@ -54,5 +57,5 @@ AEM Forms工作區支援表單集。 使用表單集，可以將與服務或流�
 
 >[!NOTE]
 >
->為了改善格式集中從先前和下一個表單移動期間的效能，所有工作區按鈕（上一頁、下一頁、儲存、送出和……）（更多）)會停用，直到相關表格完全呈現為止。
+>為了改善格式集中從先前和下一個表單移動期間的效能，所有工作區按鈕（上一頁、下一頁、儲存、送出和……） （更多）)會停用，直到相關表格完全呈現為止。
 
