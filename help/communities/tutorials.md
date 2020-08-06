@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +64,7 @@ Geometrixx範例套件包含示範使用者。 身為訪客（未登入）或成
 
 如需示範使用者的完整清單，請使用邊欄導覽至「工具>作 **[!UICONTROL 業>安全性>使用者」]**。 或者，使用Classic UI安 [全性主控台](http://localhost:4502/useradmin) ，來管理使用者和群組。
 
-如果已 [建立社群網站](getting-started.md)，則可將示範使用者指派給其社 [群使用者群組](users.md)。
+如果已 [建立社群網站](getting-started.md)，則可將示範使用者指派至其社 [群使用者群組](users.md)。
 
 ***用戶ID */*密碼：***
 
