@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '668'
+ht-degree: 0%
 
 ---
 
@@ -28,8 +31,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 在「提交 **[!UICONTROL 屬性]** 」區段中，啟用「 **[!UICONTROL 使用非同步提交」]**。
 1. 在「提 **[!UICONTROL 交時]** 」區段中，選取下列其中一個選項以在成功提交表單時執行。
 
-   * **[!UICONTROL 重新導向至URL]**:重新導向至指定的URL或表單提交頁面。 您可以指定URL或瀏覽，以在「重新導向URL/路徑」欄位中 **[!UICONTROL 選擇頁面的路徑]** 。
-   * **[!UICONTROL 顯示消息]**:顯示表單提交的訊息。 您可以在「顯示訊息」選項下方的文字欄位中寫入訊息。 文字欄位支援豐富式文字格式。
+   * **[!UICONTROL 重新導向至URL]**: 重新導向至指定的URL或表單提交頁面。 您可以指定URL或瀏覽，以在「重新導向URL/路徑」欄位中 **[!UICONTROL 選擇頁面的路徑]** 。
+   * **[!UICONTROL 顯示消息]**: 顯示表單提交的訊息。 您可以在「顯示訊息」選項下方的文字欄位中寫入訊息。 文字欄位支援豐富式文字格式。
 
 1. 點選 ![check-button1](assets/check-button1.png) ，以儲存屬性。
 
@@ -56,7 +59,7 @@ AEM Forms為表單提交提供現成可用的成功與錯誤處理常式。 處�
 
 成功提交表單時的伺服器回應包括：
 
-* 表單資料格式類型：XML或JSON
+* 表單資料格式類型： XML或JSON
 * XML或JSON格式的表單資料
 * 選取的選項可重新導向至頁面或顯示表單中設定的訊息
 * 頁面URL或訊息內容（在表單中設定）
@@ -97,6 +100,6 @@ AEM Forms為表單提交提供現成可用的成功與錯誤處理常式。 處�
 1. 在「表 **[!UICONTROL 單對象]** 」樹中選擇「表單」並點選「 **[!UICONTROL 建立」]**。
 1. 從模 **** 式選擇下拉式清單中選取「程式碼編輯器」。
 1. 在程式碼編輯器中，點選「 **[!UICONTROL 編輯程式碼」]**。 在確認對 **[!UICONTROL 話方塊中]** ，點選「編輯」。
-1. 從「 **[!UICONTROL 事件]** 」下拉 **[!UICONTROL 式清單中選擇「成功提交]** 」或「提交 **[!UICONTROL 時發生錯誤]** 」。
+1. 從「 **[!UICONTROL 事件]** 」下拉 **[!UICONTROL 式清單中選擇「成]** 功提交 **** 」或「提交時出錯」。
 1. 為選取的事件編寫規則，並點選「 **[!UICONTROL 完成]** 」以儲存規則。
 
