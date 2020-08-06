@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '765'
+ht-degree: 1%
 
 ---
 
 
 # 執行模式{#run-modes}
 
-執行模式可讓您針對特定用途調整AEM實例；例如，作者或發佈、測試、開發、內部網路或其他人。
+執行模式可讓您針對特定用途調整AEM實例； 例如，作者或發佈、測試、開發、內部網路或其他人。
 
 您可以：
 
@@ -40,7 +43,7 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 * `samplecontent`
 * `nosamplecontent`
 
-這是兩對互斥的運行模式；例如，您可以：
+這是兩對互斥的運行模式； 例如，您可以：
 
 * 同時定 `author` 義或 `publish`（而非同時定義兩者）
 
@@ -64,7 +67,7 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 
 * `publish` + `intranet`
 
-* 視需要。..
+* 視需要。 . .
 
 每次啟動時也可以選擇自訂的執行模式。
 
@@ -98,7 +101,7 @@ nosamplecontent執行模式是專為生產安裝而設計。
 
 * `config.<run-mode>`
 
-   用於適用的運行模式；例如，config
+   用於適用的運行模式； 例如，config
 
 有關在 [](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) 這些資料夾中定義單個配置節點以及為多種運行模式的組合建立配置的詳細資訊，請參閱儲存庫中的OSGi配置。
 
@@ -117,10 +120,10 @@ nosamplecontent執行模式是專為生產安裝而設計。
 
 ## 使用特定運行模式啟動CQ {#starting-cq-with-a-specific-run-mode}
 
-如果您已為多種運行模式定義了配置，則需要定義啟動時要使用的配置。 指定要使用的運行模式有幾種方法；決議的順序是：
+如果您已為多種運行模式定義了配置，則需要定義啟動時要使用的配置。 指定要使用的運行模式有幾種方法； 決議的順序是：
 
 1. [ `sling.properties` 檔案](#using-the-sling-properties-file)
-1. [ 選項 `-r`](#using-the-r-option)
+1. [ `-r` 選項](#using-the-r-option)
 1. [系統屬性(`-D`)](#using-a-system-property-in-the-start-script)
 
 1. [檔案名稱偵測](#filename-detection-renaming-the-jar-file)
@@ -135,13 +138,13 @@ nosamplecontent執行模式是專為生產安裝而設計。
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. 添加以下屬性；以下範例是供作者使用：
+1. 添加以下屬性； 以下範例是供作者使用：
 
    `sling.run.modes=author`
 
 ### 使用-r選項 {#using-the-r-option}
 
-啟動快速啟動時，可使用選 `-r` 項激活自定義運行模式。 例如，使用下列命令啟動執行模式設為dev的AEM例項。&quot;
+啟動快速啟動時，可使用選 `-r` 項激活自定義運行模式。 例如，使用下列命令啟動執行模式設為dev的AEM例項。 &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
