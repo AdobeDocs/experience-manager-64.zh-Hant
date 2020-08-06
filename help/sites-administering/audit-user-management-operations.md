@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 1%
 
 ---
 
@@ -37,10 +40,11 @@ AEM已推出記錄權限變更的功能，讓您稍後可進行審核。
 1. 搜尋 **Apache Sling Logging Logger Configuration**。 然後，按條目右側的&quot;+&quot;以建立新的工廠配置。
 1. 建立下列設定：
 
-   * **** 記錄層級：資訊
-   * **** 日誌檔案：logs/useraudit.log
-   * **** 消息模式：leved default
-   * **** 記錄器：com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+   * **記錄層級：** 資訊
+   * **日誌檔案：** logs/useraudit.log
+   * **消息模式：** leved default
+   * **記錄器：** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
    要在 **Logger** 欄位中輸入兩個記錄器，您需要輸入第一個記錄器的名稱，然後通過按&quot;+&quot;按鈕並輸入第二個記錄器的名稱來建立另一個欄位。
 
 ## 輸出範例 {#example-output}
