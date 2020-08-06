@@ -314,7 +314,7 @@ AEM Communities SCORM引擎是啟用功能的必 [要](overview.md#enablement-co
 
    然後 [配置複製代理](#replication-agents-on-author)
 
-* 存取 [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* 存取 [Web主控台](../../help/sites-deploying/configuring-osgi.md)
 
    * 例如， [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
