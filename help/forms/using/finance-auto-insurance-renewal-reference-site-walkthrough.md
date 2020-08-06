@@ -9,6 +9,9 @@ topic-tags: introduction
 discoiquuid: a960d489-f5a3-436a-b028-54292648c7be
 translation-type: tm+mt
 source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+workflow-type: tm+mt
+source-wordcount: '759'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
 
 依設定中所述設定參考 [網站，並設定AEM 6.4 Forms Reference Site](/help/forms/using/setup-reference-sites.md)。
 
-## We.Finance參考網站藍本 {#we-finance-reference-site-scenario}
+## We.Finance參考網站藍本  {#we-finance-reference-site-scenario}
 
 We.Finance網站是金融服務網站，旨在協助您學習AEM Forms的互動式通訊功能。
 
-閱讀We.Finance Auto Insurance使用案例的詳細說明，其中展示AEM表單及其與Microsoft Dynamics的整合如何協助在金融服務公司中個人化客戶體驗。 此互動式逐步解說功能旨在簡化金融公司複雜數位交易與客戶溝通的實作。
+閱讀We.Finance Auto Insurance使用案例的詳細說明，其中展示AEM表單及其與Microsoft Dynamics的整合如何協助在金融服務公司中個人化客戶體驗。 此互動式逐步教學旨在簡化金融公司複雜數位交易和客戶溝通的實作。
 
 **旅程從使用案例開始：**
 
-Sarah rose是We.Finance的現有客戶，已購買汽車保險單。 現在是續約其保險單的一年中之時。 We.Finance保險代理Gloria Rios向Sarah發出關於續保的提醒。 Sarah會依照電子郵件中提供的指示進行，並順利完成程式。
+Sarah Rose是We.Finance的現有客戶，已購買汽車保險單。 現在是續約其保險單的一年中之時。 We.Finance保險代理Gloria Rios向Sarah發出關於續保的提醒。 Sarah會依照電子郵件中提供的指示進行，並順利完成程式。
 
 ## 自動保險應用程式逐步說明 {#auto-insurance-application-walkthrough}
 
@@ -66,7 +69,7 @@ Sarah按一 **下「立即續約** 」，並轉至其Auto Insurance信函的網�
 
 #### 親眼看看 {#see-it-yourself-1}
 
-您必須已收到附加PDF的電子郵件。 PDF是您的汽車保險信函的列印版本。 按一 **下「立即續約** 」以存取Web版的原則。 查看您的個人資訊和政策詳細資訊，然後按一 **下立即續約** ，您就可以進入另一個互動式通訊。
+您必須已收到附加PDF的電子郵件。 PDF是您的汽車保險信件的印刷版。 按一 **下「立即續約** 」以存取Web版的原則。 查看您的個人資訊和政策詳細資訊，然後按一 **下立即續約** ，您就可以進入另一個互動式通訊。
 
 電 **子郵件中的** 「立即續約」按鈕會將Sarah引導至原則的Web版本。 您可以造訪下列URL:
 
