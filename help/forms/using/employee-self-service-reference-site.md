@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d2695f71-5126-477c-ae6b-a964fb55728b
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1644'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 ## 概覽 {#overview}
 
-員工自助服務系統通常由公司內部網路代管，讓員工可存取其辦公桌上提供的許多資訊和服務。 它可讓員工完全掌控工作，例如存取其雇用細節、申請休假及提交費用報表。 另一方面，它可協助組織改善程式效率並降低成本，同時讓員工隨時掌握最新資訊並參與其中。
+員工自助服務系統通常由公司內部網路代管，讓員工可存取其辦公桌上提供的許多資訊和服務。 它可讓員工執行存取其雇用細節、申請休假及提交費用報表等動作，並提供完整的控制權。 另一方面，它可協助組織改善程式效率並降低成本，同時讓員工隨時掌握最新資訊並參與其中。
 
 員工自助服務參考網站會展示您如何運用AEM Forms在組織中實作員工自助服務系統。
 
@@ -39,9 +42,9 @@ Sarah組織的法規遵循部門已要求員工提交利益衝突問卷。
 
 Sarah會前往其組織的入口網站，登入並按一下「員工」以存取員工儀表板。 她在員工儀表板上找到利益衝突問卷，然後按一下「套 **[!UICONTROL 用」]**。
 
-![](assets/we-finance-home.png) we-finance-home圖&#x200B;****:組織 *入口網站*
+![we-finance-home圖](assets/we-finance-home.png)**:** *組織入口網站*
 
-![](assets/employee-dashboard.png) employee-dashboard圖&#x200B;****&#x200B;中：員工 *儀表板*
+![employee-dashboard圖](assets/employee-dashboard.png)**中：** *員工儀表板*
 
 Sarah使用「下一步」按鈕導覽表單，並讀取「簡介」和「定義」區段。 她會回覆「問題」區段中的問題。 最後，她簽名並提交問卷。
 
@@ -63,9 +66,9 @@ Sarah使用「下一步」按鈕導覽表單，並讀取「簡介」和「定義
 
 Sarah提交的利益衝突問卷已指派給Gloria Rios進行審查。 Gloria在組織中擔任法規遵循官。 Gloria會登入她的AEM Inbox並檢閱指派給她的工作。 她核准了莎拉提交的問卷，並完成了工作。
 
-![](assets/conflict-inbox.png) conflict-inbox圖&#x200B;****&#x200B;表：格洛 *麗亞的收件匣*
+![conflict-inbox圖](assets/conflict-inbox.png)**表：** *格洛麗亞的收件匣*
 
-![](assets/conflict-approved.png) 衝突批准&#x200B;****&#x200B;圖：打 *開任務*
+![衝突批准](assets/conflict-approved.png)**圖：** *開啟任務*
 
 **運作方式**
 
@@ -85,9 +88,9 @@ Sarah提交的利益衝突問卷已指派給Gloria Rios進行審查。 Gloria在
 
 Sarah會前往其組織的入口網站，登入並按一下「員工」 **** ，以存取員工儀表板。 她在員工儀表板上找到公司卡應用程式，然後按一下「應 **[!UICONTROL 用」]**。
 
-![](assets/we-finance-home-1.png) we-finance-home-1圖&#x200B;****:組織 *入口網站*
+![we-finance-home-1圖](assets/we-finance-home-1.png)**:** *組織入口網站*
 
-![](assets/employee-dashboard-1.png) employee-dashboard-1 ****&#x200B;圖：員工 *儀表板*
+![employee-dashboard-1](assets/employee-dashboard-1.png)**圖：** *員工儀表板*
 
 她按一 **[!UICONTROL 下「套用]** 」公司資訊卡應用程式。 單頁應用程式隨即開啟。 她會填寫所有詳細資料，並按 **[!UICONTROL 一下「套用]** 」以送出應用程式。
 
@@ -98,7 +101,7 @@ Sarah會前往其組織的入口網站，登入並按一下「員工」 **** ，
 組織入口網站和員工儀表板是AEM Sites頁面。 控制面板會列出數個自助服務選項，例如公司資訊卡應用程式。 應用程式上的「套用」按鈕會連結至最適化表單。
 
 適用於公司資訊卡應用程式的最適化表單是簡單、單頁、自適應的最適化表單。 它使用文字、電話、數字方塊、數字步進器等基本的自適應表單元件。 請在以下網址查看最適化表單：\
-`https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`.
+`https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`。
 
 **親眼看看**
 
@@ -108,9 +111,9 @@ Sarah會前往其組織的入口網站，登入並按一下「員工」 **** ，
 
 Sarah提交的公司卡申請會指派給Gloria Rios進行審查。 Gloria會登入她的AEM Inbox並檢閱指派給她的工作。 她批准了Sarah提交的申請，完成了任務。
 
-![](assets/corporate-card-inbox.png) 公司卡收件匣&#x200B;****&#x200B;圖：格洛 *麗亞的收件匣*
+![公司卡收件匣](assets/corporate-card-inbox.png)**圖：** *格洛麗亞的收件匣*
 
-![](assets/corporate-card-approved.png) 公司卡核准&#x200B;****&#x200B;圖：打 *開任務*
+![公司卡核准](assets/corporate-card-approved.png)**圖：** *開啟任務*
 
 **運作方式**
 
@@ -130,9 +133,9 @@ Corporate Card應用程式中的提交工作流程會觸發Forms工作流程，�
 
 Sarah會前往其組織的入口網站，登入並按一下「員工」 **** ，以存取員工儀表板。 她在員工儀表板上找到「費用報表」應用程式，然後按一下「 **[!UICONTROL 應用」]**。
 
-![](assets/we-finance-home-2.png) we-finance-home-2 ****&#x200B;圖：組織 *入口網站*
+![we-finance-home-2](assets/we-finance-home-2.png)**圖：** *組織入口網站*
 
-![](assets/employee-dashboard-2.png) employee-dashboard-2 ****&#x200B;圖：員工 *儀表板*
+![employee-dashboard-2](assets/employee-dashboard-2.png)**圖：** *員工儀表板*
 
 她按一下「 **[!UICONTROL 套用]** 」至「費用報表」應用程式。 隨即開啟一個應用程式表單，其中有兩個標籤- 「報表名稱」和「報表詳細資訊」。 「報 **表詳細資料** 」標籤中的+圖示可讓她在單一報表中新增超過支出。
 
@@ -148,15 +151,15 @@ Sarah會前往其組織的入口網站，登入並按一下「員工」 **** ，
 
 **親眼看看**
 
-前往並 `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` 使用Sarah的使 `srose/srose` 用者名稱／密碼登入。 按一下 **[!UICONTROL 員工]** ，訪問控制面板，然後按一下 **[!UICONTROL 應用]** 「費用報表」應用程式。 填寫詳細資訊並提交申請。
+前往並 `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` 使用Sarah的使 `srose/srose` 用者名稱／密碼登入。 按一下 **[!UICONTROL 員工]** ，訪問控制面板，然後按一下「應 **[!UICONTROL 用費用報表]** 」應用程式。 填寫詳細資訊並提交申請。
 
 ### Gloria審閱並批准費用報表 {#gloria-reviews-and-approves-the-expense-report}
 
 Sarah提交的費用報表會指派給Gloria Rios進行審核。 Gloria會登入她的AEM Inbox並檢閱指派給她的工作。 她批准了Sarah提交的申請，完成了任務。
 
-![](assets/expense-report-inbox.png) expense-report-inbox圖&#x200B;****&#x200B;示：格洛 *麗亞的收件匣*
+![expense-report-inbox圖](assets/expense-report-inbox.png)**示：** *格洛麗亞的收件匣*
 
-![](assets/expense-report-approved.png) 費用——報表——核准&#x200B;****&#x200B;圖：打 *開任務*
+![費用——報表——核准](assets/expense-report-approved.png)**圖：** *開啟任務*
 
 **運作方式**
 
@@ -176,9 +179,9 @@ Sarah提交的費用報表會指派給Gloria Rios進行審核。 Gloria會登入
 
 Sarah會前往其組織的入口網站，登入並按一下「員工」 **** ，以存取員工儀表板。 她會在員工儀表板上找到離開應用程式，然後按一下「 **[!UICONTROL 套用」]**。
 
-![](assets/we-finance-home-3.png) we-finance-home-3圖&#x200B;****:組織 *入口網站*
+![we-finance-home-3圖](assets/we-finance-home-3.png)**:** *組織入口網站*
 
-![](assets/employee-dashboard-3.png) employee-dashboard-3 ****&#x200B;圖：員工 *儀表板*
+![employee-dashboard-3](assets/employee-dashboard-3.png)**圖：** *員工儀表板*
 
 離開應用程式會開啟，其中會填入Sarah的姓名，並預先填入表單中的員工ID。 它還顯示了她的假期餘額和歷史。 她填寫了請假細節，並提交申請以申請批准。
 
@@ -206,9 +209,9 @@ Sarah會前往其組織的入口網站，登入並按一下「員工」 **** ，
 
 Sarah提交的休假申請被指派給Gloria Rios進行審查。 Gloria會登入她的AEM Inbox並檢閱指派給她的工作。 她批准了Sarah提交的申請，完成了任務。
 
-![](assets/leave-inbox.png) leave-inbox圖&#x200B;****&#x200B;示：格洛 *麗亞的收件匣*
+![leave-inbox圖](assets/leave-inbox.png)**示：** *格洛麗亞的收件匣*
 
-![](assets/leave-approved.png) leaf-approved ****&#x200B;圖：打 *開任務*
+![leaf-approved](assets/leave-approved.png)**圖：** *開啟任務*
 
 **運作方式**
 
