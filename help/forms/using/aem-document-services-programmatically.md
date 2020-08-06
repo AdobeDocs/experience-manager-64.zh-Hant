@@ -2436,7 +2436,7 @@ public void removeDocumentUsageRights() {
   <tr> 
    <td><code class="code">signatureField
       Name</code> </td> 
-   <td>要驗證的簽名欄位的名稱。 可以給出完全限定的名稱或部分名稱<br /> </td> 
+   <td>可以給出完全限定的名稱或部分名稱<br /> </td> 
   </tr> 
   <tr> 
    <td><code>revocationCheckStyle</code></td> 
@@ -4555,7 +4555,7 @@ createPDF服務會引發下列例外：
   </tr> 
   <tr> 
    <td>xmpDoc </td> 
-   <td>檔案包含套用至產生的PDF檔案的中繼資料資訊。 此參數為可選參數。<br /> </td> 
+   <td>檔案包含套用至產生之PDF檔案的中繼資料資訊。 此參數為可選參數。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
