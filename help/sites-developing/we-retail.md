@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 ## 簡介 {#introduction}
 
-We.Retail是參考實作和範例內容，說明使用Adobe Experience manager設定線上呈現的建議方式。
+We.Retail是參考實作和範例內容，說明使用Adobe Experience Manager設定線上呈現的建議方式。
 
 We.Retail運用最新的AEM技術，例如HTL、互動式版面、可編輯的範本、核心元件等。
 
@@ -37,7 +40,7 @@ We.Retail是AEM的標準參考實作，展示AEM的一些最強大功能。
 | [HTML 範本語言](https://helpx.adobe.com/experience-manager/htl/user-guide.html) | 所有元件都以HTL為基礎 |  |
 | [電子商務功能](/help/sites-developing/ecommerce.md) | 功能：產品目錄 |  |
 | [社群網站](/help/communities/overview.md) | 允許訪客加入社群討論、閱讀部落格等 |  |
-| [核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) | 所有元件都以新的核心元件為基礎，而且更可用，而且可由使用者自行設定 | [試試！](/help/sites-developing/we-retail-core-components.md) |
+| [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) | 所有元件都以新的核心元件為基礎，而且更可用，而且可由使用者自行設定 | [試試！](/help/sites-developing/we-retail-core-components.md) |
 | [內容片段](/help/assets/content-fragments.md) | 「We.Retail體驗」區段展示透過內容片段重複使用內容的強大功能。 | [試試！](/help/sites-developing/we-retail-content-fragments.md) |
 | [體驗片段](/help/sites-authoring/experience-fragments.md) | 「體驗片段」是一組或多個元件，包括可在頁面中參考的內容和版面。 | [試試！](/help/sites-developing/we-retail-experience-fragments.md) |
 
