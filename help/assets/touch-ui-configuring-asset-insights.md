@@ -4,6 +4,9 @@ description: 瞭解如何在AEM Assets中設定資產分析。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 10%
 
 ---
 
@@ -31,7 +34,7 @@ Adobe Experience Manager(AEM)Assets會從Adobe Analytics擷取協力廠商網站
 
 ## 頁面追蹤器 {#page-tracker}
 
-在您設定Analytics帳戶後，會為您產生頁面追蹤器代碼。 若要啟用「資產前瞻分析」來追蹤協力廠商網站中使用的AEM資產，請在網站程式碼中加入頁面追蹤器程式碼。 使用AEM Assets中的「頁面追蹤器」公用程式來產生頁面追蹤器代碼。 如需如何將頁面追蹤器程式碼包含在協力廠商網頁中的詳細資訊，請參 [閱使用網頁追蹤器和內嵌程式碼](touch-ui-using-page-tracker.md)。
+在您設定Analytics帳戶後，就會產生頁面追蹤器代碼。 若要啟用「資產前瞻分析」來追蹤協力廠商網站中使用的AEM資產，請在網站程式碼中加入頁面追蹤器程式碼。 使用AEM Assets中的「頁面追蹤器」公用程式來產生頁面追蹤器代碼。 如需如何將頁面追蹤器程式碼包含在協力廠商網頁中的詳細資訊，請參 [閱使用網頁追蹤器和內嵌程式碼](touch-ui-using-page-tracker.md)。
 
 1. In AEM, click the **[!UICONTROL Tools > Assets]**.
 
