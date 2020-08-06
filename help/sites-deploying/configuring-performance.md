@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '6722'
+ht-degree: 1%
 
 ---
 
@@ -35,12 +38,13 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
 ## 發佈環境 {#publish-environment}
 
-此環境包含您提供給使用者的內容。 在這裡，請求數量更大，速度也同樣重要，但由於請求的性質不那麼動態，因此可以應用額外的效能增強機制；例如快取內容或負載平衡。
+此環境包含您提供給使用者的內容。 在這裡，請求數量更大，速度也同樣重要，但由於請求的性質不那麼動態，因此可以應用額外的效能增強機制； 例如快取內容或負載平衡。
 
 >[!NOTE]
 >
 >* 在進行效能優化配置後，請按照 [Tough Day](/help/sites-developing/tough-day.md) （艱難日）中的步驟來測試大負載環境。
 >* 另請參閱 [效能調整提示](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)。
+
 >
 
 
@@ -73,7 +77,7 @@ CQ專案的效能最佳化方法可歸納為五個非常簡單的規則，可遵
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-如果您上線使用網站，並在發佈後發現您遇到效能問題，只有一個原因：您的負載和效能測試並不足以模擬實際情況。
+如果您上線使用網站，並在發佈後發現您遇到效能問題，只有一個原因： 您的負載和效能測試並不足以模擬實際情況。
 
 模擬現實是困難的，而您在合理地想要投入多少精力來實現「真實」，取決於您專案的性質。 「真實」不僅指「真實程式碼」和「真實流量」，也指「真實內容」，尤其是關於內容大小和結構。 請記住，根據儲存庫的大小和結構，模板的行為可能完全不同。
 
@@ -198,7 +202,7 @@ JVM和OS層級調整通常不會導致效能大幅提升，因此應在最佳化
 
 >[!NOTE]
 >
->請記住，您用來測量效能的機制通常會影響您嘗試測量的內容。 你應該總是設法解決這些差異，盡可能消除它們的影響；尤其是瀏覽器外掛程式應盡可能取消啟動。
+>請記住，您用來測量效能的機制通常會影響您嘗試測量的內容。 你應該總是設法解決這些差異，盡可能消除它們的影響； 尤其是瀏覽器外掛程式應盡可能取消啟動。
 
 ## 效能配置 {#configuring-for-performance}
 
@@ -210,7 +214,7 @@ CQ（和／或基礎CRX）的某些方面可以配置為優化效能。 以下�
 
 ### 搜尋索引 {#search-indexing}
 
-從AEM 6.0開始，Adobe Experience manager使用Oak資料庫架構。
+從AEM 6.0開始，Adobe Experience Manager使用Oak資料庫架構。
 
 您可以在以下位置找到更新的索引資訊：
 
@@ -225,16 +229,16 @@ CQ（和／或基礎CRX）的某些方面可以配置為優化效能。 以下�
 
 工作流引擎使用Apache Sling作業佇列來處理和排程工作項目處理。 下列工作佇列服務已依預設從Apache Sling Job Queue Configuration服務工廠建立，以處理工作流程工作：
 
-* Granite工作流程佇列：大部分的工作流程步驟（例如處理DAM資產的步驟）都使用Granite Workflow Queue服務。
-* Granite工作流外部進程作業隊列：此服務用於特殊的外部工作流步驟，通常用於聯繫外部系統和輪詢結果。 例如，InDesign「媒體擷取程式」步驟會實作為外部程式。 工作流程引擎使用外部佇列來處理輪詢。 (請參 [閱com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)。)
+* Granite工作流程佇列： 大部分的工作流程步驟（例如處理DAM資產的步驟）都使用Granite Workflow Queue服務。
+* Granite工作流外部進程作業隊列： 此服務用於特殊的外部工作流步驟，通常用於聯繫外部系統和輪詢結果。 例如，InDesign「媒體擷取程式」步驟會實作為外部程式。 工作流程引擎使用外部佇列來處理輪詢。 (請參 [閱com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)。)
 
 配置這些服務以限制併發運行的工作流進程的最大數量。
 
-**** 注意：配置這些作業隊列會影響所有工作流，除非您為特定工作流模型建立了作業隊列(請參閱下面的 [Configure the Queue for a Specific Workflow Model](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) )。
+**注意：** 配置這些作業隊列會影響所有工作流，除非您為特定工作流模型建立了作業隊列(請參閱下面的 [Configure the Queue for a Specific Workflow Model](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) )。
 
 **儲存庫中的配置**
 
-如果您使用sling:OsgiConfig [節點設定服務](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)，則需要尋找現有服務的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台來發現PID。
+如果您使用sling:OsgiConfig [節點設定服務](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)，則需要尋找現有服務的PID，例如： org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台來發現PID。
 
 您需要配置名為queue.maxparallel的屬性。
 
@@ -248,7 +252,7 @@ CQ（和／或基礎CRX）的某些方面可以配置為優化效能。 以下�
 
 為特定工作流模型建立作業隊列，以便您可以為該工作流模型配置作業處理。 這樣，您的配置會影響特定工作流的處理，而預設的「Granite工作流隊列」的配置則控制其他工作流的處理。
 
-當工作流程模型執行時，他們會針對特定主題建立Sling工作。 預設情況下，該主題與為常規Granite Workflow Queue或Granite Workflow External Process Job queue配置的主題匹配：
+當工作流程模型執行時，他們會針對特定主題建立Sling工作。 預設情況下，該主題與為常規Granite Workflow Queue或Granite Workflow External Process Job Queue配置的主題匹配：
 
 * com/adobe/granite/workflow/job&amp;ast;
 * com/adobe/granite/workflow/external/job&amp;ast;
@@ -283,7 +287,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 部署多個DAM實例有助於在以下情況下的效能：
 
-* 由於為作者環境定期上傳大量資產，所以負載較高；這裡可以有個別的DAM例項專門用於為作者服務。
+* 由於為作者環境定期上傳大量資產，所以負載較高； 這裡可以有個別的DAM例項專門用於為作者服務。
 * 您在全球各地擁有多個團隊（例如美國、歐洲、亞洲）。
 
 其他考量事項包括：
@@ -324,7 +328,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 若要取得清楚的概觀，您可以建立整個應用程式的地圖（您很可能會從作者環境的測試中取得此地圖）。
 
-以圖形表示應用程式的內部元素，可以給出測試需求的概述；使用色彩編碼，也可做為報告的基礎。
+以圖形表示應用程式的內部元素，可以給出測試需求的概述； 使用色彩編碼，也可做為報告的基礎。
 
 ### 範圍定義 {#scope-definition}
 
@@ -367,7 +371,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 **交易**
 
-* 術語事務用於表示完整網頁的請求，包括頁面本身和所有後續呼叫；例如頁面要求、任何AJAX呼叫、影像和其他物件。**請求追溯**
+* 術語事務用於表示完整網頁的請求，包括頁面本身和所有後續呼叫； 例如頁面要求、任何AJAX呼叫、影像和其他物件。**請求追溯**
 * 若要完全分析每個請求，您可以代表呼叫堆疊的每個元素，然後合計每個請求的平均處理時間。
 
 ### 定義績效目標 {#defining-the-performance-goals}
@@ -376,7 +380,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 您需要在平均和峰值條件下測試效能。 此外，您還需要「上線」藍本測試，以確保在網站首次推出時，您可以迎合對網站的興趣。
 
-您從現有網站收集的任何經驗或統計資料，在決定未來目標時也會很有用；例如，來自您即時網站的熱門流量。
+您從現有網站收集的任何經驗或統計資料，在決定未來目標時也會很有用； 例如，來自您即時網站的熱門流量。
 
 #### 單一元件測試 {#single-component-tests}
 
@@ -431,14 +435,14 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 | 錯誤藍本 | 錯誤類型 | #使用者 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
 |---|---|---|---|---|---|
-| 搜尋元件過載 | 搜尋全域萬用字元（星號） | 10 | 1 |  | 只有&amp;ast;&amp;ast;&amp;ast;的子菜單。 |
+| 搜尋元件過載 | 搜尋全域萬用字元（星號） | 10 | 1 |  | 只有&amp;ast;&amp;ast;&amp;ast; 的子菜單。 |
 |  | 停止字詞 | 20 | 2 |  | 正在搜尋停止字詞。 |
 |  | 空字串 | 10 | 1 |  | 搜索空字串。 |
 |  | 特殊字元 | 10 | 1 |  | 搜尋特殊字元。 |
 
 #### 耐力測試 {#endurance-tests}
 
-系統連續運行一段時間後，才會遇到某些問題；不管是幾個小時，甚至幾天。 使用耐久性測試來測試在所需時間段內的恆定平均載荷。 然後，可以分析任何效能降級。
+系統連續運行一段時間後，才會遇到某些問題； 不管是幾個小時，甚至幾天。 使用耐久性測試來測試在所需時間段內的恆定平均載荷。 然後，可以分析任何效能降級。
 
 | 藍本 | 測試類型 | #使用者 | Tx/秒（預期） | Tx/秒（已測試） | 說明 |
 |---|---|---|---|---|---|
@@ -470,7 +474,7 @@ com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/
 
 ### 報告 {#reporting}
 
-需要不斷的報告，以便讓所有人知道情況；如前所述，對體系結構圖進行顏色編碼，可用於此。
+需要不斷的報告，以便讓所有人知道情況； 如前所述，對體系結構圖進行顏色編碼，可用於此。
 
 完成所有測試後，您將要報告：
 
@@ -497,6 +501,7 @@ Dispatcher提供許多內建機制，如果您的網站利用這些機制，您�
 >
 >* 可以快取您可儲存為頁面並使用URL要求的所有項目
 >* 無法儲存其他項目，例如Cookie、作業資料和表單資料。
+
 >
 >
 一般而言，許多快取策略都需要選取好的URL，而不需仰賴此額外資料。
@@ -506,7 +511,7 @@ Dispatcher提供許多內建機制，如果您的網站利用這些機制，您�
 
 ### 計算Dispatcher快取比 {#calculating-the-dispatcher-cache-ratio}
 
-快取比率公式估計快取處理的請求佔進入系統的請求總數的百分比。 要計算快取比率，您需要以下各項：
+快取比率公式估計快取處理的請求佔進入系統的請求總數的百分比。 要計算快取比率，您需要：
 
 * 請求總數。 Apache中提供了此資訊 `access.log`。 如需詳細資訊，請參閱 [Apache正式檔案](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
 
@@ -569,7 +574,7 @@ www.myCompany.com/news/main.large.html
 >
 >對於大部分的版面配置，您也可以使用樣式表和／或用戶端指令碼。 這些功能通常在快取時非常有效。
 >
->這對於列印版本也很有用，您可在其中使用URL，例如：&quot;
+>這對於列印版本也很有用，您可在其中使用URL，例如： &quot;
 >
 >`www.myCompany.com/news/main.print.html`
 >
@@ -617,6 +622,7 @@ Dispatcher無法快取個人化資料，因此建議您將個人化限制在必�
 >
 >* 使用iFrames將頁面分割為一個對所有用戶都相同的部分，以及對用戶所有頁面都相同的部分。 然後，您可以快取這兩個部件。
 >* 使用用戶端JavaScript來顯示個人化資訊。 不過，您必須確保在使用者關閉JavaScript時，頁面仍能正確顯示。
+
 >
 
 
@@ -629,12 +635,12 @@ Dispatcher無法快取個人化資料，因此建議您將個人化限制在必�
 
 瀏覽器有兩種方式可決定檔案類型：
 
-1. 其延伸(例如.html、.gif、.jpg等)
+1. 其延伸(例如 .html、.gif、.jpg等)
 1. 由伺服器隨檔案發送的MIME類型。
 
-對於大多數檔案，MIME類型隱含在檔案副檔名中。 即：
+對於大多數檔案，MIME類型隱含在檔案副檔名中。 i.e.:
 
-1. 其延伸(例如.html、.gif、.jpg等)
+1. 其延伸(例如 .html、.gif、.jpg等)
 1. 由伺服器隨檔案發送的MIME類型。
 
 如果檔案名沒有副檔名，則顯示為純文字檔案。
@@ -644,7 +650,7 @@ Dispatcher無法快取個人化資料，因此建議您將個人化限制在必�
 若要確定檔案已正確快取，請遵循下列准則：
 
 * 請確定檔案的副檔名一律正確。
-* 請避免使用一般檔案伺服指令碼，這些指令碼具有URL，例如download.jsp?file=2214。 重寫指令碼，使用包含檔案規範的URL;在上一個範例中，此為download.2214.pdf。
+* 請避免使用一般檔案伺服指令碼，這些指令碼具有URL，例如download.jsp?file=2214。 重寫指令碼，使用包含檔案規範的URL; 在上一個範例中，此為download.2214.pdf。
 
 ## 備份效能 {#backup-performance}
 
@@ -656,11 +662,11 @@ Dispatcher無法快取個人化資料，因此建議您將個人化限制在必�
 
 本文中所報告的結果是從參考環境中運行的基準（具有以下配置）獲得的。 此配置設計為類似於資料中心中的典型生產環境：
 
-* H-P proLiant DL380 G6,8個CPU x 2.533 GHz
+* H-P ProLiant DL380 G6,8個CPU x 2.533 GHz
 * 串列連接SCSI 300GB 10,000RPM驅動器
-* 硬體RAID控制器；RAID0+5陣列中有8個驅動器
+* 硬體RAID控制器； RAID0+5陣列中有8個驅動器
 * VMware映像CPU x 2 Intel Xeon E5540 @ 2.53GHz
-* RedHat Linux 2.6.18-194.el5;Java 1.6.0_29
+* RedHat Linux 2.6.18-194.el5; Java 1.6.0_29
 * 執行CQ 5.5 GM的單一作者例項。
 
 此伺服器上的磁碟子系統速度相當快，代表了生產伺服器中可能使用的高效能RAID配置。 備份效能對磁碟效能可以很敏感，而此環境的結果反映了在非常快的RAID配置上的效能。 VMWare映像配置為在RAID陣列上具有物理駐留在本地磁碟儲存中的單個大磁碟卷。
@@ -708,7 +714,7 @@ CQ配置將儲存庫和資料儲存庫與所有作業系統和CQ軟體放在同�
 
 #### 基準藍本 {#benchmark-scenarios}
 
-備份基準包括兩個主要情況：備份時，備份系統處於大量應用程式負載，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時。 雖然一般建議在CQ系統盡可能空閒時執行備份，但有時需要在系統負載時運行備份。
+備份基準包括兩個主要情況： 備份時，備份系統處於大量應用程式負載，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時，備份時。 雖然一般建議在CQ系統盡可能空閒時執行備份，但有時需要在系統負載時運行備份。
 
 **在CQ上執行空閒狀態** 「備份」時不會執行任何其他活動。
 
