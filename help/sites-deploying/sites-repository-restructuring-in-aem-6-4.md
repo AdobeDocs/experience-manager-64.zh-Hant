@@ -10,6 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 translation-type: tm+mt
 source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
+workflow-type: tm+mt
+source-wordcount: '1597'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
 **6.5升級版之前**
 
 * [Adobe Analytics用戶端程式庫](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#adobe-analytics-client-libraries)
-* [傳統的Microsoft word網頁設計](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#classic-microsoft-word-to-web-page-designs)
+* [傳統的Microsoft Word網頁設計](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#classic-microsoft-word-to-web-page-designs)
 * [行動裝置模擬器組態](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#mobile-device-emulator-configurations)
 * [多站點管理器Blueprint配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
 * [多站點管理器推廣配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
@@ -57,10 +60,10 @@ source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
     <ol> 
      <li>將任何新的或已修改的ContextHub區段從先前位置複製到適當的新位置(/<code>apps</code>、 <code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)</li> 
      <li>將先前位置中ContextHub區段的參考更新為新位置(、、)中已移轉的ContextHub<code>/apps</code>區 <code>/conf/global</code>段 <code>/conf/&lt;tenant&gt;</code>的參考。</li> 
-    </ol> <p>下列QueryBuilder查詢會在先前位置中找到ContextHub區段的所有參考。<br /> 這 <br /><code class="code">path=/content
+    </ol> <p>下列QueryBuilder查詢會在先前位置中找到ContextHub區段的所有參考。<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> 可 <br /> 以透過 <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM queryBuilder除錯程式UI執行</a>。 請注意，這是遍歷查詢，因此不要針對生產運行它，並確保根據需要調整遍歷限制。</p> </td> 
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> 這可透過 <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder除錯程式UI執行</a>。 請注意，這是遍歷查詢，因此不要針對生產運行它，並確保根據需要調整遍歷限制。</p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
@@ -68,7 +71,7 @@ source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
     <ul> 
      <li>/etc/segmentation/geometrixx/</li> 
      <li>/etc/segmentation/geometrixx-outdoors</li> 
-    </ul> <p>注意：如果使用ClientContext，建議轉換為ContextHub。</p> </td> 
+    </ul> <p>注意： 如果使用ClientContext，建議轉換為ContextHub。</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -116,7 +119,7 @@ source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
  </tbody>
 </table>
 
-### 傳統的Microsoft word網頁設計 {#classic-microsoft-word-to-web-page-designs}
+### 傳統的Microsoft Word網頁設計 {#classic-microsoft-word-to-web-page-designs}
 
 <table> 
  <tbody>
@@ -133,7 +136,7 @@ source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
    <td><p>適用於任何以SCM管理且不在執行時期透過設計對話方塊寫入的設計。</p> 
     <ol> 
      <li>將設計從「上一個位置」複製到「新位置」(<code>/apps</code>)。</li> 
-     <li>將「設計」中的任何CSS、JavaScript和靜態資源轉換為 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">用戶端程式庫</a><code>allowProxy = true</code>。</li> 
+     <li>將「設計」中的任何CSS、JavaScript和靜態資源轉換為用戶 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">端程式庫</a> , <code>allowProxy = true</code>包含</li> 
      <li>在cq:designPath屬性中更新對「上一個位置」的參照。</li> 
      <li>更新參照「上一位置」的任何頁面，以使用新的「用戶端程式庫」類別（這需要更新「頁面」實作代碼）。</li> 
      <li>更新AEM Dispatcher規則，以允許透過Proxy servlet提供用戶端 <code>/etc.clientlibs/</code> 程式庫。</li> 
@@ -170,14 +173,16 @@ source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
         jcr
        </code><code>
         :content
-       </code></span> : <br /> [ <span class="code">cq:Page]/jcr:content@cq:       <code>
+       </code></span> : <br /> <span class="code">[cq:Page]/jcr:content@cq:
+       <code>
         deviceGroups
        </code> =字串[ mobile/groups/responsive ]</span></li> 
      <li>對於依賴於這些移動設備模擬器配置的任何可編輯模板，請更新可編輯模板，指 <span class="code"><code>
         cq
-       </code>向：       到 <code>
+       </code>向：
+       <code>
         deviceGroups
-       </code></span> 新位置。</li> 
+       </code></span> 到新位置。</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -350,7 +355,7 @@ source-git-commit: 007930ea6f01603cd29b56cda4000d024a8cc1f6
    <td><p>適用於任何以SCM管理且不在執行時期透過設計對話方塊寫入的設計。</p> 
     <ol> 
      <li>將設計從「上一個位置」複製到「新位置」(<code>/apps</code>)。</li> 
-     <li>將「設計」中的任何CSS、JavaScript和靜態資源轉換為 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">用戶端程式庫</a><code>allowProxy = true</code>。</li> 
+     <li>將「設計」中的任何CSS、JavaScript和靜態資源轉換為用戶 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">端程式庫</a> , <code>allowProxy = true</code>包含</li> 
      <li>透過 <code>cq:designPath</code> AEM &gt;網站&gt;自訂網站頁面&gt;頁面屬性&gt;進階標籤&gt;設計欄位，更新屬性中「上一個位置」的參考 <strong></strong>。</li> 
      <li>更新參照「上一位置」的任何頁面，以使用新的「用戶端程式庫」類別（這需要更新「頁面」實作代碼）。</li> 
      <li>更新AEM Dispatcher規則，允許透過Proxy servlet提供用戶端 <code>/etc.clientlibs/</code> 程式庫。</li> 
