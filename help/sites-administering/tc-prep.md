@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 編寫您的語言大師的內容。
 1. 為您的網站建立每個語言副本的語言根目錄。 例如，Geometrixx範例網站的法文語言副本為/content/geometrixx/fr。
 
-在準備翻譯內容後，您可以自動在語言副本和相關的翻譯項目中建立缺少的頁面。 (請參 [閱建立翻譯項目](/help/sites-administering/tc-manage.md)。)如需AEM中內容轉譯程式的概觀，請參閱「多語 [言網站的轉譯內容」](/help/sites-administering/translation.md)。
+在準備翻譯內容後，您可以自動在語言副本和相關的翻譯項目中建立缺少的頁面。 (請參 [閱建立翻譯項目](/help/sites-administering/tc-manage.md)。) 如需AEM中內容轉譯程式的概觀，請參閱「多語 [言網站的轉譯內容」](/help/sites-administering/translation.md)。
 
 ## 建立語言根 {#creating-a-language-root}
 
