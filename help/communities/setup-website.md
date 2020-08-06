@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
 source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -37,6 +40,7 @@ source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
 >* CRXDE中顯示的名稱是構成可定址內容路徑的節點名稱
 >* 節點名稱可能包含空格，但在URI中使用時，空格必須編碼為&#39;%20&#39;或&#39;+&#39;
 >* 節點名稱可能包含連字型大小和下划線，但是當它們被引用為Java檔案中的包名時，必須對其進行編碼。 連字型大小和下划線都會以下划線和其unicode值進行逸出：
+
    >
    >   
    * 連字型大小變為&#39;_002d&#39;
@@ -54,26 +58,27 @@ source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
    使用 **[!UICONTROL CRXDE Lite]**，在檔案總管窗格中
 
    1. 選擇檔案 `/apps` 夾
-   1. 按一下右鍵 **[!UICONTROL 建立]**...或下拉「建 **[!UICONTROL 立」...]** 菜單
+   1. 按一下右鍵 **[!UICONTROL 建立]**... 或下拉「建 **[!UICONTROL 立」...]** 菜單
    1. 選擇 **[!UICONTROL 建立資料夾……]** .
    1. 在「建立 **[!UICONTROL 資料夾]** 」對話框中，輸入 `an-scf-sandbox`
-   1. 按一下「 **[!UICONTROL 確定」]**
+   1. Click **[!UICONTROL OK]**
 
 1. 建立 **[!UICONTROL 元件]** 子資料夾。
 
    1. 選擇檔案 `/apps/an-scf-sandbox` 夾
    1. 按一下「 **[!UICONTROL 建立>建立資料夾」]**
    1. 在「建立 **[!UICONTROL 資料夾]** 」對話框中，輸 **[!UICONTROL 入]**
-   1. 按一下「 **[!UICONTROL 確定」]**
+   1. Click **[!UICONTROL OK]**
 
 1. 建立 **[!UICONTROL 範本]** 子資料夾。
 
    1. 選擇檔案 `/apps/an-scf-sandbox` 夾
    1. 按一下「 **[!UICONTROL 建立>建立資料夾」]**
    1. 在「建立 **[!UICONTROL 資料夾]** 」對話框中，輸 **[!UICONTROL 入模板]**
-   1. 按一下「 **[!UICONTROL 確定」]**
+   1. Click **[!UICONTROL OK]**
    1. 重新選取 `/apps/an-scf-sandbox`
    1. 選擇「 **[!UICONTROL 全部保存」]**
+
    和任何編輯程式一樣，經常節省成本。 如果您在輸入資料時遇到問題，可能是因為您的登入逾時，或是您需要儲存先前的編輯。
 
 1. CRXDE Lite的瀏覽器窗格中的結構現在應該如下所示：
@@ -86,15 +91,16 @@ source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
 
 1. 若要在Classic UI中使用設計工具，請瀏 [覽至https://&lt;server>:&lt;port>/miscadmin](http://localhost:4502/miscadmin)。
 
-   注意：如果使用CRXDE Lite建立類型的節點 `cq:Page`，則Access Control和Replication不會設定為頁面的預設設定。
+   注意： 如果使用CRXDE Lite建立類型的節點 `cq:Page`，則Access Control和Replication不會設定為頁面的預設設定。
 
 1. 在檔案總管窗格中，選取「 **[!UICONTROL Designs]** 」檔案夾，然後按 **[!UICONTROL 一下「新增>新頁面」]**。
 
    輸入：
 
-   * 標題：SCF **沙盒**
-   * 名稱： **an-scf-沙盒**
+   * 標題： **SCF沙盒**
+   * 名稱： **an-scf-sandbox**
    * 選取 **設計頁面範本**
+
    Click **[!UICONTROL Create]**
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
@@ -111,4 +117,4 @@ source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
 
 儲存庫中的/content目錄是網站內容所在的位置。 /content下的路徑包含瀏覽器請求的URL路徑。
 
-*在建立* 頁面範本 [](initial-app.md#createthepagetemplate) ，做為初始應用程式的一部分後，就可以根據範本建立初始頁面內容……. [**⇒**](initial-app.md)
+*在建立* 頁面範本 [](initial-app.md#createthepagetemplate) ，做為初始應用程式的一部分後，就可以根據範本建立初始頁面內容……. [**‡**](initial-app.md)
