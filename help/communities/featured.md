@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 3%
 
 ---
 
@@ -60,9 +63,11 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
 在「設 **[!UICONTROL 定]** 」標籤下，識別要具備的內容：
 
-* **[!UICONTROL 顯示名]**&#x200B;稱精選內容清單的標題。 For example `Featured Questions` or `Featured Ideas`. 如果留 `Featured Content` 空，則預設為。
+* **[!UICONTROL 顯示名]**&#x200B;稱精選內容清單的標題。 例如 
+`Featured Questions` 或 `Featured Ideas`. 如果留 `Featured Content` 空，則預設為。
 
 * **[!UICONTROL 主要內容的位置]**
+
    *（必要）* ，瀏覽至包含可能是功能之內容的頁面（該頁面的元件必須設定為「允許功能內容」）。 例如， `/content/sites/engage/en/forum`
 
 * **[!UICONTROL 顯示限]**&#x200B;制要顯示的精選內容數目上限。 預設值為5。
