@@ -32,7 +32,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 1. 開啟「 [套件管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) 」，然後按一 **[!UICONTROL 下「上傳套件]** 」以上傳套件。
 1. 選擇軟體包，然後按一下 **[!UICONTROL 安裝]**。
 
-1. 若要下載原始碼封存檔，請在您的瀏 `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` 覽器中開啟。
+1. 若要下載原始碼封存，請在您的瀏 `https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip` 覽器中開啟。
 
    來源套件會下載在您的裝置上。
 
@@ -146,7 +146,7 @@ Microsoft建議您安裝受信任的授權機構核發的公共憑證，例如Ve
 1. 以滑鼠右鍵按一下「 **允許所有受信任的應用程式安裝**」。
 1. 按一 **下「編輯** 」並選 **取「啟用**」。
 
-1. 按一下 **確定**。
+1. 按一下&#x200B;**「確定」**。
 
 編輯Visual Studio生成的PowerShell指令碼，以阻止它獲取開發人員許可證。
 
