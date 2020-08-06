@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 2%
 
 ---
 
@@ -41,7 +44,7 @@ AEM的製作環境提供多種機制來組織和編輯您的內容。 提供的�
 
 ![](do-not-localize/sidekick-collapsed-2.png)
 
-或者，使用特 **定元件** 「編輯」對話方塊中的「說明」按鈕；這會顯示內容相關的說明。
+或者，使用特 **定元件** 「編輯」對話方塊中的「說明」按鈕； 這會顯示內容相關的說明。
 
 ## Sidekick {#sidekick}
 
@@ -154,7 +157,7 @@ AEM可讓您檢視哪些頁面已連結至您目前正在處理的頁面。
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **選擇**&#x200B;顯示參照……AEM會開啟「參考」視窗，並顯示哪些頁面參照所選頁面，包括其路徑。
+1. 選擇 **顯示參照……** AEM會開啟「參考」視窗，並顯示哪些頁面參照所選頁面，包括其路徑。
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -169,7 +172,7 @@ AEM可讓您檢視哪些頁面已連結至您目前正在處理的頁面。
 
 ## 稽核記錄 {#audit-log}
 
-您可 **以從側腳的「資** 訊 **** 」標籤存取「稽核記錄檔」。 它列出了當前頁面上最近採取的行動；例如：
+您可 **以從側腳的「資** 訊 **** 」標籤存取「稽核記錄檔」。 它列出了當前頁面上最近採取的行動； 例如：
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
