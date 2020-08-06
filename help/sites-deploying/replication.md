@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 6fe1c5c5-deb7-4405-82e4-23e0f90e2bd8
 translation-type: tm+mt
 source-git-commit: 19f6ea07e192294124d5251e31ead93deae57349
+workflow-type: tm+mt
+source-wordcount: '3588'
+ht-degree: 2%
 
 ---
 
@@ -35,12 +38,12 @@ source-git-commit: 19f6ea07e192294124d5251e31ead93deae57349
 
 複製（複製到發佈實例或調度程式）需執行以下幾個步驟：
 
-* 作者要求發佈（啟用）某些內容；這可以由手動請求或預先設定的自動觸發器啟動。
-* 請求會傳遞給相應的預設複製代理；一個環境可以有多個預設代理，這些代理將始終為此類操作選擇。
+* 作者要求發佈（啟用）某些內容； 這可以由手動請求或預先設定的自動觸發器啟動。
+* 請求會傳遞給相應的預設複製代理； 一個環境可以有多個預設代理，這些代理將始終為此類操作選擇。
 * 複製代理將內容「打包」並將其放入複製隊列。
 * 在「網站」索引標籤 [中，會針對個別頁面設定彩色狀態指標](/help/sites-authoring/publishing-pages.md#determining-publication-status) 。
-* 內容從隊列中提取，並使用配置的協定傳輸到發佈環境；通常為HTTP。
-* 發佈環境中的servlet接收請求並發佈接收的內容；預設servlet為 `http://localhost:4503/bin/receive`。
+* 內容從隊列中提取，並使用配置的協定傳輸到發佈環境； 通常為HTTP。
+* 發佈環境中的servlet接收請求並發佈接收的內容； 預設servlet為 `http://localhost:4503/bin/receive`。
 
 * 可以設定多個作者和發佈環境。
 
@@ -71,13 +74,14 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 >
 >預設為啟用 :
 >
->* 作者代理：預設代理（發佈）
+>* 作者代理： 預設代理（發佈）
 >
 >
 依預設有效停用（自AEM 6.1起）:
 >
->* 作者代理：反向複製代理(publish_reverse)
->* 發佈時的代理：反向複製（輸出盒）
+>* 作者代理： 反向複製代理(publish_reverse)
+>* 發佈時的代理： 反向複製（輸出盒）
+
 >
 >
 要檢查代理或隊列的狀態，請使用「工具」 **控制台** 。\
@@ -99,11 +103,11 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 此複製由作者環境執行，其操作方式為：
 
-* **預設代理（發佈）**&#x200B;此代理將內容複製到預設發佈例項。
+* **預設代理（發佈）**&#x200B;此代理將內容複製至預設發佈例項。
 
-   有關此（配置和日誌）的詳細資訊，可從作者環境的「工具」控制台訪問；或：
+   有關此（配置和日誌）的詳細資訊，可從作者環境的「工具」控制台訪問； 或：
 
-   `http://localhost:4502/etc/replication/agents.author/publish.html`.
+   `http://localhost:4502/etc/replication/agents.author/publish.html`。
 
 ### 複製代理——立即可用 {#replication-agents-out-of-the-box}
 
@@ -139,14 +143,14 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
    * **處理項目** 時為作用中。
    * **當佇列** 為空時，為空閒狀態。
-   * **當項目在佇列中** ，但無法處理時，就會封鎖；例如，當接收隊列被禁用時。
+   * **當項目在佇列中** ，但無法處理時，就會封鎖； 例如，當接收隊列被禁用時。
 
 * **序列化類型**
 
    序列化類型：
 
-   * **預設值**:設定是否要自動選擇代理。
-   * **Dispatcher Flush**:如果代理用於刷新調度程式快取，請選擇此選項。
+   * **預設值**: 設定是否要自動選擇代理。
+   * **Dispatcher Flush**: 如果代理用於刷新調度程式快取，請選擇此選項。
 
 * **重試延遲**
 
@@ -160,7 +164,8 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
    * 從作者環境收集和封裝內容
    * 在發佈環境上建立和寫入內容
-   將此欄位保留為空白，以使用系統使用者帳戶(sling中定義為管理員使用者的帳戶；預設為 `admin`)。
+
+   將此欄位保留為空白，以使用系統使用者帳戶(sling中定義為管理員使用者的帳戶； 預設為 `admin`)。
 
    >[!CAUTION]
    >
@@ -178,14 +183,15 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
    指定用於日誌消息的詳細程度。
 
-   * `Error`:僅記錄錯誤
-   * `Info`:將記錄錯誤、警告和其他資訊性消息
-   * `Debug`:消息中將會使用高級別的詳細資訊，主要用於調試目的
+   * `Error`: 僅記錄錯誤
+   * `Info`: 將記錄錯誤、警告和其他資訊性消息
+   * `Debug`: 消息中將會使用高級別的詳細資訊，主要用於調試目的
+
    預設: `Info`
 
 * **用於反向複寫**
 
-   指示此代理是否用於反向複製；從發佈傳回使用者輸入至作者環境。
+   指示此代理是否用於反向複製； 從發佈傳回使用者輸入至作者環境。
 
 * **別名更新**
 
@@ -201,6 +207,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
    * 預設代理可以複製到 `http://localhost:4503/bin/receive`
    * Dispatcher Flush代理可以複製到 `http://localhost:8000/dispatcher/invalidate.cache`
+
    此處指定的協定（HTTP或HTTPS）將決定傳輸方法。
 
    對於Dispatcher Flush代理，只有在使用基於路徑的虛擬主機條目來區分場時，才使用URI屬性，您使用此欄位來定位要失效的場。 例如，場#1的虛擬主機為，場#2 `www.mysite.com/path1/*` 的虛擬主機為 `www.mysite.com/path2/*`。 您可以使用的URL來 `/path1/invalidate.cache` 定位第一個群體， `/path2/invalidate.cache` 以及定位第二個群體。
@@ -280,10 +287,12 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
    * `CQ-Action:{action}`
    * `CQ-Handle:{path}`
    * `CQ-Path:{path}`
-   這些參數會在適當時用於指示刷新控制滑塊或路徑時要使用的操作。 子參數是動態的：
+
+   這些參數會在適當時用於指示刷新控制滑塊或路徑時使用的操作。 子參數是動態的：
 
    * `{action}` 表示複製操作
    * `{path}` 指示路徑
+
    它們被與請求相關的路徑／動作所取代，因此不需要「硬式編碼」:
 
    >[!NOTE]
@@ -306,7 +315,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 * **通訊協定版本**
 
-   協定版本；例如 `1.0` HTTP/1.0。
+   協定版本； 例如 `1.0` HTTP/1.0。
 
 #### 觸發器 {#triggers}
 
@@ -314,7 +323,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 * **忽略預設值**
 
-   如果選中此選項，則將代理從預設複製中排除；這表示如果內容作者發出複製操作，則不會使用它。
+   如果選中此選項，則將代理從預設複製中排除； 這表示如果內容作者發出複製操作，則不會使用它。
 
 * **於修改**
 
@@ -410,7 +419,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 1. 在AEM中 **開啟** 「工具」標籤。
 1. 在左 **面板中**，依次選 **擇「複製** 」和「作者上的代理」。
-1. **選擇**&#x200B;新建…….
+1. 選擇 **新建……**.
 1. 設定「 **標題** 」和「名 **稱」**，然後選 **擇「複製代理**」。
 1. 按一下 **建立** ，建立新代理。
 1. 連按兩下新代理項目以開啟設定面板。
@@ -424,9 +433,9 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
       * 將序列化 **類型保留** 為 `Default`。
    * 在「傳 **輸** 」標籤中：
 
-      * 輸入新發佈實例所需的URI;例如，
+      * 輸入新發佈實例所需的URI; 例如，
 
-         `http://localhost:4504/bin/receive`.
+         `http://localhost:4504/bin/receive`。
 
       * 輸入用於複製的站點特定用戶帳戶。
       * 您可以視需要設定其他參數。
@@ -445,8 +454,9 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 >這可結合使用代理用戶 [ID](#settings) ，以選擇不同的內容，以複製到各個發佈環境。 針對每個發佈環境：
 >
 >1. 配置複製代理以複製到該發佈環境。
->1. 設定使用者帳戶；具有讀取將複製到該特定發佈環境的內容所需的訪問權限。
+>1. 設定使用者帳戶； 具有讀取將複製到該特定發佈環境的內容所需的訪問權限。
 >1. 將用戶帳戶指 **定為複製代理的代理用戶Id** 。
+
 >
 
 
@@ -469,12 +479,13 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
       * （可選）選擇「 **別名更新** 」，以啟用對Dispatcher的別名或虛名路徑失效請求。
    * 在「傳 **輸** 」標籤中：
 
-      * 輸入新發佈實例所需的URI;例如，
+      * 輸入新發佈實例所需的URI; 例如，
 
-         `http://localhost:80/dispatcher/invalidate.cache`.
+         `http://localhost:80/dispatcher/invalidate.cache`。
 
       * 輸入用於複製的站點特定用戶帳戶。
       * 您可以視需要設定其他參數。
+
    對於Dispatcher Flush代理，只有在使用基於路徑的虛擬主機條目來區分場時，才使用URI屬性，您使用此欄位來定位要失效的場。 例如，場#1的虛擬主機為，場#2 `www.mysite.com/path1/*` 的虛擬主機為 `www.mysite.com/path2/*`。 您可以使用的URL來 `/path1/invalidate.cache` 定位第一個群體， `/path2/invalidate.cache` 以及定位第二個群體。
 
    >[!NOTE]
@@ -484,7 +495,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 1. 按一下 **確定** ，保存更改。
 1. 返回到「工 **具** 」頁籤，您可以從此處激活 **** Dispatcher Flush **agent(****** Agent on publish Agent)。
 
-Dispatcher Flush **複製代理** (Dispatcher Flush Replication Agent)在作者上不活動。 您可以使用相同的URI，在發佈環境中存取相同的頁面；例如， `http://localhost:4503/etc/replication/agents.publish/flush.html`。
+Dispatcher Flush **複製代理** (Dispatcher Flush Replication Agent)在作者上不活動。 您可以使用相同的URI，在發佈環境中存取相同的頁面； 例如， `http://localhost:4503/etc/replication/agents.publish/flush.html`。
 
 ### 控制對複製代理的訪問 {#controlling-access-to-replication-agents}
 
@@ -508,7 +519,7 @@ Dispatcher Flush **複製代理** (Dispatcher Flush Replication Agent)在作者�
 * `agents.publish`
 * `treeactivation`
 
-這兩個保 `agents` 留有關相應環境的配置資訊，並且僅在該環境運行時處於活動狀態。 例如， `agents.publish` 將僅用於發佈環境。 下列螢幕擷取顯示作者環境中的發佈代理，如AEM WCM所附：
+這兩個保 `agents` 存有關相應環境的配置資訊，並且僅在該環境運行時處於活動狀態。 例如， `agents.publish` 將僅用於發佈環境。 下列螢幕擷取顯示作者環境中的發佈代理，如AEM WCM所附：
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -518,7 +529,7 @@ Dispatcher Flush **複製代理** (Dispatcher Flush Replication Agent)在作者�
 
 1. 存取AEM中 **的** 「工具」索引標籤。
 1. 按一下 **複製**。
-1. 連按兩下適當環境（左窗格或右窗格）的代理連結；例如， **作者上的代理**。
+1. 連按兩下適當環境（左窗格或右窗格）的代理連結； 例如， **作者上的代理**。
 
    生成的窗口顯示了作者環境的所有複製代理的概述，包括其目標和狀態。
 
@@ -532,10 +543,11 @@ Dispatcher Flush **複製代理** (Dispatcher Flush Replication Agent)在作者�
    * 查看任何複製的目標。
    * 查看複製隊列當前是否處於活動狀態（已啟用）。
    * 瞭解佇列中是否有任何項目。
-   * **刷新** 或 **清除** ，更新隊列條目的顯示；這可協助您查看項目進入並離開佇列。
+   * **刷新** 或 **清除** ，更新隊列條目的顯示； 這可協助您查看項目進入並離開佇列。
    * **查看日誌** ，以訪問複製代理所執行的任何操作的日誌。
    * **測試與目標實例的連接** 。
    * **如有需要** ，請對任何佇列項目強制重試。
+
    >[!CAUTION]
    >
    >請勿在發佈實例的「反向複製輸出」框中使用「測試連接」連結。
