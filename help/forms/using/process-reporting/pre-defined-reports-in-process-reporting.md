@@ -62,7 +62,7 @@ AEM Forms Process Reporting隨附下列現 *成可用的報表* :
 
 ## 流程持續時間報告 {#process-duration-report-br}
 
-「流程持續時間」報表會依據每個例項已執行的天數，顯示表單流程的例項數。
+「流程持續時間」報表按每個實例已運行的天數顯示表單流程的實例數。
 
 ### 要執行「進程持續時間」報告，請執行以下操作： {#to-execute-a-process-duration-report-br}
 
