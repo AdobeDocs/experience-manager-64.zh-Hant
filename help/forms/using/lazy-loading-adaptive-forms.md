@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: d570ead9-8f9c-4668-8b23-e8984d9b25e9
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '996'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 * **控制欄位可見性的寫入規則** Forms包含某些欄位和區段，這些欄位和區段不適用於所有使用者和所有條件。 表單作者和開發人員會使用可見度或顯示隱藏規則，根據使用者輸入來控制其可見度。 例如，在表單的「就業狀態」欄位中選擇「失業」的用戶不會看到「辦公室地址」欄位。 有關編寫規則的詳細資訊，請參 [閱使用規則編輯器](/help/forms/using/rule-editor.md)。
 
-   您可以在緩慢載入的片段中運用可見性規則，以便條件欄位只在需要時才顯示。 此外，在緩慢載入片段的可見性運算式中，將條件欄位標示為全域，以參照它。
+   您可以在緩慢載入的片段中運用可見性規則，以便條件欄位只在需要時才顯示。 此外，在延遲載入片段的可見性運算式中，將條件欄位標示為全域以參照它。
 
 ## 設定延遲載入 {#configuring-lazy-loading}
 
@@ -62,7 +65,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 使用延遲載入時，應注意的一些限制、建議和重要點如下：
 
-* 建議使用XSD架構的最適化表單，而非XFA架構的最適化表單，以設定大型表單上的延遲載入。 在基於XFA的自適應表單中由於延遲載入而導致的效能增益相對小於基於XSD的自適應表單中的增益。
+* 建議使用XSD架構的最適化表單，而非XFA架構的最適化表單，以設定大型表單上的延遲載入。 在基於XFA的自適應表單中由於延遲載入實現而帶來的效能增益相對而言小於基於XSD的自適應表單中的增益。
 * 請勿在回應式格線版面中設定片段的延遲載入。 這會導致效能降低。
 * 建議不要在載入最適化表單時，在第一個面板中設定片段的延遲載入。
 * 片段階層中支援最多2個層級的延遲載入。
@@ -79,5 +82,5 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 * 請勿轉送延遲面板內欄位的參考值，而不考慮欄位是否在片段間全域標籤。
 * 使用面板重設功能，使用下列按一下運算式重設面板上所有可見的項目。
 
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;:&quot;navigablePanel&quot;})。resetData()
+   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})。resetData()
 
