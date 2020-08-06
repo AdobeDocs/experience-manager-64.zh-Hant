@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 0%
 
 ---
 
@@ -33,11 +36,11 @@ Adobe Experience Manager(AEM)可讓您建立簡單易用的調適性表單，為
 
 **行動版面** ：控制行動裝置上表單的導覽。 如果裝置寬度為768像素或以上，則版面會視為行動版面，並針對行動裝置最佳化。
 
-**工具欄佈局** ：控制表單中工具欄或面板工具欄中的「操作」按鈕的位置。
+**工具欄佈局** ：控制表單中工具欄或面板工具欄中「操作」按鈕的位置。
 
 所有這些面板版面都定義在下列位置：
 
-`/libs/fd/af/layouts`.
+`/libs/fd/af/layouts`。
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ Adobe Experience Manager(AEM)可讓您建立簡單易用的調適性表單，為
 
 「面板」版面可在位 `/libs/fd/af/layouts/panel` 置使用。
 
-![](assets/layouts.png) 最適化表單圖的根面板的面板版&#x200B;****&#x200B;面：最適 *化表單中的面板版面清單*
+![最適化表單圖的根面板的面板版](assets/layouts.png)**面：** *最適化表單中的面板版面清單*
 
 ### Responsive - everything on one page without navigation {#responsive-everything-on-one-page-without-navigation-br}
 
@@ -61,11 +64,11 @@ Adobe Experience Manager(AEM)可讓您建立簡單易用的調適性表單，為
 
 ![使用回應式版面的表單，如小螢幕上所見](assets/responsive_layout_seen_on_small_screen.png)
 
-**** 圖：使 *用回應式版面的表單，如小螢幕所見*
+**圖：** *使用回應式版面的表單，如小螢幕上所見*
 
 ![使用回應式版面的表單，如大螢幕上所見](assets/responsive_layout_seen_on_large_screen.png)
 
-**** 圖：使 *用回應式版面的表單，如大螢幕所見*
+**圖：** *使用回應式版面的表單，如大螢幕上所見*
 
 ### 精靈——一次顯示一個步驟的多步驟表單 {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
@@ -79,11 +82,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![精靈版面中多步驟表單的步驟完成運算式](assets/layout-sidebar.png)
 
-**** 圖：向 *導佈局中多步驟表單的步驟完成表達式*
+**圖：** *精靈版面中多步驟表單的步驟完成運算式*
 
 ![使用精靈版面的表單](assets/wizard-layout.png)
 
-**** 圖：使用 *精靈的表單*
+**圖：** *使用精靈的表單*
 
 ### 手風琴設計的版面 {#layout-for-accordion-design}
 
@@ -93,7 +96,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![在可調式表單中使用Accordion版面配置的可重複面板](assets/repeatable_panels_using_accordion_layout.png)
 
-**** 圖：使用 *Accordion版面建立的可重複面板*
+**圖：** *使用Accordion版面建立的可重複面板*
 
 ### 標籤式版面——標籤會出現在左側 {#tabbed-layout-tabs-appear-on-the-left}
 
@@ -101,7 +104,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![在標籤式版面中，標籤會出現在左側](assets/tabbed_layout_left.png)
 
-**** 圖：顯 *示在面板左側的標籤*
+**圖：** *顯示在面板左側的標籤*
 
 ### 標籤式版面——標籤會出現在頂端 {#tabbed-layout-tabs-appear-on-the-top}
 
@@ -109,7 +112,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![在最適化表單中的標籤式版面配置，其頂端有標籤](assets/tabbed_layout_top.png)
 
-**** 圖：顯 *示在面板頂部的頁籤*
+**圖：** *顯示在面板頂部的標籤*
 
 ## 行動版面 {#mobile-layouts}
 
@@ -121,7 +124,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![最適化表單中的行動版面清單](assets/mobile-navigation.png)
 
-**** 圖：最適 *化表單中的行動版面清單*
+**圖：** *最適化表單中的行動版面清單*
 
 使用行動版面時，可點選 ![aem6forms_form_menu圖示來使用表單選單，以存取各種表單面板](assets/aem6forms_form_menu.png) 。
 
@@ -131,7 +134,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![在表格標題中包含面板標題的行動版面](assets/mobile_layout_with.png)
 
-**** 圖：在表 *單標題中包含面板標題的行動版面*
+**圖：** *在表格標題中包含面板標題的行動版面*
 
 ### 在表格標題中不含面板標題的版面 {#layout-without-panel-titles-in-the-form-header}
 
@@ -139,7 +142,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![在表格標題中不含面板標題的行動版面](assets/mobile_layout_without.png)
 
-**** 圖：在表 *格標題中不含面板標題的行動版面*
+**圖：** *在表格標題中不含面板標題的行動版面*
 
 ## 工具列版面 {#toolbar-layouts}
 
@@ -147,7 +150,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![以最適化表單控制按鈕版面的工具列版面清單](assets/toolbar-layouts.png)
 
-**** 圖：最適 *化表單中的工具列版面清單*
+**圖：** *最適化表單中的工具列版面清單*
 
 工具列的版面可在位 `/libs/fd/af/layouts/toolbar` 置使用。 最適化表單預設提供下列工具列版面。
 
@@ -159,7 +162,7 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![工具列的預設檢視](assets/toolbar_layout_default.png)
 
-**** 圖：工具 *列的預設檢視*
+**圖：** *工具列的預設檢視*
 
 ### 工具列的行動固定版面 {#mobile-fixed-layout-for-toolbar}
 
@@ -171,5 +174,5 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![工具列的行動固定版面](assets/toolbar_layout_mobile_fixed.png)
 
-**** 圖：工具 *列的行動固定版面*
+**圖：** *工具列的行動固定版面*
 
