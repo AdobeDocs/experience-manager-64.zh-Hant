@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1842'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +82,7 @@ Web應用程式使用的XML資料檔案已從「資料」檔案夾移至 `C:\Ado
 
 ### 建立網頁專案 {#creating-a-web-project}
 
-要建立包含可調用Forms服務的Java Servlet的Web應用程式，第一步是建立新Web項目。 本檔案所基於的Java IDE是Eclipse 3.3。使用Eclipse IDE，建立Web項目並將所需的JAR檔案添加到項目中。 最後，將名為 *index.html的HTML頁面* ，以及Java servlet新增至您的專案。
+要建立包含可調用Forms服務的Java Servlet的Web應用程式，第一步是建立新Web項目。 本檔案所基於的Java IDE是Eclipse 3.3。 使用Eclipse IDE，建立Web項目並將所需的JAR檔案添加到項目中。 最後，將名為 *index.html的HTML頁面* ，以及Java servlet新增至您的專案。
 
 以下清單指定必須添加到Web項目的JAR檔案：
 
@@ -88,7 +91,7 @@ Web應用程式使用的XML資料檔案已從「資料」檔案夾移至 `C:\Ado
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
 
-如需這些JAR檔案的位置，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如需這些JAR檔案的位置，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **若要建立Web專案：**
 
@@ -120,7 +123,7 @@ Web應用程式使用的XML資料檔案已從「資料」檔案夾移至 `C:\Ado
 
 ### 建立Servlet的Java應用程式邏輯 {#creating-java-application-logic-for-the-servlet}
 
-您可以在Java servlet內建立調用Forms服務的Java應用程式邏輯。 下列程式碼顯示 `RenderFormFragment` Java servlet的語法：
+您可以在Java servlet內建立調用Forms服務的Java應用程式邏輯。 下列程式碼顯示 `RenderFormFragment` Java Servlet的語法：
 
 ```as3
      public class RenderFormFragment extends HttpServlet implements Servlet { 
@@ -139,7 +142,7 @@ Web應用程式使用的XML資料檔案已從「資料」檔案夾移至 `C:\Ado
 
 若要使用Forms服務API根據片段來呈現表單，請執行下列工作：
 
-1. 在Java專案的類別路徑中包含用戶端JAR檔案，例如adobe-forms-client.jar。 如需這些檔案位置的詳細資訊，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+1. 在Java專案的類別路徑中包含用戶端JAR檔案，例如adobe-forms-client.jar。 如需這些檔案位置的詳細資訊，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 1. 擷取從HTML表單提交的選項按鈕值，並指定使用美國或加拿大資料。 如果提交American，請建立 `com.adobe.idp.Document` 儲存Purchase Order US.xml中 *資料的檔案*。 同樣地，如果是加拿大人，請建 `com.adobe.idp.Document` 立儲存 *Purchase Order Canada.xml檔案中的資料* 。
 1. 建立包 `ServiceClientFactory` 含連接屬性的對象。 (請參 [閱設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。)
 1. 使用其 `FormsServiceClient` 建構函式並傳遞物件，以建立物 `ServiceClientFactory` 件。
@@ -154,6 +157,7 @@ Web應用程式使用的XML資料檔案已從「資料」檔案夾移至 `C:\Ado
    * 存 `PDFFormRenderSpec` 儲運行時選項的對象。 如需詳細資訊，請參 [閱「AEM Forms API參考」](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 包 `URLSpec` 含Forms服務根據片段呈現表單所需URI值的物件。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
+
    該方 `renderPDFForm` 法返回包 `FormsResult` 含必須寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 通過調 `com.adobe.idp.Document` 用對象的方法 `FormsResult` 建立對 `getOutputContent` 像。
