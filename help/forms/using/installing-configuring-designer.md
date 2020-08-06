@@ -12,6 +12,9 @@ discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ Designer提供獨立安裝程式，也隨附於WorkBench。 如果您使用Desig
 1. 連按兩下setup.exe以啟動Designer安裝程式。
 1. 繼續，並在「個人化」畫面上提供您的詳細資訊和序號。
 1. 如果您接受授權合約，請按一下「下一步」繼續。
-1. （可選）如果您想在您選擇的位置安裝Designer，請變更預設安裝路徑。 按一下「下一步」。
+1. （可選）如果您想在您選擇的位置安裝Designer，請變更預設安裝路徑。 按一下下一步。
 1. 按一下「上一步」以變更任何偏好設定。 要安裝設計器，請按一下「安裝」。
 1. 安裝完成時，按一下「完成」。
 
