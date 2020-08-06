@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +60,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 1. 若要新增樣式和行為，請在/etc節點中建立用戶端程式庫。
 
-   例如，在/etc/af-field-layout-clientlib位置，建立節點client-library。 新增包含值af.field.errorOnRight和style.less檔案的類別屬性，並包含下列程式碼：
+   例如，在/etc/af-field-layout-clientlib位置，建立節點client-library。 新增包含值af.field.errorOnRight和style.less檔案的類別屬性，並包含以下程式碼：
 
    ```css
    .widgetErrorWrapper {
