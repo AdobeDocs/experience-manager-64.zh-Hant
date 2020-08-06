@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
@@ -136,7 +139,7 @@ SQL指令碼是從AEM資料庫取得：
 
 如果指令碼中更改了資料庫名稱，請務必在 [JDBC配置中更改該名稱](#configurejdbcconnections)。
 
-#### 步驟1:開啟SQL檔案 {#step-open-sql-file}
+#### 步驟1: 開啟SQL檔案 {#step-open-sql-file}
 
 在MySQL工作台中
 
@@ -145,7 +148,7 @@ SQL指令碼是從AEM資料庫取得：
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
-#### 步驟2:執行SQL指令碼 {#step-execute-sql-script}
+#### 步驟2: 執行SQL指令碼 {#step-execute-sql-script}
 
 在步驟1中開啟之檔案的「工作台」視窗中，選取要 `lightening (flash) icon` 執行指令碼的檔案。
 
@@ -195,8 +198,8 @@ Day Commons JDBC連接池的OSGi **配置** ，配置MySQL JDBC驅動程式。
 
       如果沒有為MySQL設定口令，請清除此欄位，
 
-      else enter configured password for the mySQL Username
-   * **[!UICONTROL 資料來源名稱]**:為 [MySQL連接輸入的名稱](#new-connection-settings)，例如&#39;communities&#39;
+      else enter configured password for the MySQL Username
+   * **[!UICONTROL 資料來源名稱]**: 為 [MySQL連接輸入的名稱](#new-connection-settings)，例如&#39;communities&#39;
 
 * 選擇保 **[!UICONTROL 存]**
 
