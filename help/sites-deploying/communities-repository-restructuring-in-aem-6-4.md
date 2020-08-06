@@ -10,6 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 3%
 
 ---
 
@@ -51,7 +54,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>如果要移至「」下的新路徑，則需要手動<code>/apps/settings</code>移轉。 您可以使用Granite Configuration manager執行遷移。</p> <p>通過將屬性設定為" <code>mergeList</code> "節 <code>true</code> 點並添加子節<code>/libs/settings/community/subscriptions</code><code>nt:unstructured</code> 點，可以執行遷移。</p> </td> 
+   <td><p>如果想要移至「」下的新路徑，則需要手動移<code>/apps/settings</code>轉。 您可以使用Granite Configuration Manager執行遷移。</p> <p>通過將屬性設定為" <code>mergeList</code> "節 <code>true</code> 點並添加子節<code>/libs/settings/community/subscriptions</code><code>nt:unstructured</code> 點，可以執行遷移。</p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
@@ -74,7 +77,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>如果要移至「」下的新路徑，則需要手動<code>/apps/settings</code>移轉。 您可以使用Granite Configuration manager執行遷移。</p> <p>通過將屬性設定為" <code>mergeList</code> "節 <code>true</code> 點並添加子節<code>/libs/settings/community/subscriptions</code><code>nt:unstructured</code> 點，可以執行遷移。</p> </td> 
+   <td><p>如果想要移至「」下的新路徑，則需要手動移<code>/apps/settings</code>轉。 您可以使用Granite Configuration Manager執行遷移。</p> <p>通過將屬性設定為" <code>mergeList</code> "節 <code>true</code> 點並添加子節<code>/libs/settings/community/subscriptions</code><code>nt:unstructured</code> 點，可以執行遷移。</p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
@@ -184,11 +187,11 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
     <ol> 
      <li>將「上一個位置」中的現有配置遷移到「新位置」。
       <ol> 
-       <li>透過「工具&gt;雲端服務&gt; facebook社交登入設定」的AEM編寫UI, <strong>手動重新建立新的Facebook社交登入設定</strong>。<br /> 或 <br /> </li> 
+       <li>透過「工具&gt;雲端服務&gt; Facebook社交登入設定」的AEM編寫UI, <strong>手動重新建立新的Facebook社交登入設定</strong>。<br /> 或 <br /> </li> 
        <li>將任何新的Facebook雲端設定從「上一個位置」複製至「適當的新位置」下方 <code>/conf/global or /conf/&lt;tenant&gt;</code>。</li> 
       </ol> </li> 
      <li>將屬性設為「新位置」中的絕對路徑，以更新任何AEM Communities網站根目錄 <code>[cq:Page]/jcr:content@cq:conf</code> 來參考新的Facebook Social登入設定。</li> 
-     <li>將舊版Facebook Connect cloud服務與任何更新為參考新位置的AEM Communities網站根目錄取消關聯。</li> 
+     <li>將舊版Facebook Connect Cloud服務與任何更新為參考新位置的AEM Communities網站根目錄取消關聯。</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -244,7 +247,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
        <li>將任何新的Pinterest雲端設定從「上一個位置」複製至下方的適當新位置 <code>/conf/global or /conf/&lt;tenant&gt;</code>。</li> 
       </ol> </li> 
      <li>更新任何AEM Communities網站根目錄，以參考新Pinterest Social登入設定，方法是將屬性設 <code>[cq:Page]/jcr:content@cq:conf</code> 定為「新位置」中的絕對路徑。</li> 
-     <li>將舊版Pinterest Connect cloud服務與任何更新以參考新位置的AEM Communities網站根目錄取消關聯。</li> 
+     <li>將舊版Pinterest Connect Cloud服務與任何更新以參考新位置的AEM Communities網站根目錄取消關聯。</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -278,7 +281,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
       <ol> 
        <li>如果未 <code>cq:conf</code> 設定，則將直接從站點根節點上屬性'<code>scoringRules</code>'的給定路徑讀取計分規則，例如： <code>/content/we-retail/us/en/community/jcr:content</code></li> 
       </ol> </li> 
-    </ol> <p>清除：刪除資源 <code>/etc/community/scoring</code></p> </td> 
+    </ol> <p>清除： 刪除資源 <code>/etc/community/scoring</code></p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
@@ -306,11 +309,11 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
     <ol> 
      <li>將「上一個位置」中的現有配置遷移到「新位置」。
       <ol> 
-       <li>透過「工具&gt;雲端服務&gt; twitter社交登入設定」的AEM編寫UI, <strong>手動重新建立新的Twitter社交登入設定</strong>。<br /> 或 <br /> </li> 
+       <li>透過「工具&gt;雲端服務&gt; Twitter社交登入設定」的AEM編寫UI, <strong>手動重新建立新的Twitter社交登入設定</strong>。<br /> 或 <br /> </li> 
        <li>將任何新的Twitter雲端設定從「上一個位置」複製至「適當的新位置」下方 <code>/conf/global or /conf/&lt;tenant&gt;</code>。</li> 
       </ol> </li> 
      <li>將屬性設為「新位置」中的絕對路徑，以更新任何AEM Communities網站根目錄 <code>[cq:Page]/jcr:content@cq:conf</code> 來參考新的Twitter Social登入設定。</li> 
-     <li>將舊版Twitter Connect cloud服務與任何更新為參考新位置的AEM Communities網站根目錄取消關聯。</li> 
+     <li>將舊版Twitter Connect Cloud服務與任何更新為參考新位置的AEM Communities網站根目錄取消關聯。</li> 
     </ol> </td> 
   </tr>
   <tr>
