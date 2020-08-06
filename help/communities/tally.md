@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9941ba90-3d40-4c90-bca8-5db49603cbfa
 translation-type: tm+mt
 source-git-commit: ad744e91e8f94d7fefb939209ba186e3b18496b7
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Tally是抽象類別，提供一套標準方法，可收集會員對特定產品
 
 可通過擴展抽象計數類來建立自定義計數元件。
 
-[贊](essentials-liking.md) (Syok)是對數字的實施，是表達正面意見的簡單形式。
+[贊](essentials-liking.md) ，是一種簡單的表達正面意見的方式，
 
 [投票](essentials-voting.md) ，是一種簡單的表達正面或負面意見的表決方式。
 
