@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 translation-type: tm+mt
 source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +30,7 @@ source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
    * **fileSizeLimit** -> value_in_mb(say 5)（預設為2 MB）
    * **buttonText** ->快顯視窗的按鈕文字（預設為「附加」）
    * **accept** -> file types to accept（&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot;，預設）
+
    >[!NOTE]
    >
    >在Microsoft Internet Explorer 9中，使用者可附加超過指定限制的檔案。 這是已知問題。
