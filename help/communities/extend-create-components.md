@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 83c4f18a-d7d6-4090-88c7-41a9075153b5
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 1%
 
 ---
 
@@ -52,11 +55,11 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
    * **[!UICONTROL 「建立>元件……」]**
 
-      * **標籤**:注 *釋*
-      * **標題**:替 *代注釋*
-      * **說明**:替 *代注釋樣式*
+      * **標籤**: *留言*
+      * **標題**: *替代注釋*
+      * **說明**: *替代注釋樣式*
       * **超類型**: *social/commons/components/hbs/comments*
-      * **群組**:自 *訂*
+      * **群組**: *自訂*
    * 選擇下 **[!UICONTROL 一步]**
    * 選擇下 **[!UICONTROL 一步]**
    * 選擇下 **[!UICONTROL 一步]**
@@ -73,7 +76,7 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 ### 建立子注釋元件 {#create-the-child-comment-component}
 
-這些指示將 **Group** (組 `.hidden` )設定為，因為頁面中應僅包含父元件。
+這些指示將 **Group** ( `.hidden` 群組)設為僅應包含在頁面中的父元件。
 
 刪除自動建立的JSP檔案是因為將改用預設的HBS檔案。
 
@@ -82,9 +85,9 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
    * 選擇「 **[!UICONTROL 建立」>「元件……」。]**
 
-      * **標籤**:評 *論*
-      * **標題**:替 *代注釋*
-      * **說明**:替代 *注釋樣式*
+      * **標籤**: *評論*
+      * **標題**: *替代注釋*
+      * **說明**: *替代注釋樣式*
       * **超類型**: *social/commons/components/hbs/comments/comments*
       * **群組**: `*.hidden*`
    * 選擇下 **[!UICONTROL 一步]**
@@ -150,15 +153,15 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
    * **類型**: `cq:ClientLibraryFolder`
    * 「添加到屬 **[!UICONTROL 性]** 」頁籤：
 
-      * **名稱** Type `categories` **Value** Zhing `String`****`cq.social.author.hbs.comments``Multi`
-      * **名稱** Type `dependencies` **Value** Zhing `String`****`cq.social.scf``Multi`
+      * **名稱**`categories`**類型**`String`**值** `cq.social.author.hbs.comments` `Multi`
+      * **名稱**`dependencies`**類型**`String`**值** `cq.social.scf` `Multi`
 
 * 選擇「 **[!UICONTROL 全部保存」]**
 * 在選 `/apps/custom/components/comments/clientlib`取s節點後，建立3個檔案：
 
    * **名稱**: `css.txt`
    * **名稱**: `js.txt`
-   * **名稱**:customcommentsystem.js
+   * **名稱**: customcommentsystem.js
 
 * 輸入&#39;customcommentsystem.js&#39;作為 `js.txt`
 * 選擇「 **[!UICONTROL 全部保存」]**
@@ -201,7 +204,7 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
    * 選擇 **[!UICONTROL 工具>部署>複製]**
    * 選取 `Activate Tree`
-   * 設定 `Start Path`:to `/apps/custom`
+   * 設定 `Start Path`: to `/apps/custom`
    * 取消選中 `Only Modified`
    * 「選擇」 `Activate`按鈕
 
