@@ -4,6 +4,9 @@ description: 本文說明如何大量匯入和匯出中繼資料。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 9%
 
 ---
 
