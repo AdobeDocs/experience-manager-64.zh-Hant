@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '348'
+ht-degree: 0%
 
 ---
 
@@ -42,9 +45,10 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
       1. 請注意遺失的路徑和檔案名稱。
       1. 在屬性頁面的右上角附近，點選「關 **[!UICONTROL 閉」]**。
+
    上傳檔案後，會返回「檢視屬 **[!UICONTROL 性>相依性]** 」頁面。 新上傳的資產現在會正確列為參考的資產。
 
-   * **忽略相依性**。
+   * **忽略相依項**。
 
       如果不再需要遺失的相依性，請在 **[!UICONTROL Referenced Asset]** （參考資產）欄下方，在遺失檔案左側的文字欄位中，輸入 `n/a` ，讓AEM 3D忽略檔案。
 
