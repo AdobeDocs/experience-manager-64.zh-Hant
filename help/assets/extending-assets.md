@@ -4,6 +4,9 @@ description: 瞭解如何自訂和擴充資產共用與資產編輯器，為使�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
@@ -27,9 +30,9 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 可自訂資產編輯器外觀和感覺的下列方面：
 
-* 標誌：您可以將您自己組織的標誌新增至介面。
-* 顏色和字型：您可以變更介面中使用的顏色和字型。
-* HTML程式碼：若要更徹底地自訂，您可以變更定義介面的基礎HTML程式碼。
+* 標誌： 您可以將您自己組織的標誌新增至介面。
+* 顏色和字型： 您可以變更介面中使用的顏色和字型。
+* HTML程式碼： 若要更徹底地自訂，您可以變更定義介面的基礎HTML程式碼。
 
 ## 自訂轉譯 {#customizing-renditions}
 
