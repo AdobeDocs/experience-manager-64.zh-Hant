@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '626'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -61,6 +64,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
    * 表 `BLOB` 示DDX文檔的對象。
    * 通常 `null` 儲存PDF文 `Map` 檔的對象的值。
    * 指定 `AssemblerOptionSpec` 運行時選項的對象。
+
    該方 `invokeDDX` 法返回一 `AssemblerResult` 個包含指定DDX文檔是否有效的資訊的對象。
 
 1. 將驗證結果保存到日誌檔案中。
@@ -70,6 +74,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
    * 建立儲存物件內容的位元組 `BLOB` 陣列。 取得物件欄位的值，以填入 `BLOB` 位元組陣 `MTOM` 列。
    * 通過調 `System.IO.BinaryWriter` 用其建構子並傳遞對象來建立 `System.IO.FileStream` 對象。
    * 調用物件的方法並傳遞位元組陣列，將位元組 `System.IO.BinaryWriter` 的內容 `Write` 寫入PDF檔案。
+
    >[!NOTE]
    >
    >如果DDX文檔無效，則拋 `OperationException` 出一個。 在catch語句中，可以獲取對象成 `OperationException` 員的值 `jobLog` 。
