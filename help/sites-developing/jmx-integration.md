@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df8cfde3-543d-4150-9822-9be763908bd7
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '1687'
+ht-degree: 0%
 
 ---
 
@@ -45,26 +48,26 @@ source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
 
 將註解新增至管理介面，以指定MBean中繼資料。 JMX主控台會針對所部署的每個實作類別顯示資訊。 下列註解可供使用(如需完整資訊，請參 [閱com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
-* **** 說明：提供MBean類或方法的說明。 在類聲明中使用時，該說明將顯示在MBean的JMX控制台頁面上。 在方法上使用時，說明會顯示為對應屬性或操作的暫留文字。
-* **** 影響：方法的影響。 有效參數值是 [javax.management.MBeanOperationInfo定義的欄位](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html)。
+* **說明：** 提供MBean類或方法的說明。 在類聲明中使用時，該說明將顯示在MBean的JMX控制台頁面上。 在方法上使用時，說明會顯示為對應屬性或操作的暫留文字。
+* **影響：** 方法的影響。 有效參數值是 [javax.management.MBeanOperationInfo定義的欄位](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html)。
 
-* **** 名稱：指定操作參數要顯示的名稱。 使用此注釋覆蓋介面中使用的方法參數的實際名稱。
-* **** OpenTypeInfo:指定在JMX控制台中用於表示複合資料或表格資料的類。 用於Open MBean
-* **** TabularTypeInfo:用於注釋用於表示表格資料的類。
+* **名稱：** 指定操作參數要顯示的名稱。 使用此注釋覆蓋介面中使用的方法參數的實際名稱。
+* **OpenTypeInfo:** 指定在JMX控制台中用於表示複合資料或表格資料的類。 用於Open MBean
+* **TabularTypeInfo:** 用於注釋用於表示表格資料的類。
 
 **類別**
 
 提供的類用於建立使用添加到其介面的注釋的動態MBean:
 
-* **** AnnotatedStandardMBean:javax.management.StandardMBean類的子類，它自動為JMX控制台提供注釋元資料。
-* **** OpenAnnotatedStandardMBean:AnnotatedStandardMBean類的子類，用於建立使用OpenTypeInfo注釋的Open Mbean。
+* **AnnotatedStandardMBean:** javax.management.StandardMBean類的子類，它自動為JMX控制台提供注釋元資料。
+* **OpenAnnotatedStandardMBean:** AnnotatedStandardMBean類的子類，用於建立使用OpenTypeInfo注釋的Open Mbean。
 
 ### 開發MBean {#developing-mbeans}
 
 通常，您的MBean是您要管理的OSGi服務的反映。 在Felix平台上，您建立MBean的方式與在其他Java伺服器平台上部署的方式相同。 主要區別是，您可以使用注釋來指定MBean資訊：
 
-* 管理介面：使用getter、setter和is方法定義屬性。 使用任何其他公用方法定義操作。 使用注釋為BeanInfo對象提供元資料。
-* MBean類：建置管理介面。 擴充AnnotatedStandardMBean類別，以便處理介面上的註解。
+* 管理介面： 使用getter、setter和is方法定義屬性。 使用任何其他公用方法定義操作。 使用注釋為BeanInfo對象提供元資料。
+* MBean類： 建置管理介面。 擴充AnnotatedStandardMBean類別，以便處理介面上的註解。
 
 以下示例MBean提供了有關CRX儲存庫的資訊。 此介面使用「說明」註解來提供JMX主控台的資訊。
 
@@ -136,9 +139,9 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 除了OSGi相關元資料外，您還必須提供Aries JMX白板模組在MBean伺服器中註冊MBean所需的元資料：
 
-* **** DynamicMBean介面的名稱：聲明MBean服務實現 `javax.management.DynamicMBea`n介面。 此聲明通知Aries JMX白板模組該服務是MBean服務。
+* **DynamicMBean介面的名稱：** 聲明MBean服務實現 `javax.management.DynamicMBea`n介面。 此聲明通知Aries JMX白板模組該服務是MBean服務。
 
-* **** MBean域和密鑰屬性：在Felix上，您會將此資訊提供為MBean的OSGi服務的屬性。 這與您通常在對象中向MBean伺服器提供的資訊相 `javax.management.ObjectName` 同。
+* **MBean域和密鑰屬性：** 在Felix上，您會將此資訊提供為MBean的OSGi服務的屬性。 這與您通常在對象中向MBean伺服器提供的資訊相 `javax.management.ObjectName` 同。
 
 當您的MBean反映單一服務時，只需要MBean服務的單個實例。 在本例中，如果您使用Felix SCR Maven增效模組，則可以使用MBean實作類別上的Apache Felix Service Component Runtime(SCR)註解來指定JMX相關元資料。 要實例化多個MBean實例，可以建立另一個類，用於執行MBean的OSGi服務的註冊。 在此例中，JMX相關中繼資料會在執行時期產生。
 
@@ -188,11 +191,11 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 要管理受管理服務的多個實例，請建立相應MBean服務的多個實例。 此外，在啟動或停止受管理的實例時，應建立或刪除MBean服務實例。 您可以建立MBean管理器類，在運行時實例化MBean服務，並管理服務生命週期。
 
-使用BundleContext將MBean註冊為OSGi服務。 在Dictionary物件中加入JMX相關資訊，以做為方法的引數 `BundleContext.registerService` 使用。
+使用BundleContext將MBean註冊為OSGi服務。 在Dictionary物件中加入您用作方法引數的JMX相關資 `BundleContext.registerService` 訊。
 
 在以下代碼示例中，ExampleMBean服務是以寫程式方式註冊的。 componentContext物件是ComponentContext，可提供BundleContext的存取權。
 
-#### 程式碼片段：程式化MBean服務註冊 {#code-snippet-programmatic-mbean-service-registration}
+#### 程式碼片段： 程式化MBean服務註冊 {#code-snippet-programmatic-mbean-service-registration}
 
 ```java
 Dictionary mbeanProps = new Hashtable();
@@ -206,14 +209,14 @@ ServiceRegistration serviceregistration =
 
 當服務配置儲存在儲存庫中時， MBean服務管理器很有用。 管理器可以檢索服務資訊，並使用它來配置和建立相應的MBean。 管理器類還可以監聽儲存庫更改事件並相應地更新MBean服務。
 
-## 範例：使用JMX監控工作流模型 {#example-monitoring-workflow-models-using-jmx}
+## 範例： 使用JMX監控工作流模型 {#example-monitoring-workflow-models-using-jmx}
 
 此示例中的MBean提供了有關儲存在儲存庫中的CQ5工作流模型的資訊。 MBean管理器類基於儲存在儲存庫中的工作流模型建立MBean，並在運行時註冊其OSGi服務。 此示例由包含以下成員的單個束組成：
 
-* WorkflowMBean:管理介面。
-* WorkflowMBeanImpl:MBean實施類。
-* WorkflowMBeanManager:MBean管理器類的介面。
-* WorkflowMBeanManagerImpl:MBean管理器的實施類。
+* WorkflowMBean: 管理介面。
+* WorkflowMBeanImpl: MBean實施類。
+* WorkflowMBeanManager: MBean管理器類的介面。
+* WorkflowMBeanManagerImpl: MBean管理器的實施類。
 
 >[!NOTE]
 >
@@ -280,9 +283,9 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 
 WorkflowMBeanManager服務包含用於建立WorkflowMBean服務的元件激活方法。 服務實施包括以下方法：
 
-* 啟用：該組分活化劑。 建立用於讀取WorkflowModel配置節點的JCR會話。 儲存模型配置的根節點在靜態欄位中定義。 配置節點的名稱也在靜態欄位中定義。 此方法調用獲取節點模型路徑並建立模型WorkflowMBeans的其他方法。
-* getModelIds:遍歷根節點下的儲存庫並檢索每個模型節點的路徑。
-* makeMBean:使用模型路徑建立WorkflowModel對象，為其建立WorkflowMBean，並註冊其OSGi服務。
+* 啟用： 該組分活化劑。 建立用於讀取WorkflowModel配置節點的JCR會話。 儲存模型配置的根節點在靜態欄位中定義。 配置節點的名稱也在靜態欄位中定義。 此方法調用獲取節點模型路徑並建立模型WorkflowMBeans的其他方法。
+* getModelIds: 遍歷根節點下的儲存庫並檢索每個模型節點的路徑。
+* makeMBean: 使用模型路徑建立WorkflowModel對象，為其建立WorkflowMBean，並註冊其OSGi服務。
 
 >[!NOTE]
 >
@@ -430,11 +433,11 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 
 **外掛程式:**
 
-* Apache Maven Compiler Plugin:從原始碼編譯Java類。
-* Apache Felix Maven Bundle Plugin:建立整合與資訊清單
-* Apache Felix Maven SCR Plugin:建立元件描述符檔案並配置service-component manifest標題。
+* Apache Maven Compiler Plugin: 從原始碼編譯Java類。
+* Apache Felix Maven Bundle Plugin: 建立整合與資訊清單
+* Apache Felix Maven SCR Plugin: 建立元件描述符檔案並配置service-component manifest標題。
 
-**** 注意：在編寫時，mavenscr外掛程式與Eclipse的m2e外掛程式不相容。 (請參 [閱Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170))。若要使用Eclipse IDE，請安裝Maven並使用命令列介面來執行組建。
+**注意：** 在編寫時，mavenscr外掛程式與Eclipse的m2e外掛程式不相容。 (請參 [閱Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170))。 若要使用Eclipse IDE，請安裝Maven並使用命令列介面來執行組建。
 
 #### 示例POM檔案 {#example-pom-file}
 
