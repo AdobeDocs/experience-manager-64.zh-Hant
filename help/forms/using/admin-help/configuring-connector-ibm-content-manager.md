@@ -1,6 +1,6 @@
 ---
-title: 為IBM Content manager配置連接器
-seo-title: 為IBM Content manager配置連接器
+title: 為IBM Content Manager配置連接器
+seo-title: 為IBM Content Manager配置連接器
 description: 設定Connector for IBM Content Manager，以啟用AEM表單與IBM Content Manager之間的通訊。
 seo-description: 設定Connector for IBM Content Manager，以啟用AEM表單與IBM Content Manager之間的通訊。
 uuid: 3d55169d-93e3-4d4e-b18b-2a3394e1de3b
@@ -11,21 +11,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 translation-type: tm+mt
 source-git-commit: 6a2455cb377a68254a5c58c6627c59716d284144
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
-# 為IBM Content manager配置連接器{#configuring-connector-for-ibm-content-manager}
+# 為IBM Content Manager配置連接器{#configuring-connector-for-ibm-content-manager}
 
-IBM Content manager的Connector可讓AEM表單與IBM Content Manager進行通訊。 如需其他背景資訊，請參閱服務參考中的「ECM連接器」 [(Connectors for ECM)](https://www.adobe.com/go/learn_aemforms_services_63)。
+IBM Content Manager的Connector可讓AEM表單與IBM Content Manager進行通訊。 如需其他背景資訊，請參閱服務參考中的「ECM連接器」 [(Connectors for ECM)](https://www.adobe.com/go/learn_aemforms_services_63)。
 
-## 配置IBM Content manager連接 {#configure-the-ibm-content-manager-connection}
+## 配置IBM Content Manager連接 {#configure-the-ibm-content-manager-connection}
 
 1. 在管理控制台中，按一下「服務> Connector for IBM Content Manager」。
-1. 在「資料儲存名稱」框中，輸入要連接到的IBM Content manager資料儲存的名稱。 如果資料庫是本地的，請輸入資料庫的名稱。 如果資料庫是遠程的，請輸入其別名。
-1. 在「用戶名」框中，輸入將連接到IBM Content manager資料儲存庫的用戶的用戶ID。
+1. 在「資料儲存名稱」框中，輸入要連接到的IBM Content Manager資料儲存的名稱。 如果資料庫是本地的，請輸入資料庫的名稱。 如果資料庫是遠程的，請輸入其別名。
+1. 在「用戶名」框中，輸入將連接到IBM Content Manager資料儲存庫的用戶的用戶ID。
 1. 在「密碼」方塊中，輸入使用者的密碼。
-1. （可選）在「別名連接字串」框中，輸入其他連接參數。 在大多數情況下，此方塊應該是空的。 如需詳細資訊，請參閱IBM檔案。
+1. （可選）在「別名連接字串」框中，輸入其他連接參數。 在大多數情況下，此方塊應為空。 如需詳細資訊，請參閱IBM檔案。
 1. 按一下「儲存」。
 
 ## 服務設定驗證 {#validation-of-service-settings}
