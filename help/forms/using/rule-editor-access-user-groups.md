@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
 
 您可能有不同類型的使用者，具備不同的技巧，可搭配使用Adaptive Forms。 雖然專家使用者可能擁有使用指令碼和複雜規則的適當知識，但是可能有基本層級使用者需要只使用最適化表單的版面配置和基本屬性。
 
-AEM Forms可讓您根據使用者的角色或函式，限制規則編輯器的存取權。 在Adaptive Forms Configuration service設定中，您可以指定可以查 [看和訪問規則編輯器](/help/sites-administering/security.md) 的用戶組。
+AEM Forms可讓您根據使用者的角色或函式，限制規則編輯器的存取權。 在Adaptive Forms Configuration Service設定中，您可以指定可以查 [看和訪問規則編輯器](/help/sites-administering/security.md) 的用戶組。
 
 ## 指定可存取規則編輯器的使用者群組 {#specify-user-groups-that-can-access-rule-editor}
 
