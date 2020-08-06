@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '843'
+ht-degree: 0%
 
 ---
 
@@ -71,14 +74,14 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 >
 >如果MongoDB是在 *AEM後啟動* ，請重 **新啟動所有** AEM **** 例項，以便正確連線至MongoDB。
 
-### 示範製作選項：設定MongoDB複製副本集 {#demo-production-option-setup-mongodb-replica-set}
+### 示範製作選項： 設定MongoDB複製副本集 {#demo-production-option-setup-mongodb-replica-set}
 
 以下命令是在localhost上設定具有3個節點的複製副本集的示例：
 
 * bin/mongod —port 27017 —dbpath資料—replSet rs0&amp;
 * bin/mongo
 
-   * cfg = {&quot;_id&quot;:&quot;rs0&quot;,&quot;version&quot;:1,&quot;members&quot;: [{&quot;_id&quot;:0,「主機」:&quot;127.0.0.1:27017&quot;}]}
+   * cfg = {&quot;_id&quot;: &quot;rs0&quot;,&quot;version&quot;: 1,&quot;members&quot;: [{&quot;_id&quot;: 0,「主機」: &quot;127.0.0.1:27017&quot;}]}
    * rs.initiate(cfg)
 
 * bin/mongod —port 27018 —dbpath data1 —replSet rs0&amp;
@@ -107,7 +110,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ### 為AEM Communities設定Solr {#configure-solr-for-aem-communities}
 
-若要設定MSRP的Solr系列以進行示範，需做兩項決定（請選取主要檔案的連結以取得詳細資訊）:
+若要設定MSRP的Solr系列以進行示範，需要做兩項決定（如需詳細資訊，請選取主要檔案的連結）:
 
 1. 在獨立或 [SolrCloud模式下執行Solr](msrp.md#solrcloudmode)
 1. 安裝 [標準](msrp.md#installingstandardmls) 或進 [階多語言搜](msrp.md#installingadvancedmls) 尋(MLS)
@@ -121,13 +124,13 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 * cd to &lt;solrinstall>/example
 * java -jar start.jar
 
-這將使用預設埠8983啟動Solr HTTP伺服器。 您可以瀏覽至Solr主控台，以取得Solr主控台進行測試。
+這將使用預設埠8983啟動Solr HTTP伺服器。 您可以瀏覽至Solr Console以取得Solr主控台進行測試。
 
 * 預設Solr控制台： [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
->如果Solr Console不可用，請檢查&lt;solrinstall>/example/logs下的日誌。 查看SOLR是否嘗試綁定到無法解析的特定主機名(如「user-macbook-pro」)。
+>如果Solr Console不可用，請檢查&lt;solrinstall>/example/logs下的日誌。 查看SOLR是否嘗試綁定到無法解析的特定主機名(如 「user-macbook-pro」)。
 如果是，請使用此主機名的新條目（如127.0.0.1 user-macbook-pro）更新etc/hosts檔案，Solr將正常啟動。
 
 ### SolrCloud {#solrcloud}
@@ -158,7 +161,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
-   注意：雖然作者在asipath下有JCR節 *點* ，但這些節點是用於SCF框架的。 實際的UGC不在JCR中，它在MongoDB中。
+   注意： 雖然作者在asipath下有JCR節 *點* ，但這些節點是用於SCF框架的。 實際的UGC不在JCR中，它在MongoDB中。
 
 1. 在mongodb社群>系列> **[!UICONTROL 內容中檢視UGC]**
 
@@ -170,6 +173,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
    * 要選 `core selector` 擇的用戶 `collection1`
    * 選取 `Query`
    * 選取 `Execute Query`
+
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## 疑難排解 {#troubleshooting}
@@ -181,6 +185,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 1. 請確定MSRP已設定為預設提供者：
 
    * 在所有作者和發佈AEM例項上，請重新造訪「儲 [存設定」主控台](srp-config.md)
+
    或檢查AEM資料庫：
 
    * 在JCR中，如 [果/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
