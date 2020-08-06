@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '627'
+ht-degree: 0%
 
 ---
 
@@ -64,7 +67,7 @@ PDFG網路印表機可讓使用者從支援列印的任何應用程式產生PDF�
 
 1. 在「PDFG Network Printer Installation（PDFG網路打印機安裝）」下，按一下該連結。 當提示輸入使用者帳戶資訊時，請指定您在步驟1中用來登入的使用者名稱和密碼。 出現一條消息，指出打印機已成功安裝。
 
-   ***注意&#x200B;**:如果用戶密碼更改，則用戶需要在其電腦上重新安裝PDFG網路打印機。 無法從管理控制台更新密碼。*
+   ***注意&#x200B;**: 如果用戶密碼更改，則用戶需要在其電腦上重新安裝PDFG網路打印機。 無法從管理控制台更新密碼。*
 
 1. 按一下「確定」。
 
