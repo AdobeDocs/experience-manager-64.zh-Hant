@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 translation-type: tm+mt
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 0%
 
 ---
 
@@ -36,16 +39,17 @@ AEM Forms使用者介面可讓您將中繼資料新增至任何表格。 自訂�
 
    新增&quot;fpContentType&quot;屬性。 根據要為其定義自定義模板的元件，為屬性指定適當的值。
 
-   * Search &amp; Lister元件：&quot;/libs/fd/fp/formTemplate&quot;
+   * Search &amp; Lister元件： &quot;/libs/fd/fp/formTemplate&quot;
    * 草稿和提交元件：
 
-      * 草稿部分：/libs/fd/fp/draftsTemplate
-      * 提交部分：/libs/fd/fp/submissionsTemplate
-   * 連結元件：/libs/fd/fp/linkTemplate
+      * 草稿部分： /libs/fd/fp/draftsTemplate
+      * 提交部分： /libs/fd/fp/submissionsTemplate
+   * 連結元件： /libs/fd/fp/linkTemplate
+
    新增您要在選取版面範本時顯示的標題。
 
-   *注意：標題可以與您建立的sling:Folder節點名稱不同。 *
-   *下圖描述了Search &amp; Lister元件的配置。* 建 ![立sling:Folder](assets/1-3.png)
+   *注意： 標題可以與您建立的sling:Folder節點名稱不同。 *
+   *下圖描述了Search &amp; Lister元件的配置。* ![建立sling:Folder](assets/1-3.png)
 
 1. 在此資料夾中建立檔案template.html，做為自訂範本。
 1. 撰寫自訂範本，並使用自訂中繼資料，如下所述。
@@ -84,7 +88,7 @@ Forms Portal提供位置持有人顯示自訂/OOTB中繼資料的語法。 預�
 
 每個預留位置都有專屬的OOTB中繼資料集。 若要在表單上的特定位置顯示自訂中繼資料，請在該 **位置新增$metadata_prop屬性** 。
 
-*在此範例中，中繼資料屬性用於多個例項。 例如，它用於&#x200B;**描述**、**name、**formUrl **、**htmlStyle Url、****************pdfUrlStylePdf、PdfStylePdf和LathPath中，以規定的方式使用。*
+*在此範例中，中繼資料屬性用於多個例項。 例如，它用於&#x200B;**描述**、**name、**formUrl **、**htmlStyle Url、****************pdfUrlStylePdf、PdfStylePdf和LathPath中，以規定方式使用。*
 
 ## 立即可用的中繼資料 {#out-of-the-box-metadata}
 
@@ -92,52 +96,52 @@ Forms Portal提供位置持有人顯示自訂/OOTB中繼資料的語法。 預�
 
 ### Search &amp; Lister元件 {#search-amp-lister-component}
 
-* **** 標題：表單標題
-* **名稱**:表單名稱（大多與標題相同）
-* **說明**:表單說明
-* **formUrl**:將表單轉譯為HTML的URL
-* **pdfUrl**:將表單轉譯為PDF的URL
-* **assetType**:資產的類型。 有效值包 **括表單**、 **PDF表單**、 **列印表單**&#x200B;和最適 **化表單**
-* **htmlStyle** &amp; **pdfStyle**:HTML和PDF圖示的顯示樣式，分別用於轉譯。 有效值為&#x200B;**&quot;__FP_display_none**&quot;或 **空白**
+* **標題：** 表單標題
+* **名稱**: 表單名稱（大多與標題相同）
+* **說明**: 表單說明
+* **formUrl**: 將表單轉譯為HTML的URL
+* **pdfUrl**: 將表單轉譯為PDF的URL
+* **assetType**: 資產的類型。 有效值包 **括表單**、 **PDF表單**、 **列印表單**&#x200B;和最適 **化表單**
+* **htmlStyle** &amp; **pdfStyle**: HTML和PDF圖示的顯示樣式，分別用於轉譯。 有效值為&#x200B;**&quot;__FP_display_none**&quot;或 **空白**
 
-   *注意：請記得在自訂樣式表中使用__FP_display_none類*
+   *注意： 請記得在自訂樣式表中使用__FP_display_none類*
 
-* **downloadUrl**:下載資產的URL。
+* **downloadUrl**: 下載資產的URL。
 
 在使用者介面上支援本地化、排序和使用設定屬性（僅限搜尋與清單）:
 
-1. **本地化支援**:若要本地化任何靜態文字，請使 **用屬性${localize-***YOUR_TEXT***}** ，並讓本地化值可用（如果尚未存在）。
+1. **本地化支援**: 若要本地化任何靜態文字，請使 **用屬性${localize-***YOUR_TEXT***}** ，並讓本地化值可用（如果尚未存在）。
 
    *在所討論的範例中，屬性${localize-Apply}和${localize-Download}會用來當地化Apply和Download文字。*
 
-1. **支援排序**:按一下HTML元素以排序搜尋結果。 若要在表版面中實作排序，請在特定表格標題上新增「data-sortKey」屬性。 此外，請將其值新增為您要排序的中繼資料。
+1. **支援排序**: 按一下HTML元素以排序搜尋結果。 若要在表版面中實作排序，請在特定表格標題上新增「data-sortKey」屬性。 此外，請將其值新增為您要排序的中繼資料。
 
    例如，對於格線檢視中的「標題」標題，「data-sortKey」標題的值是「title」。 按一下標題，以排序特定欄中的值。
 
-1. **使用配置屬性**:Search &amp; Lister元件有數種可在使用者介面上使用的組態。 例如，若要顯示透過編輯對話方塊儲存的HTML ToolTip文字，請使 **用${config-htmlLinkText}屬性。**&#x200B;同樣地，對於PDF工具提示文字，請使用&#x200B;**${config-pdfLinkText}屬性** 。
+1. **使用配置屬性**: Search &amp; Lister元件有數種可在使用者介面上使用的組態。 例如，若要顯示透過編輯對話方塊儲存的HTML ToolTip文字，請使 **用${config-htmlLinkText}屬性。**&#x200B;同樣地，對於PDF工具提示文字，請使用&#x200B;**${config-pdfLinkText}屬性** 。
 
 ### 連結元件 {#link-component}
 
-* **** 標題：表單標題
-* **formUrl**:將表單轉譯為HTML的URL
-* **目標**:連結的Target屬性。 有效值為&quot;_blank&quot;和&quot;_self&quot;。
-* **linkText**:連結標題
+* **標題：** 表單標題
+* **formUrl**: 將表單轉譯為HTML的URL
+* **目標**: 連結的Target屬性。 有效值為&quot;_blank&quot;和&quot;_self&quot;。
+* **linkText**: 連結標題
 
 ### 草稿與提交元件 {#drafts-amp-submissions-component}
 
-* **路徑**:草稿／提交元資料節點的路徑。 將它與。HTML副檔名搭配使用，做為URL以開啟草稿或提交。
-* **contextPath**:AEM例項的內容路徑
-* **firstLetter**:最適化表單標題的首字母（大寫），已儲存為草稿或已提交。
-* **formName**:最適化表單的標題，已儲存為草稿或已提交。
-* **draftID**:列出的草稿的ID（僅用於「草稿」部分的模板）。
-* **submitID**:列出的提交ID（僅用於「提交」部分的模板）。
-* **狀態**:已提交表單的狀態。 （僅在「提交」區段的範本中使用）。
-* **說明**:與草稿或提交相關的最適化表單說明。
-* **diffTime**:當前時間與草稿上次保存操作之間的差異。 或者，目前時間與上次提交動作之間的差異。
-* **iconClass**:用於顯示草稿／提交的第一個字母的CSS類。 Forms Portal包含下列類別，提供各種彩色背景。
-* **擁有者**:建立草稿／提交的用戶。
-* **今天**:以DD:MM:YYYY格式建立草稿或提交的日期。
-* **TimeNow**:以HH:MM:SS 24小時格式建立草稿或提交的時間
+* **路徑**: 草稿／提交元資料節點的路徑。 將它與。HTML副檔名搭配使用，做為URL以開啟草稿或提交。
+* **contextPath**: AEM例項的內容路徑
+* **firstLetter**: 最適化表單標題的首字母（大寫），已儲存為草稿或已提交。
+* **formName**: 最適化表單的標題，已儲存為草稿或已提交。
+* **draftID**: 列出的草稿的ID（僅用於「草稿」部分的模板）。
+* **submitID**: 列出的提交ID（僅用於「提交」部分的模板）。
+* **狀態**: 已提交表單的狀態。 （僅在「提交」區段的範本中使用）。
+* **說明**: 與草稿或提交相關的最適化表單說明。
+* **diffTime**: 當前時間與草稿上次保存操作之間的差異。 或者，目前時間與上次提交動作之間的差異。
+* **iconClass**: 用於顯示草稿／提交的第一個字母的CSS類。 Forms Portal包含下列類別，提供各種彩色背景。
+* **擁有者**: 建立草稿／提交的用戶。
+* **今天**: 以DD:MM:YYYY格式建立草稿或提交的日期。
+* **TimeNow**: 以HH:MM:SS 24小時格式建立草稿或提交的時間
 
 *注意:*
 
@@ -149,15 +153,15 @@ Forms Portal提供位置持有人顯示自訂/OOTB中繼資料的語法。 預�
 
 **A**. 容器元素
 
-**** B.具有固定階層的「路徑」中繼資料，以取得每個表單所儲存的縮圖。
+**B.** 具有固定階層的「路徑」中繼資料，以取得每個表單所儲存的縮圖。
 
 **C.** Data-repeatable屬性，用於每個表單的模板部分
 
-**** D.若要本地化&quot;Apply&quot;字串
+**D.** 若要本地化&quot;Apply&quot;字串
 
-**** E.使用設定屬性pdfLinkText
+**E.** 使用設定屬性pdfLinkText
 
-**** F.使用「pdfUrl」中繼資料
+**F.** 使用「pdfUrl」中繼資料
 
 ## 秘訣、訣竅和已知問題 {#tips-tricks-and-known-issues}
 
