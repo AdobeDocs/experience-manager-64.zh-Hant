@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '1381'
+ht-degree: 2%
 
 ---
 
@@ -35,7 +38,7 @@ Correponse Management解決方案可讓您將自訂動作新增至「管理資�
 * JavaScript
 * Java
 
-## 方案：將命令新增至字母清單使用者介面，以下載字母的平面PDF版本 {#addcommandtoletters}
+## 方案： 將命令新增至字母清單使用者介面，以下載字母的平面PDF版本 {#addcommandtoletters}
 
 以下步驟將「下載平面PDF」命令新增至字母的資產清單檢視，讓您的使用者下載所選字母的平面PDF。 使用這些步驟搭配適當的程式碼和參數，您可以為不同的資產新增一些其他功能，例如資料字典或文字。
 
@@ -60,30 +63,31 @@ Correponse Management解決方案可讓您將自訂動作新增至「管理資�
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **[!UICONTROL 路徑：]** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **** 位置：/apps/
+      **[!UICONTROL 位置：]** /apps/
 
-      **** 匹配節點類型：已選取
+      **[!UICONTROL 匹配節點類型：]** 已選取
 
       ![覆蓋節點](assets/2_createnodedownloadflatpdf.png)
 
-   1. 按一下 **[!UICONTROL 確定]**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**[!UICONTROL 「確定」]**。資料夾結構會建立在應用程式資料夾中。
 
       按一下「 **[!UICONTROL 全部儲存]**」。
 
-1. 在新建立的項目資料夾下，為特定資產中的自訂按鈕／動作新增節點(範例：downloadFlatPDF)，使用下列步驟：
+1. 在新建立的項目資料夾下，為特定資產中的自訂按鈕／動作新增節點(範例： downloadFlatPDF)，使用下列步驟：
 
    1. 按一下右鍵項目文 **[!UICONTROL 件夾]** ，然後選擇「 **[!UICONTROL 建立]** 」 **[!UICONTROL >「]**&#x200B;建立節點」。
 
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **[!UICONTROL 定」]**:
 
-      **** 名稱：downloadFlatPDF（或您要提供給此屬性的名稱）
+      **[!UICONTROL 名稱：]** downloadFlatPDF（或您要提供給此屬性的名稱）
 
-      **** 類型：nt：非結構化
+      **[!UICONTROL 類型：]** nt：非結構化
 
    1. 按一下您建立的新節點（此處為downloadFlatPDF）。 CRX顯示節點的屬性。
    1. 將下列屬性新增至節點（這裡downloadFlatPDF），然後按一下「全 **[!UICONTROL 部儲存]**:
+
    <table> 
     <tbody> 
     <tr> 
@@ -99,7 +103,7 @@ Correponse Management解決方案可讓您將自訂動作新增至「管理資�
     <tr> 
     <td>foundation-collection-action</td> 
     <td>字串</td> 
-    <td><p>{"target":"。cq-manageasset-admin-childpages", "activeSelectionCount":"single","type":"LETTER"}<br /><br /> ActiveSelectionCount <br /><strong></strong> 可以是單個或多個，以允許選擇執行自定義操作的單個或多個資產。</p> <p><strong>類型</strong> 可以是下列項目的一或多個（逗號分隔多個項目）:字母、文字、清單、條件、資料字典</p> </td> 
+    <td><p>{"target": "。cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> ActiveSelectionCount <br /><br /><strong></strong> 可以是單個或多個，以允許選擇執行自定義操作的單個或多個資產。</p> <p><strong>類型</strong> 可以是下列項目的一或多個（逗號分隔多個項目）: 字母、文字、清單、條件、資料字典</p> </td> 
     </tr> 
     <tr> 
     <td>圖示</td> 
@@ -136,19 +140,19 @@ Correponse Management解決方案可讓您將自訂動作新增至「管理資�
 
 1. 在應用程式檔案夾中，使用下列步驟建立名為js的檔案夾，其路徑／結構類似於管理資料夾中的items檔案夾：
 
-   1. 以滑鼠右鍵按一 **[!UICONTROL 下下列路徑]** ，然後選取「覆 **[!UICONTROL 蓋節點」]**:&quot;
+   1. 以滑鼠右鍵按一 **[!UICONTROL 下下列路徑]** ，然後選取「覆 **[!UICONTROL 蓋節點」]**: &quot;
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **[!UICONTROL 路徑：]** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** 位置：/apps/
+      **[!UICONTROL 位置：]** /apps/
 
-      **** 匹配節點類型：已選取
+      **[!UICONTROL 匹配節點類型：]** 已選取
 
-   1. 按一下 **[!UICONTROL 確定]**。 資料夾結構會建立在應用程式資料夾中。 按一下「 **[!UICONTROL 全部儲存]**」。
+   1. 按一下&#x200B;**[!UICONTROL 「確定」]**。資料夾結構會建立在應用程式資料夾中。 按一下「 **[!UICONTROL 全部儲存]**」。
 
 1. 在js資料夾中，使用下列步驟建立名為formaction.js的檔案，其中包含按鈕動作處理的程式碼：
 
@@ -232,25 +236,25 @@ Correponse Management解決方案可讓您將自訂動作新增至「管理資�
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **[!UICONTROL 路徑：]** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** 位置：/apps/
+      **[!UICONTROL 位置：]** /apps/
 
-      **** 匹配節點類型：已選取
+      **[!UICONTROL 匹配節點類型：]** 已選取
 
-   1. 按一下 **[!UICONTROL 確定]**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**[!UICONTROL 「確定」]**。資料夾結構會建立在應用程式資料夾中。
 
    1. 按一下「 **[!UICONTROL 全部儲存]**」。
 
-1. 在新建立的項目節點下，為特定資產中的自訂按鈕／操作添加節點(示例：letterpdfdownloader)，使用下列步驟：
+1. 在新建立的項目節點下，為特定資產中的自訂按鈕／操作添加節點(示例： letterpdfdownloader)，使用下列步驟：
 
    1. 按一下右鍵項目資料夾，然後選擇「 **[!UICONTROL 建立」>「建立節點]**」。
 
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **[!UICONTROL 定」]**:
 
-      **** 名稱：letterpdfdownloader（或您要為此屬性指定的名稱）必須是唯一的。 如果您在此處使用不同的名稱，也請在formaction.js檔案的ACTION_URL變數中指定相同的名稱。)
+      **[!UICONTROL 名稱：]** letterpdfdownloader（或您要為此屬性指定的名稱）必須是唯一的。 如果您在此處使用不同的名稱，也請在formaction.js檔案的ACTION_URL變數中指定相同的名稱。)
 
-      **** 類型：nt：非結構化
+      **[!UICONTROL 類型：]** nt：非結構化
 
    1. 按一下您建立的新節點（此處為downloadFlatPDF）。 CRX顯示節點的屬性。
 
@@ -352,9 +356,9 @@ Correponse Management解決方案可讓您將自訂動作新增至「管理資�
 1. 按一 **[!UICONTROL 下「選取]** 」，然後按一下字母以選取它。
 1. 選取 **[!UICONTROL 更多]** > &lt;下載平面PDF>（使用本文中的指示建立的自訂功能）。 將顯示「以PDF格式下載信函」對話框。
 
-   功能表項目名稱、功能和alt-text是根據在方案中建立的自 [訂：將命令新增至字母清單使用者介面，以下載字母的平面PDF版本。](#addcommandtoletters)
+   功能表項目名稱、功能和alt-text是根據在方案中建立的自 [訂： 將命令新增至字母清單使用者介面，以下載字母的平面PDF版本。](#addcommandtoletters)
 
-   ![自訂功能：下載平面PDF](assets/5_downloadflatpdf.png)
+   ![自訂功能： 下載平面PDF](assets/5_downloadflatpdf.png)
 
 1. 在「以PDF格式下載信函」對話方塊中，選取您要在PDF中填入資料的相關XML。
 
