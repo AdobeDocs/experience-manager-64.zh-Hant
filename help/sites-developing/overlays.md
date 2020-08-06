@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
 
 # 覆蓋{#overlays}
 
-AEM（以及之前的CQ）長期以來都採用覆蓋的原則，讓您擴充和自訂控制台 [](/help/sites-developing/customizing-consoles-touch.md) ，以及其他功能(例如 [頁面製作](/help/sites-developing/customizing-page-authoring-touch.md))。
+AEM（以及之前的CQ）長期以來都採用覆蓋原則，讓您擴充和自訂控制台 [](/help/sites-developing/customizing-consoles-touch.md) ，以及其他功能(例如 [頁面製作](/help/sites-developing/customizing-page-authoring-touch.md))。
 
 Overlay是可在許多內容中使用的詞語。 在此內容（擴充AEM）中，覆蓋表示您會取用預先定義的功能，並將您自己的定義加入該功能（以自訂標準功能）。
 
@@ -68,7 +71,7 @@ Overlays是許多變更的建議方法，例如 [設定控制台](/help/sites-de
    * 套用修補程式
    * 安裝功能套件
 
-* 他們將您的變更集中在一個位置；讓您更輕鬆地追蹤、移轉、備份和／或除錯變更。
+* 他們將您的變更集中在一個位置； 讓您更輕鬆地追蹤、移轉、備份和／或除錯變更。
 
 ## 設定搜尋路徑 {#configuring-the-search-paths}
 
@@ -79,7 +82,7 @@ Overlays是許多變更的建議方法，例如 [設定控制台](/help/sites-de
    * 搜索路徑的自頂向下順序指示其各自的優先順序。
    * 在標準安裝中，主要預設值 `/apps`為 `/libs` - `/apps` 因此，內容的優先順序比 `/libs` (即覆蓋 ** )高。
 
-* 兩個服務用戶需要對指令碼儲存位置的JCR：讀取訪問。 這些使用者包括：components-search-service(由com.day.cq.wcm.coreto存取／快取元件使用)和sling-scripting（由org.apache.sling.servlets.resolver用來尋找servlet）。
+* 兩個服務用戶需要對指令碼儲存位置的JCR：讀取訪問。 這些使用者包括： components-search-service(由com.day.cq.wcm.coreto存取／快取元件使用)和sling-scripting（由org.apache.sling.servlets.resolver用來尋找servlet）。
 * 還必鬚根據指令碼的放置位置配置以下配置（在此示例中，位於/etc、/libs或/apps下）。
 
    ```
