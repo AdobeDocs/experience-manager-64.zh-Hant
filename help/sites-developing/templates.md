@@ -12,6 +12,9 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 範本用於AEM的不同點：
 
-* 建 [立頁面時，需要選取範本](#templates-pages);這將用作新頁面的基礎。 範本會定義結果頁面的結構、任何初始內容 [及可使用](/help/sites-authoring/default-components.md) 的元件（設計屬性）。
+* 建 [立頁面時，需要選取範本](#templates-pages); 這將用作新頁面的基礎。 範本會定義結果頁面的結構、任何初始內容 [及可使用](/help/sites-authoring/default-components.md) 的元件（設計屬性）。
 
 * 建立 [內容片段時，您也需要選取範本](#templates-content-fragments)。 此範本會定義結構、初始元素和變化。
 
@@ -53,7 +56,7 @@ AEM現在提供兩種基本範本類型，以建立頁面：
    * 初始內容
    * 內容策略
 
-* 建立新頁面後，頁面與範本之間會維持動態連線；這表示對範本結構所做的變更將反映在該範本所建立的任何頁面上（不會反映對初始內容的變更）。
+* 建立新頁面後，頁面與範本之間會維持動態連線； 這表示對範本結構所做的變更將反映在該範本所建立的任何頁面上（不會反映對初始內容的變更）。
 * 使用內容原則（從範本編輯器編輯）來保存設計屬性（不在頁面編輯器中使用設計模式）。
 * 儲存於 `/conf`
 * 如需詳 [細資訊](/help/sites-developing/page-templates-editable.md) ，請參閱可編輯範本。
