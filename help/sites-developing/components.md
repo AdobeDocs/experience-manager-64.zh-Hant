@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 translation-type: tm+mt
 source-git-commit: b6a5b222bf6629dc14a16531972a2a50e2b5ed37
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 5%
 
 ---
 
@@ -62,7 +65,7 @@ AEM隨附多種現 [成可用的元件](/help/sites-authoring/default-components
 
 目前提供兩組Adobe提供的AEM元件：
 
-* [核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [基礎元件](/help/sites-authoring/default-components-foundation.md)
 
 **核心元件** (Core Components)隨AEM 6.3推出，提供有彈性且功能豐富的製作功能。 We. [Retail參考網站](/help/sites-developing/we-retail.md) ，說明如何使用核心元件，並代表元件開發的目前最佳實務。
@@ -71,7 +74,7 @@ AEM隨附多種現 [成可用的元件](/help/sites-authoring/default-components
 
 >[!NOTE]
 >
->[核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) (Core Components)代表元件設計與開發的目前最佳實務，並做為參考實作。
+>[核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) (Core Components)代表元件設計與開發的目前最佳實務，並做為參考實作。
 >
 >[AEM Meduration Tools](modernization-tools.md) （AEM現代化工具）可協助移轉至核心元件。
 
@@ -79,7 +82,7 @@ AEM隨附多種現 [成可用的元件](/help/sites-authoring/default-components
 
 如需AEM例項中所有可用元件的概觀，請使用「元 [件控制台」](/help/sites-authoring/default-components-console.md)。
 
-或者，您也可以使用CRXDE Lite獲取儲存庫中所有可用元件的清單。
+或者，您也可以使用CRXDE Lite來獲取儲存庫中所有可用元件的清單。
 
 1. 在 **[!UICONTROL CRXDE Lite中]**，從工具欄中選擇工具，然後選擇 **[!UICONTROL Query]** , **[!UICONTROL Query]**, **** 開啟Query Tab。
 
@@ -91,7 +94,7 @@ AEM隨附多種現 [成可用的元件](/help/sites-authoring/default-components
 
 1. 按一下 **[!UICONTROL 執行]** ，並列出元件。
 
-## 其他資源 {#further-reading}
+## Additional resources {#further-reading}
 
 以下頁面提供有關開發這些元件和其他元件的詳細資訊：
 
@@ -104,7 +107,7 @@ AEM隨附多種現 [成可用的元件](/help/sites-authoring/default-components
 * [內容片段的元件](/help/sites-developing/components-content-fragments.md)
 * [以JSON格式取得頁面資訊](/help/sites-developing/pageinfo.md)
 * [國際化元件](/help/sites-developing/i18n.md)
-* [核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [使用隱藏條件](/help/sites-developing/hide-conditions.md)
 * 傳統 UI
 
