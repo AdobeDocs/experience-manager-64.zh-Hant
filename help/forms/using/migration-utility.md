@@ -12,6 +12,9 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '1872'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ## 移轉方法 {#approach-to-migration}
 
-您可 [以從](/help/forms/using/upgrade.md) AEM Forms 6.3或6.2升級至最新版的AEM Forms 6.4，或執行全新安裝。 根據您是否升級了先前的安裝或執行了新安裝，您需要執行下列操作之一：
+您可 [以從](/help/forms/using/upgrade.md) AEM Forms 6.3或6.2升級至最新版的AEM Forms 6.4，或執行全新安裝。 根據您是升級了先前的安裝還是執行了新安裝，您需要執行下列操作之一：
 
 **就地升級**
 
@@ -41,7 +44,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 **在安裝不當時**
 
-如果安裝不當（新鮮），則您必須安裝 [AEMFD相容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) （包括通信管理相容性包），才能使用資產和文檔。
+如果安裝不當（新鮮），則您必須先安裝 [AEMFD Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) （包括Corresponce Management Compatibility package），才能使用資產和文檔。
 
 然後，您需要在新的設定中匯入資產套件（zip或cmp），然後執行移轉公用程式來更新 [資產和檔案](#runningmigrationutility)。 由於向後 [相容性相關的更改](/help/sites-deploying/backward-compatibility.md) ,crx-repository中幾個資料夾的位置將發生更改。 從先前的設定手動匯出和匯入相依性（自訂資料庫和資產）至新鮮環境。
 
@@ -68,7 +71,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 在對資產進行任何更改或建立資產之前，運行遷移實用程式。 建議您在進行任何變更或建立資產後，不要執行公用程式。 請確定在移轉程式執行時，「對應管理」或「最適化表單資產」使用者介面未開啟。
 
-首次運行遷移實用程式時，將建立具有以下路徑和名稱的日誌： `\[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log`。 此日誌會不斷更新「對應管理」和「最適化表單」移轉資訊，例如移動資產。
+首次運行遷移實用程式時，將建立具有以下路徑和名稱的日誌： `\[aem-installation-directory]\cq-quickstart\logs\aem-forms-migration.log`. 此日誌會不斷更新「對應管理」和「最適化表單」移轉資訊，例如移動資產。
 
 >[!NOTE]
 >
@@ -96,6 +99,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
       * 主題
       * 字母
       * 資料字典
+
    >[!NOTE]
    >
    >在資產移轉期間，您會發現警告訊息，例如「找到衝突……」。 這些消息表示無法遷移自適應表單中某些元件的規則。 例如，如果元件有同時具有規則和指令碼的事件，則規則在任何指令碼之後發生，則不會遷移元件的規則。 不過，這些規則可透過在最適化表單製作中開啟規則編輯器來移轉。
@@ -108,6 +112,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
    * 使用規則編輯器（6.1 FP1和更新版本）建立的規則和指令碼
    >  * 使用6.1及舊版UI中的「指令碼」標籤建立的指令碼
    >* 若要移轉範本（從6.3升級時不需要），請點選「最適化表單範本移轉」，然後在下一個畫面中點選「開始移轉」。 以下是移轉的項目：
+
       >
       >  
    * 舊範本——使用AEM 6.1 Forms或更早版本在/apps下建立的最適化表單範本。 這包括在模板元件中定義的指令碼。
@@ -121,34 +126,38 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
    * 若要移轉最適化表單範本，請點選「 **最適化表單範本移轉** 」，然後在「自訂元件移轉」頁面中點選「 **開始移轉」**。 以下是移轉的項目：
 
       * 使用AEM範本編輯器在/apps或/conf下建立的最適化表單範本。
-   * 移轉AEM Forms cloud設定服務，以運用全新的內容感應雲端服務範例，其中包含觸控功能UI（在/conf下）。 當您移轉AEM Forms Cloud Configuration服務時，/etc中的雲端服務會移至/conf。 如果您沒有任何雲端服務自訂，這些自訂會依賴舊式路徑(/etc)，建議您在升級至6.4後立即執行移轉公用程式，並使用雲端設定Touch UI進行任何進一步的工作。 如果您有任何現有的雲端服務自訂，請在升級的設定上繼續使用傳統UI，直到自訂內容更新為與已移轉的路徑(/conf)一致，然後執行移轉公用程式。
+   * 移轉AEM Forms Cloud設定服務，以運用全新的內容感應雲端服務範例，其中包含觸控功能UI（在/conf下）。 當您移轉AEM Forms Cloud Configuration服務時，/etc中的雲端服務會移至/conf。 如果您沒有任何雲端服務自訂，這些自訂會依賴舊式路徑(/etc)，建議您在升級至6.4後立即執行移轉公用程式，並使用雲端設定Touch UI進行任何進一步的工作。 如果您有任何現有的雲端服務自訂，請在升級的設定上繼續使用傳統UI，直到自訂內容更新為與已移轉的路徑(/conf)一致，然後執行移轉公用程式。
+
    若要移轉 **AEM Forms雲端服務**（包括下列服務），請點選「AEM Forms雲端設定移轉」（雲端設定移轉獨立於AEMFD相容套件），點選「AEM Forms雲端設定移轉」，然後在「設定移轉」頁面上，點選「 **開始移轉」**:
 
    * 表單資料模型雲端服務
 
-      * 源路徑：/etc/cloudservices/fdm
-      * 目標路徑：/conf/global/settings/cloudconfigs/fdm
+      * 源路徑： /etc/cloudservices/fdm
+      * 目標路徑： /conf/global/settings/cloudconfigs/fdm
    * Recaptcha
 
-      * 源路徑：/etc/cloudservices/recaptcha
-      * 目標路徑：/conf/global/settings/cloudconfigs/recaptcha
+      * 源路徑： /etc/cloudservices/recaptcha
+      * 目標路徑： /conf/global/settings/cloudconfigs/recaptcha
    * Adobe Sign
 
-      * 源路徑：/etc/cloudservices/echosign
-      * 目標路徑：/conf/global/settings/cloudconfigs/echosign
+      * 源路徑： /etc/cloudservices/echosign
+      * 目標路徑： /conf/global/settings/cloudconfigs/echosign
    * Typekit雲端服務
 
-      * 源路徑：/etc/cloudservices/typekit
-      * 目標路徑：/conf/global/settings/cloudconfigs/typekit
+      * 源路徑： /etc/cloudservices/typekit
+      * 目標路徑： /conf/global/settings/cloudconfigs/typekit
+
    移轉程式進行時，瀏覽器視窗會顯示下列內容：
 
-   * 更新資產時：資產已成功更新。
-   * 移轉完成後：完成資產移轉。
+   * 更新資產時： 資產已成功更新。
+   * 移轉完成後： 完成資產移轉。
+
    執行時，遷移實用程式執行以下操作：
 
-   * **新增標籤至資產**:新增標籤「Correponsements Management:移轉資產」/「最適化表單：移轉資產」。 移轉資產，讓使用者能夠識別移轉的資產。 運行遷移實用程式時，系統中的所有現有資產都標籤為「已遷移」。
-   * **產生標籤**:先前系統中出現的類別和子類別會建立為標籤，然後這些標籤會與AEM中的相關「對應管理」資產產生關聯。 例如，字母模板的類別（索賠）和子類別（索賠）將生成為標籤。
-   * **將版面和版面片段移至AEM 6.4 Forms使用者介面**:如果您要從6.2升級至6.4，版面範本和版面片段會新增為AEM Forms 6.4使用者介面區段中的表單。
+   * **新增標籤至資產**: 新增標籤「Correponsements Management: 移轉資產」/「最適化表單： 移轉資產」。 移轉資產，讓使用者能夠識別移轉的資產。 運行遷移實用程式時，系統中的所有現有資產都標籤為「已遷移」。
+   * **產生標籤**: 先前系統中出現的類別和子類別會建立為標籤，然後這些標籤會與AEM中的相關「對應管理」資產產生關聯。 例如，字母模板的類別（索賠）和子類別（索賠）將生成為標籤。
+   * **將版面和版面片段移至AEM 6.4 Forms使用者介面**: 如果您要從6.2升級至6.4，版面範本和版面片段會新增為AEM Forms 6.4使用者介面區段中的表單。
+
    >[!NOTE]
    >
    >如果您要從6.2升級至6.4，對於「對應管理」,UI中可能會顯示新資料夾，其中包含您的資產。 您可能需要檢查這些資料夾以找出您的資產。
