@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 0c2b1c67-2fa4-4b2e-8512-0973177656e2
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 >[!NOTE]
 >
->有各種資料保護和隱私權法規；包括，例如GDPR和CCPA。 AEM Sites已準備好協助客戶履行其資料保護和隱私權規範義務。 此頁引導客戶完成選擇（或退出）匯總使用統計資訊收集的過程。
+>有各種資料保護和隱私權法規； 包括，例如GDPR和CCPA。 AEM Sites已準備好協助客戶履行其資料保護和隱私權規範義務。 此頁引導客戶完成選擇（或退出）匯總使用統計資訊收集的過程。
 >
 >如需詳細資訊，請參閱 [Adobe的隱私權中心](https://www.adobe.com/privacy.html)。
 
