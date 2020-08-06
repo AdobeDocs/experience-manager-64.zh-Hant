@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ OSGi「提&#x200B;*供標準化的基元，允許應用程式從可重複使用�
 
 您可以透過以下任一方式管理此類組合的組態設定：
 
-* 使用 [Adobe CQ web主控台](#osgi-configuration-with-the-web-console)
+* 使用 [Adobe CQ Web主控台](#osgi-configuration-with-the-web-console)
 * 使用 [配置檔案](#osgi-configuration-with-configuration-files)
 * 在 [儲存庫中配置內 `sling:OsgiConfig`容節點()](#osgi-configuration-in-the-repository)
 
@@ -53,8 +56,8 @@ OSGi「提&#x200B;*供標準化的基元，允許應用程式從可重複使用�
 無論您使用哪種方法，所有這些配置方法：
 
 * 確保複製或複製儲存庫內容會重新建立相同的配置。
-* 允許您將配置檢出到FileVault或Subversion;安全性或更新。
-* 可保存在包中，以便在設定其他實例時使用。
+* 允許您將配置檢出到FileVault或Subversion; 安全性或更新。
+* 可以保存在包中，以便在設定其他實例時使用。
 * 允許您使用指令碼來傳播配置詳細資訊，以執行配置推展。
 
 >[!NOTE]
@@ -85,7 +88,7 @@ AEM中 [的Web主控台](/help/sites-deploying/web-console.md) ，提供了用�
 
       **OSGi >**
 
-   * 直接網址；例如：
+   * 直接網址； 例如：
 
       `http://localhost:4502/system/console/configMgr`
    將會顯示清單。
@@ -95,7 +98,7 @@ AEM中 [的Web主控台](/help/sites-deploying/web-console.md) ，提供了用�
    * 按一下該包 **的「編輯** 」表徵圖
    * 按一下包 **的名** 稱
 
-1. 對話方塊將會開啟。 您可在此視需要編輯；例如，將「日誌 **級別** 」設定為 `INFO`:
+1. 對話方塊將會開啟。 您可在此視需要編輯； 例如，將「日誌 **級別** 」設定為 `INFO`:
 
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
@@ -109,11 +112,11 @@ AEM中 [的Web主控台](/help/sites-deploying/web-console.md) ，提供了用�
 
    >[!NOTE]
    >
-   >您現在可以找到 [相關的配置檔案](#osgi-configuration-with-configuration-files);例如，要包含在內容套件中，以便用於另一個例項。
+   >您現在可以找到 [相關的配置檔案](#osgi-configuration-with-configuration-files); 例如，要包含在內容套件中，以便用於另一個例項。
 
 ## OSGi配置與配置檔案 {#osgi-configuration-with-configuration-files}
 
-使用Web console進行的配置更改將作為配置檔案( `.config`)保存在儲存庫中，位於：
+使用Web Console進行的配置更改將作為配置檔案( `.config`)保存在儲存庫中，位於：
 
 `/apps`
 
@@ -129,7 +132,7 @@ Web Console不顯示已保存更改的儲存庫中的位置，但可以輕鬆找
 
 1. 在Web控制台中 [進行初始更改以建立配置檔案](#osgi-configuration-with-the-web-console)。
 1. 開啟CRXDE Lite。
-1. **在「工**&#x200B;具&#x200B;**」菜單中，選**&#x200B;擇「查詢……」.
+1. 在「工 **具** 」菜單中，選 **擇「查詢……」** .
 1. 提交 **Type** 查詢 `SQL` ，以搜索已更新的配置的PID。
 
    例如， **Apache Felix OSGi Management Console** 具有下列的永久性識別(PID):
@@ -194,7 +197,7 @@ Web Console不顯示已保存更改的儲存庫中的位置，但可以輕鬆找
    * `config.<run-mode>` -適當
 
 1. 是否需 **要配置****還是工廠配置** 。
-1. 要配置的單個參數；包括需要重新建立的任何現有參數定義。
+1. 要配置的單個參數； 包括需要重新建立的任何現有參數定義。
 
    參考Web控制台中的個別參數欄位。 每個參數的名稱以方括弧顯示。
 
@@ -225,24 +228,25 @@ Web Console不顯示已保存更改的儲存庫中的位置，但可以輕鬆找
 1. 在此資料夾下建立一個節點：
 
    * 類型: `sling:OsgiConfig`
-   * 名稱：持久性身份(PID);
+   * 名稱： 持久性身份(PID);
 
-      例如AEM WCM Version manager使用 `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      例如AEM WCM Version Manager使用 `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
    >將「工廠配置」附加 `-<identifier>` 到名稱時。
    >
    >如： `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
    >
-   >其中， `<identifier>` 由您（必須）輸入以標識實例的自由文本替換（您不能忽略此資訊）;例如：
+   >其中， `<identifier>` 由您（必須）輸入以標識實例的自由文本替換（您不能忽略此資訊）; 例如：
    >
    >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
 1. 對於要配置的每個參數，請在此節點上建立一個屬性：
 
-   * 名稱：參數名稱，如Web控制台所示；名稱會在欄位說明結尾的方括弧中顯示。 例如，若 `Create Version on Activation` 使用 `versionmanager.createVersionOnActivation`
-   * 類型：視情況而定。
-   * 值：視需要。
+   * 名稱： 參數名稱，如Web控制台所示； 名稱會在欄位說明結尾的方括弧中顯示。 例如，若 `Create Version on Activation` 使用 `versionmanager.createVersionOnActivation`
+   * 類型： 視情況而定。
+   * 值： 視需要。
+
    您只需要為要設定的參數建立屬性，其他人仍會採用AEM設定的預設值。
 
 1. 儲存所有變更。
@@ -334,11 +338,11 @@ Web Console不顯示已保存更改的儲存庫中的位置，但可以輕鬆找
 
       `/apps/system/config`
 
-   * 但是，如果您正在編輯最初來自儲存庫中其他位置的配置：例如：
+   * 但是，如果您正在編輯最初來自儲存庫中其他位置的配置： 例如：
 
       /libs/foo/config/someconfig
 
-      然後將更新後的配置寫入原始位置；例如：
+      然後將更新後的配置寫入原始位置； 例如：
 
       `/apps/foo/config/someconfig`
 
