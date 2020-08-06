@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 10%
 
 ---
 
@@ -45,8 +48,8 @@ The **Sites** console allows you to navigate and manage your website, using the 
 
 編輯頁面時，可 **從** :
 
-* 頁面 [**資訊選擇&#x200B;**](/help/sites-authoring/editing-page-properties.md#page-properties)器；這將顯示介紹性投影片（如您第一次存取編輯器時所顯示）。
-* 特定 [元件的](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 「設定」對話方塊(使用 表徵圖);這會顯示內容相關的說明。
+* 頁面 [**資訊選擇&#x200B;**](/help/sites-authoring/editing-page-properties.md#page-properties)器； 這將顯示介紹性投影片（如您第一次存取編輯器時所顯示）。
+* 特定 [元件的](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 「設定」對話方塊(使用 表徵圖); 這會顯示內容相關的說明。
 
 控制台 [提供更多與幫助相關的資源](/help/sites-authoring/basic-handling.md#accessing-help)。
 
@@ -90,10 +93,12 @@ The **Sites** console allows you to navigate and manage your website, using the 
 
       * 標準元件的圖示為單色。
       * 縮寫始終是元件名稱的前兩個字元。
+
    在「元件」瀏覽器的頂端工具列中，您可以：
 
    * 依名稱篩選元件。
    * 使用下拉式選取範圍，將顯示限制在特定群組。
+
    如需元件的詳細說明，您可以在「元件」瀏覽器中按一下或點選元件旁的資訊圖示(如果 有 )。
 
    ![screen_shot_2018-03-22at141929](assets/screen_shot_2018-03-22at141929.png)
@@ -143,7 +148,7 @@ The assets browser is a tab within the side panel along with the [components bro
 
 >[!NOTE]
 >
->當移動設備寬度小於1024px時，檢測到移動設備；例如，也可在小型案頭視窗上。
+>當移動設備寬度小於1024px時，檢測到移動設備； 例如，也可在小型案頭視窗上。
 
 * **行動裝置，例如iPad**
 
@@ -169,7 +174,7 @@ The assets browser is a tab within the side panel along with the [components bro
 
 「內 **容樹」** (Content Tree)概述了階層中頁面上的所有元件，讓您一目瞭然地瞭解頁面的構成方式。
 
-「內容樹」是側面板（連同元件和資產瀏覽器）中的標籤。 要開啟 (或關閉) 側面板，請使用工具欄左上角的表徵圖：
+「內容樹」是側面板中的標籤（連同元件和資產瀏覽器）。 要開啟 (或關閉) 側面板，請使用工具欄左上角的表徵圖：
 
 ![](do-not-localize/screen_shot_2018-03-22at142042.png)
 
@@ -287,7 +292,7 @@ The assets browser is a tab within the side panel along with the [components bro
 
 * [時間彎曲](/help/sites-authoring/working-with-page-versions.md#timewarp) -可讓您在特定時間點檢視頁面狀態。
 * [即時副本狀態](/help/sites-authoring/editing-content.md#live-copy-status) -允許快速概述即時副本狀態以及哪些元件是／未繼承的。
-* [預覽](/help/sites-authoring/editing-content.md#previewing-pages) -用於檢視頁面在發佈環境中的顯示效果；或在內容中使用連結進行導覽。
+* [預覽](/help/sites-authoring/editing-content.md#previewing-pages) -用於檢視頁面在發佈環境中的顯示效果； 或在內容中使用連結進行導覽。
 
 * [Annotate](/help/sites-authoring/annotations.md) —— 用於在頁面上添加或查看批注。
 
@@ -301,6 +306,7 @@ The assets browser is a tab within the side panel along with the [components bro
 >* 存取某些模式需要適當的權限／權限。
 >* 由於空間限制，行動裝置無法使用開發人員模式。
 >* 有一個鍵 [盤](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`可切換 **)，在「預覽」和目前選取的模式之間切換(例如，「編輯」、「排版**********」等)。
+
 >
 
 
