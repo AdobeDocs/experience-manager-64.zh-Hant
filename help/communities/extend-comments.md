@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '271'
+ht-degree: 0%
 
 ---
 
@@ -25,13 +28,13 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 >
 >不支 [持延伸](client-customize.md#overlays) 覆蓋元件。
 
-## 例如 {#example}
+## 範例 {#example}
 
 假設注釋元件的標題必須在AEM例項的某個網站上顯示替代外觀，而在另一個網站上顯示預設顯示。 與其覆蓋預設注釋（這會變更所有例項的注釋元件），更好的解決方案是確保有多個注釋元件可供各網站使用。
 
 若要實作此解決方案，請建立可延伸（覆寫）現有元件並修改Handlebars指令碼的新元件。 使用新注釋的網站區域可以使用擴充的注釋，而使用預設外觀的網站則不受影響。
 
-注釋元件實際上是構成注釋系統的兩個元件之一。 因此，需要擴展兩個元件：留 *言**和留言*。 要編輯的指令碼位於*comment * `header.hbs` component的檔案中，而父 *comments* component（注釋系統）則是作者實際新增至頁面的內容。
+注釋元件實際上是構成注釋系統的兩個元件之一。 因此，需要擴展兩個元件： *留言* 和 *留言*。 要編輯的指令碼位於*comment * `header.hbs` component的檔案中，而父 *comments* component（注釋系統）則是作者實際新增至頁面的程式碼。
 
 若要延伸意見，您必須：
 
