@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 管理員的故障排除方案 {#troubleshooting-scenarios-for-administrators}
 
-下表概述了管理員可能需要進行故障排除的問題：
+下表概述了管理員可能需要解決的問題：
 
 <table> 
  <tbody> 
@@ -76,7 +79,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### 使用Sling Thread Dumper {#using-sling-thread-dumper}
 
-1. 開啟 **AEM Web Console**;例如，在 `http://localhost:4502/system/console/`。
+1. 開啟 **AEM Web Console**; 例如，在 `http://localhost:4502/system/console/`。
 
 1. 在「狀態 **」選**&#x200B;項卡下&#x200B;**，選擇「線程** 」。
 
@@ -84,7 +87,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### 使用jstack（命令行） {#using-jstack-command-line}
 
-1. 尋找AEM java例項的PID（流程ID）。
+1. 尋找AEM Java例項的PID（流程ID）。
 
    例如，您可以使用 `ps -ef` 或 `jps`。
 
@@ -107,7 +110,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 當為AEM WCM開發功能時，可以開啟JCR工作階段（與開啟資料庫連線相當）。 如果開啟的會話從未關閉，則系統可能會出現以下症狀：
 
 * 系統變慢。
-* 您可以看到許多CacheManager:resizeLog檔案中的所有項目；以下數字(size=&lt;x>)顯示快取的數量，每個會話開啟多個快取。
+* 您可以看到許多CacheManager: resizeLog檔案中的所有項目； 以下數字(size=&lt;x>)顯示快取的數量，每個會話開啟多個快取。
 * 系統不時記憶體不足（經過幾小時、幾天或幾週後，取決於嚴重性）。
 
 要分析未關閉的會話並確定哪些代碼未關閉會話，請參閱知識庫文章「分析未關閉 [的會話」](https://helpx.adobe.com/crx/kb/AnalyzeUnclosedSessions.html)。
@@ -116,7 +119,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 OSGi捆綁包的狀態也可以提前指出可能的問題。
 
-1. 開啟 **AEM Web Console**;例如，在 `http://localhost:4502/system/console/`。
+1. 開啟 **AEM Web Console**; 例如，在 `http://localhost:4502/system/console/`。
 
 1. 在「 **OSGI** 」(OSGI)選 **項卡下選擇「組合** 」(Bundles)。
 
