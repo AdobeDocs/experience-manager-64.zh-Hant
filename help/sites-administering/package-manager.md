@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '5365'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
 
 套件包含使用篩選器選取的頁面內容和專案相關內容。
 
-軟體包還包含保險儲存元資訊，包括過濾器定義和導入配置資訊。 封裝中可包含其他內容屬性（不用於封裝擷取），例如說明、視覺影像或圖示；這些屬性僅用於內容包消費者和資訊用途。
+軟體包還包含保險儲存元資訊，包括過濾器定義和導入配置資訊。 封裝中可包含其他內容屬性（不用於封裝擷取），例如說明、視覺影像或圖示； 這些屬性僅用於內容包消費者和資訊用途。
 
 >[!NOTE]
 >
@@ -41,7 +44,7 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
 
 您可以對包執行以下操作或對包執行以下操作：
 
-* 建立新套件；根據需要定義包設定和篩選器
+* 建立新套件； 根據需要定義包設定和篩選器
 * 預覽套件內容（建立前）
 * 建立套件
 * 查看包資訊
@@ -56,7 +59,7 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
 * 安裝套件（AEM不會在上傳後自動安裝套件）
 * 刪除包
 * 從「套件共用」程式庫下載套件，例如修補程式
-* 將封裝上傳至封裝共用程式庫的公司內部區段
+* 將套件上傳至「套件共用」程式庫的公司內部區段
 
 ## 包資訊 {#package-information}
 
@@ -111,8 +114,8 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
    <td>需要<br /> </td> 
    <td> 
     <ul> 
-     <li>管理員：選擇具有管理員權限的帳戶只能安裝套件的時間。</li> 
-     <li>重新啟動：選擇安裝軟體包後需要重新啟動伺服器的時間。</li> 
+     <li>管理員： 選擇具有管理員權限的帳戶只能安裝套件的時間。</li> 
+     <li>重新啟動： 選擇安裝軟體包後需要重新啟動伺服器的時間。</li> 
     </ul> </td> 
    <td> </td> 
   </tr> 
@@ -171,7 +174,7 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
   </tr> 
   <tr> 
    <td> 加入</td> 
-   <td>您可以定義路徑，或使用規則運算式來指定要包括的所有節點。<br /> 包 <br /> 含目錄將： 
+   <td>您可以定義路徑，或使用規則運算式來指定要包括的所有節點。<br /> <br /> 包含目錄將： 
     <ul> 
      <li>包括該 <i>目錄</i> ，以及該目錄中的所有檔案和資料夾（即整個子樹）</li> 
      <li><strong>不包含</strong> 指定根路徑下的其他檔案或資料夾</li> 
@@ -180,7 +183,7 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
   </tr> 
   <tr> 
    <td> 排除</td> 
-   <td>您可以指定路徑或使用規則運算式來指定要排除的所有節點。<br /> 排 <br /> 除目錄將排除該目錄 <i>及該目錄中</i> （即整個子樹）的所有檔案和資料夾。<br /> </td> 
+   <td>您可以指定路徑或使用規則運算式來指定要排除的所有節點。<br /> <br /> 排除目錄將排除該目 <i>錄</i> ，並排除該目錄中的所有檔案和資料夾（即整個子樹）。<br /> </td> 
    <td>/libs/wcm/foundation/components(/)。*)?</td> 
   </tr> 
  </tbody> 
@@ -194,7 +197,7 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
 
 ### 封裝螢幕擷取 {#package-screenshots}
 
-您可將螢幕擷取畫面附加至您的套件，以視覺化方式呈現內容的外觀；例如，提供新功能的螢幕擷取。
+您可將螢幕擷取畫面附加至您的套件，以視覺化方式呈現內容的外觀； 例如，提供新功能的螢幕擷取。
 
 ### 封裝圖示 {#package-icons}
 
@@ -280,7 +283,7 @@ Package Manager會管理您本機AEM安裝上的套件。 分配了必 [要的�
 
 1. 按一下 **編輯** ，編輯包 [設定](#package-settings)。
 
-   在這裡，您可以新增資訊和／或定義特定設定；例如，這些錯誤包括說明、圖 [示](#package-icons)、相關錯誤和添加提供程式詳細資訊。
+   在這裡，您可以新增資訊和／或定義特定設定； 例如，這些錯誤包括說明、圖 [示](#package-icons)、相關錯誤和添加提供程式詳細資訊。
 
    編輯完 **成設定後** ，按一下「確定」。
 
@@ -292,10 +295,10 @@ Package Manager會管理您本機AEM安裝上的套件。 分配了必 [要的�
 
    ![packagesfilter](assets/packagesfilter.png)
 
-   指定：
+   指定下列設定：
 
-   * **根路徑**&#x200B;要封裝的內容；這可以是子樹的根。
-   * **規則**&#x200B;規則是選用的；對於簡單的套件定義，不需要指定包含或排除規則。
+   * **根路徑**&#x200B;要封裝的內容； 這可以是子樹的根。
+   * **規則**&#x200B;規則是選用的； 對於簡單的套件定義，不需要指定包含或排除規則。
 
       如有需要，您可以定義「包 [**含&#x200B;**」或「**&#x200B;排除」規則&#x200B;**](#package-filters)，以精確定義套件內容。
 
@@ -329,7 +332,7 @@ Package Manager會管理您本機AEM安裝上的套件。 分配了必 [要的�
    >
    >當您重建包時，當將覆寫包內容時，這特別重要。
 
-1. 按一下 **確定**。 AEM將建立套件，並列出新增至套件的所有內容。 完成時，AEM會顯示已建立套件的確認，並（當您關閉對話方塊時）更新套件清單資訊。
+1. 按一下&#x200B;**「確定」**。AEM將建立套件，並列出新增至套件的所有內容。 完成時，AEM會顯示已建立套件的確認，並（當您關閉對話方塊時）更新套件清單資訊。
 
 ### 重新包裝包 {#rewrapping-a-package}
 
@@ -392,6 +395,7 @@ Package Manager會管理您本機AEM安裝上的套件。 分配了必 [要的�
    >
    >
 * 從「套件共 [用」下載套件至您的檔案系統](#downloading-packages-to-your-file-system-from-package-share)。
+
 >
 
 
@@ -401,7 +405,7 @@ Package Manager會管理您本機AEM安裝上的套件。 分配了必 [要的�
 
    ![packagesdownload](assets/packagesdownload.png)
 
-1. 按一下您要下載之套件的zip檔案名稱（加底線）所形成的連結；例如 `export-for-offline.zip`。
+1. 按一下您要下載之套件的zip檔案名稱（加底線）所形成的連結； 例如 `export-for-offline.zip`。
 
    AEM會將套件下載至您的電腦（使用標準瀏覽器下載對話方塊）。
 
@@ -425,7 +429,7 @@ Package Manager會管理您本機AEM安裝上的套件。 分配了必 [要的�
 
    * **檔案**
 
-      **您可以直接鍵入檔案名，或使用「瀏**&#x200B;覽……」對話框，從本地檔案系統中選擇所需的包(選擇後按一下「 **確定**」)。
+      您可以直接鍵入檔案名，或使用「瀏 **覽……」** 對話框，從本地檔案系統中選擇所需的包(選擇後按一下「 **確定**」)。
 
    * **強制上傳**
 
@@ -553,6 +557,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 >* `osgiPackageImports`
 >* `overlays`
 >* `acls`
+
 >
 >
 若未傳遞， `type` 則預設 `osgiPackageImports` 值為值。
@@ -591,6 +596,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
    >
 * 請參閱套件內容清單：\
    >  開啟套件，然後按一 **下內容**。
+
 >
 
 
@@ -636,7 +642,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 
 >[!NOTE]
 >
->您也可以在第一次啟動例項之前先執行此動作。 為此，您需要手動建立檔案 `crx-quickstart` 夾，在其下 `install` 建立資料夾，並將資料夾放在那裡。 然後，當您第一次啟動實例時，這些軟體包將按字母順序安裝。
+>您也可以先執行此動作，然後再第一次啟動執行個體。 為此，您需要手動建立檔案 `crx-quickstart` 夾，在其下 `install` 建立資料夾，並將資料夾放在那裡。 然後，當您第一次啟動實例時，這些軟體包將按字母順序安裝。
 
 ### 卸載軟體包 {#uninstalling-packages}
 
@@ -666,6 +672,7 @@ AEM可讓您解除安裝套件。 此操作將恢復在軟體包安裝前立即�
 
    * 在工具 **列選單中** ，按一下「刪除」。
    * 按一下右鍵並選擇「刪 **除」**。
+
    ![包刪除](assets/packagesdelete.png)
 
 1. AEM會要求確認您要刪除套件。 按一 **下「確定** 」以確認刪除。
@@ -683,7 +690,7 @@ AEM可讓您解除安裝套件。 此操作將恢復在軟體包安裝前立即�
 1. 按一下要複製的包的表徵圖或名稱以展開它。
 1. 在工具 **列的** 「更多」下拉式選單中，選取「復 **制」**。
 
-## Package Share {#package-share}
+## 套件共用 {#package-share}
 
 Package Share是公開提供來共用Content-Packages的集中式伺服器。
 
@@ -693,7 +700,7 @@ Package Share是公開提供來共用Content-Packages的集中式伺服器。
 
 ### 對包共用的訪問 {#access-to-package-share}
 
-對包共用沒有匿名訪問；也就是說，只有註冊的使用者才能檢視、下載和上傳套件。
+對包共用沒有匿名訪問； 也就是說，只有註冊的使用者才能檢視、下載和上傳套件。
 
 我們的合作夥伴和客戶可以存取套件共用。 必須提交註冊詳細資訊，才能分配訪問權限。
 
@@ -716,6 +723,7 @@ Package Share是公開提供來共用Content-Packages的集中式伺服器。
 
    * 使用您的Adobe ID登入
    * [建立Adobe ID](#registering-for-package-share)
+
    >[!NOTE]
    >
    >您第一次使用Adobe ID登入時，必須完成電子 [郵件位址的驗證](#validating-your-adobe-id)。
@@ -747,7 +755,7 @@ Package Share是公開提供來共用Content-Packages的集中式伺服器。
 
 * 「套 [件共用登入」頁面](#signing-in-to-package-share) ，提供註冊Adobe ID的連結。
 * 您可以從特定Adobe案頭軟體註冊Adobe ID。
-* 或者，您也可以在 [Adobe登入頁面上線上註冊](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&nl=1)。
+* 或者，您也可以在 [Adobe登入頁面上線上註冊](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1)。
 
 Adobe ID可透過提供：
 
@@ -772,7 +780,7 @@ Adobe ID可透過提供：
 
 嘗試從純IPv6環境訪問包共用時可能會遇到問題。
 
-這是因為軟體包共用是伺服器上托管的服務，這意味著您的連接是通過網際網路上的各種網路建立的。 不能保證所有連接網路都支援IPv6;如果不是，連接可能會失敗。
+這是因為軟體包共用是伺服器上托管的服務，這意味著您的連接是通過網際網路上的各種網路建立的。 不能保證所有連接網路都支援IPv6; 如果不是，連接可能會失敗。
 
 為避免此問題，您可以從IPv4網路訪問「包共用」，下載該包，然後將其上傳到IPv6環境。
 
@@ -830,7 +838,7 @@ In Package Share包排列在樹子樹中：
    如果實例上已安裝了軟體包，則軟體包旁會出現「 **Installed** （已安裝）」指示符，而不是「 **Install** （安裝）」按鈕。
 
    >[!CAUTION]
-   安裝軟體包可以覆蓋儲存庫中的現有內容。 因此，我們建議您先執行「 **測試安裝** 」。 這可讓您檢查套件包含的內容是否與您現有的內容衝突。
+   安裝軟體包可以覆蓋儲存庫中的現有內容。 因此，我們建議您先執行 **測試安裝** 。 這可讓您檢查套件包含的內容是否與您現有的內容衝突。
 
 ### 從包共用將包下載到檔案系統 {#downloading-packages-to-your-file-system-from-package-share}
 
@@ -860,7 +868,7 @@ In Package Share包排列在樹子樹中：
 
    當您登入時，AEM會顯示要上傳之套件的詳細資訊：
 
-   ![chlimage_1-347](assets/chlimage_1-347.png)
+   ![chlimage_1-348](assets/chlimage_1-347.png)
 
 1. 按一 **下「** Share」（共用），將套件上傳至您公司的內部「Package Share」（套件共用）。
 
