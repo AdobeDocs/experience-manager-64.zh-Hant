@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2dba11-0d2d-4aed-b941-c8ade9bb7bfa
 translation-type: tm+mt
 source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
+workflow-type: tm+mt
+source-wordcount: '2468'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
 您可以建立工 [作流程模型](/help/sites-developing/workflows.md#model) ，以定義使用者啟動工作流程時所執行的一系列步驟。 您也可以定義模型屬性，例如工作流程是暫時性的，還是使用多個資源。
 
-當用戶啟動工作流時，會啟動一個實例；這是對應的執行時期模型，在您同步變更時 [建立](#sync-your-workflow-generate-a-runtime-model) 。
+當用戶啟動工作流時，會啟動一個實例； 這是對應的執行時期模型，在您同步變更時 [建立](#sync-your-workflow-generate-a-runtime-model) 。
 
 ## 建立新工作流程 {#creating-a-new-workflow}
 
@@ -39,7 +42,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
 要使用編輯器建立新工作流，請執行以下操作：
 
-1. 開啟「工 **[!UICONTROL 作流模型]** 」控制台；通過工 **[!UICONTROL 具]**、工 **[!UICONTROL 作流]**、 **[!UICONTROL 模型]** ，或例如：
+1. 開啟「工 **[!UICONTROL 作流模型]** 」控制台； 通過工 **[!UICONTROL 具]**、工 **[!UICONTROL 作流]**、 **[!UICONTROL 模型]** ，或例如：
 
    [http://localhost:4502/aem/workflow](http://localhost:4502/aem/workflow)
 
@@ -70,7 +73,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
 編輯 [**預設或舊版&#x200B;**（現成可用）工作流程有額外的步驟，以確保在您進行變更之前](#editing-a-default-or-legacy-workflow-for-the-first-time)[](/help/sites-developing/workflows-best-practices.md#locations-workflow-models)先進行安全復本。
 
-完成工作流程的更新後，您必須使用「同步 **[!UICONTROL 」(Sync]** ) **[!UICONTROL 生成運行時模型]**。 如需詳 [細資訊，請參閱同步您的工作流](#sync-your-workflow-generate-a-runtime-model) 。
+完成工作流程的更新後，您必須使用「同步 **[!UICONTROL 」(Sync]** ) **[!UICONTROL 來生成運行時模型]**。 如需詳 [細資訊，請參閱同步您的工作流](#sync-your-workflow-generate-a-runtime-model) 。
 
 ### 同步您的工作流程——產生執行階段模型 {#sync-your-workflow-generate-a-runtime-model}
 
@@ -122,11 +125,12 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 **要向模型添加步驟**:
 
 1. 開啟現有的工作流程模型以進行編輯。 從「工作 **[!UICONTROL 流模型]** 」(Workflows Model **[!UICONTROL )控制台中，選擇所需模型，然後選]**&#x200B;擇編輯。
-1. 開啟「步 **[!UICONTROL 驟]** 」瀏覽器；使用 **[!UICONTROL 頂端工具列最左側的「切換側面板]**」(Toggle Side Panel)。 您可以：
+1. 開啟「步 **[!UICONTROL 驟]** 」瀏覽器； 使用 **[!UICONTROL 頂端工具列最左側的「切換側面板]**」(Toggle Side Panel)。 您可以：
 
    * **[!UICONTROL 篩選]** ，以瞭解特定步驟。
    * 使用下拉式選擇器，將選取範圍限制為特定的步驟群組。
    * 選擇「顯示說明」圖 ![標wf-stepinfo-icon](assets/wf-stepinfo-icon.png) ，以顯示有關相應步驟的詳細資訊。
+
    ![wf-02](assets/wf-02.png)
 
 1. 將適當的步驟拖動到模型中的所需位置。
@@ -141,9 +145,9 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
    在運行時，會按照步驟在模型中的顯示順序執行步驟。 添加步驟元件後，可將它們拖動到模型中的不同位置。
 
-   您也可以複製、剪下、貼上、群組或刪除現有步驟；和頁面編輯 [器一樣。](/help/sites-authoring/editing-content.md)
+   您也可以複製、剪下、貼上、群組或刪除現有步驟； 和頁面編輯 [器一樣。](/help/sites-authoring/editing-content.md)
 
-   使用工具欄選項也可折疊／展開拆分步驟： ![wf-complesseexpand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
+   使用工具欄選項也可以折疊／展開拆分步驟： ![wf-corvense-expand-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
 
 1. 使用 **[!UICONTROL Sync]** （編輯器工具列）確認變更，以產生執行階段模型。
 
@@ -157,11 +161,12 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
    * 點選工作流模型中的步驟，然後從元件工具列 **[!UICONTROL 選取「設定]** 」(Configure)。
    * 按兩下該步驟。
+
    >[!NOTE]
    >
    >如需隨AEM安裝的主要步驟元件的詳細資訊，請參閱工作 [流程步驟參考](/help/sites-developing/workflows-step-ref.md)。
 
-1. 視需要 **[!UICONTROL 設定步驟]** 「屬性」;可用的屬性取決於步驟類型，可能還有幾個頁籤可用。 例如，新工作流中 **[!UICONTROL 的預設「參與者步驟]**」(Participant Step `Step 1`)顯示為：
+1. 視需要 **[!UICONTROL 設定步驟]** 「屬性」; 可用的屬性取決於步驟類型，可能還有幾個頁籤可用。 例如，新工作流中 **[!UICONTROL 的預設「參與者步驟]**」(Participant Step `Step 1`)顯示為：
 
    ![wf-11](assets/wf-11.png)
 
@@ -180,7 +185,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
    ![wf-07](assets/wf-07.png)
 
-1. 使用「儲存並關閉」 **[!UICONTROL 確認變更]**;接著是 **[!UICONTROL Sync]** （編輯器工具列），以產生執行時期模型。
+1. 使用「儲存並關閉」 **[!UICONTROL 確認變更]**; 接著是 **[!UICONTROL Sync]** （編輯器工具列），以產生執行時期模型。
 
    如需詳 [細資訊，請參閱同步您的工作流](#sync-your-workflow-generate-a-runtime-model) 。
 
@@ -221,7 +226,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
    ![wf-08](assets/wf-08.png)
 
-1. 使用「儲存並關閉」 **[!UICONTROL 確認變更]**;接著是 **[!UICONTROL Sync]** （編輯器工具列），以產生執行時期模型。
+1. 使用「儲存並關閉」 **[!UICONTROL 確認變更]**; 接著是 **[!UICONTROL Sync]** （編輯器工具列），以產生執行時期模型。
 
    如需詳 [細資訊，請參閱同步您的工作流](#sync-your-workflow-generate-a-runtime-model) 。
 
@@ -231,9 +236,9 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
 >[!CAUTION]
 >
->如果工作流階段在「頁面屬性」中定義，但未用於任何工作流步驟 ****，則進度列將不顯示任何進度（無論當前工作流步驟如何）。
+>如果工作流階段在「頁面屬性 ****」中定義，但未用於任何工作流步驟，則進度列將不顯示任何進度（無論當前工作流步驟如何）。
 
-可用階段在工作流模型中定義；可更新現有的工作流程模型以包含階段定義。 可以為工作流模型定義任意數量的階段。
+可用階段在工作流模型中定義； 可更新現有的工作流程模型以包含階段定義。 可以為工作流模型定義任意數量的階段。
 
 要為工作流 **[!UICONTROL 定義階段]** ，請執行以下操作：
 
@@ -272,7 +277,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
    1. 通過「工具」、「部署」、「包」導 **[!UICONTROL 航到「包管]**&#x200B;理器」 ********。
    1. 按一 **[!UICONTROL 下「建立套件]**」。
    1. 根據需要 **[!UICONTROL 指定「包名]**」和任何其他詳細資訊。
-   1. 按一下 **[!UICONTROL 確定]**。
+   1. 按一下&#x200B;**[!UICONTROL 「確定」]**。
 
 1. 按一下 **[!UICONTROL 新包工具欄]** 上的「編輯」(Edit)。
 
@@ -312,7 +317,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
 ## 測試工作流程 {#testing-workflows}
 
-在測試工作流使用多種負載類型時，這是一個很好的做法；包括與已開發的不同類型。 例如，如果您想要處理「資產」的工作流程，請將「頁面」設為裝載來測試，並確定不會擲回錯誤。
+在測試工作流使用多種負載類型時，這是一個很好的做法； 包括與已開發的不同類型。 例如，如果您想要處理「資產」的工作流程，請將「頁面」設為裝載來測試，並確定不會擲回錯誤。
 
 例如，請依下列方式測試您的新工作流程：
 
@@ -322,11 +327,11 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 1. 視需要採取動作，以便工作流程繼續進行。
 1. 在工作流程執行時監控記錄檔。
 
-您也可以設定AEM，在記錄檔 **[!UICONTROL 中顯示]** DEBUG訊息。 請參 [閱記錄](/help/sites-deploying/configure-logging.md) ，以取得詳細資訊，當開發完成時，將記錄層級設 **[!UICONTROL 回]** 資訊 ****。
+您也可以設定AEM，在記錄檔 **[!UICONTROL 中顯示]** DEBUG訊息。 請參 [閱記錄](/help/sites-deploying/configure-logging.md) ，以取得詳細資訊，當開發完成時，將「記錄層級 **[!UICONTROL 」設回]** 資訊 ****。
 
-## 範例 {#examples}
+## Examples {#examples}
 
-### 範例：建立（簡單）工作流以接受或拒絕發佈請求 {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
+### 範例： 建立（簡單）工作流以接受或拒絕發佈請求 {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
 
 為了說明建立工作流的一些可能性，以下示例建立了工作流的變 `Publish Example` 化。
 
@@ -353,6 +358,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
    * Activate **[!UICONTROL Notify user via email]**.
    * 為「 `Administrator` 使用者/ `admin`群組」欄 **[!UICONTROL 位選取(]** )。
+
    >[!NOTE]
    >
    >對於要發送的電子郵件， [需要配置郵件服務和用戶帳戶詳細資訊](/help/sites-administering/notification.md)。
@@ -365,21 +371,21 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 1. 開啟 **[!UICONTROL Or Split]** for configuration。
 1. 設定：
 
-   * **[!UICONTROL 常見]**:選擇 **[!UICONTROL 2分支]**
-   * **[!UICONTROL 分支1]**:選擇 **[!UICONTROL 預設路由]**。
-   * **[!UICONTROL 分支2]**:確 **[!UICONTROL 保未選擇預設路由]** 。
+   * **[!UICONTROL 常見]**: 選擇 **[!UICONTROL 2分支]**
+   * **[!UICONTROL 分支1]**: 選擇 **[!UICONTROL 預設路由]**。
+   * **[!UICONTROL 分支2]**: 確 **[!UICONTROL 保未選擇預設路由]** 。
 
 1. 確認您對 **[!UICONTROL OR Split的更新]**。
 1. 將「參 **[!UICONTROL 與者步驟]** 」拖曳至左側分支、開啟屬性、指定下列值，然後確認變更：
 
    * **[!UICONTROL 標題]**: `Reject Publish Request`
-   * **[!UICONTROL 使用者／群組]**:例如， `projects-administrators`
-   * **[!UICONTROL 透過電子郵件通知使用者]**:啟用，讓使用者透過電子郵件獲得通知。
+   * **[!UICONTROL 使用者／群組]**: 例如， `projects-administrators`
+   * **[!UICONTROL 透過電子郵件通知使用者]**: 啟用，讓使用者透過電子郵件獲得通知。
 
 1. 將「 **[!UICONTROL 流程步驟]** 」拖曳至右側的分支，開啟屬性，指定下列值，然後確認變更：
 
    * **[!UICONTROL 標題]**: `Publish Page as Requested`
-   * **[!UICONTROL 流程]**:選擇「 `Activate Page`Select（選擇）」。 此程式會將選取的頁面發佈至發佈者例項。
+   * **[!UICONTROL 流程]**: 選擇「 `Activate Page`Select（選擇）」。 此程式會將選取的頁面發佈至發佈者例項。
 
 1. 按一 **[!UICONTROL 下「同步]** （編輯器工具列）」以產生執行時期模型。
 
@@ -393,7 +399,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
    ![chlimage_1-182](assets/chlimage_1-182.png)
 
-### 範例：定義OR拆分的規則 {#example-defining-a-rule-for-an-or-split}
+### 範例： 定義OR分解的規則 {#example-defining-a-rule-for-an-or-split}
 
 **[!UICONTROL 「OR分割]** 」步驟可讓您在工作流程中引入條件式處理路徑。
 
@@ -454,7 +460,7 @@ function check() {
 }
 ```
 
-### 範例：自訂啟動要求 {#example-customized-request-for-activation}
+### 範例： 自訂啟動要求 {#example-customized-request-for-activation}
 
 您可以自訂任何現成可用的工作流程。 若要進行自訂行為，請覆蓋適當工作流程的詳細資訊。
 
