@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ Java `com.day.cq.i18n` 套件可讓您在UI中顯示本地化字串。 類別 `I
 
 使用者帳戶的語言屬性是偏好的方法，因為它更可靠。 但是，用戶必須登錄才能使用此方法。
 
-#### 建立I18n java對象 {#creating-the-i-n-java-object}
+#### 建立I18n Java對象 {#creating-the-i-n-java-object}
 
 I18n類提供兩個建構子。 您如何決定使用者偏好的語言，以決定要使用的建構函式。
 
@@ -84,7 +87,7 @@ i18n.get("Enter a search keyword");
 
 指定國 [際化字串的轉譯提示](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) ，以區分字典中重複的字串。 使用方法的第二個可選參 `get` 數提供翻譯提示。 翻譯提示必須與字典中項目的「注釋」屬性完全匹配。
 
-例如，字典包含兩 `Request` 次：一次是動詞，一次是名詞。 以下代碼包括翻譯提示作為方法中的引 `get` 數：
+例如，字典包含兩 `Request` 次： 一次是動詞，一次是名詞。 以下代碼包括翻譯提示作為方法中的引 `get` 數：
 
 ```java
 i18n.get("Request","A noun, as in a request for a web page");
@@ -106,10 +109,10 @@ i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messa
 
 類定 `I18N` 義了靜態方 `get` 法，當您需要本地化少量字串時，該方法非常有用。 除了對象方法的參 `get` 數外，靜態方法還要求對象或您正在使用的 `SlingHttpRequest``ResourceBundle` 對象，具體取決於您確定用戶首選語言的方式：
 
-* 使用使用者的語言偏好設定：提供SlingHttpRequest作為第一個參數。
+* 使用使用者的語言偏好設定： 提供SlingHttpRequest作為第一個參數。
 
    `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
-* 使用頁面語言：提供ResourceBundle作為第一個參數。
+* 使用頁面語言： 提供ResourceBundle作為第一個參數。
 
    `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
