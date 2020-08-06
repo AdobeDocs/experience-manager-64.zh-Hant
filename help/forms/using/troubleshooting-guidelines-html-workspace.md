@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 translation-type: tm+mt
 source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
@@ -153,11 +156,11 @@ source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
 
 指令碼和樣式可在不同的瀏覽器中除錯。
 
-* **在IE中除錯**:若要在IE中除錯AEM Forms工作區，請參閱： [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx)。
+* **在IE中除錯**: 若要在IE中除錯AEM Forms工作區，請參閱： [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **在Chrome中除錯**:若要在Chrome中開啟除錯程式，請使用捷徑：Ctrl+Shift+I。如需詳細資訊，請參閱： [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html)。
+* **在Chrome中除錯**: 若要在Chrome中開啟除錯程式，請使用捷徑： Ctrl+Shift+I。 如需詳細資訊，請參閱： [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
-* **在Firefox中除錯**:Firefox中有數個可用來除錯指令碼和樣式的附加元件。 例如，Firebug是這類除錯公用程式([https://getfirebug.com](https://getfirebug.com))。
+* **在Firefox中除錯**: Firefox中有數個可用來除錯指令碼和樣式的附加元件。 例如，Firebug是這類除錯公用程式([https://getfirebug.com](https://getfirebug.com))。
 
 ## 常見問答集 {#faqs}
 
