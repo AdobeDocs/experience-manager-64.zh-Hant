@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 0ed1f69d-c212-4d47-a572-ae030f2983fc
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1876'
+ht-degree: 0%
 
 ---
 
@@ -144,7 +147,7 @@ DDX文檔包含一個XDP `result` 標籤，該標籤指定結果的名稱。 在
 
 [使用web service API組合多個XDP片段](assembling-multiple-xdp-fragments.md#assemble-multiple-xdp-fragments-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -191,6 +194,7 @@ DDX文檔包含一個XDP `result` 標籤，該標籤指定結果的名稱。 在
    * 表 `com.adobe.idp.Document` 示要使用的DDX文檔的對象
    * 包 `java.util.Map` 含輸入XDP檔案的對象
    * 指定 `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 運行時選項（包括預設字型和作業日誌級別）的對象
+
    該方 `invokeDDX` 法返回包 `com.adobe.livecycle.assembler.client.AssemblerResult` 含已裝配的XDP文檔的對象。
 
 1. 檢索已裝配的XDP文檔。
@@ -205,9 +209,9 @@ DDX文檔包含一個XDP `result` 標籤，該標籤指定結果的名稱。 在
 
 [組合多個XDP片段](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 
-[快速入門（SOAP模式）:使用Java API組合多個XDP片段](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API組合多個XDP片段](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -273,6 +277,7 @@ DDX文檔包含一個XDP `result` 標籤，該標籤指定結果的名稱。 在
    * 代 `BLOB` 表DDX文檔的對象
    * 包 `MyMapOf_xsd_string_To_xsd_anyType` 含所需檔案的對象
    * 指定 `AssemblerOptionSpec` 運行時選項的對象
+
    該方 `invokeDDX` 法返回 `AssemblerResult` 一個對象，該對象包含作業結果和所發生的任何異常。
 
 1. 檢索已裝配的XDP文檔。
