@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 1a6431f19b7eae73150ea3b0bfa00a719e155c41
 workflow-type: tm+mt
-source-wordcount: '21612'
+source-wordcount: '21624'
 ht-degree: 0%
 
 ---
@@ -281,7 +281,7 @@ AEM 6.4.7.0的一些主要亮點是：
 
 ##### Sling {#sling-6470}
 
-* 將webconsole安全提供者套件版本更新為1.2.4，以移除webconsolesecurityprovider(NPR-30885)中launchpad啟動器api的依賴性。
+* 將webconsole安全提供者套件版本更新為1.2.4，以移除webconsolesecurityprovider(NPR-30885)中launchpad啟動器API的相依性。
 
 ##### 平台 {#platform-6470}
 
@@ -409,6 +409,7 @@ AEM 6.4.6.0的一些主要亮點是：
 * 開啟內容片段時，其中一個個字元為美元($)，一個個開括弧({)時發生解析錯誤。 CQ-4270266的修補程式
 * 嘗試在時間軸中顯示體驗片段版本時，VersionPreviewServlet在NullPointerException中失敗。 NPR-30074: CQ-4271881的修補程式
 * 無法透過登入功能鎖定內容片段。 NPR-29923: CQ-4258785的修補程式
+* SAML驗證處理常式中的簽名驗證失敗。 NPR-30379: GRANITE-26567的備份請求。
 
 **複寫**
 
@@ -1109,7 +1110,7 @@ AEM 6.4.3.0的一些主要亮點是：
 * ResourceProviderTracker中的IndexOutOfBoundsException。 NPR-26968: GRANITE-23310的修補程式
 * JMX主控台會累積許多管理階段作業，每5分鐘就會開啟一個新階段作業。 NPR-26958: CQ-4251090的修補程式
 * 從6.2升級至6.4後，記錄檔會顯示未關閉資源解析程式com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck的堆疊追蹤。 NPR-26176: Granite-21734的修補程式
-* 將現成可用的調度器刷新代理配置為更新別名時，操作將失敗，並出現StackOverflowError。 NPR-26373: CQ-4242928的修補程式
+* 將現成可用的調度器刷新代理配置為更新別名時，操作將失敗，並出現StackOverflowError。 NPR-26373: CQ-4243928的修補程式
 * 複製使用過期的OAuth Token，直到失敗。 NPR-25894
 * Restricted page(Closed User Group page)with sling: 別名不會將使用者重新導向至登入頁面。 NPR-25715: Granite=22263的修補程式
 * 在發佈標籤時，UI上不會顯示任何活動。 CQ-4255961的修補程式
@@ -1446,7 +1447,7 @@ AEM 6.4.2.0的一些主要亮點是：
 * 升級至最新的SCORM 2017.1版本。 NPR-25675: CQ-4240671的修補程式
 * 非社群使用者可看到「代表撰寫」欄位。 NPR-25331: CQ-4247858的修補程式
 * 即使刪除後，貼文仍會顯示在UI上，並在主控台上顯示錯誤。 NPR-26290: CQ-4252803的修補程式
-* （網站設定）可儲存對角色所做的變更。 NPR-26272: CQ-4252187的修補程式
+* （網站設定）可儲存對角色所做的變更。 NPR-26274: CQ-4252187的修補程式
 * （安全性弱點）由於JSON Web Token設定錯誤而導致帳戶接管。 NPR-26458: CQ-4253314的修補程式
 * 移除回覆時不會重設分頁。 NPR-26326: CQ-4252997的修補程式
 * 編輯時，附件影像不會顯示在「草稿」中。 CQ-4255360的修補程式
@@ -1539,7 +1540,7 @@ AEM 6.4.2.0的一些主要亮點是：
 **花崗岩**
 
 * bundle SymbolicName中的錯字會導致重複的bundle。 Granite修補程式- 22155
-* CUGConfiguration無法拾取CugExclude。 Granite的修補程式- 21109
+* CUGConfiguration不能拾取CugExclude。 Granite的修補程式- 21109
 * 重新啟動Adobe Granite Workflow Core會重新執行從中間建立不必要工作流程的工作流程步驟。 NPR-25057: Granite-22218的修補程式
 * JcrResourceBundle無法正確支援多個基本名稱。 NPR-25245: Granite-22317的修補程式
 * 在安裝內容包時，ACL按主體分組，因此會破壞權限模型。 NPR-24583: Granite-21591的修補程式
@@ -1768,7 +1769,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * (Classic UI)使用xtype=tags的元件會傳回null，且無法從標籤的eth清單中選取。 NPR-23050: CQ-4239937的修補程式
 * （品牌推廣）「選擇加入」對話方塊提及Adobe Marketing Cloud，而非Adobe Experience Cloud。 NPR-23210: CQ-4237799的修補程式
 * 篩選選項會在從6.3升級至6.4後，讓AEM變得呆滯。 NPR-23260: CQ-4239847的修補程式（待檢查）
-* granite.omnisearch.core修正的主動式支援。 NPR-23538
+* granite.omnisearch.core修正的主動式支援。 NPR-23536
 * 平台。clientlibs的主動式支援修正。 NPR-23569
 * 編輯其他頁面屬性時，雲端服務設定繼承已中斷。 NPR-23216: CQ-4239782的修補程式
 * 在Day CQ Mail Service中啟用STARTTLS支援。 NPR-23941: CQ-4240397的修補程式
@@ -1799,13 +1800,13 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 「工作流動態參與者步驟」不會顯示/apps/workflow/scripts中的指令碼。 NPR-23464: Granite-21276的修補程式
 * 編輯一次工作流程後，無法編輯它。 NPR-23742: CQ-4238526的修補程式
 * （傳統UI）編輯工作流程啟動器時，條件會消失，導致工作流程在沒有任何條件的情況下啟動。 NPR-23835: CQ-4239153的修補程式
-* 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 NPR-23947: CQ-4241236的修補程式
+* 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 NPR-23948: CQ-4241236的修補程式
 * 需要在套件中公開裝載詳細資訊，讓HTL元件可在清單檢視中顯示值。 NPR-23948: CQ-4240953的修補程式
 * 無法在「對話參與者」(Dialog Participant)步驟中儲存對話資料。 NPR-23965: CQ-4234123的修補程式
 * (Touch UI)儲存工作流程模型時，「同步」按鈕會變更為「同步」，導致拼字錯誤。 CQ-4244843的修補程式
 * 專案收件匣： 切換至日曆檢視時，會顯示主要收件匣內容。 CQ-4244436的修補程式
 * 無法在「對話方塊參與者」(Dialog Participant)步驟中選擇「對話框」(Dialogs)。 CQ-4244532的修補程式
-* granite.omnisearch.core修正的主動式支援。 NPR-23538
+* granite.omnisearch.core修正的主動式支援。 NPR-23536
 * Mobile Workspace App 6.4與共用工作的問題。 NPR-26383
 
 **WCM —— 翻譯**
@@ -1849,7 +1850,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 * 發佈的搜索表單中無法使用檔案類型和檔案大小謂語。 CQ-4242026的修補程式
 * 「在目錄中搜索」謂語應被過濾掉／不顯示在搜索篩選器中。 CQ-4241386的修補程式
 * 解除發佈後，預設的搜尋來源應存在。 CQ-4241383、CQ-4241113的修補程式
-* 發佈至品牌入口網站手勢無法用於影像預設集。 CQ-4241076的修補程式
+* 發佈至品牌入口網站手勢無法用於影像預設集。 CQ-4241074的修補程式
 * 發佈至品牌入口網站無法用於系列。 CQ-4241122、CQ-4246558的修補程式
 
 **DAM - DM客戶端**
