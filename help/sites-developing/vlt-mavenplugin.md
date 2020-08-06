@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 943de371-0149-4307-be3a-b11c590b3451
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3281'
+ht-degree: 3%
 
 ---
 
@@ -91,8 +94,8 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
   <tr> 
    <td>名稱</td> 
    <td>字串</td> 
-   <td>構建：是安裝<br /> :無<br /> rm:是</td> 
-   <td>構建：沒有預設值。<br /> 安裝：Maven項目的artifactId屬性的值。</td> 
+   <td>構建： 是安裝<br /> : 無<br /> rm: 是</td> 
+   <td>構建： 沒有預設值。<br /> 安裝： Maven項目的artifactId屬性的值。</td> 
    <td>要操作的包的名稱。</td> 
    <td>除ls以外的所有目標。</td> 
   </tr> 
@@ -167,9 +170,9 @@ mvn content-package:install -Dvault.targetURL="https://192.168.1.100:4502/crx/pa
 
 構建目標的所有參數都在「常用參數」 [部分中說明](#common-parameters) 。
 
-#### 例如 {#example}
+#### 範例 {#example}
 
-下列範例會建置AEM例項上安裝的workflow-mbean套件，其IP位址為10.36.79.223。目標使用以下命令執行：
+下列範例會建置AEM例項上安裝的workflow-mbean套件，其IP位址為10.36.79.223。 目標使用以下命令執行：
 
 ```shell
 mvn content-package:build
@@ -249,7 +252,7 @@ mvn content-package:build
   </tr> 
   <tr> 
    <td>localRepository</td> 
-   <td>org.apache.maven。<br /> 藏物。 儲存庫。<br /> ArtifactRepository</td> 
+   <td>org.apache.maven.<br /> 藏物。 儲存庫。<br /> ArtifactRepository</td> 
    <td>否</td> 
    <td>localRepository系統變數的值。</td> 
    <td>本地Maven儲存庫。 您無法使用外掛程式設定來設定此參數。 系統屬性一律使用。</td> 
@@ -270,14 +273,14 @@ mvn content-package:build
   </tr> 
   <tr> 
    <td>pomRemoteRepositories</td> 
-   <td>java.util.list</td> 
+   <td>java.util.List</td> 
    <td>是</td> 
    <td>為Maven項目定義的remoteAtifactRepositories屬性的值。</td> 
    <td>此值無法使用外掛程式設定來設定。 必須在專案中指定值。 </td> 
   </tr> 
   <tr> 
    <td>project</td> 
-   <td>org.apache.maven。<br /> project.MavenProject</td> 
+   <td>org.apache.maven.<br /> project.MavenProject</td> 
    <td>是</td> 
    <td>為其配置插件的項目。</td> 
    <td>馬文的專案。 專案是隱式的，因為專案包含外掛程式設定。</td> 
@@ -306,7 +309,7 @@ mvn content-package:build
  </tbody> 
 </table>
 
-#### 例如 {#example-1}
+#### 範例 {#example-1}
 
 以下範例會建立包含workflow-mbean OSGi套件的套件(請參閱 [build](#build) goal的範例)，然後安裝此套件。 由於安裝目標綁定到軟體包安裝階段，因此以下命令將執行安裝目標：
 
@@ -355,9 +358,9 @@ mvn install
 
 ls目標的所有參數都在「公用參數」( [Common Parameters)部分中](#common-parameters) 。
 
-#### 例如 {#example-2}
+#### 範例 {#example-2}
 
-下列範例列出AEM例項中安裝的套件，其IP位址為10.36.79.223。目標使用以下命令執行：
+下列範例列出AEM例項中安裝的套件，其IP位址為10.36.79.223。 目標使用以下命令執行：
 
 ```shell
 mvn content-package:ls
@@ -396,9 +399,9 @@ mvn content-package:ls
 
 rm目標的所有參數都在「公用參數」( [Common Parameters)部分中](#common-parameters) 。
 
-#### 例如 {#example-3}
+#### 範例 {#example-3}
 
-下列範例會移除AEM例項上安裝的IP位址為10.36.79.223的workfow-mbean套件。目標使用以下命令執行：
+下列範例會移除AEM例項上安裝的IP位址為10.36.79.223的workfow-mbean套件。 目標使用以下命令執行：
 
 ```shell
 mvn content-package:rm
@@ -438,9 +441,9 @@ mvn content-package:rm
 
 卸載目標的所有參數都在「常用參數」( [Common Parameters)部分中](#common-parameters) 。
 
-#### 例如 {#example-4}
+#### 範例 {#example-4}
 
-下列範例會解除安裝IP位址為10.36.79.223之AEM例項上所安裝的workflow-mbean套件。目標使用以下命令執行：
+下列範例會解除安裝IP位址為10.36.79.223之AEM例項上所安裝的workflow-mbean套件。 目標使用以下命令執行：
 
 ```shell
 mvn content-package:uninstall
@@ -492,7 +495,7 @@ mvn content-package:uninstall
   </tr> 
   <tr> 
    <td>封存</td> 
-   <td>org.apache.maven。<br /> archiver。<br /> MavenArchiveConfiguration</td> 
+   <td>org.apache.maven.<br /> archiver。<br /> MavenArchiveConfiguration</td> 
    <td>否</td> 
    <td></td> 
    <td>要使用的存檔配置。 請參 <a href="https://maven.apache.org/shared/maven-archiver/index.html">閱Maven Archiver的檔案</a>。</td> 
@@ -506,7 +509,7 @@ mvn content-package:uninstall
   </tr> 
   <tr> 
    <td>依賴性</td> 
-   <td>java.util.list</td> 
+   <td>java.util.List</td> 
    <td>否</td> 
    <td></td> 
    <td></td> 
@@ -520,7 +523,7 @@ mvn content-package:uninstall
   </tr> 
   <tr> 
    <td>嵌入式</td> 
-   <td>java.util.list</td> 
+   <td>java.util.List</td> 
    <td>否</td> 
    <td></td> 
    <td></td> 
@@ -541,7 +544,7 @@ mvn content-package:uninstall
   </tr> 
   <tr> 
    <td>篩選器</td> 
-   <td>com.day.jcr。<br /> vault.maven.pack.impl<br /> DefaultWorkspaceFilter</td> 
+   <td>com.day.jcr.<br /> vault.maven.pack.impl<br /> DefaultWorkspaceFilter</td> 
    <td>否</td> 
    <td></td> 
    <td>包含定義套件內容的篩選元素。 執行時，篩選器會包含在filter.xml檔案中。 請參閱下方的「使用篩選」區段。</td> 
@@ -576,7 +579,7 @@ mvn content-package:uninstall
   </tr> 
   <tr> 
    <td>project</td> 
-   <td>org.apache.maven。<br /> project.MavenProject</td> 
+   <td>org.apache.maven.<br /> project.MavenProject</td> 
    <td>是</td> 
    <td></td> 
    <td>馬文的專案。</td> 
@@ -588,17 +591,17 @@ mvn content-package:uninstall
    <td></td> 
    <td>您可在properties.xml檔案中設定的其他屬性。 這些屬性無法覆寫下列預先定義的屬性： 
     <ul> 
-     <li>群組：使用群組參數來設定</li> 
-     <li>名稱：使用name參數來設定</li> 
-     <li>版本：使用版本參數來設定</li> 
-     <li>說明：從專案說明設定</li> 
-     <li>groupId:maven項目描述符的groupId</li> 
-     <li>artifactId:maven項目描述符的artifactId</li> 
-     <li>相關性：使用相依性參數來設定</li> 
-     <li>createdBy:user.name系統屬性的值</li> 
-     <li>已建立：當前系統時間</li> 
-     <li>requiresRoot:使用requiresRoot參數來設定</li> 
-     <li>packagePath:自動從組和包名稱生成</li> 
+     <li>群組： 使用群組參數來設定</li> 
+     <li>名稱： 使用name參數來設定</li> 
+     <li>版本： 使用版本參數來設定</li> 
+     <li>說明： 從專案說明設定</li> 
+     <li>groupId: maven項目描述符的groupId</li> 
+     <li>artifactId: maven項目描述符的artifactId</li> 
+     <li>相關性： 使用相依性參數來設定</li> 
+     <li>createdBy: user.name系統屬性的值</li> 
+     <li>已建立： 當前系統時間</li> 
+     <li>requiresRoot: 使用requiresRoot參數來設定</li> 
+     <li>packagePath: 自動從組和包名稱生成</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -610,7 +613,7 @@ mvn content-package:uninstall
   </tr> 
   <tr> 
    <td>subPackages</td> 
-   <td>java.util.list</td> 
+   <td>java.util.List</td> 
    <td>否</td> 
    <td></td> 
    <td></td> 
@@ -656,13 +659,13 @@ mvn content-package:uninstall
 
 元 `mode` 素定義導入包時對儲存庫的影響。 可使用下列值：
 
-* **** 合併：將添加包中尚未在儲存庫中的內容。 包和儲存庫中的內容保持不變。 系統不會從儲存庫中刪除任何內容。
-* **** 取代：不在儲存庫中的包中的內容將添加到儲存庫中。 儲存庫中的內容將替換為包中的匹配內容。 當內容不存在於包中時，內容將從儲存庫中刪除。
-* **** 更新：不在儲存庫中的包中的內容將添加到儲存庫中。 儲存庫中的內容將替換為包中的匹配內容。 現有內容從儲存庫中刪除。
+* **合併：** 將添加包中尚未在儲存庫中的內容。 包和儲存庫中的內容保持不變。 系統不會從儲存庫中刪除任何內容。
+* **取代：** 不在儲存庫中的包中的內容將添加到儲存庫中。 儲存庫中的內容將替換為包中的匹配內容。 當內容不存在於包中時，內容將從儲存庫中刪除。
+* **更新：** 不在儲存庫中的包中的內容將添加到儲存庫中。 儲存庫中的內容將替換為包中的匹配內容。 現有內容從儲存庫中刪除。
 
 當篩選器不含元 `mode` 素時，會使用預 `replace` 設值。
 
-#### 例如 {#example-5}
+#### 範例 {#example-5}
 
 下面的示例建立包含workflow-mbean OSGi包的包。 POM檔案將jcr_root目錄標識為builtContentDirectory屬性的值。 jcr_root目錄包含映射儲存庫的目錄結構中的包JAR檔案：
 
@@ -741,7 +744,7 @@ mvn content-package:uninstall
 |---|---|---|---|---|
 | detail | 布林值 | 否 | false | 確定是否顯示每個目標的所有可設定屬性。 值true會顯示所有可設定的屬性。 |
 | 目標 | 字串 | 否 |  | 要顯示幫助的目標名稱。 如果未指定任何值，則會顯示所有目標的說明。 |
-| indentSize | int | 否 | 2 | 用於每個級別縮排的空格數。 如果您指定值，該值應為正數。 |
+| indentSize | int | 否 | 2 | 用於每個級別縮進的空格數。 如果您指定值，該值應為正數。 |
 | lineLength | int | 否 | 80 | 顯示線的最大長度。 如果您指定值，該值應為正數。 |
 
 ## 取得Content Package Maven Plugin {#obtaining-the-content-package-maven-plugin}
@@ -887,7 +890,7 @@ mvn content-package:uninstall
 
 有數種Maven原型可供產生AEM專案。 使用符合您發展目標的原型：
 
-* 安裝AEM應用程式資源的內容套件：簡 [單內容包原型](#simple-content-package-archetype)
+* 安裝AEM應用程式資源的內容套件： [簡單內容包——原型](#simple-content-package-archetype)
 * 包含協力廠商對象的內容套件： [simple-content-package-with-embedded-archetype](#simple-content-package-with-embedded-archetype)。
 * 一種多模組應用程式，它適合Java類和單元測試的開發： [multimodule-content-package-archetype](#multimodule-content-package-archetype)。
 
@@ -917,11 +920,11 @@ Maven原型外掛程式在shell或命令提示中使用互動模式來收集您�
 
 您可能希望在生成的pom.xml檔案中更改以下預設值：
 
-* CQ伺服器名稱或IP位址：預設值為 `localhost`。 下方 `crx.host` 的元 `project/properties` 素包含此值。
+* CQ伺服器名稱或IP位址： 預設值為 `localhost`。 下方 `crx.host` 的元 `project/properties` 素包含此值。
 
-* CQ伺服器的埠號：預設值為 `4502`。 下方 `crx.port` 的元 `project/properties` 素包含此值。
+* CQ伺服器的埠號： 預設值為 `4502`。 下方 `crx.port` 的元 `project/properties` 素包含此值。
 
-* Content Package Maven Plugin的版本：使用最新版本作為外掛程式 `version` 的元素內容， `artifactId` 包含 `content-package-maven-plugin`。 預設值為 `0.0.24`。
+* Content Package Maven Plugin的版本： 使用最新版本作為外掛程式 `version` 的元素內容， `artifactId` 包含 `content-package-maven-plugin`。 預設值為 `0.0.24`。
 
 **使用原型**
 
@@ -955,13 +958,13 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 **原型參數：**
 
-* groupId:Maven所產生的內容套件的groupId。 該值將自動用於POM檔案。
-* artifactId:內容套件的名稱。 該值也用作項目資料夾的名稱。
-* 版本：內容套件的版本。
-* 套件：此值不用於simple-content-package-archetype。
-* appsFolderName:/apps下方的資料夾名稱。
-* artifactName:內容套件的說明。
-* packageGroup:內容套件群組的名稱。 此值會為Content Package Maven Plugin的Package目標設定群組參數。
+* groupId: Maven所產生的內容套件的groupId。 該值將自動用於POM檔案。
+* artifactId: 內容套件的名稱。 該值也用作項目資料夾的名稱。
+* 版本： 內容套件的版本。
+* 套件： 此值不用於simple-content-package-archetype。
+* appsFolderName: /apps下方的資料夾名稱。
+* artifactName: 內容套件的說明。
+* packageGroup: 內容套件群組的名稱。 此值會為Content Package Maven Plugin的Package目標設定群組參數。
 
 **資料夾結構：**
 
@@ -1011,16 +1014,16 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 **原型參數：**
 
-* groupId:Maven所產生的內容套件的groupId。 該值將自動用於POM檔案。
-* artifactId:內容套件的名稱。 該值也用作項目資料夾的名稱。
-* 版本：內容套件的版本。
-* 套件：此參數不被使用。
-* appsFolderName:/apps下方的資料夾名稱。
-* artifactName:內容套件的說明。
-* embeddedArtifactId:要嵌入內容包中的對象的ID。
-* embeddedGroupId:要嵌入的對象的組ID。
-* 嵌入式版本：要嵌入的對象版本。
-* packageGroup:內容套件群組的名稱。 此值會為Content Package Maven Plugin的Package目標設定群組參數。
+* groupId: Maven所產生的內容套件的groupId。 該值將自動用於POM檔案。
+* artifactId: 內容套件的名稱。 該值也用作項目資料夾的名稱。
+* 版本： 內容套件的版本。
+* 套件： 此參數不被使用。
+* appsFolderName: /apps下方的資料夾名稱。
+* artifactName: 內容套件的說明。
+* embeddedArtifactId: 要嵌入內容包中的對象的ID。
+* embeddedGroupId: 要嵌入的對象的組ID。
+* 嵌入式版本： 要嵌入的對象版本。
+* packageGroup: 內容套件群組的名稱。 此值會為Content Package Maven Plugin的Package目標設定群組參數。
 
 **資料夾結構：**
 
@@ -1052,8 +1055,8 @@ ${artifactId}
 
 文 `bundle` 件夾包含儲存您開發的Java和JUnit源檔案的資料夾結構。 此資料夾中的pom.xml檔案將建立OSGi包。 POM中的以下值標識對象和包：
 
-* artifactID: `${artifactID}-bundle`。
-* Bundle-SymbolicName: `${groupId}.${artifactId}-bundle`。
+* artifactID: `${artifactID}-bundle`.
+* Bundle-SymbolicName: `${groupId}.${artifactId}-bundle`.
 
 `${artifactID}` 和 `${groupId}` 執行原型時為這些參數提供的值。
 
@@ -1079,13 +1082,13 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 **原型參數：**
 
-* groupId:Maven所產生的內容套件的groupId。 該值將自動用於POM檔案。
-* artifactId:內容套件的名稱。 該值也用作項目資料夾的名稱。
-* 版本：內容套件的版本。
-* 套件：此值不用於multimodule-content-package-archetype。
-* appsFolderName:/apps下方的資料夾名稱。
-* artifactName:內容套件的說明。
-* packageGroup:內容套件群組的名稱。 此值會為Content Package Maven Plugin的Package目標設定群組參數。
+* groupId: Maven所產生的內容套件的groupId。 該值將自動用於POM檔案。
+* artifactId: 內容套件的名稱。 該值也用作項目資料夾的名稱。
+* 版本： 內容套件的版本。
+* 套件： 此值不用於multimodule-content-package-archetype。
+* appsFolderName: /apps下方的資料夾名稱。
+* artifactName: 內容套件的說明。
+* packageGroup: 內容套件群組的名稱。 此值會為Content Package Maven Plugin的Package目標設定群組參數。
 
 **資料夾結構：**
 
