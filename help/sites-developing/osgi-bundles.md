@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 ## 不要嵌入比OSGi捆綁包嚴格需要的更多類和jar {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-應將常用程式庫分解為個別的組合。 這可讓您在整個套件間重複使用這些項目。 在OSGI搭售中封裝 *JAR* 時，請務必檢查線上來源，以查看是否有人之前已這麼做。 尋找現有包裝函式的常見位置有：Apache Felix、Apache Sling、Apache Geronimo、Apache ServiceMix、Eclipse Bundle Recipes和SpringSource Enterprise Bundle Repository。
+應將常用程式庫分解為個別的組合。 這可讓您在整個套件間重複使用這些項目。 在OSGI搭售中封裝 *JAR* 時，請務必檢查線上來源，以查看是否有人之前已這麼做。 尋找現有包裝函式的常見位置有： Apache Felix、Apache Sling、Apache Geronimo、Apache ServiceMix、Eclipse Bundle Recipes和SpringSource Enterprise Bundle Repository。
 
 ## 依賴所需的最低套件版本 {#depend-on-the-lowest-needed-bundle-versions}
 
@@ -41,4 +44,4 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 ## 包含公開的元類型資訊 {#include-metatype-information-where-exposed}
 
-透過指定有意義的metatype資訊，可讓您在Felix主控台中更容易瞭解您的服務和元件。 SCR注釋和屬性的清單可在以下位置找到： [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html)。
+透過指定有意義的metatype資訊，可讓您在Felix主控台中更容易瞭解您的服務和元件。 SCR注釋和屬性的清單可在以下位置找到： [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).
