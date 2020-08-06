@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 1. 在作者實例中，選擇一個表單，然後按一下「查 **看屬性」**。
 
 1. 在屬性頁面中，按一下進 **階。**
-1. 在「進階」下方，啟用選項：與 **AEM Forms應用程式同步**，然後點選「 **儲存」**。
+1. 在「進階」下方，啟用選項： **與AEM Forms App同步**，然後點選「 **儲存**」。
 
 若要同步多個表單，請在作者例項中，在表單管理員中選取多個表單，然後點選「與AEM Forms應 **用程式同步」**。 發佈表單時，AEM Forms應用程式可以連線至發佈伺服器並擷取表單。
 
@@ -35,6 +38,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 >
 >* 最適化表單（無延遲載入）
 >* 行動表單
+
 >
 >
 在與AEM Forms OSGi伺服器同步的AEM Forms應用程式中擷取的最適化表單中，不支援表單層級附件。 如果作者在編寫表單時啟用了欄位級附件，用戶可以在欄位中附加檔案。
