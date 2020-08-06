@@ -1,8 +1,8 @@
 ---
-title: SRP和UGC Essentials
-seo-title: SRP和UGC Essentials
-description: 儲存資源提供商和用戶生成的內容概述
-seo-description: 儲存資源提供商和用戶生成的內容概述
+title: SRP and UGC Essentials
+seo-title: SRP and UGC Essentials
+description: Storage resource provider and user-generated content overview
+seo-description: Storage resource provider and user-generated content overview
 uuid: a4ee8725-f554-4fcf-ac1e-34878d6c02f8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,43 +11,46 @@ content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
 
-# SRP和UGC Essentials {#srp-and-ugc-essentials}
+# SRP and UGC Essentials {#srp-and-ugc-essentials}
 
 ## 簡介 {#introduction}
 
 如果不熟悉儲存資源提供商(SRP)及其與用戶生成內容(UGC)的關係，請訪問 [社區內容儲存](working-with-srp.md)[和儲存資源提供商概述](srp.md)。
 
-本文檔的這一部分提供了有關SRP和UGC的一些基本資訊。
+This section of the documentation provides some essential information about SRP and UGC.
 
 ## StorageResourceProvider API {#storageresourceprovider-api}
 
-SocialResourceProvider API(SRP API)是各種Sling Resource Provider API的擴充功能。 它包含分頁和原子增量支援（對計分和計分很有用）。
+SocialResourceProvider API(SRP API)是各種Sling Resource Provider API的擴充功能。 It includes support for pagination and atomic increment (useful for tally and scoring).
 
-SCF元件需要查詢，因為需要按日期、幫助、票數等進行排序。 所有SRP選項都具有不依賴分組的靈活查詢機制。
+Queries are necessary for SCF components as there is the need to sort by date, helpfulness, number of votes, and so on. All SRP options have flexible query mechanisms which do not rely on bucketing.
 
-SRP儲存位置併入了元件路徑。 SRP API應一律用於存取UGC，因為根路徑取決於所選SRP選項，例如ASRP、MSRP或JSRP。
+The SRP storage location incorporates the component path. SRP API應一律用於存取UGC，因為根路徑取決於所選SRP選項，例如ASRP、MSRP或JSRP。
 
-SRP API不是抽象類，它是介面。 自訂實作不應輕易進行，因為升級至新版本時，將來對內部實作的改善會錯失良機。
+SRP API不是抽象類，它是介面。 A custom implementation should not be undertaken lightly, as the benefits of future improvements to internal implementations would be missed when upgrading to a new release.
 
-使用SRP API的方式是透過提供的公用程式，例如SocialResourceUtilities套件中的公用程式。
+The means for using the SRP API are through provided utilities, such as those found in the SocialResourceUtilities package.
 
-從AEM 6.0或更舊版本升級時，必須移轉所有SRP的UGC，而Open Source工具可供使用。 請參 [閱「升級至AEM Communities 6.3」](upgrade.md)。
+When upgrading from AEM 6.0 or earlier, it will be necessary to migrate UGC for all SRPs, for which an Open Source tool is available. See [Upgrading to AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
->過去，SocialUtils套件中會找到用於存取UGC的公用程式，而SocialUtils套件已不再存在。
+>Historically, utilities for accessing UGC were found in the SocialUtils package, which no longer exists.
 >
->如需取代公用程式，請參 [閱SocialUtils重構](socialutils.md)。
+>For replacement utilities, see [SocialUtils Refactoring](socialutils.md).
 
-## 訪問UGC的實用方法 {#utility-method-to-access-ugc}
+## Utility Method to Access UGC {#utility-method-to-access-ugc}
 
-若要存取UGC，請使用SocialResourceUtilities套件中的方法，傳回適合從SRP存取UGC的路徑，並取代SocialUtils套件中找到的已過時方法。
+To access UGC, use a method from the SocialResourceUtilities package that returns a path suitable for accessing UGC from SRP and replaces the deprecated method found in the SocialUtils package.
 
-以下是在servlet中使用resourceToUGCStoragePath()方法的最小示例：
+Following is a minimal example of using the resourceToUGCStoragePath() method in a servlet:
 
 ```java
 import com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities;
@@ -72,13 +75,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 ## 訪問ACL的實用方法 {#utility-method-to-access-acls}
 
-某些SRP實施（如ASRP和MSRP）將社區內容儲存在不提供ACL驗證的資料庫中。 卷影節點在本地儲存庫中提供可應用ACL的位置。
+某些SRP實施（如ASRP和MSRP）將社區內容儲存在不提供ACL驗證的資料庫中。 Shadow nodes provide a location in the local repository to which ACLs can be applied.
 
-使用SRP API，所有SRP選項在所有CRUD操作之前對陰影位置執行相同的檢查。
+Using the SRP API, all SRP options perform the same check of the shadow location prior to all CRUD operations.
 
-要檢查ACL，請使用返回適合於檢查應用於資源UGC的權限的路徑的方法。
+To check ACLs, use a method that returns a path suitable for checking the permissions applied to the resource&#39;s UGC.
 
-以下是在servlet中使用resourceToACLPath()方法的簡單示例：
+Following is a simple example of using the resourceToACLPath() method in a servlet:
 
 ```java
 import com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities;
@@ -95,17 +98,17 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->resourceToACLPath()傳回的路徑是*not *不適 [合存取UGC](#utility-method-to-access-acls) 。
+>The path returned by resourceToACLPath() is *not *suitable for [accessing the UGC](#utility-method-to-access-acls) itself.
 
-## 與UGC相關的儲存位置 {#ugc-related-storage-locations}
+## UGC-Related Storage Locations {#ugc-related-storage-locations}
 
-以下儲存位置說明在使用JSRP或MSRP進行開發時可能會有幫助。 目前沒有UI可存取儲存在ASRP中的UGC，因為JSRP([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md))和MSRP（MongoDB工具）。
+The following descriptions of storage location may be of help when developing with JSRP or perhaps MSRP. There is currently no UI to access UGC stored in ASRP, as there is for JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)) and MSRP (MongoDB tools).
 
-**元件位置**
+**component location**
 
-當成員在發佈環境中輸入UGC時，他們會與AEM網站的元件互動。
+When a member enters UGC in the publish environment, they are interacting with a component as part of an AEM site.
 
-此類元件的示例是存在 [於「社群元件指南](http://localhost:4502/content/community-components/en/comments.html) 」站點 [中的注釋元件](components-guide.md) 。 本地儲存庫中注釋節點的路徑為：
+An example of such a component is the [comments component](http://localhost:4502/content/community-components/en/comments.html) that exists in the [Community Components Guide](components-guide.md) site. The path to the comment node in the local repository is:
 
 * 元件路徑= */content/community-components/en/comments/jcr:content/content/include/comments*
 
