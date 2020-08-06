@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: e135fa01-fede-4285-b4dd-2d23acbb4d26
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 0%
 
 ---
 
@@ -30,6 +33,6 @@ AEM中的HTML5表單元件提供將XFA表單範本轉換為HTML5格式。 表單
 
 ### Scribble signature {#scribble-signature}
 
-HTML5表單的主要目標是觸控裝置。 因此，AEM Forms Designer中新增了新的塗鴉簽名控制項。 您可以按一下或拖放表格範本上的塗鴉簽名控制項，並加以設定。 它會在HTML5轉譯中呈現為塗鴉欄位，並可用於在觸控裝置上塗鴉簽名。 在桌上型電腦上，它可使用滑鼠控制項，做為塗鴉欄位。 如需如何使用此功能的詳細資訊，請參 [閱XFA塗鴉欄位](/help/forms/using/scribble-signature.md)。
+HTML5表單的主要目標是觸控裝置。 因此，AEM Forms Designer中新增了新的塗鴉簽名控制項。 您可以按一下或拖放表格範本上的塗鴉簽名控制項，並加以設定。 它會在HTML5轉譯中呈現為塗鴉欄位，並可用於在觸控裝置上塗鴉簽名。 在桌上型電腦上，它可使用滑鼠控制項，做為塗鴉欄位。 如需如何使用此功能的詳細資訊，請參 [閱XFA Scribble欄位](/help/forms/using/scribble-signature.md)。
 
 ![4](assets/4.png)
