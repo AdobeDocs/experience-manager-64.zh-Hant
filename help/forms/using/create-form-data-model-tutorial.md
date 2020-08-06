@@ -298,7 +298,7 @@ AEM Forms提供直覺式使用者介面， [從設定的資](data-integration.md
 
    * 從「 **系結** 至」下 **拉式清單中選** 取客戶。
    * 從「 **綁定值** 」(Binding Value **** )下拉式清單中選取customerplan。
-   * 點選 **「完成** 」(Done)，在計費計畫與客戶計畫屬性之間建立系結。
+   * 點選 **「完成** 」(Done)可建立計費計畫與客戶計畫屬性之間的系結。
 
    ![add_association_customer_bills](assets/add_association_customer_bills.png)
 
