@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 當您建立最適化表單時，可以指定表單的工具列版面。 工具欄佈局定義了窗體上的命令和工具欄佈局。
 
-工具列版面配置使用時，主要依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 組織並最佳化此程式碼的服務可能是個複雜的問題。 為協助處理此問題，AEM提供「用戶端程式庫檔案夾」，可讓您將用戶端程式碼儲存在儲存庫中、將它組織為類別，並定義將每類程式碼提供給用戶端的時間和方式。 然後用戶端程式庫系統會負責在您的最終網頁中產生正確的連結，以載入正確的程式碼。 如需詳細資訊，請 [參閱「用戶端程式庫在AEM中的運作方式」。](/help/sites-developing/clientlibs.md)
+工具列版面配置使用時，主要依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 組織並最佳化此程式碼的服務可能是個複雜的問題。 為協助處理此問題，AEM提供「用戶端程式庫檔案夾」，可讓您將用戶端程式碼儲存在儲存庫中、將它組織成類別，並定義將每類程式碼提供給用戶端的時間和方式。 然後用戶端程式庫系統會負責在您的最終網頁中產生正確的連結，以載入正確的程式碼。 如需詳細資訊，請 [參閱「用戶端程式庫在AEM中的運作方式」。](/help/sites-developing/clientlibs.md)
 
-![](assets/default_toolbar_layout.png) 工具列的範例版面配置&#x200B;****&#x200B;圖：工 *具列的範例版面*
+![工具列的範例版面配置](assets/default_toolbar_layout.png)**圖：** *工具列的範例版面*
 
 最適化表單提供一組現成可用的版面：
 
-![](assets/toolbar1.png) 工具列版面現成可用圖 ****&#x200B;表：工 *具列版面現成可用*
+![工具列版面現成可用圖 ](assets/toolbar1.png)**表：** *現成可用的工具列版面*
 
 此外，您還可以建立自訂工具列版面。
 
@@ -42,7 +45,7 @@ CustomToolbarLayoutDemo.zip
 
 1. 建立檔案夾以維護自訂工具列版面。 例如：
 
-   `/apps/customlayout/toolbar`.
+   `/apps/customlayout/toolbar`。
 
    若要建立自訂版面，您可以使用（並自訂）下列檔案夾中的其中一個現成可用的工具列版面：
 
@@ -223,4 +226,4 @@ CustomToolbarLayoutDemo.zip
 >
 >「版面」下拉式清單中會顯示在上一步驟中更新的說明。
 
-![](assets/toolbar_1.png) 自訂版面工具列的案頭檢視&#x200B;****&#x200B;圖：自訂 *版面工具列的案頭檢視*
+![自訂版面工具列的案頭檢視](assets/toolbar_1.png)**圖：** *自訂版面工具列的案頭檢視*
