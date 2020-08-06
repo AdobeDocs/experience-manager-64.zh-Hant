@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '2542'
+ht-degree: 2%
 
 ---
 
@@ -25,13 +28,13 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 >[!NOTE]
 >
->用於建立社區站點的控 [制台](sites-console.md)、社 [區站點模板](sites.md)、 [社區組模板和社區功](tools-groups.md)[](functions.md) 能僅供作者環境使用。
+>用於建立社區站點的控 [制台](sites-console.md)、社 [區站點模板](sites.md)、 [社區組模板和社](tools-groups.md)[](functions.md) 區功能僅在作者環境中使用。
 
 ## 社群功能主控台 {#community-functions-console}
 
 在作者環境中，要到達社群功能主控台
 
-* 從全域導覽：工 **[!UICONTROL 具>社群>社群功能]**
+* 從全域導覽： **[!UICONTROL 工具>社群>社群功能]**
 
 ![chlimage_1-379](assets/chlimage_1-379.png)
 
@@ -51,7 +54,9 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
-* **[!UICONTROL Title]**(*必要*)出現在網站功能選單中的文字
+* **[!UICONTROL 標題]**
+(
+*必要*)網站功能選單中顯示的文字
 
 * **[!UICONTROL URL]**(必&#x200B;*要*)用於產生URI的名稱。 名稱必須符合AEM和JCR [所強加](../../help/sites-developing/naming-conventions.md) 的命名慣例。
 
@@ -72,7 +77,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 #### 設定功能詳細資料 {#configuration-function-details-1}
 
-![chlimage_1-382](assets/chlimage_1-382.png)
+![chlimage_1-302](assets/chlimage_1-382.png)
 
 * 請參閱 [標題和URL設定](#title-and-url-settings)
 * **[!UICONTROL 顯示「我的活動」視圖]**&#x200B;如果選中，「活動」頁將包含一個頁籤，該頁籤根據當前成員在社區中生成的活動進行篩選。 已勾選預設值。
@@ -182,7 +187,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 >[!CAUTION]
 >
->群組函式不 *能是**網站結構* 或社群網站範本中的第一個也不能是唯一函式。
+>群組函式不 *能是**網站結構* 或社群網站範本中的第一個，也不能是唯一的函式。
 >
 >任何其他函式(例如頁 [面函式](#page-function))必須先包含並列出。
 
@@ -228,7 +233,7 @@ Ideation函式是具有一個Ideation元件 [的頁面](ideation-feature.md)。
 
 排行榜功能是包含一個「排行榜」組 [件的頁面](enabling-leaderboard.md)。
 
-**注意**:在從包含Leedroard功能的社區模板 *建立社區站點* 後，Leederboard元件需要進一步配置。 需要指定Leaderboard組 [件的規則](enabling-leaderboard.md#rules-tab) ，這取決於社區站點 [的計分和標章](implementing-scoring.md) 。
+**注意**: 在從包含Leedroard功能的社區模板 *建立社區站點* 後，Leederboard元件需要進一步配置。 需要指定Leaderboard組 [件的規則](enabling-leaderboard.md#rules-tab) ，這取決於社區站點 [的計分和標章](implementing-scoring.md) 。
 
 新增至範本時，會開啟下列對話方塊，指定範本的預設標題和URL名稱，以及預設顯示設定：
 
@@ -249,7 +254,7 @@ Ideation函式是具有一個Ideation元件 [的頁面](ideation-feature.md)。
 
 ### 頁面功能 {#page-function}
 
-頁面功能會將空白頁面新增至社群網站，並將其連線至社群網站的功能：登入、選單、通知、訊息、主題和品牌。 內容可使用標準AEM製作模式 [新增至頁面](../../help/sites-authoring/editing-content.md)。
+頁面功能會將空白頁面新增至社群網站，並將其連線至社群網站的功能： 登入、選單、通知、訊息、主題和品牌。 內容可使用標準AEM製作模式 [新增至頁面](../../help/sites-authoring/editing-content.md)。
 
 新增至範本時，唯一的設定是「標題」 [和「URL設定」](#title-and-url-settings)。
 
