@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 >[!NOTE]
 >
->本檔案著重於使用傳統UI中的 [Foundation Components](/help/sites-authoring/default-components-foundation.md) ，來開發表格。 Adobe建議在觸控式UI中 [運用新的核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)[和隱藏條件](/help/sites-developing/hide-conditions.md) ，以開發表格。
+>本檔案著重於使用傳統UI中的 [Foundation Components](/help/sites-authoring/default-components-foundation.md) ，來開發表格。 Adobe建議在觸控式UI中 [運用新的核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)[和隱藏條件](/help/sites-developing/hide-conditions.md) ，以開發表格。
 
 ## 預載表單值 {#preloading-form-values}
 
@@ -136,7 +139,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
       指令碼的名稱為 `forward.<extension`>，例如 `forward.jsp`
 
       此指令碼可以定義路徑。 然後，將當前請求轉發到指定的路徑。
-   必要的呼叫 `FormsHelper#setForwardPath` 是（2個變體）。 典型的情況是執行一些驗證或邏輯，以尋找目標路徑，然後轉送至該路徑，讓預設的Sling POST servlet在JCR中執行實際儲存。
+   必要的呼叫 `FormsHelper#setForwardPath` 是（2個變體）。 典型的案例是執行一些驗證或邏輯，以尋找目標路徑，然後轉送至該路徑，讓預設Sling POST servlet在JCR中執行實際儲存。
 
    也可能有另一個Servlet會執行實際處理，在這種情況下，表單動作 `forward.jsp` 和只會做為「黏合」程式碼。 其中一個示例是位於的郵件操 `/libs/foundation/components/form/actions/mail`作，它將詳細資訊轉 `<currentpath>.mail.html`發到郵件servlet所在的位置。
 
@@ -144,6 +147,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
    * a對 `post.POST.jsp` 於由操作本身完全完成的小操作非常有用
    * 而只 `forward.jsp` 需委託時，則很實用。
+
    指令碼的執行順序為：
 
    * 在轉譯表單( `GET`)時：
@@ -275,7 +279,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 ![showhidedition](assets/showhidecondition.png)
 
-在Javascript中，條件會使用「元素名稱」屬性的值來參考欄位。 在上例中，Radio group元件的「元素名稱」屬性為 `contact`。 下列程式碼是該範例的等效Javascript程式碼：
+在Javascript中，條件會使用「元素名稱」屬性的值來參考欄位。 在上例中，Radio Group元件的「元素名稱」屬性為 `contact`。 下列程式碼是該範例的等效Javascript程式碼：
 
 `((contact == "Yes"))`
 
@@ -292,6 +296,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
       * **any** —— 如果只有一個或多個條件必須為true才能顯示或隱藏元件
    * 在條件行中（一個顯示為預設值），選擇元件、運算子，然後指定值。
    * 視需要按一下「新增條件」，新增 **更多條件**。
+
    例如：
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
