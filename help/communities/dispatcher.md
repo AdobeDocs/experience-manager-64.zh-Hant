@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 瞭解您特定部署和網站設計的必要項目
 
-* 聯絡 [客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+* 聯絡 [客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)
 
 另請參見主要 [Dispatcher文檔](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)。
 
@@ -61,9 +64,11 @@ OSGi組態 **ACS AEM Commons - Dispatcher Cache Control Header - Max Age** （Di
 ![chlimage_1-339](assets/chlimage_1-339.png)
 
 * **篩選模式**
+
    *（必要）* ，一或多個社群頁面路徑。 For example, `/content/sites/engage/(.*)`.
 
 * **快取控制最大使用時間**
+
    *（必要）* ，要新增至「快取控制」標題的最大時段（以秒為單位）。 值必須大於零(0)。
 
 ## Dispatcher Client標題 {#dispatcher-client-headers}
