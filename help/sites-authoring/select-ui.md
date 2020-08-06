@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 1%
 
 ---
 
@@ -34,9 +37,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 設計用於觸控和桌上型裝置時，所有裝置的外觀和感覺都相同，但檢視和選取資源 [的方式略有不同](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) （點選與點選）。
 
       * 桌面:
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * 平板電腦裝置（或桌上型電腦，寬度小於1024像素）:
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. 傳統 UI
@@ -45,6 +50,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 它主要是綠色的。
    * 它是專為桌上型裝置所設計。
    * 以下說明檔案著重於現代UI。 如需在傳統UI中製作內容的詳細資訊，請參 [閱Classic UI的製作檔案](/help/sites-classic-ui-authoring/classicui.md)。
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## 切換UI
@@ -85,7 +91,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ## 設定帳戶的傳統UI編寫 {#setting-classic-ui-authoring-for-your-account}
 
-每位使用者都可存取其使 [用者偏好](/help/sites-authoring/user-properties.md) ，以定義他／她是否希望使用傳統UI來製作頁面（而非預設UI）。
+每位使用者都可存取其使 [用者偏好](/help/sites-authoring/user-properties.md) ，以定義他／她是否想要使用傳統UI來製作頁面（而非預設UI）。
 
 這可以由會話設定覆蓋。
 
@@ -167,6 +173,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >
 >* 手動編輯URL —— 非標準URL可能導致未知情況及功能不足。
 >* 讓兩個編輯器同時開啟——例如，在個別視窗中。
+
 >
 
 
