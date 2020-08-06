@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '2187'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,11 @@ Forms服務可以根據您使用Designer建立的片段來轉換表單。 片 *�
 
 以下是使用片段的優點：
 
-* **內容重複使用**:您可以使用片段，在多個表單設計中重複使用內容。 當您需要在多個表單中使用某些相同的內容時，使用片段比複製或重新建立內容更快更簡單。 使用片段也可確保表格設計中常用的部分在所有參照表格中具有一致的內容和外觀。
-* **全域更新**:您可以使用片段，在單一檔案中僅對多個表單進行一次全域變更。 您可以變更片段中的內容、指令碼物件、資料系結、版面或樣式，而所有參照片段的XDP表單都會反映變更。
+* **內容重複使用**: 您可以使用片段，在多個表單設計中重複使用內容。 當您需要在多個表單中使用某些相同的內容時，使用片段比複製或重新建立內容更快更簡單。 使用片段也可確保表格設計中常用的部分在所有參照表格中具有一致的內容和外觀。
+* **全域更新**: 您可以使用片段，在單一檔案中僅對多個表單進行一次全域變更。 您可以變更片段中的內容、指令碼物件、資料系結、版面或樣式，而所有參照片段的XDP表單都會反映變更。
 * 例如，許多表單中的共同元素可能是包含國家／地區下拉式清單物件的位址區塊。 如果您需要更新下拉式清單物件的值，您必須開啟許多表單才能進行變更。 如果將地址塊包含在片段中，則只需開啟一個片段檔案即可進行更改。
 * 若要更新PDF表單中的片段，您必須在Designer中儲存表單。
-* **共用表單建立**:您可以使用片段，在多個資源間共用表單建立。 具備指令碼專業知識的開發人員或Designer其他進階功能的表單，可開發並共用可運用指令碼和動態屬性的片段。 表單設計人員可以使用這些片段來配置表單設計版面，並確保表單的所有部分在由多人設計的多個表單中具有一致的外觀和功能。
+* **共用表單建立**: 您可以使用片段，在多個資源間共用表單建立。 具備指令碼專業知識的開發人員或Designer其他進階功能的表單，可開發並共用可運用指令碼和動態屬性的片段。 表單設計人員可以使用這些片段來配置表單設計版面，並確保表單的所有部分在由多人設計的多個表單中具有一致的外觀和功能。
 
 ### 使用碎片裝配表單設計 {#assembling-a-form-design-assembled-using-fragments}
 
@@ -90,7 +93,7 @@ Forms服務可以根據您使用Designer建立的片段來轉換表單。 片 *�
 
 [使用web service API，根據片段來轉換表單](#render-forms-based-on-fragments-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -129,6 +132,7 @@ Forms服務可以根據您使用Designer建立的片段來轉換表單。 片 *�
    * 存 `PDFFormRenderSpec` 儲運行時選項的對象。
    * 包 `URLSpec` 含Forms服務根據片段呈現表單所需URI值的物件。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
+
    該方 `renderPDFForm` 法返回包 `FormsResult` 含必須寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
@@ -145,9 +149,9 @@ Forms服務可以根據您使用Designer建立的片段來轉換表單。 片 *�
 
 [根據片段呈現表單](#rendering-forms-based-on-fragments)
 
-[快速入門（SOAP模式）:使用Java API根據片段轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API根據片段轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -184,6 +188,7 @@ Forms服務可以根據您使用Designer建立的片段來轉換表單。 片 *�
    * 由方 `javax.xml.rpc.holders.LongHolder` 法填充的空對象。 此引數將儲存表單中的頁數。
    * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空對象。 此引數將儲存地區值。
    * 包含 `com.adobe.idp.services.holders.FormsResultHolder` 此操作結果的空對象。
+
    該方 `renderPDFForm` 法用必 `com.adobe.idp.services.holders.FormsResultHolder` 須寫入客戶端Web瀏覽器的表單資料流填充作為最後一個參數值傳遞的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
