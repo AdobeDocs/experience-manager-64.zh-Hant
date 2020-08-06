@@ -47,7 +47,7 @@ Forms服務可讓您建立互動式資料擷取用戶端應用程式，以驗證
 * 轉換互動式PDF表單。 (請參 [閱轉換互動式PDF表單](/help/forms/developing/rendering-interactive-pdf-forms.md)。)
 * 在用戶端上演算表格。 (請參 [閱用戶端上的轉譯表單](/help/forms/developing/rendering-forms-client.md)。)
 * 根據片段來轉換表單。 (請參 [閱根據片段轉譯表單](/help/forms/developing/rendering-forms-based-fragments.md))。
-* 轉譯啟用權限的表單。 (請參 [閱轉換啟用權限的表單](/help/forms/developing/rendering-rights-enabled-forms.md)。)
+* 轉譯啟用權限的表格。 (請參 [閱轉換啟用權限的表單](/help/forms/developing/rendering-rights-enabled-forms.md)。)
 * 將表單轉換為HTML。 (請參 [閱「將表單轉換為HTML](/help/forms/developing/rendering-forms-html.md)」)。
 * 使用自訂CSS檔案轉換HTML表格(使[用自訂CSS檔案轉換HTML表格](/help/forms/developing/rendering-html-forms-using-custom.md))。
 * 處理提交的表單。 (請參 [閱處理提交的表單](/help/forms/developing/handling-submitted-forms.md)。)
