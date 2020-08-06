@@ -9,6 +9,9 @@ topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
 translation-type: tm+mt
 source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
 
 ![自適應格式資料](assets/adaptiveformdata.png)
 
-## 步驟1:建立最適化表單 {#step-create-an-adaptive-form}
+## 步驟1: 建立最適化表單 {#step-create-an-adaptive-form}
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
@@ -77,7 +80,7 @@ source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
-## 步驟3:將規則套用至最適化表單欄位 {#step-apply-rules-to-adaptive-form-fields}
+## 步驟3: 將規則套用至最適化表單欄位 {#step-apply-rules-to-adaptive-form-fields}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -88,7 +91,7 @@ source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
 * 建立規則並套用至最適化表單欄位
 * 使用規則觸發表單資料模型服務，將資料更新至資料庫
 
-## 步驟4:設定最適化表單的樣式 {#step-style-your-adaptive-form}
+## 步驟4: 設定最適化表單的樣式 {#step-style-your-adaptive-form}
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
@@ -102,7 +105,7 @@ source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## 步驟5:測試您的最適化表單 {#step-test-your-adaptive-form}
+## 步驟5: 測試您的最適化表單 {#step-test-your-adaptive-form}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -115,7 +118,7 @@ source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
 
 若要瞭解SDK，請參閱「 [使用自動測試搭配AEM Adaptive表單](/help/forms/using/calvin.md)」。
 
-## 步驟6:發佈最適化表單 {#step-publish-your-adaptive-form}
+## 步驟6: 發佈最適化表單 {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
