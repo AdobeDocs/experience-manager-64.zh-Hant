@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ FFmpeg應安裝在代管AEM作者例 *項* 的伺服器上。
 若要修改DAM更新資產工作流程，以及在此範例中，若要關閉轉碼：
 
 * 以管理權限登入作者例項
-* 從全域導覽：「工 **[!UICONTROL 具>工作流>模型」]**
+* 從全域導覽： **[!UICONTROL 「工具>工作流程>模型」]**
 * 尋找 **[!UICONTROL DAM更新資產]**
 * 連按兩下以開啟Classic UI中要編輯的工作流程
 
@@ -58,7 +61,7 @@ FFmpeg應安裝在代管AEM作者例 *項* 的伺服器上。
 * 連按兩下 **[!UICONTROL FFmpeg轉碼步驟]** ，以存取「步驟屬性」對話方塊
 * 在「流程 **[!UICONTROL 」(Process]** )頁籤下：
 
-   * **[!UICONTROL 圖]**:清除所有條目以禁用轉碼預設值： `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL 圖]**: 清除所有條目以禁用轉碼預設值： `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
