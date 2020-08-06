@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 0%
 
 ---
 
@@ -81,7 +84,7 @@ Assembler服務返回可寫入XML日誌檔案的驗證結果。 匯編器服務�
 
 [使用web service API驗證DDX檔案](#validate-a-ddx-document-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -118,6 +121,7 @@ Assembler服務返回可寫入XML日誌檔案的驗證結果。 匯編器服務�
    * 表 `com.adobe.idp.Document` 示DDX文檔的對象。
    * 通常 `null` 儲存PDF檔案的java.io.Map物件值。
    * 指 `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 定運行時選項的對象。
+
    該方 `invokeDDX` 法返回一 `AssemblerResult` 個包含指定DDX文檔是否有效的資訊的對象。
 
 1. 將驗證結果保存到日誌檔案中。
@@ -125,6 +129,7 @@ Assembler服務返回可寫入XML日誌檔案的驗證結果。 匯編器服務�
    * 建立物 `java.io.File` 件，並確定副檔名為。xml。
    * 叫用 `AssemblerResult` 物件的方 `getJobLog` 法。 此方法會傳回包 `com.adobe.idp.Document` 含驗證資訊的例項。
    * 叫用 `com.adobe.idp.Document` 物件的方 `copyToFile` 法，將物件的內容 `com.adobe.idp.Document` 複製至檔案。
+
    >[!NOTE]
    >
    >如果DDX文檔無效，則拋 `OperationException` 出一個。 在catch語句中，可以調用對 `OperationException` 像的方 `getJobLog` 法。
@@ -133,9 +138,9 @@ Assembler服務返回可寫入XML日誌檔案的驗證結果。 匯編器服務�
 
 [驗證DDX文檔](#validating-ddx-documents)
 
-[快速入門（SOAP模式）:使用Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) （SOAP模式）驗證DDX檔案
+[快速入門（SOAP模式）: 使用Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) （SOAP模式）驗證DDX檔案
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -145,7 +150,7 @@ Assembler服務返回可寫入XML日誌檔案的驗證結果。 匯編器服務�
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -185,6 +190,7 @@ Assembler服務返回可寫入XML日誌檔案的驗證結果。 匯編器服務�
    * 表 `BLOB` 示DDX文檔的對象。
    * 通常 `null` 儲存PDF文 `Map` 檔的對象的值。
    * 指定 `AssemblerOptionSpec` 運行時選項的對象。
+
    該方 `invokeDDX` 法返回一 `AssemblerResult` 個包含指定DDX文檔是否有效的資訊的對象。
 
 1. 將驗證結果保存到日誌檔案中。
@@ -194,6 +200,7 @@ Assembler服務返回可寫入XML日誌檔案的驗證結果。 匯編器服務�
    * 建立儲存物件內容的位元組 `BLOB` 陣列。 取得物件欄位的值，以填入 `BLOB` 位元組陣 `MTOM` 列。
    * 通過調 `System.IO.BinaryWriter` 用其建構子並傳遞對象來建立 `System.IO.FileStream` 對象。
    * 調用物件的方法並傳遞位元組陣列，將位元組 `System.IO.BinaryWriter` 的內容 `Write` 寫入PDF檔案。
+
    >[!NOTE]
    >
    >如果DDX文檔無效，則拋 `OperationException` 出一個。 在catch語句中，可以獲取對象成 `OperationException` 員的值 `jobLog` 。
