@@ -9,13 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 0%
 
 ---
 
 
 # Setting Up Dynamic Media {#setting-up-dynamic-media}
 
-[動態媒體](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) (Dynamic Media)可協助您管理資產，提供豐富的視覺化銷售和隨選行銷資產，並可自動縮放，以供網頁、行動裝置和社交網站使用。 Dynamic media使用一組主資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
+[動態媒體](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) (Dynamic Media)可協助您管理資產，提供豐富的視覺化銷售和隨選行銷資產，並可自動縮放，以供網頁、行動裝置和社交網站使用。 Dynamic Media使用一組主資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
 
 >[!NOTE]
 >
