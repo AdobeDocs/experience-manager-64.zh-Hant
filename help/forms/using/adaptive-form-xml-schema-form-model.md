@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1081'
+ht-degree: 3%
 
 ---
 
@@ -167,6 +170,7 @@ XML架構由簡單而複雜的元素類型組成。 這些元素具有向元素�
 >
 >* 將元素名稱的第一個字元大寫
 >* 在駝峰大小寫邊界插入空格。
+
 >
 >
 例如，如果您新增模式元 `userFirstName` 素，則在最適化表單中產生的標題為 `User First Name`。
@@ -285,7 +289,7 @@ XML架構由簡單而複雜的元素類型組成。 這些元素具有向元素�
  </tbody> 
 </table>
 
-## Frequently asked questions {#frequently-asked-questions}
+## 常見問題 {#frequently-asked-questions}
 
 **我要如何知道樹中的哪個元素與哪個XML元素相關聯？**
 
@@ -297,7 +301,7 @@ bindRef</code> 欄位顯示樹元素與模式中的元素或屬性之間的關�
 
 >[!NOTE]
 >
->屬性的值 `@` 中有一個符 `bindRef`號，可以區分它們與元素。 For example, `/config/projectDetails/@duration`.
+>屬性的值 `@` 中有一個符 `bindRef`號，可以與元素區分。 For example, `/config/projectDetails/@duration`.
 
 **為什麼我無法將子表單的個別元素（從任何複雜類型產生的結構）拖曳至可重複的子表單（minOccours或maxOccuns值大於1）?**
 
