@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 20%
 
 ---
 
@@ -31,7 +34,7 @@ It can be accessed from **Tools** -> **General** -> **Components**. 在主控台
 
 使用「 **僅內容****** 」圖示 (左上角)，您可以開啟「搜尋」面板以搜尋和/或篩選元件：
 
-![chlimage_1-302](assets/chlimage_1-302.png)
+![chlimage_1-382](assets/chlimage_1-302.png)
 
 ## 元件詳細資訊 {#component-details}
 
