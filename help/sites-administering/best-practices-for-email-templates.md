@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
 source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+workflow-type: tm+mt
+source-wordcount: '1054'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +58,7 @@ AEM中提供的示範促銷活動會遵循所有這些最佳實務。 針對每�
   </tr> 
   <tr> 
    <td><p>指定字元定義，以確保正確轉譯特殊字元。</p> <p>將CHARSET聲明（例如iso-8859-15、UTF-8）新增至&lt;head&gt;</p> </td> 
-   <td><p>設為UTF-8。</p> <p>&lt;meta http-equiv="content-type" content="text/html;charset=UTF-8"&gt;</p> </td> 
+   <td><p>設為UTF-8。</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td> 
   </tr> 
   <tr> 
    <td><p>使用&lt;table&gt;元素對所有結構進行編碼。 對於更複雜的版面，您應巢狀內嵌表格以建立複雜的結構。</p> <p>即使沒有css，電子郵件看起來也不錯。</p> </td> 
@@ -79,7 +82,7 @@ AEM中提供的示範促銷活動會遵循所有這些最佳實務。 針對每�
   </tr> 
   <tr> 
    <td>電子郵件的寬度應為600-800像素。 這樣，在許多用戶端提供的預覽窗格大小中，他們的行為會更好。</td> 
-   <td>內 <i>容表格</i> ，在示範設計中的寬度限制為600像素。</td> 
+   <td>內 <i>容表格</i> 的寬度在示範設計中限制為600像素。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -152,6 +155,6 @@ AEM隨附數個範本和元件，讓您建立促銷活動電子報。 您可以�
 
 >[!NOTE]
 >
->這些元件針對郵件內容進行了優化；也就是說，他們遵守本檔案中概述的最佳實務。 使用其他現成可用的元件通常會違反這些規則。
+>這些元件針對郵件內容進行了優化； 也就是說，他們遵守本檔案中概述的最佳實務。 使用其他現成可用的元件通常會違反這些規則。
 
 這些元件在 [Adobe Campaign元件中有詳細說明](/help/sites-authoring/adobe-campaign-components.md)。
