@@ -1,8 +1,8 @@
 ---
-title: 設定您的Adobe Mobile Services cloud服務
-seo-title: 設定您的Adobe Mobile Services cloud服務
-description: 請依照本頁來設定您的Adobe Mobile Services cloud服務。
-seo-description: 請依照本頁來設定您的Adobe Mobile Services cloud服務。
+title: 設定您的Adobe Mobile Services Cloud服務
+seo-title: 設定您的Adobe Mobile Services Cloud服務
+description: 請依照本頁來設定您的Adobe Mobile Services Cloud服務。
+seo-description: 請依照本頁來設定您的Adobe Mobile Services Cloud服務。
 uuid: 21fe5b24-dc4d-4ee4-9e7f-ed4783baf276
 contentOwner: User
 content-type: reference
@@ -12,11 +12,14 @@ discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 
-# 設定您的Adobe Mobile Services cloud服務 {#configure-your-adobe-mobile-services-cloud-service}
+# 設定您的Adobe Mobile Services Cloud服務 {#configure-your-adobe-mobile-services-cloud-service}
 
 >[!NOTE]
 >
@@ -37,7 +40,7 @@ Adobe Mobile Analytics SDK提供下列功能：
 
 >[!CAUTION]
 >
->分析 **量度圖格** (Analyze Metrics Tile)只會在您已設定雲端服務時顯示在控制面板中。
+>「分 **析量度圖格** 」只會在您已設定雲端服務時，才會顯示在控制面板中。
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
