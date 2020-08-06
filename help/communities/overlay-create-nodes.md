@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 6%
 
 ---
 
@@ -34,7 +37,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 1. 瀏覽至 [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 1. 建 `/apps/social` 立（如果尚不存在）
    * 選擇節 `/apps` 點
-   * **[!UICONTROL 「建立>資料夾……」]**
+   * **[!UICONTROL 建立>資料夾……]**
       * 輸入名稱: `social`
 1. 選擇節 `social` 點
    * **[!UICONTROL 建立>資料夾……]**
@@ -43,7 +46,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
    * **[!UICONTROL 建立>資料夾……]**
       * 輸入名稱: `components`
 1. 選擇節 `components` 點
-   * **[!UICONTROL 「建立>資料夾。.]**.」
+   * **[!UICONTROL 建立>資料夾。.]**.
       * 輸入名稱: `hbs`
 1. 選擇節 `hbs` 點
    * **[!UICONTROL 「建立>建立元件……」]**
@@ -78,6 +81,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
+
 >
 
 
