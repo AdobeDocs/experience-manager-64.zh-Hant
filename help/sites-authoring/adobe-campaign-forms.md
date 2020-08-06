@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1306'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +54,7 @@ AEM可讓您建立並使用網站上與Adobe Campaign互動的表單。 特定�
 
 >[!NOTE]
 >
->使用Adobe Campaign Classic或Adobe Campaign Standard時，請確 **定頁面的** jcr:content **node上的acMapping** 屬性已分別設為mapRecipient **或****** profileCampaign Standard
+>使用Adobe Campaign Classic或 **Adobe Campaign Standard時，請確定頁面** jcr:content **node上的acMapping** 屬性已分別設為mapRecipient **或****** profileCampaign Standard
 
 
 1. 在AEM的「網站」中，導覽至您要建立新頁面的位置。
@@ -65,7 +68,7 @@ AEM可讓您建立並使用網站上與Adobe Campaign互動的表單。 特定�
 
 1. 在「名 **稱** 」欄位中，新增頁面名稱。 它必須是有效的JCR名稱。
 1. 在「標 **題** 」欄位中輸入標題，然後按一下「 **建立」**。
-1. 開啟頁面並選取「 **開啟屬性** 」，然後在Cloud services中新增Adobe Campaign設定，並選取核取標籤以儲存變更。
+1. 開啟頁面並選取「 **開啟屬性** 」，然後在Cloud Services中新增Adobe Campaign設定，並選取核取標籤以儲存變更。
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
@@ -81,7 +84,7 @@ Adobe Campaign專用的表單具有特定的元件。 這些元件可讓您將�
 
 本節僅詳細說明Adobe Campaign的特定連結。 如需有關如何在Adobe Experience Manager中使用表單的更一般性概觀的詳細資訊，請參閱「編輯模式 [元件」](/help/sites-authoring/default-components-foundation.md)。
 
-1. 選 **取「開啟屬性** 」，然後在Cloud services中新增Adobe Campaign設定，並選取核取標籤以儲存變更。
+1. 選 **取「開啟屬性** 」，然後在Cloud Services中新增Adobe Campaign設定，並選取核取標籤以儲存變更。
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -91,9 +94,9 @@ Adobe Campaign專用的表單具有特定的元件。 這些元件可讓您將�
 
 1. 按一下「 **Advanced** （高級）」頁籤，然後選擇其表單類型- 「 **Subscribe（訂閱）」 、 「Unsubscribe（取消訂閱）」** 或「Save Profile（保存配置檔案） **」 ，然後按一下「****OK（確定）」。** 每個表單只能有一種類型。
 
-   * **Adobe Campaign:儲存設定檔**:可讓您在Adobe Campaign中建立或更新收件者（預設值）。
-   * **Adobe Campaign:訂閱服務**:可讓您管理Adobe Campaign中收件者的訂閱。
-   * **Adobe Campaign:取消訂閱服務**:可讓您取消Adobe Campaign中收件者的訂閱。
+   * **Adobe Campaign: 儲存設定檔**: 可讓您在Adobe Campaign中建立或更新收件者（預設值）。
+   * **Adobe Campaign: 訂閱服務**: 可讓您管理Adobe Campaign中收件者的訂閱。
+   * **Adobe Campaign: 取消訂閱服務**: 可讓您取消Adobe Campaign中收件者的訂閱。
 
 1. 每個表單上都必 **須有Encrypted Primary Key** （加密主密鑰）元件。 此元件定義將使用哪個URL參數來接受Adobe Campaign設定檔的加密主要金鑰。 在「元件」中，選取「Adobe Campaign」，只顯示這些元件。
 1. 將元件「 **Encrypted Primary Key** 」（加密的主密鑰）拖動到表單（任意位置），然後按一下或點選「 **Configuration** 」（配置）表徵圖。 在「 **Adobe促銷活動** 」標籤中，指定URL參數的任何名稱。 按一下或點選核取標籤以儲存變更。
@@ -138,7 +141,7 @@ Adobe Campaign專用的表單具有特定的元件。 這些元件可讓您將�
    * 在Adobe Campaign Standard —— 導覽至「設定檔 **與觀眾** >設定 **檔**」，其中列出現有的設定檔。 請確定表格在欄中顯 **示「主資源識別碼** 」欄位(按一下／點選「設定清單 ****」即可設定此欄位)。 複製所要描述檔的主要資源識別碼。
    * 在Adobe Campaign Classic中，前往「設定檔 **與目標** >收 **件者**」，其中列出現有的設定檔。 請確定表在列中顯示「 **Encrypted identifier** 」(加密的標識符 **)欄位(可通過按一下右鍵某個條目並選擇「** Configure list...)來配置此欄位。 複製所需描述檔的加密識別碼。
 
-1. 在AEM中，開啟發佈例項上的表單頁面，並將步驟1的EPK附加為URL參數：在編寫表單時，請使用先前在EPK元件中定義的相同名稱(例如： `?epk=...`)
+1. 在AEM中，開啟發佈例項上的表單頁面，並將步驟1的EPK附加為URL參數： 在編寫表單時，請使用先前在EPK元件中定義的相同名稱(例如： `?epk=...`)
 1. 現在，該表單可用來修改與連結的Adobe Campaign設定檔相關聯的資料和訂閱。 在您修改部分欄位並送出表單後，您可以在Adobe Campaign中驗證是否已更新適當的資料。
 
 在驗證表單後，Adobe Campaign資料庫中的資料會更新。
