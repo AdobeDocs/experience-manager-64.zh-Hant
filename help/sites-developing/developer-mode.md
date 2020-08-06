@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
 source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +50,7 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 >
 >* 在使用nosamplecontent run-mode的作者實例上
 >* 發佈實例
+
 >
 >
 使用後應再次停用。
@@ -100,6 +104,7 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
    * 用於呈現元件的所有元件指令碼。
    * 此特定元件的儲存庫內容路徑。
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **編輯指令碼**: 連結：
@@ -110,6 +115,7 @@ source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
    * 所選元件內的層次。
    * 單獨呈現所選元件的時間、其中巢狀內嵌的任何個別元件，以及總和。
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
