@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 0%
 
 ---
 
@@ -56,13 +59,13 @@ footer.jsp模組為空。 它允許您添加僅用於用戶交互的指令碼。
 
 ### 建立配置檔案節點 {#create-profile-node}
 
-1. 導覽至URL上的CRX DE介面：並 `https://[server]:[port]/crx/de` 使用管理員憑據登錄到介面。
+1. 導覽至URL上的CRX DE介面： `https://[server]:[port]/crx/de` 並使用管理員憑據登錄到介面。
 
 1. 在左窗格中，導覽至位置/ *內容/xfaforms/描述檔*。
 
 1. 複製節點預設值，並將節點貼到名稱為hrform的不&#x200B;*同資料夾(/content/profiles*) *中*。
 
-1. 選擇新節點、 *hrform*，然後添加字串屬性： *sling:resourceType* with value:hrform/ *demo*。
+1. 選擇新節點、 *hrform*，然後添加字串屬性： *sling:resourceType* with value: *hrform/demo*。
 
 1. 按一下工具列選單中的「全部儲存」以儲存變更。
 
