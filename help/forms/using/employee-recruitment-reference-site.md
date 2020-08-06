@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1452'
+ht-degree: 0%
 
 ---
 
@@ -148,7 +151,7 @@ John Doe會安排面試，並將詳細資訊發送給Sarah Rose
 
 ## 莎拉·羅絲收到電子郵件並安排面試 {#sarah-rose-receives-the-email-with-interview-schedule}
 
-Sarah rose會收到電子郵件，內含面試時間表、地點和其他詳細資訊。 她按下「接受」，表示她對面試時間表和場地沒問題。 在精確資訊的指引下，莎拉參加了面試。
+Sarah Rose會收到電子郵件，內含面試時間表、地點和其他詳細資訊。 她按下「接受」，表示她對面試時間表和場地沒問題。 在精確資訊的指引下，莎拉參加了面試。
 
 ![薩拉赫羅斯被採訪者郵件](assets/sarahroseinterviewemail.png)
 
@@ -172,11 +175,11 @@ Gloria的AEM收件匣
 
 ![johndoeinbox](assets/johndoeinbox.png)![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 
-John Doe向Sarah rose索取更多有關其教育與工作經驗的資訊
+John Doe向Sarah Rose索取更多有關其教育與工作經驗的資訊
 
 ## 莎拉·羅絲收到電子郵件，要求進一步資訊 {#sarah-rose-receives-an-email-requesting-further-information}
 
-Sarah rose收到一封電子郵件，通知她需要進一步資訊才能處理她的就業申請。 電子郵件包含表單的連結，以填寫所需資訊。
+Sarah Rose收到一封電子郵件，通知她需要進一步資訊才能處理她的就業申請。 電子郵件包含表單的連結，以填寫所需資訊。
 
 ![sarahroseemailmore詳細資訊](assets/sarahroseemailmoredetails.png)
 
@@ -194,7 +197,7 @@ Sarah會根據John Doe的要求填入其他資訊，然後按一下「提交」
 
 ## John Doe會檢閱選取的候選設定檔，以取得其他提供的資訊 {#john-doe-reviews-the-selected-candidate-profile-for-the-additional-information-provided}
 
-John Doe會選取候選審核請求並開啟它。 John Doe發現Sarah已根據需要填寫了所有資訊。 在檢閱應用程式後，John Doe按一下「核准」。 經John Doe批准，對Sarah rose進行背景調查的請求將轉發給John Jacobs。
+John Doe會選取候選審核請求並開啟它。 John Doe發現Sarah已根據需要填寫了所有資訊。 在檢閱應用程式後，John Doe按一下「核准」。 經John Doe批准，對Sarah Rose進行背景調查的請求將轉發給John Jacobs。
 
 ![johndoed附加資訊收件箱](assets/johndoeadditionainformationinbox.png)
 
