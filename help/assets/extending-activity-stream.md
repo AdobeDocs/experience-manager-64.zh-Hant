@@ -4,6 +4,9 @@ description: 說明AEM的錄制功能，以及如何設定AEM以記錄特定事�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 0%
 
 ---
 
