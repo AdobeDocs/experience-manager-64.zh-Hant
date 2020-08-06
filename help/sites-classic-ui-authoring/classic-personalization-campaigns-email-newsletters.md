@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 先前往「 **網站** 」，再 **前往「促銷活動**」。 選擇促銷活動。
 1. 按一 **下「新增** 」以開啟「 **建立頁面** 」視窗。
 1. 輸入標題、名稱，並從可用範本清 **單中選取Geometrixx** Newsletter範本。
-1. 按一下 **建立**。
+1. 按一下&#x200B;**建立**。
 1. 開啟建立的電子郵件。
 1. 切換至設計模式，以選取您要在sidekick中顯示的元件。
 1. 切換至編輯模式，開始將內容(文字、影像 [、電子郵件工具](#adding-exacttarget-email-tools-to-your-email)[、個人化變數](#adding-text-and-personalization-tool-to-your-e-mail)，等等)新增至您的電子郵件。
@@ -108,7 +111,8 @@ ExactTarget **的「電子郵件工具** 」元件可為您的電子郵件／電
 >* 只有當使用「簡單傳送」或「引導傳送」（而非「測試傳送」）傳送電子郵件時，電子郵件工具中的URL才會以 **其實際值取代（在收到的電子郵件中）**********。
    >
    >
-* 需要兩種電子郵件工具：實 **體郵寄地址（必要）****和描述檔中心（必要）**。 當電子郵件發佈至ExactTarget時，這兩個電子郵件工具預設會新增至每封郵件的底部。
+* 需要兩種電子郵件工具： **郵寄地址（必要）** 和 **描述檔中心（必要）**。 當電子郵件發佈至ExactTarget時，這兩個電子郵件工具預設會新增至每封郵件的底部。
+
 >
 
 
@@ -137,7 +141,7 @@ ExactTarget **的「電子郵件工具** 」元件可為您的電子郵件／電
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
-1. 按一下 **確定**。
+1. 按一下&#x200B;**「確定」**。
 
 ## 將電子郵件發佈至電子郵件服務 {#publishing-emails-to-email-service}
 
