@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
 translation-type: tm+mt
 source-git-commit: 7cced63c97b36ec3ab69e2fdcd347fffc3edf947
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ source-git-commit: 7cced63c97b36ec3ab69e2fdcd347fffc3edf947
 
 ## 根據Maven設定您的AEM專案 {#set-up-your-aem-project-based-on-maven}
 
-接著，使用Maven來設定您的專案，如 [How-To Build AEM Projects using Apache Maven中所述](/help/sites-developing/ht-projects-maven.md)。
+接著，使用Maven設定專案，如使用Apache Maven [建立AEM專案中所述](/help/sites-developing/ht-projects-maven.md)。
 
 ## 準備Eclipse的JSP支援 {#prepare-jsp-support-for-eclipse}
 
@@ -62,7 +65,7 @@ source-git-commit: 7cced63c97b36ec3ab69e2fdcd347fffc3edf947
 
    Eclipse的Maven支援外掛程式m2e不支援maven-jspc-plugin，而此組態會告訴m2e忽略外掛程式，以及清除暫存編譯結果的相關工作。
 
-   這不是問題：如 [How-To Work with JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)，此設定中的maven-jspc-plugin僅用於驗證JSP是否在生成過程中編譯。 Eclipse已報告JSP中的任何問題，不依賴此Maven增效模組。
+   這不是問題： 如 [How-To Work with JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)，此設定中的maven-jspc-plugin僅用於驗證JSP是否在生成過程中編譯。 Eclipse已報告JSP中的任何問題，不依賴此Maven增效模組。
 
    **myproject/content/pom.xml**
 
