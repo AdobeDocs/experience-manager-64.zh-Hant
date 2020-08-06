@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: c9e51008-6009-49a2-9c74-1c610cef2e7f
 translation-type: tm+mt
 source-git-commit: b7e5c42009acb5044d1112e66b8e65b528355736
+workflow-type: tm+mt
+source-wordcount: '1523'
+ht-degree: 0%
 
 ---
 
@@ -21,15 +24,15 @@ source-git-commit: b7e5c42009acb5044d1112e66b8e65b528355736
 
 ## 通過更名檔案更改埠號 {#changing-the-port-number-by-renaming-the-file}
 
-AEM的預設埠為4502。 如果該埠不可用或已在使用中，Quickstart會自動配置自己使用第一個可用埠號，如下所示：4502、8080、8081、8082、8083、8084、8085、8888、9362 `<random>`。
+AEM的預設埠為4502。 如果該埠不可用或已在使用中，Quickstart會自動配置自己使用第一個可用埠號，如下所示： 4502、8080、8081、8082、8083、8084、8085、8888、9362 `<random>`。
 
-您也可以通過更名快速啟動jar檔案來設定埠號，使檔案名包括埠號；例如， `cq5-publish-p4503.jar` 或 `cq5-author-p6754.jar`。
+您也可以通過更名快速啟動jar檔案來設定埠號，使檔案名包括埠號； 例如， `cq5-publish-p4503.jar` 或 `cq5-author-p6754.jar`。
 
 更名快速啟動jar檔案時，應遵循多種規則：
 
 * 更名檔案時，它必須以中 `cq;` 的開頭 `cq5-publish-p4503.jar`。
 
-* 建議您務必在端 *口號* 前加上-p;如cq5-publish-p4503.jar或cq5-author-p6754.jar中。
+* 建議您務必在端 *口號* 前加上-p; 如cq5-publish-p4503.jar或cq5-author-p6754.jar中。
 
 >[!NOTE]
 >
@@ -39,6 +42,7 @@ AEM的預設埠為4502。 如果該埠不可用或已在使用中，Quickstart�
 >* 這些數字必須在破折號之後
 >* 如果檔案名中有其他位，則埠號必須加上前置詞 `-p`
 >* 檔案名稱開頭的&quot;cq5&quot;首碼會被忽略
+
 >
 
 
@@ -49,7 +53,7 @@ AEM的預設埠為4502。 如果該埠不可用或已在使用中，Quickstart�
 
 ## 執行模式 {#run-modes}
 
-**執行模式** ，可讓您針對特定用途調整AEM實例；例如，製作或發佈、測試、開發、內部網路等。 這些模式也可讓您控制範例內容的使用。 此示例內容是在構建快速入門之前定義的，可包括包、配置等。 當您想要保持安裝精簡，而且不需要範例內容時，這對於生產就緒型安裝特別有用。 如需詳細資訊，請參閱：
+**執行模式** ，可讓您針對特定用途調整AEM實例； 例如，製作或發佈、測試、開發、內部網路等。 這些模式也可讓您控制範例內容的使用。 此示例內容是在構建快速入門之前定義的，可包括包、配置等。 當您想要保持安裝精簡，而且不需要範例內容時，這對於生產就緒型安裝特別有用。 如需詳細資訊，請參閱：
 
 * [執行模式](/help/sites-deploying/configure-runmodes.md)
 
@@ -86,9 +90,10 @@ AEM的預設埠為4502。 如果該埠不可用或已在使用中，Quickstart�
 
    * prunsrv_amd64
    * prunsrv_ia64
+
    此命令調用在64位Java（而非32位Java）中啟動Windows服務守護程式的相應指令碼。
 
-1. 為防止進程陷入多個進程，請增加最大堆大小和PermGen JVM參數。 找到該 `set jvm_options` 命令並按如下方式設定值：
+1. 為防止進程跳入多個進程，請增加最大堆大小和PermGen JVM參數。 找到該 `set jvm_options` 命令並按如下方式設定值：
 
    `set jvm_options=-XX:MaxPermSize=256M;-Xmx1792m`
 
@@ -101,9 +106,11 @@ AEM的預設埠為4502。 如果該埠不可用或已在使用中，Quickstart�
 1. 通過執行下列操作之一啟動服務：
 
    * 在「服務」控制面板中，按一下cq5，然後按一下「開始」。
+
    ![chlimage_1-71](assets/chlimage_1-71.png)
 
    * 在命令行中鍵入net start cq5。
+
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
 1. Windows表示服務正在運行。 AEM啟動，並且prunsrv可執行檔會出現在「任務管理器」中。 在您的網頁瀏覽器中，導覽至AEM，例如， `http://localhost:4502` 開始使用AEM。
@@ -226,7 +233,7 @@ Log files
 
 ## 在Amazon EC2環境中安裝AEM {#installing-aem-in-the-amazon-ec-environment}
 
-在Amazon Elastic Compute Cloud(EC2)例項上安裝AEM時，如果您在EC2例項上同時安裝作者和發佈，則Author例項會遵循如何安裝AEM例項的程式 [，以正確安裝](/help/sites-deploying/custom-standalone-install.md);不過，「發佈」例項會變成「作者」。
+在Amazon Elastic Compute Cloud(EC2)例項上安裝AEM時，如果您在EC2例項上同時安裝作者和發佈，則Author例項會遵循如何安裝AEM例項的程式 [，以正確安裝](/help/sites-deploying/custom-standalone-install.md); 不過，「發佈」例項會變成「作者」。
 
 在EC2環境上安裝Publish實例之前，請執行以下操作：
 
@@ -294,7 +301,7 @@ Log files
 AEM WCM啟動後，您也可以存取：
 
 * [CRXDE Lite](#accessing-crxde-lite) —— 用於訪問和管理儲存庫
-* [Web Console](#accessing-the-web-console) —— 用於管理或配置OSGi捆綁包（也稱為OSGi Console）
+* [Web Console](#accessing-the-web-console) —— 用於管理或配置OSGi捆綁包（也稱為OSGi控制台）
 
 ### 訪問CRXDE Lite {#accessing-crxde-lite}
 
