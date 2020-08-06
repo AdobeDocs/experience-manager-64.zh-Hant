@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 縮排等級和空白字元可能並不重要，但正確格式化的程式碼可大幅提升可讀性和可維護性。 應以團隊的身分討論並同意公約，然後在規則中加以遵循。
 
-### 針對高測試覆蓋率 {#aim-for-high-test-coverage}
+### 針對高測試覆蓋率  {#aim-for-high-test-coverage}
 
 隨著專案實作的規模增加，測試所需的時間也會增加。 如果沒有良好的測試覆蓋，測試團隊將無法進行擴展，開發人員最終將陷入漏洞之中。
 
@@ -62,7 +65,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 ### 遵循童子軍規則 {#follow-the-boy-scout-rule}
 
-童子軍有一條規矩：「留下比你找到的要好。」只要開發團隊的所有成員都遵守這項規則，在遇到麻煩時加以清理，程式碼就會不斷改進。
+童子軍有一條規矩： 「留下比你找到的要好。」 只要開發團隊的所有成員都遵守這項規則，在遇到麻煩時加以清理，程式碼就會不斷改進。
 
 ### 避免實作YAGNI功能 {#avoid-implementing-yagni-features}
 
