@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: e0608649-bd49-4f40-bc1b-821c9b208883
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ FormBridge是HTML5 Forms Bridge API，可讓您與表單互動。 如需FormBrid
 
 1. **選擇描述檔或建立描述檔**
 
-   1. 在CRX DE介面中，導航至： `https://[server]:[port]/crx/de`。
+   1. 在CRX DE介面中，導航至： `https://[server]:[port]/crx/de`.
    1. 使用管理員憑證登入。
    1. 建立描述檔或選擇現有描述檔。
 
@@ -75,7 +78,7 @@ FormBridge是HTML5 Forms Bridge API，可讓您與表單互動。 如需FormBrid
    >第9 **行包含** CSS樣式和JavaScript檔案的其他JSP參考，以設計頁面。
    >
    >第18行的&lt;div id=&quot;rightdiv&quot;>標 **簽包含** XFA表單的HTML程式碼片段。
-   頁面樣式化為兩個容器： **左****右**。 正確的容器有表格。 左側容器有兩個輸入欄位，並包含外部HTML頁面的一部分。
+   頁面樣式化為兩個容器： **左** 、 **右**。 正確的容器有表格。 左側容器有兩個輸入欄位，並包含外部HTML頁面的一部分。
    下列螢幕擷取畫面顯示表單在瀏覽器中的顯示方式。
 
    ![入口](assets/portal.jpg)
