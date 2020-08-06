@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +23,8 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 AEM提供您設定：
 
 * 中央記錄服務的全局參數
-* 要求資料記錄；要求資訊的專用記錄設定
-* 個別服務的特定設定；例如，日誌消息的單個日誌檔案和格式
+* 要求資料記錄； 要求資訊的專用記錄設定
+* 個別服務的特定設定； 例如，日誌消息的單個日誌檔案和格式
 
 這些都是 [OSGi配置](/help/sites-deploying/configuring-osgi.md)。
 
@@ -36,7 +39,7 @@ AEM提供您設定：
 * 記錄級別
 * 中央日誌檔案的位置
 * 要保存的版本數
-* 版本輪換；最大大小或時間間隔
+* 版本輪換； 最大大小或時間間隔
 * 寫入日誌消息時使用的格式
 
 >[!NOTE]
@@ -50,11 +53,11 @@ AEM提供您設定：
 * 特定記錄級別
 * 單個日誌檔案的位置
 * 要保存的版本數
-* 版本輪換；最大大小或時間間隔
+* 版本輪換； 最大大小或時間間隔
 * 寫入日誌消息時使用的格式
 * the logger(the OSGi service suppliding the log messages)
 
-這可讓您將單一服務的記錄訊息傳送至個別檔案。 這在開發或測試時特別有用；例如，當您需要特定服務的日誌級別提高時。
+這可讓您將單一服務的記錄訊息傳送至個別檔案。 這在開發或測試時特別有用； 例如，當您需要特定服務的日誌級別提高時。
 
 AEM使用下列功能將記錄訊息寫入檔案：
 
