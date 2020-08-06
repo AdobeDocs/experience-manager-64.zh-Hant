@@ -33,8 +33,8 @@ ht-degree: 7%
    + [建立功能完整的網站(Classic UI)](website.md)
    + [設計與設計人員(Classic UI)](designer.md)
 + 平台{#platform}
-   + [Sling Cheatsheet](sling-cheatsheet.md)
-   + [使用Sling適配器](sling-adapters.md)
+   + [Sling 速查表](sling-cheatsheet.md)
+   + [使用 Sling 介面卡](sling-adapters.md)
    + [標籤庫](taglib.md)
    + 範本{#templates}
       + [範本](templates.md)
