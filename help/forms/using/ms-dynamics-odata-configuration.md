@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 62f9d1de-c397-46b5-964e-19777ddd130c
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +63,7 @@ AEM Forms附加元件套件也包含參考OData設定，您可運用此設定來
 
    ![azure_directory](assets/azure_directory.png)
 
-1. 保存配置。
+1. 儲存設定。
 
 ## 為IFD配置Microsoft Dynamics {#configure-microsoft-dynamics-for-ifd}
 
@@ -71,7 +74,7 @@ Microsoft Dynamics使用以理賠為基礎的驗證，將Microsoft Dynamics CRM�
 >只有在整合AEM Forms與內部Microsoft Dynamics伺服器時，才能使用此程式。
 
 1. 按照為Microsoft Dynamics配置IFD中所述，為IFD配置Microsoft Dynamics [內部實例](https://technet.microsoft.com/en-us/library/dn609803.aspx)。
-1. 使用Windows powerShell運行以下命令，在啟用IFD的Microsoft Dynamics上配置聲明設定：
+1. 使用Windows PowerShell運行以下命令，在啟用IFD的Microsoft Dynamics上配置聲明設定：
 
    ```
    Add-PSSnapin Microsoft.Crm.PowerShell 
@@ -123,8 +126,9 @@ MS **Dynamics OData Cloud Service(OData Service)** Configuration隨附預設的O
    在「驗證設 **[!UICONTROL 定」標籤中]** :
 
    1. 輸入「服務根 **[!UICONTROL 」欄位的值]** 。 前往Dynamics例項並導覽至「開 **[!UICONTROL 發人員資源]** 」，以檢視「服務根」欄位的值。 例如，https://&lt;tenant-name>/api/data/v9.1/
-   1. Client Id **[!UICONTROL (也稱為]** Application ID **[!UICONTROL )、]** Client Secret、 **[!UICONTROL Client Secret、]** OAUTH、 **[!UICONTROL Refresh Refresh Url Chack Access Recass、Jadign Token和Microsoft Dynamics Service Configuration中的預設值取代ClientId]**(也稱為 ************ ClientID、 Client SeCREATIONID、 Secreation、 Se、 Cle、 Ch、 Ch、Clet、Ch、Ch、Ch、Ch、T、Ch、T、Rea、T、Rea、Ch、Ch、Ch、Ch、Rea、Rea、Ch、T、Ch、Ch、Rea、Ch、Re、Rea、C、C、 必須在「資源」欄位中指定動態例項URL, **** 才能使用表單資料模型來設定Microsoft Dynamics。 使用「服務根URL」衍生動態例項URL。 例如， [https://org.crm.dynamics.com](https://org.crm.dynamics.com/)。
+   1. Client Id **[!UICONTROL (也稱為]** Application ID **[!UICONTROL )、]** Client Secret、 **[!UICONTROL Client Secret、]** OAUTH、 **************** Refresh Refresh Url Chack Access Recass、Jading Token和Microsoft Dynamics服務設定的預設值取代ClientId中的預設值。 必須在「資源」欄位中指定動態例項URL, **** 才能使用表單資料模型來設定Microsoft Dynamics。 使用「服務根URL」衍生動態例項URL。 例如， [https://org.crm.dynamics.com](https://org.crm.dynamics.com/)。
    1. 在Microsoft **[!UICONTROL Dynamics]** 的「授權範圍 **** 」欄位中指定openid，以進行授權程式。
+
    ![dynamics_authentication_settings](assets/dynamics_authentication_settings.png)
 
 1. 按一 **[!UICONTROL 下「連線至OAuth」]**。 系統會將您重新導向至Microsoft Dynamics登入頁面。
