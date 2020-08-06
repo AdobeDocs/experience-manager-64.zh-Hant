@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 4%
 
 ---
 
@@ -39,11 +42,17 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL 正面回應標籤]**(必&#x200B;*要*)正面回應的內部屬性名稱。
+* **[!UICONTROL 正面回應標籤]**
+(
+*必要*)正面回應的內部屬性名稱。
 
-* **[!UICONTROL 負面回應標籤]**(*必要*)負面回應的內部屬性名稱。
+* **[!UICONTROL 負面回應標籤]**
+(
+*必要*)負面回應的內部屬性名稱。
 
-* **[!UICONTROL Tally Name]**(*必要*)此投票元件實例的內部可識別屬性名稱。
+* **[!UICONTROL 記帳名稱]**
+(
+*必要*)此投票元件例項的內部、可識別屬性名稱。
 
 ## 網站訪客體驗 {#site-visitor-experience}
 
