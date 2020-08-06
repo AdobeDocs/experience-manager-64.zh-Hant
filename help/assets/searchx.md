@@ -47,7 +47,7 @@ ht-degree: 14%
 
 ## 建立自訂謂語 {#creating-custom-predicates}
 
-AEM Assets隨附一組預先定義的謂詞，可用來自訂「資產共用」頁面。 以此方式自訂資產共用，請參閱「建立 [及設定資產共用」頁面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
+AEM Assets隨附一組預先定義的謂詞，可用來自訂「資產共用」頁面。 以此方式自訂資產共用，請參閱「建立 [和設定資產共用」頁面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)。
 
 除了使用預先存在的謂語外，AEM開發人員也可以使用 [Query Builder API建立自己的謂語](/help/sites-developing/querybuilder-api.md)。
 
@@ -299,7 +299,7 @@ AEM Assets隨附一組預先定義的謂詞，可用來自訂「資產共用」�
 | 崩潰 | 字串 | 收合層級。 預設為 `level1` |
 | triggerSearch | 布林值 (Boolean) | 用於在檢查時觸發搜索的標籤。 預設為false |
 | searchCallback | 函數 | 觸發搜尋的回呼。 預設為 `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime | 數字 | 觸發searchCallback之前的逾時。 預設為800毫秒 |
+| searchTimeoutTime | 數量 | 觸發searchCallback之前的逾時。 預設為800毫秒 |
 
 ## 自訂搜尋結果 {#customizing-search-results}
 
