@@ -4,6 +4,9 @@ description: 瞭解如何設定Adobe Experience Manager(AEM)Assets，以限制�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 30%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 您可以設定Adobe Experience Manager(AEM)Assets，以限制使用者可上傳的資產（檔案）類型。 此功能可協助您避免使用者以不想要的格式上傳資產或上傳任何惡意檔案。 此服 `Day CQ DAM Asset Upload Restriction` 務可讓您控制使用者可上傳的檔案類型。 依預設，AEM Assets可讓使用者上傳所有MIME類型的資產。 不過，您可以設定服務，限制使用者僅上傳特定MIME類型的檔案。
 
-1. 要開啟Configuration Manager web控制台，請訪問 `https://[AEM_server]:[port]/system/console/configMgr`。
+1. 要開啟Configuration Manager Web控制台，請訪問 `https://[AEM_server]:[port]/system/console/configMgr`。
 1. 在編輯模 **[!UICONTROL 式中開啟「日CQ DAM資產上傳限制]** 」服務。 依預設，會選 **取「允許所有MIME** 」選項，可讓使用者上傳所有MIME類型的檔案。
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
