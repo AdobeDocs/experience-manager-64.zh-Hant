@@ -80,12 +80,14 @@ ht-degree: 2%
    1. 輸入 **發票編號** ，作為變數的名稱。
    1. 選擇「 **字串** 」(String)作為類型。
    1. 點選「 **建立**」。
+
    ![variable_create_string](assets/variable_create_string.png)
 
    重複步驟4和5以建立下列變數：
 
    * 開單期間： 字串類型
    * BillDate: 日期類型
+
    ![variables_bill_details](assets/variables_bill_details.png)
 
 1. 使用右窗格建立下列欄位的靜態文字：
@@ -94,6 +96,7 @@ ht-degree: 2%
    * 帳單期間
    * 帳單日期
    * 您的計畫
+
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
 1. 將游標置於「發票 **否********** 」欄位旁，並按兩下左窗格中「變數」標籤中的「發票編號」變數。
@@ -138,6 +141,7 @@ Customer Details文檔片段包含以下欄位：
    1. 輸入 **Placesupply** 作為變數的名稱。
    1. 選擇「 **字串** 」(String)作為類型。
    1. 點選「 **建立**」。
+
    重複步驟4和5以建立下列變數：
 
    * 狀態碼： 數字類型
@@ -154,13 +158,14 @@ Customer Details文檔片段包含以下欄位：
    * 關係編號
    * 州代碼
    * 連接數
+
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. 將游標置於「行 **動號碼** 」欄位旁，然後按兩下 **customer** > **mobilenum** 屬性。
 1. 將游標置於「替代聯 **系人號碼** 」欄位旁，並按兩下 **customer** > **** alternatemobilenumber屬性。
-1. 將游標放在「關係編號」( **Relationship Number** )欄位旁，並按兩下 **customer** > **** relationshipnumber屬性。
+1. 將游標置於「關係編號」( **Relationship Number** )欄位旁，並按兩下 **customer** > **** relationshipnumber屬性。
 1. 選擇「 **變數** 」頁籤，將游標置於「供應地點」( **Place of Supply** )欄位旁，然後按兩下「 **Placesupply** 」（供應地點）變數。
-1. 將游標置於「狀態代碼 **」欄位旁** ，然後按兩下「狀態 **代碼** 」變數。
+1. 將游標置於「狀態代碼 **」欄位旁** ，然後按兩下「狀態 **代碼」變數** 。
 1. 將游標置於「連接數 **」欄位旁** ，並按兩下 **Numberconnections** 變數。
 
    ![customer_details_df2](assets/customer_details_df2.png)
@@ -197,6 +202,7 @@ Customer Details文檔片段包含以下欄位：
    1. 輸 **入** Previousbalance作為變數的名稱。
    1. 選擇 **Number** （編號）作為類型。
    1. 點選「 **建立**」。
+
    重複步驟4和5以建立下列變數：
 
    * 付款： 數字類型
@@ -214,6 +220,7 @@ Customer Details文檔片段包含以下欄位：
    * 到期金額
    * 到期日期
    * 到期日之後的延遲付款費用為$ 20
+
    ![bill_summary_static](assets/bill_summary_static.png)
 
 1. 將游標置於「上一個余 **額** 」欄位旁，並按兩下 **Previousbalance** 變數。
@@ -265,6 +272,7 @@ Customer Details文檔片段包含以下欄位：
    * 增值服務費用
    * 費用合計
    * 應付總額
+
    ![summary_charges_static](assets/summary_charges_static.png)
 
 1. 選擇「數 **據模型對象** 」頁籤。
@@ -286,6 +294,7 @@ Customer Details文檔片段包含以下欄位：
    1. 選擇 **資料模型和變數** ，然 **後選擇清單** > **調用**。
    1. 選 **取小於** （運算元）。
    1. 選擇 **編號** ，然後輸入值 **為60**。
+
    基於此條件，僅當「呼叫費用」欄位的值小於60時，才顯示「增值服務費用」行。
 
    ![create_rules_caption](assets/create_rules_caption.gif)
