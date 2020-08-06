@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 投票元件( [tally子類](tally.md) )是有用的工具，可讓成員只要選取向上或向下箭頭來指出其意見，即可對特定內容片段進行評分。
 
-允許在同一頁放置多個投票元件實例；每個實例都必須配置一個唯一 `tally name` 屬性。
+允許在同一頁放置多個投票元件實例； 每個實例都必須配置一個唯一 `tally name` 屬性。
 
 不支援匿名張貼投票。 網站訪客必須註冊並登入才能參與投票一次，登入的訪客（會員）可隨時變更投票。
 
@@ -37,7 +40,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
-   <td> cq.social.hbs.porting</td> 
+   <td> cq.social.hbs.voting</td> 
   </tr> 
   <tr> 
    <td> <strong>模板</strong></td> 
