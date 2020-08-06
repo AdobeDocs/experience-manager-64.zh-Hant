@@ -11,6 +11,9 @@ topic-tags: development-tools
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
 source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+workflow-type: tm+mt
+source-wordcount: '909'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
   </tr> 
   <tr>
    <td><p>網站服務</p></td> 
-   <td><p>AEM Forms支援網站服務標準，例如SOAP/HTTP。 服務可以公開為Web服務，而WSDL符合W3C所定義的Web服務標準。</p><p>可以從任何Web服務堆棧（包括。NET Framework和Sun™ Web Services SDK）調用服務。 (請參 <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">閱使用Web services叫用AEM Forms</a>)。</p></td> 
+   <td><p>AEM Forms支援網站服務標準，例如SOAP/HTTP。 服務可以公開為Web服務，而WSDL符合W3C所定義的Web服務標準。</p><p>可以從任何Web服務堆棧（包括。NET Framework和Sun™ Web Services SDK）調用服務。 (請參 <a href="/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services">閱使用Web Services叫用AEM Forms</a>)。</p></td> 
   </tr> 
   <tr>
    <td><p>REST請求</p></td> 
@@ -56,7 +59,7 @@ source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
 
 服務容器提供下列功能：
 
-* 可讓AEM Forms服務使用不同的方法來呼叫。 您可以通過設定端點來配置服務，以便使用所有方法調用該服務：遠端、Java API、web services和REST。 (請參 [閱以程式設計方式管理端點](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints)。)
+* 可讓AEM Forms服務使用不同的方法來呼叫。 您可以通過設定端點來配置服務，以便使用所有方法調用該服務： 遠端、Java API、web services和REST。 (請參 [閱以程式設計方式管理端點](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints)。)
 * 將消息轉換為稱為調用請求的標準化格式。 調用請求從客戶端應用程式（或其他服務）發送到位於服務容器中的服務。 調用請求包含諸如要調用的服務的名稱和執行該操作所需的資料值之類的資訊。 許多服務都需要檔案來執行操作。 因此，呼叫請求通常包含檔案，檔案可以是PDF資料、XDP資料、XML資料等。
 * 將調用請求路由到適當的服務（要調用的服務的名稱是調用請求的一部分）。
 * 執行任務，例如確定呼叫者是否具有調用指定服務操作的權限。 呼叫請求必須包含有效的AEM表單使用者名稱和密碼。
@@ -87,7 +90,7 @@ source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
 
 [使用Java API叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
-[使用Web services叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
+[使用Web Services叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
 
 [調用以人為中心的長壽命進程](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
