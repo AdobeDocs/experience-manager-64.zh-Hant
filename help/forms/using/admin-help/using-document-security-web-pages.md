@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 0%
 
 ---
 
@@ -45,9 +48,9 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 1. 在瀏覽器中輸入URL:
 
-   檔案安全性URL:主 `https://`*[機&#x200B;]*`:`*[埠]*`/edc`
+   檔案安全性URL: `https://`*[主機端&#x200B;]*`:`*[口]* `/edc`
 
-   或管理控制台URL:主 `https://`*[機&#x200B;]*`:`*[埠]*`/adminui`
+   或管理控制台URL: `https://`*[主機端&#x200B;]*`:`*[口]* `/adminui`
 
 1. 在登入視窗中，輸入您的使用者名稱和密碼，然後按一下「確定」。
 1. 在「管理控制台」中，按一下「服務>檔案安全性」。
@@ -66,7 +69,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 **顯示頁面**
 
-1. 按一下頁面名稱；例如，按一下策略。
+1. 按一下頁面名稱； 例如，按一下策略。
 
 **返回上一頁**
 
@@ -88,9 +91,9 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 
-這些說明是Internet explorer專用的，但您可以使用任何支援的網頁瀏覽器來安裝憑證。 如需詳細資訊，請參閱您瀏覽器的說明。
+這些說明是Internet Explorer專用的，但您可以使用任何支援的網頁瀏覽器來安裝憑證。 如需詳細資訊，請參閱您瀏覽器的說明。
 
-**使用Internet explorer安裝伺服器證書**
+**使用Internet Explorer安裝伺服器證書**
 
 1. 開啟您的網頁瀏覽器，並在「位址」方塊中輸入檔案安全性的基本URL。 例如，鍵入 `https://[host]:[port]`。 出現「Security Alert（安全警報）」對話框。
 1. 按一下「檢視憑證」，然後按一下「安裝憑證」，並選取預設值以進行安裝。 憑證必須安裝在受信任的根認證授權機構中。
