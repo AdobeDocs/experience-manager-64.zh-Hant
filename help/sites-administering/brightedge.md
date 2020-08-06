@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 0%
 
 ---
 
@@ -24,12 +27,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 在導軌上，按一下「工具>作業>雲端>雲端服務」。
 1. 按一下「BrightEdge Content Optimizer」區段中出現的連結。 是否已建立BrightEdge組態，會決定連結文字：
 
-   * 立即配置：當未建立配置時，將顯示此連結。
-   * 顯示配置：建立一個或多個配置後，將顯示此連結。
+   * 立即配置： 當未建立配置時，將顯示此連結。
+   * 顯示配置： 建立一個或多個配置後，將顯示此連結。
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
-1. 如果按一下「Show Configurations（顯示配置）」 ，請按一下「Available Configurations（可用配置）」旁邊的+連結。
-1. 鍵入配置的標題。 （可選）鍵入用於將配置儲存在儲存庫中的節點的名稱。 按一下 建立。
+1. 如果按一下了「Show Configurations（顯示配置）」 ，請按一下「Available Configurations（可用配置）」旁邊的+連結。
+1. 鍵入配置的標題。 （可選）鍵入用於將配置儲存在儲存庫中的節點的名稱。 按一下建立。
 1. 在「BrightEdge Content Optimizer Configuration」（BrightEdge內容優化程式配置）對話框中，鍵入BrightEdge帳戶的用戶名和密碼，然後按一下「確定」。
 
 ## 編輯BrightEdge組態 {#editing-a-brightedge-configuration}
