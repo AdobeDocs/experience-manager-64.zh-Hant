@@ -1,6 +1,6 @@
 ---
-title: 「重複使用內容：多網站管理員與即時副本」
-seo-title: 「重複使用內容：多網站管理員與即時副本」
+title: 「重複使用內容： 多網站管理員與即時副本」
+seo-title: 「重複使用內容： 多網站管理員與即時副本」
 description: 瞭解如何使用即時副本和多網站管理員來重複使用內容。
 seo-description: 瞭解如何使用即時副本和多網站管理員來重複使用內容。
 uuid: 9f955226-8fc9-4357-b90c-c6896b0dc4b4
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 0%
 
 ---
 
 
-# 重複使用內容：多網站管理員和即時副本{#reusing-content-multi-site-manager-and-live-copy}
+# 重複使用內容： 多網站管理員和即時副本{#reusing-content-multi-site-manager-and-live-copy}
 
 Multi Site Manager(MSM)可讓您在多個位置使用相同的網站內容。 MSM使用其即時副本功能來達成此目的：
 
@@ -124,14 +127,14 @@ MSM可直接在UI中使用適當主控台的各種選項存取。 要提供介�
 
 * **建立網站** (**網站**)
 
-   * MSM可協助您管理多個共用內容的網站；例如，網站通常提供給國際觀眾，讓大部分內容在所有國家／地區都很常見，而且每個國家／地區都有特定內容的子集。 MSM可讓您建立 [即時副本，以根據您的來源網站自動更新一或多個網站](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)。 這也可協助您強制建立共同的基本結構、跨多個網站使用共同內容、維持共同的外觀和感覺，並集中精力管理實際不同網站的內容。
+   * MSM可協助您管理多個共用內容的網站； 例如，網站通常提供給國際觀眾，讓大部分內容在所有國家／地區都很常見，而且每個國家／地區都有特定內容的子集。 MSM可讓您建立 [即時副本，以根據您的來源網站自動更新一或多個網站](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)。 這也可協助您強制建立共同的基本結構、跨多個網站使用共同內容、維持共同的外觀和感覺，並集中精力管理實際不同網站的內容。
    * 需要預先定義的Blueprint設定來指定來源。
    * 建立（預定義）源的即時副本。
    * 為使用者提供「轉 **出** 」按鈕。
 
 * **建立即時副本** (**網站**)
 
-   * MSM可讓您 [建立網站個別頁面或子分支的臨機（一次性）即時副本](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page);例如，複製子分支以提供有關產品新版／更新版本的資訊。
+   * MSM可讓您 [建立網站個別頁面或子分支的臨機（一次性）即時副本](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); 例如，複製子分支以提供有關產品新版／更新版本的資訊。
    * 建立臨機即時副本（不需要藍圖設定）。
    * 可用來（立即）建立任何頁面／分支的即時副本。
    * 需要 **同步** (不提供 **Rovolt** 按鈕)。
@@ -154,11 +157,11 @@ MSM可直接在UI中使用適當主控台的各種選項存取。 要提供介�
 
 >[!NOTE]
 >
->MSM功能的各個方面，皆用於數種其他AEM功能（例如Launches、Catalog）;在這些情況下，即時副本由該功能管理。
+>MSM功能的各個方面，皆用於數種其他AEM功能（例如Launches、Catalog）; 在這些情況下，即時副本由該功能管理。
 
 ### 使用的詞語 {#terms-used}
 
-作為導言，下表概述MSM使用的主要術語；以下各節和頁面將提供更多詳細資訊：
+作為導言，下表概述MSM使用的主要術語； 以下各節和頁面將提供更多詳細資訊：
 
 <table> 
  <tbody> 
@@ -184,7 +187,7 @@ MSM可直接在UI中使用適當主控台的各種選項存取。 要提供介�
   </tr> 
   <tr> 
    <td><strong>即時關係</strong><br /> </td> 
-   <td>對給定資源的繼承進行有效定義；源副本和即時副本之間的連接。<br /> </td> 
+   <td>對給定資源的繼承進行有效定義； 源副本和即時副本之間的連接。<br /> </td> 
    <td>確保對源的更改可以與即時副本同步。</td> 
   </tr> 
   <tr> 
@@ -266,8 +269,8 @@ MSM即時副本是特定網站內容的副本，其與原始來源的即時關�
 * 同步在對源進行更改時執行內容的實際傳輸。
 * 即時副本可視為：
 
-   * 淺層：單頁
-   * 深度：頁面及其子頁面
+   * 淺層： 單頁
+   * 深度： 頁面及其子頁面
 
 * 同步規則（稱為轉出配置）可確定要同步的屬性以及同步發生的時間。
 
@@ -339,7 +342,7 @@ MSM即時副本是特定網站內容的副本，其與原始來源的即時關�
 不過，MSM也允許您定義指定源路徑的藍圖配置。 使用Blueprint設定的優點是：
 
 * 允許作者在藍圖上使 **用** 「轉出」選項——將修改（明確）推送至繼承自此藍圖的即時副本。
-* 允許作者使用「建 **立網站」**;這可讓使用者輕鬆選擇語言並設定即時副本的結構。
+* 允許作者使用「建 **立網站」**; 這可讓使用者輕鬆選擇語言並設定即時副本的結構。
 * 為與藍圖有關的即時副本定義預設轉出設定。
 
 即時副本的來源可以是常規頁面或藍圖配置涵蓋的頁面——兩者都是有效的使用案例。
@@ -348,7 +351,7 @@ MSM即時副本是特定網站內容的副本，其與原始來源的即時關�
 
 * [建立Blueprint設定](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration)
 
-   此設定會（預先）定義用於建立即時副本的頁面。
+   此設定會預先定義用於建立即時副本的頁面。
 
 * [建立頁面的即時副本](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
@@ -415,7 +418,7 @@ MSM即時副本是特定網站內容的副本，其與原始來源的即時關�
 
 >[!NOTE]
 >
->如需 [完整詳細資訊](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) ，請參閱分離即時副本；包括對子頁面和父頁面的相關影響。
+>如需 [完整詳細資訊](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) ，請參閱分離即時副本； 包括對子頁面和父頁面的相關影響。
 
 ## 使用MSM的標準步驟 {#standard-steps-for-using-msm}
 
@@ -443,6 +446,6 @@ MSM提供多種工具，讓您的實作能夠因應分享內容時可能存在�
 * **自定義同步操作**
    [當安裝的操作不符合您的特定應用程式要求時](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) ，建立自定義同步操作。 MSM提供Java API，用於建立自定義同步操作。
 
-## Best Practices {#best-practices}
+## 最佳作法 {#best-practices}
 
 「 [MSM最佳實務](/help/sites-administering/msm-best-practices.md) 」頁面包含您實作的重要資訊。
