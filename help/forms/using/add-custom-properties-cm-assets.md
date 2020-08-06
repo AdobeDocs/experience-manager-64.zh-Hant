@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 601108d8-f432-4a6b-9ec9-831cf054e52f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '4460'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 透過調整這些藍本中的屬性、路徑和值，您可以根據需求將自訂屬性和標籤新增至不同的資產組。
 
-### 方案：新增公用欄位（屬性）至所有資產類型 {#scenario-adding-a-common-field-property-to-all-the-asset-types}
+### 方案： 新增公用欄位（屬性）至所有資產類型 {#scenario-adding-a-common-field-property-to-all-the-asset-types}
 
 此藍本說明如何新增自訂屬性至所有資產類型（文字、清單、條件和版面片段）和字母。 使用此方案，您可以將屬性「收件者的位置」新增至所有資產和字母。 「收件者位置」屬性有助於識別資產或信件的交付地區。
 
@@ -53,19 +56,19 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
+      **路徑：** /libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
       ![覆蓋節點](assets/cmmetapropertiesoverlaynode.png)
 
-   1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
    1. 按一下「 **全部儲存**」。
 
-1. 在新建立的項目資料夾下，為所有資產新增自訂屬性的節點(範例：GeoLocation)，使用下列步驟：
+1. 在新建立的項目資料夾下，為所有資產新增自訂屬性的節點(範例： GeoLocation)，使用下列步驟：
 
    1. 按一下右鍵項目資料夾，然後選擇「 **建立** 」>「 **建立節點」**。
 
@@ -73,18 +76,18 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：GeoLocation（或您要為此屬性提供的名稱）
+      **名稱：** GeoLocation（或您要為此屬性提供的名稱）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
-      ![建立節點：地理位置](assets/geographicallocationcreatenode.png)
+      ![建立節點： 地理位置](assets/geographicallocationcreatenode.png)
 
    1. 按一下您建立的新節點（此處為GeoLocation）。 CRX顯示節點的屬性。
    1. 將下列屬性新增至節點（此處為GeoLocation）:
 
       | **名稱** | **類型** | **值** |
       |---|---|---|
-      | fieldLabel | 字串 | 您要指定欄位／屬性的名稱。 (這裡：收件者位置) |
+      | fieldLabel | 字串 | 您要指定欄位／屬性的名稱。 (這裡： 收件者位置) |
       | 名稱 | 字串 | `./extendedproperties/GeoLocation` （保留值與在項目節點下建立的欄位名稱相同） |
       | renderReadOnly | 布林值 (Boolean) | true |
       | sling:resourceType | 字串 | granite/ui/components/coral/foundation/form/textfield |
@@ -103,7 +106,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    >
    >您新增之所有資產的通用屬性會顯示在資產屬性的基本標籤中。 依預設，所有資產新增的常用屬性會出現在屬性頁面和資產建立頁面上。 若要隱藏常用屬性，您必須 `[link to show / hide properties]`。
 
-### 方案：新增自訂下拉式清單和值至自訂屬性／欄位 {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
+### 方案： 新增自訂下拉式清單和值至自訂屬性／欄位 {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
 此藍本說明如何新增自訂屬性至所有資產類型，並新增下拉式值。
 
@@ -119,7 +122,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    | 名稱 | 類型 | 值 |
    |--- |--- |---|
-   | fieldLabel | 字串 | 您要指定欄位／屬性的名稱。 (這裡：地理配置) |
+   | fieldLabel | 字串 | 您要指定欄位／屬性的名稱。 (這裡： 地理配置) |
    | 名稱 | 字串 | `./extendedproperties/geographicallocation` （保留值與在項目節點下建立的欄位名稱相同） |
    | renderReadOnly | 布林值 (Boolean) | true |
    | sling:resourceType | 字串 | granite/ui/components/coral/foundation/form/select |
@@ -141,7 +144,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ![下拉式定制](assets/drop-down_customization.png)
 
-### 方案：所有資產類型的公用標籤 {#scenario-common-tab-for-all-asset-types}
+### 方案： 所有資產類型的公用標籤 {#scenario-common-tab-for-all-asset-types}
 
 此案例顯示如何將自訂標籤「收件者」新增至所有資產類型（文字、清單、條件和版面片段）和字母。 您可以在「收件者」索引標籤中，規劃將所有與收件者相關的自訂屬性放入。
 
@@ -160,19 +163,19 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/content/cmmetadataproperties
+      **路徑：** /libs/fd/cm/ma/gui/content/cmmetadataproperties
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
-   1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
       ![在CRX中建立的覆蓋資料夾結構](assets/cmmetadatapropertiesappsfolder.png)
 
       按一下「 **全部儲存**」。
 
-1. 在cmmetadataproperties資料夾下，新增節點，以建立所有資產的自訂標籤(範例：commontab)，使用下列步驟：
+1. 在cmmetadataproperties資料夾下，新增節點，以建立所有資產的自訂標籤(範例： commontab)，使用下列步驟：
 
    1. 按一下右鍵cmmetadataproperties資料夾，然後選 **擇「建立** 」>「 **建立節點」**。
 
@@ -180,16 +183,16 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：commontab（或您要為此屬性提供的名稱）
+      **名稱：** commontab（或您要為此屬性提供的名稱）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下已建立的新節點（此處為公用頁籤）。 CRX顯示節點的屬性。
    1. 將以下屬性添加到節點（此處為公用頁籤）:
 
       | 名稱 | 類型 | 值 |
       |--- |--- |--- |
-      | jcr:title | 字串 | 要指定列的名稱。 (這裡：收件者) |
+      | jcr:title | 字串 | 要指定列的名稱。 (這裡： 收件者) |
       | sling:resourceType | 字串 | granite/ui/components/coral/foundation/container |
 
    1. 按一下「 **全部儲存**」。
@@ -199,9 +202,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵相關節點（此處為公用頁籤），然後選擇「創 **建** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：項目
+      **名稱：** 項目
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下「 **全部儲存」:**
 
@@ -210,9 +213,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵項目節點，然後選擇「創 **建** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：Column1（或要為節點提供的名稱——此名稱不會顯示在用戶介面中。）
+      **名稱：** Column1（或要為節點提供的名稱——此名稱不會顯示在用戶介面中。）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 將下列屬性新增至節點（此處為Column1），然後按一下「全 **部儲存**:
 
@@ -225,9 +228,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵節點（此處為Column1），然後選擇「創 **建** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：項目
+      **名稱：** 項目
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下「 **全部儲存**」。
 
@@ -236,16 +239,16 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵項目節點，然後選擇「創 **建** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：GeortalLocation（或欄位屬性的其他名稱）
+      **名稱：** GeortalLocation（或欄位屬性的其他名稱）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 將下列屬性新增至欄位節點（此處為GeortalLocation），然後按一下「全 **部儲存」**。
 
       | **名稱** | **類型** | **值** |
       |---|---|---|
       | fieldLabel | 字串 | 收件者的位置（或您要指定欄位的名稱）。 |
-      | 名稱 | 字串 | ./extendedproperties/GeortalLocation |
+      | 名稱 | 字串 | 。/extendedproperties/GeortalLocation |
       | renderReadOnly | 布林值 (Boolean) | true |
       | sling:resourceType | 字串 | /libs/granite/ui/components/coral/foundation/form/textfield |
 
@@ -263,22 +266,22 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items
+      **路徑：** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
-   1. 按一下 **確定**。 資料夾已建立。 按一下「 **全部儲存**」。
+   1. 按一下&#x200B;**「確定」**。資料夾已建立。 按一下「 **全部儲存**」。
 
 1. 在新建立的項目資料夾中，使用下列步驟新增資產中自訂標籤的節點（此處為mytab —— 此名稱不會顯示在使用者介面中）:
 
    1. 按一下右鍵項目資料夾，然後選擇「 **建立** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：mytab（或您要提供給此屬性的名稱）
+      **名稱：** mytab（或您要提供給此屬性的名稱）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下已建立的新節點（此處為mytab）。 CRX顯示節點的屬性。
    1. 將以下兩個屬性添加到節點（此處為customtab）:
@@ -298,7 +301,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![自訂索引標籤新增至字母](assets/recipientstab-1.png)
 
-### 方案：新增特定資產類型的自訂屬性 {#scenario-adding-custom-properties-for-specific-asset-types}
+### 方案： 新增特定資產類型的自訂屬性 {#scenario-adding-custom-properties-for-specific-asset-types}
 
 此藍本顯示如何將屬性新增至特定資產類型，例如欄位至所有文字資產。 使用此過程，可以將屬性添加到以下其中一個：
 
@@ -334,24 +337,24 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
+      **路徑：** /libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
-   1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
       按一下「 **全部儲存**」。
 
-1. 在新建立的項目資料夾中，為資產中的自訂標籤新增節點(範例：customtab)，使用下列步驟：
+1. 在新建立的項目資料夾中，為資產中的自訂標籤新增節點(範例： customtab)，使用下列步驟：
 
    1. 按一下右鍵項目資料夾，然後選擇「 **建立** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：customtab（或您要提供給此屬性的名稱）
+      **名稱：** customtab（或您要提供給此屬性的名稱）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下已建立的新節點（此處為customtab）。 CRX顯示節點的屬性。
    1. 將以下兩個屬性添加到節點（此處為customtab）:
@@ -368,9 +371,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵該節點（此處為自定義頁籤），然後選擇「 **建立** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：項目
+      **名稱：** 項目
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下「 **全部儲存**」。
 
@@ -379,9 +382,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵項目節點，然後選擇「創 **建** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：Column1（或要為節點提供的名稱）
+      **名稱：** Column1（或要為節點提供的名稱）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 將下列屬性新增至節點（此處為Column1），然後按一下「全 **部儲存」**。
 
@@ -394,9 +397,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵相關列節點（此處為Column1），然後選擇「創 **建** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：項目
+      **名稱：** 項目
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下「 **全部儲存」:**
 
@@ -405,16 +408,16 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵相關節點（此處列1下的項），然後選擇「創 **建** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：您選擇的名稱（此處為GeoLocation）
+      **名稱：** 您選擇的名稱（此處為GeoLocation）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 將下列屬性新增至節點，然後按一下「全 **部儲存」**。
 
       | **名稱** | **類型** | **值** |
       |---|---|---|
       | fieldLabel | 字串 | 收件者的位置（或您要指定欄位的名稱）。 |
-      | 名稱 | 字串 | ./extendedproperties/GeoLocation |
+      | 名稱 | 字串 | 。/extendedproperties/GeoLocation |
       | renderReadOnly | 布林值 (Boolean) | true |
       | sling:resourceType | 字串 | granite/ui/components/coral/foundation/form/textfield |
 
@@ -436,11 +439,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 對於字母，請確定「覆蓋節點」對話框具有以下值。 對於其他資產類型，下表提供路徑：
 
-   **** 路徑：/libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
+   **路徑：** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/letterproperties/items
 
-   **** 位置：/apps/
+   **位置：** /apps/
 
-   **** 匹配節點類型：已選取
+   **匹配節點類型：** 已選取
 
    視資產類型而定，路徑必須是：
 
@@ -450,9 +453,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    | 清單 | /libs/fd/cm/gui/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/properties/tabs/items/tabs/tab1/items |
    | 條件 | /libs/fd/cm/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
    | 片段 | /libs/fd/cm/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/properties/items/tabs2/items/tab1/items1/items |
-   | 字母 | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items |
+   | 字母 | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/letterproperties/items |
 
-1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
 1. 在您建立的覆蓋項目節點下，建立名稱col4（或任何其他名稱）的節點，然後按一下「全 **部儲存」**。
 
@@ -474,8 +477,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       <td>字串</td> 
       <td><p>此路徑是指向在以下位置建立的列的指針：</p> 
       <ul> 
-      <li>對於所有資產類型的公用標籤：/apps/fd/cm/ma/gui/content/cmmetadataproperties/commontab/items/col1</li> 
-      <li>針對不同資產類型的不同屬性：/apps/fd/cm/ma/gui/content/cmmetadataproperties/properties//items/tabs/items/customtab/items/col1</li> 
+      <li>對於所有資產類型的公用標籤： /apps/fd/cm/ma/gui/content/cmmetadataproperties/commontab/items/col1</li> 
+      <li>針對不同資產類型的不同屬性： /apps/fd/cm/ma/gui/content/cmmetadataproperties/properties//items/tabs/items/customtab/items/col1</li> 
       </ul> </td> 
    </tr> 
    <tr> 
@@ -509,13 +512,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
+      **路徑：** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
-   1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
       按一下「 **全部儲存**」。
 
@@ -524,9 +527,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵相關節點（列），然後選擇「創 **建** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：您選擇的名稱（此處為GeortalLocation）
+      **名稱：** 您選擇的名稱（此處為GeortalLocation）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 將下列屬性新增至節點，然後按一下「全 **部儲存」**。
 
@@ -548,13 +551,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage
+      **路徑：** /libs/fd/cm/ma/gui/components/admin/childpagerenderer/childlistpage
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
-   1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
       按一下「 **全部儲存**」。
 
@@ -604,7 +607,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       %>
       ```
 
-      在程式碼中，GeoLocation是您在建立自訂節點／欄位時，在name屬性中設定的值。 在建立自定義節點／欄位時，您指定了屬性的名稱。/extendedproperties/ prefix:./extendedproperties/GeoLocation。 在程式碼中，首碼不是必要的。
+      在程式碼中，GeoLocation是您在建立自訂節點／欄位時，在name屬性中設定的值。 在建立自定義節點／欄位時，您指定了屬性的名稱。/extendedproperties/ prefix: ./extendedproperties/GeoLocation。 在程式碼中，首碼不是必要的。
 
    1. 若要在UI中顯示新屬性，請在結束tr(&lt;/tr>)標籤之前，新增TD標籤，如下所示：
 
@@ -620,7 +623,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    此過程中添加的UI列和屬性將針對所有資產類型顯示。 不過，這些屬性中的值只能針對您原本新增自訂屬性的資產類型輸入和顯示。
 
-   例如，使用藍本：新增特定資產類型的自訂屬性，您新增自訂屬性至文字資產，您只能在文字資產中輸入自訂屬性。 但是，如果您在UI中顯示該自訂屬性，則所有資產類型都會顯示該欄。
+   例如，使用藍本： 新增特定資產類型的自訂屬性，您新增自訂屬性至文字資產，您只能在文字資產中輸入自訂屬性。 但是，如果您在UI中顯示該自訂屬性，則所有資產類型都會顯示該欄。
 
    ![custompropertylistview](assets/custompropertyinlistview.png)
 
@@ -651,9 +654,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵cmLucene資料夾，然後選擇「 **建立** 」>「 **建立節點」**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：agregates
+      **名稱：** agregates
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下「 **全部儲存**」。
 
@@ -661,15 +664,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 按一下右鍵聚合資料夾，然後選擇「 **建立** 」>「 **建立節點」**。 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：cm：資源
+      **名稱：** cm：資源
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下右鍵cm:resource資料夾，然後選擇「創 **建** 」>「 **建立節點」**。 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：include 0
+      **名稱：** include 0
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下已建立的新節點（此處包括0）。 CRX顯示節點的屬性。
    1. 將以下屬性添加到節點（此處包括0）:
@@ -686,9 +689,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 按一下右鍵屬性資料夾，然後選 **擇建立** > **建立節點**。
    1. 確保「建立節點」對話框具有以下值，然後按一下「確 **定」**:
 
-      **** 名稱：位置（或您要新增至搜尋的自訂屬性名稱）
+      **名稱：** 位置（或您要新增至搜尋的自訂屬性名稱）
 
-      **** 類型：nt：非結構化
+      **類型：** nt：非結構化
 
    1. 按一下已建立的新節點（此處位置）。 CRX顯示節點的屬性。
    1. 將以下屬性添加到節點（此處位置）:
@@ -721,13 +724,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list
+      **路徑：** /libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
-   1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
    1. 按一下「 **全部儲存**」。
 
@@ -756,13 +759,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
+      **路徑：** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
-   1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
    1. 按一下「 **全部儲存**」。
 
