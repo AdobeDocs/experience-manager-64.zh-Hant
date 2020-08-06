@@ -1,8 +1,8 @@
 ---
-title: 與Adobe Marketing cloud整合
-seo-title: 與Adobe Marketing cloud整合
-description: 瞭解如何將AEM與Adobe Marketing cloud整合。
-seo-description: 瞭解如何將AEM與Adobe Marketing cloud整合。
+title: 與Adobe Marketing Cloud整合
+seo-title: 與Adobe Marketing Cloud整合
+description: 瞭解如何將AEM與Adobe Marketing Cloud整合。
+seo-description: 瞭解如何將AEM與Adobe Marketing Cloud整合。
 uuid: 36d71dd3-7fb0-4237-99d3-4fbb2e162e7b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,22 +11,25 @@ content-type: reference
 discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
 source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+workflow-type: tm+mt
+source-wordcount: '1004'
+ht-degree: 2%
 
 ---
 
 
-# 與Adobe Marketing cloud整合{#integrating-with-the-adobe-marketing-cloud}
+# 與Adobe Marketing Cloud整合{#integrating-with-the-adobe-marketing-cloud}
 
 Adobe Marketing Cloud [](https://www.adobe.com/solutions/digital-marketing.html)，包含功能強大的網頁分析和網站最佳化產品，可提供可操作的即時資料和見解，以推動成功的線上活動。 它為線上業務最佳化提供整合式開放平台。 Cloud包含整合式應用程式，可收集和釋放客戶洞察力，以最佳化客戶獲取、轉化和維繫，以及內容的建立和發佈。
 
-有了Adobe Experience Manager(AEM)，您就可以與下列Adobe Marketing cloud產品完美整合：
+有了Adobe Experience Manager(AEM)，您就可以與下列Adobe Marketing Cloud產品完美整合：
 
 * Adobe Analytics為行銷人員提供有關線上策略和行銷舉措的可操作、即時智慧。
 * Adobe Target讓行銷人員能夠持續提升其線上內容與客戶的關聯性。 產生更高的轉換率。
 * Adobe Scene7可在代管環境中自動化媒體管理、簡化網頁發佈並增強網頁體驗。
 * Adobe動態標籤管理為行銷人員提供直覺式工具，可快速輕鬆管理不限數量的Adobe和協力廠商標籤。
 * Adobe Search&amp;Promote讓行銷人員能夠控制並最佳化其網站上的搜尋結果。
-* Adobe Campaign可讓您直接在Adobe Experience manager中管理電子郵件傳送內容。
+* Adobe Campaign可讓您直接在Adobe Experience Manager中管理電子郵件傳送內容。
 
 此外，您還可以將AEM與 [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) ，以 [及協力廠商服務整合](/help/sites-administering/third-party-services.md)。
 
@@ -53,7 +56,7 @@ Adobe Marketing Cloud [](https://www.adobe.com/solutions/digital-marketing.html)
 
 [行銷人員使用Adobe Target](https://www.omniture.com/en/products/conversion/test-and-target) ，來設計和執行線上測試、建立即時受眾細分（根據行為）並自動鎖定內容和線上體驗。
 
-現今的線上消費者有不斷演變的需求，並期望從各種網站和內容來源獲得相關、甚至個人化的內容。 若要吸引線上受眾，線上行銷人員必須快速找出哪些優惠和內容對受眾有關聯且有吸引力，這一點至關重要。 有了這些知識，行銷人員需要不斷改進其網站並針對不同受眾鎖定適當內容的能力。
+現今的線上消費者有不斷演變的需求，並期望從各種網站和內容來源獲得相關、甚至個人化的內容。 若要吸引線上受眾，線上行銷人員必須快速找出哪些優惠和內容對受眾有關聯且有吸引力，這一點至關重要。 有了這些知識，行銷人員需要不斷改進其網站並針對不同受眾提供適當內容的能力。
 
 [與Adobe Target整合](/help/sites-administering/target.md) ，說明如何將網站與Target整合。
 
@@ -92,9 +95,9 @@ AEM提供簡單的加入程式，可與Adobe Analytics和Adobe Target整合。 �
 
 [將Adobe Dynamic Tag Management與AEM整合](/help/sites-administering/dtm.md) ，讓您可以使用「動態標籤管理」網頁屬性來追蹤AEM網站。
 
-## 與Adobe Audience manager整合 {#integrating-with-adobe-audience-manager}
+## 與Adobe Audience Manager整合 {#integrating-with-adobe-audience-manager}
 
-AEM 6.3已移除Audience manager整合。
+AEM 6.3已移除Audience Manager整合。
 
 ## 與Search&amp;Promote整合 {#integrating-with-search-promote}
 
@@ -106,7 +109,7 @@ Adobe Search&amp;Promote是可靠且可擴充的代管網站搜尋應用程式�
 
 ## 與Adobe Campaign整合 {#integrating-with-adobe-campaign}
 
-[Adobe Campaign可讓](https://www.adobe.com/solutions/campaign-management.html) 您直接在Adobe Experience manager中管理電子郵件傳送內容。
+[Adobe Campaign可讓](https://www.adobe.com/solutions/campaign-management.html) 您直接在Adobe Experience Manager中管理電子郵件傳送內容。
 
 如需AEM如何與Adobe Campaign整合的詳細資訊，請參 [閱「與Adobe Campaign整合」](/help/sites-administering/campaignstandard.md)。
 
