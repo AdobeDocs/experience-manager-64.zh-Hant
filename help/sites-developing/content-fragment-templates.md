@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 translation-type: tm+mt
 source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 4%
 
 ---
 
@@ -57,6 +60,7 @@ source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
    >
    >
 1. 在 `/apps`
+
 >
 
 
@@ -137,12 +141,12 @@ conf
   <tr> 
    <td><code>precreateElements</code></td> 
    <td><p><code>Boolean</code></p> <p>必要</p> </td> 
-   <td><p><code>true</code>,if the subsasets resporting the elements（master element除外）of the content fragment is created; <em>false</em> （如果應「即時」建立）。</p> <p><strong>注意</strong>:目前，此參數必須設為 <code>true</code>。</p> </td> 
+   <td><p><code>true</code>,if the subsasets resporting the elements（master element除外）of the content fragment is created; <em>false</em> （如果應「即時」建立）。</p> <p><strong>注意</strong>: 目前，此參數必須設為 <code>true</code>。</p> </td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
    <td><p><code>Long</code></p> <p>必要</p> </td> 
-   <td><p>內容結構版本；目前支援：</p> <p><strong>注意</strong>:目前，此參數必須設為 <code>2</code>。<br /> </p> </td> 
+   <td><p>內容結構版本； 目前支援：</p> <p><strong>注意</strong>: 目前，此參數必須設為 <code>2</code>。<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -159,7 +163,7 @@ conf
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>必要</p> </td> 
-   <td><p>包含內容片段元素定義的節點。 它是強制性的，並且需要為 <strong>Main元素至少包含一個子節點</strong> ，但可以包含[1...n]子節點。</p> <p>使用模板時，元素子分支將被複製到片段的模型子分支。</p> <p>第一個元素（如CRXDE Lite中所述）會自動被視為主 <i>要元</i> 素；節點名稱無關，節點本身除了以主資產表示外，沒有特殊意義；其他元素則視為子資產處理。</p> </td> 
+   <td><p>包含內容片段元素定義的節點。 它是強制性的，並且需要為 <strong>Main元素至少包含一個子節點</strong> ，但可以包含[1...n]子節點。</p> <p>使用模板時，元素子分支將被複製到片段的模型子分支。</p> <p>第一個元素（如CRXDE Lite中所述）會自動被視為主 <i>要元</i> 素； 節點名稱無關，節點本身除了以主資產表示外，沒有特殊意義； 其他元素則視為子資產處理。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -186,12 +190,12 @@ conf
   <tr> 
    <td><code>defaultContent</code></td> 
    <td><p><code>String</code></p> <p>可選</p> <p>預設: ""</p> </td> 
-   <td>元素的初始內容；只有在 <code>precreateElements</code><i> = </i><code>true</code></td> 
+   <td>元素的初始內容； 只有在 <code>precreateElements</code><i> = </i><code>true</code></td> 
   </tr> 
   <tr> 
    <td><code>initialContentType</code></td> 
    <td><p><code>String</code></p> <p>可選</p> <p>預設: <code>text/html</code></p> </td> 
-   <td><p>元素的初始內容類型；僅用於 <code>precreateElements</code><i> = </i><code>true</code>;目前支援：</p> 
+   <td><p>元素的初始內容類型； 僅用於 <code>precreateElements</code><i> = </i><code>true</code>; 目前支援：</p> 
     <ul> 
      <li><code>text/html</code></li> 
      <li><code>text/plain</code></li> 
@@ -201,7 +205,7 @@ conf
   <tr> 
    <td><code>name</code></td> 
    <td><p><code>String</code></p> <p>必要</p> </td> 
-   <td>元素的內部名稱；必須為片段類型的唯一。</td> 
+   <td>元素的內部名稱； 必須為片段類型的唯一。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -240,7 +244,7 @@ conf
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
-   <td><p><code>String</code></p> <p>required</p> </td> 
+   <td><p><code>String</code></p> <p>必要</p> </td> 
    <td>變數的標題(顯示在片段編輯器的「變數」( <strong>Variation</strong> )頁籤中（左側邊欄）)。</td> 
   </tr> 
   <tr> 
