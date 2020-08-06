@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 6%
 
 ---
 
@@ -72,7 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 自動——這涉及下列事項：
 
       * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.
-      * 「生 **產就緒** 」標幟：這只能在編輯啟動時設定。
+      * 「生 **產就緒** 」標幟： 這只能在編輯啟動時設定。
       * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. 促銷後，生產頁面會自動發佈。
 
          如果尚未設定日期，則旗標將無效。
@@ -80,14 +83,16 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * 同時更新來源和啟動頁面：
 
-   * 對源頁面的更改會自動在啟動副本中實現(如果設定為繼承；即即即即時副本)。
+   * 對源頁面的更改會自動在啟動副本中實現(如果設定為繼承； 即即即即時副本)。
    * 您可以變更啟動副本，而不中斷這些自動更新或來源頁面。
+
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
 * [建立巢狀啟動](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) -啟動中的啟動：
 
    * 來源是現有的啟動。
-   * 您可以將 [巢狀啟動提升至](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) 任何目標；這可以是父級啟動或頂層來源頁面（生產）。
+   * 您可以將 [巢狀啟動提升至](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) 任何目標； 這可以是父級啟動或頂層來源頁面（生產）。
+
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
    >[!CAUTION]
@@ -104,7 +109,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 「啟動」控制台提供啟動的概述，並可讓您對所列的動作採取動作。 可通過以下方式訪問控制台：
 
-* 工 **具控制** 台：工 **具**、網 **站**、 **啟動**。
+* 工 **具控制** 台： **工具**、 **網站**、 **啟動**。
 
 * 或直接與 [http://localhost:4502/libs/launches/content/launches.html](http://localhost:4502/libs/launches/content/launches.html)
 
