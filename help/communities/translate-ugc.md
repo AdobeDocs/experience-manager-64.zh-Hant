@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1118'
+ht-degree: 0%
 
 ---
 
@@ -91,7 +94,8 @@ AEM Communities隨附試用授 [權](../../help/sites-administering/tc-msconf.md
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-* **[!UICONTROL 父配置]**（必要）通常保留為預設值。 預設為 `/etc/cloudservices/translation`。
+* **[!UICONTROL 父配置]**（必要）通常保留為預設值。 預設值為 
+`/etc/cloudservices/translation`。
 
 * **[!UICONTROL 標題]**（必要）輸入您選擇的顯示標題。 無預設值。
 
@@ -105,15 +109,18 @@ AEM Communities隨附試用授 [權](../../help/sites-administering/tc-msconf.md
 
 有關詳細說明，請 [訪問建立翻譯整合配置](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
-* **[!UICONTROL 「站點]** 」頁籤：可保留為預設值
+* **[!UICONTROL 「站點]** 」頁籤： 可保留為預設值
 * **[!UICONTROL 「社群]** 」頁籤：
-   * **[!UICONTROL 翻譯提供]**&#x200B;者從下拉清單中選擇翻譯提供者。 預設為 `microsoft`試用服務。
+   * **[!UICONTROL 翻譯提供]**&#x200B;者從下拉清單中選擇翻譯提供者。 預設值為 
+`microsoft`、試用版服務。
 
-   * **[!UICONTROL 內容類]**&#x200B;別：選擇說明要翻譯內容的類別。 預設值為 `General.`
+   * **[!UICONTROL 內容類]**&#x200B;別：選擇說明要翻譯內容的類別。 預設值為 
+`General.`
 
-   * ****&#x200B;選擇地區……（選擇性）透過選取儲存UGC的地區設定，所有語言副本的貼文都會出現在一個全域對話中。 依慣例，選擇網站基 [本語言的地](sites-console.md#translation) 區設定。 選擇 `No Common Store` 將禁用全局轉換。 預設情況下，全局轉換處於禁用狀態。
+   * **[!UICONTROL 選擇地區……]**
+（選擇性）透過選取儲存UGC的地區設定，所有語言副本的貼文都會出現在一個全域對話中。 依慣例，選擇網站基 [本語言的地](sites-console.md#translation) 區設定。 選擇 `No Common Store` 將禁用全局轉換。 預設情況下，全局轉換處於禁用狀態。
 
-* **[!UICONTROL 「資產]** 」標籤：可保留為預設值
+* **[!UICONTROL 「資產]** 」標籤： 可保留為預設值
 * 選擇「確 **[!UICONTROL 定」]**
 
 #### 啟動 {#activation}
