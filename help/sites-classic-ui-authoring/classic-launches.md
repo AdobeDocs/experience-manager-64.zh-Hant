@@ -1,8 +1,8 @@
 ---
 title: 啟動
 seo-title: 啟動
-description: 建立啟動以更新現有網頁的新版本，以供日後啟動。 當您建立啟動時，請指定標題和來源頁面。
-seo-description: 建立啟動以更新現有網頁的新版本，以供日後啟動。 當您建立啟動時，請指定標題和來源頁面。
+description: 建立啟動以更新現有網頁的新版本，以供日後啟動。 當您建立啟動時，您會指定標題和來源頁面。
+seo-description: 建立啟動以更新現有網頁的新版本，以供日後啟動。 當您建立啟動時，您會指定標題和來源頁面。
 uuid: b1952b6c-fc44-4e39-80ba-9380a6c66b8c
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 4f62078d-b5b0-4eb9-bd9b-7647a093dec2
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
