@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2780'
+ht-degree: 0%
 
 ---
 
@@ -65,8 +68,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 依序 **選擇** 「 **建立頁面」**。
 1. 選取您要連線至的Adobe Campaign特定範本之一，然後按一下「下一 **步**」。 預設提供3個範本：
 
-   * **Adobe Campaign Classic電子郵件**:可讓您先將內容新增至預先定義的範本（兩欄），再將其傳送至Adobe Campaign Classic進行傳送。
-   * **Adobe Campaign Standard電子郵件**:可讓您先將內容新增至預先定義的範本（兩欄），再將其傳送至Adobe Campaign Standard進行傳送。
+   * **Adobe Campaign Classic電子郵件**: 可讓您先將內容新增至預先定義的範本（兩欄），再將其傳送至Adobe Campaign Classic進行傳送。
+   * **Adobe Campaign Standard電子郵件**: 可讓您先將內容新增至預先定義的範本（兩欄），再將其傳送至Adobe Campaign Standard進行傳送。
 
 1. 填寫「標 **題** 」，並選擇 **「說明** 」，然 **後按一下**。 標題會用作電子報／電子郵件的主題，除非您在編輯電子郵件時覆寫它。
 
@@ -76,7 +79,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 此外，您也可能需要選取Adobe Campaign範本，並變更主題，並為不會以HTML檢視電子郵件的使用者新增純文字內容。
 
-您可以在建立雲端服務後，從「 **Sites** 」標籤或從電子郵件／電子報內選取該服務。
+您可以在建立雲端服務後，從「 **Sites** 」索引標籤或從電子郵件／電子報中選取該服務。
 
 建議您從「網站」標籤 **中選取** 「雲端服務」。 從電子郵件／電子報選取雲端服務需要因應措施。
 
@@ -157,6 +160,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 只會考慮Adobe Campaign定位 **維度的** 「Campaign設定檔」欄位。
 >* 從網站檢視「 **屬性**」時，您無法存取Adobe Campaign內容欄位。 您可以在編輯時直接從電子郵件存取這些內容。
+
 >
 
 
@@ -177,6 +181,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    >
    >* 可用的上下文欄位會對應 **至** Adobe Campaign中的「設定檔定位」維度。
    >* 請參 [閱將AEM頁面連結至Adobe Campaign電子郵件](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard)。
+
    >
    >**對於Adobe Campaign Classic:**
    >
@@ -184,7 +189,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       >
       >
    * 若要新增或隱藏個人化元素，請參 [閱管理個人化欄位和區塊](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks)。
-   >* **重要**:所有種子表欄位也必須位於收件人表（或相應的聯繫人表）中。
+   >* **重要**: 所有種子表欄位也必須位於收件人表（或相應的聯繫人表）中。
 
 
 1. 輸入以插入文字。 按一下Adobe Campaign元件並選取它們，即可插入內容欄位或個人化區塊。 完成後，選擇複選標籤。
@@ -217,7 +222,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 內容完成後，您可以開始核准程式。 前往工具箱的 **Workflow** （工作流程）標籤，並選取 **Adobe Campaign工作流程的Approve** 。
 
-這個現成可用的工作流程包含兩個步驟：修訂然後批准，或修訂然後拒絕。 不過，此工作流程可以延伸並適應更複雜的程式。
+這個現成可用的工作流程包含兩個步驟： 修訂然後批准，或修訂然後拒絕。 不過，此工作流程可以延伸並適應更複雜的程式。
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -238,7 +243,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >[!NOTE]
 未核准的內容可與Adobe Campaign中的傳送同步，但無法執行傳送。 只能透過促銷活動傳送傳送已核准的內容。
 
-## 將AEM與Adobe Campaign standard和Adobe Campaign Classic連結 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
+## 將AEM與Adobe Campaign Standard和Adobe Campaign Classic連結 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
 
 AEM與Adobe Campaign的連結或同步方式取決於您是使用訂閱型Adobe Campaign Standard或內部部署型Adobe Campaign Classic。
 
@@ -286,6 +291,7 @@ Adobe Campaign Standard可讓您以下列方式復原並連結在AEM中建立的
    * AEM中內容的核准狀態。 如果內容未獲核准，您可以同步內容，但必須在傳送前先加以核准。 不過，您可以執行某些操作，例如傳送校樣或預覽測試。
    * 上次修改內容的日期。
    * 任何已連結至傳送的內容。
+
    >[!NOTE]
    依預設，已與傳送同步的內容會隱藏。 不過，您可以顯示並使用它。 例如，如果您想將內容當做數個傳送的範本。
 
@@ -318,7 +324,7 @@ Adobe Campaign可讓您將在AEM中建立的內容復原並同步化至：
 如果電子報連結至數個傳送，則會顯示連結的傳送次數（但不會顯示每個ID）。
 
 >[!NOTE]
-AEM 6.1中不 **再提倡「發佈至Adobe Campaign** 」的工作流程步驟。此步驟是AEM 6.0與Adobe Campaign整合的一部分，不再需要。
+AEM 6.1中不 **再提倡「發佈至Adobe Campaign** 」的工作流程步驟。 此步驟是AEM 6.0與Adobe Campaign整合的一部分，不再需要。
 
 若要將在AEM中建立的內容與Adobe Campaign的傳送同步化：
 
@@ -329,7 +335,7 @@ AEM 6.1中不 **再提倡「發佈至Adobe Campaign** 」的工作流程步驟�
 1. 在工 **具列中選取** 「同步化」，以存取AEM中可用的內容清單。
 
    >[!NOTE]
-   如果「同 **步** 」選項未出現在傳送的工具列中，請選取Oracle Properties **> AdvancedAccoundedLight，檢查在** AEM ************&#x200B;中「內容編輯模式」欄位是否正確。
+   如果「同 **步** 」選項未出現在傳送的工具列中，請選取Oracle Properties **> AdvancedAcvandedContentProperties，檢查在** AEM ************&#x200B;中「內容編輯模式」欄位是否正確。
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -341,6 +347,7 @@ AEM 6.1中不 **再提倡「發佈至Adobe Campaign** 」的工作流程步驟�
    * AEM中內容的核准狀態。 如果內容未獲核准，您可以同步內容，但必須在傳送前先加以核准。 不過，您可以執行某些操作，例如傳送BAT或預覽測試。
    * 內容上次修改的日期。
    * 任何已連結至傳送的內容。
+
    >[!NOTE]
    依預設，已與傳送同步的內容會隱藏。 不過，您可以顯示並使用它。 例如，如果您想將內容當做數個傳送的範本。
 
