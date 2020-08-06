@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 1%
 
 ---
 
@@ -23,8 +26,8 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 
 這些命名慣例會在不同層級實作：
 
-* JcrUtil:JCR公用程式的AEM [實作](#jcr-utilities)。
-* PageManager:「頁 [面管理器](#page-manager) 」提供頁面層級操作的方法。
+* JcrUtil: JCR公用程式的AEM [實作](#jcr-utilities)。
+* PageManager: 「頁 [面管理器](#page-manager) 」提供頁面層級操作的方法。
 * 根據使用的UI:
 
    * [標準、可觸控的UI](#standard-ui)
