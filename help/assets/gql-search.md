@@ -4,6 +4,9 @@ description: 探索AEM Assets中的GQL全文搜尋功能。 使用它可根據�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 2%
 
 ---
 
@@ -59,11 +62,11 @@ GQL全文搜尋功能可讓您根據下列中繼資料屬性來搜尋資產。 �
 | [!UICONTROL 版權擁有者] | copyrightowner:「Adobe Systems」 |
 | [!UICONTROL 參與者] | 投稿人：John |
 | [!UICONTROL 使用條款] | 使用條款：「保留CopyRights」 |
-| [!UICONTROL 建立日期] | created:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL 已建立] | created:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 到期日] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 準時] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 關閉時間] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL 時間範圍] （過期的dateontime,offtime） | facet欄位：下限……上界 |
+| [!UICONTROL 時間範圍] （過期的dateontime,offtime） | facet欄位： 下限……上界 |
 | [!UICONTROL 路徑] | /content/dam/&lt;資料夾名稱> |
 | [!UICONTROL PDF 標題] | pdftitle:「Adobe檔案」 |
 | [!UICONTROL 主旨] | 主旨：「訓練」 |
@@ -75,33 +78,33 @@ GQL全文搜尋功能可讓您根據下列中繼資料屬性來搜尋資產。 �
 
 以下是複雜查詢的搜尋格式範例：
 
-* 若要顯示具有多個刻面欄位的所有資產(例如：title=John Doe and creator tool = Adobe Photoshop):
+* 若要顯示具有多個刻面欄位的所有資產(例如： title=John Doe and creator tool = Adobe Photoshop):
 
-Tiltle:&quot;John Doe&quot;製作工具：Adobe&amp;ast;
+Tiltle:&quot;John Doe&quot;製作工具： Adobe&amp;ast;
 
-* 若要在Facet值不是單字而是句子時顯示所有資產(例如：title=Scott Reynolds)
+* 若要在Facet值不是單字而是句子時顯示所有資產(例如： title=Scott Reynolds)
 
 標題：「Scott Reynolds」
 
-* 若要顯示具有單一屬性多個值的資產(例如：title=Scott Reynolds或John Doe)
+* 若要顯示具有單一屬性多個值的資產(例如： title=Scott Reynolds或John Doe)
 
 標題：「Scott Reynolds」或「John Doe」
 
-* 若要顯示屬性值以特定字串開頭的資產(例如：標題是Scott Reynolds)
+* 若要顯示屬性值以特定字串開頭的資產(例如： 標題是Scott Reynolds)
 
 標題：「Scott」
 
-* 若要顯示屬性值以特定字串結尾的資產(例如：標題是Scott Reynolds)
+* 若要顯示屬性值以特定字串結尾的資產(例如： 標題是Scott Reynolds)
 
 標題：「Reynolds」
 
-* 若要顯示包含特定字串的屬性值的資產(例如：標題=巴塞爾會議室)
+* 若要顯示包含特定字串的屬性值的資產(例如： 標題=巴塞爾會議室)
 
 標題：「會議」;
 
-* 若要顯示包含特定字串且具有特定屬性值的資產(例如：在具有title=John Doe的資產中搜尋字串Adobe)
+* 若要顯示包含特定字串且具有特定屬性值的資產(例如： 在具有title=John Doe的資產中搜尋字串Adobe)
 
-&amp;ast;Adobe&amp;ast;title:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
+&amp;ast;Adobe&amp;ast; title:&quot;John Doe &quot;OR title:&quot;John Doe&quot; &amp;ast;Adobe&amp;ast;
 
 >[!NOTE]
 >
@@ -121,13 +124,13 @@ Tiltle:&quot;John Doe&quot;製作工具：Adobe&amp;ast;
 您可以改善特定資產的關鍵字關聯性，以協助根據關鍵字提高搜尋效率。 換言之，當您根據這些關鍵字進行搜尋時，您促銷特定關鍵字的影像會出現在搜尋結果的頂端。
 
 1. 從「資產」UI中，開啟您要提升關鍵字之資產的屬性頁面。
-1. 切換至「進階 **[!UICONTROL 」標籤]** ，然後按一下／點選「提 **[!UICONTROL 取」下]** 的「新增」以搜尋關鍵字 ****。
+1. 切換至「進階 **[!UICONTROL 」標籤]** ，然後按一下／點選「提 **[!UICONTROL 升」下]** 的「新增」以搜尋關鍵字 ****。
 
    ![elevate_for_search](assets/elevate_for_search.png)
 
-1. 在「搜 **[!UICONTROL 尋促銷]** 」方塊中，指定您要大幅提升影像搜尋的關鍵字，然後按一下／點選「新 **[!UICONTROL 增」]**。 在必要時，以相同的方式指定多個關鍵字。
+1. 在「搜 **[!UICONTROL 尋促銷]** 」方塊中，指定您要大幅提升影像搜尋的關鍵字，然後按一下／點選「新增」 ****。 在必要時，請以相同的方式指定多個關鍵字。
 
    ![add_search_word](assets/add_search_word.png)
 
-1. 按一下／點選「 **[!UICONTROL 儲存並關閉]**」。
+1. Click/tap **[!UICONTROL Save &amp; Close]**.
 1. 使用Omnisearch方塊搜尋關鍵字。 您促銷此關鍵字的資產會出現在排名最前的搜尋結果中。
