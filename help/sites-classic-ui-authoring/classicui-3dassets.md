@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c601a44a-6604-4cc2-b35a-60d2c5a950e1
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 0%
 
 ---
 
@@ -25,5 +28,5 @@ AEM 3D(Adobe Experience Manager 3D)可讓您上傳、管理、檢視和演算3D�
 
 >[!NOTE]
 >
->AEM 3D僅能從AEM touch UI使用，而非傳統UI使用。 如需 [完整詳細資訊，請參閱標準製作檔案中的](/help/assets/assets-3d.md) 「使用3D資產」。
+>AEM 3D僅能從AEM touch UI使用，而非傳統UI使用。 如需 [完整詳細資訊，請參閱標準編寫檔案中的](/help/assets/assets-3d.md) 「使用3D資產」。
 
