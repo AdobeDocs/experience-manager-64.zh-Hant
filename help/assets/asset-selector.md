@@ -4,6 +4,9 @@ description: 瞭解如何使用資產選擇器來搜尋、篩選、瀏覽及擷�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '480'
+ht-degree: 0%
 
 ---
 
