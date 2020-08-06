@@ -10,6 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 translation-type: tm+mt
 source-git-commit: 5dce4bcf4b10cce65798fd142a3eeb1956caf726
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 4%
 
 ---
 
@@ -23,12 +26,12 @@ source-git-commit: 5dce4bcf4b10cce65798fd142a3eeb1956caf726
 * [自訂最適化視訊編碼設定](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
 * [動態媒體(DMS7)雲端設定](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
 * [動態媒體(DM Hybrid)雲端服務組態](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
-* [動態媒體- youTube雲端服務設定](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
+* [動態媒體- YouTube雲端服務設定](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [其他](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
 ## 6.5升級版之前 {#prior-to-upgrade}
 
-### 自訂最適化視訊編碼設定 {#custom-adaptive-video-encoding-configurations}
+### 自訂最適化視訊編碼設定  {#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -92,7 +95,7 @@ source-git-commit: 5dce4bcf4b10cce65798fd142a3eeb1956caf726
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>您可以執行下列移轉指令碼，以便與最新模型對齊：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
+   <td><p>您可以執行下列移轉指令碼，以符合最新的模型：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
@@ -101,7 +104,7 @@ source-git-commit: 5dce4bcf4b10cce65798fd142a3eeb1956caf726
  </tbody>
 </table>
 
-### 動態媒體- youTube雲端服務設定 {#youtubecloudserviceconfiguration}
+### 動態媒體- YouTube雲端服務設定  {#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -115,7 +118,7 @@ source-git-commit: 5dce4bcf4b10cce65798fd142a3eeb1956caf726
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>1.從YouTube<br /> 2取消發佈所有視訊。 使用新的TouchUI（從）建立YouTube設定， <code>/conf</code>包括從舊位置<br /> 3複製所有頻道。 將所有視訊發佈回YouTube。</p> <p>此工作流程會產生新的YouTube URL。 如果您在建立新的TouchUI YouTube設定之前未解除發佈，則「屬性」下會列出多個YouTube URL，因為如果有機會，重新建立的渠道將會再次發佈。 這表示您的「屬性」下會列出無用的URL。</p> </td> 
+   <td><p>1. 從YouTube<br /> 2取消發佈所有視訊。 使用新的TouchUI（從）建立YouTube設定， <code>/conf</code>包括從舊位置<br /> 3複製所有頻道。 將所有視訊發佈回YouTube。</p> <p>此工作流程會產生新的YouTube URL。 如果您在建立新的TouchUI YouTube設定之前未解除發佈，則「屬性」下會列出多個YouTube URL，因為如果有機會，重新建立的渠道將會再次發佈。 這表示您的「屬性」下會列出無用的URL。</p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
