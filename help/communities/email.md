@@ -12,6 +12,9 @@ discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '829'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ AEM Communities使用電子郵件
 
 * 在主要發行者上
 * 以管理員權限登入
-* 存取 [Web Console](../../help/sites-deploying/configuring-osgi.md)
+* 存取 [Web主控台](../../help/sites-deploying/configuring-osgi.md)
 
    * 例如， [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
@@ -48,17 +51,17 @@ AEM Communities使用電子郵件
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
-* **[!UICONTROL SMTP伺服器主機名]**:(必 *要)* ，要使用的SMTP伺服器。
+* **[!UICONTROL SMTP伺服器主機名]**: *（必需）* ，要使用的SMTP伺服器。
 
 * **[!UICONTROL SMTP伺服器端]** 口 *（必需）* SMTP伺服器埠必須是25或更高。
 
-* **[!UICONTROL SMTP用戶]**: *（必需）* SMTP用戶。
+* **[!UICONTROL SMTP用戶]**: *（必要）* SMTP用戶。
 
 * **[!UICONTROL SMTP密碼]**: *（必需）* SMTP用戶的口令。
 
-* **[!UICONTROL 「寄件者」地址]**:留空
-* **[!UICONTROL SMTP使用SSL]**:如果勾選，將傳送安全的電子郵件。 確保埠設定為465或SMTP伺服器需要。
-* **[!UICONTROL 除錯電子郵件]**:如果選中此選項，則啟用SMTP伺服器交互的日誌記錄。
+* **[!UICONTROL 「寄件者」地址]**: 留空
+* **[!UICONTROL SMTP使用SSL]**: 如果勾選，將傳送安全的電子郵件。 確保埠設定為465或SMTP伺服器需要。
+* **[!UICONTROL 除錯電子郵件]**: 如果選中此選項，則啟用SMTP伺服器交互的日誌記錄。
 
 ## AEM Communities電子郵件設定 {#aem-communities-email-configuration}
 
@@ -94,9 +97,9 @@ OSGi設定與 `AEM Communities Email Reply Configuration` 「名稱」電子郵�
 
 * 找到 `AEM Communities Email Reply Configuration`
 * 選取編輯圖示
-* 驗證 **名稱**`email`
+* 驗證 **名稱** `email`
 
-* 驗證 **從回覆電子郵件建立貼文**`unchecked`
+* 驗證 **從回覆電子郵件建立貼文** `unchecked`
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
@@ -106,29 +109,29 @@ OSGi設定與 `AEM Communities Email Reply Configuration` 「名稱」電子郵�
 
 * 找到 `AEM Communities Email Reply Configuration`
 * 選取編輯圖示
-* 驗證 **名稱**`subscriptions-email`
+* 驗證 **名稱** `subscriptions-email`
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
 * **[!UICONTROL 名稱]** : *（必要）*`subscriptions-email`。 請勿編輯。
 
-* **[!UICONTROL 從回覆電子郵件建立貼文]**:如果勾選，訂閱電子郵件的收件者可能會透過傳送回覆來張貼內容。 已勾選預設值。
-* **[!UICONTROL 新增追蹤ID至標題]**:預設為 `Reply-To`。
+* **[!UICONTROL 從回覆電子郵件建立貼文]**: 如果勾選，訂閱電子郵件的收件者可能會透過傳送回覆來張貼內容。 已勾選預設值。
+* **[!UICONTROL 新增追蹤ID至標題]**: 預設為 `Reply-To`。
 
-* **[!UICONTROL 主旨的最大長度]**:如果追蹤器ID新增至主旨行，則此為主旨的最大長度（不包括追蹤ID），之後會加以修剪。 請注意，這應盡可能小，以免遺失追蹤的ID資訊。 預設值為200。
-* **[!UICONTROL 電子郵件「寄件者」地址]**:(必 *要)* ，寄送通知電子郵件的地址。 可能與為默 **認郵件服務指定** 的 [SMTP](#configuredefaultmailservice)用戶相同。 預設為 `no-reply@example.com`。
+* **[!UICONTROL 主旨的最大長度]**: 如果追蹤器ID新增至主旨行，則此為主旨的最大長度（不包括追蹤ID），之後會加以修剪。 請注意，這應盡可能小，以免遺失追蹤的ID資訊。 預設值為200。
+* **[!UICONTROL 電子郵件「寄件者」地址]**: *（必要）* ，通知電子郵件寄件地址。 可能與為默 **認郵件服務指定** 的 [SMTP](#configuredefaultmailservice)用戶相同。 預設為 `no-reply@example.com`。
 
-* **[!UICONTROL 回覆分隔字元]**:如果追蹤器ID已新增至回覆標題，則會使用此分隔字元。 預設值 `+` 為（加號）。
+* **[!UICONTROL 回覆分隔字元]**: 如果追蹤器ID已新增至回覆標題，則會使用此分隔字元。 預設值 `+` 為（加號）。
 
-* **[!UICONTROL 主旨中的追蹤器Id首碼]**:如果追蹤器ID已新增至主旨行，則會使用此首碼。 預設為 `post#`。
+* **[!UICONTROL 主旨中的追蹤器Id首碼]**: 如果追蹤器ID已新增至主旨行，則會使用此首碼。 預設為 `post#`。
 
-* **[!UICONTROL 訊息內文中的追蹤器ID首碼]**:如果將追蹤器ID新增至訊息內文，則會使用此首碼。 預設為 `Please do not remove this:`。
+* **[!UICONTROL 訊息內文中的追蹤器ID首碼]**: 如果將追蹤器ID新增至訊息內文，則會使用此首碼。 預設為 `Please do not remove this:`。
 
-* **[!UICONTROL 以HTML形式傳送電子郵件]**:如果勾選，則電子郵件的「內容類型」會設為 `"text/html;charset=utf-8"`。 已勾選預設值。
+* **[!UICONTROL 以HTML形式傳送電子郵件]**: 如果勾選，則電子郵件的「內容類型」會設為 `"text/html;charset=utf-8"`。 已勾選預設值。
 
-* **[!UICONTROL 預設用戶名]**:此名稱將用於無名稱用戶。 預設為 `no-reply@example.com`。
+* **[!UICONTROL 預設用戶名]**: 此名稱將用於無名稱用戶。 預設為 `no-reply@example.com`。
 
-* **[!UICONTROL 範本根路徑]**:電子郵件是使用此根路徑中儲存的模板構建的。 預設為 `/etc/community/templates/subscriptions-email`。
+* **[!UICONTROL 範本根路徑]**: 電子郵件是使用此根路徑中儲存的模板構建的。 預設為 `/etc/community/templates/subscriptions-email`。
 
 ## 設定輪詢匯入工具 {#configure-polling-importer}
 
@@ -143,13 +146,14 @@ OSGi設定與 `AEM Communities Email Reply Configuration` 「名稱」電子郵�
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
-* **[!UICONTROL 類型]**: *（必要）* 下拉式選擇 `POP3 (over SSL).`
+* **[!UICONTROL 類型]**: *（必要）* ，下拉以選取 `POP3 (over SSL).`
 
-* **[!UICONTROL URL]**:(必 *要)* ，出站郵件伺服器。 例如， `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
+* **[!UICONTROL URL]**: *（必要）* ，出站郵件伺服器。 例如， `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`
 
-* **[!UICONTROL 導入到Path]**&amp;ast;:(必 *要)* ，瀏 `/content/usergenerated/mailFolder/postEmails`覽至資料夾並選 `postEmails`取「確 **定」**
+* **[!UICONTROL 導入到Path]**&amp;ast;: *（必要）* ，瀏覽 `/content/usergenerated/mailFolder/postEmails`至 
+`postEmails`資料夾並選擇 **確定**
 
-* **[!UICONTROL 更新間隔（秒）]**:(可 *選)* ，為預設郵件服務配置的郵件伺服器可能需要更新時間間隔值。 例如，Gmail可能需要間隔時間 `300`。
+* **[!UICONTROL 更新間隔（秒）]**: *（可選）* ，為預設郵件服務配置的郵件伺服器可能需要更新時間間隔值。 例如，Gmail可能需要間隔時間 `300`。
 
 * **[!UICONTROL 登入]**: *（可選）*
 
@@ -169,8 +173,8 @@ OSGi設定與 `AEM Communities Email Reply Configuration` 「名稱」電子郵�
 * 選擇新建立的配置
 * 修改下列屬性
 
-   * **feedType**:取代 `pop3s` 為 **`emailreply`**
-   * **來源**:將源協定替換為 `pop3s://`**`emailreply://`**
+   * **feedType**: 取代 `pop3s` 為 **`emailreply`**
+   * **來源**: 將源協定替換為 `pop3s://` **`emailreply://`**
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
