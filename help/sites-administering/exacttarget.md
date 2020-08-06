@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: d1cff2bb-9fdf-49cb-a695-d437bba5653d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
 
 # 與ExactTarget整合{#integrating-with-exacttarget}
 
-將AEM與Exact target整合，可讓您透過Exact target管理並傳送在AEM中建立的電子郵件。 此外，它還可讓您透過AEM頁面上的AEM表單，使用「完全目標」的銷售機會管理功能。
+將AEM與Exact Target整合，可讓您透過Exact Target管理並傳送在AEM中建立的電子郵件。 此外，它還可讓您透過AEM頁面上的AEM表單，使用「完全目標」的銷售機會管理功能。
 
 整合提供下列功能：
 
-* 在AEM中建立電子郵件並發佈至Exact target進行散發的功能。
+* 在AEM中建立電子郵件並發佈至Exact Target進行散發的功能。
 * 設定AEM表單動作以建立「完全目標」訂閱者的能力。
 
 在設定ExactTarget後，您可以將電子報或電子郵件發佈至ExactTarget。 請參閱 [將電子報發佈至電子郵件服務](/help/sites-authoring/personalization.md)。
@@ -48,7 +51,7 @@ ExactTarget組態可透過Cloudservices或工具新增。 本節將介紹這兩�
 
    ![chlimage_1-32](assets/chlimage_1-32.jpeg)
 
-1. 選擇帳戶（如果可用）。 此帳戶適用於Enterprise 2.0客戶。 按一下 **確定**。
+1. 選擇帳戶（如果可用）。 此帳戶適用於Enterprise 2.0客戶。 按一下&#x200B;**「確定」**。
 
    已設定ExactTarget。 您可以按一下「編輯」來編輯 **設定**。 您可以按一下「前往ExactTarget」, **前往ExactTarget**。
 
