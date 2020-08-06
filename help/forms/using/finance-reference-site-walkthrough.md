@@ -575,11 +575,11 @@ We.Finance的Microsoft Dynamics住房抵押方案涉及以下角色：
 * We.Finance客戶Sarah Rose
 * We.Finance Microsoft Dynamics實例的管理員
 
-Microsoft Dynamics的「住房抵押」應用程式逐步說明，當參考網站使用Microsoft Dynamics進行資料整合時，We.Finance客戶可如何使用網站申請住房抵押。 本逐步說明的結尾是由Microsoft Dynamics所接收的使用者填入的資料。 在繼續執行此方案之前，您必須完成We.Finance參考網站的 [Microsoft Dynamics 365住房抵押工作流程的配置](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)。
+Microsoft Dynamics的「住房抵押」應用程式逐步說明，當參考網站使用Microsoft Dynamics進行資料整合時，We.Finance客戶可如何使用網站申請住房抵押。 本逐步說明的結尾是由Microsoft Dynamics所接收的使用者填入的資料。 在繼續執行此方案之前，您必須完成We.Finance參考網站的 [Microsoft Dynamics 365住房抵押工作流程配置](/help/forms/using/ms-dynamics-configuration-home-mortgage.md)。
 
 ### Sarah造訪We.Finance網站並申請住房抵押 {#sarah-visits-we-finance-website-and-applies-for-home-mortgage-1}
 
-莎拉·羅斯正計畫購買一套住房，並尋找住房抵押計畫。 她是We.Finance客戶，因此造訪We.Finance入口網站，探索房屋抵押優惠。 她前往「貸款」區段，在入口網站上找到抵押計算器。 她填好細節，點選了「計算我的抵押貸款」，這個計畫會返回抵押貸款計畫。
+莎拉·羅斯正計畫購買一套住房，並尋找住房抵押計畫。 她是We.Finance客戶，因此造訪We.Finance入口網站，探索房屋抵押優惠。 她前往「貸款」區段，在入口網站上找到抵押計算器。 她填好細節，點選了「計算我的抵押貸款」，該計劃歸還了抵押貸款計畫。
 
 ![貸款1貸](assets/loans1.png) 款2 ![](assets/loans2.png)**圖：** *抵押電腦*
 
