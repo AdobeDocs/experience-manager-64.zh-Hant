@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 36c87684-e62a-4983-b123-87f56dbf7bc5
 translation-type: tm+mt
 source-git-commit: 9a1fe3265f1cd7907dfe576666a694b3c5b78d76
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 1%
 
 ---
 
@@ -47,10 +50,10 @@ source-git-commit: 9a1fe3265f1cd7907dfe576666a694b3c5b78d76
 
 **行為特徵** ：行為特徵是指與訪客在網站上的行為相關的特徵。 其中包括：
 
-* 您網站的興趣；包括瀏覽的頁面和購買的產品。
-* 轉介網站上的興趣；包括使用的搜尋詞，或點選的廣告。
-* 其他網站的興趣；已使用Spyjax等工具確定。
-* 訪客忠誠度；瀏覽的持續時間、瀏覽的頻率。
+* 您網站的興趣； 包括瀏覽的頁面和購買的產品。
+* 轉介網站上的興趣； 包括使用的搜尋詞，或點選的廣告。
+* 其他網站的興趣； 已使用Spyjax等工具確定。
+* 訪客忠誠度； 瀏覽的持續時間、瀏覽的頻率。
 
 **人口統計特徵** ：這些是選定的人口特徵，包括：
 
