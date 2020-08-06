@@ -50,6 +50,7 @@ ht-degree: 0%
       * 對於「工作流」，指定要執行的工作流模型。 例如，/etc/workflow/models/&lt;workflow_name>/jcr:content/model
       * 對於指令碼，指定要執行的指令碼的JCR路徑。 例如，/etc/watchfolder/test/testScript.ecma
       * 對於服務，請指定用於查找OSGi服務的篩選器。 此服務已註冊為com.adobe.aemfd.watchfolder.service.api.ContentProcessor Interface的實作。 例如，下列程式碼是ContentProcessor介面的自訂實作，具有自訂(foo=bar)屬性。
+
    >[!NOTE]
    >
    >如果已為「使 **用流程檔案** 」(Process Files Using **** )欄位選擇了「服務」(Service)，則「服務名稱(inputProcessorType)」(服務名稱(inputProcessorType)欄位的值必須括在括弧中。 例如(foo=bar)。
