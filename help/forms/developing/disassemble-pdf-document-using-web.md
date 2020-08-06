@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 49584fb4-8c3a-4d73-acd6-0879a67f6093
 translation-type: tm+mt
 source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 在設定服務引用時，請確保使用以下WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 在設定服務引用時，請確保使用以下WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -73,6 +76,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
    * 代 `BLOB` 表DDX文檔的對象，該PDF文檔會拆分
    * 包含 `MyMapOf_xsd_string_To_xsd_anyType` 要反匯編的PDF文檔的對象
    * 指定 `AssemblerOptionSpec` 運行時選項的對象
+
    該方 `invokeDDX` 法返回一個對 `AssemblerResult` 像，該對象包含作業結果和所發生的任何異常。
 
 1. 儲存已拆解的PDF檔案。
