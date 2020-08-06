@@ -11,6 +11,9 @@ topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 1%
 
 ---
 
@@ -40,8 +43,8 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 * 選取 `Create button`
 * 基本資訊
 
-   * `Name`:單頁範本
-   * `Description`:由單一頁面函陣列成的範本。
+   * `Name`: 單頁範本
+   * `Description`: 由單一頁面函陣列成的範本。
    * select `Enabled`
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
@@ -51,7 +54,7 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
    * 將函式 `Page` 拖曳至範本產生器
    * 對於配置函式詳細資訊，請輸入
 
-      * `Title`:單頁
+      * `Title`: 單頁
       * `URL`: 頁面
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
@@ -71,14 +74,14 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 
 * 步驟 `1 - Site Template`
 
-   * `Title`:簡單社群網站
-   * `Description`:由單一頁面組成的社群網站，可供實驗。
+   * `Title`: 簡單社群網站
+   * `Description`: 由單一頁面組成的社群網站，可供實驗。
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
-   * `Name`:樣本
+   * `Name`: 樣本
 
       * url = http://localhost:4502/content/sites/sample
-   * `Template`:選擇 `Single Page Template`
+   * `Template`: 選擇 `Single Page Template`
 
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
