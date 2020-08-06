@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 8%
 
 ---
 
@@ -41,7 +44,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
       當您按下Enter時，實際會建立新標籤。 然後，新標籤會顯示在方塊中，右側有一個小星號表示它是新標籤。
 
    * 透過下拉式功能，您可從現有標籤中選取。
-   * 當您將滑鼠移至選取方塊中的標籤項目上時，會顯示x;這可用於移除此頁面的標籤。
+   * 當您將滑鼠移至選取方塊中的標籤項目上時，會顯示x; 這可用於移除此頁面的標籤。
 
 * **於導覽中隱藏**
 
@@ -83,7 +86,7 @@ source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
 
    >[!CAUTION]
    >
-   >虛名URL:
+   >虛名 URL:
    >
    >* 必須是唯一的，因此您應該注意該值尚未被其他頁面使用。
    >* 不支援regex模式。
