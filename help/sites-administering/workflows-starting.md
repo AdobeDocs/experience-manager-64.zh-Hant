@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 4%
 
 ---
 
@@ -26,16 +29,17 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * 自動：
 
-   * 響應節點變化；使 [用啟動器](#workflows-launchers)。
+   * 響應節點變化； [使用啟動器](#workflows-launchers)。
 
 >[!NOTE]
 >
->作者也可使用其他方法；如需完整詳細資訊，請參閱：
+>作者也可使用其他方法； 如需完整詳細資訊，請參閱：
 >
 >* [將工作流程套用至頁面](/help/sites-authoring/workflows-applying.md)
 >* [如何將工作流程套用至DAM資產](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [翻譯專案](/help/sites-administering/tc-manage.md)
+
 >
 
 
@@ -66,7 +70,7 @@ Workflow Launcher會監視內容儲存庫中的更改，以根據更改的節點
 * `/var/mobile`
 * `/var/statistics`
 
-   * 例外：對下方節點的變 `/var/statistics/tracking` 更 *會導致* 工作流程啟動。
+   * 例外： 對下方節點的變 `/var/statistics/tracking` 更 *會導致* 工作流程啟動。
 
 標準安裝中包含各種定義。 這些用於數位資產管理和社交協作工作：
 
@@ -80,14 +84,14 @@ Workflow Launcher會監視內容儲存庫中的更改，以根據更改的節點
 
 * 包含一組資源（例如頁面、資產）的連結。
 * 包含包資訊，如建立日期、建立包的用戶和簡短說明。
-* 使用專用頁面範本定義；這些頁面可讓使用者指定套件中的資源。
+* 使用專用頁面範本定義； 這些頁面可讓使用者指定套件中的資源。
 * 可多次使用。
 * 可由使用者（新增或移除資源）在實際執行工作流程例項時進行變更。
 
 ## 從「模型控制台」啟動工作流 {#starting-a-workflow-from-the-models-console}
 
 1. 然後使用「工 **具** 」、「工作流 **程」導**&#x200B;航至「模 **型」控******&#x200B;制台。
-1. 選擇工作流（根據控制台視圖）;您也可以視需要使用搜尋（左上）:
+1. 選擇工作流（根據控制台視圖）; 您也可以視需要使用搜尋（左上）:
 
    ![wf-103](assets/wf-103.png)
 
@@ -113,7 +117,7 @@ Workflow Launcher會監視內容儲存庫中的更改，以根據更改的節點
 
 ## 建立啟動器配置 {#creating-a-launcher-configuration}
 
-1. 然後使用工具、工 **作流啟動器** 、Workflow **Sharticles**&#x200B;導覽至Workflow Console ********。
+1. 然後使用工具、工 **作流啟動器** 、Workflow **Shartizer**********，導覽至Workflow Console。
 1. 選擇 **建立**，然 **後選擇添加啟動器** ，開啟對話框：
 
    ![wf-105](assets/wf-105.png)
@@ -148,6 +152,7 @@ Workflow Launcher會監視內容儲存庫中的更改，以根據更改的節點
       要啟用的功能清單。 使用下拉式選取器選取所需的功能。
 
    * **停用的功能**
+
    要停用的功能清單。 使用下拉式選取器選取所需的功能。
 
    * **工作流程模型**
@@ -168,10 +173,11 @@ Workflow Launcher會監視內容儲存庫中的更改，以根據更改的節點
 
       這可指定在決定是否應觸發工作流時要排除的任何JCR事件（即忽略）。
 
-      此啟動程式屬性是以逗號分隔的項目清單：&quot;
+      此啟動程式屬性是以逗號分隔的項目清單： &quot;
 
-      * `property-name` 忽略在 `jcr` 指定屬性名稱上觸發的任何事件。&quot;
+      * `property-name` 忽略在 `jcr` 指定屬性名稱上觸發的任何事件。 &quot;
       * `event-user-data:<*someValue*>` 忽略任何包含 `*<someValue*`>透過 `user-data` API [`ObservationManager`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String)設定的事件。
+
       例如：
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
