@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '3241'
+ht-degree: 3%
 
 ---
 
@@ -51,7 +54,7 @@ Communities Sites控制台可讓您存取：
 
 在作者環境中，要訪問Communities Sites控制台：
 
-* 從全域導覽：社 **[!UICONTROL 群>網站]**
+* 從全域導覽： **[!UICONTROL 社群>網站]**
 
 「社群網站」主控台會顯示任何現有的社群網站。 在此控制台中，可以建立、編輯、管理和刪除社區站點。
 
@@ -59,7 +62,7 @@ Communities Sites控制台可讓您存取：
 
 若要存取現有社群網站，請為編寫、修改、發佈、匯出或新增巢狀群組之目的，選取網站的檔案夾圖示。
 
-例如，下圖顯示主Communities Sites控制台，顯示兩個社區站點的資料夾：啟 [用](getting-started-enablement.md) , [並參與](getting-started.md):
+例如，下圖顯示主Communities Sites控制台，顯示兩個社區站點的資料夾： [啟用](getting-started-enablement.md) 並 [吸引](getting-started.md):
 
 ![chlimage_1-448](assets/chlimage_1-448.png)
 
@@ -69,31 +72,31 @@ Communities Sites控制台可讓您存取：
 
 每個建立的網站都包含登入功能，因為網站訪客必須先登入才能張貼內容、傳送訊息或參與群組。 其他包含的功能包括使用者設定檔、訊息、通知、網站選單、搜尋、主題和品牌。
 
-通過選擇位於Communities Sites控 `Create` 制台頂部的按鈕啟動進程。
+通過選擇位於Communities Sites控 `Create` 制台頂部的按鈕，啟動進程。
 
-建立過程是一系列步驟，這些步驟顯示為包含要配置的一組特徵的面板（顯示為子面板）。 在最後一步中提交站 **點之前** ，可以前 **移至** 「下一步」或「上一步」。
+建立過程是一系列步驟，這些步驟顯示為包含要配置的一組特徵的面板（顯示為子面板）。 在最後一步中提交站 **點之前** ，可以前 **移至** 「下一步」或「返回上一步」。
 
-### 步驟1:網站範本 {#step-site-template}
+### 步驟1: 網站範本 {#step-site-template}
 
 ![新網站範本](assets/newsitetemplate.png)
 
 在「網站範本」面板上，會指定「標題」、「說明」、「網站根」、「基本語言」、「名稱」和「網站範本」:
 
-* **[!UICONTROL 社群網站標題]**:網站的顯示標題。
+* **[!UICONTROL 社群網站標題]**: 網站的顯示標題。
 
    標題會出現在已發佈的網站上，也會出現在網站管理員UI中。
 
-* **[!UICONTROL 社群網站說明]**:網站的說明。
+* **[!UICONTROL 社群網站說明]**: 網站的說明。
 
    說明不會出現在發佈的網站上。
 
-* **[!UICONTROL 社群網站根]**:網站的根路徑。
+* **[!UICONTROL 社群網站根]**: 網站的根路徑。
 
    預設根目錄為 `/content/sites`，但根目錄可移至網站內的任何位置。
 
-* **[!UICONTROL 社群網站基本語言]**:（單語言不受影響）英文)使用下拉式選單，從 *可用語言* (德文、義大利文、法文、日文、西班牙文、葡萄牙文（巴西）、中文（繁體）和簡體中文)選擇一或多種基本語言。 會針對新增的每種語言建立一個社群網站，並依照多語言網站翻譯內容中所述的最佳實務，存在於相 [同的網站資料夾中](../../help/sites-administering/translation.md)。 每個網站的根頁面將包含一個子頁面，該子頁面由其中一種語言的語言代碼命名，例如英文的&#39;en&#39;或法文的&#39;fr&#39;。
+* **[!UICONTROL 社群網站基本語言]**: （單語言不受影響） 英文)使用下拉式選單，從 *可用語言* (德文、義大利文、法文、日文、西班牙文、葡萄牙文（巴西）、中文（繁體）和簡體中文)選擇一或多種基本語言。 會針對新增的每種語言建立一個社群網站，並依照多語言網站翻譯內容中所述的最佳實務，存在於相 [同的網站資料夾中](../../help/sites-administering/translation.md)。 每個網站的根頁面將包含一個子頁面，該子頁面由其中一種語言的語言代碼命名，例如英文的&#39;en&#39;或法文的&#39;fr&#39;。
 
-* **[!UICONTROL 社群網站名稱]**:顯示在URL中的網站根頁面名稱
+* **[!UICONTROL 社群網站名稱]**: 顯示在URL中的網站根頁面名稱
 
    * 在建立網站後不易變更名稱，請再檢查此名稱
    * 基本URL( `https://*server:port/site root/site name*)` 將顯示在 `Community Site Name`
@@ -101,11 +104,11 @@ Communities Sites控制台可讓您存取：
 
       *例如*, `http://localhost:4502/content/sites/mysight/en.html`
 
-* **[!UICONTROL 社群網站範本]** (Community Site Template)功能表：使用下拉式功能表來選擇可用的社 [群網站範本](tools.md)。
+* **[!UICONTROL 社群網站範本]** (Community Site Template)功能表： 使用下拉式功能表來選擇可用的社 [群網站範本](tools.md)。
 
 選擇下 **[!UICONTROL 一步]**
 
-### 步驟2:設計 {#step-design}
+### 步驟2: 設計 {#step-design}
 
 「設計」面板包含2個子面板，用於選取主題和品牌橫幅：
 
@@ -138,7 +141,7 @@ Communities Sites控制台可讓您存取：
 
 選擇 **[!UICONTROL 下一步]**。
 
-### 步驟3:設定 {#step-settings}
+### 步驟3: 設定 {#step-settings}
 
 「設定」面板包含數個子面板，這些子面板會先顯示要設定的功能，然後再移至建立網站的最後一個步驟。
 
@@ -225,7 +228,7 @@ Communities Sites控制台可讓您存取：
 
 此外，為社群網站選取標籤名稱空間會限制在定義目錄和資源時顯示的選擇。 如需重 [要資訊，請參閱標籤](tag-resources.md) 啟用資源。
 
-* 文字搜尋方塊：開始鍵入以識別允許在網站上使用的標籤
+* 文字搜尋方塊： 開始鍵入以識別允許在網站上使用的標籤
 
 #### ROLES {#roles}
 
@@ -355,7 +358,7 @@ Communities Sites控制台可讓您存取：
 
 選擇 **[!UICONTROL 下一步]**。
 
-### 步驟4:建立社群網站 {#step-create-communities-site}
+### 步驟4: 建立社群網站 {#step-create-communities-site}
 
 如果需要調整，請使用「上 **一步** 」按鈕進行調整。
 
@@ -397,7 +400,7 @@ Communities Sites控制台可讓您存取：
 
 在網站建立程式中指定的現有網站屬性，可透過選取滑鼠暫留在網 `Edit Site`站上的圖示來修改。
 
-`Details of the following properties match the descriptions provided in the` 「 [網站建立](#site-creation) 」區段。
+`Details of the following properties match the descriptions provided in the` [「網站建立](#site-creation) 」區段。
 
 ![chlimage_1-463](assets/chlimage_1-463.png)
 
@@ -446,7 +449,7 @@ BASIC面板允許修改
 群組函式不 *能是**網站結構中的* 第一個函式，也不能是唯一函式。
 任何其他函式(例如頁 [面函式](functions.md#page-function))必須先包含並列出。
 
-#### 範例：將目錄函式添加到社區站點結構 {#example-adding-a-catalog-function-to-a-community-site-structure}
+#### 範例： 將目錄函式添加到社區站點結構 {#example-adding-a-catalog-function-to-a-community-site-structure}
 
 ![chlimage_1-464](assets/chlimage_1-464.png)
 
@@ -514,15 +517,15 @@ ENABLEMENT面板可讓您存取社群網站建立期間提供的設定。
 
 例如，如果名稱為「參與」的網站標題為「快速入門教學課程」，則協調者的使用者群組為：
 
-* 標題：社群參與協調者
-* 名稱：community-*engage-uid*-moderators
+* 標題： 社群參與協調者
+* 名稱： community-*engage-uid*-moderators
 
 請注意，在建立站點時，任何分配角色作為協調者或組管理員的成員都將被分配給相應的組，並被分配給成員組。 發佈新網站時，會在發佈時建立這些群組和成員指派。
 
 如需詳細資訊，請 [參閱管理使用者和使用者群組](users.md)。
 
 >[!NOTE]
-如果 [允許社交登入：一旦使用者群組](#user-management) ,Facebook就會啟用
+如果 [允許社交登入： 一旦使用者群組](#user-management) ,Facebook就會啟用
 * community-*&lt;site-name>*-*&lt;uid>*-members
 
 建立後，應將已套 [用的Facebook雲端服務](social-login.md#createafacebookcloudservice) ，設定為新增使用者至此群組。
