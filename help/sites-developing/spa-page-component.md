@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ SPA的頁面元件不會透過JSP或HTL檔案與資源物件提供其子元件�
 
 ## 通信資料類型 {#communication-data-type}
 
-通訊資料類型是使用屬性在AEM Page元件內設定HTML元 `data-cq-datatype` 素。 當通訊資料類型設為JSON時，GET請求會點擊元件的Sling Model端點。 在頁面編輯器中發生更新後，更新元件的JSON表示法會傳送至頁面模型程式庫。 然後頁面模型庫會警告SPA更新。
+通訊資料類型是使用屬性在AEM Page元件內設定HTML元 `data-cq-datatype` 素。 當通訊資料類型設為JSON時，GET請求會點擊元件的Sling Model端點。 在頁面編輯器中發生更新後，更新元件的JSON表示法會傳送至頁面模型程式庫。 然後頁面模型程式庫會警告SPA更新。
 
 **SPA頁面元件-`body.html`**
 
