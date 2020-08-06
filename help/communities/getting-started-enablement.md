@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
 
-# AEM Communities的啟用快速入門 {#getting-started-with-aem-communities-for-enablement}
+# AEM Communities的啟用快速入門  {#getting-started-with-aem-communities-for-enablement}
 
 AEM Communities可協助品牌建立跨數位和面對面通道的一致體驗，透過實現資源、指派的內容和動態建議的目錄來促進員工和客戶的實現——這些全都在社交社群中提供，以促進參與。
 
