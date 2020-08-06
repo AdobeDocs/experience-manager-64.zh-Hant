@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: d34f1598-38bc-46c3-b6cd-954a3880994a
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '2161'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Assembler服務可讓您合併、重新排列和增強PDF和XDP檔案，並取�
 
 下圖顯示三個源文檔要合併到單個合成文檔中。
 
-![](assets/as_document_assembly.png) 從多個PDF檔案組合簡單的PDF檔案圖&#x200B;****&#x200B;表：從 *多個PDF檔案組合簡單的PDF檔案*
+![從多個PDF檔案組合簡單的PDF檔案圖](assets/as_document_assembly.png)**表：** *從多份PDF檔案組合簡單的PDF檔案*
 
 以下示例是用於組合文檔的簡單DDX文檔。 它指定用於生成合成文檔的源文檔的名稱以及合成文檔的名稱：
 
@@ -83,7 +86,7 @@ Encryption服務不必是LiveCycle安裝的一部分，就能使用密碼來加�
 
 下圖顯示PDF檔案，其中包含位於檔案標題中的唯一識別碼。
 
-![](do-not-localize/as_batesnumber.png) PDF檔案包含位於檔案標題圖中的唯一識別&#x200B;****&#x200B;碼：包 *含唯一識別碼的PDF檔案，位於檔案標題中*
+![PDF檔案包含位於檔案標題圖中的唯一識別](do-not-localize/as_batesnumber.png)**碼：** *PDF檔案包含位於檔案標題中的唯一識別碼*
 
 ### 平面化及組合檔案 {#flatten-and-assemble-documents}
 
@@ -105,7 +108,7 @@ Encryption服務不必是LiveCycle安裝的一部分，就能使用密碼來加�
 
 下圖顯示了將三個源XDP文檔組裝成單一合成的XDP文檔。 生成的XDP文檔包含三個源XDP文檔，包括其關聯資料。 生成的文檔從作為第一源XDP文檔的基本文檔獲得基本屬性。
 
-![](assets/as_assembler_xdpassembly.png) 從多個XDP檔案組合簡單的XDP檔案圖&#x200B;****&#x200B;表：從多 *個XDP檔案組合簡單的XDP檔案*
+![從多個XDP檔案組合簡單的XDP檔案圖](assets/as_assembler_xdpassembly.png)**表：** *從多個XDP檔案組合簡單的XDP檔案*
 
 以下是產生上述結果的DDX檔案。
 
@@ -219,7 +222,7 @@ fragment="myFragment"/>
 
 下圖顯示兩個XML表單（XFA範本）。 左側的表單包含一個名為myInsertionPoint的插入點。 右側的表格包含名為myFragment的片段。
 
-![](assets/as_assembler_fragment_assy_assembled.png) 將表單片段插入XFA表單&#x200B;****&#x200B;圖：將 *表單片段插入XFA表單*
+![將表單片段插入XFA表單](assets/as_assembler_fragment_assy_assembled.png)**圖：** *將表單片段插入XFA表單*
 
 當Assembler服務解譯下列DDX文檔時，它將建立包含另一個XML表單的XML表單。 myFragmentSource文檔中的myFragment子表單將插入myFormSource文檔的myInsertionPoint。
 
@@ -257,7 +260,7 @@ source="myFragmentSource"/>
 
 在下圖中，頁面1-3是從來源檔案擷取，並放入新的合成檔案中。
 
-![](assets/as_intro_page_extraction.png) 從源文檔中提取特定頁&#x200B;****&#x200B;圖：從 *源文檔中提取特定頁*
+![從源文檔中提取特定頁](assets/as_intro_page_extraction.png)**圖：** *從源文檔中提取特定頁面*
 
 以下示例是用於拆解文檔的DDX文檔。
 
@@ -271,7 +274,7 @@ source="myFragmentSource"/>
 
 在下圖中，DocA被分為多個生成的文檔。 頁面上的第1級書籤可識別新結果檔案的開頭。
 
-![](assets/as_intro_pdfsfrombookmarks.png) 將以書籤為基礎的來源檔案分割為多份檔案&#x200B;****&#x200B;圖：根 *據書籤將來源檔案分割為多份檔案*
+![將以書籤為基礎的來源檔案分割為多份檔案](assets/as_intro_pdfsfrombookmarks.png)**圖：** *將以書籤為基礎的來源檔案分割為多個檔案*
 
 以下範例是DDX檔案，它使用書籤來拆解來源檔案。
 
@@ -309,11 +312,11 @@ source="myFragmentSource"/>
 
 您可以使用DDX檔案，讓Assembler服務呼叫下列LiveCycle服務。 Assembler服務只能呼叫與LiveCycle一起安裝的服務。
 
-**Reader Extensions服務**:讓Adobe Reader使用者數位簽署產生的PDF檔案。
+**Reader Extensions服務**: 讓Adobe Reader使用者數位簽署產生的PDF檔案。
 
-**Forms服務**:合併XDP檔案和XML資料檔案，以產生包含已填寫互動式表單的PDF檔案。
+**Forms服務**: 合併XDP檔案和XML資料檔案，以產生包含已填寫互動式表單的PDF檔案。
 
-**輸出服務**:將動態XML表單轉換為包含非互動表單（平面化表單）的PDF檔案。 Assembler服務可平面化靜態XML表單和Acrobat表單，而不需呼叫Output服務。
+**輸出服務**: 將動態XML表單轉換為包含非互動表單（平面化表單）的PDF檔案。 Assembler服務可平面化靜態XML表單和Acrobat表單，而不需呼叫Output服務。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
