@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
 source-git-commit: f0e4d958cad182c7218314ba7b117c2347f947ca
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 1%
 
 ---
 
@@ -91,7 +94,7 @@ VLT會根據下列規則自動處理行尾(EOF):
 * 在Linux/Unix上以 `LF`
 * 儲存庫的檔案行以 `LF`
 
-為確保VLT和SVN配置匹配，應將屬 `svn:eol-style` 性設定為 `native` ，以擴展儲存在儲存庫中的檔案。 編輯svn設定並新增下列項目：
+為確保VLT和SVN配置匹配，應將屬 `svn:eol-style` 性設定 `native` 為，以擴展儲存在儲存庫中的檔案。 編輯svn設定並新增下列項目：
 
 ```xml
 [auto-props]
@@ -141,7 +144,7 @@ svn co https://svn.server.com/repos/myproject
 1. 在中編輯內 `text.jsp`容。
 1. 透過輸入 `vlt st`
 1. 透過輸入 `vlt diff text.jsp`
-1. 提交更改： `vlt ci test.jsp`。
+1. 提交更改： `vlt ci test.jsp`.
 1. 重新載入包含文字元件的頁面，並查看您的變更是否存在。
 
 ## 取得VLT工具的協助 {#getting-help-with-the-vlt-tool}
@@ -315,7 +318,7 @@ vlt [options] <command> [arg1 [arg2 [arg3] ..]]
 | 命令 | 縮寫命令 | 說明 |
 | `export` |  | 從JCR儲存庫（Vault檔案系統）導出到本地檔案系統，而無控制檔案。 |
 | `import` |  | 將本地檔案系統導入JCR儲存庫（Vault檔案系統）。 |
-| `checkout` | `co` | 檢出Vault檔案系統。 將它用於本地檔案系統的初始JCR儲存庫。 (注意：您必須首先在subversion中籤出儲存庫。) |
+| `checkout` | `co` | 檢出Vault檔案系統。 將它用於本地檔案系統的初始JCR儲存庫。 (注意： 您必須首先在subversion中籤出儲存庫。) |
 | `analyze` |  | 分析包。 |
 | `status` | `st` | 打印工作副本檔案和目錄的狀態。 |
 | `update` | `up` | 將更改從儲存庫導入工作副本。 |
@@ -354,7 +357,7 @@ export -v|-t <arg>|-p <uri> <jcr-path> <local-path>
 | `<jcrPath>` | JCR路徑 |
 | `<localPath>` | 本地路徑 |
 
-#### 範例 {#examples}
+#### Examples {#examples}
 
 ```shell
 vlt export http://localhost:4502/crx /apps/geometrixx myproject
@@ -380,7 +383,7 @@ import -v|-s <uri> <local-path> <jcr-path>
 | `<jcrPath>` | JCR路徑 |
 | `<localPath>` | 本地路徑 |
 
-#### 範例 {#examples-1}
+#### Examples {#examples-1}
 
 ```shell
 vlt import http://localhost:4502/crx . /
@@ -408,7 +411,7 @@ checkout --force|-v|-q|-f <file> <uri> <jcrPath> <localPath>
 | `<jcrPath>` | （可選）遠程路徑 |
 | `<localPath>` | （可選）本機路徑 |
 
-#### 範例 {#examples-2}
+#### Examples {#examples-2}
 
 使用JCR Remoting:
 
@@ -552,7 +555,7 @@ revert -q|-R <file1> [<file2> ...]
 
 >[!NOTE]
 >
->該命令不會在語義上解決衝突或刪除衝突標籤；它只會刪除與衝突相關的對象檔案，並允許再次提交PATH。
+>該命令不會在語義上解決衝突或刪除衝突標籤； 它只會刪除與衝突相關的對象檔案，並允許再次提交PATH。
 
 #### 語法 {#syntax-9}
 
@@ -730,7 +733,7 @@ rcp -q|-r|-b <size>|-t <seconds>|-u|-n|-e <arg1> [<arg2> ...] <src> <dst>
 | `<src>` | 源樹的儲存庫地址。 |
 | `<dst>` | 目標節點的儲存庫地址。 |
 
-#### 範例 {#examples-3}
+#### Examples {#examples-3}
 
 ```shell
 vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localhost:4503/crx/-/jcr:root/content_copy  
@@ -799,7 +802,7 @@ $ vlt --credentials admin:admin sync --uri http://localhost:4502/crx install
 
 ### 顯示服務狀態 {#displaying-the-service-status}
 
-該命 `status` 令可用於顯示有關正在運行的同步服務的資訊。&quot;
+該命 `status` 令可用於顯示有關正在運行的同步服務的資訊。 &quot;
 
 ```shell
 $ vlt sync status --uri http://localhost:4502/crx
@@ -847,25 +850,25 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
 在服務運行後，可以使用以下參數對其進行配置：
 
-* `vault.sync.syncroots`:定義同步根的一個或多個本地檔案系統路徑。
+* `vault.sync.syncroots`: 定義同步根的一個或多個本地檔案系統路徑。
 
-* `vault.sync.fscheckinterval`:應掃描其檔案系統以進行更改的頻率（以秒為單位）。 預設值為5秒。
-* `vault.sync.enabled`:啟用／禁用服務的常規標誌。
+* `vault.sync.fscheckinterval`: 應掃描其檔案系統以進行更改的頻率（以秒為單位）。 預設值為5秒。
+* `vault.sync.enabled`: 啟用／禁用服務的常規標誌。
 
 >[!NOTE]
 >
 >服務可以使用Web控制台或儲存庫中 `sling:OsgiConfig` 的節點(使用 `com.day.jcr.sync.impl.VaultSyncServiceImpl`名稱)進行配置。
 >
->使用AEM時，有幾種方法可管理此類服務的組態設定；如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+>使用AEM時，有幾種方法可管理此類服務的組態設定； 如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
 #### 同步資料夾設定 {#sync-folder-configuration}
 
 每個同步資料夾都將配置和狀態儲存在三個檔案中：
 
-* `.vlt-sync-config.properties`:配置檔案。
+* `.vlt-sync-config.properties`: 配置檔案。
 
-* `.vlt-sync.log`:包含同步期間所執行操作相關資訊的記錄檔。
-* `.vlt-sync-filter.xml`:篩選器，用於定義同步的儲存庫的哪些部分。 此檔案的格式由「執行已過濾的 [檢出」部分描述](#performing-a-filtered-checkout) 。
+* `.vlt-sync.log`: 包含同步期間所執行操作相關資訊的記錄檔。
+* `.vlt-sync-filter.xml`: 篩選器，用於定義同步的儲存庫的哪些部分。 此檔案的格式由「執行已過濾的 [檢出」部分描述](#performing-a-filtered-checkout) 。
 
 該 `.vlt-sync-config.properties` 檔案允許您配置以下屬性：
 
@@ -873,8 +876,8 @@ Removed sync directory: /tmp/workspace/vltsync/jcr_root
 
 **sync-once** 如果非空，下次掃描將按給定方向同步資料夾，則會清除參數。 支援兩個值：
 
-* `JCR2FS`:將JCR儲存庫中的所有內容導出並寫入本地磁碟。
-* `FS2JCR`:將所有內容從磁碟導入JCR儲存庫。
+* `JCR2FS`: 將JCR儲存庫中的所有內容導出並寫入本地磁碟。
+* `FS2JCR`: 將所有內容從磁碟導入JCR儲存庫。
 
 **sync-log** 定義日誌檔案名。 依預設，值為。vlt-sync.log
 
