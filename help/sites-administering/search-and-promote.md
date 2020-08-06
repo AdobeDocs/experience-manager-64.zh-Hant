@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87e62346-98d5-40ec-a3ef-904adf667425
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +35,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 3.x已設定為 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x已設定為 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -77,6 +81,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * **[!UICONTROL 成員 ID]**
    * **[!UICONTROL 帳號]**
+
    >[!NOTE]
    >
    >若要自行取得此資訊，請登入下列：
