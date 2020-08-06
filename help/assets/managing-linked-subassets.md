@@ -89,7 +89,7 @@ Adobe InDesign可將檔案和連結的資產匯出為套件。 在這種情況�
 
 1. 以管理員身分登入Experience Manager。 存取「 **[!UICONTROL 工具>工作流程>模型]**」。
 1. 選取「 **[!UICONTROL DAM更新資產」工作流程]** ，然後按一下「 **[!UICONTROL 編輯」]**。
-1. 按一 **[!UICONTROL 下「切換側面板]** 」並找出「 **[!UICONTROL 建立子資產」步驟]** 。 將步驟新增至工作流程。 按一 **[!UICONTROL 下同步]**。
+1. 按一 **[!UICONTROL 下「切換側面板]** 」並找出「 **[!UICONTROL 建立子資產」步驟]** 。 將步驟新增至工作流程。 按一下&#x200B;**[!UICONTROL 「同步」]**。
 
 若要產生子資產，請執行下列其中一項作業：
 
