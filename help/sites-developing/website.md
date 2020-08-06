@@ -222,7 +222,7 @@ static.css檔案和影像範例
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
-1. 在檔案夾樹狀結構中，選取「 **[!UICONTROL Websites]** 」檔案夾，然後按一 **[!UICONTROL 下「新增>新頁面」]**。
+1. 在資料夾樹狀結構中，選取「 **[!UICONTROL Websites]** 」資料夾，然後按 **[!UICONTROL 一下「新增>新頁面」]**。
 1. 在「創 **[!UICONTROL 建頁面]** 」窗口中，輸入以下內容：
 
    * **[!UICONTROL 標題]**: `My Website`
@@ -1105,7 +1105,7 @@ public class img_GET extends AbstractImageServlet {
 
 1. 在您的瀏覽器中，重新整 **[!UICONTROL 理產品]** 頁面。 它現在有parsys元件，如下所示：
 
-   ![chlimage_1-127](assets/chlimage_1-127.png)
+   ![chlimage_1-129](assets/chlimage_1-127.png)
 
 ### 建立影像元件 {#creating-the-image-component}
 
