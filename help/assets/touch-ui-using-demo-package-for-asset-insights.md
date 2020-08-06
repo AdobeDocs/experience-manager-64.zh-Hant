@@ -4,6 +4,9 @@ description: 使用示範套件，讓Adobe Asset Insights能夠從網頁擷取�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 使用示範套件，您可讓Adobe Asset Insights擷取資料，並產生範例網頁的見解。
 
-## 將AEM Assets Insights與範例網頁搭配使用 {#using-aem-assets-insights-with-sample-web-page}
+## 將AEM Assets Insights與範例網頁搭配使用  {#using-aem-assets-insights-with-sample-web-page}
 
 1. 使用設定資產前瞻分析中的指示 [設定資產前瞻分析](touch-ui-configuring-asset-insights.md)。
 1. 從下方下載範例AEM Assets套件，並從CRXDE套件管理器安裝套件。
