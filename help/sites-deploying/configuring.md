@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 translation-type: tm+mt
 source-git-commit: 4f36f2368a373918902304b5167fe1cb4b899611
+workflow-type: tm+mt
+source-wordcount: '2152'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ Adobe Experience Manager(AEM)會安裝所有參數的預設設定，讓它「立
 AEM有許多方面可以設定：
 
 * 有些 [通常會針對每個專案安裝進行設定](#primary-configuration-considerations) ，而且必須進行審查，以確認這些設定是否適用於您的專案。
-* [進一步的配置](#further-configuration-considerations) ，可能是常見的，但並非必要；與功能或系統效能與穩定性相關。
+* [進一步配置](#further-configuration-considerations) ，可能是常見的，但並非必要； 與功能或系統效能與穩定性相關。
 * 其他則僅是AEM的某些選用功能所需（這些功能會連同適當的功能一起記錄）。
 
 根據特定配置，這些更改可以使用：
@@ -45,7 +48,7 @@ AEM有許多方面可以設定：
 
 * **AEM WCM**
 
-   AEM WCM本身可以設定各種方面，其中許多使用「工具」控 [制台](/help/sites-administering/tools-consoles.md) ;例如，複製代理。
+   AEM WCM本身可以設定各種方面，其中許多使用「工具」控 [制台](/help/sites-administering/tools-consoles.md) ; 例如，複製代理。
 
 >[!NOTE]
 >
@@ -119,14 +122,14 @@ AEM的所有元素（例如儲存庫、Dispatcher等）都可安裝在IPv4和IPv
 AEM提供您設定：
 
 * 中央記錄服務的全局參數
-* 要求資料記錄；要求資訊的專用記錄設定
-* 個別服務的特定設定；例如，日誌消息的單個日誌檔案和格式
+* 要求資料記錄； 要求資訊的專用記錄設定
+* 個別服務的特定設定； 例如，日誌消息的單個日誌檔案和格式
 
 如需完 [整詳細資訊](/help/sites-deploying/configure-logging.md) ，請參閱記錄。
 
 ### 執行模式 {#run-modes}
 
-執行模式可讓您針對特定用途調整AEM實例；例如作者或發佈、測試、開發或內部網路等。
+執行模式可讓您針對特定用途調整AEM實例； 例如作者或發佈、測試、開發或內部網路等。
 
 這是透過為每個執行模式定義組態參數集合來完成的。 基本的配置參數集將應用於所有運行模式，然後您可以根據特定環境的目的調整其它配置參數集。 然後會視需要套用這些值。
 
@@ -136,7 +139,7 @@ AEM提供您設定：
 
 ### 單一登入 {#single-sign-on}
 
-單一登入(SSO)可讓使用者在提供驗證憑證（例如使用者名稱和密碼）一次後，存取多個系統。 另一個系統（稱為受信任驗證器）執行驗證，並為Experience manager提供用戶憑證。 Experience manager會檢查並強制使用者的存取權限（亦即決定允許使用者存取哪些資源）。
+單一登入(SSO)可讓使用者在提供驗證憑證（例如使用者名稱和密碼）一次後，存取多個系統。 另一個系統（稱為受信任驗證器）執行驗證，並為Experience Manager提供用戶憑證。 Experience Manager會檢查並強制使用者的存取權限（亦即決定允許使用者存取哪些資源）。
 
 如需詳 [細資訊](/help/sites-deploying/single-sign-on.md) ，請參閱單一登入。
 
@@ -159,7 +162,7 @@ AEM提供您設定：
 * 從Dispatcher快取明確清除內容。
 * 將使用者輸入（例如，表格輸入）從發佈環境傳回作者環境（在作者環境的控制下）。
 
-有關詳細資訊，請參 [閱複製](/help/sites-deploying/replication.md)。
+For further details see [Replication](/help/sites-deploying/replication.md).
 
 ### OSGi配置設定 {#osgi-configuration-settings}
 
@@ -167,7 +170,7 @@ AEM提供您設定：
 
 如需 [專案實作相關的各種叢集清單](/help/sites-deploying/osgi-configuration-settings.md) （依叢集列出），請參閱OSGi組態設定。 並非所有列出的設定都需要調整，有些設定會提及以協助您瞭解AEM的運作方式。
 
-使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+使用AEM時，有幾種方法可管理此類服務的組態設定； 如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
 ### 配置LDAP {#configuring-ldap}
 
@@ -181,17 +184,17 @@ LDAP身份驗證發生在儲存庫級別，因此由儲存庫直接處理。 如
 
 Dispatcher是Adobe的快取和／或負載平衡工具。 使用Dispatcher也有助於保護您的AEM伺服器不受攻擊。 因此，您可以搭配使用 Dispatcher 與企業級 Web 伺服器，以提高 AEM 例項的安全性。
 
-有關完整 [的詳細資訊](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) ，請參見Dispatcher [，特別是](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html) Configuring the Dispatcher，以瞭解更多配置詳細資訊。
+有關完整 [的詳細資訊](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) ，請參見Dispatcher [，特別是](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html) Configuring the Dispatcher，以瞭解更多配置詳細資訊。
 
 ### 設定AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-隨著AEM檔案服務和AEM檔案安全性的發行，我們現在可以叫用LiveCycle檔案服務來轉換XFA表單、將檔案轉換為PDF，以及原則保護檔案。 請閱讀 [AEM liveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) ，以取得詳細資訊。
+隨著AEM檔案服務和AEM檔案安全性的發行，我們現在可以叫用LiveCycle檔案服務來轉換XFA表單、將檔案轉換為PDF，以及原則保護檔案。 請閱讀 [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) ，以取得詳細資訊。
 
 ### 作業卸載和拓撲管理 {#job-offloading-and-topology-administration}
 
-[卸載](/help/sites-deploying/offloading.md) ，在拓撲中分發包含Experience manager實例的處理任務。 借由卸載，您可以使用特定的Experience manager實例來執行特定類型的處理。 專業化的處理可讓您最大化可用伺服器資源的使用。
+[卸載](/help/sites-deploying/offloading.md) ，在拓撲中分發包含Experience Manager實例的處理任務。 借由卸載，您可以使用特定的Experience Manager實例來執行特定類型的處理。 專業化的處理可讓您最大化可用伺服器資源的使用。
 
-拓撲是鬆散耦合的Experience manager群集，它們參與卸載。 群集由一個或多個Experience manager伺服器實例（單個實例被視為群集）組成。
+拓撲是鬆散耦合的Experience Manager群集，它們參與卸載。 群集由一個或多個Experience Manager伺服器實例（單個實例被視為群集）組成。
 
 有關如何查看或修改拓撲成員資格的詳細資訊，請參 [閱管理拓撲](/help/sites-deploying/offloading.md#administering-topologies) 。
 
@@ -215,7 +218,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 儲存庫資料儲存用於將大型二進位檔案的儲存從儲存庫卸載到單獨的區域，以便儲存庫樹內同一二進位檔案（例如映像）的多個實例只儲存一次。
 
-此「儲存一次、多次引用」功能可以通過配置每個儲存庫的資料儲存以引用同一共用檔案系統位置來擴展，從而不僅為單個儲存庫樹提供服務，還為完全獨立的儲存庫提供服務。
+此「儲存一次、多次引用」功能可以通過配置每個儲存庫的資料儲存以引用同一共用檔案系統位置來擴展，從而不僅提供單個儲存庫樹，還提供完全獨立的儲存庫。
 
 這樣的資料儲存可以在同一群集中的不同節點之間共用，在同一安裝中不同的發佈和／或作者實例，甚至在不同安裝中完全不同的實例。
 
@@ -262,11 +265,11 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
    新價值應同時滿足當前需求和未來任何峰值，因此最好將當前需求增加一倍。
 
-   預設情況下， `serverctl` 配置 `CQ_MAX_OPEN_FILES` 為 `8192`;這應該足以適用於大多數情況。
+   預設情況下， `serverctl` 配置 `CQ_MAX_OPEN_FILES` 為 `8192`; 這應該足以適用於大多數情況。
 
 ### Configuring the Rich Text Editor {#configuring-the-rich-text-editor}
 
-Rich **Text Editor** (**RTE**)為作者提供多種功能， [](/help/sites-authoring/rich-text-editor.md) 以編輯其文字內容；提供圖示、選擇方塊和選單，以提供所見即所得的體驗。
+Rich **Text Editor** (**RTE**)為作者提供多種功能， [](/help/sites-authoring/rich-text-editor.md) 以編輯其文字內容； 提供圖示、選擇方塊和選單，以提供所見即所得的體驗。
 
 如需詳 [細資訊，請參閱設定Rich Text Editor](/help/sites-administering/rich-text-editor.md) 。
 
