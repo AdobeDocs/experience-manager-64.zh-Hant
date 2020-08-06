@@ -1,6 +1,6 @@
 ---
-title: 信件管理|處理使用者資料
-seo-title: 信件管理|處理使用者資料
+title: 信件管理 |處理使用者資料
+seo-title: 信件管理 |處理使用者資料
 description: 'null'
 seo-description: 'null'
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
@@ -9,11 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 0%
 
 ---
 
 
-# 信件管理|處理使用者資料 {#correspondence-management-handling-user-data}
+# 信件管理 |處理使用者資料 {#correspondence-management-handling-user-data}
 
 AEM Forms Commense Management可讓您建立、管理和簡化安全且個人化的客戶通訊。 它提供直覺式使用者介面，讓商業使用者使用預先核准的內容區塊和媒體元素來建立通訊。 如需建立通訊的詳細資訊，請參閱「建立 [通訊」](/help/forms/using/create-correspondence.md)。
 
