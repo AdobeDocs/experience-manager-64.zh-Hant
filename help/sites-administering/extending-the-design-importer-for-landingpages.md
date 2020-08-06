@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8991416-995b-4160-a705-d131e78089ee
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '3509'
+ht-degree: 0%
 
 ---
 
@@ -114,7 +117,7 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 
 ### 拖放郵遞區號 {#drag-and-drop-zip}
 
-Internet explorer和Firefox 3.6版及舊版不支援拖放zip上傳。 若要在使用這些瀏覽器時上傳設計，請按一下放置檔案區域以開啟檔案上傳對話方塊，並使用該對話方塊上傳您的設計。
+Internet Explorer和Firefox 3.6版及舊版不支援拖放zip上傳。 若要在使用這些瀏覽器時上傳設計，請按一下放置檔案區域以開啟檔案上傳對話方塊，並使用該對話方塊上傳您的設計。
 
 支援設計zip的「拖放」瀏覽器為Chrome、Safari5.x、Firefox 4和更新版本。
 
@@ -124,7 +127,7 @@ Internet explorer和Firefox 3.6版及舊版不支援拖放zip上傳。 若要在
 
 ### 在導入設計包時不保留頁面屬性 {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
-任何頁面屬性（例如自訂網域、強制HTTPS等）設定在匯入設計套件之前（使用「空白著陸頁面」範本）的頁面，會在匯入設計後遺失。 因此，建議的做法是在匯入設計套件後設定頁面屬性。
+任何頁面屬性（例如自訂網域、強制HTTPS等） 設定在匯入設計套件之前（使用「空白著陸頁面」範本）的頁面，會在匯入設計後遺失。 因此，建議的做法是在匯入設計套件後設定頁面屬性。
 
 ### 假定僅HTML標籤 {#html-only-markup-assumed}
 
@@ -312,7 +315,7 @@ HTML標籤，以在匯入的zip中包含圖形連結元件。 此處href將映�
 
 ### 銷售機會表單 {#lead-form}
 
-銷售機會表單是用於收集訪客／銷售機會描述檔資訊的表單。 這些資訊可以儲存，稍後再使用這些資訊進行有效的行銷。 這些資訊通常包括標題、姓名、電子郵件、出生日期、地址、興趣等。 它是「CTA銷售機會表單」群組的一部分。
+銷售機會表單是用於收集訪客／銷售機會描述檔資訊的表單。 這些資訊可儲存起來，稍後再使用這些資訊進行有效的行銷。 這些資訊通常包括標題、姓名、電子郵件、出生日期、地址、興趣等。 它是「CTA銷售機會表單」群組的一部分。
 
 **支援的功能**
 
@@ -447,11 +450,11 @@ The Blank Landing Page template can be overlayed by creating a new one at: `/app
 
 data-cq-component中的路徑應為該元件的resourceType。
 
-### Best Practices {#best-practices}
+### 最佳作法 {#best-practices}
 
 不建議使用類似下列的CSS選擇器，以便與在匯入時標籤為元件轉換的元素搭配使用。
 
-| E > F | E元素的an f元素子項 | [子組合器](https://www.w3.org/TR/css3-selectors/#child-combinators) |
+| E > F | E元素的an F元素子項 | [子組合器](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
 | E + F | an F element immediated preceded by an E element | [相鄰同級組合器](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | an F element preceded by an E element | [一般同級組合器](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
@@ -465,7 +468,7 @@ data-cq-component中的路徑應為該元件的resourceType。
 
 * 另外，也不建議使用依循類似上述結構的指令碼，以搭配標示為轉換為AEM元件的元素使用。
 * 不建議在標籤標籤上使用樣式進行元件轉換，例如&lt;div data-cq-component=&quot;&amp;ast;&quot;>。
-* 設計版面應遵循HTML5 Boilerplate的最佳實務。 詳細內容： [https://html5boilerplate.com/](https://html5boilerplate.com/)。
+* 設計版面應遵循HTML5 Boilerplate的最佳實務。 詳細內容： [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## 配置OSGI模組 {#configuring-osgi-modules}
 
@@ -508,7 +511,7 @@ data-cq-component中的路徑應為該元件的resourceType。
   <tr> 
    <td>著陸頁面項目預處理器</td> 
    <td>搜尋模式 </td> 
-   <td>要搜索的模式，在存檔條目內容中。 此規則運算式與項目內容逐行比對。 匹配時，匹配文本將被指定的替換模式替換。<br /> 請參 <br /> 閱以下關於著陸頁面項目預處理器目前限制的附註。</td> 
+   <td>要搜索的模式，在存檔條目內容中。 此規則運算式與項目內容逐行比對。 匹配時，匹配文本將被指定的替換模式替換。<br /> <br /> 請參閱以下關於著陸頁面項目預處理器的當前限制的注意事項。</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -556,7 +559,7 @@ data-cq-component中的路徑應為該元件的resourceType。
 
 ### AEM中儲存的ZIP檔案位於何處？ {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-在匯入著陸頁面後，檔案（影像、css、js等）within design package are stored in the following location in AEM:
+在匯入著陸頁面後，檔案（影像、css、js等） within design package are stored in the following location in AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
