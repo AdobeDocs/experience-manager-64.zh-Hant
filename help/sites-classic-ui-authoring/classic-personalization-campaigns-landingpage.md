@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8be3adcf-5b3a-40e9-8f87-1a6f39aab554
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +29,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * 如何在AEM中處理著陸頁面
 * 如何設定行動登陸頁面
 
-Extending and Configuring the Design Importer中介紹了準備要導入的 [設計包](/help/sites-administering/extending-the-design-importer-for-landingpages.md)。 整合Adobe Analytics的「整合著陸頁 [面與Adobe Analytics」中涵蓋。](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+Extending and Configuring the Design Importer中介紹了準備要導入的 [設計軟體包](/help/sites-administering/extending-the-design-importer-for-landingpages.md)。 整合Adobe Analytics的「整合著陸頁 [面與Adobe Analytics」中涵蓋。](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 ## 什麼是著陸頁面？ {#what-are-landing-pages}
 
@@ -51,7 +54,7 @@ AEM中的範例著陸頁面如下所示：
 
 ### 行動著陸頁面 {#mobile-landing-pages}
 
-著陸頁面也可以有頁面的行動版本。 若要擁有著陸頁面的個別行動版本，匯入設計必須有兩個html檔案： *index.htm(l)**和mobile.index.htm(l)*。
+著陸頁面也可以有頁面的行動版本。 若要擁有著陸頁面的個別行動版本，匯入設計必須有兩個html檔案： *index.htm(l)* 和 *mobile.index.htm(l)*。
 
 著陸頁面匯入程式與一般著陸頁面的程式相同，著陸頁面設計有與行動著陸頁面對應的額外html檔案。 此html檔案也必須有畫布，其中 `div` 與桌 `id=cqcanvas` 面登陸頁面html類似，並支援案頭登陸頁面所描述的所有可編輯元件。
 
@@ -187,7 +190,7 @@ CTA銷售機會表單由幾個不同的元件組成：
 
 * **描述檔元件**「描述檔元件」元件與用於社交協作的訪客描述檔以及需要訪客個人化的其他區域相關。
 
-前面是示例表；它由Lead Form **（開始和結束）組成，** First Name **（名字）和Email Id（電子郵件ID）欄位** 用於輸入和提交 ******** 欄位
+前面是示例表； 它由Lead Form **（開始和結束）組成，** First Name **（名字）和Email Id（電子郵件ID）欄位** 用於輸入和提交 ******** 欄位
 
 從sidekick,CTA Lead Form可使用下列元件：
 
@@ -268,12 +271,12 @@ Lead Form元件使用Form Start和Form End元素定義表單的 **開始****和�
 **貼文選項** ：有下列貼文選項可供使用：
 
 * 建立銷售機會
-* 電子郵件服務：建立訂閱者並新增至清單——如果您使用電子郵件服務供應商（例如ExactTarget），請使用。
-* 電子郵件服務：傳送自動回應電子郵件——如果您使用電子郵件服務供應商（例如ExactTarget），請使用。
-* 電子郵件服務：從清單中取消訂閱使用者——如果您使用電子郵件服務供應商（例如ExactTarget），請使用。
+* 電子郵件服務： 建立訂閱者並新增至清單——如果您使用電子郵件服務供應商（例如ExactTarget），請使用。
+* 電子郵件服務： 傳送自動回應電子郵件——如果您使用電子郵件服務供應商（例如ExactTarget），請使用。
+* 電子郵件服務： 從清單中取消訂閱使用者——如果您使用電子郵件服務供應商（例如ExactTarget），請使用。
 * 取消訂閱用戶
 
-**表單識別碼** ：表單識別碼可唯一識別銷售機會表單。 如果單一頁面上有多個表格，請使用表格識別碼；請確定它們有不同的識別碼。
+**表單識別碼** ：表單識別碼可唯一識別銷售機會表單。 如果單一頁面上有多個表格，請使用表格識別碼； 請確定它們有不同的識別碼。
 
 **載入路徑** ：用於將預定義值載入到銷售線索表單欄位的節點屬性的路徑。
 
