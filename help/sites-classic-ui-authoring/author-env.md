@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 1%
 
 ---
 
@@ -36,6 +39,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 它是專為桌上型裝置所設計。
    * 它不再被維護。
    * 以下檔案著重於此傳統UI。 如需有關在現代觸控式UI中製作內容的詳細資訊，請參閱標準 [的製作檔案](/help/sites-authoring/author.md)。
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. 觸控式UI
@@ -46,8 +50,10 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 如需如何 [使用觸控式UI來製作的詳細資訊](/help/sites-authoring/author.md) ，請參閱標準的編寫檔案。 以下檔案著重於傳統UI。
 
    * 桌面:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * 平板電腦裝置（或桌上型電腦，寬度小於1024像素）:
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
