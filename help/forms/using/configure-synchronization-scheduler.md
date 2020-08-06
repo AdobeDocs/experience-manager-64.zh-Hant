@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 2c8cea3c-8d8b-41d4-8ef9-a0ada8f86be6
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -38,13 +41,13 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
    ![AEM Forms使用者介面](assets/aem_forms_ui.png)
 
-   **** 圖： *AEM Forms使用者介面*
+   **圖：** *AEM Forms使用者介面*
 
-1. 按一 ![下工具列中的aem6forms_sync](assets/aem6forms_sync.png) 圖示。 如果您在最後設定的路徑上沒有任何資產，則對話方塊如下所示。 按一下 **開始** ，啟動同步。
+1. 按一 ![下工具列中的aem6forms_sync](assets/aem6forms_sync.png) 圖示。 如果您在最後設定的路徑上沒有任何資產，則會顯示對話方塊，如下所示。 按一下 **開始** ，啟動同步。
 
    ![同步對話框](assets/migrate-and-syncronize.png)
 
-   **** 圖：「同 *步」對話框*
+   **圖：** *同步對話框*
 
 ## 同步錯誤疑難排解 {#troubleshooting-synchronization-error}
 
@@ -56,5 +59,5 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 ![資產同步對話方塊中的衝突](assets/sync-conflict.png)
 
-**** 圖：「資 *產同步中的衝突」對話框*
+**圖：** *資產同步對話方塊中的衝突*
 
