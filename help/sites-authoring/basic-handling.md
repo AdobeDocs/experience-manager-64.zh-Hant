@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 616d42c8-2316-4c56-b89f-660903270620
 translation-type: tm+mt
 source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
+workflow-type: tm+mt
+source-wordcount: '2764'
+ht-degree: 6%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
    >
 * 有些功能並非在所有控制台中都可用，有些控制台中可能還提供其他功能。 有關各個控制台及其相關功能的具體資訊將在其他頁面上詳細介紹。
 >* AEM提供鍵盤快速鍵。 尤其是使用 [控制台](/help/sites-authoring/keyboard-shortcuts.md) , [編輯頁面時](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)。
+
 >
 
 
@@ -120,7 +124,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
  </tbody>
 </table>
 
-1. 在「工具」面板中，側面板中的每個選項都包含一系列子菜單。 此處 [提供的「工具](/help/sites-administering/tools-consoles.md) 」主控台可讓您存取許多專業工具和主控台，以協助您管理網站、數位資產和內容存放庫的其他方面。
+1. 在「工具」面板中，側面板中的每個選項都包含一系列子菜單。 The [Tools consoles](/help/sites-administering/tools-consoles.md) available here provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.
 
    ![screen_shot_2018-03-23at103406](assets/screen_shot_2018-03-23at103406.png)
 
@@ -370,6 +374,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 * 通過點選或按一下資源名稱或資源名稱右側的雪佛龍，可以在樹中上下導航。
 
    * 點選或點選資源名稱和Chevron時，會反白顯示。
+
    ![chlimage_1-361](assets/chlimage_1-361.png)
 
    * 已點按／點按資源的子系會顯示在已點按／點按資源右側的欄中。
@@ -380,6 +385,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
 
    * 選中後，複選標籤將覆蓋在縮圖上，資源名稱也將突出顯示。
    * 選定資源的詳細資訊將顯示在最終列中。
+
    ![chlimage_1-362](assets/chlimage_1-362.png)
 
    在欄檢視中選取頁面時，選取的頁面會顯示在最終欄中，並包含下列詳細資訊：
@@ -390,7 +396,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
    * 上次修改日期
    * 修改頁面的最後一位使用者
    * 頁面語言
-   * 出版物狀態
+   * Publication status
 
 
 ### 卡片檢視 {#card-view}
@@ -442,6 +448,7 @@ AEM的使用者介面已啟用觸控功能。 觸控式介面可讓您使用觸�
    * **頁面分析**
    * **獨特訪客**
    * **頁面逗留時間**
+
    ![screen_shot_2018-03-23at105952](assets/screen_shot_2018-03-23at105952.png)
 
    依預設會 **顯示「名稱** 」欄，該欄是頁面URL的一部分。 在某些情況下，作者可能需要存取使用不同語言的頁面，而如果作者不知道頁面的語言，則查看頁面名稱（通常不變）會有很大幫助。
