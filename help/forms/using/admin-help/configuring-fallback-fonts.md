@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 >
 >備援字型配置也適用於匯編器服務。
 
-1. 導覽至&#x200B;*[aem-forms root]*/configurationManager/export目錄中的adobe-livecycle- *[appserver]*.ear檔案，製作備份副本，並取消封裝原始檔案。
+1. 導覽至&#x200B;*[aem-forms root]*/configurationManager/export目錄中的adobe-livecycle- *[appserver]*.ear檔案，製作備份副本，並取消封裝原稿。
 1. 找到adobe-fontmanager.jar檔案並解除封裝。
 1. 找到FontManagerResources.properties檔案，並在文本編輯器中將其開啟。
 1. 視需要修改一般和備援字型位置和名稱，並儲存檔案。
@@ -34,7 +37,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
    >
    >如果指定的字型或預設字型不包含特定的Unicode字元，或者該字元不可用，則根據以下優先順序從備用字型提取該字元：
 
-   * 地區設定特定字型
+   * 地區特定字型
    * 如果未設定地區設定，則ROOT字型
    * 一般字型，依備援表格中的順序集搜尋
 
@@ -43,5 +46,5 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 >[!NOTE]
 >
->請勿使用Configuration manager重新封裝adobe-livecycle-[appserver].ear檔案，因為它會以AEM表單的預設值覆寫您的修改。
+>請勿使用Configuration Manager重新封裝adobe-livecycle-[appserver].ear檔案，因為它會以AEM表單的預設值覆寫您的修改。
 
