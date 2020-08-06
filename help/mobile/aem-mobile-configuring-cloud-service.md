@@ -1,6 +1,6 @@
 ---
-title: 設定Adobe Target cloud服務
-seo-title: 設定Adobe Target cloud服務
+title: 設定Adobe Target Cloud服務
+seo-title: 設定Adobe Target Cloud服務
 description: 請依照本頁瞭解如何取得使用者和群組的適當權限集、建立雲端服務、設定活動的應用程式，以及最後產生內容。
 seo-description: 請依照本頁瞭解如何取得使用者和群組的適當權限集、建立雲端服務、設定活動的應用程式，以及最後產生內容。
 uuid: 569f9c6d-f521-488a-9e51-f43b7a214dd9
@@ -11,11 +11,14 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 8cd6480f-cb4f-40dd-a444-8ba463b78604
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1333'
+ht-degree: 0%
 
 ---
 
 
-# 設定Adobe Target cloud服務 {#configuring-adobe-target-cloud-service}
+# 設定Adobe Target Cloud服務 {#configuring-adobe-target-cloud-service}
 
 >[!NOTE]
 >
@@ -25,7 +28,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >本檔案是「AEM Mobile快速入門手冊」( [](/help/mobile/getting-started-aem-mobile.md) AEM Mobile參考的建議起點)的一部分。
 
-在內容作者開始為行動應用程式產生目標內容之前，需要先整合許多步驟：您可以為使用者和群組取得適當的權限集、建立雲端服務、設定活動的應用程式，最後產生內容。
+在內容作者開始為行動應用程式產生目標內容之前，需要先整合許多步驟： 您可以為使用者和群組取得適當的權限集、建立雲端服務、設定活動的應用程式，最後產生內容。
 
 未來的假設是 [AEM Mobile Hybrid Reference Application](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) has been successfully deployed and accessible via the AEM Mobile Dashboard.
 
@@ -37,9 +40,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 雲端服務 {#cloud-services}
 
-若要讓針對行動應用程式的目標內容運作，需要設定兩項服務：Adobe Target服務和Adobe Mobile services服務。 Adobe Target服務提供處理用戶端要求及傳回個人化內容的引擎。 Adobe Mobile services服務透過ADBMobileConfig.json檔案（由AMS Cordova增效模組使用）提供Adobe服務與行動應用程式之間的連線。 從AEM Mobile Dashboard，您可以新增兩個服務來設定您的應用程式。
+若要讓針對行動應用程式的目標內容運作，需要設定兩項服務： Adobe Target服務和Adobe Mobile Services服務。 Adobe Target服務提供處理用戶端要求及傳回個人化內容的引擎。 Adobe Mobile Services服務透過ADBMobileConfig.json檔案（由AMS Cordova增效模組使用）提供Adobe服務與行動應用程式之間的連線。 從AEM Mobile Dashboard，您可以新增兩個服務來設定您的應用程式。
 
-## Adobe Target cloud服務 {#adobe-target-cloud-service}
+## Adobe Target Cloud服務 {#adobe-target-cloud-service}
 
 從AEM Mobile Dashboard找到「管理雲端服務」，然後按一下+按鈕。
 
@@ -75,11 +78,11 @@ AMS服務也必須將Adobe Mobile Services(AMS)帳戶連結至應用程式，提
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
-選取Adobe Mobile services卡，然後按一下「下一步」。
+選取Adobe Mobile Services卡，然後按一下「下一步」。
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-從「建立」或「選取」精靈步驟中，選取「Mobile Service」下拉式清單，並選取「建立設定」項目。 提供標題、公司、使用者名稱、密碼，並選取適當的資料中心。 如果您不知道這些值，請連絡您的Adobe Mobile服務管理員以取得這些值。 填寫完所有欄位後，按一下「驗證」按鈕。 驗證程式會移至AMS並驗證帳戶的憑證，一旦成功驗證，就會填入行動應用程式清單，您可從下拉式清單中選取關聯的行動應用程式。 按一下「提交」按鈕以完成嚮導。 此程式可能需要一些時間才能取得設定資料以及與應用程式相關的任何分析。 完成程式後，按一下模型中的「完成」按鈕，返回Adobe Mobile Dashboard。
+從「建立」或「選取」精靈步驟中，選取「Mobile Service」下拉式清單，並選取「建立設定」項目。 提供標題、公司、使用者名稱、密碼，並選取適當的資料中心。 如果您不知道這些值，請連絡您的Adobe Mobile Service管理員以取得這些值。 填寫完所有欄位後，按一下「驗證」按鈕。 驗證程式會移至AMS並驗證帳戶的憑證，一旦成功驗證，就會填入行動應用程式清單，您可從下拉式清單中選取關聯的行動應用程式。 按一下「提交」按鈕以完成嚮導。 此程式可能需要一些時間才能取得設定資料以及與應用程式相關的任何分析。 完成程式後，按一下模型中的「完成」按鈕，返回Adobe Mobile Dashboard。
 
 「管理雲端服務」圖格會返回Mobile Dashboard，其中包含AMS雲端服務。 您也會注意到，「分析量度」方塊將會填入生命週期報表。
 
