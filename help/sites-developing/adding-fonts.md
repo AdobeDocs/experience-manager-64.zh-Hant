@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 0%
 
 ---
 
@@ -31,15 +34,16 @@ AEM可讓您產生包含動態擷取自內容之文字的圖形。
 
    * **名稱**: `fonts`
    * **類型**: `sling:Folder`
+
    儲存所有變更。
 
-1. 將字型檔案複製到此檔案夾；例如，使用WebDAV。
+1. 將字型檔案複製到此檔案夾； 例如，使用WebDAV。
 
    >[!NOTE]
    >
    >儲存庫中的字型檔案必須有尾碼 `*.ttf` 或 `*.TTF`。
 
-1. 更新 [Day Commons](/help/sites-deploying/configuring-osgi.md) GFX Font Helper [的OSGi組態](/help/sites-deploying/osgi-configuration-settings.md)。 新增字型資料夾的路徑；即 `/apps/<your-project>/fonts`。
+1. 更新 [Day Commons](/help/sites-deploying/configuring-osgi.md) GFX Font Helper [的OSGi組態](/help/sites-deploying/osgi-configuration-settings.md)。 新增字型資料夾的路徑； 即 `/apps/<your-project>/fonts`.
 
 1. 返回CRXDE Lite。 您現在應該會在資 `.fontlist` 料夾中看到包含已匯入字型名稱的節點。
 
