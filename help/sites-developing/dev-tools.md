@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
 
    當您無法直接存取CRX/AEM伺服器、透過擴充或修改現成可用的元件和Java套件來開發應用程式時，或當您不需要專用的除錯程式、程式碼完成和語法反白顯示時，建議使用CRXDE Lite。
 
-* 一組由整合開發環境組成(例如： [Eclipse](/help/sites-developing/howto-projects-eclipse.md) 或 [IntelliJ](/help/sites-developing/ht-intellij.md))，建置工具(例如：Apache Maven [](/help/sites-developing/ht-projects-maven.md)),FileVault，由Adobe開發以將儲存庫對應至檔案系統、版本控制系統(例如：Subversion)，錯誤追蹤系統(例如：Jira)，一個中央相依性管理系統(例如：Apache Archiva)和建置自動化系統(例如：Apache Continuum)。
+* 一組由整合開發環境組成(例如： [Eclipse](/help/sites-developing/howto-projects-eclipse.md) 或 [IntelliJ](/help/sites-developing/ht-intellij.md))，建置工具(例如： [Apache Maven](/help/sites-developing/ht-projects-maven.md)),FileVault，由Adobe開發以將儲存庫映射至檔案系統、版本控制系統(例如： Subversion)，錯誤追蹤系統(例如： Jira)，一個中央相依性管理系統(例如： Apache Archiva)和建置自動化系統(例如： Apache Continuum)。
 
    此設定允許您將應用程式（內容、代碼、配置）完全整合到任何開發環境和流程中。不同元素之間的連結是通過FileVault對儲存庫的檔案系統表示，因為上述所有開發工具都可以使用檔案。
 
