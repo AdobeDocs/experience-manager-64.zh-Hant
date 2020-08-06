@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +36,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 >[!CAUTION]
 >
->Sling Resource Merger和相關方法僅能與 [Granite搭配使用](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)。 這也表示它僅適用於標準的觸控式使用者介面；尤其是，以此方式定義的覆蓋僅適用於元件的觸控式對話框。
+>Sling Resource Merger和相關方法僅能與 [Granite搭配使用](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)。 這也表示它僅適用於標準的觸控式使用者介面； 尤其是，以此方式定義的覆蓋僅適用於元件的觸控式對話框。
 >
 >其他區域的覆蓋／覆寫（包括可觸控元件或傳統UI的其他方面）包括將適當的節點和結構從原始節點複製到定義自訂的位置。
 
@@ -50,7 +53,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 >
 >覆蓋不依賴於搜索路徑，它們使用屬 `sling:resourceSuperType` 性建立連接。
 >
->不過，覆寫通常在下面定義， `/apps`因為AEM的最佳實務是在下面定義自訂 `/apps`;這是因為，您不得變更下方的任何項 `/libs`目。
+>不過，覆寫通常在下面定義， `/apps`因為AEM的最佳實務是在下面定義自訂 `/apps`; 這是因為，您不得變更下方的任何項 `/libs`目。
 
 >[!CAUTION]
 >
@@ -64,6 +67,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
    >
    >
 1. 在 `/apps`
+
 >
 
 
@@ -120,7 +124,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
       `/apps/the-project/components/text/cq:dialog`
 
-要建立其中一種，只需重新建立骨架結構。 為了簡化結構的重構，所有中間節點都可以是 `nt:unstructured` 類型的(它們不需要反映原始節點類型；例如，在 `/libs`)中。
+要建立其中一種，只需重新建立骨架結構。 為了簡化結構的重構，所有中間節點都可以是 `nt:unstructured` 類型的(它們不需要反映原始節點類型； 例如，在 `/libs`)中。
 
 因此，在上述覆蓋範例中，需要下列節點：
 
@@ -168,7 +172,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
    依預設，自動建立的屬性( `jcr:primaryType`例如)不受覆蓋／覆寫的約束，以確保目前位於下方的節 `/libs` 點類型。 若要套用覆蓋／覆寫，您必須在中重新建立節 `/apps`點，請明確隱藏屬性並重新定義：
 
    1. 在下面建立相 `/apps` 應的節點 `jcr:primaryType`
-   1. 在該節 `sling:hideProperties` 點上建立屬性，其值設定為自動建立屬性；例如， `jcr:primaryType`
+   1. 在該節 `sling:hideProperties` 點上建立屬性，其值設定為自動建立屬性； 例如， `jcr:primaryType`
 
       此屬性(定義於 `/apps`下)現在會優先於定義於 `/libs`
 
@@ -211,8 +215,9 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
    1. 建立屬性 `sling:hideChildren`:
 
       * 類型: `String[]`
-      * 值：要隱藏／忽略的子節點清單(如中 `/libs`定義)
-      通配符&amp;ast;可用於隱藏／忽略所有子節點。
+      * 值： 要隱藏／忽略的子節點清單(如中 `/libs`定義)
+
+      通配符&amp;ast; 可用於隱藏／忽略所有子節點。
 
 
 * **重新排序節點**
@@ -241,7 +246,7 @@ Sling Resource Merger包含兩個自訂資源提供者——一個用於覆蓋�
 
 * 覆蓋:
 
-   * 目的：根據其搜索路徑合併資源
+   * 目的： 根據資源的搜索路徑合併資源
    * 裝載點： `/mnt/overlay`
    * usage: `mount point + relative path`
    * 範例：
@@ -250,7 +255,7 @@ Sling Resource Merger包含兩個自訂資源提供者——一個用於覆蓋�
 
 * 覆寫：
 
-   * 目的：根據超類型合併資源
+   * 目的： 根據超類型合併資源
    * 裝載點： `/mnt/overide`
    * usage: `mount point + absolute path`
    * 範例：
