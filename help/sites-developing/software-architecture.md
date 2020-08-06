@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ SOLID是一個縮略語，它描述了應該遵循的五個體系結構原則：
 
 ### 遵循魯棒性原理 {#follow-the-robustness-principle}
 
-健壯性原則指出，我們應該保守所傳的內容，但在所接受的內容上要自由。 也就是說，在向第三方發送消息時，要完全符合規範，但在接收到第三方消息時，只要消息的含義明確，就應接受非一致性消息。
+健壯性原則指出，我們應該保守所傳的內容，但在所接受的內容上保持自由。 也就是說，在向第三方發送消息時，要完全符合規範，但在接收到第三方消息時，只要消息的含義明確，就應接受非一致性消息。
 
 ### 在自己的模組中實作尖峰 {#implement-spikes-in-their-own-modules}
 
