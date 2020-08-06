@@ -329,7 +329,7 @@ For example, you could set the **[!UICONTROL RGB Default Color Space]** to `sRGB
 1. 在頁面頂端的導覽列上，點選「設定>應用程 **[!UICONTROL 式設定>批次集預設集>預設命名]」。**
 1. 選擇 **[!UICONTROL 「查看表單]** 」或「 **[!UICONTROL 查看代碼」]** ，以指定要查看的方式並輸入有關每個元素的資訊。
 
-   您可以選取「檢 **[!UICONTROL 視程式碼]** 」核取方塊，以檢視表格選擇旁邊建立的規則運算式值。 如果表單視圖因任何原因限制您，您可以輸入或更改這些值，以幫助定義命名約定的元素。 如果無法在表單檢視中解析您的值，表單欄位會變為非作用中。
+   You can select the **[!UICONTROL View Code]** check box to view the regular expression value building alongside your form selections. 如果表單視圖因任何原因限制您，您可以輸入或更改這些值，以幫助定義命名約定的元素。 如果無法在表單檢視中解析您的值，表單欄位會變為非作用中。
 
    >[!NOTE]
    >
@@ -343,20 +343,20 @@ For example, you could set the **[!UICONTROL RGB Default Color Space]** to `sRGB
 
 1. 執行下列任一項作業：
 
-   * 點選「 **[!UICONTROL 另存新檔]** 」，然後輸入預設集的名稱。
-   * 如果您 **[!UICONTROL 要編輯現有的預設集]** ，請點選「儲存」。
+   * Tap **[!UICONTROL Save As]** and type a name for the preset.
+   * Tap **[!UICONTROL Save]** if you are editing an existing preset.
 
-**建立批集預設集**
+**Creating a Batch Set Preset**
 
-動態媒體使用批次集預設集將資產組織成一組影像（替代影像、顏色選項、360回轉），以便在檢視器中顯示。 批次集預設集會自動在動態媒體中與資產上傳程式一起執行。
+Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. The batch set presets automatically run alongside the asset upload processes in Dynamic Media.
 
-您可以建立、編輯和管理批次集預設集。 批集預設定義有兩種形式： 一個代表您可能已設定的預設命名慣例，另一個代表您即時建立的自訂命名慣例。
+您可以建立、編輯和管理批次集預設集。 There are two forms of batch set preset definitions: one for a default naming convention that you might have set up, and one for custom naming conventions that you create on the fly.
 
-您可以使用表單欄位方法來定義批次集預設集，或使用程式碼方法來使用規則運算式。 如同在預設命名中，您可以在「表單檢視」中定義的同時選擇「 [!UICONTROL View Code] 」（檢視程式碼），並使用規則運算式來建立您的定義。 或者，您可以取消選中任一視圖以獨佔使用一個視圖或另一個視圖。
+You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose [!UICONTROL View Code] at the same time you are defining in the [!UICONTROL Form View] and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
 
-**要建立批集預設集，請執行以下操作：**
+**To create a Batch Set Preset:**
 
-1. 登入您的Dynamic Media Classic(Scene7)帳戶： [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Log on to your Dynamic Media Classic (Scene7) account: [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
 
@@ -380,14 +380,14 @@ For example, you could set the **[!UICONTROL RGB Default Color Space]** to `sRGB
 
    如果您定義大量集合，您可能偏好將這些集合與包含資產本身的資料夾分開。 例如，您可以建立「影像集」檔案夾，並將產生的集放在此處。
 
-1. 在「詳細資 **[!UICONTROL 訊]** 」面板中，點選「 **[!UICONTROL 儲存」]**。
+1. In the **[!UICONTROL Details]** panel, tap **[!UICONTROL Save]**.
 1. 點選 **[!UICONTROL 新預設集名稱旁的]** 「作用中」。
 
    啟動預設可確保在您上傳資產至動態媒體時，會套用批次集預設集以產生該預設集。
 
 **為自動生成2D回轉集建立批集預設集**
 
-您可以使用批集類型 **[!UICONTROL 多軸回轉集]** ，建立自動生成2D回轉集的方式。 影像群組使用「列」和「欄」規則運算式，讓影像資產在多維度陣列的對應位置中正確對齊。 在多軸回轉集中，沒有必須具有的最小或最大行數或列數。
+您可以使用批集類型 **[!UICONTROL 多軸回轉集]** ，建立自動生成2D回轉集的方式。 The grouping of images uses Row and Column regular expressions so that the image assets are properly aligned in the corresponding location in the multi-dimensional array. 在多軸回轉集中，沒有必須具有的最小或最大行數或列數。
 
 例如，假設您要建立名為的多軸回轉集 `spin-2dspin`。 您有一組回轉集影像，包含三列，每列12個影像。 這些影像的命名如下：
 
