@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 0%
 
 ---
 
@@ -96,9 +99,9 @@ AEM提供數個可用來建立工作流程模型的流程步驟。 您也可以�
 (絕 `AbsoluteTimeAutoAdvancer` 對時間自動提前器)流程的行為與 **** AutoAdvancer相同，只不過它在指定的時間和日期超時，而不是在指定的時間長度之後。
 
 * **Java類**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
-* **裝載**:沒有。
-* **引數**:沒有。
-* **逾時**:到達設定的時間和日期時，處理超時。
+* **裝載**: 沒有。
+* **引數**: 沒有。
+* **逾時**: 到達設定的時間和日期時，處理超時。
 
 ### AutoAdvancer(Auto Advancer) {#autoadvancer-auto-advancer}
 
@@ -106,9 +109,9 @@ AEM提供數個可用來建立工作流程模型的流程步驟。 您也可以�
 
 * **Java類**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
-* **裝載**:沒有。
-* **引數**:沒有。
-* **逾時**:在設定的時間長度後，處理逾時。
+* **裝載**: 沒有。
+* **引數**: 沒有。
+* **逾時**: 在設定的時間長度後，處理逾時。
 
 ### ProcessAssembler(Process Assembler) {#processassembler-process-assembler}
 
@@ -116,7 +119,7 @@ AEM提供數個可用來建立工作流程模型的流程步驟。 您也可以�
 
 * **Java類**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **裝載**:DAM資產、AEM頁面或無裝載（視子程式需求而定）。
+* **裝載**: DAM資產、AEM頁面或無裝載（視子程式需求而定）。
 * **引數**:
 
 ```
@@ -130,7 +133,7 @@ AEM提供數個可用來建立工作流程模型的流程步驟。 您也可以�
         listitem := /* A string */
 ```
 
-* **逾時**:受尊敬。
+* **逾時**: 受尊敬。
 
 例如：
 
@@ -162,9 +165,9 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 
 * **ECMAScript路徑**: `/libs/workflow/scripts/delete.ecma`
 
-* **裝載**:JCR路徑
-* **引數**:無
-* **逾時**:已忽略
+* **裝載**: JCR路徑
+* **引數**: 無
+* **逾時**: 已忽略
 
 ### noop {#noop}
 
@@ -172,9 +175,9 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 
 * **ECMAScript路徑**: `/libs/workflow/scripts/noop.ecma`
 
-* **裝載**:無
-* **引數**:無
-* **逾時**:已忽略
+* **裝載**: 無
+* **引數**: 無
+* **逾時**: 已忽略
 
 ### rule-false {#rule-false}
 
@@ -182,9 +185,9 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 
 * **ECMAScript路徑**: `/libs/workflow/scripts/rule-false.ecma`
 
-* **裝載**:無
-* **引數**:無
-* **逾時**:已忽略
+* **裝載**: 無
+* **引數**: 無
+* **逾時**: 已忽略
 
 ### sample {#sample}
 
@@ -192,9 +195,9 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 
 * **ECMAScript路徑**: `/libs/workflow/scripts/sample.ecma`
 
-* **裝載**:無
-* **引數**:無
-* **逾時**:已忽略
+* **裝載**: 無
+* **引數**: 無
+* **逾時**: 已忽略
 
 ### urller {#urlcaller}
 
@@ -202,7 +205,7 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 
 * **ECMAScript路徑**: `/libs/workflow/scripts/urlcaller.ecma`
 
-* **裝載**:無
+* **裝載**: 無
 * **引數**:
 
 ```
@@ -214,17 +217,17 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 
 For example: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
-* **逾時**:已忽略
+* **逾時**: 已忽略
 
 ### LockProcess {#lockprocess}
 
 鎖定工作流的裝載。
 
-* **** Java類： `com.day.cq.workflow.impl.process.LockProcess`
+* **Java類：** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **** 裝載：JCR_PATH和JCR_UUID
-* **** 引數：無
-* **** 逾時：已忽略
+* **裝載：** JCR_PATH和JCR_UUID
+* **引數：** 無
+* **逾時：** 已忽略
 
 在下列情況下，該步驟不具效力：
 
@@ -235,11 +238,11 @@ For example: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
 解除鎖定工作流程的裝載。
 
-* **** Java類： `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Java類：** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **** 裝載：JCR_PATH和JCR_UUID
-* **** 引數：無
-* **** 逾時：已忽略
+* **裝載：** JCR_PATH和JCR_UUID
+* **引數：** 無
+* **逾時：** 已忽略
 
 在下列情況下，該步驟不具效力：
 
@@ -256,7 +259,7 @@ For example: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
 * **Java類**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
-* **裝載**:參照頁面或DAM資產的JCR路徑或UUID
-* **引數**:無
-* **逾時**:受尊重
+* **裝載**: 參照頁面或DAM資產的JCR路徑或UUID
+* **引數**: 無
+* **逾時**: 受尊重
 
