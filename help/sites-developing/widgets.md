@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 508f4fab-dd87-4306-83ae-12e544b8b723
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '5182'
+ht-degree: 0%
 
 ---
 
 
 # 使用和擴充Widget(Classic UI){#using-and-extending-widgets-classic-ui}
 
-Adobe Experience manager的網頁介面使用AJAX和其他現代瀏覽器技術，讓作者直接在網頁上編輯和格式化內容。
+Adobe Experience Manager的網頁介面使用AJAX和其他現代瀏覽器技術，讓作者直接在網頁上編輯和格式化內容。
 
 Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程式庫，它提供精美的使用者介面元素，可跨所有最重要的瀏覽器運作，並可建立案頭級的UI體驗。
 
@@ -37,7 +40,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 >[!NOTE]
 >
->Adobe Experience manager的傳統UI是以 [ExtJS 3.4.0為基礎](https://extjs.cachefly.net/ext-3.4.0/docs/)。
+>Adobe Experience Manager的傳統UI是以 [ExtJS 3.4.0為基礎](https://extjs.cachefly.net/ext-3.4.0/docs/)。
 
 >[!NOTE]
 >
@@ -62,13 +65,13 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
    >[!NOTE]
    >
-   >注意： `<category-name>` 是自訂資料庫的名稱(例如&quot;cq.extjtranting&quot;)，並用於將程式庫包含在頁面上。
+   >注意： `<category-name>` 是自訂資料庫的名稱(例如 &quot;cq.extjtranting&quot;)，並用於將程式庫包含在頁面上。
 
 1. 以下 `clientlib` 建立 `css` 和 `js` 資料夾(nt:folder)。
 
 1. 以下 `clientlib` 建立 `css.txt` 和 `js.txt` 檔案(nt:files)。 這些。txt檔案會列出程式庫所包含的檔案。
 
-1. 編輯 `js.txt`:它需要從&#39; `#base=js`&#39;開始，後面接著由CQ客戶端庫服務聚合的檔案清單，例如：
+1. 編輯 `js.txt`: 它需要從&#39; `#base=js`&#39;開始，後面接著由CQ客戶端庫服務聚合的檔案清單，例如：
 
    ```
    #base=js
@@ -79,7 +82,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
     InsertTextPlugin.js
    ```
 
-1. 編輯 `css.txt`:它需要從&#39; `#base=css`&#39;開始，後面接著由CQ客戶端庫服務聚合的檔案清單，例如：
+1. 編輯 `css.txt`: 它需要從&#39; `#base=css`&#39;開始，後面接著由CQ客戶端庫服務聚合的檔案清單，例如：
 
    ```
    #base=css
@@ -131,7 +134,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 1. 在下方的 **Geometrixx** 分支中建立新頁 `/content/geometrixx/en/products` 面，並呼叫 **使用ExtJS Widget**。
 
 1. 進入設計模式，將名為「使用ExtJS Widgets」的群組 **的所有元件新增至** Geometrixx的設計
-1. 返回編輯模式：「使用ExtJS Widget **」群組的元件** ，可在Sidekick中取得。
+1. 返回編輯模式： 「使用ExtJS Widget **」群組的元件** ，可在Sidekick中取得。
 
 >[!NOTE]
 >
@@ -145,27 +148,27 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 在Sidekick中使用ExtJS **介面工具集** (Using ExtJS Widgets **)群組的第一個元件稱為1。 對話框基本** ，包含4個基本對話框，這些對話框是使用現成可用的Widget建立，而不需自訂的Javascript邏輯。 對話方塊儲存在下方 `/apps/extjstraining/components/dialogbasics`。 基本對話框包括：
 
-* 完整對話框(節 `full` 點):它顯示一個包含3個頁籤的窗口，每個頁籤具有2個文本欄位。
+* 完整對話框(節 `full` 點): 它顯示一個包含3個頁籤的窗口，每個頁籤具有2個文本欄位。
 
-* 「單面板」對話框( `singlepanel` 節點):它顯示一個包含1個頁籤的窗口，其中包含2個文本欄位。
-* 「多面板」對話框( `multipanel` 節點):其顯示與「完整」對話框相同，但其構建方式不同。
-* 設計對話框(節 `design` 點):它顯示一個包含2個頁籤的窗口。 第一個標籤具有文字欄位、下拉式選單和可收合的文字區域。 第二個標籤有一個欄位集，其中包含4個文本欄位，另一個可折疊的欄位集，其中包含2個文本欄位。
+* 「單面板」對話框( `singlepanel` 節點): 它顯示一個包含1個頁籤的窗口，其中包含2個文本欄位。
+* 「多面板」對話框( `multipanel` 節點): 其顯示與「完整」對話框相同，但其構建方式不同。
+* 設計對話框(節 `design` 點): 它顯示一個包含2個頁籤的窗口。 第一個標籤具有文字欄位、下拉式選單和可收合的文字區域。 第二個標籤有一個欄位集，其中包含4個文本欄位，另一個可折疊的欄位集，其中包含2個文本欄位。
 
 加入 **1。 範例頁面中的Dialog Basics** 元件：
 
 1. 新增 **1。 Dialog Basics** 元件至Sidekick中「使用ExtJS介面工具集 **」標籤的範例** 頁面 ****。
 
-1. 元件顯示標題、部分文本和 **PROPERTIES連結** :按一下連結可顯示儲存在儲存庫中的段落的屬性。 再按一下連結以隱藏屬性。
+1. 元件顯示標題、部分文本和 **PROPERTIES連結** : 按一下連結可顯示儲存在儲存庫中的段落的屬性。 再按一下連結以隱藏屬性。
 
 元件顯示如下：
 
 ![chlimage_1-135](assets/chlimage_1-135.png)
 
-#### 範例1:完整對話方塊 {#example-full-dialog}
+#### 範例1: 完整對話方塊 {#example-full-dialog}
 
 「完 **整** 」對話框顯示一個窗口，其中包含三個頁籤，每個頁籤具有兩個文本欄位。 這是「對話基礎」元件的 **預設對話框** 。 其特點是：
 
-* 由節點定義：節點類型= `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)。
+* 由節點定義： 節點類型= `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog)。
 
 * 顯示3個頁籤(節點類型= `cq:Panel`)。
 * 每個頁籤有2個文本欄位(節點類型= `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield))。
@@ -182,7 +185,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 ![screen_shot_2012-01-31at45411pm](assets/screen_shot_2012-01-31at45411pm.png)
 
-#### 範例2:單一面板對話框 {#example-single-panel-dialog}
+#### 範例2: 單一面板對話框 {#example-single-panel-dialog}
 
 「單 **一面板** 」對話方塊會顯示一個視窗，其中有一個標籤包含兩個文字欄位。 其特點是：
 
@@ -199,7 +202,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
    `http://localhost:4502/apps/extjstraining/components/dialogbasics/singlepanel.-1.json`
 
 * 相較於「完整對話 **框」** ，其優勢在於所需的組態較少。
-* 建議使用：，以取得顯示資訊或只有幾個欄位的簡單對話方塊。
+* 建議使用： ，以取得顯示資訊或只有幾個欄位的簡單對話方塊。
 
 要使用「單一面板」對話框：
 
@@ -209,13 +212,13 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
    1. Click **Save All** to save the changes.
    1. 複製節點： `/apps/extjstraining/components/dialogbasics/singlepanel`
    1. 將複製的節點貼上到下面： `/apps/extjstraining/components/dialogbasics`
-   1. 選擇節點：並 `/apps/extjstraining/components/dialogbasics/Copy of singlepanel`重新命名 `dialog`。
+   1. 選擇節點： `/apps/extjstraining/components/dialogbasics/Copy of singlepanel`並重新命名 `dialog`。
 
-1. 編輯元件：對話方塊顯示如下：
+1. 編輯元件： 對話方塊顯示如下：
 
 ![screen_shot_2012-01-31at45952pm](assets/screen_shot_2012-01-31at45952pm.png)
 
-#### 範例3:多面板對話框 {#example-multi-panel-dialog}
+#### 範例3: 多面板對話框 {#example-multi-panel-dialog}
 
 「多 **面板** 」對話框的顯示與「完整」對話框的顯 **示相同** ，但其構建方式不同。 其特點是：
 
@@ -234,19 +237,19 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 * 相較於「完整對話 **框」** ，其優勢在於其結構已簡化。
 
-* 建議使用：對話框。
+* 建議使用： 對話框。
 
 要使用「多面板」對話框：
 
 1. 用「多面板」對話 **框替換** 「對話框基 **礎」元件的對話框** :
 
-   請遵循範例2說明的 [步驟：單一面板對話框](#example-single-panel-dialog)
+   請遵循範例2說明的 [步驟： 單一面板對話框](#example-single-panel-dialog)
 
-1. 編輯元件：對話方塊顯示如下：
+1. 編輯元件： 對話方塊顯示如下：
 
 ![screen_shot_2012-01-31at50119pm](assets/screen_shot_2012-01-31at50119pm.png)
 
-#### 範例4:豐富式對話方塊 {#example-rich-dialog}
+#### 範例4: 豐富式對話方塊 {#example-rich-dialog}
 
 「豐 **富** 」對話框顯示一個帶有兩個頁籤的窗口。 第一個標籤具有文字欄位、下拉式選單和可收合的文字區域。 第二個頁籤具有一個欄位集，其中包含四個文本欄位和一個可折疊的欄位集，其中包含兩個文本欄位。 其特點是：
 
@@ -269,9 +272,9 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 1. 使用「豐富式」對話 **框取代** 「對話框基 **礎** 」元件：
 
-   請遵循範例2說明的 [步驟：單一面板對話框](#example-single-panel-dialog)
+   請遵循範例2說明的 [步驟： 單一面板對話框](#example-single-panel-dialog)
 
-1. 編輯元件：對話方塊顯示如下：
+1. 編輯元件： 對話方塊顯示如下：
 
 ![screen_shot_2012-01-31at50429pm](assets/screen_shot_2012-01-31at50429pm.png)![screen_shot_2012-01-31at50519pm](assets/screen_shot_2012-01-31at50519pm.png)
 
@@ -279,29 +282,29 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 在Sidekick中使用ExtJS **Widgets群組的第二個元件稱為****2。 動態對話** ，並包含三個動態對話方塊，這些對話方塊是使用現成可用的Widget和自訂 **的Javascript邏輯建立**。 對話方塊儲存在下方 `/apps/extjstraining/components/dynamicdialogs`。 動態對話框包括：
 
-* 「交換機頁籤」對話框( `switchtabs` 節點):它顯示一個包含兩個頁籤的窗口。 第一個標籤有一個頁籤選項，其中包含三個選項：當選取選項時，會顯示與選項相關的標籤。 第二個標籤有兩個文字欄位。
-* 任意對話框( `arbitrary` 節點):它會顯示一個含有一個標籤的視窗。 此標籤有一個可拖放或上傳資產的欄位，以及一個欄位，其中顯示有關包含頁面的資訊，以及參考資產的資訊。
-* 切換欄位對話框( `togglefield` 節點):它會顯示一個含有一個標籤的視窗。 該頁籤具有複選框：勾選時，會顯示包含兩個文字欄位的欄位集。
+* 「交換機頁籤」對話框( `switchtabs` 節點): 它顯示一個包含兩個頁籤的窗口。 第一個標籤有一個頁籤選項，其中包含三個選項： 當選取選項時，會顯示與選項相關的標籤。 第二個標籤有兩個文字欄位。
+* 任意對話框( `arbitrary` 節點): 它會顯示一個含有一個標籤的視窗。 此標籤有一個可拖放或上傳資產的欄位，以及一個欄位，其中顯示有關包含頁面的資訊，以及參考資產的資訊。
+* 切換欄位對話框( `togglefield` 節點): 它會顯示一個含有一個標籤的視窗。 該頁籤具有複選框： 勾選時，會顯示包含兩個文字欄位的欄位集。
 
 加入 **2。 範例頁面上的Dynamic Dialogs** （動態對話方塊）元件：
 
 1. 新增 **2。 動態對話框** (Dynamic Dialogs **)元件，從Sidekick的「使用ExtJS介面工具集** 」標籤，移至範例 **頁面**。
 
-1. 元件顯示標題、部分文本和 **PROPERTIES連結** :按一下以顯示儲存在儲存庫中的段落的屬性。 再按一下以隱藏屬性。
+1. 元件顯示標題、部分文本和 **PROPERTIES連結** : 按一下以顯示儲存在儲存庫中的段落的屬性。 再按一下以隱藏屬性。
 
 元件顯示如下：
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
 
-#### 範例1:切換標籤對話框 {#example-switch-tabs-dialog}
+#### 範例1: 切換標籤對話框 {#example-switch-tabs-dialog}
 
-「切 **換頁籤** 」對話框顯示一個帶有兩個頁籤的窗口。 第一個標籤有一個頁籤選項，其中包含三個選項：當選取選項時，會顯示與選項相關的標籤。 第二個標籤有兩個文字欄位。
+「切 **換頁籤** 」對話框顯示一個帶有兩個頁籤的窗口。 第一個標籤有一個頁籤選項，其中包含三個選項： 當選取選項時，會顯示與選項相關的標籤。 第二個標籤有兩個文字欄位。
 
 其主要特點是：
 
 * 由節點定義(節點類型= `cq:Dialog`, xtype = [`dialog`](/help/sites-developing/xtypes.md#dialog))。
 
-* 顯示2個頁籤(節點類型= `cq:Panel`):1頁籤，第2個頁籤取決於第1個頁籤（3個選項）中的選擇。
+* 顯示2個頁籤(節點類型= `cq:Panel`): 1頁籤，第2個頁籤取決於第1個頁籤（3個選項）中的選擇。
 * 有3個可選頁籤(節點類型= `cq:Panel`)，每個頁籤有2個文本欄位(節點類型= `cq:Widget`, xtype = [`textfield`](/help/sites-developing/xtypes.md#textfield))。 一次只顯示一個可選頁籤。
 
 * 由節點定義，位 `switchtabs` 於：
@@ -326,7 +329,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 * 在方 `Ejst.x2.manageTabs()` 法中，當值為-1時，所有 `index` 可選制表符都會隱藏（i從1到3）。
 
-* 選擇頁籤有2個偵聽程式：一個頁籤在載入對話框時顯示選定頁籤(&quot; `loadcontent`&quot;事件)，另一個頁籤在更改選擇時顯示選定頁籤(&quot; `selectionchanged`&quot;事件):
+* 選擇頁籤有2個偵聽程式： 一個頁籤在載入對話框時顯示選定頁籤(&quot; `loadcontent`&quot;事件)，另一個頁籤在更改選擇時顯示選定頁籤(&quot; `selectionchanged`&quot;事件):
 
    `loadcontent="function(field,rec,path){Ejst.x2.showTab(field);}"`
 
@@ -336,7 +339,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
    `field.findParentByType('tabpanel')` 取得包含所有標籤的表格面板( `field` 代表選取介面工具集)
 
-   `field.getValue()` 獲取選擇的值，例如：tab2
+   `field.getValue()` 獲取選擇的值，例如： tab2
 
    `Ejst.x2.manageTabs()` 顯示選定頁籤。
 
@@ -356,11 +359,11 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 ![screen_shot_2012-02-01at114745am](assets/screen_shot_2012-02-01at114745am.png)
 
-#### 範例2:任意對話框 {#example-arbitrary-dialog}
+#### 範例2: 任意對話框 {#example-arbitrary-dialog}
 
 對話方塊通常會顯示基礎元件的內容。 此處介紹的對話方塊稱為「 **任意** 」對話方塊，會從不同的元件提取內容。
 
-「任 **意** 」對話框顯示一個帶有一個頁籤的窗口。 此標籤包含兩個欄位：一個要拖放或上傳資產，另一個要顯示包含頁面的相關資訊，而另一個要顯示包含頁面的相關資訊（如果已參考）。
+「任 **意** 」對話框顯示一個帶有一個頁籤的窗口。 此標籤包含兩個欄位： 一個要拖放或上傳資產，另一個要顯示包含頁面的相關資訊，而另一個要顯示包含頁面的相關資訊（如果已參考）。
 
 其主要特點是：
 
@@ -386,7 +389,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
    `field` 與ownerdraw對象一起設定
 
-   `path` 是與元件的內容路徑一起設定(例如：/content/geometrixx/tw/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs)
+   `path` 是與元件的內容路徑一起設定(例如： /content/geometrixx/tw/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs)
 
 * 對象 `Ejst.x2` 在檔案中定義， `exercises.js` 位於：
 
@@ -408,15 +411,15 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 1. 用「任意」(Arbitary **)對話框替換** 「動態對話框 **」(** Dynamic Dialog)元件的對話框：
 
-   請遵循範例2說明的 [步驟：單一面板對話框](#example-single-panel-dialog)
+   請遵循範例2說明的 [步驟： 單一面板對話框](#example-single-panel-dialog)
 
-1. 編輯元件：對話方塊顯示如下：
+1. 編輯元件： 對話方塊顯示如下：
 
 ![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
 
-#### 範例3:切換欄位對話方塊 {#example-toggle-fields-dialog}
+#### 範例3: 切換欄位對話方塊 {#example-toggle-fields-dialog}
 
-「切 **換欄位** 」對話方塊會顯示一個含有一個標籤的視窗。 該頁籤具有複選框：勾選時，會顯示包含兩個文字欄位的欄位集。
+「切 **換欄位** 」對話方塊會顯示一個含有一個標籤的視窗。 該頁籤具有複選框： 勾選時，會顯示包含兩個文字欄位的欄位集。
 
 其主要特點是：
 
@@ -436,7 +439,7 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 邏輯是透過事件接聽程式和javascript程式碼實作，如下所示：
 
-* 選擇頁籤有2個偵聽程式：一個顯示當載入內容時的對話欄位集(&quot; `loadcontent`&quot;事件)，另一個顯示當變更選擇時的對話欄位集(&quot; `selectionchanged`&quot;事件):
+* 選擇頁籤有2個偵聽程式： 一個顯示當載入內容時的對話欄位集(&quot; `loadcontent`&quot;事件)，另一個顯示當變更選擇時的對話欄位集(&quot; `selectionchanged`&quot;事件):
 
    `loadcontent="function(field,rec,path){Ejst.x2.toggleFieldSet(field);}"`
 
@@ -458,9 +461,9 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 1. 將「動態對話框」元 **件的對話框替換** 「切換 **欄位」對話框** :
 
-   請遵循範例2說明的 [步驟：單一面板對話框](#example-single-panel-dialog)
+   請遵循範例2說明的 [步驟： 單一面板對話框](#example-single-panel-dialog)
 
-1. 編輯元件：對話方塊顯示如下：
+1. 編輯元件： 對話方塊顯示如下：
 
 ![screen_shot_2012-02-01at115518am](assets/screen_shot_2012-02-01at115518am.png)
 
@@ -468,9 +471,9 @@ Adobe Experience Manager(AEM)使用 [ExtJS](https://www.sencha.com/) widgets程�
 
 AEM隨附的現成可用Widget應涵蓋大部分的使用案例。 不過，有時可能需要建立自訂介面工具集，以涵蓋專案特定需求。 您可以延伸現有的Widget來建立自訂Widget。 為協助您開始進行此類自訂，「使用ExtJS **Widgets」套件包含三個對話方塊，使用三個不同的自訂Widget** :
 
-* 「多欄位」對話框( `multifield` 節點)顯示一個帶有一個頁籤的窗口。 此標籤有一個自訂的多欄位介面工具集，其中包含兩個欄位：下拉式選單（含兩個選項）和文字欄位。 由於它以現成可用的介面工具集(只 `multifield` 有文字欄位)為基礎，因此具有介面工具集的所有功 `multifield` 能。
+* 「多欄位」對話框( `multifield` 節點)顯示一個帶有一個頁籤的窗口。 此標籤有一個自訂的多欄位介面工具集，其中包含兩個欄位： 下拉式選單（含兩個選項）和文字欄位。 由於它以現成可用的介面工具集(只 `multifield` 有文字欄位)為基礎，因此具有介面工具集的所有功 `multifield` 能。
 
-* 樹狀瀏覽對話框(節 `treebrowse` 點)顯示一個窗口，其中一個頁籤包含路徑瀏覽構件：按一下箭頭時，將開啟一個窗口，您可以在其中瀏覽層次並選擇一個項目。 然後項目的路徑會新增至路徑欄位，並在對話方塊關閉時持續存在。
+* 樹狀瀏覽對話框(節 `treebrowse` 點)顯示一個窗口，其中一個頁籤包含路徑瀏覽構件： 按一下箭頭時，將開啟一個窗口，您可以在其中瀏覽層次並選擇一個項目。 然後項目的路徑會新增至路徑欄位，並在對話方塊關閉時持續存在。
 * 「富格文本編輯器插件」對話框(節 `rteplugin` 點)，在「富格文本編輯器」中添加一個自定義按鈕，將一些自定義文本插入主文本。 它由Widget( `richtext` RTE)和自訂功能組成，這些功能是透過RTE外掛程式機制新增的。
 
 自訂Widget和外掛程式都包含在名為 **3的元件中。 使用ExtJS Widgets** 套件 **的自訂Widget** 。 要將此元件包含到示例頁中：
@@ -483,9 +486,9 @@ AEM隨附的現成可用Widget應涵蓋大部分的使用案例。 不過，有�
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-#### 範例1:自訂多欄位介面工具集 {#example-custom-multifield-widget}
+#### 範例1: 自訂多欄位介面工具集 {#example-custom-multifield-widget}
 
-「自 **訂多欄位介面工具集** 」對話方塊會顯示一個含有一個標籤的視窗。 此標籤有自訂的多欄位介面工具集，與標準的多欄位介面工具集不同，它有兩個欄位：下拉式選單（含兩個選項）和文字欄位。
+「自 **訂多欄位介面工具集** 」對話方塊會顯示一個含有一個標籤的視窗。 此標籤有自訂的多欄位介面工具集，與標準的多欄位介面工具集不同，它有兩個欄位： 下拉式選單（含兩個選項）和文字欄位。
 
 「自 **訂多欄位介面工具集** 」對話方塊：
 
@@ -522,7 +525,7 @@ AEM隨附的現成可用Widget應涵蓋大部分的使用案例。 不過，有�
 
 * 擴充介面工 [`CQ.form.CompositeField`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) 具集。
 
-* 有3個欄位： `hiddenField` （文本欄位） `allowField` 、(ComboBox) `otherField` 和（文本欄位）
+* 有3個欄位： `hiddenField` （文字欄位）、 `allowField` (ComboBox)和 `otherField` （文字欄位）
 
 * 覆寫 `CQ.Ext.Component#initComponent` 以新增3個欄位：
 
@@ -531,7 +534,7 @@ AEM隨附的現成可用Widget應涵蓋大部分的使用案例。 不過，有�
 
 * 覆寫 `setValue`CQ.form.CompositeField `getValue` 的方法 `getRawValue`[](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.CompositeField) 和方法，以便設定和檢索格式為：
 
-   `<allowField value>/<otherField value>, e.g.: 'Bla1/hello'`.
+   `<allowField value>/<otherField value>, e.g.: 'Bla1/hello'`。
 
 * 將自身註冊為「 `ejstcustom`」 xtype:
 
@@ -541,9 +544,9 @@ AEM隨附的現成可用Widget應涵蓋大部分的使用案例。 不過，有�
 
 ![screen_shot_2012-02-01at115840am](assets/screen_shot_2012-02-01at115840am.png)
 
-#### 範例2:自訂樹狀瀏覽介面工具集 {#example-custom-treebrowse-widget}
+#### 範例2: 自訂樹狀瀏覽介面工具集 {#example-custom-treebrowse-widget}
 
-自訂「樹狀 **瀏覽介面工具集** 」對話方塊會顯示一個視窗，其中有一個標籤包含自訂路徑瀏覽介面工具集：按一下箭頭時，將開啟一個窗口，您可以在其中瀏覽層次並選擇一個項目。 然後項目的路徑會新增至路徑欄位，並在對話方塊關閉時持續存在。
+自訂「樹狀 **瀏覽介面工具集** 」對話方塊會顯示一個視窗，其中有一個標籤包含自訂路徑瀏覽介面工具集： 按一下箭頭時，將開啟一個窗口，您可以在其中瀏覽層次並選擇一個項目。 然後項目的路徑會新增至路徑欄位，並在對話方塊關閉時持續存在。
 
 自訂樹狀瀏覽對話框：
 
@@ -593,13 +596,13 @@ AEM隨附的現成可用Widget應涵蓋大部分的使用案例。 不過，有�
 
 1. 將「自訂介面工具集」元 **件的對話方塊** ，取代 **為「自訂樹狀瀏覽」對話方塊** :
 
-   請遵循範例2說明的 [步驟：單一面板對話框](#example-single-panel-dialog)
+   請遵循範例2說明的 [步驟： 單一面板對話框](#example-single-panel-dialog)
 
-1. 編輯元件：對話方塊顯示如下：
+1. 編輯元件： 對話方塊顯示如下：
 
 ![screen_shot_2012-02-01at120104pm](assets/screen_shot_2012-02-01at120104pm.png)
 
-#### 範例3:Rich Text Editor(RTE)外掛程式 {#example-rich-text-editor-rte-plug-in}
+#### 範例3: Rich Text Editor(RTE)外掛程式 {#example-rich-text-editor-rte-plug-in}
 
 「 **Rich Text Editor(RTE)Plug-in** 」(RTE)對話框是基於「Rich Text Editor」（富格文本編輯器）的對話框，具有一個自定義按鈕，可在方括弧內插入一些自定義文本。 自訂文字可由某些伺服器端邏輯來解析（在此範例中未實作），例如新增某些在指定路徑上定義的文字：
 
@@ -624,12 +627,12 @@ RTE外掛程式：
    `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
 
 * 擴展對 [`CQ.form.rte.plugins.Plugin`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) 像。
-* 下列方法會定義物 [`CQ.form.rte.plugins.Plugin`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) 件，並在實施外掛程式中覆寫：
+* 下列方法會定義物 [`CQ.form.rte.plugins.Plugin`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) 件，並在實作外掛程式中覆寫：
 
    * `getFeatures()` 傳回外掛程式可用之所有功能的陣列。
    * `initializeUI()` 將新按鈕添加到RTE工具欄。
    * `notifyPluginConfig()` 在按鈕暫留時顯示標題和文字。
-   * `execute()` 在按下按鈕並執行外掛程式動作時呼叫：它顯示一個窗口，用於定義要包含的文本。
+   * `execute()` 在按下按鈕並執行外掛程式動作時呼叫： 它顯示一個窗口，用於定義要包含的文本。
 
 * `insertText()` 使用對應的對話框對象插入文 `Ejst.InsertTextPlugin.Dialog` 本（請參見後面）。
 
@@ -643,9 +646,9 @@ RTE外掛程式：
 
 要使用基 **於Rich Text Editor(RTE)的插件對話框** :
 
-1. 將「自訂介面工 **具集** 」元件的對話方塊取代 **為「Rich Text Editor(RTE)Plug-in based** 」對話方塊：
+1. 將「自訂介面工 **具集** 」元件的對話方塊取代 **為「以RTE為基礎的豐富式文字編輯器(Rich Text Editor,RTE)外掛程式** 」對話方塊：
 
-   請遵循範例2說明的 [步驟：單一面板對話框](#example-single-panel-dialog)
+   請遵循範例2說明的 [步驟： 單一面板對話框](#example-single-panel-dialog)
 
 1. 編輯元件。
 1. 按一下右邊的最後一個圖示（四個箭頭的圖示）。 輸入路徑，然後按一下「 **確定**」:
@@ -660,20 +663,20 @@ RTE外掛程式：
 
 >[!NOTE]
 >
->此範例僅說明如何實作邏輯的用戶端部分：然後，必須&#x200B;*[在伺服器端明確地解析佔位符(文本]*)（例如，在元件JSP中）。
+>此範例僅說明如何實作邏輯的用戶端部分： 然後，必須&#x200B;*[在伺服器端明確地解析佔位符(文本]*)（例如，在元件JSP中）。
 
 ### 樹概述 {#tree-overview}
 
 現成可用的物件提供樹狀結 [`CQ.Ext.tree.TreePanel`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.tree.TreePanel) 構化資料的UI表示。 「使用ExtJS Widgets」套件中包含的「樹狀結構概 **述」元件** ，說明如何使 `TreePanel` 用物件在指定路徑下顯示JCR樹狀結構。 窗口本身可以與塢站連接／斷開塢站連接。 在此示例中，窗口邏輯嵌入到&lt;script>&lt;/script>標籤之間的元件jsp中。
 
-要將樹概 **述元件包含** 到示例頁，請執行以下操作：
+要將樹概 **述元件包含** 到示例頁中：
 
 1. 新增 **4。 樹概述** (Tree Overview **)元件至Sidekick中「使用ExtJS介面工具集** 」(Using ExtJS Widgets **)標籤中的範例**&#x200B;頁面。
 
 1. 元件將顯示：
 
    * 標題，含有文字
-   * 屬性 **連結** :按一下以顯示儲存在儲存庫中的段落的屬性。 再按一下以隱藏屬性。
+   * 屬性 **連結** : 按一下以顯示儲存在儲存庫中的段落的屬性。 再按一下以隱藏屬性。
    * 一個浮動窗口，其中包含儲存庫的樹形表示，可以展開。
 
 元件顯示如下：
@@ -738,10 +741,10 @@ RTE外掛程式：
 
 「格線面板」以表格式表示行和列的資料。 它由以下幾部分組成：
 
-* 商店：保存資料記錄（行）的模型。
-* 欄模型：專欄的構成。
-* 檢視：封裝了用戶介面。
-* 選擇模型：選擇行為。
+* 商店： 保存資料記錄（行）的模型。
+* 欄模型： 專欄的構成。
+* 檢視： 封裝了用戶介面。
+* 選擇模型： 選擇行為。
 
 「使用ExtJS Widgets」套件中包含的「 **格線概述」元件** ，說明如何以表格格式顯示資料：
 
@@ -755,14 +758,14 @@ RTE外掛程式：
 1. 元件將顯示：
 
    * 帶有文字的標題
-   * 屬性 **連結** :按一下以顯示儲存在儲存庫中的段落的屬性。 再按一下以隱藏屬性。
-   * 一個浮動窗口，包含表格格式的資料。
+   * 屬性 **連結** : 按一下以顯示儲存在儲存庫中的段落的屬性。 再按一下以隱藏屬性。
+   * 包含表格格式的資料的浮動窗口。
 
 元件顯示如下：
 
 ![screen_shot_2012-02-01at121109pm](assets/screen_shot_2012-02-01at121109pm.png)
 
-#### 範例1:預設格線 {#example-default-grid}
+#### 範例1: 預設格線 {#example-default-grid}
 
 在其現成版本中，「格線概述」 **** 元件會以表格格式顯示含靜態資料的視窗。 在此示例中，邏輯以兩種方式嵌入到元件jsp中：
 
@@ -823,7 +826,7 @@ RTE外掛程式：
 
       `singleSelect:true`
 
-#### 範例2:參考搜尋格線 {#example-reference-search-grid}
+#### 範例2: 參考搜尋格線 {#example-reference-search-grid}
 
 安裝軟體包時，網格 `content.jsp` 概述組 **** 件將顯示基於靜態資料的網格。 可以修改元件以顯示具有以下特徵的網格：
 
