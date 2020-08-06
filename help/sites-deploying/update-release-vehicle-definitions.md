@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 32695db5-d62d-4959-8a24-3d56b4a19904
 translation-type: tm+mt
 source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
+workflow-type: tm+mt
+source-wordcount: '998'
+ht-degree: 2%
 
 ---
 
@@ -217,7 +220,7 @@ source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
    <td><strong>可用性和安裝</strong></td> 
    <td>
     <ul> 
-     <li>COFP安裝程式已簡化，以改善客戶體驗。 （客戶只需為所有元件安裝單一套件即可）。</li> 
+     <li>COFP安裝程式已簡化，以改善客戶體驗。 （客戶只能為所有元件安裝單一套件）。</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -237,7 +240,7 @@ source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
   </tr>
   <tr>
    <td><strong>命名</strong></td> 
-   <td>cq-&lt;Release Version&gt;-hotfix-&lt;Hotfix ID&gt;-&lt;Hotfix版本&gt;</td> 
+   <td>cq-&lt;版本版本&gt;-hotfix-&lt;修補程式ID&gt;-&lt;修補程式版本&gt;</td> 
   </tr>
   <tr>
    <td><strong>包含項目</strong></td> 
@@ -301,7 +304,7 @@ source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
    <td>
     <ul> 
      <li>由AEM客戶服務以套件形式提供</li> 
-     <li>Service pack或完整版不一定包含在內</li> 
+     <li>Service Pack或完整版不一定包含在內</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -361,5 +364,5 @@ source-git-commit: d9387009bca3ce1ea5993658959c1070e07e11d0
  </tbody>
 </table>
 
-* [1]:OAK修正不會以個別Hotfix的形式提供。 不過，這些修補程式會包含在後續的Cumulative Oak Hotfix中。 如有必要，可以在最新COFP之上提供診斷版本。 前提是客戶擁有最新的COFP運行。 診斷構建版本僅提供與Hot Fix相同的級別品質保證。 因此，它們無法提供與累積修補程式套件、服務套件或產品發行相同等級的品質保證。 最終修正將隨下一個COFP一起提供。
+* [1]: OAK修正不會以個別Hotfix的形式提供。 不過，這些修補程式會包含在後續的Cumulative Oak Hotfix中。 如有必要，可以在最新COFP之上提供診斷版本。 前提是客戶擁有最新的COFP運行。 診斷構建版本僅提供與Hot Fix相同的級別品質保證。 因此，它們無法提供與累積修補程式套件、服務套件或產品發行相同等級的品質保證。 最終修正將隨下一個COFP一起提供。
 
