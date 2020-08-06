@@ -11,6 +11,9 @@ noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/mobile/using/administer-mobile-apps
 translation-type: tm+mt
 source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
+workflow-type: tm+mt
+source-wordcount: '1332'
+ht-degree: 1%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
 
 在 */libs/settings/mobileapps/model-types下有兩種系統提供的型號類型*。 如果要覆蓋系統模型類型， *Mobileapps/model-types* node will need to be created under the configuration node you wish the override to on.
 
-例如，如果您已在 */conf/myconf1* 和 */conf/myconf2* 上建立配置，並且希望僅覆蓋 *conf1上的系統模型類型，則您會在Conf1的設定下建立***** mobileapps/model-nodeNode。
+例如，如果您已在 */conf/myconf1* 和 */conf/myconf2* 中建立配置，並且希望僅覆蓋 *conf1上的系統模型類型，則您會在Conf1的設定下建立***** Mobileapps/Model-NodeCreateNode。
 
 如果要允許將資料類型添加到模型中，模型類型必須有一個名為「scq:Page」類型的子節點和資源類型為 *wcm/swables/components/swables*。
 
@@ -56,7 +59,7 @@ source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
 
 ### 資料類型設定覆蓋 {#data-types-config-overlay}
 
-&#39;dataTypesConfig&#39;屬性支援Sling資源合併。 這表示系統模型類型（甚至自訂模型類型）所使用的資料類型，可使用覆蓋節點加以自訂。
+&#39;dataTypesConfig&#39;屬性支援Sling資源合併。 這表示系統模型類型（或甚至自訂模型類型）所使用的資料類型可使用覆蓋節點加以自訂。
 
 需要建 *立/libs/settings/mobileapps/models/formbuilderconfig/datatypes的覆蓋* ，然後視需要自訂。
 
@@ -121,16 +124,16 @@ source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
 
 **頁面模型** 「頁面」模型提供快速方法，可重複使用網站中的現有內容，以便透過內容服務傳送。
 
-基於「頁面」模型的ersourceType實體為：mobileapps/caas/components/data/pages
+基於「頁面」模型的ersourceType實體為： mobileapps/caas/components/data/pages
 
-路徑：「網站」頁面的路徑。 內容服務處理常式會呈現此路徑（及其子系）的內容。
+路徑： 「網站」頁面的路徑。 內容服務處理常式會呈現此路徑（及其子系）的內容。
 
 **資產模型** 「資產」模型提供快速方法，可重複使用Assets中的現有內容，以便透過內容服務傳遞。
 
 基於「頁面」模型的ersourceType實體為： *mobileapps/caas/components/data/assets。*
 
-資產清單：資產的路徑清單。 每個資產都會新增為子實體節點，其resourceType為 *wcm/foundation/components/image*。
+資產清單： 資產的路徑清單。 每個資產都會新增為子實體節點，其resourceType為 *wcm/foundation/components/image*。
 
 >[!NOTE]
 >
->若要進一步瞭解如何使用這些範本從儀表板建立模型，請參閱「行動應 [用程式」的「製作」區段下的「建立模型](/help/mobile/administer-mobile-apps.md) 」。
+>若要進一步瞭解如何使用這些範本從儀表板建立模型，請參閱「行動應用 [程式」的製作章節下的「建立模型](/help/mobile/administer-mobile-apps.md) 」。
