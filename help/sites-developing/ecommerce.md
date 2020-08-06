@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
@@ -25,11 +28,11 @@ source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
 如需詳細資訊，請參閱：
 
 * [開發（一般）](/help/sites-developing/generic.md)
-* [使用SAP Commerce cloud進行開發](/help/sites-developing/sap-commerce-cloud.md)
+* [使用SAP Commerce Cloud進行開發](/help/sites-developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >
->由於電子商務架構可與任何電子商務解決方案搭配使用，請參閱 [Developing(generic)](/help/sites-developing/generic.md) ，以取得有關使用Intershop、Elastic path或IBM Websphere Commerce開發可能性的詳細資訊。
+>由於電子商務架構可與任何電子商務解決方案搭配使用，請參閱 [Developing(generic)](/help/sites-developing/generic.md) ，以取得有關使用Intershop、Elastic Path或IBM Websphere Commerce開發可能性的詳細資訊。
 
 >[!NOTE]
 >
