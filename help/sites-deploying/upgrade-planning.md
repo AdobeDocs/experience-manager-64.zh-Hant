@@ -11,6 +11,9 @@ topic-tags: upgrading
 discoiquuid: 901108a1-c0cb-4680-bc71-6266bcde2775
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2451'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ AEM通常用於高影響力的部署，可能為數百萬使用者提供服務�
 
 AEM升級程式需要謹慎處理規劃、分析和執行階段，並針對每個階段定義關鍵交付項目。
 
-請注意，您可以直接從AEM 6.0版和最高6.4版升級。5.6.x及以下版本的客戶需要先升級至6.0或更新版本，建議使用6.0(SP3)。 此外，新的OAK區段Tar格式現在自6.3起用於區段節點商店，而資料庫移轉至此新格式是強制的，即使6.0、6.1和6.2亦然。
+請注意，您可以直接從AEM 6.0版和最高6.4版升級。 5.6.x及以下版本的客戶需要先升級至6.0或更新版本，建議使用6.0(SP3)。 此外，新的OAK區段Tar格式現在自6.3起用於區段節點商店，而資料庫移轉至此新格式是強制的，即使6.0、6.1和6.2亦然。
 
 >[!CAUTION]
 >
@@ -105,7 +108,7 @@ AEM 6.4的新功能可在adobe.com的 [AEM區段中找到](/help/release-notes/r
 
 ![test-plan](assets/test-plan.png)
 
-必須複製實際的生產環境，並在升級後對其執行測試，以確保所有應用程式和自訂程式碼仍視需要執行。 您需要重新執行所有自訂作業，並執行效能、負載和安全性測試。 在組織測試計畫時，請務必涵蓋已對系統進行的所有自訂設定，以及日常操作中運用的現成UI和工作流程。 這些功能可包括自訂OSGI服務和servlet、與Adobe Marketing cloud的整合、透過AEM連接器與協力廠商的整合、自訂協力廠商整合、自訂元件和範本、AEM中的自訂UI覆蓋，以及自訂工作流程。 對於從AEM 6之前版本移轉的客戶，應分析任何自訂查詢，因為這些查詢可能需要建立索引。 對於已使用AEM 6.x版本的客戶，仍應測試這些查詢，以確保其索引在升級後仍能繼續有效運作。
+必須複製實際的生產環境，並在升級後對其執行測試，以確保所有應用程式和自訂程式碼仍視需要執行。 您需要重新執行所有自訂作業，並執行效能、負載和安全性測試。 在組織測試計畫時，請務必涵蓋已對系統進行的所有自訂設定，以及日常操作中運用的現成UI和工作流程。 這些功能可包括自訂OSGI服務和servlet、與Adobe Marketing Cloud的整合、透過AEM連接器與協力廠商的整合、自訂協力廠商整合、自訂元件和範本、AEM中的自訂UI覆蓋，以及自訂工作流程。 對於從AEM 6之前版本移轉的客戶，應分析任何自訂查詢，因為這些查詢可能需要建立索引。 對於已使用AEM 6.x版本的客戶，仍應測試這些查詢，以確保其索引在升級後仍能繼續有效運作。
 
 ### 確定需要的體系結構和基礎架構更改 {#determining-architectural-and-infrastructure-changes-needed}
 
@@ -135,7 +138,7 @@ AEM 6.4的新功能可在adobe.com的 [AEM區段中找到](/help/release-notes/r
 
 #### 內容重組考量事項 {#content-restructuring-considerations}
 
-AEM 6.4已對儲存庫結構進行變更，有助於更順暢地升級。 這些變更包括根據Adobe或客戶是否擁有內容，將內容從/etc檔案夾移出至資料夾，包括/libs、/apps和/content，以限制在發行期間覆寫內容的機率。 資料庫重組的方式是，在6.4升級時不需要變更程式碼，不過建議在規劃升級時，在 [Repository Restructing in AEM 6.4](/help/sites-deploying/repository-restructuring.md) （資料庫重組）中檢視詳細資訊。
+AEM 6.4已對儲存庫結構進行變更，有助於更順暢地升級。 這些變更包括根據Adobe或客戶是否擁有內容，將內容從/etc檔案夾移出至資料夾，包括/libs、/apps和/content，以限制在發行期間覆寫內容的機率。 資料庫重組的執行方式不應要求在6.4升級時進行程式碼變更，不過建議在規劃升級時，在 [Repository Restructing in AEM 6.4](/help/sites-deploying/repository-restructuring.md) （資料庫重組）中檢視詳細資訊。
 
 ### 評估升級複雜性 {#assessing-upgrade-complexity}
 
@@ -183,7 +186,7 @@ AEM 6.4已對儲存庫結構進行變更，有助於更順暢地升級。 這些
 
 ### 執行開發和QA {#performing-development-and-qa}
 
-我們已提供升級 [程式碼和自訂的程式](/help/sites-deploying/upgrading-code-and-customizations.md) ，以與AEM 6.4相容。當執行此反覆程式時，應視需要變更操作手冊。 另請參 [閱AEM 6.4中的「向後相容性」](/help/sites-deploying/backward-compatibility.md) ，瞭解如何讓自訂設定在大多數情況下都能維持向後相容，而不需在升級後立即進行開發。
+我們已提供升級 [程式碼和自訂的程式](/help/sites-deploying/upgrading-code-and-customizations.md) ，以與AEM 6.4相容。 當執行此反覆程式時，應視需要變更操作手冊。 另請參 [閱AEM 6.4中的「向後相容性」](/help/sites-deploying/backward-compatibility.md) ，瞭解如何讓自訂設定在大多數情況下都能維持向後相容，而不需在升級後立即進行開發。
 
 ![screen_shot_2018-04-04at154829](assets/screen_shot_2018-04-04at154829.png)
 
