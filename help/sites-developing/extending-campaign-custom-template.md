@@ -1,8 +1,8 @@
 ---
 title: 使用Adobe Campaign表單元件建立自訂AEM頁面範本
 seo-title: 使用Adobe Campaign表單元件建立自訂AEM頁面範本
-description: 建立使用Adobe Campaign form元件的自訂頁面範本
-seo-description: 建立使用Adobe Campaign form元件的自訂頁面範本
+description: 建立使用Adobe Campaign Form元件的自訂頁面範本
+seo-description: 建立使用Adobe Campaign Form元件的自訂頁面範本
 uuid: 8162ace2-b661-4c39-b0fb-288e1c035b9c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +36,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * `com.day.cq.mcm.campaign.servlets.TemplateListServlet`
    * `com.day.cq.mcm.campaign.servlets.SaveProfileServlet`
+
    ![chlimage_1-201](assets/chlimage_1-201.png)
 
 1. **ClientContext設定**
@@ -41,6 +45,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * ClientContext指向 `/etc/clientcontext/campaign`
    * 此外，還有額外的 *config節* 點。
+
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp(/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
