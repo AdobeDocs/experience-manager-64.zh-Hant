@@ -11,6 +11,9 @@ discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3995381542c86694bad6ff6d3f726b1e24bf7ddc
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ AEM案頭應用程式在Microsoft Windows上使用WebDAV通訊協定，在Mac OS
 1. 在作者例項中，按一 ![下Adobe Experience Manager](assets/adobeexperiencemanager.png) **[!UICONTROL 「Adobe Experience Manager > Tools]** hammer ![> Deployment > Operations](assets/hammer.png)****> Web Console」。 「Web控制台」在新視窗中開啟。
 1. 在Web控制台窗口中，找到並開啟 **[!UICONTROL FormsManager AddOn配置選項]** 。
 1. 在FormsManager的「AddOn配置」對話框中，取消選中「 **[!UICONTROL 非同步同步資源]** 」複選框，然後按一下 **[!UICONTROL 保存]**。
-1. 重新啟動AEM Forms伺服器。 重新啟動後，AEM Forms伺服器即可接受內容並與AEM案頭應用程式共用。
+1. 重新啟動AEM Forms伺服器。 重新啟動後，AEM Forms伺服器會啟用，以接受並與AEM案頭應用程式共用內容。
 1. 開啟應用程式並連線至AEM Forms伺服器。
 
    成功連線時，應用程式會填入 `content/dam` 和資 `content/dam/formsanddocuments` 料夾。 除了將檔案從上方的檔案夾移至本機檔案夾，反之亦然，您也可以使用應用程式在自動填入的檔案夾之間移動內容。
