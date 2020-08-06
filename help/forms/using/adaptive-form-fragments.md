@@ -1,8 +1,8 @@
 ---
 title: 最適化表單片段
 seo-title: 最適化表單片段
-description: 最適化表單提供建立表單區段的機制，例如面板或欄位群組，以用於任何最適化表單。 您也可以將現有面板儲存為片段。
-seo-description: 最適化表單提供建立表單區段的機制，例如面板或欄位群組，以用於任何最適化表單。 您也可以將現有面板儲存為片段。
+description: 最適化表單提供一種機制，可建立表單區段，例如面板或欄位群組，以用於任何最適化表單。 您也可以將現有面板儲存為片段。
+seo-description: 最適化表單提供一種機制，可建立表單區段，例如面板或欄位群組，以用於任何最適化表單。 您也可以將現有面板儲存為片段。
 uuid: 1629dd9e-b04e-4baa-ae87-c18d4550ac0f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
