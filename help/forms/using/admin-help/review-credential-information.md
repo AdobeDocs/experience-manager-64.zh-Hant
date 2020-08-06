@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 0%
 
 ---
 
@@ -25,9 +28,9 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 1. 使用預設使用者名稱和密碼登入：
 
-   用戶名：管理員
+   用戶名： 管理員
 
-   密碼：密碼
+   密碼： 密碼
 
    >[!NOTE]
    >
