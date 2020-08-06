@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 按一下「建立頁面 **」並輸入頁面標題，以建立區段的體驗，例如，當您為「男性」區段建立體驗時，「男性」，然後選取「** Experience **** 」範本。
 1. 開啟建立的「體驗」頁面。
 1. 按一 **下編輯**，然後在區段下方按一 **下新增項目**。
-1. 例如，輸入公線段的路徑，然後 `/etc/segmentation/ac-segments/male` 按一下 **確定**。 應出現以下消息：體 *驗的目標：男*
+1. 例如，輸入公線段的路徑，然後 `/etc/segmentation/ac-segments/male` 按一下 **確定**。 應出現以下消息： *體驗的目標： 男*
 1. 重複上述步驟，為所有區段（例如女性目標）建立體驗。
 
 ## 建立具有目標內容的電子報 {#creating-a-newsletter-with-targeted-content}
@@ -72,7 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 若要建立包含目標內容的電子報：
 
-1. 建立包含目標內容的電子報：在Geometrixx Outdoors的「電子郵件促銷活動」下方，按一下或點選「 **建立** > **頁面**」，然後選取其中一個Adobe Campaign mail範本。
+1. 建立包含目標內容的電子報： 在Geometrixx Outdoors的「電子郵件促銷活動」下方，按一下或點選「 **建立** > **頁面**」，然後選取其中一個Adobe Campaign Mail範本。
 
    >[!NOTE]
    >
@@ -88,7 +91,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    >
    >依預設，AEM隨附的電子郵件範例會使用Adobe Campaign做為定位引擎。 若是自訂電子報，您可能需要選擇Adobe Campaign作為定位引擎。 定位時，點選或按一下工具列中的+，輸入新活動的標題，並選取 **Adobe Campaign** 作為定位引擎。
 
-1. 按一 **下「預設** 」，然後按一下您新增的「文字與個人化」元件，您就會看到Bullseye中有一個箭頭。 按一下圖示以定位此元件。
+1. 按一 **下「預設** 」，然後按一下您新增的「文字與個人化」元件，您就會看到Bullseye中的箭頭。 按一下圖示以定位此元件。
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
