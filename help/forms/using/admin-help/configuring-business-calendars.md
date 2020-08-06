@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1934'
+ht-degree: 0%
 
 ---
 
@@ -37,17 +40,17 @@ AEM表格提供預設的商業日曆(稱為 *內建日曆*)，可將星期六和
 
 1. 決定如何將適當的業務日曆與用戶關聯。 將業務日曆與用戶關聯有兩種方法：
 
-   **** 群組成員資格：您可以根據使用者的群組成員資格，將商業日曆指派給使用者。 在這種情況下，群組中的每個使用者都會使用相同的商業日曆。
+   **群組成員資格：** 您可以根據使用者的群組成員資格，將商業日曆指派給使用者。 在這種情況下，群組中的每個使用者都會使用相同的商業日曆。
 
    如果使用者是兩個不同群組的成員，而這些群組已對應至兩個不同的商業日曆，AEM表單會使用其搜尋結果中找到的第一個日曆。 在這種情況下，請考慮使用業務日曆鍵將用戶與業務日曆關聯。
 
-   **** 業務日曆鍵：您可以根據業務日曆鍵（在「用戶管理」中指定的設定）將業務日曆分配給用戶。 然後，您就可以在表單工作流程中將業務日曆索引鍵映射至業務日曆。
+   **業務日曆鍵：** 您可以根據業務日曆鍵（在「用戶管理」中指定的設定）將業務日曆分配給用戶。 然後，您就可以在表單工作流程中將業務日曆索引鍵映射至業務日曆。
 
    您指派商業日曆索引鍵給使用者的方式取決於您是使用企業、本機或混合網域。 如需設定網域的詳細資訊，請參 [閱新增網域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。
 
-   如果您使用本機或混合網域，則使用者的相關資訊只會儲存在使用者管理資料庫中。 要為這些用戶設定業務日曆鍵，請在「用戶管理」中添加或編輯用戶時，在「業務日曆鍵」欄位中輸入字串。 (請參 [閱新增和設定使用者](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。)然後，您就可以在表單工作流程中將業務日曆鍵（字串）對應至業務日曆。 (請參 [閱將使用者和群組對應至業務日曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar))。
+   如果您使用本機或混合網域，則使用者的相關資訊只會儲存在使用者管理資料庫中。 要為這些用戶設定業務日曆鍵，請在「用戶管理」中添加或編輯用戶時，在「業務日曆鍵」欄位中輸入字串。 (請參 [閱新增和設定使用者](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。) 然後，您就可以在表單工作流程中將業務日曆鍵（字串）對應至業務日曆。 (請參 [閱將使用者和群組對應至業務日曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar))。
 
-   如果您使用企業域，則有關用戶的資訊駐留在第三方儲存系統中，如用戶管理與用戶管理資料庫同步的LDAP目錄。 這允許您將業務日曆鍵映射到LDAP目錄中的欄位。 例如，如果目錄中的每個用戶記錄都包含「國家」欄位，並且您想根據用戶所在的國家分配業務日曆，請在指定目錄的用戶設定時，在「業務日曆關鍵字」欄位中指定「國家」欄位名稱。 (請參 [閱配置目錄](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。)然後，您可以將業務日曆鍵（為LDAP目錄中的「國家」欄位定義的值）映射到表單工作流中的業務日曆。 (請參 [閱將使用者和群組對應至業務日曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar))。
+   如果您使用企業域，則有關用戶的資訊駐留在第三方儲存系統中，如用戶管理與用戶管理資料庫同步的LDAP目錄。 這允許您將業務日曆鍵映射到LDAP目錄中的欄位。 例如，如果目錄中的每個用戶記錄都包含「國家」欄位，並且您想根據用戶所在的國家分配業務日曆，請在指定目錄的用戶設定時，在「業務日曆關鍵字」欄位中指定「國家」欄位名稱。 (請參 [閱配置目錄](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。) 然後，您可以將業務日曆鍵（為LDAP目錄中的「國家」欄位定義的值）映射到表單工作流中的業務日曆。 (請參 [閱將使用者和群組對應至業務日曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar))。
 
 1. 在表單工作流程中，為共用相同非工作日的每組使用者定義日曆。 (請參 [閱建立或更新業務日曆](configuring-business-calendars.md#create-or-update-a-business-calendar)。)
 1. 在表單工作流程中，對應每個日曆的商業日曆索引鍵或群組成員資格。 (請參 [閱將使用者和群組對應至業務日曆](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar))。
