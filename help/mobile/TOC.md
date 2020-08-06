@@ -56,7 +56,7 @@ ht-degree: 3%
    + [模型概觀](model-management.md)
    + [空格和圖元](spaces-and-entities.md)
    + [管理系列](mobile-on-demand-managing-collections.md)
-+ 編寫Adobe PhoneGap Enterprise {#author-phonegap}
++ 製作Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [編輯應用程式中繼資料](phonegap-editmetadata.md)
    + [應用程式定義](phonegap-app-definitions.md)
