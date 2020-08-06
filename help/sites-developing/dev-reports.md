@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '5252'
+ht-degree: 0%
 
 ---
 
@@ -68,12 +71,13 @@ AEM提供一些標準報 [表](/help/sites-administering/reporting.md) ，其中
    >
    >
 * 縮排顯示節點之間的層次相關性。
->* 以|表示可能的項目清單；例如，類型或名稱：
+>* 以 |表示可能的項目清單； 例如，類型或名稱：
+
 >
 >  
 例如 `String|String[]` ，表示屬性可以是字串或字串[]。
 >
->* `[]` 描述了陣列；例如[] String或查詢定義中的節 [點陣列](#query-definition)。
+>* `[]` 描述了陣列； 例如[] String或查詢定義中的節 [點陣列](#query-definition)。
 >
 >
 除非另有說明，否則預設類型為：
@@ -86,9 +90,9 @@ AEM提供一些標準報 [表](/help/sites-administering/reporting.md) ，其中
 
 報告框架遵循下列原則：
 
-* 它完全以CQ5 queryBuilder執行的查詢所傳回的結果集為基礎。
+* 它完全以CQ5 QueryBuilder執行的查詢所傳回的結果集為基礎。
 * 結果集定義了報告中顯示的資料。 結果集中的每一行都對應於報表的表格視圖中的一行。
-* 可在結果集上執行的操作類似於RDBMS概念；主要 *是分組**和聚合*。
+* 可在結果集上執行的操作類似於RDBMS概念； 主要 *是分組**和聚合*。
 
 * 大部分的資料擷取和處理都是在伺服器端完成。
 * 用戶端負責顯示預先處理的資料。 客戶端僅執行次要處理任務（例如，在單元格內容中建立連結）。
@@ -119,8 +123,8 @@ AEM提供一些標準報 [表](/help/sites-administering/reporting.md) ，其中
 每一列都是元件的 [ 實 `columnbase` 例](#column-base-component) :
 
 * 是段落，由各報表的 `reportbase`參數()使用。
-* 定義到基礎結果集 [的連結](#the-query-and-data-retrieval);例如，定義此結果集中引用的特定資料，以及其處理方式。
-* 持有其他定義；例如可用的匯整和篩選，以及任何預設值。
+* 定義到基礎結果集 [的連結](#the-query-and-data-retrieval); 例如，定義此結果集中引用的特定資料，以及其處理方式。
+* 持有其他定義； 例如可用的匯整和篩選，以及任何預設值。
 
 ### 查詢與資料檢索 {#the-query-and-data-retrieval}
 
@@ -140,7 +144,7 @@ AEM提供一些標準報 [表](/help/sites-administering/reporting.md) ，其中
 
    * [一個或多個條件](#query-definition)。
 
-      這些是為了生成（初始）結果集；例如，節點類型或屬性約束的限制。
+      這些是為了生成（初始）結果集； 例如，節點類型或屬性約束的限制。
 
 **這裡的關鍵點是，查詢結果集中返回的每個單一節點都用來在報表上產生單一行（因此是1:1關係）。**
 
@@ -156,12 +160,12 @@ AEM提供一些標準報 [表](/help/sites-administering/reporting.md) ，其中
 
    例如，它可讓您計算兩個屬性值之間的差異，將兩個屬性值當成單一值處理。
 
-* 解析提取的值；這可以通過多種方式實現。
+* 解析提取的值； 這可以通過多種方式實現。
 
    例如，路徑可以映射至標題(如各自 *jcr:title屬性中較人工可讀的內容* )。
 
 * 在不同點套用濾鏡。
-* 視需要建立複合值。
+* 如有必要，請建立複合值。
 
    例如，由顯示給使用者的文字、用於排序的值和用於（在用戶端）建立連結的額外URL組成。
 
@@ -177,23 +181,23 @@ AEM提供一些標準報 [表](/help/sites-administering/reporting.md) ，其中
 
 1. 使用值擷取器，將初 [始查詢(reportbase)傳回的結果](#query-definition) ，轉換為基本結果集。
 
-   值提取器會根據欄類型自 [動選擇](#column-specific-definitions)。 它們用於從基礎JCR查詢中讀取值並從中建立結果集；之後，可以進一步處理。 例如，對於類型， `diff` 值提取器讀取兩個屬性，計算隨後添加到結果集中的單個值。 無法配置值提取器。
+   值提取器會根據欄類型自 [動選擇](#column-specific-definitions)。 它們用於從基礎JCR查詢中讀取值並從中建立結果集； 之後，可以進一步處理。 例如，對於類型， `diff` 值提取器讀取兩個屬性，計算隨後添加到結果集中的單個值。 無法配置值提取器。
 
 1. 對於包含原始資料的初始結果集， [會套用初始篩選](#column-specific-definitions) (*原始階段* )。
 
-1. 值會預先 [處理](#processing-queue);定義為應用 *階段* 。
+1. 值會預先 [處理](#processing-queue); 定義為應用 *階段* 。
 
 1. [篩選](#column-specific-definitions) (指派給預 *處理階段* )會對預處理值執行。
 
-1. 值已解析；根據定義的 [解析器](#processing-queue)。
+1. 值已解析； 根據定義的 [解析器](#processing-queue)。
 1. [篩選](#column-specific-definitions) (指派給解 *析階段* )會對解析值執行。
 
 1. 資料會分 [組和匯總](#column-specific-definitions)。
 1. 陣列資料可轉換為（以字串為基礎的）清單來解決。
 
-   這是一個隱含步驟，可將多值結果轉換為可顯示的清單；根據多值JCR屬性的儲存格值需要（未匯總）此值。
+   這是一個隱含步驟，可將多值結果轉換為可顯示的清單； 根據多值JCR屬性的儲存格值需要（未匯總）此值。
 
-1. 值會再次預先 [處理](#processing-queue);定義為afterApply *階段* 。
+1. 值會再次預先 [處理](#processing-queue); 定義為afterApply *階段* 。
 
 1. 資料會排序。
 1. 處理的資料被傳輸到客戶端。
@@ -367,7 +371,7 @@ N:charting
 
          * `maxRadius` ( `Double/Long`)
 
-            圓形圖允許的最大半徑；因此圖表允許的最大大小（無圖例）。 如果已定義， `fixedRadius` 則忽略。
+            圓形圖允許的最大半徑； 因此圖表允許的最大大小（無圖例）。 如果已定義， `fixedRadius` 則忽略。
 
          * `minRadius` ( `Double/Long`)
 
@@ -384,13 +388,13 @@ N:charting
          * `series` ( `Long`)
 
             要顯示的行／系列數。
-預設值： `9` （這也是允許的最大值）
+預設值： `9` （這也是允許的上限）
 
          * `hoverLimit` ( `Long`)
 
             聚合快照的最大數量（每行水準線上顯示的點，代表不同值），即當用戶將滑鼠移過圖表圖例中的不同值或相應標籤時，將顯示彈出窗口。
 
-            預設值： `35` （亦即，如果超過35個不同值適用於目前圖表設定，則完全不會顯示彈出式視窗）。
+            預設值： `35` （例如，如果超過35個不同值適用於目前的圖表設定，則完全不會顯示彈出式視窗）。
 
             另外有10個快顯視窗的限制，可以並行顯示（當將滑鼠移至圖例文字上時，可顯示多個快顯視窗）。
 
@@ -441,7 +445,7 @@ N:charting
 </jcr:root>
 ```
 
-提供了一些預配置的元件；可在對話方塊中參考這些值，使 `xtype` 用屬性值為 `cqinclude`:
+提供了一些預配置的元件； 可在對話方塊中參考這些值，使 `xtype` 用屬性值為 `cqinclude`:
 
 * **`title`**
 
@@ -492,7 +496,7 @@ N:charting
 
 * 列特 [定查詢配置](#column-specific-query) 。
 * 解析 [器和預處理](#resolvers-and-preprocessing)。
-* 欄特 [定定義](#column-specific-definitions) (例如篩選器和匯總；子 `definitions` 節點)。
+* 欄特 [定定義](#column-specific-definitions) (例如篩選器和匯總； `definitions` 子節點)。
 * [欄預設值](#column-default-values)。
 * 用 [戶端篩選](#client-filter) ，從伺服器傳回的資料中擷取要顯示的資訊。
 * 此外，列元件必須提供適合的實例 `cq:editConfig`。 定義必 [要事件和動作](#events-and-actions) 。
@@ -558,7 +562,7 @@ N:definitions
 
 * `secondaryProperty`
 
-   定義另一個屬性，該屬性也必須用於計算實際儲存格值；這將僅用於某些列類型（diff和sortable）。
+   定義另一個屬性，該屬性也必須用於計算實際儲存格值； 這將僅用於某些列類型（diff和sortable）。
 
    例如，在「工作流程例項報表」中，指定的屬性可用來儲存開始和結束時間之間時間差異的實際值（以毫秒為單位）。
 
@@ -584,8 +588,8 @@ N:definitions
 
 `clientFilter` 定義為JavaScript函式，可：
 
-* 作為輸入，接收一個參數；從伺服器傳回的資料（如此完全預先處理）
-* 輸出時，傳回篩選（處理）的值；從輸入資訊中提取或導出的資料
+* 作為輸入，接收一個參數； 從伺服器傳回的資料（如此完全預先處理）
+* 輸出時，傳回篩選（處理）的值； 從輸入資訊中提取或導出的資料
 
 下列範例會從元件路徑擷取對應的頁面路徑：
 
@@ -619,7 +623,7 @@ N:definitions
 
    * `const`
 
-      將值映射至其他值；例如，此函式用於解析常數，例如 `en` 其等效值 `English`。
+      將值映射至其他值； 例如，此函式用於解析常數，例如 `en` 其等效值 `English`。
 
    * `default`
 
@@ -627,7 +631,7 @@ N:definitions
 
    * `page`
 
-      解析路徑值至適當頁面的路徑；更精確地到對應的節 `jcr:content` 點。 例如， `/content/.../page/jcr:content/par/xyz` 已解析為 `/content/.../page/jcr:content`。
+      解析路徑值至適當頁面的路徑； 更精確地到對應的節 `jcr:content` 點。 For example, `/content/.../page/jcr:content/par/xyz` is resolved to `/content/.../page/jcr:content`.
 
    * `path`
 
@@ -635,15 +639,15 @@ N:definitions
 
    * `pathextension`
 
-      通過預先定義路徑並從已解析路徑上的節點屬性中獲取實際值來解析值。 例如，值可 `de` 能會以路徑為前置詞， `/libs/wcm/core/resources/languages`例如從屬性取值 `language`，將國家代碼解析為語 `de` 言說明 `German`。
+      通過預先定義路徑並從已解析路徑上的節點屬性中獲取實際值來解析值。 例如，值可 `de` 能會以路徑為前置， `/libs/wcm/core/resources/languages`例如從屬性取值 `language`，將國家代碼解析為語 `de` 言說明 `German`。
 
 * `resolverConfig`
 
-   提供解析程式的定義；可用的選項取決於選 `resolver` 定：
+   提供解析程式的定義； 可用的選項取決於選 `resolver` 定：
 
    * `const`
 
-      使用屬性指定要解析的常數。 屬性的名稱定義要解析的常數；屬性的值定義已解析的值。
+      使用屬性指定要解析的常數。 屬性的名稱定義要解析的常數； 屬性的值定義已解析的值。
 
       例如，具有 **Name**=和 `1` Value的屬 **性將**`=One` 解析為1到1。
 
@@ -655,7 +659,7 @@ N:definitions
 
       * `propertyName` (可選)
 
-         定義應用於解析值的屬性名稱。 若未指定，則會使用 *jcr:title* （頁面標題）的預設值；對於解 `page` 析程式，這表示先將路徑解析為頁面路徑，再進一步解析為頁面標題。
+         定義應用於解析值的屬性名稱。 若未指定，則會使用 *jcr:title* （頁面標題）的預設值； 對於解 `page` 析程式，這表示先將路徑解析為頁面路徑，再進一步解析為頁面標題。
    * `path`
 
       * `propertyName` (可選)
@@ -675,7 +679,7 @@ N:definitions
 
          定義實際值所在的已解析路徑上的屬性。
 
-      * `i18n` （可選）類型布爾值)
+      * `i18n` （可選） 類型布爾值)
 
          判斷已解析的值是否應 *國際化* (即使用 [CQ5的國際化服務](/help/sites-administering/tc-manage.md))。
 
@@ -767,11 +771,11 @@ N:data
 
 您可以指定下列任一項，以在預處理期間使用：
 
-* [查找和替換模](#preprocessing-find-and-replace-patterns)式找到時，指定的模式（定義為規則運算式）被另一個模式替換；例如，這可用來擷取原稿的子字串。
+* [查找和替換模](#preprocessing-find-and-replace-patterns)式找到時，指定的模式（定義為規則運算式）被另一個模式替換； 例如，這可用來擷取原稿的子字串。
 
 * [資料類型格式化程式](#preprocessing-data-type-formatters)
 
-   將數值轉換為相對字串；例如，表示1小時時差的值&#39;&#39;將被解析為字串，例如 `1:24PM (1 hour ago)`。
+   將數值轉換為相對字串； 例如，表示1小時時差的值&#39;&#39;將被解析為字串，例如 `1:24PM (1 hour ago)`。
 
 例如：
 
@@ -836,7 +840,7 @@ N:definitions
 
       持續時間是兩個定義日期之間的時間範圍。 例如，工作流程動作的開始和結束需要1小時，從2/13/11 11:23開始，一小時後於2/13/11 12:23結束。
 
-      它將數值（解譯為毫秒）轉換為持續時間字串；例如， `30000` 格式為* `30s`.*
+      它將數值（解譯為毫秒）轉換為持續時間字串； 例如， `30000` 格式為* `30s`.*
 
    * `datedelta`
 
@@ -897,7 +901,7 @@ N:definitions
    * `sortable`
 
       用於使用不同值（取自不同屬性）的值進行排序和顯示。
-   此外， 以上任一項皆可定義為多值；例如，定 `string[]` 義字串陣列。
+   此外， 以上任一項皆可定義為多值； 例如，定 `string[]` 義字串陣列。
 
    值提取器由列類型選擇。 如果某個值提取器可用於列類型，則使用此提取器。 否則，將使用預設值提取器。
 
@@ -957,7 +961,7 @@ N:definitions
 
    * `text`
 
-      集合的文本名稱。 如果 `text` 未指定，則將採用聚合的預設描述；例如， `minimum` 將用於聚合 `min` 。
+      集合的文本名稱。 如果 `text` 未指定，則將採用聚合的預設描述； 例如， `minimum` 將用於聚合 `min` 。
 
    * `type`
 
@@ -1034,7 +1038,7 @@ N:cq:editConfig [cq:EditConfig]
 
 它們使用（標準）對話框，供您定制，用於單個通用元件。 此對話框允許報告用戶定義報告頁上一般列的列屬性(使用菜單選項「列 **屬性……**」)。
 
-例如，「使 **用者** 」報表的「 **一般」欄**;請參閱 `/libs/cq/reporting/components/userreport/genericcol`。
+例如，「使 **用者** 」報表的「 **一般」欄**; 請參閱 `/libs/cq/reporting/components/userreport/genericcol`。
 
 要使列為通用列，請執行以下操作：
 
@@ -1069,6 +1073,7 @@ N:cq:editConfig [cq:EditConfig]
    * `definitions/data/resolver` 和 `definitions/data/resolverConfig` (但不 `definitions/data/preprocessing` 是 `.../clientFilter`)-解析器和配置
    * `definitions/queryBuilder` -查詢產生器設定
    * `defaults/aggregate` -預設聚合
+
    在「用戶報告」( **User Report)上的通用列的新實例中** ，使用對話框定義的屬性將保存在以下位置：
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
@@ -1207,7 +1212,7 @@ N:apps
 1. 報表範本的根目錄。
 1. 報表範本。
 
-為了說明這些步驟，以下示例定義了一個報告，其中列出了儲存庫中的所有OSGi配置；即節點的所有實 `sling:OsgiConfig` 例。
+為了說明這些步驟，以下示例定義了一個報告，其中列出了儲存庫中的所有OSGi配置； 即節點的所有實 `sling:OsgiConfig` 例。
 
 >[!NOTE]
 >
@@ -1306,12 +1311,13 @@ N:apps
 
    這定義了列基元件：
 
-   * 搜索並返回從伺服器接收的值；在本例中，每個節 `jcr:path` 點的屬 `sling:OsgiConfig` 性
+   * 搜索並返回從伺服器接收的值； 在本例中，每個節 `jcr:path` 點的屬 `sling:OsgiConfig` 性
    * 提供聚合 `count` 體
    * 無法組合
    * 具有標 `Bundle` 題（表格中的欄標題）
    * 在sidekick群組中 `OSGi Report`
    * 刷新指定事件
+
    >[!NOTE]
    >
    >在此示例中，沒有和的定 `N:data` 義 `P:clientFilter`。 這是因為從伺服器收到的值會以1:1為基礎傳回——這是預設行為。
@@ -1381,7 +1387,7 @@ N:apps
 1. 開啟「工 **具** 」主控台。
 
 1. 在左 **側窗格** 中選擇報表。
-1. **然**&#x200B;後新……從工具列中。 定義 **標題** 和名 **稱**，從範本清單中選取新的報表類型( **OSGi報表範本**)，然後按一下「 ****&#x200B;建立Orgat」。
+1. 然 **後新……** 從工具列中。 定義 **標題** 和名 **稱**，從範本清單中選取新的報表類型( **OSGi報表範本**)，然後按一下「 ****&#x200B;建立Orgat」。
 1. 您的新報表例項會出現在清單中。 按兩下此按鈕以開啟。
 1. 將元件(例如， **OSGi Report** group中的 **Bundle** )從側腳拖曳，以建立第一欄並啟 [動報表定義](/help/sites-administering/reporting.md#the-basics-of-report-customization)。
 
@@ -1401,7 +1407,7 @@ N:apps
 
 本節說明實作報告架構之OSGi服務的進階設定選項。
 
-您可使用Web主控台的「設定」功能表(例如，在 `http://localhost:4502/system/console/configMgr`)檢視。 使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+您可使用Web主控台的「設定」功能表(例如，在 `http://localhost:4502/system/console/configMgr`)來檢視。 使用AEM時，有幾種方法可管理此類服務的組態設定； 如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
 ### 基本服務（日CQ報告配置） {#basic-service-day-cq-reporting-configuration}
 
@@ -1412,12 +1418,12 @@ N:apps
 * **報表路徑** ，定義報表所在的路徑。 快照服務使用此功能來確定要實際為其拍攝快照的報告。
 * **Daily snapshots** defines the hour of eady snapshots when day snapshots are taken. 指定的小時位於伺服器的本地時區。
 * **Hourly snapshots** defines the minute of each when hourly snapshots are taken.
-* **行（最大）** 定義每個快照所儲存的最大行數。 應合理選擇此值；如果過高，則會影響儲存庫的大小（如果過低），因為處理歷史資料的方式可能不準確。
-* **假資料**，如果啟用，則可以通過選擇器建立假歷史數 `fakedata` 據；如果禁用，則使用選擇 `fakedata` 器將拋出異常。
+* **行（最大）** 定義每個快照所儲存的最大行數。 應合理選擇此值； 如果過高，則會影響儲存庫的大小（如果過低），因為處理歷史資料的方式可能不準確。
+* **假資料**，如果啟用，則可以通過選擇器建立假歷史數 `fakedata` 據； 如果禁用，則使用選擇 `fakedata` 器將拋出異常。
 
    由於資料是假的 ** ，只能用於測試和除錯。
 
-   使用選 `fakedata` 取器會隱式完成報表，因此所有現有資料都會遺失；資料可以手動還原，但是這個程式很耗時。
+   使用選 `fakedata` 取器會隱式完成報表，因此所有現有資料都會遺失； 資料可以手動還原，但是這個程式很耗時。
 
 * **快照用戶** (Snapshot user)定義可用於建立快照的可選用戶。
 
@@ -1439,6 +1445,7 @@ N:apps
 >
 >* 兩個使用不同語言設定的使用者的一份報告
 >* 一位使用者和兩個報表
+
 >
 
 
