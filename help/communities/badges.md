@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 4%
 
 ---
 
@@ -33,7 +36,7 @@ Communities Badges控制台可以添加自定義徽章，這些徽章可在獲�
 
 在作者環境中，若要進入Badges主控台
 
-* 從全域導覽：工 **[!UICONTROL 具>社群>標章]**
+* 從全域導覽： **[!UICONTROL 工具>社群>標章]**
 
 此控制台顯示當前可用的標章，並可從中添加新標章。
 
