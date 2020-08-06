@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: 133d93b0-512c-46db-b5f9-f981d77b565f
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '316'
+ht-degree: 0%
 
 ---
 
@@ -35,10 +38,10 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 1. 登入應用程式，並導覽至「設定> **[!UICONTROL 一般」]**。
 1. 在「一般」畫面中，使用「 **[!UICONTROL 自動儲存頻率]** 」選項，選取您希望應用程式儲存輸入資料的間隔。
-   [ 設 ![定自動儲存頻率](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
+   [ ![設定自動保存頻率](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
 1. 當您重新啟動應用程式並使用相同的使用者登入時，系統會提示您使用「復原未儲存的工作」對話方塊還原您的工作。 在「恢 **[!UICONTROL 復未保存的任務]** 」對話框中按一下「確定」以繼續使用保存的任務。 您可以按一 **[!UICONTROL 下「取消]** 」，刪除與上次觸發的自動儲存相對應的已儲存資料，並開始使用新工作。
 
    當您按一下「 **[!UICONTROL 確定]**」時，系統會還原工作，其資料會與應用程式當機前觸發的最新自動儲存相對應。 它包括表單資料和與任務關聯的所有附件。
-   [![](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)******&#x200B;恢復任&#x200B;**務A進行中的表格** B.應用程式已強制關 **閉C.** App，並在「恢復未保存的任務」對話框 **D中重新啟動。以原始資料還原的表單
+   [ ![恢復任](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**務A **進行中的表格** B.**應用程式已強制關**&#x200B;閉C.**App，並在「恢復未保存的任務」對話框** D中重新啟動。**以原始資料還原的表單
 
