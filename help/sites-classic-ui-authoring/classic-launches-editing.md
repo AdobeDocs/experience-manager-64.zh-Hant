@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 3%
 
 ---
 
@@ -45,8 +48,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 在「一 **般** 」索引標籤中，您可以編輯：
 
       * **標題**
-      * **即時日期**:這等於啟動日期
+      * **即時日期**: 這等於啟動日期
       * **生產就緒**
+
       如需 [這些欄位的用途和互動的詳細資訊](/help/sites-authoring/launches.md#launches-the-order-of-events) ，請參閱啟動——事件順序。
 
    * 在「影 **像** 」索引標籤中，您可以上傳影像檔案。
@@ -61,7 +65,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * 啟動的名稱。
 * 上次變更後的時間。
 * 執行上次變更的使用者。
-* Production Ready(生產就 **緒** )旗標的狀態(orange=not set;green=set)。
+* Production Ready(生產就 **緒** )旗標的狀態(orange=not set; green=set)。
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-185](assets/chlimage_1-186.png)
 
