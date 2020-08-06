@@ -1,8 +1,8 @@
 ---
 title: 使用API列出網頁上的表格
 seo-title: 使用API列出網頁上的表格
-description: 以程式設計方式查詢Forms Manager，以擷取已篩選的表單清單並顯示在您自己的網頁上。
-seo-description: 以程式設計方式查詢Forms Manager，以擷取已篩選的表單清單並顯示在您自己的網頁上。
+description: 以程式設計方式查詢Forms Manager以擷取已篩選的表單清單並顯示在您自己的網頁上。
+seo-description: 以程式設計方式查詢Forms Manager以擷取已篩選的表單清單並顯示在您自己的網頁上。
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ AEM Forms提供以REST為基礎的搜尋API，讓網頁開發人員可用來查�
    <td>函式<br /> </td>
    <td><p>指定要調用的函式。 要搜索表單，請將屬性的 <code>func </code>值設定為 <code>searchForms</code>。</p> <p>例如， <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong></strong> 注意：此參 <em>數為必填參數。</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>注意：</strong> <em>此參數為強制參數。</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -50,9 +53,9 @@ AEM Forms提供以REST為基礎的搜尋API，讓網頁開發人員可用來查�
    <td>關係<br /> </td>
    <td>指定要讀取的相關資產以及搜尋結果。 您可以選擇下列其中一個選項來擷取相關資產：
     <ul>
-     <li><strong>NO_RELATION</strong>:請勿擷取相關資產。</li>
-     <li><strong>立即</strong>:擷取與搜尋結果直接相關的資產。</li>
-     <li><strong>全部</strong>:直接及間接相關資產。</li>
+     <li><strong>NO_RELATION</strong>: 請勿擷取相關資產。</li>
+     <li><strong>立即</strong>: 擷取與搜尋結果直接相關的資產。</li>
+     <li><strong>全部</strong>: 直接及間接相關資產。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -75,9 +78,9 @@ AEM Forms提供以REST為基礎的搜尋API，讓網頁開發人員可用來查�
        statement.put("value", "SimpleSurveyAF");
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>在上述範例中， </p>
     <ul>
-     <li><strong>名稱</strong>:指定要搜索的屬性的名稱。</li>
-     <li><strong>值</strong>:指定要搜索的屬性的值。</li>
-     <li><strong>運算元</strong>:指定在搜索時應用的運算子。 支援下列運算子：
+     <li><strong>名稱</strong>: 指定要搜索的屬性的名稱。</li>
+     <li><strong>值</strong>: 指定要搜索的屬性的值。</li>
+     <li><strong>運算元</strong>: 指定在搜索時應用的運算子。 支援下列運算子：
       <ul>
        <li>EQ —— 等於 </li>
        <li>NEQ —— 不等於</li>
@@ -85,13 +88,13 @@ AEM Forms提供以REST為基礎的搜尋API，讓網頁開發人員可用來查�
        <li>LT —— 小於</li>
        <li>GTEQ —— 大於或等於</li>
        <li>LTEQ —— 小於或等於</li>
-       <li>CONTAINS - a包含B（如果B是A的一部分）</li>
+       <li>CONTAINS - A包含B（如果B是A的一部分）</li>
        <li>FULLTEXT —— 全文搜尋</li>
        <li>STARTSWITH —— 如果B是A的開頭部分，則A以B開頭</li>
        <li>ENDSWITH —— 如果B是A的結尾部分，則A以B結尾</li>
        <li>LIKE —— 實作LIKE運算子</li>
        <li>AND —— 合併多個陳述式</li>
-      </ul> <p><strong></strong> 注意： <em>GT、LT、GTEQ和LTEQ算子適用於線性類型的屬性，如LONG、DOUBLE和DATE。</em></p> </li>
+      </ul> <p><strong>注意：</strong> <em>GT、LT、GTEQ和LTEQ算子適用於線性類型的屬性，如LONG、DOUBLE和DATE。</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
@@ -103,8 +106,8 @@ AEM Forms提供以REST為基礎的搜尋API，讓網頁開發人員可用來查�
        orderingsArray.put(orderings);
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
-     <li><strong>名稱</strong>:指定用於排序搜索結果的屬性的名稱。</li>
-     <li><strong>准則</strong>:指定結果的順序。 order屬性接受以下值：
+     <li><strong>名稱</strong>: 指定用於排序搜索結果的屬性的名稱。</li>
+     <li><strong>准則</strong>: 指定結果的順序。 order屬性接受以下值：
       <ul>
        <li>ASC —— 使用ASC以升序排列結果。<br /> </li>
        <li>DES —— 使用DES以降序排列結果。</li>
