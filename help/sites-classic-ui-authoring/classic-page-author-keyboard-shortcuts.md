@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
@@ -27,8 +30,9 @@ AEM中提供各種鍵盤快速鍵。 有的在編輯頁面時套用，有的則�
 >
 >桌上型裝置上的多選：
 >
->* Windows:按住Ctrl鍵並按一下所需元件。
->* Mac:Cmd+按一下必要的元件。
+>* Windows: 按住Ctrl鍵並按一下所需元件。
+>* Mac: Cmd+按一下必要的元件。
+
 >
 
 
@@ -70,7 +74,7 @@ AEM中提供各種鍵盤快速鍵。 有的在編輯頁面時套用，有的則�
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-X</code></strong></td> 
-   <td>剪下選取的段落。<strong><br /></strong> 注意：剪下的段落在貼上到新位置之前不會消失。</td> 
+   <td>剪下選取的段落。<strong><br /> 注意：</strong> 剪下的段落在貼上到新位置之前不會消失。</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -95,7 +99,7 @@ AEM中提供各種鍵盤快速鍵。 有的在編輯頁面時套用，有的則�
   <tr> 
    <td> </td> 
    <td><strong><code>Alt-right-click</code></strong></td> 
-   <td>強制預設（瀏覽器）內容選單。<br /><strong> 注 </strong>意：AEM內容功能表只會出現在傳統UI中。</td> 
+   <td>強制預設（瀏覽器）內容選單。<br /> <strong>注意：</strong> AEM內容功能表只會出現在傳統UI中。</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -145,7 +149,7 @@ AEM中提供各種鍵盤快速鍵。 有的在編輯頁面時套用，有的則�
   <tr> 
    <td>內容搜尋器<br /> </td> 
    <td><strong><code>Alt+drag</code></strong></td> 
-   <td><p>拖曳資產，拖曳至目的地。</p> <p>放棄動作會產生新段落；而不是取代目標中的資產。</p> </td> 
+   <td><p>拖曳資產，拖曳至目的地。</p> <p>放棄動作會產生新段落； 而不是取代目標中的資產。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -165,7 +169,7 @@ AEM中提供各種鍵盤快速鍵。 有的在編輯頁面時套用，有的則�
   </tr> 
   <tr> 
    <td>編輯模式</td> 
-   <td><br /> 在URL中設定下列字尾：然 <code>?debugClientLibs=true</code><br /> 後使用：<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>在URL中設定下列字尾：<br /> <code>?debugClientLibs=true</code><br /> 然後使用：<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>若要查看頁面載入的時間統計資料。</td> 
   </tr> 
  </tbody> 
