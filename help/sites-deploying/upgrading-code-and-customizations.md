@@ -12,6 +12,9 @@ discoiquuid: ba8efc24-a34c-477b-8c6d-6e8f893eb999
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: 1f78ef33b33558187b0164864dc373e53d7f86ce
+workflow-type: tm+mt
+source-wordcount: '2226'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ source-git-commit: 1f78ef33b33558187b0164864dc373e53d7f86ce
 1. **更新AEM自訂** - AEM的任何自訂或擴充功能都應更新／驗證，以便在6.4中運作，並新增至6.4程式碼庫。 包含UI搜尋表單、資產自訂、任何使用/mnt/overlay的項目
 
 1. **部署至6.4環境** -應在Dev/QA環境中啟動AEM 6.4（作者+發佈）的簡潔例項。 應部署更新的程式碼庫和代表性的內容範例（來自目前的生產環境）。
-1. **QA驗證和錯誤修正** - QA應在6.4的「作者」和「發佈」例項上驗證應用程式。發現的任何錯誤都應修正並提交至6.4程式碼庫。 視需要重複「開發週期」，直到修正所有錯誤。
+1. **QA驗證和錯誤修正** - QA應在6.4的「作者」和「發佈」例項上驗證應用程式。 發現的任何錯誤都應修正並提交至6.4程式碼庫。 視需要重複「開發週期」，直到修正所有錯誤。
 
 在繼續升級之前，您應有穩定的應用程式碼庫，已針對AEM的目標版本進行完整測試。 根據測試中的觀察，可以有方法最佳化自訂程式碼。 這可能包括重構代碼以避免遍歷儲存庫、自定義索引以優化搜索，或在JCR中使用無序節點等。
 
@@ -51,7 +54,7 @@ source-git-commit: 1f78ef33b33558187b0164864dc373e53d7f86ce
 
 ### 更新AEM Uber Jar版本 {#update-the-aem-uber-jar-version}
 
-AEM uber Jar會將所有AEM API作為單一相依關係納入您的Maven專案 `pom.xml`。 將Uber jar納入為單一相依性，而不是納入個別AEM API相依性，永遠是最佳做法。 升級程式碼庫時，Uber jar的版本應變更為指向AEM的目標版本。 如果您的專案是在Uber jar存在之前以AEM版本開發的，所有個別AEM API相依性都應移除，並以AEM目標版本的Uber jar單一包含取代。 然後，應根據新版Uber Jar重新編譯代碼庫。 任何已過時的API或方法都應更新為與AEM的目標版本相容。
+AEM Uber Jar會將所有AEM API作為單一相依關係納入您的Maven專案 `pom.xml`。 將Uber Jar納入為單一相依性，而不是納入個別AEM API相依性，永遠是最佳做法。 升級程式碼庫時，Uber Jar的版本應變更為指向AEM的目標版本。 如果您的專案是在Uber Jar存在之前以AEM版本開發的，所有個別AEM API相依性都應移除，並以AEM目標版本的Uber Jar單一包含取代。 然後，應根據新版Uber Jar重新編譯代碼庫。 任何已過時的API或方法都應更新為與AEM的目標版本相容。
 
 ```
 <dependency>
@@ -65,7 +68,7 @@ AEM uber Jar會將所有AEM API作為單一相依關係納入您的Maven專案 `
 
 ### 淘汰管理資源解析器 {#phase-out-use-of-administrative-resource-resolver}
 
-在AEM 6.0之前的程式碼 `SlingRepository.loginAdministrative()` 庫中， `ResourceResolverFactory.getAdministrativeResourceResolver()` 管理工作階段的使用十分普遍。由於這些方法的存取範圍太廣，因此已因安全原因而遭到淘汰。 [在Sling的未來版本中，這些方法將會移除](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication)。 強烈建議您重新調整任何程式碼，以改用「服務使用者」。 有關服務用戶以及如何 [逐步退出管理會話的詳細資訊，請參閱此處](/help/sites-administering/security-service-users.md#how-to-phase-out-admin-sessions)。
+在AEM 6.0之前的程式碼 `SlingRepository.loginAdministrative()` 庫中， `ResourceResolverFactory.getAdministrativeResourceResolver()` 管理工作階段的使用十分普遍。 由於這些方法的存取範圍太廣，因此已因安全原因而遭到淘汰。 [在Sling的未來版本中，這些方法將會移除](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html#deprecation-of-administrative-authentication)。 強烈建議您重新調整任何程式碼，以改用「服務使用者」。 有關服務用戶以及如何 [逐步退出管理會話的詳細資訊，請參閱此處](/help/sites-administering/security-service-users.md#how-to-phase-out-admin-sessions)。
 
 ### 查詢和Oak索引 {#queries-and-oak-indexes}
 
@@ -93,13 +96,13 @@ AEM 6.4仍提供傳統UI編寫功能，但已不再提倡。 如需詳細資訊�
 
 因此，必須移動一些設定，使其不再 `/etc` 像過去那樣駐留。 若要檢視完整的儲存庫重組顧慮，而這些顧慮必須在更新至AEM 6.4時加以檢視和修正，請參閱「AEM 6.4中的 [儲存庫重組」](/help/sites-deploying/repository-restructuring.md)。
 
-## AEM自訂 {#aem-customizations}
+## AEM自訂  {#aem-customizations}
 
 AEM來源版本中AEM製作環境的所有自訂項目都必須加以識別。 在識別後，建議您將每個自訂項目儲存在版本控制中，或至少儲存在內容套件的備份中。 所有自訂都應在生產升級之前，在執行AEM目標版本的QA或測試環境中部署和驗證。
 
 ### 一般覆蓋 {#overlays-in-general}
 
-通常的做法是將AEM從現成可用的功能擴充至/libs下的節點和／或檔案與/apps下的其他節點重疊。 這些覆蓋應在版本控制中加以追蹤，並針對AEM的目標版本進行測試。 如果檔案（不論是JS、JSP、HTL）已覆蓋，建議您留下注釋，說明已擴充哪些功能，以便更輕鬆地對AEM的目標版本進行回歸測試。 有關覆蓋的詳細資訊，請參閱 [這裡](/help/sites-developing/overlays.md)。 下方提供特定AEM覆蓋的指示。
+通常的做法是將AEM從現成可用的功能擴充至/libs下的節點和／或檔案與/apps下的其他節點重疊。 這些覆蓋應在版本控制中追蹤，並針對AEM的目標版本進行測試。 如果檔案（不論是JS、JSP、HTL）已覆蓋，建議您留下注釋，說明已擴充哪些功能，以便更輕鬆地對AEM的目標版本進行回歸測試。 有關覆蓋的詳細資訊，請參閱 [這裡](/help/sites-developing/overlays.md)。 下方提供特定AEM覆蓋的指示。
 
 ### 升級自訂搜尋表單 {#upgrading-custom-search-forms}
 
@@ -133,7 +136,7 @@ AEM來源版本中AEM製作環境的所有自訂項目都必須加以識別。 �
 
 ### 為現有資產產生資產ID {#generating-asset-ids-for-existing-assets}
 
-若要為現有資產產生資產ID，請在您升級AEM實例以執行AEM 6.4時升級資產。這是啟用「資產分析」功 [能的必要條件](/help/assets/touch-ui-asset-insights.md)。 如需詳細資訊，請參 [閱新增內嵌代碼](/help/assets/touch-ui-using-page-tracker.md#adding-embed-code)。
+若要為現有資產產生資產ID，請在您升級AEM實例以執行AEM 6.4時升級資產。 這是啟用「資產分析」功 [能的必要條件](/help/assets/touch-ui-asset-insights.md)。 如需詳細資訊，請參 [閱新增內嵌代碼](/help/assets/touch-ui-using-page-tracker.md#adding-embed-code)。
 
 若要升級資產，請在JMX主控台中設定Associate Asset IDs套件。 根據儲存庫中的資產數量，可能 `migrateAllAssets` 需要很長時間。 我們的內部測試估計，TarMK上的12.5萬個資產大約需要一小時。
 
@@ -143,9 +146,9 @@ AEM來源版本中AEM製作環境的所有自訂項目都必須加以識別。 �
 
 為了其他目的，請使用 `migrateAllAssets()` API。
 
-### InDesign script自訂 {#indesign-script-customizations}
+### InDesign Script自訂 {#indesign-script-customizations}
 
-Adobe建議將自訂指令碼放在 `/apps/settings/dam/indesign/scripts` 位置。 有關InDesign script自訂項目的更多資訊，請參 [閱這裡](/help/assets/indesign.md#configuring-the-aem-assets-workflow)。
+Adobe建議將自訂指令碼放在 `/apps/settings/dam/indesign/scripts` 位置。 有關InDesign Script自訂項目的更多資訊，請參 [閱這裡](/help/assets/indesign.md#configuring-the-aem-assets-workflow)。
 
 ### 恢復ContextHub配置 {#recovering-contexthub-configurations}
 
@@ -161,7 +164,7 @@ ContextHub組態是由升級所決定。 有關如何恢復現有ContextHub配�
 >
 >只有使用AEM 6.2的可編輯範本進行網站升級時，才需要此程式
 
-在AEM 6.2和6.3之間變更的可編輯範本結構。如果您是從6.2或更舊版本升級，而您的網站內容是使用可編輯的範本建立的，則需要使用「自適應節 [點清理工具」](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration)。 此工具的用途是 **_在升級_** 後執行，以清除內容。 它必須同時在「作者」和「發佈」層上執行。
+在AEM 6.2和6.3之間變更的可編輯範本結構。 如果您是從6.2或更舊版本升級，而您的網站內容是使用可編輯的範本建立的，則需要使用「自適應節 [點清理工具」](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration)。 此工具的用途是 **_在升級_** 後執行，以清除內容。 它必須同時在「作者」和「發佈」層上執行。
 
 ### CUG實施變更 {#cug-implementation-changes}
 
@@ -175,7 +178,7 @@ ContextHub組態是由升級所決定。 有關如何恢復現有ContextHub配�
 
 此處概述的升級程式應如您的自訂執行手冊中所述，在開發與QA環境中進行測試(請參 [閱規劃升級](/help/sites-deploying/upgrade-planning.md))。 應重複升級過程，直到升級運行手冊中記錄了所有步驟，並且升級過程很順暢。
 
-### 實作測試區 {#implementation-test-areas-}
+### 實作測試區  {#implementation-test-areas-}
 
 以下是任何AEM實作的重要部分，在環境升級並部署升級的程式碼庫後，測試計畫應涵蓋這些部分。
 
@@ -194,7 +197,7 @@ ContextHub組態是由升級所決定。 有關如何恢復現有ContextHub配�
    <td>在「作者」層測試AEM實作和相關的程式碼。 應包含頁面、元件編寫和對話方塊。</td> 
   </tr> 
   <tr> 
-   <td>與Marketing cloud解決方案整合</td> 
+   <td>與Marketing Cloud解決方案整合</td> 
    <td>驗證與Analytics、DTM和Target等產品的整合。</td> 
   </tr> 
   <tr> 
