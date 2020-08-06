@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bc8c9aa2-f669-41f3-a526-6146ff5cf0cd
 translation-type: tm+mt
 source-git-commit: 7e74796c60ffa785b712d21b34a909f373587cd9
+workflow-type: tm+mt
+source-wordcount: '1887'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +78,7 @@ source-git-commit: 7e74796c60ffa785b712d21b34a909f373587cd9
 
 ### 驗證Oak版本 {#verify-oak-version}
 
-升級後，您應會看到Oak版本已更 **新為1.8.2**。 若要確認Oak版本，請導覽至OSGi主控台，並查看與Oak bundles相關的版本：Oak Core、Oak Commons、Oak Segment Tar。
+升級後，您應會看到Oak版本已更 **新為1.8.2**。 若要確認Oak版本，請導覽至OSGi主控台，並查看與Oak bundles相關的版本： Oak Core、Oak Commons、Oak Segment Tar。
 
 ### 檢查PreUpgradeBackup資料夾 {#inspect-preupgradebackup-folder}
 
@@ -129,13 +132,13 @@ AEM中的數項功能需要升級後執行其他步驟。 您可在「升級程�
 
 這些案例應有助於追蹤升級相關問題的根本原因，並有助於識別專案或產品特定問題。
 
-### 在升級後重新建立動態Media cloud設定 {#dynamic-media-cloud-configuration}
+### 在升級後重新建立動態Media Cloud設定 {#dynamic-media-cloud-configuration}
 
-從舊版升級至AEM 6.4後，從舊版設定進行的Dynamic Media cloud設定可能無法從AEM 6.4 TouchUI存取。 若要解決此問題，請使用CRXDE Lite移除舊版設定，然後建立新的Dynamic Media cloud設定。 另請參閱 [AEM 6.4中的動態媒體儲存庫重組](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)。
+從舊版升級至AEM 6.4後，從舊版設定進行的Dynamic Media Cloud設定可能無法從AEM 6.4 TouchUI存取。 若要解決此問題，請使用CRXDE Lite移除舊版設定，然後建立新的Dynamic Media Cloud設定。 另請參閱 [AEM 6.4中的動態媒體儲存庫重組](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)。
 
-### 儲存庫遷移失敗 {#repository-migration-failing-}
+### 儲存庫遷移失敗  {#repository-migration-failing-}
 
-從CRX2到Oak的資料移轉，對於任何以CQ 5.4為基礎的Source Instances開始的情形都可行。請務必確實遵照本文檔中的升級說明（包括準備） `repository.xml`，確保沒有通過JAAS啟動自定義驗證器，並且在開始遷移之前已檢查實例是否不一致。
+從CRX2到Oak的資料移轉，對於任何以CQ 5.4為基礎的Source Instances開始的情形都可行。 請務必確實遵照本文檔中的升級說明（包括準備） `repository.xml`，確保沒有通過JAAS啟動自定義驗證器，並且在開始遷移之前已檢查實例是否不一致。
 
 如果遷移仍然失敗，您可以通過檢查來找出根本原因 `upgrade.log`。 如果尚未知道問題，請向客戶支援報告。
 
@@ -143,7 +146,7 @@ AEM中的數項功能需要升級後執行其他步驟。 您可在「升級程�
 
 在開始準備步驟之前，請務必使用java -jar aem-quickstart.jar命令 **先執行source** instance。 為確保快速啟動。properties檔案正確生成，必須執行此操作。 如果缺少，升級將無法運作。 或者，您也可以查看源實例的安裝資料夾 `crx-quickstart/conf` 下的位置，檢查檔案是否存在。 此外，當啟動AEM以開始升級時，必須使用java -jar aem-quickstart.jar命令來執行它。 從開始指令碼開始時，不會在升級模式中啟動AEM。
 
-### 包和包無法更新 {#packages-and-bundles-fail-to-update-}
+### 包和包無法更新  {#packages-and-bundles-fail-to-update-}
 
 如果在升級期間無法安裝套件，則其所包含的套件也不會更新。 此類問題通常是由資料存放區配置錯誤所造成。 它們也會在 **error** .log中顯 **示為ERROR** 和WARN消息。 由於在大多數情況下預設登錄可能無法運行，因此您可以直接使用CRXDE來檢查和查找配置問題。
 
