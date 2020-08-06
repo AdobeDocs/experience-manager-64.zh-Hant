@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 3%
 
 ---
 
@@ -47,7 +50,7 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 1. 在生 **產就緒模式下** ,CRXDE支援包( `com.adobe.granite.crxde-support`)預設禁用。 它可隨時從Adobe公用Maven儲存庫安裝。 AEM 6.1需使用3.0.0版。
 
-1. Apache Sling Simple webDAV Access to repositories **(** )bundle將僅適用於作 `org.apache.sling.jcr.webdav`者例項 **** 。
+1. Apache Sling Simple WebDAV Access to repositories **(** )bundle將僅適用於作 `org.apache.sling.jcr.webdav`者例項 **** 。
 
 1. 新建立的使用者必須在第一次登入時變更密碼。 這不適用於管理員使用者。
 1. **對於** Apache Java Script Handler **，將禁用生成**&#x200B;調試資訊。
@@ -56,12 +59,12 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 1. The **Day CQ WCM Filter** is set to `edit` on author **and** on publish `disabled`**** instances.
 
-1. **Adobe Granite HTML Library manager已設定** ，並設定下列設定：
+1. **Adobe Granite HTML Library Manager已設定** ，並設定下列設定：
 
-   1. **** 精簡： `enabled`
-   1. **** 除錯： `disabled`
-   1. **** Gzip: `enabled`
-   1. **** 時機： `disabled`
+   1. **精簡：** `enabled`
+   1. **除錯：** `disabled`
+   1. **Gzip:** `enabled`
+   1. **時機：** `disabled`
 
 1. 依預 **設，Apache Sling GET Servlet** 已設為支援安全組態，如下所示：
 
