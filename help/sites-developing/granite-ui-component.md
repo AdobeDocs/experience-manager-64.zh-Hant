@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 94b9eeee-aae3-4b28-9d6f-1be0e4acd982
 translation-type: tm+mt
 source-git-commit: 26b7692b839e8395d090137e4f85b008171bbfc0
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
 
 # 建立新的Granite UI欄位元件{#creating-a-new-granite-ui-field-component}
 
-Granite UI提供多種元件，可用於表單；這些稱為 *Granite* UI辭彙中的欄位。 標準的Granite表單元件可從以下網址取得：
+Granite UI提供多種元件，可用於表單； 這些稱為 *Granite* UI辭彙中的欄位。 標準的Granite表單元件可從以下網址取得：
 
 `/libs/granite/ui/components/foundation/form/*`
 
@@ -46,8 +49,8 @@ Granite UI提供多種元件，可用於表單；這些稱為 *Granite* UI辭彙
 
 通用Granite UI元件 `field` 由兩個感興趣的檔案組成：
 
-* `init.jsp`:處理通用處理；標示、說明，並提供您在轉譯欄位時所需的表單值。
-* `render.jsp`:這是執行欄位實際轉譯的地方，您需要針對自訂欄位覆寫；包含於 `init.jsp`。
+* `init.jsp`: 處理通用處理； 標示、說明，並提供您在轉譯欄位時所需的表單值。
+* `render.jsp`: 這是執行欄位實際轉譯的地方，您需要針對自訂欄位覆寫； 包含於 `init.jsp`。
 
 如需詳細資訊，請 [參閱Granite UI檔案——欄位](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) 。
 
@@ -87,7 +90,7 @@ Granite UI提供多種元件，可用於表單；這些稱為 *Granite* UI辭彙
    vm.get("value, String.class"); 
    ```
 
-   若需更多詳細資訊，請參閱現成可用的Granite UI欄位實作；例如， `/libs/granite/ui/components/foundation/form/textfield`。
+   若需更多詳細資訊，請參閱現成可用的Granite UI欄位實作； 例如， `/libs/granite/ui/components/foundation/form/textfield`。
 
    >[!NOTE]
    >
