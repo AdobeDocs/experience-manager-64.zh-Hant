@@ -4,6 +4,9 @@ description: 瞭解如何設定AEM Rich Text Editor。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
+workflow-type: tm+mt
+source-wordcount: '2661'
+ht-degree: 0%
 
 ---
 
@@ -16,19 +19,19 @@ source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
 
 ![配置Rich Text Editor的典型工作流程](assets/rte_workflow_v1.png)
 
-*圖：配置Rich Text Editor的典型工作流程*
+*圖： 配置Rich Text Editor的典型工作流程*
 
 ## 瞭解可觸控的UI和傳統UI {#understand-touch-enabled-ui-and-classic-ui}
 
-Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環 [境推出](/help/sites-authoring/responsive-layout.md) Touch UI及互動式設計。Touch UI是專為觸控和桌上型裝置所設計。 UI與原始的傳統UI有很大不同。
+Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環 [境推出](/help/sites-authoring/responsive-layout.md) Touch UI及互動式設計。 Touch UI是專為觸控和桌上型裝置所設計。 UI與原始的傳統UI有很大不同。
 
 ![啟用觸控的UI中的豐富型文字編輯器工具列](assets/chlimage_1-404.png)
 
-*圖：啟用觸控的UI中的豐富型文字編輯器工具列*
+*圖： 啟用觸控的UI中的豐富型文字編輯器工具列*
 
 ![Classic UI中的Rich Text Editor工具列](assets/rtedefault.png)
 
-*圖：Classic UI中的Rich Text Editor工具列*
+*圖： Classic UI中的Rich Text Editor工具列*
 
 >[!MORELIKETHIS]
 >
@@ -44,10 +47,10 @@ Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環 [境推出
 
 | 編輯模式 | 編輯區域 | 建議啟用的功能 | Touch UI | 傳統 UI |
 |--- |--- |--- |--- |--- |
-| 內嵌 | 就地編輯，以快速進行小幅編輯；格式，不開啟對話方塊 | 最低RTE功能 | Y | Y |
+| 內嵌 | 就地編輯，以快速進行小幅編輯； 格式，不開啟對話方塊 | 最低RTE功能 | Y | Y |
 | RTE全螢幕 | 涵蓋整個頁面 | 所有必要的RTE功能 | Y | N |
-| 對話方塊 | 對話框，但不涵蓋整個頁面 | Classic UI中所有必需的RTE功能；審慎地啟用Touch UI中的功能 | Y | Y |
-| 全螢幕對話方塊 | 與全螢幕模式相同；包含RTE旁邊對話框的欄位 | 所有必要的RTE功能 | Y | N |
+| 對話方塊 | 對話框，但不涵蓋整個頁面 | Classic UI中所有必需的RTE功能； 審慎地啟用Touch UI中的功能 | Y | Y |
+| 全螢幕對話方塊 | 與全螢幕模式相同； 包含RTE旁邊對話框的欄位 | 所有必要的RTE功能 | Y | N |
 
 >[!NOTE]
 >
@@ -59,7 +62,7 @@ Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環 [境推出
 
 ![使用觸控式UI中的基本工具列進行內嵌編輯](assets/chlimage_1-405.png)
 
-*圖：使用觸控式UI中的基本工具列進行內嵌編輯*
+*圖： 使用觸控式UI中的基本工具列進行內嵌編輯*
 
 在Classic UI中，按兩下元件時速度緩慢，可進行內嵌編輯，而橘色的外框會反白顯示內容。 如果Content Finder已開啟，則窗口頂部將顯示一個帶有可用RTE格式設定選項的工具欄。 如果未開啟「內容搜尋器」，則不會顯示格式選項，您只能進行基本文字編輯。
 
@@ -71,7 +74,7 @@ AEM元件可在全螢幕檢視中開啟，隱藏頁面內容並佔據可用螢�
 
 ![在啟用觸摸屏的UI中以全屏模式編輯時的詳細RTE工具欄](assets/chlimage_1-406.png)
 
-*圖：在啟用觸摸屏的UI中以全屏模式編輯時的詳細RTE工具欄*
+*圖： 在啟用觸摸屏的UI中以全屏模式編輯時的詳細RTE工具欄*
 
 ### 對話框編輯 {#dialog-editing}
 
@@ -79,11 +82,11 @@ AEM元件可在全螢幕檢視中開啟，隱藏頁面內容並佔據可用螢�
 
 ![啟用觸控的UI中的對話編輯模式](assets/dialog_editing_modetouchui.png)
 
-*圖：啟用觸控的UI中的對話編輯模式*
+*圖： 啟用觸控的UI中的對話編輯模式*
 
 ![Classic UI中包含編輯詳細工具列的對話框](assets/chlimage_1-407.png)
 
-*圖：Classic UI中包含編輯詳細工具列的對話框*
+*圖： Classic UI中包含編輯詳細工具列的對話框*
 
 ## 關於RTE插件和相關功能 {#aboutplugins}
 
@@ -113,7 +116,7 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 | [鍵](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 要定義此值，請參 [閱標籤大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)。 |
 | [證明](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifleft justifcenter justifyright | 段落對齊。 |
 | [連結](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink unlink andlock | [超連結和錨點](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles)。 |
-| [清單](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 有序無序縮進 | 此外掛程式可控制縮 [排和清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin);包括巢狀清單。 |
+| [清單](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 有序無序縮進 | 此外掛程式可控制縮 [排和清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); 包括巢狀清單。 |
 | [misctools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 其他工具可讓作者輸入 [特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) ，或編輯HTML來源。 此外，如果您想要定義 [自己的清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) ，也可以新增一整組特殊字元。 |
 | Paraformat | paraformat | 預設段落格式為段落、標題1、標題2和標題3(`<p>`、 `<h1>`、 `<h2>`和 `<h3>`)。 您可以 [新增更多段落格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) ，或擴充清單。 |
 | 拼字檢查 | checktext | [語言感應拼字檢查程式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)。 |
@@ -143,22 +146,23 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 >
 >* **名稱**: `configPath`
 >* **類型**: `String`
->* **值**:包含實際配置的節點的路徑
+>* **值**: 包含實際配置的節點的路徑
+
 >
 >
 不要將RTE配置節點命名為 `config`。 否則，RTE配置只對管理員有效，對組中的用戶無效 `content-author`。
 
 僅在Touch UI的「對話」編輯模式中設定下列適用的屬性：
 
-* `useFixedInlineToolbar`:將在RTE節點上定義的此Boolean屬性(一個帶有sling:resourceType= `cq/gui/components/authoring/dialog/richtext`)設定為 `True`，使RTE工具欄固定而非浮動。
+* `useFixedInlineToolbar`: 將在RTE節點上定義的此Boolean屬性(一個帶有sling:resourceType= `cq/gui/components/authoring/dialog/richtext`)設定為 `True`，使RTE工具欄固定而非浮動。
 
    如果此屬性為true，則Richtext編輯預設會從&quot;foundation-contentloaded&quot;事件開始。
 
    要防止這種情況，請將屬 `customStart` 性設 `True`置為並觸發&#39;rte-start&#39;事件以啟動RTE編輯。 當此屬性為&#39;true&#39;時，預設行為（點按時啟動rte）將無法運作。
 
-* `customStart`:將在RTE節點上定義的此布爾屬性設定為 `True`，以通過觸發事件控制啟動RTE的時間 `rte-start`。
+* `customStart`: 將在RTE節點上定義的此布爾屬性設定為 `True`，以通過觸發事件控制啟動RTE的時間 `rte-start`。
 
-* `rte-start`:在開始編輯RTE `contenteditable-div` 時觸發此事件。 只有在已設 `customStart` 為true時，才能運作。
+* `rte-start`: 在開始編輯RTE `contenteditable-div` 時觸發此事件。 只有在已設 `customStart` 為true時，才能運作。
 
 在啟用觸控的對話框中使用RTE時，必須將屬性 `useFixedInlineToolbar` 設定為true才能避免問題。
 
@@ -191,6 +195,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 若要建立您自己的文字元件，請複製上述元件，而非編輯這些元件。
@@ -243,7 +248,7 @@ AEM可讓您針對不同的編輯模式，以不同的方式為RichText Editor�
 </uiSettings>
 ```
 
-內嵌模式和全螢幕模式會使用不同的UI設定。 工具列屬性用於指定工具列的按鈕。 例如，如果按鈕本身是功能(例如 `Bold`)，則會指定 `PluginName#FeatureName` 為(例如 `links#modifylink`)。 如果按鈕是快顯視窗（包含外掛程式的某些功能），則會指定 `#PluginName` 為(例如 `#format`)。 分隔符(|)。
+內嵌模式和全螢幕模式會使用不同的UI設定。 工具列屬性用於指定工具列的按鈕。 例如，如果按鈕本身是功能(例如 `Bold`)，則會指定 `PluginName#FeatureName` 為(例如 `links#modifylink`)。 如果按鈕是快顯視窗（包含外掛程式的某些功能），則會指定 `#PluginName` 為(例如 `#format`)。 分隔符( |)。
 
 內嵌或全螢幕模式下的快顯節點包含使用的快顯器清單。 節點下的每個子 `popovers` 節點都以插件(例如， `format`)命名。 它有一個 `items` 包含外掛程式功能清單的屬性(例如 `format#bold`)。
 
