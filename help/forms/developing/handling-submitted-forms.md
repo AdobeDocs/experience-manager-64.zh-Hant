@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
 source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+workflow-type: tm+mt
+source-wordcount: '2867'
+ht-degree: 0%
 
 ---
 
@@ -134,15 +137,15 @@ source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 您也可以設定下列執行時期選項，從提交為PDF資料的表單擷取表單欄位：
 
-* 將下列值作為內容類 `processFormSubmission` 型參數傳遞給方法： `CONTENT_TYPE=application/pdf`。
+* 將下列值作為內容類 `processFormSubmission` 型參數傳遞給方法： `CONTENT_TYPE=application/pdf`.
 * 將物 `RenderOptionsSpec` 件的值設 `PDFToXDP` 定為 `true`
 * 將物 `RenderOptionsSpec` 件的值設 `ExportDataFormat` 定為 `XMLData`
 
 在叫用方法時，可指定已提交表單的內容 `processFormSubmission` 類型。 下列清單指定適用的內容類型值：
 
-* **text/xml**:表示當PDF表單以XML形式提交表單資料時要使用的內容類型。
-* **application/x-www-form-urlencoded**:表示當HTML表單以XML形式提交資料時要使用的內容類型。
-* **application/pdf**:表示PDF表單以PDF格式提交資料時要使用的內容類型。
+* **text/xml**: 表示當PDF表單以XML形式提交表單資料時要使用的內容類型。
+* **application/x-www-form-urlencoded**: 表示當HTML表單以XML形式提交資料時要使用的內容類型。
+* **application/pdf**: 表示PDF表單以PDF格式提交資料時要使用的內容類型。
 
 >[!NOTE]
 >
@@ -156,7 +159,7 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
 * **1（計算）:** Forms服務對資料執行了計算操作，結果必須向用戶呈現。
 * **2（驗證）:** Forms服務驗證的表單資料，且結果必須轉譯回使用者。
 * **3（下一個）:** 目前頁面已變更，結果必須寫入用戶端應用程式。
-* **4(舊版**):目前頁面已變更，結果必須寫入用戶端應用程式。
+* **4(舊版**): 目前頁面已變更，結果必須寫入用戶端應用程式。
 
 >[!NOTE]
 >
@@ -205,6 +208,7 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
 
    * 若要擷取張貼至Java Servlet的表單資料，請使用其建構函式 `com.adobe.idp.Document` 建立物件，並從建構函式中叫 `javax.servlet.http.HttpServletResponse` 用物 `getInputStream` 件的方法。
    * 使用其 `RenderOptionsSpec` 建構函式建立物件。 調用物件的方法並傳 `RenderOptionsSpec` 遞指定地區 `setLocale` 值的字串值，以設定地區值。
+
    >[!NOTE]
    >
    >您可以叫用物件的方法、傳遞，以及呼叫和傳遞，指示Forms服務從提交的PDF內 `RenderOptionsSpec` 容建立XDP或XML `setPDF2XDP` 資料 `true``setXMLData``true`。 然後，您可以叫 `FormsResult` 用物件的方 `getOutputXML` 法來擷取與XDP/XML資料對應的XML資料。 (對 `FormsResult` 像由 `processFormSubmission`*方法返回，將在下一個子步驟中說明。)*
@@ -212,9 +216,10 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
    * 叫用物 `FormsServiceClient` 件的方 `processFormSubmission` 法並傳遞下列值：
 
       * 包 `com.adobe.idp.Document` 含表單資料的物件。
-      * 一個字串值，它指定包括所有相關HTTP標題的環境變數。 指定要處理的內容類型。 要處理XML資料，請為此參數指定以下字串值： `CONTENT_TYPE=text/xml`。 若要處理PDF資料，請為此參數指定下列字串值： `CONTENT_TYPE=application/pdf`。
+      * 一個字串值，它指定包括所有相關HTTP標題的環境變數。 指定要處理的內容類型。 要處理XML資料，請為此參數指定以下字串值： `CONTENT_TYPE=text/xml`. 若要處理PDF資料，請為此參數指定下列字串值： `CONTENT_TYPE=application/pdf`.
       * 指定標題值的字 `HTTP_USER_AGENT` 串值，例如。 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 此參數值是可選的。
       * 存 `RenderOptionsSpec` 儲運行時選項的對象。
+
       該方 `processFormSubmission` 法返回包 `FormsResult` 含表單提交結果的對象。
 
    * 調用物件的方法，以判斷Forms服務是否已完成表 `FormsResult` 單資料的處 `getAction` 理。 如果此方法傳回值 `0`，資料就可供處理。
@@ -225,6 +230,7 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
 
    * 叫用 `FormsResult` 物件的方 `getAttachments` 法。 此方法返回 `java.util.List` 包含隨表單提交的檔案的對象。
    * 逐步處理對 `java.util.List` 像以確定是否存在檔案附件。 如果存在檔案附件，則每個元素都是實 `com.adobe.idp.Document` 例。 您可以叫用物件的方法並傳 `com.adobe.idp.Document` 遞物件，以 `copyToFile` 儲存檔案附 `java.io.File` 件。
+
    >[!NOTE]
    >
    >此步驟僅適用於表單以PDF格式提交的情況。
@@ -238,7 +244,7 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
       * 呼叫 `org.w3c.dom.DocumentBuilderFactory` 靜態物件的方 `org.w3c.dom.DocumentBuilderFactory` 法以建立物 `newInstance` 件。
       * 調用 `org.w3c.dom.DocumentBuilder` 物件的方 `org.w3c.dom.DocumentBuilderFactory` 法以建立物 `newDocumentBuilder` 件。
       * 調用 `org.w3c.dom.Document` 物件的方法並傳 `org.w3c.dom.DocumentBuilder` 遞物件， `parse` 以建立物 `java.io.InputStream` 件。
-      * 檢索XML文檔中每個節點的值。 完成此任務的一種方法是建立接受兩個參數的自定義方法：要 `org.w3c.dom.Document` 檢索其值的對象和節點的名稱。 此方法返回表示節點值的字串值。 在此程式後面的代碼示例中，調用此自定義方法 `getNodeText`。 本文給出了該方法的主體。
+      * 檢索XML文檔中每個節點的值。 完成此任務的一種方法是建立接受兩個參數的自定義方法： 要 `org.w3c.dom.Document` 檢索其值的對象和節點的名稱。 此方法返回表示節點值的字串值。 在此程式後面的代碼示例中，調用此自定義方法 `getNodeText`。 本文給出了該方法的主體。
    * 如果資料內容類型為， `application/pdf`請建立應用程式邏輯，將提交的PDF資料儲存為PDF檔案。
 
       * 調用 `com.adobe.idp.Document` 物件的方 `FormsResult` 法以建立物 `getOutputContent` 件。
@@ -248,11 +254,11 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API處理以XML格式提交的PDF表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API處理以XML格式提交的PDF表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[快速入門（SOAP模式）:使用Java API處理以XML形式提交的HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API處理以XML形式提交的HTML表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[快速入門（SOAP模式）:使用Java API處理以PDF格式提交的PDF表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API處理以PDF格式提交的PDF表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -283,8 +289,8 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
    * 叫用物 `FormsService` 件的方 `processFormSubmission` 法並傳遞下列值：
 
       * 包 `BLOB` 含表單資料的物件。
-      * 一個字串值，它指定包括所有相關HTTP標題的環境變數。 指定要處理的內容類型。 要處理XML資料，請為此參數指定以下字串值： `CONTENT_TYPE=text/xml`。 若要處理PDF資料，請為此參數指定下列字串值： `CONTENT_TYPE=application/pdf`。
-      * 指定標題值的 `HTTP_USER_AGENT` 字串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
+      * 一個字串值，它指定包括所有相關HTTP標題的環境變數。 指定要處理的內容類型。 要處理XML資料，請為此參數指定以下字串值： `CONTENT_TYPE=text/xml`. 若要處理PDF資料，請為此參數指定下列字串值： `CONTENT_TYPE=application/pdf`.
+      * 指定標題值的 `HTTP_USER_AGENT` 字串值； 例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
       * 存 `RenderOptionsSpec` 儲運行時選項的對象。
       * 由方 `BLOBHolder` 法填充的空對象。
       * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空對象。
@@ -293,6 +299,7 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
       * 由方 `javax.xml.rpc.holders.ShortHolder` 法填充的空對象。
       * 由方 `MyArrayOf_xsd_anyTypeHolder` 法填充的空對象。 此參數用於儲存隨表單一起提交的檔案附件。
       * 由方 `FormsResultHolder` 法填入的空對象，其表單為已提交。
+
       方 `processFormSubmission` 法會以表 `FormsResultHolder` 單提交的結果填入參數。
 
    * 調用物件的方法，以判斷Forms服務是否已完成表 `FormsResult` 單資料的處 `getAction` 理。 如果此方法傳回值 `0`，表單資料就可供處理。 您可以取 `FormsResult` 得物件資料成員的 `FormsResultHolder` 值，以取 `value` 得物件。
@@ -312,7 +319,7 @@ Forms服務返回以下值，以指示它是否已完成資料處理：
       * 呼叫 `org.w3c.dom.DocumentBuilderFactory` 靜態物件的方 `org.w3c.dom.DocumentBuilderFactory` 法以建立物 `newInstance` 件。
       * 調用 `org.w3c.dom.DocumentBuilder` 物件的方 `org.w3c.dom.DocumentBuilderFactory` 法以建立物 `newDocumentBuilder` 件。
       * 調用 `org.w3c.dom.Document` 物件的方法並傳 `org.w3c.dom.DocumentBuilder` 遞物件， `parse` 以建立物 `java.io.InputStream` 件。
-      * 檢索XML文檔中每個節點的值。 完成此任務的一種方法是建立接受兩個參數的自定義方法：要 `org.w3c.dom.Document` 檢索其值的對象和節點的名稱。 此方法返回表示節點值的字串值。 在此程式後面的代碼示例中，調用此自定義方法 `getNodeText`。 本文給出了該方法的主體。
+      * 檢索XML文檔中每個節點的值。 完成此任務的一種方法是建立接受兩個參數的自定義方法： 要 `org.w3c.dom.Document` 檢索其值的對象和節點的名稱。 此方法返回表示節點值的字串值。 在此程式後面的代碼示例中，調用此自定義方法 `getNodeText`。 本文給出了該方法的主體。
    * 如果資料內容類型為， `application/pdf`請建立應用程式邏輯，將提交的PDF資料儲存為PDF檔案。
 
       * 調用 `BLOB` 物件的方 `FormsResult` 法以建立物 `getOutputContent` 件。
