@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
 source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+workflow-type: tm+mt
+source-wordcount: '578'
+ht-degree: 0%
 
 ---
 
@@ -22,11 +25,11 @@ AEM Forms應用程式可讓您將影像、草圖筆記和文字註解附加至�
 
 您的選項包括：
 
-* **[!UICONTROL 圖庫]**:可讓您從裝置上儲存的圖片中新增圖片。
+* **[!UICONTROL 圖庫]**: 可讓您從裝置上儲存的圖片中新增圖片。
 
-* **[!UICONTROL 相機]**:可讓您拍照並加入表格。
+* **[!UICONTROL 相機]**: 可讓您拍照並加入表格。
 
-* **[!UICONTROL 注意]**:可讓您新增塗鴉或文字附註。 使用 ![塗鴉](assets/scribble.png) ，新增塗鴉， ![鍵盤](assets/keyboard.png) ，新增文字註解。
+* **[!UICONTROL 注意]**: 可讓您新增塗鴉或文字附註。 使用 ![塗鴉](assets/scribble.png) ，新增塗鴉， ![鍵盤](assets/keyboard.png) ，新增文字註解。
 
 >[!NOTE]
 >
@@ -68,14 +71,15 @@ AEM Forms應用程式可讓您將影像、草圖筆記和文字註解附加至�
 1. 在啟動的Notes使用者介面中，擷取手繪文字。
 
    ![塗鴉介面](assets/scribble-ui.png)
-   **圖：** 塗鴉 *字*
+   **圖：** *塗鴉*
 
    您可以在塗鴉介面中使用下列選項：
 
-   * **[!UICONTROL 清除]**:清除螢幕。
-   * **[!UICONTROL 完成]**:附加當前塗鴉。
-   * **[!UICONTROL 取消]**:放棄當前塗鴉並退出塗鴉用戶介面。
-   * ![鍵盤](assets/keyboard.png):清除塗鴉，並讓您新增文字附註。
+   * **[!UICONTROL 清除]**: 清除螢幕。
+   * **[!UICONTROL 完成]**: 附加當前塗鴉。
+   * **[!UICONTROL 取消]**: 放棄當前塗鴉並退出塗鴉用戶介面。
+   * ![鍵盤](assets/keyboard.png): 清除塗鴉，並讓您新增文字附註。
+
    ![AEM Forms應用程式中的鍵盤塗鴉](assets/keyboard-inapp.png)
 
 ## 不使用AEM Forms Workflow（OSGi上的AEM Forms）與AEM Forms伺服器同步的表單附件 {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
