@@ -244,6 +244,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
    * file:///C:/Users/public/Document/Prefill/。&amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
    >依預設，所有類型的最適化表單（XSD、XDP、JSON、FDM和不以表單模型為基礎）都允許透過crx檔案進行預填。 只有JSON和XML檔案才允許預先填寫。
