@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2906'
+ht-degree: 5%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 若要設定網站分享個人化內容的方式，您必須執行下列步驟：
 
-1. [建立新區域](#creating-new-areas) , [或建立新區域做為即時副本](#creating-new-areas)。 區域包括頁面區域可用的所 *有活* 動；即，元件所在頁面上的位置。 建立新區域會建立空白區域，而建立新區域作為即時副本可讓您跨網站結構繼承內容。
+1. [建立新區域](#creating-new-areas) , [或建立新區域做為即時副本](#creating-new-areas)。 區域包括頁面區域可用的所 *有活* 動； 即，元件所在頁面上的位置。 建立新區域會建立空白區域，而建立新區域作為即時副本可讓您跨網站結構繼承內容。
 
 1. [將您的網站或頁面連結](#linking-sites-to-an-area) 至某個區域。
 
@@ -54,13 +57,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 當您使用推出或即時復本時，需要MSM授權。
 >* 當您使用同步至Adobe Target時，需要Adobe Target授權。
+
 >
 
 
 
 ## 使用案例 {#use-cases}
 
-您可以根據使用案例，以多種方式設定目標內容的多網站支援。 本節將說明在理論上如何搭配一個品牌運作。 此外，在范 [例中：根據地理位置定位內容](#example-targeting-content-based-on-geography)，您可以看到在多個網站中定位內容的實際應用程式。
+您可以根據使用案例，以多種方式設定目標內容的多網站支援。 本節將說明在理論上如何搭配一個品牌運作。 此外，在范 [例中： 根據地理位置定位內容](#example-targeting-content-based-on-geography)，您可以看到在多個網站中定位內容的實際應用程式。
 
 目標內容會包住所謂的區域，以定義網站或頁面的範圍。 這些區域是在品牌層級定義的。 一個品牌可以包含多個區域。 品牌間的區域可以不同。 雖然一個品牌可能只包含主要區域，因此可以跨所有品牌共用，但另一個品牌可能包含多個品牌（例如，依地區區分）。 因此，品牌不需要鏡像它們之間的區域集。
 
@@ -71,7 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 網站A連結至區域X
    * 網站B連結至區域Y
 
-* 一 *組共用* 、定位的內容——其中一組編輯對兩個網站都有直接影響；您可以讓兩個網站參照相同區域來設定此設定。 連結至相同區域的網站會共用此區域內的目標內容。 例如：
+* 一 *組共用* 、定位的內容——其中一組編輯對兩個網站都有直接影響； 您可以讓兩個網站參照相同區域來設定此設定。 連結至相同區域的網站會共用此區域內的目標內容。 例如：
 
    * 網站A連結至區域X
    * 網站B連結至區域X
@@ -89,7 +93,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >如需此功能的詳細技術資訊，請參 [閱定位內容的多網站管理結構](/help/sites-authoring/technical-multisite-targeted.md)。
 
-## 範例：根據地理位置定位內容 {#example-targeting-content-based-on-geography}
+## 範例： 根據地理位置定位內容 {#example-targeting-content-based-on-geography}
 
 針對目標內容使用多網站可讓您分享、推展或隔離個人化內容。 為了更好地說明如何使用此功能，請考慮您想要根據地理位置控制如何推展定位內容的藍本，如下列藍本：
 
@@ -108,7 +112,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-在北半球，我們創造了一個冬季活動，但在男性觀眾中，北美的行銷人員希望冬季有不同的形象，所以他／她在美國網站做了修改。
+在北半球，我們創造了一個冬季活動，但在男性觀眾中，北美的行銷人員希望冬季有不同的影像，所以他／她在美國網站做了修改。
 
 ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -116,7 +120,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ![chlimage_1-274](assets/chlimage_1-274.png)
 
-行銷人員想要將這些變更推展至歐洲地區，並點選或按一 [下「轉出頁面](/help/sites-administering/msm-livecopy.md) 」來推 **出即時副本**。 重新整理索引標籤後，大不列顛網站會有新的影像，因為歐洲區域會繼承主區域（在推出後）。
+行銷人員想要將這些變更推展至歐洲地區，並點選或按一 [下「轉出頁面](/help/sites-administering/msm-livecopy.md) 」來推 **出即時副本**。 重新整理索引標籤後，大不列顛網站會有新的影像，因為歐洲區會繼承主區域（在推出後）。
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -178,7 +182,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 您可以將區域建立為即時副本，以便跨網站結構繼承目標內容。
 
-要將區域建立為活動副本：
+要將區域建立為livecopy，請執行以下操作：
 
 1. 導覽至「 **個人化** >活動 **** 」或「 **選件** 」，然後導覽至您的品牌。
 1. 點選或按一 **下「建立區域為即時副本」**。
@@ -246,6 +250,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 您只能暫停或分離活動中的即時副本。
 >* 您不需要暫停或分離即時副本來擴充繼承的活動。 您隨時都可以為 **該活動** ，建立新的本機體驗和選件。 如果要修改現有活動，則需要暫停繼承。
+
 >
 
 
@@ -260,6 +265,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 選取活動的元素，例如對象。 AEM會自動顯示「暫停即時副本」確認方塊。 （您可以在整個「定位」程式中點選或按一下任何元素，暫停即時副本。）
    1. Select **Suspend Live Copy** from the drop-down menu in the toolbar.
+
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
 1. 點選或按一 **下「暫停** 」以暫停活動。 暫停的活動會以紅色標示。
