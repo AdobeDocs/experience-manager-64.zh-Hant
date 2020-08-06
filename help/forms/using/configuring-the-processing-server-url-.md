@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: fbb9044a-a737-45f6-8062-0ef5424a92f8
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 0%
 
 ---
 
@@ -43,11 +46,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 1. 在各自的欄位中新增下列資訊：
 
-   **[!UICONTROL 處理伺服器URL]**:「處理伺服器」是需要觸發表單或AEM工作流程的伺服器。 這可以與AEM作者例項的URL或其他伺服器URL(即http:// localhost:port/)相同。
+   **[!UICONTROL 處理伺服器URL]**: 「處理伺服器」是需要觸發表單或AEM工作流程的伺服器。 這可以與AEM作者例項的URL或其他伺服器URL(即http:// localhost:port/)相同。
 
-   **[!UICONTROL 處理伺服器用戶名]**:根據所使用的伺服器URL, [工作流程使用者的使用者名稱]
+   **[!UICONTROL 處理伺服器用戶名]**: 根據所使用的伺服器URL, [工作流程使用者的使用者名稱]
 
-   **[!UICONTROL 處理伺服器密碼]**:工作流用戶密碼
+   **[!UICONTROL 處理伺服器密碼]**: 工作流用戶密碼
 
    >[!NOTE]
    >
