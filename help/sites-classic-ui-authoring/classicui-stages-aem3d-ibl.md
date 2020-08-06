@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9291151-851a-4aff-a50e-a24330ee0c13
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 0%
 
 ---
 
@@ -52,11 +55,11 @@ AEM 3D支援使用內建的Adobe Rapid Refine™轉譯器和協力廠商轉譯�
   </tr> 
   <tr> 
    <td>IBL Sun詳細資訊</td> 
-   <td><p>可讓您調整模擬太陽的輔助光源的方向和強度。 <span class="diff-html-added">該光源增加照明亮度並使物體在地面上投下陰影。 使用快速調整演算和使用Google Chrome預覽時，支援陰影投影；但是，其他瀏覽器目前不支援它。</span></p> 
+   <td><p>可讓您調整模擬太陽的輔助光源的方向和強度。 <span class="diff-html-added">該光源增加照明亮度並使物體在地面上投下陰影。 使用快速調整演算和使用Google Chrome預覽時，支援陰影投影； 但是，其他瀏覽器目前不支援它。</span></p> 
     <ul> 
-     <li><strong>lat</strong> —— 太陽光源的垂直位置(<code>0.0</code>-<code>1.0</code>)。<br /> 水準線(漫 <code>0.0</code> 射照明環境影像的垂直中心);位 <code>1.0</code> 於天頂（漫射照明環境影像的上邊緣）。</li> 
-     <li><strong>long</strong> —— 太陽光源的水準位置(<code>0.0</code>-<code>1.0</code>)。<br /> 0.0的設定與左側對應；1.0對應於漫射照明環境影像的右邊緣。<br /> </li> 
-     <li><strong>bright</strong> —— 太陽光源的亮度。 增加這個值，使陽光源變亮；降低此值以變暗。 <br /> 設定會關閉 <code>0</code> 輔助光源並停用投影陰影。 該參數不影響環境反射。<br /> </li> 
+     <li><strong>lat</strong> —— 太陽光源的垂直位置(<code>0.0</code>-<code>1.0</code>)。<br /> 水準線(漫 <code>0.0</code> 射照明環境影像的垂直中心); <code>1.0</code> 位於天頂（漫射照明環境影像的上邊緣）。</li> 
+     <li><strong>long</strong> —— 太陽光源的水準位置(<code>0.0</code>-<code>1.0</code>)。<br /> 0.0的設定與左側對應； 1.0對應於漫射照明環境影像的右邊緣。<br /> </li> 
+     <li><strong>bright</strong> —— 太陽光源的亮度。 增加這個值，使陽光源變亮； 降低此值以變暗。 <br /> 設定會關閉 <code>0</code> 輔助光源並停用投影陰影。 該參數不影響環境反射。<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
