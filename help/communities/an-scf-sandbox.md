@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
 source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
 
 開發人員的另一個實用工具是「社 [群元件」指南](components-guide.md)，可探索社群元件和功能並快速建立原型。
 
-建立網站的練習對於瞭解AEM網站的結構非常有用，其中可能包含「社群」功能，同時也提供簡單頁面，以探索如何使用 [social元件架構(SCF)](scf.md)。
+建立網站的練習對於瞭解AEM網站的結構非常有用，其中可能包含「社群」功能，同時也提供簡單頁面，以探索如何與 [social元件架構(SCF)搭配運作](scf.md)。
 
 本教學課程主要針對對AEM不熟悉的開發人員，他們有興趣使用SCF元件。 它會逐步建立SCF沙盒網站，類似於如何建立功能完備的網際網路網站( [How to Create a Fully Featured Internet Website](../../help/sites-developing/website.md) )的教學課程，其中著重於網站結構，例如導覽、標誌、搜尋、工具列和列出子頁面。
 
