@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1784'
+ht-degree: 0%
 
 ---
 
@@ -213,7 +216,7 @@ HTML範本可協助定義工作區使用者介面的外觀和版面。 透過更
             * 檢視——包含AEM Forms工作區中所有元件的骨幹檢視。
          * main.js
          * router.js
-      * libs/ws:pdf.html和pluginPing.pdf用於在AEM Forms工作區中載入PDF表格，而WSNextAdapter.swf用於在AEM Forms工作區中載入SWF表格和參考線。
+      * libs/ws: pdf.html和pluginPing.pdf用於在AEM Forms工作區中載入PDF表格，而WSNextAdapter.swf用於在AEM Forms工作區中載入SWF表格和參考線。
       * 地區設定：
 
          * de-DE —— 包含德文版的translation.json。
