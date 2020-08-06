@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +48,7 @@ Pattern Detector會以單一套件的形 [式個別發行](https://www.adobeaemc
 
 * **透過Felix Inventory主控台：**
 
-1. 瀏覽至：https://<i></i>serveraddress:serverport/system/console/configMgr
+1. 瀏覽至： https://<i></i>serveraddress:serverport/system/console/configMgr
 1. 選擇 **狀態——模式檢測器** ，如下圖所示：
 
    ![screapth-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
