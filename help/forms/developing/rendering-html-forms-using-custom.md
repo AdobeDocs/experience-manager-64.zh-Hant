@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 translation-type: tm+mt
 source-git-commit: e2a6f76d8fa34b2b97713aaef094a2df8164e746
+workflow-type: tm+mt
+source-wordcount: '1640'
+ht-degree: 0%
 
 ---
 
@@ -20,15 +23,15 @@ source-git-commit: e2a6f76d8fa34b2b97713aaef094a2df8164e746
 
 Forms服務會根據來自網頁瀏覽器的HTTP要求轉譯HTML表格。 轉換HTML表格時，Forms服務可以參考自訂CSS檔案。 您可以建立自訂的CSS檔案，以符合您的業務需求，並在使用Forms服務轉換HTML表格時參考該CSS檔案。
 
-Forms服務會以無訊息方式解析自訂CSS檔案。 也就是說，如果自訂CSS檔案不符合CSS標準，Forms服務不會報告可能遇到的錯誤。 在此情況下，Forms服務會忽略樣式，並繼續使用CSS檔案中的其餘樣式。
+Forms服務會無訊息地解析自訂CSS檔案。 也就是說，如果自訂CSS檔案不符合CSS標準，Forms服務不會報告可能遇到的錯誤。 在此情況下，Forms服務會忽略樣式，並繼續使用CSS檔案中的其餘樣式。
 
 下列清單指定自訂CSS檔案支援的樣式：
 
-* **類別級選擇器樣式對**:如果自訂CSS檔案中有選取器，則會使用HTML表單中用作類別樣式的選取器。 未使用的類樣式將被忽略。
-* **識別碼層級選擇器——樣式配對**:如果所有識別碼樣式都用於HTML表單，則會使用這些樣式。
-* **元素層級選取器——樣式對**:如果所有元素樣式都用於HTML表單，則會使用這些樣式。
-* **樣式優先順序**:樣式優先順序（如重要）受支援，可用於自訂CSS檔案。
-* **媒體類型**:一個或多個選擇器樣式對可以用@media樣式包住，以定義媒體類型。 Forms服務不檢查是否支援指定的介質類型。 自訂CSS檔案中指定的媒體類型會合併為HTML表單。
+* **類別級選擇器樣式對**: 如果自訂CSS檔案中有選取器，則會使用HTML表單中用作類別樣式的選取器。 未使用的類樣式將被忽略。
+* **識別碼層級選擇器——樣式配對**: 如果所有識別碼樣式都用於HTML表單，則會使用這些樣式。
+* **元素層級選取器——樣式對**: 如果所有元素樣式都用於HTML表單，則會使用這些樣式。
+* **樣式優先順序**: 樣式優先順序（如重要）受支援，可用於自訂CSS檔案。
+* **媒體類型**: 一個或多個選擇器樣式對可以用@media樣式包住，以定義媒體類型。 Forms服務不檢查是否支援指定的介質類型。 自訂CSS檔案中指定的媒體類型會合併為HTML表單。
 
 您可以使用FormsIVS應用程式擷取範例CSS檔案。 上傳表單，在「測試表單設計」頁面中選取它，然後按一下「產生CSS」。 您不需要在按一下按鈕之前設定HTML轉換類型。 接下來選擇「儲存」。 您可以編輯此CSS檔案，以符合您的業務需求。
 
@@ -117,6 +120,7 @@ Forms服務會以無訊息方式解析自訂CSS檔案。 也就是說，如果�
    * 指定標題值的字 `HTTP_USER_AGENT` 串值，例如 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
    * 存 `URLSpec` 儲呈現HTML表單所需URI值的對象。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不要將檔案附加到表單。
+
    該方 `(Deprecated) renderHTMLForm` 法返回包 `FormsResult` 含必須寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
@@ -133,7 +137,7 @@ Forms服務會以無訊息方式解析自訂CSS檔案。 也就是說，如果�
 
 [使用自訂CSS檔案轉換HTML表格](#rendering-html-forms-using-custom-css-files)
 
-[快速入門（SOAP模式）:使用Java API轉換使用CSS檔案的HTML表格](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API轉換使用CSS檔案的HTML表格](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -174,6 +178,7 @@ Forms服務會以無訊息方式解析自訂CSS檔案。 也就是說，如果�
    * 由方 `javax.xml.rpc.holders.StringHolder` 法填入的空對 `(Deprecated) renderHTMLForm` 像。 此引數儲存地區值。
    * 由方 `javax.xml.rpc.holders.StringHolder` 法填入的空對 `(Deprecated) renderHTMLForm` 像。 此引數儲存所使用的HTML轉換值。
    * 包含 `com.adobe.idp.services.holders.FormsResultHolder` 此操作結果的空對象。
+
    該方 `(Deprecated) renderHTMLForm` 法用必 `com.adobe.idp.services.holders.FormsResultHolder` 須寫入客戶端Web瀏覽器的表單資料流填充作為最後一個參數值傳遞的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
