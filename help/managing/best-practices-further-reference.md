@@ -272,7 +272,7 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 * 70%的頁面要求應在100毫秒內回覆。
 * 25%的頁面要求應在100毫秒至300毫秒內回應。
 * 4%的頁面要求應在300毫秒-500毫秒內回應。
-* 1%的頁面要求應在500毫秒-1000毫秒內回應。
+* 1%的頁面要求應在500ms-1000ms內回應。
 * 任何頁面的回應速度都不應慢於1秒。
 
 上述數字假設下列條件：
@@ -323,7 +323,7 @@ AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可�
 
 * **用於測量搜索響應時間的寫程式機構**
 
-   若要自訂您收集的搜尋請求相關資訊及其效能，建議將資訊收集納入您的專案原始碼中； 如需詳 [細資訊，請參閱](/help/sites-deploying/configuring-performance.md) 「效能最佳化」。
+   若要自訂您收集的搜尋請求相關資訊及其效能，建議將資訊收集納入您的專案原始碼； 如需詳 [細資訊，請參閱](/help/sites-deploying/configuring-performance.md) 「效能最佳化」。
 
 ### 並行 {#concurrency}
 
@@ -579,7 +579,7 @@ The [Security Checklist](/help/sites-administering/security-checklist.md) detail
 * [技術需求](/help/sites-deploying/technical-requirements.md)
 * [監控和維護實例](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Best Practices {#best-practices}
+### 最佳作法 {#best-practices}
 
 Adobe針對所有階段和受眾提供進一步的最佳實務：
 
