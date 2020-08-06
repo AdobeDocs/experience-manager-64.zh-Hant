@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 14%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 1. 選 **[!UICONTROL 取「關聯內容]** 」或「 **[!UICONTROL 關聯繫列]** 」 (視情況而定，視系統是否已關聯)。
 1. 選取所需的系列。
 
-   您可以選擇將片段本身新增至選取的系列；這個艾滋病追蹤。
+   您可以選擇將片段本身新增至選取的系列； 這個艾滋病追蹤。
 
    ![cfm-6420-04](assets/cfm-6420-04.png)
 
