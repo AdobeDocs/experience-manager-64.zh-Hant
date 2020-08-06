@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 translation-type: tm+mt
 source-git-commit: 1a87e927ada393524962f0ad7db93097a3cfab5b
+workflow-type: tm+mt
+source-wordcount: '1925'
+ht-degree: 0%
 
 ---
 
@@ -63,8 +66,8 @@ AEM中的許多效能度量（例如查詢回應時間）可能會受到系統�
 * 也可使用雲端負載測 [試工具](https://www.neustar.biz/services/web-performance/load-testing) ，例如Neustar。
 * 在測試行動或互動式網站時，需要使用個別的工具集。 它們可以調節網路頻寬，模擬慢速的行動連線，例如3G或EDGE。 使用範圍更廣的工具包括：
 
-   * **[Network Link Condition](https://nshipster.com/network-link-conditioner/)**—— 它提供易於使用的UI，在網路堆棧上工作級別較低。 它包含OS x和iOS的版本；[](https://nshipster.com/network-link-conditioner/)
-   * [**Charles **](https://www.charlesproxy.com/)—— 除了其他幾種用途外，還提供網路調節的Web調試代理應用程式。 提供Windows、OS x和Linux版本。[](https://www.charlesproxy.com/)
+   * **[Network Link Condition](https://nshipster.com/network-link-conditioner/)**—— 它提供易於使用的UI，在網路堆棧上工作級別較低。 它包含OS X和iOS的版本；[](https://nshipster.com/network-link-conditioner/)
+   * [**Charles **](https://www.charlesproxy.com/)—— 除了其他幾種用途外，還提供網路調節的Web調試代理應用程式。 提供Windows、OS X和Linux版本。[](https://www.charlesproxy.com/)
 
 #### 最佳化工具 {#optimization-tools}
 
@@ -136,7 +139,7 @@ Google的PageSpeed工具提供網站分析，以符合最佳頁面效能實務�
 * 使用查詢效能工具分析慢 [速運行的查詢](/help/sites-administering/operations-dashboard.md#query-performance)
 
 * 觀看錯誤或警告的錯誤清單。 如需詳細資訊，請參閱記 [錄](/help/sites-deploying/configure-logging.md)
-* 監控系統硬體資源，如記憶體和CPU利用率、磁碟I/O或網路I/O。這些資源通常是導致效能瓶頸的原因
+* 監控系統硬體資源，如記憶體和CPU利用率、磁碟I/O或網路I/O。 這些資源通常是導致效能瓶頸的原因
 * 最佳化頁面的架構及其處理方式，將URL參數的使用降至最低，以允許盡可能多的快取
 * 遵循「效 [能最佳化](/help/sites-deploying/configuring-performance.md) 」和「效 [能調整」提示檔案](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
 
