@@ -269,7 +269,7 @@ We.Finance參考網站的電子郵件範本包含電子郵件中的個人化連�
 1. 在AEM作者例項上，請至「工 **[!UICONTROL 具>雲端服務>資料來源>全域」]**。 點選「 **[!UICONTROL Refsite Dynamics Integration]** 」圖示並點選「 **[!UICONTROL 屬性」]**。
 1. 前往Microsoft Azure Active Directory帳戶。 在註冊應用程式的「回覆URL」設定中 **[!UICONTROL 新增複製的雲端服務設定URL]** 。 儲存設定。
 1. 在「驗證設定」標籤中， **[!UICONTROL 為您的Microsoft Dynamics例項指]**&#x200B;定「服務根 **[!UICONTROL 」、「用戶端Id]**」、「用戶 **[!UICONTROL 端密碼]**」 **** 和「資源URL」。 按一 **[!UICONTROL 下重新導向至]** Microsoft Dynamics登入頁面的「連線至OAuth」。
-1. 提供您的登入認證。 登入後，會將您重新導向至AEM Forms雲端服務設定頁面。 Click **[!UICONTROL Save &amp; Close]**. 雲端服務設定已儲存。
+1. 提供您的登入認證。 登入後，會將您重新導向至AEM Forms雲端服務設定頁面。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。雲端服務設定已儲存。
 1. 前往「 **[!UICONTROL 表單>資料整合> We.Finance]**」。 選擇「自動保險（動態）」，然後按一下「編輯」。 Microsoft Dynamics實體會列在「資料來源」標籤下。 請等待，直到從Microsoft Dynamics擷取所有實體並列在資料來源標籤下。
 1. 選擇AutoInsuranceRenewal **[!UICONTROL 實體]** ，然後單 **[!UICONTROL 擊測試模型對象]**。 在輸入請求區段中，將客戶ID的值指定為&quot;900001&quot;，然後按一下「測 **[!UICONTROL 試]**」。 「輸出」部分顯示從Microsoft Dynamics獲取的客戶ID 900001的記錄。
 1. 在輸入請求區段中，將客戶ID的值指定為&quot;900001&quot;，然後按一下「測 **[!UICONTROL 試]**」。 「輸出」部分顯示從Microsoft Dynamics獲取的客戶ID 900001的記錄。
@@ -349,7 +349,7 @@ AEM Forms與Adobe Analytics的整合可讓您監控和分析客戶與表單和�
 
 1. 導覽至https://&lt;host>:&lt;port>/aem/forms的Forms Manager，並執行下列動作：
 
-   * 開啟We.Finance或We.Gov檔案夾，並選取您要查看報表的表單。
+   * 開啟We.Finance或We.Gov檔案夾，並選取您要檢視報表的表單。
    * 按一下「動作工具列」中的「啟用分析」。 啟用表單分析後，按一下「分析報表」。 您可以看到產生的空白報表。 產生空白報表後，您必須提供refsite套件隨附的種子資料，才能產生分析報表以進行示範。
 
    參考網站提供分析報告，提供信用卡、住房抵押和子系支援使用案例的種子資料。 如需種子資料的設定，請參 [閱We.Finance參考網站逐步說明](/help/forms/using/finance-reference-site-walkthrough.md) , [以及We.Gov參考網站逐步說明](/help/forms/using/gov-reference-site-walkthrough.md)。
