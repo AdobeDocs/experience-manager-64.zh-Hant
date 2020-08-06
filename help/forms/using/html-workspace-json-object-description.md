@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2134'
+ht-degree: 2%
 
 ---
 
@@ -76,12 +79,12 @@ AEM Forms工作區中使用的JSON物件說明如下。
    | 說明 | F | 它包含起點的說明。 |
    | 名稱 | F | 它包含起點的名稱。 |
    | serializedImageTicket | F | 它包含與起點對應的影像票證。 此影像票證用於起始點的imageUrl欄位，以從伺服器取得起始點的影像。 |
-   | serviceName | F | 它包含起點服務的名稱。 |
+   | serviceName | F | It contains name of the service for startpoint. |
    | startpointId | F | 它包含起始點的ID。 |
    | isFavorite | T | 表示起點是否為收藏點。 如果startpoint是favorite，則返回true；否則返回false。 |
    | isDefaultImage | T | 表示是否為進程指定映像。 如果沒有與進程相關聯的影像，則返回true；否則返回false。 |
    | 任務 | T | 它包含調用起點時建立的任務。 |
-   | imageUrl | T | 它包含與起點對應之影像的url。 |
+   | imageUrl | T | It contains url of the image corresponding to the startpoint. |
 
 1. 任務
 
@@ -97,27 +100,27 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>classOfTask</td> 
    <td>F</td> 
-   <td>當任務為lc8任務時，任務類為「LC8」，否則為「標準」。<br /> </td> 
+   <td>Class of task is 'LC8' when task is lc8 task else 'Standard'.<br /> </td> 
   </tr>
   <tr>
    <td>completeTime<br /> </td> 
    <td>F</td> 
-   <td>它包含任務完成時的時間戳記。<br /> </td> 
+   <td>It contains the time stamp when task is completed.<br /> </td> 
   </tr>
   <tr>
    <td>consultGroupId<br /> </td> 
    <td>F</td> 
-   <td>它包含可咨詢任務的組的ID。 它是在工藝設計過程中設定的。<br /> </td> 
+   <td>It contains ID of a group to which task can be consulted. It is set during the process designing.<br /> </td> 
   </tr>
   <tr>
    <td>createTime<br /> </td> 
    <td>F</td> 
-   <td>它包含建立任務時的時間戳。<br /> </td> 
+   <td>It contains the time stamp when task is created.<br /> </td> 
   </tr>
   <tr>
    <td>creationId<br /> </td> 
    <td>F</td> 
-   <td>它包含建立任務的用戶的ID。<br /> </td> 
+   <td>It contains the id of the user who created the task.<br /> </td> 
   </tr>
   <tr>
    <td>currentAssignment<br /> </td> 
@@ -127,7 +130,7 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>期限<br /> </td> 
    <td>F</td> 
-   <td>它包含任務到達期限的時間戳記。<br /> </td> 
+   <td>It contains the time stamp that when a task will reach its deadline.<br /> </td> 
   </tr>
   <tr>
    <td>說明<br /> </td> 
@@ -142,7 +145,7 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>forwardGroupId<br /> </td> 
    <td>F</td> 
-   <td>它包含可轉發任務的組的ID。 它是在工藝設計過程中設定的。<br /> </td> 
+   <td>It contains ID of a group to which task can be forwarded. It is set during the process designing.<br /> </td> 
   </tr>
   <tr>
    <td>instructions<br /> </td> 
@@ -222,17 +225,17 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>serializedImageTicket<br /> </td> 
    <td>F</td> 
-   <td>它包含與任務對應的映像票證。 此映像票證用於任務的imageUrl欄位中，以從伺服器獲取任務的映像。<br /> <br /> </td> 
+   <td>它包含與任務對應的映像票證。 This image ticket is used in imageUrl field of task, to get image for task from the server.<br /> <br /> </td> 
   </tr>
   <tr>
    <td>serviceName<br /> </td> 
    <td>F</td> 
-   <td>它包含任務服務的名稱。<br /> </td> 
+   <td>It contains name of the service for task.<br /> </td> 
   </tr>
   <tr>
    <td>serviceTitle<br /> </td> 
    <td>F</td> 
-   <td>它包含任務服務的標題。<br /> </td> 
+   <td>It contains title of the service for task.<br /> </td> 
   </tr>
   <tr>
    <td>狀態<br /> </td> 
@@ -347,7 +350,7 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>pendingTasks<br /> </td> 
    <td>T</td> 
-   <td>它包含任務進程實例的待定任務清單。<br /> </td> 
+   <td>It contains list of pending tasks for the task's process instance.<br /> </td> 
   </tr>
   <tr>
    <td>userActions<br /> </td> 
@@ -384,7 +387,7 @@ AEM Forms工作區中使用的JSON物件說明如下。
 
 1. 篩選
 
-   篩選器基本上是使用者或群組的佇列。 將任務分配給用戶／組時，該任務將添加到相應的隊列中。
+   Filter is basically queue of user or group. 將任務分配給用戶／組時，該任務將添加到相應的隊列中。
 
 <table> 
  <tbody>
@@ -401,34 +404,34 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>名稱<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>隊列所有者的名稱。<br type="_moz" /> </td> 
+   <td>Name of the owner of the queue.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>qid</td> 
    <td>F</td> 
-   <td>佇列的ID。<br type="_moz" /> </td> 
+   <td>Id of the queue.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>類型</td> 
    <td>F</td> 
-   <td>它包含隊列的類型。<br /> 0 —— 用戶隊列。<br /> 1. 共用佇列。<br /> 2. 群組佇列。<br type="_moz" /> </td> 
+   <td>它包含隊列的類型。<br /> 0 - User queue.<br /> 1. 共用佇列。<br /> 2. 群組佇列。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>查詢</td> 
    <td>T</td> 
-   <td>這包含與篩選器關聯的查詢。 此查詢用於從完整任務清單中搜索任務。<br type="_moz" /> </td> 
+   <td>This contains query associated with a filter. This query is used to search tasks from complete tasklist.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>任務</td> 
    <td>T</td> 
-   <td>它包含屬於篩選器的所有任務的清單。<br type="_moz" /> </td> 
+   <td>It contains list of all tasks that belongs to a filter.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
 
-1. 外出
+1. Out-of-Office
 
-   您可以管理離職時間表，並控制指派給您的工作流程。
+   You can manage your out-of-office schedule and control the flow of tasks assigned to you in your absence.
 
 <table> 
  <tbody>
@@ -440,7 +443,7 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>dateRanges<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>它包含用戶的不在辦公室時間表的陣列對象。 在每個計畫對象中，startDate欄位包含計畫的開始日期和dendDate欄位包含計畫的結束日期。 如果endDate在排程中為null，表示使用者尚未排程離職排程的結束日期。<br type="_moz" /> </td> 
+   <td>It contains array objects of out-of-office schedules of a user. In each schedule object, startDate field contains schedule's start date andendDate field contains schedule's end date. 如果endDate在排程中為null，表示使用者尚未排程離職排程的結束日期。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>isNoPrimaryDesignate<br type="_moz" /> </td> 
@@ -465,10 +468,10 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>processes<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>它包含用戶可用的所有進程的清單。<br type="_moz" /> </td> 
+   <td>It contains a list of all processes that are available to the user.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>initialOutOfficeSettings<br type="_moz" /> </td> 
+   <td>initialOutOfOfficeSettings<br type="_moz" /> </td> 
    <td>T</td> 
    <td>它包含最初提取的用戶的初始離職設定。<br type="_moz" /> </td> 
   </tr>
@@ -485,9 +488,9 @@ AEM Forms工作區中使用的JSON物件說明如下。
  </tbody>
 </table>
 
-1. 流程實例
+1. Process Instance
 
-   通過工作區或工作台調用流程時，將建立流程實例。
+   A process instance is created when a process is invoked via workspace or workbench.
 
 <table> 
  <tbody>
@@ -499,17 +502,17 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>說明<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>流程實例說明<br type="_moz" /> </td> 
+   <td>Description of process instance<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>啟動器</td> 
    <td>F</td> 
-   <td>進程實例的啟動器名稱。<br type="_moz" /> </td> 
+   <td>Name of initiator of a process instance.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>initiatorId</td> 
    <td>F</td> 
-   <td>進程實例的啟動器ID。<br type="_moz" /> </td> 
+   <td>ID of initiator of process instance.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processCompleteTime<br type="_moz" /> </td> 
@@ -519,27 +522,27 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>processInstanceId<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>進程實例的ID。<br type="_moz" /> </td> 
+   <td>ID of process instance.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 =已啟動<br /> 1 =運行<br /> 2 =完成3 =完成<br /> 4 =終止<br /> 5 =終止6 =暫停7 =暫停<br /><br /><br /><br /> 8 =取消暫停<br type="_moz" /> </td> 
+   <td>0 = Initiated<br /> 1 = Running<br /> 2 = Complete<br /> 3 = Completing<br /> 4 = Terminated<br /> 5 = Terminating<br /> 6 = Suspended<br /> 7 = Suspending<br /> 8 = Unsuspending<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processName<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>進程的名稱。<br type="_moz" /> </td> 
+   <td>Name of the process.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processStartTime<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>進程啟動時的時間戳記。<br type="_moz" /> </td> 
+   <td>Time stamp when process started.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processVariables<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>流程變數的對象陣列。 每個進程變數對象都包含進程變數名、進程變數值和進程變數類型。<br type="_moz" /> </td> 
+   <td>Array of objects of process variables. 每個進程變數對象都包含進程變數名、進程變數值和進程變數類型。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>任務清單<br type="_moz" /> </td> 
@@ -576,12 +579,12 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>processTitle<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>流程的標題。<br type="_moz" /> </td> 
+   <td>Title of the process.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>processInstanceList<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>此流程的流程實例清單。<br type="_moz" /> </td> 
+   <td>List of process instances for this process.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
@@ -600,12 +603,12 @@ AEM Forms工作區中使用的JSON物件說明如下。
   <tr>
    <td>assignmentCreateTime<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>建立任務的此分配時的時間戳。<br type="_moz" /> </td> 
+   <td>Time stamp when this assignment of a task is created.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>assignmentType<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 =初始分配<br /> 1 =轉發（任務已轉發給任務的當前所有者）。<br /> 2 =返回（任務已由任務的前一個所有者返回給任務的當前所有者。）<br /> 3 =已請求（任務的當前所有者已請求任務）。<br /> 4 =呈報（呈報後，任務已指派給任務的當前擁有者。）<br /> 5 =已分配管理員（管理員已將任務分配給當前任務的所有者。）<br /> 6 =已咨詢任務（已咨詢任務的當前責任人）。<br type="_moz" /> </td> 
+   <td>0 =初始分配<br /> 1 =轉發（任務已轉發給任務的當前所有者）。<br /> 2 = Returned (Task has been returned to current owner of task by previous owner of task.)<br /> 3 = Claimed (Task has been claimed by current owner of task.)<br /> 4 =呈報（呈報後，任務已指派給任務的當前擁有者。）<br /> 5 =已分配管理員（管理員已將任務分配給當前任務的所有者。）<br /> 6 =已咨詢任務（已咨詢任務的當前責任人）。<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td> 
