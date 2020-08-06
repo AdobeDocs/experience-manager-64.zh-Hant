@@ -1,6 +1,6 @@
 ---
-title: 'AEM Managed services的Adobe IMS驗證和管理控制台支援 '
-seo-title: 'AEM Managed services的Adobe IMS驗證和管理控制台支援 '
+title: 'AEM Managed Services的Adobe IMS驗證和管理控制台支援 '
+seo-title: 'AEM Managed Services的Adobe IMS驗證和管理控制台支援 '
 description: 瞭解如何在AEM中使用Admin Console。
 seo-description: 瞭解如何在AEM中使用Admin Console。
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
@@ -11,27 +11,30 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1804'
+ht-degree: 14%
 
 ---
 
 
-# AEM Managed services的Adobe IMS驗證和管理控制台支援 {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# AEM Managed Services的Adobe IMS驗證和管理控制台支援 {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
 >[!NOTE]
 >
->請注意，此功能僅適用於Adobe Managed services客戶。
+>請注意，此功能僅適用於Adobe Managed Services客戶。
 
 ## 簡介 {#introduction}
 
-AEM 6.4.3.0針對 **AEM Managed services客戶推出Admin Console支援AEM例項和Adobe IMS(Identity Management System)型驗證** 。
+AEM 6.4.3.0針對 **AEM Managed Services客戶推出Admin Console支援AEM例項和Adobe IMS(Identity Management System)型驗證** 。
 
-AEM登入Admin Console可讓AEM Managed services客戶在單一主控台中管理所有Experience cloud使用者。 「使用者」和「群組」可指派給與AEM例項關聯的產品設定檔，允許他們登入特定例項。
+AEM登入Admin Console可讓AEM Managed Services客戶在單一主控台中管理所有Experience Cloud使用者。 「使用者」和「群組」可指派給與AEM例項關聯的產品設定檔，允許他們登入特定例項。
 
 ## 重要焦點 {#key-highlights}
 
 * AEM IMS驗證支援僅適用於AEM作者、管理員或開發人員，不適用於客戶網站（如網站訪客）的外部使用者
-* Admin Console會將AEM Managed services客戶代表為IMS組織，其例項則代表為產品內容。 客戶系統和產品管理員將能夠管理例項的存取權
-* AEM Managed services將會將客戶拓撲與Admin Console同步。 在「管理控制台」中，每個例項都會有一個AEM Managed services產品內容例項。
+* Admin Console會將AEM Managed Services客戶代表為IMS組織，其例項則代表為產品內容。 客戶系統和產品管理員將能夠管理例項的存取權
+* AEM Managed Services將會將客戶拓撲與Admin Console同步。 在「管理控制台」中，每個例項都會有一個AEM Managed Services產品內容例項。
 * Admin Console中的產品設定檔將決定使用者可存取的例項
 * 支援使用客戶自己的SAML 2相容身分提供者的同盟驗證
 * 僅支援Enterprise ID或Federated ID（針對客戶單一登入），不支援個人Adobe ID。
@@ -39,7 +42,7 @@ AEM登入Admin Console可讓AEM Managed services客戶在單一主控台中管�
 
 ## 架構 {#architecture}
 
-IMS驗證可在AEM和Adobe IMS端點之間使用OAuth通訊協定運作。 當使用者新增至IMS並擁有Adobe Identity後，他們就可以使用IMS憑證登入AEM Managed services例項。
+IMS驗證可在AEM和Adobe IMS端點之間使用OAuth通訊協定運作。 當使用者新增至IMS並擁有Adobe Identity後，他們就可以使用IMS憑證登入AEM Managed Services例項。
 
 使用者登入流程如下所示，使用者將被重新導向至IMS，或選擇性地重新導向至客戶IDP進行SSO驗證，然後重新導向回AEM。
 
@@ -49,11 +52,11 @@ IMS驗證可在AEM和Adobe IMS端點之間使用OAuth通訊協定運作。 當�
 
 ### 在 Admin Console 中佈建組織{#onboarding-organizations-to-admin-console}
 
-客戶上線至Admin console是使用Adobe IMS進行AEM驗證的先決條件。
+客戶上線至Admin Console是使用Adobe IMS進行AEM驗證的先決條件。
 
-首先，客戶應在Adobe IMS中布建組織。 Adobe企業客戶在 [Adobe Admin Console中以IMS組織的形式呈現](https://helpx.adobe.com/enterprise/using/admin-console.html)。
+首先，客戶應在Adobe IMS中布建組織。 Adobe企業客戶在 [Adobe Admin Console中以IMS組織的形式呈現](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)。
 
-AEM Managed services客戶應已布建組織，而且作為IMS布建的一部分，客戶例項將會提供在Admin Console中，以管理使用者權益和存取權。
+AEM Managed Services客戶應已布建組織，而且作為IMS布建的一部分，客戶例項將會提供在Admin Console中，以管理使用者權益和存取權。
 
 AMS和客戶將攜手合作，將使用者驗證移轉至IMS，讓每個客戶都能完成工作流程。
 
@@ -69,9 +72,9 @@ AMS和客戶將攜手合作，將使用者驗證移轉至IMS，讓每個客戶�
 
 >[!NOTE]
 >
->如需Adobe Identity Management Basics（包括IDP設定）的詳細資訊，請參閱本 [頁文章。](https://helpx.adobe.com/enterprise/using/set-up-identity.html)
+>如需Adobe Identity Management Basics（包括IDP設定）的詳細資訊，請參閱本 [頁文章。](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)
 >
->如需有關「企業管理」和「管理控制台」的詳細資訊，請參閱 [本頁文章](https://helpx.adobe.com/enterprise/managing/user-guide.html)。
+>如需有關「企業管理」和「管理控制台」的詳細資訊，請參閱 [本頁文章](https://helpx.adobe.com/tw/enterprise/managing/user-guide.html)。
 
 ### 將使用者上線至Admin Console {#onboarding-users-to-the-admin-console}
 
@@ -85,7 +88,7 @@ AMS和客戶將攜手合作，將使用者驗證移轉至IMS，讓每個客戶�
 
 客戶可在 Admin Console UI 中手動建立使用者和群組。如果沒有大量使用者可管理，則可使用此方法。 例如，少於50位AEM使用者。
 
-如果客戶已使用此方法管理其他Adobe產品，例如Analytics、Target或Creative cloud應用程式，也可以手動建立使用者。
+如果客戶已使用此方法管理其他Adobe產品，例如Analytics、Target或Creative Cloud應用程式，也可以手動建立使用者。
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
@@ -99,7 +102,7 @@ AMS和客戶將攜手合作，將使用者驗證移轉至IMS，讓每個客戶�
 
 使用者同步工具（簡稱UST）可讓企業客戶使用Active Directory或其他經測試的OpenLDAP目錄服務來建立或管理Adobe使用者。 目標用戶是IT Identity Administrators（Enterprise Directory和系統管理員），他們將能夠安裝和配置此工具。 開放原始碼工具可自訂，讓客戶可讓開發人員修改它以符合其特定需求。
 
-當使用者同步執行時，會從組織的Active Directory（或任何其他相容的資料來源）擷取使用者清單，並與管理控制台中的使用者清單進行比較。 接著，系統會呼叫 Adobe User Management API，將 Admin Console 與組織的目錄同步。改變流程完全是單向的；在「管理控制台」中所做的任何編輯都不會推送至目錄。
+當使用者同步執行時，會從組織的Active Directory（或任何其他相容的資料來源）擷取使用者清單，並與管理控制台中的使用者清單進行比較。 接著，系統會呼叫 Adobe User Management API，將 Admin Console 與組織的目錄同步。改變流程完全是單向的； 在「管理控制台」中所做的任何編輯都不會推送至目錄。
 
 此工具可讓系統管理員將客戶目錄中的使用者群組與管理控制台中的產品設定和使用者群組對應，而新的UST版本也允許在管理控制台中動態建立使用者群組。
 
@@ -133,7 +136,7 @@ AMS和客戶將攜手合作，將使用者驗證移轉至IMS，讓每個客戶�
 
 >[!NOTE]
 >
->AEM IMS設定將由Adobe Managed services團隊處理。 但是，客戶管理員可依其需求（例如「自動群組成員資格」或「群組對應」）來修改它。 IMS用戶端也將由您的受管理服務團隊註冊。
+>AEM IMS設定將由Adobe Managed Services團隊處理。 但是，客戶管理員可依其需求（例如「自動群組成員資格」或「群組對應」）來修改它。 IMS用戶端也將由您的受管理服務團隊註冊。
 
 ## 使用方式 {#how-to-use}
 
