@@ -9,6 +9,9 @@ topic-tags: hTML5_forms
 discoiquuid: b8cd2656-8bc2-4bd7-a3d6-dc76b0a2d429
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 0%
 
 ---
 
@@ -43,4 +46,4 @@ AEM也提供統一檢視，以列出並管理使用AEM Forms UI的所有表單�
 
 ### 自訂表單 {#forms-customization}
 
-HTML5表格會使用標準HTML5結構轉換表單範本。 這可讓您輕鬆使用網頁技術（主要是CSS和JavaScript），自訂和擴充HTML5格式的表單。 您可以輕鬆自訂現有Widget的外觀、建立您自己的自訂Widget，或在表單中使用自訂樣式。 如需建立自訂Widget和自訂現有Widget的詳細資訊，請參 [閱「使用HTML5表單插入自訂Widget](/help/forms/using/custom-widgets.md)」。
+HTML5表格會使用標準HTML5結構轉換表單範本。 這可讓您輕鬆使用網頁技術（主要是CSS和JavaScript），自訂和擴充HTML5格式的表單。 您可以輕鬆自訂現有Widget的外觀、建立您自己的自訂Widget，或在表單中使用自訂樣式。 如需建立自訂Widget和自訂現有Widget的詳細資訊，請參 [閱「使用HTML5表格插入自訂Widget](/help/forms/using/custom-widgets.md)」。
