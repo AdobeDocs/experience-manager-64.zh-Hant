@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 3%
 
 ---
 
@@ -37,7 +40,7 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ## 發佈環境存取 {#publish-environment-access}
 
-從已發佈的社群網站存取「協調控制台」是透過「管理」連結，當社群協調者登入時，此連結會顯示。
+從已發佈的社群網站存取「協調」主控台是透過「管理」連結，當社群協調者登入時，此連結會顯示。
 
 ![publishweretail](assets/publishweretail.png)
 
@@ -49,7 +52,7 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 在作者環境中，若要進入「協調」主控台
 
-* 從全域導覽：導 **[!UICONTROL 覽>社群>協調]**
+* 從全域導覽： **[!UICONTROL 導覽>社群>協調]**
 
 只有以管理員身分登入或以會員身分登入時，才 ` [moderator permissions](in-context.md#identifyingtrustedmembers)`能執行協調工作。 唯一顯示的社群內容是允許登入會員協調的社群內容。
 
@@ -122,7 +125,7 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ![searchicon](assets/searchicon.png)
 
-當篩選邊欄開啟時，「搜尋」圖示會切換側面板關閉。 不過，若要關閉篩選邊欄並僅檢視使用者產生的內容，請按一下「搜尋」圖示並選取「僅限內容」選項。
+當篩選邊欄開啟時，「搜尋」圖示會切換側面板關閉。 不過，若要關閉篩選邊欄並僅檢視使用者產生的內容，請按一下「搜尋」圖示並選取「僅內容」選項。
 
 #### 內容路徑 {#content-path}
 
