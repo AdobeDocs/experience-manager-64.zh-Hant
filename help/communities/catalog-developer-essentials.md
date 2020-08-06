@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 2%
 
 ---
 
@@ -93,7 +96,7 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
    * 新增多重屬性
 
       * 名稱: `se_resource-tags`
-      * 類型：字串
+      * 類型： 字串
       * 值： *&lt;輸入[TagID](#pre-filter-tagids)>*
       * 選擇 **[!UICONTROL 多]**
       * 選擇「添 **[!UICONTROL 加」]**
