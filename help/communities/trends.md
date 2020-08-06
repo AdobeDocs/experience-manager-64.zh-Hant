@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 93a112fc-ef34-4281-89b8-a0f1b3d3aca9
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '360'
+ht-degree: 4%
 
 ---
 
@@ -43,7 +46,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## 配置社區活動清單 {#configuring-community-activity-list}
+## 配置社區活動清單  {#configuring-community-activity-list}
 
 選擇要訪問 `Community Activity List` 的已放置元件，並選 `Configure` 擇開啟編輯對話框的表徵圖。
 
@@ -60,6 +63,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
    從
    * `Members`
    * `Content`
+
    預設為 `Members`。
 
 * **[!UICONTROL 顯示標題]**
@@ -81,6 +85,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
    * `Posts`（建立UGC）
    * `Follows`
    * `Likes`
+
    預設為「檢視」。
 
 * **[!UICONTROL 時間段]**
@@ -92,6 +97,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
    * `Last 90 days`
    * `This year (since Jan 1st)`
    * `Total`
+
    預設為 `Total`。
 
 * **[!UICONTROL 內容路徑]**
@@ -108,12 +114,12 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## 包含4個元件的範例頁面 {#example-page-with-components}
 
-**熱門訪客** 設定：類型=成員，活動類型=視圖
+**熱門訪客** 設定： 類型=成員，活動類型=視圖
 
-**熱門參與者** (Top Contributors)設定：類型=成員，活動類型=貼文
+**熱門參與者** (Top Contributors)設定： 類型=成員，活動類型=貼文
 
-**主要內容** (Top Content)設定：類型=內容，活動類型=檢視，
+**主要內容** (Top Content)設定： 類型=內容，活動類型=檢視，
 
-**趨勢內容** 設定：類型=內容，活動類型=貼文
+**趨勢內容** 設定： 類型=內容，活動類型=貼文
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
