@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7c0a9120-2edb-431b-b460-68398832d5ec
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1066'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 識別功能為登入網站訪客（社群成員）在發佈環境中提供一個區域，以便：
 
-* 創造想法與社群分享
+* 建立想法以與社群分享
 * 觀念與評論
 * 遵循構想
 * 就構想投票
@@ -51,7 +54,8 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 在「設 **[!UICONTROL 定]** 」標籤下，指定構想和留言的設定：
 
-* **[!UICONTROL 構想標]**&#x200B;題構想的顯示標題。 預設為 `Ideation`。
+* **[!UICONTROL 構想標]**&#x200B;題構想的顯示標題。 預設值為 
+`Ideation`。
 
 * **[!UICONTROL 構想描]**&#x200B;述要顯示為構想子標題的說明。 預設值為無說明。
 
@@ -67,9 +71,11 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * **[!UICONTROL 允許檔案上載]**&#x200B;如果選中此選項，則允許將檔案附件添加到構想或注釋中。 預設為未勾選。
 
-* **[!UICONTROL 最大檔案大小]**&#x200B;僅在勾選時 `Allow File Uploads` 相關。 此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
+* **[!UICONTROL 最大檔案大小]**&#x200B;僅在 
+`Allow File Uploads` 已勾選。 此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
 
-* **[!UICONTROL 允許的檔案類型]**&#x200B;僅在選中時 `Allow File Uploads` 相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
+* **[!UICONTROL 允許的檔案類型]**&#x200B;僅與 
+`Allow File Uploads` 已勾選。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
 
 * **[!UICONTROL 僅當勾選「允許上傳檔案]**」時，附加影像檔案大小的上限才相關。 上傳的影像檔案的位元組數上限。 預設值為2097152(2 Mb)。
 
@@ -109,19 +115,24 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 在「標 **[!UICONTROL 記」欄位]** (Tag field **** )標籤下，可套用的標籤（如果允許）會根據選擇的名稱空間加以限制。
 
-* **[!UICONTROL 如果已勾選「]**&#x200B;設定」標 `Allow Tagging` 簽下的「允許的命名空 **間** 」, 可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
+* **[!UICONTROL 允許的名稱空間]**&#x200B;相關(如果 
+`Allow Tagging` 已勾選「設定」 **標籤** 。 可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
 
-* **[!UICONTROL 建議限]**&#x200B;制輸入要作為建議顯示給發佈到論壇的成員的標籤數。 值- **** 1表示無限制。 預設值為0。
+* **[!UICONTROL 建議限]**&#x200B;制輸入要作為建議顯示給發佈到論壇的成員的標籤數。 值 
+**-** 1表示無限制。 預設值為0。
 
 ### 「排序設定」頁籤 {#sort-settings-tab}
 
 在「排 **[!UICONTROL 序設定]** 」標籤下，指定顯示張貼留言的排序方式。
 
-* **[!UICONTROL 排序依據]**&#x200B;檢查所有允許的排序選擇： `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`。 預設為 `Newest, Oldest, Last Updated`。
+* **[!UICONTROL 排序依據]**&#x200B;檢查所有允許的排序選擇： 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 預設為 `Newest, Oldest, Last Updated`。
 
-* **[!UICONTROL 設定為「預設]**」(Default)下拉式選項，以選擇一個選定的排序選項作為預設選項顯示。 預設為 `Newest`。
+* **[!UICONTROL 設定為「預設]**」(Default)下拉式選項，以選擇一個選定的排序選項作為預設選項顯示。 預設值為 
+`Newest`。
 
-* **[!UICONTROL 選取「Analytics排序下拉式]**&#x200B;的時間選項」以選取其中一 `All, Last 24 Hours, Last 7 Days, Last 30 Days`個。 預設為 `All`。
+* **[!UICONTROL 選取Analytics排序下拉式選]**&#x200B;項以選取其中一個 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. 預設為 `All`。
 
 ## 網站訪客體驗 {#site-visitor-experience}
 
@@ -145,7 +156,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 #### 提供意見回應 {#providing-feedback}
 
-一旦發佈構想後，其他成員就可以登入、開啟構想( `Read More`)並像構想一樣，進而增加選票計數，並加上意見。
+一旦發佈構想，其他成員就可以登入、開啟構想( `Read More`)並像構想一樣，進而增加選票計數，並加上意見。
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
