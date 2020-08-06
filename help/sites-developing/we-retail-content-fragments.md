@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '454'
+ht-degree: 4%
 
 ---
 
@@ -36,18 +39,19 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >**「內容片段** 」和「 **[體驗片段](/help/sites-authoring/experience-fragments.md)**」是AEM中的不同功能：
 >
 >* **內容片段** 是編輯內容，主要是文字和相關影像。 它們是純粹的內容，不需要設計和版面配置。
->* **體驗片段** ，內容已完整排版；網頁的片段。
+>* **體驗片段** ，內容已完整排版； 網頁的片段。
+
 >
 >
 「體驗片段」可以包含內容片段的形式，但不能以相反的方式包含。
 
 ## 在We.Retail中尋找內容片段的位置 {#where-to-find-content-fragments-in-we-retail}
 
-We.Retail中有數個範例內容片段；透過「 **Assets」（資產）、「** Files **」（檔案）、「** Retail **」（零售）、「Retail**」（英文）、「 ******** Experiences」（體驗）進行導覽。
+We.Retail中有數個範例內容片段； 透過「 **Assets」（資產）、「** Files **」（檔案）、「** Retail **」（零售）、「Retail**」（英文）、「 ******** Experiences」（體驗）進行導覽。
 
 其中包括 **Lofoten的北極衝浪**，這是一塊碎片，以及相關的視覺資產：
 
-* 透過Navigate **Assets**、Files **、** Retail **、Exglish Assets、************** Experiences、Artic Surfing in Lofoten（線上衝浪）瀏覽：
+* 透過Navigate **Via**, Files **,** Retail **, English Assets,************** Experiences, Artic Surfing in Lofoten（線上衝浪）瀏覽：
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
