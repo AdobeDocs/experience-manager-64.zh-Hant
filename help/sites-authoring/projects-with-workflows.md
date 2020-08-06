@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 9%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->&amp;ast;這些工作流程不是從「專案」中的「工 **作流程** 」方塊啟動。 請參 [閱建立資產的語言副本。](/help/sites-administering/tc-manage.md)
+>&amp;ast; 這些工作流程不是從「專案」中的「工 **作流程** 」方塊啟動。 請參 [閱建立資產的語言副本。](/help/sites-administering/tc-manage.md)
 
 不論您選擇何種工作流程，啟動和完成工作流程的步驟都相同。 只有步驟會變更。
 
@@ -65,13 +68,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
-1. 按一下 **建立**。工作流程開始。 該任務將顯示在「任 **務** 」表徵圖中。
+1. 按一下&#x200B;**建立**。工作流程開始。 該任務將顯示在「任 **務** 」表徵圖中。
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
 ## 產品像片拍攝工作流程 {#product-photo-shoot-workflow}
 
-Creative project將詳細說明產品像片拍攝工作流程（不論是商務還是非商務） [的相關內容](/help/sites-authoring/managing-product-information.md)。
+Creative Project將詳細說明產品像片拍攝工作流程（不論是商務還是非商務） [的相關內容](/help/sites-authoring/managing-product-information.md)。
 
 ## 專案核准工作流程 {#project-approval-workflow}
 
@@ -82,7 +85,7 @@ Creative project將詳細說明產品像片拍攝工作流程（不論是商務�
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
-1. 按一下 **建立**。工作流程開始。 該任務將顯示在「任 **務** 」表徵圖中。
+1. 按一下&#x200B;**建立**。工作流程開始。 該任務將顯示在「任 **務** 」表徵圖中。
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
@@ -95,7 +98,7 @@ Creative project將詳細說明產品像片拍攝工作流程（不論是商務�
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. 按一下 **建立**。工作流程開始。 **工作流將出現在「工**&#x200B;作流&#x200B;**」清單中(按一下省略**&#x200B;號……)。(在「工 **作流程** 」表徵圖上)。
+1. 按一下&#x200B;**建立**。工作流程開始。 工作流將出現在「工 **作流** 」清單中(按一下省略 **號……)。** (在「工 **作流程** 」表徵圖上)。
 
 ## 請求著陸頁面工作流程 {#request-landing-page-workflow}
 
@@ -106,7 +109,7 @@ Creative project將詳細說明產品像片拍攝工作流程（不論是商務�
 
    ![chlimage_1-326](assets/chlimage_1-326.png)
 
-1. 按一下 **建立**。工作流程開始。 該任務將顯示在「任 **務** 」表徵圖中。
+1. 按一下&#x200B;**建立**。工作流程開始。 該任務將顯示在「任 **務** 」表徵圖中。
 
 ## 要求電子郵件工作流程 {#request-email-workflow}
 
@@ -117,7 +120,7 @@ Creative project將詳細說明產品像片拍攝工作流程（不論是商務�
 
    ![chlimage_1-327](assets/chlimage_1-327.png)
 
-1. 按一下 **建立**。工作流程開始。 該任務將顯示在「任 **務** 」表徵圖中。
+1. 按一下&#x200B;**建立**。工作流程開始。 該任務將顯示在「任 **務** 」表徵圖中。
 
    ![chlimage_1-328](assets/chlimage_1-328.png)
 
