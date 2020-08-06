@@ -1,8 +1,8 @@
 ---
 title: 輸出服務
 seo-title: 輸出服務
-description: 說明Output Service，此為AEM Document services的一部分
-seo-description: 說明Output Service，此為AEM Document services的一部分
+description: 說明Output Service，此為AEM Document Services的一部分
+seo-description: 說明Output Service，此為AEM Document Services的一部分
 uuid: acd64bbb-91df-49bc-9216-2e860812bbe9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: 8b96ba2d-007e-472a-875f-2caedd35ecf4
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 >[!NOTE]
 >
->輸出服務是32位元應用程式。 在Microsoft windows上，32位元應用程式最多可使用2 GB的記憶體。 此限制也適用於輸出服務。
+>輸出服務是32位元應用程式。 在Microsoft Windows上，32位元應用程式最多可使用2 GB的記憶體。 此限制也適用於輸出服務。
 
 ## 建立非互動式表單檔案 {#creating-non-interactive-form-documents}
 
