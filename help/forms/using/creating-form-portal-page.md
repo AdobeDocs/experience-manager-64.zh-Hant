@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1622'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ Forms Portal元件預設無法使用。 請確定下清單單入口元件類別�
 
 在AEM網站頁面上啟用這些類別後，這些元件類別就可供元件瀏覽器使用。
 
-![](assets/component-categories.png) AEM Forms Portal元件在元件瀏覽器中&#x200B;****&#x200B;圖： *Forms Portal元件類別*
+![AEM Forms Portal元件在元件瀏覽器中](assets/component-categories.png)**圖：** *Forms Portal元件類別*
 
 ## Search &amp; Lister元件 {#search-amp-lister-component}
 
@@ -39,7 +42,7 @@ Search &amp; Lister元件位於「檔案服務」元件類別下，可用來列�
 
 您可以將Search &amp; Lister元件從元件瀏覽器的「檔案服務」元件類別拖放至頁面上。 新增元件時，其外觀類似下列。
 
-![](assets/fp-grid-viw.png) 頁面圖中的Search &amp; Lister組&#x200B;****&#x200B;件：使 *用格線版面的頁面中的搜尋與線索元件*
+![頁面圖中的Search &amp; Lister組](assets/fp-grid-viw.png)**件：** *使用格線版面配置的頁面中的Search &amp; Lister元件*
 
 ### 清單窗格 {#list-pane}
 
@@ -47,7 +50,7 @@ Search &amp; Lister元件位於「檔案服務」元件類別下，可用來列�
 
 若要設定「清單」窗格，請點選「搜尋與清單器」元件，然後點選 ![settings_icon](assets/settings_icon.png)。 「編 **[!UICONTROL 輯元件]** 」(Edit Component)對話框開啟。
 
-![](assets/edit-list.png) 清單窗格在編輯模式下&#x200B;****&#x200B;圖：列 *表窗格在編輯模式*
+![清單窗格在編輯模式下](assets/edit-list.png)**圖：** *清單窗格處於編輯模式*
 
 「編 **[!UICONTROL 輯]** 」對話框包括幾個頁籤，這些頁籤提供下表中所述的配置選項。 完成 **[!UICONTROL 時]** ，點選「確定」以儲存設定。
 
@@ -116,7 +119,7 @@ Search &amp; Lister元件位於「檔案服務」元件類別下，可用來列�
   <tr> 
    <td> </td> 
    <td>提交URL</td> 
-   <td><p>配置提交表單資料的servlet。</p> <p><strong></strong> 注意：表 <em>單的提交URL可在數處指定，其優先順序如下：</em></p> 
+   <td><p>配置提交表單資料的servlet。</p> <p><strong>注意：</strong> <em>表單的提交URL可在數處指定，其優先順序如下：</em></p> 
     <ol> 
      <li><em>內嵌在表單中的提交URL（在「提交」按鈕中）具有最高優先順序。</em></li> 
      <li><em>AEM Forms UI中提及的提交URL具有第二高的優先順序。</em></li> 
@@ -150,9 +153,9 @@ Search &amp; Lister元件位於「檔案服務」元件類別下，可用來列�
 
 「搜尋」窗格可讓您在AEM Sidekick中，從「檔案服務謂語」類別新增「日期謂語」、「完整文字謂語」、「屬性謂語」和「標籤謂語」元件。 這些元件會實作搜尋功能，讓使用者在列出的表單上執行搜尋。
 
-**** 提示：您 *可以根據預設准則控制表單入口網站上顯示的表單清單，並隱藏使用者的搜尋功能。 要控制表單清單，請使用Predicate元件來應用搜索篩選器。 您也可以指定預設篩選值，並停用「編輯元件」對話方塊的「顯示」索引標籤中的搜尋。*
+**提示：** *您可以根據預設准則控制表單入口網站上顯示的表單清單，並隱藏使用者的搜尋功能。 要控制表單清單，請使用Predicate元件來應用搜索篩選器。 您也可以指定預設篩選值，並停用「編輯元件」對話方塊的「顯示」索引標籤中的搜尋。*
 
-![](assets/search-with-predicates.png) Search Panel with Date、Full Text、Properties和Tags Predicate **** Figure:Search *Panel with Date、Full Text、Properties和Tags Predicate*
+![Search Panel with Date、Full Text、Properties和Tags Predicate](assets/search-with-predicates.png)**Figure:** *Search Panel with Date、Full Text、Properties和Tags Predicate*
 
 #### 日期述詞 {#date-predicate}
 
@@ -163,11 +166,11 @@ Date Predicate元件在添加時，可對在指定持續時間內修改的列出
 1. 點選元件，然後點選 ![settings_icon](assets/settings_icon.png)。 「編輯」(Edit)對話框開啟。
 1. 指定下列項目：
 
-   * **** 類型：唯一可用的選項是「上次修 **[!UICONTROL 改日期」]**。
-   * **** 文字：Date Predicate Component的標籤或標題。 預設值為「上次修 **[!UICONTROL 改日期」]**。
-   * **** 開始日期標籤：開始日期欄位的標籤或標題。
-   * **** 結束日期標籤：結束日期欄位的標籤或標題。
-   * **** 隱藏：若要強制執行預設日期篩選以列出表單。
+   * **[!UICONTROL 類型：]** 唯一可用的選項是「上次修 **[!UICONTROL 改日期」]**。
+   * **[!UICONTROL 文字：]** Date Predicate Component的標籤或標題。 預設值為「上次修 **[!UICONTROL 改日期」]**。
+   * **[!UICONTROL 開始日期標籤：]** 開始日期欄位的標籤或標題。
+   * **[!UICONTROL 結束日期標籤：]** 結束日期欄位的標籤或標題。
+   * **[!UICONTROL 隱藏：]** 若要強制執行預設日期篩選以列出表單。
 
 1. 點選「 **[!UICONTROL 確定]**」。
 
@@ -200,7 +203,7 @@ Properties Predicate元件實現基於表單屬性（如標題、作者和說明
 
 #### 標記述詞 {#tags-predicate}
 
-Tags Predicate元件實現基於在Forms manager中定義的標籤搜索表單。
+Tags Predicate元件實現基於在Forms Manager中定義的標籤搜索表單。
 
 要配置Tags Predicate元件：
 
@@ -221,11 +224,11 @@ Tags Predicate元件實現基於在Forms manager中定義的標籤搜索表單�
 
 ## 行動裝置友好性 {#mobile-device-friendliness}
 
-Forms Portal Search &amp; Lister元件適合行動裝置使用，並可據以調整。 所有三種預設檢視：格點、卡片、面板會根據開啟網站的裝置重新開啟，而網頁也會隨之調整。 簡單的事實是，Search &amp; Lister僅是元件，不管控頁面層級樣式。
+Forms Portal Search &amp; Lister元件適合行動裝置使用，並可據以調整。 所有三種預設檢視： 格點、卡片、面板會根據開啟網站的裝置重新開啟，而網頁也會隨之調整。 簡單的事實是，Search &amp; Lister僅是元件，不管控頁面層級樣式。
 
 下圖顯示在行動裝置上開啟的Search &amp; Lister元件：
 
-![](assets/search_lister.png) Search and Lister元件圖的螢幕擷取&#x200B;****:Search &amp; *Lister元件*
+![Search and Lister元件圖的螢幕擷取](assets/search_lister.png)**:** *Search &amp; Lister元件*
 
 ## 自訂表單入口網站頁面 {#customizing-a-forms-portal-page-br}
 
