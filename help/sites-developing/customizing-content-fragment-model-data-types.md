@@ -10,6 +10,9 @@ discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '1642'
+ht-degree: 1%
 
 ---
 
@@ -71,7 +74,7 @@ source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
 
 * `fieldResourceType`
 
-   用於在內容片段中呈現資料類型的Sling資源類型。 對於能以不同方式呈現的資料類型（例如，作為簡單文本輸入和／或多行文本輸入），必須將此屬性建立為包含所有資源類型的陣列。 屬性 `renderasfield` 將自動添加，以 `fieldProperties` 便用戶選擇需要添加到模型中的資源類型。
+   用於在內容片段中呈現資料類型的Sling資源類型。 對於能以不同方式呈現的資料類型（例如，作為簡單文本輸入和／或多行文本輸入），必須將此屬性建立為包含所有資源類型的陣列。 屬性 `renderasfield` 將自動添加，以 `fieldProperties` 便用戶選擇需要添加到模型的資源類型。
 
 * `fieldPropResourceType`
 
@@ -168,7 +171,7 @@ source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
 
    它包含變數 `fieldRoot`，後續在 `fieldProperties` 建立輸入以擷取正確路徑時可使用此變數。
 
-   範例：要獲取欄位標籤的正 **確路徑** ，您需要使用鍵來標識此標籤所屬的元件，此欄位的輸入應為 `fieldRoot` + `<*fieldLabel*>`
+   範例： 要獲取欄位標籤的正 **確路徑** ，您需要使用鍵來標識此標籤所屬的元件，此欄位的輸入應為 `fieldRoot` + `<*fieldLabel*>`
 
 * `checkboxfields`
 
@@ -220,7 +223,7 @@ source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
 
 * `placeholderfield`
 
-   這是一個文本欄位，用作元件屬 `emptyText` 性的輸入。 所有接受預留位置的資料類型(這並不複雜；例如，單 **行文字**、 **編號**&#x200B;等)。
+   這是一個文本欄位，用作元件屬 `emptyText` 性的輸入。 所有接受預留位置的資料類型(這並不複雜； 例如，單 **行文字**、 **編號**&#x200B;等)。
 
 * `renderasfield`
 
@@ -283,7 +286,7 @@ source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
 1. 在下 `/items` 面，您可以添加新節點來表示新的資料類型：
 
    * 節點類型： `nt:unstructured`
-   * &quot;屬性：請參 [閱定義資料類型的屬性](#defining-the-properties-for-your-data-type)
+   * &quot;屬性： 請參 [閱定義資料類型的屬性](#defining-the-properties-for-your-data-type)
 
 ### 定義資料類型的屬性 {#defining-the-properties-for-your-data-type}
 
@@ -292,7 +295,8 @@ source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
    * `fieldResourceType`
    * `fieldPropResourceType`
    * `fieldViewResourceType`
-   這些定義了如何呈現您的資料類型的元件。 它們可以是任何元件；包括您自己的自訂元件(需要一組相符的 ` [fieldProperties](#fieldproperties)`元件)。
+
+   這些定義了如何呈現您的資料類型的元件。 它們可以是任何元件； 包括您自己的自訂元件(需要一組相符的 ` [fieldProperties](#fieldproperties)`元件)。
 
    在您的資料類型節點上，以適當的值定義這些屬性。
 
@@ -311,6 +315,7 @@ source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
    * `renderType`
    * `valueType`
    * `listOrder`
+
    在您的資料類型節點上，以適當的值定義這些屬性。
 
 ### 使用您的資料類型 {#using-your-data-type}
