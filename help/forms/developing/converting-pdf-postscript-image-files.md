@@ -54,7 +54,7 @@ ht-degree: 0%
 
 **包含專案檔案**
 
-將必要的檔案加入您的開發專案中。 如果要使用Java建立客戶端應用程式，請包括必要的JAR檔案。 如果您使用web services，請確定您包含proxy檔案。
+將必要的檔案加入您的開發專案中。 如果要使用Java建立客戶端應用程式，請包括必要的JAR檔案。 如果您使用web services，請確定您已包含proxy檔案。
 
 **建立轉換PDF用戶端**
 
@@ -238,7 +238,7 @@ ht-degree: 0%
 
 **擷取要轉換的PDF檔案**
 
-您必須擷取PDF檔案才能轉換為影像。 您無法將互動式PDF檔案轉換為影像。 如果您嘗試這麼做，則會擲回例外。 若要將互動式PDF檔案轉換為影像檔，您必須先平面化PDF檔案，才能進行轉換。 (請參閱 [平面化PDF檔案](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。)
+您必須擷取PDF檔案才能轉換為影像。 您無法將互動式PDF檔案轉換為影像。 如果您嘗試這麼做，則會擲回例外。 若要將互動式PDF檔案轉換為影像檔案，您必須先平面化PDF檔案，才能轉換。 (請參閱 [平面化PDF檔案](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。)
 
 **設定執行時期選項**
 
