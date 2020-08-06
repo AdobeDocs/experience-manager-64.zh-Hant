@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 4%
 
 ---
 
@@ -24,6 +27,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    >
 * 某些功能並非在所有控制台中都可用，而／或某些控制台中有其他功能。 有關各個控制台及其相關功能的具體資訊將在其他頁面上詳細介紹。
 >* AEM提供鍵盤快速鍵。 尤其是使用 [控制台](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) , [編輯頁面時](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)。
+
 >
 
 
@@ -56,11 +60,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
   </tr> 
   <tr> 
    <td><strong>啟動</strong></td> 
-   <td>這可協助您管理啟動 <a href="/help/sites-classic-ui-authoring/classic-launches.md">程式</a>;這些功能可讓您針對未來一或多個已啟動網頁的版本開發內容。<br /> 注 <i>意：在觸控式UI中，Sites主控台和「參考」邊欄中提供大部分相同的功能。</i> 如 <i>果需要，此控制台可從工具控制台獲得；依次選擇操作和啟動。</i></td> 
+   <td>這可協助您管理啟動 <a href="/help/sites-classic-ui-authoring/classic-launches.md">程式</a>; 這些功能可讓您針對未來一或多個已啟動網頁的版本開發內容。<br /> <i>注意： 在觸控式UI中，Sites主控台和「參考」邊欄中提供大部分相同的功能。</i> <i>如有需要，此控制台可從「工具」控制台使用； 依次選擇操作和啟動。</i></td> 
   </tr> 
   <tr> 
    <td><strong>收件匣 </strong></td> 
-   <td>在許多情況下，許多人參與了工作流的子任務，每個人必須先完成自己的步驟，然後才將工作交給下一個人。 「收件箱」允許您查看與此類任務相關的通知。 See <a href="/help/sites-administering/workflows.md">Working with Workflows</a>. <br /> </td> 
+   <td>在許多情況下，許多人參與了工作流的子任務，每個人必須先完成自己的步驟，然後才能將工作交給下一個人。 「收件箱」允許您查看與此類任務相關的通知。 See <a href="/help/sites-administering/workflows.md">Working with Workflows</a>. <br /> </td> 
   </tr> 
   <tr> 
    <td><strong>標記</strong></td> 
@@ -68,7 +72,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
   </tr> 
   <tr> 
    <td><strong>工具</strong></td> 
-   <td>「工 <a href="/help/sites-administering/tools-consoles.md">具」控制台</a> ，可讓您存取許多專業工具和控制台，協助您管理網站、數位資產和內容儲存庫的其他方面。</td> 
+   <td>The <a href="/help/sites-administering/tools-consoles.md">Tools consoles</a> provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.</td> 
   </tr> 
   <tr> 
    <td><strong>使用者</strong></td> 
@@ -151,7 +155,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ![page-info](assets/page-info.png)
 
-以下為可用項目：這些欄位的子集顯示為預設值：
+以下為可用項目： 這些欄位的子集顯示為預設值：
 
 <table> 
  <tbody> 
