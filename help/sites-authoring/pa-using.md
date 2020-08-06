@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 translation-type: tm+mt
 source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
 >
 >若要變更更新期間，請 [設定匯入間隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval)。
 
-1. 開啟 **Sites** Console;例如 [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. 開啟 **Sites** Console; 例如 [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 1. 在工具列的最右側（右上角），按一下或點選圖示以選取「清單檢視」( **List View** )(顯示的圖示將視目前 [的檢視而定](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources))。
 
 1. 同樣地，在工具列的最右側（右上角），按一下或點選圖示，然後選取「檢視 **設定」**。 將會 **開啟「配置列** 」對話框。 進行任何必要的變更，並使用「更新」 **進行確認**。
