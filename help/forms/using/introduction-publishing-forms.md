@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 44871fe1-ddc9-492c-8784-5df3ca392f9b
 translation-type: tm+mt
 source-git-commit: da7691a64cebd8c279ec72eca2a41c468a79f9fb
+workflow-type: tm+mt
+source-wordcount: '1086'
+ht-degree: 0%
 
 ---
 
@@ -59,20 +62,20 @@ Link元件允許您在頁面上任意位置建立表單的連結。 假設您提
 
 Forms Portal可讓您將表單從表單儲存庫清單到您的入口網頁。 它也可讓您指定搜尋准則，讓您的入口網站使用者可以在表單清單中搜尋。 您也可以使用「草稿與提交」元件來顯示儲存為草稿的表單，以供日後完成和提交的表單。 您必須先執行特定的作業集，這些功能才能在「網站」頁面上使用。 執行所列順序中的步驟，讓網站頁面提供元件和各自的功能：
 
-1. **啟用Forms Portal元件**:現成可用的表單入口元件無法使用。 [為AEM Sites頁面啟用AEM Sidekick](/help/forms/using/enabling-forms-portal-components.md) 的元件。
-1. **** 列出頁面上的表單（建立表單入口網站頁面）:您可以在AEM Sites和非AEM Site頁面上列出表單。 清單包含發佈例項上可用的表格。 使用者可以開啟表格並開始填寫這些表格。 每當使用者開啟表格時，就會建立新的表格例項：
+1. **啟用Forms Portal元件**: 現成可用的表單入口元件無法使用。 [為AEM Sites頁面啟用AEM Sidekick](/help/forms/using/enabling-forms-portal-components.md) 的元件。
+1. **列出頁面上的表單（建立表單入口網站頁面）:** 您可以在AEM Sites和非AEM Site頁面上列出表單。 清單包含發佈例項上可用的表格。 使用者可以開啟表格並開始填寫這些表格。 每當使用者開啟表格時，就會建立新的表格例項：
 
-   1. **在AEM Sites頁面上列出表單**:將 **[Search &amp; Lister元件新增至頁面，並設定](/help/forms/using/creating-form-portal-page.md)**「清單窗格」**[](/help/forms/using/creating-form-portal-page.md#p-list-pane-p)** ，以列出頁面上的表單。 將「搜尋窗格 **[」元件新增並設定至](/help/forms/using/creating-form-portal-page.md#search-pane)******Search &amp; Lister元件，以新增搜尋功能至頁面。 含有表單入口元件的頁面稱為[表單入口頁面](/help/forms/using/creating-form-portal-page.md)。
-   1. **** 列出非AEM網站頁面上的表單：使用表 [單入口網站搜尋API](/help/forms/using/listing-forms-webpage-using-apis.md) ，在非AEM網站頁面上查詢、擷取和列出表單。
+   1. **在AEM Sites頁面上列出表單**: 將 **[Search &amp; Lister元件新增至頁面，並設定](/help/forms/using/creating-form-portal-page.md)**「清單窗格」**[](/help/forms/using/creating-form-portal-page.md#p-list-pane-p)** ，以列出頁面上的表單。 將「搜尋窗格 **[」元件新增並設定至](/help/forms/using/creating-form-portal-page.md#search-pane)******Search &amp; Lister元件，以新增搜尋功能至頁面。 含有表單入口元件的頁面稱為[表單入口頁面](/help/forms/using/creating-form-portal-page.md)。
+   1. **列出非AEM網站頁面上的表單：** 使用表 [單入口網站搜尋API](/help/forms/using/listing-forms-webpage-using-apis.md) ，在非AEM網站頁面上查詢、擷取和列出表單。
 
-1. **在表單入口網頁上列出草稿和提交的表單**:將「草稿與提交」元件新增及設定至表單入口網站頁面。 元件列出處於草稿狀態的所有表單以及已提交的表單。
+1. **在表單入口網頁上列出草稿和提交的表單**: 將「草稿與提交」元件新增及設定至表單入口網站頁面。 元件列出處於草稿狀態的所有表單以及已提交的表單。
 
    若要啟用已提交的最適化表單，使其顯示在提交標籤中，請將「 **提交」動作****[設為「表單入口網站提交動作」](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/configuring-submit-actions.html)。**或者，啟用「表單入口網站提交」選項。 每當使用者提交表格時，表格就會新增至提交標籤。
 
-1. **** 為草稿和提交的表單資料設定儲存空間：依預設，草稿和提交資料會儲存在AEM儲存庫中。 在生產環境中，建議您不要將草稿或提交的表單資料儲存在AEM儲存庫中。 [設定表單入口元件，將資料儲存至安全位置](/help/forms/using/draft-submission-component.md#customizing-the-storage)。
-1. **** （可選）自訂表單入口元件： 自 [訂表單入口網頁範本](/help/forms/using/customizing-templates-forms-portal-components.md) ，為元件提供獨特的外觀。
-1. **** （可選）將自訂中繼資料新增至表單：將自 [訂中繼資料新增至表單](/help/forms/using/customizing-templates-forms-portal-components.md) ，以改善清單和搜尋體驗。
-1. **** 發佈表單入口網頁：您的表單入口網頁現已準備就緒。 發佈頁面。
+1. **為草稿和提交的表單資料設定儲存空間：** 依預設，草稿和提交資料會儲存在AEM儲存庫中。 在生產環境中，建議您不要將草稿或提交的表單資料儲存在AEM儲存庫中。 [設定表單入口元件，將資料儲存至安全位置](/help/forms/using/draft-submission-component.md#customizing-the-storage)。
+1. **（可選）自訂表單入口元件：**  [自訂表單入口網頁範本](/help/forms/using/customizing-templates-forms-portal-components.md) ，為元件提供獨特的外觀。
+1. **（可選）將自訂中繼資料新增至表單：** [將自訂中繼資料新增至表單](/help/forms/using/customizing-templates-forms-portal-components.md) ，以改善清單和搜尋體驗。
+1. **發佈表單入口網頁：** 您的表單入口網頁現已準備就緒。 發佈頁面。
 
 ## 相關文章 {#related-articles}
 
