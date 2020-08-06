@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '402'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
 
 * [使用用戶端程式庫](../../help/sites-developing/clientlibs.md) ，提供使用詳細資訊以及除錯工具
 * [用於SCF的Clientlibs](client-customize.md#clientlibs) ，它在定制SCF元件時提供有用的資訊
-* [部落格：AEM Client Libraries（由範例說明）](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [部落格： AEM Client Libraries（由範例說明）](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## 為何需要Clientlibs {#why-clientlibs-are-required}
 
@@ -35,11 +38,11 @@ Clientlibs是元件正確運作(JavaScript)和樣式(CSS)的必要條件。
 
 當所需的clientlibs遺失時， [將Communities元件新增至頁面](author-communities.md) ，可能會導致javascript錯誤以及意外的外觀。
 
-### 範例：未使用Clientlibs的置入審核 {#example-placed-reviews-without-clientlibs}
+### 範例： 未使用Clientlibs的置入審核 {#example-placed-reviews-without-clientlibs}
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-### 範例：使用Clientlibs進行置入的審核 {#example-placed-reviews-with-clientlibs}
+### 範例： 使用Clientlibs進行置入的審核 {#example-placed-reviews-with-clientlibs}
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
