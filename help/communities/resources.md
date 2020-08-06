@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '2979'
+ht-degree: 4%
 
 ---
 
@@ -72,7 +75,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 在作者環境中，若要進入資源主控台
 
-* 從全域導覽：導 **[!UICONTROL 覽>社群>資源]**
+* 從全域導覽： **[!UICONTROL 導覽>社群>資源]**
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -127,7 +130,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
    (可&#x200B;*選*)要在成員的分配頁面以及資源控制台中啟用資源的卡片上顯示的影像。 從伺服器的本地檔案系統中選擇映像。 如果未提供影像，則會為上傳的資源產生縮圖。
 
-   ***注意***:建議的影像大小不僅是480 x 480像素。 由於卡片的回應式設計會隨各種瀏覽器尺寸而改變，所以顯示大小會從220 X 165像素變更為400 x 165像素。
+   ***注意***: 建議的影像大小不僅是480 x 480像素。 由於卡片的回應式設計會隨各種瀏覽器尺寸而改變，所以顯示大小會從220 X 165像素變更為400 x 165像素。
 
 * **[!UICONTROL 網站名稱]**
 
@@ -193,7 +196,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 * **[!UICONTROL 新增 Adobe 連線 URL]**
 
-   輸入Adobe connect作業的連結。
+   輸入Adobe Connect作業的連結。
 
    在開啟的對話框中，輸入：
 
@@ -203,7 +206,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
    * **[!UICONTROL URL]**
 
-      Adobe connect作業的URL。
+      Adobe Connect作業的URL。
 
 * **[!UICONTROL 定義外部資源]**
 
@@ -258,6 +261,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
       如果勾選此選項，當社群網站也允許匿名存取時，匿名網站訪客即可檢視目錄中的資源。 預設為未勾選。
 
 * **[!UICONTROL 到期日期]**
+
    *（可選）* ，可以選擇完成分配的日期。
 
 * **[!UICONTROL 資原作者]**
@@ -310,7 +314,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
    (可&#x200B;*選*)要顯示在成員分配頁以及資源控制台中學習路徑的卡片上的影像。 從伺服器的本地檔案系統中選擇映像。 如果未提供影像，則會為上傳的資源產生縮圖。
 
-   ***注意***:建議的影像大小不再是480 x 480像素。 由於卡片的回應式設計會隨各種瀏覽器尺寸而改變，所以顯示大小會從220 X 165像素變更為400 x 165像素。
+   ***注意***: 建議的影像大小不再是480 x 480像素。 由於卡片的回應式設計會隨各種瀏覽器尺寸而改變，所以顯示大小會從220 X 165像素變更為400 x 165像素。
 
 * **[!UICONTROL 網站名稱]**
 
@@ -350,7 +354,9 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
-* **[!UICONTROL 先決條件學習路徑]**(*可選*)選取其他已發佈的學習路徑時，必須先完成這些路徑，學員才能選取此學習路徑。
+* **[!UICONTROL 必備條件學習路徑]**
+(
+*可選*)選取其他已發佈的學習路徑時，必須先完成這些路徑，學員才能選取此學習路徑。
 
 * 選擇下 **[!UICONTROL 一步]**
 
@@ -368,7 +374,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 >[!NOTE]
 >
->您只能選擇與學習路徑位於同一級別的可用資源。 例如，對於在群組中建立的學習路徑，只有群組層級資源可供使用；對於在社群網站中建立的學習路徑，該網站中的資源可供新增至學習路徑。
+>您只能選擇與學習路徑位於同一級別的可用資源。 例如，對於在群組中建立的學習路徑，只有群組層級資源可供使用； 對於在社群網站中建立的學習路徑，該網站中的資源可供新增至學習路徑。
 
 * 選擇 **[!UICONTROL 下一步]**。
 
@@ -378,7 +384,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 * **[!UICONTROL 新增註冊]**
 
-   使用下拉菜單從社區站點成員組的成員和成員組（以粗體列出）中選 [擇](#members-group)。 首次建立學習路徑時，不需要添加指派。 可修改學習路徑屬性，以便稍後新增學員。
+   使用下拉菜單從社區站點成員組的成員和成員組（以粗體顯示）中選擇 [成員](#members-group)。 首次建立學習路徑時，不需要添加指派。 可修改學習路徑屬性，以便稍後新增學員。
 
 * **[!UICONTROL Learning Path Contact&amp;ast;]**
 
@@ -412,7 +418,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ### 編輯資源 {#edit-resource}
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 通過選擇鉛筆表徵圖，使用用於建立啟用資源的顯示步驟，以便可以修改提供的任何資訊。
 
@@ -444,7 +450,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ### 報表 {#report}
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-186](assets/chlimage_1-185.png)
 
 「報表」圖示可讓學員在發佈環境中與指派的啟用資源互動時，存取產生的報表。 報表會依資源類型而異。
 
@@ -492,13 +498,13 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 水準軸是此資源的持續時間。
 
-[需要Marketing cloud組織ID](sites-console.md#enablement)。
+[需要Marketing Cloud組織ID](sites-console.md#enablement)。
 
 #### 依裝置的參與數 {#engagement-by-device}
 
 「依裝置分析參與」報錶針對視訊資源，說明從桌上型電腦和行動裝置播放的檢視百分比。
 
-[需要Marketing cloud組織ID](sites-console.md#enablement)。
+[需要Marketing Cloud組織ID](sites-console.md#enablement)。
 
 #### 被指定者的狀態 {#assignee-status}
 
@@ -546,7 +552,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 「報表摘要」表格可使用控制台上方的按鈕以CSV格式下載。
 
-* 對於啟用資源：按鈕 `Download Resource Report as CSV`
-* 學習路徑：按鈕 `Download Learning Path Report as CSV`
+* 對於啟用資源： `Download Resource Report as CSV` 按鈕
+* 學習路徑： `Download Learning Path Report as CSV` 按鈕
 
 無論選擇要顯示的欄，都會下載完整的報表摘要。
