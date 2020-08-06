@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
 source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+workflow-type: tm+mt
+source-wordcount: '1289'
+ht-degree: 10%
 
 ---
 
@@ -87,7 +90,7 @@ See also [Delivering Optimized Images for a Responsive Site.](responsive-site.md
 
 ## 取得靜態資產的URL {#obtaining-a-url-for-a-static-asset}
 
-Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而已。 支援的靜態資產格式包括：
+Dynamic Media支援傳送靜態資產，這些資產不只是影像和視訊而已。 支援的靜態資產格式包括：
 
 * GIF動畫
 * 音訊檔案
@@ -124,13 +127,13 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 1. 在「 **[!UICONTROL Cloud Services]** 」頁面上 **[!UICONTROL ，向下捲動至「]** Dynamic Media Cloud Services **[!UICONTROL 」標題，然後點選「]** Show Configurations」。
 1. 在「 **[!UICONTROL 可用配置]**」下，點選所需配置的名稱。
 
-1. 在「動 **[!UICONTROL 態Media cloud設定]** 」頁面的「 **[!UICONTROL 視訊服務URL」下]**，複製整個URL路徑。 您稍後在步驟中將需要複製的URL路徑。
+1. 在「動 **[!UICONTROL 態Media Cloud設定]** 」頁面的「 **[!UICONTROL 視訊服務URL」下]**，複製整個URL路徑。 您稍後在步驟中需要複製的URL路徑。
 
    例如，URL路徑可能與下列內容類似：
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
 
 1. 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。
 
@@ -143,7 +146,7 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
 
 1. 依下列順序排列複製的資訊，以形成完整的URL路徑：
 
@@ -155,7 +158,7 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
    這是已發佈視訊轉譯的完整視訊URL。
 
-## 取得適應性串流(HLS)的視訊URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## 取得最適化串流(HLS)的視訊URL {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. 在AEM中，導覽至「工 **[!UICONTROL 具>部署>雲端>雲端服務」]**。
 1. 在「 **[!UICONTROL Cloud Services]** 」頁面上 **[!UICONTROL ，向下捲動至「]** Dynamic Media Cloud Services **[!UICONTROL 」標題，然後點選「]** Show Configurations」。
@@ -163,9 +166,10 @@ Dynamic media支援傳送靜態資產，這些資產不只是影像和視訊而�
 1. 在「動 **[!UICONTROL 態媒體雲端服務設定]** 」頁面上，執行下列動作：
 
    * 在「 **[!UICONTROL 視訊服務URL]**」下，複製整個URL路徑。 您稍後在這些步驟中將需要複製的URL路徑。 例如，URL路徑可能與下列內容類似：
+
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
 
    * 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。您稍後將需要這些步驟中複製的客戶名稱。
 
