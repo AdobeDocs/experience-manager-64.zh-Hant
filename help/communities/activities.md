@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +63,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 ## 後續檢視 {#following-view}
 
-必須配置元件以啟用以下功能。 允許以下功能：部落格 [、論壇](blog-feature.md)、 [QnQn](forum.md)、Filary [brary、elignary行事歷、](working-with-qna.md)[](calendar.md)[](file-library.md)[](comments.md)elicary注釋。
+必須配置元件以啟用以下功能。 允許以下功能：部落格 [、論壇](blog-feature.md)、 [QnQnPn](forum.md)、Filary [brary、elicary行事歷、](working-with-qna.md)[](calendar.md)[](file-library.md)[](comments.md)elicary注釋。
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
