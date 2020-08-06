@@ -277,7 +277,7 @@ AEM的指定例項支援的指令碼引擎清單會列在Felix Management Consol
 
 如果您直接呼叫表示法（指令碼），就會隱藏指令碼內的資源，因此架構(Sling)不再知道。 因此，您會失去某些功能：
 
-* 自動處理http方法（GET除外），包括：
+* 自動處理GET以外的http方法，包括：
 
    * POST、PUT、DELETE，這些處理方式都包含sling預設實作
    * sling: `POST.jsp` resourceType位置中的指令碼
