@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 59b03638-7e1c-4cbd-bd37-671a16afa10f
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 0%
 
 ---
 
@@ -19,8 +22,8 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 此清單包含所有支援應用程式伺服器的製造商網站連結。
 
-**** JBoss:https://www.jboss.com/products/platforms/application
+**JBoss:** https://www.jboss.com/products/platforms/application
 
-**** Oracle webLogic:www.oracle.com/us/products/middleware/application-server/index.html
+**Oracle WebLogic:** www.oracle.com/us/products/middleware/application-server/index.html
 
-**** IBM webSphere:www-01.ibm.com/software/websphere/
+**IBM WebSphere:** www-01.ibm.com/software/websphere/
