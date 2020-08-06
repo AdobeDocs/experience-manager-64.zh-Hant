@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
 source-git-commit: e12b8e370badfa0eb0d549cff18dc2ef43226758
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ HTML5 Forms中表格的預設實作使用HTML DIV元素來轉換表格。 演算
 
 標示為complexTable的表格會遵循原 *生的HTML轉譯* ，並為某些螢幕閱讀程式提供更佳的協助工具支援。  要建立行範圍，請選擇同一列中表的連續單元格，按一下右鍵該選項，然後按一下「合 **[!UICONTROL 並單元格]**」。
 
-*****注意：建立列範圍僅適用於最左側的儲存格。*
+***注意：**建立列範圍僅適用於最左側的儲存格。*
 
 要將行標籤為行標題，請選擇行中的所有單元格，按一下右鍵選項，然後按一下標 **[!UICONTROL 記標題]**。
 
