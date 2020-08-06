@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a6d9b08d-e669-4b9b-b591-c21cd72b6e22
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1234'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    如果您有少量個人檔案，而且仍需要授權，您可以決定直接註冊每個檔案。
 
-為了讓訪客註冊，您可使用一系列元件和表單來收集所需的識別資訊，然後再收集其他（通常為選擇性）描述檔資訊。 在註冊後，也應該可以查看和更新，提交的細節。
+為了讓訪客註冊，您可使用一系列元件和表單來收集所需的識別資訊，然後再收集其他（通常為選擇性）描述檔資訊。 在註冊後，也應該能夠查看和更新，提交的細節。
 
 可以配置或開發其他功能：
 
@@ -84,29 +87,29 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ## 查看和更新配置檔案 {#viewing-and-updating-a-profile}
 
-視您的註冊表而定，訪客的描述檔中可能包含註冊資訊。 他們應該能夠在以後階段查看和／或更新此項。 這可以用類似的形式完成；例如，在Geometrixx中：
+視您的註冊表而定，訪客的描述檔中可能包含註冊資訊。 他們應該能夠在以後階段查看和／或更新此項。 這可以用類似的形式完成； 例如，在Geometrixx中：
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-若要查看您的個人檔案詳細資訊，請按一 **下任何頁面右上角的「我的個人檔案** 」;例如，帳戶 `admin` :\
+若要查看您的個人檔案詳細資訊，請按一 **下任何頁面右上角的「我的個人檔案** 」; 例如，帳戶 `admin` :\
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
 您可以使用用戶端內容來檢 [視其他描述檔](/help/sites-administering/client-context.md) （在作者環境上，並具備足夠的權限）:
 
-1. 開啟頁面；例如Geometrixx頁面：
+1. 開啟頁面； 例如Geometrixx頁面：
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. 按一 **下右上角的** 「我的個人檔案」。 你會看到你經常帳戶的概況；例如，管理員。
+1. 按一 **下右上角的** 「我的個人檔案」。 你會看到你經常帳戶的概況； 例如，管理員。
 1. 按 **Control-alt-C** 以開啟用戶端內容。
 1. 在用戶端內容的左上角，按一下「載 **入描述檔** 」按鈕。
 
    ![](do-not-localize/loadprofile.png)
 
-1. 從對話框窗口的下拉清單中選擇另一個配置檔案；比如，艾莉森· **帕克**。
-1. 按一下 **確定**。
+1. 從對話框窗口的下拉清單中選擇另一個配置檔案； 比如，艾莉森· **帕克**。
+1. 按一下&#x200B;**「確定」**。
 1. 再次按一下「 **My Profile（我的配置檔案）**」。 表格將更新Alison的詳細資訊。
 
    ![profilealison](assets/profilealison.png)
@@ -130,6 +133,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
    * **元素名稱** - `favoriteColor`
    * **標題** - `Favorite Color`
    * **項目** -新增數種顏色作為項目
+
    按一 **下「確定** 」以儲存。
 
 1. 關閉頁面並返回「網站 **主控台** 」並啟動「我的個人檔案」頁面。
@@ -162,7 +166,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
    管理與狀態相關的操作。
 
-可以定義多個狀態；例如，在Geometrixx中，下列項目包括：
+可以定義多個狀態； 例如，在Geometrixx中，下列項目包括：
 
 * 訂閱（或取消訂閱）電子報或留言執行緒上的通知
 * 向朋友添加和刪除連接
@@ -180,7 +184,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 州提供者管理描述檔屬性及其狀態。
 
-需要有工作流程來實施與狀態相關的動作。 例如，在訂閱通知時，工作流程將處理實際的訂閱動作；從通知取消訂閱時，工作流程將處理從訂閱清單中移除使用者的問題。
+需要有工作流程來實施與狀態相關的動作。 例如，在訂閱通知時，工作流程將處理實際的訂閱動作； 從通知取消訂閱時，工作流程將處理從訂閱清單中移除使用者的問題。
 
 ## 設定檔和使用者帳戶 {#profiles-and-user-accounts}
 
