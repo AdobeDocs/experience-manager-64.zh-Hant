@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '2270'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 >
 >本檔案說明如何將AEM與內部部署解決方案Adobe Campaign Classic整合。 如果您使用Adobe Campaign Standard，請參閱 [與Adobe Campaign Standard整合](/help/sites-administering/campaignstandard.md) ，以取得這些指示。
 
-Adobe Campaign可讓您直接在Adobe Experience manager中管理電子郵件傳送內容和表單。
+Adobe Campaign可讓您直接在Adobe Experience Manager中管理電子郵件傳送內容和表單。
 
-要同時使用這兩種解決方案，您必須先將它們配置為彼此連接。 這包括Adobe Campaign和Adobe Experience manager中的設定步驟。 本檔案將詳細說明這些步驟。
+要同時使用這兩種解決方案，您必須先將它們配置為彼此連接。 這包括Adobe Campaign和Adobe Experience Manager中的設定步驟。 本檔案將詳細說明這些步驟。
 
 在AEM中使用Adobe Campaign包括透過Adobe Campaign傳送電子郵件的功能，如「使用Adobe Campaign [」中所述](/help/sites-authoring/campaign.md)。 此外，還包含使用AEM頁面上的表單來控制資料。
 
@@ -123,7 +126,7 @@ Adobe Campaign可讓您直接在Adobe Experience manager中管理電子郵件傳
 您必須在Adobe Campaign中 **安裝AEM整合套件** 。 要執行此操作：
 
 1. 前往您要與AEM連結的Adobe Campaign例項。
-1. *選擇「*&#x200B;工具&#x200B;*」>「高*&#x200B;級」*>「*&#x200B;導入包……」。.
+1. 選擇「 *工具* 」>「高 *級」* >「 *導入包……」。*.
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
 
@@ -153,6 +156,7 @@ Adobe Campaign可讓您直接在Adobe Experience manager中管理電子郵件傳
 >
 >* 安裝 **AEM Integration Package時** ，會建立外部AEM帳戶。 您可以從AEM例項設定連線，或建立新的AEM例項。
 >* 在AEM中，請確定您已設定促銷活動遠端使用者的密碼。 您必須設定此密碼，才能將Adobe Campaign與AEM連線。 以管理員身分登入，並在使用者管理主控台中搜尋促銷活動遠端使用者，然後按一下「設 **定密碼」**。
+
 >
 
 
@@ -161,7 +165,7 @@ Adobe Campaign可讓您直接在Adobe Experience manager中管理電子郵件傳
 
 1. 前往「管 **理** >平台 **>外** 部帳戶 **** 」節點。
 1. 建立新的外部帳戶並選取 **AEM** 類型。
-1. 輸入AEM製作例項的存取參數：伺服器位址，以及用來連線至此例項的ID和密碼。 促銷活動-api使用者帳戶密碼與您在AEM中設定密碼的促銷活動——遠端使用者相同。
+1. 輸入AEM製作例項的存取參數： 伺服器位址，以及用來連線至此例項的ID和密碼。 促銷活動-api使用者帳戶密碼與您在AEM中設定密碼的促銷活動——遠端使用者相同。
 
    >[!NOTE]
    >
@@ -175,7 +179,7 @@ Adobe Campaign可讓您直接在Adobe Experience manager中管理電子郵件傳
 
 AEMResourceTypeFilter **** 選項可用來篩選可用於Adobe Campaign的AEM資源類型。 這可讓Adobe Campaign擷取專門設計為僅用於Adobe Campaign的AEM內容。
 
-此選項應預先設定；不過，如果您變更此選項，可能會導致無法運作的整合。
+此選項應預先設定； 不過，如果您變更此選項，可能會導致無法運作的整合。
 
 要驗證 **AEMResourceTypeFilter** 選項是否已配置：
 
@@ -205,7 +209,7 @@ AEMResourceTypeFilter **** 選項可用來篩選可用於Adobe Campaign的AEM資
 >[!NOTE]
 >
 >如果您不想使用複製URL，而是使用公開對應的URL，則可以在OSGi( **AAEM logo** >Operations **>** Chanditing Alignment > Web Chandit?>Banditing Reduction > Web Console ********************> OSGi Configuration >AEM整合- Configuration Campaign):
-**** 公開URL:com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
+**公開URL:** com.day.cq.mcm.campaign.impl.IntegrationConfigImpl#aem.mcm.campaign.publicUrl
 
 此步驟也是將特定編寫執行個體組態複製至發佈執行個體的必要步驟。
 
@@ -235,9 +239,9 @@ AEMResourceTypeFilter **** 選項可用來篩選可用於Adobe Campaign的AEM資
 1. 輸入「標題 **」並按一下「** 建立 ****」，或選擇您要連結至Adobe Campaign例項的現有設定，以建立新的設定。
 1. 編輯設定，使其符合您Adobe Campaign例項的參數。
 
-   * **使用者名稱**:Aemserver ****,Adobe Campaign AEM整合套件運算子，用來建立兩個解決方案之間的連結。
-   * **密碼**:Adobe Campaign aemserver運算子密碼。 您可能必須直接在Adobe Campaign中重新指定此運算子的密碼。
-   * **API端點**:Adobe Campaign例項URL。
+   * **使用者名稱**: **aemserver**,Adobe Campaign AEM整合套件運算子，用來建立兩個解決方案之間的連結。
+   * **密碼**: Adobe Campaign aemserver運算子密碼。 您可能必須直接在Adobe Campaign中重新指定此運算子的密碼。
+   * **API端點**: Adobe Campaign例項URL。
 
 1. 選取 **連線至Adobe Campaign** ，然後按一 **下確定**。
 
@@ -259,7 +263,7 @@ AEMResourceTypeFilter **** 選項可用來篩選可用於Adobe Campaign的AEM資
 
 您必須在 [您的作者例項上](/help/sites-developing/externalizer.md) ，在AEM中設定externalizer。 Externalizer是OSGi服務，可讓您將資源路徑轉換為外部和絕對URL。 此服務提供一個集中位置，以設定這些外部URL並建立這些URL。
 
-如需 [一般指示，請參閱](/help/sites-developing/externalizer.md) Configure the externalizer。 若是Adobe Campaign整合，請務必在Adobe Campaign主控台可 `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`存取的伺服 `localhost:4503` 器上設定發佈伺服器，但不要指向。
+如需 [一般指示](/help/sites-developing/externalizer.md) ，請參閱Configure the externalizer。 若是Adobe Campaign整合，請務必在Adobe Campaign主控台可 `https://<host>:<port>/system/console/configMgr/com.day.cq.commons.impl.ExternalizerImpl`存取的伺服 `localhost:4503` 器上設定發佈伺服器，但不要指向。
 
 如果指向Adobe Campaign `localhost:4503` 無法觸及的其他伺服器，您的影像將不會顯示在Adobe Campaign主控台上。
 
@@ -297,14 +301,14 @@ AEMResourceTypeFilter **** 選項可用來篩選可用於Adobe Campaign的AEM資
 
 1. 輸入擴展方案的不同參數：
 
-   * **架構**:選擇 **nms:seedMember** schema。 視窗中的其他欄位會自動完成。
-   * **命名空間**:個人化延伸架構的命名空間。
+   * **架構**: 選擇 **nms:seedMember** schema。 視窗中的其他欄位會自動完成。
+   * **命名空間**: 個人化延伸架構的命名空間。
 
 1. 編輯架構的XML代碼，以指定要在其中添加的欄位。 如需在Adobe Campaign中擴充結構的詳細資訊，請參閱設定 [指南](https://docs.campaign.adobe.com/doc/AC6.1/en/CFG_Editing_schemas_Extending_a_schema.html)。
 1. 儲存您的架構，然後透過主控台的「工具 **>進階****>更新資料****** 庫結構」選單更新Adobe Campaign資料庫結構。
 1. 中斷連線，然後重新連線至Adobe Campaign主控台以儲存您所做的變更。 新欄位現在會出現在AEM中可用的個人化欄位清單中。
 
-#### 例如 {#example}
+#### 範例 {#example}
 
 若要新增「 **註冊編號** 」欄位，您必須具備下列元素：
 
