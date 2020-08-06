@@ -10,6 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +53,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
   </tr> 
   <tr> 
    <td><strong>重組指導</strong></td> 
-   <td><p>如果任何自訂代碼都與此位置相關(即 程式碼明確依賴此路徑)，則程式碼必須更新，才能在升級前使用新位置；最理想的情況是，當Java API可用來減少對JCR中任何特定路徑的依賴性時。</p> <p>暫存位置，以儲存ZIP檔供用戶端下載。 由於用戶端要求下載資產，因此不需要更新。 它將在新位置生成檔案。</p> </td> 
+   <td><p>如果任何自訂代碼都與此位置相關(即 程式碼明確依賴此路徑)，則程式碼必須更新，才能在升級前使用新位置； 最理想的情況是，當Java API可用來減少對JCR中任何特定路徑的依賴性時。</p> <p>暫存位置，以儲存ZIP檔供用戶端下載。 由於用戶端要求下載資產，因此不需要更新。 它將在新位置生成檔案。</p> </td> 
   </tr> 
   <tr> 
    <td><strong>附註</strong></td> 
@@ -81,7 +84,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
       <ol> 
        <li>因為目標在中<strong> , <code>/apps</code></strong> 所以應該在SCM中保留此更改。</li> 
       </ol> </li> 
-     <li>刪除資料夾：在 <strong><code>/etc/dam/notification/email/default</code></strong> 電子郵件範本移動後。<br /> 
+     <li>刪除資料夾： <strong><code>/etc/dam/notification/email/default</code></strong> 郵件範本移動之後。<br /> 
       <ol> 
        <li>如果未對下方的電子郵件範本進行更新<strong> , <code>/etc/notification/email/default</code></strong>則可移除資料夾，因為AEM 6.4安裝中的原始電子郵件範本 <strong><code>/libs/settings/notification/email/default</code></strong> 位於下方。</li> 
       </ol> </li> 
@@ -111,7 +114,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
    <td><p>對於任何在SCM中管理且未在執行時期透過設計對話方塊寫入的設計，請執行下列動作以與最新型號對齊：</p> 
     <ol> 
      <li>將設計從「上一個位置」(Previous Location)複製到「新位置」(New Location)下 <code>/apps</code>。</li> 
-     <li>將「設計」中的任何CSS、JavaScript和靜態資源轉換為 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">用戶端程式庫</a><code>allowProxy = true</code>。</li> 
+     <li>將「設計」中的任何CSS、JavaScript和靜態資源轉換為用戶 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">端程式庫</a> , <code>allowProxy = true</code>包含</li> 
      <li>透過 <code>cq:designPath</code> AEM &gt; DAM管理員&gt;資產共用頁面&gt;頁面屬性&gt;進階標籤&gt;設計欄位，更新屬性中「上一個位置」的參考 <strong></strong>。</li> 
      <li>更新參照上一個位置的任何頁面，以使用新的「用戶端程式庫」類別。 這需要更新頁面實施程式碼。</li> 
      <li>更新Dispatcher規則，允許通過代理Servlet提供客戶端 <code>/etc.clientlibs/</code> 庫。</li> 
@@ -144,7 +147,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
       <ol> 
        <li>因為目標在中<strong> , <code>/apps</code></strong> 所以應該在SCM中保留此更改。</li> 
       </ol> </li> 
-     <li>刪除資料夾：移 <code>/etc/dam/workflow/notification/email/downloadasset </code>動電子郵件範本之後。<br /> 
+     <li>刪除資料夾： <code>/etc/dam/workflow/notification/email/downloadasset </code>郵件範本移動之後。<br /> 
       <ol> 
        <li>如果未對下方的電子郵件範本進行更新<strong> , <code>/etc</code></strong>則可移除資料夾，因為AEM 6.4安裝中的原始電子郵件範本 <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> 位於下方。</li> 
       </ol> </li> 
@@ -185,7 +188,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
       <ol> 
        <li>因為目標在中<strong> , <code>/apps</code></strong> 所以應該在SCM中保留此更改。</li> 
       </ol> </li> 
-     <li>刪除資料夾：在 <strong><code>/etc/dam/adhocassetshare</code></strong> 電子郵件範本移動後。<br /> 
+     <li>刪除資料夾： <strong><code>/etc/dam/adhocassetshare</code></strong> 郵件範本移動之後。<br /> 
       <ol> 
        <li>如果未對下方的電子郵件範本進行更新<strong> , <code>/etc</code></strong>則可移除資料夾，因為AEM 6.4安裝中的原始電子郵件範本 <strong><code>/libs/settings/dam/adhocassetshare</code></strong> 位於下方。</li> 
       </ol> </li> 
@@ -275,7 +278,7 @@ source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
    <td><strong>重組指導</strong></td> 
    <td><p>對於現成可用的檢視器預設集，它只能在新位置使用。</p> <p>對於自訂檢視器預設集：</p> 
     <ul> 
-     <li>您必須運行遷移指令碼才能將節點從移 <code>/etc</code> 動到 <code>/conf</code>。 該指令碼位於 <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
+     <li>您必須運行遷移指令碼才能將節點從移動到移 <code>/etc</code> 動 <code>/conf</code>。 該指令碼位於 <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>或者，您可以編輯配置，並將其自動保存到新位置。</li> 
     </ul> <p>請注意，您不需要調整其copyURL/embed程式碼以指向 <code>/conf</code>。 現有的要 <code>/etc</code> 求將重新路由至正確的內容 <code>/conf</code>。</p> </td> 
   </tr> 
