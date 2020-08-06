@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ AEM Communities檔案的此區段除了：
 * AEM [Communities APIjar](#communities-api-jar-artifact)
 * AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
-## Communities API jar對象 {#communities-api-jar-artifact}
+## Communities API Jar對象 {#communities-api-jar-artifact}
 
 以下是AEM Communities API jar的GAV範例：
 
