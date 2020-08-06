@@ -12,6 +12,9 @@ discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '835'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >由於大部分的AEM升級都是就地執行，因此升級作業層需要停機。 遵循這些最佳實務，可將發佈層停機時間減至最少或免除。
 
-在升級AEM環境時，您需要考慮在升級作者環境或發佈環境之間的方式差異，以便將您的作者和使用者的停機時間減至最少。 本頁概述升級目前在AEM 6.x版本上執行的AEM拓撲的高階程式。由於作者和發佈層以及基於Mongo和TarMK的部署之間的流程不同，因此每個層和微內核都列在單獨的部分中。 在執行部署時，我們建議您先升級您的作者環境、決定成功，然後繼續進行發佈環境。
+在升級AEM環境時，您需要考慮在升級作者環境或發佈環境之間的方式差異，以便將您的作者和使用者的停機時間減至最少。 本頁概述升級目前在AEM 6.x版本上執行的AEM拓撲的高階程式。 由於作者和發佈層以及基於Mongo和TarMK的部署之間的流程不同，因此每個層和微內核都列在單獨的部分中。 在執行部署時，我們建議您先升級您的作者環境，決定成功，然後繼續發佈環境。
 
 ## TarMK作者層 {#tarmk-author-tier}
 
@@ -105,7 +108,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 重新啟動「作者」例項，一次一個
 1. 刪除克隆的資料儲存。
 
-### 如果失敗（回滾） {#if-unsuccessful}
+### 如果失敗（回滾）  {#if-unsuccessful}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
