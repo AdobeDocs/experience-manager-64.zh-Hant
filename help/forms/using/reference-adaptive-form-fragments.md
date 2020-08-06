@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
@@ -51,7 +54,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 ## 信用卡資訊 {#credit-card-information}
 
 包含欄位，以擷取可用於處理付款的信用卡資訊。
-[ 信 ![用卡資訊片段](assets/cc-info.png)](assets/cc-info-1.png)
+[ ![信用卡資訊片段](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## 當前就業 {#current-employment}
 
@@ -90,14 +93,14 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 ## 條款與條件 {#terms-conditions}
 
-指定使用者在提交表單前接受的條款與條件。
+指定使用者在提交表格前接受的條款與條件。
 ![條款與條件片段](assets/tnc.png)
 
 [按一下放大](assets/tnc-1.png)
 
 ## 使用Scribble的條款與條件 {#terms-conditions-with-scribble}
 
-指定使用者在提交表單之前接受和簽署的條款與條件。
+指定使用者在提交表單前接受和簽署的條款與條件。
 ![使用Scribble的條款與條件](assets/tnc-scribble.png)
 
 [按一下放大](assets/tnc-scribble-1.png)
