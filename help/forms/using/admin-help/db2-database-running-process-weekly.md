@@ -1,6 +1,6 @@
 ---
-title: '"DB2資料庫：每週運行進程」'
-seo-title: '"DB2資料庫：每週運行進程」'
+title: '"DB2資料庫： 每週運行進程」'
+seo-title: '"DB2資料庫： 每週運行進程」'
 description: 瞭解如何改善AEM表單DB2資料庫的效能。
 seo-description: 瞭解如何改善AEM表單DB2資料庫的效能。
 uuid: 36070087-c250-41df-a841-aa922e777697
@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fc0e8183-5d50-4fc0-997a-5f3168ba0d70
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '164'
+ht-degree: 0%
 
 ---
 
 
-# DB2資料庫：每週運行流程{#db-database-running-a-process-weekly}
+# DB2資料庫： 每週運行流程{#db-database-running-a-process-weekly}
 
 如果您的AEM表單DB2資料庫開始緩慢執行，每週執行下列程式可改善其效能：
 
