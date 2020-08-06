@@ -1,8 +1,8 @@
 ---
-title: 工具控制台
-seo-title: 工具控制台
-description: 瞭解AEM中的不同工具主控台。
-seo-description: 瞭解AEM中的不同工具主控台。
+title: 工具主控台
+seo-title: 工具主控台
+description: 了解 AEM 中各種不同的工具主控台。
+seo-description: 了解 AEM 中各種不同的工具主控台。
 uuid: d01382f8-0c8f-4d76-9271-bed9e34b3b4b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 21%
 
 ---
 
 
-# 工具控制台{#tools-consoles}
+# 工具主控台{#tools-consoles}
 
-「工 **具** 」主控台可讓您存取許多專業工具，以協助您管理網站、數位資產和內容存放庫的其他方面。 工具控制台目前有兩種 **類型** ，視您使用的UI而定：
+**「工具」**&#x200B;主控台可供存取多種特殊工具，協助您管理網站、數位資產和內容存放庫的其他方面。工具控制台目前有兩種 **類型** ，視您使用的UI而定：
 
 * [工具- Classic UI](#tools-classic-ui)
 * [工具——觸控最佳化UI](#tools-touch-optimized-ui)
@@ -44,7 +47,7 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
   <tr> 
    <td>雲端服務組態<br /> </td> 
    <td> </td> 
-   <td>保留與Adobe Marketing cloud <a href="/help/sites-administering/marketing-cloud.md">整合相關的設定</a>。</td> 
+   <td>保留與Adobe Marketing Cloud <a href="/help/sites-administering/marketing-cloud.md">整合相關的設定</a>。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">商務</a></td> 
@@ -74,7 +77,7 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">控制面板</a></td> 
    <td> </td> 
-   <td>可讓您建立報告控制面板；這些功能提供可自訂的方式來定義顯示統一資料的頁面。</td> 
+   <td>可讓您建立報告控制面板； 這些功能提供可自訂的方式來定義顯示統一資料的頁面。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">設計</a></td> 
@@ -122,7 +125,7 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
    <td>通知範本。</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/package-manager.md">封裝</a></td> 
+   <td><a href="/help/sites-administering/package-manager.md">套件</a></td> 
    <td> </td> 
    <td>「封裝管理員」的替代連結，顯示已為AEM WCM載入的封裝。 類似於CRX的包管理器中顯示的資訊。</td> 
   </tr> 
@@ -280,12 +283,12 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/package-manager.md">封裝</a></td> 
+   <td><a href="/help/sites-administering/package-manager.md">套件</a></td> 
    <td>封裝和共用應用程式.</td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/package-manager.md#package-share">Package Share</a></td> 
+   <td><a href="/help/sites-administering/package-manager.md#package-share">套件共用</a></td> 
    <td>從 Adobe 及社群下載應用程式.<br /> </td> 
   </tr> 
   <tr> 
@@ -305,7 +308,7 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
   </tr> 
   <tr> 
    <td> </td> 
-   <td>Web 控制台<br /> </td> 
+   <td>Web 主控台<br /> </td> 
    <td>設定和管理應用程式平台.</td> 
   </tr> 
   <tr> 
