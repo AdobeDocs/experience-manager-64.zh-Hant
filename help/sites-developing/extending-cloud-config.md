@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +39,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 
 配置的基本路徑是：
 
-`/etc/cloudservices`.
+`/etc/cloudservices`。
 
 對於每種配置類型，都將提供一個模板和一個元件。這使得配置模板能夠滿足自定義後的大多數需求。
 
@@ -51,7 +54,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
    * 配置模板
    * 配置元件
 
-模板和元件必須繼承基 `sling:resourceSuperType` 本模板中的：
+模板和元件必須繼承基 `sling:resourceSuperType` 本模板的：
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -150,7 +153,7 @@ propertyname
 
 儲存服務的使用者憑證時，所有密碼都應加密。
 
-您可以新增隱藏的表單欄位來達成此目標。 該欄位的屬性名 `@Encrypted` 稱中應有注釋；例如，對於字 `password` 段，名稱將寫為：
+您可以新增隱藏的表單欄位來達成此目標。 該欄位的屬性名 `@Encrypted` 稱中應有注釋； 例如，對於字 `password` 段，名稱將寫為：
 
 `password@Encrypted`
 
@@ -206,7 +209,7 @@ propertyname
   </tr> 
   <tr> 
    <td>visel</td> 
-   <td>頁面屬性對話方塊中的可見度；預設顯示（可選）</td> 
+   <td>頁面屬性對話方塊中的可見度； 預設顯示（可選）</td> 
   </tr> 
  </tbody> 
 </table>
