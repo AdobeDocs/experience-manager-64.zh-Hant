@@ -12,23 +12,26 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1441'
+ht-degree: 0%
 
 ---
 
 
 # 轉換具權限的表單 {#rendering-rights-enabled-forms}
 
-Forms服務可以呈現已套用使用權限的表單。 使用權限與Acrobat預設為Acrobat但Adobe reader未提供的功能相關，例如在表格中新增註解或填寫表格欄位並儲存表格的功能。 具有套用使用權限的表單稱為啟用權限的表單。 在Adobe Reader中開啟具權限的表格的使用者，可以執行為該表格啟用的作業。
+Forms服務可以呈現已套用使用權限的表單。 使用權限與Acrobat預設為Acrobat但Adobe Reader未提供的功能相關，例如在表格中新增註解或填寫表格欄位並儲存表格的功能。 具有套用使用權限的表單稱為啟用權限的表單。 在Adobe Reader中開啟具權限的表格的使用者，可以執行為該表格啟用的作業。
 
 若要將使用權套用至表單，Acrobat Reader DC擴充功能服務必須是AEM表單安裝的一部分。 此外，您必須擁有有效的憑證，才能將使用權套用至PDF檔案。 也就是說，您必須先正確設定Acrobat Reader DC擴充功能服務，才能轉換具權限的表格。 (請參 [閱關於Acrobat Reader DC擴充功能服務](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service))。
 
 >[!NOTE]
 >
->若要轉換包含使用權限的表單，您必須使用XDP檔案做為輸入，而非PDF檔案。 如果您使用PDF檔案作為輸入，表單仍會轉譯；但是，它不是啟用權限的表格。
+>若要轉換包含使用權限的表單，您必須使用XDP檔案做為輸入，而非PDF檔案。 如果您使用PDF檔案作為輸入，表單仍會轉譯； 但是，它不是啟用權限的表格。
 
 >[!NOTE]
 >
->當您指定下列使用權限時，無法預先填入XML資料的表格： `enableComments`、 `enableCommentsOnline``enableEmbeddedFiles`或 `enableDigitalSignatures`。 (請參 [閱使用可排程版面預填表單](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
+>當您指定下列使用權限時，無法預先填入XML資料的表格： `enableComments`、 `enableCommentsOnline`、 `enableEmbeddedFiles`或 `enableDigitalSignatures`。 (請參 [閱使用可排程版面預填表單](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
 
 >[!NOTE]
 >
@@ -74,7 +77,7 @@ Forms服務可以呈現已套用使用權限的表單。 使用權限與Acrobat�
 
 [使用web service API演算具權限的表格](#render-rights-enabled-forms-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -100,11 +103,12 @@ Forms服務可以呈現已套用使用權限的表單。 使用權限與Acrobat�
 1. 設定使用權限運行時選項
 
    * 使用其 `ReaderExtensionSpec` 建構函式建立物件。
-   * 調用物件的方法以指定憑證的 `ReaderExtensionSpec` 別名，並 `setReCredentialAlias` 指定代表別名值的字串值。
+   * 調用物件的方法，以指定 `ReaderExtensionSpec` 憑證的別名， `setReCredentialAlias` 並指定代表別名值的字串值。
    * 通過調用屬於對象的相應方法來設定每個使用 `ReaderExtensionSpec` 權。 不過，您只能在您引用的憑證允許您進行設定時，設定正確的使用方式。 也就是說，如果憑據不允許您設定，則不能設定正確的使用情形。 例如。 若要設定使用權，讓使用者可填寫表單欄位並儲存表單、叫用物 `ReaderExtensionSpec` 件的方 `setReFillIn` 法並傳遞 `true`。
+
    >[!NOTE]
    >
-   >您不需要叫用物 `ReaderExtensionSpec` 件的 `setReCredentialPassword`*方法。 Forms服務不會使用此方法。*
+   >您不需要叫用物 `ReaderExtensionSpec` 件的 `setReCredentialPassword`*方法。 Forms服務不會使用此方法。 *
 
 1. 轉譯啟用權限的表單
 
@@ -115,6 +119,7 @@ Forms服務可以呈現已套用使用權限的表單。 使用權限與Acrobat�
    * 存 `PDFFormRenderSpec` 儲運行時選項的對象。
    * 存 `ReaderExtensionSpec` 儲使用權限運行時選項的對象。
    * 包 `URLSpec` 含Forms服務所需URI值的對象。
+
    該方 `renderPDFFormWithUsageRights` 法返回包 `FormsResult` 含必須寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
@@ -129,9 +134,9 @@ Forms服務可以呈現已套用使用權限的表單。 使用權限與Acrobat�
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API轉譯具權限的表格](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API轉譯具權限的表格](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -151,7 +156,7 @@ Forms服務可以呈現已套用使用權限的表單。 使用權限與Acrobat�
 1. 設定使用權限運行時選項
 
    * 使用其 `ReaderExtensionSpec` 建構函式建立物件。
-   * 調用物件的方法以指定憑證的 `ReaderExtensionSpec` 別名，並 `setReCredentialAlias` 指定代表別名值的字串值。
+   * 調用物件的方法，以指定 `ReaderExtensionSpec` 憑證的別名， `setReCredentialAlias` 並指定代表別名值的字串值。
    * 通過調用屬於對象的相應方法來設定每個使用 `ReaderExtensionSpec` 權。 不過，您只能在您引用的憑證允許您進行設定時，設定正確的使用方式。 也就是說，如果憑據不允許您設定，則不能設定正確的使用情形。 若要設定使用權，讓使用者可填寫表格欄位並儲存表格，請叫用物 `ReaderExtensionSpec` 件的方 `setReFillIn` 法並傳遞 `true`。
 
 1. 轉譯啟用權限的表單
@@ -159,10 +164,11 @@ Forms服務可以呈現已套用使用權限的表單。 使用權限與Acrobat�
    叫用物 `FormsService` 件的方 `renderPDFFormWithUsageRights` 法並傳遞下列值：
 
    * 指定表單設計名稱的字串值，包括檔案副檔名。 如果您參照屬於Forms應用程式一部分的表單設計，請確定您指定完整路徑，例如 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
-   * 包 `BLOB` 含要與表單合併的資料的對象。 如果您不想將資料與表單合併，則必須傳遞以空 `BLOB` 白XML資料來源為基礎的物件。 不能傳遞 `BLOB` 空的對象；否則，會拋出異常。
+   * 包 `BLOB` 含要與表單合併的資料的對象。 如果您不想將資料與表單合併，則必須傳遞以空 `BLOB` 白XML資料來源為基礎的物件。 不能傳遞 `BLOB` 空的對象； 否則，會拋出異常。
    * 存 `PDFFormRenderSpec` 儲運行時選項的對象。
    * 存 `ReaderExtensionSpec` 儲使用權限運行時選項的對象。
    * 包 `URLSpec` 含Forms服務所需URI值的對象。
+
    該方 `renderPDFFormWithUsageRights` 法返回包 `FormsResult` 含必須寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
