@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ AEM隨附一組範例Geometrixx網站。 您可以透過套件管理員移除此
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-此套件包含上述所有個別套件。 若要一次移除所有與geometrixxx相關的內容，請按一下 **此套件上的** 「解除安裝」。 super-package將進入解除安裝狀態，而所有個別封裝都會從封裝管理器檢視中消失。
+此套件包含上述所有個別套件。 若要一次移除所有與geometrixx相關的內容，請按一下 **此套件** 上的解除安裝。 super-package將進入解除安裝狀態，而所有個別封裝都會從封裝管理器檢視中消失。
 
 您現在有一個「空」的AEM例項，沒有任何展示網站。
 
