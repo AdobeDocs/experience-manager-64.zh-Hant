@@ -1,6 +1,6 @@
 ---
-title: 使用Sling適配器
-seo-title: 使用Sling適配器
+title: 使用 Sling 介面卡
+seo-title: 使用 Sling 介面卡
 description: Sling提供Adapter模式，可方便轉譯實作Appative介面的物件
 seo-description: Sling提供Adapter模式，可方便轉譯實作Appative介面的物件
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
 source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+workflow-type: tm+mt
+source-wordcount: '1747'
+ht-degree: 1%
 
 ---
 
 
-# 使用Sling適配器{#using-sling-adapters}
+# 使用 Sling 介面卡{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) 提供Adapter [模式](https://sling.apache.org/site/adapters.html) ，可方便轉譯實作 [Appative](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) Interface的物件。 此介面提供一 [般的adpatTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 方法，可將物件轉換為作為引數傳遞的類別類型。
 
@@ -66,7 +69,7 @@ Node node = resource.adaptTo(Node.class);
 
 有多種可實 `Adaptable.adaptTo()` 施的方式：
 
-* 物體本身；實現方法本身並映射到特定對象。
+* 物體本身； 實現方法本身並映射到特定對象。
 * By an [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)`, which can map artibure objects.
 
    對象仍必須實施接 `Adaptable` 口並且必須擴展 [`SlingAdaptable`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (這會將調 `adaptTo` 用傳遞給中央適配器管理器)。
@@ -111,7 +114,7 @@ Node node = resource.adaptTo(Node.class);
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/PersistableValueMap.html">PersistableValueMap</a></td> 
-   <td>如果這是基於JCR節點的資源，並且用戶有權修改該節點上的屬性。<br /> 注意：多個可持續地圖不共用其值。</td> 
+   <td>如果這是基於JCR節點的資源，並且用戶有權修改該節點上的屬性。<br /> 注意： 多個可持續地圖不共用其值。</td> 
   </tr> 
   <tr> 
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td> 
@@ -237,7 +240,7 @@ Node node = resource.adaptTo(Node.class);
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">資源</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /></a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">資源</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td> 
    <td>範本的資源。</td> 
   </tr> 
   <tr> 
