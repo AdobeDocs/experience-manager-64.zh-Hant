@@ -225,7 +225,7 @@ JSP會新增所需的分析javascript物件和用戶端javascript程式庫的參
 
 例如，若要停用Geometrixx Demo Site頁面標題元件的定位，請將屬性新增至節 `/apps/geometrixx/components/title/cq:editConfig` 點。
 
-![chlimage_1-175](assets/chlimage_1-174.png)
+![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## 傳送訂單確認資訊至Adobe Target {#sending-order-confirmation-information-to-adobe-target}
 
@@ -254,7 +254,7 @@ JSP會新增所需的分析javascript物件和用戶端javascript程式庫的參
 
 當訪客購買產品時，Geometrixx Outdoors範例會顯示下列確認頁面：
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![chlimage_1-174](assets/chlimage_1-175.png)
 
 下列元件的JSP指令碼會存取購物車的屬性，然後列印建立mbox的程式碼。
 
