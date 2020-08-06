@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 0%
 
 ---
 
@@ -61,8 +64,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 選擇「 **新** >新 **增頁面** 」以建立新的電子郵件內容。
 1. 選取Adobe Campaign專用的可用範本之一，然後填寫頁面的一般屬性。 預設提供3個範本：
 
-   * **Adobe Campaign電子郵件(AC 6.1)**:可讓您先將內容新增至預先定義的範本，再將其傳送至Adobe Campaign 6.1進行傳送。
-   * **Adobe Campaign電子郵件(ACS)**:可讓您先將內容新增至預先定義的範本，再將其傳送至Adobe Campaign Standard進行傳送。
+   * **Adobe Campaign電子郵件(AC 6.1)**: 可讓您先將內容新增至預先定義的範本，再將其傳送至Adobe Campaign 6.1進行傳送。
+   * **Adobe Campaign電子郵件(ACS)**: 可讓您先將內容新增至預先定義的範本，再將其傳送至Adobe Campaign Standard進行傳送。
+
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
 1. 按一 **下「建立** 」以建立您的電子郵件或電子報。
@@ -76,7 +80,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 在sidekick中選 **取** 「頁面」標籤，然後選取「頁 **面屬性」。**
 1. 在快顯視 **窗的** 「雲端服務」索引標籤中，選取「新增服務 **」以新增Adobe Campaign服務，然後按一下「** 確定」 ****。
 
-   ![chlimage_1-174](assets/chlimage_1-174.png)
+   ![chlimage_1-175](assets/chlimage_1-174.png)
 
 1. 從下拉式清單中選取符合您Adobe Campaign例項的設定，然後按一下「確 **定」**。
 
@@ -96,7 +100,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 從工具箱中選取「頁面屬性」>「電子郵件」，輸入 **電子郵件的主旨****和文字版本** 。
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. 從sidekick中可用的元素新增您想要的元素，以編輯電子郵件內容。 若要這麼做，請拖放它們。 然後按兩下您要編輯的元素。
 
@@ -121,6 +125,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 只會考慮Adobe Campaign定位 **維度的** 「Campaign設定檔」欄位。
 >* 從網站檢視「 **屬性**」時，您無法存取Adobe Campaign內容欄位。 您可以在編輯時直接從電子郵件存取這些內容。
+
 >
 
 
@@ -149,9 +154,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 您可以預覽電子報的外觀，也可以預覽個人化。
 
 1. 開啟您要預覽的電子報，然後按一下「預覽（放大鏡）」以縮小側鍵。
-1. 按一下其中一個電子郵件用戶端圖示，查看您的電子報在每個電子郵件用戶端中的外觀。
+1. 按一下其中一個電子郵件用戶端圖示，即可查看您的電子報在每個電子郵件用戶端中的外觀。
 
-   ![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-101](assets/chlimage_1-181.png)
 
 1. 展開側鍵，再次開始編輯。
 
@@ -159,7 +164,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 內容完成後，您可以開始核准程式。 前往工具箱的 **Workflow** （工作流程）標籤，並選取 **Adobe Campaign工作流程的Approve** 。
 
-這個現成可用的工作流程包含兩個步驟：修訂然後批准，或修訂然後拒絕。 不過，此工作流程可以延伸並適應更複雜的程式。
+這個現成可用的工作流程包含兩個步驟： 修訂然後批准，或修訂然後拒絕。 不過，此工作流程可以延伸並適應更複雜的程式。
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
@@ -175,13 +180,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 在Adobe Campaign 6.1中：
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-186](assets/chlimage_1-185.png)
 
 >[!NOTE]
 >
 >未核准的內容可與Adobe Campaign中的傳送同步，但無法執行傳送。 只能透過促銷活動傳送傳送已核准的內容。
 
-## 將AEM與Adobe Campaign standard和Adobe Campaign 6.1連結 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign}
+## 將AEM與Adobe Campaign Standard和Adobe Campaign 6.1連結 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign}
 
 >[!NOTE]
 >
