@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 translation-type: tm+mt
 source-git-commit: 8b7373b116a93322ae32bb9afa7028e831ca09f6
+workflow-type: tm+mt
+source-wordcount: '1105'
+ht-degree: 0%
 
 ---
 
@@ -86,7 +89,7 @@ AEM元件和範本構成功能強大的工具套件。 開發人員可運用這�
 >
 >對於配置和其他更改：
 >
->1. 將項目複製到 `/libs``/apps`
+>1. 將項目複製到 `/libs` `/apps`
 >1. 在 `/apps`
 
 
@@ -151,7 +154,7 @@ XSAPI快速參考表。
 * 通信通過SSL受到保護
 * HTTP POST已使用（如果適用）
 
-這適用於對系統保密的資訊（如設定或管理存取），以及對其使用者保密的資訊（如其個人詳細資訊）
+這適用於對系統機密的資訊（例如設定或管理存取），以及對其使用者機密的資訊（如其個人詳細資訊）
 
 ## 不同的開發任務 {#distinct-development-tasks}
 
