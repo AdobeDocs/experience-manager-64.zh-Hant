@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: 54e48abc-be75-4477-83fa-bd74d5b995af
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 11%
 
 ---
 
@@ -36,7 +39,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 * [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
 * [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 * [Touch UI](/help/sites-developing/touch-ui-concepts.md)
-* [核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
+* [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [可編輯的範本](/help/sites-developing/page-templates-editable.md)
 
 請先進行教學課程，然後再詳細說明上述概念。
