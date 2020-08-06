@@ -4,6 +4,9 @@ description: 有效管理資產的最佳做法，可同步各種翻譯版本並�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
