@@ -11,6 +11,9 @@ topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 6%
 
 ---
 
@@ -61,19 +64,19 @@ https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
    <td>縮排</td> 
    <td>應用於清單文檔片段中文本的單個縮進單位的寬度。</td> 
    <td>12.7mm</td> 
-   <td>數字</td> 
+   <td>數量</td> 
   </tr> 
   <tr> 
    <td>羅馬數字最小寬度</td> 
    <td>在清單文檔片段中使用羅馬數字時，應應用於項目符號或數字欄位的最小寬度。 </td> 
    <td>12.7mm</td> 
-   <td>數字</td> 
+   <td>數量</td> 
   </tr> 
   <tr> 
    <td>最小寬度數</td> 
    <td>在清單文檔片段中使用編號清單（除羅馬數字外）時，應應用於項目符號或數字欄位的最小寬度。</td> 
    <td>8.0mm</td> 
-   <td>數字</td> 
+   <td>數量</td> 
   </tr> 
  </tbody> 
 </table>
@@ -94,7 +97,7 @@ https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
 | 屬性 | 說明 | 預設 | 可接受的值 |
 |---|---|---|---|
 | 顯示預留位置 | 選取核取方塊，可顯示最適化表單和互動式通訊中欄位的預留位置。 | 已選取 | 不適用 |
-| 最大快取條目數 | 設定使用快取記憶體可檢索的最大自適應表單和互動式通信數。 | 100 | 數字 |
+| 最大快取條目數 | 設定使用快取記憶體可檢索的最大自適應表單和互動式通信數。 | 100 | 數量 |
 | 使檔案名稱唯一 | 選中該複選框，可在最適化表單和互動式通信中為作為附件包含的檔案提供唯一的名稱。 | 未選擇 | 不適用 |
 
 ## 自適應表單與互動式通訊Web頻道主題配置 {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
