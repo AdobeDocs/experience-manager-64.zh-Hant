@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 0%
 
 ---
 
@@ -106,12 +109,12 @@ AEM在虛擬化環境中運作良好，但可能有CPU或I/O等因素無法直�
 
 #### 系統資源調整能力 {#system-resources-scalability}
 
-當所有系統都在運行時，可提高計算效能。 這種附加效能不一定與群集節點的數量成線性關係，因為這種關係高度依賴於技術環境；有關詳細資訊，請 [參閱群集](/help/sites-deploying/recommended-deploys.md) 文檔。
+當所有系統都在運行時，可提高計算效能。 這種附加效能不一定與群集節點的數量成線性關係，因為這種關係高度依賴於技術環境； 有關詳細資訊，請 [參閱群集](/help/sites-deploying/recommended-deploys.md) 文檔。
 
 根據具體Web項目的基本要求和具體使用案例，對需要多少簇節點進行估計：
 
 * 從故障安全性的角度來看，對於所有環境，必鬚根據群集節點恢復所需的時間來確定關鍵故障的嚴重程度和故障補償時間。
-* 在可擴充性方面，寫操作的數量基本上是最重要的因素；請參 [閱作者平行工作](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) ，以瞭解作者環境，以及 [發佈環境的Social Collaboration](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) 。 對於僅為處理讀取操作而訪問系統的操作，可以建立負載平衡；如需詳 [細資訊](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) ，請參閱Dispatcher。
+* 在可擴充性方面，寫操作的數量基本上是最重要的因素； 請參 [閱作者平行工作](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) ，以瞭解作者環境，以及 [發佈環境的Social Collaboration](/help/managing/hardware-sizing-guidelines.md#aem-communities-sizing-considerations) 。 對於僅為處理讀取操作而訪問系統的操作，可以建立負載平衡； 如需詳 [細資訊](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) ，請參閱Dispatcher。
 
 ## 編寫環境特定計算 {#author-environment-specific-calculations}
 
@@ -183,13 +186,13 @@ AEM在虛擬化環境中運作良好，但可能有CPU或I/O等因素無法直�
 
 ### 硬體建議 {#hardware-recommendations}
 
-通常，您可以針對您的作者環境使用與發佈環境建議相同的硬體。 通常，網站流量在製作系統上要低得多，但快取效率也更低。 然而，這裡的根本因素是，有多少作者同時工作，以及正在對系統採取的行動類型。 一般而言，AEM叢集（作者環境）在縮放讀取作業方面最為有效；換言之，AEM叢集可與執行基本編輯作業的作者進行良好的縮放。
+通常，您可以針對您的作者環境使用與發佈環境建議相同的硬體。 通常，網站流量在製作系統上要低得多，但快取效率也更低。 然而，這裡的根本因素是，有多少作者同時工作，以及正在對系統採取的行動類型。 一般而言，AEM叢集（作者環境）在縮放讀取作業方面最為有效； 換言之，AEM叢集可與執行基本編輯作業的作者進行良好的縮放。
 
-Adobe的基準測試是使用RedHat 5.5作業系統執行，此作業系統在Hewlett-Packard proLiant DL380 G5硬體平台上執行，並具備下列組態：
+Adobe的基準測試是使用RedHat 5.5作業系統執行，此作業系統在Hewlett-Packard ProLiant DL380 G5硬體平台上執行，並具備下列組態：
 
 * 兩個3.00GHz四核英特爾至強X5450 CPU
 * 8 GB RAM
-* Broadcom netXtreme II BCM5708千兆位乙太網
+* Broadcom NetXtreme II BCM5708千兆位乙太網
 * HP Smart Array RAID控制器，256 MB快取
 * 兩個146 GB 10,000 RPM SAS磁碟，配置為RAID0條帶集
 * SPEC CINT2006比率基準分數為110
@@ -213,7 +216,7 @@ AEM例項的最小堆大小為256M，最大堆大小為1024M。
 
 >[!CAUTION]
 >
->免責聲明：這些數字基於預設的硬體配置，可能因使用的特定硬體而異。
+>免責聲明： 這些數字基於預設的硬體配置，可能因使用的特定硬體而異。
 
 快取比率是調度器可傳回的頁面百分比，不需存取AEM。 100%表示分派程式會回應所有請求，0%表示AEM會計算每個頁面。
 
@@ -281,7 +284,7 @@ AEM例項的最小堆大小為256M，最大堆大小為1024M。
 
 >[!NOTE]
 >
->&amp;ast;除了JVM所需的記憶體外，還可為作業系統保留足夠的記憶體。
+>&amp;ast; 除了JVM所需的記憶體外，還可為作業系統保留足夠的記憶體。
 
 ## 其他使用案例特定計算 {#additional-use-case-specific-calculations}
 
