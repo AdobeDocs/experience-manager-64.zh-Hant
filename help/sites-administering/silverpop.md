@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfff6bdc-0d5f-4338-aa8a-7d0eb04bc19a
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '694'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ Silverpop組態可透過 **Cloudservices**、 **Tools**&#x200B;或 **API端點�
 
 ### 透過Cloudservices設定Silverpop {#configuring-silverpop-via-cloudservices}
 
-若要在Cloud services中建立Silverpop設定：
+若要在Cloud Services中建立Silverpop設定：
 
 1. 在AEM中，點選或按一 **下「工具** >部 **署** > **雲端服務**」。 (或直接存取位 `https://<hostname>:<port>/etc/cloudservices.html`置。)
 1. 在協力廠商服務下方，按一下「 **Silverop Engage** 」，然後按 **一下「Configure**」。 「Silverpop」（銀色快顯）配置窗口隨即開啟。
@@ -86,6 +89,7 @@ Silverpop組態可透過 **Cloudservices**、 **Tools**&#x200B;或 **API端點�
 
    1. **名稱**: `text`，類 **型**: `String`, **值**: `Engage 0`
    1. **名稱**: `value`，類 **型**: `String`, **值**: `https://api0.silverpop.com`
+
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
    按一下「全部儲存」按鈕。
