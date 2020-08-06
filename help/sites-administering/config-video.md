@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
 source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
    1. 將系統環境變數設定 `PATH` 為 `<*your-ffmpeg-locatio*n>\bin`
    1. 重新啟動AEM。
 
-* **在Mac OS x上：**
+* **在Mac OS X上：**
 
    1. 安裝Xcode([https://developer.apple.com/technologies/tools/xcode.html](https://developer.apple.com/technologies/tools/xcode.html))
    1. 安裝XQuartz/X11。
