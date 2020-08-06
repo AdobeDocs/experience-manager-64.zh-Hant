@@ -1,8 +1,8 @@
 ---
 title: 管理專案
 seo-title: 管理專案
-description: 專案可讓您將資源分組為一個實體，以便在「專案」主控台中存取和管理，以組織專案
-seo-description: 專案可讓您將資源分組為一個實體，以便在「專案」主控台中存取和管理，以組織專案
+description: 「專案」可讓您將資源分組為一個實體，以便在「專案」主控台中存取和管理，以組織您的專案
+seo-description: 「專案」可讓您將資源分組為一個實體，以便在「專案」主控台中存取和管理，以組織您的專案
 uuid: ac937582-181f-429b-9404-3c71d1241495
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1061'
+ht-degree: 11%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!CAUTION]
 >
->如果專案中的使用者在使用專案功能（例如建立專案、建立工作／工作流程、查看和管理團隊）時要查看其他使用者／群組，這些使用者必須擁有 **/home** /users **和/home/groups的讀取存取權**。 實作此項目最簡單的方式是，讓專 **案使用者群組** (projects-users **)可讀取** /home/users **和**/home/groups。
+>如果專案中的使用者在使用專案功能（例如建立專案、建立工作／工作流程、查看和管理團隊）時要查看其他使用者／群組，這些使用者必須擁有 **/home** /users **和/home/groups的讀取存取權**。 實作此項目最簡單的方式，就是 **讓專案使用者群組可讀取** /home/users **和** /home/groups的存取權 ****。
 
 ## 建立專案 {#creating-a-project}
 
