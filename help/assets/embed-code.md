@@ -1,6 +1,6 @@
 ---
 title: 將動態媒體視訊或影像檢視器內嵌在網頁上
-seo-title: 將動態媒體視訊或影像檢視器內嵌至網頁
+seo-title: 將動態媒體視訊或影像檢視器內嵌在網頁上
 description: 瞭解如何將動態媒體視訊或影像內嵌在網頁上
 seo-description: 瞭解如何將動態媒體視訊或影像內嵌在網頁上
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+workflow-type: tm+mt
+source-wordcount: '394'
+ht-degree: 20%
 
 ---
 
