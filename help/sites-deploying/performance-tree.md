@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 4%
 
 ---
 
@@ -171,7 +174,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
   <tr> 
    <td><strong>步驟22和22.1</strong></td> 
    <td>快取比</td> 
-   <td><a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio"> 請參 </a>閱計算Dispatcher快取比率<br />。 <br /> </td> 
+   <td>請參 <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">閱計算Dispatcher快取比率</a>。<br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步驟 23</strong></td> 
@@ -241,7 +244,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
     <ol> 
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">一般調度程式配置</a></li> 
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">配置Dispatcher快取</a></li> 
-    </ol> <p>如何提高快取率；使請求可快取（Dispatcher最佳做法）</p> <p>此外，請考慮下列設定，以最佳化快取設定<br /> </p> 
+    </ol> <p>如何提高快取率； 使請求可快取（Dispatcher最佳做法）</p> <p>此外，請考慮下列設定，以最佳化快取設定<br /> </p> 
     <ol> 
      <li>為非GET的HTTP請求設定無快取規則</li> 
      <li>將查詢字串設定為不可快取</li> 
@@ -257,7 +260,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
   <tr> 
    <td><strong>步驟 35</strong></td> 
    <td>配置調度程式</td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">配置Dispatcher</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html">配置Dispatcher</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>步驟 36</strong></td> 
@@ -276,7 +279,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
   <tr> 
    <td><strong>步驟 39</strong></td> 
    <td>使用預連接以減少連接開銷</td> 
-   <td>請參見上述Gem會話。 <a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> 此外，W3c上的其他檔案預先連線：https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
+   <td>請參見上述Gem會話。 此外，W3c上的其他檔案預先連線：<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
   </tr> 
   <tr> 
    <td><strong>步驟40和41</strong><br /> </td> 
