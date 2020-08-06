@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '349'
+ht-degree: 11%
 
 ---
 
@@ -39,7 +42,7 @@ See also [Linking URLs to your Web Application.](linking-urls-to-yourwebapplicat
    >
    >必須發佈 *選取的資產* ，以及選取的影像預設集或檢視器預設集，才能使 **[!UICONTROL URL]** 或 **[!UICONTROL RESS]** 按鈕可用。
    >
-   >動態媒體——混合模式需要您發佈影像預設集；動態媒體- Scene7模式會自動發佈影像預設集。
+   >動態媒體——混合模式需要您發佈影像預設集； 動態媒體- Scene7模式會自動發佈影像預設集。
 
 1. 點選 **[!UICONTROL RESS]**。
 
