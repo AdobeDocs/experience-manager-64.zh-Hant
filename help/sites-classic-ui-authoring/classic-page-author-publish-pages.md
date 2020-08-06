@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +50,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* 系統會觸發工作流程，通知您發佈請求的適當人員。
 >* 將會顯示訊息（在短時間內），通知您此事。
+
 >
 
 
@@ -117,7 +121,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 若要排程您稍後的啟動：
 
-1. 在「網站」主控台中，前往「啟 **動** 」功能表，然後選 **取「稍後啟動」**。
+1. 在「網站」主控台中，前往「啟 **動** 」功能表，並選 **取「稍後啟動」**。
 1. 在開啟的對話方塊中，您提供啟動的日期和時間，然後按一下「 **確定**」。 這會建立在指定時間啟動的頁面版本。
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
@@ -142,7 +146,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 排程的啟動／停用（開／關時間） {#scheduled-activation-deactivation-on-off-time}
 
-您可以使用「頁面屬性」中定義的「按時和離 **職時間****」來排程要發佈／取消發佈的** 頁面時間 [](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)。
+您可以使用「頁面屬性」中可定義的「準時」和「離 **職時間****」，來排程要發佈／取消發佈的** 頁面時間 [](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)。
 
 ### 判斷頁面出版物狀態——傳統UI {#determining-page-publication-status-classic-ui}
 
@@ -165,9 +169,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 輸入「 **開始路徑」**。 這會指定您要啟用（發佈）之區段的根路徑。 本頁和下面的所有頁面都視為啟動（或在選取「乾式執行」時用於模擬）。
 1. 視需要啟用選取標準：
 
-   * **僅已修改**:僅啟用已修改的頁面。
-   * **僅激活**:僅啟用已（已）啟動的頁面。 以重新啟動的形式運作。
-   * **忽略已停用**:忽略已停用的任何頁面。
+   * **僅已修改**: 僅啟用已修改的頁面。
+   * **僅激活**: 僅啟用已（已）啟動的頁面。 以重新啟動的形式運作。
+   * **忽略已停用**: 忽略已停用的任何頁面。
 
 1. 選擇要執行的動作：
 
