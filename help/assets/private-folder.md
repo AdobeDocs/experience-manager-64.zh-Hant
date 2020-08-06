@@ -4,6 +4,9 @@ description: 瞭解如何在Adobe Experience Manager(AEM)Assets中建立私人�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 6%
 
 ---
 
