@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 * 與表單資料模型立即可用的整合，讓您輕鬆簡化對後端資料庫和其他CRM系統（例如MS® Dynamics）的存取
 * 整合的製作介面，適用於列印和網頁通道，並可自動從列印通道產生網頁通道
-* 以易於理解的視覺格式呈現列印和網頁中的資訊圖表
+* 以易於理解的視覺格式呈現列印和網頁資訊的圖表
 * 檔案片段支援規則編輯器和表單資料模型
 * 代理用戶介面顯示互動式通信的打印和Web預覽
 * 拖放元件，以快速建構列印和網頁頻道
