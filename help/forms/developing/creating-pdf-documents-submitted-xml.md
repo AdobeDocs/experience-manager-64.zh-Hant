@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1279'
+ht-degree: 0%
 
 ---
 
@@ -37,19 +40,19 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ![cd_cd_finsrv_architecture_xml_pdf1](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
 
-當使用者從用戶端網頁瀏覽器提交表單後，非互動式PDF檔案會儲存在Content Services（不建議使用）中。 下圖顯示儲存在Content services中的PDF檔案（已過時）。
+當使用者從用戶端網頁瀏覽器提交表格後，非互動式PDF檔案會儲存在Content Services（不建議使用）中。 下圖顯示儲存在Content Services中的PDF檔案（已過時）。
 
 ![cd_cd_cs_gui](assets/cd_cd_cs_gui.png)
 
 ### 步驟摘要 {#summary-of-steps}
 
-若要使用已提交的XML資料建立非互動式PDF檔案並儲存在Content services中的PDF檔案（不建議使用），請執行下列工作：
+若要使用已提交的XML資料建立非互動式PDF檔案並儲存在Content Services中的PDF檔案（不建議使用），請執行下列工作：
 
 1. 包含專案檔案。
 1. 建立表單、輸出和檔案管理物件。
 1. 使用Forms服務擷取表單資料。
 1. 使用「輸出」服務建立非互動式PDF檔案。
-1. 使用「檔案管理」服務，將PDF表格儲存在Content Services（已過時）。
+1. 使用「檔案管理」服務，將PDF表格儲存在Content Services（已過時）中。
 
 **包含專案檔案**
 
@@ -57,7 +60,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 **建立表單、輸出和文檔管理對象**
 
-在以程式設計方式執行Forms服務API操作之前，請先建立Forms Client API物件。 同樣地，由於此工作流會調用「輸出」和「文檔管理」服務，因此請同時建立「輸出客戶端API」對象和「文檔管理客戶端API」對象。
+在以程式設計方式執行Forms服務API操作之前，請先建立Forms Client API物件。 同樣地，由於此工作流會調用輸出和文檔管理服務，因此請同時建立輸出客戶端API對象和文檔管理客戶端API對象。
 
 **使用Forms服務擷取表單資料**
 
@@ -73,7 +76,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -99,9 +102,10 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 叫用物 `FormsServiceClient` 件的方 `processFormSubmission` 法並傳遞下列值：
 
       * 包 `com.adobe.idp.Document` 含表單資料的物件。
-      * 指定環境變數的字串值，包括所有相關的HTTP標題。 指定要處理的內容類型，方法是為環境變數指定一或多 `CONTENT_TYPE` 個值。 例如，若要處理XML資料，請為此參數指定下列字串值： `CONTENT_TYPE=text/xml`。
+      * 指定環境變數的字串值，包括所有相關的HTTP標題。 指定要處理的內容類型，方法是為環境變數指定一或多 `CONTENT_TYPE` 個值。 例如，若要處理XML資料，請為此參數指定下列字串值： `CONTENT_TYPE=text/xml`.
       * 指定標題值的字 `HTTP_USER_AGENT` 串值，例如 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
       * 存 `RenderOptionsSpec` 儲運行時選項的對象。
+
       該方 `processFormSubmission` 法返回包 `FormsResult` 含表單提交結果的對象。
 
    * 調用物件的方法，以判斷Forms服務是否已完成表 `FormsResult` 單資料的處 `getAction` 理。 如果此方法傳回值 `0`，資料就可供處理。
@@ -110,7 +114,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 呼叫 `org.w3c.dom.DocumentBuilderFactory` 靜態物件的方 `org.w3c.dom.DocumentBuilderFactory` 法以建立物 `newInstance` 件。
    * 調用 `org.w3c.dom.DocumentBuilder` 物件的方 `org.w3c.dom.DocumentBuilderFactory` 法以建立物 `newDocumentBuilder` 件。
    * 調用 `org.w3c.dom.Document` 物件的方法並傳 `org.w3c.dom.DocumentBuilder` 遞物件， `parse` 以建立物 `java.io.InputStream` 件。
-   * 檢索XML文檔中每個節點的值。 完成此任務的一種方法是建立接受兩個參數的自定義方法：要 `org.w3c.dom.Document` 檢索其值的對象和節點的名稱。 此方法返回表示節點值的字串值。 在此程式後面的代碼示例中，調用此自定義方法 `getNodeText`。 本文給出了該方法的主體。
+   * 檢索XML文檔中每個節點的值。 完成此任務的一種方法是建立接受兩個參數的自定義方法： 要 `org.w3c.dom.Document` 檢索其值的對象和節點的名稱。 此方法返回表示節點值的字串值。 在此程式後面的代碼示例中，調用此自定義方法 `getNodeText`。 本文給出了該方法的主體。
 
 
 1. 使用「輸出」服務建立非互動式PDF檔案。
@@ -139,10 +143,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 一 `UpdateVersionType` 個枚舉值，它指定如何處理版本資訊(例如， `UpdateVersionType.INCREMENT_MAJOR_VERSION` 增量內容版本)。 )此值為必要參數。
    * 指定 `java.util.List` 與內容相關的方面的實例。 此值是可選參數，您可以指定 `null`。
    * 儲存 `java.util.Map` 內容屬性的對象。
+
    該方 `storeContent` 法返回描 `CRCResult` 述內容的對象。 例如， `CRCResult` 您可以使用物件來取得內容的唯一識別碼值。 若要執行此工作，請叫 `CRCResult` 用物件的方 `getNodeUuid` 法。
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
