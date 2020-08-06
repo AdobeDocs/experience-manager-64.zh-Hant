@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 3%
 
 ---
 
@@ -21,13 +24,13 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 >[!NOTE]
 >
->用於建立社區站點的控 [制台](sites-console.md)、社 [區站點模板](sites.md)、 [社區組模板和社區功](tools-groups.md)[](functions.md) 能僅供作者環境使用。
+>用於建立社區站點的控 [制台](sites-console.md)、社 [區站點模板](sites.md)、 [社區組模板和社](tools-groups.md)[](functions.md) 區功能僅在作者環境中使用。
 
 ## 網站範本主控台 {#site-templates-console}
 
 在作者環境中，若要進入社群網站主控台
 
-* 從全域導覽：工 **[!UICONTROL 具>社群>網站範本]**
+* 從全域導覽： **[!UICONTROL 工具>社群>網站範本]**
 
 此控制台顯示可從中創 [建社區站點](sites-console.md) 的模板，並允許建立新站點模板。
 
