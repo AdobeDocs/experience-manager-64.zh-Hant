@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: de8d0e6d-827b-45fe-a538-d3fe1dec8427
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 2%
 
 ---
 
@@ -67,7 +70,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 | **resourceType** | social/journal/components/hbs/sidebar |
 |---|---|
 | [**included **](scf.md#add-or-include-a-communities-component) | 否 |
-| [**clientlibs **](clientlibs.md) | cq.social.hbs.journal.sidebar |
+| [**clientlibs **](clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **模板** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **屬性** | 請參閱 [部落格功能](blog-feature.md) |
@@ -116,5 +119,5 @@ AEM平台會封鎖其他網站的連結，以防止XSS攻擊，如
 
 自AEM 6.2起，先前需要手動進行的修改會包含在預設的AntiSamy設定檔案中。
 
-透過選取圖示，豐富式媒體內嵌在部落格 `Embed Media from External Sites` 文章中： ![chlimage_1-471](assets/chlimage_1-471.png)
+透過選取圖示，豐富式媒體內嵌在部落格 `Embed Media from External Sites` 文章中：  ![chlimage_1-471](assets/chlimage_1-471.png)
 
