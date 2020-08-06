@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '714'
+ht-degree: 2%
 
 ---
 
@@ -37,12 +40,13 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 填寫資源的基本資訊：
 
-* **[!UICONTROL 網站名稱]**:設定為所選社區站點的名稱：啟用教學課程
-* **[!UICONTROL 資源名稱&amp;ast;]**:滑雪課程1
-* **[!UICONTROL 標籤]**:教學課程：運動／滑雪
-* **[!UICONTROL 在目錄中顯示]**:開啟
-* **[!UICONTROL 說明]**:為初學者在雪上滑動
-* **[!UICONTROL 新增影像]**:在其「分配」視圖中為成員添加表示資源的映像
+* **[!UICONTROL 網站名稱]**:
+設定為所選社區站點的名稱： 啟用教學課程
+* **[!UICONTROL 資源名稱&amp;ast;]**: 滑雪課程1
+* **[!UICONTROL 標籤]**: 教學課程： 運動／滑雪
+* **[!UICONTROL 在目錄中顯示]**: 開啟
+* **[!UICONTROL 說明]**: 為初學者在雪上滑動
+* **[!UICONTROL 新增影像]**: 在其「分配」視圖中為成員添加表示資源的映像
    ![chlimage_1-202](assets/chlimage_1-202.png)
 * 選擇下 **[!UICONTROL 一步]**
 
@@ -64,14 +68,18 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 * **[!UICONTROL 社交設定]**&#x200B;保留預設設定，讓學員在使用體驗時加上註解和啟用資源的評分。
 * **[!UICONTROL 到期日期]**
+
    *（可選）* ，可以選擇完成分配的日期。
 * **[!UICONTROL 資原作者]**
+
    *（可選）* 「留空」。
 * **[!UICONTROL 資源Contact&amp;ast;]**
+
    *（必要）* ，使用下拉菜單選擇成員 `Quinn Harper`。
 * **[!UICONTROL 資源專家]**
+
    *（可選）* 「留空」。
-   **注意**:如果不顯示用戶或組，請檢查是否已將它們添加到組中， `Community Enable Members` 並 *在發佈實例上保存* 。
+   **注意**: 如果不顯示用戶或組，請檢查是否已將它們添加到組中， `Community Enable Members` 並 *在發佈實例上保存* 。
    ![chlimage_1-206](assets/chlimage_1-206.png)
 * 選擇下 **[!UICONTROL 一步]**
 
@@ -109,7 +117,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 返回其資源的啟用教學課程清單。
 
-*提示：如果兩個資源都不可見，請刷新頁面。*
+*提示： 如果兩個資源都不可見，請刷新頁面。*
 
 ![chlimage_1-211](assets/chlimage_1-211.png)
 
@@ -124,9 +132,9 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 新增基 **[!UICONTROL 本資訊]**:
 
-* **[!UICONTROL 學習路徑名稱]**:滑雪課
-* **[!UICONTROL 標籤]**:教學課程：滑雪
-* **[!UICONTROL 在目錄中顯示]**:未選中
+* **[!UICONTROL 學習路徑名稱]**: 滑雪課
+* **[!UICONTROL 標籤]**: 教學課程： 滑雪
+* **[!UICONTROL 在目錄中顯示]**: 未選中
 * **[!UICONTROL 上傳影像]** ，以表示「資源」主控台中的學習路徑
 
 ![chlimage_1-213](assets/chlimage_1-213.png)
@@ -141,11 +149,11 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 * 選擇 `+ Add Resources` 以選擇要添加到學習路徑的2個滑雪課程資源
 
-   注意：只有已 **發佈的** 「資源」是可選的。
+   注意： 只有已 **發佈的** 「資源」是可選的。
 
 >[!NOTE]
 >
->您只能選擇與學習路徑位於同一級別的可用資源。 例如，對於在群組中建立的學習路徑，只有群組層級資源可供使用；對於在社群網站中建立的學習路徑，該網站中的資源可供新增至學習路徑。
+>您只能選擇與學習路徑位於同一級別的可用資源。 例如，對於在群組中建立的學習路徑，只有群組層級資源可供使用； 對於在社群網站中建立的學習路徑，該網站中的資源可供新增至學習路徑。
 
 * 選擇 **[!UICONTROL 提交]**。
 
@@ -155,9 +163,11 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
-* **[!UICONTROL 新增受]**&#x200B;聘者使用下拉式功能表來選擇 `Community Ski Class``Riley Taylor` 應包含成員和 `Sidney Croft.`
+* **[!UICONTROL 新增受聘]**&#x200B;者使用下拉式功能表來選取 
+`Community Ski Class` 群組，其中應包含成員 `Riley Taylor` 和 `Sidney Croft.`
 
 * **[!UICONTROL Learning Path Contact&amp;ast;]**
+
    *（必要）* ，使用下拉菜單選擇成員 `Quinn Harper`。
 
 * Select **[!UICONTROL Create]**
