@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 >[!NOTE]
 >
->**自訂元件**:對於AEM Communities的授權客戶，SRP API可供自訂元件的開發人員使用，以便存取UGC，而不考慮基礎的拓撲。 請參 [閱SRP和UGC Essentials](srp-and-ugc.md)。
+>**自訂元件**: 對於AEM Communities的授權客戶，SRP API可供自訂元件的開發人員使用，以便存取UGC，而不考慮基礎的拓撲。 請參 [閱SRP和UGC Essentials](srp-and-ugc.md)。
 
 另請參閱:
 
@@ -87,7 +90,7 @@ MSRP使用Solr進行查詢。
 
 ### JSRP {#jsrp}
 
-JSRP是用來存取單一AEM例項上所有UGC的預設提供者。 它提供快速體驗AEM Communities 6.1的能力，而不需設定MSRP或ASRP。
+JSRP是用來存取單一AEM例項上所有UGC的預設提供者。 它提供快速體驗AEM Communities 6.1的功能，而不需設定MSRP或ASRP。
 
 請參 [閱JSRP - JCR儲存資源提供程式](jsrp.md)。
 
@@ -144,7 +147,7 @@ ACL檢查使用一種實用程式方法，該方法返回適合於檢查應用�
 
 例如，假設部署是 [MSRP](msrp.md) ，並有TarMK發佈場。
 
-當成 [員在pub1上](users.md) （儲存在MongoDB中）發佈UGC時，會在pub1的JCR中建立陰影節點。
+當成 [員在pub1](users.md) （儲存在MongoDB中）上發佈UGC時，會在pub1的JCR中建立陰影節點。
 
 第一次在pub2上讀取UGC時，如果未設定任何內容，預設行為是建立陰影節點。
 
