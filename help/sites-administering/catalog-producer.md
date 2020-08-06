@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 translation-type: tm+mt
 source-git-commit: c777ad6314fb0a83f574e82aa11cb677eb52b7d6
+workflow-type: tm+mt
+source-wordcount: '899'
+ht-degree: 0%
 
 ---
 
@@ -87,7 +90,7 @@ Catalog Producer使用產品資訊管理(PIM)資料，以範本中顯示的XML�
    >
    >若要變更參考產品的中繼資料，請導覽至「產品」主控台(**AEM Logo** > **Commerce** > **Products**)，然後選取產品。 然後，按一下／點選工 **具列中的「檢視屬性** 」圖示，並在資產的「屬性」頁面中編輯中繼資料。
 
-1. 若要重新排列目錄中的頁面，請點選／按一下工具列中的「 **建立** 」圖示，然後從選單選擇「 **合併** 」。 在精靈中，上方的轉盤可讓您拖曳頁面，以重新排序頁面。 您也可以移除頁面。
+1. 若要重新排列目錄中的頁面，請點選／按一下工具 **列中的** 「建立」圖示，然後從選單選擇 **「合併** 」。 在精靈中，上方的轉盤可讓您拖曳頁面，以重新排序頁面。 您也可以移除頁面。
 
 1. 點選／按「下 **一步**」。 若要將現有的InDesign檔案新增為封面，請點選／按一下「選擇封面頁 ******** 」方塊旁的「瀏覽」，並指定封面頁範本的路徑。
 1. Tap/click **Save**, and then tap/click **Done** to close the confirmation dialog.
