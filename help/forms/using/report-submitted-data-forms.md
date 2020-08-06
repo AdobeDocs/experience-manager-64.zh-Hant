@@ -10,6 +10,9 @@ topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 4%
 
 ---
 
@@ -42,7 +45,7 @@ AEM Forms提供API，您可用來查詢透過表單入口網站提交的表單�
  ......]
 ```
 
-### 例如 {#example}
+### 範例 {#example}
 
 **請求URL**
 
@@ -92,7 +95,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr> 
   <tr> 
    <td><code>cutPoints</code> <br /> (可選)</td> 
-   <td>指定要包含在結果中的表單屬性的逗號分隔清單。 <br /> 預設屬性為： <code>formName</code>, <code>formPath</code><code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
+   <td>指定要包含在結果中的表單屬性的逗號分隔清單。 預設屬性為：<br /> <code>formName</code>、 <code>formPath</code>、 <code>submitID</code>、 <code>formType</code>、 <code>jcr:lastModified</code>、 <code>owner</code></td> 
   </tr> 
   <tr> 
    <td><code>search</code> <br /> (可選)</td> 
@@ -112,7 +115,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
  ....]}
 ```
 
-### 例如 {#example-1}
+### 範例 {#example-1}
 
 **請求URL**
 
@@ -143,7 +146,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getAllSub
 
 傳回成功張貼留言的留言ID。
 
-### 例如 {#example-2}
+### 範例 {#example-2}
 
 **請求URL**
 
@@ -157,7 +160,7 @@ https://[host:[port]/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 傳回在指定的提交實例上張貼的所有注釋。
 
@@ -181,7 +184,7 @@ https://[host:[port]/content/forms/portal/submission.review.json?func=addComment
  { }......]
 ```
 
-### 例如 {#example-3}
+### 範例 {#example-3}
 
 **請求URL**
 
@@ -213,7 +216,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getCommen
 
 傳回JSON物件，其中包含已張貼更新的相關資訊。
 
-### 例如 {#example-4}
+### 範例 {#example-4}
 
 **請求URL**
 
