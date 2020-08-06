@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 1%
 
 ---
 
@@ -219,7 +222,7 @@ AEM Forms工作區可讓您自訂錯誤對話方塊。 執行AEM Forms [工作�
 >
 >如果您要參照其他影像，請在所要的階層下方新增 `/apps/ws/images`。
 
-## 範例 {#examples}
+## Examples {#examples}
 
 * **要自定義錯誤對話框，請更改：**
 
