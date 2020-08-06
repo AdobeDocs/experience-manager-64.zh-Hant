@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '9082'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-請注意，FormsFolder中有一個名為Loan.xdp的檔案。 若要存取此表單設計，請指定完整路徑（包括版本）: `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
+請注意，FormsFolder中有一個名為Loan.xdp的檔案。 若要存取此表單設計，請指定完整路徑（包括版本）: `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
 
 >[!NOTE]
 >
@@ -43,7 +46,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 >[!NOTE]
 >
->您可以使用網頁瀏覽器來瀏覽AEM Forms Repository。 要瀏覽儲存庫，請在Web瀏覽器https://伺服器名[稱]:[server port]/repository中輸入以下URL。 您可以使用網頁瀏覽器來驗證與「使用AEM Forms Repository」（使用AEM Forms資料庫）區段關聯的快速啟動結果。 例如，如果您新增內容至AEM Forms Repository，您就可以在網頁瀏覽器中看到內容。 (請參 [閱快速入門（SOAP模式）:使用Java API編寫資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)。)
+>您可以使用網頁瀏覽器來瀏覽AEM Forms Repository。 要瀏覽儲存庫，請在Web瀏覽器https://伺服器名[稱]:[server port]/repository中輸入以下URL。 您可以使用網頁瀏覽器來驗證與「使用AEM Forms Repository」（使用AEM Forms資料庫）區段關聯的快速啟動結果。 例如，如果您新增內容至AEM Forms Repository，您就可以在網頁瀏覽器中看到內容。 (請參 [閱快速入門（SOAP模式）: 使用Java API編寫資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)。)
 
 儲存庫API提供了一些操作，可用來儲存和檢索儲存庫中的資訊。 例如，當處理應用程式時需要資源時，可以獲取資源清單或檢索儲存在儲存庫中的特定資源。
 
@@ -79,7 +82,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 資料夾（資源集合）用於按有組織的組儲存對象（檔案或資源）。 資料夾可以包含資源和其他資料夾，也稱為子資料夾。 資源一次只能儲存在一個資料夾中。
 
-檔案從資料夾繼承訪問控制清單(ACL)，子資料夾從其父資料夾繼承ACL。 因此，在建立子資料夾之前，父資料夾必須存在。 IDE僅允許您逐個資料夾進行交互，而不允許逐個檔案進行交互。 您無法對資料夾進行版本化，也無需這樣做；資料夾本身不包含資料。 相反，它只是包含資料之資源的容器。 預設ACL是系統級權限，這意味著用戶必須擁有系統級權限（讀取、寫入、遍歷、管理ACL），直到有人授予他們特定資料夾的權限。 ACL僅在IDE中工作。
+檔案從資料夾繼承訪問控制清單(ACL)，子資料夾從其父資料夾繼承ACL。 因此，在建立子資料夾之前，父資料夾必須存在。 IDE僅允許您逐個資料夾進行交互，而不允許逐個檔案進行交互。 您無法對資料夾進行版本化，也無需這樣做； 資料夾本身不包含資料。 相反，它只是包含資料之資源的容器。 預設ACL是系統級權限，這意味著用戶必須擁有系統級權限（讀取、寫入、遍歷、管理ACL），直到有人授予他們特定資料夾的權限。 ACL僅在IDE中工作。
 
 >[!NOTE]
 >
@@ -116,7 +119,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用web service API建立資料夾](aem-forms-repository.md#create-folders-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -143,6 +146,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
    * 要 `com.adobe.repository.infomodel.Id` 分配給資源的UUID標識符。
    * 要 `com.adobe.repository.infomodel.Lid` 分配給資源的UUID標識符。
    * 包 `java.lang.String` 含資源集合的名稱。 For example, `FormsFolder`.
+
    該方法返回表 `com.adobe.repository.infomodel.bean.ResourceCollection` 示新資料夾的對象。
 
    使用方法設定資料夾的說明， `setDescription` 並傳入下列參數：
@@ -160,9 +164,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [建立資料夾](aem-forms-repository.md#creating-folders)
 
-[快速入門（SOAP模式）:使用Java API建立資料夾](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API建立資料夾](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -210,7 +214,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 建立資源時，訪問控制清單(ACL)會從父資料夾繼承。 根資料夾具有系統級權限，直到建立初始資源或資料夾，此時該資源或資料夾將獲得預設ACL權限。
 
-您可以使用Repository服務Java API或web service API，以程式設計方式編寫資源。
+您可以使用Repository服務Java API或web service API以程式設計方式編寫資源。
 
 >[!NOTE]
 >
@@ -235,7 +239,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 **為資源指定目標資料夾的URI**
 
-建立包含要讀取的資源URI的字串。 語法包含正斜線，如本例所示：&quot;/*path*/*folder*&quot;。
+建立包含要讀取的資源URI的字串。 語法包含正斜線，如本例所示： &quot;/*path*/*folder*&quot;。
 
 **建立資源**
 
@@ -255,7 +259,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用web service API編寫資源](aem-forms-repository.md#write-resources-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -286,6 +290,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
    * 對 `com.adobe.repository.infomodel.Id` 像，通過調用類的預設建構子 `Id` 建立。
    * 對 `com.adobe.repository.infomodel.Lid` 像，通過調用類的預設建構子 `Lid` 建立。
    * 包 `java.lang.String` 含資源的檔案名。
+
    若要指定資源的說明，請叫用物 `Resource` 件的方 `setDescription` 法並傳遞包含說明的字串。 在此示例中，說明為 `"test resource"`。
 
 1. 指定資源內容
@@ -294,6 +299,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
    * 調用對 `ResourceContent` 像的方 `setDataDocument` 法並傳入對象 `com.adobe.idp.Document`
    * 調用對 `ResourceContent` 像的方 `setSize` 法並傳入對象的大小(以位元組為單 `Document` 位)
+
    調用物件的方法並傳入物 `Resource` 件，將內 `setContent` 容新增至資 `ResourceContent` 源。 如需詳細資訊，請參 [閱「AEM Forms API參考」](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 1. 將資源寫入目標資料夾
@@ -304,9 +310,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [編寫資源](aem-forms-repository.md#writing-resources)
 
-[快速入門（SOAP模式）:使用Java API編寫資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API編寫資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -342,6 +348,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
    * 將包含 `BLOB` 檔案的物件指派至物 `ResourceContent` 件的欄位 `dataDocument` 。
    * 為對象的欄位分 `BLOB` 配對象的大 `ResourceContent` 小(以位元組為 `size` 單位)。
+
    將物件指派至物件的欄位， `ResourceContent` 將內容新 `Resource` 增至資 `content` 源。
 
 1. 將資源寫入目標資料夾
@@ -360,7 +367,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 組織資源後，您就可以檢視結構的特定分支來檢查您建立的結構，就像在作業系統中一樣。
 
-上市資源按關係經營：資源是資料夾的成員。 會籍由「會員」類型的關係所代表。 在指定資料夾中列出資源時，您正在按關係「成員」查詢與指定資料夾相關的資源。 關係是方向性的：關係的成員具有作為目標成員的源。 源頭是資源；目標是父資料夾。
+上市資源按關係經營： 資源是資料夾的成員。 會籍由「會員」類型的關係所代表。 在指定資料夾中列出資源時，您正在按關係「成員」查詢與指定資料夾相關的資源。 關係是方向性的： 關係的成員具有作為目標成員的源。 源頭是資源； 目標是父資料夾。
 
 >[!NOTE]
 >
@@ -385,7 +392,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 **指定資料夾路徑**
 
-建立包含資源資料夾路徑的字串。 語法包含正斜線，如本例所示：&quot;/*path*/*folder*&quot;。
+建立包含資源資料夾路徑的字串。 語法包含正斜線，如本例所示： &quot;/*path*/*folder*&quot;。
 
 **檢索資源清單**
 
@@ -397,7 +404,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用web service API列出資源](aem-forms-repository.md#list-resources-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -429,9 +436,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [列出資源](aem-forms-repository.md#listing-resources)。
 
-[快速入門（SOAP模式）:使用Java API列出資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API列出資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -470,10 +477,10 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 儲存庫具有以下四種權限類型：
 
-* **traverse**:允許您列出資源；即，讀取資源元資料，但不讀取資源內容
-* **閱讀**:允許您讀取資源內容
-* **寫入**:允許您編寫資源內容
-* **管理訪問控制清單(ACL)**:允許您操縱資源上的ACL
+* **traverse**: 允許您列出資源； 即，讀取資源元資料，但不讀取資源內容
+* **閱讀**: 允許您讀取資源內容
+* **寫入**: 允許您編寫資源內容
+* **管理訪問控制清單(ACL)**: 允許您操縱資源上的ACL
 
 用戶只能在擁有運行進程的權限時運行進程。 IDE用戶需要遍歷和讀取權限才能與儲存庫同步。 ACL僅在設計時才適用，因為運行時是在系統上下文中進行的。
 
@@ -502,7 +509,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 **指定要讀取的資源的URI**
 
-建立包含要讀取的資源URI的字串。 語法包含正斜線，如本例所示：&quot;/*path*/*resource*&quot;。
+建立包含要讀取的資源URI的字串。 語法包含正斜線，如本例所示： &quot;/*path*/*resource*&quot;。
 
 **閱讀資源**
 
@@ -514,7 +521,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用web service API讀取資源](aem-forms-repository.md#reading-resources-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -544,9 +551,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [閱讀資源](aem-forms-repository.md#reading-resources)
 
-[快速入門（SOAP模式）:使用Java API讀取資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API讀取資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -581,9 +588,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 您可以檢索和更新儲存庫中的資源內容。 更新資源時，這些資源的訪問控制在版本之間保持不變。 執行更新時，您可以選擇增加主要版本。 如果您不選擇增加主要版本，次要版本會自動更新。
 
-更新資源時，將根據指定的資源屬性建立新版本。 在更新資源時，可以指定兩個重要參數：目標URI和包含所有更新元資料的資源實例。 請務必注意，如果您未變更指定屬性（例如，名稱），則在您傳入的例項中仍需要該屬性。 解析內容時建立的關係會新增至特定版本，除非指定，否則不會前移。
+更新資源時，將根據指定的資源屬性建立新版本。 在更新資源時，可以指定兩個重要參數： 目標URI和包含所有更新元資料的資源實例。 請務必注意，如果您未變更指定屬性（例如，名稱），則在您傳入的例項中仍需要該屬性。 解析內容時建立的關係會新增至特定版本，除非指定，否則不會前移。
 
-例如，如果您更新XDP檔案，且其中包含其他資源的參考，則也會記錄這些額外的參考。 假設form.xdp 1.0版有兩個外部參照：標誌和樣式表，您隨後會更新form.xdp，以便現在有三個參照：標誌、樣式表和架構檔案。 在更新期間，儲存庫將將第三個關係（到架構檔案）添加到其暫掛關係表。 當架構檔案存在於儲存庫中時，將自動形成關係。 不過，如果form.xdp 2.0版不再使用標誌，form.xdp 2.0版將不會與標誌有任何關係。
+例如，如果您更新XDP檔案，且其中包含其他資源的參考，則也會記錄這些額外的參考。 假設form.xdp 1.0版有兩個外部參照： 標誌和樣式表，您隨後會更新form.xdp，以便現在有三個參照： 標誌、樣式表和架構檔案。 在更新期間，儲存庫將將第三個關係（到架構檔案）添加到其暫掛關係表。 當架構檔案存在於儲存庫中時，將自動形成關係。 不過，如果form.xdp 2.0版不再使用標誌，form.xdp 2.0版將不會與標誌有任何關係。
 
 所有更新操作都是原子操作和事務操作。 例如，如果兩個用戶讀取了相同的資源，並決定將1.0版更新為2.0版，則其中一個將成功，而另一個將失敗，則儲存庫的完整性將得到維護，並且兩個用戶都將收到確認成功或失敗的消息。 如果事務未提交，則在資料庫出現故障時將回退，並根據應用程式伺服器超時或回退。
 
@@ -624,7 +631,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用web service API更新資源](aem-forms-repository.md#update-resources-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -660,9 +667,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [更新資源](aem-forms-repository.md#updating-resources)
 
-[快速入門（SOAP模式）:使用Java API更新資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API更新資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -704,7 +711,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 您可以構建用於搜索儲存庫中資源的查詢，包括歷史記錄、相關資源和屬性。
 
-您可以檢索相關資源以確定表單及其片段之間的相關性。 例如，如果您有表單，您可以決定它使用的片段或外部資源。 如果您有影像，您也可以瞭解哪些表格使用影像。 您也可以使用根據屬性的篩選來搜尋相關資源。 例如，您可以搜尋使用指定名稱之影像的所有表單，或尋找具有指定名稱之表單使用的任何影像。 您也可以使用資源屬性進行搜索。 例如，您可以執行查詢，以查找其名稱以指定字串開頭的所有表單或資源，該字串可能包括「%」和「_」通配符。 請記住，基於屬性的搜索並非基於關係；此類搜索基於您對給定資源有特定知識的假設。
+您可以檢索相關資源以確定表單及其片段之間的相關性。 例如，如果您有表單，您可以決定它使用的片段或外部資源。 如果您有影像，您也可以瞭解哪些表格使用影像。 您也可以使用根據屬性的篩選來搜尋相關資源。 例如，您可以搜尋使用指定名稱之影像的所有表單，或尋找具有指定名稱之表單使用的任何影像。 您也可以使用資源屬性進行搜索。 例如，您可以執行查詢，以查找其名稱以指定字串開頭的所有表單或資源，該字串可能包括「%」和「_」通配符。 請記住，基於屬性的搜索並非基於關係； 此類搜索基於您對給定資源有特定知識的假設。
 
 **查詢語句**
 
@@ -745,7 +752,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 **指定搜尋的目標資料夾**
 
-建立包含執行搜索的基本路徑的字串。 語法包含正斜線，如本例所示：&quot;/*path*/*folder*&quot;。
+建立包含執行搜索的基本路徑的字串。 語法包含正斜線，如本例所示： &quot;/*path*/*folder*&quot;。
 
 **指定搜尋中使用的屬性**
 
@@ -771,7 +778,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用Java API搜尋資源](aem-forms-repository.md#search-for-resources-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -795,7 +802,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 1. 指定搜尋中使用的屬性
 
-   指定要對其執行搜索的屬性的值。 屬性存在於對象 `com.adobe.repository.infomodel.bean.Resource` 中。 在本例中，將對name屬性進行搜索；因此， `java.lang.String` 會使 `Resource` 用包含物件名稱的 `testResource` 物件。
+   指定要對其執行搜索的屬性的值。 屬性存在於對象 `com.adobe.repository.infomodel.bean.Resource` 中。 在本例中，將對name屬性進行搜索； 因此， `java.lang.String` 會使 `Resource` 用包含物件名稱的 `testResource` 物件。
 
 1. 建立搜索中使用的查詢
 
@@ -806,6 +813,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
    * 包含資源屬性常數的左操作數。 在此範例中，由於資源的名稱是搜尋的基礎，因此會使用靜態 `Resource.ATTRIBUTE_NAME` 值。
    * 包含用於搜索屬性的條件的運算子。 運算子必須是類中的靜態常數之 `Query.Statement` 一。 在此範例中，會使用靜態 `Query.Statement.OPERATOR_BEGINS_WITH` 值。
    * 包含用於執行搜索的屬性值的右操作數。 在此範例中，會使用名稱屬 `String` 性(包含 `"testResource"`值)。
+
    調用物件的方法並傳入 `Query.Statement` 類別中包含 `setNamespace` 的其中一個靜態值，以指定左運算元的命名空 `com.adobe.repository.infomodel.bean.ResourceProperty` 間。 在此示例中， `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY` 使用。
 
    調用物件的方法並傳入物件，將 `Query` 每個陳述 `addStatement` 式新增至查 `Query.Statement` 詢。
@@ -828,19 +836,20 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
    * 指 `int` 示要從中選擇未分頁結果集的第一行的值。 在此示例中，指 `0` 定了。
    * 指 `int` 示要返回的最大結果數的值。 在此示例中，指 `10` 定了。
    * 搜索中使用的排序順序。
+
    方法以指定 `java.util.List` 的 `Resource` 排序順序返回對象。
 
 1. 從搜索結果中檢索資源
 
-   要檢索搜索結果中包含的資源，請對每個對 `List` 像進行循環，並將每個對象 `Resource` 轉換為一個對象，以提取其資訊。 在此示例中，將顯示每個資源的名稱。
+   要檢索搜索結果中包含的資源，請對每個對 `List` 像進行迭代，並將每個對象 `Resource` 轉換為一個對象，以提取其資訊。 在此示例中，將顯示每個資源的名稱。
 
 **另請參閱**
 
 [搜索資源](aem-forms-repository.md#searching-for-resources)
 
-[快速入門（SOAP模式）:使用Java API搜尋資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API搜尋資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -848,9 +857,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 您可以指定儲存庫中資源之間的關係。 有三種關係：
 
-* **依賴**:資源依賴於其他資源的關係，這意味著儲存庫中需要所有相關資源。
-* **會籍（檔案系統）**:資源位於給定資料夾中的關係。
-* **自訂**:您在資源之間指定的關係。 例如，如果一個資源已過時，而另一個資源已引入儲存庫，則可以指定您自己的替換關係。
+* **依賴**: 資源依賴於其他資源的關係，這意味著儲存庫中需要所有相關資源。
+* **會籍（檔案系統）**: 資源位於給定資料夾中的關係。
+* **自訂**: 您在資源之間指定的關係。 例如，如果一個資源已過時，而另一個資源已引入儲存庫，則可以指定自己的替換關係。
 
 您可以建立自己的自訂關係。 例如，如果將HTML檔案儲存在儲存庫中，並且它使用影像，則可以指定將HTML檔案與影像關聯的自定義關係（因為通常只有XML檔案與使用儲存庫定義的依賴關係的影像關聯）。 自定義關係的另一個示例是，如果希望使用循環圖結構而不是樹結構來構建儲存庫的不同視圖。 您可以定義圓形圖和檢視器來遍歷這些關係。 最後，您可以指出資源會取代另一個資源，即使兩個資源完全不同。 在這種情況下，您可以定義保留範圍以外的關係類型，並在這兩個資源之間建立關係。 您的應用程式將是唯一可偵測和處理關係的用戶端，而且可用來搜尋該關係。
 
@@ -879,7 +888,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 **指定要關聯的資源的URI**
 
-建立包含要關聯的資源的URI的字串。 語法包含正斜線，如本例所示：&quot;/*path*/*resource*&quot;。
+建立包含要關聯的資源的URI的字串。 語法包含正斜線，如本例所示： &quot;/*path*/*resource*&quot;。
 
 **建立關係**
 
@@ -891,7 +900,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用web service API建立關係資源](aem-forms-repository.md#create-relationship-resources-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -921,20 +930,22 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
    * 目標資源的URI。
    * 關係的類型，它是類中的靜態常數之 `com.adobe.repository.infomodel.bean.Relation` 一。 在此示例中，通過指定值來建立從屬關係 `Relation.TYPE_DEPENDANT_OF`。
    * 指 `boolean` 示目標資源是否自動更新為新頭資 `com.adobe.repository.infomodel.Id`源的基於標識符的值。 在此示例中，由於相依關係，因此指定 `true` 了值。
+
    您也可以叫用物件的方法，並傳入下列參數，以擷取特 `ResourceRepositoryClient` 定資源的 `getRelated` 相關資源清單：
 
    * 要為其檢索相關資源的資源的URI。 在此示例中，指定了源資 `"/testFolder/testResource1"`源()。
    * 指 `boolean` 示指定資源是否為關係中的源資源的值。 在此示例中，指定 `true` 值是因為此情況。
-   * 關係類型，它是類中的靜態常數之 `Relation` 一。 在此示例中，通過使用先前使用的相同值來指定從屬關係： `Relation.TYPE_DEPENDANT_OF`。
-   該方 `getRelated` 法返回 `java.util.List` 一 `Resource` 組對象，通過這些對象可以循環檢索每個相關資源，並將包含在中的對象 `List` 傳 `Resource` 遞給您。 在此範例中， `testResource2` 預期會出現在傳回資源清單中。
+   * 關係類型，它是類中的靜態常數之 `Relation` 一。 在此示例中，通過使用先前使用的相同值來指定從屬關係： `Relation.TYPE_DEPENDANT_OF`.
+
+   該方 `getRelated` 法返回 `java.util.List` 一組對象，通過這些對象可以循環檢索每個相關資源，並將包含在中的對象 `Resource` 傳 `List``Resource` 遞給您。 在此範例中， `testResource2` 預期會出現在傳回資源清單中。
 
 **另請參閱**
 
 [建立資源關係](aem-forms-repository.md#creating-resource-relationships)
 
-[快速入門（SOAP模式）:使用Java API建立資源之間的關係](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API建立資源之間的關係](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -966,13 +977,15 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
    * 指 `boolean` 示目標資源是否自動更新為新頭資 `Id`源的基於標識符的值。 在此示例中，由於相依關係，因此指定 `true` 了值。
    * 指 `boolean` 示是否指定目標頭的值。 在此示例中，指定 `true` 值。
    * 傳遞 `null` 最後一個參數。
+
    您也可以叫用物件的方法，並傳入下列參數，以擷取特 `RepositoryServiceService` 定資源的 `getRelated` 相關資源清單：
 
    * 要為其檢索相關資源的資源的URI。 在此示例中，指定了源資 `"/testFolder/testResource1"`源()。
    * 指 `boolean` 示指定資源是否為關係中的源資源的值。 在此示例中，指定 `true` 值是因為此情況。
    * 指 `boolean` 示是否指定了源資源的值。 在此示例中，提供了 `true` 值。
-   * 包含關係類型的整數陣列。 在此示例中，通過在陣列中使用與先前使用的相同值來指定依賴關係： `3`。
+   * 包含關係類型的整數陣列。 在此示例中，通過在陣列中使用與先前使用的相同值來指定依賴關係： `3`.
    * 傳 `null` 遞其餘兩個參數。
+
    該方 `getRelated` 法返回可轉換到對象的一 `Resource` 組對象，通過這些對象可以循環檢索每個相關資源。 在此範例中， `testResource2` 預期會出現在傳回資源清單中。
 
 **另請參閱**
@@ -1016,7 +1029,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 **指定要鎖定的資源的URI**
 
-建立包含要鎖定的資源的URI的字串。 語法包含正斜線，如本例所示：&quot;/*path*/*resource*&quot;。
+建立包含要鎖定的資源的URI的字串。 語法包含正斜線，如本例所示： &quot;/*path*/*resource*&quot;。
 
 **鎖定資源**
 
@@ -1036,7 +1049,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用web service API鎖定資源](aem-forms-repository.md#lock-resources-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1065,6 +1078,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
    * 資源的URI。
    * 鎖定範圍。 在此示例中，由於資源將被鎖定以供獨佔使用，因此鎖定範圍被指定為 `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`。
    * 鎖定深度。 在此示例中，由於鎖定僅適用於特定資源，且不適用於其成員或子代，因此將鎖定深度指定為 `Lock.DEPTH_ZERO`。
+
    >[!NOTE]
    >
    >需要四個參數的 `lockResource` 方法的過載版本會引發異常。 請確定使用 `lockResource` 需要三個參數的方法，如本步驟所示。
@@ -1081,9 +1095,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [鎖定資源](aem-forms-repository.md#locking-resources)
 
-[快速入門（SOAP模式）:使用Java API鎖定資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API鎖定資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1116,11 +1130,11 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 1. 檢索資源的鎖
 
-   調用 `RepositoryServiceService` 物件的方 `getLocks` 法，並將資源的URI傳遞為第一個參數， `null` 以及第二個參數。 該方法返回包含 `object` 可循環 `Lock` 的對象的陣列。 在此範例中，鎖定擁有者、深度和範圍會分別存取每個物 `Lock` 件的欄位 `ownerUserId`、 `depth`和 `type` 欄位。
+   調用 `RepositoryServiceService` 物件的方 `getLocks` 法，並將資源的URI傳遞為第一個參數，以及 `null` 第二個參數。 該方法返回包含 `object` 可循環 `Lock` 的對象的陣列。 在此範例中，鎖定擁有者、深度和範圍會分別存取每個物 `Lock` 件的欄位 `ownerUserId`、 `depth`和 `type` 欄位。
 
 1. 解除鎖定資源
 
-   調用 `RepositoryServiceService` 物件的方 `unlockResource` 法，並將資源的URI傳遞為第一個參數， `null` 以及第二個參數。
+   調用 `RepositoryServiceService` 物件的方 `unlockResource` 法，並將資源的URI傳遞為第一個參數，以及 `null` 第二個參數。
 
 **另請參閱**
 
@@ -1140,7 +1154,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 >[!NOTE]
 >
->將方法與 `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()` ECM儲存庫（EMC Documentum Content server和IBM FileNet P8 Content Manager）一起使用時，如果某個指定資源的刪除失敗，則不會回退事務，這意味著無法刪除的檔案。
+>將方法與 `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()` ECM儲存庫（EMC Documentum Content Server和IBM FileNet P8 Content Manager）一起使用時，如果某個指定資源的刪除失敗，則不會回退事務，這意味著無法刪除的檔案。
 
 >[!NOTE]
 >
@@ -1165,7 +1179,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 **指定要刪除的資源的URI**
 
-建立包含要刪除的資源的URI的字串。 語法包含正斜線，如本例所示：&quot;/*path*/*resource*&quot;。 如果要刪除的資源是資料夾，則刪除將是遞歸的。
+建立包含要刪除的資源的URI的字串。 語法包含正斜線，如本例所示： &quot;/*path*/*resource*&quot;。 如果要刪除的資源是資料夾，則刪除將是遞歸的。
 
 **刪除資源**
 
@@ -1177,7 +1191,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [使用web service API刪除資源](aem-forms-repository.md#delete-resources-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1207,9 +1221,9 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
 
 [刪除資源](aem-forms-repository.md#deleting-resources)
 
-[快速入門（SOAP模式）:使用Java API搜尋資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API搜尋資源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
