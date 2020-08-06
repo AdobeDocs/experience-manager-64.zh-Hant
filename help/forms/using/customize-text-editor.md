@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
@@ -47,15 +50,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/config
+      **路徑：** /libs/fd/cm/config
 
-      **** 位置：/apps/
+      **位置：** /apps/
 
-      **** 匹配節點類型：已選取
+      **匹配節點類型：** 已選取
 
       ![覆蓋節點](assets/2-2.png)
 
-   1. 按一下 **確定**。 資料夾結構會建立在應用程式資料夾中。
+   1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
    1. 按一下「 **全部儲存**」。
 
@@ -163,7 +166,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * 高度和字母間距等屬性
       * 字型系列和大小、高度、字母間距和日期格式的預設值
       * 項目符號縮排
-      例如，若要新增名為Sazanami Mincho Medium的日文字型，您必須在XML檔案中輸入下列項目： `<font>Sazanami Mincho Medium</font>`。 您也需要將此字型安裝在用戶端機器上，以便存取及使用字型自訂。 如需詳細資訊，請參 [閱「將自訂字型新增至用戶端電腦」](#addcustomfonts)。
+
+      例如，若要新增名為Sazanami Mincho Medium的日文字型，您必須在XML檔案中輸入下列項目： `<font>Sazanami Mincho Medium</font>`. 您也需要將此字型安裝在用戶端機器上，以便存取及使用字型自訂。 如需詳細資訊，請參 [閱「將自訂字型新增至用戶端電腦」](#addcustomfonts)。
 
       您也可以變更文字各個方面的預設值，並借由移除項目，從文字編輯器移除字型。
 
@@ -177,7 +181,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 如需安裝字型的詳細資訊，請參閱下列：
 
 * [在Windows上安裝或解除安裝字型](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [Mac基本功能：字型簿](https://support.apple.com/en-us/HT201749)
+* [Mac基本功能： 字型簿](https://support.apple.com/en-us/HT201749)
 
 ## 存取字型自訂 {#access-font-customizations}
 
