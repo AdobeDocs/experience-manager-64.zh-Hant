@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2484'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 ## 關於備份和恢復服務 {#about-the-backup-and-restore-service}
 
-「備份和還原」服務可讓您將AEM Forms置於備 *份模式*，以便執行熱備份。 Backup and Restore服務實際上不會執行AEM Forms的備份或還原系統。 相反地，它使伺服器處於一致可靠的備份狀態，同時允許伺服器繼續運行。 您負責備份全局文檔儲存(GDS)和連接到表單伺服器的資料庫的操作。 GDS是一個目錄，用於儲存在長期進程中使用的檔案。
+「備份和還原」服務可讓您將AEM Forms置於備 *份模式*，以便執行熱備份。 Backup and Restore服務實際上不會執行AEM Forms備份或還原您的系統。 相反地，它使伺服器處於一致可靠的備份狀態，同時允許伺服器繼續運行。 您負責備份全局文檔儲存(GDS)和連接到表單伺服器的資料庫的操作。 GDS是一個目錄，用於儲存在長期進程中使用的檔案。
 
 備份模式是伺服器進入的狀態，因此在執行備份過程時，GDS中的檔案不會被清除。 而是在GDS目錄下建立子目錄，以保存保存備份模式結束後要清除的檔案記錄。 檔案可在系統重新啟動後繼續運行，並且可以跨越數天甚至數年。 這些檔案是表單伺服器整體狀態的重要部分，可能包含PDF檔案、原則或表單範本。 如果這些檔案中有任何檔案丟失或損壞，表單伺服器上的進程可能變得不穩定，資料可能丟失。
 
@@ -75,7 +78,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 在您的開發專案中加入必要的檔案。 這些檔案必須包含在您的專案中，才能正確編譯程式碼並使用備份與還原服務API。
 
-如需這些檔案位置的詳細資訊，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如需這些檔案位置的詳細資訊，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **建立BackupService客戶端API對象**
 
@@ -108,8 +111,8 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
-   * adobe-utilities.jar（如果AEM Forms部署在JBoss Application server上，則為必要項）
-   * jbossall-client.jar（如果AEM Forms部署在JBoss Application server上，則為必需）
+   * adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
+   * jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
 
 1. 建立BackupService客戶端API對象
 
@@ -198,7 +201,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 在您的開發專案中包含所有必要的檔案。 這些檔案對於正確編譯程式碼和使用備份與還原服務API非常重要。
 
-如需這些檔案位置的詳細資訊，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如需這些檔案位置的詳細資訊，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **建立BackupService客戶端API對象**
 
@@ -223,8 +226,8 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
    * adobe-backup-restore-client-sdk.jar
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
-   * adobe-utilities.jar（如果AEM Forms部署在JBoss Application server上，則為必要項）
-   * jbossall-client.jar（如果AEM Forms部署在JBoss Application server上，則為必需）
+   * adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
+   * jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
 
 1. 建立BackupService客戶端API對象
 
