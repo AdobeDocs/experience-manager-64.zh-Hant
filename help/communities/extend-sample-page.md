@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7185fb13-46a2-4fa3-aa21-a51e63cdb9be
 translation-type: tm+mt
 source-git-commit: 44c56ec5de6e9a832aaa52ab4a6c4978af7a9865
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
@@ -43,11 +46,11 @@ source-git-commit: 44c56ec5de6e9a832aaa52ab4a6c4978af7a9865
 
 ![範例頁面上的注釋Clientlibs](assets/chlimage_1-48.png)
 
-### 作者：範例頁面上的替代註解 {#author-alt-comment-on-sample-page}
+### 作者： 範例頁面上的替代註解 {#author-alt-comment-on-sample-page}
 
 ![範例頁面上的替代註解](assets/chlimage_1-49.png)
 
-### 作者：範例頁面注釋節點 {#author-sample-page-comments-node}
+### 作者： 範例頁面注釋節點 {#author-sample-page-comments-node}
 
 通過查看示例頁的注釋節點屬性，可以在CRXDE中驗證resourceType `/content/sites/sample/en/jcr:content/content/primary/comments`。
 
@@ -57,7 +60,7 @@ source-git-commit: 44c56ec5de6e9a832aaa52ab4a6c4978af7a9865
 
 將自訂元件新增至頁面後，也必須（重新）發 [布頁面](sites-console.md#publishing-the-site)。
 
-### 發佈：範例頁面上的替代註解 {#publish-alt-comment-on-sample-page}
+### 發佈： 範例頁面上的替代註解 {#publish-alt-comment-on-sample-page}
 
 發佈自訂應用程式和範例頁面後，您應可以輸入註解。 登入時，不論是與示範使 [用者](tutorials.md#demo-users) 或管理員登入，都可張貼意見。
 
