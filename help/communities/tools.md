@@ -12,6 +12,9 @@ discoiquuid: 410149d6-15bd-41e5-bdba-1d8e6eab7b87
 pagetitle: Communities Tools
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '110'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 在作者中，若要存取Communities工具主控台：
 
-* 從全域導覽：工 **[!UICONTROL 具>社群]**
+* 從全域導覽： **[!UICONTROL 工具>社群]**
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+![chlimage_1-127](assets/chlimage_1-129.png)
 
 * [站點模板](sites.md) -用於建立和管理站點模板的控制台
 * [群組範本](tools-groups.md)-用於建立和管理群組範本的主控台
