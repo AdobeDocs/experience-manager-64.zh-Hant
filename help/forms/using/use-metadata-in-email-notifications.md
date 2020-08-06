@@ -8,11 +8,14 @@ topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '919'
+ht-degree: 0%
 
 ---
 
 
-# 在電子郵件通知中使用中繼資料 {#use-metadata-in-an-email-notification}
+# 在電子郵件通知中使用中繼資料  {#use-metadata-in-an-email-notification}
 
 使用中繼資料，在表單工作流程的電子郵件通知中填入資訊
 
@@ -152,7 +155,7 @@ AEM Forms應用程式提供數個立即可用的中繼資料變數（索引鍵�
 
 您也可以在電子郵件通知中使用自訂中繼資料。 自訂中繼資料除了包含系統產生的中繼資料外，還包含資訊。 例如，從資料庫中檢索的策略詳細資訊。 您可以使用ECMAScript或OSGi套件，在crx-repository中新增自訂中繼資料：
 
-### 使用ECMAScript新增自訂中繼資料 {#use-ecmascript-to-add-custom-metadata}
+### 使用ECMAScript新增自訂中繼資料  {#use-ecmascript-to-add-custom-metadata}
 
 [ECMAScript](https://en.wikipedia.org/wiki/ECMAScript) 是指令碼語言。 它用於用戶端指令碼和伺服器應用程式。 請執行下列步驟，以使用ECMAScript為電子郵件範本新增自訂中繼資料：
 
@@ -195,7 +198,7 @@ AEM Forms應用程式提供數個立即可用的中繼資料變數（索引鍵�
 
 ### 使用OSGi套件和Java介面來新增自訂中繼資料 {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}
 
-您可以使用WorkitemUserMetadataService java介面為電子郵件範本新增自訂中繼資料。 您可以建立使用WorkitemUserMetadataService java介面的OSGi套件，並將它部署至AEM Forms伺服器。 它可讓中繼資料在「指派工作」步驟中供選取。
+您可以使用WorkitemUserMetadataService Java介面為電子郵件範本新增自訂中繼資料。 您可以建立使用WorkitemUserMetadataService Java介面的OSGi套件，並將它部署至AEM Forms伺服器。 它可讓中繼資料在「指派工作」步驟中供選取。
 
 若要使用Java介面建立OSGi套件，請將 [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar和 [granite jar](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) files新增為OSGi套件專案的外部相依性。 您可以使用任何Java IDE來建立OSGi套件。 下列程式提供使用Eclipse建立OSGi套件的步驟：
 
@@ -211,7 +214,7 @@ AEM Forms應用程式提供數個立即可用的中繼資料變數（索引鍵�
    
    ```
 
-1. 新增使用WorkitemUserMetadataService java介面的原始碼，以新增電子郵件範本的自訂中繼資料。 以下列出范常式式碼：
+1. 新增使用WorkitemUserMetadataService Java介面的原始碼，以新增電子郵件範本的自訂中繼資料。 以下列出范常式式碼：
 
    ```java
    package com.aem.impl;
@@ -251,6 +254,6 @@ AEM Forms應用程式提供數個立即可用的中繼資料變數（索引鍵�
 
    `mvn clean install`
 
-1. 將套件上傳至AEM Forms伺服器。 您可以使用AEM Package manager將搭售匯入AEM Forms伺服器。
+1. 將套件上傳至AEM Forms伺服器。 您可以使用AEM Package Manager將搭售匯入AEM Forms伺服器。
 
 匯入套件後，您可以在「指派工作」步驟中選取中繼資料，並使用電子郵件範本。
