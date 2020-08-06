@@ -1,16 +1,19 @@
 ---
 title: 支援IPTC中繼資料
-description: 瞭解Adobe Experience Manager(AEM)Assets如何透過Adobe bridge和其他Creative Apps支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
+description: 瞭解Adobe Experience Manager(AEM)Assets如何透過Adobe Bridge和其他Creative Apps支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 7%
 
 ---
 
 
 # 支援IPTC中繼資料 {#support-for-iptc-metadata}
 
-瞭解Adobe Experience Manager(AEM)Assets如何透過Adobe bridge和其他Creative Apps支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
+瞭解Adobe Experience Manager(AEM)Assets如何透過Adobe Bridge和其他Creative Apps支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
 
 Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣泛用於描述資產。 如此，AEM Assets就可增強各方對其影像的接受度，包括攝影師、創意廣告公司、圖書館、博物館等。
 
@@ -31,7 +34,7 @@ Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣�
 
 ## 創意評分支援 {#creative-rating-support}
 
-除了顯示個別使用者分級和匯總分級外，「屬性」頁面現在還會顯示透過Adobe bridge和其他Creative Apps指派給資產的分級
+除了顯示個別使用者分級和匯總分級外，「屬性」頁面現在還會顯示透過Adobe Bridge和其他Creative Apps指派給資產的分級
 
 這些評等可在「進階」標 **[!UICONTROL 簽的「創作評分]** 」區段 **[!UICONTROL 下取得]** 。
 
@@ -41,7 +44,7 @@ Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣�
 
 ## 關鍵字支援 {#keyword-support}
 
-「屬 **[!UICONTROL 性]** 」頁面的「IPTC」索引標籤也會顯示透過Adobe bridge和其他Creative Apps新增至資產的關鍵字。 您也可以編輯這些關鍵字，並從「 **[!UICONTROL IPTC」索引標籤新增更多關]** 鍵字。
+「屬 **[!UICONTROL 性]** 」頁面的「IPTC」索引標籤也會顯示透過Adobe Bridge和其他Creative Apps新增至資產的關鍵字。 您也可以編輯這些關鍵字，並從「 **[!UICONTROL IPTC」索引標籤新增更多關]** 鍵字。
 
 ![關鍵字](assets/keywords.png)
 
