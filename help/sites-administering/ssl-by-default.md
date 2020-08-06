@@ -11,6 +11,9 @@ topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 translation-type: tm+mt
 source-git-commit: eb3ac73ebe3189c144dafa02a2596ea5d512ffba
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
@@ -195,7 +198,7 @@ openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out loca
 >
 >如需 [AEM中實用cURL指令的集中清單，請參閱「搭配使用cURL](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) 與AEM」。
 
-您也可以使用cURL工具，將SSL設定自動化。 您可以將設定參數張貼至此URL來執行此動作：
+您也可以使用cURL工具，將SSL設定自動化。 您可以將設定參數發佈至此URL，以執行此動作：
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
