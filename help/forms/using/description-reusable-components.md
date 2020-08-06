@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 9%
 
 ---
 
@@ -169,11 +172,11 @@ AEM Forms工作區由可重複使 [用的元件組成](/help/forms/using/integra
    <td><p>JS相依性</p> </td> 
    <td> 
     <ul> 
-     <li><p>欄位：佇列：{ name, qid, isDefault, type}</p> </li> 
-     <li><p>欄位：查詢：字串</p> </li> 
-     <li><p>欄位：parentView:過濾器清單視圖</p> </li> 
-     <li><p>欄位：parentModel:任務清單模型</p> </li> 
-     <li><p>欄位：實用程式</p> </li> 
+     <li><p>欄位： 佇列： { name, qid, isDefault, type}</p> </li> 
+     <li><p>欄位： 查詢： 字串</p> </li> 
+     <li><p>欄位： parentView: 過濾器清單視圖</p> </li> 
+     <li><p>欄位： parentModel: 任務清單模型</p> </li> 
+     <li><p>欄位： 實用程式</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -244,12 +247,12 @@ AEM Forms工作區由可重複使 [用的元件組成](/help/forms/using/integra
    <td><p>JS相依性</p> </td> 
    <td> 
     <ul> 
-     <li><p>延伸：篩選檢視</p> </li> 
-     <li><p>欄位：佇列：{ name, qid, isDefault, type }</p> </li> 
-     <li><p>欄位：查詢：字串</p> </li> 
-     <li><p>欄位：parentView:過濾器清單視圖</p> </li> 
-     <li><p>欄位：parentModel:任務清單模型</p> </li> 
-     <li><p>欄位：實用程式</p> </li> 
+     <li><p>延伸： 篩選檢視</p> </li> 
+     <li><p>欄位： 佇列：{ name, qid, isDefault, type }</p> </li> 
+     <li><p>欄位： 查詢： 字串</p> </li> 
+     <li><p>欄位： parentView: 過濾器清單視圖</p> </li> 
+     <li><p>欄位： parentModel: 任務清單模型</p> </li> 
+     <li><p>欄位： 實用程式</p> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
