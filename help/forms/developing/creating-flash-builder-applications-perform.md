@@ -11,6 +11,9 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >此程式不以現有的AEM Forms程式為基礎。 要跟隨討論如何調用此流程的代碼示例，請使用工作台建立一個名為 `MyApplication/EncryptDocument` 的流程。 (請參 [閱使用工作台](https://www.adobe.com/go/learn_aemforms_workbench_63)。)
 
-使用Flash builder建立的用戶端應用程式會與User Manager的安全servlet互動，此Servlet設定於 `/um/login` 和 `/um/logout`。 也就是說，用戶端應用程式會在啟動期間傳送 `/um/login` 要求至URL，以判斷使用者的狀態。 然後，使用者管理員會回應使用者狀態。 客戶端應用程式和用戶管理器安全servlet使用HTTP進行通信。
+使用Flash Builder建立的用戶端應用程式會與User Manager的安全servlet互動，此Servlet設定於 `/um/login` 和 `/um/logout`。 也就是說，用戶端應用程式會在啟動期間傳送 `/um/login` 要求至URL，以判斷使用者的狀態。 然後，使用者管理員會回應使用者狀態。 客戶端應用程式和用戶管理器安全servlet使用HTTP進行通信。
 
 **請求格式**
 
@@ -43,7 +46,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * `j_username` -此值是登錄表單中提供的用戶登錄標識符值。
 * `j_password` -此值是登錄表單中提供的用戶相應密碼。
 
-此 `j_password` 值僅用於憑證請求。 如果未指定密碼值，則安全servlet會檢查以確定您使用的帳戶是否已通過驗證。 如果是，您可以繼續；但是，安全servlet不會再次驗證您。
+此 `j_password` 值僅用於憑證請求。 如果未指定密碼值，則安全servlet會檢查以確定您使用的帳戶是否已通過驗證。 如果是，您可以繼續； 但是，安全servlet不會再次驗證您。
 
 >[!NOTE]
 >
@@ -74,8 +77,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 如果安全servlet找到與用戶匹配的有效令牌，則安全servlet允許您繼續並響應 `authstate=COMPLETE`。 否則，安全servlet將響應 `authstate=CREDENTIAL_CHALLENGE`。 下列清單說明這些值：
 
-* `Case authstate=COMPLETE`:表示用戶已通過驗證，且 `assertionid` 值包含用戶的斷言標識符。 目前階段，用戶端應用程式可以連線至AEM Forms。 為該URL配置的Servlet可以通過調 `AuthResult` 用方法獲取用戶的 `AuthenticationManager.authenticate(HttpRequestToken)` 權限。 實 `AuthResult` 例可以建立用戶管理器上下文並將其儲存在會話中。
-* `Case authstate=CREDENTIAL_CHALLENGE`:表示安全servlet需要用戶的憑據。 作為響應，客戶端應用程式可以向用戶顯示登錄螢幕，並將獲得的憑證發送到安全servlet(例如， `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true&j_username=administrator&j_password=password)`)。 如果驗證成功，則安全servlet將響應 `authstate=COMPLETE`。
+* `Case authstate=COMPLETE`: 表示用戶已通過驗證，且 `assertionid` 值包含用戶的斷言標識符。 目前階段，用戶端應用程式可以連線至AEM Forms。 為該URL配置的Servlet可以通過調 `AuthResult` 用方法獲取用戶的 `AuthenticationManager.authenticate(HttpRequestToken)` 權限。 實 `AuthResult` 例可以建立用戶管理器上下文並將其儲存在會話中。
+* `Case authstate=CREDENTIAL_CHALLENGE`: 表示安全servlet需要用戶的憑據。 作為響應，客戶端應用程式可以向用戶顯示登錄螢幕，並將獲得的憑證發送到安全servlet(例如， `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true&j_username=administrator&j_password=password)`)。 如果驗證成功，則安全servlet將響應 `authstate=COMPLETE`。
 
 如果驗證仍未成功，則安全servlet將響應 `authstate=FAILED`。 為響應此值，客戶端應用程式可以顯示一條消息以再次獲得憑據。
 
@@ -109,15 +112,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 客戶端應用程式由以下檔案組成：
 
-* `SSOStandalone.mxml`:代表用戶端應用程式的主MXML檔案。 (請參 [閱建立SSOStandalone.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)。)
-* `um/ISSOManager.as`:公開與單一登入(SSO)相關的作業。 (請參 [閱建立ISSOManager.as檔案](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file)。)
-* `um/SSOEvent.as`:系統 `SSOEvent` 會針對SSO相關事件發送。 (請參 [閱建立SSOEvent.as檔案](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file)。)
-* `um/SSOManager.as`:管理與SSO相關的操作並調度適當的事件。 (請參 [閱建立SSOManager.as檔案](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file)。)
-* `um/UserManager.as`:包含使用驗證管理器服務的WSDL調用驗證管理器服務的應用程式邏輯。 (請參 [閱建立UserManager.as檔案](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file)。)
-* `views/login.mxml`:代表登入畫面。 (請參 [閱建立login.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)。)
-* `views/logout.mxml`:表示註銷螢幕。 (請參 [閱建立logout.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)。)
-* `views/progress.mxml`:表示進度視圖。 (請參 [閱建立progress.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)。)
-* `views/remoting.mxml`:代表使用遠端來叫用名為MyApplication/EncryptDocument的AEM Forms短期處理程式的檢視。 (請參 [閱建立remoting.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)。)
+* `SSOStandalone.mxml`: 代表用戶端應用程式的主MXML檔案。 (請參 [閱建立SSOStandalone.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)。)
+* `um/ISSOManager.as`: 公開與單一登入(SSO)相關的作業。 (請參 [閱建立ISSOManager.as檔案](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file)。)
+* `um/SSOEvent.as`: 系統 `SSOEvent` 會針對SSO相關事件發送。 (請參 [閱建立SSOEvent.as檔案](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file)。)
+* `um/SSOManager.as`: 管理與SSO相關的操作並調度適當的事件。 (請參 [閱建立SSOManager.as檔案](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file)。)
+* `um/UserManager.as`: 包含使用驗證管理器服務的WSDL調用驗證管理器服務的應用程式邏輯。 (請參 [閱建立UserManager.as檔案](creating-flash-builder-applications-perform.md#creating-the-usermanager-as-file)。)
+* `views/login.mxml`: 代表登入畫面。 (請參 [閱建立login.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)。)
+* `views/logout.mxml`: 表示註銷螢幕。 (請參 [閱建立logout.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)。)
+* `views/progress.mxml`: 表示進度視圖。 (請參 [閱建立progress.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)。)
+* `views/remoting.mxml`: 代表使用遠端來叫用名為MyApplication/EncryptDocument的AEM Forms短期處理程式的檢視。 (請參 [閱建立remoting.mxml檔案](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)。)
 
 下圖提供用戶端應用程式的視覺化呈現。
 
@@ -125,7 +128,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->請注意，有兩個名為um和views的包。 在建立客戶端應用程式時，請確保將檔案放在正確的包中。 此外，請確定您將adobe-remoting-provider.swc檔案新增至專案的類別路徑。 (請參 [閱「包含AEM Forms flex程式庫檔案](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)」)。
+>請注意，有兩個名為um和views的包。 在建立客戶端應用程式時，請確保將檔案放在正確的包中。 此外，請確定您將adobe-remoting-provider.swc檔案新增至專案的類別路徑。 (請參 [閱「包含AEM Forms Flex程式庫檔案](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)」)。
 
 ### 建立SSOStandalone.mxml檔案 {#creating-the-ssostandalone-mxml-file}
 
@@ -869,7 +872,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### 發生新的驗證 {#a-new-authentication-occurs}
 
-在此情況下，使用者會嘗試從用戶端應用程式第一次登入AEM Forms。 （不存在涉及用戶的先前會話。）在此事 `applicationComplete` 件中，會呼 `SSOManager.singleSignOn` 叫方法，將請求傳送至使用者管理員。
+在此情況下，使用者會嘗試從用戶端應用程式第一次登入AEM Forms。 （不存在涉及用戶的先前會話。） 在此事 `applicationComplete` 件中，會呼 `SSOManager.singleSignOn` 叫方法，將請求傳送至使用者管理員。
 
 `GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1`
 
@@ -895,14 +898,14 @@ User Manager安全servlet會以下列值作出響應：
 
 ### 用戶已通過驗證 {#the-user-is-already-authenticated}
 
-在此情況下，使用者已登入AEM Forms，然後導覽至用戶端應用程式。 在啟動期間，客戶端應用程式連接到User manager安全servlet。
+在此情況下，使用者已登入AEM Forms，然後導覽至用戶端應用程式。 在啟動期間，客戶端應用程式連接到User Manager安全servlet。
 
 ```as3
  GET /um/login?um%5Fno%5Fredirect=true HTTP/1.1 
  Cookie: JSESSIONID=A4E0BCC2DD4BCCD3167C45FA350BD72A; lcAuthToken=53630BC8-F6D4-F588-5D5B-4668EFB2EC7A
 ```
 
-由於使用者已經通過驗證，因此User Manager cookie會存在並傳送至User Manager安全servlet。 然後，Servlet將獲取該 `assertionId` 值並驗證其是否有效。 如果有效，則 `authstate=COMPLETE` 傳回。 否則 `authstate=CREDENTIAL_CHALLENGE` 會傳回。 以下是典型響應：
+由於使用者已經通過驗證，因此User Manager Cookie會存在並傳送至User Manager安全servlet。 然後，Servlet將獲取該 `assertionId` 值並驗證其是否有效。 如果有效，則 `authstate=COMPLETE` 傳回。 否則 `authstate=CREDENTIAL_CHALLENGE` 會傳回。 以下是典型響應：
 
 ```as3
  HTTP/1.1 200 OK 
