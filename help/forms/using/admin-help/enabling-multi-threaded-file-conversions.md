@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ PDF產生器可針對特定類型的檔案啟用多執行緒檔案轉換。 多�
 
 ## 為OpenOffice、Word和PowerPoint檔案啟用多執行緒檔案轉換 {#enabling-multi-threaded-file-conversions-for-openoffice-word-and-powerpoint-documents}
 
-依預設，PDF產生器一次只能轉換一份OpenOffice、Microsoft word或PowerPoint檔案。 如果您啟用多執行緒轉換，PDF產生器可同時轉換多份檔案。 PDF產生器將啟動多個OpenOffice或PDFMaker執行個體（用於執行Word和PowerPoint轉換）。
+依預設，PDF產生器一次只能轉換一份OpenOffice、Microsoft Word或PowerPoint檔案。 如果您啟用多執行緒轉換，PDF產生器可同時轉換多份檔案。 PDF產生器將啟動多個OpenOffice或PDFMaker執行個體（用於執行Word和PowerPoint轉換）。
 
 >[!NOTE]
 >
@@ -29,25 +32,25 @@ PDF產生器可針對特定類型的檔案啟用多執行緒檔案轉換。 多�
 
 >[!NOTE]
 >
->Microsoft Excel、Microsoft Visio、Microsoft project或Microsoft Publisher不支援多執行緒檔案轉換。
+>Microsoft Excel、Microsoft Visio、Microsoft Project或Microsoft Publisher不支援多執行緒檔案轉換。
 
 每個OpenOffice或PDFMaker例項都是使用個別的使用者帳戶啟動。 您新增的每個使用者帳戶都必須是具有Forms伺服器電腦管理權限的有效使用者。 在群集環境中，同一組用戶對群集的所有節點都必須有效。
 
 在管理控制台的「使用者帳戶」頁面上，您可以指定用於多執行緒檔案轉換的使用者帳戶。 您可以新增帳戶、刪除帳戶或變更帳戶密碼。 如果您在Windows Server 2003或Windows Server 2008上執行PDF產生器，請新增至少三個具有管理員權限的使用者帳戶。
 
-在Windows Server 2003或2008上新增OpenOffice、Microsoft word或Microsoft powerPoint的使用者，或在Linux或Sun™ Solaris™上新增OpenOffice的使用者時，請關閉所有使用者的初始啟動對話方塊。
+在Windows Server 2003或2008上新增OpenOffice、Microsoft Word或Microsoft PowerPoint的使用者，或在Linux或Sun™ Solaris™上新增OpenOffice的使用者時，請關閉所有使用者的初始啟動對話方塊。
 
 ### 新增取代程式層級Token的權限 {#add-the-right-to-replace-the-process-level-token}
 
 在Windows作業系統上，用於PDF轉換（PDF使用者）的管理員使用者帳戶將需要取代處理層級的Token權限。 您可以使用群組原則編輯器來新增此項：
 
 1. 在Windows的「開始」菜單中，按一下「運行」，然後輸入gpedit.msc。
-1. 按一下「本機電腦原則>電腦設定> windows設定>安全性設定>本機原則>使用者權限分配」。 編輯「取 *代處理層級Token* 」原則以包含「管理員」群組。
+1. 按一下「本機電腦原則>電腦設定> Windows設定>安全性設定>本機原則>使用者權限分配」。 編輯「取 *代處理層級Token* 」原則以包含「管理員」群組。
 1. 將使用者新增至「取代處理層級Token」項目。
 
-### Windows Server 2008上的OpenOffice、Microsoft word和Microsoft powerPoint需要額外的設定 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
+### Windows Server 2008上的OpenOffice、Microsoft Word和Microsoft PowerPoint需要額外的設定 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
 
-如果您在Windows Server 2008上執行OpenOffice、Microsoft word或Microsoft powerPoint，請針對新增的每個使用者停用UAC。
+如果您在Windows Server 2008上執行OpenOffice、Microsoft Word或Microsoft PowerPoint，請針對新增的每個使用者停用UAC。
 
 1. 按一下「控制面板>使用者帳戶>開啟或關閉使用者帳戶控制」。
 1. 取消選取「使用使用者帳戶控制(UAC)協助保護您的電腦」方塊，然後按一下「確定」。
