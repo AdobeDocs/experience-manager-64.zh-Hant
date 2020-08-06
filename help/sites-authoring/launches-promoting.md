@@ -12,6 +12,9 @@ discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 6%
 
 ---
 
@@ -44,6 +47,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >* [在結構中有多個啟動時](#promoting-a-nested-launch) ，提升巢狀啟動。
 >* [啟動——事件順序](/help/sites-authoring/launches.md#launches-the-order-of-events) ，以取得有關自動促銷和發佈的詳細資訊。
+
 >
 
 
@@ -71,6 +75,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **提升已修改頁面**
    * **升級目前頁面**
    * **升級目前頁面與子頁面**
+
    例如，當選擇僅提升修改的頁時：
 
    ![chlimage_1](assets/chlimage_1.png)
@@ -117,6 +122,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * **提升已修改頁面**
       * **升級目前頁面**
       * **升級目前頁面與子頁面**
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
 1. 選擇 **下一步**。
