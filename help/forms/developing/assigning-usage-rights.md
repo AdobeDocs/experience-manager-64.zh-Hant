@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '3895'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 ## 關於Acrobat Reader DC擴充功能服務 {#about-the-acrobat-reader-dc-extensions-service}
 
-Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功能，輕鬆分享互動式PDF檔案。 Acrobat Reader DC擴充功能服務完全支援任何PDF檔案，最高可支援PDF 1.7。它可與Adobe Reader 7.0及更新版本搭配使用。 本服務新增PDF檔案的使用權限，並啟用在使用Adobe reader開啟PDF檔案時通常無法使用的功能。 協力廠商使用者不需要額外的軟體或外掛程式，就能使用具版權的檔案。
+Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功能，輕鬆分享互動式PDF檔案。 Acrobat Reader DC擴充功能服務完全支援任何PDF檔案，最高可支援PDF 1.7。 它可與Adobe Reader 7.0及更新版本搭配使用。 本服務新增PDF檔案的使用權限，並啟用在使用Adobe Reader開啟PDF檔案時通常無法使用的功能。 協力廠商使用者不需要額外的軟體或外掛程式，就能使用具版權的檔案。
 
 您可以使用Acrobat Reader DC擴充功能服務完成下列工作：
 
@@ -33,7 +36,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 ## 將使用權套用至PDF檔案 {#applying-usage-rights-to-pdf-documents}
 
-您可以使用Acrobat Reader DC擴充功能Java Client API和web service，將使用權套用至PDF檔案。 使用權限與Acrobat預設為Acrobat但Adobe reader未提供的功能相關，例如在表格中新增註解或填寫表格欄位並儲存表格的功能。 具有套用使用權限的PDF檔案稱為具有權限的檔案。 在Adobe Reader中開啟具權限檔案的使用者，可以執行針對該特定檔案啟用的作業。
+您可以使用Acrobat Reader DC擴充功能Java Client API和web service，將使用權套用至PDF檔案。 使用權限與Acrobat預設為Acrobat但Adobe Reader未提供的功能相關，例如在表格中新增註解或填寫表格欄位並儲存表格的功能。 具有套用使用權限的PDF檔案稱為具有權限的檔案。 在Adobe Reader中開啟具權限檔案的使用者，可以執行針對該特定檔案啟用的作業。
 
 >[!NOTE]
 >
@@ -88,7 +91,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 [使用網站服務API套用使用權](assigning-usage-rights.md#apply-usage-rights-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -122,13 +125,14 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
    * 使用其 `ReaderExtensionsOptionSpec` 建構函式建立物件。 此物件包含Acrobat Reader DC擴充功能服務所需的執行時期選項。 調用此建構子時，必須指定以下值：
 
       * 包 `UsageRights` 含要套用至檔案之使用權限的物件。
-      * 一個字串值，指定當在Adobe Reader 7.x中開啟具權限的PDF檔案時，使用者會看見的訊息。Adobe Reader 8.0中不會顯示此訊息。
+      * 一個字串值，指定當在Adobe Reader 7.x中開啟具權限的PDF檔案時，使用者會看見的訊息。 Adobe Reader 8.0中不會顯示此訊息。
    * 調用物件的方法並傳遞下列值，以套用 `ReaderExtensionsServiceClient` 使用權 `applyUsageRights` 限至PDF檔案：
 
       * 包 `com.adobe.idp.Document` 含套用使用權限之PDF檔案的物件。
       * 一個字串值，它指定允許應用使用權限的憑據別名。
       * 指定相應口令值的字串值。 (目前會忽略此參數。 你可以通過 `null`的。)
    * 包 `ReaderExtensionsOptionSpec` 含運行時選項的對象。
+
    此方 `applyUsageRights` 法會傳回包 `com.adobe.idp.Document` 含啟用權限的PDF檔案的物件。
 
 1. 儲存具權限的PDF檔案。
@@ -142,7 +146,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 [快速入門（SOAP模式）：使用Java API套用使用權限](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -152,7 +156,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -195,6 +199,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
       * 一個字串值，它指定允許應用使用權限的憑據別名。
       * 指定相應口令值的字串值。 (目前會忽略此參數。 你可以通過 `null`的。)
    * 包 `ReaderExtensionsOptionSpec` 含運行時選項的對象。
+
    此方 `applyUsageRights` 法會傳回包 `BLOB` 含啟用權限的PDF檔案的物件。
 
 1. 儲存具權限的PDF檔案。
@@ -244,7 +249,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 **從PDF檔案移除使用權**
 
-擷取具有權限的PDF檔案後，您就可以移除使用權限。 在您移除使用權後，在Adobe reader中檢視PDF檔案時，將不會再有其他功能。
+擷取具有權限的PDF檔案後，您就可以移除使用權限。 在您移除使用權後，在Adobe Reader中檢視PDF檔案時，將不會再有其他功能。
 
 **儲存PDF檔案**
 
@@ -256,7 +261,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 [使用web service API移除使用權限](assigning-usage-rights.md#remove-usage-rights-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -294,9 +299,9 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 [從PDF檔案移除使用權](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)
 
-[快速入門（SOAP模式）:使用Java API移除PDF檔案的使用權](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API移除PDF檔案的使用權](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -306,7 +311,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -378,11 +383,11 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 **擷取具權限的PDF檔案**
 
-您必須擷取具有權限的PDF檔案，才能擷取憑證的相關資訊。 您也可以通過指定憑據的別名來檢索有關憑據的資訊；不過，如果您想要擷取有關用於將使用權限套用至具特定權限之PDF檔案之憑證的資訊，則必須擷取該檔案。
+您必須擷取具有權限的PDF檔案，才能擷取憑證的相關資訊。 您也可以通過指定憑據的別名來檢索有關憑據的資訊； 不過，如果您想要擷取有關憑證的資訊，此憑證是用來將使用權限套用至具權限的特定PDF檔案，則必須擷取該檔案。
 
 **檢索有關憑據的資訊**
 
-擷取具有權限的PDF檔案後，您就可取得有關用來套用使用權限之憑證的資訊。 您可取得有關憑證的下列資訊：
+擷取具有權限的PDF檔案後，您就可以取得有關用來套用使用權限之憑證的資訊。 您可取得有關憑證的下列資訊：
 
 * 開啟具權限的PDF檔案時，Adobe Reader中會顯示的訊息。
 * 憑據失效的日期。
@@ -396,7 +401,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 [使用web service API移除使用權限](assigning-usage-rights.md#remove-usage-rights-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -429,9 +434,9 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 [檢索憑據資訊](assigning-usage-rights.md#retrieving-credential-information)
 
-[快速入門（SOAP模式）:使用Java API檢索憑據資訊](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API檢索憑據資訊](/help/forms/developing/acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -441,7 +446,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
