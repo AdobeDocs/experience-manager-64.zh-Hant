@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 在作者環境中，要訪問儲存配置控制台
 
-* 從全域導覽：「工 **[!UICONTROL 具>社群>儲存設定」]**
+* 從全域導覽： **[!UICONTROL 「工具>社群>儲存組態」]**
 
 要選擇預設JCR以外的儲存選項：
 
