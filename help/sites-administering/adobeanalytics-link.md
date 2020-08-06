@@ -340,10 +340,12 @@ s.linkTrackVars= 'prop4';
 
    * `*<Variable-name>*: *<Dynamic Value>*`
    * `*<Variable-name>*: *‘CONSTANT’*`
+
    下列範例說明各種格式：
 
    * `eVar10:pagedata.title`
    * `prop1: ‘Aubergine'`
+
    以逗號分隔多個值。
 
 1. 選擇 **確定**。
