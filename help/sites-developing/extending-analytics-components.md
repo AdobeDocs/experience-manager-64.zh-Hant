@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '1265'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
 
 ## 將Adobe Analytics模組納入頁面元件 {#including-the-adobe-analytics-module-in-a-page-component}
 
-頁面範本元件(例如 `head.jsp, body.jsp`)需要JSP包含才能載入ContextHub和Adobe Analytics整合（Cloud services的一部分）。 全部都包含載入JavaScript檔案。
+頁面範本元件(例如 `head.jsp, body.jsp`)需要JSP包含才能載入ContextHub和Adobe Analytics整合（Cloud Services的一部分）。 全部都包含載入JavaScript檔案。
 
-ContextHub項目應立即包含在標 `<head>` 簽下方，而Cloud services應包含在 `<head>` 區段和 `</body>` 之前；例如：
+ContextHub項目應立即包含在標 `<head>` 簽下方，而Cloud Services應包含在 `<head>` 區段和 `</body>` 之前； 例如：
 
 ```xml
 <head>
@@ -132,10 +135,10 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 當元件具有名為的子節點時，元件可與Adobe Analytics架構互動 `analytics`。 節 `analytics` 點具有以下屬性：
 
-* `cq:trackevents`:識別元件公開的CQ事件。 （請參閱自訂事件。）
-* `cq:trackvars`:命名與Adobe Analytics屬性映射的CQ變數。
-* `cq:componentName`:出現在Sidekick中的元件名稱。
-* `cq:componentGroup`:Sidekick中包含元件的群組。
+* `cq:trackevents`: 識別元件公開的CQ事件。 （請參閱自訂事件。）
+* `cq:trackvars`: 命名與Adobe Analytics屬性映射的CQ變數。
+* `cq:componentName`: 出現在Sidekick中的元件名稱。
+* `cq:componentGroup`: Sidekick中包含元件的群組。
 
 元件JSP中的程式碼會將javascript新增至觸發追蹤的頁面，並定義所追蹤的資料。 javascript中使用的事件名稱和資料名稱必須符合節點屬性的相 `analytics` 應值。
 
@@ -144,7 +147,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 當您使用這些資料追蹤方法時，Adobe Analytics整合模組會自動執行對Adobe Analytics的呼叫，以記錄事件和資料。
 
-### 範例：追蹤頂導覽點按次數 {#example-tracking-topnav-clicks}
+### 範例： 追蹤頂導覽點按次數 {#example-tracking-topnav-clicks}
 
 延伸基礎topnav元件，讓Adobe Analytics追蹤頁面頂端導覽連結的點按次數。 點按導覽連結時，Adobe Analytics會記錄已點按的連結及其點按的頁面。
 
@@ -172,27 +175,27 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 1. 新增下列屬性至分析節點，以命名追蹤事件：
 
-   * 名稱：cq:trackevents
-   * 類型：字串
-   * 值：topnavClick
+   * 名稱： cq:trackevents
+   * 類型： 字串
+   * 值： topnavClick
 
 1. 將下列屬性新增至分析節點，以命名資料變數：
 
-   * 名稱：cq:trackvars
-   * 類型：字串
-   * 值：topnavTarget,topnavLocation
+   * 名稱： cq:trackvars
+   * 類型： 字串
+   * 值： topnavTarget,topnavLocation
 
 1. 將下列屬性新增至分析節點，以命名Sidekick的元件：
 
-   * 名稱：cq:componentName
-   * 類型：字串
-   * 值：topnav（追蹤）
+   * 名稱： cq:componentName
+   * 類型： 字串
+   * 值： topnav（追蹤）
 
 1. 將下列屬性新增至分析節點，以命名Sidekick的元件群組：
 
-   * 名稱：cq:componentGroup
-   * 類型：字串
-   * 值：一般
+   * 名稱： cq:componentGroup
+   * 類型： 字串
+   * 值： 一般
 
 1. 按一下「全部儲存」。
 1. 開啟topnav.jsp檔案。
