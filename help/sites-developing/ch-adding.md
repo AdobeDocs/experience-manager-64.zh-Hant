@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -48,11 +51,11 @@ ContextHub Javascript API可讓您存取ContextHub管理的上下文資料。 �
 
 Context Hub儲存區使用下列永續性模式之一：
 
-* **** 本地：使用HTML5 localStorage來保存資料。 本機儲存區會跨作業持續存在於瀏覽器上。
-* **** 會話：使用HTML5 sessionStorage來保存資料。 會話儲存在瀏覽器會話期間持續存在，並且可用於所有瀏覽器窗口。
-* **** Cookie:使用瀏覽器對Cookie的原生支援來儲存資料。 在HTTP請求中，Cookie資料會傳送至伺服器或從伺服器傳送。
-* **** Window.name:使用window.name屬性來保存資料。
-* **** 記憶體：使用Javascript物件來保存資料。
+* **本地：** 使用HTML5 localStorage來保存資料。 本機儲存區會跨作業持續存在於瀏覽器上。
+* **會話：** 使用HTML5 sessionStorage來保存資料。 會話儲存在瀏覽器會話期間持續存在，並且可用於所有瀏覽器窗口。
+* **Cookie:** 使用瀏覽器對Cookie的原生支援來儲存資料。 在HTTP請求中，Cookie資料會傳送至伺服器或從伺服器傳送。
+* **Window.name:** 使用window.name屬性來保存資料。
+* **記憶體：** 使用Javascript物件來保存資料。
 
 預設情況下，Context Hub使用本地持久性模式。 如果瀏覽器不支援或允許HTML5 localStorage，則會使用「工作階段」永續性。 如果瀏覽器不支援或允許HTML5 sessionStorage，則會使用Window.name永續性。
 
@@ -93,7 +96,7 @@ Object {
 
 ContextHub提供用 [`ContextHub.Utils.JSON.tree`](/help/sites-developing/contexthub-api.md#contexthub-utils-json-tree) 於控制Javascript物件的類別。 在您將Javascript物件新增至商店或從商店取得之前，請使用此類別的函式來控制這些物件。
 
-此外，該類 [`ContextHub.Utils.JSON`](/help/sites-developing/contexthub-api.md#contexthub-utils-json) 還提供了一些函式，用於序列化對象以細化對象，以及將字串解序列化到對象。 使用此類別來處理JSON資料，以支援原生未包含和函式的瀏 `JSON.parse` 覽 `JSON.stringify` 器。
+此外，該類 [`ContextHub.Utils.JSON`](/help/sites-developing/contexthub-api.md#contexthub-utils-json) 還提供了一些函式，用於序列化要素的對象，以及將字串解序列化為對象。 使用此類別來處理JSON資料，以支援原生未包含和函式的瀏 `JSON.parse` 覽 `JSON.stringify` 器。
 
 ## 與ContextHub商店互動 {#interacting-with-contexthub-stores}
 
@@ -177,8 +180,8 @@ ContextHub區段會安裝在節 `/conf/we-retail/settings/wcm/segments` 點下�
 
 要配置服務，您可以使用 [Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ，或在儲存庫 [中使用JCR節點](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
-* Web控制台：要記錄調試消息，請選擇Debug屬性。
-* JCR節點：要記錄調試消息，請將布爾 `com.adobe.granite.contexthub.debug` 屬性設定為 `true`。
+* Web控制台： 要記錄調試消息，請選擇Debug屬性。
+* JCR節點： 要記錄調試消息，請將布爾 `com.adobe.granite.contexthub.debug` 屬性設定為 `true`。
 
 ## 請參閱ContextHub架構概觀 {#see-an-overview-of-the-contexthub-framework}
 
