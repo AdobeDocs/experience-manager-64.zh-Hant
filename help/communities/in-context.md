@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 1%
 
 ---
 
@@ -35,11 +38,11 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 1. 登入，但管理員、協調者或內容作者
 1. 未登入
 
-## 例如 {#example}
+## 範例 {#example}
 
 使用 [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) [](getting-started.md)Site（在AEM Communities快速入門時建立的Geometrixx Engage網站），您就可以在論壇中快速設定執行緒，以便在發佈環境中體驗各種協調活動，如下所示。
 
-Aaron mcDonald(aaron.mcdonald@mailinator.com)在建立網站時，將他加入社群參與協調者群組，成為值得信賴的社群成員。
+Aaron McDonald(aaron.mcdonald@mailinator.com)在建立網站時，將他加入社群參與協調者群組，成為值得信賴的社群成員。
 
 Rebekah Larsen(rebekah.larsen@trashymail.com)可使用「成員」主控台加入社群參與成員 [群組](members.md)。
 
@@ -61,7 +64,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可使用「成員」主控台加�
    * 選取貼文
    * 選擇註銷
 
-* 以Aaron mcDonald的身分登入(aaron.mcdonald@mailinator.com)
+* 以Aaron McDonald的身分登入(aaron.mcdonald@mailinator.com)
 
    * 選擇論壇
    * 對於Hummingbird主題，選擇「閱讀更多」
@@ -93,7 +96,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可使用「成員」主控台加�
 
 ### 新會員(#4) {#new-member}
 
-在作者中，以管理員身分登入，並使用 [Members console將Boyd Larsen(boyd.larsen@dodgit.com)新增為社群參與會員群組的新成員](members.md)，然後登出。
+在作者中，以管理員身分登入，並使用 [Members console將Boyd Larsen(boyd.larsen@dodgit.com)新增為社群參與成員群組的新成員](members.md)，然後登出。
 
 在發佈時，以Boyd Larsen身分登入，並選取線程 `Forum`，然後進入 `Read more` 蜂鳥貼文。
 
@@ -132,13 +135,13 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可使用「成員」主控台加�
 
 ### 社群協調者(#2) {#community-moderator}
 
-以社群協調者Aaron mcDonald(aaron.mcdonal@mailinator.com)的身分登入，然後選取「論壇」，然後針對蜂鳥貼文「閱讀更多」，以存取主題。
+以社群協調者Aaron McDonald(aaron.mcdonal@mailinator.com)的身分登入，然後選取「論壇」，然後針對蜂鳥貼文「閱讀更多」，以存取主題。
 
 注意
 
 * Aaron可以回覆、刪除、編輯或拒絕自己的貼文
 * Aaron也可以標幟／允許、回覆、刪除、編輯、拒絕其他內容
-* Aaron can cut將論壇話題轉移到他主持的另一個論壇
+* Aaron can Cut將論壇話題轉移到他主持的另一個論壇
 * Aaron可以選擇「管理」來存取協調主控台
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
