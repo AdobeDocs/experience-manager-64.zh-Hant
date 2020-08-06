@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 translation-type: tm+mt
 source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+workflow-type: tm+mt
+source-wordcount: '1760'
+ht-degree: 0%
 
 ---
 
@@ -104,7 +107,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -145,6 +148,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
    * 表 `com.adobe.idp.Document` 示DDX文檔的對象。 請確定此DDX檔案包含PDF `inDoc` 來源元素的值。
    * 包含 `com.adobe.idp.Document` 互動式PDF檔案的物件。
    * 指定 `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 運行時選項（包括預設字型和作業日誌級別）的對象。
+
    此方 `invokeOneDocument` 法會傳回 `com.adobe.idp.Document` 包含非互動式PDF檔案的物件。
 
 1. 儲存非互動式PDF檔案。
@@ -152,7 +156,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
    * 建立物 `java.io.File` 件，並確定副檔名為。pdf。
    * 叫用 `Document` 物件的方 `copyToFile` 法，將物件的內容 `Document` 複製至檔案。 請確定您使用 `Document` 方法傳回的 `invokeOneDocument` 物件。
 
-* &quot;快速啟動（SOAP模式）:使用Java API組合非互動式PDF檔案」
+* &quot;快速啟動（SOAP模式）: 使用Java API組合非互動式PDF檔案」
 
 ## 使用web service API組合非互動式PDF檔案 {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
@@ -160,7 +164,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -207,6 +211,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
    * 代 `BLOB` 表DDX文檔的對象
    * 表示 `BLOB` 互動式PDF檔案的物件
    * 指定 `AssemblerOptionSpec` 運行時選項的對象
+
    此方 `invokeOneDocument` 法會傳回 `BLOB` 包含非互動式PDF檔案的物件。
 
 1. 儲存非互動式PDF檔案。
@@ -216,7 +221,7 @@ source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
    * 通過調 `System.IO.BinaryWriter` 用其建構子並傳遞對象來建立 `System.IO.FileStream` 對象。
    * 調用物件的方法並傳遞位元組陣列，將位元組 `System.IO.BinaryWriter` 的內容 `Write` 寫入PDF檔案。
 
-* 「快速入門(MTOM):使用web service API組合非互動式PDF檔案」。
+* 「快速入門(MTOM): 使用web service API組合非互動式PDF檔案」。
 
 **另請參閱**
 
