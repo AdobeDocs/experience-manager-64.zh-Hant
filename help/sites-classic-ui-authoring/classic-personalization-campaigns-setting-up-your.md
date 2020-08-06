@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. [建立品牌](#creating-a-new-brand) ，以容納您的促銷活動。
 1. 如有需要，您 [可以定義新品牌的屬性](#defining-the-properties-for-your-new-brand)。
-1. [建立促銷活動](#creating-a-new-campaign) ，以容納體驗；例如摘要頁面或電子報。
+1. [建立促銷活動](#creating-a-new-campaign) ，以容納體驗； 例如摘要頁面或電子報。
 1. 如有需要，您 [可以定義新促銷活動的屬性](#defining-the-properties-for-your-new-campaign)。
 
 然後，您將需要建立體驗，視您所建立的體 [驗類型而定](#creating-a-new-experience)。 體驗的詳細資訊及其建立後的動作，取決於您要建立的體驗類型：
@@ -42,7 +45,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * 如果建立Adobe Target（先前稱為Test&amp;Target）選件：
 
-   1. [建立Adobe target選件體驗](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience)。
+   1. [建立Adobe Target選件體驗](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience)。
    1. [與Adobe Target整合](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
@@ -55,11 +58,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 開啟 **MCM** ，並在左 **窗格中選擇Campaigns** 。
 
-1. **選擇**&#x200B;新建……要輸入要 **用於新品牌** 的「標 **題」和「名稱** 」以及模板，請執行以下操作：
+1. 選擇 **新建……** 要輸入要 **用於新品牌** 的「標 **題」和「名稱** 」以及模板，請執行以下操作：
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. 按一下 **建立**。您的新品牌將會以MCM（含預設圖示）顯示。
+1. 按一下&#x200B;**建立**。您的新品牌將會以MCM（含預設圖示）顯示。
 
 ### 定義新品牌的屬性 {#defining-the-properties-for-your-new-brand}
 
@@ -79,22 +82,22 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    將顯示概述（如果品牌是新品，則為空）。
 
-1. **按一下**&#x200B;新建……並指定要 **用於新促**&#x200B;銷活動的 **** 「標題」、「名稱」和範本。
+1. 按一下 **新建……** 並指定要 **用於新促**&#x200B;銷活動的 **** 「標題」、「名稱」和範本。
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
-1. 按一下 **建立**。MCM中將顯示您的新促銷活動。
+1. 按一下&#x200B;**建立**。MCM中將顯示您的新促銷活動。
 
 ### 定義新促銷活動的屬性 {#defining-the-properties-for-your-new-campaign}
 
 設定控制行為的促銷活動屬性：
 
-* **** 優先順序：此促銷活動相對於其他促銷活動的優先順序。 當多個促銷活動同時開啟時，具有最高優先順序的促銷活動會控制訪客體驗。
-* **** 開啟和關閉時間：這些屬性可控制促銷活動控制訪客體驗的時段。 「按時」屬性控制促銷活動開始控制體驗的時間。 當促銷活動停止控制體驗時，「關閉時間」屬性會加以控制。
-* **** 影像：代表AEM中促銷活動的影像。
-* **** 雲端服務：整合促銷活動的雲端服務設定。 (請參 [閱「與Adobe Marketing cloud整合](/help/sites-administering/marketing-cloud.md)」。)
+* **優先順序：** 此促銷活動相對於其他促銷活動的優先順序。 當多個促銷活動同時開啟時，具有最高優先順序的促銷活動會控制訪客體驗。
+* **開啟和關閉時間：** 這些屬性可控制促銷活動控制訪客體驗的時段。 「按時」屬性控制促銷活動開始控制體驗的時間。 當促銷活動停止控制體驗時，「關閉時間」屬性會加以控制。
+* **影像：** 代表AEM中促銷活動的影像。
+* **雲端服務：** 整合促銷活動的雲端服務設定。 (請參 [閱「與Adobe Marketing Cloud整合](/help/sites-administering/marketing-cloud.md)」。)
 
-* **** Adobe Target:設定與Adobe Target整合之促銷活動的屬性。 (See [Integrating with Adobe Target](/help/sites-administering/target.md).)
+* **Adobe Target:** 設定與Adobe Target整合之促銷活動的屬性。 (See [Integrating with Adobe Target](/help/sites-administering/target.md).)
 
 1. 從「促 **銷活動**」中，選取您的品牌。 在右窗格中，選擇您的促銷活動，然後按一下「 **屬性**」。
 
@@ -110,7 +113,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 * [建立摘要](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [建立電子報](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
-* [建立Adobe target選件](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetoffer)
+* [建立Adobe Target選件](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetoffer)
 
 >[!NOTE]
 >
@@ -134,7 +137,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * [傳送電子報給訂閱者](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) ，或是潛在客戶。
    * [建立引人入勝的電子報登陸頁面](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage)。
 
-* [Adobe target優惠](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
+* [Adobe Target優惠](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
    * [與Adobe Target整合](/help/sites-administering/target.md)
 
@@ -144,7 +147,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 選取促銷活動的日曆檢視。
 
-1. **按一**&#x200B;下「新增接觸點……」的雙曲餘切值。 指定您要新增的體驗：
+1. 按一 **下「新增接觸點……」** 的雙曲餘切值。 指定您要新增的體驗：
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -223,7 +226,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 
 1. 在「工具 **」菜單** ，選擇「 **導入銷售線索」**。
-1. 按照示例資料中所述輸入資訊。 可匯入下列欄位：email,familyName,givenName,geder,aboutMe,city,country,phoneNumber,postalCode, region,streetAddress
+1. 按照示例資料中所述輸入資訊。 可匯入下列欄位： email,familyName,givenName,geder,aboutMe,city,country,phoneNumber,postalCode, region,streetAddress
 
    >[!NOTE]
    >
@@ -233,11 +236,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. 按一 **下「下一步**」。 在這裡，您可預覽銷售機會，以確保銷售機會準確無誤。
+1. 按一下&#x200B;**下一步**。在這裡，您可預覽銷售機會，以確保銷售機會準確無誤。
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
-1. 按一 **下「下一步**」。 選擇您希望銷售線索所屬的清單。 如果您不希望它們屬於清單，請刪除該欄位中的資訊。 依預設，AEM會建立包含日期和時間的清單名稱。 按一 **下匯入**。
+1. 按一下&#x200B;**下一步**。選擇您希望銷售線索所屬的清單。 如果您不希望它們屬於清單，請刪除該欄位中的資訊。 依預設，AEM會建立包含日期和時間的清單名稱。 按一 **下匯入**。
 
    ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
@@ -314,7 +317,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 若要建立新清單（群組）:
 
-1. **在MCM操控板中，按一下「**&#x200B;新建清單……」(New List ...)或在清 **單中**，按一 **下新增** ...將開啟「建立清單」(Create List)窗口。
+1. 在MCM操控板中，按一下「 **新建清單……」(New List ...)** 或在清 **單中**，按一 **下新增** ... 將開啟「建立清單」(Create List)窗口。
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
 
