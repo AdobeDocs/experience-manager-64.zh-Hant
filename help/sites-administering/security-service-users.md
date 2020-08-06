@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '1788'
+ht-degree: 0%
 
 ---
 
@@ -25,15 +28,15 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 
 ## 如何逐步淘汰管理工作階段 {#how-to-phase-out-admin-sessions}
 
-### 優先順序0:此功能是否為活動／需要／廢棄？ {#priority-is-the-feature-active-needed-derelict}
+### 優先順序0: 此功能是否為活動／需要／廢棄？ {#priority-is-the-feature-active-needed-derelict}
 
 有時可能未使用管理工作階段，或完全停用功能。 如果您的實作就是這樣，請確定您完全移除功能，或將它與 [NOP程式碼搭配](https://en.wikipedia.org/wiki/NOP)。
 
-### 優先順序1:使用請求作業 {#priority-use-the-request-session}
+### 優先順序1: 使用請求作業 {#priority-use-the-request-session}
 
 在可能的情況下重新調整您的功能，讓指定的已驗證要求工作階段可用來讀取或寫入內容。 如果這不可行，則通常可以採用下列優先事項。
 
-### 優先順序2:重構內容 {#priority-restructure-content}
+### 優先順序2: 重構內容 {#priority-restructure-content}
 
 許多問題都可以透過重組內容來解決。 進行重組時，請牢記以下簡單規則：
 
@@ -76,11 +79,11 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 * 為節點類型應用ACL
 * 限制權限
 
-   * 例如，只需編寫屬性時，不要授予權 `jcr:write` 限；改 `jcr:modifyProperties` 用
+   * 例如，只需編寫屬性時，不要授予權 `jcr:write` 限； 改 `jcr:modifyProperties` 用
 
 ## 服務用戶和映射 {#service-users-and-mappings}
 
-如果上述失敗，Sling 7提供Service User Mapping服務，可設定Bundle-to-user對應和兩種對應的API方法：以 ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` 及僅 ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` 返回具有已配置用戶權限的會話／資源解析器。 這些方法具有以下特點：
+如果上述失敗，Sling 7提供Service User Mapping服務，可設定Bundle-to-user對應和兩種對應的API方法： ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` 以及 ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` 僅返回具有已配置用戶權限的會話／資源解析器。 這些方法具有以下特點：
 
 * 它們允許將服務對應給用戶
 * 他們使子服務用戶定義更容易
@@ -105,7 +108,7 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 1. 為您的用戶設定和測試ACE。
 1. 為您的 `service-user` 服務和 `user/sub-users`
 
-1. 將服務使用者sling功能提供給您的搭售：更新至最新版本的 `org.apache.sling.api`。
+1. 將服務使用者sling功能提供給您的搭售： 更新至最新版本的 `org.apache.sling.api`。
 
 1. 以或 `admin-session` API取代程式碼 `loginService` 中的 `getServiceResourceResolver` 程式碼。
 
@@ -191,8 +194,8 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 
 呼叫通常 `loginAdministrative()` 會與共用作業一起顯示。 這些會話是在服務啟動時獲得的，並且僅在服務停止後才註銷。 雖然這是常見的做法，但它導致了兩個問題：
 
-* **** 安全性：此類管理會話用於快取和返回綁定到共用會話的資源或其他對象。 在調用堆棧的稍後部分，這些對象可以適應具有提升權限的會話或資源解析器，而且呼叫者通常不清楚它是他們正在操作的管理會話。
-* **** 效能：在Oak共用工作階段中，可能會造成效能問題，目前不建議使用這些作業。
+* **安全性：** 此類管理會話用於快取和返回綁定到共用會話的資源或其他對象。 在調用堆棧的稍後部分，這些對象可以適應具有提升權限的會話或資源解析器，而且呼叫者通常不清楚它是他們正在操作的管理會話。
+* **效能：** 在Oak共用工作階段中，可能會造成效能問題，目前不建議使用這些作業。
 
 最顯而易見的安全風險解決方案，就是將呼叫 `loginAdministrative()` 更換為具有 `loginService()` 限制權限的使用者。 但是，這不會對任何潛在的效能降級產生任何影響。 可能的緩解措施是，將所有請求的資訊包在與會話無關聯的對象中。 然後，視需要建立（或銷毀）工作階段。
 
@@ -215,21 +218,21 @@ JSP無法使 `loginService()`用，因為沒有相關服務。 不過，JSP中�
 
 1. 在事件 `user-id` 裝載中傳遞並使用冒充。
 
-   **** 優點：易於使用。
+   **優點：** 易於使用。
 
-   **** 缺點：還在用 `loginAdministrative()`。 它會重新驗證已經驗證的請求。
+   **缺點：** 還在用 `loginAdministrative()`。 它會重新驗證已經驗證的請求。
 
 1. 建立或重複使用可存取資料的服務使用者。
 
-   **** 優點：符合目前的設計。 需要最少的變更。
+   **優點：** 符合目前的設計。 需要最少的變更。
 
-   **** 缺點：需要功能強大的服務使用者才能有彈性，這很容易導致權限提升。 避開安全模型。
+   **缺點：** 需要功能強大的服務使用者才能有彈性，這很容易導致權限提升。 避開安全模型。
 
 1. 在事件裝載中傳 `Subject` 遞序列化，並根據該主 `ResourceResolver` 題建立序列化。 例如，在中使 `doAsPrivileged` 用JAAS `ResourceResolverFactory`。
 
-   **** 優點：從安全性的角度來說，實作是乾淨的。 它避免了重認證，並且以原始權限操作。 安全相關程式碼對事件的使用者是透明的。
+   **優點：** 從安全性的角度來說，實作是乾淨的。 它避免了重認證，並且以原始權限操作。 安全相關程式碼對事件的使用者是透明的。
 
-   **** 缺點：需要重構。 安全相關程式碼對事件的使用者透明，這個事實也可能導致問題。
+   **缺點：** 需要重構。 安全相關程式碼對事件的使用者透明，這個事實也可能導致問題。
 
 第三種方法目前是首選的處理技術。
 
@@ -241,4 +244,4 @@ JSP無法使 `loginService()`用，因為沒有相關服務。 不過，JSP中�
 
 ## Sling POST處理器和已刪除頁面 {#sling-post-processors-and-deleted-pages}
 
-在sling POST處理器實作中使用數個管理工作階段。 通常，管理會話用於訪問正在處理的POST中待刪除的節點。 因此，它們不再透過請求工作階段提供。 可以訪問一個節點待刪除，以揭露其他情況下不可訪問的元資料。
+在sling POST處理器實作中使用數個管理工作階段。 通常，管理會話用於訪問正在處理的POST中待刪除的節點。 因此，它們不再透過請求作業階段提供。 可以訪問一個節點待刪除，以揭露其他情況下不可訪問的元資料。
