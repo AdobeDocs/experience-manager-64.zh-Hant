@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 2%
 
 ---
 
@@ -53,7 +56,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   </tr>
   <tr>
    <td>頁首／頁尾 </td> 
-   <td>支援. <br /> 由 <br /> 於HTML5行動表單不支援分頁，因此頁首和頁尾只會顯示一次。 不過，您可以在版面中設定這些表格，以便在行動表單預覽的多個位置顯示。<br /> </td> 
+   <td>支援. <br /> <br /> 由於HTML5行動表單不支援分頁，因此頁首和頁尾只會顯示一次。 不過，您可以在版面中設定這些表格，以便在行動表單預覽的多個位置顯示。<br /> </td> 
    <td>支援.</td> 
   </tr>
   <tr>
