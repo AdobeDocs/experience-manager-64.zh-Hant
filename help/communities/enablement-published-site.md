@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 匿名網站訪客會立即看到此私人啟用社群網站的登入頁面。 請注意，您沒有選擇自行註冊或登入Facebook或Twitter。
 
-請注意，此首頁顯示四個功能表項目：而 `Assignments, Ski Catalog, What's New` 且， `Discussions`但若未登入，則無法達成任何目標。
+請注意，此首頁顯示四個功能表項目： `Assignments, Ski Catalog, What's New` 而 `Discussions`且，若未登入，則無法取得。
 
 >[!NOTE]
 >
@@ -75,7 +78,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## 已註冊會員 {#enrolled-member}
 
-這一經驗依賴於 `Riley Taylor` Ski Slik Sloyss Group `Sidney Croft` 的建立 [和被指派的Ski Lessons Learning Path(Ski Lessons Learning Path)的使用者，](enablement-setup.md#publishcreateenablementmembers) 通過其 [](resource.md#settings)**** 成為Ski Class Ski group的成員。
+這一經驗依賴於 `Riley Taylor` Ski Slik Slouns Leanss `Sidney Croft` 的建立 [和被指派的Ski Lessons Learning Path的使用者，](enablement-setup.md#publishcreateenablementmembers) 通過其 [成為Ski Class Ski Group的成員](resource.md#settings)**** ，使其成為Ski Lessons Leanssssssss Group。
 
 使用
 
@@ -249,7 +252,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * 論作者
 * 使用管理權限登入
-* 導覽至「 **[!UICONTROL 社群>報表>檢視報表」]**
+* 導覽至 **[!UICONTROL 社群>報表>檢視報表]**
 * 從下 **[!UICONTROL 拉式功能表]** (選取 `Enablement Tutorial`)中選取網站
 
 * 選擇 **[!UICONTROL 內容類型]** (選擇 `all`)
