@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '969'
+ht-degree: 0%
 
 ---
 
@@ -32,6 +35,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >* 單頁應用程式
 >* 原生行動應用程式
 >* AEM外部的其他通道和觸點
+
 >
 >
 請參閱內容服 [務的檔案JSON匯出器](/help/sites-developing/json-exporter.md)。
@@ -55,13 +59,13 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 該 `/libs/foundation/components/page` 元件與以下PageInfoProvider服務關聯：
 
-* **** 預設頁面狀態提供者：頁面狀態的相關資訊，例如是否已鎖定頁面、頁面是否為作用中工作流程的裝載，以及頁面可使用哪些工作流程。
-* **** 即時關係資訊提供者：有關多網站管理(MSM)的資訊，例如頁面是否屬於藍色印刷，以及是否為即時文案。
-* **** 內容語言Servlet:目前頁面的語言，以及頁面可用之每種語言的相關資訊。
-* **** 工作流狀態提供程式：將頁面作為裝載的執行工作流程的狀態資訊。
-* **** 工作流包資訊提供程式：有關儲存在儲存庫中的每個工作流包的資訊，以及每個包是否包含當前資源。
-* **** 模擬器資訊提供者：有關此資源可用之行動裝置模擬器的資訊。 如果頁面元件未演算行動頁面，則不提供模擬器。
-* **** 注釋資訊提供程式：頁面上的註解相關資訊。
+* **預設頁面狀態提供者：** 頁面狀態的相關資訊，例如是否已鎖定頁面、頁面是否為作用中工作流程的裝載，以及頁面可使用哪些工作流程。
+* **即時關係資訊提供者：** 有關多網站管理(MSM)的資訊，例如頁面是否屬於藍色列印，以及是否為即時副本。
+* **內容語言Servlet:** 目前頁面的語言，以及頁面可用之每種語言的相關資訊。
+* **工作流狀態提供程式：** 將頁面作為裝載的執行工作流程的狀態資訊。
+* **工作流包資訊提供程式：** 有關儲存在儲存庫中的每個工作流包的資訊，以及每個包是否包含當前資源。
+* **模擬器資訊提供者：** 有關此資源可用之行動裝置模擬器的資訊。 如果頁面元件未演算行動頁面，則不提供模擬器。
+* **注釋資訊提供程式：** 頁面上的註解相關資訊。
 
 例如，PageInfo servlet會傳回節點的下列JSON回 `/content/we-retail/us/en` 應：
 
@@ -496,7 +500,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >
 >使用AEM時，有數種方法可管理此類服務的組態設定。 如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
-例如，若要使用CRXDE Lite來設定服務：
+例如，要使用CRXDE Lite配置服務：
 
 1. 開啟CRXDE Lite([http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
 1. 在應用程式的config資料夾中，建立節點：
@@ -508,7 +512,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
    * 名稱: `workflowpackageinfoprovider.filter`
    * 類型: `String[]`
-   * 值：使用正確格式的工作流包路徑。
+   * 值： 使用正確格式的工作流包路徑。
 
 1. 按一下「全部儲存」。
 
@@ -546,9 +550,9 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 1. 在節點 `cq:infoProviders` 下方，為PageInfoProvider服務新增節點。 您可以指定節點的任何名稱。
 1. 將下列屬性新增至您的PageInfoProvider節點：
 
-   * 名稱：className
-   * 類型：字串
-   * 值：PageInfoProvider服務的PID。
+   * 名稱： className
+   * 類型： 字串
+   * 值： PageInfoProvider服務的PID。
 
 對於使用應用程式頁面元件作為資源 `sling:resourceType`的PageInfo servlet會除了傳回預設的PageInfoProvider中繼資料外，傳回自訂的PageInfoProvider中繼資料。
 
