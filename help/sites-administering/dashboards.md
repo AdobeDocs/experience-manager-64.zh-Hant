@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 2%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 
 1. 鍵入 **Title** （例如My Dashboard）和 **Name**。
 
-1. 按一下 **建立**。
+1. 按一下&#x200B;**建立**。
 
 ### 複製控制面板 {#cloning-a-dashboard}
 
@@ -80,10 +83,10 @@ AEM隨附一組元件，可呈現您 [SiteCatalyst資料的多個度量](/help/s
 
 每個報表元件至少提供三個標籤：
 
-* **基本**:包含主配置。
+* **基本**: 包含主配置。
 
-* **** 報表：包含每個報表的特定設定。
-* **樣式**:包含樣式設定，例如圖表大小和邊界。
+* **報表：** 包含每個報表的特定設定。
+* **樣式**: 包含樣式設定，例如圖表大小和邊界。
 
 報表元件會以預設設定初始化，以協助您快速設定控制面板。
 
