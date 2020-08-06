@@ -11,6 +11,9 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +45,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 * [所有AEM解決方案共同的儲存庫重組](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [AEM Sites儲存庫重組](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
 * [AEM Assets儲存庫重組](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets Dynamic media儲存庫重組](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
+* [AEM Assets Dynamic Media儲存庫重組](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [AEM Forms資料庫重組](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [AEM Communities儲存庫重組](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
 * [AEM Commerce儲存庫重組](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
