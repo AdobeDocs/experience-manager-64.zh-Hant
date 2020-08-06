@@ -4,6 +4,9 @@ description: 瞭解如何在AEM中啟用重複資產的偵測。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 0%
 
 ---
 
