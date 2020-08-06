@@ -68,6 +68,7 @@ ht-degree: 1%
 
    * **常見**: 編輯標題和說明。
    * **進階**: 編輯電子郵件通知屬性。
+
    ![wf-44](assets/wf-44.png)![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -121,6 +122,7 @@ WorkItem有其自己的MetaDataMap，只能在該工作項目（如步驟）運�
 >* 步驟的編輯對話框將標題和說明儲存在以下位置： >
 >* `./jcr:title`
 >* `./jcr:description` 位置
+
 >
 >  
 當編輯對話框使用元件實施的「常用」(Common)頁籤時，滿足此 `/libs/cq/flow/components/step/step` 要求。
@@ -132,6 +134,7 @@ WorkItem有其自己的MetaDataMap，只能在該工作項目（如步驟）運�
 
    * 名稱: `cq:editConfig`
    * 類型: `cq:EditConfig`
+
    >[!NOTE]
    >
    >有關cq:editConfig節點的詳細資訊，請參 [閱配置元件的編輯行為](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)。
@@ -182,6 +185,7 @@ WorkItem有其自己的MetaDataMap，只能在該工作項目（如步驟）運�
 
    * 名稱: `cq:editConfig`
    * 類型: `cq:EditConfig`
+
    有關cq:editConfig節點的詳細資訊，請參 [閱配置元件的編輯行為](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)。
 
 1. 在cq:EditConfig節點下方，新增下列節點：
@@ -216,6 +220,7 @@ WorkItem有其自己的MetaDataMap，只能在該工作項目（如步驟）運�
 
    * 名稱: `cq:editConfig`
    * 類型: `cq:EditConfig`
+
    有關cq:editConfig節點的詳細資訊，請參 [閱配置元件的編輯行為](/help/sites-developing/components-basics.md#edit-behavior)。
 
 1. 在cq:EditConfig節點下方，新增下列節點：
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -847,6 +853,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
       * 專案
       * WCM 工作流程
       * 工作流程
+
    ![wf-35](assets/wf-35.png)
 
 1. 您現在可以開啟工作流程模型進行編輯。 在步驟瀏覽器中，您可以篩選以查看 **我的自訂步驟**:
@@ -887,6 +894,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
       在模型映射和「我的自定義——步驟屬性」配置對話框的「標 **題** 」( **Title** )欄位中設定步驟卡的預設標題。
 
    * 您也可以定義自己的自訂屬性。
+
    ![wf-40](assets/wf-40.png)
 
 1. 在節點上配置屬性 `cq:listeners`。
@@ -899,6 +907,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    此組態是編輯器正常運作的必備組態。 在大多數情況下，此配置不能更改。
 
    但是，設 `cq:inherit` 置為true(在節點上，請參 `cq:editConfig` 見上面)可讓您繼承此配置，而無需將其明確納入步驟定義中。 如果沒有繼承，則您需要添加具有以下屬性和值的節點。
@@ -1040,6 +1049,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 您不得修改中的任 `/libs`何內容，只要將它們當做範例。 如果您想要利用任何現有步驟，請將它們複製到該處 `/apps` 並加以修改。
