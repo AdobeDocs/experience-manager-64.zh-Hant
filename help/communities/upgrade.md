@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '680'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 自AEM 6.3起，啟用功能將不再將報告資訊儲存在MySQL中。 MySQL相依性僅用於跟蹤SCORM內容。
 
-請聯絡客 [戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html) ，以取得從Enablement 1.0移轉內容的協助。
+請聯絡客 [戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html) ，以取得從Enablement 1.0移轉內容的協助。
 
 ## 從AEM 6.0升級 {#upgrading-from-aem}
 
@@ -53,9 +56,10 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 1. 以管理員權限登入
 2. 配置 [ASRP](asrp.md)
-3. 請依照下列步驟，讓預先存在的UGC可見：i.例如，瀏覽至Web主控台
+3. 請依照下列步驟，讓預先存在的UGC可見：
+i. 例如，瀏覽至Web主控台
    [https://&lt;host>:&lt;port>/system/console/configMgr](http://localhost:4502/system/console/configMgr)ii. 找到 **[!UICONTROL AEM Communities Utilities設定]** iii。 選擇以展開配置面板
-   * *取消選中***`Cloud Storage`**
+   * *取消選中* **`Cloud Storage`**
    * 選擇保 **[!UICONTROL 存]**
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
@@ -93,8 +97,8 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 從概念上講，有三代社群組成：
 
-**第1代**:大約CQ 5.4到AEM 5.6.0 —— 這些是 **collab** components，它們將UGC儲存在本機儲存庫中，並使用複製來同步跨平台的UGC。 其他差異包括使用Java Server Pages(JSP)的實作，以及部落格功能，其中僅包含在作者環境中編寫。
+**第1代**: 大約CQ 5.4到AEM 5.6.0 —— 這些是 **collab** components，它們將UGC儲存在本機儲存庫中，並使用複製來同步跨平台的UGC。 其他差異包括使用Java Server Pages(JSP)的實作，以及部落格功能，其中僅包含在作者環境中編寫。
 
-**第2代**:從AEM 5.6.1到AEM 6.1 —— 這是Collab和Social元 **件****的混合** 。 AEM 6.0推出新的 [Social元件架構](scf.md) (SCF),AEM 6.2推出通用的 [UGC商店](working-with-srp.md) ，可使用儲存資源提供者 [](srp.md) (SRP)存取UGC。
+**第2代**: 從AEM 5.6.1到AEM 6.1 —— 這是Collab和Social元 **件****的混合** 。 AEM 6.0推出新的 [Social元件架構](scf.md) (SCF),AEM 6.2推出通用的 [UGC商店](working-with-srp.md) ，可使用儲存資源提供者 [](srp.md) (SRP)存取UGC。
 
-**第3代**:從AEM 6.2轉發，只有 **social** components，以SCF建置為Handlebars(HBS)元件，需要針對UGC選擇SRP。
+**第3代**: 從AEM 6.2轉發，只有 **social** components，以SCF建置為Handlebars(HBS)元件，需要針對UGC選擇SRP。
