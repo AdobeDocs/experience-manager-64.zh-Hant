@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 53342acb-c1a5-443d-8727-cb27cc9d6845
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
 
 # 外部化URL{#externalizing-urls}
 
-在AEM中， **Externalizer** 是OSGI服務，可讓您以程式設計方式轉換資源路徑(例如 `/path/to/my/page`)加入外部和絕對URL(例如 `https://www.mycompany.com/path/to/my/page`)，方法是使用預先設定的DNS來預先固定路徑。
+在AEM中， **Externalizer** 是OSGI服務，可讓您以程式設計方式轉換資源路徑(例如 `/path/to/my/page`)，以預先設定的DNS來預先固定路徑， `https://www.mycompany.com/path/to/my/page`以將URL轉換為外部和絕對URL（例如）。
 
 由於例項在Web圖層後面執行時無法知道其外部可見的URL，而且有時必須在請求範圍外建立連結，因此此服務提供一個集中位置來設定這些外部URL並建立它們。
 
@@ -38,14 +41,15 @@ Externalizer **** service可讓您集中定義多個網域，可用來以程式�
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. 定義域映射：映射由唯一名稱組成，可用於代碼中以引用域、空間和域：
+1. 定義域映射： 映射由唯一名稱組成，可用於代碼中以引用域、空間和域：
 
    `<unique-name> [scheme://]server[:port][/contextpath]`，其中：
 
-   * **scheme** 通常為http或https，但也可以是ftp等。;視需要使用https來強制https連結；當用戶端程式碼要求將URL外部化時，不會覆寫配置時，就會使用它。
+   * **scheme** 通常為http或https，但也可以是ftp等。; 視需要使用https來強制https連結； 當用戶端程式碼要求將URL外部化時，不會覆寫配置時，就會使用它。
    * **server** 是主機名（可以是域名或IP地址）。
    * **port** （可選）是埠號。
    * **contextpath** （選用）只有在AEM安裝為位於不同內容路徑下的網頁應用程式時才會設定。
+
    For example: `production https://my.production.instance`
 
    下列對應名稱是預先定義的，必須一律設定，因為AEM需仰賴這些名稱：
@@ -53,6 +57,7 @@ Externalizer **** service可讓您集中定義多個網域，可用來以程式�
    * **local** —— 本地實例
    * **author** —— 編寫系統DNS
    * **publish** —— 公開對應的網站DNS
+
    >[!NOTE]
    >
    >自訂設定可讓您新增新類別，例如「生產」、「測試」或甚至外部非AEM系統（例如「my-internal-webservice」），對於避免在專案的程式碼基底中不同位置硬式編碼此類URL非常有用。
