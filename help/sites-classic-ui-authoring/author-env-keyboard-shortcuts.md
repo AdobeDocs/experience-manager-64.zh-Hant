@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b6e42b9d-9e27-4f22-8543-442d03af48f3
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '136'
+ht-degree: 3%
 
 ---
 
@@ -23,10 +26,11 @@ AEM中提供各種鍵盤快速鍵。 有些適用於控制台的使用，有的�
 >
 >桌上型裝置上的多選：
 >
->* Windows:按 **Ctrl**+**按一** 下所需元件。
+>* Windows: **Ctrl**+**click** on required components.
    >
    >
-* Mac:按 **Cmd**+**按一** 下必要的元件。
+* Mac: **Cmd**+**click** on required components.
+
 >
 
 
@@ -43,7 +47,7 @@ AEM中提供各種鍵盤快速鍵。 有些適用於控制台的使用，有的�
   <tr> 
    <td>主控台</td> 
    <td><strong><code>Shift-Double-Click</code></strong><br /> （在必要頁面上）</td> 
-   <td>在新視窗中開啟頁面。<br /><strong> 注 </strong>意：如果「用戶屬性」 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">設定為「單一窗口</a> 」，則此操作可用；如果有多個Windows，則這是預設行為。</td> 
+   <td>在新視窗中開啟頁面。<br /> <strong>注意：</strong> 如果「用戶屬性」 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">設定為「單一窗口</a> 」，則此操作可用； 如果有多個Windows，則這是預設行為。</td> 
   </tr> 
  </tbody> 
 </table>
