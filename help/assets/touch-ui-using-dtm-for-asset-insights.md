@@ -29,6 +29,7 @@ Adobe動態標籤管理是可啟動數位行銷工具的工具。 Adobe Analytic
 
    * 選取「 **[!UICONTROL Web屬性]** 」標籤，然後點選／按一下「 **[!UICONTROL 新增屬性」]**。
    * 視需要更新欄位，並點選／按一下「 **[!UICONTROL 建立屬性]** 」( [請參閱檔案](https://helpx.adobe.com/experience-manager/using/dtm.html))。
+
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
 1. 在「規 **[!UICONTROL 則]** 」標籤中，從導覽窗格 **[!UICONTROL 選取「頁面載入規則]** 」，並點選／按一下「 **[!UICONTROL 建立新規則」]**。
