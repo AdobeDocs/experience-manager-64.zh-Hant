@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 0%
 
 ---
 
@@ -48,6 +51,7 @@ AEM提供多種機制，讓您自訂製作例項的頁面製作功 [能](/help/s
 >* 使用和建立 [覆蓋](/help/sites-developing/overlays.md)。
 >* [花崗岩](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [AEM Touch-Enabled UI的結構](/help/sites-developing/touch-ui-structure.md) ，以取得用於頁面製作的結構區域的詳細資訊。
+
 >
 >
 AEM Gems工作階段- [User interface customization for AEM 6.0中也包含](https://docs.adobe.com/content/ddc/en/gems.html) 此主題 [](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html)。
@@ -60,15 +64,15 @@ AEM Gems工作階段- [User interface customization for AEM 6.0中也包含](htt
 >
 >配置和其他更改的建議方法為：
 >
->1. 重新建立下列項目的必要項目(如中所 `/libs`示): `/apps`
+>1. 重新建立必要項目(如中所 `/libs`示) `/apps`
 >1. 在 `/apps`
 
 
 ## 添加新圖層（模式） {#add-new-layer-mode}
 
-當您編輯頁面時，有多種可用 [模式](/help/sites-authoring/author-environment-tools.md#page-modes) 。 這些模式是使用圖層 [實現的](/help/sites-developing/touch-ui-structure.md#layer)。 這些功能可讓您存取相同頁面內容的不同功能類型。 標準層包括：編輯、預覽、註解、開發人員和鎖定目標。
+當您編輯頁面時，有多種可用 [模式](/help/sites-authoring/author-environment-tools.md#page-modes) 。 這些模式是使用圖層 [實現的](/help/sites-developing/touch-ui-structure.md#layer)。 這些功能可讓您存取相同頁面內容的不同功能類型。 標準層包括： 編輯、預覽、註解、開發人員和鎖定目標。
 
-### 圖層範例：即時副本狀態 {#layer-example-live-copy-status}
+### 圖層範例： 即時副本狀態 {#layer-example-live-copy-status}
 
 標準AEM例項提供MSM層。 這可存取與多網站管 [理相關的資料](/help/sites-administering/msm.md) ，並在層中加亮顯示。
 
@@ -108,7 +112,7 @@ GITHUB代碼
 
 在編寫頁面時，使用者通常必須從資源（例如頁面、元件、資產等）中選取。 這可以以清單的形式，例如作者必須從中選擇項目。
 
-為了將清單保持在合理的大小，並且與使用案例相關，篩選器可以以自訂謂詞的形式實施。 例如，如果使用 [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui) （花崗岩）元件來允許使用者選取特定資源的路徑，則可依下列方式篩選顯示的路徑：
+為了將清單保持在合理大小並與使用案例相關，可以以自訂述詞的形式實作篩選。 例如，如果使用 [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) Granite [](/help/sites-developing/touch-ui-concepts.md#granite-ui) （花崗岩）元件來允許使用者選取特定資源的路徑，則可依下列方式篩選顯示的路徑：
 
 * 實施介面，以實作自訂 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) 謂語。
 * 指定謂語的名稱，並在使用時參照該名稱 `pathbrowser`。
@@ -117,7 +121,7 @@ GITHUB代碼
 
 >[!NOTE]
 >
->透過實作介面來實作自 `com.day.cq.commons.predicate.AbstractNodePredicate` 訂述詞，在傳統UI中也能運作。
+>透過實作介面來實作自訂 `com.day.cq.commons.predicate.AbstractNodePredicate` 述語，在傳統UI中也能運作。
 >
 >如需 [在傳統UI中實作自訂謂詞的範例](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) ，請參閱此知識庫文章。
 
@@ -140,7 +144,7 @@ GITHUB代碼
 
 ### 標準就地編輯器 {#standard-in-place-editor}
 
-在標準AEM安裝中：
+在標準的 AEM 配置中：
 
 1. `/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
@@ -157,7 +161,7 @@ GITHUB代碼
 
          * 屬性: `editorType`
 
-            定義在觸發該元件的就地編輯時將使用的內嵌編輯器類型；例如， `text`, `textimage`, `image`, `title`。
+            定義在觸發該元件的就地編輯時將使用的內嵌編輯器類型； 例如， `text`, `textimage`, `image`, `title`。
 
 1. 可使用包含配置的節點以及包含必要插件配 `config` 置詳細資訊的其他節點來 `plugin` 配置編輯器的附加配置詳細資訊。
 
@@ -254,5 +258,5 @@ GITHUB代碼
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. 視需要 [更新工作流程模](/help/sites-developing/workflows-models.md) 型和相關的組態／指令碼。
-1. 移除所有相關頁面 [ 之所 `replicate` 有適當使](/help/sites-administering/security.md#actions) 用者的動作權；讓此工作流程在任何使用者嘗試發佈（或複製）頁面時觸發為預設動作。
+1. 移除所有相關頁面 [ 之所 `replicate` 有適當使](/help/sites-administering/security.md#actions) 用者的動作權； 讓此工作流程在任何使用者嘗試發佈（或複製）頁面時觸發為預設動作。
 
