@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
 translation-type: tm+mt
 source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
+workflow-type: tm+mt
+source-wordcount: '1604'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
 
 ## 建立宣傳品 {#creating-a-collateral}
 
-假設您想要建立數位可列印的宣傳品，例如簡介手冊、傳單和廣告，以便在即將到來的宣傳活動中展示，並與全球的經銷商分享。 根據範本建立宣傳品有助於跨通道提供統一的客戶體驗。 設計人員可以使用創意解決方案（例如InDesign）建立促銷活動範本（單頁或多頁），並為您上傳範本至AEM Assets。 在建立宣傳品之前，請事先將一或多個INDD範本上傳至Experience Manager，並在Experience manager中使用。
+假設您想要建立數位可列印的宣傳品，例如簡介手冊、傳單和廣告，以便在即將到來的宣傳活動中展示，並與全球的經銷商分享。 根據範本建立宣傳品有助於跨通道提供統一的客戶體驗。 設計人員可以使用創意解決方案（例如InDesign）建立促銷活動範本（單頁或多頁），並為您上傳範本至AEM Assets。 在建立宣傳品之前，請事先將一或多個INDD範本上傳至Experience Manager，並在Experience Manager中使用。
 
 1. 按一下或點選AEM標誌，然後按一下／點選「導 **[!UICONTROL 覽]** 」頁面上的「資產」。
 1. 從選項中選擇「模 **[!UICONTROL 板」]**。
@@ -56,7 +59,7 @@ source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
-1. 預先將一或多個INDD範本上傳至Experience Manager，並在Experience manager中使用。 選擇手冊的範本，然後按一下／點選「下 **[!UICONTROL 一步]**」。
+1. 預先將一或多個INDD範本上傳至Experience Manager，並在Experience Manager中使用。 選擇手冊的範本，然後按一下／點選「下 **[!UICONTROL 一步]**」。
 
    ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -68,7 +71,7 @@ source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
 
    ![chlimage_1-310](assets/chlimage_1-310.png)
 
-1. 按一下 **[!UICONTROL 建立]**。對話方塊會確認已建立新的手冊。 按一下／點選 **[!UICONTROL 「開啟]** 」，以編輯模式開啟手冊。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。對話方塊會確認已建立新的手冊。 按一下／點選 **[!UICONTROL 「開啟]** 」，以編輯模式開啟手冊。
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -86,6 +89,7 @@ source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
    * 從「模板」頁面，導航到建立宣傳品的資料夾，然後按一下／按一下宣傳品縮圖上的「編輯」快速操作。
    * 在宣傳品的資產頁面中，按一下／點選工具列中的「編輯」圖示。
    * 選擇宣傳品，然後從工具列中按一下／點選「編輯」表徵圖。
+
    ![chlimage_1-313](assets/chlimage_1-313.png)
 
    資產搜尋器和文字編輯器會顯示在頁面的左側。 文字編輯器預設為開啟。
@@ -138,15 +142,17 @@ source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
 
    >[!NOTE]
    >
-   >只有當宣傳品中的可編輯影像欄位沒有任何缺少的表徵圖時，才會啟用「預覽」和「完成」表徵圖。 如果您的文宣中遺失圖示，是因為AEM無法解析InDesign範本中的影像。 通常，AEM無法在下列情況下解析影像：
+   >只有當宣傳品中可編輯的影像欄位沒有遺失任何圖示時，「預覽」和「完成」圖示才會啟用。 如果您的文宣中遺失圖示，是因為AEM無法解析InDesign範本中的影像。 通常，AEM無法在下列情況下解析影像：
    >
    >* 影像未內嵌在基礎的InDesign範本中
    >* 從本機檔案系統連結影像
+
    >
    >若要啟用AEM來解析影像，請執行下列動作：
    >
    >* 在建立InDesign範本時內嵌影像(請參 [閱關於連結和內嵌圖形](https://helpx.adobe.com/indesign/using/graphics-links.html))。
    >* 將AEM載入您的本機檔案系統，然後將遺失的圖示與現有的AEM資產對應。
+
    >
    >如需有關使用InDesign檔案的詳細資訊，請參 [閱「在AEM中使用InDesign檔案的最佳實務」](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)。
 
