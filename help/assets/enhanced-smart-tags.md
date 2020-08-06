@@ -1,6 +1,6 @@
 ---
-title: 增強的智慧型標籤
-description: 增強的智慧型標籤
+title: 增強型智慧標記
+description: 增強型智慧標記
 uuid: 4452ca05-1f20-4f80-884a-a739ae7b8b0e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -8,11 +8,14 @@ topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
 source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+workflow-type: tm+mt
+source-wordcount: '1577'
+ht-degree: 15%
 
 ---
 
 
-# 增強的智慧型標籤 {#enhanced-smart-tags}
+# 增強型智慧標記 {#enhanced-smart-tags}
 
 ## 增強的智慧型標籤概觀 {#overview-of-enhanced-smart-tags}
 
@@ -24,11 +27,11 @@ source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
 
 要使智慧內容服務應用正確的標籤，您必須對其進行培訓以識別分類。 若要訓練服務，請先組織一組最能說明這些資產的資產和標籤。 在資產上套用這些標籤，並執行培訓工作流程以協助服務學習。
 
-一旦標籤經過訓練並準備就緒後，服務現在可以透過標籤工作流程，將這些標籤套用在資產上。
+一旦標籤經過訓練並準備就緒後，服務現在可以透過標籤工作流程，將這些標籤套用至資產。
 
 在背景中，智慧型內容服務使用Adobe Sensei的AI架構，針對您的標籤結構和商業分類訓練其影像識別演算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
 
-智慧型內容服務是Adobe I/O上代管的雲端服務。若要在Adobe Experience Manager(AEM)中使用它，系統管理員必須將您的AEM例項與Adobe IO整合。
+智慧型內容服務是Adobe I/O上代管的雲端服務。 若要在Adobe Experience Manager(AEM)中使用它，系統管理員必須將您的AEM例項與Adobe IO整合。
 
 總而言之，以下是使用智慧型內容服務的主要步驟：
 
@@ -43,7 +46,7 @@ source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
 
 在您使用智慧型內容服務之前，請確定以下各項以建立Adobe I/O整合：
 
-* 具有組織管理員權限的Adobe ID帳戶。
+* Adobe ID 帳戶具有組織的管理員權限。
 * 您的組織已啟用智慧型內容服務。
 
 ## 入門 {#onboarding}
@@ -71,13 +74,14 @@ source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
 >1. 培訓是不可撤銷的過程。 Adobe建議您在標籤上訓練智慧型內容服務之前，先檢視組織中資產的標籤。
 >1. 請先閱讀智 [慧型內容服務訓練方針](smart-tags-training-guidelines.md) ，再針對任何標籤開始訓練。
 >1. 當您第一次訓練智慧型內容服務時，Adobe建議您至少在兩個不同的標籤上進行訓練。
+
 >
 
 
 
 ## 培訓智慧型內容服務 {#training-the-smart-content-service}
 
-要讓Smart Content service識別您的業務分類，請在已包含與您的業務相關的標籤的資產集上運行該分類。 培訓後，服務可以對類似的資產集應用相同的分類法。
+要讓Smart Content Service識別您的業務分類，請在已包含與您的業務相關的標籤的資產集上運行該分類。 培訓後，服務可以對類似的資產集應用相同的分類法。
 
 您可以多次培訓服務，以提升其套用相關標籤的能力。 在每個訓練週期後，執行標籤工作流程並檢查您的資產是否已適當標籤。
 
@@ -139,9 +143,9 @@ source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
 
 ### 定期標籤 {#periodic-tagging}
 
-您可以啟用Smart Content service以定期標籤資料夾中的資產。 開啟資產資料夾的屬性頁面，選取「詳細資 **[!UICONTROL 訊」標籤下的]** 「啟用智 **[!UICONTROL 慧標籤]** 」，並儲存變更。
+您可以啟用Smart Content Service以定期標籤資料夾中的資產。 開啟資產資料夾的屬性頁面，選取「詳細資 **[!UICONTROL 訊」標籤下的]** 「啟用智 **[!UICONTROL 慧標籤]** 」，並儲存變更。
 
-在為資料夾選取此選項後，Smart Content service會自動標籤資料夾中的資產。 預設情況下，標籤工作流每天在上午12:00運行。
+在為資料夾選取此選項後，Smart Content Service會自動標籤資料夾中的資產。 預設情況下，標籤工作流每天在上午12:00運行。
 
 ### 隨選標籤 {#on-demand-tagging}
 
@@ -166,7 +170,7 @@ source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
-   導覽至資產資料夾並檢閱標籤，以確認Smart Content service是否正確標籤您的資產。 如需詳細資訊，請參 [閱管理智慧標籤](managing-smart-tags.md)。
+   導覽至資產資料夾並檢閱標籤，以確認Smart Content Service是否正確標籤您的資產。 如需詳細資訊，請參 [閱管理智慧標籤](managing-smart-tags.md)。
 
 #### 從時間軸標籤資產 {#tagging-assets-from-the-timeline}
 
@@ -177,7 +181,7 @@ source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
    ![start_workflow](assets/start_workflow.png)
 
 1. 選取「 **[!UICONTROL DAM智慧型標籤資產」工作流程]** ，並指定工作流程的標題。
-1. 點選／按一下「 **[!UICONTROL 開始]**」。 工作流程會將您的標籤套用在資產上。 導覽至資產資料夾並檢閱標籤，以確認Smart Content service是否正確標籤您的資產。 如需詳細資訊，請參 [閱管理智慧標籤](managing-smart-tags.md)。
+1. 點選／按一下「 **[!UICONTROL 開始]**」。 工作流程會將您的標籤套用在資產上。 導覽至資產資料夾並檢閱標籤，以確認Smart Content Service是否正確標籤您的資產。 如需詳細資訊，請參 [閱管理智慧標籤](managing-smart-tags.md)。
 
 >[!NOTE]
 >
