@@ -151,6 +151,7 @@ AEM提供包含 [ContextHub的選用資料層](/help/sites-developing/contexthub
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
+
       ContextHub儲存器定義將使用哪個持久性層，因此查看持久性的當前狀態，應檢查所有層。
 
 
@@ -180,6 +181,7 @@ AEM提供包含 [ContextHub的選用資料層](/help/sites-developing/contexthub
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
+
       ContextHub儲存器定義將使用哪個持久性層，因此查看持久性的當前狀態，應檢查所有層。
 
 
