@@ -11,6 +11,9 @@ topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
 
 它涵蓋：
 
-* [快速入門](#getting-started):詳細說明建立和發佈第一頁所需事件的基本順序。
+* [快速入門](#getting-started): 詳細說明建立和發佈第一頁所需事件的基本順序。
 
-* [進一步動作](#further-actions):繼續執行您在編寫時可使用的許多其他動作。
+* [進一步動作](#further-actions): 繼續執行您在編寫時可使用的許多其他動作。
 
 ## 快速入門 {#getting-started}
 
