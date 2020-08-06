@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1744'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 * Select **[!UICONTROL Create]**
 
-### 步驟1:網站範本 {#step-site-template}
+### 步驟1: 網站範本 {#step-site-template}
 
 ![enablementsitetemplate](assets/enablementsitetemplate.png)
 
@@ -40,10 +43,10 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 * **社群網站說明**: `A site for enabling the community to learn.`
 
-* **社群網站根**:(對於預設根，保留空白 `/content/sites`)
+* **社群網站根**: (對於預設根，保留空白 `/content/sites`)
 
-* **雲端設定**:（若未指定雲端設定，請留空）提供指定雲端設定的路徑。
-* **社群網站基本語言**:（單語言不受影響）英文)使用下拉式選單，從 *可用語言* (德文、義大利文、法文、日文、西班牙文、葡萄牙文（巴西）、中文（繁體）和簡體中文)選擇一或多種基本語言。 會針對新增的每種語言建立一個社群網站，並依照多語言網站翻譯內容中所述的最佳實務，存在於相 [同的網站資料夾中](../../help/sites-administering/translation.md)。 每個網站的根頁面將包含一個子頁面，該子頁面由其中一種語言的語言代碼命名，例如英文的&#39;en&#39;或法文的&#39;fr&#39;。
+* **雲端設定**: （若未指定雲端設定，請留空）提供指定雲端設定的路徑。
+* **社群網站基本語言**: （單語言不受影響） 英文)使用下拉式選單，從 *可用語言* (德文、義大利文、法文、日文、西班牙文、葡萄牙文（巴西）、中文（繁體）和簡體中文)選擇一或多種基本語言。 會針對新增的每種語言建立一個社群網站，並依照多語言網站翻譯內容中所述的最佳實務，存在於相 [同的網站資料夾中](../../help/sites-administering/translation.md)。 每個網站的根頁面將包含一個子頁面，該子頁面由其中一種語言的語言代碼命名，例如英文的&#39;en&#39;或法文的&#39;fr&#39;。
 
 * **[!UICONTROL 社群網站名稱]**: `enable`
 
@@ -52,11 +55,11 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
       *例如*,http://localhost:4502/content/sites/ `enable/en.html`
 
-* **[!UICONTROL 參考網站範本]**:向下拉選擇 `Reference Structured Learning Site Template`
+* **[!UICONTROL 參考網站範本]**: 向下拉選擇 `Reference Structured Learning Site Template`
 
 選擇下 **[!UICONTROL 一步]**
 
-### 步驟2:設計 {#step-design}
+### 步驟2: 設計 {#step-design}
 
 「設計」步驟會在兩節中顯示，以選取主題和品牌橫幅：
 
@@ -74,7 +77,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 選擇 **[!UICONTROL 下一步]**。
 
-### 步驟3:設定 {#step-settings}
+### 步驟3: 設定 {#step-settings}
 
 在「設定」步驟中，在選取 `Next`之前，請注意有7個區段可提供使用者管理、標籤、角色、協調、分析、翻譯和啟用等組態的存取權。
 
@@ -100,7 +103,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 此外，為社群網站選取「標籤名稱空間」會限制定義型錄和啟用資源時顯示的選擇。 如需重 [要資訊，請參閱標籤](tag-resources.md) 啟用資源。
 
-使用預先輸入搜尋功能，尋找名稱空間十分簡單。 例如，
+使用預先輸入搜尋功能，輕鬆尋找命名空間。 例如，
 
 * 輸入「tut」
 * 選取 `Tutorial`
@@ -151,18 +154,19 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 對於啟用社群，必須識別一或多個社群啟用管理員。
 
-* **[!UICONTROL 啟用管理員]**（必要）可選取群 `Community Enablement Managers` 組成員以管理此社群網站。
+* **[!UICONTROL 啟用管理員]**（必要） 
+`Community Enablement Managers` 可選擇組以管理此社區站點。
 
    * 類型&quot;s&quot;
    * 選取 `Sirius Nilson`
 
-* **[!UICONTROL Marketing cloud組織Id]**（選用）在啟用報表中包含視訊心率分析時，必須使用的Adobe Analytics帳戶 [ID](analytics.md#video-heartbeat-analytics) 。
+* **[!UICONTROL Marketing Cloud組織Id]**（選用）在啟用報表中包含視訊心率分析時，必須使用的Adobe Analytics帳戶 [ID](analytics.md#video-heartbeat-analytics) 。
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
 選擇 **[!UICONTROL 下一步]**。
 
-### 步驟4:建立社群網站 {#step-create-community-site}
+### 步驟4: 建立社群網站 {#step-create-community-site}
 
 選擇 **[!UICONTROL 建立]**。
 
@@ -231,7 +235,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 * 導覽至「社 **[!UICONTROL 群>群組控制台]** 」
 * 選擇 **[!UICONTROL 社區啟用成員]** 組
 * 在「 `ski` 將成員 **[!UICONTROL 添加到組」搜索框中輸入]** 。
-* 選取 **[!UICONTROL 社群滑雪課]** （學員群組）
+* 選取 **[!UICONTROL 社群滑雪課程]** （學員群組）
 * 進入 `quinn` 搜索框
 * 選擇 **[!UICONTROL Quinn Harper]** （啟用資源聯絡）
 
@@ -304,13 +308,13 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 ![chlimage_1-297](assets/chlimage_1-297.png)
 
-#### 疑難排解：保存映射時出錯 {#troubleshooting-error-saving-map}
+#### 疑難排解： 保存映射時出錯 {#troubleshooting-error-saving-map}
 
 如果無法保存更改，請確保節點名為 `localhost.4503`，帶有「dot」分隔符，而不帶有 `localhost:4503` 「冒號」分隔符，因為 `localhost`不是有效的命名空間前置詞。
 
 ![chlimage_1-298](assets/chlimage_1-298.png)
 
-#### 疑難排解：無法重新導向 {#troubleshooting-fail-to-redirect}
+#### 疑難排解： 無法重新導向 {#troubleshooting-fail-to-redirect}
 
 規則運算式字&#x200B;**串結尾的&#39;**`sling:match``http://localhost:4503/` $&#39;至關重要，因此只會正確映射，否則，重新導向值會優先於URL中server:port之後可能存在的任何路徑。 因此，當AEM嘗試重新導向至登入頁面時，它會失敗。
 
@@ -342,7 +346,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 * **URL**: `catalog`
 
-* **選擇所有名稱空間**:保留為預設值。
+* **選擇所有名稱空間**: 保留為預設值。
 * 選擇保 **[!UICONTROL 存]**
 
 ![chlimage_1-299](assets/chlimage_1-299.png)
