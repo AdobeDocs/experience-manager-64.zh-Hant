@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '538'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 如需 [詳細資訊，請參閱「整合AEM與Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) 」。
 
-## 範例1:AEM到Adobe Campaign {#example-aem-to-adobe-campaign}
+## 範例1: AEM到Adobe Campaign {#example-aem-to-adobe-campaign}
 
 AEM和Campaign之間的標準整合是以JSON和JSSP（JavaScript伺服器頁面）為基礎。 這些JSSP檔案可在Campaign主控台中找到，所有檔案都以 **amc** (Adobe Marketing Cloud)開始。
 
@@ -62,6 +65,7 @@ AEM和Campaign之間的標準整合是以JSON和JSSP（JavaScript伺服器頁面
 
    * 您的AEM和Campaign之間有運作的連線
    * 促銷活動cloudservice是設定在 **/content/geometrixx-outdoors上**
+
    此範例中最重要的物件是 **GenericCampaignConnector**，可讓您在Adobe Campaign側呼叫（取得和張貼）jssp檔案。
 
    以下是一小段程式碼：
@@ -159,7 +163,7 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-## 範例2:Adobe Campaign到AEM {#example-adobe-campaign-to-aem}
+## 範例2: Adobe Campaign到AEM {#example-adobe-campaign-to-aem}
 
 AEM提供現成可用的API，以擷取網站管理員檔案總管檢視中任何地方可用的物件。
 
