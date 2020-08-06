@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2778'
+ht-degree: 6%
 
 ---
 
@@ -66,7 +69,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 您可以上傳影像，然後加以編輯和操控（例如裁切、旋轉、新增連結／標題／文字）。
 
-您可以直接從資產瀏覽器將影像拖 [放至元件或其「設](/help/sites-authoring/author-environment-tools.md#assets-browser) 定」對話方塊 [](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。 您也可以從「設定」對話方塊上傳影像；此對話方塊也控制影像的所有定義和控制：
+您可以直接從資產瀏覽器將影像拖 [放至元件或其「設](/help/sites-authoring/author-environment-tools.md#assets-browser) 定」對話方塊 [](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。 您也可以從「設定」對話方塊上傳影像； 此對話方塊也控制影像的所有定義和控制：
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -82,9 +85,9 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >
 >就地編輯器在編輯時會使用影像的原始大小和外觀比例。 您也可以指定高度和寬度屬性。 儲存編輯變更時，會套用屬性中定義的任何大小和外觀比例限制。
 >
->根據您的例項，頁面設計可能也會施加最 [小和最大限制](/help/sites-developing/designer.md);這些是在項目實施期間開發的。
+>根據您的例項，頁面設計可能也會施加最 [小和最大限制](/help/sites-developing/designer.md); 這些是在項目實施期間開發的。
 
-在全螢幕編輯模式中，還有幾種其他選項可供選擇；例如，映射和縮放：
+在全螢幕編輯模式中，還有幾種其他選項可供選擇； 例如，映射和縮放：
 
 ![](do-not-localize/chlimage_1-11.png)
 
@@ -228,7 +231,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    * **標題**
 
-      區塊標題；將會以mouseover顯示。
+      區塊標題； 將會以mouseover顯示。
 
    * **替代文字**
 
@@ -259,7 +262,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ### 文字與個人化 (行銷活動) {#text-personalization-campaign}
 
-「文字與個人化（促銷活動）」元件可讓您使用WYSIWYG編輯器輸入文字區塊，並具備 [Rich Text編輯器提供的功能](/help/sites-authoring/rich-text-editor.md)。 此外，此元件可讓您使用Adobe Campaign提供的內容欄位和個人化區塊；另請參閱 [插入個人化](/help/sites-authoring/campaign.md#inserting-personalization)。
+「文字與個人化（促銷活動）」元件可讓您使用WYSIWYG編輯器輸入文字區塊，並具備 [Rich Text編輯器提供的功能](/help/sites-authoring/rich-text-editor.md)。 此外，此元件可讓您使用Adobe Campaign提供的內容欄位和個人化區塊； 另請參閱 [插入個人化](/help/sites-authoring/campaign.md#inserting-personalization)。
 
 選取圖示可讓您設定文字的格式，包括字型特性、對齊方式、連結、清單和縮排。 雖然外觀和感覺不 [同](/help/sites-authoring/editing-content.md)，但這兩個UI的功能基本相同：
 
@@ -271,6 +274,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >
 >* 可用的個人化欄位取決於您的電子報所連結的Adobe Campaign範本。
 >* 從ContextHub選擇角色後，個人化欄位會自動由選取的描述檔資料取代。
+
 >
 >
 請參閱 [插入個人化](/help/sites-authoring/campaign.md#inserting-personalization)。
@@ -388,7 +392,7 @@ Adobe Campaign元件具有所有元件（加密的主要金鑰和隱藏的協調
 
 * **必要**
 
-   選中此複選框可使此元件成為必需元件；即，用戶必須輸入值。
+   選中此複選框可使此元件成為必需元件； 即，用戶必須輸入值。
 
 * **必要訊息**
 
@@ -414,7 +418,7 @@ Adobe Campaign元件具有所有元件（加密的主要金鑰和隱藏的協調
 
 ### 日期欄位（促銷活動）和日期欄位/HTML 5（促銷活動） {#date-field-campaign-and-date-field-html-campaign}
 
-使用日期欄位可讓收件者知道日期；例如，您可能希望收件者指定其出生日期。 日期格式與Adobe Campaign例項中使用的格式相符。
+使用日期欄位可讓收件者知道日期； 例如，您可能希望收件者指定其出生日期。 日期格式與Adobe Campaign例項中使用的格式相符。
 
 除了大部 [分Adobe Campaign元件的常用設定外](#settings-common-to-most-components)，您還可以設定下列項目：
 
@@ -425,7 +429,8 @@ Adobe Campaign元件具有所有元件（加密的主要金鑰和隱藏的協調
 * **限制訊息**
 
    此外，您還可以新增限制訊息，讓使用者瞭解如何正確設定其答案的格式。
-* **樣式——寬**&#x200B;度按一下或點選+和——圖示或輸入數字，以調整欄 **位****** 的寬度。
+* **樣式——寬**&#x200B;度按一下或點選 
+**+** 和 **** -表徵圖或輸入數字。
 
 下列範例顯示「日期欄位（促銷活動）」元件，並顯示寬度已調整。
 
@@ -442,7 +447,8 @@ Adobe Campaign元件具有所有元件（加密的主要金鑰和隱藏的協調
 * **標題和文字——元素名稱**
 
    預設為encryptedPK。 只有當元素名稱與表單上其他元素的名稱衝突時，您才需要變更元素名稱。 沒有兩個表單欄位可以有相同的元素名稱。
-* **Adobe Campaign - URL參數**&#x200B;新增EPK的URL參數。 例如，您可使用值 **epk**。
+* **Adobe Campaign - URL參數**&#x200B;新增EPK的URL參數。 例如，您可以使用 
+**epk**。
 
 下列範例顯示所顯示的加密主要金鑰（促銷活動）元件。
 
@@ -484,7 +490,8 @@ Adobe Campaign元件具有所有元件（加密的主要金鑰和隱藏的協調
 * **限制訊息**
 
    此外，您還可以新增限制訊息，讓使用者瞭解如何正確設定其答案的格式。
-* **樣式——寬**&#x200B;度按一下或點選+和——圖示或輸入數字，以調整欄 **位****** 的寬度。
+* **樣式——寬**&#x200B;度按一下或點選 
+**+** 和 **** -表徵圖或輸入數字。
 
 下列範例顯示設定寬度的數值欄位（促銷活動）元件。
 
@@ -492,7 +499,7 @@ Adobe Campaign元件具有所有元件（加密的主要金鑰和隱藏的協調
 
 ### 選項欄位 (行銷活動) {#option-field-campaign}
 
-此下拉式清單可讓您選取選項；例如，收件者的性別或狀態。
+此下拉式清單可讓您選取選項； 例如，收件者的性別或狀態。
 
 您可以 [在「選項欄位](#settings-common-to-most-components) （促銷活動）」元件中設定大多數Adobe Campaign元件的共同設定。 若要填入下拉式清單，請按一下或點選Adobe Campaign符號並導覽至欄位，以在Adobe Campaign個人化欄位中選取適當的欄位。
 
@@ -500,13 +507,13 @@ Adobe Campaign元件具有所有元件（加密的主要金鑰和隱藏的協調
 
 下列範例顯示所顯示的選項欄位（促銷活動）元件。
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+![chlimage_1-127](assets/chlimage_1-129.png)
 
 ### 訂閱檢查清單 (行銷活動) {#subscriptions-checklist-campaign}
 
 使用「 **訂閱檢查清單（促銷活動）** 」元件，修改與Adobe Campaign設定檔相關的訂閱。
 
-新增至表單時，此元件會將所有可用的訂閱顯示為核取方塊，並讓使用者選取所需的訂閱。 當使用者送出表單時，此元件會根據表單動作類型，將使用者訂閱或取消訂閱選取的服務(**Adobe Campaign:訂閱服務** 或 **Adobe Campaign:取消訂閱服務**)。
+新增至表單時，此元件會將所有可用的訂閱顯示為核取方塊，並讓使用者選取所需的訂閱。 當使用者送出表單時，此元件會根據表單動作類型，將使用者訂閱或取消訂閱選取的服務(**Adobe Campaign: 訂閱服務** 或 **Adobe Campaign: 取消訂閱服務**)。
 
 >[!NOTE]
 >
