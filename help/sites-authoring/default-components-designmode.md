@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 1%
 
 ---
 
@@ -52,7 +55,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >使用本文所述的設計模式編輯設計是定義靜態範本設計的建議方式
 >
->例如，在CRX DE中修改設計並非最佳實務，而且這種設計的應用可能與預期行為不同。 如需詳細資訊，請參 [閱開發人員檔案頁面範本](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) -靜態。
+>例如，在CRX DE中修改設計並非最佳做法，而且這種設計的應用可能與預期行為不同。 如需詳細資訊，請參 [閱開發人員檔案頁面範本](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) -靜態。
 
 ## 啟用／停用元件 {#enable-disable-components}
 
@@ -86,6 +89,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 允許的元件
    * 設定
+
    **允許的元件**
 
    在「允 **許的元件** 」(Allowed Components)頁籤上，定義哪些元件可用於參數。
@@ -95,6 +99,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 減號表示至少選取一個項目，但並非選取群組中的所有項目。
    * 可使用搜尋來依名稱篩選元件。
    * 列在元件群組名稱右側的計數代表這些群組中選取的元件總數，而不考慮篩選。
+
    您可以定義每個頁面元件的設定。 如果子頁面使用相同的範本和／或頁面元件（通常對齊），則相同的組態會套用至對應的段落系統。
 
    >[!NOTE]
@@ -130,6 +135,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 主要
    * 功能
    * 樣式
+
    **屬性**
 
    「屬 **性** 」(Properties)頁籤允許您配置元件的重要設計參數。 例如，對於影像元件，您可以定義允許的影像最大和最小大小。
