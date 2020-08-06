@@ -1,5 +1,5 @@
 ---
-title: 中繼資料結構
+title: Metadata schemas
 description: '中繼資料結構定義屬性頁面的版面配置，以及資產所顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
 translation-type: tm+mt
@@ -63,7 +63,7 @@ ht-degree: 12%
 
 1. 在對話框中，輸入模式表單的標題，然後按一下 **[!UICONTROL 建立]** ，完成表單建立過程。
 
-   ![chlimage_1-175](assets/chlimage_1-174.png)
+   ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## 編輯中繼資料結構表單 {#editing-metadata-schema-forms}
 
@@ -95,7 +95,7 @@ ht-degree: 12%
 | [!UICONTROL 區段標題] | 新增共用元件清單的區段標題。 |
 | [!UICONTROL 單行文字] | 新增單行文字屬性。 它儲存為字串。 |
 | [!UICONTROL 多值文字] | 新增多值文字屬性。 它儲存為字串陣列。 |
-| [!UICONTROL 數字] | 添加數字元件。 |
+| [!UICONTROL 數量] | 添加數字元件。 |
 | [!UICONTROL 日期] | 新增日期元件。 |
 | [!UICONTROL 下拉式] | 新增下拉式清單。 |
 | [!UICONTROL 標準標記] | 新增標記. |
@@ -113,7 +113,7 @@ ht-degree: 12%
 
 **欄位標籤**: 顯示在資產屬性頁面上的中繼資料屬性名稱。
 
-**對應至屬性**: 此屬性指定資產節點的相對路徑／名稱，該資產節點保存在CRX儲存庫中。 開頭為 `./` 因為表示路徑位於資產節點下。
+**對應至屬性**: 此屬性指定資產節點的相對路徑／名稱，該資產節點保存在CRX儲存庫中。 它以開 `./` 頭，因為它表示路徑位於資產的節點下。
 
 以下是此屬性的有效值：
 
