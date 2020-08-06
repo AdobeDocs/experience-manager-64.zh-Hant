@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '458'
+ht-degree: 7%
 
 ---
 
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[動態媒體](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ，可協助您隨選提供豐富的視覺化銷售和行銷資產，並自動調整規模，以便在網頁、行動裝置和社交網站上消費。 Dynamic media使用一組主資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
+[動態媒體](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ，可協助您隨選提供豐富的視覺化銷售和行銷資產，並自動調整規模，以便在網頁、行動裝置和社交網站上消費。 Dynamic Media使用一組主資產，透過其全球、可擴充、最佳化效能的網路，即時產生並提供多種多樣化內容變化。
 
 動態媒體提供互動式檢視體驗，包括縮放、360度旋轉和視訊。 動態媒體獨一無二地整合了Adobe Experience Manager數位資產管理(Assets)解決方案的工作流程，以簡化數位宣傳管理流程。
 
 >[!NOTE]
 >
->有關使用Adobe Experience manager和動態媒 [體的資訊，請參閱社群文章](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)。
+>有關使用Adobe Experience Manager和動態媒 [體的資訊，請參閱社群文章](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)。
 
-## Dynamic media的功能 {#what-you-can-do-with-dynamic-media}
+## Dynamic Media的功能 {#what-you-can-do-with-dynamic-media}
 
-動態媒體可讓您在發佈資產之前先管理資產。 使用數位資產中會詳細說明如何使用 [資產](managing-assets-touch-ui.md)。 一般主題包括上傳、下載、編輯和發佈資產；檢視和編輯屬性，以及搜尋資產。
+動態媒體可讓您在發佈資產之前先管理資產。 使用數位資產中會詳細說明如何使用 [資產](managing-assets-touch-ui.md)。 一般主題包括上傳、下載、編輯和發佈資產； 檢視和編輯屬性，以及搜尋資產。
 
 僅限動態媒體的功能包括：
 
