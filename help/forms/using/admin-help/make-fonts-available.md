@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f58a6c4-3190-49d4-800c-4a55dca7c296
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
 
 # 讓字型可供使用 {#make-fonts-available}
 
-請確定表單中使用的字型可用於代管AEM表單的J2EE應用程式伺服器。 例如，請考慮以下情形。 表單設計人員會將字型新增至Designer使用的字型目錄，並在個別電腦上建立使用該字型的表單。 為了讓「輸出」服務使用字型，請將它放置在「客戶」字型目錄中。 如果Customer字型目錄不存在，請在代管AEM表單的J2EE應用程式伺服器上建立目錄。
+請確定表單中使用的字型可用於代管AEM表單的J2EE應用程式伺服器。 例如，請考慮以下情形。 表單設計人員會將字型新增至Designer使用的字型目錄，並在個別電腦上建立使用該字型的表單。 為了讓「輸出」服務使用字型，請將它放置在「客戶」字型目錄中。 如果客戶字型目錄不存在，請在代管AEM表單的J2EE應用程式伺服器上建立目錄。
 
 如需其他字型設定的詳細資訊，請參閱「 [設定一般AEM表格設定」](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)。
 
