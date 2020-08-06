@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 27%
 
 ---
 
@@ -53,7 +56,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-瀏覽Sites **(List view)時，可使** 用「建立 **** CSV匯出」選項：它是「建立」( **Create** )下拉菜單的選項：
+瀏覽Sites **(List view)時，可使** 用「建立 **** CSV匯出」選項： 它是「建立」( **Create** )下拉菜單的選項：
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
