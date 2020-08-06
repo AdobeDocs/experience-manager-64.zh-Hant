@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 Adobe Experience Manager(AEM)隨附多種現成可用的元件，為網站作者提供完整的功能。 在編輯頁面時 [可使用](/help/sites-authoring/editing-content.md) ，並依主要功能區（稱為元件群組）分組，以協助篩選。
 
-編輯頁面時， [可使用元件](/help/sites-authoring/editing-content.md)。 為幫助過濾，元件按主功能區（即元件組）分組。
+編輯頁面時， [可使用元件](/help/sites-authoring/editing-content.md)。 為協助篩選，元件依主要功能區（即元件群組）分組。
 
 >[!NOTE]
 >
@@ -41,11 +44,11 @@ Adobe Experience Manager(AEM)隨附多種現成可用的元件，為網站作者
 如需將元件新增至頁面的詳細資訊，請參閱文章「 [編輯頁面內容」](/help/sites-authoring/editing-content.md)。\
 元件根據稱為元件組的各種類別進行排序。 這些元件組的示例包括：
 
-* **We.Retail**:包含與 [We.Retail參考實作搭配使用的代理核心元件](/help/sites-developing/we-retail.md)。
+* **We.Retail**: 包含與 [We.Retail參考實作搭配使用的代理核心元件](/help/sites-developing/we-retail.md)。
 
-* **We.Retail Commerce**:包含商務元件，例如購物車和產品格線
+* **We.Retail Commerce**: 包含商務元件，例如購物車和產品格線
 
-* **一般**:包含版面容器和體驗片段
+* **一般**: 包含版面容器和體驗片段
 
 ## 所有元件概觀 {#overview-of-all-components}
 
@@ -55,7 +58,7 @@ The [Components Console](/help/sites-authoring/default-components-console.md) ga
 
 以下頁面提供一些其他重要元件資訊的連結：
 
-* [核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) -核心元件提供有彈性且功能豐富的製作功能，可提供建立頁面的基本內容類型。
+* [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) -核心元件提供有彈性且功能豐富的製作功能，可提供建立頁面的基本內容類型。
 
 * [社群](/help/communities/author-communities.md) -元件為網站提供互動功能，例如論壇和註解。 當建立社群網站時，會包含許 [多這些元件](/help/communities/overview.md) 。
 
