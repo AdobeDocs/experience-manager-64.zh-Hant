@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1459'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ AEM可讓您輕鬆個人化使用者的體驗。 此外，還可讓您驗證區�
 
 ## 存取區段 {#accessing-segments}
 
-Audiences [主控台](/help/sites-authoring/managing-audiences.md) ，用來管理ContextHub或Client Context的區段，以及Adobe target帳戶的觀眾。 本檔案涵蓋管理ContextHub的區段。 如需 [「用戶端內容](/help/sites-administering/campaign-segmentation.md) 」區段和Adobe Target區段，請參閱相關檔案。
+Audiences [主控台](/help/sites-authoring/managing-audiences.md) ，用來管理ContextHub或Client Context的區段，以及Adobe Target帳戶的觀眾。 本檔案涵蓋管理ContextHub的區段。 如需 [「用戶端內容](/help/sites-administering/campaign-segmentation.md) 」區段和Adobe Target區段，請參閱相關檔案。
 
 若要存取您的區段，請在全域導覽中選取「導 **覽>個人化>觀眾」**。
 
@@ -50,7 +53,7 @@ Audiences [主控台](/help/sites-authoring/managing-audiences.md) ，用來管�
 
 >[!CAUTION]
 >
->段編輯器不檢查任何循環參照。 例如，區段A會參照另一個區段B，反過來參照區段A。您必須確定您的區段不包含任何循環反向連結。
+>段編輯器不檢查任何循環參照。 例如，區段A會參照另一個區段B，反過來參照區段A。 您必須確定您的區段不包含任何循環反向連結。
 
 ### 容器 {#containers}
 
