@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: db528b9b-3407-462d-8254-20b3cc2c3ccf
 translation-type: tm+mt
 source-git-commit: 2c46d0630690737ef7b7f944cdea5b3d393c92e5
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
@@ -35,6 +38,6 @@ source-git-commit: 2c46d0630690737ef7b7f944cdea5b3d393c92e5
 
 最後，必須考慮實際硬體——應盡可能在接近最終即時環境的配置中對系統進行任何效能測試。 因此，建議將「專案啟動」分割為：
 
-**軟啟動** -降低可用性；這為生產環境的實際條件下的效能測試、調整和優化提供了時間。
+**軟啟動** -降低可用性； 這為生產環境的實際條件下的效能測試、調整和優化提供了時間。
 
 **硬啟動** -完全可用。
