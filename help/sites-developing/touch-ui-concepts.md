@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 translation-type: tm+mt
 source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+workflow-type: tm+mt
+source-wordcount: '2218'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
 
    * 顯示標誌
    * 提供全域導覽的連結
-   * 提供其他一般動作的連結；例如搜尋、說明、Marketing cloud解決方案、通知和使用者設定。
+   * 提供其他一般動作的連結； 例如搜尋、說明、Marketing Cloud解決方案、通知和使用者設定。
 
 * 左側邊欄（視需要顯示且可隱藏），可顯示：
 
@@ -83,9 +86,9 @@ AEM以Granite平台為基礎，Granite平台包括Java內容儲存庫等。
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-## 花崗岩 {#granite}
+## Granite {#granite}
 
-Granite是Adobe的Open web堆疊，提供多種元件，包括：
+Granite是Adobe的Open Web堆疊，提供多種元件，包括：
 
 * 應用程式啟動程式
 * OSGi架構，可部署所有功能
@@ -97,7 +100,7 @@ Granite是Adobe的Open web堆疊，提供多種元件，包括：
 
 >[!NOTE]
 >
->Granite是以開放開發專案的方式在Adobe中執行：對程式碼、討論和問題的貢獻來自整個公司。
+>Granite是以開放開發專案的方式在Adobe中執行： 對程式碼、討論和問題的貢獻來自整個公司。
 >
 >不過，Granite並非 **開放** 原始碼專案。 它主要以數個開放原始碼專案（尤其是Apache Sling、Felix、Jackrabbit和Lucene）為基礎，但Adobe在公開項目與內部專案之間劃清了界限。
 
@@ -125,9 +128,9 @@ Granite UI:
 * 提供預設的標準化UI
 * 可擴充
 * 專為行動與桌上型裝置設計（首先考慮行動）
-* 可用於任何以Granite為基礎的平台／產品／專案；eg AEM
+* 可用於任何以Granite為基礎的平台／產品／專案； eg AEM
 
-![chlimage_1-186](assets/chlimage_1-186.png)
+![chlimage_1-185](assets/chlimage_1-186.png)
 
 * [Granite UI Foundation元件](#granite-ui-foundation-components)
 
@@ -295,6 +298,7 @@ Coral UI(CUI)是Adobe針對觸控式UI的視覺風格實作，旨在提供跨多
 >* Adobe公司文宣、廣告和簡報。
 >* Adobe品牌應用程式的使用者介面（該字型必須無法供其他用途使用）。
 >* 有少量自訂。
+
 >
 >
 Coral UI的使用應避免於：
@@ -302,6 +306,7 @@ Coral UI的使用應避免於：
 >* 檔案和其他與Adobe無關的項目。
 >* 內容建立環境（前面的項目可能由其他人產生）。
 >* 未明確連線至Adobe的應用程式／元件／網頁。
+
 >
 
 
@@ -401,7 +406,7 @@ CSS可用來提供實際的外觀和感覺。 為了能夠輕鬆自訂外觀和�
 * jQuery plugin，系結至特定DOM元素
 * 使用 `data-*` 屬性自訂行為
 
-範例標籤的摘取(請注意指定為data-&amp;ast;屬性):
+範例標籤的摘取(請注意指定為data-&amp;ast; 屬性):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
