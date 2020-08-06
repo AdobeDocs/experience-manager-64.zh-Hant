@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '4620'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ### 元件中的查詢 {#queries-in-components}
 
-由於查詢是AEM系統上較耗時的作業之一，因此建議您在元件中避免查詢。 每次呈現頁面時執行多個查詢通常會降低系統的效能。 在呈現元件時，有兩種策略可用來避免執行查詢：遍 **歷節點** , **預取結果**。
+由於查詢是AEM系統上較耗時的作業之一，因此建議您在元件中避免查詢。 每次呈現頁面時執行多個查詢通常會降低系統的效能。 在呈現元件時，有兩種策略可用來避免執行查詢： **遍歷節點** ，預 **取結果**。
 
 #### 遍歷節點 {#traversing-nodes}
 
@@ -119,13 +122,13 @@ Lucene註冊一個JMX Bean，該Bean將提供有關索引內容的詳細資訊�
 
 **開發期間**
 
-設定低臨界值 `oak.queryLimitInMemory` (例如 10000)和橡樹。 `queryLimitReads` (例如 5000)，並最佳化當點擊「查詢讀取的節點數超過x個……」的UnsupportedOperationException時，昂貴的查詢。
+設定低臨界值 `oak.queryLimitInMemory` (例如 10000)和橡樹。 `queryLimitReads` (例如 5000)，並最佳化當點擊「查詢讀取超過x個節點……」的UnsupportedOperationException時昂貴的查詢。
 
 這有助於避免資源密集型查詢(即 不受任何索引的支援，或受較少覆蓋指數的支援)。 例如，讀取100萬個節點的查詢會導致I/O增加，並對整體應用程式效能產生負面影響。 任何因上述限制而失敗的查詢都應加以分析和最佳化。
 
-#### **部署後**{#post-deployment}
+#### **部署後** {#post-deployment}
 
-* 監視日誌中觸發大節點遍歷或大堆記憶體消耗的查詢：&quot;
+* 監視日誌中觸發大節點遍歷或大堆記憶體消耗的查詢： &quot;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * 優化查詢以減少遍歷的節點數
@@ -142,7 +145,7 @@ Lucene註冊一個JMX Bean，該Bean將提供有關索引內容的詳細資訊�
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-在AEM 6.3中，上述2個參數是預先設定的OOTB，並可透過OSGi queryEngineSettings持續存在。
+在AEM 6.3中，上述2個參數是預先設定的OOTB，並可透過OSGi QueryEngineSettings持續存在。
 
 以下網址提供更多資訊： [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -161,7 +164,7 @@ Lucene註冊一個JMX Bean，該Bean將提供有關索引內容的詳細資訊�
 Lucene索引已在Oak 1.0.9中引入，並針對AEM 6初次啟動時引入的屬性索引提供一些強大的最佳化功能。 在決定是使用Lucene索引還是屬性索引時，請考慮以下因素：
 
 * Lucene索引提供的功能比屬性索引更多。 例如，屬性索引只能為單一屬性建立索引，而Lucene索引可以包含許多屬性。 有關Lucene索引中所有可用功能的詳細資訊，請參閱文 [檔](https://jackrabbit.apache.org/oak/docs/query/lucene.html)。
-* Lucene索引是非同步的。 雖然這可大幅提升效能，但也會在將資料寫入儲存庫和更新索引之間造成延遲。 如果讓查詢傳回100%精確的結果至關重要，則需要屬性索引。
+* Lucene索引是非同步的。 雖然這可大幅提升效能，但也會在資料寫入儲存庫和索引更新之間造成延遲。 如果讓查詢傳回100%精確的結果至關重要，則需要屬性索引。
 * 由於Lucene索引是非同步的，因此無法強制執行唯一性約束。 如果需要，則需要建立屬性索引。
 
 通常，建議您使用Lucene索引，除非您迫切需要使用屬性索引，以便獲得更高的效能和靈活性。
@@ -226,6 +229,7 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
 >* 查詢正確
 >* 查詢解析為預期索引(使用「解 [釋查詢」](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
 >* 索引程式已完成
+
 >
 
 
@@ -295,7 +299,7 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
          * [透過設定](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) oak:queryIndexDefinition []@refresh=true，重新整理lucene索引
       * 否則， [重新為lucene指數](#how-to-re-index) (R)
 
-         * 注意：將使用上次正確重新索引（或初始索引）的索引狀態，直到觸發新的重新索引
+         * 注意： 將使用上次正確重新索引（或初始索引）的索引狀態，直到觸發新的重新索引
 
 
 
@@ -327,7 +331,7 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
 
 * 如何解決：
 
-   * 執行遍歷儲存庫檢查；例如：
+   * 執行遍歷儲存庫檢查； 例如：
 
       [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
@@ -405,7 +409,7 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
 
 文字預擷取是從二進位檔擷取和處理文字的程式，直接透過隔離的程式從資料存放區擷取並處理文字，並直接將擷取的文字呈現在Oak索引的後續重新／索引中。
 
-* 建議使用Oak文本預抽取功能，在包含可抽取文本(如 PDF、Word檔案、PPT、TXT等)可透過部署的Oak索引取得全文搜尋；例如 `/oak:index/damAssetLucene`。
+* 建議使用Oak文本預抽取功能，在包含可抽取文本(如 PDF、Word檔案、PPT、TXT等) 可透過部署的Oak索引取得全文搜尋； 例如 `/oak:index/damAssetLucene`。
 * 文本預抽取只對Lucene索引和NOT Oak屬性索引的重新／索引有利，因為屬性索引不會從二進位檔擷取文字。
 * 當對大量文字的二進位檔（PDF、Doc、TXT等）進行全文重新索引時，文字預擷取會產生很大的正面影響，因為影像儲存庫不包含可擷取的文字，所以效率不相同。
 * 文字預擷取會以特別有效率的方式執行全文搜尋相關文字的擷取，並以特別有效率的方式讓它進入Oak重新／索引程式以便使用。
@@ -414,7 +418,7 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
 
 啟用二進位提取 **的現** 有lucene索引重新索引
 
-* 重新索引處理儲存 **庫中** 所有候選內容；當要從中擷取全文的二進位檔數眾多或複雜時，AEM會增加執行全文擷取的運算負擔。 文字預先擷取將文字擷取的「運算量大、成本高」移入可直接存取AEM資料存放區的隔離程式，以避免AEM中的開銷和資源爭用。
+* 重新索引處理儲存 **庫中** 所有候選內容； 當要從中擷取全文的二進位檔數眾多或複雜時，AEM會增加執行全文擷取的運算負擔。 文字預先擷取將文字擷取的「運算量大、成本高」移入可直接存取AEM資料存放區的隔離程式，以避免AEM中的開銷和資源爭用。
 
 支援在啟用二進位擷 **取的** AEM中部署新的lucene索引
 
@@ -433,7 +437,7 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
 * 您將重新索引執行全文二進位擷取的lucene索引，或部署新索引，將現有內容的全文索引二進位檔案
 * 要預先提取文本的內容（二進位檔案）必須位於儲存庫中
 * 用於生成CSV檔案並執行最終重新索引的維護窗口
-* Oak版本：1.0.18+、1.2.3+
+* Oak版本： 1.0.18+、1.2.3+
 * [oak-run.](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)jarversion 1.7.4+
 * 檔案系統資料夾／共用，以儲存可從索引AEM例項存取的擷取文字
 
@@ -457,7 +461,7 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
 
 1b. 節點清單(1a)以CSV檔案形式儲存到檔案系統
 
-請注意，每次執行時都會遍歷整個節點儲存區（如oak-run命令中的路徑所指定），並 `--generate` 且會建立 **新** CSV檔案。 CSV檔案不 **會在** 文字預擷取程式的離散執行之間重複使用（步驟1 - 2）。
+請注意，每次執行時都會遍歷整個節點儲存區（如oak-run命令中的路徑所指定）, `--generate` 並且會建立 **新** CSV檔案。 CSV檔案不 **會在** 文字預擷取程式的離散執行之間重複使用（步驟1 - 2）。
 
 **預先擷取文字至檔案系統**
 
@@ -469,7 +473,7 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
 
 2c.  提取的文本以Oak重新索引過程(3a)可接收的格式儲存在檔案系統上
 
-預先提取的文本在CSV中由二進位指紋標識。 如果二進位檔案相同，則可在AEM執行個體中使用相同的預先擷取文字。 由於AEM Publish通常是AEM Author的子集，因此從AEM Author預先擷取的文字通常也可以用來重新為AEM Publish建立索引（假設AEM Publish擁有擷取文字檔案的檔案系統存取權）。
+預先提取的文本在CSV中由二進位指紋標識。 如果二進位檔案相同，則可在AEM執行個體中使用相同的預先擷取文字。 由於AEM Publish通常是AEM Author的子集，因此從AEM Author預先擷取的文字通常也可用來重新為AEM Publish建立索引（假設AEM Publish具備擷取文字檔案的檔案系統存取權）。
 
 預先擷取的文字可逐漸新增至一段時間。 文字預擷取將略過先前擷取的二進位檔的擷取，因此最好保留預先擷取的文字，以免日後必須重新索引（假設擷取的內容不會過大）。 如果是，請評估在中間壓縮內容，因為文字會很好壓縮)。
 
@@ -479,5 +483,5 @@ Oak documentation for Lucene indexes列出設計索引時要考慮的幾項事�
 
 3a。 [在AEM中調用](#how-to-re-index) Lucene索引的重新索引
 
-3b. Apache Jackrabbit Oak dataStore PreExtractedTextProvider OSGi組態（設定為透過檔案系統路徑指向Extracted文字）會指示Oak從Extracted Files取得全文，並避免直接點擊和處理儲存在儲存庫中的資料。
+3b. Apache Jackrabbit Oak DataStore PreExtractedTextProvider OSGi組態（設定為透過檔案系統路徑指向Extracted文字）會指示Oak從Extracted Files取得全文，並避免直接點擊和處理儲存在儲存庫中的資料。
 
