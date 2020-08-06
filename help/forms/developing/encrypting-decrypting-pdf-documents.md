@@ -151,6 +151,7 @@ ht-degree: 0%
 
    * 包 `com.adobe.idp.Document` 含要使用密碼加密的PDF文檔的對象。
    * 包 `PasswordEncryptionOptionSpec` 含加密運行時選項的對象。
+
    此方 `encryptPDFUsingPassword` 法會傳回包 `com.adobe.idp.Document` 含密碼加密PDF檔案的物件。
 
 1. 將加密的PDF檔案儲存為PDF檔案。
@@ -215,6 +216,7 @@ ht-degree: 0%
 
    * 包 `BLOB` 含要使用密碼加密的PDF文檔的對象。
    * 包 `PasswordEncryptionOptionSpec` 含加密運行時選項的對象。
+
    此方 `encryptPDFUsingPassword` 法會傳回包 `BLOB` 含密碼加密PDF檔案的物件。
 
 1. 將加密的PDF檔案儲存為PDF檔案。
@@ -364,6 +366,7 @@ ht-degree: 0%
    * 包 `com.adobe.idp.Document` 含要加密的PDF文檔的對象。
    * 儲存 `java.util.List` 證書資訊的對象。
    * 包 `CertificateEncryptionOptionSpec` 含加密運行時選項的對象。
+
    此方 `encryptPDFUsingCertificates` 法會傳回包 `com.adobe.idp.Document` 含憑證加密PDF檔案的物件。
 
 1. 將加密的PDF檔案儲存為PDF檔案。
@@ -440,6 +443,7 @@ ht-degree: 0%
    * 包 `BLOB` 含要加密的PDF文檔的對象。
    * 儲存 `Object` 憑證資訊的陣列。
    * 包 `CertificateEncryptionOptionSpec` 含加密運行時選項的對象。
+
    此方 `encryptPDFUsingCertificates` 法會傳回包 `BLOB` 含憑證加密PDF檔案的物件。
 
 1. 將加密的PDF檔案儲存為PDF檔案。
@@ -543,6 +547,7 @@ ht-degree: 0%
 
    * 包 `com.adobe.idp.Document` 含加密PDF檔案的物件。
    * 一個字串值，它指定與用於加密PDf文檔的密鑰相對應的私鑰的別名。
+
    此方 `removePDFCertificateSecurity` 法會傳回包 `com.adobe.idp.Document` 含不安全PDF檔案的物件。
 
 1. 儲存PDF檔案。
@@ -599,6 +604,7 @@ ht-degree: 0%
 
    * 包含 `BLOB` 代表加密PDF檔案之檔案串流資料的物件。
    * 一個字串值，它指定與用於加密PDf文檔的私鑰相對應的公鑰的別名。
+
    此方 `removePDFCredentialSecurity` 法會傳回包 `BLOB` 含不安全PDF檔案的物件。
 
 1. 儲存PDF檔案。
@@ -696,6 +702,7 @@ ht-degree: 0%
 
    * 包 `com.adobe.idp.Document` 含加密PDF檔案的物件。
    * 一個字串值，它指定用於從PDF文檔中刪除加密的主密碼值。
+
    此方 `removePDFPasswordSecurity` 法會傳回包 `com.adobe.idp.Document` 含不安全PDF檔案的物件。
 
 1. 儲存PDF檔案。
@@ -746,6 +753,7 @@ ht-degree: 0%
 
    * 包含 `BLOB` 代表加密PDF檔案之檔案串流資料的物件。
    * 一個字串值，它指定用於從PDF文檔中刪除加密的口令值。 此值是在使用密碼加密PDF文檔時指定的。
+
    此方 `removePDFPasswordSecurity` 法會傳回包 `BLOB` 含不安全PDF檔案的物件。
 
 1. 儲存PDF檔案。
@@ -847,10 +855,12 @@ ht-degree: 0%
 
    * 包 `com.adobe.idp.Document` 含密碼加密PDF檔案的物件。
    * 一個字串值，它指定用於開啟密碼加密的PDF文檔的密碼值。 此值是在使用密碼加密PDF文檔時指定的。
+
    若要解除鎖定使用憑證加密的PDF檔案，請叫用 `unlockPDFUsingCredential` 方法並傳遞下列值：
 
    * 包 `com.adobe.idp.Document` 含憑證加密PDF檔案的物件。
    * 一個字串值，它指定與用於加密PDF文檔的私鑰相對應的公鑰的別名。
+
    這些 `unlockPDFUsingPassword` 和 `unlockPDFUsingCredential` 方法都會傳回您 `com.adobe.idp.Document` 傳遞至其他AEM Forms Java方法以執行作業的物件。
 
 1. 執行AEM Forms作業。
@@ -910,10 +920,12 @@ ht-degree: 0%
 
    * 包 `BLOB` 含密碼加密PDF檔案的物件。
    * 一個字串值，它指定用於開啟密碼加密的PDF文檔的密碼值。 此值是在使用密碼加密PDF文檔時指定的。
+
    若要解除鎖定使用憑證加密的PDF檔案，請叫用 `unlockPDFUsingCredential` 方法並傳遞下列值：
 
    * 包 `BLOB` 含憑證加密PDF檔案的物件。
    * 一個字串值，它指定與用於加密PDf文檔的私鑰相對應的公鑰的別名。
+
    這些 `unlockPDFUsingPassword` 和方 `unlockPDFUsingCredential` 法都會傳回您 `com.adobe.idp.Document` 傳遞至其他AEM Forms方法以執行作業的物件。
 
 1. 執行AEM Forms作業。
