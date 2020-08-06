@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
 translation-type: tm+mt
 source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
 
 * [建立實際關閉的用戶組並分配成員](#creating-the-user-group-to-be-used)。
 
-* [將此群組套用至所需頁面](#applying-your-closed-user-group-to-content-pages) ，並選取（或建立）登入頁面供CUG成員使用；也會在套用CUG至內容頁面時指定。
+* [將此群組套用至所需頁面](#applying-your-closed-user-group-to-content-pages) ，並選取（或建立）登入頁面供CUG成員使用； 也會在套用CUG至內容頁面時指定。
 
 * [建立連結，以某種形式連結至保護區內的至少一個頁面](#linking-to-the-realm)，否則將無法顯示。
 * [配置Dispatcher](#configure-dispatcher-for-cugs) （如果正在使用）。
@@ -50,8 +53,8 @@ source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
 
    ![screenshop_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. 按右上 **角的** 「建立」按鈕，以建立新群組。
-1. 命名新群組；例如， `cug_access`。
+1. 按右 **上角的** 「建立」按鈕，以建立新群組。
+1. 命名新群組； 例如， `cug_access`。
 
    ![screenshop_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
@@ -59,8 +62,8 @@ source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
 
    ![screenshop_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
-1. 啟動您指派給CUG的任何使用者；在本例中，所有成員 `cug_access`。
-1. 啟動關閉的使用者群組，以便在發佈環境中使用；在此示例中，為 `cug_access`。
+1. 啟動您指派給CUG的任何使用者； 在本例中，所有成員 `cug_access`。
+1. 啟動關閉的使用者群組，以便在發佈環境中使用； 在此示例中，為 `cug_access`。
 
 ## 將已關閉的使用者群組套用至內容頁面 {#applying-your-closed-user-group-to-content-pages}
 
@@ -87,7 +90,7 @@ source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
 
 1. 在以下窗口中查找並添加CUG —— 在本例中添加名為 **cug_access的組**。 最後，按「 **儲存」**。
 1. 按一 **下「啟用** 」以定義此頁面（及任何子頁面）屬於CUG。
-1. 指定 **群組成員** 將使用的登入頁面；例如：
+1. 指定 **群組成員** 將使用的登入頁面； 例如：
 
    `/content/geometrixx/en/toolbar/login.html`
 
@@ -109,9 +112,9 @@ source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
 
 如果您使用Dispatcher，則需要定義具有以下屬性的Dispatcher群：
 
-* [virtualhosts](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts):與CUG所套用之頁面的路徑相符。
-* \sessionmanagement:請參閱以下內容。
-* [快取](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache):專用於CUG所應用檔案的快取目錄。
+* [virtualhosts](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts): 與CUG所套用之頁面的路徑相符。
+* \sessionmanagement: 請參閱以下內容。
+* [快取](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache): 專用於CUG所應用檔案的快取目錄。
 
 ### 為CUG配置Dispatcher會話管理 {#configuring-dispatcher-session-management-for-cugs}
 
@@ -129,7 +132,7 @@ source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
 >當Dispatcher群啟用會話管理時，群處理的所有頁面都不會進行快取。 若要快取CUG以外的頁面，請在dispatcher.any中建立第二個群\
 >處理非CUG頁面。
 
-1. 通過定 [義配置／會話](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) 管理 `/directory`;例如：
+1. 通過定 [義配置／會話](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) 管理 `/directory`; 例如：
 
    ```xml
    /sessionmanagement
@@ -139,5 +142,5 @@ source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
      }
    ```
 
-1. 將 [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) 設定為 `0`。
+1. 將 [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) 設為 `0`。
 
