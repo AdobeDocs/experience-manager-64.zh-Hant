@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 translation-type: tm+mt
 source-git-commit: 39dc4bc0b52cf34519f0375acdf4c0b34510dbbf
+workflow-type: tm+mt
+source-wordcount: '2721'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +63,7 @@ source-git-commit: 39dc4bc0b52cf34519f0375acdf4c0b34510dbbf
 
 在作者模式中，每個個別頁面會個別呈現。 Angular不處理頁面間的路由選擇，ng-view也不用於載入包含頁面元件的部分模板。 而是透過標籤將頁面範本(template.jsp)的內容包含在伺服器 `cq:include` 端。
 
-此策略可讓作者具備功能（例如在段落系統中新增和編輯元件、Sidekick、設計模式等）函式而不進行修改。 依賴用戶端轉譯的頁面（例如應用程式的頁面）在AEM作者模式中無法正常執行。
+此策略可讓作者具備功能（例如在段落系統中新增和編輯元件、Sidekick、設計模式等） 函式而不進行修改。 依賴用戶端轉譯的頁面（例如應用程式的頁面）在AEM作者模式中無法正常執行。
 
 請注意，template.jsp include會包裝在包含指 `div` 令的元素中 `ng-controller` 。 這種結構使得DOM內容與控制器相連結。 因此，雖然在用戶端呈現的頁面會失敗，但個別元件仍能正常運作（請參閱下方「元件」一節）。
 
@@ -230,13 +233,13 @@ PhoneGap應用程式中任何指定資產的URI不僅會依平台而有所不同
 
 #### template.jsp {#template-jsp-1}
 
-template.jsp指令碼將呈現元件的標籤。 如果相關元件是由從AEM擷取的JSON資料所驅動(例如&#39;ng-text&#39;:/libs/mobileapps/components/angular/ng-text/template.jsp)，則此指令碼將負責將標籤與頁面控制器範圍所公開的資料連線。
+template.jsp指令碼將呈現元件的標籤。 如果相關元件是由從AEM擷取的JSON資料所驅動(例如&#39;ng-text&#39;: /libs/mobileapps/components/angular/ng-text/template.jsp)，則此指令碼將負責將標籤與頁面控制器範圍所公開的資料連線。
 
 不過，效能需求有時會要求不執行用戶端範本（亦即資料系結）。 在這種情況下，只需在伺服器端轉換元件的標籤，它就會包含在頁面範本內容中。
 
 #### opperise.jsp {#overhead-jsp}
 
-在由JSON資料驅動的元件中（例如&#39;ng-text&#39;）:/libs/mobileapps/components/angular/ng-text)，開銷。jsp可用於從template.jsp中刪除所有Java代碼。 然後從template.jsp參考此變數，而它在請求中公開的任何變數都可供使用。 此策略鼓勵將邏輯與表現分離，並限制從現有元件衍生新元件時必須複製和貼上的程式碼量。
+在由JSON資料驅動的元件中（例如&#39;ng-text&#39;）: /libs/mobileapps/components/angular/ng-text)，開銷。jsp可用於從template.jsp中刪除所有Java代碼。 然後從template.jsp參考此變數，而它在請求中公開的任何變數都可供使用。 此策略鼓勵將邏輯與表現分離，並限制從現有元件衍生新元件時必須複製和貼上的程式碼量。
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
@@ -311,7 +314,7 @@ www/
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-after-platform_add目錄包含該 `copy_AMS_Conifg.js` 檔案。 此指令碼會複製設定檔，以支援Adobe Mobile services分析的集合。
+after-platform_add目錄包含該 `copy_AMS_Conifg.js` 檔案。 此指令碼會複製設定檔，以支援Adobe Mobile Services分析的集合。
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
