@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 抓取並拖曳元件的大小調整控制代碼會自動顯示版面格線，以協助您調整大小。
 
-   ![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-101](assets/chlimage_1-181.png)
 
 ## 更多資訊 {#further-information}
 
