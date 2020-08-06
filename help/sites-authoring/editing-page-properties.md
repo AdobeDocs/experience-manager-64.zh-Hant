@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 8%
 
 ---
 
@@ -42,6 +45,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * 然後，新標籤會在右側顯示，並加上一個小星號，表示它是新標籤。
    * 透過下拉式功能，您可從現有標籤中選取。
    * 當您將滑鼠移至選取方塊中的標籤項目上時，會顯示x，可用來移除此頁面的標籤。
+
    如需標籤的詳細資訊，請參 [閱使用標籤](/help/sites-authoring/tags.md)。
 
 * **於導覽中隱藏**
@@ -84,7 +88,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    >[!CAUTION]
    >
-   >虛名URL:
+   >虛名 URL:
    >
    >* 必須是唯一的，因此您應該注意該值尚未被其他頁面使用。
    >* 不支援regex圖樣。
@@ -116,7 +120,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    >
    > 別名設定 `sling:alias` 屬性以定義資源的別名（這僅影響資源，而不影響路徑）。
    >
-   >例如：如果為節點節點定 `latin-lang` 義別名， `/content/we-retail/spanish` 則可通過 `/content/we-retail/latin-language`
+   >例如： 如果為節點節點定 `latin-lang` 義別名， `/content/we-retail/spanish` 則可通過 `/content/we-retail/latin-language`
    >
    >如需詳細資訊，請參 [閱「SEO和URL管理最佳實務」下的「本地化頁面名稱」](/help/managing/seo-and-url-management.md#localized-page-names)
 
@@ -190,6 +194,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * [新增權限](/help/sites-administering/user-group-ac-admin.md)
    * [編輯已關閉的使用者群組](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
    * 檢視有效 [權限](/help/sites-administering/user-group-ac-admin.md)
+
    >[!CAUTION]
    >
    >「權 **限** 」標籤允許根據混音的存在編輯CUG配 `granite:AuthenticationRequired` 置。 如果頁面權限是使用已過時的CUG設定來設定的，則會根據屬性的存在而顯示警告訊息，且CUG權限將不可編輯，也不會編輯「 `cq:cugEnabled` Advanced [](/help/sites-authoring/editing-page-properties.md#advanced) 」（進階）標籤上的「Authentication Requirement」（驗證要求）。
@@ -243,6 +248,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * [快速動作](/help/sites-authoring/basic-handling.md#quick-actions)
    * [選擇模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
    頁面屬性將使用適當的標籤顯示。
 
 1. 視需要檢視或編輯屬性。
@@ -314,6 +320,7 @@ After selecting the pages and then clicking or tapping the **Properties** option
 
       * 只有具有公用值的屬性才會顯示在「視圖」模式中。
       * 當欄位為多值（例如「標籤」）時，只有所有值都是共 *用* ，才會顯示值。 如果只有某些是常見的，則只有在編輯時才會顯示。
+
    當不存在具有公用值的屬性時，將顯示一條消息。
 
 * **編輯**
