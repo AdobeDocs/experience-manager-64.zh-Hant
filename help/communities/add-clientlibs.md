@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 1%
 
 ---
 
@@ -30,19 +33,19 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
    * 名稱: `clientlibs`
    * 類型: `cq:ClientLibraryFolder`
 
-1. 按一下「 **[!UICONTROL 確定」]**
+1. Click **[!UICONTROL OK]**
 
 ![chlimage_1-220](assets/chlimage_1-220.png)
 
 在新節 **[!UICONTROL 點的]** 「屬性」選 `clientlibs` 項卡中，輸入 **`categories`** 屬性：
 
-* 名稱：類 **[!UICONTROL 別]**
-* 類型：字 **[!UICONTROL 串]**
+* 名稱： **[!UICONTROL 類別]**
+* 類型： **[!UICONTROL 字串]**
 * 值： **[!UICONTROL apps.an-scf-sandbox]**
 * Click **[!UICONTROL Add]**
 * 按一下「 **[!UICONTROL 全部儲存」]**
 
-注意：使用「應用程式」來預設類別值。 是將「擁有的應用程式」識別為位於/apps資料夾而非/libs的慣例。  重要：新增預留位 `js.txt` 置和 `css.txt` 檔案。 （沒有cq:ClientLibraryFolder，它並非正式。）
+注意： 使用「應用程式」來預設類別值。 是將「擁有的應用程式」識別為位於/apps資料夾而非/libs的慣例。  重要： 新增預留位 `js.txt` 置和 `css.txt` 檔案。 （沒有cq:ClientLibraryFolder，它並非正式。）
 
 
 1. 按一下滑鼠右鍵 **`/etc/designs/an-scf-sandbox/clientlibs`**
@@ -79,7 +82,7 @@ css.txt和js.txt的第一行會識別從中可找到下列檔案清單的基本�
 
 **請注意** ，這可能是生產網站所需使用的方法，因為有考慮到每個頁面所下載的clientlib的便利性與大小／速度。
 
-如果只在單一頁面上使用一項功能，您可以直接在頁面上包含該功能的完整clientlib，例如&lt;% ui:includeClientLib類別=cq.social.hbs.forum&quot; %>
+如果僅在單一頁面上使用一項功能，您可以直接在頁面上包含該功能的完整clientlib，例如&lt;% ui:includeClientLib類別=cq.social.hbs.forum&quot; %>
 
 在本例中，我們將它們全部包括在內，因此，我們希望使用更基本的SCF客戶端libs，即作者clientlibs:
 
@@ -99,13 +102,13 @@ css.txt和js.txt的第一行會識別從中可找到下列檔案清單的基本�
    * **`cq.social.author.hbs.rating`**
    * **`cq.social.author.hbs.reviews`**
    * **`cq.social.author.hbs.voting`**
-   * 按一下「 **[!UICONTROL 確定」]**
+   * Click **[!UICONTROL OK]**
 
 * 按一下「 **[!UICONTROL 全部儲存」]**
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-這是現在 `/etc/designs/an-scf-sandbox/clientlibs` 在儲存庫中的顯示方式：
+這是現在 `/etc/designs/an-scf-sandbox/clientlibs` 在儲存庫中應該顯示的方式：
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
@@ -121,7 +124,7 @@ css.txt和js.txt的第一行會識別從中可找到下列檔案清單的基本�
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-包含語句屬於 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 的 <html> 指令碼. 預設值 **`foundation head.jsp`** 包含可重疊的指令碼： **`headlibs.jsp`**。
+包含語句屬於 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 的 <html> 指令碼. 預設值 **`foundation head.jsp`** 包含可重疊的指令碼： **`headlibs.jsp`**.
 
 **複製headlibs.jsp並包含clientlibs:**
 
@@ -167,21 +170,21 @@ css.txt和js.txt的第一行會識別從中可找到下列檔案清單的基本�
 
    * 封裝名稱: `an-scf-sandbox-minimal-pkg`
    * 版本: `0.1`
-   * 群組：&lt;leave as default>
-   * 按一下「 **[!UICONTROL 確定」]**
+   * 群組： &lt;leave as default>
+   * Click **[!UICONTROL OK]**
 
 * 按一下「 **[!UICONTROL 編輯」]**
 
    * 「選擇篩 **[!UICONTROL 選器]** 」頁籤
 
       * 按一下「 **[!UICONTROL 新增篩選」]**
-      * 根路徑：&lt;browse to `/apps/an-scf-sandbox`>
+      * 根路徑： &lt;browse to `/apps/an-scf-sandbox`>
       * 按一下「完 **[!UICONTROL 成」]**
       * 按一下「 **[!UICONTROL 新增篩選」]**
-      * 根路徑：&lt;browse to `/etc/designs/an-scf-sandbox`>
+      * 根路徑： &lt;browse to `/etc/designs/an-scf-sandbox`>
       * 按一下「完 **[!UICONTROL 成」]**
       * 按一下「 **[!UICONTROL 新增篩選」]**
-      * 根路徑：&lt;browse to `/content/an-scf-sandbox`>
+      * 根路徑： &lt;browse to `/content/an-scf-sandbox`>
       * 按一下「完 **[!UICONTROL 成」]**
    * Click **[!UICONTROL Save]**
 
