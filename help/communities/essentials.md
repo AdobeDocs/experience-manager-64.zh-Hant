@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '221'
+ht-degree: 17%
 
 ---
 
@@ -61,7 +64,7 @@ AEM Communities功能要求網站訪客成為會員並登入社 [群網站](over
 * [計分和徽章](configure-scoring.md)
 * [搜尋](search-implementation.md)
 * [社交圖](essentials-socialgraph.md)
-* [儲存資源提供商](srp-and-ugc.md)`(SRP)`
+* [儲存資源提供方](srp-and-ugc.md) `(SRP)`
 
 * [標記](tag.md)
 
@@ -74,7 +77,7 @@ AEM Communities功能要求網站訪客成為會員並登入社 [群網站](over
 
 ## 其他資訊 {#additional-information}
 
-* [社交元件架構(SCF)](scf.md)
+* [Social Component Framework(SCF)](scf.md)
 
    * [用戶端自訂](client-customize.md)
    * [伺服器端自訂](server-customize.md)
