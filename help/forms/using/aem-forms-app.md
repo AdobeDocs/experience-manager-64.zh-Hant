@@ -53,7 +53,7 @@ AEM Forms應用程式需要AEM Forms伺服器。 使用者可在AEM Forms中演�
 
 ### 獨立表單或AEM Forms應用程式與伺服器搭配使用，不含AEM Forms Workflow {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
 
-未使用AEM Forms Workflow的AEM Forms伺服器是OSGi上的AEM Forms，或是獨立行動表單或最適化表單。 AEM Forms應用程式可與您在 [OSGi上的AEM Forms實作搭](/help/sites-deploying/configuring-osgi.md)配使用。 您為AEM Forms應用程式啟用和發佈的表單，都可在您的應用程式中使用。
+未使用AEM Forms Workflow的AEM Forms伺服器是OSGi上的AEM Forms，或是獨立行動表單或最適化表單。 AEM Forms應用程式可與您的AEM Forms實作在 [OSGi上運作](/help/sites-deploying/configuring-osgi.md)。 您為AEM Forms應用程式啟用和發佈的表單，都可在您的應用程式中使用。
 
 表單會下載到您的應用程式中，並可離線使用。 例如，您經營的是一家銀行，而客戶填寫了您網站上的應用程式。 應用程式是可接受客戶資訊並儲存以供審核的調適性表單。 管理員會檢閱表單，並在AEM作者例項中建立驗證表單。 管理員可啟用表單與AEM Forms應用程式的同步，並發佈它。 如果驗證表單可在AEM Forms應用程式中使用，您的現場代理可以使用行動裝置來驗證客戶的詳細資訊。 行動裝置與伺服器同步，驗證表單會載入應用程式中。 您的現場工程師可以造訪客戶、驗證詳細資訊、將資料儲存為草稿，或提交驗證表單。 每當應用程式連線時，表單就會與伺服器同步。
 
