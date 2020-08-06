@@ -12,6 +12,9 @@ discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 19%
 
 ---
 
@@ -34,7 +37,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓啟動與來源中所做的變更保持最新)。
 
-您可以編輯標準即時副本的方式進行變更；例如：
+您可以編輯標準即時副本的方式進行變更； 例如：
 
 * 按一下已關閉的掛鎖將中斷此同步，並允許您在啟動中對內容進行新更新。 解鎖（開啟掛鎖）後，源分支中同一位置所做的任何更改將不會覆蓋您的更改。
 * **暫停** (和 **繼續**)特定頁面的繼承。
@@ -67,13 +70,14 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
    * [參考（Sites控制台）](/help/sites-authoring/launches.md#launches-in-references-sites-console) ，以顯示可用動作：
 
       * 選擇「 **編輯啟動**」。
+
    將顯示源頁面。
 
 1. 進行必要的變更，然後使用「儲存」 **確認**。
 
    >[!NOTE]
    >
-   >若要將頁面新增至啟動，頁面必須位於通用語言根目錄下；即在單一網站中。
+   >若要將頁面新增至啟動，頁面必須位於通用語言根目錄下； 即在單一網站中。
 
 ## 編輯啟動設定 {#editing-a-launch-configuration}
 
@@ -87,6 +91,7 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
    * [參考（Sites控制台）](/help/sites-authoring/launches.md#launches-in-references-sites-console) ，以顯示可用動作：
 
       * Select **Edit Properties**.
+
    將顯示詳細資訊。
 
 1. 進行必要的變更，然後使用「儲存」 **確認**。
