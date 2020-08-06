@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
 source-git-commit: 3db2abacf2161f8de715a2972bafacdad43563ef
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +30,7 @@ AEM平台使用節點儲存區，將網站內容從作者複製到發佈，而AE
 
 * [DSRP —— 關係資料庫儲存資源提供程式](dsrp.md)
 * [MSRP - MongoDB儲存資源提供程式](msrp.md)
-* [ASRP - adobe儲存資源供應商](asrp.md)
+* [ASRP - Adobe儲存資源供應商](asrp.md)
 
 另一個SRP選項 [JSRP - JCR儲存資源提供方](jsrp.md)，不支援作者的通用UGC儲存，也不支援將環境發佈到兩者訪問。
 
@@ -66,7 +69,7 @@ AEM平台使用節點儲存區，將網站內容從作者複製到發佈，而AE
 * [用戶同步](sync.md)
 * [管理使用者和使用者群組](users.md)
 
-### 建議：DSRP、MSRP或ASRP {#recommended-dsrp-msrp-or-asrp}
+### 建議： DSRP、MSRP或ASRP {#recommended-dsrp-msrp-or-asrp}
 
 | MicroKernel | 網站內容儲存庫 | 用戶生成的內容儲存庫 | 儲存資源提供方 | 通用商店 |
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
@@ -108,4 +111,4 @@ AEM平台使用節點儲存區，將網站內容從作者複製到發佈，而AE
 
 * [AEM 6.3中的儲存元素](../../help/sites-deploying/storage-elements-in-aem-6.md)
 
-   介紹兩個節點儲存實施：Tar和MongoDB。
+   介紹兩個節點儲存實施： Tar和MongoDB。
