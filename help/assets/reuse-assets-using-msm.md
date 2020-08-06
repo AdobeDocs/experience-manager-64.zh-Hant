@@ -107,7 +107,7 @@ MSM在來源資產與其即時副本之間維持即時關係，以便：
 
 若要檢查即時副本資產或資料夾的資訊和狀態，請遵循下列步驟。
 
-1. 選取即時副本資產或資料夾。 從工具 **[!UICONTROL 列按一下]** 「屬性」。 或者，使用鍵盤快速鍵 `p`。
+1. 選取即時副本資產或資料夾。 Click **[!UICONTROL Properties]** from the toolbar. 或者，使用鍵盤快速鍵 `p`。
 1. Click **[!UICONTROL Live Copy]**. 您可以檢查源的路徑、暫停狀態、同步狀態、上次轉出日期，以及上次轉出的用戶。
    ![即時副本資訊與狀態](assets/lc_folder_properties.png)
 1. 如果子資產借用即時副本設定，您可以啟用或停用。
@@ -117,7 +117,7 @@ MSM在來源資產與其即時副本之間維持即時關係，以便：
 
 AEM提供主控台，可檢查來源檔案夾所有即時副本的狀態。 此控制台顯示所有子資產的狀態。
 
-1. 選擇源資料夾。 從工具 **[!UICONTROL 列按一下]** 「屬性」。 或者，使用鍵盤快速鍵 `p`。
+1. 選擇源資料夾。 Click **[!UICONTROL Properties]** from the toolbar. 或者，使用鍵盤快速鍵 `p`。
 1. 按一下「 **[!UICONTROL 即時複製來源」]**。若要開啟主控台，請按一下「即 **[!UICONTROL 時複製概述」]**。此控制面板提供所有子資產的頂層狀態。
    ![在來源的即時副本控制台中檢視即時副本的狀態](assets/lc_statuses.png)
 1. 若要檢視即時副本檔案夾中每個資產的詳細資訊，請選取資產，然後從工具列按一 **[!UICONTROL 下「關係狀態]** 」。
@@ -165,8 +165,8 @@ Select the source asset or folder, open the left rail, and click **[!UICONTROL R
 
 您可以從來源資產啟動轉出動作，並更新全部或部分選擇的即時副本。
 
-1. 選取即時副本資產或資料夾。 從工具 **[!UICONTROL 列按一下]** 「屬性」。 或者，使用鍵盤快速鍵 `p`。
-1. 按一下「 **[!UICONTROL 即時複製來源」]**。從工具 **[!UICONTROL 列按一下]** 「轉出」。
+1. 選取即時副本資產或資料夾。 Click **[!UICONTROL Properties]** from the toolbar. 或者，使用鍵盤快速鍵 `p`。
+1. 按一下「 **[!UICONTROL 即時複製來源」]**。Click **[!UICONTROL Rollout]** from the toolbar.
 1. 選擇要更新的即時副本。 按一下 **[!UICONTROL 轉出]**。
 1. 若要推出子資產的更新，請選取「轉出來 **[!UICONTROL 源」和所有子資產]**。
    ![將原始碼的修改部分或全部即時副本](assets/lc_rollout_page.png)
@@ -223,7 +223,7 @@ Select the source asset or folder, open the left rail, and click **[!UICONTROL R
 
 您可以使用「分離」操作完全移除源和即時副本之間的關係。 即時副本分離後，即時副本會變成獨立的資產或資料夾。 在分離後立即在AEM介面中顯示為新資產。 要將即時副本從其源中分離，請執行以下步驟。
 
-1. 選取即時副本資產或資料夾。 從工具 **[!UICONTROL 列按一下]** 「屬性」。 或者，使用鍵盤快速鍵p。
+1. 選取即時副本資產或資料夾。 Click **[!UICONTROL Properties]** from the toolbar. 或者，使用鍵盤快速鍵p。
 1. Click **[!UICONTROL Live Copy]**. 按一下工 **[!UICONTROL 具欄中]** 「分離」。 從顯示 **[!UICONTROL 的對話框中]** ，按一下「分離」(Detach)。
    ![分離操作會完全刪除源副本和即時副本之間的關係](assets/lc_detach.png)
 
@@ -237,7 +237,7 @@ Alternatively, you can quickly detach multiple assets in a live copy folder from
 
 如果您在即時副本資料夾中有多個資產，則啟動每個資產的動作可能相當麻煩。 您可以從即時副本主控台，快速對許多資產啟動基本動作。 上述方法仍適用於個別資產。
 
-1. 選擇源資料夾。 從工具 **[!UICONTROL 列按一下]** 「屬性」。 或者，使用鍵盤快速鍵p。
+1. 選擇源資料夾。 Click **[!UICONTROL Properties]** from the toolbar. 或者，使用鍵盤快速鍵p。
 1. 按一下「 即時複製來源」。若要開啟主控台，請按一下「即 **[!UICONTROL 時複製概述」]**。
 1. 在此控制面板中，從即時複製資料夾選取即時複製資產。從工具列按一下所需的動作。The actions available are **[!UICONTROL Edit]**, **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**. 您可以快速對任意數量的即時副本資料夾中與選定來源資料夾處於即時關係的任何資產啟動這些操作。
    ![從即時副本概述主控台輕鬆更新即時副本資料夾中的許多資產](assets/lc_console_update_assets.png)
