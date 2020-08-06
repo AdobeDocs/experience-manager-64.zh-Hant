@@ -4,6 +4,9 @@ description: 瞭解AEM Assets如何部署伺服器端排序功能，以一次性
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '441'
+ht-degree: 3%
 
 ---
 
