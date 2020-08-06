@@ -90,7 +90,7 @@ Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援�
 
 使用Adobe Marketing Cloud的「報表套裝管 [理員」](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)，可以設定Analytics報表套裝，讓社群網站能夠提供社群功能的報表。
 
-透過使用公 [司名稱和使用者名稱登入Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html)[](analytics.md#prerequisites)，您就可以設定新的或現有的報表套裝：
+透過「公司名 [稱」和「使用者名稱」登入](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) Adobe Marketing Cloud [](analytics.md#prerequisites)，您可以設定新的或現有的報表套裝，以便：
 
 * [11轉換變數](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (evar)
 
@@ -404,7 +404,7 @@ Analytics會自動用於數個Communities功能。
 **eVar值的範例：**
 
 * [MIME類型](https://www.iana.org/assignments/media-types): video/mp4
-* [社群網站標題](sites-console.md#step13asitetemplate): Geometrixx Communities
+* [Community site title](sites-console.md#step13asitetemplate): Geometrixx Communities
 * [社群函式名稱](functions.md): 論壇
 * [社群群組名稱](creating-groups.md#creating-a-new-group): 遠足
 * 社群群組內容的路徑： /content/sites/communities/tw/groups/hiking
@@ -468,23 +468,23 @@ Analytics會自動用於數個Communities功能。
 
 當選擇的部署是發 [布場](topologies.md#tarmk-publish-farm)，則必須將一個AEM發佈例項識別為主要發佈者，以輪詢Adobe Analytics，以便將報表資料寫入 [SRP](working-with-srp.md)。
 
-依預設， `AEM Communities Publisher Configuration` OSGi設定會將其發佈例項識別為主要發佈者，如此發佈群中的所有發佈例項都會自行識別為主要發佈者。
+By default, the `AEM Communities Publisher Configuration` OSGi configuration identifies its publish instance as the primary publisher, such that all publish instances in a publish farm would self-identify as the primary.
 
 因此，必須編輯所有次要發佈例項上的設定，以取消勾選「主要發佈者」核 **取方塊** 。
 
-有關具體說明，請參閱「部署社群」的主要發 [布者部分](deploy-communities.md#primary-publisher)。
+For specific instructions, see the primary publisher section of [Deploying Communities](deploy-communities.md#primary-publisher).
 
 >[!CAUTION]
 >
->請務必設定主要發佈者，以防止從多個發佈例項進行輪詢。
+>It is important that the primary publisher be configured to prevent polling from multiple publish instances.
 
-### 複製加密密鑰 {#replicate-the-crypto-key}
+### Replicate the Crypto Key {#replicate-the-crypto-key}
 
-Adobe Analytics認證會加密。 若要協助作者和發佈者之間複製或傳輸加密的分析憑證，所有AEM例項都必須共用相同的主要加密金鑰。
+Adobe Analytics認證會加密。 To faciitate the replication or transmission of encrypted analytics credentials between author and publishers, all AEM instances must share the same primary encryption key.
 
-要執行此操作，請按照複製加密密 [鑰中的說明操作](deploy-communities.md#replicate-the-crypto-key)。
+To do so, follow the instructions at [Replicate the Crypto Key](deploy-communities.md#replicate-the-crypto-key).
 
-### 發佈社群網站和Analytics Cloud服務 {#publish-community-site-and-analytics-cloud-service}
+### Publish Community Site and Analytics Cloud Service {#publish-community-site-and-analytics-cloud-service}
 
 在社群網站啟用Analytics雲端服務後，並視需要調整Analytics與 [AEM變數的對應](#mapped-analytics-to-aem-variables)，就必須透過 [（重新）發佈社群網站，將設定複製至發佈環境](sites-console.md#publishing-the-site)。
 
@@ -524,21 +524,21 @@ Adobe Analytics認證會加密。 若要協助作者和發佈者之間複製或�
 
    * 例如， [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-* 在語 `jcr:content` 言根節點下
+* Under the `jcr:content` node of the language root
 
    * 例如， `/content/sites/engage/en/jcr:content`
 
-* 導覽至為Analytics報表設定的元件
+* Navigate to the component configured for Analytics reporting
 
    * 例如， `analytics/reportConfigs/social_forum_components_hbs_topic`
 
-* 注意建立的時段
+* Notice the time periods created
 
    * `last30Days`
    * `last90Days`
    * `thisYear`
 
-* 注意節 `total`點
+* Notice the `total`node
 
    * 修改屬 `interval` 性將覆寫「報表匯入工具」間隔
    * 值以秒為單位，並設為4小時（14400秒）
@@ -547,11 +547,11 @@ Adobe Analytics認證會加密。 若要協助作者和發佈者之間複製或�
 
 ## 在Analytics中管理使用者資料 {#manage-user-data-in-analytics}
 
-Adobe Analytics提供可讓您存取、匯出和刪除使用者資料的API。 如需詳細資訊，請參 [閱提交存取權和刪除請求](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)。
+Adobe Analytics provides APIs that allow you to access, export, and delete user data. 如需詳細資訊，請參 [閱提交存取權和刪除請求](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)。
 
 ## 資源 {#resources}
 
-* Adobe Marketing Cloud: [Analytics說明與參考](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
+* Adobe Marketing Cloud: [Analytics Help and Reference](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
-* AEM: [Analytics與外部提供者](../../help/sites-administering/external-providers.md)
+* AEM: [Analytics with External Providers](../../help/sites-administering/external-providers.md)
 
