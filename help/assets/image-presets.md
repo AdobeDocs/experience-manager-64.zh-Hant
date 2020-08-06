@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '328'
+ht-degree: 9%
 
 ---
 
@@ -47,6 +50,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    * 選取動態轉譯以預覽影像預設集。
    * Tap **[!UICONTROL URL]**, **[!UICONTROL Embed]**, or **[!UICONTROL RESS]** to display the pop-up.
+
    >[!NOTE]
    >
    >如果資產和 *影像預設集尚未發佈* ，則 **[!UICONTROL URL按鈕(或]** URL **[!UICONTROL 和]****** RESS按鈕 (如果適用) 不可用。
