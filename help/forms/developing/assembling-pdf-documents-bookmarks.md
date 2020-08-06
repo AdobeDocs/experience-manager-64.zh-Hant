@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
 source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
+workflow-type: tm+mt
+source-wordcount: '2526'
+ht-degree: 0%
 
 ---
 
@@ -147,7 +150,7 @@ source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
 
 **將PDF檔案和書籤XML檔案新增至Map系列**
 
-您必須同時新增書籤的PDF檔案和書籤XML檔案至Map集合。 因此，Map收集物件包含兩個元素：PDF檔案與書籤XML檔案。
+您必須同時新增書籤的PDF檔案和書籤XML檔案至Map集合。 因此，Map收集物件包含兩個元素： PDF檔案與書籤XML檔案。
 
 **設定執行時期選項**
 
@@ -222,6 +225,7 @@ source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
    * 表 `com.adobe.idp.Document` 示要使用的DDX文檔的對象
    * 包 `java.util.Map` 含輸入PDF檔案和書籤XML檔案的物件。
    * 指定 `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 運行時選項（包括預設字型和作業日誌級別）的對象
+
    該方 `invokeDDX` 法返回 `com.adobe.livecycle.assembler.client.AssemblerResult` 一個對象，該對象包含作業結果和所發生的任何異常。
 
 1. 儲存包含書籤的PDF檔案。
@@ -234,7 +238,7 @@ source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API將PDF檔案與書籤組合](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API將PDF檔案與書籤組合](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -242,11 +246,11 @@ source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
 
 ## 使用Web服務API，以書籤組合PDF檔案 {#assemble-pdf-documents-with-bookmarks-using-the-web-service-api}
 
-使用Assembler Service API(web service)，使用書籤來組合PDF檔案：
+使用Assembler Service API(web service)，使用書籤組合PDF檔案：
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -309,6 +313,7 @@ source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
    * 代 `BLOB` 表DDX文檔的對象
    * 包含 `MyMapOf_xsd_string_To_xsd_anyType` 輸入文檔的陣列
    * 指定 `AssemblerOptionSpec` 運行時選項的對象
+
    該方 `invokeDDX` 法返回 `AssemblerResult` 一個對象，該對象包含作業的結果和可能發生的任何例外。
 
 1. 儲存包含書籤的PDF檔案。
