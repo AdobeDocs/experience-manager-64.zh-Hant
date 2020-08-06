@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 9%
 
 ---
 
@@ -30,6 +33,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
    * 選擇「 [查看屬性」以開啟對話框](managing-assets-touch-ui.md#editing-properties)。 開啟供檢視後，您也可以編輯。
    * 開啟「編 [輯」的內容片段](content-fragments-managing.md#opening-the-fragment-editor)，然後從側 **[!UICONTROL 面面板選取「中繼資料]** 」。
+
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
 1. 「基 **[!UICONTROL 本]** 」標籤提供您可檢視或編輯的選項：
@@ -39,5 +43,6 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
    * **說明**
    * **標記**
    * 已建立（僅顯示）
+
    ![cfm-6420-07](assets/cfm-6420-07.png)
 
