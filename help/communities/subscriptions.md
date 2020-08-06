@@ -1,8 +1,8 @@
 ---
 title: 社群訂閱
 seo-title: 社群訂閱
-description: '社群成員透過電子郵件與其他成員互動 '
-seo-description: '社群成員透過電子郵件與其他成員互動 '
+description: 'Community members interact with other members through email '
+seo-description: 'Community members interact with other members through email '
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -19,35 +22,35 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ## 概覽 {#overview}
 
-自Communities [FP1起](deploy-communities.md#latestfeaturepack)，社群成員可以使用稱為訂閱的功能，透過電子郵件與社群互動。
+As of Communities [FP1](deploy-communities.md#latestfeaturepack), community members may interact with the community through email using a feature referrred to as subscriptions.
 
-訂閱與通知類 [似](notifications.md) ，因為會員在關注部落格文章、論壇主題或QnA問題時可能會訂閱。
+Subscriptions are similar to [notifications](notifications.md) as members may subscribe when following blog articles, forum topics or QnA questions.
 
-訂閱與通知的區別在於：
+What distinguishes subscriptions from notifications is:
 
 * 當追隨其他成員時，成員不得訂閱
 * 成員唯一要執行的操作是選擇以 `Email Subscriptions` 下操作
-* 當設定電子郵件回覆時，會員只要回覆收到的電子郵件，就可以有效地張貼內容
+* 設定電子郵件回覆時，會員只要回覆收到的電子郵件，就可以有效地張貼內容
 
 ### 需求 {#requirements}
 
 **設定電子郵件**
 
-必須設定電子郵件，才能讓訂閱發揮功能，讓成員以電子郵件回覆。
+Email must be configured in order for subscriptions to be functional and for members to reply by email.
 
 如需設定電子郵件的指示，請參閱 [設定電子郵件](email.md)。
 
-**啟用訂閱並追蹤**
+**Enable Subscriptions and Follow**
 
-必須設定元件，才能啟用訂閱 *和* 遵循。 允許訂閱的功能 [包括部落格](blog-feature.md)、 [論壇](forum.md)[和](working-with-qna.md)QnA。
+Components must be configured to enable subscriptions *and* following. Features that allow subscriptions are [blog](blog-feature.md), [forum](forum.md) and [QnA](working-with-qna.md).
 
-## 下列訂閱 {#subscriptions-from-following}
+## Subscriptions from Following {#subscriptions-from-following}
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
-「跟 **蹤** 」按鈕提供了一種方法，可以跟蹤條目作為活動、訂閱和／或通知。 每次選取「 **跟隨** 」按鈕時，都可以開啟或關閉選取範圍。
+The **Follow** button provides a means to follow entries as activities, subscriptions and/or notifications. Each time the **Follow** button is selected, it is possible to toggle on or off a selection.
 
-如果選取任何下列方法，按鈕的文字會變更為「下 **列」**。 為方便起見，您可以選取以 `Unfollow All` 關閉所有方法。
+If any method of following is selected, the text of the button changes to **Following**. For convenience, it is possible to select `Unfollow All` to toggle off all methods.
 
 只有在 **將論壇、QnA或部**`Email Subscriptions` 落格設定為啟用電子郵件訂閱時，「關注」按鈕才會包含此選項。 此按鈕將會出現
 
@@ -55,19 +58,19 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
    * 會針對該功能下的所有活動傳送電子郵件
 
-* 針對特定項目，例如論壇主題、QnA問題或部落格文章
+* For a specific entry, such as a forum topic, QnA question, or blog article
 
-   * 當該特定項目有活動時，將會傳送電子郵件
+   * Will send an email when there is activity for that specific entry
 
-## 電子郵件回覆 {#reply-by-email}
+## Reply by Email {#reply-by-email}
 
 當電子郵件設 [定為以電子郵件回覆](email.md#configure-polling-importer)，訂閱的會員將會收到電子郵件，內含已張貼的內容和線上內容的連結。
 
-如果回覆電子郵件，則回覆中輸入的內容會顯示為線上內容。
+If they reply to the email, the content they enter in the reply will appear as content online.
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-回覆張貼的時間量由輪詢匯入工具的更 [新間隔控制](email.md#configure-polling-importer)。
+The amount of time it takes for a reply to be posted is controlled by the [polling importer&#39;s update interval](email.md#configure-polling-importer).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
