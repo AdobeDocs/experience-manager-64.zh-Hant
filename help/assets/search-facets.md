@@ -4,6 +4,9 @@ description: 本文說明如何在AEM中建立、修改和使用搜尋Facet。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+workflow-type: tm+mt
+source-wordcount: '2537'
+ht-degree: 21%
 
 ---
 
@@ -81,7 +84,7 @@ Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有�
 
 「選項」謂語可讓您在「篩選」面板中新增多個搜尋選項。 您可以在「篩選」面板中選取一或多個這些選項，以搜尋資產。 例如，若要根據檔案類型來搜尋資產，請設定選項，例如搜尋表單中的影像、多媒體、檔案和封存。 設定這些選項後，當您在「濾鏡」面板中選取「影像」選項時，會對GIF、JPEG、PNG等類型的資產執行搜尋。
 
-要將選項映射到相應屬性，請為選項建立節點結構，並在Options謂語的Property Name屬性中提供父節點的路徑。 父節點應為以下類型 `sling`: `OrderedFolder`。 選項應為類型 `nt:unstructured`。 選項節點應具有屬性並 `jcr:title` 進行 `value` 配置。
+要將選項映射到相應屬性，請為選項建立節點結構，並在Options謂語的Property Name屬性中提供父節點的路徑。 父節點應為以下類型 `sling`: `OrderedFolder`. 選項應為類型 `nt:unstructured`。 選項節點應具有屬性並 `jcr:title` 進行 `value` 配置。
 
 屬 `jcr:title` 性是顯示在「濾鏡」面板上的選項的用戶友好名稱。 該 `value` 欄位用於查詢以匹配指定的屬性。
 
@@ -136,7 +139,7 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 「多值屬性」述詞可讓您搜尋資產以尋找多個值。 假設您在AEM Assets中擁有多個產品的影像，且每個影像的中繼資料包含與產品相關聯的SKU編號，這是您的案例。 您可以使用此謂語，根據多個SKU編號搜尋產品影像。
 
 1. 按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >一 **[!UICONTROL 般]** > **[!UICONTROL 搜尋表格]**」。
-1. 在「搜尋表單」頁面上，選取「 **[!UICONTROL 資產管理搜尋邊欄]**」，然後點選「 **編輯**![Aemsets_edit](assets/aemassets_edit.png)」。
+1. 在「搜尋表單」頁面上，選取「 **[!UICONTROL 資產管理搜尋邊欄]**」，點選「 **編輯**![Aemsets_edit](assets/aemassets_edit.png)」。
 1. 在「編輯搜索表單」頁中，將「 **[!UICONTROL Multi Value Property Predicate]** 」從「 **[!UICONTROL Select Predicate]** 」頁籤拖動到主窗格。
 1. In the **[!UICONTROL Settings]** tab, enter a label and placeholder text for the predicate. Specify the property name based on which the search is to be performed in the property field, for example `jcr:content/metadata/dc:value`. 也可以使用選擇對話框選擇節點。
 1. 請確定已 **[!UICONTROL 選取「分隔字元]** 」支援。在「輸入 **[!UICONTROL 分隔字元]** 」欄位中，指定分隔字元以分隔個別值。依預設，逗號會指定為分隔字元。您可以指定不同的分隔字元。
@@ -183,9 +186,9 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 | [!UICONTROL 範圍] | 搜尋謂詞以搜尋位於指定範圍內的資產。 在「搜尋」面板中，您可以指定範圍的最小值和最大值。 | <ul><li>標籤</li><li>屬性名稱</li><li>說明</li></ul> |
 | [!UICONTROL 日期範圍] | 搜尋謂詞，以搜尋在指定範圍內建立的日期屬性資產。 在「搜尋」面板中，您可以使用日期選擇器指定「開始和結束日期」。 | <ul><li>標籤</li><li>預留位置</li><li>屬性名稱</li><li>範圍文字（自）</li><li>範圍文字（至）</li><li>說明</li></ul> |
 | [!UICONTROL 日期] | 根據日期屬性搜尋資產的滑桿式搜尋謂詞。 | <ul><li>標籤</li><li>屬性名稱</li><li>說明</li></ul> |
-| [!UICONTROL 檔案大小] | 搜尋謂詞以根據資產大小搜尋資產。 它是基於Silder的謂語，您可在其中從可配置節點中選擇Slider選項。 預設選項定義在CRX儲存庫的/libs/dam/options/predicates/filesize中。 檔案大小以位元組為單位。 | <ul><li>標籤</li><li>屬性名稱</li><li>路徑</li><li>說明</li></ul> |
+| [!UICONTROL 檔案大小] | 搜尋謂詞以根據資產大小搜尋資產。 它是基於Silder的謂語，您可在其中從可配置節點中選擇Slider選項。 預設選項在CRX儲存庫的/libs/dam/options/predicates/filesize中定義。 檔案大小以位元組為單位。 | <ul><li>標籤</li><li>屬性名稱</li><li>路徑</li><li>說明</li></ul> |
 | [!UICONTROL 上次修改的資產] | 搜尋謂詞以搜尋最近修改的資產 | <ul><li>屬性名稱</li><li>屬性值</li><li>說明</li></ul> |
-| [!UICONTROL 發佈狀態] | 搜尋謂詞以根據資產的發佈狀態搜尋資產 | <ul><li>標籤</li><li>屬性名稱</li><li>說明</li></ul> |
+| [!UICONTROL Publish Status] | 搜尋謂詞以根據資產的發佈狀態搜尋資產 | <ul><li>標籤</li><li>屬性名稱</li><li>說明</li></ul> |
 | [!UICONTROL 評等] | 根據資產的平均分級來搜尋資產的搜尋謂語 | <ul><li>標籤</li><li>屬性名稱</li><li>選項路徑</li><li>說明</li></ul> |
 | [!UICONTROL 到期狀態] | 搜尋謂詞以根據資產的到期狀態搜尋資產 | <ul><li>標籤</li><li>屬性名稱</li><li>說明</li></ul> |
 | [!UICONTROL 隱藏] | 定義隱藏欄位屬性以搜尋資產的搜尋謂詞 | <ul><li>屬性名稱</li><li>屬性值</li><li>說明</li></ul> |
