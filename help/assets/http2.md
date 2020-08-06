@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 0%
 
 ---
 
@@ -50,11 +53,11 @@ Adobe自己的測試產生了下列結果：
 
    如果您已有專屬網域，則可透過技術支援選擇加入。
 
-   如果您沒有專用網域，Adobe將會在2018年安排您的HTTP/2轉換。
+   如果您沒有專屬網域，Adobe將會在2018年安排您的HTTP/2轉換。
 
 ## 為我的動態媒體帳戶啟用HTTP/2的程式為何？ {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
-您必須啟動切換至HTTP/2的請求；它不會自動為您完成。
+您必須啟動切換至HTTP/2的請求； 它不會自動為您完成。
 
 1. 啟動技術支援要求以切換至HTTP2。 請參閱 [存取AEM支援入口網站](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)。
 
@@ -71,7 +74,7 @@ Adobe自己的測試產生了下列結果：
 
       由於瀏覽器未說明此情況，因此必須下載擴充功能。
 
-      對於Firefox和Chrome，有一個副檔名稱為「HTTP/2和SPDY Indicator」。 瀏覽器僅安全支援http/2，因此必須使用https呼叫URL以進行驗證。 如果支援http/2，則以藍色Flash符號形式的擴充功能來指出，並加上標題&quot;X-Firefox-Spdy&quot;:&quot;h2&quot;。
+      對於Firefox和Chrome，有一個副檔名稱為「HTTP/2和SPDY Indicator」。 瀏覽器僅安全支援http/2，因此必須使用https呼叫URL以進行驗證。 如果支援http/2，則以藍色Flash符號形式的擴充功能來指出，並加上標題&quot;X-Firefox-Spdy&quot;: &quot;h2&quot;。
 
 
 ## 我何時可以轉換為HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
@@ -92,4 +95,4 @@ Adobe自己的測試產生了下列結果：
 
 由於瀏覽器未說明此情況，因此必須下載擴充功能。
 
-對於Firefox和Chrome，有一個副檔名稱為「HTTP/2和SPDY Indicator」。 瀏覽器僅安全支援http/2，因此必須使用https呼叫URL以進行驗證。 如果支援http/2，則以藍色Flash符號形式的擴充功能來指出，並加上標題&quot;X-Firefox-Spdy&quot;:&quot;h2&quot;。
+對於Firefox和Chrome，有一個副檔名稱為「HTTP/2和SPDY Indicator」。 瀏覽器僅安全支援http/2，因此必須使用https呼叫URL以進行驗證。 如果支援http/2，則以藍色Flash符號形式的擴充功能來指出，並加上標題&quot;X-Firefox-Spdy&quot;: &quot;h2&quot;。
