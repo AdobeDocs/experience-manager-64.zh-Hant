@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e7a8481-b8cd-4f2b-b9d2-7a8132f1d3f6
 translation-type: tm+mt
 source-git-commit: 75c765bf8d8cd5cd06f5eb882f5ca72a2ec8f484
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Adobe Experience Manager Forms檔案安全性可確保只有授權使用者才�
 
 您可以使用原則來保護檔案。 您在原則中指定的機密設定會決定收件者如何使用您套用原則的檔案。 例如，您可以指定收件者是否可以列印或複製文字、編輯文字，或在受保護的檔案中新增簽名和留言。
 
-這些原則會儲存在Document Security伺服器上；您可以透過用戶端應用程式將原則套用至檔案。 將原則套用至檔案時，原則中指定的機密設定會保護檔案所包含的資訊。 您可以將受原則保護的檔案分發給受原則授權的收件者。
+這些原則會儲存在Document Security伺服器上； 您可以透過用戶端應用程式將原則套用至檔案。 將原則套用至檔案時，原則中指定的機密設定會保護檔案所包含的資訊。 您可以將受原則保護的檔案分發給受原則授權的收件者。
 
 下圖顯示AEM Forms Document Security的典型架構：
 
@@ -53,7 +56,7 @@ AEM Forms Document Security提供多種工具來套用安全性原則。 您可�
 
    您可以從 [Adobe網站購買及下載Adobe Acrobat](https://acrobat.adobe.com/us/en/free-trial-download.html)。 Adobe Acrobat文章 [設定PDF的安全性政策](https://helpx.adobe.com/acrobat/using/setting-security-policies-pdfs.html) ，提供在Adobe Acrobat中建立和套用原則的詳細資訊。
 
-* **Document Security Extension for Microsoft Office**:您可以使用Document Security Extension for Microsoft Office，從Microsoft Office程式將預先定義的原則套用至Microsoft Office檔案。 此擴充功能可確保只有經過授權的人員才能使用受原則保護的Microsoft Word、Excel和PowerPoint檔案。 只有已安裝外掛程式的授權使用者才能使用受原則保護的檔案。
+* **Document Security Extension for Microsoft Office**: 您可以使用Document Security Extension for Microsoft Office，從Microsoft Office程式將預先定義的原則套用至Microsoft Office檔案。 此擴充功能可確保只有經過授權的人員才能使用受原則保護的Microsoft Word、Excel和PowerPoint檔案。 只有已安裝外掛程式的授權使用者才能使用受原則保護的檔案。
 
    Document Security擴充功能是以Microsoft Office外掛程式提供。 您可從 [Adobe網站下載擴充功能](https://helpx.adobe.com/aem-forms/aem-document-security/download-installer.html)。 稍後，您可以造訪 [Document Security Extension for Microsoft Office](https://helpx.adobe.com/aem-forms/aem-document-security/aem-document-security-extension-help.html) ，以瞭解如何安裝、設定和使用擴充功能。
 
