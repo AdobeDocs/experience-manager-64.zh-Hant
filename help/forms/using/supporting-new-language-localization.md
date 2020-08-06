@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 translation-type: tm+mt
 source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
+workflow-type: tm+mt
+source-wordcount: '721'
+ht-degree: 0%
 
 ---
 
@@ -80,7 +83,7 @@ I18N.js
 
 ### 為地區設定新增最適化表單用戶端程式庫 {#add-adaptive-form-client-library-for-a-locale-br}
 
-在下建立類型 `cq:ClientLibraryFolder` 的節 `etc/<folderHierarchy>`點，其類別為 `guides.I18N.<locale>` ，從屬關係為， `xfaforms.3rdparty`和 `xfaforms.I18N.<locale>``guide.common`。&quot;
+在下建立類型 `cq:ClientLibraryFolder` 的節 `etc/<folderHierarchy>`點，其類別為 `guides.I18N.<locale>` ，從屬關係為， `xfaforms.3rdparty`和 `xfaforms.I18N.<locale>``guide.common`。 &quot;
 
 將下列檔案新增至用戶端程式庫：
 
