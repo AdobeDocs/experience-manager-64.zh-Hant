@@ -32,6 +32,7 @@ ht-degree: 4%
 >
 >* 請參 [閱「設定動態媒體——混合模式」中的設定動態媒體雲端服務。](/help/assets/config-dynamic.md)
 >* 請參 [閱設定動態媒體- Scene7模式](config-dms7.md)[和疑難排解動態媒體- Scene7模式](troubleshoot-dms7.md)
+
 >
 
 
@@ -163,7 +164,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 
 請參閱 [動態視訊播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)。
 
-另請參 [閱Adobe Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 中的「關於HTML5檢視器」。
+另請參 [閱Adobe Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 中的關於HTML5檢視器。
 
 ## 最佳實務： 使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
@@ -784,6 +785,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
    >* Apache Sling Job Queue Configuration
    >* Adobe Granite Workflow External Process Job Handler
    >* Granite工作流程逾時佇列
+
    > 
    >您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
 
@@ -816,6 +818,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
    >* Apache Sling Job Queue Configuration
    >* Adobe Granite Workflow External Process Job Handler
    >* Granite工作流程逾時佇列
+
    >
    >您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
 
@@ -847,6 +850,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
    * **[!UICONTROL 發佈開始]**
    * **[!UICONTROL 發佈失敗]**
    * **[!UICONTROL 發佈完成]**，其中包含有關頻道和URL的資訊
+
    清除核取方塊表示您不會從YouTube發佈工作流程收到指定的電子郵件通知。
 
    >[!NOTE]
