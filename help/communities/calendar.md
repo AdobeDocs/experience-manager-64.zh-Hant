@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1170'
+ht-degree: 5%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## 簡介 {#introduction}
 
-日曆功能支援以日曆格式為所有網站訪客或僅登入網站訪客（社群成員）提供社群事件資訊，而只有授權的成員可新增事件。
+日曆功能支援以日曆格式為所有網站訪客或僅登入網站訪客（社群成員）提供社群事件資訊，而只有授權成員可新增事件。
 
-本節說明：
+本檔案章節說明：
 
 * 新增日曆功能至AEM網站
 * 元件的配置設 `Calendar`置
@@ -84,7 +87,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * **[!UICONTROL 允許的檔案類型]**
 
-   僅在勾選時 `Allow File Uploads` 相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
+   僅在勾選時 `Allow File Uploads` 相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
 
 * **[!UICONTROL 附加影像檔案最大大小]**
 
@@ -116,7 +119,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * **[!UICONTROL 允許主要內容]**
 
-   若勾選，此構想即可識別為特 [色內容](featured.md)。 預設為未勾選。
+   如果勾選，此構想就可識別為特 [色內容](featured.md)。 預設為未勾選。
 
 在「使用 **[!UICONTROL 者協調]** 」標籤下，指定如何管理已張貼的主題和回覆（使用者產生的內容）。 如需詳細資訊，請參閱 [協調使用者產生的內容](moderate-ugc.md)。
 
@@ -128,7 +131,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * **[!UICONTROL 關閉 / 重新開啟事件]**
 
-   如果勾選，受信任的成員協調者可關閉事件以進一步編輯和留言，也可重新開啟事件。 已勾選預設值。
+   如果勾選，受信任的成員協調者可以關閉事件以進一步編輯和留言，也可以重新開啟事件。 已勾選預設值。
 
 * **[!UICONTROL 標籤貼文]**
 
@@ -140,7 +143,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * **[!UICONTROL 自訂標幟原因]**
 
-   如果勾選，允許成員輸入自己為標籤事件或留言的原因，將其標籤為不適當。 預設為未勾選。
+   如果勾選，允許成員輸入自己為標籤事件或留言的理由，以示不適當。 預設為未勾選。
 
 * **[!UICONTROL 協調臨界值]**
 
@@ -210,7 +213,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## 其他資訊 {#additional-information}
 
-如需詳細資訊，請參閱開發人 [員的Calendar Essentials](calendar-basics-for-developers.md) （行事歷）頁面。
+如需詳細資訊，請參閱開發人員 [的「行事歷](calendar-basics-for-developers.md) 」頁面。
 
 如需日曆事件和留言的協調，請參閱協 [調使用者產生的內容](moderate-ugc.md)。
 
