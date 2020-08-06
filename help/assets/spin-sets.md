@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1839'
+ht-degree: 6%
 
 ---
 
@@ -29,7 +32,7 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 >
 >如需「資產」使用者介面的詳細資訊，請參 [閱「使用Touch UI管理資產」](managing-assets-touch-ui.md)。
 
-## 快速入門：回轉集 {#quick-start-spin-sets}
+## 快速入門： 回轉集 {#quick-start-spin-sets}
 
 若要快速啟動並執行回轉集，請遵循下列工作流程：
 
@@ -89,9 +92,9 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 以下是回轉集影像的一些最佳實務。 一般而言，旋轉集中的影像越多，影像旋轉效果就越好。 不過，在集合中加入許多影像也會增加影像載入所花的時間。 AEM建議拍攝影像的下列准則，以用於回轉集：
 
 * 至少，在一維回轉集中使用8-12張影像，在二維回轉集中使用16-24張影像。 至少需要8張影像才能旋轉360度。 一維回轉集比較常見，因為建立二維回轉集耗費大量人力。
-* 使用無損格式；建議使用TIFF和PNG。
+* 使用無損格式； 建議使用TIFF和PNG。
 * 遮色所有影像，讓項目出現在純白色或其他高對比背景上。 （可選）添加陰影。
-* 請確定產品詳細資訊已清楚標示，並且已集中注意。
+* 請確定產品詳細資訊已清楚標示，並集中注意。
 * 為具有人體模型或模特兒的時尚服裝拍攝旋轉影像。 通常，假人模型要麼是完全遮色的（使用玻璃模型），要麼在圖中顯示風格化的假人模型／服裝。 通過定義角度數，可建立模型上的回轉集。 在地板上用磁帶標籤每個角度，以引導模型向每個拍攝方向步移和查看。
 
 ## 建立回轉集 {#creating-spin-sets}
@@ -114,12 +117,13 @@ Spin Sets are designated by a banner with the word **[!UICONTROL SPINSET]**. In 
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-   當您建立回轉集時，可以變更回轉集縮圖，或允許AEM根據回轉集中的資產自動選取縮圖。 若要選取縮圖，請點選「 **[!UICONTROL 變更縮圖」]**。選取任何影像（您也可以導覽至其他檔案夾以尋找影像）。 If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
+   當您建立回轉集時，可以變更回轉集縮圖，或允許AEM根據回轉集中的資產自動選取縮圖。 若要選取縮圖，請點選「 **[!UICONTROL 變更縮圖」]**。 選取任何影像（您也可以導覽至其他檔案夾以尋找影像）。 If you have selected a thumbnail and then decide that you want AEM to generate one from the spin set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
 1. 執行下列任一項作業：
 
    * 在「回轉集編輯器」頁面的左上角 **[!UICONTROL 附近]** ，點選「 **[!UICONTROL 新增資產」]**。
    * 在「回轉集編輯器」頁 **[!UICONTROL 面的中間]** ，點選 **[!UICONTROL 以開啟資產選擇器]**。
+
    點選以選取您要納入回轉集中的資產。 選取的資產上面有核取標籤圖示。When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後點選工具 **[!UICONTROL 列上的]** 「篩選」圖示。若要變更檢視，在頁面右上角附近點選「檢視」圖示，然後點選「 **[!UICONTROL 欄檢視」、「]** 卡片檢視 **[!UICONTROL 」或「清單檢]**********&#x200B;視」。
