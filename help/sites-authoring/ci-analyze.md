@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
 
    >[!NOTE]
    >
-   >頁面的Analytics和Recommendations只有在您已設定AEM與Adobe Analytics [整合時才會顯示](/help/sites-administering/adobeanalytics-connect.md)。
+   >頁面的Analytics和Recommendations只有在您已設定AEM與Adobe Analytics [整合時才會出現](/help/sites-administering/adobeanalytics-connect.md)。
 
    ![screen_shot_2017-11-29at135651](assets/screen_shot_2017-11-29at135651.png)
 
@@ -57,7 +60,7 @@ source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
 
    如果看不到著色區域的左側，請使用捲動條將其帶入視圖。
 
-1. 若要變更報告時段的結束日期，請將顯示在陰影區域右側的圓拖曳至所需的結束日期。
+1. 若要變更報告時段的結束日期，請拖曳出現在陰影區域右側的圓圈至所要的結束日期。
 
 ### 變更報告時段的詳細程度 {#changing-the-granularity-of-the-reporting-period}
 
@@ -97,12 +100,12 @@ SEO建議的狀態會指出何時建立工作但尚未完成。
 
 1. 填寫顯示的表格欄位，然後點選「建立：
 
-   * 專案：選擇要在其中建立任務的項目。
-   * 名稱：標識任務的名稱。 預設名稱是SEO建議的標題。
-   * 指派給：選擇要分配任務的用戶。 開始輸入使用者名稱以篩選清單。
-   * 說明：完成任務所需活動的說明。 預設說明是SEO建議隨附的資訊。
-   * 任務優先順序：任務的優先順序。
-   * 到期日：應完成任務的日期。
+   * 專案： 選擇要在其中建立任務的項目。
+   * 名稱： 標識任務的名稱。 預設名稱是SEO建議的標題。
+   * 指派給： 選擇要分配任務的用戶。 開始輸入使用者名稱以篩選清單。
+   * 說明： 完成任務所需活動的說明。 預設說明是SEO建議隨附的資訊。
+   * 任務優先順序： 任務的優先順序。
+   * 到期日： 應完成任務的日期。
 
 1. 按一下或點選「完成」以關閉「已建立任務」消息。
 
