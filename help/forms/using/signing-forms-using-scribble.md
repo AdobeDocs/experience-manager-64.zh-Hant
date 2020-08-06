@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 0%
 
 ---
 
@@ -40,11 +43,12 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 1. 點選「設 **定**![設定](assets/configure.png) 」圖示。 它會開啟屬性瀏覽器並顯示「簽名」步驟屬性。 設定下列屬性：
 
-   * **元素名稱**:指定元件的名稱。
-   * **** 標題：指定元件的唯一標題。
-   * **** 範本訊息：指定在載入簽名PDF時要顯示的訊息。 Adobe Sign services需要一些時間來準備和載入簽名PDF。
-   * **** 簽署服務：選取「 **Scribble Signature** 」（塗鴉簽名）選項。
-   * **CSS類別**:指定用戶端程式庫的CSS類別（如果有）。 建議使用主 [題](/help/forms/using/themes.md)[和行內](/help/forms/using/inline-style-adaptive-forms.md) 樣式，而非CSS類別。
+   * **元素名稱**: 指定元件的名稱。
+   * **標題：** 指定元件的唯一標題。
+   * **範本訊息：** 指定在載入簽名PDF時要顯示的訊息。 Adobe Sign Services需要一些時間來準備和載入簽名PDF。
+   * **簽署服務：** 選取「 **Scribble Signature** 」（塗鴉簽名）選項。
+   * **CSS類別**: 指定用戶端程式庫的CSS類別（如果有）。 建議使用主 [題](/help/forms/using/themes.md)[和行內](/help/forms/using/inline-style-adaptive-forms.md) 樣式，而非CSS類別。
+
    點選「Done ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) 」圖示以儲存變更。 簽名已成功配置。
 
    現在，當您填寫表格時，會顯示PDF版的最適化表格，並提供簽署PDF檔案的選項。 如需詳細資訊，請參 [閱使用塗鴉簽名簽署最適化表格](/help/forms/using/signing-forms-using-scribble.md#p-sign-an-adaptive-form-using-scribble-signature-p)。
