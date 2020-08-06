@@ -82,7 +82,7 @@ PTIFF轉譯只會在「動態媒體混合」模式中建立並儲存在本機。
 1. 開啟 **[!UICONTROL Adobe CQ DAM XmpFilter組態]** 。
 1. To apply filtering via an allowed list, select **[!UICONTROL Apply Allowlist to XMP Properties]**, and specify the properties to be imported in the **[!UICONTROL Allowed XML Names for XMP filtering]** box.
 
-   ![chlimage_1-347](assets/chlimage_1-347.png)
+   ![chlimage_1-348](assets/chlimage_1-347.png)
 
 1. 若要在透過允許的清單套用篩選後篩選已封鎖的XMP屬性，請在「XMP篩選的封鎖的XML **[!UICONTROL 名稱」方塊中指定]** 。 儲存變更。
 
