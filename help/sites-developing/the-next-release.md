@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7be7d33-9d06-4d07-b7a0-e23251e26cb8
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,6 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 * 開發可用作下一版回歸測試的測試。
 * 整理您或客戶透過測試程式獲得的任何資訊。
 
-   這可能有助於形成下一版的需求；例如，客戶在測試期間對產品的體驗有所提升。
+   這可能有助於形成下一版的需求； 例如，客戶在測試期間對產品的體驗有所提升。
 
 由於下一版很可能是移轉，因此任何與此相關的資訊都會被證明是有用的。
