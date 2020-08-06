@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 2%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
    從邊欄中選擇元件時，您會看到列出的所有子元件以及所選元件的屬性。 您可以選取特定的子元件並設定其樣式。
 
-1. 按一下側邊欄中的標籤以指定CSS屬性。 您可以指定屬性，例如：
+1. 按一下側邊欄中的標籤，以指定CSS屬性。 您可以指定屬性，例如：
 
    * 尺寸與位置（顯示設定、填補、高度、寬度、邊界、位置、z索引、浮動、清除、溢位）
    * 文字（字型系列、粗細、顏色、大小、行高和對齊）
@@ -42,7 +45,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 1. 同樣地，您也可以套用元件其他部分的樣式，例如Widget、Caption和Help。
 1. 點選 **「完成** 」以確認變更，或點選「取 **消** 」以放棄變更。
 
-## 範例：欄位元件的內嵌樣式 {#example-inline-styles-for-a-field-component}
+## 範例： 欄位元件的內嵌樣式 {#example-inline-styles-for-a-field-component}
 
 下列影像會描述套用內嵌樣式前後的文字欄位。
 
@@ -70,7 +73,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
    <td><p>文字方塊</p> </td> 
    <td><p>background-color</p> </td> 
    <td><p>#6495ED</p> </td> 
-   <td><p>將背景顏色更改為CornflowerBlue(#6495ED)</p> <p>注意：您可以在值欄位中指定顏色名稱或其十六進位代碼。</p> </td> 
+   <td><p>將背景顏色更改為CornflowerBlue(#6495ED)</p> <p>注意： 您可以在值欄位中指定顏色名稱或其十六進位代碼。</p> </td> 
   </tr> 
   <tr> 
    <td><p>標籤</p> </td> 
@@ -93,7 +96,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
  </tbody> 
 </table>
 
-![](assets/applied-style.png) 套用內嵌樣式後的文字方塊樣式&#x200B;****&#x200B;圖：套用 *內嵌樣式屬性後的文字方塊元件*
+![套用內嵌樣式後的文字方塊樣式](assets/applied-style.png)**圖：** *套用內嵌樣式屬性後的文字方塊元件*
 
 依照上述步驟，您可以選取其他元件並設定其樣式，例如面板、提交按鈕和選項按鈕。
 
