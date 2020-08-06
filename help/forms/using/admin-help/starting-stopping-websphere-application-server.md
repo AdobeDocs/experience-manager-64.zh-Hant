@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 若干程式會要求您停止或啟動要部署AEM表單產品的WebSphere執行個體。 如果您不確定應用程式伺服器是否已啟動，您可以先檢視WebSphere應用程式伺服器的狀態。
 
-## 查看WebSphere Application server的狀態 {#view-the-status-of-websphere-application-server}
+## 查看WebSphere Application Server的狀態 {#view-the-status-of-websphere-application-server}
 
 1. 從命令提示符中，轉到 *[appserver root]*/bin目錄。
 1. 輸入以下命令， *用WebSphere應用程式伺服器的名稱替換server_name* :
