@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
 1. 在管理控制台中，按一下「設定>使用者管理>網域管理」。
 1. 按一下「新建企業網域」。
 1. 在ID方塊中，輸入網域的唯一識別碼，並在「名稱」方塊中，輸入網域的描述性名稱。 (請參 [閱網域名稱和ID的重要考量](adding-domains.md#important-considerations-for-domain-names-and-ids)。)
-1. 指定是否啟用帳戶鎖定。 (請參 [閱設定帳戶鎖定設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings))。依預設，會選取「啟用帳戶鎖定」。
+1. 指定是否啟用帳戶鎖定。 (請參 [閱設定帳戶鎖定設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings))。 依預設，會選取「啟用帳戶鎖定」。
 1. 按一下「新增驗證」，然後在「驗證提供者」清單中，根據貴組織使用的驗證機制，選取提供者。 可能的值是LDAP、Kerberos、SAML或自定義驗證提供程式。
 
    如果選擇LDAP，則可以使用在目錄配置中指定的LDAP伺服器，也可以選擇不同的LDAP伺服器以用於驗證。 如果您選擇不同的伺服器，則用戶必須同時存在於兩個LDAP伺服器上。
@@ -38,7 +41,7 @@ source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
 1. 在管理控制台中，按一下「設定>使用者管理>網域管理」。
 1. 按一下「新增本機網域」。
 1. 在ID方塊中，輸入網域的唯一識別碼，並在「名稱」方塊中，輸入網域的描述性名稱。 (請參 [閱網域名稱和ID的重要考量](adding-domains.md#important-considerations-for-domain-names-and-ids)。)
-1. 指定是否啟用帳戶鎖定，然後按一下「確定」。 (請參 [閱設定帳戶鎖定設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings))。依預設，會選取「啟用帳戶鎖定」。
+1. 指定是否啟用帳戶鎖定，然後按一下「確定」。 (請參 [閱設定帳戶鎖定設定](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings))。 依預設，會選取「啟用帳戶鎖定」。
 
 ## 新增混合網域 {#add-a-hybrid-domain}
 
