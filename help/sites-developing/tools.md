@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 translation-type: tm+mt
 source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Selenium用於瀏覽器中的函式測試，每個活動有一個用戶。 它�
 
 **JMeter**
 
-JMeter可用來追蹤要求，並可用於功能、效能和壓力測試。
+JMeter用於跟蹤請求，可用於功能、效能和壓力測試。
 
 如需詳細資訊，請參 [閱http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)。
 
