@@ -241,7 +241,7 @@ ht-degree: 0%
    * 調用物件的方法並傳遞描述 `CreateEndpointInfo` 端點的字 `setDescription` 串值，以指定端點的說明。
    * 調用物件的方法並傳遞指 `CreateEndpointInfo` 定名稱的字 `setName` 串值，以指定端點的名稱。
    * 通過調用對象的方法並傳遞指定服務名 `CreateEndpointInfo` 的字串值， `setServiceId` 指定端點所屬的服務。
-   * 指定透過叫用物件的方法並傳 `CreateEndpointInfo` 遞指定作 `setOperationName` 業名稱的字串值所呼叫的作業。 對於SOAP和EJB端點，請指定通配符( `*`)，表示所有操作。
+   * 指定透過叫用物件的方法並傳 `CreateEndpointInfo` 遞指定作 `setOperationName` 業名稱的字串值而呼叫的作業。 對於SOAP和EJB端點，請指定通配符( `*`)，表示所有操作。
 
 1. 建立SOAP端點。
 
@@ -654,7 +654,7 @@ ht-degree: 0%
    * 調用物件的方法並傳遞描述 `CreateEndpointInfo` 端點的字 `setDescription` 串值，以指定端點的說明。
    * 調用物件的方法並傳遞指 `CreateEndpointInfo` 定名稱的字 `setName` 串值，以指定端點的名稱。
    * 通過調用對象的方法並傳遞指定服務名 `CreateEndpointInfo` 的字串值， `setServiceId` 指定端點所屬的服務。
-   * 指定透過叫用物件的方法並傳 `CreateEndpointInfo` 遞指定作 `setOperationName` 業名稱的字串值而呼叫的作業。 通常，為源自在Workbench中建立的流程的服務建立電子郵件端點時，會調用操作的名稱。
+   * 指定透過叫用物件的方法並傳 `CreateEndpointInfo` 遞指定作 `setOperationName` 業名稱的字串值所呼叫的作業。 通常，為源自在Workbench中建立的流程的服務建立電子郵件端點時，會調用操作的名稱。
 
 1. 指定設定值。
 
@@ -754,7 +754,7 @@ ht-degree: 0%
 
 您可以使用AEM Forms Java API，以程式設計方式將遠端端點新增至服務。 借由新增Remoting端點，您就可讓Flex應用程式使用remoting來叫用服務。 (請參 [閱「使用（AEM表單已過時）AEM Forms Remoting叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)」)。
 
-為了以程式設計方式將Remoting端點新增至服務，請考慮下列名為 *EncryptDocument的簡短程式*。
+為了以程式設計方式將Remoting端點新增至服務，請考慮下列名為 *EncryptDocument的短時程式*。
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
