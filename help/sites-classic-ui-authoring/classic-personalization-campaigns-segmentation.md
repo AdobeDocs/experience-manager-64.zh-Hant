@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 1%
 
 ---
 
@@ -47,10 +50,10 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 **行為特徵** ：行為特徵是指與訪客在網站上的行為相關的特徵。 其中包括：
 
-* 您網站的興趣；包括瀏覽的頁面和購買的產品。
-* 轉介網站上的興趣；包括使用的搜尋詞，或點選的廣告。
-* 其他網站的興趣；已使用Spyjax等工具確定。
-* 訪客忠誠度；瀏覽的持續時間、瀏覽的頻率。
+* 您網站的興趣； 包括瀏覽的頁面和購買的產品。
+* 轉介網站上的興趣； 包括使用的搜尋詞，或點選的廣告。
+* 其他網站的興趣； 已使用Spyjax等工具確定。
+* 訪客忠誠度； 瀏覽的持續時間、瀏覽的頻率。
 
 **人口統計特徵** ：這些是選定的人口特徵，包括：
 
@@ -63,7 +66,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 **衍生特徵**
 
-有些人口特徵在沒有註冊的情況下很難確定，但可以通過結合行為特徵和人口特徵來得出。
+有些人口特徵在沒有註冊的情況下很難確定，但可以通過結合行為和人口特徵來得出。
 
 例如，結合反向連結URL（作為行為特徵）與人口統計資料(從 [Google Ad Planner等工具取得](https://www.google.com/adplanner/))，網站擁有者可以衍生其訪客的人口統計特徵。
 
