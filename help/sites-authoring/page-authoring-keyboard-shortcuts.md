@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 translation-type: tm+mt
 source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 1%
 
 ---
 
@@ -41,7 +44,7 @@ AEM中提供各種鍵盤快速鍵。 有的在編輯頁面時套用，有的則�
 
 >[!NOTE]
 >
->&amp;ast;當使用者開始在「預覽模式」中與頁面互動時， `Ctrl-Shift-m` 捷徑便不再提供。 使用者必須按一下頂端編輯器列，或返回「編輯」模式，才能再次使用捷徑。
+>&amp;ast; 當使用者開始在「預覽模式」中與頁面互動時， `Ctrl-Shift-m` 捷徑便不再提供。 使用者必須按一下頂端編輯器列，或返回「編輯」模式，才能再次使用捷徑。
 
 使用主控台時，案頭使用者也可使用各種鍵盤快速 [鍵](/help/sites-authoring/keyboard-shortcuts.md)。
 
