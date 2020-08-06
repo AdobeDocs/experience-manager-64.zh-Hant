@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
@@ -56,7 +59,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 ## 常見問題 {#common-concerns}
 
-### 記錄檔警告：已過時的車把 {#warning-in-logs-handlebars-deprecated}
+### 記錄檔警告： 已過時的車把 {#warning-in-logs-handlebars-deprecated}
 
 在啟動期間（不是第1次——但之後的每次），記錄檔中可能會出現下列警告：
 
@@ -64,7 +67,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 此警告可以安全地忽略，因為 [SCF](scf.md#handlebarsjavascripttemplatinglanguage)，使用jkanc.handlebars。Handlebars隨附其i18n輔助工具。 啟動時，會以AEM專用的 [i18n協助程式取代它](handlebars-helpers.md#i-n)。 此警告由協力廠商程式庫產生，以確認覆寫現有協助程式。
 
-### 記錄檔警告：OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
+### 記錄檔警告： OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
 張貼許多Social Communities論壇主題可能會產生大量來自OakResourceListener processOsgiEventQueue的警告和資訊記錄檔。
 
@@ -79,7 +82,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 23.04.2014 14:21:18.990 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/replication/data/1f799fb4-0aeb-4660-aadb-705657f16048/b9/b91f1690-87e8-41d8-a78e-cd2259f837c8/jcr:content not found, which is not expected for an added or modified node
 ```
 
-### 日誌中出錯：IndexElementFactory的NoClassDefFoundError {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
+### 日誌中出錯： IndexElementFactory的NoClassDefFoundError {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
 將AEM 5.6.1 GA升級至最新cq-socialcommunities-pkg-1.4.x或AEM 6.0會在啟動期間導致記錄檔發生錯誤，因為條件會自行解決，重新啟動時未看到錯誤就是明證。
 
