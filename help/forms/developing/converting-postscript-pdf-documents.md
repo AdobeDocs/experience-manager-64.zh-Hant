@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 translation-type: tm+mt
 source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+workflow-type: tm+mt
+source-wordcount: '1269'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 
 >[!NOTE]
 >
->若要將PostScript檔案轉換為PDF檔案，下列其中一項需要安裝在代管AEM Forms的伺服器上：Acrobat 9或Microsoft Visual C++ 2005可重新散發的套件。
+>若要將PostScript檔案轉換為PDF檔案，下列其中一項需要安裝在代管AEM Forms的伺服器上： Acrobat 9或Microsoft Visual C++ 2005可重新散發的套件。
 
 ### 步驟摘要 {#summary-of-steps}
 
@@ -73,7 +76,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 
 [使用web service API將PostScript檔案轉換為PDF](converting-postscript-pdf-documents.md#converting-a-postscript-file-to-pdf-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -107,6 +110,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
    * 包 `java.lang.String` 含要使用的安全設定名稱的對象
    * 可選物 `com.adobe.idp.Document` 件，包含產生PDF檔案時要套用的設定
    * 可選物 `com.adobe.idp.Document` 件，包含要套用至PDF檔案的中繼資料資訊
+
    此方 `createPDF` 法會傳回 `CreatePDFResult` 包含新PDF檔案的物件，以及可產生的記錄檔。 日誌檔案通常包含由轉換請求生成的錯誤或警告消息。
 
 1. 儲存PDF檔案。
@@ -115,6 +119,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 
    * 叫用 `CreatePDFResult` 物件的方 `getCreatedDocument` 法。 這會傳回 `com.adobe.idp.Document` 物件。
    * 叫用物 `com.adobe.idp.Document` 件的方 `copyToFile` 法以擷取PDF檔案。
+
    同樣，要獲取日誌文檔，請執行以下操作。
 
    * 叫用 `CreatePDFResult` 物件的方 `getLogDocument` 法。 這會傳回 `com.adobe.idp.Document` 物件。
@@ -125,9 +130,9 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 
 [步驟摘要](converting-postscript-pdf-documents.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API將PostScript檔案轉換為PDF檔案](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API將PostScript檔案轉換為PDF檔案](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -137,7 +142,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/DistillerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/DistillerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -146,7 +151,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 1. 建立Distiller服務客戶端。
 
    * 使用其 `DistillerServiceClient` 預設建構函式建立物件。
-   * 使用建 `DistillerServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/DistillerService?blob=mtom`。)您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。 不過，請指 `?blob=mtom` 定使用MTOM。
+   * 使用建 `DistillerServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/DistillerService?blob=mtom`。) 您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。 不過，請指 `?blob=mtom` 定使用MTOM。
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `DistillerServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
