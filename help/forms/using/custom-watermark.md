@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 在「建立對應」UI中，工程師使用者會以最終形式預覽對應，並將其傳送至後置處理，例如以電子郵件傳送或列印。
 
-為防止未授權使用此資料，組織可在預覽PDF上加上浮水印。 預設浮水印為「PREVIEW」，會顯示在PDF中。
+為防止未授權使用此資料，組織可在預覽PDF上加上浮水印。 預設的浮水印為「預覽」，會顯示在PDF中。
 
 若要在預覽PDF中啟用浮水印，請在「對應管理 **[!UICONTROL 組態」中選取「在預覽時套用浮水印]** 」選項 ****`https://[server]:[port]/system/console/configMgr`。
 
@@ -39,11 +42,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/configFiles/previewwatermark
+      **路徑：** /libs/fd/cm/configFiles/previewwatermark
 
-      **** 覆蓋位置：/apps/
+      **覆蓋位置：** /apps/
 
-      **** 匹配節點類型：已勾選
+      **匹配節點類型：** 已勾選
 
       >[!NOTE]
       >
