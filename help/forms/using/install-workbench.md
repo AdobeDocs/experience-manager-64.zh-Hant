@@ -8,6 +8,9 @@ topic-tags: author
 discoiquuid: null
 translation-type: tm+mt
 source-git-commit: 19dcda357b34e7160792d43cb9335fc3be0dedbc
+workflow-type: tm+mt
+source-wordcount: '2745'
+ht-degree: 0%
 
 ---
 
@@ -33,27 +36,27 @@ source-git-commit: 19dcda357b34e7160792d43cb9335fc3be0dedbc
   </tr> 
   <tr> 
    <td><p>Workbench的程式資訊</p> </td> 
-   <td><p><a href="http://www.adobe.com/go/learn_aemforms_workbench_61">工作台說明</a><br /><br /> </p> </td> 
+   <td><p><a href="http://www.adobe.com/go/learn_aemforms_workbench_61">Workbench說明</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>AEM Forms的一般資訊，以及它如何與其他Adobe產品整合</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms概觀</a><br /><br /> </p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms概觀</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>建立AEM Forms應用程式並在工作區中進行測試的教學課程</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">建立您的第一個AEM Forms應用程式</a><br /><br /> </p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">建立您的第一個AEM Forms應用程式</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>AEM Forms的所有檔案</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms檔案</a><br /><br /> </p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms檔案</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>其他與AEM Forms整合的服務和產品</p> </td> 
-   <td><p><a href="http://www.adobe.com/">www.adobe.com</a><br /><br /> </p> </td> 
+   <td><p><a href="http://www.adobe.com/tw/">www.adobe.com</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>此產品版本的修補程式更新、技術說明及其他資訊</p> </td> 
-   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">聯絡Adobe企業支援</a><br /><br /> </p> </td> 
+   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">聯絡Adobe企業支援</a><br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -82,7 +85,8 @@ Workbench是一套整合式開發環境(IDE)，開發人員和表單製作人員
 
 ### 最低硬體和軟體需求 {#minimum-hardware-software-requirements}
 
-**Workbench**&#x200B;建議使用下列最低需求：安裝的磁碟空間：
+**Workbench**建議使用下列最低需求：
+安裝的磁碟空間：
 * 僅限工作台680 MB。
 * 在單一磁碟機上安裝2.15 GB，以完整安裝Workbench、Designer和樣本元件。
 * 臨時安裝目錄400 MB —— 用戶\temp目錄為200 MB,Windows臨時目錄為200 MB。
@@ -91,8 +95,8 @@ Workbench是一套整合式開發環境(IDE)，開發人員和表單製作人員
 >
 >如果所有這些位置都駐留在單個驅動器上，則安裝期間必須有1.5 GB的可用空間。 安裝完成後，將刪除複製到臨時目錄的檔案。
 
-* 硬體需求：Intel® Pentium® 4或AMD相當等級，1 GHz處理器。
-* 與Workbench整合的社群支援用戶端所需的Adobe AIR( <a href="http://www.adobe.com/">www.adobe.com</a>)最新版本可供下載和安裝。
+* 硬體需求： Intel® Pentium® 4或AMD相當等級，1 GHz處理器。
+* 與Workbench整合的社群支援用戶端所需的Adobe AIR( <a href="http://www.adobe.com/tw/">www.adobe.com</a>)最新版本可供下載和安裝。
 * Java™ Runtime Environment(JRE)6.0將22或更新版本更新為6.0 10的 *新功能*。
 * 16位元色彩或更高的螢幕解析度，最低1024 X 768像素或更高。
 * TCP/IPv4或TCP/IPv6網路連線至AEM Forms伺服器。
@@ -101,7 +105,7 @@ Workbench是一套整合式開發環境(IDE)，開發人員和表單製作人員
 
 >[!NOTE]
 >
->如果您的電腦已安裝Adobe® Acrobat® X，請在安裝Workbench之前先確認已解除安裝。 您可在安裝Workbench後重新安裝Acrobat。
+>如果您的機器上已安裝Adobe® Acrobat® X，請務必先解除安裝，然後再安裝Workbench。 您可在安裝Workbench後重新安裝Acrobat。
 
 >[!NOTE]
 >
@@ -123,14 +127,14 @@ Workbench是一套整合式開發環境(IDE)，開發人員和表單製作人員
    <td><p><strong>必要動作</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Acrobat pro或Acrobat Pro Extended（包括設計人員）</p> </td> 
-   <td><p>無. Workbench安裝會偵測您電腦上與Acrobat pro或Acrobat Pro Extended一起安裝的Designer例項。
-不同版本的Designer可以共存於同一系統上，例如Designer 8.2.x和9.0.x。您不需要解除安裝隨Acrobat 10 pro或Acrobat 10 Pro Extended安裝的Designer版本。
+   <td><p>Acrobat Pro或Acrobat Pro Extended（包括設計人員）</p> </td> 
+   <td><p>無. Workbench安裝會偵測您電腦上與Acrobat Pro或Acrobat Pro Extended一起安裝的Designer例項。
+不同版本的Designer可以共存於同一系統上，例如Designer 8.2.x和9.0.x。 您不需要解除安裝隨Acrobat 10 Pro或Acrobat 10 Pro Extended安裝的Designer版本。
 <br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>設計人員（獨立）</p> </td> 
-   <td><p>無. Workbench隨附的Designer版本僅提供英文版。 Workbench安裝程式不會重新安裝新版Designer。 Workbench安裝程式隨附的更新版本將會修補。 <br /> 這也可讓您在Workbench中使用您的本地化版本的設計人員。 <br /> </p> </td> 
+   <td><p>無. Workbench隨附的Designer版本僅提供英文版。 Workbench安裝程式不會重新安裝新版Designer。 Workbench安裝程式隨附的更新版本將會修補。 這也可讓您在Workbench中使用您的本地化版本的設計人員。<br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -147,7 +151,7 @@ Workbench是一套整合式開發環境(IDE)，開發人員和表單製作人員
 1. 在「目前安裝的程式」清單中，選取 **Adobe Designer**。
 1. 按一 **下「解除安裝** 」，然後按 **「是」**。
 
-### 若要解除安裝Acrobat pro或Acrobat Pro Extended隨附的設計人員 {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
+### 若要解除安裝Acrobat Pro或Acrobat Pro Extended隨附的設計人員 {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
 
 1. 前往「控 **制面板>程式集>程式和功能」**
 1. 在「目前安裝的程式」清單中，選 **取「Adobe Acrobat Pro** 」 **或「Adobe Acrobat Pro Extended」**。
@@ -156,7 +160,7 @@ Workbench是一套整合式開發環境(IDE)，開發人員和表單製作人員
 1. 選 **擇Adobe Designer**，選擇 **此功能將不可用**，然後按一下「下 **一步」**
 1. 按一 **下「更新** 」，然後按一下「完 **成」**
 
-### 若要解除安裝Windows 10版Acrobat pro或Acrobat Pro Extended隨附的Designer {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
+### 若要解除安裝Windows 10版Acrobat Pro或Acrobat Pro Extended隨附的Designer {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
 
 1. 前往「控 **制面板>程式集>程式和功能」**
 1. 在「目前安裝的程式」清單中，選 **取「Adobe Acrobat Pro** 」 **或「Adobe Acrobat Pro Extended」**。
@@ -171,13 +175,14 @@ Workbench是一套整合式開發環境(IDE)，開發人員和表單製作人員
 
 ### 安裝和執行Workbench {#installing-and-running-workbench}
 
-在安裝Workbench之前，您必須確保您的環境包含執行Workbench所需的軟體和硬體(請參閱章節：安 **裝前**)。
+在安裝Workbench之前，您必須確保您的環境包含執行Workbench所需的軟體和硬體(請參閱章節： **安裝前**)。
 
 **要安裝並運行Workbench，請執行以下操作：**
 
 1. 執行下列任務之一：
    * 導覽至安裝媒體上的\workbench目錄，然後按兩下run_windows_installer.bat檔案。
    * 將Workbench下載並解壓縮至您的檔案系統。 下載後，導覽至\workbench目錄，然後按兩下run_windows_installer.bat檔案。
+
    >[!IMPORTANT]
    >
    >Workbench安裝程式僅從DVD或本機磁碟機執行。 無法從遠程站點運行。
@@ -204,10 +209,10 @@ Workbench是一套整合式開發環境(IDE)，開發人員和表單製作人員
 1. 查看安裝摘要。 選取「啟動AEM Forms Workbench」以啟動「工作台」，然後按一下「下一步」。
 1. 檢閱發行說明，然後按一下完成。
 1. 您的電腦現在安裝了下列項目：
-   * **工作台**:若要從「開始」功能表執行「工作台」，請選取「所有程式集> AEM Forms > Workbench」（如果您選擇將捷徑檔案夾儲存在此處）。 如需詳細資訊，請參閱使用工作台檔案。
-   * **設計人員**:您可以從Workbench內部存取設計人員。 如需詳細資訊，請參閱設計人員說明中的快速入門主題。
-   * **Workbench增效模組**:請依照第6頁「3.3安裝Workbench Eclipse功能」中的指示進行。
-   * **AEM Forms SDK**:如需使用SDK的詳細資訊，請參閱「使 <a href="http://www.adobe.com/go/learn_lc_programming_10">用AEM表格進行程式設計」</a>。
+   * **工作台**: 若要從「開始」功能表執行「工作台」，請選取「所有程式集> AEM Forms > Workbench」（如果您選擇將捷徑檔案夾儲存在此處）。 如需詳細資訊，請參閱使用工作台檔案。
+   * **設計人員**: 您可以從Workbench內部存取設計人員。 如需詳細資訊，請參閱設計人員說明中的快速入門主題。
+   * **Workbench增效模組**: 請依照第6頁「3.3安裝Workbench Eclipse功能」中的指示進行。
+   * **AEM Forms SDK**: 如需使用SDK的詳細資訊，請參閱「使 <a href="http://www.adobe.com/go/learn_lc_programming_10">用AEM表格進行程式設計」</a>。
 
 ## 升級程式 {#upgrading-processes}
 
@@ -233,11 +238,12 @@ Workbench支援更新功能，以確保您使用最新的Eclipse版本。 不過
    <td><p>Eclipse 3.6.x</p> </td> 
    <td><p>
 
-* 圖形編輯框架GEF [org.eclipse.gef.feature.group]:這項資訊包含在「圖形模型架構SDK」 [org.eclipse.gmf.sdk.feature.group中]
+* 圖形編輯框架GEF [org.eclipse.gef.feature.group]: 這項資訊包含在「圖形模型架構SDK」 [org.eclipse.gmf.sdk.feature.group中]
 
-* WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]:此功能包含在「Eclipse XML編輯器與工具」 [org.eclipse.wst.xml_ui.feature.feature.group中]
+* WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]: 此功能包含在「Eclipse XML編輯器與工具」 [org.eclipse.wst.xml_ui.feature.feature.group中]
 
-* 外掛程式&#39;org.apache.commons.lang_2.3.0&#39; [n/a]:這包含在「Mylyn Task List(Required)」 [org.eclipse.mylyn_feature.feature.group中]
+* 外掛程式&#39;org.apache.commons.lang_2.3.0&#39; [n/a]: 這包含在「Mylyn Task List(Required)」 [org.eclipse.mylyn_feature.feature.group中]
+
    </p> </td> 
   </tbody>
   </table>
@@ -250,7 +256,7 @@ Workbench支援更新功能，以確保您使用最新的Eclipse版本。 不過
 
    >[!NOTE]
    >
-   >忽略「警告：您即將安裝未簽署的功能」，然後按一下「安裝」繼續。
+   >忽略「警告： 您即將安裝未簽署的功能」，然後按一下「安裝」繼續。
 
    >[!NOTE]
    >
@@ -304,19 +310,19 @@ Workbench支援更新功能，以確保您使用最新的Eclipse版本。 不過
 
 當表單產生器或輸出在快取中搜尋或更新特定表單範本的項目時，它會使用數個索引鍵值來找出將要存取的特定快取項目。
 
-* **範本檔案名稱**:用作快取表單主要唯一識別碼的範本位置和檔案名稱。
-* **時間戳**:範本檔案包含用來決定表單上次更新時間的時間戳記。
-* **範本UUID**:設計人員會在每個範本中插入表單及其版本的唯一識別碼(UUID)。 每次更新表單時，就會更新內嵌的UUID。 例如，XDP範本可能會顯示下列內容：
+* **範本檔案名稱**: 用作快取表單主要唯一識別碼的範本位置和檔案名稱。
+* **時間戳**: 範本檔案包含用來決定表單上次更新時間的時間戳記。
+* **範本UUID**: 設計人員會在每個範本中插入表單及其版本的唯一識別碼(UUID)。 每次更新表單時，就會更新內嵌的UUID。 例如，XDP範本可能會顯示下列內容：
 
    `<?xml version="1.0" encoding="UTF-8"?>`
    `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=http://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="http://www.xfa.org/schema/xfa-template/2.6/">`
 
-* **演算選項**:在渲染的表單快取中，對於每組唯一渲染選項分別儲存快取內容。
+* **演算選項**: 在渲染的表單快取中，對於每組唯一渲染選項分別儲存快取內容。
 
 
 Forms服務會參照檔案名稱或儲存庫位置，或參照記憶體中的XML物件值來接收範本。
-* **參考傳遞的範本**:使用內容根目錄和表單名稱。 如果使用此方法在每個請求中傳遞具有不同檔案名的唯一模板，則磁碟快取將不斷增長，並且永遠不會重複使用。 為避免此情況，應以相同檔案名稱傳遞唯一範本，以確保所有請求都會更新相同的快取。
-* **以值傳遞的範本**:使用theinDataDoc參數，使用與資料一起傳遞的範本位元組。 如果使用此方法傳遞具有不同UUID的唯一模板，磁碟快取將會無限增長，並且永遠不會重複使用。 為避免這種情況，應從所有模板中刪除UUID屬性，以確保不為模板建立快取。 或者，傳遞相同的非空UUID允許建立快取對象，但確保同一快取會隨每個請求而更新。
+* **參考傳遞的範本**: 使用內容根目錄和表單名稱。 如果使用此方法在每個請求中傳遞具有不同檔案名的唯一模板，則磁碟快取將不斷增長，並且永遠不會重複使用。 為避免此情況，應以相同檔案名稱傳遞唯一範本，以確保所有請求都會更新相同的快取。
+* **以值傳遞的範本**: 使用theinDataDoc參數，使用與資料一起傳遞的範本位元組。 如果使用此方法傳遞具有不同UUID的唯一模板，磁碟快取將會無限增長，並且永遠不會重複使用。 為避免這種情況，應從所有模板中刪除UUID屬性，以確保不為模板建立快取。 或者，傳遞相同的非空UUID允許建立快取對象，但確保同一快取會隨每個請求而更新。
 
 為防止快取無限成長，請考量下列因素，以使用新的AEM Forms API（即renderHTMLForm2和renderPDFForm2）來轉換動態產生的範本。
 
