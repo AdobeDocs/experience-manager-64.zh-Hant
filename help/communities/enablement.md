@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,8 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 設定：
 
-* **社群管理**&#x200B;員對於啟用社群，只能指派使用者群組的成員角色 `Community Enablement Managers``*Community Site* Enablement Manager`，其權限可能包括內容建立、指派和發佈環境中的成員管理。
+* **社群經理**&#x200B;對於啟用社群，僅限 
+`Community Enablement Managers` 用戶組可被指派角色，其權限可 `*Community Site* Enablement Manager`能包括內容建立、分配和發佈環境中的成員管理。
 
 可選配置：
 
@@ -51,15 +55,18 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 **在所有作者／發佈例項上：**
 
-1. **[為MySQL安裝JDBC驅動程式](deploy-communities.md#jdbc-driver-for-mysql)**使用Web控制台（捆綁包）:*http://localhost:4502/system/console/bundles安*裝&#x200B;*SCORM套件之前*，請先安裝
+1. **[為MySQL安裝JDBC驅動程式](deploy-communities.md#jdbc-driver-for-mysql)**使用Web控制台（捆綁包）: 
+安裝*http://localhost:4502/system/console/bundles*安&#x200B;*裝*SCORM套件前安裝（英文）
 
-1. **[安裝SCORM包](deploy-communities.md#scorm-package)**使用包管理器：*http://localhost:4502/crx/packmgr/*
+1. **[安裝SCORM包](deploy-communities.md#scorm-package)**使用包管理器：
+*http://localhost:4502/crx/packmgr/*
 
 **在任何伺服器上：**
 
 1. **[安裝MySQL、MySQL Workbench](mysql.md)**
 
-1. **[安裝MySQL資料庫](mysql.md#database-setup)**從作者實例下載的執行SQL指令碼\
+1. **[安裝MySQL資料庫](mysql.md#database-setup)**從作者實例下載的執行SQL指令碼
+\
    使用MySQL工作台
 
 **在裝載作者例項的相同伺服器上：**
@@ -68,21 +75,26 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 **在所有作者／發佈例項上：**
 
-1. **[配置JDBC連接池](mysql.md#configure-jdbc-connections)**使用Web控制台(configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[配置JDBC連接池](mysql.md#configure-jdbc-connections)**使用Web控制台(configMgr):
+*http://localhost:4502/system/console/configMgr*
 
-1. **[配置SCORM引擎服務](mysql.md#aem-communities-scormengine-service)**使用Web控制台(configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[配置SCORM引擎服務](mysql.md#aem-communities-scormengine-service)**使用Web控制台(configMgr):
+*http://localhost:4502/system/console/configMgr*
 
-1. **[配置CSRF過濾器](mysql.md#adobe-granite-csrf-filter)**使用Web控制台(configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[配置CSRF過濾器](mysql.md#adobe-granite-csrf-filter)**使用Web控制台(configMgr):
+*http://localhost:4502/system/console/configMgr*
 
 **在作者實例上：**
 
-1. (可&#x200B;*選*) **[設定Analytics服務](analytics.md)**使用工具、部署、雲端服務主控台：*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
+1. (可&#x200B;*選*) **[設定Analytics服務](analytics.md)**使用工具、部署、雲端服務主控台：
+*http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[配置Fmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**使用工作流／模型控制台
 
-1. **[啟用Tunnel Service](deploy-communities.md#tunnel-service-on-author)**使用Web控制台(configMgr):*http://localhost:4502/system/console/configMgr*
+1. **[啟用Tunnel Service](deploy-communities.md#tunnel-service-on-author)**使用Web控制台(configMgr):
+*http://localhost:4502/system/console/configMgr*
 
-1. **[建立社區管理員](users.md#creating-community-members)**：對於作者環境，請使用傳統UI安全控制台：http://localhost:4502/useradmin **建立路徑= /home/users/community的使用者
+1. **[建立社區管理員](users.md#creating-community-members)**：對於作者環境，請使用傳統UI安全控制台：*http://localhost:4502/useradmin*建立路徑= /home/users/community的使用者
 
    * 將成員添加到以下組：
 
