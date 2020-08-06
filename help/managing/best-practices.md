@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
 source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+workflow-type: tm+mt
+source-wordcount: '3313'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 * **Phase Health（階段健康）**
 
-   * 您專案的高階狀態指標；以強調可能存在風險的領域。
+   * 您專案的高階狀態指標； 以強調可能存在風險的領域。
 
 * **階段完整性**
 
@@ -76,7 +79,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 * **範圍和時間表**
 
-   * 應該提供基本範圍和大致的時間表來定義所需內容，以及時間範圍；如果有助於澄清情況，您也可以定義範圍之外的內容。
+   * 應該提供基本範圍和大致的時間表來定義所需內容，以及時間範圍； 如果有助於澄清情況，您也可以定義範圍之外的內容。
 
 您準備、規劃及執行專案及實施解決方案的方式，將受到您在固定預算、固定時間表、內容數量、所需品質等限制所影響。
 
@@ -90,7 +93,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 * **驗證**
 
-   在此階段，您需要驗證並確認項目的目標；例如：
+   在此階段，您需要驗證並確認項目的目標； 例如：
 
    * 您想要達到／提供什麼？
    * 誰將受益？
@@ -112,7 +115,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    * 在您的估計中保持現實。
    * 考慮並尊重客戶可能受到的任何客戶准則、流程或限制。
    * 如果需要在以後階段審查或調整預算，考慮應急和審查程式。
-   * 記住，成本有很多形式；購買、使用資源及費用等。
+   * 記住，成本有很多形式； 購買、使用資源及費用等。
 
 ### 規劃 {#planning}
 
@@ -163,24 +166,24 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 * **內容架構**
 
-   內容架構定義並描述了未來的內容架構；包括：
+   內容架構定義並描述了未來的內容架構； 包括：
 
-   * 內容樹；包括資產
-   * 基本結構；包括促銷活動等。
+   * 內容樹； 包括資產
+   * 基本結構； 包括促銷活動等。
    * 多網站和多語言結構（MSM、翻譯等）
    * 支援內容（包括標籤和標籤概念）
    * 快取和內容重複使用策略
 
 * **系統架構**
 
-   系統體系結構定義了系統的概念視圖；包括（其中包括其他資訊）:
+   系統體系結構定義了系統的概念視圖； 包括（其中包括其他資訊）:
 
    * [所有必要環境](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) ，都適用的系統結構
    * 子系統
    * 協力廠商系統
-   * 介面；硬體、軟體和人際互動
-   * 每個環境的伺服器；請參閱技 [術要求](/help/sites-deploying/technical-requirements.md) 和硬 [件大小指南](/help/managing/hardware-sizing-guidelines.md)
-   * 每個環境的流程；例如，部署和維護需求
+   * 介面； 硬體、軟體和人際互動
+   * 每個環境的伺服器； 請參閱技 [術要求](/help/sites-deploying/technical-requirements.md) 和硬 [件大小指南](/help/managing/hardware-sizing-guidelines.md)
+   * 每個環境的流程； 例如，部署和維護需求
    * 維護活動（資料儲存GC、TarPM優化等）
    * [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) caching
    * [叢集發佈](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) /授權共用
@@ -194,6 +197,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
    * 他們如何與彼此及使用者互動。
    * 應用程式要消耗和產生的資料，而非其內部結構。
+
    定義應涵蓋：
 
    * 專案的基本程式碼結構
@@ -209,7 +213,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    系統整合需要您規劃（然後實施）:
 
    * 各子系統和解決方案的 [整合如何](/help/sites-administering/integration.md) ，將其整合為一個相干系統
-   * 將如何整合任何協力廠商系統；搭配任何特殊考量，例如離線／線上、用戶端／瀏覽器端或第三方系統關機時的故障處理
+   * 將如何整合任何協力廠商系統； 搭配任何特殊考量，例如離線／線上、用戶端／瀏覽器端或第三方系統關機時的故障處理
 
 * **測試概念**
 
@@ -220,8 +224,8 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    * 要執行的所有測試的詳細資訊
    * 準備這些測試所需的任何內容
    * 要使用的任何測試工具的資訊
-   * 高層指出誰將參與測試；特別是QA團隊以外的群組
-   * 測試自動化的細節；例如，使用Selenium或AEM Developer模式
+   * 高層指出誰將參與測試； 特別是QA團隊以外的群組
+   * 測試自動化的細節； 例如，使用Selenium或AEM Developer模式
 
 * **體驗設計**
 
@@ -233,7 +237,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
    在開發之前，應設定部署、發佈、測試和報告問題所需的所有支援程式。
 
-   另請參閱 [Adobe支援入口網站](https://helpx.adobe.com/marketing-cloud/contact-support.html)。
+   另請參閱 [Adobe支援入口網站](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)。
 
 ### 運營規劃和運營 {#operations-planning-and-operations}
 
@@ -248,9 +252,10 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    例如：
 
    * 角色（即組）的清單，每個角色具有 `read`/訪 `write` 問定義
-   * 定義影響發佈環境的權限的使用；例如， `replicate`
+   * 定義影響發佈環境的權限的使用； 例如， `replicate`
    * 對於具有最低權限的用戶，應定義工作流
    * 群組中的 `editor` 使用者不應擁有 `admin` 任何權限，也不應屬於群 `administrators` 組
+
    如需詳細資訊，請參 [閱使用者管理與安全性](/help/sites-administering/security.md)。
 
 * **監控與維護**
@@ -258,8 +263,9 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    監控和維護是確保解決方案上線後順利運作的關鍵方面。 為此，您需要定義：
 
    * 需要監控的項目
-   * 維護任務；既有正常情況，也有特殊情況
-   如需詳細 [資訊，請參閱](/help/sites-deploying/monitoring-and-maintaining.md) 「監控與維護」。
+   * 維護任務； 既有正常情況，也有特殊情況
+
+   如需詳細 [資訊，請參閱監](/help/sites-deploying/monitoring-and-maintaining.md) 控與維護。
 
 * **移轉**
 
@@ -282,12 +288,12 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    * 架構
    * [開發工具](/help/sites-developing/dev-tools.md)
       * 典型的環境包括：
-         * 問題追蹤系統；例如吉拉
-         * IDE;例如Eclipse
-         * 建設管理工具；例如Maven
-         * 持續整合的工具；例如詹金斯
-         * 版本控制工具；例如GIT/SVN
-         * 構建對象儲存庫管理器；例如Archiva/Nexus
+         * 問題追蹤系統； 例如吉拉
+         * IDE; 例如Eclipse
+         * 建設管理工具； 例如Maven
+         * 持續整合的工具； 例如詹金斯
+         * 版本控制工具； 例如GIT/SVN
+         * 構建對象儲存庫管理器； 例如Archiva/Nexus
    * 協力廠商軟體整合／相依性
    * [解決方案整合／相依性](/help/sites-administering/integration.md)
    * 部署順序
@@ -297,7 +303,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    規劃並記錄您的測試環境，包括：
 
    * 架構
-   * 對發展建設的依賴；包括夜間建置
+   * 對發展建設的依賴； 包括夜間建置
    * 測試協力廠商軟體整合／相依性的可能性或限制
    * 測試工具
    * 自動化測試策略
@@ -311,7 +317,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    * 協力廠商軟體整合／相依性
    * 安全性設定
    * 在生產設定上執行 [Tough Day測試](/help/sites-developing/tough-day.md) ，以驗證基準效能
-   * 效能測試要求；請參閱 [質量保證的最佳實踐](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * 效能測試要求； 請參閱 [質量保證的最佳實踐](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **整合**
 
@@ -323,7 +329,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 * **移轉**
 
-   規劃、記錄和測試內容移轉的所有方面；包括：
+   規劃、記錄和測試內容移轉的所有方面； 包括：
 
    * 內容架構
    * 移轉策略
@@ -334,7 +340,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 * **文件**
 
-   完整記錄解決方案；包括：
+   完整記錄解決方案； 包括：
 
    * 操作手冊
    * 任何可能影響升級的自訂
@@ -358,7 +364,8 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
    * 此解決方案滿足用戶／客戶需求
    * 客戶／使用者接受解決方案（功能、設計和效能）
-   客戶移交應有一份正式的檢查清單；最理想的是自動化，並針對快照每晚執行。 應將結果傳送給專案經理和開發團隊
+
+   客戶移交應有一份正式的檢查清單； 最理想的是自動化，並針對快照每晚執行。 應將結果傳送給專案經理和開發團隊
 
 * **效能與負載測試**
 
@@ -369,6 +376,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    * [效能測試](/help/sites-deploying/configuring-performance.md)
    * [如何規劃及執行測試](/help/sites-developing/planning.md)
    * [基本效能指引](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
+
    >[!NOTE]
    >
    >在正常使用AEM時，此程式必須持續，但這些初始階段是最關鍵的。
@@ -403,7 +411,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
    * 已接受訓練
    * 已接受適當的培訓材料
-   * 收到適當檔案；例如，使用指南
+   * 收到適當檔案； 例如，使用指南
 
 * **滲透測試**
 
@@ -456,7 +464,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 項目發起人是：
 
 * 負責提供／呈現專案的商業案例。
-* 確定項目範圍的關鍵；包括：
+* 確定項目範圍的關鍵； 包括：
    * 成功的定義和標準
    * 主要關鍵績效指標
 
@@ -507,7 +515,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 質量銷售線索：
 
-* 負責交付的質量；確保符合成功標準及客戶定義的任何KPI。
+* 負責交付的質量； 確保符合成功標準及客戶定義的任何KPI。
 * 定義品質量度、與所有利益相關者一致、制定測試計畫並確保執行。
 * 建立報告，並向專案相關人員提供。
 
@@ -527,7 +535,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 安全領導：
 
 * 負責解決方案的整體安全性概念，確保其符合客戶的任何要求和政策。
-* 為任何基於硬體的安全概念提供安全概念、安全操作和建議；例如區域和防火牆。
+* 為任何基於硬體的安全概念提供安全概念、安全操作和建議； 例如區域和防火牆。
 
 ### 其他角色 {#other-persona}
 
@@ -538,10 +546,10 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
    * 在協商合約時，需要法律意見。
 
 * 訓練人員
-   * 根據項目的規模和性質，可利用專門培訓人員為相關群體制定和舉辦培訓課程。
+   * 根據項目的規模和性質，可利用專門培訓人員為相關群體制定和提供培訓課程。
 
 * 技術撰稿人
-   * 根據項目的規模和性質，可利用專業技術撰寫人員編寫具體群體的准則和手冊；例如，系統管理員的維護手冊或作者的使用指南。
+   * 根據項目的規模和性質，可利用專業技術撰寫人員編寫具體群體的准則和手冊； 例如，系統管理員的維護手冊或作者的使用指南。
 
 * 系統管理員
    * 負責系統的持續運作。
@@ -552,7 +560,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 檢查清單涵蓋每 **個里程碑的** 「必 **要檔案」(Required Documents** )和「交付項」(Deliverables)。
 
-* 兩者之間沒有1:1的關係；例如，一組必需文檔可以生成單個交付項。
+* 兩者之間沒有1:1的關係； 例如，一組必需文檔可以生成單個交付項。
 * 同一里程碑期間，一個角色的交付內容可以是另一個角色的必需文檔。
 
 ### 必要檔案 {#required-documents}
@@ -561,8 +569,8 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 對於每個 **必需文檔** ，角色應指明：
 
-* **Y/N**:是否收到。
-* **1-3**:表示所接收文檔的質量。
+* **Y/N**: 是否收到。
+* **1-3**: 表示所接收文檔的質量。
 
 ### 交付項 {#deliverables}
 
@@ -570,7 +578,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 對於每個 **交付項** ，人格必須指明：
 
-* **Y/N**:是否已完成。
+* **Y/N**: 是否已完成。
 
 交付項通常用作當 **前里程碑** 或以後里程碑的必需文檔。
 
@@ -580,7 +588,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 * 與管理AEM專案相關的其他最佳實務和准則：
    * [硬體尺寸指南](/help/managing/hardware-sizing-guidelines.md)
-   * [企業開發營運](/help/managing/enterprise-devops.md)
+   * [企業 DevOps](/help/managing/enterprise-devops.md)
    * [SEO和URL管理最佳實務](/help/managing/seo-and-url-management.md)
    * [AEM與網頁協助工具准則](/help/managing/web-accessibility.md)
    * [通用資料保護法規](/help/managing/data-protection-and-privacy.md)
@@ -597,7 +605,7 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
    * [安全性](/help/sites-developing/security.md)
    * [建議的部署](/help/sites-deploying/recommended-deploys.md)
-   * [企業開發營運](/help/managing/enterprise-devops.md)
+   * [企業 DevOps](/help/managing/enterprise-devops.md)
    * [硬體調整大小](/help/managing/hardware-sizing-guidelines.md)
    * AEM的概念：
       * [開發——基本概念](/help/sites-developing/the-basics.md)
