@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 2%
 
 ---
 
@@ -56,7 +59,7 @@ source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
 
 在個別外掛程式的設定節點上設定屬性，即可依MIME類型 `supportedMimeTypes` 選擇性啟用影像編輯器中的外掛程式。
 
-### 例如 {#example}
+### 範例 {#example}
 
 例如，假設裁切功能僅適用於GIF、JPEG、PNG、WEBP和TIFF影像。
 
