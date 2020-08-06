@@ -10,13 +10,16 @@ topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '877'
+ht-degree: 3%
 
 ---
 
 
 # 對應管理配置屬性 {#correspondence-management-configuration-properties}
 
-若要設定這些屬性，請在瀏覽器中開啟下列URL:並選 `https://<server>:<port>/<contextPath>/system/console/configMgr` 擇「對 **應管理配置」**。
+若要設定這些屬性，請在瀏覽器中開啟下列URL: `https://<server>:<port>/<contextPath>/system/console/configMgr` 並選擇「 **對應管理配置」**。
 
 Correponsence Management具有以下配置屬性：
 
@@ -151,13 +154,13 @@ Correponsence Management具有以下配置屬性：
   <tr> 
    <td><p>資料顯示格式</p> </td> 
    <td><p>指定資料的地區設定特定顯示格式</p> </td> 
-   <td><p>locale=en_US;dateFormat=dd-MM-yyyy;numberDecimalSeparator=。;numberGroupSeparator=,;numberUseGroupSeparator=truelocale=de_DE;dateFormat=dd-MM-yyyy;numberDecimalSeparator=,;numberGroupSeparator=。;numberUseGroupSeparator=truelocale=fr_FR;dateFormat=dd-MM-yyyy;numberDecimalSeparator=,;numberGroupSeparator= ;numberUseGroupSeparator=truelocale=ja_JP;dateFormat=dd-MM-yyyy;numberDecimalSeparator=。;numberGroupSeparator=,;numberUseGroupSeparator=true</p> </td> 
+   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=。; numberGroupSeparator=,; numberUseGroupSeparator=truelocale=de_DE; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator=。; numberUseGroupSeparator=truelocale=fr_FR; dateFormat=dd-MM-yyyy; numberDecimalSeparator=,; numberGroupSeparator= ; numberUseGroupSeparator=truelocale=ja_JP; dateFormat=dd-MM-yyyy; numberDecimalSeparator=。; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
    <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td><p>資料編輯格式</p> </td> 
    <td><p>編輯資料格式。 將資料寫入為字串或從字串剖析資料時，會使用此功能</p> </td> 
-   <td><p>locale=en_US;dateFormat=dd-MM-yyyy;numberDecimalSeparator=。;numberGroupSeparator=,;numberUseGroupSeparator=true</p> </td> 
+   <td><p>locale=en_US; dateFormat=dd-MM-yyyy; numberDecimalSeparator=。; numberGroupSeparator=,; numberUseGroupSeparator=true</p> </td> 
    <td>--<p> </p> </td> 
   </tr> 
   <tr> 
@@ -271,7 +274,7 @@ Correponsence Management具有以下配置屬性：
   <tr> 
    <td>臨時資料夾</td> 
    <td>臨時資料夾的位置。</td> 
-   <td>acm.tpm資料夾</td> 
+   <td>acm.tpmFolder</td> 
    <td> </td> 
   </tr> 
   <tr> 
