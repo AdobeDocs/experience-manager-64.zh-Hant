@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 2f45a965-590b-43b1-95c6-df4b74ad15b9
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +58,7 @@ AEM Forms for iOS應用程式已設定為在OSGi上與AEM Forms同步，僅支�
 
    啟用 `jcr:read` 使用者群組的權限。
 
-1. 按一下 **確定**。
+1. 按一下&#x200B;**「確定」**。
 
 ## AEM Forms應用程式無法載入HTML5表格（未快取） {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
 
@@ -63,13 +66,13 @@ AEM Forms for iOS應用程式已設定為在OSGi上與AEM Forms同步，僅支�
 
 執行下列步驟以解決問題：
 
-1. 在作者例項中，導覽至「 **Adobe Experience Manager >工具>設定工作區應用程式離線服務>立即設定」**。
+1. 在作者例項中，導覽至「 **Adobe Experience Manager >工具>設定Workspace App Offline Service >立即設定」**。
 1. 在「工 **作區應用程式離線服務** 」頁面中，按一 **下「手動資源快取」**。
 
-   URL:https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
+   URL: https://&lt;server>:&lt;port>/libs/fd/workspace-offline/content/config.html
 
 1. 在「手 **動資源快取** 」頁籤中，按一下 **** +按鈕以添加CRX路徑。
-1. 在「添 **加新資源」欄位中** ，鍵入：/etc.clientlibs/fd/xfaforms/I18N/en_US.js，然後按一下「 **新增」**。
+1. 在「添 **加新資源」欄位中** ，鍵入： /etc.clientlibs/fd/xfaforms/I18N/en_US.js，然後按一下「 **新增」**。
 1. 按一下&#x200B;**「儲存」**。
 
 ## AEM Forms不會在Windows上同步 {#aem-forms-do-not-sync-on-windows}
@@ -80,25 +83,25 @@ AEM Forms for iOS應用程式已設定為在OSGi上與AEM Forms同步，僅支�
 
 ## 不支援的Gradle版本 {#unsupported-version-of-gradle}
 
-**** 錯誤訊息：專案使用不支援的Gradle版本。
+**錯誤訊息：** 專案使用不支援的Gradle版本。
 
-當您在Android studio中建立AEM Forms應用程式時，會顯示錯誤訊息。 由於系統上支援的Gradle版本不受支援，因此出現問題。
+當您在Android Studio中建立AEM Forms應用程式時，會顯示錯誤訊息。 由於系統上支援的Gradle版本不受支援，因此出現問題。
 
-**** 解析度：按一 **下「修正Gradle包裝函式」並重新匯入專案** ，以解決問題。
+**解析度：** 按一 **下「修正Gradle包裝函式」並重新匯入專案** ，以解決問題。
 
 ![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
 ## Gradle和Android Gradle外掛程式相容性問題 {#gradle-and-android-gradle-plug-in-compatibility-issues}
 
-**** 錯誤訊息：Android Gradle外掛程式和Gradle版本不相容。
+**錯誤訊息：** Android Gradle外掛程式和Gradle版本不相容。
 
-當您從Android studio使用者介面的「建立」選 **單中選取「建立APK****** 」選項時，會顯示錯誤訊息。
+當您從Android Studio使用者介面的「建立」選 **單中選取「建立APK****** 」選項時，會顯示錯誤訊息。
 
 ![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 
-**** 解析度：開啟 **Gradle Scripts** > **gradle-wrapper.properties** 檔案並編輯 **distributionUrl屬性** 。
+**解析度：** 開啟 **Gradle Scripts** > **gradle-wrapper.properties** 檔案並編輯 **distributionUrl屬性** 。
 
-例如，Android studio控制台建議將Gradle版本降級為3.5。編輯gradle-wrapper. **properties檔**&#x200B;案的&#x200B;**distributionUrl中的版本** 。
+例如，Android Studio控制台建議將Gradle版本降級為3.5。 編輯gradle-wrapper. **properties檔**&#x200B;案的&#x200B;**distributionUrl中的版本** 。
 
 請 **再次選** 取「建立 **>建立APK** 」，以解決錯誤並產生。apk檔案。
 
