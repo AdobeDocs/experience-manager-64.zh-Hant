@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '2323'
+ht-degree: 2%
 
 ---
 
@@ -58,9 +61,11 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
 #### 屬性 {#properties}
 
-* **boolproperty**&#x200B;屬性的相對路徑，例如 `myFeatureEnabled` 或 `jcr:content/myFeatureEnabled`
+* **boolproperty**&#x200B;屬性的相對路徑，例如 
+`myFeatureEnabled` 或 `jcr:content/myFeatureEnabled`
 
-* **值**&#x200B;值，用於檢查屬 `true`性「」或「 `false`」
+* **值**&#x200B;值，用於檢查屬性， &quot; 
+`true`&quot; 或 &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -222,7 +227,7 @@ group.2_group.type=dam:Asset
 
 * **hasPermission**
 
-   當前用戶會話必須ALL對有問題的節點具有的逗號分隔JCR權限；例如 `jcr:write`, `jcr:modifyAccessControl`
+   當前用戶會話必須ALL對有問題的節點具有的逗號分隔JCR權限； 例如 `jcr:write`, `jcr:modifyAccessControl`
 
 ### 語言 {#language}
 
@@ -310,7 +315,7 @@ group.2_group.type=dam:Asset
 
 * **案例**
 
-   若設為&quot; `ignore`&quot;，則排序不區分大小寫，表示&quot;a&quot;在&quot;B&quot;之前；如果空或缺，則排序區分大小寫，表示&quot;B&quot;在&quot;a&quot;之前
+   若設為&quot; `ignore`&quot;，則排序不區分大小寫，表示&quot;a&quot;在&quot;B&quot;之前； 如果空或缺，則排序區分大小寫，表示&quot;B&quot;在&quot;a&quot;之前
 
 ### 路徑 {#path}
 
@@ -322,11 +327,11 @@ group.2_group.type=dam:Asset
 
 * **路徑**
 
-   路徑模式；根據具體情況，整個子樹將匹配(如附加在 `//*` xpath中，但請注意，這不包括基本路徑)(exact=false, default)或僅匹配完全路徑(可包括通配符( `*`));如果設定了self，則搜索包含基節點的整個子樹
+   路徑模式； 根據具體情況，整個子樹將匹配(如附加在 `//*` xpath中，但請注意，這不包括基本路徑)(exact=false, default)或僅匹配完全路徑(可包括通配符( `*`)); 如果設定了self，則搜索包含基節點的整個子樹
 
 * **精確**
 
-   如 `exact` 果為true/on，則精確路徑必須相符，但可包含簡單的萬用字元( `*`)、相符名稱，但不是&quot; `/`&quot;;如果為false（預設），則會包含所有子系（選用）
+   如 `exact` 果為true/on，則精確路徑必須相符，但可包含簡單的萬用字元( `*`)、相符名稱，但不是&quot; `/`&quot;; 如果為false（預設），則會包含所有子系（選用）
 
 * **扁平**
 
@@ -350,11 +355,11 @@ group.2_group.type=dam:Asset
 
 * **值**
 
-   值以檢查屬性；跟隨JCR屬性類型到字串轉換
+   值以檢查屬性； 跟隨JCR屬性類型到字串轉換
 
 * **N值**
 
-   使 `1_value`用 `2_value`, ...若要檢查多個值(依預 `OR` 設結合， `AND` 含if和=true)（自5.3起）
+   使 `1_value`用 `2_value`, ... 若要檢查多個值(依預 `OR` 設結合， `AND` 含if和=true)（自5.3起）
 
 * **與**
 
@@ -448,7 +453,7 @@ group.2_group.type=dam:Asset
 
 * **p.guessTotal**
 
-   建議：避免計算全部結果總和，代價高昂；指出總計上限的數字（例如1000，此數字可讓使用者獲得對粗細大小的足夠回饋，並提供精確數字以取得較小結果）或「 `true`」只計算最小必要 `p.offset` + `p.limit`
+   建議： 避免計算全部結果總和，代價高昂； 指出總計上限的數字（例如1000，此數字可讓使用者獲得對粗細大小的足夠回饋，並提供精確數字以取得較小結果）或「 `true`」只計算最小必要 `p.offset` + `p.limit`
 
 * **p.expert**
 
@@ -464,11 +469,11 @@ group.2_group.type=dam:Asset
 
    * **完整**:
 
-      sling JSON演算節點，並 `jcr:path` 指示點擊的路徑：預設情況下，只列出節點的直接屬性，包含一個更深的樹，其中 `p.nodedepth=N`0表示整個無窮子樹；添加 `p.acls=true` 以包括當前會話對給定結果項的JCR權限(映射： `create` `add_node``modify` = `set_property`= `delete` , `remove`= )
+      sling JSON演算節點，並 `jcr:path` 指示點擊的路徑： 預設情況下，只列出節點的直接屬性，包含一個更深的樹，其中 `p.nodedepth=N`0表示整個無窮子樹； 添加 `p.acls=true` 以包括當前會話對給定結果項的JCR權限(映射： `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
 
    * **選擇性**:
 
-      僅指定屬 `p.properties`性，即相對路徑的空格分隔（在URL中使用&quot;+&quot;）清單；如果相對路徑的深度大於1，則表示為子對象；特殊jcr:path屬性包含點擊的路徑
+      僅指定屬 `p.properties`性，即相對路徑的空格分隔（在URL中使用&quot;+&quot;）清單； 如果相對路徑的深度大於1，則表示為子對象； 特殊jcr:path屬性包含點擊的路徑
 
 ### savedquery {#savedquery}
 
@@ -496,7 +501,8 @@ group.2_group.type=dam:Asset
 
 * **類**&#x200B;似的絕對路徑，指向要查找相似節點的節點
 
-* **本**&#x200B;地指向子節點或當前節 `.` 點的相對路徑(可選，預設為「 `.`」)
+* **到子**&#x200B;體節點或 
+`.` 對於當前節點(可選，預設為&quot; `.`&quot;)
 
 ### tag {#tag}
 
@@ -508,11 +514,11 @@ group.2_group.type=dam:Asset
 
 * **標籤**
 
-   要尋找的標籤標題路徑，例如「資產屬性：方向／橫向」
+   要尋找的標籤標題路徑，例如「資產屬性： 方向／橫向」
 
 * **N值**
 
-   使 `1_value`用 `2_value`, ...若要檢查多個標籤(依預 `OR` 設結合， `AND` 含if和=true)（自5.6起）
+   使 `1_value`用 `2_value`, ... 若要檢查多個標籤(依預 `OR` 設結合， `AND` 含if和=true)（自5.6起）
 
 * **屬性**
 
@@ -532,7 +538,7 @@ group.2_group.type=dam:Asset
 
 * **N值**
 
-   使 `1_value`用 `2_value`, ...若要檢查多個標語(依預 `OR` 設結合， `AND` 含if和=true)（自5.6起）
+   使 `1_value`用 `2_value`, ... 若要檢查多個標語(依預 `OR` 設結合， `AND` 含if和=true)（自5.6起）
 
 * **屬性**
 
@@ -556,7 +562,7 @@ group.2_group.type=dam:Asset
 
 * **lang**
 
-   僅在特定本地化標籤標題中搜尋(例如&quot; `de`&quot;)
+   僅在特定本地化標籤標題中搜尋(例如 &quot; `de`&quot;)
 
 * **全部**
 
