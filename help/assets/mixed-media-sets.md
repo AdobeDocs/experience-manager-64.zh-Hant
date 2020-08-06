@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1477'
+ht-degree: 17%
 
 ---
 
@@ -27,7 +30,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >
 >如需「資產」使用者介面的詳細資訊，請參 [閱「使用Touch UI管理資產」](managing-assets-touch-ui.md)。
 
-## 快速入門：混合媒體集 {#quick-start-mixed-media-sets}
+## 快速入門： 混合媒體集 {#quick-start-mixed-media-sets}
 
 要使用混合媒體集快速啟動並運行，請執行以下步驟：
 
@@ -143,6 +146,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 若要新增資產——在工具列上，點選「新增 **[!UICONTROL 資產」]**。 導覽至資產。 對於您要新增的每個資產，將滑鼠指標暫留在資產的影像（而非資產名稱）上，然後點選核取標籤圖示。 在右上角，點選「 **[!UICONTROL Select（選擇）]**」。
    * 若要刪除資產——在左側面板中，點選「 **[!UICONTROL 資產]** 」（圖片圖示），然後選取資產。 在工具列列上點選「刪 **[!UICONTROL 除資產」]**。
    * 若要依資產名稱的遞增或遞減順序排序，請在左側面板中點選「 **[!UICONTROL 資產]** 」（圖片圖示）。 在「資產」標題的右 **[!UICONTROL 側]** ，點選上或下脫字型大小圖示。
+
    >[!NOTE]
    >
    >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card]** view or **[!UICONTROL Column]** view) navigate to the Mixed Media Set. 將滑鼠指標暫留在資產上，點選核取標籤圖示以加以選取。Press **[!UICONTROL Backspace]** on the keyboard, or tap **[!UICONTROL More]** (three dots) on the toolbar, then tap **[!UICONTROL Delete]**.
