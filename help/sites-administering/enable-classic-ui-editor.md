@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5fca5401-502d-483b-bfc1-ef53e2c041b7
 translation-type: tm+mt
 source-git-commit: 9fa15a44cf83a50538cea3fb37bcccf405f66738
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 4%
 
 ---
 
@@ -31,11 +34,11 @@ source-git-commit: 9fa15a44cf83a50538cea3fb37bcccf405f66738
 
    `http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
-1. 使用「覆蓋節點」選 **項建立覆蓋** ;例如：
+1. 使用「覆蓋節點」選 **項建立覆蓋** ; 例如：
 
    * **路徑**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **重疊位置**: `/apps/`
-   * **匹配節點類型**:活動（選擇複選框）
+   * **匹配節點類型**: 活動（選擇複選框）
 
 1. 將下列多值文字屬性新增至覆蓋節點：
 
