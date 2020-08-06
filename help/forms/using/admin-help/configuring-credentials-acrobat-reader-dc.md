@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 translation-type: tm+mt
 source-git-commit: 6a2455cb377a68254a5c58c6627c59716d284144
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 0%
 
 ---
 
 
 # 設定認證以搭配Acrobat Reader DC擴充功能使用{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
-若要套用PDF檔案的使用權，請使用Acrobat Reader DC擴充功能的有效憑證來設定AEM表單。 在安裝AEM表單時，可能已設定憑證。 如果您在執行Configuration manager時未設定Acrobat Reader DC擴充功能憑證，或者您需要匯入新憑證或取代憑證，則可使用「信任商店管理」頁面來設定。
+若要套用PDF檔案的使用權，請使用Acrobat Reader DC擴充功能的有效憑證來設定AEM表單。 在安裝AEM表單時，可能已設定憑證。 如果您在執行Configuration Manager時未設定Acrobat Reader DC擴充功能憑證，或者您需要匯入新憑證或取代憑證，則可使用「信任商店管理」頁面來設定。
 
 如果您使用評估憑證，請在移至生產環境時，以生產憑證來取代。 若要更新過期或評估憑證，請先刪除舊版Acrobat Reader DC擴充功能憑證。
 
