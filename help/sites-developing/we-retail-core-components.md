@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 1%
 
 ---
 
@@ -27,8 +30,9 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 1. 在「元件控制台」中開啟邊欄時，您可以篩選特定元件群組。 核心元件位於
 
-   * `.core-wcm`:標準核心元件
-   * `.core-wcm-form`:表單提交核心元件
+   * `.core-wcm`: 標準核心元件
+   * `.core-wcm-form`: 表單提交核心元件
+
    選擇 `.core-wcm`。
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
@@ -84,6 +88,6 @@ source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 
 ## 更多資訊 {#further-information}
 
-如需核心元件的詳細資訊，請參閱編寫檔案 [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) ，以取得核心元件功能的概觀，而開發人員檔案 [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) ，則可取得技術概觀。
+如需核心元件的詳細資訊，請參閱編寫檔案 [Core Components](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) ，以取得核心元件功能的概觀，而開發人員檔案 [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) ，則可取得技術概觀。
 
 此外，您可能希望進一步調查可編 [輯的範本](/help/sites-developing/we-retail-editable-templates.md)。 有關可編輯模板的完 [整詳細資訊，請參閱編寫文檔](/help/sites-authoring/templates.md) 「建立頁面模板」或開發人 [員文檔頁面模板——可編輯模板](/help/sites-developing/page-templates-editable.md) 。
