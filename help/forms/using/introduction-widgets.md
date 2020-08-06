@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 外觀框架依賴各種選項、事件（觸發器）和函式來擷取使用者與表單的互動，並回應模型變更以通知使用者。 此外：
 
-* 框架提供一組欄位外觀的選項。 這些選項是鍵值配對，並分為兩類：常用選項和欄位類型特定選項。
+* 框架提供一組欄位外觀的選項。 這些選項是鍵值配對，並分為兩類： 常用選項和欄位類型特定選項。
 * 外觀是合約的一部分，會觸發一組事件，例如進入和退出。
 * 實施一組函式時需要外觀。 有些函式是常用的，而有些函式是特定於欄位類型函式。
 
@@ -127,19 +130,19 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <th>說明</th> 
   </tr>
   <tr>
-   <td>焦點：函式()</td> 
+   <td>焦點： 函式()</td> 
    <td>專注於現場。</td> 
   </tr>
   <tr>
-   <td>按一下：函式()</td> 
+   <td>按一下： 函式()</td> 
    <td>將焦點放在欄位上，並呼叫XFA_CLICK_EVENT。</td> 
   </tr>
   <tr>
-   <td><p>markError:function(errorMessage, errorType)<br /> err <br /><em>orMessage:代表 </em>error<br /> <em>errorType的字串：字串("warning"/"error")</em></p> <p><strong>注意</strong>:僅適用於HTML5表單。</p> </td> 
+   <td><p>markError:function(errorMessage, errorType)<br /> err <br /><em>orMessage: 代表 </em>error<br /> <em>errorType的字串： 字串("warning"/"error")</em></p> <p><strong>注意</strong>: 僅適用於HTML5表單。</p> </td> 
    <td>傳送錯誤訊息和錯誤類型至介面工具集。 介面工具集會顯示錯誤。</td> 
   </tr>
   <tr>
-   <td><p>clearError:函式()</p> <p><strong>注意</strong>:僅適用於HTML5表單。</p> </td> 
+   <td><p>clearError: 函式()</p> <p><strong>注意</strong>: 僅適用於HTML5表單。</p> </td> 
    <td>如果欄位中的錯誤已修正，則呼叫。 介面工具集會隱藏錯誤。</td> 
   </tr>
  </tbody>
@@ -149,7 +152,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 所有自訂Widget都應符合上述規格。 若要使用不同欄位的功能，介面工具集必須符合該特定欄位的准則。
 
-### 文字編輯：文字欄位 {#textedit-text-field}
+### 文字編輯： 文字欄位 {#textedit-text-field}
 
 <table> 
  <tbody>
@@ -166,13 +169,13 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <td>可在欄位中輸入的字元數上限。</td> 
   </tr>
   <tr>
-   <td><p>limitLengthToVisibleArea</p> <p><strong>注意</strong>:僅適用於HTML5表單</p> </td> 
+   <td><p>limitLengthToVisibleArea</p> <p><strong>注意</strong>: 僅適用於HTML5表單</p> </td> 
    <td>指定文字寬度超過介面工具集寬度時的文字欄位行為。</td> 
   </tr>
  </tbody>
 </table>
 
-### ChoiceList:下拉式清單、ListBox {#choicelist-dropdownlist-listbox}
+### ChoiceList: 下拉式清單、ListBox {#choicelist-dropdownlist-listbox}
 
 <table> 
  <tbody>
@@ -186,10 +189,10 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   </tr>
   <tr>
    <td>項目<br /> </td> 
-   <td>要顯示為選項的對象陣列。 每個對象包含兩個屬性-<br /> save:要保存的值，顯示：值。<br /> <br /> </td> 
+   <td>要顯示為選項的對象陣列。 每個對象包含兩個屬性-<br /> save: 要保存的值，顯示： 值。<br /> <br /> </td> 
   </tr>
   <tr>
-   <td><p>可編輯</p> <p><strong>注意</strong>:僅適用於HTML5表單。<br /> </p> </td> 
+   <td><p>可編輯</p> <p><strong>注意</strong>: 僅適用於HTML5表單。<br /> </p> </td> 
    <td>如果值為true，則會在介面工具集中啟用自訂文字輸入。<br /> </td> 
   </tr>
   <tr>
@@ -212,11 +215,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    <th>說明</th> 
   </tr>
   <tr>
-   <td><p>addItem:<em> function(itemValues)<br /> itemValues:包含顯示的物件並儲存值 <br /> {sDisplayVal:&lt;displayValue&gt;, sSaveVal:&lt;保存值&gt;}</em></p> </td> 
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: 包含顯示的物件並儲存值 <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;保存值&gt;}</em></p> </td> 
    <td>新增項目至清單。</td> 
   </tr>
   <tr>
-   <td>deleteItem<em>:函式(nIndex)<br /> nIndex:要從清單中刪除的項的索引<br /></em><br /><br /> </td> 
+   <td>deleteItem<em>: 函式(nIndex)<br /> nIndex: 要從清單中刪除的項的索引<br /> </em><br /> <br /> </td> 
    <td>從清單中刪除選項。</td> 
   </tr>
   <tr>
@@ -226,7 +229,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
  </tbody>
 </table>
 
-### 數值編輯：NumericField、DecimalField {#numericedit-numericfield-decimalfield}
+### 數值編輯： NumericField、DecimalField {#numericedit-numericfield-decimalfield}
 
 | 選項 | 說明 |
 |---|---|
@@ -236,7 +239,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 | 零 | 欄位區域設定中零的字串表示。 |
 | 小數點 | 欄位區域設定中小數的字串表示。 |
 
-### CheckButton:RadioButton、CheckBox {#checkbutton-radiobutton-checkbox}
+### CheckButton: RadioButton、CheckBox {#checkbutton-radiobutton-checkbox}
 
 <table> 
  <tbody>
@@ -259,7 +262,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
  </tbody>
 </table>
 
-### DateTimeEdit:（日期欄位） {#datetimeedit-datefield}
+### DateTimeEdit: （日期欄位） {#datetimeedit-datefield}
 
 | 選項 | 說明 |
 |---|---|
