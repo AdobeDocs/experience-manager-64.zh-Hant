@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 3%
 
 ---
 
@@ -52,7 +55,7 @@ Communities元件的當前配置位於中 `cq.social.  scf   clientlib`，位於
 
 不建議修改cq.social.scf clientlib，因為未來的升級可能會覆寫任何編輯。
 
-### 自訂範例：內嵌連結 {#example-customization-inline-links}
+### 自訂範例： 內嵌連結 {#example-customization-inline-links}
 
 由於安全性的考慮，在預設情況下，超連結選項不會包含在提供給成員的豐富文字圖示集中。 在UGC中允許href時，其惡意攻擊能力較強。
 
