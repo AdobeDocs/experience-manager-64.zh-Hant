@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2342'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ DocConverter服務可將PDF檔案轉換為PDA/A檔案。 您可以使用此服�
 
 您可以使用DocConverter服務將PDF檔案轉換為PDF/A檔案。 由於PDF/A是長期保存檔案內容的封存格式，所以所有字型都已內嵌，檔案也未壓縮。 因此，PDF/A檔案通常比標準PDF檔案大。 此外，PDF/A檔案不包含音訊和視訊內容。 在將PDF檔案轉換為PDF/A檔案之前，請確定PDF檔案不是PDF/A檔案。
 
-PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別在於邏輯結構（可訪問性）支援，而邏輯結構（可訪問性）支援對於符合性級別B不是必需的。無論符合程度如何，PDF/A-1都規定所有字型都內嵌在產生的PDF/A檔案中。 目前，驗證（和轉換）只支援PDF/A-1b。
+PDF/A-1規格包含兩個符合等級，即A和B。 兩者之間的主要區別在於邏輯結構（可訪問性）支援，而邏輯結構（可訪問性）支援對於符合性級別B不是必需的。 無論符合程度如何，PDF/A-1都規定所有字型都內嵌在產生的PDF/A檔案中。 目前，驗證（和轉換）只支援PDF/A-1b。
 
 雖然PDF/A是封存PDF檔案的標準，但如果標準PDF檔案符合您公司的需求，則不必使用PDF/A進行封存。 PDF/A標準的目的，在於建立PDF檔案，以滿足長期封存和檔案保存的需求。
 
@@ -60,14 +63,14 @@ PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application server上，則為必需）
+* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
+* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
 
-如需這些JAR檔案位置的詳細資訊，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如需這些JAR檔案位置的詳細資訊，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **建立DocConvert客戶端**
 
-在以寫程式方式執行DocConverter操作之前，必須建立DocConverter客戶端。 如果您使用Java API，請建立物 `DocConverterServiceClient` 件。 如果您使用DocConverter web服務API，請建立對 `DocConverterServiceService` 像。
+在以寫程式方式執行DocConverter操作之前，必須建立DocConverter客戶端。 如果您使用Java API，請建立物 `DocConverterServiceClient` 件。 如果您使用DocConverter Web服務API，請建立對 `DocConverterServiceService` 像。
 
 **參考PDF檔案以轉換為PDF/A檔案**
 
@@ -91,7 +94,7 @@ PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別�
 
 [使用web service API將檔案轉換為PDF/A檔案](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -126,21 +129,22 @@ PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別�
 
    * 包 `com.adobe.idp.Document` 含要轉換的PDF檔案的物件
    * 指定 `PDFAConversionOptionSpec` 追蹤資訊的物件
+
    此方 `toPDFA` 法會傳回 `PDFAConversionResult` 包含PDF/A檔案的物件。
 
 1. 儲存PDF/A檔案
 
    * 叫用物件的方法，以擷取 `PDFAConversionResult` PDF/A文 `getPDFA` 件。 此方法傳回 `com.adobe.idp.Document` 代表PDF/A檔案的物件。
    * 建立 `java.io.File` 代表PDF/A檔案的物件。 請確定副檔名為。pdf。
-   * 調用物件的方法並傳遞物件，以PDF/A `com.adobe.idp.Document` 資料 `copyToFile` 填入檔案 `java.io.File` 中。
+   * 調用物件的方法並傳遞物件，以PDF/A `com.adobe.idp.Document` 資料填 `copyToFile` 入檔案 `java.io.File` 中。
 
 **另請參閱**
 
 [使用PDF/A檔案](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[快速入門（SOAP模式）:使用Java API將檔案轉換為PDF/A檔案](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API將檔案轉換為PDF/A檔案](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -177,6 +181,7 @@ PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別�
 
    * 包 `BLOB` 含要轉換的PDF檔案的物件
    * 指定 `PDFAConversionOptionSpec` 追蹤資訊的物件
+
    此方 `toPDFA` 法會傳回 `PDFAConversionResult` 包含PDF/A檔案的物件。
 
 1. 儲存PDF/A檔案
@@ -222,14 +227,14 @@ PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application server上，則為必需）
+* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
+* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
 
-如需這些JAR檔案位置的詳細資訊，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如需這些JAR檔案位置的詳細資訊，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **建立DocConvert客戶端**
 
-在以寫程式方式執行DocConverter操作之前，必須建立DocConverter客戶端。 如果您使用Java API，請建立物 `DocConverterServiceClient` 件。 如果您使用DocConverter web服務API，請建立對 `DocConverterServiceService` 像。
+在以寫程式方式執行DocConverter操作之前，必須建立DocConverter客戶端。 如果您使用Java API，請建立物 `DocConverterServiceClient` 件。 如果您使用DocConverter Web服務API，請建立對 `DocConverterServiceService` 像。
 
 **參考用來判斷PDF/A相容性的PDF檔案**
 
@@ -249,7 +254,7 @@ PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別�
 
 [使用web service API判斷PDF/A符合性](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -283,15 +288,16 @@ PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別�
 
    * 包 `com.adobe.idp.Document` 含PDF檔案的物件。
    * 指定 `PDFAValidationOptionSpec` 運行時選項的對象。
+
    方 `isPDFA` 法返回 `PDFAValidationResult` 包含此操作結果的對象。
 
 **另請參閱**
 
 [使用PDF/A檔案](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[快速入門（SOAP模式）:使用Java API判斷PDF/A相容性](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API判斷PDF/A相容性](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -329,6 +335,7 @@ PDF/A-1規格包含兩個符合等級，即A和B。兩者之間的主要區別�
 
    * 包 `BLOB` 含PDF檔案的物件。
    * 包 `PDFAValidationOptionSpec` 含運行時選項的對象。
+
    方 `isPDFA` 法返回 `PDFAValidationResult` 包含此操作結果的對象。
 
 **另請參閱**
