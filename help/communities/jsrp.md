@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
 source-git-commit: 43421a3068fdc8cc7a88c98a2e9045b54cc8f99e
+workflow-type: tm+mt
+source-wordcount: '464'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 43421a3068fdc8cc7a88c98a2e9045b54cc8f99e
 
 在作者環境中，要訪問儲存配置控制台
 
-* 從全域導覽：「工 **[!UICONTROL 具>社群>儲存設定」]**
+* 從全域導覽： **[!UICONTROL 「工具>社群>儲存組態」]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
@@ -48,7 +51,7 @@ source-git-commit: 43421a3068fdc8cc7a88c98a2e9045b54cc8f99e
 
 * 作者：
 
-   * 從全域導覽：工 **[!UICONTROL 具>部署>複製]**
+   * 從全域導覽： **[!UICONTROL 工具>部署>複製]**
    * 選擇 **[!UICONTROL 激活樹]**
    * **[!UICONTROL 開始路徑]**:
 
