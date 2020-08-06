@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
 
 ### 根據Maven設定您的AEM專案 {#set-up-your-aem-project-based-on-maven}
 
-接著，使用Maven來設定您的專案，如 [How-To Build AEM Projects using Apache Maven中所述](/help/sites-developing/ht-projects-maven.md)。
+接著，使用Maven設定專案，如使用Apache Maven [建立AEM專案中所述](/help/sites-developing/ht-projects-maven.md)。
 
 若要開始在IntelliJ IDEA中使用AEM專案，「5分鐘快速入 [門」中的基本設定就足夠](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) 。
 
@@ -49,7 +52,7 @@ source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
 此外，IntelliJ IDEA也可提供使用JSP的支援，例如
 
 * 自動完成標籤庫
-* 對以及 `<cq:defineObjects />``<sling:defineObjects />`
+* 對以及 `<cq:defineObjects />` `<sling:defineObjects />`
 
 為了讓AEM發揮作用，請依照 [How-To Work with JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) [How-To Build AEM Projects using Apache Maven中的指示進行](/help/sites-developing/ht-projects-maven.md)。
 
