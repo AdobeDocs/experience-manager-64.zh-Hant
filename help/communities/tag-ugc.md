@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 3%
 
 ---
 
@@ -41,7 +44,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 如需開 [發人員資訊](tag.md) ，請參閱Tag Essentials。
 
-請參 [閱使用Social Tag Cloud](tagcloud.md) ，將Social Tag cloud元件新增至頁面，以利使用套用的標籤搜尋已張貼的UGC。
+請參 [閱使用Social Tag Cloud](tagcloud.md) ，將Social Tag Cloud元件新增至頁面，以利使用套用的標籤搜尋已張貼的UGC。
 
 ### 標籤權限 {#tag-permissions}
 
