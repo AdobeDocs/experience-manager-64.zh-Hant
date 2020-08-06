@@ -169,6 +169,7 @@ ht-degree: 0%
    * 包 `java.lang.String` 含要使用的安全設定名稱的對象。
    * 可選物 `com.adobe.idp.Document` 件，包含產生PDF檔案時要套用的設定。
    * 可選物 `com.adobe.idp.Document` 件，包含要套用至PDF檔案的中繼資料資訊。
+
    此方 `createPDF2` 法會傳回 `CreatePDFResult` 包含新PDF檔案和記錄檔資訊的物件。 日誌檔案通常包含由轉換請求生成的錯誤或警告消息。
 
 1. 擷取結果。
@@ -177,6 +178,7 @@ ht-degree: 0%
 
    * 叫用 `CreatePDFResult` 物件的方 `getCreatedDocument` 法，以傳回物 `com.adobe.idp.Document` 件。
    * 叫用物 `com.adobe.idp.Document` 件的方 `copyToFile` 法，從先前步驟中建立的物件擷取PDF檔案。
+
    如果您使用 `createPDF2` 方法來取得記錄檔（不適用於HTML轉換），請執行下列動作：
 
    * 叫用 `CreatePDFResult` 物件的方 `getLogDocument` 法。 這會傳回 `com.adobe.idp.Document` 物件。
@@ -221,7 +223,7 @@ ht-degree: 0%
 1. 擷取檔案以轉換為PDF檔案。
 
    * 使用其 `BLOB` 建構函式建立物件。 對 `BLOB` 像用於儲存要轉換為PDF文檔的檔案。
-   * 通過調用 `System.IO.FileStream` 其建構子建立對象。 傳遞一個字串值，代表要轉換之檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用 `System.IO.FileStream` 其建構子建立對象。 傳遞一個字串值，該值代表要轉換的檔案位置以及開啟檔案的模式。
    * 建立儲存物件內容的位元組 `System.IO.FileStream` 陣列。 您可以取得物件的屬性，以決定位元組 `System.IO.FileStream` 的大 `Length` 小。
    * 調用物件的方法並傳遞 `System.IO.FileStream` 位元組陣列、 `Read` 開始位置和串流長度，以串流資料填入位元組陣列。
    * 通過為 `BLOB` 其屬性指定字 `MTOM` 節陣列的內容來填充對象。
@@ -481,6 +483,7 @@ ht-degree: 0%
    * 包 `java.lang.String` 含Adobe PDF設定名稱的物件。
    * 指定 `ConvertPDFFormatType` 轉換的目標檔案類型的對象。
    * 可選物 `com.adobe.idp.Document` 件，包含產生PDF檔案時要套用的設定。
+
    該方 `exportPDF2` 法返回包 `ExportPDFResult` 含已轉換檔案的對象。
 
 1. 轉換PDF檔案。
@@ -540,7 +543,7 @@ ht-degree: 0%
    * 表示 `BLOB` 要轉換的PDF檔案的物件。
    * 包含要轉換的檔案路徑名的字串。
    * 指定 `java.lang.String` 檔案位置的對象。
-   * 指定轉換目標檔案類型的字串對象。 指定 `RTF`。
+   * 指定轉換目標檔案類型的字串對象。 Specify `RTF`.
    * 可選物 `BLOB` 件，包含產生PDF檔案時要套用的設定。
    * 由方法填 `BLOB` 入的輸出參 `ExportPDF2` 數。 該方 `ExportPDF2` 法使用轉換的文檔填充此對象。 （此參數值僅適用於Web服務調用）。
 
@@ -637,7 +640,7 @@ AppMon使用標準的Win32 API與協力廠商應用程式互動，以便傳輸UI
 
 ### 關於指令碼和對話框XML檔案 {#about-the-script-and-dialog-xml-files}
 
-指令碼XML檔案會引導「產生PDF」服務以使用者在應用程式對話方塊中導覽的方式，在應用程式對話方塊中導覽。 指令碼XML檔案也會指示「產生PDF」服務執行按鈕、選取或取消選取核取方塊或選取功能表項目等動作，以回應對話方塊。
+指令碼XML檔案會引導「產生PDF」服務以使用者在應用程式對話方塊中導覽的方式，在應用程式對話方塊中導覽。 指令碼XML檔案也會指示「產生PDF」服務執行按鈕、選取或取消選取核取方塊或選取選單項目等動作，以回應對話方塊。
 
 相反地，對話框XML檔案只對對話框做出響應，其操作類型與指令碼XML檔案中使用的操作類型相同。
 
