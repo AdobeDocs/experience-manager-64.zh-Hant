@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 translation-type: tm+mt
 source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
+workflow-type: tm+mt
+source-wordcount: '2123'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +82,7 @@ source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
 
 使用類建立的DDX文 `org.w3c.dom` 檔必須轉換為對 `com.adobe.idp.Document` 像。 要在使用Java API時執行此任務，請使用Java XML轉換類。 如果您使用web services，請將DDX檔案轉換為物 `BLOB` 件。
 
-**參考PDF檔案以反匯編**
+**參考PDF檔案以進行反匯編**
 
 要反匯編PDF文檔，請參考表示要反匯編的PDF文檔的PDF檔案。 傳遞至Assembler服務時，會針對檔案中的每個第1級書籤傳回個別的PDF檔案。
 
@@ -101,7 +104,7 @@ source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
 
 [使用web service API動態建立DDX檔案](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -170,6 +173,7 @@ source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
    * 代表 `com.adobe.idp.Document` 動態建立的DDX檔案的物件
    * 包含 `java.util.Map` 要反匯編的PDF文檔的對象
    * 指定 `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 運行時選項（包括預設字型和作業日誌級別）的對象
+
    此方 `invokeDDX` 法會傳回包 `com.adobe.livecycle.assembler.client.AssemblerResult` 含已拆解PDF檔案的物件，以及發生的任何例外。
 
 1. 儲存已拆解的PDF檔案。
@@ -182,9 +186,9 @@ source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API動態建立DDX檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API動態建立DDX檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -194,7 +198,7 @@ source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 在設定服務引用時，請確保使用以下WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 在設定服務引用時，請確保使用以下WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -258,6 +262,7 @@ source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
    * 代表 `BLOB` 動態建立的DDX檔案的物件
    * 包含 `mapItem` 輸入PDF檔案的陣列
    * 指定 `AssemblerOptionSpec` 運行時選項的對象
+
    該方 `invokeDDX` 法返回 `AssemblerResult` 一個對象，該對象包含作業結果和所發生的任何異常。
 
 1. 儲存已拆解的PDF檔案。
