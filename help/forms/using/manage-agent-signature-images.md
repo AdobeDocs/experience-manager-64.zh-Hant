@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
 
 agentSignatureImage DDE是表示代理簽名映像的計算DDE。 此計算DDE的表達式使用「表達式管理器」構建塊公開的新自定義函式。 此自訂函式將agentID和agentFolder作為輸入參數，並根據這些參數讀取影像內容。 SystemContext系統資料字典為「通信管理」中的字母提供了對當前系統上下文中資訊的訪問。 系統上下文包括有關當前登錄用戶和活動配置參數的資訊。
 
-您可以在cmuserroot資料夾下新增影像。 在 [Correponsent Management Configuration Properties](/help/forms/using/cm-configuration-properties.md)（對應管理配置屬性）中，使用CM User root屬性，可以更改從中獲取代理簽名映像的資料夾。
+您可以在cmuserroot資料夾下新增影像。 在 [Correponsent Management Configuration Properties](/help/forms/using/cm-configuration-properties.md)（對應管理配置屬性）中，使用CM User Root屬性，可以更改從中獲取代理簽名映像的資料夾。
 
 agentFolder DDE的值取自「對應管理」配置屬性的CMUserRoot配置參數。 預設情況下，此配置參數指向CRX儲存庫中的/content/cmUserRoot。 您可以在配置屬性中更改CMUserRoot配置的值。\
 您也可以覆寫預設自訂函式，以定義您自己用來擷取使用者簽名影像的邏輯。
@@ -47,16 +50,16 @@ agentFolder DDE的值取自「對應管理」配置屬性的CMUserRoot配置參�
 1. 在「內容檔案總管」中，導覽至cmUserRoot資料夾，並在其中新增代理簽名影像。
 
    1. 前往 `https://[server]:[port]/crx/explorer/index.jsp`. 視需要以管理員身分登入。
-   1. 按一 **下「內容總管**」。 「內容總管」會在新視窗中開啟。
+   1. 按一 **下「內容總管**」。 「內容檔案總管」會在新視窗中開啟。
    1. 在「內容檔案總管」中，導覽至cmUserRoot資料夾並選取它。 按一下右鍵 **cmUserRoot** 資料夾並選擇 **新建節點**。
 
       ![cmUserRoot中的新節點](assets/2_cmuserroot_newnode.png)
 
       在新節點的行中輸入以下條目，然後按一下綠色複選標籤。
 
-      **** 名稱：JohnDoe（或您的代理簽名檔案的名稱）
+      **名稱：** JohnDoe（或您的代理簽名檔案的名稱）
 
-      **** 類型：nt：檔案
+      **類型：** nt：檔案
 
       在該 `cmUserRoot` 資料夾下，將建立一個名為 `JohnDoe` （或您在上一步中指定的名稱）的新資料夾。
 
