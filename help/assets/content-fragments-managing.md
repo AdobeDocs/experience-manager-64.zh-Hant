@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 translation-type: tm+mt
 source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+workflow-type: tm+mt
+source-wordcount: '1509'
+ht-degree: 11%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 >[!NOTE]
 >
->然後內容片段會用於編寫頁面；請參 [閱使用內容片段編寫頁面](/help/sites-authoring/content-fragments.md)。
+>然後內容片段會用於編寫頁面； 請參 [閱使用內容片段編寫頁面](/help/sites-authoring/content-fragments.md)。
 
 ## 建立內容片段 {#creating-content-fragments}
 
@@ -35,7 +38,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 >[!NOTE]
 >
->如需范 [本的詳細資訊](/help/sites-developing/customizing-content-fragments.md) ，請參閱開發內容片段；用於簡單內容片段。
+>如需范 [本的詳細資訊](/help/sites-developing/customizing-content-fragments.md) ，請參閱開發內容片段； 用於簡單內容片段。
 
 ### 建立內容片段 {#creating-a-content-fragment}
 
@@ -48,8 +51,9 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
    * 這可以是：
 
       * [範本](/help/sites-developing/content-fragment-templates.md) -例如簡 **[!UICONTROL 單片段]**
-      * [模型](content-fragments-models.md) -用於建立需要結構化內容的片段；例如 **Airport模型**
+      * [模型](content-fragments-models.md) -用於建立需要結構化內容的片段； 例如 **Airport模型**
    * 將顯示所有可用的模板和模型。
+
    選取後，請使 **[!UICONTROL 用]** 「下一步」繼續。
 
    ![cfm-6420-15](assets/cfm-6420-15.png)
@@ -70,9 +74,9 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
       * **[!UICONTROL 名稱]**
 
-         姓名；將用於形成URL。
+         姓名； 將用於形成URL。
 
-         強制；將會自動從標題衍生，但可以更新。
+         強制； 將會自動從標題衍生，但可以更新。
 
 
 1. 選擇 **[!UICONTROL Create]**  (建立) 以完成操作，然後選擇 **[!UICONTROL Open]** the fragment for editing (開啟片段以進行編輯) 或返回控制 **[!UICONTROL 台完成]**。
@@ -81,8 +85,8 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 在 **[!UICONTROL Assets]** Console中，您的內容片段可使用一系列動作：
 
-* 從工具列；在選擇片段後，所有適當的動作都可供使用。
-* 快 [速行動](/help/sites-authoring/basic-handling.md#quick-actions);個別片段卡可用動作的子集。
+* 從工具列； 在選擇片段後，所有適當的動作都可供使用。
+* 快 [速行動](/help/sites-authoring/basic-handling.md#quick-actions); 個別片段卡可用動作的子集。
 
 ![cfm-6420-17](assets/cfm-6420-17.png)
 
@@ -90,7 +94,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 * **[!UICONTROL 下載]**
 
-   * 將片段儲存為ZIP檔案；您可以定義是否要包含元素、變數、中繼資料。
+   * 將片段儲存為ZIP檔案； 您可以定義是否要包含元素、變數、中繼資料。
 
 * **[!UICONTROL 建立]**
 * **[!UICONTROL 結帳]**
@@ -127,10 +131,11 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 >若要編輯內容片段，您需 [要適當權限](/help/sites-developing/customizing-content-fragments.md#asset-permissions)。 如果您遇到問題，請與系統管理員聯繫。
 
 1. 使用 **[!UICONTROL Assets]** 主控台導覽至內容片段的位置。
-1. 開啟片段以供編輯，方法為：
+1. 開啟片段以進行編輯，方法為：
 
    * 按一下／點選片段連結（這取決於控制台檢視）。
    * 選取片段，然後從工 **[!UICONTROL 具列]** 「編輯」。
+
    片段編輯器將開啟：
 
    ![cfm-6420-18](assets/cfm-6420-18.png)
@@ -145,10 +150,11 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 1. 使用側面板中的圖示，在三種模式中導覽：
 
-   * 變化：編 [輯內容](#editing-the-content-of-your-fragment) , [管理變數](#creating-and-managing-variations-within-your-fragment)
+   * 變化： [編輯內容](#editing-the-content-of-your-fragment) , [管理變數](#creating-and-managing-variations-within-your-fragment)
    * [註解](content-fragments-variations.md#annotating-a-content-fragment)
    * [相關聯的內容](#associating-content-with-your-fragment)
    * [中繼資料](#viewing-and-editing-the-metadata-properties-of-your-fragment)
+
    ![cfm-10](assets/cfm-10.png)
 
 1. 進行變更後，請視需 **[!UICONTROL 要使用]** 「 **[!UICONTROL 儲存]** 」或「取消」。
@@ -175,7 +181,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
    >[!NOTE]
    >
-   >在選擇「保存」之前，可以保留在編輯器中，進行一系列 **[!UICONTROL 更改]**。
+   >在選擇「保存」之前，可以保留在編輯器中並進行一系列 **[!UICONTROL 更改]**。
 
    >[!CAUTION]
    >
@@ -199,7 +205,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
    >[!NOTE]
    >
-   >自動保存間隔可使用該機制進行 `/conf` 配置。
+   >自動保存間隔可使用該機制 `/conf` 配置。
    >
    >預設值，請參閱：
    >
@@ -247,6 +253,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 >* 所有資產的標準功能
 >* 在時間軸中製作
 >* 與片段資產相關
+
 >
 >
 註解（適用於內容片段）包括：
@@ -277,7 +284,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
    * 插入的文本——綠色
    * 已取代文字——藍色
 
-* 全螢幕圖示可讓您自行開啟任一版本；然後切換回平行檢視
+* 全螢幕圖示可讓您自行開啟任一版本； 然後切換回平行檢視
 * 您可以 **[!UICONTROL 回復]** 到特定版本
 * **[!UICONTROL 完成]** ，將返回控制台
 
@@ -287,7 +294,7 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## 回復為版本 {#reverting-to-a-version}
+## 回復為版本  {#reverting-to-a-version}
 
 您可以回復到特定版本的片段：
 
@@ -307,8 +314,8 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 必須發佈內容片段才能在發佈環境中使用。 可發佈：
 
-* 建立後；從「資 **[!UICONTROL 產]** 」主控台。
-* 當您發 [布使用片段的頁面時](/help/sites-authoring/content-fragments.md#publishing);片段將列在頁面參考中。
+* 建立後； 從「資 **[!UICONTROL 產]** 」主控台。
+* 當您發 [布使用片段的頁面時](/help/sites-authoring/content-fragments.md#publishing); 片段將列在頁面參考中。
 
 >[!CAUTION]
 >
