@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 如果您AEM表單安裝的使用者使用Content Services（已過時）的資料擷取功能，建議您為這些使用者建立具有唯讀存取權的角色。
 
-***注意&#x200B;**:Adobe® LiveCycle® Content Services ES（已過時）是與LiveCycle一起安裝的內容管理系統。 它可讓使用者設計、管理、監控和最佳化以人為中心的流程。 內容服務（已過時）支援將於2014年12月31日截止。 請參閱[Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。 如需有關設定Content Services（已過時）的資訊，請參[閱管理Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)。*
+***注意&#x200B;**: Adobe® LiveCycle® Content Services ES（已過時）是與LiveCycle一起安裝的內容管理系統。 它可讓使用者設計、管理、監控和最佳化以人為中心的流程。 內容服務（已過時）支援將於2014年12月31日截止。 請參閱[Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。 如需有關設定Content Services（已過時）的資訊，請參[閱管理Content Services](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)。*
 
 資料擷取需要您指派使用者角色來存取SampleReaderExtensionsCredential。 您可以指派標準的信任管理員角色，但請考慮此角色為一般的非管理使用者提供強大的管理員權限，以控制PKI信任設定並管理PKI認證，這可能會危及您在生產環境中安裝AEM表單的安全性。 建議AEM Forms系統管理員建立僅授與信任商店唯讀存取權的角色，並將此新角色指派給使用資料擷取的非管理員使用者。
 
