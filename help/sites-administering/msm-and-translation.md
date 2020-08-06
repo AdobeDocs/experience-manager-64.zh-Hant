@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
 source-git-commit: d045065f530a643268a84276b067830b0547cbf9
+workflow-type: tm+mt
+source-wordcount: '351'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 
 * Multi Site Manager(MSM)可讓您在多個位置使用相同的網站內容，同時允許變化：
 
-   * [重複使用內容：多網站管理員和即時副本](/help/sites-administering/msm.md)
+   * [重複使用內容： 多網站管理員和即時副本](/help/sites-administering/msm.md)
 
 * 翻譯可讓您自動翻譯頁面內容、資產和使用者產生的內容，以建立和維護多語言網站：
 
@@ -51,6 +54,7 @@ source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 >
 >* [MSM](/help/sites-administering/msm.md) 管理從藍圖（如全域主版）到即時副本（如本地站點）的語言邊界內的翻譯內容的部署。
 >* AEM [的翻譯整合](/help/sites-administering/translation.md) 功能與協力廠商的翻譯管理服務搭配使用，可管理語言並將內容翻譯成這些不同的語言。
+
 >
 >
 若是更進階的使用案例，MSM也可跨語言母版使用。
@@ -59,7 +63,7 @@ source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 >
 >針對所有使用案例，建議您閱讀下列最佳實務：
 >
->* [MSM的最佳實務](/help/sites-administering/msm-best-practices.md);特別是：
+>* [MSM的最佳實務](/help/sites-administering/msm-best-practices.md); 特別是：
    >
    >   
    * [建立網站](/help/sites-administering/msm-best-practices.md#create-site)
