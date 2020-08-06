@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
 source-git-commit: a750aeb9f41347da93f1ceb16c5646bc94bee67b
+workflow-type: tm+mt
+source-wordcount: '1664'
+ht-degree: 0%
 
 ---
 
@@ -113,6 +116,7 @@ Forms服務會建立必須寫入客戶端Web瀏覽器的表單資料流。 當�
    * 存 `PDFFormRenderSpec` 儲在客戶端上渲染表單所需運行時選項的對象。
    * 包 `URLSpec` 含Forms服務渲染表單所需的URI值的對象。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
+
    該方 `renderPDFForm` 法返回包 `FormsResult` 含必須寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
@@ -127,7 +131,7 @@ Forms服務會建立必須寫入客戶端Web瀏覽器的表單資料流。 當�
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API在用戶端轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API在用戶端轉譯表單](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -164,6 +168,7 @@ Forms服務會建立必須寫入客戶端Web瀏覽器的表單資料流。 當�
    * 由方 `javax.xml.rpc.holders.LongHolder` 法填充的空對象。 （此引數將儲存表單中的頁數）。
    * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空對象。 （此引數將儲存地區值）。
    * 包含 `com.adobe.idp.services.holders.FormsResultHolder` 此操作結果的空對象。
+
    該方 `renderPDFForm` 法用必 `com.adobe.idp.services.holders.FormsResultHolder` 須寫入客戶端Web瀏覽器的表單資料流填充作為最後一個參數值傳遞的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
