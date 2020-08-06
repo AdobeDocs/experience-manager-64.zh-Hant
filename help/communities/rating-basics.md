@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 評等元件是計 [分子類](tally.md) ，可讓登入社群成員對網站上的功能評分。
 
-允許在同一頁放置多個投票元件實例；每個實例都必須配置一個唯一 `tally name` 屬性。
+允許在同一頁放置多個投票元件實例； 每個實例都必須配置一個唯一 `tally name` 屬性。
 
 不支援匿名張貼評分。 網站訪客必須註冊並登入，才能只參與一次評分。 已登入的訪客（會員）隨時可能變更其評分。
 
