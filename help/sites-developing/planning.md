@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 0%
 
 ---
 
@@ -79,7 +82,7 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 * 峰
 
-   特殊情況下，短時間的條件；例如，當所有作者同時使用系統或發佈新內容，以及有更多訪客瀏覽您的網站時。
+   特殊情況下，短時間的條件； 例如，當所有作者同時使用系統或發佈新內容，以及有更多訪客瀏覽您的網站時。
 
 * 極致
 
@@ -118,6 +121,6 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 **從外部網站收集流量統計資料** -如果可能，您可嘗試從其他網站收集流量統計資料以進行比較，但這些資料並不總是會發佈。
 
-**確認目標量度** -量度用於定義網站品質的量化測量，因為它們代表要達成的效能目標。
+**確認目標量度** -量度用於定義網站品質的量化測量，因為這些量度代表要達成的效能目標。
 
 應在項目開始時與客戶一起定義它們。 如需詳 [細資訊，請參閱](/help/sites-developing/planning.md) 「目標量度」。
