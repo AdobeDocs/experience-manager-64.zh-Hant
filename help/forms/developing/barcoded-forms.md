@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1891'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 條形碼表單服務可自動從填寫及列印表單擷取資料，並將擷取的資訊整合至組織的核心IT系統。
 
-使用條碼表單服務，您可以將一維和二維條碼新增至互動式PDF表單。 然後，您可以將條形碼表格發佈至網站，或以電子郵件或光碟散發。 當使用者使用Adobe Reader、Acrobat Professional或Acrobat Standard填寫條碼表格時，會自動更新條碼，以編碼使用者提供的表格資料。 使用者可以以電子方式提交表格，或列印成紙本，再以郵件、傳真或手形方式提交。 您稍後可以擷取使用者提供的資料作為自動化工作流程的一部分，在核准程式和商業系統之間傳送資料。
+使用條碼表單服務，您可以將一維和二維條碼新增至互動式PDF表單。 然後，您可以將條形碼表格發佈至網站，或以電子郵件或光碟散發。 當使用者使用Adobe Reader、Acrobat Professional或Acrobat Standard填寫條碼表格時，會自動更新條碼，以編碼使用者提供的表格資料。 使用者可以電子方式提交表格，或列印成紙本，再以郵件、傳真或手形方式提交。 您稍後可以擷取使用者提供的資料作為自動化工作流程的一部分，在核准程式和商業系統之間傳送資料。
 
 如需有關條碼表單服務的詳細資訊，請參 [閱「AEM表單的服務參考」](https://www.adobe.com/go/learn_aemforms_services_63)。
 
@@ -57,7 +60,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 * jbossall-client.jar（如果AEM Forms部署在JBoss上，則為必要）
 * xercesImpl.jar（位於&lt;install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty）
 
-如果AEM Forms部署在非JBOSS的受支援J2EE應用程式伺服器上，則您將需要以JAR檔案取代adobe-utilities.jar和jbossall-client.jar，這些檔案是部署AEM Forms的J2EE應用程式伺服器專用的。 如需所有AEM Forms JAR檔案位置的詳細資訊，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如果AEM Forms部署在非JBOSS的受支援J2EE應用程式伺服器上，則您將需要以JAR檔案取代adobe-utilities.jar和jbossall-client.jar，這些檔案是部署AEM Forms的J2EE應用程式伺服器專用的。 如需所有AEM Forms JAR檔案位置的詳細資訊，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **建立條碼表單用戶端API物件**
 
@@ -100,7 +103,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 [使用web service API解碼條形碼表單資料](barcoded-forms.md#decode-barcoded-form-data-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -128,13 +131,14 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
    * 包 `com.adobe.idp.Document` 含PDF表單的物件。
    * 指定 `java.lang.Boolean` 是否解碼PDF417條碼的物件。
    * 指定 `java.lang.Boolean` 是否解碼資料矩陣條形碼的對象。
-   * 指定 `java.lang.Boolean` 是否解碼QR code條形碼的對象。
+   * 指定 `java.lang.Boolean` 是否解碼QR Code條形碼的對象。
    * 指定 `java.lang.Boolean` 是否解碼codabar條形碼的對象。
    * 指定 `java.lang.Boolean` 是否解碼代碼128條形碼的對象。
    * 指定 `java.lang.Boolean` 是否解碼代碼39條形碼的對象。
    * 指定 `java.lang.Boolean` 是否解碼EAN-13條形碼的對象。
    * 指定 `java.lang.Boolean` 是否對EAN-8條形碼進行解碼的對象。
    * 一 `com.adobe.livecycle.barcodedforms.CharSet` 個枚舉值，它指定條形碼中使用的字元集編碼值。
+
    該方 `decode` 法返回包 `org.w3c.dom.Document` 含已解碼表單資料的對象。
 
 1. 將資料轉換為XML資料來源
@@ -145,6 +149,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
    * 指定 `com.adobe.livecycle.barcodedforms.Delimiter` 行分隔符的枚舉值。 建議您指定 `Delimiter.Carriage_Return`。
    * 指定 `com.adobe.livecycle.barcodedforms.Delimiter` 欄位分隔符的枚舉值。 例如，指定 `Delimiter.Tab`。
    * 一 `com.adobe.livecycle.barcodedforms.XMLFormat` 個枚舉值，它指定將條形碼資料轉換為XDP或XFDF XML資料。 例如，指定 `XMLFormat.XDP` 將資料轉換為XDP資料。
+
    >[!NOTE]
    >
    >請勿為行分隔字元和欄位分隔字元參數指定相同的值。
@@ -159,9 +164,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API解碼條形碼表單資料](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API解碼條形碼表單資料](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -193,13 +198,14 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
    * 包 `BLOB` 含PDF表單的物件。
    * 指定 `Boolean` 是否解碼PDF417條碼的物件。
    * 指定 `Boolean` 是否解碼資料矩陣條形碼的對象。
-   * 指定 `Boolean` 是否解碼QR code條形碼的對象。
+   * 指定 `Boolean` 是否解碼QR Code條形碼的對象。
    * 指定 `Boolean` 是否解碼codabar條形碼的對象。
    * 指定 `Boolean` 是否解碼代碼128條形碼的對象。
    * 指定 `Bolean` 是否解碼代碼39條形碼的對象。
    * 指定 `Boolean` 是否解碼EAN-13條形碼的對象。
    * 指定 `Boolean` 是否對EAN-8條形碼進行解碼的對象。
    * 一 `CharSet` 個枚舉值，它指定條形碼中使用的字元集編碼值。
+
    該方 `decode` 法返回包含已解碼表單資料的字串值。
 
 1. 將資料轉換為XML資料來源
@@ -210,6 +216,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
    * 指定 `Delimiter` 行分隔符的枚舉值。 建議您指定 `Delimiter.Carriage_Return`。
    * 指定 `Delimiter` 欄位分隔符的枚舉值。 例如，指定 `Delimiter.Tab`。
    * 一 `XMLFormat` 個枚舉值，它指定將條形碼資料轉換為XDP或XFDF XML資料。 例如，指定 `XMLFormat.XDP` 將資料轉換為XDP資料。
+
    >[!NOTE]
    >
    >請勿為行分隔字元和欄位分隔字元參數指定相同的值。
