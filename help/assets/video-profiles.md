@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b893f366-279a-4872-9413-77626d3387ea
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3100'
+ht-degree: 16%
 
 ---
 
@@ -37,7 +40,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >
 >請參閱 [監控視訊編碼和YouTube發佈進度](video.md#monitoring-video-encoding-and-youtube-publishing-progress)。If you have enabled Dynamic Media and set up video cloud services, the **[!UICONTROL Dynamic Media Encode Video]** workflow automatically takes effect when you upload a video. (如果您未使用動態媒體， **[!UICONTROL DAM更新資產工作流程將生效]** 。)
 >
->在搜尋資產時，中繼資料很實用。 縮圖是編碼期間產生的靜態視訊影像。 AEM系統需要這些視訊，並用於使用者介面，以協助您在「卡片檢視」、「搜尋結果」檢視和「資產清單」檢視中以視覺化方式識別視訊 ************ 。 當您點選編碼視訊的「轉譯」圖示（畫家的浮動視窗）時，可 **** 以看到產生的縮圖。
+>在搜尋資產時，中繼資料很實用。 縮圖是編碼期間產生的靜態視訊影像。 AEM系統需要這些視訊，並用於使用者介面，以協助您在「卡片檢視」、「搜尋結果檢視」和「資產清單檢視」中以視覺化方式識別視訊。 ************ 當您點選編碼視訊的「轉譯」圖示（畫家的浮動視窗）時，可 **** 以看到產生的縮圖。
 
 完成視訊描述檔的建立後，即可將它套用至資料夾或多個資料夾。 請參 [閱將視訊描述檔套用至資料夾。](#applying-a-video-profile-to-folders)
 
@@ -160,8 +163,8 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 視您執行的模式而定，支援的視訊格式轉碼器如下：
 
-* 動態媒體——場景7模式：H.264(.mp4)
-* 動態媒體——混合模式：H.264(.mp4)、WebM
+* 動態媒體——場景7模式： H.264(.mp4)
+* 動態媒體——混合模式： H.264(.mp4)、WebM
 
 另請參閱 [建立適應性串流的視訊編碼設定檔](#creating-a-video-encoding-profile-for-adaptive-streaming)。
 
@@ -183,7 +186,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    Tap the **[!UICONTROL Information]** icon next to each option for additional descriptions or recommended settings based on the selected video format codec.
 
 1. （可選）在「Video Size(視 **頻大小)** 」標題下，取消選 **[!UICONTROL 中「Keep aspect ratio（保留外觀比例）]**」。
-1. 在「寬 **[!UICONTROL 度]** 」欄位中輸 **[!UICONTROL 入auto]**;在「高度」欄位的右 **[!UICONTROL 側]** ，點選「資 **[!UICONTROL 訊」圖示]** 。 Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. 完 **[!UICONTROL 成時]** ，點選X。
+1. 在「寬 **[!UICONTROL 度]** 」欄位中輸 **[!UICONTROL 入auto]**; 在「高度」欄位的右 **[!UICONTROL 側]** ，點選「資 **[!UICONTROL 訊」圖示]** 。 Use the **[!UICONTROL Size Calculator]** page to further set the video dimension (blue box) how you want. 完 **[!UICONTROL 成時]** ，點選X。
 1. （可選）執行下列任一項作業：
 
    * 點選「 **[!UICONTROL 進階]** 」標籤，並確定已選 **[!UICONTROL 取「使用預設值]** 」核取方塊（建議）。
@@ -228,7 +231,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
     </tr> 
     <tr> 
     <td><code>keyframe</code></td> 
-    <td>關鍵影格之間的影格目標數目。 計算此值，每2-10秒產生一個關鍵影格。 例如，每秒30幀，關鍵幀間隔應為60-300。<br /> 較低 <br /> 的關鍵影格間隔可改善最適化視訊編碼的串流搜尋和串流切換行為，也可改善具有大量動作的視訊品質。 不過，由於關鍵影格會增加檔案大小，因此較低的關鍵影格間隔通常會導致特定位元速率的整體視訊品質較低。</td> 
+    <td>關鍵影格之間的影格目標數目。 計算此值，每2-10秒產生一個關鍵影格。 例如，每秒30幀，關鍵幀間隔應為60-300。<br /> <br /> 較低的關鍵影格間隔可改善最適化視訊編碼的串流搜尋和串流切換行為，也可改善具有大量動作的視訊品質。 不過，由於關鍵影格會增加檔案大小，因此較低的關鍵影格間隔通常會導致特定位元速率的整體視訊品質較低。</td> 
     <td><code>String</code></td> 
     <td><p>正數。</p> <p>預設值為300。</p> <p>HLS（HTTP即時串流）的建議值為60-90。</p> </td> 
     </tr> 
@@ -317,7 +320,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 如果您指派不同的視訊描述檔給資料夾，新的描述檔會覆寫先前的描述檔。 舊有的資料夾資產仍維持不變。 新的描述檔會套用至稍後新增至資料夾的資產。
 
-在用戶介面中，配置了配置檔案的資料夾會以卡名稱中顯示的配置檔案的名稱來表示。
+在用戶介面中，配置有配置檔案的資料夾將通過卡名稱中顯示的配置檔案名稱來指示。
 
 ![chlimage_1-517](assets/chlimage_1-517.png)
 
@@ -349,7 +352,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 **若要全域套用動態媒體視訊設定檔**:
 
-1. 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`。
+1. 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`.
 1. 新增屬性 **[!UICONTROL videoProfile]**: `/etc/dam/video/dynamicmedia/<name_of_video_encoding_profile>`
 1. 點選「 **[!UICONTROL 全部儲存]**」。
 
