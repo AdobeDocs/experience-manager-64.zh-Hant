@@ -22,7 +22,7 @@ ht-degree: 5%
 
 這些程式是AEM中編寫頁面內容之關鍵動作的快速指南（高階）。
 
-他們：
+上述功能為：
 
 * 不是全面涵蓋。
 * 提供詳細檔案的連結。
@@ -144,6 +144,7 @@ ht-degree: 5%
       * 開啟側面板
       * 選擇元件頁籤(組 [件瀏覽器](/help/sites-authoring/author-environment-tools.md#components-browser))
       * 將所需元件拖曳至您的頁面。
+
       側面板可以開啟（和關閉）:
 
       ![](do-not-localize/screen_shot_2018-03-21at160738.png)
@@ -153,6 +154,7 @@ ht-degree: 5%
       * 使用點選或按一下來開啟元件工具列。 使用「編 **輯** （鉛筆）」圖示開啟對話方塊。
       * 使用點選並按住或按兩下，開啟元件的就地編輯器。 將顯示可用的操作（對於某些元件，這將是有限的選擇）。
       * 若要查看所有可用動作，請進入全螢幕模式：
+
       ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [配置現有元件的屬性](/help/sites-authoring/editing-content.md#component-edit-dialog)
@@ -175,12 +177,14 @@ ht-degree: 5%
    * [新增註解](/help/sites-authoring/annotations.md#annotations) 至頁面：
 
       * 選取「注 **解** 」模式（語音泡泡圖示）。 使用「添加註 **釋** （加號）」表徵圖添加註釋。 使用右上角的X退出注釋模式。
+
       ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [預覽頁面](/help/sites-authoring/editing-content.md#preview-mode) （以檢視它在發佈環境中的顯示方式）
 
       * 從工 **具列中** ，選取「預覽」。
    * 使用「編輯」下拉選擇器返回編輯模式(或選 **擇其他模** 式)。
+
    >[!NOTE]
    >
    >若要在內容中使用連結進行導覽，您必須使用「預 [覽」模式](/help/sites-authoring/editing-content.md#preview-mode)。
@@ -196,6 +200,7 @@ ht-degree: 5%
 
       * [適當資源的快速動作（僅限卡片檢視／案頭）](#quick-actions-card-view-desktop-only) 。
       * 選取頁面時 [的工具列](#selecting-your-page-for-further-action)。
+
    ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
 * 將顯示頁面屬性。 您可以視需要進行更新，然後使用「儲存」來保存這些
@@ -218,12 +223,14 @@ ht-degree: 5%
 
       * [適當資源的快速動作（僅限卡片檢視／案頭）](#quick-actions-card-view-desktop-only) 。
       * 選取頁面時的 [工具列](#selecting-your-page-for-further-action) (也提供稍後 [發佈的存取權](/help/sites-authoring/publishing-pages.md#manage-publication))。
+
    ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * 編輯 [頁面時](#editing-your-page-content):
 
    1. 開啟「頁 **面資訊** 」功能表。
    1. 選擇 **發佈頁面**。
+
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * 從主控台取消發佈頁面只能透過「管理出版物 **** 」選項完成，此選項只能在工具列上使用 (不能透過快速動作)。
