@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
 source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
 
 請參閱 [編輯您的頁面內容](/help/sites-authoring/qg-page-authoring.md#editing-your-page-content)。
 
-## 演算3D資產時的效能考量 {#performance-considerations-when-rendering-d-assets}
+## 轉譯3D資產時的效能考量 {#performance-considerations-when-rendering-d-assets}
 
 轉換3D內容會耗用大量伺服器資源，例如CPU和記憶體。 因此，演算通常需要大量時間。 除了明顯的型號大小和伺服器硬體外，演算時間會因各種因素而顯著不同：
 
@@ -31,7 +34,7 @@ source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
 
 * **IBL與傳統照明相比**。
 
-   雖然此因素對於預設的快速調整轉換器的影響較小，但與使用傳統點光源或專色光源時相比，Mental ray等第三方轉換器使用IBL級進行轉換的速度要慢得多。
+   雖然此因素對於預設的快速調整轉換器的影響較小，但與使用傳統點光源或專色光源時相比，Mental Ray等第三方轉換器使用IBL級進行轉換的速度要慢得多。
 
 快速調整轉譯器通常需要幾分鐘的時間來轉換較大的影像。 不過，協力廠商轉譯者通常需要幾分鐘的時間，甚至數小時的時間，才能設定最高品質。
 
