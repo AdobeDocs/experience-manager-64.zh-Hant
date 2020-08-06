@@ -12,6 +12,9 @@ discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 1%
 
 ---
 
