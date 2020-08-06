@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '2487'
+ht-degree: 0%
 
 ---
 
@@ -218,7 +221,7 @@ CQ標籤庫包含實用的函式。
 
 **resourceType**
 
-* 要包括的資源的資源類型。 如果設定了資源類型，則路徑必須是資源對象的確切路徑：在這種情況下，不支援將參數、選擇器和擴充功能新增至路徑。
+* 要包括的資源的資源類型。 如果設定了資源類型，則路徑必須是資源對象的確切路徑： 在這種情況下，不支援將參數、選擇器和擴充功能新增至路徑。
 * 如果要包含的資源是使用無法解析為資源的路徑屬性指定的，則標籤可以建立路徑外的合成資源對象和此資源類型。
 * 必須指定path和resourceType或指令碼。
 
@@ -256,7 +259,7 @@ CQ標籤庫包含實用的函式。
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` 已自AEM 5.6起停用。應 [ 該 `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) 改用。
+>`<cq:includeClientLib>` 已自AEM 5.6起停用。 [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) 的值。
 
 標 `<cq:includeClientLib>` 簽「包含AEM html用戶端程式庫」，可以是js、css或主題程式庫。 對於不同類型的多個包含項目（例如js和css），此標籤需要在jsp中多次使用。 此標籤是服務介面周圍的便利 `com.day.cq.widget.HtmlLibraryManager` 包裝函式。
 
@@ -268,7 +271,7 @@ CQ標籤庫包含實用的函式。
 
 **theme** —— 逗號分隔的客戶端庫類別清單。 這將包含指定類別的所有主題相關程式庫（CSS和JS）。 主題名稱會從請求中擷取。
 
-相當於：writeThemeInclude `com.day.cq.widget.HtmlLibraryManager#`
+相當於： `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
 **js** —— 逗號分隔的用戶端程式庫類別清單。 這將包含指定類別的所有Javascript程式庫。
 
@@ -530,7 +533,7 @@ Sling標籤庫包含實用的Sling函式。
 
 **resourceType**
 
-* 要包括的資源的資源類型。 如果設定了資源類型，則路徑必須是資源對象的確切路徑：在這種情況下，不支援將參數、選擇器和擴充功能新增至路徑。
+* 要包括的資源的資源類型。 如果設定了資源類型，則路徑必須是資源對象的確切路徑： 在這種情況下，不支援將參數、選擇器和擴充功能新增至路徑。
 * 如果要包含的資源是使用無法解析為資源的路徑屬性指定的，則標籤可以建立路徑外的合成資源對象和此資源類型。
 
 **replaceSelectors**
@@ -547,7 +550,7 @@ Sling標籤庫包含實用的Sling函式。
 
 >[!NOTE]
 >
->標籤中包含的資源和指令碼的解析 `<sling:include>` 度與一般sling URL解析度相同。 依預設，選擇器、擴充功能等。 從目前的要求中，也會使用隨附的指令碼。 可透過標籤屬性來修改這些屬性：例如， `replaceSelectors="foo.bar"` 允許覆寫選擇器。
+>標籤中包含的資源和指令碼的解析 `<sling:include>` 度與一般sling URL解析度相同。 依預設，選擇器、擴充功能等。 從目前的要求中，也會使用隨附的指令碼。 可透過標籤屬性來修改這些屬性： 例如， `replaceSelectors="foo.bar"` 允許覆寫選擇器。
 
 範例：
 
@@ -593,7 +596,7 @@ Sling標籤庫包含實用的Sling函式。
 
 * 當前ResourceResolver對象。 它與slingRequest.getResourceResolver()相同
 
-.**sling**
+。**sling**
 
 * SlingScriptHelper物件，包含指令碼的便利方法，主要是sling.include(&#39;/some/other/resource&#39;)，以包含此回應內其他資源的回應(例如 內嵌html片段)和sling.getService(foo.bar.Service.class)，以擷取Sling中可用的OSGi服務（Class notation，視指令碼語言而定）。
 
@@ -632,7 +635,7 @@ Sling標籤庫包含實用的Sling函式。
 
 ## JSTL標籤庫 {#jstl-tag-library}
 
-JavaServer [Pages標準標籤庫](https://www.oracle.com/technetwork/java/index-jsp-135995.html) (JavaServer Pages Standard Tag Library)包含許多有用的標準標籤。 核心、格式和函式標語由下列程式碼 `/libs/foundation/global.jsp` 片段中所定義。
+JavaServer [Pages標準標籤庫](https://www.oracle.com/technetwork/java/index-jsp-135995.html) (JavaServer Pages Standard Tag Library)包含許多有用的標準標籤。 核心、格式和函式標語由下列程式碼 `/libs/foundation/global.jsp` 片段中所示定義。
 
 ### /libs/foundation/global.jsp的摘錄 {#extract-of-libs-foundation-global-jsp}
 
@@ -642,4 +645,4 @@ JavaServer [Pages標準標籤庫](https://www.oracle.com/technetwork/java/index-
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-如前所述 `/libs/foundation/global.jsp` 匯入檔案後，您可以使用 `c`、 `fmt``fn` 和字首來存取這些標語。 JSTL的正式檔案可在 [Java EE 5教學課程- javaServer Pages標準標籤庫中取得](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html)。
+如前所述 `/libs/foundation/global.jsp` 匯入檔案後，您可以使用 `c`、 `fmt``fn` 和字首來存取這些標語。 JSTL的正式檔案可在 [Java EE 5教學課程- JavaServer Pages標準標籤庫中取得](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html)。
