@@ -53,7 +53,7 @@ ht-degree: 1%
 * [設定操作說明文章](/help/sites-deploying/ht-deploy.md)
 * [Web 主控台](/help/sites-deploying/web-console.md)
 * [複製故障排除](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳實務](/help/sites-deploying/best-practices.md)
+* [最佳作法](/help/sites-deploying/best-practices.md)
 * [部署社群](/help/communities/deploy-communities.md)
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 * [效能准則](/help/sites-deploying/performance-guidelines.md)
@@ -114,7 +114,7 @@ AEM伺服器是以 **Java為基礎** ，並可在支援該平台的大部分作�
 
 ### 使用Cloud Manager的受管理服務 {#managed-services-using-cloud-manager}
 
-AEM Managed Services是數位體驗管理的完整解決方案。 它提供雲端體驗傳遞解決方案的優點，同時保留內部部署的所有控制、安全性和自訂優點。 AEM Managed Services可讓客戶透過部署在雲端，以及仰賴Adobe的最佳實務與支援，以更快的速度啟動產品。 企業組織和商業使用者可以在最短的時間內吸引客戶，推動市場份額，並專注於創新的行銷宣傳，同時減輕IT人員的負擔。
+AEM Managed Services是數位體驗管理的完整解決方案。 它提供雲端體驗傳遞解決方案的優點，同時保留內部部署的所有控制、安全性和自訂優點。 AEM Managed Services可讓客戶透過部署在雲端，以及依賴Adobe的最佳實務與支援，以更快速地啟動產品。 企業組織和商業使用者可以在最短的時間內吸引客戶，推動市場份額，並專注於創新的行銷宣傳，同時減輕IT人員的負擔。
 
 有了AEM Managed Services，客戶就可以獲得下列好處：
 
@@ -315,7 +315,7 @@ AEM會啟動您的網頁瀏覽器並自動將其重新導向至適當的頁面�
 * [設定操作說明文章](/help/sites-deploying/ht-deploy.md)
 * [Web 主控台](/help/sites-deploying/web-console.md)
 * [複製故障排除](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳實務](/help/sites-deploying/best-practices.md)
+* [最佳作法](/help/sites-deploying/best-practices.md)
 * [部署社群](/help/communities/deploy-communities.md)
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 * [效能准則](/help/sites-deploying/performance-guidelines.md)
