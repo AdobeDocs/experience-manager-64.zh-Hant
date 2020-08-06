@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1798'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +27,7 @@ AEM可讓您使用「版面容器」元件，為頁面建立互動式 **版面**
 版面容器：
 
 * 提供水準對齊格線的功能，以及將元件並排放在格線中，並定義元件何時應收合／重排的功能。
-* 使用預先定義的中斷點（例如手機、平板電腦等）可讓您定義相關裝置／方向之內容所需行為。
+* 使用預先定義的中斷點（例如手機、平板電腦等） 可讓您定義相關裝置／方向之內容所需行為。
 
    * 例如，您可以自訂元件大小，或在特定裝置上是否可檢視元件。
 
@@ -40,11 +43,11 @@ AEM使用多種機制組合，為您的頁面實現互動式版面配置：
 
 * [**Layout Container **](#adding-a-layout-container-and-its-content-edit-mode)（版面容器）元件
 
-   此元件可在元件瀏 [覽器中使用](/help/sites-authoring/author-environment-tools.md#components-browser) ，並提供格線段落系統，讓您在回應式格線中新增和定位元件。 您也可以將其設為頁面上的預設段落系統。
+   此元件可在元件瀏 [覽器中使用](/help/sites-authoring/author-environment-tools.md#components-browser) ，並提供格點段落系統，讓您在回應式格點中新增和定位元件。 您也可以將其設為頁面上的預設段落系統。
 
 * [**版面模式&#x200B;**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-   一旦版面容器放置在您的頁面上，您就可以使用「版面」 **模式** ，將內容定位在回應式格線中。
+   一旦版面容器放置在您的頁面上，您就可以使用「版面 **** 」模式，將內容定位在回應式格線中。
 
 * [**模擬器&#x200B;**](#selecting-a-device-to-emulate)這可讓您建立和編輯互動式網站，透過互動方式調整元件大小，以根據裝置／視窗大小重新排列版面。 然後，使用者就可以看到如何使用模擬器呈現內容。
 
@@ -109,24 +112,29 @@ AEM可讓您根據裝置寬度來定義版面：
    模擬器工具列會顯示其他版面配置選項：
 
    * **旋轉裝置** -可讓您將裝置從垂直（縱向）方向旋轉至水準（橫向）方向，反之亦然。
+
    ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **選擇設備** -定義要從清單中模擬的特定設備（有關詳細資訊，請參閱下一步）
+
    ![](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. 要選擇要模擬的特定設備，您可以：
 
    * 使用「選取裝置」圖示並從下拉式選取器中選取。
    * 點選／按一下模擬器工具列中的裝置指示燈。
+
    ![screen_shot_2018-03-23at084818](assets/screen_shot_2018-03-23at084818.png)
 
 1. 選擇特定設備後，您可以：
 
    * 請參閱所選裝置的作用中標籤，例如 **iPad。**
    * 請參閱適當斷點的作用中標 [記](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) ，例如 **Tablet。**
+
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
    * 藍色虛線代表所 *選裝置* (此處為 **iPhone 6**)的折線。
+
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
    * 折頁也可視為內容的分頁符號(不要與分 [界點](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints))。 此為顯示方便的項目，讓使用者在捲動之前，先在裝置上看到哪些內容。
@@ -175,6 +183,7 @@ AEM可讓您根據裝置寬度來定義版面：
    * 最低的巢狀版面容器將以黑色勾勒出來。
    * 倒數第二低的巢狀版面容器會是深灰色。
    * 每個連續的容器都會變淺灰色。
+
    ![screen_shot_2018-03-23at085636](assets/screen_shot_2018-03-23at085636.png)
 
 1. 這會反白顯示整個格線及其內容。 將顯示操作工具欄，您可從中選擇操作，如「刪 **除」。**
@@ -231,25 +240,31 @@ AEM可讓您根據裝置寬度來定義版面：
    工具列會根據版面元件的狀態和所屬的元件而有不同的選項。 例如：
 
    * **Parent** —— 選擇父元件。
+
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **顯示隱藏元件** -顯示所有或個別元件。 數字表示目前有多少個隱藏元件。 計數器會顯示隱藏的元件數。
+
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **恢復斷點佈局** -恢復為預設佈局。 這表示不會強加自訂版面。
+
    ![](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **浮點到新行** -如果間距允許，將元件向上移動。
+
    ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Hide component** —— 隱藏當前元件。
+
    ![](do-not-localize/screen_shot_2018-03-23at090834.png)
 
    >[!NOTE]
    >
    >在上述範例中，浮點和隱藏動作是可用的，因為此「版面容器」是巢狀內嵌在父「版面容器」中。
 
-   * **取消隱藏元**&#x200B;件選取父元件，使用「顯示隱藏元件」( **Show hidden components** )選項顯示動作工具列。 在此示例中，隱藏了兩個元件。
+   * **取消隱藏元**&#x200B;件選取父元件，以顯示動作工具列，其中 
+**顯示隱藏的元件** 選項。 在此示例中，隱藏了兩個元件。
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
    選取「顯 **示隱藏的元件** 」(Show hidden components)選項，會以藍色顯示目前隱藏在原始位置的元件。
