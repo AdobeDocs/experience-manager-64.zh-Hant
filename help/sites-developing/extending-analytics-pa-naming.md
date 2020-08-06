@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 0%
 
 ---
 
@@ -29,17 +32,17 @@ Adobe Analytics使用屬 `s.pageName` 性來唯一識別頁面，並關聯為頁
 
 服 `DefaultPageNameProvider` 務是預設服務，可決定用來擷取頁 `s.pageName` 面Analytics資料的屬性值。 此服務可與AEM基礎頁面元件( `/libs/foundation/components/page`)搭配運作。 此頁元件定義要映射到屬性的以下CQ變 `s.pageName` 量：
 
-* `pagedata.path`:值會設為頁面路徑。
-* `pagedata.title`:值會設為頁面標題。
-* `pagedata.navTitle`:此值會設為頁面導覽標題。
+* `pagedata.path`: 值會設為頁面路徑。
+* `pagedata.title`: 值會設為頁面標題。
+* `pagedata.navTitle`: 此值會設為頁面導覽標題。
 
 服 `DefaultPageNameProvider` 務會決定這些CQ變數中哪些變數會對應至Analytics雲 `s.pageName` 端服務架構中的屬性。 然後，服務會決定用於擷取分析報表資料的適當頁面屬性：
 
-* `pagedata.path`:服務使用 `page.getPath()`
+* `pagedata.path`: 服務使用 `page.getPath()`
 
-* `pagedata.title`:服務使用 `page.getTitle()`
+* `pagedata.title`: 服務使用 `page.getTitle()`
 
-* `pagedata.navTitle`:服務使用 `page.getNavigationTitle()`
+* `pagedata.navTitle`: 服務使用 `page.getNavigationTitle()`
 
 對 `page` 像是頁面的 [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java對象。
 
@@ -78,9 +81,9 @@ Adobe Analytics使用屬 `s.pageName` 性來唯一識別頁面，並關聯為頁
 
 AnalyticsPageNameProvider介面定義您必須實作的兩種方法：
 
-* `getPageName`:傳回 `String` 代表要用作屬性之值的 `s.pageName` 值。
+* `getPageName`: 傳回 `String` 代表要用作屬性之值的 `s.pageName` 值。
 
-* `getResource`:傳回 `org.apache.sling.api.resource.Resource` 代表與屬性關聯之頁面的物 `s.pageName` 件。
+* `getResource`: 傳回 `org.apache.sling.api.resource.Resource` 代表與屬性關聯之頁面的物 `s.pageName` 件。
 
 這兩種方法都 `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext` 會將物件當作參數。 類 `AnalyticsPageNameContext` 別提供分析呼叫的上下文相關資訊：
 
