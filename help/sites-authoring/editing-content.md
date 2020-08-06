@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 07da66ab-dd5e-4ca8-ac6d-76fc81875fd9
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3064'
+ht-degree: 7%
 
 ---
 
@@ -151,9 +154,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 1. 從段落系統中選擇和添加新元件有兩種方法：
 
    * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
+
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
    * 如果您使用桌上型裝置，可以按兩下「拖曳元件至 **此處** 」方塊。
+
    The **Insert New Component** dialog will open to allow you to select your required component:
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
@@ -197,7 +202,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!NOTE]
 >
->您可以針對安裝設定此行為。 如需 [詳細資訊，請參閱設定段落系統，讓拖曳資產可建立元件例項](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) 。
+>此行為可針對您的安裝進行設定。 如需 [詳細資訊，請參閱設定段落系統，讓拖曳資產可建立元件例項](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) 。
 
 要通過拖動上述資產類型之一來建立元件，請執行以下操作：
 
@@ -268,6 +273,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 您可以貼到相同的頁面或不同的頁面。
    * 貼上的項目會貼至您選取貼上動作的項目上方。
    * 只有剪貼簿上有內容時，才會顯示「平移」動作。
+
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
@@ -366,7 +372,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 要移動段落元件，請執行以下操作：
 
-1. 選取要以點選並按住或按住的方式移動的段落。
+1. 選擇要使用點選並按住或按一下並按住移動的段落。
 1. 將段落拖曳至新位置。 AEM會指出可將段落存放在何處。 將它拖放至您所要的位置。
 
    ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
@@ -394,6 +400,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 元件顯示的調整大小控制點。
    * 模擬器工具欄顯示在螢幕頂部。
    * 元件工具列上會顯示版面動作，而非標準編輯動作。
+
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
    您現在可以像在版面模式中一樣修改元件的 [版面](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)。
@@ -444,7 +451,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ## 編輯頁面範本 {#editing-the-page-template}
 
-如果頁面基於可編輯的 [模板](/help/sites-authoring/templates.md#editable-and-static-templates)，則可以通過在「頁資訊」菜單中選擇「編輯模板」( [Edit Template](/help/sites-authoring/templates.md#editing-templates-template-authors)****[](/help/sites-authoring/author-environment-tools.md#page-information))，輕鬆切換到模板編輯器。
+如果頁面基於可編輯的模板 [，則可以通過在「頁面資訊」菜單中選擇「編輯」模板來輕鬆切換到](/help/sites-authoring/templates.md#editable-and-static-templates)模板編輯器 [](/help/sites-authoring/templates.md#editing-templates-template-authors)****[](/help/sites-authoring/author-environment-tools.md#page-information)。
 
 如果頁面是以靜態范 [本為基礎](/help/sites-authoring/templates.md#editable-and-static-templates)，您可以使用工具列上的頁面模式選擇器，切換至「設計」模式 [](/help/sites-authoring/default-components-designmode.md)[](/help/sites-authoring/author-environment-tools.md#page-modes) ，以啟用／停用要在頁面上使用的元件。
 
@@ -454,8 +461,8 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 「即 [時副本狀態」頁面模式](/help/sites-authoring/author-environment-tools.md#page-modes) ，可讓您快速概述即時副本狀態，以及哪些元件已繼承／未繼承：
 
-* 綠色邊框：繼承
-* 粉色邊框：繼承已取消
+* 綠色邊框： 繼承
+* 粉色邊框： 繼承已取消
 
 例如：
 
@@ -478,6 +485,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >* 內容中的連結是可見的，但在「編輯」模式中無法存取。
 >* 如果您想使用連結進行導覽，請使用其中一個預覽選項。
 >* 使用鍵 [盤快速鍵](/help/sites-authoring/keyboard-shortcuts.md)`Ctrl-Shift-M` ，在預覽和上次選取的模式之間切換。
+
 >
 
 
@@ -512,6 +520,7 @@ AEM可讓您鎖定頁面，讓其他人無法修改內容。 當您對特定頁�
 
    1. 選擇具有選擇模 [式的頁面](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)。
    1. 選擇鎖定表徵圖。
+
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **頁面編輯器**
@@ -578,6 +587,7 @@ AEM會儲存您執行之動作的記錄和執行動作的順序，如此您就�
 >* 只要您自使用還原後未進行頁面編輯，就可重做動作。
 >* 最多可還原20個編輯動作（預設設定）。
 >* 此外，您也可 [以使用鍵盤快速鍵](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ，來還原和重做。
+
 >
 
 
