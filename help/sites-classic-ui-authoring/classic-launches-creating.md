@@ -1,8 +1,8 @@
 ---
 title: '建立啟動 '
 seo-title: '建立啟動 '
-description: 建立啟動以更新現有網頁的新版本，以供日後啟動。 當您建立啟動時，請指定標題和來源頁面。
-seo-description: 建立啟動以更新現有網頁的新版本，以供日後啟動。 當您建立啟動時，請指定標題和來源頁面。
+description: 建立啟動以更新現有網頁的新版本，以供日後啟動。 當您建立啟動時，您會指定標題和來源頁面。
+seo-description: 建立啟動以更新現有網頁的新版本，以供日後啟動。 當您建立啟動時，您會指定標題和來源頁面。
 uuid: e67608a9-e6c9-42f3-bd1d-63a5fa87ae18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 14%
 
 ---
 
@@ -31,17 +34,18 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 以下過程將建立一個啟動。
 
 1. 開啟「網站管理」頁面([http://localhost:4502/siteadmin](http://localhost:4502/siteadmin))。
-1. ****&#x200B;按一下 **新建……然**&#x200B;後新啟動…….
+1. 按一下 **新建……** 然 **後新啟動……**.
 1. 在「建 **立啟動** 」對話方塊中，指定下列屬性的值：
 
-   * **啟動標題**:啟動的名稱。 名稱對作者應有意義。
-   * **「源」頁**:要為其建立啟動的頁面的路徑。 依預設，會包含所有子頁面。
-   * **排除子頁面**:選取此選項可建立僅用於來源頁面的啟動，而非子頁面。 依預設，不會選取此選項。
-   * **保持同步**:選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。 這是讓啟動成為即時副 [本](/help/sites-administering/msm.md)。
-   * **啟動日期**:啟動副本要啟動的日期和時間(取決於「生產就緒」 **標誌** ;請 [參閱啟動——事件順序](/help/sites-authoring/launches.md#launches-the-order-of-events))。
+   * **啟動標題**: 啟動的名稱。 名稱對作者應有意義。
+   * **「源」頁**: 要為其建立啟動的頁面的路徑。 依預設，會包含所有子頁面。
+   * **排除子頁面**: 選取此選項可建立僅用於來源頁面的啟動，而非子頁面。 依預設，不會選取此選項。
+   * **保持同步**: 選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。 這是讓啟動成為即時副 [本](/help/sites-administering/msm.md)。
+   * **啟動日期**: 啟動副本要啟動的日期和時間(取決於「生產就緒」 **標誌** ; 請 [參閱啟動——事件順序](/help/sites-authoring/launches.md#launches-the-order-of-events))。
+
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. 按一下 **建立**。
+1. 按一下&#x200B;**建立**。
 
 ## 刪除啟動 {#deleting-a-launch}
 
