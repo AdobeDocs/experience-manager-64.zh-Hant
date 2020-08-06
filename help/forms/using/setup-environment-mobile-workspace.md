@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 * 執行Mac OS X 10.9.5或更新版本的Intel架構Apple Mac
 * iOS SDK 8.4或更新版本
-* Xcode版本：Xcode 6.4 for OS X或更新版本
+* Xcode版本： Xcode 6.4 for OS X或更新版本
 * iOS Developer Enterprise計畫的會員資格
 * 散發內建iOS應用程式的企業憑證
 * 含iOS 8.4或更新版本的Apple iPad
@@ -42,4 +45,4 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 >[!NOTE]
 >
->adobe-lc-mobileworkspace-src.zip包含PhoneGap SDK 5.0。請確定未預先安裝PhoneGap SDK。
+>adobe-lc-mobileworkspace-src.zip包含PhoneGap SDK 5.0。 請確定未預先安裝PhoneGap SDK。
