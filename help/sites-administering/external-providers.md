@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +76,7 @@ _gaq.push(['_trackPageview']);
 
    ![analytics_genericoverview](assets/analytics_genericoverview.png)
 
-1. 按一下+，使用對話方塊新增設定；至少指派一個名稱，例如google analytics:
+1. 按一下+，使用對話方塊新增設定； 至少指派一個名稱，例如google analytics:
 
    ![analytics_addconfig](assets/analytics_addconfig.png)
 
@@ -91,13 +94,13 @@ _gaq.push(['_trackPageview']);
 
 1. 開啟「 **Page Properties from sidekick** 」(頁面屬性 **)，然後** 開啟「Cloud Services」標籤。
 
-1. 按一 **下「新增服務**」，然後選取所需的服務；例如，「 **一般分析程式碼片段**:
+1. 按一 **下「新增服務**」，然後選取所需的服務； 例如，「 **一般分析程式碼片段**:
 
    ![analytics_selectservice](assets/analytics_selectservice.png)
 
 1. 按一 **下「確定** 」以儲存。
 
-1. 您將會返回「雲端服 **務」標籤** 。 「 **一般分析程式碼片段** 」現在會隨訊息一併列出 `Configuration reference missing`。 使用下拉式清單來選擇您的特定服務例項；例如google-analytics:
+1. 您將會返回「雲端服 **務」標籤** 。 「 **一般分析程式碼片段** 」現在會隨訊息一併列出 `Configuration reference missing`。 使用下拉式清單來選擇您的特定服務例項； 例如google-analytics:
 
    ![analytics_selectspecificservice](assets/analytics_selectspecificservice.png)
 
