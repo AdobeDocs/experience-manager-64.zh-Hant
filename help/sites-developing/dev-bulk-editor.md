@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 1%
 
 ---
 
@@ -160,18 +163,18 @@ source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
  </tbody> 
 </table>
 
-### 開發基於批量編輯器的元件：產品清單元件 {#developing-a-bulk-editor-based-component-the-product-list-component}
+### 開發基於批量編輯器的元件： 產品清單元件 {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-本節概述如何使用批量編輯器，並說明現有的Geometrixx元件（以批量編輯器為基礎）:產品清單元件。
+本節概述如何使用批量編輯器，並說明現有的Geometrixx元件（以批量編輯器為基礎）: 產品清單元件。
 
 「產品清單」元件可讓使用者顯示和編輯資料表。 例如，您可以使用「產品清單」元件來表示目錄中的產品。 這些資訊會顯示在標準HTML表格中，而任何編輯都會在「編輯」對話方塊中執行，而 **「編輯** 」對話方塊中包含BulkEditor介面工具集。 (此批量編輯器與可從/etc/importers/bulkeditor.html或「工具」功能表存取的編輯器完全相同)。 產品清單元件已針對特定、有限的大量編輯器功能進行設定。 批量編輯器的每個部分（或從批量編輯器派生的元件）都可以配置。
 
-使用批量編輯器，您可以添加、修改、刪除、篩選和導出行、保存修改和導入行集。 每一行都儲存為「產品清單」元件實例本身下的節點。 每個單元格都是每個節點的屬性。 這是一種設計選擇，可以輕鬆更改，例如，您可以將節點儲存在儲存庫中的其他位置。 查詢servlet的角色是返回要顯示的節點清單；搜索路徑被定義為「產品清單」實例。
+使用批量編輯器，您可以添加、修改、刪除、篩選和導出行、保存修改和導入行集。 每一行都儲存為「產品清單」元件實例本身下的節點。 每個單元格都是每個節點的屬性。 這是一種設計選擇，可以輕鬆更改，例如，您可以將節點儲存在儲存庫中的其他位置。 查詢servlet的角色是返回要顯示的節點清單； 搜索路徑被定義為「產品清單」實例。
 
 「產品清單」元件的原始碼可在/apps/geometrixx/components/productlist儲存庫中取用，並由多個部分（例如所有AEM元件）組成：
 
-* HTML轉換：演算是在JSP檔案(/apps/geometrixx/components/productlist/productlist.jsp)中完成。 JSP讀取當前產品清單元件的子節點，並將每個子節點顯示為HTML表的行。
-* 「編輯」對話框，在該對話框中定義批量編輯器配置。 設定對話方塊以符合元件的需求：欄和可能在網格或搜索上執行的操作。 有關 [所有配置屬性的資訊](#bulk-editor-configuration-properties) ，請參見批量編輯器配置屬性。
+* HTML轉換： 演算是在JSP檔案(/apps/geometrixx/components/productlist/productlist.jsp)中完成。 JSP讀取當前產品清單元件的子節點，並將每個子節點顯示為HTML表的行。
+* 「編輯」對話框，在該對話框中定義批量編輯器配置。 設定對話方塊以符合元件的需求： 欄和可能在網格或搜索上執行的操作。 有關 [所有配置屬性的資訊](#bulk-editor-configuration-properties) ，請參見批量編輯器配置屬性。
 
 以下是對話子節點的XML表示：
 
@@ -284,7 +287,7 @@ source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
   </tr> 
   <tr> 
    <td>contentMode</td> 
-   <td>啟用內容模式為true:屬性在jcr:content節點上讀取，在搜索結果節點上不讀取</td> 
+   <td>啟用內容模式為true: 屬性在jcr:content節點上讀取，在搜索結果節點上不讀取</td> 
   </tr> 
   <tr> 
    <td>colsValue</td> 
@@ -434,11 +437,11 @@ source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
    <td>colsMetadata</td> 
    <td>欄中繼資料設定。 可能的屬性是（套用至欄的所有儲存格）: <br /> 
     <ul> 
-     <li>cellStyle:html樣式 </li> 
-     <li>cellCls:css類 </li> 
-     <li>readOnly:true to not beaching value </li> 
-     <li>複選框：true：將列的所有單元格定義為複選框（true/false值） </li> 
-     <li>forcedPosition:整數值，以指定欄必須置於格線中的位置（介於0和欄數-1之間）<p><br /> </p> </li> 
+     <li>cellStyle: html樣式 </li> 
+     <li>cellCls: css類 </li> 
+     <li>readOnly: true to not beaching value </li> 
+     <li>複選框： true：將列的所有單元格定義為複選框（true/false值） </li> 
+     <li>forcedPosition: 整數值，以指定欄必須置於格線中的位置（介於0和欄數-1之間）<p><br /> </p> </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -448,7 +451,7 @@ source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
 
 您可以為每個欄設定：
 
-* 顯示屬性：html樣式、CSS類別和唯讀
+* 顯示屬性： html樣式、CSS類別和唯讀
 
 * 複選框
 * 強迫職位
@@ -457,9 +460,9 @@ CSS和唯讀欄
 
 批量編輯器有三種列配置：
 
-* 儲存格CSS類別名稱(cellCls):添加到已配置列的每個單元格的CSS類名。
-* 儲存格樣式(cellStyle):HTML樣式，會新增至已設定欄的每個儲存格。
-* 唯讀（唯讀）:為已配置列的每個單元格設定只讀。
+* 儲存格CSS類別名稱(cellCls): 添加到已配置列的每個單元格的CSS類名。
+* 儲存格樣式(cellStyle): HTML樣式，會新增至已設定欄的每個儲存格。
+* 唯讀（唯讀）: 為已配置列的每個單元格設定只讀。
 
 配置必須定義為以下配置：
 
@@ -516,7 +519,7 @@ CSS和唯讀欄
 
 **強迫位置**
 
-強制位置中繼資料forcedPosition可讓您指定欄在格線中的位置：0是第一位，&lt;number of columns>-1是最後一位。 會忽略任何其他值。
+強制位置中繼資料forcedPosition可讓您指定欄在格線中的位置： 0是第一位，&lt;number of columns>-1是最後一位。 會忽略任何其他值。
 
 在前例中，選擇欄是forcedPosition=&quot;0&quot;的第一欄。
 
@@ -524,12 +527,12 @@ CSS和唯讀欄
 
 預設情況下，可在中找到查詢Servlet `/libs/wcm/core/components/bulkeditor/json.java`。 您可以設定另一個路徑來擷取資料。
 
-查詢Servlet的工作方式如下：它會接收GQL查詢和要返回的列，計算結果，並將結果作為JSON流發送回批量編輯器。
+查詢Servlet的工作方式如下： 它會接收GQL查詢和要返回的列，計算結果，並將結果作為JSON流發送回批量編輯器。
 
 在「產品清單」元件案例中，發送到Query Servlet的兩個參數如下：
 
-* 查詢：&quot;path:/content/geometrixx/tw/customers/jcr:content/par/productlist Cube&quot;
-* cols:&quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
+* 查詢： &quot;path:/content/geometrixx/tw/customers/jcr:content/par/productlist Cube&quot;
+* cols: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 而傳回的JSON串流如下：
 
@@ -556,15 +559,15 @@ CSS和唯讀欄
 
 在批量編輯器的預設配置中，每行都是一個節點，該節點的路徑儲存在行記錄中。 批量編輯器通過jcr路徑保留行和節點之間的連結。 當使用者編輯網格時，會建立所有修改的清單。 當使用者按一 **下「儲存**」時，POST查詢會以更新的屬性值傳送至每個路徑。 這是Sling概念的基礎，如果每個儲存格都是節點的屬性，則其運作良好。 但是，如果實現Query Servlet進行繼承計算，則此模型不能作為Query Servlet返回的屬性從另一個節點繼承。
 
-「保存servlet」概念是，修改不直接發佈到每個節點，而是發佈到執行保存作業的一個servlet。 這使此servlet能夠分析修改並將屬性保存在正確的節點上。
+「保存servlet」概念是，修改不直接發佈到每個節點，而是發佈到執行保存作業的一個servlet。 這使此Servlet能夠分析修改並將屬性保存在正確的節點上。
 
 每個更新的屬性都以下列格式發送到servlet:
 
-* 參數名稱：&lt;jcr path>/&lt;property name>
+* 參數名稱： &lt;jcr path>/&lt;property name>
 
-   範例：/content/geometrixx/tw/products/jcr:content/par/productlist/1258674859000/SellingSku
+   範例： /content/geometrixx/tw/products/jcr:content/par/productlist/1258674859000/SellingSku
 
-* 值：&lt;value>
+* 值： &lt;value>
 
    例如: 12123
 
