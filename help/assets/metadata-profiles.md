@@ -4,6 +4,9 @@ description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
+workflow-type: tm+mt
+source-wordcount: '1232'
+ht-degree: 15%
 
 ---
 
@@ -25,13 +28,15 @@ source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
 
    編輯Description元件的以 **[!UICONTROL 下屬性]** :
 
-   * **[!UICONTROL 欄位標籤]**:中繼資料屬性的顯示名稱。 僅供使用者參考。
-   * **[!UICONTROL 對應至屬性]**:此屬性的值為資產節點提供了相對路徑／名稱，該資產節點保存在儲存庫中。 值應一律以開頭 `./` ，因為它表示路徑位於資產的節點下。
+   * **[!UICONTROL 欄位標籤]**: 中繼資料屬性的顯示名稱。 僅供使用者參考。
+   * **[!UICONTROL 對應至屬性]**: 此屬性的值為資產節點提供了相對路徑／名稱，該資產節點保存在儲存庫中。 值應一律以開頭 `./` ，因為它表示路徑位於資產的節點下。
+
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
    The value you specify for **[!UICONTROL Map to property]** is stored as a property under the asset&#39;s metadata node. 例如，如果您指定。`/jcr:content/metadata/dc:desc` AEM Assets會將值儲 **[!UICONTROL 存在資產的中繼資料節點，作為]**`dc:desc` 「對應至屬性」的名稱。
 
-   * **[!UICONTROL 預設值]**:使用此屬性可為中繼資料元件新增預設值。 例如，如果您指定「我的說明」，則會將此值指派給資產中繼資 `dc:desc` 料節點的屬性。
+   * **[!UICONTROL 預設值]**: 使用此屬性可為中繼資料元件新增預設值。 例如，如果您指定「我的說明」，則會將此值指派給資產中繼資 `dc:desc` 料節點的屬性。
+
    ![chlimage_1-483](assets/chlimage_1-483.png)
 
    >[!NOTE]
@@ -45,7 +50,7 @@ source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
 | [!UICONTROL 區段標題] | 欄位標籤，說 <br> 明 |
 | [!UICONTROL 單行文字] | 欄位標籤、 <br> 對應至屬性、預 <br> 設值 |
 | [!UICONTROL 多值文字] | 欄位標籤、 <br> 對應至屬性、預 <br> 設值 |
-| [!UICONTROL 數字] | 欄位標籤、 <br> 對應至屬性、預 <br> 設值 |
+| [!UICONTROL 數量] | 欄位標籤、 <br> 對應至屬性、預 <br> 設值 |
 | [!UICONTROL 日期] | 欄位標籤、 <br> 對應至屬性、預 <br> 設值 |
 | [!UICONTROL 標準標記] | 欄位標籤、 <br> 對應至屬性、預 <br> 設值、說 <br> 明 |
 
@@ -61,7 +66,7 @@ source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
 
    ![chlimage_1-486](assets/chlimage_1-486.png)
 
-1. 從工具 **[!UICONTROL 列按一下]** 「複製」。
+1. Click **[!UICONTROL Copy]** from the toolbar.
 1. 在「復 **[!UICONTROL 制中繼資料描述檔]** 」對話方塊中，輸入描述檔新副本的標題。
 1. 按一 **[!UICONTROL 下複製]**。 A copy of the profile appears in the list of profiles in the **[!UICONTROL Metadata Profiles]** page.
 
@@ -82,7 +87,7 @@ source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
 
 如果您指派不同的中繼資料描述檔給資料夾，新的描述檔會覆寫先前的描述檔。 舊有的資料夾資產仍維持不變。 新的描述檔會套用至稍後新增至資料夾的資產。
 
-在用戶介面中，配置了配置檔案的資料夾會以卡名稱中顯示的配置檔案的名稱來表示。
+在用戶介面中，配置有配置檔案的資料夾將通過卡名稱中顯示的配置檔案名稱來指示。
 
 ![chlimage_1-489](assets/chlimage_1-489.png)
 
@@ -124,7 +129,7 @@ source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
 
       ![chlimage_1-492](assets/chlimage_1-492.png)
 
-   * 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`。 新增屬性並 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name_of_metadata_profile>` 點選「 **[!UICONTROL 全部儲存」]**。
+   * 導覽至CRXDE Lite至下列節點： `/content/dam/jcr:content`. 新增屬性並 `metadataProfile:/etc/dam/metadata/dynamicmedia/<name_of_metadata_profile>` 點選「 **[!UICONTROL 全部儲存」]**。
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 
