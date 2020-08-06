@@ -1,5 +1,5 @@
 ---
-title: 「通信管理：疑難排解」
+title: 「通信管理： 疑難排解」
 seo-title: 通信管理故障排除
 description: 通信管理故障排除
 seo-description: 通信管理故障排除
@@ -10,11 +10,14 @@ topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 1%
 
 ---
 
 
-# 通信管理：疑難排解 {#correspondence-management-troubleshooting}
+# 通信管理： 疑難排解 {#correspondence-management-troubleshooting}
 
 ## 保存信件時出錯 {#errors-when-saving-a-letter}
 
@@ -40,7 +43,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ### 問題 {#issue-1}
 
-在預覽字母時，出現「載入字母時出錯：無法從XML輸入匯入資產」，即使先前未發佈的文字資產已發佈在信函中，也會顯示。
+在預覽字母時，出現「載入字母時出錯： 無法從XML輸入匯入資產」，即使先前未發佈的文字資產已發佈在信函中，也會顯示。
 
 ### 解決方法 {#workaround-1}
 
