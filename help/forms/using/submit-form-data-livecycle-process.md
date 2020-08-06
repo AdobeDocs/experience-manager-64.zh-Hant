@@ -10,6 +10,9 @@ topic-tags: Configuration
 discoiquuid: 03619a67-d1ea-4b80-b1a6-0c65a9e9212f
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '358'
+ht-degree: 0%
 
 ---
 
@@ -22,9 +25,9 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 請執行下列步驟，讓您的AEM Forms伺服器將資料送出至JEE伺服器上的AEM Forms:
 
-1. 請前往https://[*host*]:[*port*]/system/console/configMgr的AEM web組態主控台。
+1. 請前往https://[*host*]:[*port*]/system/console/configMgr的AEM Web組態主控台。
 
-1. 找到並按一下 **Adobe liveCycle Client SDK Configuration** （Adobe LiveCycle用戶端SDK組態）元件。
+1. 找到並按一下 **Adobe LiveCycle Client SDK Configuration** （Adobe LiveCycle用戶端SDK組態）元件。
 1. 按一下以編輯JEE伺服器上AEM Forms的設定伺服器URL、使用者名稱和密碼。
 1. 檢閱設定，然後按一下「 **儲存**」。
 
@@ -34,11 +37,11 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 在您的AEM Forms設定完成後，將資料XML和附件從提交的表單對應至AEM Forms on JEE流程中的欄位。 要執行此操作：
 
-1. 在AEM web組態主控台中，按一下以編輯 **Guide LiveCycle Process Locator和Invoker組態** 。
+1. 在AEM Web組態主控台中，按一下以編輯 **Guide LiveCycle Process Locator和Invoker組態** 。
 1. 指定下列參數：
 
-   * **資料xml參數的名稱** （必填）:指定AEM Forms on JEE程式的XML屬性檔案，以處理提交的資料。 預設值為 **dataxml**。
-   * **檔案附件參數的名稱** （可選）:指定AEM Forms on JEE程式需要處理的檔案物件清單。 預設值為 **fileAttachmentsList**。
+   * **資料xml參數的名稱** （必填）: 指定AEM Forms on JEE程式的XML屬性檔案，以處理提交的資料。 預設值為 **dataxml**。
+   * **檔案附件參數的名稱** （可選）: 指定AEM Forms on JEE程式需要處理的檔案物件清單。 預設值為 **fileAttachmentsList**。
 
 1. 檢閱設定，然後按一下「 **儲存**」。
 
