@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
 source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 12%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
 
 內容片段模型可定義內容片段的 [內容結構](content-fragments.md)。
 
-## 啟用內容片段模型 {#enable-content-fragment-models}
+## Enable Content Fragment Models {#enable-content-fragment-models}
 
 >[!CAUTION]
 >
@@ -33,7 +36,7 @@ source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
 * 在配置管理器中啟用內容片段模型
 * 將設定套用至您的「資產」檔案夾
 
-### 在Configuration manager中啟用內容片段模型 {#enable-content-fragment-models-in-configuration-manager}
+### 在Configuration Manager中啟用內容片段模型 {#enable-content-fragment-models-in-configuration-manager}
 
 若要 [建立新的內容片段模型](#creating-a-content-fragment-model) , **您必須先使用「設定管理員** 」加以啟用：
 
@@ -43,6 +46,7 @@ source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
 
    1. 指定 **[!UICONTROL 標題]**。
    1. 選取「 **[!UICONTROL 內容片段模型]** 」以啟用其使用。
+
    ![cfm-6420-09](assets/cfm-6420-09.png)
 
 1. 選擇「 **[!UICONTROL 建立]** 」(Create)以保存定義。
@@ -80,12 +84,13 @@ source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
 1. 導覽至「 **[!UICONTROL 工具]**」、「資 **[!UICONTROL 產」]**，然後開啟「 **[!UICONTROL 內容片段模型」]**。
 
 1. 導覽至包含內容片段模型的檔案夾。
-1. 開啟「編輯」( **[!UICONTROL Edit)所需的模型]**;使用快速動作，或從工具列中選取模型和動作。
+1. 開啟所需的編輯 **[!UICONTROL 模型]**; 使用快速動作，或從工具列中選取模型和動作。
 
    開啟模型編輯器後，會顯示：
 
-   * 左：欄位已定義
+   * 左： 欄位已定義
    * 右：資 **[!UICONTROL 料類型]** ，可用於建立欄位( **[!UICONTROL 和屬性]** ，以供建立欄位後使用)
+
    >[!NOTE]
    >
    >When a field is **Required**, the **Label** indicated in the left pane will be marked with an asterix (**&amp;ast;**).
@@ -95,9 +100,11 @@ source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
 1. **要添加欄位**
 
    * 將必要的資料類型拖曳至欄位的必要位置：
+
    ![cfm-6420-11](assets/cfm-6420-11.png)
 
    * 將欄位添加到模型後，右側面板將顯示可為該特定資料類型定義的 **Properties** 。 您可以在這裡定義該欄位的必要項目。 例如：
+
    ![cfm-6420-13](assets/cfm-6420-13.png)
 
 1. **刪除欄位**
@@ -106,7 +113,7 @@ source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
 
    ![cf-32](assets/cf-32.png)
 
-1. 新增所有必填欄位並定義屬性後，請使 **[!UICONTROL 用「儲存]** 」來保存定義。 例如：
+1. 新增所有必填欄位並定義屬性後，請使 **[!UICONTROL 用]** 「儲存」來保存定義。 例如：
 
    ![cfm-6420-14](assets/cfm-6420-14.png)
 
