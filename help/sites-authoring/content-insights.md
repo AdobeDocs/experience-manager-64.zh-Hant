@@ -1,8 +1,8 @@
 ---
 title: 內容分析
 seo-title: 內容分析
-description: Content insight提供有關使用網頁分析和SEO建議之頁面效能的資訊
-seo-description: Content insight提供有關使用網頁分析和SEO建議之頁面效能的資訊
+description: Content Insight提供有關使用網頁分析和SEO建議之頁面效能的資訊
+seo-description: Content Insight提供有關使用網頁分析和SEO建議之頁面效能的資訊
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 1%
 
 ---
 
 
 # 內容分析{#content-insight}
 
-Content insight提供有關使用網頁分析和SEO建議之頁面效能的資訊。 使用Content Insight來決定如何修改頁面，或瞭解先前的變更如何改變效能。 您可針對您所製作的每個頁面開啟Content Insight以分析頁面。
+Content Insight提供有關使用網頁分析和SEO建議之頁面效能的資訊。 使用Content Insight來決定如何修改頁面，或瞭解先前的變更如何改變效能。 您可針對您所製作的每個頁面開啟Content Insight以分析頁面。
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -27,14 +30,14 @@ Content insight提供有關使用網頁分析和SEO建議之頁面效能的資�
 
 「內容分析」頁面包含使用Adobe SiteCatalyst、Adobe Target、Adobe Social和BrightEdge資料的報表：
 
-* SiteCatalyst:可使用下列度量的報表：
+* SiteCatalyst: 可使用下列度量的報表：
 
    * 頁面檢視
    * 頁面平均逗留時間
    * 來源
 
-* 目標：您頁面包含選件之促銷活動的報表。
-* BrightEdge:頁面功能報告可改善頁面對搜尋引擎的可見性，並建議應實作的功能。
+* 目標： 您頁面包含選件之促銷活動的報表。
+* BrightEdge: 頁面功能報告可改善頁面對搜尋引擎的可見性，並建議應實作的功能。
 
 請參 [閱開啟頁面的Analytics和Recommendations](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page)。
 
