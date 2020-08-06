@@ -9,11 +9,14 @@ topic-tags: author
 discoiquuid: 7c39383b-b430-40a1-9bcb-f5aaccb616ad
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
 
-# 將提交審核者與表單建立關聯 {#associating-submission-reviewers-with-a-form}
+# 將提交審核者與表單建立關聯  {#associating-submission-reviewers-with-a-form}
 
 當您建立表單時，您可以指定透過表單入口網站審核表單提交的使用者並提供意見回應。 您的組織可以收集意見回應並重新製作已提交的表單。
 
@@ -29,7 +32,7 @@ AEM Forms可讓您將審核者群組與表單建立關聯。 新增至表單審�
 
 要編輯元資料結構：
 
-1. 在作者模式中，在Experience manager下方，按一下「工 **[!UICONTROL 具>資產>中繼資料結構」]**。
+1. 在作者模式中，在Experience Manager下方，按一下「工 **[!UICONTROL 具>資產>中繼資料結構」]**。
 1. 在「結構表單」頁面中，導覽至「 **[!UICONTROL 在AEM中編寫的表單>表單]**」。
 
    頁面的URL為：
@@ -47,7 +50,7 @@ AEM Forms可讓您將審核者群組與表單建立關聯。 新增至表單審�
 
    在「設定」下， `./jcr:content/metadata/form-submission-reviewer-group` 在「對應至屬性」欄位中輸入。
 
-   在最適化表單的「進階」屬性中，會使用您在「欄位標籤」下指定的名稱來啟用提交審核者群組欄位。
+   在最適化表單的「進階」屬性中，會啟用「欄位標籤」下您指定的名稱的提交審核者群組欄位。
 
 ## 將提交審核者與表單建立關聯 {#associating-submission-reviewers-with-a-form-1}
 
@@ -58,7 +61,7 @@ AEM Forms可讓您將審核者群組與表單建立關聯。 新增至表單審�
 
 若要建立群組並新增成員，請導覽至「工具> **[!UICONTROL 作業>安全性>群組」]**。\
 如需詳細資訊，請參 [閱使用者管理與服務](/help/sites-administering/security.md)。\
-請確定您新增所建立的群組，成為現成可用的使用者群組的成員：表 **單提交審核者**。 此使用者群組隨附於AEM Forms，而且可確保使用者新增為提交審核者。
+請確定您新增所建立的群組，成為現成可用的使用者群組的成員： **forms-submission-reviewers**。 此使用者群組隨附於AEM Forms，而且可確保使用者新增為提交審核者。
 
 要將用戶組與最適化表單關聯：
 
