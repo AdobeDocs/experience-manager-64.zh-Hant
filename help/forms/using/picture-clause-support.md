@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 HTML5表單支援XFA Picture子句，用於日期、文字和數值符號的顯示值和格式化值。 支援以下Picture子句表達式：
 
-* category(locale){picture-clause}| category(locale){picture-clause}| category(locale){picture-clause}
+* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -98,7 +101,7 @@ HTML5表格支援數值圖片符號。 不過，PDF表單和HTML表單的支援�
 
 在 **HTML Forms**&#x200B;中，只有當數字小於Picture子句中符號數時，才會格式化數字。
 
-**範例**:請考慮Picture子句：num{zzz,zzz,zz9}。
+**範例**: 請考慮Picture子句： num{zzz,zzz,zz9}。
 
 編號 **10000** ，在HTML和PDF表 **單中都格式化為10,000** 。
 
@@ -121,22 +124,22 @@ HTML5表格支援數值圖片符號。 不過，PDF表單和HTML表單的支援�
   </tr>
   <tr>
    <td>9</td> 
-   <td><strong>輸出格式</strong>:一位數。 或者，若輸入資料空白或位於對應位置的空格，則為零位。<br /> </td> 
+   <td><strong>輸出格式</strong>: 一位數。 或者，若輸入資料空白或位於對應位置的空格，則為零位。<br /> </td> 
    <td>單位數</td> 
   </tr>
   <tr>
    <td>Z</td> 
-   <td><strong>輸出格式</strong>:一位數。 或者，如果輸入資料為空，則對應位置中的空格、空格或零位。<br /> </td> 
+   <td><strong>輸出格式</strong>: 一位數。 或者，如果輸入資料為空，則對應位置中的空格、空格或零位。<br /> </td> 
    <td>單位或空格</td> 
   </tr>
   <tr>
    <td>z</td> 
-   <td><strong>輸出格式</strong>:一位數。 或者，如果輸入資料是空的、空的或者對應位置的零位，則不用考慮。<br /> </td> 
+   <td><strong>輸出格式</strong>: 一位數。 或者，如果輸入資料是空的、空的或者對應位置的零位，則不用考慮。<br /> </td> 
    <td>一位數或零</td> 
   </tr>
   <tr>
    <td>錯誤</td> 
-   <td><strong>輸出格式</strong>:由指數符號(E)組成的浮點數的指數部分。 後面接著可選的加號或減號。 後跟指數值。<br /> </td> 
+   <td><strong>輸出格式</strong>: 由指數符號(E)組成的浮點數的指數部分。 後面接著可選的加號或減號。 後跟指數值。<br /> </td> 
    <td>與輸出格式相同</td> 
   </tr>
   <tr>
@@ -146,7 +149,7 @@ HTML5表格支援數值圖片符號。 不過，PDF表單和HTML表單的支援�
   </tr>
   <tr>
    <td>S或s<br /> </td> 
-   <td>輸出格式：如果數字為負數，則為減號。 其他空間。<br /> </td> 
+   <td>輸出格式： 如果數字為負數，則為減號。 其他空間。<br /> </td> 
    <td>如果數字為負數，則減號。 加號（如果數字為正數）</td> 
   </tr>
   <tr>
@@ -160,7 +163,7 @@ HTML5表格支援數值圖片符號。 不過，PDF表單和HTML表單的支援�
    <td><br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>.</td> 
+   <td>。</td> 
    <td>當前地區設定的小數基數。</td> 
    <td><br type="_moz" /> </td> 
   </tr>
