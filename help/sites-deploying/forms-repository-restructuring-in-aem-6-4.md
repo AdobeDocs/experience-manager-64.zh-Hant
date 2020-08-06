@@ -10,6 +10,9 @@ topic-tags: repo_restructuring
 discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 **6.5升級版之前**
 
-* [Echosign cloud服務設定](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#echosign-cloud-service-configuration)
+* [Echosign Cloud服務設定](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#echosign-cloud-service-configuration)
 * [Recaptcha雲端服務組態](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#recaptcha-cloud-service-configurations)
 * [Typekit雲端服務設定](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#typekit-cloud-service-configurations)
 * [其他](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md#misc)
@@ -89,7 +92,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 ## 6.5升級版之前 {#prior-to-upgrade}
 
-### Echosign cloud服務設定 {#echosign-cloud-service-configuration}
+### Echosign Cloud服務設定 {#echosign-cloud-service-configuration}
 
 | **上一個位置** | `/etc/cloudservices/echosign` |
 |---|---|
