@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 28%
 
 ---
 
@@ -47,7 +50,7 @@ CDN會快取動態媒體資產，以便快速傳送。 不過，當您更新資�
 
    `https://server.com/is/image/Company/Backpack_B?$product$`
 
-1. 在「URL」清單方塊中，按一 **[!UICONTROL 下「繼續]** 」以清除每個特定URL的快取。 請注意，您可以編輯URL，或是透過輸入或貼入URL清單方塊來新增URL;您不需要事先設定CDN失效範本。
+1. 在「URL」清單方塊中，按一 **[!UICONTROL 下「繼續]** 」以清除每個特定URL的快取。 請注意，您可以編輯URL，或是透過輸入或貼入URL清單方塊來新增URL; 您不需要事先設定CDN失效範本。
 
    按一下「繼 **[!UICONTROL 續]**」(Continue)後，將顯示一個指示器，用於估計清除快取所需的時間。
 
