@@ -75,6 +75,7 @@ Adobe Extensible Metadata Platform(XMP)為Adobe應用程式提供通用的XML架
 
    * 在「上傳檔案」中，輸入HTML檔案或ZIP檔案的路徑和檔案名稱，或按一下「瀏覽」以尋找並選取它。
    * 在「指定URL」方塊中，輸入要轉換的頁面或網站的URL。
+
    >[!NOTE]
    >
    >您要轉換的檔案必須副檔名為。html、.htm或。zip。
