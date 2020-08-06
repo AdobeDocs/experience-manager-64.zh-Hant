@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '1540'
+ht-degree: 1%
 
 ---
 
@@ -45,23 +48,23 @@ Handlebars Helpers（幫手）是可從Handlebars指令碼調用的方法，以�
 
 ### 參數 {#parameters}
 
-* **內容**:字串
+* **內容**: 字串
 
    （可選）預設為空字串
 
-* **maxLength**:數字
+* **maxLength**: 數字
 
    （可選）預設值是內容的長度。
 
-* **maxWords**:數字
+* **maxWords**: 數字
 
    （可選）預設為修剪字串中的字詞數。
 
-* **safeString**:布林值
+* **safeString**: 布林值
 
    （可選）若為true，則傳回Handlebars.SafeString()。 預設為false。
 
-### 範例 {#examples}
+### Examples {#examples}
 
 ```
 {{abbreviate subject maxWords=2}}
@@ -93,27 +96,27 @@ Then abbreviate would return
 
 ### 參數 {#parameters-1}
 
-* **內容**:字串
+* **內容**: 字串
 
    （可選）預設為空字串。
 
-* **numChars**:數字
+* **numChars**: 數字
 
    （選用）不顯示全文時要顯示的字元數。 預設值為100。
 
-* **moreText**:字串
+* **moreText**: 字串
 
    （選用）要顯示的文字，指出要顯示的文字較多。 預設為「更多」。
 
-* **橢圓文字**:字串
+* **橢圓文字**: 字串
 
    （選用）要顯示的文字，指出有隱藏文字。 預設值為&quot;。..&quot;。
 
-* **safeString**:布林值
+* **safeString**: 布林值
 
    （選用）布林值，指出是否在傳回結果前套用Handlebars.SafeString()。 預設為false。
 
-### 例如 {#example}
+### 範例 {#example}
 
 ```
 {{content-loadmore  context numChars=32  moreText="go on"  ellipsesText="..." }}
@@ -133,15 +136,15 @@ Then content-loadmore would return
 
 ### 參數 {#parameters-2}
 
-* **內容**:數字
+* **內容**: 數字
 
    （可選）從1970年1月1日（紀元）起的毫秒值偏移。 預設為目前日期。
 
-* **格式**:字串
+* **格式**: 字串
 
    （選用）要套用的日期格式。 預設值為&quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot;，結果顯示為&quot;2015-03-18T18:17:13-07:00&quot;
 
-### 範例 {#examples-1}
+### Examples {#examples-1}
 
 ```
 {{dateUtil this.memberSince format="dd MMM yyyy, hh:mm"}}
@@ -161,15 +164,15 @@ Then content-loadmore would return
 
 ### 參數 {#parameters-3}
 
-* **lvalue**:字串
+* **lvalue**: 字串
 
    要比較的左側值
 
-* **rvalue**:字串
+* **rvalue**: 字串
 
    要比較的右側值
 
-### 例如 {#example-1}
+### 範例 {#example-1}
 
 ```
 {{#equals  value "some-value"}}
@@ -185,15 +188,15 @@ Then content-loadmore would return
 
 ### 參數 {#parameters-4}
 
-* **內容**:字串
+* **內容**: 字串
 
    （選用）要翻譯的字串。 如果未提供預設值，則為必要值。
 
-* **模式**:字串
+* **模式**: 字串
 
    （選用）以逗號分隔的 [WCM模式清單](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) ，以測試是否已設定。
 
-### 例如 {#example-2}
+### 範例 {#example-2}
 
 ```xml
 {{#if-wcm-mode mode="DESIGN, EDIT"}}
@@ -211,19 +214,19 @@ Then content-loadmore would return
 
 ### 參數 {#parameters-5}
 
-* **內容**:字串
+* **內容**: 字串
 
    （選用）要翻譯的字串。 如果未提供預設值，則為必要值。
 
-* **預設**:字串
+* **預設**: 字串
 
    （選用）要翻譯的預設字串。 若未提供內容，則為必要項目。
 
-* **注釋**:字串
+* **注釋**: 字串
 
    （可選）翻譯提示
 
-### 例如 {#example-3}
+### 範例 {#example-3}
 
 ```
 {{i18n "hello"}}
@@ -242,7 +245,7 @@ Then content-loadmore would return
 
 ### 參數 {#parameters-6}
 
-* **內容**:字串或物件
+* **內容**: 字串或物件
 
    （可選，除非提供相對路徑）
 
@@ -250,23 +253,23 @@ Then content-loadmore would return
 
    用於 `this.id` 獲取在上的資源，以 `id` 呈現請求的resourceType
 
-* **resourceType**:字串
+* **resourceType**: 字串
 
    （可選）資源類型將預設為上下文中的資源類型
 
-* **範本**:字串
+* **範本**: 字串
 
    元件指令碼的路徑
 
-* **路徑**:字串
+* **路徑**: 字串
 
    （必要）資源的路徑。 如果路徑是相對的，則必須提供上下文，否則會傳回空字串。
 
-* **編寫已停用**:布林值
+* **編寫已停用**: 布林值
 
    （可選）預設為false。 僅供內部使用。
 
-### 例如 {#example-4}
+### 範例 {#example-4}
 
 ```
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
@@ -282,23 +285,23 @@ Then content-loadmore would return
 
 ### 參數 {#parameters-7}
 
-* **類別**:字串
+* **類別**: 字串
 
    （可選）逗號分隔的用戶端程式庫類別清單。 這將包含指定類別的所有Javascript和CSS程式庫。 主題名稱會從請求中擷取。
 
-* **主題**:字串
+* **主題**: 字串
 
    （可選）逗號分隔的用戶端程式庫類別清單。 這將包含指定類別的所有主題相關程式庫（CSS和JS）。 主題名稱會從請求中擷取。
 
-* **js**:字串
+* **js**: 字串
 
    （可選）逗號分隔的用戶端程式庫類別清單。 這將包含指定類別的所有Javascript程式庫。
 
-* **css**:字串
+* **css**: 字串
 
    （可選）逗號分隔的用戶端程式庫類別清單。 這將包含指定類別的所有CSS程式庫。
 
-### 範例 {#examples-2}
+### Examples {#examples-2}
 
 ```
 // all: js + theme (theme-js + css) 
@@ -349,15 +352,15 @@ Then content-loadmore would return
 
 ### 參數 {#parameters-8}
 
-* **內容**:數字
+* **內容**: 數字
 
    過去與「現在」比較的時間。 時間表示為自1970年1月1日（時元）起的毫秒值偏移。
 
-* **daysCutform**:數字
+* **daysCutform**: 數字
 
    切換到實際日期前的天數。 預設值為60。
 
-### 例如 {#example-5}
+### 範例 {#example-5}
 
 ```
 {{pretty-time this.published daysCutoff=7}}
@@ -377,15 +380,15 @@ Depending on how long in the past, may return
 
 為HTML元素內容編碼來源字串以協助防範XSS的輔助程式。
 
-注意：這不是驗證器，不用於寫入屬性值。
+注意： 這不是驗證器，不用於寫入屬性值。
 
 ### 參數 {#parameters-9}
 
-* **內容**:物件
+* **內容**: 物件
 
    要編碼的HTML
 
-### 例如 {#example-6}
+### 範例 {#example-6}
 
 ```
 <p>{{xss-html forum-ugc}}</p>
@@ -395,15 +398,15 @@ Depending on how long in the past, may return
 
 一種幫助程式，用於對源字串進行編碼，以便寫入HTML屬性值，以幫助防止XSS。
 
-注意：這不是驗證器，不用於寫入actionalable屬性（href、src、事件處理常式）。
+注意： 這不是驗證器，不用於寫入actionalable屬性（href、src、事件處理常式）。
 
 ### 參數 {#parameters-10}
 
-* **內容**:物件
+* **內容**: 物件
 
    要編碼的HTML
 
-### 例如 {#example-7}
+### 範例 {#example-7}
 
 ```
 <div id={{xss-htmlAttr id}} />
@@ -413,15 +416,15 @@ Depending on how long in the past, may return
 
 一種協助程式，可編碼來源字串以寫入JavaScript字串內容，以協助防範XSS。
 
-注意：這不是驗證器，不用於寫入任意JavaScript。
+注意： 這不是驗證器，不用於寫入任意JavaScript。
 
 ### 參數 {#parameters-11}
 
-* **內容**:物件
+* **內容**: 物件
 
    要編碼的HTML
 
-### 例如 {#example-8}
+### 範例 {#example-8}
 
 ```
 var input = {{xss-jsString topic-title}}
@@ -431,15 +434,15 @@ var input = {{xss-jsString topic-title}}
 
 協助程式，可淨化URL，將其寫入為HTML href或srce屬性值，以協助防範XSS。
 
-注意：這可能會傳回空字串
+注意： 這可能會傳回空字串
 
 ### 參數 {#parameters-12}
 
-* **內容**:物件
+* **內容**: 物件
 
    要淨化的URL
 
-### 例如 {#example-9}
+### 範例 {#example-9}
 
 ```
 <a href="{{xss-validHref url}}">my link</a>
@@ -452,7 +455,7 @@ var input = {{xss-jsString topic-title}}
 * Handlebars協助呼叫是簡單的識別碼（協助程式的*name *），後面接著零個或多個空格分隔的參數。
 * 參數可以是簡單的字串、數字、布林值或JSON物件，以及可選的索引鍵值配對（雜湊引數）序列，做為最後一個參數。
 * 雜湊引數中的索引鍵必須是簡單識別碼。
-* 雜湊引數中的值是Handlebars運算式：簡單識別碼、路徑或字串。
+* 雜湊引數中的值是Handlebars運算式： 簡單識別碼、路徑或字串。
 * Handlebars幫手 `this`隨時都能找到目前的情境。
 * 上下文可以是字串、數字、布林值或JSON資料物件。
 * 可以將嵌套在當前上下文中的對象作為上下文傳遞，例如 `this.url` 或 `this.id` （請參見以下簡單和塊幫助器示例）。
@@ -599,7 +602,7 @@ clientlib必須：
 * 在Handlebars載入後載入
 * 包含在 [內](clientlibs.md)
 
-注意：SCF幫助器的定義如 `/etc/clientlibs/social/commons/scf/helpers.js`中。
+注意： SCF幫助器的定義如 `/etc/clientlibs/social/commons/scf/helpers.js`中。
 
 | **[‹功能基本工具](essentials.md)** | **[伺服器端自訂‹](server-customize.md)** |
 |---|---|
