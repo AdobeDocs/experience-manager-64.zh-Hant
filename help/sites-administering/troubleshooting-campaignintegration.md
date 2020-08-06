@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '818'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 對於這兩種整合，您可以檢查是否傳送HTTP呼叫(AEM > Adobe Campaign、Adobe Campaign > AEM):
 
 * 當整合失敗時，請確定這些呼叫會到達另一端（以避免防火牆/SSL問題）。
-* 若為AEM功能，您會看到AEM作者介面中要求json呼叫；這不應導致HTTP-500錯誤。 如果您看到HTTP-500錯誤，請查看以取得 `error.log` 更多有關此的資訊。
+* 若為AEM功能，您會看到AEM作者介面中要求json呼叫； 這不應導致HTTP-500錯誤。 如果您看到HTTP-500錯誤，請查看以取得 `error.log` 更多有關此的資訊。
 * 提高AEM中促銷活動類別的除錯層級也有助於疑難排解問題。
 
 ## 如果連接失敗 {#if-the-connection-fails}
@@ -92,9 +95,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 如果您收到「無法剖析XTK日期+時間&#39;undefined&#39;」錯誤 {#if-you-get-a-cannot-parse-xtk-date-time-undefined-error}
 
-按一下「同步化」後，您會看到頁面上發生指令碼的錯誤：無法剖析XTK Date+Time &#39;undefined&#39;:不是有效的XTK值。
+按一下「同步化」後，您會看到頁面上發生指令碼的錯誤： 無法剖析XTK Date+Time &#39;undefined&#39;: 不是有效的XTK值。
 
-如果AEM例項上仍有過時的Adobe Campaign資訊，就會發生這種情況。 移除AEM上的所有促銷活動整合設定並重建這些設定，以解決此問題。 然後，建立新範本。
+如果AEM例項上仍有過時的Adobe Campaign資訊，就會發生此情況。 移除AEM上的所有促銷活動整合設定並重建這些設定，以解決此問題。 然後，建立新範本。
 
 ## 如果SSL連線在設定雲端服務時顯示錯誤 {#if-a-connection-to-ssl-displays-an-error-when-setting-up-the-cloud-service}
 
@@ -125,7 +128,7 @@ at sun.security.ssl.AppOutputStream.write(Unknown Source)
 要解決此問題：
 
 * 必須將發送器或反向代理配置為將原始協定作為報頭傳遞。
-* OSGi組態( *https://&lt;host>:&lt;port>/system/console/configMgr*[](http://localhost:4502/system/console/configMgr))中的Apache Felix Http Service SSL篩選器必須設定為個別的標題設定。 請參閱 [https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter](https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter)
+* OSGi組態中的 *Apache Felix Http Service SSL篩選器* ([https://&lt;host>:&lt;port>/system/console/configMgr](http://localhost:4502/system/console/configMgr))必須設定為個別的標題設定。 請參閱 [https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter](https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter)
 
 ## 如果我建立的自訂範本無法在「頁面屬性」中選取 {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 
@@ -133,4 +136,4 @@ at sun.security.ssl.AppOutputStream.write(Unknown Source)
 
 ## 如果您在記錄檔中收到錯誤「com.day.cq.mcm.campaign.servlets.util.ParameterMapper」 {#if-you-get-the-error-com-day-cq-mcm-campaign-servlets-util-parametermapper-in-your-logs}
 
-使用自訂範本時，您的記錄檔中會出現「com.day.cq.mcm.campaign.servlets.util.ParameterMapper」錯誤。 在此情況下，請務必從Package Share安裝Featurepack 6576 [](/help/sites-administering/package-manager.md#package-share)。 如果acMapping屬性設為recipient.firstName以外的值，Adobe Campaign manager會建立空白值，這就是問題。
+使用自訂範本時，您的記錄檔中會出現「com.day.cq.mcm.campaign.servlets.util.ParameterMapper」錯誤。 在此情況下，請務必從Package Share安裝Featurepack 6576 [](/help/sites-administering/package-manager.md#package-share)。 如果acMapping屬性設為recipient.firstName以外的值，Adobe Campaign Manager會建立空白值，這就是問題。
