@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
 source-git-commit: 340c267fc4e142a67ae5be3f1ab11f063417962e
+workflow-type: tm+mt
+source-wordcount: '4109'
+ht-degree: 0%
 
 ---
 
@@ -62,17 +65,17 @@ Forms服務會回應來自網頁瀏覽器的HTTP要求，將表單轉譯為HTML�
 >
 >如果您想要自訂HTML表單上「HTML數位簽章」按鈕的外觀，您必須變更fscdigsig.css檔案（在adobe-forms-ds.ear > adobe-forms-ds.war檔案中）中的下列屬性：
 
-**.fsc-ds-ssb**:此樣式表適用於空白符號欄位的情況。
+**.fsc-ds-ssb**: 此樣式表適用於空白符號欄位的情況。
 
-**.fsc-ds-ssv**:此樣式表適用於「有效符號」欄位的情況。
+**.fsc-ds-ssv**: 此樣式表適用於「有效符號」欄位的情況。
 
-**.fsc-ds-ssc**:此樣式表適用於「有效符號」欄位，但資料已變更的情況。
+**.fsc-ds-ssc**: 此樣式表適用於「有效符號」欄位，但資料已變更的情況。
 
-**.fsc-ds-ssi**:此樣式表適用於無效符號欄位的情況。
+**.fsc-ds-ssi**: 此樣式表適用於無效符號欄位的情況。
 
-**.fsc-ds-popup-bg**:不使用此樣式表屬性。
+**.fsc-ds-popup-bg**: 不使用此樣式表屬性。
 
-**.fsc-ds-popup-btn**:不使用此樣式表屬性。
+**.fsc-ds-popup-btn**: 不使用此樣式表屬性。
 
 ## 運行指令碼 {#running-scripts}
 
@@ -93,9 +96,9 @@ Forms服務可在呈現表單時執行指令碼。 因此，您可以將資料�
 
 您可以在提交表單之前叫用自訂指令碼。 此功能適用於所有可用的瀏覽器。 不過，只有當使用者轉譯HTML表單時，其屬性才 `Output Type` 能使用它 `Form Body`。 當是時，它將無法 `Output Type` 運作 `Full HTML`。 如需設定此功能的步驟，請參閱管理說明中的設定表單。
 
-您必須先定義回呼函式，在提交表單之前先加以呼叫，其中函式的名稱為 `_user_onsubmit`。 假定該函式不會拋出任何例外，或者如果有，則會忽略該例外。 建議將JavaScript函式置於html的head區段中；但是，您可以在包含的指令碼標籤結束之前的任何地方宣告它 `xfasubset.js`。
+您必須先定義回呼函式，在提交表單之前先加以呼叫，其中函式的名稱為 `_user_onsubmit`。 假定該函式不會拋出任何例外，或者如果有，則會忽略該例外。 建議將JavaScript函式置於html的head區段中； 但是，您可以在包含的指令碼標籤結束之前的任何地方宣告它 `xfasubset.js`。
 
-當formserver轉譯包含下拉式清單的XDP時，除了建立下拉式清單外，還會建立兩個隱藏的文字欄位。 這些文字欄位會儲存下拉式清單的資料（一個儲存選項的顯示名稱，另一個儲存選項的值）。 因此，每當使用者提交表單時，下拉式清單的整個資料都會提交。 假設您不想每次都提交那麼多資料，您可以編寫自訂指令碼來停用該功能。 例如：下拉式清單的名稱是， `drpOrderedByStateProv` 並會包住子表單標題下。 HTML輸入元素的名稱將為 `header[0].drpOrderedByStateProv[0]`。 儲存並送出下拉式清單資料的隱藏欄位名稱具有以下名稱： `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+當formserver轉譯包含下拉式清單的XDP時，除了建立下拉式清單外，還會建立兩個隱藏的文字欄位。 這些文字欄位會儲存下拉式清單的資料（一個儲存選項的顯示名稱，另一個儲存選項的值）。 因此，每當使用者提交表單時，下拉式清單的整個資料都會提交。 假設您不想每次都提交那麼多資料，您可以編寫自訂指令碼來停用該功能。 例如： 下拉式清單的名稱是， `drpOrderedByStateProv` 並會包住子表單標題下。 HTML輸入元素的名稱將為 `header[0].drpOrderedByStateProv[0]`。 儲存並送出下拉式清單資料的隱藏欄位名稱具有以下名稱： `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 如果您不想張貼資料，可以以下列方式停用這些輸入元素。 `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
@@ -119,7 +122,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 在客戶端上運行或在客戶端和伺服器上同時運行的指令碼必須寫入XFA子集。 在伺服器上運行的指令碼可以使用完整的XFA指令碼模型，也可以使用FormCalc。 如需使用JavaScript的詳細資訊，請參 [閱Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)。
 
-在用戶端上執行指令碼時，只有目前顯示的面板可以使用指令碼；例如，當顯示面板B時，您無法對面板A中的欄位編寫指令碼。 在伺服器上執行指令碼時，可存取所有面板。
+在用戶端上執行指令碼時，只有目前顯示的面板可以使用指令碼； 例如，當顯示面板B時，您無法對面板A中的欄位編寫指令碼。 在伺服器上執行指令碼時，可存取所有面板。
 
 在用戶端上執行的指令碼中使用指令碼物件模型(SOM)運算式時，您也必須小心。 在客戶端上運行的指令碼只支援簡化的SOM表達式子集。
 
@@ -208,9 +211,9 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
 
 您可在轉換HTML表單時設定HTML執行時期選項。 例如，您可以將工具列新增至HTML表格，讓使用者選取位於用戶端電腦上的檔案附件，或擷取使用HTML表格轉譯的檔案附件。 依預設，會停用HTML工具列。 若要將工具列新增至HTML表格，您必須以程式設計方式設定執行時期選項。 依預設，HTML工具列包含下列按鈕：
 
-* `Home`:提供應用程式Web根目錄的連結。
-* `Upload`:提供用戶介面以選擇要附加到當前表單的檔案。
-* `Download`:提供用於顯示附加檔案的用戶介面。
+* `Home`: 提供應用程式Web根目錄的連結。
+* `Upload`: 提供用戶介面以選擇要附加到當前表單的檔案。
+* `Download`: 提供用於顯示附加檔案的用戶介面。
 
 當HTML工具列出現在HTML表格上時，使用者最多可以選取10個檔案以及表格資料一起提交。 提交檔案後，Forms服務就可以擷取檔案。
 
@@ -271,6 +274,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
    * 若要使用工具列來轉換HTML表格，請叫 `HTMLRenderSpec` 用物件的方 `setHTMLToolbar` 法並傳遞 `HTMLToolbar` 列舉值。 例如，若要顯示垂直HTML工具列，請傳遞 `HTMLToolbar.Vertical`。
    * 若要設定HTML表單的地區設定值，請叫用 `HTMLRenderSpec` 物件的方 `setLocale` 法，並傳遞指定地區設定值的字串值。 （這是選用設定。）
    * 若要在完整HTML標籤中轉譯HTML表格，請叫 `HTMLRenderSpec` 用物件的方 `setOutputType` 法並傳遞 `OutputType.FullHTMLTags`。 （這是選用設定。）
+
    >[!NOTE]
    當選項為且引用代管AEM Forms的J2EE應用程式伺服器以外的伺服器( `StandAlone` 值是使用傳遞至物件方法的物件 `true` 來指定)時， `ApplicationWebRoot` HTML中無法成功轉譯 `ApplicationWebRoot` 表 `URLSpec``FormsServiceClient``(Deprecated) renderHTMLForm` 格。 當 `ApplicationWebRoot`*是代管AEM Forms的另一台伺服器時，管理主控台中的Web根URI值必須設定為表單的Web應用程式URI值。 您可登入管理主控台，按一下「服務>表單」，並將Web根URI設為https://server-name:port/FormServer。 然後，儲存您的設定。*
 
@@ -282,10 +286,11 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
    * 指定 `TransformTo` HTML首選項類型的枚舉值。 例如，若要轉譯與Internet Explorer 5.0或更新版本的動態HTML相容的HTML表格，請指定 `TransformTo.MSDHTML`。
    * 包 `com.adobe.idp.Document` 含要與表單合併的資料的對象。 如果您不想合併資料，請傳遞空 `com.adobe.idp.Document` 物件。
    * 儲存 `HTMLRenderSpec` HTML執行時期選項的物件。
-   * 指定標題值的 `HTTP_USER_AGENT` 字串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
+   * 指定標題值的 `HTTP_USER_AGENT` 字串值； 例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
    * 存 `URLSpec` 儲呈現HTML表單所需URI值的對象。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
-   該方 `(Deprecated) renderHTMLForm` 法返回包 `FormsResult` 含表單資料流的對象，該表單資料流可以寫入客戶端Web瀏覽器。
+
+   該方 `(Deprecated) renderHTMLForm` 法返回包 `FormsResult` 含可寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
 
@@ -301,7 +306,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
 
 [將表單轉換為HTML](#rendering-forms-as-html)
 
-[快速入門（SOAP模式）:使用Java API轉換HTML表格](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API轉換HTML表格](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -326,8 +331,9 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
    * 若要使用工具列來轉換HTML表格，請叫 `HTMLRenderSpec` 用物件的方 `setHTMLToolbar` 法並傳遞 `HTMLToolbar` 列舉值。 例如，若要顯示垂直HTML工具列，請傳遞 `HTMLToolbar.Vertical`。
    * 若要設定HTML表單的地區設定值，請叫用 `HTMLRenderSpec` 物件的方 `setLocale` 法，並傳遞指定地區設定值的字串值。 如需詳細資訊，請參 [閱「AEM Forms API參考」](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 若要在完整HTML標籤中轉譯HTML表格，請叫 `HTMLRenderSpec` 用物件的方 `setOutputType` 法並傳遞 `OutputType.FullHTMLTags`。
+
    >[!NOTE]
-   當選項為且引用代管AEM Forms的J2EE應用程式伺服器以外的伺服器( `StandAlone` 值是使用傳遞至物件方法的物件 `true` 來指定)時， `ApplicationWebRoot` HTML中無法成功轉譯 `ApplicationWebRoot` 表 `URLSpec``FormsServiceClient``(Deprecated) renderHTMLForm` 格。 當 `ApplicationWebRoot`*是代管AEM Forms的另一台伺服器時，管理主控台中的Web根URI值必須設定為表單的Web應用程式URI值。 您可登入管理主控台，按一下「服務>表單」，並將Web根URI設為https://server-name:port/FormServer。 然後，儲存您的設定。*
+   當選項為且引用代管AEM Forms的J2EE應用程式伺服器以外的伺服器( `StandAlone` 值是使用傳遞至物件方法的物件 `true` 來指定)時， `ApplicationWebRoot` HTML中無法成功轉譯 `ApplicationWebRoot` 表 `URLSpec``FormsServiceClient``(Deprecated) renderHTMLForm` 格。 當 `ApplicationWebRoot`*是代管AEM Forms的另一台伺服器時，管理主控台中的Web根URI值必須設定為表單的Web應用程式URI值。 您可登入管理主控台，按一下「服務>表單」，並將Web根URI設為https://server-name:port/FormServer。 然後，儲存您的設定。 *
 
 1. 轉換HTML表格
 
@@ -337,7 +343,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
    * 指定 `TransformTo` HTML首選項類型的枚舉值。 例如，若要轉譯與Internet Explorer 5.0或更新版本的動態HTML相容的HTML表格，請指定 `TransformTo.MSDHTML`。
    * 包 `BLOB` 含要與表單合併的資料的對象。 如果您不想合併資料，請傳遞 `null`。 (請參 [閱使用可排程版面預填表單](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts)。)
    * 儲存 `HTMLRenderSpec` HTML執行時期選項的物件。
-   * 指定標題值的 `HTTP_USER_AGENT` 字串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。 如果您不想設定此值，可以傳遞空字串。
+   * 指定標題值的 `HTTP_USER_AGENT` 字串值； 例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。 如果您不想設定此值，可以傳遞空字串。
    * 存 `URLSpec` 儲呈現HTML表單所需URI值的對象。 (請參 [閱指定URI值](/help/forms/developing/rendering-interactive-pdf-forms.md)。)
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。 (請參 [閱將檔案附加至表單](/help/forms/developing/rendering-interactive-pdf-forms.md)。)
    * 由方 `com.adobe.idp.services.holders.BLOBHolder` 法填充的空對象。 此參數值儲存渲染的表單。
@@ -346,6 +352,7 @@ XFA子集定義映射至HTML事件的XFA事件。 在計算和驗證事件的時
    * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空對象。 此引數將儲存地區值。
    * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空對象。 此引數將儲存所使用的HTML轉換值。
    * 包含 `com.adobe.idp.services.holders.FormsResultHolder` 此操作結果的空對象。
+
    該方 `(Deprecated) renderHTMLForm` 法用必 `com.adobe.idp.services.holders.FormsResultHolder` 須寫入客戶端Web瀏覽器的表單資料流填充作為最後一個參數值傳遞的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
