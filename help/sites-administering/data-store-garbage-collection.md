@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5ee9d11a-85c2-440d-b487-a38d04dc040b
 translation-type: tm+mt
 source-git-commit: 3c4b8bf3fd912406657c4cecb75eb2b77dd41bc7
+workflow-type: tm+mt
+source-wordcount: '1905'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ AEM會將儲存庫當做許多內部和內部管理活動的儲存空間：
 * 刪除資料儲存廢棄記錄不會影響正常效能，因此這不是效能優化。
 * 如果不考慮儲存利用率和備份時間等相關因素，則資料儲存垃圾回收可能會安全延遲。
 
-資料儲存廢棄項目收集器首先在進程開始時記下當前時間戳。 然後使用多通標籤／掃描圖樣算法進行收集。
+資料儲存廢棄項目收集器首先在進程開始時記下當前時間戳。 然後，使用多通標籤／掃描模式算法進行收集。
 
 在第一階段，資料儲存廢棄項目收集器執行對所有儲存庫內容的全面遍歷。 對於每個對資料儲存記錄有引用的內容對象，它將檔案定位在檔案系統中，執行元資料更新——修改「上次修改的」或MTIME屬性。 此時，此階段所存取的檔案會比初始基準時間戳記更新。
 
@@ -66,7 +69,7 @@ AEM會將儲存庫當做許多內部和內部管理活動的儲存空間：
 
 如果TarMK同時用作節點儲存和資料儲存，則「修訂清除」可用於對節點儲存和資料儲存進行垃圾回收。 但是，如果已設定外部資料存放區（例如檔案系統資料存放區），則資料存放區廢棄項目收集必須與「修訂清除」分開明確觸發。 資料存放區廢棄項目收集可透過「作業控制面板」或JMX主控台觸發。
 
-下表顯示AEM 6中所有支援的資料存放區部署所需使用的資料存放區廢棄項目收集類型：
+下表顯示AEM 6中所有支援的資料存放區部署需要使用的資料存放區廢棄項目收集類型：
 
 <table> 
  <tbody> 
@@ -133,7 +136,7 @@ AEM會將儲存庫當做許多內部和內部管理活動的儲存空間：
 
 若要執行廢棄項目收集：
 
-1. 在Apache Felix OSGi Management console中，選中「 **Main** 」（主）頁籤，然後從以 **下菜單中選擇** JMX。
+1. 在Apache Felix OSGi Management Console中，選中「 **Main** 」（主）頁籤，然後從以 **下菜單中選擇** JMX。
 1. 接著，搜索並按一下 **Repository Manager** MBean(或轉至 `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`)。
 1. 按一 **下startDataStoreGC(boolean markOnly)**。
 1. 如果需要`true`，請為參 `markOnly` 數輸入&quot;&quot;:
@@ -166,7 +169,7 @@ AEM會將儲存庫當做許多內部和內部管理活動的儲存空間：
 
 >[!CAUTION]
 >
->在以下示例中， `curl` 可能需要為實例配置各種參數；例如，實際資料 `localhost`存放廢棄項目收集的主機名稱()、埠( `4502`)、管理密碼( `xyz`)和各種參數。
+>在以下示例中， `curl` 可能需要為實例配置各種參數； 例如，實際資料 `localhost`存放廢棄項目收集的主機名稱()、埠( `4502`)、管理密碼( `xyz`)和各種參數。
 
 以下是透過命令列叫用資料儲存廢棄項目收集的curl命令範例：
 
