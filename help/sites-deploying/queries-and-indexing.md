@@ -87,6 +87,7 @@ Oak查詢引擎支援下列語言：
 
    * **類型：**  `property` （字串類型）
    * **propertyNames:**  `jcr:uuid` （類型名稱）
+
    此特定示例將為屬性 `jcr:uuid` 編製索引，其作業是公開其所連接節點的通用唯一標識符(UUID)。
 
 1. 儲存變更。
@@ -211,6 +212,7 @@ select * from [nt:base] where [alias] = '/admin'
    * **名稱：** `class`
    * **類型：** `String`
    * **值：** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+
    該值是您要使用的分析器類的名稱。
 
    您也可以使用可選字串屬性將分析器設定為與特定lucene版本 `luceneMatchVersion` 一起使用。 與Lucene 4.7搭配使用的有效合成產品為：
@@ -218,6 +220,7 @@ select * from [nt:base] where [alias] = '/admin'
    * **名稱：** `luceneMatchVersion`
    * **類型：** `String`
    * **值：** `LUCENE_47`
+
    如果 `luceneMatchVersion` 未提供，Oak將使用隨附的Lucene版本。
 
 1. 如果要向Analyzer配置中添加stopwords檔案，可以在具有以下屬性的節點下 `default` 建立新節點：
@@ -324,9 +327,11 @@ AEM也可設定為與遠端Solr伺服器例項搭配使用：
 1. 現在，建立兩個索爾碎片。 通過為Solr已備份的資料夾中的每個分片建立資料夾，可以執行此操作：
 
    * 對於第一個分片，請建立資料夾：
+
    `<solrunpackdirectory>\aemsolr1\node1`
 
    * 對於第二個分片，請建立資料夾：
+
    `<solrunpackdirectory>\aemsolr2\node2`
 
 1. 在Solr包中找到示例實例。 它通常位於包根目錄中 `example`名為&quot;&quot;的資料夾中。
