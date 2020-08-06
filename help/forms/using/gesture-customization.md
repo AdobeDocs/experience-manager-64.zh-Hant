@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +37,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    * 在Xcode中，導覽至「 **Capture > www > wsmobile > js >執行階段>檢視」資料夾** 。
    * 在Eclipse中，導覽至「資 **產> www > wsmobile > js >執行階段>檢視資料夾** 」。
    * 在Visual Studio中，導覽至「 **MWSwindows > www > wsmobile > js > runtime >檢視」檔案夾** 。
+
    >[!NOTE]
    >
    >task.js檔案包含與任務或「起點」清單中列出的每個任務或「起點」相關聯的主幹視圖。
@@ -48,22 +52,22 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 1. 尋找
 
-   * &quot;tap .taskContentArea&quot; :&quot;onTaskClick&quot;,
+   * &quot;tap .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;tap .taskOpenArea&quot; :&quot;onTaskClick&quot;,
+      &quot;tap .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      「點選。task-content」:&quot;onTaskClick&quot;,
+      「點選。task-content」: &quot;onTaskClick&quot;,
 
-      &quot;tap .last_empty_div&quot; :&quot;onTaskClick&quot;,
+      &quot;tap .last_empty_div&quot; : &quot;onTaskClick&quot;,
    和
 
-   * &quot;swipe .taskContentArea&quot; :&quot;onTaskClick&quot;,
+   * &quot;swipe .taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe .taskOpenArea&quot; :&quot;onTaskClick&quot;,
+      &quot;swipe .taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      「滑動。task-content」:&quot;onTaskClick&quot;,
+      「滑動。task-content」: &quot;onTaskClick&quot;,
 
-      &quot;swipe .last_empty_div&quot; :&quot;onTaskClick&quot;,
+      &quot;swipe .last_empty_div&quot; : &quot;onTaskClick&quot;,
 
 
 1. 儲存並關閉 `task.js` 檔案。
