@@ -11,6 +11,9 @@ topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 您可以使用檔案安全性，將特定PDF檔案的存取權限限制給僅授權的使用者。 您也可以決定收件者如何使用受保護的檔案。 例如，您可以指定收件者是否可以列印、複製或編輯受原則保護之檔案的文字。 若要進一步瞭解檔案安全性，請參閱 [檔案安全性](/help/forms/using/admin-help/document-security.md)。
 
-您可以使用Reader擴充功能，透過Acrobat Reader在Adobe PDF檔案中啟用互動功能。 這些互動功能通常只能透過Adobe Acrobat Professional和Standard提供。 若要瞭解Reader擴充功能可啟用的互動式功能，請參 [閱Adobe Experience Manager Forms docAssurance服務](/help/forms/using/overview-aem-document-services.md)**。**
+您可以使用Reader擴充功能，透過Acrobat Reader在Adobe PDF檔案中啟用互動功能。 這些互動功能通常只能透過Adobe Acrobat Professional和Standard提供。 若要瞭解Reader擴充功能可啟用的互動式功能，請參 [閱Adobe Experience Manager Forms DocAssurance服務](/help/forms/using/overview-aem-document-services.md)**。**
 
 您可以使用可攜式保護程式庫，在檔案上套用原則，而不需要透過網路傳送檔案。 只有安全證書和保護策略詳細資訊才能通過網路傳輸。 實際文檔永遠不會離開客戶機，保護策略將在客戶機上本地應用。
 
@@ -43,9 +46,9 @@ Reader Extensions服務完全支援以PDF標準1.6及更新版本為基礎的PDF
 
 ### 將使用權套用至受原則保護的檔案保全PDF檔案 {#apply-usage-rights-to-a-document-security-policy-protected-pdf-document}
 
-您可以使用 `applyUsageRights`Java API，將使用權套用至受原則保護的PDF檔案。 使用權限與Acrobat預設為Acrobat但Adobe reader未提供的功能相關，例如在表格中新增註解或填寫表格欄位並儲存表格的功能。 具有套用使用權限的PDF檔案稱為具有權限的檔案。 在Adobe Reader中開啟具權限檔案的使用者，可以執行針對該特定檔案啟用的作業。
+您可以使用 `applyUsageRights`Java API，將使用權套用至受原則保護的PDF檔案。 使用權限與Acrobat預設為Acrobat但Adobe Reader未提供的功能相關，例如在表格中新增註解或填寫表格欄位並儲存表格的功能。 具有套用使用權限的PDF檔案稱為具有權限的檔案。 在Adobe Reader中開啟具權限檔案的使用者，可以執行針對該特定檔案啟用的作業。
 
-**** 語法： `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
+**語法：** `InputStream applyUsageRights(InputStream inputFile, File certFile, String credentialPassword, UsageRights usageRights)`
 
 <table> 
  <tbody> 
@@ -76,7 +79,7 @@ Reader Extensions服務完全支援以PDF標準1.6及更新版本為基礎的PDF
 
 您可以使用 `getDocumentUsageRights`Java API擷取套用至受原則保護PDF檔案的Reader擴充功能使用權限。 透過擷取使用權的相關資訊，您可以瞭解受原則保護的PDF檔案所啟用的讀者擴充功能。
 
-**** 語法： `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
+**語法：** `public GetUsageRightsResult getDocumentUsageRights(InputStream inDoc)`
 
 <table> 
  <tbody> 
@@ -141,7 +144,7 @@ System.out.println("RE rights for the file are :\n"+right1);
 
 您可以使用 `removeUsageRights`Java API來移除受原則保護檔案的使用權限。 若要對檔案執行其他AEM Forms作業，必須從受原則保護的PDF檔案移除使用權。 例如，您必須先數位簽署（或認證）PDF檔案，才能設定使用權。 因此，如果您想要對受原則保護的檔案執行作業，您必須從PDF檔案移除使用權限、執行其他作業，例如數位簽署檔案，然後重新套用檔案的使用權限。
 
-**** 語法： `InputStream removeUsageRights(InputStream inputFile)`
+**語法：** `InputStream removeUsageRights(InputStream inputFile)`
 
 <table> 
  <tbody> 
