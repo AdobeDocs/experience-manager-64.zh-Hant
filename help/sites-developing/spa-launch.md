@@ -11,6 +11,9 @@ topic-tags: spa
 discoiquuid: a458cc95-cd94-4f3f-9e7b-d6a5780ec4d5
 translation-type: tm+mt
 source-git-commit: a427f9e9020fba4d68f18d16e7373471429d894f
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
