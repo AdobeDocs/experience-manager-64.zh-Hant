@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
 在AEM程式碼庫中，會使用下列慣例：
 
 
-* 一個介面的單個實現被命名 `<Interface>Impl`為，即： `ReaderImpl`。
+* 一個介面的單個實現被命名 `<Interface>Impl`為，即： `ReaderImpl`.
 * 命名介面的多個實 `<Variant><Interface>`施，即 `JcrReader` 和 `FileSystemReader`。
 * 抽象基類是指 `Abstract<Interface>` 定或 `Abstract<Variant><Interface>`。
 * 包的名稱 `com.adobe.product.module`。  每個Maven藏物或OSGi包裹都必須有其專屬的套件。
@@ -50,7 +53,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
    <td><p><strong>清除</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>int d;//已用時間（天數）</p> </td> 
+   <td><p>int d; //已用時間（天數）</p> </td> 
    <td><p>int elapsedTimeInDays;</p> </td> 
   </tr> 
   <tr> 
@@ -60,7 +63,7 @@ source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
  </tbody> 
 </table>
 
-### 別再重複一遍 {#don-t-repeat-yourself}
+### 別再重複一遍  {#don-t-repeat-yourself}
 
 DRY指出，不應複製相同的程式碼集。 這也適用於字串文字之類的項目。 當有需要改變、需要尋找和消除的情況時，程式碼複製會為缺陷開啟大門。
 
@@ -88,11 +91,11 @@ AEM提供XSS API，可輕鬆清除參數，並確保避免跨網站指令碼攻�
 
 對於Java程式碼，AEM支援slf4j做為記錄訊息的標準API，而且應與透過OSGi主控台提供的組態搭配使用，以利於管理的一致性。 Slf4j暴露了5種不同的記錄級別。 建議您在選擇要在哪個級別上記錄消息時使用以下准則：
 
-* 錯誤：當程式碼中有任何內容中斷，處理無法繼續。 這通常會因為意外的例外而發生。 在這些案例中加入堆疊追蹤通常很有幫助。
-* 警告：當某個項目無法正常運作時，但處理仍可繼續。 這通常是我們預期的例外結果，例如 *PathNotFoundException*。
-* 資訊：在監視系統時有用的資訊。 請記住，這是預設值，大部分客戶都會在其環境中保留此值。 因此，請勿過度使用。
-* 除錯：關於處理的較低層級資訊。 在除錯支援問題時很有用。
-* 跟蹤：最低層資訊，例如輸入／退出方法。 這通常僅供開發人員使用。
+* 錯誤： 當程式碼中有任何內容中斷，處理無法繼續。 這通常會因為意外的例外而發生。 在這些案例中加入堆疊追蹤通常很有幫助。
+* 警告： 當某個項目無法正常運作時，但處理仍可繼續。 這通常是我們預期的例外結果，例如 *PathNotFoundException*。
+* 資訊： 在監視系統時有用的資訊。 請記住，這是預設值，大部分客戶都會在其環境中保留此值。 因此，請勿過度使用。
+* 除錯： 關於處理的較低層級資訊。 在除錯支援問題時很有用。
+* 跟蹤： 最低層資訊，例如輸入／退出方法。 這通常僅供開發人員使用。
 
 在JavaScript的情況下， *僅應在開發期間使用console.log* ，所有記錄陳述式應在發行前移除。
 
