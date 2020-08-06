@@ -1,8 +1,8 @@
 ---
 title: 用Autodesk Maya和Mental Ray建立標準舞台
 seo-title: 用Autodesk Maya和Mental Ray建立標準舞台
-description: 瞭解如何使用Autodesk Maya和Mental ray建立標準舞台。
-seo-description: 瞭解如何使用Autodesk Maya和Mental ray建立標準舞台。
+description: 瞭解如何使用Autodesk Maya和Mental Ray建立標準舞台。
+seo-description: 瞭解如何使用Autodesk Maya和Mental Ray建立標準舞台。
 uuid: 05c4858b-6261-4de3-a87a-03dd6bc519a4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f30c4039-3bbf-4d02-a9b5-bda6ccce16b9
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
    * 方向燈
    * 專色燈
    * 點光源
+
    當舞台上傳至AEM 3D時，其他光線類型會被忽略或轉換為上述支援的其中一種類型。 當您檢視資產時，以及使用內建的快速調整轉譯器進行演算時，會使用轉換的類型。 使用Maya演算時，會使用原始的光源類型。
 
 1. 建立接地平面（如果需要），並應用合適的材料。
@@ -35,7 +39,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
    讓相機向要插入資產的場景中心「看」。 請確定您已將相機設定為可轉譯。
 
-1. 使用Mental ray建立演算。
+1. 使用Mental Ray建立演算。
 
    使用下 **[!UICONTROL 列建議]** ，設定「演算設定」:
 
@@ -50,7 +54,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
       * **[!UICONTROL 篩選大小]** - `2.0`、 `2.0`
    * 以您預期使用的一般影像大小來轉換場景。 視需要調整光源或 [!UICONTROL Render設定]，或兩者皆可達成您想要的結果。
 
-      請注意，使用Mental ray進行演算時，使用影像光源會非常緩慢，而且需要耗用大量CPU。 Adobe建議您設定仍能產生所需演算品質的最低品質設定。
+      請注意，使用Mental Ray進行演算時，使用影像光源會非常緩慢，而且需要耗用大量CPU。 Adobe建議您設定仍能產生所需演算品質的最低品質設定。
 
 
 1. 刪除在步驟2中建立的參照。
