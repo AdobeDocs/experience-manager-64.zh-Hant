@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f52402df-f6dc-4c62-82bc-cbce489b2b74
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '2726'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ AEM是依據大型開放原始碼專案中常見的證實可行方法所開發�
 * 瀏覽器Cookie
 * 和其他現代網路開發概念
 
-Adobe Experience manager的技術堆疊是以 [Apache Felix](https://felix.apache.org/) OSGI容器與 [Apache Sling](https://sling.apache.org/site/index.html) web framework為基礎，並內嵌以Apache Jackrabbit Ackrabbit Chorgbit Content Repository([](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)[](https://jackrabbit.apache.org/jcr-api.html)JCR)。 您應熟悉這些個別專案，以及您要貢獻的區域中使用的任何其他開放原始碼元件（例如Apache Lucene）。
+Adobe Experience Manager的技術堆疊是以 [Apache Felix](https://felix.apache.org/) OSGI容器與 [Apache Sling](https://sling.apache.org/site/index.html) web framework為基礎，並內嵌以Apache Jackrabbit Ackrabbit Chorgbit[為基礎的Java內容存放庫(](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)[](https://jackrabbit.apache.org/jcr-api.html)JCR)。 您應熟悉這些個別專案，以及您要貢獻的區域中使用的任何其他開放原始碼元件（例如Apache Lucene）。
 
 ## 部落知識 {#tribal-knowledge}
 
@@ -55,13 +58,13 @@ Adobe Experience manager的技術堆疊是以 [Apache Felix](https://felix.apach
 
 ### David&#39;s Model {#david-s-model}
 
-在Java內容儲存庫中建立內容模型的方式，需要與軟體產業在關係世界中建立資料模型時的常見做法完全不同的思考方式。 JCR方式對於任何新進內容管理人員而言，必 [要的閱讀方式是David&#39;s Model:內容建模指南](https://wiki.apache.org/jackrabbit/DavidsModel)。
+在Java內容儲存庫中建立內容模型的方式，需要與軟體產業在關係世界中建立資料模型時的常見做法完全不同的思考方式。 JCR方式對於任何新進內容管理人員而言，必 [要的閱讀方式是David&#39;s Model: 內容建模指南](https://wiki.apache.org/jackrabbit/DavidsModel)。
 
 ### 休息 {#restfulness}
 
 REST方針已深植於我們的工作之中。 這意味著，除其他外，避免有狀態的交互，並記住URI是內容和服務的最終地址。
 
-REST（REpresentational State Transfer，簡稱REST）是指World Wide web所基礎的軟體體系結構樣式。 它說明了使Web運作的關鍵要素，因此為如何設計基於Web的軟體提供了一套原則。 當設計要在網路上使用的API時，遵循這些「最佳實務」是明智的。
+REST（REpresentational State Transfer，簡稱REST）是指World Wide Web所基礎的軟體體系結構樣式。 它說明了使Web運作的關鍵要素，因此為如何設計基於Web的軟體提供了一套原則。 當設計要在網路上使用的API時，遵循這些「最佳實務」是明智的。
 
 由於REST提供了我們許多工作背後的指導理念，因此您應認為必須熟悉REST風格設計的原則。 從羅伊·菲爾丁的論 [文開始說](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)。
 
@@ -73,19 +76,19 @@ REST（REpresentational State Transfer，簡稱REST）是指World Wide web所基
 
 ### 快速入門 {#quickstart}
 
-沒有步驟三：要安裝和運行，只需下載並按兩下Quickstart JAR檔案。 沒有第三步。 任何其他可選功能都只需要從Package Share安裝適當的套件。
+沒有步驟三： 要安裝和運行，只需下載並按兩下Quickstart JAR檔案。 沒有第三步。 任何其他可選功能都只需要從Package Share安裝適當的套件。
 
-小型快速入門：將快速啟動JAR檔案的大小保持在最小。 智慧、最佳化地使用程式庫，移動選用功能以封裝共用。
+小型快速入門： 將快速啟動JAR檔案的大小保持在最小。 智慧、最佳化地使用程式庫，移動選用功能以封裝共用。
 
-更快的啟動時間：當您進行可能影響啟動時間的變更時，請確定變更會縮短，而非延長。
+更快的啟動時間： 當您進行可能影響啟動時間的變更時，請確定變更會縮短，而非延長。
 
 ### 精益求精 {#lean-and-mean}
 
 我們偏好輕巧、小巧、快速且精美的程式碼和專案。 「夠好」還不夠好。
 
-程式碼重複使用：我們以OSGi為基礎的產品架構，以及「一切就是內容」的理念，意味著我們有絕佳的機會重複使用程式碼和產品。 我們盡量利用這個事實，保持功能的精簡和均衡。
+程式碼重複使用： 我們以OSGi為基礎的產品架構，以及「一切就是內容」的理念，意味著我們有絕佳的機會重複使用程式碼和產品。 我們盡量利用這個事實，保持功能的精簡和均衡。
 
-松耦合：我們更青睞鬆散耦合的互動，而非緊密依賴和「不想要的親密關係」。 鬆散的耦合也可讓程式碼重複使用。
+松耦合： 我們更青睞鬆散耦合的互動，而非緊密依賴和「不想要的親密關係」。 鬆散的耦合也可讓程式碼重複使用。
 
 ### 不要破壞示範程式 {#don-t-break-the-demo}
 
@@ -93,7 +96,7 @@ REST（REpresentational State Transfer，簡稱REST）是指World Wide web所基
 
 ### 可靠性設計 {#design-for-reliability}
 
-我們致力於以失敗軟體方式設計和編碼功能，以便（例如）單一DOM元素的問題不會造成整個頁面無法轉換。 換句話說：製造致命的東西。 讓其他一切都能生存。 讓產品「寬容」。
+我們致力於以失敗軟體方式設計和編碼功能，以便（例如）單一DOM元素的問題不會造成整個頁面無法轉換。 換句話說： 製造致命的東西。 讓其他一切都能生存。 讓產品「寬容」。
 
 ### 異常是新常態 {#abnormal-is-the-new-normal}
 
@@ -135,7 +138,7 @@ REST（REpresentational State Transfer，簡稱REST）是指World Wide web所基
 
 **ExtJS Widgets** - AEM中大部分的使用者介面元素都使用ExtJS，這是以JavaScript編寫的協力廠商Widget程式庫。 ExtJS具備高效能、可自訂的UI Widget和設計精良且可擴充的元件模型。
 
-**JCR,Java Content Repository** - Java Content Repository規範(JSR-283)提供了抽象資料模型和應用程式寫程式介面，用於實現結合檔案系統和對象資料庫的功能的可擴展的NoSQL資料儲存庫。 雖然您不需要詳盡地瞭解JSR-283，但您應該花點時間熟悉JCR的基本功能及其基礎的資料模型，因為JCR是AEM的「一切就是內容」哲學的可能。
+**JCR,Java Content Repository** - Java Content Repository規範(JSR-283)提供了抽象資料模型和應用程式寫程式介面，用於實現一個大規模可擴展的NoSQL資料儲存庫，該儲存庫結合了檔案系統和對象資料庫的功能。 雖然您不需要詳盡地瞭解JSR-283，但您應該花點時間熟悉JCR的基本功能及其基礎的資料模型，因為JCR是AEM的「一切就是內容」哲學的可能。
 
 JCR本質上是一個節點和屬性的系統，節點可以從其他節點繼承，所有內容都儲存為屬 *性值*。 請注意，除了普通繼承外，JCR還允許「mixin」節點的概念，它允許對多個繼承進行建模。
 
@@ -143,7 +146,7 @@ JCR具有許多預定義的節點類型和屬性類型，但通常鍵入系統�
 
 JCR的Java API適用的JavaDoc就在這 [里](http://jackrabbit.apache.org/jcr/jcr-api.html)。
 
-在嘗試閱讀JavaDoc或JCR規格本身之前，您可能想要檢視由Adobe Experience services實 [施的JCR的這個高階說明](/help/sites-developing/the-basics.md#java-content-repository) 。
+在嘗試閱讀JavaDoc或JCR規格本身之前，您可能想要檢視由Adobe Experience Services實 [施的JCR的這個高階說明](/help/sites-developing/the-basics.md#java-content-repository) 。
 
 **Multi-Site Manager(MSM)** - AEM的MSM功能可協助客戶處理多語言和跨國內容，讓他們在集中品牌與本地化內容之間取得平衡。
 
@@ -155,17 +158,17 @@ JCR的Java API適用的JavaDoc就在這 [里](http://jackrabbit.apache.org/jcr/j
 
 **發佈例項** -出於安全性、治理和其他原因，生產網站通常會將AEM的例項分為「作者」和「發佈」例項。 如需部署架構（包括作者／發佈例項）的詳細資訊，請參閱「AEM例項」相關檔案。
 
-**Quickstart** —— 與許多其他程式不同，您使用單一「Quickstart」自解壓JAR檔案來安裝AEM。 首次按兩下JAR檔案時，將自動安裝所需的所有內容。 快速入門JAR包含CRX儲存庫（包括管理設施）、虛擬儲存庫服務、索引與搜尋服務、工作流程服務、安全性和Web伺服器所需的所有檔案，以及CQ Servlet引擎(CQSE)和所有AEM服務。 沒有其他檔案可以安裝：快速入門是自成一體的。
+**Quickstart** —— 與許多其他程式不同，您使用單一「Quickstart」自解壓JAR檔案來安裝AEM。 首次按兩下JAR檔案時，將自動安裝所需的所有內容。 快速入門JAR包含CRX儲存庫（包括管理設施）、虛擬儲存庫服務、索引與搜尋服務、工作流程服務、安全性和Web伺服器所需的所有檔案，以及CQ Servlet引擎(CQSE)和所有AEM服務。 沒有其他檔案可以安裝： 快速入門是自成一體的。
 
 首次啟動快速入門時，它會在後台建立一個與JCR相容的整個儲存庫，需要幾分鐘的時間。 在初次啟動後，隨後的初創公司會更快，因為儲存庫基礎架構已經到位。
 
-許多啟動選項(例如作用中的埠號，以及相關的AEM例項是否應為「發佈」例項，還是「作者」例項；等等)可通過適當更名快速啟動檔案來控制。 要查看相關選項清單，請在命令行上運行帶有&quot;-help&quot;的JAR:
+許多啟動選項(例如作用中的埠號，以及相關的AEM例項是否應為「發佈」例項，還是「作者」例項； 等等)可通過適當更名快速啟動檔案來控制。 要查看相關選項清單，請在命令行上運行帶有&quot;-help&quot;的JAR:
 
 ```shell
 java -jar <quickstartfilename>.jar -help
 ```
 
-**複製代理** -複製代理是AEM的中心，作為將內容從作者發佈（啟動）至發佈環境的機制；從Dispatcher快取中刷新內容；將使用者產生的內容（例如，表單輸入）從「發佈」環境傳回至「作者」環境。
+**複製代理** -複製代理是AEM的中心，作為將內容從作者發佈（啟動）至發佈環境的機制； 從Dispatcher快取中刷新內容； 將使用者產生的內容（例如，表單輸入）從「發佈」環境傳回至「作者」環境。
 
 **支架** -您可以使用支架建立表單（支架），其中欄位可反映您所要的頁面結構，然後使用此表單輕鬆建立以此結構為基礎的頁面。
 
@@ -175,7 +178,7 @@ java -jar <quickstartfilename>.jar -help
 
 **Site Catalyst** - SiteCatalyst為行銷人員提供一個位置，可測量、分析和最佳化來自多個行銷通道上所有線上活動的整合資料。 您可以使用Adobe SiteCatalyst來分析AEM網站的資料。
 
-**Tar Storage(TarMK)** - TarMK是AEM中的預設永續性系統。 雖然AEM可設定為使用不同的永續性系統（例如MongoDB），但TarMK具有特定優點，因為它針對一般的JCR使用案例進行效能最佳化（因此速度非常快）、使用業界標準資料格式，而且可快速且輕鬆地備份。
+**Tar Storage(TarMK)** - TarMK是AEM中的預設永續性系統。 雖然AEM可設定為使用不同的永續性系統（例如MongoDB），但TarMK具有特定優點，因為它針對典型的JCR使用案例進行效能最佳化（因此速度非常快）、使用業界標準資料格式，而且可快速且輕鬆地備份。
 
 **範本** -在AEM中，範本會指定特定頁面類型。 它定義頁面的結構（同時通常也指定縮圖影像和各種屬性）。 例如，您可能有個別的產品頁面、網站地圖和連絡資訊範本。
 
