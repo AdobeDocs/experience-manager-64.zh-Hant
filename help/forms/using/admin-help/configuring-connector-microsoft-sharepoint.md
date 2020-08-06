@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '232'
+ht-degree: 1%
 
 ---
 
@@ -22,19 +25,19 @@ Connector for Microsoft SharePoint可讓AEM表單與Microsoft SharePoint通訊�
 1. 在管理控制台中，按一下「服務> Connector for Microsoft SharePoint」。
 1. 為SharePoint伺服器指定下列設定：
 
-   **** SharePoint伺服器主機名稱：SharePoint伺服器上Web應用程式的主機名稱埠號，格式為 `[hostname]:[port]`。
+   **SharePoint伺服器主機名稱：** SharePoint伺服器上Web應用程式的主機名稱埠號，格式為 `[hostname]:[port]`。
 
-   **** 用戶名：用於連接到SharePoint伺服器的用戶帳戶。
+   **用戶名：** 用於連接到SharePoint伺服器的用戶帳戶。
 
-   **** 密碼：用於連接到SharePoint伺服器的用戶帳戶的密碼
+   **密碼：** 用於連接到SharePoint伺服器的用戶帳戶的密碼
 
-   **** 域名：SharePoint伺服器所在的網域。
+   **域名：** SharePoint伺服器所在的網域。
 
 1. 按一下「儲存」。
 
 ## Microsoft SharePoint設定服務 {#microsoft-sharepoint-configuration-service}
 
-Microsoft SharePoint設定服務可 `(MSSharePointConfigService)` 讓您指定具有模擬權限的AEM表單使用者認證。 有關模擬權限的資訊，請參 [閱配置Microsoft sharePoint的連接器](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)。 請依照下列步驟來指定下列設定 `MSSharePointConfigService`:
+Microsoft SharePoint設定服務可 `(MSSharePointConfigService)` 讓您指定具有模擬權限的AEM表單使用者認證。 有關模擬權限的資訊，請參 [閱配置Microsoft SharePoint的連接器](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)。 請依照下列步驟來指定下列設定 `MSSharePointConfigService`:
 
 1. 在管理控制台中，按一下「服務>應用程式與服務>服務管理」。
 1. 導覽服務清單，然後按一下 `MSSharePointConfigService`。
