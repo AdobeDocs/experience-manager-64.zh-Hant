@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 >
 >在CSS類別中，請勿變更寬度、高度、邊框粗細、頂端、左、右、底部、填補空間、邊界和其他位置與大小屬性的值。 位置和大小屬性的任何變更都會對表單的版面配置造成變更。
 
-## 元素的CSS類別 {#css-classes-nbsp-for-elements-nbsp}
+## 元素的CSS類別  {#css-classes-nbsp-for-elements-nbsp}
 
 每個元素都包含定義良好的CSS類別。 您可以修改這些類以更改元素的外觀。 除了欄位和繪圖元素之外，每個元素都有兩個CSS類別- Type class和Name class。
 
@@ -39,15 +42,15 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## 欄位元素 {#field-element}
 
-欄位元素包含兩個巢狀元素：介面工具集和標題。
+欄位元素包含兩個巢狀元素： 介面工具集和標題。
 
 **介面工具集元素**
 
 介面工具集元素包含與使用者互動的使用者介面元素。 它有三個CSS類別：
 
-* **介面工具集**:每個小部件都有此類。
-* **名稱**:AEM隨附的所有Widget都包含Widget名稱類別。 對於自訂介面工具集，介面工具集開發人員會提供介面工具集名稱類別。
-* **類型**:每個Widget都有使用者介面元素。 此類定義用戶介面元素的類型。
+* **介面工具集**: 每個小部件都有此類。
+* **名稱**: AEM隨附的所有Widget都包含Widget名稱類別。 對於自訂介面工具集，介面工具集開發人員會提供介面工具集名稱類別。
+* **類型**: 每個Widget都有使用者介面元素。 此類定義用戶介面元素的類型。
 
 ```xml
 <!--field with caption-->
