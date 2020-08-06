@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 2%
 
 ---
 
@@ -24,8 +27,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 建立或取得作者和發佈例項的私密金鑰和憑證。
 1. 在作者和發佈例項上安裝金鑰和憑證：
 
-   * 作者：作者的私密金鑰和Publish的憑證。
-   * 發佈：Publish的私密金鑰和作者的憑證。 證書與通過複製代理驗證的用戶帳戶相關聯。
+   * 作者： 作者的私密金鑰和Publish的憑證。
+   * 發佈： Publish的私密金鑰和作者的憑證。 證書與通過複製代理驗證的用戶帳戶相關聯。
 
 1. 在「發佈」例項上設定以Jetty為基礎的HTTP服務。
 1. 配置複製代理的傳輸和SSL屬性。
@@ -51,8 +54,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 在KeyStore中產生私用與公用金鑰對。
 1. 建立或取得憑證：
 
-   * 自簽：從KeyStore匯出憑證。
-   * CA簽署：產生憑證要求並傳送至CA。
+   * 自簽： 從KeyStore匯出憑證。
+   * CA簽署： 產生憑證要求並傳送至CA。
 
 1. 將憑證匯入TrustStore。
 
@@ -146,7 +149,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 開啟作者例項的「使用者管理」頁面。 ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. 若要開啟您使用者帳戶的屬性，請按一下或點選您的使用者名稱。
-1. 如果「Create keyStore」（建立KeyStore）連結出現在「Account Settings」（帳戶設定）區域，請按一下連結。 配置密碼，然後按一下「確定」。
+1. 如果「Create KeyStore」（建立KeyStore）連結出現在「Account Settings」（帳戶設定）區域，請按一下連結。 配置密碼，然後按一下「確定」。
 1. 在「帳戶設定」區域中，按一下「管理金鑰庫」。
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
@@ -189,7 +192,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 開啟發佈例項的「使用者管理」頁面。 ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. 若要開啟您使用者帳戶的屬性，請按一下或點選您的使用者名稱。
-1. 如果「Create keyStore」（建立KeyStore）連結出現在「Account Settings」（帳戶設定）區域，請按一下連結。 配置密碼，然後按一下「確定」。
+1. 如果「Create KeyStore」（建立KeyStore）連結出現在「Account Settings」（帳戶設定）區域，請按一下連結。 配置密碼，然後按一下「確定」。
 1. 在「帳戶設定」區域中，按一下「管理金鑰庫」。
 1. 按一下「從金鑰存放區檔案新增私密金鑰」。
 1. 按一下「選取金鑰存放區檔案」，然後瀏覽並選取publish.keystore檔案或publish.pfx檔案（如果使用pkcs#12），然後按一下「開啟」。
@@ -215,7 +218,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 | Web Console上的屬性名稱 | OSGi屬性名稱 | 值 |
 |---|---|---|
 | 啟用HTTPS | org.apache.felix.https.enable | true |
-| 啟用HTTPS以使用Granite keyStore | org.apache.felix.https.use.granite.keystore | true |
+| 啟用HTTPS以使用Granite KeyStore | org.apache.felix.https.use.granite.keystore | true |
 | HTTPS 連接埠 | org.osgi.service.http.port.secure | 8443（或其他所需埠） |
 | 用戶端憑證 | org.apache.felix.https.clientcertificate | &quot;Client Certificate Winted&quot; |
 
