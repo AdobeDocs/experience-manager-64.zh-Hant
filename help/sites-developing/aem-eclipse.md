@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 1%
 
 ---
 
@@ -56,13 +59,13 @@ AEM Developer Tools for Eclipse是Eclipse外掛程式，以Apache License 2下�
 
 1. 在Eclipse中，開啟「說 **明** 」功能表。
 1. 按一下 **安裝新軟體**。
-1. **按一**&#x200B;下新增…….
+1. Click **Add...**.
 1. 在「名 **稱** 」中輸入AEM Developer Tools。
 1. 在 **位置** ，複製安裝URL。
-1. 按一下「 **確定**」。
+1. Click **Ok**.
 1. 同時檢 **查AEM** 和 **Sling** plugins。
-1. 按一 **下「下一步**」。
-1. 按一 **下「下一步**」。
+1. 按一下&#x200B;**下一步**。
+1. 按一下&#x200B;**下一步**。
 1. 接受這些合約，然後按一下「 **完成**」。
 1. 按一 **下「是** 」，以重新啟動Eclipse。
 
@@ -84,11 +87,11 @@ AEM Developer Tools for Eclipse隨附範例、多模組專案，可協助您快�
 
 請依照下列步驟建立範例專案：
 
-1. 在「文 **件** >新建 **>** 項目」菜單中，瀏覽至 ************「AEM Sample Multi-Module Project」和「AEM Sample Module Project」部分。
+1. 在「文 **件** >新建 **>** 項目」菜單中，瀏覽至 ************「AEM Sample Multi-Module Project」和「AEM Select Ample Module Project」部分。
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-1. 按一 **下「下一步**」。
+1. 按一下&#x200B;**下一步**。
 
    >[!NOTE]
    >
@@ -96,7 +99,7 @@ AEM Developer Tools for Eclipse隨附範例、多模組專案，可協助您快�
 
    ![chlimage_1-70](assets/chlimage_1-70.png)
 
-1. 選 **擇com.adobe.granite.archetypes:樣本——項目——原型：（最高數目）** ，然後按一下「下 **一步**」。
+1. 選 **擇com.adobe.granite.archetypes: 樣本——項目——原型： （最高數目）** ，然後按一下「下 **一步**」。
 
    ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -118,7 +121,7 @@ AEM Developer Tools for Eclipse隨附範例、多模組專案，可協助您快�
 
    >[!NOTE]
    >
-   >在全新安裝中(更具體而言：從未下載過依賴項時)，您可能會建立出錯誤的項目。 在這種情況下，請遵循解決無效項目定 [義中描述的過程](#resolving-invalid-project-definition)。
+   >在全新安裝中(更具體而言： 從未下載過依賴項時)，您可能會建立出錯誤的項目。 在這種情況下，請遵循解決無效項目定 [義中描述的過程](#resolving-invalid-project-definition)。
 
 ## 疑難排解 {#troubleshooting}
 
@@ -129,11 +132,11 @@ AEM Developer Tools for Eclipse隨附範例、多模組專案，可協助您快�
 1. 選取所有已建立的專案。
 1. 按一下右鍵。 在功能表 **中** ，選 **取「更新專案**」。
 1. 檢查 **Force Updates of Snapshot/Releases**。
-1. 按一下 **確定**。 Eclipse會嘗試下載所需的相依性。
+1. 按一下&#x200B;**「確定」**。Eclipse會嘗試下載所需的相依性。
 
 ### 在JSP檔案中啟用標籤庫自動完成 {#enabling-tag-library-autocompletion-in-jsp-files}
 
-標籤庫自動完成功能不會立即生效，因為專案中已新增適當的相依性。 使用AEM Uber jar時有一個已知問題，其中不包含所需的tld和TagExtraInfo檔案。
+標籤庫自動完成功能不會立即生效，因為專案中已新增適當的相依性。 使用AEM Uber Jar時有一個已知問題，其中不包含所需的tld和TagExtraInfo檔案。
 
 若要解決這個問題，請確定org.apache.sling.scripting.jsp.taglib工件位於AEM Uber Jar之前的類路徑中。 對於Maven項目，請在pom.xml中將下列相依性置於Uber Jar之前。
 
