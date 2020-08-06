@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -95,7 +98,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 </node>
 ```
 
-## 從頁面擷取資產的規則語法 {#rule-syntax-for-extracting-assets-from-pages}
+## 從頁面擷取資產的規則語法  {#rule-syntax-for-extracting-assets-from-pages}
 
 使用下列規則語法，以包含內嵌在元件中或從元件參考的資產：
 
@@ -168,11 +171,11 @@ translation_rules.xml檔案由包含多個子 `nodelist` 元素的元素 `node` 
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
-您可透過UI變更4個屬性： `isDeep`、 `inherit``translate` 和 `updateDestinationLanguage`。
+您可透過UI變更4個屬性： `isDeep`、 `inherit`和 `translate``updateDestinationLanguage`。
 
 **isDeep** This attribute適用於節點篩選器，預設為true。 它會檢查節點（或其祖先）是否包含篩選器中具有指定屬性值的屬性。 如果為false，則只會檢查目前節點。
 
-例如，即使父節點的屬性設定為true以標籤草稿內容，子節點仍將被添加到轉 `draftOnly` 譯作業中。 這 `isDeep` 里將開始播放，並檢查父節點是否具有屬 `draftOnly` 性為true並排除這些子節點。
+例如，即使父節點的屬性設定為true以標籤草稿內容，子節點也 `draftOnly` 將被添加到轉譯作業中。 這 `isDeep` 里將開始播放，並檢查父節點是否具有屬 `draftOnly` 性為true並排除這些子節點。
 
 在編輯器中，您可以在「篩選器」選 **項卡中`s Deep`**，選**&#x200B;中／取消選中&#x200B;**「I」。
 
@@ -194,7 +197,7 @@ translation_rules.xml檔案由包含多個子 `nodelist` 元素的元素 `node` 
 
 **translate** The translate attribute is used simply to specify wherth to translate a property.
 
-在UI中，您可以勾選／取消勾選「屬 **性** 」標籤中 **的「翻譯** 」。
+在UI中，您可以勾選／取消勾選「屬 **性** 」標 **簽中的「轉譯** 」。
 
 **updateDestinationLanguage** 此屬性用於沒有文本但沒有語言代碼的屬性，例如jcr:language。 用戶不是在翻譯文本，而是在從源到目標的語言區域設定。 這些屬性不會發送用於翻譯。
 
