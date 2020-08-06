@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d2267663-6c1d-413c-9862-e82e21ae6906
 translation-type: tm+mt
 source-git-commit: 0fb4d181b700e223becfee8e3e68a84d6f964c1d
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ AEM提供的XSS保護機制是以 [OWASP(Open Web Application Security Project)�
 >
 >「雲端服務資訊」的ACL以及保護您實例所需的OSGi設定會自動化，成為「生產就緒模式」的 [一部分](/help/sites-administering/production-ready.md)。 雖然這表示您不需要手動進行設定變更，但仍建議您在部署上線前先檢閱設定。
 
-當您將 [AEM實例與Adobe Marketing cloud整合時](/help/sites-administering/marketing-cloud.md) ，您會使 [用Cloud服務設定](/help/sites-developing/extending-cloud-config.md)。 有關這些配置的資訊以及收集到的任何統計資訊都儲存在儲存庫中。 我們建議您，如果您使用此功能，請檢閱此資訊的預設安全性是否符合您的需求。
+當您將 [AEM實例與Adobe Marketing Cloud整合時](/help/sites-administering/marketing-cloud.md) ，您會使 [用Cloud服務設定](/help/sites-developing/extending-cloud-config.md)。 有關這些配置的資訊以及收集到的任何統計資訊都儲存在儲存庫中。 我們建議您，如果您使用此功能，請檢閱此資訊的預設安全性是否符合您的需求。
 
 webservicesupport模組將統計資訊和配置資訊寫入以下位置：
 
