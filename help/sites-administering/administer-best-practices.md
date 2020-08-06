@@ -1,6 +1,6 @@
 ---
-title: 最佳實務
-seo-title: 最佳實務
+title: 最佳作法
+seo-title: 最佳作法
 description: 尋找由Adobe工程和諮詢團隊編譯的最佳實務，以協助管理員上手使用。
 seo-description: 尋找由Adobe工程和諮詢團隊編譯的最佳實務，以協助管理員上手使用。
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
@@ -11,11 +11,14 @@ topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
 source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 2%
 
 ---
 
 
-# Best Practices{#best-practices}
+# 最佳作法{#best-practices}
 
 最佳實務說明如何以最有效率且最有效的方式開發、管理或使用AEM。 這份不斷增加的主題清單包含AEM中的多個領域。
 
@@ -80,7 +83,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
   <tr>
    <td>定義您實例的預設UI。</td> 
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">為實例配置預設UI</a></p> </td> 
-   <td>AEM有兩個UI:觸控最佳化且經典。 本節詳細說明如何定義您實例的預設UI。</td> 
+   <td>AEM有兩個UI: 觸控最佳化且經典。 本節詳細說明如何定義您實例的預設UI。</td> 
   </tr>
   <tr>
    <td>多網站管理</td> 
