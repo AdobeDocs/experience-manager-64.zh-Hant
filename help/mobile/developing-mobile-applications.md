@@ -1,8 +1,8 @@
 ---
 title: 在AEM中開發行動應用程式
 seo-title: 在AEM中開發行動應用程式
-description: 請依照本頁開始使用Adobe phoneGap Enterprise在AEM中開發行動應用程式。
-seo-description: 請依照本頁開始使用Adobe phoneGap Enterprise在AEM中開發行動應用程式。
+description: 請依照本頁開始使用Adobe PhoneGap Enterprise在AEM中開發行動應用程式。
+seo-description: 請依照本頁開始使用Adobe PhoneGap Enterprise在AEM中開發行動應用程式。
 uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 0%
 
 ---
 
@@ -26,13 +29,13 @@ AEM運用Adobe PhoneGap和Adobe Publishing Solutions，讓您建立和管理內�
 * 集中管理您所有的公司行動應用程式。
 * 在開發和測試環境中檢視應用程式，毋需複雜的布建設定檔，也不需花太多心力來建立和上傳您的應用程式以進行分享。
 * 使用AEM製作環境，為您的應用程式建立和管理多樣化內容。
-* 搭配使用HTML5和Adobe phoneGap，透過裝置原生功能建立豐富的體驗。
-* 透過Cordova webViews，將HTML5 Webviews引入新的或預先存 **在的** 原生應用程式。
+* 搭配使用HTML5和Adobe PhoneGap，透過裝置原生功能建立豐富的體驗。
+* 透過Cordova WebViews，將HTML5 Webviews引入新的或預先存 **在的** 原生應用程式。
 * 跨所有傳送通道（包括網頁、行動裝置網頁、行動裝置應用程式和印刷品）建立、組織和分享豐富的多媒體內容。
 
 AEM與Adobe **[PhoneGap Build服務整合](https://build.phonegap.com/)**，以簡化應用程式建立和部署程式。
 
-**Adobe ContentSync** 可讓使用者輕鬆將Over-the-Air(OTA)的頁面和內容更新下載至其裝置，而不需重新安裝應用程式或從appStore、Google play或其他應用程式來源下載。
+**Adobe ContentSync** 可讓使用者輕鬆將Over-the-Air(OTA)的頁面和內容更新下載至其裝置，而不需重新安裝應用程式或從appStore、Google Play或其他應用程式來源下載。
 
 **Adobe Analytics已完全整合** 至AEM應用程式，可詳細追蹤散發、地理位置、作業系統、裝置、點按串流、iBeacon追蹤等。
 
@@ -85,7 +88,7 @@ IOS開發人員應注意到在iOS 9上執行的Cordova應用程式有未解決�
 * [使用Adobe Mobile Analytics追蹤應用程式效能](/help/mobile/phonegap-intro-to-app-analytics.md)
 * [將Adobe Analytics新增至您的行動應用程式](/help/mobile/phonegap-add-analytics-to-apps.md)
 * [推播通知](/help/mobile/phonegap-push-notifications.md)
-* [AEM mobile內容個人化](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+* [AEM Mobile內容個人化](/help/mobile/phonegap-aem-mobile-content-personalization.md)
 * [應用程式的剖析](/help/mobile/phonegap-apps-arch.md)
 * [您的混合應用程式是否已準備好適用於AEM Mobile?](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
