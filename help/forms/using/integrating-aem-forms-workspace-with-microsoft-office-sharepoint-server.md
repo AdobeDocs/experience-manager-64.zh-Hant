@@ -1,6 +1,6 @@
 ---
-title: 將AEM表單工作區與Microsoft Office SharePoint server整合
-seo-title: 將AEM表單工作區與Microsoft Office SharePoint server整合
+title: 將AEM表單工作區與Microsoft Office SharePoint Server整合
+seo-title: 將AEM表單工作區與Microsoft Office SharePoint Server整合
 description: '您可以將AEM表單工作區與Microsoft Office SharePoint Server整合。 '
 seo-description: '您可以將AEM表單工作區與Microsoft Office SharePoint Server整合。 '
 uuid: d43396d4-117f-47ea-91e4-10ee96107bc8
@@ -10,25 +10,28 @@ topic-tags: Configuration
 discoiquuid: 1bada670-3e0e-40f4-b9be-8b090df910be
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 0%
 
 ---
 
 
-# 將AEM表單工作區與Microsoft Office SharePoint server整合 {#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
+# 將AEM表單工作區與Microsoft Office SharePoint Server整合 {#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 **-需求**
 
-**先決知**&#x200B;識：您必須先擁有SharePoint伺服器的存取權限，並且必須知道存取工作區的URL，才能將AEM Forms Workspace新增至SharePoint伺服器。 以下步驟假設您對SharePoint server了如指掌。 有關SharePoint server中Web部件的詳細資訊，請參閱Windows sharePoint services中的Web部件。
+**先決知**&#x200B;識：您必須先擁有SharePoint伺服器的存取權限，並且必須知道存取工作區的URL，才能將AEM Forms Workspace新增至SharePoint伺服器。 以下步驟假設您對SharePoint Server了如指掌。 有關SharePoint Server中Web部件的詳細資訊，請參閱Windows SharePoint Services中的Web部件。
 
 **用戶級**&#x200B;開始
 
-您可以在Microsoft Office SharePoint Server（例如Microsoft Office SharePoint Server 2007）中將AEM Forms Workspace當做Web Part。 使用者可以使用網頁瀏覽器連線至您的SharePoint伺服器，以存取AEM Forms Workspace，提供統一的體驗。 在本文中，您將學習在Microsoft Office SharePoint server中將AEM Forms Workspace顯示為Web Part的基本步驟。 您可以執行本文所述的步驟，以提供統一的體驗，讓連線至SharePoint伺服器的使用者可以從相同的連接埠存取AEM Forms Workspace。
+您可以在Microsoft Office SharePoint Server（例如Microsoft Office SharePoint Server 2007）中將AEM Forms Workspace當做Web Part。 使用者可以使用網頁瀏覽器連線至您的SharePoint伺服器，以存取AEM Forms Workspace，提供統一的體驗。 在本文中，您將學習在Microsoft Office SharePoint Server中將AEM Forms Workspace顯示為Web Part的基本步驟。 您可以執行本文所述的步驟，以提供統一的體驗，讓連線至SharePoint伺服器的使用者可以從相同的連接埠存取AEM Forms Workspace。
 
 >[!NOTE]
 >
 >本文中列出的步驟是特定的Microsoft SharePoint Server 2007。 您也可以使用其他支援版本的Microsoft SharePoint來設定HTML工作區。
 
-## 將AEM Forms Workspace與Microsoft Office sharePoint Server 2007整合 {#integrate-aem-forms-workspace-with-microsoft-office-sharepoint-server}
+## 將AEM Forms Workspace與Microsoft Office SharePoint Server 2007整合 {#integrate-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 執行下列步驟，將AEM Forms Workspace整合至Web Part:
 
@@ -47,9 +50,9 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
    >
    >「Page Viewer Web Part（頁面檢視器網頁部件）」方塊會出現在您在步驟3中按一下的「 **Add a Web Part** （新增網頁部件）」按鈕下方，如下圖所示（圖1）:
 
-   ![Microsoft Office sharePoint伺服器中的「頁面檢視器網頁部件」方塊。](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
+   ![Microsoft Office SharePoint伺服器中的「頁面檢視器網頁部件」方塊。](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
 
-   **** 圖：Microsoft *Office sharePoint伺服器中的「頁面檢視器網頁部件」方塊。*
+   **圖：** *Microsoft Office SharePoint伺服器中的「頁面檢視器網頁部件」方塊。*
 
 1. 在「頁面檢視器」頁面上，執行下列工作：
 
@@ -65,7 +68,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 完成上述步驟後，您的SharePoint網站看起來類似下圖（圖2）:
 
-![AEM Forms Workspace與Microsoft Office SharePoint server整合](assets/aem-forms-workspace.jpg)
+![AEM Forms Workspace與Microsoft Office SharePoint Server整合](assets/aem-forms-workspace.jpg)
 
-**** 圖：與 *Microsoft Office sharePoint server整合的AEM Forms Workspace*
+**圖：** *AEM Forms Workspace與Microsoft Office SharePoint Server整合*
 
