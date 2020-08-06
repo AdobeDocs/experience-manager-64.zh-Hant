@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '911'
+ht-degree: 1%
 
 ---
 
@@ -37,11 +40,12 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 #### 適用於iOS {#for-ios}
 
 1. 在Xcode中 `Capture.xcodeproj` 開啟專案。
-1. (用&#x200B;***於自定義表徵圖***)在「捕獲」的導航視圖中，導航至「捕 **[!UICONTROL 獲」>「捕獲」>「支援檔案」>「捕獲資訊。plist]**」。 按一下「圖示檔」旁的下拉式清單。 指定圖示檔案(.png)的名稱，並在「擷取>擷取>資源>圖 **[!UICONTROL 示」上傳檔案]**。 目前支援的維度包括：29x29、50x50、58x58、72x72、100x100和144x144。
+1. (用&#x200B;***於自定義表徵圖***)在「捕獲」的導航視圖中，導航至「捕 **[!UICONTROL 獲」>「捕獲」>「支援檔案」>「捕獲資訊。plist]**」。 按一下「圖示檔」旁的下拉式清單。 指定圖示檔案(.png)的名稱，並在「擷取>擷取>資源>圖 **[!UICONTROL 示」上傳檔案]**。 目前支援的維度包括： 29x29、50x50、58x58、72x72、100x100和144x144。
 1. (用&#x200B;***於自訂啟動影像***)請確定影像的檔名為：
 
    * 縱向： `Default-Portrait~ipad.png` 和 `Default-Portrait@2x~ipad.png`
    * 橫向： `Default-Landscape~ipad.png` 和 `Default-Landscape@2x~ipad.png`
+
    將檔案上傳到Capture項目，以替換項目中的現有檔案。
 
    >[!NOTE]
@@ -63,6 +67,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxhdpi`
    * `[User_Home]/Projects/[your-project]/src/android/res/drawable-xxxhdpi`
+
    >[!NOTE]
    >
    >請確定影像的名稱和解析度符合您在專案中取代的影像。
