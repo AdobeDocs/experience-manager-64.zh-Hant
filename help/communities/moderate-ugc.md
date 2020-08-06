@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 0%
 
 ---
 
@@ -21,13 +24,13 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 當會員（登入網站訪客）透過與下列其中一個社群元件互動，從已發佈的社群網站張貼內容時，就會建立社群內容，也稱為使用者產生的內容(UGC):
 
-* [部落格](blog-feature.md):成員張貼部落格文章或留言
-* [日曆](calendar.md):成員張貼日曆事件或留言
-* [注釋](comments.md):成員張貼評論或回覆評論
-* [論壇](forum.md):成員發佈新主題或回覆主題
-* [概念](ideation-feature.md):會員張貼構想或留言
-* [QnA](working-with-qna.md):成員會建立問題或回答問題
-* [評論](reviews.md):成員在評分項目時張貼意見
+* [部落格](blog-feature.md): 成員張貼部落格文章或留言
+* [日曆](calendar.md): 成員張貼日曆事件或留言
+* [注釋](comments.md): 成員張貼評論或回覆評論
+* [論壇](forum.md): 成員發佈新主題或回覆主題
+* [概念](ideation-feature.md): 會員張貼構想或留言
+* [QnA](working-with-qna.md): 成員會建立問題或回答問題
+* [評論](reviews.md): 成員在評分項目時張貼意見
 
 UGC的協調有助於識別正面貢獻以及限制負面貢獻（例如垃圾訊息和辱罵性語言）。 UGC可從以下幾種環境協調：
 
@@ -177,9 +180,9 @@ UGC的協調有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 ### 預先協調 {#premoderation}
 
-當UGC預先協調時，貼文在協調動作核准後，才會顯示在發佈的網站上。 在建立社群網 [站期間](sites-console.md)，勾選此方 ` [Content is Premoderated](sites-console.md#moderation)` 塊將啟用整個網站的預先協調。 將元件放在頁面上後，就可設定支援協調的元件，以使用其編輯對話方塊中的設定進行預先協調：
+當UGC預先協調時，貼文在協調動作核准後，才會顯示在發佈的網站上。 在建立社群網 [站期間](sites-console.md)，勾選此方 ` [Content is Premoderated](sites-console.md#moderation)` 塊將啟用整個網站的預先協調。 將元件放在頁面上後，就可以設定支援協調的元件，以使用其編輯對話方塊中的設定進行預先協調：
 
-* [意見](comments.md) 和評 [論](reviews.md)
+* [注釋](comments.md) 和評 [論](reviews.md)
 
    在「使 **[!UICONTROL 用者協調]** 」標籤上，勾 **[!UICONTROL 選「預先協調」]**
 
@@ -189,7 +192,7 @@ UGC的協調有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 垃圾訊息偵測是一種自動協調功能，可將提交的使用者產生的內容標示為垃圾訊息，以篩選不可取的部分。 啟用後，它會根據預先設定的垃圾訊息字詞集合，識別使用者產生的內容是否為垃圾訊息。 預設垃圾訊息字詞提供於
 
-`/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
+`/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`。
 
 不過，若要自訂或延伸預設垃圾訊息字詞，請透過覆蓋，在/apps目錄中依預設垃圾訊息字詞的結構建立一組 [字詞](overlay-comments.md)。
 
@@ -222,10 +225,10 @@ UGC的協調有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 /libs元件中定義的規則包括：
 
-* 規則1:如果沒有正面字詞且至少有一個負面字詞，請將值設為1
-* 規則2:如果沒有否定字詞且至少有一個正字詞，請將值設為10
-* 規則3:如果否定字詞多於正面字詞，請將值設為3
-* 規則4:如果正面字詞多於負面字詞，請將值設為8
+* 規則1: 如果沒有正面字詞且至少有一個負面字詞，請將值設為1
+* 規則2: 如果沒有否定字詞且至少有一個正字詞，請將值設為10
+* 規則3: 如果否定字詞多於正面字詞，請將值設為3
+* 規則4: 如果正面字詞多於負面字詞，請將值設為8
 
 若要覆寫或新增規則，請依照預設規則的結構，在/apps目錄中建立一組規則。 編輯情緒設定，以識別規則的位置。
 
@@ -259,9 +262,11 @@ AEM社群提供*watchword分析器*作為評估情緒的程式 [步驟](#sentime
 
 * **負面關注字**&#x200B;詞以逗號分隔的字詞清單，會造成覆寫預設值的負面情緒。 預設為空白清單。
 
-* **明確的監看位元組路徑**&#x200B;節點包含指定預設監看字的預設和屬 `positive` 性 `negative` 的節點的儲存庫位置。 預設為 `/libs/settings/community/watchwords/default`。
+* **到Watchwords節點的顯式路**&#x200B;徑包含預設值的節點的儲存庫位置 
+`positive` 和指 `negative` 定預設監看字的屬性。 預設為 `/libs/settings/community/watchwords/default`。
 
-* **情緒規**&#x200B;則根據正面和負面關注字詞計算情緒之規則的儲存庫位置。 預設值 `/libs/cq/workflow/components/workflow/social/sentiments/rules` 為（不過，不再涉及任何工作流程）。
+* **情緒規**&#x200B;則根據正面和負面關注字詞計算情緒之規則的儲存庫位置。 預設值為 
+`/libs/cq/workflow/components/workflow/social/sentiments/rules` （但是，不再涉及任何工作流程）。
 
 以下是預設監看字詞的自訂項目範例，當設 `Explicit Path to Watchwords Node` 為時 `/libs/settings/community/watchwords/default`。
 
