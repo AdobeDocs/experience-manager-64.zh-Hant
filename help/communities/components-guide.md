@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
 source-git-commit: 68953424eda50bf1734ac84473b442acdc9cdb24
+workflow-type: tm+mt
+source-wordcount: '1203'
+ht-degree: 1%
 
 ---
 
@@ -76,15 +79,15 @@ source-git-commit: 68953424eda50bf1734ac84473b442acdc9cdb24
 
 此時將顯示指南的主體：
 
-1. 標題：所選元件的名稱
-1. [用戶端程式庫](#client-side-libraries):一或多個必要類別的清單
-1. [可包含](scf.md#add-or-include-a-communities-component):如果元件可以動態包含，則可在作者編輯模式中切換狀態：
+1. 標題： 所選元件的名稱
+1. [用戶端程式庫](#client-side-libraries): 一或多個必要類別的清單
+1. [可包含](scf.md#add-or-include-a-communities-component): 如果元件可以動態包含，則可在作者編輯模式中切換狀態：
 
-   * 如果新增，顯示的文字為：&quot;此元件通過其par節點包含。&quot;
-   * 如果包含，則顯示的文字為：&quot;此元件是動態包含的。&quot;
+   * 如果新增，顯示的文字為： &quot;此元件通過其par節點包含。&quot;
+   * 如果包含，則顯示的文字為： &quot;此元件是動態包含的。&quot;
    * 如果不包含，則不顯示任何文字
 
-1. 元件或功能範例：元件或特徵的活動實例。 如果元件，則可隨著對標籤區段中提供的範本、CSS和資料所做的變更而變更。
+1. 元件或功能範例： 元件或特徵的活動實例。 如果元件，則可隨著對標籤區段中提供的範本、CSS和資料所做的變更而變更。
 
 >[!NOTE]
 >
@@ -106,10 +109,12 @@ source-git-commit: 68953424eda50bf1734ac84473b442acdc9cdb24
 
    如果取消選中，「元件指南」將使用儲存庫中的現有資源（作為par節點子節點的jcr節點）。
 
-   * 顯示的文字為：&quot;此元件通過其par節點包含。&quot;
+   * 顯示的文字為： &quot;此元件通過其par節點包含。&quot;
+
    如果勾選，「元件指南」會使用sling來動態包含子節點resourceType（非現有資源）的元件。
 
-   * 顯示的文字為：&quot;此元件是動態包含的。&quot;
+   * 顯示的文字為： &quot;此元件是動態包含的。&quot;
+
    預設為未勾選。
 
 ### 發佈互動 {#publish-interactions}
@@ -156,9 +161,9 @@ source-git-commit: 68953424eda50bf1734ac84473b442acdc9cdb24
 
 1. 新增屬性
 
-   * **名稱**`scg:showIde`
-   * **類型**`String`
-   * **值**`true`
+   * **名稱** `scg:showIde`
+   * **類型** `String`
+   * **值** `true`
 
 1. 選擇「 **[!UICONTROL 全部保存」]**
 1. 重新載入指南中的「注釋」頁面
