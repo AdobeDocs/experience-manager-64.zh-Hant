@@ -31,7 +31,7 @@ ht-degree: 10%
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. 在使 [!DNL Experience Manager] 用者介面中，導覽至「 **[!UICONTROL 工具]** > **[!UICONTROL 保全]** > **[!UICONTROL Adobe IMS設定」]**。 按一 **[!UICONTROL 下「建立]** 」，然後選 **[!UICONTROL 取「雲端解決方案]** > **[!UICONTROL Adobe Stock]**」。
+1. In [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. 按一 **[!UICONTROL 下「建立]** 」，然後選 **[!UICONTROL 取「雲端解決方案]** > **[!UICONTROL Adobe Stock]**」。
 1. 重複使用現有證書或選擇「 **[!UICONTROL 建立新證書」]**。
 1. 按一下&#x200B;**[!UICONTROL 建立憑證]**。建立後，請下載公開金鑰。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 將下載的公開金鑰新增至您的服 [!DNL Adobe Developer Console] 務帳戶。 按一下&#x200B;**[!UICONTROL 下一步]**。讓「 [!UICONTROL Adobe IMS技術帳戶設定」畫面保持開啟] ，以便在不久後提供值。
@@ -47,7 +47,7 @@ ht-degree: 10%
 1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 1. 按一 **[!UICONTROL 下「建立]** 」以建立組態，並將它與您現有的IMS組態建立關聯。 選擇 `PROD` 作為環境參數。
 1. 在「 **[!UICONTROL 授權資產路徑]** 」欄位中，保留原狀位置。 請勿變更資產的儲存位 [!DNL Adobe Stock] 置。
-1. 新增所有必要屬性以完成建立。 Click **[!UICONTROL Save &amp; Close]**.
+1. 新增所有必要屬性以完成建立。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。
 1. 新增 [!DNL Experience Manager] 可授權資產的使用者或群組。
 
 >[!NOTE]
