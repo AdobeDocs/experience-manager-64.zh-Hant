@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 translation-type: tm+mt
 source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
@@ -40,6 +43,7 @@ AEM提供多種機制，讓您自訂製作例項的控制台( [以及頁面製�
 >* 使用和建立 [clientlibs](/help/sites-developing/clientlibs.md)。
 >* 使用和建立 [覆蓋](/help/sites-developing/overlays.md)。
 >* [花崗岩](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
 AEM Gems工作階段- [User interface customization for AEM 6.0中也包含](https://docs.adobe.com/content/ddc/en/gems.html) 此主題 [](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html)。
@@ -52,17 +56,18 @@ AEM Gems工作階段- [User interface customization for AEM 6.0中也包含](htt
 >
 >配置和其他更改的建議方法為：
 >
->1. 重新建立下列項目的必要項目(如中所 `/libs`示): `/apps`
+>1. 重新建立必要項目(如中所 `/libs`示) `/apps`
    >
    >
 1. 在 `/apps`
+
 >
 
 
 
 例如，結構中的下列位 `/libs` 置可以覆蓋：
 
-* 控制台（任何以Granite UI頁面為基礎的控制台）;例如：
+* 控制台（任何以Granite UI頁面為基礎的控制台）; 例如：
 
    * `/libs/wcm/core/content`
 
@@ -258,7 +263,7 @@ You can find the code of this page on GitHub
 
 ## 將新動作新增至工具列 {#add-new-action-to-the-toolbar}
 
-1. 您可以建立自己的元件，並包含自訂動作的對應用戶端程式庫。 例如，Promote to twitter **動作** :
+1. 您可以建立自己的元件，並包含自訂動作的對應用戶端程式庫。 例如，Promote to Twitter **動作** :
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -290,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   使用此節點上的屬性，可以定義 `groups` 允許執行特定操作；例如， `administrators`
+   使用此節點上的屬性，可以定義 `groups` 允許執行特定操作； 例如， `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -363,7 +368,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->此功能已針對多欄文字欄位最佳化；對於其他資料類型，可以在中覆 `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` 蓋 `/apps`。
+>此功能已針對多欄文字欄位最佳化； 對於其他資料類型，可以在中覆 `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` 蓋 `/apps`。
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -399,4 +404,4 @@ You can find the code of this page on GitHub
 
 使用主控台時，常見的使用案例是使用者必須從資源（例如頁面、元件、資產等）中選擇。 這可以以清單的形式，例如作者必須從中選擇項目。
 
-為了將清單保持在合理的大小，並且與使用案例相關，篩選器可以以自訂謂詞的形式實施。 如需詳 [細資訊，請參閱](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) 本文章。
+為了將清單保持在合理大小並與使用案例相關，可以以自訂述詞的形式實作篩選。 如需詳 [細資訊，請參閱](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) 本文章。
