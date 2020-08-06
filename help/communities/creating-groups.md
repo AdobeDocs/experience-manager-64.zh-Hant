@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 1%
 
 ---
 
@@ -45,13 +48,15 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 
 * **[!UICONTROL 說]**&#x200B;明要在社群網站上顯示的群組說明。
 
-* **[!UICONTROL 邀請]**&#x200B;要邀請加入群組的成員清單。 提前輸入搜尋將提供社群成員的邀請建議。
+* **[!UICONTROL 邀請]**&#x200B;要邀請加入群組的成員清單。 提前輸入搜尋將提供社群成員邀請的建議。
 
 * **[!UICONTROL 群組URL名]**&#x200B;稱成為URL一部分之群組頁面的名稱。
 
-* **[!UICONTROL 開啟群]**&#x200B;組選 `Open Group` 取表示任何匿名網站訪客皆可檢視內容，並將取消選取 `Member Only Group`。
+* **[!UICONTROL 開啟群組]**&#x200B;選取 
+`Open Group` 指出任何匿名網站訪客皆可檢視該內容，並將取消選取 `Member Only Group`。
 
-* **[!UICONTROL 僅成員組]**&#x200B;選 `Member Only Group` 擇只表示組的成員可以查看內容，並將取消選擇 `Open Group`。
+* **[!UICONTROL 僅成員組選]**&#x200B;擇 
+`Member Only Group` 表示只有群組成員可以檢視內容，且會取消選取 `Open Group`。
 
 在「模 **[!UICONTROL 板]** 」(Template)頁籤下，可以從社區組模板清單中進行選擇，這些模板是在社區站點結構或社區站點模板中包含組功能時指定的。
 
@@ -61,7 +66,7 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-選取「建 **[!UICONTROL 立群組]** 」按鈕後，會根據所選範本建立群組的頁面，並為會籍建立使用者群組，而「群組」頁面將會更新以顯示新的子社群。
+選取「建 **[!UICONTROL 立群組]** 」按鈕後，會根據選擇的範本建立群組的頁面，並為會籍建立使用者群組，而「群組」頁面將會更新以顯示新的子社群。
 
 例如，具有名為「焦點群組」的新子社群的「群組」頁面（已上傳影像縮圖）會顯示如下（仍以社群群組管理員身分登入）:
 
