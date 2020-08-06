@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 1%
 
 ---
 
@@ -72,4 +75,4 @@ AEM Communities控制台可從全域導覽面板的作者環境取得，提供�
 
 ## 工具控制台 {#tools-console}
 
-若要從 [全域導覽存取Communities Tools](tools.md) （之前稱為管理主控台）:工 **[!UICONTROL 具>社群]**
+若要從 [全域導覽存取Communities Tools](tools.md) （之前稱為管理主控台）: **[!UICONTROL 工具>社群]**
