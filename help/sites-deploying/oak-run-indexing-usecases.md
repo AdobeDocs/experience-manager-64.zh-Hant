@@ -11,6 +11,9 @@ discoiquuid: 084075b8-826d-4f27-9342-35f33368f24f
 noindex: true
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '1392'
+ht-degree: 0%
 
 ---
 
@@ -118,9 +121,9 @@ java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstor
 * 重新建立索引需要遍歷整個儲存庫，這會給AEM設定帶來高負載，進而影響使用者體驗；
 * 對於重 `DocumentNodeStore` 新編製索引可能需要相當長時間的安裝，如果在操作過程中與Mongo資料庫的連接失敗，則必須從頭開始編製索引；
 
-* 在某些情況下，由於文字擷取，重新建立索引可能需要很長時間。 這主要是針對具有大量PDF檔案的設定，在這些設定中，擷取文字所花的時間可能會影響索引時間。
+* 在某些情況下，由於文字擷取，重新建立索引可能需要很長時間。 這主要適用於具有大量PDF檔案的設定，其中在擷取文字上花費的時間會影響索引時間。
 
-為了達到這些目標，Oak-run索引工具支援可視需要使用的不同模式來重新建立索引。 oak-run index命令提供下列優點：
+為滿足這些目標，Oak-run索引工具支援可視需要使用的不同重新索引模式。 oak-run index命令提供下列優點：
 
 * **帶外重新索引** - oak-run重新索引可與執行中的AEM設定分開進行，因此，可將對使用中的AEM例項的影響降至最低；
 
