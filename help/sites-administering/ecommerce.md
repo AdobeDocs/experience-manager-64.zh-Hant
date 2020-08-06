@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 translation-type: tm+mt
 source-git-commit: eb1ae2b4910e7adef48865996db4837175f588d9
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 1%
 
 ---
 
@@ -28,13 +31,13 @@ Adobe提供兩個版本的商務整合架構：
 |  | CIF On-prem | CIF雲 |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | 支援的 AEM 版本 | AEM on-prem或AMS 6.x | AEM AMS 6.4和6.5 |
-| 後端 | - AEM,Java <br> -整合，預建對應（範本）<br> - JCR儲存庫 | - Magento <br>- java和Javascript <br>-無商務資料儲存在JCR儲存庫中 |
+| 後端 | - AEM,Java <br> -整合，預建對應（範本）<br> - JCR儲存庫 | - Magento <br>- Java和Javascript <br>-無商務資料儲存在JCR儲存庫中 |
 | 前端 | AEM伺服器端轉譯的頁面 | 混合頁面應用程式（混合演算） |
 | 產品目錄 | -產品匯入工具、編輯器、AEM中的快取 <br>-含AEM或Proxy頁面的一般型錄 | -無產品匯入 <br>-通用範本 <br>-透過連接器的隨選資料 |
 | 可擴充性 | -最多可支援幾百萬種產品（取決於使用案例） <br> - Caching on Dispatcher | -無卷限制 <br>- Dispatcher或CDN的快取 |
 | 標準化資料模型 | 否 | 是，Magento GraphQL模式 |
-| 可用性 | <br> 是：- SAP Commerce Cloud(Extension已更新，以支援AEM 6.4和Hybris 5（預設值），並維持與Hybris 4 <br>- Salesforce Commerce Cloud(Connector open-sourced to support AEM 6.4)的相容性 | 是，透過GitHub透過開放原始碼。 <br> Magento Commerce(支援Magento 2.3.2（預設值），並與Magento 2.3.1相容)。 |
-| 使用時機 | 有限的使用案例：對於需要匯入小型靜態型錄的情況 | 大多數使用案例中的首選解決方案 |
+| 可用性 | 是：<br> - SAP Commerce Cloud(Extension已更新，以支援AEM 6.4和Hybris 5（預設值），並維持與Hybris 4 <br>- Salesforce Commerce Cloud(Connector open-sourced to support AEM 6.4)的相容性 | 是，透過GitHub透過開放原始碼。 <br> Magento Commerce(支援Magento 2.3.2（預設值），並與Magento 2.3.1相容)。 |
+| 使用時機 | 有限的使用案例： 對於需要匯入小型靜態型錄的情況 | 大多數使用案例中的首選解決方案 |
 
 電子商務與產品資訊管理(PIM)一起處理網站的活動，主要透過線上商店銷售產品：
 
@@ -45,7 +48,7 @@ Adobe提供兩個版本的商務整合架構：
 * 即時和集中化的儲存記錄
 * 網頁介面
 
-AEM eCommerce可協助行銷人員跨網路、行動裝置和社交觸點提供品牌化的個人化購物體驗。 AEM製作環境可讓您根據目標訪客上下文和銷售策略來自訂頁面和元件；例如：
+AEM eCommerce可協助行銷人員跨網路、行動裝置和社交觸點提供品牌化的個人化購物體驗。 AEM製作環境可讓您根據目標訪客上下文和銷售策略來自訂頁面和元件； 例如：
 
 * 產品頁面
 * 購物車元件
@@ -76,6 +79,7 @@ AEM eCommerce提供：
    * 最近檢視的產品
    * 憑單
    * 及其他
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    >[!NOTE]
@@ -88,6 +92,7 @@ AEM eCommerce提供：
    * 電子商務系統的研究
    * 協力廠商搜尋（例如Search&amp;Promote）
    * 或其組合。
+
    ![chlimage_1-151](assets/chlimage_1-151.png)
 
 * 使用AEM功能，在多 **個頻道上呈現您的內容**，不論是完整的瀏覽器視窗或行動裝置。 這會以訪客所需的格式提供您的內容。
@@ -102,6 +107,7 @@ AEM eCommerce提供：
 
    * 例如，當訂單總量超過特定金額時，可能會降低運費。
    * 另一種可能可讓您提供使用描述檔資料的季節性選件（例如位置）。 然後，視需要依其他因素，再加亮這些項目。
+
    在下列範例中，一個摘要顯示為購物車內容小於$75:
 
    ![chlimage_1-153](assets/chlimage_1-153.png)
