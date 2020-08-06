@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1126'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ AEM會記錄詳細記錄，您可能想要設定這些記錄，以疑難排解�
 
 ## 使用詳細選項 {#using-the-verbose-option}
 
-當您啟動AEM WCM時，可將-v(verbose)選項新增至命令列，如：java -jar cq-wcm-quickstart-&lt;version>.jar -v.
+當您啟動AEM WCM時，可將-v(verbose)選項新增至命令列，如： java -jar cq-wcm-quickstart-&lt;version>.jar -v.
 
 詳細選項顯示控制台上的一些快速啟動日誌輸出，以便用於故障排除。
 
@@ -87,7 +90,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
 在某些情況下，即使儲存庫本身已成功執行，AEM WCM歡迎畫面也不會自動顯示。 這可能取決於作業系統設定、瀏覽器組態或類似因素。
 
-常見的症狀是AEM WCM Quickstart視窗會顯示「AEM WCM啟動，等待伺服器啟動……」.&quot; 如果訊息顯示較長時間，請使用預設的4502連接埠或執行例項的連接埠，手動將AEM WCM URL輸入瀏覽器視窗中：http://localhost:4502/。
+常見的症狀是AEM WCM Quickstart視窗會顯示「AEM WCM啟動，等待伺服器啟動……」.&quot; 如果訊息顯示較長時間，請使用預設的4502連接埠或執行例項的連接埠，手動將AEM WCM URL輸入瀏覽器視窗中： http://localhost:4502/。
 
 此外，記錄檔可能會顯示瀏覽器未啟動的原因。
 
