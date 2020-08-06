@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 0%
 
 ---
 
@@ -31,6 +34,6 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 ## 產品管理提示 {#product-administration-tips}
 
-有效地使用全域檔案儲存(GDS)。 表單伺服器上的GDS目錄可用來儲存傳遞至屬於AEM表單一部分的服務的檔案，除其他外。 為了改善效能，較小的檔案會儲存在記憶體中並保存在資料庫中。
+有效地使用全域檔案儲存(GDS)。 表單伺服器上的GDS目錄可用來儲存傳遞至屬於AEM表單一部分的服務的檔案，除其他外。 為了改善效能，較小的檔案會儲存在記憶體中，並保留在資料庫中。
 
-管理控制台公開「預設檔案最大內嵌大小」屬性，以設定儲存在記憶體中並保存在資料庫中的檔案大小上限。 (請參 [閱「設定一般AEM表單設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)」。)如果將此屬性設定為低值，則大多數文檔都保存在GDS目錄中，而不是保存在資料庫中。 優點是，當檔案儲存在GDS目錄時，不再需要時，您可以更輕鬆地刪除這些檔案。
+管理控制台公開「預設檔案最大內嵌大小」屬性，以設定儲存在記憶體中並保存在資料庫中的檔案大小上限。 (請參 [閱「設定一般AEM表單設定](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)」。) 如果將此屬性設定為低值，則大多數文檔都保存在GDS目錄中，而不是保存在資料庫中。 優點是，當檔案儲存在GDS目錄時，不再需要時，您可以更輕鬆地刪除這些檔案。
