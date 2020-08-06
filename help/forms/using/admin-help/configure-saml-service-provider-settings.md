@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 translation-type: tm+mt
 source-git-commit: 043634cb2e93ca7f94c61a6a073746174a638424
+workflow-type: tm+mt
+source-wordcount: '628'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 043634cb2e93ca7f94c61a6a073746174a638424
 如需SAML的說明，請參 [閱安全性斷言標籤語言(SAML)V2.0技術概觀](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf)。
 
 1. 在管理控制台中，按一下「設定>使用者管理>設定> SAML服務供應商設定」。
-1. 在「服務提供者實體ID」方塊中，輸入唯一ID以用作AEM表單服務提供者實作的識別碼。 您也可在設定IDP時指定此唯一ID(例如 `um.lc.com`。)您也可以使用用來存取AEM表單的URL(例如 `https://AEMformsserver`)。
+1. 在「服務提供者實體ID」方塊中，輸入唯一ID以用作AEM表單服務提供者實作的識別碼。 您也可在設定IDP時指定此唯一ID(例如 `um.lc.com`。) 您也可以使用用來存取AEM表單的URL(例如 `https://AEMformsserver`)。
 1. 在「服務提供者基本URL」方塊中，輸入表單伺服器的基本URL(例如 `https://AEMformsserver:8080`)。
 1. （選擇性）若要啟用AEM表格以傳送簽署的驗證要求給IDP，請執行下列工作：
 
@@ -40,6 +43,7 @@ source-git-commit: 043634cb2e93ca7f94c61a6a073746174a638424
 
    * 協力廠商SAML身分提供者登入頁面的連結，屬於企業網域的使用者可在此驗證。
    * AEM表單登入頁面的連結，屬於本機網域的使用者可在此驗證。
+
    如果未選取此選項，使用者將直接進入第三方SAML身分提供者的登入頁面，屬於企業網域的使用者可在此頁面進行驗證。
 
 1. （可選）選擇啟用對象綁定以啟用對象綁定支援。 依預設，POST系結會與SAML搭配使用。 但是，如果您已配置「對象綁定」，請選擇此選項。 選取此選項時，實際的使用者斷言不會透過瀏覽器請求傳遞。 而是傳遞斷言的指針，並使用後端Web服務呼叫來擷取斷言。
@@ -55,6 +59,7 @@ source-git-commit: 043634cb2e93ca7f94c61a6a073746174a638424
       `saml.sp.use.relaystate=true`
 
    * 新增下列自訂屬性，以設定自訂Java伺服器頁面(JSP)的URL，此URL將用來呈現身分提供者的註冊清單。 如果您尚未部署自訂Web應用程式，則會使用預設的「使用者管理」頁面來呈現清單。
+
    `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. 按一下「儲存」。
