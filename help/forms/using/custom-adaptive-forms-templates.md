@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,11 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## 預設最適化表單範本 {#default-adaptive-form-templates}
 
-AEM quickStart提供下列最適化表單範本：
+AEM QuickStart提供下列最適化表單範本：
 
-* 基本：可讓您使用左側標籤的版面建立多標籤可調式表單，您可以在其中以任何隨機順序瀏覽標籤。
-* Adobe Sign的基本功能：可讓您建立包含多個標籤和精靈的表單。 它使用左側標籤的版面配置，可讓您依任何順序瀏覽標籤。 它使用Adobe Document cloud電子簽名服務進行簽署和驗證。
-* 空白範本：可讓您建立不含任何頁首、頁尾和初始內容的表格。 您可以新增元件，例如文字方塊、按鈕和影像。 空白範本可讓您建立可內嵌在AEM網 [站頁面中的表單](/help/forms/using/embed-adaptive-form-aem-sites.md)。
+* 基本： 可讓您使用左側標籤的版面建立多標籤可調式表單，您可以在其中以任何隨機順序瀏覽標籤。
+* Adobe Sign的基本功能： 可讓您建立包含多個標籤和精靈的表單。 它使用左側標籤的版面配置，可讓您依任何順序瀏覽標籤。 它使用Adobe Document Cloud電子簽名服務進行簽署和驗證。
+* 空白範本： 可讓您建立不含任何頁首、頁尾和初始內容的表格。 您可以新增元件，例如文字方塊、按鈕和影像。 空白範本可讓您建立可內嵌在AEM網 [站頁面中的表單](/help/forms/using/embed-adaptive-form-aem-sites.md)。
 
 這些範本的屬 `sling:resourceType` 性已設為對應的頁面元件。 頁面元件轉譯CQ頁面，其中包含最適化表單容器，而最適化表單又轉譯為最適化表單。
 
@@ -101,7 +104,7 @@ AEM quickStart提供下列最適化表單範本：
 
    您可以包 `guideformtitle`含自訂元件或元件，而不是這 `parsys` 樣。 例如，移除 `guideformtitle`並新增自訂元件或元件 `parsys` 節點。 請確定元 `sling:resourceType` 件的屬性會參照元件，並在頁面檔案中定義該元 `component.jsp` 件。
 
-1. 導覽至位置/apps/mycompany/templates/enrollment-template/jcr:content。
+1. 導覽至/apps/mycompany/templates/enrollment-template/jcr:content位置。
 
 1. 開啟「 **[!UICONTROL 屬性]** 」標籤，並將屬性值 `cq:designPath` 變更為/etc/designs/mycompany。
 
@@ -140,7 +143,7 @@ AEM quickStart提供下列最適化表單範本：
 新模 `head.jsp` 板的組 `enrollmentpage` 件檔案包含一個客戶端庫 `guide.theme.simpleEnrollment`。 預設範本也使用此用戶端程式庫。 使用下列方法變更新範本的樣式：
 
 * 定義自訂主題，並以自訂主題 `guide.theme.simpleEnrollment` 取代預設主題。
-* 在/etc/designs/mycompany下定義新的用戶端程式庫。 在jsp頁中，在預設主題項後加入客戶端庫。 在此用戶端程式庫中包含所有覆寫的樣式和其他Java script檔案。
+* 在/etc/designs/mycompany下定義新的用戶端程式庫。 在jsp頁中，在預設主題項後加入客戶端庫。 在此用戶端程式庫中包含所有覆寫的樣式和其他Java Script檔案。
 
 >[!NOTE]
 >
