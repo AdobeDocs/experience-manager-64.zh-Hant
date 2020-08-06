@@ -1,6 +1,6 @@
 ---
-title: OSGi上的表單導向工作流程|處理使用者資料
-seo-title: OSGi上的表單導向工作流程|處理使用者資料
+title: OSGi上的表單導向工作流程 |處理使用者資料
+seo-title: OSGi上的表單導向工作流程 |處理使用者資料
 description: 'null'
 seo-description: 'null'
 uuid: 6eefbe84-6496-4bf8-b065-212aa50cd074
@@ -9,11 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 0%
 
 ---
 
 
-# OSGi上的表單導向工作流程|處理使用者資料 {#forms-centric-workflows-on-osgi-handling-user-data}
+# OSGi上的表單導向工作流程 |處理使用者資料 {#forms-centric-workflows-on-osgi-handling-user-data}
 
 以表單為中心的AEM工作流程可讓您自動化以表單為中心的實際業務流程。 工作流由一系列步驟組成，這些步驟按關聯工作流模型中指定的順序執行。 每個步驟都會執行特定動作，例如指派工作給使用者或傳送電子郵件訊息。 工作流程可與儲存庫、使用者帳戶和服務中的資產互動。 因此，工作流程可協調涉及Experience Manager任何方面的複雜活動。
 
@@ -73,8 +76,8 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
 
 但是，在以下情況下，在標識與啟動器關聯的工作流時，您不能標識或結果可能不明確：
 
-* **透過受監視資料夾觸發的工作流程**:如果工作流是由受監視的資料夾觸發，則無法使用其啟動器來標識工作流實例。 在這種情況下，用戶資訊被編碼在儲存的資料中。
-* **從發佈AEM例項開始的工作流程**:從AEM發佈例項提交最適化表單、互動式通訊或信件時，所有工作流程例項都是使用服務使用者來建立。 在這些情況下，已登入使用者的使用者名稱不會擷取到工作流程例項資料中。
+* **透過受監視資料夾觸發的工作流程**: 如果工作流是由受監視的資料夾觸發，則無法使用其啟動器來標識工作流實例。 在這種情況下，用戶資訊被編碼在儲存的資料中。
+* **從發佈AEM例項開始的工作流程**: 從AEM發佈例項提交最適化表單、互動式通訊或信件時，所有工作流程例項都是使用服務使用者來建立。 在這些情況下，已登入使用者的使用者名稱不會擷取到工作流程例項資料中。
 
 ### 存取使用者資料 {#access}
 
@@ -87,9 +90,11 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
 1. 根據可用資訊，執行以下查詢之一：
 
    * 如果已知工作流啟動器，請執行以下操作：
+
    `SELECT &ast; FROM [cq:Workflow] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[initiator]='*initiator-ID*'`
 
    * 如果您尋找其資料的使用者是目前的工作流程受託人，請執行下列動作：
+
    `SELECT &ast; FROM [cq:WorkItem] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[assignee]='*assignee-id*'`
 
    查詢返回指定工作流啟動器或當前工作流受託人的所有工作流實例的位置。
@@ -136,6 +141,7 @@ source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
    1. 前往並 `https://[server]:[port]/aem/start.html` 使用管理員認證登入。
    1. 導覽至「工 **[!UICONTROL 具>工作流程>例項」]**。
    1. 為用戶選擇相關的工作流實例，並點選「終 **[!UICONTROL 止]** 」以終止運行實例。
+
    有關使用工作流實例的詳細資訊，請參閱管 [理工作流實例](/help/sites-administering/workflows-administering.md)。
 
 1. 前往CRXDE Lite主控台，導覽至工作流程例項的裝載路徑，並刪除節 `payload` 點。
