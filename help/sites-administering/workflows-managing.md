@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,8 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
    * **負責人**: `content-authors`
    * **類型**: `Deny`
    * **權限**: `jcr:read`
-   * **rep:glob**:參考特定工作流程
+   * **rep:glob**: 參考特定工作流程
+
    ![wf-108](assets/wf-108.png)
 
    「存 **取控制清單** 」(Access Control List `content-authors` )表格現在包含對工作 `prototype-wfm-01` 流程模型的限制。
@@ -89,7 +93,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 然後，可以將ACL添加到資料夾本身。
 
 1. 在您的網頁瀏覽器中開啟CRXDE Lite(例如 [http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
-1. 在節點樹中，選擇工作流模型資料夾中單個資料夾的節點；例如：
+1. 在節點樹中，選擇工作流模型資料夾中單個資料夾的節點； 例如：
 
    `/var/workflow/models/prototypes`
 
@@ -101,6 +105,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
    * **負責人**: `content-authors`
    * **類型**: `Deny`
    * **權限**: `jcr:read`
+
    >[!NOTE]
    >
    >與將特 [定工作流模型的ACL應用到/var/workflow/models一樣](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) ，您可以包括rep:glob以限制對特定工作流的訪問。
