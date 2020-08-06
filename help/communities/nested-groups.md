@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 2%
 
 ---
 
@@ -43,13 +46,14 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 * 選擇 **[!UICONTROL 建立群組]**
 * `1 Community Group Template`:
-   * 社群群組標題：藝術
-   * 社群群組說明：不同藝術團體的父項團體。
-   * 社群群組根：保 *留為預設值*
+   * 社群群組標題： 藝術
+   * 社群群組說明： 不同藝術團體的父項團體。
+   * 社群群組根： *預設為*
    * 其他可用社群群組語言：使用下拉式功能表來選取可用的社群群組語言。 功能表會顯示建立父社群網站的所有語言。 使用者可在這些語言中選擇，以在此單一步驟中建立多個地區設定的群組。 在相應社群網站的「群組」主控台中，以多種指定語言建立相同的群組。
-   * 社群群組名稱：藝術
-   * 範本：下拉式選擇 `Reference Group`
+   * 社群群組名稱： 藝術
+   * 範本： 下拉式選擇 `Reference Group`
    * 選取 `Next`
+
       ![parentttentedgroup](assets/parenttonestedgroup.png)
 
 使用下列設定，繼續檢視其他面板：
@@ -89,19 +93,20 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
    * 標題: `Visual Arts`
    * 名稱: `visual`
    * 範本: `Reference Group`
-   * 會籍：選 `Optional Membership`擇公共組，開啟給所有成員
+   * 會籍： 選 `Optional Membership`擇公共組，開啟給所有成員
 1. 聽覺
    * 標題: `Auditory Arts`
    * 名稱: `auditory`
    * 範本: `Reference Group`
-   * 會籍：選 `Required Membership`擇開放群組，供成員加入
+   * 會籍： 選 `Required Membership`擇開放群組，供成員加入
 
 1. 歷史
 
    * 標題: `Art History`
    * 名稱: `history`
    * 範本: `Reference Group`
-   * 會籍：選 `Restricted Membership`取僅對受邀成員可見的機密群組(例如，邀請 [示範使用者](tutorials.md#demo-users) ) `emily.andrews@mailinator.com`
+   * 會籍： 選 `Restricted Membership`取僅對受邀成員可見的機密群組（例如，邀請） 
+[示範使用者](tutorials.md#demo-users) `emily.andrews@mailinator.com`
 
 重新整理頁面，查看所有三個巢狀群組（子社群）。
 
@@ -132,11 +137,11 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 登入時，您可能會體驗不同的群組，例如與 [用於](tutorials.md#demo-users)
 
-* 圖稿／歷史記錄組成員：emily.andrews@mailinator.com/密碼
+* 圖稿／歷史記錄組成員： emily.andrews@mailinator.com/密碼
    * 受限制的（機密）群組（藝術／歷史）將可見
    * 可以看到可選（公開）群組
    * 可以加入受限制（開啟）的群組
-* 群組管理員：aaron.mcdonald@mailinator.com/密碼
+* 群組管理員： aaron.mcdonald@mailinator.com/密碼
    * 可以看到可選（公開）群組
    * 可以加入受限制（開啟）的群組
    * 將看不到受限制的（秘密）組
