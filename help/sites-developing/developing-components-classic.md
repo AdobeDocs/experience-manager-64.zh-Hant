@@ -12,6 +12,9 @@ discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2420'
+ht-degree: 0%
 
 ---
 
@@ -85,21 +88,21 @@ JSP指令碼文 `global.jsp` 件用於提供對特定對象（即訪問內容）
 
    屬性物件是ValueMap的例項(請參 [閱Sling API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html))，並包含目前資源的所有屬性。
 
-   範例：用 `String pageTitle = properties.get("jcr:title", "no title");` 於頁面元件的呈現指令碼。
+   範例： `String pageTitle = properties.get("jcr:title", "no title");` 用於頁面元件的轉換指令碼中。
 
-   範例：用 `String paragraphTitle = properties.get("jcr:title", "no title");` 於標準段落元件的渲染指令碼。
+   範例： `String paragraphTitle = properties.get("jcr:title", "no title");` 用於標準段落元件的渲染指令碼。
 
 * 透過下列 `currentPage` 項目中介紹的物 `global.jsp`件：
 
    物 `currentPage` 件是頁面的例項(請參閱 [AEM API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml))。 頁面類別提供一些存取內容的方法。
 
-   例如: `String pageTitle = currentPage.getTitle();`
+   範例: `String pageTitle = currentPage.getTitle();`
 
 * 透過 `currentNode` 下列項目中引進的物件 `global.jsp`:
 
    物 `currentNode` 件是節點的例項(請參 [閱JCR API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html))。 可以通過該方法訪問節點的 `getProperty()` 屬性。
 
-   例如: `String pageTitle = currentNode.getProperty("jcr:title");`
+   範例: `String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## JSP標籤庫 {#jsp-tag-libraries}
 
@@ -167,6 +170,7 @@ CQ和Sling標籤庫可讓您存取特定函式，以用於範本和元件的JSP�
       * `dialog` -傳統UI的對話框
    * 替換 `.jsp` 檔案（在新元件後命名）
    * 或完全重新使用整個元件(如果您想要
+
    例如，如果您取得標準「文字」元件的復本，您可以在對話方塊中新增其他欄位，然後更新以處 `.jsp` 理在此處輸入的內容。
 
    >[!NOTE]
@@ -215,6 +219,7 @@ CQ和Sling標籤庫可讓您存取特定函式，以用於範本和元件的JSP�
       `<contextPath>/ Test.html?wcmmode=design`
 
    * 按一下Sidekick中的設計
+
    您現在處於設計模式，可以編輯段落系統。
 
 1. 按一下「編輯」。
@@ -263,6 +268,7 @@ CQ和Sling標籤庫可讓您存取特定函式，以用於範本和元件的JSP�
    * 對話框定義： `textimage/dialog`
    * 元件指令碼： `textimage/textimage.jsp`
    * 編輯配置節點（允許拖放資產）: `textimage/cq:editConfig`
+
    >[!NOTE]
    >
    >對話框定義取決於UI:
@@ -275,25 +281,27 @@ CQ和Sling標籤庫可讓您存取特定函式，以用於範本和元件的JSP�
 
    * 元件名稱
 
-      * 設為 `jcr:description``Text Image Component (Extended)`
-      * 設為 `jcr:title``Text Image (Extended)`
+      * 設為 `jcr:description` `Text Image Component (Extended)`
+      * 設為 `jcr:title` `Text Image (Extended)`
    * 群組，其中元件列在sidekick中（保留原樣）
 
       * 保 `componentGroup` 留為 `General`
    * 新元件的父元件（標準textimage元件）
 
-      * 設為 `sling:resourceSuperType``foundation/components/textimage`
+      * 設為 `sling:resourceSuperType` `foundation/components/textimage`
+
    在此步驟後，元件節點如下所示：
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
-1. 更改映 `sling:resourceType` 像的編輯配置節點的屬性(屬性： `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`to `geometrixx/components/textimage.`
+1. 更改映 `sling:resourceType` 像的編輯配置節點的屬性(屬性： `textimage/cq:editConfig/cq:dropTargets/image/parameters/sling:resourceType`) `geometrixx/components/textimage.`
 
    這樣，當將影像拖放至頁面上的元件時，擴充的 `sling:resourceType` textimage元件的屬性會設為： `geometrixx/components/textimage.`
 
 1. 修改元件的對話框以包含新選項。 新元件繼承與原始元件相同的對話框部分。 我們唯一的新增功能是擴充「進階」 **標籤** ，並新增「影像位置」下拉式清單，其中包含「左側 **」和「** Right ********」選項：
 
    * 保留屬 `textimage/dialog`性不變。
+
    請注意， `textimage/dialog/items` 如何有四個子節點（tab1到tab4），代表textimage對話框的四個頁籤。
 
    * 對於前兩個標籤（tab1和tab2）:
@@ -313,8 +321,9 @@ CQ和Sling標籤庫可讓您存取特定函式，以用於範本和元件的JSP�
          * `type`: `select`
       * 新增類 `position/options` 型的子節 `cq:WidgetCollection` 點以表示影像放置的兩種選擇，並在其下方建立兩個類型的節點o1和o2 `nt:unstructured`。
       * 對於節 `position/options/o1` 點設定屬性： `text` 到 `Left` 和 `value` 到 `left.`
-      * 對於節 `position/options/o2` 點設定屬性： `text` 到 `Right``value` 到 `right`。
+      * 對於節 `position/options/o2` 點設定屬性： `text` 敬 `Right` 和 `value` 敬 `right`。
    * 刪除頁籤4。
+
    影像位置作為代表段落的節 `imagePosition`點的屬性保存在內 `textimage` 容中。 執行這些步驟後，元件對話方塊的外觀如下：
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
@@ -367,7 +376,7 @@ CQ和Sling標籤庫可讓您存取特定函式，以用於範本和元件的JSP�
 
 1. 編輯元件中繼資料：
 
-   * 將 **jcr:title設為**`Image (Extended)`
+   * 將 **jcr:title** 設為 `Image (Extended)`
 
 1. 導航到 `/apps/geometrixx/components/image/dialog/items/image`.
 1. 新增屬性:
@@ -375,6 +384,7 @@ CQ和Sling標籤庫可讓您存取特定函式，以用於範本和元件的JSP�
    * **名稱**: `allowUpload`
    * **類型**: `String`
    * **值**: `false`
+
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 1. 按一下「 **全部儲存**」。 元件已準備好進行測試。
