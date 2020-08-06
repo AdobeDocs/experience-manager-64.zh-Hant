@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ SocialCollectionComponent介面可擴充SocialComponent介面，以更好地呈�
 
 ### SocialComponentFactory介面 {#socialcomponentfactory-interface}
 
-SocialComponentFactory(factory)會將SocialComponent註冊為架構。 該工廠提供一種方法，讓框架知道什麼SocialComponents可用於給定的resourceType及其優先順序ranking&amp;ast;識別多個Social元件時。
+SocialComponentFactory(factory)會將SocialComponent註冊為架構。 該工廠提供一種方法，讓框架知道什麼SocialComponents可用於給定的resourceType及其優先順序ranking&amp;ast; 識別多個Social元件時。
 
 SocialComponentFactory負責建立所選SocialComponent的例項，以便能夠使用DI實務從工廠中注入SocialComponent所需的所有相依性。
 
@@ -55,7 +58,7 @@ SocialComponentFactory.getPriority()方法的實作應傳回最高值，以便�
 
 ### SocialComponentFactoryManager介面 {#socialcomponentfactorymanager-interface}
 
-SocialComponentFactoryManager（管理員）會管理在架構中註冊的所有SocialComponents，並負責選擇SocialComponentFactory以用於指定的資源(resourceType)。 如果沒有為特定資源類型註冊工廠，則經理將返回具有給定資源最接近超類型的工廠。
+SocialComponentFactoryManager（管理員）管理所有在架構中註冊的SocialComponents，並負責選擇SocialComponentFactory以用於指定的資源(resourceType)。 如果沒有為特定資源類型註冊工廠，則經理將返回具有給定資源最接近超類型的工廠。
 
 SocialComponentFactoryManager是OSGi服務，可存取其他OSGi服務，這些服務可透過建構函式傳遞至SocialComponent。
 
@@ -116,7 +119,7 @@ HTTP API POST端點是PostOperation類，通過實施介面（包） `SlingPostO
 
 范常式式碼可在 [Adobe Marketing Cloud GitHub儲存庫中取得](https://github.com/Adobe-Marketing-Cloud) 。 搜尋前置詞為或的 `aem-communities` 專案 `aem-scf`。
 
-## Best Practices {#best-practices}
+## 最佳作法 {#best-practices}
 
 檢視「 [編碼准則](code-guide.md) 」區段，以取得AEM Communities開發人員的各種編碼准則和最佳實務。
 
