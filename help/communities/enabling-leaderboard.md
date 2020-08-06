@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '410'
+ht-degree: 6%
 
 ---
 
@@ -83,11 +86,11 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
    預設值為10。
 
-## 範例：參與者領導委員會 {#example-participants-leaderboard}
+## 範例： 參與者領導委員會 {#example-participants-leaderboard}
 
 此排行榜會報告套用基本計分規則的結果。
 
-Leerboard元件配置：
+Leaderboard元件配置：
 
 * **[!UICONTROL 「設定]** 」頁籤：
 
@@ -107,11 +110,11 @@ Leerboard元件配置：
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
-## 範例：專家排行榜 {#example-experts-leaderboard}
+## 範例： 專家排行榜 {#example-experts-leaderboard}
 
 此排行榜會報告套用進階計分規則的結果。
 
-Leerboard元件配置：
+Leaderboard元件配置：
 
 * **[!UICONTROL 「設定]** 」頁籤：
 
