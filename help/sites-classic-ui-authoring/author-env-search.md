@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 1%
 
 ---
 
@@ -31,10 +34,10 @@ AEM的作者環境提供多種搜尋內容的機制，視資源類型而定。
 
 搜尋面板可讓您搜尋所有網站頁面。 它包含下列欄位和Widget:
 
-* **全文**:搜尋指定的文字
-* **修改後／之前**:僅搜尋在特定日期之間變更的頁面
-* **範本**:僅根據指定的範本搜尋這些頁面
-* **標籤**:僅搜尋具有指定標籤的頁面
+* **全文**: 搜尋指定的文字
+* **修改後／之前**: 僅搜尋在特定日期之間變更的頁面
+* **範本**: 僅根據指定的範本搜尋這些頁面
+* **標籤**: 僅搜尋具有指定標籤的頁面
 
 >[!NOTE]
 >
@@ -42,11 +45,13 @@ AEM的作者環境提供多種搜尋內容的機制，視資源類型而定。
 >
 >* [萬用字元](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [布林運算子](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [規則運算式](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [欄位分組](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Boosting](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+
 >
 
 
@@ -75,6 +80,7 @@ AEM的作者環境提供多種搜尋內容的機制，視資源類型而定。
    * 定義應替換的詞語
    * 指出搜尋是否應區分大小寫
    * 指出是否只應找到整個字詞（否則也找到子字串）
+
    按一 **下** 「預覽」會列出找到詞語的位置。 您可以選擇／清除要替換的特定實例：
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
