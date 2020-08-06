@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '1755'
+ht-degree: 0%
 
 ---
 
@@ -99,6 +102,7 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
     </table>
 
    * 在資產詳細資訊頁面的右上角附近，點選「舞台選 **[!UICONTROL 擇器]** 」圖示。 選取您要套用至3D資產的背景和光源的舞台名稱。
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
    舞台提供環境——背景、地面和照明-3D模型可檢視。
@@ -106,6 +110,7 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
    請 [參閱關於AEM 3D中的階段使用](about-the-use-of-stages-in-aem-3d.md)。
 
    * 在資產詳細資訊頁面的右上角，點選「 **[!UICONTROL Camera Selector]** 」圖示，然後選取您要套用至3D資產的相機檢視。
+
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
    舞台通常提供預先定義的相機。 您可以重新選取目前的相機，將它還原為預先定義的設定。
