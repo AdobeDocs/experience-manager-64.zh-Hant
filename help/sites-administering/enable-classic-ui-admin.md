@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 98ba3093-1edb-4891-abbe-47cf6e4f1feb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '239'
+ht-degree: 0%
 
 ---
 
@@ -37,11 +40,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    `/libs/cq/core/content/nav/sites`
 
-1. 使用「覆蓋節點」選 **項建立覆蓋** ;例如：
+1. 使用「覆蓋節點」選 **項建立覆蓋** ; 例如：
 
    * **路徑**: `/apps/cq/core/content/nav/sites`
    * **重疊位置**: `/apps/`
-   * **匹配節點類型**:活動（選擇複選框）
+   * **匹配節點類型**: 活動（選擇複選框）
 
 1. 將下列布爾屬性添加到覆蓋節點：
 
