@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '2012'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +70,7 @@ SPA就像原生應用程式，不但對網頁的訪客，而且由於SPA的運�
 
 **行銷人員**
 
-* 行銷人員想要提供豐富、原生的體驗，以吸引訪客完全參與內容。
+* 行銷人員想要提供豐富、原生的體驗，以吸引訪客充份參與內容。
 * 個人化可讓這些體驗更吸引人。
 
 **開發人員**
@@ -103,6 +106,7 @@ SPA的主要思想是減少對伺服器的呼叫和依賴，以將伺服器呼�
 >
 >* [AEM 6.4版（含Service Pack 2）](/help/release-notes/sp-release-notes.md)
 >* [請在此處安裝GitHub上提供的範例We.Retail Journal應用程式。](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+
 >
 
 
