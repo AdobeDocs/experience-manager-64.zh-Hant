@@ -1,8 +1,8 @@
 ---
 title: 製作行動應用程式
 seo-title: 製作行動應用程式
-description: AEM Mobile Dashboard可讓您建立、建立和部署行動應用程式、建立、刪除和編輯應用程式中繼資料。 請依照本頁進一步瞭解。
-seo-description: AEM Mobile Dashboard可讓您建立、建立和部署行動應用程式、建立、刪除和編輯應用程式中繼資料。 請依照本頁進一步瞭解。
+description: AEM Mobile Dashboard可讓您建立、建立和部署行動應用程式、建立、刪除和編輯應用程式中繼資料。 請依本頁瞭解詳細資訊。
+seo-description: AEM Mobile Dashboard可讓您建立、建立和部署行動應用程式、建立、刪除和編輯應用程式中繼資料。 請依本頁瞭解詳細資訊。
 uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1053'
+ht-degree: 0%
 
 ---
 
@@ -23,15 +26,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 AEM Mobile Dashboard可讓您建立、建立和部署行動應用程式、建立、刪除和編輯應用程式中繼資料。 在應用程式上線後，您可以分析應用程式分析，包括生命週期和使用量度，以改善客戶轉化率和品牌忠誠度。
 
-若要建立AEM mobile應用程式，請參閱「建立 [行動應用程式](/help/mobile/building-app-mobile-phonegap.md) 」頁面。
+若要建立AEM Mobile應用程式，請參閱「建立 [行動應用程式](/help/mobile/building-app-mobile-phonegap.md) 」頁面。
 
 若要設定您的環境並開始使用，請 [參閱「管理AEM以使用AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md)」。
 
-## AEM mobile應用程式目錄 {#the-aem-mobile-apps-catalog}
+## AEM Mobile應用程式目錄 {#the-aem-mobile-apps-catalog}
 
 AEM Mobile Apps Catalog [(](http://localhost:4502/aem/apps.html/content/phonegap) AEM Mobile應用程式目錄)會顯示您在AEM中管理的所有行動應用程式。
 
-將此目錄設想成AEM mobile的「著陸頁面」，管理員可以在此處，根據範本建立新的AEM mobile應用程式，或上傳行動開發人員已啟動的現有應用程式。
+將此目錄設想成AEM Mobile的「著陸頁面」，管理員可以在此處，根據範本建立新的AEM Mobile應用程式，或上傳行動開發人員已啟動的現有應用程式。
 
 請依照下列步驟前往應用程式目錄登陸頁面：
 
@@ -43,7 +46,7 @@ AEM Mobile Apps Catalog [(](http://localhost:4502/aem/apps.html/content/phonegap
 
 ## AEM Mobile應用程式儀表板 {#the-aem-mobile-app-dashboard}
 
-從目錄選取AEM mobile應用程式時，將會顯示其控制面板。 您可以在這裡管理應用程式、檢視統計資料、建立、部署及管理行動應用程式內容。
+從目錄選取AEM Mobile應用程式時，將會顯示其控制面板。 您可以在這裡管理應用程式、檢視統計資料、建立、部署及管理行動應用程式內容。
 
 您可以展開至AEM Mobile Dashboard中的每個圖格，以按一下「...」來檢視或編輯詳細資訊 在右下角。
 
@@ -59,7 +62,7 @@ AEM Mobile Apps Catalog [(](http://localhost:4502/aem/apps.html/content/phonegap
 
 ### 管理頁面內容圖格 {#the-manage-page-content-tile}
 
-在AEM mobile中建立、更新和刪除內容的方式與在AEM Sites中執行相同。 「管 **理頁面內容圖格** 」會顯示受管理內容和上次修改的頁面數。 您可以按一下方塊中的每個記錄，深入鑽研內容以建立、複製、移動、刪除和更新頁面。 內容更新後，您可以透過「管理內容封裝」方塊，將內容更 **新推送給客戶。**
+在AEM Mobile中建立、更新和刪除內容的方式與在AEM Sites中執行相同。 「管 **理頁面內容圖格** 」會顯示受管理內容和上次修改的頁面數。 您可以按一下方塊中的每個記錄，深入鑽研內容以建立、複製、移動、刪除和更新頁面。 內容更新後，您可以透過「管理內容封裝」方塊，將內容更 **新推送給客戶。**
 
 ![內容圖格](assets/chlimage_1-138.png)
 
@@ -71,7 +74,7 @@ AEM Mobile Apps Catalog [(](http://localhost:4502/aem/apps.html/content/phonegap
 
 「內容套件」會針對每次更新建立ZIP檔案，視為「內容發行套件」。 這些套件包含在轉譯應用程式時產生的html資源和html頁面，而且智慧程度足以僅封裝自上次更新以來已修改的檔案。
 
-「管理內容封裝圖格」的 **Type** 」欄會顯示「App」，以表示應用程式殼層內容，例如由開發人員管理的應用程式架構或基礎架構，或「內容」，代表由內容作者管理的頁面內容。
+「管理內容封裝圖格」的 **Type** 」欄會顯示「App」，以表示應用程式殼層內容，例如由開發人員管理之應用程式的架構或基礎架構，或「內容」，代表由內容作者管理之頁面內容。
 
 內容可以表示為語言，或是應用程式使用多個內容發行套件的應用程式的特定部分。 您可選擇如何整合內容，其設計不但靈活而且完全符合您管理應用程式內容的方式。
 
@@ -91,7 +94,7 @@ AEM Mobile Apps Catalog [(](http://localhost:4502/aem/apps.html/content/phonegap
 
 ### PhoneGap Build圖格 {#the-phonegap-build-tile}
 
-PhoneGap Build Tile **與** https://build.phonegap.com連 [](https://build.phonegap.com) 接，以建立和代管遠端Buid。 建置完成後，您就可以下載或透過QR code直接將建置內容發佈至您的裝置。
+PhoneGap Build Tile **與** https://build.phonegap.com連 [](https://build.phonegap.com) 接，以建立和代管遠端Buid。 建置完成後，您就可以下載或透過QR Code直接將建置內容發佈至您的裝置。
 
 或者，您也可以下載裝置來源，透過 [PhoneGap CLI在本機建立](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html)。
 
@@ -105,7 +108,7 @@ PhoneGap Build Tile **與** https://build.phonegap.com連 [](https://build.phone
 >
 >如需詳 [細資訊，請參閱設定您的Adobe Mobile Services Cloud服務](/help/mobile/configure-adobe-mobile-cloud-service.md) 。
 
-AEM mobile透過 [Adobe Mobile Services SDK](https://www.adobe.com/ca/solutions/digital-marketing/mobile-services/app-sdk.html) (AMS)與Adobe Analytics整合。
+AEM Mobile透過 [Adobe Mobile Services SDK](https://www.adobe.com/ca/solutions/digital-marketing/mobile-services/app-sdk.html) (AMS)與Adobe Analytics整合。
 
 「控制中心 **量度」圖格** ，會顯示從AMS提取的應用程式摘要分析。 您可以按一下「...」深入分析控制面板 在右下角。
 
