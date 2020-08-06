@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e87c7379-28ed-4fda-aef1-970d2b54f30d
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 Forms服務可讓您建立互動式資料擷取用戶端應用程式，以驗證、處理、轉換和傳送通常在設計人員中建立的表單。 表單製作者會開發單一表單設計，Forms服務會以各種格式呈現：
 
-* 在Adobe reader或瀏覽器中以PDF格式顯示
+* 在Adobe Reader或瀏覽器中以PDF格式顯示
 * 在各種瀏覽器環境（包括相容的XHTML 1.0轉換）中以HTML格式顯示
-* 在支援Adobe Flash player的各種瀏覽器環境中當做表單指南。
+* 在支援Adobe Flash Player的各種瀏覽器環境中當做表單指南。
 
 如需Forms服務的詳細資訊，請參閱服 [務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
-使用管理控制台中的「表單」頁面，您可以設定Forms服務的行為。 這些設定適用於服務的所有調用。 任何透過AEM表單SDK傳送的參數都會覆寫管理控制台中設定的設定；但是，它們只影響到這一特定的援引。
+使用管理控制台中的「表單」頁面，您可以設定Forms服務的行為。 這些設定適用於服務的所有調用。 任何透過AEM表單SDK傳送的參數都會覆寫管理控制台中設定的設定； 但是，它們只影響到這一特定的援引。
 
 變更管理控制台中的「表單」設定後，按一下「儲存」。 您不需要重新啟動伺服器，更改才會生效。 不過，在設定快取模式設定時，您可能需要停止並重新啟動Forms服務。 (請參 [閱啟動和停止服務](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)。)
