@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +35,9 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 以下是一些常用的JSP EL示例，可用於您的通信管理解決方案：
 
-* 要添加兩個數字：${number1 + number2}
-* 串連兩個字串：${str1} ${str2}
-* 要比較兩個數字：${age &lt; 18}
+* 要添加兩個數字： ${number1 + number2}
+* 串連兩個字串： ${str1} ${str2}
+* 要比較兩個數字： ${age &lt; 18}
 
 您可以在 [JSP EL規範中找到詳細資訊](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)。 用戶端運算式管理器不支援JSP EL規格中的某些變數和函式，具體而言：
 
@@ -61,7 +64,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
    * 浮點
    * java.util.Calendar
    * java.util.Date
-   * java.util.list
+   * java.util.List
 
 ### 遠端功能 {#remote-function}
 
@@ -76,10 +79,10 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 1. 為OSGi服務定義一個介面，該介麵包含要導出以供「表達式管理器」使用的方法。
 1. 在介面A上宣告方法，並使用@ServiceMethod附註(com.adobe.exm.expeval.ServiceMethod)加以註解。 「運算式管理員」會忽略任何未加註的方法。 ServiceMethod批注具有以下可選屬性，也可以指定：
 
-   1. **啟用**:確定是否啟用此方法。 運算式管理員會忽略停用的方法。
-   1. **familyId**:指定方法的族（組）。 如果為空，則「表達式管理器」假定該方法屬於預設族。 沒有從中選擇函式的族（預設的族除外）的註冊表。 運算式管理器動態建立註冊表，方法是使用由各種組合導出的所有函式指定的所有族ID的聯合。 請確定他們在此處指定的ID是可讀的，因為它也會顯示在運算式製作使用者介面中。
-   1. **displayName**:函式的可人讀名稱。 此名稱用於製作使用者介面中的顯示用途。 如果為空，則表達式管理器使用函式的前置詞和local-name構建預設名稱。
-   1. **說明**:函式的詳細說明。 此說明用於編寫使用者介面中的顯示用途。 如果為空，則表達式管理器使用函式的前置詞和local-name構建預設說明。
+   1. **啟用**: 確定是否啟用此方法。 運算式管理員會忽略停用的方法。
+   1. **familyId**: 指定方法的族（組）。 如果為空，則「表達式管理器」假定該方法屬於預設族。 沒有從中選擇函式的族（預設的族除外）的註冊表。 運算式管理器動態建立註冊表，方法是使用由各種組合導出的所有函式指定的所有族ID的聯合。 請確定他們在此處指定的ID是可讀的，因為它也會顯示在運算式製作使用者介面中。
+   1. **displayName**: 函式的可人讀名稱。 此名稱用於製作使用者介面中的顯示用途。 如果為空，則表達式管理器使用函式的前置詞和local-name構建預設名稱。
+   1. **說明**: 函式的詳細說明。 此說明用於編寫使用者介面中的顯示用途。 如果為空，則表達式管理器使用函式的前置詞和local-name構建預設說明。
 
    ```java
    package mergeandfuse.com;
@@ -113,7 +116,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
    * 浮點
    * java.util.Calendar
    * java.util.Date
-   * java.util.list
+   * java.util.List
 
 
 1. 定義介面的實施、將其配置為OSGI服務並定義以下服務屬性：
