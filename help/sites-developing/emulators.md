@@ -12,6 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -91,7 +94,7 @@ AEM模擬器架構：
 
 * div的ID `cq-emulator-content` 代表裝置的檢視區／螢幕／內容區域，頁面內容位於此區域。
 
-新的CSS類別也會指派給新的模擬器div:它們表示當前模擬器的名稱。
+新的CSS類別也會指派給新的模擬器div: 它們表示當前模擬器的名稱。
 
 模擬器的外掛程式可進一步擴充指派的CSS類別清單，如旋轉外掛程式的範例，視目前裝置旋轉而插入「垂直」或「水準」類別。
 
@@ -137,18 +140,19 @@ AEM模擬器架構：
 
 1. 將屬 `sling:resourceSuperType` 性設為 `/libs/wcm/mobile/components/emulators/base`
 
-1. 定義CSS用戶端程式庫，其中包含模 `cq.wcm.mobile.emulator` 擬器外觀的類別：name = `css`, node type = `cq:ClientLibrary`
+1. 定義CSS用戶端程式庫，其中包含模 `cq.wcm.mobile.emulator` 擬器外觀的類別： name = `css`, node type = `cq:ClientLibrary`
 
    例如，您可以參考節點 `/libs/wcm/mobile/components/emulators/iPhone/css`
 
-1. 如有需要，請定義JS用戶端程式庫，例如定義特定外掛程式：name = js,node type = cq:ClientLibrary
+1. 如有需要，請定義JS用戶端程式庫，例如定義特定外掛程式： name = js,node type = cq:ClientLibrary
 
    例如，您可以參考節點 `/libs/wcm/mobile/components/emulators/base/js`
 
-1. 如果模擬器支援外掛程式定義的特定功能（如觸控捲動），請在模擬器下建立設定節點：name = `cq:emulatorConfig`, node type = `nt:unstructured` and add the property that defines plugin:
+1. 如果模擬器支援外掛程式定義的特定功能（如觸控捲動），請在模擬器下建立設定節點： name = `cq:emulatorConfig`, node type = `nt:unstructured` and add the property that defines plugin:
 
-   * 名稱= `canRotate`，類型= `Boolean`，值= `true`:以包含旋轉功能。
+   * 名稱= `canRotate`，類型= `Boolean`，值= `true`: 以包含旋轉功能。
 
-   * 名稱= `touchScrolling`，類型= `Boolean`，值= `true`:加入觸控捲動功能。
+   * 名稱= `touchScrolling`，類型= `Boolean`，值= `true`: 加入觸控捲動功能。
+
    您可定義自己的外掛程式，以新增更多功能。
 
