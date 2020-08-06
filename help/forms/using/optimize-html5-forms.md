@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ HTML5表格會以HTML5格式轉譯表格。 產生的輸出可能會大，視表
 
 本文介紹使用JBoss為Apache Web Server 2.0 32位啟用壓縮所需的步驟。
 
-*注意：以下說明不適用於Apache Web Server 2.0 32位元以外的伺服器。*
+*注意： 以下說明不適用於Apache Web Server 2.0 32位元以外的伺服器。*
 
 取得適用於您作業系統的Apache網路伺服器軟體：
 
