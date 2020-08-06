@@ -1,8 +1,8 @@
 ---
 title: AEM檔案服務概觀
 seo-title: AEM檔案服務概觀
-description: AEM Document services是一組OSGi Services，可用來建立、組合和保護PDF檔案。
-seo-description: AEM Document services是一組OSGi Services，可用來建立、組合和保護PDF檔案。
+description: AEM Document Services是一組OSGi Services，可用來建立、組合和保護PDF檔案。
+seo-description: AEM Document Services是一組OSGi Services，可用來建立、組合和保護PDF檔案。
 uuid: 17fd42ef-9950-4b51-9ae7-82e8b4759fe8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: document_services
 discoiquuid: 0685478b-d08e-4d69-8dd3-f75270772167
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '1420'
+ht-degree: 0%
 
 ---
 
 
 # AEM檔案服務概觀 {#overview-of-aem-document-services}
 
-AEM Document services是一組OSGi Services，可用來建立、組合和保護PDF檔案。 檔案服務包含下列服務：
+AEM Document Services是一組OSGi Services，可用來建立、組合和保護PDF檔案。 檔案服務包含下列服務：
 
 ## 輸出服務 {#output-service}
 
@@ -37,11 +40,11 @@ AEM Document services是一組OSGi Services，可用來建立、組合和保護P
 
 可使用下列四個輸出服務操作：
 
-* **generatePDFOuput**:將表單設計與資料合併，以產生PDF檔案
-* **generatePrintedOutput**:將表單設計與表單資料合併，以產生要傳送至雷射或標籤網路印表機的檔案
+* **generatePDFOuput**: 將表單設計與資料合併，以產生PDF檔案
+* **generatePrintedOutput**: 將表單設計與表單資料合併，以產生要傳送至雷射或標籤網路印表機的檔案
 
-* **generatePDFOutputBatch**:在單次呼叫中合併多個範本與多個資料記錄，以產生一批PDF檔案。 您也可以選擇將所有PDF組合，以產生單一PDF
-* **generatePrintedOutputBatch**:在單次呼叫中合併多個範本與多個資料記錄，以產生一批列印檔案(PS、PCL、ZPL、DPL、IPL、TPCL)。 您也可以選擇產生單一列印檔案。
+* **generatePDFOutputBatch**: 在單次呼叫中合併多個範本與多個資料記錄，以產生一批PDF檔案。 您也可以選擇將所有PDF組合，以產生單一PDF
+* **generatePrintedOutputBatch**: 在單次呼叫中合併多個範本與多個資料記錄，以產生一批列印檔案(PS、PCL、ZPL、DPL、IPL、TPCL)。 您也可以選擇產生單一列印檔案。
 
 ## Assembler Service {#assembler-service}
 
@@ -90,9 +93,9 @@ DDX文檔可以指定具有以下特徵的合成文檔：
 
 ## 檔案保證服務 {#doc-assurance-service}
 
-Doc Assurance service可協助您加密和解密檔案、以額外的使用權限擴充Adobe Reader的功能，並在檔案中新增數位簽章。 您的使用者可輕鬆與PDF表單和檔案互動，而您的組織可改善安全性、封存和合規性。
+Doc Assurance Service可協助您加密和解密檔案、以額外的使用權限擴充Adobe Reader的功能，並在檔案中新增數位簽章。 您的使用者可輕鬆與PDF表單和檔案互動，而您的組織可改善安全性、封存和合規性。
 
-Doc Assurance服務包含三項服務：簽名、加密和Reader擴充功能。
+Doc Assurance服務包含三項服務： 簽名、加密和Reader擴充功能。
 
 ### 簽名服務 {#signature-service}
 
@@ -110,7 +113,7 @@ Encryption服務可讓您加密和解密檔案。 當文檔加密時，其內容
 
 ### Reader Extension Service {#reader-extension-service}
 
-Reader Extensions服務可讓貴組織透過擴充Adobe Reader的功能及額外的使用權限，輕鬆分享互動式PDF檔案。 Reader Extensions服務可與Adobe Reader 7.0或更新版本搭配使用。 本服務新增PDF檔案的使用權。 此動作會啟動在使用Adobe reader開啟PDF檔案時通常無法使用的功能，例如新增註解至檔案、填寫表單以及儲存檔案。 協力廠商使用者不需要額外的軟體或增效模組，就能使用具版權的檔案。
+Reader Extensions服務可讓貴組織透過擴充Adobe Reader的功能及額外的使用權限，輕鬆分享互動式PDF檔案。 Reader Extensions服務可與Adobe Reader 7.0或更新版本搭配使用。 本服務新增PDF檔案的使用權。 此動作會啟動在使用Adobe Reader開啟PDF檔案時通常無法使用的功能，例如新增註解至檔案、填寫表單以及儲存檔案。 協力廠商使用者不需要額外的軟體或增效模組，就能使用具版權的檔案。
 
 當PDF檔案已新增適當的使用權限時，收件者可在Adobe Reader中進行下列活動：
 
@@ -129,4 +132,4 @@ Reader Extensions服務可讓貴組織透過擴充Adobe Reader的功能及額外
 
 ## 傳送至印表機服務 {#send-to-printer-service}
 
-Send To Printer service提供API，可將檔案傳送至指定的印表機以進行列印。
+Send To Printer Service提供API，可將檔案傳送至指定的印表機以進行列印。
