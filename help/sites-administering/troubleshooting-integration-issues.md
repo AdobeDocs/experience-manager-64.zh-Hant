@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 translation-type: tm+mt
 source-git-commit: a210d3bf80b7e7ec62c76a21f1cc2e71e986a4dc
+workflow-type: tm+mt
+source-wordcount: '1107'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ ${ myHtlVariable }
 
 ### 報告匯入工具會導致CPU/記憶體使用量高 {#the-report-importer-causes-high-cpu-memory-usage}
 
-報告匯入工具會導致CPU/記憶體使用量高或導致異常 `OutOfMemoryError` 情況。
+Report Importer會導致CPU/記憶體使用量高，或導致異常 `OutOfMemoryError` 情況。
 
 #### 解決方案 {#solution}
 
@@ -99,11 +102,11 @@ DTM [指令碼標籤未正確包含在頁面中，即使頁面屬性「雲端服
 * 重新發佈 `/etc/cloudservices/dynamictagmanagement`
 * 檢查上的ACL `/etc/cloudservices`。 ACL應為：
 
-   * 允許；jcr:read;webservice-support-servicelibfinder
-   * 允許；jcr:read;每個人；rep:glob:&amp;ast;/defaults/&amp;ast;
-   * 允許；jcr:read;每個人；rep:glob:&amp;ast;/defaults
-   * 允許；jcr:read;每個人；rep:glob:&amp;ast;/public/&amp;ast;
-   * 允許；jcr:read;每個人；rep:glob:&amp;ast;/public
+   * 允許； jcr:read; webservice-support-servicelibfinder
+   * 允許； jcr:read; 每個人； rep:glob:&amp;ast;/defaults/&amp;ast;
+   * 允許； jcr:read; 每個人； rep:glob:&amp;ast;/defaults
+   * 允許； jcr:read; 每個人； rep:glob:&amp;ast;/public/&amp;ast;
+   * 允許； jcr:read; 每個人； rep:glob:&amp;ast;/public
 
 有關管理ACL的詳細資訊，請閱 [讀User Administration and Security](/help/sites-administering/security.md#permissions-in-aem) （用戶管理和安全）頁。
 
@@ -190,7 +193,7 @@ adobe.target.getOffer({
 
 ### 「目標與設定」頁面不會顯示「報表來源」區段 {#the-goals-settings-page-does-not-show-the-reporting-sources-section}
 
-此問題很可能是 [A4T Analytics cloud設定布建問題](/help/sites-administering/target-configuring.md) 。
+此問題很可能是 [A4T Analytics Cloud設定布建問題](/help/sites-administering/target-configuring.md) 。
 
 #### 解決方案 {#solution-7}
 
