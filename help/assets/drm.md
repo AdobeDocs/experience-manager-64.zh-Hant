@@ -114,7 +114,7 @@ To enable the [!DNL Assets] console to display the referencing compound assets a
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. 從工具 **[!UICONTROL 列按一下]** 「發佈」。 如果您在工具列上未看 **到** 「發佈」，請按一下工具列上的「更多 **[!UICONTROL 」，然後找出「]** 發佈 **** 」選項。
+1. Click **[!UICONTROL Publish]** from the toolbar. 如果您在工具列上未看 **到** 「發佈」，請按一下工具列上的「更多 **[!UICONTROL 」，然後找出「]** 發佈 **** 」選項。
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
