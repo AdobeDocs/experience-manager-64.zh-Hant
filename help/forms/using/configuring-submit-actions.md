@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 translation-type: tm+mt
 source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
 
 您可以在側欄中「最適化表單容 **[!UICONTROL 器]** 」屬性的「提交」區段中設定提交動作。
 
-![](assets/thank-you-setting.png) 配置提交操作&#x200B;****&#x200B;圖：設 *定提交動作*
+![配置提交操作](assets/thank-you-setting.png)**圖：** *設定提交動作*
 
 最適化表單的預設提交動作包括：
 
@@ -45,7 +48,7 @@ source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
 
 >[!CAUTION]
 >
->如果您以 [XML](/help/forms/using/prepopulate-adaptive-form-fields.md) 或JSON資料來預先填寫表單範本、表單資料模型或架構式最適化表單，並抱怨資料不包含&lt;afData>、&lt;afBoundData>和&lt;/afUnboundData>標籤的架構（XML架構、JSON架構、表單範本或表單資料模型），則會填入無界欄位的資料(UnbounboundedData>有界欄位是沒有bindref屬 [性的自適應表單欄位](/help/forms/using/prepopulate-adaptive-form-fields.md) )。
+>如果您以 [XML](/help/forms/using/prepopulate-adaptive-form-fields.md) 或JSON資料來預先填寫表單範本、表單資料模型或架構式最適化表單，並抱怨資料不包含&lt;afData>、&lt;afBoundData>和&lt;/afUnboundData>標籤的架構（XML架構、JSON架構、表單範本或表單資料模型），則會填入無界欄位的資料(UnbounboundDated有界欄位是沒有bindref屬 [性的自適應表單欄位](/help/forms/using/prepopulate-adaptive-form-fields.md) )。
 
 您可以撰寫自訂的提交動作，讓最適化表單符合使用案例。 如需詳細資訊，請參 [閱撰寫最適化表單的自訂提交動作](/help/forms/using/custom-submit-action-form.md)。
 
@@ -66,7 +69,7 @@ source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
 >[!NOTE]
 若要將欄位傳遞為REST URL中的參數，所有欄位都必須有不同的元素名稱，即使欄位放在不同的面板上亦然。
 
-### 將提交的資料張貼至資源或外部休息端點 {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### 將提交的資料張貼至資源或外部休息端點  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 使用「 **[!UICONTROL 提交到REST端點]** 」(Submit to REST Endpoint)操作，將提交的資料發佈到其餘URL。 URL可以是內部（轉譯表單的伺服器）或外部伺服器。
 
@@ -100,7 +103,7 @@ source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
 
 「透 **[!UICONTROL 過電子郵件傳送PDF]** 」提交動作會在表單提交成功時，以包含表單資料的PDF傳送電子郵件給一或多個收件者。
 
-**** 注意：此提 *交動作適用於具有記錄檔案範本的XFA型調適性表單和XSD型適應性表單。*
+**注意：** *此提交操作適用於具有記錄文檔模板的基於XFA的適應性表單和基於XSD的適應性表單。*
 
 ## Invoke a forms workflow {#invoke-a-forms-workflow}
 
@@ -130,7 +133,7 @@ source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
 
 ## Adaptive Form中的伺服器端重新驗證 {#server-side-revalidation-in-adaptive-form}
 
-通常，在任何線上資料擷取系統中，開發人員會在用戶端放置一些JavaScript驗證，以強制執行一些業務規則。 但是在現代瀏覽器中，使用者可以略過這些驗證，並使用各種技術（例如Web Browser devTools Console）手動進行提交。 這些技術也適用於適應性表單。 表單開發人員可以建立各種驗證邏輯，但技術上來說，使用者可以略過這些驗證邏輯，並將無效的資料送出至伺服器。 無效的資料會中斷表單作者已強制執行的業務規則。
+通常，在任何線上資料擷取系統中，開發人員會在用戶端放置一些JavaScript驗證，以強制執行一些業務規則。 但是在現代瀏覽器中，使用者可以略過這些驗證，並使用各種技術手動進行提交，例如Web Browser DevTools Console。 這些技術也適用於適應性表單。 表單開發人員可以建立各種驗證邏輯，但技術上來說，使用者可以略過這些驗證邏輯，並將無效的資料送出至伺服器。 無效的資料會中斷表單作者已強制執行的業務規則。
 
 伺服器端重新驗證功能也提供執行最適化表單作者在伺服器上設計最適化表單時所提供驗證的功能。 它可防止在表單驗證中呈現的資料提交和違反業務規則的行為受到任何可能的危害。
 
@@ -146,15 +149,15 @@ source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
 
 使用側 **欄中Adaptive Form Container下的Revalidate on server** （在伺服器上重新驗證），以啟用或停用目前表單的伺服器端驗證。
 
-![](assets/revalidate-on-server.png) 啟用伺服器端驗證&#x200B;****&#x200B;圖：啟 *用伺服器端驗證*
+![啟用伺服器端驗證](assets/revalidate-on-server.png)**圖：** *啟用伺服器端驗證*
 
 如果使用者略過這些驗證並送出表單，伺服器會再次執行驗證。 如果驗證在伺服器端失敗，則會停止提交交易。 最終用戶再次呈現原始形式。 擷取的資料和提交的資料會以錯誤呈現給使用者。
 
 ### 支援驗證運算式中的自訂函式 {#supporting-custom-functions-in-validation-expressions-br}
 
-有時，如果是複雜的驗 **證規則**，完全的驗證指令碼會駐留在自訂函式中，而作者會從欄位驗證運算式呼叫這些自訂函式。 若要讓此自訂函式館在執行伺服器端驗證時已知可用，表單作者可在「Adaptive Form Container」屬性的「 **[!UICONTROL Basic]** 」（基本）標籤下設定AEM用戶端程式庫的名稱，如下所示。
+有時，如果是複雜的驗 **證規則**，完全的驗證指令碼會駐留在自訂函式中，作者會從欄位驗證運算式呼叫這些自訂函式。 若要讓此自訂函式館在執行伺服器端驗證時已知可用，表單作者可在「Adaptive Form Container」屬性的「 **[!UICONTROL Basic]** 」（基本）標籤下設定AEM用戶端程式庫的名稱，如下所示。
 
-![](assets/clientlib-cat.png) 支援驗證運算式中的自訂&#x200B;****&#x200B;函式：在驗 *證運算式中支援自訂函式*
+![支援驗證運算式中的自訂](assets/clientlib-cat.png)**函式：** *支援驗證運算式中的自訂函式*
 
 作者可依最適化表單設定自訂javascript程式庫。 在程式庫中，僅保留可重複使用的函式，而這些函式依賴於jquery和undershore.js協力廠商程式庫。
 
