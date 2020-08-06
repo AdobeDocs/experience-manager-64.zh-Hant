@@ -489,7 +489,7 @@ The owns `CommerceSession` the three elements:
 
 * 訂單通常需要提供多種運送選項（和價格）。
 * 價格可能根據訂單的項目和詳細資訊，例如重量和／或交貨地址。
-* The `CommerceSession` has access to all the dependiences, so the it can as simaly as approduct pricing:
+* The `CommerceSession` has access to all the dependiences, so the it can be as as simaly as product pricing:
 
    * 該公司 `CommerceSession` 擁有運費定價。
    * 可使用 `updateOrder(Map<String, Object> delta)`
@@ -534,7 +534,7 @@ The owns `CommerceSession` the three elements:
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-這可使用搜尋API來查詢選取的商務引擎(請參閱 [電子商務引擎選擇](#ecommerce-engine-selection)):
+這會利用搜尋API來查詢選取的商務引擎(請參閱 [電子商務引擎選擇](#ecommerce-engine-selection)):
 
 #### 搜尋API {#search-api}
 
