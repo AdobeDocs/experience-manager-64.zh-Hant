@@ -1,6 +1,6 @@
 ---
-title: 表單使用者管理|處理使用者資料
-seo-title: 表單使用者管理|處理使用者資料
+title: 表單使用者管理 |處理使用者資料
+seo-title: 表單使用者管理 |處理使用者資料
 description: 'null'
 seo-description: 'null'
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
@@ -9,25 +9,28 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 0%
 
 ---
 
 
-# 表單使用者管理|處理使用者資料 {#forms-user-management-handling-user-data}
+# 表單使用者管理 |處理使用者資料 {#forms-user-management-handling-user-data}
 
 使用者管理是AEM Forms JEE元件，可讓AEM Forms使用者建立、管理和授權存取AEM Forms。 用戶管理使用域作為獲取用戶資訊的目錄。 支援下列網域類型：
 
-**本機網域**:此類域未連接到第三方儲存系統。 使用者和群組會建立在本機，並位於使用者管理資料庫中。 密碼會儲存在本機，驗證會使用本機資料庫完成。
+**本機網域**: 此類域未連接到第三方儲存系統。 使用者和群組會建立在本機，並位於使用者管理資料庫中。 密碼會儲存在本機，驗證會使用本機資料庫完成。
 
-**混合網域**:此類域未連接到第三方儲存系統。 使用者和群組會建立在本機，並位於使用者管理資料庫中。 與本地域不同，混合域使用外部驗證提供程式，該提供程式可以是LDAP、Kerberos、SAML或自定義驗證提供程式。
+**混合網域**: 此類域未連接到第三方儲存系統。 使用者和群組會建立在本機，並位於使用者管理資料庫中。 與本地域不同，混合域使用外部驗證提供程式，該提供程式可以是LDAP、Kerberos、SAML或自定義驗證提供程式。
 
-**企業網域**:由駐留在第三方儲存系統（如LDAP目錄）中的用戶和組組成。 用戶管理不寫入第三方儲存系統。 使用者管理會改為將使用者和群組資訊與使用者管理資料庫同步。 企業網域也使用外部驗證提供者，可以是LDAP、Kerberos、SAML或自訂驗證提供者。
+**企業網域**: 由駐留在第三方儲存系統（如LDAP目錄）中的用戶和組組成。 用戶管理不寫入第三方儲存系統。 使用者管理會改為將使用者和群組資訊與使用者管理資料庫同步。 企業網域也使用外部驗證提供者，可以是LDAP、Kerberos、SAML或自訂驗證提供者。
 
 <!-- Fix broken links For more information about how user management works and configured, see AEM Forms JEE administration help. -->
 
 ## 使用者資料與資料儲存 {#user-data-and-data-stores}
 
-用戶管理將用戶資料儲存在資料庫中，如My Sql 、 Oracle 、 MS SQL server和IBM DB2。 此外，任何已在AEM作者的Forms應用程式中至少登入一次的使用者， `https://[*server*]:[*host*]/lc`都會在AEM儲存庫中建立使用者。 因此，用戶管理儲存在以下資料儲存中：
+用戶管理將用戶資料儲存在資料庫中，如My Sql 、 Oracle 、 MS SQL Server和IBM DB2。 此外，任何已在AEM作者的Forms應用程式中至少登入一次的使用者， `https://[*server*]:[*host*]/lc`都會在AEM儲存庫中建立使用者。 因此，用戶管理儲存在以下資料儲存中：
 
 * 資料庫
 * AEM存放庫
@@ -122,6 +125,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
    >
    >
 * Replace `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
+
 >
 
 
