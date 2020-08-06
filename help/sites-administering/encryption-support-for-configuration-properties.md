@@ -11,6 +11,9 @@ topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 0%
 
 ---
 
@@ -45,11 +48,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. 從步驟#5複製受保護的文字，並貼入OSGI表單值。 在此示例中，加密的 **SMTP密碼將添加到** Day CQ mail服務中 **。
+1. 從步驟#5複製受保護的文字，並貼入OSGI表單值。 在此示例中，加密的 **SMTP密碼將添加到** Day CQ Mail服務中 **。
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 
-1. 保存Day CQ mail服務屬性。 SMTP密碼現在將作為加密值發送。
+1. 保存Day CQ Mail服務屬性。 SMTP密碼現在將作為加密值發送。
 
 ## 解密支援 {#decryption-support}
 
