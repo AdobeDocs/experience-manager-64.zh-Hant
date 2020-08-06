@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 219dd379-5bc9-40b0-bdc2-2fb347da29d8
 translation-type: tm+mt
 source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
 
 ## 配置元件 {#configuring-the-component}
 
-「草稿與提交」元件有兩個標籤：草稿和提交。
+「草稿與提交」元件有兩個標籤： 草稿和提交。
 
 若要啟用提交最適化表單以顯示在提交標籤中，請將「提交」動 **作設為****[表單入口網站提交動作](/help/forms/using/configuring-submit-actions.md)。**或者，啟用「表單入口網站提交」選項。 每當使用者提交表格時，表格就會新增至提交標籤。
 
@@ -60,7 +63,7 @@ source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
   <tr>
    <td> </td>
    <td>顯示選項</td>
-   <td><p>指定要顯示的頁籤。 您可以選擇顯示草稿表單、提交表單或兩者。 </p> <p><strong></strong> 注意<em>:對於 <strong>顯示選項</strong>，如果您選擇「兩者」以外的選項 <strong>，則不</strong>會使用「預設標籤 <strong></strong> 」欄位選項。</em></p> </td>
+   <td><p>指定要顯示的頁籤。 您可以選擇顯示草稿表單、提交表單或兩者。 </p> <p><strong>注意</strong>:<em> 對於 <strong>顯示選項</strong>，如果您選擇「兩者」以外的選項 <strong>，則不</strong>會使用「預設標籤 <strong></strong> 」欄位選項。</em></p> </td>
   </tr>
   <tr>
    <td> </td>
@@ -75,7 +78,7 @@ source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
   <tr>
    <td> </td>
    <td>版面範本</td>
-   <td><p>指定用於「草稿表單」清單的佈局。</p> <p><strong></strong> 注意：請勿使用「預設值（已過時）」選項。<br /> </p> </td>
+   <td><p>指定用於「草稿表單」清單的佈局。</p> <p><strong>注意：</strong> 請勿使用「預設值（已過時）」選項。<br /> </p> </td>
   </tr>
   <tr>
    <td>已提交表單標籤配置</td>
