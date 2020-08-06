@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '378'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
 
 ## 變更範本的內容原則 {#changing-the-content-policy-of-a-template}
 
-建立模板時，該模板將在內容儲存庫 `/conf` 中建立。 根據您在目錄中建立的檔案 `/conf` 夾，模板的路徑為： `/conf/<your-folder>/settings/wcm/templates/<your-template>`。
+建立模板時，該模板將在內容儲存庫 `/conf` 中建立。 根據您在目錄中建立的檔案 `/conf` 夾，模板的路徑為： `/conf/<your-folder>/settings/wcm/templates/<your-template>`.
 
 請執行下列步驟，根據範本的內容原則，在側欄中顯示元件：
 
