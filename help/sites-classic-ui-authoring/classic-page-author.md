@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 translation-type: tm+mt
 source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -31,13 +34,13 @@ source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
 
 * **拖放元件**（例如文字、影像）和數位資產（例如影像）只要將它們拖放至所需位置，就可放在頁面上。
 
-* **編輯**：一旦定位在您的頁面上，就可以開啟元件特定的對話方塊，以輸入內容和／或設定該元件的特性（例如影像大小）。
+* **編輯**：一旦定位在您的頁面上，就可開啟元件特定對話方塊，以輸入內容和／或設定該元件的特性（例如影像大小）。
 
 * **就地編輯**&#x200B;文字和影像元件可直接在網頁上編輯，毋需開啟對話方塊或明確的儲存動作。
 
 * **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**顯示在可編輯頁面上的浮動「偵測器」視窗。 您可從這裡將新元件拖曳至頁面，並執行頁面特定動作。
 
-* **[內容搜尋](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**器在每個可授權頁面的左側，內容搜尋器可讓您快速存取各種資產，包括數位資產（例如其他影像、Flash元素和檔案）、其他頁面和段落。 這些項目可拖曳至頁面；例如定位資產或建立其他頁面的連結。
+* **[內容搜尋](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**器在每個可授權頁面的左側，內容搜尋器可讓您快速存取各種資產，包括數位資產（例如其他影像、Flash元素和檔案）、其他頁面和段落。 這些項目可拖曳至頁面； 例如定位資產或建立其他頁面的連結。
 
 * **內容功能表**：在螢幕上大部分的元素（例如，頁面上的段落）上按一下滑鼠右鍵，可開啟包含適當動作選項的內容功能表。
 
