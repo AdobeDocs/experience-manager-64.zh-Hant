@@ -171,7 +171,7 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 
 1. 前往 `https://[host]:[port]/system/console/bundles`. 如有必要，請以管理員身份登錄。
 
-1. 找到Adobe Asset Composer Building Block套件。 重新啟動套件： 按一下「停止」，然後按一下「開始」。
+1. 找到Adobe Asset Composer建置區塊套件。 重新啟動套件： 按一下「停止」，然後按一下「開始」。
 
    ![Adobe Asset Composer建置區塊](assets/6_assetcomposerbuildingblockbundle.png)
 
@@ -337,7 +337,7 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 
 >[!NOTE]
 >
->只有在您處於「OSGI設定」中，且要實施的自訂類型需要LC整合時，才需要此步驟。
+>只有當您處於「OSGI設定」中，且您所實作的自訂類型需要LC整合時，才需要此步驟。
 
 LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入憑證。
 
