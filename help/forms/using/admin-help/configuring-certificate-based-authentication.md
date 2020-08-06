@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '747'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 ## 導入CA證書 {#import-the-ca-certificate}
 
-匯入憑證時，請選取「信任認證」和「信任身分」選項，以及您需要的任何其他選項。 有關導入證書的詳細資訊，請參 [閱管理證書](/help/forms/using/admin-help/certificates.md#managing-certificates)。
+匯入憑證時，請選取「信任認證」和「信任身分」選項，以及您需要的任何其他選項。 如需匯入憑證的詳細資訊，請參 [閱管理憑證](/help/forms/using/admin-help/certificates.md#managing-certificates)。
 
 ## 配置證書映射 {#configuring-certificate-mapping}
 
@@ -46,7 +49,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 1. 按一下「新建證書映射」，然後在「發行者」清單中，選擇信任儲存管理中配置的證書別名。
 1. 將憑證的其中一個屬性對應至使用者的屬性。 例如，您可以將憑證的公用名稱對應至使用者的登入ID。
 
-   如果憑證中屬性的內容與使用者管理資料庫中使用者屬性的內容不同，您可以使用Java規則運算式(regex)來比對這兩個屬性。 例如，如果憑證的公用名稱是 *Alex Pink(Authentication)* 和 *Alex Pink(Signing)，而使用者管理資料庫的公用名稱是* Alex Pink *，則您會使用regex來擷取憑證屬性(在此範例中為*** Alex Pink)的必要部分。您指定的規則運算式必須符合Java regex規範。
+   如果憑證中屬性的內容與使用者管理資料庫中使用者屬性的內容不同，您可以使用Java規則運算式(regex)來比對這兩個屬性。 例如，如果憑證的公用名稱是 *Alex Pink(Authentication)* 和 *Alex Pink(Signing)，而使用者管理資料庫的公用名稱是* Alex Pink *，則您會使用regex來擷取憑證屬性(在此範例中為*** Alex Pink)的必要部分。 您指定的規則運算式必須符合Java regex規範。
 
    可以通過在「自定義順序」框中指定組的順序來轉換表達式。 自訂順序會與方法一起 `java.util.regex.Matcher.replaceAll()` 使用。 所看到的行為將對應該方法的行為，且必須相應地指定輸入字串（自訂順序）。
 
@@ -55,29 +58,30 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
    您可以在regex中使用下列字元：
 
    * .（任何字元）
-   * &amp;ast;（0次或多次）
+   * &amp;ast; （0次或多次）
    * ()（以方括弧指定群組）
    * \（用於將regex字元逸出為規則字元）
    * $n（用於指第n個群組）
+
    規則運算式範例：
 
    * 從「Alex Pink（驗證）」摘取「Alex Pink」
 
-      **** Regex:。&amp;ast;)\（驗證\）
+      **Regex:** 。&amp;ast;)\（驗證\）
 
    * 從「Alex(Authentication)Pink」摘取「Alex Pink」
 
-      **** Regex:。&amp;ast;)\（驗證\）(.&amp;ast;)
+      **Regex:** 。&amp;ast;)\（驗證\）(.&amp;ast;)
 
    * 從「Alex(Authentication)Pink」摘取「Pink Alex」
 
-      **** Regex:。&amp;ast;)\（驗證\）(.&amp;ast;)
+      **Regex:** 。&amp;ast;)\（驗證\）(.&amp;ast;)
 
-      自訂順序：$2 $1（返回第二組，串連到第一組，由空白字元擷取）
+      自訂順序： $2 $1（返回第二組，串連到第一組，由空白字元擷取）
 
    * 要從「smtp:apink@sampleorg.com」中提取「apink@sampleorg.com」
 
-      **** Regex:smtp:(.&amp;ast;)
+      **Regex:** smtp:(.&amp;ast;)
    如需使用規則運算式的詳細資訊，請參 [閱有關規則運算式的Java教學課程](https://java.sun.com/docs/books/tutorial/essential/regex/)。
 
 1. 在「網域」清單中，選取使用者的網域。
