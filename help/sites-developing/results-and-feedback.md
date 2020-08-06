@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 0%
 
 ---
 
 
 # 追蹤結果並提供意見回應{#tracking-results-and-providing-feedback}
 
-您可自行決定如何定義測試案例以及產生的測試計畫；有許多工具可供使用。
+您可自行決定如何定義測試案例以及產生的測試計畫； 有許多工具可供使用。
 
 不過，不論您選擇的方法或工具為何，都會儲存下列資訊：
 
