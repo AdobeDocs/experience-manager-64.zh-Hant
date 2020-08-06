@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 10%
 
 ---
 
@@ -46,6 +49,7 @@ We.Retail中的所有頁面都以可編輯的範本為基礎，讓非開發人�
    * 選擇現有策略或為容器建立新策略
    * 選取容器中允許的元件
    * 定義資產拖曳至容器時要放置的預設元件
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
 1. 回到範本編輯器中，您可以編輯版面容器中文字元件的原則。
@@ -59,6 +63,7 @@ We.Retail中的所有頁面都以可編輯的範本為基礎，讓非開發人�
       * 格式選項
       * 允許的段落樣式
       * 允許的特殊字元
+
    許多以核心元件為基礎的元件都允許透過可編輯的範本，在元件層級設定選項，讓開發人員不再需要自訂。
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
@@ -71,5 +76,5 @@ We.Retail中的所有頁面都以可編輯的範本為基礎，讓非開發人�
 
 如需詳細資訊，請參閱製作檔案 [Creating Page Templates](/help/sites-authoring/templates.md) （建立頁面範本）或開發人員檔案Page [Templates - Editable](/help/sites-developing/page-templates-editable.md) （頁面範本——可編輯），以取得可編輯範本的完整技術詳細資訊。
 
-您也可能希望調查核 [心元件](/help/sites-developing/we-retail-core-components.md)。 如需核心元件功能 [的概觀](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) ，請參閱編寫檔案核心元件，如需技術概觀，請參閱開發人員檔案 [開發核心元件](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 。
+您也可能希望調查核 [心元件](/help/sites-developing/we-retail-core-components.md)。 如需核心元件功能 [的概觀](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) ，請參閱編寫檔案核心元件，如需技術概觀，請參閱開發人員檔案 [開發核心元件](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) 。
 
