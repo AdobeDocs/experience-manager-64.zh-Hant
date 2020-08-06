@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 translation-type: tm+mt
 source-git-commit: 1790238e4733ca67c59234641d228e44a3d3ac3b
+workflow-type: tm+mt
+source-wordcount: '1812'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 1790238e4733ca67c59234641d228e44a3d3ac3b
 
 Forms服務也可以解決連結內容在表單設計中的位置。 例如，從表單設計中參考的連結影像是相對URL。 連結的內容一律假設是與表單設計位置相關。 因此，解析連結內容是透過將相對路徑套用至絕對表單設計位置來決定其位置的問題。
 
-您可以按值傳遞表單設計，而不是參照傳遞表單設計。 當動態建立表單設計時，以值傳遞表單設計是有效率的；也就是說，當用戶端應用程式產生XML，並在執行時期建立表單設計時。 在這種情況下，表單設計不會儲存在物理儲存庫中，因為它儲存在記憶體中。 在執行時期動態建立表單設計並依值傳遞時，您可以快取表單並改善Forms服務的效能。
+您可以按值傳遞表單設計，而不是參照傳遞表單設計。 當動態建立表單設計時，以值傳遞表單設計是有效率的； 也就是說，當用戶端應用程式產生XML，並在執行時期建立表單設計時。 在這種情況下，表單設計不會儲存在物理儲存庫中，因為它儲存在記憶體中。 在執行時期動態建立表單設計並依值傳遞時，您可以快取表單並改善Forms服務的效能。
 
 **依值傳遞表格的限制**
 
@@ -123,7 +126,8 @@ Forms服務也可以解決連結內容在表單設計中的位置。 例如，�
    * 存 `PDFFormRenderSpec` 儲運行時選項的對象。 此為可選參數，您可以指 `null` 定是否不想指定執行時選項。
    * 包 `URLSpec` 含Forms服務所需URI值的對象。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
-   該方 `renderPDFForm` 法返回包 `FormsResult` 含表單資料流的對象，該表單資料流可以寫入客戶端Web瀏覽器。
+
+   該方 `renderPDFForm` 法返回包 `FormsResult` 含可寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
 
@@ -140,7 +144,7 @@ Forms服務也可以解決連結內容在表單設計中的位置。 例如，�
 
 [依值轉換表單](/help/forms/developing/rendering-forms.md)
 
-[快速入門（SOAP模式）:使用Java API依值演算](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API依值演算](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -180,6 +184,7 @@ Forms服務也可以解決連結內容在表單設計中的位置。 例如，�
    * 由方 `javax.xml.rpc.holders.LongHolder` 法填充的空對象。 （此引數會儲存表單中的頁數。）
    * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空對象。 （此引數儲存地區值。）
    * 包含 `com.adobe.idp.services.holders.FormsResultHolder` 此操作結果的空對象。
+
    該方 `renderPDFForm` 法用必 `com.adobe.idp.services.holders.FormsResultHolder` 須寫入客戶端Web瀏覽器的表單資料流填充作為最後一個參數值傳遞的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
