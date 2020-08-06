@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1573'
+ht-degree: 0%
 
 ---
 
@@ -53,15 +56,15 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
    備份作者和發佈實例時，請考慮以下幾點：
 
    * 請確定作者和發佈實例的備份已同步，以便同時啟動。雖然在執行備份時可以繼續使用作者和發佈實例，但建議您不要在備份期間發佈任何資產，以避免任何未捕獲的更改。 等待作者和發佈例項的備份結束，再發佈新資產。
-   * 完整的「作者」節點備份包括Forms manager和AEM Forms Workspace資料的備份。
+   * 完整的「作者」節點備份包括Forms Manager和AEM Forms Workspace資料的備份。
    * 工作台開發人員可繼續在本機處理其程式。 在備份階段，他們不應部署任何新進程。
    * 決定每個備份作業長度（用於滾動備份模式）時，應以備份AEM表單中所有資料（DB、GDS、AEM儲存庫和任何其他自訂資料）所花的總時間為準。
 
-您應備份AEM表單資料庫，包括任何交易記錄檔。 (請參 [閱AEM表單資料庫](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。)如需詳細資訊，請參閱您資料庫的適當知識庫文章：
+您應備份AEM表單資料庫，包括任何交易記錄檔。 (請參 [閱AEM表單資料庫](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。) 如需詳細資訊，請參閱您資料庫的適當知識庫文章：
 
 * [Oracle Backup and Recovery for AEM forms](https://www.adobe.com/go/kb403624)
 * [AEM表單的MySQL備份和恢復](https://www.adobe.com/go/kb403625)
-* [適用於AEM表單的Microsoft SQL server備份和恢復](https://www.adobe.com/go/kb403623)
+* [適用於AEM表單的Microsoft SQL Server備份和恢復](https://www.adobe.com/go/kb403623)
 * [AEM表單的DB2備份和恢復](https://www.adobe.com/go/kb403626)
 
 這些文章為資料備份和恢復提供了基本資料庫功能的指導。 它們不是作為特定供應商資料庫備份和恢復功能的全面性技術指南。 它們概述為您的AEM表單應用程式資料建立可靠資料庫備份策略所需的命令。
@@ -72,7 +75,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 ### 進入備份模式 {#entering-the-backup-modes}
 
-您可以使用管理控制台、LCBackupMode命令或AEM表單安裝隨附的API來輸入和離開備份模式。 請注意，對於滾動備份（連續覆蓋），管理控制台選項不可用；您應使用命令行選項或API。 <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
+您可以使用管理控制台、LCBackupMode命令或AEM表單安裝隨附的API來輸入和離開備份模式。 請注意，對於滾動備份（連續覆蓋），管理控制台選項不可用； 您應使用命令行選項或API。 <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM forms API Reference on Help and Tutorials page. -->
 
 >[!NOTE]
 >
@@ -95,8 +98,9 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 1. 視您的作業系統而定，編 `LCBackupMode.cmd` 輯或 `LCBackupMode.sh` 指令碼以提供適合您系統的預設值。
 1. 在命令提示符下，在單行上運行以下命令：
 
-   * (Windows)主機名稱 `LCBackupMode.cmd enter [-Host=`**主機名稱`] [-port=`*,Portnumber用戶名* 稱密 `] [-user=`*碼Label *Name(`] [-password=`**`] [-label=`**`] [-timeout=`** 秒) `]`
-   * (Linux, UNIX)埠 `LCBackupMode.sh enter [-host=`*號&#x200B;*`] [-port=`*主機* 名 `] [-user=`*稱&#x200B;*用`] [-password=`*戶名Password*`] [-label=`*Labelname *密碼`]`
+   * (Windows)主機名稱主機名 `LCBackupMode.cmd enter [-Host=`*,*用戶名`] [-port=`** portnumber `] [-user=`*password *`] [-password=`**`] [-label=`**`] [-timeout=`*Labelname（秒）* `]`
+   * (Linux, UNIX)埠 `LCBackupMode.sh enter [-host=`*號&#x200B;*`] [-port=`*主機名* 稱 `] [-user=`**用`] [-password=`*戶名* 稱密碼 `] [-label=`*Labelname *`]`
+
    在上面的命令中，佔位符的定義如下：
 
    `Host` 是執行AEM表單的主機名稱。
@@ -119,7 +123,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 **保持安全備份模式（快照模式）**
 
-若要使用Administration console將AEM表單帶出安全備份模式（快照模式），請執行下列工作。
+若要使用Administration Console將AEM表單帶出安全備份模式（快照模式），請執行下列工作。
 
 1. 登入管理控制台。
 1. 按一下「設定」>「核心繫統設定」>「備份實用程式」。
@@ -138,8 +142,8 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 1. 在單行上運行以下命令：
 
-   * (Windows)主機名稱主機名 `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*,*埠號`] [-port=`** , `] [-user=`*用&#x200B;*戶`] [-password=`** 名密碼 `]`
-   * (Linux, UNIX)埠號 `LCBackupMode.sh leaveContinuousCoverage [-Host=`*主機&#x200B;*名`] [-port=`*稱*`] [-user=`*,*密`] [-password=`*碼* 碼A `]`
+   * (Windows)主機名 `LCBackupMode.cmd leaveContinuousCoverage [-Host=`*稱&#x200B;*`] [-port=`*埠號*`] [-user=`**用戶名`] [-password=`*密碼* `]`
+   * (Linux, UNIX)主機名 `LCBackupMode.sh leaveContinuousCoverage [-Host=`*稱&#x200B;*`] [-port=`*埠號*`] [-user=`**用戶名`] [-password=`*口令* `]`
 
       在上面的命令中，佔位符的定義如下：
 
