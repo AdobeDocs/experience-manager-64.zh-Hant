@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
 source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+workflow-type: tm+mt
+source-wordcount: '6191'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 **瞭解驗證程式**
 
-使用者管理提供內建的驗證功能，也讓您能夠將它與您自己的驗證提供者連接。 當「使用者管理」收到驗證要求（例如，使用者嘗試登入）時，會將使用者資訊傳遞給驗證提供者以進行驗證。 使用者管理會在驗證使用者後，從驗證提供者接收結果。
+使用者管理提供內建的驗證功能，也讓您能夠將它與您自己的驗證提供者連接。 當使用者管理收到驗證要求（例如，使用者嘗試登入）時，會將使用者資訊傳遞給驗證提供者以進行驗證。 使用者管理會在驗證使用者後，從驗證提供者接收結果。
 
 下圖顯示嘗試登入的一般使用者、使用者管理與驗證提供者之間的互動。
 
@@ -86,7 +89,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 **瞭解目錄管理**
 
-用戶管理與支援到LDAP目錄的連接的目錄服務提供程式(DirectoryManagerService)一起打包。 如果您的組織使用非LDAP儲存庫來儲存用戶記錄，則可以建立與儲存庫一起使用的自己的目錄服務提供程式。
+用戶管理與支援到LDAP目錄的連接的目錄服務提供程式(DirectoryManagerService)一起打包。 如果您的組織使用非LDAP儲存庫來儲存用戶記錄，則可以建立自己的目錄服務提供程式，以便與儲存庫一起使用。
 
 目錄服務提供者應使用者管理的要求，從使用者存放區擷取記錄。 使用者管理會定期在資料庫中快取使用者和群組記錄，以改善效能。
 
@@ -128,12 +131,12 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 當您使用目錄管理器服務API添加新用戶時，請為該用戶定義資訊。 通常，在添加新用戶時，您定義以下值：
 
-* **域名**:用戶所屬的域(例如 `DefaultDom`)。
-* **使用者識別碼值**:使用者的識別碼值(例如 `wblue`)。
-* **主要類型**:使用者類型(例如，您可以指定 `USER)`。
-* **指定名稱**:使用者的指定名稱(例如 `Wendy`)。
-* **姓氏**:用戶的族名(例如 `Blue)`。
-* **地區**:用戶的地區資訊。
+* **域名**: 用戶所屬的域(例如 `DefaultDom`)。
+* **使用者識別碼值**: 使用者的識別碼值(例如 `wblue`)。
+* **主要類型**: 使用者類型(例如，您可以指定 `USER)`。
+* **指定名稱**: 使用者的指定名稱(例如 `Wendy`)。
+* **姓氏**: 用戶的族名(例如 `Blue)`。
+* **地區**: 用戶的地區資訊。
 
 **將使用者新增至AEM Forms**
 
@@ -149,7 +152,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [使用web service API新增使用者](users.md#add-users-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -176,6 +179,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
    * 調用物件的方法，以 `UserImpl` 設定標準 `setCanonicalName` 名稱。 傳遞指定使用者標準名稱的字串值。 例如，您可以指定 `wblue`。
    * 調用物件的方法，以設 `UserImpl` 定指定的 `setGivenName` 名稱。 傳遞指定使用者指定名稱的字串值。 例如，您可以指定 `Wendy`。
    * 通過調用對象的方法 `UserImpl` 來設定族 `setFamilyName` 名。 傳遞指定使用者系列名稱的字串值。 例如，您可以指定 `Blue`。
+
    >[!NOTE]
    >
    >調用屬於該對象的方 `UserImpl` 法以設定其他值。 例如，您可以叫用物件的方法來設定 `UserImpl` 地區設定 `setLocale` 值。
@@ -186,6 +190,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
    * 代 `UserImpl` 表新用戶的對象
    * 代表使用者密碼的字串值
+
    該方 `createLocalUser` 法返回一個字串值，它指定本地用戶標識符值。
 
 1. 確認已添加用戶。
@@ -198,9 +203,9 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [步驟摘要](users.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API新增使用者](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API新增使用者](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -210,7 +215,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您對服務引用使用以下WSDL定義： `http://localhost:8080/soap/services/DirectoryManagerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您對服務引用使用以下WSDL定義： `http://localhost:8080/soap/services/DirectoryManagerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -235,7 +240,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
    * 將字串值指派給物件的欄位，以設 `UserImpl` 定demain `domainName` 名稱。
    * 通過為對象欄位指定字串值來設 `UserImpl` 置承擔者類 `principalType` 型。 例如，您可以指定 `USER`。
    * 將字串值指派給物件的欄位，以設 `UserImpl` 定使用者識別 `userid` 碼值。
-   * 為物件欄位指派字串值，以設定 `UserImpl` 標準名稱 `canonicalName` 值。
+   * 將字串值指派給物件的欄位，以設定 `UserImpl` 標準名稱 `canonicalName` 值。
    * 將字串值指派給物件的欄位，以設 `UserImpl` 定指定的名 `givenName` 稱值。
    * 通過為對象欄位指定字串值來設 `UserImpl` 置族名 `familyName` 值。
 
@@ -245,6 +250,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
    * 代 `UserImpl` 表新用戶的對象
    * 代表使用者密碼的字串值
+
    該方 `createLocalUser` 法返回一個字串值，它指定本地用戶標識符值。
 
 1. 確認已添加用戶。
@@ -296,7 +302,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [使用web service API刪除使用者](users.md#delete-users-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -318,7 +324,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
    * 使用其 `PrincipalSearchFilter` 建構函式建立物件。
    * 呼叫物件的方法，以設 `PrincipalSearchFilter` 定使用者識別 `setUserId` 碼值。 傳遞代表使用者識別碼值的字串值。
-   * 叫用物 `DirectoryManagerServiceClient` 件的方 `findPrincipals` 法並傳遞物 `PrincipalSearchFilter` 件。 此方法傳回 `java.util.List` 例項，其中每個元素都是物 `User` 件。 重複執行 `java.util.List` 個體以找出要刪除的使用者。
+   * 叫用物 `DirectoryManagerServiceClient` 件的方 `findPrincipals` 法並傳遞物 `PrincipalSearchFilter` 件。 此方法傳回 `java.util.List` 例項，其中每個元素都是物 `User` 件。 重複執行個 `java.util.List` 體以找出要刪除的使用者。
 
 1. 從AEM Forms刪除使用者。
 
@@ -328,11 +334,11 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [步驟摘要](users.md#summary-of-steps)
 
-[快速啟動（EJB模式）:使用Java API刪除用戶](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[快速啟動（EJB模式）: 使用Java API刪除用戶](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[快速入門（SOAP模式）:使用Java API刪除用戶](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API刪除用戶](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -400,7 +406,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 * adobe-utilities.jar（若AEM Forms部署在JBoss上，則為必要項）
 * jbossall-client.jar（如果AEM Forms部署在JBoss上，則為必要）
 
-如需這些JAR檔案位置的詳細資訊，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如需這些JAR檔案位置的詳細資訊，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **建立DirectoryManagerService客戶端**
 
@@ -414,9 +420,9 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 確定組不存在於域中後，請建立組並指定以下屬性：
 
-* **CommonName**:群組的名稱。
-* **網域**:新增群組的網域。
-* **說明**:群組的說明。
+* **CommonName**: 群組的名稱。
+* **網域**: 新增群組的網域。
+* **說明**: 群組的說明。
 
 **對組執行操作**
 
@@ -426,7 +432,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [使用Java API建立群組](users.md#create-groups-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -451,7 +457,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
    * 使用其 `PrincipalSearchFilter` 建構函式建立物件。
    * 通過調用對象的對象來 `PrincipalSearchFilter` 設定主體類 `setPrincipalType` 型。 傳遞值 `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`。
    * 調用物件的物 `PrincipalSearchFilter` 件來設定 `setSpecificDomainName` 網域。 傳遞指定網域名稱的字串值。
-   * 若要尋找群組，請叫 `DirectoryManagerServiceClient` 用物件的 `findPrincipals` 方法（承擔者可以是群組）。 傳遞指 `PrincipalSearchFilter` 定主類型和域名的對象。 此方法會傳回 `java.util.List` 每個元素都是例項的例 `Group` 項。 每個群組例項都符合使用物件所指定的篩 `PrincipalSearchFilter` 選器。
+   * 若要尋找群組，請叫 `DirectoryManagerServiceClient` 用物件的 `findPrincipals` 方法（承擔者可以是群組）。 傳遞指 `PrincipalSearchFilter` 定主類型和域名的對象。 此方法會傳回 `java.util.List` 每個元素都是例項的例 `Group` 項。 每個群組例項都符合使用物件所指定的篩選 `PrincipalSearchFilter` 條件。
    * 重複執行 `java.util.List` 個體。 對於每個元素，檢索組名。 請確定群組名稱不等於新群組名稱。
 
 1. 建立群組。
@@ -460,12 +466,13 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
    * 叫用物 `Group` 件的方 `setDescription` 法，並傳遞指定群組說明的字串值。
    * 叫用物 `Group` 件的方 `setDomainName` 法並傳遞指定網域名稱的字串值。
    * 叫用物 `DirectoryManagerServiceClient` 件的方 `createLocalGroup` 法並傳遞例 `Group` 項。
+
    該方 `createLocalUser` 法返回一個字串值，它指定本地用戶標識符值。
 
 1. 對組執行操作。
 
    * 使用其 `PrincipalSearchFilter` 建構函式建立物件。
-   * 調用物件的方法，以設 `PrincipalSearchFilter` 定使用者識別 `setUserId` 碼值。 傳遞代表使用者識別碼值的字串值。
+   * 呼叫物件的方法，以設 `PrincipalSearchFilter` 定使用者識別 `setUserId` 碼值。 傳遞代表使用者識別碼值的字串值。
    * 叫用物 `DirectoryManagerServiceClient` 件的方 `findPrincipals` 法並傳遞物 `PrincipalSearchFilter` 件。 此方法傳回 `java.util.List` 例項，其中每個元素都是物 `User` 件。 重複執行個 `java.util.List` 體以找出使用者。
    * 叫用物件的方法，將使用者 `DirectoryManagerServiceClient` 新增至群 `addPrincipalToLocalGroup` 組。 傳遞物件方法 `User` 的傳回 `getOid` 值。 傳遞物件方法 `Group` 的傳回值 `getOid` (使用 `Group` 代表新群組的例項)。
 
@@ -473,7 +480,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [步驟摘要](users.md#summary-of-steps)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -518,7 +525,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [使用web service API管理使用者和群組](users.md#managing-users-and-groups-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -530,7 +537,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 1. 包含專案檔案。
 
-   在Java專案的類別路徑中包含用戶端JAR檔案，例如adobe-usermanager-client.jar。 如需這些檔案位置的詳細資訊，請參 [閱「包含AEM Forms java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+   在Java專案的類別路徑中包含用戶端JAR檔案，例如adobe-usermanager-client.jar。 如需這些檔案位置的詳細資訊，請參 [閱「包含AEM Forms Java程式庫檔案」](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 1. 建立DirectoryManagerService客戶端。
 
@@ -552,7 +559,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [步驟摘要](users.md#summary-of-steps)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -597,7 +604,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 在AEM Forms中，角 *色是存取一* 或多個系統層級資源的權限群組。 這些權限是透過「使用者管理」建立，並由服務元件強制執行。 例如，管理員可以將「策略集作者」的角色指派給一組用戶。 然後，Rights Management會允許具有該角色的群組使用者透過管理控制台建立原則集。
 
-角色有兩種類型：預 *設角色**和自訂角色*。 預設角色(*系統角色)* 已駐留在AEM Forms中。 假定管理員不能刪除或修改預設角色，因此不可變。 因此，管理員建立的自定義角色可以變更，管理員隨後可以修改或刪除這些角色。
+角色有兩種類型： *預設角色* 和自 *訂角色*。 預設角色(*系統角色)* 已駐留在AEM Forms中。 假定管理員不能刪除或修改預設角色，因此不可變。 因此，管理員建立的自定義角色可以變更，管理員隨後可以修改或刪除這些角色。
 
 角色可讓管理權限更輕鬆。 將角色分配給承擔者時，會自動將一組權限分配給承擔者，並且承擔者的所有特定訪問相關決策都基於該總指派的權限集。
 
@@ -627,7 +634,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [使用web service API管理角色和權限](users.md#managing-roles-and-permissions-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -651,6 +658,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
    * 包 `java.lang.String` 含角色標識符的對象
    * 包含主標識符 `java.lang.String` 的對象陣列。
+
    要從承擔者中刪除角色，請調 `AuthorizationManagerServiceClient` 用對象的方 `unassignRole` 法並傳遞以下值：
 
    * 包含 `java.lang.String` 角色標識符的對象。
@@ -661,9 +669,9 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [步驟摘要](users.md#summary-of-steps)
 
-[快速入門（SOAP模式）:使用Java API管理角色和權限](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API管理角色和權限](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -673,7 +681,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AuthorizationManagerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 請確定您使用下列WSDL定義： `http://localhost:8080/soap/services/AuthorizationManagerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
@@ -682,7 +690,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 1. 建立AuthorizationManagerService客戶端。
 
    * 使用其 `AuthorizationManagerServiceClient` 預設建構函式建立物件。
-   * 使用建 `AuthorizationManagerServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`。)您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。
+   * 使用建 `AuthorizationManagerServiceClient.Endpoint.Address` 構函式建立物 `System.ServiceModel.EndpointAddress` 件。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`。) 您不需要使用屬 `lc_version` 性。 建立服務參考時，將使用此屬性。
    * 獲取 `System.ServiceModel.BasicHttpBinding` 欄位值以建立對 `AuthorizationManagerServiceClient.Endpoint.Binding` 像。 將返回值轉換為 `BasicHttpBinding`。
    * 將物 `System.ServiceModel.BasicHttpBinding` 件欄位設 `MessageEncoding` 為 `WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
@@ -698,6 +706,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
    * 包 `string` 含角色標識符的對象
    * 包 `MyArrayOf_xsd_string` 含主標識符的對象。
+
    要從承擔者中刪除角色，請調 `AuthorizationManagerServiceService` 用對象的方 `unassignRole` 法並傳遞以下值：
 
    * 包含 `string` 角色標識符的對象。
@@ -780,7 +789,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -806,6 +815,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
    * 包 `java.lang.String` 含使用者名稱的物件。
    * 包含使用者密 `byte[]` 碼的位元組陣列（物件）。 您可以叫用 `byte[]` 物件的方法 `java.lang.String` 來取得物 `getBytes` 件。
+
    驗證方法返回包 `AuthResult` 含關於已驗證用戶的資訊的對象。
 
 1. 擷取驗證內容。
@@ -910,7 +920,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -946,6 +956,6 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 [以程式設計方式同步使用者](users.md#programmatically-synchronizing-users)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
