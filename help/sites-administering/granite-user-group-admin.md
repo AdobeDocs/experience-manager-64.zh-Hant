@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 4%
 
 ---
 
@@ -89,7 +92,8 @@ Granite使用者和群組管理主控台都可從觸控最佳化 **[UI的](/help
    * **關於**
    * **帳戶設定**
 
-      * **狀態**：您可以將帳戶標幟為「活 **動** 」或「 **非活動」**。
+      * **狀態**&#x200B;您可以將帳戶標籤為 
+**活動或** 非活 **動中**。
    * **相片**
 
       您可以在這裡上傳像片，以做為頭像。
@@ -145,7 +149,7 @@ Granite使用者和群組管理主控台都可從觸控最佳化 **[UI的](/help
 
    要開啟組選擇下拉清單：
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 1. 在選擇方塊中，您可以選取或取消選取使用者帳戶應屬於的群組。
 
@@ -183,7 +187,7 @@ Granite使用者和群組管理主控台都可從觸控最佳化 **[UI的](/help
 
    * **名稱**
 
-      群組名稱；它將顯示在「組」控制台中。
+      群組名稱； 它將顯示在「組」控制台中。
 
    * **說明**
 
