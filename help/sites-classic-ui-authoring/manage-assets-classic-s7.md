@@ -121,7 +121,7 @@ Adobe建議您僅從Dynamic Media Classic目標資料夾中的資產，將資產
    >
    >如果數位資產位於CQ目標資料夾中，則不會顯示「檢查動態媒體傳 **[!UICONTROL 統出版物狀態]** 」連結。 資產只會放在元件中。
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![chlimage_1-70](assets/chlimage_1-78.png)
 
 1. 按一 **[!UICONTROL 下「檢查動態媒體經典出版物狀態]**」。 如果資產未發佈，AEM會將資產發佈至Dynamic Media Classic。 上傳資產後，資產就會位於臨機資料夾中。 依預設，臨機資料夾位於 `name_of_the_company/CQ5_adhoc`。 如有需 [要，您可以設定此設定](#configuringtheadhocfolder)。
 
@@ -299,7 +299,7 @@ Dynamic Media Classic Image元件可讓您將Dynamic Media Classic功能新增�
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. 按一下 **[!UICONTROL 確定]**。
+1. 按一下&#x200B;**[!UICONTROL 「確定」]**。
 
 ### 視訊元件 {#video-component}
 
@@ -390,7 +390,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-**[!UICONTROL 設定]** 如果您在 [!UICONTROL Cloud Services]中定義了多個Dynamic Media Classic設定，您可以在此處選取。 因此，資料夾會根據您選擇的組態而變更。
+**[!UICONTROL 設定]** 如果您在 [!UICONTROL Cloud Services中定義了多個Dynamic Media Classic設定]，您可以在此處選取。 因此，資料夾會根據您選擇的組態而變更。
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
