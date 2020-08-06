@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '1604'
+ht-degree: 4%
 
 ---
 
@@ -124,7 +127,7 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 * **[!UICONTROL 允許的檔案類型]**
 
-   僅在勾選時 `Allow File Uploads` 相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
+   僅在勾選時 `Allow File Uploads` 相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
 
 * **[!UICONTROL 附加影像檔案最大大小]**
 
@@ -214,11 +217,12 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
    用於部落格條目存檔的顯示格式。 格式使用遵循Java約定的佔位符。
 
-   * yyyy:全年，就像2015年一樣
-   * yy:短年，比如15年。
-   * MMMMMM:整月，就像6月
-   * 嗯：短月，就像6月
-   * MM:月數，例如06
+   * yyyy: 全年，就像2015年一樣
+   * yy: 短年，比如15年。
+   * MMMMMM: 整月，就像6月
+   * 嗯： 短月，就像6月
+   * MM: 月數，例如06
+
    預設值為&quot;yyyy MMMMM&quot;，會顯示例如&quot;2015 June&quot;
 
 * **[!UICONTROL 視圖類型]**
