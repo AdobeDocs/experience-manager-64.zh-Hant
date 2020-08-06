@@ -4,6 +4,9 @@ description: 為資料夾或系列中的資產設定審核工作流程，並與�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '814'
+ht-degree: 21%
 
 ---
 
