@@ -4,6 +4,9 @@ description: 瞭解ImageMagick軟體、如何安裝、設定命令列處理步�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 0%
 
 ---
 
