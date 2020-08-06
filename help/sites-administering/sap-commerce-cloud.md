@@ -1,8 +1,8 @@
 ---
 title: SAP Commerce Cloud
 seo-title: SAP Commerce Cloud
-description: 瞭解如何搭配SAP Commerce cloud使用AEM。
-seo-description: 瞭解如何搭配SAP Commerce cloud使用AEM。
+description: 瞭解如何搭配SAP Commerce Cloud使用AEM。
+seo-description: 瞭解如何搭配SAP Commerce Cloud使用AEM。
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
 translation-type: tm+mt
 source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
+workflow-type: tm+mt
+source-wordcount: '1726'
+ht-degree: 1%
 
 ---
 
@@ -41,8 +44,8 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 1. 在側欄中，依序選 **擇System**、 **Facet search**、 **Facet Search Config**。
 1. **開啟Editor** for **Sample Solr Configuration for clothscatalog**。
 
-1. 在「 **目錄版本** 」下，使 **用「添加目錄版本** 」(Add Catalog version `outdoors-Staged` ) `outdoors-Online` 來添加和添加到清單中。
-1. **保存** 配置。
+1. 在「 **目錄版本** 」下，使 **用「添加目錄版本** 」(Add Catalog version `outdoors-Staged` )來 `outdoors-Online` 添加和添加到清單中。
+1. **儲存設定。**
 1. 開啟 **SOLR項目類型** ，將 **SOLR排序添加到**`ClothesVariantProduct`:
 
    * 相關性（「相關性」，分數）
@@ -50,6 +53,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
    * name-desc(&quot;Name(descending)&quot;, name)
    * price-asc(&quot;Price(ascending)&quot;, priceValue)
    * price-desc(&quot;Price(descending)&quot;, priceValue)
+
    >[!NOTE]
    >
    >使用上下文選單（通常按一下右鍵）來選取 `Create Solr sort`。
@@ -111,7 +115,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 
 >[!NOTE]
 >
->使用AEM時，有幾種方法可管理此類服務的組態設定；如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+>使用AEM時，有幾種方法可管理此類服務的組態設定； 如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 記錄輸出會針對已建立的頁面和元件提供意見回應，並報告可能的錯誤。
 
@@ -162,7 +166,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 
 &quot;**Day CQ Commerce Hybris Default Import Handler**`(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
-使用AEM時，有幾種方法可管理此類服務的組態設定；如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+使用AEM時，有幾種方法可管理此類服務的組態設定； 如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 ## 設定要載入的產品屬性 {#configure-the-product-attributes-to-load}
 
@@ -176,7 +180,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 
    >[!NOTE]
    >
-   >使用AEM時，有幾種方法可管理此類服務的組態設定；如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+   >使用AEM時，有幾種方法可管理此類服務的組態設定； 如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 ## 匯入產品資料 {#importing-the-product-data}
 
@@ -198,7 +202,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 
 >[!NOTE]
 >
->Hybris實施(即 `geometrixx-outdoors/en_US`)僅儲存產品ID和其他基本資訊 `/etc/commerce`。
+>Hybris實施(即 `geometrixx-outdoors/en_US`)僅儲存產品ID和其他基本資訊於 `/etc/commerce`。
 >
 >每次請求關於產品的資訊時都引用hybris伺服器。
 
@@ -214,7 +218,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 
       [`http://localhost:4502/crx/de/index.jsp#/etc/commerce/products`](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-   1. 刪除保存產品資料的節點；例如， `outdoors`。
+   1. 刪除保存產品資料的節點； 例如， `outdoors`。
    1. **「全部儲存** 」以持續保留變更。
 
 1. 在AEM中開啟hybris匯入工具：
@@ -225,7 +229,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. 配置所需參數；例如：
+1. 配置所需參數； 例如：
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -237,7 +241,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
        /etc/commerce/products/outdoors
    ```
 
-   您可以在CRXDE Lite中開啟此功能；例如：
+   您可以在CRXDE Lite中開啟此功能； 例如：
 
    `[http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
 
@@ -247,7 +251,7 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 
    `/etc/commerce/products`
 
-   您可以在CRXDE Lite中開啟此功能；例如：
+   您可以在CRXDE Lite中開啟此功能； 例如：
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -279,13 +283,13 @@ source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
 
    `/etc/commerce/products`
 
-   您可以在CRXDE Lite中開啟此功能；例如：
+   您可以在CRXDE Lite中開啟此功能； 例如：
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
 1. 在hybris中，更新相關產品上的資訊。
 
-1. 在hybris中，將產品新增至快遞佇列；例如：
+1. 在hybris中，將產品新增至快遞佇列； 例如：
 
    ![chlimage_1-43](assets/chlimage_1-43.png)
 
@@ -316,7 +320,7 @@ Hybris目錄可以匯入至AEM，並使用批次匯入工具匯入Hybris目錄�
 
 **Day CQ Commerce Hybris Catalog Importer**( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
-使用AEM時，有幾種方法可管理此類服務的組態設定；如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+使用AEM時，有幾種方法可管理此類服務的組態設定； 如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 ## 目錄匯入 {#catalog-import}
 
@@ -340,20 +344,22 @@ hybris套件隨附目錄匯入工具，以設定初始頁面結構。
 
 要從目錄中刪除一個或多個產品：
 
-1. [設定OSGi service](/help/sites-deploying/configuring-osgi.md) Day CQ **Commerce Hybris Catalog Importer的for**;另請參閱 [設定目錄匯入工具](#configure-the-catalog-importer)。
+1. [設定OSGi service](/help/sites-deploying/configuring-osgi.md) Day CQ **Commerce Hybris Catalog Importer的for**; 另請參閱 [設定目錄匯入工具](#configure-the-catalog-importer)。
 
    啟用下列屬性：
 
    * **啟用產品移除**
    * **啟用產品資產移除**
+
    >[!NOTE]
    >
-   >使用AEM時，有幾種方法可管理此類服務的組態設定；如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+   >使用AEM時，有幾種方法可管理此類服務的組態設定； 如需 [完整詳細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 1. 透過執行兩個增量更新來初始化匯入工具(請參 [閱目錄匯入](#catalog-import)):
 
    * 第一次執行會產生一組變更的產品——在記錄清單中指出。
    * 第二次不應更新任何產品。
+
    >[!NOTE]
    >
    >第一個匯入是初始化產品資訊。 第二個導入將驗證所有操作都正常運行，並且產品集已就緒。
@@ -419,6 +425,7 @@ hybris套件隨附目錄匯入工具，以設定初始頁面結構。
 
       * 用戶端內容會顯示訂單記錄的摘要。
       * 螢幕上將顯示「您是舊客戶」的消息。
+
    >[!NOTE]
    >
    >消息的實現方式為：
