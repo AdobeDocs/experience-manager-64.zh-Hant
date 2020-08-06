@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b9752c60-eb26-4840-9163-a99537a58727
 translation-type: tm+mt
 source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+workflow-type: tm+mt
+source-wordcount: '1505'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +53,7 @@ AEM和Salesforce之間雙向且可擴充的整合可讓您：
 
    >[!NOTE]
    >
-   >新設定會重新導向至新頁面： **http://localhost:4502/etc/cloudservices/salesforce/developer.html**。 這與您在Salesforce中建立遠端存取應用程式時，在回呼URL中所需指定的值完全相同。 這些值必須相符。
+   >新設定會重新導向至新頁面： **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. 這與您在Salesforce中建立遠端存取應用程式時，在回呼URL中所需指定的值完全相同。 這些值必須相符。
 
 1. 登入您的salesforce帳戶(或如果您沒有帳戶，請在https://developer.force.com建立 [帳戶](https://developer.force.com))。
 1. 在Salesforce中，導覽至「 **Create** > **Apps** 」以取得「 **Connected Apps」(在舊版Force中，工作流程是「********** Deploy Deploy > Remote Access Apps」（遠端存取）。
@@ -76,7 +79,7 @@ AEM和Salesforce之間雙向且可擴充的整合可讓您：
 
    ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
-   | 登入 URL | 這是Salesforce授權端點。 它的值已預先填入，適用於大部分情況。 |
+   | 登入 URL | 這是Salesforce授權端點。 其值已預先填入，且適用於大部分情況。 |
    |---|---|
    | 客戶金鑰 | 輸入從salesforce.com的「遠程訪問應用程式註冊」頁獲得的值 |
    | 客戶機密 | 輸入從salesforce.com的「遠程訪問應用程式註冊」頁獲得的值 |
@@ -103,7 +106,7 @@ AEM和Salesforce之間雙向且可擴充的整合可讓您：
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. 選取您要建立做為銷售線索的AEM使用者，作為此工作流程的 **Payload** （首頁->使用者）。 請務必選擇用戶的配置檔案節點，因為該節點包含映射到Salesforce潛在客戶的 **FirstName**&#x200B;和 **LastNameApplist欄位的資訊，如** givenName **、familyName****** 等。
+1. 選取您要建立做為銷售線索的AEM使用者，作為此工作流程的 **Payload** （首頁->使用者）。 請務必選擇用戶的配置檔案節點，因為該節點包含映射到Salesforce潛在客戶的 **FirstName**&#x200B;和 **LastNameApplizes欄位的資訊，如** givenName **、familyName****** 等。
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -111,7 +114,7 @@ AEM和Salesforce之間雙向且可擴充的整合可讓您：
    >
    >在開始此工作流程之前，AEM中的銷售機會節點必須具備某些必要欄位，才能發佈至Salesforce。 這些是 **給定的Name**、 **familyName**、 **** company和 **電子郵件**。 若要查看AEM使用者與Salesforce銷售線索之間對應的完整清單，請參閱「AEM使用者與Slaesforce銷售 [線索之間對應設定」。](#mapping-configuration-between-aem-user-and-salesforce-lead)
 
-1. 按一下 **確定**。 使用者資訊會匯出至salesforce.com。 您可在salesforce.com驗證。
+1. 按一下&#x200B;**「確定」**。使用者資訊會匯出至salesforce.com。 您可在salesforce.com驗證。
 
    >[!NOTE]
    >
@@ -137,7 +140,7 @@ AEM和Salesforce之間雙向且可擴充的整合可讓您：
 
 ### AEM使用者與Salesforce Lead之間的對應設定 {#mapping-configuration-between-aem-user-and-salesforce-lead}
 
-若要檢視或編輯AEM使用者與Salesforce銷售線索之間的目前對應設定，請開啟「設定管理員」:並 `https://<hostname>:<port>/system/console/configMgr` 搜尋 **Salesforce銷售線索對應設定**。
+若要檢視或編輯AEM使用者與Salesforce銷售線索之間的目前對應設定，請開啟「設定管理員」: `https://<hostname>:<port>/system/console/configMgr` 並搜尋 **Salesforce銷售線索對應設定**。
 
 1. 按一下「網頁控制台」 **或直接前往** 「設定管理員」 `https://<hostname>:<port>/system/console/configMgr.`
 1. 搜尋 **Salesforce銷售線索對應設定**。
@@ -152,13 +155,13 @@ salesforce用戶端內容儲存區會顯示目前登入使用者的其他資訊�
 
 若要這麼做，您必須設定下列項目：
 
-1. 透過Salesforce connect元件，將AEM使用者連結至Salesforce ID。
+1. 透過Salesforce Connect元件，將AEM使用者連結至Salesforce ID。
 1. 將Salesforce描述檔資料新增至用戶端內容頁面，以設定您要查看的屬性。
 1. （可選）建立使用Salesforce Client內容商店資料的區段。
 
 ### 將AEM使用者連結至Salesforce ID {#linking-an-aem-user-with-a-salesforce-id}
 
-您必須使用Salesforce ID對應AEM使用者，才能將其載入用戶端內容。 在實際案例中，您會根據已知使用者資料與驗證進行連結。 為了示範，在此程式中，您使用 **Salesforce connect元件** 。
+您必須使用Salesforce ID對應AEM使用者，才能將其載入用戶端內容。 在實際案例中，您會根據已知使用者資料與驗證進行連結。 為了示範，在此程式中，您使用 **Salesforce Connect元件** 。
 
 1. 導覽至AEM中的網站、登入，並從側腳拖放 **Salesforce Connect** 元件。
 
@@ -176,7 +179,7 @@ salesforce用戶端內容儲存區會顯示目前登入使用者的其他資訊�
    >
    >此元件僅供展示之用。 對於實際案例，將有另一個程式來連結／比對使用者與潛在客源。
 
-1. 在頁面上拖曳元件後，請開啟它以進行設定。 選擇設定、連絡人類型，以及Salesforce潛在客戶或連絡人，然後按一下「確 **定」**。
+1. 在頁面上拖曳元件後，請開啟它以進行設定。 選取設定、連絡人類型和Salesforce銷售線索或連絡人，然後按一下「確 **定」**。
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
