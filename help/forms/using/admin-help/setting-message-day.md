@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 您可以在「工作區」用戶介面的「歡迎」(Welcome)頁面上設定一條消息。
 
-如有需要，您可使用Adobe Flash® player支援的HTML標籤來設定文字外觀的格式：
+如有需要，您可使用Adobe Flash® Player支援的HTML標籤來設定文字外觀的格式：
 
 * &lt;a>錨記
 * &lt;b>粗體標籤
