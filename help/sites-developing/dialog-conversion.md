@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 0%
 
 ---
 
@@ -75,9 +78,10 @@ GITHUB代碼
 
    表格列出輸入路徑下的所有現有舊對話框。 每個對話框都列出其類型。 類型包括：
 
-   * **** 經典：具有節點名 `cq:Dialog``dialog` 稱或 `design_dialog`
-   * **** 珊瑚2:在其子內 `cq:dialog` 容節 `cq:design_dialog` 點上具有Granite UI / Coral 2資源類型的命名或節點
-   每一行都包含一個檢視對話方塊的連結，以及一個檢視其節點結構的CRXDE Lite連結。
+   * **經典：** 具有節點名 `cq:Dialog``dialog` 稱或 `design_dialog`
+   * **珊瑚2:** 在其子內 `cq:dialog` 容節 `cq:design_dialog` 點上具有Granite UI / Coral 2資源類型的命名或節點
+
+   每一行都包含一個用於查看對話框的連結和一個用於查看其節點結構的CRXDE Lite連結。
 
    >[!NOTE]
    >
@@ -93,7 +97,7 @@ GITHUB代碼
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. 回到「對話框轉換工具」中，已轉換的對話框不再顯示在清單中。 但請注意，找到的對話框總數仍會列出，包括已轉換的對話框數，即表格中的行數不一定與找到的對話框總數匹配。
+1. 回到「對話框轉換工具」中，已轉換的對話框不再顯示在清單中。 但請注意，找到的對話框總數仍會列出，包括已轉換的對話框數，即表格中的行數不一定與找到的行數匹配。
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -107,7 +111,7 @@ GITHUB代碼
 
 該對話轉換工具基於圖重寫的概 **念**，包括通過應用重寫規則來轉換主題圖。 重寫規則是模式與替換圖形的配對。 規則會比對主題圖中特定子圖的發生次數，然後加以取代。 如需圖形重 [寫的詳細資訊](https://en.wikipedia.org/wiki/Graph_rewriting) ，請參閱https://en.wikipedia.org/wiki/Graph_rewriting。
 
-對話框轉換工具使用此方法將指定的舊對話框樹（Classic或Granite UI / Coral 2）重寫為其Granite UI / Coral 3對應項。 這具有的優點是轉換非常靈活，而且即使考慮到複雜的元件，因為匹配是在實際子樹上完成的，而不僅是單個節點或屬性。
+對話方塊轉換工具會使用此方法，將指定的舊式對話方塊樹狀結構（Classic或Granite UI / Coral 2）重新寫入其Granite UI / Coral 3對應的對應項目。 這具有的優點是轉換非常靈活，而且即使考慮到複雜的元件，因為匹配是在實際子樹上完成的，而不只是單個節點或屬性。
 
 ### 演算法 {#algorithm}
 
@@ -123,7 +127,7 @@ GITHUB代碼
 
 * Java類實現特定介面——基 [於Java的重寫規則](/help/sites-developing/dialog-conversion.md#java-based-rewrite-rules)
 
-有些 [是現成可用的](#provided-rewrite-rules)，但您也可以定義自訂規則。 [也提供範例重寫規則](/help/sites-developing/dialog-conversion.md#sample-rewrite-rules) ,
+有些 [是現成可用的](#provided-rewrite-rules)，但您也可以定義您自己的自訂規則。 [也提供範例重寫規則](/help/sites-developing/dialog-conversion.md#sample-rewrite-rules) ,
 
 通常，單一對話框重寫規則負責重寫單個對話框元素，例如路徑瀏覽器輸入欄位。
 
@@ -205,9 +209,9 @@ rule
 
 此外，可將節 `cq:rewriteProperties` 點添加到替換節點，以定義結果中映射屬性的字串重寫。 節點將從替換中刪除。 節點的屬 `cq:rewriteProperties` 性必須命名與要重寫的屬性相同，並接受包含兩個參數的字串陣列：
 
-* `pattern`:比對規則運算式，例如 `"(?:coral-Icon-)(.+)"`
+* `pattern`: 比對規則運算式，例如 `"(?:coral-Icon-)(.+)"`
 
-* `replacement`:提供給匹配 `replaceAll` 器功能，例如 `"$1"`
+* `replacement`: 提供給匹配 `replaceAll` 器功能，例如 `"$1"`
 
 以下是將Coral 2圖示屬性重寫為Coral 3等效項的範例：
 
@@ -250,7 +254,7 @@ Node applyTo(Node root, Set<Node> finalNodes) throws DialogRewriteException, Rep
 int getRanking();
 ```
 
-如果 `matches` 規則與所 `true` 提供根節點上的子樹匹配，則必須返回該方法。 如果規則匹配，則樹重寫算法隨後將調用該方法， `applyTo` 該方法必須重寫在指定根節點上根的子樹。 通常，此方法會臨時更名原始樹，將新樹作為原始樹的父節點（使用其節點和屬性）的新子節點，最後刪除原始樹。 有關詳細資訊，請參見介面的Javadoc `com.adobe.cq.dialogconversion.DialogRewriteRule` 中。
+如果 `matches` 規則與所 `true` 提供根節點上的子樹匹配，則必須返回該方法。 如果規則匹配，樹重寫算法隨後將調用該方 `applyTo` 法，該方法必須重寫根在指定根節點處的子樹。 通常，此方法會臨時更名原始樹，將新樹作為原始樹的父節點（使用其節點和屬性）的新子節點，最後刪除原始樹。 有關詳細資訊，請參見介面的Javadoc `com.adobe.cq.dialogconversion.DialogRewriteRule` 中。
 
 #### 詳細資訊- Javadocs {#further-information-javadocs}
 
