@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 瞭解AEM Forms流程 {#understanding-aem-forms-processes}
 
-常見的使用案例是一組AEM Forms服務可在單一檔案上運作。 您可以使用Workbench建立流程，將請求傳送至服務容器。 流程代表您正在自動化的業務流程。 有關建立流程的資訊，請參 [閱使用工作台](https://www.adobe.com/go/learn_aemforms_workbench_63)。
+常見的使用案例是，一組AEM Forms服務可在單一檔案上運作。 您可以使用Workbench建立流程，將請求傳送至服務容器。 流程代表您正在自動化的業務流程。 有關建立流程的資訊，請參 [閱使用工作台](https://www.adobe.com/go/learn_aemforms_workbench_63)。
 
 一旦程式被激活，它就會變成服務，並可像其他服務一樣被調用。 標準服務（如加密服務）和源自進程的服務之間的一個區別是，後者有一個操作可執行多個操作。 相反，標準服務有許多操作。 每個操作通常執行一個操作，例如將策略應用於文檔或加密文檔。
 
