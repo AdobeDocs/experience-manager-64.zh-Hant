@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 translation-type: tm+mt
 source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 1%
 
 ---
 
@@ -25,12 +28,12 @@ source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
 
 除了內容相關性外，計分演算法也會考量成員活動，例如投票和答案百分比。 雖然基本計分包括了定量計分，但進階計分則採用演算法。
 
-因此，先進的計分引擎需要足夠的資料，使分析具有意義。 隨著演算法不斷調整所建立內容的量與品質，成為專家的成就臨界值會不斷重新評估。 還有一個概念 *是* ，成員的舊職位會衰落。 如果專家成員停止參與獲得專家地位的主題，在某個預先確定的點(請參閱計分引擎配置 [](#configurable-scoring-engine))，他們可能失去專家的地位。
+因此，高級計分引擎需要足夠的資料，使分析具有意義。 隨著演算法不斷調整所建立內容的量與品質，成為專家的成就臨界值會不斷重新評估。 還有一個概念 *是* ，成員的舊職位會衰落。 如果專家成員停止參與獲得專家地位的主題，在某個預先確定的點(請參閱計分引擎配置 [](#configurable-scoring-engine))，他們可能失去專家的地位。
 
 設定進階計分與基本計分幾乎相同：
 
 * 基本和進階計分與標籤規則 [會以相同方式套用](implementing-scoring.md#apply-rules-to-content) 至內容
-   * 基本和進階計分和標籤規則可套用至相同內容
+   * 基本和進階計分與標籤規則可套用至相同內容
 * [為元件啟用標章](implementing-scoring.md#enable-badges-for-component) ，是通用的
 
 在設定計分和標籤規則方面的差異為：
