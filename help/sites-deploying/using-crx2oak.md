@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1258'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ CRX2Oak是一種工具，旨在在不同資料庫之間移轉資料。
 
 * 從舊版CQ 5移轉至AEM 6
 * 在多個Oak資料庫之間複製資料
-* 在不同Oak microKernel實作之間轉換資料。
+* 在不同Oak MicroKernel實作之間轉換資料。
 
 支援使用外部Blob儲存庫（通常稱為Data Stores）遷移儲存庫的不同組合。 一個可能的遷移路徑是從使用外部的CRX2儲存庫到 `FileDataStore` 使用的Oak儲存庫 `S3DataStore`。
 
@@ -128,46 +131,46 @@ CRX2Oak的開放原始碼版本以oak-upgrade的形式提供。 它支援除以�
 
 ### 節點儲存選項 {#node-store-options}
 
-* `--cache`:快取大小（以MB為單位）(預設為 `256`)
+* `--cache`: 快取大小（以MB為單位）(預設為 `256`)
 
-* `--mmap`:啟用區段存放區的記憶體對應檔案存取
+* `--mmap`: 啟用區段存放區的記憶體對應檔案存取
 * `--src-password:` 源RDB資料庫的口令
 
 * `--src-user:` 源RDB的用戶
 
-* `--user`:目標RDB的用戶
+* `--user`: 目標RDB的用戶
 
-* `--password`:目標RDB的口令。
+* `--password`: 目標RDB的口令。
 
 ### 移轉選項 {#migration-options}
 
-* `--early-shutdown`:在複製節點後和應用提交掛接之前關閉源JCR2儲存庫
-* `--fail-on-error`:如果無法從源儲存庫讀取節點，則強制遷移失敗。
-* `--ldap`:將LDAP使用者從CQ 5.x執行個體移轉至Oak架構的執行個體。 為了讓這項功能運作，Oak組態中的身分提供者必須命名為ldap。 如需詳細資訊，請參閱 [LDAP檔案](/help/sites-administering/ldap-config.md)。
+* `--early-shutdown`: 在複製節點後和應用提交掛接之前關閉源JCR2儲存庫
+* `--fail-on-error`: 如果無法從源儲存庫讀取節點，則強制遷移失敗。
+* `--ldap`: 將LDAP使用者從CQ 5.x執行個體移轉至Oak架構的執行個體。 為了讓這項功能運作，Oak組態中的身分提供者必須命名為ldap。 如需詳細資訊，請參閱 [LDAP檔案](/help/sites-administering/ldap-config.md)。
 
 * `--ldap-config:` 將其與使用多個LDAP服 `--ldap` 務器進行身份驗證的CQ 5.x儲存庫的參數結合使用。 您可使用它指向CQ 5.x或 `ldap_login.conf` 組 `jaas.conf` 態檔案。 格式為 `--ldapconfig=path/to/ldap_login.conf`。
 
 ### 版本商店選項 {#version-store-options}
 
-* `--copy-orphaned-versions`:跳過複製孤立版本。 支援的參數包括： `true`和 `false``yyyy-mm-dd`。 預設為 `true`.
+* `--copy-orphaned-versions`: 跳過複製孤立版本。 支援的參數包括： `true`、 `false` 和 `yyyy-mm-dd`。 預設為 `true`.
 
 * `--copy-versions:` 復製版本儲存。 Parameters: `true`, `false`, `yyyy-mm-dd`. 預設為 `true`.
 
 #### 路徑選項 {#path-options}
 
 * `--include-paths:` 複製期間要包含的路徑的逗號分隔清單
-* `--merge-paths`:複製期間要合併的路徑的逗號分隔清單
+* `--merge-paths`: 複製期間要合併的路徑的逗號分隔清單
 * `--exclude-paths:` 複製期間要排除的路徑的逗號分隔清單。
 
 ### 源Blob儲存選項 {#source-blob-store-options}
 
 * `--src-datastore:` 要用作源的資料儲存目錄 `FileDataStore`
 
-* `--src-fileblobstore`:要用作源的資料儲存目錄 `FileBlobStore`
+* `--src-fileblobstore`: 要用作源的資料儲存目錄 `FileBlobStore`
 
-* `--src-s3datastore`:要用於源的資料儲存目錄 `S3DataStore`
+* `--src-s3datastore`: 要用於源的資料儲存目錄 `S3DataStore`
 
-* `--src-s3config`:源的配置檔案 `S3DataStore`。
+* `--src-s3config`: 源的配置檔案 `S3DataStore`。
 
 ### 目標BlobStore選項 {#destination-blobstore-options}
 
@@ -175,9 +178,9 @@ CRX2Oak的開放原始碼版本以oak-upgrade的形式提供。 它支援除以�
 
 * `--fileblobstore:` 要用作目標的資料儲存目錄 `FileBlobStore`
 
-* `--s3datastore`:要用於目標的資料儲存目錄 `S3DataStore`
+* `--s3datastore`: 要用於目標的資料儲存目錄 `S3DataStore`
 
-* `--s3config`:目標的配置檔案 `S3DataStore`。
+* `--s3config`: 目標的配置檔案 `S3DataStore`。
 
 ### 說明選項 {#help-options}
 
@@ -199,7 +202,7 @@ CRX2Oak的開放原始碼版本以oak-upgrade的形式提供。 它支援除以�
   </tr> 
   <tr> 
    <td>獨立模式</td> 
-   <td><p>將 <strong>—trace</strong> options添加到CRX2Oak命令行，以在標準輸出上顯示TRACE事件(您需要使用重定向字元重新定向日誌：'&gt;'或'tee'命令，以供稍後檢查)。</p> </td> 
+   <td><p>將 <strong>—trace</strong> options添加到CRX2Oak命令行，以在標準輸出上顯示TRACE事件(您需要使用重定向字元重新定向日誌： '&gt;'或'tee'命令，以供稍後檢查)。</p> </td> 
   </tr> 
  </tbody> 
 </table>
