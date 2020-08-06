@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 1%
 
 ---
 
@@ -95,12 +98,12 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * 在對話方 `Create New User` 塊中輸入
 
-   * **[!UICONTROL ID&amp;ast;]**:天狼星
-   * **[!UICONTROL 電子郵件地址]**:sirius.nilson@mailinator.com
-   * **[!UICONTROL Password&amp;ast;]**:密碼
-   * **[!UICONTROL 確認密碼&amp;ast;]**:密碼
-   * **[!UICONTROL 名字]**:天狼星
-   * **[!UICONTROL 姓氏&amp;ast;]**:尼爾森
+   * **[!UICONTROL ID&amp;ast;]**: 天狼星
+   * **[!UICONTROL 電子郵件地址]**: sirius.nilson@mailinator.com
+   * **[!UICONTROL Password&amp;ast;]**: 密碼
+   * **[!UICONTROL 確認密碼&amp;ast;]**: 密碼
+   * **[!UICONTROL 名字]**: 天狼星
+   * **[!UICONTROL 姓氏&amp;ast;]**: 尼爾森
 
 ### 將Sirius指派給社區管理員群組 {#assign-sirius-to-community-administrators-group}
 
@@ -139,7 +142,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 * `Tutorial: Arts / Auditory`
 * `Tutorial: Arts / History`
 
-![chlimage_1-302](assets/chlimage_1-302.png)
+![chlimage_1-382](assets/chlimage_1-302.png)
 
 然後依照指示，
 
