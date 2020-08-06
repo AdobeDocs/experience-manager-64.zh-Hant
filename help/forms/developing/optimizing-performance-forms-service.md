@@ -1,6 +1,6 @@
 ---
-title: 最佳化Forms service的效能
-seo-title: 最佳化Forms service的效能
+title: 最佳化Forms Service的效能
+seo-title: 最佳化Forms Service的效能
 description: 'null'
 seo-description: 'null'
 uuid: 9040c09a-e5d0-432b-b1c5-ad46ab57c4fc
@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '1403'
+ht-degree: 0%
 
 ---
 
@@ -48,12 +51,12 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 您可以設定以下效能運行時選項來改進Forms服務的效能：
 
-* **表單快取**:您可以快取在伺服器快取中呈現為PDF的表格。 每個表單在首次產生後都會快取。 在後續的演算中，如果快取的表單比表單設計的時間戳記還新，則會從快取中擷取表單。 通過快取表單，可以提高Forms服務的效能，因為它不必從儲存庫檢索表單設計。
+* **表單快取**: 您可以快取在伺服器快取中呈現為PDF的表格。 每個表單在首次產生後都會快取。 在後續的演算中，如果快取的表單比表單設計的時間戳記還新，則會從快取中擷取表單。 通過快取表單，可以提高Forms服務的效能，因為它不必從儲存庫檢索表單設計。
 * 表單參考線（已過時）的轉換時間可能比其他轉換類型要長。 建議您快取表單參考線（已過時），以改善效能。
-* **獨立選項**:如果您不需要Forms服務來執行伺服器端計算，可將「單機版」選項設為 `true`，如此會產生沒有狀態資訊的表單。 如果您想要將互動式表單轉譯給使用者，然後使用者將資訊輸入表單並將表單提交回表單服務，則需要狀態資訊。 然後，Forms服務會執行計算操作，並將表單呈現回用戶，並將結果顯示在表單中。 如果沒有狀態資訊的表單會提交回Forms服務，則只有XML資料可供使用，且不會執行伺服器端計算。
-* **線性化的PDF**:組織線性化的PDF檔案，以便在網路環境中提供有效率的漸進式存取。 PDF檔案在所有方面都是有效的PDF，並與所有現有檢視器和其他PDF應用程式相容。 也就是說，在PDF仍在下載時，可以檢視其線性化。
+* **獨立選項**: 如果您不需要Forms服務來執行伺服器端計算，可將「單機版」選項設為 `true`，如此會產生沒有狀態資訊的表單。 如果您想要將互動式表單轉譯給使用者，然後使用者將資訊輸入表單並將表單提交回表單服務，則需要狀態資訊。 然後，Forms服務會執行計算操作，並將表單呈現回用戶，並將結果顯示在表單中。 如果沒有狀態資訊的表單會提交回Forms服務，則只有XML資料可供使用，且不會執行伺服器端計算。
+* **線性化的PDF**: 組織線性化的PDF檔案，以便在網路環境中提供有效率的漸進式存取。 PDF檔案在所有方面都是有效的PDF，並與所有現有檢視器和其他PDF應用程式相容。 也就是說，在PDF仍在下載時，可以檢視其線性化。
 * 在用戶端上轉譯PDF表格時，這個選項無法改善效能。
-* **GuideRSL選項**:啟用使用執行時期共用程式庫產生表單指南（已過時）的功能。 這表示第一個要求會下載較小的SWF檔案，以及儲存在瀏覽器快取中的較大共用程式庫。 如需詳細資訊，請參閱Flex說明檔案中的RSL。
+* **GuideRSL選項**: 啟用使用執行時期共用程式庫產生表單指南（已過時）的功能。 這表示第一個要求會下載較小的SWF檔案，以及儲存在瀏覽器快取中的較大共用程式庫。 如需詳細資訊，請參閱Flex說明檔案中的RSL。
 * 您也可以在用戶端上轉譯表單，以改善Forms服務的效能。 (請參 [閱用戶端上的轉譯表單](/help/forms/developing/rendering-forms-client.md)。)
 
 **轉譯表單**
@@ -66,7 +69,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 **另請參閱**
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -106,6 +109,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
    * 存 `PDFFormRenderSpec` 儲運行時選項以提高效能的對象。
    * 包 `URLSpec` 含Forms服務所需URI值的對象。
    * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
+
    該方 `renderPDFForm` 法返回包 `FormsResult` 含必須寫入客戶端Web瀏覽器的表單資料流的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
@@ -118,15 +122,15 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 **另請參閱**
 
-[快速入門（SOAP模式）:使用Java API最佳化效能](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[快速入門（SOAP模式）: 使用Java API最佳化效能](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### 使用web service API最佳化效能 {#optimize-the-performance-using-the-web-service-api}
 
-使用Forms API(web service)，以最佳效能呈現表單：
+使用Forms API(web service)演算具最佳效能的表單：
 
 1. 包含專案檔案
 
@@ -157,6 +161,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
    * 由方 `javax.xml.rpc.holders.LongHolder` 法填充的空對象。 （此引數將儲存表單中的頁數）。
    * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空對象。 （此引數將儲存地區值）。
    * 包含 `com.adobe.idp.services.holders.FormsResultHolder` 此操作結果的空對象。
+
    該方 `renderPDFForm` 法用必 `com.adobe.idp.services.holders.FormsResultHolder` 須寫入客戶端Web瀏覽器的表單資料流填充作為最後一個參數值傳遞的對象。
 
 1. 將表單資料串流寫入用戶端網頁瀏覽器
