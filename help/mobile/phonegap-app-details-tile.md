@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 translation-type: tm+mt
 source-git-commit: c58437f791daa11669198d916f0756ff4830677c
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 1%
 
 ---
 
@@ -122,7 +125,7 @@ Apple AppStore需要額外的中繼資料，才能送出您的應用程式以進
 
 AEM Apps的主要功能之一，就是讓行動應用程式透過ContentSync要求新內容，內容可以是html資源、頁面、視訊、影像、文字等。 一旦內容作者更新了內容，然後發佈該內容後，伺服器就會提供內容更新供行動應用程式下載。
 
-Content Update Server URL屬性是必須指向發佈實例的URL;直接或透過dispatcher或CDN。 URL的格式很簡單：
+Content Update Server URL屬性是必須指向發佈實例的URL; 直接或透過dispatcher或CDN。 URL的格式很簡單：
 
 `https://[hostname]:[port]`
 
