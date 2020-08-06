@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9017ab55-6d4a-4306-922f-223ab1b2504b
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1041'
+ht-degree: 0%
 
 ---
 
@@ -95,7 +98,7 @@ AEM 3D包含AEM Sites元件，您可用來實作網頁上3D模型的互動式檢
         <li>將正值設為向右旋轉</li> 
         <li>將負值設為左旋轉</li> 
         <li>設定0值以停用自動回轉。</li> 
-        </ul> <p>預設值為3 RPM，相當於每次完整旋轉20秒。<br /><br /> <strong> 注 </strong>意：旋轉速度假設幀速率為60秒。 通常，在功能更強大的圖形硬體上，小型到中型機型可達到此速度。 較大機型或較慢的裝置會以較低的速率自動旋轉。</p> </td> 
+        </ul> <p>預設值為3 RPM，相當於每次完整旋轉20秒。<br /> <br /> <strong>注意：</strong> 旋轉速度假設幀速率為60秒。 通常，在功能更強大的圖形硬體上，小型到中型機型可達到此速度。 較大機型或較慢的裝置會以較低的速率自動旋轉。</p> </td> 
     <td>已忽略Adobe Dimension資產。</td> 
     </tr> 
     <tr> 
