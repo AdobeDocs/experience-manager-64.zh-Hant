@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 0%
 
 ---
 
@@ -35,16 +38,16 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 「建立和翻譯」工作流程包含下列選項。 與每個選項相關聯的程式步驟類似於與資產的相應選項相關聯的步驟。
 
-* 僅建立結構：如需程式步驟，請參 [閱「僅建立資產結構」](translation-projects.md#create-structure-only)。
-* 建立新的翻譯專案：有關過程步驟，請參 [閱為資產建立新的翻譯項目](translation-projects.md#create-a-new-translation-project)。
-* 添加到現有翻譯項目：有關過程步驟，請參 [閱添加到現有資產的翻譯項目](translation-projects.md#add-to-existing-translation-project)。
+* 僅建立結構： 如需程式步驟，請參 [閱「僅建立資產結構」](translation-projects.md#create-structure-only)。
+* 建立新的翻譯專案： 有關過程步驟，請參 [閱為資產建立新的翻譯項目](translation-projects.md#create-a-new-translation-project)。
+* 添加到現有翻譯項目： 有關過程步驟，請參 [閱添加到現有資產的翻譯項目](translation-projects.md#add-to-existing-translation-project)。
 
 ## 更新語言副本工作流程 {#update-language-copies-workflow}
 
 「更新語言副本」工作流程包含下列選項。 與每個選項相關聯的程式步驟類似於與資產的相應選項相關聯的步驟。
 
-* 建立新的翻譯專案：如需程式步驟，請參 [閱為資產建立新的翻譯專案](translation-projects.md#create-a-new-translation-project) （更新工作流程）。
-* 添加到現有翻譯項目：如需程式步驟，請參 [閱「新增至資產的現有轉譯專案](translation-projects.md#add-to-existing-translation-project) （更新工作流程）」。
+* 建立新的翻譯專案： 如需程式步驟，請參 [閱為資產建立新的翻譯專案](translation-projects.md#create-a-new-translation-project) （更新工作流程）。
+* 添加到現有翻譯項目： 如需程式步驟，請參 [閱「新增至資產的現有轉譯專案](translation-projects.md#add-to-existing-translation-project) （更新工作流程）」。
 
 您也可以建立片段的暫時語言復本，就像建立資產的暫時復本一樣。 如需詳細資訊，請 [參閱建立資產的暫存語言副本](translation-projects.md#creating-temporary-language-copies)。
 
@@ -57,7 +60,7 @@ AEM可讓您翻譯包含各種類型媒體資產和系列的內容片段。 如�
 若要能夠轉譯包含混合媒體的內容片段，請先編輯預設的轉譯架構，以便轉譯與內容片段關聯的內嵌資產和系列。
 
 1. 按一下／點選AEM標誌，然後導覽至「工 **[!UICONTROL 具>部署>雲端服務」]**。
-1. 在 **[!UICONTROL Adobe Marketing cloud下方找]** 到翻譯整合 **[!UICONTROL ，然後按一下／點選「]**&#x200B;顯示設定 ****」。
+1. 在 **[!UICONTROL Adobe Marketing Cloud下方找]** 到翻譯整合 **[!UICONTROL ，然後按一下／點選「]**&#x200B;顯示設定 ****」。
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
@@ -65,7 +68,7 @@ AEM可讓您翻譯包含各種類型媒體資產和系列的內容片段。 如�
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
-1. 按一下工 **[!UICONTROL 具欄中的]** 「編輯」(Edit)，以顯示「轉 **[!UICONTROL 換配置」(Translation Config]** )對話框。
+1. 按一下工 **[!UICONTROL 具欄中的]** 「編輯」(Edit)，以顯示「 **[!UICONTROL 轉換配置」(Translation Config]** )對話框。
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
