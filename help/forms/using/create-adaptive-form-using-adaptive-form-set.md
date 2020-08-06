@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +74,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 </afData>
 ```
 
-如果您插入另一個表單，讓客戶提供住宅地址，請套用 `bindref` XML `/application/houseAddress or /houseAddress.`的外觀如下：
+如果您插入另一個表單，讓客戶提供住宅地址，請套用 `bindref` XML `/application/houseAddress or /houseAddress.`外觀如下：
 
 ```xml
 <afData>
@@ -125,7 +128,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 如果子表單未綁定，則其資料將存 `data`儲在父表 `afUnboundData` 單的XML架構部分的根目錄下。
 
-您可以多次將最適化表單新增為子表單。 請確定已正 `bindRef` 確修改，以便每個使用的自適應表單實例都指向資料根目錄下的不同子根目錄。
+您可以多次將自適應表單新增為子表單。 請確定已正 `bindRef` 確修改，以便每個使用的自適應表單實例都指向資料根目錄下的不同子根目錄。
 
 >[!NOTE]
 >
@@ -137,8 +140,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 在編輯模式中開啟父表格。
 1. 在側欄中，按一下「 **Assets** - ![browser](assets/assets-browser.png)」。 在「資產」下方， **從下拉式清單中選取「最適化表單** 」。
-   [ 在「資 ![產」下選擇最適化表單](assets/asset.png)](assets/asset-1.png)
+   [ ![在「資產」下選取最適化表單](assets/asset.png)](assets/asset-1.png)
 
 1. 拖放您要新增為子表單的最適化表單。
-   [ 拖 ![放網站中的最適化表](assets/drag-drop.png)](assets/drag-drop-1.png)單您拖放的最適化表單會新增為子表單。
+   [ ![將最適化表單拖放至您的網](assets/drag-drop.png)](assets/drag-drop-1.png)站中拖放最適化表單會新增為子表單。
 
