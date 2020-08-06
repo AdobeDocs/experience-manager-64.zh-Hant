@@ -1,8 +1,8 @@
 ---
 title: SAP Commerce Cloud
 seo-title: SAP Commerce Cloud
-description: 瞭解如何使用SAP Commerce cloud部署電子商務。
-seo-description: 瞭解如何使用SAP Commerce cloud部署電子商務。
+description: 瞭解如何使用SAP Commerce Cloud部署電子商務。
+seo-description: 瞭解如何使用SAP Commerce Cloud部署電子商務。
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 translation-type: tm+mt
 source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
 >
 >此頁面包含Hybris網站的連結。 若是某些頁面，您需要帳戶才能登入。
 
-## 使用SAP Commerce cloud部署電子商務 {#deploying-ecommerce-with-sap-commerce-cloud}
+## 使用SAP Commerce Cloud部署電子商務 {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -50,6 +53,7 @@ eCommerce Integration Framework的hybris擴充功能已更新為支援Hybris 5�
 >* 支援OCC第2版最多hybris 6.4。
 >* 您需要Java 7才能執行 [hybris 5伺服器。](https://www.hybris.com/en/architecture-technology)
 >* AEM擴充功能不支援hybris附加元件 [Telco Accelerator](https://www.hybris.com/en/products/telecommunication)。
+
 >
 
 
@@ -200,7 +204,7 @@ eCommerce Integration Framework的hybris擴充功能已更新為支援Hybris 5�
 
    [http://localhost:9002/hmc/hybris](http://localhost:9002/hmc/hybris)
 
-1. 從側欄導覽、解說 **系統** 和 **工具**。 然後選擇 **導入** ，開啟向 **導：「CSV匯入** 」視窗。
+1. 從側欄導覽、解說 **系統** 和 **工具**。 然後選擇 **導入** ，開啟向 **導： 「CSV匯入** 」視窗。
 1. 在「設 **定** 」索引標籤 **中** ，上傳下列 **「匯**&#x200B;入」檔案：
 
    [取得檔案](assets/geometrixx-outdoors-export.csv)
