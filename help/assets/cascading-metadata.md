@@ -4,6 +4,9 @@ description: 本文說明如何定義資產的階層式中繼資料。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '972'
+ht-degree: 13%
 
 ---
 
@@ -53,6 +56,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
    * 若要手動指定值，請選取「手動 **[!UICONTROL 新增]**」，點選／按一下「 **[!UICONTROL 新增選擇]** 」並指定選項文字和值。 例如，指定「視訊」、「PDF」、「Word」和「影像」資產類型。
    * 若要動態擷取JSON檔案中的值，請選取「 **[!UICONTROL 透過JSON路徑新增]** 」並提供JSON檔案的路徑。 AEM會在表單顯示給使用者時即時擷取鍵值配對。
+
    這兩種選項互斥。 您無法從JSON檔案匯入選項並手動編輯。
 
    ![add_choice](assets/add_choice.png)
@@ -106,8 +110,8 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
    ![視訊資產的階層式中繼資料](assets/video_asset.png)
 
-   *圖：視訊資產的階層式中繼資料*
+   *圖： 視訊資產的階層式中繼資料*
 
    ![檔案資產的階層式中繼資料](assets/doc_type_fields.png)
 
-   *圖：檔案資產的階層式中繼資料*
+   *圖： 檔案資產的階層式中繼資料*
