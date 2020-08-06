@@ -1,6 +1,6 @@
 ---
-title: 最佳實務
-seo-title: 最佳實務
+title: 最佳作法
+seo-title: 最佳作法
 description: Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳實務
 seo-description: Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳實務
 uuid: f962c31f-8140-482f-b189-16376e23bfed
@@ -11,11 +11,14 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 2%
 
 ---
 
 
-# Best Practices{#best-practices}
+# 最佳作法{#best-practices}
 
 ## 開發人員的最佳實務——快速入門 {#best-practices-for-developers-getting-started}
 
@@ -56,16 +59,16 @@ Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳
  <tbody>
   <tr>
    <td>標準觸控式UI背後的部分理論。</td> 
-   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">啟用觸控的UI:概念</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">啟用觸控的UI:結構</a></p> </td> 
+   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">啟用觸控的UI: 概念</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">啟用觸控的UI: 結構</a></p> </td> 
    <td>這些檔案提供觸控式使用者介面的概念和結構概觀。</td> 
   </tr>
   <tr>
-   <td>啟用觸控的UI:自訂控制台 </td> 
+   <td>啟用觸控的UI: 自訂控制台 </td> 
    <td><a href="/help/sites-developing/customizing-consoles-touch.md">自訂觸控式UI主控台</a></td> 
    <td>本檔案說明擴充觸控式UI主控台的最佳方式。</td> 
   </tr>
   <tr>
-   <td>可觸控的UI:自訂頁面製作</td> 
+   <td>可觸控的UI: 自訂頁面製作</td> 
    <td><a href="/help/sites-developing/customizing-page-authoring-touch.md">自訂可觸控的UI頁面製作</a></td> 
    <td>說明如何擴充觸控式UI的頁面製作。</td> 
   </tr>
@@ -90,7 +93,7 @@ Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳
 
 ## 工具/HTL {#tooling-htl}
 
-HTML範本語言(HTL)是AEM 6.0中新推出的HTML範本系統。它取代JSP和ESP作為AEM的偏好範本系統。
+HTML範本語言(HTL)是AEM 6.0中新推出的HTML範本系統。 它取代JSP和ESP作為AEM的偏好範本系統。
 
 |  |  |  |
 |---|---|---|
