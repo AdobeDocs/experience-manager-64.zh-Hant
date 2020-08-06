@@ -436,10 +436,10 @@ AEM中 [有兩個](/help/sites-authoring/select-ui.md) UI可用：
 **Day CQSE HTTP Service** Control the CQ Servlet Engine:
 
 * **NIO for HTTP**，是否使用NIO for HTTP。 預設為true。 僅在啟用HTTP時使用。
-* **連接超時**，連接超時（以毫秒為單位）。 此屬性同時適用於HTTP和HTTPS連接。 預設為60秒。
+* **連線逾時**，連線逾時（以毫秒為單位）。 此屬性同時適用於HTTP和HTTPS連接。 預設為60秒。
 
 * **啟用HTTPS** ，是否啟用HTTPS。 預設為false。
-* **會話超時**，以分鐘為單位指定的HTTP會話的預設期限。 如果逾時為0或更少，則作業不會逾時。 預設為10分鐘。
+* **Session Timeout**, Default lifetime of an HTTP session specified in minutes. 如果逾時為0或更少，則作業不會逾時。 預設為10分鐘。
 * **除錯記錄**，是否要寫入DEBUG級別消息。 預設為false。
 * **請求緩衝區大小**，請求的緩衝區大小（以位元組為單位）。 預設值為8KB。
 * **最大線程數**，用於處理請求的線程數。 預設值為200。
