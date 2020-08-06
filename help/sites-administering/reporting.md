@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 4%
 
 ---
 
 
 # 報告 {#reporting}
 
-為協助您監控和分析執行個體的狀態，AEM提供一組預設報表，可針對個別需求進行設定：
+為協助您監控和分析執行個體的狀態，AEM提供一組預設報表，可針對您的個別需求進行設定：
 
 * [元件報表](#component-report)
 * [磁碟使用情況](#disk-usage)
@@ -30,7 +33,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 所有報表皆可從「工具」控 **制台存** 取。 在左 **側窗格中選取** 「報表」，然後按兩下右側窗格中的必要報表，以開啟報表供檢視和／或設定。
 
-您也可以從「工具」主控台建立新的報 **表例項** 。 **在左**&#x200B;側窗格&#x200B;**中選擇報表，然後選**&#x200B;擇新建……從工具列中。 定義標 **題** 和名 **稱**，選取您需要的報表類型，然後按一下「 **建立」**。 您的新報表例項會出現在清單中。 按兩下此按鈕以開啟，然後從sidekick拖曳元件以建立第一欄並啟動報表定義。
+您也可以從「工具」主控台建立新的報 **表例項** 。 在左 **側窗格** 中選擇報表，然後選 **擇新建……** 從工具列中。 定義標 **題** 和名 **稱**，選取您需要的報表類型，然後按一下「 **建立」**。 您的新報表例項會出現在清單中。 按兩下此按鈕以開啟，然後從sidekick拖曳元件以建立第一欄並啟動報表定義。
 
 >[!NOTE]
 >
@@ -54,6 +57,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >* [Health Check](#health-check) uses selection fields to specify the data you want to report on.
 >* [Disk Usage](#disk-usage) （磁碟使用）使用連結深入查看儲存庫結構。
 >* [「工作流程](/help/sites-administering/reporting.md#workflow-report) 」報表提供執行個體上執行之工作流程的概述。
+
 >
 >
 因此，列配置的下列過程不適用。 如需詳細資訊，請參閱個別報表的說明。
@@ -72,13 +76,13 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 紅色的no-go符號會指出位置無效
 
 * 若要移動欄，請按一下標題，按住並拖曳至新位置
-* 若要移除欄，請按一下欄標題，按住並拖曳至報表標題區域（紅色減號會指出位置無效）;釋放滑鼠按鈕，「刪除元件」對話框將請求確認您確實要刪除該列。
+* 若要移除欄，請按一下欄標題，按住並拖曳至報表標題區域（紅色減號會指出位置無效）; 釋放滑鼠按鈕，「刪除元件」對話框將請求確認您確實要刪除該列。
 
 ### 欄下拉式功能表 {#column-drop-down-menu}
 
 報表中的每一欄都有下拉式功能表。 當滑鼠游標移動至欄標題儲存格時，這會變為可見。
 
-箭頭標題將出現在標題儲存格的最右側(不要與標題文字右側的箭頭標題混淆，箭頭標題會指出目前的排 [序機制](#sorting-the-data))。
+箭頭將出現在標題單元格的最右側(不要與標題文本右側的箭頭頭直接混淆，箭頭頭指示當前排 [序機制](#sorting-the-data))。
 
 ![reportcolumnsort](assets/reportcolumnsort.png)
 
@@ -88,18 +92,18 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 資料可依特定欄來排序：
 
-* 按一下適當的欄標題；排序將在遞增和遞減之間切換，在標題文字旁的箭頭標題指示
-* 使用 [欄的下拉式選單](#column-drop-down-menu) ，特別選取「 **升序排序** 」或「 **降序排序」**;此外，標題文字旁的箭頭將會指出
+* 按一下適當的欄標題； 排序將在遞增和遞減之間切換，在標題文字旁的箭頭標題指示
+* 使用 [欄的下拉式選單](#column-drop-down-menu) ，特別選取「 **升序排序** 」或「 **降序排序」**; 此外，標題文字旁的箭頭將會指出
 
 ### 群組與目前的資料圖表 {#groups-and-the-current-data-chart}
 
-在適當的欄上，您可 **以從欄的下拉式選單中**[選取「依此欄分組」](#column-drop-down-menu)。 這會根據該欄內的每個不同值來分組資料。 您可以選取多個要分組的欄。 當欄中的資料不適當時，此選項會變灰；例如，每個項目都是不同且唯一的，因此不能形成任何群組，例如使用者報表的「使用者ID」欄。
+在適當的欄上，您可 **以從欄的下拉式選單中**[選取「依此欄分組」](#column-drop-down-menu)。 這會根據該欄內的每個不同值來分組資料。 您可以選取多個要分組的欄。 當欄中的資料不適當時，此選項會變灰； 例如，每個項目都是不同且唯一的，因此不能形成任何群組，例如使用者報表的「使用者ID」欄。
 
 至少將一欄分組後，會根據此分組 **產生「目前** 」資料的圓形圖。 如果將多欄分組，圖表上也會指出此點。
 
 ![reportuser](assets/reportuser.png)
 
-將游標移到圓形圖上方，將顯示適當區段的匯總值。 這使用當前為列定義的聚合；例如，計數、最小值、平均值等。
+將游標移到圓形圖上方，將顯示適當區段的匯總值。 這使用當前為列定義的聚合； 例如，計數、最小值、平均值等。
 
 ### 篩選和匯總 {#filters-and-aggregates}
 
@@ -147,8 +151,8 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 可產生報表：
 
 1. 在必 **要欄上** ，設定分組。
-1. **編輯** 配置以定義快照的製作頻率；每小時或每日。
-1. **** 完成……啟動快照集合的定義。
+1. **編輯** 配置以定義快照的製作頻率； 每小時或每日。
+1. **完成……** 啟動快照集合的定義。
 
    左上角的紅色／綠色滑桿按鈕會指示正在收集快照。
 
@@ -177,9 +181,9 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 正在收集快照時，您可以：
 
-* **使**&#x200B;用完成……重新初始化系列。
+* 使 **用完成……** 重新初始化系列。
 
-   **完成** 「凍結」報表的結構（即指派給報表的欄，以及分組、排序、篩選等欄）和啟動快照。
+   **完成** 「凍結」報表的結構（即指派給報表的欄，以及分組、排序、篩選等欄） 和啟動快照。
 
 * 開啟「編 **輯** 」對話方塊，以選 **取「無資料快照** 」以終止收集，直到需要為止。
 
@@ -194,7 +198,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!NOTE]
 >
->預配置的報告不需要效能密集型報告，但仍建議在生產環境上使用每日快照。 如果可能，請在您網站上活動不多時，於一天中的某一時間執行這些每日快照；此參數可定義為 `Daily snapshots (repconf.hourofday)` Day CQ Reporting **Configuration的參數**;如需 [如何設定OSGI](/help/sites-deploying/configuring-osgi.md) 的詳細資訊，請參閱OSGI設定。
+>預配置的報告不需要效能密集型報告，但仍建議在生產環境上使用每日快照。 如果可能，請在您網站上活動不多時，於一天中的某一時間執行這些每日快照； 此參數可定義為 `Daily snapshots (repconf.hourofday)` Day CQ Reporting **Configuration的參數**; 如需 [如何設定OSGI](/help/sites-deploying/configuring-osgi.md) 的詳細資訊，請參閱OSGI設定。
 
 #### 顯示限制 {#display-limits}
 
@@ -257,7 +261,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
       選取此選項時，將 **[會顯示](#load-data)**「載入資料」按鈕(在報&#x200B;**表的「編輯**」旁)。**載入資料**，將載入資料並重新整理顯示的報表資料。
 
-* **Snapshots** You can define how fecury snapshots are to be made;每日、每小時或完全不是。
+* **Snapshots** You can define how fecury snapshots are to be made; 每日、每小時或完全不是。
 
 ### 載入資料 {#load-data}
 
@@ -309,7 +313,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 * 特定元件的例項分佈方式。
 
-   如果特定頁面(即&quot;heavy pages&quot;)遇到效能問題。
+   如果特定頁面(即 &quot;heavy pages&quot;)遇到效能問題。
 
 * 識別網站中頻繁／較不頻繁的變更。
 * 瞭解頁面內容如何隨著時間發展。
@@ -322,7 +326,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 磁碟使用情況報告顯示有關儲存在儲存庫中的資料的資訊。
 
-報告在儲存庫的根(/)中啟動；通過按一下特定的分支，您可以在儲存庫內深入查看（當前路徑將反映在報告標題中）。
+報告在儲存庫的根(/)中啟動； 通過按一下特定的分支，您可以在儲存庫內深入查看（當前路徑將反映在報告標題中）。
 
 ![reportdiskusage](assets/reportdiskusage.png)
 
@@ -351,19 +355,19 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    要分析的最大請求數。
 
-   預設值： `-1` （全部）
+   預設值： `-1` (all)
 
 * **電子郵件地址**
 
    傳送結果至電子郵件地址。
 
-   可選；預設值：空白
+   可選； 預設值： 空白
 
 * **每日運行於(hh:mm)**
 
    指定報表每日自動執行的時間。
 
-   可選；預設值：空白
+   可選； 預設值： 空白
 
 ![reportthealth](assets/reporthealth.png)
 
@@ -392,7 +396,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ### 使用者產生的內容報表 {#user-generated-content-report}
 
-本報告提供使用者產生內容的相關資訊；無論是評論、評分還是論壇。
+本報告提供使用者產生內容的相關資訊； 無論是評論、評分還是論壇。
 
 [以下列資訊](#selecting-and-positioning-the-data-columns) :
 
@@ -413,7 +417,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ### 使用者報表 {#user-report}
 
-此報告提供所有已註冊帳戶及／或設定檔的使用者的相關資訊；這可包括組織內的作者和外部訪客。
+此報告提供所有已註冊帳戶及／或設定檔的使用者的相關資訊； 這可包括組織內的作者和外部訪客。
 
 [關於](#selecting-and-positioning-the-data-columns) :
 
@@ -440,7 +444,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 #### Generic Column {#generic-column}
 
-「使 **用者報表** 」中有「一般」欄位，讓您可以存取自訂資訊，通常是從使用者 [資料中存取](/help/sites-administering/identity-management.md#profiles-and-user-accounts);例如，「 [收藏色」，如「將欄位添加到配置檔案定義」下詳述](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)。
+「使 **用者報表** 」中有「一般」欄位，讓您可以存取自訂資訊，通常是從使用者 [資料中存取](/help/sites-administering/identity-management.md#profiles-and-user-accounts); 例如，「 [收藏色」，如「將欄位添加到配置檔案定義」下詳述](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)。
 
 當您執行下列任一操作時，「一般」(Generic)欄對話方塊將會開啟：
 
@@ -493,7 +497,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 意思是您可以：
 
-* 監控工作流程的平均持續時間；如果這種情況經常發生，則會反白顯示工作流程的問題。
+* 監控工作流程的平均持續時間； 如果這種情況經常發生，則會反白顯示工作流程的問題。
 
 ![報告流量](assets/reportworkflowintance.png)
 
@@ -527,7 +531,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!CAUTION]
 >
->存取這些報告可能是安全問題；因此，我們建議您配置Dispatcher，以便 `/etc/reports` 外部訪客無法使用。 如需詳細 [資訊，請參閱安全性檢查清單](security-checklist.md) 。
+>存取這些報告可能是安全問題； 因此，我們建議您配置Dispatcher，以便 `/etc/reports` 外部訪客無法使用。 如需詳細 [資訊，請參閱安全性檢查清單](security-checklist.md) 。
 
 ## 執行報表所需的權限 {#permissions-needed-for-running-reports}
 
