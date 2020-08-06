@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 1%
 
 ---
 
@@ -85,7 +88,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * **[!UICONTROL 最大消息長]**&#x200B;度可輸入到文本框中的最大字元數。 預設為4096個字元。
 
-* **[!UICONTROL 僅在勾選「允]**&#x200B;許檔案上傳 **[!UICONTROL 」時，允許的檔案類型]** 「相關」。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何檔案類型，則不允許指定那些未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
+* **[!UICONTROL 僅在勾選「允]**&#x200B;許檔案上傳 **[!UICONTROL 」時，允許的檔案類型]** 「相關」。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何檔案類型，則不允許指定那些未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
 
 * **[!UICONTROL Rich Text Editor]**&#x200B;如果勾選，則可輸入含有標籤的貼文。 預設為未勾選。
 
@@ -135,11 +138,11 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 選擇要訪問 `Reviews Summary (Display)` 的已放置元件，並選 `Configure` 擇開啟編輯對話框的表徵圖。
 
-![chlimage_1-347](assets/chlimage_1-347.png)
+![chlimage_1-348](assets/chlimage_1-347.png)
 
 在「查看摘 **[!UICONTROL 要」頁籤下]**
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![chlimage_1-349](assets/chlimage_1-348.png)
 
 * `Review Path`
 
@@ -161,7 +164,7 @@ Reviews元件使用注釋系統。
 
 在「資 **[!UICONTROL 源類型]** 」頁籤下，為元件的新實例指定自定義資源 `Comments or Voting`類型：
 
-![chlimage_1-349](assets/chlimage_1-349.png)
+![chlimage_1-348](assets/chlimage_1-349.png)
 
 * **[!UICONTROL 評論資源類型]**
 
