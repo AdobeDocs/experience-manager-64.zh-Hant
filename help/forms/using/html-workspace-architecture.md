@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 0%
 
 ---
 
@@ -32,5 +35,5 @@ AEM Forms工作區設計為模組化JavaScript™元件，可個別自訂，並�
 
 針對AEM Forms工作區傳送的套件：
 
-* `adobe-lc-workspace-pkg-<version>.zip`:它是CRX包，即，它可以使用包管理器在CRX中部署。
-* `adobe-lc-workspace-<version>-src.zip`:此封存包含AEM Forms工作區的完整程式碼和指令碼，以建立部署套件——發運、除錯和開發套件。
+* `adobe-lc-workspace-pkg-<version>.zip`: 它是CRX包，即，它可以使用包管理器在CRX中部署。
+* `adobe-lc-workspace-<version>-src.zip`: 此封存包含AEM Forms工作區的完整程式碼和指令碼，以建立部署套件——發運、除錯和開發套件。
