@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +25,9 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 1. 在管理控制台中，按一下「服務>表格」。
 1. 在「表單輸出」(Form Output)下，在「輸出類型」(Output type)清單中，選擇以下選項之一：
 
-   **** 完整HTML:若要在完整HTML標籤（完整的HTML頁面）中轉譯表單。 此值為預設值。
+   **完整HTML:** 若要在完整HTML標籤（完整的HTML頁面）中轉譯表單。 此值為預設值。
 
-   **** 表單內文：若要在標籤內轉 `<BODY>` 譯表單（非完整的HTML頁面）。
+   **表單內文：** 若要在標籤內轉 `<BODY>` 譯表單（非完整的HTML頁面）。
 
 1. 按一下「儲存」。
 
@@ -32,11 +35,11 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 
 1. 在「表單輸出」(Form Output)下，在「渲染於」(Render at)清單中，選擇以下選項之一：
 
-   **** 客戶：在Adobe Acrobat或Adobe Reader中轉譯PDF表格。 用戶端轉換可改善AEM表單的效能，並僅適用於PDFForm轉換。
+   **客戶：** 在Adobe Acrobat或Adobe Reader中轉譯PDF表格。 用戶端轉換可改善AEM表單的效能，並僅適用於PDFForm轉換。
 
-   **** 伺服器：在應用程式伺服器上轉譯PDF表格。
+   **伺服器：** 在應用程式伺服器上轉譯PDF表格。
 
-   **** 自動：要在XDP檔案的配置值指定的位 `dynamicRender` 置中呈現PDF表單。 此值為預設值。
+   **自動：** 要在XDP檔案的配置值指定的位 `dynamicRender` 置中呈現PDF表單。 此值為預設值。
 
 1. 按一下「儲存」。
 
