@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1173'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
 * 電子郵件的SMTP
 * 用於用戶管理的LDAP
 
-例如，您可以將代理伺服器放在通過TCP/IP網路通信的任意兩個應用程式之間；例如網頁瀏覽器和AEM。 這可讓您監控當您請求AEM頁面時的實際情況。
+例如，您可以將代理伺服器放在通過TCP/IP網路通信的任意兩個應用程式之間； 例如網頁瀏覽器和AEM。 這可讓您監控當您請求AEM頁面時的實際情況。
 
 ## 啟動代理伺服器工具 {#starting-the-proxy-server-tool}
 
@@ -182,7 +185,7 @@ Proxy伺服器是確認Cookie是否已正確設定的好工具。 這裡，我�
 
 * AEM產生的cq3session Cookie
 * 由CFC產生的顯示模式切換Cookie
-* 名為JSESSIONID的Cookie;如果未使用&lt;%@ page session=&quot;false&quot; %>顯式關閉，則JSP會自動建立此選項：
+* 名為JSESSIONID的Cookie; 如果未使用&lt;%@ page session=&quot;false&quot; %>顯式關閉，則JSP會自動建立此選項：
 
 ```xml
 C-0-#000393 -> [Cookie: Show=ShowMode; cq3session=3bce15cf-1575-1b4e-8ea6-0d1a0c64738e; JSESSIONID=4161a56b-f193-d748-88a5-e09c5ff7ef2a ]
