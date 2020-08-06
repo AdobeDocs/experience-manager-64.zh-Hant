@@ -10,6 +10,9 @@ topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ CRX QueryBuilder REST介面透過Java API和REST API公開「資產共用查詢�
    >
    >在每個查詢中，路徑參數都指向crx儲存位置，字元會根據URL標準逸出。
 
-## 使用Query Builder API建立服務 {#creating-a-service-using-query-builder-api-nbsp}
+## 使用Query Builder API建立服務  {#creating-a-service-using-query-builder-api-nbsp}
 
 使用Query Builder API建立服務的先決條件是 [建立和部署CQ OSGI搭售](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) , [以及使用Query Builder API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html)。
 
@@ -420,7 +423,7 @@ public class PeriodicProcessVolume {
 </project>
 ```
 
-## 建立個別的UI {#creating-a-separate-ui-nbsp}
+## 建立個別的UI  {#creating-a-separate-ui-nbsp}
 
 建立個別UI以顯示結果的先決條件是 [Sling Basics](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html)、 [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) ，以及提供適當的存 [取權限](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)。
 
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## 將報表UI整合在現有的流程報表UI中 {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## 將報表UI整合在現有的流程報表UI中  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 建立個別UI以顯示結果的先決條件是 [Sling Basics](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html)、 [Creating a CRX Node](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) ，以及提供適當的存 [取權限](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control)。
 
@@ -640,6 +643,7 @@ response.setCharacterEncoding("utf-8");
    * **link**—— 指定個別UI轉譯器的相對連結。 該連結建立步驟1。
    * **description**—— 指定報表的一行說明。 您可將說明欄位保留為空白。
    * **圖示**-指定要以圖形方式呈現報表的影像。 您可以將圖示欄位保留為空白。
+
    ![節點的屬性 ](assets/nodeproperties.png)
 
    節點的屬性
