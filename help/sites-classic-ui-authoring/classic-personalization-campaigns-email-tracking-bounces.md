@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 0%
 
 ---
 
@@ -43,15 +46,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    所有配置都需要輪詢URL中的以下資訊：
 
-   `username`:用於連接的用戶名
+   `username`: 用於連接的用戶名
 
-   `password`:用於連接的口令
+   `password`: 用於連接的口令
 
    此外，您還可以根據通訊協定來設定特定設定。
 
    **POP3配置屬性：**
 
-   `pop3.leave.on.server`:定義是否在伺服器上保留消息。 設定為true可將消息留在伺服器上，否則為false。 預設為true。
+   `pop3.leave.on.server`: 定義是否在伺服器上保留消息。 設定為true可將消息留在伺服器上，否則為false。 預設為true。
 
    **POP3示例：**
 
@@ -74,7 +77,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true | 使用IMAP over SSL連線至GMail 993並使用使用者／機密，只會收到已看到的訊息。 |
    | imaps://imap.gmail.com:993/inbox?username=user&amp;password=secret&amp;imap.flag.SEEN=true&amp;imap.flag.SEEN=false | 使用IMAP over SSL連接GMail 993和用戶／密碼，即可讀取或獲得新消息。 |
 
-1. 保存配置。
+1. 儲存設定。
 
 ## 設定電子報服務元件 {#configuring-the-newsletter-service-component}
 
@@ -94,7 +97,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    |---|---|
    | 活動無快取(sent.activity.nocache) | 定義快取設定，以用於電子報傳送的活動 |
 
-   儲存後，電子報MCM服務會執行下列作業：
+   儲存後，電子報MCM服務會執行下列動作：
 
    * 在成功傳送電子報時，將活動寫入隱藏的串流給使用者。
    * 如果偵測到彈回數且使用者彈回數變更，則寫入活動。
