@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 2%
 
 ---
 
@@ -50,7 +53,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 預覽表格 {#previewing-a-form-1}
 
-1. 選取您要預覽的資產，然後按一下動作工具 ![列中的「預覽aem6forms_preview](assets/aem6forms_preview.png) 」。
+1. 選取您要預覽的資產，然後按一下動作工具列 ![中的「預覽aem6forms_preview](assets/aem6forms_preview.png) 」。
 
    >[!NOTE]
    >
