@@ -134,7 +134,7 @@ ht-degree: 2%
     <ul> 
      <li>日期</li> 
      <li>時間</li> 
-     <li>數字</li> 
+     <li>數量</li> 
      <li>持續時間</li> 
      <li>費用</li> 
     </ul> </td> 
