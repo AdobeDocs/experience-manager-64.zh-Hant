@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 5c8971ab-b07c-4131-b4cb-f34c52425014
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 >
 >如需詳 [細資訊，請參閱「開發人員](/help/mobile/phonegap-contentsync.md) 」區段中的「具備內容同步功能的行動裝置」。
 
-在此處，您可在AEM mobile中建立、編輯和刪除內容，其方式與在AEM Sites中的方式大同小異。
+在此處，您可在AEM Mobile中建立、編輯和刪除內容，其方式與在AEM Sites中的方式大同小異。
 
 「管 **理頁面內容」方塊** ，會顯示受管理內容的頁數，以及針對特定裝載上次修改的頁數。 您可以按一下方塊中的每個記錄，深入鑽研內容以建立、複製、移動、刪除和更新頁面。
 
@@ -51,7 +54,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 請注 *意，所有內容都是內容*，這表示應用程式樣式、複製（文字）、媒體、頁面、導覽，以及內容定位都可在OTA中編輯和更新，毋需前往應用程式商店。
 
-若要編輯AEM mobile內容，*AEM作者*將需要對AEM的內容編輯介面有深入的瞭解：在 [AEM中編寫頁面。](/help/sites-authoring/qg-page-authoring.md)
+若要編輯AEM Mobile內容，*AEM作者*將需要對AEM的內容編輯介面有深入的瞭解： [在AEM中編寫頁面。](/help/sites-authoring/qg-page-authoring.md)
 
 ## 「管理內容封裝」方塊 {#the-manage-content-packages-tile}
 
