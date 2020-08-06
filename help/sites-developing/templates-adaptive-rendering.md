@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 範本通常以回應式格線為基礎，而根據這些範本建立的頁面則完全回應，可自動調整至用戶端裝置的檢視區。 使用頁面編輯器中的「模擬器」工具列，作者可將版面定位至特定裝置。
 
-您也可以設定範本，以支援自適應轉換。 當裝置群組已正確設定時，在模擬器模式中選取裝置時，頁面會在URL中以不同的選擇器呈現。 使用選取器，可透過URL直接呼叫特定頁面演算。
+您也可以設定範本，以支援自適應轉換。 當裝置群組已正確設定時，當在模擬器模式中選取裝置時，頁面會在URL中以不同的選擇器呈現。 使用選取器，可透過URL直接呼叫特定頁面演算。
 
 設定裝置群組時請記住：
 
@@ -74,7 +77,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 現在，當在頁面 [編輯器中使用](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) 「模擬器」(例如修改版面時 [](/help/sites-authoring/responsive-layout.md))並選擇已設定裝置群組的裝置時，會以選擇器呈現頁面，作為URL的一部分。
 
-在我們的範例中，當根據 **Experience Page** 範本編輯頁面，並在模擬器中選擇iPhone 4時，會將頁面轉譯為包含選擇器，而非 `arctic-surfing-in-lofoten.smart.html``arctic-surfing-in-lofoten.html`
+在我們的範例中，當根據 **Experience Page** 範本編輯頁面，並在模擬器中選擇iPhone 4時，會將頁面轉譯為包含選擇器，而非 `arctic-surfing-in-lofoten.smart.html` `arctic-surfing-in-lofoten.html`
 
 您也可以使用此選擇器直接呼叫頁面。
 
