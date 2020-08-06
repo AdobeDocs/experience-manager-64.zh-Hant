@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
 
 # 在傳統UI中編寫{#authoring-in-the-classic-ui}
 
-## 傳統UI和觸控式UI {#classic-ui-and-touch-enabled-ui}
+## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
 
 Classic UI是案頭導向的使用者介面，自CQ5（AEM的前身）起就提供。 以下有關編寫的檔案主要針對此UI。
 
