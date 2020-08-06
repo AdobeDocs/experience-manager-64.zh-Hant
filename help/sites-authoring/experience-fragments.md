@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
 source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 7%
 
 ---
 
@@ -75,7 +78,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 建立資料夾允許您：
 
-* 為您的體驗片段建立有意義的結構；例如，根據分類
+* 為您的體驗片段建立有意義的結構； 例如，根據分類
 
    >[!NOTE]
    >
@@ -91,7 +94,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 >[!CAUTION]
 >
->以下螢幕擷取是從WKND網站使用Adobe Experience manager做為雲端服務擷取的。
+>以下螢幕擷取是從WKND網站使用Adobe Experience Manager做為雲端服務擷取的。
 
 ![體驗片段的資料夾](assets/xf-folders.png)
 
@@ -124,7 +127,7 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
    ![體驗片段屬性——允許的範本](assets/xf-folders-templates.png)
 
-1. 選擇 **[!UICONTROL 保存並關閉]**。
+1. Select **[!UICONTROL Save and Close]**.
 
 ### 為實例配置允許的模板 {#configure-allowed-templates-instance}
 
@@ -165,11 +168,11 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
 1. 輸入 **[!UICONTROL 體驗]**&#x200B;片段的屬性。
 
-   「標 **[!UICONTROL 題]** 」為強制。 如果名 **[!UICONTROL 稱]** (Name)留空，則會從標題( **[!UICONTROL Title)中衍生出來]**。
+   標 **[!UICONTROL 題]** 是必填的。 如果名 **[!UICONTROL 稱]** (Name)留空，則會從標題( **[!UICONTROL Title)中衍生出來]**。
 
    ![xf-authoring-03](assets/xf-authoring-03.png)
 
-1. 按一下 **[!UICONTROL 建立]**。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。
 
    將顯示一條消息。 選取:
 
@@ -209,9 +212,10 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
    * **[!UICONTROL 範本]**
    * **[!UICONTROL 標題]**
-   * **[!UICONTROL 名稱]**;如果保留空白，則會從「標題」衍生
+   * **[!UICONTROL 名稱]**; 如果保留空白，則會從「標題」衍生
    * **[!UICONTROL 說明]**
    * **[!UICONTROL 變數標記]**
+
    ![xf-authoring-07](assets/xf-authoring-07.png)
 
 1. 使用「完 **[!UICONTROL 成]** （勾選圖示）確認」，新變數會顯示在面板中：
@@ -230,10 +234,11 @@ source-git-commit: 6f6952686446359485f180050219a12db9d3969a
 
    ![xf-authoring-09](assets/xf-authoring-09.png)
 
-1. 將實際的體驗片段新增至元件例項；其中：
+1. 將實際的體驗片段新增至元件例項； 其中：
 
    * 從「資產瀏覽器」拖曳必要片段至元件
    * Select **[!UICONTROL Configure]** from the component toolbar and specify the fragment to use, confirm with **Done** (tick)
+
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
    >[!NOTE]
