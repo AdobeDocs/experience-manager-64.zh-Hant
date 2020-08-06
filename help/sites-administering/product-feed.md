@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1f920892-c52e-42ca-900c-2c7ab3c503b3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 1%
 
 ---
 
@@ -39,9 +42,9 @@ AEM與 [Search&amp;Promote整合](https://www.adobe.com/solutions/testing-target
    >
    >例 **[!UICONTROL 如]** ，網站根目錄是您電子商務網站的根目錄 `/content/geometrixx-outdoors/en`。
    >
-   >Identifier屬 **[!UICONTROL 性是]** JCR屬性，可唯一識別產品： `identifier`。
+   >Identifier屬 **[!UICONTROL 性是]** JCR屬性，可唯一識別產品： `identifier`.
 
-1. 按一下 **[!UICONTROL 確定]**。
+1. 按一下&#x200B;**[!UICONTROL 「確定」]**。
 
 然後，您也必須先在Web主控台中編輯兩個設定，才能產生產品饋送。
 
@@ -67,7 +70,7 @@ AEM與 [Search&amp;Promote整合](https://www.adobe.com/solutions/testing-target
 1. 導覽至您的Search&amp;Promote設定。
 1. 按一下「 **[!UICONTROL Scheduler configuration]** (計畫程式配 **[!UICONTROL 置)」旁邊的+]**。
 1. 輸入頁 **[!UICONTROL 面作者]** 可辨識的標題和唯一 **[!UICONTROL 名稱]**。
-1. 按一下 **[!UICONTROL 建立]**。對話方塊隨即開啟。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。對話方塊隨即開啟。
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -85,6 +88,6 @@ AEM與 [Search&amp;Promote整合](https://www.adobe.com/solutions/testing-target
    >
    >隨選索引功能可運用Search&amp;Promote的「遠端控制」功能。 呼叫遠端索引時，索引不會立即啟動，但會使用遠端控制功能將索引請求張貼至Search&amp;Promote。
 
-1. 按一下 **[!UICONTROL 確定]**。
+1. 按一下&#x200B;**[!UICONTROL 「確定」]**。
 
-現在，您已設定好所有項目，所以可以看到XML頁面，其中包含所設定網站根目錄下的所有產品： [http://localhost:4502/etc/commerce/searchpromote/feed/full](http://localhost:4502/etc/commerce/searchpromote/feed/full)。
+現在，您已設定好所有項目，所以可以看到XML頁面，其中包含所設定網站根目錄下的所有產品： [http://localhost:4502/etc/commerce/searchpromote/feed/full](http://localhost:4502/etc/commerce/searchpromote/feed/full).
