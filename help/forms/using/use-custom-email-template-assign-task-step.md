@@ -8,6 +8,9 @@ topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 translation-type: tm+mt
 source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
@@ -70,6 +73,6 @@ AEM Forms現成可用，提供電子郵件通知的範本。 此範本提供標�
 
 1. 選取新建立的HTML電子郵件範本。
 
-1. 按一下 **[!UICONTROL 確定]**。 範本已變更。
+1. 按一下&#x200B;**[!UICONTROL 「確定」]**。範本已變更。
 
 電子郵件通知也使用中 [繼資料](/help/forms/using/use-metadata-in-email-notifications.md)。 例如，到期日、優先順序、工作流程名稱等。 您也可以設定範本以使用自訂 [中繼資料](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification)。
