@@ -428,6 +428,7 @@ cURL -i -X POST -H標 *題* -u *signin * -F *操作* -F *badge * *member-profile
 >
 >* 如果已啟用「隧道服務」，則可 [以參考作者實例](users.md#tunnel-service) 。
 >* 可能是模糊的隨機名稱——請參閱安全性檢 [查清單](../../help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) ，瞭解可授權ID
+
 >
 
 
