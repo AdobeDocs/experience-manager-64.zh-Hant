@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '2507'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## 簡介 {#introduction}
 
-在AEM Communities中，從發佈環境（視設定的權限而定）, *網站訪客可能會成* 為 **&#x200B;成員 *、建立*&#x200B;使用者群組 *，並編輯其*&#x200B;成員設定檔。
+在AEM Communities中，從發佈環境（視設定的權限而定）, *網站訪客可能會成為* 成員 *、建*&#x200B;立使用者群組 *，以及編輯其***&#x200B;成員設定檔。
 
 *使用者資料* ，是指使用者 *、使用者*&#x200B;設定檔 *和使* 用者群組 **。
 
@@ -43,17 +46,17 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 * [用戶同步](../../help/sites-administering/sync.md)
 
-## 使用者在背景同步 {#user-sync-in-the-background}
+## 使用者在背景同步  {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
-* **VLT包**:是發佈者上所做所有變更的zip檔案，需要在發佈者間散發。 發佈者上的變更會產生由變更事件接聽程式挑選的事件。 這會建立包含所有變更的vlt套件。
+* **VLT包**: 是發佈者上所做所有變更的zip檔案，需要在發佈者間散發。 發佈者上的變更會產生由變更事件接聽程式挑選的事件。 這會建立包含所有變更的vlt套件。
 
-* **散發套件**:包含Sling的散發資訊。 這是內容需要在何處發佈，以及上次何時發佈的資訊。
+* **散發套件**: 包含Sling的散發資訊。 這是內容需要在何處發佈，以及上次何時發佈的資訊。
 
 ## 當…… {#what-happens-when}
 
-### 從Communities Sites console發佈網站 {#publish-site-from-communities-sites-console}
+### 從Communities Sites Console發佈網站 {#publish-site-from-communities-sites-console}
 
 在作者上，當社群網站從 [Communities Sites主控台發佈時](sites-console.md)[](../../help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents) ，其效果是複製相關頁面，而Sling則會分發動態建立的社群使用者群組，包括其會籍。
 
@@ -69,7 +72,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 在程式中，新網站頁面會複製到所有發佈例項。 動態建立的社群使用者群組及其會籍是Sling散布至所有發佈例項。
 
-### 使用者或使用者群組是使用Security console建立的 {#users-or-user-groups-are-created-using-security-console}
+### 使用者或使用者群組是使用Security Console建立的 {#users-or-user-groups-are-created-using-security-console}
 
 根據設計，在發佈環境中建立的使用者資料不會出現在作者環境中，反之亦然。
 
@@ -121,7 +124,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 1. 找 **[!UICONTROL 到Apache Sling Distribution Agent - Sync Agents Factory]**。
 
    * 選取要開啟以進行編輯的現有設定（鉛筆圖示）。
-   * 驗證名稱： **`socialpubsync`。**
+   * 驗證名稱： **`socialpubsync`.**
    * 選中「啟 **[!UICONTROL 用]** 」核取方塊。
    * 選擇 **[!UICONTROL 使用多個隊列]**。
    * 指定 **[!UICONTROL 匯出端點]** 和匯 **[!UICONTROL 入工具端點]** （您可以新增更多匯出工具和匯入工具端點）。
@@ -224,6 +227,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
    * 選取要開啟以進行編輯的現有設定（鉛筆圖示）
    * 驗 `Name:` 證 **`socialpubsync`\-scheduled-trigger **
    * 將「間隔」（以秒為單位）設定為所需間隔並保存。
+
    ![scheduled-trigger](assets/scheduled-trigger.png)
 
 ### AEM Communities使用者同步接聽程式 {#aem-communities-user-sync-listener}
@@ -329,7 +333,7 @@ AEM作者例項使用Sling ID來識別資料來自何處，以及它需要（或
 在每個AEM發佈例項上：
 
 1. 存取 [Web Console](../../help/sites-deploying/configuring-osgi.md)，例如 [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)。
-1. 找到 **[!UICONTROL Apache Sling Distribution Packaging - Vault Package Builder Factory Builder名稱]**:socialpubsync-vlt
+1. 找到 **[!UICONTROL Apache Sling Distribution Packaging - Vault Package Builder Factory Builder名稱]**: socialpubsync-vlt
 1. 選擇編輯表徵圖。
 1. 新增兩個套件篩選：
 
@@ -341,7 +345,7 @@ AEM作者例項使用Sling ID來識別資料來自何處，以及它需要（或
       `/home/users|**+**.\*/rep:policy`
    * 要防止策略被分發，請設定
 
-      Acl處理：忽略
+      Acl處理： 忽略
 
 ![vault-package-builder-factory](assets/vault-package-builder-factory.png)
 
