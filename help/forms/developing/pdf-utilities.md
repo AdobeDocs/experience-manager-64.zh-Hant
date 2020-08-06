@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 1%
 
 ---
 
@@ -54,7 +57,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 **建立PDFUlitiveService用戶端**
 
-您必須先建立PDF utility用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，這是透過建立物件來 `PDFUtilityServiceClient` 完成。 使用web service API，這是透過使用物件來 `PDFUtilityServiceService` 完成。
+您必須先建立PDFutilities用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，您就可建立物件來完成 `PDFUtilityServiceClient` 此作業。 使用web service API，這是透過使用物件來 `PDFUtilityServiceService` 完成。
 
 **叫用PDF至XDP轉換作業**
 
@@ -66,7 +69,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [使用web service API將PDF檔案轉換為XDP檔案](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -90,7 +93,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [將PDF檔案轉換為XDP檔案](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -141,7 +144,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 **建立PDFUlitiveService用戶端**
 
-您必須先建立PDF utility用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，這是透過建立物件來 `PDFUtilityServiceClient` 完成。 使用web service API，這是透過使用物件來 `PDFUtilityServiceService` 完成。
+您必須先建立PDFutilities用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，您就可建立物件來完成 `PDFUtilityServiceClient` 此作業。 使用web service API，這是透過使用物件來 `PDFUtilityServiceService` 完成。
 
 **叫用XDP至PDF轉換作業**
 
@@ -153,7 +156,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [使用web service API將XDP檔案轉換為PDF檔案](pdf-utilities.md#converting-xdp-documents-into-pdf-documents-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -177,7 +180,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [將XDP檔案轉換為PDF檔案](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -228,7 +231,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 **建立PDFUlitiveService用戶端**
 
-您必須先建立PDF utility用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，這是透過建立物件來 `PDFUtilityServiceClient` 完成。 使用web service API，這是使用物件來完 `PDFUtilityServiceService` 成。
+您必須先建立PDFutilities用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，您就可建立物件來完成 `PDFUtilityServiceClient` 此作業。 使用web service API，這是使用物件來完 `PDFUtilityServiceService` 成。
 
 **調用屬性檢索操作**
 
@@ -240,7 +243,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [使用web service API擷取PDF檔案屬性](pdf-utilities.md#retrieve-pdf-document-properties-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -262,13 +265,14 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
    * 代 `com.adobe.idp.Document` 表PDF文檔的對象。
    * 包 `PDFPropertiesOptionSpec` 含要評估的屬性的對象。
+
    方法返回包 `PDFPropertiesResult` 含查詢結果的對象。
 
 **另請參閱**
 
 [擷取PDF檔案屬性](pdf-utilities.md#retrieving-pdf-document-properties)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -291,6 +295,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
    * 代 `BLOB` 表PDF文檔的對象。
    * 包 `PDFPropertiesOptionSpec` 含要評估的屬性的對象。
+
    方法返回包 `PDFPropertiesResult` 含查詢結果的對象。
 
 **另請參閱**
@@ -325,15 +330,15 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 **建立PDFUlitiveService用戶端**
 
-您必須先建立PDF utility用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，這是透過建立物件來 `PDFUtilityServiceClient` 完成。 使用web service API，這是使用物件來完 `PDFUtilityServiceService` 成。
+您必須先建立PDFutilities用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，您就可建立物件來完成 `PDFUtilityServiceClient` 此作業。 使用web service API，這是使用物件來完 `PDFUtilityServiceService` 成。
 
 **設定保存模式**
 
 您可以選擇下列其中一個儲存選項：
 
-* `INCREMENTAL`:以增量方式節省成本，以縮短節省成本的時間
-* `FAST_WEB_VIEW`:儲存以快速檢視網頁
-* `FULL`:使用完整儲存進行儲存（無最佳化）
+* `INCREMENTAL`: 以增量方式節省成本，以縮短節省成本的時間
+* `FAST_WEB_VIEW`: 儲存以快速檢視網頁
+* `FULL`: 使用完整儲存進行儲存（無最佳化）
 
 **調用保存樣式操作**
 
@@ -353,7 +358,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [使用web service API設定PDF檔案儲存選項](pdf-utilities.md#set-pdf-document-save-options-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -383,6 +388,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
    * 代 `com.adobe.idp.Document` 表PDF文檔的對象。
    * 包 `PDFUtilitySaveMode` 含要使用的保存樣式的對象。
    * 用於確定是否覆蓋任何先前設定的布爾值。
+
    該方法返回使 `com.adobe.idp.Document` 用指定的保存樣式格式化的對象。
 
 1. 將PDF檔案傳遞至其他AEM Forms作業
@@ -393,7 +399,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [設定PDF檔案儲存模式](pdf-utilities.md#setting-pdf-document-save-modes)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -422,6 +428,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
    * 代 `BLOB` 表PDF文檔的對象。
    * 包 `PDFUtilitySaveMode` 含要使用的保存樣式的對象。
    * 用於確定是否覆蓋任何先前設定的布爾值。
+
    該方法返回使 `BLOB` 用指定的保存樣式格式化的對象。 然後，您可以將該物件儲存為PDF檔案。
 
 1. 將PDF檔案傳遞至其他Forms作業
@@ -458,7 +465,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 **建立PDFUlitiveService用戶端**
 
-您必須先建立PDFUtilityService用戶端，才能以程式設計方式執行淨化作業。 使用Java API，這是透過建立物件來 `PDFUtilityServiceClient` 完成。
+您必須先建立PDFUtilityService用戶端，才能以程式設計方式執行淨化作業。 使用Java API，您就可建立物件來完成 `PDFUtilityServiceClient` 此作業。
 
 **叫用PDF至XDP轉換作業**
 
@@ -470,7 +477,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [使用web service API將PDF檔案轉換為XDP檔案](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-web-service-api)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -494,6 +501,6 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 [淨化PDF檔案](/help/forms/developing/pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-[包含AEM Forms java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
