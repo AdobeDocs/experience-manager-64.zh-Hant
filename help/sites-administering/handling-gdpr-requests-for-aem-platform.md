@@ -8,6 +8,9 @@ contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 >[!IMPORTANT]
 >
->GDPR在以下幾節中是以範例形式使用，但涵蓋的詳細資訊適用於所有資料保護和隱私權法規；例如GDPR、CCPA等。
+>GDPR在以下幾節中是以範例形式使用，但涵蓋的詳細資訊適用於所有資料保護和隱私權法規； 例如GDPR、CCPA等。
 
 ## AEM Foundation GDPR支援 {#aem-foundation-gdpr-support}
 
@@ -102,6 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    1. 預設私人設定檔位於 `[!UICONTROL /profile]`
    1. `[!UICONTROL /profiles]`，以取得使用AEM 6.4建立的新設定檔。
+
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
 ### HTTP API {#http-api-1}
