@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 8%
 
 ---
 
@@ -37,6 +40,7 @@ See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplicati
 >
 >* 必須發佈資產才能使用URL。 如果資產未發佈，則複製URL並貼至網頁瀏覽器將無法運作。
 >* 必須啟用並發佈影像預設集和檢視器預設集，才能即時傳送。
+
 >
 
 
