@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '511'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ### 建立新對話框 {#creating-a-new-dialog}
 
-****&#x200B;要建立新對話框，您需要選擇所需的元件，請按一下「創 **建……」。然後**&#x200B;建立對話框…….
+要建立新對話框，您需要選擇所需的元件，請按一下「創 **建……」。** 然後 **建立對話框……**.
 
 輸入所需的詳細資料，然後按一 **下「全部儲存** 」 —— 現在您可以連按兩下對話方塊，以使用編輯器開啟它。
 
