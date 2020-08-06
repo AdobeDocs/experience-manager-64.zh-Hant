@@ -4,6 +4,9 @@ description: AEM Assets和AEM Media Library的常見問題，包括差異。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
+workflow-type: tm+mt
+source-wordcount: '551'
+ht-degree: 0%
 
 ---
 
