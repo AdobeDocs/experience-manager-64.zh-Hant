@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 在呼叫長期處理時產生的處理資料可能會過大，導致AEM表單效能降低，並使用不必要的磁碟空間。 在不再需要記錄時清除流程資料是很好的做法。
 
-您可以使用管理控制台執行一次性清除過時記錄，或計畫定期自動清除。 清除流程資料中討論了清除過時記錄 [的其他方法](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)。
+您可以使用管理控制台執行一次性清除過時記錄，或計畫定期自動清除。 清除過時記錄的其他方法在清除流程 [資料中討論](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)。
 
 **訪問「作業清除調度程式」頁**
 
