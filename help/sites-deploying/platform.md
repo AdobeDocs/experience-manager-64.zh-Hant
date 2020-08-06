@@ -12,6 +12,9 @@ discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ Oak建置 [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2
 
 ### Oak Core {#oak-core}
 
-Oak Core將數個圖層加入儲存層：
+Oak Core在儲存層中添加了幾個層：
 
 * 存取層級控制
 * 搜尋與索引
@@ -66,7 +69,7 @@ Oak JCR的主要目的是將JCR語義轉換為樹操作。 它還負責：
 
 Oak儲存層提供實際儲存內容的抽象層。
 
-目前，AEM6提供兩種儲存空間實作：Tar **Storage** 和 **MongoDB Storage**。
+目前，AEM6提供兩種儲存空間實作： **Tar Storage** 和 **MongoDB Storage**。
 
 ### Tar Storage {#tar-storage}
 
