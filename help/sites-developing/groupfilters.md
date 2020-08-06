@@ -12,6 +12,9 @@ discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 0%
 
 ---
 
@@ -66,9 +69,9 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 
 您需要提供下列方法的程式碼：
 
-* getDescription:傳回篩選描述。 說明會顯示在「裝置群組設定」對話方塊中。
-* getTitle:傳回篩選器的名稱。 為設備組選擇篩選器時，將顯示該名稱。
-* 符合：確定設備是否具有所需的功能。
+* getDescription: 傳回篩選描述。 說明會顯示在「裝置群組設定」對話方塊中。
+* getTitle: 傳回篩選器的名稱。 為設備組選擇篩選器時，將顯示該名稱。
+* 符合： 確定設備是否具有所需的功能。
 
 ### 提供篩選器名稱和說明 {#providing-the-filter-name-and-description}
 
@@ -84,7 +87,7 @@ public String getTitle() {
 }
 ```
 
-硬式編碼名稱和說明文字，就足以滿足單語言撰寫環境的需求。 請考慮將字串外部化以用於多語言使用，或啟用字串變更，而不需重新編譯原始碼。
+硬式編碼名稱和說明文字，就足以在單語言編寫環境中使用。 請考慮將字串外部化以用於多語言使用，或啟用字串變更，而不需重新編譯原始碼。
 
 ### 根據篩選條件評估 {#evaluating-against-filter-criteria}
 
@@ -172,25 +175,25 @@ getTitle和getDescription方法傳回的字串值會包含在裝置群組摘要�
 
 ### Maven POM檔案 {#the-maven-pom-file}
 
-如果您使用Maven來建立應用程式，下列POM程式碼會很有用。 POM引用了幾個必需的插件和從屬關係。
+如果您使用Maven來建立應用程式，下列POM程式碼就很實用。 POM引用了幾個必需的插件和從屬關係。
 
 **外掛程式:**
 
-* Apache Maven Compiler Plugin:從原始碼編譯Java類。
-* Apache Felix Maven Bundle Plugin:建立整合與資訊清單
-* Apache Felix Maven SCR Plugin:建立元件描述符檔案並配置service-component manifest標題。
+* Apache Maven Compiler Plugin: 從原始碼編譯Java類。
+* Apache Felix Maven Bundle Plugin: 建立整合與資訊清單
+* Apache Felix Maven SCR Plugin: 建立元件描述符檔案並配置service-component manifest標題。
 
 **相依關係:**
 
-* `cq-wcm-mobile-api-5.5.2.jar`:提供DeviceGroup和DeviceGroupFilter介面。
+* `cq-wcm-mobile-api-5.5.2.jar`: 提供DeviceGroup和DeviceGroupFilter介面。
 
-* `org.apache.felix.scr.annotations.jar`:提供元件和服務注釋。
+* `org.apache.felix.scr.annotations.jar`: 提供元件和服務注釋。
 
-DeviceGroup和DeviceGroupFilter介面包含在Day Commute 5 WCM Mobile API套件中。 Felix註解包含在Apache Felix Departative services套件中。 您可以從公用Adobe儲存庫取得此JAR檔案。
+DeviceGroup和DeviceGroupFilter介面包含在Day Commute 5 WCM Mobile API套件中。 Felix註解包含在Apache Felix Departative Services套件中。 您可以從公用Adobe儲存庫取得此JAR檔案。
 
 在製作時，5.5.2是AEM最新版本中的WCM Mobile API套件版本。 使用Adobe Web Console([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles))確保這是您環境中部署的套件版本。
 
-**** POM:（您的POM將使用不同的groupId和版本。）
+**POM:** （您的POM將使用不同的groupId和版本。）
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
