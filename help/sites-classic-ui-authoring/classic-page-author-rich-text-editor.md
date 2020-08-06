@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 2%
 
 ---
 
@@ -47,7 +50,7 @@ WYSIWYG編輯對話方塊提供多種功能：
 >
 >如果開啟了內容查找器，則頁籤頂部將顯示一個帶有RTE格式設定選項的工具欄（如上所示）。
 >
->如果未開啟內容搜尋器，則不會顯示工具列。
+>如果內容搜尋器未開啟，工具列將不會顯示。
 
 目前，「置入編輯」模式已針對「文字」和「標題」元 **件產生** 的 **頁面元素啟用** 。
 
@@ -63,7 +66,7 @@ Rich Text Editor提供一系列功能，這 [些功能取決於個別元件](/he
 
 ![](do-not-localize/cq55_rte_basicchars.png)
 
-您可以在這裡將格式套用至選取（反白顯示）的字元；一些選項還有短鍵：
+您可以在這裡將格式套用至選取（反白顯示）的字元； 一些選項還有短鍵：
 
 * 粗體(Ctrl-B)
 * 斜體(Ctrl-I)
@@ -91,7 +94,7 @@ Rich Text Editor提供一系列功能，這 [些功能取決於個別元件](/he
 
 特定格式只能變更(預設為「段 **落**」)。
 
-可以移除樣式；將游標置於已應用樣式的文本中，然後按一下刪除表徵圖：
+可以移除樣式； 將游標置於已應用樣式的文本中，然後按一下刪除表徵圖：
 
 >[!CAUTION]
 >
@@ -107,7 +110,7 @@ Cut和Copy的標 **準功****能可用** 。 提供多種 **Paste** ，以迎合
 * 複製(**Ctrl-C**)
 * 貼上
 
-   這是元件的預設貼上機&#x200B;**制(Ctrl-V**);當安裝在現成可用的程式中時，此設定為「從Word貼上」。
+   這是元件的預設貼上機&#x200B;**制(Ctrl-V**); 當安裝在現成可用的程式中時，此設定為「從Word貼上」。
 
 * 貼上為文字
 
@@ -143,7 +146,7 @@ AEM會記錄您目前元件中最近50個動作的記錄，依時間順序保留
 
 ![](do-not-localize/cq55_rte_indent.png)
 
-段落的縮進可以增加或減少。 選定段落將縮進，所輸入的任何新文本都將保留當前縮進級別。
+段落的縮進可以增加或減少。 選定段落將進行縮進，所輸入的任何新文本都將保留當前縮進級別。
 
 ![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
 
@@ -167,7 +170,7 @@ URL的連結（在您的網站或外部位置）是透過反白標示所需文�
 
 ![](do-not-localize/chlimage_1-12.png)
 
-對話方塊可讓您指定目標URL;還有是否應在新視窗中開啟。
+對話方塊可讓您指定目標URL; 還有是否應在新視窗中開啟。
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 
@@ -175,8 +178,8 @@ URL的連結（在您的網站或外部位置）是透過反白標示所需文�
 
 * 直接在URI中鍵入
 * 使用網站地圖在您的網站中選取頁面
-* 輸入URI，然後附加目標錨點；例如， `www.TargetUri.org#AnchorName`
-* 僅輸入錨點（以參考「目前頁面」）;例如， `#anchor`
+* 輸入URI，然後附加目標錨點； 例如， `www.TargetUri.org#AnchorName`
+* 僅輸入錨點（以參考「目前頁面」）; 例如， `#anchor`
 * 在內容搜尋器中搜尋頁面，然後將頁面圖示拖放至「超連結」對話方塊
 
 >[!NOTE]
@@ -258,7 +261,7 @@ AEM提供「尋 **找** 」和「 **取代** （尋找和取代）」功能。
    >
    >雖然表在RTE中可用，但建議在建立表時使 **用Table** 元件。
 
-在Text **和** Table **** components表格中，都可通過在表格中按一下的上下文菜單（通常是滑鼠右鍵）獲得；例如：
+在Text **和** Table **** components表格中，都可通過在表格中按一下的上下文菜單（通常是滑鼠右鍵）獲得； 例如：
 
 ![cq55_rte_tablemenu](assets/cq55_rte_tablemenu.png)
 
@@ -406,8 +409,9 @@ AEM提供「尋 **找** 」和「 **取代** （尋找和取代）」功能。
 >
 >某些其他行為與瀏覽器相關：
 >
->* Windows IE:使用Ctrl+primary-mouse-button-click（通常為左側）來選取多個儲存格。
->* Firefox:拖曳滑鼠以選取儲存格範圍。
+>* Windows IE: 使用Ctrl+primary-mouse-button-click（通常為左側）來選取多個儲存格。
+>* Firefox: 拖曳滑鼠以選取儲存格範圍。
+
 >
 
 
@@ -422,7 +426,7 @@ AEM提供「尋 **找** 」和「 **取代** （尋找和取代）」功能。
 
 ![](do-not-localize/cq55_rte_specialchars.png)
 
-您的豐富式文字編輯器可以使用特殊字元；這些視您的安裝而定。
+您的豐富式文字編輯器可以使用特殊字元； 這些視您的安裝而定。
 
 ![cq55_rte_specialchars_use](assets/cq55_rte_specialchars_use.png)
 
