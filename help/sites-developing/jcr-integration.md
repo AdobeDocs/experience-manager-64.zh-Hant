@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: e6647a11-a36e-4808-bb61-29b2895c6b1d
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Sling API的運作層級比JCR API更高、更抽象。 這可讓您的程式碼
 
 ## 盡可能避免查詢 {#avoid-queries-wherever-possible}
 
-與運行查詢相比，瀏覽儲存庫以檢索資料總是更快。 有時需要查詢，例如最終用戶查詢或需要從整個儲存庫中查找結構化內容，但是對於所有其他情況，則最好導航到所需節點。 在演算邏輯中，例如導覽元件、「最近的項目清單」、項目計數等，一律應避免查詢。 在這些情況下，最好逐一瀏覽階層或預先快取結果，以便在轉譯時直接使用。
+與運行查詢相比，瀏覽儲存庫以檢索資料總是更快。 有時需要查詢，例如最終用戶查詢或需要從整個儲存庫中查找結構化內容，但是對於所有其他情況，則最好導航到必要的節點。 在演算邏輯中，例如導覽元件、「最近的項目清單」、項目計數等，一律應避免查詢。 在這些情況下，最好逐一瀏覽階層或預先快取結果，以便在轉譯時直接使用。
 
 ## 限制JCR觀測範圍 {#restrict-the-scope-of-jcr-observation}
 
