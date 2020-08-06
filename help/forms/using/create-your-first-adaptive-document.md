@@ -8,6 +8,9 @@ uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,8 @@ We Finance是金融服務領域的領先組織，提供全面且個人化的財�
 
 入口網站會在Adobe AEM上執行。 網頁和列印歡迎頻道輸出是使用Adaptive Document的多頻道功能建立。
 
-在本教學課程的結尾，您將會有類似下列的最適化檔案：[ ad-1 ![](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf) ad-2建 [ 立您的第一 ![](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)個最適化檔案教學課程分為幾個步驟。 每個步驟本身都是完整的文章。
+在本教學課程的結尾，您將會有類似下列的最適化檔案：
+[ ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf) [ ad-2建 ![立第](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)一個最適化檔案教學課程分為幾個步驟。 每個步驟本身都是完整的文章。
 
 <table> 
  <tbody>
@@ -63,7 +67,7 @@ We Finance是金融服務領域的領先組織，提供全面且個人化的財�
 * 為表單資料模型配置讀寫服務
 * 測試表單資料模型及已設定的服務與測試資料
 
-## 步驟2:建立最適化檔案 {#step-create-an-adaptive-document}
+## 步驟2: 建立最適化檔案 {#step-create-an-adaptive-document}
 
 客戶通訊部門集中管理安全、個人化和互動式通訊的建立、匯整和傳遞，例如商業通訊、信件、檔案、陳述、利益通知、財富管理招股說明書、行銷郵件、帳單和歡迎套件。
 
@@ -79,7 +83,7 @@ We Finance是金融服務領域的領先組織，提供全面且個人化的財�
 
 <!--![see-the-guide-sm](assets/see-the-guide-sm.png)-->
 
-## 步驟3:將規則套用至最適化檔案欄位（僅限Web頻道） {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
+## 步驟3: 將規則套用至最適化檔案欄位（僅限Web頻道） {#step-apply-rules-to-adaptive-document-fields-web-channel-only}
 
 最適化檔案提供編輯器，可編寫最適化檔案物件的規則。 這些規則會根據預設條件和使用者在檔案上的動作來定義要觸發檔案物件的動作。 它可協助確保在網頁版的最適化檔案中，提供精確性並加速使用者體驗。 有關自適應文檔規則和規則編輯器的詳細資訊，請參 [閱規則編輯器](/help/forms/using/rule-editor.md)。
 
@@ -88,7 +92,7 @@ We Finance是金融服務領域的領先組織，提供全面且個人化的財�
 * 建立規則並套用至最適化檔案的Web頻道欄位
 * 使用規則在Web頻道中觸發檔案資料模型服務
 
-## 步驟4:設定最適化檔案的樣式（僅限網頁頻道） {#step-style-the-adaptive-document-web-channel-only}
+## 步驟4: 設定最適化檔案的樣式（僅限網頁頻道） {#step-style-the-adaptive-document-web-channel-only}
 
 最適化檔案提供編輯器，以建立最適化檔案的主題和行內樣式。 主題包含元件和面板的樣式詳細資訊，您可以在不同檔案的網頁頻道上重複使用主題。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。 當您將主題套用至檔案時，指定的樣式會反映在檔案的對應元件上。 如需詳細資訊，請參 [閱主題](/help/forms/using/themes.md)。
 
@@ -98,7 +102,7 @@ We Finance是金融服務領域的領先組織，提供全面且個人化的財�
 * 將主題套用至最適化檔案Web頻道
 * 驗證在行動裝置和桌上型電腦上的最適化檔案網路頻道外觀
 
-## 步驟5:發佈最適化檔案 {#step-publish-the-adaptive-document}
+## 步驟5: 發佈最適化檔案 {#step-publish-the-adaptive-document}
 
 建立完最適化文檔後，您需要將其發佈，以便在發佈實例上可用，在發佈實例中，代理可以使用最適化文檔建立基於該文檔的通信實例。
 
