@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +24,11 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 1. 在目錄伺服器上啟用SSL。 如需詳細資訊，請參閱目錄廠商提供的檔案。
 1. 從目錄伺服器導出客戶機證書。
-1. 使用keytool程式將用戶端憑證檔案匯入AEM Forms應用程式伺服器的預設Java虛擬機器(JVM™)憑證存放區。 此任務的過程會因JVM和客戶端安裝路徑而異。 例如，如果您使用BEA webLogic Server與JDK 1.5，請從命令提示符下鍵入以下文本：
+1. 使用keytool程式將用戶端憑證檔案匯入AEM Forms應用程式伺服器的預設Java虛擬機器(JVM™)憑證存放區。 此任務的過程會因JVM和客戶端安裝路徑而異。 例如，如果您使用BEA WebLogic Server與JDK 1.5，請從命令提示符下鍵入以下文本：
 
    `keytool -import -alias`*別名&#x200B;*`-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. 出現提示時，鍵入密碼。 (對於Java，預設密碼為 `changeit`。)出現一則訊息，指出憑證已成功匯入。
+1. 出現提示時，鍵入密碼。 (對於Java，預設密碼為 `changeit`。) 出現一則訊息，指出憑證已成功匯入。
 1. 出現提示時，鍵 `Yes` 入以信任憑證。
 1. 在「用戶管理」中啟用SSL，並在配置目錄設定時，為SSL選項選擇「是」，並相應更改埠設定。 預設埠號為636。
 
