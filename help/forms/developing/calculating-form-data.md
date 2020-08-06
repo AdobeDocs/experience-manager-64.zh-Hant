@@ -12,22 +12,25 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 translation-type: tm+mt
 source-git-commit: db6fbf28dc899c58d73334e2d5a694a228a53f80
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 0%
 
 ---
 
 
 # 計算表單資料 {#calculating-form-data}
 
-Forms服務可計算使用者在表單中輸入的值，並顯示結果。 若要計算表單資料，您必須執行兩項工作。 首先，您建立可計算表單資料的表單設計指令碼。 表單設計支援三種類型的指令碼。 一種指令碼類型在客戶端上運行，另一種指令碼類型在伺服器上運行，第三種指令碼類型在伺服器和客戶端上運行。 本主題中討論的指令碼類型在伺服器上運行。 HTML、PDF和表單指南（已過時）轉換支援伺服器端計算。
+Forms服務可計算使用者在表單中輸入的值，並顯示結果。 若要計算表單資料，您必須執行兩項工作。 首先，您建立可計算表單資料的表單設計指令碼。 表單設計支援三種類型的指令碼。 One script type runs on the client, another runs on the server, and the third type runs on both the server and the client. The script type discussed in this topic runs on the server. HTML、PDF和表單指南（已過時）轉換支援伺服器端計算。
 
-在表單設計流程中，您可以運用計算和指令碼來提供更豐富的使用者體驗。 計算和指令碼可新增至大部分的表格欄位和物件。 您必須建立表單設計指令碼，以對使用者輸入互動式表單的資料執行計算作業。
+As part of the form design process, you can make use of calculations and scripts to provide a richer user experience. Calculations and scripts can be added to most form fields and objects. You must create a form design script to perform calculation operations on data that a user enters into an interactive form.
 
-用戶在表單中輸入值，然後按一下「計算」按鈕查看結果。 下列程式說明可讓使用者計算資料的範例應用程式：
+The user enters values into the form and clicks the Calculate button to view the results. The following process describes an example application that enables a user to calculate data:
 
-* 使用者存取名為StartLoan.html的HTML頁面，該頁面可當成網頁應用程式的開始頁面。 此頁調用名為的Java Servlet `GetLoanForm`。
-* Servlet `GetLoanForm` 會轉換貸款表單。 此表單包含指令碼、互動式欄位、計算按鈕和送出按鈕。
-* 使用者在表單欄位中輸入值，然後按一下「計算」按鈕。 表單會傳送至執行指令 `CalculateData` 碼的Java Servlet。 表單會傳回給使用者，其計算結果會顯示在表單中。
-* 用戶繼續輸入和計算值，直到顯示滿意的結果。 當使用者滿意時，會按一下「提交」按鈕以處理表單。 表單會傳送至另一個名為Java Servlet的表 `ProcessForm` 單，負責擷取已提交的資料。 (請參 [閱處理提交的表單](/help/forms/developing/rendering-forms.md#handling-submitted-forms)。)
+* The user accesses an HTML page named StartLoan.html that acts as the web application’s start page. This page invokes a Java Servlet named `GetLoanForm`.
+* The `GetLoanForm` servlet renders a loan form. This form contains a script, interactive fields, a calculate button, and a submit button.
+* The user enters values into the form’s fields and clicks the Calculate button. The form is sent to the `CalculateData` Java Servlet where the script is executed. 表單會傳回給使用者，其計算結果會顯示在表單中。
+* The user continues entering and calculating values until a satisfactory result is displayed. 當使用者滿意時，會按一下「提交」按鈕以處理表單。 The form is sent to another Java Servlet named `ProcessForm` that is responsible for retrieving submitted data. (請參 [閱處理提交的表單](/help/forms/developing/rendering-forms.md#handling-submitted-forms)。)
 
 下圖顯示應用程式的邏輯流程。
 
@@ -49,42 +52,42 @@ Forms服務可計算使用者在表單中輸入的值，並顯示結果。 若�
   </tr> 
   <tr> 
    <td><p>2</p></td> 
-   <td><p>Java <code>GetLoanForm</code> Servlet使用Forms服務客戶端API將貸款表格轉換到客戶端Web瀏覽器。 呈現包含配置為在伺服器上運行的指令碼的表單和呈現不包含指令碼的表單之間的區別在於，您必須指定用於執行指令碼的目標位置。 如果未指定目標位置，則不會執行配置為在伺服器上運行的指令碼。 例如，請考慮本節中介紹的應用程式。 Java <code>CalculateData</code> Servlet是執行指令碼的目標位置。</p></td> 
+   <td><p>Java <code>GetLoanForm</code> Servlet使用Forms服務客戶端API將貸款表格轉換到客戶端Web瀏覽器。 The difference between rendering a form that contains a script configured to run on the server and rendering a form that does not contain a script is that you must specify the target location used to execute the script. If a target location is not specified, a script that is configured to run on the server is not executed. For example, consider the application introduced in this section. The <code>CalculateData</code> Java Servlet is the target location where the script is executed.</p></td> 
   </tr> 
   <tr> 
    <td><p>3</p></td> 
-   <td><p>使用者將資料輸入互動欄位，然後按一下「計算」按鈕。 表單會傳送至 <code>CalculateData</code> Java Servlet，並在其中執行指令碼。 </p></td> 
+   <td><p>The user enters data into interactive fields and clicks the Calculate button. The form is sent to the <code>CalculateData</code> Java Servlet, where the script is executed. </p></td> 
   </tr> 
   <tr> 
    <td><p>4</p></td> 
-   <td><p>表單會轉譯回網頁瀏覽器，其計算結果會顯示在表單中。 </p></td> 
+   <td><p>The form is rendered back to the web browser with the calculation results displayed in the form. </p></td> 
   </tr> 
   <tr> 
    <td><p>5</p></td> 
-   <td><p>當值滿意時，使用者會按一下「提交」按鈕。 表單會傳送至另一個名為的Java Servlet <code>ProcessForm</code>。</p></td> 
+   <td><p>The user clicks the Submit button when the values are satisfactory. The form is sent to another Java Servlet named <code>ProcessForm</code>.</p></td> 
   </tr> 
  </tbody> 
 </table>
 
-通常，提交為PDF內容的表單包含在用戶端上執行的指令碼。 不過，伺服器端的計算也可以執行。 「提交」按鈕不能用於計算指令碼。 在這種情況下，不會執行計算，因為Forms服務認為交互已完成。
+通常，提交為PDF內容的表單包含在用戶端上執行的指令碼。 However, server-side calculations can also be executed. A Submit button cannot be used to calculate scripts. In this situation, calculations are not executed because the Forms service considers the interaction to be complete.
 
-為了說明表單設計指令碼的使用，本節將檢查一個簡單的互動式表單，其中包含已設定為可在伺服器上執行的指令碼。 下圖顯示的表單設計包含一個指令碼，該指令碼將用戶輸入到前兩個欄位中的值添加到第三個欄位中，並在第三個欄位中顯示結果。
+為了說明表單設計指令碼的使用，本節將檢查一個簡單的互動式表單，其中包含已設定為可在伺服器上執行的指令碼。 The following diagram shows a form design containing a script that adds values that a user enters into the first two fields and displays the result in the third field.
 
 ![cf_cf_caldata](assets/cf_cf_caldata.png)
 
-**答：** 名為NumericField1 **B的欄位。** 名為NumericField2 **C.** A的欄位名為NumericField3
+**A.** A field named NumericField1 **B.** A field named NumericField2 **C.** A field named NumericField3
 
-位於此表單設計中的指令碼語法如下：
+The syntax of the script located in this form design is as follows:
 
 ```as3
      NumericField3 = NumericField2 + NumericField1
 ```
 
-在此表單設計中，「計算」按鈕是命令按鈕，而指令檔位於此按鈕的事 `Click` 件中。 當使用者在前兩個欄位（NumericField1和NumericField2）中輸入值，然後按一下「計算」按鈕時，表格會傳送至Forms服務，並執行指令碼。 Forms服務會將表單轉譯回用戶端裝置，計算結果會顯示在NumericField3欄位中。
+In this form design, the Calculate button is a command button, and the script is located in this button’s `Click` event. When a user enters values into the first two fields (NumericField1 and NumericField2) and clicks the Calculate button, the form is sent to the Forms service, where the script is executed. The Forms service renders the form back to the client device with the results of the calculation displayed in the NumericField3 field.
 
 >[!NOTE]
 >
->如需建立表單設計指令碼的詳細資訊，請參閱 [表單設計器](https://www.adobe.com/go/learn_aemforms_designer_63)。
+>For information about creating a form design script, see [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 >[!NOTE]
 >
@@ -92,11 +95,11 @@ Forms服務可計算使用者在表單中輸入的值，並顯示結果。 若�
 
 ## 步驟摘要 {#summary-of-steps}
 
-要計算表單資料，請執行以下任務：
+To calculate form data, perform the following tasks:
 
 1. 包含專案檔案。
 1. 建立Forms用戶端API物件。
-1. 檢索包含計算指令碼的表單。
+1. Retrieve a form containing a calculation script.
 1. 將表單資料流寫回用戶端網頁瀏覽器
 
 **包含專案檔案**
@@ -149,8 +152,9 @@ Forms服務可計算使用者在表單中輸入的值，並顯示結果。 若�
 
       * 包 `com.adobe.idp.Document` 含表單資料的物件。
       * 一個字串值，它指定包括所有相關HTTP標題的環境變數。 必須通過為環境變數指定一個或多個值來指定要處理的內 `CONTENT_TYPE` 容類型。 例如，若要處理XML和PDF資料，請為此參數指定下列字串值： `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * 指定標題值的 `HTTP_USER_AGENT` 字串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
+      * 指定標題值的 `HTTP_USER_AGENT` 字串值； 例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
       * 存 `RenderOptionsSpec` 儲運行時選項的對象。
+
       該方 `processFormSubmission` 法返回包 `FormsResult` 含表單提交結果的對象。
 
    * 請叫用物件的方法，以確認與已提交表 `1` 單相關聯的處 `FormsResult` 理狀態 `getAction` 為。 如果此方法返回值 `1`，則會執行計算，並將資料寫回客戶端Web瀏覽器。
@@ -196,7 +200,7 @@ Forms服務可計算使用者在表單中輸入的值，並顯示結果。 若�
 
       * 包 `BLOB` 含表單資料的物件。
       * 指定環境變數的字串值包括所有相關的HTTP標頭。 例如，您可以指定下列字串值： `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
-      * 指定標題值的 `HTTP_USER_AGENT` 字串值；例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
+      * 指定標題值的 `HTTP_USER_AGENT` 字串值； 例如， `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
       * 存 `RenderOptionsSpec` 儲運行時選項的對象。 如需詳細資訊，請造訪。
       * 由方 `BLOBHolder` 法填充的空對象。
       * 由方 `javax.xml.rpc.holders.StringHolder` 法填充的空對象。
@@ -205,6 +209,7 @@ Forms服務可計算使用者在表單中輸入的值，並顯示結果。 若�
       * 由方 `javax.xml.rpc.holders.ShortHolder` 法填充的空對象。
       * 由方 `MyArrayOf_xsd_anyTypeHolder` 法填充的空對象。 此參數用於儲存隨表單一起提交的檔案附件。
       * 由方 `FormsResultHolder` 法填入的空對象，其表單為已提交。
+
       方 `processFormSubmission` 法會以表 `FormsResultHolder` 單提交的結果填入參數。 該方 `processFormSubmission` 法返回包 `FormsResult` 含表單提交結果的對象。
 
    * 請叫用物件的方法，以確認與已提交表 `1` 單相關聯的處 `FormsResult` 理狀態 `getAction` 為。 如果此方法返回值 `1`，則會執行計算，並將資料寫回客戶端Web瀏覽器。
