@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 5%
 
 ---
 
@@ -60,7 +63,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 在您採取指示可以完成工作項目的動作後，可以繼續工作流。 請按下列步驟完成工作項目。
 
 1. 選擇工作流程步驟，然後按一 **下頂端導覽** 列中的「完成」按鈕。
-1. 在產生的對話方塊中，選取「下 **一步」**;即下一步要執行的步驟。 下拉式清單會顯示所有適當的目的地。 您也 **可以輸** 入注釋。
+1. 在產生的對話方塊中，選取「下 **一步」**; 即下一步要執行的步驟。 下拉式清單會顯示所有適當的目的地。 您也 **可以輸** 入注釋。
 
    ![工作流程完整](assets/workflowcomplete.png)
 
@@ -84,7 +87,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 請按下列步驟退一步。
 
 1. 按一下頂端導覽列中的「上一步」按鈕。
-1. 在產生的對話方塊中，選取「上一步」;即，要執行的步驟，即使這是工作流程中較早發生的步驟。 下拉式清單會顯示所有適當的目的地。
+1. 在產生的對話方塊中，選取「上一步」; 即，要執行的步驟，即使這是工作流程中較早發生的步驟。 下拉式清單會顯示所有適當的目的地。
 
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 
