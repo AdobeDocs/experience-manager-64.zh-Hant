@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
 source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 0%
 
 ---
 
@@ -189,5 +192,5 @@ JVM最大堆大小必須增加50 MB，總計為562 MB。
 
 >[!NOTE]
 >
->如果使用註冊表編輯器或使用其他方法錯誤地修改了註冊表，可能會出現嚴重問題。 這些問題可能需要重新安裝作業系統。 自行修改註冊表。
+>如果使用註冊表編輯器或使用其他方法錯誤地修改註冊表，可能會出現嚴重問題。 這些問題可能需要重新安裝作業系統。 自行修改註冊表。
 
