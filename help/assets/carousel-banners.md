@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '4787'
+ht-degree: 4%
 
 ---
 
@@ -37,17 +40,17 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 ## 觀看轉盤橫幅的建立方式 {#watch-how-carousel-banners-are-created}
 
-觀看如何建立轉盤橫幅的10分 [鐘33秒逐步說明](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&emailurl=https://s7d5.scene7.com/s7/emailFriend&serverUrl=https://s7d5.scene7.com/is/image/&config=Scene7SharedAssets/Universal_HTML5_Video_social&contenturl=https://s7d5.scene7.com/skins/&asset=S7tutorials/InteractiveCarouselBanner)。 您也將學習如何預覽、編輯和傳遞轉盤橫幅。
+觀看如何建立轉盤橫幅的10分 [鐘33秒逐步說明](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)。 您也將學習如何預覽、編輯和傳遞轉盤橫幅。
 
 >[!NOTE]
 >
 >非管理使用者必須新增至 **dam-users** 群組，才能建立或編輯轉盤橫幅。 如果您在建立或編輯時遇到問題，請洽詢系統管理員，讓系統管理員將您新 **增至dam使用者群組** 。
 
-## 快速入門：轉盤橫幅 {#quick-start-carousel-banners}
+## 快速入門： 轉盤橫幅 {#quick-start-carousel-banners}
 
 要快速啟動並運行，請執行以下操作：
 
-1. [識別熱點和影像對應變數](#identifying-hotspot-and-image-map-variables) （僅適用於使用AEM Assets + Dynamic media的客戶）
+1. [識別熱點和影像對應變數](#identifying-hotspot-and-image-map-variables) （僅適用於使用AEM Assets + Dynamic Media的客戶）
 
    首先，識別現有快速檢視實作所使用的動態變數，以便您在AEM Assets中轉盤橫幅建立程式期間正確輸入熱點和影像地圖資料。
 
@@ -59,7 +62,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 1. 可選：視需 [要建立轉盤集檢視器預設](managing-viewer-presets.md)。
 
-   如果您是管理員，則可以建立自己的轉盤檢視器預設集，自訂轉盤的行為和外觀。 主要優點是，您可以針對多個轉盤重複使用此自訂檢視器預設集。 不過，使用者也可以選擇在製作轉盤時直接自訂轉盤的行為和外觀。 當您想要特定轉盤的設計時，這是您偏好的方法。
+   如果您是管理員，則可以建立您自己的轉盤檢視器預設集，自訂轉盤的行為和外觀。 主要優點是，您可以針對多個轉盤重複使用此自訂檢視器預設集。 不過，使用者也可以選擇在製作轉盤時直接自訂轉盤的行為和外觀。 當您想要特定轉盤的設計時，這是您偏好的方法。
 
 1. [上傳影像橫幅](#uploading-image-banners)。
 
@@ -99,7 +102,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!NOTE]
 >
->如果您是AEM Sites和／或AEM Ecommerce客戶，請略過此步驟。 您不需要手動識別熱點或影像地圖變數；您可以使用與Ecommerce的整合進行產品整合。 請參閱有關設 [定電子商務的資訊](/help/sites-administering/generic.md)。 此外，您也可以使用互動式元件並將它新增至網頁。
+>如果您是AEM Sites和／或AEM Ecommerce客戶，請略過此步驟。 您不需要手動識別熱點或影像地圖變數； 您可以使用與Ecommerce的整合進行產品整合。 請參閱有關設 [定電子商務的資訊](/help/sites-administering/generic.md)。 此外，您也可以使用互動式元件並將它新增至網頁。
 >
 >如果您是AEM Assets或Media客戶，請發佈URL或內嵌代碼，然後與您的協力廠商內容管理系統整合，並手動識別熱點和影像地圖。
 
@@ -154,7 +157,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
      <li><p><code>https://server/product/6422350843</code></p> </li> 
      <li><p><code>https://server/product/1607745002</code></p> </li> 
      <li><p><code>https://server/product/0086724882</code></p> </li> 
-    </ul> <p>變數部分位於路徑的最後一部分，並成為熱點／影像映射的SKU值：<strong><code>6422350843</code>, <code>1607745002,</code></strong><code>0086724882.</code></p> </td> 
+    </ul> <p>變數部分位於路徑的最後一部分，並成為熱點／影像映射的SKU值：<strong><code>6422350843</code>, <code>1607745002,</code> </strong><code>0086724882.</code></p> </td> 
   </tr> 
   <tr> 
    <td>查詢字串中的SKU和類別ID。</td> 
@@ -194,6 +197,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
    * 在頁面左上角附近，點選「新增投 **[!UICONTROL 影片]** 」圖示。
    * 在頁面中間附近，點選「點選」 **[!UICONTROL 以開啟「資產選擇器」]**。
+
    點選以選取您要納入轉盤集的資產。選取的資產上面有核取標籤圖示。When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    使用「資產選擇器」，您可以輸入關鍵字並點選「回報」來搜尋 **[!UICONTROL 資產]**。您也可以套用篩選條件來調整搜尋結果。您可以依路徑、系列、檔案類型和標籤來篩選。選取篩選，然後點選工具 **[!UICONTROL 列上的]** 「篩選」圖示。Change the view by tapping the **[!UICONTROL View]** icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -206,6 +210,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 如有必要，請拖曳投影片，以重新排序設定清單中的影像。
    * 若要刪除影像，請選取影像，然後點選工具列 **[!UICONTROL 上的「刪除投影片]** 」。
    * 若要套用預設集，請在頁面右上角附近點選預設下拉式清單，然後選取一個預設集以一次套用至該預設集。
+
    若要刪除投影片，請點選該投影片，然後點選工具列 **[!UICONTROL 中的「刪除投影片]** 」。 若要移動投影片，請點選訂單圖示並按住並移至所需位置。
 
 1. 在投影片中新增影像後，您可以將熱點、影像地圖或兩者新增至影像。 請參 [閱添加熱點或影像映射](#adding-hotspots-or-image-maps-to-an-image-banner)。
@@ -247,7 +252,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 >
 >當您在 [Interactive Image](interactive-images.md) 或Carousel Banner中將熱點添加到影像時，熱點資訊儲存在與影像位置相對的相同元資料位置中，而不管它是Interactive Image還是Carousel Banner。 這項功能表示，您可以在任一檢視器中，輕鬆地重複使用相同的影像及其定義的熱點資料。
 
->但是，請注意，轉盤橫幅支援影像上的影像地圖，這些影像也可能包含熱點；互動式影像則否。 如果您想要建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可能想要使用相同影像的個別副本來建立互動式影像和轉盤橫幅。
+>但是，請注意，轉盤橫幅支援影像上的影像地圖，這些影像也可能包含熱點； 互動式影像則否。 如果您想要建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可能想要使用相同影像的個別副本來建立互動式影像和轉盤橫幅。
 
 >[!NOTE]
 >
@@ -261,8 +266,9 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 1. 在頁面的左上角附近，點選「熱點 **[!UICONTROL 」]****[!UICONTROL 或「影像地圖」]**。
 1. 執行下列任一項作業：
 
-   * 對於熱點：在影像上，點選您要熱點出現的位置。
-   * 對於影像地圖：在影像上點選，然後從左上角拖曳至右下方，以建立影像對應區域。 您可以拖曳轉角來調整影像地圖的大小。
+   * 對於熱點： 在影像上，點選您要熱點出現的位置。
+   * 對於影像地圖： 在影像上點選，然後從左上角拖曳至右下角，以建立影像對應區域。 您可以拖曳轉角來調整影像地圖的大小。
+
    如有必要，請將熱點或影像映射拖動到新位置。 視需要新增其他熱點或影像地圖。
 
    若要刪除熱點或影像地圖，請點選「動 **[!UICONTROL 作]** 」標籤。在「地 **[!UICONTROL 圖與熱點]** 」標題下，從「選定類型 **** 」下拉菜單中，選擇要刪除的熱點或影像映射的名稱。點選功 **[!UICONTROL 能表旁的]** 「垃圾筒」圖示，然後點選「 **[!UICONTROL 刪除」]**。
@@ -297,9 +303,10 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
          請參閱 [體驗片段](/help/sites-authoring/experience-fragments.md)。
 
-         **注意**:請注意，當您將檢視器內嵌在體驗片段時，不支援轉盤橫幅中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
+         **注意**: 請注意，當您將檢視器內嵌在體驗片段時，不支援轉盤橫幅中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
 
       * 指定「體驗片段」在橫幅上顯示的寬度和高度。
+
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
    您也可以預覽轉盤橫幅的外觀。 請參 [閱（可選）預覽轉盤橫幅](#optional-previewing-carousel-banners)。
@@ -342,7 +349,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
    * 若要重新排序投影片，請將投影片拖曳至新位置（選取重新排序圖示以移動項目）。
    * 若要新增熱點或影像地圖，請點選熱點或影像地圖圖示，並查看 [新增熱點和影像地圖](#adding-hotspots-or-image-maps-to-an-image-banner)。
    * To edit the appearance or behavior of the carousel set, tap the **[!UICONTROL Appearance]** tab or **[!UICONTROL Behavior]** tab, then set the options you want.
-   * 要編輯熱點或影像映射，請在相應的幻燈片上選擇熱點或影像映射，並在「操作」( **[!UICONTROL Actions]** )頁籤下進行必要的更改。
+   * 要編輯熱點或影像映射，請在相應的幻燈片上選擇熱點或影像映射，並在「操作」( **[!UICONTROL Actions]** )頁籤下根據需要進行更改。
    * 若要刪除投影片，請選取它，然後點選工具 **[!UICONTROL 列上的「刪除投影片]** 」。
    * 若要套用預設，請在頁面右上角附近點選預設下拉式清單，然後選取檢視器預設。
    * 若要刪除整個轉盤集，請導覽至轉盤集，選取它，然後點選「刪 **[!UICONTROL 除」]**。
@@ -419,7 +426,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 1. 或者，前端代碼將載入的快速檢視資料轉換為HTML表示法。
 1. 前端程式碼會顯示模式對話方塊或面板，並轉譯HTML內容給使用者。
 
-這些呼叫可能不代表獨立的公用API呼叫，而網頁邏輯可透過任意步驟呼叫這些呼叫。 相反地，它是連結呼叫，在此連結呼叫中，前一個步驟的最後一個階段（回呼）中將隱藏下一個步驟。
+這些呼叫可能不代表獨立的公用API呼叫，而網頁邏輯可透過任意步驟呼叫這些呼叫。 相反地，它是連結呼叫，在此連結呼叫中，前一步驟的最後一個階段（回呼）中隱藏了每個後續步驟。
 
 在轉盤橫幅正在取代步驟1和部分步驟2的同時，當使用者按一下轉盤橫幅內的熱點或影像地圖時，檢視器會處理這類使用者互動。 檢視器會將事件傳回至網頁，其中包含先前新增的所有熱點或影像地圖資料。
 
