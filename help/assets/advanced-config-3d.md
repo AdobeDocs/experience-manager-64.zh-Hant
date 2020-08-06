@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '1383'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 | 路徑 | 說明 |
 |---|---|
-| `/libs/settings/dam/v3D/assetTypes/*/Conversion` | 指定擷取期間建立之中介3D格式的檔案類型。 &#39;fbx&#39;和&#39;obj&#39;檔案格式必須為空，或&#39;fbx&#39;格式必須由Maya啟用。 |
+| `/libs/settings/dam/v3D/assetTypes/*/Conversion` | 指定擷取期間建立的中介3D格式的檔案類型。 &#39;fbx&#39;和&#39;obj&#39;檔案格式必須為空，或&#39;fbx&#39;格式必須由Maya啟用。 |
 | `/libs/settings/dam/v3D/assetTypes/*/Enabled` | 設為true或false，以在assetTypes清單中啟用或停用 **[!UICONTROL 此項目]** 。 |
 | `/libs/settings/dam/v3D/assetTypes/*/Extension` | 指定一個或多個以逗號分隔的檔案字尾或要與此資產類型關聯的副檔名。 |
 | `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | 必須是 `native` FBX和OBJ檔案格式， `maya` 以及Maya所啟用的格式。 |
@@ -67,11 +70,11 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/invokeLightMapsOnIngest</td> 
-   <td>可在擷取時自動建立光線地圖。 設為 <strong>false</strong> ，停用自動建立光線圖；這可大幅降低CPU的耗用量，並降低使用快速調整功能進行預覽和轉換的品質。 不會影響瑪雅的演算。</td> 
+   <td>可在擷取時自動建立光線地圖。 設為 <strong>false</strong> ，停用自動建立光線圖； 這可大幅降低CPU的耗用量，並降低使用快速調整功能進行預覽和轉換的品質。 不會影響瑪雅的演算。</td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/gPlaneZero</td> 
-   <td><p>設為 <strong>true</strong> （預設）時，如有必要，將對象垂直移動，以確保對象的所有部分都在接地平面上方(y=0)。</p> <p>當設為 <strong>false</strong> （預設）時，物件不會重新定位，而且可能會部分隱藏在舞台的底面。 （僅適用於使用快速調整功能進行預覽和演算）。不過，這不會影響Maya的演算。 當設為 <strong>true</strong>時，Maya中物件的垂直位置可能與預覽或使用快速調整演算時不同。</p> </td> 
+   <td><p>設為 <strong>true</strong> （預設）時，如有必要，將對象垂直移動，以確保對象的所有部分都在接地平面上方(y=0)。</p> <p>當設為 <strong>false</strong> （預設）時，物件不會重新定位，而且可能會部分隱藏在舞台的底面。 （僅適用於使用快速調整功能進行預覽和演算）。 不過，這不會影響Maya的演算。 當設為 <strong>true</strong>時，Maya中物件的垂直位置可能與預覽或使用快速調整演算時不同。</p> </td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/Paths/magickPath</td> 
@@ -91,7 +94,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 | **路徑** | **說明** |
 |---|---|
 | `/libs/settings/dam/v3D/services/aws/accountId` | Adobe AWS帳戶的帳戶ID。 |
-| `/libs/settings/dam/v3D/services/aws/bucketName` | S3傳輸桶的名稱；正常情 `aem3d`況。 |
+| `/libs/settings/dam/v3D/services/aws/bucketName` | S3傳輸桶的名稱； 正常情 `aem3d`況。 |
 | `/libs/settings/dam/v3D/services/aws/customerId` | Adobe指派給您組織的唯一ID。 用作AWS Cognito用戶ID。 |
 | `/libs/settings/dam/v3D/services/aws/encryptedPassword` | 與此customerId關聯的密碼。 用作AWS Cognito密碼。 |
 | `/libs/settings/dam/v3D/services/aws/region` | 部署雲服務的AWS地區。 |
