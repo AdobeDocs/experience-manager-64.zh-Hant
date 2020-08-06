@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 0%
 
 ---
 
@@ -25,15 +28,15 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 管理工作流程時可使用多種控制台。 使用全 [域導覽](/help/sites-authoring/basic-handling.md#global-navigation) ，開啟「工具」窗格，然後選取「工 **作流程******」:
 
-* **型號**:管理工作流程定義
-* **例項**:檢視並管理執行中的工作流程例項
-* **啟動器**:管理啟動工作流程的方式
-* **封存**:檢視成功完成之工作流程的歷史記錄
-* **失敗**:檢視已完成但有錯誤的工作流程記錄
+* **型號**: 管理工作流程定義
+* **例項**: 檢視並管理執行中的工作流程例項
+* **啟動器**: 管理啟動工作流程的方式
+* **封存**: 檢視成功完成之工作流程的歷史記錄
+* **失敗**: 檢視已完成但有錯誤的工作流程記錄
 
 ## 監控工作流實例的狀態 {#monitoring-the-status-of-workflow-instances}
 
-1. 使用導覽依序 **選擇工**&#x200B;具、工 **作流程**。
+1. 使用導覽依 **序選擇**「工具」 **和「工作流**」。
 1. 選擇「 **例項** 」(Instances)以顯示當前正在進行的工作流實例清單。
 
    ![wf-96](assets/wf-96.png)
@@ -44,12 +47,12 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 暫停、繼續和終止工作流實例 {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. 使用導覽依序 **選擇工**&#x200B;具、工 **作流程**。
+1. 使用導覽依 **序選擇**「工具」 **和「工作流**」。
 1. 選擇「 **例項** 」(Instances)以顯示當前正在進行的工作流實例清單。
 
    ![wf-96-1](assets/wf-96-1.png)
 
-1. 選擇特定項目，然後視 **情況使用****Terminate**、 **Suspend**&#x200B;或Resume;確認及／或需要進一步詳細資訊：
+1. 選擇特定項目，然後視 **情況使用****Terminate**、 **Suspend**&#x200B;或Resume; 確認及／或需要進一步詳細資訊：
 
    ![wf-97-1](assets/wf-97-1.png)
 
@@ -62,7 +65,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    >[!NOTE]
    >
-   >中止狀態被視為由於用戶操作而成功終止；例如：
+   >中止狀態被視為由於用戶操作而成功終止； 例如：
    >
    >* 終止動 **作的使用**
    >* 當受工作流約束的頁面被（強制）刪除時，工作流將被終止
@@ -76,7 +79,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 當工作流程失敗時，AEM會提供「 **Failures** 」（失敗）主控台，讓您在處理原始原因後調查並採取適當動作：
 
-* **失敗詳細**&#x200B;資訊開啟一個窗口，顯示 **失敗消息、**&#x200B;步驟和 **失敗堆棧******。
+* **Failure Details(失敗詳**&#x200B;細資料)開啟視窗以顯示 
+**故障消息**、 **步驟** 和 **故障棧**。
 
 * **開啟歷史**&#x200B;記錄顯示工作流程歷史記錄的詳細資訊。
 
@@ -86,7 +90,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 若要調查失敗，然後在之後繼續或終止工作流程，請執行下列步驟：
 
-1. 使用導覽依序 **選擇工**&#x200B;具、工 **作流程**。
+1. 使用導覽依 **序選擇**「工具」 **和「工作流**」。
 1. 選擇 **失敗** ，以顯示未成功完成的工作流實例清單。
 1. 選擇特定項目，然後選擇相應的操作：
 
@@ -129,14 +133,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    <td>scheduledpurge.workflowStatus</td> 
    <td><p>要清除的工作流實例的狀態。 下列值有效：</p> 
     <ul> 
-     <li>完成：已完成的工作流實例將被清除。</li> 
-     <li>正在運行：執行中的工作流程例項會被清除。</li> 
+     <li>完成： 已完成的工作流實例將被清除。</li> 
+     <li>正在運行： 執行中的工作流程例項會被清除。</li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td>要清除的模型</td> 
    <td>scheduledpurge.modelIds</td> 
-   <td><p>要清除的工作流模型的ID。 <br /> ID是指向模型節點的路徑，例如：/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> 指定無值可清除所有工作流程模型的例項。</p> <p>要指定多個型號，請按一下Web控制台中的+按鈕。 </p> </td> 
+   <td><p>要清除的工作流模型的ID。 ID是指向模型節點的路徑，例如：<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> 指定無值可清除所有工作流程模型的例項。</p> <p>要指定多個型號，請按一下Web控制台中的+按鈕。 </p> </td> 
   </tr> 
   <tr> 
    <td>工作流程時代</td> 
@@ -154,9 +158,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >
 >要將配置添加到儲存庫，服務PID為：
 >
->`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
+>`com.adobe.granite.workflow.core.WorkflowSessionFactory`。
 
 | 屬性名稱（Web控制台） | OSGi屬性名稱 |
 |---|---|
-| 收件箱查詢大小上限 | granite.workflow.inboxQuerySize |
+| 最大收件箱查詢大小 | granite.workflow.inboxQuerySize |
 
