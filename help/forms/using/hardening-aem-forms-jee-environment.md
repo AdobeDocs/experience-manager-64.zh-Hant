@@ -1000,7 +1000,7 @@ AEM Forms on JEE使用檔案系統的方式如下：
 
 ### 禁用目錄瀏覽 {#disable-directory-browsing}
 
-登入Administration Console後，可修改URL來瀏覽主控台的目錄清單。 例如，如果您將URL變更為下列其中一個URL，則可能會出現目錄清單：
+登入Administration Console後，可修改URL，以瀏覽主控台的目錄清單。 例如，如果您將URL變更為下列其中一個URL，則可能會出現目錄清單：
 
 ```as3
 https://<servername>:8080/adminui/secured/ 
