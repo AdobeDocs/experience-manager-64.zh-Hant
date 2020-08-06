@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1233'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 * [建立最適化表單](/help/forms/using/creating-adaptive-form.md)
 * [JSON結構描述](https://json-schema.org/)
 
-## 使用JSON結構描述做為表單模型 {#using-a-json-schema-as-form-model}
+## 使用JSON結構描述做為表單模型  {#using-a-json-schema-as-form-model}
 
 AEM Forms支援使用現有的JSON結構描述來建立最適化表單。 此JSON結構描述組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合 [v4規範](https://json-schema.org/draft-04/schema)。
 
@@ -59,7 +62,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>{</p> <p>「類型」:"字串",</p> <p>}</p> </td> 
+   <td><p>{</p> <p>「類型」: "字串",</p> <p>}</p> </td> 
    <td><br /> <br /> 文字欄位<br /> <br /> <br /> </td> 
   </tr> 
   <tr> 
@@ -87,7 +90,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
 
 ### 通用架構屬性 {#common-schema-properties}
 
-最適化表單使用JSON結構描述中的可用資訊來對應每個產生的欄位。 特別是：
+最適化表單使用JSON結構描述中的可用資訊來對應每個產生的欄位。 尤其是：
 
 * title屬性用作最適化表單元件的標籤。
 * description屬性設定為自適應表單元件的詳細說明。
@@ -434,7 +437,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
  </tbody> 
 </table>
 
-## 不支援的構造 {#non-supported-constructs}
+## 不支援的構造  {#non-supported-constructs}
 
 最適化表單不支援下列JSON結構：
 
@@ -443,7 +446,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
 * OneOf、AnyOf、AllOf和NOT
 * 僅支援同構陣列。 因此，項目約束必須是對象而不是陣列。
 
-## Frequently asked questions {#frequently-asked-questions}
+## 常見問題 {#frequently-asked-questions}
 
 **為什麼我無法將子表單的個別元素（從任何複雜類型產生的結構）拖曳至可重複的子表單（minOccours或maxOccuns值大於1）?**
 
