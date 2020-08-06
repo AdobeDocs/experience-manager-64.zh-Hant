@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '700'
+ht-degree: 5%
 
 ---
 
@@ -121,19 +124,19 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
    <td><p>以最適化形式映射至enabled屬性。 您可以使用「存取」運算式來覆寫它。</p> </td> 
   </tr>
   <tr>
-   <td><p>協助功能：角色 </p> </td> 
+   <td><p>協助功能： 角色 </p> </td> 
    <td><p>映射至最適化格式的角色屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>協助功能：speakPriority </p> </td> 
+   <td><p>協助功能： speakPriority </p> </td> 
    <td><p>以最適化形式映射至speakPriority屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>協助功能：speakText</p> </td> 
+   <td><p>協助功能： speakText</p> </td> 
    <td><p>以最適化格式對應至自訂協助工具文字。</p> </td> 
   </tr>
   <tr>
-   <td><p>協助功能：工具提示 </p> </td> 
+   <td><p>協助功能： 工具提示 </p> </td> 
    <td><p>映射至最適化格式的簡短描述屬性。</p> </td> 
   </tr>
   <tr>
