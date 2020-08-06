@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '1620'
+ht-degree: 0%
 
 ---
 
@@ -117,7 +120,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 ![aa-21](assets/aa-21.png)
 
-您新增的程式碼會附加至analytics.sitecatalyst.js檔案。 因此，您可以存 `s` 取變數，此變數是中定義之 `s_gi` javascript物件的例項 `s_code.js`。 例如，新增下列程式碼等同於新增名為 `prop10` 值 `CONSTANT`的變數，這是上一節的範例：
+您新增的程式碼會附加至analytics.sitecatalyst.js檔案。 因此，您可以存取 `s` 變數，此變數是中所定義 `s_gi` 之javascript物件的例項 `s_code.js`。 例如，新增下列程式碼等同於新增名為 `prop10` 值 `CONSTANT`的變數，這是上一節的範例：
 
 `s.prop10= 'CONSTANT';`
 
@@ -270,16 +273,17 @@ AEM會安裝下列Adobe Analytics外掛程式，以便依預設提供：
 
 1. 按一下右鍵/apps/my-app/clientlibs資料夾，然後按一下「建立」>「建立節點」。 輸入以下屬性值，然後按一下「確定」:
 
-   * 名稱：用戶端程式庫資料夾的名稱，例如my-plugins
+   * 名稱： 用戶端程式庫資料夾的名稱，例如my-plugins
 
-   * 類型：cq:ClientLibraryFolder
+   * 類型： cq:ClientLibraryFolder
 
 1. 選取您剛建立的用戶端程式庫資料夾，並使用右下方的屬性列來新增下列屬性：
 
-   * 名稱：類別
-   * 類型：字串
-   * 值：sitecatalyst.plugins
-   * 多重：已選取
+   * 名稱： 類別
+   * 類型： 字串
+   * 值： sitecatalyst.plugins
+   * 多重： 已選取
+
    在「編輯」窗口中按一下「確定」以確認屬性值。
 
 1. 按一下右鍵剛建立的客戶端庫資料夾，然後按一下「建立」>「建立檔案」。 對於檔案名稱，請輸入js.txt，然後按一下「確定」。
