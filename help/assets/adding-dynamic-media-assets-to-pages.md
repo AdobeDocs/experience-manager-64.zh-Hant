@@ -115,6 +115,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 >
 >* 您已啟 [用動態媒體](config-dynamic.md)。 動態媒體預設為停用。
 >* 該影像具有金字塔tiff檔案。 在啟用動態媒體之前匯入的影像沒有金字塔tiff檔案。
+
 >
 
 
@@ -153,7 +154,7 @@ You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** i
 * **[!UICONTROL 替代文字]**為關閉圖形的使用者新增影像標題。
 如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL URL, Open in]**You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
+* **[!UICONTROL URL, Open in]**You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟該URL。
 如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
 * **[!UICONTROL 寬度]** 和 **[!UICONTROL 高]**&#x200B;度：如果您希望影像大小固定，請輸入像素值。 將這些值留空可讓資產具適應性。
