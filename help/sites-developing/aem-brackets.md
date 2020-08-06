@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '926'
+ht-degree: 0%
 
 ---
 
@@ -69,7 +72,7 @@ AEM Brackets延伸功能支援Brackets 1.0版或更新版本。
 
 1. 資料 `jcr_root` 夾(例如 `myproject/jcr_root`)
 
-1. 檔 `filter.xml` 案(例如 `myproject/META-INF/vault/filter.xml`);如需檔案結構的詳細資訊，請 `filter.xml` 參閱工作區篩 [選定義](https://jackrabbit.apache.org/filevault/filter.html)。
+1. 檔 `filter.xml` 案(例如 `myproject/META-INF/vault/filter.xml`); 如需檔案結構的詳細資訊，請 `filter.xml` 參閱工作區篩 [選定義](https://jackrabbit.apache.org/filevault/filter.html)。
 
 在Brackets的「 **檔案** 」菜單中，選擇「開啟資料夾…… **」(Open Folder..** .)並選擇 `jcr_root` 資料夾或父項項目資料夾。
 
@@ -108,7 +111,7 @@ AEM Brackets Extension為下列類型的檔案和檔案夾提供內容同步化�
 
 >[!NOTE]
 >
->如果選定條目位於資料夾外，則會禁 `jcr_root` 用「導 **出到伺服器」和「從服** 務器導入 **** 」上下文菜單條目。
+>如果選定條目位於資料夾外， `jcr_root` 則禁用「 **導出到伺服器」(** Export to Server **)和「從服** 務器導入」(Import from Server)上下文菜單條目。
 
 ### 完整內容包同步 {#full-content-package-synchronization}
 
@@ -150,7 +153,7 @@ AEM Brackets延伸功能也包含一些自動完成功能，以簡化HTL屬性�
 
 ## 更多資訊 {#more-information}
 
-AEM Brackets擴充功能是開放原始碼專案，由 [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) organization在GitHub上代管，位於Apache授權2.0版下：
+AEM Brackets擴充功能是開放原始碼專案，由 [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) Organization在GitHub上代管，位於Apache授權2.0版下：
 
 * 代碼儲存庫： [https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension](https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension)
 * Apache License, 2.0版： [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
