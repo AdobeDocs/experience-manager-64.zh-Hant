@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 0%
 
 ---
 
@@ -47,9 +50,9 @@ AEM Forms提供一種方式，可協助您讓最適化表單的欄位與XDP檔�
 
 套件包含下列資產：
 
-1. `sample-form.xdp`:以XFA表單範本為例
+1. `sample-form.xdp`: 以XFA表單範本為例
 
-1. `sample-xfa-af`:基於sample-form.xdp檔案的自適應表單。 但是，此最適化表單不包含任何欄位。 在下個步驟中，我們將新增內容至此最適化表單。
+1. `sample-xfa-af`: 基於sample-form.xdp檔案的自適應表單。 但是，此最適化表單不包含任何欄位。 在下個步驟中，我們將新增內容至此最適化表單。
 
 ### 將內容新增至最適化表單 {#add-content-to-adaptive-form-br}
 
@@ -84,7 +87,8 @@ AEM Forms提供一種方式，可協助您讓最適化表單的欄位與XDP檔�
 
 ## 將最新的XDP檔案同步化最適化表單 {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-在下次開啟與XDP檔案不同步的自適應表單以進行創作時，將顯示以下消息：已&#x200B;**更新最適化表單的架構／表單範本。`Click Here`以新版本重新建立基礎。**
+在下次開啟與XDP檔案不同步的自適應表單以進行創作時，將顯示以下消息：
+**已更新最適化表單的架構／表單範本。`Click Here`以新版本重新建立基礎。**
 
 按一下訊息會同步最適化表單中的欄位與XDP檔案中的對應欄位。
 
@@ -104,7 +108,7 @@ AEM Forms提供一種方式，可協助您讓最適化表單的欄位與XDP檔�
 >
 >AF數值欄位標籤未變更，因為您已從元件屬性對話方塊中覆寫此屬性，如新增內容至最適化表 [單中所述](#p-add-content-to-adaptive-form-br-p)。
 
-### 從XDP檔案新增欄位至最適化表單 {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### 從XDP檔案新增欄位至最適化表單   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 任何稍後添加到原始XDP檔案的欄位都會顯示在「表單層次」頁籤中，您可以將這些新欄位拖動到自適應表單中。
 
@@ -118,7 +122,7 @@ AEM Forms提供一種方式，可協助您讓最適化表單的欄位與XDP檔�
 
 1. 更新檔 `sample-form.xdp` 案並刪除NumericField1。
 1. 在AEM Forms `sample-form.xdp` UI中上傳檔案
-1. 開啟適 `sample-xfa-af` 應性表單以製作。 將顯示以下錯誤消息：已更新最適化表單的架構／表單範本。 `Click Here` 以新版本重新建立基礎。
+1. 開啟適 `sample-xfa-af` 應性表單以製作。 將顯示以下錯誤消息： 已更新最適化表單的架構／表單範本。 `Click Here` 以新版本重新建立基礎。
 
 1. 按一下訊息中的連 `Click Here`結（標示為「」）。 會顯示錯誤訊息，指出XDP檔案中不再存在欄位。
 
