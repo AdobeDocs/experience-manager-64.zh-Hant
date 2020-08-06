@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -25,8 +28,8 @@ Apache Sling Discovery功能提供Java API，可讓您建立使用JobManager作�
 
 卸載框架定義了用於標識作業裝載的兩個作業屬性。 卸載複製代理使用以下屬性來標識要複製到拓撲中的實例的資源：
 
-* `offloading.job.input.payload`:以逗號分隔的內容路徑清單。 內容會複製到執行作業的例項。
-* `offloading.job.output.payload`:以逗號分隔的內容路徑清單。 作業執行完成後，作業裝載將被複製到建立作業的實例上的這些路徑。
+* `offloading.job.input.payload`: 以逗號分隔的內容路徑清單。 內容會複製到執行作業的例項。
+* `offloading.job.output.payload`: 以逗號分隔的內容路徑清單。 作業執行完成後，作業裝載將被複製到建立作業的實例上的這些路徑。
 
 使用 `OffloadingJobProperties` 列舉來參考屬性名稱：
 
@@ -39,9 +42,9 @@ Apache Sling Discovery功能提供Java API，可讓您建立使用JobManager作�
 
 建立調用JobManager.addJob方法的客戶端，以建立由自動選擇的JobConsumer執行的作業。 提供以下資訊以建立作業：
 
-* 主題：工作主題。
-* 名稱：（可選）
-* 屬性映射：包 `Map<String, Object>` 含任意數目的屬性的對象，如輸入有效載荷路徑和輸出有效載荷路徑。 此Map對象可用於執行作業的JobConsumer對象。
+* 主題： 工作主題。
+* 名稱： （可選）
+* 屬性映射： 包 `Map<String, Object>` 含任意數目的屬性的對象，如輸入有效載荷路徑和輸出有效載荷路徑。 此Map對象可用於執行作業的JobConsumer對象。
 
 以下示例服務為給定主題和輸入裝載路徑建立作業。
 
