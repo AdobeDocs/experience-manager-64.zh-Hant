@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 88ee8573-58c4-42cd-8e36-2ea4a0d654e4
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '940'
+ht-degree: 0%
 
 ---
 
@@ -76,25 +79,30 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 
 * **[!UICONTROL 垃圾筒資]**&#x200B;料夾：如果勾選，此「訊息清單」元件只會顯示標示為已刪除（垃圾筒）的訊息。
 
-* **[!UICONTROL 資料夾路徑]**(*必要*)參考AEM Communities Messaging Operations Service中為 `inbox.path.name` 和 `sentitems.path.name` 設定的 [值](messaging.md#messaging-operations-service)。 為配置時， `Inbox`請使用值添加一個條目 `inbox.path.name`。 為配置時， `Outbox`請使用值添加一個條目 `sentitems.path.name`。 為配置時， `Trash`添加兩個具有兩個值的條目。
+* **[!UICONTROL 資料夾路徑]**(*必要*)參考AEM Communities Messaging Operations Service中為 `inbox.path.name` 和 `sentitems.path.name` 設定的 [值](messaging.md#messaging-operations-service)。 為配置時， `Inbox`請使用值添加一個條目 `inbox.path.name`。 為配置時， `Outbox`請使用值添加一個條目 `sentitems.path.name`。 在配置時， `Trash`添加兩個同時具有兩個值的條目。
 
 #### 顯示頁籤 {#display-tab}
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-* **[!UICONTROL 標籤讀取按]**&#x200B;鈕如果選中，則顯 `Read`示一個按鈕，允許將消息標籤為已讀取。
+* **[!UICONTROL 標籤讀取按鈕]**&#x200B;如果勾選，則顯示 
+`Read`按鈕，允許將消息標籤為已讀取。
 
-* **[!UICONTROL 標籤未讀按]**&#x200B;鈕如果選中，則顯示 `Mark Unread` 一個按鈕，允許將消息標籤為已讀取。
+* **[!UICONTROL 標籤未讀按鈕]**&#x200B;如果勾選，則顯示 
+`Mark Unread` 按鈕，允許將消息標籤為已讀取。
 
-* **[!UICONTROL 刪除按鈕]**&#x200B;如果選中，則顯示 `Delete`一個按鈕，允許將消息標籤為已讀取。 如果也勾選，將複製 **`Message Options`** 刪除功能。
+* **[!UICONTROL 刪除按鈕]**&#x200B;如果勾選，則會顯示 
+`Delete`按鈕，允許將消息標籤為已讀取。 如果也勾選，將複製 **`Message Options`** 刪除功能。
 
-* **[!UICONTROL 消息選]**&#x200B;項如果選中 **`Reply`**，則顯 **`Reply All`**&#x200B;示、 **`Forward`** 和 **`Delete`** 按鈕，允許重新發送或刪除消息。 如果也勾選，將複製 **`Delete Button`** 刪除功能。
+* **[!UICONTROL 訊息選項]**&#x200B;如果勾選，會顯示 
+**`Reply`**、 **`Reply All`**&#x200B;和 **`Forward`****`Delete`** 按鈕，允許重新發送或刪除消息。 如果也勾選，將複製 **`Delete Button`** 刪除功能。
 
 * **[!UICONTROL 每頁消息]**&#x200B;指定的數量是分頁方案中每頁顯示的最大消息數。 如果未指定數字（留空），則會顯示所有訊息，且無分頁。
 
 * **[!UICONTROL 時間戳記模]**&#x200B;式提供一或多種語言的時間戳記模式。 預設值為en、de、fr、it、es、ja、zh_CN、ko_KR。
 
-* **[!UICONTROL 顯示用戶]**&#x200B;選擇 **`Sender`** 或 **`Recipients`** 以確定是顯示發送者還是收件者。
+* **[!UICONTROL 顯示用戶]**&#x200B;選擇 
+**`Sender`** 或確 **`Recipients`** 定要顯示「傳送者」或「收件者」。
 
 ### 配置合成消息 {#configuring-compose-message}
 
@@ -118,9 +126,11 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
-* **[!UICONTROL 重新導向URL]**&#x200B;輸入訊息傳送後所顯示之頁面的URL。 For example, `../messaging.html`.
+* **[!UICONTROL 重新導向URL]**&#x200B;輸入訊息傳送後所顯示之頁面的URL。 例如， 
+`../messaging.html`。
 
-* **[!UICONTROL 取消URL]**&#x200B;輸入傳送者取消訊息時顯示之頁面的URL。 For example, `../messaging.html`.
+* **[!UICONTROL 取消URL]**&#x200B;輸入傳送者取消訊息時顯示之頁面的URL。 例如， 
+`../messaging.html`。
 
 * **[!UICONTROL 消息主題的最大長]**&#x200B;度「主題」欄位中允許的字元數上限。 例如，500。 預設為無限制。
 
@@ -132,17 +142,23 @@ source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
 
 ![chlimage_1-403](assets/chlimage_1-403.png)
 
-* **[!UICONTROL 顯示主題欄位]**&#x200B;如果選中，則顯示 `Subject` 該欄位並啟用向消息中添加主題。 未勾選預設值。
+* **[!UICONTROL 顯示主題欄位]**&#x200B;如果勾選，則顯示 
+`Subject` 欄位，並啟用將主旨新增至訊息。 未勾選預設值。
 
-* **[!UICONTROL 主題標]**&#x200B;簽輸入要顯示在欄位旁的文 `Subject` 字。 預設為 `Subject`。
+* **[!UICONTROL 主題標]**&#x200B;簽輸入要顯示在 
+`Subject` 欄位. 預設為 `Subject`。
 
-* **[!UICONTROL 顯示附加檔案欄位]**&#x200B;如果選中此選項，則顯 `Attachment` 示該欄位並啟用向郵件中添加檔案附件。 未勾選預設值。
+* **[!UICONTROL 顯示附加檔案欄位]**&#x200B;如果選中，則顯示 
+`Attachment` 欄位，並啟用將檔案附件新增至訊息的功能。 未勾選預設值。
 
-* **[!UICONTROL 附加檔案標]**&#x200B;簽輸入要顯示在欄位旁的 `Attachment` 文本。 預設為 **`Attach File`**。
+* **[!UICONTROL 附加檔案標]**&#x200B;簽輸入要在 
+`Attachment` 欄位. 預設為 **`Attach File`**。
 
-* **[!UICONTROL 顯示內容欄位]**&#x200B;如果勾選，則顯示欄 `Content` 位並啟用新增訊息內文。 未勾選預設值。
+* **[!UICONTROL 顯示內容欄位]**&#x200B;如果勾選，則顯示 
+`Content` 欄位並啟用新增訊息內文。 未勾選預設值。
 
-* **[!UICONTROL 內容標]**&#x200B;簽輸入要在欄位旁顯示的 `Content` 文字。 預設為 **`Body`**。
+* **[!UICONTROL 內容標]**&#x200B;簽輸入要在 
+`Content` 欄位. 預設為 **`Body`**。
 
 * **[!UICONTROL With Rich Text Editor]**（富格文本編輯器）如果選中，則表示使用自定義「內容」文本框及其自己的富格文本編輯器。 未勾選預設值。
 
