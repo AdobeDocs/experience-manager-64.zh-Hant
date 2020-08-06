@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: a5eba237-3aad-497a-8f77-061d5d3df371
 translation-type: tm+mt
 source-git-commit: ecfac782540ac6712e11bed9148199561b7e7f79
+workflow-type: tm+mt
+source-wordcount: '1442'
+ht-degree: 0%
 
 ---
 
 
-# HTML5表單的最佳範例 {#best-practices-for-html-forms}
+# HTML5表單的最佳範例  {#best-practices-for-html-forms}
 
 調整您的XFA架構HTML5表單，以獲得最佳效能。
 
@@ -46,12 +49,12 @@ HTML5表格可包含多種外部資源，例如影像、JavaScript和CSS檔案�
 * 使用AEM Configuration Manager(Day CQ HTML Library Manager)中的minify選項來壓縮JavaScript和CSS檔案。 如需詳細資訊，請參 [閱OSGi組態設定](/help/sites-deploying/osgi-configuration-settings.md)。
 * 啟用網頁壓縮。 它可減少源自表單的請求和回應的大小。 如需詳細資訊，請 [參閱「AEM表單伺服器的效能調整」](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html)。
 
-## 讓興趣持續存在，只顯示必填欄位 {#keep-the-interest-alive-show-only-required-fields}
+## 讓興趣持續存在，只顯示必填欄位  {#keep-the-interest-alive-show-only-required-fields}
 
 HTML5表單可以執行到數百個頁面。 在瀏覽器中載入大量欄位的表單速度緩慢。 您可以對XFA表單執行下列最佳化，以最佳化包含大量欄位和頁面的表單：
 
-* 評估將大型表單分割為多個表單。 您也可以使用表單集將所有較小的表單群組在一起，並以單一單位呈現。 表單集僅載入所需的表單。 此外，在表單集中，您可以設定不同表單中的常用欄位，以共用資料系結。 資料系結可協助使用者只填寫一次一般資訊；這些資訊會自動填入後續的表格，大幅提升效能。 如需表單集的詳細資訊，請參閱「 [AEM表單中的表單集」](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)。
-* 請考慮分割區段，並將每個區段移至不同的頁面。 HTML5表格會動態載入頁面捲動要求上的每個頁面。 只有捲動的頁面（顯示的頁面及其前面的頁面）會儲存在記憶體中；其餘的頁面會隨選載入。 因此，分割和移動頁面上的某個區段會減少載入表單所需的時間。 您也可以將表單的第一頁當做登陸頁面。 它類似於書籍的目錄(TOC)。 表單的著陸頁面僅包含表單其他區段的連結。 它可大幅改善表單第一頁的載入時間，並改善使用者體驗。
+* 評估將大型表單分割為多個表單。 您也可以使用表單集將所有較小的表單群組在一起，並以單一單位呈現。 表單集僅載入所需的表單。 此外，在表單集中，您可以設定不同表單中的常用欄位，以共用資料系結。 資料系結可協助使用者只填寫一次一般資訊； 這些資訊會自動填入後續的表格，大幅提升效能。 如需表單集的詳細資訊，請參閱「 [AEM表單中的表單集」](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)。
+* 請考慮分割區段，並將每個區段移至不同的頁面。 HTML5表格會動態載入頁面捲動要求上的每個頁面。 只有捲動的頁面（顯示的頁面及其前面的頁面）會儲存在記憶體中； 其餘的頁面會隨選載入。 因此，分割和移動頁面上的某個區段會減少載入表單所需的時間。 您也可以將表單的第一頁當做登陸頁面。 它類似於書籍的目錄(TOC)。 表單的著陸頁面僅包含表單其他區段的連結。 它可大幅改善表單第一頁的載入時間，並改善使用者體驗。
 * 依預設，將條件式區段保持隱藏。 只有在符合特定條件時，才能顯示這些區段。 它有助於將DOM的大小限制在最小。 您也可以使用標籤式導覽，一次只顯示一個區段。
 
 ## 少就是多，減少頁數 {#less-is-more-reduce-the-number-of-pages}
@@ -67,7 +70,7 @@ HTML5表格可包含資料導向欄位（表格和子表格）。 這些欄位�
 
 XFA表格可以有許多區段，僅專用於記錄檔案(DOR)。 為了減少節點數並改善表單的效能，您可以維護不同的表單副本——一個用來填寫表單，另一個用來在伺服器上產生記錄檔案。 在要填寫XFA表單的復本中，會顯示僅擷取資料所需的欄位。 在「從」中生成記錄文檔XFA中，僅保留表單打印輸出中所需的欄位。 在選擇建議的方法之前，先評估效能增益和維護開銷。
 
-## 建議的讀取 {#recommended-reads}
+## 建議的讀取  {#recommended-reads}
 
 Adobe Experience Manager(AEM)表單可協助您將複雜的交易轉換為簡單、愉悅的數位體驗。 但是，它需要共同努力，以開發高效和有生產力的表單。 除了HTML5 Forms外，以下是針對一般AEM最佳實務的建議讀取：
 
@@ -80,4 +83,5 @@ Adobe Experience Manager(AEM)表單可協助您將複雜的交易轉換為簡單
 
 ## 快速參考卡 {#quick-reference-card}
 
-您可列印下列卡片（按一下卡片即可下載高解析度版本），並將它保留在桌上以供快速參考：[![HTML5 Forms最佳範例快速參考資訊卡](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+您可列印下列卡片（按一下卡片即可下載高解析度版本），並將它保留在桌上以供快速參考：
+[ ![HTML5 Forms最佳範例快速參考卡](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
