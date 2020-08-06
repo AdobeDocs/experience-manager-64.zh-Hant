@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '655'
+ht-degree: 1%
 
 ---
 
@@ -48,11 +51,11 @@ Correponce Management已內建210個特殊字元的預設支援，您可輕鬆�
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **路徑：** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **** 覆蓋位置：/apps/
+      **覆蓋位置：** /apps/
 
-      **** 匹配節點類型：已勾選
+      **匹配節點類型：** 已勾選
 
       >[!NOTE]
       >
