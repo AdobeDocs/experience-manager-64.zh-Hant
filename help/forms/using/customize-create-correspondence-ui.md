@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Commense Management可讓您重新品牌化其解決方案範本，以提升品�
 
 您可以在「建立對應UI」中，以組織的標誌變更標誌。
 
-![](assets/0_1_introscreenshot.png) 「建立對應UI」圖中的自定義&#x200B;****&#x200B;表徵圖：「建 *立對應」UI中的自訂圖示*
+![「建立對應UI」圖中的自定義](assets/0_1_introscreenshot.png)**表徵圖：** *「建立對應」UI中的自訂圖示*
 
 ### 在「建立對應UI」中變更標誌 {#changing-the-logo-in-the-create-correspondence-ui}
 
@@ -59,11 +62,11 @@ Commense Management可讓您重新品牌化其解決方案範本，以提升品�
 
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **路徑：** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** 覆蓋位置：/apps/
+      **覆蓋位置：** /apps/
 
-      **** 匹配節點類型：已勾選
+      **匹配節點類型：** 已勾選
 
       ![覆蓋節點路徑](assets/0_1_5ioverlaynodedialog.png)
 
@@ -76,20 +79,20 @@ Commense Management可讓您重新品牌化其解決方案範本，以提升品�
       >* 安裝功能套件
 
 
-   1. 按一下 **確定**。 css資料夾是在指定的路徑中建立。
+   1. 按一下&#x200B;**「確定」**。css資料夾是在指定的路徑中建立。
 
 1. 在應用程式檔案夾中，建立名 `imgs` 為路徑／結構的檔案夾，類似於imgs檔案夾（位於ccrui檔案夾）。
 
    1. 以滑鼠右鍵按一 **下** ，在下列路徑上的imgs資料夾，然後選取「 **覆蓋節點」**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. 請確定「覆蓋節點」對話框具有下列值：
 
-      **** 路徑：/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **路徑：** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** 覆蓋位置：/apps/
+      **覆蓋位置：** /apps/
 
-      **** 匹配節點類型：已勾選
+      **匹配節點類型：** 已勾選
 
-   1. 按一下 **確定**。
+   1. 按一下&#x200B;**「確定」**。
 
       >[!NOTE]
       >
@@ -101,7 +104,7 @@ Commense Management可讓您重新品牌化其解決方案範本，以提升品�
 
 將您的自訂標誌檔案上傳至CRX。 標準HTML規則會控制標誌的轉換。 支援的影像檔案格式會根據您用來存取AEM Forms的瀏覽器而定。 所有瀏覽器都支援JPEG、GIF和PNG。 如需詳細資訊，請參閱支援影像格式的瀏覽器專用檔案。
 
-* 標誌影像的預設尺寸為48 px &amp;ast;48 px. 請確定您的映像與此大小或大於48 px &amp;ast;48 px.
+* 標誌影像的預設尺寸為48 px &amp;ast; 48 px. 請確定您的映像與此大小或大於48 px &amp;ast; 48 px.
 * 如果標誌影像的高度超過50像素，「建立對應」使用者介面會將影像縮小至50像素的最高高度，因為這是標題的高度。 在縮小影像時，「建立對應」使用者介面會維持影像的外觀比例。
 * 「建立對應使用者介面」如果影像較小，則不會放大影像，因此請確定您使用的標誌影像高度至少為48像素，而且寬度足夠清楚。
 
@@ -139,7 +142,7 @@ Commense Management可讓您重新品牌化其解決方案範本，以提升品�
    支援的影像檔案格式會根據您用來存取AEM Forms的瀏覽器而定。 所有瀏覽器都支援JPEG、GIF和PNG。 如需詳細資訊，請參閱支援影像格式的瀏覽器專用檔案。
 
    ![自訂標誌檔案範例](assets/geometrixx-outdoors.png)
-   **** 圖：范 *例- customLogo.png，用作自訂標誌*
+   **圖：** *範例- CustomLogo.png將用作自訂標誌*
 
 1. 按一下「 **全部儲存**」。
 
@@ -172,5 +175,5 @@ Commense Management可讓您重新品牌化其解決方案範本，以提升品�
 
 清除瀏覽器快取，然後在瀏覽器中開啟「建立對應UI」例項。 您應該會看到自訂的標誌。
 
-![](assets/0_1_introscreenshot-1.png) 使用自訂標誌建立對應的使用者介面&#x200B;****&#x200B;圖：「建 *立對應」UI中的自訂圖示*
+![使用自訂標誌建立對應的使用者介面](assets/0_1_introscreenshot-1.png)**圖：** *「建立對應」UI中的自訂圖示*
 
