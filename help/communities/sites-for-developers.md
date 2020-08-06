@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 0%
 
 ---
 
@@ -36,15 +39,15 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 /**apps**/social/console/components/hbs/sitepage/**&lt;*template-name*>**.hbs
 
-**屬性**:page-template\
-**類型**:字串\
-**值**:&lt;*template-name*>（無副檔名）
+**屬性**: page-template\
+**類型**: 字串\
+**值**: &lt;*template-name*>（無副檔名）
 
 **配置節點**:
 
 /content/&lt;*社群網站路徑*>/&lt;*lang*>/configuration
 
-例如：/content/sites/engage/tw/configuration
+例如： /content/sites/engage/tw/configuration
 
 >[!NOTE]
 >
@@ -99,7 +102,8 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 * 查找 `allow<#>` 具有此格 `rep:principalName` 式的節點 `rep:principalName = *community-enable-nrh9h-members*`
 
-* 網站ID是第3個元件， `rep:principalName`例如，如果 `rep:principalName = community-enable-nrh9h-members`
+* 網站ID是第3個元件， `rep:principalName`例如，如果 
+`rep:principalName = community-enable-nrh9h-members`
 
    * **網站名稱** =啟 *用*
    * **網站ID** = *nrh9h*
