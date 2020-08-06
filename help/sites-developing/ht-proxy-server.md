@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
 * 電子郵件的SMTP
 * 用於用戶管理的LDAP
 
-例如，您可以將代理伺服器放在通過TCP/IP網路通信的任意兩個應用程式之間；例如網頁瀏覽器和AEM。 這可讓您監控您請求CQ頁面時的實際情況。
+例如，您可以將代理伺服器放在通過TCP/IP網路通信的任意兩個應用程式之間； 例如網頁瀏覽器和AEM。 這可讓您監控您請求CQ頁面時的實際情況。
 
 ## 啟動代理伺服器工具 {#starting-the-proxy-server-tool}
 
@@ -102,7 +105,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 例如，請考慮在要求時產生下列程式碼的頁面：
 
-### 例如 {#example}
+### 範例 {#example}
 
 例如，假設儲存庫中有一個非常簡單的html檔案，位於
 
