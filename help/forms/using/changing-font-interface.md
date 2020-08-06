@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 0%
 
 ---
 
@@ -74,6 +77,6 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 1. 重新啟動工作區並清除瀏覽器快取，以便顯示變更。
 
-![change_font_before圖](assets/change_font_before.png)**中：** 字型自 *訂前的頂端導覽列*
+![change_font_before圖](assets/change_font_before.png)**中：** *字型自訂前的頂端導覽列*
 
-![change_font_after圖](assets/change_font_after.png)**中：** 自訂 *第一個標籤的字型後的頂端導覽列*
+![change_font_after圖](assets/change_font_after.png)**中：** *自訂第一個標籤的字型後的頂端導覽列*
