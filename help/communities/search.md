@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
 source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+workflow-type: tm+mt
+source-wordcount: '463'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
 
 搜尋功能可與各種其他功能搭配使用，例如論壇，以提供搜尋內容的功能。
 
-新增搜尋社群成員輸入之貼文(稱為使用者產生的內容(UGC))的能力時，有兩個元件： [`Search`](#search-features) 和 [`Search Results`](#search-results)。
+新增搜尋社群成員輸入之貼文(稱為使用者產生的內容(UGC))的能力時，有兩個元件： [ `Search`](#search-features) 和 [`Search Results`](#search-results).
 
 包含該元件的頁 `Search Results` 面支援搜索和結果顯示。
 
@@ -53,7 +56,8 @@ source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL 結果頁]**：結果將顯示在使用瀏覽器選擇包含元件的頁所指定的單獨頁 `Search Results` 上。
+* **[!UICONTROL 結果頁]**：結果將顯示在使用瀏覽器選取包含 
+`Search Results` 元件.
 
 ## 搜尋結果 {#search-results}
 
