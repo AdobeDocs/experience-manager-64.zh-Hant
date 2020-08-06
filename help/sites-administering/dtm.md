@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2224'
+ht-degree: 1%
 
 ---
 
@@ -25,10 +28,11 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!NOTE]
 >
->如果您將DTM與自訂的Proxy設定搭配使用，您需要將HTTP Client proxy設定同時設定為AEM的某些功能是使用3.x API，而其他部分則使用4.x API:
+>如果您將DTM與自訂的Proxy設定搭配使用，您需要將HTTP Client Proxy設定同時設定為AEM的某些功能是使用3.x API，而其他部分則使用4.x API:
 >
 >* 3.x已設定為 [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x已設定為 [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+
 >
 
 
@@ -41,8 +45,8 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 AEM支援在雲端托管或在AEM托管的動態標籤管理。
 
-* 雲端托管：「動態標籤管理」Javascript程式庫會儲存在雲端，而您的AEM頁面會直接參照這些程式庫。
-* AEM代管：動態標籤管理會產生javascript程式庫。 AEM使用工作流程模型來取得和安裝程式庫。
+* 雲端托管： 「動態標籤管理」Javascript程式庫會儲存在雲端，而您的AEM頁面會直接參照這些程式庫。
+* AEM代管： 動態標籤管理會產生javascript程式庫。 AEM使用工作流程模型來取得和安裝程式庫。
 
 您的實作所使用的代管類型，會決定您執行的部分設定與實作工作。 如需代管選項的詳細資訊，請參 [閱動態標籤管理說明中的代管](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) -內嵌標籤。
 
@@ -156,7 +160,7 @@ AEM支援在雲端托管或在AEM托管的動態標籤管理。
   </tr> 
   <tr> 
    <td>共用機密</td> 
-   <td><p>（選擇性）用於解密下載的共用機密。 從動態標籤管理的「程式庫下載」頁面的「共用密碼」欄位取得此值。</p> <p><strong></strong> 注意：您必須在安 <a href="https://www.openssl.org/docs/apps/openssl.html">裝AEM的電腦上安裝OpenSSL</a> Libraries，如此AEM才能解密下載的程式庫。</p> </td> 
+   <td><p>（選擇性）用於解密下載的共用機密。 從動態標籤管理的「程式庫下載」頁面的「共用密碼」欄位取得此值。</p> <p><strong>注意：</strong> 您必須在安 <a href="https://www.openssl.org/docs/apps/openssl.html">裝AEM的電腦上安裝OpenSSL</a> Libraries，如此AEM才能解密下載的程式庫。</p> </td> 
   </tr> 
   <tr> 
    <td>啟用 Polling Importer</td> 
@@ -164,14 +168,14 @@ AEM支援在雲端托管或在AEM托管的動態標籤管理。
   </tr> 
   <tr> 
    <td>排程運算式</td> 
-   <td>（當選取「啟用輪詢匯入工具」時，會顯示並為必要項目。）控制下載動態標籤管理程式庫時的cron運算式。</td> 
+   <td>（當選取「啟用輪詢匯入工具」時，會顯示並為必要項目。） 控制下載動態標籤管理程式庫時的cron運算式。</td> 
   </tr> 
  </tbody> 
 </table>
 
 ![chlimage_1-352](assets/chlimage_1-352.png)
 
-### 雲端代管屬性——測試與生產 {#cloud-hosting-properties-staging-and-production}
+### 雲端托管屬性——測試與生產 {#cloud-hosting-properties-staging-and-production}
 
 當雲端托管動態標籤設定時，您可為動態標籤管理設定設定下列屬性。
 
@@ -205,7 +209,8 @@ AEM支援在雲端托管或在AEM托管的動態標籤管理。
 
    * 如果這是您新增的第一個設定，請按一下「立即設定」。
    * 如果已建立一個或多個配置，請按一下「顯示配置」，然後按一下「可用配置」旁邊的+連結。
-   ![chlimage_1-354](assets/chlimage_1-354.png)
+
+   ![chlimage_1-356](assets/chlimage_1-354.png)
 
 1. 輸入設定的標題，然後按一下「建立」。
 1. 在「API Token」欄位中，輸入動態標籤管理使用者帳戶的「API Token」屬性值。
@@ -216,7 +221,7 @@ AEM支援在雲端托管或在AEM托管的動態標籤管理。
    >
    >API Token在動態標籤管理使用者明確要求之前不會過期。
 
-   ![chlimage_1-355](assets/chlimage_1-355.png)
+   ![chlimage_1-353](assets/chlimage_1-355.png)
 
 1. 按一下「連線至DTM」。 AEM會與「動態標籤管理」驗證，並擷取您的帳戶所關聯的公司清單。
 1. 選取「公司」，然後選取您用來追蹤AEM網站的「屬性」。
@@ -243,6 +248,7 @@ AEM支援在雲端托管或在AEM托管的動態標籤管理。
 >* `companyID`
 >* `propertyID`
 >* `servertype`
+
 >
 
 
