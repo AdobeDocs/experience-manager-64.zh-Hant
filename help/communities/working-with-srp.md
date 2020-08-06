@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '922'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 自AEM Communities 6.1起，使用者產生的內容(UGC)會儲存在儲存資源提供者(SRP)提供的單一共用儲存區中。 有幾種SRP選項可供選擇，例如ASRP、MSRP和JSRP。
 
-與舊版不同，AEM例項間不會反向／正向複製UGC。 SRP可讓UGC直接存取，以便從所有作者和發佈例項建立、讀取、更新和刪除(CRUD)作業，但JSRP除外。
+與舊版不同，AEM例項中不會反向／正向複製UGC。 SRP可讓UGC直接存取，以便從所有作者和發佈例項建立、讀取、更新和刪除(CRUD)作業，但JSRP除外。
 
 以下是每 [個SRP選項的特性](#characteristics-of-srp-options)，在選擇適當的SRP和基礎部署時，這是決策過程的關 [鍵資訊](topologies.md)。
 
@@ -39,7 +42,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ## SRP選項的特點 {#characteristics-of-srp-options}
 
-[ASRP - adobe儲存資源供應商](asrp.md)\
+[ASRP - Adobe儲存資源供應商](asrp.md)\
 使用這個選項，UGC會在Adobe代管和管理的雲端服務中遠端保存。 它需要額外的授權，並與帳戶代表合作為該特定授權提供帳戶。
 
 * 需要Adobe提供並支援的相關雲端服務，才能儲存社群內容
@@ -60,7 +63,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 * 需要透過SRP API以程式化方式存取UGC
 * 適用於現有的TarMK發佈農場
 * 適用於MongoMK或RdbMK群集
-* 適合期待大量社群內容
+* 適合期待大量社群內容時
 
 [DSRP —— 關係資料庫儲存資源提供程式](dsrp.md)\
 使用此選項，UGC將直接保存在本地MySQL資料庫實例中。
@@ -87,7 +90,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 如需每個選項的設定詳細資訊，請參閱：
 
-* [ASRP - adobe儲存資源供應商](asrp.md)
+* [ASRP - Adobe儲存資源供應商](asrp.md)
 * [MSRP - MongoDB儲存資源提供程式](msrp.md)
 * [DSRP —— 關係資料庫儲存資源提供程式](dsrp.md)
 * [JSRP - JCR儲存資源提供商](jsrp.md)
