@@ -1,6 +1,6 @@
 ---
-title: Web 控制台
-seo-title: Web 控制台
+title: Web 主控台
+seo-title: Web 主控台
 description: 瞭解如何使用AEM網頁主控台。
 seo-description: 瞭解如何使用AEM網頁主控台。
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
@@ -11,11 +11,14 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 2%
 
 ---
 
 
-# Web 控制台{#web-console}
+# Web 主控台{#web-console}
 
 AEM中的Web主控台以 [Apache Felix Web Management Console為基礎](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)。 Apache Felix是建置OSGi R4服務平台的社群努力，此平台包含OSGi架構和標準服務。
 
@@ -27,13 +30,13 @@ AEM中的Web主控台以 [Apache Felix Web Management Console為基礎](https://
 
 Web控制台提供一系列標籤，以維護OSGi捆綁包，包括：
 
-* [配置](#configuration):用於設定OSGi組合，因此是設定AEM系統參數的基礎機制
-* [組合](#bundles):用於安裝捆綁
-* [元件](#components):用於控制AEM所需元件的狀態
+* [配置](#configuration): 用於設定OSGi組合，因此是設定AEM系統參數的基礎機制
+* [組合](#bundles): 用於安裝捆綁
+* [元件](#components): 用於控制AEM所需元件的狀態
 
 所做的任何更改都會立即應用於運行的系統。 不需要重新啟動。
 
-控制台可從 `../system/console`;例如：
+控制台可從 `../system/console`; 例如：
 
 `http://localhost:4502/system/console/components`
 
@@ -51,7 +54,7 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
    **OSGi >**
 
-* 網址；例如：
+* 網址； 例如：
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -63,8 +66,8 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
 * **配置**&#x200B;允許您更新現有的配置。 這些識別碼具有永久性識別碼(PID)，可以是：
 
-   * AEM的標準與整體；如果刪除，則需要這些值，這些值將返回預設設定。
-   * 從工廠配置建立的實例；這些實例由用戶建立，刪除操作會刪除實例。
+   * AEM的標準與整體； 如果刪除，則需要這些值，這些值將返回預設設定。
+   * 從工廠配置建立的實例； 這些實例由用戶建立，刪除操作會刪除實例。
 
 * **工廠配**&#x200B;置允許您建立所需功能對象的實例。
 
@@ -106,7 +109,7 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
    **OSGi >**
 
-* 網址；例如：
+* 網址； 例如：
 
    `http://localhost:4502/system/console/bundles`
 
@@ -144,7 +147,7 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
 * **查看狀態**
 
-   該清單指定了包的當前狀態；按一下特定包的名稱並顯示詳細資訊。
+   該清單指定了包的當前狀態； 按一下特定包的名稱並顯示詳細資訊。
 
 >[!NOTE]
 >
@@ -158,7 +161,7 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
    **主要 >**
 
-* 網址；例如：
+* 網址； 例如：
 
    `http://localhost:4502/system/console/components`
 
