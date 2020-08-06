@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1630'
+ht-degree: 7%
 
 ---
 
@@ -48,6 +51,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 >* 系統會觸發工作流程，通知您發佈請求的適當人員。
 >* 您 [的開發團隊可能已自訂此](/help/sites-developing/workflows-models.md) 工作流程。
 >* 系統會短暫顯示訊息，通知您工作流程已觸發。
+
 >
 
 
@@ -74,6 +78,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
       * 指定哪些資產／標籤／等。 您想要與頁面一起發佈，然後使用「 **發佈** 」完成程式。
       * Use **Cancel** to abort the action.
+
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
 1. 選取 **「發佈** 」會將頁面複製至發佈環境。 在頁面編輯器中，會顯示確認發佈動作的資訊橫幅。
@@ -105,7 +110,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    ![screen_shot_2018-03-21at153115](assets/screen_shot_2018-03-21at153115.png)
 
-1. 在「快速發佈」對話方塊中，按一下「發佈」以確認出版物，或按一 **下** 「取消」以 **取消出版物**。 請記住，任何未發佈的參照也會自動發佈。
+1. 在「快速發佈」對話方塊中，按一下「發佈」以確認出版物，或按一 **下** 「取消」以 **取消出版物**。 請記住，任何未發佈的參考也會自動發佈。
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
@@ -129,6 +134,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 選擇發佈或取消發佈所選頁面。
    * 選擇立即或稍後採取該動作。
+
    稍後發佈會啟動工作流程，以在指定時間發佈選取的頁面。 相反地，稍後取消發佈會啟動工作流程，在特定時間取消發佈選取的頁面。
 
    如果您想在稍後取消發佈／取消發佈，請前往 [Workflow Console](/help/sites-administering/workflows.md) ，以終止對應的工作流程。
@@ -145,13 +151,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    按一下「新增內容」按鈕會啟動路 [徑瀏覽器](/help/sites-authoring/author-environment-tools.md#path-browser) ，以允許選取內容。
 
-   選擇所需頁面，然後按一下「 **Select** （選擇）」將內容添加到嚮導中，或按一下「**Cancel **」取消選擇並返回嚮導。
+   選擇所需頁面，然後按一下「選 **擇** 」將內容添加到嚮導，或按一下「取消」**取消選擇並返回嚮導。
 
    回到精靈中，您可以選取清單中的項目，以設定其他選項，例如：
 
    * 包括其子系。
    * 從選取範圍中移除它。
    * 管理其已發佈的參考。
+
    ![screen_shot_2018-03-21at153450](assets/screen_shot_2018-03-21at153450.png)
 
    按一下 **「包括子項** 」(Include Children)將開啟一個對話框，允許您：
@@ -159,6 +166,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 僅包含直接子項.
    * 僅包含修改過的頁面.
    * 僅包含已發佈的頁面.
+
    按一 **下「新增** 」，根據選取選項，將子頁面新增至要發佈或未發佈的頁面清單。 按一下 **取消** ，取消選擇並返回嚮導。
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
@@ -196,6 +204,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 定義工作流的標題。
    * 請保留工作流程套件，前提是工作流程具 [有多資源支援](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)。
    * 如果選擇了保留工作流包的選項，則定義工作流包的標題。
+
    Click **Publish** or **Publish Later **to complete the publication.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
@@ -244,6 +253,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 僅包含直接子項
    * 僅包含已發佈的頁面
+
    這些選項預設為選取，因此您必須記得取消選取。 按一 **下「新增** 」以確認內容並將內容新增至出版物／取消出版物。
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
