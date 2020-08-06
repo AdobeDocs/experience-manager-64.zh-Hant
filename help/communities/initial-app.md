@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 1%
 
 ---
 
@@ -39,10 +42,11 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
    * 標題: `An SCF Sandbox Play Template`
    * 說明: `An SCF Sandbox template for play pages`
    * 資源類型: `an-scf-sandbox/components/playpage`
-   * 排名：&lt;leave as default>
+   * 排名： &lt;leave as default>
+
    Label用於節點名稱。
 
-   資源類型將作為屬 `playpage`性顯示在jcr:content節點上 `sling:resourceType`。 它可識別當瀏覽器要求時轉譯內容的元件（資源）。
+   資源類型將作為屬 `playpage`性顯示在jcr:content節點上 `sling:resourceType`。 它可識別在瀏覽器要求時轉譯內容的元件（資源）。
 
    在這種情況下，使用模板建立的所 `playpage`有頁都由元件呈 `an-scf-sandbox/components/playpage` 現。 依慣例，元件的路徑是相對的，可讓Sling先在資料夾中搜尋資源，若找不到， `/apps` 則在資料夾中 `/libs` 搜尋。
 
@@ -50,13 +54,13 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 1. 如果使用複製／貼上，請確保「資源類型」值沒有前導或尾隨空格。
 
-   按一 **[!UICONTROL 下「下一步]**」。
+   按一下&#x200B;**[!UICONTROL 下一步]**。
 
 1. 「允許的路徑」是指使用此範本的頁面路徑，因此會列出「新頁面」對話 **[!UICONTROL 框的範本]** 。
 
    若要新增路徑，請按一下加號按 `+` 鈕並 `/content(/.&ast;)?` 在顯示的文字方塊中輸入。 如果使用複製／貼上，請確定沒有前導或尾隨空格。
 
-   注意：允許的路徑屬性的值是規則運 *算式。* 路徑與運算式相符的內容頁面可以使用範本。 在這種情況下，規則運算式與 **/content資料夾的路徑** 及其所有子頁面相符。
+   注意： 允許的路徑屬性的值是規則運 *算式。* 路徑與運算式相符的內容頁面可以使用範本。 在這種情況下，規則運算式與 **/content資料夾的路徑** 及其所有子頁面相符。
 
    當作者在下面建立頁 `/content`面時，標 `playpage`題為「SCF沙盒頁面範本」的範本會出現在可用範本清單中。
 
@@ -66,13 +70,13 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. 按一 **[!UICONTROL 下「下一步]**」。
+1. 按一下&#x200B;**[!UICONTROL 下一步]**。
 
    在「允 **[!UICONTROL 許的父項]** 」面板中， **[!UICONTROL 按一下「下一步]** 」。
 
    在「允 **[!UICONTROL 許的子項]** 」面板中，按 **[!UICONTROL 一下「下一步]** 」。
 
-   按一下 **[!UICONTROL 確定]**。
+   按一下&#x200B;**[!UICONTROL 「確定」]**。
 
 1. 按一下「確定」(OK)並完成模板的建立後，您將注意到新模板的「屬性」(Properties)頁籤值的拐角中顯示了紅色 `playpage`三角形。 這些紅色三角形表示未保存的編輯。
 
@@ -93,16 +97,17 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
    在「創 **[!UICONTROL 建元件]** 」對話框中，鍵入以下屬性值：
 
-   * 標籤：播 **放頁**
-   * 標題：SCF **沙盒播放元件**
-   * 說明：這 **是轉換「SCF沙盒」頁面內容的元件。**
-   * 超級類型： *&lt;留空>*
+   * 標籤： **播放頁面**
+   * 標題： **SCF沙盒播放元件**
+   * 說明： **這是轉換「SCF沙盒」頁面內容的元件。**
+   * 超級類型： *&lt;leave blank>*
    * 群組:
+
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. 按一下「 **[!UICONTROL 下一步]** 」，直到出現 **[!UICONTROL 對話框的「允許子項]** 」面板
 
-   * 按一下「 **[!UICONTROL 確定」]**
+   * Click **[!UICONTROL OK]**
    * 按一下「 **[!UICONTROL 全部儲存」]**
 
 1. 驗證元件的路徑與模板的resourceType是否匹配。
