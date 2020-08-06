@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 4%
 
 ---
 
 
 # 將HTML5表格儲存為草稿 {#saving-an-html-form-as-a-draft}
 
-您可以將HTML5表格儲存為草稿，然後在稍後階段繼續填寫表格。 Forms Portal可讓任何使用者儲存和還原HTML5表格。 要啟用「另存為草稿」功能，請將以下配置添加到配置檔案節點：
+您可以將HTML5表格儲存為草稿，然後在稍後階段繼續填寫表格。 Forms Portal可讓任何使用者儲存和還原HTML5表單。 要啟用「另存為草稿」功能，請將以下配置添加到配置檔案節點：
 
 ## 「自訂描述檔」允許「另存為草稿」功能 {#custom-profile-to-allow-save-as-draft-feature}
 
@@ -49,7 +52,7 @@ AEM Forms現成可用，提供「另存 **為草稿** 」描述檔。 您可以�
 
 ## 草稿儲存和清單 {#drafts-storage-and-listing}
 
-啟用表單的「另存為草稿」功能後；保存表單時，表單會列在「草稿和提 [交」元件中](/help/forms/using/draft-submission-component.md)。 您可以檢索並開始填寫「草稿和提交」元件中保存的表單。
+啟用表單的「另存為草稿」功能後； 保存表單時，表單會列在「草稿和提 [交」元件中](/help/forms/using/draft-submission-component.md)。 您可以檢索並開始填寫「草稿和提交」元件中保存的表單。
 
 要為「草稿」和「提交」元件啟用表單清單，請向配置檔案節點添加以下屬性：
 
