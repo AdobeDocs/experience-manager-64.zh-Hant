@@ -11,6 +11,9 @@ topic-tags: document_services
 discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1011'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Adobe Experience Manager Forms可以使用儲存在HSM或etoken上的認證來�
 
 >[!NOTE]
 >
->在Microsoft windows上，僅支援32位LunaSA或EToken客戶端。
+>在Microsoft Windows上，僅支援32位LunaSA或EToken客戶端。
 
 ## 啟用DocAssurance服務 {#configuredocassurance}
 
@@ -79,7 +82,7 @@ Adobe Experience Manager Forms可以使用儲存在HSM或etoken上的認證來�
 
    >[!NOTE]
    >
-   >要確定證&#x200B;**書的私鑰別名** ，可以使用Java keytool命令： `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+   >要確定證&#x200B;**書的私鑰別名** ，可使用Java keytool命令： `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
    >[!NOTE]
    >
@@ -100,17 +103,19 @@ Adobe Experience Manager Forms可以使用儲存在HSM或etoken上的認證來�
 1. 開啟AEM主控台。 AEM主控台的預設URL為https://&lt;host>:&lt;port>/system/console/configMgr
 1. 開啟 **HSM憑據配置服務** ，並指定以下欄位的值：
 
-   * **憑據別名**:指定用於標識別名的字串。 此值用作某些數位簽章作業的屬性，例如「簽章欄位」作業。
-   * **DLL路徑**:指定伺服器上HSM或etoken用戶端程式庫的完全限定路徑。 例如，C:\Program Files\LunaSA\cryptoki.dll。 在群集環境中，此路徑對於群集中的所有伺服器必須相同。
-   * **HSM針腳**:指定存取裝置金鑰所需的密碼。
-   * **HSM插槽Id**:指定整數類型的插槽標識符。 插槽ID是逐個客戶機設定的。 如果將第二台電腦註冊到不同的分區（例如，在同一HSMPART設備上的HSMPART2），則插槽1與客戶機的HSMPART2分區相關聯。
-   **** 注意：設 *定Etoken時，請為HSM槽ID欄位指定數值。 要使「簽名」操作正常運作，需要數值。*
+   * **憑據別名**: 指定用於標識別名的字串。 此值用作某些數位簽章作業的屬性，例如「簽章欄位」作業。
+   * **DLL路徑**: 指定伺服器上HSM或etoken用戶端程式庫的完全限定路徑。 例如，C:\Program Files\LunaSA\cryptoki.dll。 在群集環境中，此路徑對於群集中的所有伺服器必須相同。
+   * **HSM針腳**: 指定存取裝置金鑰所需的密碼。
+   * **HSM插槽Id**: 指定整數類型的插槽標識符。 插槽ID是逐個客戶機設定的。 如果將第二台電腦註冊到不同的分區（例如，在同一HSMPART設備上的HSMPART2），則插槽1與客戶機的HSMPART2分區相關聯。
 
-   * **證書SHA1**:為您使用的憑證指定公開金鑰(.cer)檔案的SHA1值（指紋）。 請確定SHA1值中沒有使用空格。 如果您使用實體憑證，則不需要。
-   * **HSM設備類型**:選擇HSM（Luna或其他）或eToken裝置的製造商。
+   **注意：** *在設定Etoken時，請為HSM槽ID欄位指定數值。 要使「簽名」操作正常運作，需要數值。*
+
+   * **證書SHA1**: 為您使用的憑證指定公開金鑰(.cer)檔案的SHA1值（指紋）。 請確定SHA1值中沒有使用空格。 如果您使用實體憑證，則不需要。
+   * **HSM設備類型**: 選擇HSM（Luna或其他）或eToken裝置的製造商。
+
    按一下&#x200B;**「儲存」**。硬體安全性模組已針對AEM Forms設定。 現在，您可以搭配AEM Forms使用硬體安全性模組來簽署或認證檔案。
 
-## 使用DocAssurance Service API，使用儲存在裝置上的數位金鑰簽署或認證檔案 {#programatically}
+## 使用DocAssurance Service API，使用儲存在裝置上的數位金鑰簽署或認證檔案  {#programatically}
 
 下列范常式式碼使用HSM或etoken來簽署或認證檔案。
 
