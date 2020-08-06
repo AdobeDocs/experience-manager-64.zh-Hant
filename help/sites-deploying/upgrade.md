@@ -12,13 +12,16 @@ discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '715'
+ht-degree: 3%
 
 ---
 
 
 # 升級至AEM 6.4{#upgrading-to-aem}
 
-在本節中，我們將討論將AEM安裝升級至AEM 6.4:
+在本節中，我們將討論將AEM安裝升級至AEM 6.4的問題：
 
 * [規劃升級](/help/sites-deploying/upgrade-planning.md)
 * [用模式檢測器評估升級複雜度](/help/sites-deploying/pattern-detector.md)
@@ -67,9 +70,9 @@ crx2oak工具命令列使用選項已變更為適合自動化的選項，並支�
 
 如需最近AEM版本中其他變更的詳細資訊，請參閱完整的版本注意事項：
 
-* [https://helpx.adobe.com/tw/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/experience-manager/6-2/release-notes.html)
-* [https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/experience-manager/6-3/release-notes.html)
-* [https://helpx.adobe.com/tw/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/experience-manager/6-4/release-notes.html)
+* [https://helpx.adobe.com/tw/experience-manager/6-2/release-notes.html](https://helpx.adobe.com/tw/experience-manager/6-2/release-notes.html)
+* [https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html)
+* [https://helpx.adobe.com/tw/experience-manager/6-4/release-notes.html](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes.html)
 
 ## 升級概觀 {#upgrade-overview}
 
@@ -81,7 +84,7 @@ crx2oak工具命令列使用選項已變更為適合自動化的選項，並支�
 
 下圖顯示了建議的整體流程，重點說明了升級方法。 請注意我們所引進新功能的參考。 升級應從模式偵測器開始(請參閱 [Avasting the Upgrade Complexity with Pattern Detector](/help/sites-deploying/pattern-detector.md))，這可讓您根據產生的報表中的模式，決定要採取與AEM 6.4相容的路徑。
 
-在6.4中，我們著重討論如何讓所有新功能都向後相容，但是在您仍然看到某些向後相容性問題時，相容性模式可讓您暫時延遲開發，以維持自訂程式碼與6.4相容。此方法可協助您避免在升級後立即進行開發工作(請參閱 [AEM 6.4中的回溯相容性](/help/sites-deploying/backward-compatibility.md))。
+在6.4中，我們著重討論如何讓所有新功能都向後相容，但是在您仍然看到某些向後相容性問題時，相容性模式可讓您暫時延遲開發，以維持自訂程式碼與6.4相容。 此方法可協助您避免在升級後立即進行開發工作(請參閱 [AEM 6.4中的回溯相容性](/help/sites-deploying/backward-compatibility.md))。
 
 最後，在6.4開發週期中，「可持續升級」(請參閱「可持續升級」 [](/help/sites-deploying/sustainable-upgrades.md))中引進的功能可協助您遵循最佳實務，讓未來的升級更有效率、更順暢。
 
