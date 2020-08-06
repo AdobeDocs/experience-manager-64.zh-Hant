@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: cf140483-470f-4bff-8870-304207508aab
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 (JBoss)以下日誌檔案位於目 `*[appserver root]*/server/*[server]*/log` 錄中：
 
 * boot.log
-* server.log。*[yyyy-mm-dd]*
+* server.log.*[yyyy-mm-dd]*
 * server.log
 
 (WebLogic)網域記錄檔位於 *[appserverdomain]* 目錄，而伺服器記錄檔位於*[appserverdomain]/servers/[appserver name]/logs *directory:
