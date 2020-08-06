@@ -1,6 +1,6 @@
 ---
-title: 配置搜索表單
-seo-title: 配置搜索表單
+title: 設定搜尋表單
+seo-title: 設定搜尋表單
 description: 瞭解如何設定搜尋表單。
 seo-description: 瞭解如何設定搜尋表單。
 uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '2065'
+ht-degree: 12%
 
 ---
 
 
-# 配置搜索表單{#configuring-search-forms}
+# 設定搜尋表單{#configuring-search-forms}
 
 使用 **Search Forms** ，自訂在各種AEM控制台和／或作者環境面板中可用的搜尋面板中使用的搜尋謂語選擇。 自訂這些面板可讓搜尋功能根據您的特定需求而變得多功能。
 
@@ -350,6 +353,7 @@ source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
 * 僅與網站管理員（傳統UI）相關的搜尋謂語位於：
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * 這些版本已過時，僅適用於向後相容性。
+
 > 
 >
 此資訊僅供參考，您不得變更 `/libs`。
@@ -382,9 +386,9 @@ Dependent on the predicate a selection of settings are available for configurati
 
 * **屬性值**
 
-   屬性值是絕對字串或運算式語言；例如， `cq:Page` 或
+   屬性值是絕對字串或運算式語言； 例如， `cq:Page` 或
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **範圍文字**
 
@@ -398,13 +402,14 @@ Dependent on the predicate a selection of settings are available for configurati
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Options node path**（選項節點路徑）與 **** Options Path（選項路徑）有效相同，僅此欄位位於公用謂語欄位中，而另一個欄位則特定於資產。
+* **選項節點路徑**&#x200B;與 
+**Options Path**, only this is in the common predicate field, the other is specific for assets.
 
 * **單選選**&#x200B;項如果選中，選項將顯示為僅允許單選項的複選框。 如果錯誤選取，則可取消選取核取方塊。
 
-* **Publish和Live copy屬性名稱Sites**&#x200B;特定述詞的publish和live copy核取方塊標籤。
+* **Publish和Live Copy屬性名稱Sites**&#x200B;特定述詞的publish和live copy核取方塊標籤。
 
-* &amp;ast;在「設定」標籤的欄 **位標籤上** ，表示欄位為必填，若留空，則會顯示錯誤訊息
+* &amp;ast; 在「設定」標籤的欄 **位標籤上** ，表示欄位為必填，若留空，則會顯示錯誤訊息
 
 ## 設定搜尋表單 {#configuring-your-search-forms}
 
@@ -490,7 +495,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
 ### 添加選項謂語 {#adding-options-predicates}
 
-選項謂語（選項、選項屬性）可讓您設定要搜尋的項目。 通常用來搜尋頁面下方的內容；例如，頁面節點上的屬性。
+選項謂語（選項、選項屬性）可讓您設定要搜尋的項目。 通常用來搜尋頁面下方的內容； 例如，頁面節點上的屬性。
 
 下列範例（根據用於建立頁面的範本進行搜尋）說明相關步驟：
 
@@ -502,6 +507,7 @@ Dependent on the predicate a selection of settings are available for configurati
 
    * `jcr:title` -要在搜索邊欄中顯示的欄位標籤
    * `value` -要搜索的屬性值
+
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
    >[!NOTE]
