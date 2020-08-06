@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 13%
 
 ---
 
@@ -20,17 +23,17 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 在AEM Forms中，您可以使用SendToPrinter服務將檔案傳送至印表機。 SendToPrinter服務支援以下打印訪問機制：
 
-* **可直接存取的印表機**`: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
+* **可直接存取的印表機** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
-* **間接可存取的印表機**`: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
+* **間接可存取的印表機** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
    將文檔發送到打印機時，請指定以下打印協定之一：
 
-   * **CUPS**`: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+   * **杯子** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
    * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
    * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **SharedPrinter**`: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**:Output服務支援通用Internet檔案系統(CIFS)打印協定。
+   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+   * **CIFS**: Output服務支援通用Internet檔案系統(CIFS)打印協定。
 
 ## 使用SendToPrinter服務 {#using-sendtoprinter-service}
 
@@ -41,7 +44,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 | 協定（訪問機制） | 打印伺服器URI(PrinterSpec.printServer) | 打印機的名稱(PrinterSpec.printerName) | 結果 |
 |--- |--- |--- |--- |
-| SharedPrinter | 任何 | 空白 | 例外：必要引數sPrinterName不能為空。 |
+| SharedPrinter | 任何 | 空白 | 例外： 必要引數sPrinterName不能為空。 |
 | SharedPrinter | 任何 | 無效 | 出現異常，表示找不到打印機。 |
 | SharedPrinter | 任何 | 有效 | 成功的列印工作。 |
 | LPD | 空白 | 任何 | 表示必要參數sPrintServerUri不能為空的例外。 |
@@ -61,7 +64,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 ## 驗證支援 {#authentication-support}
 
-身份驗證僅支援CIFS打印。 要驗證，請在PrinterSpec中提供用戶名／密碼／域。 您可以使用AEM Granite CyprotoSupport service來加密密碼，方法是執行下列步驟：
+身份驗證僅支援CIFS打印。 要驗證，請在PrinterSpec中提供用戶名／密碼／域。 您可以使用AEM Granite CyprotoSupport Service來加密密碼，方法是執行下列步驟：
 
 1. 前往https://&lt;server>:&lt;port>/system/console。
 
