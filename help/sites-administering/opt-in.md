@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1327'
+ht-degree: 0%
 
 ---
 
@@ -103,14 +106,14 @@ AEM有選擇加入程式，可協助您整合Adobe Analytics和Adobe Target。 �
 
 屬性檔案是名為marketingcloud.properties的文字檔案，您會儲存在AEM程式所使用的工作目錄中（通常與JAR檔案相同的目錄）。 該檔案包含以下屬性：
 
-* analytics.server:您使用之Analytics資料中心的URL。
-* analytics.company:與您的Analytics使用者帳戶關聯的公司。
-* analytics.username:您的Analytics使用者名稱。
-* analytics.secret:與您的Analytics使用者名稱關聯的機密。
-* analytics.reportsuite:要使用的Analytics報表套裝名稱。
-* target.clientcode:與您的Target帳戶關聯的用戶端代碼。
-* target.email:您用來驗證Target帳戶的電子郵件地址。
-* target.password:與您的電子郵件地址關聯的密碼。
+* analytics.server: 您使用之Analytics資料中心的URL。
+* analytics.company: 與您的Analytics使用者帳戶關聯的公司。
+* analytics.username: 您的Analytics使用者名稱。
+* analytics.secret: 與您的Analytics使用者名稱關聯的機密。
+* analytics.reportsuite: 要使用的Analytics報表套裝名稱。
+* target.clientcode: 與您的Target帳戶關聯的用戶端代碼。
+* target.email: 您用來驗證Target帳戶的電子郵件地址。
+* target.password: 與您的電子郵件地址關聯的密碼。
 
 屬性和值以等號(=)分隔。 Analytics屬性會加上前置詞 `analytics`，而Target屬性會加上前置詞 `target`。 要配置服務，請為該服務的所有屬性提供值。 如果您不想設定服務，請不提供該服務的值。
 
@@ -133,7 +136,7 @@ target.password=
 
    >[!NOTE]
    >
-   >工作目錄通常是包含jar或檔案的 `license.properties` 目錄。
+   >工作目錄通常是包含jar或檔案的目 `license.properties` 錄。
    >
    >但是，它也可以由系統屬性定義為絕對路徑：
    >
@@ -155,7 +158,7 @@ target.password=
 
 >[!NOTE]
 >
->在您選擇加入Adobe target設定精靈時，預設會啟用「精確定位」。
+>在您選擇加入Adobe Target設定精靈時，預設會啟用「精確定位」。
 >
 >精確定位意味著雲端服務設定會在載入內容之前等待載入內容。 因此，在效能方面，精確定位可能會在載入內容前造成毫秒數的延遲。
 >
@@ -182,17 +185,18 @@ target.password=
    * `automaticProvisioning`= `true`
    * `servicename`= `analytics|target`
    * `path`=AEM頁面的路徑，以附加已建立的雲端服務設定
+
    例如，建立Analytics和Target組態並將它們附加至we.retail頁面的捲動請求為：
 
    ```shell
    curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
    ```
 
-* 如果您不想使用 **marketingcloud.properties** 檔案，則必須傳送憑證和參數；例如：
+* 如果您不想使用 **marketingcloud.properties** 檔案，則必須傳送憑證及參數； 例如：
 
    * automaticProvisioning= `true`
    * servicename= `analytics|target`
-   * path=path to an AEM page to attach the created cloud services configs;可定義多個路徑
+   * path=path to an AEM page to attach the created cloud services configs; 可定義多個路徑
    * analytics.server= `https://servername`
    * analytics.company= `Name of company`
    * analytics.username= `me`
@@ -201,6 +205,7 @@ target.password=
    * target.clientcode= `mycompany`
    * target.email= `me@adobe.com`
    * target.password= `password`
+
    在此例中，建立Analytics和Target組態並附加至we-retail頁面的捲動請求為：
 
    ```shell
