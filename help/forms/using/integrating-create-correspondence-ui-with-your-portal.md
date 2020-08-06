@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
@@ -31,7 +34,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 例如，自訂入口網站會將URL準備為\
 `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`，這可以是入口網站上連結的href。\
 如果入口網站有Letter範本名稱，則URL可能是\
-`https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`.
+`https://[server]:[port]/content/cm/createcorrespondence.html?cmLetterName=[letter name]&cmDataUrl=[data URL]`。
 
 >[!NOTE]
 >
@@ -43,7 +46,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ## 內嵌資料式呼叫 {#inline-data-based-invocation}
 
-另一種呼叫「建立對應」應用程式（也是更安全的）方式是，只要點擊URL `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`，同時傳送參數和資料，以POST要求呼叫「建立對應」應用程式（將其隱藏在使用者面前）。 這也表示您現在可以將XML資料傳遞至內嵌的「建立對應」應用程式（在相同要求中，使用cmData參數），這在先前的方法中是不可能的／理想的。
+另一種呼叫「建立對應」應用程式（也是更安全的）方式是，只要點擊URL `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`，同時傳送參數和資料，以POST要求呼叫「建立對應」應用程式（將其隱藏在使用者面前）。 這也表示您現在可以將XML資料傳遞至內嵌的「建立對應」應用程式（使用cmData參數做為相同要求的一部分），這在先前的方法中是不可能的／理想的。
 
 ### 用於指定字母的參數 {#parameters-for-specifying-letter}
 
