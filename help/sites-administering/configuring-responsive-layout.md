@@ -12,6 +12,9 @@ discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
 source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 1%
 
 ---
 
@@ -40,9 +43,10 @@ AEM使用多種機制組合，為您的頁面實現互動式版面配置：
       * 作為頁面的預設參數。
       * 兩者.
 
-         您可讓版面容器做為頁面的標準，同時允許使用者在其中新增更多版面容器；例如，要實現列控制。
+         您可讓版面容器做為頁面的標準，同時允許使用者在其中新增更多版面容器； 例如，要實現列控制。
 
-* **[版面模](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**式當版面容器定位在您的頁面上後，您就可以使用「版面」**模式**，將內容定位在回應式格線中。
+* **[版面模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**當版面容器定位在您的頁面上後，您就可以使用
+**版面模式** ，以在回應式格線中定位內容。
 
 * [**模擬器&#x200B;**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)這可讓您建立和編輯互動式網站，透過互動方式調整元件大小，以根據裝置／視窗大小重新排列版面。 然後，使用者就可以看到如何使用模擬器呈現內容。
 
@@ -93,7 +97,7 @@ AEM使用多種機制組合，為您的頁面實現互動式版面配置：
 
 * 定義標題和寬度：
 
-   * 標題描述了通用設備分組，如果需要，則具有方向；例如手機、平板電腦、平板電腦橫向。
+   * 標題描述了通用設備分組，如果需要，則具有方向； 例如手機、平板電腦、平板電腦橫向。
    * 寬度會定義該通用裝置群組的最大寬度（以像素為單位）。 例如，如果斷點電話的寬度為768，則為用於電話設備的佈局的最大寬度。
 
 * 使用模擬器時，在頁面編輯器頂部顯示為標籤。
@@ -114,6 +118,7 @@ AEM使用多種機制組合，為您的頁面實現互動式版面配置：
 >* 將中斷點添加到模板
 >* 將相同的中斷點新增至現有頁面\
    >  繼承正在運作中時，您可以將繼承限制在內容的根頁面。
+
 >
 
 
@@ -169,7 +174,7 @@ AEM使用多種機制組合，為您的頁面實現互動式版面配置：
 
 ## 啟用頁面的元件大小調整 {#enable-component-resizing-for-the-page}
 
-這些程式是必要的，因此您可以在「版面」模式中調整 **元件** 。
+這些程式是必要的，因此您可以在「版面」模式中調整 **元件** 大小。
 
 ### 將版面容器設為主參數 {#set-layout-container-as-main-parsys}
 
