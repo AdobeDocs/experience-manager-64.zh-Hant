@@ -4,6 +4,9 @@ description: 本文說明AEM 6.4 Assets中的使用者體驗改進。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 1%
 
 ---
 
