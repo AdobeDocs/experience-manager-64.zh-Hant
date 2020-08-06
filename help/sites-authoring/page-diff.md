@@ -54,7 +54,7 @@ ht-degree: 1%
 
 這兩個頁面的來源會清楚地顯示在瀏覽器視窗頂端的標題列中。
 
-![chlimage_1-355](assets/chlimage_1-355.png)
+![chlimage_1-353](assets/chlimage_1-355.png)
 
 比較會檢測元件和HTML級別的更改。 已變更的項目會以不同的顏色加亮顯示。
 
