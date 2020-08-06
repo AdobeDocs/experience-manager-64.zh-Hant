@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 
 其優點包括：
 
-* 縮短工作流處理時間；高達10%。
+* 縮短工作流處理時間； 高達10%。
 * 顯著減少儲存庫的增長。
 * 您不再需要CRUD工作流程來清除。
 * 此外，它還可將TAR檔案的數量減少至精簡。
@@ -58,21 +61,21 @@ AEM可允許同時執行多個工作流程執行緒。 預設情況下，線程�
 
 要配置最 **大並行作業**，您可以執行下列任一操作：
 
-* 從AEM web主控 **[台設定](/help/sites-deploying/configuring-osgi.md)**「OSGi設定」;對於&#x200B;**隊列：Granite Workflow Queue**(**Apache Sling Job Queue Configuration**)。
+* 從AEM Web主控 **[台設定](/help/sites-deploying/configuring-osgi.md)**「OSGi設定」; 對於&#x200B;**隊列： Granite Workflow Queue**(**Apache Sling Job Queue Configuration**)。
 
-* 從AEM web主控台的 **Sling Jobs** 選項設定佇列；對於作 **業隊列配置：Granite Workflow Queue**，網址 `http://localhost:4502/system/console/slingevent`為。
+* 從AEM Web主控台的 **Sling Jobs** 選項設定佇列； 對於作 **業隊列配置： Granite Workflow Queue**，網址 `http://localhost:4502/system/console/slingevent`為。
 
 此外，Granite Workflow External Process Job Queue( **Granite工作流外部進程作業隊列)還有單獨的配置**。 這適用於啟動外部二進位檔案(例如 **InDesign Server** 或 **Image Magick)的工作流程程式**。
 
 ### 配置單個作業隊列 {#configure-individual-job-queues}
 
-在某些情況下，配置單個作業隊列以控制單個作業的併發線程或其他隊列選項非常有用。 您可以透過 **Apache Sling Job Queue Configuration Factory，從Web主控台新增及設定個別佇列** 。 若要尋找要列出的適當主題，請執行您工作流程的模型，然後在 **Sling Jobs** console中尋找它；例如，在 `http://localhost:4502/system/console/slingevent`。
+在某些情況下，配置單個作業隊列以控制單個作業的併發線程或其他隊列選項非常有用。 您可以透過 **Apache Sling Job Queue Configuration Factory，從Web主控台新增及設定個別佇列** 。 若要尋找要列出的適當主題，請執行您工作流程的模型，然後在 **Sling Jobs** console中尋找它； 例如，在 `http://localhost:4502/system/console/slingevent`。
 
 您也可以新增個別工作佇列，以進行暫時性工作流程。
 
 ### 配置工作流清除 {#configure-workflow-purging}
 
-在標準安裝中，AEM提供維護主控台，可排程和設定每日和每週的維護活動；例如，at:
+在標準安裝中，AEM提供維護主控台，可排程和設定每日和每週的維護活動； 例如，at:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
@@ -86,7 +89,7 @@ AEM可允許同時執行多個工作流程執行緒。 預設情況下，線程�
 
 ### 位置 {#locations}
 
-工作流模型、啟動器、指令碼和通知的定義根據類型保存在儲存庫中；例如現成可用、自訂等。
+工作流模型、啟動器、指令碼和通知的定義根據類型保存在儲存庫中； 例如現成可用、自訂等。
 
 >[!NOTE]
 >
@@ -106,6 +109,7 @@ AEM可允許同時執行多個工作流程執行緒。 預設情況下，線程�
    >
    >* 將任何自訂的工作流程模型置於此資料夾中
    >* 編輯任何內容 `/libs`
+
    >
    >因為升級時或安裝修補程式、累積修補程式套件或服務套件時，可能會覆寫任何變更。
 
@@ -141,6 +145,7 @@ AEM可允許同時執行多個工作流程執行緒。 預設情況下，線程�
    >
    >* 將任何自訂工作流程啟動器放在此資料夾中
    >* 編輯任何內容 `/libs`
+
    >
    >因為升級時或安裝修補程式、累積修補程式套件或服務套件時，可能會覆寫任何變更。
 
@@ -172,6 +177,7 @@ AEM可允許同時執行多個工作流程執行緒。 預設情況下，線程�
    >
    >* 將任何自訂工作流程指令碼置於此資料夾中
    >* 編輯任何內容 `/libs`
+
    >
    >因為升級時或安裝修補程式、累積修補程式套件或服務套件時，可能會覆寫任何變更。
 
@@ -199,6 +205,7 @@ AEM可允許同時執行多個工作流程執行緒。 預設情況下，線程�
    >
    >* 將任何自訂工作流程通知定義放在此資料夾中
    >* 編輯任何內容 `/libs`
+
    >
    >因為升級時或安裝修補程式、累積修補程式套件或服務套件時，可能會覆寫任何變更。
 
@@ -230,7 +237,7 @@ AEM可允許同時執行多個工作流程執行緒。 預設情況下，線程�
 
 * 將會提供工作流程工作階段，且應使用，除非有令人信服的理由不提供。
 * 不應從工作流步驟建立新會話，因為這會導致狀態不一致以及工作流引擎中的可能併發問題。
-* 您不應從工作流中的流程步驟中獲取新的JCR會話；您應將「流程步驟API」提供的工作流程工作階段調整為jcr工作階段。 例如：
+* 您不應從工作流中的流程步驟中獲取新的JCR會話； 您應將「流程步驟API」提供的工作流程工作階段調整為jcr工作階段。 例如：
 
 ```
 public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
@@ -246,7 +253,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 * 在工作流進程中，如果 `WorkflowSession` 正在使用該儲存庫修改會話，則不明確保存會話——工作流將在會話完成時保存會話。
 * `Session.Save` 不應從工作流程步驟中呼叫：
 
-   * 建議對工作流jcr會話進行調整；則不 `save` 需要，因為工作流引擎會在工作流完成執行後自動保存會話。
+   * 建議對工作流jcr會話進行調整； 則不 `save` 需要，因為工作流引擎會在工作流完成執行後自動保存會話。
    * 不建議進程步驟建立自己的jcr會話。
 
 * 借由消除不必要的省錢，您可以降低開銷，進而提高工作流程的效率。
