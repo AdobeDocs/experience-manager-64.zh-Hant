@@ -8,6 +8,9 @@ contentOwner: jsyal
 discoiquuid: c66b65af-443f-4fc2-b775-9f4e3c60285a
 translation-type: tm+mt
 source-git-commit: f5b45b2c8bfcf9d82ddc08b05b5fff22937fa9fd
+workflow-type: tm+mt
+source-wordcount: '1545'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: f5b45b2c8bfcf9d82ddc08b05b5fff22937fa9fd
 
 ### 如何配置無二進位分發？ {#how-do-i-configure-binary-less-distribution}
 
-通過共用資料儲存進行部署時支援無二進位分發，並且涉及使用基於Vault的分發包導出器(工廠PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`)封裝產生器。
+通過共用資料儲存進行部署時支援無二進位分發，並且涉及使用基於Vault的分發包導出器(工廠PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`)套件產生器。
 
 在啟用無二進位模式後，分發的內容封裝會包含二進位檔的參考，而非實際二進位檔。
 
@@ -64,17 +67,17 @@ Adobe Experience Manager(AEM)6.4隨附於SSL精靈，並提供使用者介面來
 
 若要依預設啟用SSL，請依預 [設參閱SSL](/help/sites-administering/ssl-by-default.md)。
 
-### 從行動應用程式使用AEM的Content services時，建議使用什麼架構，最好是React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+### 從行動應用程式使用AEM的Content Services時，建議使用什麼架構，最好是React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
-Content services是以Sling Models為基礎，而AEM開發人員必須為匯出的每個元件提供Sling Model pojo。
+Content Services是以Sling Models為基礎，而AEM開發人員必須為匯出的每個元件提供Sling Model pojo。
 
-若要瞭解如何從React應用程式使用AEM內容服務，請參閱「 [AEM Content services快速入門」教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) 。
+若要瞭解如何從React應用程式使用AEM內容服務，請參閱「 [AEM Content Services快速入門」教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) 。
 
 此外，如果開發人員想要匯出元件樹狀結構，他們也可以實作 `ComponentExporter` 和 `ContainerExporter` 介面，並使用 `ModelFactory` 來循環子元件並傳回其模型表示。 請參閱以下資源：
 
 [1] [Adobe-Marketing-Cloud/aem-core-wcm-components](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[2] [Apache Sling::Sling Models](https://sling.apache.org/documentation/bundles/models.html)
+[2] [Apache Sling:: Sling Models](https://sling.apache.org/documentation/bundles/models.html)
 
 ### 如何停用AEM 6.4調查快顯視窗？ {#how-to-disable-aem-survey-pop-up}
 
@@ -86,7 +89,7 @@ Content services是以Sling Models為基礎，而AEM開發人員必須為匯出�
 
 ### 如何設定AEM例項以使用PorterStem篩選器？ {#how-to-configure-an-aem-instance-to-use-the-porterstem-filter}
 
-PorterStem濾鏡採用Porter Stem Algorithm for English。 結果與Snowball Porter Stemmer搭配使用 *language=&quot;English&quot;引數類似* 。 但是，此調整器直接使用Java編碼，並且不基於Snowball。 它不接受受保護字詞的清單，而且僅適用於英文文字。
+PorterStem濾鏡採用Porter Stem Algorithm for English。 結果與Snowball Porter Stemmer搭配使用 *language=&quot;English&quot;引數類似* 。 但是，此調整器直接使用Java編碼，並不基於Snowball。 它不接受受保護字詞的清單，而且僅適用於英文文字。
 
 Oak公開一組lucene-provides分析器設定元素，以用於AEM。 若要瞭解如何使用篩選器，請參閱 **Simple搜尋實作指南中的**[Apache Oak Analyzers](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html)。
 
@@ -152,7 +155,7 @@ Granite UI Foundation的全新Sling元件集是為Coral3建立，位於 [/libs/g
 
 ### 如果客戶只購買AEM中的「網站」授權，他們是否仍可存取「資產」? {#if-a-customer-buys-only-sites-license-in-aem-do-they-still-have-access-to-assets}
 
-否，客戶無法存取「資產」（或「網站」以外的任何項目）。 即使所有Adobe Experience Manager(AEM)內部部署都包含在JAR中，客戶仍只能取得授權，存取其合約中授權的JAR中的元件。 如果他們想要探索其他元件，可以使用AEM試用程式長達45天，或簽署$0的銷售訂單，以授權他們評估（無生產用途）命名的元件，例如「資產」。
+否，客戶無法存取「資產」（或「網站」以外的任何項目）。 即使所有Adobe Experience Manager(AEM)內部部署都包含在JAR中，客戶仍只能取得授權存取其合約中授權之JAR中的元件。 如果他們想要探索其他元件，可以使用AEM試用程式長達45天，或簽署$0的銷售訂單，以授權他們評估（無生產用途）命名的元件，例如「資產」。
 
 請參閱下列資源，以進一步瞭解AEM內部部署軟體和Adobe Managed Services:
 
