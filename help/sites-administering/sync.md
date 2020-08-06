@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
 source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+workflow-type: tm+mt
+source-wordcount: '2502'
+ht-degree: 1%
 
 ---
 
@@ -76,7 +79,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 * [AEM平台更新](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
 * [AEM Communities更新](/help/communities/deploy-communities.md#latest-releases)
 
-### 1.Apache Sling Distribution Agent —— 同步代理工廠 {#apache-sling-distribution-agent-sync-agents-factory}
+### 1. Apache Sling Distribution Agent —— 同步代理工廠 {#apache-sling-distribution-agent-sync-agents-factory}
 
 **啟用使用者同步**
 
@@ -99,7 +102,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ![chlimage_1-387](assets/chlimage_1-387.png)
 
-### 2.建立授權使用者 {#createauthuser}
+### 2. 建立授權使用者 {#createauthuser}
 
 **設定權限**&#x200B;此授權使用者將用於步驟3中，以設定Sling散發給作者。
 
@@ -125,6 +128,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 >
 >* 指派的預設使用者為 **`admin`**。
 >* 請勿使用 `*communities-user-admin *user*.*`
+
 >
 
 
@@ -139,7 +143,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 * 在右窗格中，選擇選 `Access Control` 項卡
 * 選擇 `+` 按鈕以添加ACL條目
 
-   * **負責人**:搜索 *為用戶同步建立的用戶*
+   * **負責人**: *搜索為用戶同步建立的用戶*
    * **類型**: `Allow`
    * **權限**: `jcr:all`
    * **限制** rep:glob: `*/activities/*`
@@ -154,7 +158,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 * [存取權限管理](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * 疑難排解部 [分在響應處理過程中修改操作異常](#modify-operation-exception-during-response-processing)。
 
-### 3.Adobe Granite Distribution —— 加密密碼傳輸機密提供者 {#adobegraniteencpasswrd}
+### 3. Adobe Granite Distribution —— 加密密碼傳輸機密提供者 {#adobegraniteencpasswrd}
 
 **設定權限**
 
@@ -178,7 +182,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
-### 4.Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
+### 4. Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
 **啟用使用者同步**
 
@@ -202,7 +206,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
-### 5.Adobe Granite Distribution - Diff Observer Factory {#diffobserver}
+### 5. Adobe Granite Distribution - Diff Observer Factory {#diffobserver}
 
 **啟用群組同步**
 
@@ -224,7 +228,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 ![chlimage_1-391](assets/chlimage_1-391.png)
 
-### 6.Apache Sling Distribution Trigger —— 計畫觸發器工廠 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### 6. Apache Sling Distribution Trigger —— 計畫觸發器工廠 {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 **（可選）修改輪詢間隔**
 
@@ -252,7 +256,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 預設組態是針對單一發佈例項。 由於啟用用戶同步的原因是同步多個發佈實例（例如對於發佈群），因此需要將其他發佈實例添加到同步代理工廠。
 
-### 7.Apache Sling Distribution Agent —— 同步代理工廠 {#apache-sling-distribution-agent-sync-agents-factory-1}
+### 7. Apache Sling Distribution Agent —— 同步代理工廠 {#apache-sling-distribution-agent-sync-agents-factory-1}
 
 **新增發佈例項：**
 
@@ -283,7 +287,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 * select `Save`
 
-### 8.AEM Communities使用者同步接聽程式 {#aem-communities-user-sync-listener}
+### 8. AEM Communities使用者同步接聽程式 {#aem-communities-user-sync-listener}
 
 **（可選）同步其他JCR節點**
 
@@ -340,7 +344,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
    * 社交／關係
    * 活動
 
-### 9.唯一Sling ID {#unique-sling-id}
+### 9. 唯一Sling ID {#unique-sling-id}
 
 >[!CAUTION]
 >
@@ -476,7 +480,7 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
 清單中包含每個發佈例項的URL，該例項將執行該例項的診斷。 url參數 `syncUser` 會附加至診斷URL，其值會設定至步驟2中 *建立的授權同步使* 用者 [](/help/sites-administering/sync.md#createauthuser)。
 
-**注意** :啟動URL之前，授 *權的同步使用者* ，必須已登入該發佈例項。
+**注意** : 啟動URL之前，授 *權的同步使用者* ，必須已登入該發佈例項。
 
 ![chlimage_1-398](assets/chlimage_1-398.png)
 
@@ -553,8 +557,8 @@ source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
 
       * 編輯包時
 
-         * 「篩選」標籤：新增篩選：根路徑： `/home`
-         * 進階標籤：交流處理： `Overwrite`
+         * 「篩選」標籤： 新增篩選： 根路徑： `/home`
+         * 進階標籤： 交流處理： `Overwrite`
    * [導出包](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
 
