@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 0%
 
 ---
 
@@ -30,9 +33,10 @@ AEM表單支援RSA和DSA憑證，最多4096位元的標準PKCS12格式（.pfx和
 1. 在管理控制台中，按一下「設定>信任商店管理>本機認證」。
 1. 按一下「匯入」。 在「信任商店類型」下，選取下列其中一個選項：
 
-   * **** 檔案簽署憑證：用於在檔案上發行數位簽名的憑證。
-   * **** Acrobat Reader DC擴充功能憑證：Acrobat Reader DC擴充功能專用的數位憑證，可讓Adobe Reader使用權限在產生的PDF檔案中啟動。
-   * **** 預設值：指出這是與Acrobat Reader DC擴充功能搭配使用的預設憑證。
+   * **檔案簽署憑證：** 用於在檔案上發行數位簽名的憑證。
+   * **Acrobat Reader DC擴充功能憑證：** Acrobat Reader DC擴充功能專用的數位憑證，可讓Adobe Reader使用權限在產生的PDF檔案中啟動。
+   * **預設值：** 指出這是與Acrobat Reader DC擴充功能搭配使用的預設憑證。
+
    如需有關取得憑證的詳細資訊，請參 [閱「準備安裝AEM表單」](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)。
 
 1. 在「別名」框中，鍵入憑據的標識符。 此識別碼會用作Acrobat Reader DC擴充功能和簽名服務中憑證的顯示名稱。 此別名也可用來使用AEM表單SDK以程式設計方式存取憑證。
