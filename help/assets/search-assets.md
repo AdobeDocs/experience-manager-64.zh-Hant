@@ -4,6 +4,9 @@ description: 瞭解如何使用「篩選」面板在AEM中尋找所需資產，�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 1%
 
 ---
 
