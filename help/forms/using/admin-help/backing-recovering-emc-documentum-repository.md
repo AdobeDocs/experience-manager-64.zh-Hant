@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
 source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
 
 >[!NOTE]
 >
->這些指示假設AEM表單（含Connectors for ECM和EMC Documentum Content server）已視需要安裝和設定。
+>這些指示假設AEM表單（含Connectors for ECM和EMC Documentum Content Server）已視需要安裝和設定。
 
 對於備份和還原過程，有兩項主要任務：
 
@@ -34,27 +37,27 @@ source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
 
 ## 軟體需求 {#software-requirements}
 
-要在EMC Documentum Content server上執行必要的備份任務，請從EMC或CYA購買適當的第三方應用工具，如EMC netWorker或CYA smartRecovery for EMC Documentum。 以下說明介紹了使用EMC netWorker Module 7.2.2版的步驟。
+要在EMC Documentum Content Server上執行必要的備份任務，請從EMC或CYA購買適當的第三方應用工具，如EMC NetWorker或CYA SmartRecovery for EMC Documentum。 以下說明介紹了使用EMC NetWorker Module 7.2.2版的步驟。
 
-您需要以下EMC netWorker模組：
+您需要以下EMC NetWorker模組：
 
 * NetWorker Module
 * NetWorker配置嚮導
 * NetWorker設備配置嚮導
-* NetWorker Module，用於Content server使用的資料庫類型
+* NetWorker Module，用於Content Server使用的資料庫類型
 * NetWorker Module for Documentum
 
 ## 準備EMC Document Content Server進行備份和恢復 {#preparing-the-emc-document-content-server-for-backup-and-recovery}
 
-本節介紹在Content server上安裝和配置EMC netWorker軟體。
+本節介紹在Content Server上安裝和配置EMC NetWorker軟體。
 
 **準備EMC Documentum伺服器以備份**
 
-1. 在EMC Documentum Content server上，安裝EMC netWorker模組，接受所有預設值。
+1. 在EMC Documentum Content Server上，安裝EMC NetWorker模組，接受所有預設值。
 
-   在安裝過程中，系統會提示您輸入Content server電腦的伺服器名作為 *NetWorker伺服器名*。 在為資料庫安裝EMC netWorker模組時，請選擇「完整」安裝。
+   在安裝過程中，系統會提示您輸入Content Server電腦的伺服器名作為 *NetWorker伺服器名*。 在為資料庫安裝EMC NetWorker模組時，請選擇「完整」安裝。
 
-1. 使用下面的示例內容，建立名為 *nsrnmd_win.cfg* 的配置檔案，並將其保存到Content server上的可訪問位置。 備份和還原命令將調用此檔案。
+1. 使用下面的示例內容，建立名為 *nsrnmd_win.cfg* 的配置檔案，並將其保存到Content Server上的可訪問位置。 備份和還原命令將調用此檔案。
 
    以下文本包含換行符的格式化字元。 如果將此文本複製到此文檔外的某個位置，請一次複製部分，並在將其貼上到新位置時刪除格式字元。
 
@@ -192,7 +195,7 @@ source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
    * 開啟命令提示符，然後更改 *[到NetWorker_root]*\Legato\nsr\bin。
    * 運行以下命令： `-nsrnmdsv.exe -f`*&lt;path_to_cfg_file> -P &lt;密碼>*
 
-1. 建立用於備份資料庫的可執行批處理(.bat)檔案。 （請參見NetWorker文檔。）根據您的安裝，在批處理檔案中設定詳細資訊。
+1. 建立用於備份資料庫的可執行批處理(.bat)檔案。 （請參見NetWorker文檔。） 根據您的安裝，在批處理檔案中設定詳細資訊。
 
    * 完整資料庫備份(nsrnmdbf.bat):
 
@@ -208,7 +211,7 @@ source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
 
       其中：
 
-      `[NetWorker_database_module_root]` 是NetWorker模組的安裝目錄。 例如， netWorker Module for SQL Server的預設安裝目錄是C:\Program Files\Legato\nsr\bin\nsrsqlsv。
+      `[NetWorker_database_module_root]` 是NetWorker模組的安裝目錄。 例如， NetWorker Module for SQL Server的預設安裝目錄是C:\Program Files\Legato\nsr\bin\nsrsqlsv。
 
       `NetWorker_Server_Name` 是NetWorker所安裝的伺服器。
 
@@ -219,13 +222,13 @@ source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
 **建立備份設備**
 
 1. 在EMC Documentum伺服器上建立新目錄，並通過向所有用戶授予完全權限來共用該資料夾。
-1. 啟動EMC netWorker Administrator ，然後按一下「介質管理」>「設備」。
+1. 啟動EMC NetWorker Administrator ，然後按一下「介質管理」>「設備」。
 1. 按一下右鍵「設備」並選擇「建立」。
 1. 輸入以下值，然後按一下「確定」:
 
-   **** 名稱：共用目錄的完整路徑
+   **名稱：** 共用目錄的完整路徑
 
-   **** 媒體類型： `File`
+   **媒體類型：** `File`
 
 1. 按一下右鍵新設備，然後選擇操作。
 1. 按一下「Label（標籤）」 ，輸入名稱，按一下「OK（確定）」 ，然後按一下「Mount（裝載）」。
