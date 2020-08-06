@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Adobe Experience Manager 6.4提供兩個UI-統一的Experience Cloud UI和Classi
 
 利息條款：
 
-* **UI（或標準UI）** 5.6.0版中引進的現代化使用者介面，在後續版本中提供技術預覽和擴充。 它以Adobe Experience cloud的統一使用者體驗為基礎，Adobe Experience cloud先前稱為觸控式UI或觸控式UI。
+* **UI（或標準UI）** 5.6.0版中引進的現代化使用者介面，在後續版本中提供技術預覽和擴充。 它以Adobe Experience Cloud的統一使用者體驗為基礎，Adobe Experience Cloud先前稱為觸控式UI或觸控式UI。
 
 * **2008年** CQ 5.1版引入的基於ExtJS技術的經典UI用戶介面。
 
@@ -37,13 +40,13 @@ Adobe Experience Manager 6.4提供兩個UI-統一的Experience Cloud UI和Classi
 
 ## 一般 {#general}
 
-過去幾年中，Adobe以統一的使用者介面更新了所有Adobe Experience cloud解決方案。 Experience cloud解決方案的使用者在如何使用和操作應用程式時，都能享有一致的使用體驗。 在每個版本中，Adobe都根據客戶對各種解決方案的意見回應，來改善其使用者介面。
+過去幾年中，Adobe以統一的使用者介面更新了所有Adobe Experience Cloud解決方案。 Experience Cloud解決方案的使用者在如何使用和操作應用程式時，都能享有一致的使用體驗。 在每個版本中，Adobe都根據客戶對各種解決方案的意見回應，來改善其使用者介面。
 
-AEM 6.4中提供Adobe Experience Manager（先前稱為CQ5）的原始使用者介面，此介面於2008年推出，供執行5.0-5.6.1版的客戶使用。這可確保客戶可更新至6.4版，並受益於具備新功能的更新平台，同時仍能使用相同的使用者介面。
+AEM 6.4中提供Adobe Experience Manager（先前稱為CQ5）的原始使用者介面，此介面於2008年推出，供執行5.0-5.6.1版的客戶使用。 這可確保客戶可更新至6.4版，並受益於具備新功能的更新平台，同時仍能使用相同的使用者介面。
 
 Adobe建議客戶在2018/19年度計畫改用新的UI。 您可在6.4版的更新期間，或在更新後的個別專案中，進行此項作業，包括對自訂和元件對話方塊進行必要的調整。
 
-Adobe不打算對Classic UI（從AEM 6.4開始）做進一步的增強。請注意，Classic UI在遭淘汰時仍完全受支援。
+Adobe不打算對Classic UI（從AEM 6.4開始）做進一步的增強。 請注意，Classic UI在遭淘汰時仍完全受支援。
 
 ## 規則與建議 {#rules-and-recommendations}
 
@@ -56,7 +59,7 @@ Adobe不打算對Classic UI（從AEM 6.4開始）做進一步的增強。請注�
    <th>建議</th> 
   </tr> 
   <tr> 
-   <td>Adobe Experience Manager才剛剛開始使用。</td> 
+   <td>Adobe Experience Manager才剛開始使用。</td> 
    <td>使用預設的UI。</td> 
   </tr> 
   <tr> 
@@ -64,9 +67,9 @@ Adobe不打算對Classic UI（從AEM 6.4開始）做進一步的增強。請注�
    <td> 
     <ol> 
      <li>更新至6.4</li> 
-     <li>使用預設的UI進行網站管理、資產、 等等。<br /> </li> 
+     <li>使用預設的UI進行網站管理、資產、 etc.<br /> </li> 
      <li>設定「編輯頁面」動作以開啟傳統UI頁面編輯器。 請參 <a href="#selecting-your-ui">閱選擇您的UI</a>。</li> 
-    </ol> <p>然後，在第二個階段：</p> 
+    </ol> <p>然後，在第二階段：</p> 
     <ol> 
      <li>更新元件對話方塊，以使用Coral 3對話方塊格式。 Adobe建議使用對 <a href="/help/sites-developing/dialog-conversion.md">話轉換工具</a> ，以更新元件。</li> 
     </ol> </td> 
@@ -78,7 +81,7 @@ Adobe不打算對Classic UI（從AEM 6.4開始）做進一步的增強。請注�
      <li>更新至6.4</li> 
      <li>使用預設的UI進行網站管理、資產、 等等。</li> 
      <li>設定「編輯頁面」動作以開啟傳統UI頁面編輯器。 請參 <a href="#selecting-your-ui">閱選擇您的UI</a>。</li> 
-    </ol> <p>然後，在第二個階段：</p> 
+    </ol> <p>然後，在第二階段：</p> 
     <ol> 
      <li>更新元件對話方塊，以使用Coral 3對話方塊格式。 Adobe建議使用對 <a href="/help/sites-developing/dialog-conversion.md">話轉換工具</a> ，以更新元件。</li> 
      <li>設定ContextHub（ClientContext的取代）並更新頁面範本以使用ContextHub。 請注意，ContextHub具有允許載入自訂ClientContext儲存區的相容性模式。</li> 
@@ -93,7 +96,7 @@ Adobe不打算對Classic UI（從AEM 6.4開始）做進一步的增強。請注�
 
 ## 常見問答集 {#faq}
 
-如需詳細資訊，請參閱知識 [庫文章Touch UI Authoring常見問答集](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html);包括有關傳統UI淘汰排程的任何資訊。
+如需詳細資訊，請參閱知識 [庫文章Touch UI Authoring常見問答集](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html); 包括有關傳統UI淘汰排程的任何資訊。
 
 ## 選擇您的UI {#selecting-your-ui}
 
