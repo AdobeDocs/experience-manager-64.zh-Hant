@@ -335,7 +335,7 @@ AEM Forms作業可以使用AEM Forms強式型別API來執行，連線模式應�
 
 ## 快速入門（SOAP模式）: 使用Java API組合加密的PDF檔案 {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
 
-下列Java程式碼範例會匯整密碼加密的PDF檔案。 無抵押PDF檔案名 *為Loan.pdf*。 請注意，DDX檔案的名稱 *為shell_Encrypt.xml*。 加密的PDF檔案名 *為AssemblerEncryptedPDF.pdf*。 (請參 [閱組合加密的PDF檔案](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents)。)
+下列Java程式碼範例會匯整密碼加密的PDF檔案。 無抵押PDF檔案名 *為Loan.pdf*。 請注意，DDX文檔的名稱 *是shell_Encrypt.xml*。 加密的PDF檔案名 *為AssemblerEncryptedPDF.pdf*。 (請參 [閱組合加密的PDF檔案](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents)。)
 
 ```as3
  /* 
