@@ -413,7 +413,7 @@ Blueprint頁面（在Blueprint設定中參考）提供您使用目前(Blueprint)
    * 即使有嵌套， `LiveRelationships` 也會移除任何子體 `LiveCopies`。
 
 
-* 切換為深度即時副本：
+* 切換至深度即時副本：
 
    * 子頁面仍保持不變。
    * 若要查看切換的效果，您可以進行推廣，任何內容修改都會根據推廣配置來套用。
@@ -549,7 +549,7 @@ Blueprint頁面（在Blueprint設定中參考）提供您使用目前(Blueprint)
 
 若要追蹤您所做的變更，您可以在「參考」中檢視Blueprint頁面，並 **將其與** 「即時副本」頁面進行比較：
 
-1. 在Sites控 **制台** ，導 [覽至Blueprint或即時副本頁面並加以選取](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)。
+1. 在Sites控 **制台** ，導 [覽至藍圖或即時復本頁面並加以選取](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)。
 1. 開啟「參 **[照](/help/sites-authoring/basic-handling.md#references)**」(References)面板並選擇：
 
    * **Blueprint** （選取即時復本頁面時）
