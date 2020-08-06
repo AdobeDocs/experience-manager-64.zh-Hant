@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 0%
 
 ---
 
@@ -50,37 +53,37 @@ Adobe建議您進行現有的AEM [-Adobe Analytics整合](/help/sites-administer
   </tr>
   <tr>
    <td><strong>CTA點進連結</strong></td> 
-   <td><i>eventdata.clickthroughLinkLabel</i><br /> </td> 
+   <td><i>eventdata.clickthroughLinkLabel</i> <br /> </td> 
    <td>連結上的標籤或連結的文字 </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventdata.clickthroughLinkTarget</i><br /> </td> 
+   <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td> 
    <td>當您按一下連結時，您被帶到的目的地 </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventdata.events.clickthroughLinkClick</i><br /> </td> 
+   <td><i>eventdata.events.clickthroughLinkClick</i> <br /> </td> 
    <td>點按事件 </td> 
   </tr>
   <tr>
    <td><strong>CTA圖形連結</strong></td> 
-   <td><i>eventdata.clicktroughImageLabel</i><br /> </td> 
+   <td><i>eventdata.clicktroughImageLabel</i> <br /> </td> 
    <td>CTA影像的標題 </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventdata.clicktroughImageTarget</i><br /> </td> 
+   <td><i>eventdata.clicktroughImageTarget</i> <br /> </td> 
    <td>當您按一下包含連結的影像時所拍攝的目標</td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventdata.clicktroughImageAsset</i><br /> </td> 
+   <td><i>eventdata.clicktroughImageAsset</i> <br /> </td> 
    <td>儲存庫中映像資產的路徑 </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventdata.events.clicktroughImageClick</i><br /> </td> 
+   <td><i>eventdata.events.clicktroughImageClick</i> <br /> </td> 
    <td>點按事件</td> 
   </tr>
  </tbody>
