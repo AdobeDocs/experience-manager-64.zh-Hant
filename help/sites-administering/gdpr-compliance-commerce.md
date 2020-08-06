@@ -8,6 +8,9 @@ contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 >[!IMPORTANT]
 >
->GDPR在以下幾節中是以範例形式使用，但涵蓋的詳細資訊適用於所有資料保護和隱私權法規；例如GDPR、CCPA等。
+>GDPR在以下幾節中是以範例形式使用，但涵蓋的詳細資訊適用於所有資料保護和隱私權法規； 例如GDPR、CCPA等。
 
 歐盟的資料隱私權通用資料保護條例自2018年5月起生效。 如需詳細資訊，請 [參閱Adobe隱私權中心的GDPR頁面](https://www.adobe.com/privacy/general-data-protection-regulation.html)。
 
@@ -34,9 +37,9 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 ## 處理AEM Commerce的GDPR請求 {#handling-gdpr-requests-for-aem-commerce}
 
-對於Salesforces Commerce cloud整合，AEM Commerce不會儲存任何GDPR相關資訊。 您應將請求轉送至 [Salesforce Cloud](https://documentation.demandware.com/)。
+對於Salesforces Commerce Cloud整合，AEM Commerce不會儲存任何GDPR相關資訊。 您應將請求轉送至 [Salesforce Cloud](https://documentation.demandware.com/)。
 
-對於hybris和IBM webSphere整合，AEM中有一些資料。 您應使用 [AEM Platform GDPR指示](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) ，並考慮下列問題：
+對於hybris和IBM WebSphere整合，AEM中有一些資料。 您應使用 [AEM Platform GDPR指示](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) ，並考慮下列問題：
 
 1. **我的資料儲存／使用位置？** 快取的使用者設定檔資訊，例如名稱、商務使用者識別碼、Token、密碼、位址資料等，會從AEM中顯示。
 1. **我要將涵蓋的GDPR資料分享給誰？** AEM Commerce中任何GDPR相關資料的更新都不會儲存（相關描述檔資訊除外，如上文所述），但是會轉送回商務平台。
