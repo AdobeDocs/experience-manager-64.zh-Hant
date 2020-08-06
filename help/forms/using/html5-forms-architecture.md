@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2053'
+ht-degree: 0%
 
 ---
 
@@ -42,18 +45,18 @@ HTML5表單會快取第一個請求時處理表單（轉譯或提交）所需的
 
 Mobile Form會維護兩種不同的快取層級： PreRender快取和Render快取。 preRender快取包含已解析範本的所有片段和影像，而Render快取則包含已轉譯的內容，例如HTML。
 
-![HTML5表單工作流程](assets/cacheworkflow.png)**圖：***HTML5表單工作流程*
+![HTML5表單工作流程](assets/cacheworkflow.png)**圖：** *HTML5表單工作流程*
 
 HTML5表格不會快取遺失片段和影像參照的範本。 如果HTML5表單所花的時間超過正常時間，請檢查伺服器記錄檔是否遺失參照和警告。 同時，請確保未達到對象的最大大小。
 
 Forms OSGi服務會以兩個步驟處理請求：
 
-* **版面配置和初始表單狀態產生**:Forms OSGi render服務會呼叫Forms Cache元件，以確定表單是否已快取且未失效。 如果表單已快取且有效，則會從快取中支援產生的HTML。 如果表單無效，Forms OSGi render服務會以XML格式生成初始表單佈局和表單狀態。 此XML會透過Forms OSGi服務轉換為HTML版面配置和初始JSON表單狀態，然後快取以備後續要求使用。
-* **預先填入的表單**:在轉譯時，如果使用者以預先填入的資料要求表單，Forms OSGi轉譯服務會呼叫Forms服務容器，並產生具有合併資料的新表單狀態。 不過，由於版面已在上述步驟中產生，因此此呼叫比第一次呼叫更快。 此調用僅執行資料合併並對資料運行指令碼。
+* **版面配置和初始表單狀態產生**: Forms OSGi render服務會呼叫Forms Cache元件，以確定表單是否已快取且未失效。 如果表單已快取且有效，則會從快取中支援產生的HTML。 如果表單無效，Forms OSGi render服務會以XML格式生成初始表單佈局和表單狀態。 此XML會透過Forms OSGi服務轉換為HTML版面配置和初始JSON表單狀態，然後快取以備後續要求使用。
+* **預先填入的表單**: 在轉譯時，如果使用者以預先填入的資料要求表單，Forms OSGi轉譯服務會呼叫Forms服務容器，並產生具有合併資料的新表單狀態。 不過，由於版面已在上述步驟中產生，因此此呼叫比第一次呼叫更快。 此調用僅執行資料合併並對資料運行指令碼。
 
 如果表單或表單內使用的資產有任何更新，表單快取元件會偵測到該更新，而該特定表單的快取會失效。 當Forms OSGi服務完成處理後，描述檔轉譯器jsp會將JavaScript程式庫參考和樣式新增至此表單，並傳回回應給用戶端。 Apache等典型Web伺服 [器](https://httpd.apache.org/) ，可在此處搭配HTML壓縮使用。 Web伺服器可大幅降低回應大小、網路流量，以及在伺服器與用戶端機器之間串流資料所需的時間。
 
-當用戶提交表單時，瀏覽器將表單狀態以JSON格式發送給提交服 [務代理](/help/forms/using/service-proxy.md);然後，提交服務proxy會使用JSON資料產生資料XML，並提交該資料XML以提交端點。
+當用戶提交表單時，瀏覽器將表單狀態以JSON格式發送給提交服 [務代理](/help/forms/using/service-proxy.md); 然後，提交服務proxy會使用JSON資料產生資料XML，並提交該資料XML以提交端點。
 
 ## 元件 {#components}
 
@@ -93,7 +96,7 @@ HTML5表單使用快取來最佳化總處理能力和回應時間。 您可以�
   </tr> 
   <tr> 
    <td>攻擊性</td> 
-   <td>快取轉譯的HTML內容<br /> 快取在「保守」層級快取所有快取的物件。<br /> 注 <strong>意</strong>:此策略可產生最佳效能，但會耗用更多記憶體來儲存快取的工件。</td> 
+   <td>快取轉譯的HTML內容<br /> 快取在「保守」層級快取所有快取的物件。<br /> <strong>注意</strong>: 此策略可產生最佳效能，但會耗用更多記憶體來儲存快取的工件。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -120,7 +123,7 @@ Configuration Service可讓您調整HTML5表單的設定參數和快取設定。
 
 #### 指令碼引擎 {#scripting-engine}
 
-Adobe XFA實作支援兩種指令碼語言，以在表單中執行使用者定義的邏輯：JavaScript和FormCalc。
+Adobe XFA實作支援兩種指令碼語言，以在表單中執行使用者定義的邏輯： JavaScript和FormCalc。
 
 HTML Forms的指令碼引擎是以JavaScript編寫，以支援這兩種語言的XFA指令碼API。
 
@@ -173,8 +176,8 @@ Sling套件包含與Profiles和Profile Renderer相關的內容。
 
 Profile節點有屬性 **sling:resourceSuperType** ，其值 **為xfaforms/profile**。 此屬性會在內部傳送轉發請求至位於 **/libs/xfaforms/profile資料夾中之Profile節點的sling指令碼** 。 這些指令碼是JSP頁面，是用於組合HTML表單和必要JS/CSS對象的容器。 這些頁面包含對以下項目的參考：
 
-* **xfaforms.I18N。&lt;locale>**:此程式庫包含本地化資料。
-* **xfaforms.profile**:此程式庫包含XFA指令碼和版面引擎的實作。
+* **xfaforms.I18N。&lt;locale>**: 此程式庫包含本地化資料。
+* **xfaforms.profile**: 此程式庫包含XFA指令碼和版面引擎的實作。
 
 這些程式庫會建模為CQ Client Libraries，以善用CQ架構JavaScript程式庫的自動串連、精簡化和壓縮功能。\
 如需CQ Client Libs的詳細資訊，請參閱 [CQ Clientlib檔案](https://docs.adobe.com/docs/en/cq/current/developing/components/clientlibs.html)。
