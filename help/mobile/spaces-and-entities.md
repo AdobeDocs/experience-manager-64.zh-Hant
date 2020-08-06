@@ -1,8 +1,8 @@
 ---
 title: 空格和圖元
 seo-title: 開發AEM Mobile內容服務
-description: 此頁面提供開發AEM Mobile Content services的登陸頁面。
-seo-description: 此頁面提供開發AEM Mobile Content services的登陸頁面。
+description: 此頁面提供開發AEM Mobile Content Services的登陸頁面。
+seo-description: 此頁面提供開發AEM Mobile Content Services的登陸頁面。
 uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 1%
 
 ---
 
@@ -28,15 +31,15 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 ## 建立空間 {#creating-a-space}
 
-如果使用者想要將許多內容和資產公開給行動應用程式，使用者會使用AEM mobile儀表板建立空間。
+如果使用者想要將許多內容和資產公開給行動應用程式，使用者會使用AEM Mobile儀表板建立空間。
 
-對於尚未設定內容服務以搭配空格運作的首次使用者，AEM mobile儀表板在選取「內容服務」後只會顯示「 **應用程式」**。
+對於尚未設定內容服務以搭配空格運作的首次使用者，AEM Mobile儀表板在選取「內容服務」後只會顯示「 **應用程式」**。
 
 >[!CAUTION]
 >
 >**添加空間的先決條件**
 >
->勾選「 **啟用AEM Content Services** to wath Spaces」（啟用AEM Content Services以使用空格），並在您的AEM mobile應用程式儀表板中啟用它。
+>勾選「 **啟用AEM Content Services** to wath Spaces」（啟用AEM Content Services以使用空格），並在您的AEM Mobile應用程式儀表板中啟用它。
 >
 >如需詳 [細資訊，請參閱](/help/mobile/developing-content-services.md) 「管理內容服務」。
 
@@ -48,7 +51,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 1. 選擇「 **建立** 」以建立空間。 輸 **入空**&#x200B;格的Title ****、Name **和** Description。
 
-   按一下 **建立**。
+   按一下&#x200B;**建立**。
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
@@ -119,9 +122,9 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
    >
    >語言複製節點只能作為空間的直接子節點存在。
 
-1. **** 選擇 **Content Package Language&amp;ast;並輸入** Title&amp;ast;在「創 **建語言副本** 」對話框中。
+1. 選擇 **Content Package Language&amp;ast;** 並輸入 **Title&amp;ast;** 在「創 **建語言副本** 」對話框中。
 
-   按一下 **建立**。
+   按一下&#x200B;**建立**。
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
@@ -136,7 +139,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 ### 從空間中刪除資料夾 {#removing-a-folder-from-the-space}
 
 1. 從空間內容清單中選擇資料夾
-1. 從工具 **列按一下** 「刪除」
+1. Click **Delete** from the toolbar
 
    >[!NOTE]
    >
@@ -162,7 +165,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. 選擇圖元的模型。 這是您要建立的圖元類型。 按一下「下一步」。
+1. 選擇圖元的模型。 這是您要建立的圖元類型。 按一下下一步。
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
@@ -172,7 +175,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
    >
    >請參 [閱建立模型](/help/mobile/administer-mobile-apps.md)，以建立自定義實體。
 
-1. 輸入實 **體的**、名稱 **、說**&#x200B;明 **、**&#x200B;標 **** 簽標題。 按一下 **建立**。
+1. 輸入實 **體的**、名稱 **、說**&#x200B;明 **、**&#x200B;標 **** 簽標題。 按一下&#x200B;**建立**。
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
