@@ -11,15 +11,18 @@ topic-tags: best-practices
 discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 2%
 
 ---
 
 
 # 程式碼範例{#code-samples}
 
-Adobe諮詢服務團隊已產生一連串的AEM程式碼範例。 這些範例是加上良好註解的程式碼片段，可協助AEM開發人員瞭解AEM的主要建置區塊。 您可從以下網址取得範例： [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/)。
+Adobe諮詢服務團隊已產生一連串的AEM程式碼範例。 這些範例是加上良好註解的程式碼片段，可協助AEM開發人員瞭解AEM的主要建置區塊。 您可從以下網址取得範例： [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-為AEM新手的開發人員設計的多部份教學課程，涵蓋專案設定、核心元件、可編輯範本、用戶端程式庫和元件開發等基本主題：AEM [網站快速入門- WKND教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+為AEM新手的開發人員設計的多部份教學課程，涵蓋專案設定、核心元件、可編輯範本、用戶端程式庫和元件開發等基本主題： [AEM Sites快速入門- WKND教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
 Adobe AEM社群團隊會建立「開發人員如何使用」文章。 您可以在這裡找到 [文章](https://helpx.adobe.com/experience-manager/topics/how-to.html)。
 
