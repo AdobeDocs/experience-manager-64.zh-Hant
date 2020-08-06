@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 1. 在命令提示符下，導航到 *[JAVA HOME]*/bin ，然後鍵入以下命令以建立證書和密鑰庫：
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*主機名&#x200B;*組名稱`, OU=`*Name* Name `, O=`*Name *CompanyName`,L=`*Name* StateAlign NameAlign ChanSign*`, S=`**`, C=`**`" -alias`**`-keypass``*key*`**`-keystore`** Cort Contrity* ChardÕCort* Renamany Cordity* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*主機名&#x200B;*`, OU=`*組名稱* Name `, O=`*Company Name *Name`,L=`*Name* State Name* Company Name `, S=`**`, C=`**`" -alias`**`-keypass``*key*`**`-keystore`*State*AD T.C. C. N. C. N. C. C. A. C. A. C. C. C. N. N. N. N. A.* `.keystore`
 
    >[!NOTE]
    >
