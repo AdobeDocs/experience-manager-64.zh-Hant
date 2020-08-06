@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 3%
 
 ---
 
@@ -23,15 +26,15 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 1. 使用管理員權 `/lc/crx/de` 限登入。
 1. 執行下列動作：
 
-   1. 複製分層結構：在 `/libs/livecycle/core/content` 的 `/apps/livecycle/core/content`。 維護相同的（節點／資料夾）屬性和訪問控制。
-   1. 複製內容資料夾：從 `/libs/livecycle/core` 到 `/apps/livecycle/core`。
+   1. 複製分層結構： 在 `/libs/livecycle/core/content` 的 `/apps/livecycle/core/content`。 維護相同的（節點／資料夾）屬性和訪問控制。
+   1. 複製內容資料夾： 從 `/libs/livecycle/core` 到 `/apps/livecycle/core`。
    1. 刪除資料夾的 `/apps/livecycle/core` 內容。
 
 1. 執行下列動作：
 
-   1. 複製分層結構：在 `/libs/livecycle/core/components/login` 的 `/apps/livecycle/core/components/login`。 維護相同的（節點／資料夾）屬性和訪問控制。
-   1. 複製元件資料夾：從 `/libs/livecycle/core` 到 `/apps/livecycle/core`。
-   1. 刪除資料夾的內容： `/apps/livecycle/core/components/login`。
+   1. 複製分層結構： 在 `/libs/livecycle/core/components/login` 的 `/apps/livecycle/core/components/login`。 維護相同的（節點／資料夾）屬性和訪問控制。
+   1. 複製元件資料夾： 從 `/libs/livecycle/core` 到 `/apps/livecycle/core`。
+   1. 刪除資料夾的內容： `/apps/livecycle/core/components/login`.
 
 ## 添加新區域設定 {#adding-a-new-locale}
 
@@ -45,6 +48,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
    1. 將資料夾更名為要支援的區域設定名稱。 For example, `ar`.
    1. 將屬性 `jcr:language` 值變 `ar`更為(檔 `ar` 案夾)。
+
    >[!NOTE]
    >
    >如果locale是語言——國家代碼組合，例如， `ar-DZ`則將資料夾名稱和屬性值更改為 `ar-DZ`。
@@ -192,6 +196,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
       * 從 `/libs/livecycle/core/components/login`
       * 至 `/apps/livecycle/core/components/login`
    1. 修改 `/apps/livecycle/core/components/login/login.jsp` 以合併新添加的文本。
+
    ![捕獲](assets/capture.png)
 
    ```
@@ -261,7 +266,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 1. 在中新增影像 `/apps/livecycle/core/content/login`。 若要新增影像：
 
    1. 安裝WebDAV用戶端。
-   1. 使用webDAV用 `/apps/livecycle/core/content/login` 戶端導覽至資料夾。 如需詳細資訊，請參閱： [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html)。
+   1. 使用webDAV用 `/apps/livecycle/core/content/login` 戶端導覽至資料夾。 如需詳細資訊，請參閱： [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
    1. 新增影像。
 
 1. 在與中新增的新影 `/apps/livecycle/core/content/login/login.css,` 像對應的位置新增樣式 `/apps/livecycle/core/content/login`。
