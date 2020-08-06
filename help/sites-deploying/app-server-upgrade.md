@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 translation-type: tm+mt
 source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 0%
 
 ---
 
 
 # 應用程式伺服器安裝的升級步驟{#upgrade-steps-for-application-server-installations}
 
-本節說明更新AEM for Application server安裝所需遵循的程式。
+本節說明更新AEM for Application Server安裝所需遵循的程式。
 
 此程式中的所有範例都使用JBoss做為應用程式伺服器，並暗示您已部署AEM的工作版本。 此程式旨在記錄從 **AEM 5.6版到6.3版所執行的升級**。
 
@@ -85,11 +88,12 @@ source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
 
 1. 接下來，您需要建立包含將與新升級實例一起使用的OSGi配置的資料夾。 更具體地說，需要在 **crx-quickstart下建立名為install的資料夾**。
 
-1. 現在，請建立將與AEM 6.3搭配使用的節點儲存區和資料儲存區。通過在 **crx-quickstart\install下建立兩個具有以下名稱的檔案，可以執行此操作**:
+1. 現在，請建立將與AEM 6.3搭配使用的節點儲存區和資料儲存區。 通過在 **crx-quickstart\install下建立兩個具有以下名稱的檔案，可以執行此操作**:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
+
    這兩個檔案將設定AEM使用TarMK節點儲存區和檔案資料儲存區。
 
 1. 編輯配置檔案以使其可供使用。 更具體地說：
@@ -123,7 +127,7 @@ source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
    <param-value >author</param-value>
    ```
 
-1. 將上述作者值變更，並將執行模式設為：author,crx3,crx3tar程式碼的最後區塊應如下所示：
+1. 將上述作者值變更，並將執行模式設為： author,crx3,crx3tar程式碼的最後區塊應如下所示：
 
    ```
    <init-param>
