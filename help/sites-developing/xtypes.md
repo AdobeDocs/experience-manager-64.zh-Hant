@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '6414'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
 ## xtypes {#xtypes}
 
-請在Adobe Experience manager中尋找下列可用類型：
+請在Adobe Experience Manager中尋找下列可用類型：
 
 * 注釋
 
@@ -93,7 +96,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.form.BrowseField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.BrowseField)
 
-   **已過時：請[改用CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)**
+   **已過時： 請[改用CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)**
 
 * bulkeditor
 
@@ -209,7 +212,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.Ext.Container](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)
 
-   任何可能包 [含其他元件的CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) 的基類。 容器可處理包含項目的基本行為，即添加、插入和移除項目。
+   任何可能包 [含其他元件的CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) 的基本類別。 容器可處理包含項目的基本行為，即添加、插入和移除項目。
 
    最常用的容器類 [別為CQ.Ext.Panel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel)、 [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) 和 [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel)。
 
@@ -253,7 +256,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-   CustomContentPanel是一種特殊的面板，可用於 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog):其內容會從對話方塊中擷取並送出至與其他欄位不同的URL。
+   CustomContentPanel是一種特殊的面板，可用於 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog): 其內容會從對話方塊中擷取並送出至與其他欄位不同的URL。
 
 * 循環
 
@@ -307,7 +310,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.Ext.data.DirectStore](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectStore)
 
-   JsonReader [，可以建立配置](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) CQ.Ext.data.Store [,](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) CQ.Ext.data.DirectDirectB.Ext.data.Store [，並配置](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader) CQ.DirectB.Ext.data.DirectBext.Store.Provider，使其與 [](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct)[](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider) CQ.JonRederReReReReReProdReReReaReReReReReReReProdReReReReReReReReReReReadReReReReReReReReadReRearReRearReReadReProdReReProviderReProvider互動。
+   JsonReader [可以建立配置](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store) CQ.Ext.data.Store [，並配置](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.DirectProxy) CQ.Ext.data.DirectDirectB.Ext.data.Store [，以便與](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)[](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Direct)[](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.direct.Provider) CQ.Ext.Ext.dataProvider互動，ProxyJonReader更容易。
 
 * displayfield
 
@@ -357,7 +360,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.Ext.form.FieldSet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet)
 
-   用於將表單中的項目分組的標準 [容器](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel)。...
+   用於將表單中的項目分組的標準 [容器](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel)。 ...
 
 * fileuploadialogbutton
 
@@ -409,7 +412,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.HistoryButton](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.HistoryButton)
 
-   HistoryButton是一個小型的輔助類，可輕鬆提供上一頁和下一頁按鈕。 通常需要兩個相關例項：前向按鈕實例是連結到處理歷史記錄的後向按鈕實例的簡單按鈕。
+   HistoryButton是一個小型的輔助類，可輕鬆提供上一頁和下一頁按鈕。 通常需要兩個相關例項： 前向按鈕實例是連結到處理歷史記錄的後向按鈕實例的簡單按鈕。
 
 * htmleditor
 
@@ -501,7 +504,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.MediaBrowseDialog](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.MediaBrowseDialog)
 
-   **已過時：請改[用Content Finder](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder)來瀏覽媒體。**
+   **已過時： 請改[用Content Finder](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.ContentFinder)來瀏覽媒體。**
 
    MediaBrowseDialog是用於瀏覽媒體庫的對話方塊。
 
@@ -579,7 +582,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-   OfflineImporter是匯入Microsoft word檔案並轉換為AEM頁面的工具。 此功能可讓內容使用文字處理器離線編輯。
+   OfflineImporter是匯入Microsoft Word檔案並轉換為AEM頁面的工具。 此功能可讓內容使用文字處理器離線編輯。
 
 * ownerdraw
 
@@ -617,7 +620,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.form.PathCompletion](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathCompletion)
 
-   **已過時：請[改用CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)**
+   **已過時： 請[改用CQ.form.PathField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.PathField)**
 
 * pathfield
 
@@ -629,7 +632,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.Ext.ProgressBar](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ProgressBar)
 
-   可更新的進度條元件。 進度列支援兩種不同的模式：手動和自動。
+   可更新的進度條元件。 進度列支援兩種不同的模式： 手動和自動。
 
    在手動模式下，您負責顯示、更新(透過 [updateProgress](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ProgressBar))，並視需要從您自己的程式碼中清除進度列。 此方法最適合您要顯示進度時。
 
@@ -741,7 +744,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.Ext.Slider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Slider)
 
-   支援垂直或水準方向、鍵盤調整、可設定對齊、軸點選和動畫的滑桿。 可新增為項目至任何容器。 範例用法：...
+   支援垂直或水準方向、鍵盤調整、可設定對齊、軸點選和動畫的滑桿。 可以新增為項目至任何容器。 範例用法： ...
 
 * 投影片
 
@@ -819,7 +822,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.form.TableEdit](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit)
 
-   **已過時：請[改用CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2)。**
+   **已過時： 請[改用CQ.form.TableEdit2](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.TableEdit2)。**
 
 * tableedit2
 
@@ -869,7 +872,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
    [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField)
 
-   提供包含時間下拉式清單和自動時間驗證的時間輸入欄位。 範例用法：...
+   提供包含時間下拉式清單和自動時間驗證的時間輸入欄位。 範例用法： ...
 
 * 尖端
 
