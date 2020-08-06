@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
@@ -28,6 +31,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
       * 支援的語言程式碼為小寫、由ISO-639-1定義的雙字母程式碼
       * 支援的國家／地區代碼為小寫或大寫，由ISO 3166定義的雙字母代碼
    1. 選取範本，然後按一下建立。
+
    ![newpagefr](assets/newpagefr.png)
 
 1. 在「網站」主控台的「網站」樹狀結構中，選取網站的根頁面。
