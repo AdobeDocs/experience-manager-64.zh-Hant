@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * 檢視／管理整個網站的繼承：
 
    * 檢視藍圖樹和對應的即時副本結構，以及其繼承狀態
-   * 更改繼承狀態；例如，暫停，繼續
+   * 更改繼承狀態； 例如，暫停，繼續
    * 檢視Blueprint和即時副本屬性
 
 * 執行轉出動作
@@ -76,7 +79,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ### Blueprint頁面的動作 {#actions-for-a-blueprint-page}
 
-當您選取Blueprint頁面時，可執行下列動作：
+當您選取藍圖頁面時，可執行下列動作：
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
