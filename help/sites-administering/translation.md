@@ -12,6 +12,9 @@ discoiquuid: 67faa2ee-cb12-44b0-8bfb-534d1d6c360a
 legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +23,8 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 自動翻譯頁面內容、資產和使用者產生的內容，以建立和維護多語言網站。 為自動化翻譯工作流程，您將翻譯服務供應商與AEM整合，並建立專案，將內容翻譯成多種語言。 AEM支援人文和機器翻譯工作流程。
 
-* 人類翻譯：內容會傳送給翻譯提供者，並由專業翻譯人員翻譯。 完成時，會傳回翻譯的內容並匯入AEM。 當您的翻譯提供者與AEM整合時，內容會在AEM和翻譯提供者之間自動傳送。
-* 機器翻譯：機器翻譯服務會立即翻譯您的內容。
+* 人類翻譯： 內容會傳送給翻譯提供者，並由專業翻譯人員翻譯。 完成時，會傳回翻譯的內容並匯入AEM。 當您的翻譯提供者與AEM整合時，內容會在AEM和翻譯提供者之間自動傳送。
+* 機器翻譯： 機器翻譯服務會立即翻譯您的內容。
 
 翻譯內容需要執行下列步驟：
 
@@ -39,6 +42,6 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 >
 >您的使用者必須是專案管理員群組的成員，才能使用「語言複製」功能。
 
-## Best Practices {#best-practices}
+## 最佳作法 {#best-practices}
 
 「轉 [譯最佳實務](/help/sites-administering/tc-bp.md) 」頁面包含有關您實作的重要資訊。
