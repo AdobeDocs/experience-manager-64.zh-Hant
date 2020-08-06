@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 4%
 
 ---
 
@@ -61,6 +64,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
    * 將「請 **[!UICONTROL 求模糊化模式]** 」設 **[!UICONTROL 為「停用」]**。
    * 將「請 **[!UICONTROL 求鎖定模式」設]** 置為 **[!UICONTROL 「禁用」]**。
+
    在AEM中使用 **[!UICONTROL Panoramic Media]** （全景媒體）元件時，必須進行這些設定。
 
 1. 在「影像伺服器 **[!UICONTROL 發佈」頁面的左側]** ，點選「儲 **[!UICONTROL 存」]**。
@@ -73,7 +77,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 * 如果您遇到403 Forbidden錯誤，可能是由於要求的影像大小過大所致。 檢閱「設 *定動態媒體經典* (Scene7)」 [中的「回覆影像大小限制」設定](#configuring-dynamic-media-classic-scene)。
 
-* 對於頁面上 *顯示的資產上的無效鎖* 或「剖析」錯誤，請勾選「請求模糊化模式 *」和「請********* 求鎖定模式」以確保它們已禁用。
+* 對於頁面上 *顯示的資產上的無效鎖* 或「剖析」錯誤，請勾選「請求模糊化模式 *」和「請求鎖********* 定模式」以確保它們已禁用。
 * 對於受污染的畫布錯誤，請為影 **[!UICONTROL 像資產的先前請求設定規則集定義檔案路徑並使CTN無效]** 。
 * 如果影像要求的大小超過支援的限制，影像品質變得非常低，請檢查 **** JPEG編碼屬性>品質設定是否不為空。 「品質」( **[!UICONTROL Quality]** )欄位的典型設定為 `95`。 您可以在「影像伺服器發佈」頁 **[!UICONTROL 面上找到設定]** 。 若要存取頁面，請參 [閱設定Dynamic Media Classic](#configuring-dynamic-media-classic-scene)。
 
