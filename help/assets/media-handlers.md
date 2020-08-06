@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
 source-wordcount: '2193'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -153,7 +153,7 @@ AEM有一些處理資產的預設工作流程。 要查看它們，請開啟「�
       * 編譯器合規性級別
       * 生成的。class檔案相容性
       * 原始碼相容性
-   1. 按一下 **[!UICONTROL 確定]**。 在對話框窗口中，按一下「是」。
+   1. 按一下&#x200B;**[!UICONTROL 「確定」]**。在對話框窗口中，按一下「是」。
 
 
 1. 將pom.xml檔案中的程式碼取代為下列程式碼：
