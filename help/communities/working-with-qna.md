@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bbbe32bb-9d97-461e-822f-a7ddc6c9f9ef
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1216'
+ht-degree: 0%
 
 ---
 
@@ -19,24 +22,24 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## 簡介 {#introduction}
 
-QnA（問題與答案）論壇功能為社群成員提供了提問與回答問題的區域：
+The QnA (questions and answers) forum feature provides an area for community members to ask and answer questions:
 
-* 建立新問題
+* Create new questions
 * 內嵌影像（支援拖放）
-* 檢視並回答問題
-* 搜尋問題
-* 協助協調QnA內容
-* 找出最佳答案
-* 將QnA問題從一個頁面移至另一個頁面
+* View and answer questions
+* Search for a question
+* Help moderate the QnA content
+* Identify best answers
+* Move QnA questions from one page to another
 
 本節說明
 
-* 新增QnA論壇功能至AEM網站
+* Adding the QnA forum feature to an AEM site
 * 元件的配置設 `QnA`置
 
-## 新增問答論壇至頁面 {#adding-a-q-a-forum-to-a-page}
+## Adding a Q&amp;A Forum to a Page {#adding-a-q-a-forum-to-a-page}
 
-要在作者模 `QnA` 式下將元件添加到頁面，請使用元件瀏覽器來 `Communities / QnA` 查找並將其拖放到QnA論壇應出現的頁面上。
+To add a `QnA` component to a page in author mode, use the component browser to locate `Communities / QnA` and drag it into place on a page where the QnA forum should appear.
 
 如需必要資訊，請造 [訪Communities Components Basics](basics.md)。
 
@@ -44,7 +47,7 @@ QnA（問題與答案）論壇功能為社群成員提供了提問與回答問�
 
 ![chlimage_1-280](assets/chlimage_1-280.png)
 
-### 配置QnA {#configuring-qna}
+### Configuring QnA {#configuring-qna}
 
 選擇要訪問 `QnA` 的已放置元件，並選 `Configure` 擇開啟編輯對話框的表徵圖。
 
@@ -52,29 +55,39 @@ QnA（問題與答案）論壇功能為社群成員提供了提問與回答問�
 
 #### 「設定」頁籤 {#settings-tab}
 
-在「設 **[!UICONTROL 定]** 」標籤下，指定主題（問題）和回覆（答案）的設定：
+Under the **[!UICONTROL Settings]** tab, specify settings for topics (questions) and replies (answers):
 
-* **[!UICONTROL 每頁主題]**&#x200B;定義每頁顯示的問題／貼文數。 預設值為10。
+* **[!UICONTROL Topics Per Page]**
+Defines the number of questions/posts shown per page. 預設值為10。
 
-* **[!UICONTROL 已協調]**：如果勾選，則必須先核准張貼主題和留言，才會顯示在發佈網站上。 預設為未勾選。
+* **[!UICONTROL Moderated]**
+If checked, posting of topics and comments must be approved before they will appear on a publish site. 預設為未勾選。
 
-* **[!UICONTROL 關閉]**&#x200B;如果勾選，則論壇將關閉新問題和評論。 預設為未勾選。
+* **[!UICONTROL Closed]**
+If checked, the forum is closed to new questions and comments. 預設為未勾選。
 
 * **[!UICONTROL 富格文本編輯]**&#x200B;器如果選中，則可以使用標注輸入主題和注釋。 預設為未勾選。
 
 * **[!UICONTROL 允許標籤]**：如果勾選，允許成員將標籤標籤新增至其貼文(請參 **[!UICONTROL 閱標籤欄位]** 標籤)。 預設為未勾選。
 
-* **[!UICONTROL 允許檔案上載]**&#x200B;如果選中此選項，則允許將檔案附件添加到問題或注釋中。 預設為未勾選。
+* **[!UICONTROL Allow File Uploads]**
+If checked, allow file attachments to be added to the question or comment. 預設為未勾選。
 
-* **[!UICONTROL 最大檔案大小]**&#x200B;僅在勾選時 `Allow File Uploads` 相關。 此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
+* **[!UICONTROL Max File Size]**
+Relevant only if 
+`Allow File Uploads` is checked. 此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
 
-* **[!UICONTROL 允許的檔案類型]**&#x200B;僅在選中時 `Allow File Uploads` 相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
+* **[!UICONTROL 允許的檔案類型]**&#x200B;僅與 
+`Allow File Uploads` is checked. 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
 
-* **[!UICONTROL 僅當勾選「允許上傳檔案]**」時，附加影像檔案大小的上限才相關。 上傳的影像檔案的位元組數上限。 預設值為2097152(2 Mb)。
+* **[!UICONTROL Max Attach Image File Size]**
+Relevant only if Allow File Uploads is checked. 上傳的影像檔案的位元組數上限。 預設值為2097152(2 Mb)。
 
-* **[!UICONTROL 允許下]**&#x200B;列：如果勾選，請加入論壇貼文的下列功能，讓成員 [收到](notifications.md) 新貼文的通知。 預設為未勾選。
+* **[!UICONTROL Allow Following]**
+If checked, include the following feature for forum posts, which allows members to be [notified](notifications.md) of new posts. 預設為未勾選。
 
-* **[!UICONTROL 允許釘選]**&#x200B;如果勾選，論壇主題可能會釘選至主題清單的頂端。 預設為未勾選。
+* **[!UICONTROL Allow Pinning]**
+If checked, forum topics may be pinned to the top of the list of topics. 預設為未勾選。
 
 * **[!UICONTROL 允許電子郵件]**&#x200B;訂閱如果勾選，允許會員透過電子郵件（訂閱）收到新[貼文](subscriptions.md)。 需要 `Allow Following` 檢查並設定電 [子郵件](email.md)。 預設為未勾選。
 
@@ -114,19 +127,24 @@ QnA（問題與答案）論壇功能為社群成員提供了提問與回答問�
 
 在「標 **[!UICONTROL 記」欄位]** (Tag field **** )標籤下，可套用的標籤（如果允許）會根據選擇的名稱空間加以限制。
 
-* **[!UICONTROL 如果已勾選「]**&#x200B;設定」標 `Allow Tagging` 簽下的「允許的命名空 **間** 」, 可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
+* **[!UICONTROL 允許的名稱空間]**&#x200B;相關(如果 
+`Allow Tagging` 已勾選「設定」 **標籤** 。 可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
 
-* **[!UICONTROL 建議限]**&#x200B;制輸入要作為建議顯示給發佈到論壇的成員的標籤數。 值表示 `-1` 沒有限制。 預設值為0。
+* **[!UICONTROL 建議限]**&#x200B;制輸入要作為建議顯示給發佈到論壇的成員的標籤數。 值 
+`-1` 意味著沒有限制。 預設值為0。
 
 #### 「排序設定」頁籤 {#sort-settings-tab}
 
 在「排 **[!UICONTROL 序設定]** 」標籤下，指定顯示張貼留言的排序方式。
 
-* **[!UICONTROL 排序依據]**&#x200B;檢查所有允許的排序選擇： `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`。 預設為 `Newest, Oldest, Last Updated`。
+* **[!UICONTROL 排序依據]**&#x200B;檢查所有允許的排序選擇： 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 預設為 `Newest, Oldest, Last Updated`。
 
-* **[!UICONTROL 設定為「預設]**」(Default)下拉式選項，以選擇一個選定的排序選項作為預設選項顯示。 預設為 `Newest`。
+* **[!UICONTROL 設定為「預設]**」(Default)下拉式選項，以選擇一個選定的排序選項作為預設選項顯示。 預設值為 
+`Newest`。
 
-* **[!UICONTROL 選取「Analytics排序下拉式]**&#x200B;的時間選項」以選取其中一 `All, Last 24 Hours, Last 7 Days, Last 30 Days`個。 預設為 `All`。
+* **[!UICONTROL 選取Analytics排序下拉式選]**&#x200B;項以選取其中一個 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. 預設為 `All`。
 
 ## 網站訪客體驗 {#site-visitor-experience}
 
