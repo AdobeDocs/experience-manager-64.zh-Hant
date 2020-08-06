@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4dc54701-68b9-49dd-a212-b0b53330c1c0
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +76,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ## 受信任的社群成員 {#trusted-community-member}
 
-本體驗假設 [Aaron mcDonald](tutorials.md#demo-users) 被指派為社群經 [理和協調者的角色](create-site.md#roles)。 如果沒有，請返回作者環境以修 [改網站設定](sites-console.md#modifying-site-properties) ，並選擇Aaron mcDonald擔任社群經理和協調者。
+本體驗假設 [Aaron McDonald](tutorials.md#demo-users) 被指派為社群經 [理和協調者的角色](create-site.md#roles)。 如果沒有，請返回作者環境以修 [改網站設定](sites-console.md#modifying-site-properties) ，並選擇Aaron McDonald擔任社群經理和協調者。
 
 在右上角，選取並 `Log in`使用使用者名稱「aaron.mcdonald@mailinator.com」和密碼「password」簽署。 請注意，使用Twitter或Facebook認證登入的能力。
 
@@ -93,6 +96,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 >
 >* [社群元件](author-communities.md) （適用於作者）
 >* [元件、功能和功能基本工具](essentials.md) （適用於開發人員）
+
 >
 
 
@@ -152,13 +156,14 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 * 此範本不*not *include the groups function，因此將無法再巢狀化群組
 * 在作者身上，「群 [組控制台](groups.md) 」提供第三種選擇- `Public Group` （選用會籍）
 
-建立兩個群組後，請選取「棒球」群組、開啟的群組，並注意其連結： `Discussions``What's New` 群 `Members`組的連結會顯示在主網站的連結下方，並產生下列顯示：
+建立兩個群組後，請選取「棒球」群組、開啟的群組，並注意其連結： `Discussions` `What's New` `Members`
+群組的連結會顯示在主網站的連結下方，並產生下列顯示：
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
-在作者上——具有管理權限，導覽至 [Communities Groups主控台](members.md) ，並將Weston mcCall新增至 `Community Engage Gymnastics <uid> Members` 群組。
+在作者上——具有管理權限，導覽至 [Communities Groups主控台](members.md) ，並將Weston McCall新增至 `Community Engage Gymnastics <uid> Members` 群組。
 
-繼續發佈時，以Aaron mcDonald的身分登出，並以匿名網站訪客的身分檢視運動群組：
+繼續發佈時，以Aaron McDonald的身分登出，並以匿名網站訪客的身分檢視運動群組：
 
 * 從首頁
 * 選取連 `Groups`結
@@ -167,7 +172,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 只會顯示棒球群組。
 
-以Weston mcCall(weston.mccall@dodgit.com /密碼)的身分登入，並導覽至相同的位置。 請注意，Weston可以使用 `Join` 開啟的 `Baseball` 群組和 `enter or Leave` 私人 `Gymnastics`群組。
+以Weston McCall(weston.mccall@dodgit.com /密碼)的身分登入，並導覽至相同的位置。 請注意，Weston可以使用 `Join` 開啟的 `Baseball` 群組和 `enter or Leave` 私人 `Gymnastics`群組。
 
 ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -200,7 +205,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 在指定使用者名稱、電子郵件和密碼後，選取會 `Sign Up`建立使用者並讓他們簽名。
 
-登入後，第一頁即為其頁面， `Profile`可供他們個人化。
+登入後，第一頁即為其頁面， `Profile`可供個人化。
 
 ![chlimage_1-325](assets/chlimage_1-325.png)
 
