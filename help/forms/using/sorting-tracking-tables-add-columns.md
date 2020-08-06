@@ -1,6 +1,6 @@
 ---
-title: 自訂追蹤表格
-seo-title: 自訂追蹤表格
+title: Customize tracking tables
+seo-title: Customize tracking tables
 description: How-to customize the display of user processes in the task table displayed in the AEM Forms workspace.
 seo-description: How-to customize the display of user processes in the task table displayed in the AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
@@ -10,23 +10,26 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 2%
 
 ---
 
 
-# 自訂追蹤表格{#customize-tracking-tables}
+# Customize tracking tables{#customize-tracking-tables}
 
-AEM Forms工作區中的追蹤標籤可用來顯示涉及登入使用者的程式例項的詳細資料。 若要檢視追蹤表格，請先在左窗格中選取程式名稱，以在中間窗格中查看其例項清單。 選擇一個流程實例，在右窗格中查看此實例生成的任務表。 預設情況下，表列顯示以下任務屬性（任務模型中的相應屬性在括弧中給出）:
+The tracking tab in AEM Forms workspace is used to display the details of process instances in which the logged-in user is involved. To view the tracking tables, first select a process name in the left pane to see its list of instances in middle pane. 選擇一個流程實例，在右窗格中查看此實例生成的任務表。 預設情況下，表列顯示以下任務屬性（任務模型中的相應屬性在括弧中給出）:
 
 * ID ( `taskId`)
 * 名稱 ( `stepName`)
 * 說明 ( `instructions`)
 * 選取的動作 ( `selectedRoute`)
-* 建立時間( `createTime`)
+* Creation Time ( `createTime`)
 * 完成時間( `completeTime`)
 * 所有者 ( `currentAssignment.queueOwner`)
 
-任務模型中可用於顯示在任務表中的其餘屬性為：
+The remaining attributes in the task model available for display in the task table are:
 
 <table> 
  <tbody> 
