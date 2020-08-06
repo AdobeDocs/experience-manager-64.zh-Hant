@@ -37,7 +37,7 @@ ht-degree: 1%
 1. 在「Microsoft Translator」區域中，按一下或點選「Show Configurations」（顯示配置）。
 1. 按一下「Available Configurations（可用配置）」旁邊的+連結。
 
-   ![chlimage_1-382](assets/chlimage_1-382.png)
+   ![chlimage_1-302](assets/chlimage_1-382.png)
 
 1. 輸入您設定的標題。 標題可識別雲端服務主控台以及頁面屬性下拉式清單中的設定。 預設名稱是以標題為基礎。 （可選）鍵入用於儲存配置的儲存庫節點的名稱。 您應使用「父配置」屬性的預設值，該屬性是儲存庫節點的路徑。
 1. 按一下建立。
