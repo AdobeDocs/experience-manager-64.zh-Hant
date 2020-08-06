@@ -1,8 +1,8 @@
 ---
 title: 管理內容
 seo-title: 管理內容
-description: 內容管理動作是協助建立和管理應用程式內容的建立區塊。 請依照本頁進一步瞭解。
-seo-description: 內容管理動作是協助建立和管理應用程式內容的建立區塊。 請依照本頁進一步瞭解。
+description: 內容管理動作是協助建立和管理應用程式內容的建立區塊。 請依本頁瞭解詳細資訊。
+seo-description: 內容管理動作是協助建立和管理應用程式內容的建立區塊。 請依本頁瞭解詳細資訊。
 uuid: ab680836-133b-45b9-913c-e721b7e9fc04
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 1%
 
 ---
 
@@ -27,15 +30,15 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 想到線上雜誌，主要內容包括文章、廣告和封面。 可在AEM中建立三種主要的Mobile On-Demand內容：
 
-* **文章**:文字與圖稿一起傳達資訊
-* **** 橫幅：通常是圖形促銷連結
-* **** 系列：代表定義完 *善的貯體* ，其中填入適合封面主題的文章或橫幅等內容
+* **文章**: 文字與圖稿一起傳達資訊
+* **橫幅：** 通常是圖形促銷連結
+* **系列：** 代表定義完 *善的貯體* ，其中填入適合封面主題的文章或橫幅等內容
 
-* **** 共用資源：允許在文章間重複使用或共用共用的共用項目
+* **共用資源：** 允許在文章間重複使用或共用共用的共用項目
 
 >[!NOTE]
 >
->若要進一步瞭解AEM mobile應用程式的設計考量，請參閱「線上說 [明」中的「AEM mobile應用程式的設計考量](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 」。
+>若要進一步瞭解AEM Mobile應用程式的設計考量，請參閱「線上說 [明」中的「AEM Mobile應用程式的設計考量](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 」。
 
 ## 建立和管理內容 {#creating-and-managing-content}
 
