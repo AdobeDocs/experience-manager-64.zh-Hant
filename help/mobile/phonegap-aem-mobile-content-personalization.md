@@ -1,8 +1,8 @@
 ---
-title: AEM mobile內容個人化
-seo-title: AEM mobile內容個人化
-description: '請依照本頁瞭解AEM mobile內容個人化功能，這項功能可讓AEM作者運用Adobe Target個人化行動應用程式內容。 '
-seo-description: '請依照本頁瞭解AEM mobile內容個人化功能，這項功能可讓AEM作者運用Adobe Target個人化行動應用程式內容。 '
+title: AEM Mobile內容個人化
+seo-title: AEM Mobile內容個人化
+description: '請依照本頁瞭解AEM Mobile內容個人化功能，這項功能可讓AEM作者運用Adobe Target個人化行動應用程式內容。 '
+seo-description: '請依照本頁瞭解AEM Mobile內容個人化功能，這項功能可讓AEM作者運用Adobe Target個人化行動應用程式內容。 '
 uuid: 9078edd1-8399-485f-8a63-a07e766f7ef9
 contentOwner: User
 content-type: reference
@@ -11,11 +11,14 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c9c818dc-c5c4-4a96-94fe-9dc9fe75705b
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '2701'
+ht-degree: 0%
 
 ---
 
 
-# AEM mobile內容個人化{#aem-mobile-content-personalization}
+# AEM Mobile內容個人化{#aem-mobile-content-personalization}
 
 >[!NOTE]
 >
@@ -25,23 +28,23 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 >
 >本檔案是「AEM Mobile快速入門手冊」( [](/help/mobile/getting-started-aem-mobile.md) AEM Mobile參考的建議起點)的一部分。
 
-AEM mobile內容個人化功能可讓 [AEM作者運用](#author) Adobe Target [，個人化行動應用程式內容](https://www.adobe.com/ca/marketing-cloud/testing-targeting.html)。 這可讓針對行動應用程式使用者傳遞目標選件。 Adobe Experience Manager mobile提供建立、鎖定和傳遞內容的能力，為使用者提供符合其個人喜好的內容。
+AEM Mobile內容個人化功能可讓 [AEM作者運用](#author) Adobe Target [，個人化行動應用程式內容](https://www.adobe.com/ca/marketing-cloud/testing-targeting.html)。 這可讓針對行動應用程式使用者傳遞目標選件。 Adobe Experience Manager Mobile提供建立、鎖定和傳遞內容的能力，為使用者提供符合其個人喜好的內容。
 
 和AEM中的常見情況一樣，為了讓作者開始建立此內容，管理員和開發人員必須先準備環境。
 
-[AEM管理員](#administrator) 必須建立AEM mobile與Adobe Target cloud服務之間的連線。
+[AEM管理員](#administrator) 必須建立AEM Mobile與Adobe Target Cloud服務之間的連線。
 
 同時，AEM Mobile開發人 [員需要修改其現有的指令碼](#developer) ，以利製作目標明確的內容。
 
 ## 針對管理員 {#for-administrators}
 
-在內容作者開始為行動應用程式產生目標內容之前，需要先整合許多步驟：您可以為使用者和群組取得適當的權限集、建立雲端服務、設定活動的應用程式，最後產生內容。
+在內容作者開始為行動應用程式產生目標內容之前，需要先整合許多步驟： 您可以為使用者和群組取得適當的權限集、建立雲端服務、設定活動的應用程式，最後產生內容。
 
 本文將引導您完成設定 [AEM Mobile Hybrid Reference Application以進行定位的程式](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 。
 
 未來的假設是，AEM Mobile Hybrid Reference Application已成功部署並可透過AEM Mobile儀表板存取。
 
-作者必須先使用Adobe Target cloud服務設定您的AEM實 [例，才能在應用程式中產生目標內容。](/help/mobile/aem-mobile-configuring-cloud-service.md)
+作者必須先使用Adobe Target Cloud服務設定您的AEM實 [例，才能在應用程式中產生目標內容。](/help/mobile/aem-mobile-configuring-cloud-service.md)
 
 ### 權限 {#permissions}
 
@@ -55,7 +58,7 @@ AEM mobile內容個人化功能可讓 [AEM作者運用](#author) Adobe Target [�
 
 ### 雲端服務 {#cloud-services}
 
-若要讓針對行動應用程式的目標內容運作，需要設定兩項服務：Adobe Target服務和Adobe Mobile services服務。 Adobe Target服務提供處理用戶端要求及傳回個人化內容的引擎。 Adobe Mobile services服務透過ADBMobileConfig.json檔案（由AMS Cordova增效模組使用）提供Adobe服務與行動應用程式之間的連線。 從AEM Mobile Dashboard，您可以新增兩個服務來設定您的應用程式。
+若要讓針對行動應用程式的目標內容運作，需要設定兩項服務： Adobe Target服務和Adobe Mobile Services服務。 Adobe Target服務提供處理用戶端要求及傳回個人化內容的引擎。 Adobe Mobile Services服務透過ADBMobileConfig.json檔案（由AMS Cordova增效模組使用）提供Adobe服務與行動應用程式之間的連線。 從AEM Mobile Dashboard，您可以新增兩個服務來設定您的應用程式。
 
 從AEM Mobile Dashboard找到「管理雲端服務」，然後按一下+按鈕。
 
@@ -87,13 +90,13 @@ AMS服務也必須將Adobe Mobile Services(AMS)帳戶連結至應用程式，提
 
 現在用戶端程式碼已與行動應用程式關聯，當透過Adobe Mobile Dashboard設定AMS雲端服務時，服務設定的設定將會透過ADBMobileConfig.json檔案傳送。
 
-### Adobe Mobile Service cloud服務 {#adobe-mobile-service-cloud-service}
+### Adobe Mobile Service Cloud服務 {#adobe-mobile-service-cloud-service}
 
 現在已設定AMS，是時候在Adobe Mobile Dashboard中建立行動應用程式的關聯了。 從AEM Mobile Dashboard找到「管理雲端服務」，然後按一下+按鈕。
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-選取Adobe Mobile services卡，然後按一下「下一步」。
+選取Adobe Mobile Services卡，然後按一下「下一步」。
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
@@ -105,11 +108,11 @@ AMS服務也必須將Adobe Mobile Services(AMS)帳戶連結至應用程式，提
 
 ## 針對作者 {#for-authors}
 
-**** 先決條件：如上所述，管理員必須先設定Adobe Target服務的連線，作者才能產生新的目標內容。
+**先決條件：** 如上所述，管理員必須先設定Adobe Target服務的連線，作者才能產生新的目標內容。
 
 一旦管理員設定了兩個雲端服務，而開發人員已設定了mobileapporfers處理常式，內容作者現在就可以開始產生目標體驗。
 
-在AEM mobile應用程式中製作目標內容時，會遵循類似的程式來製作AEM Sites:
+在AEM Mobile應用程式中製作目標內容時，會遵循類似的程式來製作AEM Sites:
 
 請參閱此處以取得有關在AEM中編寫 [目標內容的完整概觀](/help/sites-authoring/personalization.md)
 
@@ -200,7 +203,7 @@ cq.apps.targeting **** 類別會覆寫預設的cq/personalization/component/targ
 
 ### 內容同步處理常式 {#content-sync-handlers}
 
-當內容作者完成行動應用程式的內容建立後，下一步是下載來源並建立應用程式，或儲存要發佈的內容。 開發人員需要執行許多步驟，才能做到這一點。 為協助轉換內容，AEM mobile運用內容同步處理常式來轉換和封裝內容。 個人化使用案例已引入新的內容同步處理常式，可轉譯目標內容。 「mobileappoffers」處理常式瞭解如何轉譯由內容作者建立的相關目標選件。 Mobileapporfers處理常式會延伸抽象頁面更新處理常式，因此許多屬性都類似。 mobileapporfers處理常式的詳細資料包含下列屬性。
+當內容作者完成行動應用程式的內容建立後，下一步是下載來源並建立應用程式，或儲存要發佈的內容。 開發人員需要執行許多步驟，才能做到這一點。 為協助轉換內容，AEM Mobile運用內容同步處理常式來轉換和封裝內容。 個人化使用案例已引入新的內容同步處理常式，可轉譯目標內容。 「mobileappoffers」處理常式瞭解如何轉譯由內容作者建立的相關目標選件。 Mobileapporfers處理常式會延伸抽象頁面更新處理常式，因此許多屬性都類似。 mobileapporfers處理常式的詳細資料包含下列屬性。
 
 <table>
  <tbody>
@@ -241,12 +244,12 @@ cq.apps.targeting **** 類別會覆寫預設的cq/personalization/component/targ
   </tr>
   <tr>
    <td>includeImages</td>
-   <td>true| false</td>
+   <td>true | false</td>
    <td>如果為true，則會轉譯選件中包含的任何影像。 如果略過假影像。</td>
   </tr>
   <tr>
    <td>includeVideos</td>
-   <td>true| false</td>
+   <td>true | false</td>
    <td>如果為真，則會呈現選件中包含的任何影片。 如果略過假影片。</td>
   </tr>
   <tr>
@@ -256,7 +259,7 @@ cq.apps.targeting **** 類別會覆寫預設的cq/personalization/component/targ
   </tr>
   <tr>
    <td>深入</td>
-   <td>true| false</td>
+   <td>true | false</td>
    <td>如果true以遞歸方式呈現所有子頁面，如果false則不會遞歸。 </td>
   </tr>
   <tr>
@@ -273,13 +276,13 @@ cq.apps.targeting **** 類別會覆寫預設的cq/personalization/component/targ
 
 ### Target元件 {#target-component}
 
-為了協助您針對行動應用程式呈現內容，AEM mobile使用mobileapps/components/target元件。 行動目標元件會延伸cq/personalization/components/target元件，並覆寫engine_tnt.jsp指令碼。 借由覆寫engine_tnt.jsp,AEM mobile可控制行動應用程式使用案例的產生HTML。 對於內容作者所定位的每個元件，都會由engine_tnt.jsp建立相關的mbox。
+為了協助您針對行動應用程式呈現內容，AEM Mobile使用mobileapps/components/target元件。 行動目標元件會延伸cq/personalization/components/target元件，並覆寫engine_tnt.jsp指令碼。 借由覆寫engine_tnt.jsp,AEM Mobile可控制行動應用程式使用案例的產生HTML。 對於內容作者所定位的每個元件，都會由engine_tnt.jsp建立相關的mbox。
 
 針對每個mbox新增 **cq定位屬性** ，讓應用程式開發人員可編寫自訂程式碼，以便使用和使用。 [AEM Mobile Hybrid Reference App](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) （AEM Mobile混合參考應用程式）有一個使用cq-targeting屬性的Angular指令範例。 內容取代的時機和方式，完全由行動應用程式開發人員決定。 Mobile SDK會透過AEM /etc/clientlibs/mobileapps/js/mobileapps.js提供，提供API來呼叫Adobe Targeting服務。 應用程式開發人員必鬚根據應用程式的設計來指定何時應進行該呼叫。
 
 ## 下一步是什麼？ {#what-s-next}
 
-1. [開始我的AEM mobile應用程式體驗](/help/mobile/starting-aem-phonegap-app.md)
+1. [開始我的AEM Mobile應用程式體驗](/help/mobile/starting-aem-phonegap-app.md)
 1. [管理我的應用程式內容](/help/mobile/phonegap-manage-app-content.md)
 1. [建立我的應用程式](/help/mobile/building-app-mobile-phonegap.md)
 1. [使用Adobe Mobile Analytics追蹤我的應用程式效能](/help/mobile/phonegap-intro-to-app-analytics.md)
