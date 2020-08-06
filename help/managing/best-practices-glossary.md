@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a063d1ba-712a-49e1-8844-75bfa6e98977
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '7050'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +53,7 @@ Adobe安 [全性檢查清單](/help/sites-administering/security-checklist.md) (
 
 Adobe支援入口網站可讓實作合作夥伴和客戶將AEM實作設定為支援入口網站中的專案。
 
-可以註冊細節；例如，關於實作的技術和版本。 這可讓客戶和Adobe之間透明。
+可以註冊細節； 例如，關於實作的技術和版本。 這可讓客戶和Adobe之間透明。
 
 ## AEM管理員訓練 {#aem-administrator-training}
 
@@ -62,19 +65,19 @@ Adobe支援入口網站可讓實作合作夥伴和客戶將AEM實作設定為支
 
 ## AEM認證測驗 {#aem-certification-exam}
 
-請確定已註冊適當人員，以參加相關的認 [證測驗](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
+請確定已註冊適當人員，以參加相關的認 [證測驗](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)。
 
 ## AEM認證 {#aem-certified}
 
-確保適當人物通過相關認證 [測驗](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
+確保適當人物通過相關認證 [測驗](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)。
 
 ## AEM技術訓練 {#aem-technical-training}
 
-為適當人物提供技術培訓；例如，開發人員、建築師、工程師和商業從業者。
+為適當人物提供技術培訓； 例如，開發人員、建築師、工程師和商業從業者。
 
 ## 關於定義為項目目標的KPI的協定 {#agreement-on-kpis-defined-as-goals-for-the-project}
 
-關鍵績效指標(KPI)可協助組織定義並衡量邁向組織目標的進度。 一旦一個組織分析其使命並確定其目標，就需要衡量實現這些目標的進展。 KPI提供測量機制。
+關鍵績效指標(KPI)可協助組織定義並衡量邁向組織目標的進度。 一旦一個組織分析其任務並確定其目標，就需要衡量實現這些目標的進展。 KPI提供測量機制。
 
 ## 協調業務與績效KPI {#align-business-and-performance-kpis}
 
@@ -153,7 +156,7 @@ Adobe支援入口網站可讓實作合作夥伴和客戶將AEM實作設定為支
 
 ## 自動化策略 {#automation-strategy}
 
-部署的自動化可確保部署更快速且一致。 《自動化戰略》概述了任何此類自動化機制的配置；包括：
+部署的自動化可確保部署更快速且一致。 《自動化戰略》概述了任何此類自動化機制的配置； 包括：
 
 * 頻率
 * 工具
@@ -206,7 +209,7 @@ Adobe支援入口網站可讓實作合作夥伴和客戶將AEM實作設定為支
 
 業務需求文檔(BRD)詳細說明了項目的業務解決方案，為客戶的業務需求和期望提供了明確的規格。 BRD還區分了商業解決方案和技術解決方案。
 
-在審查商業解決方案時，BRD應該回答以下問題：「企業想做什麼？」
+在審查商業解決方案時，BRD應該回答以下問題： 「企業想做什麼？」
 
 ## 針對已識別並符合ROI和KPI預期的解決方案或架構進行任何必要調整後，企業可以簽署 {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -339,7 +342,7 @@ Adobe支援入口網站可讓實作合作夥伴和客戶將AEM實作設定為支
 
 * 通過風險評估的要求。
 * 透過滲透測試的要求。
-* 任何特定安全要求；例如，逸出所有輸入欄位、加密使用(SSL)、憑證，以及驗證和作業。
+* 任何特定安全要求； 例如，逸出所有輸入欄位、加密使用(SSL)、憑證，以及驗證和作業。
 
 ## 客戶規格指南 {#customer-specification-guidelines}
 
@@ -354,7 +357,7 @@ Adobe支援入口網站可讓實作合作夥伴和客戶將AEM實作設定為支
 所套用的任何自訂和／或套用的修補程式都必須記錄在案，因為它們可能會影響未來的升級：
 
 * AEM可大量自訂，以符合商業需求。 任何可能影響升級的自訂項目都必須完整記錄。 例如，對AEM的使用者介面(UI)所做的任何重大變更。
-* 目前解決方案所需的任何更新都必須完整記錄；這些可包括：
+* 目前解決方案所需的任何更新都必須完整記錄； 這些可包括：
 
    * 累積修補程式套件(CFP)
    * 服務包(SP)
@@ -556,7 +559,7 @@ Adobe支援入口網站可讓實作合作夥伴和客戶將AEM實作設定為支
 
 ## 歷史績效和歷史績效KPI {#historical-performance-and-historical-performance-kpis}
 
-您需要從舊式系統收集並記錄績效統計資料和績效KPI。 然後，這些參數將用作參考點，並用於對新解決方案進行基準測試。
+您需要從舊式系統收集並記錄績效統計資料和績效KPI。 然後，將它們用作參考點並作為新解決方案的基準。
 
 ## 確定關鍵解決方案／功能 {#identify-critical-key-solutions-functionalities}
 
@@ -669,7 +672,7 @@ URL處理概念的實作。
 
 ## 要使用的開發工具清單 {#list-of-development-tools-to-be-used}
 
-實施中將使用的工具概要；工具應包括：
+實施中將使用的工具概要； 工具應包括：
 
 * 檔案工具
 * 問題追蹤工具
@@ -700,7 +703,7 @@ URL處理概念的實作。
 
 ## 遷移計畫 {#migration-plan}
 
-記錄移轉；包括
+記錄移轉； 包括
 
 * 移轉時間表
 * 內容維護計畫，根據遷移策略
@@ -766,7 +769,7 @@ URL處理概念的實作。
 
 ## 監控——系統 {#monitoring-system}
 
-監控整個系統；例如：
+監控整個系統； 例如：
 
 * 可用性
 * 平均效能
@@ -779,7 +782,7 @@ URL處理概念的實作。
 
 ## 監控概念 {#monitoring-concept}
 
-將監控概念應用到您的解決方案；合併：
+將監控概念應用到您的解決方案； 合併：
 
 * AEM標準監控
 * 系統監控
@@ -929,7 +932,7 @@ URL處理概念的實作。
 * 期限
 * 計畫的工作
 
-它涵蓋了交付項目必須取得的成果以及必須完成的工作
+它涵蓋了交付項目所必須達到的目標以及必須完成的工作
 
 ## 已定義序列中的項目狀態報告 {#project-status-reports-within-a-defined-cadence}
 
@@ -974,7 +977,7 @@ AEM維護多個版本的資產和內容。 清除規則的設計和配置是定�
 
 ## 相關合約條款 {#relevant-contract-terms}
 
-您應強調與項目實施相關的特定合約條款；例如合約里程碑、發票期間或員工要求。
+您應強調與項目實施相關的特定合約條款； 例如合約里程碑、發票期間或員工要求。
 
 ## 報告節奏 {#reporting-cadence}
 
@@ -996,7 +999,7 @@ tar檔案不會覆寫資料，即使僅更新現有資料，磁碟使用量也�
 
 ## 支援上線的可用資源 {#resources-available-to-support-go-live}
 
-確保所有上線所需的角色都配備了人員，並且可用。
+確保所有上線所需的角色都配備了人員，而且可用。
 
 ## 風險評估 {#risk-assessment}
 
@@ -1068,7 +1071,7 @@ tar檔案不會覆寫資料，即使僅更新現有資料，磁碟使用量也�
 
 ## 列出和評估的安全性問題 {#security-issues-listed-and-assessed}
 
-列出並評估解決方案的所有安全問題；包括工作量估計。
+列出並評估解決方案的所有安全問題； 包括工作量估計。
 
 ## 企業利益相關方的安全簽名 {#security-sign-off-from-business-stakeholders}
 
@@ -1094,7 +1097,7 @@ tar檔案不會覆寫資料，即使僅更新現有資料，磁碟使用量也�
 
 ## 軟體體系結構策略 {#software-architecture-strategy}
 
-軟體架構的高層次策略；包括服務、servlet、框架和其他實施決策。
+軟體架構的高層次策略； 包括服務、servlet、框架和其他實施決策。
 
 ## 建立解決方案審查委員會並滿足客戶需求 {#solution-review-board-established-and-meeting-cadence-set}
 
@@ -1185,7 +1188,7 @@ Quality Lead的部分職責是確保在測試時有資源可支援任何使用�
 
 ## 系統體系結構文檔 {#system-architecture-documentation}
 
-詳細描述系統架構的檔案；包括所有環境的介面、網路位置和整合等資訊。
+詳細描述系統架構的檔案； 包括所有環境的介面、網路位置和整合等資訊。
 
 ## 系統體系結構安全概念 {#system-architecture-security-concept}
 
@@ -1260,7 +1263,7 @@ Quality Lead的部分職責是確保在測試時有資源可支援任何使用�
 
 ## 測試報表 {#test-reports}
 
-詳細列出測試結果的報告；包括：
+詳細列出測試結果的報告； 包括：
 
 * 缺陷
 * 已執行的測試案例狀態
@@ -1281,7 +1284,7 @@ Quality Lead的部分職責是確保在測試時有資源可支援任何使用�
 
 ## 測試概念 {#testing-concept}
 
-測試概念是項目測試的高層次概要；包括QA、UAT、效能、安全性和整合測試。
+測試概念是項目測試的高層次概要； 包括QA、UAT、效能、安全性和整合測試。
 
 ## 測試計畫 {#testing-plans}
 
@@ -1340,7 +1343,7 @@ Quality Lead的部分職責是確保在測試時有資源可支援任何使用�
 
 ## 項目總投入 {#total-project-efforts}
 
-所有努力估計，應當從項目上的每個線索中加以匯總；包括開銷、開發、系統工程、建築和測試工作。
+所有努力估計，應當從項目上的每個線索中加以匯總； 包括開銷、開發、系統工程、建築和測試工作。
 
 如果協定中包括支助級別，也應包括支助和業務工作。
 
