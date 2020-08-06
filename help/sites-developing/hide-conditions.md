@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '648'
+ht-degree: 1%
 
 ---
 
@@ -53,9 +56,9 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 * 值為只讀。
 * 函式（如有需要）應限於服務提供的指定集。
 
-## 例如 {#example}
+## 範例 {#example}
 
-您可在AEM中找到隱藏條件的範例，尤其 [是核心元](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) 件。 例如，請考慮列 [表核心元件](https://helpx.adobe.com/experience-manager/core-components/using/list.html)。
+您可在AEM中找到隱藏條件的範例，尤其 [是核心元](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 件。 例如，請考慮列 [表核心元件](https://helpx.adobe.com/experience-manager/core-components/using/list.html)。
 
 [使用範本編輯器](/help/sites-authoring/templates.md)，範本作者可在設計對話方塊中定義頁面作者可使用的清單元件選項。 例如是否允許清單為靜態清單、子頁清單、標籤頁清單等。 可以啟用或停用。
 
