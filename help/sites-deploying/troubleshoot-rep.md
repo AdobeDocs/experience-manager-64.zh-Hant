@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
 
 **如果一個代理隊列或幾個代理隊列被卡住：**
 
-1. 佇列是否顯示已 **封鎖** 狀態？ 如果是，則發佈執行個體是否未執行或完全沒有回應？ 檢查發佈實例以查看其中有什麼問題(例如，檢查日誌，並查看是否存在OutOfMemory錯誤或其他問題。 然後，如果執行緒轉儲通常很慢，請提取線程轉儲並分析它們。
+1. 佇列是否顯示已 **封鎖** 狀態？ 如果是，則發佈執行個體是否未執行或完全沒有回應？ 檢查發佈實例以查看其中有什麼問題(例如，檢查日誌，並查看是否存在OutOfMemory錯誤或其他問題。 然後，如果執行緒轉儲通常很慢，則進行執行緒轉儲並分析。
 1. 佇列狀態是否顯示「佇 **列為作用中- # pending**?」 基本上，復製作業可能會卡在套接字讀取中，等待pubilsh實例或調度程式進行響應。 這可能表示發佈實例或調度程式處於高負載狀態或卡在鎖中。 從作者處取出執行緒轉儲，並在此案例中發佈。
 
    * 線上程轉儲分析器中從author開啟線程轉儲，檢查它是否顯示複製代理的sling事件作業卡在套接字讀取中。
@@ -51,14 +54,14 @@ source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
 
    1. 前往https://&lt;host>:&lt;port>/crx，並以管理員使用者身分登入。 在CQ5.5中，請改用https://&lt;host>:&lt;port>/crx/explorer。
    1. 按一下「內容總管」。
-   1. 在「內容總管」視窗中，按一下視窗右上方的放大鏡按鈕，搜尋對話方塊就會彈出。
+   1. 在「內容總管」視窗中，按一下視窗右上方的放大鏡按鈕，就會出現搜尋對話方塊。
    1. 選擇「XPath」單選按鈕。
    1. 在「查詢」方塊中，輸入此查詢/jcr:root/var/eventing/jobs//element(&amp;ast;,slingevent:Job)順序，由@slingevent:created
    1. 按一下「搜尋」
    1. 在結果中，排名最前的項目是最新的sling事件工作。 按一下每個複製，查找與隊列頂部顯示的副本匹配的停滯複製。
 
 1. sling事件架構工作佇列可能有問題。 嘗試在/system/console中重新啟動org.apache.sling.event套件。
-1. 可能是工作處理完全關閉。 您可以在Felix Console的Sling Eventing tab下檢查此項目。 檢查是否顯示- Apache Sling Eventing(JOB PROCESSING IS DISABLED!)
+1. 可能是工作處理完全關閉。 您可以在Felix Console的Sling Eventing Tab下檢查此項目。 檢查是否顯示- Apache Sling Eventing(JOB PROCESSING IS DISABLED!)
 
    * 如果是，請在Felix Console的「設定」標籤下檢查Apache Sling Job Event Handler。 可能是未勾選「作業處理已啟用」核取方塊。 如果已勾選，但仍顯示「作業處理已停用」，則請檢查/apps/system/config下是否有任何覆蓋正在停用作業處理。 嘗試為jobmanager.enabled建立一個osgi:config節點，將布爾值設定為true，然後重新檢查啟動是否開始以及隊列中沒有更多作業。
 
@@ -75,13 +78,13 @@ source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
 1. 尋找Apache Sling Logging Logger工廠，並按一下工廠組態右側的 **+** button建立例項。 This will create a new logging logger.
 1. 將配置設定為如下：
 
-   * 記錄層級：除錯
+   * 記錄層級： 除錯
    * 日誌檔案路徑： *（CQ5.4和5.3）* ../logs/replication.log *(CQ5.5)* logs/replication.log
-   * 類別：com.day.cq.replication
+   * 類別： com.day.cq.replication
 
 1. 如果您懷疑問題與sling eventing/jobs有任何關聯，則您也可以將此java套件新增至categories:org.apache.sling.event
 
-### 暫停複製代理隊列 {#pausing-replication-agent-queue}
+### 暫停複製代理隊列  {#pausing-replication-agent-queue}
 
 有時，可以暫停複製隊列以減少作者系統上的負載，而不禁用它。 目前，只有通過臨時配置無效埠的攻擊才能做到這一點。 從5.4開始，您可以在複製代理隊列中看到暫停按鈕，它有一些限制
 
