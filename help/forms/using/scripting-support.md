@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '3911'
+ht-degree: 6%
 
 ---
 
@@ -1304,7 +1307,7 @@ FormCalc是XFA專用的語言，用於建立e-form中心邏輯和計算根。 Fo
   </tr> 
   <tr> 
    <td>app.activeDocs</td> 
-   <td>包含每個活動文檔的Doc對象的陣列。 如果沒有作用中的檔案，activeDocs將不會傳回任何內容；也就是說，它在核心JavaScript中的行為與d = new Array(0)相同。</td> 
+   <td>包含每個活動文檔的Doc對象的陣列。 如果沒有作用中的檔案，activeDocs將不會傳回任何內容； 也就是說，它在核心JavaScript中的行為與d = new Array(0)相同。</td> 
    <td>傳回HTMl5表單的空白陣列。</td> 
   </tr> 
   <tr> 
