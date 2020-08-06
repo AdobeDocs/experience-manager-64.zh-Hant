@@ -11,6 +11,9 @@ topic-tags: upgrading
 discoiquuid: 5ca8dd7a-4efd-493e-8022-d2f10903b0a2
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 
 ## 自訂架構 {#customization-framework}
 
-### 體系結構（功能／基礎架構／內容／應用程式） {#architecture-functional-infrastructure-content-application}
+### 體系結構（功能／基礎架構／內容／應用程式）  {#architecture-functional-infrastructure-content-application}
 
 「自訂架構」功能可協助減少不方便升級的程式碼（例如APIS）或內容（例如覆蓋）不可擴充區域的違規。
 
-定制框架有兩個元件：「 **API Surface** 」和「內 **容分類」**。
+定制框架有兩個元件： 「 **API Surface** 」和「內 **容分類」**。
 
 #### API Surface {#api-surface}
 
