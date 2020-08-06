@@ -4,6 +4,9 @@ description: 瞭解AEM Assets中的資產中繼資料，以及編輯資產中繼
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '439'
+ht-degree: 7%
 
 ---
 
@@ -23,6 +26,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
    * 從「資產」UI中，選取資產，然後按一下／點選工具列 **[!UICONTROL 中的「檢視屬性]** 」圖示。
    * 從資產縮圖中，選取「檢視 **[!UICONTROL 屬性]** 」快速動作。
    * 在資產頁面中，按一下／點選工具 **[!UICONTROL 列中的「檢視]**![屬性」圖示資訊圖示](assets/do-not-localize/info_icon.png) 。
+
    資產頁面會顯示資產的所有中繼資料。 此中繼資料在上傳（收錄）至AEM Assets時會自動擷取。
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
