@@ -10,6 +10,9 @@ topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1581'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 如果您的客戶提供的體驗並不吸引人，他們可能會放棄表單。 雖然這令客戶感到挫折，但也可以提升組織的支援數量和成本。 識別並提供合適的客戶體驗以提高轉化率，既重要，也極具挑戰性。 Adobe Experience Manager Forms是解決此問題的關鍵。
 
-AEM Forms與Adobe Marketing cloud解決方案Adobe Target整合，跨多個數位通道提供個人化且吸引人的客戶體驗。 Target的主要功能之一是A/B測試，可讓您快速設定並行A/B測試、向目標使用者呈現相關內容，並識別可提升轉換率的體驗。
+AEM Forms與Adobe Marketing Cloud解決方案Adobe Target整合，跨多個數位通道提供個人化且吸引人的客戶體驗。 Target的主要功能之一是A/B測試，可讓您快速設定並行A/B測試、向目標使用者呈現相關內容，並識別可提升轉換率的體驗。
 
 有了AEM Forms，您可以即時在最適化表單上設定並執行A/B測試。 它還提供現成可用和可自訂的報告功能，以視覺化您表單體驗的即時效能，並找出最大化使用者參與和轉化的功能。
 
@@ -30,9 +33,9 @@ AEM Forms與Adobe Marketing cloud解決方案Adobe Target整合，跨多個數�
 
 ### 設定Target {#set-up-target}
 
-若要將AEM與Target整合，請確定您擁有有效的Adobe Target帳戶。 當您向Adobe Target註冊時，會收到用戶端代碼。 您需要用戶端代碼、與Target帳戶關聯的電子郵件，以及密碼，才能將AEM與Target連接。
+若要將AEM與Target整合，請確定您有有效的Adobe Target帳戶。 當您向Adobe Target註冊時，會收到用戶端代碼。 您需要用戶端代碼、與Target帳戶關聯的電子郵件，以及密碼，才能將AEM與Target連接。
 
-「用戶端代碼」可識別Adobe target客戶帳戶，並在呼叫Adobe target伺服器時用作URL中的子網域。 繼續之前，請確定您的認證允許您登入https://testandtarget.omniture.com/ [](https://testandtarget.omniture.com/)。
+「用戶端代碼」可識別Adobe Target客戶帳戶，並在呼叫Adobe Target伺服器時用作URL中的子網域。 繼續之前，請確定您的認證允許您登入https://testandtarget.omniture.com/ [](https://testandtarget.omniture.com/)。
 
 ### 將Target整合在AEM Forms中 {#integrate-target-in-aem-forms}
 
@@ -44,7 +47,7 @@ AEM Forms與Adobe Marketing cloud解決方案Adobe Target整合，跨多個數�
    如果您是第一次設定目標，請按一下「立 **即設定**」。
 
 1. 在「建立配置」對話框中，指定 **「標題** 」並可 **選地指定配置的「名稱** 」。
-1. 按一下 **建立**。「編輯元件」(Edit component)對話框隨即開啟。
+1. 按一下&#x200B;**建立**。「編輯元件」(Edit component)對話框隨即開啟。
 1. 指定您的Target帳戶詳細資訊，例如用戶端代碼、電子郵件和密碼。
 1. 從「 **API類型** 」下拉式清單中選擇「余留」。
 1. 按一 **下「連線至Adobe Target** 」，以初始化與Target的連線。 如果連接成功，則顯示「Connection successful（連接成功）」消息。 按一 **下訊息上** 「確定」，然後 **在對話方塊上** 按「確定」。 已設定Target帳戶。
@@ -64,7 +67,7 @@ AEM Forms與Adobe Marketing cloud解決方案Adobe Target整合，跨多個數�
 
 `parameter -Dabtesting.enabled=true java -Xmx2048m -XX:MaxPermSize=512M -jar -Dabtesting.enabled=true`
 
-如果AEM實例在JBoss上運行，從完善的交鑰匙中以服務的形式啟動，則在 `jboss\bin\standalone.conf.bat` 檔案中，在以下條目中添加-Dabtesting.enabled=true參數：
+如果AEM實例在JBoss上運行，從完善的交鑰匙開始作為服務，在 `jboss\bin\standalone.conf.bat` 檔案中，在以下條目中添加-Dabtesting.enabled=true參數：
 
 `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
@@ -102,7 +105,7 @@ AEM可讓您建立對象，並將它用於A/B測試。 您在AEM中建立的觀�
 1. 按一下工 **具欄中** 的「選擇工具」(Select tool)，然後選擇最適化表單。
 1. 按一 **下工具** 列中的「更多」，然後 **選取「設定A/B測試」**。 「設定A/B測試」頁面隨即開啟。
 
-   [ 適應 ![性表單的A/B測試設定頁面](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
+   [ ![最適化表單的A/B測試設定頁面](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. 指定 **A/B測試的活動名稱** 。
 
@@ -110,7 +113,7 @@ AEM可讓您建立對象，並將它用於A/B測試。 您在AEM中建立的觀�
 
 1. 在體驗 **A和** B的「體驗分發」欄位中，指定以百分比表示的分發，以決定體驗在總觀眾中的分發。 例如，若您分別為體驗A和B指定40、60，則體驗A將提供給40%的觀眾，其餘60%的觀眾將看到體驗B。
 1. 按一 **下設定**。 出現對話方塊以確認A/B測試的建立。
-1. 按一 **下「編輯體驗B** 」，在編輯模式中開啟最適化表單。 修改表單以建立不同於預設體驗A的體驗。「體驗B」中允許的可能變化包括：
+1. 按一 **下「編輯體驗B** 」，在編輯模式中開啟最適化表單。 修改表單以建立不同於預設體驗A的體驗。 「體驗B」中允許的可能變化包括：
 
    * CSS或樣式
    * 不同面板或相同面板中欄位的順序
@@ -119,7 +122,7 @@ AEM可讓您建立對象，並將它用於A/B測試。 您在AEM中建立的觀�
    * 欄位的說明、標籤和說明文字
    * 不影響或中斷提交流程的指令碼
    * 驗證（客戶端和伺服器端）
-   * 體驗主題B.（您可以為體驗B選擇替代主題）
+   * 體驗主題B. （您可以為體驗B選擇替代主題）
 
 1. 前往「表單與檔案」使用者介面，選取最適化表單，按一 **下「更多**」，然後 **選取「開始A/B測試」**。
 
