@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 3%
 
 ---
 
@@ -57,11 +60,11 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 1. 按一下 **新建……**
 
-   您可以指定 **要建立的**「標題 **」** 、「名稱」和體驗類型；在本例中，請使用電子報。
+   您可以指定 **要建立的**「標題 **」** 、「名稱」和體驗類型； 在本例中，請使用電子報。
 
    ![mcm_createnewsletter](assets/mcm_createnewsletter.png)
 
-1. 按一下 **建立**。
+1. 按一下&#x200B;**建立**。
 
 1. 新對話方塊將立即開啟。 您可以在此處輸入電子報的屬性。
 
@@ -96,7 +99,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **預設收件者清單**
 
       應接收電子報的預設清單。
-   **這些內容可在稍後的階段從「屬**&#x200B;性……」對話框。
+   這些內容可在稍後的階段從「屬 **性……」** 對話框。
 
 1. 按一 **下「確定** 」以儲存。
 
@@ -107,7 +110,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 1. 在MCM中，按一下「促 **銷活動** 」標籤，然後按兩下您要新增內容或編輯的電子報。 電子報開啟。
 
 1. 如果元件不可見，請前往「設計」檢視並啟用必要的元件（例如，電子報元件），然後再開始編輯。
-1. 視需要輸入任何新文字、影像或其他元件。 在Geometrixx範例中，有4個元件可供使用：文字、影像、標題和2欄。 根據您的設定方式，您的電子報可能會有更多或更少的元件。
+1. 視需要輸入任何新文字、影像或其他元件。 在Geometrixx範例中，有4個元件可供使用： 文字、影像、標題和2欄。 根據您的設定方式，您的電子報可能會有更多或更少的元件。
 
    >[!NOTE]
    >
@@ -192,7 +195,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    1. 輸入 **寄件者** (From)電子郵件地址
    1. 如有必 **要** ，請修改電子郵件的主旨。
    1. 從下拉 **式清單中選取「預設收件者清單** 」。
-   1. 按一下 **確定**。
+   1. 按一下&#x200B;**「確定」**。
+
    當您測試或傳送電子報時，收件者將會收到電子郵件，內含指定的電子郵件地址和主旨。
 
 ## 飛行測試電子報 {#flight-testing-newsletters}
@@ -267,7 +271,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    >[!NOTE]
    >
-   >在傳送之前，請務必自訂電子報的主旨並透過自訂其設定來寄送 [電子郵件地址](#customizing-newsletter-settings)。 如果您從清單中傳送電子報，則無法測試電子報；如果您 [從電子報傳送](#flight-testing-newsletters) ，就可以進行飛行測試。
+   >在傳送之前，請務必自訂電子報的主旨並透過自訂其設定來寄送 [電子郵件地址](#customizing-newsletter-settings)。 如果您從清單中傳送電子報，則無法測試電子報； 如果您 [從電子報傳送](#flight-testing-newsletters) ，就可以進行飛行測試。
 
 1. 選取您要傳送電子報給之潛在客戶清單旁的核取方塊。
 
