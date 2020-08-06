@@ -4,6 +4,9 @@ description: 瞭解如何在AEM中建立翻譯專案。
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '1934'
+ht-degree: 22%
 
 ---
 
@@ -145,7 +148,7 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
    >[!NOTE]
    >
-   >如果您選擇「 **[!UICONTROL Add to existing translation project]** 」（添加到現有翻譯項目）選項，則只有在項目設定與現有項目設定完全匹配時，才會將翻譯項目添加到現有項目。 否則，將建立新項目。
+   >如果您選擇「 **[!UICONTROL Add to existing translation project]** （添加到現有翻譯項目）」選項，則只有在項目設定與現有項目設定完全匹配時，才會將翻譯項目添加到現有項目。 否則，將建立新項目。
 
 1. 從「現 **[!UICONTROL 有翻譯項目]** 」清單中，選擇要添加要翻譯的資產的項目。
 
