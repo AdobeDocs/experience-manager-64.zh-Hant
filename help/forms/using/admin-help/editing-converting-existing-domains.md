@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
 
 >[!NOTE]
 >
->如果要轉換的企業域不包含目錄設定，則會丟失任何LDAP驗證設定。
+>如果要轉換的企業域不包含目錄設定，則任何LDAP驗證設定都將丟失。
 
 ## 將混合網域轉換為企業網域 {#convert-a-hybrid-domain-to-an-enterprise-domain}
 
