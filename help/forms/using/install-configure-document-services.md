@@ -347,7 +347,7 @@ AEM Forms附加元件套件是部署在AEM上的應用程式。 通常，您只�
 
 ### （僅限Windows）禁用錯誤報告服務 {#disable-error-reporting-service}
 
-在Windows Server上使用PDF Generator服務將檔案轉換為PDF時，Windows Server偶爾會報告執行檔遇到問題，需要關閉。 但是，當PDF繼續在背景時，它不會影響其轉換。
+在Windows Server上使用PDF Generator服務將檔案轉換為PDF時，Windows Server偶爾會報告執行檔遇到問題，需要關閉。 但是，它不會影響PDF的轉換，因為它會在背景繼續。
 
 為避免收到錯誤，您可以禁用Windows錯誤報告。 有關禁用錯誤報告的詳細資訊，請參 [閱https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/en-us/library/cc754364.aspx)。
 
