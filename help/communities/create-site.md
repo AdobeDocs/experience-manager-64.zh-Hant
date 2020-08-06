@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1649'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 使用作者例項建立新的社群網站
 
 * 以管理員權限登入
-* 從全域導覽：導 **[!UICONTROL 覽>社群>網站]**
+* 從全域導覽： **[!UICONTROL 導覽>社群>網站]**
 
 Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站點的步驟。 在最後一步中提 `Next`交站 `Back`點之前，可以前進到步驟或上一步。
 
@@ -32,7 +35,7 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 
 ![createcommunitysite](assets/createcommunitysite.png)
 
-### 步驟1:網站範本 {#step-site-template}
+### 步驟1: 網站範本 {#step-site-template}
 
 ![createsitetemplate63](assets/createsitetemplate63.png)
 
@@ -42,23 +45,23 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 
 * **[!UICONTROL 社群網站說明]**: `A site for engaging with the community.`
 
-* **[!UICONTROL 社群網站根]**:(對於預設根，保留空白 `/content/sites`)
+* **[!UICONTROL 社群網站根]**: (對於預設根，保留空白 `/content/sites`)
 
-* **[!UICONTROL 雲端設定]**:（若未指定雲端設定，請留空）提供指定雲端設定的路徑。
-* **[!UICONTROL 社群網站基本語言]**:（單語言不受影響）英文)使用下拉式選單，從 *可用語言* (德文、義大利文、法文、日文、西班牙文、葡萄牙文（巴西）、中文（繁體）和簡體中文)選擇一或多種基本語言。 會針對新增的每種語言建立一個社群網站，並依照多語言網站翻譯內容中所述的最佳實務，存在於相 [同的網站資料夾中](../../help/sites-administering/translation.md)。 每個網站的根頁面將包含一個子頁面，該子頁面由其中一種語言的語言代碼命名，例如英文的&#39;en&#39;或法文的&#39;fr&#39;。
+* **[!UICONTROL 雲端設定]**: （若未指定雲端設定，請留空）提供指定雲端設定的路徑。
+* **[!UICONTROL 社群網站基本語言]**: （單語言不受影響） 英文)使用下拉式選單，從 *可用語言* (德文、義大利文、法文、日文、西班牙文、葡萄牙文（巴西）、中文（繁體）和簡體中文)選擇一或多種基本語言。 會針對新增的每種語言建立一個社群網站，並依照多語言網站翻譯內容中所述的最佳實務，存在於相 [同的網站資料夾中](../../help/sites-administering/translation.md)。 每個網站的根頁面將包含一個子頁面，該子頁面由其中一種語言的語言代碼命名，例如英文的&#39;en&#39;或法文的&#39;fr&#39;。
 
-* **[!UICONTROL 社群網站名稱]**:參與
+* **[!UICONTROL 社群網站名稱]**: 參與
 
    * 在建立網站後不易變更名稱，請再檢查此名稱
    * 初始URL將顯示在「社群網站名稱」下方
    * 若為有效的URL，請附加基本語言代碼+ &quot;。html&quot;
    * *例如*,http://localhost:4502/content/sites/ `engage/en.html`
 
-* **[!UICONTROL 範本]**:向下拉選擇 `Reference Site`
+* **[!UICONTROL 範本]**: 向下拉選擇 `Reference Site`
 
 選擇下 **[!UICONTROL 一步]**
 
-### 步驟2:設計 {#step-design}
+### 步驟2: 設計 {#step-design}
 
 「設計」步驟會在兩節中顯示，以選取主題和品牌橫幅：
 
@@ -76,7 +79,7 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 
 選擇 **[!UICONTROL 下一步]**。
 
-### 步驟3:設定 {#step-settings}
+### 步驟3: 設定 {#step-settings}
 
 在「設定」步驟中，在選取 `Next`之前，請注意有7個區段提供使用者管理、標籤、協調、群組管理、分析、翻譯和啟用等組態的存取權。
 
@@ -145,7 +148,7 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 「轉 [譯」設定](sites-console.md#translation) ，可指定網站的基本語言，以及UGC是否可轉譯，以及是否可轉譯為哪種語言。
 
 * 檢查允 **[!UICONTROL 許機器翻譯]**
-* 預設的機器翻譯服務保留為翻譯選擇的預設語言
+* 預設的機器翻譯服務將預設語言保留為翻譯選定
 * 保留預設翻譯提供程式和配置
 * 不需要全球商店，因為沒有語言復本
 * 選擇 **[!UICONTROL 翻譯整個頁]**
@@ -161,7 +164,7 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 
 選擇 **[!UICONTROL 下一步]**。
 
-### 步驟4:建立社群網站 {#step-create-communities-site}
+### 步驟4: 建立社群網站 {#step-create-communities-site}
 
 選擇 **[!UICONTROL 建立]**。
 
@@ -207,12 +210,13 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 >
 >在作者實例上，從主菜單
 >
->1. 導航至「 **[!UICONTROL 工具」>「操作」>「複製]** 」菜單
+>1. 導覽至「工 **[!UICONTROL 具>操作>複製」功能表]** 。
 >1. 選擇作 **[!UICONTROL 者上的代理]**
 >1. 選擇 **[!UICONTROL 預設代理（發佈）]**
 >1. 在「設定」旁 **[!UICONTROL 邊]** ，選擇「編 **[!UICONTROL 輯」]**
 >1. 在「代理設定」的彈出對話框中，選擇「傳輸」頁籤
 >1. 在URI中，將埠號4503更改為所需的埠號
+
 >
 >
 例如，要使用埠6103: `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
@@ -235,7 +239,7 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 
 除了新社群網站外，還會建立新的使用者群組，其中已針對各種管理功能設定適當的權限。 如需詳細資訊，請 [造訪社群網站的使用者群組](users.md#usergroupsforcommunitysites)。
 
-對於這個新社群網站，若在步驟1中指定網站名稱「參與」，則可從「群組」主控台(全域導覽 [](members.md) :社群、群組):
+對於這個新社群網站，若在步驟1中指定網站名稱「參與」，則可從「群組」主控台(全域導覽 [](members.md) : 社群、群組):
 
 * 社群互動社群經理
 * 社群參與群組管理員
@@ -244,7 +248,7 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 * 社群參與特權成員
 * 社群參與Sitecontentmanager
 
-請注意， [Aaron mcDonald](tutorials.md#demo-users) 是
+請注意， [Aaron McDonald](tutorials.md#demo-users) 是
 
 * 社群互動社群經理
 * 社群參與協調者
@@ -315,13 +319,13 @@ Communities Sites控制台提供了嚮導，可引導用戶完成建立社區站
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
-#### 疑難排解：保存映射時出錯 {#troubleshooting-error-saving-map}
+#### 疑難排解： 保存映射時出錯 {#troubleshooting-error-saving-map}
 
 如果無法保存更改，請確保節點名為 `localhost.4503`，帶有「dot」分隔符，而不帶有 `localhost:4503` 「冒號」分隔符，因為 `localhost`不是有效的命名空間前置詞。
 
 ![chlimage_1-365](assets/chlimage_1-365.png)
 
-#### 疑難排解：無法重新導向 {#troubleshooting-fail-to-redirect}
+#### 疑難排解： 無法重新導向 {#troubleshooting-fail-to-redirect}
 
 規則運算式字&#x200B;**串結尾的&#39;**`sling:match``http://localhost:4503/` $&#39;至關重要，因此只會正確映射，否則，重新導向值會優先於URL中server:port之後可能存在的任何路徑。 因此，當AEM嘗試重新導向至登入頁面時，它會失敗。
 
