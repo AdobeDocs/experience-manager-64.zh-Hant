@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '2183'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 當作者和發佈成員的使用者來自相同的使用者清單（例如同步自相同的LDAP目錄）時，作者和發佈環境中的使用者不會被視為擁有相同權限和群組成員資格的相同使用者。 成員和使用者的角色必須在發佈和作者（視情況而定）上分別建立。
 
-對於發 [布群](topologies.md)，在一個發佈例項上進行的註冊和修改必須與其他發佈例項同步，以便它們能夠存取相同的使用者資料。 [有關詳細資訊， ](sync.md)請參閱用戶同步[，該同步包含一個描述 ](sync.md#what-happens-when)何時發生…….
+對於發 [布群](topologies.md)，在一個發佈例項上進行的註冊和修改必須與其他發佈例項同步，以便它們能夠存取相同的使用者資料。 有關詳細資訊， [請參閱用戶同步](sync.md)，該同步包含一個描述 [何時發生……](sync.md#what-happens-when).
 
 ### 貢獻限制 {#contribution-limits}
 
