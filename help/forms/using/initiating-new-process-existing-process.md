@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 4d55a100-1876-41f0-a06f-7a009c934f3d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '260'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * 在「追蹤」中，按一下您要使用其資料的處理例項。 在右窗格的「進程歷史記錄」視圖中，按一下與起始點對應的任務行。
    * 在追蹤中，選取搜尋範本以顯示處理例項清單。 選擇要使用其資料的實例。
    * 在「待 **[!UICONTROL 辦事項]** 」頁籤中，選擇任務。 按一下「 **[!UICONTROL 歷史]** 」(History)頁籤，然後選擇啟動流程實例的任務。
+
    ![start3](assets/start3.png) ![start1](assets/start1.png)
 
 1. 在「任務」操作工具欄中，按一下「開 **[!UICONTROL 始」]**。 新進程實例的最適化表單將顯示預填充資料。
