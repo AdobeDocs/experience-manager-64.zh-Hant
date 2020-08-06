@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '1709'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +70,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 在AEM 6.1中，標準fulltext謂詞是搜尋表單的一部分。 在6.2中，全文欄位已由OmniSearch取代。 此謂語以程式設計方式跳過，可加以移除。
 
-**** 動作：完全刪除節點。
+**動作：** 完全刪除節點。
 
 ### 其他全文謂語 {#other-fulltext-predicates}
 
@@ -88,14 +91,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 路徑瀏覽器謂語 {#path-browser-predicates}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>路徑</td> 
   </tr>
   <tr>
@@ -109,14 +112,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 標籤謂語 {#tags-predicates}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>標記</td> 
   </tr>
   <tr>
@@ -130,14 +133,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 **resourceType** 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 **resourceType** 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 頁面狀態述詞 {#page-status-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>pagestatuspredicate</td> 
   </tr>
   <tr>
@@ -173,7 +176,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>daterangepredicate</td> 
   </tr>
   <tr>
@@ -187,14 +190,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 隱藏的篩選器 {#hidden-filter}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>類型</td> 
   </tr>
   <tr>
@@ -208,14 +211,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：沒什麼可調整的。
+**動作：** 沒什麼可調整的。
 
 ### Analytics 述詞 {#analytics-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>分析用</td> 
   </tr>
   <tr>
@@ -229,14 +232,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 範圍述詞 {#range-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>N/A</td> 
   </tr>
   <tr>
@@ -250,18 +253,18 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 >[!NOTE]
 >
->注意：與6.1相反，「範圍謂語」不再在搜尋列中演算標籤。
+>注意： 與6.1相反，「範圍謂語」不再在搜尋列中演算標籤。
 
 ### 選項屬性述詞 {#options-property-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>N/A</td> 
   </tr>
   <tr>
@@ -275,14 +278,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 滑桿範圍述詞 {#slider-range-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>N/A</td> 
   </tr>
   <tr>
@@ -296,14 +299,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 元件述詞 {#components-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>N/A</td> 
   </tr>
   <tr>
@@ -317,14 +320,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 作者述詞 {#author-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>N/A</td> 
   </tr>
   <tr>
@@ -338,14 +341,14 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 範本述詞 {#templates-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>6.1中預設搜尋表單中的節點<br /><br /> </td> 
+   <td>6.1中預設搜尋表單中的節點<br /> <br /> </td> 
    <td>N/A</td> 
   </tr>
   <tr>
@@ -359,7 +362,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
  </tbody>
 </table>
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ## 資產管理搜尋邊欄 {#assets-admin-search-rail}
 
@@ -374,7 +377,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 在6.1中，標準fulltext謂語是搜尋表單的一部分。 在6.2中，全文欄位已由OmniSearch取代。 此謂語以程式設計方式跳過，可加以移除。
 
-**** 動作：刪除上述節點。
+**動作：** 刪除上述節點。
 
 ### 路徑瀏覽器謂語 {#path-browser-predicates-1}
 
@@ -383,7 +386,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/pathbrowserpredicates |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/pathbrowserpredicates |
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### Mime類型謂語 {#mime-type-predicates}
 
@@ -392,7 +395,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicates |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicates |
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)。
 
 ### 檔案大小謂語 {#file-size-predicates}
 
@@ -401,7 +404,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/filesizepredicate |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicates |
 
-**** 動作：如上 `resourceType` 述6.2位置所示調整。
+**動作：** 如上 `resourceType` 述6.2位置所示調整。
 
 ### 資產上次修改的謂語 {#asset-last-modified-predicates}
 
@@ -410,9 +413,9 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/assetlastmodifedpredicate |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/assetlastmodifedpredicate |
 
-動作：調整resourceType屬性（如上方6.2位置中的新增&quot;/coral&quot;）。
+動作： 調整resourceType屬性（如上方6.2位置中的新增&quot;/coral&quot;）。
 
-### 發佈謂語 {#publish-predicate}
+### Publish Predicate {#publish-predicate}
 
 | 6.1中預設搜尋表單中的節點 | 發佈 |
 |---|---|
@@ -434,7 +437,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicates |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicates |
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
 
 ### 到期狀態謂語 {#expiry-status-predicates}
 
@@ -443,7 +446,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/expiredassetpredicate |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/expiredassetpredicate |
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
 
 ### 中繼資料有效性謂語 {#metadata-validity-predicates}
 
@@ -452,7 +455,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicates |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicates |
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
 
 ### 分級謂語 {#rating-predicates}
 
@@ -461,7 +464,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/ratingpredicate |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicates |
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
 
 ### Orientation Predicate {#orientation-predicate}
 
@@ -504,7 +507,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicates |
 | 6.2中的資源類型 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicates |
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
 
 ### Mainasset Predicate {#mainasset-predicate}
 
@@ -513,4 +516,4 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 | 6.1中的資源類型 | granite/ui/components/foundation/form/hidden |
 | 6.2中的資源類型 | granite/ui/components/coral/foundation/form/hidden |
 
-**** 動作：調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
+**動作：** 調整 `resourceType` 屬性(新增「**/coral**」，如上述6.2位置)
