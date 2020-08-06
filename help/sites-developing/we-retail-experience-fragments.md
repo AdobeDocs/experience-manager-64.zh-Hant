@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +33,8 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 >**[「內容片段](/help/sites-developing/we-retail-content-fragments.md)**」和「**體驗片段**」是AEM中的不同功能：
 >
 >* **內容片段** 是編輯內容，主要是文字和相關影像。 它們是純粹的內容，不需要設計和版面配置。
->* **體驗片段** ，內容已完整排版；網頁的片段。
+>* **體驗片段** ，內容已完整排版； 網頁的片段。
+
 >
 >
 「體驗片段」可以包含內容片段的形式，但不能以相反的方式包含。
