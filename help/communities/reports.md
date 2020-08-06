@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 5%
 
 ---
 
@@ -35,7 +38,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ### 社群網站的報表 {#reports-for-community-sites}
 
-* 從全域導覽：導 **[!UICONTROL 覽>社群>報表]**
+* 從全域導覽： **[!UICONTROL 導覽>社群>報表]**
 * 從
    * **[!UICONTROL 指定任務報表]**
       * 為選定的社區站點、用戶或組和分配生成報告
@@ -47,7 +50,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ### 啟用資源和學習路徑的報表 {#reports-for-enablement-resources-and-learning-paths}
 
-* 從全域導覽：導 **[!UICONTROL 覽>社群>資源]**
+* 從全域導覽： **[!UICONTROL 導覽>社群>資源]**
 * 選取現有的啟用社群網站
    * 選擇 **[!UICONTROL 報表圖示]** ，以產生涵蓋所有啟用資源的報表
    * 選擇啟用學習路徑
