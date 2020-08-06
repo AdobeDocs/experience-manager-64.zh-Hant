@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 49b195b2-78c4-49f9-b07a-a87b73624c2c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
 
-# 外部連結檢查器{#the-external-link-checker}
+# The External Link Checker{#the-external-link-checker}
 
 AEM中提供外部連結檢查程式。 連結檢查程式：
 
@@ -40,6 +43,7 @@ AEM中提供外部連結檢查程式。 連結檢查程式：
    * 上次驗證連結後的時間
    * 上次可用連結的時間
    * 上次存取連結的時間
+
    的下界。
 
 1. 在個別內容頁面上，無效的連結會顯示為中斷：
