@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 780d1a2d-38f1-4115-a9bd-f466aa3774dd
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1850'
+ht-degree: 0%
 
 ---
 
@@ -23,14 +26,14 @@ ContextHub是儲存、控制和呈現上下文資料的架構。 如需ContextHu
 
 ## 停用ContextHub {#disabling-contexthub}
 
-依預設，ContextHub會在AEM安裝中啟用。 ContextHub可停用，以防止它載入js/css並初始化。 要禁用ContextHub，有兩個選項：
+依預設，ContextHub會在AEM安裝中啟用。 ContextHub可停用，以防止其載入js/css和初始化。 要禁用ContextHub，有兩個選項：
 
 * 編輯ContextHub的設定並勾選「停用ContextHub」 **選項**
 
    1. 在邊欄中按一下或點選「工 **具>網站> ContextHub」**
    1. 按一下或點選預設的「設 **定容器」**
    1. 選取「 **ContextHub設定」** ，然後按一下或點選「編 **輯選取的元素」**
-   1. 按一下或點選「 **停用ContextHub** 」，然後按一下或點選「 **儲存」**
+   1. 按一下或點選「 **停用ContextHub」** ，然後按一下或點選「 **儲存」**
 
 或
 
@@ -51,8 +54,8 @@ ContextHub是儲存、控制和呈現上下文資料的架構。 如需ContextHu
 
 要配置服務，您可以使用 [Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ，或在儲存庫 [中使用JCR節點](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
 
-* **** Web控制台：若要顯示UI，請選取「顯示UI」屬性。 若要隱藏UI，請清除「隱藏UI」屬性。
-* **** JCR節點：若要顯示UI，請將布林屬 `com.adobe.granite.contexthub.show_ui` 性設為 `true`。 若要隱藏UI，請將屬性設為 `false`。
+* **Web控制台：** 若要顯示UI，請選取「顯示UI」屬性。 若要隱藏UI，請清除「隱藏UI」屬性。
+* **JCR節點：** 若要顯示UI，請將布林屬 `com.adobe.granite.contexthub.show_ui` 性設為 `true`。 若要隱藏UI，請將屬性設為 `false`。
 
 當顯示ContextHub UI時，它只會出現在AEM作者例項的頁面上。 UI不會顯示在發佈例項的頁面上。
 
@@ -60,8 +63,8 @@ ContextHub是儲存、控制和呈現上下文資料的架構。 如需ContextHu
 
 在「預覽」模式下配置ContextHub工具列中顯示的UI模式和模組：
 
-* UI模式：相關模組組
-* 模組：可從商店公開內容資料並讓作者控制內容的Widget
+* UI模式： 相關模組組
+* 模組： 可從商店公開內容資料並讓作者控制內容的Widget
 
 UI模式會以一系列圖示的形式出現在工具列的左側。 選取後，UI模式的模組會出現在右側。
 
@@ -73,7 +76,7 @@ UI模式會以一系列圖示的形式出現在工具列的左側。 選取後�
 
 新增UI模式至群組相關的ContextHub模組。 當您建立UI模式時，您會提供顯示在ContextHub工具列中的標題和圖示。
 
-1. 在Experience manager邊欄上，按一下或點選「工具>網站>內容中樞」。
+1. 在Experience Manager邊欄上，按一下或點選「工具>網站>內容中樞」。
 1. 按一下或點選預設的「設定容器」。
 1. 按一下或點選「內容中樞設定」。
 1. 按一下或點選「建立」按鈕，然後按一下或點選「內容中樞UI模式」。
@@ -82,9 +85,9 @@ UI模式會以一系列圖示的形式出現在工具列的左側。 選取後�
 
 1. 提供下列屬性的值：
 
-   * UI模式標題：識別UI模式的標題
-   * 模式圖示：例如，要使 [用的Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) (Coral UI)選擇器 `coral-Icon--user`
-   * 啟用：選擇以在ContextHub工具列中顯示UI模式
+   * UI模式標題： 識別UI模式的標題
+   * 模式圖示： 例如，要使 [用的Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) (Coral UI)選擇器 `coral-Icon--user`
+   * 啟用： 選擇以在ContextHub工具列中顯示UI模式
 
 1. 按一下或點選「儲存」。
 
@@ -107,7 +110,7 @@ UI模組屬性包括詳細配置，您可以在其中為模組特定屬性提供
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | 顯示頁面標籤的統計資料 | tagcloud |
 | [granite.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | 顯示目前使用者的設定檔資訊，包括authorizedID、displayName和familyName。 可以更改displayName和familyName的值。 | 側面像 |
 
-1. 在Experience manager邊欄上，按一下或點選「工具>網站> ContextHub」。
+1. 在Experience Manager邊欄上，按一下或點選「工具>網站> ContextHub」。
 1. 按一下或點選您要新增UI模組的「設定容器」。
 1. 按一下或輸入您要新增UI模組的ContextHub設定。
 1. 按一下或點選您要新增UI模組的UI模式。
@@ -117,9 +120,9 @@ UI模組屬性包括詳細配置，您可以在其中為模組特定屬性提供
 
 1. 提供下列屬性的值：
 
-   * UI模組標題：識別UI模組的標題
-   * 模組類型：模組類型
-   * 啟用：選擇以在ContextHub工具列中顯示UI模組
+   * UI模組標題： 識別UI模組的標題
+   * 模組類型： 模組類型
+   * 啟用： 選擇以在ContextHub工具列中顯示UI模組
 
 1. （可選）若要覆寫預設商店設定，請輸入JSON物件以設定UI模組。
 1. 按一下或點選「儲存」。
@@ -150,7 +153,7 @@ AEM提供下列範例商店候選者，供您建立商店的基礎。
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | 儲存用戶端的相關資訊，例如裝置資訊、瀏覽器類型和視窗方向 |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | 儲存頁面標籤和標籤計數 |
 
-1. 在Experience manager邊欄上，按一下或點選「工具>網站> ContextHub」。
+1. 在Experience Manager邊欄上，按一下或點選「工具>網站> ContextHub」。
 1. 按一下或點選預設設定容器。
 1. 按一下或點選「Contexthub Configuration」（內容圖布組態）
 1. 若要新增商店，請按一下或點選「建立」圖示，然後按一下或點選「ContexHub商店設定」。
@@ -159,15 +162,15 @@ AEM提供下列範例商店候選者，供您建立商店的基礎。
 
 1. 提供基本配置屬性的值，然後按一下或點選「下一步」:
 
-   * **** 配置標題：識別商店的標題
-   * **** 商店類型：要作為儲存基礎的儲存候選項的storeType屬性的值
-   * **** 必要：選擇
-   * **** 啟用：選擇以啟用商店
+   * **配置標題：** 識別商店的標題
+   * **商店類型：** 要作為儲存基礎的儲存候選項的storeType屬性的值
+   * **必要：** 選擇
+   * **啟用：** 選擇以啟用商店
 
 1. （可選）若要覆寫預設的商店設定，請在「詳細設定(JSON)」方塊中輸入JSON物件。
 1. 按一下或點選「儲存」。
 
-## 範例：使用JSONP服務 {#example-using-a-jsonp-service}
+## 範例： 使用JSONP服務  {#example-using-a-jsonp-service}
 
 此範例說明如何設定儲存區並在UI模組中顯示資料。 在此範例中，jsontest.com網站的MD5服務會用作商店的資料來源。 服務會傳回指定字串的MD5雜湊代碼，格式為JSON。
 
@@ -188,10 +191,10 @@ Javascript [類的init](/help/sites-developing/contexthub-api.md#init-name-confi
 
 要保存jsontest.com站點的MD5服務中的資料，請使用以下屬性 [建立ContextHub儲存](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store) :
 
-* **** 配置標題：md5
-* **** 商店類型：contexthub.generic-jsonp
-* **** 必要：選擇
-* **** 啟用：選擇
+* **配置標題：** md5
+* **商店類型：** contexthub.generic-jsonp
+* **必要：** 選擇
+* **啟用：** 選擇
 * **詳細資料組態 (JSON):**
 
    ```xml
@@ -218,8 +221,8 @@ Javascript [類的init](/help/sites-developing/contexthub-api.md#init-name-confi
 
 使用「新增 [UI模組」中的程式](/help/sites-administering/contexthub-config.md#adding-a-ui-module) ，將UI模組新增至現有的UI模式，例如範例Perona UI模式。 對於UI模組，請使用下列屬性值：
 
-* **** UI模組標題：MD5
-* **** 模組類型：contexthub.base
+* **UI模組標題：** MD5
+* **模組類型：** contexthub.base
 * **詳細資料組態 (JSON):**
 
    ```xml
