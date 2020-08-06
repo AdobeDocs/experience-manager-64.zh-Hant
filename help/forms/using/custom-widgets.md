@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 您可以將自訂Widget插入Mobile Forms。 您可以擴充現有的jQuery Widget，或使用外觀架構開發您自己的自訂Widget。 XFA引擎使用各種Widget，如需詳細資 [訊，請參閱最適化和HTML5表單的](/help/forms/using/introduction-widgets.md) Appearance架構。
 
-![預設和自訂介面工具集的范](assets/custom-widgets.jpg)**例圖：** 預 *設和自訂介面工具集的範例*
+![預設和自訂介面工具集的范](assets/custom-widgets.jpg)**例圖：** *預設和自訂介面工具集的範例*
 
 ## 將自訂Widget與HTML5表單整合 {#integrating-custom-widgets-with-html-forms}
 
-### 建立描述檔 {#create-a-profile-nbsp}
+### 建立描述檔  {#create-a-profile-nbsp}
 
 您可以建立描述檔或選擇現有的描述檔以新增自訂介面工具集。 如需建立描述檔的詳細資訊，請參 [閱建立自訂描述檔](/help/forms/using/custom-profile.md)。
 
@@ -43,7 +46,7 @@ HTML5表格提供Widget架構的實作，可加以擴充以建立新Widget。 �
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>傳回將HTML事件轉換為XFA事件的地圖。 <br /> {<br /> blur:XFA_EXIT_EVENT,<br /><br /> }此示例顯示模糊是HTML事件，XFA_EXIT_EVENT是相應的XFA事件。 </td> 
+   <td>傳回將HTML事件轉換為XFA事件的地圖。 <br /> {<br /> blur: XFA_EXIT_EVENT,<br /><br /> }此示例顯示模糊是HTML事件，XFA_EXIT_EVENT是相應的XFA事件。 </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -70,7 +73,7 @@ HTML5表格提供Widget架構的實作，可加以擴充以建立新Widget。 �
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### 使用XFA指令碼引擎註冊自訂Widget {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### 使用XFA指令碼引擎註冊自訂Widget  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
 當自訂介面工具集程式碼準備就緒時，請使用 `registerConfig`API for [Form Bridge，向指令碼引擎註冊介面工具集](/help/forms/using/form-bridge-apis.md)。 它以widgetConfigObject為輸入。
 
@@ -88,8 +91,8 @@ window.formBridge.registerConfig("widgetConfig",
 
 *{*
 
-*&quot;identifier1&quot; :&quot;customwidgetname&quot;,\
-&quot;identifier2&quot; :&quot;customwidgetname2&quot;,\
+*&quot;identifier1&quot; : &quot;customwidgetname&quot;,\
+&quot;identifier2&quot; : &quot;customwidgetname2&quot;,\
 ..\
 }*
 
@@ -98,5 +101,5 @@ window.formBridge.registerConfig("widgetConfig",
 | 識別碼類型 | 識別碼 | 說明 |
 |---|---|---|
 | 具有名稱欄位名的特定欄位 | 識別碼：&quot;div.fieldname&quot; | 所有名稱為「fieldname」的欄位都會使用介面工具集呈現。 |
-| 所有類型為「type」的欄位（其中類型為NumericField、DateField等）。: | 識別碼：&quot;div.type&quot; | 對於Timefield和DateTimeField，類型為textfield，因為不支援這些欄位。 |
-| 所有欄位 | 識別碼：&quot;div.field&quot; |  |
+| 所有類型為「type」的欄位（其中類型為NumericField、DateField等）。: | 識別碼： &quot;div.type&quot; | 對於Timefield和DateTimeField，類型為textfield，因為不支援這些欄位。 |
+| 所有欄位 | 識別碼： &quot;div.field&quot; |  |
