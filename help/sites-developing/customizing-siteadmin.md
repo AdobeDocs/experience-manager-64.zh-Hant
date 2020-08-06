@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73e57f20-4022-46ab-aa5c-ec866298b645
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +36,7 @@ source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
 >
 >* 數位資產主控台
 >* 社群主控台
+
 >
 
 
@@ -54,7 +58,7 @@ source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
 
 * 新增每 *個項目的星號屬性* ，這是 `true` 如果頁面名稱以 *e開頭*, `false` 否則。
 
-* 新增星 *星號Count屬性* ，此屬性是清單的全域屬性，並包含星號清單項目的數目。
+* 新增星 *星號計數屬性* ，此屬性是清單的全域屬性，並包含星號清單項目的數目。
 
 要建立OSGI服務：
 
@@ -107,8 +111,9 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* 您的實作應根據提供的請求和／或資源，決定是否應將資訊新增至JSON物件。
->* 如果您 `ListInfoProvider` 的實作定義了回應物件中已存在的屬性，其值將由您提供的屬性覆寫。\
+>* 如果您 `ListInfoProvider` 的實作定義了回應物件中已存在的屬性，則其值將被您提供的屬性覆寫。\
    >  您可以使用 [服務排名](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) ，管理多個實施的執行 `ListInfoProvider` 順序。
+
 >
 
 
@@ -117,13 +122,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 當您開啟「網站管理」主控台並瀏覽您的網站時，瀏覽器會發出ajax呼叫，以取得用來建立主控台的JSON物件。 例如，當您瀏覽至檔案夾時， `/content/geometrixx` 下列請求會傳送至AEM伺服器以建立主控台：
 
-[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 要確保新服務在部署包含該服務的包後正在運行：
 
 1. 將您的瀏覽器指向下列URL:
 
-   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. 響應應按如下方式顯示新屬性：
 
@@ -140,11 +145,11 @@ public class StarredListInfoProvider implements ListInfoProvider {
 1. 將節點復 `/apps/wcm/core/content/siteadmin/grid/assets` 制到 `/apps/wcm/core/content/siteadmin/grid/geometrixx` 並更改其屬性：
 
    * 移除pageText(英 **文)**
-   * 將 **pathRegex設為**`/content/geometrixx(/.*)?`
+   * 將 **pathRegex設為** `/content/geometrixx(/.*)?`
 
       這會讓網格設定在所有幾何網站上都啟用。
 
-   * 將 **storeProxySuffix設為**`.pages.json`
+   * 將 **storeProxySuffix設為** `.pages.json`
    * 編輯 **storeReaderFields** multivalued屬性並新增 `starred` 值。
    * 若要啟用MSM功能，請將下列MSM參數新增至multi-String屬性 **storeReaderFields**:
 
@@ -152,11 +157,11 @@ public class StarredListInfoProvider implements ListInfoProvider {
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. 在下面添 `starred` 加一個節點(類 **型為nt:antrustructured**)，具 `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` 有以下屬性：
+1. 在下面添 `starred` 加一個節點(類 **型為nt:antrustructured**), `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` 並包含以下屬性：
 
-   * **dataIndex**:字 `starred` 串類型
-   * **header**:字 `Starred` 串類型
-   * **xtype**:字 `gridcolumn` 串類型
+   * **dataIndex**: `starred` 字串類型
+   * **header**: `Starred` 字串類型
+   * **xtype**: `gridcolumn` 字串類型
 
 1. （可選）拖放您不想在 `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
