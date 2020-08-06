@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
@@ -50,6 +53,7 @@ AEM **中的Text** （文字）元件可供觸控式和傳統UI使用。 下列�
 >
 >* [外掛程式及其功能](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >* [外掛程式及其功能——啟用觸控的UI](/help/sites-administering/rich-text-editor.md#aboutplugins)
+
 >
 
 
@@ -72,11 +76,12 @@ AEM **中的Text** （文字）元件可供觸控式和傳統UI使用。 下列�
 新的語義塊格式可通過以下方式提供供選擇：
 
 1. 根據RTE，確定並導航到配 [置位置](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)。
-1. [啟用「段落選擇」欄位](/help/sites-administering/rich-text-editor.md);啟動 [外掛程式](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
+1. [啟用「段落選擇」欄位](/help/sites-administering/rich-text-editor.md); 啟動 [外掛程式](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
 1. [在「段落選取」欄位中指定您想要使用的格式](/help/sites-administering/rich-text-editor.md)。
 1. 然後，內容作者可從RTE中的選擇欄位使用段落格式。 可以訪問這些檔案：
 
    * 使用觸控式UI[中的](https://en.wikipedia.org/wiki/Pilcrow)(pilcrow)圖示：
+
    ![段落(Pilcrow)圖示。](do-not-localize/chlimage_1-7.png)
 
    * 使用 **傳統** UI中的「格式」欄位（下拉式選取器）。
@@ -86,7 +91,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
 
 ## 原始碼編輯功能的使用 {#use-of-the-source-edit-feature}
 
-在某些情況下，內容作者會發現有必要檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的一部分內容可能需要額外的標籤，以確保符合WCAG 2.0。這可以通過RTE的源 [編輯](/help/sites-administering/rich-text-editor.md#aboutplugins) 選項來完成。 您可以在外掛 [ 程 `sourceedit` 式上指定 `misctools` 功能](/help/sites-administering/rich-text-editor.md#aboutplugins)。
+在某些情況下，內容作者會發現有必要檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的一部分內容可能需要額外的標籤，以確保符合WCAG 2.0。 這可以通過RTE的源 [編輯](/help/sites-administering/rich-text-editor.md#aboutplugins) 選項來完成。 您可以在外掛 [ 程 `sourceedit` 式上指定 `misctools` 功能](/help/sites-administering/rich-text-editor.md#aboutplugins)。
 
 >[!CAUTION]
 >
@@ -129,7 +134,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
 
    至:
 
-   `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`.
+   `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`。
 
 1. 開啟下列檔案以進行編輯（按兩下以開啟）:
 
@@ -155,7 +160,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
 
 1. 開啟下列檔案：
 
-   `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`.
+   `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`。
 
 1. 在方法結尾處新增下列程 `transferConfigToTable` 式碼：
 
