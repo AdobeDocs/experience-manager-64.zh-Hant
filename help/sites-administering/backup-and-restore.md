@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '2295'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +102,8 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 >* 在備份過程中需要額外的磁碟儲存（臨時目錄加上zip檔案）
 >* 壓縮過程由儲存庫完成，並可能影響其效能。
 >* 它延遲了備份過程。
->* 最高可配備Java 1.6 java的ZIP檔案僅能建立4 GB的大小。
+>* 最高可配備Java 1.6 Java的ZIP檔案僅能建立4 GB的大小。
+
 >
 >
 如果您需要建立ZIP作為備份格式，則應備份到目錄，然後使用壓縮程式建立zip檔案。
@@ -107,7 +111,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 **延遲** ：表示延遲時間（以毫秒為單位），因此不會影響儲存庫效能。 預設情況下，儲存庫備份以全速運行。 您可以放慢建立聯機備份的速度，這樣不會減慢其他任務的速度。
 
 使用非常大的延遲時，請確保線上備份不需要超過24小時。 如果備份包含，請放棄此備份，因為它可能不包含所有二進位檔案。\
-延遲1毫秒通常導致10%的CPU使用量，而延遲10毫秒通常導致3%的CPU使用量。 總延遲（秒）的估計如下：儲存庫大小(MB)、延遲（毫秒）、延遲除以2（如果使用了zip選項）或4（備份到目錄時）。 這意味著，備份到200 MB儲存庫的目錄，延遲1毫秒，備份時間將增加約50秒。
+延遲1毫秒通常導致10%的CPU使用量，而延遲10毫秒通常導致3%的CPU使用量。 總延遲（秒）的估計如下： 儲存庫大小(MB)、延遲（毫秒）、延遲除以2（如果使用了zip選項）或4（備份到目錄時）。 這意味著，備份到200 MB儲存庫的目錄，延遲1毫秒，備份時間將增加約50秒。
 
 >[!NOTE]
 >
@@ -118,7 +122,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 1. 以管理員身分登入AEM。
 
 1. 轉到「 **工具——操作——備份」。**
-1. 按一下 **建立**。備份控制台將開啟。
+1. 按一下&#x200B;**建立**。備份控制台將開啟。
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -149,7 +153,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
    >[!NOTE]
    >
-   >如果已備份到目錄：備份程式完成後，AEM將不會寫入目標目錄。
+   >如果已備份到目錄： 備份程式完成後，AEM將不會寫入目標目錄。
 
 ### 自動化AEM線上備份 {#automating-aem-online-backup}
 
@@ -161,7 +165,7 @@ source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
 
 >[!CAUTION]
 >
->在以下示例中，命令中的各 `curl` 種參數可能需要為實例配置；例如，主機名( `localhost`)、埠( `4502`)、管理密碼( `xyz`)和檔案名( `backup.zip`)。
+>在以下示例中，命令中的各 `curl` 種參數可能需要為實例配置； 例如，主機名( `localhost`)、埠( `4502`)、管理密碼( `xyz`)和檔案名( `backup.zip`)。
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=backup.zip
@@ -207,7 +211,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 1. 裝載檔案系統快照。
 1. 執行備份並卸載快照。
 
-### AEM Online backup的運作方式 {#how-aem-online-backup-works}
+### AEM Online Backup的運作方式 {#how-aem-online-backup-works}
 
 AEM Online Backup由一系列內部動作組成，以確保所備份資料和所建立備份檔案的完整性。 以下列出感興趣的人。
 
@@ -215,7 +219,7 @@ AEM Online Backup由一系列內部動作組成，以確保所備份資料和所
 
 1. 建立zip檔案時，第一步是建立或查找目標目錄。
 
-   * 如果備份到zip檔案，則會建立臨時目錄。 目錄名以開頭 `backup.` ，結尾為 `.temp`;例如 `backup.f4d3.temp`。
+   * 如果備份到zip檔案，則會建立臨時目錄。 目錄名以開頭 `backup.` ，結尾為 `.temp`; 例如 `backup.f4d3.temp`。
    * 如果備份到目錄，則使用目標路徑中指定的名稱。 可以使用現有目錄，否則將建立新目錄。
 
       啟動備份時， `backupInProgress.txt` 目標目錄中將建立一個名為的空檔案。 備份完成後，此檔案將被刪除。
