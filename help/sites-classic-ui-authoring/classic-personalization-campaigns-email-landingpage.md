@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 若要建立您自己的電子報表單，請參閱 [Forms檔案中有關建立表單的資](/help/sites-authoring/default-components.md#form)訊。 電子報使用「標籤庫」中的標籤。 若要新增其他標籤，請參 [閱標籤管理](/help/sites-authoring/tags.md#tagadministration)。
 
-下例中的隱藏欄位提供最少的資訊量（電子郵件）;此外，您稍後可以新增更多欄位，但這會影響轉換率。
+下例中的隱藏欄位提供最少的資訊量（電子郵件）; 此外，您稍後可以新增更多欄位，但這會影響轉換率。
 
 以下範例是在http://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html上建立的表格。
 
