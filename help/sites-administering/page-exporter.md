@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '1019'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
 
 AEM可讓您將頁面匯出為完整的網頁，包括影像、.js和。css檔案。
 
-在設定匯出後，您只需在瀏覽器中以URL中的取代來請求頁面， `html``export.zip` 就可取得包含以html格式呈現的頁面和參考資產的Zip檔案下載。 頁面中的所有路徑（例如影像路徑）都會重寫，以指向zip檔案中包含的檔案或伺服器上的資源。
+在設定匯出後，您只需在瀏覽器中以URL中的取代來請求頁面， `html` 就可取得 `export.zip` zip檔案下載，其中包含以html格式呈現的頁面和參考的資產。 頁面中的所有路徑（例如影像路徑）都會重寫，以指向zip檔案中包含的檔案或伺服器上的資源。
 
 ## 匯出頁面 {#exporting-a-page}
 
@@ -31,7 +34,7 @@ AEM可讓您將頁面匯出為完整的網頁，包括影像、.js和。css檔�
 1. `http://localhost:4502/content/geometrixx/en/products/triangle.html`
 1. 開啟頁面屬性對話方塊，選取「進 **階** 」標籤並展開「 **匯出** 」欄位集。
 
-1. 按一下放大鏡表徵圖並選擇配置模板。 選取 **geometrixx** 範本，因為它是Geometrixx網站的預設範本。 按一下 **確定**。
+1. 按一下放大鏡表徵圖並選擇配置模板。 選取 **geometrixx** 範本，因為它是Geometrixx網站的預設範本。 按一下&#x200B;**「確定」**。
 
 1. 按一 **下「確定** 」以關閉頁面屬性對話方塊。
 1. 在URL中以取代 `html` 來請 `export.zip` 求頁面。
@@ -62,7 +65,7 @@ AEM內嵌一些範本，包括：
 
 1. 在 **CRXDE Lite中**，建立下方的節點 `/etc/contentsync/templates`:
 
-   * 名稱：例如， `mysite`。 選擇頁面導出器模板時，名稱將出現在頁面屬性對話框中。
+   * 名稱： 例如， `mysite`. 選擇頁面導出器模板時，名稱將出現在頁面屬性對話框中。
    * 類型: `nt:unstructured`
 
 1. 在範本節點（在此處調用） `mysite`下，使用下面介紹的配置節點建立節點結構。
@@ -86,7 +89,7 @@ AEM內嵌一些範本，包括：
 
 * 它沒有屬性， `path` 因為目前頁面路徑會動態複製至設定。
 
-* 其他屬性在Content sync框架的「配置類型概述」部分中介紹。
+* 其他屬性在Content Sync框架的「配置類型概述」部分中介紹。
 
 **rewrite node** 重寫節點定義如何在導出的頁面中重寫連結。 重寫的連結可以指向包含在zip檔案中的檔案或指向伺服器上的資源。
 
@@ -130,7 +133,7 @@ Geometrixx **** page export設定範本會顯示如何設定頁面匯出。 若�
 
 **實作自訂設定**
 
-如您在節點結構中所注意的， **Geometrixx** page export配置模板有一個 `logo` 將屬性設定為 `type` 的節點 `image`。 這是已建立的特殊組態類型，可將影像標誌複製至zip檔案。 為符合某些特定需求，您可能需要實作自訂屬 `type` 性：若要這麼做，請參閱「內容同步」頁面中的「實作自訂更新處理常式」區段。
+如您在節點結構中所注意的， **Geometrixx** page export配置模板有一個 `logo` 將屬性設定為 `type` 的節點 `image`。 這是已建立的特殊組態類型，可將影像標誌複製至zip檔案。 為符合某些特定需求，您可能需要實作自訂屬 `type` 性： 若要這麼做，請參閱「內容同步」頁面中的「實作自訂更新處理常式」區段。
 
 ## 以程式設計方式匯出頁面 {#programmatically-exporting-a-page}
 
