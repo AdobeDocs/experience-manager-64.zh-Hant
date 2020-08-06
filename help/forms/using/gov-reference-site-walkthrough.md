@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '2737'
+ht-degree: 0%
 
 ---
 
@@ -54,7 +57,7 @@ We.Gov組織會收到申請。 組織會取得申請表的評量，並核准正�
 
 ## Sarah開始進行資格檢查 {#sarah-initiates-her-eligibility-check}
 
-申請人可以檢查申請子女支援福利的資格。 網站可讓使用者回答問題，以判斷其應用程式是否符合權益。 養父母莎拉是潛在的養父母。 資格表是We.Gov網站「兒童支援申請」服務的一部分。 為了檢查她的資格，Sarah點擊了 **[!UICONTROL We.Gov網站上的Child Support]** （兒童支援）。 在「子代支援」頁面中，Sarah按一下「 **[!UICONTROL 檢查您的資格」]**。
+申請人可以檢查申請子女支援福利的資格。 網站可讓使用者回答問題，以判斷其應用程式是否符合權益。 養父母莎拉是申請收養的人。 資格表是We.Gov網站的「兒童支援申請」服務的一部分。 為了檢查她的資格，Sarah點擊了 **[!UICONTROL We.Gov網站上的Child Support]** （兒童支援）。 在「子代支援」頁面中，Sarah按一下「 **[!UICONTROL 檢查您的資格」]**。
 
 除了上述方法，Sarah還可以按一下首 **[!UICONTROL 頁上的「開始]** 」。 Sarah會導覽至「所有應用程式」頁面，在此頁面，她可以按一下「Application for Child Support Services」(子代支援服 **[!UICONTROL 務的應用程式)下的「Apply]**」（套用）。 然後，莎拉被帶到資格檢查。
 
@@ -97,13 +100,13 @@ Sarah的資格是透過使用規則編輯器建立的資格障礙來驗證的。
 Sarah在獲悉 **[!UICONTROL 其符合兒童支援資格後，按一下「開始申請]** 」。\
 在「Application For Child Support Services」（子代支援服務的應用程式）頁面中，Sarah提供了以下各節的詳細資訊：
 
-* **[!UICONTROL 關於申請人]**:讓Sarah在本節中提供詳細資訊。
+* **[!UICONTROL 關於申請人]**: 讓Sarah在本節中提供詳細資訊。
 
-* **[!UICONTROL 子資訊]**:讓Sarah提供孩子的資訊，而Sarah則得到支援服務。
+* **[!UICONTROL 子資訊]**: 讓Sarah提供孩子的資訊，而Sarah則得到支援服務。
 
-* **[!UICONTROL 付款]**:讓莎拉提供她的銀行細節，We.Gov可以在這些細節中存入月度支助補償。
+* **[!UICONTROL 付款]**: 讓莎拉提供她的銀行細節，We.Gov可以在這些細節中存入月度支助補償。
 
-* **[!UICONTROL 費用支付]**:讓Sarah提供信用卡詳細資訊，以支付申請費。
+* **[!UICONTROL 費用支付]**: 讓Sarah提供信用卡詳細資訊，以支付申請費。
 
 依預設，Sarah會進入「關於申請 **[!UICONTROL 人]** 」區段。
 
@@ -123,7 +126,7 @@ We.Gov網站上的子支援表格使用適應性表格。 她可以使用電子�
 
 Sarah可以在任何章節中提供詳細資訊，但申請費只有在她在所有章節中提供必要資訊後才可接受。 申請不完整，不需付費，而標有星號的欄位則為必填欄位。
 
-### <strong>莎拉提供了她的資訊</strong>{#strong-sarah-provides-her-information-strong}
+### <strong>莎拉提供了她的資訊</strong> {#strong-sarah-provides-her-information-strong}
 
 在Sarah按一下「 **[!UICONTROL 開始申請]**」後，她會進入「子代支援服務申請」頁面的「申請人資訊」區段。 在「申請人資訊」下，Sarah會導覽各個標籤，並為申請提供個人資訊。 她按「下 **[!UICONTROL 一步]** 」以瀏覽各個標籤。
 
@@ -143,7 +146,7 @@ Sarah可以在任何章節中提供詳細資訊，但申請費只有在她在所
 
 ### Sarah提供兒童資訊 {#sarah-provides-child-information}
 
-在Sarah提供個人資訊並按下「下 **[!UICONTROL 一步]**」後，她就會進入「子項資訊」區段。
+在Sarah提供個人資訊並按下「下 **[!UICONTROL 一步]**」後，會將她帶到「子項資訊」區段。
 
 在「子項資訊」部分中，她提供了以下詳細資訊：
 
@@ -167,11 +170,11 @@ Sarah輸入信用卡詳細資訊，然後按一下「立即 **[!UICONTROL 付款
 
 ![sarah-sign-1](assets/sarah-sign-1.png)
 
-Sarah可以選擇輸入、使用繪圖來手寫、插入簽名影像，或使用行動裝置的觸控螢幕來繪製簽名。 Sarah輸入姓名，然後按一下「點選以簽署」。
+Sarah可以選擇輸入、使用繪圖來手寫、插入簽名影像，或使用手機的觸摸屏來繪製簽名。 Sarah輸入姓名，然後按一下「點選以簽署」。
 
 她的申請已提交到We.Gov網站。
 
-### <strong>Sarah收到確認電子郵件</strong>{#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah收到確認電子郵件</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 Sarah支付申請費後，會收到We.Gov網站發來的確認電子郵件。\
 We.Gov處理申請，Sarah被告知，在申請獲得批准後，她將每月獲得賠償。
@@ -233,7 +236,7 @@ Gloria可以批准或拒絕該應用程式。 不過，Gloria點按「 **[!UICON
 
 ![gloria-sends-assessment](assets/gloria-sends-assessment.png)
 
-Sarah的應用程式是AEM工作流程的起點。 在提交子支援應用程式表單時，它會啟動AEM工作流程。 AEM工作流程會為Gloria建立工作，此工作會顯示在她的AEM收件匣中。 當Gloria請求現場評估時，將為現場座席建立新任務。
+Sarah的應用程式是AEM工作流程的起點。 當提交子支援應用程式表單時，它會啟動AEM工作流程。 AEM工作流程會為Gloria建立工作，此工作會顯示在她的AEM收件匣中。 當Gloria請求現場評估時，將為現場座席建立新任務。
 
 ### 親眼看看 {#see-it-yourself-3}
 
@@ -241,8 +244,8 @@ Sarah的應用程式是AEM工作流程的起點。 在提交子支援應用程�
 
 存取https://&lt;***hostname***>:&lt;***PublishPort***>/content/we-gov/en.html的收件匣。 在頁面上，點選「登 **[!UICONTROL 入」]**，選取「登入為代表人 **[!UICONTROL 員]** 」核取方塊，使用Gloria的預設憑證：
 
-* 使用者名稱：格里奧
-* 密碼：密碼
+* 使用者名稱： 格里奧
+* 密碼： 密碼
 
 在她的AEM收件匣中，Sarah的應用程式會新增為審核工作。 選擇任務，然後按一下「 **需要評估** 」以繼續下一步。
 
@@ -274,8 +277,8 @@ Conard拜訪了Sarah的住所，確認了Sarah提供的資訊是真實的，並�
 
 Conard的預設憑據為：
 
-* 使用者名稱：csimms
-* 密碼：密碼
+* 使用者名稱： csimms
+* 密碼： 密碼
 
 您可以在收件箱中看到新的「評估請求」任務。 提交完成的評估，然後繼續下一步。
 
@@ -341,7 +344,7 @@ We.Gov會不時檢查其子項支援服務應用程式的效能，以檢查客�
 
 ### 親眼看看 {#see-it-yourself-7}
 
-若要檢視並探索分析報表，我們會為參考網站的子支援服務應用程式提供種子資料。 在您使用種子資料之前，請參 [閱設定分析](/help/forms/using/setup-reference-sites.md#configureanalytics)。 在作者實例中執行以下步驟以查看包含種子資料的報告：
+若要檢視並探索分析報表，我們會為參考網站的子支援服務應用程式提供種子資料。 使用種子資料之前，請參 [閱設定分析](/help/forms/using/setup-reference-sites.md#configureanalytics)。 在作者實例中執行以下步驟以查看包含種子資料的報告：
 
 1. 前往https:// **[!UICONTROL &lt;]** AuthorPort *>的「表單與檔案*」UI，網址為：&lt;主機名稱&#x200B;*>:&lt;* AuthorPort>/aem/forms.html/content/dam/formsanddocuments。
 
@@ -352,11 +355,11 @@ We.Gov會不時檢查其子項支援服務應用程式的效能，以檢查客�
 
 若要產生含種子資料的分析報表：
 
-1. 在CRXDE lite的地址瀏覽器中，鍵入： **/apps/we-gov/demo-antructs/analyticsTestData/Child支援服務Analytics Test Data**
+1. 在CRXDE lite的地址瀏覽器中，鍵入： **/apps/we-gov/demo-antracts/analyticsTestData/Child支援服務Analytics Test Data**
 1. 在左側目錄結構中選擇種子資料。
 1. 連按兩下選取的檔案，以在右側面板中開啟其內容。
 1. 複製測試資料檔案中的所有內容。
-1. 在CRXDE中，導覽至： **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatando/last7天**
+1. 在CRXDE中，導覽至： **/content/dam/formsanddocuments/we-gov/child-support/css/jcr:content/analyticsdatanode/lastsevendays**
 1. 在「屬性」下的「分析資料」欄位中，貼上測試資料檔案的複製內容。
 1. 現在，請針對子支援服務的應 **[!UICONTROL 用程式重新產生分析報表]**。 您可以在產生的報表中看到種子資料。
 
