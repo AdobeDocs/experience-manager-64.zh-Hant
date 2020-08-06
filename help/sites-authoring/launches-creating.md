@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 15%
 
 ---
 
@@ -45,23 +48,25 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
       1. 從工 **具列選擇** 「建立」(Create)以開啟選擇框。
       1. 在此選擇「 **建立啟動** 」以開啟嚮導。
+
    >[!NOTE]
    >
    >在Sites **** Console中，您也可以使用選 [擇模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) ，在選擇「建立」之前選擇 **頁面**。
    >
-   >這會使用選取的頁面作為初始來源頁面。
+   >這會將選取的頁面當做初始來源頁面。
 
 1. 在「選 **取來源** 」步驟中，您需要 **新增頁面**。 您可以選取多個頁面，並指定每個頁面的路徑：
 
    * 導覽至所需位置。
    * 選擇源頁面並確認（複選標籤）。
+
    視需要重複。
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
-   >若要新增頁面和／或分支至啟動，它們必須位於網站中；例如，在一般頂層根目錄下。
+   >若要新增頁面和／或分支至啟動，它們必須位於網站中； 例如，在一般頂層根目錄下。
    >
    >如果網站的語言根目錄位於最上層，則啟動的頁面和分支必須位於共同語言根目錄下。
 
@@ -70,20 +75,22 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
    * **包含子頁面**:
 
       * 指定您要建立包含子頁面或不包含子頁面的啟動。  依預設，會包含此子頁面。
+
    繼續「下 **一步**」。
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
 1. 在嚮導 **的** 「屬性」步驟中，您可以指定：
 
-   * **啟動標題**:啟動的名稱。 名稱對作者應有意義。
-   * **使用現有內容**:原始內容將用來建立啟動。
-   * **使用新範本來取代頁面**:如需詳 [細資訊，請參閱「使用新範本建立啟動](#create-launch-with-new-template) 」。
-   * **繼承來源頁面即時資料**:選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。 此選項可讓啟動成為即時副 [本](/help/sites-administering/msm.md)。
+   * **啟動標題**: 啟動的名稱。 名稱對作者應有意義。
+   * **使用現有內容**: 原始內容將用來建立啟動。
+   * **使用新範本來取代頁面**: 如需詳 [細資訊，請參閱「使用新範本建立啟動](#create-launch-with-new-template) 」。
+   * **繼承來源頁面即時資料**: 選取此選項，可在來源頁面變更時自動更新啟動頁面的內容。 此選項可讓啟動成為即時副 [本](/help/sites-administering/msm.md)。
 
       預設會選取此選項。
 
-   * **啟動日期**:啟動副本要啟動的日期和時間(取決於「生產就緒」 **標誌** ;請 [參閱啟動——事件順序](/help/sites-authoring/launches.md#launches-the-order-of-events))。
+   * **啟動日期**: 啟動副本要啟動的日期和時間(取決於「生產就緒」 **標誌** ; 請 [參閱啟動——事件順序](/help/sites-authoring/launches.md#launches-the-order-of-events))。
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. 使用 **Create** （建立）完成程式並建立新的啟動。 確認對話框將詢問您是否要立即開啟啟動。
