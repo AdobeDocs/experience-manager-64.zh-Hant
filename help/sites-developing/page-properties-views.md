@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 translation-type: tm+mt
 source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
 
 # 自訂頁面屬性的檢視{#customizing-views-of-page-properties}
 
-每個頁面都有一組 [屬性](/help/sites-authoring/editing-page-properties.md) ，供使用者檢視和編輯；有些是建立頁面（建立檢視）時的必要項目，有些則可在稍後階段檢視和編輯（編輯檢視）。 這些頁面屬性由適當頁面元件的對話方塊( `cq:dialog`)定義並提供。
+每個頁面都有一組 [屬性](/help/sites-authoring/editing-page-properties.md) ，供使用者檢視和編輯； 有些是建立頁面（建立檢視）時的必要項目，有些則可在稍後階段檢視和編輯（編輯檢視）。 這些頁面屬性由適當頁面元件的對話方塊( `cq:dialog`)定義並提供。
 
 >[!CAUTION]
 >
@@ -58,7 +61,7 @@ source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
 例如，依預設，「建立頁 [**面」精靈會顯示「更多標題和說&#x200B;**明」下方的欄位](/help/sites-authoring/managing-pages.md#creating-a-new-page)****。 若要隱藏您設定的這些項目：
 
 1. 在下面建立您的頁面元件 `/apps`。
-1. 為您的頁面元件 *區段建立覆寫* (使用 [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)提供的對話區 `basic` 別);例如：
+1. 為您的頁面元件 *區段建立覆寫* (使用 [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)提供的對話區 `basic` 別); 例如：
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -89,7 +92,7 @@ source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
    /apps/demos/components/page/tabs/basic
    ```
 
-1. 在對應路徑上 `basic` 建立- `moretitles` 節的覆寫；例如：
+1. 在對應路徑上 `basic` 建立- `moretitles` 節的覆寫； 例如：
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -100,6 +103,7 @@ source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
    * **名稱**: `cq:showOnCreate`
    * **類型**: `Boolean`
    * **值**: `false`
+
    「建 **立頁面」精靈中** ，將不再顯示「更多標題 **和說明」區段** 。
 
 >[!NOTE]
@@ -108,7 +112,7 @@ source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
 
 ## 頁面屬性的範例設定 {#sample-configuration-of-page-properties}
 
-此範例示範 [Sling Resource Merger的對話區分技術](/help/sites-developing/sling-resource-merger.md);包括使用 [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties)。 它還說明了和的 `cq:showOnCreate` 使用 `cq:hideOnEdit`。
+此範例示範 [Sling Resource Merger的對話區分技術](/help/sites-developing/sling-resource-merger.md); 包括使用 [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties)。 它還說明了和的 `cq:showOnCreate` 使用 `cq:hideOnEdit`。
 
 GITHUB代碼
 
