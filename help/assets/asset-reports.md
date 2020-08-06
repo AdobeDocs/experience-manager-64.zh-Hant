@@ -95,7 +95,7 @@ ht-degree: 8%
 
    ![「連結共用」報表的詳細資訊頁面](assets/link_share.png)
 
-1. 從工具 **[!UICONTROL 列按一下]** 「下一步」。
+1. Click **[!UICONTROL Next]** from the toolbar.
 
 1. 在「設 **[!UICONTROL 定欄]** 」頁面中，某些欄會依預設顯示在報表中。 您可以選取更多欄。 取消選取選取的欄，將其排除在報表中。
 
@@ -105,7 +105,7 @@ ht-degree: 8%
 
    ![選取或取消選取報表欄](assets/custom_columns.png)
 
-1. 從工具 **[!UICONTROL 列按一下]** 「建立」。 訊息會通知報表產生已開始。
+1. Click **[!UICONTROL Create]** from the toolbar. 訊息會通知報表產生已開始。
 1. 在「報 [!UICONTROL 表] 」頁面上，報表產生狀態是根據報表作業的目前狀態，例如 [!UICONTROL Success]、FailedFailed [!UICONTROL 、]Queued Asset或ScheduledScheduledReports。 通知收件箱中會顯示相同的狀態。要查看報告頁，請按一下報告連結。 或者，選取報表，然後從工具列按 **[!UICONTROL 一下]** 「檢視」。
 
    ![產生的報表](assets/report_page.png)
@@ -146,7 +146,7 @@ ht-degree: 8%
 
    若要新增更多自訂欄，請按一 **[!UICONTROL 下「新增]** 」，然後重複步驟5和6。
 
-1. 從工具 **[!UICONTROL 列按一下]** 「建立」。 訊息會通知報表產生已開始。
+1. Click **[!UICONTROL Create]** from the toolbar. 訊息會通知報表產生已開始。
 
 ## 配置清除服務 {#configure-purging-service}
 
