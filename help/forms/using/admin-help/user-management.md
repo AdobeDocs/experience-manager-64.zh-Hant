@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 使用者管理可讓您使用安全斷言標籤語言(SAML)，在AEM表單模組和Netegrity SiteMinder保護的應用程式之間啟用單一登入(SSO)。 實作SSO時，AEM表單使用者登入頁面不是必要項目，如果使用者已透過公司入口網站進行驗證，則不會顯示。
 
-有關改進DB2的資料庫和目錄同步效能的資訊，請參見 [IBM DB2資料庫：運行命令以定期維護](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance)。
+有關改進DB2的資料庫和目錄同步效能的資訊，請參見 [IBM DB2資料庫： 運行命令以定期維護](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance)。
 
 ## 為啟用SSL的LDAP伺服器配置用戶管理 {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
