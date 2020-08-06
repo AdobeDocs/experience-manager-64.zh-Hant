@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,7 @@ AEM Communities提供通知區段，可顯示已登入社群成員感興趣的�
 * 使用連結存取的網路頻 `Notifications` 道
 * 電子郵件通道，在正確設定電子郵件時可用
 
-未來的通道包括行動裝置和案頭。
+未來的通道包括行動和案頭。
 
 ### 需求 {#requirements}
 
@@ -53,7 +56,7 @@ AEM Communities提供通知區段，可顯示已登入社群成員感興趣的�
 
 **啟用追蹤**
 
-必須配置元件以啟用以下功能。 允許以下功能：部落格 [、論壇](blog-feature.md)、 [QnQn](forum.md)、Filary [brary、elignary行事歷、](working-with-qna.md)[](calendar.md)[](file-library.md)[](comments.md)elicary注釋。
+必須配置元件以啟用以下功能。 允許以下功能：部落格 [、論壇](blog-feature.md)、 [QnQnPn](forum.md)、Filary [brary、elicary行事歷、](working-with-qna.md)[](calendar.md)[](file-library.md)[](comments.md)elicary注釋。
 
 請注意，
 
