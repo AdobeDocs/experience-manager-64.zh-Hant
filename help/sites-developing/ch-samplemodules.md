@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1194'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ contexthub.base UI模組類型是所有其他UI模組類型的基本類型。 �
 
 提供下列功能：
 
-* **** 標題和圖示：指定UI模組的標題和圖示。 您可使用URL或Coral UI圖示庫來參考圖示。
-* **** 儲存資料：標識要從中檢索資料的一個或多個儲存。
-* **** 內容：指定UI模組中顯示的內容，如同ContextHub工具列中顯示的內容。
-* **** 快顯內容：指定在按一下或點選UI模組時，在快顯視窗中顯示的內容。
-* **** 全螢幕模式：控制是否允許全螢幕模式。
+* **標題和圖示：** 指定UI模組的標題和圖示。 您可使用URL或Coral UI圖示庫來參考圖示。
+* **儲存資料：** 標識要從中檢索資料的一個或多個儲存。
+* **內容：** 指定UI模組中顯示的內容，如同ContextHub工具列中顯示的內容。
+* **快顯內容：** 指定在按一下或點選UI模組時，在快顯視窗中顯示的內容。
+* **全螢幕模式：** 控制是否允許全螢幕模式。
 
 原始碼位於/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js。
 
@@ -43,31 +46,31 @@ contexthub.base UI模組類型是所有其他UI模組類型的基本類型。 �
 
 使用JSON格式的Javascript物件，設定contexthub.base UI模組。 包含下列任何屬性以設定UI模組功能：
 
-* **** 影像：影像的URL，以顯示為圖示。
-* **** 表徵圖：Coral UI圖 [示類的名稱](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 。 如果您同時為圖示和影像屬性指定值，則會使用影像。
+* **影像：** 影像的URL，以顯示為圖示。
+* **表徵圖：** Coral UI圖 [示類的名稱](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 。 如果您同時為圖示和影像屬性指定值，則會使用影像。
 
-* **** 標題：UI模組的標題。 當指針暫停在UI模組表徵圖上時，標題將出現。
-* **** 全螢幕：一個布爾值，指示UI模組是否支援全屏模式。 使用 `true` 支援全螢幕，並 `false` 防止全螢幕模式。
+* **標題：** UI模組的標題。 當指針暫停在UI模組表徵圖上時，標題將出現。
+* **全螢幕：** 一個布爾值，指示UI模組是否支援全屏模式。 使用 `true` 支援全螢幕，並 `false` 防止全螢幕模式。
 
-* **** 範本：Handlebars [範本](https://handlebarsjs.com/) ，指定要在ContextHub工具列中演算的內容。 最多使用兩個 `<p>` 標籤。
+* **範本：** Handlebars [範本](https://handlebarsjs.com/) ，指定要在ContextHub工具列中演算的內容。 最多使用兩個 `<p>` 標籤。
 
-* **** storeMapping:密鑰／儲存映射。 使用Handlebar範本中的索引鍵，存取相關的ContextHub儲存資料。
-* **** 清單：在按一下UI模組時，要在快顯視窗中顯示為清單的項目陣列。 如果您包含此項目，請勿包含poverTemplate。 該值是具有以下鍵的對象陣列：
+* **storeMapping:** 密鑰／儲存映射。 使用Handlebar範本中的索引鍵，存取相關的ContextHub儲存資料。
+* **清單：** 在按一下UI模組時，要在快顯視窗中顯示為清單的項目陣列。 如果您包含此項目，請勿包含poverTemplate。 該值是具有以下鍵的對象陣列：
 
-   * 標題：此項目要顯示的文本
-   * 影像：（選用）應顯示在左側影像的URL
-   * 表徵圖：（可選）應顯示在左側的CUI表徵圖類；如果指定影像，則忽略
-   * 選取：（可選）一個布林值，它指定是否應將此項目顯示為選定項(true=selected)。 依預設，選取的項目會使用粗體顯示。 使用屬 `listType` 性來設定其他外觀（請參閱下面）。
+   * 標題： 此項目要顯示的文本
+   * 影像： （選用）應顯示在左側影像的URL
+   * 表徵圖： （可選）應顯示在左側的CUI表徵圖類； 如果指定影像，則忽略
+   * 選取： （可選）一個布林值，它指定是否應將此項目顯示為選定項(true=selected)。 依預設，選取的項目會使用粗體顯示。 使用屬 `listType` 性來設定其他外觀（請參閱下面）。
 
-* **** listType:用於快顯清單項目的樣式。 請使用下列其中一個值：
+* **listType:** 用於快顯清單項目的樣式。 請使用下列其中一個值：
 
    * checkmark
    * 核取方塊
    * 無線電
 
-* **** 快顯範本：Handlebars範本，指定在按下UI模組時，要在快顯視窗中演算的內容。 如果您包含此項目，請勿包含該 `list` 項目。
+* **快顯範本：** Handlebars範本，指定在按下UI模組時，要在快顯視窗中演算的內容。 如果您包含此項目，請勿包含該 `list` 項目。
 
-### 例如 {#example}
+### 範例 {#example}
 
 下面的示例將contexthub.base UI模組配置為顯示來自 [contexthub.emulators儲存的資訊](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) 。 項目 `template` 示範如何使用項目建立的索引鍵從商店取得 `storeMapping` 資料。
 
@@ -109,7 +112,7 @@ contexthub.browserinfo UI模組的實例不需要「詳細配置」的值。 下
 
 contexthub.datetime UI模組顯示儲存在名為datetime的儲存中的日期和時間，該儲存基於 [](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) contexthub.datetime儲存候選項。
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![chlimage_1-70](assets/chlimage_1-78.png)
 
 此模組提供快顯表格，讓您變更商店中的日期和時間。
 
