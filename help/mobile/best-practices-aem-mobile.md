@@ -1,6 +1,6 @@
 ---
-title: 最佳實務
-seo-title: 最佳實務
+title: 最佳作法
+seo-title: 最佳作法
 description: 請依照本頁瞭解最佳實務和准則，以協助想要建立行動應用程式範本和元件的資深AEM開發人員建立網站。
 seo-description: 請依照本頁瞭解最佳實務和准則，以協助想要建立行動應用程式範本和元件的資深AEM開發人員建立網站。
 uuid: 7733c8b1-a88c-455c-8080-f7add4205b92
@@ -11,11 +11,14 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a0647696-72c3-409b-85ba-9275d8f99cff
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '623'
+ht-degree: 1%
 
 ---
 
 
-# Best Practices {#best-practices}
+# 最佳作法 {#best-practices}
 
 >[!NOTE]
 >
@@ -23,14 +26,15 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 建立AEM Mobile隨選服務應用程式與建立直接在Cordova（或PhoneGap）殼層中執行的應用程式不同。 開發人員應熟悉：
 
-* 現成可支援的外掛程式，以及AEM mobile專用的外掛程式。
+* 現成可支援的外掛程式，以及AEM Mobile專用的外掛程式。
 
 >[!NOTE]
 >
 >若要深入瞭解外掛程式，請參閱下列資源：
 >
->* [在AEM mobile中使用Cordova增效模組](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [使用AEM mobile專用的Cordova增效模組](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [在AEM Mobile中使用Cordova增效模組](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [使用AEM Mobile專用的Cordova增效模組](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+
 >
 
 
@@ -66,7 +70,7 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 **偏好應用程式專用的用戶端JS和CSS程式庫，而非網頁專用的程式庫**
 
-* 若要避免在jQuery mobile等程式庫中產生負擔，以處理大量裝置和瀏覽器
+* 若要避免在jQuery Mobile等程式庫中產生負擔，以處理大量裝置和瀏覽器
 * 當範本在應用程式的Web檢視中執行時，您可以控制應用程式將要支援的平台和版本，以及JavaScript支援將會存在的知識。 例如，相較於jQuery Mobile和Onsen UI，偏好Ion（可能只是CSS），而非Bootstrap。
 
 >[!NOTE]
