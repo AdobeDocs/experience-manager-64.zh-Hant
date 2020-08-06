@@ -4,6 +4,9 @@ description: 將翻譯雲服務應用於資料夾
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 54%
 
 ---
 
@@ -34,7 +37,7 @@ Adobe Experience Manager(AEM)可讓您從您選擇的翻譯供應商取得雲端
 
 1. 在工具列中，按一下/點選「 **[!UICONTROL 儲存]**」，然後按一下「確定 **** 」以關閉對話方塊。轉譯服務會套用至資料夾。
 
-## 套用自訂轉譯連接器 {#applying-custom-translation-connector}
+## 套用自訂轉譯連接器  {#applying-custom-translation-connector}
 
 如果要為要用於翻譯工作流的翻譯服務應用自定義連接器。若要套用自訂連接器，請先從「封裝管理員」安裝連接器。然後，從雲端服務主控台設定連接器。在您設定連接器後，「套用轉譯服務」中所述的「雲端服務」標籤中的連接器清 [單中會顯示此連接器](transition-cloud-services.md#applying-the-translation-services)。在您應用自定義連接器並運行翻譯工作流後，翻譯項目的「 **[!UICONTROL Translation Summary]** 」 (翻譯摘要) 表徵圖會在heads **[!UICONTROL Provider]** and **[!UICONTROL Method下顯示連接器詳細資訊]**。
 
