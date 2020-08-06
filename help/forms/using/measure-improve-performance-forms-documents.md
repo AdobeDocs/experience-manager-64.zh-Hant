@@ -10,6 +10,9 @@ topic-tags: integrations
 discoiquuid: 6b62b280-d101-410a-ba8c-02940f766c32
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ## 挑戰 {#the-challenge-br}
 
-企業組織正日益增強其能力，並鼓勵其客戶使用跨多個通道的數位自助服務進行交易。 然而，如果沒有一對一的回饋機制，評估成功程度並嘗試數位表單以增強客戶體驗並提升轉化率就變得十分困難。
+企業組織正日益增強其能力，並鼓勵客戶使用跨多個通道的數位自助服務進行交易。 然而，如果沒有一對一的回饋機制，評估成功程度並嘗試數位表單以增強客戶體驗並提升轉化率就變得十分困難。
 
 為獲得最大的投資報酬率，企業組織必須監控客戶與服務的互動方式，並嘗試數位工件（表格）以增強客戶體驗。 若要衡量成功並定義改進策略，組織需要回答以下問題：
 
@@ -36,7 +39,7 @@ AEM Forms已與 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 讓我們詳細瞭解如何評估表單的效能並改善轉換率。
 
-### Target audience {#target-audience}
+### 目標受眾 {#target-audience}
 
 * 負責行銷策略與成功的商業使用者和分析師
 * 負責基礎架構和解決方案設定和維護的IT人員
@@ -49,12 +52,12 @@ AEM Forms已與 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 ### 假設 {#assumptions}
 
-* 您已擁有Adobe Marketing cloud帳戶，並已註冊Analytics和Target解決方案。
+* 您已擁有Adobe Marketing Cloud帳戶，並已註冊Analytics和Target解決方案。
 * 您有已發佈的調適性表單，客戶可以存取。
 
 ### 工作流程步驟 {#workflow-steps}
 
-#### 步驟1:在AEM Forms中設定Analytics和Target {#step-configure-analytics-and-target-in-aem-forms-br}
+#### 步驟1: 在AEM Forms中設定Analytics和Target {#step-configure-analytics-and-target-in-aem-forms-br}
 
 **設定 Analytics**
 
@@ -72,11 +75,11 @@ AEM Forms已與 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 若要針對您的最適化表單建立和執行A/B測試，請依「在AEM表單中設定和整合Target」中的說 [明，在AEM表單中設定Target](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p)。
 
-#### 步驟2:檢視分析報表 {#step-view-analytics-report-br}
+#### 步驟2: 檢視分析報表 {#step-view-analytics-report-br}
 
 當您的客戶存取並與啟用Analytics的表單互動時，其互動會擷取到高度安全的Analytics資料庫。 資料庫由客戶機分段，並可通過安全連接訪問。
 
-您可以從AEM中檢視啟用分析的表單並分析資料的報表。 要查看報表，請執行以下操作：
+您可以從AEM中檢視啟用分析的表單並分析資料的報表。 要查看報表：
 
 1. 在AEM伺服器上，導覽至「表 **單>表單與檔案」**。
 1. 選取您要分析報表的表單。
@@ -88,23 +91,23 @@ AEM Forms已與 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 最適化表單的分析報表會在表單層級擷取下列關鍵績效指標(KPI):
 
-* **平均填寫時間**:填寫表單的平均時間
-* **印象**:表單出現在搜尋結果中的次數
+* **平均填寫時間**: 填寫表單的平均時間
+* **印象**: 表單出現在搜尋結果中的次數
 
-* **轉譯**:表單已轉譯或開啟的次數
-* **草稿**:表單已儲存為草稿的次數
+* **轉譯**: 表單已轉譯或開啟的次數
+* **草稿**: 表單已儲存為草稿的次數
 
-* **提交**:提交表單的次數
-* **中止**:使用者未填妥表單而離開的次數
-* **瀏覽／提交**:每次提交的瀏覽次數比例
+* **提交**: 提交表單的次數
+* **中止**: 使用者未填妥表單離開的次數
+* **瀏覽／提交**: 每次提交的瀏覽次數比例
 
 此外，您也可以取得表單中每個面板的下列詳細資訊：
 
-* **時間**:面板及其欄位的平均逗留時間（秒）
+* **時間**: 面板及其欄位的平均逗留時間（秒）
 
-* **錯誤**:每1000個表單轉譯在面板及其欄位上遇到的錯誤數
+* **錯誤**: 每1000個表單轉譯在面板及其欄位上遇到的錯誤數
 
-* **說明**:使用者依1000個表單轉譯存取面板及其欄位的上下文說明次數
+* **說明**: 使用者依1000個表單轉譯存取面板及其欄位的上下文說明次數
 
 ![最適化表單的範例分析報表](assets/summary-report.png)
 
@@ -112,9 +115,9 @@ AEM Forms已與 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 >[!NOTE]
 >
->您可以從Adobe Marketing cloud的Analytics帳戶檢視詳細報表，並深入瞭解客戶及其與表單的互動。
+>您可以從Adobe Marketing Cloud的Analytics帳戶檢視詳細報表，並深入瞭解客戶及其與表單的互動。
 
-#### 步驟3:分析資料點 {#step-analyze-data-points}
+#### 步驟3: 分析資料點 {#step-analyze-data-points}
 
 在此步驟中，您將分析分析報表中的資料點，並推斷表單的執行方式。 如果它不符合您的成功KPI，您將根據資料建構假設，並尋找可能的解決方案來修正問題。 例如：
 
@@ -124,7 +127,7 @@ AEM Forms已與 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 分析這些資料點並達成假設後，請在表單中進行必要的變更。
 
-#### 步驟4:驗證您的分析和修正 {#step-validate-your-analysis-and-fixes}
+#### 步驟4: 驗證您的分析和修正 {#step-validate-your-analysis-and-fixes}
 
 在此步驟中，您將驗證您在表單中所做的變更，並驗證其是否影響轉換率。
 
