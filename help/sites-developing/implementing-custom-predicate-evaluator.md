@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
 
 # Implementing a Custom Predicate Evaluator for the Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-本節說明如何透過實作自訂 [謂詞求值器來擴充Query Builder](/help/sites-developing/querybuilder-api.md) 。
+本節說明如何透過實作自訂 [述詞評估器來擴充Query Builder](/help/sites-developing/querybuilder-api.md) 。
 
 ## 概覽 {#overview}
 
@@ -67,7 +70,7 @@ GITHUB代碼
 
 ### 使用預設謂詞評估器查詢複製元資料 {#querying-replication-metadata-with-default-predicate-evaluators}
 
-以下查詢讀取自年初以 `/content` 來已激活的分 `admin` 支中的節點清單。
+以下查詢讀取自年初以 `/content` 來已激活 `admin` 的分支中節點的清單。
 
 ```xml
 path=/content
@@ -103,7 +106,7 @@ replic.action=Activate
 
 >[!NOTE]
 >
->How to Build AEM Projects using Apache Maven中記錄了使用maven的新AEM專 [案設定](/help/sites-developing/ht-projects-maven.md)。
+>How to Build AEM Projects using Apache Maven中記錄了使用maven的新AEM專案 [設定](/help/sites-developing/ht-projects-maven.md)。
 
 首先，您需要更新專案的Maven相依性。 該 `PredicateEvaluator` 對象是對象的一 `cq-search` 部分，因此需要將其添加到Maven pom檔案中。
 
