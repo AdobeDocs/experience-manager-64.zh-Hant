@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 6%
 
 ---
 
@@ -42,21 +45,21 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 
 節點層級權限決定連結是否可見。 相關節點包括：
 
-* **** 網站： `/libs/wcm/core/content/siteadmin`
+* **網站：** `/libs/wcm/core/content/siteadmin`
 
 * **數位資產:** `/libs/wcm/core/content/damadmin`
 
-* **** 社群： `/libs/collab/core/content/admin`
+* **社群：** `/libs/collab/core/content/admin`
 
-* **** 促銷活動： `/libs/mcm/content/admin`
+* **促銷活動：** `/libs/mcm/content/admin`
 
-* **** 收件匣： `/libs/cq/workflow/content/inbox`
+* **收件匣：** `/libs/cq/workflow/content/inbox`
 
-* **** 使用者： `/libs/cq/security/content/admin`
+* **使用者：** `/libs/cq/security/content/admin`
 
-* **** 工具： `/libs/wcm/core/content/misc`
+* **工具：** `/libs/wcm/core/content/misc`
 
-* **** 標籤： `/libs/cq/tagging/content/tagadmin`
+* **標籤：** `/libs/cq/tagging/content/tagadmin`
 
 例如：
 
@@ -131,11 +134,11 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
    <td><code>/libs/cq/core/content/welcome/features/crxde</code></td> 
   </tr> 
   <tr> 
-   <td> 封裝</td> 
+   <td> 套件</td> 
    <td><code>/libs/cq/core/content/welcome/features/packages</code></td> 
   </tr> 
   <tr> 
-   <td> Package Share</td> 
+   <td> 套件共用</td> 
    <td><code>/libs/cq/core/content/welcome/features/share</code></td> 
   </tr> 
   <tr> 
@@ -147,7 +150,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
    <td><code>/libs/cq/core/content/welcome/features/backup</code></td> 
   </tr> 
   <tr> 
-   <td> Web 控制台<br /> </td> 
+   <td> Web 主控台<br /> </td> 
    <td><code>/libs/cq/core/content/welcome/features/config</code></td> 
   </tr> 
   <tr> 
@@ -196,6 +199,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 >執行下列查詢以查看現有清單：
 >
 >* `select * from cq:Console`
+
 >
 
 
