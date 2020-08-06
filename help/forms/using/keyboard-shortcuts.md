@@ -177,7 +177,7 @@ ht-degree: 0%
    <td>Fn+Shift+向下鍵</td> 
   </tr>
   <tr>
-   <td><p>將游標移動到頁面結尾</p> </td> 
+   <td><p>將游標移至頁面結尾</p> </td> 
    <td><p>向下頁面</p> </td> 
    <td>Fn+向下鍵</td> 
   </tr>
