@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ HTML5表格使用標準的HTML結構，可讓HTML的一般協助工具與這些�
 
 ## 協助工具標準 {#accessibility-standards}
 
-HTML5表格符合第508節中已知例外的協助工具規定。 如需詳 [細資訊，請參閱HTML5表單的VPAT](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) 。
+HTML5表格符合第508節中已知例外的協助工具規定。 如需詳 [細資訊，請參閱HTML5表單的](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) VPAT。
 
 ## HTML5表單的認證螢幕閱讀程式 {#certified-screen-readers-for-html-forms}
 
