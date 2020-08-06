@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 translation-type: tm+mt
 source-git-commit: 97db2126a4a20d82f964102d9ae3afcac94d830c
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ source-git-commit: 97db2126a4a20d82f964102d9ae3afcac94d830c
 
 >[!NOTE]
 >
->請確定您還要進行必要的 [Dispatcher配置更改](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) ，以便使用CSRF Protection Framework。
+>請確定您還要進行必 [要的Dispatcher配置更改](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) ，以便使用CSRF Protection Framework。
 
 >[!NOTE]
 >
