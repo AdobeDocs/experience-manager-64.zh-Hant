@@ -1,8 +1,8 @@
 ---
 title: 微調運行狀況監視器效能
 seo-title: 微調運行狀況監視器效能
-description: 瞭解如何微調Health monitor效能
-seo-description: 瞭解如何微調Health monitor效能
+description: 瞭解如何微調Health Monitor效能
+seo-description: 瞭解如何微調Health Monitor效能
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
 source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 1%
 
 ---
 
@@ -30,22 +33,22 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
  <tbody>
   <tr> 
    <td><p>adobe.healthmonitor.enabled</p></td> 
-   <td><p>開啟或關閉Health monitor線程</p></td> 
+   <td><p>開啟或關閉Health Monitor線程</p></td> 
    <td><p>true</p></td> 
   </tr> 
   <tr> 
-   <td><p>adobe.cache.statistics已啟用</p></td> 
+   <td><p>adobe.cache.statistics-enabled</p></td> 
    <td><p>開啟或關閉Gemfire快取</p></td> 
    <td><p>true</p></td> 
   </tr> 
   <tr> 
    <td><p>adobe.healthmonitor.refresh-interval</p></td> 
-   <td><p>Health monitor線程收集統計資訊的間隔（以毫秒為單位）</p></td> 
+   <td><p>Health Monitor線程收集統計資訊的間隔（以毫秒為單位）</p></td> 
    <td><p>10分鐘（600,000毫秒）</p></td> 
   </tr> 
   <tr> 
    <td><p>adobe.cache.multicast-port</p></td> 
-   <td><p>用於與分佈式系統的其他成員通信的組播埠。 如果設定為零，則會禁用成員發現和分發的多播。 </p><p>注意：為不同的分佈式系統選擇不同的組播地址和埠。 請勿僅使用不同的地址。</p></td> 
+   <td><p>用於與分佈式系統的其他成員通信的組播埠。 如果設定為零，則會禁用成員發現和分發的多播。 </p><p>注意： 為不同的分佈式系統選擇不同的組播地址和埠。 請勿僅使用不同的地址。</p></td> 
    <td><p>無預設值。 有效值範圍從0到65535。</p></td> 
   </tr> 
   <tr> 
@@ -70,7 +73,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 ## 將Java選項新增至WebLogic {#add-java-options-to-weblogic}
 
 1. 在Web瀏覽器的URL行中輸入https://[主機名]:[port]/console，以啟動WebLogic管理控制台。
-1. 鍵入您為WebLogic server域建立的用戶名和密碼，然後按一下「更改中心」下的「日誌」，按一下「鎖定和編輯」。
+1. 鍵入您為WebLogic Server域建立的用戶名和密碼，然後按一下「更改中心」下的「日誌」，按一下「鎖定和編輯」。
 1. 在「域結構」下，按一下「環境」>「伺服器」，然後在右窗格中按一下受控伺服器名稱。
 1. 在下一個畫面中，按一下「設定」標籤>「伺服器開始」標籤。
 1. 在「參數」框中，將所需參數附加到當前內容的末尾。 例如，添加——禁用 `Dadobe.healthmonitor.enabled=false` Health Monitor。
@@ -83,10 +86,10 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
    (WebSphere 6.x)按一下「伺服器>應用程式伺服器」
 
-   (WebSphere 7.x)按一下「伺服器>伺服器類型> webSphere應用程式伺服器」
+   (WebSphere 7.x)按一下「伺服器>伺服器類型> WebSphere應用程式伺服器」
 
 1. 在右窗格中，按一下伺服器名稱。
-1. 在「伺服器基礎架構」下，按一下「Java和表單工作流」>「流程定義」。
+1. 在「伺服器基礎架構」下，按一下「Java和表單工作流」>「進程定義」。
 1. 在「其他屬性」下，按一下「Java虛擬機」。
 1. 在「通用JVM參數」框中，鍵入所需參數。
 1. 按一下「確定」或「應用」，然後按一下「直接保存到主配置」。
