@@ -20,7 +20,7 @@ Adobe Experience Manager(AEM)資產使用：
 
 這些工作可以涵蓋各種任務； 例如，使用Adobe InDesign Server處理檔案。
 
-若要將檔案完整上傳至您使用Adobe InDesign建立的AEM資產，會使用Proxy。 這會使用代理工作者與Adobe InDesign Server通訊，在Adobe InDesign Server中執行指令碼 [](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ，以擷取中繼資料並產生AEM Assets的各種轉譯。 Proxy工作者可讓InDesign Server和雲端組態中的AEM例項進行雙向通訊。
+若要將檔案完整上傳至您使用Adobe InDesign建立的AEM資產，會使用Proxy。 這會使用代理工作者與Adobe InDesign Server通訊，在Adobe InDesign Server中執行指令碼 [](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) ，以擷取中繼資料並產生AEM Assets的各種轉譯。 The proxy worker enables the two-way communication between the InDesign Server and the AEM instance(s) in a cloud configuration.
 
 >[!NOTE]
 >
@@ -31,27 +31,27 @@ Adobe Experience Manager(AEM)資產使用：
    >
    >
 * [InDesign Server](https://www.adobe.com/products/indesignserver.html)\
-   >  此引擎可讓您根據您使用InDesign建立的內容，以程式設計方式建立自動化檔案。 它以服務的形式運作，為其 [ExtendScript引擎提供介面](https://www.adobe.com/devnet/scripting.html) 。\
+   >  This engine enables you to programmatically create automated documents based on what you have created with InDesign. 它以服務的形式運作，為其 [ExtendScript引擎提供介面](https://www.adobe.com/devnet/scripting.html) 。\
    >  這些指令碼是以ExtendScript編寫，類似於javascript。 如需Indesign指令碼的詳細資訊，請參 [閱https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
 
 >
 
 
 
-## 抽取的運作方式 {#how-the-extraction-works}
+## How the Extraction Works {#how-the-extraction-works}
 
-InDesign Server可與AEM Assets整合，讓使用InDesign( `.indd`)建立的檔案可以上傳、產生轉譯、提取 *所有媒體* （例如視訊）並儲存為資產：
+The InDesign Server can be integrated with AEM Assets so that files created with InDesign ( `.indd`) can be uploaded, renditions generated, *all* media extracted (for example, video) and stored as assets:
 
 >[!NOTE]
 >
->舊版AEM可以擷取XMP和縮圖，現在所有媒體都可以擷取。
+>Previous versions of AEM were able to extract XMP and the thumbnail, now all media can be extracted.
 
-1. 將您的檔 `.indd` 案上傳至AEM Assets。
-1. 架構會透過SOAP（簡單物件存取通訊協定）將指令指令碼傳送至InDesign Server。
+1. Upload your `.indd` file to AEM Assets.
+1. A framework sends command script(s) to the InDesign Server via SOAP (Simple Object Access Protocol).
 
    此命令指令碼將：
 
-   * 檢索文 `.indd` 件。
+   * Retrieve the `.indd` file.
    * 執行InDesign Server命令：
 
       * 會擷取結構、文字和任何媒體檔案。
@@ -172,7 +172,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 >
 >該工作器駐留在代理實例上。
 
-1. 在「工具」控制台中，展 **[!UICONTROL 開左窗格中的「雲端服務]** 」設定。 然後展開「 **[!UICONTROL 雲端代理設定」]**。
+1. 在「工具」控制台中，展 **[!UICONTROL 開左窗格中的「雲端服務]** 」設定。 Then expand **[!UICONTROL Cloud Proxy Configuration]**.
 
 1. 連按兩下 **[!UICONTROL IDS工作器]** ，以開啟以進行設定。
 
@@ -209,7 +209,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
    `http://localhost:4502/system/console/configMgr`
 
-1. 在以下位置選擇IDS處理隊列：
+1. Select the IDS processing queue under:
 
    `Apache Sling Job Queue Configuration`
 
@@ -218,11 +218,11 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
    * **[!UICONTROL 類型]** - `Parallel`
    * **[!UICONTROL 最大並行作業]** - `<*x*>` （如上所計算）
 
-1. 儲存這些變更。
-1. 若要啟用Adobe CS6和更新版本的多階段作業支援，請勾選下方 `enable.multisession.name` 的核取方塊 `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`。
+1. Save these changes.
+1. To enable the multi-session support for Adobe CS6 and late, check the `enable.multisession.name` checkbox under `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`.
 1. 通過將SOAP [端點添加到IDS工 `*x*>` 作器配置中，建立&lt; IDS工作器的池](#configuring-the-proxy-worker-for-indesign-server)。
 
-   如果有多部電腦執行InDesign Server，請為每個電腦新增SOAP端點（每部電腦的處理器數-1）。
+   If there are multiple machines running InDesign Servers, add SOAP endpoints (number of processors per machine -1) for each machine.
 
    >[!NOTE]
    >
@@ -230,16 +230,16 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
    >
    >要執行此操作，請啟用配置下的「enable.retry.name」複選框，該 `com.day.cq.dam.ids.impl.IDSJobProcessor.name` 複選框將啟用IDS作業檢索。
    >
-   >此外，在配 `com.day.cq.dam.ids.impl.IDSPoolImpl.name` 置下，為參數設定正值，該值在將IDS從作業處理器列 `max.errors.to.blacklist` 表禁止之前確定作業檢索的數量
+   >Also, under the `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuration, set a positive value for `max.errors.to.blacklist` parameter which determines number of job retrials before barring an IDS from the job handlers list
    >
-   >預設情況下，在IDS工作器經過可配`retry.interval.to.whitelist.name`置（分鐘）時間後重新驗證。 如果線上找到該工作器，則會將其從被阻止的清單中刪除。
+   >By default, after the configurable (`retry.interval.to.whitelist.name`) time in minutes the IDS worker is revalidated. If the worker is found online, it is removed from the blocked list.
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## 啟用Adobe InDesign Server 10.0或更新版本的支援 {#enabling-support-for-indesign-server-or-higher}
+## Enable support for Adobe InDesign server 10.0 or later {#enabling-support-for-indesign-server-or-higher}
 
-對於InDesign Server 10.0或更新版本，請執行下列步驟以啟用多階段作業支援。
+For InDesign server 10.0 or higher, perform the following steps to enable multi-session support.
 
 1. 從實例中開啟配置管 [!DNL Assets] 理器 `https://[aem_server]:[port]/system/console/configMgr`。
 1. 編輯配置 `com.day.cq.dam.ids.impl.IDSJobProcessor.name`。
@@ -247,11 +247,11 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 >[!NOTE]
 >
->為 [!DNL InDesign Server] 與整 [!DNL Assets]合，請使用多核處理器，因為單核系統不支援整合所需的階段作業支援功能。
+>為 [!DNL InDesign Server] 與整 [!DNL Assets]合，請使用多核處理器，因為整合所需的作業階段支援功能在單核系統上不受支援。
 
 ## 設定Experience Manager憑證 {#configure-aem-credentials}
 
-您可以變更從AEM例項存取InDesign伺服器的預設管理員認證（使用者名稱和密碼），而不會中斷與Adobe InDesign伺服器的整合。
+You can change the default administrator credentials (user name and password) for accessing the InDesign server from your AEM instance without breaking the integration with the Adobe InDesign server.
 
 1. 前往 `/etc/cloudservices/proxy.html`.
 1. 在對話方塊中，指定新的使用者名稱和密碼。
