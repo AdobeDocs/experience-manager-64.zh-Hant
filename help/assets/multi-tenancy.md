@@ -4,6 +4,9 @@ description: 根據客戶組織隔離CRX儲存庫中的內容，以防止未經�
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
@@ -17,9 +20,9 @@ Adobe Experience Manager(AEM)Assets會將每個組織的資料儲存在不同的
 
 例如，如果您建立名為的檔案夾， `Demo`AEM資產預設會將檔案夾儲存在CRX `../content/dam/Demo` 的位置。 啟用多租賃功能後，您可以將資料儲存在 `../content/dam/<organization prefix>/<organization id>Demo`。
 
-例如，對於指派給組織的AEM Assets（隨選）的Adobe Marketing cloud使用者 `aodpremium` ，您可以使用多租賃功能來設定下列內容路徑 `../content/dam/mac/aodpremiumDemo`、區隔內容。 在此範例中 `mac` 是組織首碼， `aodpremium` 是組織ID。
+例如，對於指派給組織的AEM Assets（隨選）的Adobe Marketing Cloud使用者 `aodpremium` ，您可以使用多租賃功能來設定下列內容路徑 `../content/dam/mac/aodpremiumDemo`、區隔內容。 在此範例中 `mac` 是組織首碼， `aodpremium` 是組織ID。
 
-根據使用者的組織和ID，此限定路徑會顯示在AEM Assets介面和各種精靈中，包括「移動」和「程式碼片段建立」精靈，以強制進行區段。
+根據使用者的組織和ID，此限定路徑會顯示在AEM Assets介面和各種精靈中，包括「移動」和「程式碼片段建立」精靈，以強制進行區隔。
 
 透過多租賃功能，您可以劃分下列資產和元件類型：
 
