@@ -195,6 +195,7 @@ ht-degree: 0%
    * 指 `PositionRect` 定簽名欄位位置的對象。
    * 指定 `FieldMDPOptions` 在數位簽名套用至簽名欄位後鎖定之PDF檔案欄位的物件。 此參數值是可選的，您可以通過 `null`。
    * 指定 `PDFSeedValueOptions` 各種運行時值的對象。 此參數值是可選的，您可以通過 `null`。
+
    此方 `addSignatureField` 法會傳回 `BLOB` 代表包含簽名欄位之PDF檔案的物件。
 
 1. 將PDF檔案儲存為PDF檔案
@@ -460,6 +461,7 @@ ht-degree: 0%
    * 叫用物件的方法並傳遞列舉值，以鎖 `FieldMDPOptionSpec` 定PDF文 `setMdpValue` 件中的所 `FieldMDPAction.ALL` 有欄位。
    * 調用物件的方法並傳遞物件， `PDFSignatureFieldProperties` 以設定種 `setSeedValue` 子值字典 `PDFSeedValueOptionSpec` 資訊。
    * 調用物件的方法並傳遞物件，以設 `PDFSignatureFieldProperties`定簽名欄位鎖 `setFieldMDP` 定字典 `FieldMDPOptionSpec` 資訊。
+
    >[!NOTE]
    >
    >要查看您可以設定的所有種子值字典值，請查看類 `PDFSeedValueOptionSpec` 參考。 (請參閱 [AEM Forms API參考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en))。
@@ -471,6 +473,7 @@ ht-degree: 0%
    * 儲存 `com.adobe.idp.Document` 包含要修改之簽名欄位之PDF檔案的物件
    * 指定簽名欄位名稱的字串值
    * 存 `PDFSignatureFieldProperties` 儲簽名欄位鎖定字典和種子值字典資訊的對象
+
    此方 `modifySignatureField` 法會傳回 `com.adobe.idp.Document` 儲存包含已修改簽名欄位之PDF檔案的物件。
 
 1. 將PDF檔案儲存為PDF檔案
@@ -520,6 +523,7 @@ ht-degree: 0%
    * 將列舉值指派給物件的資料成員，以 `FieldMDPAction.ALL` 鎖定PDF檔案 `FieldMDPOptionSpec` 中的所 `mdpValue` 有欄位。
    * 將物件指派給物件的資料成 `PDFSeedValueOptionSpec` 員，以設定 `PDFSignatureFieldProperties` 種子值字 `seedValue` 典資訊。
    * 將物件指派給物件的資料成員，以設 `FieldMDPOptionSpec` 定簽名欄位鎖 `PDFSignatureFieldProperties` 定字典 `fieldMDP` 資訊。
+
    >[!NOTE]
    >
    >要查看您可以設定的所有種子值字典值，請查看類 `PDFSeedValueOptionSpec` 參考。 (請參閱 [AEM Forms API參考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en))。
@@ -531,6 +535,7 @@ ht-degree: 0%
    * 儲存 `BLOB` 包含要修改之簽名欄位之PDF檔案的物件
    * 指定簽名欄位名稱的字串值
    * 存 `PDFSignatureFieldProperties` 儲簽名欄位鎖定字典和種子值字典資訊的對象
+
    此方 `modifySignatureField` 法會傳回 `BLOB` 儲存包含已修改簽名欄位之PDF檔案的物件。
 
 1. 將PDF檔案儲存為PDF檔案
@@ -721,6 +726,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
    * 存 `OCSPOptionSpec` 儲聯機證書狀態協定(OCSP)支援首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `CRLPreferences` 證書撤銷清單(CRL)首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `TSPPreferences` 時間戳記提供者(TSP)支援偏好設定的物件。 此參數為可選參數，可以是 `null`。 如需詳細資訊，請參 [閱「AEM Forms API參考」](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+
    此方 `sign` 法會傳回 `com.adobe.idp.Document` 代表已簽署PDF檔案的物件。
 
 1. 儲存已簽署的PDF檔案
@@ -788,6 +794,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
    * 存 `OCSPOptionSpec` 儲聯機證書狀態協定(OCSP)支援首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。 如需此物件的詳細資訊，請參 [閱「AEM Forms API參考」](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 儲存 `CRLPreferences` 證書撤銷清單(CRL)首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `TSPPreferences` 時間戳記提供者(TSP)支援偏好設定的物件。 此參數為可選參數，可以是 `null`。
+
    此方 `sign` 法會傳回 `BLOB` 代表已簽署PDF檔案的物件。
 
 1. 儲存已簽署的PDF檔案
@@ -919,6 +926,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
       * 存 `PDFFormRenderSpec` 儲運行時選項的對象。
       * 包 `URLSpec` 含Forms服務所需URI值的對象。 您可以指 `null` 定此參數值。
       * 儲存 `java.util.HashMap` 檔案附件的對象。 這是可選參數，您可以指 `null` 定是否不想將檔案附加到表單。
+
       該方 `renderPDFForm2` 法返回包 `FormsResult` 含表單資料流的對象
 
    * 調用物件的方法，以 `FormsResult` 擷取PDF表 `getOutputContent` 格。 此方法返回 `com.adobe.idp.Document` 表示互動式表單的對象。
@@ -939,6 +947,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
    * 存 `OCSPPreferences` 儲聯機證書狀態協定(OCSP)支援首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `CRLPreferences` 證書撤銷清單(CRL)首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `TSPPreferences` 時間戳記提供者(TSP)支援偏好設定的物件。 此參數為可選參數，可以是 `null`。
+
    此方 `sign` 法會傳回 `com.adobe.idp.Document` 代表已簽署PDF檔案的物件。
 
 1. 儲存已簽署的PDF檔案
@@ -984,6 +993,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
       * 為欄位分配相應的口令值 `SignatureServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值指 `HttpClientCredentialType.Basic` 派給欄位 `BasicHttpBindingSecurity.Transport.ClientCredentialType`。
    * 將常數值指 `BasicHttpSecurityMode.TransportCredentialOnly` 派給欄位 `BasicHttpBindingSecurity.Security.Mode`。
+
    >[!NOTE]
    >
    >對Forms服務客戶端重複這些步驟。
@@ -1031,6 +1041,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
    * 存 `OCSPPreferences` 儲聯機證書狀態協定(OCSP)支援首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。 如需此物件的詳細資訊，請參 [閱「AEM Forms API參考」](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 儲存 `CRLPreferences` 證書撤銷清單(CRL)首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `TSPPreferences` 時間戳記提供者(TSP)支援偏好設定的物件。 此參數為可選參數，可以是 `null`。
+
    此方 `sign` 法會傳回 `BLOB` 代表已簽署PDF檔案的物件。
 
 1. 儲存已簽署的PDF檔案
@@ -1179,6 +1190,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
    * 存 `OCSPPreferences` 儲聯機證書狀態協定(OCSP)支援首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。 如需此物件的詳細資訊，請參 [閱AEM Forms API參考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
    * 儲存 `CRLPreferences` 證書撤銷清單(CRL)首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `TSPPreferences` 時間戳記提供者(TSP)支援偏好設定的物件。 例如，在建立物件 `TSPPreferences` 後，您可以叫用物件的方法來設定TSP `TSPPreferences` 伺服器的 `setTspServerURL` URL。 此參數為可選參數，可以是 `null`。 如需詳細資訊，請參 [閱「AEM Forms的服務參考」](https://www.adobe.com/go/learn_aemforms_services_63)。
+
    此方 `certify` 法會傳回 `com.adobe.idp.Document` 代表已認證PDF檔案的物件。
 
 1. 將認證的PDF檔案儲存為PDF檔案
@@ -1251,6 +1263,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
    * 儲 `OCSPPreferences` 存線上認證狀態通訊協定(OCSP)支援偏好設定的物件，提供用來認證PDF檔案之憑證狀態的資訊。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `CRLPreferences` 證書撤銷清單(CRL)首選項的對象。 如果未完成撤銷檢查，則不使用此參數，您可以指定 `null`。
    * 儲存 `TSPPreferences` 時間戳記提供者(TSP)支援偏好設定的物件。 例如，建立物件 `TSPPreferences` 後，您可以設定物件的資料成員，以設 `TSPPreferences` 定TSP的 `tspServerURL` URL。 此參數為可選參數，可以是 `null`。
+
    此方 `certify` 法會傳回 `BLOB` 代表已認證PDF檔案的物件。
 
 1. 將認證的PDF檔案儲存為PDF檔案
@@ -1410,6 +1423,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
    * 一個字串值，代表包含要驗證之簽名的簽名欄位名稱。
    * 包 `PKIOptions` 含PKI運行時選項的對象。
    * 包 `VerifySPIOptions` 含SPI資訊的實例。 您可以指定 `null` 此參數。
+
    該方 `verify2` 法傳回包 `PDFSignatureVerificationInfo` 含可用於驗證數字簽名的資訊的對象。
 
 1. 確定簽名的狀態
@@ -1478,6 +1492,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰： 公鑰
    * 一個字串值，代表包含要驗證之簽名的簽名欄位名稱。
    * 包 `PKIOptions` 含PKI運行時選項的對象。
    * 包 `VerifySPIOptions` 含SPI資訊的實例。 您可以指定 `null` 此參數。
+
    該方 `verify2` 法傳回包 `PDFSignatureVerificationInfo` 含可用於驗證數字簽名的資訊的對象。
 
 1. 確定簽名的狀態
@@ -1625,6 +1640,7 @@ AEM Forms提供驗證PDF檔案中所有數位簽名的方式。 假設PDF檔案�
    * 包 `com.adobe.idp.Document` 含包含多個數位簽名之PDF檔案的物件。
    * 包 `PKIOptions` 含PKI運行時選項的對象。
    * 包 `VerifySPIOptions` 含SPI資訊的實例。 您可以指定 `null` 此參數。
+
    此方 `verifyPDFDocument` 法會傳回包 `PDFDocumentVerificationInfo` 含PDF檔案中所有數位簽名資訊的物件。
 
 1. 重複所有簽名
@@ -1690,6 +1706,7 @@ AEM Forms提供驗證PDF檔案中所有數位簽名的方式。 假設PDF檔案�
    * 包 `BLOB` 含包含多個數位簽名之PDF檔案的物件。
    * 包 `PKIOptions` 含PKI運行時選項的對象。
    * 包 `VerifySPIOptions` 含SPI資訊的實例。 您可以為此參數指定null。
+
    此方 `verifyPDFDocument` 法會傳回包 `PDFDocumentVerificationInfo` 含PDF檔案中所有數位簽名資訊的物件。
 
 1. 重複所有簽名
@@ -1789,6 +1806,7 @@ AEM Forms提供驗證PDF檔案中所有數位簽名的方式。 假設PDF檔案�
 
    * 表 `com.adobe.idp.Document` 示PDF檔案的物件，其中包含要移除的簽名。
    * 一個字串值，它指定包含數字簽名的簽名欄位的名稱。
+
    此方 `clearSignatureField` 法會傳回 `com.adobe.idp.Document` 一個物件，該物件代表移除數位簽名的PDF檔案。
 
 1. 將PDF檔案儲存為PDF檔案
@@ -1845,6 +1863,7 @@ AEM Forms提供驗證PDF檔案中所有數位簽名的方式。 假設PDF檔案�
 
    * 包含 `BLOB` 已簽署PDF檔案的物件。
    * 一個字串值，代表包含要移除之數位簽名之簽名欄位的名稱。
+
    此方 `clearSignatureField` 法會傳回 `BLOB` 一個物件，該物件代表移除數位簽名的PDF檔案。
 
 1. 將PDF檔案儲存為PDF檔案
