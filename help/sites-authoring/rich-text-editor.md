@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
 translation-type: tm+mt
 source-git-commit: f1026e4dc9e12f760509a706a92888b90c9af395
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,7 @@ Rich Text Editor(RTE)是在AEM頁面中製作文字的基本建置區塊。 許�
 
 >[!NOTE]
 >
->將嵌套清單複製到RTE中並不如預期。 從Microsoft word複製嵌套清單時，在RTE中貼上文本後，您需要手動清除這些清單。
+>將嵌套清單複製到RTE中並不如預期。 從Microsoft Word複製嵌套清單時，在RTE中貼上文本後，您需要手動清除這些清單。
 
 ## 就地編輯 {#in-place-editing}
 
@@ -35,9 +38,9 @@ Rich Text Editor(RTE)是在AEM頁面中製作文字的基本建置區塊。 許�
 
 此工具列提供下列選項：
 
-* **格式**:設定粗體、斜體和下划線格式。
+* **格式**: 設定粗體、斜體和下划線格式。
 
-* **清單**:建立項目清單或編號清單，或設定縮排。
+* **清單**: 建立項目清單或編號清單，或設定縮排。
 
 * **超連結**
 
@@ -61,7 +64,7 @@ Rich Text Editor(RTE)是在AEM頁面中製作文字的基本建置區塊。 許�
 
 其他豐富式文字編輯器選項包括：
 
-* **錨點**:在文字中建立錨點，您稍後可以連結至／參考。
+* **錨點**: 在文字中建立錨點，您稍後可以連結至／參考。
 * **向左對齊文字**
 * **文字置中**
 * **向右對齊文字**
