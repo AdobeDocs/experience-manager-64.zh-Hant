@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 0%
 
 ---
 
@@ -153,9 +156,10 @@ http://localhost:4502/crx/repository/staging
 1. 按一下 **映射網路驅動器** ，啟動嚮導。
 1. 輸入映射詳細資訊：
 
-   * **驅動器**:選擇任何可用的信函
+   * **驅動器**: 選擇任何可用的信函
    * **資料夾**: `http://localhost:4502`
    * 檢查使 **用不同憑據進行連接**
+
    按一下「完成」
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
@@ -229,7 +233,7 @@ GNOME現在已將AEM裝載為卷，您可以像使用任何其他卷一樣使用
 
 1. 在資 **料夾**，輸入 `dav`
 
-1. 按一 **下儲存並連線**。
+1. Click **Save and Connect**.
 1. 當提示輸入密碼時，輸入密碼，然 `admin` 後按一下 **Connect**。
 
 KDE現在已將AEM裝入為磁碟區，您可像使用其他磁碟區一樣使用。
