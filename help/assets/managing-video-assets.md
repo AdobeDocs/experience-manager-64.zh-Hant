@@ -7,13 +7,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
 source-git-commit: 9ced187ddc9bb2d12922fcc734b20ef9767d8fbf
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 8%
 
 ---
 
 
 # 管理影片資產 {#managing-video-assets}
 
-瞭解如何在Adobe Experience Manager(AEM)Assets中管理和編輯視訊資產。 此外，如果您取得使用Dynamic Media的授權，請參閱 [Dynamic Media video檔案](video.md)。
+瞭解如何在Adobe Experience Manager(AEM)Assets中管理和編輯視訊資產。 此外，如果您取得使用Dynamic Media的授權，請參閱 [Dynamic Media Video檔案](video.md)。
 
 ## 上傳和預覽視訊資產 {#uploading-and-previewing-video-assets}
 
