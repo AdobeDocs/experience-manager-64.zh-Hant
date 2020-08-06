@@ -8,11 +8,14 @@ contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1032'
+ht-degree: 0%
 
 ---
 
 
-# AEM 6.4 Communities的新增功能 {#what-s-new-in-aem-communities}
+# What&#39;s New in AEM 6.4 Communities {#what-s-new-in-aem-communities}
 
 AEM Communities為企業提供一個架構，讓其合作夥伴、客戶和員工之間進行協作。 它將社交功能引入網站結構，並協助企業與利益相關者互動並傳授知識，以提升其品牌價值。
 
@@ -48,7 +51,7 @@ AEM 6.4 Communities在社群網站主控台的社群群組收集中，在現有�
 
 AEM 6.4 Communities對協調功能的改善很少，這有助於簡化社群協調者的日常生活。
 
-### 自動偵測垃圾訊息 {#automatic-spam-detection}
+### 自動偵測垃圾訊息  {#automatic-spam-detection}
 
 新的垃圾訊息偵測引擎有助於篩選社群網站或群組上不想要和未經請求的使用者產生的內容。 啟用後，此功能可以根據預先定義的垃圾訊息字詞集，將使用者產生的內容標示為垃圾訊息或非垃圾訊息。 協調者可進一步對內容採取行動以拒絕或允許內容出現在發佈例項中。 這些協調動作可以內嵌執行或透過大量協調主控台執行。
 
