@@ -1,8 +1,8 @@
 ---
 title: 使用Social Tag Cloud
 seo-title: 使用Social Tag Cloud
-description: 新增Social Tag cloud元件至頁面
-seo-description: 新增Social Tag cloud元件至頁面
+description: 新增Social Tag Cloud元件至頁面
+seo-description: 新增Social Tag Cloud元件至頁面
 uuid: 8c400030-976c-457a-bb5f-e473909647a9
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 1%
 
 ---
 
@@ -53,19 +56,22 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
    * `From page and child pages`
    * `All tags`
+
    預設值 `From page and child pages`為，其中「頁面」是指下 **方的** 「頁面」設定。
 
-* **[!UICONTROL 頁面]**(若非頁面 `All tags)` 的UGC路徑，則為必要項目)。 如果保留空白，預設為目前頁面。
+* **[!UICONTROL 頁面]**(若不需要，則為必要 
+`All tags)` 頁面的UGC路徑。 如果保留空白，預設為目前頁面。
 
 * **[!UICONTROL 標籤上沒有連結]**&#x200B;如果勾選，標籤會以純文字顯示在標籤雲端。 如果取消勾選，標籤會顯示為活動連結，可搜尋套用該標籤的所有內容。 預設為未勾選，且 **[!UICONTROL 需要設定搜尋結果路徑]** 。
 
-* **[!UICONTROL 搜尋結果路]**&#x200B;徑：放置元件之頁面的路徑， `Search Result` 設定為參照UGC，其中包含 **** Page設定所指定的UGC路徑。
+* **[!UICONTROL 搜尋結果路]**&#x200B;徑指向 
+`Search Result` 元件已放置，已設定為參考UGC，其中包含 **Page設定所指定的UGC路徑** 。
 
-## 變更Social Tag cloud的顯示 {#change-display-of-social-tag-cloud}
+## 變更Social Tag Cloud的顯示 {#change-display-of-social-tag-cloud}
 
 若要編輯 **Social Tag Cloud**，請進入「 [Design Mode](../../help/sites-authoring/default-components-designmode.md) 」（設計模式）並連按兩下置入的元件，以開啟具有其他標籤 `Social Tag Cloud` 的對話方塊。
 
-使用「 **[!UICONTROL Social Tag Cloud(Design)」標籤]** ，指定標籤的顯示方式。 標籤可以是簡單標籤、預設名稱空間中的單個單詞或分層分類：
+使用「 **[!UICONTROL Social標籤雲端（設計）」標籤]** ，指定標籤的顯示方式。 標籤可以是簡單標籤、預設名稱空間中的單個單詞或分層分類：
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
@@ -75,6 +81,7 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
    * 已核取: `Geometrixx Media: Gadgets / Cars`
    * 未核取: `Cars`
+
    簡單標籤沒有區別。
 
    預設為未勾選。
@@ -87,8 +94,9 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
    可套用3個標籤： `Geometrixx Media (the namespace)`、 `Gadgets`和 `Cars`
 
-   * 已勾選：只 `Cars` 會顯示，如果套用
-   * 未勾選：並 `Geometrixx Media` 且 `Gadgets``Cars` 會顯示（如果套用）
+   * 已勾選： 只 `Cars` 會顯示，如果套用
+   * 未勾選： `Geometrixx Media` 和 `Gadgets`也會顯 `Cars` 示（如果套用）
+
    簡單的標籤是葉標籤。
 
    預設為未勾選。
