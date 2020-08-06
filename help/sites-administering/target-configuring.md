@@ -92,7 +92,7 @@ ht-degree: 0%
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-   按一下 **確定**。 當您使用Adobe Target定位內容時，可以選 [取報表來源](/help/sites-authoring/content-targeting-touch.md)。
+   按一下&#x200B;**「確定」**。當您使用Adobe Target定位內容時，可以選 [取報表來源](/help/sites-authoring/content-targeting-touch.md)。
 
 ## Manually Integrating with Adobe Target {#manually-integrating-with-adobe-target}
 
