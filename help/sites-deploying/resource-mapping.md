@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
 映射形成兩個清單，JCR資源解析器會評估（自上而下）以查找匹配。
 
-在Felix控制台的 **JCR ResourceResolver** （資源解析器）選項下，可檢視這些清單（連同設定資訊）;例如， `https://<host>:<port>/system/console/jcrresolver`:
+在Felix控制台的 **JCR ResourceResolver** （資源解析器）選項下，可檢視這些清單（連同設定資訊）; 例如， `https://<host>:<port>/system/console/jcrresolver`:
 
 * 設定
 
@@ -56,7 +59,7 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
    這可讓您輸入URL或資源路徑。 單 **擊解析** 或 **映射** ，確認系統將如何轉換條目。
 
-* **Resolver Map Entries** resourceResolver.resolve方法用於將URL映射到資源的條目清單。
+* **Resolver Map Entries** ResourceResolver.resolve方法用於將URL映射到資源的條目清單。
 
 * **映射映射條**&#x200B;目ResourceResolver.map方法用於將資源路徑映射到URL的條目清單。
 
@@ -66,7 +69,7 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
 例如：
 
-**圖樣**`^[^/]+/[^/]+/welcome$`
+**圖樣** `^[^/]+/[^/]+/welcome$`
 
 將觸發：
 
@@ -84,7 +87,7 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
 >[!NOTE]
 >
->有許多資源可協助說明如何定義規則運算式；例如 [https://www.regular-expressions.info/](https://www.regular-expressions.info/)。
+>有許多資源可協助說明如何定義規則運算式； 例如 [https://www.regular-expressions.info/](https://www.regular-expressions.info/)。
 
 ## 在AEM中建立對應定義 {#creating-mapping-definitions-in-aem}
 
@@ -102,23 +105,23 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
 1. 建立新節點：
 
-   * **類型**`sling:Mapping`
+   * **類型** `sling:Mapping`
 
       此節點類型用於此類映射，但其用途不是強制性的。
 
-   * **名稱**`localhost_any`
+   * **名稱** `localhost_any`
 
 1. 按一下「 **全部儲存**」。
 1. **將** 下列屬性新增至此節點：
 
-   * **名稱**`sling:match`
+   * **名稱** `sling:match`
 
-      * **類型**`String`
-      * **值**`localhost.4503/`
-   * **名稱**`sling:internalRedirect`
+      * **類型** `String`
+      * **值** `localhost.4503/`
+   * **名稱** `sling:internalRedirect`
 
-      * **類型**`String`
-      * **值**`/content/`
+      * **類型** `String`
+      * **值** `/content/`
 
 
 1. 按一下「 **全部儲存**」。
