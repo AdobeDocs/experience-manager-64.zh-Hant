@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 2%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 ## 建立第一頁 {#create-first-pages}
 
-現在有了頁面 [範本](initial-app.md#createthepagetemplate)，我們可以在/content目錄中建立網站的根頁面。
+現在有了頁面范 [本](initial-app.md#createthepagetemplate)，我們可以在/content目錄中建立網站的根頁面。
 
 1. 標準UI目前提供建立網站的藍圖。 由於本教學課程是建立簡單網站，因此傳統的UI十分實用。
 
@@ -53,6 +56,7 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
    * 名稱: `an-scf-sandbox`
    * 選取 **[!UICONTROL SCF沙盒播放範本]**
    * Click **[!UICONTROL Create]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
 1. 在瀏覽器窗格中，選擇您剛建立的頁面，然 `/Websites/SCF Sandbox Site`後按一下「 **[!UICONTROL 新建」>「新建頁面]**:
@@ -85,7 +89,7 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 定義，提供使用來參考指令碼中設計資產的選用功能 `currentDesign.getPath()`。 例如
 
-* &lt;%字串favIcon = currentDesign.getPath()+ &quot;/favicon.ico&quot;;%>
+* &lt;%字串favIcon = currentDesign.getPath()+ &quot;/favicon.ico&quot;; %>
 
 
    * 名稱: `cq:designPath`
