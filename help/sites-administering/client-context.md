@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d13c68ba-be49-440b-8bbe-a10edbfb9b9b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 0%
 
 ---
 
@@ -27,10 +30,10 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 在發佈和作者環境中，它都會顯示以下資訊：
 
-* 訪客；視您的例項而定，會要求或衍生特定資訊。
+* 訪客； 視您的例項而定，會要求或衍生特定資訊。
 * 頁面標籤和目前訪客存取這些標籤的次數（當您將滑鼠移至特定標籤上方時，會顯示此點）。
 * 頁面資訊。
-* 有關技術環境的資訊；例如IP位址、瀏覽器和螢幕解析度。
+* 有關技術環境的資訊； 例如IP位址、瀏覽器和螢幕解析度。
 * 目前已解決的任何區段。
 
 圖示（僅在作者環境中提供）允許您配置客戶端上下文的詳細資訊：
@@ -57,13 +60,13 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 * 滑鼠 **X位置**
 * 滑鼠 **Y位置**
 
-**活動串流** ：提供使用者在各種平台上的社交活動資訊；例如，AEM論壇、部落格、評分等。
+**活動串流** ：提供使用者在各種平台上的社交活動資訊； 例如，AEM論壇、部落格、評分等。
 
 **促銷活動** ：讓作者模擬促銷活動的特定體驗。 此元件會覆寫一般促銷活動解析度和體驗選擇，以啟用各種組合的測試。
 
 促銷活動解決方案通常以促銷活動的優先順序屬性為基礎。 通常會根據區段來選取體驗。
 
-**購物車** ：顯示購物車資訊，包括產品項目（標題、數量、價格格式化等）、已解決的促銷活動（標題、訊息等）和憑證（代碼、說明等）。
+**購物車** ：顯示購物車資訊，包括產品項目（標題、數量、價格格式化等）、已解決的促銷活動（標題、訊息等） 和憑證（代碼、說明等）。
 
 購物車作業商店也會使用ClientContextCartServlet通知伺服器已解決的促銷變更（根據區段變更）。
 
@@ -77,7 +80,7 @@ Generic Store必須設定JS轉譯器，以自訂方式顯示資料。
 
 **地理位置** ：顯示用戶端的經緯度。 它使用HTML5地理位置API來查詢瀏覽器的目前位置。 這會導致快顯畫面顯示給訪客，瀏覽器會在此詢問訪客是否同意分享其位置。
 
-當顯示在Context cloud中時，元件會使用Google API將地圖顯示為縮圖。 此元件受Google API使用限制 [約束](https://developers.google.com/maps/documentation/staticmaps/intro#Limits)。
+當顯示在Context Cloud中時，元件會使用Google API將地圖顯示為縮圖。 此元件受Google API使用限制 [約束](https://developers.google.com/maps/documentation/staticmaps/intro#Limits)。
 
 >[!NOTE]
 >
@@ -203,13 +206,13 @@ JSONP商店和其他商店一樣，但是它會載入來自其他網域的資訊
 
 ### 添加屬性元件 {#adding-a-property-component}
 
-在開啟 **ClientContext設計頁面後**，您也可以使用可用的元件來新增屬性(元件會列在側腳或從 **Insert New Component** 對話方塊中，這些元件會在 **Drag元件或此處的資產方塊上按兩下鍵後開啟)****** :
+在開啟 **ClientContext設計頁面後**，您也可以使用可用的元件來新增屬性(元件會列在側腳或從 **Insert New Component** 對話方塊中，這些元件會在 **Drag元件或此處的Assets方塊上按兩下後開啟)****** :
 
 ![clientcontext_alisonparker_new](assets/clientcontext_alisonparker_new.png)
 
 ### 刪除屬性元件 {#removing-a-property-component}
 
-在開啟ClientContext設計頁 **面後**，您也可以 **Remove** a property（如果不再需要）。 其中包括現成可用的屬性；如 **果已移除** ,「重設」將重建這些項目。
+在開啟ClientContext設計頁 **面後**，您也可以 **Remove** a property（如果不再需要）。 其中包括現成可用的屬性； **如果已移除** ,Reset將會重新建立這些檔案。
 
 ## 通過JSONP在客戶端上下文中儲存資料 {#storing-data-in-client-context-via-jsonp}
 
@@ -241,7 +244,7 @@ JSONP商店和其他商店一樣，但是它會載入來自其他網域的資訊
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
 1. 按一下「確定」。
-1. 返回Geometrixx Outdoors首頁並重新整理頁面。 Client Context現在包含來自JSONP store元件的資訊。
+1. 返回Geometrixx Outdoors首頁並重新整理頁面。 Client Context現在包含來自JSONP Store元件的資訊。
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -252,14 +255,14 @@ JSONP商店和其他商店一樣，但是它會載入來自其他網域的資訊
 1. 在您的網頁瀏覽器中開啟「工具」主控台([http://localhost:4502/miscadmin#/etc](http://localhost:4502/miscadmin#/etc))。
 1. 在資料夾樹狀結構中，按一下「工具／區段」資料夾，然後按一下「新增>新資料夾」。 指定下列屬性值，然後按一下「建立」:
 
-   * 名稱：mysegments
-   * 標題：我的區段
+   * 名稱： mysegments
+   * 標題： 我的區段
 
 1. 選取「我的區段」檔案夾，然後按一下「新增>新增頁面」:
 
    1. 在「Title（標題）」中，鍵入Winter。
    1. 選取區段範本。
-   1. 按一下 建立。
+   1. 按一下建立。
 
 1. 按一下右鍵「冬季」段，然後按一下「開啟」。
 1. 將「一般商店屬性」拖曳至預設的AND容器。
@@ -268,10 +271,10 @@ JSONP商店和其他商店一樣，但是它會載入來自其他網域的資訊
 
 1. 連按兩下元件以開啟編輯對話方塊，指定下列屬性值，然後按一下「確定」:
 
-   * 商店：wipmania
-   * 屬性名稱：緯度
-   * 運算元：大於
-   * 屬性值：30
+   * 商店： wipmania
+   * 屬性名稱： 緯度
+   * 運算元： 大於
+   * 屬性值： 30
 
 1. 將指令碼元件拖曳至相同的AND容器，並開啟其編輯對話方塊。 新增下列指令碼，然後按一下「確定」:
 
