@@ -10,6 +10,9 @@ discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
@@ -26,13 +29,14 @@ source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
 
 模型會儲存並建立在啟 `/conf`用「內容片段模型」屬 [性的資料夾下](/help/assets/content-fragments-models.md#enable-content-fragment-models) 。 此設定也可在「設定屬性」中 **看到**，您可從「設定瀏 **覽器」存取**。
 
-1. 透過工具、一般 **、設定瀏覽**&#x200B;器導覽 **至瀏**&#x200B;覽 ****&#x200B;器例如， `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
+1. 透過工具、一般 **、設定瀏覽**&#x200B;器導覽 **至瀏**&#x200B;覽 ****&#x200B;器例如， 
+`http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
 1. 從瀏覽器中，從工具列中選擇適當的 **配置** 「屬性」。
 
    例如，下列項目的屬 `global`性： `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-在模型控制台中，將顯示所有具有「內 **容片段模型」屬性的資料夾** 。 透過工 **具**、資產 **、內**&#x200B;容片段模型導覽 ****;例如， `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
+在模型控制台中，將顯示所有具有「內 **容片段模型」屬性的資料夾** 。 透過工 **具**、資產 **、內**&#x200B;容片段模型導覽 ****; 例如， `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
 
 使用者可 [以使用「建立模型](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) 」精靈(使用 **從主控台建立****** )來建立內容片段模型。
 
@@ -73,18 +77,18 @@ source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
 >
 >在模型編輯器中拖放的所有資料類型，如此執行個體化， **必須**`name` 由使用者輸入屬性。
 >
->**這被視為屬**&#x200B;性名稱&amp;ast;在模型編 **輯器的** 「屬性」(Properties)頁籤中。
+>這被視為屬 **性名稱&amp;ast;** 在模型編 **輯器的** 「屬性」(Properties)頁籤中。
 
 ## 模型編輯器的結構 {#structure-of-the-model-editor}
 
 「內 **容片段模型編輯器** 」包含兩個部分：
 
-* 左側的預覽（或檢視）面板，您可在其中放置項目。 此：
+* 左側的預覽（或檢視）面板，您可在其中放置項目。 此特性：
 
    * 顯示已實例化 **的「資料類型** 」的預覽。
    * 允許在模型編輯器中進行排序。
 
-* 右側 **面板中的**「資料類型/**** 屬性」標籤。 此：
+* 右側 **面板中的**「資料類型/**** 屬性」標籤。 此特性：
 
    * 顯示可拖曳和執行個體化的資料類型清單。
    * 對於現成可用的模型編輯器，清單位於：
@@ -109,7 +113,7 @@ The properties on the right side define a form that is submitted directly into J
 
 當資料類型實例化時，會針對需要在內容片段中呈現元件的每個屬性建立HTML輸入。 例如，這些包括：
 
-* **** 屬性名稱&amp;ast;( `name`)-做為元件的識別碼
+* **屬性名稱&amp;ast;** ( `name`)-做為元件的識別碼
 
 * **渲染方式** ( `metaType`)-鍵入要渲染為
 
