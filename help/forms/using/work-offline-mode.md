@@ -10,6 +10,9 @@ topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 0%
 
 ---
 
@@ -42,9 +45,9 @@ AEM Forms應用程式離線服務可識別表單中使用的資源。 AEM Forms�
 
 1. 在「一般設定」下，您可以執行下列動作：
 
-   * **清除快取**:清除表單相關性的伺服器端快取。
-   * **重設配置**:重設AEM Forms應用程式離線設定。
-   * **快取有效性**:指定伺服器端離線快取的有效期。
-   * **資源觀察路徑**:指定離線服務監視資源更改的路徑。 如果指定路徑中發生任何變更，則會更新所有相依表單的離線快取。 For example, `/etc/clientlibs/fd,/content/dam/images`.
+   * **清除快取**: 清除表單相關性的伺服器端快取。
+   * **重設配置**: 重設AEM Forms應用程式離線設定。
+   * **快取有效性**: 指定伺服器端離線快取的有效期。
+   * **資源觀察路徑**: 指定離線服務監視資源更改的路徑。 如果指定路徑中發生任何變更，則會更新所有相依表單的離線快取。 For example, `/etc/clientlibs/fd,/content/dam/images`.
 
 1. 在「手動資 **源快取** 」頁籤中，指定無法標識的表單相關性離線服務。 您可以指定資源，例如從JavaScript中載入的影像。 AEM Forms應用程式也會針對離線模式下載這些資源。
