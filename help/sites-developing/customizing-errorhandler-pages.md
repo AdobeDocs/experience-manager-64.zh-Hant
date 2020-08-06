@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
 
 # 自訂錯誤處理常式所顯示的頁面{#customizing-pages-shown-by-the-error-handler}
 
-AEM隨附標準錯誤處理常式，可處理HTTP錯誤；例如，顯示：
+AEM隨附標準錯誤處理常式，可處理HTTP錯誤； 例如，顯示：
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -32,7 +35,7 @@ AEM隨附標準錯誤處理常式，可處理HTTP錯誤；例如，顯示：
 
 >[!NOTE]
 >
->在作者例項上， [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) （CQ WCM除錯篩選器）預設為啟用。 這一律會產生回應代碼200。 預設錯誤處理常式會將完整的堆疊追蹤寫入回應。
+>在作者例項上， [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) （CQ WCM除錯篩選器）預設為啟用。 這一律會產生回應代碼200。 預設錯誤處理程式通過將完整堆棧跟蹤寫入響應來響應。
 >
 >在發佈例項上，CQ WCM除錯篩選器一律 *停用* （即使已設定為啟用）。
 
@@ -48,6 +51,7 @@ AEM隨附標準錯誤處理常式，可處理HTTP錯誤；例如，顯示：
 
    * 從 `/libs/sling/servlet/errorhandler/`
    * 至 `/apps/sling/servlet/errorhandler/`
+
    由於目標路徑預設不存在，因此首次執行此操作時需要建立該路徑。
 
 1. 導航到 `/apps/sling/servlet/errorhandler`. 您可以在這裡：
@@ -59,7 +63,7 @@ AEM隨附標準錯誤處理常式，可處理HTTP錯誤；例如，顯示：
 
 >[!CAUTION]
 >
->404.jsp和403.jsp處理常式是專為配合CQ5驗證而設計；尤其是允許在發生這些錯誤時進行系統登錄。
+>404.jsp和403.jsp處理常式是專為配合CQ5驗證而設計； 尤其是允許在發生這些錯誤時進行系統登錄。
 >
 >因此，更換這兩個操縱員應該非常謹慎。
 
@@ -76,9 +80,10 @@ HTTP 500錯誤是由伺服器端例外所造成。
 
    * HTTP回應碼500
    * 異常堆棧跟蹤
+
    在回應本體中。
 
-通 [過自定義錯誤處理程式顯示的頁](#how-to-customize-pages-shown-by-the-error-handler) , `500.jsp` 可以建立指令碼。 但是，只有在明確執行時 `HttpServletResponse.sendError(500)` 才使用；例如從例外捕手那裡。
+通 [過自定義錯誤處理程式顯示的頁](#how-to-customize-pages-shown-by-the-error-handler) , `500.jsp` 可以建立指令碼。 但是，只有在明確執行時 `HttpServletResponse.sendError(500)` 才使用； 例如從例外捕手那裡。
 
 否則，響應代碼設定為500，但不 `500.jsp` 執行指令碼。
 
@@ -86,7 +91,7 @@ HTTP 500錯誤是由伺服器端例外所造成。
 
 >[!CAUTION]
 >
->在作者例項上， [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) （CQ WCM除錯篩選器）預設為啟用。 這一律會產生回應代碼200。 預設錯誤處理常式會將完整的堆疊追蹤寫入回應。
+>在作者例項上， [CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) （CQ WCM除錯篩選器）預設為啟用。 這一律會產生回應代碼200。 預設錯誤處理程式通過將完整堆棧跟蹤寫入響應來響應。
 >
 >對於自訂錯誤處理常式，需要有程式碼為500的回應——因此 [CQ WCM除錯篩選必須停用](/help/sites-deploying/osgi-configuration-settings.md)。 這可確保傳回回回應程式碼500，這會反過來觸發正確的Sling錯誤處理常式。
 >
