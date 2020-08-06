@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +61,7 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
    <td>
     <ul> 
      <li>名稱: <strong><code>outgoing</code></strong></li> 
-     <li>類型：布林值</li> 
+     <li>類型： 布林值</li> 
      <li>值:<br /> 
       <ul> 
        <li><i>true </i>-組 <code>following</code> 件將列出當前已登錄成員的成員 <code>follows</code></li> 
