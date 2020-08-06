@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 translation-type: tm+mt
 source-git-commit: c9591211c80d453de5172c90501d2d2907eba4e6
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 8%
 
 ---
 
@@ -82,7 +85,7 @@ AEM Communities可簡化內部部署社群的建立和管理。 以下說明AEM 
 
 [客戶的使用者介面建議](/help/sites-deploying/ui-recommendations.md)
 
-AEM目前有兩個UI:在同一版本中提供經典和觸控最佳化UI。 因此，客戶必須決定在專案實施期間要使用哪些項目。 本檔案旨在協助您找到正確的選擇。
+AEM目前有兩個UI: 在同一版本中提供經典和觸控最佳化UI。 因此，客戶必須決定在專案實施期間要使用哪些項目。 本檔案旨在協助您找到正確的選擇。
 
 ## 效能 {#performance}
 
