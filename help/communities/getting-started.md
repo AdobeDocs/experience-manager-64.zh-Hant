@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 4f4c73eb-281e-4dfb-9cb0-2341d5ee94ae
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '121'
+ht-degree: 0%
 
 ---
 
 
 # Getting Started with AEM Communities {#getting-started-with-aem-communities}
 
-AEM Communities可讓公司從網站範本資料庫建立專屬品牌化社群體驗。 論壇、群組、部落格、檔案分享、日曆、活動摘要和延伸使用者個人檔案可整合在您的網站中，以促進潛在客戶、客戶和公司之間的互動。
+AEM Communities可讓公司從網站範本庫建立專屬的品牌化社群體驗。 論壇、群組、部落格、檔案分享、日曆、活動摘要和延伸使用者個人檔案可整合在您的網站中，以促進潛在客戶、客戶和公司之間的互動。
 
 以下是快速設定參與社群以 [進行示範](overview.md#engagement-community) 或開發的教學課程。
 
