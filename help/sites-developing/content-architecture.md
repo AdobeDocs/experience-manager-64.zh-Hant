@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ David』s Model是David Nuescheler幾年前寫的，但其想法今天仍然成�
 * 檔案是檔案。
 * 身份證是邪惡的。
 
-David』s Model可在Jackrabbit wiki上找到，網址為 [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel)。
+David』s Model可在Jackrabbit Wiki上找到，網址為 [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel)。
 
 ### 一切都是內容 {#everything-is-content}
 
