@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 1%
 
 ---
 
 
 # Reviews Essentials {#reviews-essentials}
 
-此功能由兩個可搭配運作的元件組成：審核和審核摘要。
+此功能由兩個可搭配運作的元件組成： 審核和審核摘要。
 
 審閱是基於注釋系統的 [組合元件](essentials-comments.md) ，該注釋系統包含一 [個或多個評](rating-basics.md) 分（計數）元件。
 
