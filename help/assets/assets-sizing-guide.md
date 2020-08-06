@@ -7,6 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
 source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+workflow-type: tm+mt
+source-wordcount: '1856'
+ht-degree: 0%
 
 ---
 
@@ -108,7 +111,7 @@ AEM Assets有許多使用案例，讓網路效能比我們許多AEM專案更重�
 
 如果您將AEM案頭應用程式加入組合中，網路問題會更嚴重，因為WebDAV通訊協定效率不彰。
 
-為了說明這些效率不彰的問題，Adobe在OS X上使用WebDAV測試了系統效能。開啟、編輯3.5MB的InDesign檔案，並儲存變更。 有人提出以下意見：
+為了說明這些效率不彰的問題，Adobe在OS X上使用WebDAV測試了系統效能。 開啟、編輯3.5MB的InDesign檔案，並儲存變更。 有人提出以下意見：
 
 * 總共產生約100個HTTP要求，以完成作業
 * 檔案已透過HTTP上傳四次
@@ -136,7 +139,7 @@ While the limit for the number of nodes in a repository has not been determined,
 
 由於檔案系統限制，資料儲存中可存在的檔案數限制為21億。 儲存庫在達到資料儲存限制之前，很可能會由於節點數過多而遇到問題。
 
-如果轉譯產生不正確，請使用Camera Raw程式庫。 但是，在這種情況下，影像的最長邊不應大於65000像素。 此外，影像不應包含512 MP(512 &amp;ast;1024 &amp;ast;1024像素)」。 *資產規模無關緊要*。
+如果轉譯產生不正確，請使用Camera Raw程式庫。 但是，在這種情況下，影像的最長邊不應大於65000像素。 此外，影像不應包含512 MP(512 &amp;ast; 1024 &amp;ast; 1024像素)」。 *資產規模無關緊要*。
 
 AEM的特定堆疊支援的TIFF檔案(OOTB)大小很難精確估計，因為其他因素（例如像素大小影響處理）。 AEM可能會處理大小為255 MB OOTB的檔案，但無法處理大小為18 MB的檔案，因為後者包含的像素數比前者高得多。
 
