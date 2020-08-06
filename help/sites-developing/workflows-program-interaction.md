@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
 source-git-commit: c0fbebb86385931315edd05aabe2b23fcc39c4f9
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 0%
 
 ---
 
@@ -48,7 +51,7 @@ source-git-commit: c0fbebb86385931315edd05aabe2b23fcc39c4f9
 
 如「尋找 [指令碼」中所述](/help/sites-developing/the-basics.md#locating-the-script),AEM（透過Apache Sling）提供執行伺服器端ECMA指令碼的ECMA指令碼引擎。 類別 [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) 可立即供您的指令碼使用，做為變 `sling` 數。
 
-類 `ScriptHelper` 可以訪問您最 `SlingHttpServletRequest` 終可以用來獲取對象的 `WorkflowSession` 類；例如：
+類 `ScriptHelper` 可以訪問您最 `SlingHttpServletRequest` 終可以用來獲取對象的 `WorkflowSession` 類； 例如：
 
 ```
 var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(Packages.com.adobe.granite.workflow.WorkflowSession);
@@ -56,7 +59,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 ## 使用Workflow REST API {#using-the-workflow-rest-api}
 
-Workflow Console大量使用REST API;因此，本頁面說明了工作流程的REST API。
+Workflow Console大量使用REST API; 因此，本頁面說明了工作流程的REST API。
 
 >[!NOTE]
 >
@@ -97,7 +100,7 @@ REST API支援下列動作：
   </tr> 
   <tr> 
    <td><code>POST</code></td> 
-   <td><p>建立新的工作流程例項。 參數包括：<br /> - <code>model</code>:相應工作流程模型的ID(URI)<br /> - <code>payloadType</code>:包含裝載的類型(例如 <code>JCR_PATH</code> 或URL)。<br /> 裝載會以參數傳送 <code>payload</code>。 ( <code>201</code> )回<code>CREATED</code>應會以位置標題傳回，其中包含新工作流程例項資源的URL。</p> </td> 
+   <td><p>建立新的工作流程例項。 參數包括：<br /> - <code>model</code>: 相應工作流程模型的ID(URI)<br /> - <code>payloadType</code>: 包含裝載的類型(例如 <code>JCR_PATH</code> 或URL)。<br /> 裝載會以參數傳送 <code>payload</code>。 ( <code>201</code> )回<code>CREATED</code>應會以位置標題傳回，其中包含新工作流程例項資源的URL。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -158,7 +161,7 @@ REST API支援下列動作：
  </tbody> 
 </table>
 
-範例：在瀏覽器中，要產生類 `http://localhost:4502/etc/workflow/models.json` 似下列的json回應的請求：
+範例： 在瀏覽器中，要產生類 `http://localhost:4502/etc/workflow/models.json` 似下列的json回應的請求：
 
 ```
 [
@@ -251,7 +254,7 @@ REST API支援下列動作：
  </tbody> 
 </table>
 
-範例：在瀏覽器中，傳回類似 `http://localhost:4502/var/workflow/models/publish_example.json` 於下 `json` 列程式碼之回應的請求：
+範例： 在瀏覽器中，傳回類似 `http://localhost:4502/var/workflow/models/publish_example.json` 於下 `json` 列程式碼之回應的請求：
 
 ```shell
 {
@@ -372,7 +375,7 @@ REST API支援下列動作：
 |---|---|
 | `GET` | 獲取由其ID標識的收件箱的資料(定 `WorkItem` 義和元資料)。 |
 
-## 範例 {#examples}
+## Examples {#examples}
 
 ### 如何取得所有執行中工作流程的清單及其ID {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
@@ -388,7 +391,7 @@ REST API支援下列動作：
 curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 ```
 
-結 `uri` 果中顯示的可作為其他命令 `id` 的實例；例如：
+結 `uri` 果中顯示的可作為其他命令 `id` 的實例； 例如：
 
 ```shell
 [
@@ -408,8 +411,8 @@ curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 
 * 使用下列參數：
 
-   * `action`:其價值必須是： `UPDATE`
-   * `workflowTitle`:工作流程標題
+   * `action`: 其價值必須是： `UPDATE`
+   * `workflowTitle`: 工作流程標題
 
 #### 如何使用捲曲來變更工作流程標題- REST {#how-to-change-the-workflow-title-rest-using-curl}
 
@@ -492,6 +495,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
+
    建立模型時，必須首先建立此節 `cq:Page` 點，並將其節 `jcr:content` 點用作模型節點的父節點。
 
 * 某些 `id` 方法識別模型所需的參數是儲存庫中模型節點的絕對路徑：
@@ -638,7 +642,7 @@ wfSession.terminateWorkflow(workflow);
    curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
    ```
 
-   這將列出所有實例；例如：
+   這將列出所有實例； 例如：
 
    ```shell
    [
@@ -730,7 +734,7 @@ wfSession.complete(workItem, routes.get(0));
    curl -u admin:admin http://localhost:4502/bin/workflow/inbox
    ```
 
-   「收件箱」中當前工作項目的詳細資訊將列出；例如：
+   「收件箱」中當前工作項目的詳細資訊將列出； 例如：
 
    ```shell
    [{
