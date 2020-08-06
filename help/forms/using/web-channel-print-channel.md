@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
 
 匯入列印渠道範本，並建立和啟用網頁渠道範本
 
-互動式通訊可透過兩個通道提供：平面和網頁。 列印渠道用來建立PDF和紙本通訊，例如列印信函，以提醒保險費付款，而網路渠道則用來提供線上體驗，例如在網站上提供信用卡帳單。
+互動式通訊可透過兩個通道提供： 平面和網頁。 列印渠道用來建立PDF和紙本通訊，例如列印信函，以提醒保險費付款，而網路渠道則用來提供線上體驗，例如在網站上提供信用卡帳單。
 
 互動式通訊的作者可重複使用檔案片段和影像等資產，以建立互動式通訊的列印和網頁版本。
 
