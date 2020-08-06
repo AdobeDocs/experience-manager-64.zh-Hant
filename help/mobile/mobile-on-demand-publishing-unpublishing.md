@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 
 >[!NOTE]
 >
->若要進一步瞭解AEM mobile應用程式的設計考量，請參閱「線上說 [明」中的「AEM mobile應用程式的設計考量](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 」。
+>若要進一步瞭解AEM Mobile應用程式的設計考量，請參閱「線上說 [明」中的「AEM Mobile應用程式的設計考量](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 」。
 
 ## 發佈／取消發佈內容 {#publishing-unpublishing-the-content}
 
