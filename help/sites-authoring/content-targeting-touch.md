@@ -208,7 +208,7 @@ ht-degree: 6%
 
 1. 按一下或點選體驗名稱旁的箭頭。
 1. 按一 **下「編輯對象** 」並選取新對象。
-1. 按一下 **確定**。
+1. 按一下&#x200B;**「確定」**。
 
 #### 使用定位模式複製體驗 {#duplicating-experiences-using-targeting-mode}
 
@@ -356,7 +356,7 @@ ht-degree: 6%
 
    按一下或點選「檢視方式」旁 **的圖示** ，即可將選件檢視為拼貼或清單。
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 #### 新增自訂選件至程式庫 {#adding-a-custom-offer-to-a-library}
 
