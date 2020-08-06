@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 1%
 
 ---
 
@@ -87,13 +90,13 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
 
 * 使用 [Hobbes建立測試套裝並執行測試案例](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
 * [Hobbes JavaScript API](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
-* [Calvin javaScript API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
+* [Calvin JavaScript API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## 範例：使用Hobbes做為測試架構，為最適化表單建立測試套件 {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## 範例： 使用Hobbes做為測試架構，為最適化表單建立測試套件 {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 以下範例將逐步帶您建立測試套裝，以測試多個調適性表單。 您需要為每個需要測試的表單建立個別的測試案例。 依照類似下列步驟並在步驟11中修改JavaScript程式碼，您可以建立自己的測試套裝來測試您的自適應表單。
 
-1. 前往網頁瀏覽器中的CRXDE Lite: `https://[server]:[port]/crx/de`。
+1. 前往網頁瀏覽器中的CRXDE Lite: `https://[server]:[port]/crx/de`.
 1. 按一下右鍵/etc/clientlibs子資料夾，然後按一下「創 **[!UICONTROL 建」>「建立節點」]**。 輸入名稱（此處為afTestRegistration），將節點類型指定為cq:ClientLibraryFolder，然後按一下「確 **[!UICONTROL 定」]**。
 
    clientlibs資料夾包含應用程式的註冊方面（JS和Init）。 建議您在clientlibs資料夾中註冊所有Hobbes測試套裝物件，這些物件是特定於表單的。
@@ -156,8 +159,8 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
 
 1. 按一 **[!UICONTROL 下「建]** 立 **>建立節點** 」，在clientlib檔案夾下，針對您要測試的每個表單建立節點。 此示例使用名為 **testForm** 的節點來測試名為testForm **的自適應表單，指** 定以下屬性並按一下 `.`OK ****:
 
-   * 名稱：testForm（您的表單名稱）
-   * 類型：cq:ClientLibraryFolder
+   * 名稱： testForm（您的表單名稱）
+   * 類型： cq:ClientLibraryFolder
 
 1. 將下列屬性新增至新建立的節點（此處為testForm），以測試最適化表單：
 
@@ -270,7 +273,7 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
 
    將建立測試案例。 繼續執行測試案例，透過Hobbes測試最適化表單。 如需執行測試案例的步驟，請參 [閱使用自動測試來測試您的UI](/help/sites-developing/hobbes.md)。
 
-您也可以將套件安裝在附加的檔案SampleTestPackage.zip中，以取得與範例中說明的步驟相同的結果：使用Hobbes做為測試架構，為最適化表單建立測試套件。
+您也可以將套件安裝在附加的檔案SampleTestPackage.zip中，以取得與範例中說明的步驟相同的結果： 使用Hobbes做為測試架構，為最適化表單建立測試套件。
 
 [取得檔案](assets/sampletestpackage.zip)
 
@@ -280,9 +283,9 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
 
 測試套裝可個別執行。 當您執行測試套裝時，頁面會隨著測試案例及其動作的執行而變更，結果會在測試完成後顯示。 圖示表示結果。
 
-複選標籤圖示表示通過的測試：復 ![選標籤](assets/checkmark.png)
+複選標籤圖示表示通過的測試： ![checkmark](assets/checkmark.png)
 
-「X」圖示表示測試失敗：交 ![叉](assets/cross.png)
+「X」圖示表示測試失敗： ![交叉](assets/cross.png)
 
 若要執行測試套裝：
 
@@ -325,7 +328,7 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
   </tr> 
   <tr> 
    <td><p>動作</p> </td> 
-   <td><p>動作是在UI中執行手勢的方法，例如按一下按鈕或以值填入輸入方塊。</p> <p>chout.actions.Wanfies、tower.actions.Core和tower.utils.af類的方法是您可在測試中使用的動作。 所有動作都會同步執行。</p> </td> 
+   <td><p>動作是在UI中執行手勢的方法，例如按一下按鈕或以值填入輸入方塊。</p> <p>chout.actions.Wanfies、tower.actions.Core和tower.utils.af類的方法是可在測試中使用的動作。 所有動作都會同步執行。</p> </td> 
   </tr> 
   <tr> 
    <td><p>製作或發佈環境</p> </td> 
