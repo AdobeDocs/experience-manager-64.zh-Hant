@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '1307'
+ht-degree: 0%
 
 ---
 
 
 # 疑難排解動態媒體- Scene7模式 {#troubleshooting-dynamic-media-scene-mode}
 
-以下檔案說明執行dynamicmedia_scene7執行模 **式之Dynamic media的疑難排解** 。
+以下檔案說明執行dynamicmedia_scene7執行模 **式之Dynamic Media的疑難排解** 。
 
 ## 設定與設定 {#setup-and-configuration}
 
@@ -46,12 +49,12 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | 節點已連結至動態媒體的常規指示符。 |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** 或錯誤文字 | 資產上傳至動態媒體的狀態。 |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | 必須填入，才能產生Dynamic media遠端資產的URL。 |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | 必須填入，才能產生Dynamic Media遠端資產的URL。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | `success` 或 `failed:<error text>` | 集（回轉集、影像集等）、影像預設集、檢視器預設集、資產的影像地圖更新，或已編輯的影像的同步狀態。 |
 
 ### 同步記錄 {#synchronization-logging}
 
-同步錯誤和問題已記錄在 `error.log` 中(AEM伺服器目 `/crx-quickstart/logs/`錄)。 您可使用充份的記錄功能來判斷大多數問題的根本原因，不過您可以透過Sling Console( `com.adobe.cq.dam.ips` http://localhost:4502/system/console/slinglog[](http://localhost:4502/system/console/slinglog))，將記錄功能增加至套件上的DEBUG，以收集更多資訊。
+同步錯誤和問題已記錄 `error.log` 在(AEM伺服器目 `/crx-quickstart/logs/`錄)。 您可使用充份的記錄功能來判斷大多數問題的根本原因，不過您可以透過Sling Console( `com.adobe.cq.dam.ips` http://localhost:4502/system/console/slinglog[](http://localhost:4502/system/console/slinglog))，將記錄功能增加至套件上的DEBUG，以收集更多資訊。
 
 ### 移動、複製或刪除 {#move-copy-delete}
 
@@ -150,7 +153,7 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
    <td> 
     <ul> 
      <li>檢查資料夾是否已指派視訊描述檔（如果不支援檔案格式）。 如果不支援，則只會顯示影像。</li> 
-     <li>視訊設定檔必須包含多個編碼預設集，才能產生AVS集(單一編碼視為MP4檔案的視訊內容；對於不支援的檔案，會視為與未處理的檔案相同)。</li> 
+     <li>視訊設定檔必須包含多個編碼預設集，才能產生AVS集(單一編碼視為MP4檔案的視訊內容； 對於不支援的檔案，會視為與未處理的檔案相同)。</li> 
      <li>確認中繼資料中的內容，以檢查視訊是否 <code>dam:scene7FileAvs</code> 已完 <code>dam:scene7File</code> 成處理。</li> 
     </ul> </td> 
    <td> 
@@ -167,7 +170,7 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
    <td> 
     <ul> 
      <li>檢查runmode是否為 <span class="kbd">dynamicmedia_scene7</span>。</li> 
-     <li>檢查是否已設定Dynamic Media cloud服務。</li> 
+     <li>檢查是否已設定Dynamic Media Cloud服務。</li> 
      <li>檢查視訊描述檔是否與上傳資料夾相關聯。</li> 
     </ul> </td> 
    <td> 
@@ -216,7 +219,7 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
   <tr> 
    <td>檢視器預設集未發佈</td> 
    <td><p>繼續到示例管理器診斷頁： <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>觀察計算值。 當正確運作時，您應看到：</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>:在設定Dynamic Media cloud設定後，檢視器資產同步大約需要10分鐘。</p> <p>如果未啟動的資產仍保留，請按一下「列出所有 <strong>未啟動的資產</strong> 」按鈕以檢視詳細資訊。</p> </td> 
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>注意</strong>: 在設定Dynamic Media Cloud設定後，檢視器資產同步大約需要10分鐘。</p> <p>如果未啟動的資產仍保留，請按一下「列出所有 <strong>未啟動的資產</strong> 」按鈕以檢視詳細資訊。</p> </td> 
    <td> 
     <ol> 
      <li>導覽至管理工具中的檢視器預設集清單： <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
@@ -231,7 +234,7 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
      <li>導覽至 <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> 動態媒體同步資料夾中的資料夾(例如 <code>/content/dam/_CSS/_OOTB</code>),</li> 
      <li>尋找有問題資產的中繼資料節點(例如 <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>)。</li> 
      <li>檢查是否存在屬 <code>dam:scene7*</code> 性。 如果資產已成功同步並發佈，您會看到 <code>dam:scene7FileStatus</code> 設定為 <strong>PublishComplete</strong>。</li> 
-     <li>嘗試串連下列屬性和字串文字的值，直接從Dynamic media要求圖稿 
+     <li>嘗試串連下列屬性和字串文字的值，直接從Dynamic Media要求圖稿 
       <ul> 
        <li><code>dam:scene7Domain</code></li> 
        <li><code>"is/content"</code></li> 
@@ -253,7 +256,7 @@ source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
       </ol> </li> 
      <li>在「雲端服務」下，導覽至「動態媒體設定」頁面，然後開啟您的「動態媒體- S7」設定的設定對話方塊。 
       <ul> 
-       <li>不進行任何變更，請按一下「 <strong>儲存</strong>」。 <br /> 這會再次觸發邏輯，以建立並同步範例資產、檢視器預設CSS和圖稿。 <br /> </li> 
+       <li>不進行任何變更，請按一下「 <strong>儲存</strong>」。 這會再次觸發邏輯，以建立並同步範例資產、檢視器預設CSS和圖稿。<br /> <br /> </li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
