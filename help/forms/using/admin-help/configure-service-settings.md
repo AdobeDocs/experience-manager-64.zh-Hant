@@ -392,7 +392,7 @@ LDAP服務可使用以下設定。
 
 **初始上下文工廠：** 用作上下文工廠的Java類。 此類用於建立到LDAP伺服器的連接。 預設值是com.sun.jndi.ldap.LdapCtxFactory，它適用於大多數LDAP伺服器。
 
-**提供者URL:** 用於連接到LDAP服務的URL。 值的格式為 `ldap://server name:port`
+**提供者URL:** 用於連接到LDAP服務的URL。 The format of the value is `ldap://server name:port`
 
 *伺服器名* 是托管LDAP伺服器的電腦的名稱
 
@@ -439,7 +439,7 @@ Microsoft SharePoint設定服務提供下列設定：
 
 **Apple iOS:** 可讓iPhone和iPad連接至伺服器。
 
-**AIR:** 可讓執行以Adobe AIR®為基礎之應用程式的裝置連接至伺服器。
+**AIR:** 可讓執行Adobe AIR®應用程式的裝置連接至伺服器。
 
 **黑莓：** 允許BlackBerry設備連接到伺服器。
 
