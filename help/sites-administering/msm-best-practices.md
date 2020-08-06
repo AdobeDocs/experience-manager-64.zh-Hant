@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '1530'
+ht-degree: 0%
 
 ---
 
@@ -34,6 +37,7 @@ MSM是可設定的架構，可自動化內容部署。 實作通常涉及網站�
 >
 >* [MSM常見問答集](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
 >* [MSM問題故障排除](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
+
 >
 
 
@@ -43,7 +47,8 @@ MSM是可設定的架構，可自動化內容部署。 實作通常涉及網站�
 >您也可以使用「參 [考」元件](/help/sites-authoring/default-components-foundation.md#reference) ，以重複使用單一頁面或段落。 但請記住：
 >
 >* MSM更有彈性，可精確控制同步哪些內容及時間。
->* [現在建議](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) ，核心元件比基礎元件更重要。
+>* [現在建議](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) ，核心元件比基礎元件更重要。
+
 >
 
 
@@ -55,7 +60,7 @@ MSM是可設定的架構，可自動化內容部署。 實作通常涉及網站�
 使用Blueprint設定的額外好處是：
 
 * 允許作者在藍圖上使 **用** 「轉出」選項——將修改（明確）推送至繼承自此藍圖的即時副本。
-* 允許作者使用「建 **立網站」**;這可讓使用者輕鬆選擇語言並設定即時副本的結構。
+* 允許作者使用「建 **立網站」**; 這可讓使用者輕鬆選擇語言並設定即時副本的結構。
 * 為與藍圖有關的即時副本定義預設轉出設定。
 
 如果未參考藍圖設定，則只能從即時副本本身啟動推播，實際上是從來源提取內容。
@@ -126,7 +131,7 @@ MSM可協助建立多語言網站，方式有兩種：
 
 藍圖／來源樹狀結構中的內容結構修改在即時副本中的反映不同。 這取決於修改類型：
 
-* **在Blueprint中** ，建立新頁面將導致在使用標準轉出設定轉出後，在即時副本中建立對應頁面。
+* **在Blueprint中** ，建立新頁面將導致在使用標準轉出設定轉出後，即時副本中建立對應的頁面。
 
 * **在Blueprint中** ，刪除頁面將導致在使用標準轉出設定轉出後，從即時副本中刪除對應頁面。
 
@@ -166,7 +171,7 @@ MSM可協助建立多語言網站，方式有兩種：
 
 MSM首次展示配置具有高度可定製性。 您應該注意到，自動化推展可能產生深遠影響。 作為最佳實務，您應在之前 *仔細* 規劃，例如：
 
-* 自動推展；例如，使用 [onModify觸發器](#onmodify),
+* 自動推展； 例如，使用 [onModify觸發器](#onmodify),
 * 自定義 [節點類型／屬性](#node-types-properties),
 * 啟動後續工作流程，
 * 和／或啟動內容做為推展的一部分。
