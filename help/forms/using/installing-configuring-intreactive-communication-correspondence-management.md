@@ -29,7 +29,7 @@ AEM Forms是功能強大的企業級平台。 互動式通訊只是AEM Forms的�
 
 ## 部署拓撲 {#deployment-topology}
 
-AEM Forms附加元件套件是部署在AEM上的應用程式。 您至少只需要一個AEM作者和處理執行個體，即可執行互動式通訊功能。 以下拓撲是指示性拓撲，可針對OSGi功能執行AEM Forms Interactive Communications、Conversence Management、AEM Forms資料擷取和Forms-Centric工作流程。 如需拓撲的詳細資訊，請參 [閱「AEM Forms的架構和部署拓撲」](/help/forms/using/aem-forms-architecture-deployment.md)。
+AEM Forms附加元件套件是部署在AEM上的應用程式。 您至少只需要一個AEM作者和處理執行個體，就能執行互動式通訊功能。 以下拓撲是指示性拓撲，可針對OSGi功能執行AEM Forms Interactive Communications、Conversence Management、AEM Forms資料擷取和Forms-Centric工作流程。 如需拓撲的詳細資訊，請參 [閱「AEM Forms的架構和部署拓撲」](/help/forms/using/aem-forms-architecture-deployment.md)。
 
 ![推薦拓撲](assets/recommended-topology.png)
 
@@ -169,7 +169,7 @@ Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保�
 
 1. 設定反向連結篩選服務：
 
-   以管理員身分登入Apache Felix組態管理員。 配置管理器的預設URL為 `https://[server]:[port_number]/system/console/configMgr`。 在「設 **定** 」選單中，選取 **Apache Sling Referrer Filter** 選項。 在「允許主機」欄位中，輸入調度程式的主機名以允許它作為反向連接，然後按一下「保 **存」**。 條目的格式為 `https://[server]:[port]`。
+   以管理員身分登入Apache Felix組態管理員。 配置管理器的預設URL為 `https://[server]:[port_number]/system/console/configMgr`。 在「設 **定** 」選單中，選取 **Apache Sling Referrer Filter** 選項。 在「允許主機」欄位中，輸入調度程式的主機名以允許它作為反向連接，然後按一下「保 **存」**。 The format of the entry is `https://[server]:[port]`.
 
 #### 整合Adobe Target {#integrate-adobe-target}
 
