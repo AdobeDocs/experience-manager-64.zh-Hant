@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 5%
 
 ---
 
@@ -159,17 +162,17 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
   </tr> 
   <tr> 
    <td>2-a4-b5-c6<br type="_moz" /> </td> 
-   <td>目標：Server<br /> xfa級別：INFO<br /> xfaView級別：DEBUG<br /> xfaPerf級別：TRACE</td> 
+   <td>目標： Server<br /> xfa級別： INFO<br /> xfaView級別： DEBUG<br /> xfaPerf級別： TRACE</td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->每個日誌類別a(xfa)、b(xfaView)和c(xfaPerf)的預設日誌級別為2(ERROR)。 因此，對於日誌配置：2-b6，不同類別的記錄層級為：\
->a(xfa):2（預設層級錯誤）\
->b(xfaView):6（用戶指定的TRACE）\
->a(xfaPerf):2（預設層級錯誤）
+>每個日誌類別a(xfa)、b(xfaView)和c(xfaPerf)的預設日誌級別為2(ERROR)。 因此，對於日誌配置： 2-b6，不同類別的記錄層級為：\
+>a(xfa): 2（預設層級錯誤）\
+>b(xfaView): 6（用戶指定的TRACE）\
+>a(xfaPerf): 2（預設層級錯誤）
 
 ### 使用Configuration Manager啟用記錄 {#enabling-logging-using-configuration-manager}
 
@@ -192,7 +195,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 要更改日誌檔案的位置和名稱，請執行以下操作：
 
 1. 以管理員身份登錄到Configuration Manager。 配置管理器的預設URL為 `https://[*Server*]:[*Port*]/system/console/configMgr`。
-1. 按一 **下Apache Sling Logging Logger Configuration**。 將出現一個對話框。
+1. 按一 **下Apache Sling Logging Logger Configuration**。 對話方塊隨即顯示。
 
    ![logconfig-1](assets/logconfig-1.png)
 
