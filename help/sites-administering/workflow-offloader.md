@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '601'
+ht-degree: 0%
 
 ---
 
 
 # 資產工作流程卸載程式{#assets-workflow-offloader}
 
-資產工作流程分離程式可讓您啟用多個Adobe Experience Manager(AEM)Assets例項，以降低主要（領導者）例項的處理負載。 處理負載分佈在領導實例和您添加到其中的各種卸載程式（工作器）實例之間。 分配資產的處理負載可提高AEM Assets處理資產的效率和速度。 此外，它還可協助分配專用資源，以處理特定MIME類型的資產。 例如，您可以在拓撲中分配特定節點，以僅處理InDesign資產。
+資產工作流程分離程式可讓您啟用多個Adobe Experience Manager(AEM)Assets例項，以降低主要（領導者）例項的處理負載。 處理負載分佈在領導實例和您添加到它的各種卸載程式（工作程式）實例之間。 分配資產的處理負載可提高AEM Assets處理資產的效率和速度。 此外，它還可協助分配專用資源，以處理特定MIME類型的資產。 例如，您可以在拓撲中分配特定節點，以僅處理InDesign資產。
 
 ## 配置卸載器拓撲 {#configure-offloader-topology}
 
