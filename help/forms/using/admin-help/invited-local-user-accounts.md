@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
@@ -60,7 +63,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 ## 重設本機使用者密碼 {#reset-a-local-user-password}
 
-您可以重設已啟用的已邀請使用者的密碼，這些使用者已使用Document security註冊，但忘記密碼。 當您重設密碼時，會產生包含使用者新暫時密碼的電子郵件。
+您可以重設已啟用的已邀請使用者的密碼，這些使用者已使用Document Security註冊，但忘記密碼。 當您重設密碼時，會產生包含使用者新暫時密碼的電子郵件。
 
 當您啟用邀請的使用者註冊程式時，會建立電子郵件訊息，並傳送給使用者提示他們重設密碼。 (請參閱 [設定邀請的使用者註冊](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。)
 
@@ -108,7 +111,7 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 ## 搜尋本機使用者帳戶 {#search-for-a-local-user-account}
 
-您可以使用使用者的電子郵件地址或名稱及網域來搜尋本機使用者。
+您可以使用使用者的電子郵件地址或名稱和網域來搜尋本機使用者。
 
 1. 在管理主控台中，按一下「服務> Document Security >已邀請和本機使用者」，然後按一下「本機使用者」標籤。
 1. 在「尋找」方塊中輸入搜尋准則，選取「名稱」或「電子郵件」，然後按一下「尋找」。
