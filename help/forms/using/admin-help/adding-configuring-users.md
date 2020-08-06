@@ -84,7 +84,7 @@ ht-degree: 0%
 
 **使用者ID:** （必要）使用者用來登入的使用者ID。 使用者ID不區分大小寫，而且必須在網域間具有唯一性。
 
-在企業網域中，使用非DN屬性作為使用者ID，因為當使用者DN移至組織的其他部分時，其DN可能會變更。 此設定取決於目錄伺服器。 該值適 `objectGUID` 用於Active Directory 2003、 `nsuniqueID` Sun™ One和 `guid` eDirectory。
+在企業網域中，使用非DN屬性作為使用者ID，因為當使用者DN移至組織的其他部分時，其DN可能會變更。 此設定取決於目錄伺服器。 該值為Active `objectGUID` Directory 2003、Sun™ `nsuniqueID` One和eDirectory `guid` 的值。
 
 請確定使用者ID是唯一的。 請勿使用指派給已刪除使用者的檔案。
 
@@ -131,6 +131,7 @@ AEM表單無法區分擁有相同使用者ID和密碼但屬於不同網域的使
 
    * 按一 **[!UICONTROL 下「尋找群組]** 」並填妥搜尋資訊。
    * 若要將使用者新增至新群組，請選取該群組的核取方塊，按一下「 **[!UICONTROL 確定]**」，然後按一下「 **[!UICONTROL 儲存]**」。
+
    >[!NOTE]
    >
    >無法將本地用戶添加到目錄組。 但是，目錄用戶可以添加到本地組。
