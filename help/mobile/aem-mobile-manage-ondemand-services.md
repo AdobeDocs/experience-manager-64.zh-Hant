@@ -11,6 +11,9 @@ topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 1%
 
 ---
 
@@ -45,11 +48,11 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 >
 >AEM Preflight應用程式可用來預覽內容和瀏覽頁。 若要深入瞭解Preflight App，請按一下 [這裡](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html)。
 >
->AEM Preflight應用程式可在 [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8)、 [Google Play商店](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&hl=en)和 [Windows市集取得](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq)。
+>AEM Preflight應用程式可在 [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8)、 [Google Play商店](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)和 [Windows市集取得](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq)。
 
 ### 搶先一步 {#getting-ahead}
 
-如果您仍需要更多有關製作內容的資訊，請參閱下列資源，以建立和管理AEM mobile應用程式中的內容：
+如果您仍需要更多有關製作內容的資訊，請參閱下列資源，以建立和管理AEM Mobile應用程式中的內容：
 
 * [AEM Mobile應用程式儀表板](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [管理內容](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
