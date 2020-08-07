@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 translation-type: tm+mt
 source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
+workflow-type: tm+mt
+source-wordcount: '301'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ AEM與PhoneGap整合，讓您可以使用AEM頁面輕鬆建立應用程式。 Ph
 * [具備內容同步功能的行動裝置](/help/mobile/phonegap-contentsync.md)
 * [頁面範本](/help/mobile/phonegap-apps-arch-page-templates.md)
 
-* [AEM Mobile Content Services:概觀](/help/mobile/develop-content-as-a-service.md)
+* [AEM Mobile Content Services: 概觀](/help/mobile/develop-content-as-a-service.md)
 
    * 若要啟用「內容服務」和「資料模型」，請參閱「管 [理內容服務」](/help/mobile/developing-content-services.md)
    * 要瞭解建立模型，請參閱開 [發模型](/help/mobile/administer-mobile-apps.md)
