@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
-source-wordcount: '1064'
+source-wordcount: '1063'
 ht-degree: 2%
 
 ---
@@ -110,7 +110,7 @@ ht-degree: 2%
    * 互動式影像檢視器： [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/jsapi-interactive-image/r-html5-aem-int-image-viewer-javascriptapiref-sethandlers.html)
    * 互動式視訊檢視器： [setHandlers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/jsapi-interactive-video/r-html5-aem-int-video-javascriptapiref-sethandlers.html)
 
-1. 您現在需要設定quickViewActivate「處理常式」。
+1. 您現在需要設定處理 `quickViewActivate` 常式。
 
    quickViewActivate處理常式可控制檢視器中的Quickviews。 處理常式包含變數清單和函式呼叫，以便與Quickview搭配使用。 內嵌代碼提供Quickview中SKU變數集的對應，以及loadQuickView函式呼叫範例。
 
@@ -189,7 +189,7 @@ ht-degree: 2%
    </div>
    ```
 
-1. 新增函式以更新快顯視窗中的sku值； 取代步驟5中建立的簡單函式，讓快顯視覺化。 與下列項目搭配：
+1. 新增函式以更新快顯視窗中的sku值；取代步驟5中建立的簡單函式，讓快顯視覺化。 與下列項目搭配：
 
    ```xml
    <script type="text/javascript">
