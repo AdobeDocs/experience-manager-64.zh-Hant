@@ -2,7 +2,7 @@
 title: PhoneGap
 seo-title: PhoneGap
 description: null
-seo-description: '請依照本頁開始在AEM中編寫Adobe phoneGap Enterprise。  '
+seo-description: '請依照本頁開始在AEM中編寫Adobe PhoneGap Enterprise。  '
 uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 4%
 
 ---
 
@@ -22,7 +25,7 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 Adobe Experience Manager(AEM)Mobile只是構成完整AEM平台的一大支柱。
 
-要開始新的AEM mobile應用程式體驗，您必須先整合角色，才能準備好進行內容編輯。 以下角色提供建立新AEM mobile應用程式的起點：
+要開始新的AEM Mobile應用程式體驗，您必須先整合角色，才能準備好進行內容編輯。 以下角色提供建立新AEM Mobile應用程式的起點：
 
 * **管理員**
 * **開發人員**
@@ -39,7 +42,7 @@ Adobe Experience Manager(AEM)Mobile只是構成完整AEM平台的一大支柱。
 * [管理應用程式圖格](/help/mobile/phonegap-app-details-tile.md)
 * [編輯應用程式中繼資料](/help/mobile/phonegap-editmetadata.md)
 * [應用程式定義](/help/mobile/phonegap-app-definitions.md)
-* [使用建立精靈建立新的AEM mobile應用程式](/help/mobile/phonegap-create-new-app.md)
+* [使用建立精靈建立新的AEM Mobile應用程式](/help/mobile/phonegap-create-new-app.md)
 * [匯入現有的混合應用程式](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
 若要瞭解 **Content Services**，請參 [閱Content Services Overview](/help/mobile/develop-content-as-a-service.md) （內容服務概觀）。
