@@ -1,8 +1,8 @@
 ---
 title: 立即可用的應用程式處理常式
 seo-title: 立即可用的應用程式處理常式
-description: 請依照本頁瞭解Adobe phoneGap Enterprise與AEM的現成可用處理常式。
-seo-description: 請依照本頁瞭解Adobe phoneGap Enterprise與AEM的現成可用處理常式。
+description: 請依照本頁瞭解Adobe PhoneGap Enterprise與AEM的現成可用處理常式。
+seo-description: 請依照本頁瞭解Adobe PhoneGap Enterprise與AEM的現成可用處理常式。
 uuid: 436038cb-fb76-4bb5-ae79-5d4043b81dd9
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '1430'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 * ***path —— 字串*** -頁面的路徑
 * ***extension —— 字串*** -請求中應使用的擴充功能。 對於頁面，這幾乎總是 *html*，但其他頁面仍有可能。
 
-* ***selector —— 字串*** -選用選擇器以點分隔。 常見的例 *子是* ，以觸控方式呈現頁面的行動版本。
+* ***selector —— 字串*** -選用選擇器以點分隔。 常見的例 *子是* ，轉換行動版頁面的觸控功能。
 
 * ***deep - Boolean*** —— 可選的布林屬性，決定是否也應包含子頁面。 預設值 *為true。*
 
@@ -48,7 +51,7 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 * ***includeVideos - Boolean*** - Optional boolean屬性可決定是否應包含視訊。 預設值 *為true*。
 
-* ***includeModifiedPagesOnly - Boolean*** —— 如果false或省略，則會演算所有頁面並檢查演算中的更新。 如果為true，則根據lastModified頁面的變更進行變更。
+* ***includeModifiedPagesOnly - Boolean*** —— 如果false或省略，則演算所有頁面並檢查演算中的更新。 如果為true，則根據lastModified頁面的變更進行變更。
 * ***+ rewrite（節點）***
    ***- relativeParentPath —— 字串*** -寫入相對的所有其他路徑的路徑。
 
@@ -211,5 +214,5 @@ mobileappsoffers處理常式會延伸mobileappspages處理常式並新增下列�
 
 >[!NOTE]
 >
->若要開始使用AEM mobile應用程式開發，請按一 [下這裡](/help/mobile/getting-started-aem-mobile.md)。
+>若要開始使用AEM Mobile應用程式開發，請按一 [下這裡](/help/mobile/getting-started-aem-mobile.md)。
 
