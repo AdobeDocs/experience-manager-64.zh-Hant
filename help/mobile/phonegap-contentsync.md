@@ -1,8 +1,8 @@
 ---
 title: 具備內容同步功能的行動裝置
 seo-title: 具備內容同步功能的行動裝置
-description: 請依照本頁進行，以瞭解「使用AEM進行Adobe phoneGap Enterprise的內容同步」。
-seo-description: 請依照本頁進行，以瞭解「使用AEM進行Adobe phoneGap Enterprise的內容同步」。
+description: 請依照本頁進行，以瞭解「使用AEM進行Adobe PhoneGap Enterprise的內容同步」。
+seo-description: 請依照本頁進行，以瞭解「使用AEM進行Adobe PhoneGap Enterprise的內容同步」。
 uuid: 65ee4138-b79a-44a7-83da-3e933ccae854
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 7941987a-2f4c-4c62-8ab2-0f6f30ceb064
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '2909'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 1. 在行動裝置上，行動應用程式會啟動並要求伺服器的內容，而伺服器會以ZIP檔案傳送。
 1. 客戶端將ZIP內容解包到本地檔案系統。 ZIP檔案中的檔案夾結構會模擬用戶端（例如瀏覽器）通常會從伺服器要求的路徑。
 1. 用戶端會在內嵌的瀏覽器中開啟內容，或以其他方式使用內容。
-1. 之後，用戶端會向伺服器要求更新內容。 Content sync架構提供增量更新，以減少下載大小和時間，這對行動裝置而言很重要，因為頻寬或資料量有限。
+1. 之後，用戶端會向伺服器要求更新內容。 Content Sync架構提供增量更新，以減少下載大小和時間，這對行動裝置而言很重要，因為頻寬或資料量有限。
 
 >[!NOTE]
 >
@@ -54,8 +57,8 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 
 若要指定「內容同步ZIP」檔案的內容，請將子節點新增至cq:ContentSyncConfig節點。 每個子節點的以下屬性標識要包含的內容項，以及添加該內容項時如何處理該內容項：
 
-* `path`:內容的位置。
-* `type`:用於處理內容的配置類型的名稱。 有幾種類型可用，並在配置類型中說明。
+* `path`: 內容的位置。
+* `type`: 用於處理內容的配置類型的名稱。 有幾種類型可用，並在配置類型中說明。
 
 請參閱內容同步設定範例。
 
@@ -63,7 +66,7 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 
 >[!NOTE]
 >
->Content sync框架不會檢查Content sync包中是否包含資產和與設計相關的檔案的相關性。 請確定您在ZIP檔案中包含所有必要的檔案。
+>Content Sync框架不會檢查Content Sync包中是否包含資產和與設計相關的檔案的相關性。 請確定您在ZIP檔案中包含所有必要的檔案。
 
 ### 設定內容同步下載的存取權 {#configuring-access-to-content-sync-downloads}
 
@@ -73,26 +76,26 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 
 ### 設定內容同步下載的預設存取權 {#setting-the-default-access-for-content-sync-downloads}
 
-CQ Content Sync manager服務控制對Content sync的訪問。 設定此服務，以指定預設可從「內容同步」下載的使用者或群組。
+CQ Content Sync Manager服務控制對Content Sync的訪問。 設定此服務，以指定預設可從「內容同步」下載的使用者或群組。
 
 如果您使 [用Web Console配置服務](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)，請鍵入用戶或組的名稱作為「備援快取可授權」屬性的值。
 
 如果要在 [儲存庫中配置](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)，請使用以下有關服務的資訊：
 
-* PID:com.day.cq.contentsync.impl.ContentSyncManagerImpl
-* 屬性名稱：contentsync.fallback.authorizable
+* PID: com.day.cq.contentsync.impl.ContentSyncManagerImpl
+* 屬性名稱： contentsync.fallback.authorizable
 
 #### 覆寫內容同步快取的下載存取權 {#overriding-download-access-for-a-content-sync-cache}
 
 要為特定內容同步配置配置下載訪問權，請向節點添加以下屬 `cq:ContentSyncConfig` 性：
 
-* 名稱：授權
-* 類型：字串
-* 值：可下載的使用者或群組名稱。
+* 名稱： 授權
+* 類型： 字串
+* 值： 可下載的使用者或群組名稱。
 
 例如，您的應用程式可讓使用者直接從「內容同步」安裝更新。 若要讓所有使用者下載更新，請將可授權屬性的值設為 `everyone`。
 
-如果節 `cq:ContentSyncConfig` 點沒有可授權屬性，則為Day CQ Content Sync manager服務的「備援快取可授權」屬性設定的預設使用者或群組會決定可下載的人員。
+如果節 `cq:ContentSyncConfig` 點沒有可授權屬性，則為Day CQ Content Sync Manager服務的「備援快取可授權」屬性設定的預設使用者或群組會決定可下載的人員。
 
 ### 配置用戶以更新內容同步快取 {#configuring-the-user-for-updating-a-content-sync-cache}
 
@@ -102,9 +105,9 @@ CQ Content Sync manager服務控制對Content sync的訪問。 設定此服務�
 
 若要覆寫預設使用者，請指定對特定內容同步設定執行更新的使用者或群組，方法是將下列屬性新增至cq:ContentSyncConfig節點：
 
-* 名稱：updateuser
-* 類型：字串
-* 值：可執行更新的用戶或組的名稱。
+* 名稱： updateuser
+* 類型： 字串
+* 值： 可執行更新的用戶或組的名稱。
 
 如果cq:ContentSyncConfig節點沒有更新user屬性，則預設匿名用戶會更新快取。
 
@@ -126,7 +129,7 @@ CQ Content Sync manager服務控制對Content sync的訪問。 設定此服務�
 **clientlib** 封裝Javascript或CSS用戶端程式庫。
 
 * **path** —— 客戶端庫根目錄的路徑。
-* **extension** —— 用戶端程式庫的類型。 目前應將此設定 *為* js *或* css。
+* **extension** —— 用戶端程式庫的類型。 目前應將此值設 *為**js或* css。
 
 **資產**
 
@@ -145,7 +148,7 @@ CQ Content Sync manager服務控制對Content sync的訪問。 設定此服務�
 * **path** —— 頁面的路徑。
 * **extension** —— 請求中應使用的擴充功能。 對於頁面，這幾乎總是 *html*，但其他頁面仍有可能。
 
-* **selector** —— 可選選擇器以點分隔。 常見的例 *子是* ，以觸控方式呈現頁面的行動版本。
+* **selector** —— 可選選擇器以點分隔。 常見的例 *子是* ，轉換行動版頁面的觸控功能。
 
 * **deep** —— 可選的布林屬性，決定是否也應包含子頁面。 預設值 *為true。*
 
@@ -159,18 +162,18 @@ CQ Content Sync manager服務控制對Content sync的訪問。 設定此服務�
 
 節 `rewrite` 點可以具有以下一個或多個屬性：
 
-* `clientlibs`:重寫clientlibs路徑。
+* `clientlibs`: 重寫clientlibs路徑。
 
-* `images`:重寫影像路徑。
-* `links`:重寫連結路徑。
+* `images`: 重寫影像路徑。
+* `links`: 重寫連結路徑。
 
 每個屬性都可以有下列其中一個值：
 
-* `REWRITE_RELATIVE`:以相對位置重寫路徑至檔案系統上的頁面。html檔案。
+* `REWRITE_RELATIVE`: 以相對位置重寫路徑至檔案系統上的頁面。html檔案。
 
-* `REWRITE_EXTERNAL`:使用AEM [Externalizer服務，指向伺服器上的資源，以重寫路徑](/help/sites-developing/externalizer.md)。
+* `REWRITE_EXTERNAL`: 使用AEM [Externalizer服務，指向伺服器上的資源，以重寫路徑](/help/sites-developing/externalizer.md)。
 
-名為 **** PathRewriterTransformerFactory的AEM服務可讓您設定要重寫的特定html屬性。 該服務可在Web控制台中配置，並且為節點的每個屬性配置 `rewrite` 了： `clientlibs`和 `images``links`。
+名為 **** PathRewriterTransformerFactory的AEM服務可讓您設定要重寫的特定html屬性。 該服務可在Web控制台中配置，並且為節點的每個屬性配置 `rewrite` 了： `clientlibs`、 `images` 和 `links`。
 
 此功能已新增至AEM 5.5。
 
@@ -218,7 +221,7 @@ CQ Content Sync manager服務控制對Content sync的訪問。 設定此服務�
 
 **events.touch.html** Next會顯示應用程式中的實際頁面。 路徑屬性會設為事件的根頁面。 該頁面下方的所有事件頁面也會包含在內，因為deep屬性預設為true。 我們使用頁面做為設定類型，以便包含任何可從頁面上的影像或下載元件參考的影像或其他檔案。 此外，設定觸控選取器可提供行動版的頁面。 功能套件中的設定包含更多此類項目，但為了簡化程式，這些項目已排除。
 
-**logo** The logo configuration type is not eve to the logo configuration type and it is none of build-in types. 不過，Content sync框架在某種程度上是可擴充的，這是其中的一個範例，將在下一節中介紹。
+**logo** The logo configuration type is not eve to the logo configuration type and it is none of build-in types. 不過，Content Sync框架在某種程度上是可擴充的，這是其中的一個範例，將在下一節中介紹。
 
 **manifest** （資訊清單）您通常需要在zip檔案中包含某種中繼資料，例如您內容的開始頁面。 不過，硬式編碼這類資訊可讓您日後無法輕鬆變更。 內容同步框架通過在配置中查找清單節點支援此使用案例，該節點僅由名稱標識，不需要配置類型。 在該特定節點上定義的每個屬性都會添加到檔案中，該檔案也稱為manifest，並駐留在zip檔案的根目錄中。
 
@@ -247,7 +250,7 @@ CQ Content Sync manager服務控制對Content sync的訪問。 設定此服務�
 
 ### 擴充內容同步架構 {#extending-the-content-sync-framework}
 
-雖然配置選項的數量已相當廣泛，但可能不涵蓋您特定使用案例的所有需求。 本節介紹Content sync框架的擴展點以及如何建立自定義配置類型。
+雖然配置選項的數量已相當廣泛，但可能不涵蓋您特定使用案例的所有需求。 本節介紹Content Sync框架的擴展點以及如何建立自定義配置類型。
 
 對於每種配置類型，都有一個 *Content Update Handler*，它是為該特定類型註冊的OSGi元件工廠。 這些處理常式會收集內容、處理內容，並將它新增至由內容同步架構維護的快取。 實現以下介面或抽象基類：
 
@@ -274,7 +277,7 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 }
 ```
 
-請注意，工 *廠定義* 包含公用介面和以斜線分隔的自訂類型。 此策略可讓Content sync框架在識別配置條目中的自定義類型時，查找並建立自定義類的實例。 下一節提供自訂更新處理常式的具體範例。
+請注意，工 *廠定義* 包含公用介面和以斜線分隔的自訂類型。 此策略可讓Content Sync框架在識別配置條目中的自定義類型時，查找並建立自定義類的實例。 下一節提供自訂更新處理常式的具體範例。
 
 >[!CAUTION]
 >
@@ -282,7 +285,7 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 
 ### 實作自訂更新處理常式 {#implementing-a-custom-update-handler}
 
-每個We.Retail mobile頁面都會在左上角包含一個標誌，當然，我們想要加入到zip檔案中。 不過，對於快取最佳化，AEM不會參照影像檔案在儲存庫中的實際位置，因此無法讓我們只使用復 **制** 設定類型。 我們需要做的，是提供我們自己的 **標誌組態類型** ，讓影像可在AEM要求的位置使用。 下列程式碼清單顯示標誌更新處理常式的完整實作：
+每個We.Retail Mobile頁面都會在左上角包含一個標誌，當然，我們想要加入到zip檔案中。 不過，對於快取最佳化，AEM不會參照影像檔案在儲存庫中的實際位置，因此無法讓我們只使用復 **制** 設定類型。 我們需要做的，是提供我們自己的 **標誌組態類型** ，讓影像可在AEM要求的位置使用。 下列程式碼清單顯示標誌更新處理常式的完整實作：
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -362,13 +365,13 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 
 ## 在用戶端上使用內容 {#using-the-content-on-the-client}
 
-若要在內容同步提供的行動應用程式中使用內容，您必須透過HTTP或HTTPS連線來要求內容。 因此，擷取的內容（封裝在ZIP檔案中）可以擷取並儲存在行動裝置上。 請注意，內容不僅指資料，也指邏輯，即完整的Web應用程式；因此，即使沒有網路連接，移動用戶也能夠執行檢索到的Web應用程式和相應資料。
+若要在內容同步提供的行動應用程式中使用內容，您必須透過HTTP或HTTPS連線來要求內容。 因此，擷取的內容（封裝在ZIP檔案中）可以擷取並儲存在行動裝置上。 請注意，內容不僅指資料，也指邏輯，即完整的Web應用程式； 因此，即使沒有網路連接，移動用戶也能夠執行檢索到的Web應用程式和相應資料。
 
-Content sync以智慧方式提供內容：只傳送自上次成功資料同步以來的資料更改，從而減少資料傳輸所需的時間。 自1970年1月1日以來，首次運行應用程式資料時請求更改，隨後只請求自上次成功同步以來更改的資料。 AEM運用iOS的用戶端通訊架構來簡化資料通訊和傳輸，因此啟用以iOS為基礎的網頁應用程式時，需要最少數量的原生程式碼。
+Content Sync以智慧方式提供內容： 只傳送自上次成功資料同步以來的資料更改，從而減少資料傳輸所需的時間。 自1970年1月1日以來，首次運行應用程式資料時請求更改，隨後只請求自上次成功同步以來更改的資料。 AEM運用iOS的用戶端通訊架構來簡化資料通訊和傳輸，因此啟用以iOS為基礎的網頁應用程式時，需要最少數量的原生程式碼。
 
 所有傳輸的資料都可以提取到相同的目錄結構中，在提取資料時不需要額外的步驟（例如相關性檢查）。 如果是iOS，所有資料都會儲存在iOS應用程式的「檔案」檔案夾內的子檔案夾中。
 
-iOS型AEM mobile應用程式的典型執行路徑：
+iOS型AEM Mobile應用程式的典型執行路徑：
 
 * 使用者在iOS裝置上啟動應用程式。
 * 應用程式會嘗試連線至AEM後端，並要求自上次執行以來的資料變更。
