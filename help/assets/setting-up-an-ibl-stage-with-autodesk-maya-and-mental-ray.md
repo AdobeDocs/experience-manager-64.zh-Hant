@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 1. 建立代表模型的（臨時）引用。 如此有助於評估光源、設定相機和設定轉譯器。
 1. 設定影像光源。
 
-   1. 在「渲染 **[!UICONTROL 設定」中]**，選擇「 **[!UICONTROL 渲染使用」: 心智雷]**，並開啟「場景」標籤。
+   1. 在「渲染 **[!UICONTROL 設定」中]**，選擇「 **[!UICONTROL 渲染使用」:心智雷]**，並開啟「場景」標籤。
    1. 開啟「 **[!UICONTROL 渲染環境]** 」accordion ，然後單 **擊[!UICONTROL渲染建立基於影像的光源**。
    1. 按一下框表徵圖（框表徵圖在框的左側有向右箭頭）以選擇IBL節點，然 `mentalRayIblShape1`後退出 **[!UICONTROL 「渲染設定」]**。
    1. 在屬性 **[!UICONTROL 編輯器中]**，選擇轉換節點 `mentalRayIbl1`，然後將轉換節點更名為 `AdobeIbl`。
@@ -59,7 +59,7 @@ ht-degree: 0%
 
       * **整體品質** -或 `0.5` 更低
       * **間接擴散(GI)模式** - `Final Gather`
-      * &quot;篩&#x200B;**選大小** - `2.0`, `2.0`
+      * **篩選大小** - `2.0`、 `2.0`
    * 以您預期使用的一般影像大小來轉換場景。 視需要調整光源、演算設定或兩者，以達成您想要的結果。
 
       請注意，使用Mental Ray進行演算時，使用影像光源會非常緩慢，而且需要耗用大量CPU。 Adobe建議您設定仍能產生所需演算品質的最低品質設定。
