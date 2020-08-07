@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '785'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 模型也是將現有AEM內容轉換為原生行動應用程式可輕鬆使用的物件的方式。
 
-Content services將針對常見物件提供一些現成可用的模型，例如資產、資產集合、HTML頁面、應用程式設定和不受通道影響的頁面。 這些設定可進行設定，以符合特定客戶需求，而不需要AEM開發工作。
+Content Services將針對常見物件提供一些現成可用的模型，例如資產、資產集合、HTML頁面、應用程式設定和不受通道影響的頁面。 這些設定可進行設定，因此可滿足特定客戶需求，而不需要AEM開發工作。
 
 使用者可建立自己的模型。 如此可建立尚未由AEM管理的新內容類型。 模型建立是透過使用現有基本類型的UI來完成。
 
@@ -46,7 +49,7 @@ Content services將針對常見物件提供一些現成可用的模型，例如�
 
 >[!NOTE]
 >
->模型存在於應用程式外部，因為多個應用程式可以使用它。
+>模型存在於應用程式之外，因為多個應用程式可以使用它。
 
 
 請參 **[閱Models](/help/mobile/administer-mobile-apps.md)**，以在儀表板和儲存庫中建立和管理模型。
