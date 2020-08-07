@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -29,15 +32,15 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 [設定PhoneGap CLI](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
-針對iOS:若要針對iPhone和iPad進行開發，您需要Apple的Xcode IDE。
+針對iOS: 若要針對iPhone和iPad進行開發，您需要Apple的Xcode IDE。
 
 * 在這裡免費下 [載](https://developer.apple.com/xcode/downloads/)。
 * [PhoneGap iOS平台指南](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
-針對Android:若要針對iPhone和iPad進行開發，您需要使用Google的Android Stuido IDE。
+針對Android: 若要針對iPhone和iPad進行開發，您需要使用Google的Android Stuido IDE。
 
 * 在這裡免費下 [載](https://developer.android.com/sdk/index.html)。
-* [PhoneGap android平台指南](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* [PhoneGap Android平台指南](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 ## 下載來源 {#download-the-source}
 
@@ -56,7 +59,7 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 >
 >開發來源包含應用程式的最新狀態，同時包含未暫存的變更。 使用「測試」來源建立要送出至應用程式商店廠商的發行申請。
 >
->如果您從未儲存應用程式，選取「測試」將會觸發測試工作流程(提示：這將會在AppStore和Google playStore中的PhoneGap Enterprise Viewer應用程式中顯示為分段應用程式)。
+>如果您從未儲存應用程式，選取「測試」將會觸發測試工作流程(提示： 這將會在AppStore和Google PlayStore中的PhoneGap Enterprise Viewer應用程式中顯示為分段應用程式)。
 
 * 按一下「下載」並儲存ZIP至您的電腦。
 * 將下載的zip檔案解壓縮至您的工作區。
@@ -91,6 +94,7 @@ phonegap run ios
 >1. 導覽至helloWorld(cd helloWorld)
 >1. 執行&#39;phonegap run android（或如上所示，以ios取代android）。
 >1. 模擬器會開啟，執行您新建立的PhoneGap應用程式，如果JavaScript原生橋接器運作正常，則會說「裝置就緒」。
+
 >
 >
 這將驗證您的PhoneGap CLI開發環境是否已正常啟動並正常運行。
