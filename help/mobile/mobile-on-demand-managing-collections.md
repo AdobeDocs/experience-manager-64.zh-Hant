@@ -1,8 +1,8 @@
 ---
 title: 管理系列
 seo-title: 管理系列
-description: 系列代表定義良好的儲存貯體，其中填入適合封面主題的文章或橫幅等內容。 請依照本頁進一步瞭解。
-seo-description: 系列代表定義良好的儲存貯體，其中填入適合封面主題的文章或橫幅等內容。 請依照本頁進一步瞭解。
+description: 系列代表定義良好的儲存貯體，其中填入適合封面主題的文章或橫幅等內容。 請依本頁瞭解詳細資訊。
+seo-description: 系列代表定義良好的儲存貯體，其中填入適合封面主題的文章或橫幅等內容。 請依本頁瞭解詳細資訊。
 uuid: 1d2e9769-d2cc-4d43-a428-e962a51eb5d0
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 0%
 
 ---
 
@@ -29,12 +32,13 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->請參閱「線上說明」中的下列資源，以瞭解AEM mobile應用程式中的下列主題：
+>請參閱「線上說明」中的下列資源，以瞭解AEM Mobile應用程式中的下列主題：
 >
 >* [設計考量](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
    >
    >
 * [管理系列](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+
 >
 
 
@@ -130,7 +134,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 >
 >內容必須先上傳至Mobile On-Demand，才能新增至系列。
 
-系列實質上是相關內容的類別：他們會將文章、橫幅等內容收集到可定義應用程式導覽結構的封裝中。 系列可以巢狀化。
+系列實質上是相關內容的類別： 他們會將文章、橫幅等內容收集到可定義應用程式導覽結構的封裝中。 系列可以巢狀化。
 
 1. 從Mobile，從目錄中選擇您的Mobile On-Demand應用程式。
 1. 選取先前上傳的文章（或橫幅／系列）
