@@ -10,7 +10,7 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 0%
@@ -86,7 +86,7 @@ ht-degree: 0%
       >* 升級crx-repository並遷移內容後，請更改管理員帳戶的密碼。 如需詳細指示，請 [參閱變更現有使用者的密碼](/help/sites-administering/granite-user-group-admin.md)。
 
 
-1. 執行部署後工作，以驗證登入認證、設定檔案服務、通訊管理、檔案安全性等，視您的使用案例而定。
+1. 執行部署後工作，以驗證登入憑證、設定檔案服務、通訊管理、檔案安全性等，視您的使用案例而定。
 1. 驗證伺服器是否升級成功：
 
    在已升級的AEM Forms伺服器上執行幾項例行作業，以確保伺服器已成功升級。 您可以填寫並送出一些已轉換的表格，或保護檔案，以確保成功升級。
@@ -125,7 +125,9 @@ ht-degree: 0%
 
       如果建立資料庫的新實例，請將步驟3中備份的資料導入資料庫。 有關如何將資料導入資料庫的資訊，請參見相應資料庫供應商的文檔。
 
-      >[!NOTE] 如果您使用RDBMK永續性格式，請針對在JEE上的AEM Forms上執行的儲存庫永續性和檔案服務使用單一資料庫。
+      >[!NOTE]
+      >
+      >如果您使用RDBMK永續性格式，請針對在JEE上的AEM Forms上執行的儲存庫永續性和檔案服務使用單一資料庫。
 
 
 1. 執行升級：
@@ -133,17 +135,23 @@ ht-degree: 0%
    1. 執行安裝程式，將AEM 6.4 Forms安裝在新伺服器上的JEE上。 安裝程式會將所有必要檔案置於您的電腦上，並置於一個安裝目錄結構中。
    1. 安裝完成後，請執行 **Configuration Manager** ，以設定各種AEM Forms模組並設定適當的組態。 除了配置設定外，它還允許指定全局資料儲存(GDS)和crx-repository的路徑。
 
-      >[!NOTE] 在「升級任務選擇」畫面上，選 **[!UICONTROL 取「從Adobe Experience Manager Forms 6.2.0升級」選項]** 。 「 **[!UICONTROL 從Adobe Experience Manager Forms 6.2.0]** 」選項可讓組態管理員從LiveCycle ES3升級至AEM 6.4 Forms。
+      >[!NOTE]
+      >
+      >在「升級任務選擇」畫面上，選 **[!UICONTROL 取「從Adobe Experience Manager Forms 6.2.0升級」選項]** 。 「 **[!UICONTROL 從Adobe Experience Manager Forms 6.2.0]** 」選項可讓組態管理員從LiveCycle ES3升級至AEM 6.4 Forms。
 
    1. （AEM Forms檔案安全性模組不需要）升級並將CRX儲存庫匯入AEM 6.4 Forms伺服器。
 
-      >[!NOTE] 升級crx-repository並遷移內容後，請更改管理員帳戶的密碼。 如需詳細指示，請 [參閱變更現有使用者的密碼](/help/sites-administering/granite-user-group-admin.md)。
+      >[!NOTE]
+      >
+      >升級crx-repository並遷移內容後，請更改管理員帳戶的密碼。 如需詳細指示，請 [參閱變更現有使用者的密碼](/help/sites-administering/granite-user-group-admin.md)。
 1. 執行部署後工作，以驗證登入認證、設定檔案服務、通訊管理、檔案安全性等，視您的使用案例而定。
 1. 驗證伺服器是否升級成功：
 
    在已升級的AEM Forms伺服器上執行幾項例行作業，以確保伺服器已成功升級。 您可以填寫並送出一些已轉換的表格，或保護檔案，以確保成功升級。
 
-   >[!NOTE] 在AEM 6.4 Forms中，crx-repository的結構已變更。 升級至AEM 6.4表單後，請使用您重新建立的自訂變更路徑。 如需變更路徑的完整清單，請參 [閱AEM 6.4中的Forms Repository Restructing](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)。
+   >[!NOTE]
+   >
+   >在AEM 6.4 Forms中，crx-repository的結構已變更。 升級至AEM 6.4表單後，請使用您重新建立的自訂變更路徑。 如需變更路徑的完整清單，請參 [閱AEM 6.4中的Forms Repository Restructing](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)。
 
 **根據您現有的環境和應用程式伺服器，選擇下列其中一份檔案，並依照詳細指示進行：**
 
