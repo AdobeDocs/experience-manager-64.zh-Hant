@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 0019e367-8edc-4a23-bfa4-5beda266ace6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## 建立可存取裝置功能的AEM元件 {#building-aem-components-that-access-device-features}
 
-[AEM phoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github儲存庫為開發人員提供功能強大的AEM應用程式，說明許多核心Cordova API的使用方式。 當透過PhoneGap CLI在iOS或Android上執行時，應用程式會開啟至下列頁面，其中包含每個裝置API的連結，其中顯示：
+[AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github儲存庫為開發人員提供功能強大的AEM應用程式，說明許多核心Cordova API的使用方式。 當透過PhoneGap CLI在iOS或Android上執行時，應用程式會開啟至下列頁面，其中包含每個裝置API的連結，其中顯示：
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
