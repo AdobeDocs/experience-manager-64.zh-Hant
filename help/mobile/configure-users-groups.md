@@ -11,6 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
@@ -23,16 +26,16 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 本章說明使用者角色以及如何設定您的使用者和群組，以支援製作和管理行動應用程式。
 
-## AEM mobile應用程式使用者和群組管理 {#aem-mobile-application-users-and-group-administration}
+## AEM Mobile應用程式使用者和群組管理 {#aem-mobile-application-users-and-group-administration}
 
 若要協助組織和管理AEM應用程式的權限模型，請提供下列兩個群組：
 
 * 應用程式管理員
 * 應用程式作者的應用程式作者
 
-### AEM mobile應用程式內容作者（應用程式作者群組） {#aem-mobile-application-content-authors-app-author-group}
+### AEM Mobile應用程式內容作者（應用程式作者群組） {#aem-mobile-application-content-authors-app-author-group}
 
-應用程式作者群組成員負責製作AEM mobile應用程式內容，包括頁面、文字、影像和視訊。
+應用程式作者群組成員負責製作AEM Mobile應用程式內容，包括頁面、文字、影像和視訊。
 
 #### 群組設定——應用程式作者 {#group-configuration-app-authors}
 
@@ -44,7 +47,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    將此群組的ID設為&#39;app-authors&#39;，表示它是AEM內特定於製作行動應用程式的特定類型的作者使用者群組。
 
-1. 將成員添加到組：作者
+1. 將成員添加到組： 作者
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
@@ -83,6 +86,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * 內容作者
    * workflow-users
+
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
 1. 導覽至「權 [限」主控台](http://localhost:4502/useradmin) ，並新增管理CloudServices的權限
@@ -94,6 +98,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
    * （讀取、修改、建立、刪除、複製）/etc/packages/mobileapp
    * （讀取）於/var/contentsync
+
    >[!NOTE]
    >
    >套件複製可用來從作者例項發佈應用程式更新至發佈例項
