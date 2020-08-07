@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 translation-type: tm+mt
 source-git-commit: 8cfe5ba1682bf67b26845a8b083c2fbe84af3637
+workflow-type: tm+mt
+source-wordcount: '970'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +50,7 @@ Mobile Apps應可視需要使用AEM中的任何和所有內容，以提供目標
 
 ### 資產最佳化 {#asset-optimization}
 
-Content services的一個關鍵價值是能夠傳回已針對裝置最佳化的資產。 這可降低本機裝置儲存空間需求，並改善應用程式效能。
+Content Services的一個關鍵價值是能夠傳回已針對裝置最佳化的資產。 這可降低本機裝置儲存空間需求，並改善應用程式效能。
 
 根據API要求中提供的資訊，資產最佳化將是伺服器端功能。 盡可能快取資產轉譯，如此類似的請求就不需要重新產生資產轉譯。
 
@@ -68,7 +71,7 @@ Content services的一個關鍵價值是能夠傳回已針對裝置最佳化的�
 
 ### 管理資產 {#managing-assets}
 
-Content services提供對AEM管理資產的存取權，這些資產可能無法透過其他AEM內容參考。
+Content Services提供對AEM管理資產的存取權，這些資產可能無法透過其他AEM內容參考。
 
 #### 現有受管理資產 {#existing-managed-assets}
 
@@ -94,7 +97,7 @@ Content services提供對AEM管理資產的存取權，這些資產可能無法�
 
 #### 取得可用資產實體清單 {#getting-a-list-of-available-asset-entities}
 
-應用程式開發人員可以擷取資產實體，以取得可用資產的清單。 Content services空間端點可以透過web service API SDK提供該資訊。
+應用程式開發人員可以擷取資產實體，以取得可用資產的清單。 Content Services空間端點可以透過web service API SDK提供該資訊。
 
 結果會是JSON格式的物件，提供「圖示」檔案夾中資產的清單。
 
@@ -102,7 +105,7 @@ Content services提供對AEM管理資產的存取權，這些資產可能無法�
 
 #### 取得影像 {#getting-an-image}
 
-JSON會針對每個影像提供URL，由Content services產生至影像。
+JSON會針對每個影像提供URL，由Content Services產生至影像。
 
 若要取得「購物車」影像的二進位檔，會再次使用用戶端程式庫。
 
@@ -110,12 +113,12 @@ JSON會針對每個影像提供URL，由Content services產生至影像。
 
 需要維護內容版面的客戶需要HTML內容。 這對於使用Web容器（例如Cordova webview）來顯示內容的原生應用程式非常有用。
 
-AEM Content services將可透過API提供HTML內容至行動應用程式。 想要將AEM內容公開為HTML的客戶將會建立指向AEM內容來源的HTML頁面實體。
+AEM Content Services將可透過API提供HTML內容至行動應用程式。 想要將AEM內容公開為HTML的客戶將會建立指向AEM內容來源的HTML頁面實體。
 
 會考慮下列選項：
 
-* **** Zip檔案：為了在裝置上正確顯示，所有頁面的參考資料（css、JavaScript、資產等）都有最佳的顯示機會。 -將包含在具有響應的單個壓縮檔案中。 HTML頁面中的參照將會調整為使用這些檔案的相對路徑。
-* **** 串流：從AEM取得必要檔案的資訊清單。 然後使用該資訊清單來要求所有檔案（HTML、CSS、JS等）與後續的要求。
+* **Zip檔案：** 為了在裝置上正確顯示，所有頁面的參考資料（css、JavaScript、資產等）都有最佳的顯示機會。 -將包含在具有響應的單個壓縮檔案中。 HTML頁面中的參照將會調整為使用這些檔案的相對路徑。
+* **串流：** 從AEM取得必要檔案的資訊清單。 然後使用該資訊清單來要求所有檔案（HTML、CSS、JS等） 與後續的要求。
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
@@ -140,6 +143,6 @@ AEM Content services將可透過API提供HTML內容至行動應用程式。 想�
 1. 透過內容轉譯器直接取得內容
 
    * Out-of-the-box預設Sling Renderers
-   * AEM Mobile/Content services內容轉譯器
+   * AEM Mobile/Content Services內容轉譯器
    * 自訂轉譯
 
