@@ -11,6 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 2de6bafb-47cf-4aca-84a3-0cace2858d5c
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '114'
+ht-degree: 1%
 
 ---
 
@@ -25,4 +28,4 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 
 >[!CAUTION]
 >
->AEM驗證應用程式已過時。 應用程式已從Apple appStore和Android playStore移除。
+>AEM驗證應用程式已過時。 應用程式已從Apple AppStore和Android PlayStore移除。
