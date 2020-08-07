@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: cc97a926-d893-46a9-8aea-b56cbee5df01
 translation-type: tm+mt
 source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 
@@ -26,11 +29,11 @@ source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
 
 >[!NOTE]
 >
->在使用AEM mobile並依照本快速入門手冊中的步驟進行之前，使用者應先熟悉 [AEM](/help/sites-deploying/deploy.md)。
+>在使用AEM Mobile並依照本快速入門手冊中的步驟進行之前，使用者應先熟悉 [AEM](/help/sites-deploying/deploy.md)。
 >
 >若要設定AEM Mobile隨選服務的環境，請參閱 [AEM Mobile應用程式儀表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 
-AEM開 **發人員可延伸並建立自訂的網頁範本和元件，讓** AEM Author ** 建立精美而引人入勝的行動體驗。 這些範本和元件不僅針對行動應用程式世界最佳化；但是，您可以與裝置和AEM伺服器（任何遠端伺服器）通訊，以全通道服務端點。 AEM的內建內容編輯器是 ** AEM作者用來在應用程式中建立豐富且相關的體驗，包括與其他Adobe Marketing cloud整合。
+AEM開 **發人員可延伸並建立自訂的網頁範本和元件，讓** AEM Author ** 建立精美而引人入勝的行動體驗。 這些範本和元件不僅針對行動應用程式世界最佳化； 但是，您可以與裝置和AEM伺服器（任何遠端伺服器）通訊，以全通道服務端點。 AEM的內建內容編輯器是 ** AEM作者用來在應用程式中建立豐富且相關的體驗，包括與其他Adobe Marketing Cloud整合。
 
 AEM開發人員在使用AEM Mobile隨選服務建立應用程式時，需負責下列工作：
 
