@@ -1,8 +1,8 @@
 ---
 title: 管理橫幅
 seo-title: 管理橫幅
-description: 橫幅通常代表圖形促銷連結。 請依照本頁進一步瞭解。
-seo-description: 橫幅通常代表圖形促銷連結。 請依照本頁進一步瞭解。
+description: 橫幅通常代表圖形促銷連結。 請依本頁瞭解詳細資訊。
+seo-description: 橫幅通常代表圖形促銷連結。 請依本頁瞭解詳細資訊。
 uuid: 593fe2ef-84df-42e2-8a03-897fb67a896d
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 0%
 
 ---
 
@@ -29,12 +32,13 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->請參閱「線上說明」中的下列資源，以瞭解AEM mobile應用程式中的下列主題：
+>請參閱「線上說明」中的下列資源，以瞭解AEM Mobile應用程式中的下列主題：
 >
 >* [設計考量](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
    >
    >
 * [建立橫幅](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+
 >
 
 
@@ -82,7 +86,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 編輯文章的工作流程：
 
 1. 從Mobile，從目錄中選擇您的Mobile On-Demand應用程式。
-1. 從**「管理橫幅**」方塊選取AEM來源的橫幅。
+1. 從**管理橫幅**圖格選取AEM來源的橫幅。
 1. 按一下清單檢視中反白顯示的橫幅，在內容編輯器中將其開啟。
 1. 使用內容編輯器拖曳橫幅內容（手稿、影像、文字等）。
 
