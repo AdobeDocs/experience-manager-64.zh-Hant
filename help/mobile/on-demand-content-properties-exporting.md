@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 translation-type: tm+mt
 source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 4%
 
 ---
 
@@ -39,17 +42,17 @@ source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
   <tr>
    <td>dps-cloudConfig</td>
    <td>字串：路徑</td>
-   <td><p>已設定Mobile On-Demand cloud服務的路徑。 用於AEM mobile到Mobile的隨選動作（API呼叫）</p> <p>當作者選擇Mobile On-Demand cloud服務將應用程式關聯至時，此關聯會透過「管理連線」方塊設定。</p> </td>
+   <td><p>已設定Mobile On-Demand Cloud服務的路徑。 用於AEM Mobile到Mobile的隨選動作（API呼叫）</p> <p>當作者選擇Mobile On-Demand Cloud服務將應用程式關聯至時，此關聯會透過「管理連線」方塊設定。</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
    <td>字串：路徑</td>
-   <td><p>應用程式匯出設定的路徑。 導出配置是一個資料夾，包含2個子ContentSync導出配置模板；</p> <p><i>dps-article</i>:ContentSync匯出設定，以匯出文章內容</p> <p><i>dps-HTMLResources</i>:ContentSync匯出設定可匯出應用程式／文章共用資源</p> </td>
+   <td><p>應用程式匯出設定的路徑。 導出配置是一個資料夾，包含2個子ContentSync導出配置模板；</p> <p><i>dps-article</i>: ContentSync匯出設定，以匯出文章內容</p> <p><i>dps-HTMLResources</i>: ContentSync匯出設定可匯出應用程式／文章共用資源</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
    <td>字串</td>
-   <td><p>此應用程式連結／系結至之行動隨選專案的ID/URI。</p> <p>當作者從相關Mobile On-Demand cloud服務的可用專案清單中選擇專案時，此關聯會透過「管理連線」方塊設定。</p> </td>
+   <td><p>此應用程式連結／系結至之行動隨選專案的ID/URI。</p> <p>當作者從相關Mobile On-Demand Cloud服務的可用專案清單中選擇專案時，此關聯會透過「管理連線」方塊設定。</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -64,12 +67,12 @@ source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
    <td>日期</td>
-   <td>上次從AEM上傳共用資源至AEM mobile的日期。</td>
+   <td>上次從AEM上傳共用資源至AEM Mobile的日期。</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>
    <td>字串：userid</td>
-   <td>從AEM上次上傳共用資源請求至AEM mobile的使用者ID。</td>
+   <td>從AEM上次上傳共用資源請求至AEM Mobile的使用者ID。</td>
   </tr>
   <tr>
    <td>pge-dashboard-config</td>
