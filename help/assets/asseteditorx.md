@@ -3,7 +3,7 @@ title: 擴充資產編輯器
 description: 瞭解如何使用自訂元件擴充資產編輯器的功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 13%
@@ -47,7 +47,7 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlib通常會載
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-範例會在( `head.jsp``/apps/geometrixx/components/asseteditor/head.jsp`)中載入此javascript來源。
+範例會在( `head.jsp``/apps/geometrixx/components/asseteditor/head.jsp`)中載入此JavaScript來源。
 
 ### 其他樣式表 {#additional-style-sheets}
 
@@ -59,9 +59,9 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlib通常會載
 
 ### Geometrixx樣式表 {#geometrixx-style-sheet}
 
-範例頁面元件要求所有選擇器都以( `.asseteditor` )開 `static.css` 頭`/etc/designs/geometrixx/static.css`。 最佳實務： 將所有選 `.asseteditor` 擇器複製到樣式表，並視需要調整規則。
+範例頁面元件要求所有選擇器都以( `.asseteditor` )開 `static.css` 頭`/etc/designs/geometrixx/static.css`。 最佳實務：將所有選 `.asseteditor` 擇器複製到樣式表，並視需要調整規則。
 
-### 表單選擇器： 對最終載入的資源進行調整 {#formchooser-adjustments-for-eventually-loaded-resources}
+### 表單選擇器：對最終載入的資源進行調整 {#formchooser-adjustments-for-eventually-loaded-resources}
 
 資產編輯器使用表單選擇器，您只需新增表單選擇器和表單路徑至資產的URL，即可編輯相同表單頁面上的資源（在本例中為資產）。
 
