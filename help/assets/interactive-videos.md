@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 4d1c3bcc4262781d7032273504ccf41e36f5c3a5
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '6010'
 ht-degree: 4%
@@ -53,7 +53,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 >[!NOTE]
 [在AEM Assets中使用互動式視訊、連結分享和YouTube分享](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)。
 
-## 快速入門： 互動式影片 {#quick-start-interactive-videos}
+## 快速入門：互動式影片 {#quick-start-interactive-videos}
 
 下列逐步工作流程說明旨在協助您在動態媒體中快速上手使用互動式視訊。
 
@@ -95,7 +95,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 1. **在AEM中將互動式視訊新增至您的網站或網站**
 
-   如果您使用AEM Sites或AEM eCommerce，或兩者皆使用，您可以將互動式視訊直接拖曳至AEM的網頁上。 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+   如果您使用AEM Sites或AEM eCommerce，或兩者皆使用，您可將互動式視訊直接拖曳至AEM的網頁上。 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
    使用內嵌程式碼或URL，將您的互動式視訊與網站體驗整合。 請參 [閱整合互動式視訊與您的網站](#integrating-an-interactive-video-with-your-website)。
 
@@ -236,7 +236,7 @@ Quickview的大多數實施都採用以下模式：
 
 當在製作環境中按一下縮圖時，會顯示「快速檢 **[!UICONTROL 視]** 」對話方塊的預覽。
 
-![chlimage_1-129](assets/chlimage_1-127.png)
+![chlimage_1-127](assets/chlimage_1-127.png)
 
 您可以選擇建立自訂的互動式視訊檢視器預設集。 您可決定視訊播放器的樣式、互動式縮圖和視訊結尾的縮圖格線檢視。
 
@@ -335,7 +335,7 @@ After you save the viewer preset, its state is automatically set to **[!UICONTRO
 
    為了說明，以下三個螢幕擷取畫面使用相同的影片。 請注意，每個區段的寬度會依時間軸縮放 **[!UICONTROL 設定而變]** 更。
 
-   ![chlimage_1-127](assets/chlimage_1-129.png)
+   ![chlimage_1-129](assets/chlimage_1-129.png)
 
    螢幕擷取A
 
@@ -436,7 +436,7 @@ After you save the viewer preset, its state is automatically set to **[!UICONTRO
       </ul> 
        <ul> 
        <li>指定「體驗片段」的寬度和高度，如影片所示。</li>
-       </ul><strong>注意</strong>: 請注意，當您將檢視器內嵌在「體驗片段」時，不支援「互動式視訊」中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。</p></tr>&lt; 
+       </ul><strong>注意</strong>:請注意，當您將檢視器內嵌在「體驗片段」時，不支援「互動式視訊」中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。</p></tr>&lt; 
       <tr> 
       <td>若要編輯已指派給縮圖影像的動作</td> 
       <td>在時間軸區段中，點選文字標籤右側有連結的縮圖影像。 連結指示已為其指派操作。 點選「 <strong>動作</strong> 」標籤以進行變更。</td> 
@@ -494,7 +494,7 @@ After you save the viewer preset, its state is automatically set to **[!UICONTRO
 
 1. 發佈互動式視訊。 發佈會建立內嵌代碼或URL，您最終會將其複製並貼至您的網站體驗。
 
-   如果您使用Quickviews新增互動功能，則只使用內嵌程式碼； 如果您使用超連結網頁新增互動功能，也可以使用發佈的URL。 不過請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
+   如果您使用Quickviews新增互動功能，則只使用內嵌程式碼；如果您使用超連結網頁新增互動功能，也可以使用發佈的URL。 不過請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
 
    請參閱 [發佈資產](publishing-dynamicmedia-assets.md)。
 
@@ -521,7 +521,7 @@ After you save the viewer preset, its state is automatically set to **[!UICONTRO
 
    See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
 
-   如果您使用Quickviews新增互動功能，則只使用內嵌程式碼； 如果您使用超連結網頁新增互動功能，也可以使用發佈的URL。 不過請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
+   如果您使用Quickviews新增互動功能，則只使用內嵌程式碼；如果您使用超連結網頁新增互動功能，也可以使用發佈的URL。 不過請注意，如果您的互動式內容具有相對URL的連結，尤其是AEM Sites頁面的連結，就無法使用以URL為基礎的連結方法。
 
 1. 在目標的網頁程式碼中，識別靜態視訊的位置。
 1. 移除靜態視訊，並以您從AEM Assets複製的內嵌代碼或URL取代代碼，如同。
@@ -530,7 +530,7 @@ After you save the viewer preset, its state is automatically set to **[!UICONTRO
 
 >[!NOTE]
 此時，如果您只新增超連結網頁的互動功能，就完成了。
-不過，如果您新增任何互動功能來觸發Quickview，則互動視訊旁的縮圖僅供顯示之用； 它們尚未與您現有的Quickviews整合。 在這種情況下，您現在需要將互動式視訊與網站上現有的Quickviews整合。
+不過，如果您新增任何互動功能來觸發Quickview，則互動視訊旁的縮圖僅供顯示之用；它們尚未與您現有的Quickviews整合。 在這種情況下，您現在需要將互動式視訊與網站上現有的Quickviews整合。
 
 **範例**
 
