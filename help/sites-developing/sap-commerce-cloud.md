@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -171,18 +171,16 @@ hybris使用使用者作業來儲存資訊，例如客戶的購物車。 工作�
 
 * hybris擴充功能提供輪詢匯入程式（「hybris」配置），可設定此匯入程式以指定的間隔（例如，每隔24小時，以秒為單位指定間隔）將變更匯入AEM:
 
-   * 
-
-      ```
-      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-       {
-       * "jcr:mixinTypes": ["cq:PollConfig"],
-       * "enabled": true,
-       * "source": "hybris:outdoors",
-       * "jcr:primaryType": "cq:PageContent",
-       * "interval": 86400
-       }
-      ```
+   ```
+     http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+      {
+      * "jcr:mixinTypes": ["cq:PollConfig"],
+      * "enabled": true,
+      * "source": "hybris:outdoors",
+      * "jcr:primaryType": "cq:PageContent",
+      * "interval": 86400
+      }
+   ```
 
 * AEM中的目錄設定可辨識 **Staged** and **Online目錄版本** 。
 
@@ -489,7 +487,7 @@ The owns `CommerceSession` the three elements:
 
 * 訂單通常需要提供多種運送選項（和價格）。
 * 價格可能根據訂單的項目和詳細資訊，例如重量和／或交貨地址。
-* The `CommerceSession` has access to all the dependiences, so the it can be as as simaly as product pricing:
+* The `CommerceSession` has access to all the dependiences, so the it can as simaly as approduct pricing:
 
    * 該公司 `CommerceSession` 擁有運費定價。
    * 可使用 `updateOrder(Map<String, Object> delta)`
@@ -664,4 +662,3 @@ public class MyImportHandler extends DefaultImportHandler {
     ...
 }
 ```
-
