@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -233,14 +233,20 @@ AEM中包含的「節點類型」基本定義如下：
 
    屬性的特殊 `cq:movedTo` 值為 `nirvana`: 它將在標籤被刪除時應用，但無法從儲存庫中刪除，因為必須保留具有 `cq:movedTo` 子標籤的子標籤。
 
-   >[!NOTE]只有 `cq:movedTo` 符合下列任一條件時，才會將屬性新增至已移動或合併的標籤：
+   >[!NOTE]
+   >
+   >只有 `cq:movedTo` 符合下列任一條件時，才會將屬性新增至已移動或合併的標籤：
+   >
    >1. 標籤用於內容（亦即它有參考）或
    >1. 標籤包含已移動的子項。
 
 
 * `cq:backlinks` 將參照保持在另一個方向，即保留已移動到標籤B或與標籤B合併的所有標籤的清單。 當標籤B移動／合併／刪 `cq:movedTo`除時，或標籤B啟動時，這通常需要保持屬性的最新狀態，在此情況下，其所有的回溯連結標籤也必須啟用。
 
->[!NOTE]只有 `cq:backlinks` 符合下列任一條件時，才會將屬性新增至已移動或合併的標籤：
+>[!NOTE]
+>
+>只有 `cq:backlinks` 符合下列任一條件時，才會將屬性新增至已移動或合併的標籤：
+>
 >1. 標籤用於內容（亦即它有參考）或
 >1. 標籤包含已移動的子項。
 
