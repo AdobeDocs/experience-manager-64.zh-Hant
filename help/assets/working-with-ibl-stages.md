@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 0%
@@ -37,7 +37,7 @@ AEM 3D支援使用內建的Adobe Rapid Refine™轉譯器和協力廠商轉譯�
 
 * **漫射照明環境影像** -此類影像應為HDR影像，但可能較小，因為在使用影像進行漫射照明之前，會先對影像進行大量篩選。
 * **反射環境影像** -此類影像用於在對象曲面中建立反射。 它可以是尺寸和解析度的標準8位元RGB影像，提供所要的反射品質和清晰度。 如果指定HDR影像，AEM 3D會先將它轉換為8位元RGB，再使用專屬演算法。
-* **背景環境影像** -此類型的影像會當做背景使用。 它可以是標準的8位元RGB影像，而且應具備舞台背景所需的大小／解析度／細節層級。 如果指定HDR影像，AEM 3D會使用專屬演算法將其轉換為8位元RGB。 &quot;
+* **背景環境影像** -此類型的影像會當做背景使用。 它可以是標準的8位元RGB影像，而且應具備舞台背景所需的大小／解析度／細節層級。 如果指定HDR影像，AEM 3D會使用專屬演算法將其轉換為8位元RGB。
 
 >[!NOTE]
 >
@@ -55,11 +55,11 @@ AEM 3D支援使用內建的Adobe Rapid Refine™轉譯器和協力廠商轉譯�
   </tr> 
   <tr> 
    <td>IBL Sun詳細資訊</td> 
-   <td><p>可讓您調整模擬太陽的輔助光源的方向和強度。 <span class="diff-html-added">該光源增加照明亮度並使物體在地面上投下陰影。 使用快速調整演算和使用Google Chrome預覽時，支援陰影投影； 但是，其他瀏覽器目前不支援它。</span></p> 
+   <td><p>可讓您調整模擬太陽的輔助光源的方向和強度。 <span class="diff-html-added">該光源增加照明亮度並使物體在地面上投下陰影。 使用快速調整演算和使用Google Chrome預覽時，支援陰影投影；但是，其他瀏覽器目前不支援它。</span></p> 
     <ul> 
      <li><strong>lat</strong> —— 太陽光源的垂直位置(<code>0.0</code>-<code>1.0</code>)。<br /> 水準線(漫 <code>0.0</code> 射照明環境影像的垂直中心); <code>1.0</code> 位於天頂（漫射照明環境影像的上邊緣）。</li> 
-     <li><strong>long</strong> —— 太陽光源的水準位置(<code>0.0</code>-<code>1.0</code>)。<br /> 0.0的設定與左側對應； 1.0對應於漫射照明環境影像的右邊緣。<br /> </li> 
-     <li><strong>bright</strong> —— 太陽光源的亮度。 增加這個值，使陽光源變亮； 降低此值以變暗。 <br /> 設定會關閉 <code>0</code> 輔助光源並停用投影陰影。 該參數不影響環境反射。<br /> </li> 
+     <li><strong>long</strong> —— 太陽光源的水準位置(<code>0.0</code>-<code>1.0</code>)。<br /> 0.0的設定與左側對應；1.0對應於漫射照明環境影像的右邊緣。<br /> </li> 
+     <li><strong>bright</strong> —— 太陽光源的亮度。 增加這個值，使陽光源變亮；降低此值以變暗。 <br /> 設定會關閉 <code>0</code> 輔助光源並停用投影陰影。 該參數不影響環境反射。<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -94,5 +94,5 @@ IBL級使用球形背景影像，預設情況下，球形背景影像直徑為20
 
    例如，20米長的噴氣式飛機模型如果顯示良好 `dam:gPlaneRadius=20000`。
 
-1. 在CRXDE Lite頁面的左上角附近，點選「全部 **[!UICONTROL 儲存」]**。
+1. 在CRXDE Lite頁面的左上角附近，點選「全 **[!UICONTROL 部儲存」]**。
 
