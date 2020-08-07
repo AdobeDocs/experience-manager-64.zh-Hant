@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2698'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 在作者模式中，每個個別頁面會個別呈現。 Angular不處理頁面間的路由選擇，ng-view也不用於載入包含頁面元件的部分模板。 而是透過標籤將頁面範本(template.jsp)的內容包含在伺服器 `cq:include` 端。
 
-此策略可讓作者具備功能（例如在段落系統中新增和編輯元件、Sidekick、設計模式等）函式而不進行修改。 依賴用戶端轉譯的頁面（例如應用程式的頁面）在AEM作者模式中無法正常執行。
+此策略可讓作者具備功能（例如在段落系統中新增和編輯元件、Sidekick、設計模式等） 函式而不進行修改。 依賴用戶端轉譯的頁面（例如應用程式的頁面）在AEM作者模式中無法正常執行。
 
 請注意，template.jsp include會包裝在包含指 `div` 令的元素中 `ng-controller` 。 這種結構使得DOM內容與控制器相連結。 因此，雖然在用戶端呈現的頁面會失敗，但個別元件仍能正常運作（請參閱下方「元件」一節）。
 
@@ -103,7 +106,7 @@ ng-app="<c:out value='${applicationName}'/>"
 
 此模組還定義了名為的頂級控制器， `AppController` 該控制器將變 `wcmMode` 量暴露到該範圍，並配置從中獲取內容同步更新負載的URI。
 
-最後，此模組會重複每個子頁面（包括本身），並呈現每個頁面的路由片段內容（透過angul-route-fragment.js選擇器與延伸功能），包括它作為Angular的\$routeProvider的組態項目。 換言之，\$routeProvider會告訴應用程式，當要求指定路徑時，要呈現哪些內容。
+最後，此模組會重複每個子頁面（包括本身），並呈現每個頁面的路由片段內容（透過angul-route-fragment.js選擇器與延伸模組），包括它作為Angular的\$routeProvider的組態項目。 換言之，\$routeProvider會告訴應用程式，當要求指定路徑時，要呈現哪些內容。
 
 ### angular-route-fragment.js.jsp {#angular-route-fragment-js-jsp}
 
@@ -231,13 +234,13 @@ PhoneGap應用程式中任何指定資產的URI不僅會依平台而有所不同
 
 #### template.jsp {#template-jsp-1}
 
-template.jsp指令碼將呈現元件的標籤。 如果相關元件是由從AEM擷取的JSON資料所驅動(例如&#39;ng-text&#39;:/libs/mobileapps/components/angular/ng-text/template.jsp)，則此指令碼將負責將標籤與頁面控制器範圍所公開的資料連線。
+template.jsp指令碼將呈現元件的標籤。 如果相關元件是由從AEM擷取的JSON資料所驅動(例如&#39;ng-text&#39;: /libs/mobileapps/components/angular/ng-text/template.jsp)，則此指令碼將負責將標籤與頁面控制器範圍所公開的資料連線。
 
 不過，效能需求有時會要求不執行用戶端範本（亦即資料系結）。 在這種情況下，只需在伺服器端轉換元件的標籤，它就會包含在頁面範本內容中。
 
 #### opperise.jsp {#overhead-jsp}
 
-在由JSON資料驅動的元件中（例如&#39;ng-text&#39;）:/libs/mobileapps/components/angular/ng-text)，開銷。jsp可用於從template.jsp中刪除所有Java代碼。 然後從template.jsp參考此變數，而它在請求中公開的任何變數都可供使用。 此策略鼓勵將邏輯與表現分離，並限制從現有元件衍生新元件時必須複製和貼上的程式碼量。
+在由JSON資料驅動的元件中（例如&#39;ng-text&#39;）: /libs/mobileapps/components/angular/ng-text)，開銷。jsp可用於從template.jsp中刪除所有Java代碼。 然後從template.jsp參考此變數，而它在請求中公開的任何變數都可供使用。 此策略鼓勵將邏輯與表現分離，並限制從現有元件衍生新元件時必須複製和貼上的程式碼量。
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
@@ -312,7 +315,7 @@ www/
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-after-platform_add目錄包含該 `copy_AMS_Conifg.js` 檔案。 此指令碼會複製設定檔，以支援Adobe Mobile services分析的集合。
+after-platform_add目錄包含該 `copy_AMS_Conifg.js` 檔案。 此指令碼會複製設定檔，以支援Adobe Mobile Services分析的集合。
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
