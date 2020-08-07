@@ -1,8 +1,8 @@
 ---
 title: 雲端設定
 seo-title: 雲端設定
-description: 將隨選應用程式與雲端設定關聯後，Adobe Experience Manager(AEM)可以建立雙向連結，直接與Mobile On-Demand代管專案通訊。 請依照本頁進一步瞭解。
-seo-description: 將隨選應用程式與雲端設定關聯後，Adobe Experience Manager(AEM)可以建立雙向連結，直接與Mobile On-Demand代管專案通訊。 請依照本頁進一步瞭解。
+description: 將隨選應用程式與雲端設定關聯後，Adobe Experience Manager(AEM)可以建立雙向連結，直接與Mobile On-Demand代管的專案通訊。 請依本頁瞭解詳細資訊。
+seo-description: 將隨選應用程式與雲端設定關聯後，Adobe Experience Manager(AEM)可以建立雙向連結，直接與Mobile On-Demand代管專案通訊。 請依本頁瞭解詳細資訊。
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
