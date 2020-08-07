@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 translation-type: tm+mt
 source-git-commit: e9a322b73631e6cc48446ef44cda824dfbe4ea63
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ AEM Mobile On-Demand提供完整設定的應用程式範本、文章範本和文
 
 We.Unlimited App是範例範本，代表可完全設定且可管理的AEM Mobile隨選應用程式的殼層。
 
-建立新應用程式時選取此範例範本，可提供AEM mobile功能豐富式儀表板。
+建立新應用程式時選取此範例範本，可提供AEM Mobile功能豐富式儀表板。
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -42,7 +45,7 @@ We.Unlimited App是範例範本，代表可完全設定且可管理的AEM Mobile
 
 根據應用程式範本建立新應用程式的步驟：
 
-1. 導覽至AEM mobile應用程式目錄： *&lt;server-url>/aem/apps.html/content/mobileapps*
+1. 導覽至AEM Mobile應用程式目錄： *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. 選擇「 **建立** —>應 **用程式** 」，如下所示
 
 使用此範本建立應用程式後，您就可以將文章、橫幅和系列新增至應用程式。 若要重新造訪、建立文章、橫幅和系列，請參閱內容 [管理動作](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)。
@@ -59,15 +62,15 @@ We.Unlimited App是範例範本，代表可完全設定且可管理的AEM Mobile
 >
 >redirectTarget ****** 是以建立應用程式作業的一部分來計算，如果應用程式範本中有redirectTarget屬性，且redirectTarget的值定義為相對，則會嘗試解析路徑。 當建立應用程式程式在應用程式範本中找到redirectTarget的相對值時，該值會附加至建立應用程式的已解析位置。
 >
->例如，如果應用程式範本定義 ***redirectTarget*** ，其值為「*lanugage-masters/en*」，而應用程式是在「*/content/mobileapps/fooApp*」中建立，則在建立應用程式後重新導向Target的最終值將是「**/content/mobileapps/mobileapps/fooApp/language-masters」。
+>例如，如果應用程式範本定義 ***redirectTarget*** ，其值為「*lanugage-masters/en*」，而應用程式是在「*/content/mobileapps/fooApp*」中建立，則在建立應用程式後重新導向Target的最終值將是「**/content/mobileapps/mobilefooApp/language-masters」。
 
 
 ## 建立內容範本 {#creating-content-templates}
 
-每個實體類型都有兩個現成的範本。 以下是：
+每個實體類型都有兩個現成的範本。 說明如下：
 
-* **** 預設範本：用於內容建立，具有適用的預設屬性／結構
-* **** 匯入的範本：用於從AEM mobile匯入內容，並包含適用的預設屬性／結構
+* **預設範本：** 用於內容建立，具有適用的預設屬性／結構
+* **匯入的範本：** 用於從AEM Mobile匯入內容，並包含適用的預設屬性／結構
 
 ### 文章範本 {#article-templates}
 
@@ -104,7 +107,7 @@ We.Unlimited App是範例範本，代表可完全設定且可管理的AEM Mobile
 
 ***dps-resourceType=&quot;dps:Article&quot;***
 
-此屬性可確保AEM頁面被識別為AEM mobile目標文章頁面。
+此屬性可確保AEM頁面被識別為AEM Mobile目標文章頁面。
 
 依據AEM範本，您可以將任何預設屬性或子節點新增至範本的 ***jcr:content***。
 
@@ -122,10 +125,10 @@ We.Unlimited App是範例範本，代表可完全設定且可管理的AEM Mobile
 
 >[!NOTE]
 >
->目前AEM mobile沒有提供現成可用的元件。
+>目前AEM Mobile沒有提供現成可用的元件。
 
 
-您可以新增元件至頁面。 任何元件都可用於AEM mobile應用程式，但套用時可能無法正確呈現。
+您可以新增元件至頁面。 任何元件都可用於AEM Mobile應用程式，但套用時可能無法正確呈現。
 
 不過，若沒有在AEM中轉譯的自訂匯出內容同步處理常式，自訂元件可能無法正確匯出及上傳至AEM Mobile On-Demand Services。
 
@@ -151,7 +154,7 @@ We.Unlimited App是範例範本，代表可完全設定且可管理的AEM Mobile
 
 >[!NOTE]
 >
->請參閱「 [AEM mobile中範本和元件開發的最佳實務](/help/mobile/best-practices-aem-mobile.md) 」（英文）。
+>請參閱「 [AEM Mobile中範本和元件開發的最佳實務](/help/mobile/best-practices-aem-mobile.md) 」（英文）。
 
 ### 後續步驟 {#the-next-steps}
 
