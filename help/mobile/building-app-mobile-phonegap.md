@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1094'
+ht-degree: 0%
 
 ---
 
@@ -29,8 +32,8 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 將應用程式檔案移至發佈例項，以便您能夠針對行動應用程式的已安裝例項提供內容更新，並使用發佈內容建立應用程式。 應用程式由儲存庫中的兩個節點分支組成：
 
-* `/content/phonegap/apps/<application name>`:作者建立並啟動的網頁。
-* `/content/phonegap/content/<application name>`:應用程式設定檔案和內容同步設定。
+* `/content/phonegap/apps/<application name>`: 作者建立並啟動的網頁。
+* `/content/phonegap/content/<application name>`: 應用程式設定檔案和內容同步設定。
 
 >[!NOTE]
 >
@@ -43,9 +46,9 @@ AEM提供兩種將大量內容移至發佈例項的方法：
 * [使用複製控制台上的「激活樹](/help/sites-authoring/publishing-pages.md) 」命令。
 * [建立包含內容的套件](/help/sites-administering/package-manager.md) ，並複製套件。
 
-例如，會建立名為phonegapapp的行動應用程式。 下列節點必須移至發佈例項：/content/phonegap/content/phonegapapp。
+例如，會建立名為phonegapapp的行動應用程式。 下列節點必須移至發佈例項： /content/phonegap/content/phonegapapp。
 
-**** 提示：要將包從作者實例移動到發佈實例，請使用包上的「複製」命令。
+**提示：** 要將包從作者實例移動到發佈實例，請使用包上的「複製」命令。
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -138,7 +141,7 @@ AEM提供兩種將大量內容移至發佈例項的方法：
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-1. 在「建立配置」對話框中，鍵入「標題」屬性的值。 預設情況下，Name屬性的值是從標題中派生的，但您可以輸入名稱。 按一下 建立。
+1. 在「建立配置」對話框中，鍵入「標題」屬性的值。 預設情況下，Name屬性的值是從標題中派生的，但您可以輸入名稱。 按一下建立。
 1. 在「PhoneGap Build Configuration」（PhoneGap建置設定）對話方塊中，輸入您的PhoneGap Build使用者名稱和密碼，然後按一下「OK」（確定）。
 
 ### 使用PhoneGap Build {#using-phonegap-build}
@@ -158,9 +161,9 @@ AEM提供兩種將大量內容移至發佈例項的方法：
 
    ![](do-not-localize/chlimage_1-3.png)
 
-   **** 注意：AEM Beta的測試版不會在建立成功完成時建立收件匣通知。
+   **注意：** AEM Beta的測試版不會在建立成功完成時建立收件匣通知。
 
-1. 在「成功」對話方塊中，按一下「PhoneGap Build」以開啟「Adobe phoneGap Build」頁面，網址為 [https://build.phonegap.com/apps](https://build.phonegap.com/apps)。 如果您正在等待應用程式出現，可以勾選「 [PhoneGap建立狀態」頁面](https://status.build.phonegap.com/) 。
+1. 在「成功」對話方塊中，按一下「PhoneGap Build」以開啟「Adobe PhoneGap Build」頁面，網址為 [https://build.phonegap.com/apps](https://build.phonegap.com/apps)。 如果您正在等待應用程式出現，可以勾選「 [PhoneGap建立狀態」頁面](https://status.build.phonegap.com/) 。
 
    如需有關安裝組建版本的詳細資訊，請參 [閱PhoneGap建立檔案](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29)。
 
