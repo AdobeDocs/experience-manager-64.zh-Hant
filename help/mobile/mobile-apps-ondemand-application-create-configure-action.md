@@ -1,8 +1,8 @@
 ---
 title: 應用程式建立和配置操作
 seo-title: 應用程式建立和配置操作
-description: 建立應用程式通常是建立和管理AEM Mobile隨選內容的第一步。 請依照本頁進一步瞭解。
-seo-description: 建立應用程式通常是建立和管理AEM Mobile隨選內容的第一步。 請依照本頁進一步瞭解。
+description: 建立應用程式通常是建立和管理AEM Mobile隨選內容的第一步。 請依本頁瞭解詳細資訊。
+seo-description: 建立應用程式通常是建立和管理AEM Mobile隨選內容的第一步。 請依本頁瞭解詳細資訊。
 uuid: f6b41d9a-d896-479e-9f6c-e91a88f3e74d
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 0%
 
 ---
 
@@ -40,9 +43,9 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 1. 按一 **下「建立** 」，然後從下 **拉式清單中選取「應用程式** 」。
 1. 選擇「行動應用程式」範本，然後按「下 **一步**」。
 1. 輸入應用程式屬性， **例如**「標題 **」**、「名稱 **」**、「說明」。
-1. 按一 **下「下一步**」。
+1. 按一下&#x200B;**下一步**。
 1. 如果已知，請輸入雲端設定詳細資訊，否則按一 **下建立**。
-1. 按一 **下「完成** 」，在目錄中檢視您的新AEM mobile應用程式。
+1. 按一 **下「完成** 」，在目錄中檢視您的新AEM Mobile應用程式。
 
 ![chlimage_1](assets/chlimage_1.gif)
 
