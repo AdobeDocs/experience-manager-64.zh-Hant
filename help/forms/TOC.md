@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Forms使用指南
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
 workflow-type: tm+mt
-source-wordcount: '3702'
+source-wordcount: '3715'
 ht-degree: 1%
 
 ---
@@ -25,19 +25,19 @@ ht-degree: 1%
    + [製作最適化表單簡介](using/introduction-forms-authoring.md)
    + [互動式通訊簡介](using/interactive-communications-overview.md)
    + [管理表單簡介](using/introduction-managing-forms.md)
-   + 教學課程： 建立您的第一個最適化表單 {#create-first-adaptive-form}
-      + [教學課程： 建立您的第一個最適化表單](using/create-your-first-adaptive-form.md)
-      + [教學課程： 建立最適化表單](using/create-adaptive-form.md)
-      + [教學課程： 建立表單資料模型](using/create-form-data-model.md)
-      + [教學課程： 套用規則至最適化表單欄位l](using/apply-rules-to-adaptive-form-fields.md)
-      + [教學課程： 設定您自訂表單的樣式](using/style-your-adaptive-form.md)
-   + 教學課程： 建立您的第一個互動式通訊 {#create-first-interactive-communication}
-      + [教學課程： 建立您的第一個互動式通訊](using/create-your-first-interactive-communication.md)
-      + [教學課程： 規劃互動式通訊](using/planning-interactive-communications.md)
-      + [教學課程： 建立表單資料模型](using/create-form-data-model-tutorial.md)
-      + [教學課程： 建立檔案片段](using/create-document-fragments.md)
-      + [教學課程： 建立範本](using/create-templates-print-web.md)
-      + [教學課程： 建立互動式通訊](using/create-interactive-communication-tutorial.md)
+   + 教學課程：建立您的第一個最適化表單 {#create-first-adaptive-form}
+      + [教學課程：建立您的第一個最適化表單](using/create-your-first-adaptive-form.md)
+      + [教學課程：建立最適化表單](using/create-adaptive-form.md)
+      + [教學課程：建立表單資料模型](using/create-form-data-model.md)
+      + [教學課程：套用規則至最適化表單欄位l](using/apply-rules-to-adaptive-form-fields.md)
+      + [教學課程：設定您自訂表單的樣式](using/style-your-adaptive-form.md)
+   + 教學課程：建立您的第一個互動式通訊 {#create-first-interactive-communication}
+      + [教學課程：建立您的第一個互動式通訊](using/create-your-first-interactive-communication.md)
+      + [教學課程：規劃互動式通訊](using/planning-interactive-communications.md)
+      + [教學課程：建立表單資料模型](using/create-form-data-model-tutorial.md)
+      + [教學課程：建立檔案片段](using/create-document-fragments.md)
+      + [教學課程：建立範本](using/create-templates-print-web.md)
+      + [教學課程：建立互動式通訊](using/create-interactive-communication-tutorial.md)
    + AEM Forms參考資料 {#aem-forms-reference-collaterals}
       + [設定和設定AEM Forms參考網站](using/setup-reference-sites.md)
       + [We.Finance參考網站逐步說明](using/finance-reference-site-walkthrough.md)
@@ -312,7 +312,7 @@ ht-degree: 1%
    + [將自訂屬性新增至Correponsent Management資產](using/add-custom-properties-cm-assets.md)
    + [自訂建立對應UI](using/customize-create-correspondence-ui.md)
    + [自訂文字編輯器](using/customize-text-editor.md)
-   + [通信管理： 疑難排解](using/cm-troubleshooting.md)
+   + [通信管理：疑難排解](using/cm-troubleshooting.md)
    + [存取字母例項的API](using/cm-apis-to-access-letter-instances.md)
    + [整合建立對應UI與您的自訂入口網站](using/integrating-create-correspondence-ui-with-your-portal.md)
    + [對應管理中的自訂特殊字元](using/custom-special-characters.md)
@@ -535,11 +535,11 @@ ht-degree: 1%
       + [Work Manager和調節](/help/forms/using/admin-help/manager-throttling.md)
       + [在維護模式中執行AEM表單](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
    + 維護AEM表單資料庫 {#maintain-aem-forms-database}
-      + [DB2資料庫： 每週運行流程](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
+      + [DB2資料庫：每週運行流程](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
       + [Oracle資料庫最大開啟游標閾值](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
-      + [IBM DB2資料庫： 運行用於定期維護的命令](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
+      + [IBM DB2資料庫：運行用於定期維護的命令](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [清除流程資料](/help/forms/using/admin-help/purging-process-data.md)
-      + [Microsoft SQL Server資料庫： 微調配置](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
+      + [Microsoft SQL Server資料庫：微調配置](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
       + [將資料庫增長降至最低的提示](/help/forms/using/admin-help/tips-minimizing-database-growth.md)
    + 維護應用程式伺服器 {#manage-application-server}
       + [應用程式伺服器網站](/help/forms/using/admin-help/application-server-websites.md)
@@ -577,6 +577,7 @@ ht-degree: 1%
    + [AEM Forms Java API參考](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API參考](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [HTML5表單的Form Bridge API](using/form-bridge-apis.md)
+   + [適用於Adaptive Forms的JavaScript程式庫API參考](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)
    + [Assembler Service和DDX參考](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Workbench說明](http://www.adobe.com/go/learn_aemforms_workbench_64)
    + 在JEE上使用AEM Forms進行程式設計 {#programming-aem-forms-jee}
