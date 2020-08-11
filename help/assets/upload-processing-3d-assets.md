@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '868'
 ht-degree: 1%
 
 ---
 
 
 # 關於在AEM中上傳和處理3D資產 {#about-the-uploading-and-processing-of-d-assets-in-aem}
+
+>[!IMPORTANT]
+>
+>不再支援AEM 6.4中的AEM 3D。 Adobe建議您將 [AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更新版本使用](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)。
 
 使用標準上傳或同步機制，將3D資產及其相關參照的檔案匯入AEM Assets。
 
@@ -51,7 +55,7 @@ Adobe建議您在上傳主要3D模型檔案之前或同時上傳所有參照的�
 
 ## 上傳3D檔案時的效能考量 {#performance-considerations-when-uploading-d-files}
 
-轉換和處理3D檔案通常會耗用伺服器上的大量CPU和記憶體資源。 這也需要相當長的時間。 處理時間通常會因模型大小和伺服器功能而大不相同。 例如，一個面積小於100k的典型小型模型，通常在1分鐘內就可供檢視； 在2-3分鐘內完全處理。 然而，擁有100萬張以上臉孔的大型模型需要數十分鐘才能完全處理。
+轉換和處理3D檔案通常會耗用伺服器上的大量CPU和記憶體資源。 這也需要相當長的時間。 處理時間通常會因模型大小和伺服器功能而大不相同。 例如，一個面積小於100k的典型小型模型，通常在1分鐘內就可供檢視；在2-3分鐘內完全處理。 然而，擁有100萬張以上臉孔的大型模型需要數十分鐘才能完全處理。
 
 視需要將轉換、處理和轉換工作排入佇列，以避免伺服器速度變慢太多。 訊息「正在等待處理……」 在您上傳資產時 **[!UICONTROL ，卡片檢視]** (Card View)中有時會顯示。 此狀態表示在處理當前資產之前，必須完成其他處理或渲染作業。
 
