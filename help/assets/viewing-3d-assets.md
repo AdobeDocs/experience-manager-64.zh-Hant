@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1806'
 ht-degree: 0%
 
 ---
 
 
 # 檢視3D資產 {#viewing-d-assets}
+
+>[!IMPORTANT]
+>
+>不再支援AEM 6.4中的AEM 3D。 Adobe建議您將 [AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更新版本使用。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) 檢視3D資產。
 
 本檔案說明如何在資產詳細資料中檢視3D資產，以及如何在網站中檢視3D元件中的資產。
 
