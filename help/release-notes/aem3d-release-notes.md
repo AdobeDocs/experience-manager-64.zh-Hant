@@ -10,15 +10,19 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
 
 
 # AEM 3D發行說明 {#aem-d-release-notes}
+
+>[!IMPORTANT]
+>
+>不再支援AEM 6.4中的AEM 3D功能套件。 Adobe建議您將 [AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更新版本使用。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM-6.4-DynamicMedia-3D 3.1.0版（2018年10月10日）
 
@@ -118,7 +122,7 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 
 ### 一般 {#general}
 
-* **解決相依性捷徑** -此捷徑可在3D資產的卡片檢視中使用。 「卡片檢視」中的資產卡片會顯示「未解決的相依性」橫幅。 此快捷方式會開啟「 **基本屬性** 」(Basic Properties **)頁籤，而不** 是「相依性」(Dependencies)頁籤。 解決方法： 手動導航至「相關性」頁籤。
+* **解決相依性捷徑** -此捷徑可在3D資產的卡片檢視中使用。 「卡片檢視」中的資產卡片會顯示「未解決的相依性」橫幅。 此快捷方式會開啟「 **基本屬性** 」(Basic Properties **)頁籤，而不** 是「相依性」(Dependencies)頁籤。 解決方法：手動導航至「相關性」頁籤。
 
 * **舞台選擇器不可用** -包含光源的3D資產會由AEM自動標籤為3D階段。 「詳細資訊」視圖中沒有階段選擇器可用於階段。 若要將3D資產標示為3D物件，請導覽至「基本屬性」 **，將「資產類別**」變更為「 **3D物件」** ，然後按一 ********&#x200B;下「儲存對象」。
 
@@ -151,7 +155,7 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 * **IBL階段的背景影像** -對於某些IBL場景，背景影像可能質量較差，如過亮或過模糊。 為了最大化IBL階段的影像背景視覺品質，Adobe建議您準備個別的高解析度8位元JPEG影像，並將它附加至IBL階段，做為 **背景環境影像**。
 
 * **使用IBL舞台向Maya轉譯時的黑色影像** -此問題可能是由於Maya找不到IBL影像相依性，因為舞台所參照的原始IBL影像已由不同名稱的影像取代。 為避免此問題，請確保Maya IBL階段所引用的三個相關性中至少有一個與Maya檔案中的原始IBL檔案引用同名。
-* **IBL舞台的反背景影像** - IBL舞台的影像被有意水準翻轉，以配合隨Autodesk Maya提供的NVIDIA心理射線渲染器的行為。 解決方法： 在上傳IBL階段之前，請先翻轉這些影像。
+* **IBL舞台的反背景影像** - IBL舞台的影像被有意水準翻轉，以配合隨Autodesk Maya提供的NVIDIA心理射線渲染器的行為。 解決方法：在上傳IBL階段之前，請先翻轉這些影像。
 * **IBL階段的亮度** -自動分析IBL影像可能導致場景太暗或太亮。 要調整IBL級的照明亮度，請導航到 **Basic Properties** （基本屬性），並根據需 **要調整Environment** **Lighting的亮值** 。
 
 ### AEM Sites 3D元件 {#aem-sites-d-component}
@@ -165,4 +169,4 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 
 * **3D元件設定** -您必須在所有作用中的發佈節點上安裝3D功能套件，而且每個節點都必須使用 **CRXDE Lite** ，設定成相同的設定選項，位於 `/libs/settings/dam/v3D/WebGLSites`。
 
-* **發佈後遺失紋理、背景或光源** - AEM Sites中的 **Publish** 機制會自動發佈頁面的主要相依性，包括3D模型和3D元件參照的3D階段。 3D階段和3D模型通常依賴IBL影像和紋理地圖的次要資產，而「網站發佈」機制不會自動發佈。 解決方法： 從「網站」發佈網頁之前，先從「資產」發佈所有3D資產。 這樣做可確保3D資產的所有相依性都可在「發佈」節點上使用。
+* **發佈後遺失紋理、背景或光源** - AEM Sites中的 **Publish** 機制會自動發佈頁面的主要相依性，包括3D模型和3D元件參照的3D階段。 3D階段和3D模型通常依賴IBL影像和紋理地圖的次要資產，而「網站發佈」機制不會自動發佈。 解決方法：從「網站」發佈網頁之前，先從「資產」發佈所有3D資產。 這樣做可確保3D資產的所有相依性都可在「發佈」節點上使用。
