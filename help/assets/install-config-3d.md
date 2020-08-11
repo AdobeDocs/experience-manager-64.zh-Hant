@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: b1603091bb05493c9cfffa6067f414f73774edb2
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1634'
+source-wordcount: '1681'
 ht-degree: 0%
 
 ---
 
 
 # 安裝和設定AEM 3D {#installing-and-configuring-aem-d}
+
+>[!IMPORTANT]
+>
+>不再支援AEM 6.4中的AEM 3D。 Adobe建議您將 [AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)[或AEM 6.5.3或更新版本使用。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
@@ -170,7 +174,7 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
    在logo-sphere.fbx頁面的右上角，按一下「舞台精選」圖示以展開下拉式選單，然後選取 `stage-spotlights.fbx`。
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. 從「舞 **[!UICONTROL 台精選]** 」下拉式清單中選取 `stage-helipad.fbx`。
 
