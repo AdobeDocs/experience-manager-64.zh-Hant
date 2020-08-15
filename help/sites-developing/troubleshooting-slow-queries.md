@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ AEM中有3種主要的慢速查詢分類，依嚴重性列出：
 
 #### 開發期間 {#during-development}
 
-解 **釋所有** ，並確保其查詢計畫不包含 **/&amp;ast; 在它們中** ，遍歷解釋。 遍歷查詢計畫示例：
+解 **釋所有** ，並確保其查詢計畫不包含 **/&amp;ast;在它們中** ，遍歷解釋。 遍歷查詢計畫示例：
 
 * **計畫：** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -98,20 +98,20 @@ AEM中有3種主要的慢速查詢分類，依嚴重性列出：
 
 * **cq：標籤索引規則**
 
-       &quot;
- /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags     @name=jcr:cq:tags
-     @propertyIndex=trueIndex
-    
-    &quot;
-   
+   ```
+   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+    @name=jcr:content/cq:tags
+    @propertyIndex=true
+   ```
+
 * **查詢建立工具查詢**
 
-       &quot;
-    cq:Page
-     property=jcr:content/cq:tags
-     property.value=myTagNamespace:myTagTagNamespace
-    &quot;
-   
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=myTagNamespace:myTag
+   ```
+
 * **查詢計畫**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -146,7 +146,7 @@ AEM中有3種主要的慢速查詢分類，依嚴重性列出：
 
 #### 部署後 {#post-deployment-2}
 
-* 監視日誌中觸發大節點遍歷或大堆記憶體消耗的查詢： &quot;
+* 監視日誌中觸發大節點遍歷或大堆記憶體消耗的查詢：
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * 優化查詢以減少遍歷的節點數
@@ -437,7 +437,7 @@ AEM支援下列查詢語言：
 
 * **[索引管理員](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
-   * 顯示AEM例項索引的AEM Operations WebUI; 有助於瞭解哪些索引已存在，可以定位或擴展。
+   * 顯示AEM例項索引的AEM Operations WebUI;有助於瞭解哪些索引已存在，可以定位或擴展。
 
 * **[記錄](/help/sites-administering/operations-dashboard.md#log-messages)**
 
