@@ -7,7 +7,7 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
 workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 0%
@@ -95,7 +95,7 @@ AEM 6.4 Communities在社群網站主控台中，提供現有社群網站上的�
 
 ## 管理UGC和使用者設定檔 {#managing-ugc-and-user-profiles}
 
-AEM Communities將使用者資料保護放在社群體驗的核心，提供 [現成可用的](user-ugc-management-service.md) API [和範例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)。 這些API可協助大量管理（大量刪除和大量匯出）使用者產生的內容並刪除使用者個人檔案，並有助於處理EU GDPR合規性要求。
+AEM Communities將使用者資料保護放在社群體驗的核心，提供 [現成可用的](user-ugc-management-service.md) API [和範例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)。 這些API可協助大量管理（大量刪除和大量匯出）使用者產生的內容並刪除使用者個人檔案，並有助於處理EU GDPR合規性要求。
 
 ## 變更的項目 {#what-s-changed}
 
