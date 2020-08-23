@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '10507'
+source-wordcount: '10502'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 4%
 
 本節說明在動態媒體中處理視訊。
 
-## 快速入門： 影片 {#quick-start-videos}
+## 快速入門：影片 {#quick-start-videos}
 
 下列逐步工作流程說明旨在協助您在動態媒體中使用可調式視訊集快速啟動並執行。 在每個步驟後，您都會交叉參考主題標題，以找到更多資訊。
 
@@ -142,7 +142,7 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
 * 從多種支援的視訊格式和音訊格式上傳視訊，並將視訊編碼為MP4 H.264格式，以便在多種螢幕上播放。 您可以使用預先定義的最適化視訊預設集、單一視訊編碼預設集，或自訂您自己的編碼，以控制視訊的品質和大小。
 
    * 產生最適化視訊集時，會包含MP4視訊。
-   * **注意**: 主視訊／來源視訊不會新增至最適化視訊集。
+   * **注意**:主視訊／來源視訊不會新增至最適化視訊集。
 
 * 所有HTML5視訊檢視器中的視訊字幕。
 * 使用完整的中繼資料支援來組織、瀏覽和搜尋視訊，以有效管理視訊資產。
@@ -164,9 +164,9 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 
 請參閱 [動態視訊播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)。
 
-另請參 [閱Adobe Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 中的關於HTML5檢視器。
+另請參 [閱Adobe Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) 中的「關於HTML5檢視器」。
 
-## 最佳實務： 使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
+## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
 動態媒體HTML5視訊檢視器預設集是強穩的視訊播放器。 您可以使用它們來避免許多與HTML5視訊播放相關的常見問題，以及行動裝置相關的問題，例如缺乏可調式串流傳送以及案頭瀏覽器觸及面有限。
 
@@ -210,7 +210,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
   <tr> 
    <td>桌面</td> 
    <td>Internate Explorer 11+</td> 
-   <td>在Windows 8和Windows 10上——每當要求HLS時，強制使用HTTPS。 已知限制： HLS上的HTTP無法在此瀏覽器／作業系統組合<br /><br /> 「On Windows 7 —— 漸進式下載」中運作。 使用標準邏輯來選擇HTTP與HTTPS通訊協定。</td> 
+   <td>在Windows 8和Windows 10上——每當要求HLS時，就強制使用HTTPS。 已知限制：HLS上的HTTP無法在此瀏覽器／作業系統組合<br /><br /> 「On Windows 7 —— 漸進式下載」中運作。 使用標準邏輯來選擇HTTP與HTTPS通訊協定。</td> 
   </tr> 
   <tr> 
    <td>桌面</td> 
@@ -283,8 +283,8 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 如需視訊編碼的建議，請參閱下列：
 
-* 文章： *串流101: 基本功能— 轉碼器、頻寬、資料速率和解析度：* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
-* 影片： *視訊編碼基礎：* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
+* 文章： *串流101:基本功能— 轉碼器、頻寬、資料速率和解析度：*[www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en).
+* 影片： *視訊編碼基礎：*[www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en).
 
 ### 來源視訊檔案 {#source-video-files}
 
@@ -323,7 +323,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 | 1.78 | 16:9 |
 | 0.56 | 9:16 |
 
-例如，1440寬度x 1080高度的視訊的外觀比例為1440/1080或1.33。 在此例中，您選擇外觀比例為4:3的視訊編碼預設集，以編碼視訊檔案。
+例如，1440寬度x 1080高度的視訊的外觀比例為1440/1080或1.33。在此例中，您選擇外觀比例為4:3的視訊編碼預設集，以編碼視訊檔案。
 
 ### 位元速率 {#bitrate}
 
@@ -339,7 +339,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 * **可變位元速率編碼** (VBR)- VBR編碼會根據壓縮器所需的資料，將資料速率調低並調至您設定的上限。 這表示在VBR編碼處理期間，媒體檔案的位元速率會根據媒體檔案的位元速率需求動態增加或減少。
 
-   VBR編碼時間較長，但結果最好； 媒體檔案的品質更優越。 VBR最常用於http漸進式傳送視訊內容。
+   VBR編碼時間較長，但結果最好；媒體檔案的品質更優越。 VBR最常用於http漸進式傳送視訊內容。
 
 **何時應使用VBR與CRB?**
 在選擇VBR與CBR時，幾乎總是建議您將VBR用於媒體檔案。 VBR以競爭的位元速率提供更高品質的檔案。 使用VBR時，請務必搭配兩遍編碼使用，並將最大位元速率設定為目標視訊位元速率的1.5倍。
@@ -388,7 +388,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 ### Fps（每秒幀數） {#fps-frames-per-second}
 
-在美國和日本，大部分視訊的拍攝速度是每秒29.97畫格(fps); 在歐洲，大部分的視訊拍攝時速為25 fps。 影片以24 fps拍攝。
+在美國和日本，大部分視訊的拍攝速度是每秒29.97畫格(fps);在歐洲，大部分的視訊拍攝時速為25 fps。 影片以24 fps拍攝。
 
 選擇符合主視訊檔案fps速率的視訊編碼預設集。 例如，如果主視訊是25 fps，請選擇25 fps的編碼預設集。 依預設，所有自訂編碼都使用主視訊檔的fps。 因此，在建立視訊編碼預設集時，您不需要明確指定fps設定。
 
@@ -484,13 +484,13 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 1. 在「控制 **[!UICONTROL 面板]** 」頁面上，點 **[!UICONTROL 選「建立專案」]**。
 1. 在「新建 **[!UICONTROL 項目]** 」對話框中，輸入項目名稱。
 
-   請注意，您的專案ID是以您的專案名稱為基礎。 因此，請謹慎選擇專案名稱； 在建立後無法變更。 此外，當您稍後在Adobe Experience Manager中設定YouTube時，將需要再次輸入相同的專案ID。 您可能想要記下專案的ID。
+   請注意，您的專案ID是以您的專案名稱為基礎。 因此，請謹慎選擇專案名稱；在建立後無法變更。 此外，當您稍後在Adobe Experience Manager中設定YouTube時，將需要再次輸入相同的專案ID。 您可能想要記下專案的ID。
 1. 點選「 **[!UICONTROL 建立]**」。
 
 1. 在專案的「儀 **[!UICONTROL 表板]**」上，在「 **[!UICONTROL Getting Started]** 」(快速入門 **[!UICONTROL )卡中，點選「Enable APIs」（啟用API）並取]**&#x200B;得像是金鑰等認證。
 1. 在「控制面板」頁面的 **[!UICONTROL 頂端]** ，點選「 **[!UICONTROL 啟用API」]**。
 1. 在「資 **[!UICONTROL 料庫]** 」頁面的YouTube API下方，點選 **[!UICONTROL YouTube Data API]**。
-1. 在「 **YouTube Data API v3」頁面頂端附近** ，點選「 **[!UICONTROL Enable]** 」以開啟它。
+1. 在「 **[!UICONTROL YouTube Data API v3」頁面頂端]** ，點選「 **[!UICONTROL Enable]** 」以開啟它。
 1. 若要使用API，您可能需要認證。 如有必要，請點選「 **[!UICONTROL 建立認證」]**。
 1. 從「 **[!UICONTROL 您要從何處呼叫API?」]** 下拉式清單中，選 **[!UICONTROL 取「Web伺服器」（例如node.js、Tomcat）]**。
 1. 在「 **[!UICONTROL 您將訪問哪些資料」下？]** 選擇 **[!UICONTROL 用戶資料]**。
@@ -502,7 +502,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
    例如， `https://1a2b3c.mycompany.com:4321`
 
-   **注意**: 上述路徑範例僅供圖例之用。
+   **注意**:上述路徑範例僅供圖例之用。
 
 1. 在「已授權的重新導向URI **** 」標題下的文字欄位中，輸入下列項目，在路徑中取代您自己的網域和埠號，然後按Enter鍵以新增路徑至清單：
 
@@ -510,13 +510,13 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
    例如， `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **注意**: 上述路徑範例僅供圖例之用。
+   **注意**:上述路徑範例僅供圖例之用。
 
 1. 點選「 **[!UICONTROL Create client ID(建立用戶端ID]**)」。
 1. On the Credentials page, under the **[!UICONTROL Set up the OAuth 2.0 consent screen]** heading, select the Gmail address that you are currently using.
 1. 在顯示給使用者的「產 **[!UICONTROL 品名稱」標題下的文字欄位中]** ，輸入您要在同意畫面上顯示的內容。
 
-   當AEM管理員向YouTube驗證時，會顯示同意畫面； AEM將會聯絡YouTube以取得許可。
+   當AEM管理員向YouTube驗證時，會顯示同意畫面；AEM將會聯絡YouTube以取得許可。
 
 1. 點選「 **[!UICONTROL 繼續]**」。
 1. 在「下載 **[!UICONTROL 認證」標題]** ，點選「 **[!UICONTROL 下載」]**。
@@ -534,7 +534,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 >[!CAUTION]
 >
->請確定您已在YouTube &amp;ast;before&amp;ast；中設定了一個或多個頻道 您可在「AEM中的YouTube設定」下新增頻道(請參 [閱下方「AEM中的設定YouTube](#setting-up-youtube-in-aem) 」)。 如果您未能這麼做，則不會收到任何警告，告知您沒有現有渠道。 不過，當您新增頻道時仍會發生Google驗證，但無法選擇視訊傳送的頻道。
+>請確定您已在YouTube &amp;ast;before&amp;ast；中設定了一個或多個頻道您可在「AEM中的YouTube設定」下新增頻道(請參 [閱下方「AEM中的設定YouTube](#setting-up-youtube-in-aem) 」)。 如果您未能這麼做，則不會收到任何警告，告知您沒有現有渠道。 不過，當您新增頻道時仍會發生Google驗證，但無法選擇視訊傳送的頻道。
 
 **若要建立YouTube頻道**:
 
@@ -570,13 +570,13 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. 在「第三 **[!UICONTROL 方服務」標題]** （在YouTube下）下，點選「 **[!UICONTROL 立即設定」]**。
-1. 在「建 **立設定」對話方塊** ，在個別欄位中輸入標題（必填）和名稱（選用）。
+1. 在「建 **[!UICONTROL 立設定]** 」對話方塊中，在個別欄位中輸入標題（必填）和名稱（選用）。
 1. 點選「 **[!UICONTROL 建立]**」。
 1. In the **[!UICONTROL YouTube Account Settings]** dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
    您最初設定Google Cloud設定時，已指定專案ID。
 
-   讓「YouTube **[!UICONTROL 帳戶設定]** 」對話方塊保持開啟； 你馬上就回來。
+   讓「YouTube **[!UICONTROL 帳戶設定]** 」對話方塊保持開啟；你馬上就回來。
 
 1. 使用純文字編輯器，開啟您在「設定Google雲端設定」工作中先前下載並儲存的JSON檔案。
 1. 選取並複製整個JSON文字。
@@ -586,7 +586,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
    您現在將在AEM中設定YouTube頻道。
 
 1. 在「可用頻道」 **[!UICONTROL 的右側]**，點 **[!UICONTROL 選+]**  (加號圖示)。
-1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel ]**earlier.
+1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel]** earlier.
 
    您可以視需要選擇新增說明。
 
@@ -597,7 +597,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
    * 視您的帳戶有多少個渠道而定，您會看到兩個或多個項目。 選取渠道。 不要選擇電子郵件地址。
    * 在下一頁，點選「 **[!UICONTROL Accept]** 」（接受）以允許存取此頻道。
 
-1. 點選 **[!UICONCONTROL允許**。
+1. 點選「 **[!UICONTROL 允許]**」。
 
    您現在將設定發佈的標籤。
 
@@ -656,7 +656,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 1. 在「中繼資料結構編輯器」頁面的右上 **[!UICONTROL 角附近]** ，點選「取 **[!UICONTROL 消」]**。
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 
-1. 在頁 **面右上角的[!UICONTROL元資料配置檔案** ]頁面上，按一下 **[!UICONTROL建立**。 In the **[!UICONTROL Add Metadata Profile** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
+1. 在頁 **[!UICONTROL 面右上角的]** 「中繼資料描述檔」頁面上，點選「 **[!UICONTROL 建立」]**。 In the **[!UICONTROL Add Metadata Profile]** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
 1. 在「中繼資 **[!UICONTROL 料描述檔編輯器]** 」頁面上，點選「 **[!UICONTROL 進階]** 」標籤。
 1. 執行下列動作，將複製的YouTube發佈值新增至描述檔：
 
@@ -676,7 +676,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
    * 在頁面右側的「設定」標籤下，在「欄位標籤」文字欄位中輸入 `YouTube Privacy`。
    * Tap the **[!UICONTROL Build Form]** tab, then drag the component labeled **[!UICONTROL Single Line Text]** and drop it below the **[!UICONTROL YouTube Privacy]** heading you just created.
    * Tap **[!UICONTROL Field Label]** to select the component.
-   * 在頁面右側的「設定」標籤下，將您先前複製的 **[!UICONTROL YouTube Publishing]** ( **[!UICONTROL Field Label]** value and ******** Map to property Value)值貼入表單上各自的欄位中。 將[! **UICONTROL Choices****[!UICONTROL 值貼上到Default Value]** （預設值）欄位。
+   * 在頁面右側的「設定」標籤下，將您先前複製的 **[!UICONTROL YouTube Publishing]** ( **[!UICONTROL Field Label]** value and ******** Map to property Value)值貼入表單上各自的欄位中。 將「選 **[!UICONTROL 擇]** 」值貼入「 **[!UICONTROL 預設值]** 」欄位。
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
 1. 將YouTube Publishing中繼資料設定檔套用至您要上傳影片的資料夾。 您需要同時設定中繼資料描述檔和視訊描述檔。
@@ -844,7 +844,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 1. 在AEM中，選取「工 **[!UICONTROL 具>工作流程>模型」]**。
 1. 選取「 **[!UICONTROL 發佈至YouTube」工作流程]** ，然後點選「 **[!UICONTROL 編輯」]**。
 1. 以滑鼠右鍵按一下「 **[!UICONTROL YouTube上傳」工作流程]** ，然後點選「 **[!UICONTROL 編輯」]**。
-1. 點選「 **參數&#x200B;**」標籤。
+1. 點選「 **參數** 」標籤。
 1. 您可以選取或清除下列核取方塊：
 
    * **[!UICONTROL 發佈開始]**
@@ -859,7 +859,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 ## 檢視視訊報表 {#viewing-video-reports}
 
-當您執行動態媒體——混合模式時，可使用視訊報告； 當您執行動態媒體- Scene7模式時，報表不可用。
+當您執行動態媒體——混合模式時，可使用視訊報告；當您執行動態媒體- Scene7模式時，報表不可用。
 
 「視訊報表」會顯示指定時段內的數個匯總量度，以協助您監控*已發佈*個別和匯總視訊是否如預期般執行。 下列主要量度資料會匯總整個網站上所有發佈的影片：
 
@@ -990,7 +990,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
 
    請確定您建立的檔案符合WebVTT(Web Video Text Tracks)標準。 字幕副檔名為。vtt。 您可以進一步瞭解WebVTT字幕標準。
 
-   請參 [閱WebVTT: 網頁視訊文字追蹤格式](https://dev.w3.org/html5/webvtt/)。
+   請參 [閱WebVTT:網頁視訊文字追蹤格式](https://dev.w3.org/html5/webvtt/)。
 
    您可以使用免費和優質的工具和服務，在動態媒體外部製作字幕／字幕檔案。 例如，若要建立沒有樣式的簡單視訊標題檔案，您可以使用下列免費的線上標題製作和編輯工具：
 
@@ -1023,7 +1023,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
 
       請注意 `,1` 標題路徑結尾處的。 緊接在路徑中的。vtt副檔名後，您可以選擇分別設定為或，以啟用（開啟）或停用（關閉）視訊播放器列上的隱藏字幕 `,1` 按 `,0`鈕。
 
-   * 如需內嵌的視訊檢視器體驗，請點選「 **[!UICONTROL 內嵌代碼」]**。 在「內嵌代碼」對話方塊中，選取內嵌代碼並將它複製至剪貼簿，然後將代碼貼入簡單的文字編輯器。 以下列語法附加複製的內嵌代碼：
+   * 如需內嵌的視訊檢視器體驗，請點選「 **[!UICONTROL 內嵌代碼」]**。 在「內嵌代碼」對話方塊中，選取內嵌代碼並將其複製至剪貼簿，然後將代碼貼入簡單的文字編輯器中。 以下列語法附加複製的內嵌代碼：
 
       `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
@@ -1039,7 +1039,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
 
 視需要，您可以建立自訂的視訊檢視器並加上章節，而不是使用視訊檢視器預設集。 如需有關使用章節導覽建立您自己的HTML5檢視器的指示，請參閱Adobe Scene7 Viewer SDK for HTML5指南中類別和下方的「使用修飾詞自訂行為」標 `s7sdk.video.VideoPlayer` 題 `s7sdk.video.VideoScrubber`。 Adobe Scene7 Viewer SDK可從 [Adobe Developer Connection下載](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)。
 
-您建立視訊的章節清單的方式與建立標題的方式大致相同。 即，建立WebVTT檔案。 但是，請注意，此檔案必須與您也可能使用的任何WebVTT標題檔案分開； 您無法將標題和章節結合為一個WebVTT檔案。
+您建立視訊的章節清單的方式與建立標題的方式大致相同。 即，建立WebVTT檔案。 但是，請注意，此檔案必須與您也可能使用的任何WebVTT標題檔案分開；您無法將標題和章節結合為一個WebVTT檔案。
 
 您可以使用下列範例作為建立WebVTT檔案時使用章節導覽的格式範例：
 
@@ -1065,7 +1065,7 @@ Cost-efficient access to rapidly evolving technology.
 
 由於您使用的是HTML5視訊檢視器，請確定您建立的章節檔案符合WebVTT(Web Video Text Tracks)標準。 章節副檔名為。vtt。 您可以進一步瞭解WebVTT字幕標準。
 
-請參 [閱WebVTT: 網頁視訊文字軌道格式](https://dev.w3.org/html5/webvtt/)
+請參 [閱WebVTT:網頁視訊文字軌道格式](https://dev.w3.org/html5/webvtt/)
 
 **若要將章節標籤新增至影片：**
 
@@ -1089,7 +1089,7 @@ Cost-efficient access to rapidly evolving technology.
        <td> 
        <ol> 
        <li>導覽至您 <i>要 </i>與您上傳之章節檔案建立關聯的已發佈視訊資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/publishing-dynamicmedia-assets.md">發佈資產。</a></li> 
-       <li>從下拉式選單中，點選「檢 <strong>視器</strong>」。</li> 
+       <li>從下拉式功能表，然後點選「檢 <strong>視器</strong>」。</li> 
        <li>在左側導軌中，點選視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li> 
        <li>在左側導軌底部，點選 <strong>URL</strong>。</li> 
        <li>在「URL」對話方塊中，選取並複製URL至剪貼簿，然後將URL移至簡單的文字編輯器。</li> 
@@ -1101,7 +1101,7 @@ Cost-efficient access to rapidly evolving technology.
        <td> 
        <ol> 
        <li>導覽至您 <i>要 </i>與您上傳之章節檔案建立關聯的已發佈視訊資產。 請記住，URL僅可在您首次發 <i>布資產</i> 後 <i>複製</i> 。請參閱 <a href="/help/assets/publishing-dynamicmedia-assets.md">發佈資產。</a></li> 
-       <li>從下拉式選單中，點選「檢 <strong>視器</strong>」。</li> 
+       <li>從下拉式功能表，然後點選「檢 <strong>視器</strong>」。</li> 
        <li>在左側導軌中，點選視訊檢視器預設集名稱。 視訊的預覽會在個別頁面中開啟。</li> 
        <li>在左側導軌底部，點選「內嵌」 <strong></strong>。</li> 
        <li>在「內嵌代碼」對話方塊中，選取整個代碼並將它複製至剪貼簿，然後貼到簡單的文字編輯器中。</li> 
