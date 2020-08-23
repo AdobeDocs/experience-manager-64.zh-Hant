@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -38,66 +38,63 @@ ht-degree: 0%
 
 1. 將下列程式碼嵌入您網站的網頁：
 
-   ```
-   
-   
-<!doctype html>
-<html>
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>這是網頁的標題！</title>
+   ```html
+   <!doctype html>
+   <html>
+   <head>
+    <title>This is the title of the webpage!</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-  <div class="customafsection"/>
-    <p>此部分將替換為最適化表單。</p>
-
-
-    &lt;script>
-    var選項= {path:&quot;/content/forms/af/locbasic.html&quot;, dataRef:&quot;&quot;, themepath:&quot;&quot;,CSS_Selector:&quot;。customafsection&quot;};
+   </head>
+   <body>
+   <div class="customafsection"/>
+   <p>This section is replaced with the adaptive form.</p>
+   
+    <script>
+    var options = {path:"/content/forms/af/locbasic.html", dataRef:"", themepath:"", CSS_Selector:".customafsection"};
     alert(options.path);
     var loadAdaptiveForm = function(options){
     //alert(options.path);
-    if(options.path){/ options.path最適化表單
-    
-    //的URL，例如： http:myserver:4503/content/forms/af/ABC，其中ABC是最適化表單
-    //注意： 如果AEM伺服器是在內容路徑上執行，則最適化表單URL必須包含內容
-    pathvar path = options.path;
-    path += &quot;/jcr:content/guideContainer.html&quot;;
-    $.ajax({
-    url: 路徑，
-    類型： &quot;GET&quot;,
-    資料： {
-    // Set the wcmmode to be
-    disabledwcmmode: &quot;disabled&quot;
-    // Set the data reference, if any
-    // &quot;dataRef&quot;: options.dataRef
-    //為表單object
-    // &quot;themeOverride&quot;指定不同的主題： options.themepath
-    },
-    async: false,
-    成功： 函式(data){
-    //如果已載入jquery，請設定container
-    //的內部html。如果未載入jquery，請使用檔案提供的API來設定內部HTML，但這些API不會依據HTML5 spec
-    ///評估HTML中的指令碼標籤，例如： document.getElementById()。
-    innerHTMLif(window)。$ &amp;&amp; options.CSS_Selector){
-    // HTML API of jquery會擷取標籤、更新DOM，並評估內嵌在指令碼標籤中的程式碼。
-    $(options.CSS_Selector)。html(data);
+    if(options.path) {
+        // options.path refers to the publish URL of the adaptive form
+        // For Example: http:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+        // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path 
+        var path = options.path;
+        path += "/jcr:content/guideContainer.html";
+        $.ajax({
+            url  : path ,
+            type : "GET",
+            data : {
+                // Set the wcmmode to be disabled
+                wcmmode : "disabled"
+                // Set the data reference, if any
+               // "dataRef": options.dataRef
+                // Specify a different theme for the form object
+              //  "themeOverride" : options.themepath
+            },
+            async: false,
+            success: function (data) {
+                // If jquery is loaded, set the inner html of the container
+                // If jquery is not loaded, use APIs provided by document to set the inner HTML but these APIs would not evaluate the script tag in HTML as per the HTML5 spec
+                // For example: document.getElementById().innerHTML
+                if(window.$ && options.CSS_Selector){
+                    // HTML API of jquery extracts the tags, updates the DOM, and evaluates the code embedded in the script tag.
+                    $(options.CSS_Selector).html(data);
+                }
+            },
+            error: function (data) {
+                // any error handler
+            }
+        });
+    } else {
+        if (typeof(console) !== "undefined") {
+            console.log("Path of Adaptive Form not specified to loadAdaptiveForm");
+        }
     }
-    },
-    錯誤： 函式(data){
-    // any error handler
-    }
-    });
-    }其他{
-    if(typeof(console)!== &quot;undefined&quot;){
-    console.log(&quot;Path of Adaptive Form not specified to loadAdaptiveForm&quot;);
-    }
-    }
-    }（選項）;
-    
-    &lt;/script>
-</body>
-</html>
+    }(options);
+   
+    </script>
+   </body>
+   </html>
    ```
 
 1. 在內嵌的程式碼中：
@@ -136,7 +133,7 @@ ht-degree: 0%
     ProxyPassReverse /forms https://[AEM_Instance]/forms
    ```
 
-   在規 `[AEM_Instance`則中以AEM伺服器發佈URL取代]。
+   在規 `[AEM_Instance]` 則中以AEM伺服器發佈URL取代。
 
 如果您未將AEM伺服器載入內容路徑，Apache層的Proxy規則將如下：
 
