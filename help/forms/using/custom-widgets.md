@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '668'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 您可以將自訂Widget插入Mobile Forms。 您可以擴充現有的jQuery Widget，或使用外觀架構開發您自己的自訂Widget。 XFA引擎使用各種Widget，如需詳細資 [訊，請參閱最適化和HTML5表單的](/help/forms/using/introduction-widgets.md) Appearance架構。
 
-![預設和自訂介面工具集的范](assets/custom-widgets.jpg)**例圖：** *預設和自訂介面工具集的範例*
+![預設和自訂介面工具集的范](assets/custom-widgets.jpg)**例圖：***預設和自訂介面工具集的範例*
 
 ## 將自訂Widget與HTML5表單整合 {#integrating-custom-widgets-with-html-forms}
 
@@ -46,7 +46,7 @@ HTML5表格提供Widget架構的實作，可加以擴充以建立新Widget。 �
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>傳回將HTML事件轉換為XFA事件的地圖。 <br /> {<br /> blur: XFA_EXIT_EVENT,<br /><br /> }此示例顯示模糊是HTML事件，XFA_EXIT_EVENT是相應的XFA事件。 </td> 
+   <td>傳回將HTML事件轉換為XFA事件的地圖。 <br /> {<br /> blur:XFA_EXIT_EVENT,<br /><br /> }此示例顯示模糊是HTML事件，XFA_EXIT_EVENT是相應的XFA事件。 </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -89,17 +89,19 @@ window.formBridge.registerConfig("widgetConfig",
 
 介面工具集設定是以JSON物件（索引鍵值配對的集合）提供，其中索引鍵識別欄位，而值代表要搭配這些欄位使用的介面工具集。 範例配置如下所示：
 
+```
 *{*
 
-*&quot;identifier1&quot; : &quot;customwidgetname&quot;,\
-&quot;identifier2&quot; : &quot;customwidgetname2&quot;,\
-..\
+*“identifier1” : “customwidgetname”,  
+“identifier2” : “customwidgetname2”,  
+..  
 }*
+```
 
 其中，「identifier」是jQuery CSS選擇器，代表特定欄位、特定類型的欄位集或所有欄位。 以下列出不同情況下識別碼的值：
 
 | 識別碼類型 | 識別碼 | 說明 |
 |---|---|---|
 | 具有名稱欄位名的特定欄位 | 識別碼：&quot;div.fieldname&quot; | 所有名稱為「fieldname」的欄位都會使用介面工具集呈現。 |
-| 所有類型為「type」的欄位（其中類型為NumericField、DateField等）。: | 識別碼： &quot;div.type&quot; | 對於Timefield和DateTimeField，類型為textfield，因為不支援這些欄位。 |
-| 所有欄位 | 識別碼： &quot;div.field&quot; |  |
+| 所有類型為「type」的欄位（其中類型為NumericField、DateField等）。: | 識別碼：&quot;div.type&quot; | 對於Timefield和DateTimeField，類型為textfield，因為不支援這些欄位。 |
+| 所有欄位 | 識別碼：&quot;div.field&quot; |  |
