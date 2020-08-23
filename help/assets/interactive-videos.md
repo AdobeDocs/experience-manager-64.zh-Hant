@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '6010'
+source-wordcount: '6008'
 ht-degree: 4%
 
 ---
@@ -38,7 +38,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
 
 >[!NOTE]
 >
->如果您建立互動式視訊，以在使用者按一下縮圖影像時啟動網頁，有些裝置會封鎖快顯網頁。 在這種情況下，您必須變更裝置上的快顯封鎖程式設定。 例如，在Apple iPhone 6上，點選 **[!UICONTROL設定** > **Safari** > **Block快顯視窗**，然後將控制項滑入 ****[!UICONTROL Off. 現在，當您播放互動式視訊並按一下縮圖時，如果您要開啟快顯視窗，就會出現提示。 如果您接受，則會開啟網頁。
+>如果您建立互動式視訊，以在使用者按一下縮圖影像時啟動網頁，有些裝置會封鎖快顯網頁。 在這種情況下，您必須變更裝置上的快顯封鎖程式設定。 例如，在Apple iPhone 6上，點選「 **[!UICONTROL Settings]** > **Safari** > **Block快顯視窗」，然後將控制項滑入****** OffPhone。 現在，當您播放互動式視訊並按一下縮圖時，如果您要開啟快顯視窗，就會出現提示。 如果您接受，則會開啟網頁。
 
 ## 觀看互動式影片的製作方式 {#watch-how-interactive-videos-are-created}
 
@@ -76,7 +76,7 @@ To see an interactive, shoppable video in action, click [Live Demos](https://lan
    * 您想要透過觸發至Quickviews，將互動功能加入視訊中。
    * 您的AEM實作不會使 *用* eCommerce整合架構，將產品資料從任何電子商務解決方案（例如IBM Websphere Commerce、Elastic Path、hybris或Intershop）拉入AEM。 請參 [閱AEM Assets中的電子商務概念](/help/sites-administering/concepts.md)。
 
-1. **（可選）建立互動式視訊檢視器預設集** -自訂各種元件的外觀和行為，這些元件是播放器的組成部份，例如視訊Scrubber和互動式縮圖。
+1. **（可選）建立互動式視訊檢視器預設集** -自訂各種元件的外觀和行為，這些元件是播放器的組成部份，例如視訊筆畫和互動式縮圖。
 
    如果您想要使用現成可用的互動式視訊檢視器預設集，或改用現成可用的互動式視訊檢視器預設集，則不需要建立您自己的互動式視 `Shoppable_Video_Light` 訊檢視 `Shoppable_Video_Dark` 器預設集。
 請參 [閱建立新檢視器預設集](managing-viewer-presets.md#creating-a-new-viewer-preset) （此為選用）和建 [立互動檢視器預設集的特殊考量事項](managing-viewer-presets.md#special-considerations-for-creating-an-interactive-viewer-preset)。
@@ -351,7 +351,7 @@ After you save the viewer preset, its state is automatically set to **[!UICONTRO
 
    螢幕擷取C
 
-   在上述的螢幕擷取C中，「時 **[!UICONTROL 間軸縮放]** 」設定已移至8秒。 請注意，包含產品縮圖的區段已縮小。 如果您有長視訊，而且想要看到通常符合頁面寬度的更多區段的概述，以這種方式縮小影片很有用。
+   在上述的螢幕擷取C中，「時 **[!UICONTROL 間軸縮放]** 」設定已移至8秒。 請注意，包含產品縮圖的區段已縮小。 如果您有長視訊，而且想要看到通常符合頁面寬度的更多區段的概述，以這種方式縮小影片會很有用。
 
 1. （可選）執行下列任一項作業：
 
@@ -509,7 +509,7 @@ After you save the viewer preset, its state is automatically set to **[!UICONTRO
 
 ## 將互動式視訊與您的網站整合 {#integrating-an-interactive-video-with-your-website}
 
-在您上傳影片、新增時間軸區段至影片，以及發佈互動式影片後，您現在可以將它新增至現有網站。
+在您上傳視訊、新增時間軸區段至該視訊並發佈互動式視訊後，您現在可以將它新增至現有網站。
 
 如果您是AEM Sites客戶，可將Interactive Media元件拖曳至您的頁面，以新增互動式視訊。 See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
 
@@ -586,7 +586,7 @@ After you save the viewer preset, its state is automatically set to **[!UICONTRO
 1. 或者，前端代碼將載入的Quickview資料轉換為HTML表示法。
 1. 前端程式碼會顯示模式對話方塊或面板，並轉譯HTML內容給使用者。
 
-這些呼叫可能不代表獨立的公用API呼叫，而網頁邏輯可透過任意步驟呼叫這些呼叫。 相反地，它是連結呼叫，在此連結呼叫中，前一步驟的最後一個階段（回呼）中隱藏了每個後續步驟。
+這些呼叫可能不代表獨立的公用API呼叫，而網頁邏輯可透過任意步驟呼叫這些呼叫。 相反地，它是連結呼叫，在此連結呼叫中，前一個步驟的最後一個階段（回呼）中將隱藏下一個步驟。
 
 在互動式視訊取代步驟1和部分步驟2的同時，當使用者按一下互動式視訊中的縮圖時，檢視器會處理這類使用者互動。 檢視器會將事件傳回網頁，其中包含先前新增至AEM的所有縮圖資料。
 
@@ -684,7 +684,7 @@ AEM傳回的內嵌代碼已經有現成的事件處理常式。 如下列反白�
  </tbody> 
 </table>
 
-觸發Quickview URL並啟動Quickview面板的最後一個步驟很可能需要您IT部門的前端IT人員協助。 他們具備最佳的知識，可瞭解如何從正確的步驟準確觸發Quickview實施，並擁有現成可用的Quickview URL。
+觸發Quickview URL並啟動Quickview面板的最後一個步驟很可能需要IT部門的前端IT人員協助。 他們具備最佳的知識，可瞭解如何從正確的步驟準確觸發Quickview實施，並擁有現成可用的Quickview URL。
 
 您可以瞭解這些步驟如何套用至示範網站，以將互動式視訊與Quickview程式碼完全整合。 在本主題的前面，Quickview URL的結構已標識為：
 
