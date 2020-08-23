@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ AEM 3D支援使用內建的Adobe Rapid Refine™轉譯器和協力廠商轉譯�
 * **[!UICONTROL 位元深度]** - 32位元（浮動）
 * **[!UICONTROL 像素順序]** -交錯(RGBRGB)
 * **[!UICONTROL 影像壓縮]** - LZW
-* **[!UICONCONTROL位元組順序** - IBM PC
+* **[!UICONTROL 位元組順序]** - IBM PC
 
 雖然單一HDR影像通常足以處理IBL階段，但AEM 3D可允許最多3個不同的影像，以提供對IBL效果的額外控制：
 
@@ -94,5 +94,5 @@ IBL級使用球形背景影像，預設情況下，球形背景影像直徑為20
 
    例如，20米長的噴氣式飛機模型如果顯示良好 `dam:gPlaneRadius=20000`。
 
-1. 在CRXDE Lite頁面的左上角附近，點選「全 **[!UICONTROL 部儲存」]**。
+1. 在CRXDE Lite頁面的左上角附近，點選「全部 **[!UICONTROL 儲存」]**。
 
