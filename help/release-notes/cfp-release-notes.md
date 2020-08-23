@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2159'
+source-wordcount: '2158'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 AEM Cumulative Fix Pack 6.4.8.1是重要的更新，包含自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)全面推出以來的數項內部和客戶修正。
 
-AEM Cumulative Fix Pack 6.4.8.1取決於AEM 6.4 Service Pack 8。 因此，在安裝AEM 6.4 Service Pack 8後，您必須安裝AEM Cumulative Fix Pack 6.4.8.1套件。
+AEM Cumulative Fix Pack 6.4.8.1需仰賴AEM 6.4 Service Pack 8。 因此，在安裝AEM 6.4 Service Pack 8後，您必須安裝AEM Cumulative Fix Pack 6.4.8.1套件。
 
 AEM 6.4.8.1的一些主要亮點是：
 
@@ -45,7 +45,7 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 
 * 當LiveCopy中的本機元件名稱與Blueprint中的元件名稱相同，且元件從Blueprint中推出時，_msm_moved詞語不會新增至本機元件的名稱(NPR-33207)。
 * 附加至原始請求的參數不會包含在重新導向URL中(NPR-33174)。
-* 當Coral.Select選項設定emptyOption=true或包含值= &quot;&quot;的預設項目時，dropdownshowhide.js檔案會遇到錯誤： 未捕獲的類型錯誤： component.getValue不是函式(NPR-33163)。
+* 當Coral.Select選項設定emptyOption=true或包含值= &quot;&quot;的預設項目時，dropdownshowhide.js檔案會遇到錯誤：未捕獲的類型錯誤：component.getValue不是函式(NPR-33163)。
 * 當元件包含另一個元件作為資料儲存資源時，父容器元件預留位置會以內部元件預留位置(NPR-33119)取代。
 * 當內容片段以架構為基礎且包含強制文字區域或路徑欄位時，內容片段無法儲存(NPR-33007)
 * 當您使用「現成可用的體驗」片段元件建立自訂元件並在AEM Sites頁面中使用時，AEM不會顯示自訂元件的參考（使用）(NPR-32852)。
@@ -117,15 +117,15 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 >
 >AEM Cumulative Fix Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請 [參閱「安裝AEM Forms附加元件套件](#install-aem-forms-add-on-package) 」 [和「安裝AEM Forms JEE安裝程式」](#install-aem-forms-jee-installer)。
 
-* 通信管理： 當用戶貼上來自文檔的 [!DNL Word] 內容時，文本文檔片段不保留格式(NPR-33213)。
-* 最適化表單： 自適應表單字典中字串的新行將字 `&#xa;` 符添加到字典(NPR-33265)。
-* 最適化表單： 用戶無法保存具有多個附件的自適應表單(NPR-33214)。
+* 通信管理：當用戶貼上來自文檔的 [!DNL Word] 內容時，文本文檔片段不保留格式(NPR-33213)。
+* 最適化表單：自適應表單字典中字串的新行將字 `&#xa;` 符添加到字典(NPR-33265)。
+* 最適化表單：用戶無法保存具有多個附件的自適應表單(NPR-33214)。
 * 最適化表單： `AddInstance` 和 `RemoveInstance` Instance Manager類別的方法不會在上為延遲載入片段新增動態 [!DNL Internet Explorer 11] 例項數(NPR-33201)。
-* 最適化表單： 內嵌在頁面中的最適化表單上啟 [!DNL Sites] 用的Analytics不會記錄提交和放棄事件的資料(NPR-31359)。
-* 最適化表單： 當使用者將檔案的內容貼入 [!DNL Word] 最適化表單並送出時，提交的最適化表單包含Unicode字元。 此外，PDF轉換為PDF/A失敗，因為Unicode字元(NPR-33348)。
-* 後端整合： 表單資料模型請求會因重新整理Token因非作用中狀態不正確而失敗(NPR-33168)。
-* 檔案服務： 由於伺服器上的Gibsonjar遺失，PDF服務無法將PDF檔案 [!DNL WebLogic] 轉 [!DNL Linux] 換為PostScript(NPR-33515、CQ-4292239)。
-* 檔案服務： 當使用者將文字檔案轉換為PDF時，日文字元無法正確顯示(NPR-33239)。
+* 最適化表單：內嵌在頁面中的最適化表單上啟 [!DNL Sites] 用的Analytics不會記錄「提交」和「放棄」事件的資料(NPR-31359)。
+* 最適化表單：當使用者將檔案的內容貼入 [!DNL Word] 最適化表單並送出時，提交的最適化表單包含Unicode字元。 此外，PDF轉換為PDF/A失敗，因為Unicode字元(NPR-33348)。
+* 後端整合：表單資料模型請求會因重新整理Token因非作用中狀態不正確而失敗(NPR-33168)。
+* 檔案服務：由於伺服器上的Gibsonjar遺失，PDF服務無法將PDF檔案 [!DNL WebLogic] 轉 [!DNL Linux] 換為PostScript(NPR-33515、CQ-4292239)。
+* 檔案服務：當使用者將文字檔案轉換為PDF時，日文字元無法正確顯示(NPR-33239)。
 * 將XSS與GuideSOMProviderServlet一起儲存(NPR-32701)。
 
 
@@ -145,12 +145,12 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 
 >[!CAUTION]
 >
->適用於已安裝在AEM 6.4的功能套件客戶。 Adobe提供的選購功能套件與發行版本和Service Pack有相依性。 如果您已安裝任何功能套件，請聯絡AEM客戶服務團隊，以驗證這些功能套件與AEM 6.4累積修補程式套件的相容性。
+>適用於已安裝在AEM 6.4的功能套件客戶。Adobe提供的選購功能套件與發行版本和Service Pack有相依性。 如果您已安裝任何功能套件，請聯絡AEM客戶服務團隊，以驗證這些功能套件與AEM 6.4累積修補程式套件的相容性。
 
-* AEM 6.4.8.1需要AEM 6.4.8.0。 請造訪升 [級檔案](../sites-deploying/upgrade.md) ，以取得詳細指示。
+* AEM 6.4.8.1需要AEM 6.4.8.0。請造訪升 [級檔案](../sites-deploying/upgrade.md) ，以取得詳細指示。
 * 在使用MongoDB和多個執行個體的部署中，使用「套件管理員」將AEM 6.4.8.1安裝在其中一個「作者」執行個體上。
 * 在安裝累積修補程式套件之前，請確定您有AEM例項的快照或最新備份。
-* 在安裝之前重新啟動實例。 雖然只有在實例仍處於更新模式時才需要（而這是從舊版更新實例時），但通常建議在實例運行較長時間時使用。
+* 在安裝之前重新啟動實例。 雖然只有在實例仍處於更新模式時才需要（這是剛從舊版更新實例時），但通常建議在實例運行較長時間時使用。
 
 >[!NOTE]
 >
@@ -176,9 +176,9 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 
 有兩種方式可自動將AEM 6.4.8.1安裝至執行中的例項：
 
-答： 將套件放入……*/crx-quickstart/install* folder wher the server is running. 軟體包會自動安裝。
+答：將套件放入……*/crx-quickstart/install* folder wher the server is running. 軟體包會自動安裝。
 
-B. 使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) —— 請務必使用 `cmd=install&recursive=true` -以便安裝巢狀套件。
+B.使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html) —— 請務必使用 `cmd=install&recursive=true` -以便安裝巢狀套件。
 
 >[!NOTE]
 >
@@ -187,12 +187,12 @@ B. 使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs
 ### 驗證安裝 {#validate-install}
 
 1. 「產品資訊」頁面(*/system/console/productinfo*)現在應在「已安裝產品」下方顯示更新版本字串「Adobe Experience Manager, Version 6.4.8.1」。
-1. 所有OSGI組合在OSGI主控台中都是ACTIVE或FRAGMENT(使用Web主控台： /system/console/bundles)。
-1. OSGI套件org.apache.jackrabbit.oak-core是1.8.17版或更新版本(使用Web Console: /system/console/bundles)。
+1. 所有OSGI組合在OSGI主控台中都是ACTIVE或FRAGMENT(使用Web主控台：/system/console/bundles)。
+1. OSGI套件org.apache.jackrabbit.oak-core是1.8.17版或更新版本(使用Web Console:/system/console/bundles)。
 
 若要決定此版AEM Sites和Assets的認證執行平台，請參閱「技術 [需求」](../sites-deploying/technical-requirements.md)。
 
->[!Note]
+>[!NOTE]
 >成功安裝套件時，會出現資訊性訊息，指出內容套件已成功安裝，例如 **「Content Package AEM-6.4-Service-Pack-7已成功安裝」。**
 
 ### 更新動態媒體檢視器(5.10.1) {#update-dynamic-media-viewers}
@@ -250,7 +250,7 @@ Adobe Public Maven儲存庫中提供AEM 6.4.8.1版的Uber Jar [](https://repo.ad
 
 * 在安裝AEM 6.4.8.1時，83版的更新 [!DNL Chrome] 會造成建立封裝時發生問題。 使用其他可用的瀏覽器(例如 [!DNL Internet Explorer] 和 [!DNL Firefox]或其他AEM標準套件安裝選項)來解決問題。 安裝AEM 6.4.8.1後，問題就解決。
 
-* 無法使用AEM預設郵件寄件者，將電子郵件傳送至遠端SMTP伺服器，因為它僅允許使用TLS v1.2進行通訊。 從中刪 `javax.mail:mail:1.5.0-b01` 除包 `system/console` 並刷新包以解決問題。
+* 無法使用AEM預設郵件寄件者，將電子郵件傳送至遠端SMTP伺服器，因為它僅允許使用TLS v1.2進行通訊。從中刪 `javax.mail:mail:1.5.0-b01` 除包 `system/console` 並刷新包以解決問題。
 
 如需AEM 6.4.8.0 Service Pack已知問題的詳細資訊，請參閱 [AEM 6.4.8.0 Service Pack發行說明](sp-release-notes.md)。
 
