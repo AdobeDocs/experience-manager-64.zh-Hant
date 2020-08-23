@@ -10,9 +10,9 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1436'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM Forms可讓您輕鬆建立、發佈和解除發佈表單。 如需AEM Forms的詳細資訊，請參閱「管 [理表單的簡介」](/help/forms/using/introduction-managing-forms.md)。
 
-AEM Forms伺服器提供兩個例項： 作者與發佈。 作者例項是用於建立和管理表單資產與資源。 發佈例項用於保留可供使用者使用的資產和相關資源。 您可以在「作者」模式下匯入XDP和PDF表格。 如需詳細資訊，請 [參閱「在AEM Forms中取得XDP和PDF檔案」](/help/forms/using/get-xdp-pdf-documents-aem.md)。
+AEM Forms伺服器提供兩個例項：作者與發佈。 作者例項是用於建立和管理表單資產與資源。 發佈例項用於保留可供使用者使用的資產和相關資源。 您可以在「作者」模式下匯入XDP和PDF表格。 如需詳細資訊，請 [參閱「在AEM Forms中取得XDP和PDF檔案」](/help/forms/using/get-xdp-pdf-documents-aem.md)。
 
 ## 支援的資產   {#supported-assets-nbsp}
 
@@ -61,8 +61,8 @@ AEM Forms支援下列資產類型：
 資產可以有下列狀態：
 
 * **未發佈：** 從未發佈的資產(未發佈狀態僅適用於Forms資產。 「信件管理」資產沒有「未發佈」狀態。)
-* **已發佈**: 已發佈且可在「發佈」例項中使用的資產
-* **已修改**: 發佈後修改的資產
+* **已發佈**:已發佈且可在「發佈」例項中使用的資產
+* **已修改**:發佈後修改的資產
 
 ## 發佈資產 {#publish-an-asset}
 
@@ -145,7 +145,7 @@ AEM Forms可讓您排程「表單與檔案」的資產發佈和取消發佈。 �
    1. 將指標移至資產上方，然後點選「取 **[!UICONTROL 消發佈]**![取消發佈](assets/unpublish.png)」。
    1. 執行下列任一項作業，然後點選取取消發佈：
 
-      * 如果您位於資訊卡檢視中，請點選 **[!UICONTROL Enter Selection** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)，然後點選資產。 選取資產。
+      * 如果您位於卡片檢視中，請點選「 **[!UICONTROL Enter Selection]** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)」，然後點選資產。 選取資產。
       * 如果您位於清單檢視中，請將滑鼠指標暫留在資產上，然後點選「 ![selectassettcheckmark](assets/selectassetcheckmark.png) 」。 選取資產。
       * 點選資產以顯示其詳細資訊。
       * 點選「檢視屬性」檢視屬性，以顯示資產的 ![屬性](assets/viewproperties.png)。
