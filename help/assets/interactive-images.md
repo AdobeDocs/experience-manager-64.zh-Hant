@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4303'
+source-wordcount: '4300'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). 您也將學習如何預覽、編輯和傳遞互動式影像橫幅。
 
-## 快速入門： 互動式影像 {#quick-start-interactive-images}
+## 快速入門：互動式影像 {#quick-start-interactive-images}
 
 下列逐步工作流程說明旨在協助您在AEM Assets中快速啟動並執行互動式影像。
 
@@ -54,7 +54,7 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 1. **（可選）建立互動式影像檢視器預設集** -自訂用於表示熱點的圖形影像。 如果您想要使用現成可用的互動式影像檢視器預設集，則不需要建立您自己的互動式影像檢視器預設集，而且此預設集的名稱是 `Shoppable_Banner` 現成的。
 
-   請參 [閱（選用）建立互動式影像檢視器預設集](managing-viewer-presets.md#creating-a-new-viewer-preset)。
+   請參 [閱（可選）建立互動式影像檢視器預設集](managing-viewer-presets.md#creating-a-new-viewer-preset)。
 
 1. **上傳影像橫幅** -上傳您想要製作互動式的影像橫幅。
 
@@ -87,7 +87,7 @@ Watch a 10 minute and 33 second walkthrough on [how interactive image banners ar
 
 首先，您可以識別現有Quickview實作所使用的動態變數，以便輸入熱點資料以建立互動式影像。
 
-當您在AEM Assets中將熱點新增至橫幅影像時，您必須指派SKU(庫存保留單位； 您提供的每個不同產品或服務的唯一識別碼)，以及每個熱點的可選附加變數。 這些熱點變數稍後用於匹配熱點與Quickview內容。
+當您在AEM Assets中將熱點新增至橫幅影像時，您必須指派SKU(庫存保留單位；您提供的每個不同產品或服務的唯一識別碼)，以及每個熱點的可選附加變數。 這些熱點變數稍後用於匹配熱點與Quickview內容。
 
 請務必正確識別要與熱點資料關聯的變數數目和類型。 每個新增至橫幅影像的熱點都必須包含足夠的資訊，以明確識別現有後端系統中的產品。
 
@@ -223,7 +223,7 @@ Quickview的大多數實施都採用以下模式：
 
    請參閱 [上傳資產](managing-assets-touch-ui.md#uploading-assets)。
 
-   您現在可以在影像橫幅中加入熱點； 請參閱下面的下一項工作。
+   您現在可以在影像橫幅中加入熱點；請參閱下面的下一項工作。
 
 ## 向影像橫幅添加熱點 {#adding-hotspots-to-an-image-banner}
 
@@ -235,7 +235,7 @@ Quickview的大多數實施都採用以下模式：
 
 >[!NOTE]
 >
->請注意，當您將檢視器內嵌在體驗片段時，不支援互動式影像中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
+>請注意，當您將檢視器內嵌在「體驗片段」時，不支援「互動式影像」中的社交媒體分享工具。 若要解決這個問題，您可以使用或建立沒有社交媒體分享工具的檢視器預設集。 這些檢視器預設集可讓您成功將它內嵌在「體驗片段」中。
 
 **[!UICONTROL 在您目]****** 前的建立／編輯工作階段中，支援在頁面右上角附近的「復原」和「復原」選項。
 
@@ -247,7 +247,7 @@ Quickview的大多數實施都採用以下模式：
 >
 >在「互動式影像」或「轉盤橫幅」中新增熱點至影像時，熱點資訊會儲存在相對於影像位置的相同中繼資料位置，不論是「互動式影像」或「轉盤橫幅」。 這項功能表示，您可以在任一檢視器中，輕鬆地重複使用相同的影像及其定義的熱點資料。
 
->但是，請注意，轉盤橫幅支援影像上的影像地圖，這些影像也可能包含熱點； 互動式影像則否。 如果您想要建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可能想要使用相同影像的個別副本來建立互動式影像和轉盤橫幅。
+>但是，請注意，轉盤橫幅支援影像上的影像地圖，這些影像也可能包含熱點；互動式影像則否。 如果您想要建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可能想要使用相同影像的個別副本來建立互動式影像和轉盤橫幅。
 >
 >另請參閱 [轉盤橫幅](carousel-banners.md)。
 
@@ -260,15 +260,14 @@ Quickview的大多數實施都採用以下模式：
 1. 在「資產」檢視中，導覽至您要建立互動功能的影像橫幅。
 1. 執行下列任一項作業：
 
-   * Hover on the image, then tap **[!UICONTROL Select** (checkmark icon). 在工具列上，點選 **[!UICONCONTROL編輯**。
+   * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). 在工具列上，點選「 **[!UICONTROL 編輯」]**。
    * 將滑鼠指標暫留在影像上，然後點選「 **[!UICONTROL 更多動作]** （三個點圖示）> **[!UICONTROL 編輯」]**。
-   * 點選影像以在「詳細資料檢視」頁 **[!UICONTROL 面中開啟]** 。 在工具列上，點選 **[!UICONCONTROL編輯**。
+   * 點選影像以在「詳細資料檢視」頁 **[!UICONTROL 面中開啟]** 。 在工具列上，點選「 **[!UICONTROL 編輯」]**。
 
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the **[!UICONTROL Hotspot Management]** page.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
-1. a. 在「熱點管理」頁面的左上角 **附近** ，點選「熱 **[!UICONTROL 點」]**。
-b. 在影像上，點選您要熱點出現的位置。 如有必要，請拖動熱點以調整其位置。c. 通過重複步驟a和b，根據需要添加其他熱點。
-d. （可選）若要刪除熱點，請在影像上選取它，然後點選「熱點」標題下 **[!UICONTROL 的]** 「刪除」(廢棄項目可 **[!UICONTROL 以圖示)]** 。
+1. a.在「熱點管理」頁面的左上角 **附近** ，點選「熱 **[!UICONTROL 點」]**。
+b.在影像上，點選您要熱點出現的位置。 如有必要，請拖動熱點以調整其位置。c.通過重複步驟a和b，根據需要添加其他熱點。d.（可選）若要刪除熱點，請在影像上選取它，然後點選「熱點」標題下 **[!UICONTROL 的]** 「刪除」(廢棄項目可 **[!UICONTROL 以圖示)]** 。
 
 1. 在「名 **[!UICONTROL 稱]** 」文本欄位中，鍵入熱點的名稱。 此名稱也會出現在「選 **[!UICONTROL 取的熱點]** 」下拉式清單中。
 1. 執行下列任一項作業：
@@ -278,7 +277,7 @@ d. （可選）若要刪除熱點，請在影像上選取它，然後點選「�
       * 如果您是AEM Sites或電子商務客戶，請點選「產品選擇器」圖示（放大鏡）以開啟「選 **[!UICONTROL 取產品]****** 」頁面。 點選您要使用的產品，然後點選頁 **[!UICONTROL 面右上角的]** 「選取」，以返回「熱點管 **[!UICONTROL 理」頁面]** 。
       * 如果您不 *是* AEM Sites或電子商務客戶
 
-         * 請參閱 [識別熱點變數](#optional-identifying-hotspot-variables); 您需要定義這些變數。
+         * 請參閱 [識別熱點變數](#optional-identifying-hotspot-variables);您需要定義這些變數。
          * 然後，手動輸入SKU值。 在「 **[!UICONTROL SKU值]** 」文字欄位中，輸入產品的SKU（庫存保留單位），此為您提供之每個不同產品或服務的唯一識別碼。 輸入的SKU值會自動填入Quickview範本的變數部分，讓系統知道將點選的熱點與特定SKU的Quickview關聯。
          * （可選）如果Quickview中有其他變數需要用來進一步識別產品，請點選「新增一般變 **[!UICONTROL 數」]**。 在文字欄位中，指定其他變數。 例如， `category=Mens` 是新增的變數。
    * 點選「 **超連結**」。
@@ -369,7 +368,7 @@ See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages
 
 >[!NOTE]
 >
->因此，演示網站上可購物交互影像上的熱點僅用於顯示； 它們尚未與現有的Quickviews整合。
+>因此，演示網站上可購物交互影像上的熱點僅用於顯示；它們尚未與現有的Quickviews整合。
 
 若要針對回應式環境將裁切套用至可購買的互動式影像，您可將「互動式影像」設定屬性加入路徑——其中是要呼叫的元件， `ZoomView.iscommand``ZoomView``iscommand` 也是您套用的裁切影像伺服命令。
 
