@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '541'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 1. 設定影像光源。
 
    1. 在「渲染 **[!UICONTROL 設定」中]**，選擇「 **[!UICONTROL 渲染使用」:心智雷]**，並開啟「場景」標籤。
-   1. 開啟「 **[!UICONTROL 渲染環境]** 」accordion ，然後單 **擊[!UICONTROL渲染建立基於影像的光源**。
+   1. 開啟「 **[!UICONTROL Render Environment]** 」accordion，然後按一 **[!UICONTROL 下「Render Create Image Based Lightings」]**。
    1. 按一下框表徵圖（框表徵圖在框的左側有向右箭頭）以選擇IBL節點，然 `mentalRayIblShape1`後退出 **[!UICONTROL 「渲染設定」]**。
    1. 在屬性 **[!UICONTROL 編輯器中]**，選擇轉換節點 `mentalRayIbl1`，然後將轉換節點更名為 `AdobeIbl`。
    1. 設定節點的「縮放」(Scale of the node)，使環境球體顯著大於此階段中要顯示的最大3D對象(例如 `10000,10000,10000`)。
@@ -77,7 +77,7 @@ ht-degree: 0%
 
    請參 [閱解決檔案相關性](resolve-file-dependencies.md)。
 
-   AEM 3D可能無法偵測在舞台中設定的IBL影像。 在這種情況下，必須手動解決缺少的從屬關係。 您可以為每個缺少的從屬關係指定相同的先前上載IBL PTIFF影像。 或者，您可以指派不同的影像來進一步控制IBL效果。 解決相依性後，請務必點選「儲 **[!UICONTROL 存]** 」以開始重新處理。
+   AEM 3D可能無法偵測在舞台中設定的IBL影像。 在這種情況下，必須手動解決缺少的從屬關係。 您可以為每個缺失的從屬關係指定相同的先前上載IBL PTIFF影像。 或者，您可以指派不同的影像來進一步控制IBL效果。 解決相依性後，請務必點選「儲 **[!UICONTROL 存]** 」以開始重新處理。
 
 1. 在AEM中開啟資產屬性。 將 **[!UICONTROL Title]** （標題）設為將出現在「舞台選取器 **** 」下拉式清單中的適當字串。 驗證 **[!UICONTROL Class]** is set **[!UICONTROL to 3D Stage]**. 儲存並退出。
 
