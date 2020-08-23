@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3428'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ Adobe建議您僅從Dynamic Media Classic目標資料夾中的資產，將資產
 
 1. 在sidekick中，按一下「頁 **[!UICONTROL 面」圖示]** ，然後按一下「 **[!UICONTROL 頁面屬性」]**。
 
-1. 按一 **下「[!UICONTROL雲端服務>新增服務>動態媒體經典(Scene7)」**。
+1. 按一 **[!UICONTROL 下「雲端服務]>新[!UICONTROL 增服務]>動態媒[!UICONTROL 體經典版(Scene7)」]**。
 1. 在「Adobe Dynamic Media Classic」下拉式清單中，選取所要的設定，然後按一下「 **[!UICONTROL 確定]**」。
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -121,7 +121,7 @@ Adobe建議您僅從Dynamic Media Classic目標資料夾中的資產，將資產
    >
    >如果數位資產位於CQ目標資料夾中，則不會顯示「檢查動態媒體傳 **[!UICONTROL 統出版物狀態]** 」連結。 資產只會放在元件中。
 
-   ![chlimage_1-70](assets/chlimage_1-78.png)
+   ![chlimage_1-78](assets/chlimage_1-78.png)
 
 1. 按一 **[!UICONTROL 下「檢查動態媒體經典出版物狀態]**」。 如果資產未發佈，AEM會將資產發佈至Dynamic Media Classic。 上傳資產後，資產就會位於臨機資料夾中。 依預設，臨機資料夾位於 `name_of_the_company/CQ5_adhoc`。 如有需 [要，您可以設定此設定](#configuringtheadhocfolder)。
 
@@ -159,7 +159,7 @@ AEM提供下列Dynamic Media Classic元件：
 
 1. 在AEM中，開啟您要新增Dynamic Media Classic元件的頁面。
 
-1. 如果沒有可用的Dynamic Media Classic元件，請按一下側腳中的尺標以進入 **[!UICONTROL Design]** 模式，按一下「編輯」( **[!UICONTROL Edit]** parsys)，然後選取所有 **[!UICONTROL Dynamic Media Classic]** 元件以使其可用。
+1. 如果沒有可用的Dynamic Media Classic元件，請按一下側腳中的尺標以進入 **[!UICONTROL Design]** 模式，按一下「編輯」( **[!UICONTROL Edit]** parsys)，然後選取所有的 **[!UICONTROL Dynamic Media Classic]** 元件，讓它們可用。
 
 1. 按一下側 **[!UICONTROL 腳中的鉛筆]** ，即可返回「編輯」模式。
 
@@ -210,7 +210,7 @@ AEM提供下列Dynamic Media Classic元件：
 
 ### 飛出 {#flyout}
 
-在HTML5 Flyout元件中，資產顯示為分割畫面； 將資產保留在指定的大小； 右側顯示縮放部分。 按一 **[!UICONTROL 下「編輯]** 」以設定元件。 使用此元件，您可以設 [定所有Dynamic Media Classic元件的共同設定](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassiccomponents)。
+在HTML5 Flyout元件中，資產顯示為分割畫面；將資產保留在指定的大小；右側顯示縮放部分。 按一 **[!UICONTROL 下「編輯]** 」以設定元件。 使用此元件，您可以設 [定所有Dynamic Media Classic元件的共同設定](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassiccomponents)。
 
 >[!NOTE]
 >
@@ -240,7 +240,7 @@ Dynamic Media Classic Image元件可讓您將Dynamic Media Classic功能新增�
 
 **[!UICONTROL 輸出格式]** -選擇影像的輸出格式，例如jpeg。 視您選擇的輸出格式而定，您可能會有其他設定選項。 請參閱 [管理影像預設集](/help/assets/managing-image-presets.md)。
 
-**[!UICONTROL 銳利化]** -選擇影像銳利化的方式。 銳利化在 [*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices中會詳細說明&#x200B;*](/help/assets/assets/s7_sharpening_images.pdf)。
+**[!UICONTROL 銳利化]** -選擇影像銳利化的方式。 銳利化在 [*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices中會詳細說明*](/help/assets/assets/s7_sharpening_images.pdf)。
 
 **[!UICONTROL URL修飾元]** -您可以提供額外的Dynamic Media Classic影像指令來變更影像效果。 這些說明在「管理 [影像預設集](/help/assets/managing-image-presets.md) 」和「命 [令」參考中](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)。
 
@@ -303,7 +303,7 @@ Dynamic Media Classic Image元件可讓您將Dynamic Media Classic功能新增�
 
 ### 視訊元件 {#video-component}
 
-Dynamic Media Classic **** Video元件（可從側腳的Dynamic Media Classic區段取得）使用裝置和頻寬偵測，為每個螢幕提供正確的視訊。 此元件為HTML5視訊播放器； 它是可跨通道使用的單一檢視器。
+Dynamic Media Classic **** Video元件（可從側腳的Dynamic Media Classic區段取得）使用裝置和頻寬偵測，為每個螢幕提供正確的視訊。 此元件為HTML5視訊播放器；它是可跨通道使用的單一檢視器。
 
 它可用於最適化視訊集、單一MP4視訊或單一F4V視訊。
 
@@ -337,7 +337,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 * 對於視訊，Dynamic Media Classic內容瀏覽器支援：
    >
    >
-* 最適化視訊集： 容器，以便在多個螢幕上順暢播放所需的所有視訊轉譯
+* 最適化視訊集：容器，以便在多個螢幕上順暢播放所需的所有視訊轉譯
 >* 單一MP4視訊
 >* 單一F4V視訊
 
@@ -358,7 +358,7 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 >
 >對於視訊，WCM的Dynamic Media Classic內容瀏覽器支援：
 >
->* 最適化視訊集： 容器，以便在多個螢幕上順暢播放所需的所有視訊轉譯
+>* 最適化視訊集：容器，以便在多個螢幕上順暢播放所需的所有視訊轉譯
 >* 單一MP4視訊
 >* 單一F4V視訊
 
@@ -390,11 +390,11 @@ Dynamic Media Classic內容瀏覽器可讓您直接在AEM中從Dynamic Media Cla
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-**[!UICONTROL 設定]** 如果您在 [!UICONTROL Cloud Services中定義了多個Dynamic Media Classic設定]，您可以在此處選取。 因此，資料夾會根據您選擇的組態而變更。
+**[!UICONTROL 設定]** 如果您在 [!UICONTROL Cloud Services]中定義了多個Dynamic Media Classic設定，您可以在此處選取。 因此，資料夾會根據您選擇的組態而變更。
 
 ![chlimage_1-96](assets/chlimage_1-96.png)
 
-**[!UICONTROL 資產類型]** ：在Dynamic Media Classic瀏覽器中，您可以篩選結果以包含下列任一項： 影像、範本、視訊和最適化視訊集。 如果您未選取任何資產類型，AEM依預設會搜尋所有資產類型。
+**[!UICONTROL 資產類型]** ：在Dynamic Media Classic瀏覽器中，您可以篩選結果以包含下列任一項：影像、範本、視訊和最適化視訊集。 如果您未選取任何資產類型，AEM依預設會搜尋所有資產類型。
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
