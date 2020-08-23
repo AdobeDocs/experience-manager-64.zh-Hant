@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
@@ -76,7 +76,7 @@ AEM **中的Text** （文字）元件可供觸控式和傳統UI使用。 下列�
 新的語義塊格式可通過以下方式提供供選擇：
 
 1. 根據RTE，確定並導航到配 [置位置](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)。
-1. [啟用「段落選擇」欄位](/help/sites-administering/rich-text-editor.md); 啟動 [外掛程式](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
+1. [啟用「段落選擇」欄位](/help/sites-administering/rich-text-editor.md);啟動 [外掛程式](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
 1. [在「段落選取」欄位中指定您想要使用的格式](/help/sites-administering/rich-text-editor.md)。
 1. 然後，內容作者可從RTE中的選擇欄位使用段落格式。 可以訪問這些檔案：
 
@@ -91,7 +91,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
 
 ## 原始碼編輯功能的使用 {#use-of-the-source-edit-feature}
 
-在某些情況下，內容作者會發現有必要檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的一部分內容可能需要額外的標籤，以確保符合WCAG 2.0。 這可以通過RTE的源 [編輯](/help/sites-administering/rich-text-editor.md#aboutplugins) 選項來完成。 您可以在外掛 [ 程 `sourceedit` 式上指定 `misctools` 功能](/help/sites-administering/rich-text-editor.md#aboutplugins)。
+在某些情況下，內容作者會發現有必要檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的一部分內容可能需要額外的標籤，以確保符合WCAG 2.0。這可以通過RTE的源 [編輯](/help/sites-administering/rich-text-editor.md#aboutplugins) 選項來完成。 您可以在外掛 [ 程 `sourceedit` 式上指定 `misctools` 功能](/help/sites-administering/rich-text-editor.md#aboutplugins)。
 
 >[!CAUTION]
 >
@@ -167,9 +167,9 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
    ```
    /**
     * Adds Caption Element
-    */
-   var captionElement; 
-   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption") 
+   */
+   var captionElement;
+   if (dom.firstChild && dom.firstChild.tagName.toLowerCase() == "caption")
    {
       captionElement = dom.firstChild;
    }
@@ -178,7 +178,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
        var captionTextNode = document.createTextNode(config.caption)
        if (captionElement)
        {
-          dom.replaceNode(captionElement.firstChild,captionTextNode); 
+          dom.replaceNode(captionElement.firstChild,captionTextNode);
        } else
        {
            captionElement = document.createElement("caption");
@@ -191,7 +191,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
               dom.appendChild(captionElement);
            }
        }
-   } else if (captionElement) 
+   } else if (captionElement)
    {
      dom.removeChild(captionElement);
    }
