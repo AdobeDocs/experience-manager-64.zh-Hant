@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 92017a4c2c9ab9f139440e40f368958bcc3bb2ef
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5547'
 ht-degree: 3%
 
 ---
@@ -38,11 +38,11 @@ ht-degree: 3%
 
 [動態媒體](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ，預設為停用。 若要運用動態媒體功能，您必須啟用它。
 
->[注意]
+>[!NOTE]
 >
 >動態媒體- Scene7模式僅適用於AEM Author例項。 因此，您必須在AEM Author例 `runmode=dynamicmedia_scene7`項上進行設定，而非在AEM Publish例項上。
 
-若要啟用動態媒體，您必須在終端視窗中輸入 `dynamicmedia_scene7` 下列內容，從命令列使用runmode啟動AEM（使用的例如連接埠為4502）:
+若要啟用動態媒體，您必須在終端視窗中輸入 `dynamicmedia_scene7` 下列內容，從命令列使用runmode來啟動AEM（使用的例如連接埠為4502）:
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
@@ -52,7 +52,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 如果您要將AEM Dynamic Media從6.3升級至6.4（現在包含零停機部署的功能），您必須執行下列curl命令，才能將所有預設集和組態從CRXDE `/etc` Lite移轉 `/conf` 至CRXDE Lite。
 
->[注意]
+>[!NOTE]
 >
 >如果您以相容模式執行AEM例項（即，您已安裝相容性封裝），就不需要執行這些命令。
 
@@ -116,13 +116,13 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * 選取核取方塊以啟用（開啟）此位址，然後輸入AEM Author例項的IP位址（而非Dispatcher IP）。
    * 點選「 **[!UICONTROL 儲存]**」。
 
-您現在已完成基本配置； 您已準備好使用Dynamic Media - Scene7模式。
+您現在已完成基本配置；您已準備好使用Dynamic Media - Scene7模式。
 
 如果您想要進一步自訂設定，可以選擇性地完成「在動態媒體- Scene7模式中設定進階設定」 [（選用）下的任何工作](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)。
 
 ## （可選）在動態媒體- Scene7模式中設定進階設定 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-如果您想要進一步自訂動態媒體- Scene7模式的設定和設定，或最佳化其效能，則可以完成下列一或多項選用工作：
+如果您想要進一步自訂動態媒體- Scene7模式的設定和設定，或最佳化其效能，則可完成下列一或多項選用工作：
 
 * [（選用）動態媒體的設定與設定- Scene7模式設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
 
@@ -146,9 +146,9 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 #### 影像伺服器的發佈設定 {#publishing-setup-for-image-server}
 
-「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
+「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有「預設物件解析度」設定的影像。
 
-若要設定發佈設定： 在Dynamic Media Classic中，點選「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」]**。
+若要設定發佈設定：在Dynamic Media Classic中，點選「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」]**。
 
 「影像伺服器」畫面會建立傳送影像的預設設定。 請參閱使用者介面以取得每個設定的說明。
 
@@ -166,7 +166,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 **[!UICONTROL 伺服器]** -在帳戶布建時，動態媒體會自動為您的公司提供指派的伺服器。 這些伺服器可用來建構網站和應用程式的URL字串。 這些URL呼叫是您帳戶專屬的。 除非AEM支援明確指示，否則請勿變更任何伺服器名稱。
 
-**[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產： 不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
+**[!UICONTROL 覆寫影像]** -動態媒體不允許兩個檔案具有相同名稱。 每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：不論是替換原稿還是變成重複。 重複資產會以&quot;-1&quot;（例如chair.tif會更名為chair-1.tif）重新命名。 這些選項會影響上傳至原始檔案夾以外的資產，或是副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
 
 * **[!UICONTROL 覆寫目前檔案夾中的基本影像名稱／副檔名]** -此選項是最嚴格的取代規則。 它要求您將取代影像上傳至與原始影像相同的檔案夾，而取代影像的副檔名與原始影像的副檔名相同。 如果這些需求未達成，則會建立復本。
 
@@ -174,7 +174,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 >
 >若要與AEM保持一致性，請選取「在目 **[!UICONTROL 前檔案夾中覆寫，相同的基本影像名稱／副檔名]**」。
 
-* **[!UICONTROL 在任何資料夾中覆寫基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同(例如，取代 `chair.jpg` 而非 `chair.jpg``chair.tif`)。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中； 在檔案的原始位置中無法再找到該檔案。
+* **[!UICONTROL 在任何資料夾中覆寫基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同(例如，取代 `chair.jpg` 而非 `chair.jpg``chair.tif`)。 不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。 您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
 
 **[!UICONTROL 預設色彩描述檔]** -如需詳細 [資訊，請參閱設定](#configuring-color-management) 色彩管理。
@@ -220,7 +220,7 @@ For example, you could set the **[!UICONTROL RGB Default Color Space]** to `sRGB
 * 將Adobe Photoshop檔案(.PSD)轉換為橫幅範本資產，以利個人化。
 * 點陣化Adobe Illustrator檔案(.AI)或Adobe Photoshop封裝的Postscript檔案(.EPS)。
 
->[注意]
+>[!NOTE]
 >
 >「視訊設定檔」和「影像設定檔」可分別用來定義視訊和影像的處理。
 
@@ -329,7 +329,7 @@ For example, you could set the **[!UICONTROL RGB Default Color Space]** to `sRGB
 1. 在頁面頂端的導覽列上，點選「設定>應用程 **[!UICONTROL 式設定>批次集預設集>預設命名]」。**
 1. 選擇 **[!UICONTROL 「查看表單]** 」或「 **[!UICONTROL 查看代碼」]** ，以指定要查看的方式並輸入有關每個元素的資訊。
 
-   You can select the **[!UICONTROL View Code]** check box to view the regular expression value building alongside your form selections. 如果表單視圖因任何原因限制您，您可以輸入或更改這些值，以幫助定義命名約定的元素。 如果無法在表單檢視中解析您的值，表單欄位會變為非作用中。
+   您可以選取「檢 **[!UICONTROL 視程式碼]** 」核取方塊，以檢視表格選擇旁邊建立的規則運算式值。 如果表單視圖因任何原因限制您，您可以輸入或更改這些值，以幫助定義命名約定的元素。 如果無法在表單檢視中解析您的值，表單欄位會變為非作用中。
 
    >[!NOTE]
    >
@@ -343,20 +343,20 @@ For example, you could set the **[!UICONTROL RGB Default Color Space]** to `sRGB
 
 1. 執行下列任一項作業：
 
-   * Tap **[!UICONTROL Save As]** and type a name for the preset.
-   * Tap **[!UICONTROL Save]** if you are editing an existing preset.
+   * 點選「 **[!UICONTROL 另存新檔]** 」，然後輸入預設集的名稱。
+   * 如果您 **[!UICONTROL 要編輯現有的預設集]** ，請點選「儲存」。
 
-**Creating a Batch Set Preset**
+**建立批集預設集**
 
-Dynamic Media uses batch set presets to organize assets into sets of images (alternate images, color options, 360 spin) for display in viewers. The batch set presets automatically run alongside the asset upload processes in Dynamic Media.
+動態媒體使用批次集預設集將資產組織成一組影像（替代影像、顏色選項、360回轉），以便在檢視器中顯示。 批次集預設集會自動在動態媒體中與資產上傳程式一起執行。
 
-您可以建立、編輯和管理批次集預設集。 There are two forms of batch set preset definitions: one for a default naming convention that you might have set up, and one for custom naming conventions that you create on the fly.
+您可以建立、編輯和管理批次集預設集。 批集預設定義有兩種形式：一個代表您可能已設定的預設命名慣例，另一個代表您即時建立的自訂命名慣例。
 
-You can use either the form field method to define a batch set preset or the code method, which lets you use regular expressions. As in Default Naming, you can choose [!UICONTROL View Code] at the same time you are defining in the [!UICONTROL Form View] and use regular expressions to build your definitions. Alternately, you can uncheck either view to use one or the other exclusively.
+您可以使用表單欄位方法來定義批次集預設集，或使用程式碼方法來使用規則運算式。 如同在預設命名中，您可以在「表單檢視」中定義的同時選擇「 [!UICONTROL View Code] 」（檢視程式碼），並使用規則運算式來建立您的定義。 或者，您可以取消選中任一視圖以獨佔使用一個視圖或另一個視圖。
 
-**To create a Batch Set Preset:**
+**要建立批集預設集，請執行以下操作：**
 
-1. Log on to your Dynamic Media Classic (Scene7) account: [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 登入您的Dynamic Media Classic(Scene7)帳戶： [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
 
@@ -380,14 +380,14 @@ You can use either the form field method to define a batch set preset or the cod
 
    如果您定義大量集合，您可能偏好將這些集合與包含資產本身的資料夾分開。 例如，您可以建立「影像集」檔案夾，並將產生的集放在此處。
 
-1. In the **[!UICONTROL Details]** panel, tap **[!UICONTROL Save]**.
+1. 在「詳細資 **[!UICONTROL 訊]** 」面板中，點選「 **[!UICONTROL 儲存」]**。
 1. 點選 **[!UICONTROL 新預設集名稱旁的]** 「作用中」。
 
    啟動預設可確保在您上傳資產至動態媒體時，會套用批次集預設集以產生該預設集。
 
 **為自動生成2D回轉集建立批集預設集**
 
-您可以使用批集類型 **[!UICONTROL 多軸回轉集]** ，建立自動生成2D回轉集的方式。 The grouping of images uses Row and Column regular expressions so that the image assets are properly aligned in the corresponding location in the multi-dimensional array. 在多軸回轉集中，沒有必須具有的最小或最大行數或列數。
+您可以使用批集類型 **[!UICONTROL 多軸回轉集]** ，建立自動生成2D回轉集的方式。 影像群組使用「列」和「欄」規則運算式，讓影像資產在多維度陣列的對應位置中正確對齊。 在多軸回轉集中，沒有必須具有的最小或最大行數或列數。
 
 例如，假設您要建立名為的多軸回轉集 `spin-2dspin`。 您有一組回轉集影像，包含三列，每列12個影像。 這些影像的命名如下：
 
@@ -420,7 +420,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
    請注 [!UICONTROL 意]，如「詳細資訊」頁面右上角所設定的 [!UICONTROL 「檢視表單] 」是預設檢視。
 
 1. 在「預 **[!UICONTROL 設清單]** 」面板中，點選「新增」以啟用畫面右側「詳細資訊 ******** 」面板中的定義欄位。
-1. 在「詳 **[!UICONTROL 細資訊]** 」面板中，在[!UICONCONTROL預設集名稱[!UICONCONTROL」欄位中，鍵入預設集的名稱。
+1. 在「詳 **[!UICONTROL 細資訊]** 」面板的「預設名 [!UICONTROL 稱」欄位中] ，輸入預設的名稱。
 1. In the **[!UICONTROL Batch Set Type]** drop-down menu, select **[!UICONTROL Asset Set]**.
 1. 在「子 **[!UICONTROL 類型]** 」(Sub Type)下拉清單中，選 **[!UICONTROL 擇「多軸回轉集」(Multi-Axis Spin Set]**)。
 1. 展開 **[!UICONTROL 資產命名慣例]**，然後在「檔案命名 **[!UICONTROL 」下拉式清單中，點選「]** 自訂 ****」。
@@ -500,7 +500,7 @@ Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作�
 
 **要更新Granite瞬態工作流隊列**:
 
-1. 導覽至 [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) ，並搜尋 **[!UICONTROL 佇列： Granite暫時工作流程佇列]**。
+1. 導覽至 [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) ，並搜尋 **[!UICONTROL 佇列：Granite暫時工作流程佇列]**。
 
    >[!NOTE]
    >
@@ -522,7 +522,7 @@ Adobe建議對PDF、Postscript和PSD檔案使用下列「已調整」的工作�
 
 **要更新Granite工作流隊列，請執行以下操作：**
 
-1. 導覽至 `https://<server>/system/console/configMgr` 並搜尋佇 **[!UICONTROL 列： Granite工作流程佇列]**。
+1. 導覽至 `https://<server>/system/console/configMgr` 並搜尋佇 **[!UICONTROL 列：Granite工作流程佇列]**。
 
    >[!NOTE]
    >
@@ -547,7 +547,7 @@ Scene7「上傳連線」設定會將AEM資產同步至Dynamic Media Classic伺�
 1. 導航到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在「連 [!UICONTROL 接數」欄位] 和／或「作 [!UICONTROL 用中作業逾時」欄位中] ，視需要變更數目。
 
-   「連 **[!UICONTROL 線數」設定]** ，會控制AEM至「動態媒體」上傳所允許的HTTP連線數上限； 通常，10個連接的預定義值就足夠了。
+   「連 **[!UICONTROL 線數」設定]** ，會控制AEM至「動態媒體」上傳所允許的HTTP連線數上限；通常，10個連接的預定義值就足夠了。
 
    「作 **[!UICONTROL 用中工作逾時]** 」設定會決定上傳之動態媒體資產在傳送伺服器中發佈的等待時間。 此值預設為2100秒或35分鐘。
 
