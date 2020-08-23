@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
@@ -36,11 +36,11 @@ AEM會傳送電子郵件通知給下列使用者：
 
 >[!NOTE]
 >
->使用AEM時，有幾種方法可管理此類服務的組態設定； 如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+>使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
 ## 配置郵件服務 {#configuring-the-mail-service}
 
-AEM若要能夠傳送電子郵件， **Day CQ Mail Service** 需要正確設定。 您可以在Web控制台中查看配置。 使用AEM時，有幾種方法可管理此類服務的組態設定； 如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+AEM若要能夠傳送電子郵件， **Day CQ Mail Service** 需要正確設定。 您可以在Web控制台中查看配置。 使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
 適用下列限制：
 
@@ -68,7 +68,7 @@ AEM若要能夠傳送電子郵件， **Day CQ Mail Service** 需要正確設定�
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` 類型 `sling:OsgiConfig`
 
-1. 將屬性 `String` 添加到名為的節點] `email.from`。 請為值指定您要使用的電子郵件地址。
+1. 將屬性 `String` 添加到名為的節點 `email.from`。 請為值指定您要使用的電子郵件地址。
 
 1. 按一下「 **全部儲存**」。
 
@@ -255,7 +255,7 @@ subject=<text_1>
 >
 >有關範本格式的詳細資訊，請參 [閱Properties.load()方法的javadoc](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) 。
 
-該方 `${payload.path.open}` 法顯示工作項目裝載的路徑。 例如，若是網站中的頁面，則 `payload.path.open` 會類似 `/bin/wcmcommand?cmd=open&path=…`。; 這沒有伺服器名稱，因此範本會以此為前提 `${host.prefix}`。
+該方 `${payload.path.open}` 法顯示工作項目裝載的路徑。 例如，若是網站中的頁面，則 `payload.path.open` 會類似 `/bin/wcmcommand?cmd=open&path=…`。;這沒有伺服器名稱，因此範本會以此為前提 `${host.prefix}`。
 
 下列變數可用於電子郵件範本中：
 
@@ -285,7 +285,7 @@ subject=<text_1>
 
 * `${payload.type}`、裝載類型
 * `${payload.path}`，裝載路徑
-* `${host.prefix}`，主機首碼，例如： http://localhost:4502
+* `${host.prefix}`，主機首碼，例如：http://localhost:4502
 
 ### 新增新語言的電子郵件範本 {#adding-an-email-template-for-a-new-language}
 
@@ -293,11 +293,11 @@ subject=<text_1>
 
 1. 在CRXDE中，新增下列檔 `<language-code>.txt` 案：
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` : 頁面通知
-   * `/etc/notification/email/default/com.day.cq.collab.forum` : 論壇通知
-   * `/etc/workflow/notification/email/default` : 工作流通知
+   * `/etc/notification/email/default/com.day.cq.wcm.core.page` :頁面通知
+   * `/etc/notification/email/default/com.day.cq.collab.forum` :論壇通知
+   * `/etc/workflow/notification/email/default` :工作流通知
 
-1. 將檔案調整為語言。
+1. 根據語言調整檔案。
 1. 儲存變更。
 
 >[!NOTE]
