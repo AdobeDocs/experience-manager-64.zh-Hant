@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 4%
@@ -60,7 +60,7 @@ ht-degree: 4%
    >
    >僅支援符合允許影像大小上限的影像。 若要求的影像大小超過限制，將會產生403個回應。
 
-1. 在「請 **求屬性」標題下** ，執行下列動作：
+1. 在「請 **[求屬性]** 」標題下，執行下列動作：
 
    * 將「請 **[!UICONTROL 求模糊化模式]** 」設 **[!UICONTROL 為「停用」]**。
    * 將「請 **[!UICONTROL 求鎖定模式」設]** 置為 **[!UICONTROL 「禁用」]**。
