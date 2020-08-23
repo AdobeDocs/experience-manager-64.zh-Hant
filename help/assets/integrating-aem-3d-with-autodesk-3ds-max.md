@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 0d7fefc0-6923-4ac3-9e90-335c08fa56f0
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 1. 在3ds Max中，按一下「 **[!UICONTROL 自訂>外掛程式管理員」]**。
 
-   找到 `FBXMAX.DLU` 並驗證其 **[!UICONTROL 狀態是]** 否已載入[!UICONTROL ****。
+   找到 `FBXMAX.DLU` 並驗證是否已 **[!UICONTROL 載入]** 「Status **[!UICONTROL （狀態）]**」。
 
    關閉 **[!UICONTROL Plug-In Manager]** （插件管理器）對話框和3ds Max。
 
