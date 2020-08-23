@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4725'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe建議運用觸控式UI，以運用最新技術。 [AEM Modernination Tools&amp;(moderniatzion-tools.md)可讓移轉更輕鬆。
+>Adobe建議運用觸控式UI，以運用最新技術。 [AEM Meduration Tools](modernization-tools.md) （AEM現代化工具）可讓移轉更輕鬆。
 
 ### 內容邏輯與轉換標籤  {#content-logic-and-rendering-markup}
 
@@ -503,7 +503,7 @@ AEM元件的結構強大而有彈性，主要考量是：
 
    在傳統對話方塊中：
 
-   * 您可以將對話框建立為 `cq:Dialog`，它將提供單個頁籤——如文本元件中的頁籤，或者如果需要多個頁籤，如同textimage元件一樣，可將對話框定義為 `cq:TabPanel`。
+   * 您可以將對話框建立為 `cq:Dialog`，它將提供單個頁籤——如文本元件中的頁籤，或者如果需要多個頁籤，如文本時間元件中的頁籤，則可以將對話框定義為 `cq:TabPanel`。
    * a `cq:WidgetCollection` ( `items`)用於為輸入欄位( `cq:Widget`)或其它頁籤( `cq:Widget`)提供基礎 此階層可加以擴充。
 
 
@@ -555,7 +555,7 @@ AEM元件的結構強大而有彈性，主要考量是：
 
 * 在內容中，這會產生保 `jcr:title` 存作者內容的屬性。
 
-定義的屬性取決於各個定義。 雖然可能比上面複雜，但它們仍然遵循相同的基本原則。
+定義的屬性取決於各個定義。 雖然可能比高，但仍遵循相同的基本原則。
 
 ## 元件層次和繼承 {#component-hierarchy-and-inheritance}
 
@@ -573,7 +573,7 @@ AEM中的元件受3種不同階層的規範：
 
    這用於將配置設定填充到子元件中，最常用於parsys方案。
 
-   例如，可在父元件上定義編輯欄按鈕、控制集佈局（編輯欄、變換）、對話框佈局（內嵌、浮動）的配置設定，並傳播到子元件。
+   例如，可在父元件上定義編輯欄按鈕、控制集佈局（編輯欄、變換）、對話框佈局（內嵌、浮動）的配置設定並傳播到子元件。
 
    中的配置設定（與編輯功能相關） `cq:editConfig` 和 `cq:childEditConfig` 傳播。
 
@@ -581,7 +581,7 @@ AEM中的元件受3種不同階層的規範：
 
    在執行時期，會依包含的順序加入。
 
-   設計人員會使用此階層，而設計人員則會依此層次來建立各種繪圖設計；包括版面資訊、css資訊、parsys中的可用元件等。
+   設計人員會使用此階層，而設計人員則會依據此階層來呈現各種設計；包括版面資訊、css資訊、parsys中的可用元件等。
 
 ## 編輯行為 {#edit-behavior}
 
@@ -768,7 +768,7 @@ AEM中的元件受3種不同階層的規範：
 
 >[!NOTE]
 >
->在觸控式使用者介面中，對話方塊一律會在案頭模式中浮動，並在行動裝置中自動以全螢幕方式開啟。
+>在觸控式使用者介面中，對話方塊一律會在案頭模式中浮動，並自動在行動裝置中以全螢幕方式開啟。
 
 以下配置定義帶有編輯按鈕的編輯欄和浮動對話框：
 
@@ -1013,7 +1013,7 @@ AEM中的元件受3種不同階層的規範：
   </tr> 
   <tr> 
    <td><code>afterchildinsert</code></td> 
-   <td>在將元件插入另一個元件（僅限容器）後，就會觸發處理常式。</td> 
+   <td>在將元件插入其他元件（僅限容器）後，就會觸發處理常式。</td> 
    <td> </td> 
   </tr> 
  </tbody> 
