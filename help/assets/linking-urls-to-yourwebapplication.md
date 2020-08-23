@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1289'
 ht-degree: 10%
@@ -22,7 +22,7 @@ ht-degree: 10%
 
 您的網站和應用程式會透過URL呼叫存取動態媒體服務。 在您發佈資產後，動態媒體會啟動參照資產的URL字串。 您可以將這些URL貼入網頁瀏覽器以進行測試。
 
-您只有在未將AEM用作WCM *時* ，才會連結至URL。 連結與內嵌——是當您想要將視訊播放器當成快顯視窗或強制視窗時使用。 如果您使用AEM做為WCM, [就直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)
+您只有在未將AEM用作WCM *時* ，才會連結至URL。 連結與內嵌——是當您想要將視訊播放器當成快顯視窗或強制視窗時使用。 如果您使用AEM做為WCM，則 [直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)
 
 若要將這些URL字串置於您的網頁和應用程式中，請從Dynamic Media複製。
 
@@ -127,26 +127,26 @@ Dynamic Media支援傳送靜態資產，這些資產不只是影像和視訊而�
 1. 在「 **[!UICONTROL Cloud Services]** 」頁面上 **[!UICONTROL ，向下捲動至「]** Dynamic Media Cloud Services **[!UICONTROL 」標題，然後點選「]** Show Configurations」。
 1. 在「 **[!UICONTROL 可用配置]**」下，點選所需配置的名稱。
 
-1. 在「動 **[!UICONTROL 態Media Cloud設定]** 」頁面的「 **[!UICONTROL 視訊服務URL」下]**，複製整個URL路徑。 您稍後在步驟中需要複製的URL路徑。
+1. 在「動 **[!UICONTROL 態Media Cloud設定]** 」頁面的「 **[!UICONTROL 視訊服務URL」下]**，複製整個URL路徑。 您稍後在步驟中將需要複製的URL路徑。
 
-   例如，URL路徑可能與下列內容類似：
+   例如，URL路徑可能會如下所示：
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
 
 1. 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。
 
    例如，如果註冊ID為 `87654321|MyCompany`，則客戶名稱為 `MyCompany`。
 
-1. 在頁面的左上角附近，點選 **[!UICONCONTROL Cloud Services**，然後點選AEM圖示並導覽至「一般> **[!UICONTROL CRXDE Lite]**」。
+1. 在頁面的左上角附近，點選「 **[!UICONTROL Cloud]Services**」，然後點選「AEM」圖示並導覽至「 **[!UICONTROL 一般> CRXDE Lite]**」。
 1. 從JCR(Java Content Repository)複製整個視訊轉譯路徑。
 
    例如，視訊的轉譯路徑可能會如下所示：
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
 
 1. 依下列順序排列複製的資訊，以形成完整的URL路徑：
 
@@ -165,11 +165,11 @@ Dynamic Media支援傳送靜態資產，這些資產不只是影像和視訊而�
 1. 在「 **[!UICONTROL 可用配置]**」下，點選所需配置的名稱。
 1. 在「動 **[!UICONTROL 態媒體雲端服務設定]** 」頁面上，執行下列動作：
 
-   * 在「 **[!UICONTROL 視訊服務URL]**」下，複製整個URL路徑。 您稍後在這些步驟中將需要複製的URL路徑。 例如，URL路徑可能與下列內容類似：
+   * 在「 **[!UICONTROL 視訊服務URL]**」下，複製整個URL路徑。 您稍後在這些步驟中將需要複製的URL路徑。 例如，URL路徑可能會如下所示：
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (上述路徑僅供圖例之用； 它不是您複製的實際路徑)。
+   (上述路徑僅供圖例之用；它不是您複製的實際路徑)。
 
    * 在「 **[!UICONTROL 註冊ID]**」下方，複製ID最後一部分中找到的客戶名稱。您稍後將需要這些步驟中複製的客戶名稱。
 
