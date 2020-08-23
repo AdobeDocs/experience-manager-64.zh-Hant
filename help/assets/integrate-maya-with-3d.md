@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '874'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 1. 將Maya執行檔資料夾的路徑添加到Windows PATH環境變數中。
 
-   例如，在Windows Server 2012上，點選 **[!UICONTROL開始>控制面板>系統與安全性>系統>進階系統設定>環境變數**。 將資料夾的完整路徑 `Maya2016\bin` 附加至系統 `Path`變數。
+   例如，在Windows Server 2012上， **[!UICONTROL Start][!UICONTROL Control Control]System[!UICONTROL > SecuritySetem]> System設定> Advanced Tap Windows Server 2012上，StartControl Control System**>Advanced面板。 將資料夾的完整路徑 `Maya2016\bin` 附加至系統 `Path`變數。
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
    請注意， `sample-3D-content.zip` 先前已下載用於驗證基本3D功能。
 
-1. 返回 **[!UICONTROL卡檢視** ，並觀察已上載資產上顯示的消息橫幅。
+1. 返回卡片 **[!UICONTROL 檢視]** ，並觀察已上傳資產上顯示的訊息橫幅。
 
    當Maya將原生格式轉換為時，將顯示「轉換格 `.MA` 式」橫幅 `.FBX`。
 
