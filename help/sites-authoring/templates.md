@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 9%
@@ -245,7 +245,7 @@ AEM現在提供兩種基本範本類型：
 >當範本啟用後，當範本作者開始進一步更新範本時，將會顯示警告。 這是為了通知使用者範本可能被參考，因此任何變更都可能會影響參考範本的頁面。
 
 1. 在「範本 **控制台**」中，選取範本。
-1. 從工 **具列中選** 擇「啟用 **」或「停用** 」，然後在確認對話方塊中再次選取。
+1. 從工 **具列中選** 擇「啟用 **」或「停用** 」，然後在確認對話方塊中再次選擇。
 1. 您現在可以在建立新頁 [面時使用範本](/help/sites-authoring/managing-pages.md#creating-a-new-page)，不過您可能會想 [要根據需求編輯範本](#editing-templates-template-authors) 。
 
 >[!NOTE]
@@ -316,7 +316,7 @@ AEM現在提供兩種基本範本類型：
 
 * [配置](#editing-a-template-layout-template-author)
 
-   您可以在這裡預先定義所需裝置格式的範本版面。 **範本製作** 的版面模式與頁面製作的 **[版面模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**]的功能相同。
+   您可以在這裡預先定義所需裝置格式的範本版面。 **範本製作的** 「版面」模式與頁面製作的「版面 **[](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** 」模式功能相同。
 
 * [頁面原則](#editing-a-template-structure-template-author)
 
@@ -445,7 +445,7 @@ AEM現在提供兩種基本範本類型：
 
    >[!NOTE]
    >
-   >如果將相同類型的多個元件新增為初始內容，則相同的原則會套用至所有元件。 這與靜態範本的「設 **[計模式](/help/sites-authoring/default-components-designmode.md)**」中的限制相同。
+   >如果將相同類型的多個元件新增為初始內容，則相同的原則會套用至所有元件。 這與靜態範本的「設 **[計模式](/help/sites-authoring/default-components-designmode.md)** 」中的限制相同。
 
    ***屬性***
 
@@ -575,7 +575,7 @@ AEM現在提供兩種基本範本類型：
 
 >[!NOTE]
 >
->**使用該範本** 所建立之頁面的編輯模式可考慮初始內容模式。 因此，策略不是在「初始內 **容」模式中定義** ，而是在「結 **[構」模式中定義](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)**。
+>**使用該範本** 所建立之頁面的編輯模式可考慮初始內容模式。 因此，策略不是在「初始內 **容」模式中定義** ，而是在「結 **[構」模式中定義](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)** 。
 
 * 標籤可供編輯的解鎖元件。 選取後，它們會有藍色邊框：
 
