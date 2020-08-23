@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2830'
+source-wordcount: '2829'
 ht-degree: 4%
 
 ---
@@ -34,7 +34,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 >[!NOTE]
 >
->如果網頁上有動態媒體元件由具有唯讀權限的使用者存取，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷； 由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
+>如果網頁上有動態媒體元件由具有唯讀權限的使用者存取，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷；由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
 >  
 >若要避免此問題，請確定AEM Sites使用者擁有必要的存取資產權限。
 
@@ -105,7 +105,7 @@ To add the dynamic media functionality to assets you use on your websites, you c
 
 >[!NOTE]
 >
->如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷； 由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
+>如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷；由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
 >  
 >若要避免此問題，請確定AEM Sites使用者擁有必要的存取資產權限。
 
@@ -154,7 +154,7 @@ You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** i
 * **[!UICONTROL 替代文字]**為關閉圖形的使用者新增影像標題。
 如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL URL, Open in]**You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟該URL。
+* **[!UICONTROL URL, Open in]**You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
 如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
 * **[!UICONTROL 寬度]** 和 **[!UICONTROL 高]**&#x200B;度：如果您希望影像大小固定，請輸入像素值。 將這些值留空可讓資產具適應性。
@@ -163,7 +163,7 @@ You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** i
 
 使用動態媒體元件，將動態視訊新增至網頁。 當您編輯元件時，您可以選擇使用預先定義的視訊檢視器預設集來播放頁面上的視訊。
 
-![chlimage_1-540](assets/chlimage_1-540.png)
+![chlimage_1-541](assets/chlimage_1-540.png)
 
 You must edit the following Dynamic Media Settings by clicking **[!UICONTROL Edit]** in the component.
 
@@ -213,7 +213,7 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 * **[!UICONTROL URL, Open in]**You can set an asset to open a link. 設定URL，並在「開啟於」中指出您要在相同視窗或新視窗中開啟它。
 如果您正在檢視影像集、回轉集或混合媒體集，則此選項不可用。
 
-* **[!UICONTROL Height** and **[!UICONTROL Width]** Enter值（以像素為單位），如果希望智慧裁切影像為固定大小。 將這些值留空可讓其適應性。
+* **[!UICONTROL 高度]** 和 **[!UICONTROL 寬]**&#x200B;度如果您要智慧型裁切影像是固定大小，請輸入像素值。 將這些值留空可讓其適應性。
 
 ### 互動式媒體元件 {#interactive-media-component}
 
@@ -223,7 +223,7 @@ You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UI
 
 >[!NOTE]
 >
->如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷； 由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
+>如果具有唯讀權限的使用者在網頁上存取動態媒體元件、互動式媒體元件或兩者，分頁和元件將無法正確呈現。 原因在於，重建頁面是為了確保元件的屬性良好，且可存取任何參考的資產和組態。 然後再次呈現頁面，導致元件中斷；由於使用者的唯讀存取權，無法重新轉譯頁面上的個別元件代碼。
 > 
 >若要避免此問題，請確定AEM Sites使用者擁有必要的存取資產權限。
 
