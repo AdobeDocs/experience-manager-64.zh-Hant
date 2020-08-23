@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '906'
 ht-degree: 0%
@@ -40,10 +40,10 @@ Adobe Sign可針對最適化表單啟用電子簽名工作流程。 電子簽名
 
 在具備必要條件後，請執行下列步驟，在「作者」例項上以AEM Forms設定Adobe Sign:
 
-1. 在AEM Forms作者例項上，導覽至「工 **[!UICONTROL 具&#x200B;**![槌](assets/hammer.png)>一般**>設定瀏&#x200B;****]**覽器」。
+1. 在AEM Forms作者例項上，導覽至「工 **[!UICONTROL 具**![槌](assets/hammer.png) >一般 **>設定瀏****]**&#x200B;覽器」。
 1. 在「設定瀏 **[!UICONTROL 覽器]** 」頁面上，點 **[!UICONTROL 選「建立」]**。
 1. 在「建 **[!UICONTROL 立設定]** 」對話方塊中，指定設定的 **[!UICONTROL Title]** ，啟用「 **[!UICONTROL Cloud設定」]**、「建立 **** Create」。 它會為雲端服務建立組態容器。
-1. 導覽至「 **[!UICONTROL 槌子&#x200B;**>![雲端服務](assets/hammer.png)>******]**Adobe Sign Sign Container」，並選取您在上述步驟中建立的組態容器。
+1. 導覽至「 **[!UICONTROL 槌子** > ![雲端服務](assets/hammer.png) > ******]** Adobe Sign Sign Container」，並選取您在上述步驟中建立的組態容器。
 
    >[!NOTE]
    >
@@ -66,11 +66,11 @@ Adobe Sign可針對最適化表單啟用電子簽名工作流程。 電子簽名
    * widget_write
    * workflow_read
 
-   如需設定Adobe Sign應用程式的OAuth設定並取得金鑰的逐步資訊，請參閱應用程式開發人員文 [件的設定](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) oAuth設定。
+   如需設定Adobe Sign應用程式的OAuth設定並取得索引鍵的逐步資訊，請參閱應用程式開發人員文 [件的設定](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/configure_oauth.md) oAuth設定。
 
    ![OAuth設定](assets/oauth_config.png)
 
-1. 返回「建立 **[!UICONTROL Adobe Sign設定」頁面]** 。 在「設 **[!UICONTROL 定]** 」標籤中， **!UICONTROL OAuth URL]**欄位提及下列預設URL:
+1. 返回「建立 **[!UICONTROL Adobe Sign設定」頁面]** 。 在「設 **[!UICONTROL 定]** 」標籤中， **[!UICONTROL OAuth URL]** 欄位提及下列預設URL:
 
    `https://secure.na1.echosign.com/public/oauth`
 
@@ -78,7 +78,7 @@ Adobe Sign可針對最適化表單啟用電子簽名工作流程。 電子簽名
 
    **na1是指** 預設的資料庫共用。
 
-   可以修改資料庫共用的值。 重新啟動伺服器，以便能夠為資料庫共用使用新值。
+   您可以修改資料庫共用的值。 重新啟動伺服器，以便能夠為資料庫共用使用新值。
 
 1. 指定 **[!UICONTROL 用戶端ID]** （也稱為應用程式ID）和用戶 **[!UICONTROL 端密碼]**。 選取「 **[!UICONTROL Enable Adobe Sign for attachments andlo]** （啟用附件的Adobe Sign）」選項，將附加至最適化表單的檔案附加至要傳送以供簽署的對應Adobe Sign檔案。
 
