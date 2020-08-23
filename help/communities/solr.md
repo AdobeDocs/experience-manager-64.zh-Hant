@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 2%
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 Apache Solr [(](https://lucene.apache.org/solr/) Apache Solr [)安裝可以通過使用不同的](../../help/sites-deploying/data-store-config.md) 集合在節點儲存 [(Oak)和](working-with-srp.md) 公共儲存(SRP)之間共用。
 
-如果Oak和SRP系列都被大量使用，則可能會因效能原因安裝第二個Solr。
+如果Oak和SRP系列都被大量使用，則可基於效能原因安裝第二個Solr。
 
 對於生產環境， [SolrCloud模式比獨立模式](#solrcloud-mode) （單一本機Solr設定）提供了更佳的效能。
 
@@ -67,7 +67,7 @@ JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CM
 
 在SolrCloud模式中執行時，在安裝MLS之前，必須使用並瞭解下列SolrCloud設定命令。
 
-#### 1. 上傳組態至ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### 1.上傳組態至ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 引用:\
 [https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
@@ -80,11 +80,10 @@ sh./scripts/cloud-scripts/zkcli.sh \\
 -solrhome *solr-home-path* \\
 -confdir *config-dir*
 
-#### 2. 建立系列 {#create-a-collection}
+#### 2.建立系列 {#create-a-collection}
 
 引用:\
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create\
-](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
 
 使用狀況:\
 。/bin/solr create \\
@@ -95,7 +94,7 @@ sh./scripts/cloud-scripts/zkcli.sh \\
 -s *分片數* \\
 -rf *副本數*
 
-#### 3. 將系列連結至組態集 {#link-a-collection-to-a-configuration-set}
+#### 3.將系列連結至組態集 {#link-a-collection-to-a-configuration-set}
 
 將系列連結至已上傳至ZooKeeper的設定。
 
@@ -117,16 +116,16 @@ AEM社群的MLS可以是標準MLS或進階MLS。 標準MLS僅包含Solr組態設
 
 標準MLS包含下列語言的內容搜尋增強功能：
 
-* 英文： 用於嘗試匹配單詞導子的改進設定器
-* 日文： 改良的半寬字元日文Token化
+* 英文：用於嘗試匹配單詞導子的改進設定器
+* 日文：改良的半寬字元日文Token化
 
 進階MLS包含下列語言的內容搜尋增強功能：
 
-* 英文： 用浮毛機取代修腳機
-* 德文： 添加的解壓縮器
-* 法文： 新增的條件處理
-* 簡體中文： 新增更聰明的Tokenizer
-* 各種語言： 新增更精簡、停止字詞清單和標準化程式。
+* 英文：用浮毛機取代修腳機
+* 德文：添加的解壓縮器
+* 法文：新增的條件處理
+* 簡體中文：新增更聰明的Tokenizer
+* 各種語言：新增更精簡、停止字詞清單和標準化程式。
 
 Advanced MLS支援下列33種語言。
 
@@ -145,7 +144,7 @@ Advanced MLS支援下列33種語言。
 
 #### AEM 6.1 Solr搜尋、標準MLS與進階MLS的比較 {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**注意**: AEM 6.1指AEM 6.1 Communities FP3及更早版本。
+**注意**:AEM 6.1指AEM 6.1 Communities FP3及更早版本。
 
 ![chlimage_1-283](assets/chlimage_1-283.png)
 
@@ -162,9 +161,9 @@ Solr 5的標準MLS檔案(schema.xml、solrconfig.xml)
 
 標準MLS檔案會儲存在AEM儲存庫中。
 
-**注意**: Solr檔案儲存在msrp/資料夾中，但也用於DSRP（不需要變更）。
+**注意**:Solr檔案儲存在msrp/資料夾中，但也用於DSRP（不需要變更）。
 
-**下載指示**: 以 `solrX` 或 `solr4``solr5` 適當取代
+**下載指示**:以 `solrX` 或 `solr4``solr5` 適當取代
 
 1. 使用CRXDE|Lite，找到
 
@@ -188,8 +187,8 @@ Solr 5的標準MLS檔案(schema.xml、solrconfig.xml)
 
    1. 將現有Solr配置目錄的內容復 *制到new-config-dir*
 
-      * 對於Solr4: copy *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
-      * 針對Solr5: copy *solr-install-dir*/server/solr/configsets/data_driven_schema_configs/&amp;ast;
+      * 對於Solr4:copy *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
+      * 針對Solr5:copy *solr-install-dir*/server/solr/configsets/data_driven_schema_configs/&amp;ast;
    1. 將下載的 **schema.xml****和solrconfig.xml複製** 到new-config-dir ** ，以覆寫現有檔案
 
 
@@ -249,10 +248,10 @@ Solr 5的標準MLS檔案(schema.xml、solrconfig.xml)
       * 建立子檔案夾stopwords/和lang/
    1. 將現有Solr配置目錄的內容復 *制到new-config-dir*
 
-      * 對於Solr4: Copy *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
-      * 針對Solr5: 復 *制solr-install-dir*/server/solr/configsets/data_driven_schema_configs/&amp;ast;
+      * 對於Solr4:Copy *solr-install-dir*/example/solr/collection1/conf/&amp;ast;
+      * 針對Solr5:復 *制solr-install-dir*/server/solr/configsets/data_driven_schema_configs/&amp;ast;
    1. 將解壓縮 **的schema.xml****和solrconfig.xml複製** 到new-config-dir ** ，以覆寫現有檔案
-   1. 針對Solr5: 將 *solr_install_dir*/server/solr/configsets/sample_techproducts_configs/conf/lang/&amp;ast;.txt&quot;複製到 *new-config-dir*/lang/
+   1. 針對Solr5:將 *solr_install_dir*/server/solr/configsets/sample_techproducts_configs/conf/lang/&amp;ast;.txt&quot;複製到 *new-config-dir*/lang/
    1. 將提取 **的stopwords/** folder複製 *到new-config-dir* ，生成 *new-config-dir*/stopwords/&amp;ast;.txt
 
 
@@ -260,8 +259,8 @@ Solr 5的標準MLS檔案(schema.xml、solrconfig.xml)
 1. [將新組態上傳](#upload-a-configuration-to-zookeeper) 至ZooKeeper
 1. 複製新的 **配置檔案/** 資料夾……
 
-   * 對於Solr4: 複製到每個節點的資源／資料夾
-   * 針對Solr5: 複製到每個Solr安裝的伺服器／資源／資料夾。 如果所有節點都位於同一個Solr安裝目錄中，則僅執行一次此步驟。
+   * 對於Solr4:複製到每個節點的資源／資料夾
+   * 針對Solr5:複製到每個Solr安裝的伺服器／資源／資料夾。 如果所有節點都位於同一個Solr安裝目錄中，則僅執行一次此步驟。
 
 1. 在SolrCloud中 **每個節點** 的solr-home目錄（包含solr.xml）中建立lib/資料夾。 將jar從以下位置複製到每個節點上的新lib/資料夾：
 
@@ -294,7 +293,7 @@ Solr 5的標準MLS檔案(schema.xml、solrconfig.xml)
    * 。/bin/solr啟動
    * 。/bin/solr create_core -c collection1 -d sample_techproducts_configs
 
-* 運行安裝指令碼： 安 [裝-v 4|5] - [d solhome] -c收集路徑 []:
+* 運行安裝指令碼：安 [裝-v 4|5] - [d solhome] -c收集路徑 []:
 
    * -d solrhome
 
@@ -328,8 +327,8 @@ Solr 5的標準MLS檔案(schema.xml、solrconfig.xml)
 
 solrconfig.xml **** 檔案可控制自動提交間隔和搜尋可見度，而且需要測試和調整。
 
-&lt;autoCommit>: 預設情況下， AutoCommit間隔（對穩定儲存的硬提交）設定為15秒。 搜索可見性預設為使用預提交索引。
+&lt;autoCommit>:預設情況下， AutoCommit間隔（對穩定儲存的硬提交）設定為15秒。 搜索可見性預設為使用預提交索引。
 
 要將搜索更改為使用更新的索引來反映由於提交而發生的更改，請將包含的&lt;openSearcher>更改為true。
 
-&lt;autoSoftCommit>: 「軟」提交可確保更改可見（索引已更新），但不確保更改同步到穩定儲存（硬提交）。 結果是效能的提升。 預設情況下，&lt;autoSoftCommit>在包含的&lt;maxTime>設定為-1時被禁用。
+&lt;autoSoftCommit>:「軟」提交可確保更改可見（索引已更新），但不確保更改同步到穩定儲存（硬提交）。 結果是效能的提升。 預設情況下，&lt;autoSoftCommit>在包含的&lt;maxTime>設定為-1時被禁用。
