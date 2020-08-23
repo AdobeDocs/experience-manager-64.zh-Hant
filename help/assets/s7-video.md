@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1670'
+source-wordcount: '1669'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ Dynamic Media Classic視訊整合將最佳化視訊的觸及面延伸到所有�
 * FFMPEG縮圖
 * FFMPEG編碼
 
-請注意，啟用和設定Dynamic Media Classic整合併不會從現成可用的DAM擷取工作流程自動移除或停用這兩個工作流程步驟。 如果您已在AEM中使用以FFMPEG為基礎的視訊編碼，則您可能已在製作環境中安裝FFMPEG。 在此例中，使用DAM擷取的新視訊會編碼兩次： 一次是從FFMPEG編碼器，一次是從Dynamic Media Classic整合。
+請注意，啟用和設定Dynamic Media Classic整合併不會從現成可用的DAM擷取工作流程自動移除或停用這兩個工作流程步驟。 如果您已在AEM中使用以FFMPEG為基礎的視訊編碼，則您可能已在製作環境中安裝FFMPEG。 在此例中，使用DAM擷取的新視訊會編碼兩次：一次是從FFMPEG編碼器，一次是從Dynamic Media Classic整合。
 
 如果您已在AEM中設定FFMPEG視訊編碼並安裝FFMPEG,Adobe建議您從DAM擷取工作流程中移除兩個FFMPEG工作流程。
 
@@ -95,7 +95,7 @@ Scene7 Video元件支援下列格式：
 
 ## Updating viewer and encoding presets {#updating-viewer-and-encoding-presets}
 
-如果您因為Scene7中的預設集已更新，所以需要在AEM中更新視訊的檢視器和編碼預設集，請導覽至雲端設定中的Scene7設定，然後按一下「 **[!UICONTROL Update the viewer and encoding presets]**」。
+如果您因為Scene7中的預設集已更新，所以需要更新AEM中視訊的檢視器和編碼預設集，請導覽至雲端設定中的Scene7設定，然後按一下「 **[!UICONTROL Update the viewer and encoding presets]**」。
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -122,7 +122,7 @@ Scene7視訊元件僅適用於Scene7視訊。 基礎元件可處理從AEM（使�
 
 >[!NOTE]
 >
->S7視訊元件現成可用，使用通用視訊設定檔。 不過，您可以在Scene7中執行下列其中一項作業，取得AEM使用的HTML5視訊播放器： 複製現成可用的HTML5視訊播放程式的內嵌程式碼，並將它放入您的AEM頁面。
+>S7視訊元件現成可用，使用通用視訊設定檔。 不過，您可以在Scene7中執行下列其中一項作業，取得AEM使用的HTML5視訊播放器：複製現成可用的HTML5視訊播放程式的內嵌程式碼，並將它放入您的AEM頁面。
 
 ## AEM Video元件 {#aem-video-component}
 
@@ -150,7 +150,7 @@ Scene7視訊元件僅適用於Scene7視訊。 基礎元件可處理從AEM（使�
 >
 >必須啟動新視訊設定檔及對其所做的變更才能發佈。
 
-1. 在AEM中，點選 **[!UICONTROL工具>設定控制台**。
+1. 在AEM中，點選「工 **[!UICONTROL 具]>[!UICONTROL 設定主控台]**」。
 1. 在「設 **[!UICONTROL 定控制台]** 」中，導 **[!UICONTROL 覽至導覽樹中的「工具> DAM >視訊描述檔]** 」。
 1. 建立新的S7視訊設定檔。 在新 **[!UICONTROL ...]** 功能表中，選 **[!UICONTROL 取「建立頁面]** 」，然後選取「Scene7視訊描述檔」範本。 為新視訊描述檔頁面指定名稱，然後按一下「 **[!UICONTROL 建立]**」。
 
