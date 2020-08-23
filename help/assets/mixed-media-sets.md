@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1476'
 ht-degree: 17%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 17%
 >
 >如需「資產」使用者介面的詳細資訊，請參 [閱「使用Touch UI管理資產」](managing-assets-touch-ui.md)。
 
-## 快速入門： 混合媒體集 {#quick-start-mixed-media-sets}
+## 快速入門：混合媒體集 {#quick-start-mixed-media-sets}
 
 要使用混合媒體集快速啟動並運行，請執行以下步驟：
 
@@ -153,7 +153,7 @@ ht-degree: 17%
    >* You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
-1. 完成 **編輯時點選[!UICONTROL** Save。
+1. 編輯完 **[!UICONTROL 成時]** ，點選「儲存」。
 
    >[!NOTE]
    >
