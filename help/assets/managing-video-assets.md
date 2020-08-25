@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
+source-git-commit: 2a24d7b9232f39d47d79d995251a14beb0c0f666
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '795'
 ht-degree: 8%
 
 ---
@@ -38,7 +38,7 @@ AEM Assets會使用副檔名MP4產生視訊資產的預覽。 如果資產的格
 
 ## 上傳大於2 GB資產的設定 {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-依預設，AEM資產不會讓您上傳任何大於2 GB的資產，因為檔案大小限制。 不過，您可以進入CRXDE Lite並在目錄下建立節點，以覆蓋此限 `/apps` 制。 節點必須具有相同的節點名稱、目錄結構和順序的可比節點屬性。
+依預設，AEM資產不會讓您上傳任何大於2 GB的資產，因為檔案大小限制。 不過，您可以進入CRXDE Lite並在目錄下建立節點，以覆蓋此限 `/apps` 制。 節點必須具有相同的節點名稱、目錄結構和可比的節點順序屬性。
 
 除了AEM Assets組態外，請變更下列組態以上傳大型資產：
 
@@ -58,10 +58,8 @@ AEM Assets會使用副檔名MP4產生視訊資產的預覽。 如果資產的格
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. 重新整理瀏覽器。 覆蓋節點 `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` 被選取。
-1. 在「屬 **[!UICONTROL 性]** 」索引標籤中，輸入適當的值（以位元組為單位），將大小限制增加到所需大小。 例如，輸入下列值，將大小限制提高到30 GB:
-
-   `{sizeLimit : "32212254720"}`
+1. 重新整理瀏覽器。 覆蓋節點 `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` 被選取。
+1. 在「屬 **[!UICONTROL 性]** 」索引標籤中，輸入適當的值（以位元組為單位），將大小限制增加到所需大小。 例如，輸入 `32212254720` 值可將大小限制提高到30 GB。
 
 1. 在工具列中，點選「全 **[!UICONTROL 部儲存」]**。
 1. 在AEM中，點選「 **[!UICONTROL 工具 > 作業 > Web Console]**」。
