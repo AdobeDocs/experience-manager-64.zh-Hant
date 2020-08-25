@@ -3,9 +3,9 @@ title: 中的資產HTTP API [!DNL Adobe Experience Manager]。
 description: 使用中的HTTP API建立、讀取、更新、刪除、管理數位資產 [!DNL Adobe Experience Manager Assets]。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1552'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,9 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 在關閉 [!UICONTROL 時間後]，資產及其轉譯無法透過網頁介 [!DNL Assets] 面和HTTP API使用。 如果「開機時間」是未來，或「關機時間 [!UICONTROL 」是過去] ,API會傳回404錯誤訊息。
 
+>[!CAUTION]
+>
+>[HTTP API會更新命名空間中的中繼資料](#update-asset-metadata) ，並提供更 `jcr` 新屬性。 不過，Experience Manager使用者介面會更新命名空間中的中繼資料 `dc` 屬性。
 
 ## Data model {#data-model}
 
@@ -33,7 +36,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 資料夾與傳統檔案系統中的目錄類似。 它們是其他資料夾或斷言的容器。 資料夾具有以下元件：
 
-**實體**: 資料夾的實體是其子元素，可以是資料夾和資產。
+**實體**:資料夾的實體是其子元素，可以是資料夾和資產。
 
 **屬性**:
 
@@ -46,9 +49,9 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 **「連結** 」檔案夾會公開三個連結：
 
-* `self`: 連結到自己。
-* `parent`: 連結至父資料夾。
-* `thumbnail`: （選用）資料夾縮圖影像的連結。
+* `self`:連結到自己。
+* `parent`:連結至父資料夾。
+* `thumbnail`:（選用）資料夾縮圖影像的連結。
 
 ### 資產 {#assets}
 
@@ -60,23 +63,23 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 在資 [!DNL Experience Manager] 料夾中包含下列元件：
 
-* 實體： 資產的子系是其轉譯。
+* 實體：資產的子系是其轉譯。
 * 屬性.
 * 連結.
 
 資產HTTP API包含下列功能：
 
-* 檢索資料夾清單。
-* 建立資料夾。
-* 建立資產。
-* 更新資產二進位檔。
-* 更新資產中繼資料。
-* 建立資產轉譯。
-* 更新資產轉譯。
-* 建立資產註解。
-* 複製資料夾或資產。
-* 移動資料夾或資產。
-* 刪除資料夾、資產或轉譯。
+* [檢索資料夾清單](#retrieve-a-folder-listing)。
+* [建立資料夾](#create-a-folder)。
+* [建立資產](#create-an-asset)。
+* [更新資產二進位檔](#update-asset-binary)。
+* [更新資產中繼資料](#update-asset-metadata)。
+* [建立資產轉譯](#create-an-asset-rendition)。
+* [更新資產轉譯](#update-an-asset-rendition)。
+* [建立資產註解](#create-an-asset-comment)。
+* [複製資料夾或資產](#copy-a-folder-or-asset)。
+* [移動資料夾或資產](#move-a-folder-or-asset)。
+* [刪除資料夾、資產或轉譯](#delete-a-folder-asset-or-rendition)。
 
 >[!NOTE]
 >
@@ -94,13 +97,13 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 **要求**: `GET /api/assets/myFolder.json`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 200 —— 好——成功。
 * 404 —— 找不到——資料夾不存在或無法訪問。
 * 500 —— 內部伺服器錯誤——如果有其它問題。
 
-**回應**: 傳回的實體類別為資產或資料夾。 包含實體的屬性是每個實體的完整屬性集的子集。 為了取得實體的完整表示法，用戶端應擷取連結所指向之URL的內容，連結 `rel` 為 `self`:
+**回應**:傳回的實體類別為資產或資料夾。 包含實體的屬性是每個實體的完整屬性集的子集。 為了取得實體的完整表示法，用戶端應擷取連結所指向之URL的內容，連結 `rel` 為 `self`:
 
 ## 建立資料夾 {#create-a-folder}
 
@@ -115,7 +118,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
 * `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 201 —— 建立——成功建立。
 * 409 —— 衝突——如果資料夾已存在。
@@ -126,14 +129,14 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 將提供的檔案置於提供的路徑，以在DAM儲存庫中建立資產。 如果提 `*` 供的是節點名稱，則servlet將使用參數名稱或檔案名作為節點名稱。
 
-**參數**: 參數是 `name` 資產名稱和檔 `file` 案參考的參數。
+**參數**:參數是 `name` 資產名稱和檔 `file` 案參考的參數。
 
 **要求**
 
 * `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
 * `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 201 —— 已建立——如果資產已成功建立。
 * 409 —— 衝突——如果資產已存在。
@@ -146,7 +149,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 **要求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 200 —— 確定——如果資產已成功更新。
 * 404 —— 找不到——如果在提供的URI中找不到或訪問資產，請執行此操作。
@@ -157,27 +160,48 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 更新資產中繼資料屬性。 如果您更新命名空間中的任 `dc:` 何屬性，API會更新命名空間中的相同 `jcr` 屬性。 API不會同步兩個名稱空間下的屬性。
 
-**要求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**要求**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 200 —— 確定——如果資產已成功更新。
 * 404 —— 找不到——如果在提供的URI中找不到或訪問資產，請執行此操作。
 * 412 - PRECONDITATION FAILED —— 如果找不到或存取根系列。
 * 500 —— 內部伺服器錯誤——如果有其它問題。
 
+### 同步中繼資料更新，在與命名空 `dc` 間之 `jcr` 間 {#sync-metadata-between-namespaces}
+
+API方法會更新命名空間中的中繼資料 `jcr` 屬性。 使用Touch-UI進行的更新會變更命名空間中的中繼資料 `dc` 屬性。 若要同步與命名空間之 `dc` 間的中 `jcr` 繼資料值，您可以建立工作流程，並設定Experience Manager在資產編輯時執行工作流程。 使用ECMA指令碼來同步所需的中繼資料屬性。 下列範例指令碼會同步與之間的標題 `dc:title` 字串 `jcr:title`。
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
+
 ## 建立資產轉譯 {#create-an-asset-rendition}
 
 為資產建立新的資產轉譯。 如果未提供請求參數名稱，則會使用檔案名稱做為轉譯名稱。
 
-**參數**: 參數是 `name` 格式副本的名稱， `file` 並作為檔案參考。
+**參數**:參數是 `name` 格式副本的名稱， `file` 並作為檔案參考。
 
 **要求**
 
 * `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
 * `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 201 —— 已建立——如果已成功建立轉譯。
 * 404 —— 找不到——如果在提供的URI中找不到或訪問資產，請執行此操作。
@@ -190,7 +214,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 **要求**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 200 —— 確定——如果已成功更新轉譯。
 * 404 —— 找不到——如果在提供的URI中找不到或訪問資產，請執行此操作。
@@ -201,11 +225,11 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 建立新資產註解。
 
-**參數**: 參數是 `message` 注釋的訊息內文和JSON `annotationData` 格式的附註資料。
+**參數**:參數是 `message` 注釋的訊息內文和JSON `annotationData` 格式的附註資料。
 
 **要求**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 201 —— 已建立——如果已成功建立注釋。
 * 404 —— 找不到——如果在提供的URI中找不到或訪問資產，請執行此操作。
@@ -216,7 +240,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 複製位於提供路徑中的可用資料夾或資產，以連至新目標。
 
-**請求標題**: 參數包括：
+**請求標題**:參數包括：
 
 * `X-Destination` - API解決方案範圍內的新目標URI，用於將資源複製到。
 * `X-Depth` -或 `infinity` 者 `0`。 使用 `0` 僅複製資源及其屬性，而不複製其子項。
@@ -224,7 +248,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 **要求**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 201 —— 已建立——如果資料夾／資產已複製到非現有目標。
 * 204 —— 無內容——如果資料夾／資產已複製至現有目的地。
@@ -235,7 +259,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 將指定路徑上的資料夾或資產移動到新目標。
 
-**請求標題**: 參數包括：
+**請求標題**:參數包括：
 
 * `X-Destination` - API解決方案範圍內的新目標URI，用於將資源複製到。
 * `X-Depth` -或 `infinity` 者 `0`。 使用 `0` 僅複製資源及其屬性，而不複製其子項。
@@ -243,7 +267,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 **要求**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 201 —— 已建立——如果資料夾／資產已複製到非現有目標。
 * 204 —— 無內容——如果資料夾／資產已複製至現有目的地。
@@ -260,7 +284,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 * `DELETE /api/assets/myFolder/myAsset.png`
 * `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-**回應碼**: 響應代碼為：
+**回應碼**:響應代碼為：
 
 * 200 —— 確定——如果資料夾已成功刪除。
 * 412 - PRECONDITATION FAILED —— 如果找不到或存取根系列。
