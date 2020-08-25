@@ -3,9 +3,9 @@ title: 如何編輯或新增中繼資料
 description: 瞭解AEM Assets中的資產中繼資料，以及編輯資產中繼資料的各種方式。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '483'
 ht-degree: 7%
 
 ---
@@ -54,3 +54,11 @@ ht-degree: 7%
 
 1. 若要新增命名空間，請按一下或點選 **[!UICONTROL 底部的]** 「新增」。
 1. 在XML命名空間約定中指定自訂命名空間（以URI的形式指定ID及ID的相關首碼），然後按一下或點選「儲 **[!UICONTROL 存」]**。
+
+## 提示與限制 {#best-practices-limitations}
+
+* 透過Touch-UI更新的中繼資料會變更命名空間中的中繼資料 `dc` 屬性。 透過HTTP API進行的任何更新都會變更命名空間中的中繼資料 `jcr` 屬性。 瞭解 [如何使用HTTP API更新中繼資料](/help/assets/mac-api-assets.md#update-asset-metadata)。
+
+>[!MORELIKETHIS]
+>
+>* [關於資產中的中繼資料及其需求](metadata.md)
