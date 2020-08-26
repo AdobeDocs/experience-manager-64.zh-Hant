@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
 workflow-type: tm+mt
 source-wordcount: '2507'
 ht-degree: 0%
@@ -28,11 +28,11 @@ AEM Forms應用程式的原始碼可供客戶透過「軟體散發」取得。 �
 
 iOS、Android和Windows裝置支援AEM Forms應用程式。 您可以從Google Play、App Store的iOS和Windows市集的Windows，安裝適用於Android的AEM Forms應用程式。
 
-    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 若要在iOS、Android或Windows裝置上安裝、自訂和散發應用程式，請參閱「自訂、建 [立和散發AEM Forms應用程式」](#customize-build-distribute)。
 
@@ -53,7 +53,7 @@ AEM Forms應用程式需要AEM Forms伺服器。 使用者可在AEM Forms中演�
 
 ### 獨立表單或AEM Forms應用程式與伺服器搭配使用，不含AEM Forms Workflow {#standalone-forms-or-aem-forms-app-with-servers-without-aem-forms-workflow}
 
-未使用AEM Forms Workflow的AEM Forms伺服器是OSGi上的AEM Forms，或是獨立行動表單或最適化表單。 AEM Forms應用程式可與您的AEM Forms實作在 [OSGi上運作](/help/sites-deploying/configuring-osgi.md)。 您為AEM Forms應用程式啟用和發佈的表單，都可在您的應用程式中使用。
+未使用AEM Forms Workflow的AEM Forms伺服器是OSGi上的AEM Forms，或是獨立行動表單或最適化表單。 AEM Forms應用程式可與您在 [OSGi上的AEM Forms實作搭](/help/sites-deploying/configuring-osgi.md)配使用。 您為AEM Forms應用程式啟用和發佈的表單，都可在您的應用程式中使用。
 
 表單會下載到您的應用程式中，並可離線使用。 例如，您經營的是一家銀行，而客戶填寫了您網站上的應用程式。 應用程式是可接受客戶資訊並儲存以供審核的調適性表單。 管理員會檢閱表單，並在AEM作者例項中建立驗證表單。 管理員可啟用表單與AEM Forms應用程式的同步，並發佈它。 如果驗證表單可在AEM Forms應用程式中使用，您的現場代理可以使用行動裝置來驗證客戶的詳細資訊。 行動裝置與伺服器同步，驗證表單會載入應用程式中。 您的現場工程師可以造訪客戶、驗證詳細資訊、將資料儲存為草稿，或提交驗證表單。 每當應用程式連線時，表單就會與伺服器同步。
 
@@ -153,7 +153,7 @@ AEM Forms應用程式支援動態適應使用者輸入的最適化表單。 也�
 
 AEM Forms應用程式提供行動解決方案，讓現場工作人員處理指派給他們的表單。 應用程式會從伺服器快取完整資料，並借由將所有工作儲存在本機，提供有效率的使用者體驗。 磁碟中的資料通過及時同步更新發送到伺服器。
 
-AEM Forms應用程式是以PhoneGap 5.0為基礎的應用程式，其中Backbone模型可有效率地用來透過檢視呈現儲存在模型中的資料。 所有原生作業都是透過PhoneGap外掛程式執行。
+AEM Forms應用程式是以PhoneGap 5.0為基礎的應用程式，Backbone模型可有效率地用來透過檢視呈現儲存在模型中的資料。 所有原生作業都是透過PhoneGap外掛程式執行。
 
 ## 自訂、建立和散發AEM Forms應用程式 {#customize-build-distribute}
 
@@ -167,11 +167,11 @@ AEM Forms應用程式可輕鬆自訂，以符合組織特定需求。 應用程�
 
 您可以自訂您的應用程式：
 
-**品牌**: 在AEM Forms應用程式中變更應用程式圖示、應用程式名稱、啟動影像和頁面。 您也可以變更文字，將應用程式當地語系化至特定地區。 如需AEM Forms應用程式品牌化的詳細資訊，請參閱「品牌 [化自訂」](/help/forms/using/branding-customization.md)。
+**品牌**:在AEM Forms應用程式中變更應用程式圖示、應用程式名稱、啟動影像和頁面。 您也可以變更文字，將應用程式當地語系化至特定地區。 如需AEM Forms應用程式品牌化的詳細資訊，請參閱「品牌 [化自訂」](/help/forms/using/branding-customization.md)。
 
-**主題**: 在AEM Forms應用程式使用者介面中變更顏色、字型和間距等樣式。 如需詳細資訊，請參閱 [主題自訂](/help/forms/using/theme-customization.md)。
+**主題**:在AEM Forms應用程式使用者介面中變更顏色、字型和間距等樣式。 如需詳細資訊，請參閱 [主題自訂](/help/forms/using/theme-customization.md)。
 
-**手勢**: 在AEM Forms應用程式使用者介面中變更手勢，例如向右滑動和向左滑動。 如需詳細資訊，請參閱「手 [勢自訂」](/help/forms/using/gesture-customization.md)。
+**手勢**:在AEM Forms應用程式使用者介面中變更手勢，例如向右滑動和向左滑動。 如需詳細資訊，請參閱「手 [勢自訂」](/help/forms/using/gesture-customization.md)。
 
 如需設定AEM Forms應用程式專案以進行自訂的詳細資訊，請參閱：
 
