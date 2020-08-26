@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
@@ -33,9 +33,10 @@ ht-degree: 2%
 使用CRXDE Lite:
 
 <!--Resolve steps below-->
-    *名稱： `sling:resourceSuperType&#39;
-    *類型： 「字串」
-    *值： `foundation/components/page`
+
+* 名稱: `sling:resourceSuperType`
+* 類型: `String`
+* 值: `foundation/components/page`
 
 1. 按一下綠色 **[!UICONTROL [+]Add]**
 1. 按一下「 **[!UICONTROL 全部儲存」]**
@@ -116,7 +117,7 @@ ht-degree: 2%
 
 1. 按一下「 **[!UICONTROL 全部儲存」]**
 
-**以編輯模式在瀏覽器中檢視頁面：**
+**在編輯模式下在瀏覽器中檢視頁面：**
 
 * 標準UI: [http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
 
