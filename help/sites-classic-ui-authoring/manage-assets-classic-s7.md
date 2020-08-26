@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 在AEM Classic UI中，按一下「 **[!UICONTROL Digital Assets]** 」以存取數位資產管理員。
 
-1. 從您要發佈至Dynamic Media Classic的目標資料夾中選取資產（或資產）或資料夾，然後按一下滑鼠右鍵，然後選取「 **[!UICONTROL 發佈至Dynamic Media Classic」]**。 或者，您也可以從「**工 **[!UICONTROL 具」選單中選取「發佈至動態媒體經典版」]** ([!UICONTROL Publish to Dynamic Media Classic)] 。
+1. 從您要發佈至Dynamic Media Classic的目標資料夾中選取資產（或資產）或資料夾，然後按一下滑鼠右鍵，然後選取「 **[!UICONTROL 發佈至Dynamic Media Classic」]**。 或者，您也可以從「工 **[!UICONTROL 具」選單選取「發佈至動態媒體]****[!UICONTROL 經典]** 」。
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
