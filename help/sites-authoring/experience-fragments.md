@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 7%
@@ -78,7 +78,7 @@ ht-degree: 7%
 
 建立資料夾允許您：
 
-* 為您的體驗片段建立有意義的結構； 例如，根據分類
+* 為您的體驗片段建立有意義的結構；例如，根據分類
 
    >[!NOTE]
    >
@@ -168,7 +168,7 @@ ht-degree: 7%
 
 1. 輸入 **[!UICONTROL 體驗]**&#x200B;片段的屬性。
 
-   標 **[!UICONTROL 題]** 是必填的。 如果名 **[!UICONTROL 稱]** (Name)留空，則會從標題( **[!UICONTROL Title)中衍生出來]**。
+   「標 **[!UICONTROL 題]** 」為強制。 如果名 **[!UICONTROL 稱]** (Name)留空，則會從標題( **[!UICONTROL Title)中衍生出來]**。
 
    ![xf-authoring-03](assets/xf-authoring-03.png)
 
@@ -189,7 +189,7 @@ ht-degree: 7%
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. 從組 **[!UICONTROL 件工具欄](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**中選擇「配置」。
+1. 從組 **[[!UICONTROL 件工具欄]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** 中選擇「配置」。
 1. 新增資 **[!UICONTROL 產]** ，並視需要 **[!UICONTROL 定義屬性]** 。
 1. 使用「完成」(勾選 **[!UICONTROL 圖示]** )確認定義。
 1. 視需要新增更多元件。
@@ -212,7 +212,7 @@ ht-degree: 7%
 
    * **[!UICONTROL 範本]**
    * **[!UICONTROL 標題]**
-   * **[!UICONTROL 名稱]**; 如果保留空白，則會從「標題」衍生
+   * **[!UICONTROL 名稱]**;如果保留空白，則會從「標題」衍生
    * **[!UICONTROL 說明]**
    * **[!UICONTROL 變數標記]**
 
@@ -234,7 +234,7 @@ ht-degree: 7%
 
    ![xf-authoring-09](assets/xf-authoring-09.png)
 
-1. 將實際的體驗片段新增至元件例項； 其中：
+1. 將實際的體驗片段新增至元件例項；其中：
 
    * 從「資產瀏覽器」拖曳必要片段至元件
    * Select **[!UICONTROL Configure]** from the component toolbar and specify the fragment to use, confirm with **Done** (tick)
