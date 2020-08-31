@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Forms使用指南
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 1%
 
 ---
@@ -324,7 +324,7 @@ ht-degree: 1%
 + 將AEM Forms與Experience Cloud解決方案整合 {#integrate-aem-forms-with-experience-cloud-solutions}
    + [在AEM Forms中建立目標體驗](/help/forms/using/experience-targeting-forms.md)
    + [評估並改善表單的效能與轉換](using/measure-improve-performance-forms-documents.md)
-   + [設定分析和報告](using/configure-analytics-forms-documents.md)
+   + [設定分析和報表](using/configure-analytics-forms-documents.md)
    + [檢視並瞭解AEM Forms分析報表](using/view-understand-aem-forms-analytics-reports.md)
    + [針對最適化表單建立和管理A/B測試](using/ab-testing-adaptive-forms.md)
 + 發佈及處理AEM表單 {#publish-process-aem-forms}
@@ -504,7 +504,6 @@ ht-degree: 1%
       + [讓字型可供使用](/help/forms/using/admin-help/make-fonts-available.md)
       + [指定要內嵌的字型](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [指定安全性設定](/help/forms/using/admin-help/specify-security-settings.md)
-      + [變更字元集](/help/forms/using/admin-help/change-character-set.md)
    + 設定表單工作流程{#configure-forms-workflow}
       + [關於管理和流程術語](/help/forms/using/admin-help/administration-process-terminology.md)
       + [管理流程](/help/forms/using/admin-help/processes.md)
@@ -578,7 +577,7 @@ ht-degree: 1%
    + [AEM Forms on JEE Java API參考](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)
    + [HTML5表單的Form Bridge API](using/form-bridge-apis.md)
    + [適用於Adaptive Forms的JavaScript程式庫API參考](https://helpx.adobe.com/experience-manager/6-4/forms/javascript-api/index.html)
-   + [Assembler Service和DDX參考](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
+   + [Assembler Service和DDX Reference](http://www.adobe.com/go/learn_aemforms_ddxRef_64)
    + [Workbench說明](http://www.adobe.com/go/learn_aemforms_workbench_64)
    + 在JEE上使用AEM Forms進行程式設計 {#programming-aem-forms-jee}
       + 在JEE上使用AEM Forms進行程式設計簡介 {#introduction-programming-aem-forms-jee}
