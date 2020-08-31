@@ -5,17 +5,17 @@ audience: end-user
 user-guide-title: AEM 6.4 Classic UI編寫使用指南
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 21%
+source-wordcount: '298'
+ht-degree: 22%
 
 ---
 
 
 # AEM 6.4 Classic UI編寫使用指南 {#classic-ui}
 
-+ [Classic UI編寫指南概觀](home.md)
++ [Classic UI編寫指南總覽](home.md)
 + Classic UI編寫簡介 {#introduction}
    + [作者的第一步](classic-page-author-first-steps.md)
    + [在傳統UI中編寫](classicui.md)
@@ -67,10 +67,8 @@ ht-degree: 21%
    + [使用行銷活動管理員](classic-personalization-campaigns-mktg-manager.md)
    + [電子郵件行銷](classic-personalization-campaigns-email.md)
    + [追蹤已跳回的電子郵件](classic-personalization-campaigns-email-tracking-bounces.md)
-   + [預告與策略](classic-personalization-campaigns-teasers-strategy.md)
    + [設定促銷活動](classic-personalization-campaigns-setting-up-your.md)
    + [將電子郵件發佈給電子郵件服務供應商](classic-personalization-campaigns-email-newsletters.md)
-   + [使用行銷活動管理員](classic-personalization-campaigns-mktg-manager.md)
    + [建立有效的電子報登陸頁面](classic-personalization-campaigns-email-landingpage.md)
    + [管理訂閱](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
