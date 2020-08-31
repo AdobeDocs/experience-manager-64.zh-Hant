@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4編寫使用指南
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: e0b25517821971098978db078b2f205a8a380459
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '266'
 ht-degree: 44%
 
 ---
@@ -55,7 +55,6 @@ ht-degree: 44%
    + [支架](scaffolding.md)
    + [在設計模式中設定元件](default-components-designmode.md)
    + [基礎元件](default-components-foundation.md)
-   + [支架](scaffolding.md)
 + 專案 {#projects}
    + [專案](projects.md)
    + [管理專案](touch-ui-managing-projects.md)
