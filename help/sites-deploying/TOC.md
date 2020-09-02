@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4部署指南
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: b9a270eb29e92e98a54b596ba745ef71f73a7b55
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 2%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 2%
    + [用模式檢測器評估升級複雜度](pattern-detector.md)
    + [AEM 6.4的回溯相容性](backward-compatibility.md)
    + [升級程式](upgrade-procedure.md)
+   + [使用離線重新索引以減少升級期間的停機時間](upgrade-offline-reindexing.md)
    + [執行就地升級](in-place-upgrade.md)
    + [延遲內容移轉](lazy-content-migration.md)
    + [使用CRX2Oak移轉工具](using-crx2oak.md)
