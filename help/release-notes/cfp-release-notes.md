@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f1a5f720ade66e5e8f909264563fa7ad1149b15f
+source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
 workflow-type: tm+mt
-source-wordcount: '3315'
+source-wordcount: '3331'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,8 @@ Adobe Experience Manager 6.4.8.2可修正下列問題。
 **升級**
 
 * 在環境中 [!DNL JBoss] 將Document Security的版本升級 [!DNL Experience Manager Forms] 至7.0.9時， [!DNL Linux] 會產生錯誤(CQ-4300546)。
+
+如需安全性更新的詳細資訊，請參 [閱Experience Manager安全性公告頁面](https://helpx.adobe.com/security/products/experience-manager.html)。
 
 ## 舊版Cumulative Fix Pack隨附的修補程式和功能套件 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
