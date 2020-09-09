@@ -2,9 +2,9 @@
 title: 過時和移除的功能
 description: Adobe Experience Manager 6.4中已過時和已移除功能的發行說明。
 translation-type: tm+mt
-source-git-commit: 543f66c760d7b25681a79d5df3d8ab6e8c0b2f47
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1281'
 ht-degree: 11%
 
 ---
@@ -23,7 +23,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## 過時的功能 {#deprecated-features}
 
-下表列出已標示為已在AEM 6.4中停用的功能。 通常，計畫在未來版本中移除的功能會先設為不建議使用，並提供其他選項。
+下表列出已標示為已在AEM 6.4中停用的功能。通常，計畫在未來版本中移除的功能會先設為不建議使用，並提供其他選項。
 
 建議客戶檢視是否在目前的部署中使用這些功能，並規劃變更實作，改為使用所提供的替代方案。
 
@@ -35,11 +35,12 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 元件 | Adobe不打算對下列的Foundation Components進行進一步的增強。 AEM 6.4包含Foundation Components，而從舊版升級的客戶可依現狀繼續使用這些元件。 請注意，Foundation Components在遭淘汰時仍完全受支援。 <ul> <li> foundation/components/account/accountname </li> <li> foundation/components/account/actions </li> <li> foundation/components/account/passwordreset </li> <li> foundation/components/account/requestconfirmation </li> <li> foundation/components/adaptive image </li> <li> foundation/components/assetsharepage </li> <li> foundation/components/breadcrumb </li> <li> foundation/components/form/creditcard </li> <li> foundation/components/listchildren </li> <li> foundation/components/login </li> <li> foundation/components/logo </li> <li> foundation/components/mobilefooter </li> <li> foundation/components/mobileimage </li> <li> foundation/components/mobilelist </li> <li> foundation/components/mobilelogo </li> <li> foundation/components/mobilereference </li> <li> foundation/components/mobiletextimage </li> <li> foundation/components/mobiletopnav </li> <li> foundation/components/search </li> <li> foundation/components/sitemap </li> <li> foundation/components/table </li> <li> foundation/components/toolbar </li> <li> foundation/components/topnav </li> <li> foundation/components/userinfo </li> </ul> | 建議客戶將核心元件用於未來的專案。 現有網站不需要變更。 |
 | 元件 | Adobe不打算對下列的Foundation Components進行進一步的增強。 AEM 6.4包含Foundation Components，而從舊版升級的客戶可依現狀繼續使用這些元件。 請注意，Foundation Components在遭淘汰時仍完全受支援。 <ul><li>foundation/components/timing</li></ul> | Adobe不打算提供替代產品。 |
 | 入口網站主管 | Portal Director是一組功能，可讓您在協力廠商伺服器中透過Portlet代管AEM內容。 Adobe不打算在下列位置下進一步增強Portal Director功能。 AEM 6.4已隨附入口網站控制器，而從舊版升級的客戶可依現狀繼續使用。 請注意，Portal Direct在遭淘汰時仍完全受支援。 <ul><li>/libs/portal/director</li></ul> | Adobe不打算提供替代產品。 |
-| Portlet元件 | /foundation/components/portlet下的Portlet元件允許將AEM中的JSR Portlet作為元件托管。 Adobe不打算對Portlet元件功能做進一步的增強。 AEM 6.4包含Portlet元件，而從舊版升級的客戶可依現狀繼續使用。 請注意，Portlet元件在被淘汰時仍完全受支援。 | Adobe不打算提供替代產品。 |
+| Portlet元件 | /foundation/components/portlet下的Portlet元件可以將JSR Portlet作為元件托管在AEM中。 Adobe不打算對Portlet元件功能做進一步的增強。 AEM 6.4包含Portlet元件，而從舊版升級的客戶可依現狀繼續使用。 請注意，Portlet元件在被淘汰時仍完全受支援。 | Adobe不打算提供替代產品。 |
 | 表單 | Adobe Central Migration Bridge服務已不再支援，因為Adobe Central產品不再受支援。 | 無取代 |
 | 表單 | 不建議在Query和OperationOptions中使用JSONObject。 不建議使用下列API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用 `IValueMap` API |
 | 表單 | 已過時的Central Migration Bridge服務。 | 不提供任何替代項目。 |
 | 資產 | 從AEM 6.4開始，資產卸載已過時。 |  |
+| 開發人員 | Lodash/下划線客戶端庫。 Adobe不打算進一步維護和更新Lodash/底線用戶端程式庫，此程式庫會隨散發（快速入門）一起出貨 | Adobe建議仍需使用Lodash/底線的客戶將程式碼新增至其專案程式碼庫。 |
 
 <!-- Original HTML table that came from helpx during migration.
 
@@ -146,7 +147,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## Removed Features {#removed-features}
 
-下表列出已從AEM 6.4移除的功能與功能。 舊版的這些功能已標示為已過時。
+下表列出已從AEM 6.4移除的功能與功能。舊版的這些功能已標示為已過時。
 
 | 區域 | 功能 | 替代方案 |
 |---|---|---|
@@ -156,7 +157,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 元件 | Flash（基礎／元件/Flash） | 無取代 |
 | 元件 | 已移除對視訊元件（基礎／元件／視訊）中播放SWF檔案的支援 | 使用無Flash視訊格式。 |
 | 元件 | 產品表(commerce/components/product_table) | 無取代 |
-| 任務管理 | 傳統UI任務管理(/libs/cq/taskmanagement/content/taskmanager.html) | 自6.0起已過時。 使用與工作流UI結合的新任務管理。 |
+| 任務管理 | 傳統UI任務管理(/libs/cq/taskmanagement/content/taskmanager.html) | 自6.0起已過時。使用與工作流UI結合的新任務管理。 |
 | 工作流程 | 5.6-6.2之間使用的通知UI(/libs/cq/workflow/content/notifications.html) | 工作流程收件匣/aem/inbox |
 | 表單 | 已移除使用PDF產生器將PDF轉存為PDF/E-1格式。 | PDF產生器繼續支援將PDF匯出為PDF/A-1a/b、PDF/A-2a/b和PDF/A-3a/b格式。 |
 | 表單 | 已移除檔案片段內影像的支援。 | 互動式通訊提供直接在印刷和網頁頻道使用影像的功能。 |
