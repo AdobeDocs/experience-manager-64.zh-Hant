@@ -3,10 +3,10 @@ title: 使用 Brand Portal 設定 AEM Assets
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
 workflow-type: tm+mt
-source-wordcount: '1717'
-ht-degree: 41%
+source-wordcount: '1678'
+ht-degree: 42%
 
 ---
 
@@ -30,8 +30,8 @@ Adobe Experience Manager (AEM) Assets 是透過 Adobe I/O 以 Brand Portal 設�
 
 
 本說明說明下列兩個使用案例：
-* [新配置](#configure-new-integration-64): 如果您是新的品牌入口網站使用者，並想要使用品牌入口網站設定您的AEM Assets作者例項，則可以在Adobe I/O上建立新的設定。
-* [升級配置](#upgrade-integration-64): 如果您是現有的品牌入口網站使用者，且AEM Assets作者實例在舊版OAuth閘道上設定了品牌入口網站，建議您刪除現有的設定並在Adobe I/O上建立新的設定。
+* [新配置](#configure-new-integration-64):如果您是新的品牌入口網站使用者，並想要使用品牌入口網站設定您的AEM Assets作者例項，則可以在Adobe I/O上建立新的設定。
+* [升級配置](#upgrade-integration-64):如果您是現有的品牌入口網站使用者，且AEM Assets作者實例在舊版OAuth閘道上設定了品牌入口網站，建議您刪除現有的設定並在Adobe I/O上建立新的設定。
 
 提供的資訊基於以下假設：閱讀本「說明」的人熟悉下列技術：
 
@@ -92,7 +92,7 @@ IMS 設定包括兩個步驟：
 
 公開憑證可讓您在 Adobe I/O 上驗證設定檔。
 
-1. 登入您的AEM Assets author instance預設URL: http:// localhost:4502/aem/start.html
+1. 登入您的AEM Assets author instance預設URL:http:// localhost:4502/aem/start.html
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Adobe IMS 帳戶設定 UI](assets/ims-config1.png)
@@ -208,7 +208,7 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
 
 1. 登入您的AEM Assets作者實例
 
-   預設URL: http:// localhost:4502/aem/start.html
+   預設URL:http:// localhost:4502/aem/start.html
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Cloud Services >> AEM Brand Portal]**.
 
    「Brand Portal 設定」頁面隨即開啟。
@@ -229,7 +229,7 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
 
 1. 登入您的AEM Assets作者實例
 
-   預設URL: http:// localhost:4502/aem/start.html
+   預設URL:http:// localhost:4502/aem/start.html
 
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
 
@@ -254,10 +254,6 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
    >
    >複製代理並行工作，共用作業分配，使發佈速度提高了原始速度的四倍。 在設定雲端服務後，不需要額外的設定，就可啟用依預設啟用的複製代理，以啟用多個資產的並行發佈。
 
-   >[!NOTE]
-   >
-   >請避免禁用任何複製代理，因為這可能導致某些資產的複製失敗。
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -267,15 +263,13 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
 
    ![](assets/test-integration5.png)
 
-   >[!NOTE]
-   >
-   >複製代理並行工作，共用作業分配，使發佈速度提高了原始速度的四倍。 在設定雲端服務後，不需要額外的設定，就可啟用依預設啟用的複製代理，以啟用多個資產的並行發佈。
 
 1. 對所有四個複製代理逐一驗證測試結果。
 
    >[!NOTE]
    >
    >請避免禁用任何複製代理，因為這可能導致某些資產的複製失敗。
+   >確保所有4個複製代理都配置為避免超時錯誤。 See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 您的AEM Assets作者實例已成功設定品牌入口網站。 您現在可以：
 
@@ -297,7 +291,7 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
 
 1. 登入您的AEM Assets作者實例
 
-   預設URL: http:// localhost:4502/aem/start.html
+   預設URL:http:// localhost:4502/aem/start.html
 
 1. From **Tools** ![Tools](assets/tools.png) panel, navigate to **[!UICONTROL Deployment >> Replication]**.
 
@@ -324,7 +318,7 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
 
 1. 登入您的AEM Assets作者例項，並以管理員身分開啟CRX Lite。
 
-   預設URL: http:// localhost:4502/crx/de/index.jsp
+   預設URL:http:// localhost:4502/crx/de/index.jsp
 
 1. 導覽至 `/etc/replications/agents.author` 並刪除您品牌入口網站租用戶的所有4個複製代理。
 
