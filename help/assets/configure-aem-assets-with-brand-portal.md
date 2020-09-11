@@ -3,7 +3,7 @@ title: 使用 Brand Portal 設定 AEM Assets
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 1510b3a1b40e2e08579fc833f563fa77d6cc65cd
+source-git-commit: f9993c7a1a7be95cf4f2652f32e71f370ff3c727
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 42%
@@ -269,6 +269,7 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
    >[!NOTE]
    >
    >請避免禁用任何複製代理，因為這可能導致某些資產的複製失敗。
+   >
    >確保所有4個複製代理都配置為避免超時錯誤。 See [troubleshoot issues in parallel publishing to Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 您的AEM Assets作者實例已成功設定品牌入口網站。 您現在可以：
