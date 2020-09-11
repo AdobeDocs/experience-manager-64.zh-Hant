@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Mobile使用指南
+breadcrumb-title: Mobile Guide
 user-guide-description: Create and manage content for mobile apps.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 3%
@@ -56,7 +57,7 @@ ht-degree: 3%
    + [模型概觀](model-management.md)
    + [空格和圖元](spaces-and-entities.md)
    + [管理系列](mobile-on-demand-managing-collections.md)
-+ 製作Adobe PhoneGap Enterprise {#author-phonegap}
++ 編寫Adobe PhoneGap Enterprise {#author-phonegap}
    + [PhoneGap](phonegap.md)
    + [編輯應用程式中繼資料](phonegap-editmetadata.md)
    + [應用程式定義](phonegap-app-definitions.md)
