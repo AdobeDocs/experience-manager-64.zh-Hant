@@ -3,9 +3,10 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Assets使用指南
+breadcrumb-title: Assets Guide
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 33%
@@ -83,7 +84,7 @@ ht-degree: 33%
 + 管理資產 {#administer}
    + [資產支援的格式](assets-formats.md)
    + [搜尋 Facet](search-facets.md)
-   + [Managing Metadata for assets](metadata.md)
+   + [管理資產的中繼資料](metadata.md)
    + [XMP回寫至轉譯](xmp-writeback.md)
    + [資產連結共用](link-sharing.md)
    + [資產報表](asset-reports.md)
@@ -91,22 +92,22 @@ ht-degree: 33%
    + [處理中繼資料、影像和視訊的設定檔](processing-profiles.md)
    + [階層式中繼資料](cascading-metadata.md)
    + [「建立和配置資產編輯器」頁](assets-finder-editor.md)
-   + [Assets sizing guide](assets-sizing-guide.md)
-   + [Metadata Schemata Reference](meta-ref.md)
-   + [Best practices for translating assets efficiently](best-practices-for-translating-assets-efficiently.md)
+   + [資產規模調整指南](assets-sizing-guide.md)
+   + [中繼資料圖式參考](meta-ref.md)
+   + [有效率地轉譯資產的最佳實務](best-practices-for-translating-assets-efficiently.md)
    + [資產效能調整指南](performance-tuning-guidelines.md)
-   + [How to edit or add metadata](meta-edit.md)
+   + [如何編輯或新增中繼資料](meta-edit.md)
    + [資產移轉指南](assets-migration-guide.md)
    + [XMP 中繼資料](xmp.md)
    + [資產網路考量](assets-network-considerations.md)
    + [AEM Assets與AEM MediaLibrary的比較](medialibrary.md)
-   + [Using PDF rasterizer](aem-pdf-rasterizer.md)
-   + [Configuring asset upload restrictions](configuring-asset-upload-restrictions.md)
+   + [使用PDF點陣化器](aem-pdf-rasterizer.md)
+   + [設定資產上傳限制](configuring-asset-upload-restrictions.md)
    + [AEM與Creative Cloud整合最佳實務](aem-cc-integration-best-practices.md)
    + [將AEM Assets與InDesign伺服器整合](indesign.md)
    + [中繼資料設定檔](metadata-profiles.md)
    + [資產中的數位版權管理](drm.md)
-   + [Using demo package for Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
+   + [使用示範套件獲取資產見解](touch-ui-using-demo-package-for-asset-insights.md)
    + [資產卸載最佳做法](assets-offloading-best-practices.md)
    + [資產檔案格式最佳實務](assets-file-format-best-practices.md)
    + [資產監控最佳實踐](assets-monitoring-best-practices.md)
@@ -136,7 +137,7 @@ ht-degree: 33%
    + [中繼資料 - 片段屬性](content-fragments-metadata.md)
    + [內容片段 - 刪除考量事項](content-fragments-delete.md)
    + [內容片段——標籤](content-fragments-markdown.md)
-   + [Creating translation projects for Content Fragments](creating-translation-projects-for-content-fragments.md)
+   + [建立內容片段的翻譯專案](creating-translation-projects-for-content-fragments.md)
 + Manage Assets {#managing}
    + [使用觸控最佳化 UI 來管理資產](managing-assets-touch-ui.md)
    + [管理多個資產和系列](managing-multiple-assets.md)
