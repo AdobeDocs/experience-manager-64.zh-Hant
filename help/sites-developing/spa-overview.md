@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
@@ -49,9 +49,9 @@ SPA的頁面元件不會透過JSP或HTL檔案提供其子元件的HTML元素。 
 
 ### 頁面模型管理 {#page-model-management}
 
-頁面模型的解析度和管理被委託給提供的庫 `PageModel` 。 SPA必須使用「頁面模型」庫，才能初始化並由SPA編輯器編寫。 透過npm間接提供給AEM Page元件的頁面模型 `cq-react-editable-components` 庫。 「頁面模型」是AEM和SPA之間的解譯器，因此必須始終存在。 編寫頁面時，必須新增其 `cq.authoring.pagemodel.messaging` 他程式庫，才能與頁面編輯器通訊。
+頁面模型的解析度和管理被委託給提供的庫 `PageModel` 。 SPA必須使用「頁面模型」庫，才能初始化並由SPA編輯器編寫。 透過npm間接提供給AEM Page元件的頁面模型 `aem-react-editable-components` 庫。 「頁面模型」是AEM和SPA之間的解譯器，因此必須始終存在。 編寫頁面時，必須新增其 `cq.authoring.pagemodel.messaging` 他程式庫，才能與頁面編輯器通訊。
 
-如果SPA頁元件繼承自頁核心元件，則有兩個選項可使客戶端 `cq.authoring.pagemodel.messaging` 庫類別可用：
+如果SPA頁元件繼承自頁核心元件，則有兩個選項可使客戶端庫 `cq.authoring.pagemodel.messaging` 類別可用：
 
 * 如果範本是可編輯的，請將其新增至頁面原則。
 * 或者，使用新增類別 `customfooterlibs.html`。
@@ -117,7 +117,7 @@ SPA的頁面元件不會透過JSP或HTL檔案提供其子元件的HTML元素。 
 
 1. SPA會自行初始化，並從Sling Model Exporter要求頁面模型。
 
-1. Sling Model Exporter會請求從儲存庫組成頁面的資源。
+1. Sling Model Exporter會要求從儲存庫中構成頁面的資源。
 
 1. 儲存庫返回資源。
 
