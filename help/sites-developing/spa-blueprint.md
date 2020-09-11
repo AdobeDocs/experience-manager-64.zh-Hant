@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 0%
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 它代表SPA，抽象出代表實際內容結構的JSON結構的檢索與管理。 此外，它還負責與SPA同步，讓它知道何時必須重新演算元件。
 
-請參閱NPM [套件@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
+請參閱NPM [套件@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
 初始化應 `PageModelManager`用程式時，程式庫會先載入提供的應用程式根模型（透過參數、中繼屬性或目前的URL）。 如果庫標識當前頁的模型不屬於其讀取的根模型，並將其作為子頁的模型包含在內。
 
@@ -99,14 +99,14 @@ SPA元件必須與頁面模型同步，並隨之更新其內容。 必須使用�
 
 為了促進程式庫的互用性，Adobe建議架構特定模組整合下列程式庫。 如果需要，該層可以在將底層API暴露到項目之前封裝和調整它們。
 
-* [@adobe/cq-spa-page-model-manager](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
-* [@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+* [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
+* [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 #### 實施 {#implementations}
 
 #### 反應 {#react}
 
-npm模組： [@adobe/cq-react-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
+npm模組： [@adobe/aem-react-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
 #### 角度 {#angular}
 
@@ -169,7 +169,7 @@ Component Decorator負責裝飾每個元件實例的元素的外部HTML，並具
 * `gridClassNames:` 為響應網格提供的類名
 * `columnClassNames:` 為響應列提供的類名
 
-另請參閱npm資 [源@adobe/cq-react-editable-componentsresponvegridjsx](https://www.npmjs.com/package/@adobe/cq-react-editable-components#srccomponentsresponsivegridjsx)
+另請參閱npm資 [源@adobe/aem-react-editable-components#srccomponentsresponvegridjsx](https://www.npmjs.com/package/@adobe/aem-react-editable-components#srccomponentsresponsivegridjsx)
 
 #### 回應式格線的預留位置 {#placeholder-of-the-reponsive-grid}
 
