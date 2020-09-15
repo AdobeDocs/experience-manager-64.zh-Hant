@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5989421ee1207880462fd1eaefc1a9714061307e
+source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
 workflow-type: tm+mt
-source-wordcount: '3362'
+source-wordcount: '3402'
 ht-degree: 1%
 
 ---
@@ -361,7 +361,7 @@ AEM 6.4.8.2包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預�
 
 ### Uber Jar {#uber-jar}
 
-Adobe Public Maven儲存庫中提供AEM 6.4.8.2版的Uber Jar [](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/)。
+Maven Central儲存庫中提供Uber Jar for AEM 6.4.8.2 [版](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/)。
 
 要在Maven項目中使用Uber Jar，請參閱文章「 [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -373,6 +373,10 @@ Adobe Public Maven儲存庫中提供AEM 6.4.8.2版的Uber Jar [](https://repo.ma
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>此版本之後，UberJar和其他相關對象可在Maven Central Repository(Adobe Public Maven Repository，而非Adobe Public Maven Repository(repo.adobe.com)上使用。 主UberJar檔案已更名為 `uber-jar-<version>.jar`。 因此，標籤沒 `classifier`有 `apis` 任何值和值 `dependency` 。
 
 ## 已移除／已過時的功能 {#removed-deprecated-features}
 
