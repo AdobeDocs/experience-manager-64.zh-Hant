@@ -3,9 +3,9 @@ title: 設定Rich Text Editor外掛程式
 description: 瞭解如何設定AEM Rich Text Editor外掛程式，以啟用個別功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
 workflow-type: tm+mt
-source-wordcount: '4206'
+source-wordcount: '4204'
 ht-degree: 1%
 
 ---
@@ -706,7 +706,7 @@ RTE允許作者還原或重做最後幾次編輯。 依預設，50個編輯會�
       * **名稱** `cssExternal`
       * **類型** `String`
       * **值** CSS類的名稱（不帶前面的&#39;.&#39;）; for example, `cssClass` instead of `.cssClass`)
-   * 有效通訊 **協定的陣列** (包括https://、https:// file://、mailto：等等)
+   * 有效通訊協 **定陣列**。 支援的通 `http://`訊協 `https://`定 `file://`有、、和 `mailto:`。
 
       * **名稱** `protocols`
       * **類型** `String[]`
