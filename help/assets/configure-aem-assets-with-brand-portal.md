@@ -3,9 +3,9 @@ title: 使用 Brand Portal 設定 AEM Assets
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: f9993c7a1a7be95cf4f2652f32e71f370ff3c727
+source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1692'
 ht-degree: 42%
 
 ---
@@ -78,6 +78,11 @@ Adobe Experience Manager (AEM) Assets 是透過 Adobe I/O 以 Brand Portal 設�
 1. [建立 IMS 帳戶設定](#create-ims-account-configuration)
 1. [設定雲端服務](#configure-the-cloud-service)
 1. [測試設定](#test-integration)
+
+>[!NOTE]
+>
+>AEM Assets作者實例僅應設定一個品牌入口網站租戶。
+
 
 ### 建立 IMS 設定 {#create-ims-configuration}
 
