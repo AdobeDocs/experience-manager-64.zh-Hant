@@ -7,10 +7,10 @@ uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: Security
+topic-tags: Security, configuring
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 0%
@@ -41,30 +41,30 @@ SSO驗證處理程式服務( `com.adobe.granite.auth.sso.impl.SsoAuthenticationH
 
 若要為AEM例項設定SSO，您必須設定 [SSO驗證處理常式](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. 使用AEM時，有幾種方法可管理此類服務的組態設定； 如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+1. 使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
    例如，對於NTLM集：
 
-   * **路徑：** 視需要； 例如， `/`
+   * **路徑：** 視需要；例如， `/`
    * **標題名稱**: `LOGON_USER`
    * **ID格式**: `^<DOMAIN>\\(.+)$`
 
       其中 `<*DOMAIN*>` 將由您自己的域名替換。
    針對CoSign:
 
-   * **路徑：** 視需要； 例如， `/`
-   * **標題名稱**: remote_user
+   * **路徑：** 視需要；例如， `/`
+   * **標題名稱**:remote_user
    * **ID格式：** 現狀
 
    對於SiteMinder:
 
-   * **路徑：** 視需要； 例如， `/`
+   * **路徑：** 視需要；例如， `/`
    * **標題名稱：** SM_USER
-   * **ID格式**: 現狀
+   * **ID格式**:現狀
 
 
 
-1. 確認單一登入功能是否可視需要運作； 包括授權。
+1. 確認單一登入功能是否可視需要運作；包括授權。
 
 >[!CAUTION]
 >
@@ -109,7 +109,7 @@ SSO驗證處理程式服務( `com.adobe.granite.auth.sso.impl.SsoAuthenticationH
 
 
 
-您可以使用Felix Console的 **Authenticator** （驗證器）選項，查看哪個驗證處理器正套用至內容樹的任何區段； 例如：
+您可以使用Felix Console的 **Authenticator** （驗證器）選項，查看哪個驗證處理器正套用至內容樹的任何區段；例如：
 
 `http://localhost:4502/system/console/slingauth`
 
@@ -129,7 +129,7 @@ Cookie: TestCookie=admin
 
 使用下列配置：
 
-* **Path**: `/`
+* **路徑**: `/`
 
 * **標題名稱**: `TestHeader`
 
