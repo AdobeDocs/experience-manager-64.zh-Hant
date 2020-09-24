@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 0%
@@ -161,7 +161,7 @@ AEM 3D支援Adobe Dimension(Dn)和glTF資產類型。 這些資產類型的實�
 ### AEM Sites 3D元件 {#aem-sites-d-component}
 
 * **每頁一個3D元件** -目前每個網頁僅允許一個3D元件例項。 如果將多個3D元件新增至相同頁面，則3D元件無法正確運作。
-* **在Sites中預覽時遺失3D檢視** —— 在Sites中使用 **Preview** 時，必須在瀏覽器中重新載入頁面，才能完全初始化3D檢視器。 在「作者」節點或「發佈」節點上直接檢視網頁時(即從 `edit.html` 路徑中移除時)，這不是問題。
+* **在Sites中預覽時遺失3D檢視** —— 在Sites中使用 **Preview** 時，必須在瀏覽器中重新載入頁面，才能完全初始化3D檢視器。 在「作者」節點或「發佈」節點上直接檢視網頁時(即從 `edit.html` 路徑中移除時)，這並不是問題。
 
 * **iOS裝置無法使用全螢幕模式** -全螢幕按鈕在iOS裝置上不可用，不論使用的瀏覽器為何。
 
