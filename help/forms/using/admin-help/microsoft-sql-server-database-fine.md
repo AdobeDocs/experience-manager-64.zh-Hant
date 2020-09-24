@@ -1,16 +1,16 @@
 ---
-title: '"Microsoft SQL Server資料庫： 微調配置"'
-seo-title: '"Microsoft SQL Server資料庫： 微調配置"'
+title: '"Microsoft SQL Server資料庫：微調配置"'
+seo-title: '"Microsoft SQL Server資料庫：微調配置"'
 description: 瞭解如何微調Microsoft SQL Server資料庫的配置。
 seo-description: 瞭解如何微調Microsoft SQL Server資料庫的配置。
 uuid: 2d618aab-3c67-4edb-a28f-a20904689e6f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
-products: SG_EXPERIENCEMANAGER/6.4/FORMS
+products: SG_EXPERIENCEMANAGER/6.4/FORMS, SG_AEMFORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Microsoft SQL Server資料庫： 微調配置 {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Microsoft SQL Server資料庫：微調配置 {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
 使用Microsoft SQL Server時，應更改預設配置設定。 按一下右鍵Oracle Enterprise Manager中的本地伺服器以訪問屬性對話框。
 
 ## 記憶體設定 {#memory-settings}
 
-將最小記憶體分配更改為盡可能大的數字。 如果資料庫在單獨的電腦上運行，請使用所有記憶體。 預設設定不會大量分配記憶體，這會阻礙幾乎任何資料庫的效能。 在生產機器上分配記憶體時，您應該最積極。
+將最小記憶體分配更改為盡可能大的數字。 如果資料庫在單獨的電腦上運行，請使用所有記憶體。 預設設定不會積極分配記憶體，這會阻礙幾乎任何資料庫的效能。 在生產機器上分配記憶體時，您應該最積極。
 
 ## 處理器設定 {#processor-settings}
 
