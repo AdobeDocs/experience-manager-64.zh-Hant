@@ -6,10 +6,10 @@ seo-description: 瞭解如何建立您的第一個互動式通訊。
 uuid: ed5003c6-ba3a-4fcb-8645-c7b607b22fb5
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1060'
 ht-degree: 0%
@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# 教學課程： 建立您的第一個互動式通訊 {#tutorial-create-your-first-interactive-communication}
+# 教學課程：建立您的第一個互動式通訊 {#tutorial-create-your-first-interactive-communication}
 
 瞭解如何建立您的第一個互動式通訊。
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-互動式通訊可集中管理安全、個人化和互動式通訊的建立、組裝和傳遞，例如商業通訊、檔案、陳述、行銷郵件、帳單和歡迎套件。 互動式通訊可透過兩個通道提供： 平面與網頁。 列印頻道用來建立PDF和紙本通訊，而網路頻道則用來提供線上體驗。
+互動式通訊可集中管理安全、個人化和互動式通訊的建立、組裝和傳遞，例如商業通訊、檔案、陳述、行銷郵件、帳單和歡迎套件。 互動式通訊可透過兩個通道提供：印刷與網頁。 列印頻道用來建立PDF和紙本通訊，而網路頻道則用來提供線上體驗。
 
 本教學課程提供端對端架構，以建立互動式通訊。 本教學課程分為使用案例和多本指南。 每個指南都可協助您建立用作建立區塊的功能，以建立互動式通訊。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 * 設定MYSQL資料庫
 * 從資料庫提供程式獲取JDBC資料庫驅動程式（JAR檔案）。 教程中的示例基於MySQL資料庫，並使用Oracle的 [MySQL JDBC資料庫驅動程式](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
-## 步驟1: 規劃互動式通訊 {#step-plan-the-interactive-communication}
+## 步驟1:規劃互動式通訊 {#step-plan-the-interactive-communication}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -91,11 +91,11 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model-tutorial.md)
 
-## 步驟3: 建立檔案片段 {#step-create-document-fragments}
+## 步驟3:建立檔案片段 {#step-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-文檔片段是用於構成互動式通信的通信的可重用元件。 文檔片段的類型有： 文字、清單和條件。
+文檔片段是用於構成互動式通信的通信的可重用元件。 文檔片段的類型有：文字、清單和條件。
 
 **目標：**
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-document-fragments.md)
 
-## 步驟4: 建立範本 {#step-create-templates}
+## 步驟4:建立範本 {#step-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -123,13 +123,13 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
 
-## 步驟5: 建立互動式通訊 {#step-create-an-interactive-communication}
+## 步驟5:建立互動式通訊 {#step-create-an-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
 
 一旦您建立所有的建置區塊（例如表單資料模型、檔案片段和網頁版本的範本）後，就可以開始建立互動式通訊。
 
-互動式通訊可透過兩個通道提供： 平面與網頁。 您也可以以主版的方式建立互動式的列印通訊管道。 列印為網頁頻道的主選項，可確保網頁頻道的內容、繼承和資料系結是從列印頻道衍生而來。
+互動式通訊可透過兩個通道提供：印刷與網頁。 您也可以以主版的方式建立互動式的列印通訊管道。 列印為網頁頻道的主選項，可確保網頁頻道的內容、繼承和資料系結是從列印頻道衍生而來。
 
 **目標：**
 
@@ -142,7 +142,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-interactive-communication-tutorial.md)
 
-## 步驟6: 測試您的互動式通訊 {#step-test-your-interactive-communication}
+## 步驟6:測試您的互動式通訊 {#step-test-your-interactive-communication}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 * 建立測試案例
 * 執行測試案例
 
-## 步驟7: 發佈您的互動式通訊 {#step-publish-your-interactive-communication}
+## 步驟7:發佈您的互動式通訊 {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
