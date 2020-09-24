@@ -6,10 +6,10 @@ seo-description: 使用Calvin，您可以在CRXDE中建立測試案例，並直�
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1282'
 ht-degree: 1%
@@ -71,7 +71,7 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
    <td><p>延遲載入</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>按一下標籤（或面板的任何導覽項目）時，會根據延遲載入設定從伺服器擷取HTML嗎？</li> 
+     <li>按一下標籤（或面板的任何導覽項目）時，是否會依照延遲載入組態從伺服器擷取HTML?</li> 
     </ul></td> 
   </tr> 
   <tr> 
@@ -92,7 +92,7 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
 * [Hobbes JavaScript API](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [Calvin JavaScript API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## 範例： 使用Hobbes做為測試架構，為最適化表單建立測試套件 {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
+## 範例：使用Hobbes做為測試架構，為最適化表單建立測試套件 {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 以下範例將逐步帶您建立測試套裝，以測試多個調適性表單。 您需要為每個需要測試的表單建立個別的測試案例。 依照類似下列步驟並在步驟11中修改JavaScript程式碼，您可以建立自己的測試套裝來測試您的自適應表單。
 
@@ -159,8 +159,8 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
 
 1. 按一 **[!UICONTROL 下「建]** 立 **>建立節點** 」，在clientlib檔案夾下，針對您要測試的每個表單建立節點。 此示例使用名為 **testForm** 的節點來測試名為testForm **的自適應表單，指** 定以下屬性並按一下 `.`OK ****:
 
-   * 名稱： testForm（您的表單名稱）
-   * 類型： cq:ClientLibraryFolder
+   * 名稱：testForm（您的表單名稱）
+   * 類型：cq:ClientLibraryFolder
 
 1. 將下列屬性新增至新建立的節點（此處為testForm），以測試最適化表單：
 
@@ -273,7 +273,7 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
 
    將建立測試案例。 繼續執行測試案例，透過Hobbes測試最適化表單。 如需執行測試案例的步驟，請參 [閱使用自動測試來測試您的UI](/help/sites-developing/hobbes.md)。
 
-您也可以將套件安裝在附加的檔案SampleTestPackage.zip中，以取得與範例中說明的步驟相同的結果： 使用Hobbes做為測試架構，為最適化表單建立測試套件。
+您也可以將套件安裝在附加的檔案SampleTestPackage.zip中，以取得與範例中說明的步驟相同的結果：使用Hobbes做為測試架構，為最適化表單建立測試套件。
 
 [取得檔案](assets/sampletestpackage.zip)
 
