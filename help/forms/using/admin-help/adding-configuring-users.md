@@ -8,7 +8,7 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -24,8 +24,7 @@ ht-degree: 0%
 
 當您建立使用者時，可以將使用者新增至群組，並指派角色給使用者。
 
-1. 在管理控制台中，按一 **[!UICONTROL 下「設定>使用者管理>使用者和群組]**」，然後按一下「 **[!UICONTROL 新使用者」]**。
-.
+1. 在管理控制台中，按一 **[!UICONTROL 下「設定>使用者管理>使用者和群組]**」，然後按一下「 **[!UICONTROL 新使用者」]**。.
 1. 在「 **[!UICONTROL 一般設定]**」下，視需要提供資訊，然後按一下「下 **[!UICONTROL 一步」]**。 如需設定的詳細資訊，請參閱「使 [用者設定」](adding-configuring-users.md#user-settings)。
 1. （可選）若要將使用者新增至群組，請按一下「 **[!UICONTROL 尋找群組]**」，然後執行下列工作：
 
@@ -84,7 +83,7 @@ ht-degree: 0%
 
 **使用者ID:** （必要）使用者用來登入的使用者ID。 使用者ID不區分大小寫，而且必須在網域間具有唯一性。
 
-在企業網域中，使用非DN屬性作為使用者ID，因為當使用者DN移至組織的其他部分時，其DN可能會變更。 此設定取決於目錄伺服器。 該值為Active `objectGUID` Directory 2003、Sun™ `nsuniqueID` One和eDirectory `guid` 的值。
+在企業網域中，使用非DN屬性作為使用者ID，因為當使用者DN移至組織的其他部分時，其DN可能會變更。 此設定取決於目錄伺服器。 該值適 `objectGUID` 用於Active Directory 2003、 `nsuniqueID` Sun™ One和 `guid` eDirectory。
 
 請確定使用者ID是唯一的。 請勿使用指派給已刪除使用者的檔案。
 
@@ -168,7 +167,7 @@ AEM表單無法區分擁有相同使用者ID和密碼但屬於不同網域的使
 * 信件管理解決方案
 * AEM表單工作區
 
-   ***注意&#x200B;**: AEM表單版本不建議使用Flex Workspace。*
+   ***注意&#x200B;**:AEM表單版本不建議使用Flex Workspace。*
 
 * 表單管理器
 * 流程報告
