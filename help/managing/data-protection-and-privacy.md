@@ -1,16 +1,16 @@
 ---
 title: 資料保護與資料隱私權法規- Adobe Experience Manager就緒性
-seo-title: Adobe Experience Manager資料保護與資料隱私權法規的準備； 例如GDPR、CCPA等
-description: '瞭解Adobe Experience Manager對各種資料保護與資料隱私權法規的支援； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及實作新AEM專案時如何遵守。 '
-seo-description: '瞭解Adobe Experience Manager對各種資料保護與資料隱私權法規的支援； 包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及實作新AEM專案時如何遵守。 '
+seo-title: Adobe Experience Manager資料保護與資料隱私權法規的準備；例如GDPR、CCPA等
+description: '瞭解Adobe Experience Manager對各種資料保護與資料隱私權法規的支援；包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及實作新AEM專案時如何遵守。 '
+seo-description: '瞭解Adobe Experience Manager對各種資料保護與資料隱私權法規的支援；包括歐盟通用資料保護規則(GDPR)、加州消費者隱私法，以及實作新AEM專案時如何遵守。 '
 uuid: c443aa47-0766-4280-b0f2-b5b06534ffba
 contentOwner: aheimoz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
-topic-tags: grdp
+topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Adobe Experience Manager的執行個體，以及在其上執行的應用程式�
 
 這些條例的主要規定是：
 
-1. 將個人資料的定義擴充為包含所有唯一ID; 直接和間接可識別的資料。
+1. 將個人資料的定義擴充為包含所有唯一ID;直接和間接可識別的資料。
 
 2. 已強化同意要求。
 
@@ -70,7 +70,7 @@ Adobe Experience Manager的執行個體，以及在其上執行的應用程式�
 
    * Adobe Experience Platform Privacy Service不屬於AEM的工作流程，如下圖所示。
 
-* AEM包含客戶隱私權管理員和／或AEM管理員執行隱私權法規要求的檔案和程式； 手動或透過API（若有）。
+* AEM包含客戶隱私權管理員和／或AEM管理員執行隱私權法規要求的檔案和程式；手動或透過API（若有）。
 
 * 未新增任何服務或UI。
 
