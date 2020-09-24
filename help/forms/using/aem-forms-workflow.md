@@ -5,11 +5,11 @@ description: 使用AEM Forms Workflow，以自動化並快速建立審核與核�
 seo-description: 使用AEM Forms Workflow，以自動化並快速建立審核與核准、開始檔案服務（例如，將PDF檔案轉換為其他格式）、與Adobe Sign簽名工作流程整合等。
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: document_services
+topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2916'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 有了OSGi上以表單為中心的工作流程，您就可以在OSGi堆疊上快速建立和部署各種工作的工作流程，而不需在JEE堆疊上安裝完整的流程管理功能。 工作流程的開發與管理使用熟悉的AEM Workflow和AEM Inbox功能。 工作流程是自動化實際商業流程的基礎，這些流程跨越多個軟體系統、網路、部門甚至組織。
 
-設定後，這些工作流程可以手動觸發，以完成定義的程式，或在使用者提交表單或信件時以程式 [設計方式](/help/forms/using/cm-overview.md) 執行。 透過這項增強的AEM Workflow功能，AEM Forms提供兩種不同但類似的功能。 在部署策略中，您需要決定哪一種適合您。 檢視OSGi [上](/help/forms/using/capabilities-osgi-jee-workflows.md) 「以表單為中心的AEM工作流程」與JEE上「流程管理」的比較。 此外，如需部署拓撲，請參 [閱AEM Forms的架構和部署拓撲](/help/forms/using/aem-forms-architecture-deployment.md)。
+設定後，這些工作流程可以手動觸發，以完成定義的程式，或在使用者提交表單或信件時以程式設計 [方式執行](/help/forms/using/cm-overview.md) 。 透過這項增強的AEM Workflow功能，AEM Forms提供兩種不同但類似的功能。 在部署策略中，您需要決定哪一種適合您。 檢視OSGi [上](/help/forms/using/capabilities-osgi-jee-workflows.md) 「以表單為中心的AEM工作流程」與JEE上「流程管理」的比較。 此外，如需部署拓撲，請參 [閱AEM Forms的架構和部署拓撲](/help/forms/using/aem-forms-architecture-deployment.md)。
 
 OSGi上的表單導向工作流程可擴充 [AEM Inbox](/help/sites-authoring/inbox.md) ，並為AEM Workflow編輯器提供額外的元件（步驟），以新增對AEM Forms導向工作流程的支援。 擴充的AEM收件匣具有類似 [AEM Forms Workspace的功能](/help/forms/using/introduction-html-workspace.md)。 除了管理以人為中心的工作流程（核准、審閱等），您還可以使用AEM工作流程來自動化檔案服務相關的作業(例如 [Generate PDF](/help/sites-developing/workflows-step-ref.md))和電子簽署(Adobe Sign)檔案。
 
@@ -71,7 +71,7 @@ AEM提供直覺式使用者介面，可使用提供的工作流程步驟來建�
 1. 輸入 **[!UICONTROL Title]** and **[!UICONTROL Name]** （可選）。 例如，抵押貸款申請。 點選「 **[!UICONTROL 完成]**」。
 1. 選取新建立的工作流程模型，並點選「編 **輯」。** 現在，您可以新增工作流程步驟來建立商業邏輯。 首次建立工作流模型時，它包含：
 
-   * 步驟： 流開始和流結束。 這些步驟代表工作流程的開始和結束。 這些步驟是必要步驟，無法編輯或移除。
+   * 步驟：流開始和流結束。 這些步驟代表工作流程的開始和結束。 這些步驟是必要步驟，無法編輯或移除。
    * 名為步驟1的參與者步驟示例。 此步驟已設定為指派工作項目給管理員使用者。 移除此步驟。
 
 1. 啟用電子郵件通知。 您可以在OSGi上設定以表單為中心的工作流程，以傳送電子郵件通知給使用者或受指派者。 執行下列設定以啟用電子郵件通知：
@@ -82,7 +82,7 @@ AEM提供直覺式使用者介面，可使用提供的工作流程步驟來建�
 
 1. 建立工作流程階段。 工作流程可以有多個階段。 這些階段會顯示在「AEM收件匣」中，並報告工作流程的進度。
 
-   若要定義舞台，請點選「 ![info-circle](assets/info-circle.png) 」圖示以開啟工作流程模型屬性、開啟「 **[!UICONTROL Stages]** 」標籤、新增工作流程模型的階段，並點選「 **[!UICONTROL 儲存與關閉」]**。 對於貸款申請示例，請建立階段： 貸款申請、貸款申請狀態、待簽檔案和已簽署貸款檔案。
+   若要定義舞台，請點選「 ![info-circle](assets/info-circle.png) 」圖示以開啟工作流程模型屬性、開啟「 **[!UICONTROL Stages]** 」標籤、新增工作流程模型的階段，並點選「 **[!UICONTROL 儲存與關閉」]**。 對於貸款申請示例，請建立階段：貸款申請、貸款申請狀態、待簽檔案和已簽署貸款檔案。
 
 1. 將「指定任務」步驟 **[!UICONTROL 瀏覽器拖放到工作流模型中]** 。 將它作為模型的第一步。
 
@@ -142,7 +142,7 @@ AEM提供直覺式使用者介面，可使用提供的工作流程步驟來建�
 >
 >您必須是fd-administrator組的成員，才能建立和管理工作流應用程式。
 
-1. 在您的AEM作者例項中，前往「 ![工具](assets/tools.png) > **[!UICONTROL Forms]** **[!UICONTROL Manage Workflow Application]** 」（管理工作流程應用程式），然 ****&#x200B;後點選「CreateCreate」（建立）。
+1. 在您的AEM作者例項上，前往「 ![工具](assets/tools.png) > **[!UICONTROL Forms]** **[!UICONTROL Manage Workflow Application]** 」（管理工作流程應用程式），然 ****&#x200B;後點選「CreateCreate」（建立）。
 1. 在「建立工作流應用程式」窗口中，為以下欄位提供輸入，然後按一下「創 **[!UICONTROL 建」]**。 會建立新應用程式，並列在「工作流程應用程式」畫面中。
 
 <table> 
@@ -165,7 +165,7 @@ AEM提供直覺式使用者介面，可使用提供的工作流程步驟來建�
   </tr> 
   <tr> 
    <td>最適化表單</td> 
-   <td><p>指定最適化表單的路徑。 當使用者啟動應用程式時，會顯示指定的最適化表單。</p> <p><strong>注意</strong>: 工作流程應用程式不支援長度超過一頁或需要在Apple iPad上捲動的表單和PDF檔案。 當應用程式在Apple iPad上開啟時，當最適化表單或PDF檔案長於頁面時，第二個頁面的表單欄位和內容會遺失。</p> </td> 
+   <td><p>指定最適化表單的路徑。 當使用者啟動應用程式時，會顯示指定的最適化表單。</p> <p><strong>注意</strong>:工作流程應用程式不支援長度超過一頁或需要在Apple iPad上捲動的表單和PDF檔案。 當應用程式在Apple iPad上開啟時，當最適化表單或PDF檔案長於頁面時，第二個頁面的表單欄位和內容會遺失。</p> </td> 
   </tr> 
   <tr> 
    <td>存取群組</td> 
@@ -225,7 +225,7 @@ AEM Forms應用程式與AEM Forms伺服器同步，可讓您變更帳戶中的�
 管理員（fd-administrators組的成員）可以配置網路資料夾，以在用戶將檔案（如PDF檔案）放在資料夾中時運行預配置的工作流。 工作流完成後，它可以將結果檔案保存到指定的輸出資料夾。 此類資料夾稱為「 [Watched Folder」](/help/forms/using/watched-folder-in-aem-forms.md)。 請執行下列程式，以設定受監視的資料夾以啟動工作流程：
 
 1. 在您的AEM作者例項上，前往「工具 ![](assets/tools.png)**[!UICONTROL 表單>設定Watched資料夾」]**。 將顯示已配置的監視資料夾的清單。
-1. 點選 **[!UICONTROL 新]**。 隨即顯示欄位清單。 指定下列欄位的值，以設定工作流程的「監看資料夾」:
+1. 點選 **[!UICONTROL 新]**。 隨即顯示欄位清單。 為下列欄位指定值，以設定工作流程的「監看資料夾」:
 
 <table> 
  <tbody> 
