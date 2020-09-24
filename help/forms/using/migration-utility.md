@@ -5,13 +5,13 @@ description: 移轉公用程式可讓您將AEM Forms資產和檔案從AEM 6.3 Fo
 seo-description: 移轉公用程式可讓您將AEM Forms資產和檔案從AEM 6.3 Forms或舊版移轉至AEM 6.4 Forms。
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
-topic-tags: installing
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 0%
@@ -30,11 +30,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果升級不到位，對於Correponsement Management資產，您可以在每次導入資產時運行遷移。 對於通信管理遷移，您需要安裝Forms Compatibility Package。
+>如果升級不到位，對於Commentering Management資產，您可以在每次導入資產時運行遷移。 對於通信管理遷移，您需要安裝Forms Compatibility Package。
 
 ## 移轉方法 {#approach-to-migration}
 
-您可 [以從](/help/forms/using/upgrade.md) AEM Forms 6.3或6.2升級至最新版的AEM Forms 6.4，或執行全新安裝。 根據您是升級了先前的安裝還是執行了新安裝，您需要執行下列操作之一：
+您可 [以從](/help/forms/using/upgrade.md) AEM Forms 6.3或6.2升級至最新版的AEM Forms 6.4，或執行全新安裝。 根據您是否升級了先前的安裝或執行了新安裝，您需要執行下列操作之一：
 
 **就地升級**
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 **在安裝不當時**
 
-如果安裝不當（新鮮），則您必須先安裝 [AEMFD Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) （包括Corresponce Management Compatibility package），才能使用資產和文檔。
+如果安裝不當（新鮮），則您必須安裝 [AEMFD相容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) （包括通信管理相容性包），才能使用資產和文檔。
 
 然後，您需要在新的設定中匯入資產套件（zip或cmp），然後執行移轉公用程式來更新 [資產和檔案](#runningmigrationutility)。 由於向後 [相容性相關的更改](/help/sites-deploying/backward-compatibility.md) ,crx-repository中幾個資料夾的位置將發生更改。 從先前的設定手動匯出和匯入相依性（自訂資料庫和資產）至新鮮環境。
 
@@ -132,31 +132,31 @@ ht-degree: 0%
 
    * 表單資料模型雲端服務
 
-      * 源路徑： /etc/cloudservices/fdm
-      * 目標路徑： /conf/global/settings/cloudconfigs/fdm
+      * 源路徑：/etc/cloudservices/fdm
+      * 目標路徑：/conf/global/settings/cloudconfigs/fdm
    * Recaptcha
 
-      * 源路徑： /etc/cloudservices/recaptcha
-      * 目標路徑： /conf/global/settings/cloudconfigs/recaptcha
+      * 源路徑：/etc/cloudservices/recaptcha
+      * 目標路徑：/conf/global/settings/cloudconfigs/recaptcha
    * Adobe Sign
 
-      * 源路徑： /etc/cloudservices/echosign
-      * 目標路徑： /conf/global/settings/cloudconfigs/echosign
+      * 源路徑：/etc/cloudservices/echosign
+      * 目標路徑：/conf/global/settings/cloudconfigs/echosign
    * Typekit雲端服務
 
-      * 源路徑： /etc/cloudservices/typekit
-      * 目標路徑： /conf/global/settings/cloudconfigs/typekit
+      * 源路徑：/etc/cloudservices/typekit
+      * 目標路徑：/conf/global/settings/cloudconfigs/typekit
 
    移轉程式進行時，瀏覽器視窗會顯示下列內容：
 
-   * 更新資產時： 資產已成功更新。
-   * 移轉完成後： 完成資產移轉。
+   * 更新資產時：資產已成功更新。
+   * 移轉完成後：完成資產移轉。
 
    執行時，遷移實用程式執行以下操作：
 
-   * **新增標籤至資產**: 新增標籤「Correponsements Management: 移轉資產」/「最適化表單： 移轉資產」。 移轉資產，讓使用者能夠識別移轉的資產。 運行遷移實用程式時，系統中的所有現有資產都標籤為「已遷移」。
-   * **產生標籤**: 先前系統中出現的類別和子類別會建立為標籤，然後這些標籤會與AEM中的相關「對應管理」資產產生關聯。 例如，字母模板的類別（索賠）和子類別（索賠）將生成為標籤。
-   * **將版面和版面片段移至AEM 6.4 Forms使用者介面**: 如果您要從6.2升級至6.4，版面範本和版面片段會新增為AEM Forms 6.4使用者介面區段中的表單。
+   * **新增標籤至資產**:新增標籤「Correponsements Management:移轉資產」/「最適化表單：移轉資產」。 移轉資產，讓使用者能夠識別移轉的資產。 運行遷移實用程式時，系統中的所有現有資產都標籤為「已遷移」。
+   * **產生標籤**:先前系統中出現的類別和子類別會建立為標籤，然後這些標籤會與AEM中的相關「對應管理」資產產生關聯。 例如，字母模板的類別（索賠）和子類別（索賠）將生成為標籤。
+   * **將版面和版面片段移至AEM 6.4 Forms使用者介面**:如果您要從6.2升級至6.4，版面範本和版面片段會新增為AEM Forms 6.4使用者介面區段中的表單。
 
    >[!NOTE]
    >
