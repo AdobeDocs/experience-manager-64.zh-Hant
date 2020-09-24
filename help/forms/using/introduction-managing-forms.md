@@ -6,10 +6,10 @@ seo-description: AEM Forms提供管理Adaptive Forms和相關資產的工具。 
 uuid: 8a9fe83a-e9dc-410e-9bae-eca936c6eb8a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
+topic-tags: forms-manager, introduction
 discoiquuid: 6f9cb26a-ac7f-4218-827f-9d4d55b859b4
 translation-type: tm+mt
-source-git-commit: 1a671421c208d8b1b446765b9302877506dbddc2
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1605'
 ht-degree: 0%
@@ -47,13 +47,13 @@ AEM除了提供建立表單、檔案和相關資產的選項外，還提供建�
 
 「建立」按鈕是建立或上傳AEM Forms資產的程式起點。 它提供您建立以下項目的選項：
 
-* **互動式通訊**: 互動式通訊是個人化、互動式和裝置友好型的HTML數位通訊、陳述式或檔案。 互動式通訊在本質上是互動式的，並會根據使用者裝置和設定自動變更版面和設計。 如需詳細資訊，請參閱互 [動式通訊概觀](/help/forms/using/interactive-communications-overview.md)。
+* **互動式通訊**:互動式通訊是個人化、互動式和裝置友好型的HTML數位通訊、陳述式或檔案。 互動式通訊在本質上是互動式的，並會根據使用者裝置和設定自動變更版面和設計。 如需詳細資訊，請參閱互 [動式通訊概觀](/help/forms/using/interactive-communications-overview.md)。
 
-* **最適化表單：** 最適化表單是引人入勝且回應速度快的表單。 您可以根據使用者回應、裝置或工作環境，新增或移除表單區段，以自適應表單，以動態地配合使用者輸入。 製作 [最適化表單簡介](/help/forms/using/introduction-forms-authoring.md) ，提供最適化表單的詳細資訊。
+* **最適化表單：** 最適化表單是引人入勝且回應速度快的表單。 您可以根據使用者回應、裝置或工作環境，新增或移除表單區段，以動態地配合使用者輸入，來製作自適應表單。 製作 [最適化表單簡介](/help/forms/using/introduction-forms-authoring.md) ，提供最適化表單的詳細資訊。
 
 * **最適化表單片段：** 雖然每個表單都是專為特定用途而設計，但大部分表單中都有一些常見的區段，例如提供個人詳細資料，例如姓名和地址、家庭詳細資料、收入詳細資料等。 您可以為這些區段建立個別資產。 這些可重複使用、可獨立執行的區段稱為可調式表單片段。 如需詳細資訊，請參閱 [最適化表單片段](/help/forms/using/adaptive-form-fragments.md) 文章。
 
-* **表單集：** 表單集是HTML5表單的集合，分組在一起，並以單一表單集的形式呈現給使用者。 當使用者開始填寫表格集時，表格會從一個表格順暢地轉換為另一個表格。 最後，使用者只需按一下，就可以以單一實體形式提交所有表格。 如需詳細資訊，請參 [閱「AEM Forms中的表單集」](/help/forms/using/formset-in-aem-forms.md)。
+* **表單集：** 表單集是HTML5表單的集合，分組在一起，並以單一表單集的形式呈現給使用者。 當使用者開始填寫表格集時，表格會從一個表格順暢地轉換為另一個表格。 最後，使用者只需按一下，即可將所有表格以單一實體的形式提交。 如需詳細資訊，請參 [閱「AEM Forms中的表單集」](/help/forms/using/formset-in-aem-forms.md)。
 
 * **資料夾：** AEM Forms使用者介面使用資料夾來排列資產。 它支援兩種類型的資料夾：
 
@@ -68,7 +68,7 @@ AEM除了提供建立表單、檔案和相關資產的選項外，還提供建�
 
 * **從本機儲存區匯入檔案：** 您可以匯入PDF表單與檔案、表單範本（XFA表單）和其他資源（XSD的影像與XML架構）。 如需逐步指示，請參閱「匯入 [資產並匯出至AEM Forms」](/help/forms/using/import-export-forms-templates.md)。
 
-* **將AEM Forms資產與Workbench同步：** 您可以使用「從工作台檔案」選項，在AEM Forms使用者介面和Workbench之間同步資產。 它可確保AEM Forms使用者介面和Workbench的crx-repository資產選擇中提供所有資產。
+* **將AEM Forms資產與Workbench同步：** 您可以使用「從工作台檔案」選項，在AEM Forms使用者介面和Workbench之間同步資產。 它可確保AEM Forms使用者介面和Workbench的crx-repository資產選擇中都提供所有資產。
 
 ### 主題  {#themes}
 
@@ -116,12 +116,12 @@ AEM工具面板包含各種元件的工具。 若要導覽至AEM Forms特定工�
 * **麵包屑：** Breadcrumb代表目前主控台或資料夾的標題。 您可以按一下「階層連結」選項，在階層中較高的檔案夾層級之間導覽。
 * **檢視切換器：** 您可以按一下「檢視切換器」圖示 ![檢視清單](assets/viewlist.png) ，或 ![檢視卡](assets/viewcard.png) ，快速在清單和資訊卡檢視之間切換。 如需一般使用者介面元件的詳細資訊，請參 [閱使用作者環境](/help/sites-authoring/basic-handling.md)。
 * **搜尋：** 搜尋選項 ![搜尋](assets/search.png) ，可讓您快速尋找並跳至所需的內容和工具。 輸入內容名稱或產品功能並從建議中選擇，例如，輸入「檔案」以快速尋找並導覽至「表單與檔案」或「檔案片段」主控台。 如需搜尋的詳細資訊，請參閱AEM 6.2搜 [尋文章](/help/sites-authoring/search.md)
-* **動作工具列**: 在選取資產時，動作工具列會顯示在資產清單的上方。 它包含所選資產的所有管理工具。 您可以將滑鼠指標暫留在工具圖示上，以檢視說明其功能的工具提示
+* **動作工具列**:在選取資產時，動作工具列會顯示在資產清單的上方。 它包含所選資產的所有管理工具。 您可以將滑鼠指標暫留在工具圖示上，以檢視說明其功能的工具提示
 
 >[!NOTE]
 >
 >當使用者執行任何「表單與檔案」控制台的搜尋時，邊欄僅包含「篩 **選器與選項」**。 您可以使用「篩選與選項」來執行進階搜尋。
 
-* **動作工具列**: 在選取資產時，動作工具列會顯示在資產清單的上方。 它包含所選資產的所有管理工具。 您可以將滑鼠指標暫留在工具圖示上，以檢視說明其功能的工具提示
+* **動作工具列**:在選取資產時，動作工具列會顯示在資產清單的上方。 它包含所選資產的所有管理工具。 您可以將滑鼠指標暫留在工具圖示上，以檢視說明其功能的工具提示
 
 ![最適化表單的動作工具列](assets/action-tool-bar.png)
