@@ -6,10 +6,10 @@ seo-description: 本文列出可與「最適化表單編輯器」、「主題編
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
-topic-tags: correspondence-management
+topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 | 關閉選定最適化表單元件的屬性瀏覽器 | Ctrl+Alt+W | Command+Alt+W |
 | 在「屬性」瀏覽器中保存所選自適應表單元件的更改 | Ctrl+S | Command+S |
 | 所選最適化表單元件的編輯規則 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 在「預覽」和目前選取的模式（例如編輯、腳手架等）之間切換 | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
+| 在預覽和目前選取的模式之間切換（例如編輯、支架等） | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
 | 還原上次變更 | Ctrl+Z | Ctrl+Z&amp;ast; |
 | 重做上次變更 | Ctrl+Y | Ctrl+Y&amp;Amp;ast; |
 | 選取多個元件 | 按住Shift鍵並按一下 | 按住Shift鍵並按一下 |
@@ -50,8 +50,8 @@ ht-degree: 0%
 >
 >桌上型裝置上的多選：
 >
->* Windows: 按住Ctrl鍵並按一下所需元件。
->* MAC OS: 按住Command鍵並按一下所需元件。
+>* Windows:按住Ctrl鍵並按一下所需元件。
+>* MAC OS:按住Command鍵並按一下所需元件。
 
 >
 
