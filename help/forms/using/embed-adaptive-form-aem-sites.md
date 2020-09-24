@@ -6,10 +6,10 @@ seo-description: 您可以在AEM網站頁面中內嵌最適化表單。 使用�
 uuid: 59b49e2f-6d95-42e5-b31e-fc40936c42d2
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: interactive-communications, author
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 translation-type: tm+mt
-source-git-commit: d6595efef33b3c296d427dcfac39c377bd42fc9f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 0%
@@ -27,9 +27,9 @@ AEM Forms可讓表單開發人員將最適化表單和互動式通訊順暢地�
 
 在「AEM網站」頁面中，您可以使用下列方式新增最適化表單或互動式通訊：
 
-* **[AEM Forms Container元件](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)**AEM Forms提供可新增至網站頁面的元件。 AEM Forms Container元件可讓您內嵌最適化表單和互動式通訊。
+* **[AEM Forms Container元件](/help/forms/using/embed-adaptive-form-aem-sites.md#af-component)** AEM Forms提供可新增至網站頁面的元件。 AEM Forms Container元件可讓您內嵌最適化表單和互動式通訊。
 
-* **[資產瀏覽](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**器您建立的所有表單和互動式通訊都可在「資產」下取用。 您可以將表單拖放為頁面上的資產。
+* **[資產瀏覽](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**&#x200B;器您建立的所有表單和互動式通訊都可在「資產」下取用。 您可以將表單拖放為頁面上的資產。
 
 ## 必備條件 {#prerequisites}
 
@@ -54,15 +54,15 @@ AEM Forms可讓表單開發人員將最適化表單和互動式通訊順暢地�
 1. 在「編輯AEM Forms容器」對話方塊中，指定下列項目。
 
    * **資產類型：** 選取要內嵌的資產類型。 選項包括可調式表單和互動式通訊
-   * **資產路徑**: 瀏覽並選擇要嵌入的最適化表單或互動式通訊。 如果您從「資產」瀏覽器中拖放，則會自動填入。
-   * （僅限最適化表單）貼 **文提交**: 選擇表單提交時要觸發的動作。 您可以選擇顯示感謝訊息或感謝頁面。
+   * **資產路徑**:瀏覽並選擇要嵌入的最適化表單或互動式通訊。 如果您從「資產」瀏覽器中刪除，則會自動填入。
+   * （僅限最適化表單）貼 **文提交**:選擇表單提交時要觸發的動作。 您可以選擇顯示感謝訊息或感謝頁面。
 
-      * **感謝訊息**: 使用Rich Text編輯器撰寫訊息，以在表單提交時顯示。 只有在您選擇顯示感謝訊息時，此選項才可用。
-      * **感謝頁面**: 瀏覽並選取要在表單提交時顯示的頁面。 只有在您選擇顯示感謝頁面時，此選項才可用。
-      * **提交時刷新頁**: 啟用以重新整理包含內嵌最適化表單的頁面，以顯示感謝頁面。 否則，感謝頁面會取代AEM Forms容器中的最適化表單，而不會重新整理頁面。 只有在您選擇顯示感謝頁面時，此選項才可用。
-   * **主題**: 選取主題，以定義最適化表單或互動式通訊元件的樣式。 樣式包括外觀屬性，如字型樣式、背景顏色、尺寸和對齊方式。
-   * **高度**: 指定容器的高度。 保留為空白，以自動調整容器大小。
-   * **CSS用戶端程式庫**: 指定CSS用戶端程式庫的路徑。
+      * **感謝訊息**:使用Rich Text編輯器撰寫訊息，以在表單提交時顯示。 只有當您選擇顯示感謝訊息時，才可使用此選項。
+      * **感謝頁面**:瀏覽並選取要在表單提交時顯示的頁面。 只有在您選擇顯示感謝頁面時，此選項才可用。
+      * **提交時刷新頁**:啟用以重新整理包含內嵌最適化表單的頁面，以顯示感謝頁面。 否則，感謝頁面會取代AEM Forms容器中的最適化表單，而不會重新整理頁面。 只有在您選擇顯示感謝頁面時，此選項才可用。
+   * **主題**:選取主題，以定義最適化表單或互動式通訊元件的樣式。 樣式包括外觀屬性，如字型樣式、背景顏色、尺寸和對齊方式。
+   * **高度**:指定容器的高度。 保留為空白，以自動調整容器大小。
+   * **CSS用戶端程式庫**:指定CSS用戶端程式庫的路徑。
 
 
 1. 儲存設定。 最適化表單或互動式通訊現在內嵌在頁面中。
