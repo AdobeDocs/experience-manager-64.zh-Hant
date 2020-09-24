@@ -7,10 +7,10 @@ uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '909'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 服務容器提供下列功能：
 
-* 可讓AEM Forms服務使用不同的方法來呼叫。 您可以通過設定端點來配置服務，以便使用所有方法調用該服務： 遠端、Java API、web services和REST。 (請參 [閱以程式設計方式管理端點](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints)。)
+* 可讓AEM Forms服務使用不同的方法來呼叫。 您可以通過設定端點來配置服務，以便使用所有方法調用該服務：遠端、Java API、web services和REST。 (請參 [閱以程式設計方式管理端點](/help/forms/developing/programmatically-endpoints.md#programmatically-managing-endpoints)。)
 * 將消息轉換為稱為調用請求的標準化格式。 調用請求從客戶端應用程式（或其他服務）發送到位於服務容器中的服務。 調用請求包含諸如要調用的服務的名稱和執行該操作所需的資料值之類的資訊。 許多服務都需要檔案來執行操作。 因此，呼叫請求通常包含檔案，檔案可以是PDF資料、XDP資料、XML資料等。
 * 將調用請求路由到適當的服務（要調用的服務的名稱是調用請求的一部分）。
 * 執行任務，例如確定呼叫者是否具有調用指定服務操作的權限。 呼叫請求必須包含有效的AEM表單使用者名稱和密碼。
