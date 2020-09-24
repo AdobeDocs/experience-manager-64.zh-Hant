@@ -7,10 +7,10 @@ uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -67,19 +67,19 @@ JAR檔案清單位於「快速啟動」開頭的注釋部分。 例如，以下�
 
 位於*「使用AEM Forms進行程式設計」*中的「大部分快速入門」會呼叫特定服務，以執行作業。 不過，有些「快速入門」會叫用多個AEM Forms服務，以執行指定的工作流程。 下列清單提供叫用多個AEM Forms服務的Java快速入門：
 
-[快速入門（SOAP模式）: 使用Java API將AEM Forms Repository中的檔案傳遞至「輸出」服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) （叫用「儲存庫與輸出」服務）
+[快速入門（SOAP模式）:使用Java API將AEM Forms Repository中的檔案傳遞至「輸出」服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) （叫用「儲存庫與輸出」服務）
 
-[快速入門（SOAP模式）: 使用Java API根據片段建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) （叫用Assembler and Output服務）
+[快速入門（SOAP模式）:使用Java API根據片段建立PDF檔案](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) （叫用Assembler and Output服務）
 
-[快速入門（SOAP模式）: 使用Java API使用提交的XML資料建立PDF檔案](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) （叫用「表單」、「輸出」和「檔案管理」服務）
+[快速入門（SOAP模式）:使用Java API使用提交的XML資料建立PDF檔案](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) （叫用「表單」、「輸出」和「檔案管理」服務）
 
-[快速入門（SOAP模式）: 使用Java API將檔案傳送至Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) （叫用Forms and Document Management服務）
+[快速入門（SOAP模式）:使用Java API將檔案傳送至Forms Service](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) （叫用Forms and Document Management服務）
 
-[快速入門（SOAP模式）: 使用Java API數位簽署以XFA為基礎的表單](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) （叫用表單與簽名服務）
+[快速入門（SOAP模式）:使用Java API數位簽署以XFA為基礎的表單](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) （叫用表單與簽名服務）
 
-[快速入門（SOAP模式）: 使用Java API管理角色和權限](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) （調用DirectoryManager和AuthorizationManager服務）
+[快速入門（SOAP模式）:使用Java API管理角色和權限](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) （調用DirectoryManager和AuthorizationManager服務）
 
-[快速入門（SOAP模式）: 使用Java API將檔案傳送至輸出服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) （叫用輸出與檔案管理服務）
+[快速入門（SOAP模式）:使用Java API將檔案傳送至輸出服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) （叫用輸出與檔案管理服務）
 
 >[!NOTE]
 >
@@ -87,5 +87,5 @@ JAR檔案清單位於「快速啟動」開頭的注釋部分。 例如，以下�
 
 >[!NOTE]
 >
->大多數Web服務快速入門都以C#編寫，使用。NET架構。 不過，您可以建立用戶端應用程式邏輯，以便在支援SOAP標準的任何開發環境中叫用AEM Forms服務。 (請參 [閱「使用Web Services叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)」)。
+>大多數Web服務快速入門都以C#編寫，使用。NET架構。 不過，您可以建立用戶端應用程式邏輯，以便在支援SOAP標準的任何開發環境中叫用AEM Forms服務。 (請參 [閱使用Web Services叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services))。
 
