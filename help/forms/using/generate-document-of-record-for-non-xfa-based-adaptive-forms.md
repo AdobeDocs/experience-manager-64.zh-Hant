@@ -5,12 +5,12 @@ description: 說明如何為記錄檔案(DoR)產生範本以用於最適化表�
 seo-description: 說明如何為記錄檔案(DoR)產生範本以用於最適化表單。
 uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 translation-type: tm+mt
-source-git-commit: 1e46cdf8f52426ec3bb1c0712355b7bedf270b13
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 2%
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 ## 自動產生記錄檔案的元件 {#components-to-automatically-generate-a-document-of-record}
 
-要為自適應表單生成記錄文檔，您需要以下元件：
+要生成適應性表單的記錄文檔，您需要以下元件：
 
 **最適化表單** ：您要為其產生記錄檔案的最適化表單。
 
@@ -314,14 +314,14 @@ See [Document of Record Template Configuration](#document-of-record-template-con
 
 1. 根據您是選擇預設模板還是自定義模板，「記錄文檔」頁籤中將顯示以下部分或全部屬性。 請適當指定下列項目：
 
-   * **標誌影像**: 您可以選擇使用最適化表單中的標誌影像、從DAM中選擇一個，或從電腦上傳一個。
+   * **標誌影像**:您可以選擇使用最適化表單中的標誌影像、從DAM中選擇一個，或從電腦上傳一個。
    * **表單標題**
    * **頁首文字**
    * **免責聲明標籤**
    * **免責聲明**
    * **免責聲明文字**
-   * **重音顏色**: 在文檔或記錄PDF中呈現標題文本和分隔線的顏色
-   * **字型系列**: 記錄PDF檔案中文字的字型系列
+   * **重音顏色**:在文檔或記錄PDF中呈現標題文本和分隔線的顏色
+   * **字型系列**:記錄PDF檔案中文字的字型系列
    * **對於「核取方塊」和「選項按鈕」元件，僅顯示選取的值**
    * **所選多個值的分隔符號**
    * **包含未綁定到資料模型的表單對象**
@@ -368,7 +368,7 @@ See [Document of Record Template Configuration](#document-of-record-template-con
 
 **欄位層級設定**
 
-* **從記錄檔案排除**: 將屬性設為true會將欄位從記錄檔案中排除。 這是名為的可指令碼屬性 `excludeFromDoR`。 其行為取決於隱藏 **的表單層級屬性時** ，從DoR排除欄位。
+* **從記錄檔案排除**:將屬性設為true會將欄位從記錄檔案中排除。 這是名為的可指令碼屬性 `excludeFromDoR`。 其行為取決於隱藏 **的表單層級屬性時** ，從DoR排除欄位。
 
 * **將面板顯示為表格：** 如果面板中的欄位少於6個，將屬性設定為記錄檔案中的表格。 僅適用於面板。
 * **從記錄檔案排除標題：** 設定屬性會從記錄檔案中排除面板／表格的標題。 僅適用於面板和表格。
@@ -383,7 +383,7 @@ See [Document of Record Template Configuration](#document-of-record-template-con
 
 在處理適應性表單的記錄檔案時，請記住下列考量與限制。
 
-* 記錄範本檔案不支援豐富式文字。 因此，靜態自適應格式或最終用戶填寫的資訊中的任何富文本都顯示為記錄文檔中的純文字檔案。
+* 記錄範本檔案不支援RTF。 因此，靜態自適應格式或最終用戶填寫的資訊中的任何富文本都顯示為記錄文檔中的純文字檔案。
 * 最適化表單中的檔案片段不會出現在記錄檔案中。 不過，支援最適化表單片段。
 * 記錄檔案僅用於列印用途。
 * 不支援在為基於XML Schema的自適應表單生成的記錄文檔中的內容綁定。
