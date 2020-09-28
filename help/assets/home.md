@@ -1,16 +1,17 @@
 ---
-title: AEM 6.4 Assets使用指南
+title: 資產指南
 description: 本指南涵蓋所有AEM Assets工作，例如如何建立、管理、傳送和最佳化數位資產。
+user-guide-title: 資產指南
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '336'
 ht-degree: 19%
 
 ---
 
 
-# AEM 6.4 Assets使用指南
+# 資產指南
 
 本指南涵蓋所有AEM Assets工作，例如如何建立、管理、傳送和最佳化數位資產。
 
