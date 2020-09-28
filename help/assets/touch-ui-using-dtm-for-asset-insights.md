@@ -3,9 +3,9 @@ title: 透過DTM啟用資產見解
 description: 瞭解如何使用Adobe動態標籤管理(DTM)來啟用資產分析。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 994dd56ce13b2d1f959e392e181d752e994bf198
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,11 @@ ht-degree: 0%
 
 # 透過DTM啟用資產見解 {#enabling-asset-insights-through-dtm}
 
-Adobe動態標籤管理是可啟動數位行銷工具的工具。 Adobe Analytics客戶可免費取得。
+Adobe動態標籤管理是可啟動數位行銷工具的工具。 Adobe Analytics客戶可免費取得。 您可以自訂追蹤代碼，讓協力廠商CMS解決方案使用「資產前瞻分析」，或使用DTM插入「資產前瞻分析」標籤。 只有影像才支援並提供見解。
 
-雖然您可以自訂追蹤代碼，讓協力廠商CMS解決方案能夠使用「資產前瞻分析」，但Adobe建議您使用DTM插入「資產前瞻分析」標籤。
+>[!CAUTION]
+>
+>Adobe DTM已過時，改用Adobe Experience Platform Launch，即將 [結束](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建議您使用 [Launch獲取資產見解](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
 
 執行下列步驟，透過DTM啟用資產分析：
 
@@ -32,7 +34,7 @@ Adobe動態標籤管理是可啟動數位行銷工具的工具。 Adobe Analytic
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
-1. 在「規 **[!UICONTROL 則]** 」標籤中，從導覽窗格 **[!UICONTROL 選取「頁面載入規則]** 」，並點選／按一下「 **[!UICONTROL 建立新規則」]**。
+1. 在「規 **[!UICONTROL 則]** 」標籤中，從導覽窗格 **[!UICONTROL 選取「頁面載入規則]** 」，並點選／按一 **[!UICONTROL 下「建立新規則」]**。
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -49,7 +51,6 @@ Adobe動態標籤管理是可啟動數位行銷工具的工具。 Adobe Analytic
    >* 將刪除對 `assetAnalytics.dispatcher.init()` 的調用。 當DTM的Adobe Analytics工具載入完成時，預期會呼叫此函式。
    >* 視資產前瞻分析頁面追蹤器的托管位置（例如AEM、CDN等）而定，指令碼來源的來源可能需要變更。
    >* 對於AEM代管的頁面追蹤器，來源應使用分派程式例項的主機名稱指向發佈例項。
-
 
 
 1. 開啟 [https://dtm.adobe.com](https://dtm.adobe.com)。 按一下Web屬性中的「概述」，然後按一下「新增工具」或開啟現有的Adobe Analytics工具。 建立工具時，可將「配置方法」(Configuration Method)設定為「自動」(Automatic)。
