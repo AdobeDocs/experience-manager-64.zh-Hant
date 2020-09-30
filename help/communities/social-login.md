@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 0%
       * 建立和發佈 [Twitter Connect雲端服務](#create-a-twitter-connect-cloud-service)。
 
 
-1. [**啟用&#x200B;**社群網站](#enable-social-login)的社交登入。
+1. [**啟用** 社群網站](#enable-social-login) 的社交登入。
 
 有兩個基本概念：
 
@@ -87,7 +87,7 @@ ht-degree: 0%
       * 若為 *網站URL*，請輸入 `  https://<server>:<port>.`
    * 在「 *顯示名稱*」中，輸入要用作Facebook連線服務標題的標題。
    * 對於 *類別*，建議選擇「頁 *面的應用程式」* ，但可以是任何項目。
-   * *新增產品：  Facebook登入*
+   * *新增產品： Facebook登入*
       * 若為 *有效的OAuth重新導向URI*，請輸入 `  https://<server>:<port>.`
 
 >[!NOTE]
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ### 建立Facebook Connect Cloud服務 {#create-a-facebook-connect-cloud-service}
 
-Adobe Granite OAuth應用程式和Provider [](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) （透過建立雲端服務設定實例化）例項可識別新增使用者的Facebook應用程式和成員群組。
+Adobe Granite OAuth應用程式和Provider [](#adobe-granite-oauth-application-and-provider) （透過建立雲端服務設定實例化）例項可識別新增使用者的Facebook應用程式和成員群組。
 
 1. 在AEM作者例項上，以管理員權限登入。
 1. 從全域導覽中，選 **[!UICONTROL 取「工具>雲端服務> Facebook Social登入設定」]**。
@@ -119,8 +119,8 @@ Adobe Granite OAuth應用程式和Provider [](https://chl-author.corp.adobe.com/
    * **[!UICONTROL 應用程式ID/API金鑰]** (必&#x200B;*要*)輸入Facebook應 ***用程式的應用程式ID*** 。 這會識別 [從對話方塊建立的Adobe Granite OAuth應用程式和Provider](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 執行個體。
    * **[!UICONTROL App Secret]** (必&#x200B;*要*)輸入Facebook應 ***用程式的App Secret*** 。
    * **[!UICONTROL 建立使用者]** ：如果勾選，使用Facebook帳戶登入將建立AEM使用者項目，並將其新增為所選使用者群組的成員。  已勾選預設值（強烈建議）。
-   * **[!UICONTROL 遮色片使用者ID]**: 保持未選定狀態。
-   * **[!UICONTROL 範圍電子郵件]**: 應從Facebook擷取使用者的電子郵件ID。
+   * **[!UICONTROL 遮色片使用者ID]**:保持未選定狀態。
+   * **[!UICONTROL 範圍電子郵件]**:應從Facebook擷取使用者的電子郵件ID。
    * **[!UICONTROL 「新增至使用者群組]** 」選取「新增使用者群組」，為要新增使用者的社群 [網站](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html) ，選擇一或多個成員群組。
 
    >[!NOTE]
@@ -176,7 +176,7 @@ AEM Communities提供者可擴充 [Adobe Granite OAuth應用程式和提供者�
 
    * **[!UICONTROL 啟用欄位]**
 
-      如果勾選，則會在向Facebook要求使用者驗證和資訊時指定列出的欄位。 預設值為取消選中。
+      勾選後，列出的欄位會在向Facebook要求使用者驗證和資訊時指定。 預設值為取消選中。
 
    * **[!UICONTROL 欄位]**
 
@@ -210,7 +210,7 @@ Facebook和Twitter的後續步驟相同：
 
 ### 建立Twitter應用程式 {#create-a-twitter-app}
 
-必須有已設定的Twitter應用程式才能啟用Twitter社交登入。
+必須有已設定的Twitter應用程式，才能啟用Twitter社交登入。
 
 請依照最新指示，在https://apps.twitter.com建立新的Twitter應用 [程式](https://apps.twitter.com/)。
 
@@ -227,17 +227,17 @@ Facebook和Twitter的後續步驟相同：
    >
    >若要開發，https://127.0.0.1/將有效。
 
-1. 建立應用程式後，請找出「 **[!UICONTROL 消費者(API)金鑰]** 」 **[!UICONTROL 和「消費者(API)密碼」]**。 設定 [Twitter雲端服務時，需要此資訊](#createatwittercloudservice)。
+1. 建立應用程式後，請找出 **[!UICONTROL 使用者(API)金鑰]****[!UICONTROL 和使用者(API)密碼]**。 設定 [Twitter雲端服務時，需要此資訊](#createatwittercloudservice)。
 
 #### 權限 {#permissions}
 
 在Twitter應用程式管理的權限區段中：
 
-* **[!UICONTROL 存取]**: 選擇 `Read only`。
+* **[!UICONTROL 存取]**:選擇 `Read only`。
 
    * 不支援其他選項
 
-* **[!UICONTROL 其他權限]**: （可選）選 `Request email addresses from users`擇。
+* **[!UICONTROL 其他權限]**:（可選）選 `Request email addresses from users`擇。
 
    * 如果未選取，AEM中的使用者設定檔將不包含其電子郵件地址。
    * Twitter的指示說明需要採取的其他步驟。
@@ -354,7 +354,7 @@ Facebook和Twitter的後續步驟相同：
 * 如果尚未登入Facebook或Twitter，請使用適當的認證登入
 * 根據Facebook或Twitter應用程式顯示的對話方塊，可能需要授與權限
 * 請注意，頁面頂端的工具列已更新，以反映成功登入
-* 選擇 **[!UICONTROL 配置檔案]**: 「設定檔」頁面會顯示使用者的頭像、名字和姓氏。 它也會根據允許的欄位／參數，顯示來自Facebook或Twitter設定檔的資訊。
+* 選擇 **[!UICONTROL 配置檔案]**:「設定檔」頁面會顯示使用者的頭像、名字和姓氏。 它也會根據允許的欄位／參數，顯示來自Facebook或Twitter設定檔的資訊。
 
 ## AEM Platform OAuth組態 {#aem-platform-oauth-configurations}
 
@@ -443,7 +443,7 @@ Facebook和Twitter的後續步驟相同：
 
 在作者例項上，以管理權限登入：
 
-1. 從全域導覽： 選 **擇「工[具」,CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md)。**
+1. 從全域導覽：選 **擇「工[具」,CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md)。**
 1. 從ntBaseLucene的副本建立名為ntBaseLucene-oauth的索引：
 
    * 在node /oak:index下
@@ -455,10 +455,10 @@ Facebook和Twitter的後續步驟相同：
 
 1. 修改node ntBaseLucene-oauth的屬性：
 
-   * **[!UICONTROL indexPath]**: /oak:index/ntBaseLucene-oauth
-   * **[!UICONTROL 名稱]**: oauthid-123xxxx
-   * **[!UICONTROL reindex]**: true
-   * **[!UICONTROL reindexCount]**: 1
+   * **[!UICONTROL indexPath]**:/oak:index/ntBaseLucene-oauth
+   * **[!UICONTROL 名稱]**:oauthid-123xxxx
+   * **[!UICONTROL reindex]**:true
+   * **[!UICONTROL reindexCount]**:3
 
 1. 在node /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties下：
 
@@ -466,11 +466,11 @@ Facebook和Twitter的後續步驟相同：
    * 將cqTags重新命名為oauthid-123xxxx
    * 修改節點oauthid-123xxxx的屬性
 
-      * **[!UICONTROL 名稱]**: oauthid-123xxxx
+      * **[!UICONTROL 名稱]**:oauthid-123xxxx
    * 選擇「 **[!UICONTROL 全部保存]**」。
 
 
-**&amp;ast;** 對於名 **稱** Authid-*123*，名稱為Adobe App Granite Application *OAA AndFacebook Proviroderconfiguration的Authid-* APP Or KeyCouser ****************[](social-login.md#adobe-granite-oauth-application-and-provider)(KEYIDCropridConsumer)ID ID INSID INSID Thid Thid ThinThinTinTinPaTinPerPaTidPer的值，
+**&amp;ast;** 對於名 **稱** Authid-*123*，名稱為Adobe App Granite Application *OAA AndFacebook Proviroderconfiguration的Authid-* APP Or KeyCouser ****************[](social-login.md#adobe-granite-oauth-application-and-provider)(KEYKeyJDConsumer)，是CroidAdGridComeChid Chidid Chrid ChrinanidTPaninidPTTinininPPainininTidPTPPTinin的TP(TininininininininininPTTPTAininiTini
 
 ![chlimage_1-492](assets/chlimage_1-492.png)
 
