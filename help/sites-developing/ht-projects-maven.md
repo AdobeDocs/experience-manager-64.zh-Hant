@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
+source-git-commit: 821cbc7fc1f92f1ac2a4044798c7e008c6248b92
 workflow-type: tm+mt
-source-wordcount: '2247'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,18 +31,18 @@ Apache Maven是開放原始碼工具，可自動建立並提供高品質專案�
 * 不受IDE限制的開發環境
 * Adobe提供的Maven原型和文物使用
 * 使用Apache Sling和Apache Felix工具集進行Maven開發設定
-* 輕鬆匯入IDE; 例如，Eclipse和／或IntelliJ
+* 輕鬆匯入IDE;例如，Eclipse和／或IntelliJ
 * 輕鬆與持續整合系統整合
 
 ## Experience Manager API相依性 {#experience-manager-api-dependencies}
 
 ### 什麼是UberJar? {#what-is-the-uberjar}
 
-「UberJar」是Adobe提供之特殊Java封存檔(JAR)檔案的非正式名稱。 此JAR檔案包含Adobe Experience Manager公開的所有公開Java API。 它也包含有限的外部程式庫，尤其是AEM中所有可用的公開API，這些API來自Apache Sling、Apache Jackrabbit、Apache Lucene、Google Guava，以及兩個用於影像處理的程式庫（Werner Randelshofer的CYMK JPEG ImageIO程式庫和Twelevelweke Muxines影像庫）。 UberJar僅包含API介面和類別，這表示它僅包含由AEM中的OSGi套件匯出的介面和類別。 它還包含 *MANIFEST.MF* 檔案，其中包含所有這些匯出封裝的正確封裝匯出版本，因此可確保以UberJar建立的專案具有正確的封裝匯入範圍。
+「UberJar」是Adobe提供之特殊Java封存(JAR)檔案的非正式名稱。 此JAR檔案包含Adobe Experience Manager公開的所有公開Java API。 它也包含有限的外部程式庫，尤其是AEM中所有可用的公開API，這些API來自Apache Sling、Apache Jackrabbit、Apache Lucene、Google Guava，以及兩個用於影像處理的程式庫（Werner Randelshofer的CYMK JPEG ImageIO程式庫和TweleveWeke Muxines影像庫）。 UberJar僅包含API介面和類別，這表示它僅包含由AEM中的OSGi套件匯出的介面和類別。 它還包含 *MANIFEST.MF* 檔案，其中包含所有這些匯出封裝的正確封裝匯出版本，因此可確保以UberJar建立的專案具有正確的封裝匯入範圍。
 
 ### 為什麼Adobe會建立UberJar? {#why-did-adobe-create-the-uberjar}
 
-過去，開發人員必須管理相對大量的個別相依性，以至於不同AEM程式庫，而且當使用每個新API時，必須將一或多個個別相依性新增至專案。 在一個項目中，UberJar的引入導致30個單獨的依賴項被從項目中刪除。
+過去，開發人員必須管理相對較多的個別相依性，以至於不同AEM程式庫，而且當使用每個新API時，必須將一或多個個別相依性新增至專案。 在一個項目中，UberJar的引入導致30個單獨的依賴項被從項目中刪除。
 
 ### 我要如何使用UberJar? {#how-do-i-use-the-uberjar}
 
@@ -60,6 +60,10 @@ Apache Maven是開放原始碼工具，可自動建立並提供高品質專案�
 
 如果您的公司已使用Maven Repository Manager（如Sonatype Nexus、Apache Archiva或JFrog Artifactory），請將適當的配置添加到項目中以引用此儲存庫管理器，並將Adobe的Maven儲存庫([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/))添加到儲存庫管理器。
 
+>[!NOTE]
+>
+>從AEM 6.4.8.2開始，UberJar和其他相關物件都可在 [Maven Central儲存庫中取用](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/) ，而非Adobe Public Maven儲存庫(repo.adobe.com)。 主UberJar檔案已更名為 `uber-jar-<version>.jar`。 因此，標籤沒 `classifier`有 `apis` 任何值和值 `dependency` 。
+
 如果您不使用儲存庫管理器，則需要將儲存庫元 *素添加* 到 ** pom.xml檔案中：
 
 ```xml
@@ -67,7 +71,7 @@ Apache Maven是開放原始碼工具，可自動建立並提供高品質專案�
     <repository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </repository>
 </repositories>
@@ -75,7 +79,7 @@ Apache Maven是開放原始碼工具，可自動建立並提供高品質專案�
     <pluginRepository>
         <id>adobe-public-releases</id>
         <name>Adobe Public Repository</name>
-        <url>https://repo.adobe.com/nexus/content/groups/public/</url>
+        <url>https://repo.maven.apache.org/maven2/</url>
         <layout>default</layout>
     </pluginRepository>
 </pluginRepositories>
@@ -92,7 +96,7 @@ GITHUB代碼
 >
 >您也可以在Maven *settings.xml檔案中設定這些儲存庫* 。
 
-其他建置系統的使用者（例如Apache Ant、Gradle）應遵循類似的步驟，並依其所選工具的特定語法進行調整。
+其他建置系統的使用者（例如Apache Ant、Gradle）應遵循類似的步驟，以符合其所選工具的特定語法。
 
 ### UberJar有什麼用？ {#what-can-i-do-with-the-uberjar}
 
@@ -405,7 +409,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 </workspaceFilter>
 ```
 
-您還需要將maven-resources-plugin重新配置為不將這些檔案包含在包中： filter.xml檔案不會在安裝套件時套用，但只有在使用套件管理員重新建立套件時才會套用。
+您還需要將maven-resources-plugin重新配置為不將這些檔案包含在包中：filter.xml檔案不會在安裝套件時套用，但只有在使用套件管理員重新建立套件時才會套用。
 
 依此方 `<resources>` 式變更內容中的區段：
 
@@ -462,7 +466,7 @@ public class ClassWhichUsesAnInstanceMethodFromAPITest {
 * 我們告訴它要編譯 `${project.build.directory}/jsps-to-compile`
 * 並將結果輸 `${project.build.directory}/ignoredjspc` 出至 `myproject/content/target/ignoredjspc`(
 
-* 我們設定maven-resources-plugin，將JSP複製到 `${project.build.directory}/jsps-to-compile``libs/` generate-sources階段，並設定它不複製資料夾(因為這是AEM產品程式碼，我們不想產生我們專案編譯的相依性，也不需要驗證它是否編譯。
+* 我們設定maven-resources-plugin，將JSP複製到 `${project.build.directory}/jsps-to-compile``libs/` generate-sources階段，並設定它不複製資料夾(因為這是AEM產品程式碼，我們不想產生我們專案編譯的相依性，也不需要驗證它是否已編譯。
 
 如上所述，我們的主要目標是驗證JSP，並確保如果JSP包含錯誤，則生成過程會失敗。 這就是為什麼我們將它們編譯到一個單獨的目錄中，而這個目錄會被忽略（事實上，隨後會立即刪除，如您稍後所見）。
 
