@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 6%
 
 ---
@@ -32,14 +32,14 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
 * 使用AEM工作流程的指派工作步驟和檔案服務步驟
 * 在自適應表單中使用自適應表單
 
-帳單API不會計入頁數、檔案或表單的長度，或轉譯檔案的最終格式。 事務處理報表將事務處理分為三類： 已處理的檔案、已轉譯的檔案和已提交的表單。
+帳單API不會計入頁數、檔案或表單的長度，或轉譯檔案的最終格式。 事務處理報表將事務處理分為三類：已處理的檔案、已轉譯的檔案和已提交的表單。
 
 * **提交的表單：** 當從使用AEM Forms建立的任何類型表單提交資料，且資料會提交至任何資料儲存存放庫或資料庫時，即視為表單提交。 例如，提交最適化表單、HTML5表單、PDF表單和表單集都會視為提交的表單。 表單集中的每個表單都被視為提交。 例如，如果表單集有5個表單，提交表單集時，事務報告服務會將其計為5個提交。
 * **轉譯的檔案：** 通過組合模板和資料、數字地簽名或認證文檔、使用文檔服務的可計費文檔服務API或將文檔從一種格式轉換為另一種格式來生成文檔，被視為所呈現的文檔。
 
 >[!NOTE]
 >
->交易報表UI會顯示三個類別： 已提交的表單、已轉譯的檔案和已處理的檔案。 所呈現的文檔和所處理的文檔均作為所呈現的文檔入賬。
+>交易報表UI會顯示三個類別：已提交的表單、已轉譯的檔案和已處理的檔案。 所呈現的文檔和所處理的文檔均作為所呈現的文檔入賬。
 
 ## 可計費的檔案服務API {#billable-document-services-apis}
 
@@ -350,7 +350,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
 
 ## 計費資料擷取API {#billable-data-capture-apis}
 
-最適化表單、HTML5表單和表單集的所有提交事件都視為交易。 依預設，提交PDF表單不會算作交易。 使用提供的 [交易報表API](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) ，將PDF表單提交記錄為交易。
+最適化表單、HTML5表單和表單集的所有提交事件都視為交易。 依預設，提交PDF表單不會算作交易。 使用提供的 [交易報表API](record-transaction-custom-implementation.md) ，將PDF表單提交記錄為交易。
 
 ### 適用性表單 {#adaptive-forms}
 
@@ -453,7 +453,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
    <td>其他資訊</td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">轉換</a> （轉換為PDF）</td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">演算</a> （轉換為PDF）</td> 
    <td>產生互動式通訊的PDF版本。</td> 
    <td>已呈交的文件</td> 
    <td>
