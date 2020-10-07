@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '3402'
+source-wordcount: '3420'
 ht-degree: 1%
 
 ---
@@ -32,7 +32,7 @@ AEM 6.4.8.2是依賴AEM 6.4 Service Pack 8的累積修補程式套件(CFP)。 �
 
 在AEM 6.4.8.2中，內建儲存庫(Apache Jackrabbit Oak)已更新為1.8.22版。
 
-如需CFP和其他發行類型的詳細資訊，請參閱 [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+如需CFP和其他發行類型的詳細資訊，請參閱 [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2可修正下列問題。
 
@@ -175,7 +175,7 @@ AEM 6.4.8.1的一些主要亮點是：
 * 已移除與Adobe Experience Manager的套件共用整合。
 * 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.21版。
 
-如需CFP和其他發行類型的詳細資訊，請參閱 [AEM Update Release Vehicle Definitions](../sites-deploying/update-release-vehicle-definitions.md)
+如需CFP和其他發行類型的詳細資訊，請參閱 [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1可修正下列問題。
 
