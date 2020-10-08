@@ -10,7 +10,7 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 translation-type: tm+mt
-source-git-commit: 5ea8fac7eb0d474aa27a0203ab324d6931ce5571
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 96%
@@ -255,7 +255,7 @@ Resource myPage = req.getResource();
 
 1. Dispatcher 在 `/my-page.html` 對回應進行快取，並將回應回傳給使用者。
 1. 內容作者對此網頁作出變更並加以啟用。
-1. Dispatcher 排清代理程式傳送 `/content/my-brand/my-page`** 的無效請求。**由於 Dispatcher 在此路徑上沒有經過快取的網頁，因此系統會維持對舊內容進行快取，導致內容過時。
+1. Dispatcher 排清代理程式傳送 `/content/my-brand/my-page`**的無效請求。** 由於 Dispatcher 在此路徑上沒有經過快取的網頁，因此系統會維持對舊內容進行快取，導致內容過時。
 
 有些方法可以設定自訂發送排清規則，針對快取失效將較短的 URL 對應至較長的 URL。
 
