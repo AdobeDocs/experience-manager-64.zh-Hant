@@ -4,7 +4,7 @@ description: 瞭解各種資產管理和編輯工作，您可使用AEM Assets的
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '10015'
 ht-degree: 2%
@@ -145,7 +145,8 @@ ht-degree: 2%
 >[!NOTE]
 >
 >若要透過FTP在Dynamic Media中上傳資產——在AEM作者上傳Scene7模式安裝功能套件(FP)18912。 請聯絡Adobe客戶服務以取得FP-18912的存取權，並完成FTP帳戶的設定。 如需 [大量資產移轉，請參閱安裝功能套件18912](/help/assets/bulk-ingest-migrate.md)。
-如果您使用FTP來上傳資產，則會忽略AEM中指定的上傳設定。 而是使用Dynamic Media Classic中定義的檔案處理規則。
+>
+>如果您使用FTP來上傳資產，則會忽略AEM中指定的上傳設定。 而是使用Dynamic Media Classic中定義的檔案處理規則。
 
 **若要使用FTP上傳資產**
 
