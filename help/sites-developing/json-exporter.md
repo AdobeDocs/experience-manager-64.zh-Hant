@@ -10,7 +10,7 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '495'
 ht-degree: 4%
@@ -54,7 +54,7 @@ AEM Content Services的設計目的，是將AEM中／來自AEM的內容描述和
 
 您也可以透過明確定位結構化內容片段來提供內容。
 
-這是使用片段的整個路徑(透過 `jcr:content`); 例如，加上尾碼，如。
+這是使用片段的整個路徑(透過 `jcr:content`);例如，加上尾碼，如。
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
