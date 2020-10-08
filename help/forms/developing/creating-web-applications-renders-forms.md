@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 0%
@@ -82,7 +82,7 @@ Web應用程式使用的XML資料檔案已從「資料」檔案夾移至 `C:\Ado
 
 ### 建立網頁專案 {#creating-a-web-project}
 
-要建立包含可調用Forms服務的Java Servlet的Web應用程式，第一步是建立新Web項目。 本檔案所基於的Java IDE是Eclipse 3.3。 使用Eclipse IDE，建立Web項目並將所需的JAR檔案添加到項目中。 最後，將名為 *index.html的HTML頁面* ，以及Java servlet新增至您的專案。
+要建立包含可調用Forms服務的Java Servlet的Web應用程式，第一步是建立新Web項目。 本檔案所基於的Java IDE是Eclipse 3.3。使用Eclipse IDE，建立Web項目並將所需的JAR檔案添加到項目中。 最後，將名為 *index.html的HTML頁面* ，以及Java servlet新增至您的專案。
 
 以下清單指定必須添加到Web項目的JAR檔案：
 
@@ -119,7 +119,7 @@ Web應用程式使用的XML資料檔案已從「資料」檔案夾移至 `C:\Ado
 
 >[!NOTE]
 >
->有關建立調用 `RenderFormFragment` Java servlet的HTML頁的資訊，請[參閱建立網頁](/help/forms/developing/rendering-forms.md#creating-the-web-page)。
+>有關建立調用 `RenderFormFragment` Java servlet的HTML頁的資訊，請參 [閱建立網頁](/help/forms/developing/rendering-forms.md#creating-the-web-page)。
 
 ### 建立Servlet的Java應用程式邏輯 {#creating-java-application-logic-for-the-servlet}
 
@@ -165,7 +165,7 @@ Web應用程式使用的XML資料檔案已從「資料」檔案夾移至 `C:\Ado
 1. 調用 `javax.servlet.http.HttpServletResponse` 物件的方法並傳遞物件的內 `setContentType` 容類型，以設定物件的內容 `com.adobe.idp.Document` 類型。
 1. 呼叫 `javax.servlet.ServletOutputStream` 物件的方法，建立用於將表單資料串流寫入用戶端Web `javax.servlet.http.HttpServletResponse` 瀏覽器的物 `getOutputStream` 件。
 1. 調用 `java.io.InputStream` 物件的方 `com.adobe.idp.Document` 法以建立物 `getInputStream` 件。
-1. 呼叫物件的方法，並將位元組陣列傳 `InputStream` 遞為引數，以 `read`建立填入表單資料流的位元組陣列。
+1. 呼叫物件的方法，並將位元組陣列傳入為引數，以 `InputStream` 建立填 `read`入表格資料流的位元組陣列。
 1. 叫用物 `javax.servlet.ServletOutputStream` 件的方 `write` 法，將表單資料串流傳送至用戶端網頁瀏覽器。 將位元組陣列傳遞至 `write` 方法。
 
 以下代碼示例代表調用Forms服務並基於片段呈現表單的Java servlet。
@@ -379,7 +379,7 @@ Java servlet會使用下列Java程式碼，從HTML頁面擷取張貼的資料：
 
 1. 在「項 **目瀏覽器** 」窗口中，按一下右鍵項 `FragmentsWebApplication` 目並選擇「導 **出** 」>「 **WAR檔案」**。
 1. 在「 **Web模組** 」文本框中， `FragmentsWebApplication` 鍵入Java項目的名稱。
-1. 在「目 **標** 」文本框中， `FragmentsWebApplication.war`**鍵入&#x200B;**檔案名，指定WAR檔案的位置，然後按一下「完成」。
+1. 在「目 **標** 」文本框中， `FragmentsWebApplication.war`**鍵入**&#x200B;檔案名，指定WAR檔案的位置，然後按一下「完成」。
 
 ### 將WAR檔案部署至J2EE應用程式伺服器 {#deploying-the-war-file-to-the-j2ee-application-server}
 
