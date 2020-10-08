@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 492741d5-8d2b-4a81-8f21-e621ef3ee685
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 translation-type: tm+mt
-source-git-commit: 4e4dfb105e12b6855ec32a72246d6b921d6d7829
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2882'
+source-wordcount: '2885'
 ht-degree: 0%
 
 ---
@@ -85,8 +85,8 @@ Oak查詢引擎支援下列語言：
 1. 將節點命 **名為PropertyIndex**，並將節點類型設 **置為oak:QueryIndexDefinition**
 1. 為新節點設定以下屬性：
 
-   * **類型：**  `property` （字串類型）
-   * **propertyNames:**  `jcr:uuid` （類型名稱）
+   * **類型：** `property` （字串類型）
+   * **propertyNames:** `jcr:uuid` （類型名稱）
 
    此特定示例將為屬性 `jcr:uuid` 編製索引，其作業是公開其所連接節點的通用唯一標識符(UUID)。
 
@@ -123,8 +123,8 @@ AEM 6中提供以Apache Lucene為基礎的全文索引器。
 1. 將節點命 **名為LuceneIndex** ，並將節點類型設 **置為oak:QueryIndexDefinition**
 1. 將以下屬性添加到節點：
 
-   * **類型：**  `lucene` （字串類型）
-   * **非同步：**  `async` （字串類型）
+   * **類型：** `lucene` （字串類型）
+   * **非同步：** `async` （字串類型）
 
 1. 儲存變更。
 
@@ -173,7 +173,7 @@ select * from [nt:base] where [alias] = '/admin'
    false (of type Boolean)
    ```
 
-* **includePropertyNames:** `["alias"] (of type String)`
+* **includePropertyNames:**`[alias]` （字串類型）
 
 >[!NOTE]
 >
@@ -313,9 +313,9 @@ AEM可與內嵌的Solr伺服器搭配使用，可透過Web Console進行設定�
 1. 開啟CRXDE並以管理員身分登入。
 1. 在 **oak:index下新增名為** oak:QueryIndexDefinition類型之solrlndex **的節點，其****** 屬性如下：
 
-   * **類型：** `solr`（字串類型）
-   * **非同步：** `async`（字串類型）
-   * **重新索引：** `true`（布爾型）
+   * **類型：**`solr`（字串類型）
+   * **非同步：**`async`（字串類型）
+   * **重新索引：**`true`（布爾型）
 
 1. 儲存變更。
 
