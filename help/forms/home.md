@@ -1,18 +1,18 @@
 ---
-title: AEM 6.4 Forms使用指南
-seo-title: AEM 6.4 Forms使用指南
+title: Adobe Experience Manager 6.4 Forms指南
+seo-title: AEM 6.4 表單使用指南
 description: 本指南涵蓋所有AEM Forms工作，包括如何建立、管理、發佈和更新數位表單。
 seo-description: 涵蓋所有AEM Forms工作，包括如何建立、管理、發佈和更新數位表單。
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 18%
+source-wordcount: '370'
+ht-degree: 24%
 
 ---
 
 
-# AEM 6.4 Forms使用指南
+# Adobe Experience Manager 6.4 Forms指南
 
 本指南涵蓋所有AEM Forms工作，包括如何建立、管理、發佈和更新數位表單。
 
