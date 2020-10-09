@@ -1,25 +1,25 @@
 ---
-title: AEM 6.4發行說明
+title: Adobe Experience Manager 6.4發行說明
 seo-title: AEM 6.4發行說明
-description: AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援的平台、已過時和已移除的功能，以及已知問題。
-seo-description: AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援的平台、已過時和已移除的功能，以及已知問題。
+description: AEM 發行說明涵蓋有關最新版 AEM 的重要資訊，包括新功能、支援的平台、已過時和已移除的功能，以及已知問題。
+seo-description: AEM 發行說明涵蓋有關最新版 AEM 的重要資訊，包括新功能、支援的平台、已過時和已移除的功能，以及已知問題。
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 14%
+source-wordcount: '401'
+ht-degree: 41%
 
 ---
 
 
-# AEM 6.4發行說明
+# Adobe Experience Manager 6.4發行說明
 
-AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援的平台、已過時和已移除的功能，以及已知問題。
+AEM 發行說明涵蓋有關最新版 AEM 的重要資訊，包括新功能、支援的平台、已過時和已移除的功能，以及已知問題。
 
 ## 關鍵AEM文章
 
 * [開始使用AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [最近的檔案更新](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [近期文件更新](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM安全性檢查清單](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4使用指南
@@ -42,7 +42,7 @@ AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援�
 ## 關鍵AEM資源
 
 * [AEM教學課程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [《 Dispatcher使用手冊》](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+* [《 Dispatcher使用手冊》](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL使用指南](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
 * [核心元件使用指南](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
@@ -52,6 +52,6 @@ AEM發行說明涵蓋有關最新版AEM的重要資訊，包括新增、支援�
 
 ## 版權、授權和免責聲明 {#copyright-licenses-and-disclaimers}
 
-For further information see [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
+如需詳細資訊，請參閱 [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/legal/terms/enterprise-licensing.html)
 
 第三方授權通知： [https://www.adobe.com/products/eula/third_party/](https://www.adobe.com/products/eula/third_party/)
