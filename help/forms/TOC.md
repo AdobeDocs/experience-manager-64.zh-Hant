@@ -3,20 +3,20 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: '表單 '
 audience: end-user
-user-guide-title: Adobe Experience Manager 6.4 Forms指南
-breadcrumb-title: Forms Guide
-user-guide-description: Create, manage, publish, and update digital forms.
+user-guide-title: Adobe Experience Manager 6.4 Forms 指南
+breadcrumb-title: Forms 指南
+user-guide-description: 建立、管理、發佈和更新數位表單。
 translation-type: tm+mt
 source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '3713'
+source-wordcount: '3722'
 ht-degree: 1%
 
 ---
 
-# Adobe Experience Manager 6.4 Forms指南 {#forms}
+# Adobe Experience Manager 6.4 Forms 指南 {#forms}
 
-+ [AEM 6.4 表單使用指南](home.md)
++ [AEM 6.4 Forms 使用指南](home.md)
 + 發行說明 {#release-notes-new-features}
    + [發行說明](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
    + [新功能摘要](using/whats-new.md)
