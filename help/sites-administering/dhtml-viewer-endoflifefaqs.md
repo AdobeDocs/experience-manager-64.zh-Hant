@@ -1,8 +1,8 @@
 ---
 title: DHTML 檢視器生命週期結束常見問答集
 seo-title: DHTML 檢視器生命週期結束常見問答集
-description: 自2014年1月31日起，Scene7的DHTML檢視器平台將正式停止使用。 此通知會提供常見問題的解答，讓您可準備此項轉換至我們新的HTML5檢視器平台。
-seo-description: 自2014年1月31日起，Scene7的DHTML檢視器平台將正式停止使用。 此通知會提供常見問題的解答，讓您可準備此項轉換至我們新的HTML5檢視器平台。
+description: 自2014年1月31日起，Scene7的DHTML檢視器平台將正式停止運作。 此通知會提供常見問題的解答，讓您可準備此項轉換至我們新的HTML5檢視器平台。
+seo-description: 自2014年1月31日起，Scene7的DHTML檢視器平台將正式停止運作。 此通知會提供常見問題的解答，讓您可準備此項轉換至我們新的HTML5檢視器平台。
 uuid: a78c03b3-6513-42e1-881f-6a9551659769
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,17 +10,17 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 1%
+source-wordcount: '1665'
+ht-degree: 0%
 
 ---
 
 
 # DHTML 檢視器生命週期結束常見問答集{#dhtml-viewer-end-of-life-faqs}
 
-自2014年1月31日起，Scene7的DHTML檢視器平台將正式停止使用。 此通知會提供常見問題的解答，讓您可準備此項轉換至我們新的HTML5檢視器平台。
+自2014年1月31日起，Scene7的DHTML檢視器平台將正式停止運作。 此通知會提供常見問題的解答，讓您可準備此項轉換至我們新的HTML5檢視器平台。
 
 **有什麼變化？**
 
@@ -88,7 +88,7 @@ Web標準日新月異，而DHTML是較舊的Web開發技術，很快被HTML5所�
 
 **HTML5檢視器平台何時會具備從DHTML檢視器平台轉換所需的功能？**
 
-Scene7於2011年秋季發行第一個HTML5檢視器SDK，並推出5.5版。 自此之後，我們為平台新增了許多功能，並延伸了對更多檢視器類型的支援。 針對大部份的檢視器需求，HTML5檢視器平台可能已具備您現在需要移轉的功能。 我們每季都會推出此檢視器平台，繼續大力投資。
+Scene7於2011年秋季發行第一個HTML5檢視器SDK，並推出5.5版。自此之後，我們為平台新增了許多功能，並延伸了對更多檢視器類型的支援。 針對大部份的檢視器需求，HTML5檢視器平台可能已具備您現在需要移轉的功能。 我們每季都會推出此檢視器平台，繼續大力投資。
 
 若要判斷現今HTML5檢視器平台是否符合您的檢視器需求，請參閱下列檔案：
 
@@ -127,8 +127,8 @@ HTML5在許多行動裝置和網頁瀏覽器上都受支援，並持續獲得推
 
 **如果我想要使用現有的DHTML檢視器，維持生產線上狀態，我有哪些選項？**
 
-雖然您仍可使用DHTML檢視器在製作中上線，但請務必注意，在2014年1月31日之後將不會有增強功能、錯誤修正或客戶服務。 因此，我們強烈建議所有客戶移轉至我們更強穩的HTML5檢視器平台。 . 但是，如果您的業務狀況在EOL日期之前無法進行此類移轉，則您可以選擇與專業服務合約，以延長支援的維護時間。 如需詳細資訊，請連絡您的客戶經理。
+雖然您仍可使用DHTML檢視器在製作中上線，但請務必注意，在2014年1月31日之後將不會有增強功能、錯誤修正或客戶服務。 因此，我們強烈建議所有客戶移轉至我們更強穩的HTML5檢視器平台。. 但是，如果您的業務狀況在EOL日期之前無法進行此類移轉，則您可以選擇與專業服務合約，以延長支援的維護時間。 如需詳細資訊，請連絡您的客戶經理。
 
 **如需詳細資訊，請與誰聯絡？**
 
-如果本常見問答集未回答您的所有問題，請聯絡支援([s7support@adobe.com](mailto:s7support@adobe.com))或您的Adobe客戶經理。
+如果此常見問答集未回答您的所有問題，請使 [用Admin Console建立支援案例](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) ，或聯絡您的Adobe客戶經理。
