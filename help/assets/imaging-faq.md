@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1750'
+source-wordcount: '1758'
 ht-degree: 2%
 
 ---
@@ -30,8 +30,8 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN服務完全整合的�
 
 | Image<br>(URL) | 縮圖 | 大小<br> (JPEG) | 大小(WebP)<br> （含智慧型影像） | 減少% |
 |---|---|---|---|---|
-| [Image 1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
-| [Image 2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
+| [影像1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture1](assets-dm/picture1.png) | 73.75 KB | 45.92 KB | 38% |
+| [影像2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture2](assets-dm/picture2.png) | 191 KB | 70.66 KB | 63% |
 | [影像3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture3](assets-dm/picture3.png) | 96.64 KB | 39.44 KB | 59% |
 | [影像4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![picture4](assets-dm/picture4.png) | 315.80 KB | 178.19 KB | 44% |
 |  |  |  |  | 平均= 51% |
@@ -66,7 +66,7 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN服務完全整合的�
 
 * 針對Chrome、Firefox、Microsoft Edge、Android和Opera等瀏覽器自動轉換為WebP。
 * 針對Safari等瀏覽器，自動轉換為JPEG2000。
-* 針對瀏覽器（例如Internet Explorer 9+）自動轉換為JPEG。
+* 針對Internet Explorer 9+等瀏覽器自動轉換為JPEG。
 * 對於不支援這些格式的瀏覽器，會提供原本要求的影像格式。
 
 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
@@ -99,7 +99,7 @@ Smart Imaging可與您現有的「影像預設集」搭配使用，並觀察您�
 
 另外，請看 [我是否符合使用Smart Imaging的資格？](#am-i-eligible-to-use-smart-imaging) 瞭解智慧型影像的預先要求。
 
-## 智慧型行銷是否可搭配HTTPS運作？ HTTP/2如何？ {#does-smart-imaging-working-with-https-how-about-http}
+## 智慧型行銷是否可與HTTPS搭配運作？ HTTP/2如何？ {#does-smart-imaging-working-with-https-how-about-http}
 
 智慧型影像可處理透過HTTP或HTTPS傳送的影像。 此外，它也可透過HTTP/2運作。
 
@@ -118,10 +118,10 @@ Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 尋找標示�
 
 ## 為我的帳戶啟用Smart Imaging的過程是什麼？ {#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
-您必須提出使用智慧型影像的要求； 不會自動啟用。
+您必須提出使用智慧型影像的要求；不會自動啟用。
 
-1. 啟動技術支援要求(電子郵件： s7support@adobe.com)。
-1. 在您的支援要求中提供下列資訊：
+1. [使用Admin Console建立支援案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. 在您的支援案例中提供下列資訊：
 
    1. 主要聯絡人姓名、電子郵件、電話。
    1. 所有要啟用智慧型影像功能的網域（即images.company.com或mycompany.scene7.com）。
@@ -143,7 +143,7 @@ Tap **[!UICONTROL Setup > Application Setup > General Settings]**. 尋找標示�
 
 1. 技術支援將根據提交請求的順序將您添加到Smart Imaging客戶等待清單。
 1. 當Adobe準備好處理您的要求時，支援人員將會聯絡您以協調並設定目標日期。
-1. **可選**: 您可以選擇在Staging中測試智慧型影像，然後Adobe將新功能推展至生產環境。
+1. **可選**:您可以選擇在Staging中測試智慧型影像，然後Adobe將新功能推展至生產環境。
 1. 完成後，支援會通知您。
 1. 為充份提升智慧型影像處理的效能，Adobe建議將「存留時間(TTL)」設定為24小時或更長。 TTL會定義CDN快取資產的時間長度。 要更改此設定，請：
 
