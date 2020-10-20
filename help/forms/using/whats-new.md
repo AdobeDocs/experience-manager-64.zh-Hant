@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2016'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ AEM 6.4 Forms中新功能和增強功能的摘要。
 
 AEM Forms包含數種新功能和增強功能，可透過最適化表單和互動式通訊進一步簡化建立、管理和使用者體驗。
 
-閱讀以快速簡介新功能和增強功能。 請造訪檔案以取得資源方案的詳細資訊。 另請參閱AEM 6.4 Forms版 [本說明](/help/release-notes/forms.md)。 如需完整的AEM 6.4 Forms檔案，請造 [訪AEM 6.4 Forms使用指南](/help/forms/home.md)。
+閱讀以快速簡介新功能和增強功能。 請造訪檔案以取得資源方案的詳細資訊。 另請參閱AEM 6.4 Forms版 [本說明](/help/release-notes/forms.md)。 如需完整的AEM 6.4 Forms檔案，請 [造訪AEM 6.4 Forms Guide](/help/forms/home.md)。
 
 ## 互動式通訊 {#interactive-communications}
 
@@ -46,13 +46,13 @@ AEM Forms包含數種新功能和增強功能，可透過最適化表單和互�
 使用互動式通訊，您可以透過單一檔案編輯器來製作和編輯平面和網頁檔案。 借由使用相同的檔案片段來建立兩個通道的轉譯，您就可以消除工作重複。
 ![printweb_2](assets/printweb_2.png)
 
-如需詳細資訊，請參閱互 [動式通訊概觀](/help/forms/using/interactive-communications-overview.md)。
+如需詳細資訊，請參 [閱互動式通訊概觀](/help/forms/using/interactive-communications-overview.md)。
 
 ### WYSIWYG檔案編輯器 {#wysiwyg-document-editor}
 
 WYSIWYG拖放檔案編輯器對商業友好。 資產的直覺式介面、拖放功能、標準元件、資料模型和整合式儲存庫，可協助您快速輕鬆地製作互動式通訊。
 
-若要建立互動式通訊或編輯現有的通訊，商業使用者可使用下列建置區塊： 頻道、內容、屬性、資產、元件和資料來源。
+若要建立互動式通訊或編輯現有的通訊，商業使用者可使用下列建置區塊：頻道、內容、屬性、資產、元件和資料來源。
 
 ![drag-n-drop-lf](assets/drag-n-drop-lf.png)
 
@@ -116,7 +116,7 @@ AEM Forms包含互動式通訊的立即可用主題。 使用主題，您也可�
 
 ![](do-not-localize/data-integeration-1.png)
 
-[AEM Forms資料整合可讓您](/help/forms/using/data-integration.md) 設定不同的資料來源； 例如資料庫、RESTful或基於SOAP的web services和OData服務； 以建立表單資料模型，您可用來系結資料、預填和叫用最適化表單和檔案中的服務。
+[AEM Forms資料整合可讓您](/help/forms/using/data-integration.md) 設定不同的資料來源；例如資料庫、RESTful或基於SOAP的web services和OData服務；以建立表單資料模型，您可用來系結資料、預填和叫用最適化表單和檔案中的服務。
 
 此發行包含數項資料整合的新功能和增強功能。
 
@@ -193,7 +193,7 @@ AEM Forms應用程式可讓現場工作者將行動裝置與AEM Forms伺服器�
 
 ![aem-forms-document-security-](assets/aem-forms-document-security-.png)
 
-使用檔案安全性，您可以安全地散布您儲存為支援格式的任何資訊。 檔案安全性可確保只有授權的使用者才能使用您的檔案。 以下是檔案安全性的主要變更：
+使用檔案安全性，您可以安全地散布您以支援格式儲存的任何資訊。 檔案安全性可確保只有授權的使用者才能使用您的檔案。 以下是檔案安全性的主要變更：
 
 * 檔案安全性提 [供可攜式保護程式庫(PPL)](/help/forms/using/document-security-offerings.md) ，可在本機保護檔案，而不需將檔案傳送至AEM Forms伺服器。 只有安全性認證和原則詳細資訊會透過網路傳送至AEM Forms伺服器。 AEM 6.4 Forms已推出OSGi套件格式的可攜式保護程式庫(PPL)。 現在，您可以直接在AEM Forms伺服器上安裝PPL程式庫，並搭配使用AEM和PPL的功能。
 * 檔案安全性C++ SDK和C++ PPL程式庫可使用Microsoft Visual Studio 2013編譯。 之前支援的版本是Microsoft Visual Studio 2010。
