@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager 6.4 Forms指南
-seo-title: AEM 6.4 表單使用指南
+title: Adobe Experience Manager 6.4 Forms 指南
+seo-title: AEM 6.4表單指南
 description: 本指南涵蓋所有AEM Forms工作，包括如何建立、管理、發佈和更新數位表單。
 seo-description: 涵蓋所有AEM Forms工作，包括如何建立、管理、發佈和更新數位表單。
 translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 24%
+source-wordcount: '369'
+ht-degree: 26%
 
 ---
 
 
-# Adobe Experience Manager 6.4 Forms指南
+# Adobe Experience Manager 6.4 Forms 指南
 
 本指南涵蓋所有AEM Forms工作，包括如何建立、管理、發佈和更新數位表單。
 
@@ -31,8 +31,8 @@ ht-degree: 24%
 | [Assets 使用手冊](/help/assets/home.md) | 瞭解如何建立、管理、提供和最佳化數位資產。 |
 | [表單使用指南](/help/forms/home.md) | 本指南說明如何建立、管理、發佈和更新數位表單。 |
 | [社群使用指南](/help/communities/home.md) | 建立線上體驗，例如論壇、使用者群組、學習資源和其他社交功能。 |
-| [管理指南](/help/sites-administering/home.md) | 瞭解如何管理AEM |
-| [編寫指南](/help/sites-authoring/home.md) | 本指南說明在AEM中編寫內容的概念。 |
+| [Administering 指南](/help/sites-administering/home.md) | 瞭解如何管理AEM |
+| [Authoring 指南](/help/sites-authoring/home.md) | 本指南說明在AEM中編寫內容的概念。 |
 | [Classic UI編寫指南](/help/sites-classic-ui-authoring/home.md) | 本指南說明在傳統使用者介面中在AEM中編寫內容的概念。 |
 | [畫面使用指南](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | 瞭解數位標牌解決方案，以發佈動態互動式數位體驗。 |
 | [部署使用指南](/help/sites-deploying/home.md) | 本指南會向您展示AEM的基本資訊。 |
