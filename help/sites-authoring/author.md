@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
 translation-type: tm+mt
-source-git-commit: 8b75cf8fd862302446fbb3d8823eec2bd708febe
+source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -29,16 +29,12 @@ AEM提供您兩種環境：
 
 作者環境提供在實際發佈內容之前建立、更新和檢視此內容的機制：
 
-* 作者會建立並審閱內容(這可以是幾種類型； 例如頁面、資產、出版物等)
+* 作者會建立並審閱內容(這可以是幾種類型；例如頁面、資產、出版物等)
 * 在某個時候，它將發佈到您的網站。
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
 
 在作者環境中，AEM的功能可透過兩個UI使用。 針對發佈環境，您設計的整個介面外觀和感覺都提供給您的使用者。
-
->[!NOTE]
->
->AEM和Dispatcher可用來發佈此AEM檔案。
 
 ## 作者環境 {#author-environment}
 
@@ -59,9 +55,9 @@ AEM提供您兩種環境：
 * 移動、複製或刪除內容頁面、資產等
 * 發佈（或取消發佈）頁面、資產等
 
-此外，還有一些管理工作可協助您管理內容：
+此外，還有管理工作可協助您管理內容：
 
-* 控制變更管理的工作流程； 例如。 在發佈前強制執行審核
+* 控制變更管理的工作流程；例如。 在發佈前強制執行審核
 * 協調單個任務的項目
 
 >[!NOTE]
@@ -72,9 +68,9 @@ AEM提供您兩種環境：
 
 準備就緒後，AEM網站的內容會發佈至發 **布環境**。 在這裡，網站的頁面會根據設計介面的外觀和感覺提供給預期的讀者。
 
-通常，發佈環境位於非軍事區內； 換言之，它可供Internet使用，但不再受到內部網路的完全保護。
+通常，發佈環境位於非軍事區內；換言之，它可供Internet使用，但不再受到內部網路的完全保護。
 
-當AEM網站是社群網站 [，或包含](/help/communities/overview.md)Communities元件時 [](/help/communities/author-communities.md)，登入網站訪客（成員）可能會與社群功能互動。 例如，他們可張貼至論壇、張貼意見或關注其他成員。 會員可以獲得執行通常限於作者環境的活動的權限，例如建立新頁面（社群群組）、部落格文章和協調其他成員的貼文。
+當AEM網站是社群網站 [，或包含](/help/communities/overview.md)Communities元件時 [](/help/communities/author-communities.md)，登入網站訪客（成員）可能會與社群功能互動。 例如，他們可張貼至論壇、張貼意見或關注其他成員。 會員可以獲得執行通常限於作者環境的活動的權限，例如建立新頁面（社群群組）、部落格文章，以及協調其他成員的貼文。
 
 >[!NOTE]
 >
@@ -89,11 +85,11 @@ AEM提供您兩種環境：
    >
    >
 * **複製／複製**
-   >  這些是用於指示資料（如頁面內容、檔案、代碼、用戶注釋）在一個環境之間移動的技術術語； 例如，在發佈時，或反向複製使用者注釋。
+   >  這些是用於指示資料（如頁面內容、檔案、代碼、用戶注釋）在一個環境之間移動的技術術語；例如，在發佈時，或反向複製使用者注釋。
 >
 
 
 
 ## Dispatcher {#dispatcher}
 
-為了最佳化網站訪客的效能，Dispatcher **[實作](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)**負載平衡和快取。
+為了最佳化網站訪客的效能，Dispatcher **[實作](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)** 負載平衡和快取。
