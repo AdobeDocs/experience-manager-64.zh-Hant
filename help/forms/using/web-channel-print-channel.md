@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 匯入列印渠道範本，並建立和啟用網頁渠道範本
 
-互動式通訊可透過兩個通道提供： 平面和網頁。 列印渠道用來建立PDF和紙本通訊，例如列印信函，以提醒保險費付款，而網路渠道則用來提供線上體驗，例如在網站上提供信用卡帳單。
+互動式通訊可透過兩個通道提供：平面和網頁。 列印渠道用來建立PDF和紙本通訊，例如列印信函，以提醒保險費付款，而網路渠道則用來提供線上體驗，例如在網站上提供信用卡帳單。
 
 互動式通訊的作者可重複使用檔案片段和影像等資產，以建立互動式通訊的列印和網頁版本。
 
@@ -53,6 +53,7 @@ ht-degree: 0%
 1. 如果您尚未建立範本，請建立範本檔案夾以保留您的互動式通訊網頁範本。 如需詳細資訊，請參閱「頁面範本中的范 [本資料夾——可編輯](/help/sites-developing/page-templates-editable.md)」。
 
    1. 點選「 **[!UICONTROL 工具]** 」(Tools ![)-1](assets/tools-1.png) > 「 **[!UICONTROL 設定瀏覽器]**」。
+      * 如需詳細 [資訊，請參閱Configuration Browser](/help/sites-administering/configurations.md) （設定瀏覽器）檔案。
    1. 在「設定瀏覽器」頁面中，點選「 **[!UICONTROL 建立]**」。
    1. 在「建立配置」對話框中，指定資料夾的標題，選中「可編 **[!UICONTROL 輯模板]**」，然後點 **[!UICONTROL 選「建立」]**。
 
