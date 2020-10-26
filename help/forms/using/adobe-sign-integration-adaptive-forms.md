@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 1c90faf2490dcf6ecfe67708633aee45e207aba0
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ Adobe Sign可針對最適化表單啟用電子簽名工作流程。 電子簽名
 在具備必要條件後，請執行下列步驟，在「作者」例項上以AEM Forms設定Adobe Sign:
 
 1. 在AEM Forms作者例項上，導覽至「工 **具**![槌](assets/hammer.png) >一般 **>設定瀏******&#x200B;覽器」。
+   * 如需詳細 [資訊，請參閱Configuration Browser](/help/sites-administering/configurations.md) （設定瀏覽器）檔案。
 1. 在「設定瀏 **[!UICONTROL 覽器]** 」頁面上，點 **[!UICONTROL 選「建立」]**。
 1. 在「建 **[!UICONTROL 立設定]** 」對話方塊中，指定設定的 **[!UICONTROL Title]** ，啟用「 **[!UICONTROL Cloud設定」]**、「建立 **** Create」。 它會為雲端服務建立組態容器。
 1. 導覽至「 **槌子** > ![雲端服務](assets/hammer.png) > ******** Adobe Sign Sign Container」，並選取您在上述步驟中建立的組態容器。
