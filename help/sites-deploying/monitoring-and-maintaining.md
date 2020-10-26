@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
 workflow-type: tm+mt
 source-wordcount: '5893'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 | [正在監視日誌檔案](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) 。 |  |  |
 | 系統監控（持續）在後台運行。 | 包括CPU、記憶體、磁碟和網路使用。 例如，使用iostat / vmstat / perfmon。 | 記錄的資料是可視化的，可用於追蹤效能問題。 您也可存取原始資料。 |
 | [AEM效能受到監控](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)。 | 包含 [請求計數器](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) ，以監控流量等級。 | 如果出現嚴重或長期的業績損失，應進行詳細調查。 |
-| 您正在監視您的 [複製代理](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents)。 &quot; |  |  |
+| 您正在監視您的 [複製代理](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents)。 |  |  |
 | 定期清除工作流程例項。 | 儲存庫大小和工作流效能。 | 請參 [閱定期清除工作流實例](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)。 |
 
 ## 備份 {#backups}
@@ -47,10 +47,10 @@ ht-degree: 0%
 
 * 系統和資料的重要性。
 * 軟體或資料的變更頻率。
-* 資料量； 容量有時可能是問題，執行備份所需的時間也是問題。
-* 用戶線上時，是否可以進行備份； 如果可能，效能影響將是什麼。
-* 用戶的地域分佈； 例如，何時是備份的最佳時間（以最大限度地減少影響）?
-* 您的災難恢復政策； 是否有必要儲存備份資料的指導原則（如離站、特定介質等）。
+* 資料量；容量有時可能是問題，執行備份所需的時間也是問題。
+* 用戶線上時，是否可以進行備份；如果可能，效能影響將是什麼。
+* 用戶的地域分佈；例如，何時是備份的最佳時間（以最大限度地減少影響）?
+* 您的災難恢復政策；是否有必要儲存備份資料的指導原則（如離站、特定介質等）。
 
 通常，完整備份會定期執行（例如每日、每週或每月），增量備份介於之間（例如每小時、每日或每週）。
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->支援檔案資料儲存的增量備份； 對其他元件（如Lucene索引）使用增量備份時，請確保在備份中也將已刪除的檔案標籤為已刪除。
+>支援檔案資料儲存的增量備份；對其他元件（如Lucene索引）使用增量備份時，請確保在備份中也將已刪除的檔案標籤為已刪除。
 
 >[!NOTE]
 >
@@ -99,7 +99,7 @@ CRX文 [檔的「備份和還原](/help/sites-administering/backup-and-restore.m
 
 ### 概覽 {#overview}
 
-「清 **除版本** 」工具可在「工具」控制台的「版本控制」下使用，或直接在下 **[列位置](/help/sites-administering/tools-consoles.md)******: &quot;
+「清 **除版本** 」工具可在「工具」控制台的「版本控制」下使用，或直接在下 **[列位置](/help/sites-administering/tools-consoles.md)****** :
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
@@ -121,7 +121,7 @@ CRX文 [檔的「備份和還原](/help/sites-administering/backup-and-restore.m
 
 要清除網站版本，請按如下步驟進行：
 
-1. 導覽至「工 **[具](/help/sites-administering/tools-consoles.md)」主控台&#x200B;**，選取「版本**控制&#x200B;**」並按兩下「清**除版本」**。
+1. 導覽至「工 **[具](/help/sites-administering/tools-consoles.md) 」主控台**，選取「版本 **控制** 」並按兩下「清 **除版本」**。
 1. 設定要清除之內容的開始路徑(例如 `/content/geometrixx-outdoors`)。
 
    * 如果只想清除路徑定義的節點，請取消選擇「遞 **歸」**。
@@ -142,16 +142,16 @@ CRX文 [檔的「備份和還原](/help/sites-administering/backup-and-restore.m
 
 「乾 **式運行** 」和「清 **除** 」進程將列出所有已處理的節點。 在過程中，節點可以具有以下狀態之一：
 
-* `ignore (not versionnable)`: 該節點不支援版本控制，並在處理過程中被忽略。
-* `ignore (no version)`: 該節點沒有任何版本，在進程中將被忽略。 &quot;
-* `retained`: 不清除該節點。
-* `purged`: 節點將被清除。
+* `ignore (not versionnable)`:該節點不支援版本控制，並在處理過程中被忽略。
+* `ignore (no version)`:該節點沒有任何版本，在進程中將被忽略。
+* `retained`:不清除該節點。
+* `purged`:節點將被清除。
 
 此外，主控台還提供版本的有用資訊：
 
-* `V 1.0`: 版本號。
-* `V 1.0.1`&amp;ast;: 星號表示版本為當前版本。
-* `Thu Mar 15 2012 08:37:32 GMT+0100`: 版本的日期。
+* `V 1.0`:版本號。
+* `V 1.0.1`&amp;ast;:星號表示版本為當前版本。
+* `Thu Mar 15 2012 08:37:32 GMT+0100`:版本的日期。
 
 在下一個範例中：
 
@@ -262,7 +262,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 >[!NOTE]
 >
->使用Adobe Experience Manager時，有幾種方法可管理此類服務的組態設定； 如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
+>使用Adobe Experience Manager時，有幾種方法可管理此類服務的組態設定；如需詳 [細資訊](/help/sites-deploying/configuring-osgi.md) ，請參閱設定OSGi。
 
 在某些情況下，您可能希望建立具有不同日誌級別的自定義日誌檔案。 您可以通過以下方式在儲存庫中執行此操作：
 
@@ -284,24 +284,24 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 名稱: `org.apache.sling.commons.log.file`
 
-      類型： 字串
+      類型：字串
 
-      值： 指定日誌檔案； 例如， `logs/myLogFile.log`
+      值：指定日誌檔案；例如， `logs/myLogFile.log`
 
    * 名稱: `org.apache.sling.commons.log.names`
 
       類型: `String[] (String + Multi)`
 
-      值： 指定Logger要記錄訊息的OSGi services; 例如，以下所有項目：
+      值：指定Logger要記錄訊息的OSGi services;例如，以下所有項目：
 
       * `org.apache.sling`
       * `org.apache.felix`
       * `com.day`
    * 名稱: `org.apache.sling.commons.log.level`
 
-      類型： 字串
+      類型：字串
 
-      值： 指定所需的日誌級 `debug`別( `info`、 `warn` 或 `error`); 例如 `debug`
+      值：指定所需的日誌級 `debug`別( `info`、 `warn` 或 `error`);例如 `debug`
 
    * 視需要設定其他參數：
 
@@ -309,7 +309,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
          類型: `String`
 
-         值： 根據需要指定日誌消息的模式； 例如，
+         值：根據需要指定日誌消息的模式；例如，
 
          `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
    >[!NOTE]
@@ -317,10 +317,15 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >`org.apache.sling.commons.log.pattern` 最多支援6個引數。
    >
    >{0}類型的時間戳記 `java.util.Date`
+   >
    >{1}記錄標籤
-   >{2}當前線程的名稱\
-   >{3}記錄器的名稱\
-   >{4}日誌級別\
+   >
+   >{2}當前線程的名稱
+   >
+   >{3}記錄器的名稱
+   >
+   >{4}日誌級別
+   >
    >{5}記錄訊息
    >
    >如果日誌調用包含 `Throwable` 堆棧跟蹤，則附加到消息。
@@ -374,7 +379,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
       類型: `String`
 
-      值： 指定Log File，使其與Logger；中指定的檔案匹配
+      值：指定Log File，使其與Logger；中指定的檔案匹配
 
       例如， `../logs/myLogFile.log`。
 
@@ -384,13 +389,13 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
          類型: `Long`
 
-         值： 指定要保留的日誌檔案數； 例如， `5`
+         值：指定要保留的日誌檔案數；例如， `5`
 
       * 名稱: `org.apache.sling.commons.log.file.size`
 
          類型: `String`
 
-         值： 指定依大小／日期控制檔案旋轉； 例如， `'.'yyyy-MM-dd`
+         值：指定依大小／日期控制檔案旋轉；例如， `'.'yyyy-MM-dd`
    >[!NOTE]
    >
    >`org.apache.sling.commons.log.file.size` 通過設定以下任一設定控制日誌檔案的旋轉：
@@ -402,24 +407,23 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >以指示何時將建立新檔案（並根據名稱模式更名現有檔案）。
    >
    >* 可以用數字指定大小限制。 如果沒有提供大小指示器，則此指示器被視為位元組數，或者您可以添加一個大小指示器- `KB`、 `MB`或 `GB` （忽略大小寫）。
-   >* 時間／日期排程可指定為模 `java.util.SimpleDateFormat` 式。 這定義了檔案旋轉的時段； 也附加到旋轉檔案的字尾（用於識別）。
+   >* 時間／日期排程可指定為模 `java.util.SimpleDateFormat` 式。 這定義了檔案旋轉的時段；也附加到旋轉檔案的字尾（用於識別）。
 
    >
-   >  預設值為&#39;.&#39;。yyyy-MM-dd（用於每日日誌旋轉）。
+   >預設值為&#39;.&#39;。yyyy-MM-dd（用於每日日誌旋轉）。
    >
-   >  例如，在2010年1月20日的午夜（或當發生此事後的第一個記錄訊息時，請務必精確）,../logs/error.log將重新命名為../logs/error.log.2010-01-20。 1月21日的記錄將輸出為（新的和空的）../logs/error.log，直到在下一天的變更時滾動。
+   >例如，在2010年1月20日的午夜（或當發生此事後的第一個記錄訊息時，請務必精確）,../logs/error.log將重新命名為../logs/error.log.2010-01-20。 1月21日的記錄將輸出為（新的和空的）../logs/error.log，直到在下一天的變更時滾動。
    >
-   >  | `'.'yyyy-MM` | 每月初的輪值 |
-   >  |---|---|
-   >  | `'.'yyyy-ww` | 每週第一天的旋轉（視地區而定）。 |
-   >  | `'.'yyyy-MM-dd` | 每天午夜輪流。 |
-   >  | `'.'yyyy-MM-dd-a` | 每天午夜和中午輪流。 |
-   >  | `'.'yyyy-MM-dd-HH` | 每小時的最上方輪流。 |
-   >  | `'.'yyyy-MM-dd-HH-mm` | 每分鐘開始時輪流。 |
+   >| `'.'yyyy-MM` | 每月初的輪值 |
+   >|---|---|
+   >| `'.'yyyy-ww` | 每週第一天的旋轉（視地區而定）。 |
+   >| `'.'yyyy-MM-dd` | 每天午夜輪流。 |
+   >| `'.'yyyy-MM-dd-a` | 每天午夜和中午輪流。 |
+   >| `'.'yyyy-MM-dd-HH` | 每小時最上方輪流值。 |
+   >| `'.'yyyy-MM-dd-HH-mm` | 每分鐘開始時輪流。 |
    >
-   >  注意： 指定時間／日期時：
-   >
-   >  1. 您應「逸出」一對單引號(&#39; &#39;)中的常值文字；
+   >注意：指定時間／日期時：
+   > 1. 您應「逸出」一對單引號(&#39; &#39;)中的常值文字；
       >
       >     
       這是為了避免某些字元被解譯為圖樣字母。
@@ -432,7 +436,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    由此示例建立的日誌檔案將為 `../crx-quickstart/logs/myLogFile.log`。
 
-Felix Console也提供Sling Log Support的相關資訊，網址為 `../system/console/slinglog`; 例如 `http://localhost:4502/system/console/slinglog`。
+Felix Console也提供Sling Log Support的相關資訊，網址為 `../system/console/slinglog`;例如 `http://localhost:4502/system/console/slinglog`。
 
 ### 查找審計記錄 {#finding-the-audit-records}
 
@@ -456,7 +460,7 @@ Felix Console也提供Sling Log Support的相關資訊，網址為 `../system/co
 
 #### OSGi Audit records from the Web Console {#osgi-audit-records-from-the-web-console}
 
-OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configuration Status** 」（設定狀態）標籤-> **Log Files **tab中看到這些記錄：
+OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configuration Status** 」（設定狀態）標籤-> **Log Files** （記錄檔）標籤中看到這些記錄：
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -466,7 +470,7 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configurat
 
 * 所有必要的隊列都啟用了嗎？
 * 是否仍然需要任何禁用的隊列？
-* 所有 `enabled` 隊列都應具有狀態 `idle` 或 `active`，這表示正常操作； 不應該有隊 `blocked`伍，這通常是接收方出現問題的一個跡象。
+* 所有 `enabled` 隊列都應具有狀態 `idle` 或 `active`，這表示正常操作；不應該有隊 `blocked`伍，這通常是接收方出現問題的一個跡象。
 
 * 如果隊列的大小隨著時間而增加，這可能表示已阻止的隊列。
 
@@ -474,7 +478,7 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configurat
 
 1. 存取AEM中 **的** 「工具」索引標籤。
 1. 按一下 **複製**。
-1. 連按兩下適當環境（左窗格或右窗格）的代理連結； 例如， **作者上的代理**。
+1. 連按兩下適當環境（左窗格或右窗格）的代理連結；例如， **作者上的代理**。
 
    生成的窗口顯示了作者環境的所有複製代理的概述，包括其目標和狀態。
 
@@ -488,10 +492,10 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configurat
    * 查看任何複製的目標。
    * 查看複製隊列當前是否處於活動狀態（已啟用）。
    * 瞭解佇列中是否有任何項目。
-   * **刷新** 或 **清除** ，更新隊列條目的顯示； 這可協助您查看項目進入並離開佇列。
+   * **刷新** 或 **清除** ，更新隊列條目的顯示；這可協助您查看項目進入並離開佇列。
    * **查看日誌** ，以訪問複製代理所執行的任何操作的日誌。
    * **測試與目標實例的連接** 。
-   * **如有需要** ，請對任何佇列項目強制重試。
+   * **如有需要** ，對任何佇列項目強制重試。
 
    >[!CAUTION]
    >
@@ -524,7 +528,7 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configurat
 |  | 有些客戶速度快，有些客戶速度慢。 |  |  |
 | 伺服器 |  |  |  |
 | 網路 | 伺服器和客戶端的CPU使用率都較低。 | 消除網路瓶頸。 | 改進／優化客戶機快取的配置。 |
-|  | （相對而言）在伺服器上本機瀏覽的速度較快。 | 增加網路頻寬。 | 降低網頁的「重量」（例如，減少影像、最佳化HTML）。 |
+|  | （相對而言）在伺服器上本機瀏覽的速度較快。 | 增加網路頻寬。 | 降低網頁的「重量」（例如，影像較少、最佳化HTML）。 |
 | Web伺服器 | 網頁伺服器上的CPU使用量很高。 | 叢集您的Web伺服器。 | 減少每頁點擊（瀏覽）。 |
 |  |  | 使用硬體負載平衡器。 |  |
 | 應用程式 | 伺服器CPU使用量很高。 | 叢集您的AEM例項。 | 搜尋並消除CPU和記憶體記憶體記憶體記憶體記憶體記憶體記憶體（使用程式碼檢閱、計時輸出等）。 |
@@ -545,7 +549,7 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configurat
 
 * 當您遇到效能問題時：
 
-   * 嘗試在您知道具有良好一般效能的不同用戶端上，使用一種（或更好）標準網頁瀏覽器複製它，以及（如果可能）在伺服器本身複製它
+   * 嘗試在您知道具有良好一般效能的不同用戶端上，使用一個（或更好）標準網頁瀏覽器複製它，以及／或在伺服器本身（如果可能）複製它
    * 檢查是否在適當的時間空間內有任何變更（與系統相關），以及這些變更中是否有可能影響效能
    * 提出以下問題：
 
@@ -581,17 +585,17 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configurat
   <tr> 
    <td>線程轉儲</td> 
    <td>觀察JVM線程。 識別競爭、鎖定和長跑者。</td> 
-   <td><p>取決於作業系統：<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows（控制台模式）: Ctrl-Break<br /> </p> <p>也提供分析工具，例如 <a href="https://java.net/projects/tda/">TDA</a>。<br /> </p> </td> 
+   <td><p>取決於作業系統：<br /> - Unix/Linux: <code>kill -QUIT &lt;<em>pid</em>&gt;</code><br /> - Windows（控制台模式）:Ctrl-Break<br /> </p> <p>也提供分析工具，例如 <a href="https://java.net/projects/tda/">TDA</a>。<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>堆轉儲</td> 
    <td>記憶體不足導致效能降低。</td> 
-   <td><p>新增：<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> 選項。</p> <p>請參 <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">閱Java SE 6 with HotSpot VM的故障排除指南</a>。</p> </td> 
+   <td><p>新增：<br /><code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> 選項。</p> <p>請參 <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">閱Java SE 6 with HotSpot VM的故障排除指南</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>系統呼叫</td> 
    <td>識別時間問題。</td> 
-   <td><p>呼叫或 <code>System.currentTimeMillis()</code> . <code>com.day.util</code>Timing會用來從程式碼或透過 <a href="#html-comments">HTML-comments產生時間戳記</a>。</p> <p><strong>注意：</strong> 這些應該實施，以便根據需要激活／停用； 當系統運行順利時，不需要收集統計資訊的開銷。</p> </td> 
+   <td><p>呼叫或 <code>System.currentTimeMillis()</code> . <code>com.day.util</code>Timing會用來從程式碼或透過 <a href="#html-comments">HTML-comments產生時間戳記</a>。</p> <p><strong>注意：</strong> 這些應該實施，以便根據需要激活／停用；當系統運行順利時，不需要收集統計資訊的開銷。</p> </td> 
   </tr> 
   <tr> 
    <td>Apache Bench</td> 
@@ -616,12 +620,12 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configurat
   <tr> 
    <td>JConsole</td> 
    <td>觀察JVM度量和線程。</td> 
-   <td><p>用法： jconsole</p> <p>請參 <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">閱使用JConsole</a><a href="#monitoring-performance-using-jconsole">的jconsole和監視效能</a>。</p> <p><strong>注意：</strong> 在JDK 1.6中，JConsole可以通過插件進行擴展； 例如，Top或TDA（線程轉儲分析器）。</p> </td> 
+   <td><p>用法：jconsole</p> <p>請參 <a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">閱使用JConsole</a><a href="#monitoring-performance-using-jconsole">的jconsole和監視效能</a>。</p> <p><strong>注意：</strong> 在JDK 1.6中，JConsole可以通過插件進行擴展；例如，Top或TDA（線程轉儲分析器）。</p> </td> 
   </tr> 
   <tr> 
    <td>Java VisualVM</td> 
    <td>觀察JVM度量、線程、記憶體和分析。</td> 
-   <td><p>用法： jvisualvm或visualvm<br /> </p> <p>請參 <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">閱使用(J)VisualVM</a>、 <a href="https://visualvm.github.io/releases.html">visualvm</a><a href="#monitoring-performance-using-j-visualvm">和監控效能</a>。</p> <p><strong>注意：</strong> 使用JDK 1.6,VisualVM可以通過插件進行擴展。</p> </td> 
+   <td><p>用法：jvisualvm或visualvm<br /> </p> <p>請參 <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">閱使用(J)VisualVM</a>、 <a href="https://visualvm.github.io/releases.html">visualvm</a><a href="#monitoring-performance-using-j-visualvm">和監控效能</a>。</p> <p><strong>注意：</strong> 使用JDK 1.6,VisualVM可以通過插件進行擴展。</p> </td> 
   </tr> 
   <tr> 
    <td>桁架／網架，lsof</td> 
@@ -719,7 +723,7 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「 **Configurat
 必須進行測試，以判斷系統可處理的並行使用者數，才會看到負面影響。 Again scripts can be used to extract results from the log file:
 
 * 監控特定時段（例如一分鐘）內發出的請求數
-* 測試特定數量的使用者同時提出相同要求（盡可能接近）的效果； 例如，30位使用者同時按 **一下** 「儲存」。
+* 測試特定數量的使用者同時提出相同要求（盡可能接近）的效果；例如，30位使用者同時按 **一下** 「儲存」。
 
 ```xml
 31/Mar/2009:11:45:29 +0200 [333] -> GET /author/libs/Personalize/content/statics.close.gif HTTP/1.1
@@ -847,7 +851,7 @@ Percentage of the requests served within a certain time (ms)
 
 上述數字取自可存取geometrixx公司頁面的標準MAcBook Pro筆記型電腦（2010年中），如預設AEM安裝所示。 頁面非常簡單，但未針對效能最佳化。
 
-`apachebench` 也會以平均方式顯示每個請求的時間，以涵蓋所有併發請求； 請參 `Time per request: 54.595 [ms]` 閱（平均值，涵蓋所有並行請求）。 您可以變更並行參數的值( `-c` 一次要執行多個請求數)，以查看任何效果。
+`apachebench` 也會以平均方式顯示每個請求的時間，以涵蓋所有併發請求；請參 `Time per request: 54.595 [ms]` 閱（平均值，涵蓋所有並行請求）。 您可以變更並行參數的值( `-c` 一次要執行多個請求數)，以查看任何效果。
 
 ### 請求計數器 {#request-counters}
 
@@ -867,7 +871,7 @@ Percentage of the requests served within a certain time (ms)
 
 ### HTML注釋 {#html-comments}
 
-建議每個專案都包含伺服器 `html comments` 效能的項目。 許多好的公開例子， 選取頁面，開啟頁面來源以檢視並捲動至底部，可看到下列程式碼：
+建議每個專案都包含伺服器 `html comments` 效能的項目。 許多好的公開例子，選取頁面，開啟頁面來源以檢視並捲動至底部，可看到下列程式碼：
 
 ```xml
 </body>
@@ -885,7 +889,7 @@ Percentage of the requests served within a certain time (ms)
 1. 執行 `jconsole.`
 1. 選取您的AEM例項和 **Connect**。
 
-1. 在應用程 `Local` 式中，按兩下 `com.day.crx.quickstart.Main`; 概述將顯示為預設值：
+1. 在應用程 `Local` 式中，按兩下 `com.day.crx.quickstart.Main`;概述將顯示為預設值：
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -903,10 +907,10 @@ Percentage of the requests served within a certain time (ms)
 
 1. 執行下列任一項：
 
-   * `jvisualvm`: 在JDK 1.6 bin資料夾中（已測試版本）
-   * `visualvm`: 可從 [VisualVM](https://visualvm.github.io/releases.html) （放血邊緣版本）下載
+   * `jvisualvm`:在JDK 1.6 bin資料夾中（已測試版本）
+   * `visualvm`:可從 [VisualVM](https://visualvm.github.io/releases.html) （放血邊緣版本）下載
 
-1. 在應用程 `Local` 式中，按兩下 `com.day.crx.quickstart.Main`; 概述將顯示為預設值：
+1. 在應用程 `Local` 式中，按兩下 `com.day.crx.quickstart.Main`;概述將顯示為預設值：
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -951,7 +955,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 每天啟動頁面的平均次數是多少？ {#what-is-the-average-number-of-page-activations-per-day}
 
-查看自伺服器安裝以來使用儲存庫查詢的頁面激活總數； via CRXDE - Tools - Query:
+查看自伺服器安裝以來使用儲存庫查詢的頁面激活總數；via CRXDE - Tools - Query:
 
 * **類型** `XPath`
 
@@ -963,7 +967,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 您目前在此系統上維護多少頁？ {#how-many-pages-do-you-currently-maintain-on-this-system}
 
-查看伺服器上當前使用儲存庫查詢的頁數； via CRXDE - Tools - Query:
+查看伺服器上當前使用儲存庫查詢的頁數；via CRXDE - Tools - Query:
 
 * **類型** `XPath`
 
@@ -973,7 +977,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 如果您使用MSM，每個月的平均推廣次數是多少？ {#if-you-use-msm-what-is-the-average-number-of-rollouts-per-month}
 
-要確定自安裝以來使用儲存庫查詢的推出總數； via CRXDE - Tools - Query:
+要確定自安裝以來使用儲存庫查詢的推出總數；via CRXDE - Tools - Query:
 
 * **類型** `XPath`
 
@@ -985,7 +989,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 每月的即時副本平均數是多少？ {#what-is-the-average-number-of-live-copies-per-month}
 
-要確定自安裝以來使用儲存庫查詢建立的即時拷貝總數； via CRXDE - Tools - Query:
+要確定自安裝以來使用儲存庫查詢建立的即時拷貝總數；via CRXDE - Tools - Query:
 
 * **類型** `XPath`
 
@@ -997,7 +1001,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 如果您使用AEM Assets，您目前在Assets中會維護多少資產？ {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
-要查看您當前維護的DAM資產數量，請使用儲存庫查詢； via CRXDE - Tools - Query:
+要查看您當前維護的DAM資產數量，請使用儲存庫查詢；via CRXDE - Tools - Query:
 
 * **類型** `XPath`
 
@@ -1022,7 +1026,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 目前使用多少個範本？ {#how-many-templates-are-currently-used}
 
-要查看伺服器上當前使用儲存庫查詢的模板數； via CRXDE - Tools - Query:
+要查看伺服器上當前使用儲存庫查詢的模板數；via CRXDE - Tools - Query:
 
 * **類型** `XPath`
 
@@ -1032,7 +1036,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 目前使用多少個元件？ {#how-many-components-are-currently-used}
 
-要查看伺服器上當前使用儲存庫查詢的元件數； via CRXDE - Tools - Query:
+要查看伺服器上當前使用儲存庫查詢的元件數；via CRXDE - Tools - Query:
 
 * **類型** `XPath`
 
@@ -1108,7 +1112,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 如果系統的磁碟空間不足，或者您注意到磁碟已過時，請參閱：
 
-* 您是否已停用除錯資訊的收集； 這可以配置在各種位置，包括：
+* 您是否已停用除錯資訊的收集；這可以配置在各種位置，包括：
 
    * [Apache Sling JSP指令碼處理常式](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)
    * [Apache Sling Java指令碼處理常式](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings)
@@ -1136,7 +1140,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 Java Virtual Machine(JVM)在微調方面已大幅改善（尤其是自Java 7以來）。 因此，通常適合指定合理的固定JVM大小和使用預設值。
 
-如果預設設定不適合，則在嘗試調整JVM之前，請務必建立一種方法來監控和評估GC效能； 這可能涉及到監控因素，包括堆大小、算法等。
+如果預設設定不適合，則在嘗試調整JVM之前，請務必建立一種方法來監控和評估GC效能；這可能涉及到監控因素，包括堆大小、算法等。
 
 一些常見選擇是：
 
@@ -1164,7 +1168,7 @@ Java Virtual Machine(JVM)在微調方面已大幅改善（尤其是自Java 7以�
     -Dcom.sun.management.jmxremote.ssl=false
    ```
 
-* 然後使用JConsole連接到JVM; 請參閱：\
+* 然後使用JConsole連接到JVM;請參閱：\
    ` [https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html](https://docs.oracle.com/javase/6/docs/technotes/guides/management/jconsole.html)`
 
 這可協助您瞭解使用了多少記憶體、使用了哪些GC演算法、執行時間，以及這對您的應用程式效能有何影響。 若沒有這一點，調音就只是「隨意擺弄旋鈕」。
