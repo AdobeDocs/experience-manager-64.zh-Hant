@@ -1,5 +1,5 @@
 ---
-title: 「教學課程： 建立範本」
+title: 「教學課程：建立範本」
 seo-title: 建立互動式通訊的列印和網頁範本
 description: 建立互動式通訊的列印和網頁範本
 seo-description: 建立互動式通訊的列印和網頁範本
@@ -8,15 +8,15 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
 
 
-# 教學課程： 建立範本 {#tutorial-create-templates}
+# 教學課程：建立範本 {#tutorial-create-templates}
 
 建立互動式通訊的列印和網頁範本
 
@@ -48,13 +48,13 @@ ht-degree: 0%
 
 根據使 [用案例](/help/forms/using/create-your-first-interactive-communication.md)[和解剖結](/help/forms/using/planning-interactive-communications.md)構，在XDP範本中建立下列子表單：
 
-* 帳單詳細資訊： 包含檔案片段
-* 客戶詳細資訊： 包含檔案片段
-* 清單匯總： 包含檔案片段
-* 摘要： 包含文檔片段（費用子表單）和圖表（圖表子表單）
-* 明細呼叫： 包含表格（版面片段）
-* 立即付款： 包含影像
-* 增值服務： 包含影像
+* 帳單詳細資訊：包含檔案片段
+* 客戶詳細資訊：包含檔案片段
+* 清單匯總：包含檔案片段
+* 摘要：包含文檔片段（費用子表單）和圖表（圖表子表單）
+* 明細呼叫：包含表格（版面片段）
+* 立即付款：包含影像
+* 增值服務：包含影像
 
 ![create_print_template](assets/create_print_template.gif)
 
@@ -88,7 +88,7 @@ ht-degree: 0%
    * BillDetails
    * 客戶詳細資訊
    * BillSummary
-   * 摘要——選擇子 **表單** (Subform **)頁籤，然後從此子表單的「內容** 」(Content **** )下拉清單中選擇「定位」(Positioned)。 在「摘要」子表單中插入 **以下子表** 單。
+   * 摘要——選擇子 **表單** (Subform **)頁籤，然後從此子表單的「內容」(Content** )下拉清單中選擇「定位」(Positioned **** )。 在「摘要」子表單中插入 **以下子表** 單。
 
       * 費用
       * 圖表
@@ -138,9 +138,9 @@ ht-degree: 0%
 
 1. 在表 **1旁的左窗格中點選** + **** ，然後按一下右鍵「單元格1 **」並選擇Oracle Object********** Rename to Date。
 
-   同樣地，將 **Cell2**、 **Cell3、Cell3**、 **Cell4、TimeCell4、** TimeCell Number、CellNumber、CellDeserCharges分別重新命名為Cell2、 **Cell3、Cell3、Cell4、****************** Cell5。
+   同樣地，將 **Cell2**、Cell3 **、Cell3**、 **Cell4、TimeCell4、** TimeCell Number、CellNumber、CellDeserCharges分別重新命名為Cell2、Cell3、 ******************** Cell3、Cell4、TimeCell4。
 
-1. 按一下「設計器」( **View** )中的「頁首」(Header)欄位，並將它們更名為 **Time**、 **Number**、Duration和Charges ******** Charges。
+1. 按一下「設計器」( **View** )中的「頁首」(Header)欄位，並將它們更名為「 **Time**」（時間）、「 **Number**」（編號）、「Acchirgs」（持續時間）和「Charges ********」（收費）。
 
    ![layout_fragment_print](assets/layout_fragment_print.png)
 
@@ -178,8 +178,9 @@ ht-degree: 0%
 執行以下步驟為可編輯模板建立資料夾：
 
 1. 點選「 **工具** 」 ![「工具](assets/tools-icon.svg) > **設定瀏覽器**」。
+   * 如需詳細 [資訊，請參閱Configuration Browser](/help/sites-administering/configurations.md) （設定瀏覽器）檔案。
 1. 在「設定瀏覽器」頁面中，點選「 **建立**」。
-1. 在「創 **建配置** 」對話框中，指定 **Create_First_IC_templates** 作為資料夾的標題，選中「可編輯模板 **」，然後******&#x200B;點選「建立」。
+1. 在「創 **建配置** 」對話框中，指定 **Create_First_IC_templates** 作為資料夾的標題，選中「 **Editable Templates**」，然後 ****&#x200B;點選「建立」。
 
    ![create_first_ic_web_template](assets/create_first_ic_web_template.png)
 
@@ -189,13 +190,13 @@ ht-degree: 0%
 
 根據使用 [案例](/help/forms/using/create-your-first-interactive-communication.md)[和解剖結](/help/forms/using/planning-interactive-communications.md)構，在Web範本中建立下列面板：
 
-* 帳單詳細資訊： 包含檔案片段
-* 客戶詳細資訊： 包含檔案片段
-* 清單匯總： 包含檔案片段
-* 費用匯總： 包含檔案片段和圖表（雙欄版面）
-* 明細呼叫： 包含表格
-* 立即付款： 包含「 **立即付** 款」按鈕和影像
-* 增值服務： 包含影像和「訂閱」 **按鈕** 。
+* 帳單詳細資訊：包含檔案片段
+* 客戶詳細資訊：包含檔案片段
+* 清單匯總：包含檔案片段
+* 費用匯總：包含檔案片段和圖表（雙欄版面）
+* 明細呼叫：包含表格
+* 立即付款：包含「 **立即付** 款」按鈕和影像
+* 增值服務：包含影像和「訂閱」 **按鈕** 。
 
 ![create_web_template](assets/create_web_template.gif)
 
@@ -215,7 +216,7 @@ ht-degree: 0%
 
    ![template_editor_initial_content](assets/template_editor_initial_content.png)
 
-1. 點選 **「根面板** 」，然後點選 **** +以檢視可新增至範本的元件清單。
+1. 點選 **「Root Panel** （根面板）」，然 **** 後點選+以檢視您可新增至範本的元件清單。
 1. 從清 **單中選擇** 「面板」，在「根面板」上方新 **增面板**。
 1. 在左窗格 **中選擇** 「內容」標籤。 在步驟8中新增的新面板會顯示在內容樹 **的「根面板** 」下方。
 
@@ -229,7 +230,7 @@ ht-degree: 0%
    1. 從 **「欄** 數 **** 」下拉式清單中選取1。
    1. 點選 ![done_icon](assets/done_icon.png) 以儲存屬性。
 
-   面板的名稱會更新為內容樹 **中的Bill Details** 。
+   面板的名稱會更新為內容樹 **中的Bill Details** （清單詳細資訊）。
 
 1. 重複步驟7 - 11，將具有下列屬性的面板新增至範本：
 
@@ -238,7 +239,7 @@ ht-degree: 0%
    | customerdetails | 客戶詳細資訊 | 1 |
    | 開單匯總 | 清單摘要 | 1 |
    | 摘要費用 | 費用匯總 | 2 |
-   | itemisedcalls | 明細呼叫 | 1 |
+   | itimisedcalls | 明細呼叫 | 1 |
    | paynow | 立即付款 | 2 |
    | vas | 增值服務 | 1 |
 
