@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 位置 {#locations}
 
-模型會儲存並建立在啟 `/conf`用「內容片段模型」屬 [性的資料夾下](/help/assets/content-fragments-models.md#enable-content-fragment-models) 。 此設定也可在「設定屬性」中 **看到**，您可從「設定瀏 **覽器」存取**。
+模型會儲存並建立在啟 `/conf`用「內容片段模型」屬 [性的資料夾下](/help/assets/content-fragments-models.md#enable-content-fragment-models) 。 此設定也可在「設定屬性」中 **看到**，您可從「設定瀏 **[覽器」存取](/help/sites-administering/configurations.md)**。
 
 1. 透過工具、一般 **、設定瀏覽**&#x200B;器導覽 **至瀏**&#x200B;覽 ****&#x200B;器例如， 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
@@ -36,7 +36,7 @@ ht-degree: 0%
 
    例如，下列項目的屬 `global`性： `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-在模型控制台中，將顯示所有具有「內 **容片段模型」屬性的資料夾** 。 透過工 **具**、資產 **、內**&#x200B;容片段模型導覽 ****; 例如， `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
+在模型控制台中，將顯示所有具有「內 **容片段模型」屬性的資料夾** 。 透過工 **具**、資產 **、內**&#x200B;容片段模型導覽 ****;例如， `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
 
 使用者可 [以使用「建立模型](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) 」精靈(使用 **從主控台建立****** )來建立內容片段模型。
 
