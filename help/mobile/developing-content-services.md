@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 3%
+source-wordcount: '303'
+ht-degree: 2%
 
 ---
 
@@ -43,7 +43,9 @@ Content Services可將內容以資產、封裝的HTML(HTML/CSS/JS)或頻道無�
 >
 >開始使用Content Services之前，請確定啟用Content Services標幟。 若要在您的應用程式中建立和管理模型，您必須在「設定瀏覽器」中啟用資料模型。
 >
->如需詳 **[細資訊，請參閱](/help/mobile/developing-content-services.md)**「管理內容服務」。
+>如需詳 **[細資訊，請參閱](/help/mobile/developing-content-services.md)** 「管理內容服務」。
+>
+>如需詳細 [資訊，請參閱Configuration Browser](/help/sites-administering/configurations.md) （設定瀏覽器）檔案。
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
