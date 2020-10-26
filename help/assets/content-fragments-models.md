@@ -9,9 +9,9 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
-source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '704'
 ht-degree: 12%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 12%
 若要 [建立新的內容片段模型](#creating-a-content-fragment-model) , **您必須先使用「設定管理員** 」加以啟用：
 
 1. 導覽至「 **[!UICONTROL 工具]**」、「 **[!UICONTROL 一般]**」，然後開啟「 **[!UICONTROL 設定瀏覽器]**」。
+   * 如需詳細 [資訊，請參閱Configuration Browser](/help/sites-administering/configurations.md) （設定瀏覽器）檔案。
 1. 選擇適合您網站的位置。
 1. 使用 **[!UICONTROL 「建立]** 」(Create)開啟對話框，您可在其中：
 
@@ -84,11 +85,11 @@ ht-degree: 12%
 1. 導覽至「 **[!UICONTROL 工具]**」、「資 **[!UICONTROL 產」]**，然後開啟「 **[!UICONTROL 內容片段模型」]**。
 
 1. 導覽至包含內容片段模型的檔案夾。
-1. 開啟所需的編輯 **[!UICONTROL 模型]**; 使用快速動作，或從工具列中選取模型和動作。
+1. 開啟「編輯」( **[!UICONTROL Edit)所需的模型]**;使用快速動作，或從工具列中選取模型和動作。
 
    開啟模型編輯器後，會顯示：
 
-   * 左： 欄位已定義
+   * 左：欄位已定義
    * 右：資 **[!UICONTROL 料類型]** ，可用於建立欄位( **[!UICONTROL 和屬性]** ，以供建立欄位後使用)
 
    >[!NOTE]
