@@ -10,9 +10,10 @@ tutorials-url: https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-video
 mini-toc-levels: 2
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-64.zh-Hant
 solution: Experience Manager
+type: Documentation
 index: y
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 6%
@@ -31,7 +32,7 @@ metadata.md檔案包含回購層級中繼資料，這些中繼資料會傳遞至
 | 解決方案圖示 | 在解決方案標題旁顯示解決方案圖示。 尚未實施。 |
 | getting-started-url | 連結至快速入門頁面。 |
 | 教學課程-url | 連結至教學課程影片。 |
-| 迷你目錄層級 | 決定出現在右側欄中的標題層數。 預設值為1。 |
+| 迷你目錄層級 | 決定出現在右側欄中的標題層數。 預設值為2。 |
 | git-repo | 指定主回購協定的內部使用位置。 |
 
 在TOC.md檔案中
