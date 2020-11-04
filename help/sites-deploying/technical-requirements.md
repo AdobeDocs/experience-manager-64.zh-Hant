@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 155a0425229c79b06eced72b689972e4fdd09265
+source-git-commit: 5e418ea537e00dc3b23174a7b1bb01dba0fc6b3a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3181'
 ht-degree: 0%
 
 ---
@@ -171,14 +171,14 @@ Adobe Experience Manager的儲存庫有多種部署選項。 有關支援的技�
    <td>答：支援</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.6 [5]</td> 
+   <td>MongoDB Enterprise 3.6 [5, 6]</td> 
    <td>存放庫</td> 
-   <td>答：支援</td> 
+   <td>答：受限制支援</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.4 [2, 3]</td> 
+   <td>MongoDB Enterprise 3.4 [2, 3, 6]</td> 
    <td>存放庫</td> 
-   <td>答：不支援</td> 
+   <td>答：受限制支援</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
@@ -233,6 +233,7 @@ Adobe Experience Manager的儲存庫有多種部署選項。 有關支援的技�
 1. 僅支援MongoDB儲存引擎WiredTiger。
 1. AEM Forms不支援。
 1. 從AEM 6.4.2.0版開始，支援MongoDB Enterprise 3.6。
+1. 對MongoDB 3.4的支援已到期(EOL)，而MongoDB 3.6預計將於2021年4月30日到期。 請注意，Adobe將只會針對未來的AEM產品相關問題提供支援。
 
 >[!NOTE]
 >
