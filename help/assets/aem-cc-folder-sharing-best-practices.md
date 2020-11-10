@@ -3,9 +3,9 @@ title: 與Creative Cloud共用AEM Assets檔案夾
 description: 設定和最佳實務，讓Adobe Experience Manager Assets使用者能夠與Adobe Creative Cloud使用者交換資產資料夾。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -38,10 +38,10 @@ AEM到Creative Cloud資料夾共用需仰賴伺服器端在AEM Assets和Creative
 
 整合包含下列元素：
 
-* **AEM Assets伺服器** （部署在企業網路中）（受管理服務或內部部署）: 資料夾共用會從這裡開始。
-* **Adobe Marketing Cloud資產核心服務**: 在AEM和Creative Cloud儲存空間服務之間充當中介。 使用整合的公司管理員需要在Marketing Cloud組織與AEM Assets例項之間建立信任關係。 他們也 [會定義核准的Creative Cloud共同作業人員清單](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html),AEM Assets使用者也可以共用資料夾，以提高安全性。
-* **Creative Cloud資產網站服務** （儲存空間和Creative Cloud檔案網頁UI）: 這是特定Creative Cloud使用者（與其共用AEM Assets檔案夾）可接受邀請並在其Creative Cloud帳戶儲存空間中查看該檔案夾的地方。
-* **Creative Cloud案頭應用程式**: （可選）可讓創意使用者透過與Creative Cloud Assets儲存空間同步，從案頭直接存取共用資料夾／檔案。
+* **AEM Assets伺服器** （部署在企業網路中）（受管理服務或內部部署）:資料夾共用會從這裡開始。
+* **Adobe Marketing Cloud資產核心服務**:在AEM和Creative Cloud儲存空間服務之間充當中介。 使用整合的公司管理員需要在Marketing Cloud組織與AEM Assets例項之間建立信任關係。 他們也 [會定義核准的Creative Cloud共同作業人員清單](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets),AEM Assets使用者也可以共用資料夾，以提高安全性。
+* **Creative Cloud資產網站服務** （儲存空間和Creative Cloud檔案網頁UI）:這是特定Creative Cloud使用者（與其共用AEM Assets檔案夾）可接受邀請並在其Creative Cloud帳戶儲存空間中查看該檔案夾的地方。
+* **Creative Cloud案頭應用程式**:（可選）可讓創意使用者透過與Creative Cloud Assets儲存空間同步，從案頭直接存取共用資料夾／檔案。
 
 ## 特性與限制 {#characteristics-and-limitations}
 
@@ -56,7 +56,7 @@ AEM到Creative Cloud資料夾共用需仰賴伺服器端在AEM Assets和Creative
 
 * **空間需求：** 共用資料夾中的檔案也必須實際儲存在AEM中，然後儲存在Creative Cloud帳戶中，並在Marketing Cloud Assets核心服務中使用快取副本。
 * **網路和頻寬：** 共用資料夾中的檔案和所有更新都需要通過網路在系統之間傳輸。 您應確保僅共用相關檔案和更新。
-* **資料夾類型**: 不支援共用類型的「資 `sling:OrderedFolder`產」檔案夾。 如果您想要共用檔案夾，在AEM Assets中建立檔案夾時，請勿選取「已訂購」選項。
+* **資料夾類型**:不支援共用類型的「資 `sling:OrderedFolder`產」檔案夾。 如果您想要共用檔案夾，在AEM Assets中建立檔案夾時，請勿選取「已訂購」選項。
 
 ## Best practices {#best-practices}
 
