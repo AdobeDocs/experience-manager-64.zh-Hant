@@ -3,9 +3,9 @@ title: AEM與Creative Cloud整合最佳實務
 description: 將AEM部署與Adobe Creative Cloud整合的最佳實務，以簡化資產轉讓工作流程並達到最高效率
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f44950e3e0653df61289e1bd435d13829051365
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '3578'
+source-wordcount: '3566'
 ht-degree: 16%
 
 ---
@@ -24,14 +24,14 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 
 >[!NOTE]
 >
->AEM到Creative Cloud資料夾共用已過時，本指南不再涵蓋。 Adobe建議使用較新的功能(例如 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 或 [](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html) AEM案頭應用程式)，讓創意使用者可存取AEM中管理的資產。
+>AEM到Creative Cloud資料夾共用已過時，本指南不再涵蓋。 Adobe建議使用較新的功能(例如 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 或 [](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) AEM案頭應用程式)，讓創意使用者可存取AEM中管理的資產。
 
 ## 創意人員、行銷人員和DAM使用者的協作需求 {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | 需求 | 使用案例 | 涉及的曲面 |
 |---|---|---|
-| 簡化案頭創意人員的體驗 | 簡化從DAM(AEM Assets)為創意專業人員（或更廣泛的是，在原生資產建立應用程式中工作的案頭使用者）存取資產的程式。 他們需要簡單明瞭的方式來探索、使用（開啟）、編輯和儲存AEM的變更，以及上傳新檔案。 | Win或Mac案頭； Creative Cloud應用程式 |
-| 從Adobe Stock提供高品質、現成可用的資產 | 行銷人員協助資產採購和發現，協助加快內容建立流程。 創意專業人員可直接從其創意工具中使用核准的資產。 | AEM Assets; Adobe Stock市集； 中繼資料欄位 |
+| 簡化案頭創意人員的體驗 | 簡化從DAM(AEM Assets)為創意專業人員（或更廣泛地說，是在原生資產建立應用程式中工作的案頭使用者）存取資產的程式。 他們需要簡單明瞭的方式來探索、使用（開啟）、編輯和儲存AEM的變更，以及上傳新檔案。 | Win或Mac案頭；Creative Cloud應用程式 |
+| 從Adobe Stock提供高品質、現成可用的資產 | 行銷人員協助資產採購和發現，協助加快內容建立流程。 創意專業人員可直接從其創意工具中使用核准的資產。 | AEM Assets;Adobe Stock市集；中繼資料欄位 |
 | 依組織分發及共用資產 | 內部部門／當地分支機構和外部合作夥伴、分銷商和代理商會使用母公司組織共用的已核准資產。 該組織希望安全無縫地共用已建立的資產，以便更廣泛地重複使用。 | 品牌入口網站、資產分享共用 |
 
 ## Adobe提供的產品可支援協作需求 {#adobe-offerings-to-support-the-collaboration-need}
@@ -39,12 +39,12 @@ Adobe Creative Cloud為創意團隊提供解決方案與服務生態系統，以
 | 相關人員的價值主張 | Adobe產品 | 涉及的曲面 |
 |---|---|---|
 | 創意使用者可從AEM發現資產、開啟並使用資產、編輯和上傳對AEM的變更，以及將新檔案上傳至AEM，而不需離開Creative Cloud應用程式。 | [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) | Photoshop、Illustrator和InDesign |
-| 商業使用者可簡化開啟和使用資產、編輯和上傳對AEM的變更，以及從案頭環境將新檔案上傳至AEM。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [AEM案頭應用程式](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | Win和Mac案頭版的AEM案頭應用程式 |
+| 商業使用者可簡化開啟和使用資產、編輯和上傳對AEM的變更，以及從案頭環境將新檔案上傳至AEM。 他們會使用一般整合來開啟原生案頭應用程式中的任何資產類型，包括非Adobe的資產類型。 | [AEM案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win和Mac案頭版的AEM案頭應用程式 |
 | 行銷人員和商業使用者可從AEM中發現、預覽、授權及儲存及管理Adobe Stock資產。 授權和儲存的資產提供精選的Adobe Stock中繼資料，以提升治理。 | [Experience Manager與Adobe Stock整合](aem-assets-adobe-stock.md) | AEM網頁介面 |
 
 本文主要針對協作需求的前兩個方面。資產規模分配和採購作為一個使用案例被簡要提及。針對這些需求解決方案，請考慮Adobe品牌入口網站或資產共用公域。Alternate solutions such as [Brand Portal](https://helpx.adobe.com/tw/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
 
-![適用於AEM的Creative Cloud連線： 決定要使用哪些功能](assets/creative-connections-aem.png)
+![適用於AEM的Creative Cloud連線：決定要使用哪些功能](assets/creative-connections-aem.png)
 
 <!-- 
 ## Terms and definitions {#terms-and-definitions}
@@ -67,9 +67,9 @@ The terms used in this document may have a different meaning in other contexts. 
 | 使用案例 | AEM案頭應用程式 | 資料夾共用 | 其他解決方案 |
 |---|---|---|---|
 | 與Creative使用者共用較少數量(1)的DAM資產 | ✔✔ | ✔ |  |
-| 與Creative使用者共用更多(2)個DAM資產 | ✔✔ | ✘ | [品牌入口網站](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html) <br> [資產共用](assets-finder-editor.md) |
+| 與Creative使用者共用更多(2)個DAM資產 | ✔✔ | ✘ | [品牌入口網站](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [資產共用](assets-finder-editor.md) |
 | 與可存取DAM的使用者共用DAM資產 | ✔✔ | ✔ | [連結共用](link-sharing.md) |
-| 與無法存取DAM的使用者共用DAM資產 | ✘ | ✔✔ | [品牌入口網站](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/home.html) <br> [資產共用](assets-finder-editor.md) |
+| 與無法存取DAM的使用者共用DAM資產 | ✘ | ✔✔ | [品牌入口網站](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [資產共用](assets-finder-editor.md) |
 | 將資產數量／數量減少至DAM | ✔✔ | ✔ | [網頁UI上傳](managing-assets-touch-ui.md) |
 | 將更多資產儲存至DAM(3) | ✔✔ | ✘ | [網頁UI上傳](managing-assets-touch-ui.md)<br> 自訂指令碼／工具 |
 | 將大量資產移轉至DAM | ✘ | ✘ | [遷移指南](assets-migration-guide.md) |
@@ -78,14 +78,14 @@ The terms used in this document may have a different meaning in other contexts. 
 
 符號的圖例：
 
-* ✔✔: 首選解決方案
-* ✔: 可接受的解決方案
-* ✘: 不應用於使用案例
+* ✔✔:首選解決方案
+* ✔:可接受的解決方案
+* ✘:不應用於使用案例
 
 其他注釋：
 
-* （一）資產數量減少： 例如，與專案或促銷活動相關的一小組資產
-* （二）資產數量較多： 例如，組織中所有已核准的資產
+* （一）資產數量減少：例如，與專案或促銷活動相關的一小組資產
+* （二）資產數量較多：例如，組織中所有已核准的資產
 * (3)使用AEM案頭應用程式上傳檔案夾功能
 
 為支援資產散發使用案例，應考慮其他解決方案：
@@ -111,7 +111,7 @@ The terms used in this document may have a different meaning in other contexts. 
 
 ### 使用AEM和Creative Cloud整合時的考量事項 {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* 檢視桌 [面應用程式最佳實務](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
+* 檢視桌 [面應用程式最佳實務](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * 檢視 [Adobe Stock整合](aem-assets-adobe-stock.md)
 * 請參 [閱Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)
 
@@ -149,7 +149,7 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 
 將資產儲存在DAM中，讓資產更容易存取，而且可尋找。 它可確保整個組織或生態系統中的眾多使用者（包括合作夥伴、客戶等）都能運用這些資產。
 
-大部分組織都選擇只儲存與下遊行銷/LOB程式相關的資產（透過AEM Sites發佈至網路通道或Adobe Experience Cloud - Marketing Cloud、Advertising Cloud所提供的其他通道，並由Analytics Cloud測量，提供給使用者／合作夥伴等）。 此外，組織會儲存在DAM中可能須經過審查／核准程式的資產。 如此，DAM會儲存大部分有高可能被利用的資產，並避免儲存閒置資產。
+大部分組織都選擇只儲存與下遊行銷/LOB程式相關的資產（透過AEM Sites發佈至網路通道或Adobe Experience Cloud - Marketing Cloud、Advertising Cloud提供給使用者／合作夥伴等的其他通道）。 此外，組織會儲存在DAM中可能須經過審查／核准程式的資產。 如此，DAM會儲存大部分有高可能被利用的資產，並避免儲存閒置資產。
 
 儲存資產也須受技術與資源使用考量。 DAM針對儲存的資產提供其他服務，包括擷取中繼資料、版本修訂、產生預覽／轉碼、管理參照以及新增存取控制資訊。 這些服務需要額外的時間和基礎架構資源。
 
@@ -200,9 +200,9 @@ AEM Assets根據使用者對AEM Assets部署的存取權，支援兩種類型的
 
 使用下列策略來存取最終／核准的資產：
 
-* 若要提供大量資產的存取權： 使 [用AEM Assets Brand Portal](https://helpx.adobe.com/tw/experience-manager/brand-portal/user-guide.html)，或客戶在AEM發佈基礎架構上實作 [「資產共用](assets-finder-editor.md) 」
+* 若要提供大量資產的存取權：使 [用AEM Assets Brand Portal](https://helpx.adobe.com/tw/experience-manager/brand-portal/user-guide.html)，或客戶在AEM發佈基礎架構上實作 [「資產共用](assets-finder-editor.md) 」
 
-* 若要存取一些資產： 除了AEM Assets品牌入口網站或資產共用外，還可以使用與Adobe Creative Cloud共用的AEM檔案夾。 請注意，本整合有某些限制，本文將詳細說明。
+* 若要存取一些資產：除了AEM Assets品牌入口網站或資產共用外，還可以使用與Adobe Creative Cloud共用的AEM檔案夾。 請注意，本整合有某些限制，本文將詳細說明。
 
 ### 使用案例 {#use-cases}
 
@@ -216,18 +216,18 @@ AEM Assets根據使用者對AEM Assets部署的存取權，支援兩種類型的
 
 資產生命週期包含下列階段：
 
-1. 將核准的資產共用至創意案頭： DAM的最終資產已提供給創意使用者（在桌上型）
-1. 建立新設計（創意數位資產）: 新檔案儲存在進行中(WIP)區域中。
-1. 在新設計中使用（放置）已核准的資產： 創意使用者使用Creative Cloud應用程式中現有的已核准資產來產生新資產
-1. 頻繁保存WIP更新： 創意使用者可快速重複，並經常儲存檔案。 目前階段，創意使用者可能會與他人共同作業，但經常儲存的更新通常對DAM使用者不感興趣。
+1. 將核准的資產共用至創意案頭：DAM的最終資產已提供給創意使用者（在桌上型）
+1. 建立新設計（創意數位資產）:新檔案儲存在進行中(WIP)區域中。
+1. 在新設計中使用（放置）已核准的資產：創意使用者使用Creative Cloud應用程式中現有的已核准資產來產生新資產
+1. 頻繁保存WIP更新：創意使用者可快速重複，並經常儲存檔案。 目前階段，創意使用者可能會與他人共同作業，但經常儲存的更新通常對DAM使用者不感興趣。
 1. 資產達到創意就緒狀態，並儲存至「創意就緒」檔案夾
-1. 資產更新： DAM中的使用者可使用資產更新或新檔案
-1. 資產投入生產： 這是DAM流程，視組織而定，可能包括標籤、核准和變更存取控制。 目前，該資產已視為最終資產，而且可以由更多團隊利用DAM來使用。 創意使用者也可以用它來建立其他資產。
+1. 資產更新：DAM中的使用者可使用資產更新或新檔案
+1. 資產投入生產：這是DAM流程，視組織而定，可能包括標籤、核准和變更存取控制。 目前，該資產已視為最終資產，而且可以由更多團隊利用DAM來使用。 創意使用者也可以用它來建立其他資產。
 
 以下是關於如何透過此程式管理資產的一些一般建議：
 
-* 請針對WIP檔案使用專用的儲存區／系統，例如Adobe Creative Cloud Assets同步資料夾： 與DAM使用者無關的頻繁更新，最好由專用系統處理，而不是從AEM Assets中處理。 WIP資產可以使用Adobe Creative Cloud案頭應用程式同步至本機磁碟、儲存在本機儲存空間等。
-* 針對上傳至DAM的最終資產和資產使用個別的資料夾／共用： 為避免疑義，最終資產應有自己的對應／共用資料夾（上方的「最終」範例），而要上傳回DAM的資產應有自己的資產（「創意就緒」）
+* 請針對WIP檔案使用專用的儲存區／系統，例如Adobe Creative Cloud Assets同步資料夾：與DAM使用者無關的頻繁更新，最好由專用系統處理，而不是從AEM Assets中處理。 WIP資產可以使用Adobe Creative Cloud案頭應用程式同步至本機磁碟、儲存在本機儲存空間等。
+* 針對上傳至DAM的最終資產和資產使用個別的資料夾／共用：為避免疑義，最終資產應有自己的對應／共用資料夾（上方的「最終」範例），而要上傳回DAM的資產應有自己的資產（「創意就緒」）
 
 #### 變更DAM中管理的現有資產 {#changing-existing-assets-managed-in-dam}
 
@@ -250,10 +250,10 @@ And it will be updated for DA2.0 best practices after 6.5 repo is available for 
 -->
 
 * **1:** 將資產從DAM共用至案頭，或直接在所選應用程式（例如Adobe Photoshop等）的案頭上開啟。 建議簽出以鎖定檔案。
-* **2:** 次要更新： 編輯檔案並儲存變更。
+* **2:** 次要更新：編輯檔案並儲存變更。
 * 步驟2的替代流程
 
-   * **答：** 主要更新： 如果檔案需要詳細的更改集，則應間歇性地保存並複製到WIP資料夾／區域。
+   * **答：** 主要更新：如果檔案需要詳細的更改集，則應間歇性地保存並複製到WIP資料夾／區域。
    * **B:** 在WIP資料夾中繼續處理檔案。 儲存的變更不會同步至DAM中的版本
    * **C:** 更新完成後，檔案會複製回或儲存至對應的資料夾
 
@@ -292,12 +292,12 @@ And it will be updated for DA2.0 best practices after 6.5 repo is available for 
 
 #### 資產移轉 {#asset-migration}
 
-要規劃並執行資產從現有系統遷移到新系統或遷移儲存在伺服器上的大量資產，請參閱遷移 [指南](/help/assets/assets-migration-guide.md)。 AEM案頭應用程式和AEM到Creative Cloud的整合不支援此類移轉。 由於需要吸收的資產數量龐大，以及對元資料映射、轉換和提取的額外要求，因此應使用不同的工具和方法來處理遷移。
+要規劃並執行資產從現有系統遷移到新系統或遷移儲存在伺服器上的大量資產，請參閱遷移 [指南](/help/assets/assets-migration-guide.md)。 AEM案頭應用程式和AEM到Creative Cloud的整合不支援此類移轉。 由於需要吸收的資產數量龐大，以及元資料映射、轉換和提取方面的其他要求，因此應使用不同的工具和方法來處理遷移。
 
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
->* [AEM案頭應用程式最佳範例](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
->* [AEM Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [AEM案頭應用程式最佳範例](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
+>* [AEM Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [AEM與Adobe Stock整合](aem-assets-adobe-stock.md)
 
