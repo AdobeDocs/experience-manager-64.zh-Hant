@@ -3,10 +3,10 @@ title: 時間軸中的活動串流
 description: '本文說明如何在時間軸上顯示資產的活動記錄檔。 '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 40%
+source-wordcount: '214'
+ht-degree: 36%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 40%
 
 將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。
 
-此外，當上傳新資產或修改現有資產並透過 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM案頭應用程式簽入AEM時，會記錄時間軸活動](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/introduction.html)。
+此外，當上傳新資產或修改現有資產並透過 [Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html) 或 [AEM案頭應用程式簽入AEM時，會記錄時間軸活動](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。
 
 >[!NOTE]
 >
