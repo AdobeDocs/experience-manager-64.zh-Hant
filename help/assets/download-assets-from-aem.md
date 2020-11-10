@@ -3,7 +3,7 @@ title: 從下載數位資產 [!DNL Adobe Experience Manager]。
 description: 瞭解如何從指令下 [!DNL Adobe Experience Manager] 載資產，以啟用或停用下載功能。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 05ecc940180ead13676cc5bb8e2e230b1d55162b
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
    ![從Experience Manager Assets下載資產時的可用選項](/help/assets/assets/asset_download_dialog.png)
 
-   *圖： 下載對話框選項。*
+   *圖：下載對話框選項。*
 
 1. 在「下載」對話方塊中，選取您想要的下載選項。
 
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 1. 在對話方塊中，點選「 **[!UICONTROL 下載。]**.
 
-當您選擇要下載的檔案夾時，會下載該檔案夾下的完整資產階層。 若要將您下載的每個資產（包括父資料夾下巢狀內嵌的子資料夾中的資產）納入個別資料夾，請選取「為每個資 **[!UICONTROL 產建立個別資料夾」]**。
+當您選擇要下載的檔案夾時，會下載該檔案夾下的完整資產階層。 若要將您下載的每個資產（包括父資料夾下巢狀內嵌之子資料夾中的資產）納入個別資料夾，請為每個資產選 **[!UICONTROL 取「建立個別資料夾」]**。
 
 ## 啟用資產下載servlet {#enable-asset-download-servlet}
 
@@ -66,7 +66,7 @@ ht-degree: 2%
 
 您可 `Asset Download Servlet` 以在「發佈」例項上停用此功能，方法是更新 [!DNL Experience Manager] 分派器組態以封鎖任何資產下載請求。 也可以通過OSGi控制台手動禁用servlet。
 
-1. 若要透過分派器設定封鎖資產下載請求，請編 `dispatcher.any` 輯設定並新增規則至篩 [選區段](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)。 `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. 若要透過分派器設定封鎖資產下載請求，請編 `dispatcher.any` 輯設定並新增規則至篩 [選區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)。 `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 若要在Publish實例上禁用OSGi元件，請訪問位於的OSGi控制台 `http://[aem_server]:[port]/system/console/components`。 找到並 `com.day.cq.dam.core.impl.servlet.AssetDownloadServlet` 按一下「 **[!UICONTROL Disable]**（禁用）」。
 
