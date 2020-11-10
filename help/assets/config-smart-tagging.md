@@ -3,10 +3,10 @@ title: 使用智慧型內容服務設定資產標籤。
 description: 瞭解如何使用智慧型內容服務來設定智慧型標籤 [!DNL Adobe Experience Manager]，以及增強智慧型標籤。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d0a173b1c95141c91b7d0495e994eab07f2655e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1229'
-ht-degree: 33%
+source-wordcount: '1212'
+ht-degree: 34%
 
 ---
 
@@ -58,7 +58,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
    ![Experience Manager Smart Content Service對話框，用於提供內容服務URL](assets/aem_scs.png)
 
 
-   *圖： 「智慧型內容服務」對話方塊，提供內容服務URL*
+   *圖：「智慧型內容服務」對話方塊，提供內容服務URL*
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
    ![為智慧標籤服務建立的設定的表示](assets/smart-tags-download-public-cert.png)
 
 
-   *圖： 智慧型標籤服務的設定*
+   *圖：智慧型標籤服務的設定*
 
 ### Reconfigure when a certificate expires {#certrenew}
 
@@ -83,7 +83,7 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
 
    ![刪除Keystore中現有的相似性搜尋項目，以新增安全憑證](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *圖：刪除金鑰存放區中現有的`similaritysearch`項目，以新增安全性憑證。*
+   *圖：刪除金鑰存放區中現有的 `similaritysearch` 項目，以新增安全性憑證。*
 
 1. 導覽至「 **[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** >舊 **[!UICONTROL 版雲端服務」]**。按一 **[!UICONTROL 下「資產智慧標籤]** >顯 **[!UICONTROL 示設定]** >可 **[!UICONTROL 用設定」]**。按一下所需的設定。
 
@@ -109,17 +109,17 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
 
 1. 在&#x200B;**[!UICONTROL 選取產品設定檔]**&#x200B;頁面上，選取&#x200B;**[!UICONTROL 「智慧內容服務」]**。按一下&#x200B;**[!UICONTROL 「儲存已設定的 API」]**。
 
-   此時會出現一個頁面，顯示更多關於設定的資訊。請保持此頁面的開啟，以複製並新增這些值至中的 [!UICONTROL Assets Smart Tagging Service Settings] （雲端設定的資產智慧標籤服務設定）, [!DNL Experience Manager] 以設定智慧標籤。
+   此時會出現一個頁面，顯示更多關於設定的資訊。請保持此頁面的開啟狀態，以複製並新增這些值至中的 [!UICONTROL Assets智慧標籤服務設定(Smart Tagging Service Settings] of cloud configuration), [!DNL Experience Manager] 以設定智慧標籤。
 
    ![在「概覽」索引標籤中，您可以檢閱為整合提供的資訊。](assets/integration_details.png)
 
-   *圖： Adobe Developer Console中的整合詳細資訊*
+   *圖：Adobe Developer Console中的整合詳細資訊*
 
 ## 設定智慧型內容服務 {#configure-smart-content-service}
 
 若要設定整合，請使用Adobe Developer Console整合的 [!UICONTROL TECHNICAL ACCOUNT ID]、 [!UICONTROL ORGANIZATION ID]、 [!UICONTROL CLIENT SECRET和] CLIENT ID欄位的值。 建立智慧型標籤雲端設定可讓您驗證部署中的API [!DNL Experience Manager] 要求。
 
-1. 在中 [!DNL Experience Manager]，導覽至「 **[!UICONTROL 工具>雲端服務>舊版雲端服務」以開啟]** Cloud Services  Console。
+1. 在中 [!DNL Experience Manager]，導覽至「 **[!UICONTROL 工具>雲端服務>舊版雲端服務」]** ，以開啟「雲端服務 [!UICONTROL 主控台] 」。
 
 1. 在「資 **[!UICONTROL 產智慧標籤]**」下，開啟上述建立的設定。 在服務設定頁面上，按一下「 **[!UICONTROL 編輯]**」。
 
@@ -167,21 +167,21 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
    ![設定DAM更新資產工作流程並新增智慧標籤步驟](assets/smart-tag-step-properties-workflow1.png)
 
 
-   *圖： 設定DAM更新資產工作流程並新增智慧標籤步驟*
+   *圖：設定DAM更新資產工作流程並新增智慧標籤步驟*
 
 1. 在「參 **[!UICONTROL 數]** 」頁籤中，如果希望工作流完成，即使自動標籤步驟失敗，請選擇「忽略錯誤 **** 」。
 
    ![設定DAM更新資產工作流程，以新增智慧型標籤步驟並預先選取處理常式](assets/smart-tag-step-properties-workflow2.png)
 
 
-   *圖： 設定DAM更新資產工作流程，以新增智慧型標籤步驟並預先選取處理常式*
+   *圖：設定DAM更新資產工作流程，以新增智慧型標籤步驟並預先選取處理常式*
 
    若無論是否對資料夾啟用智慧標記，都要在資產上傳時標記資產，請選取&#x200B;**[!UICONTROL 「忽略智慧標記旗標」]**。
 
    ![設定DAM更新資產工作流程以新增智慧型標籤步驟，並選取忽略智慧型標籤標幟](assets/smart-tag-step-properties-workflow3.png)
 
 
-   *圖： 設定DAM更新資產工作流程以新增智慧型標籤步驟，並選取忽略智慧型標籤標幟*
+   *圖：設定DAM更新資產工作流程以新增智慧型標籤步驟，並選取忽略智慧型標籤標幟*
 
 1. 按一下&#x200B;**[!UICONTROL 「確定」]**&#x200B;關閉程序步驟，然後儲存工作流程。
 
@@ -190,5 +190,4 @@ A public certificate allows you to authenticate your profile on [!DNL Adobe Deve
 >* [管理智慧標籤](managing-smart-tags.md)
 >* [智慧型標籤的概觀與訓練方法](enhanced-smart-tags.md)
 >* [培訓智慧型內容服務的准則和規則](smart-tags-training-guidelines.md)
->* [有關如何設定智慧標籤的教學課程影片](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 
