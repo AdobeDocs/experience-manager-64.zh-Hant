@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6200'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ AEM 6中有兩種類型的健康檢查：
 1. Individual Health Checks
 1. Composite Health Checks
 
-An **Individual Health Check** is a single health check that corresponds to a status card. Individual Health Checks can be configured with rules or thresholds and they can provide one or more hints and links to solve indited health issues. 讓我們以「記錄錯誤」檢查為例： 如果實例日誌中有ERROR條目，您將在運行狀況檢查的詳細資訊頁面上找到它們。 在頁面頂部，您將在「診斷工具」部分看到指向「日誌消息」分析器的連結，該連結將使您能夠更詳細地分析這些錯誤並重新配置記錄器。
+An **Individual Health Check** is a single health check that corresponds to a status card. Individual Health Checks can be configured with rules or thresholds and they can provide one or more hints and links to solve indited health issues. 讓我們以「記錄錯誤」檢查為例：如果實例日誌中有ERROR條目，您將在運行狀況檢查的詳細資訊頁面上找到它們。 在頁面頂部，您將在「診斷工具」部分看到指向「日誌消息」分析器的連結，該連結將使您能夠更詳細地分析這些錯誤並重新配置記錄器。
 
 A **Composite Health Check** is a check that aggregates information from endividual checks.
 
@@ -76,7 +76,7 @@ Composite health checks are configured with the aid of **filter tags**. 在實�
 
 ### Creating an individual Health Check {#creating-an-individual-health-check}
 
-Creating an individual Health Check inverted two steps: 實作a Sling Health Check，並新增Dashboard設定節點中Health Check的項目。
+Creating an individual Health Check inverted two steps:實作a Sling Health Check，並新增Dashboard設定節點中Health Check的項目。
 
 1. 若要建立Sling Health Check，您必須建立實作Sling HealthCheck介面的OSGI元件。 您會將此元件新增至套件中。 元件的屬性將完全標識Health Check。 在安裝此元件後，將自動為Health Check（運行狀況檢查）建立JMX MBean。 如需詳細資 [訊，請參閱Sling Health Check Documentation](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) 。
 
@@ -117,7 +117,7 @@ Creating an individual Health Check inverted two steps: 實作a Sling Health Che
 
    >[!NOTE]
    >
-   >上面的資源路徑建立如下： 如果Health Check的mbean名稱為&quot;test&quot;，請將&quot;test&quot;新增至路徑的結尾 `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
+   >上面的資源路徑建立如下：如果Health Check的mbean名稱為&quot;test&quot;，請將&quot;test&quot;新增至路徑的結尾 `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
    >
    >因此，最終的路徑是：
    >
@@ -141,7 +141,7 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
 
 1. 前往OSGI主控台的Web組態管理器。 您可以透過存取 `https://serveraddress:port/system/console/configMgr`
 
-1. 搜尋名為 **Apache Sling Composite Health Check的項目**。 在找到它後，請注意已有兩種配置可供使用： 一個代表系統檢查，另一個代表安全檢查。
+1. 搜尋名為 **Apache Sling Composite Health Check的項目**。 在找到它後，請注意已有兩種配置可供使用：一個代表系統檢查，另一個代表安全檢查。
 1. 按配置右側的「+」按鈕，建立新配置。 將會出現新視窗，如下所示：
 
    ![chlimage_1-63](assets/chlimage_1-63.jpeg)
@@ -159,7 +159,7 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
    >
    >A new JMX Mbean is created for each new configuration of the Apache Sling Composite Health Check.**
 
-1. 最後，剛建立的複合健康檢查項需要添加到「操作儀表板」配置節點中。 此過程與使用單個健康檢查的過程相同： 需要在下 **建立nt:unstructured** 類型的節點 `/apps/settings/granite/operations/hc`。 節點的資源屬性將由OSGI配置中的 **hc.mean.name** 值定義。
+1. 最後，剛建立的複合健康檢查項需要添加到「操作儀表板」配置節點中。 此過程與使用單個健康檢查的過程相同：需要在下 **建立nt:unstructured** 類型的節點 `/apps/settings/granite/operations/hc`。 節點的資源屬性將由OSGI配置中的 **hc.mean.name** 值定義。
 
    例如，如果您建立了配置並將 **hc.mbean.name** 值設定為 **diskusage**，則配置節點將如下所示：
 
@@ -296,7 +296,7 @@ A Composite Health Check&#39;s role is to aggregate a number of individual Healt
   </tr> 
   <tr> 
    <td>安全性檢查</td> 
-   <td><p>Security check is a composite which aggregates the results of multiple security-related checks. 這些個別的健康狀況檢查可解決與「安全檢查清單」檔案頁面上的安全檢查清 <a href="/help/sites-administering/security-checklist.md">單不同的問題。</a> 當啟動實例時，此檢查作為安全煙霧測試非常有用。 </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">securitychecks,type=HealthCheck</a></p> </td> 
+   <td><p>Security check is a composite which aggregates the results of multiple security-related checks. 這些個別的健康狀況檢查可解決與「安全檢查清單」檔案頁面上的安全檢查清 <a href="/help/sites-administering/security-checklist.md">單不同的問題。</a> 當啟動實例時，此檢查作為安全煙霧測試非常有用。 </p> <p>The MBean for this health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=securitychecks,type=HealthCheck</a></p> </td> 
   </tr> 
   <tr> 
    <td>作用中組合</td> 
@@ -333,7 +333,7 @@ Health Check Dashboard可透過Granite JMX Mbeans與Nagios整合。 下列範例
 
    >[!NOTE]
    >
-   >有關如何在您的系統上安裝Nagios和NRPE的更多資訊，請參閱 [Nagios檔案](https://library.nagios.com/library/products/nagioscore/manuals/)。
+   >有關如何在您的系統上安裝Nagios和NRPE的更多資訊，請參閱 [Nagios Documentation](https://library.nagios.com/library/products/nagioscore/manuals/)。
 
 1. 新增AEM伺服器的主機定義。 這可以透過Nagios XI Web介面，使用Configuration Manager:
 
@@ -418,9 +418,9 @@ Health Check Dashboard可透過Granite JMX Mbeans與Nagios整合。 下列範例
 範例：
 
 * 如果您計畫捕獲所有 **ERROR** 消息，則無需配置。 預設情況下，將捕獲所有ERROR消息。
-* 如果計畫捕獲所有 **ERROR**、 **WARN** 和 **INFO** messages - the logger name should be set to: &quot;**root**&quot;，和the logger level to: **資訊**。
+* 如果計畫捕獲所有 **ERROR**、 **WARN** 和 **INFO** messages - the logger name should be set to:&quot;**root**&quot;，和the logger level to: **資訊**。
 
-* 如果您計畫擷取來自特定封裝的所有訊息（例如com.adobe.granite）-記錄器名稱應設為： &quot;com.adobe.granite&quot;和logger level to: **DEBUG** (這將捕獲所有 **ERROR**、 **WARN**、 **INFO****** and DEBUG消息，如下圖所示)。
+* 如果您計畫擷取來自特定封裝的所有訊息（例如com.adobe.granite）-記錄器名稱應設為：&quot;com.adobe.granite&quot;和logger level to: **DEBUG** (這將捕獲所有 **ERROR**、 **WARN**、 **INFO****** and DEBUG消息，如下圖所示)。
 
 ![chlimage_1-419](assets/chlimage_1-419.png)
 
@@ -434,7 +434,7 @@ Health Check Dashboard可透過Granite JMX Mbeans與Nagios整合。 下列範例
 
 >[!NOTE]
 >
->診斷頁面中的設定不會影響記錄到日誌檔案的內容，反之亦然。 因此，雖然錯誤日誌可能會捕獲INFO消息，但您可能無法在日誌消息UI中看到這些消息。 此外，透過UI，可從特定封裝擷取DEBUG訊息，而不會影響錯誤記錄。 有關如何配置日誌檔案的詳細資訊，請參 [閱Logging](/help/sites-deploying/configure-logging.md)。
+>診斷頁面中的設定不會影響記錄到日誌檔案的內容，反之亦然。 因此，雖然錯誤日誌可能會捕獲INFO消息，但您可能無法在日誌消息UI中看到這些消息。 此外，透過UI，可從特定套件擷取DEBUG訊息，而不會影響錯誤記錄。 有關如何配置日誌檔案的詳細資訊，請參 [閱Logging](/help/sites-deploying/configure-logging.md)。
 
 >[!NOTE]
 >
@@ -558,7 +558,7 @@ UI可用來篩選表格中的索引，方法是在螢幕左上角的搜尋方塊
 
 每日維護視窗的預設時間為2到5 AM。 在週六的上午1點到2點之間，配置為在每週維護窗口中運行的任務將執行。
 
-您也可以按下兩個維護卡上的齒輪圖示來設定計時：
+您也可以按下兩張維護卡上的齒輪圖示來設定計時：
 
 ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -613,7 +613,7 @@ UI可用來篩選表格中的索引，方法是在螢幕左上角的搜尋方塊
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
-**有了AEM 6.4**，您可以依下列方式停止「版本清除」維護工作：
+**有了AEM 6.4**，您可以按如下方式停止「版本清除」維護任務：
 
 * 自動——如果計畫維護窗口在任務完成之前關閉，則任務將自動停止。 下次維護視窗開啟時，它會繼續。
 * 手動——要手動停止任務，請在「版本清除」維護卡上按一下「停 **止** 」表徵圖。 在下次執行時，任務將安全恢復。
@@ -640,7 +640,7 @@ UI可用來篩選表格中的索引，方法是在螢幕左上角的搜尋方塊
   </tr> 
   <tr> 
    <td>granite.maintenance.isStoppable</td> 
-   <td>布林屬性，定義用戶是否可以停止任務。 如果任務聲明其可停止，則必須在執行過程中檢查其是否已停止，然後採取相應行動。 預設值為false。</td> 
+   <td>布林屬性，定義用戶是否可以停止任務。 如果任務聲明其可停止，則必須在其執行過程中檢查其是否已停止，然後採取相應行動。 預設值為false。</td> 
    <td>true</td> 
    <td>可選</td> 
   </tr> 
