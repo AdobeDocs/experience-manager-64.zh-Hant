@@ -57,7 +57,7 @@ ht-degree: 0%
    有三個標籤： 資料、內容和附件。 如果沒有資料元素（預留位置變數和版面欄位），則字母會直接在中開啟，並顯示「內容」索引標籤。 附件頁籤僅在附件存在或庫訪問被啟用時可用。
 
    >[!NOTE]
-
+   >
    >有關在字母預覽的HTML或PDF轉譯模式之間切換的詳細資訊，請參閱 [更改字母轉譯模式](#changerenditionmode)。 如需Correpence Management和AEM中PDF支援的詳細資訊，請參閱 [Distination of NPAPI browser plug-ins and its impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)。
 
 ### Enter data {#enterdata}
