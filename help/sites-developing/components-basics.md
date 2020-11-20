@@ -458,7 +458,6 @@ AEM元件的結構強大而有彈性，主要考量是：
 >
 >* 為了相容性，啟用觸控的UI可使用傳統UI對話方塊的定義，但尚未為啟用觸控的UI定義對話方塊。
 >* 也提 [供對話方塊轉換工具](/help/sites-developing/dialog-conversion.md) ，協助您擴充／轉換僅為傳統UI定義對話方塊的元件。
-
 >
 
 
@@ -1033,7 +1032,7 @@ AEM中的元件受3種不同階層的規範：
 
 >* 對於嵌套元件，以下屬性的值 *必須*`REFRESH_PAGE`:>
 >* `aftermove`
-* `aftercopy`
+>* `aftercopy`
 
 
 事件處理常式可與自訂實作一起實作。 例如(其中 `project.customerAction` 是靜態方法):
@@ -1045,7 +1044,8 @@ AEM中的元件受3種不同階層的規範：
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-對於傳統UI，若要查看哪些參數可用於處理常式，請參閱和介面工具集文 `before<action>` 件的 `after<action>` 和事件 [ 部 `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) 分( [`CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) and events)。
+>
+>對於傳統UI，若要查看哪些參數可用於處理常式，請參閱和介面工具集文 `before<action>` 件的 `after<action>` 和事件 [ 部 `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) 分( [`CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) and events)。
 
 使用下列配置，在刪除、編輯、插入或移動元件後刷新頁面：
 
