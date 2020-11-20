@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4300'
 ht-degree: 0%
@@ -246,7 +246,7 @@ Quickview的大多數實施都採用以下模式：
 >[!NOTE]
 >
 >在「互動式影像」或「轉盤橫幅」中新增熱點至影像時，熱點資訊會儲存在相對於影像位置的相同中繼資料位置，不論是「互動式影像」或「轉盤橫幅」。 這項功能表示，您可以在任一檢視器中，輕鬆地重複使用相同的影像及其定義的熱點資料。
-
+>
 >但是，請注意，轉盤橫幅支援影像上的影像地圖，這些影像也可能包含熱點；互動式影像則否。 如果您想要建立使用相同影像的互動式影像或轉盤橫幅，請記住這一點。 您可能想要使用相同影像的個別副本來建立互動式影像和轉盤橫幅。
 >
 >另請參閱 [轉盤橫幅](carousel-banners.md)。
@@ -312,7 +312,7 @@ b.在影像上，點選您要熱點出現的位置。 如有必要，請拖動�
 
    >[!NOTE]
    >
-   >如果您正在編輯具有熱點的互動式影像並裁切影像，則會刪除熱點。
+   >如果您正在編輯具有熱點的互動式影像並裁剪影像，則會刪除熱點。
 
 ### （選擇性）預覽互動式影像 {#optional-previewing-interactive-images}
 
