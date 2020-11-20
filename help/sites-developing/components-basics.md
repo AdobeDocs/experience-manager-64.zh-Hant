@@ -1029,10 +1029,11 @@ AEM中的元件受3種不同階層的規範：
 >[!NOTE]
 >
 >對於嵌套元件，對於定義為節點上屬性的操作，存在某些 `cq:listeners` 限制：
-
->* 對於嵌套元件，以下屬性的值 *必須*`REFRESH_PAGE`:>
->* `aftermove`
->* `aftercopy`
+>
+>* 對於嵌套元件，以下屬性的值 *必須*`REFRESH_PAGE`:
+>
+>  * `aftermove`
+>  * `aftercopy`
 
 
 事件處理常式可與自訂實作一起實作。 例如(其中 `project.customerAction` 是靜態方法):
