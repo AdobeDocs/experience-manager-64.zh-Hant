@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 1%
@@ -458,6 +458,7 @@ AEM元件的結構強大而有彈性，主要考量是：
 >
 >* 為了相容性，啟用觸控的UI可使用傳統UI對話方塊的定義，但尚未為啟用觸控的UI定義對話方塊。
 >* 也提 [供對話方塊轉換工具](/help/sites-developing/dialog-conversion.md) ，協助您擴充／轉換僅為傳統UI定義對話方塊的元件。
+
 >
 
 
@@ -1031,8 +1032,9 @@ AEM中的元件受3種不同階層的規範：
 >對於嵌套元件，對於定義為節點上屬性的操作，存在某些 `cq:listeners` 限制：
 >
 >* 對於嵌套元件，以下屬性的值 *必須*`REFRESH_PAGE`:
->
->  * `aftermove`
+   >
+   >  
+* `aftermove`
 >  * `aftercopy`
 
 
