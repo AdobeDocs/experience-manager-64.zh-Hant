@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9b339e7a9ac3f43fd0ef2e672d6fbd640993368b
+source-git-commit: e29f203fc6754056d613bd47bdb8decff9e6b5c3
 workflow-type: tm+mt
-source-wordcount: '4042'
+source-wordcount: '4039'
 ht-degree: 1%
 
 ---
@@ -457,7 +457,7 @@ Maven Central儲存庫中提供Uber Jar for AEM 6.4.8.3 [版](https://repo.maven
 
 >[!NOTE]
 >
->此版本之後，UberJar和其他相關對象可在Maven Central Repository(Adobe Public Maven Repository，而非Adobe Public Maven Repository(repo.adobe.com)上使用。 主UberJar檔案已更名為 `uber-jar-<version>.jar`。 因此，標籤沒 `classifier`有 `apis` 任何值和值 `dependency` 。
+>UberJar和其他相關對象可在Maven Central Repository中使用，而非Adobe Public Maven Repository(repo.adobe.com)。 主UberJar檔案已更名為 `uber-jar-<version>.jar`。 因此，標籤沒 `classifier`有 `apis` 任何值和值 `dependency` 。
 
 ## 已移除／已過時的功能 {#removed-deprecated-features}
 
