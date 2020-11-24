@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
+source-git-commit: 9b339e7a9ac3f43fd0ef2e672d6fbd640993368b
 workflow-type: tm+mt
-source-wordcount: '3420'
+source-wordcount: '4042'
 ht-degree: 1%
 
 ---
@@ -16,15 +16,95 @@ ht-degree: 1%
 
 ## 發行資訊 {#release-information}
 
+<!-- TBD: Update the SD URL. -->
+
 | 產品 | **Adobe Experience Manager(AEM)6.4** |
 |---|---|
-| 版本 | 6.4.8.2 |
+| 版本 | 6.4.8.3 |
 | 類型 | 累積修補程式套件 |
-| 日期 | 2020年9月03日 |
+| 日期 | 2020年11月26日 |
 | 先決條件 | [AEM 6.4 Service Pack 8(6.4.8.0)](sp-release-notes.md) |
-| 下載URL | AEM 6.4.8.2軟體散 [發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-2.0.zip) |
+| 下載URL | AEM 6.4.8.3軟體散 [發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip) |
 
-## AEM 6.4.8.2包含的功能 {#what-s-included-in-aem}
+## AEM 6.4.8.3包含的功能 {#what-s-included-in-aem}
+
+AEM Cumulative Fix Pack 6.4.8.3是重要的更新，自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)全面推出以來，已包含數項內部和客戶修正。
+
+AEM 6.4.8.3是依賴AEM 6.4 Service Pack 8的累積修補程式套件(CFP)。 在安裝AEM 6.4 Service Pack 8後安裝CFP。
+
+在AEM 6.4.8.3中，內建儲存庫(Apache Jackrabbit Oak)已更新為1.8.23版。
+
+如需CFP和其他發行類型的詳細資訊，請參閱 [AEM Update Release Vehicle Definitions](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+
+Adobe Experience Manager 6.4.8.3可修正下列問題。
+
+### 網站 {#sites-6483}
+
+* 當您更新內容片段變更的文字時，主內容片段的內容會更新，而非變更(NPR-35080)。
+
+* 當您為元件的「字串類型」標籤屬性設定數值、刪除元件，並使用還原選項將其帶回時，標籤屬性的類型會自動從「字串」變更為「長」(NPR-34738)。
+
+* 將「檔案上傳」元件添加到多欄位時，影像路徑儲存在元件節點中，而不是多欄位節點中(NPR-34423)。
+
+* 在「移動頁面」精靈中，即使未選取目標，下一個按鈕仍會保持啟用(NPR-34460)。
+
+* 當父元件包含屬 `cq:isContainer` 性時，繼承的元件不會自動包含該屬性(CQ-4308409)。
+
+* 當您使用函式使 `calc()` 用CSS精簡時，符號周 `+` 圍的空格會移除(NPR-34991)。
+
+* 當您啟動AEM例項時， `com.adobe.granite.maintenance.impl.MaintenanceTaskManagerImpl` 和 `com.adobe.granite.maintenance.impl.TaskScheduler` 元件不會顯示 `Active` 在狀態(NPR-34952)。
+
+### [!DNL Assets] {#assets-6483}
+
+* 當建立現有資產的版本時，如果中繼資料描述檔套用至資料夾，使用者不會持續更新中繼資料(NPR-34833)。
+* 搭配使 [!DNL Adobe Asset Link] 用 [!DNL Adobe InDesign]時，搜尋結果不包含資料夾和系列，但僅包含資產(NPR-34700)。
+* 拖曳資料夾上的資產以移動資產時，使用者介面也會顯示「放入燈箱 [!UICONTROL 」和「放] 入系列」選項 。 即使取消移動操作，用戶介面仍繼續顯示後兩個選項(NPR-34525)。
+* 當「管理出版物」介面開啟時，發佈選項不可用，選取取消發佈選項時，範圍頁面會空白(CQ-4302509)。
+
+#### [!DNL Dynamic Media] {#dynamic-media}
+
+* 在「影像預設集」設定中，當中取消選取「 [!UICONTROL Enable JPG Chrominance Downsampling] 」(啟用 [!DNL Experience Manager]JPG色彩縮減取樣 [!DNL Dynamic Media] )選項時，變更不會與同步(NPR-34284)。
+* 在檢視 [!UICONTROL 器預設集編輯器中]，編輯 [!UICONTROL PanoramicImage/PanoramicImage_VR] 預設集時，元件中不提供 `PanoramicView``PANORAMICVIEW_AUTOROTATE` 修飾元標籤(CQ-4302043)。
+* 從中取消發佈視 [!DNL Experience Manager] 訊並不會解除發佈已設定Scene7上的最適化視訊集。 (CQ-4304405).
+
+### 平台 {#platform-6483}
+
+* 此標 `emitUseStrict` 幟會新增至Google Closure Compiler(GCC)處理器函式 `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`。 該標籤抑制指令 `use strict` 的輸出(NPR-34830)。
+* 開始 `NullPointerException` 的每日或每週維護任務時返回A(NPR-34702)。
+* 此工 [!DNL Apache Sling Health Check] 具已過時。 請改用 [Pattern Detector](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html) （圖樣偵測器）來偵測內容違規(NPR-33929)。
+
+### 整合 {#integrations-6483}
+
+* 當從資 [!UICONTROL 料夾導覽至「觀眾」頁面時，「建立] 」按鈕會顯示在「觀眾」頁面上(NPR  -35152)。
+
+### 使用者介面{#ui-6483}
+
+* [!UICONTROL Omnisearch使用者介面上的] 「篩選器」搜尋面板也會傳回執行搜尋位置以外的位置(NPR-34877)。
+* 在關閉 [!UICONTROL Omnisearch使用者介面上的] Filters面板時，左側導軌不會重設為 [!UICONTROL Content] ，因此無法重新開啟  Filters面板選擇(NPR-34483)。
+* 訪 `NullPointerException` 問頁面屬性時返回(NPR-34509)。
+
+### 社群 {#communities-6483}
+
+<!-- Following fixes of 6483 are documented on Nov 11 20202 by Vishabh. 
+-->
+
+* 產品中所有不公平術語的例子都被接受的等價物(NPR-34506)所取代。
+
+### 商務 {#commerce-6483}
+
+* 當系列中有超過15種產品時，該系列只會顯示前15種產品(NPR-34494)。
+
+### 表單 {#forms-6483}
+
+>[!NOTE]
+>
+>[!DNL Experience Manager Forms] 在排程的Cumulative Fix Pack發行日期後一週發 [!DNL Experience Manager] 行附加套件。
+
+如需安全性更新的詳細資訊，請參 [閱Experience Manager安全性公告頁面](https://helpx.adobe.com/security/products/experience-manager.html)。
+
+## 舊版Cumulative Fix Pack隨附的修補程式和功能套件 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
+
+### Adobe Experience Manager 6.4.8.2 {#experience-manager-6482}
 
 AEM Cumulative Fix Pack 6.4.8.2是重要的更新，自2020年3月AEM 6.4 Service Pack 8(6.4.8.0)全面推出以來，已包含數項內部和客戶修正。
 
@@ -36,7 +116,7 @@ AEM 6.4.8.2是依賴AEM 6.4 Service Pack 8的累積修補程式套件(CFP)。 �
 
 Adobe Experience Manager 6.4.8.2可修正下列問題。
 
-### 網站 {#sites-6482}
+#### 網站 {#sites-6482}
 
 * 如果 `RolloutConfigManagerFactoryImpl` 無法載入轉出設定，則不會嘗試載入遺失的設定。 它會傳回快取的組態(NPR-34091)。
 * 在Text核心元件中，使用來源HTML編輯選項後，標籤中的 `em` 類別即會移除(NPR-34080)。
@@ -59,7 +139,7 @@ Adobe Experience Manager 6.4.8.2可修正下列問題。
 * 在「編輯」範本頁面中顯示允許的元件時發生問題(CQ-4297295)。
 * 升級Chrome和Firefox後，快顯功能表無法如預期般運作。 載入頁面屬性時，當面板中有資料時，它不會顯示面板(CQ-4292995)。
 
-### 資產 {#assets-6482}
+#### 資產 {#assets-6482}
 
 * 已上傳PDF檔案的文字擷取無法運作，而PDF檔案中的某些字詞全文搜尋無法擷取該PDF檔案(NPR-34165)。
 
@@ -88,26 +168,26 @@ Adobe Experience Manager 6.4.8.2可修正下列問題。
 
 * 「檢 [!UICONTROL 視器預設集編輯器」頁面的「行為」標籤中缺少] PANORAMICVIEW_AUTOTATE  修飾元標籤(CQ-4302043)。
 
-### 平台 {#platform-6482}
+#### 平台 {#platform-6482}
 
 * 未指定「預設代理 **[!UICONTROL （發佈）」配置的「連接超時]** 」和「套接字超時 **** 」設定的預設值(NPR-33708)。
 * 維護任務調度程式啟動和停止維護任務的頻率比配置的頻率高(NPR-33520)。
 * 無法在升級的Experience Manager實例上使用診斷工具下載日誌(NPR-34419)。
 
-### 整合 {#integrations-6482}
+#### 整合 {#integrations-6482}
 
 * 為從中移 `library_path` 轉的程式庫產生程 [!DNL Adobe Launch] 式庫URL時，不會考慮的值 [!DNL Adobe Dynamic Tag Management]。 此外，遷移的庫使用與庫不同的首 [!DNL Adobe Launch] 碼。 (NPR-34238)。
 * 更新頁面屬性時，從雲端服務繼承的屬性不會持續存在(NPR-33865)。
 
-### 使用者介面{#ui-6482}
+#### 使用者介面{#ui-6482}
 
 * 在搜尋頁面上顯示選取資產的計數不正確(NPR-33540)。
 
-### 社群 {#communities-6482}
+#### 社群 {#communities-6482}
 
 * 透過管理控制台新增的社群群組現有使用者會從社群群組主控台中任何修改的使用者清單中移除(NPR-34312)。
 
-### 表單 {#forms-6482}
+#### 表單 {#forms-6482}
 
 >[!NOTE]
 >
@@ -160,8 +240,6 @@ Adobe Experience Manager 6.4.8.2可修正下列問題。
 * 在環境中 [!DNL JBoss] 將Document Security的版本升級 [!DNL Experience Manager Forms] 至7.0.9時， [!DNL Linux] 會產生錯誤(CQ-4300546)。
 
 如需安全性更新的詳細資訊，請參 [閱Experience Manager安全性公告頁面](https://helpx.adobe.com/security/products/experience-manager.html)。
-
-## 舊版Cumulative Fix Pack隨附的修補程式和功能套件 {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
 ### Adobe Experience Manager 6.4.8.1 {#experience-manager-6481}
 
@@ -267,7 +345,7 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 * 檔案服務：當使用者將文字檔案轉換為PDF時，日文字元無法正確顯示(NPR-33239)。
 * 將XSS與GuideSOMProviderServlet一起儲存(NPR-32701)。
 
-## Install 6.4.8.2 {#install}
+## Install 6.4.8.3 {#install}
 
 ### 設定需求 {#setup-requirements}
 
@@ -285,20 +363,20 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 >
 >適用於已安裝在AEM 6.4的功能套件客戶。Adobe提供的選購功能套件與發行版本和Service Pack有相依性。 如果您已安裝任何功能套件，請聯絡AEM客戶服務團隊，以驗證這些功能套件與AEM 6.4累積修補程式套件的相容性。
 
-* AEM 6.4.8.2需要AEM 6.4.8.0。請造訪升 [級檔案](../sites-deploying/upgrade.md) ，以取得詳細指示。
-* 在使用MongoDB和多個執行個體的部署中，使用「套件管理員」將AEM 6.4.8.2安裝在其中一個「作者」執行個體上。
+* AEM 6.4.8.3需要AEM 6.4.8.0。請造訪升 [級檔案](../sites-deploying/upgrade.md) ，以取得詳細指示。
+* 在使用MongoDB和多個執行個體的部署中，使用「套件管理員」將AEM 6.4.8.3安裝在其中一個「作者」執行個體上。
 * 在安裝累積修補程式套件之前，請確定您有AEM例項的快照或最新備份。
 * 在安裝之前重新啟動實例。 雖然只有在實例仍處於更新模式時才需要（這是剛從舊版更新實例時），但通常建議在實例運行較長時間時使用。
 
 >[!NOTE]
 >
->Adobe不建議移除或解除安裝AEM 6.4.8.2套件。
+>Adobe不建議移除或解除安裝AEM 6.4.8.3套件。
 
 ### 安裝Cumulative Fix Pack {#install-cumulative-fix-pack}
 
 請執行下列步驟，在現有的AEM 6.4.8.0例項上安裝Cumulative Fix Pack:
 
-1. 按一下「 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-2.0.zip) （軟體分發）」連結以下載軟體包。
+1. 按一下「 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-3.0.zip) （軟體分發）」連結以下載軟體包。
 
 1. 開啟「 [套件管理器](http://localhost:4502/crx/packmgr/index.jsp) 」，然後按一 **[!UICONTROL 下「上傳套件]** 」以上傳套件。
 
@@ -306,13 +384,13 @@ Adobe Experience Manager 6.4.8.1可修正下列問題。
 
 >[!NOTE]
 >
->**在安裝6.4.8.2時，Package Manager UI的對話框有時會立即退出**
+>**在安裝6.4.8.3時，Package Manager UI的對話框有時會立即退出**
 >
 >因此，建議您先等待錯誤記錄穩定，再存取執行個體。 在確保安裝成功之前，用戶必須等待與卸載更新程式包相關的特定日誌。 通常在Safari上會發生，但在任何瀏覽器上都會偶爾發生。
 
 ### 自動安裝 {#auto-installation}
 
-有兩種方式可自動將AEM 6.4.8.2安裝至執行中的例項：
+有兩種方式可自動將AEM 6.4.8.3安裝至執行中的例項：
 
 答：將套件放入……*/crx-quickstart/install* folder wher the server is running. 軟體包會自動安裝。
 
@@ -320,11 +398,11 @@ B.使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs/
 
 >[!NOTE]
 >
->AEM 6.4.8.2不支援Bootstrap安裝。
+>AEM 6.4.8.3不支援Bootstrap安裝。
 
 ### 驗證安裝 {#validate-install}
 
-1. 「產品資訊」頁面(*/system/console/productinfo*)現在應在「已安裝產品」下方顯示更新版本字串「Adobe Experience Manager, Version 6.4.8.2」。
+1. 「產品資訊」頁面(*/system/console/productinfo*)現在應在「已安裝產品」下方顯示更新版本字串「Adobe Experience Manager, Version 6.4.8.3」。
 1. 所有OSGI組合在OSGI主控台中都是ACTIVE或FRAGMENT(使用Web主控台：/system/console/bundles)。
 1. OSGI套件org.apache.jackrabbit.oak-core是1.8.17版或更新版本(使用Web Console:/system/console/bundles)。
 
@@ -335,13 +413,17 @@ B.使用「 [套件管理員」的HTTP API](https://docs.adobe.com/content/docs/
 
 ### 更新動態媒體檢視器(5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.2包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
+AEM 6.4.8.3包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預設集」頁面上檢查重複名稱。 建議動態媒體客戶執行下列命令，將方塊檢視器預設集調整為最新狀態。
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
 將新的檢視器預設集複製至/conf位置。
 
 ### 安裝AEM Forms附加元件套件 {#install-aem-forms-add-on-package}
+
+>[!NOTE]
+>
+>[!DNL Experience Manager Forms] 在排程的Cumulative Fix Pack發行日期後一週發 [!DNL Experience Manager] 行附加套件。
 
 >[!NOTE]
 >
@@ -357,11 +439,11 @@ AEM 6.4.8.2包含新版動態媒體檢視器(5.10.1)，可讓您在「影像預�
 >
 >如果您未在JEE上使用AEM Forms，請略過。 AEM Forms JEE中的修正會透過個別安裝程式提供。
 
-如需有關安裝AEM Forms JEE累積安裝程式和部署後設定的詳細資訊，請參閱 [AEM Forms JEE修補程式安裝程式0019](jee-patch-installer-64.md)。
+如需有關安裝AEM Forms JEE累積安裝程式和部署後設定的詳細資訊，請參閱 [AEM Forms JEE修補程式安裝程式](jee-patch-installer-64.md)。
 
 ### Uber Jar {#uber-jar}
 
-Maven Central儲存庫中提供Uber Jar for AEM 6.4.8.2 [版](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/)。
+Maven Central儲存庫中提供Uber Jar for AEM 6.4.8.3 [版](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.3/)。
 
 要在Maven項目中使用Uber Jar，請參閱文章「 [How to use Uber jar](../sites-developing/ht-projects-maven.md) and include the following dependency in your project POM:
 
@@ -369,8 +451,7 @@ Maven Central儲存庫中提供Uber Jar for AEM 6.4.8.2 [版](https://repo.maven
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.2-1.0</version>  
-      <scope>provided</scope>
+      <version>6.4.8.3</version>  
 </dependency>
 ```
 
@@ -389,21 +470,21 @@ Maven Central儲存庫中提供Uber Jar for AEM 6.4.8.2 [版](https://repo.maven
 
 ## 已知問題 {#known-issues}
 
-* 如果您從Experience Manager 6.4.8.2升級至Experience Manager 6.5，部分捆綁包可能不會將其狀態顯示為 `Active`。 安裝最新的Experience Manager 6.5 Service Pack 6以解決問題。
+* 如果您從 [!DNL Experience Manager] 6.4升級至 [!DNL Experience Manager] 6.5，部分捆綁包可能無法顯示其狀態 `Active`。 安裝最 [!DNL Experience Manager] 新的6.5 Service Pack以解決問題。
 
 如需AEM 6.4.8.0 Service Pack已知問題的詳細資訊，請參閱 [AEM 6.4.8.0 Service Pack發行說明](sp-release-notes.md)。
 
 ## 隨附的OSGi組合和內容套件 {#osgi-bundles-and-content-packages-included}
 
-下列文字檔案列出AEM 6.4.8.2隨附的OSGi組合和內容封裝。
+下列文字檔案列出AEM 6.4.8.3中包含的OSGi組合和內容封裝。
 
-AEM 6.4.8.2隨附的OSGi搭售清單
+AEM 6.4.8.3隨附的OSGi搭售清單
 
-[取得檔案](assets/6.4.8.2_osgi_bundles.txt)
+[取得檔案](assets/6.4.8.3_osgi_bundles.txt)
 
-AEM 6.4.8.2內容套件清單
+AEM 6.4.8.3內容套件清單
 
-[取得檔案](assets/6.4.8.2_content_packages.txt)
+[取得檔案](assets/6.4.8.3_content_packages.txt)
 
 ## 實用資源 {#helpful-resources}
 
