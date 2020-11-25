@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 安裝檢查清單 {#installation-checklist}
 
-**適用於[AEM平台](../../help/sites-deploying/deploy.md#what-is-aem)**
+**適用於 [AEM平台](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * 安裝最新 [的AEM 6.4更新](#aem-updates)
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
    （提供開發的範例設定）
 
-**針對社[群功能](overview.md)**
+**針對社 [群功能](overview.md)**
 
 * 如果部署發 [布群](../../help/sites-deploying/recommended-deploys.md#tarmk-farm), [請識別主要發佈者](#primary-publisher)
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communities GA隨附Communities套件。 若要瞭解AEM 6.4 [Communities的更新](/help/release-notes/release-notes.md#experience-manager-communities)，請 [參閱AEM 6.4發行說明](/help/release-notes/release-notes.md#release-information)。
+AEM 6.4 Communities GA包含Communities套件。 若要瞭解AEM 6.4 [Communities的更新](/help/release-notes/release-notes.md#experience-manager-communities)，請 [參閱AEM 6.4發行說明](/help/release-notes/release-notes.md#release-information)。
 
 ### AEM 6.4更新 {#aem-updates}
 
@@ -107,8 +107,8 @@ AEM 6.4 Communities GA隨附Communities套件。 若要瞭解AEM 6.4 [Communitie
 
 兩個社區功能使用MySQL資料庫：
 
-* 若要 [啟用](enablement.md): 錄制SCORM活動和學員
-* 針對 [DSRP](dsrp.md): 儲存使用者產生的內容(UGC)
+* 若要 [啟用](enablement.md):錄制SCORM活動和學員
+* 針對 [DSRP](dsrp.md):儲存使用者產生的內容(UGC)
 
 MySQL連接器必須單獨獲得和安裝。
 
@@ -124,7 +124,7 @@ MySQL連接器必須單獨獲得和安裝。
 
    * 例如，http://localhost:4502/system/console/bundles
    * 選取 **`Install/Update`**
-   * 瀏覽…… 若要選取從下載的ZIP封存解壓縮的套件
+   * 瀏覽……若要選取從下載的ZIP封存解壓縮的套件
    * 檢查 *Oracle Corporation的MySQLcom.mysql.jdbc* JDBC驅動程式是否處於活動狀態，如果沒有，則啟動它（或檢查日誌）
 
 1. 如果在配置JDBC後在現有部署上安裝，則通過從Web控制台中保存JDBC配置，將JDBC重新綁定到新連接器：
@@ -138,7 +138,7 @@ MySQL連接器必須單獨獲得和安裝。
 
 有關安裝捆綁的詳細資訊，請參閱「 [Web控制台](/help/sites-deploying/web-console.md#bundles) 」頁。
 
-#### 範例： 已安裝MySQL連接器包 {#example-installed-mysql-connector-bundle}
+#### 範例：已安裝MySQL連接器包 {#example-installed-mysql-connector-bundle}
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
@@ -150,7 +150,7 @@ AEM Communities SCORM引擎是啟用功能的必 [要](overview.md#enablement-co
 
 * **[cq -social- scorm -package,1.2.11版](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**。 所有AEM 6.4 Communities版本都支援此SCORM套件。
 
-* **[cq -social- scorm -package，版本2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**包[含SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)引擎。 此SCORM套件受AEM 6.4.2.x Communities支援。
+* **[cq -social- scorm -package，版本2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** 包 [含SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) 引擎。 此SCORM套件受AEM 6.4.2.x Communities支援。
 
 對於新安裝的SCORM引擎，應使用包含 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (即 [ cq -social- scorm -package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg))的套件。 如此，您就可以播放SCORM 2017支援的學習資源。
 
@@ -159,10 +159,10 @@ AEM Communities SCORM引擎是啟用功能的必 [要](overview.md#enablement-co
 ### 首次安裝SCORM套件
 
 1. 安裝 **[2.2.2版cq-social-scorm-package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)。**
-1. 從cq **`/libs/social/config/scorm/database_scormengine_data.sql`** 實例下載並在mysql伺服器中執行該實例，以建立升級的scormEngineDB模式。
+1. 從cq **`/libs/social/config/scorm/database_scormengine_data.sql`** 實例下載並在mysql伺服器中執行它，以建立升級的scormEngineDB模式。
 1. 在發 `/content/communities/scorm/RecordResults` 布者的CSRF篩選器中新增「排除的路徑」 `https://<hostname>;:<port>/system/console/configMgr` 屬性。
 
-現有的SCORM安裝可升級至 [**cq-social-scorm-package，版本2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(使用[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/))，如果製作的課程內容需要SCORM 2017.1。
+現有的SCORM安裝可升級至 [**cq-social-scorm-package，版本2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (使用 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/))，如果製作的課程內容需要SCORM 2017.1。
 
 >[!NOTE]
 >
@@ -231,9 +231,9 @@ AEM Communities SCORM引擎是啟用功能的必 [要](overview.md#enablement-co
 
 通用商店支援在發佈環境中協調和分析UGC，同時不需要復 [制](sync.md) UGC。
 
-* [社群內容商店](working-with-srp.md): 討論AEM社群的SRP儲存選項
+* [社群內容商店](working-with-srp.md):討論AEM社群的SRP儲存選項
 
-* [建議的拓撲](topologies.md): 根據使用案例和SRP選擇討論要使用的拓撲
+* [建議的拓撲](topologies.md):根據使用案例和SRP選擇討論要使用的拓撲
 
 ## 升級 {#upgrading}
 
