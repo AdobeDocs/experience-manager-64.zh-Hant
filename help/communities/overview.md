@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 1%
 
 Adobe Experience Manager(AEM)Communities提供快速建立內部部署社群網站的功能，可改善效能、改善網站管理，並鼓勵網站訪客轉換為有價值的社群成員。
 
-請連絡您的客戶代表，以取得有關AEM Communities授權的資訊，以及啟用功能和Adobe Analytics的其他授權。
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## 社群功能 {#communities-features}
 
@@ -46,16 +48,16 @@ AEM Communities可讓您與網站訪客建立關係，透過部落格、問答�
    * 登入
    * 轉換
 * 提供基本功能：
-   * 自適應設計： 使用 [Twitter引導主題](https://getbootstrap.com)
-   * 登入： 自行註冊、社 [交登入](social-login.md)、使用者個人檔案
-   * 通知： 會員會看到與他們相關的事件
-   * 訊息： 會員可以在社群網站內傳送或接收訊息
-   * 搜尋： 能夠在社群網站內搜尋
-   * 語言切換： 能夠為多語種網站選 [擇語言](../../help/sites-administering/translation.md)
-   * 管理： 存取權，讓授權會員在社群網站中協調和管理使用者
+   * 自適應設計：使用 [Twitter引導主題](https://getbootstrap.com)
+   * 登入：自行註冊、社 [交登入](social-login.md)、使用者個人檔案
+   * 通知：會員會看到與他們相關的事件
+   * 訊息：會員可以在社群網站內傳送或接收訊息
+   * 搜尋：能夠在社群網站內搜尋
+   * 語言切換：能夠為多語種網站選 [擇語言](../../help/sites-administering/translation.md)
+   * 管理：存取權，讓授權會員在社群網站中協調和管理使用者
 * 免除許多頁面層級的製作步驟：
-   * 品牌： 可選上傳橫幅影像，以便顯示在社群網站的所有頁面上
-   * 導覽功能表： 為社群網站範本中包含的功能提供導覽連結
+   * 品牌：可選上傳橫幅影像，以便顯示在社群網站的所有頁面上
+   * 導覽功能表：為社群網站範本中包含的功能提供導覽連結
 
 若要體驗快速建立新社群網站的簡易性，請造訪「AEM社 [群快速入門」](getting-started.md)。
 
@@ -63,13 +65,13 @@ AEM Communities可讓您與網站訪客建立關係，透過部落格、問答�
 
 為改善社群內容的效能與同步化，AEM Communities需要專為所有AEM（作者和發佈）例項之間共用的使用者產生內容(UGC)而設定的公用儲存。
 
-通過儲存資源提供商(SRP)輕鬆訪問社區內容，該提供商提供一個層，用於將訪問與底層拓撲分開，並支援UGC的公共儲存。
+社區內容可通過儲存資源提供器(SRP)輕鬆訪問，該提供器提供一個層，用於將訪問與底層拓撲分開，並支援UGC的公共儲存。
 
 若要進一步瞭解社群內容永續性和建議的部署，請造訪：
 
-* [社群內容儲存](working-with-srp.md): 討論UGC的可用SRP儲存選項
-* [建議的拓撲](topologies.md): 討論基於使用案例和SRP選擇的拓撲
-* [升級至AEM 6.3 Communities](upgrade.md): 提供移至AEM 6.3時有關UGC的實用資訊。
+* [社群內容儲存](working-with-srp.md):討論UGC的可用SRP儲存選項
+* [建議的拓撲](topologies.md):討論基於使用案例和SRP選擇的拓撲
+* [升級至AEM 6.3 Communities](upgrade.md):提供移至AEM 6.3時有關UGC的實用資訊。
 
 ## Communities Console {#communities-consoles}
 
@@ -134,7 +136,7 @@ AEM Communities可讓您與網站訪客建立關係，透過部落格、問答�
 
 ## 社群功能 {#community-functions}
 
-社群體驗預期的功能已廣為人知。 有了AEM Communities，這些功能即可做為建置區塊，稱為社群功能。
+社群體驗預期的功能眾所周知。 有了AEM Communities，這些功能即可做為建置區塊，稱為社群功能。
 
 社群功能是一般的AEM頁面，由連線到功能的元件組成，可輕鬆整合到社群網站範本中。
 
