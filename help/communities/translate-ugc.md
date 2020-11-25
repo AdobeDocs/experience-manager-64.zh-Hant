@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ UGC的轉譯可讓網站訪客和成員透過移除語言障礙，體驗全球�
 
 ## 預設翻譯服務 {#the-default-translation-service}
 
-AEM Communities隨附試用授 [權](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) ，針對多種語言 [啟用預設翻譯服務](../../help/sites-administering/tc-msconf.md) 。
+AEM Communities包含針對 [多種語言](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) ，啟用 [預設翻譯服務的試用授權](../../help/sites-administering/tc-msconf.md) 。
 
 在創 [建社區站點](sites-console.md)，從 `Allow Machine Translation` TRANSLATION [](sites-console.md#translation) 子面板選中預設翻譯服務時將啟用。
 
@@ -109,7 +109,7 @@ AEM Communities隨附試用授 [權](../../help/sites-administering/tc-msconf.md
 
 有關詳細說明，請 [訪問建立翻譯整合配置](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
 
-* **[!UICONTROL 「站點]** 」頁籤： 可保留為預設值
+* **[!UICONTROL 「站點]** 」頁籤：可保留為預設值
 * **[!UICONTROL 「社群]** 」頁籤：
    * **[!UICONTROL 翻譯提供]**&#x200B;者從下拉清單中選擇翻譯提供者。 預設值為 
 `microsoft`、試用版服務。
@@ -117,10 +117,9 @@ AEM Communities隨附試用授 [權](../../help/sites-administering/tc-msconf.md
    * **[!UICONTROL 內容類]**&#x200B;別：選擇說明要翻譯內容的類別。 預設值為 
 `General.`
 
-   * **[!UICONTROL 選擇地區……]**
-（選擇性）透過選取儲存UGC的地區設定，所有語言副本的貼文都會出現在一個全域對話中。 依慣例，選擇網站基 [本語言的地](sites-console.md#translation) 區設定。 選擇 `No Common Store` 將禁用全局轉換。 預設情況下，全局轉換處於禁用狀態。
+   * **[!UICONTROL 選擇地區……]**（選擇性）透過選取儲存UGC的地區設定，所有語言副本的貼文都會出現在一個全域對話中。 依慣例，選擇網站基 [本語言的地](sites-console.md#translation) 區設定。 選擇 `No Common Store` 將禁用全局轉換。 預設情況下，全局轉換處於禁用狀態。
 
-* **[!UICONTROL 「資產]** 」標籤： 可保留為預設值
+* **[!UICONTROL 「資產]** 」標籤：可保留為預設值
 * 選擇「確 **[!UICONTROL 定」]**
 
 #### 啟動 {#activation}
