@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f74e20c5264dc38dcbe20c8fc6b9beaaee7cc6da
+source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
 workflow-type: tm+mt
-source-wordcount: '4112'
+source-wordcount: '4156'
 ht-degree: 1%
 
 ---
@@ -99,6 +99,10 @@ Adobe Experience Manager 6.4.8.3可修正下列問題。
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] 在排程的Cumulative Fix Pack發行日期後一週發 [!DNL Experience Manager] 行附加套件。
+
+>[!NOTE]
+>
+>[!DNL Experience Manager] 累積修正套件不包含的修正 [!DNL Experience Manager Forms]。它們是使用單獨的[!DNL Forms]附加軟體包傳遞的。 此外，還發行了包含JEE上[!DNL Experience Manager Forms]修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件](#install-aem-forms-add-on-package)和[安裝AEM Forms JEE安裝程式](#install-aem-forms-jee-installer)」。[
 
 **適用性表單**
 
