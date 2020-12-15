@@ -11,7 +11,7 @@ ht-degree: 36%
 ---
 
 
-# 時間軸中的活動串流 {#activity-stream-in-timeline}
+# 時間軸中的活動串流{#activity-stream-in-timeline}
 
 此功能會在時間軸上顯示資產的活動記錄。 如果您在Adobe Experience Manager(AEM)Assets中執行下列任何資產相關作業，「活動串流」功能會更新時間軸以反映活動。
 
@@ -34,7 +34,7 @@ ht-degree: 36%
 >
 >暫時性工作流程不會顯示在時間軸中，因為不會儲存這些工作流程的歷史記錄資訊。
 
-若要檢視活動串流，請對資產執行一或多個作業，選取資產，然後從GlobalNav清單中選 **[!UICONTROL 擇]** 「時間軸」。
+若要檢視活動串流，請對資產執行一或多個作業，選取資產，然後從GlobalNav清單中選擇&#x200B;**[!UICONTROL Timeline]**。
 
 ![timeline-3](assets/timeline-3.png)
 
