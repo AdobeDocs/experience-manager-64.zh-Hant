@@ -11,7 +11,7 @@ ht-degree: 12%
 ---
 
 
-# 管理多個資產和系列 {#managing-multiple-assets-and-collections}
+# 管理多個資產和系列{#managing-multiple-assets-and-collections}
 
 瞭解如何同時編輯多個資產和系列的中繼資料，以快速傳播常見的中繼資料變更。
 
@@ -28,11 +28,11 @@ Adobe Enterprise Manager(AEM)Assets可讓您同時編輯多個資產的中繼資
 >
 >大量編輯方法適用於資料夾或系列中的可用資產。 對於跨資料夾可用或符合一般准則的資產，可從資產搜尋結果大量更新中繼資料。
 
-## 編輯多個資產的中繼資料屬性 {#editing-metadata-properties-of-multiple-assets}
+## 編輯多個資產的中繼資料屬性{#editing-metadata-properties-of-multiple-assets}
 
 1. 在「資產」使用者介面中，導覽至您要編輯的資產所在的位置。
 1. 選取您要編輯其常用屬性的資產。
-1. 在工具列中點選／按一下「 **[!UICONTROL 屬性]** 」圖示，以開啟所選資產的屬性頁面。
+1. 在工具列中點選／按一下「屬性&#x200B;****」圖示，以開啟所選資產的屬性頁面。
 
    >[!NOTE]
    >
@@ -44,10 +44,10 @@ Adobe Enterprise Manager(AEM)Assets可讓您同時編輯多個資產的中繼資
    >[!NOTE]
    >
    >* 在屬性頁面中，您可以取消選取資產，從資產清單中移除資產。 資產清單預設會選取所有資產。 您從清單中移除的資產的中繼資料不會更新。
-   >* 在資產清單頂端，選取「標題」旁的核取方塊 **** ，以在選取資產和清除清單之間切換。
+   >* 在資產清單頂端，選取&#x200B;**Title**&#x200B;附近的核取方塊，在選取資產和清除清單之間切換。
 
 
-1. 若要為資產選取不同的中繼資料結構，請點選／按一下工具列中的 **[!UICONTROL 「設定]** 」圖示，然後選取所要的結構。
+1. 若要為資產選取不同的中繼資料結構，請點選／按一下工具列中的「設定」**[!UICONTROL 圖示，然後選取所要的結構。]**
 1. 儲存變更。
 1. 若要在包含多個值的欄位中，將新中繼資料與現有中繼資料一起附加，請選取「附 **[!UICONTROL 加模式」]**。如果您未選取此選項，新的中繼資料會取代欄位中現有的中繼資料。點選/按一 **[!UICONTROL 下提交]**。
 
@@ -55,13 +55,13 @@ Adobe Enterprise Manager(AEM)Assets可讓您同時編輯多個資產的中繼資
    >
    >對於單值欄位，即使您選擇「附加模式」，新元資料也不會附加到欄位中的現 **[!UICONTROL 有值]**。
 
-## 設定大量中繼資料更新的限制 {#configure-limit-for-bulk-metadata-update}
+## 設定大量中繼資料更新的限制{#configure-limit-for-bulk-metadata-update}
 
 為避免DOS類似情況，AEM會限制Sling請求中支援的參數數。 一次更新許多資產的中繼資料時，您可能會達到限制，而且無法針對更多資產更新中繼資料。 AEM會在記錄檔中產生下列警告：
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+若要變更限制，請存取&#x200B;**[!UICONTROL 工具>作業> Web Console]**，並變更[!UICONTROL Apache Sling請求參數處理] OSGi組態中的[!UICONTROL 最大POST參數]值。
 
 >[!MORELIKETHIS]
 >
