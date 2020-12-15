@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 資產網路考量 {#assets-network-considerations}
+# 資產網路注意事項{#assets-network-considerations}
 
 瞭解您的網路與瞭解Adobe Experience Manager(AEM)資產一樣重要。 網路可能會影響上傳、下載和使用者體驗。 繪製網路拓撲圖有助於確定網路中必須修復的瓶頸和次優化區域，以改進網路效能和用戶體驗。
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 * 定義AEM網路介面的同時使用者
 * 已定義AEM例項的工作流程
 
-## 從客戶端設備到公司網路的連接 {#connectivity-from-the-client-device-to-the-corporate-network}
+## 從客戶端設備到公司網路的連接{#connectivity-from-the-client-device-to-the-corporate-network}
 
 首先，繪製個別客戶端設備與公司網路之間的連接圖。 在此階段，識別共用資源，例如WiFi連線，讓多位使用者存取相同的點或乙太網交換機，以上傳和下載資產。
 
@@ -40,13 +40,13 @@ ht-degree: 0%
 
 右側顯示的電腦在VPN上游的公司網路上有限，速度為1 Mbps。 1Mbps連線的使用者體驗與1Gbps連線的使用者體驗大不相同。 根據用戶交互的資產大小，其VPN上行鏈路可能不足以完成任務。
 
-## 公司網路拓撲 {#topology-of-the-corporate-network}
+## 公司網路的拓撲{#topology-of-the-corporate-network}
 
-![chlimage_1-356](assets/chlimage_1-354.png)
+![chlimage_1-354](assets/chlimage_1-354.png)
 
 該圖表顯示公司網路內的上行鏈路速度高於通常使用的速度。 這些管道是共用資源。 如果共用交換機需要處理50個客戶機，則可能是一個阻塞點。 在初始圖中，只有兩台電腦共用特定連接。
 
-## 從公司網路和AEM環境上網至網際網路 {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## 從公司網路和AEM環境{#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}上網至網際網路
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 在從公司網路到網際網路的上行鏈路上，可以有其他使用頻寬的服務。 請務必瞭解AEM Assets的專用頻寬或優先順序。 例如，如果1Gbps連結的使用率已達80%，您最多只能為AEM資產分配20%的頻寬。
 
-企業防火牆和Proxy也可以以多種不同的方式改變頻寬。 此類裝置可使用服務品質、使用者頻寬限制或主機位元速率限制來排定頻寬優先順序。 這些是需要檢查的重要選項，因為它們可以顯著影響資產用戶體驗。
+企業防火牆和Proxy也可以以多種不同的方式改變頻寬。 此類型的裝置可使用服務品質、使用者的頻寬限制或主機的位元速率限制來排列頻寬優先順序。 這些是需要檢查的重要選項，因為它們可以顯著影響資產用戶體驗。
 
 在此範例中，企業有10Gbps的上行鏈路。 它應該足夠大，適合多個客戶。 此外，防火牆規定主機速率限制為10 Mbps。 此限制可能會將到單台主機的流量限制為10 Mbps，即使到Internet的上行鏈路為10 Gbps。
 
@@ -62,9 +62,9 @@ ht-degree: 0%
 
 從示例圖中，您可以得出六個設備共用概念性的10Mbps通道。 視運用的資產規模而定，這可能不足以滿足使用者的期望。
 
-## AEM環境的拓撲 {#topology-of-the-aem-environment}
+## AEM環境的拓撲{#topology-of-the-aem-environment}
 
-![chlimage_1-354](assets/chlimage_1-356.png)
+![chlimage_1-356](assets/chlimage_1-356.png)
 
 設計AEM環境的拓撲需要詳細瞭解系統配置以及網路在用戶環境中的連接方式。
 
@@ -74,9 +74,9 @@ ht-degree: 0%
 
 AEM實例與多個服務共用1Gbps連線。 從網路拓撲的角度看，它相當於共用一個具有不同服務的通道。
 
-檢視從用戶端裝置到AEM例項的網路時，最小的攔截點似乎是10Mbit企業防火牆限制。 您可以在「資產規模調整指南」中的規模計算 [器中使用這些值](assets-sizing-guide.md) ，以決定使用體驗。
+檢視從用戶端裝置到AEM例項的網路時，最小的攔截點似乎是10Mbit企業防火牆限制。 您可以在[資產調整指南](assets-sizing-guide.md)中的調整大小計算器中使用這些值來判斷使用者體驗。
 
-## 已定義AEM例項的工作流程 {#defined-workflows-of-the-aem-instance}
+## 已定義AEM例項{#defined-workflows-of-the-aem-instance}的工作流程
 
 在考慮網路效能時，請務必考慮系統中將發生的工作流程和發佈。 此外，您使用的S3或其他網路連接儲存和I/O請求佔用網路頻寬。 因此，即使在完全優化的網路中，效能也可能受到磁碟I/O的限制。
 
