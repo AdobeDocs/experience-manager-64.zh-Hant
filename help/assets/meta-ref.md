@@ -11,7 +11,7 @@ ht-degree: 2%
 ---
 
 
-# 中繼資料圖式參考 {#metadata-schemata-reference}
+# 中繼資料架構參考{#metadata-schemata-reference}
 
 以下參考包括關於特定元資料方案的資訊（按字母順序）以及屬性清單及其定義。
 
@@ -21,7 +21,7 @@ Dublin Core中繼資料提供一組標準化的慣例，用於描述資產，以
 
 簡單的Dublin Core Metadata Element Set(DCMES)包含15個中繼資料元素，如下表所列。 每個Dublin Core元素都是選用的，可重複。 您可以像新增或刪除媒體類型特定中繼資料一樣，新增或刪除Dublin Core中繼資料資訊。
 
-除了DCMES之外，還有Dublin Core Initiative（都柏林核心計畫）建立的其他元資料元素。 如需詳細 [資訊，請參閱Dublin Core](http://dublincore.org/) Initiative。
+除了DCMES之外，還有Dublin Core Initiative（都柏林核心計畫）建立的其他元資料元素。 如需詳細資訊，請參閱[Dublin Core Initiative](http://dublincore.org/)。
 
 | 屬性 | 說明 |
 |---|---|
