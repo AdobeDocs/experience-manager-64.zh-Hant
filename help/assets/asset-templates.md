@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 資產範本 {#asset-templates}
 
-資產範本是一類特殊的資產，可協助您快速將視覺化豐富的內容重新運用於數位和印刷媒體。 資產範本包含兩個部分：固定訊息區段和可編輯區段。
+資產範本是一類特殊的資產，可協助您快速將視覺化豐富的內容重新用於數位和印刷媒體。 資產範本包含兩個部分：固定訊息區段和可編輯區段。
 
 固定訊息區段可包含專屬內容，例如品牌標誌和禁止編輯的版權資訊。 可編輯的區段可在欄位中包含視覺和文字內容，可編輯這些內容以自訂訊息。
 
@@ -46,20 +46,20 @@ ht-degree: 0%
 
 您也可以將這些格式的輸出下載到本機系統。
 
-## 建立宣傳品 {#creating-a-collateral}
+## 建立宣傳品{#creating-a-collateral}
 
 假設您想要建立數位可列印的宣傳品，例如簡介手冊、傳單和廣告，以便在即將到來的宣傳活動中展示，並與全球的經銷商分享。 根據範本建立宣傳品有助於跨通道提供統一的客戶體驗。 設計人員可以使用創意解決方案（例如InDesign）建立促銷活動範本（單頁或多頁），並為您上傳範本至AEM Assets。 在建立宣傳品之前，請事先將一或多個INDD範本上傳至Experience Manager，並在Experience Manager中使用。
 
-1. 按一下或點選AEM標誌，然後按一下／點選「導 **[!UICONTROL 覽]** 」頁面上的「資產」。
-1. 從選項中選擇「模 **[!UICONTROL 板」]**。
+1. 按一下或點選AEM標誌，然後按一下／點選「導覽」頁面上的「資產」****。
+1. 從選項中選擇&#x200B;**[!UICONTROL 模板]**。
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. 按一下／點 **[!UICONTROL 選「建立]**」，然後從功能表選擇您要建立的宣傳品。 例如，選擇「手 **[!UICONTROL 冊」]**。
+1. 按一下／點選&#x200B;**[!UICONTROL Create]** ，然後從菜單中選擇要建立的宣傳品。 例如，選擇&#x200B;**[!UICONTROL 手冊]**。
 
    ![chlimage_1-307](assets/chlimage_1-307.png)
 
-1. 預先將一或多個INDD範本上傳至Experience Manager，並在Experience Manager中使用。 選擇手冊的範本，然後按一下／點選「下 **[!UICONTROL 一步]**」。
+1. 預先將一或多個INDD範本上傳至Experience Manager，並在Experience Manager中使用。 選擇手冊的範本，然後按一下／點選&#x200B;**[!UICONTROL Next]**。
 
    ![chlimage_1-308](assets/chlimage_1-308.png)
 
@@ -67,11 +67,11 @@ ht-degree: 0%
 
    ![chlimage_1-309](assets/chlimage_1-309.png)
 
-1. （可選）按一下／點選「 **[!UICONTROL 標籤]****** 」欄位旁的「標籤」圖示，並為手冊選取一或多個標籤。 按一下／點選「 **[!UICONTROL 確認]** 」以確認您的選擇。
+1. （可選）按一下／點選&#x200B;**[!UICONTROL Tags]**&#x200B;欄位旁的&#x200B;**[!UICONTROL Tags]**&#x200B;圖示，並為手冊選取一或多個標籤。 按一下／點選&#x200B;**[!UICONTROL 確認]**&#x200B;以確認您的選擇。
 
    ![chlimage_1-310](assets/chlimage_1-310.png)
 
-1. 按一下&#x200B;**[!UICONTROL 建立]**。對話方塊會確認已建立新的手冊。 按一下／點選 **[!UICONTROL 「開啟]** 」，以編輯模式開啟手冊。
+1. 按一下&#x200B;**[!UICONTROL 建立]**。對話方塊會確認已建立新的手冊。 按一下／點選&#x200B;**[!UICONTROL 開啟]**，以編輯模式開啟手冊。
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
@@ -79,13 +79,13 @@ ht-degree: 0%
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## 編輯宣傳品 {#editing-a-collateral}
+## 編輯宣傳品{#editing-a-collateral}
 
 您可以在建立宣傳品後立即加以編輯。 或者，您也可以從「範本」頁面或資產頁面開啟它。
 
 1. 要開啟文宣進行編輯，請執行下列操作之一：
 
-   * 開啟您在建立宣傳品的步驟7中建立的宣傳品(本例中為 [手冊)](asset-templates.md#creating-a-collateral)。
+   * 開啟您在[建立宣傳品](asset-templates.md#creating-a-collateral)步驟7中建立的宣傳品（在本例中為手冊）。
    * 從「模板」頁面，導航到建立宣傳品的資料夾，然後按一下／按一下宣傳品縮圖上的「編輯」快速操作。
    * 在宣傳品的資產頁面中，按一下／點選工具列中的「編輯」圖示。
    * 選擇宣傳品，然後從工具列中按一下／點選「編輯」表徵圖。
@@ -106,19 +106,19 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >請確定您的AEM實例已與InDesign伺服器整合，讓AEM Assets能夠從InDesign範本擷取資料，並讓它可供編輯。 如需詳細資訊，請 [參閱「整合AEM資產與InDesign Server」](indesign.md)。
+   >請確定您的AEM實例已與InDesign伺服器整合，讓AEM Assets能夠從InDesign範本擷取資料，並讓它可供編輯。 如需詳細資訊，請參閱[「整合AEM資產與InDesign Server](indesign.md)」。
 
 1. 若要修改可編輯欄位中的文字，請按一下／點選可編輯欄位清單中的文字欄位，並編輯欄位中的文字。
 
    ![chlimage_1-316](assets/chlimage_1-316.png)
 
-   您可以使用提供的選項來編輯文字屬性，例如字型樣式、顏色、大小。
+   您可以使用提供的選項編輯文字屬性，例如字型樣式、顏色、大小。
 
-1. 按一下／點選「 **[!UICONTROL 預覽]** 」圖示，以預覽文字變更。
+1. 按一下／點選&#x200B;**[!UICONTROL 預覽]**&#x200B;圖示以預覽文字變更。
 
    ![chlimage_1-317](assets/chlimage_1-317.png)
 
-1. 若要交換影像，請按一下／點選「資 **[!UICONTROL 產搜尋器]** 」圖示。
+1. 若要交換影像，請按一下／點選&#x200B;**[!UICONTROL Asset Finder]**&#x200B;圖示。
 
    ![chlimage_1-318](assets/chlimage_1-318.png)
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
-1. 按一下／點選「 **[!UICONTROL 預覽]** 」圖示以預覽影像。
+1. 按一下／點選&#x200B;**[!UICONTROL 預覽]**&#x200B;圖示以預覽影像。
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. 按一下／點選工 **[!UICONTROL 具列上的]** 「預覽」圖示，以預覽所有變更。 按一下／點選 **[!UICONTROL 「完成]** 」以保存對宣傳品的編輯更改。
+1. 按一下／點選工具列上的&#x200B;**[!UICONTROL 預覽]**&#x200B;圖示，以預覽所有變更。 按一下／點選&#x200B;**[!UICONTROL Done]** ，將編輯更改保存到宣傳品。
 
    >[!NOTE]
    >
@@ -150,14 +150,14 @@ ht-degree: 0%
    >
    >若要啟用AEM來解析影像，請執行下列動作：
    >
-   >* 在建立InDesign範本時內嵌影像(請參 [閱關於連結和內嵌圖形](https://helpx.adobe.com/indesign/using/graphics-links.html))。
+   >* 建立InDesign範本時內嵌影像（請參閱[關於連結和內嵌圖形](https://helpx.adobe.com/indesign/using/graphics-links.html)）。
    >* 將AEM載入您的本機檔案系統，然後將遺失的圖示與現有的AEM資產對應。
 
    >
-   >如需有關使用InDesign檔案的詳細資訊，請參 [閱「在AEM中使用InDesign檔案的最佳實務」](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)。
+   >如需有關使用InDesign檔案的詳細資訊，請參閱[在AEM中使用InDesign檔案的最佳實務。](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)
 
-1. 若要產生手冊的PDF轉譯，請在對話方塊中選取Acrobat選項，然後按一下「繼 **[!UICONTROL 續]**」。
-1. 宣傳品是在您開始使用的資料夾中建立的。 要查看轉譯，請開啟宣傳品並從「GlobalNav」列 **[!UICONTROL 表中選擇]** 「轉譯」。
+1. 若要產生手冊的PDF轉譯，請在對話方塊中選取Acrobat選項，然後按一下「繼續&#x200B;**[!UICONTROL a1/>」。]**
+1. 宣傳品是在您開始使用的資料夾中建立的。 要查看轉譯，請開啟宣傳品並從GlobalNav清單中選擇&#x200B;**[!UICONTROL 轉譯]**。
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
 
@@ -165,12 +165,12 @@ ht-degree: 0%
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## 合併宣傳品 {#merge-collateral}
+## 合併宣傳品{#merge-collateral}
 
 
-1. 按一下或點選「 **[!UICONTROL 工具>資產」]**。
-1. 從選項中選擇「模 **[!UICONTROL 板」]**。
-1. 按一下／點選 **[!UICONTROL 「建立]** 」，然後從選 **[!UICONTROL 單選擇「合併]** 」。
+1. 按一下或點選「**[!UICONTROL 工具>資產]**」。
+1. 從選項中選擇&#x200B;**[!UICONTROL 模板]**。
+1. 按一下／點選&#x200B;**[!UICONTROL 建立]**&#x200B;並從菜單中選擇&#x200B;**[!UICONTROL 合併]**。
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
@@ -194,16 +194,16 @@ ht-degree: 0%
 
    ![chlimage_1-330](assets/chlimage_1-330.png)
 
-1. 從工具列按一下/ **[!UICONTROL 點選]** 「下一步」。
-1. 在「預 **[!UICONTROL 覽與重新排序]** 」畫面中，視需要重新排列範本，並預覽要合併的範本選擇。 然後，從工具列按一下/ **[!UICONTROL 點選]** 「下一步」。
+1. 從工具列按一下／點選「**[!UICONTROL Next]**」。
+1. 在&#x200B;**[!UICONTROL 預覽與重新排序]**&#x200B;畫面中，視需要重新排列範本，並預覽要合併的範本選擇。 然後，從工具列按一下／點選「**[!UICONTROL Next]**」。
 
    ![chlimage_1-331](assets/chlimage_1-331.png)
 
-1. 在「配置模板」螢幕中，指定宣傳品的名稱。 （可選）指定您認為適當的任何標籤。 如果您想要匯出PDF格式的輸出，請選取 **[!UICONTROL Acrobat(.PDF)]** 選項。 預設情況下，文宣將以JPG和InDesign格式導出。 若要變更多頁文宣的顯示縮圖，請按一下／點選「變更縮 **[!UICONTROL 圖」]**。
+1. 在「配置模板」螢幕中，指定宣傳品的名稱。 （可選）指定您認為適當的任何標籤。 如果要以PDF格式導出輸出，請選擇&#x200B;**[!UICONTROL Acrobat(.PDF)]**&#x200B;選項。 預設情況下，文宣將以JPG和InDesign格式導出。 要更改多頁文宣的顯示縮圖，請按一下／點選&#x200B;**[!UICONTROL 更改縮圖]**。
 
    ![chlimage_1-332](assets/chlimage_1-332.png)
 
-1. Click/tap **[!UICONTROL Save]** and then click/tap **[!UICONTROL OK]** in the dialog to close the dialog. 多頁宣傳資料是在您開始使用的資料夾中建立。
+1. 按一下／點選&#x200B;**[!UICONTROL Save]** ，然後按一下／點選對話框中的&#x200B;**[!UICONTROL OK]**&#x200B;以關閉對話框。 多頁宣傳資料是在您開始使用的資料夾中建立。
 
    >[!NOTE]
    >
