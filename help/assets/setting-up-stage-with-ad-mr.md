@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 用Autodesk Maya和Mental Ray建立標準舞台 {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}
+# 使用Autodesk Maya和Mental Ray {#setting-up-a-standard-stage-with-autodesk-maya-and-mental-ray}建立標準舞台
 
 1. 在瑪雅，創造一個新的空曠場景。
 1. 建立代表模型的（臨時）引用。 如此有助於評估光源、設定相機和設定轉譯器。
@@ -43,15 +43,15 @@ ht-degree: 0%
 
    使用下列建議設定「演算設定」:
 
-   * **[!UICONTROL 常見標籤]** (Common Tab)
+   * **[!UICONTROL 公]** 用標籤
 
-      取消選取 **[!UICONTROL 所有可轉譯相機的Alpha色版（遮色片）]** (Alpha channel(mask))核取方塊。
+      取消選中所有可轉換相機的&#x200B;**[!UICONTROL Alpha色版（遮色片）]**&#x200B;複選框。
 
-   * **[!UICONTROL 「質量]** 」頁籤
+   * **[!UICONTROL Qualitytab]** 
 
-      * **[!UICONTROL 整體品質]**`- 0.5` 或更低
-      * **[!UICONTROL 間接擴散(GI)模式]** - `Final Gather`
-      * **[!UICONTROL 篩選大小]** - `2.0`、 `2.0`
+      * **[!UICONTROL 整體]** `- 0.5` 品質或以下
+      * **[!UICONTROL 間接擴散(GI)模式]** -  `Final Gather`
+      * **[!UICONTROL 篩選大小]** -  `2.0`、  `2.0`
    * 以您預期使用的一般影像大小來轉換場景。 視需要調整光源或「演算」設定，或兩者皆可達成所需結果。
 
       請注意，使用Mental Ray進行演算時，使用影像光源會非常緩慢，而且需要耗用大量CPU。 Adobe建議您設定仍能產生所需演算品質的最低品質設定。
@@ -62,10 +62,10 @@ ht-degree: 0%
 1. 儲存場景，然後退出Autodesk Maya。
 1. 將場景上傳至AEM，並等待上傳處理完成。
 
-   請參閱 [上傳資產](managing-assets-touch-ui.md#uploading-assets)。
+   請參閱[上傳資產](managing-assets-touch-ui.md#uploading-assets)。
 
    如果AEM伺服器上未設定Autodesk® Maya®，請從Maya匯出FBX並上傳至AEM。
 
-1. 在AEM中開啟資產屬性。 將 **[!UICONTROL Title]** （標題）設為將出現在「舞台選取器 **** 」下拉式清單中的適當字串。 驗證 **[!UICONTROL Class]** is set **[!UICONTROL to 3D Stage]**. 儲存並退出。
+1. 在AEM中開啟資產屬性。 將&#x200B;**[!UICONTROL Title]**&#x200B;設定為適當的字串，該字串將出現在&#x200B;**[!UICONTROL 舞台選擇器]**&#x200B;下拉式清單中。 驗證&#x200B;**[!UICONTROL Class]**&#x200B;是否設定為&#x200B;**[!UICONTROL 3D Stage]**。 儲存並退出。
 1. 開啟3D資產、選取新階段，並驗證它是否預覽並如預期呈現。
 
