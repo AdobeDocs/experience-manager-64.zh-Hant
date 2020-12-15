@@ -11,7 +11,7 @@ ht-degree: 1%
 ---
 
 
-# 在AEM中搜尋資產 {#search-assets-in-aem}
+# 在AEM {#search-assets-in-aem}中搜尋資產
 
 瞭解如何使用「篩選」面板在AEM中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 
@@ -32,9 +32,9 @@ ht-degree: 1%
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-您可以自訂「篩選」面板，並使用搜尋Facet新增／移除搜尋 [謂語](search-facets.md)。 要顯示「濾鏡」面板，請執行以下步驟：
+您可以使用[search facets](search-facets.md)自訂「篩選」面板並新增／移除搜尋謂語。 要顯示「濾鏡」面板，請執行以下步驟：
 
-1. 在「資產」使用者介面中，從工具列點選/ ![按一下search_icon](assets/search_icon.png) ，以顯示「Omnisearch」方塊。
+1. 在「資產」使用者介面中，從工具列點選／按一下![search_icon](assets/search_icon.png)以顯示「Omnisearch」方塊。
 1. 輸入您的搜尋詞，然後按Enter。 或者，只要按Enter鍵，不輸入任何搜尋詞即可。 請勿輸入任何前導空格，否則搜索將無效。
 
 1. 點選／按一下GlobalNav圖示。 隨即顯示「濾鏡」面板。
@@ -45,11 +45,11 @@ ht-degree: 1%
 
    ![number_of_searches](assets/number_of_searches.png)
 
-## 搜尋檔案類型 {#search-for-file-types}
+## 搜索檔案類型{#search-for-file-types}
 
 「篩選」面板可協助您為搜尋體驗增加更精細的度，並讓搜尋功能更具通用性。 您可以輕鬆深入瞭解所需的詳細程度。
 
-例如，如果您在尋找影像，請使用「檔案類型 **** 」述詞來選擇要點陣圖影像還是向量影像。
+例如，如果您在尋找影像，請使用&#x200B;**[!UICONTROL 檔案類型]**&#x200B;謂語來選擇要點陣圖影像還是向量影像。
 
 ![image_type](assets/image_type.png)
 
@@ -61,13 +61,13 @@ ht-degree: 1%
 
 ![檔案](assets/documents.png)
 
-## 根據檔案大小搜尋 {#search-based-on-file-size}
+## 根據檔案大小{#search-based-on-file-size}進行搜索
 
-使用「 **檔案大小** 」述詞，根據資產大小搜尋資產。 您可以指定大小範圍的下限和上限，以縮小搜尋範圍。 您也可以指定單位，例如千位元組、兆位元組等。
+使用&#x200B;**檔案大小**&#x200B;謂詞，根據資產大小搜尋資產。 您可以指定大小範圍的下限和上限，以縮小搜尋範圍。 您也可以指定單位，例如千位元組、兆位元組等。
 
 ![單位_of_measure](assets/unit_of_measure.png)
 
-## 根據上次修改資產的時間進行搜尋 {#search-based-on-when-assets-are-last-modified}
+## 根據資產上次修改時間{#search-based-on-when-assets-are-last-modified}進行搜尋
 
 如果您管理進行中資產或監控審核工作流程，您可以根據精確的時間戳記搜尋上次修改資產的時間。 例如，指定修改資產之前或之後的日期。
 
@@ -77,9 +77,9 @@ ht-degree: 1%
 
 ![時間戳記](assets/timestamp.png)
 
-## 根據狀態搜尋 {#search-based-on-status}
+## 根據狀態{#search-based-on-status}進行搜尋
 
-使用 **Status** predicate可根據各種狀態類型（例如「發佈」、「核准」、「結帳」和「過期」）來搜尋資產。
+使用&#x200B;**Status**&#x200B;謂語，根據各種狀態類型（例如「發佈」、「核准」、「結帳」和「過期」）搜尋資產。
 
 ![狀態](assets/status.png)
 
@@ -91,9 +91,9 @@ ht-degree: 1%
 
 ![批准](assets/approval.png)
 
-## 根據前瞻分析資料進行搜尋 {#search-based-on-insights-data}
+## 根據前瞻分析資料{#search-based-on-insights-data}進行搜尋
 
-使用 **Insights** predicate，根據資產從各種Creative應用程式取得的使用統計資料來搜尋資產。 使用資料分組在下列類別下：
+使用&#x200B;**Insights**&#x200B;謂語，根據從各種Creative應用程式取得的資產使用統計資料來搜尋資產。 使用資料分組在下列類別下：
 
 * 使用分數
 * 印象
