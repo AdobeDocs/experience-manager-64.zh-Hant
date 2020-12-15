@@ -11,11 +11,11 @@ ht-degree: 2%
 ---
 
 
-# 搜尋視訊資產 {#searching-video-assets}
+# 搜尋視訊資產{#searching-video-assets}
 
 若要節省瀏覽可能數百個視訊的時間和精力，請使用關鍵字、檔案屬性（例如檔案類型）或最近修改的時間戳記，以快速找到您的檔案。
 
-如果您沒有看到要查找的檔案，可以按一下搜索結果底部的選項之一來更改整個搜索範圍。 例如，如果您在「文檔」庫中搜索檔案但找不到該檔案，則可以按一下「庫」將搜索展開到其餘的庫。 如需詳細資訊，請參 [閱「尋找檔案或資料夾」](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder)。
+如果您沒有看到要查找的檔案，可以按一下搜索結果底部的選項之一來更改整個搜索範圍。 例如，如果您在「文檔」庫中搜索檔案但找不到該檔案，則可以按一下「庫」將搜索展開到其餘的庫。 如需詳細資訊，請參閱[尋找檔案或資料夾](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder)。
 
 您可以根據下列一或多個屬性來搜尋數位資產：
 
@@ -24,8 +24,8 @@ ht-degree: 2%
 | Mime 類型 | [!UICONTROL 影像]、 [!UICONTROL 檔案]、多 [!UICONTROL 媒體]、 [!UICONTROL 封]存或其他。 |
 | [!UICONTROL 上次修改時間] | 小時、日、周、月或年。 |
 | [!UICONTROL 檔案大小] | 小型、中型或大型。 |
-| [!UICONTROL 發佈狀態] (Publish) | 已發佈或未發佈。 |
-| [!UICONTROL 核准狀態] (Approval Status) | 已核准或已拒絕。 |
+| [!UICONTROL PublishStatus(發] 布狀態) | 已發佈或未發佈。 |
+| [!UICONTROL 核准狀] 態 | 已核准或已拒絕。 |
 | [!UICONTROL 方向] | 水準、垂直或正方形。 |
 | [!UICONTROL 樣式] | 顏色或黑白。 |
 | 視訊高度 | 指定為最小值和最大值。值僅儲存在視頻轉譯的元資料中。 |
@@ -36,7 +36,7 @@ ht-degree: 2%
 | 音訊轉碼器 | Libvorbis、Lame Mp3、AAC Encoding.Value僅儲存在視訊轉譯的中繼資料中。 |
 | 音訊位元速率 | 指定為最小值和最大值。值僅儲存在視頻轉譯的元資料中。 |
 
-1. 在 **[!UICONTROL Experience Manager]** 頁面的左側導軌中，點選「資 **[!UICONTROL 產」]**。
+1. 在&#x200B;**[!UICONTROL Experience Manager]**&#x200B;頁面的左側導軌中，點選&#x200B;**[!UICONTROL Assets]**。
 
    如果左側邊欄不可見，請點選「切換邊欄」圖示（圖示中的線段會是深灰色或藍色）。
 
@@ -58,4 +58,4 @@ ht-degree: 2%
 
       輸入關鍵字，但不是按Enter，而是展開視訊或音訊屬性清單，然後設定您想要的值。
 
-1. （可選）在頁面底部附近，點選「 **[!UICONTROL 儲存智慧型系列]**」，輸入搜尋名稱。 如果 **** 您想要將儲存的搜尋提供給Adobe Experience Manager帳戶的其他使用者，請勾選「公開」。 如果您希望只有在您登入帳戶時，搜尋功能才可供使用，請取消勾選。 點選「 **[!UICONTROL 儲存]**」。
+1. （可選）在頁面底部附近，點選&#x200B;**[!UICONTROL 儲存智慧型系列]**，輸入搜尋名稱。 如果您希望將儲存的搜尋提供給Adobe Experience Manager帳戶的其他使用者，請勾選&#x200B;**[!UICONTROL Public]**。 如果您希望只有在您登入帳戶時，搜尋功能才可供使用，請取消勾選。 點選&#x200B;**[!UICONTROL Save]**。
