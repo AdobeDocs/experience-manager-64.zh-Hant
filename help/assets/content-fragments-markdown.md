@@ -22,9 +22,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->某些內容片段功能需要 [AEM 6.4 Service Pack 2(6.4.2.0)或更新版本的應用程式](/help/release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
 
-當您製作內 [容時](content-fragments-variations.md#authoring-your-content)，內容片段編輯器會使 *用Markdown語法* ，讓您輕鬆編寫內容：
+當您在撰寫[時，內容片段編輯器會使用&#x200B;*markdown*&#x200B;語法，讓您輕鬆編寫內容：](content-fragments-variations.md#authoring-your-content)
 
 ![標籤下編輯器](/help/assets/assets/cfm-6420-08.png)
 
@@ -40,7 +40,7 @@ ht-degree: 4%
 * [程式碼區塊](/help/assets/content-fragments-markdown.md#code-blocks)
 * [反斜線轉義](/help/assets/content-fragments-markdown.md#backslash-escapes)
 
-## 標題符號 {#heading-notation}
+## 標題符號{#heading-notation}
 
 若要建立標題，請在標題前面放置雜湊標籤(#)。 一個雜湊標籤(#)用於H1，兩個雜湊標籤(##)用於H2等。 最多可使用6個雜湊標籤。 例如：
 
@@ -60,7 +60,7 @@ ht-degree: 4%
 
     `-------------`
 
-## 段落和分行 {#paragraphs-and-line-breaks}
+## 段落和分行{#paragraphs-and-line-breaks}
 
 段落只是一或多行連續的文字，由一或多行空白行分隔。 空行是僅包含空格或制表符的行。 一般段落不應縮進空格或制表符。
 
@@ -70,7 +70,7 @@ ht-degree: 4%
 
 您可以建立內嵌連結和參考連結。
 
-在這兩種樣式中，連結文字都以方括弧分隔 `[]`。
+在這兩種樣式中，連結文字都以方括弧`[]`分隔。
 
 以下是內嵌連結的範例：
 
@@ -102,7 +102,7 @@ ht-degree: 4%
 
 語法包括：
 
-* 驚嘆號： !;
+* 驚嘆號：!;
 * 後面接著一組方括弧，其中包含影像的alt屬性文字；
 * 後面接著一組括弧，其中包含影像的URL或路徑，以及以雙引號或單引號括住的選用標題屬性。
 
@@ -114,7 +114,7 @@ ht-degree: 4%
 
     `[id]: url/to/image "Optional title attribute"`
 
-## 塊引號 {#block-quotes}
+## 塊引號{#block-quotes}
 
 您可以在文字前加上>符號來引用文字。 例如：
 
@@ -140,7 +140,7 @@ ht-degree: 4%
 
 您可以建立有序清單和無序清單。
 
-要建立無序清單，請使用&amp;ast; 符號。 例如：
+要建立無序清單，請使用&amp;ast;符號。 例如：
 
     `* item in list`
 
@@ -156,7 +156,7 @@ ht-degree: 4%
 
     `3. Third item in list.`
 
-## 強調 {#emphasis}
+## 強調{#emphasis}
 
 您可以在文字中加入斜體或粗體樣式。
 
@@ -182,7 +182,7 @@ ht-degree: 4%
 
     ``Use the `printf()` function.``
 
-## 程式碼區塊 {#code-blocks}
+## 代碼塊{#code-blocks}
 
 程式碼區塊通常用來說明原始碼。 您可以使用索引標籤來縮進代碼或至少4個空格來建立代碼塊。 例如：
 
@@ -190,7 +190,7 @@ ht-degree: 4%
 
         `This is a code block.`
 
-## 反斜線轉義 {#backslash-escapes}
+## 反斜線轉義{#backslash-escapes}
 
 您可以使用反斜線轉義來產生文字字元，這些字元在格式語法中有特殊意義。 例如，如果您想用常值星號（而非HTML &lt;em>標籤）包圍單字，則可在星號前使用反斜線，例如：
 
