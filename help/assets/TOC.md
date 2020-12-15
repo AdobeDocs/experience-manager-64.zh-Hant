@@ -73,7 +73,7 @@ ht-degree: 34%
    + [使 CDN 快取內容失效](invalidate-cdn-cached-content.md)
    + [安裝Feature Pack 18912以進行大量資產移轉](bulk-ingest-migrate.md)
    + [使用選取工具](working-with-selectors.md)
-+ 擴充資產 {#extending}
++ 延伸資產{#extending}
    + [自訂和擴充資產](extending-assets.md)
    + [使用媒體處理常式和工作流程處理資產](media-handlers.md)
    + [擴充資產搜尋](searchx.md)
@@ -82,7 +82,7 @@ ht-degree: 34%
    + [擴充資產編輯器](asseteditorx.md)
    + [Assets HTTP API](mac-api-assets.md)
    + [資產代理開發](proxy.md)
-+ 管理資產 {#administer}
++ 管理資產{#administer}
    + [資產支援的格式](assets-formats.md)
    + [搜尋 Facet](search-facets.md)
    + [管理資產的中繼資料](metadata.md)
@@ -139,7 +139,7 @@ ht-degree: 34%
    + [內容片段 - 刪除考量事項](content-fragments-delete.md)
    + [內容片段——標籤](content-fragments-markdown.md)
    + [建立內容片段的翻譯專案](creating-translation-projects-for-content-fragments.md)
-+ Manage Assets {#managing}
++ 管理資產{#managing}
    + [使用觸控最佳化 UI 來管理資產](managing-assets-touch-ui.md)
    + [管理多個資產和系列](managing-multiple-assets.md)
    + [資產選擇器](asset-selector.md)
@@ -166,7 +166,7 @@ ht-degree: 34%
    + [私人資料夾共用](private-folder.md)
    + [智慧型內容服務訓練方針](smart-tags-training-guidelines.md)
    + [視訊轉譯](video-renditions.md)
-+ 3D資產 {#three-d}
++ 3D資產{#three-d}
    + [AEM 3D版本注意事項](../release-notes/aem3d-release-notes.md)
    + [使用3D資產](assets-3d.md)
    + [安裝和設定AEM 3D](install-config-3d.md)
