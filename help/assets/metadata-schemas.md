@@ -13,59 +13,59 @@ ht-degree: 12%
 
 # 中繼資料結構 {#metadata-schemas}
 
-在中， [!DNL Experience Manager Assets]元資料模式定義屬性頁的佈局以及為使用特定模式的資產顯示的元資料屬性。 中繼資料屬性包括標題、說明、MIME類型、標籤等。 您可以使用中繼資料結構表單編輯器來修改現有結構或新增自訂中繼資料結構。
+在[!DNL Experience Manager Assets]中，元資料架構定義屬性頁的佈局以及為使用特定架構的資產顯示的元資料屬性。 中繼資料屬性包括標題、說明、MIME類型、標籤等。 您可以使用中繼資料結構表單編輯器來修改現有結構或新增自訂中繼資料結構。
 
 若要檢視和編輯資產的屬性頁面，請依照下列步驟進行：
 
-1. 按一下或點選「卡 **[!UICONTROL 片檢視」中資產圖格上的「檢視屬性]** 」快速動作。
+1. 在「卡片檢視」中，從資產圖格上的快速動作按一下或點選「檢視屬性」。****
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-   或者，選取資產，然後從工具列按一下或點選 **[!UICONTROL 「屬性]** 」圖示。
+   或者，選擇資產，然後從工具列按一下或點選「屬性&#x200B;****」圖示。
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. 您可以編輯可用標籤下的各種可編輯中繼資料屬性。 但是，您無法修改屬 [!UICONTROL 性頁面] 「基本  」索引標籤中的資產類型。
+1. 您可以編輯可用標籤下的各種可編輯中繼資料屬性。 但是，您不能修改屬性頁面的[!UICONTROL Basic]標籤中的[!UICONTROL Type]資產。
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   若要修改資產的MIME類型，請使用自訂中繼資料結構表單或修改現有表單。 如需詳 [細資訊，請參閱編輯中繼資料結構](metadata-schemas.md#editing-metadata-schema-forms) 表單。 如果您修改特定MIME類型的中繼資料架構，則會修改目前MIME類型資產和所有資產子類型的屬性頁面配置。 例如，在下修改 `jpeg` 架構時僅 `default/image` 會修改MIME類型資產的中繼資料配置（資產屬性） `IMAGE/JPEG`。 不過，如果您編輯預設結構，您的變更會修改所有類型資產的中繼資料配置。
+   若要修改資產的MIME類型，請使用自訂中繼資料結構表單或修改現有表單。 如需詳細資訊，請參閱[編輯中繼資料結構表單](metadata-schemas.md#editing-metadata-schema-forms)。 如果您修改特定MIME類型的中繼資料架構，則會修改目前MIME類型資產和所有資產子類型的屬性頁面配置。 例如，在`default/image`下修改`jpeg`架構時，只會修改MIME類型`IMAGE/JPEG`的資產的中繼資料配置（資產屬性）。 不過，如果您編輯預設結構，您的變更會修改所有類型資產的中繼資料配置。
 
 ## 中繼資料結構表單 {#default-metadata-schema-forms}
 
-若要檢視表單／範本清單，請在介面中導 [!DNL Experience Manager] 覽至「工 **[!UICONTROL 具]** >資 **[!UICONTROL 產]** >中繼資 **[!UICONTROL 料結構]**」。
+若要檢視表單／範本清單，請在[!DNL Experience Manager]介面中導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 中繼資料結構]**。
 
 [!DNL Experience Manager] 提供以下元資料架構表單模板：
 
 | 範本 |  | 說明 |
 |---|---|---|
 | [!UICONTROL 預設] |  | 資產的基本中繼資料結構表單。 |
-|  | 以下子表單繼承預設表單的 [!UICONTROL 屬性] : |  |
+|  | 以下子表單繼承[!UICONTROL default]表單的屬性： |  |
 |  | <ul><li> [!UICONTROL dm_video]</li></ul> | 動態媒體影片的架構表單。 |
-|  | <ul><li> [!UICONTROL 影像]</li></ul> | 具有MIME類型「image」的資產的架構表單，例如image/jpeg、image/png等。 <br> 影 [!UICONTROL 像表單] 包含下列子表單範本： <ul><li> [!UICONTROL jpeg]:子類型 [!UICONTROL jpeg資產的架構表單]。</li> <li>[!UICONTROL tiff]:子類型Tiff的資產的結構表 [!UICONTROL 單]。</li></ul> |
+|  | <ul><li> [!UICONTROL 影像]</li></ul> | 具有MIME類型「image」的資產的架構表單，例如image/jpeg、image/png等。 <br> 影像  表單包含下列子表單範本： <ul><li> [!UICONTROL jpeg]:子類型 [!UICONTROL jpeg資產的架構表單]。</li> <li>[!UICONTROL tiff]:子類型Tiff的資產的結構表 [!UICONTROL 單]。</li></ul> |
 |  | <ul><li> [!UICONTROL 應用程式]</li></ul> | MIME類型為「應用程式」的資產的架構表單，例如application/ pdf、application/ zip等。 <br>[!UICONTROL pdf]:子類型pdf的資產的架構表單。 |
 |  | <ul><li>[!UICONTROL 視訊]</li></ul> | MIME類型為「video」的資產的架構表單，例如video/avi、video/mp4等。 |
 | [!UICONTROL 集合] |  | 系列的結構表單。 |
 | [!UICONTROL contentfragment] |  | 內容片段的架構表單。 |
-| [!UICONTROL 表單] |  | 此結構表單與 [Adobe Experience Manager Forms相關](/help/forms/home.md)。 |
+| [!UICONTROL 表單] |  | 此架構表單與[Adobe Experience Manager Forms](/help/forms/home.md)相關。 |
 
 >[!NOTE]
 >
 >要查看方案表單的子表單，請按一下／點選方案表單名稱。
 
-## 新增中繼資料結構表單 {#adding-a-metadata-schema-form}
+## 添加元資料架構表單{#adding-a-metadata-schema-form}
 
-1. 若要將自訂範本新增至清單，請按一下工 **[!UICONTROL 具列中的]** 「建立」。
+1. 若要將自訂範本新增至清單，請從工具列按一下「建立&#x200B;**[!UICONTROL 」。]**
 
    >[!NOTE]
    >
    >未編輯的範本會先顯示鎖定圖示。 如果您自訂任何範本，範本消失前的鎖定圖示。
 
-1. 在對話框中，輸入模式表單的標題，然後按一下 **[!UICONTROL 建立]** ，完成表單建立過程。
+1. 在對話框中，輸入模式表單的標題，然後按一下&#x200B;**[!UICONTROL 建立]**&#x200B;以完成表單建立過程。
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
-## 編輯中繼資料結構表單 {#editing-metadata-schema-forms}
+## 編輯元資料架構表單{#editing-metadata-schema-forms}
 
 您可以編輯新增或現有的中繼資料結構表單。 中繼資料結構表單包含下列項目：
 
@@ -76,7 +76,7 @@ ht-degree: 12%
 
 您可以將新標籤或表單項目新增至中繼資料結構表單。 衍生自父項的制表符和表單項處於鎖定狀態。 您無法在子級更改它們。
 
-1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
+1. 在&#x200B;**[!UICONTROL 方案表單]**&#x200B;頁面中，選中表單前面的複選框，然後按一下工具欄上的&#x200B;**[!UICONTROL 編輯]**。
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -84,11 +84,11 @@ ht-degree: 12%
 
    ![chlimage_1-176](assets/chlimage_1-176.png)
 
-1. 要配置元件，請選擇該元件並在「設定」頁籤中修改 **[!UICONTROL 其屬]** 性。
+1. 要配置元件，請選擇該元件並在&#x200B;**[!UICONTROL Settings]**&#x200B;頁籤中修改其屬性。
 
-### 「生成表單」頁籤中的元件 {#components-within-the-build-form-tab}
+### 「生成表單」頁籤中的元件{#components-within-the-build-form-tab}
 
-「建 **[!UICONTROL 立表單]** 」標籤會列出您在架構表單中使用的表單項目。 「設 **[!UICONTROL 定]** 」標籤提供您在「建置表單」標籤中選取之每 **[!UICONTROL 個項目的屬性]** 。 下表列出了「生成表單」頁籤中可 **[!UICONTROL 用的表單]** 項：
+**[!UICONTROL 建置表單]**&#x200B;頁籤列出了在架構表單中使用的表單項。 **[!UICONTROL Settings]**&#x200B;標籤提供您在&#x200B;**[!UICONTROL Build Form]**&#x200B;標籤中選擇的每個項目的屬性。 下表列出了&#x200B;**[!UICONTROL Build Form]**&#x200B;頁籤中可用的表單項：
 
 | 元件名稱 | 說明 |
 |---|---|
@@ -107,19 +107,19 @@ ht-degree: 12%
 | [!UICONTROL 資產評等] | 新增至顯示選項，以評分資產。 |
 | [!UICONTROL 關聯式中繼資料] | 新增以控制資產屬性頁面中其他中繼資料標籤的顯示。 |
 
-### 編輯中繼資料元件 {#editing-the-metadata-component}
+### 編輯元資料元件{#editing-the-metadata-component}
 
-要編輯表單上元資料元件的屬性，請按一下該元件，然後在「設定」頁籤中編輯以下所有或子 **[!UICONTROL 集]** 。
+要編輯表單上元資料元件的屬性，請按一下該元件，然後在&#x200B;**[!UICONTROL Settings]**&#x200B;頁籤中編輯以下全部或子集的屬性。
 
 **欄位標籤**:顯示在資產屬性頁面上的中繼資料屬性名稱。
 
-**對應至屬性**:此屬性指定資產節點的相對路徑／名稱，該資產節點保存在CRX儲存庫中。 開頭為 `./` 因為表示路徑位於資產節點下。
+**對應至屬性**:此屬性指定資產節點的相對路徑／名稱，該資產節點保存在CRX儲存庫中。它以`./`開頭，因為這表示路徑位於資產的節點下。
 
 以下是此屬性的有效值：
 
 * `./jcr:content/metadata/dc:title`:將值儲存在資產的中繼資料節點，做為屬性 `dc:title`。
 
-* `./jcr:created`:在資產的節點顯示JCR屬性。 如果您在檢視屬性上設定這些屬性，建議您將它們標示為「停用編輯」，因為這些屬性受到保護。Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
+* `./jcr:created`:在資產的節點顯示JCR屬性。如果您在檢視屬性上設定這些屬性，建議您將它們標示為「停用編輯」，因為這些屬性受到保護。否則，在保存資產屬性時，錯誤[!UICONTROL 資產無法修改]結果。
 
 為確保元資料架構表單中的元件正確顯示，屬性路徑不應包含任何空格。
 
@@ -129,7 +129,7 @@ ht-degree: 12%
 
 **停用編輯**:使用此屬性可讓中繼資料屬性在屬性頁面上無法編輯。
 
-**在唯讀中顯示空白欄位**:標籤此屬性，即使其沒有值，也可在屬性頁面上顯示中繼資料屬性。 預設情況下，當中繼資料屬性沒有值時，該屬性不會列在屬性頁面上。
+**在唯讀中顯示空白欄位**:標籤此屬性，即使其沒有值，也可在屬性頁面上顯示中繼資料屬性。預設情況下，當中繼資料屬性沒有值時，該屬性不會列在屬性頁面上。
 
 **顯示順序清單**:使用此屬性可顯示選擇的有序清單
 
@@ -139,7 +139,7 @@ ht-degree: 12%
 
 **類別**:屬性與關聯的對象類。
 
-**刪除表徵圖** ：按一下此表徵圖可從架構表單中刪除元件。
+**刪除** 表徵圖按一下此表徵圖可從架構表單中刪除元件。
 
 >[!NOTE]
 >
@@ -157,25 +157,25 @@ ht-degree: 12%
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### 在JSON檔案中指定屬性 {#specifying-properties-in-json-file}
+### 在JSON檔案{#specifying-properties-in-json-file}中指定屬性
 
 您不必在「設定」標籤中指定選項的屬 **[!UICONTROL 性]** ，而是可以透過指定對應的索引鍵值配對，來定義JSON檔案中的選項。在「 **[!UICONTROL JSON路徑」欄位中指定JSON檔案的]** 路徑。
 
-### 在架構表單中添加或刪除頁籤 {#adding-deleting-a-tab-in-the-schema-form}
+### 在架構表單{#adding-deleting-a-tab-in-the-schema-form}中添加或刪除頁籤
 
 架構編輯器可讓您新增或刪除標籤。預設模式表單包 **[!UICONTROL 括Basic]**、 **[!UICONTROL Advanced]** 、 **[!UICONTROL IPTC]**&#x200B;和 **** IPTC Extension頁籤，預設情況下。
 
 ![chlimage_1-181](assets/chlimage_1-181.png)
 
-單 `+` 擊可在架構表單上添加新頁籤。 依預設，新標籤的名稱為 `Unnamed-1`。 您可以從「設定」索引標籤修 **[!UICONTROL 改名稱]** 。 按一 `X` 下以刪除標籤。
+按一下`+`在模式表單上添加新頁籤。 預設情況下，新頁籤的名稱為`Unnamed-1`。 您可以從&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中修改名稱。 按一下`X`刪除頁籤。
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-## 刪除中繼資料結構表單 {#deleting-metadata-schema-forms}
+## 刪除元資料架構表單{#deleting-metadata-schema-forms}
 
 AEM可讓您僅刪除自訂結構表單。 它不允許您刪除預設模式表單／模板。 不過，您可以刪除這些表單中的任何自訂變更。
 
-要刪除表單，請選擇一個表單並按一下「刪 **[!UICONTROL 除]** 」表徵圖。
+要刪除表單，請選擇一個表單，然後按一下&#x200B;**[!UICONTROL Delete]**&#x200B;表徵圖。
 
 >[!NOTE]
 >
@@ -185,24 +185,24 @@ AEM可讓您僅刪除自訂結構表單。 它不允許您刪除預設模式表�
 >
 >您無法刪除AEM Assets中立即可用的中繼資料結構表單。
 
-## MIME類型的架構表單 {#schema-forms-for-mime-types}
+## MIME類型{#schema-forms-for-mime-types}的架構表單
 
 AEM Assets提供各種MIME類型的預設現成可用表單。 不過，您可以為各種MIME類型的資產新增自訂表格。
 
-### 為MIME類型添加新表單 {#adding-new-forms-for-mime-types}
+### 為MIME類型{#adding-new-forms-for-mime-types}添加新表單
 
-在適當的表單類型下建立新表單。For example, to add a new template for the `image/png` subtype, create the form under the `image` forms. 方案表單的標題是子類型名稱。In this case, the title is `png`.
+在適當的表單類型下建立新表單。例如，要為`image/png`子類型添加新模板，請在`image`表單下建立表單。 方案表單的標題是子類型名稱。在本例中，標題為`png`。
 
-### 對各種MIME類型使用現有的架構模板 {#using-an-existing-schema-template-for-various-mime-types}
+### 對各種MIME類型{#using-an-existing-schema-template-for-various-mime-types}使用現有模式模板
 
-您可以針對不同的MIME類型使用現有範本。 例如，使用MIME `image/jpeg` 類型資產的表單 `image/png`。
+您可以針對不同的MIME類型使用現有範本。 例如，對於MIME類型`image/png`的資產，請使用`image/jpeg`表格。
 
-在這種情況下，請在CRX儲存庫中 `/etc/dam/metadataeditor/mimetypemappings` 建立新節點。 指定節點的名稱並定義以下屬性：
+在這種情況下，請在CRX儲存庫的`/etc/dam/metadataeditor/mimetypemappings`處建立新節點。 指定節點的名稱並定義以下屬性：
 
 | 名稱 | 說明 | 類型 | 值 |
 |---|---|---|---|
 | `exposedmimetype` | 要映射的現有表單的名稱 | `String` | `image/jpeg` |
-| `mimetypes` | 使用屬性中定義的表單的MIME類型列 `exposedmimetype` 表 | `String` | `image/png` |
+| `mimetypes` | 使用`exposedmimetype`屬性中定義的表單的MIME類型清單 | `String` | `image/png` |
 
 AEM Assets會對應下列MIME類型和架構表單：
 
@@ -220,11 +220,11 @@ AEM Assets會對應下列MIME類型和架構表單：
 | video/wmv | video/x-ms-wmv |
 | 視訊/flv | video/x-flv |
 
-## 授予對中繼資料結構的存取權 {#granting-access-to-metadata-schemas}
+## 授予對元資料結構{#granting-access-to-metadata-schemas}的訪問權
 
-中繼資料結構功能僅供管理員使用。 不過，管理員可以提供資料夾的「建立」、「修改」和「刪除」 **[!UICONTROL 權限]**，讓非管理員使用者可以存取 ********`/conf` 資料夾。
+中繼資料結構功能僅供管理員使用。 但是，管理員可以通過提供&#x200B;****、**[!UICONTROL Modify]**&#x200B;和&#x200B;**[!UICONTROL `/conf`資料夾的]**&#x200B;權限，為非管理員用戶提供訪問權。
 
-## 套用資料夾特定的中繼資料 {#applying-folder-specific-metadata}
+## 套用資料夾特定的中繼資料{#applying-folder-specific-metadata}
 
 AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定資料夾。
 
@@ -239,30 +239,30 @@ AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定�
 如果資料夾具有子資料夾，則子資料夾內的資產將繼承子資料夾級別上應用的方案的元資料（如果子資料夾級別應用了不同的方案）。 但是，如果子資料夾級別未應用方案或相同方案，則子資料夾資產將繼承父資料夾級別所應用方案的元資料。
 
 1. 按一下 AEM 標誌，然後導覽至&#x200B;**[!UICONTROL 「工具」>「資產」>「中繼資料結構描述」]**。此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
-1. 選取表單前的核取方塊，例如預設中繼資料表單，然後按一下或點選「複製 **** 」圖示並儲存為自訂表單。 例如，指定表單的自訂名稱 `my_default`。 或者，您也可以建立自訂表格。
+1. 選取表單前的核取方塊，例如預設中繼資料表單，然後按一下或點選&#x200B;**[!UICONTROL Copy]**&#x200B;圖示，並儲存為自訂表單。 指定表單的自訂名稱，例如`my_default`。 或者，您也可以建立自訂表格。
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. 在「元數 **[!UICONTROL 據結構表單]** 」頁中，選擇 `my_default` 表單，然後按一下 **[!UICONTROL 編輯]**。
+1. 在&#x200B;**[!UICONTROL 中繼資料結構表單]**&#x200B;頁面中，選取`my_default`表單，然後按一下&#x200B;**[!UICONTROL 編輯]**。
 
-1. 在「元數 **[!UICONTROL 據結構編輯器]** 」頁中，將文本欄位添加到結構表單中。 例如，新增標籤為「類別」的 **[!UICONTROL 欄位]**。
+1. 在&#x200B;**[!UICONTROL 中繼資料結構編輯器]**&#x200B;頁面中，將文字欄位新增至結構結構表單。 例如，新增標籤為&#x200B;**[!UICONTROL Category]**&#x200B;的欄位。
 
    ![chlimage_1-186](assets/chlimage_1-186.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。已修改的表單列在「元資料結構表 **[!UICONTROL 單」頁中]** 。
-1. 按一下／點 **[!UICONTROL 選工具列中的「套用至資料夾」]** ，將自訂中繼資料套用至資料夾。
+1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。已修改的表單列在&#x200B;**[!UICONTROL 元資料模式表單]**&#x200B;頁中。
+1. 從工具列按一下／點選「套用至資料夾&#x200B;****」，將自訂中繼資料套用至資料夾。
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
 
-1. 選擇要在其上應用已修改方案的資料夾，然後按一下／點選「應 **[!UICONTROL 用」]**。
+1. 選擇要在其上應用已修改模式的資料夾，然後按一下／點選&#x200B;**[!UICONTROL Apply]**。
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. 如果資料夾已套用其他中繼資料結構，會出現警告訊息，指出您即將覆寫現有的中繼資料結構。 按一 **[!UICONTROL 下覆寫]**。
-1. 按一 **[!UICONTROL 下「確定]** 」以關閉成功訊息。
+1. 如果資料夾已套用其他中繼資料結構，會出現警告訊息，指出您即將覆寫現有的中繼資料結構。 按一下&#x200B;**[!UICONTROL 覆寫]**。
+1. 按一下&#x200B;**[!UICONTROL 確定]**&#x200B;關閉成功消息。
 1. 導覽至您套用已修改中繼資料結構的資料夾。
 
-## 定義必備中繼資料 {#defining-mandatory-metadata}
+## 定義必備元資料{#defining-mandatory-metadata}
 
 您可以在資料夾層級定義必要欄位，並強制執行在上傳至資料夾的資產上。 如果您上傳資產時，先前定義之必填欄位的中繼資料遺失，則「卡片」檢視中的資產上會顯示遺失中繼資料的視覺指示。
 
@@ -271,26 +271,26 @@ AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定�
 >中繼資料欄位可根據其他欄位的值，定義為必填欄位。 在「卡片」檢視中，AEM不會顯示有關此類強制中繼資料欄位遺失中繼資料的警告訊息。
 
 1. 按一下 AEM 標誌，然後導覽至&#x200B;**[!UICONTROL 「工具」>「資產」>「中繼資料結構描述」]**。此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
-1. 將預設中繼資料表單儲存為自訂表單。 例如，將它另存為 `my_default`。
+1. 將預設中繼資料表單儲存為自訂表單。 例如，將其另存為`my_default`。
 
-   ![chlimage_1-109](assets/chlimage_1-189.png)
+   ![chlimage_1-189](assets/chlimage_1-189.png)
 
-1. 編輯自訂表格。 新增必填欄位。 例如，新增「類 **別」欄位** ，並將欄位設為必填。
+1. 編輯自訂表格。 新增必填欄位。 例如，新增&#x200B;**Category**&#x200B;欄位，並將欄位設為必填。
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。已修改的表單列在「元資料結構表 **[!UICONTROL 單」頁中]** 。 若要將自訂中繼資料套用至資料夾，請選取表單，然後從工具列按一下／點選「套 **[!UICONTROL 用至資料夾」]** 。
+1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。已修改的表單列在&#x200B;**[!UICONTROL 元資料模式表單]**&#x200B;頁中。 若要將自訂中繼資料套用至資料夾，請選取表單，然後從工具列按一下／點選「套用至資料夾&#x200B;**[!UICONTROL 」。]**
 
 1. 導覽至資料夾，並上傳您新增至自訂表單之必填欄位中遺失中繼資料的部分資產。 資產的「資訊卡」檢視會顯示必要欄位中遺失中繼資料的訊息。
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
-1. （可選）存取 `http://[server]:[port]/system/console/components/`。 配置並啟 `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` 用預設禁用的元件。 設定AEM檢查資產中中繼資料有效性的頻率。
-此設定會新增屬性 `hasValidMetadata` 至jcr:assets的內容。 AEM可使用此屬性來篩選搜尋結果。
+1. （可選）訪問`http://[server]:[port]/system/console/components/`。 配置並啟用預設禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`元件。 設定AEM檢查資產中中繼資料有效性的頻率。
+此設定會將屬性`hasValidMetadata`新增至jcr:content of assets。 AEM可使用此屬性來篩選搜尋結果。
 
 >[!NOTE]
 >
->如果在排程檢查後新增資產，則資產在下次排程檢查前 `hasValidMetadata` 不會加上標籤。 資產不會出現在中間搜尋結果中。
+>如果在排程檢查後新增資產，則資產在下次排程檢查前不會標幟為`hasValidMetadata`。 資產不會出現在中間搜尋結果中。
 
 >[!CAUTION]
 >
