@@ -15,11 +15,11 @@ ht-degree: 19%
 
 XMP（可擴充中繼資料平台）是AEM Assets用於所有中繼資料管理的中繼資料標準。 XMP提供標準格式，讓您針對多種應用程式建立、處理和交換中繼資料。
 
-除了提供可嵌入所有檔案格式的通用中繼資料編碼外，XMP還提供多樣化的 [內容模型](xmp.md#xmp-core-concepts) ，並受 [Adobe](xmp.md#advantages-of-xmp) 和其他公司的支援，讓XMP與AEM Assets的使用者擁有強大的平台可以建立。
+除了提供可嵌入所有檔案格式的通用中繼資料編碼外，XMP還提供多樣化的[內容模型](xmp.md#xmp-core-concepts)，並受Adobe](xmp.md#advantages-of-xmp)和其他公司支援[，讓XMP的使用者結合AEM Assets擁有強大的平台來建立內容。
 
-XMP規 [格可從](https://www.adobe.com/devnet/xmp.html) Adobe取得。
+Adobe提供[XMP規格](https://www.adobe.com/devnet/xmp.html)。
 
-## 什麼是XMP? {#what-is-xmp}
+## 什麼是XMP?{#what-is-xmp}
 
 AEM Assets本身支援XMP —— 由Adobe牽頭的可擴充中繼資料平台。 XMP是處理和儲存數位資產中標準化和專屬中繼資料的標準。 XMP是通用的標準，可讓多個應用程式有效地處理中繼資料。
 
@@ -30,19 +30,19 @@ XMP透過提供資料模型、儲存模型和結構描述，標準化中繼資�
 EXIF、ID3或Microsoft Office的所有舊式中繼資料都會自動轉譯為XMP,XMP可加以擴充，以支援客戶特定的中繼資料架構，例如產品型錄。
 
 XMP中的中繼資料由一組屬性組成。 這些屬性一律與\
-特定實體稱為資源； 即，屬性是關於資源的。 對於XMP，資源永遠是資產。
+特定實體稱為資源；即，屬性是關於資源的。 對於XMP，資源永遠是資產。
 
 ### Adobe {#adobe}
 
 Adobe率先將XMP標準納入Adobe Acrobat軟體產品。 自此，XMP標準得到廣泛採用。
 
-### XMP生態系統 {#xmp-ecosystem}
+### XMP生態系統{#xmp-ecosystem}
 
 XMP定義了 [中繼資料](https://en.wikipedia.org/wiki/Metadata) 模型，可與任何已定義的中繼資料項目集搭配使用。XMP也定義了基本屬性的特定結構 [](https://en.wikipedia.org/wiki/XML_schema) ，這些基本屬性可用於記錄資源在經過多個處理步驟 (從被拍攝、掃描或創作為文字) 、通過照片編輯步驟(如 [](https://en.wikipedia.org/wiki/Image_scanner)[](https://en.wikipedia.org/wiki/Cropping_%28image%29) or color adjustment)到組合成最終影像時的歷史記錄。XMP可讓每個軟體程式或裝置沿途將其資訊新增至數位資源，然後再保留在最終數位檔案中。
 
 XMP最常是使用 [W3C](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium)[Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework) (RDF)的子集進行序列化和儲存，該子集又以 [XML表示](https://en.wikipedia.org/wiki/XML)。
 
-## XMP的優點 {#advantages-of-xmp}
+## XMP {#advantages-of-xmp}的優點
 
 XMP比其他編碼標準和圖式具有以下優點：
 
@@ -59,28 +59,28 @@ XMP標準可擴充，讓您在XMP資料中新增自訂的中繼資料類型。 �
 >
 >XMP通常不允許嵌入二進位資料類型。 若要在XMP（例如縮圖影像）中傳送二進位資料，必須以XML友好格式（例如Base64）加以編碼。
 
-## XMP Core Concepts {#xmp-core-concepts}
+## XMP核心概念{#xmp-core-concepts}
 
 以下各節介紹XMP的核心概念，包括名稱空間和圖式、屬性和值，以及語言替代。
 
-### 命名空間和圖式 {#namespaces-and-schemata}
+### 名稱空間和圖式集{#namespaces-and-schemata}
 
 XMP架構是一組通用XML命名空間中的屬性名稱，其中包含\
 資料類型和描述性資訊。 XMP架構由其XML命名空間URI來識別。 使用名稱空間可防止名稱相同但含義不同之不同結構中屬性之間的衝突。
 
-例如，兩個獨立設計結構中的 **Creator** 屬性可能代表建立資產的人員，也可能代表建立資產的應用程式（例如Adobe Photoshop）。
+例如，兩個獨立設計結構中的&#x200B;**Creator**&#x200B;屬性可能代表建立資產的人員，也可能代表建立資產的應用程式（例如Adobe Photoshop）。
 
-### 屬性與值 {#properties-and-values}
+### 屬性和值{#properties-and-values}
 
 XMP可以包括來自一個或多個方案的屬性。
 
 例如，許多Adobe應用程式使用的典型子集可能包括：
 
-* 都柏林核心架構： dc:title, dc:creator, dc:subject, dc:format, dc:rights
-* XMP基本架構： xmp:CreateDate, xmp:CreatorTool, xmp:ModifyDate, xmp:metadataDate
-* XMP權限管理架構： xmpRights:WebStatement, xmpRights:Marked
-* XMP媒體管理架構： xmpMM:DocumentID
+* 都柏林核心架構：dc:title, dc:creator, dc:subject, dc:format, dc:rights
+* XMP基本架構：xmp:CreateDate, xmp:CreatorTool, xmp:ModifyDate, xmp:metadataDate
+* XMP權限管理架構：xmpRights:WebStatement, xmpRights:Marked
+* XMP媒體管理架構：xmpMM:DocumentID
 
-### 語言替代 {#language-alternatives}
+### 語言替代項目{#language-alternatives}
 
-XMP可讓您將 **xml:lang** 屬性新增至文字屬性，以指定文字的語言。
+XMP可讓您將&#x200B;**xml:lang**&#x200B;屬性新增至文字屬性，以指定文字的語言。
