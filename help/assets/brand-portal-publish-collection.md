@@ -19,22 +19,22 @@ ht-degree: 21%
 
 >[!NOTE]
 >
->內容片段無法發佈至 Brand Portal。Therefore, if you select content fragment(s) on AEM Author, then **[Publish to Brand Portal]** action is not available.
+>內容片段無法發佈至 Brand Portal。因此，如果您在AEM Author上選取內容片段，則無法使用「發佈至品牌入口網站」]**動作。**[
 >
 >如果包含內容片段的系列是從AEM Author發佈至品牌入口網站，則資料夾的所有內容（內容片段除外）都會複製至品牌入口網站介面。
 
-## 將系列發佈至品牌入口網站 {#publish-a-collection-to-brand-portal}
+## 將系列發佈至品牌入口網站{#publish-a-collection-to-brand-portal}
 
-1. 在AEM Assets UI中，點選／按一下AEM標誌。 然後，從「導 **[!UICONTROL 覽」頁面前往「資產]** > **[!UICONTROL 系列]** 」。
+1. 在AEM Assets UI中，點選／按一下AEM標誌。 然後，從&#x200B;]**Navigation**[!UICONTROL &#x200B;頁面前往「資產>系列&#x200B;**[!UICONTROL 」。]**
 2. 從「系列」主控台中，選取您要發佈至品牌入口網站的系列。
 
    ![select_collection](assets/select_collection.png)
 
-3. From the toolbar, tap/click **[!UICONTROL Publish to Brand Portal]**.
+3. 從工具列點選／按一下「發佈至品牌入口網站」]**。**[!UICONTROL 
 
    ![publish_to_bp_icon](assets/publish_to_bp_icon.png)
 
-4. In the confirmation dialog, tap/click **[!UICONTROL Publish]**.
+4. 在確認對話方塊中，點選／按一下&#x200B;**[!UICONTROL Publish]**。
 5. 關閉確認訊息。
 6. 以管理員身分登入品牌入口網站。 已發佈的集合可在「集合」控制台中使用。
 
@@ -48,9 +48,9 @@ ht-degree: 21%
 
    ![select_collection-1](assets/select_collection-1.png)
 
-2. From the toolbar, tap/click the **[!UICONTROL Remove from Brand Portal]** icon.
+2. 在工具列中點選／按一下「從品牌入口網站移除」圖示。****
 
    ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
 
-3. In the dialog, tap/click **[!UICONTROL Unpublish]**.
+3. 在對話方塊中，點選／按一下「取消發佈&#x200B;**[!UICONTROL 」。]**
 4. 關閉確認訊息。集合會從 Brand Portal 介面中移除。
