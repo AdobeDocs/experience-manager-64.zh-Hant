@@ -21,7 +21,7 @@ ht-degree: 27%
 
 ## 將資料夾發佈至 Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. 從AEM Assets介面，將滑鼠指標暫留在所要的檔案夾上，然後從快速動作中選 **[!UICONTROL 取]** 「發佈」選項。
+1. 從AEM Assets介面，將滑鼠指標暫留在所要的資料夾上，並從快速動作中選取「**[!UICONTROL 發佈]**」選項。
 
    或者，選取所要的檔案夾，然後依照進一步的步驟進行。
 
@@ -31,11 +31,11 @@ ht-degree: 27%
 
    若要將所選資料夾發佈至 Brand Portal，請執行下列其中一項操作：
 
-   * 在工具列中選取&#x200B;**[!UICONTROL 快速發佈]**。Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * 在工具列中選取&#x200B;**[!UICONTROL 快速發佈]**。然後，從功能表中選擇「發佈至品牌入口網站」]**。**[!UICONTROL 
    * 在工具列中選取&#x200B;**[!UICONTROL 管理出版物]**。
 
-3. 然後從「動作 **[!UICONTROL 」中]** ，選取「發佈至品牌 **[!UICONTROL 入口網站]**」，並從「 **[!UICONTROL Scheduling]** Now」(現 ****&#x200B;在排程)中選取「Publish」。 點選「 **[!UICONTROL 下一步]」。**
-4. 在范 **[!UICONTROL 圍內]**，確認您的選擇並點選「 **[!UICONTROL 發佈至品牌入口網站」]**。
+3. 然後，從&#x200B;**[!UICONTROL Action]**&#x200B;選擇&#x200B;**[!UICONTROL 發佈至品牌入口網站]**，從&#x200B;**[!UICONTROL Scheduling]**&#x200B;選擇&#x200B;**[!UICONTROL Now]**。 點選&#x200B;**[!UICONTROL Next]。**
+4. 在&#x200B;**[!UICONTROL Scope]**&#x200B;中，確認您的選擇並點選&#x200B;**[!UICONTROL 發佈至品牌入口網站]**。
 
    系統會顯示訊息，指出資料夾已排入佇列，等候發佈至 Brand Portal。登入品牌入口網站介面，查看已發佈的資料夾。
 
@@ -43,14 +43,14 @@ ht-degree: 27%
 
    若要排程資產檔案夾的發佈至品牌入口網站工作流程，請執行下列動作：
 
-   1. 在您選取要發佈的資產／檔案夾後，從頂端的工 **[!UICONTROL 具列選取「管理出版物]** 」。
-   2. 在「出 **[!UICONTROL 版物]** 」頁上，從「 **[!UICONTROL ActionAction]** 」中選擇「發佈到品牌 **[!UICONTROL 」並從「SchedulingPortal」中選]**********&#x200B;擇「Publish to Brand」。
+   1. 在您選取要發佈的資產／資料夾後，從頂端的工具列選擇「管理出版物」。****
+   2. 在&#x200B;**[!UICONTROL 管理出版物]**&#x200B;頁面上，從&#x200B;**[!UICONTROL Action]**&#x200B;選擇&#x200B;**[!UICONTROL 發佈至品牌入口網站]**，並從&#x200B;**[!UICONTROL Scheduling]**&#x200B;選擇&#x200B;**[!UICONTROL Later]**。
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   3. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。點選「 **[!UICONTROL 下一步]**」。
-   4. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目。點選「 **[!UICONTROL 下一步]**」。
-   5. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;底下指定「工作流程標題」。點選「 **[!UICONTROL 稍後發佈]**」。
+   3. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。點選&#x200B;**[!UICONTROL Next]**。
+   4. 在&#x200B;**[!UICONTROL 範圍]**&#x200B;中確認您的選取項目。點選&#x200B;**[!UICONTROL Next]**。
+   5. 在&#x200B;**[!UICONTROL 工作流程]**&#x200B;底下指定「工作流程標題」。點選&#x200B;**[!UICONTROL 稍後發佈]**。
 
       ![managerchedulepub](assets/manageschedulepub.png)
 
@@ -64,15 +64,15 @@ ht-degree: 27%
 
    ![publish2bp-1](assets/publish2bp-1.png)
 
-2. 在工具列中點選／按一下「管 **[!UICONTROL 理出版物]**」。
+2. 從工具列點選／按一下「管理出版物&#x200B;**[!UICONTROL 」。]**
 
 3. **立即從品牌入口網站取消發佈**
 
    若要從品牌入口網站快速解除發佈所需的檔案夾：
 
-   1. 在「管 **[!UICONTROL 理出版物]** 」頁上，從 **[!UICONTROL Action]** 選 **[!UICONTROL 擇「從Brand Portal取消發佈」和「Scheduling Select Controws]** 」 ********&#x200B;中選擇「從Scheduling Publish」。
-   2. 點選／按「下 **[!UICONTROL 一步]」。**
-   3. 在范 **[!UICONTROL 圍內]**，確認您的選擇並點選「從品 **[!UICONTROL 牌入口網站取消發佈」]**。
+   1. 在&#x200B;**[!UICONTROL 管理出版物]**&#x200B;頁面上，從&#x200B;**[!UICONTROL Action]**&#x200B;選擇&#x200B;**[!UICONTROL 從品牌入口網站]**&#x200B;取消發佈，從&#x200B;**[!UICONTROL 計畫]**&#x200B;選擇&#x200B;**[!UICONTROL Now]**。
+   2. 點選／按一下&#x200B;**[!UICONTROL Next]。**
+   3. 在&#x200B;**[!UICONTROL Scope]**&#x200B;中，確認您的選擇，然後點選&#x200B;**[!UICONTROL 從品牌入口網站取消發佈]**。
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
@@ -80,10 +80,10 @@ ht-degree: 27%
 
    若要排程從品牌入口網站發佈資料夾至稍後的日期和時間：
 
-   1. 在「管 **[!UICONTROL 理出版物]** 」頁上，從 **[!UICONTROL Action]** 選擇「從Brand Portal **[!UICONTROL 取消發佈」和「Scheduling Select Aler]** 」選 ******擇AlterLeaterLightPortal。**
-   2. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。點選「 **[!UICONTROL 下一步]**」。
-   3. 在范 **[!UICONTROL 圍內]**，確認您的選擇並點選「下 **[!UICONTROL 一步」]**。
-   4. Specify a **[!UICONTROL Workflow title]** under **[!UICONTROL Workflows]**. 點選「 **[!UICONTROL 稍後取消發佈]」。**
+   1. 在&#x200B;**[!UICONTROL 管理出版物]**&#x200B;頁面上，從&#x200B;**[!UICONTROL Action]**&#x200B;選擇&#x200B;**[!UICONTROL 從品牌入口網站]**&#x200B;取消發佈，從&#x200B;**[!UICONTROL 計畫]**&#x200B;選擇&#x200B;**[!UICONTROL 稍後]。**
+   2. 選取&#x200B;**[!UICONTROL 啟用日期]**&#x200B;並指定時間。點選&#x200B;**[!UICONTROL Next]**。
+   3. 在&#x200B;**[!UICONTROL Scope]**&#x200B;中，確認您的選擇並點選&#x200B;**[!UICONTROL Next]**。
+   4. 在&#x200B;**[!UICONTROL Workflows]**&#x200B;下指定&#x200B;**[!UICONTROL Workflowtitle]**。 點選「**[!UICONTROL 稍後解除發佈]」。**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
