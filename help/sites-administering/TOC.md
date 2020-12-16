@@ -7,18 +7,18 @@ user-guide-title: AEM 6.4 管理使用指南
 breadcrumb-title: Administering 指南
 user-guide-description: 了解 AEM 的管理事項。
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 10%
 
 ---
 
 
-# AEM 6.4 管理使用指南 {#administering}
+# AEM 6.4 管理使用指南  {#administering}
 
 + [管理使用指南概觀](home.md)
-+ 網站功能 {#introduction}
++ 網站功能{#introduction}
    + [網站管理](msm-and-translation.md)
    + [重複使用內容：多網站管理員和即時副本](msm.md)
    + [即時副本概述主控台](msm-livecopy-overview.md)
@@ -50,7 +50,7 @@ ht-degree: 10%
    + [批量編輯器](bulk-editor.md)
    + [設定電子郵件通知](notification.md)
    + [配置RTE以生成可訪問站點](rte-accessible-content.md)
-   + [外部連結檢查器](external-link-checker.md)
+   + [連結檢查程式](external-link-checker.md)
    + [疑難排解AEM](troubleshoot.md)
    + [AEM 6中的稽核記錄維護](operations-audit-log.md)
    + [編輯者](enable-classic-ui-editor.md)
@@ -103,7 +103,7 @@ ht-degree: 10%
    + [設定區段](campaign-segmentation.md)
    + [擴充及設定著陸頁面的Design Importer](extending-the-design-importer-for-landingpages.md)
    + [整合著陸頁面與Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ 電子商務 {#ecommerce}
++ 電子商務{#ecommerce}
    + [電子商務](ecommerce.md)
    + [概念](concepts.md)
    + [管理一般電子商務](generic.md)
@@ -111,7 +111,7 @@ ht-degree: 10%
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [AEM商務- GDPR就緒性](gdpr-compliance-commerce.md)
-+ Integration {#integration}
++ 整合{#integration}
    + [與第三方服務整合](third-party-services.md)
    + [與Salesforce整合](salesforce.md)
    + [整合 Adobe Target](target.md)
@@ -160,7 +160,7 @@ ht-degree: 10%
    + [AEM Sites - GDPR就緒性](gdpr-compliance-sites.md)
    + [處理AEM Foundation的GDPR要求](handling-gdpr-requests-for-aem-platform.md)
    + [AEM商務- GDPR就緒性](gdpr-compliance-commerce.md)
-+ 內容管理 {#contentmanagement}
++ 內容管理{#contentmanagement}
    + [如何使用套件](package-manager.md)
    + [資產工作流程卸載程式](workflow-offloader.md)
    + [管理標籤](tags.md)
