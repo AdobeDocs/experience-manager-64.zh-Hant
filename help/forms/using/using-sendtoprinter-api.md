@@ -30,12 +30,12 @@ ht-degree: 13%
    將文檔發送到打印機時，請指定以下打印協定之一：
 
    * **杯子** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * ``**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * ``**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIFS**: Output服務支援通用Internet檔案系統(CIFS)打印協定。
+   * **CIFS**:Output服務支援通用Internet檔案系統(CIFS)打印協定。
 
-## 使用SendToPrinter服務 {#using-sendtoprinter-service}
+## 使用SendToPrinter服務{#using-sendtoprinter-service}
 
 下表列出：
 
@@ -44,7 +44,7 @@ ht-degree: 13%
 
 | 協定（訪問機制） | 打印伺服器URI(PrinterSpec.printServer) | 打印機的名稱(PrinterSpec.printerName) | 結果 |
 |--- |--- |--- |--- |
-| SharedPrinter | 任何 | 空白 | 例外： 必要引數sPrinterName不能為空。 |
+| SharedPrinter | 任何 | 空白 | 例外：必要引數sPrinterName不能為空。 |
 | SharedPrinter | 任何 | 無效 | 出現異常，表示找不到打印機。 |
 | SharedPrinter | 任何 | 有效 | 成功的列印工作。 |
 | LPD | 空白 | 任何 | 表示必要參數sPrintServerUri不能為空的例外。 |
@@ -53,8 +53,8 @@ ht-degree: 13%
 | LPD | 有效 | 無效 | 表示找不到打印機的例外。 |
 | LPD | 有效 | 有效 | 成功的列印工作。 |
 | CUPS | 空白 | 任何 | 表示必要參數sPrintServerUri不能為空的例外。 |
-| CUPS | 無效 | 任何 | 表示找不到打印機的例外。 |
-| CUPS | 有效 | 任何 | 成功的列印工作。 |
+| 杯子 | 無效 | 任何 | 表示找不到打印機的例外。 |
+| 杯子 | 有效 | 任何 | 成功的列印工作。 |
 | DirectIP | 空白 | 任何 | 表示必要參數sPrintServerUri不能為空的例外。 |
 | DirectIP | 無效 | 任何 | 表示找不到打印機的例外。 |
 | DirectIP | 有效 | 任何 | 成功的列印工作。 |
@@ -62,13 +62,13 @@ ht-degree: 13%
 | CIFS | 無效 | 任何 | 使用CIFS打印時出現未知錯誤。 |
 | CIFS | 空白 | 任何 | 表示必要參數sPrintServerUri不能為空的例外。 |
 
-## 驗證支援 {#authentication-support}
+## 驗證支援{#authentication-support}
 
 身份驗證僅支援CIFS打印。 要驗證，請在PrinterSpec中提供用戶名／密碼／域。 您可以使用AEM Granite CyprotoSupport Service來加密密碼，方法是執行下列步驟：
 
 1. 前往https://&lt;server>:&lt;port>/system/console。
 
-1. 轉至「 **[!UICONTROL 主]** > **[!UICONTROL 加密支援」]**。
+1. 轉到&#x200B;**[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**。
 
-1. 輸入某些純文字檔案，然後按一下「保 **[!UICONTROL 護」]**。
+1. 輸入某些純文字檔案，然後按一下&#x200B;**[!UICONTROL Protect]**。
 
