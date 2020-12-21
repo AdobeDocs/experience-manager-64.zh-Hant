@@ -16,7 +16,7 @@ ht-degree: 4%
 ---
 
 
-# 最適化表單關鍵字 {#adaptive-forms-keywords}
+# 最適化表單關鍵字{#adaptive-forms-keywords}
 
 最適化表單關鍵字是預先定義、保留的識別碼，對最適化表單有特殊意義。 您無法在最適化表單中使用這些關鍵字作為識別碼。 下表列出所有為最適化表單保留識別碼的關鍵字。
 
@@ -240,4 +240,4 @@ ht-degree: 4%
  </tbody>
 </table>
 
-除了上述關鍵字外，請避免使用與最適化表單JavaScript API [類似的名稱](https://adobe.com/go/learn_aemforms_javascript_api_63)。
+除了上述關鍵字外，請避免使用與[adaptive forms JavaScript APIs](https://adobe.com/go/learn_aemforms_javascript_api_63)類似的名稱。
