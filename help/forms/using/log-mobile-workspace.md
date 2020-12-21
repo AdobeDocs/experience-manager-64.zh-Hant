@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# 登入AEM Forms應用程式 {#logging-in-to-aem-forms-app}
+# 登入AEM Forms應用程式{#logging-in-to-aem-forms-app}
 
 當您啟動AEM Forms應用程式時，首先需要提供您的登入認證和AEM Forms伺服器URL。
 
-## 若要啟動應用程式 {#to-start-the-app}
+## 啟動應用程式{#to-start-the-app}
 
 1. 在您的行動裝置上點選AEM Forms應用程式圖示。
 1. 若要登入應用程式，請輸入使用者名稱、密碼和AEM Forms伺服器URL。
@@ -34,7 +34,7 @@ ht-degree: 0%
    >* 您可以選取要透過應用程式登入的AEM Forms伺服器URL。
 
 
-當您登入應用程式時，會將您導向至「首 [**頁&#x200B;**」畫面](/help/forms/using/home-screen.md)。
+當您登入應用程式時，會將您導向至&#x200B;[**首頁**&#x200B;畫面](/help/forms/using/home-screen.md)。
 
 >[!NOTE]
 >
