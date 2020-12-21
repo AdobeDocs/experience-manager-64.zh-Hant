@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# 安裝相容性軟體包 {#compatibility-package}
+# 安裝相容性軟體包{#compatibility-package}
 
 在AEM Forms 6.4上安裝Compatibility套件可讓您使用AEM Forms 6.3的Correponsement Management資產，以及不建議使用的最適化表單範本和頁面
 
 ## 概覽 {#overview}
 
-在AEM Forms 6.4中建立客戶通訊的預設和建議方式是互動式通訊。若要繼續使用AEM 6.3 Forms和AEM 6.2 Forms的字母，您必須安裝 [AEMFD Compatibility套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
+在AEM Forms 6.4中建立客戶通訊的預設和建議方式是互動式通訊。若要繼續使用AEM 6.3 Forms和AEM 6.2 Forms的字母，您必須安裝[AEMFD Compatibility套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
 
 AEMFD相容性套件可讓您在AEM Forms 6.4上使用AEM Forms 6.3和6.2的下列資產：
 
@@ -33,24 +33,24 @@ AEMFD相容性套件可讓您在AEM Forms 6.4上使用AEM Forms 6.3和6.2的下�
 * 資料字典
 * 不再支援的最適化表單範本和頁面
 
-如需詳細資訊，請 [參閱「透過安裝相容性套件，讓資產與AEM Forms 6.4相容」](/help/forms/using/compatibility-package.md#assetsmadecompatible)。
+如需詳細資訊，請參閱「透過安裝Compatibility套件使資產與AEM Forms 6.4相容」。[](/help/forms/using/compatibility-package.md#assetsmadecompatible)
 
-## 在AEM Forms 6.4中新增對AEM Forms 6.3和6.2資產的支援 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## 在AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}中新增對AEM Forms 6.3和6.2資產的支援
 
 執行升級後，請執行下列動作以安裝AEMFD相容性套件，並讓您的資產與6.4相容：
 
-請確定您已預 [先安裝AEM Compatibility套件](/help/sites-deploying/backward-compatibility.md) 。
+請確定您已預先安裝[AEM Compatibility package](/help/sites-deploying/backward-compatibility.md)。
 
-1. 安裝兼 [容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
+1. 安裝[Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
 
-   有關上傳和安裝軟體包的詳細資訊，請參 [閱How to work with packages](/help/sites-administering/package-manager.md)。
+   有關上載和安裝軟體包的詳細資訊，請參閱[如何使用軟體包](/help/sites-administering/package-manager.md)。
 
 1. 穩定日誌後，重新啟動伺服器。
 1. 使用移轉公用程式，讓資產與6.4相容。
 
-   如需詳細資訊，請參閱移 [轉公用程式](/help/forms/using/migration-utility.md)。
+   有關詳細資訊，請參見[遷移實用程式](/help/forms/using/migration-utility.md)。
 
-## 透過安裝Compatibility套件，讓資產與AEM Forms 6.4相容 {#assetsmadecompatible}
+## 透過安裝Compatibility套件{#assetsmadecompatible}，讓資產與AEM Forms 6.4相容
 
 透過安裝「相容性」套件，您可讓下列資產和範本與AEM Forms 6.4相容：
 
