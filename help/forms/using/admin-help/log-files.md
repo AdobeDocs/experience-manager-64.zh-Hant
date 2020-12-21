@@ -18,23 +18,23 @@ ht-degree: 0%
 ---
 
 
-# Log files {#log-files}
+# 日誌檔案{#log-files}
 
 將運行時或啟動錯誤等事件記錄到應用程式伺服器日誌檔案中。 如果您在部署至應用程式伺服器時遇到問題，可使用記錄檔來協助您找出問題。 您可以使用任何文字編輯器開啟記錄檔。
 
-(JBoss)以下日誌檔案位於目 `*[appserver root]*/server/*[server]*/log` 錄中：
+(JBoss)以下日誌檔案位於`*[appserver root]*/server/*[server]*/log`目錄中：
 
 * boot.log
 * server.log.*[yyyy-mm-dd]*
 * server.log
 
-(WebLogic)網域記錄檔位於 *[appserverdomain]* 目錄，而伺服器記錄檔位於*[appserverdomain]/servers/[appserver name]/logs *directory:
+(WebLogic)網域記錄檔位於&#x200B;*[appserverdomain]*&#x200B;目錄中，而伺服器記錄檔位於*[appserverdomain]/servers/[appserver name]/logs *目錄中：
 
 * access.log
 * *[appserver name]*.log
 * *[appserver name]*.out。*[增量數]*
 
-(WebSphere)下列記錄檔位於 *[appserver root]*/profiles/default/logs/*[appserver name目錄中]* :
+(WebSphere)以下日誌檔案位於&#x200B;*[appserver root]*/profiles/default/logs/*[appserver name]*&#x200B;目錄中：
 
 * SystemErr.log
 * SystemOut.log
