@@ -18,41 +18,41 @@ ht-degree: 4%
 ---
 
 
-# 活動趨勢 {#activity-trends}
+# 活動趨勢{#activity-trends}
 
 ## 簡介 {#introduction}
 
-元 `Community Activity List` 件可新增成員的貼文和檢視以及內容貼文和檢視的相關趨勢資訊。
+`Community Activity List`元件可新增成員的貼文和檢視、貼文和內容檢視等趨勢資訊。
 
 本節說明
 
-* 將元件 `Community Activity List` 新增至社 [群網站](overview.md#community-sites)
+* 將`Community Activity List`元件添加到[社區站點](overview.md#community-sites)
 
-* 元件的配置設 `Community Activity List` 置
+* `Community Activity List`元件的配置設定
 
 ## 需求 {#requirement}
 
-只有在Adobe Analytics `Community Activity List` 取得社群網站的授權並設定後，才能取得社群網站的資料。
+`Community Activity List`的資料僅在Adobe Analytics取得社群網站的授權並設定時才可用。
 
-請參閱 [社群功能的Analytics設定](analytics.md)。
+請參閱[社群功能分析設定](analytics.md)。
 
-## 將社群活動清單添加到頁面 {#adding-a-community-activity-list-to-a-page}
+## 將社群活動清單添加到頁面{#adding-a-community-activity-list-to-a-page}
 
-若要在作 `Community Activity List` 者模式下將元件新增至頁面，請找出元 `Communities / Community Activity List` 件並將它拖曳至頁面上。
+若要在作者模式下將`Community Activity List`元件新增至頁面，請找出該元件`Communities / Community Activity List`並將它拖曳至頁面上。
 
-如需必要資訊，請造 [訪Communities Components Basics](basics.md)。
+如需必要資訊，請造訪[Communities Components Basics](basics.md)。
 
 首次放置在社群網站頁面時，元件的顯示方式如下：
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
-## 配置社區活動清單  {#configuring-community-activity-list}
+## 配置社區活動清單{#configuring-community-activity-list}
 
-選擇要訪問 `Community Activity List` 的已放置元件，並選 `Configure` 擇開啟編輯對話框的表徵圖。
+選擇要訪問的已放置的`Community Activity List`元件，並選擇`Configure`表徵圖以開啟編輯對話框。
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
-在「注 **[!UICONTROL 釋]** 」標籤下，指定上傳檔案的注釋是否及顯示方式：
+在&#x200B;**[!UICONTROL Comments]**&#x200B;標籤下，指定上傳檔案的注釋是否及顯示方式：
 
 ![chlimage_1-229](assets/chlimage_1-229.png)
 
@@ -64,11 +64,11 @@ ht-degree: 4%
    * `Members`
    * `Content`
 
-   預設為 `Members`。
+   預設值為`Members`。
 
 * **[!UICONTROL 顯示標題]**
 
-   要顯示在資料上方的描述性標題，例如 `Trending Content`。
+   要在資料上方顯示的描述性標題，例如`Trending Content`。
 
    預設為無標題。
 
@@ -98,7 +98,7 @@ ht-degree: 4%
    * `This year (since Jan 1st)`
    * `Total`
 
-   預設為 `Total`。
+   預設值為`Total`。
 
 * **[!UICONTROL 內容路徑]**
 
@@ -108,18 +108,18 @@ ht-degree: 4%
 
 * **[!UICONTROL 成員人數彙總]**
 
-   取消勾選（關閉）時，只會計入頂層貼文。 例如，如果內容是根頁面（預設值），則 `Activity Type`中 `Posts`的不會顯示任何活動，因為無法將內容張貼至根頁面。 勾選後，會包含所有子系頁面的計數。
+   取消勾選（關閉）時，只會計入頂層貼文。 例如，如果內容是根頁面（預設值），則`Posts`的`Activity Type`將不會顯示任何活動，因為無法將內容張貼至根頁面。 勾選後，會包含所有子系頁面的計數。
 
    已勾選預設值。
 
-## 包含4個元件的範例頁面 {#example-page-with-components}
+## 包含4個元件{#example-page-with-components}的示例頁
 
-**熱門訪客** 設定： 類型=成員，活動類型=視圖
+**頂級** 訪客組態：類型=成員，活動類型=視圖
 
-**熱門參與者** (Top Contributors)設定： 類型=成員，活動類型=貼文
+**熱門貢** 獻者組態：類型=成員，活動類型=貼文
 
-**主要內容** (Top Content)設定： 類型=內容，活動類型=檢視，
+**主要** 內容組態：類型=內容，活動類型=檢視，
 
-**趨勢內容** 設定： 類型=內容，活動類型=貼文
+**趨勢** Contentconfig:類型=內容，活動類型=貼文
 
 ![chlimage_1-230](assets/chlimage_1-230.png)
