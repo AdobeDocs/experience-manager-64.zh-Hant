@@ -20,11 +20,11 @@ ht-degree: 11%
 
 # Assignments Essentials {#assignments-essentials}
 
-本頁提供使用啟用社群網站的指派功能的 [基本資訊](overview.md#enablement-community) 。
+本頁提供使用[啟用社群](overview.md#enablement-community)網站的指派功能的基本資訊。
 
 指派功能是將啟用資源和學習路徑指派給啟用社群成員的能力。
 
-## 用戶端基本功能 {#essentials-for-client-side}
+## 客戶端{#essentials-for-client-side}的基本功能
 
 <table> 
  <tbody>
@@ -50,12 +50,12 @@ ht-degree: 11%
   </tr>
   <tr>
    <td><strong> 屬性</strong></td> 
-   <td>請參閱 <a href="assignments.md">工作功能</a></td> 
+   <td>請參閱<a href="assignments.md">工作功能</a></td> 
   </tr>
  </tbody>
 </table>
 
-### 完成與成功狀態 {#completion-and-success-status}
+### 完成與成功狀態{#completion-and-success-status}
 
 「完成」和「成功」狀態會用於報表，以及「工作總攬」上的狀態橫幅。
 
@@ -81,11 +81,11 @@ ht-degree: 11%
 | 完成 | 通過 |
 | 完成 | 失敗 |
 
-## 伺服器端的基本功能 {#essentials-for-server-side}
+## 伺服器端{#essentials-for-server-side}的基本工具
 
 ### 指定任務功能 {#assignments-function}
 
-包含「工作總攬」功能的社 [群網站結構](functions.md#assignments-function)，包含已設定的 ` [assignments](assignments.md)` 元件。
+一種包括[Assignments函式](functions.md#assignments-function)的社區站點結構，包括配置的` [assignments](assignments.md)`元件。
 
 ### 參考API {#reference-apis}
 
