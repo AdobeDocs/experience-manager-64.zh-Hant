@@ -70,7 +70,7 @@ ht-degree: 15%
 
    或者，從工具列點選／按一下「至系列」圖示。****
 
-   ![chlimage_1-109](assets/chlimage_1-109.png)
+   ![chlimage_1-189](assets/chlimage_1-109.png)
 
 1. 在「新增 **[!UICONTROL 至系列」頁面中]** ，點選/按一下工具列 **[!UICONTROL 中的「建立系列]** 」圖示。
 
