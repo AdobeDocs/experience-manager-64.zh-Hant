@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 覆蓋注釋元件 {#overlay-comments-component}
+# 覆蓋注釋元件{#overlay-comments-component}
 
-覆蓋缺 [省元件](client-customize.md#overlays) （對於元件的所有相對參照）的意圖是全局更改元件的外觀或行為。 在/libs檔案夾中搜尋前，會依循sling的性質來解析至/apps檔案夾。 因此，元件的路徑與預設元件的路徑相同，只不過它位於/apps檔案夾而非/libs檔案夾中。
+[覆蓋](client-customize.md#overlays)預設元件的意圖是針對元件的所有相關參照，全域變更元件的外觀或行為。 在/libs檔案夾中搜尋前，會依循sling的性質來解析至/apps檔案夾。 因此，元件的路徑與預設元件的路徑相同，只不過它位於/apps檔案夾而非/libs檔案夾中。
 
 ## 範例 {#example}
 
