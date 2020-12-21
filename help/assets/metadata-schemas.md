@@ -273,7 +273,7 @@ AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定�
 1. 按一下 AEM 標誌，然後導覽至&#x200B;**[!UICONTROL 「工具」>「資產」>「中繼資料結構描述」]**。此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
 1. 將預設中繼資料表單儲存為自訂表單。 例如，將其另存為`my_default`。
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
 1. 編輯自訂表格。 新增必填欄位。 例如，新增&#x200B;**Category**&#x200B;欄位，並將欄位設為必填。
 
