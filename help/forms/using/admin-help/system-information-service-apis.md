@@ -34,7 +34,7 @@ ht-degree: 0%
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[server]:[port]/rest/services/SystemInfo.properties`</p></td> 
-   <td><p>此API是system.getProperties <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">Java API的包裝函式</a> 。 它檢索當前工作環境的配置。 </p></td> 
+   <td><p>此API是<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API的包裝函式。 它檢索當前工作環境的配置。 </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 
@@ -100,14 +100,14 @@ ht-degree: 0%
    <td><p>https://[server]:[port]/rest/services/SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td> 
    <td><p>檢索活動線程的計數和堆棧跟蹤。 它接受下列參數：</p>
     <ul>
-     <li><p>iterations= [n]: 指定迭代計數。 用數字替換n。 </p></li>
-     <li><p>延遲= [n]: 指定在開始下一個小版本之前要等待的毫秒數。 </p></li>
+     <li><p>iterations= [n]:指定迭代計數。 用數字替換n。 </p></li>
+     <li><p>延遲= [n]:指定在開始下一個小版本之前要等待的毫秒數。 </p></li>
     </ul><p></p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.info</p></td> 
    <td><p>https://[server]:[port]/rest/services/SystemInfo.info</p></td> 
-   <td><p>此API是所有系統資訊服務API的包裝函式。 在內部，它會執行所有系統資訊API，並下載郵遞區號格式的資訊。 </p><p><i><strong>注意</strong>: SystemInfo.info不提供活動線程的計數和堆棧跟蹤。 </i></p></td> 
+   <td><p>此API是所有系統資訊服務API的包裝函式。 在內部，它會執行所有系統資訊API，並下載郵遞區號格式的資訊。 </p><p><i><strong>注意</strong>:SystemInfo.info不提供活動線程的計數和堆棧跟蹤。 </i></p></td> 
   </tr> 
  </tbody> 
 </table>
