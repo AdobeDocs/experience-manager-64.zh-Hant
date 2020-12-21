@@ -18,10 +18,10 @@ ht-degree: 0%
 ---
 
 
-# 開發沙盒內容 {#develop-sandbox-content}
+# 開發沙盒內容{#develop-sandbox-content}
 
 **[‹添加客戶端](add-clientlibs.md)**
 
-目前，您可以使用 [We-Retail Community](../../help/sites-developing/we-retail.md)、社群元件指南和功能基本資訊，來探索沙盒中的社群功 [能](components-guide.md)[](essentials.md) 。
+此時，您可以使用[We-Retail Community](../../help/sites-developing/we-retail.md)、[社群元件指南](components-guide.md)和[功能基本元件](essentials.md)來探索沙盒中的社群功能，以供參考。
 
 **[‹添加客戶端](add-clientlibs.md)**
