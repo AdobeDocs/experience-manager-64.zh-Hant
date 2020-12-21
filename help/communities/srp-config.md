@@ -29,34 +29,34 @@ ht-degree: 2%
 * [社群內容商店](working-with-srp.md)
 * [建議的拓撲](topologies.md)
 
-## 儲存配置控制台 {#storage-configuration-console}
+## 儲存配置控制台{#storage-configuration-console}
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
 在作者環境中，要訪問儲存配置控制台
 
-* 從全域導覽： **[!UICONTROL 「工具>社群>儲存組態」]**
+* 從全域導覽：**[!UICONTROL 工具>社區>儲存配置]**
 
 要選擇預設JCR以外的儲存選項：
 
 * 選擇選項
 * 正確配置
 
-   * 請參閱選擇MSRP的 [詳細資訊](msrp.md#select-msrp)
-   * 請參閱選擇DSRP的 [詳細資訊](dsrp.md#select-dsrp)
-   * 請參閱選擇ASRP的 [詳細資訊](asrp.md#select-asrp)
+   * 請參閱[選擇MSRP](msrp.md#select-msrp)的詳細資訊
+   * 請參閱[選擇DSRP](dsrp.md#select-dsrp)的詳細資訊
+   * 請參閱[選擇ASRP](asrp.md#select-asrp)的詳細資訊
 
-* 選擇「提 **[!UICONTROL 交」]**
+* 選擇&#x200B;**[!UICONTROL 提交]**
 
-### 關於JCR儲存 {#about-jcr-storage}
+### 關於JCR儲存{#about-jcr-storage}
 
 請注意，如果未進行任何選取，預設值為AEM儲存庫JCR。
 
-JCR不是 *作者* 和發佈環境共用的公用商店。 社群內容只會從建立社群內容的作者或發佈環境中看到。
+JCR是&#x200B;*not*&#x200B;作者和發佈環境共用的公用商店。 社群內容只會從建立社群內容的作者或發佈環境中看到。
 
-請造 [訪JCR商店](jsrp.md) ，以取得其他資訊。
+請造訪[JCR Store](jsrp.md)以取得其他資訊。
 
 >[!NOTE]
 >
->缺少下面的節 `srpc`點 `/etc/socialconfig` 表示預設 [JCR儲存](jsrp.md)。
+>在`/etc/socialconfig`下缺少節點`srpc`表示預設[JCR store](jsrp.md)。
 
