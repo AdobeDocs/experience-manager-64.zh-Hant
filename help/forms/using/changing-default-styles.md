@@ -17,28 +17,28 @@ ht-degree: 0%
 ---
 
 
-# 變更HTML5表格的預設樣式 {#changing-default-styles-of-html-forms}
+# 變更HTML5表單的預設樣式{#changing-default-styles-of-html-forms}
 
 HTML5表格會使用HTML5功能來轉譯，而轉譯表格的樣式則會使用CSS來完成。 HTML5表格的預設外觀類似其PDF轉譯。 開發人員可使用自訂CSS來變更HTML5表格的預設外觀。
 
-本文提供變更HTML5表單樣式的逐步資訊，而「樣式簡介」文章 [](/help/forms/using/css-styles.md) 則包含HTML5表單各樣式方面的詳細資訊。 請務必先閱讀「樣式簡介」，然後再執行本文中提及的步驟。
+本文提供變更HTML5表單樣式的逐步資訊，而[樣式簡介](/help/forms/using/css-styles.md)文章包含HTML5表單各樣式方面的詳細資訊。 請務必先閱讀「樣式簡介」，然後再執行本文中提及的步驟。
 
 以下兩張影像顯示預設和自訂樣式之間的差異。
 
 ![pictures-002-small](assets/pictures-002-small.png)
 
-## 設定表單樣式 {#style-your-forms}
+## 設定表單的樣式{#style-your-forms}
 
 1. **選擇要新增自訂樣式的描述檔**
 
-   在URL存取CRX DE介面： **https://&lt;server>:&lt;port>/crx/de** ，並建立描述檔或選擇現有的描述檔。 要瞭解如何建立配置檔案，請參 [閱建立新配置檔案](/help/forms/using/custom-profile.md)
+   在URL存取CRX DE介面：**https://&lt;server>:&lt;port>/crx/de**&#x200B;並建立描述檔或選擇現有的描述檔。 要瞭解如何建立配置檔案，請參閱[建立新配置檔案](/help/forms/using/custom-profile.md)
 
 1. **建立CSS樣式表以設定HTML5表格的樣式**
 
    導覽至您已建立描述檔轉譯器的檔案夾，並建立CSS樣式表檔案。 要執行的步驟包括
 
-   1. 按一下右鍵資料夾，然後從 **菜單中選擇** create -> **create File** 。
-   若要瞭解在HTML5表單中為特定元件建立哪些CSS類別，請參 [閱樣式簡介](/help/forms/using/css-styles.md)。
+   1. 按一下右鍵該資料夾，然後從菜單中選擇&#x200B;**create** -> **create File**
+   若要瞭解在HTML5表單中為特定元件建立哪些CSS類別，請參閱[樣式簡介](/help/forms/using/css-styles.md)。
 
 1. **在「描述檔轉譯器」中包含樣式表**
 
@@ -46,11 +46,11 @@ HTML5表格會使用HTML5功能來轉譯，而轉譯表格的樣式則會使用C
 
    1. 在轉譯器頁面中搜尋下列行：
 
-      &lt;cq:includeClientLib類別=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeclientlib categories=&quot;xfaforms.profile&quot; />
 
    1. 在上面的行下插入以下內容，以包括樣式表：
 
-      &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/>
+      &lt;link href=&quot;/path/to/stylesheet&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; />
 
    1. 儲存檔案。
 
