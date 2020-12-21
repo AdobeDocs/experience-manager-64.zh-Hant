@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# 最佳化HTML5表單 {#optimizing-html-forms}
+# 最佳化HTML5表單{#optimizing-html-forms}
 
 HTML5表格會以HTML5格式轉譯表格。 產生的輸出可能會大，視表單大小和影像等因素而定。 為了最佳化資料傳輸，建議的方法是使用提供請求的Web伺服器來壓縮HTML回應。 此方法可減少回應大小、網路流量，以及在伺服器與用戶端機器之間串流資料所需的時間。
 
 本文介紹使用JBoss為Apache Web Server 2.0 32位啟用壓縮所需的步驟。
 
-*注意： 以下說明不適用於Apache Web Server 2.0 32位元以外的伺服器。*
+*注意：以下說明不適用於Apache Web Server 2.0 32位元以外的伺服器。*
 
 取得適用於您作業系統的Apache網路伺服器軟體：
 
@@ -33,7 +33,7 @@ HTML5表格會以HTML5格式轉譯表格。 產生的輸出可能會大，視表
 
 Apache可以使用HTTP或AJP協定與JBoss通信。
 
-1. 在APACHE_HOME/conf/httpd.conf檔案中取消對以下模組配 *置的注* 釋。
+1. 在&#x200B;*APACHE_HOME/conf/httpd.conf*&#x200B;檔案中取消注釋以下模組配置。
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -47,7 +47,7 @@ Apache可以使用HTTP或AJP協定與JBoss通信。
 
 1. 在JBoss的埠8080上配置代理。
 
-   將下列配置添加到 *APACHE_HOME/conf/httpd.conf* 配置檔案。
+   將以下配置添加到&#x200B;*APACHE_HOME/conf/httpd.conf*&#x200B;配置檔案中。
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -58,14 +58,14 @@ Apache可以使用HTTP或AJP協定與JBoss通信。
    >
    >使用Proxy時，需要進行下列組態變更：
    > 
-   >* 存取： *https://&lt;server>:&lt;port>/system/console/configMgr*
+   >* 存取：*https://&lt;server>:&lt;port>/system/console/configMgr*
    * 編輯Apache Sling Referrer Filter的設定
    * 在「允許主機」中，添加代理伺服器的條目
 
 
 1. 啟用壓縮。
 
-   將下列配置添加到 *APACHE_HOME/conf/httpd.conf* 配置檔案。
+   將以下配置添加到&#x200B;*APACHE_HOME/conf/httpd.conf*&#x200B;配置檔案中。
 
    ```java
    <Location /content/xfaforms>
