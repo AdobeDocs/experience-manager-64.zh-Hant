@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 啟用PDF/A支援 {#enable-pdf-a-support}
+# 啟用PDF/A支援{#enable-pdf-a-support}
 
 PDF產生器支援從Microsoft Excel、Microsoft PowerPoint和Microsoft Word檔案建立PDF/A相容檔案。
 
