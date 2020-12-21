@@ -24,13 +24,13 @@ ht-degree: 1%
 
 ## 已知問題 {#known-issues}
 
-### Dispatcher Refetch失敗 {#dispatcher-refetch-fails}
+### Dispatcher Refetch失敗{#dispatcher-refetch-fails}
 
 當將Dispatcher 4.1.5與較新版本的Jetty一起使用時，重新讀取可能會在等待請求超時後導致「無法從遠程伺服器接收響應」。
 
 使用Dispatcher 4.1.6或更新版本將解決此問題。
 
-### 從CQ 5.4升級後無法存取論壇貼文 {#cannot-access-forum-post-after-upgrading-from-cq}
+### 從CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}升級後無法存取論壇貼文
 
 如果論壇是在CQ 5.4上建立並張貼主題，然後網站已升級至AEM 5.6.1或更新版本，嘗試檢視現有貼文可能會在頁面上造成錯誤：
 
@@ -55,19 +55,19 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 作者和發佈上的失敗不同。 在作者上，它會無訊息地失敗，而且不會顯示論壇主題。 在發佈時，會在頁面上引發錯誤。
 
-如需詳 [細資訊，請參閱com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API。
+如需詳細資訊，請參閱[com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API。
 
-## 常見問題 {#common-concerns}
+## 常見問題{#common-concerns}
 
-### 記錄檔警告： 已過時的車把 {#warning-in-logs-handlebars-deprecated}
+### 記錄檔警告：已過時的車把{#warning-in-logs-handlebars-deprecated}
 
 在啟動期間（不是第1次——但之後的每次），記錄檔中可能會出現下列警告：
 
-* 11.04.2014 08:38:07.223 **WARN**[]FelixStartLevelcom.github.jkank.handlebars.Handlebars Helper &#39;i18n&#39;已由&#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;取代
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jhandlebars.Handlebars Helper &#39;i18n&#39;已由&#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;取代
 
-此警告可以安全地忽略，因為 [SCF](scf.md#handlebarsjavascripttemplatinglanguage)，使用jkanc.handlebars。Handlebars隨附其i18n輔助工具。 啟動時，會以AEM專用的 [i18n協助程式取代它](handlebars-helpers.md#i-n)。 此警告由協力廠商程式庫產生，以確認覆寫現有協助程式。
+此警告可安全地忽略，因為[SCF](scf.md#handlebarsjavascripttemplatinglanguage)使用jkanc.handlebars.Handlebars時，附帶其自己的i18n輔助實用程式。 在啟動時，會以AEM專用的[i18n helper](handlebars-helpers.md#i-n)取代。 此警告由協力廠商程式庫產生，以確認覆寫現有協助程式。
 
-### 記錄檔警告： OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
+### 記錄檔警告：OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
 張貼許多Social Communities論壇主題可能會產生大量來自OakResourceListener processOsgiEventQueue的警告和資訊記錄檔。
 
@@ -82,7 +82,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 23.04.2014 14:21:18.990 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/replication/data/1f799fb4-0aeb-4660-aadb-705657f16048/b9/b91f1690-87e8-41d8-a78e-cd2259f837c8/jcr:content not found, which is not expected for an added or modified node
 ```
 
-### 日誌中出錯： IndexElementFactory的NoClassDefFoundError {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
+### 日誌中出錯：IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}的NoClassDefFoundError
 
 將AEM 5.6.1 GA升級至最新cq-socialcommunities-pkg-1.4.x或AEM 6.0會在啟動期間導致記錄檔發生錯誤，因為條件會自行解決，重新啟動時未看到錯誤就是明證。
 
