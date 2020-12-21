@@ -24,7 +24,7 @@ ht-degree: 15%
 
 1. 按一下元件，並在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中設定其屬性。 例如，按一下&#x200B;**[!UICONTROL Description]**&#x200B;元件並編輯其屬性。
 
-   ![chlimage_1-401](assets/chlimage_1-481.png)
+   ![chlimage_1-481](assets/chlimage_1-481.png)
 
    編輯&#x200B;**[!UICONTROL Description]**&#x200B;元件的以下屬性：
 
