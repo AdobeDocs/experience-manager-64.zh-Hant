@@ -16,16 +16,16 @@ ht-degree: 2%
 ---
 
 
-# 最適化表單元件的內嵌樣式 {#inline-styling-of-adaptive-form-components}
+# 最適化表單元件的內嵌樣式{#inline-styling-of-adaptive-form-components}
 
-您可以使用主題編輯器指定樣式，以定義最適化表單的整體外 [觀和樣式](/help/forms/using/themes.md)。 此外，您也可以將內嵌CSS樣式套用至個別的可調式表單元件，並即時預覽變更。 內嵌樣式會覆寫主題中提供的樣式。
+您可以使用[主題編輯器](/help/forms/using/themes.md)指定樣式，來定義最適化表單的整體外觀和樣式。 此外，您也可以將內嵌CSS樣式套用至個別的可調式表單元件，並即時預覽變更。 內嵌樣式會覆寫主題中提供的樣式。
 
-## 套用內嵌CSS屬性 {#apply-inline-css-properties}
+## 套用內嵌CSS屬性{#apply-inline-css-properties}
 
 若要新增內嵌樣式至元件：
 
-1. 在表單編輯器中開啟您的表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中，點選「畫 ![布下拉式清單](assets/canvas-drop-down.png) >樣 **式」**。
-1. 在頁面中選取元件，然後點選「編輯」按鈕 ![edit-button](assets/edit-button.png)。 樣式屬性會在側欄中開啟。
+1. 在表單編輯器中開啟您的表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中，點選![canvas-drop-down](assets/canvas-drop-down.png) > **Style**。
+1. 在頁面中選擇一個元件，然後點選編輯按鈕![edit-button](assets/edit-button.png)。 樣式屬性會在側欄中開啟。
 
    您也可以從側欄的表單階層樹狀結構中選取元件。 表單階層樹狀結構在側欄中可作為表單物件使用。
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
    從邊欄中選擇元件時，您會看到列出的所有子元件以及所選元件的屬性。 您可以選取特定的子元件並設定其樣式。
 
-1. 按一下側邊欄中的標籤，以指定CSS屬性。 您可以指定屬性，例如：
+1. 按一下側邊欄中的標籤以指定CSS屬性。 您可以指定屬性，例如：
 
    * 尺寸與位置（顯示設定、填補、高度、寬度、邊界、位置、z索引、浮動、清除、溢位）
    * 文字（字型系列、粗細、顏色、大小、行高和對齊）
@@ -42,10 +42,10 @@ ht-degree: 2%
    * 特效（陰影、洞察力）
    * 進階（可讓您編寫元件的自訂CSS）
 
-1. 同樣地，您也可以套用元件其他部分的樣式，例如Widget、Caption和Help。
-1. 點選 **「完成** 」以確認變更，或點選「取 **消** 」以放棄變更。
+1. 同樣地，您也可以套用元件其他部分的樣式，例如介面工具集、標題和說明。
+1. 點選&#x200B;**Done**&#x200B;確認變更，或點選&#x200B;**Cancel**&#x200B;捨棄變更。
 
-## 範例： 欄位元件的內嵌樣式 {#example-inline-styles-for-a-field-component}
+## 範例：欄位元件{#example-inline-styles-for-a-field-component}的內嵌樣式
 
 下列影像會描述套用內嵌樣式前後的文字欄位。
 
@@ -73,7 +73,7 @@ ht-degree: 2%
    <td><p>文字方塊</p> </td> 
    <td><p>background-color</p> </td> 
    <td><p>#6495ED</p> </td> 
-   <td><p>將背景顏色更改為CornflowerBlue(#6495ED)</p> <p>注意： 您可以在值欄位中指定顏色名稱或其十六進位代碼。</p> </td> 
+   <td><p>將背景顏色更改為CornflowerBlue(#6495ED)</p> <p>注意：您可以在值欄位中指定顏色名稱或其十六進位代碼。</p> </td> 
   </tr> 
   <tr> 
    <td><p>標籤</p> </td> 
@@ -96,7 +96,8 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-![套用內嵌樣式後的文字方塊樣式](assets/applied-style.png)**圖：** *套用內嵌樣式屬性後的文字方塊元件*
+![套用內嵌樣式後的文字方塊樣](assets/applied-style.png)
+**式圖：套用內嵌樣** *式屬性後的文字方塊元件*
 
 依照上述步驟，您可以選取其他元件並設定其樣式，例如面板、提交按鈕和選項按鈕。
 
