@@ -17,13 +17,13 @@ ht-degree: 3%
 ---
 
 
-# 整合建立對應UI與您的自訂入口網站 {#integrating-create-correspondence-ui-with-your-custom-portal}
+# 將「建立對應UI」與您的自訂入口網站{#integrating-create-correspondence-ui-with-your-custom-portal}整合
 
 ## 概覽 {#overview}
 
 本文詳細說明如何將「建立通信解決方案」與您的環境整合。
 
-## 以URL為基礎的呼叫 {#url-based-invocation}
+## 基於URL的調用{#url-based-invocation}
 
 從自訂入口網站呼叫「建立對應」應用程式的一種方式，是使用下列請求參數來準備URL:
 
@@ -44,11 +44,11 @@ ht-degree: 3%
 >
 >在呼叫「建立對應」應用程式之前，儲存並上傳資料，以在指定dataURL呼叫「建立對應」UI。 這可從自訂入口網站本身或透過另一個後端程式完成。
 
-## 內嵌資料式呼叫 {#inline-data-based-invocation}
+## 內嵌資料式呼叫{#inline-data-based-invocation}
 
-另一種呼叫「建立對應」應用程式（也是更安全的）方式是，只要點擊URL `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`，同時傳送參數和資料，以POST要求呼叫「建立對應」應用程式（將其隱藏在使用者面前）。 這也表示您現在可以將XML資料傳遞至內嵌的「建立對應」應用程式（使用cmData參數做為相同要求的一部分），這在先前的方法中是不可能的／理想的。
+呼叫「建立對應」應用程式的另一種（也是更安全的）方式是，在傳送參數和資料以POST要求呼叫「建立對應」應用程式時，直接點擊`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`的URL（將其隱藏在使用者面前）。 這也表示您現在可以將XML資料傳遞至內嵌的「建立對應」應用程式（使用cmData參數做為相同要求的一部分），這在先前的方法中是不可能的／理想的。
 
-### 用於指定字母的參數 {#parameters-for-specifying-letter}
+### 指定字母{#parameters-for-specifying-letter}的參數
 
 <table> 
  <tbody>
@@ -77,7 +77,7 @@ ht-degree: 3%
 
 表中參數的順序指定用於載入字母的參數的首選項。
 
-### 指定XML資料來源的參數 {#parameters-for-specifying-the-xml-data-source}
+### 指定XML資料源{#parameters-for-specifying-the-xml-data-source}的參數
 
 <table> 
  <tbody>
@@ -106,7 +106,7 @@ ht-degree: 3%
 
 表中參數的順序指定用於載入XML資料的參數的首選項。
 
-### 其他參數 {#other-parameters}
+### 其他參數{#other-parameters}
 
 <table> 
  <tbody>
@@ -118,7 +118,7 @@ ht-degree: 3%
   <tr>
    <td>cmPreview<br /> </td> 
    <td>布林值 (Boolean)</td> 
-   <td>True可在預覽模式中開啟字母<br /> </td> 
+   <td>True以預覽模式開啟字母<br /> </td> 
   </tr>
   <tr>
    <td>隨機</td> 
