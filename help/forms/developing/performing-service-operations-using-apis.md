@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 使用API執行服務操作 {#performing-service-operations-using-apis}
+# 使用API {#performing-service-operations-using-apis}執行服務操作
 
-在您開始使用AEM Forms API來開發用戶端應用程式之前，建議您先閱讀「叫用AEM Forms」，其中說明呼叫服務的不同方式。 (請參閱 [服務容器](/help/forms/developing/service-container.md#service-container)。)
+在您開始使用AEM Forms API來開發用戶端應用程式之前，建議您先閱讀「叫用AEM Forms」，其中說明呼叫服務的不同方式。 （請參閱[服務容器](/help/forms/developing/service-container.md#service-container)。）
 
 熟悉不同的呼叫方法後，您就可學習如何以程式設計方式與每個服務互動。 您可在Adobe Flex® Builder™、Java開發環境或Microsoft Visual Studio .NET等環境中開發用戶端應用程式，讓您在原生SOAP堆疊上使用公開的WSDL。
 
