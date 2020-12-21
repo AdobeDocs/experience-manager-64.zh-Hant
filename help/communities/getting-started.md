@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Getting Started with AEM Communities {#getting-started-with-aem-communities}
+# AEM Communities {#getting-started-with-aem-communities}快速入門
 
 AEM Communities可讓公司從網站範本庫建立專屬的品牌化社群體驗。 論壇、群組、部落格、檔案分享、日曆、活動摘要和延伸使用者個人檔案可整合在您的網站中，以促進潛在客戶、客戶和公司之間的互動。
 
-以下是快速設定參與社群以 [進行示範](overview.md#engagement-community) 或開發的教學課程。
+以下是教學課程，說明如何快速設定[參與社群](overview.md#engagement-community)，以進行示範或開發。
 
-如需快速設定啟用社群的教 [學課程](overview.md#enablement-community)，請 [造訪AEM Communities for Enablement](getting-started-enablement.md)。
+如需快速設定[啟用社群](overview.md#enablement-community)的教學課程，請造訪[AEM社群快速入門](getting-started-enablement.md)。
 
 * [初始設定](setup.md)
 
