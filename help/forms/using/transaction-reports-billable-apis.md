@@ -34,16 +34,16 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
 
 帳單API不會計入頁數、檔案或表單的長度，或轉譯檔案的最終格式。 事務處理報表將事務處理分為三類：已處理的檔案、已轉譯的檔案和已提交的表單。
 
-* **提交的表單：** 當從使用AEM Forms建立的任何類型表單提交資料，且資料會提交至任何資料儲存存放庫或資料庫時，即視為表單提交。 例如，提交最適化表單、HTML5表單、PDF表單和表單集都會視為提交的表單。 表單集中的每個表單都被視為提交。 例如，如果表單集有5個表單，提交表單集時，事務報告服務會將其計為5個提交。
-* **轉譯的檔案：** 通過組合模板和資料、數字地簽名或認證文檔、使用文檔服務的可計費文檔服務API或將文檔從一種格式轉換為另一種格式來生成文檔，被視為所呈現的文檔。
+* **已提交的表** 單：從使用AEM Forms建立的任何類型表單提交資料，且資料會提交至任何資料儲存存放庫或資料庫時，即視為表單提交。例如，提交最適化表單、HTML5表單、PDF表單和表單集都會視為提交的表單。 表單集中的每個表單都被視為提交。 例如，如果表單集有5個表單，提交表單集時，事務報告服務會將其計為5個提交。
+* **已呈現的文** 件：結合範本和資料、以數位方式簽署或認證檔案、使用檔案服務的可付款檔案服務API，或將檔案從一種格式轉換為另一種格式，以產生檔案為已呈現檔案。
 
 >[!NOTE]
 >
 >交易報表UI會顯示三個類別：已提交的表單、已轉譯的檔案和已處理的檔案。 所呈現的文檔和所處理的文檔均作為所呈現的文檔入賬。
 
-## 可計費的檔案服務API {#billable-document-services-apis}
+## 計費文檔服務API {#billable-document-services-apis}
 
-### 產生PDF服務 {#generate-pdf-service}
+### 產生PDF服務{#generate-pdf-service}
 
 <table> 
  <tbody>
@@ -135,7 +135,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### 記錄服務檔案（DoR服務） {#document-of-record-service-dor-service}
+### 記錄服務（DoR服務）{#document-of-record-service-dor-service}
 
 <table> 
  <tbody>
@@ -154,7 +154,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### 輸出服務 {#output-service}
+### 輸出服務{#output-service}
 
 <table> 
  <tbody>
@@ -197,7 +197,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### 表單服務 {#forms-service}
+### Forms服務{#forms-service}
 
 <table> 
  <tbody>
@@ -222,7 +222,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### 轉換PDF服務 {#convert-pdf-service}
+### 轉換PDF服務{#convert-pdf-service}
 
 <table> 
  <tbody>
@@ -247,7 +247,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### Barcoded Forms服務 {#barcoded-forms-service}
+### Barcoded Forms Service {#barcoded-forms-service}
 
 <table> 
  <tbody>
@@ -266,7 +266,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### Assembler Service {#assembler-service}
+### 匯編器服務{#assembler-service}
 
 <table> 
  <tbody>
@@ -278,7 +278,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">調用</a></td> 
-   <td>執行指定的DDX文檔並返回包 <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">含結果文檔的AssemblerResult</a> 對象。 </td> 
+   <td>執行指定的DDX文檔並返回包含所生成文檔的<a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>對象。 </td> 
    <td>已處理的文件</td> 
    <td>下列業務不會作為交易入賬：
     <ul> 
@@ -288,7 +288,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">調用</a></td> 
-   <td>執行指定的DDX文檔並返回包含 <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> 合成文檔的AssemblerResult</a> 對象。 </td> 
+   <td>執行指定的DDX文檔並返回包含所生成文檔的<a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html"> AssemblerResult</a>對象。 </td> 
    <td>已處理的文件</td> 
    <td>Assembler服務支援PDF產生器、表單和輸出服務支援的所有輸入檔案格式，支援所有這些格式做為輸出檔案格式。 </td> 
   </tr>
@@ -310,7 +310,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
 
 
 
-### PDF公用程式服務  {#pdf-utility-service}
+### PDF Utility Service {#pdf-utility-service}
 
 <table> 
  <tbody>
@@ -329,7 +329,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### 檔案保證服務 {#doc-assurance-service}
+### 文檔保證服務{#doc-assurance-service}
 
 <table> 
  <tbody>
@@ -343,14 +343,14 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a></td> 
    <td>API可讓您保護檔案的安全。 您可以使用API來簽署、認證、Reader擴充或加密PDF檔案。 </td> 
    <td>已處理的文件</td> 
-   <td>只有簽署並認證secureDocument的 <a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">運作</a> ，才會計費。</td> 
+   <td>只對<a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-">secureDocument</a>的操作進行簽名和認證。</td> 
   </tr>
  </tbody>
 </table>
 
-## 計費資料擷取API {#billable-data-capture-apis}
+## 計費資料捕獲API {#billable-data-capture-apis}
 
-最適化表單、HTML5表單和表單集的所有提交事件都視為交易。 依預設，提交PDF表單不會算作交易。 使用提供的 [交易報表API](record-transaction-custom-implementation.md) ，將PDF表單提交記錄為交易。
+最適化表單、HTML5表單和表單集的所有提交事件都視為交易。 依預設，提交PDF表單不會算作交易。 使用提供的[交易報表API](record-transaction-custom-implementation.md)將PDF表單提交記錄為交易。
 
 ### 適用性表單 {#adaptive-forms}
 
@@ -417,7 +417,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-## OSGi API上的計費互動式通訊和表單導向AEM工作流程 {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+## OSGi API {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}上的計費互動式通訊和表單導向AEM工作流程
 
 在OSGi上指派表單導向AEM工作流程的工作和檔案服務步驟，以及互動式通訊的所有轉譯，並視為交易處理。 在作者例項上預覽互動式通訊，並使用Agent UI在發佈例項上預覽，不會算作交易。 如果工作流步驟將事務處理入帳，而工作流無法完成，則不會撤消事務處理計數。
 
@@ -442,7 +442,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### Interactive Communication - Print Channel {#interactive-communication-print-channel}
+### 互動式通訊——列印頻道{#interactive-communication-print-channel}
 
 <table> 
  <tbody>
@@ -453,7 +453,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
    <td>其他資訊</td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">演算</a> （轉換為PDF）</td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> （轉換為PDF）</td> 
    <td>產生互動式通訊的PDF版本。</td> 
    <td>已呈交的文件</td> 
    <td>
@@ -463,7 +463,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### OSGi上的表單導向AEM工作流程  {#form-centric-aem-workflows-on-osgi}
+### OSGi {#form-centric-aem-workflows-on-osgi}上的表單導向AEM工作流程
 
 <table> 
  <tbody>
@@ -492,11 +492,11 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-## 將可計費API記錄為自訂代碼的交易 {#recording-billable-apis-as-transactions-for-custom-code}
+## 將可計費API記錄為自訂代碼{#recording-billable-apis-as-transactions-for-custom-code}的交易
 
-諸如提交PDF表單、使用代理UI預覽互動式通訊、使用非標準表單提交和自訂實作等動作，不會算作交易。 AEM Forms提供API來記錄這類動作，例如交易。 您可以從自訂實作呼叫API以記 [錄交易](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg)。
+諸如提交PDF表單、使用代理UI預覽互動式通訊、使用非標準表單提交和自訂實作等動作，不會算作交易。 AEM Forms提供API來記錄這類動作，例如交易。 您可以從自訂實作呼叫API，以記錄交易[。](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg)
 
-## 相關文章 {#related-articles}
+## 相關文章{#related-articles}
 
 * [事務處理報表概覽](/help/forms/using/transaction-reports-overview.md)
 * [查看和瞭解事務處理報表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
