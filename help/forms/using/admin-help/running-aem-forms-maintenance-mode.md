@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 在維護模式中執行AEM表單 {#running-aem-forms-in-maintenance-mode}
+# 在維護模式{#running-aem-forms-in-maintenance-mode}中執行AEM表單
 
 在執行例如修補DSC、升級AEM表單或套用服務套件等工作時，維護模式很有用。
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 1. 在網頁瀏覽器中，輸入：
 
-   `https://`*[hostname ]*端`:`*[口管]* 理員用戶名 `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[]*`&password=`*[口令]*
+   `https://`*[主機&#x200B;]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[名埠管理員&#x200B;]*`&password=`*[用戶名密碼]*
 
    瀏覽器視窗中會顯示「現在暫停」訊息。
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 1. 在網頁瀏覽器中，輸入：
 
-   `https://`*[hostname]:[port ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[administrator用戶名]* 口 `&password=`*[令&#x200B;]*
+   `https://`*[hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
 
    狀態會顯示在瀏覽器視窗中。 狀態為&quot;true&quot;表示伺服器正在維護模式下運行，而&quot;false&quot;表示伺服器未處於維護模式。
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 1. 在網頁瀏覽器中，輸入：
 
-   `https://`*[hostname]:[port ]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[administrator用戶名]* 口 `&password=`*[令&#x200B;]*
+   `https://`*[hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadministrator]* `&password=`*[usernamepassword ]*
 
    瀏覽器視窗中會顯示「現在正在執行」訊息。
 
