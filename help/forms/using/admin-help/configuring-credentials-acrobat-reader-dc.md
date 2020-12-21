@@ -24,7 +24,7 @@ ht-degree: 0%
 
 如果您使用評估憑證，請在移至生產環境時，以生產憑證來取代。 若要更新過期或評估憑證，請先刪除舊版Acrobat Reader DC擴充功能憑證。
 
-如需有關取得憑證的詳細資訊，請 [參閱「準備安裝AEM表單（單一伺服器）」](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)。
+如需有關取得憑證的詳細資訊，請參閱[準備安裝AEM表單（單一伺服器）](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)。
 
 信任商店可能包含多份Acrobat Reader DC擴充功能憑證。 您必須將其中一個認證指定為預設的Reader Extensions憑證。 當Workbench使用者無法決定在建立流程期間要使用哪些憑證時，就會使用預設憑證。 這些規則適用於預設憑據：
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以以程式設計方式匯入和刪除認證。 (請參 [閱「使用AEM表單進行程式設計](https://www.adobe.com/go/learn_aemforms_programming_63)」)。
+>您也可以以程式設計方式匯入和刪除認證。 （請參閱[使用AEM表單進行程式設計](https://www.adobe.com/go/learn_aemforms_programming_63)）。
 
-## 匯入Acrobat Reader DC擴充功能憑證 {#import-a-acrobat-reader-dc-extensions-credential}
+## 匯入Acrobat Reader DC擴充功能憑證{#import-a-acrobat-reader-dc-extensions-credential}
 
 1. 在管理控制台中，按一下「設定>信任商店管理>本機認證」。
 1. 按一下「匯入」，然後在「信任商店類型」下方，選取「Acrobat Reader DC擴充功能憑證」。
@@ -52,12 +52,12 @@ ht-degree: 0%
 
    如果出現錯誤消息「由於檔案格式錯誤或密碼錯誤而導入憑據失敗」，請驗證密碼是否有效。
 
-## 移除Acrobat Reader DC擴充功能憑證 {#remove-a-acrobat-reader-dc-extensions-credential}
+## 移除Acrobat Reader DC擴充功能憑證{#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. 在管理控制台中，按一下「設定>信任商店管理>本機認證」。
 1. 選擇憑據並按一下刪除。
 
-## 取代Acrobat Reader DC擴充功能憑證 {#replace-a-acrobat-reader-dc-extensions-credential}
+## 取代Acrobat Reader DC擴充功能憑證{#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. 在管理控制台中，按一下「設定>信任商店管理>本機認證」。
 1. 記下現有憑證的別名，然後選取它，然後按一下「刪除」。
