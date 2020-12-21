@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 轉換PDF服務 {#convertpdf-service}
+# ConvertPDF服務{#convertpdf-service}
 
 ## 概覽 {#overview}
 
@@ -30,17 +30,17 @@ ht-degree: 0%
 
 ## 配置服務的屬性   {#properties}
 
-您可以使用 **AEM Console中的AEMFD ConvertPDF** Service，來設定此服務的屬性。 AEM主控台的預設URL為 `https://[host]:[port]/system/console/configMgr`。
+您可以使用AEM Console中的&#x200B;**AEMFD ConvertPDF Service**&#x200B;來設定此服務的屬性。 AEM主控台的預設URL為`https://[host]:[port]/system/console/configMgr`。
 
-## 使用服務 {#using-the-service}
+## 使用服務{#using-the-service}
 
 ConvertPDF服務提供下列兩個API:
 
-* **[toPS](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: 將PDF檔案轉換為PostScript檔案。
+* **[toPS](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**:將PDF檔案轉換為PostScript檔案。
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: 將PDF檔案轉換為影像檔。 支援的影像格式包括JPEG、JPEG2000、PNG和TIFF。
+* **[toImage](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**:將PDF檔案轉換為影像檔。支援的影像格式包括JPEG、JPEG2000、PNG和TIFF。
 
-### 搭配JSP或Servlet使用toPS API {#using-tops-api-with-a-jsp-or-servlets}
+### 搭配JSP或Servlets {#using-tops-api-with-a-jsp-or-servlets}使用toPS API
 
 ```java
 <%@ page import="java.util.List, java.io.File,
@@ -84,7 +84,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### 搭配JSP或Servlet使用toImage API {#using-toimage-api-with-a-jsp-or-servlets}
+### 搭配JSP或Servlets {#using-toimage-api-with-a-jsp-or-servlets}使用toImage API
 
 ```java
 <%@ page import="java.util.List, java.io.File,
@@ -131,7 +131,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### 搭配AEM工作流程使用ConvertPDF服務 {#using-convertpdf-service-with-aem-workflows}
+### 搭配AEM工作流程使用ConvertPDF服務{#using-convertpdf-service-with-aem-workflows}
 
 從工作流中運行ConvertPDF服務類似於從JSP/Servlet中運行。
 
