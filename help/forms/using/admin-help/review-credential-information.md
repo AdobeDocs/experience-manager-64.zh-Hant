@@ -18,19 +18,19 @@ ht-degree: 0%
 ---
 
 
-# 審查憑證使用資訊 {#review-credential-use-information}
+# 查看憑據使用資訊{#review-credential-use-information}
 
 憑證包含說明其預期用途的資訊，可透過Acrobat Reader DC擴充功能一般使用者網頁應用程式存取。 您可以使用此資訊來確定所安裝的憑證類型（評估或生產）及其有效日期。
 
 1. 開啟網頁瀏覽器並輸入此URL:
 
-   http://localhost:*[port]*/ReaderExtensions(其 *[中port是您應用程式伺服器的埠號]* )
+   http://localhost:*[port]*/ReaderExtensions（其中&#x200B;*[port]*&#x200B;是您的應用程式伺服器的埠號）
 
 1. 使用預設使用者名稱和密碼登入：
 
-   用戶名： 管理員
+   用戶名：管理員
 
-   密碼： 密碼
+   密碼：密碼
 
    >[!NOTE]
    >
