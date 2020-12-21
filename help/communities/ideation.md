@@ -18,11 +18,11 @@ ht-degree: 3%
 ---
 
 
-# Ideation Essentials {#ideation-essentials}
+# Idefation Essentials {#ideation-essentials}
 
 本頁提供使用構想功能的基本資訊，這類功能類似論壇，但可儲存為草稿，並提供更合作的感覺。
 
-## 用戶端基本功能 {#essentials-for-client-side}
+## 客戶端{#essentials-for-client-side}的基本功能
 
 <table> 
  <tbody>
@@ -48,7 +48,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 屬性</strong></td> 
-   <td>請參閱 <a href="ideation-feature.md">創意功能</a></td> 
+   <td>請參閱<a href="ideation-feature.md">Ideation Feature</a></td> 
   </tr>
  </tbody>
 </table>
@@ -57,4 +57,4 @@ ht-degree: 3%
 
 ### 創意力功能 {#ideation-function}
 
-一種包括Ideation功能的社區站點結 [構](functions.md#ideation-function)，包括配置的組 `ideation` 件。
+一種包括[Ideation函式](functions.md#ideation-function)的社區站點結構，包括配置的`ideation`元件。
