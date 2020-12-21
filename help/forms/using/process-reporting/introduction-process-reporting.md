@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# 流程報告簡介 {#introduction-to-process-reporting}
+# 流程報告簡介{#introduction-to-process-reporting}
 
 ![process-reporting](assets/process-reporting.png)
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 Additional Process Reporting提供了一個介面，可運行臨機查詢，並將自定義報告視圖整合到Process Reporting用戶介面中。
 
-如需支援的瀏覽器清單，請參閱「 [AEM Forms支援的平台」](/help/forms/using/aem-forms-jee-supported-platforms.md)。
+如需支援的瀏覽器清單，請參閱[AEM Forms Supported Platforms](/help/forms/using/aem-forms-jee-supported-platforms.md)。
 
 流程報告建立在以下模組上：
 
@@ -35,9 +35,9 @@ Additional Process Reporting提供了一個介面，可運行臨機查詢，並�
 * 將流程資料發佈到嵌入式流程報告儲存庫
 * 提供以瀏覽器為基礎的使用者介面，以檢視報表
 
-## 主要功能 {#key-capabilities}
+## 關鍵功能{#key-capabilities}
 
-### 永不中斷的報告功能 {#always-on-reporting}
+### 永遠開啟報告{#always-on-reporting}
 
 ![站點管理](assets/site-management.png)
 
@@ -45,7 +45,7 @@ Additional Process Reporting提供了一個介面，可運行臨機查詢，並�
 
 「流程報表」也提供以CSV格式匯出報表和查詢資料的選項。
 
-### 臨機報表 {#adhoc-reports}
+### 臨機報表{#adhoc-reports}
 
 ![列印與色彩](assets/print-&-colour.png)
 
@@ -57,7 +57,7 @@ Additional Process Reporting提供了一個介面，可運行臨機查詢，並�
 
 然後，您可以儲存報表篩選，以便在稍後的日期或時間執行。
 
-### 進程／任務歷史記錄 {#process-task-history}
+### 進程／任務歷史記錄{#process-task-history}
 
 ![檔案管理](assets/file-management.png)
 
