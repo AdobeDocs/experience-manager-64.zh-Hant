@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms工作區簡介 {#introduction-to-aem-forms-workspace}
+# AEM Forms工作區簡介{#introduction-to-aem-forms-workspace}
 
 表單工作流程可自動化並提供重要檔案和表單相關商業程式的可見度，進而提高組織效率。 使用「流程管理」模組，您可以建立簡化的端對端工作流程— 包括人員、系統、內容和業務規則— 線上或離線存取。Forms工作流程包含AEM Forms工作區。 AEM Forms工作區新增了擴充和整合工作區的功能，讓工作區更方便使用。
 
