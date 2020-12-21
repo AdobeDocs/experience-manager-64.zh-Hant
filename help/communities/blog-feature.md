@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# 部落格功能 {#blog-feature}
+# 部落格功能{#blog-feature}
 
 ## 簡介 {#introduction}
 
@@ -31,11 +31,11 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 * 發佈端建立部落格文章和留言
 * 豐富式文字編輯
 * 內嵌影像（支援拖放）
-* 內嵌社交網路內容([內嵌支援](blog-developer-basics.md#allowing-rich-media))
+* 內嵌社交網路內容([oEmbed support](blog-developer-basics.md#allowing-rich-media))
 * 草稿模式
 * 排程發佈
-* 代表撰寫(特權 [會員](users.md#privileged-members-group) ，可以代表不同社群成員建立內容)
-* [部落格文章與留言的內容內容](moderate-ugc.md) ，以及大量協調
+* 代表組成（[特權成員](users.md#privileged-members-group)可以代表不同社區成員建立內容）
+* [內容內容與大量調](moderate-ugc.md) 整部落格文章和留言
 
 本節說明
 
@@ -44,11 +44,11 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 >[!NOTE]
 >
->元件 `Journal`和 `Journal Sidebar` 的標題 `Blog` 為和 `Blog Sidebar`。
+>元件`Journal`和`Journal Sidebar`的標題為`Blog`和`Blog Sidebar`。
 >
 >AEM 6.0及舊版中的部落格功能現在已移除。 它以範本為基礎，僅允許作者在作者環境中建立內容。
 
-## 將部落格元件新增至頁面 {#adding-blog-components-to-a-page}
+## 將部落格元件添加到頁面{#adding-blog-components-to-a-page}
 
 如果想要以作者模式將部落格新增至頁面，請使用元件瀏覽器來尋找
 
@@ -57,45 +57,54 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 將它們拖曳至應該出現部落格的頁面上。
 
-如需必要資訊，請造 [訪Communities Components Basics](basics.md)。
+如需必要資訊，請造訪[Communities Components Basics](basics.md)。
 
-當包含 [所需的用戶端程式庫](blog-developer-basics.md#essentials-for-client-side) ，元件的顯示 `Blog`方式如下：
+當包含[必要的用戶端程式庫](blog-developer-basics.md#essentials-for-client-side)時，`Blog`元件的顯示方式如下：
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-以及將如何 `Blog Sidebar` 顯示：
+以及`Blog Sidebar`的顯示方式：
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### 設定部落格 {#configuring-blog}
+### 配置部落格{#configuring-blog}
 
-選擇要訪問 `Blog` 的已放置元件，並選 `Configure` 擇開啟編輯對話框的表徵圖。
+選擇要訪問的已放置的`Blog`元件，並選擇`Configure`表徵圖以開啟編輯對話框。
 
-![配置表徵圖](assets/chlimage_1-149.png)![部落格設定](assets/Blog-configure.png)
+![設定](assets/chlimage_1-149.png) ![圖示部落格設定](assets/Blog-configure.png)
 
-#### 「設定」頁籤 {#settings-tab}
+#### 「設定」頁籤{#settings-tab}
 
-在「設 **[!UICONTROL 定]** 」標籤下，指定部落格的基本功能：
+在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤下，指定部落格的基本功能：
 
-* **[!UICONTROL 允許附件縮]**&#x200B;圖如果選中，則會建立附加影像的縮圖。
+* **[!UICONTROL 允許附]**
+件縮覽圖如果勾選，則會建立附加影像的縮覽圖。
 
-* **[!UICONTROL 附加縮圖大小]**&#x200B;附加縮圖影像的最大大小（以像素為單位）。 預設值為800 x 800。
+* **[!UICONTROL 附加縮圖大]**
+小附加縮圖影像的最大大小（像素）。預設值為800 x 800。
 
-* **[!UICONTROL 縮圖的最小影像大小]**&#x200B;影像的最小大小（以位元組為單位），以產生內嵌影像的縮圖。 預設值為100000位元組(100kb)。
+* **[!UICONTROL 縮圖的最小影像大]**
+小影像的最小大小（以位元組為單位），以產生內嵌影像的縮圖。預設值為100000位元組(100kb)。
 
-* **[!UICONTROL 最大縮圖大]**&#x200B;小內嵌影像縮圖影像的最大大小（以像素為單位）。 預設值為800 x 800。
+* **[!UICONTROL 最大縮圖]**
+大小內嵌影像縮圖影像的最大大小（以像素為單位）。預設值為800 x 800。
 
-* **[!UICONTROL 允許特權成]**&#x200B;員如果選中此選項，則僅允許特權成員建立內容。
+* **[!UICONTROL 允許特權]**
+成員如果選中，則僅允許特權成員建立內容。
 
-* **[!UICONTROL 允許的特權成]**&#x200B;員添加允許建立內容的特權成員。
+* **[!UICONTROL 允許的特]**
+權成員添加允許建立內容的特權成員。
 
-* **[!UICONTROL 在作者編輯模式中封鎖使用者產生的內容]**&#x200B;如果啟用，在作者模式中編輯時會封鎖使用者產生的內容。
+* **[!UICONTROL 在作者編輯模式中封鎖使用者產生的內]**
+容如果啟用，在作者模式中編輯時會封鎖使用者產生的內容。
 
-* **[!UICONTROL 日誌標]**&#x200B;題要顯示在頁面上的部落格標題。
+* **[!UICONTROL 日誌]**
+標題要顯示在頁面上的部落格標題。
    >注意:
    >「日誌標題」用於自動建立部落格的URL。 您在此處指定的日誌標題中，最多使用50個字元（另外還有5個字元）來建立部落格的URL。
 
-* **[!UICONTROL 日誌說明]**&#x200B;部落格說明。
+* **[!UICONTROL 日誌]**
+說明部落格說明。
 
 * **[!UICONTROL 每頁主題]**
 
@@ -115,7 +124,7 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 * **[!UICONTROL 允許標記]**
 
-   如果勾選，允許成員將標籤標籤新增至其貼文(請參 **[!UICONTROL 閱「標籤欄位]** 」標籤)。 預設為未勾選。
+   如果勾選，允許成員將標籤標籤新增至其貼文（請參閱&#x200B;**[!UICONTROL 標籤欄位]**&#x200B;標籤）。 預設為未勾選。
 
 * **[!UICONTROL 允許檔案上傳]**
 
@@ -123,11 +132,11 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 * **[!UICONTROL 最大檔案大小]**
 
-   僅在勾選時 `Allow File Uploads` 相關。 此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
+   僅當選中`Allow File Uploads`時相關。 此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
 
 * **[!UICONTROL 允許的檔案類型]**
 
-   僅在勾選時 `Allow File Uploads` 相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
+   僅當選中`Allow File Uploads`時相關。 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
 
 * **[!UICONTROL 附加影像檔案最大大小]**
 
@@ -143,11 +152,11 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 * **[!UICONTROL 允許關注]**
 
-   如果勾選，請為部落格文章加入下列功能，讓成員得 [到](notifications.md) 新貼文的通知。 預設為未勾選。
+   如果勾選，請為部落格文章加入下列功能，讓成員能夠收到新貼文的[通知。 ](notifications.md)預設為未勾選。
 
 * **[!UICONTROL 允許電子郵件訂閱]**
 
-   如果勾選，允許會員透過電子郵件（訂閱）收到新貼文[的通](subscriptions.md)知。 需要 `Allow Following` 檢查並設定電 [子郵件](email.md)。 預設為未勾選。
+   如果勾選，允許會員透過電子郵件收到新貼文的通知([subscription](subscriptions.md))。 需要檢查`Allow Following`並配置[電子郵件](email.md)。 預設為未勾選。
 
 * **[!UICONTROL 允許投票]**
 
@@ -155,15 +164,15 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 * **[!UICONTROL 顯示徽章]**
 
-   如果勾選，則使用成員的 [部落格項目](implementing-scoring.md) ，顯示已獲得和已指派的徽章。 預設為未勾選。
+   如果勾選，則顯示已獲得且已指派[badges](implementing-scoring.md)及成員的部落格項目。 預設為未勾選。
 
 * **[!UICONTROL 允許主要內容]**
 
-   如果勾選，此構想就可識別為特 [色內容](featured.md)。 預設為未勾選。
+   如果勾選，則可將構想識別為[特色內容](featured.md)。 預設為未勾選。
 
-#### 使用者協調標籤 {#user-moderation-tab}
+#### 使用者協調標籤{#user-moderation-tab}
 
-在「使用者 **[!UICONTROL 協調]** 」標籤下，指定協調設定：
+在&#x200B;**[!UICONTROL 使用者協調]**&#x200B;標籤下，指定協調設定：
 
 * **[!UICONTROL 拒絕貼文]**
 
@@ -191,25 +200,25 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 * **[!UICONTROL 標幟限制]**
 
-   輸入主題或留言在公開檢視中隱藏前必須加以標幟的次數。 如果設為-1，則標籤的主題或留言永遠不會隱藏在公開檢視中。 否則，此數字必須大於或等於「協調臨界值」。 預設值為5。
+   輸入主題或留言在公開檢視中隱藏前必須加以標幟的次數。 如果設為-1，則標籤的主題或留言絕不會從公開檢視中隱藏。 否則，此數字必須大於或等於「協調臨界值」。 預設值為5。
 
-#### 「標籤」欄位頁籤 {#tag-field-tab}
+#### 標籤欄位標籤{#tag-field-tab}
 
-在「標 **[!UICONTROL 簽欄位]** 」標籤下，指定如果「設定」標籤上勾選「允許標籤 **[!UICONTROL 」，可套用哪些標]** 簽 **** :
+在&#x200B;**[!UICONTROL Tag field]**&#x200B;標籤下，指定如果&#x200B;**[!UICONTROL Settings]**&#x200B;標籤上勾選了「允許標籤&#x200B;]**」，可套用哪些標籤：**[!UICONTROL 
 
 * **[!UICONTROL 允許的命名空間]**
 
-   如果已勾選 `Allow Tagging` 「設定」標籤下 **[!UICONTROL 的選項]** ，則相關。 可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
+   如果在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤下勾選`Allow Tagging`，則相關。 可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
 
 * **[!UICONTROL 建議限制]**
 
    輸入要作為建議顯示給發佈到論壇的成員的標籤數。 值-1表示無限制。 預設值為0。
 
-### 配置部落格側欄 {#configuring-blog-sidebar}
+### 配置部落格側欄{#configuring-blog-sidebar}
 
-按兩下元件時，將 `Blog Sidebar` 開啟編輯對話框。
+按兩下`Blog Sidebar`元件時，將開啟編輯對話框。
 
-在「日記 **[!UICONTROL 帳側欄設定]** 」標籤下，指定封存的日期格式以及要在側邊欄中顯示的項目類型：
+在&#x200B;**[!UICONTROL 日誌側欄設定]**&#x200B;頁籤下，指定歸檔的日期格式以及要在側欄中顯示的條目類型：
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -217,13 +226,13 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
    用於部落格條目存檔的顯示格式。 格式使用遵循Java約定的佔位符。
 
-   * yyyy: 全年，就像2015年一樣
-   * yy: 短年，比如15年。
-   * MMMMMM: 整月，就像6月
-   * 嗯： 短月，就像6月
-   * MM: 月數，例如06
+   * yyyy:全年，就像2015年一樣
+   * yy:短年，比如15年。
+   * MMMMMM:整月，就像6月
+   * 嗯：短月，就像6月
+   * MM:月數，例如06
 
-   預設值為&quot;yyyy MMMMM&quot;，會顯示例如&quot;2015 June&quot;
+   預設值為&quot;yyyy MMMMM&quot;，會顯示例如&quot;2015年6月&quot;
 
 * **[!UICONTROL 視圖類型]**
 
@@ -235,7 +244,7 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 * **[!UICONTROL 日誌元件路徑]**
 
-   *（可選）* ，列出部落格文章的部落格資源位置。 如果保留為空白，將使用顯示在同一頁 `social/journal/components/hbs/journal` 上的resourceType元件。
+   *（可選）* 要列出部落格文章的部落格資源位置。如果保留為空白，將使用出現在同一頁上的resourceType `social/journal/components/hbs/journal`元件。
 
    * 例如， `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -243,7 +252,7 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
    要顯示的部落格文章數目。 值-1表示無限制。 預設值為-1。
 
-## 網站訪客體驗 {#site-visitor-experience}
+## 網站訪客體驗{#site-visitor-experience}
 
 在發佈環境中，部落格功能會以遞減順序顯示最近的部落格文章，接著是較舊的部落格文章。 部落格側邊欄可讓網站訪客套用篩選器，以限制所顯示的部落格文章選擇。
 
@@ -253,7 +262,7 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 其他功能取決於網站訪客是協調者、管理員、社群成員、特權成員還是匿名。
 
-### 使用文章 {#working-with-articles}
+### 使用文章{#working-with-articles}
 
 建立新的部落格文章時，您可以選擇
 
@@ -263,15 +272,15 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 部落格文章會出現在適當的標籤（「已發佈」、「草稿」或「已排程」）下方，供能夠在發佈時撰寫的成員使用。
 
-#### 協調者與管理員 {#moderators-and-administrators}
+#### 協調者和管理員{#moderators-and-administrators}
 
-當登入的使用者具有協調者或管理員權限時，他們可以對張貼至部落格的所有部落格文章和留言執行 [協調任務](moderate-ugc.md) （依照元件組態的許可）。
+當登入的使用者具有協調者或管理員權限時，他們可以在所有張貼至部落格的部落格文章和留言上執行[協調工作](moderate-ugc.md)（依照元件組態的許可）。
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
 ### 成員 {#members}
 
-當登入使用者是社群成員或特權 [成員](users.md#privileged-members-group) （視設定而定）時，他們可以選 `New Article` 擇建立並張貼新的部落格文章。
+當登入的使用者是社群成員或[特權成員](users.md#privileged-members-group)（視設定而定）時，他們可以選取`New Article`來建立並張貼新的部落格文章。
 
 具體而言，他們可能：
 
@@ -292,10 +301,10 @@ AEM Communities的部落格功能已從編寫活動轉變為真正的社群活�
 
 ## 其他資訊 {#additional-information}
 
-如需詳細資訊，請參閱開發人員的 [Blog Essentials](blog-developer-basics.md) （部落格基本功能）頁面。
+如需詳細資訊，請參閱開發人員的[Blog Essentials](blog-developer-basics.md)頁面。
 
-如需部落格項目和留言的協調，請參閱 [協調使用者產生的內容](moderate-ugc.md)。
+如需部落格項目和留言的協調，請參閱[協調使用者產生的內容](moderate-ugc.md)。
 
-如需標籤部落格項目和注釋，請參 [閱標籤使用者產生的內容](tag-ugc.md)。
+有關標籤部落格條目和注釋的資訊，請參閱[標籤用戶生成的內容](tag-ugc.md)。
 
-有關部落格條目和注釋的翻譯，請參 [閱翻譯用戶生成的內容](translate-ugc.md)。
+有關部落格條目和注釋的翻譯，請參見[ Transling User Generated Content](translate-ugc.md)。
