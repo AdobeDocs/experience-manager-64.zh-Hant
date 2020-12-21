@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 設定啟用功能 {#configuring-enablement-features}
+# 設定啟用功能{#configuring-enablement-features}
 
 ## 概覽 {#overview}
 
-啟用功能提供建立啟用社群 [的能力](overview.md#enablement-community)。
+啟用功能提供建立[啟用社群](overview.md#enablement-community)的能力。
 
 * 此功能需要額外的授權才能用於生產環境。
 
@@ -30,24 +30,29 @@ ht-degree: 0%
 
 安裝：
 
-* **SCORM**&#x200B;可分享內容物件參考模型(SCORM)是數位學習的標準與規格集合。 SCORM也定義如何將內容封裝在可轉讓的ZIP檔案中。
+* **SCORMS**
+可分享內容物件參考模型(SCORM)是數位學習的標準與規格集合。SCORM也定義如何將內容封裝在可轉讓的ZIP檔案中。
 
-* **MySQL** MySQL是關係型資料庫，主要用於SCORM追蹤和報告資料以用於啟用，以及用於追蹤視訊進度的表格。 用於啟用功能包的SCORM需要MySQL JDBC驅動程式。
+* **MySQLMySQL是關**
+系型資料庫，主要用於SCORM追蹤和報告資料以用於「啟用」，以及用於追蹤視訊進度的表格。用於啟用功能包的SCORM需要MySQL JDBC驅動程式。
 
-* **FFmpeg** FFmpeg是轉換和串流音訊和視訊的解決方案，安裝時會用來正確轉碼視訊 [資產](../../help/sites-authoring/default-components-foundation.md#video)。 對於啟用社群，它會用於作者環境，以取得已上傳資源的中繼資料，並產生縮圖以在列出資源時顯示。
+* **FFmpegFFmpeg是**
+轉換和串流音訊和視訊的解決方案，安裝時會用來正確轉碼視訊 [資產](../../help/sites-authoring/default-components-foundation.md#video)。對於啟用社群，它會用於作者環境，以取得已上傳資源的中繼資料，並產生縮圖以在列出資源時顯示。
 
 設定：
 
-* **社群經理**&#x200B;對於啟用社群，僅限 
+* **社群管**
+理員對於啟用社群，僅限 
 `Community Enablement Managers` 用戶組可被指派角色，其權限可 `*Community Site* Enablement Manager`能包括內容建立、分配和發佈環境中的成員管理。
 
 可選配置：
 
-* **Adobe Analytics**&#x200B;與Adobe Analytics整合可新增完整的報表功能，並支援Analytics的視訊心率新增功能。
+* **Adobe**
+Analytics與Adobe Analytics整合可新增完整的報表功能，並支援Analytics的視訊心率新增功能。
 
 * **Dispatcher**
 
-## 配置步驟 {#configuration-steps}
+## 配置步驟{#configuration-steps}
 
 以下是啟用社群的必要步驟。
 
@@ -55,17 +60,20 @@ ht-degree: 0%
 
 **在所有作者／發佈例項上：**
 
-1. **[為MySQL安裝JDBC驅動程式](deploy-communities.md#jdbc-driver-for-mysql)**使用Web控制台（捆綁包）: 
-安裝*http://localhost:4502/system/console/bundles*安&#x200B;*裝*SCORM套件前安裝（英文）
+1. **[為](deploy-communities.md#jdbc-driver-for-mysql)**
+MySQLUse Web Console(bundles)安裝JDBC驅動程式：安裝 *http://localhost:4502/system/console/*
+bundles安 ** 裝SCORM套件之前
 
-1. **[安裝SCORM包](deploy-communities.md#scorm-package)**使用包管理器：
+1. **[安裝SCORM套](deploy-communities.md#scorm-package)**
+件使用套件管理員： 
 *http://localhost:4502/crx/packmgr/*
 
 **在任何伺服器上：**
 
 1. **[安裝MySQL、MySQL Workbench](mysql.md)**
 
-1. **[安裝MySQL資料庫](mysql.md#database-setup)**從作者實例下載的執行SQL指令碼
+1. **[安裝MySQL數](mysql.md#database-setup)**
+據庫執行從作者實例下載的SQL指令碼
 \
    使用MySQL工作台
 
@@ -75,26 +83,33 @@ ht-degree: 0%
 
 **在所有作者／發佈例項上：**
 
-1. **[配置JDBC連接池](mysql.md#configure-jdbc-connections)**使用Web控制台(configMgr):
+1. **[配置JDBC連接](mysql.md#configure-jdbc-connections)**
+池使用Web控制台(configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[配置SCORM引擎服務](mysql.md#aem-communities-scormengine-service)**使用Web控制台(configMgr):
+1. **[配置SCORM引擎服](mysql.md#aem-communities-scormengine-service)**
+務使用Web控制台(configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[配置CSRF過濾器](mysql.md#adobe-granite-csrf-filter)**使用Web控制台(configMgr):
+1. **[配置CSRF篩](mysql.md#adobe-granite-csrf-filter)**
+選器使用Web控制台(configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
 **在作者實例上：**
 
-1. (可&#x200B;*選*) **[設定Analytics服務](analytics.md)**使用工具、部署、雲端服務主控台：
+1. （*可選*）**[設定Analytics服務](analytics.md)**
+使用工具、部署、雲端服務主控台： 
 *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[配置Fmpeg](ffmpeg.md#configure-ffmpeg-transcoding-service)**使用工作流／模型控制台
+1. **[配置](ffmpeg.md#configure-ffmpeg-transcoding-service)**
+Fmpeg使用工作流／型號控制台
 
-1. **[啟用Tunnel Service](deploy-communities.md#tunnel-service-on-author)**使用Web控制台(configMgr):
+1. **[啟用通道](deploy-communities.md#tunnel-service-on-author)**
+服務使用Web控制台(configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[建立社區管理員](users.md#creating-community-members)**：對於作者環境，請使用傳統UI安全控制台：*http://localhost:4502/useradmin*建立路徑= /home/users/community的使用者
+1. **[建立社區管](users.md#creating-community-members)** 理員對於作者環境，請使用傳統UI安全控制台： *http://localhost:4502/*
+useradmincreate用戶，路徑= /home/users/community
 
    * 將成員添加到以下組：
 
@@ -103,4 +118,4 @@ ht-degree: 0%
 
 ## Dispatcher {#dispatcher}
 
-當部署包含 [AEM的Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)，為了讓啟用功能正常運作，需要修 `clientheader`改 `filter`區段。 請參 [閱配置Dispatcher for Communities](dispatcher.md#enablement)。
+當部署包含[AEM的Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)時，為了讓啟用功能正常運作，`clientheader`和`filter`區段需要修改。 請參閱[配置Dispatcher for Communities](dispatcher.md#enablement)。
