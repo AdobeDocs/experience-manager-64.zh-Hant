@@ -19,18 +19,18 @@ ht-degree: 0%
 ---
 
 
-# 社群工具 {#communities-tools}
+# 社群工具{#communities-tools}
 
 在作者中，若要存取Communities工具主控台：
 
-* 從全域導覽： **[!UICONTROL 工具>社群]**
+* 從全域導覽：**[!UICONTROL 工具>社群]**
 
-![chlimage_1-127](assets/chlimage_1-129.png)
+![chlimage_1-129](assets/chlimage_1-129.png)
 
 * [站點模板](sites.md) -用於建立和管理站點模板的控制台
 * [群組範本](tools-groups.md)-用於建立和管理群組範本的主控台
 * [社群功能](functions.md)-用於建立和管理社群功能的主控台
-* [儲存配置](srp-config.md) -用於配置和選擇預設SRP的 [控制台](working-with-srp.md)
+* [儲存配置](srp-config.md) -控制台，用於配置和選擇預設 [SRP](working-with-srp.md)
 
 * [元件指南](components-guide.md) -開啟一個互動式站點，允許對SCF元件的工作方式以及如何配置或定制它們進行實驗。
 * [標章](badges.md) -可從中新增自訂標章以用於計分和標章規 [則的主控台](implementing-scoring.md)
