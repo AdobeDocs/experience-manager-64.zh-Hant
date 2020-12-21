@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 從作業管理器資料庫中清除記錄 {#purge-records-from-the-job-manager-database}
+# 從作業管理器資料庫{#purge-records-from-the-job-manager-database}中清除記錄
 
 在呼叫長期處理時產生的處理資料可能會過大，導致AEM表單效能降低，並使用不必要的磁碟空間。 在不再需要記錄時清除流程資料是很好的做法。
 
-您可以使用管理控制台執行一次性清除過時記錄，或計畫定期自動清除。 清除過時記錄的其他方法在清除流程 [資料中討論](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)。
+您可以使用管理控制台執行一次性清除過時記錄，或計畫定期自動清除。 [清除流程資料](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)中討論了清除過時記錄的其他方法。
 
 **訪問「作業清除調度程式」頁**
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 **配置自動清除計畫**
 
 1. 選擇循環間隔，並指定兩次清除間隔的天數或周數。
-1. 在「清除已完成的記錄篩選器」區域中，指定記錄在其後被視為過時並準備清除的天數或周數。 不能將值設定為 `0`。
+1. 在「清除已完成的記錄篩選器」區域中，指定記錄在其後被視為過時並準備清除的天數或周數。 不能將值設定為`0`。
 
    >[!NOTE]
    >
