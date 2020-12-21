@@ -16,13 +16,13 @@ ht-degree: 0%
 ---
 
 
-# 建立您的第一個最適化表單 {#do-not-publish-create-your-first-adaptive-form}
+# 建立您的第一個最適化表單{#do-not-publish-create-your-first-adaptive-form}
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
 ## 簡介 {#introduction}
 
-您是否在尋找可簡化註冊、提 **高參與度** ，並縮短週轉時間的行動表單體驗，最適 **合您的表單** 。 最適化表單提供行動、自動化和分析友好的表單體驗。 您可以輕鬆建立具有回應性和互動性的表單，使用自動化流程來減少管理和重複性工作，並使用資料分析來改善和個人化客戶對表單的使用體驗。
+您是否在尋找可簡化註冊、增加參與度並縮短往返時間的行動裝置適用的&#x200B;**表單體驗**,**最適化表單**&#x200B;最適合您。 最適化表單提供行動、自動化和分析友好的表單體驗。 您可以輕鬆建立具有回應性和互動性的表單，使用自動化流程來減少管理和重複性工作，並使用資料分析來改善和個人化客戶對表單的使用體驗。
 
 本教學課程提供端對端架構，以建立最適化表單。 本教學課程分為使用案例和多本指南。 每個指南都可協助您學習並新增功能至本教學課程中建立的最適化表單。 每個指南之後都有一個工作適應性表單。 有提供建立最適化表單的指南。 後續的指南即將推出。 在本教學課程結束時，您將能夠：
 
@@ -39,21 +39,21 @@ ht-degree: 0%
 
 網站會在Adobe Experience Manager(AEM)上執行，並使用AEM Forms擷取和處理資料。 地址添加和更新表單是自適應表單。 該網站將客戶詳細資料儲存在資料庫中。 他們使用地址添加和更新表單來檢索和顯示可用地址。 他們還使用自適應表單來接受更新和新地址。
 
-### 先決條件 {#prerequisite}
+### 先決條件{#prerequisite}
 
 * 設定AEM作者例項。
-* 在作 [者例項上安裝](/help/forms/using/installing-configuring-aem-forms-osgi.md) AEM Forms附加元件。
-* 從資料庫提供程式獲取JDBC資料庫驅動程式（JAR檔案）。 教程中的示例基於MySQL資料庫，並使用Oracle的 [MySQL JDBC資料庫驅動程式](https://dev.mysql.com/downloads/connector/j/5.1.html)。
+* 在作者例項上安裝[AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
+* 從資料庫提供程式獲取JDBC資料庫驅動程式（JAR檔案）。 教程中的示例基於MySQL資料庫，並使用Oracle的[MySQL JDBC資料庫驅動程式](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
 * 設定包含客戶資料的資料庫，其中欄位如下。 建立最適化表單並非必要資料庫。 本教學課程使用資料庫來顯示AEM Forms的表單資料模型和永續性功能。
 
 ![自適應格式資料](assets/adaptiveformdata.png)
 
-## 步驟1: 建立最適化表單 {#step-create-an-adaptive-form}
+## 步驟1:建立最適化表單{#step-create-an-adaptive-form}
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
-最適化表單是新一代、吸引人、回應速度快、動態性強、自適應性強的表單。 使用可調式表單，您可以提供個人化、針對性的體驗。 AEM Forms提供拖放WYSIWYG編輯器，以建立最適化表單。 如需最適化表單的詳細資訊，請參 [閱製作最適化表單簡介](/help/forms/using/introduction-forms-authoring.md)。
+最適化表單是新一代、吸引人、回應速度快、動態性強、自適應性強的表單。 使用可調式表單，您可以提供個人化、針對性的體驗。 AEM Forms提供拖放WYSIWYG編輯器，以建立最適化表單。 有關最適化表單的詳細資訊，請參閱[製作最適化表單的簡介](/help/forms/using/introduction-forms-authoring.md)。
 
 目標：
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
-## Step 2: Create Form Data Model {#step-create-form-data-model}
+## 步驟2:建立表單資料模型{#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
-## 步驟3: 將規則套用至最適化表單欄位 {#step-apply-rules-to-adaptive-form-fields}
+## 步驟3:將規則套用至最適化表單欄位{#step-apply-rules-to-adaptive-form-fields}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -91,11 +91,11 @@ ht-degree: 0%
 * 建立規則並套用至最適化表單欄位
 * 使用規則觸發表單資料模型服務，將資料更新至資料庫
 
-## 步驟4: 設定最適化表單的樣式 {#step-style-your-adaptive-form}
+## 步驟4:設定最適化表單的樣式{#step-style-your-adaptive-form}
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
-最適化表單提供主題 [和編輯器](/help/forms/using/themes.md) ，以建立最適化表單的主題。 主題包含元件和面板的樣式詳細資訊，您可以在不同的表單中重複使用主題。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。 當您將主題套用至表格時，指定的樣式會反映在表格的對應元件上。 最適化表單也支援表單特定樣式的內嵌樣式。
+最適化表單提供主題和[編輯器](/help/forms/using/themes.md)，以建立最適化表單的主題。 主題包含元件和面板的樣式詳細資訊，您可以在不同的表單中重複使用主題。 樣式包括背景顏色、狀態顏色、透明度、對齊方式和大小等屬性。 當您將主題套用至表格時，指定的樣式會反映在表格的對應元件上。 最適化表單也支援表單特定樣式的內嵌樣式。
 
 目標：
 
@@ -105,7 +105,7 @@ ht-degree: 0%
 
    [ ![see-the-guide-sm](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## 步驟5: 測試您的最適化表單 {#step-test-your-adaptive-form}
+## 步驟5:測試您的最適化表單{#step-test-your-adaptive-form}
 
 ![11-test-your-adaptive-form](assets/11-test-your-adaptive-form.png)
 
@@ -116,13 +116,13 @@ ht-degree: 0%
 * 安裝Calvin SDK
 * 建立變更地址表單的測試套件和測試案例
 
-若要瞭解SDK，請參閱「 [使用自動測試搭配AEM Adaptive表單](/help/forms/using/calvin.md)」。
+若要瞭解SDK，請參閱[使用自動測試搭配AEM Adaptive Form](/help/forms/using/calvin.md)。
 
-## 步驟6: 發佈最適化表單 {#step-publish-your-adaptive-form}
+## 步驟6:發佈最適化表單{#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-您可以將最適化表單發佈為獨立表單（單頁應用程式）、包含在AEM網 [站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)，或使用 [Forms Portal在AEM網站上的清單](/help/forms/using/introduction-publishing-forms.md)。
+您可以將最適化表單發佈為單機表單（單頁應用程式）、包含在AEM [網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[Forms Portal](/help/forms/using/introduction-publishing-forms.md)在AEM網站上清單。
 
 目標：
 
