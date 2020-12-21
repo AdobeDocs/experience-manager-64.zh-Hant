@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# 運行管理控制台時的注意事項 {#considerations-when-running-administrationconsole}
+# 運行管理控制台{#considerations-when-running-administrationconsole}時的注意事項
 
 以下是運行管理控制台時要考慮的事項：
 
-* 如果您使用URL存取管理控制台， `https://*[hostname]*:*[port]*/adminui`則指定的主機名稱不能包含底線字元。 否則，指向管理控制台某些區域的連結可能無法正常運作。
+* 如果您使用URL `https://*[hostname]*:*[port]*/adminui`存取管理控制台，則指定的主機名稱不能包含底線字元。 否則，指向管理控制台某些區域的連結可能無法正常運作。
 * 如果您在日文作業系統的Windows檔案總管中執行管理主控台，可能會遇到下列問題：
 
    * 按一下連結會返回登入頁面，而非預期的連結。
