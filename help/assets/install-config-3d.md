@@ -174,13 +174,13 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
    在logo-sphere.fbx頁面的右上角，按一下「舞台精選」圖示以展開下拉式功能表，然後選取`stage-spotlights.fbx`。
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. 從&#x200B;**[!UICONTROL 舞台精選]**&#x200B;下拉式清單中，選取`stage-helipad.fbx`。
 
    使用滑鼠左鍵調整視圖。 背景和模型光源會改變以反映新舞台選取。
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
 ## 設定對Adobe Dimension資產{#configuring-support-for-adobe-dimension-assets}的支援
 
