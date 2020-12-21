@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 應用程式伺服器網站 {#application-server-websites}
+# 應用程式伺服器網站{#application-server-websites}
 
 此清單包含所有支援應用程式伺服器的製造商網站連結。
 
