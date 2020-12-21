@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 元件側載 {#component-sideloading}
+# 元件側載{#component-sideloading}
 
 ## 概覽 {#overview}
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 1. [將元件新增至DOM](#dynamically-add-component-to-dom)
 
-1. [使用下列兩種方法](#sideload-by-invoking-scf) 之一側載元件：
+1. [使用下列](#sideload-by-invoking-scf) 兩種方法之一側載元件：
 
 * [動態包含](#dynamic-inclusion)
    * 引導所有動態添加的元件
@@ -43,9 +43,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->不支援 [側載非現有資](scf.md#add-or-include-a-communities-component) 源。
+>不支援側載[非現有資源](scf.md#add-or-include-a-communities-component)。
 
-## 動態新增元件至DOM {#dynamically-add-component-to-dom}
+## 動態將元件添加到DOM {#dynamically-add-component-to-dom}
 
 不論元件是動態包含或動態載入，都必須先將其新增至DOM。
 
@@ -53,9 +53,11 @@ ht-degree: 0%
 
 無論使用什麼標籤，元素至少必須包含以下兩個屬性，以符合正常的SCF根元素模式：
 
-* **data-component-id**&#x200B;新增元件的有效路徑
+* **data-component-**
+id已新增元件的有效路徑
 
-* **data-scf-component**&#x200B;元件的resourceType
+* **data-scf-**
+component元件的resourceType
 
 以下是新增注釋元件的範例：
 
@@ -68,9 +70,9 @@ ht-degree: 0%
 </div>
 ```
 
-## 調用SCF進行側載 {#sideload-by-invoking-scf}
+## 通過調用SCF {#sideload-by-invoking-scf}來側載
 
-### 動態包含 {#dynamic-inclusion}
+### 動態包含{#dynamic-inclusion}
 
 動態包含使用引導請求，導致SCF檢查DOM並引導頁面上找到的所有SCF元件。
 
@@ -78,7 +80,7 @@ ht-degree: 0%
 
 $(document)。trigger(SCF.events.BOOTSTRAP_REQUEST);
 
-### 動態載入 {#dynamic-loading}
+### 動態載入{#dynamic-loading}
 
 動態載入提供對載入SCF元件的控制。
 
@@ -86,4 +88,4 @@ $(document)。trigger(SCF.events.BOOTSTRAP_REQUEST);
 
 SCF.addComponent(document.getElementById(*someId*));
 
-其 *中* someId是 **data-component-id屬性的值** 。
+其中&#x200B;*someId*&#x200B;是&#x200B;**data-component-id**&#x200B;屬性的值。
