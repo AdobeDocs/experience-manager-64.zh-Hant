@@ -477,7 +477,7 @@ Dynamic Media整合使用下列指令碼：
    opac=50
    ```
 
-   ![chlimage_1-505](assets/chlimage_1-503.png)
+   ![chlimage_1-503](assets/chlimage_1-503.png)
 
 ## 編輯影像預設集{#modifying-image-presets}
 
@@ -504,7 +504,7 @@ Dynamic Media整合使用下列指令碼：
 1. 從影像預設集清單中選取影像預設集或多個影像預設集，然後點選「發佈」****。
 1. 影像預設集發佈後，狀態會從未發佈變更為已發佈。
 
-   ![chlimage_1-505](assets/chlimage_1-505.png)
+   ![chlimage_1-503](assets/chlimage_1-505.png)
 
 ## 刪除動態媒體影像預設集{#deleting-image-presets}
 
