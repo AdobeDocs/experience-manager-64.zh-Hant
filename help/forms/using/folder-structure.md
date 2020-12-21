@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 瞭解資料夾結構 {#understanding-the-folder-structure}
+# 瞭解資料夾結構{#understanding-the-folder-structure}
 
 AEM Forms工作區元件是使用Backbone，以MVC架構設計。 每個元件都有一個檔案：
 
@@ -26,17 +26,17 @@ AEM Forms工作區元件是使用Backbone，以MVC架構設計。 每個元件�
 * 範本，即包含介面控制項的HTML檔案。
 * 視圖，它充當模板的控制器類。
 
-所有元件的資產都放在下方所述的檔案夾結構中。 若要存取資產，請登入CRXDE Lite並瀏覽至 `/libs/ws/js/runtime/`。
+所有元件的資產都放在下方所述的檔案夾結構中。 若要存取資產，請登入CRXDE Lite並瀏覽至`/libs/ws/js/runtime/`。
 
-**型號** ：包含骨幹型號。
+**模** 型包含骨幹模型。
 
-**視圖** 「包含骨幹視圖」。
+**視** 圖包含骨幹視圖。
 
-**範本** ：僅包含元件的HTML範本。
+**范** 本僅包含元件的HTML範本。
 
-**路由** Contains universal routes. 路由內的範本資料夾包含HTML程式碼和元件參考。
+**路** 由包含通用路由。路由內的範本資料夾包含HTML程式碼和元件參考。
 
-**服務** ：包含在REST端點上呼叫Adobe Experience Manager伺服器API的服務介面。
+**服** 務包含在REST端點上呼叫Adobe Experience Manager伺服器API的服務介面。
 
-**util** Contains generic utilities usable by multiple components.
+**util** 包含可由多個元件使用的通用實用程式。
 
