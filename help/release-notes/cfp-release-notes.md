@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack的發行說明。
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
+source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
 workflow-type: tm+mt
-source-wordcount: '4156'
+source-wordcount: '4217'
 ht-degree: 1%
 
 ---
@@ -158,6 +158,9 @@ Adobe Experience Manager 6.4.8.2可修正下列問題。
 * 您可以暫停頁面的[!DNL Live Copy]，繼承會中斷，如編輯器模式所示。 但是，在「頁面」屬性中，表示繼承的表徵圖錯誤地表示繼承存在且未中斷(NPR-34096)。
 * 在「編輯」範本頁面中顯示允許的元件時發生問題(CQ-4297295)。
 * 升級Chrome和Firefox後，快顯功能表無法如預期般運作。 載入頁面屬性時，當面板中有資料時，它不會顯示面板(CQ-4292995)。
+* [!DNL Experience Manager Sites]元件中有多個跨網站指令碼執行個體(NPR-33926)。
+* 當向客戶端發送資訊時，用戶輸入不適當地編碼各種元件(NPR-33696)。
+* 以`childrenlist.html`結尾的URL會顯示HTML頁面，而非404回應。 此類URL容易受到跨網站指令碼的攻擊(NPR-33441)。
 
 #### 資產 {#assets-6482}
 
@@ -234,6 +237,8 @@ Adobe Experience Manager 6.4.8.2可修正下列問題。
 * **[!UICONTROL 提交到REST端點]**&#x200B;提交操作不適用於自適應表單(NPR-34513)。
 
 * 協助功能：當您嘗試提交最適化表單而未上傳強制欄位的附件時，焦點不會自動移至附件欄位(NPR-34511)。
+
+* 當向客戶端發送資訊時，用戶輸入未對[!DNL Forms]元件進行適當編碼(NPR-33611)。
 
 **工作流程**
 
