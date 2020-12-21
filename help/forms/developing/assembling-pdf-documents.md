@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# 組合PDF檔案 {#assembling-pdf-documents}
+# 組合PDF檔案{#assembling-pdf-documents}
 
 **關於Assembler Service**
 
@@ -29,5 +29,5 @@ Assembler服務可將多份PDF檔案組合為一份PDF檔案，或將一份PDF�
 
 >[!NOTE]
 >
->如需Assembler服務的詳細資訊，請參閱「AEM Forms的 [服務參考」](https://www.adobe.com/go/learn_aemforms_services_63)。
+>如需Assembler服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
