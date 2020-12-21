@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 工作區概觀 {#overview-of-workspace}
+# 工作區概述{#overview-of-workspace}
 
 工作區可讓使用者開始、參與及追蹤商業程式。
 
