@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms工作區中使用的API {#apis-used-in-aem-forms-workspace}
+# AEM Forms工作區{#apis-used-in-aem-forms-workspace}中使用的API
 
 AEM Forms工作區中會使用下列API。
 
@@ -123,7 +123,7 @@ AEM Forms工作區中會使用下列API。
    <td>getAttachment</td> 
    <td>ProcessManagementTaskService</td> 
    <td>getAttachment</td> 
-   <td>它會傳回附件可用處的附件URL。</td> 
+   <td>它會傳回附件可用的附件URL。</td> 
   </tr>
   <tr>
    <td>getAllAttachments</td> 
@@ -237,7 +237,7 @@ AEM Forms工作區中會使用下列API。
    <td>getAllQueues<br /> </td> 
    <td>ProcessManagementQueueService<br /> </td> 
    <td>getAllQueues<br /> </td> 
-   <td>它可獲得登錄用戶可訪問的所有隊列（擁有、共用和組隊列）。<br /> </td> 
+   <td>它獲取登錄用戶可以訪問的所有隊列（擁有、共用和組隊列）。<br /> </td> 
   </tr>
   <tr>
    <td>getOutOfficeSettings</td> 
