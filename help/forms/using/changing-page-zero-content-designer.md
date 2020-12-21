@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# 在設計人員中變更頁面零內容 {#changing-page-zero-content-in-designer}
+# 在Designer {#changing-page-zero-content-in-designer}中更改頁面零內容
 
 當非Adobe PDF檢視器（例如Chrome或Firefox中的預設PDF檢視器）無法讀取PDF/XFA表單的內容時，預設會顯示「零頁」內容。 預設「頁面零」訊息如下所示。
 
@@ -28,11 +28,11 @@ AEM Forms Feature Pack 1版的Designer可讓您變更顯示在Page Zero上的訊
 
 1. 開啟您要變更「零頁」內容的表單。
 
-1. 按一 **下「檔案>表單屬性」**。
+1. 按一下「**檔案>表單屬性**」。
 
-1. 在「表單屬性」對話方塊中，按 ![一下加號](assets/plus.png) （加號圖示）以新增自訂屬性。
+1. 在「表單屬性」對話方塊中，按一下![plus](assets/plus.png)（加號圖示）以新增自訂屬性。
 
-1. 指定 **_pagezerocontent** （屬性名稱）。
+1. 指定&#x200B;**_pagezerocontent**&#x200B;作為屬性的名稱。
 1. 以Rich Text格式新增「零頁」訊息為值。 例如：
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </span>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </span></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </span>https://www.adobe.com/go/acrreader.</p></body>`
