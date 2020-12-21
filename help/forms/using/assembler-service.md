@@ -17,21 +17,22 @@ ht-degree: 0%
 ---
 
 
-# 使用Assembler Service {#using-assembler-service}
+# 使用匯編器服務{#using-assembler-service}
 
-Assembler服務可讓您合併、重新排列和增強PDF和XDP檔案，並取得PDF檔案的相關資訊。 提交到Assembler服務的每個作業都包括文檔描述XML(DDX)文檔、源文檔和外部資源（字串和圖形）。 有關匯編器服務的詳細資訊，請參 [閱匯編器服務概述](/help/forms/using/overview-aem-document-services.md#p-assembler-service-p)。
+Assembler服務可讓您合併、重新排列和增強PDF和XDP檔案，並取得PDF檔案的相關資訊。 提交到Assembler服務的每個作業都包括文檔描述XML(DDX)文檔、源文檔和外部資源（字串和圖形）。 有關匯編器服務的詳細資訊，請參見[Overview of Assembler Service](/help/forms/using/overview-aem-document-services.md#p-assembler-service-p)。
 
 您可以對以下操作使用裝配服務：
 
-## 匯整PDF檔案 {#assemble-pdf-documents}
+## 組合PDF檔案{#assemble-pdf-documents}
 
-您可以使用Assembler服務，將兩份或多份PDF檔案組合為單一PDF檔案或PDF資料夾。 您也可以將有助於導覽或增強安全性的功能套用至PDF檔案。 以下是您組合PDF檔案的一些方式：
+您可以使用Assembler服務將兩份或多份PDF檔案組合為單一PDF檔案或PDF資料夾。 您也可以將有助於導覽或增強安全性的功能套用至PDF檔案。 以下是您組合PDF檔案的一些方式：
 
-### 匯整簡單的PDF檔案 {#assemble-a-simple-pdf-document}
+### 組合簡單的PDF檔案{#assemble-a-simple-pdf-document}
 
 下圖顯示三個源文檔要合併到單個合成文檔中。
 
-![從多個PDF檔案組合簡單的PDF檔案圖](assets/as_document_assembly.png)**表：** *從多份PDF檔案組合簡單的PDF檔案*
+![從多份PDF檔案組合簡單的PDF文](assets/as_document_assembly.png)
+**件圖：從** *多份PDF檔案組合簡單的PDF檔案*
 
 以下示例是用於組合文檔的簡單DDX文檔。 它指定用於生成合成文檔的源文檔的名稱以及合成文檔的名稱：
 
@@ -51,7 +52,7 @@ Assembler服務可讓您合併、重新排列和增強PDF和XDP檔案，並取�
 * 基本文檔(Doc1)中採用的其他特性，包括元資料、頁標籤和頁面大小
 * 可選地，合成文檔包括從源文檔中的書籤構造的目錄
 
-### 建立PDF資料夾 {#create-a-pdf-portfolio}
+### 建立PDF資料夾{#create-a-pdf-portfolio}
 
 Assembler服務可以建立包含檔案集合和獨立使用者介面的PDF資料夾。 此介面稱為「PDF資料夾版面」或「PDF資料夾導覽器」（導覽器）。 PDF資料夾新增導覽器、檔案夾和歡迎頁面，以擴充PDF套件的功能。 此介面可運用本地化的文字字串、自訂的色彩配置和圖形資源來增強使用者體驗。 PDF資料夾也可以包含資料夾，用於組織資料夾中的檔案。
 
@@ -72,23 +73,24 @@ Assembler服務可以建立包含檔案集合和獨立使用者介面的PDF資�
 </DDX>
 ```
 
-### 組合加密的檔案 {#assemble-encrypted-documents}
+### 組合加密檔案{#assemble-encrypted-documents}
 
 當您組合檔案時，也可以使用密碼來加密PDF檔案。 使用密碼加密PDF檔案後，使用者必須指定密碼才能在Adobe Reader或Acrobat中檢視PDF檔案。 要使用密碼加密PDF文檔，DDX文檔必須包含加密PDF文檔所需的加密元素值。
 
-Encryption服務不必是LiveCycle安裝的一部分，就能使用密碼來加密PDF檔案。
+Encryption服務不必是LiveCycle安裝的一部分，就能使用密碼加密PDF檔案。
 
 如果一個或多個輸入文檔被加密，請提供密碼以作為DDX的一部分開啟該文檔。
 
-### 使用Bates編號來組合檔案 {#assemble-documents-using-bates-numbering}
+### 使用Bates編號{#assemble-documents-using-bates-numbering}來組合檔案
 
 在組合文檔時，可以使用Bates編號將唯一的頁面標識符應用於每個頁面。 當您使用Bates編號時，檔案（或檔案集）中的每個頁面都會指派一個唯一識別頁面的編號。 例如，包含物料清單資訊並與元件生產關聯的製造文檔可以包含標識符。 Bates數字包含循序遞增的數值，以及選用的首碼和字尾。 前置詞+數值+尾碼稱為bates模式。
 
 下圖顯示PDF檔案，其中包含位於檔案標題中的唯一識別碼。
 
-![PDF檔案包含位於檔案標題圖中的唯一識別](do-not-localize/as_batesnumber.png)**碼：** *PDF檔案包含位於檔案標題中的唯一識別碼*
+![PDF檔案包含位於檔案頁首的唯一識別碼](do-not-localize/as_batesnumber.png)
+**圖：** *包含位於檔案頁首之唯一識別碼的PDF檔案*
 
-### 平面化及組合檔案 {#flatten-and-assemble-documents}
+### 平面化及組合檔案{#flatten-and-assemble-documents}
 
 您可以使用Assembler服務將互動式PDF檔案（例如表單）轉換為非互動式PDF檔案。 互動式PDF檔案可讓使用者輸入或修改PDF檔案欄位中的資料。 將互動式PDF檔案轉換為非互動式PDF檔案的程式稱為平面化。 平面化PDF檔案時，表單欄位會保留其圖形外觀，但不再具互動性。 平面化PDF檔案的一個原因是為了確保資料無法修改。 此外，與欄位相關聯的指令碼不再起作用。
 
@@ -98,17 +100,18 @@ Encryption服務不必是LiveCycle安裝的一部分，就能使用密碼來加�
 >
 >Assembler服務使用Output服務來平面化動態XFA表單。 如果Assembler服務處理要求其平面化XFA動態表單的DDX，且Output服務不可用，則會拋出異常。 Assembler服務可平面化Acrobat表格或靜態XFA表格，而不需使用Output服務。
 
-## 匯整XDP檔案 {#assemble-xdp-documents}
+## 組合XDP文檔{#assemble-xdp-documents}
 
 您可以使用Assembler服務將多個XDP檔案組合為單一XDP檔案或PDF檔案。 對於包含插入點的源XDP檔案，可以指定要插入的片段。
 
 以下是組合XDP檔案的一些方式：
 
-### 組合簡單的XDP檔案 {#assemble-a-simple-xdp-document}
+### 組合簡單的XDP文檔{#assemble-a-simple-xdp-document}
 
 下圖顯示了將三個源XDP文檔組裝成單一合成的XDP文檔。 生成的XDP文檔包含三個源XDP文檔，包括其關聯資料。 生成的文檔從作為第一源XDP文檔的基本文檔獲得基本屬性。
 
-![從多個XDP檔案組合簡單的XDP檔案圖](assets/as_assembler_xdpassembly.png)**表：** *從多個XDP檔案組合簡單的XDP檔案*
+![從多份XDP檔案組合簡單的XDP文](assets/as_assembler_xdpassembly.png)
+**件圖：從** *多份XDP檔案組合簡單的XDP檔案*
 
 以下是產生上述結果的DDX檔案。
 
@@ -122,9 +125,9 @@ Encryption服務不必是LiveCycle安裝的一部分，就能使用密碼來加�
 </DDX>
 ```
 
-### 在元件期間解析參照 {#resolving-references-during-assembly}
+### 在元件{#resolving-references-during-assembly}期間解析參照
 
-通常，XDP文檔可以包含通過絕對或相對參照引用的影像。 預設情況下，匯編器服務會保留合成的XDP文檔中對影像的引用。
+通常，XDP文檔可以包含通過絕對或相對參照引用的影像。 預設情況下，匯編器服務會保留合成XDP文檔中對影像的引用。
 
 可以指定Assembler服務在組裝時如何通過XDP檔案中的絕對或相對參照來處理源XDP文檔中引用的影像。 您可以選擇將所有影像嵌入到結果中，使其不包含相對或絕對參照。 您可以通過設定resolveAssets標籤的值來定義此標籤，該標籤可採用以下任何選項。 預設情況下，結果文檔中不解析任何參照。
 
@@ -144,18 +147,18 @@ Encryption服務不必是LiveCycle安裝的一部分，就能使用密碼來加�
   </tr> 
   <tr> 
    <td>相對值</td> 
-   <td>嵌入源XDP文檔中通過相對引用引用引用的所有影像<br /> 。</td> 
+   <td>嵌入源XDP<br />文檔中通過相對引用引用的所有影像。</td> 
   </tr> 
   <tr> 
    <td>絕對值</td> 
-   <td>嵌入源XDP文檔中通過絕對引用引用引用的所有影像<br /> 。</td> 
+   <td>嵌入源XDP<br />文檔中通過絕對引用引用引用的所有影像。</td> 
   </tr> 
  </tbody> 
 </table>
 
 您可以在XDP源標籤或父XDP結果標籤中指定resolveAssets屬性的值。 如果將屬性指定給XDP結果標籤，則屬性將由所有XDP源元素繼承，這些元素是XDP結果的子元素。 但是，顯式指定源元素的屬性將覆蓋該源文檔的結果元素的設定。
 
-#### 解析XDP文檔中的所有源引用 {#resolve-all-source-references-in-an-xdp-document}
+#### 解析XDP文檔{#resolve-all-source-references-in-an-xdp-document}中的所有源引用
 
 要解析源XDP文檔中的所有引用，請為\
 合成文檔到所有文檔，如下例所示：
@@ -183,7 +186,7 @@ Encryption服務不必是LiveCycle安裝的一部分，就能使用密碼來加�
 </DDX>
 ```
 
-#### 解析XDP文檔中選定的源引用 {#resolve-selected-source-references-in-an-xdp-document}
+#### 解析XDP文檔{#resolve-selected-source-references-in-an-xdp-document}中選定的源引用
 
 通過為源引用指定resolveAssets屬性，可以有選擇地指定要解析的源引用。 個別來源檔案的屬性會覆寫產生的XDP檔案設定。 在此範例中，也會解決包含的片段。
 
@@ -199,7 +202,7 @@ fragment="myFragment"/>
 </DDX>
 ```
 
-#### 選擇性解析絕對或相對參照 {#selectively-resolve-absolute-or-relative-references}
+#### 選擇性解析絕對或相對參照{#selectively-resolve-absolute-or-relative-references}
 
 您可以選擇性地解析所有或部分源文檔中的絕對或相對參照，如下例所示：
 
@@ -212,7 +215,7 @@ fragment="myFragment"/>
 </DDX
 ```
 
-### 動態將表單片段插入XFA表單 {#dynamically-insert-form-fragments-into-an-xfa-form}
+### 動態將表單片段插入XFA表單{#dynamically-insert-form-fragments-into-an-xfa-form}
 
 您可以使用Assembler服務建立從插入片段的另一個XFA表單建立的XFA表單。 使用此功能，您可以使用片段來建立多個表單。
 
@@ -222,7 +225,8 @@ fragment="myFragment"/>
 
 下圖顯示兩個XML表單（XFA範本）。 左側的表單包含一個名為myInsertionPoint的插入點。 右側的表格包含名為myFragment的片段。
 
-![將表單片段插入XFA表單](assets/as_assembler_fragment_assy_assembled.png)**圖：** *將表單片段插入XFA表單*
+![將表單片段插入XFA表](assets/as_assembler_fragment_assy_assembled.png)
+**單圖：** *將表單片段插入XFA表單*
 
 當Assembler服務解譯下列DDX文檔時，它將建立包含另一個XML表單的XML表單。 myFragmentSource文檔中的myFragment子表單將插入myFormSource文檔的myInsertionPoint。
 
@@ -252,15 +256,16 @@ source="myFragmentSource"/>
 </DDX>
 ```
 
-## 反匯編PDF檔案 {#disassemble-pdf-documents}
+## 拆解PDF檔案{#disassemble-pdf-documents}
 
 您可以使用Assembler服務來反匯編PDF文檔。 服務可以從源文檔中提取頁面或基於書籤劃分源文檔。 通常，如果PDF檔案最初是由許多個別檔案（例如陳述式集合）建立，則此工作很有用。
 
-### 從來源檔案擷取頁面 {#extract-pages-from-a-source-document}
+### 從源文檔{#extract-pages-from-a-source-document}中提取頁面
 
 在下圖中，頁面1-3是從來源檔案擷取，並放入新的合成檔案中。
 
-![從源文檔中提取特定頁](assets/as_intro_page_extraction.png)**圖：** *從源文檔中提取特定頁面*
+![從源文檔中提取特](assets/as_intro_page_extraction.png)
+**定頁圖：從** *源文檔中提取特定頁*
 
 以下示例是用於拆解文檔的DDX文檔。
 
@@ -270,11 +275,12 @@ source="myFragmentSource"/>
 </PDF>
 ```
 
-### 根據書籤劃分來源檔案 {#divide-a-source-document-based-on-bookmarks}
+### 根據書籤{#divide-a-source-document-based-on-bookmarks}劃分來源檔案
 
-在下圖中，DocA被分為多個生成的文檔。 頁面上的第1級書籤可識別新結果檔案的開頭。
+在下圖中，DocA被分成多個生成的文檔。 頁面上的第1級書籤可識別新結果檔案的開頭。
 
-![將以書籤為基礎的來源檔案分割為多份檔案](assets/as_intro_pdfsfrombookmarks.png)**圖：** *將以書籤為基礎的來源檔案分割為多個檔案*
+![將以書籤為基礎的來源檔案分割為多](assets/as_intro_pdfsfrombookmarks.png)
+**份檔案圖：** *將以書籤為基礎的來源檔案分割為多份檔案*
 
 以下範例是DDX檔案，它使用書籤來拆解來源檔案。
 
@@ -284,11 +290,11 @@ source="myFragmentSource"/>
 </PDFsFromBookmarks>
 ```
 
-## 判斷檔案是否與PDF/A相容 {#determine-whether-documents-are-pdf-a-compliant}
+## 確定檔案是否與PDF/A相容{#determine-whether-documents-are-pdf-a-compliant}
 
 您可以使用Assembler服務來判斷PDF檔案是否與PDF/A相容。 PDF/A是一種封存格式，用於長期保存檔案內容。 字型會內嵌在檔案中，檔案會解壓縮。 因此，PDF/A檔案通常比標準PDF檔案大。 此外，PDF/A檔案不包含音訊和視訊內容。
 
-## 取得PDF檔案的相關資訊 {#obtain-information-about-a-pdf-document}
+## 取得PDF檔案{#obtain-information-about-a-pdf-document}的相關資訊
 
 您可以使用Assembler服務獲得有關PDF文檔的以下資訊：
 
@@ -304,19 +310,19 @@ source="myFragmentSource"/>
 
 * 封裝檔案，包括檔案資訊、檔案夾、封裝、架構和欄位資料。 您可以從PDF檔案匯出此資料，並將它匯入PDF檔案。
 
-## 驗證DDX檔案 {#validate-ddx-documents}
+## 驗證DDX文檔{#validate-ddx-documents}
 
 您可以使用Assembler服務來確定DDX文檔是否有效。 例如，如果您從舊版LiveCycle升級，驗證會確保DDX檔案有效。
 
-## 呼叫其他服務 {#call-other-services}
+## 呼叫其他服務{#call-other-services}
 
 您可以使用DDX檔案，讓Assembler服務呼叫下列LiveCycle服務。 Assembler服務只能呼叫與LiveCycle一起安裝的服務。
 
-**Reader Extensions服務**: 讓Adobe Reader使用者數位簽署產生的PDF檔案。
+**Reader Extensions服務**:讓Adobe Reader使用者數位簽署產生的PDF檔案。
 
-**Forms服務**: 合併XDP檔案和XML資料檔案，以產生包含已填寫互動式表單的PDF檔案。
+**Forms服務**:合併XDP檔案和XML資料檔案，以產生包含已填寫互動式表單的PDF檔案。
 
-**輸出服務**: 將動態XML表單轉換為包含非互動表單（平面化表單）的PDF檔案。 Assembler服務可平面化靜態XML表單和Acrobat表單，而不需呼叫Output服務。
+**輸出服務**:將動態XML表單轉換為包含非互動表單（平面化表單）的PDF檔案。Assembler服務可平面化靜態XML表單和Acrobat表單，而不需呼叫Output服務。
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -331,4 +337,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-使用DDX和Assembler服務來呼叫其他LiveCycle服務，可簡化您的程式圖。 它甚至可以降低您自訂工作流程所花費的心力。 (另請參閱「以程 [式設計方式使用AEM檔案服務」](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html))
+使用DDX和Assembler服務來呼叫其他LiveCycle服務，可簡化您的程式圖。 它甚至可以降低您自訂工作流程所花費的心力。 （另請參閱[以程式設計方式使用AEM Document Services](https://helpx.adobe.com/experience-manager/6-4/forms/using/aem-document-services-programmatically.html)）
