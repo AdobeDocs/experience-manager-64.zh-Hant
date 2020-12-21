@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 修改PDF Export轉換設定 {#modifying-the-pdf-export-conversion-settings}
+# 修改「PDF匯出」轉換設定{#modifying-the-pdf-export-conversion-settings}
 
 使用以下過程修改導出PDF、EPS、DOC、TXT、RTF、XML或HTML檔案的轉換設定。 依預設，PDF檔案會使用Adobe Acrobat Professional或Acrobat Standard中設定的預設「另存新檔」設定。 例如，Acrobat中將PDF檔案轉換為EPS時的預設「另存新檔」設定，將只會使PDF檔案轉換為EPS時產生一頁。
 
