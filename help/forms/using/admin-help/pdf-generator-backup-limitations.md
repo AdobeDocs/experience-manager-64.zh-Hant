@@ -19,6 +19,6 @@ ht-degree: 0%
 ---
 
 
-# PDF Generator備份限制 {#pdf-generator-backup-limitations}
+# PDF Generator備份限制{#pdf-generator-backup-limitations}
 
 無法備份PDF產生器用於轉換檔案的暫存目錄。 即使服務會正確還原，但資料可能會遺失，因為PDF產生器會以設定的間隔審閱並清除暫存目錄的內容。
