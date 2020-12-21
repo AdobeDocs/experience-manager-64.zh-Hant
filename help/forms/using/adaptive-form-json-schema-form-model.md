@@ -16,7 +16,7 @@ ht-degree: 2%
 ---
 
 
-# 使用JSON結構描述建立最適化表單 {#creating-adaptive-forms-using-json-schema}
+# 使用JSON結構描述{#creating-adaptive-forms-using-json-schema}建立最適化表單
 
 ## 必備條件 {#prerequisites}
 
@@ -25,9 +25,9 @@ ht-degree: 2%
 * [建立最適化表單](/help/forms/using/creating-adaptive-form.md)
 * [JSON結構描述](https://json-schema.org/)
 
-## 使用JSON結構描述做為表單模型  {#using-a-json-schema-as-form-model}
+## 使用JSON結構描述做為表單模型{#using-a-json-schema-as-form-model}
 
-AEM Forms支援使用現有的JSON結構描述來建立最適化表單。 此JSON結構描述組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合 [v4規範](https://json-schema.org/draft-04/schema)。
+AEM Forms支援使用現有的JSON結構描述來建立最適化表單。 此JSON結構描述組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合[v4規格](https://json-schema.org/draft-04/schema)。
 
 使用JSON結構描述的主要功能包括：
 
@@ -49,7 +49,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
    <td><p>具有enum和enumNames約束的字串屬性。</p> <p>語法、</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
    <td><p>下拉式元件：</p> 
     <ul> 
-     <li>enumNames中列出的值會顯示在下拉方塊中。</li> 
+     <li>enumNames中列出的值將顯示在下拉框中。</li> 
      <li>枚舉中列出的值用於計算。</li> 
     </ul> </td> 
   </tr> 
@@ -62,23 +62,23 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
     </ul> </td> 
   </tr> 
   <tr> 
-   <td><p>{</p> <p>「類型」: "字串",</p> <p>}</p> </td> 
+   <td><p>{</p> <p>「類型」:"字串",</p> <p>}</p> </td> 
    <td><br /> <br /> 文字欄位<br /> <br /> <br /> </td> 
   </tr> 
   <tr> 
-   <td>數字屬性<br /> </td> 
-   <td>子類型設為float的數值欄位<br /> </td> 
+   <td>number property <br /> </td> 
+   <td>子類型設為float<br />的數值欄位 </td> 
   </tr> 
   <tr> 
    <td>整數屬性<br /> </td> 
-   <td>子類型設定為整數的數值欄位<br /> </td> 
+   <td>子類型設為整數<br />的數值欄位 </td> 
   </tr> 
   <tr> 
-   <td>布爾型屬性<br /> </td> 
+   <td>布爾屬性<br /> </td> 
    <td>切換<br /> </td> 
   </tr> 
   <tr> 
-   <td>object property<br /> </td> 
+   <td>對象屬性<br /> </td> 
    <td>面板<br /> </td> 
   </tr> 
   <tr> 
@@ -88,7 +88,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
  </tbody> 
 </table>
 
-### 通用架構屬性 {#common-schema-properties}
+### 常見模式屬性{#common-schema-properties}
 
 最適化表單使用JSON結構描述中的可用資訊來對應每個產生的欄位。 尤其是：
 
@@ -104,7 +104,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
 * pattern屬性設定為自適應形式的驗證模式（規則運算式）。
 * JSON結構描述檔副檔名必須保留為。schema.json。 例如，&lt;filename>.schema.json。
 
-## 範例JSON結構描述 {#sample-json-schema}
+## 範例JSON結構描述{#sample-json-schema}
 
 以下是JSON結構描述的範例。
 
@@ -286,7 +286,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
 }
 ```
 
-### 可重複使用的架構定義 {#reusable-schema-definitions}
+### 可重複使用的架構定義{#reusable-schema-definitions}
 
 定義索引鍵用於識別可重複使用的結構描述。 可重複使用的架構定義用於建立片段。 它類似於在XSD中識別複雜類型。 以下提供含定義的範例JSON結構描述：
 
@@ -317,9 +317,9 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
 
 上例定義了客戶記錄，其中每個客戶都具有發運地址和開單地址。 兩個地址的結構相同——地址有街道地址、城市地址和州地址。 所以最好不要複製地址。 此外，還可輕鬆新增和刪除欄位，以便日後進行任何變更。
 
-## JSON結構描述定義中的預先設定欄位 {#pre-configuring-fields-in-json-schema-definition}
+## JSON結構描述定義{#pre-configuring-fields-in-json-schema-definition}中的預先設定欄位
 
-您可以使用 **aem:afProperties** 屬性來預先設定JSON結構描述欄位，以對應至自訂最適化表單元件。 以下列出範例：
+您可以使用&#x200B;**aem:afProperties**&#x200B;屬性來預先設定「JSON結構描述」欄位，以對應至自訂的最適化表單元件。 以下列出範例：
 
 ```
 {
@@ -339,7 +339,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
 }
 ```
 
-## 限制最適化表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
+## 限制最適化表單元件{#limit-acceptable-values-for-an-adaptive-form-component}的可接受值
 
 您可以將下列限制新增至JSON結構描述元素，以限制最適化表單元件可接受的值：
 
@@ -437,7 +437,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
  </tbody> 
 </table>
 
-## 不支援的構造  {#non-supported-constructs}
+## 不支援的構造{#non-supported-constructs}
 
 最適化表單不支援下列JSON結構：
 
@@ -452,7 +452,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
 
 在可重複的子表單中，您必須使用完整的子表單。 如果您只想要選擇欄位，請使用整個結構並刪除不要的欄位。
 
-**我在Content Finder中有很長的複雜結構。 如何尋找特定元素？**
+**我在Content Finder中有很長的複雜結構。如何尋找特定元素？**
 
 您有兩個選項：
 
