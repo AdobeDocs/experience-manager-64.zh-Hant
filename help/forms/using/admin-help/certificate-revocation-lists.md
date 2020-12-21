@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 管理憑證轉換清單{#managing-certificate-revocationlists}
+# 管理憑證重設清單{#managing-certificate-revocationlists}
 
 使用信任商店管理，您可以匯入、編輯和刪除憑證撤銷清單(CRL)。 支援Base64和DER編碼的憑證撤銷清單。
 
