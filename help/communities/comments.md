@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# 使用注釋 {#using-comments}
+# 使用注釋{#using-comments}
 
 ## 簡介 {#introduction}
 
@@ -26,40 +26,40 @@ ht-degree: 4%
 
 本節說明
 
-* 新增 `Comments`至頁面
-* 元件的配置設 `Comments`置
+* 將`Comments`新增至頁面
+* `Comments`元件的配置設定
 
 >[!NOTE]
 >
 >不支援匿名張貼留言。 網站訪客必須註冊（成為會員）並登入以參與。
 
-## 新增注釋至頁面 {#adding-comments-to-a-page}
+## 將注釋添加到頁面{#adding-comments-to-a-page}
 
-若要在作 `Comments`者模式下將元件新增至頁面，請使用元件瀏覽器來尋找
+若要在作者模式下將`Comments`元件新增至頁面，請使用元件瀏覽器來尋找
 
 * `Communities / Comments`
 
 並將它拖曳至頁面上，例如與功能相關的位置，讓使用者在頁面上加上註解，或僅在頁面底部。
 
-如需必要資訊，請造 [訪Communities Components Basics](basics.md)。
+如需必要資訊，請造訪[Communities Components Basics](basics.md)。
 
-當包含 [所需的用戶端程式庫](essentials-comments.md#essentials-for-client-side) ，元件的顯示 `Comments`方式就是這樣。
+當包含[所需的客戶端庫](essentials-comments.md#essentials-for-client-side)時，`Comments`元件將如此顯示。
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
 >[!NOTE]
 >
->頁面上 `Comments`只能存在一個元件。 請注意，數個社群功能已包含注釋，例如部落格、行事歷、論壇、QnA和評論。
+>頁面上只能有一個`Comments`元件。 請注意，數個社群功能已包含注釋，例如部落格、行事歷、論壇、QnA和評論。
 
-## 設定注釋 {#configuring-comments}
+## 配置注釋{#configuring-comments}
 
-選擇要訪問 `Comments` 的已放置元件，並選 `Configure` 擇開啟編輯對話框的表徵圖。
+選擇要訪問的已放置的`Comments`元件，並選擇`Configure`表徵圖以開啟編輯對話框。
 
-![配置注釋](assets/configure.png)![設定](assets/commentssettings.png)
+![設定](assets/configure.png) ![建議設定](assets/commentssettings.png)
 
-### 「注釋」頁籤 {#comments-tab}
+### 「注釋」頁籤{#comments-tab}
 
-在「注 **[!UICONTROL 釋]** 」標籤下，指定訪客如何輸入注釋。
+在&#x200B;**[!UICONTROL Comments]**&#x200B;標籤下，指定訪客如何輸入意見。
 
 * **[!UICONTROL 允許回覆]**
 
@@ -83,7 +83,7 @@ ht-degree: 4%
 
 * **[!UICONTROL 允許的檔案類型]**
 
-   僅在勾選「允許檔案上傳」時相關。 以逗號分隔的副檔名清單，並加上&quot;dot&quot;分隔符號。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何檔案類型，則不允許指定那些未指定的類型。 未指定預設值，因此允許所有檔案類型。
+   僅在勾選「允許檔案上傳」時相關。 以逗號分隔的副檔名清單，並加上&quot;dot&quot;分隔符號。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何檔案類型，則不允許指定那些未指定的類型。 未指定預設值，因此允許所有檔案類型。
 
 * **[!UICONTROL RTF 編輯器]**
 
@@ -101,9 +101,9 @@ ht-degree: 4%
 
    如果勾選，則允許顯示獎勵和獎勵的徽章。 預設為未勾選。
 
-### 使用者協調標籤 {#user-moderation-tab}
+### 使用者協調標籤{#user-moderation-tab}
 
-在「使用 **[!UICONTROL 者協調]** 」標籤下，指定如何管理已張貼的留言。 如需詳細資訊，請參閱 [協調使用者產生的內容](moderate-ugc.md)。
+在&#x200B;**[!UICONTROL 使用者協調]**&#x200B;標籤下，指定如何管理張貼的留言。 如需詳細資訊，請參閱[協調使用者產生的內容](moderate-ugc.md)。
 
 * **[!UICONTROL 事先審核]**
 
@@ -139,49 +139,49 @@ ht-degree: 4%
 
 * **[!UICONTROL 標幟限制]**
 
-   輸入留言在公開檢視中隱藏前必須標籤的次數。 此數字必須大於或等於「協調臨界 **[!UICONTROL 值」]**。 預設值為5。
+   輸入留言在公開檢視中隱藏前必須標籤的次數。 此數字必須大於或等於&#x200B;**[!UICONTROL 協調臨界值]**。 預設值為5。
 
-### 「排序設定」頁籤 {#sort-settings-tab}
+### 排序設定頁籤{#sort-settings-tab}
 
-在「排 **[!UICONTROL 序設定]** 」標籤下，指定顯示張貼留言的排序方式。
+在&#x200B;**[!UICONTROL 排序設定]**&#x200B;標籤下，指定顯示張貼留言的排序方式。
 
 * **[!UICONTROL 排序欄位]**
 
-   下拉以選取其中一個 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`或 `Most Liked`。
+   下拉式選擇`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`或`Most Liked`中的一個。
 
 * **[!UICONTROL 排序順序]**
 
-   下拉式選取其中一個 `Ascending` 或 `Descending`。
+   下拉式選擇`Ascending`或`Descending`中的一個。
 
-### 變更為自訂註解類型 {#changing-to-a-custom-comment-type}
+### 變更為自訂註解類型{#changing-to-a-custom-comment-type}
 
 變更「註解資源類型」後，註解系統將不再使用預設值產生註解的例項，而是開發人員自訂（擴充）的例項。
 
-在已知自訂資源類型後，進入 [Design Mode](../../help/sites-authoring/default-components-designmode.md) ，然後連按兩下置入的元 `Comments` 件，以開啟具有其他標籤的對話方塊。
+在確定自定義資源類型後，輸入[設計模式](../../help/sites-authoring/default-components-designmode.md)並按兩下已放置的`Comments`元件以開啟帶有附加頁籤的對話框。
 
-在「資 **[!UICONTROL 源類型]** 」頁籤下，為元件的新實例指定自定義資源 `Comments or Voting`類型：
+在&#x200B;**[!UICONTROL 資源類型]**&#x200B;頁籤下，為`Comments or Voting`元件的新實例指定自定義resourceType:
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL 評論資源類型]**
 
-   導覽至/apps中延伸元件( `comment`單一註解)的resourceType。 例如， `/apps/social/commons/components/hbs/comments/comment`
+   導覽至/apps中延伸`comment`元件的resourceType（單一註解）。 例如， `/apps/social/commons/components/hbs/comments/comment`
 
    此資源將識別訪客張貼留言時所建立之UGC的resourceType。
 
 * **[!UICONTROL 投票資源類型]**
 
-   導覽至/apps中延伸元件 `voting`的resourceType。 例如， `/apps/social/components/hbs/voting`
+   導覽至/apps中延伸`voting`元件的resourceType。 例如， `/apps/social/components/hbs/voting`
 
    此資源將識別訪客張貼投票時所建立之UGC的資源類型。
 
 * **[!UICONTROL 注釋系統資源類型]**
 
-   導覽至/apps中延伸元件( `comments`注釋系統)的resourceType。 保留空白，除非頁面范 [本在基礎指令碼中動態包含](scf.md#add-or-include-a-communities-component) 「注釋系統」，而不是以資源（注釋節點）的形式新增至頁面。 閱讀有關 [{{include}}協助工具的更多資訊](handlebars-helpers.md#include)。
+   導覽至/apps中延伸`comments`元件（注釋系統）的resourceType。 保留空白，除非頁面範本[動態地在基礎指令碼中包含](scf.md#add-or-include-a-communities-component)注釋系統，而不是以資源（注釋節點）的形式新增至頁面。 閱讀[{{include}} helper](handlebars-helpers.md#include)，瞭解更多資訊。
 
-## 網站訪客體驗 {#site-visitor-experience}
+## 網站訪客體驗{#site-visitor-experience}
 
-### 協調者與管理員 {#moderators-and-administrators}
+### 協調者和管理員{#moderators-and-administrators}
 
 當登入的使用者具有協調者或管理員權限時，他們可以執行元件設定所允許的協調工作，不論是誰撰寫了註解。
 
@@ -200,8 +200,8 @@ ht-degree: 4%
 
 ## 其他資訊 {#additional-information}
 
-如需詳細資訊，請參閱開發人 [員的「注釋](essentials-comments.md) 」頁面。
+有關詳細資訊，請參閱開發人員的[Comments Essentials](essentials-comments.md)頁面。
 
-如需已張貼留言的協調，請參閱 [協調使用者產生的內容](moderate-ugc.md)。
+如需已張貼留言的協調，請參閱[協調使用者產生的內容](moderate-ugc.md)。
 
-如需已張貼意見的轉譯，請參閱轉 [譯使用者產生的內容](translate-ugc.md)。
+有關已張貼留言的轉譯，請參閱[轉譯使用者產生的內容](translate-ugc.md)。
