@@ -87,5 +87,5 @@ AEM Assets可讓您按時間順序排序時間軸項目，例如註解、版本�
 
 1. 按一下／點選&#x200B;**[!UICONTROL 日期]**&#x200B;標籤旁的&#x200B;**[!UICONTROL 排序]**&#x200B;表徵圖。 根據您的選擇，註解會依時間順序／反向時間順序列出，並依此順序新增至資產。
 
-   ![chlimage_1-401](assets/chlimage_1-401.png)
+   ![chlimage_1-481](assets/chlimage_1-401.png)
 
