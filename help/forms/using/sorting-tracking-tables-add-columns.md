@@ -1,6 +1,6 @@
 ---
-title: Customize tracking tables
-seo-title: Customize tracking tables
+title: 自訂追蹤表格
+seo-title: 自訂追蹤表格
 description: How-to customize the display of user processes in the task table displayed in the AEM Forms workspace.
 seo-description: How-to customize the display of user processes in the task table displayed in the AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
@@ -17,19 +17,19 @@ ht-degree: 2%
 ---
 
 
-# Customize tracking tables{#customize-tracking-tables}
+# 自訂追蹤表格{#customize-tracking-tables}
 
-The tracking tab in AEM Forms workspace is used to display the details of process instances in which the logged-in user is involved. To view the tracking tables, first select a process name in the left pane to see its list of instances in middle pane. 選擇一個流程實例，在右窗格中查看此實例生成的任務表。 預設情況下，表列顯示以下任務屬性（任務模型中的相應屬性在括弧中給出）:
+AEM Forms工作區中的追蹤標籤可用來顯示涉及登入使用者的程式例項的詳細資料。 若要檢視追蹤表格，請先在左窗格中選取程式名稱，以在中間窗格中查看其例項清單。 選擇一個進程實例，在右窗格中查看由此實例生成的任務表。 預設情況下，表列顯示以下任務屬性（任務模型中的相應屬性在括弧中給出）:
 
 * ID ( `taskId`)
 * 名稱 ( `stepName`)
 * 說明 ( `instructions`)
 * 選取的動作 ( `selectedRoute`)
-* Creation Time ( `createTime`)
-* 完成時間( `completeTime`)
+* 建立時間(`createTime`)
+* 完成時間(`completeTime`)
 * 所有者 ( `currentAssignment.queueOwner`)
 
-The remaining attributes in the task model available for display in the task table are:
+任務模型中可用於顯示在任務表中的其餘屬性為：
 
 <table> 
  <tbody> 
@@ -116,9 +116,9 @@ The remaining attributes in the task model available for display in the task tab
  </tbody> 
 </table>
 
-對於任務表中的以下自定義，您需要在原始碼中進行語義更改。 請參 [閱自訂AEM Forms工作區簡介](/help/forms/using/introduction-customizing-html-workspace.md) ，瞭解如何使用工作區SDK進行語義變更，以及從變更的來源建立精簡的套件。
+對於任務表中的以下自定義，您需要在原始碼中進行語義更改。 請參閱「自訂AEM Forms工作區簡介」[，瞭解如何使用工作區SDK進行語義變更，以及從變更的來源建立精簡的套件。](/help/forms/using/introduction-customizing-html-workspace.md)
 
-## 更改表列及其順序 {#changing-table-columns-and-their-order}
+## 更改表列及其順序{#changing-table-columns-and-their-order}
 
 1. 要修改表中顯示的任務屬性及其順序，請配置檔案/ws/js/runtime/templates/processinstancehistory.html :
 
@@ -154,11 +154,11 @@ The remaining attributes in the task model available for display in the task tab
    </table>
    ```
 
-## 對追蹤表格排序 {#sorting-a-tracking-table}
+## 對跟蹤表{#sorting-a-tracking-table}排序
 
 要在按一下列標題時對任務清單表進行排序，請執行以下操作：
 
-1. 在檔案中註冊點按 `.fixedTaskTableHeader th` 處理常式 `js/runtime/views/processinstancehistory.js`。
+1. 在檔案`js/runtime/views/processinstancehistory.js`中註冊`.fixedTaskTableHeader th`的點按處理常式。
 
    ```as3
    events: {
@@ -168,7 +168,7 @@ The remaining attributes in the task model available for display in the task tab
    }
    ```
 
-   在處理程式中，調用 `onTaskTableHeaderClick` 的函式 `js/runtime/util/history.js`。
+   在處理程式中，調用`js/runtime/util/history.js`的`onTaskTableHeaderClick`函式。
 
    ```as3
    onTaskTableHeaderClick: function (event) {
@@ -176,7 +176,7 @@ The remaining attributes in the task model available for display in the task tab
    }
    ```
 
-1. 在中公 `TaskTableHeaderClick` 開方法 `js/runtime/util/history.js`。
+1. 在`js/runtime/util/history.js`中公開`TaskTableHeaderClick`方法。
 
    該方法從click事件中查找任務屬性，對該屬性上的任務清單進行排序，並使用排序的任務清單呈現任務表。
 
