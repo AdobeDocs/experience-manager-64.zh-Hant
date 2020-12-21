@@ -18,145 +18,168 @@ ht-degree: 0%
 ---
 
 
-# 問答論壇功能 {#q-a-forum-feature}
+# 問答論壇功能{#q-a-forum-feature}
 
 ## 簡介 {#introduction}
 
-The QnA (questions and answers) forum feature provides an area for community members to ask and answer questions:
+QnA（問題與答案）論壇功能為社群成員提供了提問與回答問題的區域：
 
-* Create new questions
+* 建立新問題
 * 內嵌影像（支援拖放）
-* View and answer questions
-* Search for a question
-* Help moderate the QnA content
-* Identify best answers
-* Move QnA questions from one page to another
+* 檢視並回答問題
+* 搜尋問題
+* 協助協調QnA內容
+* 找出最佳答案
+* 將QnA問題從一個頁面移至另一個頁面
 
 本節說明
 
-* Adding the QnA forum feature to an AEM site
-* 元件的配置設 `QnA`置
+* 新增QnA論壇功能至AEM網站
+* `QnA`元件的配置設定
 
-## Adding a Q&amp;A Forum to a Page {#adding-a-q-a-forum-to-a-page}
+## 新增問答論壇至頁面{#adding-a-q-a-forum-to-a-page}
 
-To add a `QnA` component to a page in author mode, use the component browser to locate `Communities / QnA` and drag it into place on a page where the QnA forum should appear.
+要在作者模式下將`QnA`元件添加到頁面，請使用元件瀏覽器找到`Communities / QnA`並將其拖放到應出現QnA論壇的頁面上。
 
-如需必要資訊，請造 [訪Communities Components Basics](basics.md)。
+如需必要資訊，請造訪[Communities Components Basics](basics.md)。
 
-當包含 [所需的用戶端程式庫](qna-essentials.md#essentials-for-client-side) ，元件的顯示方式 `QnA` 如下：
+當包含[必要的用戶端程式庫](qna-essentials.md#essentials-for-client-side)時，`QnA`元件的顯示方式如下：
 
 ![chlimage_1-280](assets/chlimage_1-280.png)
 
-### Configuring QnA {#configuring-qna}
+### 配置QnA {#configuring-qna}
 
-選擇要訪問 `QnA` 的已放置元件，並選 `Configure` 擇開啟編輯對話框的表徵圖。
+選擇要訪問的已放置的`QnA`元件，並選擇`Configure`表徵圖以開啟編輯對話框。
 
 ![chlimage_1-281](assets/chlimage_1-281.png) ![chlimage_1-282](assets/chlimage_1-282.png)
 
-#### 「設定」頁籤 {#settings-tab}
+#### 「設定」頁籤{#settings-tab}
 
-Under the **[!UICONTROL Settings]** tab, specify settings for topics (questions) and replies (answers):
+在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤下，指定主題（問題）和回覆（答案）的設定：
 
-* **[!UICONTROL Topics Per Page]**
-Defines the number of questions/posts shown per page. 預設值為10。
+* **[!UICONTROL 每頁主題]**
+定義每頁顯示的問題／貼文數。預設值為10。
 
-* **[!UICONTROL Moderated]**
-If checked, posting of topics and comments must be approved before they will appear on a publish site. 預設為未勾選。
+* **[!UICONTROL 協調]**
+的話題和留言若勾選，則必須先核准張貼主題和留言，才會顯示在發佈網站上。預設為未勾選。
 
-* **[!UICONTROL Closed]**
-If checked, the forum is closed to new questions and comments. 預設為未勾選。
+* **[!UICONTROL 關閉]**
+如果勾選，論壇將不會出現新問題和評論。預設為未勾選。
 
-* **[!UICONTROL 富格文本編輯]**&#x200B;器如果選中，則可以使用標注輸入主題和注釋。 預設為未勾選。
+* **[!UICONTROL 富格文本編]**
+輯器如果選中此選項，則主題和注釋可以與標籤一起輸入。預設為未勾選。
 
-* **[!UICONTROL 允許標籤]**：如果勾選，允許成員將標籤標籤新增至其貼文(請參 **[!UICONTROL 閱標籤欄位]** 標籤)。 預設為未勾選。
+* **[!UICONTROL 允許]**
+標籤如果勾選此選項，允許成員將標籤標籤新增至其貼文(請參 **[!UICONTROL 閱標]** 記欄位標籤)。預設為未勾選。
 
-* **[!UICONTROL Allow File Uploads]**
-If checked, allow file attachments to be added to the question or comment. 預設為未勾選。
+* **[!UICONTROL 允許文]**
+件上載如果選中，允許將檔案附件添加到問題或注釋中。預設為未勾選。
 
-* **[!UICONTROL Max File Size]**
-Relevant only if 
-`Allow File Uploads` is checked. 此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
+* **[!UICONTROL 最大檔案大]**
+小僅在 
+`Allow File Uploads` 已勾選。此欄位將限制已上傳檔案的大小（以位元組為單位）。 預設值為104857600(10 Mb)。
 
-* **[!UICONTROL 允許的檔案類型]**&#x200B;僅與 
-`Allow File Uploads` is checked. 以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
+* **[!UICONTROL 允許的檔案類]**
+型僅在 
+`Allow File Uploads` 已勾選。以逗號分隔的副檔名清單，並以&quot;dot&quot;分隔。 例如：.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定任何檔案類型，則不允許上傳未指定的檔案類型。 未指定預設值，因此允許所有檔案類型。
 
-* **[!UICONTROL Max Attach Image File Size]**
-Relevant only if Allow File Uploads is checked. 上傳的影像檔案的位元組數上限。 預設值為2097152(2 Mb)。
+* **[!UICONTROL 最大附加影像檔案大]**
+小只有在勾選「允許檔案上傳」時，才相關。上傳的影像檔案的位元組數上限。 預設值為2097152(2 Mb)。
 
-* **[!UICONTROL Allow Following]**
-If checked, include the following feature for forum posts, which allows members to be [notified](notifications.md) of new posts. 預設為未勾選。
+* **[!UICONTROL 允許]**
+下列若勾選，請為論壇貼文加入下列功能，讓會員得 [](notifications.md) 知新貼文。預設為未勾選。
 
-* **[!UICONTROL Allow Pinning]**
-If checked, forum topics may be pinned to the top of the list of topics. 預設為未勾選。
+* **[!UICONTROL 允許]**
+釘選如果勾選，論壇主題可能會釘選至主題清單的頂端。預設為未勾選。
 
-* **[!UICONTROL 允許電子郵件]**&#x200B;訂閱如果勾選，允許會員透過電子郵件（訂閱）收到新[貼文](subscriptions.md)。 需要 `Allow Following` 檢查並設定電 [子郵件](email.md)。 預設為未勾選。
+* **[!UICONTROL 允許電子]**
+郵件訂閱如果勾選，允許會員透過電子郵件（訂閱）收到新[貼文](subscriptions.md)。需要檢查`Allow Following`並配置[電子郵件](email.md)。 預設為未勾選。
 
-* **[!UICONTROL 允許回覆]**&#x200B;如果勾選，允許回覆張貼至問題的留言。 預設為未勾選。
+* **[!UICONTROL 允許]**
+回覆如果勾選，允許回覆張貼至問題的留言。預設為未勾選。
 
-* **[!UICONTROL 允許使用者刪除留言和主題]**&#x200B;如果勾選，允許成員刪除他們張貼的留言和問題。 預設為未勾選。
+* **[!UICONTROL 允許使用者刪除留言和主]**
+題如果勾選，允許成員刪除他們張貼的留言和問題。預設為未勾選。
 
-* **[!UICONTROL 允許投票]**&#x200B;如果勾選，請將「投票」功能加入問題。 預設為未勾選。
+* **[!UICONTROL 允許投]**
+票如果勾選，請將「投票」功能加入問題。預設為未勾選。
 
-* **[!UICONTROL 將選定答案移至頂端]**&#x200B;如果勾選，第一個顯示的答案是選定答案。 已勾選預設值。
+* **[!UICONTROL 將選定答案移至頂]**
+端如果勾選，第一個顯示的答案是選定答案。已勾選預設值。
 
-* **[!UICONTROL 顯示標章]**&#x200B;如果勾選，請使用成員的 [部落格項目](implementing-scoring.md) ，顯示已獲得和已指派的標章。 預設為未勾選。
+* **[!UICONTROL 顯示]**
+標章如果勾選，請使用成員的 [](implementing-scoring.md) 部落格項目顯示已獲得和已指派的標章。預設為未勾選。
 
-* **[!UICONTROL 如果勾選]**「允許特色內容」，即可將構想識別為 [特色內容](featured.md)。 預設為未勾選。
+* **[!UICONTROL 若勾選「]**
+允許精選內容」，此構想即可識別為 [精選內容](featured.md)。預設為未勾選。
 
-#### 使用者協調標籤 {#user-moderation-tab}
+#### 使用者協調標籤{#user-moderation-tab}
 
-在「使用 **[!UICONTROL 者協調]** 」標籤下，指定如何管理已張貼的主題（問題）和答案（使用者產生的內容）。 如需詳細資訊，請參閱 [協調使用者產生的內容](moderate-ugc.md)。
+在&#x200B;**[!UICONTROL 使用者協調]**&#x200B;標籤下，指定如何管理已張貼的主題（問題）和答案（使用者產生的內容）。 如需詳細資訊，請參閱[協調使用者產生的內容](moderate-ugc.md)。
 
-* **[!UICONTROL 拒絕答]**&#x200B;案如果勾選，可信任的成員協調者將可拒絕張貼的答案，並防止答案出現在公開問答論壇中。 預設為未勾選。
+* **[!UICONTROL 拒絕]**
+答案如果勾選，可信任的成員協調者將可拒絕張貼的答案，並防止答案出現在公開問答論壇中。預設為未勾選。
 
-* **[!UICONTROL 關閉／重新開啟主題]**&#x200B;如果勾選，受信任的成員協調者可能會關閉問題（主題）以進一步編輯和回答，也可能會重新開啟問題。 預設為未勾選。
+* **[!UICONTROL 關閉／重新開]**
+啟主題如果勾選，受信任的成員協調者可關閉問題（主題）以進一步編輯和回答，也可重新開啟問題。預設為未勾選。
 
-* **[!UICONTROL 移動主題]**&#x200B;如果勾選，則允許發佈端協調者移動問題。 預設為未勾選。
+* **[!UICONTROL 移動]**
+主題如果勾選，允許發佈端協調者移動問題。預設為未勾選。
 
-* **[!UICONTROL 標幟貼文]**&#x200B;如果勾選，允許成員將其他人的問題或答案標幟為不適當。 預設為未勾選。
+* **[!UICONTROL 標籤]**
+貼文如果勾選，允許成員將其他問題或答案標籤為不適當。預設為未勾選。
 
-* **[!UICONTROL 標幟原因清]**&#x200B;單如果勾選，允許成員從下拉式清單中選擇將問題或答案標籤為不適當的理由。 預設為未勾選。
+* **[!UICONTROL 標幟原]**
+因清單如果勾選，允許成員從下拉式清單中選擇將問題或答案標籤為不適當的原因。預設為未勾選。
 
-* **[!UICONTROL 自訂標幟原]**&#x200B;因如果勾選，允許成員輸入其自己將問題或答案標示為不適當的原因。 預設為未勾選。
+* **[!UICONTROL 自訂標幟原]**
+因如果勾選，允許成員輸入其自己將問題或答案標示為不適當的原因。預設為未勾選。
 
-* **[!UICONTROL 協調臨]**&#x200B;界值輸入成員在通知協調者之前必須標籤問題或答案的次數。 預設值為1（一次）。
+* **[!UICONTROL 協調]**
+臨界值輸入成員在通知協調者之前必須標籤問題或答案的次數。預設值為1（一次）。
 
-* **[!UICONTROL 標籤限]**&#x200B;制輸入在公開檢視中隱藏問題或答案之前，必須標籤該問題或答案的次數。 如果設為-1，則標籤的問題或答案永遠不會隱藏在公開檢視中。 否則，此數字必須大於或等於「協調臨界值」。 預設值為5。
+* **[!UICONTROL 標幟]**
+限制輸入問題或答案在隱藏於公開檢視之前必須標幟的次數。如果設為-1，則標籤的問題或答案永遠不會隱藏在公開檢視中。 否則，此數字必須大於或等於「協調臨界值」。 預設值為5。
 
-#### 「標籤」欄位頁籤 {#tag-field-tab}
+#### 標籤欄位標籤{#tag-field-tab}
 
-在「標 **[!UICONTROL 記」欄位]** (Tag field **** )標籤下，可套用的標籤（如果允許）會根據選擇的名稱空間加以限制。
+在&#x200B;**[!UICONTROL Tag欄位]**&#x200B;頁籤下，如果允許在&#x200B;**[!UICONTROL Settings]**&#x200B;頁籤下應用的標籤會根據選擇的名稱空間進行限制。
 
-* **[!UICONTROL 允許的名稱空間]**&#x200B;相關(如果 
-`Allow Tagging` 已勾選「設定」 **標籤** 。 可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
+* **[!UICONTROL 允許的]**
+名稱空間相關(如果 
+`Allow Tagging` 在「設定」(Setting)選 **** 項卡下。可套用的標籤僅限於已勾選之命名空間類別中的標籤。 名稱空間清單包含「標準標籤」（預設命名空間）和「包含所有標籤」。 預設值未勾選，表示允許所有命名空間。
 
-* **[!UICONTROL 建議限]**&#x200B;制輸入要作為建議顯示給發佈到論壇的成員的標籤數。 值 
-`-1` 意味著沒有限制。 預設值為0。
+* **[!UICONTROL 建議]**
+限制輸入要作為建議顯示給發佈到論壇的成員的標籤數。值 
+`-1` 意味著沒有限制。預設值為0。
 
-#### 「排序設定」頁籤 {#sort-settings-tab}
+#### 排序設定頁籤{#sort-settings-tab}
 
-在「排 **[!UICONTROL 序設定]** 」標籤下，指定顯示張貼留言的排序方式。
+在&#x200B;**[!UICONTROL 排序設定]**&#x200B;標籤下，指定顯示張貼留言的排序方式。
 
-* **[!UICONTROL 排序依據]**&#x200B;檢查所有允許的排序選擇： 
-`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 預設為 `Newest, Oldest, Last Updated`。
+* **[!UICONTROL 排序依]**
+據檢查所有允許的排序選擇： 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 預設值為`Newest, Oldest, Last Updated`。
 
-* **[!UICONTROL 設定為「預設]**」(Default)下拉式選項，以選擇一個選定的排序選項作為預設選項顯示。 預設值為 
+* **[!UICONTROL 設定為「]**
+預設」(Default)「下拉式」(Pulldown)，以選擇一個選定的排序選項作為預設選項顯示。預設值為 
 `Newest`。
 
-* **[!UICONTROL 選取Analytics排序下拉式選]**&#x200B;項以選取其中一個 
-`All, Last 24 Hours, Last 7 Days, Last 30 Days`. 預設為 `All`。
+* **[!UICONTROL 選取Analytics排序的時間選]**
+項下拉式選取其中一個 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`.預設值為`All`。
 
-## 網站訪客體驗 {#site-visitor-experience}
+## 網站訪客體驗{#site-visitor-experience}
 
-### 識別答案 {#identifying-answers}
+### 確定答案{#identifying-answers}
 
-一個答案可以使用按鈕標示為正確或有用的 `Select Answer` 答案。 將「問題」標示為「已回答」後，在使用按鈕取消選取第一個答案之前，將無法選取其他 `Unmark Chosen Answer`答案。
+使用`Select Answer`按鈕，一個答案可標示為正確或有用的答案。 一旦將「問題」標示為「已回答」，則必須使用`Unmark Chosen Answer`按鈕取消選取第一個答案，才能選取另一個答案。
 
-一旦選取為可行答案，就可使用按鈕取消選 `Unmark Chosen Answer` 取。
+一旦選擇為可行答案，則可使用`Unmark Chosen Answer`按鈕取消選擇。
 
-在選擇答案作為可行答案後，主QnA頁面上的問題主題 `Answered`旁會顯示問題的指示。
+在將答案選為可行答案後，主QnA頁面上的問題主題旁將顯示問題`Answered`的指示。
 
-### 協調者與管理員 {#moderators-and-administrators}
+### 協調者和管理員{#moderators-and-administrators}
 
 當登入的使用者具有協調者或管理員權限時，他們可以執行元件設定所允許的協調工作，不論問題或答案的作者為何。
 
@@ -177,8 +200,8 @@ If checked, forum topics may be pinned to the top of the list of topics. 預設�
 
 ## 其他資訊 {#additional-information}
 
-如需詳細資訊，請參閱開發 [人員的QnA Essentials](qna-essentials.md) 頁面。
+如需詳細資訊，請參閱開發人員的[QnA Essentials](qna-essentials.md)頁面。
 
-如需協調已張貼主題和留言的資訊，請參 [閱協調使用者產生的內容](moderate-ugc.md)。
+如需協調已張貼主題和留言的資訊，請參閱[協調使用者產生的內容](moderate-ugc.md)。
 
-如需標籤已張貼的主題和留言，請參 [閱標籤使用者產生的內容](tag-ugc.md)。
+如需標籤已張貼的主題和留言，請參閱[標籤使用者產生的內容](tag-ugc.md)。
