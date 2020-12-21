@@ -16,17 +16,17 @@ ht-degree: 1%
 ---
 
 
-# 從自適應表單調用表單資料模型服務的API {#api-to-invoke-form-data-model-service-from-adaptive-forms}
+# 從最適化表單{#api-to-invoke-form-data-model-service-from-adaptive-forms}叫用表單資料模型服務的API
 
 ## 概覽 {#overview}
 
-AEM Forms可讓表單作者從最適化表單欄位中叫用表單資料模型中設定的服務，進一步簡化並增強表單填寫體驗。 若要叫用資料模型服務，您可以在視覺化編輯器中建立規則，或在規則編輯器的程式碼編輯器中使用 `guidelib.dataIntegrationUtils.executeOperation` API指定 [JavaScript](/help/forms/using/rule-editor.md)。
+AEM Forms可讓表單作者從最適化表單欄位中叫用表單資料模型中設定的服務，進一步簡化並增強表單填寫體驗。 若要叫用資料模型服務，您可以在視覺編輯器中建立規則，或在[規則編輯器](/help/forms/using/rule-editor.md)的程式碼編輯器中使用`guidelib.dataIntegrationUtils.executeOperation` API指定JavaScript。
 
-本檔案著重於使用 `guidelib.dataIntegrationUtils.executeOperation` API來叫用服務來編寫JavaScript。
+本檔案著重於使用`guidelib.dataIntegrationUtils.executeOperation` API來編寫JavaScript以叫用服務。
 
 ## 使用API {#using-the-api}
 
-API `guidelib.dataIntegrationUtils.executeOperation` 從最適化表單欄位叫用服務。 API語法如下：
+`guidelib.dataIntegrationUtils.executeOperation` API會從最適化表單欄位中叫用服務。 API語法如下：
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -40,7 +40,7 @@ API需要下列參數。
 | `inputs` | 用於指定其值被輸入到服務操作的表單對象的結構 |
 | `outputs` | 結構：指定將用服務操作返回的值填充的表單對象 |
 
-API的結構會指 `guidelib.dataIntegrationUtils.executeOperation` 定服務作業的詳細資訊。 結構的語法如下。
+`guidelib.dataIntegrationUtils.executeOperation` API的結構指定了有關服務操作的詳細資訊。 結構的語法如下。
 
 ```
 var operationInfo = {
@@ -85,11 +85,11 @@ API結構指定服務操作的以下詳細資訊。
  </tbody> 
 </table>
 
-## 調用服務的示例指令碼 {#sample-script-to-invoke-a-service}
+## 調用服務{#sample-script-to-invoke-a-service}的示例指令碼
 
-以下範例指令碼使用 `guidelib.dataIntegrationUtils.executeOperation` API來叫用表單資 `getAccountById` 料模型中設定的 `employeeAccount` 服務作業。
+以下示例指令碼使用`guidelib.dataIntegrationUtils.executeOperation` API調用`employeeAccount`表單資料模型中配置的`getAccountById`服務操作。
 
-此操 `getAccountById` 作將表單欄位中的值作為參數的輸 `employeeID``empId` 入，並返回相應員工的員工姓名、帳戶編號和帳戶餘額。 輸出值會填入指定的表單欄位。 例如，參數中的值會 `name` 填入表單元素中， `fullName` 而表單元素中 `accountNumber` 的參數值 `account` 中。
+`getAccountById`操作將`employeeID`表單欄位中的值作為`empId`參數的輸入，並返回相應員工的員工姓名、帳戶編號和帳戶餘額。 輸出值會填入指定的表單欄位。 例如，`name`參數中的值會填入`fullName`表單元素中，而`account`表單元素中`accountNumber`參數的值會填入。
 
 ```
 var operationInfo = {
