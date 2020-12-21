@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 表單工作流程概觀 {#overview-of-forms-workflow}
+# 表單工作流程簡介{#overview-of-forms-workflow}
 
 表單工作流程可讓使用者設計、管理和最佳化以人為中心的流程。 使用表單工作流程，使用者也可以管理將系統與人員連結的自動化商業程式應用程式。
 
