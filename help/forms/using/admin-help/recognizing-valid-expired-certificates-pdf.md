@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 識別PDF檔案中的有效及過期憑證 {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# 識別PDF檔案{#recognizing-valid-and-expired-certificates-in-pdf-documents}中的有效和過期的憑證
 
 當在Adobe Reader中開啟具有Reader Extensions套用之使用權限的PDF檔案時，會出現狀態列，說明PDF檔案中啟用的特定使用權限。
 
