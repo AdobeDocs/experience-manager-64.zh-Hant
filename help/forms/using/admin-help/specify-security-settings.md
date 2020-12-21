@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# 指定安全性設定 {#specify-security-settings}
+# 指定安全性設定{#specify-security-settings}
 
 輸出可讓您控制XML輸入中的外部實體是否已解析。 依預設，這些檔案已解決，但您可以變更此行為，以提高AEM表單系統的安全性。
 
