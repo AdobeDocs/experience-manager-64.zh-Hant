@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# 管理憑證和認證的基本知識 {#basics-of-managing-certificates-and-credentials}
+# {#basics-of-managing-certificates-and-credentials}證書和憑證管理基礎知識
 
-憑 *據包含* ，您簽署或識別檔案所需的私密金鑰資訊。 憑 *證* ，是您設定為信任的公開金鑰資訊。 AEM表單使用憑證和認證，用於數種用途：
+*credential*&#x200B;包含簽署或識別檔案所需的私密金鑰資訊。 *certificate*&#x200B;是您設定為信任的公開金鑰資訊。 AEM表單使用憑證和認證，用於數種用途：
 
-* Acrobat Reader DC擴充功能使用憑證，以啟用PDF檔案中的Adobe Reader使用權限。 (請參 [閱設定認證以搭配Acrobat Reader DC擴充功能使用](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions))。
-* 您可以設定Rights Management，以顯示憑證，僅供受信任發行者在Acrobat中使用。 (請參 [閱設定Rights Management顯示設定](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings))。 證書中必須包含通用名稱(CN)。
-* 簽章服務會存取憑證和認證。 如需簽名服務的詳細資訊，請參閱服 [務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+* Acrobat Reader DC擴充功能使用憑證，以啟用PDF檔案中的Adobe Reader使用權限。 （請參閱[設定認證以搭配Acrobat Reader DC擴充功能使用](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)）。
+* 您可以設定Rights Management，以顯示憑證，僅供受信任發行者在Acrobat中使用。 （請參閱[設定Rights Management顯示設定](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)）。 證書中必須包含通用名稱(CN)。
+* 簽章服務會存取憑證和認證。 如需簽名服務的詳細資訊，請參閱[服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 **生成對密鑰**
 
