@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 設定與Acrobat Reader DC擴充功能搭配使用的逾時值  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+# 設定與Acrobat Reader DC擴充功能搭配使用的逾時值{#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
 在Acrobat Reader DC擴充功能中處理許多PDF檔案時，請確定下列逾時值已適當設定，以防止工作逾時或失敗：
 
@@ -26,12 +26,12 @@ ht-degree: 0%
 
 此值可在管理控制台中設定。 按一下「設定>核心繫統設定>組態」，並指定「預設檔案處理逾時」的值。
 
-**User Manager AEM Forms逾時：** 此值可以通過編輯config.xml檔案來設定。 在管理控制台中，按一下「設定>使用者管理>設定>匯入和匯出設定檔案」，然後按一下「匯出」。 開啟匯出的config.xml檔案並編輯下列行：
+**User Manager AEM Forms逾時：** 此值可透過編輯config.xml檔案來設定。在管理控制台中，按一下「設定>使用者管理>設定>匯入和匯出設定檔案」，然後按一下「匯出」。 開啟匯出的config.xml檔案並編輯下列行：
 
-&lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot;/>
+&lt;entry key=&quot;assertionValidityInMinutes&quot; value=&quot;600&quot; />
 
-&lt;entry key=&quot;SessionTimeout&quot; value=&quot;600&quot;/>
+&lt;entry key=&quot;SessionTimeout&quot; value=&quot;600&quot; />
 
 儲存並將config.xml檔案匯入管理主控台。
 
-**應用程式伺服器會話超時：** 此值可在應用程式伺服器上設定。 如需詳細資訊，請參閱應用程式伺服器隨附的檔案。
+**應用程式伺服器作業逾** 時：此值可在應用程式伺服器上設定。如需詳細資訊，請參閱應用程式伺服器隨附的檔案。
