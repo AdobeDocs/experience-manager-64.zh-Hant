@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# 指定XCI配置選項 {#specifying-xci-configuration-options}
+# 指定XCI配置選項{#specifying-xci-configuration-options}
 
-Forms可讓您指定自訂XCI檔案，以用於演算。 (請參 [閱設定表單位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。) 依預設，Forms會覆寫XCI檔案中指定的部分選項，包括：
+Forms可讓您指定自訂XCI檔案，以用於演算。 （請參閱[設定Forms的位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。） 依預設，Forms會覆寫XCI檔案中指定的部分選項，包括：
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
