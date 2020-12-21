@@ -30,13 +30,13 @@ ht-degree: 0%
 
 **建立SSL憑證**
 
-1. 在命令提示符下，導航到 *[JAVA HOME]*/bin ，然後鍵入以下命令以建立證書和密鑰庫：
+1. 在命令提示符下，導航至&#x200B;*[JAVA HOME]*/bin ，然後鍵入以下命令以建立證書和密鑰庫：
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*主機名&#x200B;*`, OU=`*組名稱* Name `, O=`*Company Name *Name`,L=`*Name* State Name* Company Name `, S=`**`, C=`**`" -alias`**`-keypass``*key*`**`-keystore`*State*AD T.C. C. N. C. N. C. C. A. C. A. C. C. C. N. N. N. N. A.* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*主* `, OU=`*機名* `, O=`*稱組名* `,L=`*稱公司名稱城市******Name*  `, S=`** `, C=`*StateCountry Code* `" -alias`*&quot;LC Cert&quot;* `-keypass` `*key*`** `-keystore`**_*keystorename* `.keystore`
 
    >[!NOTE]
    >
-   >將 *[JAVA_HOME]替換為安裝JDK的目錄，並將斜體文本替換為與您的環境相對應的值。*
+   >將&#x200B;*[JAVA_HOME]替換為安裝JDK的目錄，並將斜體文本替換為與您的環境相對應的值。*
 
-1. 鍵 `changeit` 入密碼。 此密碼是Java安裝的預設密碼，系統管理員可能已對其進行更改。
+1. 鍵入`changeit`作為口令。 此密碼是Java安裝的預設密碼，系統管理員可能已對其進行更改。
 
