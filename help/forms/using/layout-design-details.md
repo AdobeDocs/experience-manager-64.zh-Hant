@@ -17,18 +17,18 @@ ht-degree: 0%
 ---
 
 
-# 版面設計 {#layout-design}
+# 版面設計{#layout-design}
 
 XFA表單範本或XDP是下列範本：
 
 * [字母](/help/forms/using/create-letter.md)
-* [互動式通訊](/help/forms/using/web-channel-print-channel.md#printchannel) 的 [列印頻道](/help/forms/using/interactive-communications-overview.md)
+* [互動](/help/forms/using/web-channel-print-channel.md#printchannel) 式通訊 [的列印管道](/help/forms/using/interactive-communications-overview.md)
 
 * 布局片段
 
 XDP是在Adobe Forms Designer中設計。 本文提供如何設計XDP以建立有效的通訊／互動式通訊的詳細資訊，例如在何處使用表單欄位或目標區域，以及何時使用版面片段。
 
-## 建立字母版面或互動式通訊的列印頻道版面 {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
+## 建立字母或互動式通訊的列印頻道{#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}版面
 
 版面定義互動式通訊的字母／列印頻道的圖形版面。 版面可包含「位址」和「參考編號」等典型表單欄位。 它還包含表示目標區域的空子表單。 在表單設計人員中建立版面，當應用程式專員將它上傳至AEM伺服器時。 在此處，您可以在建立互動式通訊的對應範本或列印頻道時，選取版面。
 
@@ -49,14 +49,14 @@ XDP是在Adobe Forms Designer中設計。 本文提供如何設計XDP以建立�
    1. 對於「主要居住區」區段，新增預留位置目標區域。 此預留位置將綁定到在字母／互動式通信設計時將主要住宅分割。
    1. 將版面(以及使用版面的片段（如果有）上傳到AEM Forms伺服器。
 
-## 使用架構 {#using-schema}
+## 使用架構{#using-schema}
 
 您可以在版面或版面片段中使用架構，但不是必要的。 如果您使用架構，請確定：
 
 1. 字母／互動式通訊中使用的版面和所有片段版面都使用與字母／互動式通訊相同的架構。
 1. 所有填入資料所需的欄位都系結至架構。
 
-## 建立可關聯欄位 {#creating-relatable-fields}
+## 建立可關聯欄位{#creating-relatable-fields}
 
 依預設，所有欄位都可視為與各種其他資料來源相關。 如果您的版麵包含任何與資料來源不相關的欄位，請使用「_int」（內部）字尾為欄位命名；例如pageCount_int。
 
@@ -80,7 +80,7 @@ XDP是在Adobe Forms Designer中設計。 本文提供如何設計XDP以建立�
 
 欄位的版面配置比目標區域子表單更有彈性；但它們會系結至單一值類型。 您可以將欄位變大，或將欄位設為固定寬度和高度，依此類推。 已解析的模組或規則結果將推送到欄位中。
 
-## 決定何時使用子表單和文字欄位 {#deciding-when-to-use-subforms-and-text-nbsp-fields}
+## 決定何時使用子表單和文字欄位{#deciding-when-to-use-subforms-and-text-nbsp-fields}
 
 如果您想要在自上而下的垂直排版中擷取多個模組內容（多個段落或影像），請使用子表單。 您的版面必須處理子表單依高度成長以容納其內容的事實。 如果您無法確定與子表單／目標相關聯的內容長度從未超過版面中為子表單保留的空間，請將子表單建立為子表單容器內的子表單。 此程式可確保子表單下方的版面物件隨著子表單的成長而向下流動。
 
@@ -119,13 +119,13 @@ XDP是在Adobe Forms Designer中設計。 本文提供如何設計XDP以建立�
  </tbody> 
 </table>
 
-## 設定重複性要素 {#setting-up-repetitive-elements}
+## 設定重複性要素{#setting-up-repetitive-elements}
 
 當您組織的標誌和位址等元素出現在信件／互動式通訊的所有頁面上時，請為這些元素建立表格欄位，並將它們放在主版頁面上。 請為這些欄位使用名稱（欄位名稱）系結。
 
-## 指定伺服器演算格式 {#specify-the-server-nbsp-render-format}
+## 指定伺服器渲染格式{#specify-the-server-nbsp-render-format}
 
 將版面的伺服器轉譯格式使用至動態XML表單；否則，任何基於此版面的字母／互動式通訊都無法正確呈現。 預設情況下，Forms Designer中的伺服器渲染格式設定為動態XML表單。 要確保使用正確的格式：
 
-* 在設計工具中，按一 **[!UICONTROL 下「檔案>表單屬性>預設值]**」，並確定「PDF轉換／格式」設定已設為「動態XML表單」。
+* 在「設計器」中，按一下「檔案」>「表單屬性」>「預設」**[!UICONTROL ，並確保「PDF渲染／格式」設定設定為「動態XML表單」。]**
 
