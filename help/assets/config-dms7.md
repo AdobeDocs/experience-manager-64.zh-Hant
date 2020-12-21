@@ -122,7 +122,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## （可選）在動態媒體中設定進階設定- Scene7模式{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-如果您想要進一步自訂動態媒體- Scene7模式的設定和設定，或最佳化其效能，則可完成下列一或多項選用工作：
+如果您想要進一步自訂動態媒體- Scene7模式的設定和設定，或最佳化其效能，則可以完成下列一或多項選用工作：
 
 * [（選用）動態媒體的設定與設定- Scene7模式設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
 
@@ -146,7 +146,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 #### 影像伺服器{#publishing-setup-for-image-server}的發佈設定
 
-「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
+「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有「預設物件解析度」設定的影像。
 
 若要設定發佈設定：在Dynamic Media Classic中，點選「**[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」。]**
 
