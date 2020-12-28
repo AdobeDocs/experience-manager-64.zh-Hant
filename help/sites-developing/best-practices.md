@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 2%
+ht-degree: 4%
 
 ---
 
 
 # 最佳作法{#best-practices}
 
-## 開發人員的最佳實務——快速入門 {#best-practices-for-developers-getting-started}
+## 開發人員的最佳實務——快速入門{#best-practices-for-developers-getting-started}
 
 Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳實務。 Adobe開發人員在開發適用於客戶實作的核心AEM產品更新和客戶程式碼時，會遵守這些最佳實務。
 
@@ -35,7 +35,7 @@ Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳
 * [OSGi Bundles](/help/sites-developing/osgi-bundles.md)
 * [Java API最佳實務](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
-### 其他最佳做法資訊 {#additional-best-practices-information}
+### 其他最佳做法資訊{#additional-best-practices-information}
 
 以下區域提供了專門用於制定最佳做法的檔案：
 
@@ -59,16 +59,16 @@ Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳
  <tbody>
   <tr>
    <td>標準觸控式UI背後的部分理論。</td> 
-   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">啟用觸控的UI: 概念</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">啟用觸控的UI: 結構</a></p> </td> 
+   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">啟用觸控的UI:概念</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">啟用觸控的UI:結構</a></p> </td> 
    <td>這些檔案提供觸控式使用者介面的概念和結構概觀。</td> 
   </tr>
   <tr>
-   <td>啟用觸控的UI: 自訂控制台 </td> 
+   <td>啟用觸控的UI:自訂控制台 </td> 
    <td><a href="/help/sites-developing/customizing-consoles-touch.md">自訂觸控式UI主控台</a></td> 
    <td>本檔案說明擴充觸控式UI主控台的最佳方式。</td> 
   </tr>
   <tr>
-   <td>可觸控的UI: 自訂頁面製作</td> 
+   <td>可觸控的UI:自訂頁面製作</td> 
    <td><a href="/help/sites-developing/customizing-page-authoring-touch.md">自訂可觸控的UI頁面製作</a></td> 
    <td>說明如何擴充觸控式UI的頁面製作。</td> 
   </tr>
@@ -82,18 +82,18 @@ Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳
 
 ## 社群 {#communities}
 
-[AEM Communities](/help/communities/overview.md) 可簡化內部部署社群的建立和管理。
+[AEM ](/help/communities/overview.md) Communities可簡化內部部署社群的建立和管理。
 
 以下說明社群的一些最佳實務：
 
 |  |  |  |
 |---|---|---|
-| 使用使用者產生的內容(UGC)的最佳實務 | [編碼准則](/help/communities/code-guide.md) | 為社交元件架構(SCF)開發靈活、可 [攜式程式碼的指引](/help/communities/scf.md) 。 |
+| 使用使用者產生的內容(UGC)的最佳實務 | [編碼准則](/help/communities/code-guide.md) | 為[社交元件架構(SCF)開發靈活、可攜式程式碼的指引。](/help/communities/scf.md) |
 | Communities元件的範例使用 | [社群元件指南](/help/communities/components-guide.md) | 互動式開發工具。 |
 
 ## 工具/HTL {#tooling-htl}
 
-HTML範本語言(HTL)是AEM 6.0中新推出的HTML範本系統。 它取代JSP和ESP作為AEM的偏好範本系統。
+HTML範本語言(HTL)是AEM 6.0中新推出的HTML範本系統。它取代JSP和ESP作為AEM的偏好範本系統。
 
 |  |  |  |
 |---|---|---|
@@ -103,5 +103,5 @@ HTML範本語言(HTL)是AEM 6.0中新推出的HTML範本系統。 它取代JSP�
 >[!NOTE]
 >
 >以下是設定新AEM專案的最佳實務，其中詳述核心元件、可編輯範本、用戶端程式庫和元件開發的多部份教學課程可能很有趣：\
->[AEM Sites快速入門- WKND教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>[AEM Sites - WKND 教學課程快速入門](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
