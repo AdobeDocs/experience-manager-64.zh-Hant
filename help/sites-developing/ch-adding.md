@@ -18,15 +18,15 @@ ht-degree: 0%
 ---
 
 
-# 將ContextHub新增至頁面及存取商店 {#adding-contexthub-to-pages-and-accessing-stores}
+# 將ContextHub添加到頁面並訪問儲存{#adding-contexthub-to-pages-and-accessing-stores}
 
 將ContextHub新增至您的頁面，以啟用ContextHub功能並連結至ContextHub Javascript程式庫
 
 ContextHub Javascript API可讓您存取ContextHub管理的上下文資料。 本頁簡要說明API用於存取和控制上下文資料的主要功能。 依循API參考檔案的連結，以檢視詳細資訊和程式碼範例。
 
-## 將ContextHub新增至頁面元件 {#adding-contexthub-to-a-page-component}
+## 將ContextHub新增至頁面元件{#adding-contexthub-to-a-page-component}
 
-若要啟用ContextHub功能並連結至ContextHub Javascript程式庫，請在頁面的區段中加入contexthub `head` 元件。 頁面元件的JSP程式碼類似下列範例：
+若要啟用ContextHub功能並連結至ContextHub Javascript程式庫，請在頁面的`head`區段中加入contexthub元件。 頁面元件的JSP程式碼類似下列範例：
 
 ```xml
 <head>
@@ -34,9 +34,9 @@ ContextHub Javascript API可讓您存取ContextHub管理的上下文資料。 �
 </head>
 ```
 
-請注意，您也需要設定ContextHub工具列是否顯示在「預覽」模式中。 請參 [閱顯示和隱藏ContextHub UI](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui)。
+請注意，您也需要設定ContextHub工具列是否顯示在「預覽」模式中。 請參閱[顯示和隱藏ContextHub UI](/help/sites-administering/contexthub-config.md#showing-and-hiding-the-contexthub-ui)。
 
-## 關於ContextHub儲存 {#about-contexthub-stores}
+## 關於ContextHub儲存{#about-contexthub-stores}
 
 使用ContextHub儲存區來保存上下文資料。 ContextHub提供下列類型的商店，這些商店是所有商店類型的基礎：
 
@@ -45,19 +45,19 @@ ContextHub Javascript API可讓您存取ContextHub管理的上下文資料。 �
 * [JSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PeristingJSONPStore](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)
 
-所有商店類型都是類別的擴 [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) 充名稱。 如需建立新商店類型的詳細資訊，請參 [閱建立自訂商店](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)。 如需範例商店類型的詳細資訊，請參 [閱範例ContextHub商店候選者](/help/sites-developing/ch-samplestores.md)。
+所有儲存類型都是[`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core)類的副檔名。 有關建立新商店類型的資訊，請參閱[建立自定義商店](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)。 如需範例商店類型的詳細資訊，請參閱[範例ContextHub商店候選者](/help/sites-developing/ch-samplestores.md)。
 
-### 持久性模式 {#persistence-modes}
+### 持久性模式{#persistence-modes}
 
 Context Hub儲存區使用下列永續性模式之一：
 
-* **本地：** 使用HTML5 localStorage來保存資料。 本機儲存區會跨作業持續存在於瀏覽器上。
-* **會話：** 使用HTML5 sessionStorage來保存資料。 會話儲存在瀏覽器會話期間持續存在，並且可用於所有瀏覽器窗口。
-* **Cookie:** 使用瀏覽器對Cookie的原生支援來儲存資料。 在HTTP請求中，Cookie資料會傳送至伺服器或從伺服器傳送。
-* **Window.name:** 使用window.name屬性來保存資料。
+* **本機：使** 用HTML5 localStorage來保存資料。本機儲存區會跨作業持續存在於瀏覽器上。
+* **工作階段：** 使用HTML5 sessionStorage來保存資料。會話儲存在瀏覽器會話期間持續存在，並且可用於所有瀏覽器窗口。
+* **Cookie：使** 用瀏覽器對Cookie的原生支援來儲存資料。在HTTP請求中，Cookie資料會傳送至伺服器或從伺服器傳送。
+* **Window.name：使** 用window.name屬性保存資料。
 * **記憶體：** 使用Javascript物件來保存資料。
 
-預設情況下，Context Hub使用本地持久性模式。 如果瀏覽器不支援或允許HTML5 localStorage，則會使用「工作階段」永續性。 如果瀏覽器不支援或允許HTML5 sessionStorage，則會使用Window.name永續性。
+預設情況下，Context Hub使用本地持久性模式。 如果瀏覽器不支援或允許HTML5 localStorage，則會使用「作業」永續性。 如果瀏覽器不支援或允許HTML5 sessionStorage，則會使用Window.name永續性。
 
 ### 存放資料 {#store-data}
 
@@ -90,21 +90,21 @@ Object {
             |- elevation
 ```
 
-樹結構將儲存中的資料項定義為鍵／值對。 在上例中，鍵與 `/number` 值對應， `321`鍵與 `/data/country` 值對應 `Switzerland`。
+樹結構將儲存中的資料項定義為鍵／值對。 在上例中，鍵`/number`與值`321`對應，鍵`/data/country`與值`Switzerland`對應。
 
-### 控制物件 {#manipulating-objects}
+### 控制對象{#manipulating-objects}
 
-ContextHub提供用 [`ContextHub.Utils.JSON.tree`](/help/sites-developing/contexthub-api.md#contexthub-utils-json-tree) 於控制Javascript物件的類別。 在您將Javascript物件新增至商店或從商店取得之前，請使用此類別的函式來控制這些物件。
+ContextHub提供[`ContextHub.Utils.JSON.tree`](/help/sites-developing/contexthub-api.md#contexthub-utils-json-tree)類別，以控制Javascript物件。 在您將Javascript物件新增至商店或從商店取得之前，請使用此類別的函式來控制這些物件。
 
-此外，該類 [`ContextHub.Utils.JSON`](/help/sites-developing/contexthub-api.md#contexthub-utils-json) 還提供了一些函式，用於序列化要素的對象，以及將字串解序列化為對象。 使用此類別來處理JSON資料，以支援原生未包含和函式的瀏 `JSON.parse` 覽 `JSON.stringify` 器。
+此外，[`ContextHub.Utils.JSON`](/help/sites-developing/contexthub-api.md#contexthub-utils-json)類別還提供函式，用於序列化物件以區隔，以及將字串反序列化至物件。 使用此類別處理JSON資料，以支援本機不包含`JSON.parse`和`JSON.stringify`函式的瀏覽器。
 
-## 與ContextHub商店互動 {#interacting-with-contexthub-stores}
+## 與ContextHub儲存庫交互{#interacting-with-contexthub-stores}
 
-使用 [`ContextHub`](/help/sites-developing/contexthub-api.md#ui-event-constants) Javascript物件以Javascript物件形式取得商店。 在您取得儲存物件後，就可以控制它包含的資料。 使用 [`getAllStores`](/help/sites-developing/contexthub-api.md#getallstores) 或函 [`getStore`](/help/sites-developing/contexthub-api.md#getstore-name) 數獲取儲存。
+使用[`ContextHub`](/help/sites-developing/contexthub-api.md#ui-event-constants) Javascript物件，以Javascript物件形式取得商店。 在您取得儲存物件後，就可以控制它包含的資料。 使用[`getAllStores`](/help/sites-developing/contexthub-api.md#getallstores)或[`getStore`](/help/sites-developing/contexthub-api.md#getstore-name)函式來取得商店。
 
-### 訪問儲存資料 {#accessing-store-data}
+### 訪問儲存資料{#accessing-store-data}
 
-Javascript類 [`ContexHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) 別會定義數種與儲存資料互動的函式。 下列函式可儲存和擷取物件中包含的多個資料項目：
+[`ContexHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) Javascript類別定義了與儲存資料交互的幾個函式。 下列函式可儲存和擷取物件中包含的多個資料項目：
 
 * [addAllItems](/help/sites-developing/contexthub-api.md#addallitems-tree-options)
 * [getTree](/help/sites-developing/contexthub-api.md#gettree-includeinternals)
@@ -120,23 +120,23 @@ Javascript類 [`ContexHub.Store.Core`](/help/sites-developing/contexthub-api.md#
 >
 >ContextHub預設不會知道目前登入的發佈伺服器上使用過，且ContextHub會將這些使用者視為「匿名」。
 >
->您可以載入We.Retail參考網站中實作的描述檔商店，讓ContextHub得知已登入 [的使用者](/help/sites-developing/we-retail.md)。 請參閱GitHub [上的相關程式碼](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)。
+>您可以如[We.Retail參考網站](/help/sites-developing/we-retail.md)中所實作，載入描述檔商店，讓ContextHub得知已登入的使用者。 請參閱GitHub上的[相關代碼，此處](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)。
 
-### ContextHub事件 {#contexthub-eventing}
+### ContextHub事件{#contexthub-eventing}
 
-ContextHub包含事件框架，可讓您自動回應儲存事件。 每個儲存對象都 [`ContextHub.Utils.Eventing`](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing) 包含一個可用作儲存的屬性的對 [`eventing`](/help/sites-developing/contexthub-api.md#eventing) 像。 使用 [`on`](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents) 或 [`once`](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents) 函式將Javascript函式系結至商店事件。
+ContextHub包含事件框架，可讓您自動回應儲存事件。 每個儲存對象都包含[`ContextHub.Utils.Eventing`](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)對象，該對象可用作儲存的[`eventing`](/help/sites-developing/contexthub-api.md#eventing)屬性。 使用[`on`](/help/sites-developing/contexthub-api.md#on-name-handler-selector-triggerforpastevents)或[`once`](/help/sites-developing/contexthub-api.md#once-name-handler-selector-triggerforpastevents)函式將Javascript函式系結至商店事件。
 
 ## 使用內容中樞操控Cookie {#using-context-hub-to-manipulate-cookies}
 
-Context Hub Javascript API提供跨瀏覽器處理Cookie的支援。 命名空間 [`ContextHub.Utils.Cookie`](/help/sites-developing/contexthub-api.md#contexthub-utils-cookie) 定義了用於建立、控制和刪除Cookie的數個函式。
+Context Hub Javascript API提供跨瀏覽器處理Cookie的支援。 [`ContextHub.Utils.Cookie`](/help/sites-developing/contexthub-api.md#contexthub-utils-cookie)命名空間定義了用於建立、操作和刪除Cookie的幾個函式。
 
-## 確定已解決的ContextHub區段 {#determining-resolved-contexthub-segments}
+## 確定已解決的ContextHub區段{#determining-resolved-contexthub-segments}
 
-ContextHub區段引擎可讓您判斷哪些已註冊區段可在目前的上下文中解決。 使用類別的getResolvedSegments函式 [`ContextHub.SegmentEngine.SegmentManager`](/help/sites-developing/contexthub-api.md#contexthub-segmentengine-segmentmanager) 來擷取已解析的區段。 然後，使用 `getName` 類別 `getPath` 的或 [`ContextHub.SegmentEngine.Segment`](/help/sites-developing/contexthub-api.md#contexthub-segmentengine-segment) 函式來測試區段。
+ContextHub區段引擎可讓您判斷哪些已註冊區段可在目前的上下文中解決。 使用[`ContextHub.SegmentEngine.SegmentManager`](/help/sites-developing/contexthub-api.md#contexthub-segmentengine-segmentmanager)類別的getResolvedSegments函式來擷取已解析的區段。 然後，使用[`ContextHub.SegmentEngine.Segment`](/help/sites-developing/contexthub-api.md#contexthub-segmentengine-segment)類別的`getName`或`getPath`函式來測試區段。
 
-### 已安裝區段 {#installed-segments}
+### 已安裝的區段{#installed-segments}
 
-ContextHub區段會安裝在節 `/conf/we-retail/settings/wcm/segments` 點下。
+ContextHub區段會安裝在`/conf/we-retail/settings/wcm/segments`節點下方。
 
 * 女性
 * 女性30歲以上
@@ -165,24 +165,24 @@ ContextHub區段會安裝在節 `/conf/we-retail/settings/wcm/segments` 點下�
 
 用以解決這些區段的規則概述如下：
 
-* 女性或男性是從描述檔 `gender` 儲存的資料項 [中](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) 。
+* 從[配置檔案](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate)儲存的`gender`資料項中確定女性或男性。
 
 * 年齡是根據描述檔存放區的年齡資料項目而決定。
-* 季節是根據地理位置商店的緯度資料項 [目](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) ，以及surferinfo商店的月度資料項目來決定。
+* 季節根據[geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate)商店的緯度資料項目和surferinfo商店的月份資料項目來確定。
 
 >[!WARNING]
 >
 >已安裝的區段會作為參考設定提供，以協助您建立專案專屬的設定，因此不應直接使用。
 
-## 記錄ContextHub的調試消息 {#logging-debug-messages-for-contexthub}
+## 記錄ContextHub {#logging-debug-messages-for-contexthub}的調試消息
 
 設定Adobe Granite ContextHub OSGi服務(PID = `com.adobe.granite.contexthub.impl.ContextHubImpl`)，以記錄詳細的除錯訊息，這些訊息在開發時很有用。
 
-要配置服務，您可以使用 [Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) ，或在儲存庫 [中使用JCR節點](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository):
+要配置服務，您可以使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或在儲存庫](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中使用[JCR節點：
 
-* Web控制台： 要記錄調試消息，請選擇Debug屬性。
-* JCR節點： 要記錄調試消息，請將布爾 `com.adobe.granite.contexthub.debug` 屬性設定為 `true`。
+* Web控制台：要記錄調試消息，請選擇Debug屬性。
+* JCR節點：要記錄調試消息，請將布爾值`com.adobe.granite.contexthub.debug`屬性設定為`true`。
 
-## 請參閱ContextHub架構概觀 {#see-an-overview-of-the-contexthub-framework}
+## 請參閱ContextHub Framework {#see-an-overview-of-the-contexthub-framework}概觀
 
-ContextHub提供 [診斷頁](/help/sites-developing/ch-diagnostics.md) ，您可在其中查看ContextHub框架的概述。
+ContextHub提供[診斷頁面](/help/sites-developing/ch-diagnostics.md)，您可在其中查看ContextHub架構的概述。
