@@ -22,13 +22,13 @@ ht-degree: 1%
 
 ## 下載 {#download}
 
-此指令碼可簡化產生可讀報表 `access.log` 的檔案分析，以供日後處理。
+此指令碼可簡化`access.log`檔案的分析，產生可讀報告以供日後處理。
 
 [取得檔案](assets/analyse-access.sh)
 
 ## 說明 {#description}
 
-此指令碼可簡化產生可讀報表 `access.log` 的檔案分析，以供日後處理。
+此指令碼可簡化`access.log`檔案的分析，產生可讀報告以供日後處理。
 
 它會產生整體請求編號、GET與POST、隨時間的請求分發等。
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
 從檔案中擷取註解，告知您如何執行它：
 
-分析CQ外 `access.log` 推各種資訊並產生Markdown輸出 `stdout`。
+分析CQ `access.log`外推各種資訊，並在`stdout`上產生Markdown輸出。
 
 ## 使用狀況 {#usage}
 
