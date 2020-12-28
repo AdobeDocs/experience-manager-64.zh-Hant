@@ -18,7 +18,7 @@ ht-degree: 43%
 ---
 
 
-# AEM與網頁協助工具准則{#aem-and-the-web-accessibility-guidelines}
+# AEM和Web協助工具准則{#aem-and-the-web-accessibility-guidelines}
 
 從社會、經濟和法律層面來看，無論目標對象是否有任何不方便或限制，我們都有許多動機必須盡可能方便他們存取網頁內容。因此，網路無障礙日趨成為良好網頁設計中的重要一環。
 
@@ -53,21 +53,21 @@ ht-degree: 43%
 
 ## World Wide Web Consortium和WCAG 2.0 {#world-wide-web-consortium-and-wcag}
 
-[全球資訊網協會 (W3C)](https://www.w3.org/) 是致力於開發網頁標準的國際社群。為協助網頁設計人員和開發人員製作可存取的網站， [Web Accessibility Initiative(WAI)](https://www.w3.org/WAI/) 2008年12月出版了 [Web Content Accessibility Guidelines(WCAG)2.0](https://www.w3.org/TR/WCAG20/) （更新1999年發佈的原始版本）。
+[全球資訊網協會 (W3C)](https://www.w3.org/) 是致力於開發網頁標準的國際社群。為協助網頁設計人員和開發人員製作可存取的網站，[Web協助工具計畫(WAI)](https://www.w3.org/WAI/)於2008年12月發佈[Web內容協助工具指南(WCAG)2.0](https://www.w3.org/TR/WCAG20/)（更新1999年發佈的原始版本）。
 
 >[!NOTE]
 >
->An [updated version of the guidelines](https://www.w3.org/TR/WCAG21/) is currently in development, but will not be considered for this version of AEM.
+>[更新版的准則](https://www.w3.org/TR/WCAG21/)目前仍在開發中，但不會針對此AEM版本加以考慮。
 
 使用Adobe Experience Manager，內容作者和／或網站擁有者可建立符合WCAG 2.0 A級和AA級成功標準的網頁內容。
 
 我們的 [WCAG 2.0 快速指南](/help/managing/qg-wcag.md)中會強調說明 WCAG 2.0 的特定層面。
 
-### WCAG 2.0無障礙環境支援符合級別 {#wcag-accessibility-conformance-levels}
+### WCAG 2.0協助工具符合性級別{#wcag-accessibility-conformance-levels}
 
-WCAG 2.0提供了涵蓋 [無障礙環境支援等級的准則（與相關的成功標準）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)。
+WCAG 2.0提供了[指導方針（含相關成功標準），涵蓋無障礙環境支援等級](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)。
 
-這些與AEM相關的項目，在「A級」和「 [AA符合性」中涵蓋](/help/sites-authoring/creating-accessible-content.md)。 建立網站時，您必須決定要讓網站遵循的整體等級。
+這些與AEM有關，在[ Level A和AA Conformance](/help/sites-authoring/creating-accessible-content.md)下面涵蓋。 建立網站時，您必須決定要讓網站遵循的整體等級。
 
 >[!NOTE]
 >
