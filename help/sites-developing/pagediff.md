@@ -18,23 +18,23 @@ ht-degree: 0%
 ---
 
 
-# 開發與頁面比較{#developing-and-page-diff}
+# 開發和頁面差異{#developing-and-page-diff}
 
-## 功能概觀 {#feature-overview}
+## 功能概觀{#feature-overview}
 
 內容建立是一個反覆的過程。 製作具效率的內容需要能夠查看從一個迭代到另一個迭代的變化。 檢視一個頁面版本，然後檢視另一個頁面版本則無效率且容易出錯。 作者想要能夠並排比較目前頁面與先前版本的差異。
 
-頁面差異可讓使用者比較目前頁面與啟動、舊版等。 有關此用戶功能的詳細資訊，請參 [閱頁面差異](/help/sites-authoring/page-diff.md)。
+頁面差異可讓使用者比較目前頁面與啟動、舊版等。 有關此用戶功能的詳細資訊，請參見[頁面差異](/help/sites-authoring/page-diff.md)。
 
-## 操作詳細資訊 {#operation-details}
+## 操作詳細資訊{#operation-details}
 
-比較頁面版本時，使用者想要比較的舊版會由AEM在背景重新建立，以利比較。 這需要能夠演算內容以 [進行並排比較](/help/sites-authoring/page-diff.md#presentation-of-differences)。
+比較頁面版本時，使用者想要比較的舊版會由AEM在背景重新建立，以利比較。 這需要能夠呈現內容[以便並排比較](/help/sites-authoring/page-diff.md#presentation-of-differences)。
 
 此娛樂作業由AEM在內部完成，而且對使用者透明，不需要干預。 但是，在CRX DE Lite中查看儲存庫的管理員在內容結構中可以看到這些重新建立的版本。
 
 視AEM修補程式層級而定，行為不同，可能需要特定權限才能正常運作。
 
-### AEM 6.4.3之前版本 {#prior-to-aem}
+### AEM 6.4.3 {#prior-to-aem}之前版本
 
 比較內容時，會在下列位置重新建立整個要比較頁面的樹狀結構：
 
@@ -44,21 +44,21 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->為了使用頁面比較功能，用戶需要對節點具有 **修改／建立／刪除** 權限 `/content/versionhistory`。
+>為了使用頁面比較功能，用戶需要對節點`/content/versionhistory`具有&#x200B;**修改／建立／刪除**&#x200B;權限。
 
-### 自AEM 6.4.3起 {#as-of-aem}
+### 自AEM 6.4.3 {#as-of-aem}起
 
 比較內容時，會在下列位置重新建立整個要比較頁面的樹狀結構：
 
 `/tmp/versionhistory/`
 
-此內容由權限限制目前使用者可見度的服務使用者建立。 因此，不需要特殊權限。
+此內容是由具有權限限制目前使用者可見性的服務使用者建立。 因此，不需要特殊權限。
 
 自動執行清除任務以清除此臨時內容。
 
-## 開發人員限制 {#developer-limitations}
+## 開發人員限制{#developer-limitations}
 
-以前，在Classic UI中，必須特別考慮開發以利AEM差異化(例如使用 `cq:text` tag lib，或自訂將 `DiffService` OSGi服務整合至元件)。 新的比較功能不再需要這個功能，因為比較是通過DOM比較在客戶端進行。
+以前，在Classic UI中，必須特別考慮開發以利AEM差異化（例如使用`cq:text`標籤庫，或自訂將`DiffService` OSGi服務整合至元件）。 新的比較功能不再需要這個功能，因為比較是通過DOM比較在客戶端進行。
 
 不過，開發人員需要考慮許多限制。
 
