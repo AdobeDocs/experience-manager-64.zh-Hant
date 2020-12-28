@@ -17,5 +17,5 @@ ht-degree: 0%
 ---
 
 
-# （重新導向）啟動指南{#redirect-kickstart-guide}
+# （重定向）Kickstart指南{#redirect-kickstart-guide}
 
