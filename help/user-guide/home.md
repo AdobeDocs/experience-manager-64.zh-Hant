@@ -7,25 +7,28 @@ contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
 source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 3%
 
 ---
 
 
-# AEM 6.4使用指南中樞 {#aem-64-user-guide}
+# AEM 6.4使用指南中樞{#aem-64-user-guide}
 
 ## 簡介 {#introduction}
 
-| [第一步](https://helpx.adobe.com/experience-manager/get-started.html) | [功能影片](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html) | [發行說明](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) |
+| [第一步](https://helpx.adobe.com/experience-manager/get-started.html) | [功能影片](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html) | [發行說明](https://helpx.adobe.com/tw/experience-manager/6-5/release-notes.html) |
 |:-:|:-:|:-:|
 | 探索AEM快速入門的教學課程和文章 | 精選影片，強調6.4新功能 | 探索AEM 6.4的新增功能 |
 
-## 使用指南和資源 {#user-guides-and-resources}
+## 使用手冊和資源{#user-guides-and-resources}
 
 * [AEM Capabilities使用指南](capabilities.md)
 * [AEM實作使用指南](implementation.md)
 * [AEM資源](resources.md)
 
-## 疑難排解與說明 {#troubleshooting-and-help}
+## 疑難排解與說明{#troubleshooting-and-help}
 
 * [AEM新手](new.md)
 * [瞭解AEM功能](learn.md)
@@ -33,16 +36,16 @@ source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
 * [AEM社群](community.md)
 * [AEM中的疑難排解](troubleshooting.md)
 
-## 連絡人選項 {#contact-options}
+## 連絡選項{#contact-options}
 
 支援代表可透過下列方式取得協助支援：
 
 * Web:Experience Manager支援入口網站
-* 電話：查 [找您所在地區的電話號碼。](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
+* 電話：[尋找您所在地區的電話號碼。](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
 
 >[!NOTE]
 >
->不確定您是否為支援 **代表**? 瞭解此使用者 [類型是否適用於您](https://helpx.adobe.com/experience-cloud/supported-users.html) ，並瞭解我們的 [企業支援條款](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)。
+>不確定您是否為&#x200B;**支援委派**? 瞭解此[使用者類型是否適用於您](https://helpx.adobe.com/experience-cloud/supported-users.html)，並瞭解我們的[企業支援條款](https://helpx.adobe.com/support/programs/enterprise-support-terms.html)。
 
 ## 社群 {#community}
 
