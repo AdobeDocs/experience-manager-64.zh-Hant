@@ -26,7 +26,7 @@ ht-degree: 0%
 * Javascript來源檔案
 * SVN資源（JCR節點）的XML表示
 
-## 設定字串擷取 {#configuring-string-extraction}
+## 配置字串提取{#configuring-string-extraction}
 
 設定xgettext-maven-plugin工具擷取專案字串的方式。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 | /parsers/regexp | 配置Java、JSP和ExtJS範本檔案的剖析。 您不需要變更本節。 |
 | /potement | 偵測要國際化的字串的公式。 |
 
-### 標識要解析的檔案 {#identifying-the-files-to-parse}
+### 識別要解析的檔案{#identifying-the-files-to-parse}
 
 i18n.any檔案的/filter區段可識別xgettext-maven-plugin工具所剖析的檔案。 新增數個包含和排除規則，用以分別識別已剖析和忽略的檔案。 您應包含所有檔案，然後排除您不想解析的檔案。 通常，您會排除不會對UI貢獻的檔案類型，或是定義UI但未翻譯的檔案。 包含和排除規則具有下列格式：
 
@@ -65,13 +65,13 @@ i18n.any檔案的/filter區段可識別xgettext-maven-plugin工具所剖析的�
 
 規則的陣列部分用於匹配要包括或排除的檔案的名稱。 模式前置詞指示您是要匹配JCR節點（其在Vault中的表示法）還是檔案系統。
 
-| 首碼 | 效果 |
+| 字首 | 效果 |
 |---|---|
 | / | 表示JCR路徑。 因此，此前置詞與jcr_root目錄下的檔案匹配。 |
 | &amp;ast; | 表示檔案系統上的常規檔案。 |
 | 無 | 沒有前置詞，或以資料夾或檔案名開頭的模式，表示檔案系統上的常規檔案。 |
 
-在模式中使用時， /字元表示子目錄和&amp;ast; 字元符合所有。 下表列出數個範例規則。
+在模式中使用時， /字元表示子目錄和&amp;ast;字元符合所有。 下表列出數個範例規則。
 
 <table> 
  <tbody> 
@@ -100,7 +100,7 @@ i18n.any檔案的/filter區段可識別xgettext-maven-plugin工具所剖析的�
  </tbody> 
 </table>
 
-### 擷取字串  {#extracting-the-strings}
+### 提取字串{#extracting-the-strings}
 
 無POM:
 
@@ -108,7 +108,7 @@ i18n.any檔案的/filter區段可識別xgettext-maven-plugin工具所剖析的�
 mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.verbose=true -Dxgettext.target=out -Dxgettext.rules=i18n.any -Dxgettext.root=.
 ```
 
-使用POM: 將此添加到POM:
+使用POM:將此添加到POM:
 
 ```xml
 <build>
@@ -134,13 +134,13 @@ mvn -N com.adobe.granite.maven:xgettext-maven-plugin:1.2.2:extract  -Dxgettext.v
 mvn xgettext:extract
 ```
 
-### 輸出檔案 {#output-files}
+### 輸出檔案{#output-files}
 
-* `raw.xliff`: 提取的字串
-* `warn.log`: 警告（如果有），如果 `CQ.I18n.getMessage()` API使用不正確。 這些應用程式總需要修正，然後再重新執行。
+* `raw.xliff`:提取的字串
+* `warn.log`:警告（如果有），如果 `CQ.I18n.getMessage()` API使用不正確。這些應用程式總需要修正，然後再重新執行。
 
-* `parserwarn.log`: 解析器警告（如果有），例如js解析器發出
-* `potentials.xliff`: 「潛在」候選項，但可能是需要翻譯的人類可讀字串（可以忽略，仍然會產生大量誤報）
-* `strings.xliff`: 平面化xliff檔案，要導入到ALF
-* `backrefs.txt`: 允許快速查找指定字串的原始碼位置
+* `parserwarn.log`:解析器警告（如果有），例如js解析器發出
+* `potentials.xliff`:「潛在」候選人未被提取，但可能是需要翻譯的人類可讀字串（可以忽略，仍會產生大量誤報）
+* `strings.xliff`:平面化xliff檔案，要導入到ALF
+* `backrefs.txt`:允許快速查找指定字串的原始碼位置
 
