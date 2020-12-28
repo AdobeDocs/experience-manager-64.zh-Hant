@@ -32,23 +32,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->由於電子商務架構可與任何電子商務解決方案搭配使用，請參閱 [Developing(generic)](/help/sites-developing/generic.md) ，以取得有關使用Intershop、Elastic Path或IBM Websphere Commerce開發可能性的詳細資訊。
+>由於電子商務架構可與任何電子商務解決方案搭配使用，請參閱[開發（一般）](/help/sites-developing/generic.md)，以取得有關使用Intershop、Elastic Path或IBM Websphere Commerce開發可能性的詳細資訊。
 
 >[!NOTE]
 >
->若要與外部電子商務提供者使用整合架構，您必須先安裝所需的套件。 如需詳細資訊，請參 [閱部署電子商務](/help/sites-deploying/ecommerce.md)。
+>若要與外部電子商務提供者使用整合架構，您必須先安裝所需的套件。 如需詳細資訊，請參閱[部署電子商務](/help/sites-deploying/ecommerce.md)。
 >
->如需有關概念和管理電子商務實作的資訊，請參 [閱管理電子商務](/help/sites-administering/ecommerce.md)。
+>有關概念和管理電子商務實施的資訊，請參閱[管理電子商務](/help/sites-administering/ecommerce.md)。
 
-## API檔案 {#api-documentation}
+## API檔案{#api-documentation}
 
 電子商務API由以下套件提供：
 
 `com.adobe.cq.commerce.*`
 
-如需詳細 [資訊，請參閱](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) API檔案。
+如需詳細資訊，請參閱[API檔案](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)。
 
 >[!NOTE]
 >
->如需詳細說明建立電子商務供應商的所有步驟的完整文章，請參 [閱建立自訂Adobe Experience Manager 6.2電子商務供應商](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)。
+>如需詳細說明建立電子商務提供者的所有步驟的完整文章，請參閱[建立自訂Adobe Experience Manager 6.2電子商務提供者](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)。
 
