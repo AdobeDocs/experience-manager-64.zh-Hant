@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 效能與可擴充性{#performance-scalability}
+# 效能和可擴充性{#performance-scalability}
 
-## 白皮書： AEM可擴充性、效能和災難恢復 {#white-paper-aem-scalability-performance-and-disaster-recovery}
+## 白皮書：AEM Scalability, Performance, and Disaster Recovery {#white-paper-aem-scalability-performance-and-disaster-recovery}
 
 本白皮書討論Adobe Experience Manager中的可擴充性，以及出色的效能指標和優異的災難恢復功能。
 
