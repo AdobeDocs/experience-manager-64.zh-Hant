@@ -24,15 +24,15 @@ ht-degree: 0%
 >
 >本檔案說明如何在現代化觸控式使用者介面中自訂主控台，而不適用於傳統使用者介面。
 
-AEM提供多種機制，讓您自訂製作例項的控制台( [以及頁面製作功能](/help/sites-developing/customizing-page-authoring-touch.md))。
+AEM提供多種機制，讓您自訂製作例項的控制台（以及[頁面製作功能](/help/sites-developing/customizing-page-authoring-touch.md)）。
 
 * Clientlibs
 
-   Clientlibs可讓您擴充預設實作，以實現新功能，同時重複使用標準函式、物件和方法。 在自訂時，您可以在「例如，它可以 `/apps.` 保存自訂元件所需的代碼」下建立自己的clientlib。
+   Clientlibs可讓您擴充預設實作，以實現新功能，同時重複使用標準函式、物件和方法。 在自訂時，您可以在`/apps.`下建立自己的clientlib，例如，它可以保存自訂元件所需的程式碼。
 
 * 覆蓋
 
-   覆蓋以節點定義為基礎，可讓您將標準功能(在 `/libs`)與您自訂的功能(在 `/apps`)覆蓋。 當建立覆蓋時，不需要原稿的1:1復本，因為sling資源合併允許繼承。
+   覆蓋是以節點定義為基礎，可讓您以您自己的自訂功能（在`/libs`中）覆蓋標準功能。 `/apps`當建立覆蓋時，不需要原稿的1:1復本，因為sling資源合併允許繼承。
 
 這些功能可以透過多種方式來擴充AEM主控台。 以下涵蓋小部分選擇（在高層）。
 
@@ -40,34 +40,34 @@ AEM提供多種機制，讓您自訂製作例項的控制台( [以及頁面製�
 >
 >如需詳細資訊，請參閱：
 >
->* 使用和建立 [clientlibs](/help/sites-developing/clientlibs.md)。
->* 使用和建立 [覆蓋](/help/sites-developing/overlays.md)。
+>* 使用並建立[clientlibs](/help/sites-developing/clientlibs.md)。
+>* 使用並建立[覆蓋](/help/sites-developing/overlays.md)。
 >* [花崗岩](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >
 >
-AEM Gems工作階段- [User interface customization for AEM 6.0中也包含](https://docs.adobe.com/content/ddc/en/gems.html) 此主題 [](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html)。
+此主題也會在[AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)工作階段- [AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html)的使用者介面自訂中討論。
 
 >[!CAUTION]
 >
->您 ***不得*** 更改路徑中的任 `/libs` 何內容。
+>您&#x200B;***必須***&#x200B;不要變更`/libs`路徑中的任何項目。
 >
->這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
+>這是因為下次升級實例時會覆寫`/libs`的內容（套用修補程式或功能套件時，很可能會覆寫）。
 >
 >配置和其他更改的建議方法為：
 >
->1. 重新建立必要項目(如中所 `/libs`示) `/apps`
+>1. 在`/apps`下重新建立所需項目（如`/libs`中所存在）
    >
    >
-1. 在 `/apps`
+1. 在`/apps`中進行任何更改
 
 >
 
 
 
-例如，結構中的下列位 `/libs` 置可以覆蓋：
+例如，`/libs`結構中的以下位置可以重疊：
 
-* 控制台（任何以Granite UI頁面為基礎的控制台）; 例如：
+* 控制台（任何以Granite UI頁面為基礎的控制台）;例如：
 
    * `/libs/wcm/core/content`
 
@@ -98,7 +98,7 @@ AEM Gems工作階段- [User interface customization for AEM 6.0中也包含](htt
 -->
 >[!NOTE]
 >
->請參閱知識庫文章「疑難排 [解AEM TouchUI問題](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)」，以取得更多提示和工具。
+>請參閱知識庫文章「疑難排解AEM TouchUI問題」[，以取得更多提示和工具。](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -187,7 +187,7 @@ You can find the code of this page on GitHub
         * `srcPath` = `cq/core/content/nav`
 -->
 
-## 自訂控制台的預設檢視 {#customizing-the-default-view-for-a-console}
+## 自定義控制台{#customizing-the-default-view-for-a-console}的預設視圖
 
 您可以自訂控制台的預設檢視（欄、卡片、清單）:
 
@@ -209,9 +209,9 @@ You can find the code of this page on GitHub
 
    定義下列屬性：
 
-   * **名稱**: `sling:orderBefore`
-   * **類型**: `String`
-   * **值**: `column`
+   * **名稱**:  `sling:orderBefore`
+   * **類型**:  `String`
+   * **值**:  `column`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -261,9 +261,9 @@ You can find the code of this page on GitHub
           `/apps/<yourProject>/admin/ext/launches/content/jcr:content/body/rail`
 -->
 
-## 將新動作新增至工具列 {#add-new-action-to-the-toolbar}
+## 新增動作至工具列{#add-new-action-to-the-toolbar}
 
-1. 您可以建立自己的元件，並包含自訂動作的對應用戶端程式庫。 例如，Promote to Twitter **動作** :
+1. 您可以建立自己的元件，並包含自訂動作的對應用戶端程式庫。 例如，**Promote to Twitter**&#x200B;動作位於：
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -275,7 +275,7 @@ You can find the code of this page on GitHub
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-## 將工具列動作限制為特定群組 {#restrict-a-toolbar-action-to-a-specific-group}
+## 將工具列動作限制為特定群組{#restrict-a-toolbar-action-to-a-specific-group}
 
 1. 您可以使用自訂演算條件來覆蓋標準動作，並強加在演算前必須履行的特定條件。
 
@@ -295,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   使用此節點上的屬性，可以定義 `groups` 允許執行特定操作； 例如， `administrators`
+   使用此節點上的屬性，可以定義允許執行特定操作的`groups`;例如，`administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -364,11 +364,11 @@ You can restrict access to a navigation option using ACLs:
     * `communities`
 -->
 
-## 自訂清單檢視中的欄 {#customizing-columns-in-the-list-view}
+## 自定義清單視圖{#customizing-columns-in-the-list-view}中的列
 
 >[!NOTE]
 >
->此功能已針對多欄文字欄位最佳化； 對於其他資料類型，可以在中覆 `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` 蓋 `/apps`。
+>此功能已針對多欄文字欄位最佳化；對於其他資料類型，可以覆蓋`/apps`中的`cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer`。
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -389,19 +389,19 @@ You can find the code of this page on GitHub
       `/apps/wcm/core/content/common/availablecolumns`
 
    * 新增欄或移除現有欄。
-   如需 [詳細資訊，請參閱使用覆蓋（和Sling Resource Merger）](/help/sites-developing/overlays.md) 。
+   如需詳細資訊，請參閱[使用覆蓋（和Sling Resource Merger）](/help/sites-developing/overlays.md)。
 
 1. （可選）:
 
-   * 如果您想要插入其他資料，則需要使用 ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)`
+   * 如果您想要插入其他資料，則需要使用` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)`
 
       `pageInfoProviderType` 屬性.
    例如，請參閱下方所附的類別／搭售（來自GitHub）。
 
 1. 您現在可以在清單檢視的欄設定器中選取欄。
 
-## 篩選資源 {#filtering-resources}
+## 篩選資源{#filtering-resources}
 
 使用主控台時，常見的使用案例是使用者必須從資源（例如頁面、元件、資產等）中選擇。 這可以以清單的形式，例如作者必須從中選擇項目。
 
-為了將清單保持在合理大小並與使用案例相關，可以以自訂述詞的形式實作篩選。 如需詳 [細資訊，請參閱](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) 本文章。
+為了將清單保持在合理大小並且與使用案例相關，可以以自訂謂詞的形式實作篩選器。 如需詳細資訊，請參閱[本文](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources)。
