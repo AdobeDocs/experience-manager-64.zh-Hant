@@ -27,9 +27,9 @@ ht-degree: 0%
 * 搜尋調整
 * 橫幅
 
-請注意，您只有在AEM管理員已啟用Search&amp;Promote功能時，才能使用這些功能。 請參 [閱「與Adobe Search&amp;Promote整合」](/help/sites-administering/search-and-promote.md)。
+請注意，您只有在AEM管理員已啟用Search&amp;Promote功能時，才能使用這些功能。 請參閱[與Adobe Search&amp;Promote整合](/help/sites-administering/search-and-promote.md)。
 
 >[!NOTE]
 >
->傳統UI製作檔案中提供有關將Search&amp;Promote功能新增至頁面的詳細資訊。 如需詳 [細資訊，請參閱新增搜尋與促銷功能](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) 至您的頁面。
+>傳統UI製作檔案中提供有關將Search&amp;Promote功能新增至頁面的詳細資訊。 如需詳細資訊，請參閱[新增搜尋與促銷功能至您的頁面](/help/sites-classic-ui-authoring/classic-feature-search-promote.md)。
 
