@@ -30,19 +30,19 @@ ht-degree: 2%
 >
 >應用程式定義會系結至應用程式，因此需要在AEM Mobile應用程式主控台中建立應用程式。
 
-## 建立新的應用程式定義 {#creating-a-new-app-definition}
+## 建立新的應用程式定義{#creating-a-new-app-definition}
 
-1. 從「 **AEM Navigation Console** 」中選擇「Mobile」。
+1. 從「AEM導覽主控台」選擇「**Mobile**」。
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. 選擇「 **Apps** from **Mobile** 」，然後按一下「 **建立」。**
+1. 從&#x200B;**Mobile**&#x200B;選擇&#x200B;**Apps**，然後按一下「建立」。****
 
-   選擇「 **應用程式** 」並輸入詳細資訊，以建立您的新應用程式。
+   選擇&#x200B;**App**&#x200B;以及輸入詳細資訊以建立您的新應用程式。
 
    ![chlimage_1-11](assets/chlimage_1-11.gif)
 
-### 後續步驟 {#the-next-steps}
+### 後續步驟{#the-next-steps}
 
 熟悉「應用程式定義」後，請進一步瞭解下列製作資源：
 
