@@ -24,7 +24,7 @@ ht-degree: 4%
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-若要重新啟用「頁面資訊」功 **能表中的「在Classic UI****中開啟」選項** ，請依照下列步驟進行。
+要重新啟用&#x200B;**頁面資訊**&#x200B;功能表中Classic UI **中的**&#x200B;開啟選項，請遵循下列步驟。
 
 1. 使用CRXDE Lite，查找以下節點：
 
@@ -34,17 +34,17 @@ ht-degree: 4%
 
    `http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
-1. 使用「覆蓋節點」選 **項建立覆蓋** ; 例如：
+1. 使用&#x200B;**覆蓋節點**&#x200B;選項建立覆蓋；例如：
 
-   * **路徑**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
+   * **路徑**:  `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **重疊位置**: `/apps/`
-   * **匹配節點類型**: 活動（選擇複選框）
+   * **匹配節點類型**:活動（選擇複選框）
 
 1. 將下列多值文字屬性新增至覆蓋節點：
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. 編輯 **頁面時，「頁面資訊」選單中會再** 次提供「在傳統UI中開啟 **** 」選項。
+1. 編輯頁面時，**在傳統UI中開啟**&#x200B;選項會再次出現在&#x200B;**頁面資訊**&#x200B;選單中。
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
