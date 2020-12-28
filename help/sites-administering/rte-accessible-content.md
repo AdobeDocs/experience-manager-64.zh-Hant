@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 配置RTE以生成可訪問站點 {#configuring-rte-for-producing-accessible-sites}
+# 配置RTE以生成可訪問站點{#configuring-rte-for-producing-accessible-sites}
 
 AEM支援兩者：
 
@@ -33,17 +33,17 @@ AEM支援兩者：
 
 內容作者可使用RTE的功能在將內容新增至頁面時提供協助工具資訊。 這包括通過標題和段落元素添加結構資訊。
 
-您可以 [為元件配置RTE插件](#configuring-the-plugin-features) ，以配置和自定義這些功能。 例如，外掛程 `paraformat` 式可讓您新增其他區塊層級的語義元素，包括將支援的標題層級數擴充至基本 `H1`, `H2` 並依預設 `H3` 提供。
+您可以通過為元件配置RTE plugins[來配置和自定義這些功能。 ](#configuring-the-plugin-features)例如，`paraformat`外掛程式可讓您新增其他區塊層級的語義元素，包括將支援的標題層級數擴充至預設提供的基本`H1`、`H2`和`H3`。
 
-RTE可在觸控式和傳統UI的多種元件中使用。 但是，使用RTE的主要元件是 **Text** 。
+RTE可在觸控式和傳統UI的多種元件中使用。 但是，使用RTE的主要元件是&#x200B;**Text**&#x200B;元件。
 
-AEM **中的Text** （文字）元件可供觸控式和傳統UI使用。 下列影像顯示已啟用多種增效模組的豐富型文字編輯器，包括 `paraformat`:
+AEM中的&#x200B;**Text**&#x200B;元件適用於觸控式和傳統UI。 下列影像顯示已啟用多種增效模組的豐富型文字編輯器，包括`paraformat`:
 
-* 啟 **用觸控** UI中的Text元件：
+* 啟用觸控的UI中的&#x200B;**Text**&#x200B;元件：
 
    ![在觸控式UI中以全螢幕模式顯示的文字元件(RTE)。](assets/chlimage_1-206.png)
 
-* 傳統 **UI中的** Text元件：
+* 傳統UI中的&#x200B;**Text**&#x200B;元件：
 
    ![在傳統UI中編輯文本元件的對話框(RTE)。](assets/chlimage_1-207.png)
 
@@ -58,64 +58,64 @@ AEM **中的Text** （文字）元件可供觸控式和傳統UI使用。 下列�
 
 
 
-## 設定外掛程式功能 {#configuring-the-plugin-features}
+## 設定外掛程式功能{#configuring-the-plugin-features}
 
-有關配置RTE的完整說明可在「配置富 [格文本編輯器」頁上獲得](/help/sites-administering/rich-text-editor.md) 。 這涵蓋所有問題，包括關鍵步驟：
+有關配置RTE的完整說明，請參見[配置富格文本編輯器](/help/sites-administering/rich-text-editor.md)頁。 這涵蓋所有問題，包括關鍵步驟：
 
 * [外掛程式及其功能](/help/sites-administering/rich-text-editor.md#aboutplugins)
 * [配置位置](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)
 * [啟動外掛程式並設定功能屬性](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [配置RTE的其他功能](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-透過在CRXDE Lite的適當子 `rtePlugins` 分支中設定外掛程式（請參閱下圖），您就可啟動該外掛程式的所有或特定功能。
+在CRXDE Lite中適當的`rtePlugins`子分支中設定外掛程式（請參閱下圖），即可啟動該外掛程式的所有或特定功能。
 
 ![CRXDE Lite，顯示範例rtePlugin。](assets/chlimage_1-208.png)
 
-### 示例——指定RTE選擇欄位中可用的段落格式 {#example-specifying-paragraph-formats-available-in-rte-selection-field}
+### 示例——在RTE選擇欄位{#example-specifying-paragraph-formats-available-in-rte-selection-field}中指定可用段落格式
 
 新的語義塊格式可通過以下方式提供供選擇：
 
-1. 根據RTE，確定並導航到配 [置位置](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)。
+1. 根據RTE，確定並導航至[配置位置](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations)。
 1. [啟用「段落選擇」欄位](/help/sites-administering/rich-text-editor.md);啟動 [外掛程式](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)。
 1. [在「段落選取」欄位中指定您想要使用的格式](/help/sites-administering/rich-text-editor.md)。
 1. 然後，內容作者可從RTE中的選擇欄位使用段落格式。 可以訪問這些檔案：
 
-   * 使用觸控式UI[中的](https://en.wikipedia.org/wiki/Pilcrow)(pilcrow)圖示：
+   * 使用觸控式UI中的段落([pilcrow](https://en.wikipedia.org/wiki/Pilcrow))圖示：
 
    ![段落(Pilcrow)圖示。](do-not-localize/chlimage_1-7.png)
 
-   * 使用 **傳統** UI中的「格式」欄位（下拉式選取器）。
+   * 使用傳統UI中的&#x200B;**Format**&#x200B;欄位（下拉式選取器）。
 
 
 AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的內容提供了良好的基礎。 內容作者無法使用RTE格式化字型大小或顏色或其他相關屬性，因而無法建立內嵌格式。 而必須選取適當的結構元素，例如標題，並使用從「樣式」選項中選擇的全域樣式。 這可確保清晰的標籤、更適合使用自己樣式表瀏覽的使用者以及正確結構化內容的選項。
 
-## 原始碼編輯功能的使用 {#use-of-the-source-edit-feature}
+## 使用原始碼編輯功能{#use-of-the-source-edit-feature}
 
-在某些情況下，內容作者會發現有必要檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的一部分內容可能需要額外的標籤，以確保符合WCAG 2.0。這可以通過RTE的源 [編輯](/help/sites-administering/rich-text-editor.md#aboutplugins) 選項來完成。 您可以在外掛 [ 程 `sourceedit` 式上指定 `misctools` 功能](/help/sites-administering/rich-text-editor.md#aboutplugins)。
+在某些情況下，內容作者會發現有必要檢查並調整使用RTE建立的HTML原始碼。 例如，在RTE中建立的一部分內容可能需要額外的標籤，以確保符合WCAG 2.0。這可以通過RTE的[源edit](/help/sites-administering/rich-text-editor.md#aboutplugins)選項來完成。 您可以在`misctools` plugin](/help/sites-administering/rich-text-editor.md#aboutplugins)上指定[ `sourceedit`功能。
 
 >[!CAUTION]
 >
->請小心 `sourceedit` 使用功能。 輸入錯誤和／或不支援的功能會導致更多問題。
+>小心使用`sourceedit`功能。 輸入錯誤和／或不支援的功能會導致更多問題。
 
-## 新增對其他HTML元素和屬性的支援 {#adding-support-for-additional-html-elements-and-attributes}
+## 新增對其他HTML元素和屬性的支援{#adding-support-for-additional-html-elements-and-attributes}
 
-若要進一步擴充AEM的協助功能，可以使用其他元素和屬性來擴充以RTE(例如 **Text** 和 **Table** components)為基礎的現有元件。
+為了進一步擴充AEM的協助功能，可以以RTE為基礎（例如&#x200B;**Text**&#x200B;和&#x200B;**Table**&#x200B;元件）來擴充現有元件，並附加元素和屬性。
 
-以下過程說明如何使用 **Caption元素擴展Table****** （表）元件，該元素向輔助技術用戶提供有關資料表的資訊：
+以下過程說明如何使用&#x200B;**Caption**&#x200B;元素擴展&#x200B;**Table**&#x200B;元件，該元素向輔助技術用戶提供有關資料表的資訊：
 
-### 示例——將標題添加到表屬性對話框 {#example-adding-the-caption-to-the-table-properties-dialog}
+### 示例——將標題添加到表屬性對話框{#example-adding-the-caption-to-the-table-properties-dialog}
 
-在的建構函 `TablePropertiesDialog`式中，新增用於編輯標題的其他文字輸入欄位。 請注意， `itemId` 必須設 `caption` 定為（亦即DOM屬性的名稱）才能自動處理其內容。
+在`TablePropertiesDialog`的建構函式中，新增用於編輯標題的其他文字輸入欄位。 請注意，`itemId`必須設為`caption`（亦即DOM屬性的名稱），才能自動處理其內容。
 
-在 **表中** ，必須將屬性明確設定或從DOM元素中刪除。 值由對象中的對話框傳 `config` 遞。 請注意，DOM屬性應使用對應的方法來設 `CQ.form.rte.Common` 定／移除( `com` 是捷徑 `CQ.form.rte.Common`)，以避免瀏覽器實作中常見的錯誤。
+在&#x200B;**Table**&#x200B;中，必須明確將屬性設定為DOM元素或從DOM元素中刪除該屬性。 值由`config`對象中的對話框傳遞。 請注意，應使用相應的`CQ.form.rte.Common`方法（`com`是`CQ.form.rte.Common`的捷徑）來設定／移除DOM屬性，以避免瀏覽器實作中常見的缺陷。
 
 >[!NOTE]
 >
 >此程式僅適用於傳統UI。
 
-### 逐步指示 {#step-by-step-instructions}
+### 逐步說明{#step-by-step-instructions}
 
-1. 啟動CRXDE Lite。 例如： [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. 啟動CRXDE Lite。 例如：[http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. 複製:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
@@ -140,7 +140,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/plugins/TablePropertiesDialog.js`
 
-1. 在方 `constructor` 法中，行讀取前：
+1. 在`constructor`方法中，行讀取前：
 
    ```
    var dialogRef = this;
@@ -162,7 +162,7 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
 
    `/apps/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`。
 
-1. 在方法結尾處新增下列程 `transferConfigToTable` 式碼：
+1. 在`transferConfigToTable`方法的結尾添加以下代碼：
 
    ```
    /**
@@ -197,14 +197,14 @@ AEM透過段落格式選項在RTE中提供結構元素，為開發可存取的�
    }
    ```
 
-1. 使用「全部儲存」來儲 **存變更**
+1. 使用&#x200B;**Save All**&#x200B;儲存變更
 
 >[!NOTE]
 >
->純文字欄位並非標題元素值允許的唯一輸入類型。 任何透過其方法提供標題值的ExtJS介面工具集 `getValue()` 都可使用。
+>純文字欄位並非標題元素值允許的唯一輸入類型。 任何透過`getValue()`方法提供標題值的ExtJS介面工具集都可使用。
 >
 >若要新增編輯功能，以取得其他元素和屬性，請確定兩者：
 >
->* 每 `itemId` 個對應欄位的屬性會設為適當DOM屬性(`TablePropertiesDialog`)的名稱。
->* 在DOM元素上明確設定和／或移除屬性(`Table`)。
+>* 每個對應欄位的`itemId`屬性會設為適當DOM屬性的名稱(`TablePropertiesDialog`)。
+>* 在DOM元素上顯式地設定和／或刪除屬性(`Table`)。
 
