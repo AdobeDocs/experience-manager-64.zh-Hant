@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# 不要發佈，但不要刪除自訂內容片段模型{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# 不要發佈，但不要刪除自定義內容片段模型{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
-「內容片段模型」編輯器是基於的嚮導， `Formbuilder`繼承自：
+「內容片段模型」編輯器是基於`Formbuilder`的嚮導，繼承自：
 
 `granite/ui/components/foundation/form/formbuilder`
 
@@ -27,26 +27,27 @@ ht-degree: 0%
 
 ## 位置 {#locations}
 
-模型會儲存並建立在啟 `/conf`用「內容片段模型」屬 [性的資料夾下](/help/assets/content-fragments-models.md#enable-content-fragment-models) 。 此設定也可在「設定屬性」中 **看到**，您可從「設定瀏 **[覽器」存取](/help/sites-administering/configurations.md)**。
+在`/conf`下，在[啟用「內容片段模型」屬性](/help/assets/content-fragments-models.md#enable-content-fragment-models)的資料夾下儲存並建立模型。 此設定也可在&#x200B;**配置屬性**&#x200B;中看到，可從&#x200B;**[配置瀏覽器](/help/sites-administering/configurations.md)**&#x200B;訪問。
 
-1. 透過工具、一般 **、設定瀏覽**&#x200B;器導覽 **至瀏**&#x200B;覽 ****&#x200B;器例如， 
+1. 通過&#x200B;**工具**、**一般**、**配置瀏覽器**瀏覽器
+例如， 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
-1. 從瀏覽器中，從工具列中選擇適當的 **配置** 「屬性」。
+1. 從瀏覽器中，從工具欄中選擇相應的配置，然後選擇&#x200B;**屬性**。
 
-   例如，下列項目的屬 `global`性： `http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
+   例如，`global`的屬性：`http://localhost:4502/libs/granite/configurations/content/edit.html/conf/global`
 
-在模型控制台中，將顯示所有具有「內 **容片段模型」屬性的資料夾** 。 透過工 **具**、資產 **、內**&#x200B;容片段模型導覽 ****;例如， `http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
+在模型控制台中，將顯示具有&#x200B;**內容片段模型**&#x200B;屬性的所有資料夾。 透過&#x200B;**工具**、**資產**、**內容片段模型**&#x200B;導覽；例如，`http://localhost:4502/libs/dam/cfm/models/console/content/models.html/conf`。
 
-使用者可 [以使用「建立模型](/help/assets/content-fragments-models.md#creating-a-content-fragment-model) 」精靈(使用 **從主控台建立****** )來建立內容片段模型。
+使用者可以使用「建立模型」精靈（使用主控台的「建立」精靈）來建立內容片段模型。[](/help/assets/content-fragments-models.md#creating-a-content-fragment-model)********
 
 >[!CAUTION]
 >
->您 ***不得*** 更改路徑中的任 `/libs` 何內容。
+>您&#x200B;***必須***&#x200B;不要變更`/libs`路徑中的任何項目。
 >
->這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
+>這是因為下次升級實例時會覆寫`/libs`的內容（當您套用修補程式或功能套件時可能會覆寫）。
 
-## 模型結構 {#structure-of-a-model}
+## 模型{#structure-of-a-model}的結構
 
 嚮導將建立具有以下結構的條目：
 
@@ -58,37 +59,37 @@ ht-degree: 0%
 
 * `jcr:content`
 
-   每個模型都包含一 `jcr:content` 個節點：
+   每個型號都包含一個`jcr:content`節點，該節點：
 
-   * 包含有關模型的資訊屬 `jcr:title`性， `lastModified`如 `lastModifiedBy`
-   * 通常 `sling:ResourceType` 為 `dam/cfm/models/console/components/data/entity/default`,
+   * 包含有關模型的資訊屬性，如`jcr:title`、`lastModified`、`lastModifiedBy`
+   * 通常`sling:ResourceType`為`dam/cfm/models/console/components/data/entity/default`,
 
-      與 `sling:ResourceSuperType` of `dam/cfm/models/console/components/data/entity`
+      的`sling:ResourceSuperType`，共`dam/cfm/models/console/components/data/entity`
 
 * `model`
 
-   節 `model` 點包含一個屬性， `dataTypesConfig`用於確定模型編輯器中使用的資料類型。
+   `model`節點包含一個屬性`dataTypesConfig`，用於確定模型編輯器中使用的資料類型。
 
 * `items`
 
-   在節 `items` 點下，添加到模型的所有資料類型都將保存（在模型編輯器中拖放）。 每個項目都有隨機節點名稱，但為了讓內容片段編輯器使用此模型，每個項目都必須有屬 `name` 性。 此外，在此節點上，將保存特定資料類型的所有配置屬性，包括渲染元件所需的預設屬性。
+   在`items`節點下，將保存添加到模型的所有資料類型（在模型編輯器中拖放）。 每個項目都有隨機節點名稱，但為了讓內容片段編輯器使用此模型，每個項目必須有`name`屬性。 此外，在此節點上，將保存特定資料類型的所有配置屬性，包括渲染元件所需的預設屬性。
 
 >[!CAUTION]
 >
->在模型編輯器中拖放的所有資料類型，如此執行個體化， **必須**`name` 由使用者輸入屬性。
+>在模型編輯器中拖放的所有資料類型，因此&#x200B;**必須**&#x200B;由用戶輸入`name`屬性。
 >
->這被視為屬 **性名稱&amp;ast;** 在模型編 **輯器的** 「屬性」(Properties)頁籤中。
+>在模型編輯器的&#x200B;**Properties**&#x200B;標籤中，這被視為&#x200B;**屬性名稱&amp;ast;**。
 
-## 模型編輯器的結構 {#structure-of-the-model-editor}
+## 模型編輯器的結構{#structure-of-the-model-editor}
 
-「內 **容片段模型編輯器** 」包含兩個部分：
+**內容片段模型編輯器**&#x200B;包含兩個部分：
 
 * 左側的預覽（或檢視）面板，您可在其中放置項目。 此特性：
 
-   * 顯示已實例化 **的「資料類型** 」的預覽。
+   * 顯示實例化的&#x200B;**資料類型**&#x200B;的預覽。
    * 允許在模型編輯器中進行排序。
 
-* 右側 **面板中的**「資料類型/**** 屬性」標籤。 此特性：
+* 右側面板中的&#x200B;**資料類型**/**屬性**&#x200B;頁籤。 此特性：
 
    * 顯示可拖曳和執行個體化的資料類型清單。
    * 對於現成可用的模型編輯器，清單位於：
@@ -99,13 +100,13 @@ ht-degree: 0%
       This node contains all the data types currently supported in the model editor. For more information on how to configure the data types, see [Customizing Data Types for Content Fragment Models](/help/sites-developing/customizing-content-fragment-model-data-types.md).
       -->
 
-   * 所有轉換的資料類型都有兩個指令碼標籤，當實例化時，這些標籤將形成視圖（在左側呈現的元件）和「屬性」頁籤，該頁籤定義用戶可以為給定元件定義的屬性。 ****
+   * 所有轉換的資料類型都有兩個指令碼標籤，當實例化時，這些標籤將形成視圖（在左側轉換的元件）和&#x200B;**Properties**&#x200B;頁籤，該頁籤定義用戶可以為給定元件定義的屬性。
 
 >[!CAUTION]
 >
->您 ***不得*** 更改路徑中的任 `/libs` 何內容。
+>您&#x200B;***必須***&#x200B;不要變更`/libs`路徑中的任何項目。
 >
->這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
+>這是因為下次升級實例時會覆寫`/libs`的內容（當您套用修補程式或功能套件時可能會覆寫）。
 
 <!-- Please uncomment when files are used
 The properties on the right side define a form that is submitted directly into JCR under `/conf`; see the path in the example [Structure of a Model](/help/sites-developing/customizing-content-fragment-models.md#structure-of-a-model).
@@ -113,11 +114,11 @@ The properties on the right side define a form that is submitted directly into J
 
 當資料類型實例化時，會針對需要在內容片段中呈現元件的每個屬性建立HTML輸入。 例如，這些包括：
 
-* **屬性名稱&amp;ast;** ( `name`)-做為元件的識別碼
+* **屬性名稱&amp;ast;** ( `name`)-用作元件的標識符
 
-* **渲染方式** ( `metaType`)-鍵入要渲染為
+* **Render As** ( `metaType`)-鍵入要呈現為
 
-* **說明** ( `fieldDescription`)-內容片段中的元件說明
+* **Description** ( `fieldDescription`)-內容片段中的元件說明
 
 * 等等。
 
