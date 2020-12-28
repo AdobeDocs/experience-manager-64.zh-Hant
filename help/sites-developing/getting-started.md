@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 11%
 
 ## WKND 開發人員教學課程 {#wknd-developer-tutorial}
 
-本教學課程可在 [這裡取得](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) ，或按一下下方的影像。
+教學課程可在[這裡](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)取用，或按一下下方的影像。
 
 [![按一下影像](assets/screen_shot_2018-11-23at152453.png)](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
@@ -44,6 +44,6 @@ ht-degree: 11%
 
 請先進行教學課程，然後再詳細說明上述概念。
 
-## 後續步驟 {#next-steps}
+## 後續步驟{#next-steps}
 
-完成教學課程後 [，請考慮檢閱檔案](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)AEM Core Concepts [](/help/sites-developing/the-basics.md) ，以便更好地瞭解AEM的一些基礎技術和開發范式。
+完成[教學課程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)後，請考慮檢閱檔案[AEM Core Concepts](/help/sites-developing/the-basics.md)，以便進一步瞭解AEM的一些基本技術和開發范式。
