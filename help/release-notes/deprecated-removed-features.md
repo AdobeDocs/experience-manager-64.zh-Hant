@@ -37,7 +37,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 入口網站主管 | Portal Director是一組功能，可讓您在協力廠商伺服器中透過Portlet代管AEM內容。 Adobe不打算在下列位置下進一步增強Portal Director功能。 AEM 6.4已隨附入口網站控制器，而從舊版升級的客戶可依現狀繼續使用。 請注意，Portal Direct在遭淘汰時仍完全受支援。 <ul><li>/libs/portal/director</li></ul> | Adobe不打算提供替代產品。 |
 | Portlet元件 | /foundation/components/portlet下的Portlet元件可以將JSR Portlet作為元件托管在AEM中。 Adobe不打算對Portlet元件功能做進一步的增強。 AEM 6.4包含Portlet元件，而從舊版升級的客戶可依現狀繼續使用。 請注意，Portlet元件在被淘汰時仍完全受支援。 | Adobe不打算提供替代產品。 |
 | 表單 | Adobe Central Migration Bridge服務已不再支援，因為Adobe Central產品不再受支援。 | 無取代 |
-| 表單 | 不建議在Query和OperationOptions中使用JSONObject。 不建議使用下列API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用 `IValueMap` API |
+| 表單 | 不建議在Query和OperationOptions中使用JSONObject。 不建議使用下列API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用`IValueMap` API |
 | 表單 | 已過時的Central Migration Bridge服務。 | 不提供任何替代項目。 |
 | 資產 | 從AEM 6.4開始，資產卸載已過時。 |  |
 | 開發人員 | Lodash/下划線客戶端庫。 Adobe不打算進一步維護和更新Lodash/底線用戶端程式庫，此程式庫會隨散發（快速入門）一起出貨 | Adobe建議仍需使用Lodash/底線的客戶將程式碼新增至其專案程式碼庫。 |
@@ -145,13 +145,14 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 </table>
 -->
 
-## Removed Features {#removed-features}
+## 已移除功能{#removed-features}
 
-下表列出已從AEM 6.4移除的功能與功能。舊版的這些功能已標示為已過時。
+下表列出已從AEM 6.4移除的功能與功能。舊版的這些功能標示為
+已過時。
 
 | 區域 | 功能 | 替代方案 |
 |---|---|---|
-| Analytics Activity Map | AEM中包含的Activity Map版本。 | 由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。 現 [在應使用Adobe Analytics提供的](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) ActivityMap外掛程式。 |
+| Analytics Activity Map | AEM中包含的Activity Map版本。 | 由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。 Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式現在應該使用。 |
 | 元件——表單 | 表單驗證碼(foundation/components/form/captcha) | 請改用Google的ReCaptcha元件 |
 | 元件 | 投影片（基礎／元件／投影片） | 無取代 |
 | 元件 | Flash（基礎／元件/Flash） | 無取代 |
@@ -171,11 +172,11 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 表單 | 已移除AEM Designer中對flash欄位的支援。 AEM Designer不允許編輯表單中使用的Flash欄位。 | 您可以使用舊版發行的AEM Designer來編輯此類表格。 |
 | 社群 | 已移除對驗證驗證的支援。 | 使用自訂的captcha整合（例如Google的reCAPTCHA）進行驗證。 |
 
-## 下一版產品的預發佈 {#pre-announcement-for-next-release}
+## 下一版的預發佈{#pre-announcement-for-next-release}
 
 下表提供未來版本的變更清單，這些變更並未過時，但可能會影響客戶。 這些是為規劃目的而提供的。
 
 | 區域 | 功能 | 公告 |
 |---|---|---|
 | 瀏覽器支援 | Microsoft Internet Explorer | AEM 6.4是支援Microsoft Internet Explorer 11的最後一個版本。 |
-| 基礎 | UI架構 | Adobe在2019年淘汰了Coral UI 2元件。 AEM 6.4完全以Coral UI 3（隨AEM 6.2推出）為基礎。 Adobe建議已使用Coral 2建立自訂UI的客戶和合作夥伴，將這些UI重構至Coral 3。 Adobe提供工具，將Coral 2對話方塊轉換為Coral 3 —— 閱 [讀更多](/help/sites-developing/dialog-conversion.md)。 |
+| 基礎 | UI架構 | Adobe在2019年淘汰了Coral UI 2元件。 AEM 6.4完全以Coral UI 3（隨AEM 6.2推出）為基礎。 Adobe建議已使用Coral 2建立自訂UI的客戶和合作夥伴，將這些UI重構至Coral 3。 Adobe提供工具，將Coral 2對話方塊轉換為Coral 3 - [閱讀更多資訊](/help/sites-developing/dialog-conversion.md)。 |
