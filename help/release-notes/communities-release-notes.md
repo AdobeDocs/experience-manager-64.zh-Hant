@@ -18,13 +18,13 @@ ht-degree: 4%
 ---
 
 
-# AEM Communities發行說明 {#aem-communities-release-notes}
+# AEM Communities發行說明{#aem-communities-release-notes}
 
-本節提供自6.3版以來AEM Communities的改進資訊。 若要詳細瞭解新功能，請參 [閱「AEM 6.4 Communities的新增功能」](/help/communities/whats-new-aem-communities.md)。
+本節提供自6.3版本起對AEM Communities的改進。 若要詳細瞭解新功能，請參閱[「AEM 6.4 Communities的新增功能](/help/communities/whats-new-aem-communities.md)」。
 
-若要取得最新版本，請參閱文 [件的「部署社群](/help/communities/deploy-communities.md#latest-releases) 」區段。
+要獲得最新版本，請參閱文檔的[部署社區](/help/communities/deploy-communities.md#latest-releases)部分。
 
-## 主要改進 {#main-improvements}
+## 主要改進{#main-improvements}
 
 社群網站:
 
@@ -61,17 +61,17 @@ ht-degree: 4%
 
 與AEM 6.4的基本變更整體相容。
 
-注意： AEM 6.3也提供這些功能。 請查看AEM Communities的 [6.3發行說明](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html)。
+注意：AEM 6.3也提供這些功能。請查看AEM Communities的發行說明，以瞭解[6.3](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html)。
 
 ## 已知問題 {#known-issues}
 
 * **協調** -無法從大量協調UI中將父貼文刪除為單一刪除作業(CQ-4236797)
-* **Console** —— 忘記使用者名稱或密碼連結會重新導向至登入頁面，而非對應的密碼擷取表單(CQ-4237682)
+* **控制台** -忘記使用者名稱或密碼連結會重新導向至登入頁面，而非對應的密碼擷取表單(CQ-4237682)
 
-## 選取功能 {#select-features}
+## 選擇功能{#select-features}
 
-專家評分(*由Sensei提供*)——用來促成遊戲化，這是鼓勵和獎勵寶貴社區行為的有效方式。 它也可用於識別專家以用於建議或行銷。
+專家評分（由Sensei *提供支援）-可讓遊戲化，這是鼓勵和獎勵寶貴社群行為的有效方式。*&#x200B;它也可用於識別專家以用於建議或行銷。
 
-## 展示 {#demonstrations}
+## 演示{#demonstrations}
 
-當使用AEM Communities示範案例時，也可在新的We.Retail參考實作中，使用GitHub.com上公開提供的 [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) ，來展示所有這些功能。
+使用GitHub.com公開提供的[AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)，當使用AEM Communities示範案例時，以及新的We.Retail參考實作時，可展示所有這些功能。
