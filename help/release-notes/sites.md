@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# AEM Sites發行說明 {#aem-sites-release-notes}
+# AEM Sites發行說明{#aem-sites-release-notes}
 
 ## 網站 {#sites}
 
 如需AEM Sites 6.4增強功能的詳細資訊，請參閱下列內容：
 
-### 網站管理 {#site-administration}
+### 站點管理{#site-administration}
 
 * 新的內容樹狀結構可快速導覽網站階層。 結合清單檢視，可還原Classic UI互動模型以瀏覽網站。
 * 已改善卡片中的捲動和大型檔案夾的清單檢視。
@@ -33,34 +33,34 @@ ht-degree: 0%
 * 可停用鍵盤快速鍵（在「偏好設定」中啟用／停用）。
 * 在7天後停止顯示所有UI相對時間戳記（在「偏好設定」中設定預設值）。
 
-### 頁面編輯器 {#page-editor}
+### 頁面編輯器{#page-editor}
 
-* 更新裝置清單以進行互動式網站預覽，現在包括Apple iPhone 8、8 Plus和X以及Samsung S7
+* 更新裝置清單以進行回應式網站預覽，現在包括Apple iPhone 8、8 Plus和X以及Samsung S7
 * 將範本設計資訊的預設位置從/etc/design移開，以支援/conf中的網站特定設定。 從舊版AEM升級的客戶可繼續使用/etc/design。
 
-### 元件與範本開發 {#component-amp-template-development}
+### 元件與範本開發{#component-amp-template-development}
 
-* Project Archetype 13+，請參閱 [Github以取得發行說明](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases)。
-* HTL 1.3.1版，請參閱 [Github以取得發行說明](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1)。
-* 核心元件2.0.4+，請參閱 [Github以取得發行說明](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases)。
+* Project Archetype 13+，請參閱[Github，以取得發行說明](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype/releases)。
+* HTL 1.3.1版，請參閱[Github以取得發行說明](https://github.com/Adobe-Marketing-Cloud/htl-spec/releases/tag/1.3.1)。
+* 核心元件2.0.4+，請參閱[Github，以取得發行說明](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/releases)。
 * 樣式系統
 
    * 新增全新概念，以指派CSS類別至元件，並允許頁面編輯器中的使用者透過UI從樣式子集中選取
-   * 新增定義在元件周圍呈現的HTML元素名稱的功能，例如 &lt;main>, &lt;ased>
+   * 新增定義在元件周圍呈現的HTML元素名稱的功能，例如&lt;main>, &lt;ased>
 
-* 版面容器的格線系統，請參 [閱Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)。
+* 版面容器的格線系統，請參閱[Github](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)。
 * 範本編輯器與原則
 
    * 原則現在支援每個元件、每個容器、每個範本的樣式系統組態。
    * 改善可編輯元件上範本中定義版面的支援
 
-* 參考網站We.Retail 3.0，請參閱 [Github以取得發行說明](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)。
+* 參考網站We.Retail 3.0，請參閱[Github，以取得發行說明](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)。
 
 >[!CAUTION]
 >
 >AEM包含jQuery程式庫的1.12.4版，可提供與現有自訂程式碼的最大相容性。 Adobe已針對已知的安全性問題進行修改。
 
-### 內容片段與編輯器 {#content-fragments-amp-editor}
+### 內容片段與編輯器{#content-fragments-amp-editor}
 
 * 引入結構化內容模型作為內容片段的基礎
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 * 引入體驗片段建立區塊，透過將元件分組並允許變數中的簡單參考，以方便在體驗片段變數之間重複使用內容。
 * 新增透過參考邊欄將體驗片段新增至翻譯專案的功能
-* 新增透過時間軸邊欄開始使用Experience片段的工作流程的功能
+* 新增透過時間軸邊欄使用Experience片段啟動工作流程的功能
 * 參考邊欄現在會顯示AEM中使用體驗片段的位置
 * 範本位置的設定現在允許作者在全域或資料夾層級定義允許使用的體驗片段範本
 * 多面搜尋現在支援進階篩選，例如已發佈／未發佈、匯出至社交媒體和Adobe Target
@@ -104,7 +104,7 @@ ht-degree: 0%
 * 智慧型翻譯更新現在可識別新增至語言主要分支的頁面
 * 在「站點管理員」清單視圖中引入翻譯狀態報告
 
-### 多網站管理(MSM) {#multi-site-management-msm}
+### 多站點管理(MSM){#multi-site-management-msm}
 
 * 使用Oak索引與記憶體內建索引(LiveCopyIndex)來改善MSM的可擴充性
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 * 已改善具有多個根頁面的啟動自動促銷和發佈功能。
 * 修正回應式裝置預覽無法處理在啟動內容中編輯之頁面的問題。
 
-### 內容定位與模擬 {#content-targeting-simulation}
+### 內容定位與模擬{#content-targeting-simulation}
 
 * 支援資料夾，以根據網站／內容來組織區段(CQ-94620)
 * 將區段的預設位置移至/conf，以便擁有網站／內容特定的區段清單。
@@ -123,18 +123,18 @@ ht-degree: 0%
 
 * 將AEM體驗片段與Adobe Target整合。 將體驗片段同步至Target將在Adobe Target中建立選件，並可與Target的Visual Experience Composer搭配使用，以將其嵌入任何啟用Target的體驗。
 * Adobe Target mbox.js 63版現已隨附。 Adobe建議將實作切換為at.js。
-* 現已隨附at.js 1.2.2版。 Adobe建議使用動態標籤管理(DTM)或 [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) ，以布建at.js至網站。
+* 現已隨附at.js 1.2.2版。 Adobe建議使用動態標籤管理(DTM)或[Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html)，將at.js布建至網站。
 
-### AEM與Adobe Analytics {#aem-amp-adobe-analytics}
+### AEM &amp; Adobe Analytics {#aem-amp-adobe-analytics}
 
 * s_code.js H.27.5現已包含在內。 Adobe建議將實作切換為AppMeasurement.js
-* AppMeasurement.js 1.8.0現已隨附。 Adobe建議使用動態標籤管理(DTM)或 [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) ，將AppMeasurement.js布建至網站。
+* AppMeasurement.js 1.8.0現已隨附。 Adobe建議使用動態標籤管理(DTM)或[Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html)，將AppMeasurement.js布建至網站。
 
-## 社群附加元件 {#communities-add-on}
+## 社群附加元件{#communities-add-on}
 
-請參閱 [社群發行說明頁面](/help/release-notes/communities-release-notes.md)
+請參閱[社群發行說明頁面](/help/release-notes/communities-release-notes.md)
 
-## 畫面附加元件 {#screens-add-on}
+## 畫面附加元件{#screens-add-on}
 
 * 新增支援「畫面播放器」以連線至AEM發佈伺服器，以進行命令與控制和頻道下載（而非直接連線至AEM作者）。
 * 新增在「排程」中群組渠道指派的能力
