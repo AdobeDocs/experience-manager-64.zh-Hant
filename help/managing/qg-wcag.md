@@ -18,11 +18,11 @@ ht-degree: 82%
 ---
 
 
-# Quick Guide to WCAG 2.0{#quick-guide-to-wcag}
+# WCAG 2.0{#quick-guide-to-wcag}快速指南
 
 AEM的開發目的，是要充份符合「網頁內容協助工具准則」:
 
-The [Web Content Accessibility Guidelines version 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+[網頁內容協助工具准則2.0版(WCAG2)](https://www.w3.org/TR/WCAG/)是由[全球資訊網協會(W3C)](https://www.w3.org/)根據其[網頁協助工具計畫(WAI)](https://www.w3.org/WAI/)制定的一組國際公認准則。
 
 WCAG 2.0 包含一系列無需仰賴技術的指引和成功標準，有助身心障礙人士存取與使用網路內容。這些標準可為網路內容作者、設計人員和開發人員提供建議，確保他們製作的資源能盡可能方便讓更多使用者存取，無論使用者有任何身心障礙，例如視障、聽力損失、學習障礙、年齡相關限制等均可使用。
 
@@ -36,11 +36,11 @@ WCAG 2.0 包含一系列無需仰賴技術的指引和成功標準，有助身�
 
 WCAG 2.0 的目的是提供符合以下條件的指引：
 
-* 技術 **不可知：**
+* **技術不可知：**
 
    換言之，可套用至多種網頁內容格式（而不只是HTML）的准則。 因此，WCAG 2.0 可涵蓋的範圍包括以 PDF、Flash、JavaScript 和其他目前和未來網路技術所產生或提供的內容。這旨在解決WCAG 1.0的公認弱點，因為它以HTML為主，而犧牲其他網頁內容格式。
 
-* 可測 **試：**
+* 是&#x200B;**可測試：**
 
    每項准則的編寫方式都是客觀的，以確保一組無障礙環境問題專家一般都同意該准則已經得到滿足。 無障礙指引的挑戰之一在於，雖然部分指引可接受技術性檢驗，但其他部分仍需人為判斷，才能確定是否確實符合要求。編寫《世界婦女大會2.0》的目的是減少《世界婦女大會1.0》的某些准則和檢查站存在的主觀性。
 
@@ -56,7 +56,7 @@ WCAG 2.0 的目的是提供符合以下條件的指引：
 
 >[!NOTE]
 >
->如果您熟悉WCAG 1.0，您將會注意到WCAG 2.0中的一些變更。 這與範圍、組織和目標有關。
+>如果您熟悉WCAG 1.0，您將會注意到WCAG 2.0中的一些變更。這與範圍、組織和目標有關。
 
 ## 結構 {#structure}
 
@@ -91,7 +91,7 @@ WCAG 2.0包含4項可存取設計的主要原則。 說明如下：
 
 ### WCAG 2.0 資源 {#wcag-resources}
 
-* [WCAG 2.0所有相關檔案概要](https://www.w3.org/WAI/intro/wcag.php);
+* [WCAG 2.0所有相關檔案的概要](https://www.w3.org/WAI/intro/wcag.php);
 * [說明不同組成部分之間的相互關係](https://www.w3.org/WAI/intro/wcag20);
 * [WCAG 2.0 常見問題](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
