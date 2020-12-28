@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# 使用Rich Text Editor來製作內容 {#using-the-rich-text-editor-to-author-content}
+# 使用Rich Text Editor來製作內容{#using-the-rich-text-editor-to-author-content}
 
 Rich Text Editor(RTE)是在AEM頁面中製作文字的基本建置區塊。 許多元件（如「文本」、「文本」和「影像」和「表」）都基於RTE。
 
@@ -26,9 +26,9 @@ Rich Text Editor(RTE)是在AEM頁面中製作文字的基本建置區塊。 許�
 >
 >將嵌套清單複製到RTE中並不如預期。 從Microsoft Word複製嵌套清單時，在RTE中貼上文本後，您需要手動清除這些清單。
 
-## 就地編輯 {#in-place-editing}
+## 就地編輯{#in-place-editing}
 
-只要點選或按一下，選取文字型元件就會顯示元件工 [具列](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。
+只要點選或按一下，選取文字型元件就會顯示[元件工具列](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -38,9 +38,9 @@ Rich Text Editor(RTE)是在AEM頁面中製作文字的基本建置區塊。 許�
 
 此工具列提供下列選項：
 
-* **格式**: 設定粗體、斜體和下划線格式。
+* **格式**:設定粗體、斜體和下划線格式。
 
-* **清單**: 建立項目清單或編號清單，或設定縮排。
+* **清單**:建立項目清單或編號清單，或設定縮排。
 
 * **超連結**
 
@@ -52,19 +52,19 @@ Rich Text Editor(RTE)是在AEM頁面中製作文字的基本建置區塊。 許�
 
 * **儲存**
 
-## 全螢幕編輯 {#full-screen-editing}
+## 全螢幕編輯{#full-screen-editing}
 
 對於文字型元件，從工具列中選取全螢幕模式會開啟Rich Text編輯器，並隱藏其餘的頁面內容。
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-全螢幕模式會顯示您的Rich Text編輯器中由管理員設定的所有選項。 這些AEM例項可能會因管 [理員或AEM開發人員提供的設定](../sites-administering/rich-text-editor.md) 而有所不同。 如果您發現缺少選項，請要求您的管理員讓它可用。
+全螢幕模式會顯示您的Rich Text編輯器中由管理員設定的所有選項。 這些AEM例項[可能會因管理員或AEM開發人員提供的設定](../sites-administering/rich-text-editor.md)而有所不同。 如果您發現缺少選項，請要求您的管理員讓它可用。
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
 其他豐富式文字編輯器選項包括：
 
-* **錨點**: 在文字中建立錨點，您稍後可以連結至／參考。
+* **錨點**:在文字中建立錨點，您稍後可以連結至／參考。
 * **向左對齊文字**
 * **文字置中**
 * **向右對齊文字**
