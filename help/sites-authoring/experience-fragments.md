@@ -46,7 +46,7 @@ ht-degree: 7%
 >
 >如果您遇到任何問題，請聯絡您的系統管理員。
 
-## 何時應使用體驗片段？ {#when-should-you-use-experience-fragments}
+## 何時應使用體驗片段？{#when-should-you-use-experience-fragments}
 
 應使用體驗片段：
 
@@ -69,7 +69,7 @@ ht-degree: 7%
    * 在社交媒體頻道上大規模分享商務相關內容
    * 讓觸點成為交易性
 
-## 組織您的體驗片段 {#organizing-your-experience-fragments}
+## 組織您的體驗片段{#organizing-your-experience-fragments}
 
 建議您：
 * 使用資料夾來組織您的體驗片段，
@@ -88,9 +88,9 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >您可以使用范 [本編輯器](/help/sites-authoring/templates.md) ，建立您自己的範本。
+   >您可以使用[範本編輯器](/help/sites-authoring/templates.md)來建立您自己的範本。
 
-下列範例顯示依據建構的「體驗片段」 `Contributors`。 使用的結構也說明如何使用其他功能，例如多網站管理（包括語言副本）。
+下列範例顯示根據`Contributors`結構化的體驗片段。 使用的結構也說明如何使用其他功能，例如多網站管理（包括語言副本）。
 
 >[!CAUTION]
 >
@@ -98,7 +98,7 @@ ht-degree: 7%
 
 ![體驗片段的資料夾](assets/xf-folders.png)
 
-## 建立和設定您的體驗片段的資料夾 {#creating-and-configuring-a-folder-for-your-experience-fragments}
+## 為體驗片段建立和設定資料夾{#creating-and-configuring-a-folder-for-your-experience-fragments}
 
 若要建立並設定您的體驗片段資料夾，建議您：
 
@@ -108,58 +108,58 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->您也可以設定例項 [的「允許範本」](#configure-allowed-templates-instance)，但不建議使 **用此方法** ，因為升級時可能會覆寫值。
+>您也可以為實例](#configure-allowed-templates-instance)配置[允許的模板，但建議使用&#x200B;**not**&#x200B;方法，因為升級時可能會覆寫值。
 
-### 為資料夾配置允許的模板 {#configure-allowed-templates-folder}
+### 配置資料夾{#configure-allowed-templates-folder}的允許模板
 
 >[!NOTE]
 >
->這是指定允許範本的建 **[!UICONTROL 議方法]**，因為升級時不會覆寫值。
+>這是指定&#x200B;**[!UICONTROL 允許範本]**&#x200B;的建議方法，因為升級時不會覆寫值。
 
-1. 導覽至所需的 **[!UICONTROL Experience Fragments]** 檔案夾。
+1. 導覽至所需的&#x200B;**[!UICONTROL 體驗片段]**&#x200B;資料夾。
 
-1. 選擇資料夾，然後選擇「 **[!UICONTROL 屬性]**」。
+1. 選擇資料夾，然後選擇&#x200B;**[!UICONTROL 屬性]**。
 
-1. 在「允許的範本」欄位中指定擷取所需範本 **[!UICONTROL 的規則運算式]** 。
+1. 在&#x200B;**[!UICONTROL 允許的範本]**&#x200B;欄位中，指定擷取所需範本的規則運算式。
 
    例如：
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
    ![體驗片段屬性——允許的範本](assets/xf-folders-templates.png)
 
-1. Select **[!UICONTROL Save and Close]**.
+1. 選擇&#x200B;**[!UICONTROL 保存並關閉]**。
 
-### 為實例配置允許的模板 {#configure-allowed-templates-instance}
+### 配置實例{#configure-allowed-templates-instance}的允許模板
 
 >[!CAUTION]
 >
->建議您不要使用此方 **[!UICONTROL 法變更「允許的範本]** 」，因為升級時可能會覆寫指定的範本。
+>不建議使用此方法更改&#x200B;**[!UICONTROL 允許的模板]**，因為在升級時可能會覆蓋指定的模板。
 >
 >請僅供參考之用。
 
-1. 導覽至所需的 **[!UICONTROL Experience Fragments]** Console。
+1. 導覽至所需的&#x200B;**[!UICONTROL 體驗片段]**&#x200B;主控台。
 
-1. 選擇 **[!UICONTROL 配置選項]**:
+1. 選擇&#x200B;**[!UICONTROL 配置選項]**:
 
    ![「配置」按鈕](assets/xf-folders-18.png)
 
-1. 在「設定體驗片段」對話 **[!UICONTROL 方塊中指定必要的範本]** :
+1. 在&#x200B;**[!UICONTROL 設定體驗片段]**&#x200B;對話方塊中指定所需範本：
 
    ![設定體驗片段](assets/xf-folders-19.png)
 
-1. 選擇 **[!UICONTROL 保存]**。
+1. 選擇&#x200B;**[!UICONTROL 保存]**。
 
-## 建立體驗片段 {#creating-an-experience-fragment}
+## 建立體驗片段{#creating-an-experience-fragment}
 
 若要建立體驗片段：
 
-1. 從全 **[!UICONTROL 域導覽中選取]** 「體驗片段」。
+1. 從「全域導覽」中選擇「體驗片段」。****
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. 導覽至所需資料夾，然後選取「 **[!UICONTROL 建立]**」。
+1. 導航到所需資料夾並選擇&#x200B;**[!UICONTROL 建立]**。
 
-1. 選擇 **[!UICONTROL 體驗片段]** ，以開啟「 **[!UICONTROL 建立體驗片段」精靈]** 。
+1. 選擇&#x200B;**[!UICONTROL 體驗片段]**&#x200B;以開啟&#x200B;**[!UICONTROL 建立體驗片段]**&#x200B;精靈。
 
    依次選擇所需 **[!UICONTROL 的範本]**、下 **[!UICONTROL 一步]**:
 
@@ -168,7 +168,7 @@ ht-degree: 7%
 
 1. 輸入 **[!UICONTROL 體驗]**&#x200B;片段的屬性。
 
-   「標 **[!UICONTROL 題]** 」為強制。 如果名 **[!UICONTROL 稱]** (Name)留空，則會從標題( **[!UICONTROL Title)中衍生出來]**。
+   **[!UICONTROL Title]**&#x200B;是必填的。 如果&#x200B;**[!UICONTROL Name]**&#x200B;保留為空白，則它將從&#x200B;**[!UICONTROL Title]**&#x200B;派生。
 
    ![xf-authoring-03](assets/xf-authoring-03.png)
 
@@ -176,34 +176,34 @@ ht-degree: 7%
 
    將顯示一條消息。 選取:
 
-   * **[!UICONTROL 完成]** ：返回控制台
-   * **[!UICONTROL 開啟]** ，以開啟片段編輯器
+   * **** Doneto返回控制台
+   * **[!UICONTROL 打]** 開片段編輯器
 
-## 編輯您的體驗片段 {#editing-your-experience-fragment}
+## 編輯體驗片段{#editing-your-experience-fragment}
 
-體驗片段編輯器提供與一般頁面編輯器類似的功能。 如需 [使用頁面內容的詳細資訊](/help/sites-authoring/editing-content.md) ，請參閱編輯頁面內容。
+體驗片段編輯器提供與一般頁面編輯器類似的功能。 如需如何使用頁面內容的詳細資訊，請參閱[編輯頁面內容](/help/sites-authoring/editing-content.md)。
 
 以下示例過程說明如何為產品建立摘要：
 
-1. 從元件瀏覽器 **[!UICONTROL 拖放類別摘]** 要 [](/help/sites-authoring/author-environment-tools.md#components-browser)。
+1. 從[元件瀏覽器](/help/sites-authoring/author-environment-tools.md#components-browser)拖放&#x200B;**[!UICONTROL 類別摘要]**。
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. 從組 **[[!UICONTROL 件工具欄]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** 中選擇「配置」。
+1. 從元件工具欄中選擇&#x200B;**[[!UICONTROL Configure]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**。
 1. 新增資 **[!UICONTROL 產]** ，並視需要 **[!UICONTROL 定義屬性]** 。
-1. 使用「完成」(勾選 **[!UICONTROL 圖示]** )確認定義。
+1. 使用&#x200B;**[!UICONTROL Done]**（勾選圖示）確認定義。
 1. 視需要新增更多元件。
 
-## Creating An Experience Fragment Variation {#creating-an-experience-fragment-variation}
+## 建立體驗片段變數{#creating-an-experience-fragment-variation}
 
 您可以根據您的需求，建立不同的體驗片段：
 
-1. 開啟您的片段以 [進行編輯](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)。
-1. 開啟「變 **[!UICONTROL 數]** 」標籤。
+1. 開啟[編輯](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)的片段。
+1. 開啟&#x200B;**[!UICONTROL Valuations]**&#x200B;標籤。
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. **Create** （建立）允許您建立：
+1. **Create** 可讓您建立：
 
    * **[!UICONTROL 變異]**
    * **[!UICONTROL 變數為 live-copy]**.
@@ -218,17 +218,17 @@ ht-degree: 7%
 
    ![xf-authoring-07](assets/xf-authoring-07.png)
 
-1. 使用「完 **[!UICONTROL 成]** （勾選圖示）確認」，新變數會顯示在面板中：
+1. 使用&#x200B;**[!UICONTROL Done]**（勾選圖示）確認，新變數將會顯示在面板中：
 
    ![xf-authoring-08](assets/xf-authoring-08.png)
 
-## 使用您的體驗片段 {#using-your-experience-fragment}
+## 使用體驗片段{#using-your-experience-fragment}
 
 您現在可以在編寫頁面時使用體驗片段：
 
 1. 開啟任何頁面進行編輯。
 
-   例如： [http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   例如：[http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. 將元件從「元件」瀏覽器拖曳至頁面段落系統，以建立「體驗片段」元件的例項：
 
@@ -237,7 +237,7 @@ ht-degree: 7%
 1. 將實際的體驗片段新增至元件例項；其中：
 
    * 從「資產瀏覽器」拖曳必要片段至元件
-   * Select **[!UICONTROL Configure]** from the component toolbar and specify the fragment to use, confirm with **Done** (tick)
+   * 從元件工具欄中選擇&#x200B;**[!UICONTROL 配置]**&#x200B;並指定要使用的片段，使用&#x200B;**Done**（勾選）確認
 
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
@@ -249,7 +249,7 @@ ht-degree: 7%
 
 您可以選取一或多個元件，以建立要在片段內回收的建置區塊：
 
-### 建立構建塊 {#creating-a-building-block}
+### 建立構建塊{#creating-a-building-block}
 
 要建立新的構建塊：
 
@@ -257,7 +257,7 @@ ht-degree: 7%
 
    ![xf-authoring-12](assets/xf-authoring-12.png)
 
-1. 從元件工具欄中，選擇「 **[!UICONTROL 轉換為構建塊]**:
+1. 從元件工具欄中，選擇&#x200B;**[!UICONTROL 轉換到構建塊]**:
 
    ![xf-authoring-13-icon](assets/xf-authoring-13-icon.png)
 
@@ -273,9 +273,9 @@ ht-degree: 7%
 
    ![xf-authoring-15](assets/xf-authoring-15.png)
 
-### 管理構建塊 {#managing-a-building-block}
+### 管理構建塊{#managing-a-building-block}
 
-您的構建塊在「構建塊」( **[!UICONTROL Building Blocks)頁籤中可見]** 。 對於每個塊，可以執行以下操作：
+您的構建塊在&#x200B;**[!UICONTROL 構建塊]**&#x200B;頁籤中可見。 對於每個塊，可以執行以下操作：
 
 * 前往主版:在新標籤中開啟主變數
 * 重新命名
@@ -283,21 +283,21 @@ ht-degree: 7%
 
 ![xf-authoring-16](assets/xf-authoring-16.png)
 
-### 使用構建塊 {#using-a-building-block}
+### 使用構建塊{#using-a-building-block}
 
 您可以將構建塊拖動到任何片段的段落系統，如同任何元件。
 
-## 純HTML轉譯 {#the-plain-html-rendition}
+## 純HTML轉譯{#the-plain-html-rendition}
 
-使用URL `.plain.` 中的選擇器，您可以存取純HTML轉譯。
+使用URL中的`.plain.`選擇器，您可以存取純HTML轉譯。
 
 這可從瀏覽器取得，但其主要用途是允許其他應用程式（例如協力廠商網頁應用程式、自訂行動裝置實作）僅使用URL直接存取體驗片段的內容。
 
 純HTML轉譯會將通訊協定、主機和內容路徑新增至下列路徑：
 
-* 類型： `src`、 `href`或 `action`
+* 類型：`src`、`href`或`action`
 
-* 或結尾為： `-src`或 `-href`
+* 或結尾為：`-src`或`-href`
 
 例如：
 
@@ -309,9 +309,9 @@ ht-degree: 7%
 
 ![xf-authoring-17](assets/xf-authoring-17.png)
 
-## 匯出體驗片段 {#exporting-experience-fragments}
+## 匯出體驗片段{#exporting-experience-fragments}
 
 依預設，體驗片段會以HTML格式傳送。 AEM和協力廠商管道都可使用此功能。
 
-若要匯出至Adobe Target，請使用HTML。 如需 [完整資訊，請參閱Target與體驗片段整合](/help/sites-administering/experience-fragments-target.md) 。
+若要匯出至Adobe Target，請使用HTML。 如需完整資訊，請參閱[與體驗片段整合的目標](/help/sites-administering/experience-fragments-target.md)。
 
