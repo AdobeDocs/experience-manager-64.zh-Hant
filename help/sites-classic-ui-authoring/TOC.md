@@ -15,10 +15,10 @@ ht-degree: 21%
 ---
 
 
-# AEM 6.4 Classic UI編寫使用指南 {#classic-ui}
+# AEM 6.4 Classic UI編寫使用指南{#classic-ui}
 
 + [Classic UI編寫指南總覽](home.md)
-+ Classic UI編寫簡介 {#introduction}
++ Classic UI編寫簡介{#introduction}
    + [作者的第一步](classic-page-author-first-steps.md)
    + [在傳統UI中編寫](classicui.md)
    + [使用作者環境](author-env.md)
@@ -42,7 +42,7 @@ ht-degree: 21%
    + [製作行動裝置的頁面](classic-feature-mobile.md)
    + [頁面製作的元件](classic-page-author-edit-mode.md)
    + [編輯頁面時的鍵盤快速鍵](classic-page-author-keyboard-shortcuts.md)
-+ 網站和頁面功能 {#siteandpage}
++ 網站和頁面功能{#siteandpage}
    + [使用內容片段製作頁面](classic-page-author-content-fragments.md)
    + [回應式版面](classic-page-author-responsive-layout.md)
    + [使用頁面版本](classic-page-author-work-with-versions.md)
@@ -78,7 +78,7 @@ ht-degree: 21%
    + [使用Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign元件](classic-personalization-ac-components.md)
    + [鎖定您的Adobe Campaign](classic-personalization-ac-target.md)
-+ 在傳統UI中編寫資產 {#assets}
++ Classic UI {#assets}中的資產編寫
    + [使用資產](classicui-assets.md)
    + [關於使用IBL階段](classicui-stages-aem3d-ibl.md)
    + [演算3D資產](classicui-rendering-3d.md)
