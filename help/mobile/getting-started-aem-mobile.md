@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Getting Started with AEM Mobile{#getting-started-with-aem-mobile}
+# AEM Mobile快速入門{#getting-started-with-aem-mobile}
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->從AEM 6.2或6.3移轉至AEM 6.4的現有AEM Mobile應用程式客戶，可從PackageShare下載套件，繼續使 [用AEM Mobile應用程式](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package)。 不過，AEM 6.4的新安裝將不支援AEM Mobile Apps功能。
+>從AEM 6.2或6.3移轉至AEM 6.4的現有AEM Mobile應用程式客戶，可從PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package)下載[套件，繼續使用AEM Mobile應用程式。 不過，AEM 6.4的新安裝將不支援AEM Mobile Apps功能。
 
 Adobe Experience Manager(AEM)Mobile是Adobe Experience Manager多通道數位平台的一部分，同時也運用了AEM Assets、Sites、Screens、Workflow、User Manager、Commerce和Forms。 AEM Mobile提供絕佳的部署彈性，讓企業能夠使用多種內容來源。
 
@@ -38,4 +38,4 @@ AEM Mobile提供多種建立應用程式的方法。 您建立應用程式的三
 
 >[!NOTE]
 >
->如果您是Adobe Experience Manager的新手，可能會想要逐步瞭解 [AEM快速入門](/help/sites-deploying/deploy.md)。
+>如果您是Adobe Experience Manager的新手，可能會想要逐步瞭解[ AEM](/help/sites-deploying/deploy.md)快速入門。
