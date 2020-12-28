@@ -18,11 +18,11 @@ ht-degree: 1%
 ---
 
 
-# 使用行銷活動管理員{#working-with-the-marketing-campaign-manager}
+# 使用行銷促銷活動管理員{#working-with-the-marketing-campaign-manager}
 
 在AEM中，Marketing Campaign Manager(MCM)是可協助您管理多管道促銷活動的主控台。 使用此行銷自動化軟體，您可以管理所有品牌、宣傳和體驗，以及相關的細分、清單、潛在客戶和報表。
 
-MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促銷活動」圖示或搭配URL:
+MCM可從AEM的不同位置存取；例如，「歡迎」畫面，使用「促銷活動」圖示或搭配URL:
 
 `https://<hostname>:<port>/libs/mcm/content/admin.html`
 
@@ -34,13 +34,14 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 
 從MCM中，您可以訪問：
 
-* **[控制面](#dashboard)**板這分為四個窗格：
+* **[儀](#dashboard)**
+表板這分為四個窗格：
 
    * [清單](#lists)
 
       此窗格顯示您已建立的清單，以及該清單中的銷售機會數。 在此窗格中，您可以直接建立新清單，或匯入銷售機會以建立新清單。
 
-      選擇特定清單後，您將進入「列 [表](#lists) 」部分，其中顯示清單的詳細資訊。
+      選擇特定清單後，您將進入[Lists](#lists)區段，其中顯示清單的詳細資訊。
 
    * [區段](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
 
@@ -55,21 +56,22 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 
    * [促銷活動](#campaigns)
 
-      此窗格會列出您的促銷活動體驗， [例如電子報](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)[和報告](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)。
+      此窗格會列出您的促銷活動體驗，例如[電子報](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)和[茶具](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)。
 
 * **[銷售機會](#leads)**
 
    在這裡，您可以管理您的客源。 您可以建立或匯入銷售線索、編輯個別銷售線索的特定詳細資料，或在不再需要時刪除。 您也可以將銷售機會放入不同的群組，稱為清單。 **注意：** Adobe不打算進一步增強這項功能。
 
-   建議您 [運用Adobe Campaign和AEM整合](/help/sites-administering/campaign.md)。
+   建議使用[運用Adobe Campaign和AEM](/help/sites-administering/campaign.md)的整合。
 
 * **[清單](#lists)**
 
    您可以在這裡管理您的銷售機會清單。**注意：** Adobe不打算進一步增強這項功能。
 
-   建議您 [運用Adobe Campaign和AEM整合](/help/sites-administering/campaign.md)。
+   建議使用[運用Adobe Campaign和AEM](/help/sites-administering/campaign.md)的整合。
 
-* **[促銷活](#campaigns)**動您可以在這裡管理品牌、促銷活動和體驗。
+* **[促銷](#campaigns)**
+活動您可以在這裡管理品牌、促銷活動和體驗。
 
 ## 控制面板 {#dashboard}
 
@@ -82,15 +84,15 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 >[!NOTE]
 >
 >Adobe不打算進一步增強這項功能（管理銷售機會）。\
->建議您運用 [Adobe Campaign和AEM的整合](/help/sites-administering/campaign.md)。
+>建議您使用[Adobe Campaign和AEM](/help/sites-administering/campaign.md)的整合。
 
-在AEM MCM中，您可以手動輸入銷售線索或匯入逗號分隔清單，以組織和新增銷售線索； 例如，郵件清單。 產生銷售機會的其他方式包括電子報註冊或社群註冊（如果設定，這些方式可觸發填入銷售機會的工作流程）。 銷售線索通常被分類並放入一個清單中，以便您以後能夠對整個清單執行操作； 例如，將自訂電子郵件傳出至特定清單。
+在AEM MCM中，您可以手動輸入銷售線索或匯入逗號分隔清單，以組織和新增銷售線索；例如，郵件清單。 產生銷售機會的其他方式包括電子報註冊或社群註冊（如果設定，這些方式可觸發填入銷售機會的工作流程）。 銷售線索通常被分類並放入一個清單中，以便您以後能夠對整個清單執行操作；例如，將自訂電子郵件傳出至特定清單。
 
-在左 **窗格的** 「銷售機會」下，您可以建立、匯入、編輯和刪除銷售機會，然後視需要啟用或停用。 您可以新增銷售線索至清單，或查看其已屬於哪些清單。
+在左窗格的&#x200B;**Leads**&#x200B;下，您可以建立、匯入、編輯和刪除您的銷售機會，然後視需要啟用或停用。 您可以新增銷售線索至清單，或查看其已屬於哪些清單。
 
 >[!NOTE]
 >
->有關特 [定任務的詳細資訊](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads) ，請參閱使用銷售線索。
+>有關特定任務的詳細資訊，請參閱[使用Lead](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads)。
 
 ![screen_shot_2012-02-21at114748am-1](assets/screen_shot_2012-02-21at114748am-1.png)
 
@@ -99,15 +101,15 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 >[!NOTE]
 >
 >Adobe不打算進一步增強這項功能（管理清單）。\
->建議您運用 [Adobe Campaign和AEM的整合](/help/sites-administering/campaign.md)。
+>建議您使用[Adobe Campaign和AEM](/help/sites-administering/campaign.md)的整合。
 
-清單可讓您將潛在客戶組織成群組。 有了清單，您可以將行銷活動鎖定在特定人群； 例如，您可以將定位的電子報傳送至清單。
+清單可讓您將潛在客戶組織成群組。 有了清單，您可以將行銷活動鎖定在特定人群；例如，您可以將定位的電子報傳送至清單。
 
-在「 **清單**」下，您可以建立、匯入、編輯、合併和刪除清單，然後視需要啟用或停用清單，以管理清單。 您也可以查看該清單中的銷售線索、查看清單是否是其他清單的成員或查看說明。
+在&#x200B;**Lists**&#x200B;下，您可以建立、匯入、編輯、合併和刪除清單，然後視需要啟用或停用清單，以管理清單。 您也可以查看該清單中的銷售線索、查看該清單是否是其他清單的成員或查看說明。
 
 >[!NOTE]
 >
->有關特 [定任務的詳細資訊](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) ，請參閱使用清單。
+>有關特定任務的詳細資訊，請參閱[使用清單](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists)。
 
 ![screen_shot_2012-02-21at124828pm-1](assets/screen_shot_2012-02-21at124828pm-1.png)
 
@@ -115,9 +117,9 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 
 >[!NOTE]
 >
->如需 [特定工作的詳細資訊](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists)，請參 [閱「預告與策略」、「設定促銷活動](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) 」 [和「電子報](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) 」。
+>如需特定工作的詳細資訊，請參閱[預告與策略](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists)、[設定促銷活動](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign)和[電子報](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)。
 
-若要存取現有的促銷活動，請在MCM中按一下 **促銷活動**。
+若要存取現有的促銷活動，請在MCM中按一下&#x200B;**Campaigns**。
 
 ![screen_shot_2012-02-21at1106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
@@ -127,7 +129,7 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 
    只要按一下品牌，兩者皆可：
 
-   * 展開清單，在左窗格中顯示所有相關的促銷活動； 此清單也顯示每個促銷活動的體驗數。
+   * 展開清單，在左窗格中顯示所有相關的促銷活動；此清單也顯示每個促銷活動的體驗數。
    * 在右窗格中開啟品牌概觀。
 
 * **在右窗格中**:
@@ -136,25 +138,25 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 
    您可以按兩下這些項目，以開啟品牌概觀。
 
-#### 品牌概觀 {#brand-overview}
+#### 品牌概觀{#brand-overview}
 
 ![mcm_brandoverview](assets/mcm_brandoverview.png)
 
 從這裡，您可以：
 
 * 查看此品牌存在的促銷活動和體驗數量（顯示在左窗格中的數量）。
-* 建立 **新……** 促銷活動。
+* 建立&#x200B;**新……**&#x200B;促銷活動。
 
-* 變更檢視的時間範圍； 選擇「 **周」、「月**」或「 **季」** ，使用箭頭選擇特定期間或返回 ********「今天」。
+* 變更檢視的時間範圍；選擇&#x200B;**Week**、**Month**&#x200B;或&#x200B;**Quarter**，使用箭頭選擇特定期間或返回&#x200B;**Today**。
 
 * 選擇促銷活動（在右窗格中）以：
 
-   * 編輯 **屬性……**
-   * **刪除促銷活動** 。
+   * 編輯&#x200B;**屬性……**
+   * **刪** 除促銷活動。
 
 * 開啟促銷活動概述（按兩下右窗格中的促銷活動，或在左窗格中按一下）。
 
-#### 促銷活動概述 {#campaign-overview}
+#### 促銷活動概述{#campaign-overview}
 
 對於個別促銷活動，有兩種檢視可供使用：
 
@@ -170,9 +172,9 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 
    從這裡，您可以：
 
-   * 使用箭頭變更您正在檢視的時間範圍，或返回 **Today**。
-   * 使用 **新增觸點……** 為現有體驗新增觸點。
-   * 按一下摘要（在右窗格中）以設定「開 **機** 」和 **「關機」**。
+   * 使用箭頭更改您正在查看的時間範圍，或返回&#x200B;**Today**。
+   * 使用&#x200B;**新增接觸點……**&#x200B;以新增現有體驗的觸點。
+   * 按一下摘要（在右窗格中）以設定&#x200B;**開機**&#x200B;和&#x200B;**關機**。
 
 1. **清單檢視**
 
@@ -186,29 +188,29 @@ MCM可從AEM的不同位置存取； 例如，「歡迎」畫面，使用「促�
 
    從這裡，您可以：
 
-   * 建立 **新……** 經驗； 例如，Adobe Target優惠、廣告和電子報。
-   * **編輯** 特定摘要頁面或電子報的詳細資訊（您也可以按兩下）。
-   * 定義 **屬性……** 特定摘要頁面或電子報。
-   * **模擬** （摘要頁面或電子報）體驗的外觀和感覺。
+   * 建立&#x200B;**新……**&#x200B;體驗；例如，Adobe Target優惠、廣告和電子報。
+   * **編** 輯特定摘要頁面或電子報的詳細資訊（也可使用按兩下功能）。
+   * 定義&#x200B;**屬性……**，以取得特定摘要頁面或電子報。
+   * **模** 擬體驗的外觀和感覺（摘要頁面或電子報）。
 
       當模擬頁面開啟時，您可以開啟sidekick，以切換至該頁面的編輯模式。
 
    * **分析……** 為頁面產生的印象。
-   * **刪除** （當不再需要）項目。
-   * **搜尋** 您的文字（將搜尋體驗的「標題」欄位）。
-   * 使用 **進階搜尋** ，將篩選套用至搜尋。
+   * **刪除** 不再需要的項目。
+   * **搜** 尋您的文字（將搜尋體驗的「標題」欄位）。
+   * 使用&#x200B;**Advanced**&#x200B;搜尋，將篩選套用至搜尋。
 
-### 模擬您的促銷活動體驗 {#simulating-your-campaign-experiences}
+### 模擬促銷活動體驗{#simulating-your-campaign-experiences}
 
-在MCM中，按一下「促 **銷活動**」。 請確定清單檢視為作用中，然後選取所需的促銷活動體驗，然後按一下「模 **擬」**。 觸點（摘要或電子報頁面）將會開啟，以顯示您所選取的體驗——如訪客所見。
+在MCM中，按一下&#x200B;**Campaigns**。 確定清單檢視處於作用中，然後選取所需的促銷活動體驗，然後按一下「模擬」。 ****&#x200B;觸點（摘要或電子報頁面）將會開啟，以顯示您所選取的體驗——如訪客所見。
 
 ![mcm_simulateexperience](assets/mcm_simulateexperience.png)
 
 您也可以從這裡開啟側鍵（按一下小向下箭頭），以變更為編輯模式以更新頁面。
 
-### 分析您的促銷活動體驗 {#analyzing-your-campaign-experiences}
+### 分析促銷活動體驗{#analyzing-your-campaign-experiences}
 
-在MCM中，按一下「促 **銷活動**」。 請確定清單檢視是作用中的，然後選取所需的促銷活動體驗，然後選取「 **分析……」**. 將會顯示隨時間變化的頁面印象圖表。
+在MCM中，按一下&#x200B;**Campaigns**。 確定清單檢視處於作用中，然後選取所需的促銷活動體驗，並選取「分析……」**。**&#x200B;將會顯示隨時間變化的頁面印象圖表。
 
 ![mcm_campaignanyle](assets/mcm_campaignanalyze.png)
 
