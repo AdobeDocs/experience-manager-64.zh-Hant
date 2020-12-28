@@ -155,7 +155,7 @@ ht-degree: 0%
 1. 登入以張貼留言：
 1. 在注釋文本輸入框中輸入文本，然後按一下&#x200B;**[!UICONTROL Post]**
 
-   ![chlimage_1-191](assets/chlimage_1-191.png)
+   ![chlimage_1-111](assets/chlimage_1-191.png)
 
 1. 只要檢視[author instance](http://localhost:4502/content/community-components/en/comments.html)（可能仍以管理員／管理員身分登入）的注釋即可。
 
