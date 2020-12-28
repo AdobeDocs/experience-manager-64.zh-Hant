@@ -1,8 +1,8 @@
 ---
 title: 建立文章匯出設定
 seo-title: 建立文章匯出設定
-description: Follow this page to learn about exporting content from Adobe Experience Manager (AEM) for upload to AEM Mobile.
-seo-description: Follow this page to learn about exporting content from Adobe Experience Manager (AEM) for upload to AEM Mobile.
+description: 請依照本頁瞭解如何從Adobe Experience Manager(AEM)匯出內容以上傳至AEM Mobile。
+seo-description: 請依照本頁瞭解如何從Adobe Experience Manager(AEM)匯出內容以上傳至AEM Mobile。
 uuid: 089bc15b-669e-4623-bdbb-fd9abf46e098
 contentOwner: User
 content-type: reference
@@ -28,19 +28,19 @@ ht-degree: 0%
 >
 >**先決條件**:
 >
->Prior to learn about creating and modifying shared resources, see [Content Sync](/help/mobile/mobile-ondemand-contentsync.md) to understand the basic concepts.
+>在瞭解如何建立和修改共用資源之前，請參閱[內容同步](/help/mobile/mobile-ondemand-contentsync.md)以瞭解基本概念。
 
 AEM Mobile使用者使用「內容同步」將即時內容匯出為靜態內容，以便用於「行動應用程式」，當內容從AEM Mobile上傳至Mobile隨選服務時，就會發生此匯出。
 
-上表 ***中提及的屬性dps-exportTemplate*** ，會定義應用程式匯出設定的路徑。 設定此屬性可建立和修改共用資源。
+上表中提及的屬性&#x200B;***dps-exportTemplate***&#x200B;定義應用程式匯出設定的路徑。 設定此屬性可建立和修改共用資源。
 
-The following resources describes exporting content from Adobe Experience Manager (AEM) for upload to AEM Mobile.
+下列資源說明從Adobe Experience Manager(AEM)匯出內容以上傳至AEM Mobile。
 
 文章有需要匯出和上傳的內容。 部分內容可在文章之間共用。
 
-Use [ContentSync](/help/mobile/mobile-ondemand-contentsync.md) to gather the content together and create a ***Shared Resources*** package.
+使用[ContentSync](/help/mobile/mobile-ondemand-contentsync.md)將內容匯集在一起，並建立&#x200B;***共用資源***&#x200B;套件。
 
-The ContentSync configuration found at **&lt;dps-exportTemplate>/dps-article>** should be configured to export all the content an article required for property static rendering on device.
+在&#x200B;**&lt;dps-exportTemplate>/dps-article>**&#x200B;找到的ContentSync設定應設定為匯出裝置上屬性靜態演算所需的所有內容和文章。
 
 >[!CAUTION]
 >
@@ -57,13 +57,13 @@ The ContentSync configuration found at **&lt;dps-exportTemplate>/dps-article>** 
 要查看共用資源示例，請參閱以下步驟：
 
 1. 在AEM伺服器上開啟CRXDE Lite。
-1. Browse to this path [/etc/contentsync/templates/dps-we-unlimited-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article), to view the sample shared resources.
+1. 瀏覽至此路徑[/etc/contentsync/templates/dps-we-unlimited-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article)，以檢視範例共用資源。
 
-   You can view all the properties required for creating your shared resources as shown in the figure below:
+   您可以檢視建立共用資源所需的所有屬性，如下圖所示：
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
 >[!NOTE]
 >
->Articles should be uploaded or exported to AEM Mobile On-Demand Services when an articles content changes.
+>當文章內容變更時，應上傳或匯出至AEM Mobile On-Demand Services。
 
