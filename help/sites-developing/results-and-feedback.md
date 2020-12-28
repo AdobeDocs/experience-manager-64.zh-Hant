@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 追蹤結果並提供意見回應{#tracking-results-and-providing-feedback}
+# 追蹤結果並提供意見{#tracking-results-and-providing-feedback}
 
-您可自行決定如何定義測試案例以及產生的測試計畫； 有許多工具可供使用。
+您可自行決定如何定義測試案例以及產生的測試計畫；有許多工具可供使用。
 
 不過，不論您選擇的方法或工具為何，都會儲存下列資訊：
 
