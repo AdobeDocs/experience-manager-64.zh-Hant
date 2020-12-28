@@ -33,17 +33,17 @@ AEM提供：
 
 Selenium用於瀏覽器中的函式測試，每個活動有一個用戶。 它會將測試步驟（點按）記錄為HTML表格或Java類別。
 
-如需詳細資訊，請參 [閱https://www.seleniumhq.org/](https://www.seleniumhq.org/)。
+如需詳細資訊，請參閱[https://www.seleniumhq.org/](https://www.seleniumhq.org/)。
 
 **JMeter**
 
 JMeter用於跟蹤請求，可用於功能、效能和壓力測試。
 
-如需詳細資訊，請參 [閱http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)。
+如需詳細資訊，請參閱[http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)。
 
 此外，還有許多專屬工具可自動化測試和管理測試計畫。
 
-## 追蹤 {#tracking}
+## 追蹤{#tracking}
 
 您可輕鬆使用下列工具。 但是，所有情況下的一個關鍵問題是，項目團隊的所有成員（合作夥伴和客戶）都可以獲得資料。
 
