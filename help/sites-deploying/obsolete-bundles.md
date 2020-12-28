@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 升級後卸載的過時捆綁包清單{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+# 在Upgrade{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}解除安裝過時的捆綁包清單
 
 >[!NOTE]
 >
