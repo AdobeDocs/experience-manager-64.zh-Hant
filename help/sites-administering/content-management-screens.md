@@ -18,9 +18,9 @@ ht-degree: 1%
 ---
 
 
-# 螢幕內容管理{#content-management-for-screens}
+# 畫面內容管理{#content-management-for-screens}
 
-AEM Screens的 ***內容管理員*** (Content Manager for AEM Screens)是創意專業人員，與行銷密切合作，並瞭解促銷活動、觀眾和所需的焦點。 內容管理員負責透過開發不同的通道，並將序列指派至定時的通道體驗，來建立和協調使用者體驗。
+AEM Screens的&#x200B;***內容管理員***&#x200B;是創意專業人員，與行銷密切合作，並瞭解促銷活動、觀眾和所需的焦點。 內容管理員負責透過開發不同的通道，並將序列指派至定時的通道體驗，來建立和協調使用者體驗。
 
 Content Manager for Screens可設計位置和排程、維護通路整合、執行分析和報告，以及維護視訊設定檔。
 
