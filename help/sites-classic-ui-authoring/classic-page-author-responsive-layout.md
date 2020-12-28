@@ -22,5 +22,5 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
->雖然傳統UI中提供「版面」容器元件，但其完整功能僅在觸控式UI中提供並支援。 如需詳細 [資訊，請參閱標準編寫檔案中的](/help/sites-authoring/responsive-layout.md) 「互動式版面」。
+>雖然傳統UI中提供「版面」容器元件，但其完整功能僅在觸控式UI中提供並支援。 如需詳細資訊，請參閱標準編寫檔案中的[回應式版面](/help/sites-authoring/responsive-layout.md)。
 
