@@ -11,100 +11,100 @@ ht-degree: 0%
 ---
 
 
-# Configure the Rich Text Editor {#configure-the-rich-text-editor}
+# 配置富格文本編輯器{#configure-the-rich-text-editor}
 
 富格文本編輯器(RTE)為作者提供了多種編輯其文本內容的功能。 提供圖示、選擇方塊、工具列和選單，以提供WYSIWYG文字編輯體驗。
 
-要瞭解如何使用RTE功能進行編寫，請參 [閱Use Rich Text Editor for authoring](/help/sites-authoring/rich-text-editor.md)。 RTE可以配置為啟用、禁用和擴展編寫元件中可用的功能。 以下工作流程說明在Experience Manager中完成RTE配置任務的建議順序。
+要瞭解如何使用RTE功能進行編寫，請參閱[使用富格文本編輯器進行編寫](/help/sites-authoring/rich-text-editor.md)。 RTE可以配置為啟用、禁用和擴展編寫元件中可用的功能。 以下工作流程說明在Experience Manager中完成RTE配置任務的建議順序。
 
 ![配置Rich Text Editor的典型工作流程](assets/rte_workflow_v1.png)
 
-*圖： 配置Rich Text Editor的典型工作流程*
+*圖：配置Rich Text Editor的典型工作流程*
 
-## 瞭解可觸控的UI和傳統UI {#understand-touch-enabled-ui-and-classic-ui}
+## 瞭解可觸控的UI和Classic UI {#understand-touch-enabled-ui-and-classic-ui}
 
-Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環 [境推出](/help/sites-authoring/responsive-layout.md) Touch UI及互動式設計。 Touch UI是專為觸控和桌上型裝置所設計。 UI與原始的傳統UI有很大不同。
+Touch-enabled UI是AEM的標準UI。 Adobe在5.6版中針對製作環境推出具[互動式設計](/help/sites-authoring/responsive-layout.md)的Touch UI。Touch UI是專為觸控和桌上型裝置所設計。 UI與原始的傳統UI有很大不同。
 
 ![啟用觸控的UI中的豐富型文字編輯器工具列](assets/chlimage_1-404.png)
 
-*圖： 啟用觸控的UI中的豐富型文字編輯器工具列*
+*圖：啟用觸控的UI中的豐富型文字編輯器工具列*
 
 ![Classic UI中的Rich Text Editor工具列](assets/rtedefault.png)
 
-*圖： Classic UI中的Rich Text Editor工具列*
+*圖：Classic UI中的Rich Text Editor工具列*
 
 >[!MORELIKETHIS]
 >
 >* [UI建議](/help/sites-deploying/ui-recommendations.md)
->* 關於取代Classic UI，請參 [閱AEM 6.4發行說明](/help/release-notes/deprecated-removed-features.md)
->* 如需UI之間的差異，請參 [閱Touch UI和Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* 若要詳細瞭解啟用觸控的UI，請參閱「AEM Touch UI [的概念」](/help/sites-developing/touch-ui-concepts.md)
+>* 關於取代Classic UI，請參閱[AEM 6.4發行說明](/help/release-notes/deprecated-removed-features.md)
+>* 如需UI之間的差異，請參閱[Touch UI和Classic UI](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
+>* 若要詳細瞭解可觸控的UI，請參閱[AEM Touch UI](/help/sites-developing/touch-ui-concepts.md)的概念
 
 
-## 各種編輯模式 {#editingmodes}
+## 編輯{#editingmodes}的各種模式
 
-作者可以使用不同的元件模式，在AEM中建立和編輯文字內容。 用於編寫和格式化內容的工具欄選項以及不同編輯模式下啟用RTE的元件的用戶體驗會因RTE配置而異。
+作者可以使用不同的元件模式，在AEM中建立和編輯文字內容。 用於編寫和格式化內容的工具欄選項，以及在不同編輯模式下啟用RTE的元件的用戶體驗，會根據RTE配置而有所不同。
 
 | 編輯模式 | 編輯區域 | 建議啟用的功能 | Touch UI | 傳統 UI |
 |--- |--- |--- |--- |--- |
-| 內嵌 | 就地編輯，以快速進行小幅編輯； 格式，不開啟對話方塊 | 最低RTE功能 | Y | Y |
+| 內嵌 | 就地編輯，以快速進行小幅編輯；格式，不開啟對話方塊 | 最低RTE功能 | Y | Y |
 | RTE全螢幕 | 涵蓋整個頁面 | 所有必要的RTE功能 | Y | N |
-| 對話方塊 | 對話框，但不涵蓋整個頁面 | Classic UI中所有必需的RTE功能； 審慎地啟用Touch UI中的功能 | Y | Y |
-| 全螢幕對話方塊 | 與全螢幕模式相同； 包含RTE旁邊對話框的欄位 | 所有必要的RTE功能 | Y | N |
+| 對話方塊 | 對話框，但不涵蓋整個頁面 | Classic UI中所有必需的RTE功能；審慎地啟用Touch UI中的功能 | Y | Y |
+| 全螢幕對話方塊 | 與全螢幕模式相同；包含RTE旁邊對話框的欄位 | 所有必要的RTE功能 | Y | N |
 
 >[!NOTE]
 >
 >在啟用觸控的UI中，內嵌編輯模式中無法使用來源編輯功能。 您無法以全螢幕模式拖曳影像。 所有其他功能都適用於所有模式。
 
-### 內嵌編輯 {#inline-editing}
+### 內嵌編輯{#inline-editing}
 
 開啟時（點選／按一下速度緩慢），您可在頁面內編輯內容。 給出了一種具有基本選項的緊湊型工具欄。
 
 ![使用觸控式UI中的基本工具列進行內嵌編輯](assets/chlimage_1-405.png)
 
-*圖： 使用觸控式UI中的基本工具列進行內嵌編輯*
+*圖：使用觸控式UI中的基本工具列進行內嵌編輯*
 
 在Classic UI中，按兩下元件時速度緩慢，可進行內嵌編輯，而橘色的外框會反白顯示內容。 如果Content Finder已開啟，則窗口頂部將顯示一個帶有可用RTE格式設定選項的工具欄。 如果未開啟「內容搜尋器」，則不會顯示格式選項，您只能進行基本文字編輯。
 
-### 全螢幕編輯 {#full-screen-editing}
+### 全螢幕編輯{#full-screen-editing}
 
-AEM元件可在全螢幕檢視中開啟，隱藏頁面內容並佔據可用螢幕。 請考慮使用全螢幕編輯功能來編輯內嵌編輯的詳細版本，因為它提供最多的編輯選項。 使用內嵌編輯模式時，可 ![以從精簡工具列按一下rte_fullscreen](assets/rte_fullscreen.png)，以開啟它。
+AEM元件可在全螢幕檢視中開啟，隱藏頁面內容並佔據可用螢幕。 請考慮使用全螢幕編輯功能來編輯內嵌編輯的詳細版本，因為它提供最多的編輯選項。 使用內嵌編輯模式時，可從精簡工具列按一下![rte_fullscreen](assets/rte_fullscreen.png)以開啟它。
 
 對話框全屏模式提供了詳細的RTE工具欄，以及對話框模式中可用的選項和元件。 它僅適用於包含RTE和其他元件的對話框。
 
 ![在啟用觸摸屏的UI中以全屏模式編輯時的詳細RTE工具欄](assets/chlimage_1-406.png)
 
-*圖： 在啟用觸摸屏的UI中以全屏模式編輯時的詳細RTE工具欄*
+*圖：在啟用觸摸屏的UI中以全屏模式編輯時的詳細RTE工具欄*
 
-### 對話框編輯 {#dialog-editing}
+### 對話框編輯{#dialog-editing}
 
 在Classic UI中按兩下元件時，會開啟對話方塊以編輯內容。 對話框在現有頁面的頂部開啟。 在某些特定情況下，對話方塊會以快顯視窗的形式開啟。 例如，當「文字」元件是多欄頁面版面中欄的一部分，而對話方塊的可用區域較少時。
 
 ![啟用觸控的UI中的對話編輯模式](assets/dialog_editing_modetouchui.png)
 
-*圖： 啟用觸控的UI中的對話編輯模式*
+*圖：啟用觸控的UI中的對話編輯模式*
 
 ![Classic UI中包含編輯詳細工具列的對話框](assets/chlimage_1-407.png)
 
-*圖： Classic UI中包含編輯詳細工具列的對話框*
+*圖：Classic UI中包含編輯詳細工具列的對話框*
 
-## 關於RTE插件和相關功能 {#aboutplugins}
+## 關於RTE插件和相關功能{#aboutplugins}
 
 此功能可透過一系列外掛程式提供，每個外掛程式都包含：
 
-* 屬 `features` 性：
+* `features`屬性：
 
    * 用於啟用或停用該外掛程式的基本功能。
    * 可使用標準化程式進行設定。
 
 * 在適當的情況下，需要特殊配置的更多屬性和選項。
 
-RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激活或停用的。
+RTE的基本功能由相應插件專用節點上的`features`屬性值激活或停用。
 
 下表列出目前的外掛程式，其中顯示：
 
-* 具有API檔案連結的外掛程式ID。 啟用外掛程式時，ID會 [用作節點名稱](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)。
-* 屬性的允許 `features` 值。
+* 具有API檔案連結的外掛程式ID。 當[啟用外掛程式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)時，ID會用作節點名稱。
+* `features`屬性的允許值。
 * 外掛程式提供的功能說明。
 
 | 外掛程式ID | 功能 | 說明 |
@@ -113,25 +113,25 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 | [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | 尋找取代 | 尋找和取代。 |
 | [格式](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | 粗斜體下划線 | [基本文字格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
 | [影像](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | 影像 | 基本影像支援（從內容或內容搜尋器拖曳）。 根據瀏覽器，支援對作者有不同的行為 |
-| [鍵](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 要定義此值，請參 [閱標籤大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)。 |
+| [鍵](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 要定義此值，請參閱[標籤大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)。 |
 | [證明](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifleft justifcenter justifyright | 段落對齊。 |
 | [連結](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | modifylink unlink andlock | [超連結和錨點](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles)。 |
-| [清單](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 有序無序縮進 | 此外掛程式可控制縮 [排和清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); 包括巢狀清單。 |
-| [misctools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 其他工具可讓作者輸入 [特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) ，或編輯HTML來源。 此外，如果您想要定義 [自己的清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) ，也可以新增一整組特殊字元。 |
-| Paraformat | paraformat | 預設段落格式為段落、標題1、標題2和標題3(`<p>`、 `<h1>`、 `<h2>`和 `<h3>`)。 您可以 [新增更多段落格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) ，或擴充清單。 |
+| [清單](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 有序無序縮進 | 此外掛程式同時控制[縮排和清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin);包括巢狀清單。 |
+| [misctools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 其他工具可讓作者輸入[特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar)或編輯HTML來源。 此外，如果要定義自己的清單，還可以添加整個[範圍的特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar)。 |
+| Paraformat | paraformat | 預設段落格式為段落、標題1、標題2和標題3（`<p>`、`<h1>`、`<h2>`和`<h3>`）。 您可以[新增更多段落格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats)或擴充清單。 |
 | 拼字檢查 | checktext | [語言感應拼字檢查程式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)。 |
-| 樣式 | 樣式 | 支援使用CSS類別的樣式。 [如果您想要新增](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) （或擴充）您自己的樣式範圍，以便搭配文字使用，請新增文字樣式。 |
+| 樣式 | 樣式 | 支援使用CSS類別的樣式。 [如果您想要](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) 新增（或擴充）您自己的樣式範圍，以搭配文字使用，請新增文字樣式。 |
 | 上標 | 下標上標 | 基本格式的擴充功能，新增子和超指令碼。 |
-| 表 | 表removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns | 如果 [要為整個表格或個別儲存格新增自己的樣式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)，請參閱設定表格樣式。 |
-| 復原 | 撤消重做 | 還原和重做 [操作的歷史](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) 大小。 |
+| 表 | 表removetable insertrow removerow insertcolumn removecolumn cellprops mergecells splitcell selectrow selectcolumns | 如果要為整個表格或個別儲存格新增自己的樣式，請參閱[設定表格樣式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)。 |
+| 復原 | 撤消重做 | 還原和重做操作的歷史大小。[](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) |
 
 >[!NOTE]
 >
->全螢幕外掛程式在對話模式中不受支援。 使用設 `dialogFullScreen` 定來設定全螢幕模式的工具列。
+>全螢幕外掛程式在對話模式中不受支援。 使用`dialogFullScreen`設定，將工具列設定為全螢幕模式。
 
-## 瞭解配置路徑和位置 {#understand-the-configuration-paths-and-locations}
+## 瞭解配置路徑和位置{#understand-the-configuration-paths-and-locations}
 
-您 [為作者提供的RTE編輯模式（和UI）](#editingmodes) ，在激活RTE插件時，將決定配置詳細 [資訊的位置](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin):
+在[激活RTE插件](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)時，您為作者提供的[ RTE編輯模式（和UI）](#editingmodes)確定配置詳細資訊的位置：
 
 | 編輯模式 | Touch UI的位置 | Classic UI的位置 |
 |---|---|---|
@@ -142,44 +142,44 @@ RTE的基本功能是由相應插件專用節點上 `features` 的屬性值激�
 
 >[!NOTE]
 >
->請勿將節點命名為 `cq:inplaceEditing` 「 `config`」。 在節 `cq:inplaceEditing` 點上，定義以下屬性：
+>請勿將`cq:inplaceEditing`下的節點命名為`config`。 在`cq:inplaceEditing`節點上，定義以下屬性：
 >
->* **名稱**: `configPath`
->* **類型**: `String`
->* **值**: 包含實際配置的節點的路徑
+>* **名稱**:  `configPath`
+>* **類型**:  `String`
+>* **值**:包含實際配置的節點的路徑
 
 >
 >
-不要將RTE配置節點命名為 `config`。 否則，RTE配置只對管理員有效，對組中的用戶無效 `content-author`。
+不要將RTE配置節點命名為`config`。 否則，RTE配置只對管理員有效，對組`content-author`中的用戶無效。
 
 僅在Touch UI的「對話」編輯模式中設定下列適用的屬性：
 
-* `useFixedInlineToolbar`: 將在RTE節點上定義的此Boolean屬性(一個帶有sling:resourceType= `cq/gui/components/authoring/dialog/richtext`)設定為 `True`，使RTE工具欄固定而非浮動。
+* `useFixedInlineToolbar`:將在RTE節點上定義的此Boolean屬性(一個帶有sling:resourceType= `cq/gui/components/authoring/dialog/richtext`)設定為 `True`，使RTE工具欄固定而非浮動。
 
    如果此屬性為true，則Richtext編輯預設會從&quot;foundation-contentloaded&quot;事件開始。
 
-   要防止這種情況，請將屬 `customStart` 性設 `True`置為並觸發&#39;rte-start&#39;事件以啟動RTE編輯。 當此屬性為&#39;true&#39;時，預設行為（點按時啟動rte）將無法運作。
+   要防止這種情況，請將屬性`customStart`設定為`True`並觸發&#39;rte-start&#39;事件以啟動RTE編輯。 當此屬性為&#39;true&#39;時，預設行為（點按時啟動rte）將無法運作。
 
-* `customStart`: 將在RTE節點上定義的此布爾屬性設定為 `True`，以通過觸發事件控制啟動RTE的時間 `rte-start`。
+* `customStart`:將在RTE節點上定義的此布爾屬性設定為 `True`，以通過觸發事件控制啟動RTE的時間 `rte-start`。
 
-* `rte-start`: 在開始編輯RTE `contenteditable-div` 時觸發此事件。 只有在已設 `customStart` 為true時，才能運作。
+* `rte-start`:在開始編輯RTE `contenteditable-div` 時觸發此事件。僅當`customStart`已設為true時，此選項才有效。
 
-在啟用觸控的對話框中使用RTE時，必須將屬性 `useFixedInlineToolbar` 設定為true才能避免問題。
+在啟用觸控的對話框中使用RTE時，必須將屬性`useFixedInlineToolbar`設為true才能避免問題。
 
-## 就地自訂編輯 {#customizing-in-place-editing}
+## 就地自訂編輯{#customizing-in-place-editing}
 
 您可以設定下列屬性，以定義文字編輯器在哪個HTML選擇器上啟動：
 
-* **`editElementQuery`** -定義於 `cq:InplaceEditingConfig`，此屬性用於指定HTML元素的選擇器，在該選擇器上將啟動文本元件的內嵌編輯。 如果未指定，內嵌編輯會直接在文字元件HTML上啟動。
+* **`editElementQuery`** -定義於 `cq:InplaceEditingConfig`，此屬性用於指定HTML元素的選擇器，在該選擇器上將啟動文本元件的內嵌編輯。如果未指定，內嵌編輯會直接在文字元件HTML上啟動。
 * **`textPropertyName`** -定義於 `cq:InplaceEditingConfig`中，此屬性用於指定將保存在內容節點上的屬性名稱，文本元件的HTML值將在內嵌編輯後保存在該節點上。
 
-對話框模式的對應屬性為 `name`。
+對話框模式的相應屬性為`name`。
 
-## 通過激活插件啟用RTE功能 {#enable-rte-functionalities-by-activating-plug-ins}
+## 通過激活插件{#enable-rte-functionalities-by-activating-plug-ins}啟用RTE功能
 
 RTE功能可透過一系列外掛程式提供，每個外掛程式都包含features屬性。 您可以設定features屬性，以啟用或停用每個外掛程式的各種功能。
 
-有關RTE插件的詳細配置，請參見 [如何激活和配置RTE插件](/help/sites-administering/configure-rich-text-editor-plug-ins.md)。
+有關RTE插件的詳細配置，請參見[如何激活和配置RTE插件](/help/sites-administering/configure-rich-text-editor-plug-ins.md)。
 
 下載此示例配置以瞭解如何配置RTE。 在此套件中，所有功能都已啟用。
 
@@ -187,7 +187,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 
 >[!NOTE]
 >
->Core [Components文字元件](https://helpx.adobe.com/experience-manager/core-components/using/text.html) ，可讓範本編輯器在使用者介面中，將許多RTE外掛程式設定為內容原則，以免進行技術設定。 內容策略可以如所述與RTE用戶介面配置配合使用。 如需詳細資訊，請參 [閱RTE使用者介面設定和內容政策](/help/sites-administering/rich-text-editor.md#rtecontentpolicies)、 [建立頁面範本](/help/sites-authoring/templates.md)，以及核心元件開發 [人員檔案](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)。
+>[核心元件文字元件](https://helpx.adobe.com/experience-manager/core-components/using/text.html)可讓範本編輯器將使用者介面中的許多RTE外掛程式設定為內容原則，以免進行技術設定。 內容策略可以如所述與RTE用戶介面配置配合使用。 如需詳細資訊，請參閱[RTE使用者介面設定和內容政策](/help/sites-administering/rich-text-editor.md#rtecontentpolicies)、[建立頁面範本](/help/sites-authoring/templates.md)和[核心元件開發人員檔案](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)。
 
 >[!NOTE]
 >
@@ -200,14 +200,14 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 >
 若要建立您自己的文字元件，請複製上述元件，而非編輯這些元件。
 
-## 配置RTE工具欄 {#dialogfullscreen}
+## 配置RTE工具欄{#dialogfullscreen}
 
 AEM可讓您針對不同的編輯模式，以不同的方式為RichText Editor設定UI。 預設設定如下。 您可以根據需求覆寫這些預設值。
 
 為獲得最佳的製作體驗：
 
 * 在浮動對話方塊中，只啟用那些沒有快顯視窗的外掛程式，因為浮動對話方塊的大小較小。
-* 在全螢幕對話方塊中，啟用所有必要的外掛程式，甚至是具有較大快顯視窗的外掛程式， `Paste` 例如外掛程式。 請使用下 `dialogFullScreen` 述的設定。
+* 在全螢幕對話方塊中，啟用所有必要的外掛程式，甚至是具有較大快顯視窗的外掛程式，例如`Paste`外掛程式。 請使用下述的`dialogFullScreen`配置。
 
 ```java
 <uiSettings jcr:primaryType="nt:unstructured">
@@ -248,13 +248,13 @@ AEM可讓您針對不同的編輯模式，以不同的方式為RichText Editor�
 </uiSettings>
 ```
 
-內嵌模式和全螢幕模式會使用不同的UI設定。 工具列屬性用於指定工具列的按鈕。 例如，如果按鈕本身是功能(例如 `Bold`)，則會指定 `PluginName#FeatureName` 為(例如 `links#modifylink`)。 如果按鈕是快顯視窗（包含外掛程式的某些功能），則會指定 `#PluginName` 為(例如 `#format`)。 分隔符( |)。
+內嵌模式和全螢幕模式會使用不同的UI設定。 工具列屬性用於指定工具列的按鈕。 例如，如果按鈕本身是功能（例如`Bold`），則會指定為`PluginName#FeatureName`（例如`links#modifylink`）。 如果按鈕是快顯視窗（包含外掛程式的某些功能），則會指定為`#PluginName`（例如`#format`）。 分隔符( |)。
 
-內嵌或全螢幕模式下的快顯節點包含使用的快顯器清單。 節點下的每個子 `popovers` 節點都以插件(例如， `format`)命名。 它有一個 `items` 包含外掛程式功能清單的屬性(例如 `format#bold`)。
+內嵌或全螢幕模式下的快顯節點包含使用的快顯器清單。 `popovers`節點下的每個子節點都以插件命名（例如`format`）。 它有一個`items`屬性，包含插件的功能清單（例如`format#bold`）。
 
-## RTE用戶介面設定和內容策略 {#rtecontentpolicies}
+## RTE用戶介面設定和內容策略{#rtecontentpolicies}
 
-管理員可以使用內容策略來控制RTE選項，例如，而不是按照上述說明進行配置。 內容原則可定義元件在做為可編輯範本的一部分時的設 [計屬性](../sites-authoring/templates.md)。 例如，如果使用RTE的文本元件與可編輯的模板一起使用，內容策略可以定義粗體選項可用，而有一些段落格式選項可用。 內容原則可重複使用，並可套用至多個範本。
+管理員可以使用內容策略來控制RTE選項，例如，而不是按照上述說明進行配置。 內容原則可定義元件在作為[可編輯範本](../sites-authoring/templates.md)的一部分時的設計屬性。 例如，如果使用RTE的文本元件與可編輯的模板一起使用，內容策略可以定義粗體選項可用，而有一些段落格式選項可用。 內容原則可重複使用，並可套用至多個範本。
 
 AEM 6.4 Service Pack 3之後，RTE中的可用選項會從使用者介面組態流向內容原則。
 
@@ -262,18 +262,18 @@ AEM 6.4 Service Pack 3之後，RTE中的可用選項會從使用者介面組態�
 * 如果RTE的用戶介面配置已刪除或未啟用項目，則內容策略無法對其進行配置。
 * 作者只能存取使用者介面組態和內容原則所提供的功能。
 
-例如，您可以看到「文字核 [心元件」檔案](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
+例如，您可以看到[Text Core Component檔案](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)。
 
-## 自訂工具列圖示和指令之間的對應 {#iconstoolbar}
+## 自定義工具欄表徵圖和命令{#iconstoolbar}之間的映射
 
 您可以自定義RTE工具欄上顯示的珊瑚表徵圖和可用命令之間的映射。 除了珊瑚圖示以外，您無法使用其他任何圖示。
 
-1. 建立名為的節 `icons` 點 `uiSettings/cui`。
+1. 在`uiSettings/cui`下建立名為`icons`的節點。
 
 1. 為下方的個別圖示建立節點。
 1. 在每個個別圖示節點上，指定Coral圖示和對應至圖示的命令。
 
-以下是將命令Bold對應至名為的Coral圖示的范常式式碼片段 `textItalic`。
+下面是將命令Bold映射到名為`textItalic`的Coral表徵圖的示例代碼片段。
 
 ```java
 <text jcr:primaryType="nt:unstructured" sling:resourceType="cq/gui/components/authoring/dialog/richtext" name="./text" useFixedInlineToolbar="{Boolean}true"> 
@@ -301,21 +301,21 @@ AEM 6.4 Service Pack 3之後，RTE中的可用選項會從使用者介面組態�
 
 >[!NOTE]
 >
->Adobe不建議將切換作為最佳實務。 切換至CoralUI 2 RTE做為最後選擇。 如果外掛程式不依賴RTE內部檔案（例如類別）,CoralUI 2 RTE的自訂外掛程式可與CoralUI 3 RTE搭配使用。 如果您使用CoralUI 3 RTE的自訂外掛程式，請使用程式 `rte.coralui3` 庫。
+>Adobe不建議將切換作為最佳實務。 切換至CoralUI 2 RTE做為最後選擇。 如果外掛程式不依賴RTE內部檔案（例如類別）,CoralUI 2 RTE的自訂外掛程式可與CoralUI 3 RTE搭配使用。 如果您使用CoralUI 3 RTE的自訂外掛程式，請使用`rte.coralui3`程式庫。
 
-1. 將節點覆 `/libs/cq/gui/components/authoring/editors/clientlibs/core` 蓋在 `/apps`下方，並執行下列動作：
+1. 覆蓋`/apps`下的節點`/libs/cq/gui/components/authoring/editors/clientlibs/core`，並執行下列操作：
 
-   * 對於相 `rte.coralui3` 依性 `rte.coralui2` 屬性，請用替換。
-   * 將 `cq.authoring.editor.core.inlineediting.rte.coralui3` 內嵌 `cq.authoring.editor.core.inlineediting.rte.coralui2` 屬性取代為。
-   * 將 `cq.authoring.rte.coralui3` 內嵌 `cq.authoring.rte.coralui2` 屬性取代為。
+   * 將`rte.coralui3`替換為`rte.coralui2`作為從屬關係屬性。
+   * 將`cq.authoring.editor.core.inlineediting.rte.coralui3`取代為`cq.authoring.editor.core.inlineediting.rte.coralui2`做為embed屬性。
+   * 將`cq.authoring.rte.coralui3`取代為`cq.authoring.rte.coralui2`做為embed屬性。
 
-1. 覆蓋節點 `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` 和 `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` 下方 `/apps`。
+1. 在`/apps`下覆蓋`/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3`和`/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`節點。
 
-   將類別從 `cq.authoring.dialog` 中移 `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` 除並將其添加到 `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`。
+   從`/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3`移除類別`cq.authoring.dialog`，並將其新增至`/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`。
 
-1. 將頁面上包含的任何其他相依性從更改為 `rte.coralui3` 所有 `rte.coralui2`。 例如，在下面覆蓋節 `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` 點 `/apps`後，將對它的任何依賴從更改 `rte.coralui3` 為 `rte.coralui2`。
+1. 將頁面上包含的任何其他相依性從`rte.coralui3`變更為`rte.coralui2`。 例如，在`/apps`下覆蓋節點`/libs/mcm/campaign/components/touch-ui/clientlibs/rte`後，將對節點的依賴從`rte.coralui3`更改為`rte.coralui2`。
 
-1. 在下面覆蓋節 `cq/ui/widgets` 點 `/apps`。 將節點上的相 `cq.rte` 依性替換 `/apps/cq/ui/widgets` 為 `cq.coralui2.rte`。
+1. 在`/apps`下覆蓋節點`cq/ui/widgets`。 將節點`/apps/cq/ui/widgets`上的相關性`cq.rte`替換為`cq.coralui2.rte`。
 
 >[!NOTE]
 >
@@ -323,29 +323,29 @@ AEM 6.4 Service Pack 3之後，RTE中的可用選項會從使用者介面組態�
 
 ## 更多資訊 {#further-information}
 
-如需設定RTE的詳細資訊，請參閱 [AEM Widget API參考](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) 。
+如需設定RTE的詳細資訊，請參閱[AEM Widget API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)參考。
 
 尤其是，若要查看可用的增效模組和相關選項：
 
-* [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) 元件提供表單欄位，以編輯樣式化文字資訊(rich text)。 要瞭解富格文本表單的所有可用參數，請參閱配置選項。
-* RichText元件使用 [CQ.form.rte.plugins.Plugins下所列的外掛程式，提供多種功能](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)。 針對每個外掛程式：
+* [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText)元件提供表單欄位，以編輯樣式化文字資訊(rich text)。 要瞭解富格文本表單的所有可用參數，請參閱配置選項。
+* RichText元件使用列在[CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)下方的外掛程式，提供多種功能。 針對每個外掛程式：
 
    * 如需可啟用（或停用）功能的詳細資訊，請參閱功能。
    * 如需適當外掛程式的詳細設定，請參閱所有可用參數的設定選項。
 
 * 也提供連結的HTML規則相關詳細資訊。
 
-上述選項可用於擴展和自定義您自己的RTE。 例如，若要在建立連結時列出頁面中可用的定位點，您可以提供您自己的實作 `LinkPlugin`。
+上述選項可用於擴展和自定義您自己的RTE。 例如，若要在建立連結時列出頁面中可用的定位點，您可以提供您自己的`LinkPlugin`實作。
 
-## 已知限制 {#known-limitations}
+## 已知限制{#known-limitations}
 
 AEM RTE功能有下列限制：
 
-* RTE功能僅在AEM元件對話方塊中受支援。 RTE不支援精靈或基礎表單，例如啟用觸控功能 [的UI上](/help/sites-developing/page-properties-views.md)[的「頁面屬性」和「腳手架](/help/sites-authoring/scaffolding.md) 」。
+* RTE功能僅在AEM元件對話方塊中受支援。 RTE不支援精靈或基礎表單，例如啟用觸控的UI上的「頁面屬性」([Page Properties)](/help/sites-developing/page-properties-views.md)和「支架(Stable)」([)。](/help/sites-authoring/scaffolding.md)
 
-* AEM無法在 [Hybrid裝置上運作](/help/release-notes/known-issues.md)。
+* AEM無法在[Hybrid devices](/help/release-notes/known-issues.md)上運作。
 
-* 不要為RTE配置節點命名 `config`。 否則，RTE配置只對管理員有效，對組中的用戶無效 `content-author`。
+* 不要為RTE配置節點命名`config`。 否則，RTE配置只對管理員有效，對組`content-author`中的用戶無效。
 
 * RTE不支援內嵌影格或iframe以內嵌內容。
 
