@@ -34,9 +34,9 @@ ht-degree: 0%
 * 電子郵件的SMTP
 * 用於用戶管理的LDAP
 
-例如，您可以將代理伺服器放在通過TCP/IP網路通信的任意兩個應用程式之間； 例如網頁瀏覽器和AEM。 這可讓您監控當您請求AEM頁面時的實際情況。
+例如，您可以將代理伺服器放在通過TCP/IP網路通信的任意兩個應用程式之間；例如網頁瀏覽器和AEM。 這可讓您監控當您請求AEM頁面時的實際情況。
 
-## 啟動代理伺服器工具 {#starting-the-proxy-server-tool}
+## 啟動Proxy Server Tool {#starting-the-proxy-server-tool}
 
 此工具可在AEM安裝的/opt/helpers檔案夾中找到。 要啟動它，請鍵入：
 
@@ -46,13 +46,13 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 
 ### 選項 {#options}
 
-* **q（安靜模式）** Does not write the requests to the console window. 如果您不想減慢連接速度，或者將輸出記錄到檔案（請參見-logfile選項），請使用此選項。
-* **b（二進位模式）** ，如果您要尋找流量中的特定位元組組合，請啟用二進位模式。 然後，輸出將包含十六進位和字元輸出。
-* **t（時間戳記記錄項目）** ，將時間戳記新增至每個記錄輸出。 時間戳記以秒為單位，因此可能不適合檢查單一請求。 如果您在較長的時段內使用代理伺服器，則可使用它來查找在特定時間發生的事件。
-* **logfile &lt;filename>（寫入日誌檔案）** ，將客戶機——伺服器會話寫入日誌檔案。 此參數也可在安靜模式下運作。
-* **i &lt;numIndentions>（新增縮進）** ，每個作用中的連線都會縮進以提高可讀性。 預設為16層。 （proxy.jar 1.16版中的新功能）。
+* **q（安靜模式）** 不將請求寫入控制台窗口。如果您不想減慢連接速度，或者將輸出記錄到檔案（請參見-logfile選項），請使用此選項。
+* **b（二進位模式）** 如果您要尋找流量中的特定位元組組合，請啟用二進位模式。然後，輸出將包含十六進位和字元輸出。
+* **t（時間戳記記錄項目）** 將時間戳記新增至每個記錄輸出。時間戳記以秒為單位，因此可能不適合檢查單一請求。 如果您在較長的時段內使用代理伺服器，則可使用它來查找在特定時間發生的事件。
+* **日誌文 &lt;filename> 件（寫入日誌檔案）** 將客戶端——伺服器會話寫入日誌檔案。此參數也可在安靜模式下運作。
+* **i(加 &lt;numindentions> 入縮進)每** 個作用中的連線都會縮進，以提高可讀性。預設為16層。 （proxy.jar 1.16版中的新功能）。
 
-## 代理伺服器工具的使用 {#uses-of-the-proxy-server-tool}
+## 代理伺服器工具{#uses-of-the-proxy-server-tool}的使用
 
 以下案例說明了Proxy Server Tool可用於的一些用途：
 
@@ -64,7 +64,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
 ```
 
-**檢查標題及其值** ：以下日誌條目示例顯示伺服器能夠建立保持活動連接，並且內容長度標題已正確設定：
+**檢查標題及其值以** 下日誌條目示例顯示伺服器能夠建立保持活動連接，並且內容長度標題已正確設定：
 
 ```xml
 S-7-#000017 -> [Connection: Keep-Alive ]
@@ -74,7 +74,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **檢查Keep-Alive是否有效**
 
-**Keep-Alive** 意指用戶端重新使用伺服器連線來傳輸多個檔案（頁面程式碼、圖片、樣式表等）。 若不保持連線，用戶端必須為每個請求建立新的連線。
+**Keep-** Alive意指用戶端重新使用與伺服器的連線來傳輸多個檔案（頁面程式碼、圖片、樣式表等）。若不保持連線，用戶端必須為每個請求建立新的連線。
 
 要檢查keep-alive是否有效：
 
@@ -100,7 +100,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 1. 等待或將訪問日誌寫入檔案——每個條目都有時間戳記。
 1. 當請求開始掛起時，您可以看到開啟了多少連線，以及哪個請求造成問題。
 
-## 日誌消息的格式 {#the-format-of-log-messages}
+## 日誌消息的格式{#the-format-of-log-messages}
 
 proxy.jar產生的記錄項目都有下列格式：
 
@@ -128,7 +128,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 這顯示第6個連接上以平均速度在客戶機和伺服器之間傳遞的位元組數。
 
-## 日誌輸出示例 {#an-example-of-log-output}
+## 日誌輸出示例{#an-example-of-log-output}
 
 我們將審查一個簡單的模板，該模板在要求時生成以下代碼：
 
@@ -185,7 +185,7 @@ Proxy伺服器是確認Cookie是否已正確設定的好工具。 這裡，我�
 
 * AEM產生的cq3session Cookie
 * 由CFC產生的顯示模式切換Cookie
-* 名為JSESSIONID的Cookie; 如果未使用&lt;%@ page session=&quot;false&quot; %>顯式關閉，則JSP會自動建立此選項：
+* 名為JSESSIONID的Cookie;如果未使用&lt;%@ page session=&quot;false&quot; %>顯式關閉，則JSP會自動建立此選項：
 
 ```xml
 C-0-#000393 -> [Cookie: Show=ShowMode; cq3session=3bce15cf-1575-1b4e-8ea6-0d1a0c64738e; JSESSIONID=4161a56b-f193-d748-88a5-e09c5ff7ef2a ]
