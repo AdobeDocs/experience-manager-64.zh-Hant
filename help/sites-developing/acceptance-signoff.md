@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# 接受與簽署{#acceptance-and-sign-off}
+# 接受和簽署{#acceptance-and-sign-off}
 
-如前所述， [驗收測試](/help/sites-developing/planning.md) (Acception Tests)是用於驗證以下各項的特殊測試類別：
+如前所述，[接受測試](/help/sites-developing/planning.md)是用於驗證以下項目的測試的特殊類別：
 
 * 項目滿足客戶的要求。
 * 客戶接受專案。
