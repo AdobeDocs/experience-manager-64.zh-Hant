@@ -20,7 +20,7 @@ ht-degree: 21%
 
 # 工具主控台{#tools-consoles}
 
-**「工具」**&#x200B;主控台可供存取多種特殊工具，協助您管理網站、數位資產和內容存放庫的其他方面。工具控制台目前有兩種 **類型** ，視您使用的UI而定：
+**「工具」**&#x200B;主控台可供存取多種特殊工具，協助您管理網站、數位資產和內容存放庫的其他方面。**Tools**&#x200B;控制台目前有兩種類型，取決於您使用的UI:
 
 * [工具- Classic UI](#tools-classic-ui)
 * [工具——觸控最佳化UI](#tools-touch-optimized-ui)
@@ -42,12 +42,12 @@ ht-degree: 21%
   <tr> 
    <td>客戶端上下文配置<br /> </td> 
    <td> </td> 
-   <td>「用 <a href="/help/sites-developing/client-context.md">戶端內容</a> 」代表動態組合的使用者資料集合。 預設和行銷雲端組態會保留在這裡。<br /> </td> 
+   <td><a href="/help/sites-developing/client-context.md">客戶端上下文</a>表示動態組合的用戶資料集合。 預設和行銷雲端組態保留在這裡。<br /> </td> 
   </tr> 
   <tr> 
-   <td>雲端服務組態<br /> </td> 
+   <td>雲服務配置<br /> </td> 
    <td> </td> 
-   <td>保留與Adobe Marketing Cloud <a href="/help/sites-administering/marketing-cloud.md">整合相關的設定</a>。</td> 
+   <td>保留與<a href="/help/sites-administering/marketing-cloud.md">整合Adobe Marketing Cloud</a>相關的設定。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">商務</a></td> 
@@ -60,9 +60,9 @@ ht-degree: 21%
    <td>可存取數位版權資訊和授權。</td> 
   </tr> 
   <tr> 
-   <td>DAM - Health Checker<br /> </td> 
+   <td>DAM —— 健康檢查器<br /> </td> 
    <td> </td> 
-   <td>比較 <code>/var/dam</code> 和 <code>/content/dam</code> 檢查是否<br /> 有任何不一致。 然後，可以同步或刪除列出的任何檔案／資料夾。 在Web控制台中可配置資料夾比較的節點類型。</td> 
+   <td>比較<code>/var/dam</code>和<code>/content/dam</code>並檢查是否有任何不一致之處。 <br />然後，可以同步或刪除列出的任何檔案／資料夾。 在Web控制台中可配置資料夾比較的節點類型。</td> 
   </tr> 
   <tr> 
    <td>DAM - Adobe Indesign<br /> </td> 
@@ -77,7 +77,7 @@ ht-degree: 21%
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">控制面板</a></td> 
    <td> </td> 
-   <td>可讓您建立報告控制面板； 這些功能提供可自訂的方式來定義顯示統一資料的頁面。</td> 
+   <td>可讓您建立報告控制面板；這些功能提供可自訂的方式來定義顯示統一資料的頁面。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">設計</a></td> 
@@ -130,7 +130,7 @@ ht-degree: 21%
    <td>「封裝管理員」的替代連結，顯示已為AEM WCM載入的封裝。 類似於CRX的包管理器中顯示的資訊。</td> 
   </tr> 
   <tr> 
-   <td>複製——復 <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">制代理</a></td> 
+   <td>複製- <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">複製代理</a></td> 
    <td> </td> 
    <td>用於在發佈頁面時從作者複製資料至發佈，或使用反向複製將使用者注釋從發佈環境傳回給作者。</td> 
   </tr> 
@@ -150,7 +150,7 @@ ht-degree: 21%
    <td>使用腳手架，您可以建立表單（腳手架），其中欄位可反映您頁面的結構，然後使用此表單輕鬆建立以此結構為基礎的頁面。</td> 
   </tr> 
   <tr> 
-   <td>安全性- <a href="/help/sites-administering/notification.md">自助服務配置 </a> </td> 
+   <td>安全性- <a href="/help/sites-administering/notification.md">自助服務配置</a> </td> 
    <td> </td> 
    <td>可讓您設定使用者在建立帳戶或重設密碼時自動收到的電子郵件，並確認已重設的密碼。</td> 
   </tr> 
@@ -162,7 +162,7 @@ ht-degree: 21%
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>預設SRP配置。 請參 <a href="/help/communities/srp-config.md">閱儲存配置</a> 控制台。</td> 
+   <td>預設SRP配置。 請參閱<a href="/help/communities/srp-config.md">儲存配置</a>控制台。</td> 
   </tr> 
   <tr> 
    <td>任務管理</td> 
@@ -175,7 +175,7 @@ ht-degree: 21%
    <td>沒有與此條目相關的活動功能。</td> 
   </tr> 
   <tr> 
-   <td>版本修訂- <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
+   <td>版本控制- <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
    <td> </td> 
    <td>允許您根據需要清除頁面版本。</td> 
   </tr> 
@@ -187,7 +187,7 @@ ht-degree: 21%
   <tr> 
    <td>口碑</td> 
    <td> </td> 
-   <td>已棄用. 請參閱 <a href="/help/communities/moderate-ugc.md#watchwords">協調社群內容</a></td> 
+   <td>已棄用. 請參閱<a href="/help/communities/moderate-ugc.md#watchwords">協調社群內容</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">工作流程</a></td> 
