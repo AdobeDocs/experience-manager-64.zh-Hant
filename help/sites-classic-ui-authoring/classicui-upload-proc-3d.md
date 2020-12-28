@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# 關於在AEM中上傳和處理3D資產{#about-the-uploading-and-processing-of-d-assets-in-aem}
+# 關於在AEM{#about-the-uploading-and-processing-of-d-assets-in-aem}中上傳及處理3D資產
 
 使用標準上傳或同步機制，將3D資產及其相關參照的檔案匯入AEM Assets。
 
-請參閱 [上傳資產](/help/assets/managing-assets-touch-ui.md#uploading-assets)。
+請參閱[上傳資產](/help/assets/managing-assets-touch-ui.md#uploading-assets)。
 
 Adobe建議您在上傳主要3D模型檔案之前或同時上傳所有參照的檔案。 但是，這並非必要條件。
 
 上傳完成時，會轉換您的3D檔案，並套用其他處理程式，以準備資產供檢視和轉譯。
 
-## 上傳3D資產的最佳實務 {#best-practices-for-uploading-d-assets}
+## 上傳3D資產{#best-practices-for-uploading-d-assets}的最佳實務
 
 * 通常，您在AEM Assets檔案夾階層中上傳3D內容的位置沒有限制。 不過，AEM 3D的自動化檔案相依性解決方案有範圍限制，可控制搜尋大型資產儲存庫所花的時間。 因此，Adobe建議您在上傳3D資產及其檔案依存項時，在合理的距離內，在每個檔案（共同的祖父資料夾）附近執行此動作。 解決檔案相依性後，您可以任意移動3D資產及其相依項，而不會遺失已建立的關係。
 * Adobe建議您在*上傳前，先決定3D內容的一致資料夾結構*。 以下提示是一些建議的方法，您可以採用：
@@ -47,17 +47,17 @@ Adobe建議您在上傳主要3D模型檔案之前或同時上傳所有參照的�
 
 * 除非也移除參照相依資產的相關3D資產或資產，否則不應刪除相依資產。 不過，您可以自由刪除3D資產，而不需刪除其相依資產。 如果意外丟失了相關性，您可以輕鬆解決相關性，以恢復該相關性。
 
-   請參 [閱解決檔案相關性](/help/assets/resolve-file-dependencies.md)。
+   請參閱[解決檔案相關性](/help/assets/resolve-file-dependencies.md)。
 
-## 上傳3D檔案時的效能考量 {#performance-considerations-when-uploading-d-files}
+## 上傳3D檔案{#performance-considerations-when-uploading-d-files}時的效能考量
 
-轉換和處理3D檔案通常會耗用伺服器上的大量CPU和記憶體資源。 這也需要相當長的時間。 處理時間通常會因模型大小和伺服器功能而大不相同。 例如，一個面積小於100k的典型小型模型，通常在1分鐘內就可供檢視； 在2-3分鐘內完全處理。 然而，擁有100萬張以上臉孔的大型模型需要數十分鐘才能完全處理。
+轉換和處理3D檔案通常會耗用伺服器上的大量CPU和記憶體資源。 這也需要相當長的時間。 處理時間通常會因模型大小和伺服器功能而異。 例如，一個面積小於100k的典型小型模型，通常在1分鐘內就可供檢視；在2-3分鐘內完全處理。 然而，擁有100萬張以上臉孔的大型模型需要數十分鐘才能完全處理。
 
-視需要將轉換、處理和轉換工作排入佇列，以避免伺服器速度變慢太多。 訊息「正在等待處理……」 在您上傳資產時 **[!UICONTROL ，卡片檢視]** (Card View)中有時會顯示。 此狀態表示在處理當前資產之前，必須完成其他處理或渲染作業。
+視需要將轉換、處理和轉換工作排入佇列，以避免伺服器速度變慢太多。 訊息「正在等待處理……」 在您上傳資產時，有時會在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中顯示。 此狀態表示在處理當前資產之前，必須完成其他處理或渲染作業。
 
-## 監控已上傳3D檔案的處理狀態 {#monitoring-the-processing-status-of-your-uploaded-d-files}
+## 監控已上載3D檔案的處理狀態{#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-僅 **[!UICONTROL 在卡片檢視]** ，處理狀態和進度會顯示為資產卡片上的進度橫幅。 每個上傳的3D模型通常會經歷下列4-6個順序處理階段：
+僅在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，處理狀態和進度會顯示為資產卡片上的進度橫幅。 每個上傳的3D模型通常會經歷下列4-6個順序處理階段：
 
 <table> 
  <tbody> 
@@ -101,5 +101,5 @@ Adobe建議您在上傳主要3D模型檔案之前或同時上傳所有參照的�
 
 >[!NOTE]
 >
->您可以在「詳細資料檢視」中檢 **[!UICONTROL 視3D資產]** ，或在「建立預覽」階段完成後進行演算。 您不需要等待所有處理階段完成。
+>您可以在&#x200B;**[!UICONTROL 詳細資料檢視]**&#x200B;中檢視3D資產，或在「建立預覽」階段完成後進行演算。 您不需要等待所有處理階段完成。
 
