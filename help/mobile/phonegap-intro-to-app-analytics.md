@@ -1,8 +1,8 @@
 ---
 title: 使用Adobe Mobile Analytics追蹤應用程式效能
 seo-title: 使用Adobe Mobile Analytics追蹤應用程式效能
-description: 透過Adobe Mobile Services，您可以透過追蹤行動應用程式的使用狀況、應用程式當機、裝置詳細資訊以及許多其他重要度量，深入瞭解您的使用者如何使用行動應用程式。 請依本頁瞭解詳細資訊。
-seo-description: 透過Adobe Mobile Services，您可以透過追蹤行動應用程式的使用狀況、應用程式當機、裝置詳細資訊以及許多其他重要度量，深入瞭解使用者使用行動應用程式的方式。 請依本頁瞭解詳細資訊。
+description: 透過Adobe Mobile Services，您可以透過追蹤行動應用程式的使用狀況、應用程式當機、裝置詳細資訊以及許多其他重要度量，深入瞭解您的使用者如何使用行動應用程式。 請依照本頁進一步瞭解。
+seo-description: 透過Adobe Mobile Services，您可以透過追蹤行動應用程式的使用狀況、應用程式當機、裝置詳細資訊以及許多其他重要度量，深入瞭解您的使用者如何使用行動應用程式。 請依照本頁進一步瞭解。
 uuid: 139858c7-66a1-4fea-9f7e-4671b86f67e6
 contentOwner: User
 content-type: reference
@@ -34,20 +34,20 @@ ht-degree: 0%
 
 透過Adobe Mobile Services，您可以透過追蹤行動應用程式的使用狀況、應用程式當機、裝置詳細資訊以及許多其他重要度量，深入瞭解您的使用者如何使用行動應用程式。
 
-Adobe Experience Manager Mobile可讓您直接從AEM Mobile應用程式儀表板瞭解行動分析的詳細資訊。 儀表板中 **的「行動量度圖格** 」可為行動應用程式提供即時分析，讓開發人員、作者和管理員可快速瞭解行動應用程式的運行狀況。 Adobe Mobile Analytics SDK是分析的 [](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) 支柱。 Adobe Mobile Analytics SDK可以原生方式插入您的應用程式，或透過PhoneGap網橋外掛程式進行網頁檢視。 量度會在裝置上收集並快取，直到裝置連線為止，資料會推送至Adobe Mobile Services Cloud以進行報告和分析。
+Adobe Experience Manager Mobile可讓您直接從AEM Mobile應用程式儀表板瞭解行動分析的詳細資訊。 儀表板中的&#x200B;**行動量度圖格**&#x200B;為行動應用程式提供即時分析，讓開發人員、作者和管理員可快速瞭解行動應用程式的運行狀況。 為分析提供動力的封面下方是[Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK。 Adobe Mobile Analytics SDK可以原生方式插入您的應用程式，或透過PhoneGap網橋外掛程式進行網頁檢視。 量度會在裝置上收集並快取，直到裝置連線為止，資料會推送至Adobe Mobile Services Cloud以進行報告和分析。
 
 Adobe Mobile Analytics SDK提供下列功能：
 
-1. **針對行動通道收集資料** -針對所有主要作業系統上的行動網站和應用程式收集完整的資料。
+1. **針對行動通道收集資料** -針對所有主要作業系統的行動網站和應用程式收集完整的資料。
 1. **行動互動分析** -瞭解您行動應用程式、網站或視訊中的使用者互動，包括消費者啟動渠道的頻率、他們是否從渠道購買等。
 1. **行動應用程式控制面板和報表** -取得包含應用程式生命週期度量和應用程式商店度量的使用狀況報表— 檢視使用者、啟動、平均作業長度、保留長度和當機的趨勢。
 1. **行動宣傳分析** -量化行動特定宣傳的成效，例如SMS、行動搜尋廣告、行動展示廣告和QR Code。
 1. **地理位置分析** -根據GPS位置或興趣點，尋找應用程式使用者在何處啟動並與行動體驗互動。
-1. **路徑分析** -瞭解使用者如何瀏覽您的應用程式，以判斷哪些螢幕和UI元素吸引使用者，以及哪些元素會導致使用者流失。
+1. **路徑分析** -瞭解使用者如何瀏覽您的應用程式，以判斷哪些螢幕和UI元素吸引使用者，以及哪些元素導致使用者流失。
 
-本節說明 [](#developers) AEM Developers如何學習如何使用分析追蹤來測量AEM Mobile應用程式。
+本節說明[AEM Developers](#developers)如何學習如何使用分析追蹤來測量AEM Mobile應用程式。
 
-最後， [AEM管理員](#administrators) 會學習：
+最後，[AEM管理員](#administrators)學習：
 
 * 建立Adobe Mobile Services的雲端服務
 * 建立行動服務設定並關聯報表套裝
@@ -55,15 +55,15 @@ Adobe Mobile Analytics SDK提供下列功能：
 * 透過AEM Apps Command Center檢視量度
 * 將AMS SDK設定指派給您的行動應用程式
 
-## 針對開發人員——將Analytics整合至您的應用程式 {#for-developers-integrate-analytics-into-your-app}
+## 針對開發人員——將Analytics整合至您的應用程式{#for-developers-integrate-analytics-into-your-app}
 
-**先決條件：** AEM管理員需要設定Adobe Mobile Services雲端設定，如 [下所述](#amscloudserviceconfig)。
+**先決條件：** AEM管理員必須設定Adobe Mobile Services雲端設定， [如下所述](#amscloudserviceconfig)。
 
-開發人員負責視需要將 [分析新增至AEM Mobile應用程式](/help/mobile/phonegap-add-analytics-to-apps.md) ，以追蹤、報告並瞭解您的使用者如何與行動應用程式內容互動，並測量關鍵生命週期度量，例如啟動、應用程式逗留時間和當機率。
+開發人員負責視需要將[分析新增至AEM Mobile應用程式](/help/mobile/phonegap-add-analytics-to-apps.md)，以追蹤、報告並瞭解您的使用者如何與行動應用程式內容互動，並測量關鍵生命週期度量，例如啟動、應用程式逗留時間和當機率。
 
-## 管理員——設定Adobe Mobile Services Cloud服務 {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
+## 管理員——設定Adobe Mobile Services Cloud服務{#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
-為了善用Adobe Mobile Services，您需要使用您的Adobe Analytics帳戶資訊來設定AEM Adobe Mobile Services Cloud服務。 「應用程式命令中心」提供「 **分析量度」方塊** ，您可以在其中建立雲端服務與行動應用程式關聯。
+為了善用Adobe Mobile Services，您需要使用您的Adobe Analytics帳戶資訊來設定AEM Adobe Mobile Services Cloud服務。 應用程式命令中心提供&#x200B;**分析量度**&#x200B;方塊，您可在其中建立雲端服務與行動應用程式的關聯。
 
 按一下「分析量度」方塊上的齒輪圖示，即可開始為您的行動應用程式設定雲端服務。
 
@@ -77,7 +77,7 @@ Adobe Mobile Analytics SDK提供下列功能：
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
-按一下「**+**」按鈕後，就會顯 **** 示「新增雲端服務」精靈。
+按一下「**+**」按鈕後，將顯示「添加雲服務」嚮導。****
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
@@ -93,7 +93,7 @@ Adobe Mobile Analytics SDK提供下列功能：
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-### Adobe Mobile Services SDK設定檔案 {#adobe-mobile-services-sdk-config-file}
+### Adobe Mobile Services SDK設定檔案{#adobe-mobile-services-sdk-config-file}
 
 目前，您的行動應用程式與雲端服務相關聯，但行動應用程式尚未知道如何將收集的行動量度傳回Adobe Analytics。 若要將行動應用程式連線至Adobe Analytics,Adobe Mobile Services SDK Config檔案必須新增至Adobe Experience Manager。
 
@@ -109,7 +109,7 @@ Adobe Mobile Analytics SDK提供下列功能：
 
 現在，行動應用程式可存取ADBMobileConfig.json檔案，並具備如何傳回Adobe Analytics並開始報告有助於推動應用程式成功的重要量度值的相關知識。
 
-## 下一步是什麼？ {#what-s-next}
+## 下一步是什麼？{#what-s-next}
 
 1. [開始我的AEM Mobile應用程式體驗](/help/mobile/starting-aem-phonegap-app.md)
 1. [管理我的應用程式內容](/help/mobile/phonegap-manage-app-content.md)
