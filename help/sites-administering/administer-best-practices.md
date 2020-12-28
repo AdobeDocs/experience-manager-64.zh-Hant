@@ -58,8 +58,8 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>影像預設集選項</td> 
-   <td>瞭解 <a href="/help/assets/managing-image-presets.md#understanding-image-presets">影像預設集</a><a href="/help/assets/managing-image-presets.md#image-preset-options">和影像預設集最佳實務</a></td> 
-   <td>在「管理影像預設集」的文 <a href="/help/assets/managing-image-presets.md">件中</a>，這些主題說明什麼是影像預設集，以及選取影像預設集選項的最佳實務。</td> 
+   <td>瞭解<a href="/help/assets/managing-image-presets.md#understanding-image-presets">影像預設集</a>和<a href="/help/assets/managing-image-presets.md#image-preset-options">影像預設集最佳實務</a></td> 
+   <td>在<a href="/help/assets/managing-image-presets.md">管理影像預設集</a>的說明檔案中，這些主題說明什麼是影像預設集以及選擇影像預設集選項的最佳實務。</td> 
   </tr>
   <tr>
    <td>動態媒體與直接與Scene7整合</td> 
@@ -83,7 +83,7 @@ ht-degree: 2%
   <tr>
    <td>定義您實例的預設UI。</td> 
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">為實例配置預設UI</a></p> </td> 
-   <td>AEM有兩個UI: 觸控最佳化且經典。 本節詳細說明如何定義您實例的預設UI。</td> 
+   <td>AEM有兩個UI:觸控最佳化且經典。 本節詳細說明如何定義您實例的預設UI。</td> 
   </tr>
   <tr>
    <td>多網站管理</td> 
