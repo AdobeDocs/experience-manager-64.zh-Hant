@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-每個包含Classic UI版本的控制台都可 `/libs/cq/core/content/nav` 以個別重新啟用，如此當將滑鼠游標移至控制台圖示時， **Classic UI** 選項就會再次彈出至控制台圖示上。
+每個`/libs/cq/core/content/nav`中具有Classic UI版本的控制台都可以單獨重新啟用，這樣當將滑鼠移過控制台表徵圖時，**Classic UI**&#x200B;選項就會再次彈出到控制台表徵圖上。
 
 在此範例中，我們將重新啟用Sites主控台的Classic UI。
 
@@ -40,17 +40,17 @@ ht-degree: 0%
 
    `/libs/cq/core/content/nav/sites`
 
-1. 使用「覆蓋節點」選 **項建立覆蓋** ; 例如：
+1. 使用&#x200B;**覆蓋節點**&#x200B;選項建立覆蓋；例如：
 
-   * **路徑**: `/apps/cq/core/content/nav/sites`
+   * **路徑**:  `/apps/cq/core/content/nav/sites`
    * **重疊位置**: `/apps/`
-   * **匹配節點類型**: 活動（選擇複選框）
+   * **匹配節點類型**:活動（選擇複選框）
 
 1. 將下列布爾屬性添加到覆蓋節點：
 
    `enableDesktopOnly = {Boolean}true`
 
-1. 「傳 **統型UI** 」選項在管理控制台中會再次顯示為快顯選項。
+1. 「**傳統UI**」選項在管理控制台中會再次顯示為快顯選項。
 
    ![screen_shot_2018-03-23at111924](assets/screen_shot_2018-03-23at111924.png)
 
