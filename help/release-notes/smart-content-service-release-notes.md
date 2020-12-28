@@ -16,7 +16,7 @@ ht-degree: 4%
 ---
 
 
-# 智慧型內容服務發行說明 {#smart-content-service-release-notes}
+# 智慧型內容服務發行說明{#smart-content-service-release-notes}
 
 智慧型內容服務概觀及服務相關的已知問題。
 
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 智慧型內容服務採用Adobe Sensei平台，可讓您針對業務分類法訓練影像識別演算法。 然後，此內容智慧會用來對類似資產套用相關標籤。
 
-## 主要改進 {#key-improvements}
+## 主要改進{#key-improvements}
 
 智慧型內容服務包含下列主要改進：
 
@@ -88,11 +88,11 @@ Smart Content Service適用於下列地區設定：
 * [adobe.com上的Adobe Experience Manager產品頁面](https://www.adobe.com/marketing-cloud/experience-manager.html)
 * [增強的智慧型標籤檔案](/help/assets/enhanced-smart-tags.md)
 
-## 產品存取與支援（受限制的網站） {#product-access-and-support-restricted-sites}
+## 產品存取與支援（受限制網站）{#product-access-and-support-restricted-sites}
 
 這些網站僅提供給客戶使用。 如果您是客戶且需要存取權，請連絡您的Adobe客戶經理。
 
 * [產品存取](https://login.marketing.adobe.com)
 * [產品下載，請造訪licensing.adobe.com](https://licensing.adobe.com/)。
-* 產品更新、修補程式和套件，以取得軟體散發的 [其他功能](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。
-* [透過Admin Console的客戶支援](https://adminconsole.adobe.com/)。 如需詳細資訊，請參 [閱「新Adobe客戶支援體驗」](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。
+* 產品更新、修補程式和套件，以取得[軟體散發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)的其他功能。
+* [透過Admin Console的客戶支援](https://adminconsole.adobe.com/)。如需詳細資訊，請參閱[新的Adobe客戶支援體驗](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。
