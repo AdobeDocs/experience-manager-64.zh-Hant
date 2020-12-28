@@ -22,9 +22,9 @@ ht-degree: 0%
 
 本節說明更新AEM for Application Server安裝所需遵循的程式。
 
-此程式中的所有範例都使用JBoss做為應用程式伺服器，並暗示您已部署AEM的工作版本。 此程式旨在記錄從 **AEM 5.6版到6.3版所執行的升級**。
+此程式中的所有範例都使用JBoss做為應用程式伺服器，並暗示您已部署AEM的工作版本。 此程式旨在記錄從&#x200B;**AEM 5.6版到6.3**&#x200B;執行的升級。
 
-1. 首先，啟動JBoss。 在大多數情況下，您可以通過運行啟動腳 `standalone.sh` 本，從終端機運行以下命令來執行此操作：
+1. 首先，啟動JBoss。 在大多數情況下，您可以通過運行`standalone.sh`啟動指令碼，從終端機運行以下命令來執行此操作：
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 1. 請執行下列動作，刪除sling.properties檔案中的必要屬性：
 
-   1. 開啟位於 `crx-quickstart/launchpad/sling.properties`
+   1. 開啟位於`crx-quickstart/launchpad/sling.properties`的檔案
    1. 步驟文字移除下列屬性並儲存檔案：
 
       1. `sling.installer.dir`
@@ -70,9 +70,9 @@ ht-degree: 0%
 
 1. 移除不再需要的檔案和檔案夾。 您需要特別移除的項目包括：
 
-   * launchpad/ **startup資料夾**。 通過在終端機中運行以下命令可以刪除它： `rm -rf crx-quickstart/launchpad/startup`
-   * base. **jar檔案**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * BootstrapCommandFile_timestamp.txt **檔案**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * **launchpad/startup資料夾**。 通過在終端機中運行以下命令可以刪除它：`rm -rf crx-quickstart/launchpad/startup`
+   * **base.jar檔案**:`find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * **BootstrapCommandFile_timestamp.txt檔案**:`rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. 將新移轉的區段儲存區複製至其適當位置：
 
@@ -86,9 +86,9 @@ ht-degree: 0%
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. 接下來，您需要建立包含將與新升級實例一起使用的OSGi配置的資料夾。 更具體地說，需要在 **crx-quickstart下建立名為install的資料夾**。
+1. 接下來，您需要建立包含將與新升級實例一起使用的OSGi配置的資料夾。 更具體地說，需要在&#x200B;**crx-quickstart**&#x200B;下建立名為install的資料夾。
 
-1. 現在，請建立將與AEM 6.3搭配使用的節點儲存區和資料儲存區。 通過在 **crx-quickstart\install下建立兩個具有以下名稱的檔案，可以執行此操作**:
+1. 現在，請建立將與AEM 6.3搭配使用的節點儲存區和資料儲存區。通過在&#x200B;**crx-quickstart\install**&#x200B;下建立兩個名稱為以下檔案，可以執行此操作：
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
@@ -98,11 +98,11 @@ ht-degree: 0%
 
 1. 編輯配置檔案以使其可供使用。 更具體地說：
 
-   * 將下列行新 **增至org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * 將下列行新增至&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
       `customBlobStore=true`
 
-   * 然後，將下列行新 **增至org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+   * 然後，將下列行新增至&#x200B;**org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
 
       ```
       path=./crx-quickstart/repository/datastore
@@ -115,19 +115,19 @@ ht-degree: 0%
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. 您現在需要變更AEM 6.3 war檔案中的執行模式。 為此，請先建立暫存檔案夾，以容納AEM 6.3戰爭。 此示例中資料夾的名稱將為 **temp**。 複製war檔案後，從temp資料夾內運行以提取其內容：
+1. 您現在需要變更AEM 6.3 war檔案中的執行模式。 為此，請先建立暫存檔案夾，以容納AEM 6.3戰爭。 此示例中資料夾的名稱為&#x200B;**temp**。 複製war檔案後，從temp資料夾內運行以提取其內容：
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. 提取內容後，移至 **WEB-INF檔案夾並編輯**`web.xml` 檔案以變更執行模式。 要查找在XML中設定它們的位置，請查找字 `sling.run.modes` 符串。 找到後，請變更下一行程式碼中的執行模式，依預設會設為編寫：
+1. 提取內容後，轉至&#x200B;**WEB-INF**&#x200B;資料夾並編輯`web.xml`檔案以更改運行模式。 要查找它們在XML中設定的位置，請查找`sling.run.modes`字串。 找到後，請變更下一行程式碼中的執行模式，依預設會設為編寫：
 
    ```shell
    <param-value >author</param-value>
    ```
 
-1. 將上述作者值變更，並將執行模式設為： author,crx3,crx3tar程式碼的最後區塊應如下所示：
+1. 將上述作者值變更，並將執行模式設為：author,crx3,crx3tar程式碼的最後區塊應如下所示：
 
    ```
    <init-param>
