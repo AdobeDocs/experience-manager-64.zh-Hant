@@ -22,11 +22,11 @@ ht-degree: 2%
 
 標籤可讓內容分類和組織。 標籤可以按命名空間和分類法分類。
 
-* 如需 [有關建立和管理標籤](/help/sites-administering/tags.md) ，以及已套用內容標籤的資訊，請參閱管理標籤。
-* 如需 [標籤內容的相關資訊](/help/sites-authoring/tags.md) ，請參閱使用標籤。
+* 如需建立和管理標籤以及已套用內容標籤的相關資訊，請參閱[管理標籤](/help/sites-administering/tags.md)。
+* 如需標籤內容的相關資訊，請參閱[使用標籤](/help/sites-authoring/tags.md)。
 
 開發人員可取得下列資訊：
 
-* [AEM Tagging Framework](/help/sites-developing/framework.md) —— 用於標籤的節點和屬性的說明
+* [AEM Tagging Framework](/help/sites-developing/framework.md)  —— 用於標籤的節點和屬性的說明
 
 * [建立標籤至AEM應用程式](/help/sites-developing/building.md) -描述從用戶端和伺服器端程式碼搭配標籤架構運作的API
