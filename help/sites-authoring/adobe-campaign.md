@@ -34,7 +34,7 @@ Adobe Campaign是一套解決方案，可讓您跨所有線上和線下通道個
 * [在AEM中建立Adobe Campaign表格](/help/sites-authoring/adobe-campaign-forms.md)
 * [鎖定您的Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
 
-您先前必須已 [將AEM與Adobe Campaign整合](/help/sites-administering/campaign.md)。
+您之前必須有[與Adobe Campaign](/help/sites-administering/campaign.md)整合的AEM。
 
 此外，如果您想要自訂整合，請參閱下列主題：
 
