@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3117'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 96%
 
 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，許多AEM專案都需要解決SEO問題。
 
-This document first describes some [SEO best practices](#seo-best-practices) and recommendations for achieving these on an AEM implementation. 接著，本文件會於第一節中再深入探討幾項更[複雜的實作步驟](#aem-configurations)。
+本文件首先會說明在 AEM 實作中達成上述目標的幾項 [SEO 最佳作法](#seo-best-practices)與建議。接著，本文件會於第一節中再深入探討幾項更[複雜的實作步驟](#aem-configurations)。
 
 ## SEO 最佳作法 {#seo-best-practices}
 
@@ -219,7 +219,7 @@ Resource myPage = req.getResource();
 
 >[!NOTE]
 >
-> The `sling:alias` property can be set using the [Alias property when editing Page Properties](/help/sites-authoring/editing-page-properties.md#advanced)
+> 編輯頁面屬性](/help/sites-authoring/editing-page-properties.md#advanced)時，可使用[別名屬性來設定`sling:alias`屬性
 
 #### /etc/map {#etc-map}
 
