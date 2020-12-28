@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # Web 主控台{#web-console}
 
-AEM中的Web主控台以 [Apache Felix Web Management Console為基礎](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)。 Apache Felix是建置OSGi R4服務平台的社群努力，此平台包含OSGi架構和標準服務。
+AEM中的Web主控台以[Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)為基礎。 Apache Felix是建置OSGi R4服務平台的社群努力，此平台包含OSGi架構和標準服務。
 
 >[!NOTE]
 >
@@ -29,31 +29,31 @@ AEM中的Web主控台以 [Apache Felix Web Management Console為基礎](https://
 
 Web控制台提供一系列標籤，以維護OSGi捆綁包，包括：
 
-* [配置](#configuration): 用於設定OSGi組合，因此是設定AEM系統參數的基礎機制
-* [組合](#bundles): 用於安裝捆綁
-* [元件](#components): 用於控制AEM所需元件的狀態
+* [配置](#configuration):用於設定OSGi組合，因此是設定AEM系統參數的基礎機制
+* [組合](#bundles):用於安裝捆綁
+* [元件](#components):用於控制AEM所需元件的狀態
 
 所做的任何更改都會立即應用於運行的系統。 不需要重新啟動。
 
-控制台可從 `../system/console`; 例如：
+可從`../system/console`訪問控制台；例如：
 
 `http://localhost:4502/system/console/components`
 
 ## 設定 {#configuration}
 
-「 **Configuration** 」（設定）標籤可用來設定OSGi叢集，因此是設定AEM系統參數的基礎機制。
+**Configuration**&#x200B;標籤用於配置OSGi捆綁包，因此是配置AEM系統參數的基礎機制。
 
 >[!NOTE]
 >
->如需詳 [細資訊，請參閱OSGi Configuration with the Web Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 。
+>如需詳細資訊，請參閱「使用Web控制台進行OSGi設定」。[](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)
 
-Configuration **(配置** )頁籤可通過以下任一方式訪問：
+**Configuration**&#x200B;頁籤可通過以下任一方式訪問：
 
 * 下拉式功能表：
 
    **OSGi >**
 
-* 網址； 例如：
+* 網址；例如：
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -67,8 +67,8 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
    允許您更新現有配置。 這些識別碼具有永久性識別碼(PID)，可以是：
 
-   * AEM的標準與整體； 如果刪除，則需要這些值，這些值將返回預設設定。
-   * 從工廠配置建立的實例； 這些實例由用戶建立，刪除操作會刪除實例。
+   * AEM的標準與整體；如果刪除，則需要這些值，這些值將返回預設設定。
+   * 從工廠配置建立的實例；這些實例由用戶建立，刪除操作會刪除實例。
 
 * **工廠配置**
 
@@ -104,15 +104,15 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
    取消任何目前的變更。
 
-## 組合 {#bundles}
+## 捆綁{#bundles}
 
-「 **Bundles** 」(Bundles)頁籤是安裝AEM所需OSGi捆綁的機制。 該頁籤可通過以下任一方法訪問：
+**Bundles**&#x200B;標籤是安裝AEM所需OSGi bundles的機制。 該頁籤可通過以下任一方法訪問：
 
 * 下拉式功能表：
 
    **OSGi >**
 
-* 網址； 例如：
+* 網址；例如：
 
    `http://localhost:4502/system/console/bundles`
 
@@ -124,7 +124,7 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
 * **安裝或更新**
 
-   您可以 **瀏覽** ，以尋找包含您的套件的檔案，並指定是否應立即開始 **，以及開始** 層級 ****。
+   您可以&#x200B;**瀏覽**&#x200B;來尋找包含您的套件的檔案，並指定它是否應立即&#x200B;**開始**，以及在哪個位置&#x200B;**開始層級**。
 
 * **重新載入**
 
@@ -150,21 +150,21 @@ Configuration **(配置** )頁籤可通過以下任一方式訪問：
 
 * **查看狀態**
 
-   該清單指定了包的當前狀態； 按一下特定包的名稱並顯示詳細資訊。
+   該清單指定了包的當前狀態；按一下特定包的名稱並顯示詳細資訊。
 
 >[!NOTE]
 >
->在更 **新後** ，建議執行刷新 **包**。
+>建議在&#x200B;**更新**&#x200B;之後執行&#x200B;**刷新包**。
 
 ## 元件 {#components}
 
-「組 **件** 」(Components)頁籤允許您啟用和／或禁用各種元件。 您可以透過下列其中一種方式存取：
+**元件**&#x200B;頁籤允許您啟用和／或禁用各種元件。 您可以透過下列其中一種方式存取：
 
 * 下拉式功能表：
 
    **主要 >**
 
-* 網址； 例如：
+* 網址；例如：
 
    `http://localhost:4502/system/console/components`
 
