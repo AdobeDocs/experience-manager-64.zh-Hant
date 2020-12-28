@@ -50,7 +50,7 @@ AEM傳送與內容管理API:
 
    * [JSON匯出器](/help/sites-developing/json-exporter.md)
    * [為元件啟用JSON匯出](/help/sites-developing/json-exporter-components.md)
-   * 如需詳細 [資訊，請參閱開發使用指南中的](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) 「元件」一節
+   * 如需詳細資訊，請參閱開發使用指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js)中的[元件區段
 
 * [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
