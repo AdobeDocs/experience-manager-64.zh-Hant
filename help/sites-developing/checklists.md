@@ -37,5 +37,5 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->您也可以查看「管 [理專案——最佳實務檢查清單](/help/managing/best-practices.md) 」，以取得與整個專案相關的進一步檢查清單。
+>您也可以查看[管理項目——最佳實踐檢查清單](/help/managing/best-practices.md)，以取得與整個專案相關的進一步檢查清單。
 
