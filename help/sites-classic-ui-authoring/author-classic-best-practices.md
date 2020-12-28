@@ -69,10 +69,10 @@ ht-degree: 3%
 
 管理和製作網站內容有下列最佳實務：
 
-編寫： [製作環境和工具](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) -提供如何製作頁面的概觀。
+編寫：[作者環境與工具](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) —— 提供如何製作頁面的概觀。
 
 ## 表單 {#forms}
 
-最適化表單： [使用最適化表單的最佳範例](/help/forms/using/adaptive-forms-best-practices.md) -說明設定、編寫和自訂最適化表單的最佳範例。
+最適化表單：[使用最適化表單的最佳範例](/help/forms/using/adaptive-forms-best-practices.md) —— 說明設定、編寫和自訂最適化表單的最佳範例。
 
-HTML5表格： [設計HTML5表單的最佳範例](/help/forms/using/best-practices-for-html5-forms.md) -說明處理HTML5表單版面配置與設計的最佳範例。
+HTML5表格：[設計HTML5表單的最佳範例](/help/forms/using/best-practices-for-html5-forms.md) —— 說明處理HTML5表單版面配置和設計的最佳範例。
