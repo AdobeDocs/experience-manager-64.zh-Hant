@@ -41,9 +41,9 @@ ht-degree: 1%
 
 * 使用外掛程式功能的範本，應以在瀏覽器中仍可授權的方式編寫，而不需使用外掛程式橋接器。
 
-   * 例如，請務必先等待 *deviceready函式* ，再嘗試存取外掛程式的API。
+   * 例如，請務必先等待&#x200B;*deviceready*&#x200B;函式，再嘗試存取外掛程式的API。
 
-## AEM開發人員的准則 {#guidelines-for-aem-developers}
+## AEM開發人員的准則{#guidelines-for-aem-developers}
 
 下列准則將協助想要建立行動應用程式範本和元件的資深網站AEM開發人員：
 
@@ -51,8 +51,8 @@ ht-degree: 1%
 
 * 比單一整體式檔案更偏好多個元件指令碼檔案
 
-   * 提供許多空的擴充點，例如 *customheaderlibs.html**和customfooterlibs.html*，讓開發人員在盡可能少複製核心程式碼的同時，變更頁面範本
-   * 然後，範本可透過Sling&#39;s *sling:resourceSuperType* mechanism進行擴充和自訂
+   * 提供許多空的擴充點，例如&#x200B;*customheaderlibs.html*&#x200B;和&#x200B;*customfooterlibs.html*，允許開發人員在盡可能少複製核心代碼的同時變更頁面範本
+   * 然後，範本可透過Sling的&#x200B;*sling:resourceSuperType*&#x200B;機制擴充和自訂
 
 * 相較於JSP，偏好Sightly/HTL做為範本語言
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您可以在這裡進一步詳細瞭解封鎖演算的外部指令 [碼](https://developers.google.com/speed/docs/insights/BlockingJS)。
+>您可以詳細瞭解有關渲染阻止外部指令碼[的資訊，請參閱](https://developers.google.com/speed/docs/insights/BlockingJS)。
 
 **偏好應用程式專用的用戶端JS和CSS程式庫，而非網頁專用的程式庫**
 
@@ -75,20 +75,20 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->若要深入瞭解jQuery Mobile，請按一下 [這裡](https://jquerymobile.com/browser-support/1.4/)。
+>若要深入瞭解jQuery mobile，請按一下[這裡](https://jquerymobile.com/browser-support/1.4/)。
 
 **偏好微型程式庫而非完整堆疊**
 
 * 將內容放在裝置玻璃上所花的時間，會因您的文章所依賴的每個資料庫而減慢。 當使用新的網頁檢視來轉換每篇文章時，會加劇此速度變慢，因此每個資料庫必須從頭開始重新初始化
 * 如果您的文章未建置為SPA（單頁應用程式），您可能不需要包含完整的堆疊資料庫，例如Angular
-* 偏好較小的單一用途程式庫，以協助您新增頁面所需的互動功能，例如 [Fastclick](https://github.com/ftlabs/fastclick)[或Velocity.js](https://velocityjs.org)
+* 偏好較小的單一用途程式庫，以協助您新增頁面所需的互動功能，例如[Fastclick](https://github.com/ftlabs/fastclick)或[Velocity.js](https://velocityjs.org)
 
 **將文章有效載荷的大小降到最低**
 
 * 以合理的解析度，使用最小的資產，以有效覆蓋您所支援的最大檢視區
-* 在影像上使用 *ImageOptim* 等工具，移除多餘的中繼資料
+* 在影像上使用&#x200B;*ImageOptim*&#x200B;等工具，移除多餘的中繼資料
 
-## 搶先一步 {#getting-ahead}
+## 搶先一步{#getting-ahead}
 
 若要進一步瞭解其他兩個角色和責任，請參閱以下資源：
 
