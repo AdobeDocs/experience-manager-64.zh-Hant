@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 13%
 
 ---
 
 
-# Touch UI功能狀態 {#touch-ui-feature-status}
+# 觸控式UI功能狀態{#touch-ui-feature-status}
 
 >[!CAUTION]
 >
->在AEM 6.4版中， [Classic UI已過時](/help/release-notes/deprecated-removed-features.md)。 Adobe不打算對Classic UI做進一步的增強，而且建議使用者運用觸控式UI下提供的強大新功能。
+>在AEM的6.4版中，[Classic UI已過時](/help/release-notes/deprecated-removed-features.md)。 Adobe不打算對Classic UI做進一步的增強，而且建議使用者運用觸控式UI下提供的強大新功能。
 
-從6.0版開始，AEM推出新的使用者介面，稱為「觸控式UI」（也稱為「觸控式UI」），與Adobe Marketing cloud及整體Adobe使用者介面准則一致。 幾乎已達到功能部分，這已成為AEM中的標準UI，其舊版案頭導向介面稱為「傳統UI」。
+從6.0版開始，AEM推出新的使用者介面，稱為「觸控式UI」（也稱為「觸控式UI」），與Adobe Marketing Cloud及整體Adobe使用者介面准則一致。 幾乎已達到功能部分，這已成為AEM中的標準UI，其舊版案頭導向介面稱為「傳統UI」。
 
 雖然大部份的功能都存在於觸控式使用者介面中，但有些功能尚未完整，將會在未來版本中新增。
 
 下列清單顯示AEM 6.4中實作之功能的目前狀態。
 
-如需升級至AEM 6.4的客戶的建議，請參閱「客戶的使 [用者介面建議」](/help/sites-deploying/ui-recommendations.md) ，以取得詳細資訊。
+如需升級至AEM 6.4的客戶建議，請參閱[客戶使用者介面建議](/help/sites-deploying/ui-recommendations.md)以取得詳細資訊。
 
 >[!NOTE]
 >
@@ -47,9 +50,9 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
 * **已取代**:此功能已取代為運作不同的新實作。
 * **已移除**:此功能不再存在於觸控式UI中，也不會被取代。
 
-## 功能狀態：網站管理員 {#feature-status-sites-admin}
+## 功能狀態：網站管理員{#feature-status-sites-admin}
 
-這是傳統UI網站管理員( `/siteadmin`)擁有的功能清單，以及觸控式UI( `/sites.html`)的狀態。
+這是傳統UI網站管理員(`/siteadmin`)擁有的功能清單，以及觸控式UI(`/sites.html`)的狀態。
 
 <table> 
  <tbody>
@@ -61,7 +64,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>導覽網站階層</td> 
    <td>完成<br /> </td> 
-   <td>AEM 6.4推出內容 <a href="/help/sites-authoring/basic-handling.md#content-tree">樹狀檢視</a>。</td> 
+   <td>AEM 6.4推出<a href="/help/sites-authoring/basic-handling.md#content-tree">內容樹狀檢視</a>。</td> 
   </tr>
   <tr>
    <td>啟動工作流程</td> 
@@ -84,7 +87,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>建立新的即時副本 <br /> </td> 
+   <td>建立新的livecopy <br /> </td> 
    <td>完成<br /> </td> 
    <td> </td> 
   </tr>
@@ -184,7 +187,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td>使用Classic UI。</td> 
   </tr>
   <tr>
-   <td>顯示舊版與目前版本的差異<br /> </td> 
+   <td>顯示舊版和當前版本的差異<br /> </td> 
    <td>完成<br /> </td> 
    <td> </td> 
   </tr>
@@ -200,7 +203,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   </tr>
   <tr>
    <td>尋找和取代</td> 
-   <td>Missing<br /> </td> 
+   <td>缺少<br /> </td> 
    <td>使用Classic UI。</td> 
   </tr>
   <tr>
@@ -216,9 +219,9 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
  </tbody>
 </table>
 
-## 功能狀態：頁面編輯器 {#feature-status-page-editor}
+## 功能狀態：頁面編輯器{#feature-status-page-editor}
 
-這是傳統UI頁面編輯器( `/cf#`)擁有的功能和觸控式( `/editor.html`)狀態的清單。
+這是傳統UI頁面編輯器(`/cf#`)擁有的功能清單，以及觸控式編輯器(`/editor.html`)的狀態。
 
 <table> 
  <tbody>
@@ -263,7 +266,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>編輯工作流程模型<br /> </td> 
+   <td>編輯工作流模型<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -273,7 +276,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>互動式預覽<br /> </td> 
+   <td>自適應預覽<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -315,7 +318,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>工作流包處理</td> 
    <td>大部分</td> 
-   <td>可在觸控式UI中完全存取。 傳統UI中仍會顯示多個工作流程裝載。<br /> </td> 
+   <td>可在觸控式UI中完全存取。 傳統UI中仍顯示多個工作流程裝載。<br /> </td> 
   </tr>
   <tr>
    <td>鎖定／解鎖頁面</td> 
@@ -335,50 +338,50 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>複製頁面</td> 
    <td>已移除<br /> </td> 
-   <td>使用網站管理員 <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">複製頁面</a>。<br /> </td> 
+   <td>使用網站管理員來複製頁面<a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page"></a>。<br /> </td> 
   </tr>
   <tr>
    <td>移動頁面</td> 
    <td>已移除</td> 
-   <td>使用網站管理員 <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">移動頁面</a>。<br /> </td> 
+   <td>使用網站管理員移動頁面<a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">。<br /></a> </td> 
   </tr>
   <tr>
    <td>刪除頁面</td> 
    <td>已移除</td> 
-   <td>使用網站管理員 <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">刪除頁面</a>。<br /> </td> 
+   <td>使用網站管理員<a href="/help/sites-authoring/managing-pages.md#deleting-a-page">刪除頁面</a>。<br /> </td> 
   </tr>
   <tr>
    <td>顯示偏好設定</td> 
    <td>已移除</td> 
-   <td>使用網站管理員 <a href="/help/sites-authoring/author-environment-tools.md#references">查看詳細的參考清單</a>。<br /> </td> 
+   <td>使用網站管理員<a href="/help/sites-authoring/author-environment-tools.md#references">查看詳細的參考清單</a>。<br /> </td> 
   </tr>
   <tr>
    <td>稽核記錄</td> 
    <td>已移除</td> 
-   <td>使用「網站管理」 <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">並開啟活動邊欄</a>。<br /> </td> 
+   <td>使用網站管理員和<a href="/help/sites-authoring/author-environment-tools.md#events-timeline">開啟活動邊欄</a>。<br /> </td> 
   </tr>
   <tr>
    <td>建立版本</td> 
    <td>已移除</td> 
-   <td>使用網站管理員 <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">建立新版本</a>。<br /> </td> 
+   <td>使用網站管理員建立新版本<a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">。<br /></a> </td> 
   </tr>
   <tr>
    <td>還原版本</td> 
    <td>已移除</td> 
-   <td>使用網站管理員 <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">還原版本</a>。</td> 
+   <td>使用站點管理器恢復版本<a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">。</a></td> 
   </tr>
   <tr>
    <td>交換機啟動</td> 
    <td>已移除</td> 
-   <td>使用網站管理員在啟 <a href="/help/sites-authoring/launches-promoting.md">動之間切換</a>。<br /> </td> 
+   <td>使用網站管理員在啟動</a>之間切換<a href="/help/sites-authoring/launches-promoting.md">。<br /> </a></td> 
   </tr>
   <tr>
    <td>翻譯頁面</td> 
    <td>已移除</td> 
-   <td>使用網站管理員 <a href="/help/sites-administering/tc-manage.md">將頁面新增至翻譯專案</a>。<br /> </td> 
+   <td>使用站點管理員將頁面添加到翻譯項目</a>。<br /><a href="/help/sites-administering/tc-manage.md"> </a></td> 
   </tr>
   <tr>
-   <td>時間彎曲（選擇日期／時間，並依看上去的方式瀏覽網站）<br /> </td> 
+   <td>時間彎曲（選擇日期／時間，然後瀏覽網站的外觀）<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -390,10 +393,10 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>用戶端內容UI<br /> </td> 
    <td>已取代</td> 
-   <td>使用 <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> UI，繼續。</td> 
+   <td>使用<a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> UI，繼續使用。</td> 
   </tr>
   <tr>
-   <td>適用於各種媒體類型的內容搜尋器<br /> </td> 
+   <td>各種媒體類型的內容搜尋器<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -403,7 +406,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>複製和貼上元件<br /> </td> 
+   <td>複製並貼上元件<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -423,14 +426,14 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>使用元件自動建立功能，將內容直接拖放至parsys預留位置<br /> </td> 
+   <td>使用元件自動建立功能將內容直接拖放至parsys預留位置<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
  </tbody>
 </table>
 
-## 功能狀態：文字、表格和影像編輯器 {#feature-status-text-table-and-image-editors}
+## 功能狀態：文字、表格和影像編輯器{#feature-status-text-table-and-image-editors}
 
 這是傳統UI文字、表格和影像編輯器的功能清單，以及觸控式UI的狀態。
 
@@ -449,7 +452,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>啟用／禁用RTE插件</td> 
    <td>完成<br /> </td> 
-   <td>可使用範本編輯 <a href="/help/sites-authoring/templates.md">器完成</a>。</td> 
+   <td>可以使用<a href="/help/sites-authoring/templates.md">模板編輯器</a>完成。</td> 
   </tr>
   <tr>
    <td>對純文字檔案使用RTE</td> 
@@ -472,7 +475,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE插件：從Microsoft word貼上<br /> </td> 
+   <td>RTE插件：從Microsoft Word<br />貼上 </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
@@ -512,9 +515,9 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE插件：來源編輯器（編輯HTML）<br /> </td> 
+   <td>RTE插件：原始碼編輯器（編輯HTML）<br /> </td> 
    <td>完成<br /> </td> 
-   <td>僅在對話框和全螢幕中提供。<br /> </td> 
+   <td>僅在對話框和全屏中可用。<br /> </td> 
   </tr>
   <tr>
    <td>RTE插件：拼字檢查器</td> 
@@ -554,7 +557,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>啟用／停用IPE增效模組</td> 
    <td>完成</td> 
-   <td>範本編輯器中現在有 <a href="/help/sites-authoring/templates.md">UI</a>。</td> 
+   <td><a href="/help/sites-authoring/templates.md">範本編輯器</a>中現在有UI。</td> 
   </tr>
   <tr>
    <td>IPE外掛程式：裁切</td> 
@@ -589,7 +592,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
  </tbody>
 </table>
 
-## 功能狀態：工具 {#feature-status-tools}
+## 功能狀態：工具{#feature-status-tools}
 
 這是傳統UI擁有的各種工具清單，以及觸控式UI中的狀態。
 
@@ -603,16 +606,16 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   <tr>
    <td>任務管理</td> 
    <td>已取代</td> 
-   <td>6.0推出專 <a href="/help/sites-authoring/projects.md">案與工作</a>。<br /> </td> 
+   <td>6.0推出<a href="/help/sites-authoring/projects.md">專案與工作</a>。<br /> </td> 
   </tr>
   <tr>
-   <td>工作流程收件匣<br /> </td> 
+   <td>工作流收件箱<br /> </td> 
    <td>完成</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>頁面範本設定工作流程(<code>/etc/workflow/wcm/templates.html</code>)</td> 
-   <td>Missing<br /> </td> 
+   <td>缺少<br /> </td> 
    <td>使用Classic UI。</td> 
   </tr>
   <tr>
@@ -636,8 +639,8 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
    <td>使用Classic UI。</td> 
   </tr>
   <tr>
-   <td>使用者、群組和權限UI<br /> </td> 
-   <td>基本完整<br /> </td> 
+   <td>使用者、群組與權限UI<br /> </td> 
+   <td>主要完成<br /> </td> 
    <td>若要進行進階權限編輯，請使用Classic UI。<br /> </td> 
   </tr>
   <tr>
@@ -652,7 +655,7 @@ source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
   </tr>
   <tr>
    <td>批量編輯器(<code>/etc/importers/bulkeditor.html</code>)</td> 
-   <td>Missing<br /> </td> 
+   <td>缺少<br /> </td> 
    <td>使用Classic UI。</td> 
   </tr>
  </tbody>
