@@ -150,7 +150,7 @@ include語句屬於`<html>`指令碼的`<head>`部分。 預設&#x200B;**`founda
 <ui:includeClientLib categories="apps.an-scf-sandbox"/>
 ```
 
-在瀏覽器中載入您的網站，並查看背景是否不是藍色。
+在瀏覽器中載入您的網站，並查看背景是否為藍色。
 
 [http://localhost:4502/content/an-scf-sandbox/en/play.html](http://localhost:4502/content/an-scf-sandbox/en/play.html)
 
