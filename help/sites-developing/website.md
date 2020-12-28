@@ -18,11 +18,11 @@ ht-degree: 2%
 ---
 
 
-# 建立功能完備的網站(JSP){#create-a-fully-featured-website-jsp}
+# 建立功能完整的網站(JSP){#create-a-fully-featured-website-jsp}
 
 >[!CAUTION]
 >
->本文說明如何使用JSP並以傳統的UI為基礎建立網站。 Adobe建議您運用最新的AEM技術來建立網站，如「開發AEM網站快速入門」一文中 [所述詳細說明](/help/sites-developing/getting-started.md)。
+>本文說明如何使用JSP並以傳統的UI為基礎建立網站。 Adobe建議您運用最新的AEM技術來建立網站，如[Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md)文章中所述。
 
 本教學課程可讓您使用Adobe Experience Manager(AEM)建立功能完整的網站。 該網站將以一般網站為基礎，主要針對網頁開發人員。 所有開發工作都將在作者環境中進行。
 
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 **下載最終結果**
 
-若要遵循教學課程而非執行練習，請下載website-1.0.zip。 此檔案是AEM內容套件，包含本教學課程的結果。 使用 [Package Manager](/help/sites-administering/package-manager.md) ，將套件安裝至您的作者實例。
+若要遵循教學課程而非執行練習，請下載website-1.0.zip。 此檔案是AEM內容套件，包含本教學課程的結果。 使用[Package Manager](/help/sites-administering/package-manager.md)將套件安裝至您的作者實例。
 
 >[!NOTE]
 >安裝此套件將會覆寫您使用本教學課程所建立的編寫執行個體上的所有資源。
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 ## 安裝Adobe Experience Manager {#installing-adobe-experience-manager}
 
-若要安裝AEM例項以開發您的網站，請依照指示設定部署環境與作者 [和發佈例項](/help/sites-deploying/deploy.md#author-and-publish-installs)，或執行一般 [安裝](/help/sites-deploying/deploy.md#default-local-install)。 一般安裝包括下載AEM Quickstart JAR檔案、將license.properties檔案置於與JAR檔案相同的目錄中，以及連按兩下JAR檔案。
+若要安裝AEM例項以開發您的網站，請依照相關指示，設定[部署環境與作者及發佈例項](/help/sites-deploying/deploy.md#author-and-publish-installs)，或執行[一般安裝](/help/sites-deploying/deploy.md#default-local-install)。 一般安裝包括下載AEM Quickstart JAR檔案、將license.properties檔案置於與JAR檔案相同的目錄中，以及連按兩下JAR檔案。
 
 安裝AEM後，按一下「歡迎」頁面上的CRXDE Lite連結，以存取CRXDE Lite開發環境：
 
@@ -69,47 +69,47 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->AEM製作例項的CRXDE Lite URL（使用預設連接埠安裝在本機）是 [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)。
+>AEM製作例項的CRXDE Lite URL（使用預設連接埠本機安裝的AEM製作例項）為[http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)。
 
-## 在CRXDE Lite中設定項目結構 {#setting-up-the-project-structure-in-crxde-lite}
+## 在CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}中設定項目結構
 
 使用CRXDE Lite在儲存庫中建立mywebsite應用程式結構：
 
-1. 在CRXDE Lite左側的樹狀結構中，以滑鼠右鍵按一下資料夾， **`/apps`** 然後按一下「 **[!UICONTROL 建立>建立資料夾]**」。 在「建立 **資料夾** 」對話框中，鍵入 `mywebsite` 作為資料夾名稱，然後按一下「 **確定」**。
-1. 在資料夾上按一 `/apps/mywebsite` 下滑鼠右鍵， **[!UICONTROL 然後按一下「建立>建立資料夾]**」。 在「建立 **[!UICONTROL 資料夾]** 」對話框中，鍵入 `components` 作為資料夾名稱，然後按一下「 **[!UICONTROL 確定」]**。
-1. 在資料夾上按一 `/apps/mywebsite` 下滑鼠右鍵， **[!UICONTROL 然後按一下「建立>建立資料夾]**」。 在「建立 **[!UICONTROL 資料夾]** 」對話框中，鍵入 `templates` 作為資料夾名稱，然後按一下「 **[!UICONTROL 確定」]**。
+1. 在CRXDE Lite左側的樹狀結構中，以滑鼠右鍵按一下&#x200B;**`/apps`**&#x200B;資料夾，然後按一下「建立>建立資料夾&#x200B;]**」。**[!UICONTROL &#x200B;在&#x200B;**建立資料夾**&#x200B;對話框中，鍵入`mywebsite`作為資料夾名稱，然後按一下&#x200B;**確定**。
+1. 按一下右鍵`/apps/mywebsite`資料夾，然後按一下&#x200B;**[!UICONTROL 建立>建立資料夾]**。 在&#x200B;**[!UICONTROL 建立資料夾]**&#x200B;對話框中，鍵入`components`作為資料夾名稱，然後按一下&#x200B;**[!UICONTROL 確定]**。
+1. 按一下右鍵`/apps/mywebsite`資料夾，然後按一下&#x200B;**[!UICONTROL 建立>建立資料夾]**。 在&#x200B;**[!UICONTROL 建立資料夾]**&#x200B;對話框中，鍵入`templates`作為資料夾名稱，然後按一下&#x200B;**[!UICONTROL 確定]**。
 
    樹狀結構現在應該是這樣的：
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
-1. 按一下「 **[!UICONTROL 全部儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 保存全部]**。
 
-## 設定設計 {#setting-up-the-design}
+## 設定設計{#setting-up-the-design}
 
 在本節中，您使用設計工具為應用程式建立設計。 本設計為您的網站提供CSS和影像資源。
 
 >[!NOTE]
 >
->按一下下列連結以下載 ``mywebsite.zip``。 封存檔包含您設計的static.css和影像檔案。
+>按一下以下連結可下載``mywebsite.zip``。 封存檔包含您設計的static.css和影像檔案。
 
 static.css檔案和影像範例
 
 [取得檔案](assets/mywebsite.zip)
 
-1. 在「AEM歡迎」頁面上，按一下「 **[!UICONTROL 工具]**」。 ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
+1. 在「AEM歡迎」頁面上，按一下「**[!UICONTROL 工具]**」。 ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. 在檔案夾樹狀結構中，選取「 **[!UICONTROL Designs]** 」檔案夾，然後按 **[!UICONTROL 一下「新增>新增頁面」]**。 鍵入 `mywebsite` 作為標題，然後按一下「 **[!UICONTROL 建立」]**。
+1. 在資料夾樹中，選擇&#x200B;**[!UICONTROL Designs]**&#x200B;資料夾，然後按一下&#x200B;**[!UICONTROL 新建>新建頁面]**。 鍵入`mywebsite`作為標題，然後按一下&#x200B;**[!UICONTROL 建立]**。
 
 1. 如果mywebsite項目未顯示在表中，請刷新樹或表。
 
-1. [使用WebDAV](/help/sites-administering/webdav-access.md) 存取http://localhost:4502的URL，將下載的mywebsite.zip檔案中的範例檔 `static.css``images` 案和檔案夾複製到檔案夾 `/etc/designs/mywebsite` 中。
+1. [使用](/help/sites-administering/webdav-access.md) WebDAV存取http://localhost:4502的URL，將已下載的mywebsite.zip檔 `static.css` 案 `images` 中的範例檔案和資料夾複製至資料 `/etc/designs/mywebsite` 夾。
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-## 建立內容頁範本、元件和指令碼 {#creating-the-contentpage-template-component-and-script}
+## 建立Contentpage模板、元件和指令碼{#creating-the-contentpage-template-component-and-script}
 
 在本節中，您將建立以下內容：
 
@@ -117,15 +117,15 @@ static.css檔案和影像範例
 * 用於呈現內容頁面的內容頁面元件
 * 內容頁面指令碼
 
-### 建立內容頁面範本 {#creating-the-contentpage-template}
+### 建立內容頁模板{#creating-the-contentpage-template}
 
 建立範本，以做為您網站網頁的基礎。
 
 範本會定義新頁面的預設內容。 複雜的網站可能會使用數個範本來建立網站中不同類型的頁面。 在本練習中，所有頁面都以單一簡單範本為基礎。
 
-1. 在CRXDE Lite的資料夾樹中，按一下右鍵，然 `/apps/mywebsite/templates` 後按一下「 **[!UICONTROL 建立」>「建立模板」]**。
+1. 在CRXDE Lite的資料夾樹中，按一下右鍵`/apps/mywebsite/templates` ，然後按一下&#x200B;**[!UICONTROL 建立>建立模板]**。
 
-1. 在「建立範本」對話方塊中，輸入下列值，然後按一下「下 **[!UICONTROL 一步]**:
+1. 在「建立範本」對話方塊中，輸入下列值，然後按一下「下一步」:****
 
    * **[!UICONTROL 標籤]**:contentpage
    * **[!UICONTROL 標題]**:我的網站內容頁面範本
@@ -136,26 +136,26 @@ static.css檔案和影像範例
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-   資源類型標識轉換頁面的元件。 在這種情況下，使用contentpage模板建立的所有頁面都由元件呈 `mywebsite/components/contentpage` 現。
+   資源類型標識轉換頁面的元件。 在這種情況下，使用contentpage模板建立的所有頁面都由`mywebsite/components/contentpage`元件呈現。
 
-1. 若要指定可使用此範本的頁面路徑，請按一下加號按鈕，然後在顯示 `/content(/.*)?` 的文字方塊中輸入。 然後，按一下「 **[!UICONTROL Next(下一步]**)」。
+1. 若要指定可使用此範本的頁面路徑，請按一下加號按鈕，然後在顯示的文字方塊中輸入`/content(/.*)?`。 然後，按一下&#x200B;**[!UICONTROL Next]**。
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
-   允許的路徑屬性的值是規則運 *算式。* 路徑與運算式相符的頁面可以使用範本。 在這種情況下，規則運算式與資料夾路徑和所 `/content` 有子頁匹配。
+   允許的路徑屬性的值是&#x200B;*規則運算式。* 路徑與運算式相符的頁面可以使用範本。在這種情況下，規則運算式與`/content`資料夾和所有子頁的路徑匹配。
 
-   當作者在下面建立頁 `/content`面時， **** 內容頁面範本會顯示在可用範本清單中。
+   當作者在`/content`下方建立頁面時，**[!UICONTROL contentpage]**&#x200B;範本會顯示在可用範本清單中。
 
-1. 在「 **[!UICONTROL Allowed Parents(允]** 許的父項)」和「Allowed Children **[!UICONTROL (允許的子項]** )」面板中按一下「Next（下一步）」 ，然後按一下「 **[!UICONTROL OK（確定）」]******。 在CRXDE Lite中，按一下「全 **[!UICONTROL 部儲存」]**。
+1. 在&#x200B;**[!UICONTROL 允許父代]**&#x200B;和&#x200B;**[!UICONTROL 允許子代]**&#x200B;面板中按一下&#x200B;**[!UICONTROL Next]**，然後按一下&#x200B;**[!UICONTROL 確定]**。 在CRXDE Lite中，按一下「全部儲存」。****
 
-   ![chlimage_1-105](assets/chlimage_1-106.png)
+   ![chlimage_1-106](assets/chlimage_1-106.png)
 
-#### 建立Contentpage元件 {#creating-the-contentpage-component}
+#### 建立Contentpage元件{#creating-the-contentpage-component}
 
-建立定 *義內容* ，並轉譯使用內容頁面範本的頁面的元件。 元件的位置必須與內容頁模板的「資源類型」屬性的值對應。
+建立&#x200B;*component*，以定義內容並呈現使用內容頁面範本的頁面。 元件的位置必須與內容頁模板的「資源類型」屬性的值對應。
 
-1. 在CRXDE Lite中，以滑鼠右鍵按一下， `/apps/mywebsite/components` 然後按一 **[!UICONTROL 下「建立>元件」]**。
-1. 在「創 **[!UICONTROL 建元件]** 」對話框中，鍵入以下屬性值：
+1. 在CRXDE Lite中，按一下右鍵`/apps/mywebsite/components` ，然後按一下&#x200B;**[!UICONTROL 建立>元件]**。
+1. 在&#x200B;**[!UICONTROL 建立元件]**&#x200B;對話框中，鍵入以下屬性值：
 
    * **[!UICONTROL 標籤]**:contentpage
    * **[!UICONTROL 標題]**:我的網站內容頁面元件
@@ -163,21 +163,21 @@ static.css檔案和影像範例
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
-   新元件的位置為 `/apps/mywebsite/components/contentpage`。 此路徑與內容頁面範本的資源類型(減去路徑的 `/apps/` 初始部分)相對應。
+   新元件的位置為`/apps/mywebsite/components/contentpage`。 此路徑與內容頁模板的資源類型相對應（減去路徑的初始`/apps/`部分）。
 
    此對應將範本連結至元件，對網站的正確運作至關重要。
 
-1. 按一下 **[!UICONTROL Next]** (下一 **[!UICONTROL 步]** )，直到出現對話框的Allowed Children **[!UICONTROL (允許的子項]**)面板，然後按一下OK（確定）。 在CRXDE Lite中，按一下「全 **[!UICONTROL 部儲存」]**。
+1. 按一下「**[!UICONTROL Next]**」，直到出現對話框的「允許的子代」面板，然後按一下「**[!UICONTROL 確定]**」。 ****&#x200B;在CRXDE Lite中，按一下「全部儲存」。****
 
    現在的結構如下：
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
-#### 開發Contentpage元件指令碼 {#developing-the-contentpage-component-script}
+#### 開發Contentpage元件指令碼{#developing-the-contentpage-component-script}
 
 將程式碼新增至contentpage.jsp指令碼以定義頁面內容。
 
-1. 在CRXDE Lite中，在中開啟 `contentpage.jsp` 檔案 `/apps/mywebsite/components/contentpage`。 依預設，檔案包含下列程式碼：
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage`中的檔案`contentpage.jsp`。 依預設，檔案包含下列程式碼：
 
    ```java
    <%--
@@ -212,9 +212,9 @@ static.css檔案和影像範例
    </html>
    ```
 
-1. 按一 **[!UICONTROL 下「全部儲存]** 」以儲存變更。
+1. 按一下「全部儲存」，儲存變更。]****[!UICONTROL 
 
-### 建立網站頁面和內容頁面 {#creating-your-website-page-and-content-pages}
+### 建立網站頁面和內容頁面{#creating-your-website-page-and-content-pages}
 
 在本節中，您會建立下列所有使用內容頁面範本的頁面：我的網站、英文、產品、服務和客戶。
 
@@ -222,45 +222,45 @@ static.css檔案和影像範例
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
-1. 在檔案夾樹狀結構中，選取「 **[!UICONTROL Websites]** 」檔案夾，然後按一 **[!UICONTROL 下「新增>新頁面」]**。
-1. 在「創 **[!UICONTROL 建頁面]** 」窗口中，輸入以下內容：
+1. 在資料夾樹中，選擇&#x200B;**[!UICONTROL Websites]**&#x200B;資料夾，然後按一下&#x200B;**[!UICONTROL 新建>新建頁面]**。
+1. 在&#x200B;**[!UICONTROL 建立頁面]**&#x200B;窗口中，輸入以下內容：
 
    * **[!UICONTROL 標題]**: `My Website`
-   * **[!UICONTROL 名稱]**: `mywebsite`
-   * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
+   * **[!UICONTROL 名稱]**:  `mywebsite`
+   * 選擇&#x200B;**[!UICONTROL 我的網站內容頁面範本]**
 
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
-1. 按一下&#x200B;**[!UICONTROL 建立]**。在資料夾樹中，選擇該頁， `/Websites/My Website` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
-1. 在「建 **[!UICONTROL 立頁面]** 」對話方塊中，輸入下列屬性值，然後按一下「建立」:
+1. 按一下&#x200B;**[!UICONTROL 建立]**。在資料夾樹中，選擇`/Websites/My Website`頁，然後按一下&#x200B;**[!UICONTROL 新建>新建頁]**。
+1. 在&#x200B;**[!UICONTROL 建立頁面]**&#x200B;對話方塊中，輸入下列屬性值，然後按一下建立：
 
    * **[!UICONTROL 標題]**:英文
    * **[!UICONTROL 名稱]**:en
-   * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
+   * 選擇&#x200B;**[!UICONTROL 我的網站內容頁面範本]**
 
-1. 在資料夾樹中，選擇該頁， `/Websites/My Website/English` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
-1. 在「建 **[!UICONTROL 立頁面]** 」對話方塊中，輸入下列屬性值，然後按一下「 **[!UICONTROL 建立]**:
+1. 在資料夾樹中，選擇`/Websites/My Website/English`頁，然後按一下&#x200B;**[!UICONTROL 新建>新建頁]**。
+1. 在&#x200B;**[!UICONTROL 建立頁面]**&#x200B;對話方塊中，輸入下列屬性值，然後按一下&#x200B;**[!UICONTROL 建立]**:
 
    * **[!UICONTROL 標題]**:產品
-   * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
+   * 選擇&#x200B;**[!UICONTROL 我的網站內容頁面範本]**
 
-1. 在資料夾樹中，選擇該頁， `/Websites/My Website/English` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
-1. 在「建 **[!UICONTROL 立頁面]** 」對話方塊中，輸入下列屬性值，然後按一下「 **[!UICONTROL 建立]**:
+1. 在資料夾樹中，選擇`/Websites/My Website/English`頁，然後按一下&#x200B;**[!UICONTROL 新建>新建頁]**。
+1. 在&#x200B;**[!UICONTROL 建立頁面]**&#x200B;對話方塊中，輸入下列屬性值，然後按一下&#x200B;**[!UICONTROL 建立]**:
 
    * **標題**:服務
-   * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
+   * 選擇&#x200B;**[!UICONTROL 我的網站內容頁面範本]**
 
-1. 在資料夾樹中，選擇該頁， `/Websites/My Website/English` 然後按一下「 **[!UICONTROL 新建」>「新建頁面」]**。
-1. 在「建 **[!UICONTROL 立頁面]** 」對話方塊中，輸入下列屬性值，然後按一下「 **[!UICONTROL 建立]**:
+1. 在資料夾樹中，選擇`/Websites/My Website/English`頁，然後按一下&#x200B;**[!UICONTROL 新建>新建頁]**。
+1. 在&#x200B;**[!UICONTROL 建立頁面]**&#x200B;對話方塊中，輸入下列屬性值，然後按一下&#x200B;**[!UICONTROL 建立]**:
 
    * **標題**:客戶
-   * 選取「我 **[!UICONTROL 的網站內容頁面」範本]**
+   * 選擇&#x200B;**[!UICONTROL 我的網站內容頁面範本]**
 
    您的結構如下所示：
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. 若要將頁面連結至mywebsite設計，請在CRXDE Lite中選取節 `/content/mywebsite/en/jcr:content` 點。 在「屬 **[!UICONTROL 性]** 」索引標籤上，為新屬性輸入下列值，然後按一下「新增」:
+1. 若要將頁面連結至mywebsite設計，請在CRXDE Lite中，選取`/content/mywebsite/en/jcr:content`節點。 在&#x200B;**[!UICONTROL Properties]**&#x200B;標籤中，鍵入新屬性的下列值，然後按一下Add:
 
    * **[!UICONTROL 名稱]**:cq:designPath
    * **[!UICONTROL 類型]**:字串
@@ -268,36 +268,36 @@ static.css檔案和影像範例
 
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
-1. 在新的Web瀏覽器標籤或視窗中，開啟 [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) ，以檢視「產品」頁面：
+1. 在新的Web瀏覽器標籤或視窗中，開啟[http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html)以檢視「產品」頁面：
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
 
-### 增強Contentpage指令碼 {#enhancing-the-contentpage-script}
+### 增強Contentpage指令碼{#enhancing-the-contentpage-script}
 
 本節說明如何使用AEM基礎元件指令碼並撰寫您自己的指令碼來增強contentpage指令碼。
 
-「產 **[!UICONTROL 品]** 」頁面如下所示：
+**[!UICONTROL Products]**&#x200B;頁面如下所示：
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-#### 使用Foundation頁指令碼 {#using-the-foundation-page-scripts}
+#### 使用Foundation頁指令碼{#using-the-foundation-page-scripts}
 
 在本練習中，您可設定您的pagecontent元件，使其超類型為AEM Page元件。 由於元件繼承其超類型的功能，因此您的頁面內容會繼承Page元件的指令碼和屬性。
 
 例如，在元件JSP代碼中，可以參照超類型元件提供的指令碼，就像它們包含在元件中一樣。
 
-1. 在CRXDE Lite中，將屬性新增至節 `/apps/mywebsite/components/contentpage` 點。
+1. 在CRXDE Lite中，將屬性添加到`/apps/mywebsite/components/contentpage`節點。
 
-   1. 選擇節 `/apps/mywebsite/components/contentpage` 點。
+   1. 選擇`/apps/mywebsite/components/contentpage`節點。
    1. 在「屬性」索引標籤底部，輸入下列屬性值，然後按一下「新增」:
 
       * **[!UICONTROL 名稱]**:sling:resourceSuperType
       * **[!UICONTROL 類型]**:字串
       * **[!UICONTROL 值]**:foundation/components/page
-   1. 按一下「 **[!UICONTROL 全部儲存]**」。
+   1. 按一下&#x200B;**[!UICONTROL 保存全部]**。
 
 
-1. 在下方 `contentpage.jsp` 開啟檔 `/apps/mywebsite/components/contentpage` 案，並以下列程式碼取代現有程式碼：
+1. 開啟`/apps/mywebsite/components/contentpage`下方的`contentpage.jsp`檔案，並以下列程式碼取代現有程式碼：
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -310,7 +310,7 @@ static.css檔案和影像範例
    ```
 
 1. 儲存您的變更。
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 其外觀如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 其外觀如下：
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
@@ -323,18 +323,18 @@ static.css檔案和影像範例
                 }); 
    ```
 
-#### 使用您自己的指令碼 {#using-your-own-scripts}
+#### 使用您自己的指令碼{#using-your-own-scripts}
 
 在本節中，您會建立數個指令碼，每個指令碼都會產生頁面內文的一部分。 然後，在pagecontent元件中建立body.jsp檔案，以覆寫AEM Page元件的body.jsp。 在body.jsp檔案中，您包括了生成頁面正文不同部分的指令碼。
 
-**提示：** 當元件包含與元件超類型中的檔案具有相同名稱和相對位置的檔案時，該檔案稱為 *覆蓋*。
+**提示：** 當元件包含與元件超類型中的檔案相同名稱和相對位置的檔案時，稱為覆 *蓋*。
 
-1. 在CRXDE Lite中，在下面建立 `left.jsp` 檔案 `/apps/mywebsite/components/contentpage`:
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下建立檔案`left.jsp`:
 
-   1. 按一下右鍵節點，然 `/apps/mywebsite/components/contentpage`後選擇「創 **[!UICONTROL 建]** 」和「 **[!UICONTROL 建立檔案」]**。
-   1. 在窗口中，鍵 `left.jsp` 入** Name** ，然後按一下 **[!UICONTROL OK]**。
+   1. 按一下右鍵節點`/apps/mywebsite/components/contentpage`，然後選擇&#x200B;**[!UICONTROL 建立]**&#x200B;和&#x200B;**[!UICONTROL 建立檔案]**。
+   1. 在窗口中，鍵入`left.jsp`作為**名稱**，然後按一下&#x200B;**[!UICONTROL 確定]**。
 
-1. 編輯檔案 `left.jsp` 以移除現有內容，並以下列程式碼取代：
+1. 編輯檔案`left.jsp`以移除現有內容，並以下列程式碼取代：
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -346,12 +346,12 @@ static.css檔案和影像範例
    ```
 
 1. 儲存變更。
-1. 在CRXDE Lite中，在下面建立 `center.jsp` 檔案 `/apps/mywebsite/components/contentpage`:
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下建立檔案`center.jsp`:
 
-   1. 按一下右鍵該節點， `/apps/mywebsite/components/contentpage`選擇 **[!UICONTROL 建立]**, **[!UICONTROL 建立檔案]**。
-   1. 在對話框中，鍵入 `center.jsp` 為 **[!UICONTROL Name]** ，然後按一下 **[!UICONTROL 確定]**。
+   1. 按一下右鍵節點`/apps/mywebsite/components/contentpage`，選擇&#x200B;**[!UICONTROL 建立]**，然後選擇&#x200B;**[!UICONTROL 建立檔案]**。
+   1. 在對話框中，鍵入`center.jsp`作為&#x200B;**[!UICONTROL 名稱]** ，然後按一下&#x200B;**[!UICONTROL 確定]**。
 
-1. 編輯檔案 `center.jsp` 以移除現有內容，並以下列程式碼取代：
+1. 編輯檔案`center.jsp`以移除現有內容，並以下列程式碼取代：
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -363,12 +363,12 @@ static.css檔案和影像範例
    ```
 
 1. 儲存變更。
-1. 在CRXDE Lite中，在下面建立 `right.jsp` 檔案 `/apps/mywebsite/components/contentpage`:
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下建立檔案`right.jsp`:
 
-   1. 按一下右鍵該節點， `/apps/mywebsite/components/contentpage`選擇 **[!UICONTROL 建立]**, **[!UICONTROL 建立檔案]**。
-   1. 在對話框中，鍵入 `right.jsp` 為 **[!UICONTROL Name]** ，然後按一下 **[!UICONTROL OK]**。
+   1. 按一下右鍵節點`/apps/mywebsite/components/contentpage`，選擇&#x200B;**[!UICONTROL 建立]**，然後選擇&#x200B;**[!UICONTROL 建立檔案]**。
+   1. 在對話框中，鍵入`right.jsp`作為&#x200B;**[!UICONTROL 名稱]** ，然後按一下&#x200B;**[!UICONTROL 確定]**。
 
-1. 編輯檔案 `right.jsp` 以移除現有內容，並以下列程式碼取代：
+1. 編輯檔案`right.jsp`以移除現有內容，並以下列程式碼取代：
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -378,8 +378,8 @@ static.css檔案和影像範例
    ```
 
 1. 儲存變更。
-1. 在CRXDE Lite中，在下面建立 `body.jsp` 檔案 `/apps/mywebsite/components/contentpage`:
-1. 編輯檔案 `body.jsp` 以移除現有內容，並以下列程式碼取代：
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下建立檔案`body.jsp`:
+1. 編輯檔案`body.jsp`以移除現有內容，並以下列程式碼取代：
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -399,11 +399,11 @@ static.css檔案和影像範例
    ```
 
 1. 儲存變更。
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 其外觀如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 其外觀如下：
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-### 建立頂端導覽元件 {#creating-the-top-navigation-component}
+### 建立頂級導航元件{#creating-the-top-navigation-component}
 
 在本節中，您會建立元件，其中顯示網站所有頂層頁面的連結，以方便導覽。 此元件內容會顯示在使用contentpage範本建立的所有頁面頂端。
 
@@ -413,22 +413,22 @@ static.css檔案和影像範例
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
-#### 建立頂端導覽元件 {#creating-the-top-navigation-component-1}
+#### 建立頂級導航元件{#creating-the-top-navigation-component-1}
 
-1. 在CRXDE Lite中，按一下滑鼠右鍵 `/apps/mywebsite/components`，依序選 **[!UICONTROL 取]**「建立」 **[!UICONTROL 和「建立元件]**」。
-1. 在「創 **[!UICONTROL 建元件]** 」窗口中，輸入以下內容：
+1. 在CRXDE Lite中，按一下右鍵`/apps/mywebsite/components`，選擇&#x200B;**[!UICONTROL 建立]**，然後選擇&#x200B;**[!UICONTROL 建立元件]**。
+1. 在&#x200B;**[!UICONTROL 建立元件]**&#x200B;窗口中，輸入以下內容：
 
-   * **[!UICONTROL 標籤]**: `topnav`
+   * **[!UICONTROL 標籤]**:  `topnav`
    * **[!UICONTROL 標題]**: `My Top Navigation Component`
-   * **[!UICONTROL 說明]**: `This is My Top Navigation Component`
+   * **[!UICONTROL 說明]**:  `This is My Top Navigation Component`
 
-1. 按一下「 **[!UICONTROL Next]** （下一步）」 ，直到進入最後一個窗口，在該窗口中按一下「 **[!UICONTROL OK（確定）]**」。 儲存您的變更。
+1. 按一下&#x200B;**[!UICONTROL Next]**&#x200B;直到到達最後一個窗口，在該窗口中按一下&#x200B;**[!UICONTROL OK]**。 儲存您的變更。
 
-#### 使用文本連結建立頂部導航指令碼 {#creating-the-top-navigation-script-with-textual-links}
+#### 使用文本連結建立頂層導航指令碼{#creating-the-top-navigation-script-with-textual-links}
 
 將演算指令碼新增至topnav，以產生子頁面的文字連結：
 
-1. 在CRXDE Lite中，在下方開啟 `topnav.jsp` 檔案 `/apps/mywebsite/components/topnav`。
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/topnav`下方的檔案`topnav.jsp`。
 1. 複製並貼上下列程式碼，以取代原有的程式碼：
 
    ```xml
@@ -451,11 +451,11 @@ static.css檔案和影像範例
    %> 
    ```
 
-#### 在「內容頁面」元件中包含頂端導覽 {#including-top-navigation-in-the-contentpage-component}
+#### 在Contentpage元件{#including-top-navigation-in-the-contentpage-component}中包括頂部導航
 
 若要在內容頁面元件中包含topnav:
 
-1. 在CRXDE Lite中，開啟下 `body.jsp` 方 `/apps/mywebsite/components/contentpage`並取代：
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage`下方的`body.jsp`並取代：
 
    ```xml
    <div class="topnav">topnav</div>
@@ -468,39 +468,39 @@ static.css檔案和影像範例
    ```
 
 1. 儲存變更。
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 「產品]** 」頁面。 頂端導覽顯示如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL 產品]**&#x200B;頁面。 頂端導覽顯示如下：
 
-   ![chlimage_1-115](assets/chlimage_1-115.png)
+   ![chlimage_1-114](assets/chlimage_1-115.png)
 
-#### 使用字幕增強頁面 {#enhancing-pages-with-subtitles}
+#### 使用字幕增強頁面{#enhancing-pages-with-subtitles}
 
-Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新增提供頁面內容相關資訊的字幕。
+**[!UICONTROL Page]**&#x200B;元件定義可讓您為頁面提供字幕的屬性。 新增提供頁面內容相關資訊的字幕。
 
-1. 在瀏覽器中，開啟「產 **[!UICONTROL 品]** 」頁面。
-1. 在「Sidekick頁面」 **[!UICONTROL 標籤上]** ，按一 **[!UICONTROL 下「頁面屬性」]**。
-1. 在對話框 **[!UICONTROL 的]** 「基本」(Basic **[!UICONTROL )頁籤上，展開「更多]** 標題和說明」(More Titles and Description **[!UICONTROL )，並為「字幕」(]** Subtitle `what we do`)屬性鍵入。 按一下&#x200B;**[!UICONTROL 「確定」]**。
-1. 重複上述步驟，將有關我們服務 **的副標題新增** 至「 **[!UICONTROL 服務]** 」頁面。
-1. 重複上述步驟，將我們贏得 **的信任字幕新增至** 「客 **[!UICONTROL 戶」頁面]** 。
+1. 在您的瀏覽器中，開啟&#x200B;**[!UICONTROL 產品]**&#x200B;頁面。
+1. 在「Sidekick **[!UICONTROL Page]**」標籤上，按一下「Page Properties ]**」。**[!UICONTROL 
+1. 在對話框的&#x200B;**[!UICONTROL Basic]**&#x200B;頁籤上，展開&#x200B;**[!UICONTROL 更多標題和說明]** ，並為&#x200B;**[!UICONTROL Subtitle]**&#x200B;屬性鍵入`what we do`。 按一下&#x200B;**[!UICONTROL 「確定」]**。
+1. 重複上述步驟，將關於我們的服務&#x200B;**的副標題**&#x200B;添加到&#x200B;**[!UICONTROL 服務]**&#x200B;頁。
+1. 重複上述步驟，將我們獲得的&#x200B;**信任的副標題添加到**[!UICONTROL  Customers ]**頁面。**
 
-   **提示：** 在CRXDE Lite中，選擇/content/mywebsite/tw/products/jcr:content節點以查看已添加的子標題屬性。
+   **提示：** 在CRXDE Lite中，選取/content/mywebsite/tw/products/jcr:content節點，以檢視已新增的子標題屬性。
 
-#### 使用影像連結增強頂端導覽 {#enhance-top-navigation-by-using-image-links}
+#### 使用影像連結{#enhance-top-navigation-by-using-image-links}增強頂端導覽
 
 增強topnav元件的演算指令碼，以使用影像連結而非超文字來控制導覽。 該影像包括連結目標的標題和字幕。
 
-本練習將示範 [Sling要求處理](/help/sites-developing/the-basics.md#sling-request-processing)。 topnav.jsp指令碼會修改為呼叫動態產生影像以用於頁面導覽連結的指令碼。 在本練習中，Sling會剖析影像來源檔案的URL，以決定用來轉換影像的指令碼。
+本練習將示範[Sling要求處理](/help/sites-developing/the-basics.md#sling-request-processing)。 topnav.jsp指令碼會修改為呼叫動態產生影像以用於頁面導覽連結的指令碼。 在本練習中，Sling會剖析影像來源檔案的URL，以決定用來轉換影像的指令碼。
 
 例如，「產品」頁面的影像連結來源可能是http://localhost:4502/content/mywebsite/en/products.navimage.png。 Sling剖析此URL以決定資源類型和用來呈現資源的指令碼：
 
-1. Sling會決定資源的路徑為 `/content/mwebysite/en/products.png.`
-1. Sling與此路徑與節點相 `/content/mywebsite/en/products` 符。
-1. Sling會決 `sling:resourceType` 定此節點為 `mywebsite/components/contentpage`。
+1. Sling會決定資源的路徑為`/content/mwebysite/en/products.png.`
+1. Sling與此路徑與`/content/mywebsite/en/products`節點相符。
+1. Sling會將此節點的`sling:resourceType`判斷為`mywebsite/components/contentpage`。
 
-1. Sling會在此元件中尋找最符合URL選取器( `navimage`)和檔案名稱副檔名( `png`)的指令碼。
+1. Sling會在此元件中尋找最符合URL選擇器(`navimage`)和檔案名稱副檔名(`png`)的指令碼。
 
 在本練習中，Sling會將這些URL與您建立的/apps/mywebsite/components/contentpage/navimage.png.java指令碼相符。
 
-1. 在CRXDE Lite中，開啟「 `topnav.jsp` 找 `/apps/mywebsite/components/topnav.`到錨點元素的內容」（第14行）下方：
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/topnav.`下方的`topnav.jsp`，找出錨點元素的內容（第14行）:
 
    ```xml
    <%=child.getTitle() %>
@@ -513,16 +513,16 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
    ```
 
 1. 儲存變更。
-1. 按一下右鍵該節 `/apps/mywebsite/components/contentpage` 點，然後按一下 **[!UICONTROL 建立>建立檔案]**。
-1. 在「創 **[!UICONTROL 建檔案]** 」窗口中， **[!UICONTROL 鍵入Name]**`navimage.png.java`。
+1. 按一下右鍵`/apps/mywebsite/components/contentpage`節點，然後按一下&#x200B;**[!UICONTROL 建立>建立檔案]**。
+1. 在&#x200B;**[!UICONTROL 建立檔案]**&#x200B;窗口中，鍵入&#x200B;**[!UICONTROL 名稱]**。`navimage.png.java`
 
    .java檔案名稱副檔名指出Sling應使用Apache Sling Scripting Java Support來編譯指令碼並建立servlet。
 
-1. 將以下代碼複製 `navimage.png.java.`到代碼中。代碼擴展了AbstractImageServlet類：
+1. 將以下代碼複製到`navimage.png.java.`代碼擴展AbstractImageServlet類：
 
    * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) 會建立一個ImageContext對象，該對象儲存當前資源的屬性。
    * 資源的父頁從ImageContext對象中提取。 然後，獲得頁面標題和字幕。
-   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) 可用來從網站設計的navimage_bg.jpg檔案、頁面標題和頁面子標題產生影像。
+   * [ImageHelperis](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) 可用來從網站設計的navimage_bg.jpg檔案、頁面標題和頁面子標題產生影像。
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -640,56 +640,56 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
    ```
 
 1. 儲存變更。
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 頂端導覽現在會顯示如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 頂端導覽現在會顯示如下：
 
    ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
-### 建立清單子元件 {#creating-the-list-children-component}
+### 建立清單子元件{#creating-the-list-children-component}
 
 建立清單子項元件，以產生包含頁面標題、說明和日期的頁面連結清單（例如，產品頁面）。 連結會定位目前頁面的子頁面，或元件對話方塊中指定的根頁面。
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-#### 建立產品頁面 {#creating-product-pages}
+#### 建立產品頁{#creating-product-pages}
 
-建立位於「產品」頁面下方 **[!UICONTROL 的兩]** 個頁面。 對於每個描述兩個特定產品的頁面，您可以設定標題、說明和日期。
+建立位於&#x200B;**[!UICONTROL Products]**&#x200B;頁面下方的兩頁。 對於每個描述兩個特定產品的頁面，您可以設定標題、說明和日期。
 
-1. 在「網站」頁面的資 **[!UICONTROL 料夾樹狀結構]** ，選取「網站／我的網站／英文／產品 **[!UICONTROL 」項目，然後按一下「]** 新增>新頁面」 ****。
-1. 在對話方塊中輸入下列屬性值，然後按一下「建 **[!UICONTROL 立]**:
+1. 在&#x200B;**[!UICONTROL Websites]**&#x200B;頁面的資料夾樹中，選擇&#x200B;**[!UICONTROL Websites/My Website/English/Products]**&#x200B;項目，然後按一下&#x200B;**[!UICONTROL New > New Page]**。
+1. 在對話框中輸入以下屬性值，然後按一下&#x200B;**[!UICONTROL 建立]**:
 
    * **[!UICONTROL 標題]**:產品1.
    * **[!UICONTROL 名稱]**:product1.
-   * 選擇我 **[!UICONTROL 的網站內容頁面範本]**
+   * 選擇&#x200B;**[!UICONTROL 我的網站內容頁面範本]**
 
 1. 使用下列屬性值，在「產品」下方建立另一頁：
 
    * **[!UICONTROL 標題]**:產品2
    * **[!UICONTROL 名稱]**:product2
-   * 選擇我 **[!UICONTROL 的網站內容頁面範本]**
+   * 選擇&#x200B;**[!UICONTROL 我的網站內容頁面範本]**
 
 1. 在CRXDE Lite中，設定「產品1」頁面的說明和日期：
 
-   1. 選擇節 `/content/mywebsite/en/products/product1/jcr:content` 點。
-   1. 在「屬 **[!UICONTROL 性]** 」標籤中，輸入下列值：
+   1. 選擇`/content/mywebsite/en/products/product1/jcr:content`節點。
+   1. 在&#x200B;**[!UICONTROL 屬性]**&#x200B;標籤中，輸入以下值：
 
-      * **[!UICONTROL 名稱]**: `jcr:description`
-      * **[!UICONTROL 類型]**: `String`
-      * **[!UICONTROL 值]**: `This is a description of the Product 1!.`
+      * **[!UICONTROL 名稱]**:  `jcr:description`
+      * **[!UICONTROL 類型]**:  `String`
+      * **[!UICONTROL 值]**:  `This is a description of the Product 1!.`
    1. 按一下&#x200B;**[!UICONTROL 「新增」]**。
-   1. 在「屬 **[!UICONTROL 性]** 」索引標籤中，使用下列值建立其他屬性：
+   1. 在&#x200B;**[!UICONTROL 屬性]**&#x200B;標籤中，使用下列值建立另一個屬性：
 
       * **[!UICONTROL 名稱]**:日期
       * **[!UICONTROL 類型]**:字串
       * **[!UICONTROL 值]**:02/14/2008
       * 按一下&#x200B;**[!UICONTROL 「新增」]**。
-   1. 按一下「 **[!UICONTROL 全部儲存]**」。
+   1. 按一下&#x200B;**[!UICONTROL 保存全部]**。
 
 
 
 1. 在CRXDE Lite中，設定「產品2」頁面的說明和日期：
 
-   1. 選擇節 `/content/mywebsite/en/products/product2/jcr:content` 點。
-   1. 在「屬 **[!UICONTROL 性]** 」標籤中，輸入下列值：
+   1. 選擇`/content/mywebsite/en/products/product2/jcr:content`節點。
+   1. 在&#x200B;**[!UICONTROL 屬性]**&#x200B;標籤中，輸入以下值：
 
       * **[!UICONTROL 名稱]**:jcr:description
       * **[!UICONTROL 類型]**:字串
@@ -701,28 +701,28 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
       * **[!UICONTROL 類型]**:字串
       * **[!UICONTROL 值]**:05/11/2012
       * 按一下&#x200B;**[!UICONTROL 「新增」]**。
-   1. 按一下「 **[!UICONTROL 全部儲存]**」。
+   1. 按一下&#x200B;**[!UICONTROL 保存全部]**。
 
 
 
-#### 建立清單子元件 {#creating-the-list-children-component-1}
+#### 建立清單子元件{#creating-the-list-children-component-1}
 
 要建立listchildren元件：
 
-1. 在CRXDE Lite中，按一下滑鼠右鍵 `/apps/mywebsite/components`，依序選 **[!UICONTROL 取]**「建立」 **[!UICONTROL 和「建立元件]**」。
-1. 在對話方塊中輸入下列屬性值，然後按一下「下 **[!UICONTROL 一步]**」:
+1. 在CRXDE Lite中，按一下右鍵`/apps/mywebsite/components`，選擇&#x200B;**[!UICONTROL 建立]**，然後選擇&#x200B;**[!UICONTROL 建立元件]**。
+1. 在對話框中輸入以下屬性值，然後按一下&#x200B;**[!UICONTROL Next]**:
 
    * **[!UICONTROL 標籤]**:列出子項。
    * **[!UICONTROL 標題]**:My Listchildren Component.
    * **[!UICONTROL 說明]**:這是My Listchildren元件。
 
-1. 繼續按「 **[!UICONTROL 下一步]** 」，直到出現「 **[!UICONTROL 允許的子項]** 」面板，然後按一下「 **[!UICONTROL 確定]**」。
+1. 繼續按一下&#x200B;**[!UICONTROL Next]**&#x200B;直到出現&#x200B;**[!UICONTROL 允許的子代]**&#x200B;面板，然後按一下&#x200B;**[!UICONTROL OK]**。
 
-#### 建立清單子指令碼 {#creating-the-list-children-script}
+#### 建立清單子指令碼{#creating-the-list-children-script}
 
 為listchildren元件開發指令碼。
 
-1. 在CRXDE Lite中，在下方開啟 `listchildren.jsp` 檔案 `/apps/mywebsite/components/listchildren`。
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/listchildren`下方的檔案`listchildren.jsp`。
 1. 以下列程式碼取代預設程式碼：
 
    ```xml
@@ -751,16 +751,16 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
 1. 儲存變更。
 
-#### 建立清單子代對話框 {#creating-the-list-children-dialog}
+#### 建立清單子代對話框{#creating-the-list-children-dialog}
 
 建立用於配置listchildren元件屬性的對話框。
 
 1. 在listchildren元件下建立對話框節點：
 
-   1. 在CRXDE Lite中，按一下右鍵該節 `/apps/mywebsite/components/listchildren`點，然後按一下 **[!UICONTROL 建立>建立對話框]**。
+   1. 在CRXDE Lite中，按一下右鍵`/apps/mywebsite/components/listchildren`節點，然後按一下&#x200B;**[!UICONTROL 建立>建立對話框]**。
    1. 在對話框中，輸入以下屬性值並按一下確定
 
-      * **[!UICONTROL 標籤]**: `dialog`
+      * **[!UICONTROL 標籤]**:  `dialog`
       * **[!UICONTROL 標題]**: `Edit Component` 然後按一 **[!UICONTROL 下確定]**。
 
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
@@ -769,12 +769,12 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
    ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
-1. 選擇節 `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` 點。
-1. 在「屬 **[!UICONTROL 性]** 」索引標籤中，將title屬性的 **** 值變更為 `List Children`
+1. 選擇`/apps/mywebsite/components/listchildren/dialog/items/items/tab1`節點。
+1. 在&#x200B;**[!UICONTROL 屬性]**&#x200B;標籤中，將&#x200B;**[!UICONTROL title]**&#x200B;屬性的值變更為`List Children`
 
    ![chlimage_1-117](assets/chlimage_1-117.png)
 
-1. 選擇 **tab1節點** ，然後按一下「 **[!UICONTROL 建立」>「建立節點」]**，輸入以下屬性值，然後按一下「 **[!UICONTROL 確定」]**:
+1. 選擇&#x200B;**tab1**&#x200B;節點，然後按一下&#x200B;**[!UICONTROL 建立>建立節點]** ，輸入以下屬性值，然後按一下確定&#x200B;**[!UICONTROL 確定]**:
 
    * **[!UICONTROL 名稱]**:項目
    * **[!UICONTROL 類型]**:cq:WidgetCollection
@@ -788,7 +788,7 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. 為listroot節點添加屬性，將其配置為文本欄位。 下表中的每一行都代表一個屬性。 完成後，按一下「 **[!UICONTROL 全部儲存」]**。
+1. 為listroot節點添加屬性，將其配置為文本欄位。 下表中的每一行都代表一個屬性。 完成後，按一下&#x200B;**[!UICONTROL 全部保存]**。
 
    | 名稱 | 類型 | 值 |
    |---|---|---|
@@ -798,11 +798,11 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
 
-#### 在Contentpage元件中包括清單子項 {#including-list-children-in-the-contentpage-component}
+#### 在Contentpage元件{#including-list-children-in-the-contentpage-component}中包含清單子代
 
 要將listchildren元件包含在內容頁元件中，請按如下步驟操作：
 
-1. 在CRXDE Lite中，開啟檔案 `left.jsp` 並 `/apps/mywebsite/components/contentpage` 找出下列程式碼（第4行）:
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage`下方的檔案`left.jsp`，並找出下列程式碼（第4行）:
 
    ```xml
    <div>newslist</div>
@@ -816,24 +816,24 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
 1. 儲存變更。
 
-#### 在頁中查看清單子項 {#viewing-list-children-in-a-page}
+#### 在頁面{#viewing-list-children-in-a-page}中查看清單子項
 
 要查看此元件的完整操作，可以查看「產品」頁：
 
 * 當父頁面（「清單根路徑」）未定義時。
 * 定義父頁面（「清單根路徑」）時。
 
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 listchildren元件顯示如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 listchildren元件顯示如下：
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
 1. ![chlimage_1-119](assets/chlimage_1-119.png)
 
-1. 作為清單根的路徑，輸入： `/content/mywebsite/en`. 按一下&#x200B;**[!UICONTROL 「確定」]**。您頁面上的listchildren元件現在如下所示：
+1. 作為清單根的路徑，輸入：`/content/mywebsite/en`。 按一下&#x200B;**[!UICONTROL 「確定」]**。您頁面上的listchildren元件現在如下所示：
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
-### 建立標誌元件 {#creating-the-logo-component}
+### 建立徽標元件{#creating-the-logo-component}
 
 建立顯示公司標誌並提供網站首頁連結的元件。 此元件包含設計模式對話方塊，以便將屬性值儲存在網站設計(/etc/designs/mywebsite)中：
 
@@ -848,27 +848,27 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
 >[!NOTE]
 >
->Adobe Experience Manager提供功能更完整的標誌元件( `/libs/foundation/components/logo`)。
+>Adobe Experience Manager提供功能更全的標誌元件(`/libs/foundation/components/logo`)。
 
-#### 建立徽標元件節點 {#creating-the-logo-component-node}
+#### 建立徽標元件節點{#creating-the-logo-component-node}
 
 若要建立標誌元件，請依照下列步驟進行：
 
-1. 在CRXDE Lite中，以滑鼠右鍵按一下/apps/mywebsite/components，依序選取「 **[!UICONTROL 建立]**」、「 **[!UICONTROL 建立元件」]**。
+1. 在CRXDE Lite中，以滑鼠右鍵按一下/apps/mywebsite/components，選取&#x200B;**[!UICONTROL Create]**，然後選取&#x200B;**[!UICONTROL Create Component]**。
 1. 在「建立元件」對話框中輸入以下屬性值，然後按一下「下一步」:
 
    * **[!UICONTROL 標籤]**: `logo`.
    * **[!UICONTROL 標題]**: `My Logo Component`.
    * **[!UICONTROL 說明]**: `This is My Logo Component`.
 
-1. 按一下「下一步」，直到到達對話框的最終面板，然後按一下「確 **[!UICONTROL 定」]**。
+1. 按一下「Next（下一步）」，直到到達對話框的最終面板，然後按一下「OK（確定）」]**。**[!UICONTROL 
 
-#### 建立標誌指令碼 {#creating-the-logo-script}
+#### 建立徽標指令碼{#creating-the-logo-script}
 
 本節說明如何建立指令碼，以顯示具有首頁連結的標誌影像。
 
-1. 在CRXDE Lite中，在下方開啟 `logo.jsp` 檔案 `/apps/mywebsite/components/logo`。
-1. 下列程式碼會建立網站首頁的連結，並新增標誌影像的參考。 將程式碼複製至 `logo.jsp`:
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/logo`下方的檔案`logo.jsp`。
+1. 下列程式碼會建立網站首頁的連結，並新增標誌影像的參考。 將代碼複製到`logo.jsp`:
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -902,20 +902,20 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
 1. 儲存變更。
 
-#### 建立徽標設計對話框 {#creating-the-logo-design-dialog}
+#### 建立徽標設計對話框{#creating-the-logo-design-dialog}
 
-建立對話方塊，以在「設計」模式中設定標誌元件。 必須命名設計模式對話框節點 `design_dialog`。
+建立對話方塊，以在「設計」模式中設定標誌元件。 設計模式對話框節點必須命名為`design_dialog`。
 
 1. 在標誌元件下建立對話框節點：
 
-   1. 按一下右鍵該節 `/apps/mywebsite/components/logo` 點，然後按一下 **[!UICONTROL 建立>建立對話框]**。
-   1. 鍵入以下屬性值，然後按一下「 **[!UICONTROL 確定]**」:
+   1. 按一下右鍵`/apps/mywebsite/components/logo`節點，然後按一下&#x200B;**[!UICONTROL 建立>建立對話框]**。
+   1. 鍵入以下屬性值，然後按一下&#x200B;**[!UICONTROL OK]** :
 
       * **[!UICONTROL 標籤]** `design_dialog`
       * **[!UICONTROL 標題]** `Logo (Design)`
 
-1. 在design_dialog分支中按一下右鍵tab1節點，然後按一下「刪除」。 按一下「 **[!UICONTROL 全部儲存]**」。
-1. 在節 `design_dialog/items/items`點下，建立名為type的 `img` 新節點 `cq:Widget`。 新增下列屬性，然後按一下「全 **[!UICONTROL 部儲存]**:
+1. 在design_dialog分支中按一下右鍵tab1節點，然後按一下「刪除」。 按一下&#x200B;**[!UICONTROL 保存全部]**。
+1. 在`design_dialog/items/items`節點下，建立名為`img`類型`cq:Widget`的新節點。 新增下列屬性，然後按一下「全部儲存」:]****[!UICONTROL 
 
    | 名稱 | 類型 | 值 |
    |---|---|---|
@@ -927,12 +927,12 @@ Page **[!UICONTROL 元件定義]** 屬性，讓您為頁面提供字幕。 新�
 
    ![chlimage_1-122](assets/chlimage_1-122.png)
 
-#### 建立標誌演算指令碼 {#creating-the-logo-render-script}
+#### 建立徽標渲染指令碼{#creating-the-logo-render-script}
 
 建立擷取標誌影像並寫入頁面的指令碼。
 
-1. 按一下右鍵徽標元件節點，然後按一下「 **[!UICONTROL 建立」(Create)>「建立檔案」(Create File]** )以建立名為img.GET.java的指令碼檔案。
-1. 開啟檔案，將下列程式碼複製至檔案，然後按一下「全 **[!UICONTROL 部儲存]**:
+1. 按一下右鍵徽標元件節點，然後按一下&#x200B;**[!UICONTROL 「建立」>「建立檔案」]**&#x200B;以建立名為img.GET.java的指令碼檔案。
+1. 開啟檔案，將下列程式碼複製到檔案中，然後按一下「全部儲存」:****
 
 ```java
 package apps.mywebsite.components.logo;
@@ -1000,9 +1000,9 @@ public class img_GET extends AbstractImageServlet {
 }
 ```
 
-#### 將標誌元件添加到Contentpage元件 {#adding-the-logo-component-to-the-contentpage-component}
+#### 將標誌元件添加到Contentpage元件{#adding-the-logo-component-to-the-contentpage-component}
 
-1. 在CRXDE Lite中，開啟 `left.jsp` 下方 `/apps/mywebsite/components/contentpage file` 並找出下列程式碼行：
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage file`下方的`left.jsp`，並找出下列程式碼行：
 
    ```xml
    <div>logo</div>
@@ -1015,24 +1015,24 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 儲存變更。
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 標誌的外觀如下，雖然目前只顯示基礎連結：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 標誌的外觀如下，雖然目前只顯示基礎連結：
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
 
-#### 在頁面中設定標誌影像 {#setting-the-logo-image-in-a-page}
+#### 在頁面{#setting-the-logo-image-in-a-page}中設定標誌影像
 
 本節說明如何使用設計模式對話框將影像設定為標誌。
 
-1. 在瀏覽器 **[!UICONTROL 中開啟]** 「產品」頁面時，按一下Sidekick底部的「設計 **[!UICONTROL 」按鈕以進入]** Design **** 模式。
+1. 在瀏覽器中開啟&#x200B;**[!UICONTROL Products]**&#x200B;頁面時，按一下Sidekick底部的&#x200B;**[!UICONTROL Design]**&#x200B;按鈕以進入&#x200B;**[!UICONTROL Design]**&#x200B;模式。
 
    ![](do-not-localize/chlimage_1-10.png)
 
-1. 在「標誌設計」列中，按一下「 **[!UICONTROL 編輯]** 」，使用對話方塊來編輯標誌元件的設定。
-1. 在對話方塊中，按一下「影像」索引標籤的面板 **[!UICONTROL 中]** ，瀏覽您從檔 `logo.png` 案擷取的影像，然後按一下「 `mywebsite.zip` 確定」 ****。
+1. 在標誌欄設計中，按一下&#x200B;**[!UICONTROL 編輯]**&#x200B;以使用對話框來編輯標誌元件的設定。
+1. 在對話框中，按一下&#x200B;**[!UICONTROL Image]**&#x200B;頁籤的面板，瀏覽從`mywebsite.zip`檔案提取的`logo.png`影像，然後按一下&#x200B;**[!UICONTROL OK]**。
 
    ![chlimage_1-124](assets/chlimage_1-124.png)
 
-1. 按一下Sidekick標題列上的三角形，以返回「編 **[!UICONTROL 輯]** 」模式。
+1. 按一下Sidekick標題列上的三角形，以返回&#x200B;**[!UICONTROL Edit]**&#x200B;模式。
 
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
@@ -1040,11 +1040,11 @@ public class img_GET extends AbstractImageServlet {
 
    `/etc/designs/mywebsite/jcr:content/contentpage/logo`
 
-### 包含Breadcrumb元件 {#including-the-breadcrumb-component}
+### 包含Breadcrumb元件{#including-the-breadcrumb-component}
 
 在本節中，您會加入網路導覽路徑標示(trail)元件，此元件是基礎元件之一。
 
-1. 在CRXDE Lite中，瀏覽至 `/apps/mywebsite/components/contentpage`，開啟檔案並 `center.jsp` 取代：
+1. 在CRXDE Lite中，瀏覽至`/apps/mywebsite/components/contentpage`，開啟檔案`center.jsp`並取代：
 
    ```java
    <div>trail</div>
@@ -1057,15 +1057,15 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 儲存變更。
-1. 在您的瀏覽器中，重新載 **[!UICONTROL 入「產品]** 1」頁面。 trail元件的外觀如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL 產品1]**&#x200B;頁面。 trail元件的外觀如下：
 
    ![chlimage_1-125](assets/chlimage_1-125.png)
 
-### 包含標題元件 {#including-the-title-component}
+### 包含標題元件{#including-the-title-component}
 
 在本節中，您會加入標題元件，此元件是基礎元件之一。
 
-1. 在CRXDE Lite中，瀏覽至 `/apps/mywebsite/components/contentpage`，開啟檔案並 `center.jsp` 取代：
+1. 在CRXDE Lite中，瀏覽至`/apps/mywebsite/components/contentpage`，開啟檔案`center.jsp`並取代：
 
    ```xml
    <div>title</div>
@@ -1078,20 +1078,20 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 儲存變更。
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 標題元件的外觀如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 標題元件的外觀如下：
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
 >[!NOTE]
->您可以在「編輯」模式中設定不同的「標題」和「文字/ **[!UICONTROL 大小]** 」。
+>您可以在&#x200B;**[!UICONTROL 編輯]**&#x200B;模式中設定不同的標題和類型／大小。
 
-### 包括段落系統元件 {#including-the-paragraph-system-component}
+### 包括段落系統元件{#including-the-paragraph-system-component}
 
 段落系統(parsys)是網站管理段落清單的重要部分。 它可讓作者將段落元件新增至頁面並提供結構。
 
 將parsys元件（其中一個基礎元件）新增至您的contentpage元件。
 
-1. 在CRXDE Lite中，瀏覽 `/apps/mywebsite/components/contentpage`至，開啟檔 `center.jsp` 案並找出下列程式碼行：
+1. 在CRXDE Lite中，瀏覽至`/apps/mywebsite/components/contentpage`，開啟檔案`center.jsp`並找出下列程式碼行：
 
    ```xml
    <div>parsys</div>
@@ -1103,44 +1103,44 @@ public class img_GET extends AbstractImageServlet {
    <cq:include path="par" resourceType="foundation/components/parsys" />
    ```
 
-1. 在您的瀏覽器中，重新整 **[!UICONTROL 理產品]** 頁面。 它現在有parsys元件，如下所示：
+1. 在瀏覽器中，重新整理&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 它現在有parsys元件，如下所示：
 
    ![chlimage_1-127](assets/chlimage_1-127.png)
 
-### 建立影像元件 {#creating-the-image-component}
+### 建立映像元件{#creating-the-image-component}
 
 建立在段落系統中顯示影像的元件。 為節省時間，影像元件會建立為標誌元件的副本，並變更一些屬性。
 
 >[!NOTE]
 >
->Adobe Experience Manager提供功能更完整的影像元件( `/libs/foundation/components/image`)。
+>Adobe Experience Manager提供功能更完整的影像元件(`/libs/foundation/components/image`)。
 
-#### 建立影像元件 {#creating-the-image-component-1}
+#### 建立映像元件{#creating-the-image-component-1}
 
-1. 按一下右鍵節 `/apps/mywebsite/components/logo` 點，然後按一下 **[!UICONTROL 複製]**。
-1. 按一下右鍵該節 `/apps/mywebsite/components` 點，然後按一下 **[!UICONTROL 貼上]**。
-1. 按一下右鍵該節 `Copy of logo` 點，按一下 **[!UICONTROL 更名]**，刪除現有文本並鍵入 `image`。
+1. 按一下右鍵`/apps/mywebsite/components/logo`節點，然後按一下&#x200B;**[!UICONTROL Copy]**。
+1. 按一下右鍵`/apps/mywebsite/components`節點，然後按一下&#x200B;**[!UICONTROL 貼上]**。
+1. 按一下右鍵`Copy of logo`節點，按一下&#x200B;**[!UICONTROL 更名]** ，刪除現有文本並鍵入`image`。
 
-1. 選擇組 `image` 件節點，並更改以下屬性值：
+1. 選擇`image`元件節點，並更改以下屬性值：
 
    * `jcr:title:` 我的影像元件。
    * `jcr:description`:這是我的影像元件。
 
-1. 將屬性添加到 `image` 具有以下屬性值的節點：
+1. 將屬性添加到`image`節點，其屬性值如下：
 
    * **[!UICONTROL 名稱]**:componentGroup
    * **[!UICONTROL 類型]**:字串
    * **[!UICONTROL 值]**:MyWebsite
 
-1. 在節點 `image` 下，將節點重 `design_dialog` 命名為 `dialog`。
+1. 在`image`節點下，將`design_dialog`節點更名為`dialog`。
 
-1. Rename `logo.jsp` to `image.jsp.`
+1. 將`logo.jsp`重新命名為`image.jsp.`
 
-1. 開啟img.GET.java，並將套件變更為 `apps.mywebsite.components.image`。
+1. 開啟img.GET.java，並將套件變更為`apps.mywebsite.components.image`。
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
-#### 建立影像指令碼 {#creating-the-image-script}
+#### 建立映像指令碼{#creating-the-image-script}
 
 本節說明如何建立影像指令碼。
 
@@ -1166,9 +1166,9 @@ public class img_GET extends AbstractImageServlet {
 
 1. 儲存變更。
 
-#### 建立映像cq:editConfig節點 {#creating-the-image-cq-editconfig-node}
+#### 建立映像cq:editConfig節點{#creating-the-image-cq-editconfig-node}
 
-節點 `cq:editConfig` 類型允許您在編輯元件屬性時配置元件的某些行為。
+`cq:editConfig`節點類型允許您在編輯元件屬性時配置某些行為。
 
 在本節中，您會使用cq:editConfig節點，讓您將資產從Content Finder拖曳至影像元件。
 
@@ -1197,33 +1197,33 @@ public class img_GET extends AbstractImageServlet {
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-#### 新增圖示 {#adding-the-icon}
+#### 添加表徵圖{#adding-the-icon}
 
 在本節中，當影像元件列在Sidekick中時，您會新增該圖示以顯示在影像元件旁：
 
-1. 在CRXDE Lite中，按一下右鍵檔案並選 `/libs/foundation/components/image/icon.png` 擇「復 **[!UICONTROL 制」]**。
-1. 按一下右鍵該節點，然 `/apps/mywebsite/components/image` 後按一下「 **[!UICONTROL 貼上]**」，然後按一下「 **[!UICONTROL 全部保存」]**。
+1. 在CRXDE Lite中，按一下右鍵檔案`/libs/foundation/components/image/icon.png`並選擇&#x200B;**[!UICONTROL Copy]**。
+1. 按一下右鍵節點`/apps/mywebsite/components/image`並按一下&#x200B;**[!UICONTROL 貼上]** ，然後按一下&#x200B;**[!UICONTROL 保存所有]**。
 
-#### 使用影像元件 {#using-the-image-component}
+#### 使用影像元件{#using-the-image-component}
 
-在本節中，您將查看「產 **[!UICONTROL 品]** 」頁面，並將映像元件添加到段落系統。
+在本節中，您將查看&#x200B;**[!UICONTROL Products]**&#x200B;頁，並將映像元件添加到段落系統。
 
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。
-1. 在Sidekick中，按一下「設 **[!UICONTROL 計模式]** 」圖示。
-1. 按一下「 **[!UICONTROL 編輯]** 」(Edit)按鈕可編輯par的設計對話框。
-1. 在對話方塊中，顯示了 **[!UICONTROL 允許的元件]** ;導覽至 **[!UICONTROL MyWebsite]**，選取「我的 **[!UICONTROL 影像元件]** 」，然後按一 **[!UICONTROL 下「確定」]**。
-1. 返回「編 **[!UICONTROL 輯」模式]**。
-1. 連按兩下對應影格(在「拖曳元件或 **[!UICONTROL 資產至此處]**」)。 Insert New **[!UICONTROL Component]** and **[!UICONTROL Sidekick選擇器如]** 下所示：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。
+1. 在Sidekick中，按一下&#x200B;**[!UICONTROL Design mode]**&#x200B;圖示。
+1. 按一下&#x200B;**[!UICONTROL 編輯]**&#x200B;按鈕以編輯par的設計對話框。
+1. 在對話方塊中，會顯示&#x200B;**[!UICONTROL 允許的元件]**&#x200B;清單；導覽至&#x200B;**[!UICONTROL MyWebsite]**，選擇&#x200B;**[!UICONTROL My Image Component]**，然後按一下&#x200B;**[!UICONTROL OK]**。
+1. 返回&#x200B;**[!UICONTROL 編輯模式]**。
+1. 連按兩下對應影格（在&#x200B;**[!UICONTROL 拖曳元件或資產至此處]**）。 **[!UICONTROL 插入新元件]**&#x200B;和&#x200B;**[!UICONTROL Sidekick]**&#x200B;選擇器如下所示：
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
-### 包括工具欄元件 {#including-the-toolbar-component}
+### 包括工具欄元件{#including-the-toolbar-component}
 
 在本節中，您包括工具欄元件，該元件是基礎元件之一。
 
 在編輯模式和設計模式中，您有幾個選項。
 
-1. 在CRXDE Lite中，導覽至 `/apps/mywebsite/components/contentpage`、開啟檔 `body.jsp` 案並找出下列程式碼：
+1. 在CRXDE Lite中，導覽至`/apps/mywebsite/components/contentpage`，開啟`body.jsp`檔案並找出下列程式碼：
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1235,37 +1235,37 @@ public class img_GET extends AbstractImageServlet {
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. 在「AEM網站」頁面的檔案夾樹狀結構中，選取 `Websites/My Website/English`，然後按一下「 **[!UICONTROL 新增>新頁面」]**。 指定下列屬性值，然後按一下「建立」:
+1. 在「AEM網站」頁面的資料夾樹狀結構中，選取`Websites/My Website/English`，然後按一下「新增>新增頁面」]**。**[!UICONTROL &#x200B;指定下列屬性值，然後按一下「建立」:
 
    * **[!UICONTROL 標題]**:工具列
-   * 選擇我 **[!UICONTROL 的網站內容頁面範本]**
+   * 選擇&#x200B;**[!UICONTROL 我的網站內容頁面範本]**
 
-1. 在頁面清單中，以滑鼠右鍵按一下「工具列」頁 **[!UICONTROL 面]** ，然後按一下「 **[!UICONTROL 屬性」]**。 選取「 **[!UICONTROL 在導覽中隱藏]**」，然後按一 **[!UICONTROL 下「確定」]**。
+1. 在頁清單中，按一下右鍵&#x200B;**[!UICONTROL 工具欄]**&#x200B;頁，然後按一下&#x200B;**[!UICONTROL 屬性]**。 選擇&#x200B;**[!UICONTROL 在導航中隱藏]** ，然後按一下&#x200B;**[!UICONTROL 確定]**。
 
-   「在導 **[!UICONTROL 覽中隱藏]** 」選項可防止頁面出現在導覽元件中，例如topnav和listchildren。
+   **[!UICONTROL 在Navigation]**&#x200B;中隱藏選項可防止頁面出現在導覽元件中，例如topnav和listchildren。
 
-1. 在「工 **[!UICONTROL 具列]**」下，建立下列頁面：
+1. 在&#x200B;**[!UICONTROL Toolbar]**&#x200B;下，建立以下頁面：
 
    * 聯絡人
    * 意見反應
    * 登入
    * 搜尋
 
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 其外觀如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 其外觀如下：
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
-### 建立搜索元件 {#creating-the-search-component}
+### 建立搜索元件{#creating-the-search-component}
 
 在本節中，您會建立元件來搜尋網站上的內容。 此搜尋元件可放置在任何頁面的段落系統中（例如，位於專用搜尋結果頁面）。
 
-您的搜尋輸入方塊在英文頁面上的外觀 **[!UICONTROL 如下]** :
+您的搜尋輸入方塊在&#x200B;**[!UICONTROL 英文]**&#x200B;頁面上的外觀如下：
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
-#### 建立搜索元件 {#creating-the-search-component-1}
+#### 建立搜索元件{#creating-the-search-component-1}
 
-1. 在CRXDE Lite中，按一下滑鼠右鍵 `/apps/mywebsite/components`，依序選 **[!UICONTROL 取]**「建立」 **[!UICONTROL 和「建立元件]**」。
+1. 在CRXDE Lite中，按一下右鍵`/apps/mywebsite/components`，選擇&#x200B;**[!UICONTROL 建立]**，然後選擇&#x200B;**[!UICONTROL 建立元件]**。
 1. 使用對話框配置元件：
 
    1. 在第一個面板中，指定下列屬性值：
@@ -1274,26 +1274,26 @@ public class img_GET extends AbstractImageServlet {
       * **[!UICONTROL 標題]**:我的搜尋元件
       * **[!UICONTROL 說明]**:這是My Search元件
       * **[!UICONTROL 群組]**:MyWebsite
-   1. 按一 **[!UICONTROL 下「下一]**&#x200B;步」，然後再按 **[!UICONTROL 一下「下一步]** 」。
-   1. 在「允 **[!UICONTROL 許的父項]** 」面板上，按一下 **[!UICONTROL +按鈕並]** 鍵入 `*/parsys`。
-   1. 按一下「 **[!UICONTROL Next]** (下一步 **[!UICONTROL )」 ，然後按一下「]** OK（確定）」。
+   1. 按一下「**[!UICONTROL Next]**」，然後再次按一下「**[!UICONTROL Next]**」。
+   1. 在&#x200B;**[!UICONTROL 允許的父項]**&#x200B;面板上，按一下&#x200B;**[!UICONTROL +]**&#x200B;按鈕並鍵入`*/parsys`。
+   1. 按一下&#x200B;**[!UICONTROL Next]** ，然後按一下&#x200B;**[!UICONTROL OK]**。
 
 
-1. 按一下「 **[!UICONTROL 全部儲存]**」。
-1. 複製下列節點並將其貼上到節 `apps/mywebsite/components/search` 點：
+1. 按一下&#x200B;**[!UICONTROL 保存全部]**。
+1. 複製下列節點並將其貼上到`apps/mywebsite/components/search`節點：
 
    * `/libs/foundation/components/search/dialog`
-   * `` `/libs/foundation/components/search/i18n`
+   * &quot;`/libs/foundation/components/search/i18n`
    * `/libs/foundation/components/search/icon.png`
 
-1. 按一下「 **[!UICONTROL 全部儲存]**」。
+1. 按一下&#x200B;**[!UICONTROL 保存全部]**。
 
-#### 建立搜索指令碼 {#creating-the-search-script}
+#### 建立搜索指令碼{#creating-the-search-script}
 
 本節介紹如何建立搜索指令碼：
 
-1. 開啟檔 `/apps/mywebsite/components/search/search.jsp` 案。
-1. 將下列程式碼複製至 `search.jsp`:
+1. 開啟`/apps/mywebsite/components/search/search.jsp`檔案。
+1. 將下列程式碼複製至`search.jsp`:
 
    ```java
    <%@ page import="com.day.cq.wcm.foundation.Search,com.day.cq.tagging.TagManager" %>
@@ -1446,17 +1446,17 @@ public class img_GET extends AbstractImageServlet {
 
 1. 儲存變更。
 
-#### 在「內容頁面」元件中包含搜尋方塊 {#including-a-search-box-in-the-contentpage-component}
+#### 在Contentpage元件{#including-a-search-box-in-the-contentpage-component}中包括搜索框
 
 若要在內容頁面的左側區段中加入搜尋輸入方塊，請依下列步驟進行：
 
-1. 在CRXDE Lite中，開啟檔案 `left.jsp` 並 `/apps/mywebsite/components/contentpage` 找出下列程式碼（第2行）:
+1. 在CRXDE Lite中，開啟`/apps/mywebsite/components/contentpage`下方的檔案`left.jsp`，並找出下列程式碼（第2行）:
 
    ```xml
    %><div class="left">
    ```
 
-1. 在該行前面插 *入* 下列代碼：
+1. 在&#x200B;*前插入以下代碼：*
 
    ```java
    %><%@ page import="com.day.text.Text"%><%
@@ -1483,34 +1483,34 @@ public class img_GET extends AbstractImageServlet {
    </div>
    ```
 
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 搜索元件的外觀如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 搜索元件的外觀如下：
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
 
-#### 在「搜索」頁中包括搜索元件 {#including-the-search-component-in-the-search-page}
+#### 在「搜索」頁{#including-the-search-component-in-the-search-page}中包括搜索元件
 
 在本節中，您將搜索元件添加到段落系統。
 
-1. 在瀏覽器中，開啟「搜 **尋** 」頁面。
-1. 在Sidekick中，按一下 **[!UICONTROL Design]** 模式圖示。
-1. 在「par」區塊的「設計」（位於「搜尋」標題下方）中，按一下「編 **[!UICONTROL 輯」]**。
-1. 在對話方塊中，向下捲動至「我的 **[!UICONTROL 網站]** 」群組，選 **[!UICONTROL 取「我的搜尋元件]** 」並按一 **[!UICONTROL 下「確定」]**。
-1. 在Sidekick上，按一下三角形以返回「編 **[!UICONTROL 輯]** 」模式。
-1. 將 **[!UICONTROL My Search]** 元件從Sidekick拖曳至parsys影格。 其外觀如下：
+1. 在瀏覽器中，開啟&#x200B;**Search**&#x200B;頁面。
+1. 在Sidekick中，按一下&#x200B;**[!UICONTROL Design]**&#x200B;模式表徵圖。
+1. 在「par塊設計」（在「搜索」標題下）中，按一下「編輯」**[!UICONTROL 。]**
+1. 在對話方塊中，向下捲動至&#x200B;**[!UICONTROL 我的網站]**&#x200B;群組，選取&#x200B;**[!UICONTROL 我的搜尋元件]**，然後按一下&#x200B;**[!UICONTROL 確定]**。
+1. 在Sidekick上，按一下三角形以返回&#x200B;**[!UICONTROL Edit]**&#x200B;模式。
+1. 將&#x200B;**[!UICONTROL My Search]**&#x200B;元件從Sidekick拖曳至parsys影格。 其外觀如下：
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-135](assets/chlimage_1-133.png)
 
-1. 導覽至您的 **[!UICONTROL 產品]** 頁面。 在輸入方塊中搜尋客戶，然後按 **[!UICONTROL Enter]**。 您會被重新導向至「 **[!UICONTROL 搜尋]** 」頁面。 切換至 **[!UICONTROL 預覽]** 模式：輸出的格式與以下類似：
+1. 導覽至您的&#x200B;**[!UICONTROL 產品]**&#x200B;頁面。 在輸入框中搜索客戶，然後按&#x200B;**[!UICONTROL Enter]**&#x200B;鍵。 您會被重新導向至&#x200B;**[!UICONTROL Search]**&#x200B;頁面。 切換到&#x200B;**[!UICONTROL 預覽]**&#x200B;模式：輸出的格式與以下類似：
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
-### 包括Iparsys元件 {#including-the-iparsys-component}
+### 包括Iparsys元件{#including-the-iparsys-component}
 
 在本節中，您包括繼承段落系統(iparsys)元件，該元件是基礎元件之一。 此元件允許您在父頁面上建立段落結構，並讓子頁繼承段落。
 
 對於此元件，可以在編輯模式和設計模式中設定多個參數。
 
-1. 在CRXDE Lite中，導覽至 `/apps/mywebsite/components/contentpage`，開啟檔案並 `right.jsp` 取代：
+1. 在CRXDE Lite中，導覽至`/apps/mywebsite/components/contentpage`，開啟檔案`right.jsp`並取代：
 
    ```java
    <div>iparsys</div>
@@ -1523,7 +1523,7 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 儲存變更。
-1. 在您的瀏覽器中，重新載入 **[!UICONTROL 產品頁]** 。 整個頁面的外觀如下：
+1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL Products]**&#x200B;頁面。 整個頁面的外觀如下：
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
