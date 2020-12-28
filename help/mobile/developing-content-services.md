@@ -1,6 +1,6 @@
 ---
 title: Content Services
-seo-title: Content Services
+seo-title: 內容服務
 description: 'null'
 seo-description: 'null'
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
@@ -43,9 +43,9 @@ Content Services可將內容以資產、封裝的HTML(HTML/CSS/JS)或頻道無�
 >
 >開始使用Content Services之前，請確定啟用Content Services標幟。 若要在您的應用程式中建立和管理模型，您必須在「設定瀏覽器」中啟用資料模型。
 >
->如需詳 **[細資訊，請參閱](/help/mobile/developing-content-services.md)** 「管理內容服務」。
+>如需詳細資訊，請參閱&#x200B;**[管理內容服務](/help/mobile/developing-content-services.md)**。
 >
->如需詳細 [資訊，請參閱Configuration Browser](/help/sites-administering/configurations.md) （設定瀏覽器）檔案。
+>如需詳細資訊，請參閱[設定瀏覽器檔案](/help/sites-administering/configurations.md)。
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
