@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 設定您的使用者和使用者群組 {#configure-your-users-and-user-groups}
+# 設定您的使用者和使用者群組{#configure-your-users-and-user-groups}
 
 >[!NOTE]
 >
@@ -26,27 +26,27 @@ ht-degree: 0%
 
 本章說明使用者角色以及如何設定您的使用者和群組，以支援製作和管理行動應用程式。
 
-## AEM Mobile應用程式使用者和群組管理 {#aem-mobile-application-users-and-group-administration}
+## AEM Mobile應用程式使用者和群組管理{#aem-mobile-application-users-and-group-administration}
 
-### AEM Mobile應用程式內容作者（應用程式作者群組） {#aem-mobile-application-content-authors-app-author-group}
+### AEM Mobile應用程式內容作者（應用程式作者群組）{#aem-mobile-application-content-authors-app-author-group}
 
 應用程式作者群組成員負責製作AEM Mobile應用程式內容，包括頁面、文字、影像和視訊。
 
-#### 群組設定——應用程式作者 {#group-configuration-app-authors}
+#### 群組設定- app-authors {#group-configuration-app-authors}
 
 1. 建立名為&#39;app-authors&#39;的新使用者群組：
 
-   導覽至「使用者管理控制台」: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   導覽至「使用者管理控制台」:[http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    在使用者群組控制台中，選取「+」按鈕以建立群組。
 
    將此群組的ID設為&#39;app-authors&#39;，表示它是AEM內特定於製作行動應用程式的特定類型的作者使用者群組。
 
-1. 將成員添加到組： 作者
+1. 將成員添加到組：作者
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. 現在您已建立應用程式作者使用者群組，您可以透過使用者管理控制台，將個別團隊成員新 [增至此群組](http://localhost:4502/libs/granite/security/content/useradmin.md)。
+1. 現在您已建立應用程式作者使用者群組，您可以透過[使用者管理控制台](http://localhost:4502/libs/granite/security/content/useradmin.md)將個別團隊成員新增至這個新群組。
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -59,9 +59,9 @@ ht-degree: 0%
    * /etc/designs
    * /etc/cloudservices/dps2015
 
-### AEM Mobile應用程式管理員群組（應用程式管理員群組） {#aem-mobile-application-administrators-group-app-admins-group}
+### AEM Mobile應用程式管理員群組（應用程式管理員群組）{#aem-mobile-application-administrators-group-app-admins-group}
 
-應用程式管理員群組成員可以使用應用程式作者隨附的相同權限來製作應用程式內容 **AND** ，此外還負責：
+app-admins群組成員也可以使用應用程式作者&#x200B;**AND**&#x200B;所包含的相同權限來製作應用程式內容，此外還負責：
 
 * 測試、發佈和清除應用程式ContentSync OTA更新
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 >
 >您會注意到，有些選項不適用於應用程式管理員可用的應用程式作者。
 
-### 群組設定——應用程式管理員 {#group-configuration-app-admins}
+### 群組設定——應用程式管理員{#group-configuration-app-admins}
 
 1. 建立新群組，稱為應用程式管理員。
 1. 將下列群組新增至新的應用程式管理員群組：
@@ -85,7 +85,7 @@ ht-degree: 0%
    >
    >workflow —— 使用者必須使用PhoneGap Build服務進行遠端建置
 
-1. 導覽至「權 [限」主控台](http://localhost:4502/useradmin) ，並新增管理CloudServices的權限
+1. 導覽至[權限控制台](http://localhost:4502/useradmin)並新增管理Cloud Services的權限
 
    * （讀取、修改、建立、刪除、複製）/etc/cloudservices/mobileservices
 
