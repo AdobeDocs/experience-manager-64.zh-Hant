@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # 資產測試的命名慣例{#naming-conventions-for-assets-testing}
 
-儲存庫中的節點受 [Java內容儲存庫的命名約定所約束](/help/sites-developing/the-basics.md#java-content-repository)。 不過，Adobe Experience Manager會針對資產節點的名稱進一步規定。
+儲存庫中的節點受[Java內容儲存庫](/help/sites-developing/the-basics.md#java-content-repository)命名約定的約束。 不過，Adobe Experience Manager會針對資產節點的名稱進一步規定。
 
 ## 傳統 UI {#classic-ui}
 
