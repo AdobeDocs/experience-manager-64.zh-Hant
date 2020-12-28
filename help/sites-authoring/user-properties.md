@@ -22,19 +22,19 @@ ht-degree: 8%
 
 AEM提供您設定帳戶的功能，以及作者環境的某些方面。
 
-Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options.
+使用[標題](/help/sites-authoring/basic-handling.md#the-header)中的[User](/help/sites-authoring/user-properties.md#user-settings)選項和關聯的[My Preferences](#my-preferences)對話框，您可以修改用戶選項。
 
 ## 使用者設定 {#user-settings}
 
-「用 **戶設定** 」對話框允許您訪問：
+**User**&#x200B;設定對話方塊可讓您存取：
 
 * 模擬為
 
-   * 使用 [Impersonate(模擬](/help/sites-administering/security.md#impersonating-another-user) )功能，使用者可以代表其他使用者工作。
+   * 使用[Impersonate as](/help/sites-administering/security.md#impersonating-another-user)功能，使用者可以代表其他使用者工作。
 
 * 設定檔
 
-   * 提供使用者設定的方便 [連結](/help/sites-administering/security.md))
+   * 提供您[使用者設定](/help/sites-administering/security.md)的便利連結)
 
 * [我的喜好設定](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -44,7 +44,7 @@ Using the [User](/help/sites-authoring/user-properties.md#user-settings) option 
 
 ## 我的喜好設定 {#my-preferences}
 
-「我 **的偏好設定** 」對話方塊是透過頁首中的「使 [用者](/help/sites-authoring/user-properties.md#user-settings) 」選項來存取。
+**My Preferences**&#x200B;對話方塊是透過標題中的[User](/help/sites-authoring/user-properties.md#user-settings)選項存取。
 
 每位使用者都可自行設定特定屬性。
 
@@ -85,12 +85,12 @@ Using the [User](/help/sites-authoring/user-properties.md#user-settings) option 
 
    此選項定義系統中日期的顯示方式。 可使用下列選項：
 
-   * **一律顯示確切日期**: 一律會顯示確切日期（從不是相對日期）。
-   * **1天**: 相對日期會顯示為一天內的日期，否則會顯示確切日期。
-   * **7天（預設值）**: 相對日期會顯示在7天內的日期，否則會顯示確切的日期。
-   * **1個月**: 相對日期會顯示一個月內的日期，否則會顯示確切日期。
-   * **1年**: 相對日期會顯示在一年內的日期，否則會顯示確切的日期。
-   * **一律顯示相對日期**: 不會顯示確切日期，只顯示相對日期。
+   * **一律顯示確切日期**:一律會顯示確切日期（從不是相對日期）。
+   * **1天**:相對日期會顯示為一天內的日期，否則會顯示確切日期。
+   * **7天（預設值）**:相對日期會顯示在7天內的日期，否則會顯示確切的日期。
+   * **1個月**:相對日期會顯示一個月內的日期，否則會顯示確切日期。
+   * **1年**:相對日期會顯示在一年內的日期，否則會顯示確切的日期。
+   * **一律顯示相對日期**:不會顯示確切日期，只顯示相對日期。
 
 * **啟用快速鍵**
 
@@ -103,7 +103,7 @@ Using the [User](/help/sites-authoring/user-properties.md#user-settings) option 
 
 * **使用傳統製作體驗**
 
-   此選項可啟 [用傳統的UI](/help/sites-classic-ui-authoring/home.md)-based頁面編寫。 預設會使用標準UI。
+   此選項可啟用[傳統UI](/help/sites-classic-ui-authoring/home.md)的頁面編寫功能。 預設會使用標準UI。
 
 * **啟用資產首頁**
 
