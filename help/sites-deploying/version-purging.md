@@ -26,17 +26,17 @@ ht-degree: 1%
 >
 >如果未進行任何內容變更，您會看到訊息，指出頁面已啟動，但不會建立新版本
 
-您可以使用側點的「版本控制」標籤， **在要求時** ，建立其他版本。 這些版本儲存在儲存庫中，並可以根據需要進行還原。
+您可以使用側點的&#x200B;**版本控制**&#x200B;標籤，在要求時建立其他版本。 這些版本儲存在儲存庫中，並可以根據需要進行還原。
 
 這些版本不會清除，因此儲存庫大小會隨著時間而增長，因此需要進行管理。
 
 AEM隨附各種機制，可協助您管理您的儲存庫：
 
-* 版本 [管理器](#version-manager)
+* [版本管理器](#version-manager)
 
    這可設定為在建立新版本時清除舊版本。
 
-* 清除 [版本工具](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
+* [清除版本](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)工具
 
    這是監視和維護儲存庫的一部分。
 
@@ -50,13 +50,13 @@ AEM隨附各種機制，可協助您管理您的儲存庫：
 
       當版本的年齡超過此值時，會從儲存庫中清除它。
 
-* 「版 [本清除」維護任務](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)。 您可以計畫「版本清除」維護任務，以自動刪除舊版。 因此，這將手動使用「版本清除」工具的需求降至最低。
+* [版本清除維護任務](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)。 您可以計畫「版本清除」維護任務，以自動刪除舊版。 因此，這將手動使用「版本清除」工具的需求降至最低。
 
 >[!CAUTION]
 >
 >為了優化儲存庫大小，您應經常運行版本清除任務。 當流量有限時，應排程工作在營業時間以外的時間。
 
-## 版本管理員 {#version-manager}
+## 版本管理器{#version-manager}
 
 除了通過清除工具明確清除外，還可以將「版本管理器」配置為在建立新版本時清除舊版本。
 
@@ -66,7 +66,7 @@ AEM隨附各種機制，可協助您管理您的儲存庫：
 
 可使用下列選項：
 
-* `versionmanager.createVersionOnActivation` (布林值，預設值： true)
+* `versionmanager.createVersionOnActivation` (布林值，預設值：true)
 
    是否在啟動頁面時建立版本。
 
@@ -74,19 +74,19 @@ AEM隨附各種機制，可協助您管理您的儲存庫：
 
    只有在versionmanager.ivPaths中包含的路徑上進行啟動時，才會建立版本（請參閱下面）。
 
-* `versionmanager.ivPaths` (字串[]，預設值： {&quot;/&quot;})
+* `versionmanager.ivPaths` (字串[]，預設值：{&quot;/&quot;})
 
    如果versionmanager.createVersionOnActivation為true，則在啟動時隱式建立版本的路徑。
 
-* `versionmanager.purgingEnabled` (布林值，預設值： false)
+* `versionmanager.purgingEnabled` (布林值，預設值：false)
 
    是否在建立新版本時啟用清除
 
-* `versionmanager.purgePaths` (字串[]，預設值： {&quot;/content&quot;})
+* `versionmanager.purgePaths` (字串[]，預設值：{&quot;/content&quot;})
 
    建立新版本時，要清除版本的路徑。
 
-* `versionmanager.maxAgeDays` (int，預設值： 30)
+* `versionmanager.maxAgeDays` (int，預設值：30)
 
    清除時，任何舊於此值的版本都將被移除。 如果此值小於1，則不會根據版本的年齡執行清除
 
@@ -102,9 +102,9 @@ AEM隨附各種機制，可協助您管理您的儲存庫：
 >
 >建議不要在儲存庫中保留大量版本。 因此，在配置版本清除操作時請注意不要從清除中排除太多版本，否則儲存庫大小將無法正確優化。 如果您因業務需要而保留大量版本，請聯絡Adobe支援以尋找最佳化儲存庫大小的其他方法。
 
-### 結合保留選項 {#combining-retention-options}
+### 組合保留選項{#combining-retention-options}
 
-定義應如何保留的版本( `maxAgeDays`、 `maxNumberVersions`、 `minNumberVersions`)的選項，可根據您的需求加以組合。
+定義應如何保留的版本(`maxAgeDays`、`maxNumberVersions`、`minNumberVersions`)的選項可依您的需求組合。
 
 例如，定義要保留的最大版本數AND要保留的最舊版本時：
 
@@ -138,6 +138,6 @@ AEM隨附各種機制，可協助您管理您的儲存庫：
 
    * 3個版本將保留
 
-## 清除版本工具 {#purge-versions-tool}
+## 清除版本工具{#purge-versions-tool}
 
-清除 [版本工具](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) ，用於清除儲存庫中節點版本或節點層次結構。 其主要用途是通過刪除節點的舊版本來幫助您減小儲存庫的大小。
+[清除版本](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool)工具用於清除儲存庫中節點版本或節點層次結構。 其主要用途是通過刪除節點的舊版本來幫助您減小儲存庫的大小。
