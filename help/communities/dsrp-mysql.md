@@ -105,13 +105,13 @@ MySQL Workbench應按照目標OS的說明下載並安裝。
 
 #### 新建社區連接{#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ## 資料庫設定{#database-setup}
 
 開啟Communities連接以安裝資料庫。
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### 獲取SQL指令碼{#obtain-the-sql-script}
 
@@ -179,7 +179,7 @@ SQL指令碼是從AEM資料庫取得：
 * 找到`Day Commons JDBC Connections Pool`
 * 選擇`+`表徵圖以建立新連接配置
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 * 輸入下列值：
 
