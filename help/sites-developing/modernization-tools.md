@@ -23,7 +23,7 @@ ht-degree: 58%
 * [](/help/sites-authoring/default-components-foundation.md)從基礎元件轉換為核心元件[](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [](website.md)從傳統 UI 轉換為觸控式 UI[](touch-ui-concepts.md)
 
-如需這些工具使用的詳細資訊，請參 [閱其檔案](http://opensource.adobe.com/aem-modernize-tools/)。
+有關這些工具使用的詳細資訊，請[參見其文檔](http://opensource.adobe.com/aem-modernize-tools/)。
 
 >[!NOTE]
 >
