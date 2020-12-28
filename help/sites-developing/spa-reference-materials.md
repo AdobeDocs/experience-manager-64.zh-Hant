@@ -18,14 +18,14 @@ ht-degree: 2%
 ---
 
 
-# SPA參考資料 {#spa-reference-materials}
+# SPA參考資料{#spa-reference-materials}
 
 ## SPA Javascript API參考{#spa-javascript-api-references}
 
 以下是AEM SPA Editor SDK架構的NPM模組可用的JavaScript API參考。
 
 >[!NOTE]
->「單頁應用程式(SPA)編輯器」功能需要 [AEM 6.4 Service Pack 2](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html) 或更新版本。
+>「單頁應用程式(SPA)編輯器」功能需要[AEM 6.4 Service Pack 2](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html)或更新版本。
 >
 >SPA編輯器是建議的解決方案，適用於需要以SPA架構為基礎的用戶端轉換（例如React或Angular）的專案。
 
@@ -34,7 +34,7 @@ ht-degree: 2%
 * [反應可編輯的元件](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [角度可編輯的元件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
-## 開放原始碼GitHub資料庫 {#github-repositories}
+## 開放原始碼GitHub儲存庫{#github-repositories}
 
 以下是GitHub上SPA庫的開放原始碼資料庫。
 
