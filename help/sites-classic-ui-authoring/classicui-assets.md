@@ -20,7 +20,7 @@ ht-degree: 11%
 
 # 使用資產{#working-with-assets}
 
-「作 [者環境與工具](/help/sites-authoring/author-environment-tools.md) 」區段提供有關在編輯頁面時使用 [!UICONTROL Content Finder] 尋找和使用資產的資訊。 AEM Assets提供使用資產的其他方法：
+[作者環境與工具](/help/sites-authoring/author-environment-tools.md)區段提供有關使用[!UICONTROL 內容搜尋器]在編輯頁面時尋找與使用資產的資訊。 AEM Assets提供使用資產的其他方法：
 
 * [將Dynamic Media Classic功能新增至您的頁面](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [使用 Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
