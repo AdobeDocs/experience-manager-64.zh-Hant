@@ -17,9 +17,9 @@ ht-degree: 4%
 ---
 
 
-# AEM 6.4中的動態媒體儲存庫重組{#dynamic-media-repository-restructuring-in-aem}
+# AEM 6.4{#dynamic-media-repository-restructuring-in-aem}中的動態媒體資料庫重組
 
-如「AEM 6.4 [](/help/sites-deploying/repository-restructuring.md) 」頁面中的「父資料庫重組」所述，升級至AEM 6.4的客戶應使用此頁面來評估與影響動態媒體解決方案的資料庫變更相關的工作成果。 有些變更需要在AEM 6.4升級程式中努力工作，而有些則會延遲至6.5升級。
+如上層[「AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的儲存庫重組」頁面所述，升級至AEM 6.4的客戶應使用此頁面來評估與影響動態媒體解決方案的儲存庫變更相關的工作成果。 有些變更需要在AEM 6.4升級程式中努力工作，而有些則會延遲至6.5升級。
 
 **6.5升級版之前**
 
@@ -29,9 +29,9 @@ ht-degree: 4%
 * [動態媒體- YouTube雲端服務設定](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [其他](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
-## 6.5升級版之前 {#prior-to-upgrade}
+## 6.5之前版本升級{#prior-to-upgrade}
 
-### 自訂最適化視訊編碼設定  {#custom-adaptive-video-encoding-configurations}
+### 自訂最適化視訊編碼組態{#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -54,7 +54,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### Dynamic Media (DMS7) Cloud configuration {#dynamic-media-dms-cloud-configuration}
+### 動態媒體(DMS7)雲配置{#dynamic-media-dms-cloud-configuration}
 
 <table> 
  <tbody>
@@ -68,7 +68,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>客戶可以在以下位置運行遷移指令碼：<br /> </p> 
+   <td><p>客戶可在此位置運行遷移指令碼：<br /> </p> 
     <ul> 
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>重新啟動Dynamic Media OSGi套件。</li> 
@@ -81,7 +81,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 動態媒體(DM Hybrid)雲端服務組態 {#cloudserviceconfiguration}
+### 動態媒體(DM Hybrid)雲服務配置{#cloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -95,7 +95,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>您可以執行下列移轉指令碼，以符合最新的模型：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
+   <td><p>您可以執行下列移轉指令碼，以便與最新模型對齊：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
@@ -104,7 +104,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 動態媒體- YouTube雲端服務設定  {#youtubecloudserviceconfiguration}
+### 動態媒體- YouTube雲端服務設定{#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -118,7 +118,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>1. 從YouTube<br /> 2取消發佈所有視訊。 使用新的TouchUI（從）建立YouTube設定， <code>/conf</code>包括從舊位置<br /> 3複製所有頻道。 將所有視訊發佈回YouTube。</p> <p>此工作流程會產生新的YouTube URL。 如果您在建立新的TouchUI YouTube設定之前未解除發佈，則「屬性」下會列出多個YouTube URL，因為如果有機會，重新建立的渠道將會再次發佈。 這表示您的「屬性」下會列出無用的URL。</p> </td> 
+   <td><p>1.從YouTube<br /> 2取消發佈所有影片。 使用新的TouchUI（來自<code>/conf</code>）建立YouTube設定，包括從舊位置<br /> 3複製所有頻道。 將所有視訊發佈回YouTube。</p> <p>此工作流程會產生新的YouTube URL。 如果您在建立新的TouchUI YouTube設定之前未解除發佈，則「屬性」下會列出多個YouTube URL，因為如果有機會，重新建立的渠道將會再次發佈。 這表示您的「屬性」下會列出無用的URL。</p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
@@ -127,7 +127,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 其他 {#misc}
+### Misc {#misc}
 
 <table> 
  <tbody>
@@ -145,7 +145,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
-   <td>N/A</td> 
+   <td>不適用</td> 
   </tr>
  </tbody>
 </table>
@@ -166,7 +166,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
-   <td>N/A</td> 
+   <td>不適用</td> 
   </tr>
  </tbody>
 </table>
