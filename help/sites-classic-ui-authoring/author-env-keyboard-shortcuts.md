@@ -20,16 +20,16 @@ ht-degree: 3%
 
 # 控制台的鍵盤快速鍵{#keyboard-shortcuts-for-consoles}
 
-AEM中提供各種鍵盤快速鍵。 有些適用於控制台的使用，有的則適用於頁 [面編輯](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)。
+AEM中提供各種鍵盤快速鍵。 有些適用於控制台的使用，有些適用於[頁面編輯](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
 >桌上型裝置上的多選：
 >
->* Windows: **Ctrl**+**click** on required components.
+>* Windows:**Ctrl**+**按一下所需元件上的**。
    >
    >
-* Mac: **Cmd**+**click** on required components.
+* Mac:**Cmd**+**按一下所需元件上的**。
 
 >
 
@@ -47,9 +47,9 @@ AEM中提供各種鍵盤快速鍵。 有些適用於控制台的使用，有的�
   <tr> 
    <td>主控台</td> 
    <td><strong><code>Shift-Double-Click</code></strong><br /> （在必要頁面上）</td> 
-   <td>在新視窗中開啟頁面。<br /> <strong>注意：</strong> 如果「用戶屬性」 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">設定為「單一窗口</a> 」，則此操作可用； 如果有多個Windows，則這是預設行為。</td> 
+   <td>在新視窗中開啟頁面。<br /> <strong>注意：如</strong> 果用戶屬性設定為 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">單</a> 一窗口，則此操作可用；如果有多個Windows，則這是預設行為。</td> 
   </tr> 
  </tbody> 
 </table>
 
-當使用頁面編輯器來製作頁面時，案頭使用者也可使用 [各種鍵盤](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 快速鍵。
+當使用[頁面編輯器](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)來製作頁面時，案頭使用者也可使用各種鍵盤快速鍵。
