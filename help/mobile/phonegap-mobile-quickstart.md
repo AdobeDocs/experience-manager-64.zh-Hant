@@ -18,13 +18,13 @@ ht-degree: 1%
 ---
 
 
-# 行動快速入門 {#mobile-quickstart}
+# 行動快速入門{#mobile-quickstart}
 
 >[!NOTE]
 >
 >Adobe建議針對需要單頁應用程式架構用戶端轉換的專案使用SPA編輯器（例如React）。 [了解更多](/help/sites-developing/spa-overview.md).
 
-## AEM驗證應用程式 {#aem-verify-app}
+## AEM Verify App {#aem-verify-app}
 
 >[!CAUTION]
 >
