@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ## http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-311](assets/chlimage_1-311.png)
+![chlimage_1-310](assets/chlimage_1-311.png)
 
 ## 匿名網站訪客{#anonymous-site-visitor}
 
