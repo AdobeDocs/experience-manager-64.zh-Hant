@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 使用預檢預覽 {#previewing-with-preflight}
+# 使用預檢預覽{#previewing-with-preflight}
 
 本頁說明「使用預備應用程式預覽」。
 
@@ -34,23 +34,23 @@ ht-degree: 1%
 >
 >Preflight應用程式在性質上與PhoneGap Enterprise檢視器類似。
 
-## 使用預檢預覽 {#previewing-with-preflight-1}
+## 使用預檢預覽{#previewing-with-preflight-1}
 
 1. 從Mobile，從目錄中選擇您的Mobile On-Demand應用程式。
-1. 按一下「管理文章」(或「橫幅/ **系列」** )方塊中的省略號(...)。
-1. 從動 **作列選取** 「預備」。
-1. 從對 **話方塊中按一下** 「啟動預備」。
+1. 按一下&#x200B;**「管理文章**（或橫幅／系列）」方塊中的省略號(...)。
+1. 從操作欄中選擇&#x200B;**Preflight**。
+1. 從對話方塊按一下「啟動預備」。****
 1. 您的應用程式現在可以在Mobile On-Demand Preflight應用程式上預覽。
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->AEM Preflight應用程式可用來預覽內容和瀏覽頁。 若要深入瞭解Preflight App，請按一下 [這裡](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html)。
+>AEM Preflight應用程式可用來預覽內容和瀏覽頁。 若要深入瞭解Preflight App，請按一下[這裡](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html)。
 >
->AEM Preflight應用程式可在 [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8)、 [Google Play商店](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)和 [Windows市集取得](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq)。
+>AEM Preflight應用程式可在[iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8)、[Google Play商店](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)和[Windows市集](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq)中使用。
 
-### 搶先一步 {#getting-ahead}
+### 搶先一步{#getting-ahead}
 
 如果您仍需要更多有關製作內容的資訊，請參閱下列資源，以建立和管理AEM Mobile應用程式中的內容：
 
