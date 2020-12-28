@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # AEM開發——准則與最佳實務{#aem-development-guidelines-and-best-practices}
 
-## 使用範本和元件的指引 {#guidelines-for-using-templates-and-components}
+## 使用範本和元件的准則{#guidelines-for-using-templates-and-components}
 
 AEM元件和範本構成功能強大的工具套件。 開發人員可運用這些工具，為網站商業使用者、編輯和管理員提供功能，讓他們的網站適應不斷變化的商業需求（內容敏捷性），同時保留網站的統一版面（品牌保護）。
 
@@ -49,15 +49,15 @@ AEM元件和範本構成功能強大的工具套件。 開發人員可運用這�
 * 為您的自訂元件提供必要的彈性和設定功能。
 * 充份運用AEM段落系統的強大功能與彈性- parsys &amp; iparsys元件。
 
-### 自訂元件和其他元素 {#customizing-components-and-other-elements}
+### 自訂元件和其他元素{#customizing-components-and-other-elements}
 
 建立您自己的元件或自訂現有元件時，重新使用現有定義通常最簡單（而且最安全）。 相同的原則也適用於AEM中的其他元素，例如錯誤處理常式。
 
-這可以通過複製和覆蓋現有定義來完成。 換句話說，將定義從複製到 `/libs` 中 `/apps/<your-project>`。 此新定義(在中 `/apps`)可根據您的需求進行更新。
+這可以通過複製和覆蓋現有定義來完成。 換言之，將定義從`/libs`複製到`/apps/<your-project>`。 此新定義位於`/apps`中，可根據您的需求進行更新。
 
 >[!NOTE]
 >
->如需詳 [細資訊](/help/sites-developing/overlays.md) ，請參閱使用覆蓋。
+>如需詳細資訊，請參閱[使用覆蓋](/help/sites-developing/overlays.md)。
 
 例如：
 
@@ -65,7 +65,7 @@ AEM元件和範本構成功能強大的工具套件。 開發人員可運用這�
 
    這涉及覆蓋元件定義：
 
-   * 通過複製現有元件在中 `/apps/<website-name>/components/<MyComponent>` 建立新元件資料夾：
+   * 通過複製現有元件在`/apps/<website-name>/components/<MyComponent>`中建立新元件資料夾：
 
       * 例如，要自定義Text元件副本：
 
@@ -83,17 +83,17 @@ AEM元件和範本構成功能強大的工具套件。 開發人員可運用這�
 
 >[!CAUTION]
 >
->您 **不得變** 更路徑中的任 `/libs` 何內容。
+>您&#x200B;**不得**&#x200B;變更`/libs`路徑中的任何項目。
 >
->這是因為下次升級 `/libs` 實例時會覆寫的內容（套用修補程式或功能套件時可能會覆寫）。
+>這是因為下次升級實例時會覆寫`/libs`的內容（套用修補程式或功能套件時，很可能會覆寫）。
 >
 >對於配置和其他更改：
 >
->1. 將項目複製到 `/libs` `/apps`
->1. 在 `/apps`
+>1. 將`/libs`中的項目複製到`/apps`
+>1. 在`/apps`中進行任何更改
 
 
-## 何時使用JCR查詢以及何時不使用它們 {#when-to-use-jcr-queries-and-when-not-to-use-them}
+## 何時使用JCR查詢以及何時不使用{#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 JCR查詢在正確使用時是功能強大的工具。 它們適合：
 
@@ -112,16 +112,16 @@ JCR查詢不應用於純演算請求。 例如，JCR查詢不適用於
 
 >[!NOTE]
 >
->如果您使用 [Query Builder](/help/sites-developing/querybuilder-api.md)，則會使用JCR查詢，因為Query Builder會在引擎蓋下產生JCR查詢。
+>如果您使用[Query Builder](/help/sites-developing/querybuilder-api.md)，則會使用「JCR查詢」，因為「查詢產生器」會在引擎蓋下產生「JCR查詢」。
 
 
-## 安全性考量 {#security-considerations}
+## 安全性考量事項{#security-considerations}
 
 >[!NOTE]
 >
->此外，參考安全性檢查清單也 [是值得的](/help/sites-administering/security-checklist.md)。
+>也值得參考[安全檢查清單](/help/sites-administering/security-checklist.md)。
 
-### JCR（儲存庫）會話 {#jcr-repository-sessions}
+### JCR（儲存庫）會話{#jcr-repository-sessions}
 
 您應使用使用者工作階段，而非管理工作階段。 這表示您應使用：
 
@@ -129,13 +129,13 @@ JCR查詢不應用於純演算請求。 例如，JCR查詢不適用於
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### 防止跨網站指令碼(XSS) {#protect-against-cross-site-scripting-xss}
+### 防止跨網站指令碼(XSS){#protect-against-cross-site-scripting-xss}
 
 跨網站指令碼(XSS)可讓攻擊者將程式碼注入其他使用者檢視的網頁。 惡意Web使用者可利用此安全性弱點略過存取控制。
 
 AEM會套用在輸出時篩選所有使用者提供內容的原則。 在開發和測試期間，防止XSS的優先順序最高。
 
-此外，Web應用程式防火牆(例如 [mod_security for Apache](https://modsecurity.org))可提供可靠、集中的部署環境安全控制，並防止先前未偵測到的跨網站指令碼攻擊。
+此外，Web應用程式防火牆（例如Apache](https://modsecurity.org)的[mod_security）可提供可靠、集中的部署環境安全控制，並防止先前未被發現的跨網站指令碼攻擊。
 
 >[!CAUTION]
 >
@@ -147,25 +147,25 @@ XSAPI快速參考表。
 
 [取得檔案](assets/xss_cheat_sheet_2016.pdf)
 
-### 保護機密資訊的通訊安全 {#securing-communication-for-confidential-information}
+### 保護機密資訊的通信安全{#securing-communication-for-confidential-information}
 
 至於任何網際網路應用程式，請務必在傳送機密資訊時
 
 * 通信通過SSL受到保護
 * HTTP POST已使用（如果適用）
 
-這適用於對系統機密的資訊（例如設定或管理存取），以及對其使用者機密的資訊（如其個人詳細資訊）
+這適用於對系統保密的資訊（如設定或管理存取），以及對其使用者保密的資訊（如其個人詳細資訊）
 
-## 不同的開發任務 {#distinct-development-tasks}
+## 不同的開發任務{#distinct-development-tasks}
 
-### 自訂錯誤頁面 {#customizing-error-pages}
+### 自定義錯誤頁{#customizing-error-pages}
 
 可針對AEM自訂錯誤頁面。 這是建議的，因此實例不會顯示內部伺服器錯誤上的吊索跟蹤。
 
-如需 [完整詳細資訊，請參閱自訂錯誤處理常式所顯示的錯誤頁](/help/sites-developing/customizing-errorhandler-pages.md) 。
+如需完整詳細資訊，請參閱[自訂錯誤處理常式](/help/sites-developing/customizing-errorhandler-pages.md)所顯示的錯誤頁面。
 
-### 在Java進程中開啟檔案 {#open-files-in-the-java-process}
+### 在Java進程{#open-files-in-the-java-process}中開啟檔案
 
-由於AEM可存取大量檔案，因此建議明確設定Java [程式的開啟檔案數](/help/sites-deploying/configuring.md#open-files-in-the-java-process) ，以供AEM使用。
+由於AEM可存取大量檔案，因此建議您明確為AEM設定Java進程[開啟的檔案數目。](/help/sites-deploying/configuring.md#open-files-in-the-java-process)
 
 為了盡量減少此問題的發展，應確保所開啟的檔案能盡快（有意義）正確關閉。
