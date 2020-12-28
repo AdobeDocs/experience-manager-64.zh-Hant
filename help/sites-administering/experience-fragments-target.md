@@ -22,23 +22,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此功能需要 [AEM 6.4 Service Pack 2(6.4.2.0)或更新版本的應用程式](/help/release-notes/sp-release-notes.md) 。
+>此功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md)或更新版本。
 
-您可以將 [在Adobe Experience Manager](/help/sites-authoring/experience-fragments.md)(AEM)中建立的Experience片段匯出至Adobe Target。 然後，您就可以在Target活動中將它們當做選件，以大規模測試和個人化體驗。 這可讓您結合AEM的簡單易用和強大功能，以及Target中的強大自動智慧(AI)和機器學習(ML)功能。
+您可以將在Adobe Experience Manager(AEM)中建立的[Experience Fragments](/help/sites-authoring/experience-fragments.md)匯出至Adobe Target。 然後，您就可以在Target活動中將它們當做選件，以大規模測試和個人化體驗。 這可讓您結合AEM的簡單易用和強大功能，以及Target中的強大自動智慧(AI)和機器學習(ML)功能。
 
 ## 必備條件 {#prerequisites}
 
 需要執行各種動作：
 
-1. 您必須將AEM與Target整合。 如需 [詳細資訊，請參閱「與Adobe Target整合](/help/sites-administering/target.md) 」。
-1. 體驗片段是從作者例項匯出，因此您必須在作者例項上設定連結外部化 [](/help/sites-developing/externalizer.md) ，以確保發佈例項的任何連結外部化。
+1. 您必須將AEM與Target整合。 如需詳細資訊，請參閱[與Adobe Target整合。](/help/sites-administering/target.md)
+1. 體驗片段是從作者例項匯出，因此您必須在作者例項上設定連結外部化程式[，以確保發佈例項的任何連結都外部化。](/help/sites-developing/externalizer.md)
 
-## 新增雲端設定 {#add-the-cloud-configuration}
+## 新增雲端設定{#add-the-cloud-configuration}
 
-在匯出片段之前，您需要將 **Adobe Target的Cloud Configuration** （雲端設定）新增至 **** 片段或資料夾：
+在匯出片段之前，您必須將&#x200B;**Adobe Target**&#x200B;的&#x200B;**雲端設定**&#x200B;新增至片段或資料夾：
 
-1. 導覽至 **Experience片段主控台** 。
-1. 開啟 **適當資料夾** 或片段的頁面屬性。
+1. 導覽至&#x200B;**體驗片段**&#x200B;主控台。
+1. 開啟&#x200B;**頁面屬性**&#x200B;以查找相應的資料夾或片段。
 
    >[!NOTE]
    >
@@ -46,10 +46,10 @@ ht-degree: 0%
    >
    >如果您將雲端組態新增至Experience Fragment本身，則所有變數都會繼承組態。
 
-1. 選擇「 **雲端服務** 」標籤。
+1. 選擇&#x200B;**雲端服務**&#x200B;標籤。
 
-1. 在「 **雲端服務設定**」下方，從下拉式清 **單中選取「Adobe Target** 」。
-1. 在 **Adobe Target下**，選取適當的設定。
+1. 在&#x200B;**雲端服務設定**&#x200B;下方，從下拉式清單中選取&#x200B;**Adobe Target**。
+1. 在&#x200B;**Adobe Target**&#x200B;下，選取適當的設定。
 
 1. **儲存並關閉**.
 
@@ -70,31 +70,31 @@ ht-degree: 0%
    >
    >它必須是體驗片段Web變數。
 
-1. 點選／按一 **下「匯出至Adobe Target**」。
+1. 點選／按一下「匯出至Adobe Target **」。**
 
    >[!NOTE]
    >
-   >如果體驗片段已匯出，請在Adobe Target中選 **取「更新」**。
+   >如果體驗片段已匯出，請選取「在Adobe Target中更新&#x200B;**」。**
 
-1. 點選／按一 **下「匯出」，不需發佈** , **或視需要發佈** 。
+1. 視需要點選／按一下「匯出而不發佈&#x200B;**或**&#x200B;發佈&#x200B;**」。**
 
    >[!NOTE]
    >
    >選取** Publish**將立即發佈體驗片段並傳送至Target。
 
-1. 點選／按一 **下確認** 對話方塊中的確定。
+1. 在確認對話方塊中點選／按一下「確定」。****
 
    您的體驗片段現在應該位於Target中。
 
 >[!NOTE]
 >
->或者，您也可以使用「頁面資訊」功能表中的類似指令，從頁面編輯器 [執行匯出](/help/sites-authoring/author-environment-tools.md#page-information) 。
+>或者，您也可以使用[頁面資訊](/help/sites-authoring/author-environment-tools.md#page-information)功能表中的類似命令，從頁面編輯器執行匯出。
 
-## 在Target中使用您的體驗片段 {#using-your-experience-fragments-in-target}
+## 在Target {#using-your-experience-fragments-in-target}中使用您的體驗片段
 
-執行前述工作後，體驗片段會顯示在Target的「選件」頁面上。 請檢視特定的Target [檔案](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html) ，以瞭解您可在其中取得哪些成果。
+執行前述工作後，體驗片段會顯示在Target的「選件」頁面上。 請參閱[特定Target檔案](https://experiencecloud.adobe.com/resources/help/en_US/target/target/aem-experience-fragments.html)，瞭解您可在其中取得哪些成果。
 
-## 刪除已匯出至Target的體驗片段 {#deleting-an-experience-fragment-already-exported-to-target}
+## 刪除已導出到目標{#deleting-an-experience-fragment-already-exported-to-target}的體驗片段
 
 刪除已匯出至Target的體驗片段，如果該片段已用於Target中的選件，可能會造成問題。 當AEM傳送片段內容時，刪除片段會導致選件無法使用。
 
