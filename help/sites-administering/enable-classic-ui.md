@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 啟用對傳統UI的訪問{#enabling-access-to-classic-ui}
+# 啟用對Classic UI{#enabling-access-to-classic-ui}的訪問
 
 在AEM的許多區域中，觸控功能與傳統UI相當且事實上超過標準UI，因此現在預設會停用透過觸控介面存取傳統介面。 以下頁面說明如何視需要重新啟用此存取。
 
@@ -27,5 +27,5 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需與傳統UI功能對等狀態的詳細資訊，請參閱 [Touch UI功能對等檔案](/help/release-notes/touch-ui-features-status.md) 。
+>如需與傳統UI功能奇偶校驗狀態的詳細資訊，請參閱[Touch UI功能奇偶校驗](/help/release-notes/touch-ui-features-status.md)檔案。
 
