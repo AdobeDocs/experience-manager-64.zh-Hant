@@ -1,8 +1,8 @@
 ---
 title: 使用Web Services叫用AEM Forms
 seo-title: 使用Web Services叫用AEM Forms
-description: 'null'
-seo-description: 'null'
+description: 使用網頁服務來叫用AEM Forms程式，並完整支援WSDL產生。
+seo-description: 使用網頁服務來叫用AEM Forms程式，並完整支援WSDL產生。
 uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '9984'
+source-wordcount: '10008'
 ht-degree: 0%
 
 ---
