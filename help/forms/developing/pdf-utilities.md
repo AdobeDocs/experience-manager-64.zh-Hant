@@ -1,8 +1,8 @@
 ---
 title: 使用PDF公用程式
 seo-title: 使用PDF公用程式
-description: 'null'
-seo-description: 'null'
+description: 使用PDF公用程式服務，在PDF和XDP檔案格式之間轉換、設定和擷取PDF檔案屬性，以及控制XMP中繼資料。
+seo-description: 使用PDF公用程式服務，在PDF和XDP檔案格式之間轉換、設定和擷取PDF檔案屬性，以及控制XMP中繼資料。
 uuid: a2ea2359-c547-4f1b-b6ca-f276f816e36a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2548'
+source-wordcount: '2592'
 ht-degree: 1%
 
 ---
@@ -231,7 +231,7 @@ PDF公用程式服務可在PDF和XDP檔案格式之間轉換、設定和擷取PD
 
 **建立PDFUlitiveService用戶端**
 
-您必須先建立PDFutilities用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，您可建立`PDFUtilityServiceClient`物件來完成此作業。 使用web service API，這是使用`PDFUtilityServiceService`物件來完成的。
+您必須先建立PDF Utility用戶端，才能以程式設計方式執行PDF公用程式作業。 使用Java API，您可建立`PDFUtilityServiceClient`物件來完成此作業。 使用web service API，這是使用`PDFUtilityServiceService`物件來完成的。
 
 **調用屬性檢索操作**
 
