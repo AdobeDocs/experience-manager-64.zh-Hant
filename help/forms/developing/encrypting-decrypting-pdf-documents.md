@@ -1,8 +1,8 @@
 ---
 title: 加密和解密PDF檔案
 seo-title: 加密和解密PDF檔案
-description: 'null'
-seo-description: 'null'
+description: 使用Encryption服務加密和解密文檔。 加密服務任務包括：使用密碼加密PDF檔案、使用憑證加密PDF檔案、從PDF檔案移除以密碼為基礎的加密、從PDF檔案移除以認證為基礎的加密、解除PDF檔案鎖定，以便執行其他服務作業，以及決定安全PDF檔案的加密類型。
+seo-description: 使用Encryption服務加密和解密文檔。 加密服務任務包括：使用密碼加密PDF檔案、使用憑證加密PDF檔案、從PDF檔案移除以密碼為基礎的加密、從PDF檔案移除以認證為基礎的加密、解除PDF檔案鎖定，以便執行其他服務作業，以及決定安全PDF檔案的加密類型。
 uuid: 4e4e2716-c21f-4bfe-ae7a-7e91442414ef
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '8118'
+source-wordcount: '8244'
 ht-degree: 0%
 
 ---
