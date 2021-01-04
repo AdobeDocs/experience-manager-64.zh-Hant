@@ -1,8 +1,8 @@
 ---
 title: 在用戶端轉換表單
 seo-title: 在用戶端轉換表單
-description: 'null'
-seo-description: 'null'
+description: 使用Acrobat或Adobe Reader的用戶端轉譯功能，最佳化PDF內容的傳送，並改善Forms服務處理網路負載的能力。
+seo-description: 使用Acrobat或Adobe Reader的用戶端轉譯功能，最佳化PDF內容的傳送，並改善Forms服務處理網路負載的能力。
 uuid: 09bcc23d-28b0-473a-87f1-bc17e87620f4
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
-source-git-commit: a750aeb9f41347da93f1ceb16c5646bc94bee67b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
