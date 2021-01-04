@@ -1,8 +1,8 @@
 ---
 title: 使用條形碼表單
 seo-title: 使用條形碼表單
-description: 'null'
-seo-description: 'null'
+description: 使用Java API和Web Service API，從PDF表單或包含條碼的影像解碼資料。
+seo-description: 使用Java API和Web Service API，從PDF表單或包含條碼的影像解碼資料。
 uuid: e56c3c94-384d-401f-b418-dd34cdc57eda
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1931'
 ht-degree: 0%
 
 ---
