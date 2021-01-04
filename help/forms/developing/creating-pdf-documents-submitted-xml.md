@@ -1,8 +1,8 @@
 ---
 title: 使用已提交的XML資料建立PDF檔案
 seo-title: 使用已提交的XML資料建立PDF檔案
-description: 'null'
-seo-description: 'null'
+description: 使用Forms服務來擷取使用者在互動式表單中輸入的表單資料。 將表單資料傳遞至其他AEM Forms服務作業，並使用資料建立PDF檔案。
+seo-description: 使用Forms服務來擷取使用者在互動式表單中輸入的表單資料。 將表單資料傳遞至其他AEM Forms服務作業，並使用資料建立PDF檔案。
 uuid: 2676c614-8988-451b-ac7c-bd07731a3f5f
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
