@@ -1,8 +1,8 @@
 ---
 title: 匯入和匯出資料
 seo-title: 匯入和匯出資料
-description: 'null'
-seo-description: 'null'
+description: 使用表單資料整合服務，將資料匯入PDF表單，並使用Java API和Web Service API從PDF表單匯出資料。
+seo-description: 使用表單資料整合服務，將資料匯入PDF表單，並使用Java API和Web Service API從PDF表單匯出資料。
 uuid: 94ccb6f2-6e5f-43ea-a954-9a4402871a17
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2742'
+source-wordcount: '2796'
 ht-degree: 0%
 
 ---
