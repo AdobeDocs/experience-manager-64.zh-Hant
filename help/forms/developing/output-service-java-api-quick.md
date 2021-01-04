@@ -1,8 +1,8 @@
 ---
 title: 輸出服務Java API快速入門(SOAP)
 seo-title: 輸出服務Java API快速入門(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用Output服務Java API Quick Start(SOAP)來建立PDF檔案、建立以應用程式XDP檔案為基礎的PDF檔案、建立PDF/A檔案、將檔案傳送至Output服務、將AEM Forms儲存庫中的檔案傳送至Output服務、建立以片段為基礎的PDF檔案、列印至檔案、傳送列印串流網路印表機、建立多個PDF檔案、建立搜尋規則、轉換PDF檔案。
+seo-description: 使用Output服務Java API Quick Start(SOAP)來建立PDF檔案、建立以應用程式XDP檔案為基礎的PDF檔案、建立PDF/A檔案、將檔案傳送至Output服務、將AEM Forms儲存庫中的檔案傳送至Output服務、建立以片段為基礎的PDF檔案、列印至檔案、傳送列印串流網路印表機、建立多個PDF檔案、建立搜尋規則、轉換PDF檔案。
 uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
