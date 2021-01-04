@@ -1,8 +1,8 @@
 ---
 title: 數位簽署和認證檔案
 seo-title: 數位簽署和認證檔案
-description: 'null'
-seo-description: 'null'
+description: 使用簽名服務將數位簽名欄位新增及刪除至PDF檔案、擷取PDF檔案中的簽名欄位名稱、修改簽名欄位、數位簽署PDF檔案、認證PDF檔案、驗證PDF檔案中的數位簽名、驗證PDF檔案中的所有數位簽名，以及從簽名欄位移除數位簽名。
+seo-description: 使用簽名服務將數位簽名欄位新增及刪除至PDF檔案、擷取PDF檔案中的簽名欄位名稱、修改簽名欄位、數位簽署PDF檔案、認證PDF檔案、驗證PDF檔案中的數位簽名、驗證PDF檔案中的所有數位簽名，以及從簽名欄位移除數位簽名。
 uuid: 6331de8a-2a9c-45bf-89d2-29f1ad5cc856
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '16977'
+source-wordcount: '17099'
 ht-degree: 0%
 
 ---
