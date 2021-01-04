@@ -1,8 +1,8 @@
 ---
 title: 調用API快速啟動
 seo-title: 調用API快速啟動
-description: 'null'
-seo-description: 'null'
+description: 使用「快速入門」以程式設計方式叫用AEM Forms服務。
+seo-description: 使用「快速入門」以程式設計方式叫用AEM Forms服務。
 uuid: acf67177-98a4-4c99-95a5-3086907d7c2c
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: dcf83c9f-b818-44a2-9079-80a4fc357c4f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1249'
 ht-degree: 3%
 
 ---
