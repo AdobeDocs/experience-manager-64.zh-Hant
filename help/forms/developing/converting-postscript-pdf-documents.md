@@ -1,8 +1,8 @@
 ---
 title: 將Postscript轉換為PDF檔案
 seo-title: 將Postscript轉換為PDF檔案
-description: 'null'
-seo-description: 'null'
+description: 使用Distiller服務，將PostScript®、Encapsuled PostScript(EPS)和PRN檔案轉換為精簡、可靠且更安全的網路PDF檔案。 Distiller服務使用Java API和Web Service API將大量打印文檔轉換為電子文檔，如發票和對帳單。
+seo-description: 使用Distiller服務，將PostScript®、Encapsuled PostScript(EPS)和PRN檔案轉換為精簡、可靠且更安全的網路PDF檔案。 Distiller服務使用Java API和Web Service API將大量打印文檔轉換為電子文檔，如發票和對帳單。
 uuid: 2143f406-1fdd-4551-a738-1a8388f8d478
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 translation-type: tm+mt
-source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1365'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 
 >[!NOTE]
 >
->若要將PostScript檔案轉換為PDF檔案，下列其中一項必須安裝在代管AEM Forms的伺服器上：Acrobat 9或Microsoft Visual C++ 2005可重新散發的套件。
+>若要將PostScript檔案轉換為PDF檔案，下列其中一項需要安裝在代管AEM Forms的伺服器上：Acrobat 9或Microsoft Visual C++ 2005可重新散發的套件。
 
 ### 步驟{#summary-of-steps}摘要
 
