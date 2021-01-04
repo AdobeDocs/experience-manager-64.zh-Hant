@@ -1,8 +1,8 @@
 ---
 title: 以程式設計方式管理端點
 seo-title: 以程式設計方式管理端點
-description: 'null'
-seo-description: 'null'
+description: 使用端點註冊表服務來添加EJB端點、添加SOAP端點、添加監視資料夾端點、添加電子郵件端點、添加遠程端點、添加任務管理器端點、修改端點、刪除端點以及檢索端點連接器資訊。
+seo-description: 使用端點註冊表服務來添加EJB端點、添加SOAP端點、添加監視資料夾端點、添加電子郵件端點、添加遠程端點、添加任務管理器端點、修改端點、刪除端點以及檢索端點連接器資訊。
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '10781'
+source-wordcount: '10849'
 ht-degree: 0%
 
 ---
@@ -562,7 +562,7 @@ ht-degree: 0%
 * **repeatCount**:電子郵件端點掃描資料夾或目錄的次數。值-1表示無限掃描。 預設值為-1。
 * **repeatInterval**:接收方用於檢查傳入郵件的掃描速率（以秒為單位）。預設值為10。
 * **startDelay**:排程器啟動後等待掃描的時間。預設時間為0。
-* **batchSize**:接收方在每次掃描中處理的電子郵件消息數，以獲得最佳效能。值-1表示所有電子郵件。 預設值為2。
+* **batchSize**:接收方在每次掃描中處理的電子郵件消息數，以獲得最佳效能。值-1表示所有電子郵件。 預設值為1。
 * **userName**:從電子郵件中叫用目標服務時使用的用戶名。預設值為`SuperAdmin`。
 * **domainName**:強制設定值。預設值為`DefaultDom`。
 * **domainPattern**:指定提供者接受的傳入電子郵件的網域模式。例如，如果使用`adobe.com`，則只會處理來自adobe.com的電子郵件，而忽略來自其他網域的電子郵件。
