@@ -1,8 +1,8 @@
 ---
 title: 管理使用者
 seo-title: 管理使用者
-description: 'null'
-seo-description: 'null'
+description: 使用使用者管理API來建立可管理角色、權限和承擔者（可以是使用者或群組）的用戶端應用程式，並驗證使用者。
+seo-description: 使用使用者管理API來建立可管理角色、權限和承擔者（可以是使用者或群組）的用戶端應用程式，並驗證使用者。
 uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '6191'
+source-wordcount: '6243'
 ht-degree: 0%
 
 ---
@@ -744,7 +744,7 @@ ht-degree: 0%
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>用戶訪問網站並指定用戶名和口令。 這項資訊會提交至代管AEM Forms的J2EE應用程式伺服器。</p></td> 
   </tr> 
   <tr> 
