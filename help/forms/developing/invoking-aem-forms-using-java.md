@@ -1,8 +1,8 @@
 ---
 title: 使用JavaAPI叫用AEM Forms
 seo-title: 使用JavaAPI叫用AEM Forms
-description: 'null'
-seo-description: 'null'
+description: 使用AEM Forms Java API for RMI傳輸通訊協定以進行遠端呼叫、VM傳輸以進行本機呼叫、SOAP進行遠端呼叫、不同驗證（例如使用者名稱和密碼），以及同步與非同步呼叫請求。
+seo-description: 使用AEM Forms Java API for RMI傳輸通訊協定以進行遠端呼叫、VM傳輸以進行本機呼叫、SOAP進行遠端呼叫、不同驗證（例如使用者名稱和密碼），以及同步與非同步呼叫請求。
 uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5479'
 ht-degree: 0%
 
 ---
