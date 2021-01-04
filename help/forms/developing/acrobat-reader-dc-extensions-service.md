@@ -1,17 +1,17 @@
 ---
 title: Acrobat Reader DC擴充功能服務Java API快速入門(SOAP)
 seo-title: Acrobat Reader DC擴充功能服務Java API快速入門(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用Acrobat Reader DC Extensions服務，將使用權套用至PDF檔案、從PDF檔案移除使用權，並擷取有關憑證的資訊，此憑證用來將使用權套用至具權限的PDF檔案，名為LoanUsageRights.pdf。
+seo-description: 使用Acrobat Reader DC Extensions服務，將使用權套用至PDF檔案、從PDF檔案移除使用權，並擷取有關憑證的資訊，此憑證用來將使用權套用至具權限的PDF檔案，名為LoanUsageRights.pdf。
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
 contentOwner: admin
 content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
