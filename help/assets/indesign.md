@@ -3,10 +3,10 @@ title: 將AEM資產與Adobe InDesign Server整合
 description: 瞭解如何將AEM Assets與InDesign Server整合。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
 workflow-type: tm+mt
-source-wordcount: '1685'
-ht-degree: 4%
+source-wordcount: '1702'
+ht-degree: 3%
 
 ---
 
@@ -135,13 +135,13 @@ AEM Assets具有預先設定的工作流程&#x200B;**DAM Update Asset**，其中
 
 * **擴充指令碼**:您可以在此處指定不同的指令碼組合。如果您想要在InDesign Server上執行您自己的指令碼，請將指令碼儲存在`/apps/settings/dam/indesign/scripts`。
 
-   有關Indesign指令碼的資訊，請參見[https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
+   如需InDesign指令碼的詳細資訊，請參閱[https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
 
 >[!CAUTION]
 >
 >請 勿變更ExtendScript程式庫。程式庫提供與Sling通訊所需的HTTP功能。 此設定會指定要傳送至Adobe InDesign Server以供其使用的程式庫。
 
-由「媒體擷取」工作流程步驟執行的`ThumbnailExport.jsx`指令碼會產生。jpg格式的縮圖轉譯。 「處理縮圖」工作流程步驟會使用此轉譯，以產生AEM所需的靜態轉譯。
+由「媒體擷取」工作流程步驟執行的`ThumbnailExport.jsx`指令碼會產生JPG格式的縮圖轉譯。 「處理縮圖」工作流程步驟會使用此轉譯，以產生AEM所需的靜態轉譯。
 
 您可以設定「處理縮圖」工作流程步驟，以產生不同大小的靜態轉譯。 請確定您不會移除預設值，因為AEM Assets UI需要這些預設值。 最後，「刪除影像預覽轉譯」工作流程步驟會移除。jpg縮圖轉譯，因為不再需要它。
 
@@ -186,15 +186,15 @@ AEM Assets具有預先設定的工作流程&#x200B;**DAM Update Asset**，其中
 
 ### 配置Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
-如果InDesign伺服器和AEM在不同的主機上執行，或是這兩種應用程式皆未在預設埠上執行，請設定&#x200B;**Day CQ Link Externalizer**&#x200B;以設定InDesign伺服器的主機名稱、埠和內容路徑。
+如果InDesign Server和AEM位於不同的主機上，或其中一個或兩個應用程式無法在預設埠上運作，請設定&#x200B;**Day CQ Link Externalizer**&#x200B;以設定InDesign Server的主機名稱、埠和內容路徑。
 
 1. 訪問URL `https://[AEM_server]:[port]/system/console/configMgr`中的Configuration Manager。
-1. 找到設定 **[!UICONTROL Day CQ Link Externalizer]**，然後按一下 **[!UICONTROL Edit]** 圖示以開啟它。
-1. 指定Indesign伺服器的主機名稱和內容路徑，然後按一下「儲存」。****
+1. 找到配置&#x200B;**[!UICONTROL Day CQ Link Externalizer]**。 按一下&#x200B;**[!UICONTROL 編輯]**&#x200B;以開啟。
+1. 連結外部化設定可協助建立[!DNL Experience Manager]部署和[!DNL InDesign Server]的絕對URL。 使用&#x200B;**[!UICONTROL 域]**&#x200B;欄位指定[!DNL Adobe InDesign Server]的主機名和上下文路徑。 依照螢幕上的指示進行。 按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
-   ![chlimage_1-290](assets/chlimage_1-290.png)
+   ![連結外部化設定](assets/link-externalizer-config.png)
 
-### 為InDesign Server {#enabling-parallel-job-processing-for-indesign-server-s}啟用並行作業處理
+### 為InDesign Servers {#enabling-parallel-job-processing-for-indesign-server}啟用並行作業處理
 
 您現在可以啟用IDS的並行作業處理。
 
