@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: 0fe74ef5483cf1f577be51c200ab2820d7ed64e5
 workflow-type: tm+mt
 source-wordcount: '3150'
 ht-degree: 0%
@@ -64,7 +64,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >除了資料模型對象和服務外，OData服務元資料文檔還包括定義兩個資料模型對象之間的關聯的導航屬性。 有關詳細資訊，請參閱[使用OData服務的導航屬性](#navigation-properties-odata)。
+   >除了資料模型對象和服務外，OData服務元資料文檔還包括定義兩個資料模型對象之間的關聯的導航屬性。 有關詳細資訊，請參閱[使用OData服務的導航屬性](#work-with-navigation-properties-of-odata-services)。
 
 1. 點選&#x200B;**[!UICONTROL Save]**&#x200B;以儲存表單模型物件。
 
@@ -140,7 +140,7 @@ ht-degree: 0%
    >
    >除了資料模型對象和服務外，OData服務元資料文檔還包括定義兩個資料模型對象之間的關聯的導航屬性。 將OData服務資料源添加到表單資料模型時，表單資料模型中有一個服務可用於資料模型對象中的所有導航屬性。 您可以使用此服務讀取相應資料模型對象的導航屬性。
    >
-   >有關使用服務的詳細資訊，請參閱[使用OData服務的導航屬性](#navigation-properties-odata)。
+   >有關使用服務的詳細資訊，請參閱[使用OData服務的導航屬性](#work-with-navigation-properties-of-odata-services)。
 
 1. 切換&#x200B;**[!UICONTROL 頂層物件]**&#x200B;以指定資料模型物件是否為頂層模型物件。
 
@@ -182,7 +182,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >除了資料模型對象和服務外，OData服務元資料文檔還包括定義兩個資料模型對象之間的關聯的導航屬性。 在表單資料模型中新增關聯時，可使用這些導覽屬性。 有關詳細資訊，請參閱[使用OData服務的導航屬性](#navigation-properties-odata)。
+   >除了資料模型對象和服務外，OData服務元資料文檔還包括定義兩個資料模型對象之間的關聯的導航屬性。 在表單資料模型中新增關聯時，可使用這些導覽屬性。 有關詳細資訊，請參閱[使用OData服務的導航屬性](#work-with-navigation-properties-of-odata-services)。
 
    將開啟「添加關聯」對話框。
 
