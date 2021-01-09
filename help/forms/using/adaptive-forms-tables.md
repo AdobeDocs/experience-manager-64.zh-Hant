@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ AEM Forms在元件瀏覽器的邊欄中提供「表格」元件，可讓您在�
 >[!NOTE]
 >
 >雖然您可以在表格中新增任意數量的列，但可新增的欄數上限為6。 此外，您也無法從表格中刪除標題列。
+
+### 設定表{#set-column-width}的列寬
+
+執行以下步驟以設定表的列寬：
+
+1. 在&#x200B;**[!UICONTROL Content]**&#x200B;標籤中，點選&#x200B;**[!UICONTROL Table]**&#x200B;元件並點選「設定」(![Configure](assets/configure-icon.svg))圖示。
+
+1. 在&#x200B;**[!UICONTROL 欄寬]**&#x200B;欄位中輸入值的逗號分隔清單，以指定表格中各欄的比例寬度。 例如，對於包含3列的表，在&#x200B;**[!UICONTROL 列寬]**&#x200B;欄位中指定2,4,6作為值會導致將列寬度設定為第一列的2/12、第二列的4/12和第三列的6/12。 「2/12」：第一列的寬度是指表寬度的六分之一。 同樣地，4/12將第二列寬度設定為表寬度的三分之一，6/12將第三列寬度設定為表寬度的一半。
 
 ### 添加表說明{#add-table-description}
 
