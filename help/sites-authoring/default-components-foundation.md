@@ -12,9 +12,9 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '6592'
+source-wordcount: '6670'
 ht-degree: 8%
 
 ---
@@ -337,6 +337,10 @@ ht-degree: 8%
 >[!CAUTION]
 >此Foundation元件已過時。 Adobe建議改用[核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
 
+>[!CAUTION]
+>
+>如果不進行廣泛的專案層級自訂，此元件不再需要立即可用。
+
 Flash元件可讓您載入Flash影片。 您可將Flash資產從內容搜尋器拖曳至元件，或使用對話方塊：
 
 * **閃光燈**
@@ -538,6 +542,10 @@ List元件允許您配置顯示清單的搜索標準：
 >[!CAUTION]
 >此Foundation元件已過時。 Adobe建議改用[核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
 
+>[!CAUTION]
+>
+>如果不進行廣泛的專案層級自訂，此元件不再需要立即可用。
+
 這些欄位提供「使用者名稱」和「密碼」欄位。
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
@@ -573,6 +581,10 @@ List元件允許您配置顯示清單的搜索標準：
       表示使用者已登入的文字。
 
 ### 訂單狀態 {#order-status}
+
+>[!CAUTION]
+>
+>如果不進行廣泛的專案層級自訂，此元件不再需要立即可用。
 
 * **標題**
 
@@ -711,6 +723,10 @@ List元件允許您配置顯示清單的搜索標準：
 >[!CAUTION]
 >此Foundation元件已過時。 Adobe建議改用[轉盤核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html)。
 
+>[!CAUTION]
+>
+>如果不進行廣泛的專案層級自訂，此元件不再需要立即可用。
+
 此元件可讓您載入一系列要在頁面上顯示為投影片的影像。您可以新增或移除影像，並為每個影像指派標題。 在「高級」(Advanced)下，還可以指定顯示區域的大小。
 
 您可以設定：
@@ -742,7 +758,7 @@ List元件允許您配置顯示清單的搜索標準：
 
 >[!NOTE]
 >
->**表**&#x200B;元件基於[富格文本編輯器](/help/sites-authoring/rich-text-editor.md),**[文本](#text)**&#x200B;元件也基於&lt;a2/>富格文本編輯器&lt;a3/>。
+>**表**&#x200B;元件基於[富格文本編輯器](/help/sites-authoring/rich-text-editor.md),**[文本](#text)**&#x200B;元件也基於富格文本編輯器。
 >
 >建議對表使用&#x200B;**Table**&#x200B;元件，但也可以使用&#x200B;**Text**&#x200B;元件來構建這些元件。
 
@@ -879,6 +895,10 @@ Text元件可讓您使用WYSIWYG編輯器輸入文字區塊，其功能由[Rich 
 ![dc_title_use](assets/dc_title_use.png)
 
 ### 影片 {#video}
+
+>[!CAUTION]
+>
+>如果不進行廣泛的專案層級自訂，此元件不再需要立即可用。
 
 **Video**&#x200B;元件可讓您將預先定義、現成可用的視訊元素置於頁面上。
 
@@ -1295,6 +1315,10 @@ Text元件可讓您使用WYSIWYG編輯器輸入文字區塊，其功能由[Rich 
 
 >[!CAUTION]
 >此Foundation元件已過時。 Adobe建議改用[核心元件](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)。
+
+>[!CAUTION]
+>
+>如果不進行廣泛的專案層級自訂，此元件不再需要立即可用。
 
 Captcha元件要求使用者輸入螢幕上顯示的英數字串。 字串會隨著每次重新整理而變更。
 
