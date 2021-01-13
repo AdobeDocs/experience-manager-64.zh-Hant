@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 [視訊元件](/help/sites-authoring/default-components-foundation.md#video)可讓您將預先定義的OOTB（現成可用）視訊元素置於頁面上。
 
 若要正確進行轉碼，您的管理員必須[安裝FFmpeg並個別設定AEM](#install-ffmpeg)。 您也可以[設定您的視訊描述檔](#configure-video-profiles)以搭配HTML5元素使用。
+
+>[!CAUTION]
+>
+>如果不進行廣泛的專案層級自訂，此元件不再需要立即可用。
 
 ## 配置視頻配置檔案{#configure-video-profiles}
 
