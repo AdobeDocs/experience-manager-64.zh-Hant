@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 0959d86c28ee6de7347922af706338f83fe400ef
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 1%
@@ -244,7 +244,7 @@ AEM元件的結構強大而有彈性，主要考量是：
    * 建議的顏色是rgb(112、112、112)> #707070
    * 標準元件圖示的背景是透明的。
    * 僅支援`.png`和`.svg`檔案。
-   * 如果透過Eclipse外掛程式從檔案系統匯入，則檔案名稱必須取代為`_cq_icon.png`或`_cq_icon.svg`。
+   * 如果透過Eclipse外掛程式從檔案系統匯入，檔案名稱需要逸出為`_cq_icon.png`或`_cq_icon.svg`。
    * `.png` 如果兩者 `.svg` 都存在，就先例
 
 
