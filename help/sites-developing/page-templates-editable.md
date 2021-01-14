@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
-source-wordcount: '3231'
+source-wordcount: '3298'
 ht-degree: 1%
 
 ---
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 建立可編輯的範本主要由範本作者使用[範本主控台和範本編輯器](/help/sites-authoring/templates.md)來完成。 本節概述此程式，並說明在技術層級發生的情況。
 
-如需如何在AEM專案中使用可編輯範本的詳細資訊，請參閱「使用Lazybones[建立AEM專案」。](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html)
+如需如何在AEM專案中使用可編輯範本的詳細資訊，請參閱「使用Lazybones](https://helpx.adobe.com/experience-manager/using/aem_lazybones.html)建立AEM專案」。[
 
 建立新的可編輯範本時：
 
@@ -84,7 +84,7 @@ ht-degree: 1%
 
    如需範本作者如何定義結構的詳細資訊，請參閱[建立頁面範本](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)。
 
-   有關結構的技術詳細資訊，請參閱本文檔中的[結構](/help/sites-developing/page-templates-editable.md#structure)。
+   如需結構的技術詳細資訊，請參閱本檔案中的[Structure](/help/sites-developing/page-templates-editable.md#structure)。
 
    **原則**
 
@@ -133,6 +133,16 @@ ht-degree: 1%
 
    如需有關使用可編輯範本建立頁面的技術詳細資訊，請參閱本檔案中的[結果內容頁面](/help/sites-developing/page-templates-editable.md#resultant-content-pages)。
 
+>[!TIP]
+>
+>切勿將任何需要國際化的資訊輸入到模板中。 為了內部化，建議使用核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
+
+>[!NOTE]
+>
+>範本是功能強大的工具，可簡化您的頁面建立工作流程。 不過，太多範本可能會讓作者感到不知所措，並讓頁面建立變得困惑。 一個很好的經驗法則是將範本數控制在100以下。
+>
+>Adobe不建議使用超過1000個範本，因為可能會影響效能。
+
 >[!NOTE]
 >
 >編輯器客戶端庫假定內容頁面中存在`cq.shared`命名空間，如果它不存在，將導致JavaScript錯誤`Uncaught TypeError: Cannot read property 'shared' of undefined`。
@@ -141,10 +151,6 @@ ht-degree: 1%
 >
 >如需詳細資訊，請參閱[使用用戶端程式庫](/help/sites-developing/clientlibs.md)。
 
->[!CAUTION]
->
->切勿在模板中輸入任何需要[國際化](/help/sites-developing/i18n.md)的資訊。
-
 ## 模板資料夾{#template-folders}
 
 若要組織範本，您可以使用下列資料夾：
@@ -152,7 +158,7 @@ ht-degree: 1%
 * **全域**
 * 特定網站
 
-   您為組織範本而建立的網站特定資料夾，是使用擁有管理員權限的帳戶建立。
+   您為組織範本而建立的網站特定資料夾，是使用擁有管理員權限的帳戶來建立。
 
 >[!NOTE]
 >
@@ -217,7 +223,7 @@ ht-degree: 1%
 
 1. 前往&#x200B;**全域導覽** -> **工具** > **組態瀏覽器**。
 
-   現有資料夾列在左側，包括&#x200B;**globa** l資料夾。
+   現有資料夾列在左側，包括&#x200B;**global**&#x200B;資料夾。
 
 1. 按一下&#x200B;**建立**。
 1. 在&#x200B;**建立配置**&#x200B;對話框中，需要配置以下欄位：
