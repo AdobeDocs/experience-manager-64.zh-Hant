@@ -3,21 +3,21 @@ title: 使用 Brand Portal 設定 AEM Assets
 description: '瞭解如何使用品牌入口網站設定AEM資產，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1692'
-ht-degree: 42%
+source-wordcount: '1647'
+ht-degree: 36%
 
 ---
 
 
 # 使用 Brand Portal 設定 AEM Assets {#configure-integration-64}
 
-Adobe Experience Manager (AEM) Assets 是透過 Adobe I/O 以 Brand Portal 設定，這種方式會取得 IMS Token 來使 Brand Portal 租用戶獲得授權。
+Adobe Experience Manager(AEM)Assets是透過[!DNL Adobe I/O]設定品牌入口網站，該網站會購買IMS Token以授權您的品牌入口網站租用戶。
 
 >[!NOTE]
 >
->AEM 6.4.8.0及更新版本支援透過Adobe I/O以品牌入口網站設定AEM資產。
+>AEM 6.4.8.0及更新版本支援透過[!DNL Adobe I/O]設定品牌入口網站的AEM資產。
 >
 >之前，品牌入口網站是透過舊版OAuth閘道在傳統使用者介面中設定，該閘道使用JWT代號交換來取得IMS存取代號以進行授權。
 
@@ -25,12 +25,12 @@ Adobe Experience Manager (AEM) Assets 是透過 Adobe I/O 以 Brand Portal 設�
 >
 >***僅限現有客戶***
 >
->建議您繼續使用現有的舊版OAuth閘道設定。 萬一您遇到舊版OAuth閘道設定的問題，請刪除現有的設定，並透過Adobe I/O建立新的設定。
+>建議您繼續使用現有的舊版OAuth閘道設定。 萬一您遇到舊版OAuth閘道設定的問題，請刪除現有的設定，並透過[!DNL Adobe I/O]建立新的設定。
 
 本說明說明下列兩個使用案例：
 
-* [新配置](#configure-new-integration-64):如果您是新的品牌入口網站使用者，並想要使用品牌入口網站設定您的AEM Assets作者例項，則可以在Adobe I/O上建立新的設定。
-* [升級配置](#upgrade-integration-64):如果您是現有的品牌入口網站使用者，且AEM Assets作者實例在舊版OAuth閘道上設定了品牌入口網站，建議您刪除現有的設定並在Adobe I/O上建立新的設定。
+* [新配置](#configure-new-integration-64):如果您是新的品牌入口網站使用者，並想要使用品牌入口網站設定您的AEM Assets作者例項，則可以在上建立新的設定 [!DNL Adobe I/O]。
+* [升級配置](#upgrade-integration-64):如果您是現有的品牌入口網站使用者，且AEM Assets作者例項在舊版OAuth閘道上設定有品牌入口網站，建議您刪除現有的設定並在上建立新的設定 [!DNL Adobe I/O]。
 
 提供的資訊基於以下假設：閱讀本「說明」的人熟悉下列技術：
 
@@ -73,7 +73,7 @@ Adobe Experience Manager (AEM) Assets 是透過 Adobe I/O 以 Brand Portal 設�
 如果您是第一次使用品牌入口網站設定AEM資產，請在所列順序中執行下列步驟：
 
 1. [取得公開憑證](#public-certificate)
-1. [建立 Adobe I/O 整合項目](#createnewintegration)
+1. [Createintegration( [!DNL Adobe I/O] 建立整合)](#createnewintegration)
 1. [建立 IMS 帳戶設定](#create-ims-account-configuration)
 1. [設定雲端服務](#configure-the-cloud-service)
 1. [測試設定](#test-integration)
@@ -93,7 +93,7 @@ IMS 設定包括兩個步驟：
 
 ### 取得公開憑證 {#public-certificate}
 
-公開憑證可讓您在 Adobe I/O 上驗證設定檔。
+公共證書允許您在[!DNL Adobe I/O]上驗證您的配置檔案。
 
 1. 登入您的AEM Assets作者實例
 預設URL:http:// localhost:4502/aem/start.html
@@ -117,7 +117,7 @@ IMS 設定包括兩個步驟：
 
    ![建立憑證](assets/ims-config2.png)
 
-1. 按一下&#x200B;**[!UICONTROL 下載公開金鑰]**，並將 *AEM-Adobe-IMS.crt* 憑證檔案儲存在電腦上。憑證檔案可用於[建立 Adobe I/O 整合項目](#createnewintegration)。
+1. 按一下&#x200B;**[!UICONTROL 下載公開金鑰]**，並將 *AEM-Adobe-IMS.crt* 憑證檔案儲存在電腦上。證書檔案用於[create [!DNL Adobe I/O] integration](#createnewintegration)。
 
    ![下載憑證](assets/ims-config3.png)
 
@@ -125,13 +125,13 @@ IMS 設定包括兩個步驟：
 
    您會在&#x200B;**帳戶**&#x200B;標籤中建立 Adobe IMS 帳戶，但需要整合詳細資訊才能完成。暫時保持此頁面開啟。
 
-   開啟新標籤和[建立Adobe I/O整合](#createnewintegration)，以取得IMS帳戶設定的整合詳細資訊。
+   開啟新標籤和[建立 [!DNL Adobe I/O] 整合](#createnewintegration)以取得IMS帳戶設定的整合詳細資訊。
 
-### 建立 Adobe I/O 整合項目 {#createnewintegration}
+### 建立[!DNL Adobe I/O]整合{#createnewintegration}
 
-Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 帳戶設定所需的裝載 (JWT)。
+[!DNL Adobe I/O] 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 帳戶設定所需的裝載 (JWT)。
 
-1. 以 Brand Portal 租用戶在 IMS 組織的系統管理員權限登入 Adobe I/O 控制台。
+1. 以系統管理員權限登入品牌入口網站租用戶的IMS組織，以[!DNL Adobe I/O]主控台。
 
    預設 URL：[https://console.adobe.io/](https://console.adobe.io/)
 
@@ -174,7 +174,7 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
 請確認您已執行下列步驟：
 
 * [取得公開憑證](#public-certificate)
-* [建立 Adobe I/O 整合項目](#createnewintegration)
+* [Createintegration( [!DNL Adobe I/O] 建立整合)](#createnewintegration)
 
 **建立 IMS 帳戶設定的步驟：**
 
@@ -184,7 +184,7 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
 
    在&#x200B;**[!UICONTROL 授權伺服器]**，輸入 URL：[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   貼上您在[建立 Adobe I/O 整合項目](#createnewintegration)結尾複製的 API 金鑰、用戶端密碼和 JWT 裝載。
+   在[Create [!DNL Adobe I/O] integration](#createnewintegration)結尾貼上您複製的API金鑰、用戶端密碼和JWT裝載。
 
    按一下&#x200B;**[!UICONTROL 建立]**。
 
@@ -335,7 +335,7 @@ Adobe I/O 整合項目會產生 API 金鑰、用戶端密碼，以及設定 IMS 
    ![](assets/delete-mac-user.png)
 
 
-您現在可以在Adobe I/O的AEM 6.4作者例項上，[建立configuration](#configure-new-integration-64)。
+您現在可以在[!DNL Adobe I/O]的AEM 6.4作者例項上，建立[configuration](#configure-new-integration-64)。
 
 
 
