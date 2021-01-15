@@ -10,10 +10,10 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: fa8e2d0612e6c7aaddb821352534bd9f6fc31076
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 5%
+source-wordcount: '1493'
+ht-degree: 6%
 
 ---
 
@@ -48,7 +48,7 @@ AEM包含超過100種動態媒體影像傳送指令，可用來調整和最佳�
 
 影像銳利化是控制網站上影像最複雜的方面，也是常有錯誤發生的地方。 請花點時間，參考下列實用資源，進一步瞭解銳利化和反銳利化遮色片在AEM中的運作方式：
 
-最佳實務白皮書[「在Adobe Scene7 Publishing System和Image Server](/help/assets/assets/s7_sharpening_images.pdf)中銳利化影像」也適用於AEM。
+最佳實務白皮書[「在Adobe Scene7 Publishing System和Image Server](/help/assets/assets/sharpening_images.pdf)中銳利化影像」也適用於AEM。
 
 另請參閱[使用非銳利遮色片銳利化影像](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
 
@@ -64,19 +64,18 @@ AEM包含超過100種動態媒體影像傳送指令，可用來調整和最佳�
       * **[!UICONTROL 金]** 額（0-5，效果強度）。
       * **[!UICONTROL 半徑]** （0-250,「銳利化線」在銳化物件周圍繪製的寬度，以像素為單位測量）。
 
-         請記住，參數半徑和量會相互作用。 減小半徑可以通過增加量來補償。 半徑允許更精細的控制，因為低值只會銳化邊緣像素，而高值會銳化更寬的像素帶。
+             請記住，參數半徑和量會相互作用。減小半徑可以通過增加量來補償。 半徑允許更精細的控制，因為低值僅銳化邊緣像素，而高值銳化更寬的像素帶。
+         * **[!UICONTROL 閾值]** （0-255，效果的靈敏度）。
 
-      * **[!UICONTROL 閾值]** （0-255，效果的靈敏度）。
+             此參數可決定銳化像素與周圍區域的差異程度，之後才會被視為邊緣像素，濾鏡會銳化這些像素。**[!UICONTROL threshold]**參數有助於避免色彩相似的區域過度銳利化，例如膚色。例如，閾值為12會忽略膚色亮度的微小變化，以避免加上「雜訊」，同時仍會加上邊緣對比度至高對比區域，例如睫毛與皮膚相遇的區域。
+         
+         如需如何設定這三個參數的詳細資訊，包括搭配篩選器使用的最佳實務，請參閱下列資源：
 
-         此參數可決定銳化像素與周圍區域的差異程度，之後才會被視為邊緣像素，濾鏡會銳化這些像素。**[!UICONTROL threshold]**&#x200B;參數有助於避免色彩相似的區域過度銳利化，例如膚色。 例如，閾值為12會忽略膚色亮度的微小變化，以避免加上「雜訊」，同時仍會加上邊緣對比度至高對比區域，例如睫毛與皮膚相遇的區域。
-      如需如何設定這三個參數的詳細資訊，包括搭配篩選器使用的最佳實務，請參閱下列資源：
+         「銳利化影像」的AEM說明主題。
 
-      「銳利化影像」的AEM說明主題。
+         最佳實務白皮書[在Adobe Scene7 Publishing System和影像伺服器上銳利化影像](/help/assets/assets/sharpening_images.pdf)。
 
-      最佳實務白皮書[在Adobe Scene7 Publishing System和影像伺服器上銳利化影像](/help/assets/assets/s7_sharpening_images.pdf)。
-
-   * AEM也可讓您控制第四個參數：單色(0,1)。 此參數確定是否使用值0將銳利化遮色片分別套用至每個顏色元件，或使用值1將遮色片套用至影像亮度／強度。
-
+      * AEM也可讓您控制第四個參數：單色(0,1)。 此參數確定是否使用值0將銳利化遮色片分別套用至每個顏色元件，或使用值1將遮色片套用至影像亮度／強度。
 
 最佳實務是，從遮色片銳度參數開始。 可以開始的半徑設定如下：
 
@@ -125,7 +124,6 @@ jpegSize是一個有用的參數，如果您想要確保影像不會超過特定
 
 在實驗時，您也會發現下列一般建議有助於最佳化工作流程：
 
-* 直接在URL上或使用Scene7 Publishing System的影像調整功能（提供調整作業的即時預覽），即時嘗試並測試不同的參數。
+* 直接在URL上即時嘗試並測試不同的參數。
 * 請記住，您可以將「動態媒體影像伺服」指令群組至影像預設集。 影像預設集基本上是具有自訂預設集名稱（例如`$thumb_low$`和`&product_high$`）的URL命令巨集。 URL路徑中的自訂預設集名稱會呼叫這些預設集。 這些功能可協助您管理網站上不同影像使用模式的命令和品質設定，並縮短URL的整體長度。
 * AEM也提供更進階的方式來調整影像品質，例如在擷取時套用銳利化影像。 若是進階使用案例，若您可以選擇進一步調整和最佳化演算結果，[Adobe專業服務](https://www.adobe.com/experience-cloud/consulting-services.html)可協助您取得自訂見解和最佳實務。
-
