@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '3851'
+source-wordcount: '3850'
 ht-degree: 7%
 
 ---
@@ -93,7 +93,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 在AEM Assets的背景中，�
 | dam:Physicalwidthininches | 檔案寬度（英吋）。 |
 | dam：物理高度英吋 | 檔案高度（英吋）。 |
 
-您可以透過&#x200B;]**DAM更新資產**[!UICONTROL &#x200B;工作流程存取「點陣化PDF/AI影像預覽轉譯&#x200B;**[!UICONTROL 」處理元件選項。]**
+您可以透過&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程存取「點陣化PDF/AI影像預覽轉譯&#x200B;]**」處理元件選項。**[!UICONTROL 
 
 點選左上角的Adobe Experience Manager，導覽至&#x200B;**[!UICONTROL 工具>工作流程>模型]**。 在「**[!UICONTROL 工作流模型]**」頁面上，選擇「**[!UICONTROL DAM更新資產]**」，然後在工具列上點選「**[!UICONTROL 編輯]**」。 在&#x200B;**[!UICONTROL 「DAM更新資產」工作流程]**&#x200B;頁面上，點選兩下「點陣化PDF/AI影像預覽轉譯&#x200B;]**」處理元件以開啟其**[!UICONTROL &#x200B;步驟屬性&#x200B;]**對話方塊。**[!UICONTROL 
 
@@ -380,11 +380,11 @@ Dynamic Media整合使用下列指令碼：
   </tr> 
   <tr> 
    <td><strong>銳利化文字</strong></td> 
-   <td><p>選擇「無」、「銳利化」或「銳利化」。<strong><strong><strong></strong></strong></strong> </p> 
+   <td><p>選擇「無」、「銳利化」或「銳利化」。<strong></strong><strong></strong><strong></strong> </p> 
     <ul> 
      <li>選擇<strong>無</strong>禁用銳利化。</li> 
      <li>選擇「銳化<strong></strong>」，在進行所有縮放後對影像應用基本銳化濾鏡。 銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 </li> 
-     <li>選擇「銳利化遮色片」(Unsharp mask)「銳利化遮色片」(A1/)，對最終縮減取樣的影像微調銳利化濾鏡效果。 </strong><strong>您可以控制效果的強度、效果半徑（以像素計量）以及將忽略的對比度臨界值。 此效果使用的選項與 Photoshop的「遮色片銳利化」濾鏡相同。</strong></li> 
+     <li>選擇「銳利化遮色片」(Unsharp mask)「銳利化遮色片」(A1/)，對最終縮減取樣的影像微調銳利化濾鏡效果。 <strong></strong>您可以控制效果的強度、效果半徑（以像素計量）以及將忽略的對比度臨界值。 此效果使用的選項與 Photoshop的「遮色片銳利化」濾鏡相同。</li> 
     </ul> <p>在<strong>銳利化遮色片</strong>中，您有下列選項：</p> 
     <ul> 
      <li><strong>量</strong> -控制套用至邊緣像素的對比度。預設實數值為1.0。對於高解析度的影像，您可將影像放大至高達5.0。將「量」視為濾鏡強度的度量。</li> 
@@ -394,7 +394,7 @@ Dynamic Media整合使用下列指令碼：
     </ul> 
     <div>
       銳利化說明於 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/s7_sharpening_images.pdf">銳利化影像</a>。 
+     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">銳利化影像</a>。 
     </div> </td> 
   </tr> 
   <tr> 
@@ -405,7 +405,7 @@ Dynamic Media整合使用下列指令碼：
      <li><strong>雙三次方</strong> -提高CPU使用量，但產生更銳利的影像，並減少明顯的鋸齒偽影。</li> 
      <li><strong>Sharp2</strong>  —— 產生比Bi-Cubic更銳利的結果，但CPU成本更高。</li> 
      <li><strong>Bi-Sharp</strong>  —— 選取Photoshop預設重新取樣器以減小影像大小，稱為 <strong>Adobe </strong> Photoshop的雙立方體銳利化器。</li> 
-     <li><strong>每個</strong> 顏色和 <strong>亮度</strong> -每個方法都可以基於顏色或亮度。預設情況下，選擇「每個顏色」。</strong><strong></strong></li> 
+     <li><strong>每個</strong> 顏色和 <strong>亮度</strong> -每個方法都可以基於顏色或亮度。預設情況下，選擇「每個顏色」。<strong></strong></li> 
     </ul> </td> 
   </tr> 
   <tr> 
