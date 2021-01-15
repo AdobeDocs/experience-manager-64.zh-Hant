@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1756'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN服務完全整合的�
 
 ## 智慧型影像處理是否有相關的授權成本？{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-否. Smart Imaging隨附於您現有的Dynamic Media Classic(Scene7)或AEM Dynamic Media（On Prem、AMS和AEM a Cloud Service）授權中。
+否. Smart Imaging隨附於您現有的Dynamic Media Classic或AEM Dynamic Media授權（On Prem、AMS和AEM as a Cloud Service）。
 
 >[!NOTE]
 >
@@ -165,12 +165,12 @@ Smart Imaging可與您現有的「影像預設集」搭配使用，並觀察您�
 
 ## 如何驗證智慧型影像是否如預期般運作？ {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. 在您的帳戶設定智慧型影像後，請在瀏覽器上載入Dynamic Media Classic(Scene7)/Dynamic Media影像URL。
+1. 在您的帳戶設定智慧型影像後，請在瀏覽器上載入Dynamic Media Classic/Dynamic Media影像URL。
 1. 在瀏覽器中按一下「**[!UICONTROL 檢視>開發人員>開發人員工具]**」，以開啟Chrome開發人員窗格。 或者，選擇您選擇的任何瀏覽器開發人員工具。
 
 1. 請確定開啟開發人員工具時已停用快取。
 
-   * 在Windows上——導覽至「開發人員工具」窗格中的設定，然後選取「停用快取（在開啟裝置工具時）」**[!UICONTROL 核取方塊。]**
+   * 在Windows上——導覽至「開發人員工具」窗格中的設定，然後選取「停用快取（在開啟裝置工具時）」]**核取方塊。**[!UICONTROL 
    * 在Mac上——在開發人員窗格的&#x200B;**[!UICONTROL Network]**&#x200B;標籤下，選擇&#x200B;**[!UICONTROL disable cache]**。
 
 1. 觀察「內容類型」已轉換為適當的格式。 下列螢幕擷取顯示在Chrome上動態轉換為WebP的PNG影像。
