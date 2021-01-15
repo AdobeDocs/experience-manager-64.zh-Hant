@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
-source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1567'
 ht-degree: 15%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 15%
 
 在背景中，智慧型內容服務使用Adobe Sensei的AI架構，針對您的標籤結構和商業分類訓練其影像識別演算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
 
-智慧型內容服務是Adobe I/O上代管的雲端服務。若要在Adobe Experience Manager(AEM)中使用它，系統管理員必須將您的AEM例項與Adobe IO整合。
+智慧型內容服務是位於[!DNL Adobe I/O]的雲端服務。 若要在Adobe Experience Manager(AEM)中使用它，系統管理員必須將您的AEM例項與[!DNL Adobe I/O]整合。
 
 總而言之，以下是使用智慧型內容服務的主要步驟：
 
@@ -44,14 +44,14 @@ ht-degree: 15%
 
 ## 必備條件 {#prerequisites}
 
-在您使用智慧型內容服務之前，請確定以下各項以建立Adobe I/O整合：
+在使用智慧型內容服務之前，請確定以下內容以在[!DNL Adobe I/O]上建立整合：
 
 * Adobe ID 帳戶具有組織的管理員權限。
 * 您的組織已啟用智慧型內容服務。
 
 ## 入門 {#onboarding}
 
-智慧型內容服務可以做為AEM的附加元件購買。 在您購買後，系統會寄送電子郵件給您組織的管理員，並附上Adobe IO的連結。
+智慧型內容服務可以做為AEM的附加元件購買。 購買後，系統會傳送電子郵件給您組織的管理員，並附上[!DNL Adobe I/O]的連結。
 
 管理員可依照連結來整合Smart Content Service與AEM。 若要將服務與AEM Assets整合，請參閱[設定智慧型標籤](config-smart-tagging.md)。
 
