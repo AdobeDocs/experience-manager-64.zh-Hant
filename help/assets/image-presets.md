@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '327'
 ht-degree: 9%
 
 ---
@@ -55,5 +55,5 @@ ht-degree: 9%
    >
    >如果資產和 *影像預設集尚未發佈* ，則 **[!UICONTROL URL按鈕(或]** URL **[!UICONTROL 和]****** RESS按鈕 (如果適用) 不可用。
    >
-   >另請注意，影像預設集會自動發佈在Dynamic Media S7伺服器上。
+   >另請注意，影像預設集會自動發佈在Dynamic Media伺服器上。
 
