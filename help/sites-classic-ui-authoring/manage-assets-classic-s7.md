@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '3428'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 在AEM傳統UI中，按一下「數位資產」**[!UICONTROL 以存取數位資產管理員。]**
 
-1. 從您要發佈至Dynamic Media Classic的目標資料夾中選取資產（或資產）或資料夾，然後按一下滑鼠右鍵，然後選取「發佈至Dynamic Media Classic」**[!UICONTROL 。]**&#x200B;或者，您也可以從&#x200B;**[!UICONTROL 工具]**&#x200B;選單選擇「發佈至動態媒體經典」。****
+1. 從您要發佈至Dynamic Media Classic的目標資料夾中選取資產（或資產）或資料夾，然後按一下滑鼠右鍵，然後選取「發佈至Dynamic Media Classic」]**。**[!UICONTROL &#x200B;或者，您也可以從&#x200B;**[!UICONTROL 工具]**&#x200B;選單選擇「發佈至動態媒體經典」。****
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
-1. 連結會變更為「發佈……」**[!UICONTROL ，然後]** Published **[!UICONTROL 。]**&#x200B;前往Dynamic Media Classic並確認資產已可用。
+1. 連結會變更為「發佈……」]**，然後**[!UICONTROL  Published ]**。**[!UICONTROL &#x200B;前往Dynamic Media Classic並確認資產已可用。
 
    >[!NOTE]
    >
@@ -115,11 +115,11 @@ Adobe建議您僅從Dynamic Media Classic目標資料夾中的資產，將資產
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
 1. 在網頁上，將Dynamic Media Classic(Scene7)元件新增至頁面上所需的位置。
-1. 從內容搜尋器，將數位資產拖曳至元件。 您會看到「檢查動態媒體經典出版物狀態&#x200B;**[!UICONTROL 」的連結。]**
+1. 從內容搜尋器，將數位資產拖曳至元件。 您會看到「檢查動態媒體經典出版物狀態&#x200B;]**」的連結。**[!UICONTROL 
 
    >[!NOTE]
    >
-   >如果數位資產位於CQ目標資料夾中，則不會顯示「檢查動態媒體經典出版物狀態&#x200B;**[!UICONTROL 」的連結。]**&#x200B;資產只會放在元件中。
+   >如果數位資產位於CQ目標資料夾中，則不會顯示「檢查動態媒體經典出版物狀態&#x200B;]**」的連結。**[!UICONTROL &#x200B;資產只會放在元件中。
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -240,7 +240,7 @@ Dynamic Media Classic Image元件可讓您將Dynamic Media Classic功能新增�
 
 **[!UICONTROL 輸出格式]** -選擇影像的輸出格式，例如jpeg。視您選擇的輸出格式而定，您可能會有其他設定選項。 請參閱[管理影像預設集](/help/assets/managing-image-presets.md)。
 
-**[!UICONTROL 銳利化]** -選擇影像銳利化的方式。銳利化在&#x200B;[*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices*](/help/assets/assets/s7_sharpening_images.pdf)&#x200B;中詳細說明。
+**[!UICONTROL 銳利化]** -選擇影像銳利化的方式。銳利化在&#x200B;[*Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices*](/help/assets/assets/sharpening_images.pdf)&#x200B;中詳細說明。
 
 **[!UICONTROL URL修飾元]** -您可以提供額外的Dynamic Media Classic影像指令來變更影像效果。這些說明在[管理影像預設集](/help/assets/managing-image-presets.md)和[命令參考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中。
 
