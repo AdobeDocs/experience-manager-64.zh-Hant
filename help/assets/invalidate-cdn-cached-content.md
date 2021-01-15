@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '672'
 ht-degree: 28%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 28%
 
 CDN會快取動態媒體資產，以便快速傳送。 不過，當您更新資產時，可能會希望這些變更立即生效。 停用CDN（內容傳送網路）快取內容可讓您快速更新由動態媒體傳送的資產，而不需等待快取過期。
 
-另請參閱Dynamic Media Classic(Scene7)[中的「快取概觀」。](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)
+另請參閱Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html)中的[快取概觀。
 
 **若要使CDN快取內容無效：**
 
-1. 登入您的Dynamic Media Classic(Scene7)帳戶：
+1. 登入您的Dynamic Media Classic案頭應用程式。
 
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+   [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)
 
    您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
 
@@ -44,7 +44,7 @@ CDN會快取動態媒體資產，以便快速傳送。 不過，當您更新資�
    如果範本僅包含`<ID>`，則動態媒體會填入`https://<server>/is/image`，其中`<server>`是「一般設定」中定義的發佈伺服器名稱，而&lt;ID>是選取無效的資產。
 
 1. 在頁面的右下角，按一下&#x200B;**[!UICONTROL 關閉]**。
-1. 在Dynamic Media Classic(Scene7)UI中，選取一或多個資產，然後按一下「檔案>使CDN失效」**[!UICONTROL 。]**&#x200B;您會看到一個清單，列出您所建立的範本和選取的資產所產生的一或多個URL。 它使用「應用程式一般設定」下「已發佈伺服器名稱」下所列的伺服器URL。
+1. 在Dynamic Media Classic案頭應用程式的使用者介面中，選取一或多個資產，然後按一下「檔案>使CDN失效」]**。**[!UICONTROL &#x200B;您會看到一個清單，列出您所建立的範本和選取的資產所產生的一或多個URL。 它使用「應用程式一般設定」下「已發佈伺服器名稱」下所列的伺服器URL。
 
    例如，在上一步驟中設定「CDN失效範本」時，假設您選取了名為`Backpack_B`的單一影像資產影像。 當您按一下「檔案>使CDN失效」時，會在「CDN失效」使用者介面中產生下列產生的URL:****
 
