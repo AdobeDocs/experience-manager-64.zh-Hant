@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: c2f190af-656e-4435-9f44-2698d41c4ad1
 translation-type: tm+mt
-source-git-commit: fb2567cdf5a0ae210270366899b49db256374f25
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1361'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 # 設定AEM Assets與Experience Cloud和Creative Cloud的整合{#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-如果您是Adobe Experience Cloud客戶，則可以將Adobe Experience Manager(AEM)Assets中的資產與Adobe Creative Cloud同步，反之亦然。 您也可以將資產與Experience Cloud同步，反之亦然。 您可以透過Adobe I/O設定此同步。
+如果您是Adobe Experience Cloud客戶，則可以將Adobe Experience Manager(AEM)Assets中的資產與Adobe Creative Cloud同步，反之亦然。 您也可以將資產與Experience Cloud同步，反之亦然。 可以通過[!DNL Adobe I/O]設定此同步。
 
 設定此整合的工作流程為：
 
-1. 使用公用閘道在Adobe I/O中建立驗證，並取得應用程式ID。
+1. 使用公用閘道在[!DNL Adobe I/O]中建立驗證，並取得應用程式ID。
 1. 使用應用程式ID在您的AEM Assets例項上建立描述檔。
 1. 使用此設定，將AEM Assets中的資產與Creative Cloud同步。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 1. 按一下您本機AEM Assets例項使用者介面上的AEM標誌，並導覽至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL 舊版雲端服務]**。
 
-1. 找到&#x200B;**[!UICONTROL Adobe Marketing Cloud]**&#x200B;服務。 如果不存在配置，請按一下「立即配置」。 ]****[!UICONTROL &#x200B;如果存在配置，請按一下「顯示配置」 **[!UICONTROL ，然後按一下「**[!UICONTROL [+]]**」添加新配置。]**
+1. 找到&#x200B;**[!UICONTROL Adobe Marketing Cloud]**&#x200B;服務。 如果不存在配置，請按一下「立即配置」。 ****&#x200B;如果存在配置，請按一下「顯示配置」 **[!UICONTROL ，然後按一下「**[!UICONTROL [+]]**」添加新配置。]**
 
    >[!NOTE]
    >
@@ -96,7 +96,7 @@ ht-degree: 0%
    1. 測試Mac-sync複製代理。
 
 
-1. 在&#x200B;**[!UICONTROL 客戶端ID]**&#x200B;欄位中，將您在[過程](/help/sites-administering/configure-assets-cc-integration.md#create-an-application)結束時複製的應用程式ID貼上到&lt;a2/>中。
+1. 在&#x200B;**[!UICONTROL 客戶端ID]**&#x200B;欄位中，將您在[過程](/help/sites-administering/configure-assets-cc-integration.md#create-an-application)結束時複製的應用程式ID貼上到中。
 
    ![提供整合AEM Assets和Creative Cloud所需的應用程式ID值](assets/cloudservices_tenant_info.png)
 
