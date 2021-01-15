@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '21621'
+source-wordcount: '21618'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 * 使用SOAP web service的表單資料模型整合現在支援元素上的選擇群組或屬性。
 
-* AEM Assets現在已透過Adobe I/O設定品牌入口網站。
+* AEM Assets現在已透過[!DNL Adobe I/O]設定品牌入口網站。
 
 * 將ContextHub中捆綁的jQuery版本更新為3.2.1。
 
@@ -147,7 +147,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 >[!NOTE]
 >
->AEM Service Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件[和](#install-aem-forms-add-on-package)安裝AEM Forms JEE安裝程式[」。](#install-aem-forms-jee-installer)
+>AEM Service Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件](#install-aem-forms-add-on-package)和[安裝AEM Forms JEE安裝程式](#install-aem-forms-jee-installer)」。[
 
 * 設計人員：如果啟用標籤選項，子表單邊框會消失在產生的PDF輸出中(NPR-32546、NPR-32322)。
 
@@ -186,8 +186,8 @@ AEM 6.4.7.0的一些主要亮點是：
 
 **產品增強功能**
 
-* `package com.day.cq.dam.handler.standard.msoffice`套件支援的API套件匯出版本已升級至6.0.0(CQ-4279059)。
-`dam-handler`如果您在自訂實作中使用`com.day.cq.dam.handler.standard.msoffice`套件，則建議您使用最新的uber jar來編譯`dam-handler`套件。
+* `dam-handler`套件支援的API套件匯出版本已升級至6.0.0(CQ-4279059)。
+`package com.day.cq.dam.handler.standard.msoffice`如果您在自訂實作中使用`com.day.cq.dam.handler.standard.msoffice`套件，則建議您使用最新的uber jar來編譯`dam-handler`套件。
 
 * 已在DAM清單檢視中新增可排序的建立日期新欄，並在清單檢視中新增資產搜尋結果(NPR-31311)。
 
@@ -321,7 +321,7 @@ AEM 6.4.7.0的一些主要亮點是：
 
 >[!NOTE]
 >
->AEM Service Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件[和](#install-aem-forms-add-on-package)安裝AEM Forms JEE安裝程式[」。](#install-aem-forms-jee-installer)
+>AEM Service Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件](#install-aem-forms-add-on-package)和[安裝AEM Forms JEE安裝程式](#install-aem-forms-jee-installer)」。[
 
 **Forms附加套件**
 
@@ -463,7 +463,7 @@ AEM 6.4.6.0的一些主要亮點是：
 
 >[!NOTE]
 >
->AEM Service Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件[和](#install-aem-forms-add-on-package)安裝AEM Forms JEE安裝程式[」。](#install-aem-forms-jee-installer)
+>AEM Service Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件](#install-aem-forms-add-on-package)和[安裝AEM Forms JEE安裝程式](#install-aem-forms-jee-installer)」。[
 
 **Forms附加套件**
 
@@ -522,7 +522,7 @@ AEM 6.4.5.0的一些主要亮點是：
 * 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.13版。
 * 已在品牌入口網站複製代理中新增通訊端逾時和連線逾時。
 * 全新搜尋增強功能——將搜尋結果的編頁限制提高至100頁。
-* 在AEM發佈例項上，預設已停用`AssetDownloadServlet` OSGi元件。 如需詳細資訊，請參閱「從AEM[下載資產」。](/help/assets/download-assets-from-aem.md)
+* 在AEM發佈例項上，預設已停用`AssetDownloadServlet` OSGi元件。 如需詳細資訊，請參閱「從AEM](/help/assets/download-assets-from-aem.md)下載資產」。[
 * 啟用資產的多網站管理員支援。 如需詳細資訊，請參閱[使用MSM為Assets](/help/assets/reuse-assets-using-msm.md)重複使用資產。
 
 **資產**
@@ -1270,7 +1270,7 @@ AEM 6.4.3.0表格的主要重點為：
 
 **隨附的功能套件**
 
-* 已啟用對具有動態實體替代的物件陣列／清單的支援。 NPR-26590:CQ-4254655的修補程式
+* 已啟用對具有動態實體替代的對象陣列／清單的支援。 NPR-26590:CQ-4254655的修補程式
 
 **隨附的OSGI組合和內容套件**
 
@@ -1294,7 +1294,7 @@ AEM 6.4.2.0的一些主要亮點是：
 * 已新增對MongoDB Enterprise 3.6的支援。
 * 「網站頁面編輯器」新增支援內容內容內容編輯和構圖，搭配<a href="../sites-developing/spa-walkthrough.md">AEM的SPA編輯器JS SDK</a>搭配使用React或Angular中建立的用戶端元件。
 * 內容片段增強功能：新增可在文字欄位中加上註解，以及並排比較版本的功能。
-* 已新增與Adobe Stock[的整合，讓使用者可以直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 ](/help/assets/aem-assets-adobe-stock.md)如需詳細資訊，請參閱[搭配使用Adobe Stock資產與AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)。
+* 已新增與Adobe Stock](/help/assets/aem-assets-adobe-stock.md)的整合，讓使用者可以直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 [如需詳細資訊，請參閱[搭配使用Adobe Stock資產與AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)。
 * 新增資產支援動態條件式中繼資料架構，以及為資產資料夾設定中繼資料架構的功能。
 * 在每個元件中新增設定，以啟用／停用資料夾縮圖建立／更新功能。
 * 網頁製作上的影像編輯器增強功能。
@@ -1408,7 +1408,7 @@ AEM 6.4.2.0的一些主要亮點是：
 * （社群論壇）分頁點按和頁面載入行為的問題。 NPR-24880:CQ-4246109的修補程式
 * (Chrome)社群事件的時區轉換失敗。 NPR-24881:CQ-4247115的修補程式
 * 無法在電子郵件中呈現內嵌物件。 NPR-24999:CQ-4248022的修補程式
-* 除了建立UGC外，UGC更新時還應執行自動協調序列。 NPR-25894:CQ-4251399的修補程式
+* 除了建立UGC外，UGC更新時還應執行自動協調序列。 NPR-25892:CQ-4251399的修補程式
 * 群組上的模態對話回應。 NPR-25623:CQ-4248805的修補程式
 * 刪除內容時拋出Solr異常。 NPR-25869:CQ-4248908的修補程式
 * 含有大量貼文之主題的已編頁連結無法用於「通知」。 NPR-25678:CQ-4243038的修補程式
@@ -1659,7 +1659,7 @@ AEM 6.4.2.0表格的主要重點為：
 
 **資產**
 
-* 已新增與Adobe Stock[的整合，讓使用者可以直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 ](/help/assets/aem-assets-adobe-stock.md)如需詳細資訊，請參閱[搭配AEM資產使用Adobe Stock資產](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)。 NPR-15779:CQ-30857的修補程式
+* 已新增與Adobe Stock](/help/assets/aem-assets-adobe-stock.md)的整合，讓使用者可以直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 [如需詳細資訊，請參閱[搭配AEM資產使用Adobe Stock資產](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)。 NPR-15779:CQ-30857的修補程式
 * 新增對動態條件式中繼架構的支援。 如需詳細資訊，請參閱[階層式中繼資料](/help/assets/cascading-metadata.md)。 NPR-25189:CQ-4237413的修補程式
 * 在內容片段上啟用「資產下載」選項。 如需詳細資訊，請參閱[資產報表](/help/assets/asset-reports.md)。 NPR-25186:CQ-4237410的修補程式
 * 能夠為資產資料夾設定元資料架構。 如需詳細資訊，請參閱[資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)，並參閱AEM 6.4.2.0安裝後的[組態設定](#configuration-settings-required-for-npr)。 NPR-21268:CQ-4221574的修補程式
