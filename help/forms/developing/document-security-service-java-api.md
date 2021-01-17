@@ -1,8 +1,8 @@
 ---
 title: Document Security Service JavaAPI快速入門(SOAP)
 seo-title: Document Security Service JavaAPI快速入門(SOAP)
-description: 'null'
-seo-description: 'null'
+description: '使用Rights管理服務Java API來建立原則、修改原則、刪除原則、套用原則至PDF檔案、從PDF檔案移除原則、撤銷檔案、重新建立對已撤銷檔案的存取權、檢查受原則保護的PDF檔案、建立浮水印、修改浮水印、搜尋事件，以及從Word檔案移除原則。 '
+seo-description: 使用Rights管理服務Java API來建立原則、修改原則、刪除原則、套用原則至PDF檔案、從PDF檔案移除原則、撤銷檔案、重新建立對已撤銷檔案的存取權、檢查受原則保護的PDF檔案、建立浮水印、修改浮水印、搜尋事件，以及從Word檔案移除原則。
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
