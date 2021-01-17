@@ -1,8 +1,8 @@
 ---
 title: Assembler Service Java API QuickStart(SOAP)
 seo-title: Assembler Service Java API QuickStart(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用Assembler服務來組合PDF檔案、反匯編PDF檔案、組合加密的PDF檔案、使用Bates編號來組合PDF檔案、組合非互動式PDF檔案、判斷檔案是否符合PDF/A規範、驗證DDX檔案、使用書籤來組合PDF檔案、動態建立DX檔案、組合PDF資料夾以及組合多個XDP片段……
+seo-description: 使用Assembler服務來組合PDF檔案、反匯編PDF檔案、組合加密的PDF檔案、使用Bates編號來組合PDF檔案、組合非互動式PDF檔案、判斷檔案是否符合PDF/A規範、驗證DDX檔案、使用書籤來組合PDF檔案、動態建立DX檔案、組合PDF資料夾以及組合多個XDP片段……
 uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1122'
 ht-degree: 0%
 
 ---
