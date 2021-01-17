@@ -1,8 +1,8 @@
 ---
 title: 檔案管理服務（已過時）Java API快速入門(SOAP)
 seo-title: 檔案管理服務（已過時）Java API快速入門(SOAP)
-description: 'null'
-seo-description: 'null'
+description: 使用Document Management Service Java API可以建立Content Services空間、刪除Content Services空間、將內容新增至Content Services、從Content Services擷取內容、移動Content Services內容、列出Content Services內容、搜尋Content Services內容並設定Content Services權限。
+seo-description: 使用Document Management Service Java API可以建立Content Services空間、刪除Content Services空間、將內容新增至Content Services、從Content Services擷取內容、移動Content Services內容、列出Content Services內容、搜尋Content Services內容並設定Content Services權限。
 uuid: 967c282a-ccde-4489-a4d5-53c6a1a0cac0
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
