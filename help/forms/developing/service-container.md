@@ -1,8 +1,8 @@
 ---
 title: 服務容器
 seo-title: 服務容器
-description: 'null'
-seo-description: 'null'
+description: 進一步瞭解服務容器的功能。 此外，文章也說明您以程式設計方式叫用AEM Forms服務的不同方式。
+seo-description: 進一步瞭解服務容器的功能。 此外，文章也說明您以程式設計方式叫用AEM Forms服務的不同方式。
 uuid: 89f2fd3d-63d7-4b70-b335-47314441f3ec
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 0%
 * 將調用請求路由到適當的服務（要調用的服務的名稱是調用請求的一部分）。
 * 執行任務，例如確定呼叫者是否具有調用指定服務操作的權限。 呼叫請求必須包含有效的AEM表單使用者名稱和密碼。
 
-   向服務發送調用請求有不同的方法。 此外，傳送所需輸入值至服務的方式也不同。 例如，假設您使用Java API來叫用需要PDF檔案的服務。 對應的Java方法包含接受PDF檔案的參數。 在這種情況下，參數的資料類型為`com.adobe.idp.Document`。 （請參閱「使用Java API[將資料傳送至AEM Forms服務」）。](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+   向服務發送調用請求有不同的方法。 此外，傳送所需輸入值至服務的方式也不同。 例如，假設您使用Java API來叫用需要PDF檔案的服務。 對應的Java方法包含接受PDF檔案的參數。 在這種情況下，參數的資料類型為`com.adobe.idp.Document`。 （請參閱「使用Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)將資料傳送至AEM Forms服務」）。[
 
    如果您使用監視資料夾調用服務，則在將檔案放置到已配置的監視資料夾中時，將發送調用請求。 如果您使用電子郵件叫用服務，則當電子郵件訊息送達已設定的收件匣時，會將呼叫請求傳送至服務。
 
