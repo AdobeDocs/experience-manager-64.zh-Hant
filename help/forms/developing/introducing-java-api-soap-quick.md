@@ -1,8 +1,8 @@
 ---
 title: Java API QuickStart簡介
 seo-title: Java API QuickStart簡介
-description: 'null'
-seo-description: 'null'
+description: Java API快速入門程式可協助您加速開發與AEM Forms服務互動的程式。 您可以從專案中的Java API快速入門程式做為起點，並加以自訂。
+seo-description: Java API快速入門程式可協助您加速開發與AEM Forms服務互動的程式。 您可以從專案中的Java API快速入門程式做為起點，並加以自訂。
 uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ JAR檔案清單位於「快速啟動」開頭的注釋部分。 例如，以下�
 
 ## 多服務快速入門{#multiple-services-quick-start}
 
-位於*「使用AEM Forms進行程式設計」*中的「大部分快速入門」會呼叫特定服務，以執行作業。 不過，有些「快速入門」會叫用多個AEM Forms服務，以執行指定的工作流程。 下列清單提供叫用多個AEM Forms服務的Java快速入門：
+位於&#x200B;*「使用AEM Forms*&#x200B;進行程式設計」中的「大多數快速入門」會呼叫特定服務，以執行作業。 不過，有些「快速入門」會叫用多個AEM Forms服務，以執行指定的工作流程。 下列清單提供叫用多個AEM Forms服務的Java快速入門：
 
 [快速入門（SOAP模式）:使用Java API將AEM Forms Repository中的檔案傳遞至Output服務](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) （叫用Repository and Output服務）
 
