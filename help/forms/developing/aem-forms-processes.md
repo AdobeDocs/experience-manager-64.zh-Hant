@@ -1,8 +1,8 @@
 ---
 title: 瞭解AEM Forms流程
 seo-title: 瞭解AEM Forms流程
-description: 'null'
-seo-description: 'null'
+description: 瞭解如何使用AEM Forms商業程式來自動化營運。 啟動程式以建立服務，讓您像叫用其他服務一樣叫用它。 流程可以是短期的或長期的。
+seo-description: 瞭解如何使用AEM Forms商業程式來自動化營運。 啟動程式以建立服務，讓您像叫用其他服務一樣叫用它。 流程可以是短期的或長期的。
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
