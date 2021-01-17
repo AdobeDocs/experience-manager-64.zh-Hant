@@ -1,17 +1,17 @@
 ---
 title: 'OSGi和AEM Forms JEE工作流程中表單導向AEM工作流程的動作和功能 '
 seo-title: 'OSGi和AEM Forms JEE工作流程中表單導向AEM工作流程的動作和功能 '
-description: 'null'
-seo-description: 'null'
+description: 進一步瞭解AEM Inbox和HTML Workspace支援的動作差異、OSGi和AEM Forms JEE Workflows支援的表單導向AEM Workflows功能差異，以及AEM Inbox和AEM Forms應用程式功能之間的差異。
+seo-description: 進一步瞭解AEM Inbox和HTML Workspace支援的動作差異、OSGi和AEM Forms JEE Workflows支援的表單導向AEM Workflows功能差異，以及AEM Inbox和AEM Forms應用程式功能之間的差異。
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 19%
+source-wordcount: '931'
+ht-degree: 18%
 
 ---
 
