@@ -10,10 +10,10 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '10502'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 >
 >在您在Dynamic Media中處理視訊之前，請確定您的AEM管理員已啟用並設定Dynamic Media Cloud服務。
 >
->* 請參閱「設定動態媒體——混合模式」中的「設定動態媒體雲端服務」。[](/help/assets/config-dynamic.md)
+>* 請參閱「設定動態媒體——混合模式」中的「設定動態媒體雲端服務」。](/help/assets/config-dynamic.md)[
 >* 請參閱[設定動態媒體- Scene7模式](config-dms7.md)和[疑難排解動態媒體- Scene7模式](troubleshoot-dms7.md)
 
 >
@@ -534,7 +534,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 >[!CAUTION]
 >
->請確定您已在YouTube &amp;ast;before&amp;ast；中設定了一個或多個頻道您可在「AEM中的YouTube設定」下方新增頻道（請參閱下方的「AEM[中的「設定YouTube」）。 ](#setting-up-youtube-in-aem)如果您未能這麼做，則不會收到任何警告，告知您沒有現有渠道。 不過，當您新增頻道時仍會發生Google驗證，但無法選擇視訊傳送的頻道。
+>請確定您已在YouTube &amp;ast;before&amp;ast；中設定了一個或多個頻道您可在「AEM中的YouTube設定」下方新增頻道（請參閱下方的「AEM](#setting-up-youtube-in-aem)中的「設定YouTube」）。 [如果您未能這麼做，則不會收到任何警告，告知您沒有現有渠道。 不過，當您新增頻道時仍會發生Google驗證，但無法選擇視訊傳送的頻道。
 
 **若要建立YouTube頻道**:
 
@@ -554,7 +554,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 若要將影片發佈至YouTube,AEM會將標籤關聯至一或多個YouTube頻道。 若要新增發佈標籤，請參閱[管理標籤](/help/sites-administering/tags.md)。
 
-或者，如果您想在AEM中使用預設標籤，則可略過此工作並前往「啟用YouTube Publish複製代理[」。](#enabling-the-youtube-publish-replication-agent)
+或者，如果您想在AEM中使用預設標籤，則可略過此工作並前往「啟用YouTube Publish複製代理](#enabling-the-youtube-publish-replication-agent)」。[
 
 ### 啟用YouTube Publish複製代理{#enabling-the-youtube-publish-replication-agent}
 
@@ -630,7 +630,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
       將複製的值貼入開啟的文字編輯器中。 當您稍後建立中繼資料處理設定檔時，將需要此值。 讓文字編輯器保持開啟。
 
-   * 在&#x200B;**[!UICONTROL 映射到屬性]**&#x200B;文本欄位中，選擇並複製值。
+   * 在&#x200B;**[!UICONTROL 映射至屬性]**&#x200B;文字欄位中，選取並複製值。
 
       將複製的值貼入開啟的文字編輯器中。 當您稍後建立中繼資料處理設定檔時，將需要此值。 讓文字編輯器保持開啟。
 
@@ -714,7 +714,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 發佈時間會因許多因素而大幅不同，這些因素包括主視訊格式、檔案大小和上傳流量。 發佈程式需要幾分鐘到幾個小時。 此外，請注意，解析度較高的格式轉譯速度會慢得多。 例如，720p和1080p的顯示時間比480p長得多。
 
-在8小時後，如果您仍然看到狀態訊息顯示「已上傳」（正在處理，請稍候）**[!UICONTROL ，請嘗試將視訊從我們的網站移除，然後再次上傳。]**
+在8小時後，如果您仍然看到狀態訊息顯示「已上傳」（正在處理，請稍候）]**，請嘗試將視訊從我們的網站移除，然後再次上傳。**[!UICONTROL 
 
 ### 將YouTube URL連結至您的Web應用程式{#linking-youtube-urls-to-your-web-application}
 
@@ -842,8 +842,8 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 * 若是YouTube發佈工作，請執行下列動作：
 
 1. 在AEM中，選取「**[!UICONTROL 工具>工作流程>模型]**」。
-1. 選取「發佈至YouTube **[!UICONTROL 」工作流程，然後點選「編輯]** a3/>」。****
-1. 以滑鼠右鍵按一下「YouTube上傳&#x200B;**[!UICONTROL 」工作流程步驟，然後點選「編輯]** a3/>」。****
+1. 選取「發佈至YouTube ]**」工作流程，然後點選「編輯**[!UICONTROL  a3/>」。****
+1. 以滑鼠右鍵按一下「YouTube上傳&#x200B;]**」工作流程步驟，然後點選「編輯**[!UICONTROL  a3/>」。****
 1. 點選&#x200B;**[!UICONTROL 參數]s**&#x200B;標籤。
 1. 您可以選取或清除下列核取方塊：
 
@@ -901,19 +901,13 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 1. 在列出熱門發佈影片的表格中，點選影片名稱以播放影片，並檢視影片的觀眾保留（下拉式）報表。
 
-### 根據您使用Scene7 HMTL5檢視器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}建立的視訊檢視器來檢視視訊報表
+### 根據您使用HTML5檢視器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}建立的視訊檢視器來檢視視訊報表
 
-如果您使用動態媒體提供的現成可用的視訊檢視器，或是您根據現成可用的視訊檢視器建立自訂的檢視器預設集，則不需執行其他步驟即可檢視視訊報表。 不過，如果您已根據Scene7 HTML5檢視器SDK建立自己的視訊檢視器，請使用下列步驟來確保您的視訊檢視器將追蹤事件傳送至動態媒體視訊報表。
+如果您使用動態媒體提供的現成可用的視訊檢視器，或是您根據現成可用的視訊檢視器建立自訂的檢視器預設集，則不需執行其他步驟即可檢視視訊報表。 不過，如果您已根據HTML5檢視器SDK API建立自己的視訊檢視器，請使用下列步驟來確保您的視訊檢視器將追蹤事件傳送至動態媒體視訊報表。
 
-使用Scene7檢視器參考和Scene7 HTML5檢視器SDK來建立您自己的視訊檢視器。
+使用[Adobe Dynamic Media Viewers Reference Guide](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)和[HTML5 Viewer SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)建立您自己的視訊檢視器。
 
-請參閱[Scene7檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
-
-從Adobe Developer Connection下載Scene7 HTML Viewer SDK。
-
-請參閱[Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)。
-
-若要根據您使用Scene7 HTML5檢視器SDK建立的視訊檢視器來檢視視訊報表：
+若要根據您使用HTML5檢視器SDK API建立的視訊檢視器來檢視視訊報表：
 
 1. 導覽至任何已發佈的視訊資產。
 1. 在資產頁面的左上角附近，從下拉式清單中選取「檢 **[!UICONTROL 視器]**」。
@@ -940,7 +934,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 1. 執行下列動作，以建立TrackingManager元件：
 
-   * 呼叫`s7sdk.Utils.init();`後，新增下列項目以建立TrackingManager例項以追蹤事件：
+   * 呼叫`s7sdk.Util.init();`後，新增下列項目以建立TrackingManager例項以追蹤事件：
 
       `var trackingManager = new s7sdk.TrackingManager();`
 
@@ -1037,7 +1031,7 @@ Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式�
 >
 >使用的視訊播放器必須支援章節標籤的使用。 動態媒體視訊播放器確實支援章節標籤，但使用協力廠商視訊播放器可能不支援。
 
-視需要，您可以建立自訂的視訊檢視器並加上章節，而不是使用視訊檢視器預設集。 有關使用章節導覽建立您自己的HTML5檢視器的指示，請參閱「Adobe Scene7 Viewer SDK for HTML5」指南中`s7sdk.video.VideoPlayer`和`s7sdk.video.VideoScrubber`類別下的「使用修飾詞自訂行為」標題。 Adobe Scene7 Viewer SDK可從[Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)下載。
+視需要，您可以建立自訂的視訊檢視器並加上章節，而不是使用視訊檢視器預設集。 有關使用章節導覽建立您自己的HTML5檢視器的指示，請在Adobe HTML5檢視器SDK API中，參考`s7sdk.video.VideoPlayer`和`s7sdk.video.VideoScrubber`類別下的「使用修飾詞自訂行為」標題。 請參閱[HTML5檢視器SDK API]((https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html))檔案。
 
 您建立視訊的章節清單的方式與建立標題的方式大致相同。 即，建立WebVTT檔案。 但是，請注意，此檔案必須與您也可能使用的任何WebVTT標題檔案分開；您無法將標題和章節結合為一個WebVTT檔案。
 
