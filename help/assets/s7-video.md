@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1681'
 ht-degree: 1%
 
 ---
@@ -95,7 +95,7 @@ Scene7 Video元件支援下列格式：
 
 ## 更新檢視器和編碼預設集{#updating-viewer-and-encoding-presets}
 
-如果您因為Scene7中已更新預設集，所以需要更新AEM中視訊的檢視器和編碼預設集，請導覽至雲端設定中的Scene7設定，然後按一下「更新檢視器和編碼預設集」**[!UICONTROL 。]**
+如果您因為Scene7中已更新預設集，所以需要更新AEM中視訊的檢視器和編碼預設集，請導覽至雲端設定中的Scene7設定，然後按一下「更新檢視器和編碼預設集」]**。**[!UICONTROL 
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -137,7 +137,7 @@ Scene7視訊元件僅適用於Scene7視訊。 基礎元件可處理從AEM（使�
 | 方法 | HTML5的第一種方式。 Flash僅用於非HTML5後援。 | 大部份的桌上型電腦都可使用Flash。 HTML5適用於行動裝置和平板電腦。 |
 | 傳送 | 漸進式 | 最適化串流 |
 | 追蹤 | 是 | 是 |
-| 擴充性 | 是 | 是（使用Scene7檢視器SDK） |
+| 擴充性 | 是 | 是（使用[HTML5檢視器SDK API檔案](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)） |
 | 行動視訊 | 是 | 是 |
 
 ### 設定{#setting-up}
