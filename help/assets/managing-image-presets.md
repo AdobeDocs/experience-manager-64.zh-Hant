@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
 workflow-type: tm+mt
-source-wordcount: '3841'
+source-wordcount: '3849'
 ht-degree: 7%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->當您在資產的「檢視」中選取「**[!UICONTROL 詳細資料]**」「轉譯」時，系統會顯示多種轉譯。 ****&#x200B;您可以增加或減少顯示的影像預設集數目。 請參閱[增加顯示](#increasing-or-decreasing-the-number-of-image-presets-that-display)的影像預設集數目。
+>當您在資產的「檢視」中選取「**[!UICONTROL 詳細資訊]**」「轉譯」時，系統會顯示多種轉譯。 ****&#x200B;您可以增加或減少顯示的影像預設集數目。 請參閱[增加顯示](#increasing-or-decreasing-the-number-of-image-presets-that-display)的影像預設集數目。
 
 ### Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式{#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
@@ -391,7 +391,8 @@ Dynamic Media整合使用下列指令碼：
      <li><strong>套用至</strong> -判斷未銳利化套用至每種顏色或亮度。</li>
     </ul>
     <div>
-      銳利化在* Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>中有說明。
+      銳利化說明於  
+     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>。
     </div> </td>
   </tr>
   <tr>
@@ -474,7 +475,7 @@ Dynamic Media整合使用下列指令碼：
    opac=50
    ```
 
-   ![chlimage_1-503](assets/chlimage_1-503.png)
+   ![chlimage_1-505](assets/chlimage_1-503.png)
 
 ## 編輯影像預設集{#modifying-image-presets}
 
