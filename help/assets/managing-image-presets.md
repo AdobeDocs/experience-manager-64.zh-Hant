@@ -1,17 +1,15 @@
 ---
 title: 管理動態媒體影像預設集
 description: 瞭解動態媒體影像預設集，並瞭解如何建立、修改及管理影像預設集
-uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3850'
+source-wordcount: '3841'
 ht-degree: 7%
 
 ---
@@ -106,31 +104,31 @@ Adobe Illustrator的檔案格式是PDF的變體。 在AEM Assets的背景中，�
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>進程參數</strong></td> 
-   <td><strong>預設設定</strong></td> 
-   <td><strong>說明</strong></td> 
+   <td><strong>進程參數</strong></td>
+   <td><strong>預設設定</strong></td>
+   <td><strong>說明</strong></td>
   </tr> 
   <tr> 
-   <td>Mime 類型</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td> 
-   <td>被視為PDF或Illustrator檔案的檔案MIME類型清單。<br /> </td> 
+   <td>Mime 類型</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br/> </p> </td>
+   <td>被視為PDF或Illustrator檔案的檔案MIME類型清單。<br/> </td>
   </tr> 
   <tr> 
-   <td>寬度上限</td> 
-   <td>二零四八年</td> 
-   <td>產生的預覽轉譯的最大寬度（像素）。<br /> </td> 
+   <td>寬度上限</td>
+   <td>二零四八年</td>
+   <td>產生的預覽轉譯的最大寬度（像素）。<br/> </td>
   </tr> 
   <tr> 
-   <td>高度上限</td> 
-   <td>二零四八年</td> 
-   <td>產生的預覽轉譯的最高高度（以像素為單位）。<br /> </td> 
+   <td>高度上限</td>
+   <td>二零四八年</td>
+   <td>產生的預覽轉譯的最高高度（以像素為單位）。<br/> </td>
   </tr> 
   <tr> 
-   <td>解析度</td> 
-   <td>72</td> 
-   <td>解析度，以ppi為單位點陣化第一頁（每英吋像素）。</td> 
-  </tr> 
- </tbody> 
+   <td>解析度</td>
+   <td>72</td>
+   <td>解析度，以ppi為單位點陣化第一頁（每英吋像素）。</td>
+  </tr>
+ </tbody>
 </table>
 
 使用預設的處理引數，PDF/AI檔案的第一頁點陣化為72 ppi，而產生的預覽影像大小為2048 x 2048像素。 對於一般部署，您可能想要將解析度提高至至少150 ppi或以上。 例如，美國字母大小為300 ppi的檔案要求最大寬度和高度分別為2550 x 3300像素。
@@ -158,24 +156,24 @@ Dynamic Media整合使用下列指令碼：
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>擴充指令碼名稱</strong></td> 
-   <td><strong>預設</strong></td> 
-   <td><strong>說明</strong></td> 
+   <td><strong>擴充指令碼名稱</strong></td>
+   <td><strong>預設</strong></td>
+   <td><strong>說明</strong></td>
   </tr> 
   <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>是</td> 
-   <td>產生300 ppi <code>thumbnail.jpg</code>轉譯，並由<code>Dynamic Media Process Image Assets</code>處理元件最佳化並轉換為PTIFF轉譯。<br /> </td> 
+   <td>ThumbnailExport.jsx</td>
+   <td>是</td>
+   <td>產生300 ppi <code>thumbnail.jpg</code>轉譯，並由<code>Dynamic Media Process Image Assets</code>處理元件最佳化並轉換為PTIFF轉譯。<br/> </td>
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>是</td> 
-   <td>為每個頁面產生300 ppi的JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 此外，還通過<code>DAM Update Asset</code>工作流程對其進行優化並轉換為PTIFF。<br /> </td> 
+   <td>為每個頁面產生300 ppi的JPEG子資產。 JPEG子資產是儲存在InDesign資產下的實際資產。 此外，還通過<code>DAM Update Asset</code>工作流程對其進行優化並轉換為PTIFF。<br/> </td>
   </tr> 
   <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>否</td> 
-   <td>為每個頁面產生PDF子資產。 PDF子資產會如前所述處理。 由於PDF僅包含單一頁面，因此不會產生子資產。<br /> </td> 
+   <td>PDFPagesExport.jsx</td>
+   <td>否</td>
+   <td>為每個頁面產生PDF子資產。 PDF子資產會如前所述處理。 由於PDF僅包含單一頁面，因此不會產生子資產。<br/> </td>
   </tr> 
  </tbody> 
 </table>
@@ -297,136 +295,135 @@ Dynamic Media整合使用下列指令碼：
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>欄位</strong></td> 
-   <td><strong>說明</strong></td> 
+   <td><strong>欄位</strong></td>
+   <td><strong>說明</strong></td>
   </tr> 
   <tr> 
-   <td><strong>名稱</strong></td> 
-   <td>輸入不含空格的描述性名稱。在名稱中加入影像大小規格可幫助使用者識別此影像預設集。</td> 
+   <td><strong>名稱</strong></td>
+   <td>輸入不含空格的描述性名稱。在名稱中加入影像大小規格可幫助使用者識別此影像預設集。</td>
+  </tr>
+  <tr> 
+   <td><strong>寬度和高度</strong></td>
+   <td>以像素輸入影像傳送的大小。 寬度和高度必須大於0像素。 如果其中一個值為0，則不會建立預設。 如果這兩個值都為空，則建立自適應影像預設。</td>
   </tr> 
   <tr> 
-   <td><strong>寬度和高度</strong></td> 
-   <td>以像素輸入影像傳送的大小。 寬度和高度必須大於0像素。 如果其中一個值為0，則不會建立預設。 如果這兩個值都為空，則建立自適應影像預設。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>格式</strong></td> 
-   <td><p>從功能表選擇格式。</p> <p>選擇<strong>JPEG</strong>提供下列其他選項：</p> 
+   <td><strong>格式</strong></td>
+   <td><p>從功能表選擇格式。</p> <p>選擇<strong>JPEG</strong>提供下列其他選項：</p>
     <ul> 
      <li><strong>品質</strong> -控制JPEG壓縮等級。此設定會影響檔案大小和影像品質。 JPEG品質等級為1-100。 拖曳滑桿時，可看到縮放。</li> 
-     <li><strong>啟用JPG色度縮減取樣</strong> -由於眼睛對高頻色彩資訊的敏感度低於高頻亮度，因此JPEG影像會將影像資訊分為明度和色彩元件。當JPEG影像被壓縮時，亮度分量保留為全解析度，而顏色分量通過平均一組像素被縮減採樣。 縮減取樣可將資料量減少一半或三分之一，幾乎不會影響感知的品質。 縮減取樣不適用於灰階影像。 此技術可降低對高對比度影像（例如具有覆蓋文字的影像）有用的壓縮量。</li> 
+     <li><strong>啟用JPG色度縮減取樣</strong> -由於眼睛對高頻色彩資訊的敏感度低於高頻亮度，因此JPEG影像會將影像資訊分為明度和色彩元件。當JPEG影像被壓縮時，亮度分量保留為全解析度，而顏色分量通過平均一組像素被縮減採樣。 縮減取樣可將資料量減少一半或三分之一，幾乎不會影響感知的品質。 縮減取樣不適用於灰階影像。 此技術可降低對高對比度影像（例如具有覆蓋文字的影像）有用的壓縮量。</li>
+    </ul>
+    <div>
+      選擇
+     <strong>GIF</strong>或
+     <strong>含alpha</strong>的GIF提供這些額外的
+     <strong>GIF色彩量化</strong>選項：
+    </div>
+    <ul> 
+     <li><strong>鍵 </strong>入——選 <strong>擇Adaptive</strong> （預設）、 <strong>Web</strong>或 <strong>Macintosh</strong>。如果選擇<strong>GIF with Alpha</strong>，則Macintosh選項不可用。</li>
+     <li><strong>混色</strong> -選擇「 <strong></strong> 混色」 <strong>或「關」</strong>。</li>
+     <li><strong>顏色數 </strong>-輸入2到256之間的數字。</li>
+     <li><strong>顏色清單</strong> -輸入逗號分隔的清單。例如，對於白色、灰色和黑色，請輸入000000,888888,ffffff。</li>
     </ul> 
     <div>
-      選擇 
-     <strong>GIF</strong>或 
-     <strong>含alpha</strong>的GIF提供這些額外的 
-     <strong>GIF色彩量化</strong>選項： 
-    </div> 
-    <ul> 
-     <li><strong>鍵 </strong>入——選 <strong>擇Adaptive</strong> （預設）、 <strong>Web</strong>或 <strong>Macintosh</strong>。如果選擇<strong>GIF with Alpha</strong>，則Macintosh選項不可用。</li> 
-     <li><strong>混色</strong> -選擇「 <strong></strong> 混色」 <strong>或「關」</strong>。</li> 
-     <li><strong>顏色數 </strong>-輸入2到256之間的數字。</li> 
-     <li><strong>顏色清單</strong> -輸入逗號分隔的清單。例如，對於白色、灰色和黑色，請輸入000000,888888,ffffff。</li> 
-    </ul> 
-    <div>
-      選擇 
-     <strong>PDF</strong>, 
-     <strong>TIFF</strong>或 
-     <strong>含alpha</strong>的TIFF提供下列額外選項： 
-    </div> 
-    <ul> 
-     <li><strong>壓縮</strong> -選擇壓縮算法。PDF的演算法選項為<strong>None</strong>、<strong>Zip</strong>和<strong>Jpeg</strong>;對於TIFF為<strong>None</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>和<strong>Zip</strong>;而含Alpha的TIFF為<strong>None</strong>、<strong>LZW</strong>和<strong>Zip</strong>。</li> 
-    </ul> <p>選擇<strong>PNG</strong>、<strong>PNG with Alpha、</strong>或<strong>EPS</strong>不提供其他選項。</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>銳利化</strong></td> 
-   <td>選擇「啟用簡單銳利化」<strong>選項，在進行所有縮放後，將基本銳利化濾鏡套用至影像。銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。</strong> </td> 
-  </tr> 
- </tbody> 
+      選擇
+     <strong>PDF</strong>,
+     <strong>TIFF</strong>或
+     <strong>含alpha</strong>的TIFF提供下列額外選項：
+    </div>
+    <ul>
+     <li><strong>壓縮</strong> -選擇壓縮算法。PDF的演算法選項為<strong>None</strong>、<strong>Zip</strong>和<strong>Jpeg</strong>;對於TIFF為<strong>None</strong>、<strong>LZW</strong>、<strong>Jpeg</strong>和<strong>Zip</strong>;而含Alpha的TIFF為<strong>None</strong>、<strong>LZW</strong>和<strong>Zip</strong>。</li>
+    </ul> <p>選擇<strong>PNG</strong>、<strong>PNG with Alpha、</strong>或<strong>EPS</strong>不提供其他選項。</p> </td>
+  </tr>
+  <tr>
+   <td><strong>銳利化</strong></td>
+   <td>選擇「啟用簡單銳利化」<strong>選項，在進行所有縮放後，將基本銳利化濾鏡套用至影像。銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。</strong> </td>
+  </tr>
+ </tbody>
 </table>
 
 #### 進階標籤選項{#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>欄位</strong></td> 
-   <td><strong>說明</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>色域</strong></td> 
-   <td>選擇<strong>RGB、CMYK、</strong>或<strong>灰階</strong>做為色域。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>色彩設定檔</strong></td> 
-   <td>如果資產與使用中的描述檔不同，請選取該資產應轉換的輸出色域描述檔。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>渲染方法</strong></td> 
-   <td>您可以覆寫預設的演算方式。 演算方式會決定無法在目標色彩描述檔（溢色）中重制的色彩會如何。 如果「渲染方式」與ICC配置檔案不相容，則會忽略它。 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>欄位</strong></td>
+   <td><strong>說明</strong></td>
+  </tr>
+  <tr>
+   <td><strong>色域</strong></td>
+   <td>選擇<strong>RGB、CMYK、</strong>或<strong>灰階</strong>做為色域。</td>
+  </tr>
+  <tr>
+   <td><strong>色彩設定檔</strong></td>
+   <td>如果資產與使用中的描述檔不同，請選取該資產應轉換的輸出色域描述檔。</td>
+  </tr>
+  <tr>
+   <td><strong>渲染方法</strong></td>
+   <td>您可以覆寫預設的演算方式。 演算方式會決定無法在目標色彩描述檔（溢色）中重制的色彩會如何。 如果「渲染方式」與ICC配置檔案不相容，則會忽略它。
     <ul> 
-     <li>選擇<strong>「感知</strong>」，當原始影像中的一個或多個顏色超出目標色域的色域時，將總色域從一個色域壓縮到另一個色域。</li> 
-     <li>當當前顏色空間中的顏色超出目標顏色空間的色域時，選擇<strong>相對比色</strong>，並希望將其映射到目標顏色空間的色域內最接近的顏色，而不影響任何其他顏色。 </li> 
-     <li>選擇<strong>飽和度</strong>以在轉換到目標顏色空間時重制原始影像顏色飽和度。 </li> 
-     <li>選擇<strong>絕對比色</strong>以完全匹配顏色，而不對會改變影像亮度的白點或黑點進行調整。</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>黑點補償</strong></td> 
-   <td>如果輸出配置檔案支援此功能，請選擇此選項。 如果黑點補償與指定的ICC配置檔案不相容，則忽略它。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>正在遞色</strong></td> 
-   <td>選取這個選項可能會避免或減少色帶不自然。 </td> 
-  </tr> 
-  <tr> 
-   <td><strong>銳利化文字</strong></td> 
-   <td><p>選擇「無」、「銳利化」或「銳利化」。<strong></strong><strong></strong><strong></strong> </p> 
+     <li>選擇<strong>「感知</strong>」，當原始影像中的一個或多個顏色超出目標色域的色域時，將總色域從一個色域壓縮到另一個色域。</li>
+     <li>當當前顏色空間中的顏色超出目標顏色空間的色域時，選擇<strong>相對比色</strong>，並希望將其映射到目標顏色空間的色域內最接近的顏色，而不影響任何其他顏色。 </li>
+     <li>選擇<strong>飽和度</strong>以在轉換到目標顏色空間時重制原始影像顏色飽和度。 </li>
+     <li>選擇<strong>絕對比色</strong>以完全匹配顏色，而不對會改變影像亮度的白點或黑點進行調整。</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>黑點補償</strong></td>
+   <td>如果輸出配置檔案支援此功能，請選擇此選項。 如果黑點補償與指定的ICC配置檔案不相容，則忽略它。</td>
+  </tr>
+  <tr>
+   <td><strong>正在遞色</strong></td>
+   <td>選取這個選項可能會避免或減少色帶不自然。 </td>
+  </tr>
+  <tr>
+   <td><strong>銳利化文字</strong></td>
+   <td><p>選擇「無」、「銳利化」或「銳利化」。<strong></strong><strong></strong><strong></strong> </p>
+    <ul>
+     <li>選擇<strong>無</strong>禁用銳利化。</li>
+     <li>選擇「銳化<strong></strong>」，在進行所有縮放後對影像應用基本銳化濾鏡。 銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 </li>
+     <li>選擇「銳利化遮色片」(Unsharp mask)「銳利化遮色片」(A1/)，對最終縮減取樣的影像微調銳利化濾鏡效果。 <strong></strong>您可以控制效果的強度、效果半徑（以像素計量）以及將忽略的對比度臨界值。 此效果使用的選項與 Photoshop的「遮色片銳利化」濾鏡相同。</li>
+    </ul> <p>在<strong>銳利化遮色片</strong>中，您有下列選項：</p>
     <ul> 
-     <li>選擇<strong>無</strong>禁用銳利化。</li> 
-     <li>選擇「銳化<strong></strong>」，在進行所有縮放後對影像應用基本銳化濾鏡。 銳利化有助於補償以不同大小顯示影像時可能產生的模糊性。 </li> 
-     <li>選擇「銳利化遮色片」(Unsharp mask)「銳利化遮色片」(A1/)，對最終縮減取樣的影像微調銳利化濾鏡效果。 <strong></strong>您可以控制效果的強度、效果半徑（以像素計量）以及將忽略的對比度臨界值。 此效果使用的選項與 Photoshop的「遮色片銳利化」濾鏡相同。</li> 
-    </ul> <p>在<strong>銳利化遮色片</strong>中，您有下列選項：</p> 
-    <ul> 
-     <li><strong>量</strong> -控制套用至邊緣像素的對比度。預設實數值為1.0。對於高解析度的影像，您可將影像放大至高達5.0。將「量」視為濾鏡強度的度量。</li> 
-     <li><strong>半徑</strong> -決定影響銳利化的邊緣像素周圍的像素數。對於高解析度影像，請輸入1到2的實數。 低值只會銳化邊緣像素；高值會銳化更寬的像素帶。 正確值取決於影像的大小。</li> 
-     <li><strong>閾值</strong> -決定套用非銳利遮色片濾鏡時要忽略的對比範圍。換言之，此選項可決定銳化的像素在被視為邊緣像素並銳化之前，必須與周圍區域有多大差異。 為避免引入雜訊，請嘗試2到20之間的整數值。 </li> 
-     <li><strong>套用至</strong> -判斷未銳利化套用至每種顏色或亮度。</li> 
-    </ul> 
+     <li><strong>量</strong> -控制套用至邊緣像素的對比度。預設實數值為1.0。對於高解析度的影像，您可將影像放大至高達5.0。將「量」視為濾鏡強度的度量。</li>
+     <li><strong>半徑</strong> -決定影響銳利化的邊緣像素周圍的像素數。對於高解析度影像，請輸入1到2的實數。 低值只會銳化邊緣像素；高值會銳化更寬的像素帶。 正確值取決於影像的大小。</li>
+     <li><strong>閾值</strong> -決定套用非銳利遮色片濾鏡時要忽略的對比範圍。換言之，此選項可決定銳化的像素在被視為邊緣像素並銳化之前，必須與周圍區域有多大差異。 為避免引入雜訊，請嘗試2到20之間的整數值。 </li>
+     <li><strong>套用至</strong> -判斷未銳利化套用至每種顏色或亮度。</li>
+    </ul>
     <div>
-      銳利化說明於 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">銳利化影像</a>。 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>重新取樣模式</strong></td> 
-   <td>選擇<strong>重新取樣模式</strong>選項。 這些選項會在縮減取樣時銳利化影像： 
-    <ul> 
-     <li><strong>雙線性</strong> -最快的重新取樣方法。有些鋸齒不自然現象會很明顯。</li> 
-     <li><strong>雙三次方</strong> -提高CPU使用量，但產生更銳利的影像，並減少明顯的鋸齒偽影。</li> 
-     <li><strong>Sharp2</strong>  —— 產生比Bi-Cubic更銳利的結果，但CPU成本更高。</li> 
-     <li><strong>Bi-Sharp</strong>  —— 選取Photoshop預設重新取樣器以減小影像大小，稱為 <strong>Adobe </strong> Photoshop的雙立方體銳利化器。</li> 
-     <li><strong>每個</strong> 顏色和 <strong>亮度</strong> -每個方法都可以基於顏色或亮度。預設情況下，選擇「每個顏色」。<strong></strong></li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>列印解析度</strong></td> 
-   <td>選擇打印此影像的解析度；預設值為72像素。</td> 
-  </tr> 
-  <tr> 
-   <td><strong>影像修飾元</strong></td> 
-   <td><p>除了UI中的常用影像設定外，動態媒體還支援許多進階影像修改，您可在<strong>影像修飾元</strong>欄位中指定。 這些參數在<a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Image Server Protocol命令參考</a>中定義。</p> <p>重要：不支援API中列出的下列功能：</p> 
-    <ul> 
-     <li>基本範本和文字轉換指令：<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li> 
-     <li>本地化命令：<code>locale=</code>和 <code>req=xlate</code></li> 
-     <li><code>req=set</code> 無法用於一般用途。</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>非核心動態媒體服務：SVG、影像轉換和網路印刷</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      銳利化在* Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices</a>中有說明。
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>重新取樣模式</strong></td>
+   <td>選擇<strong>重新取樣模式</strong>選項。 這些選項會在縮減取樣時銳利化影像：
+    <ul>
+     <li><strong>雙線性</strong> -最快的重新取樣方法。有些鋸齒不自然現象會很明顯。</li>
+     <li><strong>雙三次方</strong> -提高CPU使用量，但產生更銳利的影像，並減少明顯的鋸齒偽影。</li>
+     <li><strong>Sharp2</strong>  —— 產生比Bi-Cubic更銳利的結果，但CPU成本更高。</li>
+     <li><strong>Bi-Sharp</strong>  —— 選取Photoshop預設重新取樣器以減小影像大小，稱為 <strong>Adobe </strong> Photoshop的雙立方體銳利化器。</li>
+     <li><strong>每個</strong> 顏色和 <strong>亮度</strong> -每個方法都可以基於顏色或亮度。預設情況下，選擇「每個顏色」。<strong></strong></li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>列印解析度</strong></td>
+   <td>選擇打印此影像的解析度；預設值為72像素。</td>
+  </tr>
+  <tr>
+   <td><strong>影像修飾元</strong></td>
+   <td><p>除了UI中的常用影像設定外，動態媒體還支援許多進階影像修改，您可在<strong>影像修飾元</strong>欄位中指定。 這些參數在<a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">Image Server Protocol命令參考</a>中定義。</p> <p>重要：不支援API中列出的下列功能：</p>
+    <ul>
+     <li>基本範本和文字轉換指令：<code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
+     <li>本地化命令：<code>locale=</code>和 <code>req=xlate</code></li>
+     <li><code>req=set</code> 無法用於一般用途。</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>非核心動態媒體服務：SVG、影像轉換和網路印刷</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## 使用影像修飾元{#defining-image-preset-options-with-image-modifiers}定義影像預設集選項
@@ -508,9 +505,6 @@ Dynamic Media整合使用下列指令碼：
 
 ## 刪除動態媒體影像預設集{#deleting-image-presets}
 
-**若要刪除動態媒體影像預設集**:
-
 1. 在AEM中，點選AEM標誌以存取全域導覽主控台。
 1. 點選「**[!UICONTROL 工具]**」圖示，然後導覽至「**[!UICONTROL 資產>影像預設集]**」。
 1. 選取預設集，然後點選&#x200B;**[!UICONTROL Delete]**。 動態媒體會確認您要刪除它。 點選&#x200B;**[!UICONTROL Delete]**。
-
