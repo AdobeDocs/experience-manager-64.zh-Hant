@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '4247'
+source-wordcount: '4248'
 ht-degree: 10%
 
 ---
@@ -23,12 +23,12 @@ ht-degree: 10%
 
 動態媒體檢視器預設集是一組設定，可決定使用者在電腦螢幕和行動裝置上檢視多媒體資產的方式。 如果您是管理員，則可以建立檢視器預設集。 設定適用於檢視器設定選項的陣列。 例如，您可以變更檢視器的顯示大小或縮放行為。
 
-如需建立和自訂您自己HTML5檢視器預設集的指示，請參閱&#x200B;*Adobe Scene7 HTML5檢視器SDK*。 SDK可在內嵌於SDK本身的IS發佈伺服器上使用。 每個資料庫版本都包含其專屬的SDK檔案。
+如需建立和自訂您自己HTML5檢視器預設集的指示，請參閱Adobe Dynamic Media *HTML5檢視器SDK API檔案*。 SDK可在內嵌於SDK本身的IS發佈伺服器上使用。 每個資料庫版本都包含其專屬的SDK檔案。
 
 路徑: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
-例如，3.5 SDK:[https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.5/docs/jsdoc/index.html)
+例如，3.10 SDK:[https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-另請參閱[Adobe檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)。
+另請參閱[Adobe Dynamic Media Viewers參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
 
 本節說明如何建立、編輯和管理檢視器預設集。 您可以隨時預覽資產，將檢視器預設套用至資產。 請參閱[套用檢視器預設集](viewer-presets.md)。
 
@@ -40,7 +40,7 @@ ht-degree: 10%
 
 所有立即可用的檢視器都支援鍵盤協助功能。
 
-另請參閱[鍵盤存取和導覽](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+另請參閱[鍵盤存取和導覽](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## 管理動態媒體檢視器預設集{#managing-presets}
 
