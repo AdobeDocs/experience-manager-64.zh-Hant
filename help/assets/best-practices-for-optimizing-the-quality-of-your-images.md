@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
+source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1463'
+ht-degree: 6%
 
 ---
 
@@ -42,7 +42,7 @@ AEM包含超過100種動態媒體影像傳送指令，可用來調整和最佳�
 
 ## 影像銳利化的最佳範例{#best-practices-for-image-sharpening}
 
-<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
+影像銳利化是控制網站上影像最複雜的方面，也是常有錯誤發生的地方。 請花點時間進一步瞭解銳利化和銳利化遮色片在AEM中的運作方式，請參考適用於AEM的[Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf)指南。
 
 另請參閱[使用非銳利遮色片銳利化影像](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
 
@@ -64,7 +64,7 @@ AEM包含超過100種動態媒體影像傳送指令，可用來調整和最佳�
 
              此參數可決定銳化像素與周圍區域的差異程度，之後才會被視為邊緣像素，濾鏡會銳化這些像素。**[!UICONTROL threshold]**參數有助於避免色彩相似的區域過度銳利化，例如膚色。例如，閾值為12會忽略膚色亮度的微小變化，以避免加上「雜訊」，同時仍會加上邊緣對比度至高對比區域，例如睫毛與皮膚相遇的區域。
          
-         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+         如需如何設定這三個參數的詳細資訊，包括要搭配濾鏡使用的最佳實務，請參閱[《Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices》(A1/)指南（也適用於AEM上的Dynamic Media）。](/help/assets/assets/sharpening_images.pdf)
    * AEM也可讓您控制第四個參數：單色(0,1)。 此參數確定是否使用值0將銳利化遮色片分別套用至每個顏色元件，或使用值1將遮色片套用至影像亮度／強度。
 
 
