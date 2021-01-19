@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '2894'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -189,8 +189,8 @@ inYou can set a sasset from to open a link.設定**[!UICONTROL URL]**，並在&#
 * **[!UICONTROL 輸出]**
 格式選擇影像的輸出格式，例如jpeg。視您選擇的輸出格式而定，您可能會有其他設定選項。 請參閱[影像預設集最佳範例](/help/assets/managing-image-presets.md#image-preset-options)。
 
-* **[!UICONTROL 銳]**
-利化選取影像銳利化的方式。銳利化在[影像預設集最佳實務](/help/assets/managing-image-presets.md#image-preset-options)和[銳利化最佳實務](/help/assets/assets/sharpening_images.pdf)中詳細說明。
+<!-- * **[!UICONTROL Sharpening]**
+Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/sharpening_images.pdf). -->
 
 * **[!UICONTROL URL修]**
 飾元您可以提供額外的Dynamic Media Classic影像指令來變更影像效果。這些說明在[影像預設集](/help/assets/managing-image-presets.md)和[命令參考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中。
