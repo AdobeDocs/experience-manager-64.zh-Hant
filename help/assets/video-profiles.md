@@ -1,19 +1,15 @@
 ---
 title: 動態媒體視訊設定檔
-seo-title: 動態媒體視訊設定檔
-description: '動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 '
-seo-description: '動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 '
-uuid: cfb498f8-44a0-4d94-99b0-fed7c27f575b
+description: '動態媒體隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，可為客戶提供最佳的視訊觀賞體驗。 '
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: b893f366-279a-4872-9413-77626d3387ea
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '3100'
-ht-degree: 16%
+source-wordcount: '3068'
+ht-degree: 17%
 
 ---
 
@@ -200,7 +196,7 @@ ht-degree: 16%
    * 重複步驟5-10以建立其他編碼預設集。
    * 在頁面的右上角，點選「儲存 **** 」以儲存描述檔。
 
-## 使用自訂新增的視訊編碼參數{#using-custom-added-video-encoding-parameters}
+## 使用自訂新增的視訊編碼參數 {#using-custom-added-video-encoding-parameters}
 
 您可以編輯現有的視訊編碼設定檔，以利用在AEM中建立或編輯視訊設定檔時，使用者介面中找不到的進階視訊編碼參數。 您可自訂新增一或多個進階參數——例如&#x200B;**[!UICONTROL minBitrate]**&#x200B;和&#x200B;**[!UICONTROL maxBitrate]**-至您現有的描述檔。
 
@@ -270,7 +266,7 @@ ht-degree: 16%
 
 您可以編輯您建立的任何視訊編碼描述檔，以新增、編輯或刪除該描述檔中的視訊預設集。
 
-依預設，您無法編輯動態媒體隨附的預先定義、現成可用的「最適化視訊編碼」描述檔。 ]****[!UICONTROL &#x200B;您可以輕鬆地複製描述檔，並使用新名稱加以儲存。 然後，您可以在複製的描述檔中編輯所需的預設集。
+依預設，您無法編輯動態媒體隨附的預先定義、現成可用的「最適化視訊編碼」描述檔。 ****&#x200B;您可以輕鬆地複製描述檔，並使用新名稱加以儲存。 然後，您可以在複製的描述檔中編輯所需的預設集。
 
 另請參閱[視訊編碼的最佳實務](video.md#best-practices-for-encoding-videos)。
 
