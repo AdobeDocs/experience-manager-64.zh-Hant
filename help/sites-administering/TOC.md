@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 管理使用指南
 breadcrumb-title: Administering 指南
 user-guide-description: 了解 AEM 的管理事項。
 translation-type: tm+mt
-source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 10%
+source-wordcount: '623'
+ht-degree: 14%
 
 ---
 
@@ -54,7 +54,7 @@ ht-degree: 10%
    + [疑難排解AEM](troubleshoot.md)
    + [AEM 6中的稽核記錄維護](operations-audit-log.md)
    + [編輯者](enable-classic-ui-editor.md)
-   + [管理對工作流程的存取](workflows-managing.md)
+   + [管理工作流程存取權](workflows-managing.md)
    + [搭配AEM使用cURL](curl.md)
    + [設定頁面編輯的還原](config-undo.md)
    + [代理伺服器工具(proxy.jar)](proxy-jar.md)
@@ -63,10 +63,10 @@ ht-degree: 10%
    + [設定搜尋表單](search-forms.md)
    + [工具主控台](tools-consoles.md)
    + [報告](reporting.md)
-   + [管理工作流實例](workflows-administering.md)
+   + [管理工作流程例項](workflows-administering.md)
    + [設定版面容器和版面模式](configuring-responsive-layout.md)
    + [啟用對傳統UI的訪問](enable-classic-ui.md)
-   + [啟動工作流程](workflows-starting.md)
+   + [開始工作流程](workflows-starting.md)
    + [設定Rich Text Editor外掛程式](configure-rich-text-editor-plug-ins.md)
    + [管理控制台](enable-classic-ui-admin.md)
 + 安全性 {#security}
@@ -84,7 +84,7 @@ ht-degree: 10%
    + [單一登入](/help/sites-deploying/single-sign-on.md)
    + [如何在AEM中審核使用者管理作業](audit-user-management-operations.md)
    + [SSL預設值](ssl-by-default.md)
-   + [SAML 2.0驗證處理常式](saml-2-0-authenticationhandler.md)
+   + [SAML 2.0 驗證處理常式](saml-2-0-authenticationhandler.md)
    + [AEM中的已關閉使用者群組](closed-user-groups.md)
    + [Granite Operations —— 使用者與群組管理](granite-user-group-admin.md)
    + [在AEM中啟用CRXDE Lite](enabling-crxde-lite.md)
@@ -103,7 +103,7 @@ ht-degree: 10%
    + [設定區段](campaign-segmentation.md)
    + [擴充及設定著陸頁面的Design Importer](extending-the-design-importer-for-landingpages.md)
    + [整合著陸頁面與Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
-+ 電子商務{#ecommerce}
++ 電子商務 {#ecommerce}
    + [電子商務](ecommerce.md)
    + [概念](concepts.md)
    + [管理一般電子商務](generic.md)
@@ -111,11 +111,11 @@ ht-degree: 10%
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
    + [AEM商務- GDPR就緒性](gdpr-compliance-commerce.md)
-+ 整合{#integration}
++ 整合 {#integration}
    + [與第三方服務整合](third-party-services.md)
    + [與Salesforce整合](salesforce.md)
    + [整合 Adobe Target](target.md)
-   + [與Livefyre整合](livefyre.md)
+   + [與 Livefyre 整合](livefyre.md)
    + [整合 Adobe Analytics](adobeanalytics.md)
    + [連線至Adobe Analytics和建立架構](adobeanalytics-connect.md)
    + [設定Adobe Analytics的連結追蹤](adobeanalytics-link.md)
@@ -135,8 +135,8 @@ ht-degree: 10%
    + [與Adobe動態標籤管理整合](dtm.md)
    + [選擇使用Adobe Analytics和Adobe Target](opt-in.md)
    + [AEM入口網站和Portlet](aem-as-portal.md)
-   + [與Dynamic Media Classic整合(Scene7)](scene7.md)
-   + [AEM Livefyre Recipes](aem-livefyre-recipes.md)
+   + [與Dynamic Media Classic整合](scene7.md)
+   + [AEM Livefyre 指導方針](aem-livefyre-recipes.md)
    + [疑難排解整合問題](troubleshooting-integration-issues.md)
    + [與BrightEdge Content Optimizer整合](brightedge.md)
    + [電子郵件範本的最佳做法](best-practices-for-email-templates.md)
