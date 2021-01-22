@@ -1,18 +1,14 @@
 ---
 title: 全景影像
-seo-title: 全景影像
-description: 瞭解如何在動態媒體中處理全景影像。
-seo-description: 瞭解如何在動態媒體中處理全景影像。
-uuid: dfd7a55c-7bcc-4d62-8c3a-a73726881103
+Description: Learn how to work with panoramic images in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '573'
 ht-degree: 4%
 
 ---
@@ -46,7 +42,7 @@ ht-degree: 4%
 
 若要讓全景影像檢視器在AEM中正常運作，您必須將全景影像檢視器預設集與Dynamic Media Classic和Dynamic Media Classic特定中繼資料同步化，如此檢視器預設集就會在JCR中更新。 若要完成此作業，請依下列方式設定Dynamic Media Classic:
 
-1. [請登入每個公司帳戶的動](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 態媒體類別例項。
+1. [登入您每個公司帳戶的Dynamic Media Classic桌](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) 面應用程式。
 
 1. 在頁面的右上角附近，按一下「設定>應用程式設定>發佈設定>影像伺服器」。****
 1. 在&#x200B;**[!UICONTROL 影像伺服器發佈]**&#x200B;頁面上，從頂端附近的&#x200B;**[!UICONTROL 發佈內容]**&#x200B;下拉式選單中，選取&#x200B;**[!UICONTROL 影像伺服]**。
@@ -63,7 +59,7 @@ ht-degree: 4%
 1. 在&#x200B;**[請求屬性]**&#x200B;標題下，執行下列動作：
 
    * 將「請求模糊化模式」設為「已停用」。********
-   * 將「請求鎖定模式」**[!UICONTROL 設定為「已禁用」]**。****
+   * 將「請求鎖定模式」**[!UICONTROL 設定為「已禁用」]**。]****[!UICONTROL 
 
    在AEM中使用&#x200B;**[!UICONTROL Panoramic Media]**&#x200B;元件時，必須進行這些設定。
 
@@ -75,7 +71,7 @@ ht-degree: 4%
 
 如果您將影像放入WCM的&#x200B;**[!UICONTROL 全景媒體]**&#x200B;元件中，而元件預留位置已收合，您可能會想要疑難排解：
 
-* 如果您遇到403 Forbidden錯誤，可能是由於要求的影像大小過大所致。 檢閱[設定動態媒體經典(Scene7)](#configuring-dynamic-media-classic-scene)中的&#x200B;*回覆影像大小限制*&#x200B;設定。
+* 如果您遇到403 Forbidden錯誤，可能是由於要求的影像大小過大所致。 查看[配置動態媒體經典](#configuring-dynamic-media-classic-scene)中的&#x200B;*回覆影像大小限制*&#x200B;設定。
 
 * 對於資產上的&#x200B;*無效鎖定*&#x200B;或頁面上顯示的&#x200B;*剖析錯誤*，請勾選&#x200B;**[!UICONTROL 請求模糊化模式]**&#x200B;和&#x200B;**[!UICONTROL 請求鎖定模式]**&#x200B;以確保它們已停用。
 * 對於受污染的畫布錯誤，請為影像資產的先前請求設定&#x200B;**[!UICONTROL 規則集定義檔案路徑並使CTN]**&#x200B;無效。
