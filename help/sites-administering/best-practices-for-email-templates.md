@@ -1,18 +1,14 @@
 ---
 title: 電子郵件範本的最佳做法
-seo-title: 電子郵件範本的最佳做法
-description: 尋找在AEM中建立電子郵件範本的最佳實務。
-seo-description: 尋找在AEM中建立電子郵件範本的最佳實務。
-uuid: 714090bd-a742-4004-a968-aebd8fd03e04
+description: 在Adobe Experience Manager中尋找有關電子郵件設計的最佳範例，以建立完備的電子郵件宣傳範本。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
-discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1053'
 ht-degree: 1%
 
 ---
@@ -150,7 +146,7 @@ AEM隨附數個範本和元件，讓您建立促銷活動電子報。 您可以�
 | 文字和個人化 | /libs/mcm/campaign/components/personalization |
 | 文字貼文 | /libs/mcm/campaign/components/textimage |
 | 連結 | /libs/mcm/campaign/components/reference |
-| Scene7 影像範本 | /libs/mcm/campaign/s7image |
+| Dynamic Media Classic（之前稱為Scene7）影像範本 | /libs/mcm/campaign/s7image |
 | 定位參考 | /libs/mcm/campaign/components/reference |
 
 >[!NOTE]
