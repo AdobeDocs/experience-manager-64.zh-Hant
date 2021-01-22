@@ -1,19 +1,15 @@
 ---
 title: 影片
-seo-title: 影片
 description: Assets提供集中式視訊資產管理，您可以直接將視訊上傳至Assets，以便自動編碼至Scene7，並直接從Assets存取Scene7視訊，以進行頁面製作。
-seo-description: Assets提供集中式視訊資產管理，您可以直接將視訊上傳至Assets，以便自動編碼至Scene7，並直接從Assets存取Scene7視訊，以進行頁面製作。
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 1%
+source-wordcount: '1707'
+ht-degree: 0%
 
 ---
 
@@ -154,7 +150,7 @@ Dynamic Media Classic視訊元件僅適用於Dynamic Media Classic視訊。 基�
 1. 在AEM中，前往&#x200B;**[!UICONTROL Tools]**，然後選取&#x200B;**[!UICONTROL Configuration Console]**。 在配置控制台中，導航至導航樹中的&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 視頻配置檔案]**。
 1. 建立新的Dynamic Media Classic視訊設定檔。 在&#x200B;**[!UICONTROL 新……]**&#x200B;功能表，選取「建立頁面」，然後選取「動態媒體經典視訊設定檔」範本。 ****&#x200B;為新視訊設定檔頁面指定名稱，然後按一下「建立&#x200B;**[!UICONTROL 」。]**
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. 編輯新視訊設定檔。 先選取雲端設定。 然後選取與雲端設定中選取的編碼預設集相同。
 
