@@ -3,9 +3,9 @@ title: 將資產大量移轉至Adobe Experience Manager Assets
 description: 如何將資產匯入AEM、套用中繼資料、產生轉譯，以及啟用資產以發佈例項。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 11%
 
 ---
@@ -79,7 +79,7 @@ Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載�
 
 ### 處理轉譯{#process-renditions}
 
-將資產載入系統後，您需要透過DAM更新資產工作流程來處理這些資產，以擷取中繼資料並產生轉譯。 在執行此步驟之前，您需要複製並修改DAM更新資產工作流程，以符合您的需求。 您可能不需要在預設工作流程中執行某些步驟，例如產生Scene7 PTIFF或整合InDesign伺服器。
+將資產載入系統後，您需要透過DAM更新資產工作流程來處理這些資產，以擷取中繼資料並產生轉譯。 在執行此步驟之前，您需要複製並修改DAM更新資產工作流程，以符合您的需求。 您可能不需要在預設工作流程中執行某些步驟，例如產生Dynamic Media Classic PTIFF或整合InDesign伺服器。
 
 根據您的需求設定工作流程後，您有兩個選項可加以執行：
 
