@@ -1,20 +1,20 @@
 ---
-title: 資產規模指南
+title: Assets 規模調整指南
 description: '最佳實務，可判斷評估部署AEM Assets所需基礎架構和資源的有效度量。 '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
 
 
-# 資產規模調整指南{#assets-sizing-guide}
+# Assets 規模調整指南 {#assets-sizing-guide}
 
 在調整Adobe Experience Manager(AEM)Assets實作環境的大小時，請務必確保在磁碟、CPU、記憶體、IO和網路總處理能力方面有充足的可用資源。 確定這些資源的數量需要瞭解系統中載入了多少資產。 如果沒有更佳的量度，您可以將現有資料庫的大小除以資料庫的年齡，以找出建立資產的比率。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 1. 確定要載入到系統中的資產的大小和數量。
 1. 取得要上傳至AEM的資產的代表性範例。 例如，如果您打算將PSD、JPG、AI和PDF檔案載入系統，則需要每個檔案格式的多張範例影像。 此外，這些範例應代表不同檔案大小和複雜的影像。
 1. 定義要使用的轉譯。
-1. 使用ImageMagick或Adobe的Creative Cloud應用程式在AEM中建立轉譯。 除了使用者指定的轉譯外，還可建立立即可用的轉譯。 對於實作Scene7的使用者，您可以使用IC二進位檔產生要儲存在AEM中的PTIFF轉譯。
+1. 使用ImageMagick或Adobe的Creative Cloud應用程式在AEM中建立轉譯。 除了使用者指定的轉譯外，還可建立立即可用的轉譯。 對於實作Dynamic Media Classic的使用者，您可以使用IC二進位檔產生要儲存在AEM中的PTIFF轉譯。
 1. 如果您打算使用子資產，請針對適當的檔案類型產生子資產。 請參閱線上檔案，瞭解如何從InDesign檔案產生子頁面，或從Illustrator圖層產生PNG/PDF檔案。
 1. 比較輸出影像、轉譯和子資產與原始影像的大小。 它允許您在載入系統時生成預期的增長系數。 例如，如果您在處理1GB的資產後，產生合併大小為3GB的轉譯和子資產，轉譯的增長率是3。
 1. 確定資產版本在系統中維護的最長時間。
@@ -121,7 +121,7 @@ AEM Assets有許多使用案例，讓網路效能比我們許多AEM專案更重�
 
 在分析WebDAV上檔案的平均儲存時間時，發現效能會隨著頻寬的增加而大幅提升，直到5-10Mbps等級。 因此，Adobe建議同時存取系統的每位使用者至少應有10Mbps的上傳速度和5-10Mbps的頻寬。
 
-如需詳細資訊，請參閱「疑難排解AEM案頭應用程式」[。](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)
+如需詳細資訊，請參閱「疑難排解AEM案頭應用程式」](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)。[
 
 ## 限制 {#limitations}
 
