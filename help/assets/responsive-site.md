@@ -1,18 +1,15 @@
 ---
 title: 為互動式網站提供最佳化影像
-seo-title: 為互動式網站提供最佳化影像
-description: 如何使用回應式程式碼功能來提供最佳化的影像
-seo-description: 如何使用回應式程式碼功能來提供最佳化的影像
-uuid: 7c6baef5-7513-4644-94ed-2383e8724c17
+description: 如何使用動態媒體中的互動式程式碼功能來提供最佳化影像
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '334'
 ht-degree: 11%
 
 ---
