@@ -1,18 +1,14 @@
 ---
 title: 影片
-seo-title: 影片
-description: 瞭解集中式視訊資產管理AEM Assets，您可在其中上傳視訊以自動編碼至Dynamic Media Classic，並直接從AEM Assets存取Dynamic Media Classic視訊。 Dynamic Media Classic視訊整合將最佳化視訊的觸及面延伸到所有螢幕。
-seo-description: 瞭解集中式視訊資產管理AEM Assets，您可在其中上傳視訊以自動編碼至Dynamic Media Classic，並直接從AEM Assets存取Dynamic Media Classic視訊。 Dynamic Media Classic視訊整合將最佳化視訊的觸及面延伸到所有螢幕。
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: 瞭解集中式視訊資產管理AEM Assets，您可在其中上傳視訊以自動編碼至Dynamic Media Classic，並直接從AEM Assets存取Dynamic Media Classic視訊。 Dynamic Media Classic視訊整合運用自動裝置和自動頻寬偵測，將最佳化視訊的觸及面延伸至所有螢幕。
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1617'
 ht-degree: 1%
 
 ---
@@ -20,12 +16,12 @@ ht-degree: 1%
 
 # 影片 {#video}
 
-Assets提供集中式視訊資產管理，您可以直接將視訊上傳至Assets，以便自動編碼至Dynamic Media Classic(Scene7)，並直接從Assets存取Dynamic Media Classic視訊，以進行頁面製作。
+Assets提供集中式視訊資產管理，您可以直接將視訊上傳至Assets，以便自動編碼至Dynamic Media Classic，並直接從Assets存取Dynamic Media Classic視訊，以進行頁面製作。
 
 Dynamic Media Classic視訊整合將最佳化視訊的觸及面延伸到所有螢幕（自動裝置和頻寬偵測）。
 
 * **[!UICONTROL Scene7 Video]**&#x200B;元件會自動執行裝置和頻寬偵測，以在桌上型電腦、平板電腦和行動裝置上播放正確的格式和適當品質的視訊。
-* 資產——您可以包含可調式視訊集，而不只包含單一視訊資產。 最適化視訊集是所有必要視訊轉譯的容器，可在多種螢幕上順暢播放視訊。 「最適化視訊集」會針對以不同位元速率和格式（例如400 kbps、800 kbps和1000 kbps）編碼的相同視訊版本分組。 您使用Adaptive Video Set和S7視訊元件，在多種螢幕上（包括桌上型電腦、iOS、Android、Blackberry和Windows行動裝置）進行最適化視訊串流。 如需詳細資訊，請參閱[Scene7說明檔案中有關最適化視訊集的資訊](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html)。
+* 資產——您可以包含可調式視訊集，而不只包含單一視訊資產。 最適化視訊集是所有必要視訊轉譯的容器，可在多種螢幕上順暢播放視訊。 「最適化視訊集」會針對以不同位元速率和格式（例如400 kbps、800 kbps和1000 kbps）編碼的相同視訊版本分組。 您使用Adaptive Video Set和S7視訊元件，在多種螢幕上（包括桌上型電腦、iOS、Android、Blackberry和Windows行動裝置）進行最適化視訊串流。<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## 關於FFMPEG和Dynamic Media Classic {#about-ffmpeg-and-scene}
 
