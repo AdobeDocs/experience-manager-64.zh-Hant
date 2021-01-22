@@ -1,18 +1,14 @@
 ---
 title: 使用規則集轉換URL
-seo-title: 使用規則集轉換URL
 description: '您可以在動態媒體中部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。 '
-seo-description: '您可以在動態媒體中部署規則集以轉換URL。 規則集是以指令碼語言（例如JavaScript）編寫的指令集，可評估XML資料，並在資料符合特定條件時採取特定動作。 '
-uuid: 9fed0c83-67b7-4483-a9b4-322e6a483449
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: abcff903-204b-4ab6-87d8-6f0ce63d7b41
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '764'
 ht-degree: 5%
 
 ---
@@ -25,11 +21,11 @@ ht-degree: 5%
 * 添加MIME類型尾碼。 許多服務和網站都需要影像字尾，例如將`.jpg`新增至URL。
 * 建立URL的資料夾路徑以用於搜尋引擎最佳化(SEO)。
 
-   請參閱[Adobe Scene7 Publishing System如何支援SEO](/help/assets/assets/s7_seo.pdf)。
+   請參閱[Adobe Dynamic Media Classic如何支援SEO](/help/assets/assets/s7_seo.pdf)。
 
 * 新增中繼資料至URL，以利搜尋引擎最佳化(Search Engine Optimization)。
 
-   請參閱[Adobe Scene7 Publishing System如何支援SEO](/help/assets/assets/s7_seo.pdf)。
+   請參閱[Adobe Dynamic Media Classic如何支援SEO](/help/assets/assets/s7_seo.pdf)。
 
 * 設定內容配置以觸發下載。
 * 簡化影像伺服範本URL以利個人化。 例如，將`rgb{XX,YY,ZZ}`轉換為RTF-ready `\redXX\greenYY\blueZZ`
@@ -53,17 +49,17 @@ ht-degree: 5%
 此外，請務必先在測試環境中測試規則集，而不會影響您的即時生產環境。\
 生產環境和測試環境通常需要不同的登入。
 
-* **NA測試環** 境登錄頁： [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
-* **EMEA測試環** 境登錄頁： [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
-* **JAPAC測試環** 境登錄頁： [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/)
+如需登入資訊，請參閱[Adobe Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)。
+
+<!-- * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
+* **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
+* **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
 另請參閱[在規則集](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html)中使用&#39;asset&#39;而非&#39;is&#39;影像。
 
 **要部署XML規則集：**
 
-1. 登入您的Dynamic Media Classic帳戶：
-
-   [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 登入您的[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)。
 
    您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
 
