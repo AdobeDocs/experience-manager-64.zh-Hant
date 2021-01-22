@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
-source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '310'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,7 @@ ht-degree: 3%
   <tr>
    <td>動態影像</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">動態影像最佳範例</a></td> 
-   <td><p>說明如何銳利化影像，以獲得最佳效果，以及當您使用動態媒體功能或與Scene7整合時，最佳化影像品質的最佳方式。 </p> </td> 
+   <td><p>說明如何銳利化影像，以獲得最佳效果，以及當您使用動態媒體功能或與動態媒體整合時，最佳化影像品質的最佳方式。 </p> </td> 
   </tr>
   <tr>
    <td>多語種資產</td> 
