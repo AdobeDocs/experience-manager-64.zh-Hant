@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '21618'
-ht-degree: 0%
+source-wordcount: '21617'
+ht-degree: 23%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 |---|---|
 | 版本 | 6.4.8.0 |
 | 類型 | Service Pack版本 |
-| 日期 | 2020年3月05日 |
+| 日期 | 2020 年 3 月 5 日 |
 | 下載URL | [軟體散發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip)上的AEM 6.4.8.0 |
 
 ## AEM 6.4.8.0 {#what-s-included-in-aem}包含的功能
@@ -36,7 +36,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 此Service Pack版本的一些主要亮點是：
 
-* 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.20版。
+* 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.20 版。
 
 * 在WCM-RTE中，日文網站支援繞圖排文功能。
 
@@ -71,7 +71,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 ### 資產 {#assets}
 
-* 在Experience Manager中使用Dynamic Media Scene7設定將資產從一個檔案夾移至另一個檔案夾(NPR-32440)時，在SPS(Scene7 Publishing System)中建立無名稱的檔案夾。
+* 使用Dynamic Media Classic組態，將資產從Experience Manager的一個檔案夾移至另一個檔案夾時，會在Dynamic Media Classic中建立無名稱的檔案夾(NPR-32440)。
 
 * PDF檔案的資產詳細資料頁面在Dynamic Media Scene7模式上執行的Experience Manager中不會顯示動作按鈕(NPR-32316)。
 
@@ -97,13 +97,13 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 * 無法從DAM下載的ZIP檔案，無法使用WinZip開啟(NPR-31745)。
 
-### 整合{#integrations-6480}
+### Integrations {#integrations-6480}
 
 * 在Experience Manager雲端服務中設定Adobe Analytics時，選取&#x200B;**Company**&#x200B;和&#x200B;**Reporting** Suite下拉式功能表後，會隱藏&#x200B;**Reporting Source**。(NPR-31729)
 
 * 當製作連結至Adobe Campaign的電子報語言副本時，不會清除Adobe Campaign屬性，而複製或貼上連結至Adobe Campaign的電子報時，則不會清除(NPR-32540)。
 
-* ReportSuitesServlet易受SSRF攻擊(NPR-32161)。
+* ReportSuitesServlet 容易遭受 SSRF 攻擊 (NPR-32161)。
 
 ### Sling {#sling-6480}
 
@@ -151,7 +151,7 @@ AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增
 
 * 設計人員：如果啟用標籤選項，子表單邊框會消失在產生的PDF輸出中(NPR-32546、NPR-32322)。
 
-* 設計人員：如果表格中有合併的儲存格，則無障礙環境支援測試會失敗，無法針對使用輸出服務從XDP表單轉換的輸出PDF檔案(NPR-32079)。
+* Designer：如果表格中有合併的儲存格，協助工具測試就無法輸出透過輸出服務從 XDP 表單轉換而來的 PDF 檔案 (NPR-32079)。
 
 * 檔案安全性：將DisableGlobalOfflineSynchronizationData選項設為True時，受保護的PDF檔案無法離線開啟(NPR-32080)。
 
@@ -175,7 +175,7 @@ AEM 6.4.7.0是重要的更新，其中包括效能、穩定性、安全性和重
 
 AEM 6.4.7.0的一些主要亮點是：
 
-* 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.17版。
+* 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.17 版。
 * 新增在刪除網站頁面時設定其版本的支援。
 * 已在&#x200B;**DAM list**&#x200B;檢視中新增可排序的建立日期欄，並在&#x200B;**List**&#x200B;檢視中新增資產搜尋結果欄(NPR-31311)。
 * **清單**&#x200B;檢視中已允許根據&#x200B;**名稱**&#x200B;欄進行資產排序。
@@ -215,7 +215,7 @@ AEM 6.4.7.0的一些主要亮點是：
 
 * 不會發佈包含參考的資產(DM)(NPR-31179)。
 
-* 為「動態媒體混合」模式配置的過期（用戶端快取至上線時間）值不會複製至動態媒體傳送環境(NPR-31126)。
+* 針對 Dynamic Media 混合模式設定的到期 (用戶端快取的存留時間) 值沒有複製到 Dynamic Media 交付環境中 (NPR-31126)。
 
 * 從AEM Dynamic Media - Scene 7執行模式上傳至Scene 7的時間太長，無法完成(NPR-30926)。
 
@@ -265,9 +265,9 @@ AEM 6.4.7.0的一些主要亮點是：
 
 * 當使用者在功能表的description屬性中新增日文或韓文字元時，功能表會顯示日文和韓文文字的扭曲字元(NPR-31331)。
 
-* 當使用者專注在左側欄位並使用鍵盤快速鍵貼上內容時，會貼上頁面編輯器剪貼簿的內容，而非從左側欄位複製的內容(NPR-31169)。
+* 當使用者聚焦於左方邊欄的欄位，並使用鍵盤快速鍵貼上內容時，貼上了頁面編輯器剪貼簿的內容，而非左方邊欄的欄位內容 (NPR-31169)。
 
-* 當用戶編輯內容片段時，恢復已刪除的內容片段的變化(NPR-31178)。
+* 使用者編輯內容片段時，系統復原了已刪除的內容片段變化 (NPR-31178)。
 
 * 「內容片段模型」查詢效率不彰。 如果實例包含大量頁面並導致錯誤，則速度會非常慢(NPR-30666)。
 
@@ -285,7 +285,7 @@ AEM 6.4.7.0的一些主要亮點是：
 
 ##### 平台 {#platform-6470}
 
-* 不會儲存Jetty型HTTP服務緩衝區大小設定的更新(NPR-30925)。
+* 未儲存 Jetty 型 HTTP 服務的緩衝區大小設定更新 (NPR-30925)。
 
 * QueryBuilder現在支援xpath查詢中的orderby fn:name()(NPR-31322)。
 
@@ -323,7 +323,7 @@ AEM 6.4.7.0的一些主要亮點是：
 >
 >AEM Service Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件](#install-aem-forms-add-on-package)和[安裝AEM Forms JEE安裝程式](#install-aem-forms-jee-installer)」。[
 
-**Forms附加套件**
+**Forms 附加元件套件**
 
 **適用性表單**
 
@@ -331,9 +331,9 @@ AEM 6.4.7.0的一些主要亮點是：
 
 * 表單中的核取方塊和下拉式清單會失敗協助功能檢查(NPR-31282)。
 
-**HTML5 Forms**
+**HTML5 表單**
 
-* 產生XDP表單的HTML5預覽會在新增子表單例項時顯示閃爍(NPR-30907)。
+* 新增子表單的例項時，產生 XDP 表單的 HTML5 預覽後出現閃爍畫面 (NPR-30907)。
 
 **OSGi的檔案服務**
 
@@ -355,7 +355,7 @@ AEM 6.4.7.0的一些主要亮點是：
 
 * 套用修補程式將HTML修正為PDF失敗後，SOAP端點設定會重設(NPR-31309)。
 
-**PDFG服務**
+**PDFG 服務**
 
 * 無法上傳使用管理員UI下載的Adobe PDF設定檔案(NPR-31273)。
 
@@ -367,63 +367,63 @@ AEM 6.4.6.0是重要的更新，其中包括效能、穩定性、安全性和重
 
 AEM 6.4.6.0的一些主要亮點是：
 
-* 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.15版。
+* 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.15 版。
 * 新增在基礎API中追蹤事件中追蹤dynamic-UI狀態的支援。
 * 新增轉譯支援至影像核心元件。
 
 **資產**
 
-* 名稱中包含空格和`&`字元之資料夾的資產共用連結，會為某些資產顯示空白的灰色卡片。 NPR-29934:CQ-4270187的修補程式
-* 建立AEM的MP4資產時，DAM工作流程會當機。 NPR-30031:CQ-4271352的修補程式
-* 透過Datapower的Adobe Smart Tag連線問題。 NPR-30026:CQ-4269457的修補程式
-* 使用OmniSearch找不到PDF。 NPR-30046:GRANITE-26290的修補程式
+* 名稱中包含空格和`&`字元之資料夾的資產共用連結，會為某些資產顯示空白的灰色卡片。 NPR-29934：CQ-4270187 的 Hotfix
+* 建立AEM的MP4資產時，DAM工作流程會當機。 NPR-30031：CQ-4271352 的 Hotfix
+* Adobe 智慧標記透過 Datapower 連線的問題。NPR-30026：CQ-4269457 的 Hotfix
+* 使用OmniSearch找不到PDF。 NPR-30046：GRANITE-26290 的 Hotfix
 * ACP API生成的URL和資料夾元資料中的資產路徑不進行URL編碼。  GRANITE-26198:CQ-4271814的修補程式
 * 由於未定義的裝載，「建立檢閱」工作功能無法運作。 NPR-30469:修補程式CQ-4274263
-* 在資產選擇器上執行OmniSearch後，將檢視從卡片檢視切換為清單檢視的功能會消失，反之亦然。 NPR-29852:CQ-4269369的修補程式
-* （觸控UI）在管理出版物精靈期間，資產會在新增頁面後新增至複製佇列，因此會在數秒後顯示部分資產。 NPR-29985:CQ-4270724的修補程式
-* 依相關性排序搜尋查詢會傳回InDesign檔案以及InDesign範本。 CQ-4273864的修補程式
-* 如果使用者有大寫電子郵件ID，使用者將無法登入先前已登出的資產。 CQ-4276575的修補程式
-* 在`DMHybrid`模式中設定Dynamic Media Cloud服務會導致在Analytics中建立多個空的報表套裝，而AEM中未儲存任何報表套裝ID，導致報表套裝重複。 CQ-4276855的修補程式
-* 在「受管理的標籤」頁面中升級時，不會顯示警告對話框。 CQ-4252851的修補程式
-* 使用轉盤來管理標籤時，導覽按鈕無法運作。 CQ-4275499的修補程式
-* 大量移動資產功能已中斷，導致資產未移動。 CQ-4272987的修補程式
+* 在資產選擇器上執行OmniSearch後，將檢視從卡片檢視切換為清單檢視的功能消失，反之亦然。 NPR-29852：CQ-4269369 的 Hotfix
+* （觸控UI）在管理出版物精靈期間，資產會在新增頁面後新增至複製佇列，因此會在數秒後顯示部分資產。 NPR-29985：CQ-4270724 的 Hotfix
+* 依相關性排序搜尋查詢會傳回InDesign檔案以及InDesign範本。 CQ-4273864 的 Hotfix
+* 如果使用者有大寫電子郵件ID，使用者將無法登入先前已登出的資產。 CQ-4276575 的 Hotfix
+* 在`DMHybrid`模式中設定Dynamic Media Cloud服務會導致在Analytics中建立多個空的報表套裝，而AEM中未儲存任何報表套裝ID，導致報表套裝重複。 CQ-4276855 的 Hotfix
+* 在「受管理的標籤」頁面中升級時，不會顯示警告對話框。 CQ-4252851 的 Hotfix
+* 使用轉盤來管理標籤時，導覽按鈕無法運作。 CQ-4275499 的 Hotfix
+* 大量移動資產功能已中斷，導致資產未移動。 CQ-4272987 的 Hotfix
 
 **網站**
 
-* `pageinfo.json` 請求極其緩慢，且載入時間過長。NPR-29709:CQ-4269560的修補程式
-* `onTime` 或 `offTime` 如果AEM伺服器重新啟動，資產上儲存的中繼資料屬性不會重新啟動。NPR-30413:CQ-4272784的修補程式
-* 由於ConfigPostProcessor類的行為不正確，暫停父頁面會刪除cq:來自子頁面的LiveRelationship混合類型。 NPR-30536、NPR-30510:CQ-4254113的修補程式
-* 跨網站指令碼(XSS)，位於「促銷活動」編輯頁面的「開始」工作流程對話方塊中。 NPR-29747:CQ-4271067的修補程式
-* （傳統UI）「工作流鎖定」階段會禁用工作流頁籤，直到鎖定被釋放為止。 NPR-30356:CQ-4237557的修補程式
-* (IE11)在HTML內容以defaultPasteMode = plaintext貼入Rich Text Editor元件時，HTML會貼入格式，因此defaultPasteMode不具任何效果。 NPR-30045:GRANITE-26094的修補程式
-* （傳統UI）重新載入網站管理頁面時，會停用「新增」功能表中的所有下拉式項目。 NPR-29980:CQ-4272044的修補程式
-* 無法將樣式新增至文字或編輯內容上所撰寫的任何現有樣式。 NPR-29712:CQ-4266249的修補程式
+* `pageinfo.json` 請求極其緩慢，且載入時間過長。NPR-29709：CQ-4269560 的 Hotfix
+* `onTime` 或 `offTime` 如果AEM伺服器重新啟動，資產上儲存的中繼資料屬性不會重新啟動。NPR-30413：CQ-4272784 的 Hotfix
+* 由於ConfigPostProcessor類的行為不正確，暫停父頁面會刪除cq:來自子頁面的LiveRelationship混合類型。 NPR-30536、NPR-30510：CQ-4254113 的 Hotfix
+* 跨網站指令碼(XSS)，位於「促銷活動」編輯頁面的「開始」工作流程對話方塊中。 NPR-29747：CQ-4271067 的 Hotfix
+* （傳統UI）「工作流鎖定」階段會禁用工作流頁籤，直到鎖定被釋放為止。 NPR-30356：CQ-4237557 的 Hotfix
+* (IE11)在HTML內容以defaultPasteMode = plaintext貼入Rich Text Editor元件時，HTML會貼入格式，因此defaultPasteMode不具任何效果。 NPR-30045：GRANITE-26094 的 Hotfix
+* （傳統UI）重新載入網站管理頁面時，會停用「新增」功能表中的所有下拉式項目。 NPR-29980：CQ-4272044 的 Hotfix
+* 無法將樣式新增至文字或編輯內容上所撰寫的任何現有樣式。 NPR-29712：CQ-4266249 的 Hotfix
 * （傳統UI）無dc的資產：在路徑欄位對話方塊瀏覽器中，標題值會列出為不含標題。 NPR-30166:CQ-88858的備份請求
-* cq:即使在添加parsys元件後，偵聽程式也無法使用嵌套元件。 NPR-30422:CQ-4274863的修補程式
-* AEM和促銷活動整合期間發生ContextHub錯誤。 NPR-30625:CQ-4250790的修補程式
-* resourceType請求參數的值被複製到HTML標籤屬性的值中，該屬性被封裝為雙引號。 NPR-29832:CQ-4255365的修補程式
-* 將元件從一個頁面複製並貼至另一個頁面後，需要重新整理頁面。 NPR-29982:CQ-4256019的修補程式
-* 不支援從頁面別名發佈／取消發佈，因此應移除。 NPR-30062:CQ-4271249的修補程式
-* ExperienceFragmentsReplicationListener中未關閉的ResourceResolver警告，導致長期穩定性問題，強制重新啟動AEM例項。 NPR-30416:CQ-4257521的修補程式
-* 在超過150個頁面中移動參考的體驗片段，並不會修改其參考之頁面中的fragmentPath。 NPR-30556:CQ-4274900的修補程式
-* 開啟內容片段時，先後開啟元素(`$`)和大括弧(`{`)的字元時發生解析錯誤。 CQ-4270266的修補程式
-* 嘗試在時間軸中顯示體驗片段版本時，VersionPreviewServlet在NullPointerException中失敗。 NPR-30074:CQ-4271881的修補程式
-* 無法透過登入功能鎖定內容片段。 NPR-29923:CQ-4258785的修補程式
+* cq:即使在添加parsys元件後，偵聽程式也無法使用嵌套元件。 NPR-30422：CQ-4274863 的 Hotfix
+* AEM 和 Campaign 整合期間出現 ContextHub 錯誤。NPR-30625：CQ-4250790 的 Hotfix
+* 系統將 resourceType 請求參數的值複製到 HTML 標記屬性 (以雙引號包圍) 的值中。NPR-29832：CQ-4255365 的 Hotfix
+* 將元件從一個頁面複製並貼至另一個頁面後，需要重新整理頁面。 NPR-29982：CQ-4256019 的 Hotfix
+* 不支援從頁面別名發佈／取消發佈，因此應移除。 NPR-30062：CQ-4271249 的 Hotfix
+* ExperienceFragmentsReplicationListener中未關閉的ResourceResolver警告，導致長期穩定性問題，強制重新啟動AEM例項。 NPR-30416：CQ-4257521 的 Hotfix
+* 在超過150個頁面中移動參考的體驗片段，並不會修改其參考之頁面中的fragmentPath。 NPR-30556：CQ-4274900 的 Hotfix
+* 開啟內容片段時，先後開啟元素(`$`)和大括弧(`{`)的字元時發生解析錯誤。 CQ-4270266 的 Hotfix
+* 嘗試在時間軸中顯示體驗片段版本時，VersionPreviewServlet在NullPointerException中失敗。 NPR-30074：CQ-4271881 的 Hotfix
+* 無法透過登入功能鎖定內容片段。 NPR-29923：CQ-4258785 的 Hotfix
 * SAML驗證處理常式中的簽名驗證失敗。 NPR-30379:GRANITE-26567的備份請求
 
 **複寫**
 
-* JCR會話／資源解析程式在OAuth實施期間在每次複製到MAC / Brand Portal時都被洩漏。 NPR-30000:Granite-26196的修補程式
+* JCR會話／資源解析程式在OAuth實施期間在每次複製到MAC / Brand Portal時都被洩漏。 NPR-30000：Granite-26196 的 Hotfix
 
 **Sling**
 
 * 使用重疊和先前順序影響的子代順序導致IndexOutOfBoundException。 NPR-30408:Sling-8296 &amp; Sling-7375的修補程式
-* InactiveBundlesHealthCheck在保存InactiveBundlesHealthCheck配置後，將讀取MissingPackagesHealthCheck配置。 NPR-30084:CQ-4272644的修補程式
+* InactiveBundlesHealthCheck在保存InactiveBundlesHealthCheck配置後，將讀取MissingPackagesHealthCheck配置。 NPR-30084：CQ-4272644 的 Hotfix
 
 **商務**
 
-* 無法從Sites主控台執行目錄藍圖。 NPR-29829:CQ-4271461的修補程式
-* 在資產的「參考」區段中，產品中使用的資產不會顯示任何對產品的參考，而資產路徑在資產移動時也不會更新。 NPR-30542:CQ-4270247的修補程式
+* 無法從Sites主控台執行目錄藍圖。 NPR-29829：CQ-4271461 的 Hotfix
+* 在資產的「參考」區段中，產品中使用的資產不會顯示任何對產品的參考，而資產路徑在資產移動時也不會更新。 NPR-30542：CQ-4270247 的 Hotfix
 
 **平台**
 
@@ -431,29 +431,29 @@ AEM 6.4.6.0的一些主要亮點是：
 
 **社群**
 
-* 在作者上刪除的群組與所有發佈者不同步。 NPR-29987:CQ-4268738的修補程式
-* 從「社群管理員」欄位移除的已刪除使用者與「會籍」群組不同步。 NPR-30389:CQ-4274339的修補程式
-* 管理員群組的使用者部分沒有群組的快速連結。 NPR-30546:CQ-4275579的修補程式
-* 更新任何新建立和現有的社群群組會覆寫jcr上的屬性：內容節點，並將其名稱變更為第一頁的標題。 NPR-30109:CQ-4273719的修補程式
-* 當社群設定為與資料庫儲存資源提供程式(DSRP)一起使用時，通過位置和地址進行快速搜索和搜索將無法正常工作。 NPR-26737:CQ-4258493的修補程式
+* 在作者上刪除的群組與所有發佈者不同步。 NPR-29987：CQ-4268738 的 Hotfix
+* 從「社群管理員」欄位移除的已刪除使用者與「會籍」群組不同步。 NPR-30389：CQ-4274339 的 Hotfix
+* 管理員群組的使用者部分沒有群組的快速連結。 NPR-30546：CQ-4275579 的 Hotfix
+* 更新任何新建立和現有的社群群組會覆寫jcr上的屬性：內容節點，並將其名稱變更為第一頁的標題。 NPR-30109：CQ-4273719 的 Hotfix
+* 當社群設定為與資料庫儲存資源提供程式(DSRP)一起使用時，通過位置和地址進行快速搜索和搜索將無法正常工作。 NPR-26737：CQ-4258493 的 Hotfix
 
 **轉換**
 
-* 自動執行翻譯無法運作。 NPR-30499:CQ-4276288的修補程式
-* 使用者可在限制為唯讀的內容路徑上建立語言副本。 NPR-29937:CQ-4270708的修補程式
-* 翻譯問題——使用「機器翻譯」翻譯的元件只有幾個。 NPR-30079:CQ-4273764的修補程式
+* 自動執行翻譯無法運作。 NPR-30499：CQ-4276288 的 Hotfix
+* 使用者可在限制為唯讀的內容路徑上建立語言副本。 NPR-29937：CQ-4270708 的 Hotfix
+* 翻譯問題 - 使用機器翻譯時只翻譯了幾個元件。NPR-30079：CQ-4273764 的 Hotfix
 
 **整合**
 
-* 在重新啟動執行個體之前，自訂內容無法正確顯示在發佈執行個體上。 NPR-30421:CQ-4273706的修補程式
+* 在重新啟動執行個體之前，自訂內容無法正確顯示在發佈執行個體上。 NPR-30421：CQ-4273706 的 Hotfix
 
 **專案**
 
-* dam:folderThumbnailPaths值即使刪除資料夾中的資產，也不會重新整理並顯示舊的縮圖。 NPR-30424:CQ-4273667的修補程式
+* dam:folderThumbnailPaths值即使刪除資料夾中的資產，也不會重新整理並顯示舊的縮圖。 NPR-30424：CQ-4273667 的 Hotfix
 
 **UI-Console**
 
-* 「網站」頁面屬性的「縮圖」索引標籤上的跨網站指令碼(XSS)。 NPR-30048:Granite-26200的修補程式
+* 「網站」頁面屬性的「縮圖」索引標籤上的跨網站指令碼(XSS)。 NPR-30048：Granite-26200 的 Hotfix
 
 **UI-Foundation**
 
@@ -465,51 +465,51 @@ AEM 6.4.6.0的一些主要亮點是：
 >
 >AEM Service Pack不包含AEM Forms的修正。 它們是使用個別的Forms附加套件傳送。 此外，還會發行包含JEE上AEM Forms修正的累積安裝程式。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件](#install-aem-forms-add-on-package)和[安裝AEM Forms JEE安裝程式](#install-aem-forms-jee-installer)」。[
 
-**Forms附加套件**
+**Forms 附加元件套件**
 
 **適用性表單**
 
-* 從發佈者擷取空的。css檔案需要較長的時間，造成效能問題。 NPR-30558:CQ-4274399的修補程式
-* 發佈後修改的表單不會在發佈網站時再次張貼。 NPR-30411:CQ-4236566的修補程式
+* 從發佈者擷取空的。css檔案需要較長的時間，造成效能問題。 NPR-30558：CQ-4274399 的 Hotfix
+* 發佈後修改的表單不會在發佈網站時再次張貼。 NPR-30411：CQ-4236566 的 Hotfix
 
-**表單——後端整合**
+**Forms - 後端整合**
 
-* 使用Web服務定義語言(WSDL)建立表單資料模型時拋出錯誤。 NPR-30388:CQ-4272921的修補程式
+* 使用Web服務定義語言(WSDL)建立表單資料模型時拋出錯誤。 NPR-30388：CQ-4272921 的 Hotfix
 
 **表單——信件管理**
 
-* 特殊字元，例如小於(&lt;)、大於(>)和&amp;符號，會在代理UI中進行編碼。 NPR-30410:CQ-4273887的修補程式
-* 觸發包含「資料字典」值的文字片段時，代理UI會停止回應。 NPR-30098、NPR-30083:CQ-4272204的修補程式
-* 建立對應UI(CCR UI)會因錯誤變數（物件物件物件）而間歇性失敗。 NPR-29983:CQ-4273874的修補程式
-* 字母草稿重新載入失敗，但當「檔案片段」的說明包含屬性中的小於(&lt;)、大於(>)和&amp;符號等特殊字元時例外。 NPR-29930:CQ-4252762的修補程式
+* 特殊字元，例如小於(&lt;)、大於(>)和&amp;符號，會在代理UI中進行編碼。 NPR-30410：CQ-4273887 的 Hotfix
+* 觸發包含「資料字典」值的文字片段時，代理UI會停止回應。 NPR-30098、NPR-30083：CQ-4272204 的 Hotfix
+* 建立對應UI(CCR UI)會因錯誤變數（物件物件物件）而間歇性失敗。 NPR-29983：CQ-4273874 的 Hotfix
+* 字母草稿重新載入失敗，但當「檔案片段」的說明包含屬性中的小於(&lt;)、大於(>)和&amp;符號等特殊字元時例外。 NPR-29930：CQ-4252762 的 Hotfix
 
-**HTML5 Forms**
+**HTML5 表單**
 
-* 當在瀏覽模式中使用非視覺案頭存取來讀取HTML5表格時，Chrome瀏覽器會在表單設計中的每個可縮放向量圖形(SVG)之前讀取「圖形」。 NPR-30450:CQ-4274732的修補程式
+* 以瀏覽模式使用 NonVisual Desktop Access 來讀取 HTML5 表單時，Chrome 瀏覽器在表單設計中的每個可縮放向量圖形 (SVG) 之前讀到「graphic」。NPR-30450：CQ-4274732 的 Hotfix
 
 **Forms JEE安裝程式**
 
 **表單- Foundation JEE**
 
-* 從AEM表單工作台叫用網站服務，新增或編輯網站服務連線會引發錯誤：ClassNotFoundException org.apache.axis.message.SOAPBodyElement。 NPR-30116:CQ-4273217的修補程式
+* 從AEM表單工作台叫用網站服務，新增或編輯網站服務連線會引發錯誤：ClassNotFoundException org.apache.axis.message.SOAPBodyElement。 NPR-30116：CQ-4273217 的 Hotfix
 
-**表單——檔案服務**
+**Forms - 文件服務**
 
-* PDF/A Acrobat預檢中遺失標籤錯誤。 NPR-30594:CQ-4276032的修補程式
-* PDF中的單字元資料系結會導致Reader擴充功能失敗，並出現錯誤&quot;java.lang.StringIndexOutOfBoundsException:字串索引超出範圍：1」。 NPR-30128:CQ-4273878的修補程式
-* 當對HTML至PDF服務執行載入測試時，它會失敗，並出現錯誤，而且檔案類型設定會從AEM表單伺服器移除。 NPR-30085:CQ-4272631的修補程式
-* 使用Adobe Acrobat 9.1（XFA 3.0版）平面化PDF不會保留PDF表單狀態：表單上的不可見元素會設回可見狀態。 NPR-29978:CQ-4270888的修補程式
+* PDF/A Acrobat預檢中遺失標籤錯誤。 NPR-30594：CQ-4276032 的 Hotfix
+* PDF中的單字元資料系結會導致Reader擴充功能失敗，並出現錯誤&quot;java.lang.StringIndexOutOfBoundsException:字串索引超出範圍：1」。 NPR-30128：CQ-4273878 的 Hotfix
+* 對 HTML 轉 PDF 服務執行負載測試時，發生錯誤而失敗，且檔案類型設定從 AEM 表單伺服器中移除。NPR-30085：CQ-4272631 的 Hotfix
+* 使用Adobe Acrobat 9.1（XFA 3.0版）平面化PDF不會保留PDF表單狀態：表單上的不可見元素會設回可見狀態。 NPR-29978：CQ-4270888 的 Hotfix
 
-**表單——檔案安全性**
+**Forms - 文件安全性**
 
-* 套用具有時間戳記的簽名失敗，並出現錯誤：ALC-DSC-003-000:com.adobe.idp.dsc.DSCIndisignationException:調用錯誤。 NPR-30696、NPR-30537:CQ-4273778的修補程式
-* 配置管理器不會為本地化表列插入日文字串。 NPR-30496:CQ-4274868的修補程式
+* 套用具有時間戳記的簽名失敗，並出現錯誤：ALC-DSC-003-000:com.adobe.idp.dsc.DSCIndisignationException:調用錯誤。 NPR-30696、NPR-30537：CQ-4273778 的 Hotfix
+* 配置管理器不會為本地化表列插入日文字串。 NPR-30496：CQ-4274868 的 Hotfix
 
-**PDFG服務**
+**PDFG 服務**
 
-* 在Windows Server 2016上嘗試將Word檔案轉換為PDF時發生連線錯誤。 NPR-30597:CQ-4275652的修補程式
-* 嘗試透過「phantomjs」程式庫使用HTML至PDF後端服務時，權限被拒絕例外。 NPR-30456:CQ-4258077的修補程式
-* JBoss Management Console不會顯示HTML至PDF服務的maxReuseCount。 NPR-30303、NPR-30135:CQ-4273763的修補程式
+* 在Windows Server 2016上嘗試將Word檔案轉換為PDF時發生連線錯誤。 NPR-30597：CQ-4275652 的 Hotfix
+* 嘗試透過「phantomjs」程式庫使用HTML至PDF後端服務時，權限被拒絕例外。 NPR-30456：CQ-4258077 的 Hotfix
+* JBoss Management Console不會顯示HTML至PDF服務的maxReuseCount。 NPR-30303、NPR-30135：CQ-4273763 的 Hotfix
 
 #### AEM 6.4.5.0 {#experience-manager-6450}
 
@@ -519,7 +519,7 @@ AEM 6.4.5.0是重要的更新，其中包括效能、穩定性、安全性和重
 
 AEM 6.4.5.0的一些主要亮點是：
 
-* 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.13版。
+* 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.13 版。
 * 已在品牌入口網站複製代理中新增通訊端逾時和連線逾時。
 * 全新搜尋增強功能——將搜尋結果的編頁限制提高至100頁。
 * 在AEM發佈例項上，預設已停用`AssetDownloadServlet` OSGi元件。 如需詳細資訊，請參閱「從AEM](/help/assets/download-assets-from-aem.md)下載資產」。[
@@ -527,224 +527,224 @@ AEM 6.4.5.0的一些主要亮點是：
 
 **資產**
 
-* 檔案名稱中有縮寫符號的資產不會同步至動態媒體。 NPR-29538:CQ-4270592的修補程式
-* 更新DAM DMGateway介面，以支援S3多部份。 NPR-29740:CQ-4226303的修補程式
-* 在動態媒體中下載視訊的轉譯時，資產下載對話方塊會顯示錯誤的檔案大小。 NPR-29642:CQ-4246202的修補程式
-* 在Day CQ DAM Mime Type Service套用m3u8文字後，資產就變得無法使用。 NPR-29276:CQ-4264052的修補程式
+* 檔案名稱中有縮寫符號的資產不會同步至動態媒體。 NPR-29538：CQ-4270592 的 Hotfix
+* 更新 DAM DMGateway 介面以提供 S3 多部分支援。NPR-29740：CQ-4226303 的 Hotfix
+* 在動態媒體中下載視訊的轉譯時，資產下載對話方塊會顯示錯誤的檔案大小。 NPR-29642：CQ-4246202 的 Hotfix
+* 在Day CQ DAM Mime Type Service套用m3u8文字後，資產就變得無法使用。 NPR-29276：CQ-4264052 的 Hotfix
 * 如果任何已移動／重新命名的資產是Sling Resource集合的一部分，資產參考調整會無法儲存工作階段。 NPR-29143:/CQ-4252605的修補程式
-* 無法搜尋中繼資料值來追蹤或尋找資產。 NPR-29141:CQ-4260215的修補程式
-* 使用搜尋篩選器儲存Smart Collection時，面板上的點按動作不會維持焦點。 NPR-29000: CQ-4240323的修補程式
-* 移動資料夾可建立大小寫混合或大寫名稱的資料夾。 NPR-28945:CQ-4265234的修補程式
-* 如果系列名稱有空格，Omnisearch中會顯示空白結果。 NPR-29001:CQ-4236729的修補程式
-* 使用一些不受支援的特殊字元（例如&amp;）重新命名檔案，會建立無效的檔案夾。 NPR-29196:CQ-4265037的修補程式
-* DAM Extract Archive for zip file functionality is broken. NPR-29187:CQ-4254421的修補程式
-* 中繼資料匯入應允許匯入中繼資料，而不需註冊命名空間。 NPR-29425、NPR-28132:CQ-4269445的修補程式
-* 儲存中繼資料變更不適用於名稱包含引號字元的資產。 NPR-29395:CQ-4254305的修補程式
-* 如果檔案名稱包含空格，則無法移動DAM資產。 NPR-29270:CQ-4266403的修補程式
-* 無法下載使用Deflate64演算法壓縮的ZIP封存。 NPR-29225:CQ-4253995的修補程式
-* 當開啟包含許多版本資產的檔案夾時，資產縮圖顯示緩慢。 NPR-29833:CQ-4271629的修補程式
-* 如果在選擇系列後按下Enter鍵，則無法反白輸入系列。 NPR-29723:CQ-4261607的修補程式
-* 透過受限制的警報視窗進行跨網站指令碼(XSS)攻擊。 NPR-29671:CQ-4270133的修補程式
-* 對於沒有刪除權限的使用者，新增關係至資產失敗。 NPR-29640:CQ-4269196的修補程式
-* 在屬性頁面中新增資產標題後，當使用者嘗試關閉頁面時，AEM會再次開啟屬性頁面。 NPR-29628:CQ-4264929的修補程式
-* 在資產上建立大量關係會導致錯誤。 NPR-28779:CQ-4250708的修補程式
-* 在Scene7 Connect執行模式中，資產擷取速度緩慢。 NPR-28658:CQ-4263007的修補程式
-* 未捕獲的TypeError錯誤：無法讀取未定義的屬性&#39;split&#39;在嘗試查看搜索結果時顯示。 NPR-28803:CQ-4248371的修補程式
-* 從AEM複製至品牌入口網站的時間會很長。 NPR-28914:CQ-4254932的修補程式
-* 在DAM中移動資產並不會在Scene7中產生類似的動作。 NPR-28957:CQ-4264974的修補程式
-* 如果中繼資料欄位在AEM中更新，中繼資料更新不會傳遞至IPS。 NPR-28961:CQ-4255393的修補程式
+* 無法搜尋中繼資料值來追蹤或尋找資產。 NPR-29141：CQ-4260215 的 Hotfix
+* 使用搜尋篩選器儲存Smart Collection時，面板上的點按動作不會維持焦點。 NPR-29000：CQ-4240323 的 Hotfix
+* 移動資料夾可建立大小寫混合或大寫名稱的資料夾。 NPR-28945：CQ-4265234 的 Hotfix
+* 如果系列名稱有空格，Omnisearch中會顯示空白結果。 NPR-29001：CQ-4236729 的 Hotfix
+* 使用一些不受支援的特殊字元（例如&amp;）重新命名檔案，會建立無效的檔案夾。 NPR-29196：CQ-4265037 的 Hotfix
+* DAM Extract Archive for zip file functionality is broken. NPR-29187：CQ-4254421 的 Hotfix
+* 中繼資料匯入應允許匯入中繼資料，而不需註冊命名空間。 NPR-29425、NPR-28132：CQ-4269445 的 Hotfix
+* 儲存中繼資料變更不適用於名稱包含引號字元的資產。 NPR-29395：CQ-4254305 的 Hotfix
+* 如果檔案名稱包含空格，則無法移動DAM資產。 NPR-29270：CQ-4266403 的 Hotfix
+* 無法下載使用Deflate64演算法壓縮的ZIP封存。 NPR-29225：CQ-4253995 的 Hotfix
+* 當開啟包含許多版本資產的檔案夾時，資產縮圖顯示緩慢。 NPR-29833：CQ-4271629 的 Hotfix
+* 如果在選擇系列後按下Enter鍵，則無法反白輸入系列。 NPR-29723：CQ-4261607 的 Hotfix
+* 透過受限制的警報視窗進行跨網站指令碼(XSS)攻擊。 NPR-29671：CQ-4270133 的 Hotfix
+* 對於沒有刪除權限的使用者，新增關係至資產失敗。 NPR-29640：CQ-4269196 的 Hotfix
+* 在屬性頁面中新增資產標題後，當使用者嘗試關閉頁面時，AEM會再次開啟屬性頁面。 NPR-29628：CQ-4264929 的 Hotfix
+* 在資產上建立大量關係會導致錯誤。 NPR-28779：CQ-4250708 的 Hotfix
+* 在Scene7 Connect執行模式中，資產擷取速度緩慢。 NPR-28658：CQ-4263007 的 Hotfix
+* 未捕獲的TypeError錯誤：無法讀取未定義的屬性&#39;split&#39;在嘗試查看搜索結果時顯示。 NPR-28803：CQ-4248371 的 Hotfix
+* 從AEM複製至品牌入口網站的時間會很長。 NPR-28914：CQ-4254932 的 Hotfix
+* 在DAM中移動資產並不會在Scene7中產生類似的動作。 NPR-28957：CQ-4264974 的 Hotfix
+* 如果中繼資料欄位在AEM中更新，中繼資料更新不會傳遞至IPS。 NPR-28961：CQ-4255393 的 Hotfix
 * VersioningTimelineEventProvider應提供根版本和版本注釋。 GRANITE-26063的修補程式
-* 注入資料會導致伺服器端執行程式碼。 CQ-4270246的修補程式
+* 注入資料會導致伺服器端執行程式碼。 CQ-4270246 的 Hotfix
 * 啟用資產的多網站管理員支援。 CQ-4271453、CQ-4268621、CQ-4257491的修補程式
-* AEM介面應會在時間軸歷史記錄中顯示資產目前版本的額外項目，並顯示Adobe Asset Link的最新登入注釋。 CQ-4262864的修補程式
-* 建立或編輯MixedMediaSet時，不會載入範例視訊。 CQ-4244889的修補程式
-* 停用AEM端刪除內容的權限可防止使用者發佈至品牌入口網站。 CQ-4270426的修補程式
+* AEM介面應會在時間軸歷史記錄中顯示資產目前版本的額外項目，並顯示Adobe Asset Link的最新登入注釋。 CQ-4262864 的 Hotfix
+* 建立或編輯MixedMediaSet時，不會載入範例視訊。 CQ-4244889 的 Hotfix
+* 停用AEM端刪除內容的權限可防止使用者發佈至品牌入口網站。 CQ-4270426 的 Hotfix
 * 升級至AEM 6.4.3後，資產報表的查詢限制相關問題。NPR-28588:CQ-4262022、CQ-4260697的修補程式
-* 下載功能透過資產下載servlet運用AEM Assets，讓匿名使用者下載所有資產。 NPR-27315, CQ-4254732的修補程式
+* 下載功能會透過 assetdownload servlet 運用 AEM Assets 讓匿名使用者下載所有資產。NPR-27315, CQ-4254732的修補程式
 
 **網站**
 
-* JCR抱怨標籤名稱應根據標籤標題自動填入。 NPR-28990:CQ-4199411的修補程式
-* 取消繼承按鈕不會顯示在頁面屬性中新增的部分欄位上。 NPR-29079:CQ-4265686的修補程式
-* 轉出預覽動作不應嘗試重新建立即時副本或在轉出頁面清單中顯示。 NPR-29151:CQ-4266213的修補程式
-* （範本編輯器）結構模式中的樣式原則回歸。 NPR-28981:CQ-4264400的修補程式
-* 巢狀即時副本在轉出期間會顯示重複的項目。 NPR-29300:CQ-4268664的修補程式
-* 發佈包含Design Importer元件之即時副本失敗，但無法擷取所選頁面的參考。 NPR-28944:CQ-4265014的修補程式
-* CoralUI搭配Multifield使用時，會將fileReferenceParameter儲存在元件層級，而非多欄位層級。 NPR-29536:CQ-4266129的修補程式
-* 在Design Importer上取消繼承後，不會在發佈上複製設計參考。 NPR-29648、NPR-29721:CQ-4269270、CQ-4271087的修補程式
-* Rich Text Editor中的路徑欄位會在根路徑開啟，而與要搜尋的路徑無關。 NPR-29483:CQ-4268997的修補程式
+* JCR抱怨標籤名稱應根據標籤標題自動填入。 NPR-28990：CQ-4199411 的 Hotfix
+* 取消繼承按鈕不會顯示在頁面屬性中新增的部分欄位上。 NPR-29079：CQ-4265686 的 Hotfix
+* 轉出預覽動作不應嘗試重新建立即時副本或在轉出頁面清單中顯示。 NPR-29151：CQ-4266213 的 Hotfix
+* （範本編輯器）結構模式中的樣式原則回歸。 NPR-28981：CQ-4264400 的 Hotfix
+* 巢狀即時副本在轉出期間會顯示重複的項目。 NPR-29300：CQ-4268664 的 Hotfix
+* 發佈包含Design Importer元件之即時副本失敗，但無法擷取所選頁面的參考。 NPR-28944：CQ-4265014 的 Hotfix
+* 搭配多欄位使用時，CoralUI 在元件層級儲存 fileReferenceParameter 而非多欄位層級。NPR-29536：CQ-4266129 的 Hotfix
+* 在Design Importer上取消繼承後，不會在發佈上複製設計參考。 NPR-29648、NPR-29721：CQ-4269270、CQ-4271087 的 Hotfix
+* Rich Text Editor中的路徑欄位會在根路徑開啟，而與要搜尋的路徑無關。 NPR-29483：CQ-4268997 的 Hotfix
 * (IE11)使用defaultPasteMode = plaintext複製RTE元件中的貼上HTML內容，不會將內容貼為純文字。 NPR-29432、NPR-29171:GRANITE-24941的修補程式
-* Rich Text Editor拼字檢查不再適用於其他語言。 NPR-29506:CQ-4264990的修補程式
-* 在「促銷活動」頁面上執行跨網站指令碼(XSS)。 NPR-29614:CQ-4269322的修補程式
-* 在原始碼編輯模式中，從全螢幕將Rich Text Editor最小化會導致內容遺失。 NPR-29574:CQ-4260584的修補程式
-* （傳統UI）當有大量標籤時，不一定能導覽至最後一個標籤。 NPR-29544:CQ-4264548的修補程式
-* （傳統UI）「管理控制台」導覽功能表消失，且頁面無法完全載入。 NPR-29571:CQ-4264585的修補程式
-* 在實例上啟用微型化時，將元件添加到WCM頁時，將生成錯誤警報。 NPR-29396:CQ-4266196的修補程式
-* 樣式系統節點與父節點的繼承發生問題。 NPR-29296:CQ-4266041的修補程式
-* 使用「時間彎曲」還原的頁面，應參照版本修訂時的正確圖片。  NPR-29431:CQ-4262638的修補程式
-* 安裝最新6.4.5快照版本後，編輯器上出現Javascript錯誤的空白頁面。 NPR-29475:CQ-4266196的修補程式
-* 將元件添加到parsys時，不考慮設計元件清單屬性，並將其解析為具有相似parsys結構的不同模板節點名稱。 NPR-29509:CQ-4269044的修補程式
-* cq:dropTargets區域涵蓋整個元件，而非影像大小，使得使用內嵌元件進行定位變得困難。 NPR-29738:CQ-4268912的修補程式
+* Rich Text Editor拼字檢查不再適用於其他語言。 NPR-29506：CQ-4264990 的 Hotfix
+* 在「促銷活動」頁面上執行跨網站指令碼(XSS)。 NPR-29614：CQ-4269322 的 Hotfix
+* 處於來源編輯模式時若從全螢幕最小化 RTF 編輯器，會導致內容遺失。NPR-29574：CQ-4260584 的 Hotfix
+* （傳統UI）當有大量標籤時，不一定能導覽至最後一個標籤。 NPR-29544：CQ-4264548 的 Hotfix
+* （傳統UI）「管理控制台」導覽功能表消失，且頁面無法完全載入。 NPR-29571：CQ-4264585 的 Hotfix
+* 已在執行個體上啟用縮製的情況下，將元件新增至 WCM 頁面時會產生錯誤警報。NPR-29396：CQ-4266196 的 Hotfix
+* 樣式系統節點與父節點的繼承發生問題。 NPR-29296：CQ-4266041 的 Hotfix
+* 使用「時間彎曲」還原的頁面，應參照版本修訂時的正確圖片。  NPR-29431：CQ-4262638 的 Hotfix
+* 安裝最新6.4.5快照版本後，編輯器上出現Javascript錯誤的空白頁面。 NPR-29475：CQ-4266196 的 Hotfix
+* 將元件添加到parsys時，不考慮設計元件清單屬性，並將其解析為具有相似parsys結構的不同模板節點名稱。 NPR-29509：CQ-4269044 的 Hotfix
+* cq:dropTargets區域涵蓋整個元件，而非影像大小，使得使用內嵌元件進行定位變得困難。 NPR-29738：CQ-4268912 的 Hotfix
 * 在使用影像就地編輯器後，影像元件不會呼叫&quot;afteredit&quot;監聽器。 NPR-29616 CQ-4268065的修補程式
-* 設定Facebook社交貼文時的問題。 NPR-29212:CQ-4266630的修補程式
-* 在促銷已修改頁面的啟動時，會同時考慮來源和啟動分支中的修改。 NPR-29308:CQ-4266746的修補程式
-* 「內容片段」上轉譯的縮圖會顯示「日期」和「時間」欄位的內部日曆表示法。 NPR-29531:CQ-4269362的修補程式
-* 無法大量新增標籤至具有現有不同標籤的頁面。 NPR-28729:CQ-4262922的修補程式
-* 網站管理員中不會顯示「已排程的啟動」圖示。 NPR-28725:CQ-4263917的修補程式
+* 設定Facebook社交貼文時的問題。 NPR-29212：CQ-4266630 的 Hotfix
+* 在促銷已修改頁面的啟動時，會同時考慮來源和啟動分支中的修改。 NPR-29308：CQ-4266746 的 Hotfix
+* 「內容片段」上轉譯的縮圖會顯示「日期」和「時間」欄位的內部日曆表示法。 NPR-29531：CQ-4269362 的 Hotfix
+* 無法大量新增標籤至具有現有不同標籤的頁面。 NPR-28729：CQ-4262922 的 Hotfix
+* 網站管理員中不會顯示「已排程的啟動」圖示。 NPR-28725：CQ-4263917 的 Hotfix
 
 **複寫**
 
 * 複製代理元件中的敏感資訊洩漏漏洞。 NPR-29612、NPR-24951:GRANITE-25070的修補程式
-* 在cq/replication/components/agent元件的輸出中，用戶提供的資料不會逸出，從而導致儲存的跨站點指令碼(XSS)漏洞。 CQ-4266263的修補程式
+* 在cq/replication/components/agent元件的輸出中，用戶提供的資料不會逸出，從而導致儲存的跨站點指令碼(XSS)漏洞。 CQ-4266263 的 Hotfix
 
 **體驗片段**
 
-* 當使用智慧型影像時，無法將體驗片段匯出至目標。 CQ-4269606的修補程式
+* 使用智慧影像時，無法將體驗片段匯出至目標。CQ-4269606 的 Hotfix
 
 **社交——報告**
 
-* AEM社群報表不會顯示在AEM作者實例中。 CQ-4266294的修補程式
+* AEM社群報表不會顯示在AEM作者實例中。 CQ-4266294 的 Hotfix
 
 **平台**
 
 * 在安裝套件時，套件管理器中的跨網站指令碼(XSS)。 NPR-29734、NPR-29713、NPR-29630:GRANITE-26161、GRANITE-的修補程式
-* 在CRXDE Lite中儲存並反映多個跨網站指令碼(XSS)。 NPR-29634:GRANITE-26049的修補程式
-* Package Share的登入功能使用GET要求，而非POST要求，使密碼顯示在網路標籤下。 NPR-29631:GRANITE-26048的修補程式
+* 在CRXDE Lite中儲存並反映多個跨網站指令碼(XSS)。 NPR-29634：GRANITE-26049 的 Hotfix
+* Package Share的登入功能使用GET要求，而非POST要求，使密碼顯示在網路標籤下。 NPR-29631：GRANITE-26048 的 Hotfix
 
-**費利克斯**
+**Felix**
 
 * 系統主控台中觀察到的跨網站指令碼(XSS)。 當滑鼠停留在文字欄位上時，頁面會載入並彈出。 NPR-29853、NPR-29633:GRANITE-26188、GRANITE-26050的修補程式
 
-**花崗岩**
+**Granite**
 
-* Apache Sling Logging Logger Configuration不會篩選已插入的指令碼。  NPR-29775:GRANITE-26051的修補程式
+* Apache Sling Logging Logger Configuration不會篩選已插入的指令碼。  NPR-29775：GRANITE-26051 的 Hotfix
 
 **社群**
 
-* 在作者上刪除的群組應從發佈例項中移除。 NPR-28933:CQ-4264645的修補程式
-* 應用程式密碼欄位應受到保護，而不應以純文字顯示於社交連線工具。 NPR-29728:CQ-4270480的修補程式
-* 沒有協調者權限的訪客和成員可以透過貼上URL來查看未核准／待審貼文。 NPR-29726:CQ-4271124、CQ-4271441的修補程式
-* 使用者登入社群時，可觀察到高達40-50秒的高回應時間。 NPR-29678:CQ-4269444的修補程式
+* 在作者上刪除的群組應從發佈例項中移除。 NPR-28933：CQ-4264645 的 Hotfix
+* 應用程式密碼欄位應受到保護，而不應以純文字顯示於社交連線工具。 NPR-29728：CQ-4270480 的 Hotfix
+* 沒有協調者權限的訪客和成員可以透過貼上URL來查看未核准／待審貼文。 NPR-29726：CQ-4271124、CQ-4271441 的 Hotfix
+* 觀察到使用者登入 Community 時出現 40-50 秒的長回應時間。NPR-29678：CQ-4269444 的 Hotfix
 
 **轉換**
 
-* 在導覽時沒有翻譯功能存取權的使用者，應無法存取其子頁面。 NPR-29644:CQ-4269979的修補程式
-* 使用者權限不受維護，因為精靈允許在唯讀位置建立翻譯副本。 NPR-29375:CQ-4265877的修補程式
+* 在導覽時沒有翻譯功能存取權的使用者，應無法存取其子頁面。 NPR-29644：CQ-4269979 的 Hotfix
+* 使用者權限不受維護，因為精靈允許在唯讀位置建立翻譯副本。 NPR-29375：CQ-4265877 的 Hotfix
 
 **UI - Foundation**
 
-* 將搜尋結果的分頁限制提高至卡片檢視的100頁，清單檢視的200頁。 NPR-29332:GRANITE-24644的修補程式
-* 由於標籤的載入緩慢，系列頁面上不會顯示任何內容。 NPR-29267:GRANITE-24902的修補程式
-* 將分頁限制變更為100而非40會觸發額外的延遲載入，而無需分頁要求。 NPR-29246:GRANITE-25027的修補程式
-* AEM granite密碼欄位在加密後無法填入。 NPR-29245:GRANITE-24908的修補程式
+* 將搜尋結果的分頁限制提高至卡片檢視的100頁，清單檢視的200頁。 NPR-29332：GRANITE-24644 的 Hotfix
+* 由於標籤的載入緩慢，系列頁面上不會顯示任何內容。 NPR-29267：GRANITE-24902 的 Hotfix
+* 將分頁限制變更為100而非40會觸發額外的延遲載入，而無需分頁要求。 NPR-29246：GRANITE-25027 的 Hotfix
+* AEM granite密碼欄位在加密後無法填入。 NPR-29245：GRANITE-24908 的 Hotfix
 
 **整合**
 
-* 嘗試編輯並儲存AEM啟動設定時，會顯示例外訊息。 NPR-29086:CQ-4266153的修補程式
-* BrightEdge憑據失敗，出現連線錯誤。  NPR-29167:CQ-4265872的修補程式
-* 應移除顯示在雲端服務設定根層級的繼承自核取方塊。 NPR-27856: CQ-4259676的修補程式
+* 嘗試編輯並儲存AEM啟動設定時，會顯示例外訊息。 NPR-29086：CQ-4266153 的 Hotfix
+* BrightEdge憑據失敗，出現連線錯誤。  NPR-29167：CQ-4265872 的 Hotfix
+* 應移除顯示在雲端服務設定根層級的繼承自核取方塊。 NPR-27856：CQ-4259676 的 Hotfix
 
 **Sling**
 
-* HTTP連線逾時無法從設定中讀取。 NPR-29264:SLING-7902的修補程式
-* JCR安裝程式回寫會導致OSGi組態使用無效格式並封鎖重新部署。 NPR-29027:CQ-4264694的修補程式
+* HTTP連線逾時無法從設定中讀取。 NPR-29264：SLING-7902 的 Hotfix
+* JCR安裝程式回寫會導致OSGi組態使用無效格式並封鎖重新部署。 NPR-29027：CQ-4264694 的 Hotfix
 
 **專案**
 
-* 使用者無法完成專案工作流程。 NPR-29621:CQ-4258791的修補程式
-* 「專案工作流程」清單會顯示超過40個工作流程的空行。 NPR-28739:CQ-4264005的修補程式
-* 在品牌入口網站中選擇「動態轉譯」選項會下載空白的。zip檔案。 NPR-29420:CQ-4268826的修補程式
-* 將資產從AEM Author /content/dam/mac資料夾發佈至品牌入口網站無法運作。 NPR-29820:CQ-4271118的修補程式
-* 名稱中的標點符號會造成發佈按鈕的問題。 NPR-29573:CQ-4269317的修補程式
-* 無法透過參考面板建立資產語言副本。 CQ-4269535的修補程式
+* 使用者無法完成專案工作流程。 NPR-29621：CQ-4258791 的 Hotfix
+* 「專案工作流程」清單會顯示超過40個工作流程的空行。 NPR-28739：CQ-4264005 的 Hotfix
+* 在品牌入口網站中選擇「動態轉譯」選項會下載空白的。zip檔案。 NPR-29420：CQ-4268826 的 Hotfix
+* 將資產從AEM Author /content/dam/mac資料夾發佈至品牌入口網站無法運作。 NPR-29820：CQ-4271118 的 Hotfix
+* 名稱中的標點符號會造成發佈按鈕的問題。 NPR-29573：CQ-4269317 的 Hotfix
+* 無法透過參考面板建立資產語言副本。 CQ-4269535 的 Hotfix
 
 **工作流程**
 
-* 從6.4.2升級至6.4.4會中斷對話參與者的日曆選擇器欄位。 NPR-29727:CQ-4270423的修補程式
+* 從6.4.2升級至6.4.4會中斷對話參與者的日曆選擇器欄位。 NPR-29727：CQ-4270423 的 Hotfix
 
 **WCM —— 管理員UI**
 
-* 在Coral2實作中開啟權限標籤時，不會顯示按鈕。 CQ-4269419的修補程式
+* 在Coral2實作中開啟權限標籤時，不會顯示按鈕。 CQ-4269419 的 Hotfix
 
 **WCM - MSM**
 
-* 刪除即時副本中的子節點應分離liveRelationship。 CQ-4270395的修補程式
-* 升級至AEM 6.4.3讓Multi-Site Manager需要很長時間才能推出。 CQ-4271410的修補程式
+* 刪除即時副本中的子節點應分離liveRelationship。 CQ-4270395 的 Hotfix
+* 升級至AEM 6.4.3讓Multi-Site Manager需要很長時間才能推出。 CQ-4271410 的 Hotfix
 
-**弱點**
+**漏洞**
 
-* CSRF保護架構無法與AEM基礎表單搭配使用。 NPR-28612:GRANITE-22231的修補程式
+* CSRF 保護架構對 AEM Foundation 表單無效。NPR-28612：GRANITE-22231 的 Hotfix
 
-**WCM —— 頁面編輯器**
+**WCM - 頁面編輯器**
 
-* 使用無效選擇器時的反映式跨網站指令碼(XSS)。 CQ-4270397的修補程式
+* 使用無效的選擇器時出現反射型跨網站指令碼 (XSS)。CQ-4270397 的 Hotfix
 
 **表單**
 
 AEM 6.4.5.0表格的主要重點為：
 
-**Forms附加套件**
+**Forms 附加元件套件**
 
 **適用性表單**
 
-* （觸控UI）啟動工作流程選項不會彈出用於設定的對話方塊。 NPR-29521:CQ-4269050的修補程式
+* （觸控UI）啟動工作流程選項不會彈出用於設定的對話方塊。 NPR-29521：CQ-4269050 的 Hotfix
 
-**表單——後端整合**
+**Forms - 後端整合**
 
-* 已針對Microsoft Dynamics內部部署整合啟用Active Directory Federation Services(ADFS)v3.0支援。 NPR-30003、NPR-29484:CQ-4270586的修補程式
-* 預填服務因AEM Forms Data Integration模組的延長週轉時間而失敗。 NPR-28997:CQ-4265988的修補程式
-* SOAP Webservice要求在AEM Forms中格式錯誤。 NPR-29013:CQ-4265443的修補程式
-* 測試SOAP服務時，如果日期值不正確，則不會顯示錯誤訊息。 CQ-4265445的修補程式
+* 已針對Microsoft Dynamics內部部署整合啟用Active Directory Federation Services(ADFS)v3.0支援。 NPR-30003、NPR-29484：CQ-4270586 的 Hotfix
+* 預填服務因AEM Forms Data Integration模組的延長週轉時間而失敗。 NPR-28997：CQ-4265988 的 Hotfix
+* SOAP Webservice要求在AEM Forms中格式錯誤。 NPR-29013：CQ-4265443 的 Hotfix
+* 測試SOAP服務時，如果日期值不正確，則不會顯示錯誤訊息。 CQ-4265445 的 Hotfix
 
 **表單——互動式通訊與表單——通訊管理**
 
-* 建立對應UI(CCR UI)無法處理浮點數。  NPR-29210:CQ-4254201的修補程式
-* 在變數上設定的工具提示不會顯示在「建立對應UI」(CCR UI)中。 NPR-29739:CQ-4250533的修補程式
-* 無法從字母內的Omnisearch複製或貼上。 NPR-29808:CQ-4270783的修補程式
+* 建立對應UI(CCR UI)無法處理浮點數。  NPR-29210：CQ-4254201 的 Hotfix
+* 在變數上設定的工具提示不會顯示在「建立對應UI」(CCR UI)中。 NPR-29739：CQ-4250533 的 Hotfix
+* 無法從字母內的Omnisearch複製或貼上。 NPR-29808：CQ-4270783 的 Hotfix
 
-**HTML5 Forms**
+**HTML5 表單**
 
-* 當我們在文字中新增空格時，文字欄位不允許填入結尾。 NPR-28844:CQ-4260239的修補程式
+* 當我們在文字中新增空格時，文字欄位不允許填入結尾。 NPR-28844：CQ-4260239 的 Hotfix
 
 **Forms JEE安裝程式**
 
 **表單- Foundation JEE**
 
-* AEM Forms Workbench中的Webservice元件無法叫用需要雙向SSL驗證的Web服務。 NPR-29485:CQ-4246794的修補程式
-* AEM Forms JEE設定管理員無法處理多個NIC卡。 NPR-29236:CQ-4268598的修補程式
-* 來自GemFire的AEM啟動錯誤：java.lang.IllegalStateException:一次只能建立一個AdminDistributedSystem連線。 NPR-29524:CQ-4266295的修補程式
-* NoClassDefFoundError，因為jar版本不匹配。 NPR-28834:NPR-28834的修補程式
+* AEM Forms Workbench中的Webservice元件無法叫用需要雙向SSL驗證的Web服務。 NPR-29485：CQ-4246794 的 Hotfix
+* AEM Forms JEE設定管理員無法處理多個NIC卡。 NPR-29236：CQ-4268598 的 Hotfix
+* 來自GemFire的AEM啟動錯誤：java.lang.IllegalStateException:一次只能建立一個AdminDistributedSystem連線。 NPR-29524：CQ-4266295 的 Hotfix
+* NoClassDefFoundError，因為jar版本不匹配。 NPR-28834：NPR-28834 的 Hotfix
 
-**表單——檔案服務**
+**Forms - 文件服務**
 
-* 無效的PDF/A檔案會報告為使用isPDFA作業的有效PDF/A。 NPR-29076:CQ-4261541的修補程式
-* PDF無法轉換為「表單」欄位的PDF/A-1b，沒有外觀規定。 NPR-29534:CQ-4269618的修補程式
-* PDF/A從輸出服務產生的PDF轉換無法透過Acrobat DC驗證。 NPR-29647:CQ-4270448的修補程式
-* Apache POI包失敗，但有例外。 NPR-27861、NPR-28048:CQ-4245898、CQ-4244778的修補程式
+* 無效的PDF/A檔案會報告為使用isPDFA作業的有效PDF/A。 NPR-29076：CQ-4261541 的 Hotfix
+* PDF無法轉換為「表單」欄位的PDF/A-1b，沒有外觀規定。 NPR-29534：CQ-4269618 的 Hotfix
+* PDF/A從輸出服務產生的PDF轉換無法透過Acrobat DC驗證。 NPR-29647：CQ-4270448 的 Hotfix
+* Apache POI包失敗，但有例外。 NPR-27861、NPR-28048：CQ-4245898、CQ-4244778 的 Hotfix
 
 **表單——設計人員**
 
 * 新增PDF/UA支援至使用設計人員與輸出服務產生的XML表單架構(XFA)表單。 NPR-23022
 
-**表單——工作流程**
+**Forms - 工作流程**
 
-* 從工作區提交時，「變母」字元會失敗。 NPR-29087:CQ-4263172的修補程式
+* 從工作區提交時，「變母」字元會失敗。 NPR-29087：CQ-4263172 的 Hotfix
 
-**隨附的功能套件**
+**包含的 Feature Pack**
 
 **資產**
 
-* 啟用資產的多網站管理員支援。 如需詳細資訊，請參閱[使用MSM為Assets](/help/assets/reuse-assets-using-msm.md)重複使用資產。 NPR-26450:CQ-4259922的修補程式
+* 啟用資產的多網站管理員支援。 如需詳細資訊，請參閱[使用MSM為Assets](/help/assets/reuse-assets-using-msm.md)重複使用資產。 NPR-26450：CQ-4259922 的 Hotfix
 
-**包含OSGI組合和內容套件**
+**包含的 OSGI 套件組合和內容套件**
 
-以下文字記錄CFP中OSGI組合和內容套件的清單。
+下列文字記錄 CFP 中包含的 OSGI 套件組合和內容套件清單。
 
-AEM 6.4.5.0隨附的OSGi搭售清單
+AEM 6.4.5.0 中包含的 OSGi 套件組合清單
 
 [取得檔案](assets/6.4.5.0_bundles.txt)
 
-AEM 6.4.5.0內容套件清單
+AEM 6.4.5.0 中包含的內容套件清單
 
 [取得檔案](assets/6.4.5.0_OSGI.txt)
 
@@ -756,7 +756,7 @@ AEM 6.4.4.0是重要的更新，其中包括效能、穩定性、安全性和重
 
 AEM 6.4.4.0的一些主要亮點是：
 
-* 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.11版。
+* 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.11 版。
 * 已新增快取服務版本支援，以避免頻繁的服務版本HTTP要求。
 * 新增刪除自動標籤的支援。
 * 實作目錄精靈的無盡捲動。
@@ -771,148 +771,148 @@ AEM 6.4.4.0的一些主要亮點是：
 **資產**
 
 * ACP和Stock整合移轉至AEM 6.4.4.0 NPR-27632
-* 稍後發佈包含子檔案夾的空白資產檔案夾，會使子檔案夾消失。 NPR-27558:CQ-4254701的修補程式
-* 新增「單一非名稱的字串」屬性會造成XMP回寫不完整。 NPR-26805:CQ-4254142的修補程式
-* 點陣化輸入pdf後，產生的輸出會遺失影像。 NPR-27929:CTG-4150481的修補程式
-* 「移動資產精靈」顯示的「參考」頁面計數錯誤。 NPR-27833:CQ-4258014的修補程式
-* AssetPicker只會搜尋第一個標籤，以在篩選時使用標籤來篩選結果。 NPR-27778:CQ-4257705的修補程式
-* AEM OOTB PDF處理常式會卡在處理含外文字元的PDF時。 NPR-28778:CQ-4254234的修補程式
-* 當CSV檔案的值在單一欄中以逗號分隔時，AEM CSV編輯器不會逸出逗號，並將其視為個別欄。 NPR-28801:CQ-4261694的修補程式
-* 使用路徑瀏覽器選擇資料時，中繼資料結構編輯器的問題。 NPR-28674:CQ-4263005的修補程式
-* 太多資產會被處理至智慧型內容服務，因此需要大量時間才能完成定期標籤程式。 NPR-28640:CQ-4262661、CQ-4262644、CQ-4263234的修補程式
-* 案頭動作不適用於`aem/start.html`頁面的Omnisearch結果。 NPR-27242:CQ-4248176的修補程式
-* 資產API不允許上傳檔案> 2 GB，造成上傳失敗。 NPR-27629:Granite-23590的修補程式
-* 當例項上啟用動態媒體時，第一次嘗試下載的資產中不會儲存中繼資料。 NPR-28233:CQ-4260759的修補程式
-* 在SiteCatalyst組態中，服務解析程式未關閉。 NPR-28015:CQ-4259397的修補程式
-* 在DAM中移動資產並不會在Scene7（p2p組態）上產生類似的移動。 NPR-28313:CQ-4261091的修補程式
+* 稍後發佈包含子檔案夾的空白資產檔案夾，會使子檔案夾消失。 NPR-27558：CQ-4254701 的 Hotfix
+* 新增「單一非名稱的字串」屬性會造成XMP回寫不完整。 NPR-26805：CQ-4254142 的 Hotfix
+* 點陣化輸入pdf後，產生的輸出會遺失影像。 NPR-27929：CTG-4150481 的 Hotfix
+* 「移動資產精靈」顯示的「參考」頁面計數錯誤。 NPR-27833：CQ-4258014 的 Hotfix
+* AssetPicker只會搜尋第一個標籤，以在篩選時使用標籤來篩選結果。 NPR-27778：CQ-4257705 的 Hotfix
+* AEM OOTB PDF處理常式會卡在處理含外文字元的PDF時。 NPR-28778：CQ-4254234 的 Hotfix
+* 當CSV檔案的值在單一欄中以逗號分隔時，AEM CSV編輯器不會逸出逗號，並將其視為個別欄。 NPR-28801：CQ-4261694 的 Hotfix
+* 使用路徑瀏覽器選擇資料時，中繼資料結構編輯器的問題。 NPR-28674：CQ-4263005 的 Hotfix
+* 太多資產會被處理至智慧型內容服務，因此需要大量時間才能完成定期標籤程式。 NPR-28640：CQ-4262661、CQ-4262644、CQ-4263234 的 Hotfix
+* 案頭動作不適用於`aem/start.html`頁面的Omnisearch結果。 NPR-27242：CQ-4248176 的 Hotfix
+* 資產API不允許上傳檔案> 2 GB，造成上傳失敗。 NPR-27629：Granite-23590 的 Hotfix
+* 當例項上啟用動態媒體時，第一次嘗試下載的資產中不會儲存中繼資料。 NPR-28233：CQ-4260759 的 Hotfix
+* 在SiteCatalyst組態中，服務解析程式未關閉。 NPR-28015：CQ-4259397 的 Hotfix
+* 在DAM中移動資產並不會在Scene7（p2p組態）上產生類似的移動。 NPR-28313：CQ-4261091 的 Hotfix
 
 **網站**
 
-* (Classic UI)轉出清單中會顯示部分即時副本。 NPR-28598、NPR-28574:CQ-4263410的修補程式
-* 當cq:master為空白或無效時，LiveRelationshipManagerImpl會拋出異常。 NPR-28590:CQ-4263115的修補程式
-* 「請求刪除」工作流程無法正確刪除頁面。 NPR-28668:CQ-4263195的修補程式
-* 關係狀態UI無法顯示相關珊瑚日期選擇器欄位的正確年份或時間戳記值。 NPR-28666:CQ-4263661的修補程式
-* 6.4版SeckuingHandler中的跨網站指令碼(XSS)。NPR-28693:CQ-4253821的修補程式
-* 從網站管理員移動檔案夾會導致記憶體不足，使AEM無法使用。 NPR-28346:CQ-4261398的修補程式
-* MSM LiveCopy Rovolt配置在更新後將丟失。 NPR-28311:CQ-4258705的修補程式
-* 無法捲動超過40種藍圖設定。 NPR-27640:CQ-4239166的修補程式
-* 使用SyntheticResource作為參考會引發Null指針異常並阻止頁面的移動。  NPR-27576:CQ-4258262的修補程式
-* 在6.1到6.4升級實例上，PushOnModify不適用於刪除。 NPR-28108:CQ-4259833的修補程式
-* （傳統UI）「取消繼承」按鈕遺失，元件可在即時副本頁面上編輯。 NPR-28256:CQ-4260161的修補程式
-* OakState0001:推出時未解決的衝突。 NPR-27982:CQ-4259548的修補程式
-* 複製／貼上包含SyntheticResource引用的結構時，進程以錯誤500結束。 NPR-27709:CQ-4259179的修補程式
-* 在啟動負載時無法終止運行的工作流。 NPR-27672:CQ-4258520的修補程式
+* (Classic UI)轉出清單中會顯示部分即時副本。 NPR-28598、NPR-28574：CQ-4263410 的 Hotfix
+* 當cq:master為空白或無效時，LiveRelationshipManagerImpl會拋出異常。 NPR-28590：CQ-4263115 的 Hotfix
+* 「請求刪除」工作流程無法正確刪除頁面。 NPR-28668：CQ-4263195 的 Hotfix
+* 關係狀態UI無法顯示相關珊瑚日期選擇器欄位的正確年份或時間戳記值。 NPR-28666：CQ-4263661 的 Hotfix
+* 適用於 6.4 的 SuggestionHandler 中出現跨網站指令碼 (XSS)。NPR-28693：CQ-4253821 的 Hotfix
+* 從網站管理員移動檔案夾會導致記憶體不足，使AEM無法使用。 NPR-28346：CQ-4261398 的 Hotfix
+* MSM LiveCopy Rovolt配置在更新後將丟失。 NPR-28311：CQ-4258705 的 Hotfix
+* 無法捲動超過40種藍圖設定。 NPR-27640：CQ-4239166 的 Hotfix
+* 使用SyntheticResource作為參考會引發Null指針異常並阻止頁面的移動。  NPR-27576：CQ-4258262 的 Hotfix
+* 在6.1到6.4升級實例上，PushOnModify不適用於刪除。 NPR-28108：CQ-4259833 的 Hotfix
+* （傳統UI）「取消繼承」按鈕遺失，元件可在即時副本頁面上編輯。 NPR-28256：CQ-4260161 的 Hotfix
+* OakState0001:推出時未解決的衝突。 NPR-27982：CQ-4259548 的 Hotfix
+* 複製／貼上包含SyntheticResource引用的結構時，進程以錯誤500結束。 NPR-27709：CQ-4259179 的 Hotfix
+* 在啟動負載時無法終止運行的工作流。 NPR-27672：CQ-4258520 的 Hotfix
 * 轉出顯示從6.1升級至6.4之後的重複轉出路徑。NPR-27845:CQ-4259487的修補程式
-* 將dam assetpicker modal整合在頁面縮圖元件中。 NPR-28131:CQ-108042的修補程式
-* （傳統UI）無法使用標籤介面工具集開啟對話方塊。 NPR-28575:CQ-4262680的修補程式
-* 多欄位檔案上傳不會顯示放置區域。 NPR-28676:CQ-4263516的修補程式
-* 將元件從AEM 6.0移轉至AEM 6.2時，發生「無效的遞回選擇器值」錯誤。NPR-28609:CQ-4241258的修補程式
-* 當外掛程式的快顯視窗高於文字區域時，對話方塊中的Rich Text Editor會閃爍，因此會封鎖任何進一步的製作。 NPR-27579:CQ-4257440的修補程式
-* （傳統UI）cq:action editante無法運作。 NPR-28232:CQ-4257703的修補程式
-* 從頁面編輯器的標籤篩選資產搜尋面板移除標籤無法正確重新整理清單。 NPR-27983:CQ-4245567的修補程式
-* 如果多欄位數值為空白，按一下「儲存」會產生無限的載入提示，而實際上不會完成。  NPR-28400、NPR-28393:CQ-4244058、CQ-4244349的修補程式
-* 只有讀取權限，使用者／群組就無法選取XF，也無法檢視XF及其頁面屬性。 NPR-28341:CQ-4260412的修補程式
-* 從Target收到的JSON資料包含許多逸出字元，導致應用程式頁面中斷。 NPR-28318:CQ-4252043的修補程式
+* 將dam assetpicker modal整合在頁面縮圖元件中。 NPR-28131：CQ-108042 的 Hotfix
+* （傳統UI）無法使用標籤介面工具集開啟對話方塊。 NPR-28575：CQ-4262680 的 Hotfix
+* 多欄位檔案上傳不會顯示放置區域。 NPR-28676：CQ-4263516 的 Hotfix
+* 將元件從 AEM 6.0 移轉到 AEM 6.2 時，出現「無效的遞迴選擇器值」錯誤。NPR-28609：CQ-4241258 的 Hotfix
+* 當外掛程式的快顯視窗高於文字區域時，對話方塊中的Rich Text Editor會閃爍，因此會封鎖任何進一步的製作。 NPR-27579：CQ-4257440 的 Hotfix
+* （傳統UI）cq:action editante無法運作。 NPR-28232：CQ-4257703 的 Hotfix
+* 從頁面編輯器的標籤篩選資產搜尋面板移除標籤無法正確重新整理清單。 NPR-27983：CQ-4245567 的 Hotfix
+* 如果多欄位數值為空白，按一下「儲存」會產生無限的載入提示，而實際上不會完成。  NPR-28400、NPR-28393：CQ-4244058、CQ-4244349 的 Hotfix
+* 只有讀取權限，使用者／群組就無法選取XF，也無法檢視XF及其頁面屬性。 NPR-28341：CQ-4260412 的 Hotfix
+* 從Target收到的JSON資料包含許多逸出字元，導致應用程式頁面中斷。 NPR-28318：CQ-4252043 的 Hotfix
 * 安裝AEM 6.4.3後，無法編輯任何元件。NPR-28125:CQ-4261216的修補程式
-* 對於結構化內容片段，不會持續刪除標籤欄位的所有標籤。 NPR-28133:CQ-4247241的修補程式
-* 編輯內容片段&quot;jcr:lastmodifiedby&quot;和&quot;jcr:lastmodified&quot;屬性時，值會在使用者不進行任何變更的情況下更新。 NPR-27847:CQ-4257138的修補程式
+* 對於結構化內容片段，不會持續刪除標籤欄位的所有標籤。 NPR-28133：CQ-4247241 的 Hotfix
+* 編輯內容片段&quot;jcr:lastmodifiedby&quot;和&quot;jcr:lastmodified&quot;屬性時，值會在使用者不進行任何變更的情況下更新。 NPR-27847：CQ-4257138 的 Hotfix
 * 內容片段版本修訂比較AEM 6.4的比較改進。NPR-27764
-* 如果/content/experience-fragments上未定義cq:allowedTemplates，而Experience Fragments範本上使用allowedPaths，則移動／複製體驗片段時會擲回錯誤。 NPR-27487:CQ-4257489的修補程式
-* 重新整理新使用者時，「建立」按鈕會出現。 NPR-27335:CQ-4255360的修補程式
-* 嘗試移動已發佈頁面時，「移動頁面」精靈第一頁顯示的「參考頁面」計數不正確。 NPR-28111:CQ-4259663的修補程式
-* (Touch UI)「參考邊欄」不會顯示傳入的連結。 NPR-28529:CQ-4262306的修補程式
+* 如果/content/experience-fragments上未定義cq:allowedTemplates，而Experience Fragments範本上使用allowedPaths，則移動／複製體驗片段時會擲回錯誤。 NPR-27487：CQ-4257489 的 Hotfix
+* 重新整理新使用者時，「建立」按鈕會出現。 NPR-27335：CQ-4255360 的 Hotfix
+* 嘗試移動已發佈頁面時，「移動頁面」精靈第一頁顯示的「參考頁面」計數不正確。 NPR-28111：CQ-4259663 的 Hotfix
+* (Touch UI)「參考邊欄」不會顯示傳入的連結。 NPR-28529：CQ-4262306 的 Hotfix
 * 安裝AEM 6.4.3後，無法編輯任何元件和頁面屬性。NPR-27998:CQ-4261216、CQ-4260441的修補程式
-* 將contexthub移轉至jquery 3。 NPR-28397:GRANITE-19902的修補程式
+* 將 ContextHub 移轉至 jquery 3。NPR-28397：GRANITE-19902 的 Hotfix
 
 **商務**
 
-* 如果資料夾中有20個以上的目錄，則無法選取目錄。 NPR-27649:CQ-4258119的修補程式
-* 商務精靈和屬性檢視會因為header.referer遺失而中斷。 CQ-4261122的修補程式
+* 如果資料夾中有20個以上的目錄，則無法選取目錄。 NPR-27649：CQ-4258119 的 Hotfix
+* 商務精靈和屬性檢視會因為header.referer遺失而中斷。 CQ-4261122 的 Hotfix
 
-**促銷活動——定位**
+**Campaign - 目標定位**
 
-* com.day.cq.personalization.impl.TeaserResourceEventHandler會進入無限循環，並導致發佈實例上的節點更新。 CQ-4263096的修補程式
+* com.day.cq.personalization.impl.TeaserResourceEventHandler會進入無限循環，並導致發佈實例上的節點更新。 CQ-4263096 的 Hotfix
 
 **複寫**
 
-* 建立複製內容com.day.cq.replication.AccessDeniedException時出錯。 NPR-28314:CQ-4261401的修補程式
-* 在複製代理中將用戶代理ID設定為admin時會洩漏會話。 NPR-28220:CQ-4255517的修補程式
+* 建立複製內容com.day.cq.replication.AccessDeniedException時出錯。 NPR-28314：CQ-4261401 的 Hotfix
+* 在複製代理中將用戶代理ID設定為admin時會洩漏會話。 NPR-28220：CQ-4255517 的 Hotfix
 
 **DAM - Creative Cloud**
 
-* 從AEM Assets中支援HTTP API以尋找類似影像。 CQ-4254091的修補程式
-* 增強ACP API，允許將查詢結果限制在系列的成員。 CQ-4258708的修補程式
+* 從AEM Assets中支援HTTP API以尋找類似影像。 CQ-4254091 的 Hotfix
+* 增強ACP API，允許將查詢結果限制在系列的成員。 CQ-4258708 的 Hotfix
 
 **DAM —— 格式**
 
-* 觸發中繼資料匯出後，頁面會重新導向至404頁面。 CQ-4262447的修補程式
+* 觸發中繼資料匯出後，頁面會重新導向至404頁面。 CQ-4262447 的 Hotfix
 
-**DAM —— 一般**
+**DAM - 一般**
 
-* （Adobe Stock整合）伺服器錯誤模式會在error.log檔案中顯示，並顯示Oauth錯誤。 CQ-4260406的修補程式
+* （Adobe Stock整合）伺服器錯誤模式會在error.log檔案中顯示，並顯示Oauth錯誤。 CQ-4260406 的 Hotfix
 * 如果6.4.4套用至6.4.3,Adobe Stock整合將無法運作。CQ-4266009的修補程式
-* 即使在套用SP3修補程式後，CF模型的連結仍會遺失。 CQ-4259029的修補程式
+* 即使在套用SP3修補程式後，CF模型的連結仍會遺失。 CQ-4259029 的 Hotfix
 
 **平台**
 
 * （傳統UI）升級至6.4.2後，「基本報表」元件中無法使用編輯按鈕。NPR-28560:CQ-4262825的修補程式
-* 使用結合property.operation=like和property.depth的查詢時，結果會顯示為InvalidQueryException。 NPR-28570:CQ-4262652的修補程式
-* 從覆蓋的語言節點移除新添加的語言節點時發生內部伺服器錯誤。 NPR-28661:CQ-4239194的修補程式
-* 隨機啟動時sling-oak-1線程中stderr.log中的Null Pointer Exception。 NPR-28665:CQ-4237845的修補程式
+* 使用結合property.operation=like和property.depth的查詢時，結果會顯示為InvalidQueryException。 NPR-28570：CQ-4262652 的 Hotfix
+* 從覆蓋的語言節點移除新添加的語言節點時發生內部伺服器錯誤。 NPR-28661：CQ-4239194 的 Hotfix
+* 隨機啟動時sling-oak-1線程中stderr.log中的Null Pointer Exception。 NPR-28665：CQ-4237845 的 Hotfix
 
 **費利克斯**
 
-* webconsole.plugins.memoryusage會在重新整理時造成死鎖。 NPR-27895: GRANITE-20715的修補程式
+* webconsole.plugins.memoryusage會在重新整理時造成死鎖。 NPR-27895：GRANITE-20715 的 Hotfix
 
 **花崗岩**
 
-* Sling Content Access Health Check會針對自訂資源解析程式搜尋路徑執行冗長的/libs驗證。 NPR-28113:GRANITE-23529的修補程式
+* Sling Content Access Health Check會針對自訂資源解析程式搜尋路徑執行冗長的/libs驗證。 NPR-28113：GRANITE-23529 的 Hotfix
 
 **內容片段管理**
 
-* 與內容片段的資產相比，可用性的改善和功能相同。 CQ-4253883的修補程式
+* 與內容片段的資產相比，可用性的改善和功能相同。 CQ-4253883 的 Hotfix
 
 **社群**
 
 * 將易受攻擊的引導程式升級到3.4 ，將ckeditor庫升級到4.5.11。NPR-28490:CQ-4257511的修補程式
-* 取消編輯模式不會恢復已刪除的附件。 NPR-27902:CQ-4255150的修補程式
-* 僅特權成員才能看到代表框的合成。 NPR-27900:CQ-4251235的修補程式
-* 在發佈例項上的AEM Communities使用者同步接聽程式，將rep:cache新增至可忽略節點。 NPR-27842:CQ-4247234的修補程式
-* 搜尋方塊在UI層級顯示逸出字元。 NPR-27838:CQ-4259757的修補程式
-* 搜尋特殊字元(, +,?)時產生錯誤 快速搜尋。 NPR-28213:CQ-4260969的修補程式
+* 取消編輯模式不會恢復已刪除的附件。 NPR-27902：CQ-4255150 的 Hotfix
+* 僅特權成員才能看到代表框的合成。 NPR-27900：CQ-4251235 的 Hotfix
+* 在發佈例項上的AEM Communities使用者同步接聽程式，將rep:cache新增至可忽略節點。 NPR-27842：CQ-4247234 的 Hotfix
+* 搜尋方塊在UI層級顯示逸出字元。 NPR-27838：CQ-4259757 的 Hotfix
+* 搜尋特殊字元(, +,?)時產生錯誤 快速搜尋。 NPR-28213：CQ-4260969 的 Hotfix
 * 建立「社群特定管理員」群組，讓使用者能夠編輯和製作相關社群網站。 NPR-27731
-* 新增鍵盤事件邏輯以開啟視訊。 NPR-27726:CQ-4254026的修補程式
-* 在「發佈」上為「AEM Communities啟用元件」啟用鍵盤導覽。 NPR-27728:CQ-4254028的修補程式
-* 已新增清單和卡片檢視按鈕的標籤。 NPR-27727:CQ-4254027的修補程式
-* 在Social- Communities中處理開放資源解析程式工作階段。 NPR-27721:CQ-4258714的修補程式
+* 新增鍵盤事件邏輯以開啟視訊。 NPR-27726：CQ-4254026 的 Hotfix
+* 在 Publish 上為 AEM Communities Enablement 元件啟用鍵盤導覽。NPR-27728：CQ-4254028 的 Hotfix
+* 為清單和卡片檢視按鈕新增 Aria 標籤。NPR-27727：CQ-4254027 的 Hotfix
+* 在Social- Communities中處理開放資源解析程式工作階段。 NPR-27721：CQ-4258714 的 Hotfix
 
 **轉換**
 
-* 提供Microsoft Translator Text API v3的支援。 NPR-28366:CQ-4249755的修補程式
-* jcr:language &amp; cq:language不會在翻譯的「語言」中自動更新。 NPR-28338:CQ-4256046的修補程式
-* 循環引用在建立語言副本時導致StackOverflowError。 NPR-27596:CQ-4255621的修補程式
-* 在多語言翻譯項目中，按一下保存並關閉添加到項目的後續頁面中的結果，將生成新項目，而不是在現有項目中建立新的翻譯作業。 NPR-28219、NPR-28236:CQ-4261276、CQ-4260731的修補程式
-* 由於允許的字元數目限制，在新增包含大量資料的內容片段時，錯誤字串太長。 NPR-28722:CQ-4262362的修補程式
+* 提供Microsoft Translator Text API v3的支援。 NPR-28366：CQ-4249755 的 Hotfix
+* jcr:language &amp; cq:language不會在翻譯的「語言」中自動更新。 NPR-28338：CQ-4256046 的 Hotfix
+* 循環引用在建立語言副本時導致StackOverflowError。 NPR-27596：CQ-4255621 的 Hotfix
+* 在多語言翻譯項目中，按一下保存並關閉添加到項目的後續頁面中的結果，將生成新項目，而不是在現有項目中建立新的翻譯作業。 NPR-28219、NPR-28236：CQ-4261276、CQ-4260731 的 Hotfix
+* 由於允許的字元數目限制，在新增包含大量資料的內容片段時，錯誤字串太長。 NPR-28722：CQ-4262362 的 Hotfix
 
 **Social**
 
-* 每次張貼新留言時，張貼至下一頁的留言都會以黃色反白顯示。 CQ-4261359的修補程式
-* 無法使用API刪除使用者產生的內容中的注釋。 NPR-28075:CQ-4261135的修補程式
-* AbstractNotificationOperationService導致ClassCastException。 CQ-4260456的修補程式
-* 移除播放器中可分享內容物件參考模型(SCORM)雲端的參考。 CQ-4260779的修補程式
+* 每次張貼新留言時，張貼至下一頁的留言都會以黃色反白顯示。 CQ-4261359 的 Hotfix
+* 無法使用 API 刪除使用者產生的內容中的評論。NPR-28075：CQ-4261135 的 Hotfix
+* AbstractNotificationOperationService導致ClassCastException。 CQ-4260456 的 Hotfix
+* 移除播放器中共享內容物件參考模型 (SCORM) 雲端的參考。CQ-4260779 的 Hotfix
 
 **UI - Foundation**
 
-* HTML Client Library Manager中整合的「Filesystem輸出快取」功能會中斷編譯指令碼（例如LESS檔案）的「debugClientLibs」功能。 NPR-27249:Granite-23313的修補程式
-* 啟動除錯模式時顯示的資產數目一律為1，而且瀏覽器主控台會擲回許多JS錯誤。  NPR-27575:GRANITE-23750的修補程式
-* 在AEM WAR with Tomcat中，頁面屬性的儲存與關閉無法返回正確的頁面。 NPR-27566:GRANITE-23671的修補程式
+* HTML Client Library Manager中整合的「Filesystem輸出快取」功能會中斷編譯指令碼（例如LESS檔案）的「debugClientLibs」功能。 NPR-27249：Granite-23313 的 Hotfix
+* 啟動除錯模式時顯示的資產數目一律為1，而且瀏覽器主控台會擲回許多JS錯誤。  NPR-27575：GRANITE-23750 的 Hotfix
+* 在AEM WAR with Tomcat中，頁面屬性的儲存與關閉無法返回正確的頁面。 NPR-27566：GRANITE-23671 的 Hotfix
 
 **整合**
 
-* `com.day.cq.personalization.impl.TeaserResourceEventHandler` 會進入無限循環，並導致發佈例項上的節點更新。NPR-28561:CQ-4263096的修補程式
-* cq:actions不會考慮目標元件。 NPR-27616:CQ-4257497的修補程式
-* LiveCopy繼承取消無法在目標容器上正常運作。 NPR-28129:CQ-4259813的修補程式
-* （雲端服務設定）應移除根層級顯示的「繼承自」核取方塊。 NPR-27856: CQ-4259676的修補程式
+* `com.day.cq.personalization.impl.TeaserResourceEventHandler` 進入無限迴圈，並造成發佈執行個體上的節點更新。NPR-28561：CQ-4263096 的 Hotfix
+* 系統沒有針對目標元件考慮 cq:actions。NPR-27616：CQ-4257497 的 Hotfix
+* LiveCopy 繼承取消無法在目標容器上正常運作。NPR-28129：CQ-4259813 的 Hotfix
+* (雲端服務設定) 根層級顯示的「繼承自」核取方塊應移除。NPR-27856：CQ-4259676 的 Hotfix
 
 **Sling**
 
@@ -924,16 +924,16 @@ AEM 6.4.4.0的一些主要亮點是：
 
 **專案**
 
-* 多語言翻譯項目不會為不屬於管理員組的用戶建立多語言作業。 NPR-28508:CQ-4262023的修補程式
-* 每當在服務啟動期間調用getTaskRenders時，ProjectTaskListServlet就會洩漏ResourceResolver。 NPR-27590:CQ-4258011的修補程式
-* 如果目錄的子目錄數多於頁面大小，並且排序依日期或大小而定，則錯誤會阻止您跳過第一頁。 NPR-28867:CQ-4265039的修補程式
-* 在DAM檢視器中支援跨網站指令碼(XSS)修正。 NPR-28106: CQ-4253215的修補程式
-* 項目管理員無法將頁面添加到翻譯項目，因為將新頁面添加到翻譯項目的連結不可見。 CQ-4266334的修補程式
+* 多語言翻譯項目不會為不屬於管理員組的用戶建立多語言作業。 NPR-28508：CQ-4262023 的 Hotfix
+* 每當在服務啟動期間調用getTaskRenders時，ProjectTaskListServlet就會洩漏ResourceResolver。 NPR-27590：CQ-4258011 的 Hotfix
+* 如果目錄的子目錄數多於頁面大小，並且排序依日期或大小而定，則錯誤會阻止您跳過第一頁。 NPR-28867：CQ-4265039 的 Hotfix
+* 在DAM檢視器中支援跨網站指令碼(XSS)修正。 NPR-28106：CQ-4253215 的 Hotfix
+* 項目管理員無法將頁面添加到翻譯項目，因為將新頁面添加到翻譯項目的連結不可見。 CQ-4266334 的 Hotfix
 
 **工作流程**
 
-* 當我們在具有「標籤」(Tag)欄位的工作流通知中開啟完整的工作項目對話框時，按一下交叉標籤會向其添加一個「標籤」(Tag)屬性。 NPR-28304:CQ-4261321的修補程式
-* 「重新指派任務」對話框中的「用戶選擇切換按鈕」無法工作。 NPR-28963:CQ-4264206的修補程式
+* 當我們在具有「標籤」(Tag)欄位的工作流通知中開啟完整的工作項目對話框時，按一下交叉標籤會向其添加一個「標籤」(Tag)屬性。 NPR-28304：CQ-4261321 的 Hotfix
+* 「重新指派任務」對話框中的「用戶選擇切換按鈕」無法工作。 NPR-28963：CQ-4264206 的 Hotfix
 
 **表單**
 
@@ -941,89 +941,89 @@ AEM 6.4.4.0表格的主要重點為：
 
 * 新增支援記錄檔案安全性API，以簽署和認證為交易。
 
-**Forms附加套件**
+**Forms 附加元件套件**
 
 **Adobe Sign整合**
 
-* AEM 6.4 Forms Client SDK不包含adobesign-recipent套件。 NPR-27735:CQ-4259372的修補程式
+* AEM 6.4 Forms Client SDK不包含adobesign-recipent套件。 NPR-27735：CQ-4259372 的 Hotfix
 
 **適用性表單**
 
-* 當使用空白模板建立Wan自適應表單時，客戶無法將子面板添加到表單的根面板。 NPR-28758:CQ-4264157的修補程式
-* 當日期元件的年欄位值為9999時，驗證指令碼將失敗。 NPR-28580:CQ-4262620的修補程式
-* 當使用空白範本建立最適化表單時，客戶無法將子面板拖曳至表單的根面板。 NPR-28758:CQ-4264157的修補程式
-* 無法在自適應表單的延遲載入片段欄位之間設定值。 NPR-27758:CQ-4259703的修補程式
-* 最適化表單不使用Rich text Editor，而是載入其程式庫。  NPR-27759: CQ-4259193的修補程式
-* 重新導向至「AEM網站頁面中內嵌的最適化表單無法使用URL」。 NPR-27620:CQ-4239287的修補程式
-* 無法在自適應表單的延遲載入片段欄位之間設定值。 NPR-28320:CQ-4262345的修補程式
-* 最適化表單不使用Rich text Editor，而是載入其程式庫。  NPR-28001:CQ-4259703、CQ-4259193的修補程式
+* 當使用空白模板建立Wan自適應表單時，客戶無法將子面板添加到表單的根面板。 NPR-28758：CQ-4264157 的 Hotfix
+* 當日期元件的年欄位值為9999時，驗證指令碼將失敗。 NPR-28580：CQ-4262620 的 Hotfix
+* 當使用空白範本建立最適化表單時，客戶無法將子面板拖曳至表單的根面板。 NPR-28758：CQ-4264157 的 Hotfix
+* 無法在自適應表單的延遲載入片段欄位之間設定值。 NPR-27758：CQ-4259703 的 Hotfix
+* 最適化表單不使用Rich text Editor，而是載入其程式庫。  NPR-27759：CQ-4259193 的 Hotfix
+* 重新導向至「AEM網站頁面中內嵌的最適化表單無法使用URL」。 NPR-27620：CQ-4239287 的 Hotfix
+* 無法在自適應表單的延遲載入片段欄位之間設定值。 NPR-28320：CQ-4262345 的 Hotfix
+* 最適化表單不使用Rich text Editor，而是載入其程式庫。  NPR-28001：CQ-4259703、CQ-4259193 的 Hotfix
 * 在Apple iOS 12.1上執行的AEM Forms應用程式無法使用塗鴉簽名。NPR-28497:CQ-4261765的修補程式
 * 使用6.4中的「Forms Workflow」 Classic編寫問題提交動作。CQ-4252740的修補程式
-* 處理塊和臨時儲存刪除時出錯。 NPR-28806:CQ-4264441的修補程式
+* 處理塊和臨時儲存刪除時出錯。 NPR-28806：CQ-4264441 的 Hotfix
 
 **表單——信件管理**
 
-* 代理UI無法保留映像的原始大小。 NPR-28800:CQ-4259767的修補程式
-* CCR/代理UI:「資料」標籤中「日期」欄位的標籤已移位。 CQ-4255499的修補程式
+* 代理UI無法保留映像的原始大小。 NPR-28800：CQ-4259767 的 Hotfix
+* CCR/代理UI:「資料」標籤中「日期」欄位的標籤已移位。 CQ-4255499 的 Hotfix
 
 **表單——事務報表**
 
-* 新增支援使用數位簽章或將檔案認證為可付款交易。 NPR-28495:CQ-4260236的修補程式
-* 已新增數位簽名和認證至計費API。 CQ-4260236的修補程式
+* 新增支援使用數位簽章或將檔案認證為可付款交易。 NPR-28495：CQ-4260236 的 Hotfix
+* 已新增數位簽名和認證至計費API。 CQ-4260236 的 Hotfix
 
 **表單管理**
 
-已新增支援，可在Forms Manager的開始審閱精靈和移動資產精靈中，以底線取代手把用戶端程式庫的使用。 NPR-27643:CQ-4246536的修補程式。
+已新增支援，可在Forms Manager的開始審閱精靈和移動資產精靈中，以底線取代手把用戶端程式庫的使用。 NPR-27643：CQ-4246536 的 Hotfix.
 在版本/640分支上安裝Forms管理套件後，一個套件會保持安裝狀態。 CQ-4265410的修補程式
-已提交的表單中附有附件，不會在提交動作「叫用AEM Forms Workflow」並勾選啟用入口網站提交的工作流程中顯示。 CQ-4263110的修補程式
+已提交的表單中附有附件，不會在提交動作「叫用AEM Forms Workflow」並勾選啟用入口網站提交的工作流程中顯示。 CQ-4263110 的 Hotfix
 
-**表單——後端整合**
+**Forms - 後端整合**
 
 * 無法使用Client SDK（CQ-4238469的修補程式）來測試前置／後置預處理器和自訂提交
 
 **Forms JEE安裝程式**
 
-**表單——檔案安全性**
+**Forms - 文件安全性**
 
-* 在使用更新策略服務時，將發生無法強制對象錯誤。 NPR-28751:CQ-4252287的修補程式
-* Signature Build failing with alder version of commons-pkg. CQ-4265535的修補程式
+* 在使用更新策略服務時，將發生無法強制對象錯誤。 NPR-28751：CQ-4252287 的 Hotfix
+* Signature Build failing with alder version of commons-pkg. CQ-4265535 的 Hotfix
 
 **表單- Foundation JEE**
 
-* 在IBM WebSphere上安裝AEM Forms時，建立以SOAP為基礎的表單資料模型會失敗。 NPR-27923:CQ-4251134的修補程式
+* 在IBM WebSphere上安裝AEM Forms時，建立以SOAP為基礎的表單資料模型會失敗。 NPR-27923：CQ-4251134 的 Hotfix
 * PDF Generator的SRT工具無法偵測到安裝的Adobe Acrobat版本。 NPR-27971
 
 **表單——設計人員**
 
-* XDP範本中的某些JPEG影像無法正確呈現。  NPR-26702:LC-3917457的修補程式
+* XDP範本中的某些JPEG影像無法正確呈現。  NPR-26702：LC-3917457 的 Hotfix
 
-**表單——工作流程**
+**Forms - 工作流程**
 
-* 在an.lca中具有預設提交流程的HTML5表單在JBoss 7上無效。 NPR-28675:CQ-4243928的修補程式
-* 無法在HTML工作區中提交PDF表格。 NPR-28058:CQ-4260373的修補程式
-* 使用調用FDM服務表單工作流在資訊日誌中打印客戶資料。 CQ-4260385的修補程式
+* 在an.lca中具有預設提交流程的HTML5表單在JBoss 7上無效。 NPR-28675：CQ-4243928 的 Hotfix
+* 無法在HTML工作區中提交PDF表格。 NPR-28058：CQ-4260373 的 Hotfix
+* 使用調用FDM服務表單工作流在資訊日誌中打印客戶資料。 CQ-4260385 的 Hotfix
 
-**隨附的功能套件**
+**包含的 Feature Pack**
 
 **網站**
 
 * 內容片段版本修訂比較AEM 6.4的不同改進。 NPR-26760:FP for CQ-4248839
 * AEM 6.4的內容片段差異改進。 NPR-27866:FP for CQ-4248839
-* OSGI設定&#x200B;**AEM Workflow Twidthrad Feature Flag**&#x200B;中的啟用功能。 撤消操作應在設定標誌後終止工作流實例。 NPR-26451:CQ-4259090的修補程式
+* OSGI設定&#x200B;**AEM Workflow Twidthrad Feature Flag**&#x200B;中的啟用功能。 撤消操作應在設定標誌後終止工作流實例。 NPR-26451：CQ-4259090 的 Hotfix
 
 **平台**
 
 * 增強的Query Builder Facet擷取運用Oak API for 6.4。NPR-26674:FP for CQ-4230337
 
-**包含OSGI組合和內容套件**
+**包含的 OSGI 套件組合和內容套件**
 
-以下文字記錄CFP中OSGI組合和內容套件的清單。
+下列文字記錄 CFP 中包含的 OSGI 套件組合和內容套件清單。
 
-AEM 6.4.4.0隨附的OSGi搭售清單
+AEM 6.4.4.0 中包含的 OSGi 套件組合清單
 
 [取得檔案](assets/bundles_6_4_4_0.txt)
 
-AEM 6.4.4.0內容套件清單
+AEM 6.4.4.0 中包含的內容套件清單
 
 [取得檔案](assets/osgi_package_6_440.txt)
 
@@ -1035,7 +1035,7 @@ AEM 6.4.3.0是重要的更新，其中包括效能、穩定性、安全性和重
 
 AEM 6.4.3.0的一些主要亮點是：
 
-* 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.9版。
+* 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.9 版。
 * 新增對Adaptive Forms範本上allowedPaths屬性的支援。
 * AEM中資產的增強面板搜尋
 * 跨網站指令碼(XSS)修正登入頁面。
@@ -1053,7 +1053,7 @@ AEM 6.4.3.0的一些主要亮點是：
 * 資產中繼資料在安裝Service Pack後會顯示無效的命名空間錯誤。 NPR-22341;CQ-4237202的Quickfix
 * 對於適用的資料夾，不會顯示在清單視圖中重新排序資料夾和內容片段的選項。 NPR-27153;CQ-4255873的修補程式
 * 使用者無法將資產新增至新系列，因為它會在錯誤彈出式對話方塊中產生錯誤訊息，影像中斷。 NPR-22431;CQ-4237086的修補程式
-* 動態下拉式清單不支援階層式下拉式清單。 NPR-27043;CQ-4252564的修補程式
+* 動態下拉式清單不支援階層式下拉式清單。NPR-27043;CQ-4252564的修補程式
 * 如果使用者在DMS7雲端設定中為「公司根資料夾」設定非預設值，檢視器預設集將無法如預期般運作。 NPR-26360;CQ-4249505的修補程式
 * 對於具有大量資產的例項，資產報告失敗。 NPR-27278;CQ-4256748的修補程式
 * 子資料夾不會繼承父資料夾的SmartCrop映像配置檔案。 NPR-27197;CQ-4256273的修補程式
@@ -1064,42 +1064,42 @@ AEM 6.4.3.0的一些主要亮點是：
 
 **網站**
 
-* 使用者可以使用內容原則，在串聯全螢幕模式中控制Rich Text編輯器功能，但無法使用內容原則控制Edit Dialog Rich Text編輯器功能。 NPR-26750:CQ-4241130的修補程式
-* 當從全螢幕切換為浮動對話方塊時，Rich Text Editor變得無法使用。 浮動檢視包含兩個豐富式文字編輯器。 NPR-25589:CQ-4206008的修補程式
-* 當在文字欄位中按下傳回鍵（Enter鍵）時，Rich Text編輯器會切換為全螢幕模式。 NPR-26204:CQ-4245893的修補程式
-* 富格文字編輯器的清單外掛程式會自動停用，且不允許修改。 NPR-26507:CQ-4239387的修補程式
-* 當特殊字元新增至RTF編輯器視窗時，視窗會捲動至頂端。 NPR-26435:CQ-4249869的修補程式
-* 用戶端內容segment.js快取與非快取問題。 NPR-26622:CQ-4253486的修補程式
-* 從作者例項啟動至發佈例項的子規則時，發佈例項會停止運作。 NPR-26601:CQ-4253588的修補程式
-* 當富格文本編輯器與多個欄位組合時，Uncated TypeError:fieldAPI.getName不是發生foundation.js錯誤時的函式。 NPR-27146:CQ-4253155的修補程式
-* Salesforce整合無法使用Proxy設定。 NPR-27244:CQ-4245300的修補程式
-* 當您使用「管理出版物」選項排程頁面以供日後啟動，並切換至清單檢視時，日曆圖示會遺失。 NPR-26974:CQ-4239206的修補程式
+* 使用者可以使用內容原則，在串聯全螢幕模式中控制Rich Text編輯器功能，但無法使用內容原則控制Edit Dialog Rich Text編輯器功能。 NPR-26750：CQ-4241130 的 Hotfix
+* 當從全螢幕切換為浮動對話方塊時，Rich Text Editor變得無法使用。 浮動檢視包含兩個豐富式文字編輯器。 NPR-25589：CQ-4206008 的 Hotfix
+* 當在文字欄位中按下傳回鍵（Enter鍵）時，Rich Text編輯器會切換為全螢幕模式。 NPR-26204：CQ-4245893 的 Hotfix
+* 富格文字編輯器的清單外掛程式會自動停用，且不允許修改。 NPR-26507：CQ-4239387 的 Hotfix
+* 當特殊字元新增至RTF編輯器視窗時，視窗會捲動至頂端。 NPR-26435：CQ-4249869 的 Hotfix
+* 用戶端內容 segment.js 快取與非快取問題。NPR-26622：CQ-4253486 的 Hotfix
+* 從作者例項啟動至發佈例項的子規則時，發佈例項會停止運作。 NPR-26601：CQ-4253588 的 Hotfix
+* RTF 編輯器與多個欄位結合時，出現「Uncaught TypeError: fieldAPI.getName 不是 foundation.js 的函數」錯誤。NPR-27146：CQ-4253155 的 Hotfix
+* Salesforce整合無法使用Proxy設定。 NPR-27244：CQ-4245300 的 Hotfix
+* 當您使用「管理出版物」選項排程頁面以供日後啟動，並切換至清單檢視時，日曆圖示會遺失。 NPR-26974：CQ-4239206 的 Hotfix
 * 使用者無法編輯頁面屬性中的已關閉使用者群組權限。 NPR-27138:CQ-4256089的修補程式
-無法透過標籤編輯標籤。 NPR-26957:CQ-4254858的修補程式
-* 當從結構化內容片段模型參考的標籤被移動時，不會更新內容片段中標籤的現有參考。 這會在內容片段模型的編輯畫面中發生。 NPR-26776:CQ-4251805的修補程式
-* 當您建立並促銷包含數個頁面的啟動時，會為每個頁面建立多個版本。 NPR-26917:CQ-4254663的修補程式
-* AEM網站管理員不會處理輸入至瀏覽器位址列的路徑。 NPR-26780:CQ-4254097的修補程式
-* 當頁面移至新位置而未重新命名時，頁面的版本記錄會遺失。 NPR-26706:CQ-4254025的修補程式
-* 體驗片段管理員編輯器中的URL不允許覆蓋。 NPR-26319:CQ-4252156的修補程式
-* 當使用包含空白體驗片段的範本建立頁面並發佈時，該頁面無法開啟，且會發生DefaultSlingScript錯誤。 NPR-26305:CQ-4252460的修補程式
-* 當與名稱相同的類一起使用資料漏洞時，將產生不可編譯的代碼。 NPR-27282:Sling-7581的修補程式
-* 在安裝升級版SP後，這些網站將有空白的Blueprint開始配置。 NPR-27609:CQ-4257078的修補程式
+無法透過標籤編輯標籤。 NPR-26957：CQ-4254858 的 Hotfix
+* 當從結構化內容片段模型參考的標籤被移動時，不會更新內容片段中標籤的現有參考。 這會在內容片段模型的編輯畫面中發生。 NPR-26776：CQ-4251805 的 Hotfix
+* 當您建立並促銷包含數個頁面的啟動時，會為每個頁面建立多個版本。 NPR-26917：CQ-4254663 的 Hotfix
+* AEM網站管理員不會處理輸入至瀏覽器位址列的路徑。 NPR-26780：CQ-4254097 的 Hotfix
+* 當頁面移至新位置而未重新命名時，頁面的版本記錄會遺失。 NPR-26706：CQ-4254025 的 Hotfix
+* 體驗片段管理員編輯器中的URL不允許覆蓋。 NPR-26319：CQ-4252156 的 Hotfix
+* 當使用包含空白體驗片段的範本建立頁面並發佈時，該頁面無法開啟，且會發生DefaultSlingScript錯誤。 NPR-26305：CQ-4252460 的 Hotfix
+* 當與名稱相同的類一起使用資料漏洞時，將產生不可編譯的代碼。 NPR-27282：Sling-7581 的 Hotfix
+* 在安裝升級版SP後，這些網站將有空白的Blueprint開始配置。 NPR-27609：CQ-4257078 的 Hotfix
 
 **DAM —— 品牌入口網站**
 
-* 將中繼資料結構表單發佈至品牌入口網站時，不會發佈標籤謂語。 CQ-4256218的修補程式
-* 當從AEM發佈至品牌入口網站的第三層檔案夾時，若未發佈父資料夾，檔案夾名稱會變更。 CQ-4255423的修補程式
-* 路徑瀏覽器謂詞會如預期般從AEM Assets發佈至品牌入口網站。 不過，BP的發佈路徑仍為/content/dam，必須更新。 CQ-4256240的修補程式
+* 將中繼資料結構表單發佈至品牌入口網站時，不會發佈標籤謂語。 CQ-4256218 的 Hotfix
+* 當從AEM發佈至品牌入口網站的第三層檔案夾時，若未發佈父資料夾，檔案夾名稱會變更。 CQ-4255423 的 Hotfix
+* 路徑瀏覽器謂詞會如預期般從AEM Assets發佈至品牌入口網站。 不過，BP的發佈路徑仍為/content/dam，必須更新。 CQ-4256240 的 Hotfix
 
 **DAM - Creative Cloud**
 
-* AEM主導覽中遺失「搜尋Adobe資產」圖示。 CQ-4254343的修補程式
+* AEM主導覽中遺失「搜尋Adobe資產」圖示。 CQ-4254343 的 Hotfix
 
-**DAM - DM客戶端**
+**DAM - DM 用戶端**
 
-* 在將視頻收錄到與AVS視頻處理配置檔案關聯的資料夾中後，瀏覽器窗口會反複刷新。 CQ-4253563的修補程式
-* 使用包含大寫字元的臨機標籤時，YouTube發佈會失敗。 CQ-4252477的修補程式
-* 在PDF等資產中建立註解時，UI會啟動無限的頁面重新整理循環。 NPR-27052:CQ-4255396的修補程式
+* 在將視頻收錄到與AVS視頻處理配置檔案關聯的資料夾中後，瀏覽器窗口會反複刷新。 CQ-4253563 的 Hotfix
+* 使用包含大寫字元的臨機標籤時，YouTube發佈會失敗。 CQ-4252477 的 Hotfix
+* 在PDF等資產中建立註解時，UI會啟動無限的頁面重新整理循環。 NPR-27052：CQ-4255396 的 Hotfix
 
 **DAM - DM服務**
 
@@ -1107,69 +1107,69 @@ AEM 6.4.3.0的一些主要亮點是：
 
 **平台**
 
-* org.apache.sling.i18n的效能問題。 NPR-26812:SLING-7543的修補程式
-* 當輸入XML格式化和部署時，無法看到節點屬性。 NPR-26198:CQ-4250448的修補程式
-* ResourceProviderTracker中的IndexOutOfBoundsException。 NPR-26968:GRANITE-23310的修補程式
-* JMX主控台會累積許多管理階段作業，每5分鐘就會開啟一個新階段作業。 NPR-26958:CQ-4251090的修補程式
-* 從6.2升級至6.4後，記錄檔會顯示未關閉資源解析程式com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck的堆疊追蹤。 NPR-26176:Granite-21734的修補程式
-* 將現成可用的調度器刷新代理配置為更新別名時，操作將失敗，並出現StackOverflowError。 NPR-26373:CQ-4242928的修補程式
+* org.apache.sling.i18n的效能問題。 NPR-26812：SLING-7543 的 Hotfix
+* 當輸入XML格式化和部署時，無法看到節點屬性。 NPR-26198：CQ-4250448 的 Hotfix
+* ResourceProviderTracker中的IndexOutOfBoundsException。 NPR-26968：GRANITE-23310 的 Hotfix
+* JMX主控台會累積許多管理階段作業，每5分鐘就會開啟一個新階段作業。 NPR-26958：CQ-4251090 的 Hotfix
+* 從6.2升級至6.4後，記錄檔會顯示未關閉資源解析程式com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck的堆疊追蹤。 NPR-26176：Granite-21734 的 Hotfix
+* 將現成可用的調度器刷新代理配置為更新別名時，操作將失敗，並出現StackOverflowError。 NPR-26373：CQ-4242928 的 Hotfix
 * 複製使用過期的OAuth Token，直到失敗。 NPR-25894
 * Restricted page(Closed User Group page)with sling:別名不會將使用者重新導向至登入頁面。 NPR-25715:Granite=22263的修補程式
-* 在發佈標籤時，UI上不會顯示任何活動。 CQ-4255961的修補程式
-* 無法在傳統UI中編輯標籤。 CQ-4258697的修補程式
+* 在發佈標籤時，UI上不會顯示任何活動。 CQ-4255961 的 Hotfix
+* 無法在傳統UI中編輯標籤。 CQ-4258697 的 Hotfix
 * 將org.apache.felix.http.bridge更新至4.0.4版。NPR-27038:Granite的支援- 23334
-* 應將包管理器活動日誌提取到單獨的日誌檔案中。 NPR-27323:Granite-14866的修補程式
-* 封裝驗證器不會報告CFP中的覆蓋。 NPR-27119:GRANITE-22825的修補程式
+* 套件管理器活動記錄應擷取至獨立的記錄檔中。NPR-27323：Granite-14866 的 Hotfix
+* 封裝驗證器不會報告CFP中的覆蓋。 NPR-27119：GRANITE-22825 的 Hotfix
 
 **專案**
 
-* ACP API僅處理子目錄子目錄的分頁錯誤。 NPR-27617:CQ-4258639的修補程式
+* ACP API僅處理子目錄子目錄的分頁錯誤。 NPR-27617：CQ-4258639 的 Hotfix
 
 **OAK**
 
-* 安裝AEM 6.4 Service Pack 2後，無法登入資料庫。 NPR-27171:Granite-23317的修補程式
+* 安裝AEM 6.4 Service Pack 2後，無法登入資料庫。 NPR-27171：Granite-23317 的 Hotfix
 
 **複寫**
 
-* 「稽核記錄檔」仍會開啟，而作用中的工作階段會持續增加，每天約750次。 NPR-27062:CQ-4241350的修補程式
+* 「稽核記錄檔」仍會開啟，而作用中的工作階段會持續增加，每天約750次。 NPR-27062：CQ-4241350 的 Hotfix
 
 **社群**
 
-* 論壇貼文和回覆會新增至第二頁上方，當重新整理後，貼文會移至第一頁上方的正確位置。 NPR-27342:CQ-4247338的修補程式
-* 所有資源的連結會在捲動後拖放內容路徑(/aempublish)。 NPR-26982:CQ-4254345的修補程式
-* 在編輯已發佈網站時，社群管理員、社群協調者和特權成員下拉式清單中不會顯示新增的群組。 NPR-27190:CQ-4258574的修補程式
-* 即使群組清單已啟用分頁功能，啟用資源頁面中也只會列出10個群組。 NPR-26934:CQ-4252985的修補程式
-* ConfigMgr中提供了在日誌元件中啟用／禁用「已排程貼文」搜索的選項，SearchScheduledPosts作業已優化。 NPR-26923:CQ-4250463的修補程式
-* 當AEM社群設為搭配DSRP運作時，依位址中關鍵字搜尋無法在日曆元件頁面中運作。 NPR-26737:CQ-4258493的修補程式
-* 為協調UI與啟用資源，實作留言的直接連結，而非留言詳細資料中的主要貼文。 NPR-26704:CQ-4251381的修補程式
-* 在協調主控台上，透過多選進行協調的內容不會顯示在活動串流中。 NPR-26695:CQ-4253244的修補程式
-* 在「社群訊息」的「收件者」欄位中使用名字和姓氏進行搜尋時，不會傳回預期結果。 NPR-26385:CQ-4248673的修補程式
-* 在論壇中上傳影像以外的附件（例如。pdf）時發生錯誤。 NPR-27360:CQ-4257753的修補程式
+* 論壇貼文和回覆會新增到第二頁頂端，而重新整理後貼文就會移至第一頁頂端的正確位置。NPR-27342：CQ-4247338 的 Hotfix
+* 所有資源的連結會在捲動後拖放內容路徑(/aempublish)。 NPR-26982：CQ-4254345 的 Hotfix
+* 在編輯已發佈網站時，社群管理員、社群協調者和特權成員下拉式清單中不會顯示新增的群組。 NPR-27190：CQ-4258574 的 Hotfix
+* 即使群組清單已啟用分頁功能，啟用資源頁面中也只會列出10個群組。 NPR-26934：CQ-4252985 的 Hotfix
+* ConfigMgr中提供了在日誌元件中啟用／禁用「已排程貼文」搜索的選項，SearchScheduledPosts作業已優化。 NPR-26923：CQ-4250463 的 Hotfix
+* 當AEM社群設為搭配DSRP運作時，依位址中關鍵字搜尋無法在日曆元件頁面中運作。 NPR-26737：CQ-4258493 的 Hotfix
+* 為協調UI與啟用資源，實作留言的直接連結，而非留言詳細資料中的主要貼文。 NPR-26704：CQ-4251381 的 Hotfix
+* 在協調主控台上，透過多選進行協調的內容不會顯示在活動串流中。 NPR-26695：CQ-4253244 的 Hotfix
+* 在「社群訊息」的「收件者」欄位中使用名字和姓氏進行搜尋不會傳回預期結果。 NPR-26385：CQ-4248673 的 Hotfix
+* 在論壇中上傳影像以外的附件 (例如 .pdf) 時發現錯誤。NPR-27360：CQ-4257753 的 Hotfix
 * 如果使用MySQL DSRP設定「作者發佈」，則解除論壇貼文的釘選或取消功能將無法運作。 NPR-26125;CQ-4251520的修補程式
-* 系列元件（論壇、部落格、行事歷、構想、QnA）現在在元件對話方塊中有一個屬性，可啟用／停用「在作者編輯模式中封鎖UGC」，以允許／拒絕在WCM編輯模式中載入UGC。 NPR-26978:CQ-4248161的修補程式
-* 「標籤搜尋」不適用於本地化搜尋詞。 NPR-26171:CQ-4249926的修補程式
-* 「上一步」按鈕會跳過論壇搜尋中的頁面。 NPR-26950:CQ-4254804的修補程式
-* 在預設Http埠(80)上執行的AEM例項無法到達imsmanifest.xml。 NPR-27173:CQ-4252211的修補程式
-* 如果AEM Communities已設定DSRP，則取消將注釋標示為QnA的答案將無法運作。 NPR-26247:CQ-4252232的修補程式
-* 無法呼叫Adobe儲存：414錯誤——當使用者搜尋/content/community-components/en/search.html並選取作者欄位作為該搜尋詞的篩選條件時，觀察到長GET URI。 NPR-26643:CQ-4251303的修補程式
-* ASRP設定中DataCentreURL的下拉式清單值從Dallas變更為Virginia（對於VA6）。 NPR-26936:CQ-4254434的修補程式
-* 論壇搜尋中的特殊字元會傳回錯誤或無結果。 NPR-26930:CQ-4247744的修補程式
-* 論壇搜尋中「結果數」顯示的數字，在英文和德文地區設定中使用錯誤的分隔字元。 NPR-27050:CQ-4248939的修補程式
-* 未讀通知不會增加到超過21個。 NPR-26946、NPR-27480:CQ-4252829、CQ-4256939的修補程式
-* 在任何元件的注釋區段中進行分頁，讓使用者在透過分頁到達頁面時向上捲動以檢視頁面內容。 NPR-27032:CQ-4251228的修補程式
-* 從AEM Author例項的管理控制台檢視時，無法在縮圖影像上點選社群網站檔案夾。 NPR-26986:CQ-4254036的修補程式
-* 「標籤所有已讀取」選項僅將前10個通知標示為已讀取，而其他通知則會保留為未讀取，直到頁面重新整理為止。 NPR-27037:CQ-4254058的修補程式
-* 不會針對Ideation觸發分頁，除非重新載入主題（或回覆）清單，否則會更長。 NPR-26193:CQ-4252104的修補程式
-* 其他使用者的活動，並刪除了使用協調者認證登入時可見的UGC，並在協調者的設定檔URL結尾新增「#social-activity」或「#tabs-2」。 CQ-4251355的修補程式
-* 無法從部落格文章移除所有指派的標籤。 NPR-26851:CQ-4253359的修補程式
-* 刪除UGC時，不會刪除與UGC的關係。 NPR-27630:CQ-4258706的修補程式
-* 回覆的連結無法用於論壇回覆的列點按。 NPR-27623:CQ-4256138的修補程式
-* 使用者訂閱限制為1000。 NPR-27614:CQ-4254689的修補程式
+* 系列元件（論壇、部落格、行事歷、構想、QnA）現在在元件對話方塊中有一個屬性，可啟用／停用「在作者編輯模式中封鎖UGC」，以允許／拒絕在WCM編輯模式中載入UGC。 NPR-26978：CQ-4248161 的 Hotfix
+* 「標籤搜尋」不適用於本地化搜尋詞。 NPR-26171：CQ-4249926 的 Hotfix
+* 「上一步」按鈕會跳過論壇搜尋中的頁面。 NPR-26950：CQ-4254804 的 Hotfix
+* 在預設Http埠(80)上執行的AEM例項無法到達imsmanifest.xml。 NPR-27173：CQ-4252211 的 Hotfix
+* 如果AEM Communities已設定DSRP，則取消將注釋標示為QnA的答案將無法運作。 NPR-26247：CQ-4252232 的 Hotfix
+* 無法呼叫Adobe儲存：414錯誤——當使用者搜尋/content/community-components/en/search.html並選取作者欄位作為該搜尋詞的篩選條件時，觀察到長GET URI。 NPR-26643：CQ-4251303 的 Hotfix
+* ASRP設定中DataCentreURL的下拉式清單值從Dallas變更為Virginia（對於VA6）。 NPR-26936：CQ-4254434 的 Hotfix
+* 論壇搜尋中的特殊字元會傳回錯誤或無結果。 NPR-26930：CQ-4247744 的 Hotfix
+* 論壇搜尋中「結果數」顯示的數字，在英文和德文地區設定中使用錯誤的分隔字元。 NPR-27050：CQ-4248939 的 Hotfix
+* 未讀通知不會增加到超過21個。 NPR-26946、NPR-27480：CQ-4252829、CQ-4256939 的 Hotfix
+* 在任何元件的注釋區段中進行分頁，讓使用者在透過分頁到達頁面時向上捲動以檢視頁面內容。 NPR-27032：CQ-4251228 的 Hotfix
+* 從AEM Author例項的管理控制台檢視時，無法在縮圖影像上點選社群網站檔案夾。 NPR-26986：CQ-4254036 的 Hotfix
+* 「標籤所有已讀取」選項僅將前10個通知標示為已讀取，而其他通知則會保留為未讀取，直到頁面重新整理為止。 NPR-27037：CQ-4254058 的 Hotfix
+* 不會針對Ideation觸發分頁，除非重新載入主題（或回覆）清單，否則會更長。 NPR-26193：CQ-4252104 的 Hotfix
+* 其他使用者的活動，並刪除了使用協調者認證登入時可見的UGC，並在協調者的設定檔URL結尾新增「#social-activity」或「#tabs-2」。 CQ-4251355 的 Hotfix
+* 無法從部落格文章移除所有指派的標籤。 NPR-26851：CQ-4253359 的 Hotfix
+* 刪除UGC時，不會刪除與UGC的關係。 NPR-27630：CQ-4258706 的 Hotfix
+* 回覆的連結無法用於論壇回覆的列點按。 NPR-27623：CQ-4256138 的 Hotfix
+* 使用者訂閱限制上限為 1000。NPR-27614：CQ-4254689 的 Hotfix
 * 在角色設定中編輯站點和編輯角色會引發空指針異常。 NPR-27377;CQ-4255909的修補程式
 
 **轉換**
 
-* 翻譯預覽無法與we.retail範例內容搭配使用。 NPR-26727:CQ-4241179的修補程式
+* 翻譯預覽無法與we.retail範例內容搭配使用。 NPR-26727：CQ-4241179 的 Hotfix
 
 **UI - Foundation**
 
@@ -1181,104 +1181,104 @@ AEM 6.4.3.0的一些主要亮點是：
 * granite.ui.coralui3-eon修正的主動式支援。 NPR-26666
 * granite.ui.foundation.components的主動式支援修正。 NPR-27313
 * granite.ui.commons的主動式支援修正。 NPR-26753
-* 主動式Foundation UI後台。 NPR-26248
+* 主動式 Foundation UI 反向移植。NPR-26248
 
 **整合**
 
-* 不會發佈透過定位引擎建立的AEM體驗修改。 NPR-24869:CQ-4247832的修補程式
-* 如果活動和體驗的名稱包含日文字元，則無法建立這些活動和體驗。 NPR-27271:CQ-4256857的修補程式
-* 更新Launch API端點。 NPR-26790:CQ-4254380的修補程式
-* （個人化）BrandsRetriever會在整棵樹上行走。 NPR-27060:CQ-4255790的修補程式
+* 不會發佈透過定位引擎建立的AEM體驗修改。 NPR-24869：CQ-4247832 的 Hotfix
+* 如果活動和體驗的名稱包含日文字元，則無法建立這些活動和體驗。 NPR-27271：CQ-4256857 的 Hotfix
+* 更新Launch API端點。 NPR-26790：CQ-4254380 的 Hotfix
+* （個人化）BrandsRetriever會在整棵樹上行走。 NPR-27060：CQ-4255790 的 Hotfix
 
 **WCM —— 管理員UI**
 
-* 已新增HTTP測試，以發佈／取消發佈含有參考的頁面，以及即時副本的UI測試。 CQ-4256894的修補程式
+* 已新增HTTP測試，以發佈／取消發佈含有參考的頁面，以及即時副本的UI測試。 CQ-4256894 的 Hotfix
 
-**WCM —— 頁面編輯器**
+**WCM - 頁面編輯器**
 
-* 第一次編輯時，會針對元件停用編輯工具列。 CQ-4253270的修補程式
+* 第一次編輯時，會針對元件停用編輯工具列。 CQ-4253270 的 Hotfix
 
 **表單**
 
 AEM 6.4.3.0表格的主要重點為：
 
-* 已啟用對具有動態實體替代的物件陣列／清單的支援。
+* 已啟用對具有動態實體替代的對象陣列／清單的支援。
 * 在數字簽名、Reader擴展、CryptoProvider和TrustStore中為Reader Extended工作流程啟用FIPS規範。
 * 新增PDF/UA支援至使用設計人員或輸出服務產生的XFA表單。
 * 在最適化表單範本上支援allowedPaths屬性。
 * 新增AEM Forms 6.4的JBoss 7.1.4支援。
 
-**Forms附加套件**
+**Forms 附加元件套件**
 
 **後端整合**
 
-* 無法在SOAP回應中根據動態實體填入表單資料模型映射。 NPR-26428:CQ-4250639的修補程式
-* 使用測試UI輸入的表單資料模型中_elementNamespace的值，在SOAP請求中無法正確反映。 CQ-4255373的修補程式
-* 可為空的屬性約束以預設值初始化，無法與FDM同步。 CQ-4253873的修補程式
-* 對於OData資料源，可為空屬性的預設值未設定為True。 CQ-4253870的修補程式
+* 無法在SOAP回應中根據動態實體填入表單資料模型映射。 NPR-26428：CQ-4250639 的 Hotfix
+* 使用測試UI輸入的表單資料模型中_elementNamespace的值，在SOAP請求中無法正確反映。 CQ-4255373 的 Hotfix
+* 可為空的屬性約束以預設值初始化，無法與FDM同步。 CQ-4253873 的 Hotfix
+* 對於OData資料源，可為空屬性的預設值未設定為True。 CQ-4253870 的 Hotfix
 
 **適用性表單**
 
 * 無法載入網站和表單編輯器。 NPR-26977;CQ-4249170的修補程式
 * 使用鍵盤將附件新增至最適化表單時的問題。 NPR-25913;CQ-4249456的修補程式
 
-**表單——互動式通訊**
+**Forms -互動式通訊**
 
-* 無法移動已使用「互動式通訊」網頁頻道和最適化表單中內容樹狀結構中的「新增子面板」選項新增的面板。 CQ-4253915的修補程式
-* 在打印渠道的「資料源」部分中，表名會顯示，而不是FDM關聯的標題。 CQ-4253669的修補程式
-* isUseXFABullets()函式在PrintChannelRenderOptions類別中未停用，並可在用戶端SDK中使用。 CQ-4246583、CQ-4252700的修補程式
+* 無法移動已使用「互動式通訊」網頁頻道和最適化表單中內容樹狀結構中的「新增子面板」選項新增的面板。 CQ-4253915 的 Hotfix
+* 在打印渠道的「資料源」部分中，表名會顯示，而不是FDM關聯的標題。 CQ-4253669 的 Hotfix
+* isUseXFABullets()函式在PrintChannelRenderOptions類別中未停用，並可在用戶端SDK中使用。 CQ-4246583、CQ-4252700
 
-**信件管理**
+**通信管理**
 
-* 6.4版Javadoc不包含com.adobe.dbforms。*包和相應的類。 CQ-4253200的修補程式
-* CCR UI會針對日期欄位顯示預設的無用值，以防測試資料XML未輸入。 CQ-4252041的修補程式
-* 如果字母包含清單模組，從字母產生PDF時，項目符號和文字之間的空格會遺失。 CQ-4250588的修補程式
+* 6.4版Javadoc不包含com.adobe.dbforms。*包和相應的類。 CQ-4253200 的 Hotfix
+* CCR UI會針對日期欄位顯示預設的無用值，以防測試資料XML未輸入。 CQ-4252041 的 Hotfix
+* 如果字母包含清單模組，從字母產生PDF時，項目符號和文字之間的空格會遺失。 CQ-4250588 的 Hotfix
 
 **Forms Manager**
 
-* 在最適化表單範本上支援allowedPaths屬性。 NPR-26598:CQ-4255892的修補程式
+* 在最適化表單範本上支援allowedPaths屬性。 NPR-26598：CQ-4255892 的 Hotfix
 
-**表單——工作流程**
+**Forms - 工作流程**
 
-* 如果在執行Forms工作流時任務名稱中包含大括弧，則日誌中將顯示異常。 CQ-4256626的修補程式
-* 無法在AEM Forms工作區中開啟「搜尋」範本。 CQ-4255651的修補程式
+* 如果在執行Forms工作流時任務名稱中包含大括弧，則日誌中將顯示異常。 CQ-4256626 的 Hotfix
+* 無法在AEM Forms工作區中開啟「搜尋」範本。 CQ-4255651 的 Hotfix
 
 **行動表單**
 
-* 退出AEM Forms中的日期欄位時，在Internet Explorer或Chrome中呈現為HTML時，不會顯示退出通知。 NPR-26483:CQ-4239352的修補程式
-* 當處理開始時，XML中包含的日期會在使用者嘗試離開表單時造成表單產生驗證錯誤。 NPR-26787:CQ-4251211的修補程式
+* 退出AEM Forms中的日期欄位時，在Internet Explorer或Chrome中呈現為HTML時，不會顯示退出通知。 NPR-26483：CQ-4239352 的 Hotfix
+* 當處理開始時，XML中包含的日期會在使用者嘗試離開表單時造成表單產生驗證錯誤。 NPR-26787：CQ-4251211 的 Hotfix
 
 **Forms JEE安裝程式**
 
 **PDF Generator服務**
 
-* 無法顯示PDF產生器的「標準報告」和「合規性」設定。 NPR-26715:CQ-4253384的修補程式
-* convertpdf二進位檔在AIX Forms附加元件套件中遺失，這會在叫用PDFA服務時造成失敗。 CQ-4257873的修補程式
-* 處理TIFF檔案時，紙本擷取服務會當機。 NPR-28079: CQ-4240649的修補程式
+* 無法顯示PDF產生器的「標準報告」和「合規性」設定。 NPR-26715：CQ-4253384 的 Hotfix
+* convertpdf二進位檔在AIX Forms附加元件套件中遺失，這會在叫用PDFA服務時造成失敗。 CQ-4257873 的 Hotfix
+* 處理TIFF檔案時，紙本擷取服務會當機。 NPR-28079：CQ-4240649 的 Hotfix
 
 **文件服務**
 
-* 在數字簽名、Reader擴展、CryptoProvider和TrustStore中為RE工作流添加FIPS合規性。 NPR-27495:CQ-4257572的修補程式
-* 在循環中運行AssemblerService.toPDFA服務時，轉換失敗。 NPR-26354:CQ-4248656的修補程式
-* 無法根據PDF/A-1b標準，正確驗證PDF符合性。 NPR-26286:CQ-4227539的修補程式
-* 將AEM Forms從6.1 SP2 CFP5升級至CFP13時記憶體不足的問題。 NPR-26285:CQ-4244379的修補程式
-* 無法根據PDF/A標準正確驗證PDF符合性。 NPR-26272:CQ-4248823的修補程式
+* 在數字簽名、Reader擴展、CryptoProvider和TrustStore中為RE工作流添加FIPS合規性。 NPR-27495：CQ-4257572 的 Hotfix
+* 在循環中運行AssemblerService.toPDFA服務時，轉換失敗。 NPR-26354：CQ-4248656 的 Hotfix
+* 無法根據PDF/A-1b標準，正確驗證PDF符合性。 NPR-26286：CQ-4227539 的 Hotfix
+* 將AEM Forms從6.1 SP2 CFP5升級至CFP13時記憶體不足的問題。 NPR-26285：CQ-4244379 的 Hotfix
+* 無法根據PDF/A標準正確驗證PDF符合性。 NPR-26272：CQ-4248823 的 Hotfix
 
 **表單- Foundation JEE**
 
 * 新增AEM Forms 6.4的JBoss 7.1.4支援。NPR-27331;CQ-4255601的修補程式
 
-**隨附的功能套件**
+**包含的 Feature Pack**
 
-* 已啟用對具有動態實體替代的對象陣列／清單的支援。 NPR-26590:CQ-4254655的修補程式
+* 已啟用對具有動態實體替代的物件陣列／清單的支援。 NPR-26590：CQ-4254655 的 Hotfix
 
 **隨附的OSGI組合和內容套件**
 
-AEM 6.4.3.0隨附的OSGi搭售清單
+AEM 6.4.3.0 中包含的 OSGi 套件組合清單
 
 [取得檔案](assets/6.4.3.0_bundles.txt)
 
-AEM 6.4.3.0內容套件清單
+AEM 6.4.3.0 中包含的內容套件清單
 
 [取得檔案](assets/6.4.3.0_OSGI.txt)
 
@@ -1289,7 +1289,7 @@ AEM 6.4.2.0是重要的更新，其中包括效能、穩定性、安全性和重
 
 AEM 6.4.2.0的一些主要亮點是：
 
-* 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.7版。
+* 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.7 版。
 * 新增支援HTML範本語言(HTL)規格1.4功能
 * 已新增對MongoDB Enterprise 3.6的支援。
 * 「網站頁面編輯器」新增支援內容內容內容編輯和構圖，搭配<a href="../sites-developing/spa-walkthrough.md">AEM的SPA編輯器JS SDK</a>搭配使用React或Angular中建立的用戶端元件。
@@ -1312,173 +1312,173 @@ AEM 6.4.2.0的一些主要亮點是：
 
 **資產**
 
-* pptx檔案的子資產產生不包含任何影像和縮圖。 NPR-24286:CQ-4217986的修補程式
-* migrateAllAssets —— 新增批次處理支援，並改進將UUID新增至舊資產的AEM方法。 NPR-24861:CQ-4242863和CQ-4247874的修補程式
-* 產生縮圖的效能問題。 NPR-24693:CQ-4246960的修補程式
-* (Touch UI)「選項謂語」元件新增至「資產共用發行者」頁面時仍為空白。 NPR-24643:CQ-4245295的修補程式
-* （工作流程）智慧型標籤資產不會透過代理設定處理。 NPR-25840:CQ-4248202的修補程式
-* (Omnisearch)從搜尋准則移除檔案類型：影像並不會移除影像類型。 NPR-25232:CQ-4248280的修補程式
-* 嘗試將檔案移動到其他資料夾時，不會顯示名稱中帶有縮寫符號的資料夾。 NPR-25125:CQ-4248660的修補程式
-* 當語言偏好設定設為英文以外的值時，子資產頁面中的滑桿無法正常運作。 NPR-25274:CQ-4248489的修補程式
-* 在具有歐洲數字格式的電腦上開啟中繼資料匯出csv檔案時發生問題。 NPR-26009:CQ-4250677的修補程式
-* 在沒有「刪除」權限的資產資料夾選擇中，「建立」按鈕不可用。 NPR-25788:CQ-4250140的修補程式
-* （支援）協助工具增強功能：Duplicate-id:id屬性值必須唯一，標籤：表單元素必須有標籤和連結名稱：連結必須有可識別的文字。 NPR-24252:CQ-4250905、CQ-4250906、CQ-4250907的修補程式
-* 歐洲國家無法上傳以「,」分隔欄位的csv。 NPR-25549:CQ-4249931的修補程式
-* （品牌入口網站）多頁pdf檔案的子資產在資產發佈時不會發佈。 NPR-25991:CQ-4245162的修補程式
-* 稍後發佈AEM的功能至品牌入口網站複製。 NPR-25911:CQ-109139的修補程式
-* 由非管理員使用者發佈及取消發佈私人系列會產生NPE。 NPR-25906:CQ-4250594的修補程式
-* 停用內容片段和表單結構描述的發佈至品牌入口網站。 NPR-24176、NPR-26004:CQ-4251592、CQ-4252026的修補程式
-* （動態媒體）將DM檢視器更新為5.10.1版本，可在「影像預設集」頁面上檢查重複名稱。 請參閱更新動態媒體檢視器(5.10.1)。 NPR-24403:CQ-4247554的修補程式
-* 在選取資產或資料夾的欄檢視中，瀏覽器主控台發生Javascript錯誤。 NPR-25939:CQ-4250228的修補程式
-* （欄檢視）無法識別關鍵檔案顯示為空白項目的工作。 NPR-25903:CQ-4246307的修補程式
+* pptx檔案的子資產產生不包含任何影像和縮圖。 NPR-24286：CQ-4217986 的 Hotfix
+* migrateAllAssets —— 新增批次處理支援，並改進將UUID新增至舊資產的AEM方法。 NPR-24861：CQ-4242863 和 CQ-4247874 的 Hotfix
+* 產生縮圖的效能問題。 NPR-24693：CQ-4246960 的 Hotfix
+* (Touch UI)「選項謂語」元件新增至「資產共用發行者」頁面時仍為空白。 NPR-24643：CQ-4245295 的 Hotfix
+* （工作流程）智慧型標籤資產不會透過代理設定處理。 NPR-25840：CQ-4248202 的 Hotfix
+* (Omnisearch)從搜尋准則移除檔案類型：影像並不會移除影像類型。 NPR-25232：CQ-4248280 的 Hotfix
+* 嘗試將檔案移動到其他資料夾時，不會顯示名稱中帶有縮寫符號的資料夾。 NPR-25125：CQ-4248660 的 Hotfix
+* 當語言偏好設定設為英文以外的值時，子資產頁面中的滑桿無法正常運作。 NPR-25274：CQ-4248489 的 Hotfix
+* 在具有歐洲數字格式的電腦上開啟中繼資料匯出csv檔案時發生問題。 NPR-26009：CQ-4250677 的 Hotfix
+* 在沒有「刪除」權限的資產資料夾選擇中，「建立」按鈕不可用。 NPR-25788：CQ-4250140 的 Hotfix
+* （支援）協助工具增強功能：Duplicate-id:id屬性值必須唯一，標籤：表單元素必須有標籤和連結名稱：連結必須有可識別的文字。 NPR-24252：CQ-4250905、CQ-4250906、CQ-4250907 的 Hotfix
+* 歐洲國家無法上傳以「,」分隔欄位的csv。 NPR-25549：CQ-4249931 的 Hotfix
+* （品牌入口網站）多頁pdf檔案的子資產在資產發佈時不會發佈。 NPR-25991：CQ-4245162 的 Hotfix
+* 稍後發佈AEM的功能至品牌入口網站複製。 NPR-25911：CQ-109139 的 Hotfix
+* 由非管理員使用者發佈及取消發佈私人系列會產生NPE。 NPR-25906：CQ-4250594 的 Hotfix
+* 停用內容片段和表單結構描述的發佈至品牌入口網站。 NPR-24176、NPR-26004：CQ-4251592、CQ-4252026 的 Hotfix
+* （動態媒體）將DM檢視器更新為5.10.1版本，可在「影像預設集」頁面上檢查重複名稱。 請參閱更新動態媒體檢視器(5.10.1)。 NPR-24403：CQ-4247554 的 Hotfix
+* 在選取資產或資料夾的欄檢視中，瀏覽器主控台發生Javascript錯誤。 NPR-25939：CQ-4250228 的 Hotfix
+* （欄檢視）無法識別關鍵檔案顯示為空白項目的工作。 NPR-25903：CQ-4246307 的 Hotfix
 
 **網站**
 
 * AEM 6.2上的datasource.jsp查詢與AEM 6.4不同。NPR-24968:CQ-4244235的修補程式
-* （傳統UI）無法將標籤新增至頁面。 NPR-25255、NPR-25612:CQ-4249615的修補程式
+* （傳統UI）無法將標籤新增至頁面。 NPR-25255、NPR-25612：CQ-4249615 的 Hotfix
 * HTML範本語言規格1.4功能支援至AEM 6.4.2.0 NPR-24585
-* 複製即時副本頁面後，本端元件的繼承錯誤。 NPR-25920:CQ-4236737、CQ-4248957的修補程式
-* ON/OFF時間會儲存在crx/de中，但在頁面屬性UI主控台中不會擷取相同的時間。 NPR-25154:CQ-4243431的修補程式
-* 「樣式系統」會中斷對話框的初始屬性值。 NPR-25648:CQ-4250073的修補程式
-* 在cq:htmlTag節點中定義cq:tagName屬性時，如果元件是透過JSP包含，則不會考慮標籤名稱。 NPR-24154:CQ-4244120的修補程式
-* 對於嵌套的parsys元件，始終從多個可用元件中應用滿足設計的第一個（具有最少的嵌套路徑）。 如需詳細資訊，請參閱[設計路徑解析度](https://docs.adobe.com/content/help/en/experience-manager-64/developing/platform/templates/page-templates-static.html)。 NPR-24973:CQ-4246276的修補程式
-* 將文本貼上到RTE元件時，將顯示一個彈出對話框，但無法正確呈現。 NPR-24895:CQ-4245901的修補程式
-* (RTE)必填欄位指標的績效問題。 NPR-24894:CQ-4241895的修補程式
-* （頁面元件）將元件新增至Parsys會從右側裁切出來，產生裝置影格寬度。 NPR-25536:CQ-4238224的修補程式
-* 明文編輯器會傳送未修剪的資料，並新增額外的空格。 NPR-25312:CQ-4249006的修補程式
-* 使用內部模式開啟元件時，先前載入的外掛程式在第二次時無法顯示。 NPR-24610:CQ-4236850的修補程式
-* 在編輯器視圖中通過複製／貼上載入XF不會自動載入主變數。 NPR-24841:CQ-4248037的修補程式
-* 網站管理員/damadmin中的錯誤HTML結構會中斷IE11。 NPR-24686:CQ-4246363、CQ-4248402的修補程式
-* （管理出版物精靈）啟動日期在「選項」步驟的日曆，在「範圍」步驟的某些動作後，不會開啟。 NPR-25681:CQ-4250205的修補程式
-* 由於不再使用，傳統UI無法編輯CUG。 NPR-25075:4241823的修補程式
-* 建立無法建立體驗片段的選項。 NPR-26053:CQ-4249923的修補程式
-* XF變數因此會啟用兩次，為相同項目產生重複的ID。 NPR-24179:CQ-4245093的修補程式
-* Foundation表易受儲存的跨站點指令碼攻擊。 NPR-25185:CQ-4240760的修補程式
+* 複製即時副本頁面後，本端元件的繼承錯誤。 NPR-25920：CQ-4236737、CQ-4248957 的 Hotfix
+* ON/OFF時間會儲存在crx/de中，但在頁面屬性UI主控台中不會擷取相同的時間。 NPR-25154：CQ-4243431 的 Hotfix
+* 「樣式系統」會中斷對話框的初始屬性值。 NPR-25648：CQ-4250073 的 Hotfix
+* 在cq:htmlTag節點中定義cq:tagName屬性時，如果元件是透過JSP包含，則不會考慮標籤名稱。 NPR-24154：CQ-4244120 的 Hotfix
+* 針對巢狀的 parsys 元件，一律從多個可用元件中套用滿足設計的第一個元件 (最短巢狀路徑)。如需詳細資訊，請參閱[設計路徑解析](https://docs.adobe.com/content/help/zh-Hant/experience-manager-64/developing/platform/templates/page-templates-static.html)。NPR-24973：CQ-4246276 的 Hotfix
+* 將文本貼上到RTE元件時，將顯示一個彈出對話框，但無法正確呈現。 NPR-24895：CQ-4245901 的 Hotfix
+* (RTE)必填欄位指標的績效問題。 NPR-24894：CQ-4241895 的 Hotfix
+* （頁面元件）將元件新增至Parsys會從右側裁切出來，產生裝置影格寬度。 NPR-25536：CQ-4238224 的 Hotfix
+* 明文編輯器會傳送未修剪的資料，並新增額外的空格。 NPR-25312：CQ-4249006 的 Hotfix
+* 使用 inlide 模式開啟元件時，先前載入的外掛程式第二次會無法顯示。NPR-24610：CQ-4236850 的 Hotfix
+* 在編輯器視圖中通過複製／貼上載入XF不會自動載入主變數。 NPR-24841：CQ-4248037 的 Hotfix
+* 網站管理員/damadmin中的錯誤HTML結構會中斷IE11。 NPR-24686：CQ-4246363、CQ-4248402 的 Hotfix
+* （管理出版物精靈）啟動日期在「選項」步驟的日曆，在「範圍」步驟的某些動作後，不會開啟。 NPR-25681：CQ-4250205 的 Hotfix
+* 由於功能遭淘汰，傳統 UI 無法用於編輯 CUG。NPR-25075：4241823 的 Hotfix
+* 建立無法建立體驗片段的選項。 NPR-26053：CQ-4249923 的 Hotfix
+* XF變數因此會啟用兩次，為相同項目產生重複的ID。 NPR-24179：CQ-4245093 的 Hotfix
+* Foundation 表格容易受到儲存型跨網站指令碼攻擊。NPR-25185：CQ-4240760 的 Hotfix
 * 將元件從AEM 6.2.1.13移轉至AEM 6.4時，發生「無效的遞回選擇器值」錯誤。NPR-24146
 
-**WCM —— 頁面編輯器**
+**WCM - 頁面編輯器**
 
-* 由於長時間執行的查詢（超過6個），多個堆疊Parsys會使AEM變得呆滯。 CQ-4240247的修補程式
-* 在cq:htmlTag節點中新增空cq:tagName時，發生JS錯誤。 CQ-4251852的修補程式
-* 根據columnClassNames重新定位更新EditableActions。 CQ-4250781的修補程式
-* 使用單一屬性和屬性來公開資源和模型路徑。 CQ-4251255的修補程式
-* 還原export.json API分段變更。 CQ-4251854的修補程式
+* 因為執行時間長的查詢 (超過 6 個) 出現多個堆疊，導致 AEM 變得緩慢。CQ-4240247 的 Hotfix
+* 在cq:htmlTag節點中新增空cq:tagName時，發生JS錯誤。 CQ-4251852 的 Hotfix
+* 根據columnClassNames重新定位更新EditableActions。 CQ-4250781 的 Hotfix
+* 使用單一屬性和屬性來公開資源和模型路徑。 CQ-4251255 的 Hotfix
+* 還原export.json API分段變更。 CQ-4251854 的 Hotfix
 * （可編輯的SPA）1.0.0版候選發行。CQ-4251991的修補程式
-* 編輯工具列會在編輯任何一個元件時，針對其他元件停用。 CQ-4253270的修補程式
+* 編輯工具列會在編輯任何一個元件時，針對其他元件停用。 CQ-4253270 的 Hotfix
 
 **整合**
 
-* 程式庫和下載URL欄位應可編輯。 NPR-24804:CQ-4246864的修補程式
-* 多個DTM組態的問題。 NPR-24685:CQ-4247293的修補程式
-* 新增對托管用戶端程式庫的非同步部署支援。 NPR-25716:CQ-4245745的修補程式
-* 缺少對應選件的目標元件會呈現整個頁面，而非空的目標元件，則會新增頁面的另一個完整轉譯。 NPR-25273:CQ-4248003的修補程式
-* 目標引擎(mbox.js, at.js)不使用損毀的URL，並使用包含冒號的URL，因為某些部署可能會失敗。 NPR-25339:CQ-4237854的修補程式
-* （啟動）LibraryDownloadProcess儲存錯誤的libraryUri值。 NPR-25330:CQ-4250006的修補程式
+* 程式庫和下載URL欄位應可編輯。 NPR-24804：CQ-4246864 的 Hotfix
+* 多個DTM組態的問題。 NPR-24685：CQ-4247293 的 Hotfix
+* 新增對托管用戶端程式庫的非同步部署支援。 NPR-25716：CQ-4245745 的 Hotfix
+* 缺少對應選件的目標元件會呈現整個頁面，而非空的目標元件，則會新增頁面的另一個完整轉譯。 NPR-25273：CQ-4248003 的 Hotfix
+* 目標引擎 (mbox.js、at.js) 沒有使用損害 URL 而使用包含冒號的 URL，這可能因為某些部署而失敗。NPR-25339：CQ-4237854 的 Hotfix
+* （啟動）LibraryDownloadProcess儲存錯誤的libraryUri值。 NPR-25330：CQ-4250006 的 Hotfix
 
 **平台**
 
 * 重新索引回圈 |在從6.3升級到6.4的就地升級期間執行BinaryTextExtraction時執行NPE。Granite修補程式- 21677
-* 跨邊界覆寫內部標籤路徑/libs/cq/cloudservicesfiges/templates/configpage/jcr:content —— 執行模式偵測器時的問題。 NPR-25036:CQ-4248597的修補程式
-* 由於LogEntryImpl中的NPE而未寫入日誌條目。 NPR-25627:Granite-22383的修補程式
-* 複製delete事件不會檢查權限。 NPR-25679:CQ-4241234的修補程式
-* 已在「Day CQ Mail Service」中新增STARTTLS支援。 NPR-25611:CQ-4249924的修補程式
+* 跨邊界覆寫內部標籤路徑/libs/cq/cloudservicesfiges/templates/configpage/jcr:content —— 執行模式偵測器時的問題。 NPR-25036：CQ-4248597 的 Hotfix
+* 由於LogEntryImpl中的NPE而未寫入日誌條目。 NPR-25627：Granite-22383 的 Hotfix
+* 複製delete事件不會檢查權限。 NPR-25679：CQ-4241234 的 Hotfix
+* 已在「Day CQ Mail Service」中新增STARTTLS支援。 NPR-25611：CQ-4249924 的 Hotfix
 * granite.platform.login修正的主動式支援，可改善協助工具。 NPR-25176:Granite 21746和Granite-21309的修補程式
-* (AEM 6.4)重新建立套件並重新安裝時發生錯誤。 NPR-25173:CQ-4247939的修補程式
-* 已刪除預設的MERGE_PRESERVE aclHandling。 NPR-24593:Granite-21889的修補程式
-* 在套用兩次ContentDispositionFilter後，回應中不會傳播和遺失Content-Type。 NPR-24175:Sling-7525的修補程式
-* 升級至AEM 6.4分支後，Package Manager狀態錯誤。 NPR-24551:Granite-21750的修補程式
-* AMS實例——錯誤日誌分析。 CQ-4249567的修補程式
+* (AEM 6.4)重新建立套件並重新安裝時發生錯誤。 NPR-25173：CQ-4247939 的 Hotfix
+* 已刪除預設的MERGE_PRESERVE aclHandling。 NPR-24593：Granite-21889 的 Hotfix
+* 在套用兩次ContentDispositionFilter後，回應中不會傳播和遺失Content-Type。 NPR-24175：Sling-7525 的 Hotfix
+* 升級至AEM 6.4分支後，Package Manager狀態錯誤。 NPR-24551：Granite-21750 的 Hotfix
+* AMS實例——錯誤日誌分析。 CQ-4249567 的 Hotfix
 
 **安全性**
 
-* SAML重新登入會使用Okta IDP重新導向登出頁面。 NPR-25523:GRANITE-22364的修補程式
-* 透過OAK外部IDP OAuth提供者設定的IMS驗證會停用在AEM中建立的使用者。 NPR-25301:Granite-22363的修補程式
+* SAML重新登入會使用Okta IDP重新導向登出頁面。 NPR-25523：GRANITE-22364 的 Hotfix
+* 透過OAK外部IDP OAuth提供者設定的IMS驗證會停用在AEM中建立的使用者。 NPR-25301：Granite-22363 的 Hotfix
 
-**MAC —— 測試與目標整合**
+**MAC - Test&amp;Target 整合**
 
-* （定位）定位期間文字元件錯誤。 CQ-4233343的修補程式
+* （定位）定位期間文字元件錯誤。 CQ-4233343 的 Hotfix
 
 **社群**
 
-* （檔案庫）下載空白的資產會導致格式問題。 NPR-24260:CQ-4245159的修補程式
-* 修正數個Adobe Social問題。 NPR-24247:CQ-4245054、CQ-4245120、CQ-4245296的修補程式
-* 成員和群組的無限捲動控制台失敗，以防作者發佈在不同的上下文路徑上執行。 NPR-24437:CQ-4246013的修補程式
-* 即使從已應答狀態移除貼文，貼文也不會返回未應答狀態，且分數不會下降。 NPR-24419:CQ-4245797、CQ-4245932的修補程式
-* 使用社群中的日曆功能新增的事件會輸出錯誤值。 NPR-24883:CQ-4244056的修補程式
-* （社群論壇）分頁點按和頁面載入行為的問題。 NPR-24880:CQ-4246109的修補程式
-* (Chrome)社群事件的時區轉換失敗。 NPR-24881:CQ-4247115的修補程式
-* 無法在電子郵件中呈現內嵌物件。 NPR-24999:CQ-4248022的修補程式
-* 除了建立UGC外，UGC更新時還應執行自動協調序列。 NPR-25892:CQ-4251399的修補程式
-* 群組上的模態對話回應。 NPR-25623:CQ-4248805的修補程式
-* 刪除內容時拋出Solr異常。 NPR-25869:CQ-4248908的修補程式
-* 含有大量貼文之主題的已編頁連結無法用於「通知」。 NPR-25678:CQ-4243038的修補程式
-* 搜尋結果中的時間值會顯示伺服器時間，而非用戶端的時區。 NPR-25594:CQ-4248986的修補程式
-* （論壇注釋）瀏覽器上一步按鈕無法如預期般運作。 NPR-25205:CQ-4248573的修補程式
-* （搜尋結果）瀏覽器上一頁按鈕無法如預期般運作。 NPR-25214:CQ-4248574的修補程式
-* 覆蓋communitygroupmemberlist元件時返回空值。 NPR-25228:CQ-4248523的修補程式
-* （社群行事歷）ClassCastException會在將事件儲存為新封面影像時產生。 NPR-25167:CQ-4248662的修補程式
+* （檔案庫）下載空白的資產會導致格式問題。 NPR-24260：CQ-4245159 的 Hotfix
+* 多個 Adobe Social 問題的修正。NPR-24247：CQ-4245054、CQ-4245120、CQ-4245296 的 Hotfix
+* 成員和群組的無限捲動控制台失敗，以防作者發佈在不同的上下文路徑上執行。 NPR-24437：CQ-4246013 的 Hotfix
+* 即使從已應答狀態移除貼文，貼文也不會返回未應答狀態，且分數不會下降。 NPR-24419：CQ-4245797、CQ-4245932 的 Hotfix
+* 使用社群中的日曆功能新增的事件會輸出錯誤值。 NPR-24883：CQ-4244056 的 Hotfix
+* （社群論壇）分頁點按和頁面載入行為的問題。 NPR-24880：CQ-4246109 的 Hotfix
+* (Chrome)社群事件的時區轉換失敗。 NPR-24881：CQ-4247115 的 Hotfix
+* 無法在電子郵件中呈現內嵌物件。 NPR-24999：CQ-4248022 的 Hotfix
+* 除了建立UGC外，UGC更新時還應執行自動協調序列。 NPR-25892：CQ-4251399 的 Hotfix
+* 群組上的模態對話回應。 NPR-25623：CQ-4248805 的 Hotfix
+* 刪除內容時拋出Solr異常。 NPR-25869：CQ-4248908 的 Hotfix
+* 含有大量貼文之主題的已編頁連結無法用於「通知」。 NPR-25678：CQ-4243038 的 Hotfix
+* 搜尋結果中的時間值會顯示伺服器時間，而非用戶端的時區。 NPR-25594：CQ-4248986 的 Hotfix
+* （論壇注釋）瀏覽器上一步按鈕無法如預期般運作。 NPR-25205：CQ-4248573 的 Hotfix
+* （搜尋結果）瀏覽器上一頁按鈕無法如預期般運作。 NPR-25214：CQ-4248574 的 Hotfix
+* 覆蓋communitygroupmemberlist元件時返回空值。 NPR-25228：CQ-4248523 的 Hotfix
+* （社群行事歷）ClassCastException會在將事件儲存為新封面影像時產生。 NPR-25167：CQ-4248662 的 Hotfix
 * （社群）訊息遭到截斷。 NPR-25326
-* (AEM Publish)Scorm資源會因內容路徑而失敗，並顯示空白畫面。 NPR-26155:CQ-4251942的修補程式
-* (MSRP)新建立的日曆會儲存在錯誤記錄檔中部分擲出NPE。 NPR-26071:CQ-4250531的修補程式
-* 論壇／主題分頁只會在重新整理頁面時更新。 NPR-26070、NPR-25965:CQ-4249509的修補程式
-* （問答論壇）開啟評論的直接連結時，無法導覽至上一頁。 NPR-26069:CQ-4251699的修補程式
-* 在「建立」群組中上傳影像在行動裝置上無法運作。 NPR-26172:CQ-4251703的修補程式
-* （傳訊）使用DSRP時，訊息接收者的名稱一律顯示為「未知」。 NPR-26056:CQ-4251397的修補程式
-* 啟用Scorm資源完成狀態標籤在UI中顯示為空。 NPR-26034:CQ-4249994的修補程式
-* 在建立新社群群組時，會在作用中／作用中mongoMK叢集上建立重複的社群群組。 NPR-26032:CQ-4245884的修補程式
-* （作者）群組建立精靈在精靈中載入／建立群組需要太長時間。 NPR-26031:CQ-4244966的修補程式
-* 在hbs指令碼中添加include語句時，Parsys將消失。 NPR-25908:CQ-4250489的修補程式
-* 在啟用「允許特權」時，特權成員只能為社區成員的用戶進行合成。 NPR-25877:CQ-4248450的修補程式
-* 封鎖深層連結以啟用。 NPR-25966:CQ-4251478的修補程式
-* 論壇分頁不會在移除回覆時動態更新。 NPR-25970:CQ-4248975、CQ-4252843的修補程式
-* 在巢狀注釋的情況下，自動捲動和反白顯示無法用於日曆和篩選事件。 NPR-25958:CQ-4251471的修補程式
-* (DSRP)直接／深層連結效能會隨著大量使用者產生的內容而降低。 NPR-25957:CQ-4251470的修補程式
-* 無法修改允許特權成員和特權成員的屬性。 NPR-26014:CQ-4244592的修補程式
-* 將all標籤為已讀取會重設所有社群頁面的通知計數器。 NPR-25931:CQ-4248612的修補程式
-* 編輯DSRP的IT失敗。 NPR-25929:CQ-4251382的修補程式
-* 建立電子郵件範本時，由於NPE而導致電子郵件IT失敗。 NPR-26039:CQ-4250962的修補程式
-* 以高解析度內嵌影像時的論壇串流問題。 NPR-26037:CQ-4244453、CQ-4253099的修補程式
-* 時間顯示伺服器時區與用戶時區不同時的交換機。 NPR-26036:CQ-4248751的修補程式
-* 將相同名稱的檔案附加兩次至論壇貼文會導致伺服器錯誤。 NPR-24172:CQ-4244367的修補程式
-* 支援效能修正——在作者和發佈上進行群組分頁、在作者上進行群組搜尋、避免日誌、日曆和構想的回覆序列化，以及在檢視群組清單頁面時，為每個群組取得群組成員資格（邀請／取消邀請）按鈕的延遲載入。 NPR-24538:CQ-4246515的修補程式
-* 啟用資源在作者上不可見。 CQ-4252618的修補程式
-* 未知用戶不會為線程生成通知。 CQ-4245132的修補程式
-* 群組搜尋不會顯示在左側導軌上。 CQ-4252621的修補程式
-* （作者）群組主控台無法使用分頁功能。 CQ-4242786的修補程式
-* jQuery UI升級。 CQ-4248894的修補程式
-* 升級至最新的SCORM 2017.1版本。 NPR-25675:CQ-4240671的修補程式
-* 非社群使用者可看到「代表撰寫」欄位。 NPR-25331:CQ-4247858的修補程式
-* 即使刪除後，貼文仍會顯示在UI上，並在主控台上顯示錯誤。 NPR-26290:CQ-4252803的修補程式
-* （網站設定）可儲存對角色所做的變更。 NPR-26274:CQ-4252187的修補程式
-* （安全性弱點）由於JSON Web Token設定錯誤而導致帳戶接管。 NPR-26458:CQ-4253314的修補程式
-* 移除回覆時不會重設分頁。 NPR-26326:CQ-4252997的修補程式
-* 編輯時，附件影像不會顯示在「草稿」中。 CQ-4253360的修補程式
-* 在關係資料庫(DSRP)中附加附件時，頁面不會刷新。 CQ-4253084的修補程式
-* 群組無法在啟用網站資源中運作。 CQ-4252975的修補程式
-* 「啟用」中不會保留先決條件學習路徑。 CQ-4252948的修補程式
+* (AEM Publish)Scorm資源會因內容路徑而失敗，並顯示空白畫面。 NPR-26155：CQ-4251942 的 Hotfix
+* (MSRP)新建立的日曆會儲存在錯誤記錄檔中部分擲出NPE。 NPR-26071：CQ-4250531 的 Hotfix
+* 論壇／主題分頁只會在重新整理頁面時更新。 NPR-26070、NPR-25965：CQ-4249509 的 Hotfix
+* （問答論壇）開啟評論的直接連結時，無法導覽至上一頁。 NPR-26069：CQ-4251699 的 Hotfix
+* 在「建立」群組中上傳影像在行動裝置上無法運作。 NPR-26172：CQ-4251703 的 Hotfix
+* （傳訊）使用DSRP時，訊息接收者的名稱一律顯示為「未知」。 NPR-26056：CQ-4251397 的 Hotfix
+* 啟用 Scorm 資源完成狀態在 UI 中顯示為空白。NPR-26034：CQ-4249994 的 Hotfix
+* 在建立新社群群組時，會在作用中／作用中mongoMK叢集上建立重複的社群群組。 NPR-26032：CQ-4245884 的 Hotfix
+* （作者）群組建立精靈在精靈中載入／建立群組需要太長時間。 NPR-26031：CQ-4244966 的 Hotfix
+* 在hbs指令碼中添加include語句時，Parsys將消失。 NPR-25908：CQ-4250489 的 Hotfix
+* 啟用「允許有特殊權限者」時，有特殊權限的成員應只能為具有社群成員身分的使用者撰寫內容。NPR-25877：CQ-4248450 的 Hotfix
+* 封鎖深層連結以啟用。 NPR-25966：CQ-4251478 的 Hotfix
+* 論壇分頁不會在移除回覆時動態更新。 NPR-25970：CQ-4248975、CQ-4252843 的 Hotfix
+* 在巢狀注釋的情況下，自動捲動和反白顯示無法用於日曆和篩選事件。 NPR-25958：CQ-4251471 的 Hotfix
+* (DSRP)直接／深層連結效能會隨著大量使用者產生的內容而降低。 NPR-25957：CQ-4251470 的 Hotfix
+* 無法修改允許特權成員和特權成員的屬性。 NPR-26014：CQ-4244592 的 Hotfix
+* 將all標籤為已讀取會重設所有社群頁面的通知計數器。 NPR-25931：CQ-4248612 的 Hotfix
+* 編輯DSRP的IT失敗。 NPR-25929：CQ-4251382 的 Hotfix
+* 建立電子郵件範本時，由於NPE而導致電子郵件IT失敗。 NPR-26039：CQ-4250962 的 Hotfix
+* 以高解析度內嵌影像時的論壇串流問題。 NPR-26037：CQ-4244453、CQ-4253099 的 Hotfix
+* 時間顯示伺服器時區與用戶時區不同時的交換機。 NPR-26036：CQ-4248751 的 Hotfix
+* 將相同名稱的檔案附加兩次至論壇貼文會導致伺服器錯誤。 NPR-24172：CQ-4244367 的 Hotfix
+* 支援效能修正——在作者和發佈上進行群組分頁、在作者上進行群組搜尋、避免日誌、日曆和構想的回覆序列化，以及在檢視群組清單頁面時，為每個群組取得群組成員資格（邀請／取消邀請）按鈕的延遲載入。 NPR-24538：CQ-4246515 的 Hotfix
+* 啟用資源在作者上不可見。 CQ-4252618 的 Hotfix
+* 未知用戶不會為線程生成通知。 CQ-4245132 的 Hotfix
+* 群組搜尋不會顯示在左側導軌上。 CQ-4252621 的 Hotfix
+* （作者）群組主控台無法使用分頁功能。 CQ-4242786 的 Hotfix
+* jQuery UI升級。 CQ-4248894 的 Hotfix
+* 升級至最新的SCORM 2017.1版本。 NPR-25675：CQ-4240671 的 Hotfix
+* 非社群使用者可看到「代表撰寫」欄位。 NPR-25331：CQ-4247858 的 Hotfix
+* 即使刪除後，貼文仍會顯示在UI上，並在主控台上顯示錯誤。 NPR-26290：CQ-4252803 的 Hotfix
+* （網站設定）可儲存對角色所做的變更。 NPR-26274：CQ-4252187 的 Hotfix
+* （安全性弱點）由於JSON Web Token設定錯誤而導致帳戶接管。 NPR-26458：CQ-4253314 的 Hotfix
+* 移除回覆時不會重設分頁。 NPR-26326：CQ-4252997 的 Hotfix
+* 編輯時，附件影像不會顯示在「草稿」中。 CQ-4253360 的 Hotfix
+* 在關係資料庫(DSRP)中附加附件時，頁面不會刷新。 CQ-4253084 的 Hotfix
+* 群組無法在啟用網站資源中運作。 CQ-4252975 的 Hotfix
+* 「啟用」中不會保留先決條件學習路徑。 CQ-4252948 的 Hotfix
 
 **工作流程**
 
-* 工作流程啟動程式UI不會顯示過去41個啟動程式設定，並會在主控台中觸發javascript錯誤。 NPR-25028:CQ-4247604的修補程式
-* 在不編輯啟動程式的情況下編輯舊式工作流程，會在任何包含「啟動頁面／資產」步驟的工作流程上建立多個工作流程。 NPR-25870:CQ-4250896的修補程式
-* 如果頁面有中繼資料節點，工作流程裝載中的連結不正確。 NPR-25916:CQ-4250733的修補程式
+* 工作流程啟動程式UI不會顯示過去41個啟動程式設定，並會在主控台中觸發javascript錯誤。 NPR-25028：CQ-4247604 的 Hotfix
+* 在不編輯啟動程式的情況下編輯舊式工作流程，會在任何包含「啟動頁面／資產」步驟的工作流程上建立多個工作流程。 NPR-25870：CQ-4250896 的 Hotfix
+* 如果頁面有中繼資料節點，工作流程裝載中的連結不正確。 NPR-25916：CQ-4250733 的 Hotfix
 
 **轉換**
 
-* 修正匯入轉換的專案會同時發出兩個POST請求，因此會造成錯誤的問題。 NPR-24889:CQ-4247638的修補程式
-* 修正當建立多種語言的翻譯專案時，相同語言的所有頁面都會新增至相同的工作。 NPR-25091:CQ-4246112的修補程式
-* 修正翻譯工作在某些情況下只會列出前40個頁面的問題。 NPR-25974:CQ-4248661的修補程式
-* DataPicker元件(Coral2)不會變更年份。 NPR-24466:Granite-21893的修補程式
+* 修正匯入轉換的專案會同時發出兩個POST請求，因此會造成錯誤的問題。 NPR-24889：CQ-4247638 的 Hotfix
+* 修正當建立多種語言的翻譯專案時，相同語言的所有頁面都會新增至相同的工作。 NPR-25091：CQ-4246112 的 Hotfix
+* 修正翻譯工作在某些情況下只會列出前40個頁面的問題。 NPR-25974：CQ-4248661 的 Hotfix
+* DataPicker元件(Coral2)不會變更年份。 NPR-24466：Granite-21893 的 Hotfix
 
 **UI - Foundation**
 
-* 主動式Foundation UI後台。 NPR-24344、NPR-24345、NPR-25176、NPR-25095、NPR-24332、NPR-25653、NPR-25932、NPR-25932-25935、NPR-25976
-* （設計匯入工具）匯入頁面不會匯入js,css。 NPR-25203:Granite-22236的修補程式
+* 主動式 Foundation UI 反向移植。NPR-24344、NPR-24345、NPR-25176、NPR-25095、NPR-24332、NPR-25653、NPR-25932、NPR-25932-25935、NPR-25976
+* （設計匯入工具）匯入頁面不會匯入js,css。 NPR-25203：Granite-22236 的 Hotfix
 * 主動式Foundation UI支援可改善產品的穩定性。 NPR-24334
 
-**MAC —— 測試與目標整合**
+**MAC - Test&amp;Target 整合**
 
-* 個人化精靈（由「開始定位」啟動）的第二頁空白，並拋出主控台錯誤。 CQ-4253277的修補程式
+* 個人化精靈（由「開始定位」啟動）的第二頁空白，並拋出主控台錯誤。 CQ-4253277 的 Hotfix
 
 **體驗片段**
 
@@ -1486,18 +1486,18 @@ AEM 6.4.2.0的一些主要亮點是：
 
 **內容片段管理**
 
-* 內容片段註解和內容片段版本的並排比較。 CQ-4247148的修補程式
+* 內容片段註解和內容片段版本的並排比較。 CQ-4247148 的 Hotfix
 
-**DAM —— 一般**
+**DAM - 一般**
 
-* 「簽出者」篩選器在搜索中無法正常工作。 CQ-4247070的修補程式
-* 在執行資產更新工作流程時，資產語言副本及其縮圖會變成空白。 CQ-4250641的修補程式
-* Duplicate-id:id屬性值必須是唯一的。 CQ-4250905的修補程式
-* 標籤：表單元素必須有標籤。 CQ-4250906的修補程式
-* 連結名稱：連結必須有可識別的文字。 CQ-4250907的修補程式
-* 埠資料夾元資料模板遷移JMX和ServiceUserMapping。 CQ-4252947的修補程式
-* WebdriverIO測試未在CQ/dam的發行版/640分支中運行。 CQ-4252749的修補程式
-* 若已發佈連結，則不會重構已移動資產的連結。 CQ-4245756的修補程式
+* 「簽出者」篩選器在搜索中無法正常工作。 CQ-4247070 的 Hotfix
+* 在執行資產更新工作流程時，資產語言副本及其縮圖會變成空白。 CQ-4250641 的 Hotfix
+* Duplicate-id:id屬性值必須是唯一的。 CQ-4250905 的 Hotfix
+* 標籤：表單元素必須有標籤。 CQ-4250906 的 Hotfix
+* 連結名稱：連結必須有可識別的文字。 CQ-4250907 的 Hotfix
+* 埠資料夾元資料模板遷移JMX和ServiceUserMapping。 CQ-4252947 的 Hotfix
+* WebdriverIO測試未在CQ/dam的發行版/640分支中運行。 CQ-4252749 的 Hotfix
+* 若已發佈連結，則不會重構已移動資產的連結。 CQ-4245756 的 Hotfix
 
 **DAM —— 檢視器**
 
@@ -1505,48 +1505,48 @@ AEM 6.4.2.0的一些主要亮點是：
 
 **DAM品牌入口網站**
 
-* 從品牌入口網站取消發佈系列失敗並出現錯誤。 CQ-4245990的修補程式
-* 無法從品牌入口網站取消發佈影像預設集。 CQ-4246140的修補程式
-* 發佈資產時，多頁pdf檔案的子資產不會發佈。 CQ-4245162的修補程式
+* 從品牌入口網站取消發佈系列失敗並出現錯誤。 CQ-4245990 的 Hotfix
+* 無法從品牌入口網站取消發佈影像預設集。 CQ-4246140 的 Hotfix
+* 發佈資產時，多頁pdf檔案的子資產不會發佈。 CQ-4245162 的 Hotfix
 
 **DAM - DMClient**
 
-* 將視訊資產發佈至YouTube時，產生YouTube的標籤會包含標籤的完整路徑。 CQ-4245549的修補程式
-* （選擇退出和選擇加入升級）檢視器CSS重新導向的問題。 CQ-4247854的修補程式
-* 無法建立／編輯檢視器預設集，成為「管理員」群組的非成員。 CQ-4247618的修補程式
-* (6.4.1.0)在多個參數中新增多個視訊會中斷視訊播放器。 CQ-4248517的修補程式
-* 在影像集中重新命名和移動資產會導致無法編輯。 CQ-4248434的修補程式
-* 將大型影片發佈至YouTube會浪費時間傳送訊息。 CQ-4237831的修補程式
-* （清單檢視）「資產選擇器／選擇器」的使用者介面會變更為所有灰色，且使用者會停用。 CQ-4237817的修補程式
-* （垂直縮放）Css無法載入，並出現404錯誤。 CQ-4236508的修補程式
-* 嘗試下載資產名稱中包含百分比(%)字元的資產時，會產生空的封存。 CQ-4250558的修補程式
-* （卡片檢視）在視訊資產上使用「複製並貼上」時，不會顯示任何處理指標。 CQ-4249037的修補程式
-* （從6.3.2升級至6.4）「轉譯」頁面上的「升級前影像預設集」會顯示為「未發佈」，但選取時不會產生URL按鈕。 CQ-4240406的修補程式
-* 技術負債／小幅增強功能。 CQ-4240648的修補程式
-* 「資產選擇器」（或「資產選擇器」）不會顯示可用資料夾中的所有資產。 CQ-4218414的修補程式
-* 沒有高度的影像預設集會顯示大小不正確的影像。 CQ-4246546的修補程式
-* （多頁資產）UI會在按一下註解時中斷。 CQ-4251434的修補程式
-* 從6.3升級至6.4及更新版本的Analytics預設集時，會建立新的報表套裝和分析預設集，遺失使用者較舊的報表資料。 CQ-4244529的修補程式
-* （管理出版物精靈）嘗試發佈或取消發佈時，資產清單會顯示為空白。 CQ-4251881的修補程式
-* 在查看「設定成員」後選擇「查看者」時，AVS視頻無法播放。 CQ-4205308的修補程式
-* 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407的修補程式
-* 影像預設集不會套用至下載的動態轉譯。 CQ-4249862的修補程式
-* 在「檢視器預設集」清單頁面上，「選取全部」按鈕無法正常運作。 CQ-4252462的修補程式
-* 視訊設定檔：選擇「All（全部）」按鈕無法正常工作。 CQ-4253076、CQ-4251447的修補程式
-* SP2驗證通過——煙道通過。 CQ-4251639的修補程式
+* 將視訊資產發佈至YouTube時，產生YouTube的標籤會包含標籤的完整路徑。 CQ-4245549 的 Hotfix
+* （選擇退出和選擇加入升級）檢視器CSS重新導向的問題。 CQ-4247854 的 Hotfix
+* 無法建立／編輯檢視器預設集，成為「管理員」群組的非成員。 CQ-4247618 的 Hotfix
+* (6.4.1.0)在多個參數中新增多個視訊會中斷視訊播放器。 CQ-4248517 的 Hotfix
+* 在影像集中重新命名和移動資產會導致無法編輯。 CQ-4248434 的 Hotfix
+* 將大型影片發佈至YouTube會浪費時間傳送訊息。 CQ-4237831 的 Hotfix
+* （清單檢視）「資產選擇器／選擇器」的使用者介面會變更為所有灰色，且使用者會停用。 CQ-4237817 的 Hotfix
+* （垂直縮放）Css無法載入，並出現404錯誤。 CQ-4236508 的 Hotfix
+* 嘗試下載資產名稱中包含百分比(%)字元的資產時，會產生空的封存。 CQ-4250558 的 Hotfix
+* （卡片檢視）在視訊資產上使用「複製並貼上」時，不會顯示任何處理指標。 CQ-4249037 的 Hotfix
+* （從6.3.2升級至6.4）「轉譯」頁面上的「升級前影像預設集」會顯示為「未發佈」，但選取時不會產生URL按鈕。 CQ-4240406 的 Hotfix
+* 技術負債／小幅增強功能。 CQ-4240648 的 Hotfix
+* 「資產選擇器」（或「資產選擇器」）不會顯示可用資料夾中的所有資產。 CQ-4218414 的 Hotfix
+* 沒有高度的影像預設集會顯示大小不正確的影像。 CQ-4246546 的 Hotfix
+* （多頁資產）UI會在按一下註解時中斷。 CQ-4251434 的 Hotfix
+* 從6.3升級至6.4及更新版本的Analytics預設集時，會建立新的報表套裝和分析預設集，遺失使用者較舊的報表資料。 CQ-4244529 的 Hotfix
+* （管理出版物精靈）嘗試發佈或取消發佈時，資產清單會顯示為空白。 CQ-4251881 的 Hotfix
+* 在查看「設定成員」後選擇「查看者」時，AVS視頻無法播放。 CQ-4205308 的 Hotfix
+* 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407 的 Hotfix
+* 影像預設集不會套用至下載的動態轉譯。 CQ-4249862 的 Hotfix
+* 在「檢視器預設集」清單頁面上，「選取全部」按鈕無法正常運作。 CQ-4252462 的 Hotfix
+* 視訊設定檔：選擇「All（全部）」按鈕無法正常工作。 CQ-4253076、CQ-4251447
+* SP2驗證通過——煙道通過。 CQ-4251639 的 Hotfix
 
 **DAM - DMServices**
 
-* 無法為EPS檔案生成動態媒體轉譯。 CQ-4243688的修補程式
+* 無法為EPS檔案生成動態媒體轉譯。 CQ-4243688 的 Hotfix
 
 **花崗岩**
 
-* bundle SymbolicName中的錯字會導致重複的bundle。 Granite修補程式- 22155
-* CUGConfiguration無法拾取CugExclude。 Granite的修補程式- 21109
-* 重新啟動Adobe Granite Workflow Core會重新執行從中間建立不必要工作流程的工作流程步驟。 NPR-25057:Granite-22218的修補程式
-* JcrResourceBundle無法正確支援多個基本名稱。 NPR-25245:Granite-22317的修補程式
-* 在安裝內容包時，ACL按主體分組，因此會破壞權限模型。 NPR-24583:Granite-21591的修補程式
-* 將Jetty更新至9.4.11以修正弱點。 NPR-25030:Granite-22120的修補程式
+* bundle SymbolicName中的錯字會導致重複的bundle。 Granite-22155 的 Hotfix
+* CUGConfiguration無法拾取CugExclude。 Granite-21109 的 Hotfix
+* 重新啟動Adobe Granite Workflow Core會重新執行從中間建立不必要工作流程的工作流程步驟。 NPR-25057：Granite-22218 的 Hotfix
+* JcrResourceBundle無法正確支援多個基本名稱。 NPR-25245：Granite-22317 的 Hotfix
+* 在安裝內容包時，ACL按主體分組，因此會破壞權限模型。 NPR-24583：Granite-21591 的 Hotfix
+* 將Jetty更新至9.4.11以修正弱點。 NPR-25030：Granite-22120 的 Hotfix
 
 **表單**
 
@@ -1559,125 +1559,125 @@ AEM 6.4.2.0表格的主要重點為：
 * 新增在內部部署時使用[交易報表功能](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html)的支援。
 * 已新增程式碼，以在條件規則編輯器中不顯示子變數。
 
-**Forms附加套件**
+**Forms 附加元件套件**
 
 **交易報表**
 
-* 使用在發佈伺服器上配置的反向複製的重要性更新事務報告配置。 NPR-26050:CQ-4246650的修補程式
-* 延遲初始化定期刷新作業。 NPR-25968:CQ-4245024的修補程式
-* 事務記錄失敗，指針異常為Null。 CQ-4247302的修補程式
+* 使用在發佈伺服器上配置的反向複製的重要性更新事務報告配置。 NPR-26050：CQ-4246650 的 Hotfix
+* 延遲初始化定期刷新作業。 NPR-25968：CQ-4245024 的 Hotfix
+* 事務記錄失敗，指針異常為Null。 CQ-4247302 的 Hotfix
 
-**表單——工作流程**
+**Forms - 工作流程**
 
-* （HTML工作區）當使用者要求工作時，會重新整理該特定使用者的佇列計數，但不會重新整理頁面給其他使用者。 此問題已由新屬性修正。 若要將這個新屬性設定至您的AEM例項，請參閱其設定設定。 NPR-24536:CQ-4233665的修補程式
+* (HTML 工作區) 使用者認領任務時，系統會重新整理該特定使用者的佇列計數，但除非重新整理頁面，否則不會為其他使用者重新整理。此問題已由新屬性修正。 若要將這個新屬性設定至您的AEM例項，請參閱其設定設定。 NPR-24536：CQ-4233665 的 Hotfix
 * 無法在6.4的AEM Forms應用程式中載入大型表格。NPR-24463:CQ-4245091的修補程式
-* 嘗試檢視共用工作時，「行動工作區應用程式」中的問題。 NPR-25177:CQ-4248733的修補程式
-* Web和APK之間的驗證行為不一致。 NPR-25670:CQ-4248178的修補程式
-* 當對Web服務的呼叫在用戶端中開啟HTML5表格時，它會失敗並傳回錯誤訊息。 NPR-26048:CQ-4244716的修補程式
+* 嘗試檢視共用工作時，「行動工作區應用程式」中的問題。 NPR-25177：CQ-4248733 的 Hotfix
+* Web和APK之間的驗證行為不一致。 NPR-25670：CQ-4248178 的 Hotfix
+* 當對Web服務的呼叫在用戶端中開啟HTML5表格時，它會失敗並傳回錯誤訊息。 NPR-26048：CQ-4244716 的 Hotfix
 * 在AEM表單Windows應用程式6.3中呼叫服務時發生問題。NPR-26468:CQ-4252341的修補程式
 
 **行動表單**
 
-* （表格集）SSN和行動欄位驗證問題。 NPR-24458:CQ-4244983的修補程式
-* 在HTML預覽中預先填入多行欄位時，不會顯示資料。 NPR-24549:CQ-4244212的修補程式
+* （表格集）SSN和行動欄位驗證問題。 NPR-24458：CQ-4244983 的 Hotfix
+* 在HTML預覽中預先填入多行欄位時，不會顯示資料。 NPR-24549：CQ-4244212 的 Hotfix
 * 在多行欄位上評估指令碼時，資料會遺失。 NPR-25333, CQ-4249610的修補程式
 
 **表單——互動式通訊與通訊管理**
 
 * 使用基本模板和參考整合電路打印模板在整合電路上同步失敗。 NPR-24912
-* (CCR)驗證器不適用於欄位／變數。 CQ-4245047的修補程式
-* 「文本編輯」工具欄上的「資料模型對象」表徵圖會間歇性地消失。 CQ-4245122的修補程式
-* 如果刪除原始IC，則複製的IC上會出現異常日誌。 CQ-4249378的修補程式
-* 在字母轉譯中，即使資料正確，條件也不會評估為true。 CQ-4245944的修補程式
-* 從「內容」樹狀結構選取時，不會反白顯示自動產生的元件。 CQ-4246178的修補程式
-* 開啟「Web頻道範本」編輯器時發生的問題。 CQ-4248182的修補程式
-* 無法變更新增資產的順序，因為向上／向下箭頭仍會停用。 CQ-4252042的修補程式
-* 無法更新條件模組的屬性。 CQ-4247909的修補程式
-* 當使用者在Web頻道中重新排列物件時，「取消繼承」對話方塊的UX需要改進。 CQ-4241076的修補程式
-* 與XDP中定義的系結對應的字母中的資料，不會在使用直接字母URL時填入。 CQ-4245833的修補程式
-* （快取問題）Web頻道的同步化不反映對版面片段、列印頻道的文字片段所做的變更。 CQ-4251460的修補程式
-* 無法更新「版面」區段和DD屬性。 CQ-4247830的修補程式
-* (CCR)草稿重新載入因XML剖析而失敗。 CQ-4250950的修補程式
-* （IC編輯器）「編輯片段」按鈕應該更容易找到。 CQ-4244694的修補程式
-* (XDP)在新建立的子表單中新增版面片段時，會顯示空白畫面。 CQ-4248810的修補程式
-* DocumentFragment-master-DeployWithServerSideTests測試失敗。 CQ-4245496的修補程式
-* 文字模組變數「例項」在「條件」模組中複製。 CQ-4252128的修補程式
-* PDF預覽URL不會在發佈時顯示交易報表。 CQ-4246158的修補程式
-* IC同步與列印頻道與網路頻道同步相關的問題。 CQ-4251505的修補程式
-* EXM代碼清理：刪除LocalFunctionMapper。 CQ-4243265的修補程式
-* 要更正IC的webChannel表元件的TableHeader的資源類型。 CQ-4251821的修補程式
-* （IC編輯器）可用性問題。 CQ-4241081的修補程式
-* 列印渠道子表單不顯示插入功能。 CQ-4252994的修補程式
-* 刪除FDM節點或「變數」佔位符後，保持更改同步失敗。 CQ-4253178的修補程式
-* （範本編輯器）基本範本顯示頁首／頁尾附加拖放區域，並在開啟Web頻道時螢幕閃爍。 CQ-4253323的修補程式
-* 從「內容」樹狀結構選取時，自動產生的元件不會反白顯示。 CQ-4246178的修補程式
+* (CCR)驗證器不適用於欄位／變數。 CQ-4245047 的 Hotfix
+* 「文本編輯」工具欄上的「資料模型對象」表徵圖會間歇性地消失。 CQ-4245122 的 Hotfix
+* 如果刪除原始IC，則複製的IC上會出現異常日誌。 CQ-4249378 的 Hotfix
+* 在字母轉譯中，即使資料正確，條件也不會評估為true。 CQ-4245944 的 Hotfix
+* 從「內容」樹狀結構選取時，不會反白顯示自動產生的元件。 CQ-4246178 的 Hotfix
+* 開啟「Web頻道範本」編輯器時發生的問題。 CQ-4248182 的 Hotfix
+* 無法變更新增資產的順序，因為向上／向下箭頭仍會停用。 CQ-4252042 的 Hotfix
+* 無法更新條件模組的屬性。 CQ-4247909 的 Hotfix
+* 當使用者在Web頻道中重新排列物件時，「取消繼承」對話方塊的UX需要改進。 CQ-4241076 的 Hotfix
+* 與 XDP 中所定義繫結對應的信函中的資料，不會在使用直接信函 URL 時填入。CQ-4245833 的 Hotfix
+* （快取問題）Web頻道的同步化不反映對版面片段、列印頻道的文字片段所做的變更。 CQ-4251460 的 Hotfix
+* 無法更新「版面」區段和DD屬性。 CQ-4247830 的 Hotfix
+* (CCR)草稿重新載入因XML剖析而失敗。 CQ-4250950 的 Hotfix
+* （IC編輯器）「編輯片段」按鈕應該更容易找到。 CQ-4244694 的 Hotfix
+* (XDP)在新建立的子表單中新增版面片段時，會顯示空白畫面。 CQ-4248810 的 Hotfix
+* DocumentFragment-master-DeployWithServerSideTests測試失敗。 CQ-4245496 的 Hotfix
+* 文字模組變數「例項」在「條件」模組中複製。 CQ-4252128 的 Hotfix
+* PDF預覽URL不會在發佈時顯示交易報表。 CQ-4246158 的 Hotfix
+* IC同步與列印頻道與網路頻道同步相關的問題。 CQ-4251505 的 Hotfix
+* EXM代碼清理：刪除LocalFunctionMapper。 CQ-4243265 的 Hotfix
+* 要更正IC的webChannel表元件的TableHeader的資源類型。 CQ-4251821 的 Hotfix
+* （IC編輯器）可用性問題。 CQ-4241081 的 Hotfix
+* 列印渠道子表單不顯示插入功能。 CQ-4252994 的 Hotfix
+* 刪除FDM節點或「變數」佔位符後，保持更改同步失敗。 CQ-4253178 的 Hotfix
+* （範本編輯器）基本範本顯示頁首／頁尾附加拖放區域，並在開啟Web頻道時螢幕閃爍。 CQ-4253323 的 Hotfix
+* 從「內容」樹狀結構選取時，自動產生的元件不會反白顯示。 CQ-4246178 的 Hotfix
 
 **文件服務**
 
 * （表單服務）OSGI不支援XFAF。 NPR-25181, CQ-4251313的修補程式
-* 已組合PDF檔案標題中的字元將會變亂。 NPR-25113:CQ-4244682的修補程式
+* 已組合PDF檔案標題中的字元將會變亂。 NPR-25113：CQ-4244682 的 Hotfix
 
 **適用性表單**
 
-* 「傳送郵件時提交動作」會引發例外，「CC/BC」欄位為空白。 NPR-25019:CQ-4243039的修補程式
-* 由於查詢效率不彰，無法使用OOTB AEM Form元件。 NPR-25065:CQ-4247256的修補程式
-* 從guideImageChoiceComponent的對話方塊節點移除sling:orderBefore。 CQ-4245013的修補程式
-* （日期選擇器）「編輯模式」不支援兩種類型的時間戳記模式。 CQ-4237982的修補程式
-* 使用「Forms Workflow」 Classic編寫問題提交動作。 CQ-4236981的修補程式
-* (Web Channel)IC圖應繼承AF圖的colspan屬性。 CQ-4252143的修補程式
+* 「傳送郵件時提交動作」會引發例外，「CC/BC」欄位為空白。 NPR-25019：CQ-4243039 的 Hotfix
+* 由於查詢效率不彰，無法使用OOTB AEM Form元件。 NPR-25065：CQ-4247256 的 Hotfix
+* 從guideImageChoiceComponent的對話方塊節點移除sling:orderBefore。 CQ-4245013 的 Hotfix
+* （日期選擇器）「編輯模式」不支援兩種類型的時間戳記模式。 CQ-4237982 的 Hotfix
+* 使用「Forms Workflow」 Classic編寫問題提交動作。 CQ-4236981 的 Hotfix
+* (Web Channel)IC圖應繼承AF圖的colspan屬性。 CQ-4252143 的 Hotfix
 
 **後端整合**
 
-* （SOAP請求）大小數（超過6位數）以指數表示法表示，導致驗證錯誤。 NPR-25283:CQ-4248100的修補程式
-* 在複雜類型中定義的可選參數驗證不正確。 NPR-25070:CQ-4247107的修補程式
+* （SOAP請求）大小數（超過6位數）以指數表示法表示，導致驗證錯誤。 NPR-25283：CQ-4248100 的 Hotfix
+* 在複雜類型中定義的可選參數驗證不正確。 NPR-25070：CQ-4247107 的 Hotfix
 * 已新增功能，讓使用者對多個服務使用相同的WSDL檔案。 NPR-24604, CQ-4247756的修補程式
 * FDM在其SOAP呼叫中混合參數順序。 NPR-25069, CQ-4247180的修補程式
-* FDM在SOAP請求中合併實體（在清單／陣列中）。 NPR-25284:CQ-4248375的修補程式
+* FDM在SOAP請求中合併實體（在清單／陣列中）。 NPR-25284：CQ-4248375 的 Hotfix
 
-**Forms JEE安裝程式**
+**Forms JEE 安裝程式**
 
-**PDFG服務**
+**PDFG 服務**
 
-* 安全設定的建立／修改功能不起作用。 NPR-24769:CQ-4246927的修補程式
+* 安全設定的建立／修改功能不起作用。 NPR-24769：CQ-4246927 的 Hotfix
 * 透過單一API呼叫，選擇性地取消內嵌字型，以最佳化PDF。 NPR-23287
 
 **文件服務**
 
 * 輸出服務未提供協助工具Reader的正確標籤。 NPR-24438、NPR-24439、NPR-24440、NPR-24441:CQ-4243849、CQ-4243845、CQ-4243852、CQ-4243853的修補程式
 
-**Document Security**
+**文件安全性**
 
-* 使用Document Security建立原則的問題。 NPR-25586、NPR-25547:CQ-4247086的修補程式
+* 使用Document Security建立原則的問題。 NPR-25586、NPR-25547：CQ-4247086 的 Hotfix
 
 **表單- Foundation JEE**
 
-* 間歇性地作為系統上下文帳戶運行的進程。 NPR-25289、NPR-25313:CQ-4249331的修補程式
-* AEM Forms JEE受Apache Struts和Jackson資料系結安全性警報影響。 NPR-25628:CQ-4242891的修補程式
-* 電子郵件起點流程無法運作。 NPR-25253:CQ-4248518的修補程式
+* 間歇性地作為系統上下文帳戶運行的進程。 NPR-25289、NPR-25313：CQ-4249331 的 Hotfix
+* AEM Forms JEE受Apache Struts和Jackson資料系結安全性警報影響。 NPR-25628：CQ-4242891 的 Hotfix
+* 電子郵件起點流程無法運作。 NPR-25253：CQ-4248518 的 Hotfix
 
-**隨附的功能套件**
+**包含的 Feature Pack**
 
 **資產**
 
-* 已新增與Adobe Stock](/help/assets/aem-assets-adobe-stock.md)的整合，讓使用者可以直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 [如需詳細資訊，請參閱[搭配AEM資產使用Adobe Stock資產](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)。 NPR-15779:CQ-30857的修補程式
-* 新增對動態條件式中繼架構的支援。 如需詳細資訊，請參閱[階層式中繼資料](/help/assets/cascading-metadata.md)。 NPR-25189:CQ-4237413的修補程式
-* 在內容片段上啟用「資產下載」選項。 如需詳細資訊，請參閱[資產報表](/help/assets/asset-reports.md)。 NPR-25186:CQ-4237410的修補程式
-* 能夠為資產資料夾設定元資料架構。 如需詳細資訊，請參閱[資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)，並參閱AEM 6.4.2.0安裝後的[組態設定](#configuration-settings-required-for-npr)。 NPR-21268:CQ-4221574的修補程式
+* 已新增與Adobe Stock](/help/assets/aem-assets-adobe-stock.md)的整合，讓使用者可以直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 [如需詳細資訊，請參閱[搭配AEM資產使用Adobe Stock資產](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)。 NPR-15779：CQ-30857 的 Hotfix
+* 新增對動態條件式中繼架構的支援。 如需詳細資訊，請參閱[階層式中繼資料](/help/assets/cascading-metadata.md)。 NPR-25189：CQ-4237413 的 Hotfix
+* 在內容片段上啟用「資產下載」選項。 如需詳細資訊，請參閱[資產報表](/help/assets/asset-reports.md)。 NPR-25186：CQ-4237410 的 Hotfix
+* 能夠為資產資料夾設定元資料架構。 如需詳細資訊，請參閱[資料夾中繼資料結構](/help/assets/folder-metadata-schema.md)，並參閱AEM 6.4.2.0安裝後的[組態設定](#configuration-settings-required-for-npr)。 NPR-21268：CQ-4221574 的 Hotfix
 
 **網站**
 
-* 允許編輯內容片段而不具刪除權限。 如需詳細資訊，請參閱[自訂和擴充內容片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html)。 NPR-25793:CQ-4248750的修補程式
-* 已新增為內容片段加上註解的功能。 如需詳細資訊，請參閱[Variaus-Authoring片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment)。 NPR-25188:CQ-4235336的修補程式
-* 版本控制：並排比較內容片段。 如需詳細資訊，請參閱[管理內容片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions)。 NPR-25187:CQ-4237412的修補程式
+* 允許編輯內容片段而不具刪除權限。 如需詳細資訊，請參閱[自訂和擴充內容片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html)。 NPR-25793：CQ-4248750 的 Hotfix
+* 已新增為內容片段加上註解的功能。 如需詳細資訊，請參閱[Variaus-Authoring片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment)。 NPR-25188：CQ-4235336 的 Hotfix
+* 版本控制：並排比較內容片段。 如需詳細資訊，請參閱[管理內容片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions)。 NPR-25187：CQ-4237412 的 Hotfix
 * 影像編輯器增強功能已支援至AEM 6.4.2.0。如需詳細資訊，請參閱[影像編輯器](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html)。 NPR-24467
 
 **隨附的OSGI組合和內容套件**
 
-AEM 6.4.2.0隨附的OSGi搭售清單
+AEM 6.4.2.0 中包含的 OSGi 套件組合清單
 
 [取得檔案](assets/6.4.2.0_bundle-list.txt)
 
-AEM 6.4.2.0內容套件清單
+AEM 6.4.2.0 中包含的內容套件清單
 
 [取得檔案](assets/6_4_2_0content-package-list.txt)
 
@@ -1687,10 +1687,10 @@ AEM 6.4.1.0是重要的更新，其中包括效能、穩定性、安全性和重
 
 AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 
-* 內建儲存庫(Apache Jackrabbit Oak)已更新至1.8.3版。
+* 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.3 版。
 * 推出增強的智慧標籤。
 * Design Picker、Tag Picker中的修正（將來源VM和目標VM變更為自動）
-* 新增對typeHint的支援，可將值儲存為字串。
+* 新增對 typeHint 的支援，可將值儲存為字串。
 * 已在郵件服務中添加對SMTP over TLS的支援。
 * DMS7中HTTP轉發程式的Proxy處理修正。
 * 更新至/etc/clientlibs/social/thirdparty/handlebars/source/handlebars.js 1.3版。
@@ -1707,118 +1707,118 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 
 **資產**
 
-* 重新開啟資產屬性頁面時，階層式下拉式值顯示空白。 NPR-23042:CQ-4238761的修補程式
+* 重新開啟資產屬性頁面時，階層式下拉式值顯示空白。 NPR-23042：CQ-4238761 的 Hotfix
 * 非管理員使用者NPR-23044無法使用mylinkshare頁面上的共用連結和頁面的連結：CQ-4239004的修補程式
 * 在6.4.0的「DAM資產更新」工作流程中防止出現空指針異常。NPR-24134:CQ-4244972的修補程式
-* 「發佈的WCM」頁面顯示熱點的預留位置圖示，OOTB檢視器遺失403錯誤的CSS檔案。 NPR-23041:CQ-4233716的修補程式
-* （詳細檢視）「下一／後退導覽」功能會在「動態轉譯」預覽區域中保留DIV覆蓋，以封鎖檢視器的存取權。 NPR-23043:CQ-4238499的修補程式
-* CMYK影像轉譯的飽和度不正確。 NPR-23048:CQ-4235470的修補程式
+* 「發佈的WCM」頁面顯示熱點的預留位置圖示，OOTB檢視器遺失403錯誤的CSS檔案。 NPR-23041：CQ-4233716 的 Hotfix
+* （詳細檢視）「下一／後退導覽」功能會在「動態轉譯」預覽區域中保留DIV覆蓋，以封鎖檢視器的存取權。 NPR-23043：CQ-4238499 的 Hotfix
+* CMYK影像轉譯的飽和度不正確。 NPR-23048：CQ-4235470 的 Hotfix
 * Scene7ListInfoProvider的XMP中繼資料擷取需要大量資源。 NPR-23754
-* (dam-delivery)Http轉送程式不遵守HTTP Proxy設定。 NPR-24002:CQ-4244140的修補程式
+* (dam-delivery)Http轉送程式不遵守HTTP Proxy設定。 NPR-24002：CQ-4244140 的 Hotfix
 
 **網站**
 
-* 當我們在移動時重新命名頁面時，頁面移動會成功，但重新命名功能無法運作。 NPR-22923:CQ-4235907的修補程式
-* 發佈指向Adobe促銷活動中匯入工具頁面的即時副本頁面時發生錯誤。 NPR-23053:CQ-4237164的修補程式
-* Classic UI中的移動／重新命名失敗，錯誤為「移動頁面時發生錯誤」，未重新命名。 NPR-23051:CQ-4235907的修補程式
-* 將內容從「列」視圖切換到「清單」視圖會呈現空白頁面，並對設定了OffTime和OnTime的頁面觸發「空指針異常」。 NPR-22968、NPR-23052:CQ-4238940的修補程式
+* 當我們在移動時重新命名頁面時，頁面移動會成功，但重新命名功能無法運作。 NPR-22923：CQ-4235907 的 Hotfix
+* 發佈指向 Adobe Campaigns 中匯入工具頁面的 Live Copy 頁面時發生錯誤。NPR-23053：CQ-4237164 的 Hotfix
+* Classic UI中的移動／重新命名失敗，錯誤為「移動頁面時發生錯誤」，未重新命名。 NPR-23051：CQ-4235907 的 Hotfix
+* 將內容從「列」視圖切換到「清單」視圖會呈現空白頁面，並對設定了OffTime和OnTime的頁面觸發「空指針異常」。 NPR-22968、NPR-23052：CQ-4238940 的 Hotfix
 
 **商務**
 
-* 修正失敗的核心Hobbes Testcase（CQ/Commerce模組）。 CQ-4253494的修補程式
+* 修正失敗的核心Hobbes Testcase（CQ/Commerce模組）。 CQ-4253494 的 Hotfix
 
-**弱點**
+**漏洞**
 
-* Salesforce整合容易受到伺服器端偽造要求(SSRF)的影響。 NPR-24289:CQ-4245277的修補程式
-* ReportingServicesProxyServlet中的伺服器端要求偽造(SSRF)和跨網站指令碼(XSS)。 NPR-24657:CQ-4246880的修補程式
-* 跨網站指令碼(XSS):反映在商務createcatalogwizard.html/content中。 NPR-24642:CQ-4237017的修補程式
-* 管理UI專案連結中的跨網站指令碼(XSS)。 NPR-23272:CQ-4241795的修補程式
+* Salesforce 整合容易遭受伺服器端請求偽造 (SSRF) 攻擊。NPR-24289：CQ-4245277 的 Hotfix
+* ReportingServicesProxyServlet中的伺服器端要求偽造(SSRF)和跨網站指令碼(XSS)。 NPR-24657：CQ-4246880 的 Hotfix
+* 跨網站指令碼(XSS):反映在商務createcatalogwizard.html/content中。 NPR-24642：CQ-4237017 的 Hotfix
+* 管理員 UI 專案連結中有跨網站指令碼 (XSS)。NPR-23272：CQ-4241795 的 Hotfix
 
-**WCM —— 基礎元件**
+**WCM - Foundation 元件**
 
-* 開啟「設計」選擇器會導致空指針異常。 NPR-23047:CQ-4238736的修補程式
+* 開啟「設計」選擇器會導致空指針異常。 NPR-23047：CQ-4238736 的 Hotfix
 
 **使用者介面**
 
-* (Coral3 Datepicker)新增對typeHint的支援，將值儲存為&quot;String&quot;。 NPR-23398:Granite-21194的修補程式
+* (Coral3 Datepicker)新增對typeHint的支援，將值儲存為&quot;String&quot;。 NPR-23398：Granite-21194 的 Hotfix
 * 國際化翻譯在語言級別不起作用。 NPR-22967、NPR-23046:Granite-21111的修補程式
 * granite.ui.commons的主動式支援修正。 NPR-23537
 * granite.ui.co內容修正的主動式支援。 NPR-23535
 * granite.ui.coralui修正的主動式支援。 NPR-23538
 * 無法一次從群組移除多個使用者。 NPR-23846
-* (OMEGA)僅以英文報告「功能」。 NPR-23989:Granite-21231的修補程式
-* （設計匯入工具）匯入頁面不會匯入js, css。 NPR-25203:Granite-22236的修補程式
+* (OMEGA)僅以英文報告「功能」。 NPR-23989：Granite-21231 的 Hotfix
+* （設計匯入工具）匯入頁面不會匯入js, css。 NPR-25203：Granite-22236 的 Hotfix
 
 **整合**
 
-* com.day.cq.analytics.sitecatalyst中未關閉的資源解析程式。 NPR-22340:CQ-4236515的修補程式
-* TargetContentImpl會在長時間執行的查詢期間，讓AEM變得呆滯。 NPR-22359:CQ-4236907的修補程式
-* 目標引擎(mbox.js, at.js)不使用損毀的URL，並使用包含冒號的URL，因為某些部署可能會失敗。 NPR-22434:CQ-4237854的修補程式
-* 在「目標」模式中，作者可以修改從Blueprint繼承的元件，而不取消繼承。 NPR-22865:CQ-4237907的修補程式
-* （個人化）切換至「卡片」檢視時，圖示會變形。 NPR-23373、NPR-23374:CQ-4240018、CQ-4240019的修補程式
-* （個人化）觀眾主控台不會顯示nt：檔案夾類型。 NPR-23375:CQ-4242293的修補程式
-* 當元件定位在發佈例項上時，在定位之前會出現閃爍的預設體驗。 NPR-23415:CQ-4242038的修補程式
-* （Adobe IMS主控台）刪除後，AccessTokenProvider OSGi服務設定會重新顯示。 NPR-23520:CQ-4208250的修補程式
-* 配置引用複製失敗，中間資料夾結構。 NPR-23485:CQ-4242751的修補程式
-* （個人化）clientlib被代理Servlet封鎖。 NPR-23521:CQ-4240995的修補程式
-* (Adobe IMS Console)在設定精靈中不會取得註冊的雲端解決方案。 NPR-23977:CQ-4244549的修補程式
-* 在沒有HTML擴充功能的頁面上載入目標內容時，循環無限。 NPR-23522:CQ-4223600的修補程式
-* 具有繼承的動態標籤管理組態參考的頁面啟動失敗。 NPR-23485:CQ-4242751的修補程式
+* com.day.cq.analytics.sitecatalyst 中無結尾標記的資源解析器。NPR-22340：CQ-4236515 的 Hotfix
+* 長時間執行查詢期間 TargetContentImpl 導致 AEM 變得緩慢。NPR-22359：CQ-4236907 的 Hotfix
+* 目標引擎 (mbox.js、at.js) 沒有使用損害 URL 而使用包含冒號的 URL，這可能因為某些部署而失敗。NPR-22434：CQ-4237854 的 Hotfix
+* 在「目標」模式中，作者不需要取消繼承即可修改從 Blueprint 繼承的元件。NPR-22865：CQ-4237907 的 Hotfix
+* （個人化）切換至「卡片」檢視時，圖示會變形。 NPR-23373、NPR-23374：CQ-4240018、CQ-4240019 的 Hotfix
+* （個人化）觀眾主控台不會顯示nt：檔案夾類型。 NPR-23375：CQ-4242293 的 Hotfix
+* 在發佈執行個體上將元件設為目標時，顯示目標元件之前的預設體驗時會出現閃爍畫面。NPR-23415：CQ-4242038 的 Hotfix
+* （Adobe IMS主控台）刪除後，AccessTokenProvider OSGi服務設定會重新顯示。 NPR-23520：CQ-4208250 的 Hotfix
+* 中繼資料夾結構出現設定參考複寫失敗。NPR-23485：CQ-4242751 的 Hotfix
+* （個人化）clientlib被代理Servlet封鎖。 NPR-23521：CQ-4240995 的 Hotfix
+* (Adobe IMS Console)在設定精靈中不會取得註冊的雲端解決方案。 NPR-23977：CQ-4244549 的 Hotfix
+* 在沒有HTML擴充功能的頁面上載入目標內容時，循環無限。 NPR-23522：CQ-4223600 的 Hotfix
+* 具有繼承的動態標籤管理組態參考的頁面啟動失敗。 NPR-23485：CQ-4242751 的 Hotfix
 
 **平台**
 
-* (Classic UI)(Touch UI)嘗試透過資產搜尋結構中的標籤述詞瀏覽標籤時，不會顯示標籤選擇器並引發例外。 NPR-23049:CQ-4239371的修補程式
-* (Classic UI)使用xtype=tags的元件會傳回null，且無法從標籤的eth清單中選取。 NPR-23050:CQ-4239937的修補程式
-* （品牌推廣）「選擇加入」對話方塊提及Adobe Marketing Cloud，而非Adobe Experience Cloud。 NPR-23210:CQ-4237799的修補程式
+* (Classic UI)(Touch UI)嘗試透過資產搜尋結構中的標籤述詞瀏覽標籤時，不會顯示標籤選擇器並引發例外。 NPR-23049：CQ-4239371 的 Hotfix
+* (Classic UI)使用xtype=tags的元件會傳回null，且無法從標籤的eth清單中選取。 NPR-23050：CQ-4239937 的 Hotfix
+* （品牌推廣）「選擇加入」對話方塊提及Adobe Marketing Cloud，而非Adobe Experience Cloud。 NPR-23210：CQ-4237799 的 Hotfix
 * 篩選選項會在從6.3升級至6.4後，讓AEM變得呆滯。NPR-23260:CQ-4239847的修補程式（待檢查）
 * granite.omnisearch.core修正的主動式支援。 NPR-23536
 * 平台。clientlibs的主動式支援修正。 NPR-23569
-* 編輯其他頁面屬性時，雲端服務設定繼承已中斷。 NPR-23216:CQ-4239782的修補程式
-* 在Day CQ Mail Service中啟用STARTTLS支援。 NPR-23941:CQ-4240397的修補程式
+* 編輯其他頁面屬性時，雲端服務設定繼承已中斷。 NPR-23216：CQ-4239782 的 Hotfix
+* 在Day CQ Mail Service中啟用STARTTLS支援。 NPR-23941：CQ-4240397 的 Hotfix
 
 **專案**
 
-* （內容片段）將英文資產新增至翻譯時，不會建立內嵌資產的語言副本。 CQ-4243477的修補程式
-* msft config下拉式清單會在舊版模式中顯示來自/libs(6.4 configs)的config，而非來自/etc(6.3 configs)的config。 CQ-4243475的修補程式
-* 在翻譯項目中自動提升和刪除翻譯啟動。 CQ-4243474的修補程式
+* （內容片段）將英文資產新增至翻譯時，不會建立內嵌資產的語言副本。 CQ-4243477 的 Hotfix
+* msft config下拉式清單會在舊版模式中顯示來自/libs(6.4 configs)的config，而非來自/etc(6.3 configs)的config。 CQ-4243475 的 Hotfix
+* 在翻譯項目中自動提升和刪除翻譯啟動。 CQ-4243474 的 Hotfix
 * 網站內的內容片段未翻譯。 CQ-4243482、CQ-4243483、CQ-4245687的修補程式
-* 開啟翻譯作業搜索篩選器時出現伺服器錯誤。 CQ-4236813的修補程式
-* 即使tif存在於/conf/we-retail內，憑證設定下拉式清單仍為空白。 CQ-4236315的修補程式
-* 開啟專案KPI:當建立更多專案時，效能會降低。 NPR-23840:CQ-4238392的修補程式
-* Workflow Starter無法接受String的TypeHint值。 NPR-23863:CQ-4238356的修補程式
+* 開啟翻譯作業搜索篩選器時出現伺服器錯誤。 CQ-4236813 的 Hotfix
+* 即使tif存在於/conf/we-retail內，憑證設定下拉式清單仍為空白。 CQ-4236315 的 Hotfix
+* 開啟專案KPI:當建立更多專案時，效能會降低。 NPR-23840：CQ-4238392 的 Hotfix
+* 工作流程啟動器無法接受 String 的 TypeHint 值。NPR-23863：CQ-4238356 的 Hotfix
 
 **社群**
 
-* Handlebars 1.0版中的安全性弱點。 NPR-23636:CQ-4243055的修補程式
-* 標籤訊息的「大量允許」無法運作。 NPR-23867:CQ-4243962的修補程式
-* 論壇元件中的排序按鈕上不顯示預設值。 NPR-23882:CQ-4243375的修補程式
+* Handlebars 1.0版中的安全性弱點。 NPR-23636：CQ-4243055 的 Hotfix
+* 標籤訊息的「大量允許」無法運作。 NPR-23867：CQ-4243962 的 Hotfix
+* 論壇元件中的排序按鈕上不顯示預設值。 NPR-23882：CQ-4243375 的 Hotfix
 * 從社群網站傳送訊息至群組的問題。 NPR-23935
 
 **工作流程**
 
-* Day CQ Workflow Email Notification Service會針對WorkflowCompleted和WorkflowAborted通知，在每個Mongo節點觸發一封電子郵件。 NPR-22515:CQ-4238172的修補程式
-* 執行DAM更新資產工作流程會引發NullPointerException。 NPR-23010:Granite-21096的修補程式
-* 「工作流進程」步驟不顯示/etc/workflow/scripts中的指令碼。 NPR-23263:Granite-20775的修補程式
-* 「工作流動態參與者步驟」不會顯示/apps/workflow/scripts中的指令碼。 NPR-23464:Granite-21276的修補程式
-* 編輯一次工作流程後，無法編輯它。 NPR-23742:CQ-4238526的修補程式
-* （傳統UI）編輯工作流程啟動器時，條件會消失，導致工作流程在沒有任何條件的情況下啟動。 NPR-23835:CQ-4239153的修補程式
-* 專案收件匣：切換至日曆檢視時，會顯示主要收件匣內容。 NPR-23947:CQ-4241236的修補程式
-* 需要在套件中公開裝載詳細資訊，讓HTL元件可在清單檢視中顯示值。 NPR-23948:CQ-4240953的修補程式
-* 無法在「對話參與者」(Dialog Participant)步驟中儲存對話資料。 NPR-23965:CQ-4234123的修補程式
-* (Touch UI)儲存工作流程模型時，「同步」按鈕會變更為「同步」，導致拼字錯誤。 CQ-4244843的修補程式
-* 專案收件匣：切換至日曆檢視時，會顯示主要收件匣內容。 CQ-4244436的修補程式
-* 無法在「對話方塊參與者」(Dialog Participant)步驟中選擇「對話框」(Dialogs)。 CQ-4244532的修補程式
+* Day CQ 工作流程電子郵件通知服務會針對 WorkflowCompleted 和 WorkflowAborted 通知，對每個 Mongo 節點觸發一封電子郵件。NPR-22515：CQ-4238172 的 Hotfix
+* 執行DAM更新資產工作流程會引發NullPointerException。 NPR-23010：Granite-21096 的 Hotfix
+* 「工作流進程」步驟不顯示/etc/workflow/scripts中的指令碼。 NPR-23263：Granite-20775 的 Hotfix
+* 「工作流動態參與者步驟」不會顯示/apps/workflow/scripts中的指令碼。 NPR-23464：Granite-21276 的 Hotfix
+* 編輯一次工作流程後，無法編輯它。 NPR-23742：CQ-4238526 的 Hotfix
+* （傳統UI）編輯工作流程啟動器時，條件會消失，導致工作流程在沒有任何條件的情況下啟動。 NPR-23835：CQ-4239153 的 Hotfix
+* 專案收件匣：切換至日曆檢視時，會顯示主要收件匣內容。 NPR-23947：CQ-4241236 的 Hotfix
+* 需要在套件中公開裝載詳細資訊，讓HTL元件可在清單檢視中顯示值。 NPR-23948：CQ-4240953 的 Hotfix
+* 無法在「對話參與者」(Dialog Participant)步驟中儲存對話資料。 NPR-23965：CQ-4234123 的 Hotfix
+* (Touch UI)儲存工作流程模型時，「同步」按鈕會變更為「同步」，導致拼字錯誤。 CQ-4244843 的 Hotfix
+* 專案收件匣：切換至日曆檢視時，會顯示主要收件匣內容。 CQ-4244436 的 Hotfix
+* 無法在「對話方塊參與者」(Dialog Participant)步驟中選擇「對話框」(Dialogs)。 CQ-4244532 的 Hotfix
 * granite.omnisearch.core修正的主動式支援。 NPR-23536
 * Mobile Workspace App 6.4與共用工作的問題。 NPR-26383
 
 **WCM —— 翻譯**
 
-* （參考面板）在建立專案期間，不會執行轉譯工作。 CQ-4245327的修補程式
+* （參考面板）在建立專案期間，不會執行轉譯工作。 CQ-4245327 的 Hotfix
 
 **WCM - MSM**
 
-* (MSM)首次推出效能改進。 CQ-4231488的修補程式
-* (MSM)事件實際發生與事件處理之間的事件接聽時間差。 CQ-4227766的修補程式
+* (MSM)首次推出效能改進。 CQ-4231488 的 Hotfix
+* (MSM)事件實際發生與事件處理之間的事件接聽時間差。 CQ-4227766 的 Hotfix
 
 **畫面**
 
@@ -1826,80 +1826,80 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 
 **專案——翻譯**
 
-* （內容片段）將英文資產新增至翻譯時，不會建立內嵌資產的語言副本。 CQ-4243477的修補程式
-* msft config下拉式清單會在舊版模式中顯示來自/libs(6.4 configs)的config，而非來自/etc(6.3 configs)的config。 CQ-4243475的修補程式
-* 在翻譯項目中自動提升和刪除翻譯啟動。 CQ-4243474的修補程式
+* （內容片段）將英文資產新增至翻譯時，不會建立內嵌資產的語言副本。 CQ-4243477 的 Hotfix
+* msft config下拉式清單會在舊版模式中顯示來自/libs(6.4 configs)的config，而非來自/etc(6.3 configs)的config。 CQ-4243475 的 Hotfix
+* 在翻譯項目中自動提升和刪除翻譯啟動。 CQ-4243474 的 Hotfix
 * 網站內的內容片段未翻譯。 CQ-4243482、CQ-4243483、CQ-4245687的修補程式
-* 開啟翻譯作業搜索篩選器時出現伺服器錯誤。 CQ-4236813的修補程式
-* 即使tif存在於/conf/we-retail內，憑證設定下拉式清單仍為空白。 CQ-4236315的修補程式
+* 開啟翻譯作業搜索篩選器時出現伺服器錯誤。 CQ-4236813 的 Hotfix
+* 即使tif存在於/conf/we-retail內，憑證設定下拉式清單仍為空白。 CQ-4236315 的 Hotfix
 
 **內容片段管理**
 
-* 刪除元件會填入具有堆棧跟蹤的日誌。 CQ-4242315的修補程式
+* 刪除元件會填入具有堆棧跟蹤的日誌。 CQ-4242315 的 Hotfix
 
-**DAM —— 一般**
+**DAM - 一般**
 
-* 關閉資產的詳細資料檢視會傳回錯誤的搜尋結果頁面。 CQ-4240960的修補程式
-* (Camera Raw)缺少影像調整選項。 CQ-4246121的修補程式
-* IndexOutOfBoundsException:「OOTB資產修改」報表。 CQ-4239744的修補程式
-* 從報表csv中移除信賴分數。 CQ-4241491的修補程式
-* 非「管理員」傳送者的連結共用電子郵件傳送中斷。 CQ-4240357的修補程式
-* 修復IT故障。 CQ-4249891的修補程式
+* 關閉資產的詳細資料檢視會傳回錯誤的搜尋結果頁面。 CQ-4240960 的 Hotfix
+* (Camera Raw)缺少影像調整選項。 CQ-4246121 的 Hotfix
+* IndexOutOfBoundsException:「OOTB資產修改」報表。 CQ-4239744 的 Hotfix
+* 從報表csv中移除信賴分數。 CQ-4241491 的 Hotfix
+* 非「管理員」傳送者的連結共用電子郵件傳送中斷。 CQ-4240357 的 Hotfix
+* 修復IT故障。 CQ-4249891 的 Hotfix
 
 **DAM —— 品牌入口網站**
 
-* 資產屬性僅會列出第一個標籤上的3個屬性，請讓所有標籤看起來都空白。 CQ-4242503的修補程式
-* 發佈的搜索表單中無法使用檔案類型和檔案大小謂語。 CQ-4242026的修補程式
-* 「在目錄中搜索」謂語應被過濾掉／不顯示在搜索篩選器中。 CQ-4241386的修補程式
-* 解除發佈後，預設的搜尋來源應存在。 CQ-4241383、CQ-4241113的修補程式
-* 發佈至品牌入口網站手勢無法用於影像預設集。 CQ-4241074的修補程式
-* 發佈至品牌入口網站無法用於系列。 CQ-4241122、CQ-4246558的修補程式
+* 資產屬性僅會列出第一個標籤上的3個屬性，請讓所有標籤看起來都空白。 CQ-4242503 的 Hotfix
+* 發佈的搜索表單中無法使用檔案類型和檔案大小謂語。 CQ-4242026 的 Hotfix
+* 「在目錄中搜索」謂語應被過濾掉／不顯示在搜索篩選器中。 CQ-4241386 的 Hotfix
+* 解除發佈後，預設的搜尋來源應存在。 CQ-4241383、CQ-4241113
+* 發佈至品牌入口網站手勢無法用於影像預設集。 CQ-4241074 的 Hotfix
+* 發佈至品牌入口網站無法用於系列。 CQ-4241122、CQ-4246558
 
-**DAM - DM客戶端**
+**DAM - DM 用戶端**
 
-* 升級至6.4會移除先前建立的視訊編碼設定檔。 CQ-4244067的修補程式
-* 「動態媒體」元件中的「替代文字」屬性已中斷。 CQ-4244081的修補程式
-* (DMS7)在Scene7中不會覆寫在AEM中編輯遠端集。 CQ-4243430的修補程式
-* 6.4 SP1在DM Hybrid上的驗證 CQ-4244623的修補程式
-* (DMS7-UA)按一下已發佈視訊資產的「內嵌」按鈕時，不會發生任何情況。 「內嵌」對話方塊會顯示HTML程式碼。 CQ-4245237的修補程式
-* (DM Hybrid)發佈視訊資產或混合媒體集的複製URL會在「URL」對話方塊中取得「`[object Object]`」。 CQ-4245236、CQ-4245451的修補程式
-* (DMHybrid)視訊的「詳細資料檢視」頁面不包含視訊資產顯示的預覽，並將錯誤訊息輸出至主控台。 CQ-4244320的修補程式
-* we.retail內容的自動S7編碼。 CQ-4242253的修補程式
-* 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407的修補程式
-* 「預升級影像預設集」在「轉譯」頁面上會顯示為「未發佈」，且不會產生URL。 CQ-4240406的修補程式
-* (CSS)會顯示資產——但使用的檢視器是預設的，而非OOTB檢視器。 CQ-4239839的修補程式
-* 停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
-* 影像檢視器產生錯誤，無法顯示正確的智慧裁切。 CQ-4237564的修補程式
-* /etc下的舊預設集似乎已中斷，且儲存時不會移轉至/conf下的位置。 CQ-4237416的修補程式
-* OOB VideoViewer 5.8.x中的回歸——檢視器會將iframe展開至右側，因此會中斷頁面版面配置。 CQ-4235465的修補程式
-* (DMS7)智慧型裁切轉譯URL和內嵌按鈕對於尚未發佈的影像是作用中的。 CQ-4233696的修補程式
-* (DMHybrid)復原先前的裁切／旋轉功能。 CQ-4239489的修補程式
-* 在卡片檢視中預覽視訊時，播放按鈕不會切換為暫停。 CQ-4238592的修補程式
-* 執行選擇加入升級時，YouTube組態不會從其舊位置移動／複製至新位置。 CQ-4238590的修補程式
-* DropTwo OOTB AVS視頻處理配置檔案列在「資料夾屬性」下，只有一個包含已定義的編碼。 CQ-4238096的修補程式
-* (DMS7)智慧型裁切：詳細資料檢視：URL按鈕標示為「複製」按鈕，以用於轉譯。 CQ-4237804的修補程式
-* 即使在執行捲曲命令後，檢視器預設集清單頁面仍會保留空白。 CQ-4243246的修補程式
-* 已停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729的修補程式
-* 「視訊報表詳細資料」頁面不會顯示視訊資產。 CQ-4246208的修補程式
+* 升級至6.4會移除先前建立的視訊編碼設定檔。 CQ-4244067 的 Hotfix
+* 「動態媒體」元件中的「替代文字」屬性已中斷。 CQ-4244081 的 Hotfix
+* (DMS7)在Scene7中不會覆寫在AEM中編輯遠端集。 CQ-4243430 的 Hotfix
+* 6.4 SP1在DM Hybrid上的驗證 CQ-4244623 的 Hotfix
+* (DMS7-UA)按一下已發佈視訊資產的「內嵌」按鈕時，不會發生任何情況。 「內嵌」對話方塊會顯示HTML程式碼。 CQ-4245237 的 Hotfix
+* (DM Hybrid)發佈視訊資產或混合媒體集的複製URL會在「URL」對話方塊中取得「`[object Object]`」。 CQ-4245236、CQ-4245451
+* (DMHybrid)視訊的「詳細資料檢視」頁面不包含視訊資產顯示的預覽，並將錯誤訊息輸出至主控台。 CQ-4244320 的 Hotfix
+* we.retail內容的自動S7編碼。 CQ-4242253 的 Hotfix
+* 預先升級的視訊處理預設集無法新增視訊編碼預設集，也無法編輯現有的編碼預設集。 CQ-4240407 的 Hotfix
+* 「預升級影像預設集」在「轉譯」頁面上會顯示為「未發佈」，且不會產生URL。 CQ-4240406 的 Hotfix
+* (CSS)會顯示資產——但使用的檢視器是預設的，而非OOTB檢視器。 CQ-4239839 的 Hotfix
+* 停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729 的 Hotfix
+* 影像檢視器產生錯誤，無法顯示正確的智慧裁切。 CQ-4237564 的 Hotfix
+* /etc下的舊預設集似乎已中斷，且儲存時不會移轉至/conf下的位置。 CQ-4237416 的 Hotfix
+* OOB VideoViewer 5.8.x中的回歸——檢視器會將iframe展開至右側，因此會中斷頁面版面配置。 CQ-4235465 的 Hotfix
+* (DMS7)智慧型裁切轉譯URL和內嵌按鈕對於尚未發佈的影像是作用中的。 CQ-4233696 的 Hotfix
+* (DMHybrid)復原先前的裁切／旋轉功能。 CQ-4239489 的 Hotfix
+* 在卡片檢視中預覽視訊時，播放按鈕不會切換為暫停。 CQ-4238592 的 Hotfix
+* 執行選擇加入升級時，YouTube組態不會從其舊位置移動／複製至新位置。 CQ-4238590 的 Hotfix
+* DropTwo OOTB AVS視頻處理配置檔案列在「資料夾屬性」下，只有一個包含已定義的編碼。 CQ-4238096 的 Hotfix
+* (DMS7)智慧型裁切：詳細資料檢視：URL按鈕標示為「複製」按鈕，以用於轉譯。 CQ-4237804 的 Hotfix
+* 即使在執行捲曲命令後，檢視器預設集清單頁面仍會保留空白。 CQ-4243246 的 Hotfix
+* 已停用清除步驟掛起手動執行和使用私有珊瑚類。 CQ-4239729 的 Hotfix
+* 「視訊報表詳細資料」頁面不會顯示視訊資產。 CQ-4246208 的 Hotfix
 
 **DAM - DMServices**
 
-* (DMS7)雲配置：更新至SP1後，無法與Scene7同步新內容。 CQ-4244437的修補程式
-* (DMHybrid)色彩描述檔和型錄設定不會在debug_info=catalog呼叫中註冊。 CQ-4242346的修補程式
-* 將色彩描述檔新增至傳送伺服器上的客戶設定。 CQ-4241818、CQ-4241819的修補程式
-* (DMHybrid)After 6.3 &amp;gt;6.4升級後，目錄設定會移至不正確的節點。 CQ-4239974、CQ-4239975的修補程式
-* (DMHybrid)pushviewerpresets指令碼不會建立修改目錄設定所需的節點。 CQ-4240076的修補程式
-* 使用「格式」下拉式選取範圍並選取PNG或JPG格式時，下載的檔案會顯示為比原始資產更深且過飽和的檔案。 CQ-4240073的修補程式
-* (DMS7)刪除MIME類型映射：image_x-eps。 CQ-4240394的修補程式
-* (DMS7)挖空背景的上載參數不會傳遞ipsApiService.log，因此，無法運作。 CQ-4240686的修補程式
-* 在6.3到6.4執行個體中建立的「升級影像處理設定檔」會中斷「裁切類型」屬性。 CQ-4237739的修補程式
-* （動態媒體）smartcrop資料夾外部的一般資產上傳失敗。 CQ-4237670的修補程式
-* 將「最適化視訊編碼」描述檔名稱的描述檔備援程式碼調整為「Adaptive_Video_Encoding」。 CQ-4237666的修補程式
-* 在Ptiff產生程式中，EmbedXMP資料一律設為「作用中」。 CQ-4234498的修補程式
-* CMYK影像轉譯的飽和度不正確。 CQ-4235470的修補程式
-* 當複製日誌標籤成功時，映像伺服器設定不會複製到交付中。 CQ-4239480、CQ-4239046的修補程式
-* (DMS7)無法使用舊／新雲端設定參考建立集。 CQ-4238078的修補程式
-* Scene7工作流程步驟僅讀取名稱和說明中的Scene7，但未釐清DAM Update工作流程中的工作流程步驟。 CQ-4237865的修補程式
+* (DMS7)雲配置：更新至SP1後，無法與Scene7同步新內容。 CQ-4244437 的 Hotfix
+* (DMHybrid)色彩描述檔和型錄設定不會在debug_info=catalog呼叫中註冊。 CQ-4242346 的 Hotfix
+* 將色彩描述檔新增至傳送伺服器上的客戶設定。 CQ-4241818、CQ-4241819
+* (DMHybrid)After 6.3 &amp;gt;6.4升級後，目錄設定會移至不正確的節點。 CQ-4239974、CQ-4239975
+* (DMHybrid)pushviewerpresets指令碼不會建立修改目錄設定所需的節點。 CQ-4240076 的 Hotfix
+* 使用「格式」下拉式選取範圍並選取PNG或JPG格式時，下載的檔案會顯示為比原始資產更深且過飽和的檔案。 CQ-4240073 的 Hotfix
+* (DMS7)刪除MIME類型映射：image_x-eps。 CQ-4240394 的 Hotfix
+* (DMS7)挖空背景的上載參數不會傳遞ipsApiService.log，因此，無法運作。 CQ-4240686 的 Hotfix
+* 在6.3到6.4執行個體中建立的「升級影像處理設定檔」會中斷「裁切類型」屬性。 CQ-4237739 的 Hotfix
+* （動態媒體）smartcrop資料夾外部的一般資產上傳失敗。 CQ-4237670 的 Hotfix
+* 將「最適化視訊編碼」描述檔名稱的描述檔備援程式碼調整為「Adaptive_Video_Encoding」。 CQ-4237666 的 Hotfix
+* EmbedXMP 資料一律對 Ptiff 產生程序設為「作用中」。CQ-4234498 的 Hotfix
+* CMYK影像轉譯的飽和度不正確。 CQ-4235470 的 Hotfix
+* 當複製日誌標籤成功時，映像伺服器設定不會複製到交付中。 CQ-4239480、CQ-4239046
+* (DMS7)無法使用舊／新雲端設定參考建立集。 CQ-4238078 的 Hotfix
+* Scene7工作流程步驟僅讀取名稱和說明中的Scene7，但未釐清DAM Update工作流程中的工作流程步驟。 CQ-4237865 的 Hotfix
 
 **DAM —— 智慧型標籤**
 
@@ -1907,9 +1907,9 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的一些主要亮點是：
 
 **表單**
 
-AEM Forms修正是透過附加元件套件和隨發行提供的其他修補程式安裝程式來提供。 如需詳細資訊，請參閱「AEM Forms發行」。
+透過附加套件和發行版本隨附的其他修補安裝程式來提供 AEM Forms 修正。如需詳細資訊，請參閱 AEM Forms 發行版本。
 
-AEM Forms的主要亮點是：
+AEM Forms 的關鍵重點為：
 
 * AEM Forms推出[交易報表功能](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html)，可追蹤並記住提交表單、已處理檔案和在AEM Forms部署中轉譯的檔案等交易。 它提供有關產品使用情況的見解，並協助商業使用者瞭解數位處理量。
 * 啟用XML表格的PDF/UA支援。
@@ -1917,7 +1917,7 @@ AEM Forms的主要亮點是：
 * 更新程式碼，讓進階標題搜尋變成包含而非等值。
 * 在Continuous Integration Machine上更新為新版的Node Package Manager(NPM)。
 
-**Forms附加套件**
+**Forms 附加元件套件**
 
 **後端整合**
 
@@ -1925,116 +1925,116 @@ AEM Forms的主要亮點是：
 * 當元素具有不同於全域名稱空間的不同名稱空間時，WSDL調用失敗。 NPR-24281
 * (FDM WSDL)獲取真實例外：屬性類型陣列的情況下列出資料除外。 NPR-24265
 * (FDM WSDL)獲取真實例外：java.lang.exception:createSOAPParam:無效參數。 NPR-24264
-* (FDM Client SDK)無法測試前／後預處理器和自定義提交操作。 CQ-4238469的修補程式
-* 修正Dermis中的Javadoc問題。 CQ-4244250的修補程式
-* 增強網站服務說明語言(WSDL)的輸入。 CQ-4244133的修補程式
+* (FDM Client SDK)無法測試前／後預處理器和自定義提交操作。 CQ-4238469 的 Hotfix
+* 修正Dermis中的Javadoc問題。 CQ-4244250 的 Hotfix
+* 增強網站服務說明語言(WSDL)的輸入。 CQ-4244133 的 Hotfix
 * AEM 6.3和AEM 6.4中相同組態的WSDL基本驗證測試會產生不同的錯誤。CQ-4244132的修補程式
-* 請求將ValueUtil包含在client-sdk和javadoc中。 CQ-4242803的修補程式
-* （FDM雲配置）無法從雲配置配置配置基於SOAP的身份驗證。 CQ-4238462的修補程式
-* Dermis —— 在Javadoc中添加缺少的包。 CQ-4242815的修補程式
-* WSDLInvokerParams將包含在Forms Add-On客戶端sdk中。 NPR-23381:CQ-4240233的修補程式
+* 請求將ValueUtil包含在client-sdk和javadoc中。 CQ-4242803 的 Hotfix
+* （FDM雲配置）無法從雲配置配置配置基於SOAP的身份驗證。 CQ-4238462 的 Hotfix
+* Dermis —— 在Javadoc中添加缺少的包。 CQ-4242815 的 Hotfix
+* WSDLInvokerParams將包含在Forms Add-On客戶端sdk中。 NPR-23381：CQ-4240233 的 Hotfix
 
 **適用性表單**
 
-* 檔案(IC)轉譯應使用「交易記錄服務」記錄為交易。 CQ-4245333的修補程式
-* 執行UAT5時，在驗證階段產生的pdf會遺失項目。 CQ-4243184的修補程式
-* guideContext的深層復本測試案例。 CQ-4242924的修補程式
-* 在最新升級的伺服器上執行UAT3時，缺少校樣類型欄位。 CQ-4243120的修補程式
-* 在升級的伺服器上，提交的表單遺失了升級前伺服器上出現的州／省/地區和國家值。 CQ-4241444的修補程式
-* （運算式編輯器）在表單提交期間導覽至「驗證」階段時發生錯誤。 CQ-4241384的修補程式
-* 已提交表單的升級前和升級伺服器的驗證階段缺少值。 CQ-4241896的修補程式
-* 頁面底部的「結束並儲存」按鈕無法運作。 CQ-4240112的修補程式
-* 升級後的設定上缺少聯繫人號碼。 CQ-4239870的修補程式
-* 在「爭議類型」標籤的`ACTION TAKEN`部分下，「支援我的索賠的附加文檔」中包含附加欄位證明類型「保存」。 CQ-4239873的修補程式
-* 在verifyPdf階段中遇到「getDataAPI錯誤」錯誤。 CQ-4239865的修補程式
-* 作者和發佈例項的移轉記錄檔發生錯誤。 CQ-4239365的修補程式
-* 作者和發佈例項的移轉記錄檔發生錯誤。 CQ-4239635的修補程式
-* 還原序列化錯誤，如錯誤記錄在提交最適化表單後，「不允許sun.util.calendar.ZoneInfo類別還原序列化」。 CQ-4240419的修補程式
-* 「狀態」欄位不會填入Mobile表單轉譯中。 CQ-4240597的修補程式
-* 從反模式清單移除範本中元件的參考使用。 CQ-4239217的修補程式
-* 設為「浮點數」或「小數」的HTML5數值方塊，會在不同瀏覽器中提供不同的驗證結果。 NPR-23528:CQ-4244097的修補程式
-* （影像上傳）影像未顯示在DOR預覽中。 CQ-4243178的修補程式
-* JEE伺服器在嘗試以「電子郵件PDF」和「包含附件」來提交Adaptive Form時會發生錯誤。 CQ-4239894的修補程式
-* 圖表在執行時期不會使用表格／面板繪製。 CQ-4240010的修補程式
-* 最適化表單提交無法運作，且交易計數不會因提交失敗而變更。 CQ-4246125的修補程式
-* （影像選擇）記錄檔案選項不可見。 CQ-4236976的修補程式
-* 範本編輯器UI不穩定。 CQ-4241497的修補程式
-* AF不會使用側面板的「資產」索引標籤顯示，而是使用AEM表單元件屬性對話方塊的「瀏覽」選項顯示。 CQ-4236751的修補程式
-* 為表單轉換而產生的工作流程ID應可在產生的最適化表單中使用。 CQ-4240014的修補程式
-* 無法選擇模板以在Direct Upgrade的站點中建立頁：Livecycle至6.4伺服器。 CQ-4241300的修補程式
+* 檔案(IC)轉譯應使用「交易記錄服務」記錄為交易。 CQ-4245333 的 Hotfix
+* 執行UAT5時，在驗證階段產生的pdf會遺失項目。 CQ-4243184 的 Hotfix
+* guideContext的深層復本測試案例。 CQ-4242924 的 Hotfix
+* 在最新升級的伺服器上執行UAT3時，缺少校樣類型欄位。 CQ-4243120 的 Hotfix
+* 在升級的伺服器上，提交的表單遺失了升級前伺服器上出現的州／省/地區和國家值。 CQ-4241444 的 Hotfix
+* （運算式編輯器）在表單提交期間導覽至「驗證」階段時發生錯誤。 CQ-4241384 的 Hotfix
+* 已提交表單的升級前和升級伺服器的驗證階段缺少值。 CQ-4241896 的 Hotfix
+* 頁面底部的「結束並儲存」按鈕無法運作。 CQ-4240112 的 Hotfix
+* 升級後的設定上缺少聯繫人號碼。 CQ-4239870 的 Hotfix
+* 在「爭議類型」標籤的`ACTION TAKEN`部分下，「支援我的索賠的附加文檔」中包含附加欄位證明類型「保存」。 CQ-4239873 的 Hotfix
+* 在verifyPdf階段中遇到「getDataAPI錯誤」錯誤。 CQ-4239865 的 Hotfix
+* 作者和發佈例項的移轉記錄檔發生錯誤。 CQ-4239365 的 Hotfix
+* 作者和發佈例項的移轉記錄檔發生錯誤。 CQ-4239635 的 Hotfix
+* 還原序列化錯誤，如錯誤記錄在提交最適化表單後，「不允許sun.util.calendar.ZoneInfo類別還原序列化」。 CQ-4240419 的 Hotfix
+* 「狀態」欄位不會填入Mobile表單轉譯中。 CQ-4240597 的 Hotfix
+* 從反模式清單移除範本中元件的參考使用。 CQ-4239217 的 Hotfix
+* 設為「浮點數」或「小數」的HTML5數值方塊，會在不同瀏覽器中提供不同的驗證結果。 NPR-23528：CQ-4244097 的 Hotfix
+* （影像上傳）影像未顯示在DOR預覽中。 CQ-4243178 的 Hotfix
+* JEE伺服器在嘗試以「電子郵件PDF」和「包含附件」來提交Adaptive Form時會發生錯誤。 CQ-4239894 的 Hotfix
+* 圖表在執行時期不會使用表格／面板繪製。 CQ-4240010 的 Hotfix
+* 最適化表單提交無法運作，且交易計數不會因提交失敗而變更。 CQ-4246125 的 Hotfix
+* （影像選擇）記錄檔案選項不可見。 CQ-4236976 的 Hotfix
+* 範本編輯器UI不穩定。 CQ-4241497 的 Hotfix
+* AF不會使用側面板的「資產」索引標籤顯示，而是使用AEM表單元件屬性對話方塊的「瀏覽」選項顯示。 CQ-4236751 的 Hotfix
+* 為表單轉換而產生的工作流程ID應可在產生的最適化表單中使用。 CQ-4240014 的 Hotfix
+* 無法選擇模板以在Direct Upgrade的站點中建立頁：Livecycle至6.4伺服器。 CQ-4241300 的 Hotfix
 
-**Assembler Service**
+**組合器服務**
 
 * 在Assembler Services中記錄事務。 CQ-4245018、CQ-4245017、CQ-4245016的修補程式。
-* 當使用DDX完成PDF/A轉換時，不會報告交易。 CQ-4246039的修補程式
+* 當使用DDX完成PDF/A轉換時，不會報告交易。 CQ-4246039 的 Hotfix
 
 **Forms Manager**
 
-* FM CREATE按鈕清單，按字母順序排序。 CQ-4242307的修補程式
+* FM CREATE按鈕清單，按字母順序排序。 CQ-4242307 的 Hotfix
 
 **表單入口網站**
 
-* 在升級前伺服器上儲存的草稿無法在升級後的伺服器上正確開啟。 CQ-4243303的修補程式
-* adobe-formsmanager-core-module的7.1版更新。 CQ-4245753的修補程式
-* 在升級前伺服器上儲存的草稿無法在升級後的伺服器上正確開啟。 CQ-4243303的修補程式
-* 附件方案在替換／添加／刪除新實例／草稿的同一實例中的附件時會中斷。 CQ-4243165的修補程式
-* 從查詢資料庫中檢索的草稿的計數多於入口網站中顯示的草稿的計數。 CQ-4241489的修補程式
-* 升級前伺服器上提交的表單在升級後伺服器上不存在。 CQ-4241490的修補程式
-* 儘管提交消息成功，但「提交」頁籤中UI中顯示的表單仍處於「未提交」狀態。 CQ-4241487的修補程式
-* guideContext應透過深入複製欄位來形成，因為guideContext包含本身為物件的customPropertyMap。 CQ-4240126的修補程式
-* 嘗試保存表單時出錯。 CQ-4240763的修補程式
-* 保存和提交的表單條目正在以crx/de填充，儘管我們在表單門戶草稿和提交配置中提供了資料庫配置。 CQ-4240726的修補程式
-* (Search &amp; Lister)進階搜尋標題固定值應以包含而非相等的形式運作。 CQ-4245499的修補程式
+* 在升級前伺服器上儲存的草稿無法在升級後的伺服器上正確開啟。 CQ-4243303 的 Hotfix
+* adobe-formsmanager-core-module的7.1版更新。 CQ-4245753 的 Hotfix
+* 在升級前伺服器上儲存的草稿無法在升級後的伺服器上正確開啟。 CQ-4243303 的 Hotfix
+* 附件方案在替換／添加／刪除新實例／草稿的同一實例中的附件時會中斷。 CQ-4243165 的 Hotfix
+* 從查詢資料庫中檢索的草稿的計數多於入口網站中顯示的草稿的計數。 CQ-4241489 的 Hotfix
+* 升級前伺服器上提交的表單在升級後伺服器上不存在。 CQ-4241490 的 Hotfix
+* 儘管提交消息成功，但「提交」頁籤中UI中顯示的表單仍處於「未提交」狀態。 CQ-4241487 的 Hotfix
+* guideContext應透過深入複製欄位來形成，因為guideContext包含本身為物件的customPropertyMap。 CQ-4240126 的 Hotfix
+* 嘗試保存表單時出錯。 CQ-4240763 的 Hotfix
+* 保存和提交的表單條目正在以crx/de填充，儘管我們在表單門戶草稿和提交配置中提供了資料庫配置。 CQ-4240726 的 Hotfix
+* (Search &amp; Lister)進階搜尋標題固定值應以包含而非相等的形式運作。 CQ-4245499 的 Hotfix
 
 **行動表單**
 
-* 「日期」欄位在行動表單中重疊。 CQ-4242256的修補程式
-* Mobile Forms的表單提交應使用「交易記錄服務」記錄為交易。 CQ-4246166的修補程式
-* Formset中的表單提交應使用事務記錄服務記錄為事務處理。 CQ-4246165的修補程式
+* 「日期」欄位在行動表單中重疊。 CQ-4242256 的 Hotfix
+* Mobile Forms的表單提交應使用「交易記錄服務」記錄為交易。 CQ-4246166 的 Hotfix
+* Formset中的表單提交應使用事務記錄服務記錄為事務處理。 CQ-4246165 的 Hotfix
 
-**AEM Forms應用程式**
+**AEM Forms 應用程式**
 
-* （Windows應用程式）無法轉譯表單。 CQ-4238005的修補程式
+* （Windows應用程式）無法轉譯表單。 CQ-4238005 的 Hotfix
 
 **Workflow OSGI**
 
-* 在「工作流分配任務」中記錄事務。 CQ-4244440的修補程式
-* （FDM步驟）在流程步驟和fdm步驟之間插入分配任務步驟時，無法使用工作流元資料中的值。 CQ-4241472的修補程式
-* 在OSGI工作流程的Forms Integration中，指派任務的委派不起作用。 NPR-23709:CQ-4243700的修補程式
-* （工作流模型編輯器）某些工作流模型無法通過ClassicUI WF模型編輯器進行編輯。 CQ-4241151的修補程式
+* 在「工作流分配任務」中記錄事務。 CQ-4244440 的 Hotfix
+* （FDM步驟）在流程步驟和fdm步驟之間插入分配任務步驟時，無法使用工作流元資料中的值。 CQ-4241472 的 Hotfix
+* 在OSGI工作流程的Forms Integration中，指派任務的委派不起作用。 NPR-23709：CQ-4243700 的 Hotfix
+* （工作流模型編輯器）某些工作流模型無法通過ClassicUI WF模型編輯器進行編輯。 CQ-4241151 的 Hotfix
 
 **多頻道檔案**
 
-* 「範本」中的「日期」欄位與IC製作中的子表單重疊。 CQ-4240110的修補程式
-* 在IC網路頻道製作中，不允許刪除或上下移動標題。 CQ-4243358的修補程式
-* （IC編輯器）表元件的預設行設定為1。 CQ-4244848的修補程式
-* 目標區域即使在內容被拖放後仍可顯示。 CQ-4244534的修補程式
-* Web頻道無法識別文字檔案片段中的標籤空間。 CQ-4244481的修補程式
-* （列印頻道）檔案(IC)轉譯應使用交易記錄服務記錄為交易。 CQ-4245335的修補程式
-* （網路頻道）檔案(IC)轉譯應使用交易記錄服務記錄為交易。 CQ-4245334的修補程式
-* 「檔案容器搜尋」或「資料模型樹」搜尋必須與「資產」篩選搜尋相統一。 CQ-4242305的修補程式
-* （檔案片段）縮排屬性會依無法理解的單位數來縮排文字。 CQ-4241082、CQ-4240643的修補程式
-* （IC編輯器）在「資產」標籤下列出的檔案片段方塊上的「編輯片段」圖示並不容易找到，也難以理解。 CQ-4241047的修補程式
-* 允許對IC的匿名訪問無法訪問的客戶庫。 CQ-4245588的修補程式
-* （網路頻道）資料不會解析在任何表格中的網頁預覽中，並顯示為空白。 CQ-4244476的修補程式
-* 在自動產生時，表格標題會顯示為網頁頻道中的變數。 CQ-4244242的修補程式
-* （IC編輯器）IC中使用的檔案片段內容應自動重新調整大小，以符合目標區域的寬度。 CQ-4244094的修補程式
-* 中央頂端顯示的頻道名稱必須與WEB/PRINT的IC標題一致。 CQ-4242498的修補程式
+* 「範本」中的「日期」欄位與IC製作中的子表單重疊。 CQ-4240110 的 Hotfix
+* 在IC網路頻道製作中，不允許刪除或上下移動標題。 CQ-4243358 的 Hotfix
+* （IC編輯器）表元件的預設行設定為1。 CQ-4244848 的 Hotfix
+* 目標區域即使在內容被拖放後仍可顯示。 CQ-4244534 的 Hotfix
+* Web頻道無法識別文字檔案片段中的標籤空間。 CQ-4244481 的 Hotfix
+* （列印頻道）檔案(IC)轉譯應使用交易記錄服務記錄為交易。 CQ-4245335 的 Hotfix
+* （網路頻道）檔案(IC)轉譯應使用交易記錄服務記錄為交易。 CQ-4245334 的 Hotfix
+* 「檔案容器搜尋」或「資料模型樹」搜尋必須與「資產」篩選搜尋相統一。 CQ-4242305 的 Hotfix
+* （檔案片段）縮排屬性會依無法理解的單位數來縮排文字。 CQ-4241082、CQ-4240643
+* （IC編輯器）在「資產」標籤下列出的檔案片段方塊上的「編輯片段」圖示並不容易找到，也難以理解。 CQ-4241047 的 Hotfix
+* 允許對IC的匿名訪問無法訪問的客戶庫。 CQ-4245588 的 Hotfix
+* （網路頻道）資料不會解析在任何表格中的網頁預覽中，並顯示為空白。 CQ-4244476 的 Hotfix
+* 在自動產生時，表格標題會顯示為網頁頻道中的變數。 CQ-4244242 的 Hotfix
+* （IC編輯器）IC中使用的檔案片段內容應自動重新調整大小，以符合目標區域的寬度。 CQ-4244094 的 Hotfix
+* 中央頂端顯示的頻道名稱必須與WEB/PRINT的IC標題一致。 CQ-4242498 的 Hotfix
 * 文字編輯器資料物件面板應僅列出頂層實體，CQ-4244121的修補程式
-* 在編輯器中添加新元件時，不指定預設名稱。 CQ-4244691的修補程式
-* 在所有Web通道元件中添加Colspan配置。 CQ-4244946的修補程式
-* 版面片段表格寬度屬性不會在字母或客戶通訊列印頻道中重設及接受。 CQ-4241574的修補程式
+* 在編輯器中添加新元件時，不指定預設名稱。 CQ-4244691 的 Hotfix
+* 在所有Web通道元件中添加Colspan配置。 CQ-4244946 的 Hotfix
+* 版面片段表格寬度屬性不會在字母或客戶通訊列印頻道中重設及接受。 CQ-4241574 的 Hotfix
 
-**信件管理**
+**通信管理**
 
 * 編輯包含預留位置的文字資產後，字母範本中移除的標題。 NPR-24196
-* XDP檔案在上傳後用作字母範本的版面時，無法預覽或編輯範本。 NPR-24143:CQ-4244407的修補程式
-* 預設情況下，在清單片段中選擇分配選擇。 CQ-4240097的修補程式
-* 條件編輯器——預設情況下應啟用多個結果評估。 CQ-4240096的修補程式
-* 從「清單」刪除時的影像仍會在預覽中顯示影像。 CQ-4239909的修補程式
-* 條件模組上的規則集對於所有模組都設定為「預設」。 CQ-4239878的修補程式
-* 資料字典建立失敗，並出現「未知JCR例外」錯誤。 CQ-4244122的修補程式
-* 6.3內容JavaDocs中的空隙。 CQ-4213586的修補程式
+* XDP檔案在上傳後用作字母範本的版面時，無法預覽或編輯範本。 NPR-24143：CQ-4244407 的 Hotfix
+* 預設情況下，在清單片段中選擇分配選擇。 CQ-4240097 的 Hotfix
+* 條件編輯器——預設情況下應啟用多個結果評估。 CQ-4240096 的 Hotfix
+* 從「清單」刪除時的影像仍會在預覽中顯示影像。 CQ-4239909 的 Hotfix
+* 條件模組上的規則集對於所有模組都設定為「預設」。 CQ-4239878 的 Hotfix
+* 資料字典建立失敗，並出現「未知JCR例外」錯誤。 CQ-4244122 的 Hotfix
+* 6.3內容JavaDocs中的空隙。 CQ-4213586 的 Hotfix
 
 **Forms JEE安裝程式**
 
@@ -2042,49 +2042,49 @@ AEM Forms的主要亮點是：
 
 * （HTML工作區）名稱中含括弧符號的應用程式遺失追蹤詳細資訊。 NPR-23402
 
-**PDFG服務**
+**PDFG 服務**
 
-* 在PDFG服務中記錄事務。 CQ-4244951、CQ-4244586的修補程式
+* 在PDFG服務中記錄事務。 CQ-4244951、CQ-4244586
 * 透過單一API呼叫，選擇性地取消內嵌字型，以減少PDF。 NPR-23287
-* PDFG組態更新AEM升級問題。 CQ-4241176的修補程式
-* PDFUtility服務中的事務記錄。 CQ-4245014的修補程式
+* PDFG組態更新AEM升級問題。 CQ-4241176 的 Hotfix
+* PDFUtility服務中的事務記錄。 CQ-4245014 的 Hotfix
 
-**流程管理**
+**處理程序管理**
 
-* （HTML工作區）「處理起點」不會以英數字元順序排序。 CQ-4239629的修補程式
-* （HTML工作區）準備第一次開啟草稿時出現兩次的資料呼叫。 CQ-4243280的修補程式
-* （HTML工作區）在關閉表單時觸發準備資料程式。 CQ-4239456的修補程式
-* 在兩個任務之間遍歷時，工作空間將掛起。 CQ-4237125的修補程式
+* (HTML 工作區) 程序起始點沒有依照字母順序排列。CQ-4239629 的 Hotfix
+* （HTML工作區）準備第一次開啟草稿時出現兩次的資料呼叫。 CQ-4243280 的 Hotfix
+* （HTML工作區）在關閉表單時觸發準備資料程式。 CQ-4239456 的 Hotfix
+* 在兩個任務之間遍歷時，工作空間將掛起。 CQ-4237125 的 Hotfix
 
-**工作台**
+**Workbench**
 
-* 管理動作描述檔當預設演算程式設定設為HTML時，準備資料程式會失敗。 CQ-4244292的修補程式
+* 管理動作描述檔當預設演算程式設定設為HTML時，準備資料程式會失敗。 CQ-4244292 的 Hotfix
 
 **Forms Designer**
 
-* 將PDF/UA支援新增至透過Designer和Output Service產生的XML表格。 NPR-23022
-* 當從Designer儲存為PDF時，Designer中定義的內嵌超連結不會加上標籤，也不會有替代文字。 NPR-23023
+* 為透過 Designer 和 Output Service 產生的 XML 表單新增 PDF/UA 支援。NPR-23022
+* 從 Designer 另存為 PDF 時，在 Designer 中定義的內嵌超連結沒有受到標記，且沒有替代文字。NPR-23023
 
-**隨附的功能套件**
+**包含的 Feature Pack**
 
 **資產**
 
-* 新增「增強智慧標籤」功能。 如需詳細資訊，請參閱[增強智慧型標籤](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html)。 NPR-21951:CQ-4234883的修補程式
+* 新增「增強智慧標籤」功能。 如需詳細資訊，請參閱[增強智慧型標籤](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html)。 NPR-21951：CQ-4234883 的 Hotfix
 * 在InDesign中引進AEM Assets參考。 如需詳細資訊，請參閱InDesign中的[AEM Assets References。 ](/help/assets/managing-linked-subassets.md)NPR-23386
 
 **網站**
 
-* （頁面製作）影像編輯器增強功能。 如需詳細資訊，請參閱[影像編輯器](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html)。 NPR-24267:CQ-4245502的修補程式
+* （頁面製作）影像編輯器增強功能。 如需詳細資訊，請參閱[影像編輯器](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html)。 NPR-24267：CQ-4245502 的 Hotfix
 
-**包含OSGI組合和內容套件**
+**包含的 OSGI 套件組合和內容套件**
 
-以下文字記錄CFP中OSGI組合和內容套件的清單。
+下列文字記錄 CFP 中包含的 OSGI 套件組合和內容套件清單。
 
-AEM 6.4.1.0隨附的OSGi搭售清單
+AEM 6.4.1.0 中包含的 OSGi 套件組合清單
 
 [取得檔案](assets/6_4_1_0_bundle-list.txt)
 
-AEM 6.4.1.0內容套件清單
+AEM 6.4.1.0 中包含的內容套件清單
 
 [取得檔案](assets/6_4_1_0_content-package-list.txt)
 
@@ -2130,11 +2130,11 @@ AEM 6.4.1.0內容套件清單
 >
 >因此，建議您先等待錯誤記錄穩定，再存取執行個體。 在確保安裝成功之前，用戶必須等待與卸載更新程式包相關的特定日誌。 通常在Safari上會發生，但在任何瀏覽器上都會偶爾發生。
 
-### 自動安裝{#auto-installation}
+### 自動安裝 {#auto-installation}
 
 有兩種方式可自動將AEM 6.4.8.0安裝至執行中的例項：
 
-答：將套件放入……*/crx-quickstart/* installfolder（伺服器運行時）。軟體包會自動安裝。
+答：將套件放入……*/crx-quickstart/* installfolder（伺服器運行時）。套件便會自動安裝。
 
 B.使用Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/package_manager.html)的[HTTP API —— 請確定您使用`cmd=install&recursive=true` —— 以便安裝巢狀套件。
 
@@ -2142,10 +2142,10 @@ B.使用Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 >
 >AEM 6.4.8.0不支援Bootstrap安裝。
 
-### 驗證安裝{#validate-install}
+### 驗證安裝 {#validate-install}
 
 1. 「產品資訊」頁面(*/system/console/ productinfo *)現在應在「已安裝產品」下方顯示更新版本字串「Adobe Experience Manager, Version 6.4.8.0」。
-1. 所有OSGI組合在OSGI主控台中都是ACTIVE或FRAGMENT(使用Web主控台：/system/console/bundles)。
+1. 在 OSGI 控制台 (使用 Web 控制台：/system/console/bundles) 中，所有 OSGI 套件組合均為「作用中」或「片段」。
 1. OSGI套件org.apache.jackrabbit.oak-core是1.8.17版或更新版本(使用Web Console:/system/console/bundles)。
 
 若要決定此版AEM Sites和Assets的認證執行平台，請參閱[技術需求](../sites-deploying/technical-requirements.md)。
@@ -2181,11 +2181,11 @@ B.使用Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 
 >[!NOTE]
 >
->如果您未在JEE上使用AEM Forms，請略過。 AEM Forms JEE中的修正會透過個別安裝程式提供。
+>如果您未在JEE上使用AEM Forms，請略過。 AEM Forms JEE 中的修正是透過單獨的安裝程式提供。
 
 如需有關安裝AEM Forms JEE累積安裝程式和部署後設定的詳細資訊，請參閱[AEM Forms JEE修補程式安裝程式0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html)。
 
-#### NPR-21268 {#configuration-settings-required-for-npr}所需的配置設定
+#### NPR-21268 所需的配置設定 {#configuration-settings-required-for-npr}
 
 如果您使用Classic（舊）UI並已使用它建立中繼資料範本，請依照步驟執行JMX指令碼以保留它們-
 
@@ -2193,25 +2193,25 @@ B.使用Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 1. 按一下「移轉中繼資料範本」。
 1. 按一下「migrateMetadataTemplatesAtPath」，並提供您要保留中繼資料範本的資料夾路徑。
 
-#### NPR-24536 {#configuration-settings-required-for-npr-1}所需的配置設定
+#### NPR-24536 所需的配置設定 {#configuration-settings-required-for-npr-1}
 
-預設情況下，當用戶聲明任務時，不會刷新其他用戶的共用隊列計數。 為此，我們引入了一種新屬性。 請依照下列步驟，在您的AEM例項上設定此屬性：
+預設情況下，使用者認領任務時，不會重新整理其他使用者的共用佇列計數。為此，我們引入了一項新屬性。請依照下列步驟操作，在您的 AEM 執行個體上設定此屬性：
 
-1. 前往「管理員UI ->服務->工作區->全域管理」。
+1. 前往「管理員 UI -> 服務 -> 工作區 -> 全域管理」。
 1. 匯出全域設定。
-1. 在下載的XML檔案中，新增&lt;client_tasksPollingInterval>10&lt;/client_tasksPollingInterval>標籤。在這裡，10是以秒為單位的範例值。 您可以相應地修改它。
+1. 在下載的XML檔案中，新增&lt;client_tasksPollingInterval>10&lt;/client_tasksPollingInterval>標籤。在這裡，10是以秒為單位的範例值。 您可以視情況修改此值。
 1. 儲存檔案。
-1. 返回「管理員UI ->服務->工作區->全域管理」。
-1. 在「匯入全域設定」區段中匯入xml檔案。
-1. 您現在可以註銷系統並重新登錄。
-1. 共用佇列的計數會開始重新整理工作區中的其他使用者。
-1. 若要關閉輪詢，請將值更改為0，然後再次導入XML檔案。
+1. 返回「管理員 UI -> 服務 -> 工作區 -> 全域管理」。
+1. 在「匯入全域設定」區段中匯入該 xml 檔案。
+1. 這時您可以登出系統並重新登入。
+1. 系統會為工作區中的其他使用者開始重新整理共用佇列的計數。
+1. 若要關閉輪詢，請將值變更為 0，然後再次匯入 XML 檔案。
 
 ### Uber Jar {#uber-jar}
 
 [Adobe Public Maven儲存庫](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.4.8/)中提供AEM 6.4.8.0版的Uber Jar。
 
-要在Maven項目中使用Uber Jar，請參閱[如何使用Uber jar](../sites-developing/ht-projects-maven.md)一文，並在項目POM中包括以下相關性：
+若要在 Maven 專案中使用 Uber Jar，請參閱[如何使用 Uber jar](../sites-developing/ht-projects-maven.md) 一文，並在您的專案 POM 中加入以下相依性：
 
 ```shell
 <dependency>
@@ -2223,23 +2223,23 @@ B.使用Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 </dependency>
 ```
 
-### 已移除／已過時的功能{#removed-deprecated-features}
+### 已移除/已棄用的功能 {#removed-deprecated-features}
 
-本節列出已從AEM 6.4移除或淘汰的功能和功能。
+本節列出 AEM 6.4 已移除或棄用的特色和功能。
 
 | 區域 | 功能 | 替代方案 | 版本 |
 |---|---|---|---|
 | 資產 | 管理子資產的標籤動作 | 無更換 | AEM 6.4.2.0 |
-| 資產與Adobe Creative Cloud整合 | [AEM to Creative Cloud資料夾](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) 共用是在AEM 6.2中引進的，可讓創意使用者存取AEM的資產。Creative Cloud應用程式中發行的新功能Adobe Asset Link提供更佳的使用者體驗，並可直接從Photoshop、InDesign和Illustrator內部，以更強大的方式存取AEM中的資產。 Adobe不會進一步增強資料夾共用功能。 雖然AEM中包含此功能，但客戶會收到（我們強烈建議您使用此取代項目）。 | Adobe Asset Link或案頭應用程式。 如需詳細資訊，請參閱[AEM Creative Cloud整合](/help/assets/aem-cc-integration-best-practices.md)文章。 | AEM 6.4.4.0 |
+| Assets 與 Adobe Creative Cloud 整合 | AEM 6.2 引入了 [AEM 對 Creative Cloud 資料夾共用](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，作為讓 Creative 使用者存取 AEM 資產的方式。Creative Cloud 應用程式推出的新功能 Adobe Asset Link 提供了更優異的使用者體驗，以及更強大的存取功能，可直接從 Photoshop、InDesign 和 Illustrator 中存取 AEM 的資產。 Adobe 將不會再對資料夾共用功能提供近一步的增強項目。雖然AEM中包含此功能，但客戶會收到（我們強烈建議您使用此取代項目）。 | Adobe Asset Link或案頭應用程式。 如需更多資訊，請參閱 [AEM Creative Cloud 整合](/help/assets/aem-cc-integration-best-practices.md)文章。 | AEM 6.4.4.0 |
 
 ### 已知問題 {#known-issues}
 
 * 安裝期間可能會顯示下列錯誤和警告：
 
-   * 建立元件實例和服務工廠返回的錯誤由於儲存庫重新啟動而發生空值：
+   * 由於存放庫重新啟動，而發生建立元件例項和服務工廠傳回 null 這類錯誤：
 
       * com.day.cq.cq-personalization \[com.day.cq.personalization.impl.DefaultProfileProvider(938)\]由於無法綁定引用profileManager，無法建立元件實例
-      * org.apache.sling.commons.schedulerFrameworkEvent ERROR(org.osgi.framework.ServiceException:服務工廠返回空值。 (元件：com.day.cq.tating.impl.TagGarbageCollector(1687))
+      * org.apache.sling.commons.scheduler FrameworkEvent ERROR (org.osgi.framework.ServiceException：服務工廠傳回 null。(元件：com.day.cq.tagging.impl.TagGarbageCollector (1687)))
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` :等待註冊表更改完成未註冊的超時。
    * `com.adobe.granite.maintenance.impl.TaskScheduler` 在granite/operations/maintenance找不到維護視窗
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`:unbindActiment方法拋出異常(java.lang.IllegalStateException:服務已未註冊)。這些錯誤不需要任何動作，因為它們不會影響您的AEM例項。
@@ -2256,24 +2256,24 @@ B.使用Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
    * 重新安裝套件&quot;cq-ui-wcm-admin-content-1.0.1004.zip&quot;
    * 重新編譯所有JSP `(http://<AEM HOST>:<AEM PORT/system/console/slingjsp)`或重新啟動實例。
 
-### 包含{#osgi-bundles-and-content-packages-included}的OSGi捆綁包和內容包
+### 包含的 OSGi 套件組合和內容套件 {#osgi-bundles-and-content-packages-included}
 
 下列文字檔案列出AEM 6.4.8.0隨附的OSGi組合和內容封裝。
 
-AEM 6.4.8.0隨附的OSGi搭售清單
+AEM 6.4.8.0 中包含的 OSGi 套件組合清單
 
 [取得檔案](assets/6.4.8.0_osgi_bundles.txt)
 
-AEM 6.4.8.0內容套件清單
+AEM 6.4.8.0 中包含的內容套件清單
 
 [取得檔案](assets/6.4.8.0_content_packages.txt)
 
 ### 實用資源 {#helpful-resources}
 
-* [AEM 6.4版本注意事項](../release-notes/release-notes.md)
-* [AEM產品頁面](https://www.adobe.com/solutions/web-experience-management.html)
+* [AEM 6.4 發行說明](../release-notes/release-notes.md)
+* [AEM 產品頁面](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM 6.4 檔案](https://helpx.adobe.com/tw/support/experience-manager/6-4.html)
-* 訂閱[Adobe優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)
+* 訂閱 [Adobe 優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### 受限制的站點{#restricted-sites-new}
 
