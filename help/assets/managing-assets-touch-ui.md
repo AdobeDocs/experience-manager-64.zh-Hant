@@ -4,9 +4,9 @@ description: 瞭解各種資產管理和編輯工作，您可使用AEM Assets的
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '10030'
+source-wordcount: '10039'
 ht-degree: 2%
 
 ---
@@ -151,8 +151,8 @@ ht-degree: 2%
 **若要使用FTP上傳資產**
 
 1. 使用您選擇的FTP用戶端，使用您從布建電子郵件收到的FTP使用者名稱和密碼登入FTP伺服器。 在FTP用戶端中，將檔案或資料夾上傳至FTP伺服器。
-1. [使用從布建電子郵件](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 收到的憑證登入動態媒體類別。在全域導覽列上，點選&#x200B;**[!UICONTROL 上傳]**。
-
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後使用從布建電子郵件收到的認證登入您的帳戶。
+1. 在全域導覽列上，點選&#x200B;**[!UICONTROL 上傳]**。
 1. 在&#x200B;**[!UICONTROL Upload]**&#x200B;頁面的左上角附近，點選&#x200B;**[!UICONTROL 透過FTP]**&#x200B;標籤。
 1. 在頁面的左側，選擇FTP資料夾，從中上傳檔案；在頁面的右側，選擇目標資料夾。
 1. 在頁面的右下角，點選&#x200B;**[!UICONTROL 工作選項]**，然後根據您選取的資料夾中的資產設定您想要的選項。
