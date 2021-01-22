@@ -1,18 +1,14 @@
 ---
 title: 設定搜尋表單
-seo-title: 設定搜尋表單
 description: 瞭解如何設定搜尋表單。
-seo-description: 瞭解如何設定搜尋表單。
-uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2062'
 ht-degree: 12%
 
 ---
@@ -64,9 +60,9 @@ ht-degree: 12%
 
    此設定會定義在資產瀏覽器中搜尋產品時（在編輯頁面時）可用的選項。
 
-* **頁面編輯器 (Scene7 搜尋)**:
+* **頁面編輯器(Dynamic Media Classic [先前稱為Scene7] 搜尋)**:
 
-   此設定會定義在資產瀏覽器中搜尋Scene7資源時（在編輯頁面時）可用的選項。
+   此設定會定義在資產瀏覽器（編輯頁面時）中搜尋Dynamic Media Classic資源時可用的選項。
 
 * **網站管理搜尋邊欄**:
 
@@ -440,7 +436,7 @@ Dependent on the predicate a selection of settings are available for configurati
 1. [開啟自訂的](#creating-opening-a-customized-configuration) 設定以進行更新。
 1. 如果要添加新欄位，請開啟&#x200B;**選擇謂詞**&#x200B;頁籤，並將所需的謂詞拖動到所需位置。 例如，**日期範圍謂詞**:
 
-   ![chlimage_1-376](assets/chlimage_1-375.png)
+   ![chlimage_1-375](assets/chlimage_1-375.png)
 
 1. 取決於：
 
@@ -453,7 +449,7 @@ Dependent on the predicate a selection of settings are available for configurati
       選擇謂詞欄位（在右側），然後開啟&#x200B;**Settings**&#x200B;頁籤。
    例如，**日期範圍謂詞**&#x200B;的設定：
 
-   ![chlimage_1-375](assets/chlimage_1-376.png)
+   ![chlimage_1-376](assets/chlimage_1-376.png)
 
 1. 視需要進行變更，並使用&#x200B;**Done**&#x200B;確認。
 
