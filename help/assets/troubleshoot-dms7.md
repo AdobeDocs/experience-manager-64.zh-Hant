@@ -1,19 +1,15 @@
 ---
 title: 疑難排解動態媒體- Scene7模式
-seo-title: 疑難排解動態媒體- Scene7模式
-description: 疑難排解Scene7執行模式中的動態媒體。
-seo-description: 疑難排解Scene7執行模式中的動態媒體。
-uuid: bd9653f7-e4c7-464f-84a8-dc1e8dc37ba2
+description: 疑難排解動態媒體- Scene7執行模式。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1307'
-ht-degree: 0%
+source-wordcount: '1295'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +26,7 @@ ht-degree: 0%
 * 任何AEM 6.4累積修補程式套件(CFP)都已先於&#x200B;*之前安裝，然後才安裝任何可用的動態媒體功能套件。*
 * 已安裝可選功能包18912。
 
-   此選用功能套件可用於FTP支援，或是從Dynamic Media Classic(Scene7)將資產移轉至Dynamic Media。
+   此可選功能套件適用於FTP支援，或是從Dynamic Media Classic將資產移轉至Dynamic Media。
 
 * 導覽至雲端服務使用者介面，並確認已布建的帳戶會顯示在&#x200B;**[!UICONTROL 可用組態]**&#x200B;下。
 * 確保&#x200B;**[!UICONTROL 動態媒體資產啟動(scene7)]**&#x200B;複製代理已啟用。
