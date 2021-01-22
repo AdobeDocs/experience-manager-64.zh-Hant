@@ -1,19 +1,15 @@
 ---
 title: 影片
-seo-title: 影片
-description: 瞭解如何在動態媒體中處理視訊
-seo-description: 瞭解如何在動態媒體中處理視訊
-uuid: 15e89f88-2787-472d-bbb6-d370bbab9228
+description: 瞭解如何在動態媒體中處理視訊。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
-discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '10396'
+ht-degree: 4%
 
 ---
 
@@ -162,9 +158,9 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 * 設定視訊播放器以符合您的品牌需求。
 * 使用簡單的URL或內嵌程式碼，將視訊整合至您的網站、行動網站或行動應用程式。
 
-請參閱[動態視訊播放](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480)。
+<!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-另請參閱Adobe Scene7檢視器參考指南中的[關於HTML5檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)。
+另請參閱Adobe動態媒體檢視器參考指南中的[關於HTML5檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)。
 
 ## 最佳實務：使用HTML5視訊檢視器{#best-practice-using-the-html-video-viewer}
 
@@ -193,76 +189,76 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 漸進式視訊是透過下載視訊並將它儲存在使用者的案頭螢幕或行動裝置上，來傳送。
 
-下表說明使用Scene7 Video Viewer在桌上型電腦和行動裝置上播放視訊的裝置、瀏覽器和播放方法。
+下表說明使用動態媒體視訊檢視器在桌上型電腦和行動裝置上播放視訊的裝置、瀏覽器和播放方法。
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>裝置</strong></td> 
-   <td><strong>瀏覽器</strong></td> 
-   <td><strong>視訊播放模式</strong></td> 
-  </tr> 
+   <td><strong>裝置</strong></td>
+   <td><strong>瀏覽器</strong></td>
+   <td><strong>視訊播放模式</strong></td>
+  </tr>
   <tr> 
-   <td>桌面</td> 
-   <td>Internate Explorer 9和10</td> 
-   <td>漸進式下載。</td> 
-  </tr> 
+   <td>桌面</td>
+   <td>Internate Explorer 9和10</td>
+   <td>漸進式下載。</td>
+  </tr>
   <tr> 
-   <td>桌面</td> 
-   <td>Internate Explorer 11+</td> 
-   <td>在Windows 8和Windows 10上——每當要求HLS時，就強制使用HTTPS。 已知限制：HLS上的HTTP無法在此瀏覽器／作業系統組合<br /> <br /> On Windows 7 —— 漸進式下載中運作。 使用標準邏輯來選擇HTTP與HTTPS通訊協定。</td> 
-  </tr> 
+   <td>桌面</td>
+   <td>Internate Explorer 11+</td>
+   <td>在Windows 8和Windows 10上——每當要求HLS時，就強制使用HTTPS。 已知限制：HLS上的HTTP無法在此瀏覽器／作業系統組合<br /> <br /> On Windows 7 —— 漸進式下載中運作。 使用標準邏輯來選擇HTTP與HTTPS通訊協定。</td>
+  </tr>
   <tr> 
-   <td>桌面</td> 
-   <td>Firefox 23-44</td> 
-   <td>漸進式下載。</td> 
-  </tr> 
+   <td>桌面</td>
+   <td>Firefox 23-44</td>
+   <td>漸進式下載。</td>
+  </tr>
   <tr> 
-   <td>桌面</td> 
-   <td>Firefox 45或更新版本</td> 
-   <td>HLS視訊串流。</td> 
-  </tr> 
+   <td>桌面</td>
+   <td>Firefox 45或更新版本</td>
+   <td>HLS視訊串流。</td>
+  </tr>
   <tr> 
-   <td>桌面</td> 
-   <td>Chrome</td> 
-   <td>HLS視訊串流。</td> 
-  </tr> 
+   <td>桌面</td>
+   <td>Chrome</td>
+   <td>HLS視訊串流。</td>
+  </tr>
   <tr> 
-   <td>桌面</td> 
-   <td>Safari(Mac)</td> 
-   <td>HLS視訊串流。</td> 
-  </tr> 
+   <td>桌面</td>
+   <td>Safari(Mac)</td>
+   <td>HLS視訊串流。</td>
+  </tr>
   <tr> 
-   <td>行動</td> 
-   <td>Chrome（Android 6或更舊版本）</td> 
-   <td>漸進式下載。</td> 
-  </tr> 
+   <td>行動</td>
+   <td>Chrome（Android 6或更舊版本）</td>
+   <td>漸進式下載。</td>
+  </tr>
   <tr> 
-   <td>行動</td> 
-   <td>Chrome（Android 7或更新版本）</td> 
-   <td>HLS視訊串流。</td> 
-  </tr> 
+   <td>行動</td>
+   <td>Chrome（Android 7或更新版本）</td>
+   <td>HLS視訊串流。</td>
+  </tr>
   <tr> 
-   <td>行動</td> 
-   <td>Android（預設瀏覽器）</td> 
-   <td>漸進式下載。</td> 
-  </tr> 
+   <td>行動</td>
+   <td>Android（預設瀏覽器）</td>
+   <td>漸進式下載。</td>
+  </tr>
   <tr> 
-   <td>行動</td> 
-   <td>Safari(iOS)</td> 
-   <td>HLS視訊串流。</td> 
-  </tr> 
+   <td>行動</td>
+   <td>Safari(iOS)</td>
+   <td>HLS視訊串流。</td>
+  </tr>
   <tr> 
-   <td>行動</td> 
-   <td>Chrome(iOS)</td> 
-   <td>HLS視訊串流。</td> 
-  </tr> 
+   <td>行動</td>
+   <td>Chrome(iOS)</td>
+   <td>HLS視訊串流。</td>
+  </tr>
   <tr> 
-   <td>行動</td> 
-   <td>Blackberry</td> 
-   <td>HLS視訊串流。</td> 
-  </tr> 
- </tbody> 
+   <td>行動</td>
+   <td>Blackberry</td>
+   <td>HLS視訊串流。</td>
+  </tr>
+ </tbody>
 </table>
 
 ## 動態媒體視訊解決方案架構{#architecture-of-dynamic-media-video-solution}
@@ -414,7 +410,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
    <td><p>來源</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>1</p> </td> 
+   <td><p>3</p> </td> 
   </tr> 
   <tr> 
    <td><p>編碼</p> </td> 
@@ -901,7 +897,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 1. 在列出熱門發佈影片的表格中，點選影片名稱以播放影片，並檢視影片的觀眾保留（下拉式）報表。
 
-### 根據您使用HTML5檢視器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}建立的視訊檢視器來檢視視訊報表
+### 根據您使用Dynamic Media HTML5檢視器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}建立的視訊檢視器來檢視視訊報表
 
 如果您使用動態媒體提供的現成可用的視訊檢視器，或是您根據現成可用的視訊檢視器建立自訂的檢視器預設集，則不需執行其他步驟即可檢視視訊報表。 不過，如果您已根據HTML5檢視器SDK API建立自己的視訊檢視器，請使用下列步驟來確保您的視訊檢視器將追蹤事件傳送至動態媒體視訊報表。
 
@@ -962,7 +958,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
       ```
    appMeasurementBridge物件具有內建的追蹤函式。 不過，您可以提供自己的功能來支援多個追蹤系統或其他功能。
 
-   如需詳細資訊，請參閱&#x200B;*Scene7 HTML5檢視器SDK使用指南*&#x200B;中的&#x200B;*使用TrackingManager元件*，可從[Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html)下載。
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## 新增字幕至視訊{#adding-captions-to-video}
 
@@ -976,7 +972,7 @@ HLS（HTTP即時串流）是Apple自適應視訊串流的標準，可根據網�
 
 Dynamic Media可將標題檔案轉換為JSON（JavaScript物件註解）格式。 此轉換表示您可將JSON文字內嵌至網頁，做為視訊的隱藏但完整記錄。 然後搜尋引擎可以搜尋並索引內容，讓影片更容易被發現，並提供客戶有關視訊內容的其他詳細資訊。
 
-如需在URL中使用JSON函式的詳細資訊，請參閱&#x200B;*Scene7 Image Serving API說明*&#x200B;中的[伺服靜態（非影像）內容](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html)。
+如需在URL中使用JSON函式的詳細資訊，請參閱&#x200B;*動態媒體影像伺服與轉譯API說明*&#x200B;中的[伺服靜態（非影像）內容](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api)。
 
 **若要在視訊中新增標題或字幕**:
 
@@ -1179,4 +1175,3 @@ Cost-efficient access to rapidly evolving technology.
 1. 成功上傳影像後，在&#x200B;**[!UICONTROL 變更縮圖]**&#x200B;頁面中，點選&#x200B;**[!UICONTROL 儲存變更]**。
 
    自訂縮圖會新增至您的影片。
-
