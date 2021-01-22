@@ -1,18 +1,14 @@
 ---
 title: 迴轉集
-seo-title: 迴轉集
-description: 瞭解如何在動態媒體中處理回轉集
-seo-description: 瞭解如何在動態媒體中處理回轉集
-uuid: a80a0491-6500-463a-83c4-ff4b90a88182
+description: 瞭解如何在動態媒體中使用回轉集。 「回轉集」(Spin Set)模擬旋轉物件的真實動作，從任何角度檢查它。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1838'
+source-wordcount: '1843'
 ht-degree: 6%
 
 ---
@@ -30,7 +26,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如需「資產」使用者介面的詳細資訊，請參閱「使用Touch UI[管理資產」。](managing-assets-touch-ui.md)
+>如需「資產」使用者介面的詳細資訊，請參閱「使用Touch UI](managing-assets-touch-ui.md)管理資產」。[
 
 ## 快速入門：回轉集{#quick-start-spin-sets}
 
