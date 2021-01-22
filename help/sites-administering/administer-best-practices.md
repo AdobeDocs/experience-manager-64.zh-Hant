@@ -1,19 +1,15 @@
 ---
 title: 最佳作法
-seo-title: 最佳作法
-description: 尋找由Adobe工程和諮詢團隊編譯的最佳實務，以協助管理員上手使用。
-seo-description: 尋找由Adobe工程和諮詢團隊編譯的最佳實務，以協助管理員上手使用。
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: 瞭解由Adobe工程和諮詢團隊編譯的Adobe Experience Manager最佳實務，以協助管理員上手使用。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
-ht-degree: 2%
+source-wordcount: '537'
+ht-degree: 3%
 
 ---
 
@@ -43,7 +39,7 @@ ht-degree: 2%
  <tbody>
   <tr>
    <td>資產周圍不同區域的最佳實踐，以增強負載下的系統穩定性和效能</td> 
-   <td><a href="/help/assets/organize-assets.md">資產的最佳實務</a></td> 
+   <td><a href="/help/assets/organize-assets.md">Assets 最佳實務</a></td> 
    <td>包含資產相關不同區域的最佳實務指南連結。 在審核後，您將擁有建立和管理企業資產管理系統所需的知識和工具。</td> 
   </tr>
   <tr>
@@ -52,8 +48,8 @@ ht-degree: 2%
    <td>許多處理設定檔都是以視訊、中繼資料、影像處理等資料夾為基礎，因此一律會套用至資料夾。 本最佳實務檔案說明如何定義和設定檔案夾階層，因為階層對內容的處理方式有重大影響。 </td> 
   </tr>
   <tr>
-   <td>整合Scene7和AEM</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">整合Scene7與AEM的最佳範例</a></td> 
+   <td>整合Dynamic Media Classic和AEM</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">整合Dynamic Media Classic與AEM的最佳範例</a></td> 
    <td><p>說明何時開啟輪詢匯入工具、如何測試您的整合，以及何時使用內容瀏覽器與直接上傳至資產。</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ ht-degree: 2%
    <td>在<a href="/help/assets/managing-image-presets.md">管理影像預設集</a>的說明檔案中，這些主題說明什麼是影像預設集以及選擇影像預設集選項的最佳實務。</td> 
   </tr>
   <tr>
-   <td>動態媒體與直接與Scene7整合</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM整合與Dynamic Media</a></td> 
+   <td>動態媒體與直接與Dynamic Media Classic整合</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media Classic/AEM整合與Dynamic Media</a></td> 
    <td>說明何時最適合使用Dynamic Media解決方案、何時整合S7與AEM，或何時同時使用兩者。</td> 
   </tr>
  </tbody>
