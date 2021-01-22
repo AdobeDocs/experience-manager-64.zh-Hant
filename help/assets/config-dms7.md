@@ -1,18 +1,14 @@
 ---
 title: 設定 Dynamic Media - Scene7 模式
-seo-title: 設定 Dynamic Media - Scene7 模式
-description: 有關如何設定動態媒體- Scene7模式的資訊。
-seo-description: 有關如何設定動態媒體- Scene7模式的資訊。
-uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
+description: 瞭解如何設定動態媒體- Scene7模式。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '5577'
+source-wordcount: '5596'
 ht-degree: 3%
 
 ---
@@ -88,7 +84,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    >[!NOTE]
    >
-   >在您收到具有動態媒體憑證的布建電子郵件後，請[登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud服務。
+   >在您收到具有動態媒體憑證的布建電子郵件後，請開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的公司帳戶以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud服務。
 
 1. 如果連接成功，您還可以設定以下內容：
 
@@ -109,7 +105,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 1. 點選&#x200B;**[!UICONTROL Save]**。
 1. 若要在動態媒體內容發佈之前安全地預覽，您必須「允許列出」AEM作者例項，才能連線至動態媒體：
 
-   * 登入您的Dynamic Media Classic帳戶：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)。 您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
+   * 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。 您的認證和登入詳細資訊是由Adobe在布建時提供。 如果您沒有此資訊，請聯絡技術支援。
    * 在頁面右上角的導覽列上，點選「**[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」]**。
    * 在「影像伺服器發佈」頁面的「發佈內容」下拉式清單中，選取「測試影像伺服」**[!UICONTROL 。]**
    * 對於「Client Address Filter」（客戶端地址過濾器），請按一下「Add **[!UICONTROL （添加]**）」。
@@ -133,7 +129,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 當您處於執行模式&#x200B;**dynamicmedia_scene7**&#x200B;時，您會使用Dynamic Media Classic(Scene7)使用者介面來變更動態媒體設定。
 
-上述部分工作需要您在以下網址登入Dynamic Media Classic:[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+上述部分工作需要您開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
 設定和配置任務包括：
 
@@ -189,7 +185,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 若要設定預設顏色屬性，以在請求影像時啟用色彩校正：
 
-1. [使用布建期間提供](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) 的憑證登入動態媒體類別。導覽至「**[!UICONTROL 設定>應用程式設定]**」。
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後使用布建期間提供的憑證登入您的帳戶。 導覽至「**[!UICONTROL 設定>應用程式設定]**」。
 1. 展開「發 **[!UICONTROL 布設定]** 」區域並選 **[!UICONTROL 取「影像伺服器」]**。設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **** 定為「影像伺服」。
 1. 捲動至您需要變更的屬性，例如&#x200B;**[!UICONTROL 色彩管理屬性]**&#x200B;區域中的屬性。
 
@@ -319,9 +315,9 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 **要配置預設命名：**
 
-1. 登入您的Dynamic Media Classic(Scene7)帳戶：[www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
+   您的認證和登入詳細資訊是由Adobe在布建時提供。 如果您沒有此資訊，請聯絡技術支援。
 
 1. 在頁面頂部附近的導覽列上，點選「**[!UICONTROL 設定>應用程式設定>批次集預設集>預設命名]」。**
 1. 選擇 **[!UICONTROL 「查看表單]** 」或「 **[!UICONTROL 查看代碼」]** ，以指定要查看的方式並輸入有關每個元素的資訊。
@@ -353,9 +349,9 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 **要建立批集預設集，請執行以下操作：**
 
-1. 登入您的Dynamic Media Classic(Scene7)帳戶：[www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
+   您的認證和登入詳細資訊是由Adobe在布建時提供。 如果您沒有此資訊，請聯絡技術支援。
 
 1. 在頁面頂部附近的導覽列上，點選「**[!UICONTROL 設定>應用程式設定>批次集預設集>批次集預設集」。**]
 
@@ -408,9 +404,9 @@ spin-01-01
 
 **要為自動生成2D回轉集建立批集預設，請執行以下操作：**
 
-1. 登入您的Dynamic Media Classic(Scene7)帳戶：[https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。
 
-   您的認證和登入是在布建時由Adobe提供。 如果您沒有此資訊，請聯絡技術支援。
+   您的認證和登入詳細資訊是由Adobe在布建時提供。 如果您沒有此資訊，請聯絡技術支援。
 
 1. 在頁面頂部附近的導覽列上，點選「**[!UICONTROL 設定>應用程式設定>批次集預設集>批次集預設集]**」。
 
