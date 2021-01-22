@@ -7,15 +7,15 @@ user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 建立、管理、提供和最佳化數位資產。
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 34%
+source-wordcount: '723'
+ht-degree: 38%
 
 ---
 
 
-# Assets 指南 {#assets}
+# Assets 指南  {#assets}
 
 + [資產使用指南](home.md)
 + [AEM 6.4 Assets發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
@@ -37,7 +37,7 @@ ht-degree: 34%
    + [Experience League 的 Dynamic Media 電子報](dynamic-media-newsletter.md)
    + [建立 Dynamic Media](administering-dynamic-media.md)
    + [使用 Dynamic Media](dynamic-media.md)
-   + [設定動態媒體- Scene7模式](config-dms7.md)
+   + [設定 Dynamic Media - Scene7 模式](config-dms7.md)
    + [配置動態媒體——混合模式](config-dynamic.md)
    + [疑難排解動態媒體- Scene7模式](troubleshoot-dms7.md)
    + [管理 Dynamic Media 資產](managing-assets.md)
@@ -50,7 +50,7 @@ ht-degree: 34%
    + [Dynamic Media 影像設定檔](image-profiles.md)
    + [智慧型影像](imaging-faq.md)
    + [影片](s7-video.md)
-   + [將Scene7功能新增至您的頁面](scene7.md)
+   + [將Dynamic Media Classic功能新增至您的頁面](scene7.md)
    + [HTTP2 傳送內容](http2.md)
    + [傳送 Dynamic Media 資產](delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中啟用超連結保護](hotlink-protection.md)
@@ -109,9 +109,9 @@ ht-degree: 34%
    + [中繼資料設定檔](metadata-profiles.md)
    + [資產中的數位版權管理](drm.md)
    + [使用示範套件獲取資產見解](touch-ui-using-demo-package-for-asset-insights.md)
-   + [資產卸載最佳做法](assets-offloading-best-practices.md)
+   + [資產卸載最佳實務](assets-offloading-best-practices.md)
    + [資產檔案格式最佳實務](assets-file-format-best-practices.md)
-   + [資產監控最佳實踐](assets-monitoring-best-practices.md)
+   + [Assets 監控最佳實務](assets-monitoring-best-practices.md)
    + [Camera Raw支援](camera-raw.md)
    + [使用Apache Tika偵測資產的MIME類型](detect-asset-mime-type-with-tika.md)
    + [影像轉碼程式庫](imaging-transcoding-library.md)
@@ -121,7 +121,7 @@ ht-degree: 34%
    + [浮水印](watermarking.md)
    + [大量中繼資料匯入和匯出](metadata-import-export.md)
    + [資產範本](asset-templates.md)
-   + [AEM到Creative Cloud資料夾分享最佳實務](aem-cc-folder-sharing-best-practices.md)
+   + [AEM 對 Creative Cloud 資料夾共用最佳實務](aem-cc-folder-sharing-best-practices.md)
    + [資料夾中繼資料結構](folder-metadata-schema.md)
    + [管理智慧標籤](managing-smart-tags.md)
 + 品牌入口網站 {#brandportal}
@@ -168,7 +168,7 @@ ht-degree: 34%
    + [視訊轉譯](video-renditions.md)
 + 3D資產{#three-d}
    + [AEM 3D版本注意事項](../release-notes/aem3d-release-notes.md)
-   + [使用3D資產](assets-3d.md)
+   + [使用 3D 資產](assets-3d.md)
    + [安裝和設定AEM 3D](install-config-3d.md)
    + [進階組態設定](advanced-config-3d.md)
    + [使用Adobe Dimension資產](working-dimension-assets.md)
