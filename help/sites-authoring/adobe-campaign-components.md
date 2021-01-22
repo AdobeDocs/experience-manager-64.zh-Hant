@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2779'
 ht-degree: 6%
 
 ---
@@ -24,14 +24,14 @@ ht-degree: 6%
 
 ## Adobe Campaign電子報元件{#adobe-campaign-newsletter-components}
 
-所有促銷活動元件都遵循[電子郵件範本最佳實務](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳實務，並以Adobe標籤語言[HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html)為基礎。
+所有促銷活動元件都遵循[電子郵件範本最佳實務](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳實務，並以Adobe標籤語言[HTL](https://helpx.adobe.com/tw/experience-manager/htl/using/overview.html)為基礎。
 
 當您開啟已設定為與Adobe Campaign整合的電子報／電子郵件時，應在&#x200B;**Adobe Campaign電子報**&#x200B;區段中看到下列元件：
 
 * 標題 (行銷活動)
 * 影像 (行銷活動)
 * 連結 (行銷活動)
-* Scene7 影像範本 (行銷活動)
+* 動態媒體影像範本（促銷活動）
 * 目標參考 (行銷活動)
 * 文字與影像 (行銷活動)
 * 文字與個人化 (行銷活動)
@@ -40,7 +40,7 @@ ht-degree: 6%
 
 這些元件如下所示：
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### 標題 (行銷活動) {#heading-campaign}
 
@@ -183,13 +183,13 @@ ht-degree: 6%
 
 [Scene7 Image ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Template是分層的影像檔案，其中內容和屬性可以參數化，以利變數。**影像範本**&#x200B;元件可讓您在電子報中使用Scene7範本，並變更範本參數的值。 此外，您可以在參數內使用Adobe Campaign中繼資料變數，讓每位使用者都能以個人化方式體驗影像。
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 按一下&#x200B;**編輯**&#x200B;配置元件。 您可以設定本節所述的設定。 [Scene7 Image Template元件](/help/assets/scene7.md#image-template)中詳細說明了此Scene7 Image範本。
 
 此外，參數面板會列出已在Scene7中為範本定義的所有範本參數。 對於這些參數，您可以調整值、插入變數或將它們重設為預設值。
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### 目標參考 (行銷活動) {#targeted-reference-campaign}
 
@@ -260,7 +260,7 @@ ht-degree: 6%
 
 下列範例顯示顯示的文字與影像（促銷活動）元件。
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### 文字與個人化 (行銷活動) {#text-personalization-campaign}
 
