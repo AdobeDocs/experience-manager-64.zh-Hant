@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '7833'
+source-wordcount: '7831'
 ht-degree: 1%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 1%
 
 透過啟用動態媒體，動態媒體功能將可在UI中使用，而且每個上傳的影像資產都會收到`cqdam.pyramid.tiff`轉譯，以用於快速傳送動態影像轉譯。 這些PTIFF具有顯著的優點，包括(1)僅能管理單一主影像並即時產生無限轉譯，毋需額外儲存空間，以及(2)能夠使用互動式視覺效果，例如縮放、平移、回轉等。
 
-如果您想在AEM中使用Dynamic Media Classic(Scene7)，除非您使用[特定藍本](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)，否則不應啟用Dynamic Media。 除非您透過執行模式啟用動態媒體，否則動態媒體會停用。
+如果您想在AEM中使用Dynamic Media Classic，除非您使用[特定藍本](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)，否則不應啟用Dynamic Media。 除非您透過執行模式啟用動態媒體，否則動態媒體會停用。
 
 要啟用動態媒體，必須從命令行或快速啟動檔案名啟用動態媒體運行模式。
 
@@ -284,7 +284,7 @@ ht-degree: 1%
 
    接下來，您需要[配置複製代理。](#configuring-the-replication-agent)
 
-### 配置複製代理{#configuring-the-replication-agent}
+### 設定複寫代理 {#configuring-the-replication-agent}
 
 1. 在AEM中，點選AEM標誌以存取全域導覽主控台，然後點選&#x200B;**[!UICONTROL 工具>部署>複製>作者上的代理]**。
 1. 在「作者上的代理」頁面上，點選「**[!UICONTROL 動態媒體混合影像複製(s7delivery)」]**。
@@ -329,7 +329,7 @@ Replication test succeeded
 * 發佈影像。 點選影像並在下拉式選單中選取「**[!UICONTROL 檢視器]**」。 選取檢視器預設集，然後點選&#x200B;**[!UICONTROL URL]**，並複製URL並貼在瀏覽器中，以確認您可以看到影像。
 
 
-### 身份驗證疑難排解{#troubleshooting-authentication}
+### 排解驗證疑難問題 {#troubleshooting-authentication}
 
 在設定驗證時，以下是您在其解決方案中可能遇到的一些問題。 在選中這些選項之前，請確保已設定複製。
 
@@ -676,7 +676,7 @@ AEM 6.4和更新版本將此預設集儲存在`/conf/global/settings/dam/dm/pres
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media Classic(Scene7)整合</td> 
+   <td>Dynamic Media Classic整合</td> 
    <td><p>濾鏡影像</p> <p>filter-sets</p> <p>filter-video</p> </td> 
    <td><p>開頭為<strong>image/</strong></p> <p>包含<strong>application/</strong>，結尾為<strong>set</strong>。</p> <p>開頭為<strong>video/</strong></p> </td> 
    <td><p>您可設定「傳輸URI」以指向您的AEM發佈伺服器，而非Adobe Dynamic Media Cloud複製服務URL。 設定此篩選條件可讓Dynamic Media Classic傳遞資產，而非AEM發佈例項。</p> <p>現成可用的「濾鏡影像」、「濾鏡集」和「濾鏡影片」將：</p> 
