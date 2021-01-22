@@ -1,26 +1,22 @@
 ---
-title: 與Dynamic Media Classic整合(Scene7)
-seo-title: 與Dynamic Media Classic整合(Scene7)
+title: 與Dynamic Media Classic整合
 description: 瞭解如何將AEM與Dynamic Media Classic整合。
-seo-description: 瞭解如何將AEM與Dynamic Media Classic整合。
-uuid: b014d643-1cc1-47f3-a79c-7f6f9e45637a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5491'
+source-wordcount: '5456'
 ht-degree: 0%
 
 ---
 
 
-# 與Dynamic Media Classic整合(Scene7){#integrating-with-dynamic-media-classic-scene}
+# 與Dynamic Media Classic {#integrating-with-dynamic-media-classic-scene}整合
 
-[Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classics是代管解決方案，可管理、增強、發佈和提供多媒體資產至網路、行動裝置、電子郵件和網際網路連線的展示和印刷品。
+Adobe Dynamic Media Classic是代管解決方案，可用來管理、增強、發佈和提供多媒體資產至網路、行動裝置、電子郵件和網際網路連線的顯示和列印。
 
 若要使用Dynamic Media Classic，您必須設定雲端設定，讓Dynamic Media Classic和AEM Assets能夠彼此互動。 本檔案說明如何設定AEM和Dynamic Media Classic。
 
@@ -164,7 +160,7 @@ AEM Dynamic Media是直接在AEM平台中統一Dynamic Media Classic功能。
 1. (可選；請參閱使用案例表格)-如果您選擇啟用「從資產自動上傳至Dynamic Media Classic」，則需要新增下列項目：
 
    1. 設定自動上傳至Dynamic Media Classic。
-   1. 在&#x200B;*****Dam更新資產&lt;a5/>工作流程(`https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)結束時，在所有動態媒體工作流程步驟*&#x200B;之後新增&#x200B;**Dynamic Media Classic上傳**&#x200B;步驟(&lt;a6/>)
+   1. 在&#x200B;*****Dam更新資產工作流程(`https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)結束時，在所有動態媒體工作流程步驟*&#x200B;之後新增&#x200B;**Dynamic Media Classic上傳**&#x200B;步驟()
    1. （可選）依[https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl)中的MIME類型限制動態媒體經典資產上傳。 此清單中未包含的資產MIME類型將不會上傳至Dynamic Media Classic伺服器。
    1. （可選）在Dynamic Media Classic設定中設定視訊。 您可以同時啟用動態媒體和動態媒體經典的視訊編碼。 動態轉譯會用於在AEM例項中本機預覽和播放，而Dynamic Media Classic視訊轉譯則會產生並儲存在Dynamic Media Classic伺服器上。 為Dynamic Media和Dynamic Media Classic設定視訊編碼服務時，請將[視訊處理設定檔](/help/assets/video-profiles.md)套用至Dynamic Media Classic資產資料夾。
    1. （可選）[在Dynamic Media Classic中設定安全預覽。](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)
@@ -363,7 +359,7 @@ AEM Assets和Dynamic Media Classic之間的同步化，目前有下列限制／�
 
 ### 新增可設定的逾時至動態媒體傳統上傳工作流程{#adding-configurable-timeout-to-scene-upload-workflow}
 
-當AEM例項設定為透過Dynamic Media Classic(Scene7)處理視訊編碼時，任何上傳工作都會依預設有35分鐘逾時。 若要容納可能較長執行時間的視訊編碼工作，您可以設定此設定：
+當AEM例項設定為透過Dynamic Media Classic處理視訊編碼時，依預設，任何上傳工作都會有35分鐘逾時。 若要容納可能較長執行時間的視訊編碼工作，您可以設定此設定：
 
 1. 導覽至&#x200B;**http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl**。
 
@@ -413,7 +409,7 @@ AEM Assets和Dynamic Media Classic之間的同步化，目前有下列限制／�
 
 如果您要將資產從AEM Assets推送至Dynamic Media Classic，您可以自動發佈資產（預設行為），或將資產推送至未發佈狀態的Dynamic Media Classic。
 
-如果您想在測試環境中測試資產後再上線，則不想立即在Dynamic Media Classic上發佈資產。 您可以搭配使用AEM和Dynamic Media Classic的Secure Test環境，將資產直接從Assets推送至未發佈狀態的Dynamic Media Classic。
+如果您想要在測試環境中測試資產，然後再上線，您可能不想立即在Dynamic Media Classic上發佈資產。 您可以搭配使用AEM和Dynamic Media Classic的Secure Test環境，將資產直接從Assets推送至未發佈狀態的Dynamic Media Classic。
 
 Dynamic Media Classic資產仍可透過安全的預覽取得。 只有在AEM中發佈資產時，Dynamic Media Classic資產才會上線生產。
 
