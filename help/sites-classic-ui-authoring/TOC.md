@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 Classic UI編寫使用指南
 breadcrumb-title: Classic UI編寫指南
 user-guide-description: 本指南涵蓋在傳統使用者介面中於AEM中編寫內容的概念。
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '316'
-ht-degree: 21%
+source-wordcount: '319'
+ht-degree: 22%
 
 ---
 
@@ -86,9 +86,9 @@ ht-degree: 21%
    + [提供動態媒體資產](dynamic-media-assets-delivering.md)
    + [用Autodesk Maya和Mental Ray建立標準舞台](classicui-stages-aem3d-ad-mr.md)
    + [新增動態媒體資產至頁面](dynamic-media-assets-adding-to-page.md)
-   + [將Scene7功能新增至您的頁面](manage-assets-classic-s7.md)
+   + [將Dynamic Media Classic(Scene7)功能新增至頁面](manage-assets-classic-s7.md)
    + [使用 Dynamic Media](dynamic-media-assets.md)
-   + [使用3D資產](classicui-3dassets.md)
+   + [使用 3D 資產](classicui-3dassets.md)
    + [影片](manage-assets-classic-s7-video.md)
    + [資產測試的命名慣例](asset-naming-conventions.md)
    + [關於在AEM中上傳和處理3D資產](classicui-upload-proc-3d.md)
