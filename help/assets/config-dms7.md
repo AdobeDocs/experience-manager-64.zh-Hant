@@ -1,6 +1,6 @@
 ---
-title: 設定動態媒體- Scene7模式
-seo-title: 設定動態媒體- Scene7模式
+title: 設定 Dynamic Media - Scene7 模式
+seo-title: 設定 Dynamic Media - Scene7 模式
 description: 有關如何設定動態媒體- Scene7模式的資訊。
 seo-description: 有關如何設定動態媒體- Scene7模式的資訊。
 uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
@@ -10,15 +10,15 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5571'
+source-wordcount: '5577'
 ht-degree: 3%
 
 ---
 
 
-# 設定動態媒體- Scene7模式{#configuring-dynamic-media-scene-mode}
+# 設定 Dynamic Media - Scene7 模式 {#configuring-dynamic-media-scene-mode}
 
 如果您針對不同環境（例如開發環境、測試環境和即時生產環境）使用Adobe Experience Manager設定，您必須針對每個環境設定Dynamic Media Cloud Services。
 
@@ -72,7 +72,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## 設定動態媒體雲端服務{#configuring-dynamic-media-cloud-services}
 
-在您設定Dynamic Media Cloud服務之前，請變更密碼。 在您收到具有動態媒體憑證的布建電子郵件後，您必須[登入](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)至Dynamic Media Classic以變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
+在您設定Dynamic Media Cloud服務之前，請變更密碼。 在您收到具有動態媒體憑證的布建電子郵件後，您必須[登入](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)至Dynamic Media Classic案頭應用程式，才能變更密碼。 提供電子郵件中提供的密碼是系統生成的，並僅用於臨時密碼。 請務必更新密碼，以便使用正確的認證來設定Dynamic Media Cloud Service。
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## （可選）在動態媒體中設定進階設定- Scene7模式{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-如果您想要進一步自訂動態媒體- Scene7模式的設定和設定，或最佳化其效能，則可以完成下列一或多項選用工作：
+如果您想要進一步自訂動態媒體- Scene7模式的設定和設定，或最佳化其效能，則可完成下列一或多項選用工作：
 
 * [（選用）動態媒體的設定與設定- Scene7模式設定](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
 
@@ -146,7 +146,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 #### 影像伺服器{#publishing-setup-for-image-server}的發佈設定
 
-「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有「預設物件解析度」設定的影像。
+「發佈設定」設定會決定預設如何從動態媒體傳送資產。 如果未指定任何設定，動態媒體會根據發佈設定中定義的預設設定來傳送資產。 例如，傳送不含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
 
 若要設定發佈設定：在Dynamic Media Classic中，點選「**[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器」。]**
 
@@ -172,7 +172,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 >[!NOTE]
 >
->若要與AEM保持一致，請選取「覆寫目前檔案夾中的基本影像名稱／副檔名&#x200B;**[!UICONTROL 」。]**
+>若要與AEM保持一致，請選取「覆寫目前檔案夾中的基本影像名稱／副檔名&#x200B;]**」。**[!UICONTROL 
 
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱／副檔名]** -要求取代影像的副檔名與原始影像相同(例如， `chair.jpg` 取代 `chair.jpg` 而非 `chair.tif`)。不過，您可以將取代影像上傳至原始檔案夾以外的其他檔案夾。 更新後的影像位於新資料夾中；在檔案的原始位置中無法再找到該檔案。
 * **[!UICONTROL 在任何資料夾中覆寫相同的基本資產名稱(不論副檔名為何]** )-此選項是最包含的取代規則。您可以將取代影像上傳至原始檔案夾以外的其他檔案夾、以不同副檔名上傳檔案，並取代原始檔案。 如果原始檔案位於不同的檔案夾中，則取代影像會位於上傳檔案的新檔案夾中。
@@ -297,7 +297,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
    ![虛值](assets/2019-08-02_16_60_30.png)
 
-1. 在「CRXDE Lite」頁面的左上角附近，按一下「全部儲存」。]****[!UICONTROL 
+1. 在「CRXDE Lite」頁面的左上角附近，按一下「全部儲存」。****
 
 #### 建立批次集預設集以自動產生影像集和回轉集{#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
@@ -313,7 +313,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 雖然設定預設命名慣例並不需要使用批次集預設功能，但最佳實務建議您使用預設命名慣例來定義您想要在某個集合中分組的命名慣例元素數目，以便簡化批次集的建立。
 
-另外，請注意，您可以使用沒有表格欄位的「檢視程式碼」。 ]****[!UICONTROL &#x200B;在此視圖中，您完全使用規則運算式建立命名約定定義。
+另外，請注意，您可以使用沒有表格欄位的「檢視程式碼」。 ****&#x200B;在此視圖中，您完全使用規則運算式建立命名約定定義。
 
 定義時可使用兩個元素：**[!UICONTROL Match]**&#x200B;和&#x200B;**[!UICONTROL Base Name]**。 這些欄位可讓您定義命名約定的所有元素，並識別用於命名包含這些元素的集合的約定部分。 公司的個別命名慣例可能會針對每個元素使用一或多行定義。 您可以使用任意多行來定義獨特元素，並將它們分組為不同的元素，例如主影像、顏色元素、替代檢視元素和色票元素。
 
