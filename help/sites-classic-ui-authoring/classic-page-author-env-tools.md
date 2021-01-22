@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
 source-wordcount: '933'
 ht-degree: 2%
@@ -61,11 +61,11 @@ Content Finder是編輯頁面時在儲存庫中尋找資產和／或內容的快
 * [影像](#finding-images)
 * [文件](#finding-documents)
 * [影片](#finding-movies)
-* [Scene7 媒體瀏覽器](/help/sites-administering/scene7.md#scene7contentbrowser)
+* [動態媒體瀏覽器](/help/sites-administering/scene7.md#scene7contentbrowser)
 * [頁面](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#finding-pages)
 * [段落](#referencing-paragraphs-from-other-pages)
 * [產品](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#products)
-* 或者，要按儲存庫結構[瀏覽網站](#the-content-finder)
+* 或者，要按儲存庫結構](#the-content-finder)瀏覽網站[
 
 使用所有選項，您可以[搜索特定項目](#the-content-finder)。
 
