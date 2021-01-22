@@ -1,18 +1,14 @@
 ---
 title: 處理中繼資料、影像和視訊的設定檔
-seo-title: 處理中繼資料、影像和視訊的設定檔
 description: 描述檔，是一組規則，其中包含要套用至上傳至資料夾之資產的選項。 指定要套用至您上傳之視訊資產的中繼資料描述檔和視訊編碼描述檔。 對於影像資產，您也可以指定要套用至影像資產的影像設定檔，以便正確裁切。
-seo-description: 描述檔，是一組規則，其中包含要套用至上傳至資料夾之資產的選項。 指定要套用至您上傳之視訊資產的中繼資料描述檔和視訊編碼描述檔。 對於影像資產，您也可以指定要套用至影像資產的影像設定檔，以便正確裁切。
-uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1439'
+source-wordcount: '1378'
 ht-degree: 2%
 
 ---
@@ -87,7 +83,7 @@ ht-degree: 2%
 
 1. 按一下&#x200B;**[!UICONTROL 開始]** ，然後按一下&#x200B;**[!UICONTROL 確認]**。
 
-   若要監控工作流程或檢查其進度，請從AEM主控台頁面，按一下「工具>工作流程」**[!UICONTROL 。]**&#x200B;在「工作流實例」頁上，選擇工作流。 在菜單欄上，按一下&#x200B;**[!UICONTROL 開啟歷史記錄]**。 您也可以終止、暫停或重新命名同一「工作流實例」頁中選定的工作流。
+   若要監控工作流程或檢查其進度，請從AEM主控台頁面，按一下「工具>工作流程」]**。**[!UICONTROL &#x200B;在「工作流實例」頁上，選擇工作流。 在菜單欄上，按一下&#x200B;**[!UICONTROL 開啟歷史記錄]**。 您也可以終止、暫停或重新命名同一「工作流實例」頁中選定的工作流。
 
 ### 調整重新處理工作流的批大小{#adjusting-load}
 
@@ -106,7 +102,7 @@ ht-degree: 2%
 
    ![Scene7批次上傳元件](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. 在&#x200B;**[!UICONTROL 批次上傳至Scene7 —— 步驟屬性]**&#x200B;對話方塊中，設定下列項目：
+1. 在&#x200B;**[!UICONTROL 批次上傳至Scene7-Step屬性]**&#x200B;對話方塊中，設定下列項目：
    * 在&#x200B;**[!UICONTROL Title]**&#x200B;和&#x200B;**[!UICONTROL Description]**&#x200B;文字欄位中，視需要輸入新的職務和說明。
    * 如果您的處理常式會進入下一個步驟，請選取「**[!UICONTROL 處理常式進階]**」。
    * 在&#x200B;**[!UICONTROL Timeout]**&#x200B;欄位中，輸入外部進程超時（秒）。
@@ -116,7 +112,7 @@ ht-degree: 2%
 
    ![屬性對話框](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. 在&#x200B;**[!UICONTROL 批次上傳至Scene7 —— 步驟屬性]**&#x200B;對話方塊的右上角，點選&#x200B;**[!UICONTROL 完成]**。
+1. 在&#x200B;**[!UICONTROL 批次上傳至Scene7-Step屬性]**&#x200B;對話方塊的右上角，點選&#x200B;**[!UICONTROL Done]**。
 
 1. 在Scene7的右上角：重新處理「資產」工作流模型頁，點選&#x200B;**[!UICONTROL Sync]**。 當您看到&#x200B;**[!UICONTROL Synced]**&#x200B;時，工作流程執行階段模型已成功同步，並可重新處理資料夾中的資產。
 
