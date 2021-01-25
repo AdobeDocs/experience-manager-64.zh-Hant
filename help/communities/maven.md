@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 translation-type: tm+mt
-source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+source-git-commit: 5affffac6f953bcf1d436d8492ad6dd2a041b3b4
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
@@ -24,16 +24,52 @@ ht-degree: 0%
 
 AEM Communities檔案的此區段除了：
 
-* [如何使用Apache Maven建立AEM專案](../../help/sites-developing/ht-projects-maven.md)
+* [使用Apache Maven建立AEM專案](../../help/sites-developing/ht-projects-maven.md)。
 
-現在有兩種「優步」文物可取代個別文物：
+只有一種「uber」藏物可以取代個別藏物：
+
+* AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
+
+>[!NOTE]
+>
+>從AEM 6.4開始，Communities API不會明確發佈。 所有Communities API現在都包含在Uber jar中。
+>
+>建議您隨時更新最新的社群版本。
+>
+>請參閱[最新版本](deploy-communities.md#latest-releases)一節，以識別最新版本。
+
+## Maven Dependency Example {#maven-dependency-example}
+
+```xml
+<dependency>
+    <groupId>com.adobe.aem</groupId>
+    <artifactId>uber-jar</artifactId>
+    <version>6.4.8.3</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+>[!NOTE]
+>
+>請參閱[AEM Uber jar repository](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)以識別最新的Uber jar工件。
+
+<!--
+# Using Maven for Communities {#using-maven-for-communities}
+
+## Overview {#overview}
+
+This section of the AEM Communities documentation is in addition to:
+
+* [How to Build AEM Projects using Apache Maven](../../help/sites-developing/ht-projects-maven.md)
+
+There are now two "uber" artifacts that replace individual artifacts:
 
 * AEM [Communities API jar](#communities-api-jar-artifact)
 * AEM [Uber API jar](../../help/sites-developing/ht-projects-maven.md#what-is-the-uberjar)
 
-## Communities API Jar對象{#communities-api-jar-artifact}
+## Communities API Jar Artifact {#communities-api-jar-artifact}
 
-以下是AEM Communities API jar的GAV範例：
+Following is an example of a GAV for the AEM Communities API jar:
 
 ```xml
 <dependency>
@@ -42,27 +78,28 @@ AEM Communities檔案的此區段除了：
     <version>1.11.170</version>
     <scope>provided</scope>
 </dependency>
+
 ```
 
-請確定指定的版本與AEM Communities所安裝的Communities套件版本相符。 要驗證已安裝的版本號：
+Ensure thet the version specified corresponds with the Communities package version installed for AEM Communities. To verify the installed version number:
 
-1. 以管理權限登入。
-2. 瀏覽至[Package Manager](../../help/sites-administering/package-manager.md)。 例如，[http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
+1. Login with adminstrative privileges.
+2. Browse to [Package Manager](../../help/sites-administering/package-manager.md). For example, [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)
 
-3. 找到軟體包&#x200B;*cq-socialcommunities-pkg-1.x.xxx*
-4. 從包名稱中抽取版本
-   * AEM 6.3的第一個版本是1.11.170版
-   * 功能套件版本為1.12.xxx
-
+3. locate the package *cq-socialcommunities-pkg-1.x.xxx*
+4. extract the version from the package name
+    * first version for AEM 6.3 is version 1.11.170
+    * feature packs will be versions 1.12.xxx
+    
 >[!NOTE]
 >
->建議您隨時更新最新的社群版本。
+>It is recommended to keep up-to-date with the most recent Communities release.
 >
->請造訪[最新版本](deploy-communities.md#latest-releases)區段，以識別最新版本。
+>Visit the [Latest Releases](deploy-communities.md#latest-releases) section to identify the most recent version.
 
 ## Maven Dependency Example {#maven-dependency-example}
 
-必須在Uber APIjar之前指定Communities APIjar。
+The Communities API jar must be specified before the Uber API jar.
 
 ```xml
 <dependency>
@@ -79,3 +116,4 @@ AEM Communities檔案的此區段除了：
     <classifier>apis</classifier>
 </dependency>
 ```
+-->
