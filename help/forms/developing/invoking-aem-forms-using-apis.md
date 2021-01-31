@@ -1,8 +1,8 @@
 ---
 title: 使用API叫用AEM Forms
 seo-title: 使用API叫用AEM Forms
-description: 'null'
-seo-description: 'null'
+description: 'Adobe Experience Manager Forms是以J2EE為基礎的企業軟體，包含可在共用基礎架構中運作的服務。 瞭解如何使用用戶端應用程式，使用Java API、web services、Remoting和REST API，以程式設計方式叫用AEM Forms。 '
+seo-description: Adobe Experience Manager Forms是以J2EE為基礎的企業軟體，包含可在共用基礎架構中運作的服務。 瞭解如何使用用戶端應用程式，使用Java API、web services、Remoting和REST API，以程式設計方式叫用AEM Forms。
 uuid: d100e106-e508-4d3c-ba8c-b5fe13c9e2d6
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
