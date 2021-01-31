@@ -1,17 +1,17 @@
 ---
 title: 表單入口網站 |處理使用者資料
 seo-title: 表單入口網站 |處理使用者資料
-description: 'null'
-seo-description: 'null'
+description: AEM Forms入口網站提供您可用來在AEM Sites頁面上列出最適化表單、HTML5表單和其他表單資產的元件。 瞭解Forms入口網站如何儲存草稿和提交表單的資料。 深入瞭解如何在設定的資料存放區中為登入和匿名使用者存取草稿和提交的表單資料，並視需要加以刪除。
+seo-description: AEM Forms入口網站提供您可用來在AEM Sites頁面上列出最適化表單、HTML5表單和其他表單資產的元件。 瞭解Forms入口網站如何儲存草稿和提交表單的資料。 深入瞭解如何在設定的資料存放區中為登入和匿名使用者存取草稿和提交的表單資料，並視需要加以刪除。
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ AEM Forms入口網站提供您可用來在AEM Sites頁面上列出最適化表�
   </tr> 
   <tr> 
    <td><p>遠端</p> </td> 
-   <td><p>作者和遠端AEM例項的AEM儲存庫</p> </td> 
+   <td><p>作者和遠端AEM例項的AEM存放庫</p> </td> 
    <td><p><code>/content/forms/fp/</code></p> </td> 
   </tr> 
   <tr> 
