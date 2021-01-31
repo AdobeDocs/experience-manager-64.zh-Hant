@@ -1,15 +1,15 @@
 ---
 title: 不要發佈：建立您的第一份最適化檔案
 seo-title: 不要發佈：建立您的第一份最適化檔案
-description: 'null'
-seo-description: 'null'
+description: 不發佈
+seo-description: 不發佈
 page-status-flag: de-activated
 uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,11 @@ We Finance是金融服務領域的領先組織，提供全面且個人化的財�
     </ul> </th> 
   </tr>
   <tr>
-   <td>先決條件</td> 
+   <td>必備條件</td> 
    <td>
     <ul> 
      <li>設定AEM作者例項。 </li> 
-     <li>安裝AEM Forms附加元件。 如需詳細資訊，請參閱<a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">安裝及設定AEM Forms</a>。</li> 
+     <li>安裝 AEM Forms 附加元件. 如需詳細資訊，請參閱<a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">安裝及設定AEM Forms</a>。</li> 
      <li>從資料庫提供程式獲取JDBC資料庫驅動程式（JAR檔案）。 教程中的示例基於MySQL資料庫，並使用Oracle的MySQL JDBC資料庫驅動程式。 </li> 
      <li>設定包含客戶資料的資料庫。 資料庫是建立自適應文檔的必要條件。 本教學課程使用資料庫來顯示AEM Forms的表單資料模型和永續性功能。 </li> 
      <li>建立／匯入並啟用<a href="/help/forms/using/web-channel-print-channel.md">列印和網頁頻道的範本</a>。</li> 
@@ -85,7 +85,7 @@ We Finance是金融服務領域的領先組織，提供全面且個人化的財�
 
 ## 步驟3:將規則套用至最適化檔案欄位（僅限Web頻道）{#step-apply-rules-to-adaptive-document-fields-web-channel-only}
 
-最適化檔案提供編輯器，可編寫最適化檔案物件的規則。 這些規則會根據預設條件和使用者在檔案上的動作來定義對檔案物件觸發的動作。 它可協助確保在網頁版的最適化檔案中，提供精確性並加速使用者體驗。 有關自適應文檔規則和規則編輯器的詳細資訊，請參閱[規則編輯器](/help/forms/using/rule-editor.md)。
+最適化檔案提供編輯器，可編寫最適化檔案物件的規則。 這些規則會根據預設條件和使用者在檔案上的動作來定義要觸發檔案物件的動作。 它可協助確保在網頁版的最適化檔案中，提供精確性並加速使用者體驗。 有關自適應文檔規則和規則編輯器的詳細資訊，請參閱[規則編輯器](/help/forms/using/rule-editor.md)。
 
 目標：
 
