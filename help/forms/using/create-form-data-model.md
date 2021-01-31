@@ -1,17 +1,17 @@
 ---
 title: 「教學課程：建立表單資料模型"
 seo-title: 建立表單資料模型教學課程
-description: 'null'
-seo-description: 'null'
+description: AEM Forms資料整合模組可讓您從不同的後端資料來源建立表單資料模型，例如AEM使用者設定檔、REST風格的web services、SOAP架構的web services、OData服務和關聯式資料庫。 瞭解如何將MySQL資料庫配置為資料源、建立、配置和測試表單資料模型。
+seo-description: AEM Forms資料整合模組可讓您從不同的後端資料來源建立表單資料模型，例如AEM使用者設定檔、REST風格的web services、SOAP架構的web services、OData服務和關聯式資料庫。 瞭解如何將MySQL資料庫配置為資料源、建立、配置和測試表單資料模型。
 page-status-flag: de-activated
 uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
