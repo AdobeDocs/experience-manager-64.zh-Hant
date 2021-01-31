@@ -1,16 +1,16 @@
 ---
 title: Document Security |處理使用者資料
 seo-title: Document Security |處理使用者資料
-description: 'null'
-seo-description: 'null'
+description: AEM Forms檔案安全性可讓您建立、儲存並套用預先定義的保全設定至檔案。 它可確保只有授權的使用者才能使用檔案。 瞭解Document Security如何在資料庫表格中組織資料、存取和匯出資料庫中使用者的檔案安全性資料，並視需要永久刪除資料。
+seo-description: AEM Forms檔案安全性可讓您建立、儲存並套用預先定義的保全設定至檔案。 它可確保只有授權的使用者才能使用檔案。 瞭解Document Security如何在資料庫表格中組織資料、存取和匯出資料庫中使用者的檔案安全性資料，並視需要永久刪除資料。
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '950'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
