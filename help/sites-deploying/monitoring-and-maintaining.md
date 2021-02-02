@@ -10,9 +10,9 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5893'
+source-wordcount: '5889'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ AEM WCM會記錄詳細的記錄檔。 開啟包裝並啟動Quickstart後，您�
 
       此處會註冊錯誤消息（嚴重性級別不同）。
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       只有啟用動態媒體時，才會使用此記錄檔。 它提供用於分析內部ImageServer進程行為的統計和分析資訊。
 
@@ -208,7 +208,7 @@ AEM WCM會記錄詳細的記錄檔。 開啟包裝並啟動Quickstart後，您�
 
       每個存取請求都會在此與回應一起註冊。
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
       只有啟用動態媒體時，才會使用此記錄檔。 s7access記錄透過`/is/image`和`/is/content`對動態媒體提出的每個要求。
 
@@ -625,7 +625,7 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「設定狀態�
   <tr> 
    <td>Java VisualVM</td> 
    <td>觀察JVM度量、線程、記憶體和分析。</td> 
-   <td><p>用法：jvisualvm或visualvm<br /> </p> <p>請參閱「使用(J)VisualVM</a>監控效能」。<a href="https://visualvm.github.io/releases.html"><a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html"><a href="#monitoring-performance-using-j-visualvm"></a></a></a></p> <p><strong>注意：</strong> 使用JDK 1.6,VisualVM可透過增效模組進行擴充。</p> </td> 
+   <td><p>用法：jvisualvm或visualvm<br /> </p> <p>請參閱「使用(J)VisualVM</a>監控效能」。<a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html"></a><a href="https://visualvm.github.io/releases.html"></a><a href="#monitoring-performance-using-j-visualvm"></a></p> <p><strong>注意：</strong> 使用JDK 1.6,VisualVM可透過增效模組進行擴充。</p> </td> 
   </tr> 
   <tr> 
    <td>桁架／網架，lsof</td> 
