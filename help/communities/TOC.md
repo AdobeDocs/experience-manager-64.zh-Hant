@@ -6,10 +6,10 @@ user-guide-title: AEM 6.4 Communities 使用指南
 breadcrumb-title: Communities 指南
 user-guide-description: 建立線上體驗，例如論壇、使用者群組、學習資源和其他社交功能。
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 7%
+source-wordcount: '506'
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 7%
    + [社群網站](administer-landing.md)
    + [AEM Communities概觀](overview.md)
    + [AEM 6.4 Communities的新增功能](whats-new-aem-communities.md)
-   + [AEM Communities發行說明](/help/release-notes/communities-release-notes.md)
+   + [AEM Communities發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
    + [AEM Communities快速入門](getting-started.md)
    + [AEM Communities的啟用快速入門](getting-started-enablement.md)
    + [初始設定](setup.md)
@@ -39,7 +39,7 @@ ht-degree: 7%
    + [配置Dispatcher for Communities](dispatcher.md)
 + 管理{#administer}
    + [AEM Communities中的使用者與UGC管理服務](user-ugc-management-service.md)
-   + [社群網站](administer-landing.md)
+   + [社群網站](https://experienceleague.adobe.com/docs/experience-manager-64/communities/introduction/administer-landing.html)
    + [Communities Console](consoles.md)
    + [社群功能的Analytics設定](analytics.md)
    + [設定啟用功能](enablement.md)
@@ -47,7 +47,7 @@ ht-degree: 7%
    + [協調社群內容](moderate-ugc.md)
    + [設定電子郵件](email.md)
    + [社群通知](notifications.md)
-   + [社群訂閱](subscriptions.md)
+   + [Communities 訂閱](subscriptions.md)
    + [社群評分和標章](implementing-scoring.md)
    + [管理使用者和使用者群組](users.md)
    + [社群群組主控台](groups.md)
@@ -166,4 +166,5 @@ ht-degree: 7%
    + [活動趨勢](trends.md)
    + [使用Social Tag Cloud](tagcloud.md)
    + [使用投票](voting.md)
-   + [建立範例頁面](create-sample-page.md)
+   + [建立範例頁面](https://experienceleague.adobe.com/docs/experience-manager-64/communities/develop/create-sample-page.html)
+
