@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 Authoring 使用指南
 breadcrumb-title: Authoring 指南
 user-guide-description: 了解在 AEM 中建立內容和編寫的重要概念。
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 49%
+source-wordcount: '292'
+ht-degree: 47%
 
 ---
 
@@ -72,9 +72,9 @@ ht-degree: 49%
    + [使用工作流程](workflows.md)
    + [將工作流程套用至頁面](workflows-applying.md)
    + [參與工作流程](workflows-participating.md)
-   + [使用專案工作流程](projects-with-workflows.md)
+   + [使用專案工作流程](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + 頁面效能{#page-performance}
-   + [內容分析](content-insights.md)
+   + [內容分析](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [分析頁面效能](ci-analyze.md)
    + [檢視頁面分析資料](pa-using.md)
    + [新增Search&amp;Promote功能至您的頁面](search-and-promote.md)
