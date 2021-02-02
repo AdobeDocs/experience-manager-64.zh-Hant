@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2825'
 ht-degree: 4%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 4%
 
 1. 在&#x200B;**[!UICONTROL 版面容器]**&#x200B;頁面的右上角，點選「完成（勾選）」圖示。
 
-1. 在工具列靠近頁面頂端的右側，從下拉式清單中，點選「初始內容」，然後按一下「a2/」，將動態媒體元件新增至頁面。[****](#adding-a-dynamic-media-component-to-a-page)
+1. 在工具列靠近頁面頂端的右側，從下拉式清單中，點選「初始內容」，然後按一下「a2/」，將動態媒體元件新增至頁面。****[](#adding-a-dynamic-media-component-to-a-page)
 
 ## 本地化動態媒體元件{#localizing-dynamic-media-components}
 
@@ -171,7 +171,7 @@ Enter值（以像素為單位），如果您希望影像大小固定。將這些
 
 使用動態媒體元件，將動態視訊新增至網頁。 當您編輯元件時，您可以選擇使用預先定義的視訊檢視器預設集來播放頁面上的視訊。
 
-![chlimage_1-541](assets/chlimage_1-540.png)
+![chlimage_1-540](assets/chlimage_1-540.png)
 
 您必須按一下元件中的&#x200B;**[!UICONTROL 編輯]**，編輯下列動態媒體設定。
 
@@ -187,8 +187,8 @@ Enter值（以像素為單位），如果您希望影像大小固定。將這些
 
    例如，您可以使用檢視器修飾元執行下列動作：
 
-   * 將標題檔案與視頻[標題關聯。](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * 將導覽檔案與視訊[導覽關聯。](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * 將標題檔案與視頻[標題關聯。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * 將導覽檔案與視訊[導覽關聯。](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 按一下元件中的&#x200B;**[!UICONTROL 編輯]**&#x200B;可以編輯以下[!UICONTROL 高級設定]。
 
@@ -243,7 +243,7 @@ inYou can set a sasset to open a link.設定URL，並在「開啟於」中指出
 > 
 >若要避免此問題，請確定AEM Sites使用者擁有必要的存取資產權限。
 
-![chlimage_1-540](assets/chlimage_1-541.png)
+![chlimage_1-541](assets/chlimage_1-541.png)
 
 按一下元件中的&#x200B;**[!UICONTROL Edit]**&#x200B;可以編輯以下&#x200B;**[!UICONTROL General]**&#x200B;設定。
 
