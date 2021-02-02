@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '4300'
+source-wordcount: '4296'
 ht-degree: 0%
 
 ---
@@ -373,9 +373,9 @@ d.（可選）要刪除熱點，請在影像上選擇該熱點，然後在**[!UI
 
 要將裁切應用於自適應環境的可購物互動式影像，可以將「互動式影像」配置屬性`ZoomView.iscommand`包含到路徑——其中`ZoomView`是要調用的元件，`iscommand`是要應用的裁切影像服務命令。
 
-請參閱[ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html)組態屬性。
+請參閱[ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html)組態屬性。
 
-請參閱[crop](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)影像伺服命令。
+請參閱[crop](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html)影像伺服命令。
 
 您現在已準備好將互動式影像與網站上現有的Quickview整合。
 
