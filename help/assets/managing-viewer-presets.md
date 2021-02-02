@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '4248'
+source-wordcount: '4234'
 ht-degree: 10%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 10%
 
 不同的網頁有不同的需求。 例如，有時您想要的網頁提供在個別瀏覽器視窗中開啟HTML5檢視器的連結。 在其他情況下，可能需要將HTML5檢視器直接內嵌在代管頁面上。 在後一種情況下，網頁可能具有靜態版面。 或者，它可以是&#x200B;*自適應*，並在不同裝置上或不同瀏覽器視窗大小顯示不同。 為滿足這些需求，Dynamic Media隨附的所有預先定義、現成可用的HTML5檢視器都支援靜態網頁和互動式設計網頁。
 
-如需如何將回應式檢視器內嵌至網頁的詳細資訊，請參閱&#x200B;*影像服務API說明*&#x200B;中的[回應式影像庫](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
+如需如何將回應式檢視器內嵌至網頁的詳細資訊，請參閱&#x200B;*影像服務API說明*&#x200B;中的[回應式影像庫](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ ht-degree: 10%
 
 如需檢視器支援網頁瀏覽器和作業系統版本的詳細資訊，請參閱檢視器版本注意事項。
 
-請參閱[檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)的目錄中的&#x200B;*檢視器發行說明*。
+請參閱[檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)的目錄中的&#x200B;*檢視器發行說明*。
 
 >[!NOTE]
 >
@@ -211,15 +211,15 @@ AEM會在從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200B;檢視�
 
       視覺編輯器可讓您查看特定屬性對樣式有何影響。 只要設定或調整任何屬性，即可使用編輯器左側的範例，立即查看它對檢視器有何影響。
 
-      [檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)中的「自訂&#x200B;*&lt;viewer_name>*&#x200B;檢視器」說明主題中說明每種檢視器預設集的CSS樣式屬性。
+      [檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的「自訂&#x200B;*&lt;viewer_name>*&#x200B;檢視器」說明主題中說明每種檢視器預設集的CSS樣式屬性。
 
-      例如，如果您要建立類型`Mixed_Media`的檢視器預設集，請參閱[自訂混合媒體檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)，以取得每個屬性的清單和說明。
+      例如，如果您要建立類型`Mixed_Media`的檢視器預設集，請參閱[自訂混合媒體檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)，以取得每個屬性的清單和說明。
 
    * 如果您已在個別的CSS檔案中定義樣式設定，則可將CSS檔案上傳至AEM Assets。 點選&#x200B;**[!UICONTROL 選取類型]**&#x200B;下方的&#x200B;**[!UICONTROL 匯入CSS]**（您可能需要向上捲動視覺編輯器才能查看），以尋找已上傳的CSS檔案，並將它與檢視器預設集建立關聯。
 
       當您匯入CSS檔案時，視覺編輯器會檢查CSS是否使用正確的檢視器標籤。 例如，如果您要建立縮放檢視器，您匯入的所有CSS規則都必須使用父檢視器元素上定義的檢視器類別名稱`.s7mixedmediaviewer`來定義。
 
-      只要正確定義特定檢視器的CSS標籤，您就可匯入任意手工的CSS。 (CSS標籤在[檢視器參考指南](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html)中的「自訂&#x200B;*檢視器名稱>*&#x200B;檢視器」說明主題中有說明。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱[自訂縮放檢視器](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，視覺編輯器可能不瞭解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍能運作。
+      只要正確定義特定檢視器的CSS標籤，您就可匯入任意手工的CSS。 (CSS標籤在[檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)中的「自訂&#x200B;*檢視器名稱>*&#x200B;檢視器」說明主題中有說明。 例如，如果您想要閱讀有關縮放檢視器的CSS標籤，請參閱[自訂縮放檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。) 但是，視覺編輯器可能不瞭解某些CSS值。 在這種情況下，視覺編輯器會嘗試覆寫錯誤，讓CSS仍能運作。
    >[!NOTE]
    >
    >如果您偏好直接以原始格式編輯CSS，請點選「選取類型」下拉式選單下方的「顯示/隱藏CSS **** 」 (您可能需要向上捲動視覺編輯器才能檢視)。****
@@ -236,7 +236,7 @@ AEM會在從&#x200B;**[!UICONTROL 詳細資料檢視>檢視器]**&#x200B;檢視�
 
    視覺編輯器中的許多元件都有相關的詳細說明。 展開元件以顯示其相關參數時，這些說明會顯示在藍色方塊中。
 
-   有些檢視器類型具有可讓您在「 **IS Command」 (IS命令) 文字欄位中指定「Image Serving** 」 (影像伺服) 命令的元件。如需您可使用的指令清單，請參 [閱影像伺服API參考](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
+   有些檢視器類型具有可讓您在「 **IS Command」 (IS命令) 文字欄位中指定「Image Serving** 」 (影像伺服) 命令的元件。如需您可使用的指令清單，請參 [閱影像伺服API參考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
 
    >[!NOTE]
    >
