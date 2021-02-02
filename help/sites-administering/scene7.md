@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5456'
+source-wordcount: '5454'
 ht-degree: 0%
 
 ---
@@ -567,7 +567,7 @@ Dynamic Media Classic資產仍可透過安全的預覽取得。 只有在AEM中�
 
    例如，`psprocess="rasterize"&psresolution=120` 。
 
-   如需您可使用的其他上傳工作參數，請參閱[Adobe Dynamic Media Classic Image Production System API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html)。
+   如需您可使用的其他上傳工作參數，請參閱[Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html)。
 
    >[!NOTE]
    >
