@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '866'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更新版本使用。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)。
+>不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更新版本使用。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)。
 
 使用標準上傳或同步機制，將3D資產及其相關參照的檔案匯入AEM Assets。
 
@@ -63,7 +63,7 @@ Adobe建議您在上傳主要3D模型檔案之前或同時上傳所有參照的�
 
 ## 監控已上載3D檔案的處理狀態{#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-僅在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，處理狀態和進度會顯示為資產卡片上的進度橫幅。 每個上傳的3D模型通常會經歷下列4-6個順序處理階段：
+僅在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中，處理狀態和進度會顯示為資產卡片的進度橫幅。 每個上傳的3D模型通常會經歷下列4-6個順序處理階段：
 
 <table> 
  <tbody> 
