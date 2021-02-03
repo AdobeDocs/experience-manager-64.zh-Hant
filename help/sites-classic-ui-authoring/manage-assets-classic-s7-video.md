@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 0%
+source-wordcount: '1683'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ Assets提供集中式視訊資產管理，您可以直接將視訊上傳至Asset
 Dynamic Media Classic視訊整合將最佳化視訊的觸及面延伸到所有螢幕（自動裝置和頻寬偵測）。
 
 * Dynamic Media Classic(Scene7)視訊元件會自動執行裝置和頻寬偵測，以在桌上型電腦、平板電腦和行動裝置上播放正確格式和適當品質的視訊。
-* 資產——您可以包含可調式視訊集，而不只包含單一視訊資產。 最適化視訊集是所有必要視訊轉譯的容器，可在多種螢幕上順暢播放視訊。 「最適化視訊集」會針對以不同位元速率和格式（例如400 kbps、800 kbps和1000 kbps）編碼的相同視訊版本分組。 您使用Adaptive Video Set和S7視訊元件，在多種螢幕上（包括桌上型電腦、iOS、Android、Blackberry和Windows行動裝置）進行最適化視訊串流。 如需詳細資訊，請參閱[Scene7說明檔案中有關最適化視訊集的資訊](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html)。
+* 資產——您可以包含可調式視訊集，而不只包含單一視訊資產。 最適化視訊集是所有必要視訊轉譯的容器，可在多種螢幕上順暢播放視訊。 「最適化視訊集」會針對以不同位元速率和格式（例如400 kbps、800 kbps和1000 kbps）編碼的相同視訊版本分組。 您使用Adaptive Video Set和S7視訊元件，在多種螢幕上（包括桌上型電腦、iOS、Android、Blackberry和Windows行動裝置）進行最適化視訊串流。 如需詳細資訊，請參閱[Scene7說明檔案中有關最適化視訊集的資訊](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)。
 
 ## 關於FFMPEG和Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -62,7 +62,7 @@ Dynamic Media Classic視訊元件支援下列格式：
 
 如果您不需要資產的工作流程或版本修訂，則應將資產上傳至Dynamic Media Classic。 建議的工作流程如下：
 
-1. 在Dynamic Media Classic中，[設定排程的FTP上傳和編碼至Dynamic Media Classic（系統自動化）](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html)。
+1. 在Dynamic Media Classic中，[設定排程的FTP上傳和編碼至Dynamic Media Classic（系統自動化）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#uploading-your-files)。
 1. 在AEM中，存取「內容搜尋器」的&#x200B;**[!UICONTROL Dynamic Media Classic]**&#x200B;標籤中WCM中的視訊資產。
 1. 使用Dynamic Media Classic視訊元件製作。
 
@@ -81,7 +81,7 @@ Dynamic Media Classic視訊元件支援下列格式：
 
    >[!NOTE]
    >
-   >如需視訊預設集的詳細資訊，請參閱[Dynamic Media Classic檔案](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html)。
+   >如需視訊預設集的詳細資訊，請參閱[Dynamic Media Classic檔案](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)。
    >
    >Adobe建議您在設定通用預設集時同時選取兩個最適化視訊集，或選取「最適化視訊編碼」選項。****
 
