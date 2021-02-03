@@ -1,19 +1,15 @@
 ---
 title: 使用AEM 3D資產
-seo-title: 使用3D資產
 description: 瞭解如何在AEM 3D中使用3D資產
-seo-description: 瞭解如何在AEM 3D中使用3D資產
-uuid: a1c1bb29-9d3d-4025-8142-ed9719434bf9
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: introduction
 content-type: reference
-discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 0%
+source-wordcount: '1175'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +18,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更新版本使用。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更新版本使用。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
-AEM 3D(Adobe Experience Manager 3D)可讓您上傳、管理、檢視和演算3D內容。 已針對個別物件最佳化檢視和轉換支援。
+AEM 3D(Adobe Experience Manager 3D)可讓您上傳、管理、檢視和演算3D內容。 針對個別物件最佳化檢視和轉譯支援。
 
 另請參閱[AEM 3D發行說明](/help/release-notes/aem3d-release-notes.md)。
 
