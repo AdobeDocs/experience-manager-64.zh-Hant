@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '3426'
+source-wordcount: '3381'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 將Dynamic Media Classic功能新增至您的頁面{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classics是代管解決方案，可管理、增強、發佈和提供多媒體資產至網路、行動裝置、電子郵件和網際網路連線的展示和印刷品。
+Adobe Dynamic Media Classic是代管解決方案，可用來管理、增強、發佈和提供多媒體資產至網路、行動裝置、電子郵件和網際網路連線的顯示和列印。
 
 您可以在各種檢視器中檢視在Dynamic Media Classic中發佈的AEM資產：
 
@@ -149,8 +149,6 @@ AEM提供下列Dynamic Media Classic元件：
 
 自2017年1月31日起，Adobe Dynamic Media Classic正式終止對Flash檢視器平台的支援。
 
-如需此重要變更的詳細資訊，請參閱[Flash檢視器生命週期結束的常見問答集](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html)。
-
 ### 將Dynamic Media Classic元件新增至頁面{#adding-a-scene-component-to-a-page}
 
 將Dynamic Media Classic元件新增至頁面與將元件新增至任何頁面相同。 Dynamic Media Classic元件將在下列章節中詳細說明。
@@ -248,7 +246,7 @@ Dynamic Media Classic Image元件可讓您將Dynamic Media Classic功能新增�
 
 ### 影像範本 {#image-template}
 
-[Dynamic Media Classic Image ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Template是分層Photoshop內容，已匯入至Dynamic Media Classic，內容和屬性會因變數而參數化。**[!UICONTROL Image template]**&#x200B;元件可讓您在AEM中匯入影像並動態變更文字。 此外，您還可以設定&#x200B;**[!UICONTROL 影像範本]**&#x200B;元件，使用用戶端內容的值，讓每位使用者以個人化方式體驗影像。
+[Dynamic Media Classic Image ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) Template是分層Photoshop內容，已匯入至Dynamic Media Classic，內容和屬性會因變數而參數化。**[!UICONTROL 影像範本]**&#x200B;元件可讓您在AEM中匯入影像並動態變更文字。 此外，您還可以設定&#x200B;**[!UICONTROL 影像範本]**&#x200B;元件，使用用戶端內容的值，讓每位使用者以個人化方式體驗影像。
 
 按一下&#x200B;**[!UICONTROL 編輯]**&#x200B;配置元件。 您可以設定所有Dynamic Media Classic元件的常用[設定，以及本節所述的其他設定。](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassicscomponents)
 
