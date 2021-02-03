@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5454'
+source-wordcount: '5440'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ AEM Dynamic Media是直接在AEM平台中統一Dynamic Media Classic功能。
     </tr> 
     <tr> 
     <td>動態媒體與範本的新功能</td> 
-    <td>使用動態媒體進行影像和視訊處理。 在Dynamic Media Classic中編寫影像範本，並使用Dynamic Media Classic內容搜尋器，將範本加入Sites頁面。</td> 
+    <td>使用動態媒體進行影像和視訊處理。 在Dynamic Media Classic中編寫影像範本，並使用Dynamic Media Classic內容搜尋器，將範本加入「網站」頁面。</td> 
     <td><p>開啟</p> <p>（請參閱步驟3）</p> </td> 
     <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">開啟</a></td> 
     <td><a href="/help/assets/scene7.md#scene-content-browser">開啟</a></td> 
@@ -409,7 +409,7 @@ AEM Assets和Dynamic Media Classic之間的同步化，目前有下列限制／�
 
 如果您要將資產從AEM Assets推送至Dynamic Media Classic，您可以自動發佈資產（預設行為），或將資產推送至未發佈狀態的Dynamic Media Classic。
 
-如果您想要在測試環境中測試資產，然後再上線，您可能不想立即在Dynamic Media Classic上發佈資產。 您可以搭配使用AEM和Dynamic Media Classic的Secure Test環境，將資產直接從Assets推送至未發佈狀態的Dynamic Media Classic。
+如果您想在測試環境中測試資產後再上線，則不想立即在Dynamic Media Classic上發佈資產。 您可以搭配使用AEM和Dynamic Media Classic的Secure Test環境，將資產直接從Assets推送至未發佈狀態的Dynamic Media Classic。
 
 Dynamic Media Classic資產仍可透過安全的預覽取得。 只有在AEM中發佈資產時，Dynamic Media Classic資產才會上線生產。
 
@@ -422,7 +422,7 @@ Dynamic Media Classic資產仍可透過安全的預覽取得。 只有在AEM中�
 您必須先設定下列項目，才能將資產推送至Dynamic Media Classic而不發佈：
 
 1. [使用Admin Console建立支援案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) 在您的支援案例中，請求您的Dynamic Media Classic帳戶啟用安全預覽。
-1. 請依照[設定Dynamic Media Classic帳戶的安全預覽的指示進行。](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. 請依照[設定Dynamic Media Classic帳戶的安全預覽的指示進行。](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
 
 這些步驟與您在Dynamic Media Classic中建立任何安全測試設定時所遵循的步驟相同。
 
@@ -452,7 +452,7 @@ Dynamic Media Classic資產仍可透過安全的預覽取得。 只有在AEM中�
 1. 點選AEM圖示並導覽至「**[!UICONTROL 部署>雲端服務]**」、點選「**[!UICONTROL 動態媒體經典版」，然後在「動態媒體經典版」中選取您的設定。]**
 1. 點選&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤。 在&#x200B;**[!UICONTROL 啟用保全檢視]**&#x200B;下拉式選單中，選取「AEM發佈啟動時&#x200B;]**」，將資產推送至Dynamic Media Classic，而不發佈。**[!UICONTROL （依預設，此值會設為&#x200B;**[!UICONTROL Immedialy]**，其中會立即發佈Dynamic Media Classic資產）。
 
-   如需在公開前測試資產的詳細資訊，請參閱[Dynamic Media Classic檔案](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)。
+   如需在公開前測試資產的詳細資訊，請參閱[Dynamic Media Classic檔案](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)。
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
