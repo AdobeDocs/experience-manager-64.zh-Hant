@@ -1,18 +1,14 @@
 ---
 title: AEM 3D發行說明
-seo-title: AEM 3D發行說明
 description: Adobe Experience Manager Assets中3D內容的發行說明。
-seo-description: Adobe Experience Manager Assets中3D內容的發行說明。
-uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes, 3D
 content-type: reference
-discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->不再支援AEM 6.4中的AEM 3D功能套件。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更新版本使用。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>不再支援AEM 6.4中的AEM 3D功能套件。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更新版本使用。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM-6.4-DynamicMedia-3D 3.1.0版（2018年10月10日）
 
