@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1681'
+source-wordcount: '1679'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更新版本使用。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更新版本使用。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
@@ -93,7 +93,7 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
 1. 訪問[軟體分發門戶](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)。 找到`AEM-6.4-DynamicMedia-3D`功能套件的3.0.1版並下載。
 
-1. 在AEM中，按一下「工具>管理>部署>封裝管理員&#x200B;**[!UICONTROL 」。]**
+1. 在AEM中，按一下「工具>管理>部署>封裝管理員&#x200B;]**」。**[!UICONTROL 
 
 1. 將下載的功能套件上傳至AEM。 找到它，然後按一下&#x200B;**[!UICONTROL Install]**。
 
@@ -165,7 +165,7 @@ AEM 3D（3.0版）的安裝與設定涉及下列事項：
 
    ![chlimage_1-373](assets/chlimage_1-373.png)
 
-1. 按一下「儲存」和「關閉」，分別完成資產處理並返回「卡片檢視」。**[!UICONTROL ****]**]****[!UICONTROL 
+1. 按一下「儲存」和「關閉」，分別完成資產處理並返回「卡片檢視」。************
 1. 處理完成時，您會在&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;中看到下列內容：
 
    ![chlimage_1-374](assets/chlimage_1-374.png)
