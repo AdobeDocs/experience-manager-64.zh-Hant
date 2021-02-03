@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+source-git-commit: 770e435f41102b2d795c88cbb361de510564d319
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 1%
@@ -52,7 +52,7 @@ ht-degree: 1%
 >
 >即使啟用了用戶同步，***administrators** *group也不支援同步。 相反，錯誤日誌中將記錄「導入差異」失敗。
 >
->因此，當部署為發佈群時，如果將用戶添加到***administrators** *group或從*&lt;a0/>管理員中刪除，則必須在每個發佈實例上手動進行修改。
+>因此，當部署為發佈群時，如果將用戶添加到***administrators** *group或從*管理員中刪除，則必須在每個發佈實例上手動進行修改。
 
 ## 啟用用戶同步{#enable-user-sync}
 
@@ -171,7 +171,7 @@ ht-degree: 1%
    * 訪問[Web控制台](/help/sites-deploying/configuring-osgi.md)
 
       * 例如[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-   * 找到`Adobe Granite Distribution - Encrypted Password Transport Secret Provider`
+   * 找到`com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * 選取要開啟以進行編輯的現有設定（鉛筆圖示）
 
       驗證 `property name` : **`socialpubsync-publishUser`**
@@ -503,7 +503,7 @@ ht-degree: 1%
 
 #### (publish)One Apache Sling Distribution Agent - Queue Agents Factory {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### (publish)一個Adobe Granite Distribution —— 比較觀察工廠{#publish-one-adobe-granite-distribution-diff-observer-factory}
 
