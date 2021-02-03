@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '2779'
+source-wordcount: '2786'
 ht-degree: 6%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 6%
 
 這些元件如下所示：
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ### 標題 (行銷活動) {#heading-campaign}
 
@@ -51,7 +51,7 @@ ht-degree: 6%
 
 您可以直接編輯&#x200B;**標題（促銷活動）**&#x200B;元件。 留空將使用頁面標題。
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 您可以設定下列項目：
 
@@ -181,13 +181,13 @@ ht-degree: 6%
 
 ### Scene7 影像範本 (行銷活動) {#scene-image-template-campaign}
 
-[Scene7 Image ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Template是分層的影像檔案，其中內容和屬性可以參數化，以利變數。**影像範本**&#x200B;元件可讓您在電子報中使用Scene7範本，並變更範本參數的值。 此外，您可以在參數內使用Adobe Campaign中繼資料變數，讓每位使用者都能以個人化方式體驗影像。
+[Scene7 Image ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) Template是分層的影像檔案，其中內容和屬性可以參數化，以利變數。**影像範本**&#x200B;元件可讓您在電子報中使用Dynamic Media Classic（之前稱為Scene7）範本，並變更範本參數的值。 此外，您可以在參數內使用Adobe Campaign中繼資料變數，讓每位使用者都能以個人化方式體驗影像。
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-按一下&#x200B;**編輯**&#x200B;配置元件。 您可以設定本節所述的設定。 [Scene7 Image Template元件](/help/assets/scene7.md#image-template)中詳細說明了此Scene7 Image範本。
+按一下&#x200B;**編輯**&#x200B;配置元件。 您可以設定本節所述的設定。 [Scene7 Image Template元件](/help/assets/scene7.md#image-template)中詳細說明此Dynamic Media Classic（先前稱為Scene7）影像範本。
 
-此外，參數面板會列出已在Scene7中為範本定義的所有範本參數。 對於這些參數，您可以調整值、插入變數或將它們重設為預設值。
+此外，參數面板會列出在Dynamic Media Classic（舊稱Scene7）中為範本定義的所有範本參數。 對於這些參數，您可以調整值、插入變數或將它們重設為預設值。
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -268,7 +268,7 @@ ht-degree: 6%
 
 選取圖示可讓您設定文字的格式，包括字型特性、對齊方式、連結、清單和縮排。 在[兩個UI中，功能基本相同，但外觀和感覺不同：](/help/sites-authoring/editing-content.md)
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 在就地編輯器中，您可以新增文字、變更對齊方式、新增和移除連結、新增內容欄位或個人化區塊，以及進入全螢幕模式。 新增文字／個人化後，選取核取標籤以儲存變更（或x以取消）。 如需詳細資訊，請參閱[就地編輯](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。
 
