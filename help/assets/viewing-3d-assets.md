@@ -1,19 +1,15 @@
 ---
 title: 檢視3D資產
-seo-title: 檢視3D資產
 description: 瞭解AEM中資產詳細資訊頁面提供的互動式3D檢視器，以及如何使用它檢視3D資產。
-seo-description: 瞭解AEM中資產詳細資訊頁面提供的互動式3D檢視器，以及如何使用它檢視3D資產。
-uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 0%
+source-wordcount: '1778'
+ht-degree: 2%
 
 ---
 
@@ -22,13 +18,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更新版本。](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) 檢視3D資產。
+>不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更新版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) 檢視3D資產。
 
 本檔案說明如何在資產詳細資料中檢視3D資產，以及如何在網站中檢視3D元件中的資產。
 
 ## 在「資產詳細資訊」頁面{#viewing-d-assets-in-the-asset-details-page}中查看3D資產
 
-您可從AEM的資產詳細資訊頁面取得互動式3D檢視器。 檢視器除了其他功能外，還包含一系列互動式相機控制項，可讓您環繞、縮放和平移3D資產。
+您可從 AEM 中的資產詳細資訊頁面取得互動式 3D 檢視器。這個檢視器還包含一系列互動式相機控制項，可用來環繞、縮放和平移 3D 資產。
 
 ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -170,9 +166,9 @@ ht-degree: 0%
 
 1. 使用雙指向下或向上拖曳觸摸板按鈕，將相機向上或向上移動，使相機離物件更近或更遠。 此動作類似於放大或縮小，並允許檢查對象的詳細資訊。 或者，按一下並按住&#x200B;**[!UICONTROL 「放大」或**[!UICONTROL 「縮小」按鈕，讓攝影機離物件更近或更遠。]**]**
 
-1. 按住&#x200B;**ALT/option**&#x200B;鍵和（左）觸摸板按鈕，單指拖曳即可平移相機。 此動作會橫向移動相機，讓您在放大時檢視物件的不同部分。 或者，按一下「軌道／平移切換」按鈕，切換至「平移」模式，然後按住（左）按鈕，使用單指拖曳來平移相機。 ********&#x200B;再次按一下「軌道／平移切換」按鈕以回復為「軌道」模式。]****[!UICONTROL ****
+1. 按住&#x200B;**ALT/option**&#x200B;鍵和（左）觸摸板按鈕，單指拖曳即可平移相機。 此動作會橫向移動相機，讓您在放大時檢視物件的不同部分。 或者，按一下「軌道／平移切換」按鈕，切換至「平移」模式，然後按住（左）按鈕，使用單指拖曳來平移相機。 ********&#x200B;再次按一下「軌道／平移切換」按鈕以回復為「軌道」模式。********
 
-1. 按一下「重設檢視器」，重設相機。 ]****[!UICONTROL &#x200B;此動作會將物件重新帶入完整檢視，如果啟用，則會繼續自動回轉。
+1. 按一下「重設檢視器」，重設相機。 ****&#x200B;此動作會將物件重新帶入完整檢視，如果啟用，則會繼續自動回轉。
 
 1. 按一下&#x200B;**[!UICONTROL 全屏]**&#x200B;進入全屏模式。 使用鍵盤上的&#x200B;**Escape**&#x200B;鍵或再次按一下&#x200B;**[!UICONTROL 全屏]**&#x200B;將3D查看器恢復為頁面嵌入模式。
 
@@ -184,7 +180,7 @@ ht-degree: 0%
 
 1. 使用滾輪將相機移至離物件更近或更遠的位置。 這類似於放大或縮小，可讓您檢查物件的詳細資訊。 或者，按一下並按住&#x200B;**[!UICONTROL 「放大」或**[!UICONTROL 「縮小」按鈕，讓攝影機離物件更近或更遠。]**]**
 
-1. 按住&#x200B;**ALT/option**&#x200B;鍵和滑鼠左鍵拖動攝像頭。 這樣可橫向移動照相機以允許在放大時查看對象的不同部分。 或者，按一下「軌道／平移切換」按鈕，切換至「平移」模式，然後按住滑鼠左鍵拖曳以平移相機。 ********&#x200B;再次按一下「軌道／平移」切換&#x200B;**[!UICONTROL 「軌道／平移」以回復為「軌道」模式。]******
-1. 按一下「重設檢視器」，重設相機。 ]****[!UICONTROL &#x200B;此動作會將物件重新帶入完整檢視，如果啟用，則會繼續自動回轉。
+1. 按住&#x200B;**ALT/option**&#x200B;鍵和滑鼠左鍵拖動攝像頭。 這樣可橫向移動照相機以允許在放大時查看對象的不同部分。 或者，按一下「軌道／平移切換」按鈕，切換至「平移」模式，然後按住滑鼠左鍵拖曳以平移相機。 ********&#x200B;再次按一下「軌道／平移」切換&#x200B;**[!UICONTROL 「軌道／平移」以回復為「軌道」模式。****]**
+1. 按一下「重設檢視器」，重設相機。 ****&#x200B;此動作會將物件重新帶入完整檢視，如果啟用，則會繼續自動回轉。
 1. 按一下&#x200B;**[!UICONTROL 全屏]**&#x200B;進入全屏模式。 使用鍵盤上的&#x200B;**[!UICONTROL Escape]**&#x200B;鍵或再次按一下&#x200B;**[!UICONTROL 全屏]**&#x200B;將3D查看器恢復為頁面嵌入模式。
 
