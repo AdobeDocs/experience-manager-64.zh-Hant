@@ -1,16 +1,16 @@
 ---
 title: Forms JEE工作流程 |處理使用者資料
 seo-title: Forms JEE工作流程 |處理使用者資料
-description: 'null'
-seo-description: 'null'
+description: AEM Forms JEE工作流程提供設計、建立和管理商業程式的工具。 進一步瞭解如何存取和刪除使用者資料、在已知工作流程啟動者或參與者時識別處理例項ID、在將使用者資料儲存在基本變數時識別處理例項ID、根據處理例項ID清除工作流程例項中的使用者資料，以及處理孤立工作。
+seo-description: AEM Forms JEE工作流程提供設計、建立和管理商業程式的工具。 進一步瞭解如何存取和刪除使用者資料、在已知工作流程啟動者或參與者時識別處理例項ID、在將使用者資料儲存在基本變數時識別處理例項ID、根據處理例項ID清除工作流程例項中的使用者資料，以及處理孤立工作。
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
