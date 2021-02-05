@@ -1,16 +1,16 @@
 ---
 title: 表單使用者管理 |處理使用者資料
 seo-title: 表單使用者管理 |處理使用者資料
-description: 'null'
-seo-description: 'null'
+description: 使用者管理是AEM Forms JEE元件，可讓AEM Forms使用者建立、管理和授權存取AEM Forms。 深入瞭解使用者資料和資料儲存。 瞭解如何存取和刪除使用者資料。
+seo-description: 使用者管理是AEM Forms JEE元件，可讓AEM Forms使用者建立、管理和授權存取AEM Forms。 深入瞭解使用者資料和資料儲存。 瞭解如何存取和刪除使用者資料。
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 #### 訪問用戶資料{#access-user-data}
 
-若要檢視在AEM儲存庫中建立的使用者，請使用AEM管理員認證登入`https://[*server*]:[*port*]/lc/useradmin`。 請注意，URL中的`*server*`和`*port*`是AEM作者例項的&lt;a0/>。 您可以在這裡使用使用者名稱來搜尋使用者。 連按兩下使用者，即可檢視使用者的屬性、權限和群組等資訊。 使用者的`Path`屬性會指定在AEM儲存庫中建立的使用者節點路徑。
+若要檢視在AEM儲存庫中建立的使用者，請使用AEM管理員認證登入`https://[*server*]:[*port*]/lc/useradmin`。 請注意，URL中的`*server*`和`*port*`是AEM作者例項的。 您可以在這裡使用使用者名稱來搜尋使用者。 連按兩下使用者，即可檢視使用者的屬性、權限和群組等資訊。 使用者的`Path`屬性會指定在AEM儲存庫中建立的使用者節點路徑。
 
 #### 刪除用戶資料{#delete-aem}
 
