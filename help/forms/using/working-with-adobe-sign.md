@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
+source-git-commit: 12d64aebbe769c0b3fa7c721e7fbac547d320f67
 workflow-type: tm+mt
-source-wordcount: '3569'
+source-wordcount: '3592'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ Adobe Sign與AEM Forms的整合支援：
 * 以匿名或登入使用者身分簽署表格
 * 動態簽署程式（與AEM Forms工作流程整合）
 * 透過知識庫、電話和社交個人檔案進行驗證
+
+瞭解使用Adobe Sign搭配最適化表單](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684)以建立更佳簽署體驗的最佳範例。[
 
 ## 必備條件 {#prerequisites}
 
@@ -80,7 +82,7 @@ Adobe Sign與AEM Forms的整合支援：
 
       >[!NOTE]
       >
-      >**[!UICONTROL Adobe Sign Cloud Service]**&#x200B;下拉式清單會顯示您在此欄位中選取之組態容器中設定的雲端服務。 當您選取「啟用Adobe Sign ]**」選項時，最適化表單屬性的「電子簽名」區段中會提供**[!UICONTROL  Adobe Sign Cloud Service ]**下拉式清單。**[!UICONTROL ****
+      >**[!UICONTROL Adobe Sign Cloud Service]**&#x200B;下拉式清單會顯示您在此欄位中選取之組態容器中設定的雲端服務。 當您選取「啟用Adobe Sign ]**」選項時，最適化表單屬性的「電子簽名」區段中會提供**[!UICONTROL  Adobe Sign Cloud Service ]**下拉式清單。******[!UICONTROL 
 
 1. 在&#x200B;**[!UICONTROL 表單模型]**&#x200B;標籤中，選擇以下選項之一：
 
