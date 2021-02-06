@@ -36,7 +36,7 @@ Sling Resource Merger提供存取和合併資源的服務。 它為兩者提供�
 
 >[!CAUTION]
 >
->Sling Resource Merger及相關方法僅能與[Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)搭配使用。 這也表示它僅適用於標準的觸控式使用者介面；尤其是，以此方式定義的覆蓋僅適用於元件的觸控式對話框。
+>Sling Resource Merger和相關方法僅能與[Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)搭配使用。 這也表示它僅適用於標準的觸控式使用者介面；尤其是，以此方式定義的覆蓋僅適用於元件的觸控式對話框。
 >
 >其他區域的覆蓋／覆寫（包括可觸控元件或傳統UI的其他方面）包括將適當的節點和結構從原始節點複製到定義自訂的位置。
 
@@ -253,7 +253,7 @@ Sling Resource Merger包含兩個自訂資源提供者——一個用於覆蓋�
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
 
-* 覆寫：
+* 覆寫:
 
    * 目的：根據超類型合併資源
    * 裝載點：`/mnt/overide`
@@ -271,7 +271,7 @@ Sling Resource Merger包含兩個自訂資源提供者——一個用於覆蓋�
    * [自定義控制台](/help/sites-developing/customizing-consoles-touch.md)
    * [自訂頁面編寫](/help/sites-developing/customizing-page-authoring-touch.md)
 
-* 覆寫：
+* 覆寫:
 
    * [設定您的頁面屬性](/help/sites-developing/page-properties-views.md#configuring-your-page-properties)
 
