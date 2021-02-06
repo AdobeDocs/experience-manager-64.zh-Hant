@@ -418,7 +418,7 @@ AEM中有[兩個UI](/help/sites-authoring/select-ui.md)可用：
 
 * **傳送資料的URL** 會設定用於追蹤頁面統計資料的URL（如果追蹤器要求經過發送器，此點至關重要）;例如，預設值為 `http://localhost:4502/libs/wcm/stats/tracker`。
 
-* **啟用追** 蹤指令碼以啟用( `true`)或停用( `false`)頁面上包含追蹤指令碼。預設值為`false`。
+* **啟用追** 蹤指令碼以啟用( `true`)或停用( `false`)頁面上包含追蹤指令碼。預設值為 `false`.
 
 >[!NOTE]
 >
