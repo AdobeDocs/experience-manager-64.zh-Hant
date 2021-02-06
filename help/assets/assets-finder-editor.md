@@ -332,7 +332,7 @@ AEM Assets包含許多可新增至「資產共用」頁面的謂詞。 這些功
 
 #### 縮圖 {#thumbnail}
 
-Thumbnail元件是資產顯示所選縮圖的位置（對於許多格式，會自動擷取縮圖）。 此外，元件還顯示檔案名和可修改的[操作。](assets-finder-editor.md#adding-asset-editor-actions)
+Thumbnail元件是資產顯示所選縮圖的位置（對於許多格式，會自動擷取縮圖）。 此外，元件還顯示檔案名和可修改的](assets-finder-editor.md#adding-asset-editor-actions)操作。[
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
@@ -406,9 +406,9 @@ Thumbnail元件是資產顯示所選縮圖的位置（對於許多格式，會�
 
    若要選取資產範圍：按一下第一個資產，然後按一下`Shift + click`最後一個資產。
 
-1. 在&#x200B;]**動作**&#x200B;欄位（頁面左側）中按一下「編輯中繼資料&#x200B;**[!UICONTROL 」。**
+1. 在&#x200B;**動作**&#x200B;欄位（頁面左側）中按一下「編輯中繼資料&#x200B;]**」。**[!UICONTROL 
 
-1. 「Geometrixx **[!UICONTROL Press Center Asset Editor]**」（Geometrixx &lt;a0/>按中心資產編輯器&lt;a1/>）頁面會在新標籤中開啟。 資產的中繼資料顯示如下：
+1. 「Geometrixx **[!UICONTROL Press Center Asset Editor]**」（Geometrixx 按中心資產編輯器）頁面會在新標籤中開啟。 資產的中繼資料顯示如下：
 
    * 標籤（不適用於所有資產，但僅適用於少數資產）會以斜體顯示。
    * 套用至所有資產的標籤會以一般字型顯示。
