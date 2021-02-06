@@ -190,5 +190,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱標準製作說明檔案中「使用Adobe Campaign 6.1和Adobe Campaign Standard」下的「將AEM與Adobe Campaign Standard和Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic)連結」。[](/help/sites-authoring/campaign.md)[
+>如需詳細資訊，請參閱標準製作說明檔案中「使用Adobe Campaign 6.1和Adobe Campaign Standard」下的「將AEM與Adobe Campaign Standard和Adobe Campaign 6.1](/help/sites-authoring/campaign.md#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic)連結」。[[](/help/sites-authoring/campaign.md)
 
