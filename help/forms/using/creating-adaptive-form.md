@@ -148,7 +148,7 @@ XML和JSON結構描述資料由組織中的後端系統產生或使用的結構�
 
 ## 最適化表單範本{#adaptive-form-templates}
 
-範本提供基本結構並定義最適化表單的外觀（版面和樣式）。 它具有預先格式化的元件，其中包含某些屬性和內容結構。 AEM Forms現成可用，提供一些最適化表單範本。 若要取得包含進階範本的完整範本套件，您必須安裝AEM Forms附加元件套件。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件[」。](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+範本提供基本結構並定義最適化表單的外觀（版面和樣式）。 它具有預先格式化的元件，其中包含某些屬性和內容結構。 AEM Forms現成可用，提供一些最適化表單範本。 若要取得包含進階範本的完整範本套件，您必須安裝AEM Forms附加元件套件。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件](/help/forms/using/installing-configuring-aem-forms-osgi.md)」。[
 
 此外，您也可以使用範本編輯器來建立自己的範本。 有關使用模板的詳細資訊，請參閱[最適化表單模板](/help/forms/using/template-editor.md)。
 
