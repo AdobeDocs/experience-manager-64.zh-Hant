@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
 workflow-type: tm+mt
 source-wordcount: '457'
-ht-degree: 3%
+ht-degree: 11%
 
 ---
 
@@ -87,6 +87,6 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。
+>由於 Adobe Analytics API 中的安全性變更，AEM 中包含的 Activity Map 版本已無法再使用。
 >
->Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式現在應該使用。
+>Adobe Analytics](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式現在應該使用。
