@@ -48,7 +48,7 @@ AEM Mobile只是構成完整AEM平台的一個支柱。
 
 ## 作者的QuickLinks {#quicklinks-for-authors}
 
-請參閱AEM[中的「編寫Adobe PhoneGap企業版」，以瞭解作者的角色和責任。](/help/mobile/phonegap.md)
+請參閱AEM](/help/mobile/phonegap.md)中的「編寫Adobe PhoneGap企業版」，以瞭解作者的角色和責任。[
 
 ## 開發人員的QuickLinks {#quicklinks-for-developers}
 
