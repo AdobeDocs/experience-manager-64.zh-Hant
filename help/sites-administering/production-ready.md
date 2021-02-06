@@ -28,7 +28,7 @@ ht-degree: 3%
 >
 >由於AEM Production Ready Mode僅涵蓋保護例項所需的大部分工作，因此強烈建議您先參閱[安全性檢查清單](/help/sites-administering/security-checklist.md)，再與生產環境一起上線。
 >
->此外，請注意，在「生產就緒模式」中執行AEM將有效停用對CRXDE Lite的存取。 如果您需要它以進行除錯，請參閱「在AEM[中啟用CRXDE Lite」。](/help/sites-administering/enabling-crxde-lite.md)
+>此外，請注意，在「生產就緒模式」中執行AEM將有效停用對CRXDE Lite的存取。 如果您需要它以進行除錯，請參閱「在AEM](/help/sites-administering/enabling-crxde-lite.md)中啟用CRXDE Lite」。[
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
