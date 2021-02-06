@@ -251,7 +251,7 @@ Facebook和Twitter的後續步驟相同：
 [Adobe Granite OAuth應用程式和Provider](#adobe-granite-oauth-application-and-provider)例項會透過建立雲端服務組態來實例化，以識別新增使用者的Twitter應用程式和成員群組。
 
 1. 在作者例項上，以管理員權限登入。
-1. 在全域導覽中，選取「工具>雲端服務> Twitter社交登入設定&#x200B;**[!UICONTROL 」。]**
+1. 在全域導覽中，選取「工具>雲端服務> Twitter社交登入設定&#x200B;]**」。**[!UICONTROL 
 1. 選擇&#x200B;**[!UICONTROL 上下文路徑]**&#x200B;配置。
 
    上下文路徑應與您在建立／編輯社群網站時選取的雲端設定路徑相同。
@@ -354,7 +354,7 @@ Facebook和Twitter的後續步驟相同：
 * 在瀏覽器中啟動發佈的網站
 例如，http://localhost:4503/content/sites/engage/en.html
 * 選擇&#x200B;**[!UICONTROL 登入]**
-* 選擇「使用Facebook登入」或「使用Twitter登入」]**]****[!UICONTROL **[!UICONTROL 
+* 選擇「使用Facebook登入」或「使用Twitter登入」********
 * 如果尚未登入Facebook或Twitter，請使用適當的認證登入
 * 根據Facebook或Twitter應用程式顯示的對話方塊，可能需要授與權限
 * 請注意，頁面頂端的工具列已更新，以反映成功登入
@@ -463,7 +463,7 @@ Facebook和Twitter的後續步驟相同：
    * **[!UICONTROL indexPath]**:/oak:index/ntBaseLucene-oauth
    * **[!UICONTROL 名稱]**:oauthid-123xxxx
    * **[!UICONTROL reindex]**:true
-   * **[!UICONTROL reindexCount]**:1
+   * **[!UICONTROL reindexCount]**:3
 
 1. 在node /oak:index/ntBaseLucene-oauth/indexRules/nt:base/properties下：
 
