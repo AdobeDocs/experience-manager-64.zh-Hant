@@ -12,14 +12,14 @@ translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # 建立最適化表單的自訂版面元件{#creating-custom-layout-components-for-adaptive-forms}
 
-## 先決條件{#prerequisite}
+## 必備條件 {#prerequisite}
 
 瞭解版面，讓您建立／使用自訂版面。 請參閱[變更面板版面](/help/forms/using/layout-capabilities-adaptive-forms.md)。
 
