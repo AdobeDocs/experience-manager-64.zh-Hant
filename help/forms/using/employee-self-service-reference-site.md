@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 員工自助服務參考網站逐步介紹{#employee-self-service-reference-site-walkthrough}
 
-## 先決條件{#prerequisite}
+## 必備條件 {#prerequisite}
 
 依照[設定和設定AEM Forms參考網站](/help/forms/using/setup-reference-sites.md)中所述，設定參考網站。
 
