@@ -1,6 +1,6 @@
 ---
-title: 在外部網頁中內嵌最適化表單
-seo-title: 在外部網頁中內嵌最適化表單
+title: 在外部網頁中內嵌適用性表單
+seo-title: 在外部網頁中內嵌適用性表單
 description: 瞭解如何在外部網頁中內嵌最適化表單
 seo-description: 瞭解如何在外部HTML網頁中內嵌最適化表單
 uuid: c612ca3b-62f7-4021-939b-e0c05dbbf0d7
@@ -11,12 +11,12 @@ translation-type: tm+mt
 source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1054'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# 在外部網頁中內嵌最適化表單{#embed-adaptive-form-in-external-web-page}
+# 在外部網頁中內嵌適用性表單{#embed-adaptive-form-in-external-web-page}
 
 瞭解如何在外部網頁中內嵌最適化表單
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 在將最適化表單內嵌至外部網站之前，請執行下列步驟：
 
 * 在AEM Publish實例上發佈最適化表單。
-* 在您的網站上建立或識別網頁以代管最適化表單。 請確定網頁可從CDN[讀取jQuery檔案，或內嵌jQuery的本機副本。 ](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js)需要有jQuery才能轉換最適化表單。
+* 在您的網站上建立或識別網頁以代管最適化表單。 請確定網頁可從CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js)讀取jQuery檔案，或內嵌jQuery的本機副本。 [需要有jQuery才能轉換最適化表單。
 * 當AEM伺服器和網頁位於不同網域時，請執行章節中所列的步驟，[讓AEM Forms為跨網域網站](#cross-domain-sites)提供最適化表單。
 * [設定反向](#reveseproxy) 代碼，以啟用外部頁面與AEM Forms伺服器之間的通訊。
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 1. 在內嵌的程式碼中：
 
    * 變更`options.path`變數的值，並變更最適化表單的發佈URL路徑。 如果AEM伺服器是在內容路徑上執行，請確定URL包含內容路徑。 例如，上述程式碼和adaptive from位於相同的aem表單伺服器上，因此此範例使用adaptive form /content/forms/af/locbasic.html的上下文路徑。
-   * 將`options.dataRef`取代為要以URL傳遞的屬性。 您可以使用dataref變數來預填最適化表單[。](/help/forms/using/prepopulate-adaptive-form-fields.md)
+   * 將`options.dataRef`取代為要以URL傳遞的屬性。 您可以使用dataref變數來預填最適化表單](/help/forms/using/prepopulate-adaptive-form-fields.md)。[
    * 以主題的路徑取代`options.themePath`，而非在最適化表單中設定的主題。 或者，您也可以使用request屬性來指定主題路徑。
    * `CSS_Selector` 是內嵌最適化表單之表單容器的CSS選取器。例如，.customafsection css類是上述範例中的CSS選擇器。
 
