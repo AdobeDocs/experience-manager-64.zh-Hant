@@ -294,7 +294,7 @@ Adobe Analytics可針對AEM Communities進行設定，如此當會員與支援�
 
 ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. 選擇「Add Item +**[!UICONTROL （添加項目+&lt;a1/>）」將出現兩個下拉框]**
+1. 選擇「Add Item +]**（添加項目+**[!UICONTROL ）」將出現兩個下拉框
 1. 選擇`Report suite`與公司帳戶關聯的報表套裝可供選擇
 1. 在開啟的對話框中選擇&#x200B;**[!UICONTROL 是]**:```Load default server settings? Do you want to load the default server settings and overwrite current values in the Server section?```
 1. 選擇`Run Mode`\
@@ -314,7 +314,7 @@ Analytic雲端服務與架構現已完成。 在啟用此Analytics服務後建�
 * 在步驟3中
 * 在[ANALYTICS標籤](sites-console.md#analytics)下：
 
-   * 勾選「啟用Analytics **[!UICONTROL 」核取方塊]**
+   * 勾選「啟用Analytics ]**」核取方塊**[!UICONTROL 
    * 從下拉式方塊中選擇架構
 
 * （可選）返回Analytics架構設定以調整變數映射。
@@ -329,7 +329,7 @@ Analytic雲端服務與架構現已完成。 在啟用此Analytics服務後建�
 * 選取「設定」
 * 在「分析」區段中：
 
-   * 勾選「啟用Analytics **[!UICONTROL 」核取方塊]**
+   * 勾選「啟用Analytics ]**」核取方塊**[!UICONTROL 
    * 從下拉式方塊中選擇架構
 
 
