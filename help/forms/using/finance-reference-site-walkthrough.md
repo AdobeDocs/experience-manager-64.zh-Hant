@@ -122,7 +122,7 @@ Sarah按一下&#x200B;**[!UICONTROL Send mail]**。 她收到一封電子郵件�
 
 ### 親自查看{#a-see-it-yourself}
 
-當以Sarah Rose的身分登入時，按一下信用卡應用程式上的&#x200B;**[!UICONTROL Apply now]**&#x200B;按鈕。 填寫一些詳細資訊，探索各種調適性表單元件，然後按一下「儲存我的進度&#x200B;**[!UICONTROL 」，以收到電子郵件，內含連結至草稿應用程式的]**&#x200B;繼續&#x200B;**[!UICONTROL 按鈕。]**&#x200B;請確定您在應用程式表單中指定您的電子郵件ID以接收電子郵件。
+當以Sarah Rose的身分登入時，按一下信用卡應用程式上的&#x200B;**[!UICONTROL Apply now]**&#x200B;按鈕。 填寫一些詳細資訊，探索各種調適性表單元件，然後按一下「儲存我的進度&#x200B;]**」，以收到電子郵件，內含連結至草稿應用程式的**[!UICONTROL &#x200B;繼續&#x200B;]**按鈕。**[!UICONTROL &#x200B;請確定您在應用程式表單中指定您的電子郵件ID以接收電子郵件。
 
 請參閱We.Finance主題：
 
@@ -442,7 +442,7 @@ OSGi上的AEM Forms提供以表單為中心的工作流程，讓您建立以表�
 
 #### 親自查看{#see-it-yourself-7}
 
-您可以存取https://&lt;***hostname***>的AEM收件匣：***AuthorPort***/content/we-finance/global/en/login.html?resource=/aem/inbox.html。 使用`grios/password`作為Gloria Rios的使用者名稱／密碼，以及`jdoe/jdoe`作為John Doe的&lt;a1/>登入AEM收件匣，並探索房屋抵押申請工作流程。
+您可以存取https://&lt;***hostname***>的AEM收件匣：***AuthorPort***/content/we-finance/global/en/login.html?resource=/aem/inbox.html。 使用`grios/password`作為Gloria Rios的使用者名稱／密碼，以及`jdoe/jdoe`作為John Doe的登入AEM收件匣，並探索房屋抵押申請工作流程。
 
 如需有關將AEM Inbox用於表單導向工作流程工作的詳細資訊，請參閱「在AEM Inbox中管理表單應用程式和工作」](/help/forms/using/manage-applications-inbox.md)。[
 
@@ -678,7 +678,7 @@ We.Finance家庭保險方案涉及以下人員：
 
 #### 親自查看{#see-it-yourself-11}
 
-開啟下列URL以觸發電子報電子郵件。 請確定您以有效的電子郵件帳戶取代`[emailID]`以接收電子報。 開啟電子報，然後按一下「立即套用」，前往家庭保險申請。]****[!UICONTROL 
+開啟下列URL以觸發電子報電子郵件。 請確定您以有效的電子郵件帳戶取代`[emailID]`以接收電子報。 開啟電子報，然後按一下「立即套用」，前往家庭保險申請。****
 
 `https://[authorServer]:[authorPort]/content/campaigns/we-finance/start.html?app=ins&email=[emailID]&givenName=Sarah&familyName=Rose`
 
