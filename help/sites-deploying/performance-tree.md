@@ -42,11 +42,11 @@ ht-degree: 4%
 
 ### 區段 3 {#section-2}
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### 區段 4 {#section-3}
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### 第5節{#section-4}
 
@@ -199,7 +199,7 @@ ht-degree: 4%
      <li><a href="/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing">併發工作流處理</a></li> 
      <li><a href="/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow">為特定工作流配置隊列</a></li> 
      <li><a href="/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances">定期清除工作流實例</a></li> 
-     <li><a href="/help/sites-developing/workflows.md#transient-workflows">瞬態工作流程</a><br /> </li> 
+     <li><a href="/help/sites-developing/workflows.md#transient-workflows">暫時性工作流程</a><br /> </li> 
     </ul> <p> </p> </td> 
   </tr> 
   <tr> 
