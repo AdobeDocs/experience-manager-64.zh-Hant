@@ -32,7 +32,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 >個別的rtePlugins節點稱為&lt;*rtePlugins-node*，以避免在本文中重複。
 
 1. 使用CRXDE Lite，找出專案的文字元件。
-1. 如果`<rtePlugins-node>`的父節點不存在，請先建立&lt;a0/>的父節點，然後再配置任何RTE插件：
+1. 如果`<rtePlugins-node>`的父節點不存在，請先建立的父節點，然後再配置任何RTE插件：
 
    * 根據您的元件，父節點包括：
 
@@ -122,7 +122,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
 
    `/apps/<myProject>/components/text`
 
-1. 導航至節點`rtePlugins/edit`。 如果節點不存在，請參見[激活插件](#activateplugin)。
+1. 導航到節點`rtePlugins/edit`。 如果節點不存在，請參見[激活插件](#activateplugin)。
 1. 在`edit`節點上建立`features`屬性，並添加一個或多個功能。 儲存所有變更。
 
 ### 設定「貼上」(Ctrl+V)圖示和捷徑{#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}的行為
@@ -475,7 +475,7 @@ RTE功能可透過一系列外掛程式提供，每個外掛程式都包含featu
    * **名稱** `rangeStart`
 
       **類型** `Long`
-      **估** 值范 [](https://unicode.org/) 圍中第一個字元的Unicoderepresentation(decimal)
+      **估** 值范 [](https://unicode.org/) 圍中第一個字元的Unicodederepresentation(decimal)
 
    * **名稱** `rangeEnd`
 
