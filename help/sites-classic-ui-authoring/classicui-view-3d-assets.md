@@ -1,8 +1,8 @@
 ---
 title: 檢視3D資產
 seo-title: 檢視3D資產
-description: 您可從AEM的資產詳細資訊頁面取得互動式3D檢視器。 檢視器除了其他功能外，還包含一系列互動式相機控制項，可讓您環繞、縮放和平移3D資產。
-seo-description: 您可從AEM的資產詳細資訊頁面取得互動式3D檢視器。 檢視器除了其他功能外，還包含一系列互動式相機控制項，可讓您環繞、縮放和平移3D資產。
+description: 您可從 AEM 中的資產詳細資訊頁面取得互動式 3D 檢視器。這個檢視器還包含一系列互動式相機控制項，可用來環繞、縮放和平移 3D 資產。
+seo-description: 您可從 AEM 中的資產詳細資訊頁面取得互動式 3D 檢視器。這個檢視器還包含一系列互動式相機控制項，可用來環繞、縮放和平移 3D 資產。
 uuid: 06dea4d6-c33a-45da-a9a7-7caae9d1717a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 0%
+ht-degree: 10%
 
 ---
 
 
 # 檢視3D資產{#viewing-d-assets}
 
-您可從AEM的資產詳細資訊頁面取得互動式3D檢視器。 檢視器除了其他功能外，還包含一系列互動式相機控制項，可讓您環繞、縮放和平移3D資產。
+您可從 AEM 中的資產詳細資訊頁面取得互動式 3D 檢視器。這個檢視器還包含一系列互動式相機控制項，可用來環繞、縮放和平移 3D 資產。
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
