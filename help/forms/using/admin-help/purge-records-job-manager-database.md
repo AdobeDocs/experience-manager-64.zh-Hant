@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 從作業管理器資料庫{#purge-records-from-the-job-manager-database}中清除記錄
+# 從作業管理器資料庫{#purge-records-from-the-job-manager-database}清除記錄
 
 在呼叫長期處理時產生的處理資料可能會過大，導致AEM表單效能降低，並使用不必要的磁碟空間。 在不再需要記錄時清除流程資料是很好的做法。
 
