@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -95,7 +95,7 @@ SPA的頁面元件不會透過JSP或HTL檔案與資源物件提供其子元件�
 >
 >本檔案僅將We.Retail Journal應用程式用於展示用途。 它不應用於任何項目工作。
 >
->任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。AEM上的所有SPA專案都應以SPA Starter Kit的Maven Archetype為基礎。
+>任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。AEM上的所有SPA專案都應以SPA Starter Kit的Maven Archetype為基礎。
 
 ## 頁面編輯器覆蓋同步{#page-editor-overlay-synchronization}
 
