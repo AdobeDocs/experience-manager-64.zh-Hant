@@ -41,14 +41,14 @@ ht-degree: 6%
 | `Cq561ProjectContentUpgrade` | &lt; 5=&quot;&quot;> | 立即 |  |
 | `Cq60MSMContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 檢測`VersionStorage`中所有已刪除的`LiveRelationShips`，並將排除屬性添加到父級 |
 | `Cq61CloudServicesContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 依預設設定重新架構雲端服務以確保安全 |
-| `Cq62ConfContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 刪除從&#x200B;**/content**&#x200B;到&#x200B;**/conf**（由OSGi機制替換）的基於屬性的連結，生成相應的OSGi配置 |
+| `Cq62ConfContentUpgrade` | &lt; 6.2 | 立即 | 刪除從&#x200B;**/content**&#x200B;到&#x200B;**/conf**（由OSGi機制替換）的基於屬性的連結，生成相應的OSGi配置 |
 | `Cq62FormsContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 由於merge_preserve依預設會處理保全拒絕規則會覆寫指定的權限，因此需要在升級時重新排序 |
 | `CQ62Html5SmartFileUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 偵測使用Html5SmartFile介面工具集的元件，搜尋元件在內容中的使用實例並重新建構永續性，有效地將二進位檔移至下一層級，而不將其儲存在元件層級。 |
 | `Cq62ProjectsCodeUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 將舊樣式項目從&#x200B;**/etc/projects**&#x200B;移至&#x200B;**/content/projects** |
 | `Cq62TargetCampaignsContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 將容器圖層引入階層（區域）並調整參照。 |
 | `Cq62TargetContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 將固定位置名稱設定為目標元件。 |
 | `Cq62WorkflowContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 對6.2結構、實例、通知之前的工作流模型進行複雜的轉換，然後從&#x200B;**/var/backup**&#x200B;的備份位置合併回來 |
-| `CQ63AssetsMetadataFormsUpdate` | &lt; 6=&quot;&quot;> | 立即 | 將資產、自訂中繼資料結構描述和處理描述檔從&#x200B;**/apps**&#x200B;移至&#x200B;**/conf**，並將中繼資料結構描述檔和中繼資料結構描述檔表單從coral2轉譯至coral3。 |
+| `CQ63AssetsMetadataFormsUpdate` | &lt; 6.3 | 立即 | 將資產、自訂中繼資料結構描述和處理描述檔從&#x200B;**/apps**&#x200B;移至&#x200B;**/conf**，並將中繼資料結構描述檔和中繼資料結構描述檔表單從coral2轉譯至coral3。 |
 | `CQ63AssetsSearchFacetsUpdate` | &lt; 6=&quot;&quot;> | 立即 | 將資產和自訂搜尋刻面從&#x200B;**/apps**&#x200B;移至&#x200B;**/conf**，並將中繼資料架構和中繼資料描述檔表單從coral2轉譯至coral3。 |
 | `CQ63InboxItemsUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 更新收件箱項目以對收件箱項目進行排序（調整元資料以有效排序） |
 | `CQ63MetadataSchemaConfigUpdate` | &lt; 6=&quot;&quot;> | 立即 | 調整資料夾上的metadataSchema屬性，方法是將相對路徑取代為&#x200B;**/conf**，取代&#x200B;**/apps** |
