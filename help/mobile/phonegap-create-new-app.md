@@ -49,7 +49,7 @@ AEM Mobile應用程式是以定義頁面結構和屬性的藍圖為基礎。 您
 
 您必須有現有的行動應用程式範本（或已安裝應用程式範本的應用程式），才能使用此功能。
 
-最新的AEM Apps範例套件包含Geometrixx應用程式的更新版本及應用程式範本。 或者，您也可以安裝[StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit)，該&lt;a0/>還提供了模板。
+最新的AEM Apps範例套件包含Geometrixx應用程式的更新版本及應用程式範本。 或者，您也可以安裝[StarterKit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit)，該還提供了模板。
 
 根據應用程式範本建立新應用程式的步驟：
 
