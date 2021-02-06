@@ -277,7 +277,7 @@ source="myFragmentSource"/>
 
 ### 根據書籤{#divide-a-source-document-based-on-bookmarks}劃分來源檔案
 
-在下圖中，DocA被分成多個生成的文檔。 頁面上的第1級書籤可識別新結果檔案的開頭。
+在下圖中，DocA被分為多個生成的文檔。 頁面上的第1級書籤可識別新結果檔案的開頭。
 
 ![將以書籤為基礎的來源檔案分割為多](assets/as_intro_pdfsfrombookmarks.png)
 **份檔案圖：** *將以書籤為基礎的來源檔案分割為多份檔案*
