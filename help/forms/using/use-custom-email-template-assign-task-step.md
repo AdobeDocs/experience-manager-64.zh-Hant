@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
 workflow-type: tm+mt
 source-wordcount: '548'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -45,7 +45,7 @@ AEM Forms現成可用，提供電子郵件通知的範本。 此範本提供標�
 
    電子郵件通知範本是[HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email)。 您可以將現有的html程式碼取代為自訂程式碼，以變更範本的外觀。
 
-1. 儲存檔案。 現在，自訂範本已可供使用。
+1. 儲存檔案。現在，自訂範本已可供使用。
 
 ## 建立電子郵件範本{#create-an-email-template}
 
@@ -61,7 +61,7 @@ AEM Forms現成可用，提供電子郵件通知的範本。 此範本提供標�
 
    電子郵件通知範本是[HTML電子郵件](https://en.wikipedia.org/wiki/HTML_email)。 您可以將自訂HTML程式碼新增至檔案，以建立新範本。
 
-1. 儲存檔案。 模板已準備好供「分配任務」步驟使用。
+1. 儲存檔案。模板已準備好供「分配任務」步驟使用。
 
 ## 在分配任務步驟{#use-an-email-template-in-an-assign-task-step}中使用電子郵件模板
 
