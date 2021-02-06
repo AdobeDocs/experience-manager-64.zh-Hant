@@ -27,7 +27,7 @@ AEM Forms可讓您變更資料夾的標題。 標題與儲存庫中儲存資料�
 
 您可以透過下列其中一種方式，在AEM Forms中建立檔案夾：
 
-* 上傳包含所需檔案夾結構中資產的ZIP檔案（請參閱「在AEM Forms中取得XDP和PDF檔案」[）](/help/forms/using/get-xdp-pdf-documents-aem.md)
+* 上傳包含所需檔案夾結構中資產的ZIP檔案（請參閱「在AEM Forms中取得XDP和PDF檔案」](/help/forms/using/get-xdp-pdf-documents-aem.md)）[
 
 * 建立新的空資料夾
 
