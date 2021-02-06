@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 workflow-type: tm+mt
 source-wordcount: '482'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -74,7 +74,7 @@ Adobe工程與諮詢團隊已針對AEM開發人員開發了一套完整的最佳
   </tr>
   <tr>
    <td>工作流程</td> 
-   <td><a href="/help/sites-developing/workflows-best-practices.md">開發和擴充工作流程</a></td> 
+   <td><a href="/help/sites-developing/workflows-best-practices.md">開發和延伸工作流程</a></td> 
    <td><p>工作流程可讓您自動化Adobe Experience Manager(AEM)活動，並可代表AEM環境中發生的大量處理，因此強烈建議您謹慎規劃工作流程實作。</p> </td> 
   </tr>
  </tbody>
