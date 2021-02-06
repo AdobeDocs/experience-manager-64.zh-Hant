@@ -88,7 +88,7 @@ s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 
    若要指定未追蹤的內部連結，請輸入連結目標的全部或部分內部URL。 以逗號分隔多個篩選。 用單引號括住字串文字。
 
-   預設值為`'javascript:,'+window.location.hostname`
+   預設值為 `'javascript:,'+window.location.hostname`
 
 * **在評估與內**
 部和外部篩選器的相符項目時，請保留查詢字串包含URL參數。
