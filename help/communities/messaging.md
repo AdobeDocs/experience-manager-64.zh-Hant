@@ -112,7 +112,7 @@ name副檔名的區塊清單，前置詞為&#39;
    **(需&#x200B;*要操作*)** 檔案副檔名的允許清單，與塊清單相反。要允許除列出的塊外的所有檔案副檔名，請使用「**-**」表徵圖刪除單個空條目。
 
 * **[!UICONTROL serviceSelector.name]**
-(*必要*)調用服務的絕對路徑（端點）（虛擬資源）。所選路徑的根必須包含在OSGi配置&#x200B;**[的「執行路徑」配置設定中，例如`Apache Sling Servlet/Script Resolver and Error Handler`、](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)和`/bin/`。 `/apps/``/services/`要為站點的消息功能選擇此配置，此端點將作為`Message List and Compose Message components`的&#x200B;**`Service selector`**&#x200B;值提供（請參見[消息功能](configure-messaging.md)）。 預設值為&#x200B;*/bin/messaging*。
+(*必要*)調用服務的絕對路徑（端點）（虛擬資源）。所選路徑的根必須包含在OSGi配置[ `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver)的「執行路徑」配置設定中，例如`/bin/`、`/apps/`和`/services/`。 **&#x200B;要為站點的消息功能選擇此配置，此端點將作為`Message List and Compose Message components`的&#x200B;**`Service selector`**&#x200B;值提供（請參見[消息功能](configure-messaging.md)）。 預設值為&#x200B;*/bin/messaging*。
 
 * **[!UICONTROL fieldAllowlist.]**
 nameUse 
