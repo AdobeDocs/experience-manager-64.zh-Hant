@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ## 在We.Retail {#where-to-use-experience-fragments-in-we-retail}中使用體驗片段的位置
 
-您可以在「全域導覽」的「Sites」(a5/)下的[[](/help/sites-authoring/editing-content.md)****&lt;a2/>&lt;a2/>&lt;a3/>&lt;a5/>&lt;a5/>&lt;a5/>&lt;a2/>&lt;a5/>中，使用&lt;a0/>體驗片段](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)（如同任何其他元件）。
+您可以在「全域導覽」的「Sites」(a5/)下的[[](/help/sites-authoring/editing-content.md)****&#x200B;中，使用體驗片段](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)（如同任何其他元件）。
 
 ## 更多資訊 {#further-information}
 
