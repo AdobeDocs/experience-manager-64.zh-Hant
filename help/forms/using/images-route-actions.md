@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 任務清單任務操作彈出菜單{#task-list-task-action-popup}
 
-1. 建立工作清單動作快顯視窗，請參閱「建立AEM Forms工作區程式碼[」。 ](introduction-customizing-html-workspace.md#building-html-workspace-code)需要使用dev套件。
+1. 建立工作清單動作快顯視窗，請參閱「建立AEM Forms工作區程式碼](introduction-customizing-html-workspace.md#building-html-workspace-code)」。 [需要使用dev套件。
 
 1. 將`/libs/ws/js/runtime/templates/task.html`複製到`/apps/ws/js/runtime/templates/task.html`。
 
