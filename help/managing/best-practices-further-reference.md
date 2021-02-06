@@ -35,7 +35,7 @@ ht-degree: 1%
 考慮您將要使用的AEM功能，以及對您設計的影響；例如：
 
 * [商務](/help/sites-administering/ecommerce.md)
-* [畫面](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [畫面](https://docs.adobe.com/content/help/zh-Hant/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [資產](/help/assets/assets.md)
 * [標記](/help/sites-administering/tags.md)
 * [多網站管理與翻譯](/help/sites-administering/msm-and-translation.md)
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 此外，請查看AEM各種版本的[發行說明](/help/release-notes/release-notes.md)，以查看新增任何新功能的時間。
 
-### 整合{#integrations}
+### Integrations {#integrations}
 
 AEM可與其他Adobe產品及／或協力廠商服務整合。 這些功能可增加您的可用功能。
 
