@@ -88,7 +88,7 @@ ht-degree: 0%
 1. 在&#x200B;**Date**&#x200B;欄中選擇「文字欄位」，然後點選![configure_icon](assets/configure_icon.png)（設定）。
 1. 從&#x200B;**綁定類型**&#x200B;下拉清單中選擇&#x200B;**資料模型對象**，並選擇&#x200B;**調用** >調用&#x200B;**調用日期**。 點選兩次![done_icon](assets/done_icon.png)以儲存屬性。
 
-   同樣地，為&#x200B;**Time**、**Number**、&lt;a11/>中的文本欄位建立與&#x200B;**calltime**、**callnumber**、**callduration**&#x200B;和&#x200B;**callcharges**&#x200B;綁定2/>持續時間&#x200B;**和**&#x200B;電荷&#x200B;**欄。**
+   同樣地，為&#x200B;**Time**、**Number**、**中的文本欄位建立與** calltime **、** callnumber **、** callduration **和** callcharges **綁定2/>持續時間**&#x200B;和&#x200B;**電荷**&#x200B;欄。
 
 1. 點選&#x200B;**PayNow**&#x200B;目標區域，點選&#x200B;**+**&#x200B;以新增&#x200B;**Image**&#x200B;元件。
 1. 點選影像元件並選取![configure_icon](assets/configure_icon.png)（設定）。 影像屬性會顯示在左窗格中：
