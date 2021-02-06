@@ -1,6 +1,6 @@
 ---
-title: 升級至AEM 6.4 Forms
-seo-title: 升級至AEM 6.4 Forms
+title: 升級至 AEM 6.4 Forms
+seo-title: 升級至 AEM 6.4 Forms
 description: '您可以從AEM 6.1 Forms、AEM 6.2 Forms和LiveCycle ES4 SP1直接升級至AEM 6.3 Forms。 '
 seo-description: '您可以從AEM 6.1 Forms、AEM 6.2 Forms和LiveCycle ES4 SP1直接升級至AEM 6.3 Forms。 '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 0%
 
    1. 安裝AEM 6.2 Forms或AEM 6.3 Forms的最新Service Pack和修補程式。 如需詳細資訊，請參閱：
 
-      * [AEM 6.2版本注意事項](https://helpx.adobe.com/tw/experience-manager/6-2/release-notes.html)
-      * [AEM 6.3版本注意事項](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html)
+      * [AEM 6.2 發行說明](https://helpx.adobe.com/tw/experience-manager/6-2/release-notes.html)
+      * [AEM 6.3 發行說明](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html)
       * [AEM維護中樞](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)
    1. 準備升級的源實例。 如需詳細步驟，請參閱[升級至AEM 6.4](/help/sites-deploying/upgrade.md#preparing%20the%20source%20instance)。
    1. 下載[AEM 6.4 QuickStart](/help/sites-deploying/deploy.md#getting%20the%20software)。
@@ -39,7 +39,7 @@ ht-degree: 0%
 
       `chmod -R 755 ../crx-quickstart`
 
-   1. 將您的AEM實例升級至AEM 6.3。如需逐步指示，請參閱「升級至AEM 6.4[」。](/help/sites-deploying/upgrade.md)
+   1. 將您的AEM實例升級至AEM 6.3。如需逐步指示，請參閱「升級至AEM 6.4](/help/sites-deploying/upgrade.md)」。[
 
       在繼續後續步驟之前，請等待&lt;crx-repository>/error.log檔案中停止顯示ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息。
 
@@ -50,13 +50,13 @@ ht-degree: 0%
 
 1. 安裝AEM Forms附加元件套件。 步驟如下：
 
-   1. 開啟[軟體分發](https://experience.adobe.com/downloads)。 您必須有Adobe ID才能登入「軟體散發」。
-   1. 點選頁首功能表中的「Adobe Experience Manager **[!UICONTROL 」。]**
+   1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+   1. 點一下頁首功能表中的 **[!UICONTROL Adobe Experience Manager]**。
    1. 在&#x200B;**[!UICONTROL Filters]**&#x200B;區段中：
       1. 從&#x200B;**[!UICONTROL Solution]**&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL Forms]**。
       1. 選擇包的版本和類型。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
    1. 點選適用於您作業系統的套件名稱，選取「**[!UICONTROL 接受EULA條款]**」，然後點選「**[!UICONTROL 下載]**」。
-   1. 開啟[包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然後按一下&#x200B;**[!UICONTROL 上載包]**&#x200B;來上載包。
+   1. 開啟[套件管理器](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 「上傳套件」]**&#x200B;即可上傳套件。
    1. 選擇軟體包並按一下&#x200B;**[!UICONTROL Install]**。
 
       您也可以使用[AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中所列的直接連結下載套件。
