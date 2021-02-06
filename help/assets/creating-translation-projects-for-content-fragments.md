@@ -109,7 +109,7 @@ AEM可讓您翻譯包含各種類型媒體資產和系列的內容片段。 如�
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. 從面板底部按一下／點選「建立與轉譯」**[!UICONTROL ，以顯示「建立與轉譯」]**&#x200B;對話方塊。****
+1. 從面板底部按一下／點選「建立與轉譯」**[!UICONTROL ，以顯示「建立與轉譯」]**&#x200B;對話方塊。]****[!UICONTROL 
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
