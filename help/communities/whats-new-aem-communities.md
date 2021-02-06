@@ -71,7 +71,7 @@ AEM 6.4將兩個[新的篩選器](moderation.md#filter-rail)新增至大量協�
 
 ### 書籤協調篩選{#bookmark-moderation-filters}
 
-AEM Communities提供在協調主控台上將預先定義的協調篩選器[設為書籤的功能。 ](moderation.md#filter-rail)這些儲存的書籤稍後可重新檢視，並與其他使用者共用。
+AEM Communities提供在協調主控台上將預先定義的協調篩選器](moderation.md#filter-rail)設為書籤的功能。 [這些儲存的書籤稍後可重新檢視，並與其他使用者共用。
 
 使用者只需從協調控制台的「篩選邊欄」中選取所需的篩選器，即可檢視篩選的UGC並在其瀏覽器上建立篩選器書籤。 這些篩選器會附加至URL字串的結尾，因此可以共用、重複使用並稍後重新檢視。
 
