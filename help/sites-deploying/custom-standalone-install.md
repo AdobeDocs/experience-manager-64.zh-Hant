@@ -125,7 +125,7 @@ AEM的預設埠為4502。 如果該埠不可用或已在使用中，Quickstart�
 >
 >當將AEM安裝為服務時，您必須從Configuration Manager提供`com.adobe.xmp.worker.files.ncomm.XMPFilesNComm`中記錄檔目錄的絕對路徑。
 
-要卸載服務，請按一下&#x200B;**Services**&#x200B;控制面板中的&#x200B;**Stop**&#x200B;或命令行中的&lt;a2/> Stop&lt;a1/> ，導航到資料夾並鍵入`instsrv.bat -uninstall cq5`。 當您鍵入`net start`時，服務會從&#x200B;**Services**&#x200B;控制面板的清單或命令行的清單中刪除。
+要卸載服務，請按一下&#x200B;**Services**&#x200B;控制面板中的&#x200B;**Stop**&#x200B;或命令行中的 Stop ，導航到資料夾並鍵入`instsrv.bat -uninstall cq5`。 當您鍵入`net start`時，服務會從&#x200B;**Services**&#x200B;控制面板的清單或命令行的清單中刪除。
 
 ## 重定義臨時工作目錄{#redefining-the-location-of-the-temporary-work-directory}的位置
 
@@ -233,7 +233,7 @@ Log files
 
 ## 在Amazon EC2環境{#installing-aem-in-the-amazon-ec-environment}中安裝AEM
 
-在Amazon Elastic Compute Cloud(EC2)實例上安裝AEM時，如果您在EC2實例上同時安裝作者和發佈，則Author實例會遵循如何安裝AEM[實例的步驟，正確安裝。不過，「發佈」例項會變成「作者」。](/help/sites-deploying/custom-standalone-install.md)
+在Amazon Elastic Compute Cloud(EC2)實例上安裝AEM時，如果您在EC2實例上同時安裝作者和發佈，則Author實例會遵循如何安裝AEM](/help/sites-deploying/custom-standalone-install.md)實例的步驟，正確安裝。不過，「發佈」例項會變成「作者」。[
 
 在EC2環境上安裝Publish實例之前，請執行以下操作：
 
