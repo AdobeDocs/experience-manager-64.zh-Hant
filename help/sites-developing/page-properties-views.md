@@ -61,7 +61,7 @@ ht-degree: 1%
 例如，依預設，[**建立頁面**&#x200B;精靈](/help/sites-authoring/managing-pages.md#creating-a-new-page)會顯示在&#x200B;**更多標題和說明**&#x200B;下方分組的欄位。 若要隱藏您設定的這些項目：
 
 1. 在`/apps`下建立您的頁面元件。
-1. 為頁面元件的`basic`區段建立覆寫（使用&#x200B;**&#x200B;由[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)提供的對話diff&lt;a1/>）;例如：
+1. 為頁面元件的`basic`區段建立覆寫（使用&#x200B;**&#x200B;由[Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)提供的對話diff）;例如：
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
