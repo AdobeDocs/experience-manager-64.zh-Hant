@@ -22,7 +22,7 @@ ht-degree: 0%
 
 請確定表單中使用的字型可用於代管AEM表單的J2EE應用程式伺服器。 例如，請考慮以下情形。 表單設計人員會將字型新增至Designer使用的字型目錄，並在個別電腦上建立使用該字型的表單。 為了讓「輸出」服務使用字型，請將它放置在「客戶」字型目錄中。 如果Customer字型目錄不存在，請在代管AEM表單的J2EE應用程式伺服器上建立目錄。
 
-如需其他字型設定的詳細資訊，請參閱「設定一般AEM表單設定」[。](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)
+如需其他字型設定的詳細資訊，請參閱「設定一般AEM表單設定」](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)。[
 
 **指定客戶字型目錄的位置**
 
