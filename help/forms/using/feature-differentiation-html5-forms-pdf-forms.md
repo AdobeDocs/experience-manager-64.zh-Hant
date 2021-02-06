@@ -26,7 +26,7 @@ ht-degree: 2%
  <tbody>
   <tr>
    <th>功能</th> 
-   <th>HTML5 Forms</th> 
+   <th>HTML5 表單</th> 
    <th>PDF</th> 
   </tr>
   <tr>
