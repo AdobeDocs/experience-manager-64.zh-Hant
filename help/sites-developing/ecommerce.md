@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -50,5 +50,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需詳細說明建立電子商務提供者的所有步驟的完整文章，請參閱[建立自訂Adobe Experience Manager 6.2電子商務提供者](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)。
+>如需詳細說明建立電子商務提供者的所有步驟的完整文章，請參閱[建立自訂Adobe Experience Manager 6.2電子商務提供者](https://helpx.adobe.com/tw/experience-manager/using/ecommerce62.html)。
 
