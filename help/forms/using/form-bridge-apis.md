@@ -150,7 +150,7 @@ window.addEventListener("FormBridgeInitialized",
 
 * **輸入**:無
 * **輸出**:無
-* **錯誤**:如果表單狀態未初始化，則拋出異常
+* **錯誤**:如果未初始化表單狀態，則拋出異常
 
 **getFormState()傳** 回表示表單狀態的JSON
 
