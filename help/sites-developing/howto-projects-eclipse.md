@@ -60,7 +60,7 @@ ht-degree: 0%
 
 為了讓這項功能發揮作用：
 
-1. 請依照](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)How-To Work with JSPs[中的「使用Apache Maven[建立AEM專案」說明。](/help/sites-developing/ht-projects-maven.md)
+1. 請依照[How-To Work with JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)中的「使用Apache Maven](/help/sites-developing/ht-projects-maven.md)建立AEM專案」說明。[
 1. 將以下內容添加到內容模組的POM中的&lt;build />部分。
 
    Eclipse的Maven支援外掛程式m2e不支援maven-jspc-plugin，而此組態會告訴m2e忽略外掛程式，以及清除暫存編譯結果的相關工作。
