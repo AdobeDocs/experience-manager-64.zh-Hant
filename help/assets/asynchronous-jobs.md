@@ -63,7 +63,7 @@ ht-degree: 22%
 
 您可以修改清除任務的調度以及刪除完成任務之前保留其詳細資訊的持續時間。 您也可以設定在任何時間點保留詳細資料的已完成任務數上限。
 
-1. 在[!DNL Experience Manager]介面中，按一下「工具」>「操作」>「操作」]**>「Web控制台」]**。]****[!UICONTROL **[!UICONTROL **[!UICONTROL 
+1. 在[!DNL Experience Manager]介面中，按一下「工具」>「操作」>「操作」]**>「Web控制台」]**。******[!UICONTROL **[!UICONTROL 
 1. 開啟&#x200B;**[!UICONTROL Adobe CQ DAM非同步工作清除已排程的]**&#x200B;工作。
 1. 指定刪除已完成任務的天數閾值，以及歷史記錄中保留詳細資訊的最大任務數。 儲存變更。
 
@@ -73,7 +73,7 @@ ht-degree: 22%
 
 如果要刪除的資產或檔案夾數目超過設定的臨界值數目，則會非同步執行刪除作業。
 
-1. 在[!DNL Experience Manager]介面中，按一下「工具」>「操作」>「操作」]**>「Web控制台」]**。]****[!UICONTROL **[!UICONTROL **[!UICONTROL 
+1. 在[!DNL Experience Manager]介面中，按一下「工具」>「操作」>「操作」]**>「Web控制台」]**。******[!UICONTROL **[!UICONTROL 
 1. 在[!UICONTROL Web控制台]中，開啟&#x200B;**[!UICONTROL 非同步刪除操作作業處理]**&#x200B;配置。
 1. 在&#x200B;**[!UICONTROL 資產的臨界值數]**&#x200B;方塊中，指定臨界值數字以非同步刪除資產、檔案夾或參考。 儲存變更。
 
