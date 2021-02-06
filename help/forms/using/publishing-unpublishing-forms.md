@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM Forms可讓您輕鬆建立、發佈和解除發佈表單。 如需AEM Forms的詳細資訊，請參閱[管理表單的簡介](/help/forms/using/introduction-managing-forms.md)。
 
-AEM Forms伺服器提供兩個例項：作者與發佈。 作者例項是用於建立和管理表單資產與資源。 發佈例項用於保留可供使用者使用的資產和相關資源。 您可以在「作者」模式下匯入XDP和PDF表格。 如需詳細資訊，請參閱「在AEM Forms中取得XDP和PDF檔案」[。](/help/forms/using/get-xdp-pdf-documents-aem.md)
+AEM Forms伺服器提供兩個例項：作者與發佈。 作者例項是用於建立和管理表單資產與資源。 發佈例項用於保留可供使用者使用的資產和相關資源。 您可以在「作者」模式下匯入XDP和PDF表格。 如需詳細資訊，請參閱「在AEM Forms中取得XDP和PDF檔案」](/help/forms/using/get-xdp-pdf-documents-aem.md)。[
 
 ## 支援的資產   {#supported-assets-nbsp}
 
