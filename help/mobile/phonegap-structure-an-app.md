@@ -56,7 +56,7 @@ AEM Mobile專案包含多種內容類型，包括頁面、JavaScript和CSS用戶
 
 每個AEM Mobile應用程式都包含一個目錄，其中主控PhoneGap [命令列介面](https://github.com/phonegap/phonegap-cli)和[PhoneGap組建版本](https://build.phonegap.com/)所使用的設定檔案，以便將您的網頁內容轉換為可執行的應用程式。 例如，在Geometrixx範例中，此目錄(/content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-content)位於Shell的一部分；由於它僅包含無法透過無線方式更新的內容，例如處理裝置API的外掛程式和應用程式本身的組態，所以作出設計決定。
 
-在此目錄中，您也會找到許多[Cordova hooks](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide)，這些Cordova hooks&lt;a1/>可用來安裝增效模組、將資源檔案置於其平台特定位置，以及其他應在建立時執行的動作。 注意：除了下載每個外掛程式做為組建版本的一部分，您可以依照Kitchen Sink應用程式的模式，並在其餘的應用程式專案中加入外掛程式原始碼[。](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins)
+在此目錄中，您也會找到許多[Cordova hooks](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide)，這些Cordova hooks可用來安裝增效模組、將資源檔案置於其平台特定位置，以及其他應在建立時執行的動作。 注意：除了下載每個外掛程式做為組建版本的一部分，您可以依照Kitchen Sink應用程式的模式，並在其餘的應用程式專案中加入外掛程式原始碼](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins)。[
 
 ## 後續步驟{#the-next-steps}
 
