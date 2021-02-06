@@ -49,7 +49,7 @@ ht-degree: 0%
 1. 從&#x200B;**管理文章**&#x200B;方塊中選取文章。
 1. 按一下「上傳共用資源」，上傳共用的HTML資源。****
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 ### 下一步{#the-next-step}
 
