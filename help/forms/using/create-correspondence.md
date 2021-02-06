@@ -86,7 +86,7 @@ ht-degree: 0%
 
    在「內容」或「資料」索引標籤中，只要點選HTML字母預覽左上角的「反白標示選取的模組」(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))，您就可以停用或啟用功能，在字母預覽中選取相關文字、段落或資料欄位時前往內容／資料模組。
 
-   有關「建立對應」用戶介面中各模組可用操作的詳細資訊，請參閱「建立對應」用戶介面[中的「操作」和「資訊」。](create-letter.md)
+   有關「建立對應」用戶介面中各模組可用操作的詳細資訊，請參閱「建立對應」用戶介面](create-letter.md)中的「操作」和「資訊」。[
 
 1. 若要尋找內容模組，請使用「尋找」欄位。 輸入內容模組的完整或部分名稱或標題，以在對應中搜索內容模組。
 1. 點選清單、文字、條件或目標區域前面的「顯示」圖示(![display](assets/display.png))，以在字母中顯示或隱藏。
@@ -132,7 +132,7 @@ ht-degree: 0%
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
-   Commense Management已內建210個特殊字元的支援。 管理員可以透過自訂[新增對更多／自訂特殊字元的支援。](/help/forms/using/custom-special-characters.md)
+   Commense Management已內建210個特殊字元的支援。 管理員可以透過自訂](/help/forms/using/custom-special-characters.md)新增對更多／自訂特殊字元的支援。[
 
 1. 若要在可編輯的內嵌模組中反白\強調部分文字，請選取文字並點選「反白顯示顏色」。
 
@@ -235,7 +235,7 @@ ht-degree: 0%
 
    點選「在內容中反白顯示選取的模組」(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))後，當在字母預覽中點選相關文字、段落或資料欄位時，您可以停用或啟用「內容」索引標籤中反白顯示內容模組的功能。
 
-   有關「建立對應」用戶介面中各模組可用操作的詳細資訊，請參閱「建立對應」用戶介面[中的「操作」和「資訊」。](create-letter.md)
+   有關「建立對應」用戶介面中各模組可用操作的詳細資訊，請參閱「建立對應」用戶介面](create-letter.md)中的「操作」和「資訊」。[
 
 1. 若要將分頁符新增至字母，請點選您要插入分頁符的位置，然後選取「分頁符之前」或「分頁符後」(![pagebreakbefore](assets/pagebreakbeforeafter.png))。
 
