@@ -209,7 +209,7 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
    <td>支援</td> 
   </tr>
   <tr>
-   <td>流程報告</td> 
+   <td>程序報告</td> 
    <td>不支援<br /> </td> 
    <td>支援<br /> </td> 
   </tr>
@@ -341,7 +341,7 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
   <tr>
    <td><p><strong>動作</strong></p> </td> 
    <td><p><strong>AEM 收件匣</strong></p> </td> 
-   <td><p><strong>AEM Forms應用程式</strong></p> </td> 
+   <td><p><strong>AEM Forms 應用程式</strong></p> </td> 
   </tr>
   <tr>
    <td><p>啟動表單應用程式</p> </td> 
