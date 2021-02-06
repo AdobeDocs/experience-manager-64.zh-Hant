@@ -69,7 +69,7 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
 
 ### 為區域設定{#add-xfa-client-library-for-a-locale-br}添加XFA客戶端庫
 
-在`etc/<folderHierarchy>`下建立類型`cq:ClientLibraryFolder`的&lt;a1/>節點（類別為`xfaforms.I18N.<locale>`），並將以下檔案添加到客戶端庫：
+在`etc/<folderHierarchy>`下建立類型`cq:ClientLibraryFolder`的節點（類別為`xfaforms.I18N.<locale>`），並將以下檔案添加到客戶端庫：
 
 * **I18N.** js定義 `xfalib.locale.Strings` 的 `<locale>` 定義，如中所定 `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`義。
 
