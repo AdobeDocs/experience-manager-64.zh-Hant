@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -77,7 +77,7 @@ OSGi組態&#x200B;**ACS AEM Commons - Dispatcher Cache Control Header - Max Age*
 
 ## Dispatcher Filters {#dispatcher-filters}
 
-`dispatcher.any`檔案的/filter區段記錄在[設定內容存取權- /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter)中。
+`dispatcher.any`檔案的/filter區段記錄在[設定內容存取權- /filter](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/dispatcher-configuration.html#filter)中。
 
 本節說明Communities功能正常運作可能需要的項目。
 
