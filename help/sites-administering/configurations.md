@@ -201,7 +201,7 @@ AEM中的設定是以Sling Context-Aware Configurations為基礎。 Sling bundle
 
 ### ConfMgr Web控制台{#confmgr-web-console}
 
-為了進行調試和測試，`https://<host>:<port>/system/console/conf`**ConfMgr** Web控制台位於&lt;a2/> ，可顯示給定路徑／項的配置。
+為了進行調試和測試，`https://<host>:<port>/system/console/conf`**ConfMgr** Web控制台位於 ，可顯示給定路徑／項的配置。
 
 ![ConfMgr](assets/configuration-confmgr.png)
 
@@ -215,7 +215,7 @@ AEM中的設定是以Sling Context-Aware Configurations為基礎。 Sling bundle
 
 ### 上下文感知配置Web控制台{#context-aware-web-console}
 
-為了進行調試和測試，`https://<host>:<port>/system/console/slingcaconfig`**** Web控制台中提供&lt;a0/>上下文感知配置&lt;a1/> ，允許查詢儲存庫中的上下文感知配置並查看其屬性。
+為了進行調試和測試，`https://<host>:<port>/system/console/slingcaconfig`**** Web控制台中提供上下文感知配置 ，允許查詢儲存庫中的上下文感知配置並查看其屬性。
 
 ![上下文感知配置Web控制台](assets/configuration-context-aware-console.png)
 
