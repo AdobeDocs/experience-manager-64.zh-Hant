@@ -674,7 +674,7 @@ List元件允許您配置顯示清單的搜索標準：
 
 >[!NOTE]
 >
->**表**&#x200B;元件基於[富格文本編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md),**[文本](#text)**&#x200B;元件也基於&lt;a2/>富格文本編輯器&lt;a3/>。
+>**表**&#x200B;元件基於[富格文本編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md),**[文本](#text)**&#x200B;元件也基於富格文本編輯器。
 >
 >建議對表使用&#x200B;**Table**&#x200B;元件，但也可以使用&#x200B;**Text**&#x200B;元件來構建這些元件。
 
