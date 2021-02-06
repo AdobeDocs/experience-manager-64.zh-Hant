@@ -54,7 +54,7 @@ ht-degree: 5%
 
 * 導覽連結
 
-   * ***當您處於「編輯」模*** 式時，無法導 **** 覽連結。若要使用連結進行導覽，您需要使用下列其中一種方式來預覽頁面[:](/help/sites-authoring/editing-content.md#previewing-pages)
+   * ***當您處於「編輯」模*** 式時，無法導 **** 覽連結。若要使用連結進行導覽，您需要使用下列其中一種方式來預覽頁面](/help/sites-authoring/editing-content.md#previewing-pages):[
 
       * [預覽模式](/help/sites-authoring/editing-content.md#preview-mode)
       * [以已發佈狀態檢視](/help/sites-authoring/editing-content.md#view-as-published)
