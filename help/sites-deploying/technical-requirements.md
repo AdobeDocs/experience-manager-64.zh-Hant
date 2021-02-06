@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 5e418ea537e00dc3b23174a7b1bb01dba0fc6b3a
 workflow-type: tm+mt
 source-wordcount: '3181'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -232,7 +232,7 @@ Adobe Experience Manager的儲存庫有多種部署選項。 有關支援的技�
 1. AEM不支援MongoDB Sharding。
 1. 僅支援MongoDB儲存引擎WiredTiger。
 1. AEM Forms不支援。
-1. 從AEM 6.4.2.0版開始，支援MongoDB Enterprise 3.6。
+1. AEM 6.4.2.0 版開始支援 MongoDB Enterprise 3.6。
 1. 對MongoDB 3.4的支援已到期(EOL)，而MongoDB 3.6預計將於2021年4月30日到期。 請注意，Adobe將只會針對未來的AEM產品相關問題提供支援。
 
 >[!NOTE]
@@ -333,7 +333,7 @@ Adobe Experience Manager可與下列伺服器平台搭配使用：
 
 Adobe Experience Manager在雲計算環境(例如Microsoft Azure和Amazon Web Services(AWS))的虛擬機器中執行時受到支援，符合本頁所列的技術要求，並符合Adobe的標準支援條款。
 
-Adobe建議使用Adobe Managed Services在Azure或AWS上部署AEM。 Adobe Managed Services為專家提供在這些雲端運算環境中部署和操作AEM的經驗和技能。 請參閱我們有關Adobe Managed Services[的其他檔案。](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)
+Adobe建議使用Adobe Managed Services在Azure或AWS上部署AEM。 Adobe Managed Services為專家提供在這些雲端運算環境中部署和操作AEM的經驗和技能。 請參閱我們有關Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t)的其他檔案。[
 
 在部署AEM至Azure或AWS或任何其他雲端運算環境的所有其他情況下，Adobe將依照本頁所列技術規格，對虛擬計算環境提供支援。 與在任何這些雲端環境中執行的AEM相關的任何已報告問題，都必須獨立於雲端計算環境專用的任何雲端服務來重制，除非雲端服務是本頁所列技術需求中特別支援的一部分，例如Azure Blob儲存空間或AWS S3。
 
