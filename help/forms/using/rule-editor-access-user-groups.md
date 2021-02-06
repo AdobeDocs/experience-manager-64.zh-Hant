@@ -1,6 +1,6 @@
 ---
-title: 授予規則編輯器對選定用戶組的訪問權限
-seo-title: 授予規則編輯器對選定用戶組的訪問權限
+title: 將規則編輯器存取權授予給所選的使用者群組
+seo-title: 將規則編輯器存取權授予給所選的使用者群組
 description: 授予對規則編輯器的限制訪問權以選擇用戶組。
 seo-description: 授予對規則編輯器的限制訪問權以選擇用戶組。
 uuid: 3d982858-b2b5-4370-a9d7-5a95842a7897
@@ -12,12 +12,12 @@ translation-type: tm+mt
 source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# 授予規則編輯器對選定用戶組{#grant-rule-editor-access-to-select-user-groups}的訪問權限
+# 將規則編輯器存取權授予給所選的使用者群組 {#grant-rule-editor-access-to-select-user-groups}
 
 ## 概覽 {#overview}
 
