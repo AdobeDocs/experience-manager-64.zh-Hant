@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '153'
-ht-degree: 32%
+ht-degree: 37%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 32%
 
 ## AEM Screens {#aem-screens}
 
-[瞭解數位標牌解決方案，以發佈動態互動式體驗。](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+[瞭解數位標牌解決方案，以發佈動態互動式體驗。](https://docs.adobe.com/content/help/zh-Hant/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
