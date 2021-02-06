@@ -1,6 +1,6 @@
 ---
-title: 管理工作流實例
-seo-title: 管理工作流實例
+title: 管理工作流程例項
+seo-title: 管理工作流程例項
 description: 瞭解如何管理工作流實例。
 seo-description: 瞭解如何管理工作流實例。
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '827'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 管理工作流實例{#administering-workflow-instances}
+# 管理工作流程例項{#administering-workflow-instances}
 
 工作流控制台提供多種工具來管理工作流實例，以確保它們正如預期執行。
 
