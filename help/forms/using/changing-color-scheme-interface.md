@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # 更改介面{#changing-the-color-scheme-of-the-interface}的顏色配置
 
-您可以修改AEM Forms工作區使用者介面部分的色彩配置，以符合您的需求。 以下是代表性色彩配置自訂的一些範例。 除了本文章討論的步驟外，請參閱「AEM Forms工作區自訂的一般步驟[」。](/help/forms/using/generic-steps-html-workspace-customization.md)
+您可以修改AEM Forms工作區使用者介面部分的色彩配置，以符合您的需求。 以下是代表性色彩配置自訂的一些範例。 除了本文章討論的步驟外，請參閱「AEM Forms工作區自訂的一般步驟](/help/forms/using/generic-steps-html-workspace-customization.md)」。[
 
 ## 頂端導覽列{#top-navigation-bar}
 
