@@ -519,15 +519,15 @@ Widget也會依其類型而包含類別。 通常，Widget包含`guideFieldWidge
   </tr> 
   <tr> 
    <td><p><code>table-header-bg-color</code></p> </td> 
-   <td><p>標題列的背景顏色。 預設值為<code>#333</code>。<br /> </p> </td> 
+   <td><p>標題列的背景顏色。 預設值為 <code>#333</code>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p><code>table-odd-row-bg-color</code></p> </td> 
-   <td><p>奇數內文行的背景顏色。 預設值為<code>rgb(255, 255, 255)</code>。</p> </td> 
+   <td><p>奇數內文行的背景顏色。 預設值為 <code>rgb(255, 255, 255)</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>table-even-row-bg-color</code></p> </td> 
-   <td><p>偶數內文行的背景顏色。 預設值為<code>#eee</code>。</p> </td> 
+   <td><p>偶數內文行的背景顏色。 預設值為 <code>#eee</code>.</p> </td> 
   </tr> 
  </tbody> 
 </table>
