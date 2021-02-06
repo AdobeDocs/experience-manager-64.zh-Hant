@@ -27,7 +27,7 @@ AEM Forms可讓使用者將最適化表單儲存為草稿。 草稿功能提供�
 
 不過，AEM Forms入口元件提供資料服務，可讓您自訂將使用者資料儲存為草稿和提交的實作。 例如，您可以將資料儲存在您組織中目前實作的資料儲存區。
 
-若要自訂使用者資料的儲存，您必須實作「草稿資料」[和「提交資料」](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p)服務。[](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p)
+若要自訂使用者資料的儲存，您必須實作「草稿資料」[和「提交資料」](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p)服務。](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p)[
 
 ## 必備條件 {#prerequisites}
 
