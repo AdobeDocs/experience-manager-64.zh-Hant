@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -51,11 +51,11 @@ AEM隨附其他可協助開發的工具：
 * [如何使用VLT工具](/help/sites-developing/ht-vlttool.md)
 * [如何使用Proxy伺服器工具](/help/sites-developing/ht-proxy-server.md)
 * [對話方塊轉換工具](/help/sites-developing/dialog-conversion.md)
-* [AEM Repo工具](/help/sites-developing/aem-repo-tool.md)
+* [AEM Repo Tool](/help/sites-developing/aem-repo-tool.md)
 
 協助建立新專案的工具：
 
-* [AEM Project Archetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
+* [AEM 專案原型](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype)
 * [AEM Lazybones範本](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]
