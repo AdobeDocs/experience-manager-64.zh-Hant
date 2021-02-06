@@ -1,6 +1,6 @@
 ---
-title: 啟動工作流程
-seo-title: 啟動工作流程
+title: 開始工作流程
+seo-title: 開始工作流程
 description: 瞭解如何在AEM中啟動「工作流程」。
 seo-description: 瞭解如何在AEM中啟動「工作流程」。
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# 啟動工作流{#starting-workflows}
+# 開始工作流程{#starting-workflows}
 
 在管理工作流程時，您可以使用多種方法來啟動工作流程：
 
