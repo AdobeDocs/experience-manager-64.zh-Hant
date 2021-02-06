@@ -38,7 +38,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 
 >[!NOTE]
 >
->若要將PostScript檔案轉換為PDF檔案，下列其中一項需要安裝在代管AEM Forms的伺服器上：Acrobat 9或Microsoft Visual C++ 2005可重新散發的套件。
+>若要將PostScript檔案轉換為PDF檔案，下列其中一項必須安裝在代管AEM Forms的伺服器上：Acrobat 9或Microsoft Visual C++ 2005可重新散發的套件。
 
 ### 步驟{#summary-of-steps}摘要
 
@@ -167,7 +167,7 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
    * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示檔案位置和開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
-   * 通過為`MTOM`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`MTOM`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 
 1. 叫用PDF建立作業。
 
@@ -184,9 +184,9 @@ Distiller®服務可將PostScript®、Encapsulated PostScript(EPS)和PRN檔案�
 
 1. 儲存PDF檔案。
 
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表已簽署PDF檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表已簽署PDF檔案的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存`CreatePDF2`方法（輸出參數）返回的`BLOB`對象的內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
