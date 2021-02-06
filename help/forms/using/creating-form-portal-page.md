@@ -107,7 +107,7 @@ Search &amp; Lister元件位於「檔案服務」元件類別下，可用來列�
   <tr> 
    <td> </td> 
    <td>Of 文字</td> 
-   <td><p>將</strong>的<strong>單字取代為指定的文字（</strong>51的第1頁<strong>）。 預設值為<strong>of</strong>。</strong></strong></p> <p>例如，如果您在此欄位中指定</strong>out <strong>out &lt;a1/&gt;，則文字會變更為</strong>out <strong>的第1頁。</strong></strong></p> </td> 
+   <td><p>將</strong>的<strong>單字取代為指定的文字（</strong>51的第1頁<strong>）。 預設值為<strong>of</strong>。</strong></strong></p> <p>例如，如果您在此欄位中指定</strong>out <strong>out ，則文字會變更為</strong>out <strong>的第1頁。</strong></strong></p> </td> 
   </tr> 
   <tr> 
    <td><span class="uicontrol"><strong>表單連結</strong></span></td> 
@@ -222,7 +222,7 @@ Tags Predicate元件實現基於在Forms Manager中定義的標籤搜索表單�
 
 若要在頁面上列出表單，請將&#x200B;**[!UICONTROL Search &amp; Lister]**&#x200B;元件新增至頁面，並設定&#x200B;**[!UICONTROL List Pane]**。 若要讓使用者使用日期、文字和標籤來搜尋表單，請新增&#x200B;**[!UICONTROL 搜尋窗格]**&#x200B;元件。
 
-若要從頁面上的任何位置連結表單，請使用連結元件。 如需連結元件的詳細資訊，請參閱「在頁面中內嵌連結元件」。](/help/forms/using/embedding-link-component-page.md)[
+若要從頁面上的任何位置連結表單，請使用連結元件。 如需連結元件的詳細資訊，請參閱「在頁面中內嵌連結元件」。[](/help/forms/using/embedding-link-component-page.md)
 
 要列出處於草稿狀態的表單和已提交的表單，請使用&#x200B;**[!UICONTROL 草稿和提交]**&#x200B;元件。 如需詳細資訊，請參閱[自訂草稿和提交元件](/help/forms/using/draft-submission-component.md)。
 
