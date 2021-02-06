@@ -27,7 +27,7 @@ AEM已與[Search&amp;Promote](https://www.adobe.com/solutions/testing-targeting/
 * 運用Search&amp;Promote的「遠端控制」功能，執行產品饋送的隨選或排程要求
 * 不同Search&amp;Promote帳戶的動態消息產生，設定為雲端服務設定。
 
-您必須擁有有效帳戶，並設定與Search&amp;Promote[的連線。 ](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote)您還必須驗證您使用的資料中心[是否正確，並確保已配置**遠程伺服器URI **。](/help/sites-administering/search-and-promote.md#configuring-the-data-center)
+您必須擁有有效帳戶，並設定與Search&amp;Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote)的連線。 [您還必須驗證您使用的資料中心[是否正確，並確保已配置**遠程伺服器URI **。](/help/sites-administering/search-and-promote.md#configuring-the-data-center)
 
 ## 設定產品摘要{#set-up-the-product-feed}
 
@@ -51,14 +51,14 @@ AEM已與[Search&amp;Promote](https://www.adobe.com/solutions/testing-targeting/
 ### 為Geometrixx {#configuring-the-day-cq-search-promote-products-crawler-implementation-for-geometrixx}設定Day CQ Search&amp;Promote產品Crawler實作
 
 1. 導覽至[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
-1. 按一下Geometrixx **[!UICONTROL 的「每日CQ搜尋與促銷產品編目程式實作」。]**
+1. 按一下Geometrixx ]**的「每日CQ搜尋與促銷產品編目程式實作」。**[!UICONTROL 
 1. 指定此Crawler所連結的Search&amp;Promote帳戶號碼。 它將用於查找此Crawler使用的雲服務配置。
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
 ### 設定Geometrixx {#configuring-the-day-cq-search-promote-products-feed-generator-for-geometrixx}的Day CQ Search&amp;Promote產品饋送產生器
 
 1. 導覽至[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)。
-1. 按一下Geometrixx **[!UICONTROL 的「Day CQ Search&amp;Promote產品饋送產生器」。]**
+1. 按一下Geometrixx ]**的「Day CQ Search&amp;Promote產品饋送產生器」。**[!UICONTROL 
 1. 指定此產生器所連結的Search&amp;Promote帳戶號碼。 它將用於查找此生成器使用的雲服務配置。
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
