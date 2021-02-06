@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: de04a6c205e4379c7f8a9ab5574985259d6541c3
 workflow-type: tm+mt
 source-wordcount: '270'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
@@ -25,13 +25,13 @@ AEM提供數個API來開發應用程式。 下列清單提供AEM支援的API檔�
 
 * [Adobe AEM 6.4.0 API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)
 
-* [API差異](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/diff-previous/changes.html)
+* [API 差異](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/diff-previous/changes.html)
 
 * [Granite UI(Touch-Enabled)API檔案](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
-* [Coral UI指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+* [Coral UI 指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
-* [Widgets API(Classic UI)檔案](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
+* [Widgets API (Classic UI) 說明文件](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)
 
 * [UI測試架構Javascript API參考](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html)
 
