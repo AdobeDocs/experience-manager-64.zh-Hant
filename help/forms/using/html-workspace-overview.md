@@ -112,7 +112,7 @@ AEM Forms on JEE也會依預設部署Flex Workspace。 它仍能像以前一樣�
 
 ### AEM Forms工作區的限制{#limitations-of-aem-forms-workspace}
 
-AEM Forms工作區中未提供的Flex Workspace功能包括：訊息與通知、歡迎頁面、核准容器，以及管理欄標題的選項。 如需完整清單，請參閱「AEM Forms工作區中無法使用的Flex Workspace功能[」。](/help/forms/using/features-flex-workspace-available-html.md)
+AEM Forms工作區中未提供的Flex Workspace功能包括：訊息與通知、歡迎頁面、核准容器，以及管理欄標題的選項。 如需完整清單，請參閱「AEM Forms工作區中無法使用的Flex Workspace功能](/help/forms/using/features-flex-workspace-available-html.md)」。[
 
 ## 使用AEM Forms工作區進行開發{#developing-with-aem-forms-workspace}
 
@@ -132,7 +132,7 @@ AEM Forms工作區支援多種自訂設定，以更新使用者介面的版面�
 
 ### 設定開發人員環境{#set-up-the-developer-environment}
 
-AEM Forms工作區交付項目包括部署在CRX上的CRX套件、包含完整原始碼的SDK封存、協力廠商JavaScript程式庫，以及建立AEM Forms工作區的指令碼。 使用這些設定來設定開發人員環境，以執行上述自訂設定。 如需詳細資訊，請參閱「建立AEM Forms工作區程式碼[」。](introduction-customizing-html-workspace.md#building-html-workspace-code)
+AEM Forms工作區交付項目包括部署在CRX上的CRX套件、包含完整原始碼的SDK封存、協力廠商JavaScript程式庫，以及建立AEM Forms工作區的指令碼。 使用這些設定來設定開發人員環境，以執行上述自訂設定。 如需詳細資訊，請參閱「建立AEM Forms工作區程式碼](introduction-customizing-html-workspace.md#building-html-workspace-code)」。[
 
 您可以自訂介面和核心功能的主要部分，例如字型、色彩配置、標誌、登入畫面、錯誤對話方塊、與協力廠商應用程式的整合，以及在協力廠商應用程式中重複使用元件。 您也可以增強「任務摘要」頁面上顯示的內容、顯示任務路由動作的影像，甚至修改建立AEM Forms工作區應用程式的低階骨幹模型和檢視。
 
