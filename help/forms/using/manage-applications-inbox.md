@@ -34,7 +34,7 @@ ht-degree: 0%
 ## 建立應用程式{#create-application}
 
 1. 前往`https://[server]:[port]/aem/inbox`的「AEM收件匣」。
-1. 在「收件箱」UI中，按一下「建立」>「應用程式」**[!UICONTROL 。]**&#x200B;此時將顯示「選擇應用程式」頁。
+1. 在「收件箱」UI中，按一下「建立」>「應用程式」]**。**[!UICONTROL &#x200B;此時將顯示「選擇應用程式」頁。
 1. 選擇應用程式並按一下&#x200B;**[!UICONTROL 建立]**。 隨即開啟與應用程式相關聯的最適化表單。 填寫表格並點選&#x200B;**[!UICONTROL Submit]**。 它會啟動相關的工作流程，並在受託人的「收件匣」中建立工作。
 
 ## 管理任務 {#manage-tasks}
