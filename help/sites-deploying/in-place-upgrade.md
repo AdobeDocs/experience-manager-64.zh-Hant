@@ -189,7 +189,7 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. 修改命令，方法是將現有jar的路徑(在本例中為`crx-quickstart/app/aem-quickstart*.jar`資料夾的同級新jar替換為&lt;a1/>資料夾的同級路徑。 `crx-quickstart`以我們的上一個命令為例，我們的命令為：
+1. 修改命令，方法是將現有jar的路徑(在本例中為`crx-quickstart`資料夾的同級新jar替換為`crx-quickstart/app/aem-quickstart*.jar`資料夾的同級路徑。 以我們的上一個命令為例，我們的命令為：
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.4.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
