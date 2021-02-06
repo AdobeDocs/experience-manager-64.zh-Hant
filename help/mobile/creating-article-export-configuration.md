@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->**先決條件**:
+>**必備條件**:
 >
 >在瞭解如何建立和修改共用資源之前，請參閱[內容同步](/help/mobile/mobile-ondemand-contentsync.md)以瞭解基本概念。
 
