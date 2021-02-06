@@ -101,7 +101,7 @@ ht-degree: 5%
    <td>錯誤<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>3</td> 
+   <td>1</td> 
    <td>警告<br type="_moz" /> </td> 
   </tr> 
   <tr> 
