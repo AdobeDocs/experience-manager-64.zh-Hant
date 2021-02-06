@@ -52,7 +52,7 @@ AEM Forms工作區提供現成可用的英文、法文、德文和日文支援�
 
 ## 本地化折疊的類別、隊列和進程{#localizing-collapsed-categories-queues-and-processes}
 
-AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您需要開發套件才能將這些標題當地語系化。 如需建立開發套件的詳細資訊，請參閱「建立AEM Forms工作區程式碼」。[](introduction-customizing-html-workspace.md#building-html-workspace-code)
+AEM Forms工作區使用影像來顯示類別、佇列和程式的標題。 您需要開發套件才能將這些標題當地語系化。 如需建立開發套件的詳細資訊，請參閱「建立AEM Forms工作區程式碼」。](introduction-customizing-html-workspace.md#building-html-workspace-code)[
 
 在下列步驟中，假設新的本地化影像檔案為&#x200B;*Categories_nw.png*、*Queue_nw.png*&#x200B;和&#x200B;*Processes_nw.png*。 建議的影像寬度為19像素。
 
