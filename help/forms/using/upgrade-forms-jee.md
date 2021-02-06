@@ -1,6 +1,6 @@
 ---
-title: 升級至AEM 6.4 Forms
-seo-title: 升級至AEM 6.4 Forms
+title: 升級至 AEM 6.4 Forms
+seo-title: 升級至 AEM 6.4 Forms
 description: '您可以從AEM 6.1 Forms、AEM 6.2 Forms和LiveCycle ES4 SP1直接升級至AEM 6.3 Forms。 '
 seo-description: '您可以從AEM 6.1 Forms、AEM 6.2 Forms和LiveCycle ES4 SP1直接升級至AEM 6.3 Forms。 '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
@@ -77,7 +77,7 @@ ht-degree: 0%
 
       >[!NOTE]
       >
-      >在「升級任務選擇」螢幕上，選擇「從Adobe Experience Manager Forms 6.2.0 **[!UICONTROL 升級」選項。]****[!UICONTROL 從Adobe Experience Manager Forms 6.2.0]**&#x200B;升級選項可讓組態管理員從LiveCycle ES4 SP1升級至AEM 6.4 Forms。
+      >在「升級任務選擇」螢幕上，選擇「從Adobe Experience Manager Forms 6.2.0 ]**升級」選項。**[!UICONTROL **[!UICONTROL 從Adobe Experience Manager Forms 6.2.0]**&#x200B;升級選項可讓組態管理員從LiveCycle ES4 SP1升級至AEM 6.4 Forms。
 
    1. （AEM Forms檔案安全性模組不需要）將內容匯入內容存放庫(CRX-Repository)至AEM 6.4 Forms伺服器。
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
       >[!NOTE]
       >
-      >在「升級任務選擇」螢幕上，選擇「從Adobe Experience Manager Forms 6.2.0 **[!UICONTROL 升級」選項。]****[!UICONTROL 從Adobe Experience Manager Forms 6.2.0]**&#x200B;升級選項可讓組態管理員從LiveCycle ES3升級至AEM 6.4 Forms。
+      >在「升級任務選擇」螢幕上，選擇「從Adobe Experience Manager Forms 6.2.0 ]**升級」選項。**[!UICONTROL **[!UICONTROL 從Adobe Experience Manager Forms 6.2.0]**&#x200B;升級選項可讓組態管理員從LiveCycle ES3升級至AEM 6.4 Forms。
 
    1. （AEM Forms檔案安全性模組不需要）升級並將CRX儲存庫匯入AEM 6.4 Forms伺服器。
 
