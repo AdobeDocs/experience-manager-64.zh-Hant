@@ -24,7 +24,7 @@ ht-degree: 0%
 AEM Communities使用電子郵件
 
 * [社群通知](notifications.md)
-* [社群訂閱](subscriptions.md)
+* [Communities 訂閱](subscriptions.md)
 
 預設情況下，電子郵件功能無法正常工作，因為它需要指定SMTP伺服器和SMTP用戶。
 
