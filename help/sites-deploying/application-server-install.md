@@ -107,7 +107,7 @@ AEM是要部署的單一戰爭檔案。
 
    * 讓AEM驗證使用者的一種方式是停用WebSphere伺服器的全域管理安全性，以執行下列動作：轉至「Security -> Global Security」（安全性->全域安全性），並取消選中「Enable administrative security」（啟用管理安全性）複選框，保存並重新啟動伺服器。
 
-* 設定`"JAVA_OPTS= -Xmx2048m"`
+* set `"JAVA_OPTS= -Xmx2048m"`
 * 如果您想使用內容根目錄= /安裝AEM，則必須先變更現有預設Web應用程式的內容根目錄
 
 **部署AEM網頁應用程式**
