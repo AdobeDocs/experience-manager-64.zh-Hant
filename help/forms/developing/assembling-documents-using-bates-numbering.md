@@ -217,10 +217,10 @@ Assembler服務返回包含作業結果的集合對象。 您可以擷取產生�
 1. 參考輸入PDF檔案。
 
    * 對於每個輸入的PDF檔案，請使用其建構函式建立`BLOB`物件。 `BLOB`物件用來儲存輸入的PDF檔案。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表輸入PDF檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表輸入PDF檔案的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
-   * 通過為`MTOM`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`MTOM`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
    * 建立`MyMapOf_xsd_string_To_xsd_anyType`對象。 此收集物件用來儲存輸入的PDF檔案。
    * 對於每個輸入的PDF檔案，請建立`MyMapOf_xsd_string_To_xsd_anyType_Item`物件。 例如，如果使用兩個輸入的PDF檔案，請建立兩個`MyMapOf_xsd_string_To_xsd_anyType_Item`物件。
    * 為`MyMapOf_xsd_string_To_xsd_anyType_Item`對象的`key`欄位分配代表鍵名的字串值。 此值必須與DDX檔案中指定之PDF來源元素的值相符。 （請對每個輸入的PDF檔案執行此工作。）
