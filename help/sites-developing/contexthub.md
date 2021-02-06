@@ -39,13 +39,13 @@ ContextHub會在用戶端上儲存持續的上下文資料。 ContextHub Javascr
 每個ContextHub儲存都是預定義儲存類型的實例：
 
 * ContextHub提供數種[範例商店類型](/help/sites-developing/ch-samplestores.md)。
-* 使用AEM控制台來建立stores[。](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store)
+* 使用AEM控制台來建立stores](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store)。[
 * 開發人員可以[建立自訂商店類型](/help/sites-developing/ch-extend.md#creating-custom-store-candidates)。
-* 開發人員可以透過Javascript存取儲存資料[。](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores)
+* 開發人員可以透過Javascript存取儲存資料](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores)。[
 
 ## Segmentation {#segmentation}
 
-ContextHub包含區段引擎，可管理區段並判斷哪些區段可針對目前的上下文加以解析。 已定義數個區段。 您可以使用Javascript API來判斷已解析的區段[。](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments)
+ContextHub包含區段引擎，可管理區段並判斷哪些區段可針對目前的上下文加以解析。 已定義數個區段。 您可以使用Javascript API來判斷已解析的區段](/help/sites-developing/ch-adding.md#determining-resolved-contexthub-segments)。[
 
 ## 簡報 {#presentation}
 
