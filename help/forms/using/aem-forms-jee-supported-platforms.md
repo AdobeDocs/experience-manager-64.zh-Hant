@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: ee38d0ebde12a70e3af04254b0c0b4995c45519b
 workflow-type: tm+mt
 source-wordcount: '3327'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -587,7 +587,7 @@ AEM Forms App現在支援Apache Cordova。 以下是支援的Cordova平台特定
 
 ## JEE上AEM Forms的支援用戶端{#supported-clients-for-aem-forms-on-jee}
 
-### 工作台{#workbench}
+### Workbench {#workbench}
 
 >[!NOTE]
 >
