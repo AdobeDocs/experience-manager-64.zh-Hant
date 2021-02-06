@@ -57,7 +57,7 @@ We.Gov組織會收到申請。 組織會取得申請表的評量，並核准正�
 
 ## Sarah開始進行資格檢查{#sarah-initiates-her-eligibility-check}
 
-申請人可以檢查申請子女支援福利的資格。 網站可讓使用者回答問題，以判斷其應用程式是否符合權益。 養父母莎拉是潛在的養父母。 資格表是We.Gov網站「兒童支援申請」服務的一部分。 為了檢查她的資格，Sarah點擊了We.Gov網站上的&#x200B;**[!UICONTROL Child Support]**。 在「子代支援」頁面中，Sarah按一下「檢查您的資格&#x200B;**[!UICONTROL 」。]**
+申請人可以檢查申請子女支援福利的資格。 網站可讓使用者回答問題，以判斷其應用程式是否符合權益。 養父母莎拉是潛在的養父母。 資格表是We.Gov網站「兒童支援申請」服務的一部分。 為了檢查她的資格，Sarah點擊了We.Gov網站上的&#x200B;**[!UICONTROL Child Support]**。 在「子代支援」頁面中，Sarah按一下「檢查您的資格&#x200B;]**」。**[!UICONTROL 
 
 除了上述方法，Sarah還可以按一下首頁上的&#x200B;**[!UICONTROL 開始]**。 系統會導覽至「所有應用程式」頁面，然後在此頁面中，她可以按一下&#x200B;**[!UICONTROL Application for Child Support Services]**&#x200B;下的「套用」。 然後，莎拉被帶到資格檢查。
 
@@ -221,7 +221,7 @@ We.Gov的核准主管Gloria可以檢視、核准或拒絕提交的申請。 AEM 
 
 ### 親自查看{#see-it-yourself-2}
 
-開啟頁面 `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. 在頁面上，點選「登入&#x200B;****」，選取「以代表身分登入&#x200B;****」核取方塊，使用grios/password做為Gloria Rios的使用者名稱／密碼登入AEM收件匣。 出現子支援應用程式。 如需有關將AEM Inbox用於表單導向工作流程工作的詳細資訊，請參閱「在AEM Inbox中管理表單應用程式和工作」[。](/help/forms/using/manage-applications-inbox.md)
+開啟頁面 `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. 在頁面上，點選「登入&#x200B;****」，選取「以代表身分登入&#x200B;****」核取方塊，使用grios/password做為Gloria Rios的使用者名稱／密碼登入AEM收件匣。 出現子支援應用程式。 如需有關將AEM Inbox用於表單導向工作流程工作的詳細資訊，請參閱「在AEM Inbox中管理表單應用程式和工作」](/help/forms/using/manage-applications-inbox.md)。[
 
 ![We.Gov refsite的Gloria收件匣](assets/gloria-inbox.png)
 
@@ -269,7 +269,7 @@ Conard按一下「提交以進行重新評估」**[!UICONTROL ,AEM工作流程�
 
 當Gloria要求評估時，會開始AEM工作流程的下一個步驟，並將評估工作新增至Conard的收件匣。 康納德是現場工作人員的角色。
 
-Conard拜訪了Sarah的住所，確認了Sarah提供的資訊是真的，並填寫了評估表。 Conard可存取Sarah填寫的完整表單的PDF。
+Conard拜訪了Sarah的住所，確認了Sarah提供的資訊是真實的，並填寫了評估表。 Conard可存取Sarah填寫的完整表單的PDF。
 
 ### 親自查看{#see-it-yourself-4}
 
@@ -308,7 +308,7 @@ Conard的預設憑據為：
 
 Gloria核准申請後，Sarah收到We.Gov寄來的電子郵件，告知她的申請獲得批准。
 
-電子郵件中的&#x200B;**[!UICONTROL 檢視檔案]**&#x200B;按鈕會連結至她的註冊詳細資訊。 Sarah按一下「查看文檔」。****
+電子郵件中的&#x200B;**[!UICONTROL 檢視檔案]**&#x200B;按鈕會連結至她的註冊詳細資訊。 Sarah按一下「查看文檔」。]****[!UICONTROL 
 
 ![核准——註冊——包——電子郵件](assets/approval-enrolment-kit-email.png)
 
