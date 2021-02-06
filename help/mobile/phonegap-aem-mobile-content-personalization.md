@@ -114,7 +114,7 @@ AMS服務也必須將Adobe Mobile Services(AMS)帳戶連結至應用程式，提
 
 在AEM Mobile應用程式中製作目標內容時，會遵循類似的程式來製作AEM Sites:
 
-請參閱這裡以取得有關在AEM[中編寫目標內容的完整概觀](/help/sites-authoring/personalization.md)
+請參閱這裡以取得有關在AEM](/help/sites-authoring/personalization.md)中編寫目標內容的完整概觀[
 
 ## 對於開發人員{#for-developers}
 
