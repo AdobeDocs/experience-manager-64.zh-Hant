@@ -1,6 +1,6 @@
 ---
-title: 移轉AEM Forms資產和檔案
-seo-title: 移轉AEM Forms資產和檔案
+title: 移轉 AEM Forms 資產和文件
+seo-title: 移轉 AEM Forms 資產和文件
 description: 移轉公用程式可讓您將AEM Forms資產和檔案從AEM 6.3 Forms或舊版移轉至AEM 6.4 Forms。
 seo-description: 移轉公用程式可讓您將AEM Forms資產和檔案從AEM 6.3 Forms或舊版移轉至AEM 6.4 Forms。
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
@@ -14,12 +14,12 @@ translation-type: tm+mt
 source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
-ht-degree: 0%
+ht-degree: 3%
 
 ---
 
 
-# 移轉AEM Forms資產和檔案{#migrate-aem-forms-assets-and-documents}
+# 移轉 AEM Forms 資產和文件 {#migrate-aem-forms-assets-and-documents}
 
 移轉公用程式會將[Adaptive Forms資產](/help/forms/using/introduction-forms-authoring.md)、[雲配置](/help/sites-developing/extending-cloud-config.md)和[Corresponce Management資產](/help/forms/using/cm-overview.md)從舊版中使用的格式轉換為AEM 6.4 Forms中使用的格式。 運行遷移實用程式時，將遷移以下內容：
 
