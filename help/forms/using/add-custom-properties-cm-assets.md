@@ -649,7 +649,7 @@ ht-degree: 4%
 若要允許建立自訂屬性的索引，請完成下列步驟：
 
 1. 前往`https://[server]:[port]/[ContextPath]/crx/de`，以管理員身分登入。
-1. 轉至`/oak:index/cmLucene`並在&#x200B;**下添加名為&lt;a1/>aggregates**&#x200B;的節點。
+1. 轉至`/oak:index/cmLucene`並在&#x200B;**下添加名為aggregates**&#x200B;的節點。
 
    1. 按一下右鍵cmLucene資料夾，然後選擇&#x200B;**建立** > **建立節點**。
    1. 確保「建立節點」對話框具有以下值，然後按一下&#x200B;**確定**:
