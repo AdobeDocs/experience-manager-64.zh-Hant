@@ -149,7 +149,7 @@ ht-degree: 0%
    * 調用`javax.xml.transform.Transformer`物件的`transform`方法，以填入Java `ByteArrayOutputStream`物件。 傳遞`javax.xml.transform.dom.DOMSource`和`javax.xml.transform.stream.StreamResult`物件。
    * 建立位元組陣列，並將`ByteArrayOutputStream`對象的大小分配給位元組陣列。
    * 調用`ByteArrayOutputStream`物件的`toByteArray`方法，以填入位元組陣列。
-   * 使用`com.adobe.idp.Document`物件的建構函式並傳遞位元組陣列，以建立&lt;a0/>物件。
+   * 使用`com.adobe.idp.Document`物件的建構函式並傳遞位元組陣列，以建立物件。
 
 1. 參考要反匯編的PDF文檔。
 
@@ -245,7 +245,7 @@ ht-degree: 0%
 1. 參考要反匯編的PDF文檔。
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存輸入的PDF檔案。 此`BLOB`對象作為參數傳遞給`invokeOneDocument`。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表輸入PDF檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表輸入PDF檔案的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
    * 通過為`MTOM`屬性指定位元組陣列的內容來填充`BLOB`對象。
