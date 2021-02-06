@@ -1,8 +1,8 @@
 ---
-title: AEM Livefyre Recipes
-seo-title: AEM Livefyre Recipes
-description: 'Adobe Experience Manager Livefyre常見使用案例的逐步指示。 '
-seo-description: 'Adobe Experience Manager Livefyre常見使用案例的逐步指示。 '
+title: AEM Livefyre 指導方針
+seo-title: AEM Livefyre 指導方針
+description: 'Adobe Experience Manager Livefyre 常見使用案例的逐步指示。 '
+seo-description: 'Adobe Experience Manager Livefyre 常見使用案例的逐步指示。 '
 uuid: 78695a63-fca6-4990-9755-0aeaae4a7f64
 contentOwner: alba
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
 
-# AEM Livefyre Recipes{#aem-livefyre-recipes}
+# AEM Livefyre 指導方針{#aem-livefyre-recipes}
 
-Adobe Experience Manager Livefyre常見使用案例的逐步指示。
+Adobe Experience Manager Livefyre 常見使用案例的逐步指示。
 
 ## 使用現成可用的Livefyre AEM元件組織UGC，並使用Livefyre Media Wall {#curate-ugc-using-the-out-of-the-box-livefyre-aem-components-and-display-using-livefyre-media-wall}顯示
 
@@ -30,7 +30,7 @@ AEM Livefyre套件提供現成可用的實作，而傳統整合則提供建立�
 
 ### AEM整合{#aem-integration}
 
-Livefyre Adobe Experience Manager套件適用於AEM 6.1、6.2SP1、6.3、6.4和6.4 SP1。 不支援AEM 5.x和6.0。 如需詳細指示，請參閱[與Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)整合。
+Livefyre Adobe Experience Manager套件適用於AEM 6.1、6.2SP1、6.3、6.4和6.4 SP1。 不支援AEM 5.x和6.0。 如需詳細指示，請參閱[與Livefyre](https://helpx.adobe.com/tw/experience-manager/6-4/sites/administering/using/livefyre.html)整合。
 
 若要查看哪些Livefyre應用程式受支援，請參閱[Livefyre應用程式的AEM支援矩陣](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)。
 
@@ -79,7 +79,7 @@ Livefyre Adobe Experience Manager套件適用於AEM 6.1、6.2SP1、6.3、6.4和6
 1. [將AEM Media Wall元件拖放至您的頁面](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
 1. [設定串流並新增規則以組織UGC並顯示在「媒體塗鴉牆」元件上](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
 
-如需有關串流UGC的訓練影片，請參閱「在Adobe Experience Manager Livefyre[中建立自動內容串流和搜尋社交內容」。](https://helpx.adobe.com/experience-manager/tutorials.html)
+如需有關串流UGC的訓練影片，請參閱「在Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html)中建立自動內容串流和搜尋社交內容」。[
 
 ### 客戶範例{#customer-examples}
 
@@ -142,7 +142,7 @@ Livefyre Adobe Experience Manager套件適用於AEM 6.1、6.2SP1、6.3、6.4和6
 
 1. [設定串流並新增規則，將UGC組織至Livefyre資產庫資料夾](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)。
 
-   1. 如需有關串流UGC的訓練影片，請參閱「在Adobe Experience Manager Livefyre[中建立自動內容串流和搜尋社交內容」。](https://helpx.adobe.com/experience-manager/tutorials.html)
+   1. 如需有關串流UGC的訓練影片，請參閱「在Adobe Experience Manager Livefyre](https://helpx.adobe.com/experience-manager/tutorials.html)中建立自動內容串流和搜尋社交內容」。[
 
 1. [在Livefyre資產庫資料夾中收集、組織及管理精選的UGC](https://docs.adobe.com/content/help/en/livefyre/using/library/assets/c-assets.html)。
 
