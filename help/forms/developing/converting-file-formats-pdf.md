@@ -223,7 +223,7 @@ ht-degree: 0%
 1. 擷取檔案以轉換為PDF檔案。
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存您要轉換為PDF檔案的檔案。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表要轉換之檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表要轉換之檔案的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
    * 通過為`MTOM`屬性指定位元組陣列的內容來填充`BLOB`對象。
@@ -246,7 +246,7 @@ ht-degree: 0%
 
    * 將`BLOB`物件的`MTOM`欄位指派給位元組，以擷取轉換的PDF檔案。 位元組陣列代表已轉換的PDF檔案。 確保使用`BLOB`對象作為`createPDF2`方法的輸出參數。
    * 調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示已轉換PDF文檔的檔案位置。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -396,7 +396,7 @@ ht-degree: 0%
 
    * 將`BLOB`物件的`MTOM`欄位指派給位元組，以擷取轉換的PDF檔案。 位元組陣列代表已轉換的PDF檔案。 確保使用`BLOB`對象作為`HtmlToPDF2`方法的輸出參數。
    * 調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示已轉換PDF文檔的檔案位置。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -550,8 +550,8 @@ ht-degree: 0%
 1. 保存已轉換的檔案。
 
    * 通過將`BLOB`對象的`MTOM`欄位分配給位元組陣列來檢索已轉換的RTF文檔。 位元組陣列表示轉換的RTF文檔。 確保使用`BLOB`對象作為`ExportPDF2`方法的輸出參數。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞代表RTF檔案位置的字串值。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞代表RTF檔案位置的字串值。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入RTF檔案。
 
 **另請參閱**
