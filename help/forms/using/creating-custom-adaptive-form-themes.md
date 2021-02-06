@@ -230,7 +230,7 @@ ht-degree: 0%
 
    1. **可選**:在自訂頁面中，視需要覆寫header.jsp、footer.jsp和body.jsp。
 
-1. 建立自訂範本(例如：(例如：`/apps/myAfCustomizations/myAfTemplates/forestTemplate`。`myAfCustomizations/myAfPages/forestPage)`
+1. 建立自訂範本(例如：(例如：`myAfCustomizations/myAfPages/forestPage)`。`/apps/myAfCustomizations/myAfTemplates/forestTemplate`
 
    ![CRX儲存庫快照](assets/2-1.png)
 
