@@ -38,7 +38,7 @@ ht-degree: 12%
 
 ### 在Configuration Manager {#enable-content-fragment-models-in-configuration-manager}中啟用內容片段模型
 
-要建立新的內容片段模型[, ](#creating-a-content-fragment-model)必須&#x200B;**首先使用配置管理器啟用它們：**
+要建立新的內容片段模型](#creating-a-content-fragment-model), **必須**&#x200B;首先使用配置管理器啟用它們：[
 
 1. 導覽至「 **[!UICONTROL 工具]**」、「 **[!UICONTROL 一般]**」，然後開啟「 **[!UICONTROL 設定瀏覽器]**」。
    * 如需詳細資訊，請參閱[設定瀏覽器檔案](/help/sites-administering/configurations.md)。
