@@ -1011,7 +1011,7 @@ N:defaults
 
 * `aggregate`
 
-   有效的`aggregate`值與`aggregates`下`type`的&lt;a1/>值相同(請參閱[欄特定定義（定義——篩選器／集合）](#column-specific-definitions))。
+   有效的`aggregate`值與`aggregates`下`type`的值相同(請參閱[欄特定定義（定義——篩選器／集合）](#column-specific-definitions))。
 
 ### 事件和操作{#events-and-actions}
 
