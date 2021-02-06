@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '495'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -32,7 +32,7 @@ AEM Content Services的設計目的，是將AEM中／來自AEM的內容描述和
 
 >[!NOTE]
 >
->自[核心元件](https://docs.adobe.com/content/docs/en/core-components/v1.html)的&lt;a0/>1.1.0版以來，此處描述的功能可用於所有核心元件。
+>自[核心元件](https://docs.adobe.com/content/docs/en/core-components/v1.html)的1.1.0版以來，此處描述的功能可用於所有核心元件。
 
 ## 包含內容片段核心元件{#json-exporter-with-content-fragment-core-components}的JSON匯出器
 
@@ -50,7 +50,7 @@ AEM Content Services的設計目的，是將AEM中／來自AEM的內容描述和
 
 1. 將提供內容，例如：
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 您也可以透過明確定位結構化內容片段來提供內容。
 
@@ -86,7 +86,7 @@ AEM Content Services的設計目的，是將AEM中／來自AEM的內容描述和
 
    * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* Sling Models:
+* Sling 模型:
 
    * [Sling Models —— 將模型類別與自130以來的資源類型關聯](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
