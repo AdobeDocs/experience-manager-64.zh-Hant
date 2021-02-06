@@ -175,7 +175,7 @@ AEM已設定為使用三種服務之一來傳送推播通知：
    <table> 
     <tbody> 
      <tr> 
-     <td><p> </p> <p>{</p> <p> "版本":「2012-10-17」,</p> <p> "陳述式": [</p> <p> {</p> <p> "動作": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS：訂閱"</p> <p> ] 、</p> <p> 「效果」:"允許",</p> <p> "資源": [</p> <p> "*"</p> <p> _</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td> 
+     <td><p> </p> <p>{</p> <p> "版本":「2012-10-17」,</p> <p> "陳述式": [</p> <p> {</p> <p> "動作": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS：訂閱"</p> <p> ] 、</p> <p> 「效果」:"允許",</p> <p> "資源": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td> 
      </tr> 
     </tbody> 
     </table>
@@ -353,7 +353,7 @@ type=&quot;notificationsconfig&quot;/>
 
 1. 按一下「推播通知」方塊右上角的新增符號，以開啟「建立通知精靈」。********
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. 按一下連結路徑中的瀏覽圖示，向使用者呈現應用程式的內容結構。
 
@@ -369,13 +369,13 @@ type=&quot;notificationsconfig&quot;/>
 
 1. 在&#x200B;**建立通知嚮導**&#x200B;中輸入&#x200B;**文本詳細資訊** ，然後按一下&#x200B;**建立**。
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
    按一下您從&#x200B;**推播通知**&#x200B;方塊建立的推播通知，以開啟詳細資訊。
 
    您可以編輯屬性、傳送通知或刪除通知。
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 >[!NOTE]
 >
@@ -385,5 +385,5 @@ type=&quot;notificationsconfig&quot;/>
 
 ### 後續步驟{#the-next-steps}
 
-瞭解應用程式推播通知的詳細資訊後，請參閱「AEM Mobile內容個人化」[。](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+瞭解應用程式推播通知的詳細資訊後，請參閱「AEM Mobile內容個人化」](/help/mobile/phonegap-aem-mobile-content-personalization.md)。[
 
