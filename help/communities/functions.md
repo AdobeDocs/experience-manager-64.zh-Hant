@@ -121,7 +121,7 @@ ht-degree: 2%
 
 ### 日曆功能 {#calendar-function}
 
-日曆函式是具有[日曆元件](calendar.md)的頁，配置為允許標籤。 另請參閱[開發人員的Calendar Essentials](calendar-basics-for-developers.md)。
+日曆功能是具有[日曆元件](calendar.md)的頁，配置為允許標籤。 另請參閱[開發人員的Calendar Essentials](calendar-basics-for-developers.md)。
 
 新增至範本時，會開啟下列對話方塊：
 
