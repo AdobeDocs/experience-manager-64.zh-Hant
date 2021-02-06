@@ -75,7 +75,7 @@ AEM Forms伺服器可讓您執行JavaScript程式碼。 惡意JavaScript程式�
 
 在AEM Forms中，XFA表單範本可以透過最適化表單或其他XFA表單範本來參考。 此外，範本可參照資源或其他XFA範本。
 
-引用XFA的最適化表單的欄位與XFA中的欄位有界。 在更新表單範本時，相關的最適化表單會嘗試與XFA同步。 如需詳細資訊，請參閱「同步最適化表單與相關的XFA[」。](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
+引用XFA的最適化表單的欄位與XFA中的欄位有界。 在更新表單範本時，相關的最適化表單會嘗試與XFA同步。 如需詳細資訊，請參閱「同步最適化表單與相關的XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)」。[
 
 移除表單範本會破壞相依最適化表單或表單範本。 這種適應性表單有時被非正式地稱為臟表單。 在AEM Forms使用者介面中，您可透過下列兩種方式找到臟表單。
 
