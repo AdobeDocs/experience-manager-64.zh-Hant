@@ -122,7 +122,7 @@ AEM提供主控台，可管理元件UI中使用的各種文字翻譯。 此控�
 
 若要在本地化字串中包含變數，請在get方法第一個引數中的變數位置放置方括弧內的索引。 使用本地化提示來說明值。 翻譯者必須瞭解變數的含義，因為不同的語言使用不同的句子結構。
 
-請注意，請求翻譯字串[的程式碼會根據上下文提供索引變數的值。](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences)
+請注意，請求翻譯字串](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences)的程式碼會根據上下文提供索引變數的值。[
 
 例如，當使用者登入網站並包含在字典中時，會顯示下列字串：
 
