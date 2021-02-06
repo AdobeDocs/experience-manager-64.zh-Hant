@@ -145,7 +145,7 @@ File Data Store提供比MongoDB更好的效能，而Mongo備份和恢復操作�
 
 AEM可設定為將資料儲存在Amazon的Simple Storage Service(S3)中。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID進行配置。
 
-為了啟用S3資料儲存功能，需要下載並安裝包含S3資料儲存連接器的功能包。 前往[Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)並從1.8.x版的功能套件下載最新版本（例如com.adobe.granite.oak.s3connector-1.8.0.zip）。 此外，您也需要下載並安裝[ AEM 6.4 Service Pack發行說明](https://helpx.adobe.com/experience-manager/6-4/release-notes/feature-packs-release-notes.html)頁面中所列的最新AEM Service Pack。
+為了啟用S3資料儲存功能，需要下載並安裝包含S3資料儲存連接器的功能包。 前往[Adobe Repository](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)並從1.8.x版的功能套件下載最新版本（例如com.adobe.granite.oak.s3connector-1.8.0.zip）。 此外，您也需要下載並安裝[ AEM 6.4 Service Pack發行說明](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/feature-packs-release-notes.html)頁面中所列的最新AEM Service Pack。
 
 >[!NOTE]
 >
@@ -413,8 +413,8 @@ java -jar aem6.4.jar -r crx3tar-nofds
 
 * secretKey=&quot;&quot;:儲存訪問密鑰。 請確定&#39;=&#39;字元已逸出為&#39;\=&#39;。
 * container=&quot;&quot;:Microsoft Azure Blob儲存容器名稱。 容器是一組膨脹體的群組。 如需詳細資訊，請閱讀[官方檔案](https://msdn.microsoft.com/en-us/library/dd135715.aspx)。
-* maxConnections=&quot;&quot;:每個操作同時發出請求的併發數。 預設值為1。
-* maxErrorRetry=&quot;&quot;:每個請求的重試次數。 預設值為3。
+* maxConnections=&quot;&quot;:每個操作同時發出請求的併發數。 預設值為 1。
+* maxErrorRetry=&quot;&quot;:每個請求的重試次數。 預設值為 3。
 * socketTimeout=&quot;&quot;:請求使用的逾時間隔（以毫秒為單位）。 預設值為5分鐘。
 
 除了上述設定外，您也可以設定下列設定：
@@ -424,8 +424,8 @@ java -jar aem6.4.jar -r crx3tar-nofds
 * maxCachedBinarySize:大小小於或等於此大小的二進位檔案將儲存在記憶體快取中。 大小（以位元組為單位）。 預設值為17408(17 KB)。
 * cacheSize:快取的大小。 該值以位元組為單位指定。 預設為64GB。
 * 機密：僅在對共用資料儲存設定使用無二進位複製時使用。
-* stagingSplitPercentage:配置為用於轉移非同步上載的快取大小的百分比。 預設值為10。
-* uploadThreads:用於非同步上載的上載線程數。 預設值為10。
+* stagingSplitPercentage:配置為用於轉移非同步上載的快取大小的百分比。 預設值為 10。
+* uploadThreads:用於非同步上載的上載線程數。 預設值為 10。
 * stagingPurgeInterval:從預備快取中清除已完成上載的間隔（秒）。 預設值為300秒（5分鐘）。
 * stagingRetryInterval:失敗上載的重試間隔（秒）。 預設值為600秒（10分鐘）。
 
