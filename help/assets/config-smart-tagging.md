@@ -43,7 +43,7 @@ ht-degree: 34%
 
 1. 在[!DNL Experience Manager]使用者介面中，存取&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 雲端服務]** > **[!UICONTROL 舊版雲端服務]**。
 
-1. 在「雲端服務」頁面中，按一下「資產智慧標籤」下的「立即設定」。]****[!UICONTROL ****
+1. 在「雲端服務」頁面中，按一下「資產智慧標籤」下的「立即設定」。********
 
 1. 在&#x200B;**[!UICONTROL 建立配置]**&#x200B;對話框中，指定智慧標籤配置的標題和名稱。 按一下&#x200B;**[!UICONTROL 建立]**。
 
@@ -93,7 +93,7 @@ ht-degree: 34%
 
 ## 建立Adobe Developer Console整合{#create-adobe-i-o-integration}
 
-若要使用智慧型內容服務API，請在Adobe Developer Console中建立整合，以取得[!UICONTROL API金鑰]（產生於Adobe Developer Console整合的[!UICONTROL 用戶端ID]欄位）、[!UICONTROL 技術帳戶ID]、[!UICONTROL  ORGANIZATION&lt;A10/>&lt;A10/>&lt;A12/>中雲端組態的資產智慧標籤服務設定&lt;A11/>的ID]和[!UICONTROL 用戶端密碼]。[!DNL Experience Manager]][!UICONTROL 
+若要使用智慧型內容服務API，請在Adobe Developer Console中建立整合，以取得[!UICONTROL API金鑰]（產生於Adobe Developer Console整合的[!UICONTROL 用戶端ID]欄位）、[!UICONTROL 技術帳戶ID]、[!UICONTROL  ORGANIZATION&lt;A10/>&lt;A10/>&lt;A12/>中雲端組態的資產智慧標籤服務設定&lt;A11/>的ID]和[!UICONTROL 用戶端密碼]。[!DNL Experience Manager]
 
 1. 在瀏覽器中存取 [https://console.adobe.io](https://console.adobe.io/)。選取適當的帳戶，並確認相關聯的組織角色是系統管理員。
 
