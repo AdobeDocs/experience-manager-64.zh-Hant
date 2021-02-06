@@ -26,7 +26,7 @@ ht-degree: 0%
    [https://developer.apple.com/account/ios/identifier/bundle](https://developer.apple.com/account/ios/identifier/bundle)
 
 1. 建立應用程式ID。 如需建立應用程式ID的詳細步驟，請參閱[建立和設定應用程式ID](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html)。
-1. 若要為您的應用程式設定iOS應用程式的套件識別碼，請按一下「設定應用程式ID」**[!UICONTROL 。]**
+1. 若要為您的應用程式設定iOS應用程式的套件識別碼，請按一下「設定應用程式ID」]**。**[!UICONTROL 
 1. 在網頁底部，選擇&#x200B;**[!UICONTROL 啟用資料保護]**。 指定資料保護選項。
 
    按一下&#x200B;**[!UICONTROL Done]**。
