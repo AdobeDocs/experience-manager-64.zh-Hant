@@ -75,7 +75,7 @@ AEM會偵測是否正在建立翻譯專案以進行內容的初始翻譯，或�
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-轉譯後，您可以在使用翻譯覆蓋語言副本之前，先查看翻譯[。 ](#reviewing-and-promoting-updated-content)當選定頁面不存在語言副本時，將顯示「建立和翻譯」頁籤，以提供對項目相關命令的訪問。
+轉譯後，您可以在使用翻譯覆蓋語言副本之前，先查看翻譯](#reviewing-and-promoting-updated-content)。 [當選定頁面不存在語言副本時，將顯示「建立和翻譯」頁籤，以提供對項目相關命令的訪問。
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -395,7 +395,7 @@ AEM會偵測是否正在建立翻譯專案以進行內容的初始翻譯，或�
 
 ## 建立語言副本的結構{#creating-the-structure-of-a-language-copy}
 
-填入您的語言副本，以便包含您要翻譯的主版語言的內容。 在填入語言副本之前，您必須先建立語言副本的語言根目錄[。](/help/sites-administering/tc-prep.md#creating-a-language-root)
+填入您的語言副本，以便包含您要翻譯的主版語言的內容。 在填入語言副本之前，您必須先建立語言副本的語言根目錄](/help/sites-administering/tc-prep.md#creating-a-language-root)。[
 
 1. 使用Sites控制台來選擇您用作源的主語言的語言根目錄。 例如，若要翻譯Geometrixx展示網站的英文頁面，請選取「內容> Geometrixx展示網站>英文」。
 1. 在工具欄上，按一下或點選「參照」(References)。
