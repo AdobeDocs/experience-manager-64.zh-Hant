@@ -26,7 +26,7 @@ AEM社群在全球擁有數以千計的成員。 從新手到Experience Manager�
 
 會員有許多活動！ 我們每個月都會舉辦研討會，讓您向專家詢問特定AEM主題。 我們也會通知您有關您所在地區的主要活動，例如[Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html)或[Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other)，或甚至使用者群組活動。
 
-最好做的是今天就造訪AEM社群，並查看發生的情況。[](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+最好做的是今天就造訪AEM社群，並查看發生的情況。](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)[
 
 ## 我可以取得程式碼範例來協助我嗎？{#code-samples}
 
