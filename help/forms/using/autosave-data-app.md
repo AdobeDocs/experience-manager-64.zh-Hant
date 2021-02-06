@@ -36,7 +36,7 @@ ht-degree: 0%
 
 執行下列步驟，在AEM Forms應用程式中使用自動儲存功能：
 
-1. 登入應用程式，並導覽至「設定>一般」**[!UICONTROL 。]**
+1. 登入應用程式，並導覽至「設定>一般」]**。**[!UICONTROL 
 1. 在「一般」畫面中，使用「自動儲存頻率」選項來選取您希望應用程式儲存輸入資料的間隔。****
    [ ![設定自動保存頻率](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
