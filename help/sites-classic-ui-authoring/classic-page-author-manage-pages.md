@@ -71,7 +71,7 @@ ht-degree: 3%
     /...
 ```
 
-此結構可從「網站」主控台檢視，您可使用此主控台瀏覽樹狀結構[。](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15)
+此結構可從「網站」主控台檢視，您可使用此主控台瀏覽樹狀結構](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15)。[
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -152,7 +152,7 @@ AEM隨附數個現成可用的範本。 提供的範本取決於個別網站，�
 * 影片
 * 更多
 
-建立並開啟頁面後，您就可使用](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)sidekick[中提供的元件[新增內容。](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)
+建立並開啟頁面後，您就可使用[sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)中提供的元件](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)新增內容。[
 
 ## 管理頁面{#managing-pages}
 
