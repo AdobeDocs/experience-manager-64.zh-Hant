@@ -375,7 +375,7 @@ Search&amp;Promote整合可讓您：
 
 >[!NOTE]
 >
->另請閱讀「AEM[中的事件處理」。](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)[](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
+>另請閱讀「AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)中的事件處理」。[](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)[
 
 ### 加入購物車連結的影像{#image-with-add-to-cart-links}
 
