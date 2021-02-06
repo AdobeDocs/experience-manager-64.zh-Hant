@@ -1,5 +1,5 @@
 ---
-title: 資產網路考量事項
+title: Assets 網路考量事項
 description: 討論設計AEM Assets部署時的網路考量。
 contentOwner: AG
 translation-type: tm+mt
