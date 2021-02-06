@@ -31,7 +31,7 @@ AEM 6.4 Assets包含數種可用性改進，可提供順暢的使用體驗並提
 
 若要調整卡片檢視中縮圖的大小，請執行下列步驟：
 
-1. 點選／按一下工具列中的「版面」圖示，然後選擇「檢視設定」**[!UICONTROL 選項。]**
+1. 點選／按一下工具列中的「版面」圖示，然後選擇「檢視設定」]**選項。**[!UICONTROL 
 
    ![view_settings](assets/view_settings.png)
 
@@ -53,7 +53,7 @@ AEM 6.4 Assets包含數種可用性改進，可提供順暢的使用體驗並提
 
 ![list_view](assets/list_view.png)
 
-您可以選擇設定要顯示的詳細資料量。 點選／按一下「版面」圖示，選擇「檢視設定」**[!UICONTROL 選項，並指定您要在「檢視設定」]**&#x200B;對話方塊中顯示的欄。****
+您可以選擇設定要顯示的詳細資料量。 點選／按一下「版面」圖示，選擇「檢視設定」**[!UICONTROL 選項，並指定您要在「檢視設定」]**&#x200B;對話方塊中顯示的欄。]****[!UICONTROL 
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
