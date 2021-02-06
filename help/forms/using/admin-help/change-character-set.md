@@ -22,7 +22,7 @@ ht-degree: 1%
 
 您可以指定用於編碼輸出流的字元集。
 
-1. 在管理控制台中，按一下「服務>輸出&#x200B;**[!UICONTROL 」。]**
+1. 在管理控制台中，按一下「服務>輸出&#x200B;]**」。**[!UICONTROL 
 1. 在「國際化」下的「字元集」清單中，選擇一個字元集。 此設定取決於透過API指定的`TransformationFormat`和`PrintFormat`。 要指定列出的字元集以外的字元集，請選擇「自定義」並在顯示的框中指定編碼值。
 
    如果`TransformationFormat`是PDF，而PDF/A或`PrintFormat`是PCL、PostScript、Zebra標籤、IPL、DPL、TPCL、GenericColorPCL或GenericPSLevel3，則只支援特定字元集。
