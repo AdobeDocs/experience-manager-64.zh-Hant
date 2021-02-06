@@ -1,5 +1,5 @@
 ---
-title: 資產卸載最佳做法
+title: 資產卸載最佳實務
 description: 建議在AEM Assets中卸載資產擷取和複製工作流程的使用案例和最佳實務。
 contentOwner: AG
 translation-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# 資產卸載最佳實踐{#assets-offloading-best-practices}
+# 資產卸載最佳實務 {#assets-offloading-best-practices}
 
 >[!WARNING]
 >
