@@ -98,7 +98,7 @@ AEM Forms可讓您在文字模組中使用內嵌條件，以自動呈現依賴�
 
 ### 範例：在互動式通訊中使用重複，以格式化、建構及顯示信用卡交易清單{#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
-以下範例提供使用重複來建構並轉換互動式通訊中信用卡交易的步驟。
+以下範例提供使用重複來建構和轉換互動式通訊中信用卡交易的步驟。
 
 1. 在基於表單資料模型的文本文檔片段中，插入相關的表單資料模型對象（以及標籤所需的嵌入文本，如本例所示）:
 
