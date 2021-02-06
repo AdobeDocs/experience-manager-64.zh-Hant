@@ -41,7 +41,7 @@ ht-degree: 1%
 >
 >本節詳細說明傳送的原始元件，以便與&#x200B;**General**&#x200B;群組中的內容片段(**Content Fragment**)搭配使用。
 
-Adobe Experience Manager(AEM)內容片段會建 [立並管理為不受頁面影響的資產](/help/assets/content-fragments.md)。它們可讓您建立不受頻道影響的內容，以及（可能是特定頻道的）變化。 [然後，您可以在編寫內容頁面時使用這些片段及其變化](/help/sites-authoring/content-fragments.md)。您也可以使用現有的內容片段資產，方法是將資產從資產瀏覽器拖曳至頁面[（至於其他以資產為基礎的元件，例如基礎元件影像）。 ](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)現成的內容片段元件只顯示參考內容片段的一個[元素](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)。 使用元件對話框，可以定義要在頁面上顯示的[元素、變化和片段段落](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)範圍。
+Adobe Experience Manager(AEM)內容片段會建 [立並管理為不受頁面影響的資產](/help/assets/content-fragments.md)。它們可讓您建立不受頻道影響的內容，以及（可能是特定頻道的）變化。 [然後，您可以在編寫內容頁面時使用這些片段及其變化](/help/sites-authoring/content-fragments.md)。您也可以使用現有的內容片段資產，方法是將資產從資產瀏覽器拖曳至頁面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)（至於其他以資產為基礎的元件，例如基礎元件影像）。 [現成的內容片段元件只顯示參考內容片段的一個[元素](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)。 使用元件對話框，可以定義要在頁面上顯示的[元素、變化和片段段落](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment)範圍。
 
 >[!NOTE]
 >
