@@ -181,7 +181,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
-   * 通過為`MTOM`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`MTOM`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 
 1. 指定要套用的使用權限。
 
@@ -204,9 +204,9 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 1. 儲存具權限的PDF檔案。
 
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表啟用權限的PDF檔案的檔案位置。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表啟用權限的PDF檔案的檔案位置。
    * 建立一個位元組陣列，用於儲存`applyUsageRights`方法返回的`BLOB`對象的資料內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -336,7 +336,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
-   * 通過為`MTOM`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`MTOM`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 
 1. 從PDF檔案移除使用權。
 
@@ -346,7 +346,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
    * 叫用其建構函式並傳遞代表PDF檔案位置的字串值，以建立`System.IO.FileStream`物件。
    * 建立一個位元組陣列，用於儲存`removeUsageRights`方法返回的`BLOB`對象的資料內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
 
 **另請參閱**
 
@@ -421,7 +421,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
 
 1. 擷取PDF檔案。
 
-   * 使用`java.io.FileInputStream`物件的建構函式，並傳遞字串值，指定啟用權限的PDF檔案位置，以建立代表啟用權限的PDF檔案的&lt;a0/>物件。
+   * 使用`java.io.FileInputStream`物件的建構函式，並傳遞字串值，指定啟用權限的PDF檔案位置，以建立代表啟用權限的PDF檔案的物件。
    * 使用其建構子並傳遞`java.io.FileInputStream`對象，建立`com.adobe.idp.Document`對象。
 
 1. 從PDF檔案移除使用權。
@@ -471,7 +471,7 @@ Acrobat Reader DC擴充功能服務可讓貴組織透過擴充Adobe Reader的功
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示啟用權限的PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
-   * 通過為`MTOM`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`MTOM`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 
 1. 從PDF檔案移除使用權。
 
