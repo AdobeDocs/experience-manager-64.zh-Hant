@@ -232,7 +232,7 @@ LDAP身份提供程式可使用以下配置選項：
 
 AEM 6可依下列程式設定，以透過SSL使用LDAP進行驗證：
 
-1. 在配置&#x200B;**LDAP身份提供程式[時，選中「使用SSL**&#x200B;或&#x200B;**使用TLS**」複選框。](#configuring-the-ldap-identity-provider)
+1. 在配置[LDAP身份提供程式](#configuring-the-ldap-identity-provider)時，選中「使用SSL **或**&#x200B;使用TLS **」複選框。**
 1. 根據您的設定配置同步處理程式和外部登錄模組。
 1. 視需要在Java VM中安裝SSL憑證。 您可使用keytool:
 
