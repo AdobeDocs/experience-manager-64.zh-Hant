@@ -266,7 +266,7 @@ sidekick的&#x200B;**Components**&#x200B;標籤（可在報表頁面上使用）
 
 ### 載入資料 {#load-data}
 
-**從**[&#x200B;編輯&#x200B;](#edit-report)**中選擇了**&#x200B;手動刷新資料&#x200B;**時，&lt;a0/>載入資料**&#x200B;按鈕才顯示。
+**從**[&#x200B;編輯&#x200B;](#edit-report)**中選擇了**&#x200B;手動刷新資料&#x200B;**時，載入資料**&#x200B;按鈕才顯示。
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
