@@ -86,7 +86,7 @@ AEM以Granite平台為基礎，Granite平台包括Java內容儲存庫等。
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-## 花崗岩{#granite}
+## Granite {#granite}
 
 Granite是Adobe的Open Web堆疊，提供多種元件，包括：
 
@@ -489,7 +489,7 @@ $(".tagManager").tagsManager({
 
 這將顯示為：
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-111](assets/chlimage_1-191.png)
 
 ### 實用程式庫{#utility-library}
 
