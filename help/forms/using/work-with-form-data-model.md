@@ -218,7 +218,7 @@ ht-degree: 0%
 >
 >添加的關聯會以指定的標題和連接關聯資料模型對象的一行出現在資料模型對象框中。
 >
->您可以通過選中相應的複選框來編輯關聯，然後按一下「編輯關聯」(Edit Association)**[!UICONTROL 。]**
+>您可以通過選中相應的複選框來編輯關聯，然後按一下「編輯關聯」(Edit Association)]**。**[!UICONTROL 
 
 ![添加關聯](assets/added-association.png)
 
