@@ -436,7 +436,7 @@ Dependent on the predicate a selection of settings are available for configurati
 1. [開啟自訂的](#creating-opening-a-customized-configuration) 設定以進行更新。
 1. 如果要添加新欄位，請開啟&#x200B;**選擇謂詞**&#x200B;頁籤，並將所需的謂詞拖動到所需位置。 例如，**日期範圍謂詞**:
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. 取決於：
 
@@ -449,7 +449,7 @@ Dependent on the predicate a selection of settings are available for configurati
       選擇謂詞欄位（在右側），然後開啟&#x200B;**Settings**&#x200B;頁籤。
    例如，**日期範圍謂詞**&#x200B;的設定：
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
 1. 視需要進行變更，並使用&#x200B;**Done**&#x200B;確認。
 
