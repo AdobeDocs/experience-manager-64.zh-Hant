@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 workflow-type: tm+mt
 source-wordcount: '454'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -74,7 +74,7 @@ We.Retail中有數個範例內容片段；透過&#x200B;**Assets**、**Files**�
 
 ## We.Retail {#where-content-fragments-are-used-in-we-retail}中使用內容片段的位置
 
-為了說明使用內容片段[製作頁面的方式，以下列幾個範例頁面提供：](/help/sites-authoring/content-fragments.md)
+為了說明使用內容片段](/help/sites-authoring/content-fragments.md)製作頁面的方式，以下列幾個範例頁面提供：[
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
