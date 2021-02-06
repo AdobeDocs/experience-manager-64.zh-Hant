@@ -134,7 +134,7 @@ ht-degree: 0%
 
 ### 以最適化形式{#embed-a-fragment-in-adaptive-form}嵌入片段
 
-您可以按一下「內嵌資產」，選擇在最適化表單中嵌入最適化表單片段：**[!UICONTROL fragmentName *按鈕，位於新增片段的面板工具列上，如下列範例影像所示。*]**
+您可以按一下「內嵌資產」，選擇在最適化表單中嵌入最適化表單片段：*fragmentName *]**按鈕，位於新增片段的面板工具列上，如下列範例影像所示。**[!UICONTROL 
 
 ![在最適化表單中嵌入表單片段](assets/embed-fragment.png)
 
