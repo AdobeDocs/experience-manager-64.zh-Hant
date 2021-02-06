@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: b03cf9213ec7677409d7dea9a2ff12ac9d6752c9
 workflow-type: tm+mt
 source-wordcount: '5029'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -228,7 +228,7 @@ ContextHub.Utils.Persistence物件。 有關預設值和初始化的資訊，請
 
 **參數**
 
-* **includeInternals:** 結果中包 `true` 含內部使用的鍵的值。這些鍵以下划線(&quot;_&quot;)字元開頭。 預設值為`false`。
+* **includeInternals:** 結果中包 `true` 含內部使用的鍵的值。這些鍵以下划線(&quot;_&quot;)字元開頭。 預設值為 `false`.
 
 **退貨**
 
@@ -252,7 +252,7 @@ ContextHub.Utils.Persistence物件。 有關預設值和初始化的資訊，請
 
 **參數**
 
-* `includeInternals:` 值包括 `true` 結果中內部使用的鍵／值對。此資料的鍵以下划線(&quot;_&quot;)字元開頭。 預設值為`false`。
+* `includeInternals:` 值包括 `true` 結果中內部使用的鍵／值對。此資料的鍵以下划線(&quot;_&quot;)字元開頭。 預設值為 `false`.
 
 **退貨**
 
@@ -305,7 +305,7 @@ ContextHub.Utils.Persistence物件。 有關預設值和初始化的資訊，請
 * **key:** （字串）要移除的索引鍵名稱。
 * **選項：** （對象）選項的對象。以下對象屬性有效：
 
-   * silent:值`true`可防止觸發`data`事件。 預設值為`false`。
+   * silent:值`true`可防止觸發`data`事件。 預設值為 `false`.
 
 **退貨**
 
@@ -378,7 +378,7 @@ ContextHub.Utils.Persistence物件。 有關預設值和初始化的資訊，請
 * **key:** （字串）索引鍵的名稱。
 * **選項：** （對象）選項的對象。以下對象屬性有效：
 
-   * silent:值`true`可防止觸發`data`事件。 預設值為`false`。
+   * silent:值`true`可防止觸發`data`事件。 預設值為 `false`.
 
 * **value:** （物件）與索引鍵關聯的值。
 
@@ -538,7 +538,7 @@ ContextHub.Store.SessionStore擴充了[ContextHub.Store.Core](/help/sites-develo
 
 * **moduleType:** (String)UI模組轉譯器的識別碼。如果已使用指定值註冊了渲染器，則在註冊此渲染器之前會先取消註冊現有渲染器。
 * **renderer:** （字串）轉換UI模組的類名。
-* **dontRender:** （布林值）設為 `true` 防止在註冊轉譯器後轉譯ContextHub UI。預設值為`false`。
+* **dontRender:** （布林值）設為 `true` 防止在註冊轉譯器後轉譯ContextHub UI。預設值為 `false`.
 
 **範例**
 
@@ -668,9 +668,9 @@ ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 * **value：包** 含Cookie值的字串。
 * **選項：** （可選）包含下列任何設定Cookie屬性的屬性的物件：
 
-   * 過期：指定Cookie過期時間的`date`或`number`值。 日期值指定到期的絕對時間。 數字（以天為單位）會將到期時間設定為目前時間加上數字。 預設值為`undefined`。
-   * 安全：指定Cookie之`Secure`屬性的`boolean`值。 預設值為`false`。
-   * 路徑：`String`值，用作Cookie的`Path`屬性。 預設值為`undefined`。
+   * 過期：指定Cookie過期時間的`date`或`number`值。 日期值指定到期的絕對時間。 數字（以天為單位）會將到期時間設定為目前時間加上數字。 預設值為 `undefined`.
+   * 安全：指定Cookie之`Secure`屬性的`boolean`值。 預設值為 `false`.
+   * 路徑：`String`值，用作Cookie的`Path`屬性。 預設值為 `undefined`.
 
 **退貨**
 
@@ -732,7 +732,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 * **handler:** （函式）要綁定到事件的函式。
 * **selector:** （字串）系結的唯一識別碼。如果要使用`off`函式來移除系結，則需要選擇器來識別系結。
 
-* **triggerForPastEvents:** (Boolean)指出是否應針對過去發生的事件執行處理常式。值`true`會呼叫過去事件的處理常式。 值`false`會呼叫處理器，以處理未來事件。 預設值為`true`。
+* **triggerForPastEvents:** (Boolean)指出是否應針對過去發生的事件執行處理常式。值`true`會呼叫過去事件的處理常式。 值`false`會呼叫處理器，以處理未來事件。 預設值為 `true`.
 
 **退貨**
 
@@ -774,7 +774,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 * **handler:** （函式）要綁定到事件的函式。
 * **selector:** （字串）系結的唯一識別碼。如果要使用`off`函式來移除系結，則需要選擇器來識別系結。
 
-* **triggerForPastEvents:** (Boolean)指出是否應針對過去發生的事件執行處理常式。值`true`會呼叫過去事件的處理常式。 值`false`會呼叫處理器，以處理未來事件。 預設值為`true`。
+* **triggerForPastEvents:** (Boolean)指出是否應針對過去發生的事件執行處理常式。值`true`會呼叫過去事件的處理常式。 值`false`會呼叫處理器，以處理未來事件。 預設值為 `true`.
 
 **退貨**
 
