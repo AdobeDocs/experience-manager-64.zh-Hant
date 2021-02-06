@@ -210,7 +210,7 @@ ht-degree: 22%
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
-1. 按一下／點選底部的「更新語言副本&#x200B;**[!UICONTROL 」。]**
+1. 按一下／點選底部的「更新語言副本&#x200B;]**」。**[!UICONTROL 
 
    ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -264,7 +264,7 @@ ht-degree: 22%
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. 按一下／點選底部的「更新語言副本&#x200B;**[!UICONTROL 」。]**
+1. 按一下／點選底部的「更新語言副本&#x200B;]**」。**[!UICONTROL 
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
