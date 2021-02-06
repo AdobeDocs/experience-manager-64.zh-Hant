@@ -88,7 +88,7 @@ ht-degree: 0%
   <tr>
    <td> </td>
    <td>版面範本</td>
-   <td>指定用於「已提交表單」清單的佈局。</strong><strong> </strong></td>
+   <td>指定用於「已提交表單」清單的佈局。<strong></strong> </td>
   </tr>
  </tbody>
 </table>
