@@ -704,7 +704,7 @@ Document Security服務也可保護其他檔案類型，例如Microsoft Word檔�
 
    * 叫用其建構函式並傳遞字串值，以建立`System.IO.FileStream`物件，此字串值代表受原則保護PDF檔案的檔案位置。
    * 建立一個位元組陣列，用於儲存`protectDocument`方法返回的`BLOB`對象的資料內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **程式碼範例**
@@ -834,9 +834,9 @@ Document Security服務也可保護其他檔案類型，例如Microsoft Word檔�
 
 1. 儲存不安全的PDF檔案。
 
-   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示不安全PDF文檔的檔案位置。
+   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示不安全PDF文檔的檔案位置。
    * 建立一個位元組陣列，用於儲存`removePolicySecurity`方法返回的`BLOB`對象的資料內容。 取得`BLOB`物件的`MTOM`欄位值，以填入位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
 
 **程式碼範例**
 
@@ -966,7 +966,7 @@ Document Security服務也可保護其他檔案類型，例如Microsoft Word檔�
 1. 擷取受原則保護的PDF檔案
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件可用來儲存已撤銷受原則保護的PDF檔案。
-   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示要撤銷的受原則保護PDF文檔的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示要撤銷的受原則保護PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
    * 通過為`MTOM`對象的欄位分配位元組陣列的內容來填充`BLOB`對象。
@@ -1232,7 +1232,7 @@ Document Security服務也可保護其他檔案類型，例如Microsoft Word檔�
 1. 擷取受原則保護的檔案以進行檢查。
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存要檢查的PDF檔案。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表PDF檔案的檔案位置，以及在中開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表PDF檔案的檔案位置，以及在中開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
    * 通過為`MTOM`對象的欄位分配位元組陣列的內容來填充`BLOB`對象。
@@ -1681,7 +1681,7 @@ Rights Management服務會在特定動作發生時追蹤這些動作，例如將
 1. 指定要搜尋的事件
 
    * 調用`DocumentSecurityClient`物件的`getEventManager`方法，以建立`EventManager`物件。 此方法返回`EventManager`對象。
-   * 通過調用`EventSearchFilter`對象的建構子建立&lt;a0/>對象。
+   * 通過調用`EventSearchFilter`對象的建構子建立對象。
    * 通過調用`EventSearchFilter`對象的`setEventCode`方法並傳遞屬於`EventManager`類的靜態資料成員（表示要搜索的事件），指定要搜索的事件。 例如，要搜索策略建立事件，請傳遞`EventManager.POLICY_CREATE_EVENT`。
 
    >[!NOTE]
@@ -2072,7 +2072,7 @@ Rights Management服務會在特定動作發生時追蹤這些動作，例如將
 1. 擷取Word檔案。
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`對象用於儲存應用策略的Word文檔。
-   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示Word文檔的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示Word文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 取得`System.IO.FileStream`物件的`Length`屬性，以決定位元組陣列大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
    * 通過為`MTOM`對象的欄位分配位元組陣列的內容來填充`BLOB`對象。
@@ -2096,9 +2096,9 @@ Rights Management服務會在特定動作發生時追蹤這些動作，例如將
 
 1. 儲存Word檔案。
 
-   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示受原則保護的Word文檔的檔案位置。
+   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示受原則保護的Word文檔的檔案位置。
    * 建立一個位元組陣列，用於儲存`protectDocument`方法返回的`BLOB`對象的資料內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入Word檔案。
 
 **程式碼範例**
@@ -2216,7 +2216,7 @@ Rights Management服務會在特定動作發生時追蹤這些動作，例如將
 1. 擷取受原則保護的Word檔案
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存移除原則之受原則保護Word檔案。
-   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示Word文檔的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示Word文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
    * 通過為`MTOM`對象的欄位分配位元組陣列的內容來填充`BLOB`對象。
@@ -2227,9 +2227,9 @@ Rights Management服務會在特定動作發生時追蹤這些動作，例如將
 
 1. 儲存不安全的Word檔案
 
-   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示不安全Word文檔的檔案位置。
+   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示不安全Word文檔的檔案位置。
    * 建立一個位元組陣列，用於儲存`removePolicySecurity`方法返回的`BLOB`對象的資料內容。 取得`BLOB`物件的`MTOM`欄位值，以填入位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
 
 **程式碼範例**
 
