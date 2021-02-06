@@ -140,7 +140,7 @@ static.css檔案和影像範例
 
 1. 若要指定可使用此範本的頁面路徑，請按一下加號按鈕，然後在顯示的文字方塊中輸入`/content(/.*)?`。 然後，按一下&#x200B;**[!UICONTROL Next]**。
 
-   ![chlimage_1-106](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
    允許的路徑屬性的值是&#x200B;*規則運算式。* 路徑與運算式相符的頁面可以使用範本。在這種情況下，規則運算式與`/content`資料夾和所有子頁的路徑匹配。
 
@@ -148,7 +148,7 @@ static.css檔案和影像範例
 
 1. 在&#x200B;**[!UICONTROL 允許父代]**&#x200B;和&#x200B;**[!UICONTROL 允許子代]**&#x200B;面板中按一下&#x200B;**[!UICONTROL Next]**，然後按一下&#x200B;**[!UICONTROL 確定]**。 在CRXDE Lite中，按一下「全部儲存」。****
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-105](assets/chlimage_1-106.png)
 
 #### 建立Contentpage元件{#creating-the-contentpage-component}
 
@@ -212,7 +212,7 @@ static.css檔案和影像範例
    </html>
    ```
 
-1. 按一下「全部儲存」，儲存變更。]****[!UICONTROL 
+1. 按一下「全部儲存」，儲存變更。****
 
 ### 建立網站頁面和內容頁面{#creating-your-website-page-and-content-pages}
 
@@ -258,7 +258,7 @@ static.css檔案和影像範例
 
    您的結構如下所示：
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-191](assets/chlimage_1-111.png)
 
 1. 若要將頁面連結至mywebsite設計，請在CRXDE Lite中，選取`/content/mywebsite/en/jcr:content`節點。 在&#x200B;**[!UICONTROL Properties]**&#x200B;標籤中，鍵入新屬性的下列值，然後按一下Add:
 
@@ -411,7 +411,7 @@ static.css檔案和影像範例
 
 您的頂端導覽如下所示：
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 #### 建立頂級導航元件{#creating-the-top-navigation-component-1}
 
@@ -470,7 +470,7 @@ static.css檔案和影像範例
 1. 儲存變更。
 1. 在瀏覽器中，重新載入&#x200B;**[!UICONTROL 產品]**&#x200B;頁面。 頂端導覽顯示如下：
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 #### 使用字幕增強頁面{#enhancing-pages-with-subtitles}
 
@@ -915,7 +915,7 @@ static.css檔案和影像範例
       * **[!UICONTROL 標題]** `Logo (Design)`
 
 1. 在design_dialog分支中按一下右鍵tab1節點，然後按一下「刪除」。 按一下&#x200B;**[!UICONTROL 保存全部]**。
-1. 在`design_dialog/items/items`節點下，建立名為`img`類型`cq:Widget`的新節點。 新增下列屬性，然後按一下「全部儲存」:]****[!UICONTROL 
+1. 在`design_dialog/items/items`節點下，建立名為`img`類型`cq:Widget`的新節點。 新增下列屬性，然後按一下「全部儲存」:****
 
    | 名稱 | 類型 | 值 |
    |---|---|---|
@@ -1498,7 +1498,7 @@ public class img_GET extends AbstractImageServlet {
 1. 在Sidekick上，按一下三角形以返回&#x200B;**[!UICONTROL Edit]**&#x200B;模式。
 1. 將&#x200B;**[!UICONTROL My Search]**&#x200B;元件從Sidekick拖曳至parsys影格。 其外觀如下：
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. 導覽至您的&#x200B;**[!UICONTROL 產品]**&#x200B;頁面。 在輸入框中搜索客戶，然後按&#x200B;**[!UICONTROL Enter]**&#x200B;鍵。 您會被重新導向至&#x200B;**[!UICONTROL Search]**&#x200B;頁面。 切換到&#x200B;**[!UICONTROL 預覽]**&#x200B;模式：輸出的格式與以下類似：
 
