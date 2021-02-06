@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 員工招聘參考地點逐步瞭解{#employee-recruitment-reference-site-walkthrough}
 
-## 先決條件{#prerequisite}
+## 必備條件 {#prerequisite}
 
 依照[設定和設定AEM Forms參考網站](/help/forms/using/setup-reference-sites.md)中所述，設定參考網站。
 
