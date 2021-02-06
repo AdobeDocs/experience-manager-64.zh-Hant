@@ -185,7 +185,7 @@ ht-degree: 0%
    >
    >**對於Adobe Campaign Classic:**
    >
-   >* 可用的上下文欄位會從Adobe Campaign **nms:seedMember**&#x200B;架構動態復原。 目標擴充功能資料會從包含與內容同步傳送的工作流程中動態復原。 （請參閱「同步化在AEM中建立的內容與Adobe Campaign[的傳送」一節）。](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)
+   >* 可用的上下文欄位會從Adobe Campaign **nms:seedMember**&#x200B;架構動態復原。 目標擴充功能資料會從包含與內容同步傳送的工作流程中動態復原。 （請參閱「同步化在AEM中建立的內容與Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)的傳送」一節）。[
       >
       >
    * 若要新增或隱藏個人化元素，請參閱[管理個人化欄位和區塊](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks)。
