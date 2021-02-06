@@ -41,7 +41,7 @@ ht-degree: 5%
 
 當包含[必要的用戶端程式庫](calendar-basics-for-developers.md#essentials-for-client-side)時，`Calendar`元件的顯示方式就是這樣。
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### 配置日曆{#configuring-calendar}
 
@@ -189,7 +189,7 @@ ht-degree: 5%
 
 當登入的使用者擁有協調者或管理員權限時，他們可以在所有張貼至事件的日曆事件和留言上執行[協調工作](moderate-ugc.md)（依照元件的設定）。
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### 成員 {#members}
 
