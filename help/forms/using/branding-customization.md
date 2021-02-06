@@ -101,7 +101,7 @@ ht-degree: 1%
 
 1. 在iOS裝置或iOS模擬器上建立並執行AEM Forms應用程式。
 
-   如需建立iOS應用程式的詳細資訊，請參閱「設定Xcode專案並建立iOS應用程式」[。](/help/forms/using/setup-xcode-project-build-installer.md)
+   如需建立iOS應用程式的詳細資訊，請參閱「設定Xcode專案並建立iOS應用程式」](/help/forms/using/setup-xcode-project-build-installer.md)。[
 
 ### 對於Android {#for-android-1}
 
