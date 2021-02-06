@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 1. 前往`https://[server]:[port]/system/console/configMgr`的AEM網頁主控台組態管理器。
 1. 按一下&#x200B;**自適應表單和互動式通信Web通道配置**&#x200B;以編輯其配置值。
-1. 在編輯設定值對話方塊中，在&#x200B;**Number of Adaptive Forms**&#x200B;欄位中指定AEM Forms伺服器執行個體可快取的表單或檔案數上限。 預設值為100。
+1. 在編輯設定值對話方塊中，在&#x200B;**Number of Adaptive Forms**&#x200B;欄位中指定AEM Forms伺服器執行個體可快取的表單或檔案數上限。 預設值為 100。
 
    >[!NOTE]
    >
