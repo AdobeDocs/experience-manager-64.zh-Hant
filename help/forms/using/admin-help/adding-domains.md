@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ### 一般注意事項{#general-considerations}
 
-* 使用DB2以外的資料庫提供程式時，域ID最多可包含50個位元組。 如果您使用單位元組ASCII字元，限制為50個字元。 如果網域識別碼包含多位元組字元，此限制會降低。 例如，如果您建立的網域的識別碼包含3位元組字元，則限制為16個字元。 此外，您不能建立包含4位元組字元的網域。 如果您建立的網域ID超過此限制，AEM表單將處於不穩定狀態。 要從此不穩定狀態中恢復，請參閱本頁上的「刪除包含擴展字元或多位元組字元[的域」。](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)
+* 使用DB2以外的資料庫提供程式時，域ID最多可包含50個位元組。 如果您使用單位元組ASCII字元，限制為50個字元。 如果網域識別碼包含多位元組字元，此限制會降低。 例如，如果您建立的網域的識別碼包含3位元組字元，則限制為16個字元。 此外，您不能建立包含4位元組字元的網域。 如果您建立的網域ID超過此限制，AEM表單將處於不穩定狀態。 要從此不穩定狀態中恢復，請參閱本頁上的「刪除包含擴展字元或多位元組字元](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)的域」。[
 * 在AEM表單中可建立的企業網域和本機網域數目，視每個網域ID的長度而定。 當您新增企業或混合網域時，「使用者管理」會更新AEM表單設定檔(config.xml)的「AuthProviders」節點中的configInstance字串。 configInstance字串包含以冒號分隔的清單，列出與授權提供者相關聯之所有網域的絕對路徑。 此字串的大小限制為8192個字元。 達到此限制時，您無法建立其他網域。
 
 ### 使用DB2 {#considerations-when-using-db2}時的注意事項
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 將MySQL用作AEM表單資料庫時，會套用下列限制：
 
-* 網域ID和網域名稱僅使用單位元組(ASCII)字元。 如果您使用延伸ASCII字元，AEM表單將會處於不穩定狀態，如果您嘗試刪除網域，可能會擲回例外。 要從此不穩定狀態中恢復，請參閱本頁上的「刪除包含擴展字元或多位元組字元[的域」主題。](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)
+* 網域ID和網域名稱僅使用單位元組(ASCII)字元。 如果您使用延伸ASCII字元，AEM表單將會處於不穩定狀態，如果您嘗試刪除網域，可能會擲回例外。 要從此不穩定狀態中恢復，請參閱本頁上的「刪除包含擴展字元或多位元組字元](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)的域」主題。[
 * 您無法建立兩個名稱相同但大小寫的網域。 例如，嘗試建立名為&#x200B;*Adobe*&#x200B;的網域時，名為&#x200B;*adobe*&#x200B;的網域已存在，會導致錯誤。
 * 「使用者管理」無法區分兩個網域名稱，這兩個網域名稱僅在使用擴充字元時不同。 例如，如果您建立名為&#x200B;*abcde*&#x200B;的網域和名為*âbcdè *的網域，則會視為相同。
 
