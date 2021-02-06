@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
 source-wordcount: '1647'
-ht-degree: 36%
+ht-degree: 37%
 
 ---
 
@@ -64,7 +64,7 @@ Adobe Experience Manager(AEM)Assets是透過[!DNL Adobe I/O]設定品牌入口�
 
 如需詳細指示，請參閱
 
-* [AEM 6.4 Service Pack發行說明](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html)
+* [AEM 6.4 Service Pack發行說明](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
 **如果您** 找不到最新的AEM套件或Service Pack，請聯絡Customer Care。
 
@@ -278,7 +278,7 @@ IMS 設定包括兩個步驟：
 * [從 AEM Assets 發佈資產到 Brand Portal](../assets/brand-portal-publish-assets.md)
 * [從 AEM Assets 發佈資料夾到 Brand Portal](../assets/brand-portal-publish-folder.md)
 * [從 AEM Assets 發佈集合到 Brand Portal](../assets/brand-portal-publish-collection.md)
-* [設定資產](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 來源，讓Brand Portal使用者將資產提供並發佈至AEM Assets。
+* [設定資產](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 來源，讓Brand Portal使用者將資產提供並發佈至AEM Assets。
 
 ## 升級配置{#upgrade-integration-64}
 
