@@ -209,7 +209,7 @@ JSONP商店和其他商店一樣，但是它會載入來自其他網域的資訊
 
 ### 添加屬性元件{#adding-a-property-component}
 
-開啟&#x200B;**ClientContext設計頁**&#x200B;後，也可以使用可用元件&#x200B;**添加**&#x200B;全新屬性（元件列在側鍵上，或列在&#x200B;**拖曳元件或資產此處&lt;a6/>後開啟的**&#x200B;插入新元件&#x200B;**對話框中）7/>包裝盒：**
+開啟&#x200B;**ClientContext設計頁**&#x200B;後，也可以使用可用元件&#x200B;**添加**&#x200B;全新屬性（元件列在側鍵上，或列在&#x200B;**拖曳元件或資產此處**&#x200B;後開啟的&#x200B;**插入新元件**&#x200B;對話框中）7/>包裝盒：
 
 ![clientcontext_alisonparker_new](assets/clientcontext_alisonparker_new.png)
 
