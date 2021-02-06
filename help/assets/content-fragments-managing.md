@@ -120,7 +120,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->其中許多是[ Assets](managing-assets-touch-ui.md)和／或[案頭應用程式](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
+>其中許多是[ Assets](managing-assets-touch-ui.md)和／或[案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
 
 ## 開啟片段編輯器{#opening-the-fragment-editor}
 
@@ -167,7 +167,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->版本也可以從時間軸[建立、比較和回復。](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)
+>版本也可以從時間軸](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)建立、比較和回復。[
 
 編輯器有兩個選項：
 
@@ -268,7 +268,7 @@ ht-degree: 11%
 
 ## 比較片段版本{#comparing-fragment-versions}
 
-在您選擇特定版本後，**[!UICONTROL Timeline]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)可從[[!UICONTROL  Timeline&lt;a3/>&lt;a4/>中使用「比較當前]**」操作。
+在您選擇特定版本後，**[!UICONTROL Timeline]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)可從[[!UICONTROL  Timeline中使用「比較當前]**」操作。
 
 此選項將開啟：
 
