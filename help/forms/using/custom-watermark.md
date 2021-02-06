@@ -25,7 +25,7 @@ ht-degree: 0%
 
 為防止未授權使用此資料，組織可在預覽PDF上加上浮水印。 預設的浮水印為「預覽」，會顯示在PDF中。
 
-若要在預覽PDF中啟用水印，請在&#x200B;**[!UICONTROL 對應管理組態]**&#x200B;的&#x200B;**[!UICONTROL 中選取「在預覽時套用水印」選項。]**`https://[server]:[port]/system/console/configMgr`
+若要在預覽PDF中啟用水印，請在&#x200B;**[!UICONTROL 對應管理組態]**&#x200B;的`https://[server]:[port]/system/console/configMgr`中選取「在預覽時套用水印」選項。****
 
 ![default-watermark](assets/default-watermark.png)
 
