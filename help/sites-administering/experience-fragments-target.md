@@ -31,7 +31,7 @@ ht-degree: 0%
 需要執行各種動作：
 
 1. 您必須將AEM與Target整合。 如需詳細資訊，請參閱[與Adobe Target整合。](/help/sites-administering/target.md)
-1. 體驗片段是從作者例項匯出，因此您必須在作者例項上設定連結外部化程式[，以確保發佈例項的任何連結都外部化。](/help/sites-developing/externalizer.md)
+1. 體驗片段是從作者例項匯出，因此您必須在作者例項上設定連結外部化程式](/help/sites-developing/externalizer.md)，以確保發佈例項的任何連結都外部化。[
 
 ## 新增雲端設定{#add-the-cloud-configuration}
 
