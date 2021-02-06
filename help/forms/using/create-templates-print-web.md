@@ -100,7 +100,7 @@ ht-degree: 0%
 
    要將&#x200B;**Charts**&#x200B;子表單移到Charges子表單的右側，請從左窗格選擇&#x200B;**Charts**&#x200B;子表單，選擇&#x200B;**Layout**&#x200B;標籤，並指定&#x200B;**AnchorX**&#x200B;欄位的值。 該值必須大於&#x200B;**Charges**&#x200B;子表單的&#x200B;**Width**&#x200B;欄位的值。 選擇&#x200B;**Charges**&#x200B;子表單，並選擇&#x200B;**Layout**&#x200B;頁籤以查看&#x200B;**Width**&#x200B;欄位的值。
 
-1. 將&#x200B;**Text**&#x200B;對象庫&#x200B;**中的&lt;a0/>對象拖放到窗體中，並在框中輸入**&#x200B;撥號XXXX以預訂&#x200B;**文本。**
+1. 將&#x200B;**Text**&#x200B;對象庫&#x200B;**中的**&#x200B;對象拖放到窗體中，並在框中輸入&#x200B;**撥號XXXX以預訂**&#x200B;文本。
 1. 按一下右鍵左窗格中的文本對象，選擇&#x200B;**更名對象** ，然後將文本對象的名稱輸入為&#x200B;**訂閱**。
 
    ![print_xdp_template_subform](assets/print_xdp_template_subform.png)
@@ -239,9 +239,9 @@ ht-degree: 0%
    | customerdetails | 客戶詳細資訊 | 1 |
    | 開單匯總 | 清單摘要 | 1 |
    | 摘要費用 | 費用匯總 | 2 |
-   | itimisedcalls | 明細呼叫 | 1 |
+   | itimisedcalls | 明細呼叫 | 3 |
    | paynow | 立即付款 | 2 |
-   | vas | 增值服務 | 1 |
+   | vas | 增值服務 | 3 |
 
    下圖顯示將所有面板新增至範本後的內容樹狀結構：
 
