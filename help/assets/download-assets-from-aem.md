@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -73,6 +73,6 @@ ht-degree: 2%
 >[!MORELIKETHIS]
 >
 >* [下載受DRM保護的資產](drm.md)。
->* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)。
+>* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)。
 >* [從支援的Adobe Creative Cloud應用程式中，使用Adobe Assets Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)。
 
