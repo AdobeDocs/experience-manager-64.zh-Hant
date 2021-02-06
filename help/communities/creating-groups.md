@@ -32,7 +32,7 @@ ht-degree: 1%
 
 建立新社群群群組的能力取決於包含群組功能的社群網站，例如從` [Reference Site Template](sites.md)`建立的社群網站。
 
-下面的範例使用從`Reference Site Template`建立的社群網站，如&lt;a1/> AEM Communities[教學課程中所述。](getting-started.md)
+下面的範例使用從[建立的社群網站，如`Reference Site Template` AEM Communities](getting-started.md)教學課程中所述。
 
 這是在選取&#x200B;**[!UICONTROL Groups]**&#x200B;功能表項目時載入發佈的頁面：
 
