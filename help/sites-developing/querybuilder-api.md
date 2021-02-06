@@ -1,6 +1,6 @@
 ---
-title: Query Builder API
-seo-title: Query Builder API
+title: 查詢產生器 API
+seo-title: 查詢產生器 API
 description: 「資產共用查詢產生器」的功能是透過Java API和REST API公開。
 seo-description: 「資產共用查詢產生器」的功能是透過Java API和REST API公開。
 uuid: 6928c3e9-96a1-44ad-9785-350d95f1869a
@@ -20,7 +20,7 @@ ht-degree: 0%
 ---
 
 
-# Query Builder API{#query-builder-api}
+# 查詢產生器 API{#query-builder-api}
 
 [資產共用查詢產生器](/help/assets/assets-finder-editor.md)的功能是透過Java API和REST API公開。 本節將說明這些API。
 
@@ -34,7 +34,7 @@ REST API可透過HTTP存取與JSON中傳送的回應完全相同的功能。
 
 >[!NOTE]
 >
->QueryBuilder API是使用JCR API建立。 您也可以在OSGi套件中使用JCR API來查詢Adobe Experience Manager JCR。 如需詳細資訊，請參閱「使用JCR API[查詢Adobe Experience Manager資料」。](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)
+>QueryBuilder API是使用JCR API建立。 您也可以在OSGi套件中使用JCR API來查詢Adobe Experience Manager JCR。 如需詳細資訊，請參閱「使用JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)查詢Adobe Experience Manager資料」。[
 
 ## Gem會話{#gem-session}
 
@@ -138,7 +138,7 @@ orderby=path
 
 例如，UI可以調整下列方法：
 
-* 取得並顯示總點擊數的準確計數(SearchResult.getTotalMatches()[或querybuilder.json回應中的總計)小於或等於100;](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches)
+* 取得並顯示總點擊數的準確計數(SearchResult.getTotalMatches()](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/result/SearchResult.html#gettotalmatches)或querybuilder.json回應中的總計)小於或等於100;[
 * 在呼叫查詢產生器時，將`guessTotal`設為100。
 
 * 回應可能會有下列結果：
@@ -426,7 +426,7 @@ p.nodedepth=5
 
 >[!NOTE]
 >
->如要瞭解如何建立使用QueryBuilder API的OSGi套件，並在Adobe Experience Manager應用程式內使用該OSGi套件，請參閱「建立使用Query Builder AP[I的Adobe CQ OSGi套件」。](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)
+>如要瞭解如何建立使用QueryBuilder API的OSGi套件，並在Adobe Experience Manager應用程式內使用該OSGi套件，請參閱「建立使用Query Builder AP](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I的Adobe CQ OSGi套件」。[
 
 使用查詢產生器(JSON)Servlet在HTTP上執行的相同查詢：
 
