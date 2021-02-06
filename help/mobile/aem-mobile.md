@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
 workflow-type: tm+mt
 source-wordcount: '326'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->**先決條件：**
+>**必備條件:**
 >
 >開始設定AEM Mobile隨選服務的環境之前，請參閱[AEM Mobile應用程式儀表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 
