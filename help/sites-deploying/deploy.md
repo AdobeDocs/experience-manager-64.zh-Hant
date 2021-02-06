@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
 source-wordcount: '1835'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 * [AEM平台簡介](/help/sites-deploying/platform.md)
 * [效能准則](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile快速入門](/help/mobile/getting-started-aem-mobile.md)
-* [什麼是AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [什麼是AEM Screens?](https://docs.adobe.com/content/help/zh-Hant/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## 基本概念{#basic-concepts}
 
@@ -203,7 +203,7 @@ AEM需要幾分鐘的時間才能解壓縮jar檔案、自行安裝並啟動。 �
 
 ### 作者和發佈安裝{#author-and-publish-installs}
 
-在首次啟動`jar`檔案之前，只需重新命名&lt;a3/>檔案，即可變更預設安裝（**author**&#x200B;例項在&#x200B;**`localhost:4502`**&#x200B;上）。 命名模式為：
+在首次啟動`jar`檔案之前，只需重新命名檔案，即可變更預設安裝（**author**&#x200B;例項在&#x200B;**`localhost:4502`**&#x200B;上）。 命名模式為：
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
