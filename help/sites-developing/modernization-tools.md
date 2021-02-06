@@ -1,7 +1,7 @@
 ---
 title: AEM 現代化工具
 seo-title: AEM 現代化工具
-description: AEM 現代化工具 協助您將舊有的AEM功能轉換為最新技術
+description: AEM Meduration Tools可協助您將舊有的AEM功能轉換為最新技術
 seo-description: AEM Meduration Tools可協助您輕鬆將舊有的AEM功能轉換為最新技術
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 55bd3036bd793a5e3b468b8b6ad595a857311865
 workflow-type: tm+mt
 source-wordcount: '107'
-ht-degree: 58%
+ht-degree: 56%
 
 ---
 
