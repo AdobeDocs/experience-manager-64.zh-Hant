@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -99,7 +99,7 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr> 
   <tr> 
    <td><code>search</code> <br /> (可選)</td> 
-   <td>在表單屬性中搜尋指定值，並傳回具有相符值的表單。 預設值為<strong>""</strong>。</td> 
+   <td>在表單屬性中搜尋指定值，並傳回具有相符值的表單。 預設值為 <strong>""</strong>.</td> 
   </tr> 
  </tbody> 
 </table>
