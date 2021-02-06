@@ -23,7 +23,7 @@ ht-degree: 8%
 
 產生報表時，您會透過電子郵件（可選）和收件匣通知收到通知。 您可以從報表清單頁面檢視、下載或刪除報表，其中會顯示所有先前產生的報表。
 
-## 先決條件{#prerequisite-for-reporting}
+## 必備條件 {#prerequisite-for-reporting}
 
 若要產生報表，請確定下列項目：
 
