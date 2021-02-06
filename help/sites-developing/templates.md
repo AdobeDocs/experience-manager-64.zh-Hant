@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 workflow-type: tm+mt
 source-wordcount: '982'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -65,9 +65,9 @@ AEM現在提供兩種基本範本類型，以建立頁面：
 >
 >AEM社群文章會說明如何使用可編輯的範本開發Experience Manager網站，請參閱「使用可編輯的範本建立Adobe Experience Manager 6.4網站」。[](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html)
 
-### 靜態模板{#static-templates}
+### 靜態範本 {#static-templates}
 
-靜態範本：
+靜態範本:
 
 * 必須由您的開發人員定義和設定。
 * 這是AEM的原始範本系統，已推出許多版本。
@@ -83,7 +83,7 @@ AEM現在提供兩種基本範本類型，以建立頁面：
 >
 >[AEM ](modernization-tools.md) Modernizationtools可協助您從靜態範本移轉至可編輯的範本。
 
-### 模板可用性{#template-availability}
+### 範本可用性 {#template-availability}
 
 >[!CAUTION]
 >
