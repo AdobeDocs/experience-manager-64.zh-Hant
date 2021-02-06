@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
 source-wordcount: '820'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 1. 在「選項」窗口中，選擇「伺服器選項」頁，提供以下詳細資訊，然後按一下「確定」。********
 
    * **伺服器URL**:AEM Forms伺服器URL。
-   * **HTTP埠號**:AEM伺服器埠。預設值為4502。
+   * **HTTP埠號**:AEM伺服器埠。預設值為 4502。
    * **HTML預覽內容：** 轉換XFA表單的描述檔路徑。以下預設配置檔案用於在設計器中預覽表單。 不過，您也可以指定自訂描述檔的路徑。
 
       * `/content/xfaforms/profiles/default.html` （OSGi上的AEM Forms）
