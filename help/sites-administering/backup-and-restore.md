@@ -196,7 +196,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->也可以使用AEM[提供的MBean觸發備份。](/help/sites-administering/jmx-console.md)
+>也可以使用AEM](/help/sites-administering/jmx-console.md)提供的MBean觸發備份。[
 
 ### 檔案系統快照備份{#filesystem-snapshot-backup}
 
