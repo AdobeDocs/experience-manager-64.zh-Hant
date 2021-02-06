@@ -752,7 +752,7 @@ ht-degree: 0%
    <td><p>用戶憑證通過Authentication Manager服務進行驗證。 如果用戶憑據有效，工作流將繼續執行步驟3。 否則，會傳送訊息給使用者，指出使用者並非授權使用者。</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>從安全企業資料庫檢索用戶資訊和表單設計。 </p></td> 
   </tr> 
   <tr> 
@@ -878,7 +878,7 @@ ht-degree: 0%
    <td><p>AEM Forms會執行同步作業。</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>使用者資訊已更新。</p></td> 
   </tr> 
   <tr> 
