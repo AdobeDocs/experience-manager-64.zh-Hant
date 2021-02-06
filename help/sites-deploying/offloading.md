@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
 workflow-type: tm+mt
 source-wordcount: '2803'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Sling JobManager和JobConsumer可建立在拓撲中處理的工作：
 
 有關優化任務分配的資訊，請參閱[配置主題衝減](/help/sites-deploying/offloading.md#configuring-topic-consumption)。
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 當Offloading架構選擇叢集以執行工作，而叢集由多個例項組成時，Sling Distribution會決定叢集中哪個例項執行工作。
 
@@ -102,7 +102,7 @@ Sling JobManager和JobConsumer可建立在拓撲中處理的工作：
 1. 在瀏覽器中開啟Web Console。 ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. 按一下主>拓撲管理。
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### 配置拓撲成員{#configuring-topology-membership}
 
@@ -193,7 +193,7 @@ Discovery Service會定期向拓撲連接器服務發送POST請求（心跳）�
 1. 要禁用實例的主題消耗，請在topc名稱下按一下實例旁邊的禁用。
 1. 要配置實例的所有主題使用，請按一下任何主題下的實例標識符。
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. 按一下主題旁邊的以下按鈕之一以配置實例的衝減行為，然後按一下保存：
 
@@ -238,7 +238,7 @@ Apache Sling Job Consumer Manager服務提供主題allow list和區塊清單屬�
 
 建立在實例之間傳輸作業負載以卸載的複製代理。 下圖顯示了從作者卸載到工作實例所需的代理。 The author has a Sling ID of 1 and the worker instance has a Sling ID of 2:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 此設定需要以下三個代理：
 
