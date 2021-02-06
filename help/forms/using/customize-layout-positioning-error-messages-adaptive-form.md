@@ -60,7 +60,7 @@ ht-degree: 0%
 
 1. 若要新增樣式和行為，請在/etc節點中建立用戶端程式庫。
 
-   例如，在/etc/af-field-layout-clientlib位置，建立節點client-library。 新增包含值af.field.errorOnRight和style.less檔案的類別屬性，並包含以下程式碼：
+   例如，在/etc/af-field-layout-clientlib位置，建立節點client-library。 新增包含值af.field.errorOnRight和style.less檔案的類別屬性，並包含下列程式碼：
 
    ```css
    .widgetErrorWrapper {
