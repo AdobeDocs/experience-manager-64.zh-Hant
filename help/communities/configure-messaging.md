@@ -133,7 +133,7 @@ ht-degree: 0%
 
 取消繼承後，可以選擇`configure`表徵圖以開啟配置對話框。
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### 基本頁籤{#basic-tab-1}
 
