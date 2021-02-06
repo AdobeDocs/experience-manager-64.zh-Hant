@@ -123,7 +123,7 @@ AEM Dynamic Media是直接在AEM平台中統一Dynamic Media Classic功能。
     </tr> 
     <tr> 
     <td>動態媒體與範本的新功能</td> 
-    <td>使用動態媒體進行影像和視訊處理。 在Dynamic Media Classic中編寫影像範本，並使用Dynamic Media Classic內容搜尋器，將範本加入「網站」頁面。</td> 
+    <td>使用動態媒體進行影像和視訊處理。 在Dynamic Media Classic中編寫影像範本，並使用Dynamic Media Classic內容搜尋器，將範本加入Sites頁面。</td> 
     <td><p>開啟</p> <p>（請參閱步驟3）</p> </td> 
     <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">開啟</a></td> 
     <td><a href="/help/assets/scene7.md#scene-content-browser">開啟</a></td> 
