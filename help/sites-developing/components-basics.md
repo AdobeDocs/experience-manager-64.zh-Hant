@@ -163,7 +163,7 @@ AEM元件的結構強大而有彈性，主要考量是：
 * AEM元件是以[Sling](https://sling.apache.org/documentation.html)為基礎。
 * AEM元件位於（通常）下方：
 
-   * HTL:`/libs/wcm/foundation/components`
+   * HTL: `/libs/wcm/foundation/components`
    * JSP:`/libs/foundation/components`
 
 * 專案／網站特定元件（通常）位於：
@@ -196,7 +196,7 @@ AEM元件的結構強大而有彈性，主要考量是：
 
       * `icon.png` -此元件的表徵圖。
       * `thumbnail.png` -如果此元件列在段落系統中，則顯示的影像。
-   * Touch UI
+   * 觸控式 UI
 
       * 如需詳細資訊，請參閱Touch UI](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)中的[元件圖示一節。
 
@@ -414,7 +414,7 @@ AEM元件的結構強大而有彈性，主要考量是：
 
 如果我們查看&#x200B;**Text**&#x200B;元件（任一版本），我們可看到下列元素：
 
-* HTL(`/libs/wcm/foundation/components/text`)
+* HTL ( `/libs/wcm/foundation/components/text`)
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
