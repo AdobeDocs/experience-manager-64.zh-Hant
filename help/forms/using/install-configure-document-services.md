@@ -10,7 +10,7 @@ translation-type: tm+mt
 source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '4295'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -301,7 +301,7 @@ AEM Forms附加元件套件是部署在AEM上的應用程式。 通常，您只�
 
 如果您正在運行Microsoft Windows Server，請配置Ink and Shartting服務。 需要該服務才能開啟使用Microsoft Office的輸墨功能的Microsoft PowerPoint檔案：
 
-1. 開啟「伺服器管理器」。 按一下「Quick Launch（快速啟動）」托盤上的「Server Manager（伺服器管理器）」**[!UICONTROL 表徵圖。]**
+1. 開啟「伺服器管理器」。 按一下「Quick Launch（快速啟動）」托盤上的「Server Manager（伺服器管理器）」]**表徵圖。**[!UICONTROL 
 1. 按一下&#x200B;**[!UICONTROL 功能]**&#x200B;菜單中的&#x200B;**[!UICONTROL 添加功能]**。 選中「**[!UICONTROL 墨水和手寫服務]**」複選框。
 1. **[!UICONTROL 選擇「]** 功能」對話框，並 **[!UICONTROL 選擇「油墨和筆跡]** 服務」。按一下&#x200B;**[!UICONTROL 安裝]**&#x200B;並安裝服務。
 
@@ -392,13 +392,13 @@ PDF產生器服務提供WebKit、WebCapture和PhantomJS路由或方法，將HTML
 
 AEM Forms附加元件套件是部署在AEM上的應用程式。 此套件包含AEM Forms Document Services和其他AEM Forms功能。 執行以下步驟以安裝軟體包：
 
-1. 開啟[軟體分發](https://experience.adobe.com/downloads)。 您必須有Adobe ID才能登入「軟體散發」。
-1. 點選頁首功能表中的「Adobe Experience Manager ]**」。**[!UICONTROL 
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 點一下頁首功能表中的 **[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL Filters]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL Solution]**&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL Forms]**。
    2. 選擇包的版本和類型。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 點選適用於您作業系統的套件名稱，選取「**[!UICONTROL 接受EULA條款]**」，然後點選「**[!UICONTROL 下載]**」。
-1. 開啟[包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然後按一下&#x200B;**[!UICONTROL 上載包]**&#x200B;來上載包。
+1. 開啟[套件管理器](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 「上傳套件」]**&#x200B;即可上傳套件。
 1. 選擇軟體包並按一下&#x200B;**[!UICONTROL Install]**。
 
    您也可以透過[AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中所列的直接連結下載套件。
@@ -579,7 +579,7 @@ Assembler服務依賴於Reader Extensions服務、Signature服務、Forms服務�
    <td>adobe-aemfd簽名</td> 
   </tr> 
   <tr> 
-   <td>Reader Extensions服務</td> 
+   <td>Reader 延伸模組服務</td> 
    <td>com.adobe.aemfd.adobe-aemfd-readerextensions<br /> </td> 
   </tr> 
   <tr> 
