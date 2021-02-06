@@ -112,7 +112,7 @@ ht-degree: 7%
 
 * **查看詳細資訊** -開啟工作流 **** 的「詳細資訊」窗口
 
-通過通知欄完成和委託工作流步驟的工作方式與從通知收件箱中參與工作流[時相同。](/help/sites-authoring/workflows-participating.md)
+通過通知欄完成和委託工作流步驟的工作方式與從通知收件箱中參與工作流](/help/sites-authoring/workflows-participating.md)時相同。[
 
 如果頁面受多個工作流程的約束，則通知的右端會顯示工作流程數目，並附上箭頭按鈕，讓您捲動整個工作流程。
 
@@ -508,7 +508,7 @@ ht-degree: 7%
 
 ### 以已發佈狀態檢視 {#view-as-published}
 
-從&#x200B;**頁面資訊**&#x200B;功能表可使用「檢視為已發佈」選項。 [](/help/sites-authoring/author-environment-tools.md#page-information)如此會在新標籤中開啟頁面，重新整理內容，並完全顯示頁面在發佈環境中的顯示效果。
+從[頁面資訊](/help/sites-authoring/author-environment-tools.md#page-information)功能表可使用「檢視為已發佈」選項。 ****&#x200B;如此會在新標籤中開啟頁面，重新整理內容，並完全顯示頁面在發佈環境中的顯示效果。
 
 ## 鎖定頁面{#locking-a-page}
 
