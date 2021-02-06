@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 23607a6b2e74b50befe2fa19b868a0e4d561b0d8
 workflow-type: tm+mt
 source-wordcount: '882'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ## 設定事務報告{#setting-up-transaction-reports}
 
-交易報表功能是AEM表單附加元件套件的一部分。 如需在所有作者和發佈例項上安裝附加套件的詳細資訊，請參閱[安裝和設定AEM表單](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)。 安裝AEM Forms附加套件後，請執行下列動作：
+交易報表功能是AEM表單附加元件套件的一部分。 如需在所有作者和發佈例項上安裝附加套件的詳細資訊，請參閱[安裝和設定AEM表單](https://helpx.adobe.com/tw/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)。 安裝AEM Forms附加套件後，請執行下列動作：
 
 * 在所有發佈實例上啟用反向複製
 * 啟用交易報表
