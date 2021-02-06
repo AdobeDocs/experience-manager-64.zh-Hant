@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
 
 # 已知問題 {#known-issues}
 
-本頁列出2018年4月發行的Adobe Experience Manager 6.4已知問題。 有關已知問題的詳細資訊，請[聯繫支援](https://helpx.adobe.com/tw/support/experience-manager.html)。
+本頁列出2018年4月發行的Adobe Experience Manager 6.4已知問題。 有關已知問題的詳細資訊，請[聯繫支援](https://helpx.adobe.com/support/experience-manager.html)。
 
 ## 混合設備{#hybrid-devices}
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 
 ### 安裝與部署
 
-* （僅限AEM Forms JEE）當執行Configuration Manager時啟動JBoss應用程式伺服器時，會傳回EJB呼叫和引導失敗錯誤。 但是，您可以忽略它們。 (Ref# CQ-4229793)
+* （僅限AEM Forms JEE）當執行Configuration Manager時啟動JBoss應用程式伺服器時，會傳回EJB呼叫和引導失敗錯誤。 但是，您可以忽略它們。 (參考編號 CQ-4229793)
 * 當AEM Forms啟動時，會出現`SAX Security Manager could not be setup`警告。 (CQ-4297403)
 
 ### 互動式通訊
@@ -142,4 +142,4 @@ ht-degree: 1%
 
 * 最適化表單中的Chart元件所佔用的空間比一般的要多。
 * 在Forms Manager UI中儲存最適化表單、最適化表單片段或互動式通訊的屬性時，會傳回例外。
-* 在Android 6.0 Samsung裝置上，不會執行最適化表單文字方塊的指定字元數上限。 (Ref# CQ-4235205)
+* Android 6.0 Samsung 裝置不遵循為適用性表單文字方塊指定的字元數上限。(參考編號 CQ-4235205)
