@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -138,7 +138,7 @@ AEM Forms工作區可讓使用者自訂工作動作。 在自訂工作動作之�
 
 ### 任務清單任務操作彈出菜單{#task-list-task-action-nbsp-pop-up-menu}
 
-1. 您需要開發套件來自訂AEM Forms工作區「工作清單」工作清單動作快顯功能表的項目。 如需建立開發套件的詳細資訊，請參閱「建立AEM Forms工作區程式碼」。[](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. 您需要開發套件來自訂AEM Forms工作區「工作清單」工作清單動作快顯功能表的項目。 如需建立開發套件的詳細資訊，請參閱「建立AEM Forms工作區程式碼」。](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)[
 
 1. 將/libs/ws/js/runtime/templates/task.html複製至`/apps/ws/js/runtime/templates/task.html`取代下列程式碼片段：
 
