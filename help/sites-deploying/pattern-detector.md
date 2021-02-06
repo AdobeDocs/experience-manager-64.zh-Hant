@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ## 設定方法 {#how-to-set-up}
 
-模式偵測器會以[一個套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)的形式個別發行，適用於以AEM 6.5升級為目標的任何來源AEM版本，從6.1到6.5。 它可以使用[軟體包管理器](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)安裝。
+模式偵測器會以[一個套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)的形式個別發行，適用於以AEM 6.5升級為目標的任何來源AEM版本，從6.1到6.5。 它可以使用[軟體包管理器](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/package-manager.html)安裝。
 
 ## 使用方式 {#how-to-use}
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 >
 >* 提高檢測率
 >* 避免業務關鍵型實例出現任何慢速\
-   >同時，建議在與生產環境盡可能接近的測試環境&#x200B;**上運行&lt;a0/>，這些環境在用戶應用程式、內容和配置方面都是如此。**
+   >同時，建議在與生產環境盡可能接近的測試環境&#x200B;**上運行**，這些環境在用戶應用程式、內容和配置方面都是如此。
 
 
 您可以使用數種方法來檢查圖樣檢測器輸出：
