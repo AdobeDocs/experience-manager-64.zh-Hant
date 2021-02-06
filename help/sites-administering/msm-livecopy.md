@@ -352,7 +352,7 @@ Blueprint頁面（在Blueprint設定中參考）提供您使用目前(Blueprint)
 
 #### 暫停從即時副本概述{#suspending-inheritance-from-the-live-copy-overview}的繼承
 
-選擇「即時副本」頁面時，「即時副本概述」(Live Copy Overview)[也提供「暫停」(Suspend)操作。](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)
+選擇「即時副本」頁面時，「即時副本概述」(Live Copy Overview)](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)也提供「暫停」(Suspend)操作。[
 
 1. 開啟[即時副本概觀](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)並選取即時副本頁面。
 1. 從工具欄中選擇&#x200B;**暫停**。
@@ -393,7 +393,7 @@ Blueprint頁面（在Blueprint設定中參考）提供您使用目前(Blueprint)
 
 #### 從即時副本概述{#resume-a-live-copy-page-from-the-live-copy-overview}繼續即時副本頁面
 
-選擇「即時副本」頁面時，「即時副本概述」(Live Copy Overview)[也提供「繼續」(Resume)操作。](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)
+選擇「即時副本」頁面時，「即時副本概述」(Live Copy Overview)](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)也提供「繼續」(Resume)操作。[
 
 1. 開啟[即時副本概述](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)，並選取已暫停的即時副本頁面；將顯示為&#x200B;**INHERITANCE CANCELLED**。
 1. 從工具欄中選擇&#x200B;**Resume**。
@@ -616,7 +616,7 @@ Blueprint頁面（在Blueprint設定中參考）提供您使用目前(Blueprint)
 
 ### 從即時副本概述{#detach-a-live-copy-page-from-the-live-copy-overview}中分離即時副本頁面
 
-選擇「即時副本」頁面時，「即時副本概述」(Live Copy Overview)[也提供「分離」(Detach)操作。](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)
+選擇「即時副本」頁面時，「即時副本概述」(Live Copy Overview)](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)也提供「分離」(Detach)操作。[
 
 1. 開啟[即時副本概觀](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)並選取即時副本頁面。
 1. 從工具欄中選擇&#x200B;**Detach**。
