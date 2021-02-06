@@ -69,7 +69,7 @@ AEM中有3種主要的慢速查詢分類，依嚴重性列出：
 
 解釋所有查詢，並確保它們解析為已調整為與查詢的屬性限制匹配的索引。
 
-* 理想的查詢計畫涵蓋範圍對於所有屬性限制為`indexRules`，對於查詢中最緊密的屬性限制則至少為&lt;a0/>。
+* 理想的查詢計畫涵蓋範圍對於所有屬性限制為`indexRules`，對於查詢中最緊密的屬性限制則至少為。
 * 對結果排序的查詢應解析為具有按設定`orderable=true.`的屬性排序的索引規則的Lucene屬性索引
 
 #### 例如，預設`cqPageLucene`沒有`jcr:content/cq:tags` {#for-example-the-default-cqpagelucene-does-not-have-an-index-rule-for-jcr-content-cq-tags}的索引規則
@@ -199,7 +199,7 @@ AEM支援下列查詢語言：
        property=jcr:content/contentType 
        property.value=article-page
       ```
-   缺乏nodetype限制的查詢會強制AEM採用`nt:base` nodetype，而AEM中的每個節點都是&lt;a0/>的子類型，有效地產生nodetype限制。
+   缺乏nodetype限制的查詢會強制AEM採用`nt:base` nodetype，而AEM中的每個節點都是的子類型，有效地產生nodetype限制。
 
    設定`type=cq:Page`會將此查詢限制為僅限`cq:Page`節點，並將查詢解析為AEM的cqPageLucene，並將結果限制為AEM中的節點子集（僅限`cq:Page`節點）。
 
@@ -242,7 +242,7 @@ AEM支援下列查詢語言：
       property=jcr:content/sling:resourceType
       property.value=my-site/components/structure/article-page
       ```
-   將屬性限制從`jcr:content/contentType`（自訂值）變更為眾所周知的屬性`sling:resourceType`，可讓查詢解析為屬性索引`slingResourceType`，該屬性索引`sling:resourceType`會依&lt;a3/>索引所有內容。
+   將屬性限制從`jcr:content/contentType`（自訂值）變更為眾所周知的屬性`sling:resourceType`，可讓查詢解析為屬性索引`slingResourceType`，該屬性索引`sling:resourceType`會依索引所有內容。
 
    當查詢不由nodetype識別，而結果集中以單一屬性限制時，最好使用屬性索引（與Lucene屬性索引相反）。
 
