@@ -25,7 +25,7 @@ ht-degree: 21%
 
 ## 將系列發佈至品牌入口網站{#publish-a-collection-to-brand-portal}
 
-1. 在AEM Assets UI中，點選／按一下AEM標誌。 然後，從&#x200B;]**Navigation**[!UICONTROL &#x200B;頁面前往「資產>系列&#x200B;**[!UICONTROL 」。]**
+1. 在AEM Assets UI中，點選／按一下AEM標誌。 然後，從&#x200B;**[!UICONTROL Navigation]**&#x200B;頁面前往「資產>系列&#x200B;]**」。**[!UICONTROL 
 2. 從「系列」主控台中，選取您要發佈至品牌入口網站的系列。
 
    ![select_collection](assets/select_collection.png)
