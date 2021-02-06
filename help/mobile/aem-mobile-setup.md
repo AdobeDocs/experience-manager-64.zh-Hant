@@ -121,7 +121,7 @@ AEM Mobile On-Demand連接器可用來將AEM Mobile管理的內容與Adobe Exper
 * 開發人員
 * 作者
 
-如需建立具有不同權限的角色（例如建立應用程式或建立和發佈內容）的詳細資訊，請按一下「AEM Mobile說明」中的「建立使用者角色及授與存取權」[。](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)
+如需建立具有不同權限的角色（例如建立應用程式或建立和發佈內容）的詳細資訊，請按一下「AEM Mobile說明」中的「建立使用者角色及授與存取權」](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)。[
 
 >[!NOTE]
 >
@@ -140,4 +140,4 @@ AEM Mobile On-Demand連接器可用來將AEM Mobile管理的內容與Adobe Exper
 
 >[!NOTE]
 >
->若要預覽應用程式內容，包括瀏覽頁和文章，請參閱「使用Preflight預覽[」。](/help/mobile/aem-mobile-manage-ondemand-services.md)
+>若要預覽應用程式內容，包括瀏覽頁和文章，請參閱「使用Preflight預覽](/help/mobile/aem-mobile-manage-ondemand-services.md)」。[
