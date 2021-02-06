@@ -25,7 +25,7 @@ ht-degree: 2%
 以下是AEM SPA Editor SDK架構的NPM模組可用的JavaScript API參考。
 
 >[!NOTE]
->「單頁應用程式(SPA)編輯器」功能需要[AEM 6.4 Service Pack 2](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html)或更新版本。
+>「單頁應用程式(SPA)編輯器」功能需要[AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)或更新版本。
 >
 >SPA編輯器是建議的解決方案，適用於需要以SPA架構為基礎的用戶端轉換（例如React或Angular）的專案。
 
