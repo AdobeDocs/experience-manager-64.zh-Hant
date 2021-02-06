@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ### 安裝IntelliJ IDEA {#install-intellij-idea}
 
-從JetBrains[的「下載」頁面下載IntelliJ IDEA。](https://www.jetbrains.com/idea/download/index.html)
+從JetBrains](https://www.jetbrains.com/idea/download/index.html)的「下載」頁面下載IntelliJ IDEA。[
 
 然後，請依照該頁上的安裝指示進行。
 
