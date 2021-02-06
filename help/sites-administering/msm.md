@@ -134,14 +134,14 @@ MSM可直接在UI中使用適當主控台的各種選項存取。 要提供介�
 
 * **建立即時副本** (**網站**)
 
-   * MSM可讓您建立網站個別頁面或子分支的臨機（一次性）即時副本[;例如，複製子分支以提供有關產品新版／更新版本的資訊。](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
+   * MSM可讓您建立網站個別頁面或子分支的臨機（一次性）即時副本](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page);例如，複製子分支以提供有關產品新版／更新版本的資訊。[
    * 建立臨機即時副本（不需要藍圖設定）。
    * 可用來（立即）建立任何頁面／分支的即時副本。
    * 需要&#x200B;**Synchronize**（不提供&#x200B;**Rolovate**&#x200B;按鈕）。
 
 * **檢視屬性** (**網站**)
 
-   * 如果適用，此選項可協助您提供有關[即時Cop](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy)y或&#x200B;**Blueprint**&#x200B;的相關資訊，以協助您監控即時副本。****
+   * 如果適用，此選項可協助您提供有關&#x200B;**即時Cop** y或&#x200B;**Blueprint**&#x200B;的相關資訊，以協助您監控即時副本。[](/help/sites-administering/msm-livecopy.md#monitoring-your-live-copy)
 
 * **參考** (**網站**)
 
