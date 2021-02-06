@@ -130,7 +130,7 @@ ht-degree: 0%
 
 **[!UICONTROL 叫用AEM Workflow]**&#x200B;送出動作會將最適化表單與AEM Workflow建立關聯。 提交表單時，相關工作流程會自動在處理節點上啟動。 此外，它還會將資料檔案、附件和記錄檔案（如果適用）放在工作流程的裝載位置。
 
-在使用「叫用AEM Workflow **[!UICONTROL 提交動作」之前，請先]**&#x200B;設定AEM DS設定[。 ](/help/forms/using/configuring-the-processing-server-url-.md)如需有關建立AEM工作流程的詳細資訊，請參閱「OSGi[的表單導向工作流程」。](/help/forms/using/aem-forms-workflow.md)
+在使用「叫用AEM Workflow ]**提交動作」之前，請先[設定AEM DS設定](/help/forms/using/configuring-the-processing-server-url-.md)。**[!UICONTROL &#x200B;如需有關建立AEM工作流程的詳細資訊，請參閱「OSGi](/help/forms/using/aem-forms-workflow.md)的表單導向工作流程」。[
 
 ## Adaptive Form {#server-side-revalidation-in-adaptive-form}中的伺服器端重新驗證
 
