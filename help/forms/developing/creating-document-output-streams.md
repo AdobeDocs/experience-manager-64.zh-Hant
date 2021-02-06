@@ -366,7 +366,7 @@ ht-degree: 0%
 
    * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示包含結果資料的XML檔案位置。 請確定副檔名為。xml。
    * 建立位元組陣列，儲存由`OutputServiceService`物件的`generatePDFOutput`方法（第8個參數）填入結果資料之`BLOB`物件的資料內容。 取得`BLOB`物件的`MTOM` `field`值，以填入位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入XML檔案。
 
    另請參閱
@@ -617,7 +617,7 @@ PDF/A檔案必須使用在表單設計中指定的字型，且字型無法取代
 
    * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示包含結果資料的XML檔案位置。 請確定副檔名為。xml。
    * 建立位元組陣列，儲存由`OutputServiceService`物件的`generatePDFOutput`方法（第8個參數）填入結果資料之`BLOB`物件的資料內容。 取得`BLOB`物件的`MTOM`欄位值，以填入位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入XML檔案。
 
 **另請參閱**
@@ -753,7 +753,7 @@ PDF/A檔案必須使用在表單設計中指定的字型，且字型無法取代
 
    對與「文檔管理」服務關聯的服務引用使用以下WSDL定義：`http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`。
 
-   由於`BLOB`資料類型對於兩個服務引用都很常見，因此使用`BLOB`資料類型時可完全限定&lt;a1/>資料類型。 在相應的Web服務快速啟動中，所有`BLOB`實例都完全限定。
+   由於`BLOB`資料類型對於兩個服務引用都很常見，因此使用`BLOB`資料類型時可完全限定資料類型。 在相應的Web服務快速啟動中，所有`BLOB`實例都完全限定。
 
    >[!NOTE]
    >
@@ -805,9 +805,9 @@ PDF/A檔案必須使用在表單設計中指定的字型，且字型無法取代
 
 1. 對表單資料流執行動作。
 
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表互動式PDF檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表互動式PDF檔案的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存從`generatePDFOutput2`方法檢索到的`BLOB`對象的內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -1077,7 +1077,7 @@ ResourceRepositoryClient
     http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
-   由於`BLOB`資料類型對於兩個服務引用都很常見，因此使用`BLOB`資料類型時可完全限定&lt;a1/>資料類型。 在相應的Web服務快速啟動中，所有`BLOB`實例都完全限定。
+   由於`BLOB`資料類型對於兩個服務引用都很常見，因此使用`BLOB`資料類型時可完全限定資料類型。 在相應的Web服務快速啟動中，所有`BLOB`實例都完全限定。
 
    >[!NOTE]
    >
@@ -1131,9 +1131,9 @@ ResourceRepositoryClient
 
 1. 將PDF檔案儲存為PDF檔案。
 
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表互動式PDF檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表互動式PDF檔案的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存從`generatePDFOutput2`方法檢索到的`BLOB`對象的內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -1310,7 +1310,7 @@ ResourceRepositoryClient
    * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值指定包含表單資料的XML檔案的位置。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
-   * 通過為`binaryData`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`binaryData`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 
 1. 設定列印至檔案所需的列印執行時間選項。
 
@@ -1336,7 +1336,7 @@ ResourceRepositoryClient
 
    * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示包含結果資料的XML檔案位置。 請確定副檔名為XML。
    * 建立位元組陣列，儲存由`OutputServiceService`物件的`generatePDFOutput`方法（第8個參數）填入結果資料之`BLOB`物件的資料內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入XML檔案。
 
 **另請參閱**
@@ -1403,7 +1403,7 @@ ResourceRepositoryClient
 
 將打印流發送到打印機時，可以設定運行時選項，包括以下選項：
 
-* **副本**:指定要發送到打印機的副本數。預設值為2。
+* **副本**:指定要發送到打印機的副本數。預設值為 1。
 * **訂書**:當使用訂書機時，設定XCI選項。此選項可在配置模型中由Staple元素指定，僅用於PS和PCL打印機。
 * **OutputJog**:當輸出頁面應進行慢動作（在輸出托盤中實際移動）時，會設定XCI選項。此選項僅適用於PS和PCL打印機。
 * **OutputBin**:用於使打印驅動程式選擇適當輸出站的XCI值。
@@ -1594,7 +1594,7 @@ ResourceRepositoryClient
 1. 參考XML資料來源。
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存表單資料。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞指定包含表單資料之XML檔案位置的字串值。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞指定包含表單資料之XML檔案位置的字串值。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列長度。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
    * 通過為`MTOM`對象的欄位分配位元組陣列的內容來填充`BLOB`對象。
@@ -1818,7 +1818,7 @@ Output服務可以為XML資料源中的每個記錄或包含所有記錄的單�
 
 1. 參考XML資料來源
 
-   * 使用`java.io.FileInputStream`物件的建構函式並傳遞指定XML檔案位置的字串值，以建立代表包含多個記錄之XML資料來源的&lt;a0/>物件。
+   * 使用`java.io.FileInputStream`物件的建構函式並傳遞指定XML檔案位置的字串值，以建立代表包含多個記錄之XML資料來源的物件。
    * 使用其建構子並傳遞`java.io.FileInputStream`對象，建立`com.adobe.idp.Document`對象。
 
 1. 設定PDF執行時期選項
@@ -1889,7 +1889,7 @@ Output服務可以為XML資料源中的每個記錄或包含所有記錄的單�
 1. 參考XML資料來源。
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存包含多個記錄的表單資料。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，該值代表包含多個記錄之XML檔案的檔案位置。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，該值代表包含多個記錄之XML檔案的檔案位置。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
    * 通過為`MTOM`對象的欄位分配位元組陣列的內容來填充`BLOB`對象。
@@ -1925,7 +1925,7 @@ Output服務可以為XML資料源中的每個記錄或包含所有記錄的單�
 
    * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示包含結果資料的XML檔案位置。 請確定副檔名為。xml。
    * 建立位元組陣列，儲存由`OutputServiceService`物件的`generatePDFOutput`方法（第8個參數）填入結果資料之`BLOB`物件的資料內容。 獲取`BLOB`對象`binaryData`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入XML檔案。
 
 **另請參閱**
@@ -2184,7 +2184,7 @@ Output服務可以為XML資料源中的每個記錄或包含所有記錄的單�
 
    * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示包含結果資料的XML檔案位置。 請確定副檔名為XML。
    * 建立位元組陣列，儲存由`OutputServiceService`物件的`generatePDFOutput`方法（第8個參數）填入結果資料之`BLOB`物件的資料內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入XML檔案。
 
 **另請參閱**
@@ -2337,10 +2337,10 @@ Output服務可以為XML資料源中的每個記錄或包含所有記錄的單�
 1. 擷取互動式PDF檔案。
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存互動式PDF檔案。
-   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示互動式PDF文檔的檔案位置。
+   * 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示互動式PDF文檔的檔案位置。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
-   * 通過為`MTOM`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`MTOM`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 
 1. 轉換PDF檔案。
 
@@ -2360,7 +2360,7 @@ Output服務可以為XML資料源中的每個記錄或包含所有記錄的單�
 
    * 調用`System.IO.FileStream`對象的建構子並傳遞一個字串值，該字串值表示非互動PDF文檔的檔案位置。
    * 建立一個位元組陣列，用於儲存`transformPDF`方法返回的`BLOB`對象的資料內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
