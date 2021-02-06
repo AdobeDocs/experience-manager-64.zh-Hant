@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1689'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -104,7 +104,7 @@ AEM 6.4提供大幅的資產報告增強功能：
 * **報告改進**:有三份OOTB報告可供使用：下載、發佈和連結分享。
 * **DRM限制**:授權資產過期後，就無法再從Brand Portal下載。
 
-## AEM案頭應用程式{#aem-desktop-app}
+## AEM 桌面應用程式 {#aem-desktop-app}
 
 AEM案頭應用程式已更新至1.8版，與AEM 6.4相容。AEM案頭應用程式的完整變更清單會提供在專屬的[AEM案頭應用程式版本注意事項](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/release-notes.html)檔案中。\
 以下是自AEM 6.3發行以來AEM案頭應用程式摘要清單：
@@ -139,7 +139,7 @@ AEM 6.4包含一組功能，可支援各種分層儲存偏好設定並實作生�
 
 6.4版動態媒體支援新模式——其中主要資產會透過AEM Assets網頁UI上傳和管理，而動態轉譯和其他動態媒體功能則會由Dynamic Media雲端傳送服務在背景處理。
 
-在此模式中（先隨[AEM 6.3功能套件14410和18912](https://helpx.adobe.com/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)發行推出），使用者可運用現代AEM Assets網頁UI的端對端資產管理和動態媒體功能，並仍可運用向後相容於Dynamic Media Classic(Dynamic Media Classic)的傳送服務(scene7)-包括未變更的傳送URL。
+在此模式中（先隨[AEM 6.3功能套件14410和18912](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)發行推出），使用者可運用現代AEM Assets網頁UI的端對端資產管理和動態媒體功能，並仍可運用向後相容於Dynamic Media Classic(Dynamic Media Classic)的傳送服務(scene7)-包括未變更的傳送URL。
 
 此外，AEM 6.4還推出Adobe Sensei支援的新功能、VR和3D等新興媒體的增強功能、動態媒體檢視器，以及互動式影像和轉盤橫幅中的體驗片段支援。
 
