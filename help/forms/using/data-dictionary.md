@@ -37,7 +37,7 @@ ht-degree: 1%
 1. 作者可以下載基於資料字典模式的樣本資料XML檔案。 作者可以修改樣本資料XML檔案，該檔案可以作為測試資料與資料字典相關聯。 在字母預覽期間使用的相同項目。
 1. 當[預覽字母](/help/forms/using/create-letter.md#p-types-of-linkage-available-for-each-of-the-fields-p)時，作者選擇預覽含有資料的字母（自訂預覽）。 此信件會開啟，並預先填入作者提供的資料。 這會在建立對應介面中開啟。 正在預覽此信件的代理商可以修改此信件中的內容、資料和附件，並提交最終信件。 有關建立字母的詳細資訊，請參閱[建立對應](/help/forms/using/create-letter.md)。
 
-## 先決條件{#prerequisite}
+## 必備條件 {#prerequisite}
 
 安裝[相容性軟體包](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)以查看&#x200B;**表單**&#x200B;頁上的&#x200B;**資料字典**&#x200B;選項。
 
