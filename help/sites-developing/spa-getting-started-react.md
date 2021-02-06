@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1215'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
 # AEM中的SPA快速入門- React {#getting-started-with-spas-in-aem-react}
 
-單頁應用程式(SPA)可為網站使用者提供引人入勝的體驗。 開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
 
 SPA製作功能提供完整的解決方案，以支援AEM中的SPA。 本文介紹React架構上的簡化SPA應用程式，並說明其組合方式，讓您快速啟動並執行自己的SPA。
 
@@ -123,9 +123,9 @@ module.exports = {
 
 建立後，套件就可以上傳至AEM例項。
 
-### AEM Project Archetype {#aem-project-archetype}
+### AEM 專案原型 {#aem-project-archetype}
 
-任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
+任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ## 應用程式結構{#application-structure}
 
@@ -262,7 +262,7 @@ class PageClass extends Component {...};
 export default MapTo('my-react-app/react/components/structure/page')(PageClass, EditConfig);
 ```
 
-`MapTo`函式返回`Component`，該&lt;a1/>是使用類名和屬性擴展提供的`PageClass`的構圖的結果，該類名和屬性啟用了編寫。 此元件可匯出為稍後在應用程式的標籤中執行個體化。
+`MapTo`函式返回`Component`，該是使用類名和屬性擴展提供的`PageClass`的構圖的結果，該類名和屬性啟用了編寫。 此元件可匯出為稍後在應用程式的標籤中執行個體化。
 
 使用`MapTo`或`withModel`函式匯出時，`Page`元件會與`ModelProvider`元件包住，此元件可讓標準元件存取頁面模型的最新版本或該頁面模型中的精確位置。
 
