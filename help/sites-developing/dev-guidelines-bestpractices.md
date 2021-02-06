@@ -166,6 +166,6 @@ XSAPI快速參考表。
 
 ### 在Java進程{#open-files-in-the-java-process}中開啟檔案
 
-由於AEM可存取大量檔案，因此建議您明確為AEM設定Java進程[開啟的檔案數目。](/help/sites-deploying/configuring.md#open-files-in-the-java-process)
+由於AEM可存取大量檔案，因此建議您明確為AEM設定Java進程](/help/sites-deploying/configuring.md#open-files-in-the-java-process)開啟的檔案數目。[
 
 為了盡量減少此問題的發展，應確保所開啟的檔案能盡快（有意義）正確關閉。
