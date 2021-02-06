@@ -99,7 +99,7 @@ AEM eCommerce提供：
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-* 能夠根據&#x200B;**AEM eCommerce架構[開發您自己的整合實作。](#the-framework)**
+* 能夠根據[AEM eCommerce架構&#x200B;](#the-framework)**開發您自己的整合實作。**
 
    目前可用的兩個實作都是以相同的基礎建立——以一般API（架構）為基礎。 實作新整合只涉及實作您整合所需的功能。 任何新的實作都可以使用前端元件，因為它們使用介面（因此與實作無關）。
 
