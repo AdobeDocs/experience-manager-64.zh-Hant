@@ -105,7 +105,7 @@ MySQL Workbench應按照目標OS的說明下載並安裝。
 
 #### 新建社區連接{#new-communities-connection}
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ## 資料庫設定{#database-setup}
 
