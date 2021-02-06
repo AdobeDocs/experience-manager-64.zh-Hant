@@ -69,7 +69,7 @@ ht-degree: 0%
 
 1. （可選）按一下／點選&#x200B;**[!UICONTROL Tags]**&#x200B;欄位旁的&#x200B;**[!UICONTROL Tags]**&#x200B;圖示，並為手冊選取一或多個標籤。 按一下／點選&#x200B;**[!UICONTROL 確認]**&#x200B;以確認您的選擇。
 
-   ![chlimage_1-310](assets/chlimage_1-310.png)
+   ![chlimage_1-311](assets/chlimage_1-310.png)
 
 1. 按一下&#x200B;**[!UICONTROL 建立]**。對話方塊會確認已建立新的手冊。 按一下／點選&#x200B;**[!UICONTROL 開啟]**，以編輯模式開啟手冊。
 
