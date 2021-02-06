@@ -64,7 +64,7 @@ AEM是使用[Sling](https://sling.apache.org/site/index.html)建立的，此為�
 
 此彈性的優點在具有多種不同內容元素的應用程式中，或當您需要可輕鬆自訂的頁面時，都十分明顯。 尤其是在實作網頁內容管理系統（例如AEM解決方案中的WCM）時。
 
-請參閱[Discover Sling in 15 minutes](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html)，以取得使用Sling進行開發的第一個步驟。
+請參閱[Discover Sling in 15 minutes](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html)，以取得使用Sling進行開發的第一步驟。
 
 下圖說明Sling指令碼解析度：它說明如何從HTTP請求到內容節點，從內容節點到資源類型，從資源類型到指令碼，以及可用的指令碼變數。
 
