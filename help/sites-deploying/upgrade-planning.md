@@ -122,7 +122,7 @@ AEM 6.4的新功能可在adobe.com](/help/release-notes/release-notes.md)的[ AE
 
 [操作儀表板](/help/sites-administering/operations-dashboard.md)
 
-[資產監控最佳實踐](/help/assets/assets-monitoring-best-practices.md)
+[Assets 監控最佳實務](/help/assets/assets-monitoring-best-practices.md)
 
 [使用JMX控制台監控伺服器資源](/help/sites-administering/jmx-console.md)
 
