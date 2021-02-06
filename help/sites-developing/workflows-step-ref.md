@@ -18,7 +18,7 @@ ht-degree: 2%
 ---
 
 
-# 工作流步驟參考{#workflow-step-reference}
+# 工作流程步驟參考{#workflow-step-reference}
 
 工作流模型由各種類型的一系列步驟組成。 根據類型，這些步驟可以配置並擴展參數和指令碼，以提供所需的功能和控制。
 
@@ -274,7 +274,7 @@ function check(){
 
 要建立對話框：
 
-* 確定結果資料將儲存在裝載[中的位置。](#dialog-participant-step-storing-data-in-the-payload)
+* 確定結果資料將儲存在裝載](#dialog-participant-step-storing-data-in-the-payload)中的位置。[
 * [定義對話框；這包括定義用於收集（和儲存）資料的欄位](#dialog-participant-step-dialog-definition)。
 
 #### 對話方塊參與者步驟——將資料儲存在裝載{#dialog-participant-step-storing-data-in-the-payload}
