@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '1711'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 # SPA和伺服器端演算{#spa-and-server-side-rendering}
 
 >[!NOTE]
->「單頁應用程式(SPA)編輯器」功能需要[AEM 6.4 Service Pack 2](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html)或更新版本。
+>「單頁應用程式(SPA)編輯器」功能需要[AEM 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)或更新版本。
 >
 >SPA編輯器是建議的解決方案，適用於需要以SPA架構為基礎的用戶端轉換（例如React或Angular）的專案。
 
@@ -144,7 +144,7 @@ AEM中SSR的SPA需要Adobe I/O Runtime，這是轉換應用程式內容伺服器
 >[We.Retail Journal應用程式](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)僅供展示之用，因此使用Node.js做為簡單範例，而非建議的Adobe I/O Runtime。 此範例不應用於任何專案工作。
 
 >[!NOTE]
->任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
+>任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ## 使用Node.js {#using-node-js}
 
