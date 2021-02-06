@@ -49,7 +49,7 @@ AEM提供多種機制，讓您自訂製作例項的頁面製作功能（以及[c
 >
 >* 使用並建立[clientlibs](/help/sites-developing/clientlibs.md)。
 >* 使用並建立[覆蓋](/help/sites-developing/overlays.md)。
->* [花崗岩](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [AEM Touch-Enabled ](/help/sites-developing/touch-ui-structure.md) UI的結構，以取得用於頁面製作的結構區域的詳細資訊。
 
 >
