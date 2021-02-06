@@ -131,7 +131,7 @@ Microsoft Dynamics使用以理賠為基礎的驗證，將Microsoft Dynamics CRM�
 
    ![dynamics_authentication_settings](assets/dynamics_authentication_settings.png)
 
-1. 按一下「連線至OAuth **[!UICONTROL 」。]**&#x200B;系統會將您重新導向至Microsoft Dynamics登入頁面。
+1. 按一下「連線至OAuth ]**」。**[!UICONTROL &#x200B;系統會將您重新導向至Microsoft Dynamics登入頁面。
 1. 使用您的Microsoft Dynamics憑證登入，並接受允許雲端服務設定連線至Microsoft Dynamics服務。 建立雲服務與服務之間的連接是一次性的任務。
 
    然後，您會被重新導向至雲端服務設定頁面，此頁面會顯示訊息，指出OData設定已成功儲存。
