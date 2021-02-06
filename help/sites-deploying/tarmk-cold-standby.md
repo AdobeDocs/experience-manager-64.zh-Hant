@@ -276,7 +276,7 @@ Tar Micro Kernel的Cold Standby（冷備用）容量允許一個或多個備用A
 * **允許的IP範圍(`primary.allowed-client-ip-ranges`):**  —— 主要允許連接的IP範圍。
 * **安全(`secure`)：啟** 用SSL加密。為了使用此設定，必須在所有例項上啟用此設定。
 * **備用讀超時(`standby.readtimeout`)：從備** 用實例發出的請求超時（以毫秒為單位）。**建議的逾時設定為43200000。通常建議您將超時值設定為至少12小時。**
-* **備用自動清理(`standby.autoclean`):** 如果儲存的大小在同步週期上增加，請調用清理方法。
+* **備用自動清`standby.autoclean`除():** 如果儲存的大小在同步週期中增加，請調用清除方法。
 
 >[!NOTE]
 >
@@ -304,7 +304,7 @@ Tar Micro Kernel的Cold Standby（冷備用）容量允許一個或多個備用A
    ```
 
 1. 向負載平衡器添加新主要。
-1. 建立並啟動新的備用實例。 如需詳細資訊，請參閱上述「建立AEM TarMK Cold Standby Setup[」中的程式。](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. 建立並啟動新的備用實例。 如需詳細資訊，請參閱上述「建立AEM TarMK Cold Standby Setup](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)」中的程式。[
 
 ## 將修補程式應用於冷備用設定{#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -318,7 +318,7 @@ Tar Micro Kernel的Cold Standby（冷備用）容量允許一個或多個備用A
 1. 在安裝後測試實例以瞭解問題。
 1. 通過刪除其安裝資料夾來刪除冷備用實例。
 1. 通過將主實例的整個安裝資料夾的檔案系統副本複製到冷備用實例的位置來停止它並克隆它。
-1. 重新配置新建立的克隆以充當冷備用實例。 如需詳細資訊，請參閱「建立AEM TarMK冷待機設定」。[](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. 重新配置新建立的克隆以充當冷備用實例。 如需詳細資訊，請參閱「建立AEM TarMK冷待機設定」。](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)[
 1. 啟動主實例和冷備用實例。
 
 ## 監控 {#monitoring}
@@ -361,7 +361,7 @@ Tar Micro Kernel的Cold Standby（冷備用）容量允許一個或多個備用A
 
 ## Cold Standby Repository維護{#cold-standby-repository-maintenance}
 
-### 修訂清除{#revision-clean}
+### 修訂清除 {#revision-clean}
 
 >[!CAUTION]
 >
