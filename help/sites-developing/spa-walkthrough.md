@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '2012'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # SPA簡介和逐步介紹{#spa-introduction-and-walkthrough}
 
-單頁應用程式(SPA)可為網站使用者提供引人入勝的體驗。 開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中順暢地編輯內容，以供使用此類架構建立的網站使用。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中順暢地編輯內容，以供使用此類架構建立的網站使用。
 
 SPA Editor提供完整的解決方案，以支援AEM中的SPA。 本文逐步說明如何使用基本的SPA應用程式來製作內容，並說明它與基礎的AEM SPA編輯器有何關聯。
 
@@ -47,7 +47,7 @@ SPA Editor提供完整的解決方案，以支援AEM中的SPA。 本文逐步說
 >
 >本檔案僅用於展示用途，使用[We.Retail Journal應用程式](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)。 它不應用於任何項目工作。
 >
->任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
+>任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ### 什麼是SPA?{#what-is-a-spa}
 
@@ -82,7 +82,7 @@ SPA就像原生應用程式，不但對網頁的訪客，而且由於SPA的運�
 
 SPA的主要思想是減少對伺服器的呼叫和依賴，以將伺服器呼叫所造成的延遲降至最低，讓SPA接近原生應用程式的回應速度。
 
-在傳統的循序網頁中，只會載入立即頁面所需的資料。 這表示當訪客移至另一個頁面時，會呼叫伺服器以取得其他資源。 當訪客與頁面上的元素互動時，可能需要額外呼叫。 這些多次呼叫可能會延遲或延遲，因為頁面必須趕上訪客的要求。
+在傳統的循序網頁中，只會載入立即頁面所需的資料。 這表示當訪客移至另一個頁面時，會呼叫伺服器以取得其他資源。 當訪客與頁面上的元素互動時，可能需要其他呼叫。 這些多次呼叫可能會延遲或延遲，因為頁面必須趕上訪客的要求。
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
