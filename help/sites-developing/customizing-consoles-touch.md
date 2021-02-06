@@ -42,7 +42,7 @@ AEM提供多種機制，讓您自訂製作例項的控制台（以及[頁面製�
 >
 >* 使用並建立[clientlibs](/help/sites-developing/clientlibs.md)。
 >* 使用並建立[覆蓋](/help/sites-developing/overlays.md)。
->* [花崗岩](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+>* [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >
 >
@@ -98,7 +98,7 @@ AEM提供多種機制，讓您自訂製作例項的控制台（以及[頁面製�
 -->
 >[!NOTE]
 >
->請參閱知識庫文章「疑難排解AEM TouchUI問題」[，以取得更多提示和工具。](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)
+>請參閱知識庫文章「疑難排解AEM TouchUI問題」](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)，以取得更多提示和工具。[
 
 <!-- Needs a review by Engineering -->
 <!--
