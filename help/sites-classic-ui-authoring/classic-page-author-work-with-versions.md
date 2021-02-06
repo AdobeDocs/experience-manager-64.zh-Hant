@@ -99,7 +99,7 @@ ht-degree: 0%
    * 已添加的文本為綠色並突出顯示。
    * 已新增或刪除的影像會以綠色框架顯示。
 
-   ![chlimage_1-106](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. 在Sidekick中，選擇「恢復版本」子頁籤，然後按一下「**&lt;Back**」按鈕以顯示當前版本。****
 
@@ -128,7 +128,7 @@ Timewarp可從sidekick取得。
 
 1. 開啟&#x200B;**版本控制**&#x200B;標籤，然後按一下&#x200B;**時間彎曲**（靠近側腳底部）。 將顯示以下對話框：
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![chlimage_1-105](assets/chlimage_1-106.png)
 
 1. 使用日期和時間選擇器指定您想要的日期／時間，然後按一下&#x200B;**Go**。
 
