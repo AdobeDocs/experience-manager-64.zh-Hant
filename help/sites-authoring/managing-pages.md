@@ -179,7 +179,7 @@ AEM隨附數個現成可用的範本。 可用的範本取決於個別網站。 
 * 影片
 * 還有更多
 
-建立並開啟頁面後，您就可使用](/help/sites-authoring/editing-content.md#inserting-a-component)元件瀏覽器[提供的元件[新增內容。](/help/sites-authoring/author-environment-tools.md#components-browser)
+建立並開啟頁面後，您就可使用[元件瀏覽器](/help/sites-authoring/author-environment-tools.md#components-browser)提供的元件](/help/sites-authoring/editing-content.md#inserting-a-component)新增內容。[
 
 >[!NOTE]
 >
@@ -418,7 +418,7 @@ AEM提供您更新任何參照重新命名／移動之頁面的內部連結的�
 
 1. 開啟&#x200B;**Sites**&#x200B;控制台並導航到所需位置。
 1. 要開啟選項清單，請從工具欄中選擇&#x200B;**建立**
-1. 選擇&#x200B;**資料夾**&#x200B;以開啟對話框。 在此處，您可以輸入&#x200B;**Name**&#x200B;和&#x200B;**Title**:
+1. 選擇&#x200B;**資料夾**&#x200B;以開啟該對話框。 在此處，您可以輸入&#x200B;**Name**&#x200B;和&#x200B;**Title**:
 
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
