@@ -65,7 +65,7 @@ AEM Forms支援下列Web服務標準：
  </thead> 
  <tbody>
   <tr> 
-   <td><p>匯編器</p></td> 
+   <td><p>組合器</p></td> 
    <td><p><code>http://localhost:8080/soap/services/ AssemblerService?wsdl</code></p></td> 
   </tr> 
   <tr> 
@@ -129,7 +129,7 @@ AEM Forms支援下列Web服務標準：
    <td><p><code>http://localhost:8080/soap/services/ RepositoryService?wsdl</code></p></td> 
   </tr> 
   <tr> 
-   <td><p>Rights Management </p></td> 
+   <td><p>版權管理 </p></td> 
    <td><p><code>http://localhost:8080/soap/services/ RightsManagementService?wsdl</code></p></td> 
   </tr> 
   <tr> 
@@ -179,7 +179,7 @@ AEM Forms支援下列Web服務標準：
 
 **Web服務BLOB資料類型**
 
-AEM Forms服務WSDL可定義許多資料類型。 Web服務中公開的最重要資料類型之一是`BLOB`類型。 使用AEM Forms Java API時，此資料類型會對應至`com.adobe.idp.Document`類別。 （請參閱「使用Java API[將資料傳送至AEM Forms服務」）。](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+AEM Forms服務WSDL可定義許多資料類型。 Web服務中公開的最重要資料類型之一是`BLOB`類型。 使用AEM Forms Java API時，此資料類型會對應至`com.adobe.idp.Document`類別。 （請參閱「使用Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)將資料傳送至AEM Forms服務」）。[
 
 `BLOB`物件會傳送及擷取二進位資料（例如PDF檔案、XML資料等）至AEM Forms服務。 `BLOB`類型在服務WSDL中定義如下：
 
@@ -660,14 +660,14 @@ Adobe開發人員網站包含下列文章，討論如何使用web service API叫
 1. 使用Microsoft .NET客戶端元件，通過調用其預設建構子建立`MyApplication_EncryptDocumentService`對象。
 1. 使用`System.Net.NetworkCredential`物件設定`MyApplication_EncryptDocumentService`物件的`Credentials`屬性。 在`System.Net.NetworkCredential`建構函式中，指定AEM表單使用者名稱和對應的密碼。 設定驗證值，讓。NET用戶端應用程式能與AEM Forms成功交換SOAP訊息。
 1. 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存傳遞至`MyApplication/EncryptDocument`程式的PDF檔案。
-1. 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表PDF檔案的檔案位置和開啟檔案的模式。
+1. 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表PDF檔案的檔案位置和開啟檔案的模式。
 1. 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
 1. 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
-1. 通過為`binaryData`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+1. 通過為`binaryData`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 1. 叫用`MyApplication_EncryptDocumentService`物件的`invoke`方法並傳遞包含PDF檔案的`BLOB`物件，以叫用`MyApplication/EncryptDocument`程式。 此程式會傳回`BLOB`物件內的加密PDF檔案。
-1. 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示密碼加密文檔的檔案位置。
+1. 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示密碼加密文檔的檔案位置。
 1. 建立位元組陣列，儲存`MyApplicationEncryptDocumentService`物件`invoke`方法傳回之`BLOB`物件的資料內容。 獲取`BLOB`對象`binaryData`資料成員的值，以填充位元組陣列。
-1. 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+1. 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
 1. 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列內容寫入PDF檔案。
 
 ### 使用Java代理類和Base64編碼{#invoking-a-service-using-java-proxy-classes-and-base64-encoding}調用服務
@@ -819,14 +819,14 @@ Adobe開發人員網站包含下列文章，討論如何使用web service API叫
    ```
 
 1. 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存PDF檔案，以傳遞至`MyApplication/EncryptDocument`程式。
-1. 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表PDF檔案的檔案位置和開啟檔案的模式。
+1. 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表PDF檔案的檔案位置和開啟檔案的模式。
 1. 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
 1. 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
 1. 通過為`MTOM`資料成員分配位元組陣列的內容來填充`BLOB`對象。
 1. 叫用`MyApplication_EncryptDocumentClient`物件的`invoke`方法，以叫用`MyApplication/EncryptDocument`程式。 傳遞包含PDF檔案的`BLOB`物件。 此程式會傳回`BLOB`物件內的加密PDF檔案。
-1. 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立&lt;a0/>對象，該字串值表示受保護PDF文檔的檔案位置。
+1. 通過調用`System.IO.FileStream`對象的建構子並傳遞一個字串值來建立對象，該字串值表示受保護PDF文檔的檔案位置。
 1. 建立一個位元組陣列，用於儲存`invoke`方法返回的`BLOB`對象的資料內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-1. 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+1. 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
 1. 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 >[!NOTE]
@@ -982,7 +982,7 @@ Adobe開發人員網站包含下列文章，討論如何使用web service API叫
 1. 使用其建構函式建立`System.UriBuilder`物件，並傳遞傳回`BLOB`物件之`remoteURL`資料成員的值。
 1. 將`System.UriBuilder`物件轉換為`System.IO.Stream`物件。 （此清單後面的C#快速啟動說明了如何執行此任務。）
 1. 建立位元組陣列，並將位於`System.IO.Stream`物件中的資料填入該陣列。
-1. 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+1. 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
 1. 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列內容寫入PDF檔案。
 
 ### 通過HTTP {#invoking-a-service-using-java-proxy-classes-and-blob-data-over-http}使用Java代理類和BLOB資料調用服務
@@ -1125,7 +1125,7 @@ Adobe開發人員網站包含下列文章，討論如何使用web service API叫
 1. 獲取`Attachment`對象`Stream`資料成員的值，以獲得`System.IO.Stream`對象。
 1. 建立位元組陣列，並將該位元組陣列傳遞至`System.IO.Stream`物件的`Read`方法。 此方法會以代表加密PDF檔案的資料流填入位元組陣列。
 1. 叫用其建構函式並傳遞代表PDF檔案位置的字串值，以建立`System.IO.FileStream`物件。 此物件代表加密的PDF檔案。
-1. 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+1. 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
 1. 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 ### 建立使用DIME {#creating-apache-axis-java-proxy-classes-that-use-dime}的Apache Axis Java代理類
@@ -1145,7 +1145,7 @@ Apache Axis WSDL2Java工具會產生JAVA檔案，其中包含用於傳送SOAP請
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=dime.
    ```
 
-1. 通過調用`EncryptDocumentSoapBindingStub`對象的建構子並傳遞`MyApplicationEncryptDocumentServiceLocator`對象和`URL`對象來建立&lt;a0/>對象。
+1. 通過調用`EncryptDocumentSoapBindingStub`對象的建構子並傳遞`MyApplicationEncryptDocumentServiceLocator`對象和`URL`對象來建立對象。
 1. 透過叫用`EncryptDocumentSoapBindingStub`物件的`setUsername`和`setPassword`方法，設定AEM表單的使用者名稱和密碼值。
 
    ```as3
@@ -1511,7 +1511,7 @@ WSE體系結構使用策略、斷言和SecurityToken資料類型。 簡而言之
 * 應用程式管理員
 * 目錄管理器
 * Distiller
-* Rights Management
+* 版權管理
 * 檔案管理
 
 ### J2EE應用程式伺服器{#differences-in-j2ee-application-servers}的差異
