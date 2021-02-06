@@ -45,7 +45,7 @@ Adobe Experience Manager Forms檔案安全性可確保只有授權使用者才�
 
 1. 從[Adobe授權網站(LWS)](https://licensing.adobe.com/)下載AEM 6.4 Forms on JEE安裝程式。 您需要有效的維護與支援合約才能下載安裝程式。
 1. 請閱讀「JEE支援的平台上的[AEM表格」檔案](/help/forms/using/aem-forms-jee-supported-platforms.md)，並確定已準備好在JEE上安裝AEM表格的軟體、硬體、作業系統、應用程式伺服器、資料庫、JDK和其他基礎架構。
-1. （僅限非完整安裝）請閱讀「準備安裝AEM Forms單一伺服器[或](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)準備安裝AEM Forms伺服器叢集[並讓您的環境在JEE上安裝和設定AEM Forms」。](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
+1. （僅限非完整安裝）請閱讀「準備安裝AEM Forms單一伺服器](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)或[準備安裝AEM Forms伺服器叢集](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)並讓您的環境在JEE上安裝和設定AEM Forms」。[
 1. 根據您的環境和應用程式伺服器，選擇以下文檔之一併按照說明完成安裝
 
    * [使用JBoss統包功能在JEE上安裝和部署AEM Forms](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)
