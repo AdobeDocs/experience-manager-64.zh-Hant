@@ -78,7 +78,7 @@ AEM Brackets延伸功能支援Brackets 1.0版或更新版本。
 
 >[!NOTE]
 >
->如果您沒有包含內容套件的專案，則可以試用[HTL TodoMVC Example](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)。 在GitHub上，按一下「下載ZIP」，在本機解壓縮檔案，並依照上述指示，在Brackets中開啟「**」檔案夾。**`jcr_root`然後依照下列步驟設定&#x200B;**專案設定**，最後依「完整內容套件同步化」區段的進一步指示，執行&#x200B;**匯出內容套件**，將整個套件上傳至您的AEM開發例項。
+>如果您沒有包含內容套件的專案，則可以試用[HTL TodoMVC Example](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)。 在GitHub上，按一下「下載ZIP」，在本機解壓縮檔案，並依照上述指示，在Brackets中開啟「`jcr_root`」檔案夾。 ****&#x200B;然後依照下列步驟設定&#x200B;**專案設定**，最後依「完整內容套件同步化」區段的進一步指示，執行&#x200B;**匯出內容套件**，將整個套件上傳至您的AEM開發例項。
 >
 >在執行這些步驟後，您應可存取AEM開發例項上的`/content/todo.html` URL，並可開始在Brackets中修改程式碼，並查看在網頁瀏覽器中重新整理後，變更會立即同步至AEM伺服器。
 
