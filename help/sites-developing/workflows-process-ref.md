@@ -1,6 +1,6 @@
 ---
-title: 工作流進程參考
-seo-title: 工作流進程參考
+title: 工作流程處理序參考
+seo-title: 工作流程處理序參考
 description: 'null'
 seo-description: 'null'
 uuid: de367aa8-4580-4810-b665-2a7b521e36ca
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# 工作流進程參考{#workflow-process-reference}
+# 工作流程處理序參考{#workflow-process-reference}
 
 AEM提供數個可用來建立工作流程模型的流程步驟。 您也可以針對內建步驟未涵蓋的工作新增自訂流程步驟（請參閱[建立工作流程模型](/help/sites-developing/workflows-models.md)）。
 
