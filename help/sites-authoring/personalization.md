@@ -69,6 +69,6 @@ AEM提供內建定位引擎，可處理頁面請求並決定要顯示的內容�
 Adobe Target定位引擎會在Adobe Target中追蹤從頁面瀏覽收集到的資訊。
 
 * 使用此定位引擎時，您會使用從Adobe Target匯入的區段來定義體驗的觀眾。
-* 使用Adobe Target引擎的活動會與Target[同步。](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)
+* 使用Adobe Target引擎的活動會與Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)同步。[
 
-當您與Adobe Target[整合時，即可使用此引擎。](/help/sites-administering/opt-in.md)
+當您與Adobe Target](/help/sites-administering/opt-in.md)整合時，即可使用此引擎。[
