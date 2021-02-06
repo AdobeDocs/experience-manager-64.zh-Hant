@@ -290,7 +290,7 @@ topnav.jsp檔案的內容應如下所示：
 
 >[!NOTE]
 >
->您通常希望從ContextHub追蹤資料。 如需使用javascript取得此資訊的詳細資訊，請參閱ContextHub[中的「存取值」。](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub)
+>您通常希望從ContextHub追蹤資料。 如需使用javascript取得此資訊的詳細資訊，請參閱ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub)中的「存取值」。[
 
 #### 將追蹤元件新增至Sidekick {#adding-the-tracking-component-to-sidekick}
 
