@@ -14,7 +14,7 @@ translation-type: tm+mt
 source-git-commit: 6d07c570ce596871daa246a20c238432e4f8e67a
 workflow-type: tm+mt
 source-wordcount: '3525'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -145,7 +145,7 @@ AEM元件可用來封存、格式化和轉譯網頁上提供的內容。
 
    * 在所有雲端解決方案中提供一致的UI
    * [AEM Touch-Enabled UI - Coral UI的概念](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral UI指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Coral UI 指南](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite UI
 
