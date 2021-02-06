@@ -45,7 +45,7 @@ ht-degree: 0%
 
    放置的圖表元件會建立圖表的佔位符。
 
-1. 在「Interactive Communication」（互動式通信）編輯器中按一下圖表元件，然後從「元件」工具欄中選擇「配置」(**** configure_icon![)。](assets/configure_icon.png)
+1. 在「Interactive Communication」（互動式通信）編輯器中按一下圖表元件，然後從「元件」工具欄中選擇「配置」(]**![configure_icon](assets/configure_icon.png))。**[!UICONTROL 
 
    屬性邊欄將顯示，焦點是圖表的基本屬性。
 
