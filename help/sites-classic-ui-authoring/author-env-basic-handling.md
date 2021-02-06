@@ -52,7 +52,7 @@ ht-degree: 4%
   </tr> 
   <tr> 
    <td><strong>歡迎</strong></td> 
-   <td>提供AEM主要功能的概觀和直接存取（透過連結）。</td> 
+   <td>提供AEM主要功能的概述和直接存取（透過連結）。</td> 
   </tr> 
   <tr> 
    <td><strong>數位資產</strong><br /> </td> 
