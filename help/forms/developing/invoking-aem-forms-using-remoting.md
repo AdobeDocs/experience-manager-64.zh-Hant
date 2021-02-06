@@ -96,7 +96,7 @@ ht-degree: 0%
 
 ## 使用Remoting {#handling-documents-with-remoting}處理文檔
 
-AEM Forms中使用的最重要非原始Java類型之一是`com.adobe.idp.Document`類別。 呼叫AEM Forms作業時，通常需要檔案。 它主要是PDF檔案，但可包含其他檔案類型，例如SWF、HTML、XML或DOC檔案。 （請參閱「使用Java API[將資料傳送至AEM Forms服務」）。](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+AEM Forms中使用的最重要非原始Java類型之一是`com.adobe.idp.Document`類別。 呼叫AEM Forms作業時，通常需要檔案。 它主要是PDF檔案，但可包含其他檔案類型，例如SWF、HTML、XML或DOC檔案。 （請參閱「使用Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)將資料傳送至AEM Forms服務」）。[
 
 使用Flex建立的用戶端應用程式無法直接要求檔案。 例如，您無法啟動Adobe Reader以請求產生PDF檔案的URL。 要求檔案類型（例如PDF和Microsoft Word檔案）會傳回URL結果。 客戶有責任顯示URL的內容。 「檔案管理」服務可協助產生URL和內容類型資訊。 對XML檔案的要求會傳回完整的XML檔案。
 
