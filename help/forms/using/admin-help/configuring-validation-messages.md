@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -63,7 +63,7 @@ ht-degree: 1%
 
 1. 在「驗證輸出」的「邊框大小」方塊中，輸入影格邊框的大小（以像素為單位）。
 
-   邊框大小必須等於或大於0。 預設值為1。
+   邊框大小必須等於或大於0。 預設值為 1。
 
 1. 按一下「儲存」。
 
