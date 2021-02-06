@@ -1,6 +1,6 @@
 ---
-title: SAML 2.0驗證處理常式
-seo-title: SAML 2.0驗證處理常式
+title: SAML 2.0 驗證處理常式
+seo-title: SAML 2.0 驗證處理常式
 description: 瞭解AEM中的SAML 2.0驗證處理常式。
 seo-description: 瞭解AEM中的SAML 2.0驗證處理常式。
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 9f8ee3448abeb9a2f4de09b6ccc2f29b00b44fe5
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
-# SAML 2.0驗證處理常式{#saml-authentication-handler}
+# SAML 2.0 驗證處理常式{#saml-authentication-handler}
 
 AEM隨附[SAML](http://saml.xml.org/saml-specifications)驗證處理常式。 此處理常式支援使用`HTTP POST`系結的[SAML](http://saml.xml.org/saml-specifications) 2.0驗證請求通訊協定（Web-SSO描述檔）。
 
