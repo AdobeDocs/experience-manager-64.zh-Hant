@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Document Services是一組OSGi Services，可用來建立、組合和保護PDF檔案。 檔案服務包含下列服務：
 
-## 輸出服務{#output-service}
+## 輸出服務 {#output-service}
 
 「輸出」服務可讓您建立不同格式的檔案，包括PDF、雷射印表機格式和標籤印表機格式。 雷射打印機格式為PostScript和打印機控制語言(PCL)。 以下清單指定標籤打印機格式：
 
@@ -46,7 +46,7 @@ AEM Document Services是一組OSGi Services，可用來建立、組合和保護P
 * **generatePDFOutputBatch**:在單次呼叫中合併多個範本與多個資料記錄，以產生一批PDF檔案。您也可以選擇將所有PDF組合，以產生單一PDF
 * **generatePrintedOutputBatch**:在單次呼叫中合併多個範本與多個資料記錄，以產生一批列印檔案(PS、PCL、ZPL、DPL、IPL、TPCL)。您也可以選擇產生單一列印檔案。
 
-## 匯編器服務{#assembler-service}
+## 組合器服務 {#assembler-service}
 
 Assembler服務可讓您合併、重新排列和增強PDF和XDP檔案，並取得PDF檔案的相關資訊。 提交到Assembler服務的每個作業都包括文檔描述XML(DDX)文檔、源文檔和外部資源（字串和圖形）。 DDX文檔提供了有關如何使用源文檔來生成一組合成文檔的說明。
 
@@ -107,7 +107,7 @@ Doc Assurance服務包含三項服務：簽名、加密和Reader擴充功能。
 
 簽章服務會存取儲存在信任商店中的憑證和憑證。
 
-### 加密服務{#encryption-service}
+### 加密服務 {#encryption-service}
 
 Encryption服務可讓您加密和解密檔案。 當文檔加密時，其內容將變得不可讀。 您可以加密整份PDF檔案（包括其內容、中繼資料和附件）、除中繼資料以外的所有內容，或僅加密附件。 授權用戶可以解密文檔以獲得對其內容的訪問。 如果PDF檔案使用密碼加密，使用者必須先指定開啟的密碼，才能在Adobe Reader或Acrobat中檢視該檔案。 如果PDF檔案使用憑證加密，使用者必須使用私密金鑰（憑證）解密PDF檔案。 用於解密PDF文檔的私密金鑰必須對應於用於加密的公鑰。
 
