@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 您組織建立的業務流程可以表示為工作流。 例如，發佈網站內容的程式通常包括許可和由不同利害關係人簽署等步驟。 這些程式可以實作為AEM工作流程，並套用至內容頁面和資產。
 
-* [啟動工作流程](/help/sites-administering/workflows-starting.md)
-* [管理工作流實例](/help/sites-administering/workflows-administering.md)
-* [管理對工作流程的存取](/help/sites-administering/workflows-managing.md)
+* [開始工作流程](/help/sites-administering/workflows-starting.md)
+* [管理工作流程例項](/help/sites-administering/workflows-administering.md)
+* [管理工作流程存取權](/help/sites-administering/workflows-managing.md)
 
 >[!NOTE]
 >
