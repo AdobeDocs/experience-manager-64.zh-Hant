@@ -247,7 +247,7 @@ Interactive Communication中的文字檔案片段支援下列類型的動態資�
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
-文字編輯器內建支援210個特殊字元。 管理員可以透過自訂[新增對更多／自訂特殊字元的支援。](/help/forms/using/custom-special-characters.md)
+文字編輯器內建支援210個特殊字元。 管理員可以透過自訂](/help/forms/using/custom-special-characters.md)新增對更多／自訂特殊字元的支援。[
 
 ## 搜索和替代文字{#search-features}
 
