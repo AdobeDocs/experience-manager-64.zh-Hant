@@ -109,7 +109,7 @@ AEM現在提供兩種基本範本類型：
 * 靜態範本
 
    * AEM的數個版本都提供靜態範本。
-   * 它們由您的開發人員[提供，因此作者無法建立或編輯它們。](/help/sites-developing/page-templates-static.md)
+   * 它們由您的開發人員](/help/sites-developing/page-templates-static.md)提供，因此作者無法建立或編輯它們。[
    * 複製以建立新頁面，但此後不存在動態連線（雖然已註冊範本名稱以取得資訊）。
    * 使用[設計模式](/help/sites-authoring/default-components-designmode.md)來保存設計屬性。
    * 由於編輯靜態範本是開發人員的專屬工作，請參閱開發人員檔案[頁面範本- Static](/help/sites-developing/page-templates-static.md)以取得詳細資訊。
@@ -530,7 +530,7 @@ AEM現在提供兩種基本範本類型：
 
    在清單中選取元件，然後按一下或點選「 **新增類型** 」，將其他MIME類型新增至已映射的元件。按一下「 **刪除** 」圖示以移除MIME類型。
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
    *回應式設定*
 
