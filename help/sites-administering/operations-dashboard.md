@@ -482,7 +482,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### 說明查詢 {#explain-query}
 
-對於任何給定查詢，Oak會嘗試根據&#x200B;**oak:index**&#x200B;節點下資料庫中定義的Oak索引找出執行的最佳方式。 根據查詢，Oak可以選擇不同的索引。 瞭解Oak如何執行查詢是最佳化查詢的第一步。
+對於任何給定查詢，Oak會嘗試根據在&#x200B;**oak:index**&#x200B;節點下的資料庫中定義的Oak索引找出執行的最佳方式。 根據查詢，Oak可以選擇不同的索引。 瞭解Oak如何執行查詢是最佳化查詢的第一步。
 
 Explain Query是一種工具，可說明Oak如何執行查詢。 您可從「AEM歡迎畫面」前往「**工具——作業——診斷**」，然後按一下「查詢效能&#x200B;**」，並切換至「說明查詢** a5/>」標籤，以存取它。****
 
@@ -702,7 +702,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 >[!NOTE]
 >
->您也可以[觀看此影片](https://video.tv.adobe.com/v/21340?captions=chi_hant)，以瞭解系統概述控制面板的簡介。
+>您也可以[觀看此影片](https://video.tv.adobe.com/v/21340)，以瞭解系統概述控制面板的簡介。
 
 ### 如何訪問{#how-to-access}
 
