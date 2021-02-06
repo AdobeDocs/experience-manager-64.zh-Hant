@@ -459,7 +459,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 當成員與社群功能互動時，會傳送可觸發非同步接聽程式的事件，例如通知和計分。
 
-元件的SocialEvent例項會將事件記錄為`actions`所發生的事件。 `topic`SocialEvent包含傳回與動作相關聯之`verb`的方法。 在`actions`和`verbs`之間存在&#x200B;*n-1*&#x200B;關係。
+元件的SocialEvent例項會將事件記錄為`topic`所發生的事件。 `actions`SocialEvent包含傳回與動作相關聯之`verb`的方法。 在`actions`和`verbs`之間存在&#x200B;*n-1*&#x200B;關係。
 
 對於傳遞的社區元件，下表說明為[評分子規則](#scoring-sub-rules)中可用的每個`topic`定義的`verbs`。
 
