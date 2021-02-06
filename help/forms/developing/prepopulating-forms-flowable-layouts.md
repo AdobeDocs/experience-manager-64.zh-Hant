@@ -286,7 +286,7 @@ XML資料來源可用來預先填入固定版面和可排列版面的表單。 �
    * 調用`javax.xml.transform.Transformer`物件的`transform`方法並傳遞`javax.xml.transform.dom.DOMSource`和`javax.xml.transform.stream.StreamResult`物件，以填入Java `ByteArrayOutputStream`物件。
    * 建立位元組陣列，並將`ByteArrayOutputStream`對象的大小分配給位元組陣列。
    * 調用`ByteArrayOutputStream`物件的`toByteArray`方法，以填入位元組陣列。
-   * 使用`com.adobe.idp.Document`物件的建構函式並傳遞位元組陣列，以建立&lt;a0/>物件。
+   * 使用`com.adobe.idp.Document`物件的建構函式並傳遞位元組陣列，以建立物件。
 
 1. 演算預先填入的表單
 
