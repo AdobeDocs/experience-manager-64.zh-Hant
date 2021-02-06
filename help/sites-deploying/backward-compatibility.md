@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需不在「相容性套件」範圍內的內容和設定變更清單，請參閱「AEM 6.4[中的資料庫重組」。](/help/sites-deploying/repository-restructuring.md)
+>如需不在「相容性套件」範圍內的內容和設定變更清單，請參閱「AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的資料庫重組」。[
 
 在AEM 6.4中，所有功能都已在開發時考慮到向後相容性。
 
