@@ -86,7 +86,7 @@ AEM Forms具備高度可自訂性，可在許多不同的環境中運作。 有�
     </ul> </td> 
   </tr>
   <tr>
-   <td> AEM Forms應用程式</td> 
+   <td> AEM Forms 應用程式</td> 
    <td>
     <ul> 
      <li>/j_security_check*</li> 
