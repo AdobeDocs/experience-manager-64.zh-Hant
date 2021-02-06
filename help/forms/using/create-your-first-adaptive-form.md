@@ -39,7 +39,7 @@ ht-degree: 0%
 
 網站會在Adobe Experience Manager(AEM)上執行，並使用AEM Forms擷取和處理資料。 地址添加和更新表單是自適應表單。 該網站將客戶詳細資料儲存在資料庫中。 他們使用地址添加和更新表單來檢索和顯示可用地址。 他們還使用自適應表單來接受更新和新地址。
 
-### 先決條件{#prerequisite}
+### 必備條件 {#prerequisite}
 
 * 設定AEM作者例項。
 * 在作者例項上安裝[AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
