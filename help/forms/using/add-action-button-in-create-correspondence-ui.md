@@ -342,7 +342,7 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入憑證。
 
 1. 前往`https://[server]:[port]/system/console/configMgr`，以管理員身分登入。
-1. 找到「Adobe LiveCycle Client SDK Configuration」（Adobe LiveCycle用戶端SDK設定），然後按一下「Edit **[!UICONTROL 」（編輯圖示）。]**「配置」(Configurations)面板隨即開啟。
+1. 找到「Adobe LiveCycle Client SDK Configuration」（Adobe LiveCycle用戶端SDK設定），然後按一下「Edit ]**」（編輯圖示）。**[!UICONTROL 「配置」(Configurations)面板隨即開啟。
 
 1. 輸入以下詳細資訊，然後按一下&#x200B;**[!UICONTROL 保存]**:
 
@@ -386,7 +386,7 @@ LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入�
 
 1. 以管理員身份登錄到`https:/[host]/:[port]/system/console/configMgr`。
 
-1. 找到並按一下「Adobe LiveCycle Client SDK Configuration **[!UICONTROL 」。]**&#x200B;出現「Adobe LiveCycle Client SDK Configuration」（Adobe LiveCycle用戶端SDK設定）面板。
+1. 找到並按一下「Adobe LiveCycle Client SDK Configuration ]**」。**[!UICONTROL &#x200B;出現「Adobe LiveCycle Client SDK Configuration」（Adobe LiveCycle用戶端SDK設定）面板。
 1. 在「服務名」清單中，按一下+表徵圖並添加serviceName **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**。
 
 1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
