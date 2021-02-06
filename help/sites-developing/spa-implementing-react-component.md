@@ -1,6 +1,6 @@
 ---
-title: 實施SPA的React元件
-seo-title: 實施SPA的React元件
+title: 針對 SPA 實作 React元件
+seo-title: 針對 SPA 實作 React元件
 description: 本文舉出如何調整簡單、現有的React元件以搭配AEM SPA編輯器運作的範例。
 seo-description: 本文舉出如何調整簡單、現有的React元件以搭配AEM SPA編輯器運作的範例。
 uuid: aebca2ea-a020-45e1-8043-f8c21154c660
@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '587'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
 
-# 實施SPA的React元件{#implementing-a-react-component-for-spa}
+# 針對 SPA 實作 React元件{#implementing-a-react-component-for-spa}
 
-單頁應用程式(SPA)可為網站使用者提供引人入勝的體驗。 開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
 
 SPA製作功能提供完整的解決方案，以支援AEM中的SPA。 本文舉出如何調整簡單、現有的React元件以搭配AEM SPA編輯器運作的範例。
 
@@ -40,7 +40,7 @@ SPA製作功能提供完整的解決方案，以支援AEM中的SPA。 本文舉�
 >[!CAUTION]
 >本檔案僅用於展示用途，使用[We.Retail Journal應用程式](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)。 它不應用於任何項目工作。
 >
->任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
+>任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ## 氣象元件{#the-weather-component}
 
