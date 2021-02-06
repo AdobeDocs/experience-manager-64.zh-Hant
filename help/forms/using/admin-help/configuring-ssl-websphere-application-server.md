@@ -182,5 +182,5 @@ IBM WebSphere不允許在啟用「全域安全性」時對ORB.init()進行多次
    sling.bootdelegation.ibm=com.ibm.xml.*, com.ibm.websphere.ssl.*
    ```
 
-1. 保存檔案並重新啟動伺服器。
+1. 儲存檔案並重新啟動伺服器。
 
