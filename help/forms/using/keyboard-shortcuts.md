@@ -85,7 +85,7 @@ ht-degree: 0%
 [1取] 代Windows的Ctrl +向右鍵，以及Mac OS的Command +向右鍵。\
 [2取] 代Windows的Ctrl +向左箭頭，以及Mac OS的Command +向左箭頭。
 
-## 通信管理{#correspondence-management}
+## 通信管理 {#correspondence-management}
 
 本節列出了各種鍵盤和輔助功能快速鍵，可在「通信管理」文本編輯器中使用。 您可以在下列情況下使用這些捷徑：
 
