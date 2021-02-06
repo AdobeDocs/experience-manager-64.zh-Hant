@@ -325,11 +325,11 @@ WiredTiger日誌會保留查核點之間的所有資料修改。 如果MongoDB�
 >
 >通過將[storage.journal.enabled](https://docs.mongodb.com/manual/reference/configuration-options/#storage.journal.enabled)設定為false，可以禁用日誌記錄，這樣可以減少維護日誌的開銷。
 >
->對於[standalone](https://docs.mongodb.com/manual/reference/glossary/#term-standalone)實例，不使用日誌表示當MongoDB意外退出查核點時，將丟失某些資料修改。 對於[複製集](https://docs.mongodb.com/manual/reference/glossary/#term-replica-set)的成員，複製過程可提供足夠的耐用性保證。
+>對於[standalone](https://docs.mongodb.com/manual/reference/glossary/#term-standalone)實例，不使用日誌表示當MongoDB意外退出查核點時，將丟失某些資料修改。 對於[複製集](https://docs.mongodb.com/manual/reference/glossary/#term-replica-set)的成員，複製過程可以提供足夠的耐用性保證。
 
 #### 壓縮 {#compression}
 
-使用WiredTiger,MongoDB支援所有系列和索引的壓縮。 壓縮將儲存的使用降至最低，但會損害額外的CPU。
+使用WiredTiger,MongoDB支援所有系列和索引的壓縮。 壓縮可以最大限度地減少儲存的使用，而不會增加CPU。
 
 預設情況下，WiredTiger對所有系列使用帶有[snappy](https://docs.mongodb.com/manual/reference/glossary/#term-snappy)壓縮庫的塊壓縮，而對所有索引使用[前置詞壓縮](https://docs.mongodb.com/manual/reference/glossary/#term-prefix-compression)。
 
@@ -612,7 +612,7 @@ echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
 
 在沒有分派程式的情況下執行AEM，將需要SSL終止和負載平衡由其他應用程式執行。 這是必要的，因為工作階段必須與其所建立的AEM例項（稱為黏著連線）有相關性。 其目的在於確保內容更新顯示的延遲性最低。
 
-有關如何配置[Dispatcher文檔](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)的詳細資訊，請查看&lt;a0/> Dispatcher文檔&lt;a1/>。
+有關如何配置[Dispatcher文檔](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)的詳細資訊，請查看 Dispatcher文檔。
 
 ### 其他配置{#additional-configuration}
 
@@ -674,7 +674,7 @@ CSP允許對策略進行微調。 但是，在複雜的應用程式中，CSP標�
 
 >[!NOTE]
 >
->有關如何運作的詳細資訊，請參見[Content Security Policy](https://www.owasp.org/index.php/Content_Security_Policy)上的&lt;a0/>OWASP頁。
+>有關如何運作的詳細資訊，請參見[Content Security Policy](https://www.owasp.org/index.php/Content_Security_Policy)上的OWASP頁。
 
 ### 調整{#sizing}大小
 
