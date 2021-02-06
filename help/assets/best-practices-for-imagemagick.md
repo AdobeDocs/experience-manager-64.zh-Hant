@@ -63,7 +63,7 @@ ImageMagick是建立、編輯、合成或轉換點陣圖影像的軟體外掛程
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
-1. 開啟「處理縮圖&#x200B;**[!UICONTROL 」步驟，並在「略過Mime類型`image/jpeg`」下新增MIME類型]**。****
+1. 開啟「處理縮圖&#x200B;]**」步驟，並在「略過Mime類型**[!UICONTROL 」下新增MIME類型`image/jpeg`。****
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
