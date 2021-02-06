@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '981'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -92,7 +92,7 @@ Adobe提供處理與Adobe Experience Manager的存取、刪除和選擇退出相
 
 ## AEM Foundation {#aem-foundation}
 
-請參閱「處理AEM Foundation[的資料保護與隱私權要求」。](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)
+請參閱「處理AEM Foundation](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)的資料保護與隱私權要求」。[
 
 ## AEM選擇匯總使用統計資料收集{#aem-opting-into-aggregate-usage-statistics-collection}
 
@@ -130,7 +130,7 @@ AEM Communities透過[現成可用的API，賦予資料主體資料可攜性、�
 AEM Forms包含擷取、處理和儲存資料的元件和工作流程，以協調商業程式和完成數位交易。 不同的元件使用不同的資料儲存區，並可與自訂資料儲存區整合。 以下檔案說明存取和處理使用者資料以支援元件資料保護和隱私權（例如GDPR或CCPA）工作流程的程式和准則。
 
 * [表單入口網站](/help/forms/using/forms-portal-handling-user-data.md)
-* [信件管理](/help/forms/using/correspondence-management-handling-user-data.md)
+* [通信管理](/help/forms/using/correspondence-management-handling-user-data.md)
 * [與Adobe Sign整合](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [OSGi上的表單導向工作流程](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
 * [Forms JEE工作流程](/help/forms/using/forms-workflow-jee-handling-user-data.md) （僅限AEM Forms JEE）
