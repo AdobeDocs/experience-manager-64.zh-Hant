@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
 source-wordcount: '1361'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
@@ -176,6 +176,6 @@ AEM Assets-Marketing Cloud同步的設計方式，是讓上傳資產的使用者
 例如，如果資產是從AEM Assets（內部）例項上傳，則來自此例項的資產變更會傳播至Marketing Cloud例項。 不過，從Marketing Cloud例項對相同資產所做的變更不會傳播至AEM例項，從Marketing Cloud上傳的資產也會傳播至AEM例項。
 
 >[!MORELIKETHIS]
-* [AEM與Creative Cloud整合最佳實務](../assets/aem-cc-integration-best-practices.md)
-* [AEM到Creative Cloud資料夾分享最佳實務](../assets/aem-cc-folder-sharing-best-practices.md)
+* [AEM 與 Creative Cloud 整合最佳實務](../assets/aem-cc-integration-best-practices.md)
+* [AEM 對 Creative Cloud 資料夾共用最佳實務](../assets/aem-cc-folder-sharing-best-practices.md)
 
