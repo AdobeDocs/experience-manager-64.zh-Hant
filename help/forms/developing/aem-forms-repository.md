@@ -937,7 +937,7 @@ Repository服務為AEM Forms提供資源儲存和管理服務。 當開發人員
    * `boolean`值，指示指定的資源是否是關係中的源資源。 在此示例中，指定值`true`，因為此情況。
    * 關係類型，它是`Relation`類中的靜態常數之一。 在此示例中，通過使用先前使用的相同值來指定從屬關係：`Relation.TYPE_DEPENDANT_OF`。
 
-   `getRelated`方法返回`Resource`對象的`java.util.List`，通過&lt;a2/>對象可循環檢索每個相關資源，並將`List`中包含的對象按順序傳送到`Resource`。 在此示例中，`testResource2`應該位於返回的資源清單中。
+   `getRelated`方法返回`Resource`對象的`java.util.List`，通過對象可循環檢索每個相關資源，並將`List`中包含的對象按順序傳送到`Resource`。 在此示例中，`testResource2`應該位於返回的資源清單中。
 
 **另請參閱**
 
