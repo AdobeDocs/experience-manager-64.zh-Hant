@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
 source-wordcount: '325'
-ht-degree: 13%
+ht-degree: 23%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ## 關鍵AEM文章
 
-* [AEM快速入門](https://helpx.adobe.com/experience-manager/get-started.html)
+* [AEM快速入門](https://helpx.adobe.com/tw/experience-manager/get-started.html)
 * [AEM 6.4發行說明](/help/release-notes/home.md)
 * [近期文件更新](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM安全性檢查清單](/help/sites-administering/security-checklist.md)
@@ -42,10 +42,10 @@ ht-degree: 13%
 ## 關鍵AEM資源
 
 * [AEM教學課程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [《 Dispatcher使用手冊》](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
-* [HTL使用指南](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
-* [核心元件使用指南](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+* [《 Dispatcher使用手冊》](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)
+* [HTL使用指南](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
+* [核心元件使用指南](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=zh-Hant)
 * [GDPR 整備](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other#recommended/solutions/experience-manager)
 * [AEM 社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
