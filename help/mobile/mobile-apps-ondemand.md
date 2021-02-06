@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->**先決條件：**
+>**必備條件:**
 >
 >在使用AEM Mobile隨選服務並遵循本快速入門手冊中的步驟之前，使用者應先熟悉[AEM](/help/sites-deploying/deploy.md)。
 
