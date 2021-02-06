@@ -1,6 +1,6 @@
 ---
-title: 擴充工作流程功能
-seo-title: 擴充工作流程功能
+title: 延伸工作流程功能
+seo-title: 延伸工作流程功能
 description: 'null'
 seo-description: 'null'
 uuid: 9f4ea2a8-8b21-4e7c-ac73-dd37d9ada111
@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# 擴充工作流程功能{#extending-workflow-functionality}
+# 延伸工作流程功能{#extending-workflow-functionality}
 
 本主題說明如何為工作流程開發自訂步驟元件，以及如何以程式設計方式與工作流程互動。
 
@@ -99,7 +99,7 @@ WorkItem有其自己的MetaDataMap，只能在該工作項目（如步驟）運�
 
 ## 建立自定義工作流步驟元件{#creating-custom-workflow-step-components}
 
-工作流步驟元件可以以與任何其它元件[相同的方式建立。](/help/sites-developing/components.md)
+工作流步驟元件可以以與任何其它元件](/help/sites-developing/components.md)相同的方式建立。[
 
 要從其中一個（現有）基本步驟元件繼承，請向`cq:Component`節點添加以下屬性：
 
@@ -817,7 +817,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
    以下是我們自訂範例步驟的結果：
 
-   ![wf-34](assets/wf-34.png)
+   ![wf-36](assets/wf-34.png)
 
    >[!CAUTION]
    >
