@@ -475,7 +475,7 @@ Dynamic Media整合使用下列指令碼：
    opac=50
    ```
 
-   ![chlimage_1-505](assets/chlimage_1-503.png)
+   ![chlimage_1-503](assets/chlimage_1-503.png)
 
 ## 編輯影像預設集{#modifying-image-presets}
 
