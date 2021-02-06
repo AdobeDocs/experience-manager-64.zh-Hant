@@ -79,7 +79,7 @@ John Jacobs會收到這些要求，並將其路由給適當的人。 AEM Inbox�
 
 ### 親自查看{#see-it-yourself-1}
 
-您可以存取https://&lt;***hostname***>的AEM收件匣：***PublishPort***/content/we-finance/global/en/login.html?resource=/aem/inbox.html。 登入AEM收件匣，使用jjacobs/password做為John Jacobs的使用者名稱／密碼，並檢視FOIA應用程式。 如需有關將AEM Inbox用於表單導向工作流程工作的詳細資訊，請參閱「在AEM Inbox中管理表單應用程式和工作」[。](/help/forms/using/manage-applications-inbox.md)
+您可以存取https://&lt;***hostname***>的AEM收件匣：***PublishPort***/content/we-finance/global/en/login.html?resource=/aem/inbox.html。 登入AEM收件匣，使用jjacobs/password做為John Jacobs的使用者名稱／密碼，並檢視FOIA應用程式。 如需有關將AEM Inbox用於表單導向工作流程工作的詳細資訊，請參閱「在AEM Inbox中管理表單應用程式和工作」](/help/forms/using/manage-applications-inbox.md)。[
 
 ![約翰雅各布](assets/johnjacobs.png)
 
