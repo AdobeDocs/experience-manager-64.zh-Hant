@@ -33,7 +33,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->若要瞭解如何使用CRXDE Lite來開發AEM應用程式，請參閱「使用CRXDE Lite[開發」。](/help/sites-developing/developing-with-crxde-lite.md)
+>若要瞭解如何使用CRXDE Lite來開發AEM應用程式，請參閱「使用CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)開發」。[
 
 範本是頁面的基礎。
 
