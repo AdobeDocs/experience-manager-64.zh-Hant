@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
 source-wordcount: '1877'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -154,7 +154,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### 輸出服務{#output-service}
+### 輸出服務 {#output-service}
 
 <table> 
  <tbody>
@@ -197,7 +197,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### Forms服務{#forms-service}
+### 表單服務 {#forms-service}
 
 <table> 
  <tbody>
@@ -266,7 +266,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### 匯編器服務{#assembler-service}
+### 組合器服務 {#assembler-service}
 
 <table> 
  <tbody>
@@ -375,7 +375,7 @@ AEM Forms提供數個API來提交表單、處理檔案和演算檔案。 有些A
  </tbody>
 </table>
 
-### HTML5 Forms {#html-forms}
+### HTML5 表單 {#html-forms}
 
 <table> 
  <tbody>
