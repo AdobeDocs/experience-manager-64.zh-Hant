@@ -112,7 +112,7 @@ ht-degree: 0%
 
    ![特殊字元](assets/specialcharacters.png)
 
-   Commense Management已內建210個特殊字元的支援。 管理員可以透過自訂[新增對更多／自訂特殊字元的支援。](/help/forms/using/custom-special-characters.md)
+   Commense Management已內建210個特殊字元的支援。 管理員可以透過自訂](/help/forms/using/custom-special-characters.md)新增對更多／自訂特殊字元的支援。[
 
 1. 若要在可編輯的內嵌模組中反白\強調部分文字，請選取文字並點選「反白顯示顏色」。
 
