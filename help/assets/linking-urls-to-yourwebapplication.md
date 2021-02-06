@@ -191,7 +191,7 @@ Dynamic Media支援傳送靜態資產，這些資產不只是影像和視訊而�
 
 1. 將先前複製的所有部分合併，以建立字串：
 
-   &lt;>>&lt;>>&lt;>>&lt;>>`video asset path``video service URL``protocol selector``customer name`
+   &lt;>>&lt;>>&lt;>>&lt;>>`video service URL``protocol selector``customer name``video asset path`
 
    例如，使用這些步驟中範例中複製的資訊，字串會顯示如下：
 
