@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 在設定工作流程程式（自訂和／或現成可用）時，有些事情需要留意。
 
-### 暫時工作流程{#transient-workflows}
+### 暫時性工作流程 {#transient-workflows}
 
 若要最佳化高擷取負載，您可將[工作流程定義為transient](/help/sites-developing/workflows.md#transient-workflows)。
 
@@ -352,5 +352,5 @@ Sling Job Handling主控台將會顯示：
 
 * [使用工作流程](/help/sites-authoring/workflows.md)
 * [管理工作流程](/help/sites-administering/workflows.md)
-* [開發和擴充工作流程](/help/sites-developing/workflows.md)
+* [開發和延伸工作流程](/help/sites-developing/workflows.md)
 * [效能最佳化](/help/sites-deploying/configuring-performance.md)
