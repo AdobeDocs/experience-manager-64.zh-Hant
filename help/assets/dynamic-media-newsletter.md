@@ -1,6 +1,6 @@
 ---
 description: 'Dynamic Media Newsletter by Experience League是每月的電子報。 它可協助您快速上手使用Dynamic Media和Dynamic Media Classic，讓您立即開始實現價值。 本一站式商店電子報提供寶貴的知識建立資源，包括如何製作影片、解決方案概觀，以及介紹一些主要功能和功能，例如影像預設集、檢視器預設集、影片設定檔等。 '
-keywords: dynamic media;newsletter;product updates;tips and tricks;events;customer success;blog;blogs;images;videos;features;capabilities
+keywords: 動態媒體；電子報；產品更新；提示與秘訣；事件；客戶成功；部落格；部落格；影像；影像；功能
 seo-description: 這份一站式商店電子報提供知識建立資源，包括如何製作影片、解決方案概觀，以及介紹一些主要功能和功能，例如影像預設集、檢視器預設集、影片設定檔等。
 seo-title: 'Adobe Dynamic Media電子報 '
 solution: Dynamic Media Classic
@@ -8,7 +8,7 @@ title: 動態媒體電子報
 translation-type: tm+mt
 source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ Experience League每月推出的Dynamic Media電子報旨在協助您快速上�
    * 搶先一窺今年9月即將推出的強大整合功能，可讓您分析訪客與豐富式媒體的互動方式。
    * 認識動態媒體技術支援部門PieterJan Pieper。
 
-* **[2019年7月07日](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
+* **[2019年7月7日總第07期](https://expleague.azureedge.net/assets/dynamic-media/Dynamic_Media_Newsletter_07_2019_July.html)**
 
    在此問題中：
 
