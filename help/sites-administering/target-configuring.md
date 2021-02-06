@@ -228,7 +228,7 @@ AT.js提供多項mbox.js程式庫的改進：
 1. 在&#x200B;**Configuration Reference**&#x200B;下選擇所需框架。
 
    >[!NOTE]
-   請確定您選擇您所建立的特定&#x200B;**framework**，而非建立該&lt;a0/>的Target雲端組態。
+   請確定您選擇您所建立的特定&#x200B;**framework**，而非建立該的Target雲端組態。
 
 1. 點選／按一下&#x200B;**Done**。
 1. 啟動網站的根頁面，將其複製至發佈伺服器。 （請參閱[如何發佈頁面](/help/sites-authoring/publishing-pages.md)）。
