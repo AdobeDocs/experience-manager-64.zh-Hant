@@ -218,7 +218,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 儲存庫資料儲存用於將大型二進位檔案的儲存從儲存庫卸載到單獨的區域，以便儲存庫樹內同一二進位檔案（例如映像）的多個實例只儲存一次。
 
-此「儲存一次、多次引用」功能可以通過配置每個儲存庫的資料儲存以引用同一共用檔案系統位置來擴展，從而不僅為單個儲存庫樹提供服務，還為完全獨立的儲存庫提供服務。
+此「儲存一次、多次引用」功能可以通過配置每個儲存庫的資料儲存以引用同一共用檔案系統位置來擴展，從而不僅提供單個儲存庫樹，還提供完全獨立的儲存庫。
 
 這樣的資料儲存可以在同一群集中的不同節點之間共用，在同一安裝中不同的發佈和／或作者實例，甚至在不同安裝中完全不同的實例。
 
@@ -281,7 +281,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 [視訊元件](/help/sites-authoring/default-components-foundation.md#video)可讓您將預先定義的現成可用視訊元素置於頁面上。
 
-要正確進行轉碼，您的管理員必須分別安裝Fmpeg[。 ](/help/sites-administering/config-video.md#install-ffmpeg)您也可以[設定您的視訊描述檔](/help/sites-administering/config-video.md#configure-video-profiles)以搭配html5元素使用。
+要正確進行轉碼，您的管理員必須分別安裝Fmpeg](/help/sites-administering/config-video.md#install-ffmpeg)。 [您也可以[設定您的視訊描述檔](/help/sites-administering/config-video.md#configure-video-profiles)以搭配html5元素使用。
 
 ### 設定和自訂報表{#configuring-and-customizing-reports}
 
