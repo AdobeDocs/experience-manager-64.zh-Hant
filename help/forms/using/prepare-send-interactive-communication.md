@@ -135,7 +135,7 @@ ht-degree: 0%
 
 ### 在文字{#specialcharacters}中插入特殊字元
 
-Agent UI已內建支援210個特殊字元。 管理員可以透過自訂[新增對更多／自訂特殊字元的支援。](/help/forms/using/custom-special-characters.md)
+Agent UI已內建支援210個特殊字元。 管理員可以透過自訂](/help/forms/using/custom-special-characters.md)新增對更多／自訂特殊字元的支援。[
 
 #### 附件遞送{#attachmentdelivery}
 
