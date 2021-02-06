@@ -130,7 +130,7 @@ AEM提供直覺式使用者介面，可使用提供的工作流程步驟來建�
 
    對於為例如抵押貸款應用程式配置的分配任務步驟、記錄步驟文檔和簽署文檔步驟的所有欄位的完整值集，請導入示例包，該示例包可在本節的開頭下載。
 
-   工作流程模型已就緒。 您可以透過各種方法啟動工作流程。 如需詳細資訊，請參閱「在OSGi[上啟動以表單為中心的工作流程」。](#launch)
+   工作流程模型已就緒。 您可以透過各種方法啟動工作流程。 如需詳細資訊，請參閱「在OSGi](#launch)上啟動以表單為中心的工作流程」。[
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
@@ -208,7 +208,7 @@ AEM提供直覺式使用者介面，可使用提供的工作流程步驟來建�
 
 ### 從AEM Inbox {#inbox}送出應用程式
 
-您建立的工作流應用程式作為「收件箱」中的應用程式可用。 屬於工作流程使用者群組的使用者可以填寫並送出觸發相關工作流程的應用程式。 如需使用AEM Inbox來送出應用程式及管理工作的詳細資訊，請參閱「在AEM Inbox中管理表單應用程式和工作」[。](/help/forms/using/manage-applications-inbox.md)
+您建立的工作流應用程式作為「收件箱」中的應用程式可用。 屬於工作流程使用者群組的使用者可以填寫並送出觸發相關工作流程的應用程式。 如需使用AEM Inbox來送出應用程式及管理工作的詳細資訊，請參閱「在AEM Inbox中管理表單應用程式和工作」](/help/forms/using/manage-applications-inbox.md)。[
 
 ### 從AEM Forms App {#afa}送出應用程式
 
@@ -216,7 +216,7 @@ AEM Forms應用程式與AEM Forms伺服器同步，可讓您變更帳戶中的�
 
 ### 提交最適化表單{#af}
 
-您可以設定最適化表單的提交動作，以在提交最適化表單時啟動工作流程。 最適化表單提供「叫用AEM Workflow **[!UICONTROL 提交動作」，以在提交最適化表單時啟動工作流程。]**&#x200B;有關提交操作的詳細資訊，請參閱[配置提交操作](/help/forms/using/configuring-submit-actions.md)。 若要透過AEM Forms應用程式提交最適化表單，請啟用最適化表單屬性中的「與AEM表單應用程式同步」。
+您可以設定最適化表單的提交動作，以在提交最適化表單時啟動工作流程。 最適化表單提供「叫用AEM Workflow ]**提交動作」，以在提交最適化表單時啟動工作流程。**[!UICONTROL &#x200B;有關提交操作的詳細資訊，請參閱[配置提交操作](/help/forms/using/configuring-submit-actions.md)。 若要透過AEM Forms應用程式提交最適化表單，請啟用最適化表單屬性中的「與AEM表單應用程式同步」。
 
 您可以設定最適化表單，以便從AEM Forms應用程式同步、送出和觸發工作流程。 如需詳細資訊，請參閱使用表單](/help/forms/using/working-with-form.md)的[。
 
