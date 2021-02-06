@@ -118,7 +118,7 @@ Forms服務可以根據您使用Designer建立的片段來轉換表單。 *fragm
 
 1. 指定URI值
 
-   * 使用`URLSpec`的建構函式建立儲存URI值的&lt;a0/>物件。
+   * 使用`URLSpec`的建構函式建立儲存URI值的物件。
    * 叫用`URLSpec`物件的`setApplicationWebRoot`方法，並傳遞代表應用程式Web根目錄的字串值。
    * 叫用`URLSpec`物件的`setContentRootURI`方法，並傳遞指定內容根URI值的字串值。 請確定表單設計和片段位於內容根URI中。 否則，Forms服務會引發例外。 要引用儲存庫，請指定`repository://`。
    * 叫用`URLSpec`物件的`setTargetURL`方法，並傳遞字串值，指定表單資料張貼到的目標URL值。 如果您在表單設計中定義目標URL，則可以傳遞空字串。 您也可以指定表單傳送至的URL，以便執行計算。
