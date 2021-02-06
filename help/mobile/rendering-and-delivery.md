@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 9d03a3988b2c8e34b9009d80a53d8b8508b5f0aa
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ Content Services預設轉譯器可填補現成可用的Sling Defaults和自訂�
 
 ## 請求JSON {#requesting-json}
 
-使用&#x200B;**&lt;RESOURCE.caas[。&lt;export-config>.][&lt;export-config>.] jsonto要求JSON。**
+使用&#x200B;**&lt;RESOURCE.caas[。&lt;export-config>.][&lt;export-config>.** jsonto要求JSON。]
 
 <table>
  <tbody>
