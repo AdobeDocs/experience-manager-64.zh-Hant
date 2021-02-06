@@ -74,7 +74,7 @@ REST（REpresentational State Transfer，簡稱REST）是指World Wide Web所基
 
 要瞭解Apache Sling請求解析度的主要方面是，請求主要如何對應至內容存放庫中的特定資源、請求的其他屬性以及這些內容物件的屬性，如何決定要呼叫哪些應用程式碼來轉換內容，以及/apps中的程式碼如何覆寫/libs中的程式碼。
 
-### 快速入門{#quickstart}
+### 快速入門 {#quickstart}
 
 沒有步驟三：要安裝和運行，只需下載並按兩下Quickstart JAR檔案。 沒有第三步。 任何其他可選功能都只需要從Package Share安裝適當的套件。
 
