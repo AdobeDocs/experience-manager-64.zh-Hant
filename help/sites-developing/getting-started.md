@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 12%
+ht-degree: 15%
 
 ---
 
@@ -37,8 +37,8 @@ ht-degree: 12%
 教學課程實作運用AEM的許多強大功能。 網站的實作方式為：
 
 * [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
-* [Sling Models](https://sling.apache.org/documentation/bundles/models.html)
-* [Touch UI](/help/sites-developing/touch-ui-concepts.md)
+* [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
+* [觸控式 UI](/help/sites-developing/touch-ui-concepts.md)
 * [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [可編輯的範本](/help/sites-developing/page-templates-editable.md)
 
