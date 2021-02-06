@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -23,13 +23,13 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 來源包含建立自�
 
 若要取得AEM Forms應用程式來源，請執行下列步驟：
 
-1. 開啟[軟體分發](https://experience.adobe.com/downloads)。 您必須有Adobe ID才能登入「軟體散發」。
-1. 點選頁首功能表中的「Adobe Experience Manager **[!UICONTROL 」。]**
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 點一下頁首功能表中的 **[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL Filters]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL Solution]**&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL Forms]**。
    2. 選擇包的版本和類型。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 點選適用於您作業系統的套件名稱，選取「**[!UICONTROL 接受EULA條款]**」，然後點選「**[!UICONTROL 下載]**」。
-1. 開啟[包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然後按一下&#x200B;**[!UICONTROL 上載包]**&#x200B;來上載包。
+1. 開啟[套件管理器](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 「上傳套件」]**&#x200B;即可上傳套件。
 1. 選擇軟體包並按一下&#x200B;**[!UICONTROL Install]**。
 
 1. 若要下載原始碼封存檔，請在您的瀏覽器中開啟`https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip`。
