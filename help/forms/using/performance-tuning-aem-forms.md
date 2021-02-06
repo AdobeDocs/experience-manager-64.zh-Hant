@@ -1,6 +1,6 @@
 ---
-title: AEM Forms伺服器的效能調整
-seo-title: AEM Forms伺服器的效能調整
+title: AEM Forms 伺服器的效能調整
+seo-title: AEM Forms 伺服器的效能調整
 description: 若要讓AEM Forms最佳化執行，您可以微調快取設定和JVM參數。 此外，使用網頁伺服器可增強AEM Forms部署的效能。
 seo-description: 若要讓AEM Forms最佳化執行，您可以微調快取設定和JVM參數。 此外，使用網頁伺服器可增強AEM Forms部署的效能。
 uuid: 77eaeecc-ca52-4d3d-92e6-1ab4d91b9edd
@@ -12,12 +12,12 @@ translation-type: tm+mt
 source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
 workflow-type: tm+mt
 source-wordcount: '900'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
-# AEM Forms伺服器{#performance-tuning-of-aem-forms-server}的效能調整
+# AEM Forms 伺服器的效能調整 {#performance-tuning-of-aem-forms-server}
 
 本文討論您可實作的策略和最佳實務，以減少瓶頸並最佳化AEM Forms部署的效能。
 
