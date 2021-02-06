@@ -323,4 +323,4 @@ AEM Forms服務可以非同步呼叫，方法是在呼叫URL中以`async_invoke`
 
 如果程式需要PDF檔案作為輸入值，請確定您以PDF格式提交表單，如上圖所示。 此外，若要成功叫用程式，程式必須傳回PDF檔案。 否則，Acrobat無法處理返回值，並會出現錯誤。 您不必指定輸入流程變數的名稱。 例如，* MyApplication/EncryptDocument*進程具有名為`inDoc`的輸入變數。 只要表單已提交為PDF，您就不需要指定inDoc。
 
-您也可以以XML格式將表單資料提交至表單流程，若要提交XML資料，請確定`Submit As`下拉式清單指定XML。 由於程式的傳回值必須是PDF檔案，因此PDF檔案會顯示在Acrobat中。
+您也可以以XML格式將表單資料提交至表單流程，若要提交XML資料，請確定`Submit As`下拉式清單指定XML。 由於程式的返回值必須是PDF檔案，因此PDF檔案會顯示在Acrobat中。
