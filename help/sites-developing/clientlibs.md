@@ -1,6 +1,6 @@
 ---
-title: 使用用戶端程式庫
-seo-title: 使用用戶端程式庫
+title: 使用用戶端端程式庫
+seo-title: 使用用戶端端程式庫
 description: AEM提供「用戶端程式庫檔案夾」，可讓您將用戶端程式碼儲存在儲存庫中、將它組織成類別，並定義將每個程式碼類別提供給用戶端的時間和方式
 seo-description: AEM提供「用戶端程式庫檔案夾」，可讓您將用戶端程式碼儲存在儲存庫中、將它組織成類別，並定義將每個程式碼類別提供給用戶端的時間和方式
 uuid: c022992d-a6db-4abb-8c53-4c91d6eed225
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# 使用用戶端程式庫{#using-client-side-libraries}
+# 使用用戶端端程式庫{#using-client-side-libraries}
 
 現代網站嚴重依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 組織並最佳化此程式碼的服務可能是個複雜的問題。
 
