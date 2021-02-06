@@ -30,7 +30,7 @@ cURL是用於執行URL操縱的開放原始碼命令列工具。 它支援多種
 
 cURL是使用URL語法取得或傳送資料的成熟且廣泛使用的工具，最初於1997年發行。 名稱cURL原意是「請參閱URL」。
 
-由於建立AEM的Sling架構具有REST風格，因此大部分工作都可縮減為URL呼叫，而URL呼叫可以與cURL一起執行。 [使用cURL](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 可自動執行內容操作任務，例如啟 [動頁](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 面、啟動工作流程以及操作任務（如包管理和管理用戶）。此外，您也可以針對AEM中的大部分工作，建立自己的cURL[命令。](/help/sites-administering/curl.md#building-a-curl-ready-aem-command)
+由於建立AEM的Sling架構具有REST風格，因此大部分工作都可縮減為URL呼叫，而URL呼叫可以與cURL一起執行。 [使用cURL](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 可自動執行內容操作任務，例如啟 [動頁](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 面、啟動工作流程以及操作任務（如包管理和管理用戶）。此外，您也可以針對AEM中的大部分工作，建立自己的cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command)命令。[
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### 啟用和禁用CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
-如需詳細資訊，請參閱「在AEM[中啟用CRXDE Lite」。](/help/sites-administering/enabling-crxde-lite.md)
+如需詳細資訊，請參閱「在AEM](/help/sites-administering/enabling-crxde-lite.md)中啟用CRXDE Lite」。[
 
 ### 資料存放庫廢棄項目收集 {#data-store-garbage-collection}
 
