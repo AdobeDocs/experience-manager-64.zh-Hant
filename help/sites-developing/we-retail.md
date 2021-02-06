@@ -46,7 +46,7 @@ We.Retail是AEM的標準參考實作，展示AEM的一些最強大功能。
 
 ## 快速入門 {#getting-started}
 
-We.Retail會以AEM的範例內容形式提供。 若要使用，只需像通常[一樣啟動AEM，並確保範例內容未停用。](/help/sites-deploying/deploy.md#getting-started)
+We.Retail會以AEM的範例內容形式提供。 若要使用，只需像通常](/help/sites-deploying/deploy.md#getting-started)一樣啟動AEM，並確保範例內容未停用。[
 
 >[!CAUTION]
 >
@@ -58,7 +58,7 @@ We.Retail會以AEM的範例內容形式提供。 若要使用，只需像通常[
 
 ### 最新版本 {#latest-version}
 
-雖然We.Retail隨AEM發行，但內容及其功能的更新可能會在發行後進行。 因此，您可從GitHub[下載最新版本，然後](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)upload[和](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system)以套件形式在AEM例項上安裝[。](/help/sites-administering/package-manager.md#installing-packages)
+雖然We.Retail隨AEM發行，但內容及其功能的更新可能會在發行後進行。 因此，您可從GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)下載最新版本，然後[upload](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system)和[以套件形式在AEM例項上安裝](/help/sites-administering/package-manager.md#installing-packages)。[
 
 ### 第一步{#first-steps}
 
