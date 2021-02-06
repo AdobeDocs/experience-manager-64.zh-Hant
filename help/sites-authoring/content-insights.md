@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Content Insight提供有關使用網頁分析和SEO建議之頁面效能的資訊。 使用Content Insight來決定如何修改頁面，或瞭解先前的變更如何改變效能。 您可針對您所製作的每個頁面開啟Content Insight以分析頁面。
 
-![chlimage_1-310](assets/chlimage_1-311.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 「內容分析」頁面的版面配置會隨螢幕尺寸和您所用裝置的方向而變更。
 
