@@ -29,7 +29,7 @@ AEM中的HTML5表單元件提供將XFA表單範本轉換為HTML5格式。 表單
 
 ### 預覽HTML {#preview-html}
 
-「預覽HTML」索引標籤會新增至「表單設計人員的設計」模式中，以在設計程式期間預覽HTML5格式的表單。 如需如何在AEM Forms Designer中啟用和設定此功能的詳細資訊，請參閱「預覽HTML[」。](/help/forms/using/preview-xdp-forms-html.md)
+「預覽HTML」索引標籤會新增至「表單設計人員的設計」模式中，以在設計程式期間預覽HTML5格式的表單。 如需如何在AEM Forms Designer中啟用和設定此功能的詳細資訊，請參閱「預覽HTML](/help/forms/using/preview-xdp-forms-html.md)」。[
 
 ### 塗鴉簽名{#scribble-signature}
 
