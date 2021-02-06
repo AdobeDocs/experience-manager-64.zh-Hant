@@ -30,7 +30,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**先決條件**:
+>**必備條件**:
 >
 >在[部署與維護](/help/sites-deploying/deploy.md)中，開發人員已熟悉AEM的元件與範本系統。
 
