@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '1281'
-ht-degree: 11%
+ht-degree: 14%
 
 ---
 
@@ -152,7 +152,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 | 區域 | 功能 | 替代方案 |
 |---|---|---|
-| Analytics Activity Map | AEM中包含的Activity Map版本。 | 由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。 Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式現在應該使用。 |
+| Analytics Activity Map | AEM中包含的Activity Map版本。 | 由於 Adobe Analytics API 中的安全性變更，AEM 中包含的 Activity Map 版本已無法再使用。Adobe Analytics](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式現在應該使用。 |
 | 元件——表單 | 表單驗證碼(foundation/components/form/captcha) | 請改用Google的ReCaptcha元件 |
 | 元件 | 投影片（基礎／元件／投影片） | 無取代 |
 | 元件 | Flash（基礎／元件/Flash） | 無取代 |
@@ -179,4 +179,4 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 區域 | 功能 | 公告 |
 |---|---|---|
 | 瀏覽器支援 | Microsoft Internet Explorer | AEM 6.4是支援Microsoft Internet Explorer 11的最後一個版本。 |
-| 基礎 | UI架構 | Adobe在2019年淘汰了Coral UI 2元件。 AEM 6.4完全以Coral UI 3（隨AEM 6.2推出）為基礎。 Adobe建議已使用Coral 2建立自訂UI的客戶和合作夥伴，將這些UI重構至Coral 3。 Adobe提供工具，將Coral 2對話方塊轉換為Coral 3 - [閱讀更多資訊](/help/sites-developing/dialog-conversion.md)。 |
+| Foundation | UI架構 | Adobe在2019年淘汰了Coral UI 2元件。 AEM 6.4完全以Coral UI 3（隨AEM 6.2推出）為基礎。 Adobe建議已使用Coral 2建立自訂UI的客戶和合作夥伴，將這些UI重構至Coral 3。 Adobe提供工具，將Coral 2對話方塊轉換為Coral 3 - [閱讀更多資訊](/help/sites-developing/dialog-conversion.md)。 |
