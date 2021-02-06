@@ -40,7 +40,7 @@ ht-degree: 2%
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-   切換至傳統UI的能力必須由管理員[啟用。](../../help/sites-administering/enable-classic-ui.md)
+   切換至傳統UI的能力必須由管理員](../../help/sites-administering/enable-classic-ui.md)啟用。[
 
 1. 從[傳統UI歡迎頁面](http://localhost:4502/welcome.html)選擇&#x200B;**[!UICONTROL 網站]**。
 
@@ -108,5 +108,5 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->cq:designPath的使用是選擇性的，與clientlibs[的使用無關，這些是SCF元件使用](develop-app.md#includeclientlibsintemplate)clientlibs[來管理其JS和CSS時的必要項。](client-customize.md#clientlibs-for-scf)
+>cq:designPath的使用是選擇性的，與clientlibs](develop-app.md#includeclientlibsintemplate)的使用無關，這些是SCF元件使用[clientlibs](client-customize.md#clientlibs-for-scf)來管理其JS和CSS時的必要項。[
 
