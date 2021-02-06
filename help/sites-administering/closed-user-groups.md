@@ -166,7 +166,7 @@ Apache Sling驗證需求預期會透過頁面或節點階層繼承。 對於繼�
 
 * 一旦透過上述呼叫取得有效的登入路徑，使用者的要求就會重新導向至該頁面。
 
-由Granite中新的驗證要求支援實作的`LoginPathProvider`會顯示由`granite:loginPath`屬性定義的登入路徑，而&lt;a1/>屬性又由上述的mixin類型定義。 保存登錄路徑的資源路徑與屬性值本身的映射保存在記憶體中，並將被評估以為層次中的其他節點找到合適的登錄路徑。
+由Granite中新的驗證要求支援實作的`LoginPathProvider`會顯示由`granite:loginPath`屬性定義的登入路徑，而屬性又由上述的mixin類型定義。 保存登錄路徑的資源路徑與屬性值本身的映射保存在記憶體中，並將被評估以為層次中的其他節點找到合適的登錄路徑。
 
 >[!NOTE]
 >
@@ -475,7 +475,7 @@ while (isSupported(node)) {
 | 是 | 否 | 是 | 只有在有效權限評估授予訪問權限時，給定用戶才能查看用CUG策略標籤的子樹。 未驗證的使用者將重新導向至繼承的預設登入頁面。 |
 | 是 | 是 | 否 | 未驗證的使用者將重新導向至指定的登入頁面。 是否允許它查看使用驗證要求標籤的樹取決於該子樹中包含的各個項目的有效權限。 沒有專用的CUG限制讀訪問。 |
 | 是 | 否 | 否 | 未驗證的使用者將重新導向至繼承的預設登入頁面。 是否允許它查看使用驗證要求標籤的樹取決於該子樹中包含的單個項目的有效權限。 沒有專用的CUG限制讀訪問。 |
-| 否 | 否 | 是 | 如果有效權限評估授予訪問權限，則給定的已驗證或未驗證用戶只能查看用CUG策略標籤的子樹。 未驗證的使用者會受到同等對待，不會重新導向至登入。 |
+| 否 | 否 | 是 | 如果有效權限評估授予訪問權限，則給定的已驗證或未驗證用戶只能查看以CUG策略標籤的子樹。 未驗證的使用者會受到同等對待，不會重新導向至登入。 |
 
 >[!NOTE]
 >
@@ -493,7 +493,7 @@ while (isSupported(node)) {
 
 #### 設定CUG授權{#setting-up-cug-authorization}
 
-有關的Apache文檔[中詳細描述了設定CUG授權。 ](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability)依預設，AEM在所有執行模式中都部署了CUG授權。 該逐步指令也可用於在那些需要不同授權設定的安裝中禁用CUG授權。
+有關的Apache文檔](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability)中詳細描述了設定CUG授權。 [依預設，AEM在所有執行模式中都部署了CUG授權。 該逐步指令也可用於在那些需要不同授權設定的安裝中禁用CUG授權。
 
 #### 設定反向連結篩選{#configuring-the-referrer-filter}
 
@@ -593,7 +593,7 @@ while (isSupported(node)) {
 * 服務用戶承擔者
 * 儲存庫內部系統主機
 
-如需詳細資訊，請參閱下方「自AEM 6.3[以來的預設設定」一節中的表格。](#default-configuration-since-aem)
+如需詳細資訊，請參閱下方「自AEM 6.3](#default-configuration-since-aem)以來的預設設定」一節中的表格。[
 
 「管理員」群組的排除可在&#x200B;**Apache Jackrabbit Oak CUG排除清單**&#x200B;的設定區段中，在系統主控台中變更或擴充。
 
