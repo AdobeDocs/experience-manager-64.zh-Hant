@@ -105,7 +105,7 @@ AEM表單資料庫會儲存GDS和「內容儲存根目錄」（針對Content Ser
 
 IBM提供一套工具和幫助系統，幫助資料庫管理員管理其備份和恢復任務：
 
-* IBM DB2 Archive Log Accelerator（請參閱《IBM DB2 Archive Log Accelerator for z/OS使用手冊》[）。](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true)
+* IBM DB2 Archive Log Accelerator（請參閱《IBM DB2 Archive Log Accelerator for z/OS使用手冊》](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true)）。[
 * IBM DB2 Data Archive專家（請參閱[IBM DB2 Data Archive Expert使用手冊和Reference](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true)）。
 
 DB2具有將資料庫備份到Tivoli Storage Manager的內置功能。 通過使用Tivoli Storage Manager , DB2備份可以儲存在其他介質或本地硬碟上。
