@@ -242,7 +242,7 @@ ht-degree: 4%
    <td><p> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>案頭應用程式</p> </td> 
+   <td><p>桌面應用程式</p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
    <td><p> </p> </td> 
