@@ -46,7 +46,7 @@ Salesforce.com 是領導朝向社交企業轉變的企業雲端運算公司。
 
 >[!NOTE]
 >
->Silverpop Engage整合不是現成可用的。 若要將AEM與Silverpop Engage整合，請從Package Share下載Package[。](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content)
+>Silverpop Engage整合不是現成可用的。 若要將AEM與Silverpop Engage整合，請從Package Share下載Package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content)。[
 
 Silverpop Engage提供行銷自動化、電子郵件、行動與社交功能。
 
