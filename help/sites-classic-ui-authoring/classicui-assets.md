@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 11%
+ht-degree: 14%
 
 ---
 
@@ -25,4 +25,4 @@ ht-degree: 11%
 * [將Dynamic Media Classic功能新增至您的頁面](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [使用 Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [資產的命名慣例](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
-* [使用3D資產](/help/sites-classic-ui-authoring/classicui-3dassets.md)
+* [使用 3D 資產](/help/sites-classic-ui-authoring/classicui-3dassets.md)
