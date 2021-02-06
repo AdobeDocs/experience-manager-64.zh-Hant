@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 
 # HTTP2內容傳送{#http-delivery-of-content}
 
-Adobe很榮幸宣佈推出HTTP/2內容傳送，並提升效能。
+Adobe 很榮幸宣佈推出有助於提升整體效能的 HTTP/2 內容傳送。
 
 ## 什麼是HTTP/2?{#what-is-http}
 
