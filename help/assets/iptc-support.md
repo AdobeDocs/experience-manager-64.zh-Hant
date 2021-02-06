@@ -30,7 +30,7 @@ Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣�
 
 1. 按一下/點選「 **[!UICONTROL IPTC擴充功能」標籤]** ，以檢視資產的IPTC擴充功能中繼資料。
 1. 視需要編輯ITPC Extension中繼資料屬性。
-1. 點選／按一下「儲存並關閉」以儲存變更。]****[!UICONTROL 
+1. 點選／按一下「儲存並關閉」以儲存變更。****
 
 ## 創意評分支援{#creative-rating-support}
 
