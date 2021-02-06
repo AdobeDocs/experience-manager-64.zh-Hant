@@ -61,7 +61,7 @@ ht-degree: 5%
    1. [檔案片段](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. 預覽列印和網路頻道，並視需要編輯互動式通訊。
-1. 代理使用代理UI來準備Interactive Communication[，以便將它發送到收件人／帖子進程。](/help/forms/using/prepare-send-interactive-communication.md)
+1. 代理使用代理UI來準備Interactive Communication](/help/forms/using/prepare-send-interactive-communication.md)，以便將它發送到收件人／帖子進程。[
 
 ### 建置區塊 {#buildingblocks}
 
