@@ -1,5 +1,5 @@
 ---
-title: 資產監控最佳實踐
+title: Assets 監控最佳實務
 description: 在部署AEM例項後，監控其環境與效能的最佳實務。
 contentOwner: AG
 translation-type: tm+mt
