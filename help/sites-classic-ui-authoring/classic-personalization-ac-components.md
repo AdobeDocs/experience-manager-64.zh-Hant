@@ -24,7 +24,7 @@ ht-degree: 6%
 
 ## Adobe Campaign電子報元件{#adobe-campaign-newsletter-components}
 
-所有促銷活動元件都遵循[電子郵件範本最佳實務](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳實務，並以Adobe標籤語言[HTL](https://helpx.adobe.com/experience-manager/htl/using/overview.html)為基礎。
+所有促銷活動元件都遵循[電子郵件範本最佳實務](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳實務，並以Adobe標籤語言[HTL](https://helpx.adobe.com/tw/experience-manager/htl/using/overview.html)為基礎。
 
 當您開啟已設定為與Adobe Campaign整合的電子報／電子郵件時，應在&#x200B;**Adobe Campaign電子報**&#x200B;區段中看到下列元件：
 
@@ -38,7 +38,7 @@ ht-degree: 6%
 
 以下章節將說明這些元件。
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### 標題 (行銷活動) {#heading-campaign}
 
@@ -61,7 +61,7 @@ ht-degree: 6%
 
 下列範例顯示所顯示的標題（促銷活動）元件。
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### 影像 (行銷活動) {#image-campaign}
 
