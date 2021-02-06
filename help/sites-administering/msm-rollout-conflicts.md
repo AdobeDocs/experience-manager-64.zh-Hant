@@ -78,7 +78,7 @@ ht-degree: 0%
 
 轉出管理員可讓您啟用或停用衝突管理。
 
-這是使用[**Day CQ WCM Pollout Manager**&#x200B;的&lt;a0/>OSGi配置](/help/sites-deploying/configuring-osgi.md)完成的：
+這是使用[**Day CQ WCM Pollout Manager**&#x200B;的OSGi配置](/help/sites-deploying/configuring-osgi.md)完成的：
 
 * **使用手動建立的頁面處理衝突**:
 
@@ -166,7 +166,7 @@ AEM提供：
 
       定義與其他衝突處理程式(`service.ranking`)相關的順序。
 
-      預設值為0。
+      預設值為 0。
 
 ### 衝突處理停用{#behavior-when-conflict-handling-deactivated}時的行為
 
