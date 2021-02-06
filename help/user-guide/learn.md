@@ -9,7 +9,7 @@ translation-type: tm+mt
 source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
@@ -41,7 +41,7 @@ AEM Forms將表單製作、管理和發佈功能，以及通訊管理功能、�
 
 ## AEM Screens {#aem-screens}
 
-畫面是Adobe Experience Manager的功能，可讓您發佈動態互動式數位體驗和互動，其中涉及不同螢幕類型，並搭配完整的數位行銷平台。  [了解更多.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+畫面是Adobe Experience Manager的功能，可讓您發佈動態互動式數位體驗和互動，其中涉及不同螢幕類型，並搭配完整的數位行銷平台。  [了解更多.](https://docs.adobe.com/content/help/zh-Hant/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
