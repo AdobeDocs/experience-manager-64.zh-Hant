@@ -53,7 +53,7 @@ AEM Assets會使用副檔名MP4產生視訊資產的預覽。 如果資產的格
 
 1. 在 AEM 中，點選&#x200B;**[!UICONTROL 「工具」>「一般」>「CRXDE Lite」]**。
 1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁面中，在左側的目錄窗口中，導航至`/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`。 要查看目錄窗口，請按一下`>>`表徵圖。
-1. 在工具列中，點選「覆蓋節點」。 ]****[!UICONTROL &#x200B;或者，從上 **[!UICONTROL 下文選單選取]** 「覆蓋節點」。
+1. 在工具列中，點選「覆蓋節點」。 ****&#x200B;或者，從上 **[!UICONTROL 下文選單選取]** 「覆蓋節點」。
 1. 在「覆蓋 **[!UICONTROL 節點」對話方]** ，點選「 **[!UICONTROL 確定」]**。
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
@@ -61,7 +61,7 @@ AEM Assets會使用副檔名MP4產生視訊資產的預覽。 如果資產的格
 1. 重新整理瀏覽器。 已選取覆蓋節點`/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`。
 1. 在&#x200B;**[!UICONTROL Properties]**&#x200B;標籤中，以位元組為單位輸入適當的值，以將大小限制增大到所需的大小。 例如，輸入`32212254720`值，將大小限制提高到30 GB。
 
-1. 從工具列中，點選「全部儲存」。]****[!UICONTROL 
+1. 從工具列中，點選「全部儲存」。****
 1. 在AEM中，點選「 **[!UICONTROL 工具 > 作業 > Web Console]**」。
 1. 在&#x200B;**[!UICONTROL Adobe Experience Manager Web Console Bundles]**&#x200B;頁面的表格&#x200B;**[!UICONTROL Name]**&#x200B;欄下，找到並點選&#x200B;**[!UICONTROL Adobe Granite Workflow External Process Job Handler]**。
 1. 在&#x200B;**[!UICONTROL Adobe Granite Workflow External Process Job Handler]**&#x200B;頁面中，將&#x200B;**[!UICONTROL Default Timeout]**&#x200B;和&#x200B;**[!UICONTROL Max Timeout]**&#x200B;欄位的秒數設為`18000`（5小時）。
