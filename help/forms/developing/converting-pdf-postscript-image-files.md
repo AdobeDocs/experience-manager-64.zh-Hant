@@ -118,7 +118,7 @@ ht-degree: 0%
 
 1. 設定轉換執行時期選項。
 
-   * 通過調用`ToPSOptionsSpec`對象的建構子建立&lt;a0/>對象。
+   * 通過調用`ToPSOptionsSpec`對象的建構子建立對象。
    * 通過調用屬於`ToPSOptionsSpec`對象的相應方法來設定運行時選項。 例如，若要定義所建立的PostScript層級，請叫用`ToPSOptionsSpec`物件的`setPsLevel`方法，並傳遞指定PostScript層級的`PSLevel`列舉值。 如需您可設定之所有執行時期值的詳細資訊，請參閱[AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)中的`ToPSOptionsSpec`類別參考。
 
 1. 將PDF檔案轉換為PostScript檔案。
@@ -180,7 +180,7 @@ ht-degree: 0%
 
 1. 設定轉換執行時期選項。
 
-   * 通過調用`ToPSOptionsSpec`對象的建構子建立&lt;a0/>對象。
+   * 通過調用`ToPSOptionsSpec`對象的建構子建立對象。
    * 為`ToPSOptionsSpec`物件的資料成員指派值，以設定執行時期選項。 例如，若要定義所建立的PostScript層級，請為`ToPSOptionsSpec`物件的`psLevel`資料成員指派`PSLevel`列舉值。
 
 1. 將PDF檔案轉換為PostScript檔案。
@@ -194,9 +194,9 @@ ht-degree: 0%
 
 1. 儲存PostScript檔案。
 
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞代表PS檔案檔案位置的字串值。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞代表PS檔案檔案位置的字串值。
    * 建立一個位元組陣列，用於儲存`encryptPDFUsingPassword`方法返回的`BLOB`對象的資料內容。 取得`BLOB`物件的`MTOM`欄位值，以填入位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PostScript檔案。
 
 **另請參閱**
@@ -334,7 +334,7 @@ ht-degree: 0%
 1. 擷取要轉換的PDF檔案。
 
    * 使用其建構子建立`BLOB`對象。 此`BLOB`物件用來儲存PDF表單。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，指定PDF表單的位置和開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，指定PDF表單的位置和開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 取得`System.IO.FileStream`物件的`Length`屬性，以決定位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
    * 通過為`MTOM`對象的欄位分配位元組陣列的內容來填充`BLOB`對象。
