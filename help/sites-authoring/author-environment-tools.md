@@ -51,7 +51,7 @@ AEM的製作環境提供多種機制來組織和編輯您的內容。 提供的�
 * [**頁面資訊**](/help/sites-authoring/editing-page-properties.md#page-properties)&#x200B;選擇器；這將顯示介紹性投影片（如您第一次存取編輯器時所顯示）。
 * [configuration](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)對話方塊，以取得特定元件(使用？ 表徵圖);這會顯示內容相關的說明。
 
-控制台[還提供與幫助相關的其他資源。](/help/sites-authoring/basic-handling.md#accessing-help)
+控制台](/help/sites-authoring/basic-handling.md#accessing-help)還提供與幫助相關的其他資源。[
 
 ## 元件瀏覽器{#components-browser}
 
