@@ -323,7 +323,7 @@ Web服務定義語言(WSDL)產生只能用於開發環境，開發人員會使�
   </tr> 
   <tr> 
    <td><p>目錄瀏覽</p> </td> 
-   <td><p>當有人請求不存在的頁面或請求控制器名稱(請求字串以斜線(/)結尾)時，應用程式伺服器不應傳回該目錄的內容。 為避免此問題，您可以停用應用程式伺服器上的目錄瀏覽。 您應針對管理控制台應用程式和伺服器上執行的其他應用程式執行此動作。</p> <p>對於JBoss，請將web.xml檔案中<code>DefaultServlet</code>屬性的清單初始化參數的值設定為<code>false</code>，如以下示例所示：</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;預設&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;清單&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;1&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>對於WebSphere，將ibm-web-ext.xmi檔案中的<code>directoryBrowsingEnabled</code>屬性設定為<code>false</code>。</p> <p>對於WebLogic，請將weblogic.xml檔案中的index-directories屬性設定為<code>false</code>，如以下示例所示：</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
+   <td><p>當有人請求不存在的頁面或請求控制器名稱(請求字串以斜線(/)結尾)時，應用程式伺服器不應傳回該目錄的內容。 為避免此問題，您可以停用應用程式伺服器上的目錄瀏覽。 您應針對管理控制台應用程式和伺服器上執行的其他應用程式執行此動作。</p> <p>對於JBoss，請將web.xml檔案中<code>DefaultServlet</code>屬性的清單初始化參數的值設定為<code>false</code>，如以下示例所示：</p> <p>&lt;servlet&gt;</p> <p>&lt;servlet-name&gt;預設&lt;/servlet-name&gt;</p> <p>&lt;servlet-class&gt;</p> <p>org.apache.catalina.servlets.DefaultServlet</p> <p>&lt;/servlet-class&gt;</p> <p>&lt;init-param&gt;</p> <p>&lt;param-name&gt;清單&lt;/param-name&gt;</p> <p>&lt;param-value&gt;false&lt;/param-value&gt;</p> <p>&lt;/init-param&gt;</p> <p>&lt;load-on-startup&gt;3&lt;/load-on-startup&gt;</p> <p>&lt;/servlet&gt;</p> <p>對於WebSphere，將ibm-web-ext.xmi檔案中的<code>directoryBrowsingEnabled</code>屬性設定為<code>false</code>。</p> <p>對於WebLogic，請將weblogic.xml檔案中的index-directories屬性設定為<code>false</code>，如以下示例所示：</p> <p>&lt;container-descriptor&gt;</p> <p>&lt;index-directory-enabled&gt;false</p> <p>&lt;/index-directory-enabled&gt;</p> <p>&lt;/container-descriptor&gt;</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -676,7 +676,7 @@ AEM Forms on JEE使用「反向連結篩選」功能來封鎖CSRF攻擊。 本�
 
 JEE上的AEM Forms提供「反向連結篩選」，以指定允許存取您伺服器資源的反向連結。 依預設，反向連結篩選器不會篩選使用安全HTTP方法（例如GET）的請求，除非&#x200B;*CSRF_CHECK_GETS*&#x200B;設定為true。 如果「允許的反向連結」項目的埠號設定為0,JEE上的AEM Forms將允許來自該主機的所有具有反向連結的請求，而不論其埠號為何。 如果未指定埠號，則僅允許來自預設埠80(HTTP)或埠443(HTTPS)的請求。 如果「允許的反向連結」清單中的所有項目都已刪除，則會停用「反向連結篩選」。
 
-首次安裝Document Services時，「允許反向連結」清單會更新為安裝Document Services的伺服器位址。 伺服器的條目包括伺服器名、IPv4地址、IPv6地址（如果啟用了IPv6）、環回地址和localhost條目。 主機作業系統會傳回新增至「允許反向連結」清單的名稱。 例如，IP位址為10.40.54.187的伺服器將包含下列項目：`https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`。 對於主機作業系統重新調整的任何不合格名稱（沒有IPv4地址、IPv6地址或限定域名的名稱），不會更新允許清單。 修改「允許的反向連結」清單以符合您的商業環境。 請勿使用預設的「允許反向連結」清單，在生產環境中部署表單伺服器。 修改任何「允許的反向連結」、「反向連結例外」或URI後，請確定您重新啟動伺服器，讓變更生效。
+首次安裝Document Services時，「允許反向連結」清單會更新為安裝Document Services的伺服器位址。 伺服器的條目包括伺服器名、IPv4地址、IPv6地址（如果啟用了IPv6）、環回地址和localhost條目。 主機作業系統會傳回新增至「允許反向連結」清單的名稱。 例如，IP位址為10.40.54.187的伺服器將包含下列項目：`https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`。 對於主機作業系統重新調整的任何不合格名稱（沒有IPv4地址、IPv6地址或限定域名的名稱），允許清單不會更新。 修改「允許的反向連結」清單以符合您的商業環境。 請勿使用預設的「允許反向連結」清單，在生產環境中部署表單伺服器。 修改任何「允許的反向連結」、「反向連結例外」或URI後，請確定您重新啟動伺服器，讓變更生效。
 
 **管理允許的反向連結清單**
 
