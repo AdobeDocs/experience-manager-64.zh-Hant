@@ -83,7 +83,7 @@ ht-degree: 6%
 
    >[!NOTE]
    >
-   >建議您透過活動console[建立品牌。](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)
+   >建議您透過活動console](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)建立品牌。[
    >
    >如果您以任何其他方式建立品牌，請確定節點`/campaigns/<brand>/master`存在，或者當您嘗試建立活動時會產生錯誤。
 
@@ -163,11 +163,11 @@ ht-degree: 6%
 
 ### 自訂選件和資料庫選件{#custom-offers-and-library-offers}
 
-在頁面[上撰寫並用於單一體驗的選件稱為自訂選件。 ](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)下列影像會疊加在自訂選件的內容上：
+在頁面](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer)上撰寫並用於單一體驗的選件稱為自訂選件。 [下列影像會疊加在自訂選件的內容上：
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
-從選件程式庫[新增的選件與下列影像重疊：](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)
+從選件程式庫](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)新增的選件與下列影像重疊：[
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -304,7 +304,7 @@ ht-degree: 6%
 
 在「定位」模式中撰寫定位元件的內容，以建立選件。 當您建立自訂選件時，它會用作單一體驗的選件。
 
-如果您決定該選件可用於其他體驗，則可建立自訂選件並將它新增至程式庫[。 ](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library)如需使用選件主控台建立可重複使用選件的詳細資訊，請參閱[將選件新增至選件程式庫](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)。
+如果您決定該選件可用於其他體驗，則可建立自訂選件並將它新增至程式庫](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer-to-a-library)。 [如需使用選件主控台建立可重複使用選件的詳細資訊，請參閱[將選件新增至選件程式庫](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)。
 
 1. 選擇您要新增選件的體驗。
 1. 若要顯現元件選單，請按一下或點選您要新增選件的目標元件。
@@ -461,7 +461,7 @@ ht-degree: 6%
    <td><p>點按測試體驗任何部分的訪客百分比。 每個訪客或任何訪客每次完成轉換時，都可計算一次轉換。 轉換量度會設為下列其中一項：</p> 
     <ul> 
      <li><strong>已檢視頁面</strong> -您可以定義觀眾檢視的頁面，方法是選擇 <strong>URL</strong> 清單，然後定義URL或多個URL，或選擇 <strong>URL</strong> 容器並新增路徑或關鍵字。</li> 
-     <li><strong>已檢視mbox</strong> -您可以輸入mbox的名稱，以定義您的觀眾檢視的mbox。您可以按一下「新增Mbox<strong>」，輸入多個mbox。</strong></li> 
+     <li><strong>已檢視mbox</strong> -您可以輸入mbox的名稱，以定義您的觀眾檢視的mbox。您可以按一下「新增Mbox</strong>」，輸入多個mbox。<strong></strong></li> 
     </ul> </td> 
   </tr> 
   <tr> 
