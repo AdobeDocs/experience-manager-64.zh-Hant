@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 10%
 
 * [新增動態媒體資產至網頁](adding-dynamic-media-assets-to-pages.md)
 * [將視訊或影像檢視器內嵌在網頁上](embed-code.md)
-* [在 Dynamic Media 中啟用超連結保護](https://helpx.adobe.com/experience-manager/6-4/assets/using/hotlink-protection.html)
+* [在 Dynamic Media 中啟用超連結保護](https://helpx.adobe.com/tw/experience-manager/6-4/assets/using/hotlink-protection.html)
 * 將數位非可見浮水印(Digimarc)與動態媒體（即將推出）整合
 * [將 URL 連結至您的 Web 應用程式](linking-urls-to-yourwebapplication.md)
 * [為回應式網站傳送最佳化影像](responsive-site.md)
