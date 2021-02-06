@@ -1,6 +1,6 @@
 ---
 title: 通信管理概述
-seo-title: 信件管理
+seo-title: 通信管理
 description: 本主題提供通信管理的概述。
 seo-description: 本主題提供通信管理的概述。
 uuid: fa230c7e-fef1-4996-bdda-1637b36dac68
@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
