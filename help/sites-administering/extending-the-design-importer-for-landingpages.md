@@ -239,7 +239,7 @@ HTML標籤，可在設計套件內的HTML中插入影像元件(foundation/compon
 * 點進連結——可讓您新增文字連結，在點按時會將訪客帶往目標URL。
 * 圖形連結——可讓您新增在點按時將訪客帶往目標URL的影像。
 
-#### 按一下「Through Link {#click-through-link}（通過連結&lt;a0/>）」
+#### 按一下「Through Link {#click-through-link}（通過連結）」
 
 此CTA元件可用來在登陸頁面上新增文字連結。
 
