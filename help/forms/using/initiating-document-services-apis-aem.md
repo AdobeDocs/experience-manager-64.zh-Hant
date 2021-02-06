@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 從AEM Workflow {#initiate-document-services-apis-from-aem-workflow}啟動檔案服務API
 
-## 匯編器{#assembler}
+## 組合器 {#assembler}
 
 AEM Forms提供自訂工作流程，以叫用下列Assembler服務API:
 
