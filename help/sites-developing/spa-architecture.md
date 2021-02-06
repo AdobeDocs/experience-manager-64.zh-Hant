@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 workflow-type: tm+mt
 source-wordcount: '2199'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # 開發AEM的SPA{#developing-spas-for-aem}
 
-單頁應用程式(SPA)可為網站使用者提供引人入勝的體驗。 開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中順暢地編輯內容，以供使用此類架構建立的網站使用。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中順暢地編輯內容，以供使用此類架構建立的網站使用。
 
 本文提出在與前端開發人員接洽以開發AEM的SPA時應考慮的重要問題，並概述AEM在AEM上部署SPA的架構。
 
@@ -30,9 +30,9 @@ ht-degree: 0%
 >
 >SPA編輯器是建議的解決方案，適用於需要以SPA架構為基礎的用戶端轉換（例如React或Angular）的專案。
 
-## AEM Project Archetype {#aem-project-archetype}
+## AEM 專案原型 {#aem-project-archetype}
 
-任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
+任何AEM專案都應運用[AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)，它支援使用React或Angular的SPA專案，並運用SPA SDK。
 
 ## AEM的SPA開發原則{#spa-development-principles-for-aem}
 
