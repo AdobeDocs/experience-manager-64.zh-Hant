@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
 workflow-type: tm+mt
 source-wordcount: '815'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -64,13 +64,13 @@ ht-degree: 0%
 
 **XCI配置URI:** 找到用於渲染的XCI檔案的相對或絕對位置。對於相對值，會假設XCI檔案位於可部署的AEM表單EAR檔案中。
 
-預設值為`com/adobe/formServer/PA/pa.xci`。
+預設值為 `com/adobe/formServer/PA/pa.xci`.
 
 **字型對應URI:** 字型對應檔案的相對或絕對位置。若為相對值，則假設此檔案位於可部署的AEM表單EAR檔案中。
 
 字型對應檔案可用來建立自訂的字型對應，以便在表單中轉換HTML，因此您可以指定當用戶端電腦上沒有字型時，要取代的字型。
 
-預設值為`com/adobe/formServer/client-font-map.properties`。
+預設值為 `com/adobe/formServer/client-font-map.properties`.
 
 下列項目是font-mapping檔案中項目的範例：
 
