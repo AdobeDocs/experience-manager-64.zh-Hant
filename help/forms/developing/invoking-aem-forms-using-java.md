@@ -89,107 +89,107 @@ Adobe開發人員網站包含下列文章，討論如何使用Java API叫用AEM 
   <tr>
    <td><p>adobe-livecycle-client.jar</p></td>
    <td><p>必須一律包含在Java用戶端應用程式的類別路徑中。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>必須一律包含在Java用戶端應用程式的類別路徑中。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
    <td><p>必須一律包含在Java用戶端應用程式的類別路徑中。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk//client-libs/&lt;app server=""&gt;</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk//client-libs/&lt;app server=""&gt;<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>調用應用程式管理器服務時必需。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>調用Assembler服務所需。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>調用備份和還原服務API時必需。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>呼叫條形碼表單服務所需。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>需要叫用轉換PDF服務。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>調用Distiller服務時需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>調用DocConverter服務時必需。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>需要叫用「檔案管理」服務。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
    <td><p>調用加密服務時必需。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-forms-client.jar</p></td>
    <td><p>呼叫Forms服務所需。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>需要呼叫表單資料整合服務。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generatepdf-client.jar</p></td>
    <td><p>需要叫用「產生PDF」服務。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-generate3dpdf-client.jar</p></td>
    <td><p>需要叫用「產生3D PDF」服務。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-jobmanager-client-sdk.jar</p></td>
    <td><p>調用作業管理器服務時必需。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-output-client.jar</p></td>
    <td><p>調用輸出服務時需要。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-pdfutility-client.jar</p></td>
    <td><p>需要叫用PDF公用程式或XMP公用程式服務。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-reader-extensions-client.jar</p></td>
    <td><p>需要叫用Acrobat Reader DC擴充功能服務。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
    <td><p>調用儲存庫服務所需。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs\thirdparty</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs\thirdparty<i></i></p></td>
   </tr>
   <tr>
    <td>
@@ -204,22 +204,22 @@ Adobe開發人員網站包含下列文章，討論如何使用Java API叫用AEM 
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>需要叫用Rights Management服務。</p><p>如果AEM Forms已部署在JBoss上，請包含所有這些檔案。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p><p>JBoss專用的lib目錄</p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p><p>JBoss專用的lib目錄</p></td>
   </tr>
   <tr>
    <td><p>adobe-signatures-client.jar</p></td>
    <td><p>需要叫用簽名服務。</p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-taskmanager-client-sdk.jar</p></td>
    <td><p>調用Task Manager服務時必需。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
   <tr>
    <td><p>adobe-truststore-client.jar</p></td>
    <td><p>需要叫用信任商店服務。 </p></td>
-   <td><p>&lt;&gt;install directory<i>&gt;/sdk/client-libs/common</i></p></td>
+   <td><p>&lt;&gt;install directory</i>&gt;/sdk/client-libs/common<i></i></p></td>
   </tr>
  </tbody>
 </table>
@@ -261,7 +261,7 @@ Adobe開發人員網站包含下列文章，討論如何使用Java API叫用AEM 
      <li>commons-httpclient-3.1.jar</li>
     </ul> <p> </p> </td>
    <td><p>如果使用SOAP模式呼叫AEM Forms，請包含這些JAR檔案。</p> </td>
-   <td><p>&lt;&gt;install directory<em>&gt;/sdk/client-libs/協力廠商</em></p> </td>
+   <td><p>&lt;&gt;install directory</em>&gt;/sdk/client-libs/協力廠商<em></em></p> </td>
   </tr>
   <tr>
    <td><p> jboss-client.jar</p> </td>
@@ -584,7 +584,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 您可以使用`com.adobe.idp.Context`物件來與已驗證的使用者呼叫AEM Forms服務（`com.adobe.idp.Context`物件代表已驗證的使用者）。 使用`com.adobe.idp.Context`物件時，您不需要設定`DSC_CREDENTIAL_USERNAME`或`DSC_CREDENTIAL_PASSWORD`屬性。 使用`AuthenticationManagerServiceClient`物件的`authenticate`方法，在驗證使用者時，可取得`com.adobe.idp.Context`物件。
 
-`authenticate`方法返回包含驗證結果的`AuthResult`對象。 通過調用`com.adobe.idp.Context`對象的建構子，可以建立&lt;a0/>對象。 然後呼叫`com.adobe.idp.Context`物件的`initPrincipal`方法並傳遞`AuthResult`物件，如下列程式碼所示：
+`authenticate`方法返回包含驗證結果的`AuthResult`對象。 通過調用`com.adobe.idp.Context`對象的建構子，可以建立對象。 然後呼叫`com.adobe.idp.Context`物件的`initPrincipal`方法並傳遞`AuthResult`物件，如下列程式碼所示：
 
 ```as3
  Context myCtx = new Context();
