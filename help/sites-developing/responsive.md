@@ -228,7 +228,7 @@ JSP指令碼生成以下引用樣式表的HTML代碼：
 * 類型: `String[]`
 * 值: `/etc/mobile/groups/responsive`
 
-使用工具控制台建立和編輯設備組[。](/help/sites-developing/groupfilters.md)
+使用工具控制台建立和編輯設備組](/help/sites-developing/groupfilters.md)。[
 
 >[!NOTE]
 >
@@ -477,7 +477,7 @@ Servlet接受有限數量的影像寬度和質量。 預設支援下列寬度（
 
 使用Web Console([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))或sling:OsgiConfig節點來設定Adobe CQ Adaptive Image Component Servlet支援的寬度。
 
-如需如何設定AEM服務的詳細資訊，請參閱「設定OSGi[」。](/help/sites-deploying/configuring-osgi.md)
+如需如何設定AEM服務的詳細資訊，請參閱「設定OSGi](/help/sites-deploying/configuring-osgi.md)」。[
 
 <table> 
  <tbody> 
