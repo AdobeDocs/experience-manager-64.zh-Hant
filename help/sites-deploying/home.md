@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '356'
-ht-degree: 24%
+ht-degree: 27%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 24%
 
 ## 關鍵AEM文章
 
-* [AEM快速入門](https://helpx.adobe.com/experience-manager/get-started.html)
+* [AEM快速入門](https://helpx.adobe.com/tw/experience-manager/get-started.html)
 * [AEM 6.4發行說明](/help/release-notes/home.md)
 * [近期文件更新](https://helpx.adobe.com/experience-manager/documentation-updates.html)
 * [AEM安全性檢查清單](/help/sites-administering/security-checklist.md)
@@ -34,7 +34,7 @@ ht-degree: 24%
 | [Administering 指南](/help/sites-administering/home.md) | 瞭解如何管理AEM |
 | [Authoring 指南](/help/sites-authoring/home.md) | 本指南說明在AEM中編寫內容的概念。 |
 | [Classic UI編寫指南](/help/sites-classic-ui-authoring/home.md) | 本指南說明在傳統使用者介面中在AEM中編寫內容的概念。 |
-| [畫面使用指南](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | 瞭解數位標牌解決方案，以發佈動態互動式數位體驗。 |
+| [畫面使用指南](https://docs.adobe.com/content/help/zh-Hant/experience-manager-screens/user-guide/aem-screens-introduction.html) | 瞭解數位標牌解決方案，以發佈動態互動式數位體驗。 |
 | [部署使用指南](/help/sites-deploying/home.md) | 本指南會向您展示AEM的基本資訊。 |
 | [開發使用指南](/help/sites-developing/home.md) | 瞭解如何建立您的AEM實例。 |
 | [管理使用手冊](/help/managing/home.md) | 本指南說明如何成功管理AEM專案。 |
