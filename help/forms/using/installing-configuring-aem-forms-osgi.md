@@ -11,7 +11,7 @@ translation-type: tm+mt
 source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
 source-wordcount: '1836'
-ht-degree: 1%
+ht-degree: 4%
 
 ---
 
@@ -91,13 +91,13 @@ AEM Forms附加元件套件是部署在AEM上的應用程式。 您至少只需�
 
 AEM Forms附加元件套件是部署在AEM上的應用程式。 套件包含AEM Forms資料擷取和其他功能。 執行下列步驟以安裝附加元件套件：
 
-1. 開啟[軟體分發](https://experience.adobe.com/downloads)。 您必須有Adobe ID才能登入「軟體散發」。
-1. 點選頁首功能表中的「Adobe Experience Manager **[!UICONTROL 」。]**
+1. 開啟 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登入 Software Distribution。
+1. 點一下頁首功能表中的 **[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL Filters]**&#x200B;區段中：
    1. 從&#x200B;**[!UICONTROL Solution]**&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL Forms]**。
    2. 選擇包的版本和類型。 您也可以使用&#x200B;**[!UICONTROL 搜尋下載]**&#x200B;選項來篩選結果。
 1. 點選適用於您作業系統的套件名稱，選取「**[!UICONTROL 接受EULA條款]**」，然後點選「**[!UICONTROL 下載]**」。
-1. 開啟[包管理器](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) ，然後按一下&#x200B;**[!UICONTROL 上載包]**&#x200B;來上載包。
+1. 開啟[套件管理器](https://docs.adobe.com/content/help/zh-Hant/experience-manager-65/administering/contentmanagement/package-manager.html)，然後按一下&#x200B;**[!UICONTROL 「上傳套件」]**&#x200B;即可上傳套件。
 1. 選擇軟體包並按一下&#x200B;**[!UICONTROL Install]**。
 
    您也可以透過[AEM Forms releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中所列的直接連結下載套件。
@@ -173,7 +173,7 @@ Dispatcher是AEM的快取和負載平衡工具。 AEM Dispatcher也可協助保�
 執行以下步驟以配置自適應表單快取：
 
 1. 前往`https://[server]:[port]/system/console/configMgr`的AEM網頁主控台組態管理器。
-1. 按一下&#x200B;**[!UICONTROL 自適應表單和互動式通信Web通道配置]**&#x200B;以編輯其配置值。 在編輯設定值對話方塊中，在&#x200B;**[!UICONTROL Number of Adaptive Forms]**&#x200B;欄位中指定AEM Forms伺服器執行個體可快取的表單或檔案數上限。 預設值為100。 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下&#x200B;**[!UICONTROL 自適應表單和互動式通信Web通道配置]**&#x200B;以編輯其配置值。 在編輯設定值對話方塊中，在&#x200B;**[!UICONTROL Number of Adaptive Forms]**&#x200B;欄位中指定AEM Forms伺服器執行個體可快取的表單或檔案數上限。 預設值為 100。按一下&#x200B;**[!UICONTROL 「儲存」]**。
 
    >[!NOTE]
    >
@@ -197,7 +197,7 @@ Adobe Sign可針對最適化表單啟用電子簽名工作流程。 電子簽名
 
 AEM Forms與Adobe Analytics整合，可讓您擷取並追蹤已發佈表單和檔案的效能量度。 分析這些量度的目的，是根據使表單或檔案更有用所需變更的資料，做出明智的決策。
 
-若要搭配AEM Forms使用Adobe Analytics，請參閱「設定分析和報表」[。](/help/forms/using/configure-analytics-forms-documents.md)
+若要搭配AEM Forms使用Adobe Analytics，請參閱「設定分析和報表」](/help/forms/using/configure-analytics-forms-documents.md)。[
 
 #### 整合Adobe Target {#integrate-adobe-target}
 
