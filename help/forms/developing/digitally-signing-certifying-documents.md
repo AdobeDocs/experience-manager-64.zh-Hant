@@ -183,7 +183,7 @@ ht-degree: 0%
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
-   * 通過為`MTOM`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`MTOM`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 
 1. 新增簽名欄位
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示將包含簽名欄位的PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存`addSignatureField`方法返回的`BLOB`對象的內容。 獲取`BLOB`對象`binaryData`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -542,7 +542,7 @@ ht-degree: 0%
 
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示將包含簽名欄位的PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存`addSignatureField`方法返回的`BLOB`對象的內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -638,7 +638,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰：公鑰�
 
 **簽署PDF檔案**
 
-簽署PDF檔案時，您可以設定簽章服務使用的執行時期選項。 您可以設定下列選項：
+在簽署PDF檔案時，您可以設定簽章服務使用的執行時期選項。 您可以設定下列選項：
 
 * 外觀選項
 * 撤銷檢查
@@ -799,9 +799,9 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰：公鑰�
 
 1. 儲存已簽署的PDF檔案
 
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表已簽署PDF檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表已簽署PDF檔案的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存`sign`方法返回的`BLOB`對象的內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -975,7 +975,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰：公鑰�
 
    對與Forms服務關聯的服務引用使用以下WSDL定義：`http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`。
 
-   由於`BLOB`資料類型對於兩個服務引用都很常見，因此使用`BLOB`資料類型時可完全限定&lt;a1/>資料類型。 在相應的Web服務快速啟動中，所有`BLOB`實例都完全限定。
+   由於`BLOB`資料類型對於兩個服務引用都很常見，因此使用`BLOB`資料類型時可完全限定資料類型。 在相應的Web服務快速啟動中，所有`BLOB`實例都完全限定。
 
    >[!NOTE]
    >
@@ -1046,9 +1046,9 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰：公鑰�
 
 1. 儲存已簽署的PDF檔案
 
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表已簽署PDF檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表已簽署PDF檔案的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存`sign`方法返回的`BLOB`對象的內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -1239,7 +1239,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰：公鑰�
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示要認證的PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 調用`System.IO.FileStream`物件的`Read`方法，並傳遞要讀取的位元組陣列、開始位置和串流長度，以串流資料填入位元組陣列。
-   * 通過將`MTOM`資料成員的&lt;a1/>位元組陣列內容分配給`BLOB`對象，以填充&lt;a0/>對象。
+   * 通過將`MTOM`資料成員的位元組陣列內容分配給`BLOB`對象，以填充對象。
 
 1. 認證PDF檔案
 
@@ -1270,7 +1270,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰：公鑰�
 
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示將包含已認證PDF文檔的PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存`certify`方法返回的`BLOB`對象的內容。 獲取`BLOB`對象`binaryData`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
@@ -1473,7 +1473,7 @@ PDF檔案是透過公開金鑰技術簽署。 簽章者有兩個密鑰：公鑰�
 1. 取得包含簽章的PDF檔案以驗證
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件用來儲存包含數位或認證簽名以進行驗證的PDF檔案。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表已簽署PDF檔案的檔案位置以及開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表已簽署PDF檔案的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
    * 通過為`MTOM`屬性指定位元組陣列的內容來填充`BLOB`對象。
@@ -1688,7 +1688,7 @@ AEM Forms提供驗證PDF檔案中所有數位簽名的方式。 假設PDF檔案�
 1. 取得包含簽名的PDF檔案，以驗證
 
    * 使用其建構子建立`BLOB`對象。 `BLOB`物件會儲存包含多個數位簽章以進行驗證的PDF檔案。
-   * 通過調用`System.IO.FileStream`對象的建構子建立&lt;a0/>對象。 傳遞一個字串值，代表PDF檔案的檔案位置和開啟檔案的模式。
+   * 通過調用`System.IO.FileStream`對象的建構子建立對象。 傳遞一個字串值，代表PDF檔案的檔案位置和開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
    * 通過為`MTOM`屬性指定位元組陣列的內容來填充`BLOB`對象。
@@ -1855,7 +1855,7 @@ AEM Forms提供驗證PDF檔案中所有數位簽名的方式。 假設PDF檔案�
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示已簽名PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 您可以取得`System.IO.FileStream`物件的`Length`屬性，以判斷位元組陣列的大小。
    * 呼叫`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞要讀取的位元組陣列、起始位置和串流長度。
-   * 通過為`MTOM`對象的&lt;a1/>屬性指定位元組陣列的內容來填充`BLOB`對象。
+   * 通過為`MTOM`對象的屬性指定位元組陣列的內容來填充`BLOB`對象。
 
 1. 從簽名欄位移除數位簽名
 
@@ -1870,7 +1870,7 @@ AEM Forms提供驗證PDF檔案中所有數位簽名的方式。 假設PDF檔案�
 
    * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示包含空簽名欄位的PDF文檔的檔案位置以及開啟檔案的模式。
    * 建立一個位元組陣列，用於儲存`sign`方法返回的`BLOB`對象的內容。 獲取`BLOB`對象`MTOM`資料成員的值，以填充位元組陣列。
-   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立&lt;a0/>對象。
+   * 調用`System.IO.BinaryWriter`對象的建構子並傳遞`System.IO.FileStream`對象，以建立對象。
    * 調用`System.IO.BinaryWriter`物件的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
 
 **另請參閱**
