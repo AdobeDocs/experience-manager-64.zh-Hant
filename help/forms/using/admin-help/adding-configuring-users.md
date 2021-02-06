@@ -40,7 +40,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您發生使用者的登入問題，請參閱「JEE上的AEM Forms」使用者無法登入OSGi端的AEM Forms[。](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html)
+   >如果您發生使用者的登入問題，請參閱「JEE上的AEM Forms」使用者無法登入OSGi端的AEM Forms](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html)。[
 
 ## 用戶設定{#user-settings}
 
@@ -110,14 +110,14 @@ AEM表單無法區分擁有相同使用者ID和密碼但屬於不同網域的使
 
 ## 更改本地用戶{#change-the-password-for-a-local-user}的口令
 
-1. 在管理控制台中，按一下「設定>使用者管理>使用者和群組&#x200B;**[!UICONTROL 」。]**
+1. 在管理控制台中，按一下「設定>使用者管理>使用者和群組&#x200B;]**」。**[!UICONTROL 
 1. 指定資訊以縮小搜索特定用戶的範圍，然後按一下&#x200B;**[!UICONTROL 查找]**。 搜尋結果會列在頁面底部。 您可以按一下任何欄標題來排序清單。
 1. 按一下用戶名，然後按一下&#x200B;**[!UICONTROL 更改密碼]**。
 1. 鍵入並確認新密碼，然後按一下&#x200B;**[!UICONTROL 確定]**。 密碼至少必須有8個字元。
 
 ## 編輯使用者的屬性{#edit-a-user-s-properties}
 
-1. 在管理控制台中，按一下「設定>使用者管理>使用者和群組&#x200B;**[!UICONTROL 」。]**
+1. 在管理控制台中，按一下「設定>使用者管理>使用者和群組&#x200B;]**」。**[!UICONTROL 
 1. 若要尋找要編輯的使用者，請執行下列工作：
 
    * 在&#x200B;**[!UICONTROL 尋找]**&#x200B;方塊中，輸入您的搜尋准則。
@@ -171,7 +171,7 @@ AEM表單無法區分擁有相同使用者ID和密碼但屬於不同網域的使
    ***注意&#x200B;**:AEM表單版本不建議使用Flex Workspace。*
 
 * 表單管理器
-* 流程報告
+* 程序報告
 
 CQ提供覆寫預設404處理常式jsp的機制。
 
