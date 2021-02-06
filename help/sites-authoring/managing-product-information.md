@@ -54,7 +54,7 @@ Creative Project提供各種專案範本，以符合不同的專案需求。 **P
 
 1. 在&#x200B;**建立專案**&#x200B;頁面中，選取像片專案範本，然後點選／按一下&#x200B;**下一步**。
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. 輸入專案詳細資訊，包括標題、說明和到期日。 新增使用者並指派不同的角色給他們。 您也可以新增專案的縮圖。
 
@@ -67,7 +67,7 @@ Creative Project提供各種專案範本，以符合不同的專案需求。 **P
 
 若要起始像片拍攝請求，請點選或按一下專案，然後在專案詳細資訊頁面中點選／按一下「新增作品」(**Add Work)**，以開始工作流程。
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+![chlimage_1-133](assets/chlimage_1-135.png)
 
 產品像片拍攝專案包含下列現成可用的工作流程：
 
@@ -210,7 +210,7 @@ Creative Project提供各種專案範本，以符合不同的專案需求。 **P
 
    ![chlimage_1-148](assets/chlimage_1-148.png)
 
-   若要編輯現有資料或新增資料，請從工具列點選／按一下「編輯」**。**&#x200B;僅可編輯**Product **和&#x200B;**Description**&#x200B;欄位。
+   若要編輯現有資料或新增資料，請從工具列點選／按一下「編輯&#x200B;****」。 僅可編輯**Product **和&#x200B;**Description**&#x200B;欄位。
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
