@@ -31,5 +31,5 @@ HTML5表格提供許多適用於行動裝置的功能。 它可協助您將目�
 
 * **設定和部署AEM Forms附加元件套件：** 安裝AEM Forms附加元件套件以啟用Mobile Forms。如需有關安裝AEM Forms附加元件套件的詳細資訊，請參閱[安裝與設定AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
 
-* **匯入行動表單：** 將表單從本機檔案系統匯入至CRX存放庫。如需詳細資訊，請參閱「在AEM Forms中取得XDP和PDF檔案[」。](/help/forms/using/get-xdp-pdf-documents-aem.md)
+* **匯入行動表單：** 將表單從本機檔案系統匯入至CRX存放庫。如需詳細資訊，請參閱「在AEM Forms中取得XDP和PDF檔案](/help/forms/using/get-xdp-pdf-documents-aem.md)」。[
 
