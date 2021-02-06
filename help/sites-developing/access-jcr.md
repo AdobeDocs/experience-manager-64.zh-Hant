@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本開發文章會從外部Java應用程式修改Adobe CQ JCR。 相反地，您可以使用JCR API從OSGi套件中修改JCR。 如需詳細資訊，請參閱「Java內容存放庫[中的持續CQ資料」。](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html)
+>本開發文章會從外部Java應用程式修改Adobe CQ JCR。 相反地，您可以使用JCR API從OSGi套件中修改JCR。 如需詳細資訊，請參閱「Java內容存放庫](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html)中的持續CQ資料」。[
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 `Repository`實例表示CRX儲存庫。 您使用`Repository`實例與儲存庫建立會話。 若要建立作業，請叫用`Repository`例項的`login`方法並傳遞`javax.jcr.SimpleCredentials`物件。 `login`方法返回`javax.jcr.Session`實例。
 
-您可使用`SimpleCredentials`物件的建構函式並傳遞下列字串值來建立&lt;a0/>物件：
+您可使用`SimpleCredentials`物件的建構函式並傳遞下列字串值來建立物件：
 
 * 用戶名；
 * 對應的密碼
