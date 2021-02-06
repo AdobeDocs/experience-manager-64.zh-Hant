@@ -349,7 +349,7 @@ Communities Sites控制台可讓您存取：
 
 ![chlimage_1-457](assets/chlimage_1-457.png)
 
-當選擇的社區站點模板包括[分配函式](functions.md#assignments-function)時，`ENABLEMENT`設定適用，當啟用功能獲得許可並且[配置](enablement.md)時，&lt;a0/>設定可用。 包含分配函式的參考站點模板為`Reference Structured Learning Site Template.`
+當選擇的社區站點模板包括[分配函式](functions.md#assignments-function)時，`ENABLEMENT`設定適用，當啟用功能獲得許可並且[配置](enablement.md)時，設定可用。 包含分配函式的參考站點模板為`Reference Structured Learning Site Template.`
 
 * **[!UICONTROL 啟用管理員]**
 
