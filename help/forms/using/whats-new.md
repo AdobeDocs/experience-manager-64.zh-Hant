@@ -178,7 +178,7 @@ AEM Forms包含互動式通訊的立即可用主題。 使用主題，您也可�
 * 傳送電子郵件的工作流程步驟。 例如，您可以使用電子郵件步驟在完成工作流程時傳送記錄檔案。
 * 工作流步驟，用於在工作流模型中使用表單資料模型服務。 此步驟可讓您叫用資料整合服務，毋需編寫任何自訂程式碼。 例如，您可以叫用GET服務，從資料庫封存中取得員工詳細資料，而不需撰寫任何自訂程式碼。
 
-## AEM Forms App {#aem-forms-app}
+## AEM Forms 應用程式 {#aem-forms-app}
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
@@ -189,7 +189,7 @@ AEM Forms應用程式可讓現場工作者將行動裝置與AEM Forms伺服器�
 * AEM Forms應用程式支援具有啟用延遲載入片段的最適化表單。
 * AEM Forms應用程式支援具有表單資料模型的最適化表單。
 
-## Document Security {#document-security}
+## 文件安全性 {#document-security}
 
 ![aem-forms-document-security-](assets/aem-forms-document-security-.png)
 
