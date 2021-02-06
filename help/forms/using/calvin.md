@@ -139,7 +139,7 @@ Calvin可讓您在網頁瀏覽器中自動測試您的調適性表單。 Calvin�
 
 1. 按一下「全部儲存」，然後關閉js.txt檔案。****
 1. 按一下右鍵測試節點（此處&#x200B;**afTestRegistration）** ，然後按一下「建立」>「建立檔案」]**。**[!UICONTROL &#x200B;為檔案命名init.js，然後按一下「確定」。****
-1. 將下列程式碼複製至init.js檔案，然後按一下「全部儲存」:]****[!UICONTROL 
+1. 將下列程式碼複製至init.js檔案，然後按一下「全部儲存」:****
 
    ```
    (function(window, hobs) {
