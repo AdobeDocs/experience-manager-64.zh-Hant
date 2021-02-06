@@ -13,14 +13,14 @@ translation-type: tm+mt
 source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1703'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 
 # SPA編輯器概述{#spa-editor-overview}
 
-單頁應用程式(SPA)可為網站使用者提供引人入勝的體驗。 開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中順暢地編輯內容，以供使用此類架構建立的網站使用。
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能夠使用SPA架構建立網站，而作者則想在AEM中順暢地編輯內容，以供使用此類架構建立的網站使用。
 
 SPA Editor提供完整的解決方案，以支援AEM中的SPA。 本頁概述SPA支援在AEM中的結構、SPA編輯器的運作方式，以及SPA架構和AEM如何保持同步。
 
