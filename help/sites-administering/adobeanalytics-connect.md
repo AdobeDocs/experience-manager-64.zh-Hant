@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
 source-wordcount: '1556'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -85,15 +85,15 @@ AEM依預設會使用聖荷西(https://api.omniture.com/admin/1.4/rest/)資料�
 
 >[!CAUTION]
 >
->由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。
+>由於 Adobe Analytics API 中的安全性變更，AEM 中包含的 Activity Map 版本已無法再使用。
 >
->Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式現在應該使用。
+>Adobe Analytics](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式現在應該使用。
 
 ## 為Activity Map {#configuring-for-the-activity-map}進行配置
 
 >[!CAUTION]
 >
->由於Adobe Analytics API中的安全性變更，無法再使用AEM中包含的Activity Map版本。
+>由於 Adobe Analytics API 中的安全性變更，AEM 中包含的 Activity Map 版本已無法再使用。
 >
 >Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式現在應該使用。
 
