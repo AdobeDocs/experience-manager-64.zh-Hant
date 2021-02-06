@@ -1,6 +1,6 @@
 ---
-title: Touch UI功能狀態
-seo-title: Touch UI功能狀態
+title: 觸控式 UI 功能狀態
+seo-title: 觸控式 UI 功能狀態
 description: Adobe Experience Manager 6.3 Touch UI的發行說明。
 seo-description: Adobe Experience Manager 6.3 Touch UI的發行說明。
 uuid: dc335334-6c50-4cee-8a2e-183958742686
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
 
-# 觸控式UI功能狀態{#touch-ui-feature-status}
+# 觸控式 UI 功能狀態 {#touch-ui-feature-status}
 
 >[!CAUTION]
 >
