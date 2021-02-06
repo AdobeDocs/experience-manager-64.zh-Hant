@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### 安裝安全性修補程式{#install-security-hotfixes}
 
-請確定您已安裝Adobe](https://helpx.adobe.com/experience-manager/kb/aem63-available-hotfixes.html)提供的最新[安全性修補程式。
+請確定您已安裝Adobe](https://helpx.adobe.com/tw/experience-manager/kb/aem63-available-hotfixes.html)提供的最新[安全性修補程式。
 
 ### 變更AEM和OSGi主控台管理帳戶的預設密碼{#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -109,7 +109,7 @@ Adobe建議定義自訂錯誤處理常式頁面，尤其是404和500個HTTP回�
 
 ### 完整的Dispatcher Security Checklist {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher是您基礎架構的重要一環。 Adobe強烈建議您填妥[dispatcher安全性檢查清單](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)。
+AEM Dispatcher是您基礎架構的重要一環。 Adobe強烈建議您填妥[dispatcher安全性檢查清單](https://helpx.adobe.com/tw/experience-manager/dispatcher/using/security-checklist.html)。
 
 >[!CAUTION]
 >
