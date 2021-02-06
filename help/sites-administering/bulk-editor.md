@@ -35,7 +35,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->在AEM 6.4中取代了Classic UI[後，大量編輯器也不再使用，因此Adobe不打算進一步增強大量編輯器。](/help/release-notes/deprecated-removed-features.md)
+>在AEM 6.4中取代了Classic UI](/help/release-notes/deprecated-removed-features.md)後，大量編輯器也不再使用，因此Adobe不打算進一步增強大量編輯器。[
 
 ## 批量編輯器{#example-use-case-for-the-bulk-editor}的使用案例示例
 
