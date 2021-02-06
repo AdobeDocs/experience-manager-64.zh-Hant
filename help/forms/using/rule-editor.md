@@ -412,7 +412,7 @@ AEM Forms會追蹤您上次用來編寫規則的規則編輯器模式。 下次�
 
    在編寫模式中，點選「**[!UICONTROL 貸款資格]**」欄位並點選「![edit-rules](assets/edit-rules.png)」。 接著，點選&#x200B;**[!UICONTROL Create]**&#x200B;以啟動規則編輯器。
 
-1. 從規則下拉式清單中選取「設定值&#x200B;**[!UICONTROL 」規則。]**
+1. 從規則下拉式清單中選取「設定值&#x200B;]**」規則。**[!UICONTROL 
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10.png)
 
