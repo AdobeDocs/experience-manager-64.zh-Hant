@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: 821eaaee5be186c2c396ce19d1414475fe2658cd
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 **XCI配置檔案：** 輸出服務用於渲染的XCI配置檔案的相對或絕對位置。對於相對值，會假設XCI檔案位於AEM表單可部署的EAR檔案中。
 
-預設值為`com/adobe/formServer/PA/pa_output.xci`。
+預設值為 `com/adobe/formServer/PA/pa_output.xci`.
 
 **快取位置：** 指定輸出磁碟快取的位置。更改此設定時，將重置當前位置的所有現有快取資訊，並在新位置建立新快取。 選擇下列選項之一：
 
