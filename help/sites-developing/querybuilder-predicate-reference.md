@@ -100,7 +100,7 @@ fragmentIt可與任何值搭配使用，以檢查內容片段。
 
 * **操作**
 
-   「 `=`」代表完全相符，「 `!=`」代表不等比，「 `>`」代表屬性1大於屬性2,「 `>=`」代表屬性1大於或等於屬性2。 預設值為&quot; `=`&quot;。
+   「 `=`」代表完全相符，「 `!=`」代表不等比，「 `>`」代表屬性1大於屬性2,「 `>=`」代表屬性1大於或等於屬性2。 預設值為 &quot; `=`&quot;.
 
 ### daterange {#daterange}
 
@@ -282,7 +282,7 @@ group.2_group.type=dam:Asset
 
 * **nodename**
 
-   允許通配符的節點名模式：`*` = any or no char, `?` = any char, `[abc]` = only chars, &lt;a2/> = only chars
+   允許通配符的節點名模式：`*` = any or no char, `?` = any char, `[abc]` = only chars,  = only chars
 
 ### notexpired {#notexpired}
 
