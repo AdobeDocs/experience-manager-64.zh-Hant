@@ -32,7 +32,7 @@ ht-degree: 1%
 
 設定進階計分與基本計分幾乎相同：
 
-* 基本和進階計分與標籤規則以相同方式套用至內容[](implementing-scoring.md#apply-rules-to-content)
+* 基本和進階計分與標籤規則以相同方式套用至內容](implementing-scoring.md#apply-rules-to-content)[
    * 基本和進階計分與標籤規則可套用至相同內容
 * [為元件啟用標](implementing-scoring.md#enable-badges-for-component) 章通用
 
