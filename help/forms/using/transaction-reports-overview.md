@@ -31,7 +31,7 @@ AEM Forms中的交易報表可讓您記錄自AEM Forms部署指定日期以來�
 
 有關被視為事務處理的詳細資訊，請參閱[計費API](/help/forms/using/transaction-reports-billable-apis.md)。
 
-事務記錄預設為停用。 您可以從AEM Web Console啟用交易記錄[。 ](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports)您可以檢視有關作者、處理或發佈例項的交易報表。 查看所有事務處理匯總的作者或處理實例的事務處理報告。 檢視發佈例項上的交易報表，以計算僅在執行報表之發佈例項上發生的所有交易計數。
+事務記錄預設為停用。 您可以從AEM Web Console啟用交易記錄](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports)。 [您可以檢視有關作者、處理或發佈例項的交易報表。 查看所有事務處理匯總的作者或處理實例的事務處理報告。 檢視發佈例項上的交易報表，以計算僅在執行報表之發佈例項上發生的所有交易計數。
 
 請勿在相同AEM例項上編寫內容（建立最適化表單、互動式通訊、主題和其他編寫活動）及處理檔案（使用工作流程、檔案服務和其他處理活動）。 針對用於製作內容的AEM Forms伺服器，請停用交易記錄。 讓用於處理檔案的AEM Forms伺服器啟用交易記錄。
 
