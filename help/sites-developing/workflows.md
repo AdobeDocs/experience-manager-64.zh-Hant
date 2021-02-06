@@ -1,6 +1,6 @@
 ---
-title: 開發和擴充工作流程
-seo-title: 開發和擴充工作流程
+title: 開發和延伸工作流程
+seo-title: 開發和延伸工作流程
 description: AEM提供數種工具和資源，以建立工作流程模型、開發工作流程步驟，以及以程式設計方式與工作流程互動
 seo-description: AEM提供數種工具和資源，以建立工作流程模型、開發工作流程步驟，以及以程式設計方式與工作流程互動
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
@@ -13,12 +13,12 @@ translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
 workflow-type: tm+mt
 source-wordcount: '1535'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 
-# 開發和擴展工作流{#developing-and-extending-workflows}
+# 開發和延伸工作流程{#developing-and-extending-workflows}
 
 AEM提供數種工具和資源，以建立工作流程模型、開發工作流程步驟，以及以程式設計方式與工作流程互動。
 
@@ -29,10 +29,10 @@ AEM提供數種工具和資源，以建立工作流程模型、開發工作流�
 以下是主要方面，而下列頁面則涵蓋更多詳細資訊：
 
 * [建立工作流模型](/help/sites-developing/workflows-models.md)
-* [擴充工作流程功能](/help/sites-developing/workflows-customizing-extending.md)
+* [延伸工作流程功能](/help/sites-developing/workflows-customizing-extending.md)
 * [以程式設計方式與工作流程互動](/help/sites-developing/workflows-program-interaction.md)
 * [工作流程步驟參考](/help/sites-developing/workflows-step-ref.md)
-* [工作流進程參考](/help/sites-developing/workflows-process-ref.md)
+* [工作流程處理序參考](/help/sites-developing/workflows-process-ref.md)
 * [工作流程最佳實務](/help/sites-developing/workflows-best-practices.md)
 
 >[!NOTE]
@@ -41,9 +41,9 @@ AEM提供數種工具和資源，以建立工作流程模型、開發工作流�
 >
 >* 參與工作流，請參閱[使用工作流](/help/sites-authoring/workflows.md)。
 >* 管理工作流和工作流實例，請參閱[管理工作流](/help/sites-administering/workflows.md)。
->* 如需端對端社群文章，請參閱「使用Adobe Experience Manager工作流程修改數位資產」。[](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+>* 如需端對端社群文章，請參閱「使用Adobe Experience Manager工作流程修改數位資產」。](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)[
 >* 請參閱[詢問AEM專家工作流程網路研討會](https://bit.ly/ATACE218)。
->* 如需端對端社群文章，請參閱「建立自訂Adobe Experience Manager 6.3動態參與者步驟[」。](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)
+>* 如需端對端社群文章，請參閱「建立自訂Adobe Experience Manager 6.3動態參與者步驟](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)」。[
 >* 對資訊位置的更改請參閱[ AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的儲存庫重構和[工作流最佳實踐——位置](/help/sites-developing/workflows-best-practices.md#locations)。
 
 >
@@ -139,7 +139,7 @@ AEM提供數種工具和資源，以建立工作流程模型、開發工作流�
 
    在舊版AEM中建立的工作流程。 這些功能可在升級期間保留，或從舊版匯出為工作流程套件，然後匯入新版本。
 
-### 暫時工作流程{#transient-workflows}
+### 暫時性工作流程 {#transient-workflows}
 
 標準工作流程會在執行期間儲存執行階段（歷史）資訊。 您也可以將工作流程模型定義為&#x200B;**Transient**，以避免此類歷史記錄持續存在。 這用於效能調整，因為它可節省／避免用於保存資訊的時間／資源。
 
