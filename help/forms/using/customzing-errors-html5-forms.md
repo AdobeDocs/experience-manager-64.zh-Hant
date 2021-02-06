@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 自訂錯誤訊息  {#customizing-error-messages-nbsp}
 
-在自訂錯誤訊息之前，請先下載並解壓縮附加的套件(CustomErrorManager-1.0-SNAPSHOT.zip)。
+在自訂錯誤訊息之前，請下載並解壓縮附加的套件(CustomErrorManager-1.0-SNAPSHOT.zip)。
 
 提取包後，開啟CustomErrorManager-1.0-SNAPSHOT資料夾。 它包含jcr_root和META-INF資料夾。 這些檔案夾包含自訂錯誤訊息所需的CSS和。JS檔案。
 
