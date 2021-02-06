@@ -21,7 +21,7 @@ ht-degree: 3%
 
 您可以修改使用AEM Forms登入畫面的所有AEM Forms模組的登入畫面。 例如，這些修改會影響Forms Manager和AEM Forms工作區的登入畫面。
 
-## 先決條件{#prerequisite}
+## 必備條件 {#prerequisite}
 
 1. 以管理員權限登入`/lc/crx/de`。
 1. 執行下列動作：
