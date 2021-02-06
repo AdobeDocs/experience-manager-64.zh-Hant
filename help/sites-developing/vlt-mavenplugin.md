@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5bc6f63922f7f63d60f0048b167a08e4190a8f92
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 5%
+ht-degree: 11%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 5%
 >
 >* AEM中的[Adobe Content Package Maven Plugin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools)文章，做為Cloud Service檔案，以瞭解如何部署AEM應用程式。
 >* AEM中的[AEM Project Structure](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)文章，以做為Cloud Service檔案，說明如何建構現代AEM專案。
->* [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)說明檔案，瞭解如何使用原型開始新的AEM專案。
+>* [AEM Project Archetype](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/developing/archetype/overview.html)說明檔案，瞭解如何使用原型開始新的AEM專案。
 
 >
 >
