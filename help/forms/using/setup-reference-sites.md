@@ -12,7 +12,7 @@ translation-type: tm+mt
 source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
 source-wordcount: '2922'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -269,7 +269,7 @@ We.Finance參考網站的電子郵件範本包含電子郵件中的個人化連�
 
 1. 在AEM作者例項上，請前往「**[!UICONTROL 工具>雲端服務>資料來源>全域]**」。 點選&#x200B;**[!UICONTROL Refsite Dynamics Integration]**&#x200B;圖示，點選&#x200B;**[!UICONTROL Properties]**。
 1. 前往Microsoft Azure Active Directory帳戶。 在註冊應用程式的「回覆URL」設定中新增複製的雲端服務設定URL。 ****&#x200B;儲存設定。
-1. 在「驗證設定」頁籤中，為Microsoft Dynamics實例指定&#x200B;**[!UICONTROL 服務根]**、**[!UICONTROL 客戶端ID]**、**[!UICONTROL 客戶端密碼]**&#x200B;和&#x200B;**[!UICONTROL 資源URL]**。 按一下「連線至重新導向至Microsoft Dynamics登入頁面的OAuth **[!UICONTROL 」。]**
+1. 在「驗證設定」頁籤中，為Microsoft Dynamics實例指定&#x200B;**[!UICONTROL 服務根]**、**[!UICONTROL 客戶端ID]**、**[!UICONTROL 客戶端密碼]**&#x200B;和&#x200B;**[!UICONTROL 資源URL]**。 按一下「連線至重新導向至Microsoft Dynamics登入頁面的OAuth ]**」。**[!UICONTROL 
 1. 提供您的登入認證。 登入後，會將您重新導向至AEM Forms雲端服務設定頁面。 按一下&#x200B;**[!UICONTROL 「儲存並關閉」]**。雲端服務設定已儲存。
 1. 前往&#x200B;**[!UICONTROL 表單>資料整合> We.Finance]**。 選擇「自動保險（動態）」，然後按一下「編輯」。 Microsoft Dynamics實體會列在「資料來源」標籤下。 請等待，直到從Microsoft Dynamics擷取所有實體並列在資料來源標籤下。
 1. 選擇&#x200B;**[!UICONTROL AutoInsuranceRenewal實體]**，然後按一下&#x200B;**[!UICONTROL 測試模型對象]**。 在輸入請求區段中，將客戶ID的值指定為&quot;900001&quot;，然後按一下&#x200B;**[!UICONTROL Test]**。 「輸出」部分顯示從Microsoft Dynamics獲取的客戶ID 900001的記錄。
@@ -301,7 +301,7 @@ We.Finance參考網站的電子郵件範本包含電子郵件中的個人化連�
    >請確定https://[host]:[ssl_port]/mnt/overlay/adobesign/cloudservices/adobesign/properties.html URL已新增至Adobe Sign API應用程式的OAuth設定重新導向URL清單。
 
 1. 指定Adobe Sign應用程式OAuth組態的用戶端ID和密碼。
-1. （可選）選取「同時&#x200B;**[!UICONTROL 啟用附件的Adobe Sign」選項，然後點選「連線至Adobe Sign」。]******&#x200B;它會將附加至最適化表單的檔案附加至傳送以供簽署的對應Adobe Sign檔案。
+1. （可選）選取「同時&#x200B;]**啟用附件的Adobe Sign」選項，然後點選「連線至Adobe Sign」。**[!UICONTROL ****&#x200B;它會將附加至最適化表單的檔案附加至傳送以供簽署的對應Adobe Sign檔案。
 1. 點選「**[!UICONTROL 連線至Adobe Sign]**」，並使用您的Adobe Sign認證登入。
 
 ## 配置Forms Common Configuration Service {#anonymous}
