@@ -25,7 +25,7 @@ AEM Assets支援&#x200B;**雙向參照**。 您可以在已上傳檔案的資產
 
 您可以從Adobe Illustrator檔案中參考現有的AEM資產。
 
-1. 使用[AEM案頭應用程式](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)，將AEM Assets存放庫載入本機電腦上的磁碟機。 在掛載的驅動器中，導航到要引用的資產的位置。
+1. 使用[AEM案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)，將AEM Assets存放庫載入本機電腦上的磁碟機。 在掛載的驅動器中，導航到要引用的資產的位置。
 1. 將資產從已掛載的磁碟機拖曳至Illustrator檔案。
 1. 將Illustrator檔案儲存至已載入的磁碟機，或將[upload](managing-assets-touch-ui.md#uploading-assets)儲存至AEM存放庫。
 1. 工作流完成後，轉至資產的資產詳細資訊頁面。 現有AEM資產的參考會列在&#x200B;**[!UICONTROL References]**&#x200B;欄的&#x200B;**[!UICONTROL Dependencies]**&#x200B;下。
@@ -103,7 +103,7 @@ Adobe InDesign可將檔案和連結的資產匯出為套件。 在這種情況�
 
 ## 檢視子資產{#viewing-subassets}
 
-只有當子資產已產生且可用於選取的多頁資產時，才會顯示子資產。 若要檢視產生的子資產，請開啟多頁資產。 在頁面的左上方區域，按一下「左側邊欄」圖示](assets/do-not-localize/aem_leftrail_contentonly.png)，然後從清單中按一下「子資產」。 ]****[!UICONTROL ![從清單中選擇&#x200B;**[!UICONTROL 子資產]**&#x200B;時。 或者，使用鍵盤快速鍵`alt + 5`。
+只有當子資產已產生且可用於選取的多頁資產時，才會顯示子資產。 若要檢視產生的子資產，請開啟多頁資產。 在頁面的左上方區域，按一下「左側邊欄」圖示](assets/do-not-localize/aem_leftrail_contentonly.png)，然後從清單中按一下「子資產」。 ![****&#x200B;從清單中選擇&#x200B;**[!UICONTROL 子資產]**&#x200B;時。 或者，使用鍵盤快速鍵`alt + 5`。
 
 ![檢視多頁資產的子資產](assets/view_subassets_simulation.gif)
 
