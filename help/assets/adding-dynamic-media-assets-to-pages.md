@@ -171,7 +171,7 @@ Enter值（以像素為單位），如果您希望影像大小固定。將這些
 
 使用動態媒體元件，將動態視訊新增至網頁。 當您編輯元件時，您可以選擇使用預先定義的視訊檢視器預設集來播放頁面上的視訊。
 
-![chlimage_1-540](assets/chlimage_1-540.png)
+![chlimage_1-541](assets/chlimage_1-540.png)
 
 您必須按一下元件中的&#x200B;**[!UICONTROL 編輯]**，編輯下列動態媒體設定。
 
@@ -243,7 +243,7 @@ inYou can set a sasset to open a link.設定URL，並在「開啟於」中指出
 > 
 >若要避免此問題，請確定AEM Sites使用者擁有必要的存取資產權限。
 
-![chlimage_1-541](assets/chlimage_1-541.png)
+![chlimage_1-540](assets/chlimage_1-541.png)
 
 按一下元件中的&#x200B;**[!UICONTROL Edit]**&#x200B;可以編輯以下&#x200B;**[!UICONTROL General]**&#x200B;設定。
 
