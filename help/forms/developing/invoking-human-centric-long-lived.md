@@ -615,7 +615,7 @@ ASP.NET應用程式執行以下任務：
     b.ReaderQuotas.MaxArrayLength = 2000000;
    ```
 
-1. 擷取使用者在網頁中輸入的名稱、電話和金額值。 使用這些值動態建立傳送至`FirstAppSolution/PreLoanProcess`程式的XML資料來源。 建立一個`System.Xml.XmlDocument`，該&lt;a0/>表示要傳遞到進程的XML資料源（此應用程式邏輯如下面的代碼示例所示）。
+1. 擷取使用者在網頁中輸入的名稱、電話和金額值。 使用這些值動態建立傳送至`FirstAppSolution/PreLoanProcess`程式的XML資料來源。 建立一個`System.Xml.XmlDocument`，該表示要傳遞到進程的XML資料源（此應用程式邏輯如下面的代碼示例所示）。
 1. 將`System.Xml.XmlDocument`實例轉換為`InvokePreLoanProcess.PreLoanProcess.XML`（此應用程式邏輯如下面的代碼示例所示）。
 1. 叫用`FirstAppSolution_PreLoanProcessClient`物件的`invoke_Async`方法，以叫用`FirstAppSolution/PreLoanProcess`程式。 此方法返回一個字串值，該字串值表示長壽命進程的調用標識符值。
 1. 使用is建構子建立`JobManagerClient`。 （請確定您已經為Job Manager服務設定了服務參考。）
