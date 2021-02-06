@@ -205,7 +205,7 @@ Value Commit指令碼在以下情況下觸發：
 
 ### 驗證運算式{#validation-expressions}
 
-您也可以使用不同欄位上的運算式來計算欄位的驗證。 這些運算式會寫入至元件「編輯」對話方塊的「**[!UICONTROL 指令碼]**」標籤的「驗證指令碼&#x200B;]**」欄位中。]****[!UICONTROL **[!UICONTROL &#x200B;欄位的驗證狀態取決於表達式返回的值。 有關如何編寫此類表達式的資訊，請參見[驗證表達式](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p)。
+您也可以使用不同欄位上的運算式來計算欄位的驗證。 這些運算式會寫入至元件「編輯」對話方塊的「**[!UICONTROL 指令碼]**」標籤的「驗證指令碼&#x200B;]**」欄位中。**[!UICONTROL ****&#x200B;欄位的驗證狀態取決於表達式返回的值。 有關如何編寫此類表達式的資訊，請參見[驗證表達式](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p)。
 
 ## 其他資訊 {#additional-information}
 
