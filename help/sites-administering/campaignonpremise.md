@@ -132,7 +132,7 @@ Adobe Campaign可讓您直接在Adobe Experience Manager中管理電子郵件傳
 
 1. 按一下「安裝標準套件」，然後選取「**AEM Integration**&#x200B;套件」。****
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. 按一下&#x200B;**Next**，然後按一下&#x200B;**Start**。
 
