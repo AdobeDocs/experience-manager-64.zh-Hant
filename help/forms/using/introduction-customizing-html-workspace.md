@@ -127,7 +127,7 @@ CSS自訂的頂層步驟為：
 * 新增樣式項目至此CSS。 如需詳細資訊，請參閱瞭解CSS樣式。
 * 在`html.jsp`中更新其引用。
 
-如需完整的這些自訂步驟，請參閱「AEM Forms工作區自訂的一般步驟[」。 ](/help/forms/using/generic-steps-html-workspace-customization.md)AEM Forms工作區隨附的CSS檔案位於/libs/ws/css/。 對於與CSS相關的自訂，請使用[Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。 如需CSS相關自訂的特定範例，請參閱本文結尾的相關說明主題。
+如需完整的這些自訂步驟，請參閱「AEM Forms工作區自訂的一般步驟](/help/forms/using/generic-steps-html-workspace-customization.md)」。 [AEM Forms工作區隨附的CSS檔案位於/libs/ws/css/。 對於與CSS相關的自訂，請使用[Ship Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)。 如需CSS相關自訂的特定範例，請參閱本文結尾的相關說明主題。
 
 #### 影像 {#image}
 
