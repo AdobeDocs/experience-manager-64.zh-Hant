@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# 社群群組主控台{#community-groups-console}
+# 社群群組主控台 {#community-groups-console}
 
 當社區站點的[模板結構](sites-console.md#step1)包含[組函式](functions.md#groups-function)時，「組」控制台提供建立社區組的訪問權限。
 
@@ -57,7 +57,7 @@ ht-degree: 1%
    * 社群網站的結構必須包含群組功能
    * 這些螢幕擷取畫面來自[在publish](published-site.md)上建立群組後的「快速入門」教學課程
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 選擇&#x200B;**[!UICONTROL Groups資料夾]**&#x200B;以將其開啟。
 
