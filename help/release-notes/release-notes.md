@@ -13,7 +13,7 @@ translation-type: tm+mt
 source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '2844'
-ht-degree: 3%
+ht-degree: 8%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 3%
 |---|---|
 | 版本 | 6.4 |
 | 類型 | 主要版本 |
-| 正式上市日期 | 2018年4月4日 |
+| 正式上市日期 | 2018 年 4 月 4 日 |
 | 建議的更新 | 請參閱[AEM發行和更新](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) |
 
 ### Trivia {#trivia}
@@ -37,11 +37,11 @@ Adobe Experience Manager 6.4自2018年4月4日起正式推出。
 
 >[!NOTE]
 >
->Adobe建議安裝最新的Service Pack，因為所有新功能套件都僅透過[Service Packs](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)提供。
+>Adobe建議安裝最新的Service Pack，因為所有新功能套件都僅透過[Service Packs](https://helpx.adobe.com/tw/experience-manager/maintenance-releases-roadmap.html)提供。
 
 ## 新功能 {#what-s-new}
 
-Adobe Experience Manager 6.4是Adobe Experience Manager 6.3程式碼庫的升級版本。 它提供全新和增強的功能、關鍵客戶修正、高優先順序的客戶增強功能，以及針對產品穩定化的一般錯誤修正。 它也包含大部分的Adobe Experience Manager 6.3功能套件、Hot Fix和Service Pack版本。
+Adobe Experience Manager 6.4 是 Adobe Experience Manager 6.3 程式碼庫的升級版本。此版本提供全新的增強功能、重要客戶修正、高優先順序的客戶增強功能，以及針對產品穩定化的一般錯誤修正。它也包含大部分的Adobe Experience Manager 6.3功能套件、Hot Fix和Service Pack版本。
 
 下列清單提供概觀——而後續頁面則列出完整的詳細資訊。
 
@@ -138,7 +138,7 @@ AEM 6.4完成對新一代元件模型的轉換。 AEM 6.3中引進的核心元�
 
 AEM Screens代表的是在所有行銷通道（包括數位標牌和資訊站網路）中傳遞一致的訊息。 AEM 6.4新增支援，可在Microsoft Windows和Google Chrome OS硬體上執行Signage Player。 此外，還提供遠端裝置管理與排程（頻道群組）的增強功能。
 
-如需有關「畫面」更新的詳細資訊，請參閱[AEM Screens使用指南](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)。
+如需有關「畫面」更新的詳細資訊，請參閱[AEM Screens使用指南](https://docs.adobe.com/content/help/zh-Hant/experience-manager-screens/user-guide/aem-screens-introduction.html)。
 
 ### Experience Manager Communities {#experience-manager-communities}
 
@@ -194,7 +194,7 @@ AEM 6.4為Assets提供多項新功能和增強功能，包括全新、改良的C
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
-**AEM案頭應用程式**
+**AEM 桌面應用程式**
 
 AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。AEM案頭應用程式的完整變更清單會提供在專屬的[AEM案頭應用程式版本注意事項](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/release-notes.html)檔案中。
 
@@ -220,7 +220,7 @@ AEM案頭應用程式已更新為與AEM 6.4相容的1.8版。AEM案頭應用程�
 
 **品牌入口網站**
 
-中繼資料、報告、數位權限、登入體驗和發佈效能等方面的各種增強功能，以利資產散發。 如需新增增強功能的相關資訊，請參閱[「AEM Assets品牌入口網站的新增功能」](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html)。
+中繼資料、報告、數位權限、登入體驗和發佈效能等方面的各種增強功能，以利資產散發。 如需新增增強功能的相關資訊，請參閱[「AEM Assets品牌入口網站的新增功能」](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
 #### 動態媒體附加元件{#dynamic-media-add-on}
 
@@ -272,7 +272,7 @@ AEM 6.4 Forms提供多項新功能和增強功能。 重點包括：
 
 您可以將Livefyre與AEM 6.4執行個體整合。 有關如何將Livefyre與AEM整合的資訊，請參閱：
 
-* [整合Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
+* [整合 Livefyre](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)
 
 ### 運用以客戶為中心的開發{#leverage-customer-focused-development}
 
@@ -284,7 +284,7 @@ Adobe已制定相關程式和程式，以收集、排定優先順序並追蹤以
 
 ## 屬於{#list-of-files-that-are-part-of-the-release}版本的檔案清單
 
-**基礎**
+**Foundation**
 
 * 獨立快速入門：cq-quickstart-6.4.0.jar
 * 應用程式伺服器快速啟動：cq-quickstart-6.4.0.war
