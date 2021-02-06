@@ -195,7 +195,7 @@ ht-degree: 0%
 
 ### 社群啟用管理員角色{#community-enablement-manager-role}
 
-對於[啟用社群](overview.md#enablement-community)，通常不允許網站訪客自行註冊，因為每個成員都有相關成本。 使用者在作者上建立網站時，將`enablement manager`[的[角色](#author-group-roles)指派給&lt;a2/>&lt;a3/>的](sites-console.md#enablement)（新增為群組`Community <site-name> Siteenablementmanagers`的成員）來管理啟用學員和資源。 `enablement manager`還負責[將學習資源](resources.md)分配給作者的社區成員。
+對於[啟用社群](overview.md#enablement-community)，通常不允許網站訪客自行註冊，因為每個成員都有相關成本。 使用者在作者上建立網站時，將`enablement manager`[的[角色](#author-group-roles)指派給的](sites-console.md#enablement)（新增為群組`Community <site-name> Siteenablementmanagers`的成員）來管理啟用學員和資源。 `enablement manager`還負責[將學習資源](resources.md)分配給作者的社區成員。
 
 只有全局`Community Enablement Managers`組成員的用戶才能被選擇為特定社區站點的`enablement manager`。
 
@@ -206,7 +206,7 @@ ht-degree: 0%
 1. 以管理員權限登入，瀏覽至傳統UI安全性主控台。
 例如，[http://localhost:4502/useradmin](http://localhost:4502/useradmin)
 
-2. 從「編輯」菜單中，選擇「建立用戶」。]****[!UICONTROL 
+2. 從「編輯」菜單中，選擇「建立用戶」。****
 3. 填寫`Create User`對話方塊。
    * 路徑必須為`/home/users/community`
 4. 選擇&#x200B;**[!UICONTROL 建立]**
