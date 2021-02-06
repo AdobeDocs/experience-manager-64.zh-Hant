@@ -72,7 +72,7 @@ HTTP API POST端點是通過實施`SlingPostOperation`介面（包`org.apache.sl
 
 `PostOperation`端點實施將`sling.post.operation`設定為操作將響應的值。 設為該值的：operation參數的所有POST請求都將委託給此實施類。
 
-`PostOperation`調用`SocialOperation`，該&lt;a1/>執行操作所需的操作。
+`PostOperation`調用`SocialOperation`，該執行操作所需的操作。
 
 `PostOperation`從`SocialOperation`接收結果，並將相應的響應返回給客戶端。
 
