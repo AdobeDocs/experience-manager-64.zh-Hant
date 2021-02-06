@@ -620,7 +620,7 @@ OSGi事件也會產生稽核記錄，您可從AEM Web Console的「設定狀態�
   <tr> 
    <td>JConsole</td> 
    <td>觀察JVM度量和線程。</td> 
-   <td><p>用法：jconsole</p> <p>請參閱<a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a>和<a href="#monitoring-performance-using-jconsole">使用JConsole</a>監控效能。</p> <p><strong>注意：</strong> 使用JDK 1.6,JConsole可透過外掛程式進行擴充；例如，Top或TDA（線程轉儲分析器）。</p> </td> 
+   <td><p>用法：jconsole</p> <p>請參閱<a href="https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html">jconsole</a>和<a href="#monitoring-performance-using-jconsole">使用JConsole</a>監控效能。</p> <p><strong>注意：</strong> 使用JDK 1.6,JConsole可以使用插件進行擴展；例如，Top或TDA（線程轉儲分析器）。</p> </td> 
   </tr> 
   <tr> 
    <td>Java VisualVM</td> 
