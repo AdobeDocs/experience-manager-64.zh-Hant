@@ -124,7 +124,7 @@ AEM會將儲存庫當做許多內部和內部管理活動的儲存空間：
 
 >[!NOTE]
 >
->只有在您已設定外部檔案資料存放區時，才會顯示「資料存放區廢棄項目收集」工作。 如需如何設定檔案資料儲存區的詳細資訊，請參閱「設定AEM 6[的節點儲存區與資料儲存區」。](/help/sites-deploying/data-store-config.md#file-data-store)
+>只有在您已設定外部檔案資料存放區時，才會顯示「資料存放區廢棄項目收集」工作。 如需如何設定檔案資料儲存區的詳細資訊，請參閱「設定AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)的節點儲存區與資料儲存區」。[
 
 ### 透過JMX主控台{#running-data-store-garbage-collection-via-the-jmx-console}執行Data Store Garbage Collection
 
@@ -153,7 +153,7 @@ AEM會將儲存庫當做許多內部和內部管理活動的儲存空間：
 
 >[!NOTE]
 >
->只有在您已設定外部檔案資料儲存時，資料儲存廢棄項目收集工作才會啟動。 如果尚未配置外部檔案資料儲存，則任務將在調用後返回消息`Cannot perform operation: no service of type BlobGCMBean found`。 如需如何設定檔案資料儲存區的詳細資訊，請參閱「設定AEM 6[的節點儲存區與資料儲存區」。](/help/sites-deploying/data-store-config.md#file-data-store)
+>只有在您已設定外部檔案資料儲存時，資料儲存廢棄項目收集工作才會啟動。 如果尚未配置外部檔案資料儲存，則任務將在調用後返回消息`Cannot perform operation: no service of type BlobGCMBean found`。 如需如何設定檔案資料儲存區的詳細資訊，請參閱「設定AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)的節點儲存區與資料儲存區」。[
 
 ## 自動化資料存放區廢棄項目收集{#automating-data-store-garbage-collection}
 
