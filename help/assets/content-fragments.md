@@ -216,7 +216,7 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 
    * 這是片段外部的內容，但與編輯相關。 通常是影像、視訊或其他片段。
    * 當系列中的個別資產新增至頁面時，可與頁面編輯器中的片段搭配使用。 這表示它們是可選的，具體取決於特定渠道的要求。
-   * 這些資產透過系列[與片段相關聯；關聯的系列可讓作者決定在編寫頁面時要使用哪些資產。](content-fragments-assoc-content.md)
+   * 這些資產透過系列](content-fragments-assoc-content.md)與片段相關聯；關聯的系列可讓作者決定在編寫頁面時要使用哪些資產。[
 
       * 系列可以透過範本、預設內容或作者在片段製作期間，與片段建立關聯。
       * [資產(DAM)收](managing-collections-touch-ui.md) 集是片段相關內容的基礎。
@@ -278,13 +278,13 @@ AEM內容片段可用來描述和管理結構化內容。 結構化內容定義�
 * **內容模型**
 
    * 啟用[，然後使用Tools](content-fragments-models.md)建立。
-   * 建立結構化片段[所需。](content-fragments-managing.md#creating-content-fragments)
+   * 建立結構化片段](content-fragments-managing.md#creating-content-fragments)所需。[
    * 定義片段的結構（標題、內容元素、標籤定義）。
    * 內容模型定義需要一個標題和一個資料元素；其他一切都是可選的。 模型會定義片段的最小範圍，並定義預設內容（如果適用）。 製作片段內容時，作者無法變更已定義的結構。
 
 * **片段範本**
 
-   * 建立簡單片段[所需。](content-fragments-managing.md#creating-content-fragments)
+   * 建立簡單片段](content-fragments-managing.md#creating-content-fragments)所需。[
    * 通常[在項目實施期間開發](/help/sites-developing/content-fragment-templates.md);無法在編寫時建立。
    * 定義簡單片段的基本屬性 (標題、文字元素數目、標記定義)。
    * 範本定義需要一個標題和一個文字元素；其他一切都是可選的。 範本會定義片段的最小範圍和預設內容（如果適用）。 作者稍後可將片段延伸至範本中定義的範圍以外。
