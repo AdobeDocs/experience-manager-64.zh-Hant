@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 診斷流程報告{#troubleshooting-process-reporting}
 
-## 在Microsoft Windows 7上的Internet Explorer 9上建立篩選器時遇到的問題{#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
+## 在Microsoft Windows 7上建立Internet Explorer 9篩選器時遇到的問題{#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
 如果您為預先定義的報表建立篩選器，則&#x200B;**Internet Explorer 9**&#x200B;在&#x200B;**Microsoft Windows 7**&#x200B;環境中偶爾會發生下列問題：
 
