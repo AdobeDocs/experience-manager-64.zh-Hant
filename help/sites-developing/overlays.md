@@ -63,7 +63,7 @@ Overlay是可在許多內容中使用的詞語。 在此內容（擴充AEM）中
 >
 >其他區域（包括傳統UI）的覆蓋包括複製適當的節點和整個子結構，然後進行所需的變更。
 
-Overlays是許多變更的建議方法，例如在側面板[（用於製作頁面）中，設定控制台[或](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)建立選擇類別至資產瀏覽器。 ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser)它們的要求如下：
+Overlays是許多變更的建議方法，例如在側面板](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser)（用於製作頁面）中，設定控制台](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)或[建立選擇類別至資產瀏覽器。 [它們的要求如下：
 
 * ***不得*&#x200B;在`/libs`分支&#x200B;**中進行變更
 您所做的任何變更都可能會遺失，因為此分支在您執行下列動作時都會面臨變更：
