@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: 38c713b2c5aa93805b10bbb60c0dbdfa24872eb1
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2705'
 ht-degree: 3%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 3%
 ## 安裝和自訂轉出組態{#installed-and-custom-rollout-configurations}
 
 本節提供有關已安裝的轉出配置及其使用的同步操作的資訊，以及如何根據需要建立自定義配置。
+
+>[!CAUTION]
+>
+>建議更新或變更現成可用的（已安裝）轉出組態為&#x200B;**not**。 如果需要自訂即時動作，則應將它新增至自訂轉出設定。
 
 ### 轉出觸發器{#rollout-triggers}
 
