@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
+source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
 workflow-type: tm+mt
 source-wordcount: '1463'
 ht-degree: 6%
@@ -79,7 +79,7 @@ AEM包含超過100種動態媒體影像傳送指令，可用來調整和最佳�
 
 將單色參數設定保留為0。
 
-### JPEF壓縮的最佳做法(&amp;qlt=){#best-practices-for-jpef-compression-qlt}
+### JPEG壓縮的最佳做法(&amp;qlt=){#best-practices-for-compression-qlt}
 
 * 此參數會控制JPG編碼品質。 值越高，表示影像品質越高，但檔案大小卻越大；或者，值越低表示品質越低，但檔案大小越小。 此參數的範圍是0-100。
 * 要優化質量，請不要將參數值設定為100。 設定90或95與100之間的差異幾乎無法察覺，但100則不必要地增加影像檔的大小。 因此，若要最佳化品質，但避免影像檔案變得過大，請將`qlt=<value>`設為90或95。
