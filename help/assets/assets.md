@@ -3,9 +3,9 @@ title: ' [!DNL Adobe Experience Manager Assets] 簡介'
 description: 瞭解什麼是數位資產管理、其使用案例，以及 [!DNL Adobe Experience Manager Asset] 產品。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
+source-git-commit: 91fbe9d3368feb7ecae73c56b2484c305cfb94b8
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '854'
 ht-degree: 12%
 
 ---
@@ -96,5 +96,5 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 >[!MORELIKETHIS]
 >
->* [將Experience Manager Assets作為現代DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+>* [視訊簡介——將Experience Manager Assets當做現代DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
 
