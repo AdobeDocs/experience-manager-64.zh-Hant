@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: 11710b19c373b014862f892640d1bd4e90c6f411
+source-git-commit: ebb750f00fb1d4d6f2b19e300e5a68b6b43650d7
 workflow-type: tm+mt
-source-wordcount: '3963'
+source-wordcount: '4019'
 ht-degree: 0%
 
 ---
@@ -337,6 +337,10 @@ Blueprint頁面（在Blueprint設定中參考）提供您使用目前(Blueprint)
 >
 >您也可以[將即時副本](#detaching-a-live-copy)從其藍圖中分離，以刪除所有連接。 「分離」(Detach)操作是永久的和不可逆的。
 
+>[!NOTE]
+>
+>如果元件標籤為容器，取消和暫停操作將不適用於其子元件。 如需詳細資訊，請參閱[MSM最佳實務](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization)。
+
 #### 暫停頁面屬性的繼承{#suspending-inheritance-from-page-properties}
 
 要暫停頁面上的繼承：
@@ -440,6 +444,10 @@ Blueprint頁面（在Blueprint設定中參考）提供您使用目前(Blueprint)
 ### 取消元件{#cancelling-inheritance-for-a-component}的繼承
 
 取消元件的即時副本繼承，使元件不再與源元件同步。 如有需要，您可以在稍後啟用繼承。
+
+>[!NOTE]
+>
+>如果元件標籤為容器，取消和暫停操作將不適用於其子元件。 如需詳細資訊，請參閱[MSM最佳實務](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization)。
 
 >[!NOTE]
 >
