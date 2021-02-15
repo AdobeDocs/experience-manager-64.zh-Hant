@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
 workflow-type: tm+mt
-source-wordcount: '1672'
+source-wordcount: '1774'
 ht-degree: 8%
 
 ---
@@ -51,6 +51,15 @@ ht-degree: 8%
 * **於導覽中隱藏**
 
    指出在產生的網站的頁面導覽中是否顯示或隱藏頁面。
+
+* **品牌化**
+
+   將品牌邊界附加至每個頁面標題，以跨頁套用一致的品牌識別。 此功能需要使用[核心元件2.14.0版或更新版本的頁面元件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
+
+   * **覆寫** -勾選以定義此頁面上的品牌印刷邊界。
+      * 任何子頁面都將繼承該值，除非它們也設定了&#x200B;**Override**&#x200B;值。
+   * **覆寫值** -要附加至頁面標題的品牌印刷邊界文字。
+      * 該值會附加在垂直號字元（例如「循環圖表」）後的頁面標題中 |隨時為WKND做好準備&quot;
 
 * **頁面標題**
 
