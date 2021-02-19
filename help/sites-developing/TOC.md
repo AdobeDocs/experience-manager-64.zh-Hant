@@ -7,7 +7,7 @@ user-guide-title: AEM 6.4 Developing 使用指南
 breadcrumb-title: Developing 指南
 user-guide-description: 本指南說明如何建立 AEM 執行個體。
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 14%
@@ -79,7 +79,7 @@ ht-degree: 14%
    + [開發AEM元件](developing-components.md)
    + [開發AEM元件——程式碼範例](developing-components-samples.md)
    + [內容服務的JSON匯出器](json-exporter.md)
-   + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
+   + [為元件啟用JSON匯出](json-exporter-components.md)
    + [影像編輯器](image-editor.md)
    + [裝飾標記](decoration-tag.md)
    + [使用隱藏條件](hide-conditions.md)
@@ -100,7 +100,7 @@ ht-degree: 14%
       + [開發表單(Classic UI)](developing-forms.md)
 + 無頭式體驗管理{#headless}
    + [無頭與AEM混合](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [為元件啟用JSON匯出](json-exporter-components.md)
+   + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + 單頁應用程式{#spas}
       + [SPA簡介與逐步說明](spa-walkthrough.md)
       + [SPA WKND教學課程](spa-wknd.md)
