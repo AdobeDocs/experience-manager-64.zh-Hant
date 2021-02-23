@@ -3,10 +3,10 @@ title: 與Creative Cloud共用AEM Assets檔案夾
 description: 設定和最佳實務，讓Adobe Experience Manager Assets使用者能夠與Adobe Creative Cloud使用者交換資產資料夾。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 1%
+source-wordcount: '1061'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->「AEM到Creative Cloud資料夾共用」功能已過時。 Adobe強烈建議使用較新的功能，例如[Adobe Asset Link](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)或[AEM案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)。 進一步瞭解[AEM和Creative Cloud整合最佳實務](/help/assets/aem-cc-integration-best-practices.md)。
+>「AEM到Creative Cloud資料夾共用」功能已過時。 Adobe強烈建議使用較新的功能，例如[Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html)或[AEM案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)。 進一步瞭解[AEM和Creative Cloud整合最佳實務](/help/assets/aem-cc-integration-best-practices.md)。
 
 Adobe Experience Manager(AEM)可設定為允許AEM Assets中的使用者與Creative Cloud使用者共用資料夾，因此可在Creative Cloud Assets服務中以共用資料夾的形式提供。 此功能可用於創意團隊和AEM Assets使用者之間交換檔案，尤其是當創意使用者無法存取AEM Assets例項（他們不在企業網路上）時。
 
