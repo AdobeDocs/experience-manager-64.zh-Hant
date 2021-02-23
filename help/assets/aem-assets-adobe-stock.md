@@ -3,9 +3,9 @@ title: 管理 [!DNL Adobe Experience Manager Assets]中的 [!DNL Adobe Stock] �
 description: 從 [!DNL Adobe Experience Manager]內搜尋、擷取、授權及管理 [!DNL Adobe Stock] 資產。 將授權資產當做任何其他數位資產使用。
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 798fe016f1a1e27cdbb9737709d1f5ea9ef722c9
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1114'
 ht-degree: 10%
 
 ---
@@ -122,7 +122,7 @@ ht-degree: 10%
 
 >[!MORELIKETHIS]
 >
->* [有關搭配使用Adobe Stock資產與Experience Manager Assets的教學課程影片](https://helpx.adobe.com/experience-manager/kt/assets/using/stock-assets-feature-video-use.html)
->* [Adobe Stock企業計畫說明](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
+>* [有關搭配使用Adobe Stock資產與Experience Manager Assets的教學課程影片](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
+>* [Adobe Stock企業計畫說明](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-stock-enterprise.ug.html)
 >* [Adobe Stock常見問答集](https://helpx.adobe.com/stock/faq.html)
 
