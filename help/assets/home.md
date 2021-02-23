@@ -3,9 +3,9 @@ title: Assets 指南
 description: 本指南涵蓋所有AEM Assets工作，例如如何建立、管理、傳送和最佳化數位資產。
 user-guide-title: Assets 指南
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '317'
 ht-degree: 23%
 
 ---
@@ -17,9 +17,8 @@ ht-degree: 23%
 
 ## 關鍵AEM文章
 
-* [AEM快速入門](https://helpx.adobe.com/tw/experience-manager/get-started.html)
-* [AEM 6.4發行說明](/help/release-notes/home.md)
-* [近期文件更新](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [AEM 6.4 發行說明](/help/release-notes/home.md)
+* [ 近期說明文件更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [AEM安全性檢查清單](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4使用指南
@@ -41,7 +40,7 @@ ht-degree: 23%
 
 ## 關鍵AEM資源
 
-* [AEM教學課程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [AEM教學課程](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [《 Dispatcher使用手冊》](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)
 * [HTL使用指南](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
 * [核心元件使用指南](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
