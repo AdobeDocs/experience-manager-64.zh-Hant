@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
 workflow-type: tm+mt
-source-wordcount: '21617'
-ht-degree: 23%
+source-wordcount: '21579'
+ht-degree: 22%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 23%
 
 AEM 6.4.8.0是重要的更新，其中包含新功能、主要客戶要求的增強功能與效能、穩定性、安全性改進，自2018年4月全面推出AEM 6.4以來發行。****
 
-此外，6.4.8.0版也包含了之前發行的所有AEM 6.4 Service Pack。
+此外，6.4.8.0還包含之前發行的所有AEM 6.4 Service Pack。
 
 此Service Pack版本的一些主要亮點是：
 
@@ -325,7 +325,7 @@ AEM 6.4.7.0的一些主要亮點是：
 
 **Forms 附加元件套件**
 
-**適用性表單**
+**調適型表單**
 
 * 字串包含字典鍵，同時本地化最適化表單(NPR-31109)。
 
@@ -337,7 +337,7 @@ AEM 6.4.7.0的一些主要亮點是：
 
 **OSGi的檔案服務**
 
-* 使用com.adobe.fd.assembler.service.AssemblerService.invoke()方法同時執行多個串接來組合表單，會顯示錯誤訊息(NPR-31164)。
+* 使用com.adobe.fd.assembler.service.AssemblerService.invoke()方法同時執行多個用於組合表單的線程，顯示錯誤消息(NPR-31164)。
 
 * 由Assembler Service建立的暫存檔案不會自動刪除，而且需要AEM重新啟動(NPR-30846)。
 
@@ -467,7 +467,7 @@ AEM 6.4.6.0的一些主要亮點是：
 
 **Forms 附加元件套件**
 
-**適用性表單**
+**調適型表單**
 
 * 從發佈者擷取空的。css檔案需要較長的時間，造成效能問題。 NPR-30558：CQ-4274399 的 Hotfix
 * 發佈後修改的表單不會在發佈網站時再次張貼。 NPR-30411：CQ-4236566 的 Hotfix
@@ -685,7 +685,7 @@ AEM 6.4.5.0表格的主要重點為：
 
 **Forms 附加元件套件**
 
-**適用性表單**
+**調適型表單**
 
 * （觸控UI）啟動工作流程選項不會彈出用於設定的對話方塊。 NPR-29521：CQ-4269050 的 Hotfix
 
@@ -784,7 +784,7 @@ AEM 6.4.4.0的一些主要亮點是：
 * 資產API不允許上傳檔案> 2 GB，造成上傳失敗。 NPR-27629：Granite-23590 的 Hotfix
 * 當例項上啟用動態媒體時，第一次嘗試下載的資產中不會儲存中繼資料。 NPR-28233：CQ-4260759 的 Hotfix
 * 在SiteCatalyst組態中，服務解析程式未關閉。 NPR-28015：CQ-4259397 的 Hotfix
-* 在DAM中移動資產並不會在Scene7（p2p組態）上產生類似的移動。 NPR-28313：CQ-4261091 的 Hotfix
+* 在DAM中移動資產並不會在Scene7（p2p組態）上造成類似的移動。 NPR-28313：CQ-4261091 的 Hotfix
 
 **網站**
 
@@ -822,7 +822,7 @@ AEM 6.4.4.0的一些主要亮點是：
 * 嘗試移動已發佈頁面時，「移動頁面」精靈第一頁顯示的「參考頁面」計數不正確。 NPR-28111：CQ-4259663 的 Hotfix
 * (Touch UI)「參考邊欄」不會顯示傳入的連結。 NPR-28529：CQ-4262306 的 Hotfix
 * 安裝AEM 6.4.3後，無法編輯任何元件和頁面屬性。NPR-27998:CQ-4261216、CQ-4260441的修補程式
-* 將 ContextHub 移轉至 jquery 3。NPR-28397：GRANITE-19902 的 Hotfix
+* 將 ContextHub 遷移至 jquery 3。NPR-28397：GRANITE-19902 的 Hotfix
 
 **商務**
 
@@ -947,7 +947,7 @@ AEM 6.4.4.0表格的主要重點為：
 
 * AEM 6.4 Forms Client SDK不包含adobesign-recipent套件。 NPR-27735：CQ-4259372 的 Hotfix
 
-**適用性表單**
+**調適型表單**
 
 * 當使用空白模板建立Wan自適應表單時，客戶無法將子面板添加到表單的根面板。 NPR-28758：CQ-4264157 的 Hotfix
 * 當日期元件的年欄位值為9999時，驗證指令碼將失敗。 NPR-28580：CQ-4262620 的 Hotfix
@@ -1127,7 +1127,7 @@ AEM 6.4.3.0的一些主要亮點是：
 
 **OAK**
 
-* 安裝AEM 6.4 Service Pack 2後，無法登入資料庫。 NPR-27171：Granite-23317 的 Hotfix
+* 安裝AEM 6.4 Service Pack 2後無法登入資料庫。 NPR-27171：Granite-23317 的 Hotfix
 
 **複寫**
 
@@ -1202,7 +1202,7 @@ AEM 6.4.3.0的一些主要亮點是：
 
 AEM 6.4.3.0表格的主要重點為：
 
-* 已啟用對具有動態實體替代的物件陣列／清單的支援。
+* 已啟用對具有動態實體替代的對象陣列／清單的支援。
 * 在數字簽名、Reader擴展、CryptoProvider和TrustStore中為Reader Extended工作流程啟用FIPS規範。
 * 新增PDF/UA支援至使用設計人員或輸出服務產生的XFA表單。
 * 在最適化表單範本上支援allowedPaths屬性。
@@ -1217,7 +1217,7 @@ AEM 6.4.3.0表格的主要重點為：
 * 可為空的屬性約束以預設值初始化，無法與FDM同步。 CQ-4253873 的 Hotfix
 * 對於OData資料源，可為空屬性的預設值未設定為True。 CQ-4253870 的 Hotfix
 
-**適用性表單**
+**調適型表單**
 
 * 無法載入網站和表單編輯器。 NPR-26977;CQ-4249170的修補程式
 * 使用鍵盤將附件新增至最適化表單時的問題。 NPR-25913;CQ-4249456的修補程式
@@ -1270,7 +1270,7 @@ AEM 6.4.3.0表格的主要重點為：
 
 **包含的 Feature Pack**
 
-* 已啟用對具有動態實體替代的物件陣列／清單的支援。 NPR-26590：CQ-4254655 的 Hotfix
+* 已啟用對具有動態實體替代的對象陣列／清單的支援。 NPR-26590：CQ-4254655 的 Hotfix
 
 **隨附的OSGI組合和內容套件**
 
@@ -1293,7 +1293,7 @@ AEM 6.4.2.0的一些主要亮點是：
 * 新增支援HTML範本語言(HTL)規格1.4功能
 * 已新增對MongoDB Enterprise 3.6的支援。
 * 「網站頁面編輯器」新增支援內容內容內容編輯和構圖，搭配<a href="../sites-developing/spa-walkthrough.md">AEM的SPA編輯器JS SDK</a>搭配使用React或Angular中建立的用戶端元件。
-* 內容片段增強功能：新增可在文字欄位中加上註解，以及並排比較版本的功能。
+* 內容片段增強功能：新增可在文字欄位中加上註解的功能，並並排比較版本。
 * 已新增與Adobe Stock](/help/assets/aem-assets-adobe-stock.md)的整合，讓使用者可以直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 [如需詳細資訊，請參閱[搭配使用Adobe Stock資產與AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html)。
 * 新增資產支援動態條件式中繼資料架構，以及為資產資料夾設定中繼資料架構的功能。
 * 在每個元件中新增設定，以啟用／停用資料夾縮圖建立／更新功能。
@@ -1542,7 +1542,7 @@ AEM 6.4.2.0的一些主要亮點是：
 **花崗岩**
 
 * bundle SymbolicName中的錯字會導致重複的bundle。 Granite-22155 的 Hotfix
-* CUGConfiguration無法拾取CugExclude。 Granite-21109 的 Hotfix
+* CUGConfiguration不能拾取CugExclude。 Granite-21109 的 Hotfix
 * 重新啟動Adobe Granite Workflow Core會重新執行從中間建立不必要工作流程的工作流程步驟。 NPR-25057：Granite-22218 的 Hotfix
 * JcrResourceBundle無法正確支援多個基本名稱。 NPR-25245：Granite-22317 的 Hotfix
 * 在安裝內容包時，ACL按主體分組，因此會破壞權限模型。 NPR-24583：Granite-21591 的 Hotfix
@@ -1617,7 +1617,7 @@ AEM 6.4.2.0表格的主要重點為：
 * （表單服務）OSGI不支援XFAF。 NPR-25181, CQ-4251313的修補程式
 * 已組合PDF檔案標題中的字元將會變亂。 NPR-25113：CQ-4244682 的 Hotfix
 
-**適用性表單**
+**調適型表單**
 
 * 「傳送郵件時提交動作」會引發例外，「CC/BC」欄位為空白。 NPR-25019：CQ-4243039 的 Hotfix
 * 由於查詢效率不彰，無法使用OOTB AEM Form元件。 NPR-25065：CQ-4247256 的 Hotfix
@@ -1934,7 +1934,7 @@ AEM Forms 的關鍵重點為：
 * Dermis —— 在Javadoc中添加缺少的包。 CQ-4242815 的 Hotfix
 * WSDLInvokerParams將包含在Forms Add-On客戶端sdk中。 NPR-23381：CQ-4240233 的 Hotfix
 
-**適用性表單**
+**調適型表單**
 
 * 檔案(IC)轉譯應使用「交易記錄服務」記錄為交易。 CQ-4245333 的 Hotfix
 * 執行UAT5時，在驗證階段產生的pdf會遺失項目。 CQ-4243184 的 Hotfix
@@ -2126,7 +2126,7 @@ AEM 6.4.1.0 中包含的內容套件清單
 
 >[!NOTE]
 >
->**在安裝6.4.8.0時，Package Manager UI上的對話有時會無法正常退出**
+>**在安裝6.4.8.4時，Package Manager UI上的對話有時會無法正常退出**
 >
 >因此，建議您先等待錯誤記錄穩定，再存取執行個體。 在確保安裝成功之前，用戶必須等待與卸載更新程式包相關的特定日誌。 通常在Safari上會發生，但在任何瀏覽器上都會偶爾發生。
 
@@ -2236,14 +2236,9 @@ B.使用Package Manager](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 
 * 安裝期間可能會顯示下列錯誤和警告：
 
-   * 由於存放庫重新啟動，而發生建立元件例項和服務工廠傳回 null 這類錯誤：
-
-      * com.day.cq.cq-personalization \[com.day.cq.personalization.impl.DefaultProfileProvider(938)\]由於無法綁定引用profileManager，無法建立元件實例
-      * org.apache.sling.commons.scheduler FrameworkEvent ERROR (org.osgi.framework.ServiceException：服務工廠傳回 null。(元件：com.day.cq.tagging.impl.TagGarbageCollector (1687)))
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` :等待註冊表更改完成未註冊的超時。
    * `com.adobe.granite.maintenance.impl.TaskScheduler` 在granite/operations/maintenance找不到維護視窗
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`:unbindActiment方法拋出異常(java.lang.IllegalStateException:服務已未註冊)。這些錯誤不需要任何動作，因為它們不會影響您的AEM例項。
-
 
 ### 已解決問題{#resolved-issues}
 
