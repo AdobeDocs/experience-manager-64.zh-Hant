@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
+source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
 workflow-type: tm+mt
-source-wordcount: '3318'
+source-wordcount: '3316'
 ht-degree: 1%
 
 ---
@@ -637,7 +637,6 @@ AEM Forms的以下子系統不符合[508](https://www.section508.gov/):
 * 64位元作業系統需要16 GB的磁碟空間（32位元或20 GB的磁碟空間）
 * 圖形記憶體- 128 MB的GPU（建議使用256 MB）
 * 2.35 GB的可用硬碟空間
-* DVD-ROM光碟機
 * 1024 X 768像素或更高的螢幕解析度
 * 視訊硬體加速（選用）
 * Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC
