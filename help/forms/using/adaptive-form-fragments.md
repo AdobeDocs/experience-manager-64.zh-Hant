@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2094'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ### 從頭開始建立片段{#create-fragment-from-scratch}
 
-1. 登入AEM Forms作者例項，網址為https://[*hostname*]:[*port*]/aem/forms.html。
+1. 登錄AEM Forms作者實例，網址為https://[*hostname*]:[*port*]/aem/forms.html。
 1. 按一下「建立」>「最適化表單片段」]**。**[!UICONTROL 
 1. 指定片段的標題、名稱、說明和標籤。
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    此外，您還可以通過在下拉框中指定子表單的SOM表達式，使用未在表單模板中標籤為片段的子表單建立自適應表單片段。
 
-   * **[!UICONTROL XML架構]**:指定使用上傳至AEM Forms的XML架構來建立片段。您可以上傳或從可用的XML結構描述中選擇，作為片段的表單模型。
+   * **[!UICONTROL XML架構]**:指定使用上傳到AEM Forms的XML架構建立片段。您可以上傳或從可用的XML結構描述中選擇，作為片段的表單模型。
 
    ![以XML架構為模型建立自適應表單片段](assets/xml-schema-model.png)
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 1. 按一下&#x200B;**[!UICONTROL 建立]** ，然後按一下&#x200B;**[!UICONTROL 開啟]**&#x200B;以在編輯模式下使用預設模板開啟片段。
 
-在編輯模式中，您可以從AEM sidekick拖放任何最適化表單元件至片段。 有關最適化表單元件的資訊，請參見[製作最適化表單的簡介](/help/forms/using/introduction-forms-authoring.md)。
+在編輯模式中，您可以從側腳拖放任何最適化表單元AEM件至片段。 有關最適化表單元件的資訊，請參見[製作最適化表單的簡介](/help/forms/using/introduction-forms-authoring.md)。
 
 此外，如果您選擇XML架構或XDP表單範本作為片段的表單模型，則內容搜尋器中會出現顯示表單模型階層的新標籤。 它可讓您將表單模型元素拖放至片段上。 新增的表單模型元素會轉換為表單元件，同時保留相關XDP或XSD的原始屬性。
 
@@ -107,17 +107,17 @@ ht-degree: 0%
 
 ### 配置片段外觀{#configure-fragment-appearance}
 
-您在最適化表單中插入的任何片段都會顯示為預留位置影像。 預留位置在片段中最多可顯示10個子面板的標題。 您可以設定AEM Forms以顯示完整片段，而非預留位置影像。
+您在最適化表單中插入的任何片段都會顯示為預留位置影像。 預留位置在片段中最多可顯示10個子面板的標題。 您可以設定AEM Forms來顯示完整片段，而非預留位置影像。
 
 執行下列步驟，在表單中顯示完整片段：
 
-1. 前往AEM網頁主控台設定頁面，網址為https:[*host*]:[*port*]/system/console/configMgr。
-1. 搜索並按一下&#x200B;**[!UICONTROL Adaptive Form Configuration Service]**&#x200B;以在編輯模式下開啟它。
+1. 轉至AEMWeb控制台配置頁，網址為https:[*host*]:[*port*]/system/console/configMgr。
+1. 搜索並按一下&#x200B;**[!UICONTROL 自適應表單和互動式通信Web通道配置]**&#x200B;以在編輯模式下開啟它。
 1. 停用&#x200B;**[!UICONTROL 取代片段]**&#x200B;的「啟用預留位置」核取方塊，以顯示完整片段，而非預留位置影像。
 
 ### 以最適化形式{#insert-a-fragment-in-an-adaptive-form}插入片段
 
-您建立的最適化表單片段會顯示在AEM內容搜尋器的「最適化表單片段」索引標籤中。 要在自適應表單中插入自適應表單片段：
+您建立的最適化表單片段會顯示在內容搜尋器的「最適化表單片AEM段」標籤中。 要在自適應表單中插入自適應表單片段：
 
 1. 在編輯模式中開啟最適化表單，您要在其中插入最適化表單片段。
 1. 在側欄中按一下「**[!UICONTROL Assets]** ![assets-browser](assets/assets-browser.png)」。 在資產瀏覽器中，從下拉式清單中選擇&#x200B;**[!UICONTROL 最適化表單片段]**。
@@ -158,15 +158,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您也可以從AEM內容搜尋器中的「最適化表單片段」庫拖放系結的最適化表單片段，並從最適化表單片段面板的「編輯」元件對話方塊中提供正確的系結參考。
+>您也可以從內容搜尋器中的最適化表單片段庫拖放已裝訂的最適化表單片段AEM，並從最適化表單片段面板的編輯元件對話方塊中提供正確的系結參考。
 
 ## 管理片段{#manage-fragments}
 
-您可以使用AEM Forms UI，對最適化表單片段執行數個作業。
+您可以使用AEM FormsUI，對最適化表單片段執行數項作業。
 
 1. 前往 `https://[hostname]:[port]/aem/forms.html`.
 
-1. 按一下「AEM Forms UI」工具列中的「**[!UICONTROL 選擇]**」，然後選取最適化的表單片段。 工具列顯示您可以對所選自適應表單片段執行的下列操作。
+1. 按一下AEM FormsUI工具欄中的&#x200B;**[!UICONTROL 選擇]**&#x200B;並選擇最適化表單片段。 工具列顯示您可以對所選自適應表單片段執行的下列操作。
 
 <table> 
  <tbody> 
@@ -227,7 +227,7 @@ ht-degree: 0%
 * 在以XDP為基礎的最適化表單中，如果您將面板儲存為包含其他XDP片段的片段，則產生的片段會自動系結至子XDP片段。 如果是XSD自適應表單，則產生的片段將系結至架構根目錄。
 * 當您建立最適化表單片段時，會在CRXDe Lite中建立片段節點，這類似於最適化表單的guideContainer節點。
 * 不支援使用不同表單資料模型的自適應表單中的片段。 例如，基於XSD的最適化表單不支援XDP的片段，反之亦然。
-* 可透過AEM內容搜尋器中的「最適化表單片段」索引標籤使用最適化表單片段。
+* 可透過內容搜尋器中的「最適化表單片段」索引標籤使AEM用最適化表單片段。
 * 獨立可調式表單片段中的任何運算式、指令碼或樣式，在參考插入或嵌入可調式表單時都會保留。
 * 不能從自適應表單中編輯由引用插入的自適應表單片段。 若要編輯，您可以編輯可獨立執行的最適化表單片段，或將片段內嵌在最適化表單中。
 * 發佈最適化表單時，您需要發佈參照在最適化表單中插入的獨立最適化表單片段。
