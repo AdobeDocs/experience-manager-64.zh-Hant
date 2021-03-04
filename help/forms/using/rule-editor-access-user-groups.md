@@ -9,9 +9,9 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '334'
 ht-degree: 7%
 
 ---
@@ -21,18 +21,18 @@ ht-degree: 7%
 
 ## 概覽 {#overview}
 
-您可能有不同類型的使用者，具備不同的技巧，可搭配使用Adaptive Forms。 雖然專家使用者可能擁有使用指令碼和複雜規則的適當知識，但是可能有基本層級使用者需要只使用最適化表單的版面配置和基本屬性。
+您可能有不同類型的使用者，具備不同的技能，可與Adaptive Forms合作。 雖然專家使用者可能擁有使用指令碼和複雜規則的適當知識，但是可能有基本層級使用者需要只使用最適化表單的版面配置和基本屬性。
 
-AEM Forms可讓您根據使用者的角色或函式，限制規則編輯器的存取權。 在Adaptive Forms Configuration Service設定中，您可以指定[用戶組](/help/sites-administering/security.md)，以便查看和訪問規則編輯器。
+AEM Forms允許您根據用戶的角色或功能限制規則編輯器對用戶的訪問。 在「最適化Forms配置服務」設定中，您可以指定[用戶組](/help/sites-administering/security.md)，以查看和訪問規則編輯器。
 
 ## 指定可存取規則編輯器{#specify-user-groups-that-can-access-rule-editor}的使用者群組
 
-1. 以管理員身分登入AEM Forms。
-1. 在作者例項中，按一下「![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager >工具![hammer](assets/hammer.png) >操作> Web Console」。 「Web控制台」在新視窗中開啟。
+1. 以管理員身份登錄AEM Forms。
+1. 在作者例項中，按一下「![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager>工具![hammer](assets/hammer.png) >作業> Web Console」。 「Web控制台」在新視窗中開啟。
 
-   ![3](assets/1.png)
+   ![1](assets/1.png)
 
-1. 在Web控制台窗口中，找到並按一下&#x200B;**自適應表單配置服務**。 **此時將顯示「自適應** 表單配置服務」對話框。請勿變更任何值，然後按一下「儲存」。****
+1. 在Web控制台窗口中，找到並按一下&#x200B;**[!UICONTROL 自適應表單和互動式通信Web通道配置]**。 **[!UICONTROL 出現「Adaptive Form and Interactive Communication Web Channel]** Configuration（自適應表單和互動式通信Web通道配置）」對話框。請勿變更任何值，然後按一下「儲存」。****
 
    它在CRX-repository中建立一個檔案/apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config。
 
