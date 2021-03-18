@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
+role: 開發人員
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1927'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -50,11 +51,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在閱讀本節之前，建議您熟悉使用Assembler服務來組合PDF檔案。 本節不討論這些概念，例如建立包含輸入文檔的集合對象，或從返回的集合對象中提取結果。 （請參閱[程式設計匯整PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)）。
+>在閱讀本節之前，建議您熟悉使用Assembler服務來組合PDF檔案。 本節不討論這些概念，例如建立包含輸入文檔的集合對象，或從返回的集合對象中提取結果。 （請參閱[程式設計匯整PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)。）
 
 >[!NOTE]
 >
->如需Assembler服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有關Assembler服務的詳細資訊，請參見[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 >[!NOTE]
 >
@@ -62,7 +63,7 @@ ht-degree: 0%
 
 ## 步驟{#summary-of-steps}摘要
 
-要組合包含唯一頁面標識符（Bates編號）的PDF文檔，請執行以下任務：
+要組合包含唯一頁面識別碼（Bates編號）的PDF文檔，請執行以下任務：
 
 1. 包含專案檔案。
 1. 建立PDF匯寫程式式用戶端。
@@ -81,10 +82,10 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar（若AEM Forms部署在JBoss上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，則為必要）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，則為必要)
+* jbossall-client.jar(如果AEM Forms部署在JBoss上，則為必需)
 
-如果AEM Forms部署在JBoss以外的支援J2EE應用程式伺服器上，您必須將adobe-utilities.jar和jbossall-client.jar檔案取代為JAR檔案，此為部署AEM Forms的J2EE應用程式伺服器專屬檔案。 如需所有AEM Forms JAR檔案位置的詳細資訊，請參閱[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
+如果AEM Forms部署在JBoss以外的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar檔案替換為特定於部署了AEM Forms的J2EE應用程式伺服器的JAR檔案。 有關所有AEM FormsJAR檔案的位置資訊，請參見[包括AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **建立PDF匯寫程式式用戶端**
 
@@ -104,7 +105,7 @@ ht-degree: 0%
 
 **匯整輸入的PDF檔案**
 
-在建立Assembler服務客戶端後，請參考包含`BatesNumber`元素資訊的DDX文檔、參考輸入的PDF文檔並設定運行時選項，您可以調用`invokeDDX`操作，該操作導致Assembler服務組合包含唯一頁標識符的PDF文檔。
+在建立Assembler服務客戶端後，請參考包含`BatesNumber`元素資訊的DDX文檔、參考輸入的PDF文檔並設定運行時選項，您可以調用`invokeDDX`操作，使Assembler服務組合包含唯一頁標識符的PDF文檔。
 
 **擷取結果**
 
@@ -112,11 +113,11 @@ Assembler服務返回包含作業結果的集合對象。 您可以擷取產生�
 
 >[!NOTE]
 >
->如果調用`invokeDDX`操作，則返回一個集合對象。 在將兩個或兩個以上輸入的PDF文檔傳遞至Assembler服務時，會使用此操作。 但是，如果只將一個輸入的PDF文檔傳遞到Assembler服務，則應調用`invokeOneDocument`操作。 有關使用此操作的資訊，請參閱[組合加密的PDF文檔](/help/forms/developing/assembling-encrypted-pdf-documents.md)。
+>如果調用`invokeDDX`操作，則返回收集對象。 在將兩個或兩個以上輸入的PDF文檔傳遞至Assembler服務時，會使用此操作。 但是，如果只將一個輸入的PDF文檔傳遞到Assembler服務，則應調用`invokeOneDocument`操作。 有關使用此操作的資訊，請參閱[組合加密的PDF文檔](/help/forms/developing/assembling-encrypted-pdf-documents.md)。
 
 **另請參閱**
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -144,7 +145,7 @@ Assembler服務返回包含作業結果的集合對象。 您可以擷取產生�
 
    * 使用`HashMap`建構函式建立用來儲存輸入PDF檔案的`java.util.Map`物件。
    * 對於每個輸入的PDF檔案，請使用其建構函式並傳遞輸入的PDF檔案位置來建立`java.io.FileInputStream`物件。 在此情況下，請傳遞無擔保PDF檔案的位置。
-   * 對於每個輸入的PDF文檔，建立`com.adobe.idp.Document`對象並傳遞包含PDF文檔的`java.io.FileInputStream`對象。
+   * 對於每個輸入的PDF文檔，請建立`com.adobe.idp.Document`對象並傳遞包含PDF文檔的`java.io.FileInputStream`對象。
    * 通過調用`put`方法並傳遞以下參數，將條目添加到`java.util.Map`對象：
 
       * 代表索引鍵名稱的字串值。 此值必須與DDX檔案中指定之PDF來源元素的值相符。 例如，本節中引入的DDX檔案中指定的PDF來源檔案名稱為Loan.pdf。
@@ -177,7 +178,7 @@ Assembler服務返回包含作業結果的集合對象。 您可以擷取產生�
 
 [快速入門（SOAP模式）:使用Java API將PDF檔案與bates編號組合](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -191,17 +192,17 @@ Assembler服務返回包含作業結果的集合對象。 您可以擷取產生�
 
    >[!NOTE]
    >
-   >將`localhost`取代為代管AEM Forms之伺服器的IP位址。
+   >將`localhost`取代為代管AEM Forms的伺服器的IP位址。
 
 1. 建立PDF匯寫程式式用戶端。
 
    * 使用其預設建構子建立`AssemblerServiceClient`對象。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`AssemblerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`AssemblerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞給AEM Forms服務（例如`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。
    * 獲取`AssemblerServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將返回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
+      * 將表AEM單用戶名分配給欄位`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
       * 將相應的口令值分配給欄位`AssemblerServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值`HttpClientCredentialType.Basic`分配給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`分配給欄位`BasicHttpBindingSecurity.Security.Mode`。
