@@ -9,11 +9,12 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 207c6335-f700-48f1-814b-992692534f6c
+feature: PDF 產生器
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 0%
+source-wordcount: '158'
+ht-degree: 1%
 
 ---
 
@@ -27,6 +28,6 @@ PDF產生器會將各種檔案格式轉換為PDF。 此外，它還可將PDF轉�
 有三種方式可將檔案傳送至PDF產生器進行處理：
 
 * 管理員可以存取「管理控制台」中的PDFG頁面。 （請參閱[使用PDF產生器轉換檔案](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)）。
-* 使用者可登入`http(s)://[server]:[port]/pdfgui`以存取PDFG使用者頁面。 從那裡，他們可以存取PDFG網路印表機、建立PDF、HTML至PDF、匯出PDF和最佳化PDF頁面。
-* 您可以為服務配置端點。 (請參閱<!--Fix broken link Managing Endpoints and --> [產生PDF服務建議](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)。)
+* 使用者可登入`http(s)://[server]:[port]/pdfgui`以存取PDFG使用者頁面。 從那裡，他們可以存取PDFG網路印表機、建立PDF、HTML至PDF、Export PDF和Optimize PDF頁面。
+* 您可以為服務配置端點。 (請參閱 <!--Fix broken link Managing Endpoints and --> [產生PDF服務建議](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)。)
 
