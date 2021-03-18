@@ -1,28 +1,29 @@
 ---
-title: ASRP - Adobe儲存資源供應商
-seo-title: ASRP - Adobe儲存資源供應商
-description: 設定AEM Communities，以使用關聯式資料庫做為其公用儲存
-seo-description: 設定AEM Communities，以使用關聯式資料庫做為其公用儲存
+title: ASRP -Adobe儲存資源提供方
+seo-title: ASRP -Adobe儲存資源提供方
+description: 設定AEM Communities以使用關係資料庫作為其公共儲存
+seo-description: 設定AEM Communities以使用關係資料庫作為其公共儲存
 uuid: 29826b44-633d-4586-8553-cd87ebe269a2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '830'
 ht-degree: 2%
 
 ---
 
 
-# ASRP - Adobe儲存資源供應商{#asrp-adobe-storage-resource-provider}
+# ASRP -Adobe儲存資源提供方{#asrp-adobe-storage-resource-provider}
 
 ## 關於ASRP {#about-asrp}
 
-當AEM Communities設定為使用ASRP做為其公用儲存時，使用者產生的內容(UGC)可從所有作者和發佈例項存取，而不需同步或複製。
+將AEM Communities配置為使用ASRP作為其公共儲存時，用戶生成的內容(UGC)可從所有作者和發佈實例中訪問，而無需同步或複製。
 
 另請參見[SRP選項的特性](working-with-srp.md#characteristics-of-srp-options)和[建議拓撲](topologies.md)。
 
@@ -30,7 +31,7 @@ ht-degree: 2%
 
 使用ASRP需要額外的授權。
 
-若要設定您的AEM Communities網站以使用UGC的ASRP，請連絡您的帳戶代表，以取得：
+若要設定您的AEM Communities網站使用UGC的ASRP，請連絡您的帳戶代表：
 
 * 資料中心URL（ASRP端點的位址）
 * 消費者金鑰
@@ -49,9 +50,9 @@ ht-degree: 2%
 
 * 從全域導覽：**[!UICONTROL 工具>社區>儲存配置]**
 
-![chlimage_1-311](assets/chlimage_1-310.png)
+![chlimage_1-310](assets/chlimage_1-310.png)
 
-* 選擇&#x200B;**[!UICONTROL Adobe儲存資源提供商(ASRP)]**
+* 選擇&#x200B;**[!UICONTROL Adobe儲存資源提供方(ASRP)]**
 * 以下資訊來自設定過程
 
    * **[!UICONTROL 資料中心 URL]**
@@ -86,7 +87,7 @@ ht-degree: 2%
 
 ### 複製加密密鑰{#replicate-the-crypto-key}
 
-消費者金鑰和機密金鑰會加密。 為了正確加密／解密密鑰，所有AEM實例上的主Granite Crypto密鑰必須相同。
+消費者金鑰和機密金鑰會加密。 要正確加密／解密密鑰，所有實例上的主Granite Crypto密鑰必須相AEM同。
 
 按照[複製加密密鑰](deploy-communities.md#replicate-the-crypto-key)中的說明操作。
 
@@ -98,7 +99,7 @@ ht-degree: 2%
 
 ### 時間同步{#time-synchronization}
 
-為了成功與ASRP端點進行驗證，您所代管的AEM Communities的執行機器必須進行時間同步，例如與[網路時間通訊協定(NTP)](https://www.ntp.org/)同步。
+要成功與ASRP端點進行身份驗證，運行托管AEM Communities的電腦必須進行時間同步，例如與[網路時間協定(NTP)](https://www.ntp.org/)進行同步。
 
 ### 發佈配置{#publishing-the-configuration}
 
@@ -117,13 +118,13 @@ ASRP必須被識別為所有作者和發佈實例上的公用商店。
    * 選擇&#x200B;**[!UICONTROL 激活]**
 
 
-## 從AEM 6.0 {#upgrading-from-aem}升級
+## 從AEM6.0 {#upgrading-from-aem}升級
 
 >[!CAUTION]
 >
 >如果您在發佈的社群網站上啟用ASRP，則已儲存在[JCR](jsrp.md)中的任何UGC將不再顯示，因為內部部署儲存空間和雲端儲存空間之間不會同步資料。
 
-**`AEM Communities Extension`** 之前在AEM 6.0社交社群中以雲端服務的形式推出。自AEM 6.1 Communities起，您不需要雲端設定，只需從[儲存組態控制台](srp-config.md)中選取ASRP。
+**`AEM Communities Extension`** 之前在6.0AEM個社交社群中以雲端服務的形式推出。從AEM6.1 Communities開始，不需要雲配置，只需從[儲存配置控制台](srp-config.md)中選擇ASRP。
 
 由於新的儲存結構，從社交社區升級到社區時，必須遵循[upgrade](upgrade.md#adobe-cloud-storage)說明。
 
@@ -138,17 +139,17 @@ ASRP必須被識別為所有作者和發佈實例上的公用商店。
 
 ### 升級{#ugc-disappears-after-upgrade}後UGC消失
 
-如果從現有的AEM 6.0社交社群網站升級，請務必遵循[升級指示](upgrade.md#adobe-cloud-storage)，否則UGC將會遺失&#x200B;*appear*。
+如果從現有的AEM6.0社交社群網站升級，請務必遵循[升級指示](upgrade.md#adobe-cloud-storage)，否則UGC將&#x200B;*appear*&#x200B;遺失。
 
 ### 驗證錯誤{#authentication-errors}
 
-如果收到Data Center URL的驗證錯誤，而AEM error.log包含有關過時時間戳記的訊息，請確認時間同步正在進行。
+如果收到針對資料中心URL的驗證錯誤，且AEMerror.log包含有關過時時間戳記的訊息，請確認正在進行時間同步。
 
-建議使用[網路時間通訊協定(NTP)](https://www.ntp.org/)等工具，來時間同步所有AEM作者和發佈伺服器。
+建議使用[網路時間協定(NTP)](https://www.ntp.org/)等工具來時間同步所有作者和發AEM布伺服器。
 
 ### 搜尋{#new-content-does-not-appear-in-searches}中未顯示新內容
 
-Adobe雲端儲存基礎架構使用&#x200B;*最終的一致性*&#x200B;來協助實現其擴充和效能目標。 因此，新內容無法立即使用，而且可能需要幾秒鐘的時間才會顯示在搜尋結果中。
+Adobe雲儲存基礎架構使用&#x200B;*最終一致性*&#x200B;來幫助實現其擴展和效能目標。 因此，新內容無法立即使用，而且可能需要幾秒鐘的時間才會顯示在搜尋結果中。
 
 雖然會監控影響最終一致性的間隔，但若搜尋中出現新內容所花的時間超過幾秒，請連絡您的帳戶代表。
 
@@ -156,7 +157,7 @@ Adobe雲端儲存基礎架構使用&#x200B;*最終的一致性*&#x200B;來協助
 
 通過檢查儲存選項的配置，確保ASRP已配置為預設提供程式。 預設情況下，儲存資源提供方是JSRP，而不是ASRP。
 
-在所有作者和發佈AEM例項上，請重新造訪「儲存組態控制台」或檢查AEM存放庫：
+在所有作者和發佈實例AEM上，重新訪問儲存配置控制台或檢查存AEM儲庫：
 
 * 在JCR中，如果[/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
