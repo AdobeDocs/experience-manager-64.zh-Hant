@@ -7,10 +7,11 @@ uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1235'
 ht-degree: 2%
 
 ---
@@ -27,7 +28,7 @@ ht-degree: 2%
 
 ## 使用JSON結構描述做為表單模型{#using-a-json-schema-as-form-model}
 
-AEM Forms支援使用現有的JSON結構描述來建立最適化表單。 此JSON結構描述組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合[v4規格](https://json-schema.org/draft-04/schema)。
+AEM Forms支援使用現有的JSON結構描述作為表單模型來建立最適化表單。 此JSON結構描述組織中後端系統產生或使用資料的結構。 您使用的JSON結構描述應符合[v4規格](https://json-schema.org/draft-04/schema)。
 
 使用JSON結構描述的主要功能包括：
 
@@ -49,7 +50,7 @@ JSON結構描述由簡單和複雜的元素類型組成。 這些元素具有向
    <td><p>具有enum和enumNames約束的字串屬性。</p> <p>語法、</p> <p> <code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"enum" : ["M", "F"]</code></p> <p><code>"enumNames" : ["Male", "Female"]</code></p> <p><code>}</code></p> <p> </p> </td> 
    <td><p>下拉式元件：</p> 
     <ul> 
-     <li>enumNames中列出的值將顯示在下拉框中。</li> 
+     <li>enumNames中列出的值會顯示在下拉方塊中。</li> 
      <li>枚舉中列出的值用於計算。</li> 
     </ul> </td> 
   </tr> 
