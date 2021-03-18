@@ -1,18 +1,19 @@
 ---
 title: 應用程式伺服器安裝的升級步驟
 seo-title: 應用程式伺服器安裝的升級步驟
-description: 瞭解如何升級透過應用程式伺服器部署的AEM例項。
-seo-description: 瞭解如何升級透過應用程式伺服器部署的AEM例項。
+description: 瞭解如何升級透過應用程AEM式伺服器部署的例項。
+seo-description: 瞭解如何升級透過應用程AEM式伺服器部署的例項。
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
+feature: 升級
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -20,9 +21,9 @@ ht-degree: 0%
 
 # 應用程式伺服器安裝的升級步驟{#upgrade-steps-for-application-server-installations}
 
-本節說明更新AEM for Application Server安裝所需遵循的程式。
+本節介紹為了更新應用程式伺服器安裝而需AEM要遵循的過程。
 
-此程式中的所有範例都使用JBoss做為應用程式伺服器，並暗示您已部署AEM的工作版本。 此程式旨在記錄從&#x200B;**AEM 5.6版到6.3**&#x200B;執行的升級。
+此過程中的所有示例都使用JBoss作為應用程式伺服器，並暗示您已部署了工作AEM版本。 此程式旨在記錄從&#x200B;**5.6版到AEM6.3**&#x200B;執行的升級。
 
 1. 首先，啟動JBoss。 在大多數情況下，您可以通過運行`standalone.sh`啟動指令碼，從終端機運行以下命令來執行此操作：
 
@@ -30,13 +31,13 @@ ht-degree: 0%
    jboss-install-folder/bin/standalone.sh
    ```
 
-1. 如果已部署AEM 5.6，請執行下列動作，檢查組合是否運作正常：
+1. 如AEM果已部署5.6，請執行下列動作，檢查組合是否運作正常：
 
    ```shell
    wget https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. 接著，取消部署AEM 5.6:
+1. 接下來，取AEM消部署5.6:
 
    ```shell
    rm jboss-install-folder/standalone/deployments/cq.war
@@ -88,13 +89,13 @@ ht-degree: 0%
 
 1. 接下來，您需要建立包含將與新升級實例一起使用的OSGi配置的資料夾。 更具體地說，需要在&#x200B;**crx-quickstart**&#x200B;下建立名為install的資料夾。
 
-1. 現在，請建立將與AEM 6.3搭配使用的節點儲存區和資料儲存區。通過在&#x200B;**crx-quickstart\install**&#x200B;下建立兩個名稱為以下檔案，可以執行此操作：
+1. 現在，請建立將與6.3搭配使用的節點AEM儲存區和資料儲存區。通過在&#x200B;**crx-quickstart\install**&#x200B;下建立兩個名稱為以下檔案，可以執行此操作：
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
-   這兩個檔案將設定AEM使用TarMK節點儲存區和檔案資料儲存區。
+   這兩個檔案將配AEM置為使用TarMK節點儲存和檔案資料儲存。
 
 1. 編輯配置檔案以使其可供使用。 更具體地說：
 
@@ -115,7 +116,7 @@ ht-degree: 0%
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. 您現在需要變更AEM 6.3 war檔案中的執行模式。 為此，請先建立暫存檔案夾，以容納AEM 6.3戰爭。 此示例中資料夾的名稱為&#x200B;**temp**。 複製war檔案後，從temp資料夾內運行以提取其內容：
+1. 您現在需要變更6.3 war檔案AEM中的執行模式。 為此，首先建立一個臨時資料夾，用於容納6.AEM3戰爭。 此示例中資料夾的名稱為&#x200B;**temp**。 複製war檔案後，從temp資料夾內運行以提取其內容：
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
