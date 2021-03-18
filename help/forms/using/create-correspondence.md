@@ -1,16 +1,17 @@
 ---
 title: 建立對應
 seo-title: 建立對應
-description: 在您建立信函範本之後，您可以使用它來管理資料、內容和附件，以建立AEM Forms中的對應。
-seo-description: 在您建立信函範本之後，您可以使用它來管理資料、內容和附件，以建立AEM Forms中的對應。
+description: 在您建立信函範本後，您可以使用它來管理資料、內容和附件，以建立AEM Forms的對應。
+seo-description: 在您建立信函範本後，您可以使用它來管理資料、內容和附件，以建立AEM Forms的對應。
 uuid: 72c06a81-65c8-4ddd-964d-91f0256a8f79
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3728'
 ht-degree: 0%
 
 ---
@@ -52,13 +53,13 @@ ht-degree: 0%
 
 1. 字母HTML預覽（行動表單預覽）會依預設開啟，「資料」索引標籤會聚焦在焦點。
 
-   如需行動表單及其支援功能的詳細資訊，請參閱[行動表單與PDF表單的功能區隔](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)。
+   如需行動表單及其支援功能的詳細資訊，請參閱[行動Forms與PDF forms的功能區隔](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)。
 
    有三個標籤：資料、內容和附件。 如果沒有資料元素（預留位置變數和版面欄位），則字母會直接在中開啟，並顯示「內容」索引標籤。 附件頁籤僅在附件存在或庫訪問被啟用時可用。
 
    >[!NOTE]
    >
-   >有關在字母預覽的HTML或PDF轉譯模式之間切換的詳細資訊，請參閱[更改字母的轉譯模式。 ](#changerenditionmode)如需有關Correpence Management和AEM中PDF支援的詳細資訊，請參閱[中止NPAPI瀏覽器外掛程式及其影響](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html)和[PDF表格至HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)。
+   >有關在字母預覽的HTML或PDF轉譯模式之間切換的詳細資訊，請參閱[更改字母的轉譯模式。 ](#changerenditionmode)如需有關「通信管理」和「PDF」支援的詳細資訊AEM，請參閱「中止NPAPI瀏覽器外掛程式及其影響](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html)和[HTML5Forms的PDF forms」。[](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)
 
 ### 輸入資料{#enterdata}
 
@@ -269,7 +270,7 @@ ht-degree: 0%
 
    進行必要的變更後，您可以從HTML5預覽中提交字母，或再次點選「預覽」以檢視平面化的PDF輸出。
 
-   如需HTML5表單與PDF表單之間差異的詳細資訊，請參閱[HTML5表單與PDF表單之間的功能區隔](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)。
+   如需HTML5表單與PDF forms之間差異的詳細資訊，請參閱[HTML5表單與PDF forms之間的功能區隔](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)。
 
 ## 儲存草稿並送出字母例項{#savingdrafts}
 
@@ -283,7 +284,7 @@ ht-degree: 0%
 
 只有在發佈例項上檢視字母時，才能儲存這類例項。 預設情況下，會關閉對實例的保存。 要啟用字母實例的保存，請執行以下步驟。
 
-1. 在AEM中，使用下列URL開啟您伺服器的Adobe Experience Manager Web Console設定：https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+1. 在中AEM，使用以下URL開啟伺服器的Adobe Experience ManagerWeb控制台配置：https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. 找到&#x200B;**[!UICONTROL Corresponce Management Configurations]** ，然後按一下它。
 1. 檢查&#x200B;**[!UICONTROL 管理Publish]**&#x200B;組態上的字母例項，然後按一下&#x200B;**[!UICONTROL 儲存]**。
 
@@ -295,25 +296,25 @@ ht-degree: 0%
 
 ### 遠程保存{#remote-save}
 
-此選項適用於擔心在發佈例項上儲存使用者資料的使用者，通常在公司防火牆外。 當開啟遠端儲存時，字母例項不會儲存在發佈例項上，但是會遠端儲存在透過LiveCycle Client SDK設定指定的處理作者上。
+此選項適用於擔心在發佈例項上儲存使用者資料的使用者，通常在公司防火牆外。 當開啟遠端儲存時，字母例項不會儲存在發佈例項上，但是會遠端儲存在透過LiveCycle用戶端SDK組態指定的處理作者上。
 
 #### 啟用遠程保存{#enable-remote-save}
 
-1. 在AEM中，使用下列URL開啟您伺服器的Adobe Experience Manager Web Console設定：`https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. 在中AEM，使用以下URL開啟伺服器的Adobe Experience ManagerWeb控制台配置：`https://<server>:<port>/<contextpath>/system/console/configMgr`
 1. 搜索&#x200B;**[!UICONTROL Corresponce Management Configurations]** ，然後按一下。
 1. 找到&#x200B;**[!UICONTROL 遠程保存]**&#x200B;配置並選中它，然後按一下&#x200B;**[!UICONTROL 保存]**。
 
 #### 指定處理作者設定{#specify-processing-author-settings}
 
-1. 在AEM中，使用下列URL開啟您伺服器的Adobe Experience Manager Web Console設定：`https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. 在中AEM，使用以下URL開啟伺服器的Adobe Experience ManagerWeb控制台配置：`https://<server>:<port>/<contextpath>/system/console/configMgr`
 
-   ![Adobe Experience Manager Web Console設定](assets/2configmanager.png)
+   ![Adobe Experience ManagerWeb控制台配置](assets/2configmanager.png)
 
-1. 在本頁面上，找出「Adobe LiveCycle Client SDK Configuration」，然後按一下以展開它。
+1. 在本頁中，找到「AdobeLiveCycle客戶端SDK配置」並按一下以展開它。
 
-1. 在「處理伺服器URL」中，輸入LiveCycle伺服器的名稱，提供登入資訊，然後按一下「儲存&#x200B;**」。**
+1. 在處理伺服器URL中，輸入LiveCycle伺服器的名稱，提供登錄資訊，然後按一下&#x200B;**保存**。
 
-   ![輸入LiveCycle伺服器的名稱和登入資訊](assets/3configmanager.png)
+   ![輸入LiveCycle伺服器的名稱和登錄資訊](assets/3configmanager.png)
 
 1. 如有必要，請設定您要存取伺服器的使用者名稱和密碼。
 
@@ -326,7 +327,7 @@ ht-degree: 0%
 
 ## 字母預覽的轉譯模式：行動表單預覽和PDF預覽{#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms Correponse Management會在「建立對應UI」中將字母顯示為HTML。 不過，「對應管理」仍支援回復為PDF預覽，而非HTML預覽。 如需在HTML和PDF預覽模式之間切換的詳細資訊，請參閱[變更letter](#changerenditionmode)的轉譯模式。
+AEM Forms通訊管理會在「建立通訊UI」中將字母顯示為HTML。 不過，「對應管理」仍支援回復為PDF預覽，而非HTML預覽。 如需在HTML和PDF預覽模式之間切換的詳細資訊，請參閱[變更letter](#changerenditionmode)的轉譯模式。
 
 以下是HTML和PDF預覽的優點和功能。
 
@@ -342,7 +343,7 @@ AEM Forms Correponse Management會在「建立對應UI」中將字母顯示為HT
 * **分頁符**:在PDF預覽中，您可以確切檢視字母中的分頁符號如何影響其輸出。
 * **最終預覽**:在PDF預覽中，您可以檢視字母的確切格式和外觀，因為字母會出現在其輸出中。
 
-如需PDF表單中指令碼支援的詳細資訊，請參閱[指令碼支援](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)。
+有關PDF forms語中指令碼支援的資訊，請參見[指令碼支援](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)。
 
 如需HTML5表單中指令碼支援的詳細資訊，請參閱[HTML5表單的指令碼支援](/help/forms/using/scripting-support.md)。
 
@@ -356,5 +357,5 @@ AEM Forms Correponse Management會在「建立對應UI」中將字母顯示為HT
 
 1. 前往`https://[system]:[port]/system/console/configMgr`並視需要以管理員身分登入。
 1. 轉至「**[!UICONTROL 對應管理配置]** > **[!UICONTROL 轉譯類型]**」，然後選擇「**HTML轉譯**」（預設）或「**PDF轉譯**」。
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
