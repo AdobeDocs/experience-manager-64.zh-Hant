@@ -1,30 +1,31 @@
 ---
-title: OSGi群組和權限上的AEM Forms
-seo-title: OSGi群組和權限上的AEM Forms
-description: 指派使用者至群組以管理OSGi上的AEM Forms
-seo-description: 指派使用者至群組以管理OSGi上的AEM Forms
+title: AEM Forms論OSGi集團與特權
+seo-title: AEM Forms論OSGi集團與特權
+description: 指派使用者至群組，以在OSGi上管理AEM Forms
+seo-description: 指派使用者至群組，以在OSGi上管理AEM Forms
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
+role: 管理員
 translation-type: tm+mt
-source-git-commit: f02fde7583da87d48bf72bf569762e9d604d25ce
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '273'
+ht-degree: 2%
 
 ---
 
 
-# OSGi群組和權限上的AEM Forms {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms關於OSGi組和權限{#aem-forms-on-osgi-groups-and-privileges}
 
-指派使用者至群組以管理OSGi上的AEM Forms
+指派使用者至群組，以在OSGi上管理AEM Forms
 
-您可以[建立群組](/help/sites-administering/user-group-ac-admin.md#group-administration)，並將原則和[使用者](/help/sites-administering/user-group-ac-admin.md#user-administration)指派給AEM中的群組。 這些原則可控制屬於群組的使用者的權限。
+您可以[建立組](/help/sites-administering/user-group-ac-admin.md#group-administration)，並將策略和[用戶](/help/sites-administering/user-group-ac-admin.md#user-administration)分配給中的組AEM。 這些原則可控制屬於群組的使用者的權限。
 
-在您安裝[AEM Forms附加元件套件](/help/forms/using/installing-configuring-aem-forms-osgi.md)後，本文中提及的群組（例如forms-user和forms-power-user）就會自動可供指派。 下表列出使用者可根據群組指派，對OSGi上的AEM Forms執行的工作：
+在安裝[AEM Forms附加套件](/help/forms/using/installing-configuring-aem-forms-osgi.md)後，本文中提及的群組（例如forms-user和forms-power-user）會自動可供指派。 下表列出了用戶可以根據組分配在OSGi上為AEM Forms執行的任務：
 
 <table> 
  <tbody>
@@ -38,7 +39,7 @@ ht-degree: 1%
     <ul> 
      <li>建立、預覽、發佈及提交最適化表單</li> 
      <li>建立、預覽和發佈互動式通訊和檔案片段</li> 
-     <li>上傳資產至AEM例項</li> 
+     <li>上傳資產至例AEM項</li> 
      <li>建立主題</li> 
     </ul> </td> 
   </tr>
@@ -95,7 +96,7 @@ ht-degree: 1%
    <td>workflow-user</td> 
    <td>
     <ul> 
-     <li>使用AEM收件匣應用程式</li> 
+     <li>使用收件AEM匣應用程式</li> 
      <li>管理工作流程例項</li> 
     </ul> </td> 
   </tr>
