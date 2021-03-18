@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
+feature: 升級
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,16 +23,16 @@ ht-degree: 2%
 
 ## 概覽 {#overview}
 
-此功能可讓您偵測使用中的模式，以檢查現有AEM例項是否可升級：
+此功能可讓您偵測使用AEM的模式，以檢查現有例項是否可升級：
 
 1. 違反特定規則，並在受升級影響或覆寫的區域執行
-1. 使用AEM 6.x功能或API，在AEM 6.4上無法向後相容，而且升級後可能會中斷。
+1. 使用AEM6.x功能或API，在6.4上無法向後相容，AEM且升級後可能會中斷。
 
-這可作為對升級至AEM 6.4所涉及的開發工作的評估。
+這可作為對升級至6.4所涉發展工作的AEM評估。
 
 ## 設定方法 {#how-to-set-up}
 
-模式偵測器會以[一個套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)的形式個別發行，適用於以AEM 6.5升級為目標的任何來源AEM版本，從6.1到6.5。 它可以使用[軟體包管理器](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/package-manager.html)安裝。
+模式偵測器會以[一個套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)的形式個別發佈，適用於6.1到6.5的任AEM何來源版本，以AEM6.5為目標。 它可以使用[軟體包管理器](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)安裝。
 
 ## 使用方式 {#how-to-use}
 
@@ -48,7 +49,7 @@ ht-degree: 2%
 
 * **透過Felix Inventory主控台：**
 
-1. 瀏覽至：https://<i></i>serveraddress:serverport/system/console/configMgr
+1. 瀏覽至AEMWeb Console:https://<i></i>serveraddress:serverport/system/console/configMgr
 1. 選擇&#x200B;**狀態——模式檢測器**，如下圖所示：
 
    ![screapth-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
