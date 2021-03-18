@@ -5,16 +5,19 @@ audience: end-user
 user-guide-title: AEM 6.4 Managing 使用指南
 breadcrumb-title: Managing 指南
 user-guide-description: 了解如何管理 AEM 專案。
+feature-set: Experience Manager Sites
+feature: 部署
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 41%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# AEM 6.4 Managing 使用指南  {#managing}
+# AEM 6.4 Managing 使用指南 {#managing}
 
 + [管理使用手冊](home.md)
 + 管理——最佳實踐檢查清單{#managing-best-practices-checklist}
