@@ -10,10 +10,11 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '166'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 1%
 
 Designer提供獨立安裝程式，也隨附於WorkBench。 如果您使用Designer的獨立安裝程式，請依照下列步驟進行：
 
-1. 請連絡Adobe支援以下載Designer安裝程式。
+1. 請聯絡Adobe支援以下載Designer安裝程式。
 
    >[!NOTE]
    >
