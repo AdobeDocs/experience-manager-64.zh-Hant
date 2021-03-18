@@ -1,17 +1,18 @@
 ---
 title: 建立最適化表單
 seo-title: 建立最適化表單
-description: 如何使用AEM Forms建立最適化表單。 最適化表單是互動式HTML5表單，可簡化資訊收集和處理。
-seo-description: 如何使用AEM Forms建立最適化表單。 最適化表單是互動式HTML5表單，可簡化資訊收集和處理。
+description: 如何使用AEM Forms建立調適性表單。 最適化表單是互動式HTML5表單，可簡化資訊收集和處理。
+seo-description: 如何使用AEM Forms建立調適性表單。 最適化表單是互動式HTML5表單，可簡化資訊收集和處理。
 uuid: 444f461a-9e88-4385-b5ee-e985067ab7bc
 content-type: reference
 topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2044'
 ht-degree: 0%
 
 ---
@@ -23,15 +24,15 @@ ht-degree: 0%
 
 請依照下列步驟建立最適化表單。
 
-1. 在`https://[server]:[port]/<custom-context-if-any>.`存取AEM Forms Author例項
+1. 在`https://[server]:[port]/<custom-context-if-any>.`存取AEM Forms作者實例
 
    ```
    
    ```
 
-1. 在AEM登入頁面上輸入您的認證。
+1. 在登入頁面上輸AEM入認證。
 
-   登入後，在左上角點選&#x200B;**[!UICONTROL 「Adobe Experience Manage >表單>表單與檔案」]**。
+   登入後，在左上角點選&#x200B;**[!UICONTROL Adobe Experience Manage >Forms>Forms與檔案]**。
 
    >[!NOTE]
    >
@@ -73,7 +74,7 @@ ht-degree: 0%
 
 ## 根據表單資料模型{#fdm}建立最適化表單
 
-[AEM Forms資料整](/help/forms/using/data-integration.md) 合可讓您整合多個資料來源，並將其實體和服務整合在一起，以建立表單資料模型。它是JSON結構描述的擴充功能。 您可以使用表單資料模型來建立最適化表單。 在表單資料模型中配置的實體或資料模型對象可用作表單創作的資料模型對象。 這些資料系結至個別的資料來源，用來預先填寫表單，並將提交的資料寫回個別的資料來源。 您也可以使用自適應表單規則來叫用表單資料模型中設定的服務。
+[AEM Forms資](/help/forms/using/data-integration.md) 料整合可讓您整合多個資料來源，並將其實體與服務整合在一起，以建立表單資料模型。它是JSON結構描述的擴充功能。 您可以使用表單資料模型來建立最適化表單。 在表單資料模型中配置的實體或資料模型對象可用作表單創作的資料模型對象。 這些資料系結至個別的資料來源，用來預先填寫表單，並將提交的資料寫回個別的資料來源。 您也可以使用自適應表單規則來叫用表單資料模型中設定的服務。
 
 要使用表單資料模型建立自適應表單：
 
@@ -97,12 +98,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[在您開始建立以表](/help/forms/using/get-xdp-pdf-documents-aem.md) 單範本為基礎的最適化表單之前，請先將XFA表單範本上傳至AEM表單。
+>[在您開始建立以表](/help/forms/using/get-xdp-pdf-documents-aem.md) 單範本為基礎的最適化表單之前，請先將XFA表單範本上傳至AEM Forms。
 
 執行下列動作，將XFA表單範本用作最適化表單的表單模型：
 
 1. 在&#x200B;**[!UICONTROL 添加屬性]**&#x200B;頁面上，開啟&#x200B;**[!UICONTROL 表單模型]**&#x200B;頁籤。
-1. 在「表單模型」頁籤的下拉清單中，選擇&#x200B;**[!UICONTROL 表單模板]**。 所有透過AEM Forms UI上傳至儲存庫的表單範本都會列在清單中供選取。 從清單中選擇模板。
+1. 在「表單模型」頁籤的下拉清單中，選擇&#x200B;**[!UICONTROL 表單模板]**。 所有通過AEM FormsUI上傳到儲存庫的表單模板都將列出以供選擇。 從清單中選擇模板。
 
    ![將XFA表單範本與最適化表單建立關聯](assets/form_model_xfa_associate.png)
    **圖：選** *擇表單模板*
@@ -148,13 +149,13 @@ XML和JSON結構描述資料由組織中的後端系統產生或使用的結構�
 
 ## 最適化表單範本{#adaptive-form-templates}
 
-範本提供基本結構並定義最適化表單的外觀（版面和樣式）。 它具有預先格式化的元件，其中包含某些屬性和內容結構。 AEM Forms現成可用，提供一些最適化表單範本。 若要取得包含進階範本的完整範本套件，您必須安裝AEM Forms附加元件套件。 如需詳細資訊，請參閱「安裝AEM Forms附加元件套件](/help/forms/using/installing-configuring-aem-forms-osgi.md)」。[
+範本提供基本結構並定義最適化表單的外觀（版面和樣式）。 它具有預先格式化的元件，其中包含某些屬性和內容結構。 現成可用的AEM Forms提供一些最適化表單範本。 若要取得包含進階範本的完整範本套件，您必須安裝AEM Forms附加元件套件。 有關詳細資訊，請參閱[安裝AEM Forms附加軟體包](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
 
 此外，您也可以使用範本編輯器來建立自己的範本。 有關使用模板的詳細資訊，請參閱[最適化表單模板](/help/forms/using/template-editor.md)。
 
 >[!NOTE]
 >
->當您開啟使用進階範本建立的最適化表單進行編輯時，會出現錯誤訊息。 進階範本有「簽名步驟」元件，預設會啟用Adobe Sign。 建立並選取[Adobe Sign雲端設定](/help/forms/using/adobe-sign-integration-adaptive-forms.md)和[設定簽署者](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)以解決錯誤。
+>當您開啟使用進階範本建立的最適化表單進行編輯時，會出現錯誤訊息。 進階範本有「簽名步驟」元件，預設會啟用Adobe Sign。 建立並選取[Adobe Sign雲端組態](/help/forms/using/adobe-sign-integration-adaptive-forms.md)和[組態簽署者](/help/forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)以解決錯誤。
 
 ## 編輯最適化表單{#edit-form-model}的表單模型屬性
 
@@ -208,6 +209,6 @@ XML和JSON結構描述資料由組織中的後端系統產生或使用的結構�
 
    >[!NOTE]
    >
-   >若要自動儲存選項以供匿名使用者使用，請確定您已設定Forms Common Configuration Service，讓所有使用者都能預覽、驗證和簽署表格。
+   >若要自動儲存選項以供匿名使用者使用，請確定您已設定「Forms通用組態服務」，讓所有使用者都能預覽、驗證和簽署表格。
    >
-   >若要設定服務，請前往位於`https://[server]:[host]/system/console/configMgr`的AEM Web Console設定，並編輯&#x200B;**[!UICONTROL Forms Common Configuration Service]**，以選擇&#x200B;**[!UICONTROL Allow]**&#x200B;欄位中的&#x200B;**[!UICONTROL All Users]**&#x200B;選項，並儲存設定。
+   >要配置服務，請轉至位於`https://[server]:[host]/system/console/configMgr`的AEMWeb控制台配置並編輯&#x200B;**[!UICONTROL Forms公共配置服務]**，以在&#x200B;**[!UICONTROL 允許]**&#x200B;欄位中選擇&#x200B;**[!UICONTROL 所有用戶]**&#x200B;選項，並保存配置。
