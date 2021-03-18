@@ -7,11 +7,12 @@ uuid: aa261e65-a1ec-402b-80de-0ba8a294e315
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 35532245929f2e404a96425e4710e911e9ce5b40
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 0%
+source-wordcount: '1547'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 當使用者按一下最適化表單上的「提交」按鈕時，會觸發提交動作。 您可以在最適化表單上設定提交動作。 最適化表單提供一些現成可用的提交動作。 您可以複製並延伸預設的提交動作，以建立您自己的提交動作。 不過，根據您的要求，您可以撰寫並註冊自己的提交動作，以處理提交表單中的資料。
 
-當表單預先填入或送出時，提交的資料會透過AEM路由，以對資料進行中介格式的按摩。 資料不會儲存在AEM例項中，除非最適化表單使用Adobe Sign、驗證、表單入口網站草稿或提交，或AEM工作流程
+當表單預先填入或提交時，提交的資料會經過路由，AEM以便資料按摩至中介格式。 除非最適化表單使AEM用Adobe Sign、驗證、表單入口網站草稿或提交或工作流程，否則資料不會儲存在例AEM項上
 
 您可以在側欄的「最適化表單容器」屬性的&#x200B;**[!UICONTROL Submission]**&#x200B;區段中設定提交動作。
 
@@ -34,10 +35,10 @@ ht-degree: 0%
 * 提交到REST端點
 * 傳送電子郵件
 * 透過電子郵件傳送PDF
-* 叫用表單工作流程
+* 叫用Forms Workflow
 * 使用表單資料模型提交
-* 表單入口網站提交動作
-* 叫用AEM工作流程
+* Forms門戶網站提交操作
+* 叫用工AEM作流程
 
 >[!NOTE]
 >
@@ -55,13 +56,13 @@ ht-degree: 0%
 
 ## 提交到REST端點{#submit-to-rest-endpoint}
 
-**[!UICONTROL 提交到REST端點]**&#x200B;提交選項將表單中填充的資料傳遞到配置的確認頁，作為HTTP GET請求的一部分。 您可以新增要請求的欄位名稱。 請求的格式為：
+**[!UICONTROL 提交到REST端點]**&#x200B;提交選項將表單中填充的資料傳遞到配置的確認頁，作為HTTPGET請求的一部分。 您可以新增要請求的欄位名稱。 請求的格式為：
 
 `{fieldName}={request parameter name}`
 
 如下圖所示，`param1`和`param2`會以參數的形式傳遞，其值會從&#x200B;**[!UICONTROL textbox]**&#x200B;和&#x200B;**[!UICONTROL numericbox]**&#x200B;欄位複製，以用於下一個動作。
 
-您也可以&#x200B;**[!UICONTROL 啟用POST請求]**&#x200B;並提供張貼請求的URL。 若要將資料提交至代管表單的AEM伺服器，請使用與AEM伺服器根路徑對應的相對路徑。 例如，/content/forms/af/SampleForm.html。 若要將資料送出至任何其他伺服器，請使用絕對路徑。
+您也可以&#x200B;**[!UICONTROL 啟用POST請求]**，並提供URL以張貼請求。 若要將資料提交AEM至代管表單的伺服器，請使用與伺服器根路徑對應的相AEM對路徑。 例如，/content/forms/af/SampleForm.html。 若要將資料送出至任何其他伺服器，請使用絕對路徑。
 
 ![配置Rest端點提交操作](assets/action-config.png)
 
@@ -108,7 +109,7 @@ ht-degree: 0%
 
 ## 叫用表單工作流程{#invoke-a-forms-workflow}
 
-**[!UICONTROL 「提交至表單」工作流程]**&#x200B;提交選項會將資料xml和檔案附件（如果有的話）傳送至現有的Adobe LiveCycle或AEM Forms on JEE程式。
+**[!UICONTROL 提交到Forms工作流]**&#x200B;提交選項將資料xml和檔案附件（如果有）發送到現有AdobeLiveCycle或AEM Forms的JEE進程。
 
 有關如何配置「提交至表單」工作流提交操作的資訊，請參閱[使用表單工作流](/help/forms/using/submit-form-data-livecycle-process.md)提交和處理表單資料。
 
@@ -118,19 +119,19 @@ ht-degree: 0%
 
 此外，您也可以使用表單資料模型和記錄檔案(DoR)將表單附件提交至資料來源。
 
-如需表單資料模型的詳細資訊，請參閱[AEM Forms Data Integration](/help/forms/using/data-integration.md)。
+如需表單資料模型的詳細資訊，請參閱[AEM Forms資料整合](/help/forms/using/data-integration.md)。
 
-## 表單入口網站提交動作{#forms-portal-submit-action}
+## Forms門戶網站提交操作{#forms-portal-submit-action}
 
-**[!UICONTROL Forms Portal Submit Action]**&#x200B;選項可讓表單資料透過AEM Forms入口網站提供。
+**[!UICONTROL Forms門戶提交操作]**&#x200B;選項使表單資料可通過AEM Forms門戶獲得。
 
-如需Forms Portal和提交動作的詳細資訊，請參閱[草稿與提交元件](/help/forms/using/draft-submission-component.md)。
+有關Forms門戶網站和提交行動的詳細資訊，請參閱[草稿和提交部分](/help/forms/using/draft-submission-component.md)。
 
-## 叫用AEM Workflow {#invoke-an-aem-workflow}
+## 叫用AEM工作流{#invoke-an-aem-workflow}
 
-**[!UICONTROL 叫用AEM Workflow]**&#x200B;送出動作會將最適化表單與AEM Workflow建立關聯。 提交表單時，相關工作流程會自動在處理節點上啟動。 此外，它還會將資料檔案、附件和記錄檔案（如果適用）放在工作流程的裝載位置。
+**[!UICONTROL 叫用Workflow&lt;a1/AEM>提交操作將自適應表單與WorkflowAEM關聯。]**&#x200B;提交表單時，相關工作流程會自動在處理節點上啟動。 此外，它還會將資料檔案、附件和記錄檔案（如果適用）放在工作流程的裝載位置。
 
-在使用「叫用AEM Workflow ]**提交動作」之前，請先[設定AEM DS設定](/help/forms/using/configuring-the-processing-server-url-.md)。**[!UICONTROL &#x200B;如需有關建立AEM工作流程的詳細資訊，請參閱「OSGi](/help/forms/using/aem-forms-workflow.md)的表單導向工作流程」。[
+在使用&#x200B;**[!UICONTROL 叫用AEMWorkflow]**&#x200B;提交操作之前，[配置AEMDS設定](/help/forms/using/configuring-the-processing-server-url-.md)。 如需有關建立工作AEM流程的詳細資訊，請參閱OSGi](/help/forms/using/aem-forms-workflow.md)上的[表單導向工作流程。
 
 ## Adaptive Form {#server-side-revalidation-in-adaptive-form}中的伺服器端重新驗證
 
@@ -157,7 +158,7 @@ ht-degree: 0%
 
 ### 支援驗證運算式{#supporting-custom-functions-in-validation-expressions-br}中的自訂函式
 
-有時，對於&#x200B;**複雜的驗證規則**，完全的驗證指令碼駐留在自定義函式中，並且作者從欄位驗證表達式中調用這些自定義函式。 若要讓此自訂函式館在執行伺服器端驗證時已知可用，表單作者可在Adaptive Form Container屬性的&#x200B;**[!UICONTROL Basic]**&#x200B;標籤下設定AEM用戶端程式庫的名稱，如下所示。
+有時，對於&#x200B;**複雜的驗證規則**，完全的驗證指令碼駐留在自定義函式中，並且作者從欄位驗證表達式中調用這些自定義函式。 為了在執行伺服器端驗證時使此自定義函式館為已知和可用，表單作者可以在Adaptive Form Container屬性的&#x200B;**[!UICONTROL Basic]**&#x200B;頁籤下配置客戶端庫的名稱，如下所示。
 
 ![支援驗證運算式中的自](assets/clientlib-cat.png)
 **訂函式圖：** *支援驗證運算式中的自訂函式*
@@ -166,6 +167,6 @@ ht-degree: 0%
 
 ## 提交操作{#error-handling-on-submit-action}時出錯處理
 
-作為AEM安全性與強化准則的一部分，請設定自訂錯誤頁面，例如404.jsp和500.jsp。 在提交表單404或500錯誤時，會呼叫這些處理常式。 在「發佈」節點上觸發這些錯誤代碼時，也會調用處理程式。
+作為安全性和強AEM化准則的一部分，請設定自訂錯誤頁面，例如404.jsp和500.jsp。 在提交表單404或500錯誤時，會呼叫這些處理常式。 在「發佈」節點上觸發這些錯誤代碼時，也會調用處理程式。
 
 如需詳細資訊，請參閱[自訂錯誤處理常式](/help/sites-developing/customizing-errorhandler-pages.md)所顯示的頁面。
