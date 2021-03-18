@@ -7,10 +7,11 @@ page-status-flag: de-activated
 uuid: 62f5222c-c787-46be-95fa-a701aa0e6115
 topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '969'
 ht-degree: 0%
 
 ---
@@ -37,12 +38,12 @@ ht-degree: 0%
 
 網站為不同的客戶提供多種產品。 客戶瀏覽入口網站，選擇並訂購產品。 每位客戶都會建立帳戶並提供運費和帳單地址。 現有客戶薩拉·羅斯正在尋找將她的送貨地址添加到網站上。 該網站提供線上表單，以新增和更新運送地址。
 
-網站會在Adobe Experience Manager(AEM)上執行，並使用AEM Forms擷取和處理資料。 地址添加和更新表單是自適應表單。 該網站將客戶詳細資料儲存在資料庫中。 他們使用地址添加和更新表單來檢索和顯示可用地址。 他們還使用自適應表單來接受更新和新地址。
+該網站在Adobe Experience Manager(AEM)上執行，並使用AEM Forms擷取和處理資料。 地址添加和更新表單是自適應表單。 該網站將客戶詳細資料儲存在資料庫中。 他們使用地址添加和更新表單來檢索和顯示可用地址。 他們還使用自適應表單來接受更新和新地址。
 
 ### 必備條件 {#prerequisite}
 
-* 設定AEM作者例項。
-* 在作者例項上安裝[AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
+* 設定作AEM者例項。
+* 在作者實例上安裝[AEM Forms附加元件](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
 * 從資料庫提供程式獲取JDBC資料庫驅動程式（JAR檔案）。 教程中的示例基於MySQL資料庫，並使用Oracle的[MySQL JDBC資料庫驅動程式](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
 * 設定包含客戶資料的資料庫，其中欄位如下。 建立最適化表單並非必要資料庫。 本教學課程使用資料庫來顯示AEM Forms的表單資料模型和永續性功能。
@@ -53,7 +54,7 @@ ht-degree: 0%
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
-最適化表單是新一代、吸引人、回應速度快、動態性強、自適應性強的表單。 使用可調式表單，您可以提供個人化、針對性的體驗。 AEM Forms提供拖放WYSIWYG編輯器，以建立最適化表單。 有關最適化表單的詳細資訊，請參閱[製作最適化表單的簡介](/help/forms/using/introduction-forms-authoring.md)。
+最適化表單是新一代、吸引人、回應速度快、動態性強、自適應性強的表單。 使用可調式表單，您可以提供個人化、針對性的體驗。 AEM Forms提供拖放式WYSIWYG編輯器，以建立最適化表單。 有關最適化表單的詳細資訊，請參閱[製作最適化表單的簡介](/help/forms/using/introduction-forms-authoring.md)。
 
 目標：
 
@@ -68,7 +69,7 @@ ht-degree: 0%
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-表單資料模型允許將自適應表單連接至不同的資料來源。 例如，AEM使用者設定檔、REST風格的web services、SOAP架構的web services、OData服務和關係式資料庫。 表單資料模型是連接資料來源中可用之商業實體和服務的統一資料表示模式。 您可以使用具有自適應表單的表單資料模型來擷取、更新、刪除並新增資料至連接的資料來源。
+表單資料模型允許將自適應表單連接至不同的資料來源。 例如，AEM用戶配置檔案、REST風格的Web服務、基於SOAP的Web服務、OData服務和關係資料庫。 表單資料模型是連接資料來源中可用之商業實體和服務的統一資料表示模式。 您可以使用具有自適應表單的表單資料模型來擷取、更新、刪除並新增資料至連接的資料來源。
 
 目標：
 
@@ -116,13 +117,13 @@ ht-degree: 0%
 * 安裝Calvin SDK
 * 建立變更地址表單的測試套件和測試案例
 
-若要瞭解SDK，請參閱[使用自動測試搭配AEM Adaptive Form](/help/forms/using/calvin.md)。
+若要瞭解SDK，請參閱[使用自動測試與AEM最適化表單](/help/forms/using/calvin.md)。
 
 ## 步驟6:發佈最適化表單{#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-您可以將最適化表單發佈為單機表單（單頁應用程式）、包含在AEM [網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[Forms Portal](/help/forms/using/introduction-publishing-forms.md)在AEM網站上清單。
+您可以將最適化表單發佈為獨立表單（單頁應用程式）、包含在AEM[網站頁面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[Forms入口網站&lt;a3/AEM>在網站上列出。](/help/forms/using/introduction-publishing-forms.md)
 
 目標：
 
