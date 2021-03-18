@@ -1,17 +1,18 @@
 ---
 title: '製作最適化表單簡介 '
 seo-title: '製作最適化表單簡介 '
-description: AEM Forms提供簡單易用且功能強大的介面，讓您製作最適化表單。 它提供許多可用來建立表單的元件和工具。
-seo-description: AEM Forms提供簡單易用且功能強大的介面，讓您製作最適化表單。 它提供許多可用來建立表單的元件和工具。
+description: AEM Forms提供簡單易用且功能強大的介面，以製作最適化表單。 它提供許多可用來建立表單的元件和工具。
+seo-description: AEM Forms提供簡單易用且功能強大的介面，以製作最適化表單。 它提供許多可用來建立表單的元件和工具。
 uuid: 07ff8e79-daf7-4608-9171-91854619cc0b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3076'
+source-wordcount: '3078'
 ht-degree: 2%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 2%
 
 ## 概覽 {#overview}
 
-最適化表單可讓您建立引人入勝、互動式、動態化和最適化的表單。 AEM Forms提供直覺式使用者介面和立即可用的元件，以建立和使用最適化表單。 您可以選擇基於表單模型或模式或不使用表單模型建立自適應表單。 務必謹慎選擇不僅符合您要求，而且還能擴展您現有的基礎設施投資和資產的表單模型。 您可以從下列選項中選擇以建立最適化表單：
+最適化表單可讓您建立引人入勝、互動式、動態化和最適化的表單。 AEM Forms提供直覺式使用者介面和現成可用的元件，以建立和使用最適化表單。 您可以選擇基於表單模型或模式或不使用表單模型建立自適應表單。 務必謹慎選擇不僅符合您要求，而且還能擴展您現有的基礎設施投資和資產的表單模型。 您可以從下列選項中選擇以建立最適化表單：
 
 * **使用表單資料模型**
    [資料](/help/forms/using/data-integration.md) 整合可讓您將來自不同資料來源的實體和服務整合到表單資料模型中，以便用來建立最適化表單。如果要建立的自適應表單涉及從多個資料源中讀取和寫入資料，請選擇表單資料模型。
@@ -64,7 +65,7 @@ XML和JSON結構描述組織中後端系統產生或使用資料的結構。您�
 
 * 檢視表單內容，例如面板、元件、欄位和版面。
 * 編輯元件屬性。
-* 在您的AEM數位資產管理(DAM)儲存庫中搜尋、檢視和使用資產。
+* 在您的數位資產管理(DAM)儲存AEM庫中搜尋、檢視和使用資產。
 * 在表格上新增元件。
 
    ![側欄](assets/sidebar-comps-2.png)
@@ -110,7 +111,7 @@ XML和JSON結構描述組織中後端系統產生或使用資料的結構。您�
   </tr> 
   <tr> 
    <td>Adobe Sign 區塊</td> 
-   <td>使用Adobe Sign簽署時，新增包含預留位置的文字區塊，以填入欄位。</td> 
+   <td>使用Adobe Sign在簽署時，新增包含要填入欄位預留位置的文字區塊。</td> 
   </tr> 
   <tr> 
    <td>按鈕</td> 
@@ -154,7 +155,7 @@ XML和JSON結構描述組織中後端系統產生或使用資料的結構。您�
   </tr> 
   <tr> 
    <td>檔案附件</td> 
-   <td><p>新增按鈕，讓使用者瀏覽支援檔案並附加至表單。</p> <p><strong>注意： </strong>「檔案附件」元件支援預先定義的一組檔案格式，其格式為適用於Adobe Sign的最適化表單。如需詳細資訊，請參閱<a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">支援的檔案格式</a>。</p> </td> 
+   <td><p>新增按鈕，讓使用者瀏覽支援檔案並附加至表單。</p> <p><strong>注意： </strong>「檔案附件」元件支援為Adobe Sign啟用的自適應表單中預定義的一組檔案格式。如需詳細資訊，請參閱<a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">支援的檔案格式</a>。</p> </td> 
   </tr> 
   <tr> 
    <td>檔案附件清單</td> 
@@ -297,11 +298,11 @@ XML和JSON結構描述組織中後端系統產生或使用資料的結構。您�
 * 在元件屬性中以`{value}={text}`格式指定單選按鈕和複選框項的值。
 * 預設情況下，檔案附件元件允許用戶僅附加一個檔案。 不過，您可以配置元件屬性以支援多個附件。 此外，如果用戶以相同的檔案名附加了多個檔案，則附件可能會導致一些問題。 因此，建議在表單提交時，為每個已提交附件建立唯一的標識符。 若要這麼做：
 
-   1. 在您的AEM Forms伺服器上，導覽至&#x200B;**[!UICONTROL Adobe Experience Manager >工具>作業> Web Console]**。
-   1. 查找並點選&#x200B;**[!UICONTROL Adaptive Forms Configuration Service]**。
-   1. 在Adaptive Forms Configuration Service對話框中，啟用&#x200B;**[!UICONTROL 將檔案名設定為唯一]**。 依預設會停用。
+   1. 在您的AEM Forms伺服器上，導航至&#x200B;**[!UICONTROL Adobe Experience Manager>工具>操作> Web控制台]**。
+   1. 查找並點選&#x200B;**[!UICONTROL AdaptiveForms配置服務]**。
+   1. 在「最適化Forms配置服務」對話框中，啟用&#x200B;**[!UICONTROL 使檔案名唯一]**。 依預設會停用。
 
-* 若要讓使用者使用Safari瀏覽器附加PDF，請確定&#x200B;**[!UICONTROL application/pdf]**&#x200B;已新增至「檔案附件」元件的「支援的檔案類型」屬性。 使用舊版AEM Forms建立的最適化表單可能包含&#x200B;**[!UICONTROL .pdf]**，而不是「支援的檔案類型」屬性中的&#x200B;**[!UICONTROL application/pdf]**。
+* 若要讓使用者使用Safari瀏覽器附加PDF，請確定&#x200B;**[!UICONTROL application/pdf]**&#x200B;已新增至「檔案附件」元件的「支援的檔案類型」屬性。 使用舊版AEM Forms建立的最適化表單在「支援的檔案類型」屬性中可包含&#x200B;**[!UICONTROL .pdf]**，而非&#x200B;**[!UICONTROL application/pdf]**。
 
 有關最適化表單的更多最佳做法，請參閱[使用最適化表單的最佳做法](/help/forms/using/adaptive-forms-best-practices.md)。
 
