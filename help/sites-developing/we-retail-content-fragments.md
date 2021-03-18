@@ -1,7 +1,7 @@
 ---
 title: 在We.Retail中試用內容片段
 seo-title: 在We.Retail中試用內容片段
-description: 'null'
+description: 在We.Retail中試用內容片段
 seo-description: 'null'
 uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '459'
 ht-degree: 5%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 # 在We.Retail中試用內容片段{#trying-out-content-fragments-in-we-retail}
 
-內容片段可讓您建立不受通道影響的內容，以及（可能是特定通道的）變化。 **We.Retail** （如AEM的現成可用例項所提供）提供了Lofotenas的殘片 **Arctic Surfing** （北極衝浪）。這說明：
+內容片段可讓您建立不受通道影響的內容，以及（可能是特定通道的）變化。 **We.Retail** (如Lofotenas的現成實例所提供AEM)提供了Lofotenas的Arctic Surfing片段 **** 的基本樣本。這說明：
 
 * Adobe Experience Manager(AEM)內容片段會建 [立並管理為不受頁面影響的資產](/help/assets/content-fragments.md)。它們可讓您建立不受頻道影響的內容，以及（可能是特定頻道的）變化。
 
@@ -36,7 +36,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->**內容** 片段和 **[體驗](/help/sites-authoring/experience-fragments.md)** 片段是AEM中的不同功能：
+>**內容** 片段和 **[體驗](/help/sites-authoring/experience-fragments.md)** 片段是以下各項功能AEM:
 >
 >* **內容** 片段是編輯內容，主要是文字和相關影像。它們是純粹的內容，不需要設計和版面配置。
 >* **體驗** 片段內容已完整排版；網頁的片段。
@@ -98,7 +98,7 @@ We.Retail中有數個範例內容片段；透過&#x200B;**Assets**、**Files**�
 
    * 在編寫頁面時使用您的內容片段。
 
-* [開發AEM —— 內容片段的元件](/help/sites-developing/components-content-fragments.md)
+* [開發AEM-內容片段的元件](/help/sites-developing/components-content-fragments.md)
 
    * 內容片段的元件概觀。
 
