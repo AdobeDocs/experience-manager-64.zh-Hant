@@ -7,10 +7,11 @@ uuid: 5a5f912a-9696-4bc1-af3f-ead78f767e02
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 0%
 
 * **儲存PDF動作** （已過時）: `contentPath`-將傳遞已提交的資料和到儲存庫中PDF檔案的節點的路徑。
 
-* **提交至表單工作流程**:會傳遞從表單工作流程傳回的輸出參數。
+* **提交至Forms工作流**:會傳遞從表單工作流程傳回的輸出參數。
 
 * **提交到REST端點**:系統會傳遞為在欄位內映射至參數所新增的參數。`status` 而參 `owner` 數不會在此提交動作中傳遞。有關詳細資訊，請參閱[配置提交到REST端點提交操作](/help/forms/using/configuring-submit-actions.md)。
 
