@@ -1,18 +1,19 @@
 ---
 title: SRP —— 社群內容儲存
 seo-title: SRP —— 社群內容儲存
-description: 自AEM Communities 6.1起，使用者產生的內容(UGC)會儲存在儲存資源提供者(SRP)提供的單一共用商店中
-seo-description: 自AEM Communities 6.1起，使用者產生的內容(UGC)會儲存在儲存資源提供者(SRP)提供的單一共用商店中
+description: 從AEM Communities6.1開始，用戶生成的內容(UGC)被儲存在由儲存資源提供商(SRP)提供的單個公共儲存中
+seo-description: 從AEM Communities6.1開始，用戶生成的內容(UGC)被儲存在由儲存資源提供商(SRP)提供的單個公共儲存中
 uuid: 651af1d7-70e8-4b56-8c01-871cb397678e
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '923'
 ht-degree: 0%
 
 ---
@@ -22,30 +23,30 @@ ht-degree: 0%
 
 ## 簡介 {#introduction}
 
-自AEM Communities 6.1起，使用者產生的內容(UGC)會儲存在儲存資源提供者(SRP)提供的單一共用儲存區中。 有幾種SRP選項可供選擇，例如ASRP、MSRP和JSRP。
+從AEM Communities6.1開始，用戶生成的內容(UGC)被儲存在由儲存資源提供商(SRP)提供的單個公共儲存中。 有幾種SRP選項可供選擇，例如ASRP、MSRP和JSRP。
 
-與舊版不同，AEM例項中不會反向／正向複製UGC。 SRP可讓UGC直接存取，以便從所有作者和發佈例項建立、讀取、更新和刪除(CRUD)作業，但JSRP除外。
+與舊版不同，UGC在實例間沒有反向／正向復AEM制。 SRP可讓UGC直接存取，以便從所有作者和發佈例項建立、讀取、更新和刪除(CRUD)作業，但JSRP除外。
 
-以下是每個SRP選項的[特性，這是在選擇適當的SRP和[基礎部署](topologies.md)時決策過程的關鍵資訊。](#characteristics-of-srp-options)
+以下是每個SRP選項的[特性，這是選擇適當的SRP和[基礎部署時決策過程的關鍵資訊。](#characteristics-of-srp-options)](topologies.md)
 
 有關UGC使用SRP的詳細資訊，請參見[儲存資源提供方概述](srp.md)。
 
 >[!NOTE]
 >
->SRP僅適用於社群內容。 它不會影響網站內容的儲存位置([node store](../../help/sites-deploying/data-store-config.md))，也不會影響AEM例項之間使用者註冊、使用者描述檔和使用者群組的安全處理（另請參閱[管理使用者資料](#managing-user-data)）。
+>SRP僅適用於社群內容。 它不會影響網站內容的儲存位置([node store](../../help/sites-deploying/data-store-config.md))，也不會影響在例項之間對使用者註冊、使用者個人檔案和使用者群組的安全處理AEM（另請參閱[管理使用者資料](#managing-user-data)）。
 
 >[!CAUTION]
 >
->自AEM 6.1起，[UGC將不複製](#ugc-never-replicated)。
+>從AEM6.1開始，[UGC不會複製](#ugc-never-replicated)。
 >
->當部署不包含公用商店（例如預設的[JSRP](topologies.md#jsrp)拓撲）時，UGC只會顯示在輸入AEM發佈或作者例項上。 只有當拓撲包含發佈群集時，UGC才會顯示在任何發佈實例上。
+>當部署不包含公用商店（例如預設的[JSRP](topologies.md#jsrp)拓撲）時，UGC只會顯示在其上輸入的AEM發佈或作者實例上。 只有當拓撲包含發佈群集時，UGC才會顯示在任何發佈實例上。
 
 ## SRP選項{#characteristics-of-srp-options}的特點
 
-[ASRP - Adobe儲存資源供應商](asrp.md)\
-使用這個選項，UGC會在Adobe代管和管理的雲端服務中遠端保存。 它需要額外的授權，並與帳戶代表合作為該特定授權提供帳戶。
+[ASRP -Adobe儲存資源提供方](asrp.md)\
+使用此選項，UGC會在由Adobe托管和管理的雲端服務中遠程保存。 它需要額外的授權，並與帳戶代表合作為該特定授權提供帳戶。
 
-* 需要Adobe提供並支援的相關雲端服務，才能儲存社群內容
+* 需要Adobe提供並支援的相關雲端服務來儲存社群內容
 * 需要在特定地理位置（美國、歐洲、中東和非洲、亞太地區）選擇資料中心
 * 需要透過SRP API以程式化方式存取UGC
 * 適用於TarMK發佈農場
@@ -76,9 +77,9 @@ ht-degree: 0%
 * 適合期待大量社群內容
 
 [JSRP - JCR儲存資源提供商](jsrp.md)\
-使用預設選項時，沒有共用商店。 UGC僅會與輸入AEM例項的相同JCR儲存庫中持續存在。
+使用預設選項時，沒有共用商店。 UGC僅與輸入UGC的實例保存在AEM相同的JCR儲存庫中。
 
-* 將社群內容儲存在AEM作者的JCR儲存庫或發佈執行個體的JCR儲存庫中
+* 將社群內容儲存在作者的JCR儲存AEM庫或發佈例項中
 * 需要透過SRP API以程式化方式存取UGC
 * 如果部署了多個發佈實例，則需要發佈群集（TarMK場中的發佈實例之間沒有複製機制）
 * 協調僅在發佈環境中執行（作者和發佈之間沒有反向／正向複製機制）
@@ -90,7 +91,7 @@ ht-degree: 0%
 
 如需每個選項的設定詳細資訊，請參閱：
 
-* [ASRP - Adobe儲存資源供應商](asrp.md)
+* [ASRP -Adobe儲存資源提供方](asrp.md)
 * [MSRP - MongoDB儲存資源提供程式](msrp.md)
 * [DSRP —— 關係資料庫儲存資源提供程式](dsrp.md)
 * [JSRP - JCR儲存資源提供商](jsrp.md)
@@ -101,11 +102,11 @@ ht-degree: 0%
 
 ### UGC從不複製{#ugc-never-replicated}
 
-在作者環境中，作者會建立頁面內容並將它複製至發佈環境。 當頁面包含互動式AEM社群功能（例如註解、評論、論壇、部落格或QnA）時，會員對發佈例項的互動（在網站訪客中登入）會導致使用者產生的內容(UGC)進入發佈環境。
+在作者環境中，作者會建立頁面內容並將它複製至發佈環境。 當頁面包含互動式AEM Communities功能（例如註解、評論、論壇、部落格或QnA）時，成員（在網站訪客中登入）對發佈例項的互動會導致使用者產生的內容(UGC)進入發佈環境。
 
-以前，此社群內容會反向複製至作者例項，以及從作者複製至發佈例項。 使用反向和正向複製來維持AEM例項間的一致性是有問題的。
+以前，此社群內容會反向複製至作者例項，以及從作者複製至發佈例項。 在具有反向和正向複製的實例之間AEM保持一致性存在問題。
 
-從AEM Communities 6.1開始，使用UGC的共用儲存空間，已免除複製UGC的需求，如上所述。
+從AEM Communities6.1開始，通過使用UGC的共用儲存，已消除了複製UGC的需要，如上所述。
 
 在複製網站內容時，不會複製UGC。
 
@@ -113,10 +114,10 @@ ht-degree: 0%
 
 社區還關注&#x200B;[*用戶*、*用戶組*&#x200B;和&#x200B;*用戶配置檔案*](users.md)。 當拓撲為[publish farm](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)時，在發佈環境中建立和更新此用戶相關資料時，需要將其提供給其他發佈實例。
 
-自AEM Communities 6.1起，使用Sling散發而非複製來同步使用者相關資料。 有關詳細資訊，請訪問[用戶同步](sync.md)。
+自AEM Communities6.1起，使用者相關資料會使用Sling散發來同步化，而非複製。 有關詳細資訊，請訪問[用戶同步](sync.md)。
 
-### 升級至AEM Communities 6.2 {#upgrading-to-aem-communities}
+### 升級至AEM Communities6.2 {#upgrading-to-aem-communities}
 
-在升級至AEM Communities 6.3時，如果需要保留預先存在的UGC，則應根據AEM 5.6.1或AEM 6.0社群是否使用Adobe隨選儲存空間或UGC的內部部署儲存空間來採取步驟。
+在升級至AEM Communities6.3時，如果需要保留現有的UGC，則應根據AEM5.6.1或AEM6.0社群是否使用Adobe隨選儲存或UGC的內部部署儲存來採取步驟。
 
-如需詳細資訊，請造訪[升級至AEM Communities 6.3](upgrade.md)。
+如需詳細資訊，請造訪[升級至AEM Communities6.3](upgrade.md)。
