@@ -2,22 +2,23 @@
 title: 在互動式通訊中使用圖表
 seo-title: Interactive Communications中的圖表元件
 description: '在互動式通訊中使用圖表，您可以將大量資訊濃縮成易於分析和瞭解的視覺格式  '
-seo-description: AEM Forms提供圖表元件，您可用來在互動通訊中建立圖表。 本文檔說明圖表元件的基本和代理配置。
+seo-description: AEM Forms提供圖表元件，您可用來在互動式通訊中建立圖表。 本文檔說明圖表元件的基本和代理配置。
 uuid: dedd670c-030b-4497-bbcb-3ad935cebcda
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
+feature: 互動式通訊
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2423'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 
-# 在互動通信中使用圖表{#using-charts-in-interactive-communications}
+# 在互動式通信中使用圖表{#using-charts-in-interactive-communications}
 
 在互動式通訊中使用圖表，您可以將大量資訊濃縮成易於分析和瞭解的視覺格式
 
@@ -38,7 +39,7 @@ ht-degree: 0%
 
 完成下列步驟，將圖表新增至互動式通訊：
 
-1. 從AEM側欄的「元件」中，將「圖表」元件拖放至下列互動式通訊的列印或網路頻道之一：
+1. 從側欄的「元AEM件」中，將「圖表」元件拖放至互動式通訊的列印或網路頻道中的下列其中一個：
 
    * 列印頻道：目標區域和影像欄位
    * 網路頻道：面板和目標區域
