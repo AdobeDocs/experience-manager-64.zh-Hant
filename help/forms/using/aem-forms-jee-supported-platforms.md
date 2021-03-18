@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3317'
 ht-degree: 1%
 
 ---
@@ -804,4 +805,4 @@ Adobe保留在任何給定時刻更改AEM Forms支援的JEE版本及其支援的
 
 如需協力廠商修補程式的詳細資訊，請搜尋Adobe企業支援網站，以取得與您產品相關的知識庫文章。
 
-[**聯絡支援**](https://www.adobe.com/account/sign-in.supportportal.html)
+[**聯絡支援**](https://www.adobe.com/tw/account/sign-in.supportportal.html)
