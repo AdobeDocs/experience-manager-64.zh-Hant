@@ -1,7 +1,7 @@
 ---
 title: 和SPA伺服器端演算
 seo-title: 和SPA伺服器端演算
-description: 'null'
+description: '"SPA和伺服器端演算"'
 seo-description: 'null'
 uuid: fbf7d0d1-865d-45d2-aeec-a7e3caf3fcb2
 contentOwner: bohnert
@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
-source-git-commit: 226cd6688a579409371cb17f6ba31548bee312b3
+source-git-commit: 160cc2669ac19aacdce5e96d1ba1eb4bafcb6d58
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 1%
+source-wordcount: '1714'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 # 和SPA伺服器端演算{#spa-and-server-side-rendering}
 
 >[!NOTE]
->單頁應用程式(SPA)編輯器功能需要&lt;a0/AEM> 6.4 Service Pack 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)或更高版本。[
+>單頁應用程式(SPA)編輯器功能需要&lt;a0/AEM> 6.4 Service Pack 2](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html)或更高版本。[
 >
 >EditorSPA是建議的專案解決方案，適用於需SPA要以架構為基礎的用戶端轉換(例如，React或Angular)。
 
