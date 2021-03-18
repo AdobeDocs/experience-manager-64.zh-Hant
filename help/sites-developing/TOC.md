@@ -6,16 +6,19 @@ audience: end-user
 user-guide-title: AEM 6.4 Developing 使用指南
 breadcrumb-title: Developing 指南
 user-guide-description: 本指南說明如何建立 AEM 執行個體。
+feature-set: Experience Manager Sites
+feature: 開發
+role: 開發人員
 translation-type: tm+mt
-source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '887'
 ht-degree: 14%
 
 ---
 
 
-# AEM 6.4 Developing 使用指南  {#developing}
+# AEM 6.4 Developing 使用指南 {#developing}
 
 + [開發使用指南概觀](home.md)
 + 開發人員簡介{#introduction}
