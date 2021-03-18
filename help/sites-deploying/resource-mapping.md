@@ -1,18 +1,19 @@
 ---
 title: 資源映射
 seo-title: 資源映射
-description: 瞭解如何使用資源對應來定義AEM的重新導向、虛名URL和虛擬主機。
-seo-description: 瞭解如何使用資源對應來定義AEM的重新導向、虛名URL和虛擬主機。
+description: 瞭解如何使用資源對應來定義重導、虛名URLAEM和虛擬主機。
+seo-description: 瞭解如何使用資源對應來定義重導、虛名URLAEM和虛擬主機。
 uuid: 33de7e92-8144-431b-badd-e6a667cd78e1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
+feature: 設定
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 # 資源映射{#resource-mapping}
 
-資源對應可用來定義AEM的重新導向、虛名URL和虛擬主機。
+資源對應用於定義重導、虛名URL和虛擬主機AEM。
 
 例如，您可以使用這些映射來：
 
@@ -91,9 +92,9 @@ EntriesResourceResolver.resolve方法用於將URL映射到資源的條目清單�
 >
 >有許多資源可協助說明如何定義規則運算式；例如[https://www.regular-expressions.info/](https://www.regular-expressions.info/)。
 
-## 在AEM {#creating-mapping-definitions-in-aem}中建立對應定義
+## 在{#creating-mapping-definitions-in-aem}中創AEM建映射定義
 
-在AEM的標準安裝中，您可以找到檔案夾：
+在標準安裝中，您AEM可以找到該資料夾：
 
 `/etc/map/http`
 
@@ -140,5 +141,5 @@ EntriesResourceResolver.resolve方法用於將URL映射到資源的條目清單�
 
 >[!NOTE]
 >
->您可以使用`/etc/map.publish`來保存發佈環境的配置。 然後，必須複製這些檔案，並為發佈環境的[Apache Sling資源解析器](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)的&#x200B;**Mapping Location**&#x200B;設定新位置(`/etc/map.publish`)。
+>您可以使用`/etc/map.publish`來保存發佈環境的配置。 然後必須複製這些檔案，並為發佈環境的[Apache Sling資源解析器](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)的&#x200B;**Mapping Location**&#x200B;設定新位置(`/etc/map.publish`)。
 
