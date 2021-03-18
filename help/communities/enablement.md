@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -48,7 +49,7 @@ ht-degree: 0%
 可選配置：
 
 * **Adobe**
-Analytics與Adobe Analytics整合可新增完整的報表功能，並支援Analytics的視訊心率新增功能。
+Analytics與Adobe Analytics的整合新增了完整的報告功能，並支援Analytics的視訊心率新增功能。
 
 * **Dispatcher**
 
@@ -98,7 +99,7 @@ bundles安 ** 裝SCORM套件之前
 **在作者實例上：**
 
 1. （*可選*）**[設定Analytics服務](analytics.md)**
-使用工具、部署、雲端服務主控台： 
+使用工具、部署、Cloud Services控制台： 
 *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
 1. **[配置](ffmpeg.md#configure-ffmpeg-transcoding-service)**
@@ -118,4 +119,4 @@ useradmincreate用戶，路徑= /home/users/community
 
 ## Dispatcher {#dispatcher}
 
-當部署包含[AEM的Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)時，為了讓啟用功能正常運作，`clientheader`和`filter`區段需要修改。 請參閱[配置Dispatcher for Communities](dispatcher.md#enablement)。
+當部署包含[AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)時，為了使啟用功能正常運作，`clientheader`和`filter`區段需要修改。 請參閱[配置Dispatcher for Communities](dispatcher.md#enablement)。
