@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
+feature: 互動式通訊
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 2%
+source-wordcount: '1317'
+ht-degree: 3%
 
 ---
 
