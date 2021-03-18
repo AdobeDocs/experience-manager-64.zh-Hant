@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -85,7 +86,7 @@ ht-degree: 0%
 
 ## 從客戶端應用程式{#setting-up-access-to-document-security-from-client-applications}設定對文檔安全性的訪問
 
-用戶端應用程式必須設定為連接至檔案保全，以保護檔案、開啟受原則保護的檔案，以及連接至檔案保全網頁。 如需在用戶端應用程式中設定連線的相關資訊，請參閱&#x200B;*Acrobat說明*&#x200B;或適當的&#x200B;*RightsManagementExtension說明*。
+用戶端應用程式必須設定為連接至檔案保全，以保護檔案、開啟受原則保護的檔案，以及連接至檔案保全網頁。 有關在客戶端應用程式中配置連接的資訊，請參見&#x200B;*Acrobat幫助*&#x200B;或相應的&#x200B;*RightsManagementExtension幫助*。
 
 檔案安全性可透過安全通訊端層(SSL)存取。 您必須將網站的憑證安裝在憑證存放區中，才能透過用戶端應用程式存取檔案安全性。
 
