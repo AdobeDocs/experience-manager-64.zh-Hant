@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '450'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 使用「成員」控制台，社區管理員可以隨時主動為成員刪除貢獻限制，或在成員向提出此類請求的社區管理員發送消息時主動刪除貢獻限制。
 
-## AEM Communities使用者產生的內容貢獻限制設定{#aem-communities-user-generated-content-contribution-limits-configuration}
+## AEM Communities用戶生成的內容貢獻限制配置{#aem-communities-user-generated-content-contribution-limits-configuration}
 
 此OSGi配置
 
