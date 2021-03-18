@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1083'
 ht-degree: 3%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 3%
 
 ## 使用XML架構作為表單模型{#using-an-xml-schema-as-form-model}
 
-AEM Forms支援使用現有的XML架構做為表單模型來建立最適化表單。 此XML架構代表組織中後端系統產生或使用資料的結構。
+AEM Forms支援使用現有的XML架構來建立自適應表單。 此XML架構代表組織中後端系統產生或使用資料的結構。
 
 使用XML架構的主要功能包括：
 
@@ -301,7 +302,7 @@ bindRef</code>欄位顯示樹元素與模式中的元素或屬性之間的關聯
 
 >[!NOTE]
 >
->屬性的`bindRef`值中有一個`@`符號，以區別它們與元素。 例如，`/config/projectDetails/@duration`。
+>屬性的`bindRef`值中有一個`@`符號，以區分它們與元素。 例如，`/config/projectDetails/@duration`。
 
 **為什麼我無法將子表單的個別元素（從任何複雜類型產生的結構）拖曳至可重複的子表單（minOccours或maxOccuns值大於1）?**
 
