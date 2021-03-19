@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
+role: 管理員
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1856'
 ht-degree: 3%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 3%
 
 # 協調控制台{#moderation-console}
 
-在AEM Communities中，管理員和社群協調者（指派為協調者的受信任社群成員）可從作者和發佈環境中大量協調社群內容[。](moderate-ugc.md)
+在AEM Communities，管理員和社群協調者（受信任的社群成員指派為協調者）可從作者和發佈環境中大量協調社群內容。[](moderate-ugc.md)
 
 管理員和社群協調者也可以在發佈環境中執行[內文協調](in-context.md)。
 
@@ -40,7 +41,7 @@ ht-degree: 3%
 
 ## 發佈環境訪問{#publish-environment-access}
 
-從已發佈的社群網站存取「協調」主控台是透過「管理」連結，當社群協調者登入時，此連結會顯示。
+從已發佈的社群網站存取「協調控制台」是透過「管理」連結，當社群協調者登入時，此連結會顯示。
 
 ![publishweretail](assets/publishweretail.png)
 
@@ -115,7 +116,7 @@ ht-degree: 3%
 
 每個類別中的濾波器是&#x200B;**或**&#x200B;一起設定的，不同類別中的濾波器是&#x200B;**和**&#x200B;一起設定的。
 
-例如，如果您同時勾選&#x200B;**Question**&#x200B;和&#x200B;**Answer**，您會看到內容是&#x200B;**Question** *或*&#x200B;和&#x200B;**Answer**。
+例如，如果您同時勾選&#x200B;**Question**&#x200B;和&#x200B;**Answer**，您會看到內容是&#x200B;**Question** *或***Answer**。
 
 但是，如果您勾選&#x200B;**Question**&#x200B;和&#x200B;**Pending**，則只會看到&#x200B;**Question**&#x200B;的內容，而且是&#x200B;**Pending**。
 
@@ -233,7 +234,7 @@ ht-degree: 3%
 
 [協調](moderate-ugc.md#moderation-actions) 動作掃描可在內容區域或檢視內容詳細資料時，執行一或多個選擇。
 
-若要大量協調貼文，請在內容區域中按一下貼文上的「選取(![selecticon](assets/selecticon.png))」圖示，當將滑鼠（案頭）暫留在貼文上時，或按下並按住貼文（行動裝置）上的手指時，該圖示便會出現。 執行此動作後，您就會進入多選模式，現在只要按一下貼文，就可以選取後續的大量協調貼文。 使用工具列上顯示的按鈕，對選取的貼文執行協調動作。 所有動作都會提示您確認。
+若要大量協調貼文，請在內容區域中按一下貼文上的「選取(![selecticon](assets/selecticon.png))」圖示，當將滑鼠（案頭）暫留在貼文上時，或按下並按住貼文（行動裝置）上的手指時，該圖示會出現。 執行此動作後，您就會進入多選模式，現在只要按一下貼文，就可以選取後續的大量協調貼文。 使用工具列上顯示的按鈕，對選取的貼文執行協調動作。 所有動作都會提示您確認。
 
 若要協調內容區域中的單一貼文，請將滑鼠（案頭）暫留在貼文上，或按住貼文（行動裝置）上的手指，讓按鈕出現在貼文上。 在單一內容詳細資料上作業時，只有刪除動作會提示確認。
 
@@ -286,7 +287,7 @@ ht-degree: 3%
 
 #### 允許 {#allow}
 
-![chlimage_1-401](assets/chlimage_1-481.png)
+![chlimage_1-481](assets/chlimage_1-481.png)
 
 使用單一貼文時，當貼文已標幟或拒絕時，「允許」圖示會出現。 如果已標幟，選取「允許」將會清除所有標幟。
 
