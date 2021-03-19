@@ -7,10 +7,11 @@ uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '559'
 ht-degree: 2%
 
 ---
@@ -35,14 +36,14 @@ ht-degree: 2%
 
 1. 按一下側邊欄中的標籤以指定CSS屬性。 您可以指定屬性，例如：
 
-   * 尺寸與位置（顯示設定、填補、高度、寬度、邊界、位置、z索引、浮動、清除、溢位）
+   * Dimension與位置（顯示設定、填補、高度、寬度、邊界、位置、z索引、浮動、清除、溢位）
    * 文字（字型系列、粗細、顏色、大小、行高和對齊）
    * 背景（影像和漸層、背景顏色）
    * 邊框（寬度、樣式、顏色、半徑）
    * 特效（陰影、洞察力）
    * 進階（可讓您編寫元件的自訂CSS）
 
-1. 同樣地，您也可以套用元件其他部分的樣式，例如介面工具集、標題和說明。
+1. 同樣地，您也可以套用元件其他部分的樣式，例如Widget、Caption和Help。
 1. 點選&#x200B;**Done**&#x200B;確認變更，或點選&#x200B;**Cancel**&#x200B;捨棄變更。
 
 ## 範例：欄位元件{#example-inline-styles-for-a-field-component}的內嵌樣式
