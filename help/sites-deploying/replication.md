@@ -1,18 +1,19 @@
 ---
 title: 複寫
 seo-title: 複寫
-description: 瞭解如何在AEM中設定和監視複製代理。
-seo-description: 瞭解如何在AEM中設定和監視複製代理。
+description: 瞭解如何在中配置和監視複製代理AEM。
+seo-description: 瞭解如何在中配置和監視複製代理AEM。
 uuid: 0e4fa6be-2e94-42c7-9cc2-516495e48deb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 6fe1c5c5-deb7-4405-82e4-23e0f90e2bd8
+feature: 設定
 translation-type: tm+mt
-source-git-commit: 19f6ea07e192294124d5251e31ead93deae57349
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3589'
 ht-degree: 2%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 2%
 
 # 複寫{#replication}
 
-複製代理是Adobe Experience Manager(AEM)的核心，是用於：
+複製代理是Adobe Experience Manager(AEM)的中心，它用於：
 
 * [從作者發佈(](/help/sites-authoring/publishing-pages.md#publishing-pages) 啟用)內容至發佈環境。
 * 從Dispatcher快取明確清除內容。
@@ -57,15 +58,15 @@ ht-degree: 2%
 
 反向複製使用發佈環境中引用作者環境的代理。 此代理將資料放入外框。 此輸出框與作者環境中的複製偵聽程式匹配。 監聽程式會輪詢輸出方塊以收集所輸入的任何資料，然後視需要加以分發。 這可確保作者環境控制所有流量。
 
-在其他情況下，例如社群功能（例如論壇、部落格、留言和評論），在發佈環境中輸入的使用者產生內容(UGC)量，很難透過複製在AEM例項間有效同步。
+在其他情況下，例如社群功能（例如論壇、部落格、留言和評論），使用複製在發佈環境中輸入的使用者產生內容(UGC)數量難以有效地同步AEM到不同的執行個體。
 
-AEM [Communities](/help/communities/overview.md)從不對UGC使用複製。 相反，社群的部署需要UGC的公用商店（請參閱[社群內容儲存](/help/communities/working-with-srp.md)）。
+AEM[Communities](/help/communities/overview.md)從不將複製用於UGC。 相反，社群的部署需要UGC的公用商店（請參閱[社群內容儲存](/help/communities/working-with-srp.md)）。
 
 ## 複製——出廠設定{#replication-out-of-the-box}
 
-AEM標準安裝中包含的Geometrixx網站可用來說明複製。
+標準安裝中包含的Geometrixx網站AEM可用於說明複製。
 
-要遵循此示例並使用預設複製代理，您需要[安裝AEM](/help/sites-deploying/deploy.md)並且：
+要遵循此示例並使用預設複製代理，您需要[Install AEM](/help/sites-deploying/deploy.md)與：
 
 * 埠`4502`上的作者環境
 * 埠`4503`上的發佈環境
@@ -77,7 +78,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 >* 作者代理：預設代理（發佈）
 >
 >
-依預設有效停用（自AEM 6.1起）:
+依預設有效停用(截止AEM於6.1):
 >
 >* 作者代理：反向複製代理(publish_reverse)
 >* 發佈時的代理：反向複製（輸出盒）
@@ -112,7 +113,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 ### 複製代理——出廠設定{#replication-agents-out-of-the-box}
 
-標準AEM安裝中提供下列代理：
+標準安裝中提供以下代理AEM程式：
 
 * [預設代理](#replication-author-to-publish) -用於從作者複製到發佈。
 
@@ -277,7 +278,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
    要使用的HTTP方法。
 
-   對於Dispatcher Flush代理，這幾乎總是GET，不應更改（POST可能是另一個值）。
+   對於Dispatcher Flush代理，這幾乎總是GET的，不應更改(POST是另一個可能的值)。
 
 * **HTTP 標頭**
 
@@ -289,7 +290,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
    * `CQ-Handle:{path}`
    * `CQ-Path:{path}`
 
-   這些參數會在適當時用於指示刷新控制滑塊或路徑時使用的操作。 子參數是動態的：
+   這些參數會在適當時用於指示刷新控制滑塊或路徑時要使用的操作。 子參數是動態的：
 
    * `{action}` 表示複製操作
    * `{path}` 指示路徑
@@ -298,7 +299,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
    >[!NOTE]
    >
-   >如果您已將AEM安裝在建議的預設上下文以外的上下文中，則您必須在「HTTP標題」中註冊上下文。 例如：
+   >如果您已安裝在AEM建議的預設上下文以外的上下文中，則需要在HTTP標題中註冊上下文。 例如：
    >
    >`CQ-Handle:/<*yourContext*>{path}`
 
@@ -363,10 +364,10 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 >當調度程式處理作者或發佈實例的HTTP請求時，來自複製代理的HTTP請求必須包含PATH標頭。 除了以下過程外，還必須將PATH標頭添加到客戶端標頭的調度器清單中。 (請參閱[/clientheaders(Client Headers)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。[](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)
 
 
-1. 存取AEM中的&#x200B;**Tools**&#x200B;標籤。
+1. 訪問&#x200B;**中的「工具」**&#x200B;頁籤AEM。
 1. 按一下&#x200B;**Replication**（左窗格開啟資料夾）。
 1. 連按兩下「作者上的&#x200B;**代理」（左窗格或右窗格）。**
-1. 按一下相應的代理名稱（即連結）以顯示有關該代理的詳細資訊。
+1. 按一下相應的代理名（即連結）以顯示有關該代理的詳細資訊。
 1. 按一下&#x200B;**編輯**&#x200B;開啟配置對話框：
 
    ![chlimage_1-145](assets/chlimage_1-145.png)
@@ -375,7 +376,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 >[!NOTE]
 >
->AEM的標準安裝會將`admin`指定為預設複製代理中傳輸憑證的使用者。
+>標準安裝AEM將`admin`指定為預設複製代理內的傳輸憑據用戶。
 >
 >應將其更改為具有複製所需路徑權限的站點特定複製用戶帳戶。
 
@@ -392,7 +393,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 >[!NOTE]
 >
->對於AEM [Communities](/help/communities/overview.md)，複製不會用於發佈實例上的使用者產生的內容。 請參閱[社群內容儲存](/help/communities/working-with-srp.md)。
+>對於AEM[Communities](/help/communities/overview.md)，複製不用於發佈實例上用戶生成的內容。 請參閱[社群內容儲存](/help/communities/working-with-srp.md)。
 
 若要這麼做，您需要：
 
@@ -418,7 +419,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 要為需要建立和配置新複製代理的其他發佈實例配置內容複製，請執行以下操作：
 
-1. 在AEM中開啟&#x200B;**Tools**&#x200B;標籤。
+1. 開啟&#x200B;**中的「工具」**&#x200B;頁籤AEM。
 1. 在左側面板中選擇&#x200B;**複製**，然後選擇&#x200B;**作者上的代理。**
 1. 選擇&#x200B;**新建……**。
 1. 設定&#x200B;**Title**&#x200B;和&#x200B;**Name**，然後選擇&#x200B;**Replication Agent**。
@@ -466,7 +467,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 安裝中包含預設代理。 但是，如果要定義新代理，則仍需要某些配置：
 
-1. 在AEM中開啟&#x200B;**Tools**&#x200B;標籤。
+1. 開啟&#x200B;**中的「工具」**&#x200B;頁籤AEM。
 1. 按一下&#x200B;**Deployment**。
 1. 選擇&#x200B;**複製**，然後選擇&#x200B;**發佈時的代理。**
 1. 按兩下&#x200B;**Dispatcher Flush**&#x200B;項以開啟概述。
@@ -491,7 +492,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
    >[!NOTE]
    >
-   >如果您已將AEM安裝在建議的預設上下文以外的上下文中，則需要在&#x200B;**Extended**&#x200B;標籤中設定[HTTP標題](#extended)。
+   >如果您已安裝在AEM建議的預設上下文以外的上下文中，則需要在&#x200B;**Extended**&#x200B;標籤中設定[HTTP標題](#extended)。
 
 1. 按一下&#x200B;**確定**&#x200B;保存更改。
 1. 返回到&#x200B;**工具**&#x200B;頁籤，您可以從此處&#x200B;**激活** Dispatcher Flush **代理（**&#x200B;發佈時的代理）。****
@@ -506,7 +507,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 >
 >設定此類權限不會影響複製內容的使用者（例如，從「網站」主控台或sidekick選項）。 複製框架不使用當前用戶的「用戶會話」在複製頁時訪問複製代理。
 
-### 從CRXDE Lite {#configuring-your-replication-agents-from-crxde-lite}配置複製代理
+### 從{#configuring-your-replication-agents-from-crxde-lite}CRXDE Lite配置複製代理
 
 >[注意!]
 >
@@ -520,7 +521,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 * `agents.publish`
 * `treeactivation`
 
-兩個`agents`保存有關相應環境的配置資訊，並且僅當該環境運行時才處於活動狀態。 例如，`agents.publish`將僅用於發佈環境。 下列螢幕擷取顯示作者環境中的發佈代理，如AEM WCM所附：
+兩個`agents`保存有關相應環境的配置資訊，並且僅當該環境運行時才處於活動狀態。 例如，`agents.publish`將僅用於發佈環境。 以下螢幕擷取顯示作者環境中的發佈代理，如AEMWCM所附：
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -528,7 +529,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 要監視複製代理，請執行以下操作：
 
-1. 存取AEM中的&#x200B;**Tools**&#x200B;標籤。
+1. 訪問&#x200B;**中的「工具」**&#x200B;頁籤AEM。
 1. 按一下&#x200B;**Replication**。
 1. 連按兩下適當環境（左窗格或右窗格）的代理連結；例如，作者&#x200B;**上的代理。**
 
@@ -588,7 +589,7 @@ AEM標準安裝中包含的Geometrixx網站可用來說明複製。
 
 有關故障排除的詳細資訊，請閱讀[ Troubleshooting Replication](/help/sites-deploying/troubleshoot-rep.md)頁。
 
-如需其他資訊，Adobe有一系列與複製相關的知識庫文章：
+有關其他資訊，Adobe有一系列與複製相關的知識庫文章：
 
 [https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html](https://helpx.adobe.com/experience-manager/kb/ReplicationSiblingReordering.html)\
 [https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html](https://helpx.adobe.com/experience-manager/kb/ReplicationFailureAfterNewIP.html)\
