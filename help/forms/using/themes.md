@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6041'
+source-wordcount: '6043'
 ht-degree: 1%
 
 ---
@@ -27,18 +28,18 @@ ht-degree: 1%
 
 * 建立主題
 * 編輯和複製現有主題
-* 下載現有主題並上傳至AEM Forms伺服器
+* 下載並上傳現有主題至AEM Forms伺服器
 * 管理主題的相依性
 
 ## 建立、下載或上傳主題{#creating-downloading-or-uploading-a-theme}
 
-有了AEM Forms，您可以建立、下載或上傳主題。 主題的建立方式與其他資產（例如表單、檔案和字母）類似。 主題會儲存為個別的實體，並加上表單等中繼屬性。 主題是個別的實體，可讓多種調適性表單和互動式通訊重複使用。 您也可以將主題移至AEM Forms的不同例項，然後加以重複使用。
+有了AEM Forms，您可以建立、下載或上傳主題。 主題的建立方式與其他資產（例如表單、檔案和字母）類似。 主題會儲存為個別的實體，並加上表單等中繼屬性。 主題是個別的實體，可讓多種調適性表單和互動式通訊重複使用。 您也可以將主題移至AEM Forms的不同例項，並重複使用它。
 
 ### 建立主題{#creating-a-theme}
 
 執行下列步驟以建立主題：
 
-1. 按一下「**[!UICONTROL Adobe Experience Manager]**」，按一下「**[!UICONTROL Forms]**」，然後按一下「**[!UICONTROL 主題]**」。
+1. 按一下&#x200B;**[!UICONTROL Adobe Experience Manager]** ，按一下&#x200B;**[!UICONTROL Forms]** ，然後按一下&#x200B;**[!UICONTROL 主題]**。
 
 1. 在「主題」頁面中，按一下「建立>主題」。****
 
@@ -55,9 +56,9 @@ ht-degree: 1%
 
 ### 下載主題{#downloading-a-theme}
 
-您可以將主題匯出為zip檔案，並在其他專案或AEM例項中使用這些主題。 若要下載主題：
+您可以將主題匯出為zip檔案，並在其他專案或例項中使AEM用這些主題。 若要下載主題：
 
-1. 按一下「**[!UICONTROL Adobe Experience Manager]**」，按一下「**[!UICONTROL Forms]**」，然後按一下「**[!UICONTROL 主題]**」。
+1. 按一下&#x200B;**[!UICONTROL Adobe Experience Manager]** ，按一下&#x200B;**[!UICONTROL Forms]** ，然後按一下&#x200B;**[!UICONTROL 主題]**。
 
 1. 在「主題」頁中，選擇主題，然後按一下&#x200B;**[!UICONTROL Download]**。 此時將顯示一個包含主題詳細資訊的對話框。
 
@@ -65,7 +66,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您下載具有與其相關聯的最適化表單且相關聯的最適化表單是以自訂範本為基礎的主題，則也請下載自訂範本。 當您將下載的主題和最適化表單上傳至AEM Forms伺服器時，也請上傳相關的自訂範本。
+>如果您下載具有與其相關聯的最適化表單且相關聯的最適化表單是以自訂範本為基礎的主題，則也請下載自訂範本。 當您將下載的主題和最適化表單上傳到AEM Forms伺服器時，也請上傳相關的自訂範本。
 
 ### 上傳主題{#uploading-a-theme}
 
@@ -73,7 +74,7 @@ ht-degree: 1%
 
 若要上傳主題：
 
-1. 按一下「**[!UICONTROL Adobe Experience Manager]**」，按一下「**[!UICONTROL Forms]**」，然後按一下「**[!UICONTROL 主題]**」。
+1. 按一下&#x200B;**[!UICONTROL Adobe Experience Manager]** ，按一下&#x200B;**[!UICONTROL Forms]** ，然後按一下&#x200B;**[!UICONTROL 主題]**。
 
 1. 在「主題」頁中，按一下「建立」>「檔案上載」]**。**[!UICONTROL 
 1. 在「File Upload（檔案上載）」提示中，瀏覽並選擇電腦上的主題包，然後按一下&#x200B;**[!UICONTROL Upload]**。
@@ -187,7 +188,7 @@ ht-degree: 1%
      <li>此主題的用戶定義clientlib類別名稱。</li> 
      <li>如果名稱已由某些其他現有主題使用，則會顯示錯誤。</li> 
      <li>預設值——使用主題位置計算。</li> 
-     <li>更改此值時，類別名稱將在相應的clientlib節點上更新。 不需要在jsp檔案中更新Clientlib類別名稱，因為引用使用clientlib類別名稱。</li> 
+     <li>更改此值時，類別名稱將在相應的clientlib節點上更新。 不需要在jsp檔案中更新Clientlib類別名稱，因為引用會使用clientlib類別名稱。</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -195,7 +196,7 @@ ht-degree: 1%
 
 ## 關於主題編輯器{#about-the-theme-editor}
 
-AEM Forms隨附於主題編輯器。 它是商業使用者與網頁設計人員／開發人員友好的介面，可提供所需的功能，以輕鬆指定各種調適性表單和互動式通訊元素的樣式。 當您建立主題時，主題會儲存為個別的實體，例如表單、互動式通訊、字母、檔案片段和資料字典。
+AEM Forms與主題編輯一起出貨。 它是商業使用者與網頁設計人員／開發人員友好的介面，可提供所需的功能，以輕鬆指定各種調適性表單和互動式通訊元素的樣式。 當您建立主題時，主題會儲存為個別的實體，例如表單、互動式通訊、字母、檔案片段和資料字典。
 
 「主題編輯器」可讓您自訂主題中樣式化元件的樣式。 您可以自訂表單或互動式通訊在裝置上的外觀。
 
@@ -222,11 +223,11 @@ AEM Forms隨附於主題編輯器。 它是商業使用者與網頁設計人員�
       當您使用特定背景顏色自訂所有欄位元件時，所有欄位（例如年齡、名稱和位址）都會繼承背景顏色。 當您選取數值方塊（例如年齡）時，會縮小其寬度、所有數值方塊的寬度（例如年齡）、家庭中的人數會減少。 文字方塊的寬度不會變更。
 
    * **狀態：** 可讓您自訂特定狀態物件的樣式。例如，您可以指定物件處於預設、對焦、停用、暫留或錯誤狀態時的外觀。
-   * **屬性類別：** 樣式屬性分為不同類別。例如「維度與位置」、「文字」、「背景」、「邊框」和「效果」。 在每個類別下，您都會提供樣式資訊。 例如，在「背景」下，您可以提供「背景顏色」和「影像與漸層」。
+   * **屬性類別：** 樣式屬性分為不同類別。例如Dimension與位置、文字、背景、邊框和效果。 在每個類別下，您都會提供樣式資訊。 例如，在「背景」下，您可以提供「背景顏色」和「影像與漸層」。
    * **進階：** 可讓您將自訂CSS新增至物件，以覆寫視覺控制項在有重疊時定義的屬性。
    * **檢視CSS**:可讓您檢視所選元件的CSS
 
-   此外，在側欄底部還有箭頭。 當您按一下箭頭時，您會再看到兩個選項：**模擬成功**&#x200B;和&#x200B;**模擬錯誤。** 這些選項以及上述選項將在下文中詳 [細討論](/help/forms/using/themes.md#using-rail)。
+   此外，在側欄底部還有箭頭。 當您按一下箭頭時，您會再看到兩個選項：**模擬成功**&#x200B;和&#x200B;**模擬錯誤。** 這些選項以及上述選項將在下文中詳細 [討論](/help/forms/using/themes.md#using-rail)。
 
    [ ![反白顯示「邊欄」和「畫布」的主題編輯器。](assets/themes.png)](assets/themes-1.png) **A.** 側欄 **B.** Canvas
 
@@ -246,7 +247,7 @@ AEM Forms隨附於主題編輯器。 它是商業使用者與網頁設計人員�
 
 ### 樣式面板版面{#styling-panel-layouts-br}
 
-AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定元素樣式。 支援立即可用的版面和自訂版面中的元素樣式。
+AEM Forms的主題支援在表單和互動式通訊中設定面板版面中的元素樣式。 支援立即可用的版面和自訂版面中的元素樣式。
 
 現成可用的面板包括：
 
@@ -261,7 +262,7 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
    * 標題中不含面板標題
 
 選擇器會因每個版面而異。\
-從主題編輯器設定自訂版面的樣式涉及：
+從主題編輯器設定自訂版面的樣式包括：
 
 * 定義可設定樣式的版面元件，以及CSS選擇器，以唯一識別這些元件
 * 定義可套用至這些元件的CSS屬性
@@ -295,7 +296,7 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 
 在資產庫中添加樣式時，它可用於其它主題以及表單編輯器或互動式通信編輯器UI的[style模式](/help/forms/using/inline-style-adaptive-forms.md)。 同樣地，當您使用表單編輯器或互動式通訊編輯器UI的樣式模式來設定元件的樣式時，會快取樣式，並可在主題中使用。
 
-資產庫的加號按鈕可讓您永久儲存樣式，並使用您提供的名稱。 即使您未在側欄中按一下「保存」按鈕將樣式應用於元件，加號按鈕也會保存樣式。 在樣式模式中，不提供用於保存樣式以供以後使用的加號按鈕。
+資產庫的加號按鈕可讓您永久儲存樣式，並使用您提供的名稱。 即使您未在側欄中按一下「保存」按鈕將樣式應用於元件，加號按鈕仍會保存樣式。 在樣式模式中，不提供用於保存樣式以供以後使用的加號按鈕。
 
 ![為資產庫提供自訂樣式名稱](assets/custom-style-name.png)
 
@@ -336,7 +337,7 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 
 ## 使用主題編輯器{#using-the-theme-editor}
 
-主題編輯器可讓您編輯您建立或上傳的主題。 導覽至「**[!UICONTROL 表單與檔案>主題]**」，然後選取一個主題並開啟它。 主題在主題編輯器中開啟。
+主題編輯器可讓您編輯您建立或上傳的主題。 導覽至「**[!UICONTROL Forms與檔案>主題]**」，然後選取並開啟主題。 主題在主題編輯器中開啟。
 
 如上所述，主題編輯器有兩個面板：側欄和畫布。
 ![主題編輯器](assets/theme-editor.png)
@@ -414,7 +415,7 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
   </tr> 
   <tr> 
    <td><p>邊框</p> </td> 
-   <td><p>可讓您選擇元件的邊框外觀。 例如，您希望文字方塊有深紅色的粗邊，加上虛線。 </p> <p>您的選項包括邊框的寬度、樣式、半徑和顏色。</p> </td> 
+   <td><p>可讓您選擇元件邊框的外觀。 例如，您希望文字方塊有深紅色的粗邊，加上虛線。 </p> <p>您的選項包括邊框的寬度、樣式、半徑和顏色。</p> </td> 
   </tr> 
   <tr> 
    <td><p>效果</p> </td> 
@@ -447,7 +448,7 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 
 ### 設定元件{#styling-a-component}的樣式
 
-例如，在表單中，您有兩種文字方塊：一個僅接受數字值，另一個接受字母數字值。 您可以為僅接受數值的文本框（數值框）定制樣式。
+例如，在表單中，您有兩種文字方塊：一個僅接受數字值，另一個接受字母數字值。 您可以為僅接受數值的文本框（數字框）定制樣式。
 
 執行以下步驟為特定元件定制樣式（本示例中的數字框）:
 
@@ -462,9 +463,9 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 1. 選擇&#x200B;**[!UICONTROL 數值框Widget]**。
 1. 邊欄標題會變更為「數值方塊介面工具集」，並顯示自訂其外觀的選項。
 
-   使用側欄中的&#x200B;**[!UICONTROL Dimension &amp; Position]**&#x200B;選項來自訂元件的大小。 確保狀態為&#x200B;**[!UICONTROL Default]**。
+   使用側欄中的&#x200B;**[!UICONTROL Dimension與位置]**&#x200B;選項來自訂元件的大小。 確保狀態為&#x200B;**[!UICONTROL Default]**。
 
-不選擇&#x200B;**[!UICONTROL 數值框Widget]**，而是選擇元件工具欄中的&#x200B;**[!UICONTROL 欄位Widget]**，並執行上述步驟。 當您為&#x200B;**[!UICONTROL 欄位介面工具集]**&#x200B;選項選取維度時，除數值方塊外的所有文字方塊大小都相同。
+選擇元件工具欄中的&#x200B;**[!UICONTROL 欄位小部件]**，而不是選擇&#x200B;**[!UICONTROL 數字框小部件]**，然後執行上述步驟。 當您為&#x200B;**[!UICONTROL 欄位介面工具集]**&#x200B;選項選取維度時，除數值方塊外的所有文字方塊大小都相同。
 
 ### 指定狀態{#styling-fields-given-state}的樣式欄位
 
@@ -501,12 +502,12 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 
 ### 在主題{#using-web-fonts-in-a-theme}中使用網頁字型
 
-您現在可以以最適化形式或互動式通訊方式，在web-service中使用可用的字型。 Adobe的網頁字型服務[Typekit](https://typekit.com/)現成可用的設定。 若要使用Typekit，請建立套件及其中的字型，並從[Typekit網站](https://typekit.com/)取得套件ID。
+您現在可以以最適化形式或互動式通訊方式，在web-service中使用可用的字型。 現成可用的組態包括[Typekit](https://typekit.com/),Adobe的網頁字型服務。 若要使用Typekit，請建立套件及其中的字型，並從[Typekit網站](https://typekit.com/)取得套件ID。
 
-執行下列步驟，在AEM中設定Typekit:
+請執行下列步驟，在中設定TypekitAEM:
 
-1. 在作者實例中，按一下「![adobeexperiencemanager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager >工具&#x200B;]**![hammer](assets/hammer.png)**[!UICONTROL >部署>雲端服務&#x200B;]**」。
-1. 在&#x200B;**[!UICONTROL 雲端服務]**&#x200B;頁面上，導覽至&#x200B;**[!UICONTROL 第三方服務]** > **[!UICONTROL Typekit]**，然後按一下Typekit下的「立即設定」。 ****&#x200B;如果配置已可用，請按一下&#x200B;**+**&#x200B;按鈕以建立新實例。
+1. 在作者實例中，按一下「![adobeexperiencemanager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager>工具&#x200B;]**![hammer](assets/hammer.png)**[!UICONTROL >部署>Cloud Services ]**」。
+1. 在&#x200B;**[!UICONTROL Cloud Services]**&#x200B;頁面上，導覽至&#x200B;**[!UICONTROL 協力廠商服務]** > **[!UICONTROL Typekit]**，然後按一下Typekit下的「立即設定」。 ****&#x200B;如果配置已可用，請按一下&#x200B;**+**&#x200B;按鈕以建立新實例。
 1. 在&#x200B;**[!UICONTROL 建立配置]**&#x200B;對話框中，指定配置的標題，然後按一下&#x200B;**[!UICONTROL 建立]**。
 
    系統會將您重新導向至設定頁面。
@@ -525,7 +526,7 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 
 您可以使用主題設定服務，將更多字型新增至主題編輯器。 執行下列步驟以新增字型：
 
-1. 以管理權限登入AEM Web Console。 AEM Web Console的URL為`https://[server]:[port]/system/console/configMgr`。
+1. 以管理權AEM限登入Web Console。 Web ConsoleAEM的URL為`https://[server]:[port]/system/console/configMgr`。
 1. 開啟&#x200B;**[!UICONTROL 最適化表單主題配置服務]**。
 
    ![theme-config](assets/theme-config.png)
@@ -595,11 +596,11 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 
 ## 使用主題{#specific-af-appearance}取得特定外觀
 
-有了AEM Forms以及預設的現成可用的畫布主題，還有許多其他主題。 如果您想要使用其他主題來設計表單或互動式通訊，以及進行其他變更，請從「主題庫」檔案夾複製主題。 將複製的主題貼到「主題庫」檔案夾外，並根據您想要的變更編輯複製的主題。
+有了AEM Forms，再加上預設的現成畫布主題，還有許多其他主題。 如果您想要使用其他主題來設計表單或互動式通訊，以及進行其他變更，請從「主題庫」檔案夾複製主題。 將複製的主題貼到「主題庫」檔案夾外，並根據您想要的變更編輯複製的主題。
 
 要複製主題，請執行以下步驟：
 
-1. 在製作實例中，導覽至「**[!UICONTROL Adobe Experience Manager >表單>主題」。]**
+1. 在編寫實例中，導航至&#x200B;**[!UICONTROL Adobe Experience Manager>Forms>主題]**。
 1. 開啟「主題庫」檔案夾。
 1. 在「主題庫」檔案夾中，將指標暫留在對應的現成可用主題上，然後點選&#x200B;**[!UICONTROL Copy]**。
 1. 將複製的主題貼在「主題庫」檔案夾外。
@@ -609,7 +610,7 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 
 >[!NOTE]
 >
->請勿修改「主題庫」檔案夾中的可用主題。 此資料夾包含系統主題。 在安裝較新版本或AEM Forms Hot Fix時，您對這些主題所做的任何變更都會被覆寫。
+>請勿修改「主題庫」檔案夾中的可用主題。 此資料夾包含系統主題。 在安裝較新版本或Hot Fix的AEM Forms時，您對這些主題所做的任何變更都會被覆寫。
 
 ## 對其他自適應表單使用案例的影響{#impact-on-other-adaptive-form-use-cases}
 
@@ -653,11 +654,11 @@ AEM Forms中的主題支援在表單和互動式通訊的面板版面中設定�
 
       基本用戶端程式庫包含樣式資訊。 若要在主題的用戶端程式庫中使用樣式資訊。
 
-      1. 導覽至「**[!UICONTROL Experience Manager > Forms > Themes]**」。
+      1. 導覽至&#x200B;**[!UICONTROL Experience Manager>Forms>主題]**。
       1. 在「主題」頁中，選擇一個主題，然後按一下&#x200B;**[!UICONTROL 查看屬性]**。
       1. 在開啟的「屬性」頁面中，按一下「**[!UICONTROL 進階]**」。
       1. 在「進階」索引標籤的「Clientlib位置」欄位中，瀏覽並選取您要使用的client-library。
-      1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+      1. 按一下「**[!UICONTROL 儲存]**」。
 
       您在用戶端程式庫中指定的樣式，會匯入使用該樣式的主題中。 例如，您可指定文字方塊、數值方塊的樣式，以及在用戶端程式庫中切換。 當您在主題中匯入用戶端程式庫時，會匯入文字方塊、數值方塊和切換器的樣式。 然後，您可以使用主題編輯器來設定其他元件的樣式。\
       您也可以建立主題、建立主題副本，然後修改複製主題中提供的樣式，以利類似的使用案例。
