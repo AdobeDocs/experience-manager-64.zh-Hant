@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: correspondence-management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 601108d8-f432-4a6b-9ec9-831cf054e52f
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4460'
+source-wordcount: '4462'
 ht-degree: 4%
 
 ---
@@ -146,7 +147,7 @@ ht-degree: 4%
 
 ### 方案：所有資產類型{#scenario-common-tab-for-all-asset-types}的常用標籤
 
-此案例顯示如何將自訂標籤「收件者」新增至所有資產類型（文字、清單、條件和版面片段）和字母。 您可以在「收件者」索引標籤中，規劃將所有與收件者相關的自訂屬性置入。
+此案例顯示如何將自訂標籤「收件者」新增至所有資產類型（文字、清單、條件和版面片段）和字母。 您可以在「收件者」索引標籤中，規劃將所有與收件者相關的自訂屬性放入。
 
 ![為所有資產類型新增自訂標籤](assets/recipientstab.png)
 
@@ -208,7 +209,7 @@ ht-degree: 4%
 
    1. 按一下&#x200B;**全部保存：**
 
-1. 在上一步中（在公用頁籤下）建立的項目節點中，使用以下步驟（要添加更多列，請重複此步驟）在自定義頁籤（公用頁籤）中添加一個用於建立列的節點（此處為Column1）:
+1. 在上一步中（在公用頁籤下）建立的項目節點中，使用以下步驟（要添加更多列，請重複此步驟），在自定義頁籤（公用頁籤）中添加一個用於建立列的節點（此處為Column1）:
 
    1. 按一下右鍵項目節點，然後選擇「建立&#x200B;**** > **建立節點**」。
    1. 確保「建立節點」對話框具有以下值，然後按一下&#x200B;**確定**:
@@ -453,7 +454,7 @@ ht-degree: 4%
    | 清單 | /libs/fd/cm/gui/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/properties/tabs/items/tabs/tab1/items |
    | 條件 | /libs/fd/cm/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
    | 片段 | /libs/fd/cm/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/properties/items/tabs2/items/tab1/items1/items |
-   | 字母 | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/letterproperties/items |
+   | 字母 | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items |
 
 1. 按一下&#x200B;**「確定」**。資料夾結構會建立在應用程式資料夾中。
 
@@ -631,7 +632,7 @@ ht-degree: 4%
 
    | 名稱 | 類型 | 值 |
    |--- |--- |--- |
-   | sling:orderBefore | 字串 | 路徑&quot;`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns`&quot;上的列節點名稱，在該名稱之前需要在UI中顯示自定義列。 在此，如果希望「版本」列的前面（位於「版本」列的左側）顯示「地理位置」列，請將屬性`sling:orderBefore`添加到路徑&quot;`/apps/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns/GeoLocation`&quot;的「地理位置」節點，並將屬性值設定為版本。 |
+   | sling:orderBefore | 字串 | 路徑&quot;`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns`&quot;上的列節點名稱，在該名稱之前，自定義列需要出現在UI中。 在此，如果希望「版本」列的前面（位於「版本」列的左側）顯示「地理位置」列，請將屬性`sling:orderBefore`添加到路徑&quot;`/apps/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns/GeoLocation`&quot;的「地理位置」節點，並將屬性值設定為版本。 |
 
    當您新增sling:orderBefore屬性以指定欄位時，您也需要更新此程式步驟6.4中指定之對應&lt;td>標籤的順序。 例如，在此情況下，您需要確保「地理位置」的&lt;td>標籤位於「版本」欄的&lt;td>標籤之前：
 
@@ -740,13 +741,13 @@ ht-degree: 4%
    |---|---|---|
    | sling:orderBefore | 字串 | 卡片 |
 
-1. 自訂會在清單檢視中顯示所有控制台的搜尋結果，包括表單和檔案、資產和網站。
+1. 自訂會在「清單」檢視中顯示所有控制台的搜尋結果，包括Forms和檔案、資產和網站。
 
 ## 變更資產頁面{#change-default-view-of-the-assets-page}的預設檢視
 
 >[!NOTE]
 >
->這些步驟會變更所有控制台的預設檢視，例如表單和檔案、資產和網站。
+>這些步驟會變更所有控制台(例如Forms和檔案、資產和網站)的預設檢視。
 
 1. 前往`https://[server]:[port]/[ContextPath]/crx/de`，以管理員身分登入。
 1. 在應用程式檔案夾中，建立名為list的檔案夾，其路徑／結構類似於位於：
