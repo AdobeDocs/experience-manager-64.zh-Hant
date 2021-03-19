@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2542'
+source-wordcount: '2543'
 ht-degree: 2%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 2%
 
 社群體驗預期的功能類型已廣為人知。 社群功能可做為社群功能。 基本上，這些頁面是預先連線的一或多個頁面，以實作社群功能，其需要的不只是在作者模式下將元件新增至頁面。 它們是用於定義[社區站點模板](sites.md)的結構的構成塊，從中建立[社區站點。](sites-console.md)
 
-在建立社群網站後，就可使用標準[AEM製作模式](../../help/sites-authoring/editing-content.md)將內容新增至產生的頁面。
+在建立社群網站後，可使用標準的[製作模式](../../help/sites-authoring/editing-content.md)將內容新AEM增至產生的頁面。
 
 許多社群功能可立即使用，如社群功能主控台所示。 未來版本將提供更多社群功能，並可建立自訂功能。
 
@@ -40,7 +41,7 @@ ht-degree: 2%
 
 ## 預建函式{#pre-built-functions}
 
-以下是AEM Communities所提供功能的簡短說明。 每個函式都由一或多個AEM頁面組成，其中包含連線在功能中的Communities元件，此功能可輕鬆整合在[社群網站範本](sites.md)中。
+以下是與AEM Communities一起履行的職能的簡要說明。 每個函式由一個或多個頁面組成，AEM這些頁面包含將Communities元件連接在一個功能中，該功能可輕鬆地整合到[社區站點模板](sites.md)中。
 
 社群網站範本提供社群網站的結構，包括登入、使用者設定檔、通知、訊息、網站選單、搜尋、主題和品牌功能。
 
@@ -59,7 +60,7 @@ ht-degree: 2%
 *必要*)網站功能選單中顯示的文字
 
 * **[!UICONTROL URL]**
-(必*要*)用於產生URI的名稱。名稱必須符合AEM和JCR所強加的[命名慣例](../../help/sites-developing/naming-conventions.md)。
+(必*要*)用於產生URI的名稱。名稱必須符合[和JCR強加的命名約定&lt;a1/AEM>。](../../help/sites-developing/naming-conventions.md)
 
 例如，使用從[開始使用](getting-started.md)教學課程建立的網站，如果
 
@@ -108,7 +109,7 @@ ht-degree: 2%
 
 * 請參閱[標題和URL設定](#title-and-url-settings)
 * **[!UICONTROL 允許特]**
-權成員如果勾選，則部落格僅允許特權成員通過允許選擇特權成員組 [建立文章](users.md#privileged-members-group)。如果未選中，則允許所有社區成員建立。 預設為未勾選。
+權成員如果勾選，則部落格將只允許特權成員通過允許選擇特權成員組 [來建立文章](users.md#privileged-members-group)。如果未選中，則允許所有社區成員建立。 預設為未勾選。
 
 * **[!UICONTROL 允許上]**
 傳檔案如果勾選，部落格將包含成員上傳檔案的功能。已勾選預設值。
@@ -121,7 +122,7 @@ ht-degree: 2%
 
 ### 日曆功能 {#calendar-function}
 
-日曆功能是具有[日曆元件](calendar.md)的頁，配置為允許標籤。 另請參閱[開發人員的Calendar Essentials](calendar-basics-for-developers.md)。
+日曆函式是具有[日曆元件](calendar.md)的頁，配置為允許標籤。 另請參閱[開發人員的Calendar Essentials](calendar-basics-for-developers.md)。
 
 新增至範本時，會開啟下列對話方塊：
 
@@ -132,7 +133,7 @@ ht-degree: 2%
 釘選如果勾選，論壇將允許將主題回覆釘選至留言清單的開頭。已勾選預設值。
 
 * **[!UICONTROL 允許特]**
-權成員如果勾選，則部落格僅允許特權成員通過允許選擇特權成員組 [建立文章](users.md#privileged-members-group)。如果未選中，則允許所有社區成員建立。 預設為未勾選。
+權成員如果勾選，則部落格將只允許特權成員通過允許選擇特權成員組 [來建立文章](users.md#privileged-members-group)。如果未選中，則允許所有社區成員建立。 預設為未勾選。
 
 * **[!UICONTROL 允許上]**
 傳檔案如果勾選，部落格將包含成員上傳檔案的功能。已勾選預設值。
@@ -282,7 +283,7 @@ ht-degree: 2%
 
 ### 頁面功能 {#page-function}
 
-頁面功能會將空白頁面新增至社群網站，並將其連線至社群網站的功能：登入、選單、通知、訊息、主題和品牌。 內容可使用[標準AEM製作模式](../../help/sites-authoring/editing-content.md)新增至頁面。
+頁面功能會將空白頁面新增至社群網站，並將其連線至社群網站的功能：登入、選單、通知、訊息、主題和品牌。 使用[標準製作模式](../../help/sites-authoring/editing-content.md)可將內AEM容新增至頁面。
 
 新增至範本時，只有[標題和URL設定](#title-and-url-settings)的組態。
 
@@ -312,7 +313,7 @@ QnA函式是一個具有[QnA元件](working-with-qna.md)的頁面，該元件配
 
 ## 建立社群功能 {#create-community-function}
 
-通過選擇「社區功能」控制台頂部的`Create Community Function`表徵圖，可以建立社區功能。 您可以建立以相同AEM Blueprint為基礎的多個函式，然後以作者編輯模式開啟，進行唯一自訂。
+通過選擇「社區功能」控制台頂部的`Create Community Function`表徵圖，可以建立社區功能。 可以建立基於相同Blueprint的多AEM個函式，然後通過在作者編輯模式中開啟來唯一定制這些函式。
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
@@ -357,7 +358,7 @@ QnA函式是一個具有[QnA元件](working-with-qna.md)的頁面，該元件配
 
 ### 配置元件{#configuring-components}
 
-社群函式會實作為AEM Blueprint的即時副本，其詳細資訊會記錄在[ Multi Site Manager](../../help/sites-administering/msm.md)中。
+社群功能實作為Blueprint的即時副本AEM，其詳細資訊記錄在[多網站管理員](../../help/sites-administering/msm.md)中。
 
 您不僅可以製作頁面內容，還可以設定元件。
 
