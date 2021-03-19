@@ -7,10 +7,11 @@ uuid: cd123d42-f7cf-489d-8182-f3a01a2a4799
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
+feature: 表單資料模型
 translation-type: tm+mt
-source-git-commit: 0fe74ef5483cf1f577be51c200ab2820d7ed64e5
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3150'
+source-wordcount: '3153'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您必須同時是&#x200B;**fdm-author**&#x200B;和&#x200B;**forms-user**&#x200B;群組的成員，才能建立和使用表單資料模型。 請連絡您的AEM管理員，以成為群組的成員。
+>您必須同時是&#x200B;**fdm-author**&#x200B;和&#x200B;**forms-user**&#x200B;群組的成員，才能建立和使用表單資料模型。 請連絡您AEM的管理員，以成為群組的成員。
 
 ## 添加資料模型對象和服務{#add-data-model-objects-and-services}
 
@@ -44,7 +45,7 @@ ht-degree: 0%
 
 要添加資料模型對象和服務：
 
-1. 登入AEM作者例項，導覽至「**[!UICONTROL 表單>資料整合]**」，並開啟您要新增資料模型物件的表單資料模型。
+1. 登入作AEM者例項，導覽至「**[!UICONTROL Forms>資料整合]**」，並開啟您要新增資料模型物件的表單資料模型。
 1. 在「資料來源」窗格中，展開資料來源以檢視可用的資料模型物件和服務。
 1. 選擇要添加到表單資料模型的資料模型對象和服務，並點選&#x200B;**[!UICONTROL 添加選定項]**。
 
@@ -80,7 +81,7 @@ ht-degree: 0%
 
 要建立沒有資料源的資料模型對象，請執行以下操作：
 
-1. 登入AEM作者例項，導覽至「**[!UICONTROL 表單>資料整合]**」，並開啟您要在其中建立資料模型物件或實體的表單資料模型。
+1. 登入作AEM者例項，導覽至「**[!UICONTROL Forms>資料整合]**」，並開啟您要建立資料模型物件或實體的表單資料模型。
 1. 點選&#x200B;**[!UICONTROL 建立實體]**。
 1. 在「建立資料模型」對話框中，指定資料模型對象的名稱，然後點選&#x200B;**[!UICONTROL 添加]**。 資料模型對象被添加到表單資料模型中。 請注意，新添加的資料模型對象不綁定到資料源，並且沒有任何屬性，如下圖所示。
 
@@ -160,7 +161,7 @@ ht-degree: 0%
 
    ![edit-argument](assets/edit-argument.png)
 
-   將id引數系結至AEM使用者設定檔的empid屬性
+   將id引數系結至使用者描述檔的AEMempid屬性
 
 1. 點選&#x200B;**[!UICONTROL Done]**&#x200B;以儲存引數，點選&#x200B;**[!UICONTROL Done]**&#x200B;以儲存屬性，然後點選&#x200B;**[!UICONTROL Save]**&#x200B;以儲存表單資料模型。
 
