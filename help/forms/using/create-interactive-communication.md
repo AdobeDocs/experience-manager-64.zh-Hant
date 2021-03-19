@@ -7,10 +7,11 @@ uuid: b98e9a49-cef2-42f2-b484-8765b859895b
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c106aa41-cbc0-4daf-9ac6-6c0d23710010
+feature: 互動式通訊
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3152'
+source-wordcount: '3154'
 ht-degree: 1%
 
 ---
@@ -35,7 +36,7 @@ ht-degree: 1%
 
 ## 建立互動式通訊 {#createic}
 
-1. 登入AEM作者例項，並導覽至「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**」。
+1. 登入作AEM者例項並導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
 1. 點選「**[!UICONTROL 建立]**」並選取「互動式通訊&#x200B;]**」。**[!UICONTROL 「建立互動式通信」頁面。
 
    ![建立互動式通訊](assets/create-interactive-communication.png)
@@ -45,10 +46,10 @@ ht-degree: 1%
    * **[!UICONTROL 標題]**:輸入「互動式通訊」的標題。
    * **[!UICONTROL 名稱*]**:「互動式通訊」的名稱是從您輸入的標題衍生而來。視需要編輯。
    * **[!UICONTROL 說明]**:輸入有關互動式通信的說明。
-   * **[!UICONTROL 表單資料模型*]**:瀏覽並選取表單資料模型。如需表單資料模型的詳細資訊，請參閱[AEM Forms Data Integration](/help/forms/using/data-integration.md)。
+   * **[!UICONTROL 表單資料模型*]**:瀏覽並選取表單資料模型。如需表單資料模型的詳細資訊，請參閱[AEM Forms資料整合](/help/forms/using/data-integration.md)。
    * **[!UICONTROL 預填服務]**:選擇預填充服務以檢索資料並預填充互動式通信。
-   * **[!UICONTROL 後處理類型]**:您可以選取在提交「互動式通訊」時觸發的AEM或Forms工作流程。選擇要觸發的工作流類型。
-   * **[!UICONTROL 後處理]**:選擇要觸發的工作流的名稱。當您選取AEM工作流程時，請提供「附件路徑」、「版面路徑」、「PDF路徑」、「列印資料路徑」和「Web資料路徑」。
+   * **[!UICONTROL 後處理類型]**:您可以選AEM擇在提交互動式通訊時觸發的或Forms工作流程。選擇要觸發的工作流類型。
+   * **[!UICONTROL 後處理]**:選擇要觸發的工作流的名稱。當您選取工AEM作流程時，請提供附件路徑、版面路徑、PDF路徑、列印資料路徑和Web資料路徑。
    * **[!UICONTROL 標籤]**:選擇要套用至互動式通訊的標籤。您也可以輸入新的／自訂標籤名稱，然後按Enter鍵建立它。
    * **[!UICONTROL 作者]**：作者名稱會自動取自已登入使用者的使用者名稱。
    * **[!UICONTROL 發佈日期：]** 輸入發佈互動式通訊的日期。
@@ -62,7 +63,7 @@ ht-degree: 1%
    * **[!UICONTROL 使用列印為網頁頻道的主版：]** 選取此選項可建立與列印頻道同步的網頁頻道。使用列印頻道作為網頁頻道的主節點，可確保網頁頻道的內容與資料系結是從列印頻道衍生而來，當您點選「同步化」時，列印頻道中所做的變更會反映在網頁頻道中。 但是，作者可以視需要中斷Web頻道中特定元件的繼承。 如需詳細資訊，請參閱[同步Web頻道與列印頻道](/help/forms/using/create-interactive-communication.md#synchronize)。
    * **[!UICONTROL Web：選]** 取此選項可產生Web頻道或互動式通訊的回應式輸出。
    * **[!UICONTROL 互動式通訊網頁範本*:]** 瀏覽並選取網頁範本。
-   * **** 主題 **[!UICONTROL 選擇主題*]**:瀏覽並選取主題，以設定互動式通訊網路頻道的樣式。如需詳細資訊，請參閱「AEM Forms中的[主題」。](/help/forms/using/themes.md)
+   * **** 主題 **[!UICONTROL 選擇主題*]**:瀏覽並選取主題，以設定互動式通訊網路頻道的樣式。如需詳細資訊，請參閱AEM Forms的[主題](/help/forms/using/themes.md)。
 
    有關打印通道和Web通道的詳細資訊，請參閱[打印通道和Web通道](/help/forms/using/web-channel-print-channel.md)。
 
@@ -74,7 +75,7 @@ ht-degree: 1%
 
 有關互動式通信編寫介面的詳細資訊，請參閱[互動式通信編寫簡介](/help/forms/using/introduction-interactive-communication-authoring.md)。
 
-1. 當您按[建立互動式通訊](#createic)中所述點選編輯時，就會啟動互動式通訊製作介面。 或者，您也可以導覽至AEM上現有的互動式通訊資產，選取它，然後點選&#x200B;**[!UICONTROL Edit]**&#x200B;以啟動互動式通訊製作介面。
+1. 當您按[建立互動式通訊](#createic)中所述點選編輯時，就會啟動互動式通訊製作介面。 或者，您可以導覽至上現有的互動式通訊AEM資產，選取它，然後點選&#x200B;**[!UICONTROL 編輯]**&#x200B;以啟動互動式通訊製作介面。
 
    依預設，互動式通訊的列印頻道會出現，除非互動式通訊僅限網頁頻道。 「互動式通訊」的「列印」頻道會顯示目標區域，如所選XDP/列印頻道範本中所示。 在這些目標區域和欄位中，您可以新增元件或資產。
 
@@ -257,7 +258,7 @@ ht-degree: 1%
 
 您可以使用版面片段在互動通訊中新增動態表格。 下列步驟使用信用卡對帳單的範例來說明在互動式通訊中建立動態表格時使用版面片段的情形。
 
-1. 請確定建立表格所需的版面片段可在AEM中使用。
+1. 請確定中提供了建立表所需的佈局片段AEM。
 1. 在互動式通訊的列印頻道中，從資產瀏覽器將版面片段（含多欄表格）拖放至目標區域。
 
    ![lf_dragdrop](assets/lf_dragdrop.png)
