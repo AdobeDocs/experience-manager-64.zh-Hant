@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '543'
 ht-degree: 2%
 
 ---
@@ -73,7 +74,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->如果使用AEM 6.1 Communities FP4或更舊版本，請勿將群組函式新增至群組範本。
+>如果使AEM用6.1 Communities FP4或更舊版本，請勿將群組功能新增至群組範本。
 >
 >從Communities [FP1](communities.md#latestfeaturepack)開始，即可使用巢狀群組功能。
 >
