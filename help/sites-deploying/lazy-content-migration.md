@@ -1,18 +1,19 @@
 ---
 title: 延遲內容移轉
 seo-title: 延遲內容移轉
-description: 瞭解AEM 6.4中的「延遲內容移轉」。
-seo-description: 瞭解AEM 6.4中的「延遲內容移轉」。
+description: 瞭解Lazy Content Migration in AEM 6.4。
+seo-description: 瞭解Lazy Content Migration in AEM 6.4。
 uuid: 9c84f7fe-31d3-4b63-8975-9e75a6c44b7d
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
+feature: 升級
 translation-type: tm+mt
-source-git-commit: ba16a6870bc621a585b2b2d7c7536baef05adc72
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '679'
 ht-degree: 6%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 6%
 
 # 延遲內容移轉{#lazy-content-migration}
 
-為了向後相容，從AEM 6.3開始，**/etc**&#x200B;和&#x200B;**/content**&#x200B;中的內容和組態不會立即在升級時觸及或轉換。 這樣做是為了確保客戶應用程式對這些結構的依賴性保持不變。 即使AEM 6.4現成可用的內容會裝載在其他位置，與這些內容結構相關的功能仍然相同。
+為了向後相容，從6.3開始的&#x200B;**/etc**&#x200B;和&#x200B;**/content**&#x200B;中的內容和組態不會立即在升級時觸及或轉換。 這樣做是為了確保客戶應用程式對這些結構的依賴性保持不變。 與這些內容結構相關的功能仍然相同，即使出廠時的內容AEM6.4會裝載在其他位置。
 
 雖然並非所有位置都可自動轉換，但有一些延遲`CodeUpgradeTasks`也稱為「延遲內容移轉」。 這允許客戶通過使用此系統屬性重新啟動實例來觸發這些自動轉換：
 
@@ -36,7 +37,7 @@ ht-degree: 6%
 
 以下是6.4中引入的`CodeUpgradeTasks`完整清單：
 
-| **名稱** | **與舊版AEM相關** | **移轉類型** | **詳細資料** |
+| **名稱** | **與舊AEM版相關** | **移轉類型** | **詳細資料** |
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5=&quot;&quot;> | 立即 |  |
 | `Cq60MSMContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 檢測`VersionStorage`中所有已刪除的`LiveRelationShips`，並將排除屬性添加到父級 |
@@ -54,8 +55,8 @@ ht-degree: 6%
 | `CQ63MetadataSchemaConfigUpdate` | &lt; 6=&quot;&quot;> | 立即 | 調整資料夾上的metadataSchema屬性，方法是將相對路徑取代為&#x200B;**/conf**，取代&#x200B;**/apps** |
 | `CQ63MobileAppsNavUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 調整導覽結構 |
 | `CQ63MonitoringDashboardsConfigUpdate` | &lt; 6=&quot;&quot;> | 立即 | 從&#x200B;**/libs**&#x200B;和&#x200B;**/apps**&#x200B;移動監控控制面板的自訂配置 |
-| `CQ63ProcessingProfileConfigUpdate` | &lt; 6=&quot;&quot;> | 立即 | 轉換Assets中的processingProfile屬性（直到6.1），以符合6.3和更新的結構。 此外，還可調整描述檔至&#x200B;**/conf**&#x200B;的相對路徑，以取代&#x200B;**/apps**。 |
-| `CQ63ToolsMenuEntriesContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 升級任務：在升級時刪除過時的CRXDE Lite和Web控制台菜單項。 |
+| `CQ63ProcessingProfileConfigUpdate` | &lt; 6=&quot;&quot;> | 立即 | 轉換Assets中的processingProfile屬性（直到6.1），以符合6.3和更新版本的結構。 此外，還可調整描述檔至&#x200B;**/conf**&#x200B;的相對路徑，以取代&#x200B;**/apps**。 |
+| `CQ63ToolsMenuEntriesContentUpgrade` | &lt; 6=&quot;&quot;> | 立即 | 升級任務，在升級時刪除過時的CRXDE Lite和Web控制台菜單項。 |
 | `CQ64CommunitiesConfigsCleanupTask` | &lt; 6=&quot;&quot;> | 延遲 | 移動SRP雲端設定、社群關注字詞設定、清除&#x200B;**/etc/social**&#x200B;和&#x200B;**/etc/enablement**（執行延遲移轉時，需要調整任何參照和資料——應用程式部分不應再依據此結構）。 |
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6=&quot;&quot;> | 延遲 | 清除&#x200B;**/etc/cloudsettings**（包含ContextHub配置）。 設定會在第一次存取時自動移轉。 如果啟動「延遲內容移轉」並升級&#x200B;**/etc/cloudsettings**&#x200B;中的此內容，必須在升級前透過套件保留並重新安裝，以便隱式轉換開始，並在完成後解除安裝套件。 |
 | `CQ64UsersTitleFixTask` | &lt; 6=&quot;&quot;> | 延遲 | 將舊版標題結構調整為使用者描述檔節點中的標題。 |
