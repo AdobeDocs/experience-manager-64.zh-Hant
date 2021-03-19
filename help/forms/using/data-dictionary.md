@@ -7,10 +7,11 @@ uuid: cc976dff-f243-4807-a92c-81b78476a744
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3866'
+source-wordcount: '3868'
 ht-degree: 1%
 
 ---
@@ -39,7 +40,7 @@ ht-degree: 1%
 
 ## 必備條件 {#prerequisite}
 
-安裝[相容性軟體包](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)以查看&#x200B;**表單**&#x200B;頁上的&#x200B;**資料字典**&#x200B;選項。
+安裝[相容性軟體包](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)以查看&#x200B;**Forms**&#x200B;頁上的&#x200B;**資料字典**&#x200B;選項。
 
 ## 建立資料字典{#createdatadictionary}
 
@@ -342,7 +343,7 @@ ht-degree: 1%
 
 ### 計算資料字典元素{#computedddelements}
 
-資料字典也可以包括計算元素。 計算資料字典元素始終與表達式相關聯。 此運算式會評估為在執行時期取得資料字典元素的值。 計算的DDE值是其它DDE值或文字的函式。 預設情況下，支援JSP表達式語言(EL)表達式。 EL運算式使用${ }字元，而有效的運算式可包含文字、運算子、變數（資料字典元素參考）和函式呼叫。 在引用表達式中的資料字典元素時，使用DDE的引用名稱。 參考名稱對於資料字典內的每個資料字典元素都是唯一的。
+資料字典也可以包括計算元素。 計算資料字典元素始終與表達式相關聯。 此運算式會評估為在執行時期取得資料字典元素的值。 計算的DDE值是其它DDE值或文本的函式。 預設情況下，支援JSP表達式語言(EL)表達式。 EL運算式使用${ }字元，而有效的運算式可包含文字、運算子、變數（資料字典元素參考）和函式呼叫。 在引用表達式中的資料字典元素時，使用DDE的引用名稱。 參考名稱對於資料字典內的每個資料字典元素都是唯一的。
 
 計算的DDE PersonFullName可與EL串連運算式關聯，例如${PersonFirstName} ${PersonLastName}。
 
