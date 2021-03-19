@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
+role: 開發人員
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '8244'
+source-wordcount: '8245'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 **關於加密服務**
 
-加密服務可讓您加密和解密檔案。 當文檔加密時，其內容將變得不可讀。 授權用戶可以解密文檔以獲得對內容的訪問。 如果PDF檔案使用密碼加密，使用者必須先指定開啟的密碼，才能在Adobe Reader或Adobe Acrobat中檢視該檔案。 同樣地，如果PDF檔案使用憑證加密，使用者必須使用與用來加密PDF檔案的憑證（私密金鑰）對應的公開金鑰來解密PDF檔案。
+加密服務可讓您加密和解密檔案。 當文檔加密時，其內容將變得不可讀。 授權用戶可以解密文檔以獲得對內容的訪問。 如果使用密碼加密PDF檔案，使用者必須指定開啟的密碼，才能在Adobe Reader或Adobe Acrobat檢視該檔案。 同樣地，如果PDF檔案使用憑證加密，使用者必須使用與用來加密PDF檔案的憑證（私密金鑰）對應的公開金鑰來解密PDF檔案。
 
 您可以使用Encryption服務完成以下任務：
 
@@ -35,19 +36,19 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如需加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+   >有關加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 使用密碼{#encrypting-pdf-documents-with-a-password}加密PDF檔案
 
-當您使用密碼加密PDF檔案時，使用者必須指定密碼才能在Adobe Reader或Acrobat中開啟PDF檔案。 此外，在對檔案執行其他AEM Forms作業（例如數位簽署PDF檔案）之前，必須先解除鎖定密碼加密的PDF檔案。
+當您使用密碼加密PDF檔案時，使用者必須指定密碼才能在Adobe Reader或Acrobat開啟PDF檔案。 此外，在對檔案執行其他AEM Forms作業（例如數位簽署PDF檔案）之前，必須先解除鎖定密碼加密的PDF檔案。
 
 >[!NOTE]
 >
->如果您將加密的PDF檔案上傳至AEM Forms存放庫，它將無法解密PDF檔案並擷取XDP內容。 建議您不要在將檔案上傳至AEM Forms儲存庫之前加密檔案。 （請參閱[編寫資源](/help/forms/developing/aem-forms-repository.md#writing-resources)。）
+>如果您將加密的PDF檔案上傳至AEM Forms儲存庫，它將無法解密PDF檔案並擷取XDP內容。 建議您不要在將文檔上載到AEM Forms儲存庫之前加密該文檔。 （請參閱[編寫資源](/help/forms/developing/aem-forms-repository.md#writing-resources)。）
 
 >[!NOTE]
 >
->如需加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有關加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步驟{#summary-of-steps}摘要
 
@@ -69,8 +70,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（若AEM Forms部署在JBoss上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，則為必要）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，則為必要)
+* jbossall-client.jar(如果AEM Forms部署在JBoss上，則為必需)
 
 **建立加密客戶端API對象**
 
@@ -109,7 +110,7 @@ ht-degree: 0%
 
 [使用web service API加密PDF檔案](encrypting-decrypting-pdf-documents.md#encrypting-a-pdf-document-using-the-web-service-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -141,7 +142,7 @@ ht-degree: 0%
    * 調用`PasswordEncryptionOptionSpec`物件的`setEncryptOption`方法並傳遞指定要加密之檔案資源的`PasswordEncryptionOption`列舉值，以指定要加密的PDF檔案資源。 例如，若要加密整個PDF檔案，包括其中繼資料及其附件，請指定`PasswordEncryptionOption.ALL`。
    * 使用`ArrayList`建構函式建立儲存加密權限的`java.util.List`物件。
    * 通過調用`java.util.List`對象「s `add`」方法並傳遞與要設定的權限相對應的枚舉值來指定權限。 例如，若要設定允許使用者複製PDF檔案中資料的權限，請指定`PasswordEncryptionPermission.PASSWORD_EDIT_COPY`。 （請針對每個要設定的權限重複此步驟）。
-   * 調用`PasswordEncryptionOptionSpec`物件的`setCompatability`方法並傳遞指定Acrobat相容性等級的列舉值，以指定Acrobat相容性選項。 例如，您可以指定`PasswordEncryptionCompatability.ACRO_7`。
+   * 通過調用`PasswordEncryptionOptionSpec`對象的`setCompatability`方法並傳遞指定Acrobat相容性級別的枚舉值，指定Acrobat相容性選項。 例如，您可以指定`PasswordEncryptionCompatability.ACRO_7`。
    * 指定密碼值，讓使用者呼叫`PasswordEncryptionOptionSpec`物件的`setDocumentOpenPassword`方法並傳遞代表開啟密碼的字串值，以開啟加密的PDF檔案。
    * 指定主密碼值，讓使用者透過叫用`PasswordEncryptionOptionSpec`物件的`setPermissionPassword`方法並傳遞代表主密碼的字串值，從PDF檔案移除加密。
 
@@ -165,7 +166,7 @@ ht-degree: 0%
 
 [快速入門（SOAP模式）:使用Java API加密PDF檔案](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -179,17 +180,17 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >將`localhost`取代為代管AEM Forms之伺服器的IP位址。
+   >將`localhost`取代為代管AEM Forms的伺服器的IP位址。
 
 1. 建立加密客戶端API對象。
 
    * 使用其預設建構子建立`EncryptionServiceClient`對象。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞給AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
    * 獲取`EncryptionServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將返回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 將表AEM單用戶名分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 將相應的口令值分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值`HttpClientCredentialType.Basic`分配給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`分配給欄位`BasicHttpBindingSecurity.Security.Mode`。
@@ -232,7 +233,7 @@ ht-degree: 0%
 
 [使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 使用憑證{#encrypting-pdf-documents-with-certificates}加密PDF檔案
 
@@ -247,15 +248,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您將加密的PDF檔案上傳至AEM Forms存放庫，它將無法解密PDF檔案並擷取XDP內容。 建議您不要在將檔案上傳至AEM Forms儲存庫之前加密檔案。 （請參閱[編寫資源](/help/forms/developing/aem-forms-repository.md#writing-resources)。）
+>如果您將加密的PDF檔案上傳至AEM Forms儲存庫，它將無法解密PDF檔案並擷取XDP內容。 建議您不要在將文檔上載到AEM Forms儲存庫之前加密該文檔。 （請參閱[編寫資源](/help/forms/developing/aem-forms-repository.md#writing-resources)。）
 
 >[!NOTE]
 >
->您必須先確保將憑證新增至AEM Forms，才能使用憑證加密PDF檔案。 憑證是使用管理控制台或使用信任管理器API以程式設計方式新增。 （請參閱[使用Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)匯入認證。）
+>在使用憑證加密PDF檔案之前，您必須先確定您已將憑證新增至AEM Forms。 憑證是使用管理控制台或使用信任管理器API以程式設計方式新增。 （請參閱[使用Trust Manager API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api)匯入認證。）
 
 >[!NOTE]
 >
->如需加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有關加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步驟{#summary_of_steps-1}摘要
 
@@ -278,8 +279,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，則為必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，則為必需)
 
 **建立加密客戶端API對象**
 
@@ -287,7 +288,7 @@ ht-degree: 0%
 
 **取得PDF檔案以加密**
 
-您必須取得未加密的PDF檔案才能加密。 如果您嘗試保護已加密的PDF檔案，則會擲出例外。
+您必須取得未加密的PDF檔案才能加密。 如果您嘗試保護已加密的PDF檔案，則會擲回例外。
 
 **參考憑證**
 
@@ -313,7 +314,7 @@ ht-degree: 0%
 
 [使用web service API使用憑證加密PDF檔案](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -357,7 +358,7 @@ ht-degree: 0%
 
    * 通過調用`CertificateEncryptionOptionSpec`對象的建構子建立對象。
    * 調用`CertificateEncryptionOptionSpec`物件的`setOption`方法並傳遞指定要加密之檔案資源的`CertificateEncryptionOption`列舉值，以指定要加密的PDF檔案資源。 例如，若要加密整個PDF檔案，包括其中繼資料及其附件，請指定`CertificateEncryptionOption.ALL`。
-   * 調用`CertificateEncryptionOptionSpec`物件的`setCompat`方法並傳遞指定Acrobat相容性等級的`CertificateEncryptionCompatibility`列舉值，以指定Acrobat相容性選項。 例如，您可以指定`CertificateEncryptionCompatibility.ACRO_7`。
+   * 通過調用`CertificateEncryptionOptionSpec`對象的`setCompat`方法並傳遞指定Acrobat相容性級別的`CertificateEncryptionCompatibility`枚舉值，指定Acrobat相容性選項。 例如，您可以指定`CertificateEncryptionCompatibility.ACRO_7`。
 
 1. 建立憑證加密的PDF檔案。
 
@@ -380,7 +381,7 @@ ht-degree: 0%
 
 [快速入門（SOAP模式）:使用Java API使用憑證加密PDF檔案](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -394,17 +395,17 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >將`localhost`取代為代管AEM Forms之伺服器的IP位址。
+   >將`localhost`取代為代管AEM Forms的伺服器的IP位址。
 
 1. 建立加密客戶端API對象。
 
    * 使用其預設建構子建立`EncryptionServiceClient`對象。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞給AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
    * 獲取`EncryptionServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將返回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 將表AEM單用戶名分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 將相應的口令值分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值`HttpClientCredentialType.Basic`分配給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`分配給欄位`BasicHttpBindingSecurity.Security.Mode`。
@@ -459,15 +460,15 @@ ht-degree: 0%
 
 [使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 刪除基於證書的加密{#removing-certificate-based-encryption}
 
-您可從PDF檔案移除憑證式加密，讓使用者在Adobe Reader或Acrobat中開啟PDF檔案。 若要從使用憑證加密的PDF檔案移除加密，必須參考公開金鑰。 從PDF檔案移除加密後，就不再安全。
+您可從PDF檔案移除憑證式加密，讓使用者在Adobe Reader或Acrobat開啟PDF檔案。 若要從使用憑證加密的PDF檔案移除加密，必須參考公開金鑰。 從PDF檔案移除加密後，就不再安全。
 
 >[!NOTE]
 >
->如需加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有關加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步驟{#summary_of_steps-2}摘要
 
@@ -488,8 +489,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，則為必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，則為必需)
 
 **建立加密服務客戶端**
 
@@ -505,11 +506,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->私密金鑰會儲存在AEM Forms信任商店中。 將證書放在那裡時，會指定別名值。
+>私密金鑰儲存在AEM Forms信託商店。 將證書放在那裡時，會指定別名值。
 
 **儲存PDF檔案**
 
-從加密的PDF檔案移除憑證式加密後，您就可將PDF檔案儲存為PDF檔案。 使用者可在Adobe Reader或Acrobat中開啟PDF檔案。
+從加密的PDF檔案移除憑證式加密後，您就可將PDF檔案儲存為PDF檔案。 使用者可在Adobe Reader或Acrobat開啟PDF檔案。
 
 **另請參閱**
 
@@ -517,7 +518,7 @@ ht-degree: 0%
 
 [使用web service API移除憑證式加密](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-web-service-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -561,7 +562,7 @@ ht-degree: 0%
 
 [快速入門（SOAP模式）:使用Java API移除憑證式加密](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -575,17 +576,17 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >將`localhost`取代為代管AEM Forms之伺服器的IP位址。
+   >將`localhost`取代為代管AEM Forms的伺服器的IP位址。
 
 1. 建立加密服務客戶端。
 
    * 使用其預設建構子建立`EncryptionServiceClient`對象。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞給AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
    * 獲取`EncryptionServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將返回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 將表AEM單用戶名分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 將相應的口令值分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值`HttpClientCredentialType.Basic`分配給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`分配給欄位`BasicHttpBindingSecurity.Security.Mode`。
@@ -620,15 +621,15 @@ ht-degree: 0%
 
 [使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 刪除密碼加密{#removing-password-encryption}
 
-您可從PDF檔案移除密碼加密，讓使用者在Adobe Reader或Acrobat中開啟PDF檔案，而不需指定密碼。 從PDF檔案移除密碼加密後，檔案就不再安全。
+可從PDF檔案移除密碼加密，讓使用者在Adobe Reader或Acrobat開啟PDF檔案，而不需指定密碼。 從PDF檔案移除密碼加密後，檔案就不再安全。
 
 >[!NOTE]
 >
->如需加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有關加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步驟{#summary_of_steps-3}摘要
 
@@ -649,8 +650,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（若AEM Forms部署在JBoss上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，則為必要）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，則為必要)
+* jbossall-client.jar(如果AEM Forms部署在JBoss上，則為必需)
 
 **建立加密服務客戶端**
 
@@ -666,11 +667,11 @@ ht-degree: 0%
 
 **儲存PDF檔案**
 
-在Encryption服務移除PDF檔案中以密碼為基礎的加密後，您可以將PDF檔案儲存為PDF檔案。 使用者可以在Adobe Reader或Acrobat中開啟PDF檔案，毋需指定密碼。
+在Encryption服務移除PDF檔案中以密碼為基礎的加密後，您可以將PDF檔案儲存為PDF檔案。 使用者可在Adobe Reader或Acrobat開啟PDF檔案，毋需指定密碼。
 
 **另請參閱**
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -724,17 +725,17 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >將`localhost`取代為代管AEM Forms之伺服器的IP位址。
+   >將`localhost`取代為代管AEM Forms的伺服器的IP位址。
 
 1. 建立加密服務客戶端。
 
    * 使用其預設建構子建立`EncryptionServiceClient`對象。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞給AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
    * 獲取`EncryptionServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將返回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 將表AEM單用戶名分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 將相應的口令值分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值`HttpClientCredentialType.Basic`分配給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`分配給欄位`BasicHttpBindingSecurity.Security.Mode`。
@@ -767,15 +768,15 @@ ht-degree: 0%
 
 [使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 解鎖加密的PDF檔案{#unlocking-encrypted-pdf-documents}
 
-必須先解除鎖定密碼加密或憑證加密的PDF檔案，才能對其執行其他AEM Forms作業。 如果您嘗試對加密的PDF檔案執行操作，將會產生例外。 在解除鎖定加密的PDF檔案後，您可以對其執行一或多個操作。 這些作業可以屬於其他服務，例如Acrobat Reader DC擴充功能服務。
+必須先解除鎖定密碼加密或憑證加密的PDF檔案，才能對其執行其他AEM Forms作業。 如果您嘗試對加密的PDF檔案執行操作，將會產生例外。 在解除鎖定加密的PDF檔案後，您可以對其執行一或多個操作。 這些操作可以屬於其他服務，如Acrobat Reader DC擴展服務。
 
 >[!NOTE]
 >
->如需加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有關加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步驟{#summary_of_steps-4}摘要
 
@@ -785,7 +786,7 @@ ht-degree: 0%
 1. 建立加密服務客戶端。
 1. 取得加密的PDF檔案。
 1. 解除鎖定檔案。
-1. 執行AEM Forms作業。
+1. 執行AEM Forms操作。
 
 **包含專案檔案**
 
@@ -796,8 +797,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，則為必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，則為必需)
 
 **建立加密服務客戶端**
 
@@ -813,9 +814,9 @@ ht-degree: 0%
 
 若要解除鎖定憑證加密的PDF檔案，您需要加密的PDF檔案，以及與用來加密PDF檔案的私密金鑰相對應的公開金鑰別名值。
 
-**執行AEM Forms作業**
+**執行AEM Forms操作**
 
-在解除鎖定加密的PDF檔案後，您可以對其執行其他服務操作，例如套用使用權。 此操作屬於Acrobat Reader DC Extensions服務。
+在解除鎖定加密的PDF檔案後，您可以對其執行其他服務操作，例如套用使用權。 此操作屬於Acrobat Reader DC擴展服務。
 
 **另請參閱**
 
@@ -823,7 +824,7 @@ ht-degree: 0%
 
 [使用web service API解除鎖定加密的PDF檔案](encrypting-decrypting-pdf-documents.md#unlock-an-encrypted-pdf-document-using-the-web-service-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -861,11 +862,11 @@ ht-degree: 0%
    * `com.adobe.idp.Document`物件，其中包含憑證加密的PDF檔案。
    * 一個字串值，它指定與用於加密PDF文檔的私鑰相對應的公鑰的別名。
 
-   `unlockPDFUsingPassword`和`unlockPDFUsingCredential`方法都會傳回您傳遞至其他AEM Forms Java方法以執行作業的`com.adobe.idp.Document`物件。
+   `unlockPDFUsingPassword`和`unlockPDFUsingCredential`方法都會傳回您傳遞至另一個AEM FormsJava方法以執行操作的`com.adobe.idp.Document`物件。
 
-1. 執行AEM Forms作業。
+1. 執行AEM Forms操作。
 
-   對解除鎖定的PDF檔案執行AEM Forms作業，以符合您的業務需求。 例如，假設您要將使用權限套用至解除鎖定的PDF檔案，請將`unlockPDFUsingPassword`或`unlockPDFUsingCredential`方法傳回的`com.adobe.idp.Document`物件傳遞至`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法。
+   對解鎖的PDF檔案執行AEM Forms作業，以符合您的業務需求。 例如，假設您要將使用權限套用至解除鎖定的PDF檔案，請將`unlockPDFUsingPassword`或`unlockPDFUsingCredential`方法傳回的`com.adobe.idp.Document`物件傳遞至`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法。
 
 **另請參閱**
 
@@ -875,7 +876,7 @@ ht-degree: 0%
 
 [將使用權套用至PDF檔案](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -889,17 +890,17 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >將`localhost`取代為代管AEM Forms之伺服器的IP位址。
+   >將`localhost`取代為代管AEM Forms的伺服器的IP位址。
 
 1. 建立加密服務客戶端。
 
    * 使用其預設建構子建立`EncryptionServiceClient`對象。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞給AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
    * 獲取`EncryptionServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將返回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 將表AEM單用戶名分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 將相應的口令值分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值`HttpClientCredentialType.Basic`分配給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`分配給欄位`BasicHttpBindingSecurity.Security.Mode`。
@@ -926,11 +927,11 @@ ht-degree: 0%
    * `BLOB`物件，其中包含憑證加密的PDF檔案。
    * 一個字串值，它指定與用於加密PDf文檔的私鑰相對應的公鑰的別名。
 
-   `unlockPDFUsingPassword`和`unlockPDFUsingCredential`方法都會傳回您傳遞至其他AEM Forms方法以執行作業的`com.adobe.idp.Document`物件。
+   `unlockPDFUsingPassword`和`unlockPDFUsingCredential`方法都會傳回您傳遞至另一個AEM Forms方法以執行操作的`com.adobe.idp.Document`物件。
 
-1. 執行AEM Forms作業。
+1. 執行AEM Forms操作。
 
-   對解除鎖定的PDF檔案執行AEM Forms作業，以符合您的業務需求。 例如，假設您要將使用權限套用至解除鎖定的PDF檔案，請將`unlockPDFUsingPassword`或`unlockPDFUsingCredential`方法傳回的`BLOB`物件傳遞至`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法。
+   對解鎖的PDF檔案執行AEM Forms作業，以符合您的業務需求。 例如，假設您要將使用權限套用至解除鎖定的PDF檔案，請將`unlockPDFUsingPassword`或`unlockPDFUsingCredential`方法傳回的`BLOB`物件傳遞至`ReaderExtensionsServiceClient`物件的`applyUsageRights`方法。
 
 **另請參閱**
 
@@ -938,7 +939,7 @@ ht-degree: 0%
 
 [使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## 確定加密類型{#determining-encryption-type}
 
@@ -953,7 +954,7 @@ PDF檔案可受下列加密類型保護：
 
 >[!NOTE]
 >
->如需加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有關加密服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步驟{#summary_of_steps-5}摘要
 
@@ -973,8 +974,8 @@ PDF檔案可受下列加密類型保護：
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar（如果AEM Forms部署在JBoss Application Server上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss Application Server上，則為必需）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss Application Server上，則為必需)
+* jbossall-client.jar(如果AEM Forms部署在JBoss Application Server上，則為必需)
 
 **建立服務客戶端**
 
@@ -994,7 +995,7 @@ PDF檔案可受下列加密類型保護：
 
 [使用web service API確定加密類型](encrypting-decrypting-pdf-documents.md#determine-the-encryption-type-using-the-web-service-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1031,7 +1032,7 @@ PDF檔案可受下列加密類型保護：
 
 [快速入門（SOAP模式）:使用Java API確定加密類型](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1045,17 +1046,17 @@ PDF檔案可受下列加密類型保護：
 
    >[!NOTE]
    >
-   >將`localhost`取代為代管AEM Forms之伺服器的IP位址。
+   >將`localhost`取代為代管AEM Forms的伺服器的IP位址。
 
 1. 建立服務客戶端。
 
    * 使用其預設建構子建立`EncryptionServiceClient`對象。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`EncryptionServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞給AEM Forms服務（例如`http://localhost:8080/soap/services/EncryptionService?WSDL`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。)
    * 獲取`EncryptionServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將返回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
+      * 將表AEM單用戶名分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.UserName`。
       * 將相應的口令值分配給欄位`EncryptionServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值`HttpClientCredentialType.Basic`分配給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`分配給欄位`BasicHttpBindingSecurity.Security.Mode`。
@@ -1079,4 +1080,4 @@ PDF檔案可受下列加密類型保護：
 
 [使用MTOM叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef叫用AEM表格](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[使用SwaRef叫用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
