@@ -1,17 +1,18 @@
 ---
 title: 搜尋表單和資產
 seo-title: 搜尋表單和資產
-description: 您可以使用AEM搜尋來搜尋AEM例項中的表單和資產。 基本和進階搜尋可讓您快速找到資產。
-seo-description: 您可以使用AEM搜尋來搜尋AEM例項中的表單和資產。 基本和進階搜尋可讓您快速找到資產。
+description: 您可以使用搜尋來搜尋例項中AEM的表AEM單和資產。 基本和進階搜尋可讓您快速找到資產。
+seo-description: 您可以使用搜尋來搜尋例項中AEM的表AEM單和資產。 基本和進階搜尋可讓您快速找到資產。
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
+role: 管理員
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '714'
 ht-degree: 3%
 
 ---
@@ -27,11 +28,11 @@ ht-degree: 3%
 
 ## 基本搜索{#basic-search}
 
-基本搜尋是預設搜尋，執行時不需指定任何篩選。 AEM Forms會針對中繼資料屬性執行全文搜尋。
+基本搜尋是預設搜尋，執行時不需指定任何篩選。 AEM Forms對元資料屬性進行全文搜索。
 
 若要執行基本搜尋，請在文字欄位中輸入搜尋查詢並點擊傳回。 您也可以輸入萬用字元(&amp;ast;)，以符合任意數目的字元。
 
-Adobe Experience Manager會在中繼資料屬性中搜尋輸入的文字，並傳回對應的結果。 如果您鍵入多個單字，則搜索操作將匹配要搜索的完整文本。
+Adobe Experience Manager在元資料屬性中搜索輸入的文本並返回相應的結果。 如果您鍵入多個單字，則搜索操作將匹配要搜索的完整文本。
 
 請注意以下關於基本搜索的要點：
 
@@ -48,7 +49,7 @@ Adobe Experience Manager會在中繼資料屬性中搜尋輸入的文字，並�
 
 在搜索准則中，除了查詢外，還可以指定一些搜索參數，使基本搜索更加有效和集中。
 
-![AEM表單和資產搜尋的搜尋欄位和參數或篩選器](assets/search_forms_assets.png)
+![表單與資產搜尋的搜尋欄AEM位與參數或篩選](assets/search_forms_assets.png)
 
 ### 資產路徑 {#asset-path}
 
