@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1643'
 ht-degree: 1%
 
 ---
@@ -57,7 +58,7 @@ ht-degree: 1%
    * 社群網站的結構必須包含群組功能
    * 這些螢幕擷取畫面來自[在publish](published-site.md)上建立群組後的「快速入門」教學課程
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-135](assets/chlimage_1-133.png)
 
 選擇&#x200B;**[!UICONTROL Groups資料夾]**&#x200B;以將其開啟。
 
@@ -100,7 +101,7 @@ ht-degree: 1%
 
 ![社群群體主題](assets/communitygrouptheme.png)
 
-此架構使用[Twitter Bootstrap](https://twitterbootstrap.org/)為網站提供回應式、有彈性的設計。 可以選擇多個預載入的引導主題之一來設定所選社區組模板的樣式，或者可以上載引導主題。
+此架構使用[TwitterBootstrap](https://twitterbootstrap.org/)為網站提供回應式、有彈性的設計。 可以選擇多個預先載入的Bootstrap主題之一以對所選社區組模板進行樣式化，或者可以上傳Bootstrap主題。
 
 選取後，主題將會以不透明的藍色核取標籤覆蓋。
 
@@ -110,7 +111,7 @@ ht-degree: 1%
 
 #### 社群群組品牌推廣{#community-group-branding}
 
-![chlimage_1-133](assets/chlimage_1-135.png)
+![chlimage_1-135](assets/chlimage_1-135.png)
 
 社群網站品牌是顯示為每個頁面上方標題的影像。 可顯示不同於其他網站頁面之群組的橫幅。
 
@@ -186,7 +187,7 @@ ht-degree: 1%
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
-群組的頁面內容可能與任何其他AEM頁面使用相同的工具撰寫。 若要開啟群組以進行製作，請選取將滑鼠指標暫留在群組卡片上時顯示的「開啟網站」圖示。
+群組的頁面內容可使用與任何其他頁面相同的工具AEM製作。 若要開啟群組以進行製作，請選取將滑鼠指標暫留在群組卡片上時顯示的「開啟網站」圖示。
 
 ## 修改組屬性{#modifying-group-properties}
 
