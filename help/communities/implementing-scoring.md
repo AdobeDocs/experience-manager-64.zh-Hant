@@ -1,8 +1,8 @@
 ---
 title: 社群評分和標章
 seo-title: 社群評分和標章
-description: AEM Communities評分和標章可讓您識別和獎勵社群成員
-seo-description: AEM Communities評分和標章可讓您識別和獎勵社群成員
+description: AEM Communities評分和徽章可讓您識別和獎勵社區成員
+seo-description: AEM Communities評分和徽章可讓您識別和獎勵社區成員
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2886'
 ht-degree: 2%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 2%
 
 ## 概覽 {#overview}
 
-AEM Communities評分和標章功能提供識別和獎勵社群成員的能力。
+AEM Communities的得分和徽章功能提供識別和獎勵社區成員的能力。
 
 評分和徽章的主要方面是：
 
@@ -36,7 +37,7 @@ AEM Communities評分和標章功能提供識別和獎勵社群成員的能力�
 
 >[!CAUTION]
 >
->在CRXDE Lite中可見的實作結構可能會在UI可用時變更。
+>當UI可用時，CRXDE Lite中可見的實作結構可能會變更。
 
 ## 徽章 {#badges}
 
@@ -203,7 +204,7 @@ AEM Communities評分和標章功能提供識別和獎勵社群成員的能力�
 
 每個子規則可以包含在一個或多個計分規則中。
 
-子規則的名稱通常遵循使用&#x200B;*主語、object*&#x200B;和&#x200B;*verb*&#x200B;的模式。 例如：
+子規則的名稱通常遵循使用&#x200B;*主旨、物件*&#x200B;和&#x200B;*動詞*&#x200B;的模式。 例如：
 
 * member-comment-create
 * 會員接收投票
@@ -345,7 +346,7 @@ AEM Communities評分和標章功能提供識別和獎勵社群成員的能力�
 
 >[!NOTE]
 >
->最佳實務：建立每個AEM網站專屬的徽章影像。
+>最佳實務：建立每個網站專屬的徽章AEM影像。
 
 ![chlimage_1-369](assets/chlimage_1-369.png)
 
@@ -404,7 +405,7 @@ AEM Communities評分和標章功能提供識別和獎勵社群成員的能力�
 
 下列cURL命令顯示HTTP要求指派和廢止標章的必要項。 基本格式為：
 
-cURL -i -X POST -H *header* -u *signin * -F *operation * -F *badge * *member-profile-url*
+cURL -i -XPOST-H *header* -u *signin * -F *operation * -F *badge * *member-profile-url*
 
 *header* = &quot;Accept:application/json&quot;\
 要傳遞至伺服器的自訂標題（必要）
@@ -472,7 +473,7 @@ curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=socia
 
 | **動詞** | **說明** |
 |---|---|
-| 貼文 | 成員建立日曆事件 |
+| POST | 成員建立日曆事件 |
 | 新增 | 日曆事件上的成員注釋 |
 | 更新 | 會編輯成員的日曆事件或注釋 |
 | 刪除 | 會員的日曆事件或留言已刪除 |
@@ -482,7 +483,7 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
 
 | **動詞** | **說明** |
 |---|---|
-| 貼文 | 成員建立注釋 |
+| POST | 成員建立注釋 |
 | 新增 | 成員回覆評論 |
 | 更新 | 已編輯成員的注釋 |
 | 刪除 | 會員的注釋已刪除 |
@@ -492,7 +493,7 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
 
 | **動詞** | **說明** |
 |---|---|
-| 貼文 | 成員建立資料夾 |
+| POST | 成員建立資料夾 |
 | 附加 | 成員上傳檔案 |
 | 更新 | 成員更新資料夾或檔案 |
 | 刪除 | 成員刪除資料夾或檔案 |
@@ -502,7 +503,7 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/comment
 
 | **動詞** | **說明** |
 |---|---|
-| 貼文 | 成員建立論壇主題 |
+| POST | 成員建立論壇主題 |
 | 新增 | 成員對論壇主題的回覆 |
 | 更新 | 編輯成員的論壇主題或回覆 |
 | 刪除 | 會員的論壇主題或回覆被刪除 |
@@ -512,7 +513,7 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/journal
 
 | **動詞** | **說明** |
 |---|---|
-| 貼文 | 成員建立部落格 |
+| POST | 成員建立部落格 |
 | 新增 | 部落格文章中的成員注釋 |
 | 更新 | 會編輯會員的部落格文章或留言 |
 | 刪除 | 會員的部落格文章或留言已刪除 |
@@ -522,7 +523,7 @@ ComponentSocialEvent  `topic` = com/adobe/cq/social/qna
 
 | **動詞** | **說明** |
 |---|---|
-| 貼文 | 成員建立QnA問題 |
+| POST | 成員建立QnA問題 |
 | 新增 | 成員建立QnA答案 |
 | 更新 | 成員的QnA問題或答案已編輯 |
 | 選擇 | 已選擇成員的答案 |
@@ -534,7 +535,7 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/review
 
 | **動詞** | **說明** |
 |---|---|
-| 貼文 | 成員建立審閱 |
+| POST | 成員建立審閱 |
 | 更新 | 會員的審核已編輯 |
 | 刪除 | 會員的審核已刪除 |
 
@@ -596,7 +597,7 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/review
 
 使用[快速入門教學課程](getting-started.md)（參與）網站，可快速嘗試計分和標籤：
 
-* 在作者身上存取CRXDE Lite
+* 作者的存取CRXDE Lite
 * 瀏覽至基本頁：
 
    * /content/sites/engage/tw/jcr:content
@@ -661,7 +662,7 @@ ComponentSocialEvent  `topic`= com/adobe/cq/social/review
 
 ## 其他資訊 {#additional-information}
 
-有關詳細資訊，請參閱開發人員的[Scoring and Badges Essentials](configure-scoring.md)頁面。
+有關詳細資訊，請參閱開發人員的[ Scoring and Badges Essentials](configure-scoring.md)頁面。
 
 有關高級計分引擎的資訊，請參閱[高級計分和標章](advanced.md)。
 
