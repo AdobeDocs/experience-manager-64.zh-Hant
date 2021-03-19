@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 在一般的表單填寫體驗中，除了擷取資料外，還需執行更多步驟。 完整的表單提交可包括其他步驟，例如數位簽署表單、驗證表單中填入的資訊、處理付款等。 它不同於個案。
 
-如果您的使用案例要求資料擷取的一組步驟，或有需要遵循特定步驟的法規，AEM Forms會提供跨表單強制執行該共同結構的方法。 表單結構的預先實施定義了表單的步驟順序。 ![多步驟表單序列範例](assets/formpipeline.png)
+如果您的使用案例要求執行一組資料擷取步驟，或有需要執行特定步驟的法規，AEM Forms會提供跨表單強制執行該共同結構的方式。 表單結構的預先實施定義了表單的步驟順序。 ![多步驟表單序列範例](assets/formpipeline.png)
 
 讓我們舉個例子，說明您需要為表單建立填寫、驗證、簽署和確認步驟的序列。 建立此序列的步驟如下：
 
@@ -35,7 +36,7 @@ ht-degree: 0%
    * **驗證**:它包含 **** Verifycomponent，可用於基於XFA的自適應表單。它會以唯讀模式顯示在「填色」面板中擷取的資訊，以進行驗證。
    * **電子簽名**:它包含 **** Sign元件，可用於XFA自適應表單。它提供下列簽署服務：
 
-      * Adobe Document Cloud eSign Services
+      * Adobe Document Cloud電子簽名服務
       * 塗鴉簽名
    * **確認**:它包含「摘 **** 要」元件，當使用者簽署表單並進入序列中的「確認（摘要）」步驟後，會顯示確認表單提交的訊息。作者可以設定「摘要」元件的文字、顯示感謝訊息、顯示產生的PDF連結等。
 
