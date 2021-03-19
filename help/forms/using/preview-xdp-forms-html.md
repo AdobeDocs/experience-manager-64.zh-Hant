@@ -1,16 +1,17 @@
 ---
 title: 產生XDP表單的HTML5預覽
 seo-title: 產生XDP表單的HTML5預覽
-description: 在LiveCycle Designer中預覽HTML標籤可用來預覽表單在瀏覽器中的顯示效果。
-seo-description: 在LiveCycle Designer中預覽HTML標籤可用來預覽表單在瀏覽器中的顯示效果。
+description: 在「LiveCycle設計器」中預覽HTML標籤可用來預覽表單在瀏覽器中的顯示效果。
+seo-description: 在「LiveCycle設計器」中預覽HTML標籤可用來預覽表單在瀏覽器中的顯示效果。
 uuid: d004e75d-e569-4e85-8dfa-5c411bc959af
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
+feature: 行動表單
 translation-type: tm+mt
-source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '822'
 ht-degree: 1%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 # 產生XDP表單{#generate-html-preview-of-an-xdp-form}的HTML5預覽
 
-在AEM Forms Designer中設計表格時，除了預覽表格的PDF轉譯外，您也可以預覽表格的HTML5轉譯。 您可以使用&#x200B;**預覽HTML**&#x200B;標籤來預覽表單在瀏覽器中的顯示效果。
+在AEM Forms設計人員中設計表格時，除了預覽表格的PDF轉譯外，您也可以預覽表格的HTML5轉譯。 您可以使用&#x200B;**預覽HTML**&#x200B;標籤來預覽表單在瀏覽器中的顯示效果。
 
 ## 在Designer {#html-preview-of-forms-in-forms-designer}中啟用XDP表單的HTML預覽
 
@@ -30,19 +31,19 @@ ht-degree: 1%
 
 ### 設定Apache Sling Authentication Service {#configure-apache-sling-authentication-service}
 
-1. 前往OSGi上執行的AEM Forms上的`https://[server]:[port]/system/console/configMgr`或
+1. 轉到運行於OSGi或`https://[server]:[port]/system/console/configMgr`
 
-   `https://[server]:[port]/lc/system/console/configMgr` 在JEE上執行的AEM Forms。
+   `https://[server]:[port]/lc/system/console/configMgr` AEM Forms在JEE上跑。
 
 1. 找到並按一下&#x200B;**Apache Sling Authentication Service**&#x200B;組態，以在編輯模式中開啟它。
 
-1. 視您是在OSGi或JEE上執行AEM Forms而定，請在&#x200B;**Authentication Requirements**&#x200B;欄位中新增下列項目：
+1. 根據您是在OSGi還是JEE上運行AEM Forms，請在&#x200B;**Authentication Requirements**&#x200B;欄位中添加以下內容：
 
-   * AEM Forms on JEE
+   * AEM FormsJEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
-   * OSGi上的AEM Forms
+   * AEM FormsOSGi
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
@@ -56,14 +57,14 @@ ht-degree: 1%
 
 ### 禁用保護模式{#disable-protected-mode}
 
-預設情況下，[保護模式](/help/forms/using/get-xdp-pdf-documents-aem.md)處於開啟狀態。 讓它在生產環境中保持啟用。 您可以停用它，讓開發環境在設計中預覽HTML5 Forms。 請執行下列步驟以停用它：
+預設情況下，[保護模式](/help/forms/using/get-xdp-pdf-documents-aem.md)處於開啟狀態。 讓它在生產環境中保持啟用。 您可以停用它，讓開發環境在設計中預覽HTML5Forms。 請執行下列步驟以停用它：
 
-1. 以管理員身分登入AEM Web Console。
+1. 以管理員AEM身分登入Web Console。
 
-   * OSGi上AEM Forms的URL為`https://[server]:[port]/system/console/configMgr`
-   * JEE上的AEM Forms URL為`https://[server]:[port]/lc/system/console/configMgr`
+   * OSGi上的AEM Forms的URL為`https://[server]:[port]/system/console/configMgr`
+   * JEE上AEM Forms的URL為`https://[server]:[port]/lc/system/console/configMgr`
 
-1. 開啟&#x200B;**[!UICONTROL 行動表單組態]**&#x200B;以進行編輯。
+1. 開啟&#x200B;**[!UICONTROL 移動Forms配置]**&#x200B;進行編輯。
 1. 取消選擇&#x200B;**[!UICONTROL 保護模式]**&#x200B;選項，然後按一下&#x200B;**[!UICONTROL 保存]**。
 
 ### 提供AEM Forms伺服器{#provide-details-of-aem-forms-server}的詳細資訊
@@ -75,18 +76,18 @@ ht-degree: 1%
    * **HTTP埠號**:AEM伺服器埠。預設值為 4502。
    * **HTML預覽內容：** 轉換XFA表單的描述檔路徑。以下預設配置檔案用於在設計器中預覽表單。 不過，您也可以指定自訂描述檔的路徑。
 
-      * `/content/xfaforms/profiles/default.html` （OSGi上的AEM Forms）
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
-   * **Forms Manager上下文：** 部署Forms Manager UI的上下文路徑。預設值為：
+      * `/content/xfaforms/profiles/default.html` (AEM FormsOSGi)
+      * `/lc/content/xfaforms/profiles/default.html` (AEM FormsJEE)
+   * **Forms管理員上** 下文：部署Forms管理員UI的上下文路徑。預設值為：
 
-      * `/aem/forms` （OSGi上的AEM Forms）
-      * `/lc/forms` (AEM Forms on JEE)
+      * `/aem/forms` (AEM FormsOSGi)
+      * `/lc/forms` (AEM FormsJEE)
 
-   **注意：** *請確定AEM Forms伺服器已啟動並執行。HTML預覽會連接至CRX伺服器，以產生*&#x200B;預覽。**
+   **注意：請** *確保AEM Forms伺服器已啟動並正在運行。HTML預覽會連接至CRX伺服器，以產生*&#x200B;預覽。**
 
-   ![AEM Forms Designer選項  ](assets/server_options.png)
+   ![AEM Forms設計師選項  ](assets/server_options.png)
 
-   AEM Forms Designer選項
+   AEM Forms設計師選項
 
 1. 若要預覽HTML中的表單，請按一下「預覽HTML **」標籤。**
 
@@ -114,6 +115,6 @@ ht-degree: 1%
 
 ## 預覽位於儲存庫{#html-preview-of-forms-in-forms-manager}中的表單
 
-在AEM Forms中，您可以在儲存庫中預覽表單和檔案。 預覽功能有助於確切瞭解表單的外觀和行為方式，讓使用者也能使用。
+在AEM Forms，您可以在儲存庫中預覽表單和文檔。 預覽功能有助於確切瞭解表單的外觀和行為方式，讓使用者也能使用。
 
-[**聯絡支援**](https://www.adobe.com/account/sign-in.supportportal.html)
+[**聯絡支援**](https://www.adobe.com/tw/account/sign-in.supportportal.html)
