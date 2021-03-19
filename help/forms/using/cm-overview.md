@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 1%
+source-wordcount: '230'
+ht-degree: 2%
 
 ---
 
@@ -37,8 +38,8 @@ ht-degree: 1%
 它提供更高品質的通訊，讓您：
 
 * 在集中式內容存放庫中管理業務規則和已核准的內容
-* 使用AEM DAM管理影像
-* 建立Adobe PDF檔案以進行封存和審核
+* 使用AEMDAM管理影像
+* 建立用於存檔和審計的Adobe PDF檔案
 * 透過內嵌的業務規則，使用預先核准的內容建立組織相容的訊息。
 
 ### 廣泛{#extensive}
@@ -46,6 +47,6 @@ ht-degree: 1%
 它改善了客戶參與度，使您能夠：
 
 * 加入互動式技術，以建立雙向通道，減少書面提交
-* 使用內建的端對端檔案安全性保護機密資訊
+* Protect敏感資訊與內建的端對端檔案安全性
 * 透過客戶偏好的通訊管道傳送信件，不論是電子郵件、行動裝置或傳真。
 
