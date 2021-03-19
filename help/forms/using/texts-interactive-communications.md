@@ -7,10 +7,11 @@ uuid: b2188d34-14f9-4c4e-bbe0-a2e763ed2958
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
+feature: 互動式通訊
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2249'
+source-wordcount: '2251'
 ht-degree: 0%
 
 ---
@@ -78,7 +79,7 @@ Interactive Communication中的文字檔案片段支援下列類型的動態資�
 
 ## 使用表單資料模型屬性{#formdatamodel}個人化文字檔案片段
 
-您可以插入表單資料模型屬性，以個人化文字檔案片段。 通過在文本中插入表單資料模型屬性，可以在預覽交互通信時從關聯資料源中提取和填充特定於收件人的資料。 如需表單資料模型的詳細資訊，請參閱[AEM Forms Data Integration](/help/forms/using/data-integration.md)。
+您可以插入表單資料模型屬性，以個人化文字檔案片段。 通過在文本中插入表單資料模型屬性，可以在預覽交互通信時從關聯資料源中提取和填充特定於收件人的資料。 如需表單資料模型的詳細資訊，請參閱[AEM Forms資料整合](/help/forms/using/data-integration.md)。
 
 如果在建立文本時指定了表單資料模型，則表單資料模型中的屬性將顯示在文本編輯器的左窗格中。 指定的表單資料模型對於文字檔案片段以及包含其的互動式通訊應相同。
 
@@ -137,7 +138,7 @@ Interactive Communication中的文字檔案片段支援下列類型的動態資�
 
 ## 在文字{#rules}中建立規則
 
-在文字中使用規則編輯器，您可以建立規則，以根據&#x200B;**預設條件**&#x200B;顯示或隱藏文字字串或內容片段。 這些條件可基於：
+在文字中使用規則編輯器，您可以建立規則，以根據&#x200B;**預設條件**&#x200B;顯示或隱藏文字或內容片段字串。 這些條件可基於：
 
 * 字串
 * 數字
