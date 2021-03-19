@@ -1,23 +1,24 @@
 ---
-title: 代表其他使用者保護檔案
-seo-title: 代表其他使用者保護檔案
+title: Protect代表其他使用者的檔案
+seo-title: Protect代表其他使用者的檔案
 description: 瞭解如何使用API代表其他使用者保護檔案，而不需取得編輯檔案的權限。
 seo-description: 瞭解如何使用API代表其他使用者保護檔案，而不需取得編輯檔案的權限。
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
+feature: Document Security
 translation-type: tm+mt
-source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
 
 
-# 代表其他使用者保護檔案{#protect-a-document-on-behalf-of-another-user}
+# Protect代表其他使用者{#protect-a-document-on-behalf-of-another-user}的檔案
 
-AEM Forms Document Security Java SDK提供API，讓使用者帳戶可以代表其他使用者保護檔案，而不需取得編輯檔案的權限。 您可以在工作流程中使用API，或以程式設計方式將API當做檔案服務。 新的API包括：
+AEM Forms檔案安全性Java SDK提供API，讓使用者帳戶可以代表其他使用者保護檔案，而不需取得編輯檔案的權限。 您可以在工作流程中使用API，或以程式設計方式將API當做檔案服務。 新的API包括：
 
 * **保** 護檔案使用ProtectDocument API代表
 
