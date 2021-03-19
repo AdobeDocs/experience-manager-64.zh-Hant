@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
+role: 管理員
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1520'
 ht-degree: 0%
 
 ---
@@ -194,7 +195,7 @@ UGC的協調有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`。
 
-不過，若要自訂或擴充預設垃圾訊息字詞，請透過[overlay](overlay-comments.md)，在/apps目錄中依預設垃圾訊息字詞的結構建立一組字詞。
+不過，若要自訂或擴充預設垃圾訊息字詞，請透過[overlay](overlay-comments.md)，在/apps目錄中依預設垃圾訊息字詞結構建立一組字詞。
 
 使用者產生的包含垃圾訊息的貼文（跨所有內容類型，例如部落格、論壇和留言）在貼文上方標有「此貼文已分類為垃圾訊息」文字。
 
@@ -206,7 +207,7 @@ UGC的協調有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 1. 轉至`/system/console/configMgr`以開啟[Web主控台](http://localhost:4502/system/console/configMgr)。
 
-1. 找到&#x200B;**[!UICONTROL AEM Communities Auto Moderation]**&#x200B;組態，並加以編輯。
+1. 找到&#x200B;**[!UICONTROL AEM Communities自動協調]**&#x200B;配置並加以編輯。
 1. 添加`SpamProcess`條目。
 
 ![垃圾郵件處理](assets/spamprocess.png)
