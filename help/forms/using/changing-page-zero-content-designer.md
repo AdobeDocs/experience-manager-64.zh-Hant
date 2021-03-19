@@ -7,11 +7,12 @@ uuid: 5697f203-bb24-437d-a692-bc4bc2609b88
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f458054e-885c-4c7a-afcd-ad1e4465e0c1
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 1%
+source-wordcount: '276'
+ht-degree: 2%
 
 ---
 
@@ -22,9 +23,9 @@ ht-degree: 1%
 
 ![defaultpage0message](assets/defaultpage0message.png)
 
-AEM Forms Feature Pack 1版的Designer可讓您變更顯示在Page Zero上的訊息。 要更改「零頁」消息，請執行以下步驟：
+AEM FormsFeature Pack 1版的Designer可讓您變更顯示在Page Zero上的訊息。 要更改「零頁」消息，請執行以下步驟：
 
-1. 請確定您已安裝AEM Forms Feature Pack 1版Designer。 您可以從設計人員的「關於」畫面中檢查版本。
+1. 確定您已安裝AEM Forms功能套件1版設計工具。 您可以從設計人員的「關於」畫面中檢查版本。
 
 1. 開啟您要變更「零頁」內容的表單。
 
