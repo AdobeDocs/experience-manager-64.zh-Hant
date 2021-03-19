@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
+feature: 多站點管理員
 translation-type: tm+mt
-source-git-commit: ebb750f00fb1d4d6f2b19e300e5a68b6b43650d7
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4019'
+source-wordcount: '4022'
 ht-degree: 0%
 
 ---
@@ -94,7 +95,7 @@ Blueprint設定可識別您要用作一或多個即時副本頁面來源的現�
 
 * [blueprint configuration](#creating-a-blueprint-configuration)所參考的頁面。
 * 和與配置無連接的頁面。
-* AEM也支援在其他即時副本的頁面內建立即時副本。
+* AEM也支援在其他即時副本的頁面中建立即時副本。
 
 唯一的區別是，源／藍圖頁上的&#x200B;**Rovolt**&#x200B;命令的可用性取決於藍圖配置是否引用了源：
 
