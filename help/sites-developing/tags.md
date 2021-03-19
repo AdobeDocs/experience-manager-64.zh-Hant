@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
+feature: 標記
 translation-type: tm+mt
-source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 2%
+source-wordcount: '110'
+ht-degree: 3%
 
 ---
 
@@ -27,6 +28,6 @@ ht-degree: 2%
 
 開發人員可取得下列資訊：
 
-* [AEM Tagging Framework](/help/sites-developing/framework.md)  —— 用於標籤的節點和屬性的說明
+* [AEM標籤框架](/help/sites-developing/framework.md) -用於標籤的節點和屬性的說明
 
-* [建立標籤至AEM應用程式](/help/sites-developing/building.md) -描述從用戶端和伺服器端程式碼搭配標籤架構運作的API
+* [將標籤建置AEM至應用程式](/help/sites-developing/building.md) -描述從用戶端和伺服器端程式碼搭配標籤架構運作的API
