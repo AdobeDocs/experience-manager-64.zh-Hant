@@ -1,18 +1,19 @@
 ---
 title: 升級至 AEM 6.4 Forms
 seo-title: 升級至 AEM 6.4 Forms
-description: '您可以從AEM 6.1 Forms、AEM 6.2 Forms和LiveCycle ES4 SP1直接升級至AEM 6.3 Forms。 '
-seo-description: '您可以從AEM 6.1 Forms、AEM 6.2 Forms和LiveCycle ES4 SP1直接升級至AEM 6.3 Forms。 '
+description: '您可以執行從6.1 AEMForms、AEM 6.2Forms和LiveCycleES4 SP1到AEM6.3Forms的直接升級。 '
+seo-description: '您可以執行從6.1 AEMForms、AEM 6.2Forms和LiveCycleES4 SP1到AEM6.3Forms的直接升級。 '
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 12a4785fe83c319e3b91bbdf4ae8cb5745f4f187
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '231'
 ht-degree: 5%
 
 ---
@@ -20,37 +21,37 @@ ht-degree: 5%
 
 # 升級至 AEM 6.4 Forms{#upgrade-to-aem-forms}
 
-AEM 6.4 Forms包含數種新功能和增強功能，可簡化使用表單和通訊的建立、管理和使用者體驗。 若要瞭解AEM 6.4 Forms的所有新功能和增強功能，請參閱[新功能摘要檔案](/help/forms/using/whats-new.md)。
+AEM6.4Forms包含數種新功能和增強功能，可簡化建立、管理和使用者體驗的表單和通訊。 要瞭解Forms6.4版的所有新功能和增強功AEM能，請參閱[新功能摘要文檔](/help/forms/using/whats-new.md)。
 
-您可以升級現有的LiveCycle或AEM Forms安裝，以取得AEM 6.4 Forms中提供的新功能和增強功能，同時保留現有資料、程式和資產的完整性。 升級時，也會保留中繼資料和程式狀態。 您可以選擇升級途徑，開始升級。
+您可以升級您現有的LiveCycle或AEM Forms安裝，以取得Forms6.4版中提供的新功能和增強功能，同時保留現有資料、程式和資產的完整性。 升級時，也會保留中繼資料和程式狀態。 您可以選擇升級途徑，開始升級。
 
-下圖顯示OSGi上AEM Forms的可用升級路徑：
+下圖顯示了OSGi上AEM Forms的可用升級路徑：
 
 ![](do-not-localize/osgi-upgrade.png)
 
 您可以從以下位置執行直接升級：
 
-* OSGi上的AEM 6.2 Forms
-* OSGi上的AEM 6.3表格
+* AEM6.2FormsOSGi
+* AEM6.3FormsOSGi
 
 您也可以從
 
-* OSGi上的AEM 6.0表格
-* OSGi上的AEM 6.1表格
+* AEM6.0FormsOSGi
+* AEM6.1FormsOSGi
 
-下圖顯示JEE上AEM Forms的可用升級路徑：
+下圖顯示了JEE上AEM Forms的可用升級路徑：
 
 ![](do-not-localize/jee-upgrade-6-4.png)
 
 您可以從以下位置執行直接升級：
 
-* LiveCycle ES3
-* LiveCycle ES4 SP1
-* AEM 6.2 Forms on JEE
-* AEM 6.3 Forms on JEE
+* LiveCycleES3
+* LiveCycleES4 SP1
+* AEM6.2Forms關於JEE
+* AEM6.3Forms關於JEE
 
 您也可以從
 
-* LiveCycle ES2
-* AEM 6.0 Forms on JEE
-* AEM 6.1 Forms on JEE
+* LiveCycleES2
+* AEM6.0FormsJEE
+* AEM6.1Forms關於JEE
