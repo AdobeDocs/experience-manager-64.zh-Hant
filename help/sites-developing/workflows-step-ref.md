@@ -1,7 +1,7 @@
 ---
 title: 工作流程步驟參考
 seo-title: 工作流程步驟參考
-description: 'null'
+description: 工作流程步驟參考
 seo-description: 'null'
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2833'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 #### 步驟屬性——用戶／組頁籤{#step-properties-user-group-tab}
 
-屬性對話框的&#x200B;**[!UICONTROL 用戶／組]**&#x200B;頁籤上的許多工作流步驟元件可以使用以下屬性：
+屬性對話框的&#x200B;**[!UICONTROL User/Group]**&#x200B;頁籤上的許多工作流步驟元件可以使用以下屬性：
 
 * **[!UICONTROL 透過電子郵件通知使用者]**
 
@@ -181,7 +181,7 @@ function check(){
 
 ## OR 拆分 {#or-split}
 
-**[!UICONTROL OR Split]**&#x200B;會在工作流中建立拆分，之後只有一個分支處於活動狀態。 此步驟可讓您將條件式處理路徑引入工作流程中。 您可以視需要將工作流程步驟新增至每個分支。
+**[!UICONTROL OR Split]**&#x200B;會在工作流中建立拆分，之後只有一個分支處於活動狀態。 此步驟可讓您將條件式處理路徑引入工作流程。 您可以視需要將工作流程步驟新增至每個分支。
 
 >[!NOTE]
 >
@@ -250,7 +250,7 @@ function check(){
 
 >[!NOTE]
 >
->必須設定某些屬性，才能啟用電子郵件通知。 您也可以自訂電子郵件範本，或新增新語言的電子郵件範本。 請參閱[設定電子郵件通知](/help/sites-administering/notification.md)以在AEM中設定電子郵件通知。
+>必須設定某些屬性，才能啟用電子郵件通知。 您也可以自訂電子郵件範本，或新增新語言的電子郵件範本。 請參閱[設定電子郵件通知](/help/sites-administering/notification.md)以設定中的電子郵件通知AEM。
 
 ### 對話方塊參與者步驟 {#dialog-participant-step}
 
@@ -404,7 +404,7 @@ function check(){
 
    指令碼必須包含名為getParticipant的函式，其會傳回使用者ID為`String`值。 將自訂指令碼儲存在`/apps/myapp/workflow/scripts`資料夾或子資料夾中。
 
-   標準AEM例項中包含範例指令碼：
+   標準例項中包含範例指令AEM碼：
 
    `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
@@ -441,7 +441,7 @@ function check(){
    >
    >但是，在返回參與者清單時，組ID只能用於&#x200B;**[!UICONTROL 參與者步驟]**。 對於&#x200B;**[!UICONTROL 動態參與者步驟]**，會傳回空白清單，這無法用於委派。
 
-   若要將您的實作提供給&#x200B;**[!UICONTROL 動態參與者步驟]**&#x200B;元件，請將您的Java類別新增至匯出服務的OSGi套件，並將套件部署至AEM伺服器。
+   若要將實作提供給&#x200B;**[!UICONTROL 動態參與者步驟]**&#x200B;元件，請將Java類別新增至匯出服務的OSGi套件，並將套件部署至伺AEM服器。
 
    >[!NOTE]
    >
@@ -504,7 +504,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 >[!CAUTION]
 >
->本節介紹Foundation Components for Page Authoring的[ Forms部分。](/help/sites-authoring/default-components-foundation.md#form)
+>本節介紹Foundation Components for Page Authoring的[Forms部分。](/help/sites-authoring/default-components-foundation.md#form)
 
 #### 表單參與者步驟——配置{#form-participant-step-configuration}
 
@@ -580,7 +580,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [**[!UICONTROL 常見]**](#step-properties-common-tab)
 * **[!UICONTROL 程序]**
 
-   * **[!UICONTROL 流程]**:要執行的進程實施。使用下拉式選單來選取ECMAScript或OSGi服務。 如需下列相關資訊：
+   * **[!UICONTROL 流程]**:要執行的進程實施。使用下拉式選單來選取ECMAScript或OSGi服務。 關於後述資訊：:
 
       * 標準的ECMAScript和OSGi服務，請參見[內置流程步驟](/help/sites-developing/workflows-process-ref.md)。
       * 為&#x200B;**[!UICONTROL Process]**&#x200B;步驟建立ECMAScript，請參閱[使用ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)實施流程步驟。
