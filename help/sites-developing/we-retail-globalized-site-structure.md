@@ -1,7 +1,7 @@
 ---
 title: We.Retail全球化網站結構的嘗試
 seo-title: We.Retail全球化網站結構的嘗試
-description: 'null'
+description: We.Retail全球化網站結構的嘗試
 seo-description: 'null'
 uuid: 5e5a809d-578f-4171-8226-cb65aa995754
 contentOwner: User
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ We.Retail是以全球化網站結構建立的，提供語言母版，可即時�
 
 >[!NOTE]
 >
->此過程演示了與Microsoft機器翻譯的內置整合。 使用[AEM翻譯整合框架](/help/sites-administering/translation.md)，您可以與許多標準翻譯服務整合，以協調AEM的翻譯。
+>此過程演示了與Microsoft機器翻譯的內置整合。 使用[AEM Translation Integration Framework](/help/sites-administering/translation.md) ，您可以與許多標準翻譯服務整合，以協調翻譯AEM。
 
 ## 更多資訊 {#further-information}
 
