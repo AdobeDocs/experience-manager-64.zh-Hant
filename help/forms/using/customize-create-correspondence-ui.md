@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1108'
 ht-degree: 0%
 
 ---
@@ -48,7 +49,7 @@ Commense Management可讓您重新品牌化其解決方案範本，以提升品�
 
 * 確保檔案在系統更新時安全無虞。 若是升級、功能套件或Hot Fix，則會更新/libs分支，如果您在/libs分支中代管變更，則會覆寫這些變更。
 * 幫助您不干擾當前系統／分支，如果您使用預設位置來儲存自定義檔案，則可能會出錯地取消分支。
-* 當AEM搜尋資源時，可協助您的資源獲得更高的優先順序。 AEM已設定為先搜尋/apps分支，再搜尋/libs分支以尋找資源。 此機制表示系統會使用您的覆蓋（以及此處定義的自訂）。
+* 協助您的資源在搜尋資源時AEM獲得更高的優先順序。 配置AEM為首先搜索/apps分支，然後搜索/libs分支以查找資源。 此機制表示系統會使用您的覆蓋（以及此處定義的自訂）。
 
 使用下列步驟在/apps分支中建立所需的資料夾結構：
 
