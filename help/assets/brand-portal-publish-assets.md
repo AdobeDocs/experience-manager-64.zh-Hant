@@ -2,22 +2,24 @@
 title: 將資料夾發佈至 Brand Portal
 description: 瞭解如何將資產發佈及解除發佈至品牌入口網站。
 contentOwner: VG
+feature: 品牌入口網站
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: f09853921dec6602952f369982a1563c7e4a9727
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 35%
+source-wordcount: '425'
+ht-degree: 36%
 
 ---
 
 
 # 將資產發佈至 Brand Portal {#publish-assets-to-brand-portal}
 
-身為Adobe Experience Manager(AEM)Assets管理員，您可以將資產發佈至組織的AEM Assets品牌入口網站例項（或將發佈工作流程排程至稍後的日期／時間）。 不過，您必須先將AEM資產與品牌入口網站一起設定。 如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)。
+身為Adobe Experience Manager(AEM)資產管理員，您可以將資產發佈至貴組織的AEM Assets品牌入口網站例項（或將發佈工作流程排程為稍後的日期／時間）。 不過，您必須先將AEM Assets設定為品牌入口網站。 如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)。
 
 在您發佈資產後，品牌入口網站的使用者即可使用它。
 
-如果您在AEM Assets中對原始資產進行後續修改，則在您重新發佈資產之前，這些變更不會反映在品牌入口網站中。 這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
+如果您在AEM Assets對原始資產進行後續修改，則在您重新發佈資產之前，這些變更不會反映在品牌入口網站中。 這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
 
 複製成功後，您可以將資產、檔案夾和系列發佈至品牌入口網站。 若要將資產發佈至品牌入口網站，請依照下列步驟進行：
 
