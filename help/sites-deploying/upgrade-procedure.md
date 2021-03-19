@@ -1,8 +1,8 @@
 ---
 title: 升級程式
 seo-title: 升級程式
-description: 瞭解升級AEM所需遵循的程式。
-seo-description: 瞭解升級AEM所需遵循的程式。
+description: 瞭解升級所需遵循的程式AEM。
+seo-description: 瞭解升級所需遵循的程式AEM。
 uuid: 56fb6af7-6e5f-4288-822b-f40c4605a28b
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
+feature: 升級
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -23,9 +24,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->由於大部分的AEM升級都是就地執行，因此升級作業層需要停機。 遵循這些最佳實務，可將發佈層停機時間減至最少或免除。
+>由於大部分升級都已就地執行，因此升級將需AEM要「作者」層停機。 遵循這些最佳實務，可將發佈層停機時間減至最少或免除。
 
-在升級AEM環境時，您需要考慮在升級作者環境或發佈環境之間的方式差異，以便將您的作者和使用者的停機時間減至最少。 本頁概述升級目前在AEM 6.x版本上執行的AEM拓撲的高階程式。由於作者和發佈層以及基於Mongo和TarMK的部署之間的流程不同，因此每個層和微內核都列在單獨的部分中。 在執行部署時，我們建議您先升級您的作者環境、決定成功，然後繼續進行發佈環境。
+在升級您的AEM環境時，您需要考慮在升級作者環境或發佈環境之間的方法差異，以便將您的作者和使用者的停機時間減至最少。 本頁概述了升級當前在6.AEMx版上運行的拓AEM撲的高級過程。由於作者和發佈層以及基於Mongo和TarMK的部署之間的流程不同，因此每個層和微內核都列在單獨的部分中。 在執行部署時，我們建議您先升級您的作者環境、決定成功，然後繼續進行發佈環境。
 
 ## TarMK作者層{#tarmk-author-tier}
 
