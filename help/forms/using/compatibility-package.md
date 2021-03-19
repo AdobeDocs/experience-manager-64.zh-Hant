@@ -1,18 +1,19 @@
 ---
 title: 相容性包
 seo-title: 相容性包
-description: '在AEM Forms 6.4上安裝Compatibility套件可讓您使用AEM Forms 6.3的Correponsement Management資產，以及不建議使用的最適化表單範本和頁面 '
-seo-description: 在AEM Forms 6.4上安裝Compatibility套件可讓您使用AEM Forms 6.3的Correponsement Management資產，以及不建議使用的最適化表單範本和頁面
+description: '在AEM Forms6.4上安裝相容性軟體包可讓您使用AEM Forms6.3的通信管理資產和不建議使用的自適應表單模板和頁面 '
+seo-description: 在AEM Forms6.4上安裝相容性軟體包可讓您使用AEM Forms6.3的通信管理資產和不建議使用的自適應表單模板和頁面
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
+role: 管理員
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '387'
+source-wordcount: '388'
 ht-degree: 9%
 
 ---
@@ -20,26 +21,26 @@ ht-degree: 9%
 
 # 安裝相容性軟體包{#compatibility-package}
 
-在AEM Forms 6.4上安裝Compatibility套件可讓您使用AEM Forms 6.3的Correponsement Management資產，以及不建議使用的最適化表單範本和頁面
+在AEM Forms6.4上安裝相容性軟體包可讓您使用AEM Forms6.3的通信管理資產和不建議使用的自適應表單模板和頁面
 
 ## 概覽 {#overview}
 
-在AEM Forms 6.4中建立客戶通訊的預設和建議方式是互動式通訊。若要繼續使用AEM 6.3 Forms和AEM 6.2 Forms的字母，您必須安裝[AEMFD Compatibility套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
+在AEM Forms6.4中，互動式通訊是建立客戶通訊的預設和建議方式。要繼續使用來自AEM6.3Forms和AEM6.2Forms的字母，需要安裝[AEMFD相容性軟體包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
 
-AEMFD相容性套件可讓您在AEM Forms 6.4上使用AEM Forms 6.3和6.2的下列資產：
+AEMFD相容性軟體包允許您使用AEM Forms6.4上AEM Forms6.3和6.2的以下資產：
 
-* 在AEM Forms 6.3和6.2中建立的檔案片段
+* 在AEM Forms6.3和6.2中建立的檔案片段
 * 字母
 * 資料字典
 * 不再支援的最適化表單範本和頁面
 
-如需詳細資訊，請參閱「透過安裝Compatibility套件使資產與AEM Forms 6.4相容」。[](/help/forms/using/compatibility-package.md#assetsmadecompatible)
+如需詳細資訊，請參閱[透過安裝Compatibility套件使資產與AEM Forms6.4相容。](/help/forms/using/compatibility-package.md#assetsmadecompatible)
 
-## 在AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}中新增對AEM Forms 6.3和6.2資產的支援
+## 在AEM Forms6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}中增加對AEM Forms6.3和6.2資產的支援
 
 執行升級後，請執行下列動作以安裝AEMFD相容性套件，並讓您的資產與6.4相容：
 
-請確定您已預先安裝[AEM Compatibility package](/help/sites-deploying/backward-compatibility.md)。
+確保已預裝[AEM Compatibility package](/help/sites-deploying/backward-compatibility.md)。
 
 1. 安裝[Compatibility package](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
 
@@ -50,11 +51,11 @@ AEMFD相容性套件可讓您在AEM Forms 6.4上使用AEM Forms 6.3和6.2的下�
 
    有關詳細資訊，請參見[遷移實用程式](/help/forms/using/migration-utility.md)。
 
-## 透過安裝Compatibility套件{#assetsmadecompatible}，讓資產與AEM Forms 6.4相容
+## 通過安裝Compatibility軟體包{#assetsmadecompatible}使與AEM Forms6.4相容的資產
 
-透過安裝「相容性」套件，您可讓下列資產和範本與AEM Forms 6.4相容：
+通過安裝Compatibility軟體包，您可以使以下資產和模板與AEM Forms6.4相容：
 
-* 來自AEM 6.3及舊版的Correponsement Management Assets
+* 6.3版及更舊版本AEM的Commentering Management資產
 
    * [字母](/help/forms/using/create-letter.md)
    * [資料字典](/help/forms/using/data-dictionary.md)
