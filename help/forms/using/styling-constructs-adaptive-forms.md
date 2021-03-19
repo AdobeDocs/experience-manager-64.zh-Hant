@@ -7,11 +7,12 @@ uuid: 45590fd5-6438-4bb3-8ef8-f0b8f9da3ae9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 3%
+source-wordcount: '2186'
+ht-degree: 4%
 
 ---
 
@@ -330,7 +331,7 @@ Widget也會依其類型而包含類別。 通常，Widget包含`guideFieldWidge
 
 ## 條款和條件 {#terms-and-conditions}
 
-「條款與條件」(TnC `` ``)介面工具集可讓您指定條款與條件。 您可以使用下表所述的變數來自訂介面工具集。
+「條款與條件」(TnC `` ``)介面工具集可讓您指定詞語與條件。 您可以使用下表所述的變數來自訂介面工具集。
 
 <table> 
  <tbody> 
@@ -560,7 +561,7 @@ Widget也會依其類型而包含類別。 通常，Widget包含`guideFieldWidge
   </tr> 
   <tr> 
    <td><p><code>filePreviewIconColor</code></p> </td> 
-   <td><p>介面工具集中「預覽」圖示（引導表徵圖）的顏色</p> </td> 
+   <td><p>介面工具集中「預覽」圖示(Bootstrap圖示)的色彩</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>fileItemCommentHeight</code></p> </td> 
@@ -707,7 +708,7 @@ Widget也會依其類型而包含類別。 通常，Widget包含`guideFieldWidge
  </tbody> 
 </table>
 
-guideNavIcon類別提供標籤導覽器（左側和上側）和精靈導覽器的預設圖示。
+guideNavIcon類別提供標籤導覽器（包括左側和上方）和精靈導覽器的預設圖示。
 
 <table> 
  <tbody> 
