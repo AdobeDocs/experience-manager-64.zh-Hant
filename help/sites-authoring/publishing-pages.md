@@ -1,7 +1,7 @@
 ---
 title: 發佈頁面
 seo-title: 發佈頁面
-description: 'null'
+description: 發佈頁面
 seo-description: 'null'
 uuid: 1222859d-ef8d-462e-a125-b76e6cfec26d
 contentOwner: Chris Bohnert
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1630'
+source-wordcount: '1631'
 ht-degree: 7%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 7%
 1. 視頁面是否有需要發佈的參考而定：
 
    * 如果沒有要發佈的參考，頁面將直接發佈。
-   * 如果頁面有需要發佈的參考，這些參考將列在&#x200B;**發佈**&#x200B;精靈中，您可以在其中：
+   * 如果頁面有需要發佈的參考，這些參考將列在&#x200B;**Publish**&#x200B;精靈中，您可以在其中：
 
       * 指定哪些資產／標籤／等。 您想要與頁面一起發佈，然後使用&#x200B;**Publish**&#x200B;完成程式。
       * 使用&#x200B;**Cancel**&#x200B;中止動作。
