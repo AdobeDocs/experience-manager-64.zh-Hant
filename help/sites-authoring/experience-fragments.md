@@ -1,7 +1,7 @@
 ---
 title: 體驗片段
 seo-title: 體驗片段
-description: 'null'
+description: 體驗片段
 seo-description: 'null'
 uuid: be1aceef-eb6e-47e5-a920-be5cc6de6191
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1312'
 ht-degree: 7%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 7%
 您可以使用體驗片段：
 
 * 如果作者想要重複使用頁面的部分（體驗的片段），則必須複製並貼上該片段。 建立和維護這些複製／貼上體驗不但耗時，而且容易發生使用者錯誤。 體驗片段可免除複製／貼上的需求。
-* 支援無頭CMS使用案例。 作者只想使用AEM來製作內容，但不想將內容傳送給客戶。 協力廠商系統／觸點會使用該體驗，然後傳送給使用者。
+* 支援無頭CMS使用案例。 作者只想AEM用於製作，但不想用於交付給客戶。 協力廠商系統／觸點會使用該體驗，然後傳送給使用者。
 
 >[!NOTE]
 >
@@ -54,9 +54,9 @@ ht-degree: 7%
 
    * 可重複使用相同或類似內容的體驗
 
-* 當您將AEM當做協力廠商的內容傳送平台時。
+* 當您用作AEM協力廠商的內容傳送平台時。
 
-   * 任何想要使用AEM做為內容傳送平台的解決方案
+   * 任何想要用作內容AEM傳送平台的解決方案
    * 將內容內嵌至協力廠商觸點
 
 * 如果您有「體驗」，但有不同的變化或轉譯。
@@ -94,7 +94,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->以下螢幕擷取是從WKND網站使用Adobe Experience Manager做為雲端服務擷取的。
+>以下是以Adobe Experience Manager為Cloud Service的WKND網站的螢幕擷取。
 
 ![體驗片段的資料夾](assets/xf-folders.png)
 
@@ -311,7 +311,7 @@ ht-degree: 7%
 
 ## 匯出體驗片段{#exporting-experience-fragments}
 
-依預設，體驗片段會以HTML格式傳送。 AEM和協力廠商管道都可使用此功能。
+依預設，體驗片段會以HTML格式傳送。 這可同時供第三方通AEM道使用。
 
 若要匯出至Adobe Target，請使用HTML。 如需完整資訊，請參閱[與體驗片段整合的目標](/help/sites-administering/experience-fragments-target.md)。
 
