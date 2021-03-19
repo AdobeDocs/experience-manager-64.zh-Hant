@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 5%
+source-wordcount: '559'
+ht-degree: 6%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 5%
 
 ## 概覽 {#overview}
 
-對於AEM Communities，有多種報表可透過數種方式從作者環境存取。
+對於AEM Communities，有多種報表可從作者環境以數種方式存取。
 
 一般而言，各種報表包括：
 
@@ -30,7 +31,7 @@ ht-degree: 5%
 * [檢視報表](#views-report) -提供任何社群網站的社群成員和網站訪客的內容檢視圖表
 * [貼文報表](#posts-report) -提供社群成員張貼至任何社群網站之各種類型的貼文圖表
 
-啟用[Adobe Analytics](sites-console.md#analytics)時，報表將包含一段時間內每個啟用資源的檢視次數、播放次數、留言和評分
+當[啟用](sites-console.md#analytics)Adobe Analytics時，報表將包含一段時間內每個啟用資源的檢視次數、播放次數、留言數和分級
 
 表格報表可匯出為。csv格式，以供後續處理。
 
@@ -140,4 +141,4 @@ ht-degree: 5%
 
 ### 未列出社區站點{#no-community-sites-listed}
 
-如果未列出社群網站，請確定已為網站啟用Adobe Analytics。 如果選擇分配報告，請確保分配功能位於社區站點的結構中。
+如果未列出社群網站，請確定網站已啟用Adobe Analytics。 如果選擇分配報告，請確保分配功能位於社區站點的結構中。
