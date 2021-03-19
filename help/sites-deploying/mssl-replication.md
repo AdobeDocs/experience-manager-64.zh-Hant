@@ -1,26 +1,27 @@
 ---
 title: 使用互相SSL進行複製
 seo-title: 使用互相SSL進行複製
-description: '瞭解如何設定AEM，讓作者例項上的複製代理使用共同SSL(MSSL)連線至發佈例項。 使用MSSL，發佈實例上的複製代理和HTTP服務使用證書來相互驗證。 '
-seo-description: '瞭解如何設定AEM，讓作者例項上的複製代理使用共同SSL(MSSL)連線至發佈例項。 使用MSSL，發佈實例上的複製代理和HTTP服務使用證書來相互驗證。 '
+description: '瞭解如何設AEM定，讓作者例項上的複製代理使用互相SSL(MSSL)連線發佈例項。 使用MSSL，發佈實例上的複製代理和HTTP服務使用證書來相互驗證。 '
+seo-description: '瞭解如何設AEM定，讓作者例項上的複製代理使用互相SSL(MSSL)連線發佈例項。 使用MSSL，發佈實例上的複製代理和HTTP服務使用證書來相互驗證。 '
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
+feature: 設定
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1456'
-ht-degree: 2%
+source-wordcount: '1457'
+ht-degree: 3%
 
 ---
 
 
 # 使用互相SSL進行複製{#replicating-using-mutual-ssl}
 
-設定AEM，讓作者例項上的複製代理使用互相SSL(MSSL)來連線發佈例項。 使用MSSL，發佈實例上的複製代理和HTTP服務使用證書來相互驗證。
+設AEM定，讓作者例項上的複製代理使用互相SSL(MSSL)連線至發佈例項。 使用MSSL，發佈實例上的複製代理和HTTP服務使用證書來相互驗證。
 
 為複製配置MSSL需要執行以下步驟：
 
