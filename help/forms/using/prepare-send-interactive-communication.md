@@ -1,16 +1,17 @@
 ---
 title: 使用代理UI準備和傳送互動式通訊
 seo-title: 使用代理UI準備和傳送互動式通訊
-description: '代理UI允許代理準備併發送互動式通信到後置進程。 工程師會視需要進行修改，並將互動式通訊提交至後置程式，例如電子郵件或列印。 '
+description: '代理UI允許代理準備併發送互動式通信到後置進程。 代理程式會視需要進行修改，並將互動式通訊提交至後置程式，例如電子郵件或列印。 '
 seo-description: 使用代理UI準備和傳送互動式通訊
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
+feature: 互動式通訊
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 # 使用代理UI {#prepare-and-send-interactive-communication-using-the-agent-ui}準備和發送互動式通信
 
-代理UI允許代理準備併發送互動式通信到後置進程。 工程師會視需要進行修改，並將互動式通訊提交至後置程式，例如電子郵件或列印。
+代理UI允許代理準備併發送互動式通信到後置進程。 代理程式會視需要進行修改，並將互動式通訊提交至後置程式，例如電子郵件或列印。
 
 ## 概覽 {#overview}
 
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 ## 使用代理UI {#prepare-interactive-communication-using-the-agent-ui}準備互動式通信
 
-1. 選擇&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**。
+1. 選擇&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文檔]**。
 1. 選擇適當的「Interactive Communication（互動式通信）」 ，然後按一下「Open Agent UI（開啟代理UI）」。****
 
    >[!NOTE]
@@ -100,7 +101,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >只有在建立互動式通訊時（在列印頻道的「檔案容器」屬性中）啟用資料庫存取時，才能使用「資料庫存取」圖示。
+   >只有在建立互動式通訊時（在列印頻道的「檔案容器」屬性中）啟用資料庫存取時，才可使用「資料庫存取」圖示。
 
 1. 如果在建立「交互通信」時未鎖定附件順序，則可以通過選擇附件並點選向下和向上箭頭來重新排序附件。
 1. 使用「網頁預覽和列印預覽」，查看這兩個輸出是否符合您的需求。
