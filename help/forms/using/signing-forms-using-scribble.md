@@ -7,10 +7,11 @@ uuid: e807d0de-6d5f-458e-be3e-273ed7a521c0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -39,13 +40,13 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >當您新增「簽名步驟」元件至最適化表單時，會自動選取「啟用Adobe Sign」選項。
+   >將「簽名步驟」元件添加到最適化表單時，會自動選擇「啟用Adobe Sign」選項。
 
 1. 點選「**設定** ![設定](assets/configure.png)」圖示。 它會開啟屬性瀏覽器並顯示「簽名」步驟屬性。 設定下列屬性：
 
    * **元素名稱**:指定元件的名稱。
    * **標題：** 指定元件的唯一標題。
-   * **範本訊息：** 指定在載入簽名PDF時要顯示的訊息。Adobe Sign Services需要一些時間來準備和載入簽名PDF。
+   * **範本訊息：** 指定在載入簽名PDF時要顯示的訊息。Adobe Sign服務需要一些時間來準備和載入簽名PDF。
    * **簽署服務：** 選取「 **Scribble** Signature」選項。
    * **CSS類別**:指定用戶端程式庫的CSS類別（如果有）。建議使用[主題](/help/forms/using/themes.md)和[行內樣式](/help/forms/using/inline-style-adaptive-forms.md)來取代CSS類別。
 
