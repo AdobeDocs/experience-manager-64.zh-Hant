@@ -9,10 +9,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
+role: 開發人員
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1775'
 ht-degree: 0%
 
 ---
@@ -41,7 +42,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在閱讀本節之前，建議您熟悉使用Assembler服務來組合PDF檔案。 （請參閱[程式設計匯整PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)）。
+>在閱讀本節之前，建議您熟悉使用Assembler服務來組合PDF檔案。 （請參閱[程式設計匯整PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)。）
 
 >[!NOTE]
 >
@@ -49,7 +50,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如需Assembler服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有關Assembler服務的詳細資訊，請參見[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 >[!NOTE]
 >
@@ -76,10 +77,10 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar（若AEM Forms部署在JBoss上，則為必要項）
-* jbossall-client.jar（如果AEM Forms部署在JBoss上，則為必要）
+* adobe-utilities.jar(如果AEM Forms部署在JBoss上，則為必要)
+* jbossall-client.jar(如果AEM Forms部署在JBoss上，則為必需)
 
-如果AEM Forms部署在非JBoss的支援J2EE應用程式伺服器上，您必須將adobe-utilities.jar和jbossall-client.jar取代為JAR檔案，而JAR檔案是部署AEM Forms的J2EE應用程式伺服器專用。
+如果AEM Forms部署在非JBoss的受支援J2EE應用程式伺服器上，則必須將adobe-utilities.jar和jbossall-client.jar替換為特定於部署了AEM Forms的J2EE應用程式伺服器的JAR檔案。
 
 **建立PDF匯寫程式式用戶端**
 
@@ -89,7 +90,7 @@ ht-degree: 0%
 
 必須參考DDX檔案，才能反匯編PDF檔案。 此DDX文檔必須包含`PDFsFromBookmarks`元素。
 
-**參考PDF檔案以進行反匯編**
+**參考PDF檔案以反匯編**
 
 要反匯編PDF文檔，請參考表示要反匯編的PDF文檔的PDF檔案。 傳遞至Assembler服務時，會針對檔案中的每個第1級書籤傳回個別的PDF檔案。
 
@@ -99,7 +100,7 @@ ht-degree: 0%
 
 **反匯編PDF檔案**
 
-在您建立Assembler服務用戶端、參考DDX檔案、參考要反匯編的PDF檔案，以及設定執行時期選項後，您就可以叫用`invokeDDX`方法來反匯編PDF檔案。 如果DDX檔案包含反匯編PDF檔案的指示，Assembler服務會在收集物件中傳回已拆解的PDF檔案。
+在您建立Assembler服務用戶端、參考DDX檔案、參考要反匯編的PDF檔案，並設定執行時期選項後，您就可以叫用`invokeDDX`方法來反匯編PDF檔案。 如果DDX檔案包含反匯編PDF檔案的指示，Assembler服務會在收集物件中傳回已拆解的PDF檔案。
 
 **儲存已拆解的PDF檔案**
 
@@ -107,7 +108,7 @@ ht-degree: 0%
 
 **另請參閱**
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -170,7 +171,7 @@ ht-degree: 0%
 
 [快速入門（SOAP模式）:使用Java API解譯PDF檔案](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
-[包含AEM Forms Java程式庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包含AEM FormsJava庫檔案](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -184,17 +185,17 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >將`localhost`取代為代管AEM Forms之伺服器的IP位址。
+   >將`localhost`取代為代管AEM Forms的伺服器的IP位址。
 
 1. 建立PDF匯寫程式式用戶端。
 
    * 使用其預設建構子建立`AssemblerServiceClient`對象。
-   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`AssemblerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞至AEM Forms服務（例如`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。
+   * 使用`System.ServiceModel.EndpointAddress`建構函式建立`AssemblerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞給AEM Forms服務（例如`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您不需要使用`lc_version`屬性。 建立服務參考時，將使用此屬性。
    * 獲取`AssemblerServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將返回值轉換為`BasicHttpBinding`。
    * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
    * 執行下列工作以啟用基本HTTP驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
+      * 將表AEM單用戶名分配給欄位`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
       * 將相應的口令值分配給欄位`AssemblerServiceClient.ClientCredentials.UserName.Password`。
       * 將常數值`HttpClientCredentialType.Basic`分配給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
       * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`分配給欄位`BasicHttpBindingSecurity.Security.Mode`。
