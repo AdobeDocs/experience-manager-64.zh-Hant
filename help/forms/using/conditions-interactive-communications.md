@@ -7,10 +7,11 @@ uuid: 93d69398-aead-4e23-8db3-b3e890477113
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3ade2a54-cb9a-4e34-808c-c6feec23cfe1
+feature: 互動式通訊
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 ## 建立條件{#createcondition}
 
-1. 選擇「**[!UICONTROL Forms]** > **[!UICONTROL 文檔片段]**」。
+1. 選擇&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL 文檔片段]**。
 1. 選擇&#x200B;**[!UICONTROL 建立]** > **[!UICONTROL 條件]**。
 1. 指定下列資訊：
 
@@ -111,7 +112,7 @@ ht-degree: 0%
 
 您可以使用下列步驟編輯條件。 您也可以選擇彈出式選單中的「編輯片段」，從「互動式通訊」中編輯條件。
 
-1. 選擇「**[!UICONTROL Forms]** > **[!UICONTROL 文檔片段]**」。
+1. 選擇&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL 文檔片段]**。
 1. 導覽至條件並選取它。
 1. 點選&#x200B;**[!UICONTROL 編輯]**。
 1. 在條件中進行必要的更改。 有關可在條件中更改的資訊的詳細資訊，請參閱[建立條件](#createcondition)。
