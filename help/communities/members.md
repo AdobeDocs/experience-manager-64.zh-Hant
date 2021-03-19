@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
+role: 管理員
 translation-type: tm+mt
-source-git-commit: c53ad108620f9066179c79195f90b930d5cab0ff
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '957'
 ht-degree: 3%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 3%
 
 ## 概覽 {#overview}
 
-AEM Communities功能通常要求網站訪客必須先註冊並登入，才能參與發佈環境中的社群。 其用戶註冊只需要存在於發佈環境中，通常稱為&#x200B;*members*，以便將其與在作者環境中註冊的&#x200B;*用戶*&#x200B;區分開來。
+AEM Communities功能通常要求網站訪客在參與發佈環境的社群之前先註冊並登入。 其用戶註冊只需要存在於發佈環境中，通常稱為&#x200B;*members*，以便將其與在作者環境中註冊的&#x200B;*用戶*&#x200B;區分開來。
 
 ### 發佈{#members-users-on-publish}時的成員（使用者）
 
@@ -61,7 +62,7 @@ AEM Communities功能通常要求網站訪客必須先註冊並登入，才能�
 
 ### 成員統計資訊{#member-statistics}
 
-當使用者是一或多個已啟用Adobe Analytics [的社群網站的成員時，會更新顯示`Views`、`Posts`、`Follows`和`Likes`的欄。](sites-console.md#analytics)
+當用戶是一個或多個社區站點的成員且啟用了Adobe Analytics[的](sites-console.md#analytics)時，更新顯示`Views`、`Posts`、`Follows`和`Likes`的列。
 
 ### 匯出 CSV {#export-csv}
 
