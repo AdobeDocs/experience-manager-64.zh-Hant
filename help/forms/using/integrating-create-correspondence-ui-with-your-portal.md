@@ -8,11 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 3%
+source-wordcount: '499'
+ht-degree: 4%
 
 ---
 
@@ -38,7 +39,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->以此方式呼叫並不安全，因為必要的參數會隨GET要求傳遞，方法是在URL中顯示相同（清楚可見）。
+>以此方式呼叫並不安全，因為必要的參數會以GET要求的形式傳遞，方法是在URL中顯示相同（清楚可見）。
 
 >[!NOTE]
 >
@@ -46,7 +47,7 @@ ht-degree: 3%
 
 ## 內嵌資料式呼叫{#inline-data-based-invocation}
 
-呼叫「建立對應」應用程式的另一種（也是更安全的）方式是，在傳送參數和資料以POST要求呼叫「建立對應」應用程式時，直接點擊`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`的URL（將其隱藏在使用者面前）。 這也表示您現在可以將XML資料傳遞至內嵌的「建立對應」應用程式（使用cmData參數做為相同要求的一部分），這在先前的方法中是不可能的／理想的。
+另一個（也是更安全的）呼叫「建立對應」應用程式的方式，是直接在`https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`點擊URL，同時傳送參數和資料以呼叫「建立對應」應用程式作為POST要求（將其隱藏在使用者面前）。 這也表示您現在可以將XML資料傳遞至內嵌的「建立對應」應用程式（使用cmData參數做為相同要求的一部分），這在先前的方法中是不可能的／理想的。
 
 ### 指定字母{#parameters-for-specifying-letter}的參數
 
