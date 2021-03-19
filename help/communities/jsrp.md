@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 43421a3068fdc8cc7a88c98a2e9045b54cc8f99e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 0%
+source-wordcount: '465'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ## 關於JSRP {#about-jsrp}
 
-當AEM Communities使用JSRP做為儲存選項（預設值）時，社群內容會儲存在JCR中，而使用者產生的內容(UGC)只能從發佈內容的作者或發佈例項存取。
+當AEM Communities使用JSRP作為其儲存選項（預設值）時，社群內容會儲存在JCR中，而且使用者產生的內容(UGC)只能從作者或發佈實例存取。
 
 由於部署簡單，JSRP通常最適合用於一個發佈實例和一個作者實例的演示或開發環境。
 
@@ -72,7 +73,7 @@ ht-degree: 0%
 
 通過檢查儲存選項的配置，確保JSRP已配置為預設提供程式。 預設情況下，儲存資源提供方是JSRP。
 
-在所有作者和發佈AEM例項上，請重新造訪「儲存組態控制台」或檢查AEM存放庫：
+在所有作者和發佈實例AEM上，重新訪問儲存配置控制台或檢查存AEM儲庫：
 
 * 在JCR中，如果[/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
