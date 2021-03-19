@@ -5,17 +5,20 @@ solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Classic UI編寫使用指南
 breadcrumb-title: Classic UI編寫指南
-user-guide-description: 本指南涵蓋在傳統使用者介面中於AEM中編寫內容的概念。
+user-guide-description: 本指南涵蓋在傳統使用者介面AEM中編寫內容的概念。
+feature-set: Experience Manager Sites
+feature: 製作
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '322'
 ht-degree: 22%
 
 ---
 
 
-# AEM 6.4 Classic UI編寫使用指南{#classic-ui}
+# AEM 6.4 Classic UI編寫使用手冊{#classic-ui}
 
 + [Classic UI編寫指南總覽](home.md)
 + Classic UI編寫簡介{#introduction}
@@ -37,7 +40,7 @@ ht-degree: 22%
    + [發佈頁面](classic-page-author-publish-pages.md)
    + [編輯頁面屬性](classic-page-author-edit-page-properties.md)
    + [編輯頁面時的註解](classic-page-author-annotations.md)
-   + [編寫時疑難排解AEM](classic-page-author-troubleshooting.md)
+   + [編寫時AEM的疑難排解](classic-page-author-troubleshooting.md)
    + [建立可存取的內容 (符合 WCAG 2.0)](classic-page-author-accessible-content.md)
    + [製作行動裝置的頁面](classic-feature-mobile.md)
    + [頁面製作的元件](classic-page-author-edit-mode.md)
@@ -74,8 +77,8 @@ ht-degree: 22%
    + [建立有效的電子報登陸頁面](classic-personalization-campaigns-email-landingpage.md)
    + [管理訂閱](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
-   + [使用Adobe Campaign 6.1和Adobe Campaign Standard](classic-personalization-ac-campaign.md)
-   + [使用Adobe Campaign](classic-personalization-ac.md)
+   + [與Adobe Campaign6.1和Adobe Campaign Standard合作](classic-personalization-ac-campaign.md)
+   + [與Adobe Campaign合作](classic-personalization-ac.md)
    + [Adobe Campaign元件](classic-personalization-ac-components.md)
    + [鎖定您的Adobe Campaign](classic-personalization-ac-target.md)
 + Classic UI {#assets}中的資產編寫
@@ -83,14 +86,14 @@ ht-degree: 22%
    + [關於使用IBL階段](classicui-stages-aem3d-ibl.md)
    + [演算3D資產](classicui-rendering-3d.md)
    + [檢視3D資產](classicui-view-3d-assets.md)
-   + [提供動態媒體資產](dynamic-media-assets-delivering.md)
+   + [交付Dynamic Media資產](dynamic-media-assets-delivering.md)
    + [用Autodesk Maya和Mental Ray建立標準舞台](classicui-stages-aem3d-ad-mr.md)
-   + [新增動態媒體資產至頁面](dynamic-media-assets-adding-to-page.md)
-   + [將Dynamic Media Classic(Scene7)功能新增至頁面](manage-assets-classic-s7.md)
+   + [新增Dynamic Media資產至頁面](dynamic-media-assets-adding-to-page.md)
+   + [將Dynamic Media經典(Scene7)功能添加到頁面中](manage-assets-classic-s7.md)
    + [使用 Dynamic Media](dynamic-media-assets.md)
    + [使用 3D 資產](classicui-3dassets.md)
    + [影片](manage-assets-classic-s7-video.md)
    + [資產測試的命名慣例](asset-naming-conventions.md)
-   + [關於在AEM中上傳和處理3D資產](classicui-upload-proc-3d.md)
-   + [關於AEM 3D中階段的使用](classicui-stages-aem3d.md)
+   + [關於上傳和處理3D資產，於AEM](classicui-upload-proc-3d.md)
+   + [關於在3D中使AEM用階段](classicui-stages-aem3d.md)
    + [解決檔案相依性](classicui-upload-proc-3d-resolve-dependencies.md)
