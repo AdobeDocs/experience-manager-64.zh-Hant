@@ -1,32 +1,33 @@
 ---
-title: AEM 6.4中的動態媒體儲存庫重組
-seo-title: AEM 6.4中的動態媒體儲存庫重組
-description: 瞭解如何進行必要的變更，以移轉至AEM 6.4 for Dynamic Media中的新儲存庫結構。
-seo-description: 瞭解如何進行必要的變更，以移轉至AEM 6.4 for Dynamic Media中的新儲存庫結構。
+title: Dynamic Media6.AEM4儲存庫重組
+seo-title: Dynamic Media6.AEM4儲存庫重組
+description: 瞭解如何進行必要的更改，以便遷移到針對Dynamic Media的AEM6.4中的新儲存庫結構。
+seo-description: 瞭解如何進行必要的更改，以便遷移到針對Dynamic Media的AEM6.4中的新儲存庫結構。
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
+feature: 升級
 translation-type: tm+mt
-source-git-commit: 5dce4bcf4b10cce65798fd142a3eeb1956caf726
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '441'
 ht-degree: 4%
 
 ---
 
 
-# AEM 6.4{#dynamic-media-repository-restructuring-in-aem}中的動態媒體資料庫重組
+# Dynamic MediaAEM6.4{#dynamic-media-repository-restructuring-in-aem}儲存庫重組
 
-如上層[「AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的儲存庫重組」頁面所述，升級至AEM 6.4的客戶應使用此頁面來評估與影響動態媒體解決方案的儲存庫變更相關的工作成果。 有些變更需要在AEM 6.4升級程式中努力工作，而有些則會延遲至6.5升級。
+如[父6.4](/help/sites-deploying/repository-restructuring.md)頁中的「資料庫重組」頁中所述，升級至AEM6.4的客戶應使用此頁評估與影響Dynamic Media解決方案的資料庫更改相關的工作成果。 有些變更需要在6.4升級程AEM序中努力工作，而有些則會延遲至6.5升級。
 
 **6.5升級版之前**
 
 * [自訂最適化視訊編碼設定](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
-* [動態媒體(DMS7)雲端設定](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
-* [動態媒體(DM Hybrid)雲端服務組態](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
-* [動態媒體- YouTube雲端服務設定](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
+* [Dynamic Media(DMS7)雲配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
+* [Dynamic Media(DM Hybrid)Cloud Service配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
+* [Dynamic Media- YouTubeCloud Service配置](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [其他](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
 ## 6.5之前版本升級{#prior-to-upgrade}
@@ -45,7 +46,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>您可以執行下列移轉指令碼，以移轉至新位置：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>或者，您也可以在AEM UI中編輯設定，而變更將儲存至新位置。</p> </td> 
+   <td><p>您可以執行下列移轉指令碼，以移轉至新位置：</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>或者，您也可以在UI中編AEM輯設定，而變更將儲存至新位置。</p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
@@ -54,7 +55,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 動態媒體(DMS7)雲配置{#dynamic-media-dms-cloud-configuration}
+### Dynamic Media(DMS7)雲配置{#dynamic-media-dms-cloud-configuration}
 
 <table> 
  <tbody>
@@ -71,7 +72,7 @@ ht-degree: 4%
    <td><p>客戶可在此位置運行遷移指令碼：<br /> </p> 
     <ul> 
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
-     <li>重新啟動Dynamic Media OSGi套件。</li> 
+     <li>重新啟動Dynamic MediaOSGi捆綁包。</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -81,7 +82,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 動態媒體(DM Hybrid)雲服務配置{#cloudserviceconfiguration}
+### Dynamic Media(DM Hybrid)Cloud Service配置{#cloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -104,7 +105,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-### 動態媒體- YouTube雲端服務設定{#youtubecloudserviceconfiguration}
+### Dynamic Media- YouTubeCloud Service配置{#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -141,7 +142,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>客戶可執行下列移轉指令碼。</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>或者，您也可以在AEM UI中編輯設定，而變更將儲存至新位置。</p> </td> 
+   <td><p>客戶可執行下列移轉指令碼。</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>或者，您也可以在UI中編AEM輯設定，而變更將儲存至新位置。</p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
