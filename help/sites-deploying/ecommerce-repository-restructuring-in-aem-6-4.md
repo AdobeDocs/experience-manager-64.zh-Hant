@@ -1,25 +1,26 @@
 ---
-title: AEM 6.4中的電子商務資料庫重組
-seo-title: AEM 6.4中的電子商務資料庫重組
-description: 瞭解如何進行必要的變更，以移轉至AEM 6.4 for E-Commerce中的新儲存庫結構。
-seo-description: 瞭解如何進行必要的變更，以移轉至AEM 6.4 for E-Commerce中的新儲存庫結構。
+title: 6.4版中的電子商AEM務儲存庫重組
+seo-title: 6.4版中的電子商AEM務儲存庫重組
+description: 瞭解如何進行必要的更改，以遷移至適用於電子商務的AEM6.4中的新儲存庫結構。
+seo-description: 瞭解如何進行必要的更改，以遷移至適用於電子商務的AEM6.4中的新儲存庫結構。
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
+feature: 升級
 translation-type: tm+mt
-source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
 
 
-# AEM 6.4{#e-commerce-repository-restructuring-in-aem}中的電子商務資料庫重組
+# 6.4{#e-commerce-repository-restructuring-in-aem}中的電AEM子商務儲存庫重組
 
-如上層[「AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的儲存庫重組」頁面所述，升級至AEM 6.4的客戶應使用此頁面來評估與影響AEM電子商務解決方案的儲存庫變更相關的工作量。 有些變更需要在AEM 6.4升級程式中努力工作，而有些則會延遲至6.5升級。
+如[父6.4](/help/sites-deploying/repository-restructuring.md)頁中的「資料庫重組」頁中所述，升級至AEM6.4的客戶應使用本頁來評估與影響電子商務解決方案的資料庫更改相關的AEM工作成果。 有些變更需要在6.4升級程AEM序中努力工作，而有些則會延遲至6.5升級。
 
 ## 使用6.4升級{#with-upgrade}
 
@@ -49,7 +50,7 @@ ht-degree: 2%
      <li>/etc/commerce/orders<br /> </li> 
      <li>/etc/commerce/payment-methods<br /> </li> 
      <li>/etc/commerce/shipping-methods<br /> </li> 
-    </ul> <p>若是較大型型錄，會透過將下列Java系統屬性傳遞至AEM，重新命令它個別執行商務移轉工作：</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>移轉後，AEM需要重新啟動。</p> </td> 
+    </ul> <p>對於較大型目錄，會將下列Java系統屬性傳遞至以下位置，以重新命令它個別執行商務移轉任務AEM:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>遷移後AEM需要重新啟動。</p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
