@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
+feature: 行動表單
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -23,9 +24,9 @@ ht-degree: 0%
 
 描述檔節點具有&#x200B;**sling:resourceSuperType**&#x200B;屬性，預設值為&#x200B;**xfaforms/profile**。 節點的演算指令碼位於/libs/xfaforms/profile。
 
-Sling指令碼是JSP指令碼。 這些JSP指令碼可當成容器，用來將要求表單的HTML和必要的JS / CSS工件組合在一起。 這些Sling指令碼也稱為&#x200B;**描述檔轉譯器指令碼。** 描述檔轉譯器會呼叫Forms OSGi服務，以轉譯要求的表單。
+Sling指令碼是JSP指令碼。 這些JSP指令碼可當成容器，用來將要求表單的HTML和必要的JS / CSS工件組合在一起。 這些Sling指令碼也稱為&#x200B;**描述檔轉譯器指令碼。** 描述檔轉譯器會呼叫FormsOSGi服務，以轉譯所要求的表單。
 
-描述檔指令碼位於html.jsp和html.POST.jsp中，以處理GET和POST要求。 您可以複製並修改一或多個檔案，以覆寫並新增自訂設定。 不要進行任何就地更改，修補程式更新將覆蓋此類更改。
+描述檔指令碼位於html.jsp和html.POST.jsp中，以處理GET和POST請求。 您可以複製並修改一或多個檔案，以覆寫並新增自訂設定。 不要進行任何就地更改，修補程式更新將覆蓋此類更改。
 
 配置檔案包含各種模組。 這些模組包括formRuntime.jsp、config.jsp、toolbar.jsp、formBody.jsp、nav_footer.jsp和footer.jsp。
 
@@ -83,4 +84,4 @@ footer.jsp模組為空。 它允許您添加僅用於用戶交互的指令碼。
 
 1. 若要確認已建立描述檔，請開啟URL `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
-若要驗證表單，請[從您的本機檔案系統將表單](/help/forms/using/get-xdp-pdf-documents-aem.md)匯入至AEM Forms，並在AEM伺服器作者例項上預覽表單](/help/forms/using/previewing-forms.md)。[
+若要驗證表單，請[從本機檔案系統將表單](/help/forms/using/get-xdp-pdf-documents-aem.md)匯入至AEM Forms，並在伺服器作者例項上預覽表AEM單](/help/forms/using/previewing-forms.md)。[
