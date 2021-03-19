@@ -7,10 +7,11 @@ uuid: d1baa9eb-dffe-4e02-af95-394e7ee0d6ee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7bdf1f06-c298-4695-bad1-e402cf472086
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6809'
+source-wordcount: '6811'
 ht-degree: 0%
 
 ---
@@ -42,7 +43,7 @@ ht-degree: 0%
 
 ### 建立文字{#create-text}
 
-1. 選擇「**Forms** > **文檔片段**」。
+1. 選擇&#x200B;**Forms** > **文檔片段**。
 
 1. 點選「**建立** > **文字」。** 或者，選取文字資產並點選「 **編輯」**。
 1. 指定文字的下列資訊：
@@ -225,7 +226,7 @@ ht-degree: 0%
 * **Lettered**:字母順序清單，可選擇小寫(a,b,...)和大寫(A,B,...)字母。
 * **自訂**:您可以建立任何編號／字母類型，以及您選擇的首碼和尾碼值。
 
-1. 選擇「**Forms** > **文檔片段**」。
+1. 選擇&#x200B;**Forms** > **文檔片段**。
 
 1. 選擇&#x200B;**建立** > **清單**。
 
@@ -298,7 +299,7 @@ ht-degree: 0%
 
 ### 建立條件{#create-a-condition}
 
-1. 選擇「**Forms** > **文檔片段**」。
+1. 選擇&#x200B;**Forms** > **文檔片段**。
 1. 選擇&#x200B;**建立>條件**。
 1. 指定清單的下列資訊：
 
@@ -340,13 +341,13 @@ ht-degree: 0%
 
 ## 布局片段 {#layoutfragments}
 
-版面片段是以在Designer中建立的XDP為基礎。 若要建立版面片段，您必須建立XDP並將XDPs[上傳至AEM Forms](/help/forms/using/import-export-forms-templates.md)。
+版面片段是以在Designer中建立的XDP為基礎。 若要建立版面片段，您必須建立XDP並將XDP上傳至AEM Forms](/help/forms/using/import-export-forms-templates.md)。[
 
 一或多個版面片段可以形成字母的部分，並定義這些部分的圖形版面。 版面片段可包含典型的表單欄位，例如「位址」和「參考編號」，以及表示目標區域的空子表單。 此外，版面片段可讓您建立表格並將它們插入字母中。
 
 常見的使用案例是在字母中找出可重複使用的版面模式，並為它們建立版面片段。 例如，字母的問候語、地址和主旨部分，按同一順序顯示多個字母。 另一個例子可以是多個字母中使用的行和列數相似的表。
 
-您可以根據現有的XDP建立版面片段。 版面片段可由欄位和目標區域或一或多個表格組成。 版面中的表格可以是靜態或動態的。 XDP是在Designer中建立，並且[已上傳至AEM Forms](/help/forms/using/import-export-forms-templates.md)。 XDP可以形成佈局片段或字母的結構。 有關[版面設計](/help/forms/using/layout-design-details.md)的詳細資訊。
+您可以根據現有的XDP建立版面片段。 版面片段可由欄位和目標區域或一或多個表格組成。 版面中的表格可以是靜態或動態的。 XDP在Designer中建立，並且[上傳到AEM Forms](/help/forms/using/import-export-forms-templates.md)。 XDP可以形成佈局片段或字母的結構。 有關[版面設計](/help/forms/using/layout-design-details.md)的詳細資訊。
 
 使用系結至目標區域的片段，可讓字母在製作時變更。 可建立不同尺寸的版面片段，並將適當的片段系結至目標區域。 配置片段也可讓您自訂部分表格屬性：
 
@@ -415,7 +416,7 @@ ht-degree: 0%
 
 ### 將XDP上傳到通信管理{#upload-an-xdp-to-correspondence-management}
 
-如需有關上傳／匯入XDP至「對應管理」的指示，請參閱[匯入和匯出資產至AEM Forms](/help/forms/using/import-export-forms-templates.md)。
+有關將XDP上載／導入到通信管理的說明，請參閱[將資產導入和導出到AEM Forms](/help/forms/using/import-export-forms-templates.md)。
 
 ### 最佳實務／秘訣與訣竅{#best-practices-tips-and-tricks-2}
 
@@ -508,7 +509,7 @@ DD有一個收集元素Ontimeed_details，它有一個包含三個基本元素�
 
    [取得檔案](assets/dynamic.xdp.zip)
 
-1. 將XDP上傳至AEM Forms。
+1. 將XDP上傳到AEM Forms。
 1. 根據動態XDP建立版面片段。 屬性的「表」(Table)頁籤顯示表是動態的(「配置」(Configuration For)欄位)。 行數(1)和列數(3)是從XDP/佈局片段派生的。
 
    此版面的欄位稍後會系結至匯入的DD，在字母中，會根據測試資料檔案（隨DD附加的XML資料檔案）中的記錄數，動態建立列數。
