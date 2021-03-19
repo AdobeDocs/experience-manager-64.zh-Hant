@@ -1,17 +1,18 @@
 ---
 title: 管理代理簽名映像
 seo-title: 管理代理簽名映像
-description: 在您建立信函範本之後，您可以使用它來管理資料、內容和附件，以建立AEM Forms中的對應。
-seo-description: 在您建立信函範本之後，您可以使用它來管理資料、內容和附件，以建立AEM Forms中的對應。
+description: 在您建立信函範本後，您可以使用它來管理資料、內容和附件，以建立AEM Forms的對應。
+seo-description: 在您建立信函範本後，您可以使用它來管理資料、內容和附件，以建立AEM Forms的對應。
 uuid: 720dd075-9059-4311-ad52-70e2f7c76c58
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ agentFolder DDE的值取自「對應管理」配置屬性的CMUserRoot配置參�
 
 ## 添加代理簽名映像{#adding-agent-signature-image}
 
-1. 請確定代理簽名影像與使用者的AEM使用者名稱相同。 （影像檔案名稱不需要副檔名。）
+1. 確保代理簽名映像與用戶的用戶名具有相AEM同的名稱。 （影像檔案名稱不需要副檔名。）
 1. 在CRX中，在內容資料夾中建立名為`cmUserRoot`的資料夾。
 
    1. 前往 `https://[server]:[port]/crx/de`. 如有必要，請以管理員身份登錄。
@@ -45,7 +46,7 @@ agentFolder DDE的值取自「對應管理」配置屬性的CMUserRoot配置參�
 
       >[!NOTE]
       >
-      >cmUserRoot是AEM尋找代理簽名影像的預設位置。 但是，您可以通過編輯[Corresponce Management配置屬性](/help/forms/using/cm-configuration-properties.md)中的CM User Root屬性來更改它。
+      >cmUserRoot是查找代理簽AEM名映像的預設位置。 但是，您可以通過編輯[Corresponce Management配置屬性](/help/forms/using/cm-configuration-properties.md)中的CM User Root屬性來更改它。
 
 1. 在「內容檔案總管」中，導覽至cmUserRoot資料夾，並在其中新增代理簽名影像。
 
@@ -61,7 +62,7 @@ agentFolder DDE的值取自「對應管理」配置屬性的CMUserRoot配置參�
 
       **類型：** nt:file
 
-      在`cmUserRoot`資料夾下，將建立一個名為`JohnDoe`的新資料夾（或您在上一步驟中指定的名稱）。
+      在`cmUserRoot`資料夾下，將建立一個名為`JohnDoe`的新資料夾（或您在上一步中指定的名稱）。
 
    1. 按一下您建立的新資料夾（此處`JohnDoe`）。 「內容檔案總管」會將資料夾的內容顯示為暗灰色。
 
@@ -76,7 +77,7 @@ agentFolder DDE的值取自「對應管理」配置屬性的CMUserRoot配置參�
       ![JCR資料](assets/5_jcrdata.png)
    按一下&#x200B;**保存全部**。
 
-1. 請確定您在字母中使用的XDP\layout在左下方有影像欄位（或您要呈現簽名的版面中其他適當位置），以呈現簽名影像。
+1. 請確定您在字母中使用的XDP\layout在左下方有影像欄位（或您要在版面中呈現簽名的其他適當位置），以呈現簽名影像。
 1. 建立對應時，在「資料」索引標籤中，使用下列步驟為簽名影像選取影像欄位：
 
    1. 從右窗格的「連結類型」彈出菜單中選擇「系統」。
