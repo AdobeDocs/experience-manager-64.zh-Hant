@@ -1,18 +1,19 @@
 ---
 title: 社群通知
 seo-title: 社群通知
-description: AEM Communities有通知，可顯示登入社群成員感興趣的事件
-seo-description: AEM Communities有通知，可顯示登入社群成員感興趣的事件
+description: AEM Communities有通知，顯示已登入社群成員感興趣的事件
+seo-description: AEM Communities有通知，顯示已登入社群成員感興趣的事件
 uuid: d6ef12f1-7367-49a5-b891-56800a38b2ab
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '537'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ## 概覽 {#overview}
 
-AEM Communities提供通知區段，可顯示已登入社群成員感興趣的事件。
+AEM Communities提供通知區段，顯示已登入社群成員的興趣事件。
 
 通知與[活動](essentials-activities.md)和[訂閱](subscriptions.md)類似，因為它們可能來自
 
