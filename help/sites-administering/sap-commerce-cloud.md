@@ -1,8 +1,8 @@
 ---
-title: SAP Commerce Cloud
-seo-title: SAP Commerce Cloud
-description: 瞭解如何搭配SAP Commerce Cloud使用AEM。
-seo-description: 瞭解如何搭配SAP Commerce Cloud使用AEM。
+title: SAPCommerce Cloud
+seo-title: SAPCommerce Cloud
+description: 瞭解如何與AEMSAPCommerce Cloud一起使用。
+seo-description: 瞭解如何與AEMSAPCommerce Cloud一起使用。
 uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,28 +10,29 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
+feature: 商務整合框架
 translation-type: tm+mt
-source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
 
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# SAPCommerce Cloud{#sap-commerce-cloud}
 
 安裝後，您可以設定您的例項：
 
-1. [設定Faceted Search for Geometrixx Outdoors](#configure-the-facetted-search-for-geometrixx-outdoors)。
+1. [配置「強制搜索」以查找Geometrixx Outdoors](#configure-the-facetted-search-for-geometrixx-outdoors)。
 1. [設定目錄版本](#configure-the-catalog-version)。
 1. [配置導入結構](#configure-the-import-structure)。
 1. [設定要載入的產品屬性](#configure-the-product-attributes-to-load)。
 1. [匯入產品資料](#importing-the-product-data)。
 1. [設定目錄匯入工具](#configure-the-catalog-importer)。
-1. 使用[匯入工具，將目錄](#catalog-import)匯入AEM中的特定位置。
+1. 使用[匯入工具將目錄](#catalog-import)匯入至中的特定位置AEM。
 
-## 設定Faceted Search for Geometrixx Outdoors {#configure-the-facetted-search-for-geometrixx-outdoors}
+## 配置Geometrixx Outdoors的Faceted Search {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -116,7 +117,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+>使用時，有AEM幾種管理此類服務配置設定的方法；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 記錄輸出會針對已建立的頁面和元件提供意見回應，並報告可能的錯誤。
 
@@ -168,7 +169,7 @@ ht-degree: 1%
 &quot;**Day CQ Commerce Hybris預設匯入處理常式**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
-使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+使用時，有AEM幾種管理此類服務配置設定的方法；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 ## 配置產品屬性以載入{#configure-the-product-attributes-to-load}
 
@@ -183,7 +184,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+   >使用時，有AEM幾種管理此類服務配置設定的方法；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 ## 導入產品資料{#importing-the-product-data}
 
@@ -211,7 +212,7 @@ ht-degree: 1%
 
 ### 完整匯入{#full-import}
 
-1. 如有需要，請使用CRXDE Lite刪除所有現有的產品資料。
+1. 如有需要，請使用CRXDE Lite刪除所有現有產品資料。
 
    1. 導航到包含產品資料的子樹：
 
@@ -224,7 +225,7 @@ ht-degree: 1%
    1. 刪除保存產品資料的節點；例如，`outdoors`。
    1. **保存** 全部以保存更改。
 
-1. 在AEM中開啟hybris匯入工具：
+1. 在中開啟hybris匯入工具AEM:
 
    `/etc/importers/hybris.html`
 
@@ -244,23 +245,23 @@ ht-degree: 1%
        /etc/commerce/products/outdoors
    ```
 
-   您可以在CRXDE Lite中開啟此功能；例如：
+   你可以用CRXDE Lite開啟這個。例如：
 
    `[http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
 
 ### 增量匯入 {#incremental-import}
 
-1. 請在AEM中的適當子樹狀結構下，檢查相關產品的相關資訊：
+1. 請在以下適當子AEM樹狀結構中，檢查相關產品的相關資訊：
 
    `/etc/commerce/products`
 
-   您可以在CRXDE Lite中開啟此功能；例如：
+   你可以用CRXDE Lite開啟這個。例如：
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
 1. 在hybris中，更新相關產品上的資訊。
 
-1. 在AEM中開啟hybris匯入工具：
+1. 在中開啟hybris匯入工具AEM:
 
    `/etc/importers/hybris.html`
 
@@ -271,7 +272,7 @@ ht-degree: 1%
 1. 選擇按一下框&#x200B;**增量導入**。
 1. 按一下&#x200B;**Import Catalog**&#x200B;啟動導入。
 
-   完成時，您可以在下列位置驗證AEM中更新的資料：
+   完成後，您可以在以下位置驗證更新的AEM資料：
 
    ```
        /etc/commerce/products
@@ -282,11 +283,11 @@ ht-degree: 1%
 
 匯入程式可能需要很長時間，因此作為產品同步的擴展，您可以選擇目錄的特定區域以進行手動觸發的快速更新。 這會搭配使用匯出摘要與標準屬性設定。
 
-1. 請在AEM中的適當子樹狀結構下，檢查相關產品的相關資訊：
+1. 請在以下適當子AEM樹狀結構中，檢查相關產品的相關資訊：
 
    `/etc/commerce/products`
 
-   您可以在CRXDE Lite中開啟此功能；例如：
+   你可以用CRXDE Lite開啟這個。例如：
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -296,7 +297,7 @@ ht-degree: 1%
 
    ![chlimage_1-43](assets/chlimage_1-43.png)
 
-1. 在AEM中開啟hybris匯入工具：
+1. 在中開啟hybris匯入工具AEM:
 
    `/etc/importers/hybris.html`
 
@@ -307,7 +308,7 @@ ht-degree: 1%
 1. 選擇按一下框&#x200B;**Express Update**。
 1. 按一下&#x200B;**Import Catalog**&#x200B;啟動導入。
 
-   完成時，您可以在下列位置驗證AEM中更新的資料：
+   完成後，您可以在以下位置驗證更新的AEM資料：
 
    ```
        /etc/commerce/products
@@ -317,14 +318,14 @@ ht-degree: 1%
 
 ## 配置目錄導入程式{#configure-the-catalog-importer}
 
-Hybris目錄可以匯入至AEM，並使用批次匯入工具匯入Hybris目錄、類別和產品。
+您可使用批次匯入工具，將AEMhybris型錄、類別和產品匯入Hybris型錄。
 
 匯入工具使用的參數可設定為：
 
 **Day CQ Commerce Hybris Catalog Importer**
 ( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
-使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+使用時，有AEM幾種管理此類服務配置設定的方法；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 ## 目錄導入{#catalog-import}
 
@@ -360,7 +361,7 @@ hybris套件隨附目錄匯入工具，以設定初始頁面結構。
 
    >[!NOTE]
    >
-   >使用AEM時，有幾種方法可管理此類服務的組態設定；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
+   >使用時，有AEM幾種管理此類服務配置設定的方法；如需詳細資訊，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md)。 另請參見控制台以取得可設定參數及其預設值的完整清單。
 
 1. 通過執行兩個增量更新來初始化導入程式（請參閱[目錄導入](#catalog-import)）:
 
@@ -387,7 +388,7 @@ hybris套件隨附目錄匯入工具，以設定初始頁面結構。
    * 選擇此產品，並將批准狀態更改為`unapproved`
 
 1. 執行另一個增量更新（請參閱[目錄導入](#catalog-import)）。 日誌將列出已刪除的產品。
-1. [統](/help/sites-administering/generic.md#rolling-out-a-catalog) 計適當的目錄。產品和產品頁面將已從AEM中移除。
+1. [統](/help/sites-administering/generic.md#rolling-out-a-catalog) 計適當的目錄。產品和產品頁面將從中移除AEM。
 
    例如：
 
@@ -405,7 +406,7 @@ hybris套件隨附目錄匯入工具，以設定初始頁面結構。
 1. 要重新註冊產品，請執行以下操作：
 
    1. 在hybris中，將批准狀態設回&#x200B;**approved**
-   1. 在AEM中：
+   1. 在AEM:
 
       1. 執行增量更新
       1. 再次推出適當的目錄
@@ -431,7 +432,7 @@ hybris套件隨附目錄匯入工具，以設定初始頁面結構。
    1. 導覽至結帳頁面：
 
       * 用戶端內容會顯示訂單記錄的摘要。
-      * 螢幕上將顯示「您是舊客戶」的消息。
+      * 螢幕上會顯示「您是舊客戶」的資訊。
 
    >[!NOTE]
    >
