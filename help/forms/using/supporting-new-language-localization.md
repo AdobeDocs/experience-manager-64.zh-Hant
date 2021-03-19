@@ -1,17 +1,19 @@
 ---
 title: 支援最適化表單本地化的新地區
 seo-title: 支援最適化表單本地化的新地區
-description: AEM Forms可讓您新增本地化最適化表單的地區設定。 依預設，支援的地區設定是英文、法文、德文和日文。
-seo-description: AEM Forms可讓您新增本地化最適化表單的地區設定。 依預設，支援的地區設定是英文、法文、德文和日文。
+description: AEM Forms允許您為本地化適應性表單添加新的地區。 依預設，支援的地區設定是英文、法文、德文和日文。
+seo-description: AEM Forms允許您為本地化適應性表單添加新的地區。 依預設，支援的地區設定是英文、法文、德文和日文。
 uuid: d4cee51b-c555-4544-9ae9-4aa8d38b2b17
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
+feature: 適用性表單
+role: 管理員
 translation-type: tm+mt
-source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -23,9 +25,9 @@ ht-degree: 0%
 
 最適化表單的本地化需要兩種語言環境字典：
 
-**表單特定字典** 包含最適化表單中使用的字串。例如，標籤、欄位名稱、錯誤訊息、說明說明等。 它作為一組XLIFF檔案來管理，用於每個語言環境，您可以在https://`<host>`:`<port>`/libs/cq/i18n/translator.html中訪問它。
+**表單特定字典** 包含最適化表單中使用的字串。例如，標籤、欄位名稱、錯誤訊息、說明說明等。 它作為一組XLIFF檔案來管理，用於每個區域設定，您可以在https://`<host>`:`<port>`/libs/cq/i18n/translator.html中訪問它。
 
-**全域** 字典在AEM用戶端程式庫中有兩個全域字典，管理為JSON物件。這些字典包含預設錯誤訊息、月名、貨幣符號、日期和時間模式等。 您可以在CRXDe Lite中找到這些字典，網址為/libs/fd/xfaforms/clientlibs/I18N。 這些位置包含每個地區設定的個別資料夾。 由於全域字典通常不會經常更新，因此在每個地區設定中保留個別的JavaScript檔案可讓瀏覽器快取這些字典，並減少在同一伺服器上存取不同最適化表單時的網路頻寬使用。
+**全域** 字典在用戶端資料庫中有兩個全域字典，以JSON物AEM件管理。這些字典包含預設錯誤訊息、月名、貨幣符號、日期和時間模式等。 您可以在CRXDe Lite中找到這些字典，網址為/libs/fd/xfaforms/clientlibs/I18N。 這些位置包含每個地區設定的個別資料夾。 由於全域字典通常不會經常更新，因此在每個地區設定中保留個別的JavaScript檔案可讓瀏覽器快取這些字典，並減少在同一伺服器上存取不同最適化表單時的網路頻寬使用。
 
 ### 自適應表單的本地化如何運作{#how-localization-of-adaptive-form-works}
 
@@ -39,7 +41,7 @@ ht-degree: 0%
 
 * 為用戶設定的瀏覽器區域設定，該設定在使用`Accept-Language`標題的請求中指定。
 
-* AEM中指定之使用者的語言設定。
+* 中指定的用戶的語言設定AEM。
 
 一旦識別了地區設定，最適化表單就會挑選特定表單的字典。 如果找不到所請求地區的表單特定字典，則使用英文（英文）字典。
 
@@ -47,7 +49,7 @@ ht-degree: 0%
 
 ## 新增不支援地區設定的本地化支援{#add-localization-support-for-non-supported-locales}
 
-AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文——巴西(pt-BR、中文-(zh-CN)、中文——台灣(zh-TW)和韓文(ko-KR)語言環境將調適性表單內容本地化。
+AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文——巴西(pt-BR、中文-(zh-CN)、中文——台灣(zh-TW)和韓文(ko-KR)地區語言，將調適性表單內容本地化。
 
 若要在最適化表單執行時期新增語言環境支援：
 
@@ -113,7 +115,7 @@ LogMessages.js
 
 ### 重新啟動伺服器{#restart-the-server}
 
-重新啟動AEM伺服器，讓新增的地區設定生效。
+重新啟AEM動伺服器，使添加的語言環境生效。
 
 ## 新增西班牙文{#sample-libraries-for-adding-support-for-spanish}支援的范常式式庫
 
