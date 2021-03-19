@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1898'
 ht-degree: 1%
 
 ---
@@ -30,7 +31,7 @@ Correponse Management解決方案允許您將自定義操作添加到「建立�
 要完成此方案，您需要：
 
 * CRX和JavaScript的相關知識
-* LiveCycle Server
+* LiveCycle伺服器
 
 ## 方案：在「建立對應用戶介面」中建立按鈕，以發送要審核的信函{#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
@@ -38,7 +39,7 @@ Correponse Management解決方案允許您將自定義操作添加到「建立�
 
 1. 將按鈕添加到建立對應用戶介面
 1. 新增動作處理至按鈕
-1. 新增LiveCycle程式以啟用動作「處理」
+1. 添加LiveCycle進程以啟用操作「處理」
 
 ### 將按鈕添加到建立對應用戶介面{#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -92,7 +93,7 @@ Correponse Management解決方案允許您將自定義操作添加到「建立�
    </extensionsConfig> 
    ```
 
-1. 若要以電子郵件寄送信函，您可以使用LiveCycle Forms Workflow。 在acmExtensionsConfig.xml的modelExtension標籤下方新增customAction標籤，如下所示：
+1. 若要以電子郵件寄送信件，您可以使用LiveCycleForms Workflow。 在acmExtensionsConfig.xml的modelExtension標籤下方新增customAction標籤，如下所示：
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -117,7 +118,7 @@ Correponse Management解決方案允許您將自定義操作添加到「建立�
 
    | **名稱** | **說明** |
    |---|---|
-   | serviceName | 如果customAction包含名為serviceName的子標籤，則在按一下相關按鈕／連結時，將調用由serviceName標籤表示的名稱的進程。 請確定此程式與Letter PostProcess具有相同的簽名。 在服務名中添加&quot;Forms Workflow ->&quot;前置詞。 |
+   | serviceName | 如果customAction包含名為serviceName的子標籤，則在按一下相關按鈕／連結時，將調用由serviceName標籤表示的名稱的進程。 請確定此程式與Letter PostProcess具有相同的簽名。 在服務名中添加&quot;Forms Workflow->&quot;前置詞。 |
    | 標籤名稱中包含cm_前置詞的參數 | 如果customAction包含以名稱cm_開頭的子標籤，則在後置處理中（無論是信件後置處理，還是由serviceName標籤表示的特殊處理），這些參數可在輸入XML代碼中，在移除cm_前置詞的相關標籤下使用。 |
    | actionName | 每當貼文程式因點按而發生時，提交的XML會包含一個特殊標籤，其名稱位於標籤下，且標籤的名稱為使用者動作名稱。 |
 
@@ -161,9 +162,9 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 
 1. 按一下&#x200B;**[!UICONTROL 保存全部]**。
 
-#### 重新啟動Adobe Asset Composer Building Block組合{#restart-the-adobe-asset-composer-building-block-bundle}
+#### 重新啟動Adobe資產編寫器構建塊包{#restart-the-adobe-asset-composer-building-block-bundle}
 
-進行每個伺服器端變更後，請重新啟動Adobe Asset Composer Building Block套件。 在此案例中，伺服器端的acmExtensionsConfig.xml和ACMExtensionsMessages.properties檔案會加以編輯，因此Adobe Asset Composer建置區塊套裝需要重新啟動。
+在進行每個伺服器端更改後，重新啟動AdobeAsset Composer構建塊包。 在此案例中，伺服器端的acmExtensionsConfig.xml和ACMExtensionsMessages.properties檔案會加以編輯，因此，Adobe資產撰寫器建立區塊套裝需要重新啟動。
 
 >[!NOTE]
 >
@@ -171,11 +172,11 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 
 1. 前往 `https://[host]:[port]/system/console/bundles`. 如有必要，請以管理員身份登錄。
 
-1. 找到Adobe Asset Composer建置區塊套件。 重新啟動套件：按一下「停止」，然後按一下「開始」。
+1. 找到Adobe資產編寫器構建塊捆綁包。 重新啟動套件：按一下「停止」，然後按一下「開始」。
 
-   ![Adobe Asset Composer建置區塊](assets/6_assetcomposerbuildingblockbundle.png)
+   ![Adobe資產編譯器構建塊](assets/6_assetcomposerbuildingblockbundle.png)
 
-重新啟動Adobe Asset Composer建置區塊套裝後，自訂按鈕會出現在「建立對應使用者介面」中。 您可以在「建立對應使用者介面」中開啟一個字母，以預覽自訂按鈕。
+重新啟動「Adobe資產撰寫器構建塊」捆綁包後，自定義按鈕將出現在「建立對應用戶介面」中。 您可以在「建立對應使用者介面」中開啟一個字母，以預覽自訂按鈕。
 
 ### 將動作處理新增至按鈕{#add-action-handling-to-the-button}
 
@@ -322,7 +323,7 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
       '</div>';
       ```
 
-### 新增LiveCycle程式以啟用動作<span class="acrolinxCursorMarker"></span>處理{#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### 添加LiveCycle進程以啟用操作<span class="acrolinxCursorMarker"></span>處理{#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 在此案例中，請啟用下列元件，這些元件是附加元件。zip檔案的一部分：
 
@@ -333,16 +334,16 @@ ACMExtensionsMessages.properties檔案包含「建立對應」使用者介面中
 
 [取得檔案](assets/components.zip)
 
-#### 配置LiveCycle Server以運行LCA進程{#configure-the-livecycle-server-to-run-the-lca-process}
+#### 配置LiveCycle伺服器以運行LCA進程{#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
 >只有在您處於「OSGI設定」中，且要實施的自訂類型需要LC整合時，才需要此步驟。
 
-LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入憑證。
+LCA進程在LiveCycle伺服器上運行，需要伺服器地址和登錄憑據。
 
 1. 前往`https://[server]:[port]/system/console/configMgr`，以管理員身分登入。
-1. 找到「Adobe LiveCycle Client SDK Configuration」（Adobe LiveCycle用戶端SDK設定），然後按一下「Edit ]**」（編輯圖示）。**[!UICONTROL 「配置」(Configurations)面板隨即開啟。
+1. 找到「AdobeLiveCycle客戶端SDK配置」，然後按一下「編輯」（編輯表徵圖）。 ****「配置」(Configurations)面板隨即開啟。
 
 1. 輸入以下詳細資訊，然後按一下&#x200B;**[!UICONTROL 保存]**:
 
@@ -350,11 +351,11 @@ LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入�
    * **[!UICONTROL 使用者名稱]**:LC伺服器的管理員用戶名
    * **[!UICONTROL 密碼]**:管理員使用者名稱的密碼
 
-   ![Adobe LiveCycle Client SDK設定](assets/3_clientsdkconfiguration.png)
+   ![AdobeLiveCycle客戶端SDK配置](assets/3_clientsdkconfiguration.png)
 
-#### 安裝LiveCycle Archive(LCA){#install-livecycle-archive-lca}
+#### 安裝LiveCycle存檔(LCA){#install-livecycle-archive-lca}
 
-啟用電子郵件服務程式的必要LiveCycle程式。
+啟用電子郵件服務流程的必要LiveCycle流程。
 
 >[!NOTE]
 >
@@ -382,18 +383,18 @@ LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入�
 
 #### 將ServiceName添加到AllowListed服務清單{#adding-servicename-to-the-allowlisted-service-list}
 
-在AEM伺服器中提及您要存取AEM伺服器的LiveCycle服務。
+在伺服器AEM中提及您要存取伺服器的LiveCycleAEM服務。
 
 1. 以管理員身份登錄到`https:/[host]/:[port]/system/console/configMgr`。
 
-1. 找到並按一下「Adobe LiveCycle Client SDK Configuration ]**」。**[!UICONTROL &#x200B;出現「Adobe LiveCycle Client SDK Configuration」（Adobe LiveCycle用戶端SDK設定）面板。
+1. 找到並按一下&#x200B;**[!UICONTROL AdobeLiveCycle客戶端SDK配置]**。 出現「AdobeLiveCycle客戶端SDK配置」面板。
 1. 在「服務名」清單中，按一下+表徵圖並添加serviceName **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**。
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
 #### 配置電子郵件服務{#configure-the-email-service}
 
-在此案例中，若要讓「通信管理」能夠傳送電子郵件，請在LiveCycle伺服器中設定電子郵件服務。
+在此情況下，要使「通信管理」能夠發送電子郵件，請在LiveCycle伺服器中配置電子郵件服務。
 
 1. 使用管理員認證登入Livecycle Server adminui，位於`https:/[lc server]:[lc port]/adminui`。
 
@@ -403,28 +404,28 @@ LCA程式會在LiveCycle伺服器上執行，並需要伺服器位址和登入�
 
 1. 在&#x200B;**[!UICONTROL SMTP主機]**&#x200B;中，配置電子郵件服務。
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
 #### 配置DSC服務{#configure-the-dsc-service}
 
-若要使用Correponse Management API，請下載`DSCSample.jar`（附於本檔案中，作為`components.zip`的一部分）並上傳至LiveCycle伺服器。 將`DSCSample.jar`檔案上傳至LiveCycle伺服器後，AEM伺服器會使用`DSCSample.jar`檔案來存取renderLetter API。
+若要使用Correponse Management API，請下載`DSCSample.jar`（附於本檔案中，作為`components.zip`的一部分）並將其上傳至LiveCycle伺服器。 將`DSCSample.jar`檔案上傳至LiveCycle伺服器後，AEM伺服器會使用`DSCSample.jar`檔案來存取renderLetter API。
 
-如需詳細資訊，請參閱[連接AEM表單與Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)。
+有關詳細資訊，請參閱[將AEM Forms與AdobeLiveCycle連接](/help/forms/using/aem-livecycle-connector.md)。
 
-1. 更新`DSCSample.jar`中cmsa.properties中的AEM伺服器URL，此位置如下：
+1. 更新AEM`DSCSample.jar`中cmsa.properties中的伺服器URL，該位置如下：
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. 在配置檔案中提供以下參數：
 
-   * **crx.serverUrl**=https:/[host]/:port[/contextpath]/[context URL][ AEM URL]
-   * **crx.username**= AEM使用者名稱
-   * **crx.password**= AEM密碼
+   * **crx.serverUrl**=https:/[host]/:port[/contextpath][/]context [path/AEM URL]
+   * **crx.username**=AEM用戶名
+   * **crx.password**= AEM password
    * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
-   >每次您在伺服器端進行任何變更時，請重新啟動LiveCycle Server。 如需有關建立您自己LiveCycle元件的詳細資訊，請參閱[透過自訂DSC開發擴充LiveCycle ES軟體](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)。
+   >每次在伺服器端進行任何更改時，請重新啟動LiveCycle伺服器。 有關建立自己的LiveCycle元件的資訊，請參閱[通過自定義DSC開發擴展LiveCycleES軟體](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)。
 
    `DSCSample.jar`檔案使用`renderLetter` API。 如需renderLetter API的詳細資訊，請參閱[介面LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
 
