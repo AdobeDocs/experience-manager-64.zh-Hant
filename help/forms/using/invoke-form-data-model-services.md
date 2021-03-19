@@ -7,10 +7,11 @@ uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 1%
 
 ## 概覽 {#overview}
 
-AEM Forms可讓表單作者從最適化表單欄位中叫用表單資料模型中設定的服務，進一步簡化並增強表單填寫體驗。 若要叫用資料模型服務，您可以在視覺編輯器中建立規則，或在[規則編輯器](/help/forms/using/rule-editor.md)的程式碼編輯器中使用`guidelib.dataIntegrationUtils.executeOperation` API指定JavaScript。
+AEM Forms公司使表單作者能夠從自適應表單欄位中調用表單資料模型中配置的服務，從而進一步簡化並增強表單填寫體驗。 若要叫用資料模型服務，您可以在視覺編輯器中建立規則，或在[規則編輯器](/help/forms/using/rule-editor.md)的程式碼編輯器中使用`guidelib.dataIntegrationUtils.executeOperation` API指定JavaScript。
 
 本檔案著重於使用`guidelib.dataIntegrationUtils.executeOperation` API來編寫JavaScript以叫用服務。
 
