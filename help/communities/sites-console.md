@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
+role: 管理員
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3242'
 ht-degree: 3%
 
 ---
@@ -27,7 +28,7 @@ Communities Sites控制台可讓您存取：
 * 網站管理
 * [建立和編輯巢狀群組](groups.md) （子社群）
 
-請參閱[AEM Communities快速入門(Getting Started with AEM Communities](getting-started.md))，體驗在作者環境中建立社群網站的速度，以及如何從作者和發佈環境建立社群群組。
+請參閱[AEM Communities快速入門(Getting Started with Moginal](getting-started.md))，瞭解在作者環境中建立社群網站的速度，以及如何從作者和發佈環境建立社群群組。
 
 >[!NOTE]
 >
@@ -116,7 +117,7 @@ Communities Sites控制台可讓您存取：
 
 ![sitetheme-1](assets/sitetheme-1.png)
 
-此架構使用[Twitter Bootstrap](https://twitterbootstrap.org/)為網站提供回應式、有彈性的設計。 可以選擇多個預載入的引導主題之一來設定所選社區站點模板的樣式，或者可以上載引導主題。
+此架構使用[TwitterBootstrap](https://twitterbootstrap.org/)為網站提供回應式、有彈性的設計。 可以選擇多個預先載入的Bootstrap主題之一以對所選社區站點模板進行樣式化，或者可以上載Bootstrap主題。
 
 選取後，主題將會以不透明的藍色核取標籤覆蓋。
 
@@ -271,7 +272,7 @@ Communities Sites控制台可讓您存取：
 
 * **[!UICONTROL 啟動 Analytics]**
 
-   只有在Adobe Analytics已針對社群功能設定[](analytics.md)時才可用。
+   只有在Adobe Analytics已為Communities功能配置[](analytics.md)時才可用。
 
    預設為未勾選。 勾選後，會出現其他選擇功能表：
 
@@ -288,7 +289,7 @@ Communities Sites控制台可讓您存取：
 ![chlimage_1-455](assets/chlimage_1-455.png)
 
 * **[!UICONTROL 允許機]**
-器翻譯選中（預設為未選中）後，將為站點內的UGC啟用機器翻譯。這不會影響任何其他內容，例如頁面內容，即使網站設定為多語言網站亦然。 如需為AEM Communities設定授權轉譯服務的詳細資訊，請參閱[轉譯使用者產生的內容](translate-ugc.md)。 如需完整概觀，請參閱[多語言網站翻譯內容](../../help/sites-administering/translation.md)。
+器翻譯選中（預設為未選中）後，將為站點內的UGC啟用機器翻譯。這不會影響任何其他內容，例如頁面內容，即使網站設定為多語言網站亦然。 有關為AEM Communities配置許可翻譯服務的資訊，請參見[翻譯用戶生成的內容](translate-ugc.md)。 如需完整概觀，請參閱[多語言網站翻譯內容](../../help/sites-administering/translation.md)。
 
 ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -318,7 +319,7 @@ Communities Sites控制台可讓您存取：
 
    * **[!UICONTROL 只翻譯選取項目]**
 
-      如果選取此選項，則每個貼文旁會出現一個翻譯選項，允許將個別貼文翻譯為頁面的基本語言。
+      如果選取此選項，每個貼文旁會出現一個翻譯選項，允許將個別貼文翻譯為頁面的基本語言。
 
       預設值為&#x200B;*selected*。
 
@@ -390,13 +391,13 @@ Communities Sites控制台可讓您存取：
 
 ![chlimage_1-460](assets/chlimage_1-460.png)
 
-網站的內容可能與任何其他AEM網站使用相同的工具編寫。 若要開啟網站以進行製作，請選取在滑鼠暫留網站時顯示的`Open Site`圖示。 該站點將在新頁籤中開啟，以便Communities Sites控制台仍可訪問。
+網站的內容可能與任何其他網站使用相同的工具AEM製作。 若要開啟網站以進行製作，請選取在滑鼠暫留網站時顯示的`Open Site`圖示。 該站點將在新頁籤中開啟，以便Communities Sites控制台仍可訪問。
 
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
 >
->如果不熟悉AEM，請檢視[基本處理](../../help/sites-authoring/basic-handling.md)和[製作頁面快速指南的說明檔案](../../help/sites-authoring/qg-page-authoring.md)。
+>如果不熟AEM悉，請檢視[基本處理](../../help/sites-authoring/basic-handling.md)和[頁面編寫快速指南的說明檔案。](../../help/sites-authoring/qg-page-authoring.md)
 
 ## 修改站點屬性{#modifying-site-properties}
 
@@ -568,7 +569,7 @@ ENABLEMENT面板可讓您存取社群網站建立期間提供的設定。
 
 ### 測試驗證重定向{#test-authentication-redirection}
 
-在相同的AEM發佈例項上，設定了社群網站的登入頁面對應：
+在為社AEM群網站設定登入頁面對應的相同發佈例項上：
 
 * 瀏覽至社群網站首頁
    * 例如，[http://localhost:4503/content/sites/engage/en.html](http://localhost:4503/content/sites/engage/en.html)
