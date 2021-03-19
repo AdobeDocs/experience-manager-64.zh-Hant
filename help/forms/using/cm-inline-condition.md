@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 0%
 
 ## 內嵌條件{#inline-conditions}
 
-AEM Forms可讓您在文字模組中使用內嵌條件，以自動呈現依賴與表單資料模型（在互動式通訊中）或資料字典（以字母表示）相關的內容或資料的文字。 內嵌條件會根據條件評估為true或false來顯示特定內容。
+AEM Forms允許您在文字模組中使用內嵌條件，以自動轉換取決於表單資料模型（在互動式通訊中）或資料字典（在字母中）的相關內容或資料的文字。 內嵌條件會根據條件評估為true或false來顯示特定內容。
 
 條件對表單資料模型／資料字典或最終用戶提供的資料值執行計算。 使用內嵌條件，您可以節省時間並減少人為錯誤，同時建立高度情境化和個人化的互動式通訊／信件。
 
