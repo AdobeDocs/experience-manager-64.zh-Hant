@@ -9,11 +9,12 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 9fa89ca34843d41a5ab5711c1090fcc7a1077760
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '728'
-ht-degree: 0%
+source-wordcount: '729'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ## 概覽 {#overview}
 
-AEM Communities的訊息功能可讓登入網站訪客（成員）彼此傳送訊息，當登入網站時，這些訊息可供存取。
+AEM Communities的傳訊功能可讓登入網站訪客（成員）傳送訊息給其他人，當登入網站時，這些訊息可供存取。
 
 在[社區站點建立](sites-console.md)期間選中框，可為社區站點啟用消息傳遞。
 
@@ -32,7 +33,7 @@ AEM Communities的訊息功能可讓登入網站訪客（成員）彼此傳送�
 
 ## 消息傳遞操作服務{#messaging-operations-service}
 
-[AEM Communities Messaging Operations Service](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl)可識別處理訊息相關要求的端點、服務應用來儲存訊息的資料夾，以及如果訊息可能包含檔案附件，允許使用哪些檔案類型。
+[AEM Communities消息業務服務](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl)標識了處理消息相關請求的端點、服務應用於儲存消息的資料夾，以及如果消息可能包含檔案附件，則允許哪些檔案類型。
 
 對於使用[Communities Sites控制台](sites-console.md)建立的社區站點，服務實例已存在，收件箱設定為`/mail/community/inbox`。
 
