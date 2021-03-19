@@ -8,11 +8,12 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 7%
+source-wordcount: '336'
+ht-degree: 8%
 
 ---
 
@@ -30,7 +31,7 @@ AEM Forms允許您根據用戶的角色或功能限制規則編輯器對用戶�
 1. 以管理員身份登錄AEM Forms。
 1. 在作者例項中，按一下「![adobeexperiencemanager](assets/adobeexperiencemanager.png)Adobe Experience Manager>工具![hammer](assets/hammer.png) >作業> Web Console」。 「Web控制台」在新視窗中開啟。
 
-   ![1](assets/1.png)
+   ![3](assets/1.png)
 
 1. 在Web控制台窗口中，找到並按一下&#x200B;**[!UICONTROL 自適應表單和互動式通信Web通道配置]**。 **[!UICONTROL 出現「Adaptive Form and Interactive Communication Web Channel]** Configuration（自適應表單和互動式通信Web通道配置）」對話框。請勿變更任何值，然後按一下「儲存」。****
 
