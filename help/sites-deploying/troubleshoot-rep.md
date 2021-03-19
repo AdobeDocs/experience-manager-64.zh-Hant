@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
+feature: 設定
 translation-type: tm+mt
-source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -46,7 +47,7 @@ ht-degree: 0%
 1. 隊列狀態是否顯示&#x200B;**隊列處於活動狀態- # pending**? 基本上，復製作業可能會卡在套接字讀取中，等待pubilsh實例或調度程式作出響應。 這可能表示發佈實例或調度程式處於高負載狀態或卡在鎖中。 從作者處取出執行緒轉儲，並在此案例中發佈。
 
    * 線上程轉儲分析器中從author開啟線程轉儲，檢查它是否顯示複製代理的sling事件作業卡在套接字讀取中。
-   * 線上程轉儲分析器中從發佈開啟線程轉儲，分析可能導致發佈實例不響應的原因。 您應看到名稱中包含POST /bin/receive的線程，即從作者處接收複製的線程。
+   * 線上程轉儲分析器中從發佈開啟線程轉儲，分析可能導致發佈實例不響應的原因。 您應該看到一個名稱中包含/bin/receivePOST的線程，即從作者處接收複製的線程。
 
 **如果所有代理隊列都被卡住**
 
