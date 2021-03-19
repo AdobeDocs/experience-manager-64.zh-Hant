@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ FFmpeg是轉換和串流音訊和視訊的解決方案，在安裝時，會用�
 
 ## 安裝FFmpeg {#installing-ffmpeg}
 
-FFmpeg應安裝在代管AEM *author*&#x200B;例項的伺服器上。
+FFmpeg應安裝在代管AEM *author*&#x200B;實例的伺服器上。
 
 1. 前往[https://www.ffmpeg.org](https://www.ffmpeg.org/)
 1. 下載適用於您特定環境（Macintosh、Windows或Linux）的最新版FFmpeg
