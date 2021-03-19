@@ -1,25 +1,26 @@
 ---
-title: 6.4中AEM Communities的儲存庫重組
-seo-title: 6.4中AEM Communities的儲存庫重組
-description: 瞭解如何進行必要的變更，以移轉至AEM 6.4 for Communities中的新儲存庫結構。
-seo-description: 瞭解如何進行必要的變更，以移轉至AEM 6.4 for Communities中的新儲存庫結構。
+title: 6.4中的AEM Communities資源庫重組
+seo-title: 6.4中的AEM Communities資源庫重組
+description: 瞭解如何進行必要的更改，以便遷移到6.4中AEM的Communities新儲存庫結構。
+seo-description: 瞭解如何進行必要的更改，以便遷移到6.4中AEM的Communities新儲存庫結構。
 uuid: d161655f-4074-44a7-8d69-38e80934c58b
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
+feature: 升級
 translation-type: tm+mt
-source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 3%
 
 ---
 
 
-# 6.4{#repository-restructuring-for-aem-communities-in}中AEM Communities的資料庫重組
+# 6.4{#repository-restructuring-for-aem-communities-in}中的AEM Communities資源庫重組
 
-如上層[「AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的儲存庫重組」頁面所述，升級至AEM 6.4的客戶應使用此頁面來評估與影響AEM Communities Solution的儲存庫變更相關的工作量。 有些變更需要在AEM 6.4升級程式中努力工作，而有些則會延遲至6.5升級。
+如[父6.4](/help/sites-deploying/repository-restructuring.md)頁中的「資料庫重組」頁中所述，升級至AEM6.4的客戶應使用此頁評估與影響AEM Communities解決方案的資料庫更改相關的工作成果。 有些變更需要在6.4升級程AEM序中努力工作，而有些則會延遲至6.5升級。
 
 **使用6.4升級**
 
@@ -187,11 +188,11 @@ ht-degree: 3%
     <ol> 
      <li>將「上一個位置」中的現有配置遷移到「新位置」。
       <ol> 
-       <li>透過AEM編寫UI（位於<strong>工具&gt;雲端服務&gt; Facebook社交登入設定</strong>）手動重新建立新的Facebook社交登入設定。<br /> 或 <br /> </li> 
+       <li>透過<strong>工具&gt;Cloud Services&gt; Facebook社交登入設定</strong>的AEM編寫UI，手動重新建立新的Facebook社交登入設定。<br /> 或 <br /> </li> 
        <li>將任何新的Facebook雲端設定從「上一個位置」複製至<code>/conf/global or /conf/&lt;tenant&gt;</code>下方的適當新位置。</li> 
       </ol> </li> 
-     <li>將<code>[cq:Page]/jcr:content@cq:conf</code>屬性設為「新位置」中的絕對路徑，以更新任何AEM Communities網站根目錄以參考新的Facebook Social登入設定。</li> 
-     <li>將舊版Facebook Connect Cloud服務與任何更新為參考新位置的AEM Communities網站根目錄取消關聯。</li> 
+     <li>將<code>[cq:Page]/jcr:content@cq:conf</code>屬性設為「新位置」中的絕對路徑，更新任何AEM Communities網站根目錄以參考新的Facebook社交登入設定。</li> 
+     <li>將舊版Facebook ConnectCloud Service與任何更新為參考新位置的AEM Communities網站根目錄取消關聯。</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -243,11 +244,11 @@ ht-degree: 3%
     <ol> 
      <li>將「上一個位置」中的現有配置遷移到「新位置」。
       <ol> 
-       <li>透過AEM編寫UI（位於<strong>「工具&gt;雲端服務&gt; Pinterest社交登入設定」），手動重新建立新的Pinterest社交登入設定。</strong><br /> 或</li> 
+       <li>透過<strong>工具&gt;Cloud Services&gt; Pinterest Social登入設定</strong>的AEM編寫UI，手動重新建立新的Pinterest Social登入設定。<br /> 或</li> 
        <li>將任何新的Pinterest雲端組態從「上一個位置」複製至<code>/conf/global or /conf/&lt;tenant&gt;</code>下方的適當新位置。</li> 
       </ol> </li> 
-     <li>透過將<code>[cq:Page]/jcr:content@cq:conf</code>屬性設為「新位置」中的絕對路徑，更新任何AEM Communities網站根目錄以參考新的Pinterest Social登入設定。</li> 
-     <li>將舊版Pinterest Connect Cloud服務與任何更新以參考新位置的AEM Communities網站根目錄取消關聯。</li> 
+     <li>更新任何AEM Communities網站根目錄，透過將<code>[cq:Page]/jcr:content@cq:conf</code>屬性設為新位置中的絕對路徑，來參考新的Pinterest社交登入設定。</li> 
+     <li>將舊版Pinterest ConnectCloud Service與任何更新為參考新位置的AEM Communities網站根系取消關聯。</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -309,11 +310,11 @@ ht-degree: 3%
     <ol> 
      <li>將「上一個位置」中的現有配置遷移到「新位置」。
       <ol> 
-       <li>透過AEM編寫UI（位於<strong>工具&gt;雲端服務&gt; Twitter社交登入設定</strong>）手動重新建立新的Twitter社交登入設定。<br /> 或 <br /> </li> 
+       <li>透過<strong>工具&gt;Cloud Services&gt; Twitter社交登入設定</strong>的AEM編寫UI，手動重新建立新的Twitter社交登入設定。<br /> 或 <br /> </li> 
        <li>將任何新的Twitter雲端設定從「上一個位置」複製至<code>/conf/global or /conf/&lt;tenant&gt;</code>下方的適當新位置。</li> 
       </ol> </li> 
-     <li>將<code>[cq:Page]/jcr:content@cq:conf</code>屬性設為「新位置」中的絕對路徑，以更新任何AEM Communities網站根目錄以參考新的Twitter社交登入設定。</li> 
-     <li>將舊版Twitter Connect Cloud服務與任何更新為參考新位置的AEM Communities網站根目錄取消關聯。</li> 
+     <li>將<code>[cq:Page]/jcr:content@cq:conf</code>屬性設為「新位置」中的絕對路徑，更新任何AEM Communities網站根目錄以參考新的Twitter社交登入設定。</li> 
+     <li>將舊版Twitter ConnectCloud Service與任何更新為參考新位置的AEM Communities網站根目錄取消關聯。</li> 
     </ol> </td> 
   </tr>
   <tr>
@@ -337,7 +338,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>重組指導</strong></td> 
-   <td><p>Adobe已提供移轉公用程式，網址為：</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td> 
+   <td><p>Adobe已在以下網址提供遷移實用程式：</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td> 
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
