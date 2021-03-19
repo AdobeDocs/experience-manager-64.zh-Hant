@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -63,7 +64,7 @@ AEM Communities使用電子郵件
 * **[!UICONTROL SMTP使用SSL]**:如果勾選，將傳送安全的電子郵件。確保埠設定為465或SMTP伺服器需要。
 * **[!UICONTROL 除錯電子郵件]**:如果選中此選項，則啟用SMTP伺服器交互的日誌記錄。
 
-## AEM Communities電子郵件設定{#aem-communities-email-configuration}
+## AEM Communities電子郵件配置{#aem-communities-email-configuration}
 
 配置[預設郵件服務](#default-mail-service-configuration)後，發行中包含的`AEM Communities Email Reply Configuration` OSGi配置的兩個現有實例將變為可用。
 
