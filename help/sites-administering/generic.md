@@ -1,18 +1,19 @@
 ---
 title: 管理一般電子商務
 seo-title: 管理一般電子商務
-description: AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法。
-seo-description: AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法。
+description: 通用AEM解決方案提供了管理儲存在儲存庫中的商務資訊的方法。
+seo-description: 通用AEM解決方案提供了管理儲存在儲存庫中的商務資訊的方法。
 uuid: 8af6933a-2dee-4b73-bc15-71b8394d082f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
+feature: 商務整合框架
 translation-type: tm+mt
-source-git-commit: fc2c7b62960a0a3cb45d595673b8dcfeb990d7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '3007'
 ht-degree: 2%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 2%
 
 # 管理一般電子商務{#administering-generic-ecommerce}
 
-AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法（而非使用外部電子商務引擎）。 這包括：
+該通AEM用解決方案提供了管理存放在儲存庫中的商務資訊的方法（而不是使用外部電子商務引擎）。 這包括：
 
 * [產品](/help/sites-administering/concepts.md#products)
 * [產品的系列品種](/help/sites-administering/concepts.md#product-variants)
@@ -33,7 +34,7 @@ AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法�
 
 >[!NOTE]
 >
->標準AEM安裝包含一般AEM(JCR)電子商務實作。
+>標準安AEM裝包含通用AEM(JCR)電子商務實作。
 >
 >這目前僅供展示之用，或根據您的需求做為自訂實作的基礎。
 
@@ -52,11 +53,11 @@ AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法�
 
 >[!NOTE]
 >
->Geometrixx-Outdoors商店有單一產品類型（因此也有單一支架）:
+>Geometrixx-戶外商店有單一產品類型（因此也有單一支架）:
 >
 >`/etc/scaffolding/geometrixx-outdoors`
 >
->Geometrixx-Outdoors產品類型在上：
+>Geometrixx-戶外產品類型在上處於活動狀態：
 >
 >`/etc/commerce/products/geometrixx-outdoors`
 >
@@ -120,7 +121,7 @@ AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法�
 
    * **商務提供程式**
 
-      [commerce provider](/help/sites-administering/concepts.md#commerce-providers)的匯入工具；預設為Geometrixx。
+      [commerce provider](/help/sites-administering/concepts.md#commerce-providers)的匯入工具；預設Geometrixx。
 
    * **來源檔案**
 
@@ -136,7 +137,7 @@ AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法�
 
 >[!NOTE]
 >
->標準產品管理是基本的，因為Geometrixx-Outdoors產品集一直保持基本。 複雜度是以產品[支架](/help/sites-authoring/scaffolding.md)為基礎，因此使用您自己的產品支架，就可進行更精密的編輯。
+>標準產品管理是基本的，因為Geometrixx-室外產品集一直保持基本。 複雜度是以產品[支架](/help/sites-authoring/scaffolding.md)為基礎，因此使用您自己的產品支架，就可進行更精密的編輯。
 
 #### 建立產品資訊——最佳化觸控式UI {#creating-product-information-touch-optimized-ui}
 
@@ -222,7 +223,7 @@ AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法�
 
 #### 擴展搜索{#extending-search}
 
-您可以使用CRXDE Lite修改現有Facet或新增Facet:
+您可以使用CRXDE Lite來修改現有Facet或新增Facet:
 
 1. 導航到:
 
@@ -329,9 +330,9 @@ AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法�
 
 >[!NOTE]
 >
->通常，產品資訊會透過參考其頁面發佈。 例如，在發佈參照產品Y的頁面X時，AEM會詢問您是否也要發佈產品Y。
+>通常，產品資訊會透過參考其頁面發佈。 例如，在發佈參照產品Y的頁面XAEM時，會詢問您是否也要發佈產品Y。
 >  
->針對特殊情況，AEM也支援直接從產品資料發佈。
+>在特殊情況下，AEM也支援直接從產品資料發佈。
 
 1. 使用&#x200B;**Products**&#x200B;控制台（透過&#x200B;**Commerce**）瀏覽至您的產品資訊。
 1. 使用下列任一項：
@@ -350,7 +351,7 @@ AEM一般解決方案提供管理存放在儲存庫中的商務資訊的方法�
 Search&amp;Promote整合可讓您：
 
 * 使用eCommerce API，獨立於基礎資料庫結構和商務平台。
-* 運用Search&amp;Promote的「索引連接器」功能，以XML格式提供產品饋送。
+* 運用Search&amp;Promote的「索引連接器」功能，以XML格式提供產品摘要。
 * 運用Search&amp;Promote的「遠端控制」功能，執行產品饋送的隨選或排程要求
 * 不同Search&amp;Promote帳戶的動態消息產生，設定為雲端服務設定。
 
@@ -375,7 +376,7 @@ Search&amp;Promote整合可讓您：
 
 >[!NOTE]
 >
->另請閱讀「AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)中的事件處理」。[](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)[
+>另請閱讀[](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)中的AEM事件處理。[](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
 ### 加入購物車連結的影像{#image-with-add-to-cart-links}
 
@@ -453,7 +454,7 @@ Search&amp;Promote整合可讓您：
 
 >[!NOTE]
 >
->目錄將參考您的產品資料。
+>目錄將參照您的產品資料。
 
 要生成目錄，請執行以下操作：
 
@@ -500,7 +501,7 @@ Search&amp;Promote整合可讓您：
 
 1. 開啟新的`Swimwear`頁面，然後按一下「編輯Blueprint **」以開啟「屬性****」對話方塊，您可在其中設定「產品****」選項。**
 
-   例如，開啟&#x200B;**Tags/Keywords**&#x200B;欄位以選取「活動」，然後從Geometrixx-Outdoors區段選取「游泳」。
+   例如，開啟&#x200B;**Tags/Keywords**&#x200B;欄位以選取「活動」，然後從「Geometrixx-戶外」區段中選取「游泳」。
 
 1. 按一下&#x200B;**OK**&#x200B;保存屬性；範例產品將顯示在Blueprint頁面的&#x200B;**產品選擇標準**&#x200B;下。
 1. 按一下&#x200B;**轉出更改……**，選擇&#x200B;**轉出頁面和所有子頁面**，然後按一下&#x200B;**Next**，然後按一下&#x200B;**Lovolt**。 成功完成轉出後，**Status**&#x200B;指示器將顯示為綠色。
@@ -639,15 +640,15 @@ Search&amp;Promote整合可讓您：
 
 若要允許使用者將憑證新增至購物車，您可以使用內建的&#x200B;**憑證**&#x200B;元件（商務類別）。 您必須將此項目新增至顯示購物車的相同頁面（但非必要）。 憑單元件只是用戶可以輸入憑單代碼的表單，而購物車元件實際上顯示了已申請的憑單及其折扣清單。
 
-在示範網站(Geometrixx Outdoors - English)中，您可以在購物車頁面的實際購物車下方看到優惠券表單。
+在示範網站(Geometrixx Outdoors-英文)中，您可以在購物車頁面的實際購物車下看到優惠券表格。
 
 ## 訂購 {#orders}
 
 >[!NOTE]
 >
->應該記住，現成可用的AEM不具備與訂購相關的標準功能所需的動作，例如退貨、更新訂單狀態、完成、產生包裝單。 主要是以技術預覽為目的。
+>應記住，現成可用的功能不AEM需要執行與訂單相關的標準功能，例如退貨、更新訂單狀態、完成、產生裝箱單。 主要是以技術預覽為目的。
 >
->AEM中的一般訂單管理一直維持基本；嚮導中可用的欄位取決於腳手架：\
+>中的通用訂單管AEM理一直保持基本；嚮導中可用的欄位取決於腳手架：\
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >如果您建立自訂的Scaffold，則可儲存更多訂單資訊。
