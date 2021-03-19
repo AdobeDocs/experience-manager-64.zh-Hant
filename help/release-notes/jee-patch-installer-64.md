@@ -1,31 +1,31 @@
 ---
-title: AEM Forms JEE修補程式安裝程式
-description: 'null'
+title: AEM FormsJEE修補程式安裝程式
+description: AEM FormsJEE修補程式安裝程式
 uuid: e709871b-c04c-43bb-a7d0-45e89fbd3d44
 content-type: reference
 discoiquuid: 83bace08-1d4f-4192-a634-c7c4879963d8
 translation-type: tm+mt
-source-git-commit: 610e9a54adad3abdfecb8b2c4da67d677f75175e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '544'
 ht-degree: 24%
 
 ---
 
 
-# AEM Forms JEE修補程式安裝程式{#aem-forms-jee-patch-installer}
+# AEM FormsJEE修補程式安裝程式{#aem-forms-jee-patch-installer}
 
 >[!NOTE]
 >
->[如需詳](https://www.adobe.com/account/sign-in.supportportal.html) 細資訊或取得修補程式，請洽詢支援。
+>[如需詳](https://www.adobe.com/tw/account/sign-in.supportportal.html) 細資訊或取得修補程式，請洽詢支援。
 
 ## 關於修補程式安裝程式{#about-the-patch-installer}
 
-AEM 6.4 Forms JEE修補程式安裝程式包含AEM 6.4 Forms JEE所有元件的所有已修正問題，直到本修補程式發行為止。 如需已修正問題的完整清單，請參閱最新的[累積修補程式套件發行說明](cfp-release-notes.md)。
+6.AEM4FormsJEE修補程式安裝程式包含6.4FormsJEE所有元件的所有已修AEM正問題，直到本修補程式發行為止。 如需已修正問題的完整清單，請參閱最新的[累積修補程式套件發行說明](cfp-release-notes.md)。
 
 ## 安裝修補程式{#prerequisites-to-installing-the-patch}的先決條件
 
-* AEM 6.4 Forms
+* AEM 6.4Forms
 
 ## 安裝和配置修補程式{#installing-and-configuring-the-patch}
 
@@ -54,7 +54,7 @@ AIXNavigate到相應的目錄，並從命令提示符鍵入
    這會啟動安裝精靈，引導您完成安裝。
 
 1. 在 Introduction 面板上，按一下 **[!UICONTROL Next]**。
-1. 在「選擇安裝檔案夾」畫面上，確認顯示的預設位置對您現有的安裝正確無誤，或按一下「瀏覽&#x200B;****」以選取安裝AEM表單的替代檔案夾，然後按一下「下一步」。****
+1. 在「選擇安裝資料夾」螢幕上，驗證顯示的預設位置是否適用於現有安裝，或按一下&#x200B;**[!UICONTROL Browse]**&#x200B;選擇安裝表單的備用資料夾，然後按一下AEM **[!UICONTROL Next]**。
 
 1. 閱讀 Quick Fix Patch Summary 資訊，然後按一下 **[!UICONTROL Next]**。
 1. 閱讀 Pre-Installation Summary 資訊，然後按一下 **[!UICONTROL Install]**。
@@ -71,11 +71,11 @@ AIXNavigate到相應的目錄，並從命令提示符鍵入
 
    若要稍後執行 Configuration Manager，請取消選取 Start Configuration Manager 選項，再按一下 Done。您稍後可以使用`[AEM_forms_root]/configurationManager/bin`目錄中的相應指令碼啟動Configuration Manager。
 
-1. 視您的應用程式伺服器而定，選擇下列其中一份檔案，然後依照&#x200B;*設定和部署AEM表單*&#x200B;一節中的指示進行。
+1. 根據您的應用程式伺服器，選擇下列其中一份檔案，並依照&#x200B;*設定和部署表AEM單*&#x200B;一節中的指示進行。
 
-   * [安裝和部署JBoss的AEM表單](http://www.adobe.com/go/learn_aemforms_installJBoss_64_tw)
-   * [安裝和部署適用於WebSphere的AEM表單](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_tw)
-   * [安裝和部署適用於WebLogic的AEM表單](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_tw)
+   * [安裝和部AEM署JBoss表單](http://www.adobe.com/go/learn_aemforms_installJBoss_64_tw)
+   * [安裝和部AEM署WebSphere表單](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_tw)
+   * [安裝和部AEM署WebLogic表單](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_tw)
 
 1. （僅限JBoss）安裝修補程式並配置伺服器後，刪除JBoss應用程式伺服器的tmp和工作目錄。
 
@@ -94,7 +94,7 @@ AIXNavigate到相應的目錄，並從命令提示符鍵入
 ## 受影響的模組{#impacted-modules}
 
 * 文件服務
-* 文件安全性
+* Document Security
 * Foundation JEE
 * PDFG 服務
 
