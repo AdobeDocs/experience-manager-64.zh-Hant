@@ -7,10 +7,11 @@ page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
+feature: 適用性表單
 translation-type: tm+mt
-source-git-commit: abf41bed195c7ea77202e0772e7be12501a6a5ac
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 您可以使用規則將互動功能、商業邏輯和智慧驗證新增至最適化表單。 最適化表單有內建的規則編輯器。 規則編輯器提供拖放功能，類似於引導導覽。 拖放方法是建立規則最快速最簡單的方法。 規則編輯器也為有興趣測試其編碼技巧或將規則提升到新層次的使用者提供程式碼視窗。
 
-您可在[最適化表單規則編輯器](/help/forms/using/rule-editor.md)中進一步瞭解規則編輯器。
+您可在[最適化Forms規則編輯器](/help/forms/using/rule-editor.md)中進一步瞭解規則編輯器。
 
 在教學課程結束時，您將學習如何建立規則以：
 
@@ -38,7 +39,7 @@ ht-degree: 0%
 
 ## 步驟1:從資料庫{#retrieve-customer-record}檢索客戶記錄
 
-您遵循[建立表單資料模型](/help/forms/using/create-form-data-model.md)文章，建立表單資料模型。 現在，您可以使用規則編輯器來調用Forms Data Model Services以檢索資訊並將資訊添加到資料庫。
+您遵循[建立表單資料模型](/help/forms/using/create-form-data-model.md)文章，建立表單資料模型。 現在，您可以使用規則編輯器調用Forms資料模型服務來檢索和向資料庫添加資訊。
 
 每個客戶都會獲得一個唯一的客戶ID號碼，有助於識別資料庫中的相關客戶資料。 以下過程使用客戶ID從資料庫中檢索資訊：
 
@@ -105,7 +106,7 @@ ht-degree: 0%
 
 您應對表單執行驗證，以確保在表單中輸入的資料正確無誤，並在資料不正確時顯示錯誤訊息。 例如，如果在表單中輸入了非現有的客戶ID，則應顯示錯誤訊息。
 
-最適化表單提供多個內建驗證的元件，例如電子郵件和數值欄位，您可用於一般使用案例。 使用規則編輯器進行進階使用案例，例如，當資料庫傳回零(0)記錄（無記錄）時，顯示錯誤訊息。
+最適化表單提供多個內建驗證元件，例如電子郵件和數值欄位，您可用於一般使用案例。 使用規則編輯器進行進階使用案例，例如，當資料庫傳回零(0)記錄（無記錄）時，顯示錯誤訊息。
 
 以下過程說明如何建立規則以在表單中輸入的客戶ID不存在於資料庫中時顯示錯誤消息。 此規則也會將焦點引入並重設「客戶ID」欄位。 該規則使用[表單data model service](/help/forms/using/invoke-form-data-model-services.md)的dataIntegrationUtils API來檢查資料庫中是否存在客戶ID。
 
