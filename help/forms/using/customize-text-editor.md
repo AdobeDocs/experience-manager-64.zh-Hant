@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -185,7 +186,7 @@ ht-degree: 0%
 
 ## 存取字型自訂{#access-font-customizations}
 
-在CRX的tbxeditor-config.xml檔案中變更字型，並在用來存取AEM Forms的用戶端機器上安裝必要的字型後，這些變更就會出現在文字編輯器中。
+在CRX中對tbxeditor-config.xml檔案中的字型進行變更，並將所需字型安裝在用來存取AEM Forms的用戶端機器上後，這些變更就會出現在文字編輯器中。
 
 例如，在[編輯CRX](#customizefonts)程式中的tbxeditor-config.xml檔案以自訂字型，在「自訂字型」中新增的Sazanami Mincho Medium字型會顯示在文字編輯器UI中，如下所示：
 
