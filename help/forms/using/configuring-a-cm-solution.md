@@ -8,10 +8,11 @@ topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
+feature: 通信管理
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '343'
 ht-degree: 1%
 
 ---
@@ -35,7 +36,7 @@ ht-degree: 1%
    >
    >如果負載平衡器前面有多個作者實例（群集），請在&#x200B;**[!UICONTROL VersionRestoreManager Author URL]**&#x200B;欄位中指定負載平衡器的URL。
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
 ## 定義ActivationManager的發佈實例URL實施（公共實例激活管理器）{#defining-the-publish-instance-url-for-activationmanagerimpl-public-instance-activation-manager}
 
@@ -51,6 +52,6 @@ ht-degree: 1%
 
       `https://<hostname>:<port>:/libs/fd/fdm/content/crud/lc.content.remote.activate.activationManager`
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
 有關配置通信管理的詳細資訊，請參閱[通信管理配置屬性](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html)。
