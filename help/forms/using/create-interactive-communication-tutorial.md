@@ -7,10 +7,11 @@ uuid: 91702f41-5c19-4840-a3b5-59d69003fd67
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
+feature: 互動式通訊
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2029'
+source-wordcount: '2031'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 0%
 
 **影像：** PayNow和ValueAddedServices
 
-1. 登入AEM作者例項，並導覽至「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**」。
+1. 登入作AEM者例項並導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
 1. 點選「**建立**」並選取「互動式通訊&#x200B;**」。**&#x200B;將顯示&#x200B;**建立互動式通信**&#x200B;嚮導。
 1. 在&#x200B;**Title**&#x200B;和&#x200B;**Name**&#x200B;欄位中指定&#x200B;**create_first_ic**。 選擇&#x200B;**FDM_Create_First_IC**&#x200B;作為表單資料模型，然後按一下&#x200B;**Next**。
 1. 在&#x200B;**頻道**&#x200B;精靈中：
@@ -111,7 +112,7 @@ ht-degree: 0%
 
 **影像：** PayNowWeb和ValueAddedServicesWeb
 
-1. 登入AEM作者例項，並導覽至「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**」。
+1. 登入作AEM者例項並導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
 1. 點選「**建立**」並選取「互動式通訊&#x200B;**」。**&#x200B;將顯示&#x200B;**建立互動式通信**&#x200B;嚮導。
 1. 在&#x200B;**Title**&#x200B;和&#x200B;**Name**&#x200B;欄位中指定&#x200B;**create_first_ic**。 選擇&#x200B;**FDM_Create_First_IC**&#x200B;作為表單資料模型，然後按一下&#x200B;**Next**。
 1. 在&#x200B;**頻道**&#x200B;精靈中：
@@ -171,7 +172,7 @@ ht-degree: 0%
    1. 點選文字元件並選取![edit](assets/edit.png)（編輯）。
    1. 在&#x200B;**Border**&#x200B;區段中，將&#x200B;**1.5px**&#x200B;指定為&#x200B;**Border Width**，選擇&#x200B;**Solid**&#x200B;為&#x200B;**Border Style**，並將&#x200B;**46px**&#x200B;指定為&#x200B;**邊框半徑**。
    1. 從&#x200B;**Background**&#x200B;部分選擇紅色作為按鈕的背景顏色。
-   1. 在「**尺寸與位置**」部分的「邊界&#x200B;**」欄位中，點選「同時編輯****」圖示，並將「** Right **邊界」設定為** 450px **。**「頂端」、「底部」和「左側」欄位皆設為空白。
+   1. 在&#x200B;**Dimension與位置**&#x200B;區段的&#x200B;**邊界**&#x200B;欄位中，點選&#x200B;**同時編輯**&#x200B;圖示，並將&#x200B;**右**&#x200B;邊界設為&#x200B;**450px**。 「頂端」、「底部」和「左側」欄位皆設為空白。
 
    ![ic_web_hyperlink](assets/ic_web_hyperlink.png)
 
@@ -192,7 +193,7 @@ ht-degree: 0%
 
 執行下列步驟，使用列印頻道衍生網頁頻道內容：
 
-1. 登入AEM作者例項，並導覽至「**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms &amp; Documents]**」。
+1. 登入作AEM者例項並導覽至&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms與檔案]**。
 1. 點選「**建立**」並選取「互動式通訊&#x200B;**」。**&#x200B;將顯示&#x200B;**建立互動式通信**&#x200B;嚮導。
 1. 在&#x200B;**Title**&#x200B;和&#x200B;**Name**&#x200B;欄位中指定&#x200B;**create_first_ic**。 選擇&#x200B;**FDM_Create_First_IC**&#x200B;作為表單資料模型，然後按一下&#x200B;**Next**。
 1. 在&#x200B;**頻道**&#x200B;精靈中：
