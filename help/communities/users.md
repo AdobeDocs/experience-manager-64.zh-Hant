@@ -1,18 +1,19 @@
 ---
 title: 管理使用者和使用者群組
 seo-title: 管理使用者和使用者群組
-description: AEM Communities的使用者可自行註冊並編輯其個人檔案
-seo-description: AEM Communities的使用者可自行註冊並編輯其個人檔案
+description: AEM Communities的使用者可自行註冊並編輯個人檔案
+seo-description: AEM Communities的使用者可自行註冊並編輯個人檔案
 uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ## 概覽 {#overview}
 
-在AEM Communities中，在發佈環境中，使用者可以自行註冊並編輯其個人檔案。 若有適當的權限，他們也可能
+在AEM Communities，在發佈環境中，使用者可自行註冊並編輯其個人檔案。 若有適當的權限，他們也可能
 
 * 在社群網站中建立子社群（請參閱[社群群組](creating-groups.md)）
 * [](moderation.md) Moderateuser產生的內容(UGC)
@@ -59,7 +60,7 @@ ht-degree: 0%
 
 ### 隧道服務{#tunnel-service}
 
-使用作者環境建立站點](sites-console.md)、[修改站點屬性](sites-console.md#modifying-site-properties)和[管理社區成員和成員組](members.md)時，必須訪問在發佈環境中註冊的用戶和組。[
+當使用作者環境建立站點](sites-console.md)、[修改站點屬性](sites-console.md#modifying-site-properties)和[管理社區成員和成員組](members.md)時，必須訪問在發佈環境中註冊的用戶和組。[
 
 隧道服務使用作者上的複製代理提供此訪問。
 
@@ -75,14 +76,14 @@ ht-degree: 0%
 |---|---|
 | 管理員 | 管理員組由系統管理員組成，這些系統管理員具有社區管理員的所有能力以及管理社區管理員組的能力。 |
 | 社群管理員 | 「社群管理員」群組會自動成為所有社群網站和網站上建立的任何社群群組的成員。 「社群管理員」群組的初始成員為管理員群組。 在作者環境中，社群管理員可以建立社群網站、管理網站、管理成員（他們可以禁止社群成員）以及協調內容。 |
-| 社群&lt;*網站名稱*> Sitecontentmanager | 「社群網站內容管理員」可以執行傳統的AEM製作、內容建立和修改社群網站的頁面。 |
+| 社群&lt;*網站名稱*> Sitecontentmanager | 「社群網站內容管理員」可以執行傳統AEM的社群網站製作、內容建立和修改頁面。 |
 | 社群支援經理 | 「社群啟用管理員」群組由可供指派以管理社群網站「啟用管理員」群組的使用者組成。 |
 | 社群&lt;*網站名稱* >網站啟用管理員 | 「社群網站啟用管理員」群組由指派來管理社群網站啟用[資源](resources.md)的使用者組成。 |
 | 無 | 匿名網站訪客可能無法存取作者環境。 |
 
 ### 系統管理員{#system-administrators}
 
-管理員群組的成員是系統管理員，他們可以針對作者和發佈環境執行AEM安裝的初始設定。
+管理員群組成員是系統管理員，可為作者和發佈環境執行AEM初始安裝設定。
 
 為了進行展示和開發，管理員群組的成員的使用者ID為&#x200B;*admin*，密碼為&#x200B;*admin*。
 
@@ -232,11 +233,11 @@ ht-degree: 0%
 
 ### LDAP整合{#ldap-integration}
 
-AEM支援使用LDAP來驗證使用者，以及建立使用者帳戶。 這在[使用AEM 6](../../help/sites-administering/ldap-config.md)設定LDAP中有詳細說明。
+支AEM持使用LDAP來驗證用戶以及建立用戶帳戶。 這在[使用6](../../help/sites-administering/ldap-config.md)配置LDAPAEM中有詳細說明。
 
 以下是社區成員和成員組的特定配置詳細資訊。
 
-1. 為每個AEM發佈例項設定LDAP
+1. 為每個發佈實例配AEM置LDAP
 2. [LDAP身份提供程式](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * 無特殊指示
@@ -257,7 +258,7 @@ AEM支援使用LDAP來驗證使用者，以及建立使用者帳戶。 這在[�
 
 * `User auto membership`值應為`rep:authorizableId`屬性，而非描述檔的`givenName`（顯示名稱）。
 
-## 在AEM例項之間同步使用者{#synchronizing-users-among-aem-instances}
+## 在例項之AEM間同步用戶{#synchronizing-users-among-aem-instances}
 
 當使用[publish farm](topologies.md)時，請先將使用者匯入至一個例項，然後[讓使用者sync](sync.md)讓Sling將使用者散發至其他發佈例項，以確保使用者在每個發佈例項上擁有相同的路徑。
 
