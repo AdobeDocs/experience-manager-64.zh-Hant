@@ -1,66 +1,95 @@
 ---
-title: 比較AEM Assets和AEM Media Library中的可用功能
-description: AEM Assets和AEM Media Library的常見問題，包括差異。
+title: 使用媒體庫進行基本數位資產管理
+description: '[!DNL Experience Manager Assets] 和媒體庫，以進行資產管理。'
 contentOwner: AG
+role: 建築師、領導者
 translation-type: tm+mt
-source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
+source-git-commit: 200bb263d60ebd9f6abc79ce0c73dac95b06de53
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
 
 
-# AEM Assets與AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
+<!--
 
-Adobe Experience Manager(AEM)Assets是AEM平台不可或缺的一部分。 此順暢整合被視為AEM的主要優點，可確保內容管理的一致性，並提高內容作者的生產力。
+Define Media Lib
+Define req for it
+Define use cases
+Define what is not included
 
-## 常見問題 {#frequently-asked-questions}
+-->
 
-### 什麼是AEM Assets?{#what-is-aem-assets}
+# 使用媒體庫進行基本資產管理{#manage-assets-using-media-library}
 
-AEM Assets是AEM Platform上的應用程式，可讓我們的客戶在網路儲存庫中管理其數位資產（影像、視訊、檔案和音訊片段）。 AEM Assets包含中繼資料支援、轉譯、Digital Asset Management Finder和AEM Assets Administration UI。
+[!DNL Adobe Experience Manager] 平台提供不同的功能來管理資產。「媒體庫」允許用戶將少量資產上傳到儲存庫、搜索和使用網頁中的資產，並完成資產上的簡單資產管理任務。
 
-### 什麼是AEM Media Library?{#what-is-the-aem-media-library}
+媒體庫是輕量型數位資產管理(DAM)解決方案，隨附[!DNL Adobe Experience Manager Sites]授權。 [!DNL Sites] 是網頁內容管理(WCM)方案。媒體庫可與所有Experience Manager功能搭配使用。
 
-AEM Media Library是AEM WCM內容存放庫的指定部分，影像和其他共用資源都會儲存在此處。 「媒體庫」使用AEM WCM的「數位資產管理」功能。
+[!DNL Adobe Experience Manager Assets] 授權需另外購買。[!DNL Experience Manager Assets] 允許透過企業使用案例、中繼資料、結構描述、搜尋和使用者介面的自訂，以及媒體程式庫提供的其他功能，對資產進行強穩處理。
 
-### 我可從不屬於AEM WCM的AEM Assets獲得哪些資訊？{#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+## 授權需求{#avail-media-library-license}
 
-AEM Assets客戶僅能使用的獨特功能包括：
+擁有[!DNL Sites]授權的客戶有權使用媒體庫。 它適用於[!DNL Experience Manager]的所有元件。
 
-1. 擷取和編輯除標題、標籤和說明以外之中繼資料的能力。
-1. 「AEM資產管理員」，可從歡迎畫面按一下`siteadmin`旁的第二個按鈕，即可使用。
-1. 所有與「數位資產管理」相關的工作流程步驟，即AEM資產擷取、AEM資產刪除、AEM資產子資產處理、AEM資產中繼資料擷取。
-1. 庫，包括`dam` im包空間。
+媒體程式庫會安裝為網站的一部分。 除Sites授權和安裝外，不需要額外的授權或套件。
 
-使用這些功能需要有效的AEM Assets授權。
+## [!DNL Assets] 與媒體庫  {#assets-and-media-library}
 
-### AEM Assets是否可以個別套件使用？{#is-aem-assets-available-as-a-separate-package}
+Experience Manager資產提供企業級DAM功能。 資產功能是透過[!DNL Experience Manager]在單一套件中提供。 但是，未購買資產授權的使用者無權使用進階DAM功能。 沒有「資產」許可證，則僅[介質庫功能](#use-media-library)可用。
 
-否. 為方便安裝和部署，所有AEM應用程式和附加元件都以單一套件形式提供，並包含所有功能。 這並不表示您擁有使用套件中所有功能的權限。
+如果您想要防止未授權之[!DNL Assets]功能的意外使用，請從[!DNL Experience Manager]移除所有[!DNL Assets]特定工作流程、元件、分類、選項和[!DNL Assets]管理員。 如此可避免使用者意外使用您未授權的[!DNL Assets]功能。
 
-#### 我想編輯數位資產的中繼資料。 我需要AEM資產嗎？{#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+## 使用媒體庫{#use-media-library}
 
-如果您打算編輯除標題、說明和標籤以外的中繼資料，則必須取得AEM Assets的授權。
+媒體庫廣泛涵蓋下列使用案例：
 
-#### 我想在匯入時自動調整影像大小。 我需要AEM資產嗎？{#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+* 為使用[!DNL Adobe Experience Manager Sites]建立的網頁提供基本DAM功能。
+* 使用[!DNL Adobe Experience Manager Forms]建立的最適化表單和通訊。
+* 使用[!DNL Adobe Experience Manager Screens]建立數位螢幕體驗。
+* [!DNL Assets] HTTP REST API，以進行無頭操作。
 
-否. AEM媒體庫包含調整靜態影像大小和自動工作流程導向轉換功能以及管理轉譯的功能。 這些功能不需要AEM Assets授權。
+<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-### 我想使用自訂的影像元件來調整影像大小。 我需要AEM資產嗎？{#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+* Basic metadata properties
+* Tag management
+* Version control
+* Static renditions
+* Projects, tasks, workflow authoring
+* Activity stream (timeline)
+* Query Builder (API)
+* Marketing Cloud integration
+* User interface customization and extension
+* Comments and annotation
+-->
 
-影像元件是AEM WCM的一部分。 影像元件（但也由AEM Assets）使用的圖形庫是AEM平台的一部分，不需要AEM Assets授權。
+要使用介質庫功能，可以使用預設的[!DNL Experience Manager]用戶介面。 介質庫是[!DNL Experience Manager Sites]安裝的一部分，不需要單獨的介面或附加模組。 使用現有介面，媒體庫用戶有權完成下列任務：
 
-### 如果我未授權AEM Assets，該如何防止使用者使用AEM Assets?{#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+* 建立資料夾以組織資產。
+* 上傳資產。
+* 發佈資產。
+* 編輯、移動和複製資產。
+* 瀏覽、篩選和搜尋（包括相似性搜尋）資產。
+* 在中繼資料欄位中新增值並編輯值，但智慧型標籤欄位除外，這些值預設會顯示在資產的[!UICONTROL 屬性]頁面的[!UICONTROL 基本]標籤中。
+* 新增和刪除靜態轉譯。
+* 下載檔案夾、資產和資產轉譯。
+* 建立資產版本。
+* 建立並執行資產的審核工作。
+* 註解資產。
+* 透過Content Finder將資產新增至[!DNL Sites]頁面。
+* 使用[!DNL Content Fragments]。
 
-您可以從AEM移除所有AEM Assets專屬的工作流程、元件、分類、選項和AEM Assets管理員。 如此可避免使用者意外使用您未授權的AEM Assets功能。
+<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+-->
 
-### 我想要將影像新增至頁面，並想要裁切這些影像並調整其大小。 我需要AEM資產嗎？{#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+>[!IMPORTANT]
+>
+>許多進階DAM使用案例都由[!DNL Experience Manager Assets]完成。 「媒體庫」授權僅允許您使用「媒體庫」完成所列的使用案例。 如果未列出使用案例，請勿將它與「媒體庫」授權搭配使用。 如果您有任何疑問，請聯絡Adobe客戶服務。
 
-在此使用案例中，您不需要購買AEM Assets，即使使用媒體程式庫也不需要在網站上使用影像，因為智慧型影像元件可讓您直接上傳影像至頁面。
+<!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
 >[!MORELIKETHIS]
 >
->* [功能差異的詳細清單](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [DAM功能 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html)
 
