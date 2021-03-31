@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager]中的資產HTTP API。'
 description: 使用 [!DNL Adobe Experience Manager Assets]中的HTTP API建立、讀取、更新、刪除、管理數位資產。
 contentOwner: AG
+feature: API、Assets HTTP API、Developer Tools
+role: 開發人員
 translation-type: tm+mt
-source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -26,7 +28,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 >[!CAUTION]
 >
->[HTTP API會更新命名空](#update-asset-metadata) 間中的中繼資料 `jcr` 屬性。不過，Experience Manager使用者介面會更新`dc`命名空間中的中繼資料屬性。
+>[HTTP API會更新命名空](#update-asset-metadata) 間中的中繼資料 `jcr` 屬性。不過，Experience Manager用戶介面會更新`dc`命名空間中的元資料屬性。
 
 ## 資料模型{#data-model}
 
@@ -88,7 +90,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 **必備條件**
 
 * 存取 `https://[aem_server]:[port]/system/console/configMgr`.
-* 導覽至&#x200B;**[!UICONTROL Adobe Granite CSRF Filter]**。
+* 導覽至&#x200B;**[!UICONTROL Adobe花崗岩CSRF濾鏡]**。
 * 請確定屬性&#x200B;**[!UICONTROL 篩選方法]**&#x200B;包含：`POST`、`PUT`、`DELETE`。
 
 ## 檢索列出{#retrieve-a-folder-listing}的資料夾
@@ -127,7 +129,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 ## 建立資產{#create-an-asset}
 
-將提供的檔案置於提供的路徑，以在DAM儲存庫中建立資產。 如果提供`*`而非節點名稱，則servlet將使用參數名稱或檔案名作為節點名稱。
+將提供的檔案置於提供的路徑，以在DAM儲存庫中建立資產。 如果提供`*`而非節點名稱，則servlet將使用參數名或檔案名作為節點名。
 
 **參數**:參數是 `name` 用於資產名 `file` 稱和檔案參考。
 
@@ -171,7 +173,7 @@ API回應是某些MIME類型的JSON檔案，也是所有MIME類型的回應代�
 
 ### 在`dc`和`jcr`命名空間{#sync-metadata-between-namespaces}之間同步中繼資料更新
 
-API方法會更新`jcr`命名空間中的中繼資料屬性。 使用Touch-UI進行的更新會變更`dc`命名空間中的中繼資料屬性。 若要同步`dc`和`jcr`命名空間之間的中繼資料值，您可以建立工作流程並設定Experience Manager在資產編輯時執行工作流程。 使用ECMA指令碼來同步所需的中繼資料屬性。 以下示例指令碼將同步`dc:title`和`jcr:title`之間的標題字串。
+API方法會更新`jcr`命名空間中的中繼資料屬性。 使用Touch-UI進行的更新會變更`dc`命名空間中的中繼資料屬性。 若要同步`dc`和`jcr`命名空間之間的中繼資料值，您可以建立工作流程，並設定Experience Manager，在資產編輯時執行工作流程。 使用ECMA指令碼來同步所需的中繼資料屬性。 以下示例指令碼將同步`dc:title`和`jcr:title`之間的標題字串。
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
