@@ -2,10 +2,12 @@
 title: ' [!DNL Adobe Experience Manager Assets] 簡介'
 description: 瞭解什麼是數位資產管理、其使用案例，以及 [!DNL Adobe Experience Manager Asset] 產品。
 contentOwner: AG
+feature: 資產管理
+role: 領導者、架構師、商業從業人員
 translation-type: tm+mt
-source-git-commit: 91fbe9d3368feb7ecae73c56b2484c305cfb94b8
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '860'
 ht-degree: 12%
 
 ---
@@ -63,7 +65,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 * **系列**:資產的集合，根據實體位置（資料夾）、常用屬性（儲存的搜尋資料夾）或使用者選擇（燈箱資料夾）。
 
-* **元數** [!DNL Assets] 據包元資料；例如，作者、過期日期、DRM資訊（數位版權管理）等。中繼資料受到存取控制。 [!DNL Assets] 支援以下各種現成的常用元資料模式：
+* **元數** [!DNL Assets] 據包元資料；例如，作者、過期日期、DRM資訊(Digital Rights Management)等。中繼資料受到存取控制。 [!DNL Assets] 支援以下各種現成的常用元資料模式：
 
    * Dublin Core:包括作者、說明、日期、主旨等。
    * IPTC:包括事件、模型、位置等。
@@ -84,7 +86,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 您可以使用這些預先設定的工作流程執行的工作：
 
 * 將資產儲存在儲存庫中，或從中刪除資產。
-* 擷取及儲存資產的中繼資料；個別的中繼資料項目會儲存為XMP。
+* 擷取及儲存資產的中繼資料；個別中繼資料項目會儲存為XMP。
 * 產生資產的轉譯和縮圖；包括視需要自動調整大小和裁切。
 * 視需要轉碼資產。 例如，行動與網路使用的視訊會轉碼為每秒24個畫格，下載每秒30個畫格的視訊。 行動與網路使用的音訊會以128 Kbps轉碼，以192 Kbps的音訊下載。
 
@@ -96,5 +98,5 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 >[!MORELIKETHIS]
 >
->* [視訊簡介——將Experience Manager Assets當做現代DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
+>* [視訊簡介——將資產Experience Manager為現代DAM](https://www.youtube.com/watch?v=PBwQqZgC-yo)
 
