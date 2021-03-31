@@ -2,10 +2,12 @@
 title: 中繼資料結構
 description: '中繼資料結構定義屬性頁面的版面配置，以及為資產顯示的中繼資料屬性。 瞭解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
+feature: 中繼資料
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2539'
 ht-degree: 12%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 12%
 
 # 中繼資料結構 {#metadata-schemas}
 
-在[!DNL Experience Manager Assets]中，元資料架構定義屬性頁的佈局以及為使用特定架構的資產顯示的元資料屬性。 中繼資料屬性包括標題、說明、MIME類型、標籤等。 您可以使用中繼資料結構表單編輯器來修改現有結構或新增自訂中繼資料結構。
+在[!DNL Experience Manager Assets]中，元資料架構定義屬性頁的佈局以及為使用特定架構的資產顯示的元資料屬性。 中繼資料屬性包括標題、說明、MIME類型、標籤等。 您可以使用中繼資料結構Forms編輯器來修改現有結構或新增自訂的中繼資料結構。
 
 若要檢視和編輯資產的屬性頁面，請依照下列步驟進行：
 
@@ -29,7 +31,7 @@ ht-degree: 12%
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-   若要修改資產的MIME類型，請使用自訂中繼資料結構表單或修改現有表單。 如需詳細資訊，請參閱[編輯中繼資料結構表單](metadata-schemas.md#editing-metadata-schema-forms)。 如果您修改特定MIME類型的中繼資料架構，則會修改目前MIME類型資產和所有資產子類型的屬性頁面配置。 例如，在`default/image`下修改`jpeg`架構時，只會修改MIME類型`IMAGE/JPEG`的資產的中繼資料配置（資產屬性）。 不過，如果您編輯預設結構，您的變更會修改所有類型資產的中繼資料配置。
+   若要修改資產的MIME類型，請使用自訂中繼資料結構表單或修改現有表單。 如需詳細資訊，請參閱[編輯中繼資料結構Forms](metadata-schemas.md#editing-metadata-schema-forms)。 如果您修改特定MIME類型的中繼資料架構，則會修改目前MIME類型資產和所有資產子類型的屬性頁面配置。 例如，在`default/image`下修改`jpeg`架構時，只會修改MIME類型`IMAGE/JPEG`的資產的中繼資料配置（資產屬性）。 不過，如果您編輯預設結構，您的變更會修改所有類型資產的中繼資料配置。
 
 ## 中繼資料結構表單 {#default-metadata-schema-forms}
 
@@ -41,13 +43,13 @@ ht-degree: 12%
 |---|---|---|
 | [!UICONTROL 預設] |  | 資產的基本中繼資料結構表單。 |
 |  | 以下子表單繼承[!UICONTROL default]表單的屬性： |  |
-|  | <ul><li> [!UICONTROL dm_video]</li></ul> | 動態媒體影片的架構表單。 |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Dynamic Media影片的架構表單。 |
 |  | <ul><li> [!UICONTROL 影像]</li></ul> | 具有MIME類型「image」的資產的架構表單，例如image/jpeg、image/png等。 <br> 影像  表單包含下列子表單範本： <ul><li> [!UICONTROL jpeg]:子類型 [!UICONTROL jpeg資產的架構表單]。</li> <li>[!UICONTROL tiff]:子類型Tiff的資產的結構表 [!UICONTROL 單]。</li></ul> |
 |  | <ul><li> [!UICONTROL 應用程式]</li></ul> | MIME類型為「應用程式」的資產的架構表單，例如application/ pdf、application/ zip等。 <br>[!UICONTROL pdf]:子類型pdf的資產的架構表單。 |
 |  | <ul><li>[!UICONTROL 視訊]</li></ul> | MIME類型為「video」的資產的架構表單，例如video/avi、video/mp4等。 |
 | [!UICONTROL 集合] |  | 系列的結構表單。 |
 | [!UICONTROL contentfragment] |  | 內容片段的架構表單。 |
-| [!UICONTROL 表單] |  | 此架構表單與[Adobe Experience Manager Forms](/help/forms/home.md)相關。 |
+| [!UICONTROL 表單] |  | 此模式表單與[Adobe Experience Manager Forms](/help/forms/home.md)有關。 |
 
 >[!NOTE]
 >
@@ -76,7 +78,7 @@ ht-degree: 12%
 
 您可以將新標籤或表單項目新增至中繼資料結構表單。 衍生自父項的制表符和表單項處於鎖定狀態。 您無法在子級更改它們。
 
-1. 在&#x200B;**[!UICONTROL 方案表單]**&#x200B;頁面中，選中表單前面的複選框，然後按一下工具欄上的&#x200B;**[!UICONTROL 編輯]**。
+1. 在&#x200B;**[!UICONTROL 方案Forms]**&#x200B;頁中，選擇表單前面的複選框，然後按一下工具欄上的&#x200B;**[!UICONTROL 編輯]**。
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -173,7 +175,7 @@ ht-degree: 12%
 
 ## 刪除元資料架構表單{#deleting-metadata-schema-forms}
 
-AEM可讓您僅刪除自訂結構表單。 它不允許您刪除預設模式表單／模板。 不過，您可以刪除這些表單中的任何自訂變更。
+可AEM讓您僅刪除自訂結構表單。 它不允許您刪除預設模式表單／模板。 不過，您可以刪除這些表單中的任何自訂變更。
 
 要刪除表單，請選擇一個表單，然後按一下&#x200B;**[!UICONTROL Delete]**&#x200B;表徵圖。
 
@@ -183,11 +185,11 @@ AEM可讓您僅刪除自訂結構表單。 它不允許您刪除預設模式表�
 
 >[!NOTE]
 >
->您無法刪除AEM Assets中立即可用的中繼資料結構表單。
+>您無法刪除AEM Assets的開箱即用中繼資料結構表單。
 
 ## MIME類型{#schema-forms-for-mime-types}的架構表單
 
-AEM Assets提供各種MIME類型的預設現成可用表單。 不過，您可以為各種MIME類型的資產新增自訂表格。
+AEM Assets為各種現成可用的MIME類型提供預設表單。 不過，您可以為各種MIME類型的資產新增自訂表格。
 
 ### 為MIME類型{#adding-new-forms-for-mime-types}添加新表單
 
@@ -204,7 +206,7 @@ AEM Assets提供各種MIME類型的預設現成可用表單。 不過，您可�
 | `exposedmimetype` | 要映射的現有表單的名稱 | `String` | `image/jpeg` |
 | `mimetypes` | 使用`exposedmimetype`屬性中定義的表單的MIME類型清單 | `String` | `image/png` |
 
-AEM Assets會對應下列MIME類型和架構表單：
+AEM Assets映射以下MIME類型和模式表單：
 
 | 架構表單 | MIME類型 |
 |---|---|
@@ -226,7 +228,7 @@ AEM Assets會對應下列MIME類型和架構表單：
 
 ## 套用資料夾特定的中繼資料{#applying-folder-specific-metadata}
 
-AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定資料夾。
+AEM Assets可讓您定義中繼資料結構的變體，並將它套用至特定資料夾。
 
 例如，您可以定義預設中繼資料結構的變體，並將其套用至資料夾。 當您套用已修改的架構時，它會覆寫套用至資料夾內資產的原始預設中繼資料架構。
 
@@ -243,13 +245,13 @@ AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定�
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
 
-1. 在&#x200B;**[!UICONTROL 中繼資料結構表單]**&#x200B;頁面中，選取`my_default`表單，然後按一下&#x200B;**[!UICONTROL 編輯]**。
+1. 在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中，選擇`my_default`表單，然後按一下&#x200B;**[!UICONTROL 編輯]**。
 
 1. 在&#x200B;**[!UICONTROL 中繼資料結構編輯器]**&#x200B;頁面中，將文字欄位新增至結構結構表單。 例如，新增標籤為&#x200B;**[!UICONTROL Category]**&#x200B;的欄位。
 
    ![chlimage_1-186](assets/chlimage_1-186.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。已修改的表單列在&#x200B;**[!UICONTROL 元資料模式表單]**&#x200B;頁中。
+1. 按一下「**[!UICONTROL 儲存]**」。修改的表單列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。
 1. 從工具列按一下／點選「套用至資料夾&#x200B;****」，將自訂中繼資料套用至資料夾。
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
@@ -268,7 +270,7 @@ AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定�
 
 >[!NOTE]
 >
->中繼資料欄位可根據其他欄位的值，定義為必填欄位。 在「卡片」檢視中，AEM不會顯示有關此類強制中繼資料欄位遺失中繼資料的警告訊息。
+>中繼資料欄位可根據其他欄位的值，定義為必填欄位。 在「卡片」檢視中，不AEM會顯示此類強制中繼資料欄位遺失中繼資料的警告訊息。
 
 1. 按一下 AEM 標誌，然後導覽至&#x200B;**[!UICONTROL 「工具」>「資產」>「中繼資料結構描述」]**。此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
 1. 將預設中繼資料表單儲存為自訂表單。 例如，將其另存為`my_default`。
@@ -279,14 +281,14 @@ AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定�
 
    ![chlimage_1-190](assets/chlimage_1-190.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。已修改的表單列在&#x200B;**[!UICONTROL 元資料模式表單]**&#x200B;頁中。 若要將自訂中繼資料套用至資料夾，請選取表單，然後從工具列按一下／點選「套用至資料夾&#x200B;**[!UICONTROL 」。]**
+1. 按一下「**[!UICONTROL 儲存]**」。修改的表單列在&#x200B;**[!UICONTROL 中繼資料結構Forms]**&#x200B;頁面中。 若要將自訂中繼資料套用至資料夾，請選取表單，然後從工具列按一下／點選「套用至資料夾&#x200B;**[!UICONTROL 」。]**
 
 1. 導覽至資料夾，並上傳您新增至自訂表單之必填欄位中遺失中繼資料的部分資產。 資產的「資訊卡」檢視會顯示必要欄位中遺失中繼資料的訊息。
 
    ![chlimage_1-112](assets/chlimage_1-192.png)
 
-1. （可選）訪問`http://[server]:[port]/system/console/components/`。 配置並啟用預設禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`元件。 設定AEM檢查資產中中繼資料有效性的頻率。
-此設定會將屬性`hasValidMetadata`新增至jcr:content of assets。 AEM可使用此屬性來篩選搜尋結果。
+1. （可選）訪問`http://[server]:[port]/system/console/components/`。 配置並啟用預設禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`元件。 設定檢查資AEM產中繼資料有效性的頻率。
+此設定會將屬性`hasValidMetadata`新增至jcr:content of assets。 使用此屬性，AEM可以篩選搜尋結果。
 
 >[!NOTE]
 >
@@ -294,4 +296,4 @@ AEM Assets可讓您定義中繼資料結構的變體，並將其套用至特定�
 
 >[!CAUTION]
 >
->中繼資料驗證檢查需要耗費大量資源，而且可能會影響您系統的效能。 相應地安排檢查。 如果AEM部署有效能問題，請嘗試停用此工作。
+>中繼資料驗證檢查需要耗費大量資源，而且可能會影響您系統的效能。 相應地安排檢查。 如果部AEM署存在效能問題，請嘗試禁用此作業。
