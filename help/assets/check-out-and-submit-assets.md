@@ -2,10 +2,12 @@
 title: 登入和登出您的數位資產以進行編輯
 description: 瞭解如何取出資產進行編輯，並在變更完成後將其存回。
 contentOwner: AG
+feature: 資產管理
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '403'
 ht-degree: 4%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 4%
 
 # 資產{#check-in-and-check-out-files-in-assets}中的登入和登出檔案
 
-Adobe Experience Manager(AEM)Assets可讓您取出資產進行編輯，並在完成變更後將其存回。 結帳資產後，只有您可以編輯、註解、發佈、移動或刪除資產。 簽出資產會鎖定資產。 在您將資產存回AEM Assets之前，其他使用者無法對資產執行任何這些作業。 不過，他們仍可變更鎖定資產的中繼資料。
+Adobe Experience Manager(AEM)資產可讓您取出資產進行編輯，並在完成變更後將其存回。 結帳資產後，只有您可以編輯、註解、發佈、移動或刪除資產。 簽出資產會鎖定資產。 在您將資產存回AEM Assets之前，其他使用者無法對資產執行上述任何操作。 不過，他們仍可變更鎖定資產的中繼資料。
 
 若要能夠取出或登入資產，您需要對資產進行「寫入」存取。
 
@@ -63,7 +65,7 @@ Adobe Experience Manager(AEM)Assets可讓您取出資產進行編輯，並在完
 
 管理員可以登記其他使用者登出的資產。
 
-1. 以管理員身分登入AEM Assets。
+1. 以管理員身份登錄AEM Assets。
 1. 從「資產」使用者介面中，選取一或多個已由其他使用者簽出的資產。
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
