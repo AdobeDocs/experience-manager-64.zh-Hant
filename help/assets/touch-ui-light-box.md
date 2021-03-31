@@ -1,11 +1,13 @@
 ---
 title: 燈箱
-description: 瞭解AEM Assets中的Lightbox。
+description: 瞭解AEM Assets的燈箱。
 contentOwner: AG
+feature: 開發人員工具，轉譯
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -13,11 +15,11 @@ ht-degree: 0%
 
 # 燈箱{#lightbox}
 
-瞭解AEM Assets中的Lightbox。
+瞭解AEM Assets的燈箱。
 
 燈箱是特殊的系列，可讓您輕鬆存取資產。 您可以快速存取Lightbox以新增或刪除資產。 它可當成您的個人影像收藏館。
 
-如果您是Adobe Experience Manager(AEM)Assets使用者，當您第一次登入應用程式時，會自動建立Lightbox。 它是您登入的唯一選項。 其他使用者無法存取您的燈箱。
+如果您是Adobe Experience Manager(AEM)資產使用者，當您第一次登入應用程式時，會自動建立Lightbox。 它是您登入的唯一選項。 其他使用者無法存取您的燈箱。
 
 ## 新增資產至燈箱{#adding-assets-to-lightbox}
 
