@@ -1,11 +1,13 @@
 ---
 title: 搜尋 Facet
-description: 本文說明如何在AEM中建立、修改和使用搜尋Facet。
+description: 本文說明如何在中建立、修改和使用搜尋刻面AEM。
 contentOwner: AG
+feature: 搜尋
+role: 管理員、開發人員
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2537'
+source-wordcount: '2540'
 ht-degree: 21%
 
 ---
@@ -13,9 +15,9 @@ ht-degree: 21%
 
 # 搜尋 Facet {#search-facets}
 
-瞭解如何在AEM中建立、修改和使用搜尋刻面。
+瞭解如何在中建立、修改和使用搜尋刻面AEM。
 
-Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有時候，如果您只使用AEM的一般搜尋功能，尋找正確的資產不但麻煩而且耗時。
+Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，可儲存許多資產。 有時，如果您只使用的一般搜尋功能，尋找正確的資產不但困難而且耗時AEM。
 
 使用「篩選」面板中的搜尋Facet，為您的搜尋體驗增加更精細的度，並讓搜尋功能更有效率且更多功能。 搜尋刻面新增多個維度（謂語），可讓您執行更精細的搜尋。 「濾鏡」面板包含一些標準刻面。 您也可以新增自訂搜尋Facet。
 
@@ -30,7 +32,7 @@ Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有�
 對於全文搜索，請將Fulltext謂詞添加到表單中。 使用Property predicate搜尋符合您指定之單一屬性的資產。 使用「選項」述詞可搜尋符合特定屬性之一或多個值的資產。 新增「日期範圍」述詞，以搜尋在指定日期範圍內建立的資產。
 
 1. 點選/按一下AEM標誌，然後前往「工具 **[!UICONTROL >一般]** >搜 **[!UICONTROL 尋表格]******」。
-1. 從「搜尋表單」頁面中，選擇&#x200B;**[!UICONTROL 資產管理搜尋邊欄]**，然後點選&#x200B;**編輯** ![aemassets_edit](assets/aemassets_edit.png)。
+1. 從「搜尋Forms」頁面，選取「資產管理搜尋邊欄」**[!UICONTROL ，然後點選「**&#x200B;編輯&#x200B;**![aemassets_edit](assets/aemassets_edit.png)」。]**
 
    ![尋找並選取「資產管理搜尋邊欄」](assets/assets_admin_searchrail.png)
 
@@ -38,7 +40,7 @@ Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有�
 
    >[!NOTE]
    >
-   >若要使用舊版AEM預先設定的&#x200B;**資產管理搜尋邊欄**&#x200B;中的資料夾搜尋功能，請執行下列步驟：
+   >若要使用舊版中預先設定的&#x200B;**資產管理搜尋邊欄**&#x200B;的資料夾搜尋功能，請執AEM行下列步驟：
    > 
    >1. 導覽至CRX-DE中的&#x200B;*/conf/global/settings/dam/search/facets/assets/jcr:content/items*。
    >1. 刪除&#x200B;**type**&#x200B;節點。
@@ -46,7 +48,7 @@ Adobe Experience Manager(AEM)Assets的企業部署可儲存許多資產。 有�
    >1. 儲存變更。
 
 
-1. 在「編輯搜索表單」頁中，將&#x200B;**[!UICONTROL 選擇謂詞]**&#x200B;頁籤中的謂詞拖動到主窗格。 例如，拖曳&#x200B;**[!UICONTROL Property Predicate]**。
+1. 在「編輯搜索Forms」頁中，將&#x200B;**[!UICONTROL 選擇謂語]**&#x200B;頁籤中的謂語拖到主窗格中。 例如，拖曳&#x200B;**[!UICONTROL Property Predicate]**。
 
    ![拖放謂語以自訂搜尋篩選器](assets/drag_predicate.png)
 
@@ -116,7 +118,7 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 >
 >Options謂語是包含屬性謂語的自訂包裝函式，用來展示描述的行為。 目前，沒有REST端點可用來支援本機功能。
 
-1. 點選AEM標誌，然後前往「**[!UICONTROL 工具>一般>搜尋表單]**」。
+1. 點選標AEM志，然後前往&#x200B;**[!UICONTROL 工具>一般>搜尋Forms]**。
 1. 從「搜 **[!UICONTROL 尋表單」頁面]** ，選取「資 ****&#x200B;產管理搜尋邊欄」，然後點選「編輯」圖示。
 1. 在「編 **[!UICONTROL 輯搜索表單]** 」頁中，將「選 **[!UICONTROL 項謂詞」從]** 「選擇謂詞 **** 」頁籤拖到主窗格。
 1. 在「設 **[!UICONTROL 定]** 」標籤中，輸入屬性的標籤和名稱。例如，若要根據資產的格式來搜尋資產，請為標籤指定好記的名稱，例如「檔案類 **[!UICONTROL 型」]**。指定在屬性欄位中根據其執行搜索的屬性，例如 `jcr:content/metadata/dc:format.`
@@ -136,10 +138,10 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 
 ## 添加多值屬性謂語{#adding-a-multi-value-property-predicate}
 
-「多值屬性」述詞可讓您搜尋資產以尋找多個值。 假設您在AEM Assets中擁有多個產品的影像，且每個影像的中繼資料包含與產品相關聯的SKU編號，這是您的案例。 您可以使用此謂語，根據多個SKU編號搜尋產品影像。
+「多值屬性」述詞可讓您搜尋資產以尋找多個值。 假設您在AEM Assets有多個產品的影像，而每個影像的中繼資料包含與產品相關的SKU編號。 您可以使用此謂語，根據多個SKU編號搜尋產品影像。
 
 1. 按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >一 **[!UICONTROL 般]** > **[!UICONTROL 搜尋表格]**」。
-1. 在「搜尋表單」頁面上，選取&#x200B;**[!UICONTROL 資產管理搜尋邊欄]**，點選&#x200B;**編輯** ![aemassets_edit](assets/aemassets_edit.png)。
+1. 在「搜尋Forms」頁面上，選取「資產管理搜尋邊欄」**[!UICONTROL ，點選「**&#x200B;編輯&#x200B;**![aemassets_edit](assets/aemassets_edit.png)」。]**
 1. 在「編輯搜索表單」頁中，將「 **[!UICONTROL Multi Value Property Predicate]** 」從「 **[!UICONTROL Select Predicate]** 」頁籤拖動到主窗格。
 1. 在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中，輸入謂語的標籤和佔位符文本。 指定屬性名稱，如`jcr:content/metadata/dc:value`，根據該名稱在屬性欄位中執行搜索。 也可以使用選擇對話框選擇節點。
 1. 請確定已 **[!UICONTROL 選取「分隔字元]** 」支援。在「輸入 **[!UICONTROL 分隔字元]** 」欄位中，指定分隔字元以分隔個別值。依預設，逗號會指定為分隔字元。您可以指定不同的分隔字元。
@@ -149,10 +151,10 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 
 ## 添加標籤謂詞{#adding-a-tags-predicate}
 
-「標籤謂語」可讓您執行資產的標籤搜尋。 依預設，AEM Assets會根據您指定的標籤，搜尋資產以尋找一或多個符合的標籤。 換句話說，搜索查詢使用指定的標籤執行OR操作。 不過，您可以使用「符合所有標籤」選項來搜尋包含您所指定之所有標籤的資產。
+「標籤謂語」可讓您執行資產的標籤搜尋。 依預設，AEM Assets會根據您指定的標籤，搜尋一或多個標籤符合的資產。 換句話說，搜索查詢使用指定的標籤執行OR操作。 不過，您可以使用「符合所有標籤」選項來搜尋包含您所指定之所有標籤的資產。
 
 1. 按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >一 **[!UICONTROL 般]** > **[!UICONTROL 搜尋表格]**」。
-1. 從「搜尋表單」頁面中，選取&#x200B;**[!UICONTROL 資產管理搜尋邊欄]**，然後點選&#x200B;**編輯** ![aemassets_edit](assets/aemassets_edit.png)。
+1. 從「搜尋Forms」頁面，選取「資產管理搜尋邊欄」**[!UICONTROL ，然後點選「**&#x200B;編輯&#x200B;**![aemassets_edit](assets/aemassets_edit.png)」。]**
 1. 在「編輯搜索表單」頁中，將&#x200B;**[!UICONTROL Tags Predicate]**&#x200B;從「選擇謂詞」頁籤拖動到主窗格。
 1. 在「設定」標籤中，輸入謂語的預留位置文字。 指定屬性名稱，依據該名稱在屬性欄位中執行搜尋，例如&#x200B;*jcr:content/metadata/cq:tags*。 或者，也可以從選擇對話框中選擇CRXDE中的節點。
 1. 配置此謂語的Root標籤路徑屬性，以在「標籤」清單中填充各種標籤。
@@ -166,9 +168,9 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 1. 導覽至「搜尋」面板。 **[!UICONTROL Tags]**&#x200B;謂語已新增至「搜尋」面板。
 1. 指定您要依據其搜尋資產或從建議清單中選取的標籤。
 
-   ![輸入標籤名稱時的AEM提供建議](assets/chlimage_1-419.png)
+   ![AEM輸入標籤名稱時提供的建議](assets/chlimage_1-419.png)
 
-   輸入標籤名稱時的AEM提供建議
+   AEM輸入標籤名稱時提供的建議
 
 1. 選擇&#x200B;**[!UICONTROL Match all]**&#x200B;以搜尋包含您所指定之所有標籤的相符項目。
 
@@ -195,15 +197,15 @@ CRXDE中所示的檔案類型的Value屬性用於搜索查詢
 
 ## 恢復預設搜索刻面{#restoring-default-search-facets}
 
-依預設，「鎖定」圖示會出現在&#x200B;**[!UICONTROL 「資產管理搜尋邊欄」**[!UICONTROL 「搜尋表單」]**頁面的]**&#x200B;前方。 如果向表單添加搜索刻面，表示預設表單已修改，則「鎖定」表徵圖將消失。
+依預設，「鎖定」圖示會出現在&#x200B;**[!UICONTROL 「資產管理搜尋邊欄」**[!UICONTROL 「搜尋Forms ]**」頁面的]**&#x200B;之前。 如果向表單添加搜索刻面，表示預設表單已修改，則「鎖定」表徵圖將消失。
 
-![「搜尋表單」頁面上的選項鎖定圖示表示預設設定保持不變且未自訂。](assets/locked_admin_rail.png)
+![「搜尋Forms」頁面上的選項鎖定圖示表示預設設定保持不變，且未自訂。](assets/locked_admin_rail.png)
 
-「搜尋表單」頁面上的選項鎖定圖示表示預設設定保持不變且未自訂。
+「搜尋Forms」頁面上的選項鎖定圖示表示預設設定保持不變，且未自訂。
 
 若要還原預設搜尋Facet，請執行下列步驟：
 
-1. 在&#x200B;**[!UICONTROL 搜尋表單]**&#x200B;頁面中，選取&#x200B;**[!UICONTROL 資產管理搜尋邊欄]**。
+1. 在&#x200B;**[!UICONTROL 搜尋Forms]**&#x200B;頁面中，選取&#x200B;**[!UICONTROL 資產管理搜尋邊欄]**。
 1. 點選工具列中的&#x200B;**[!UICONTROL Delete]** ![deleteoutline](assets/deleteoutline.png)。
 1. 在確認對話方塊中，點選&#x200B;**[!UICONTROL Delete]**&#x200B;以移除自訂變更。
 
