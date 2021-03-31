@@ -1,11 +1,13 @@
 ---
 title: AEM Assets首頁體驗
-description: 個人化AEM Assets首頁，提供多樣化的歡迎畫面體驗，包括資產近期活動的快照。
+description: 個人化AEM Assets首頁，提供豐富的歡迎畫面體驗，包括資產相關活動的快照。
 contentOwner: AG
+feature: 開發人員工具，資產管理
+role: 管理員，業務從業人員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -13,13 +15,13 @@ ht-degree: 1%
 
 # AEM Assets首頁體驗{#aem-assets-home-page-experience}
 
-個人化AEM Assets首頁，提供多樣化的歡迎畫面體驗，包括資產近期活動的快照。
+個人化AEM Assets首頁，提供豐富的歡迎畫面體驗，包括資產相關活動的快照。
 
-Adobe Experience Manager(AEM)資產首頁提供多樣化且個人化的歡迎畫面體驗，其中包含最近活動的快照，例如最近檢視或上傳的資產。
+Adobe Experience Manager(AEM)資產首頁提供多樣化且個人化的歡迎畫面體驗，其中包含最近檢視或上傳的資產等活動的快照。
 
 預設會停用「資產首頁」。 要啟用它，請執行以下步驟：
 
-1. 若要存取AEM Configuration Manager，請按一下「**[!UICONTROL 工具>作業> Web Console]**」。
+1. 要訪AEM問配置管理器，請按一下「工具」>「操作」>「Web控制台」]**。**[!UICONTROL 
 1. 開啟&#x200B;**Day CQ DAM Event Recorder**&#x200B;服務。
 1. 選擇&#x200B;**[!UICONTROL 啟用此服務]**&#x200B;以啟用活動記錄。
 
@@ -69,7 +71,7 @@ Adobe Experience Manager(AEM)資產首頁提供多樣化且個人化的歡迎畫
 
 **最近**:此區 **段下** 的「最近檢視的介面工具集」會顯示登入使用者最近存取的實體，包括資料夾、系列和專案。
 
-**Discover**:此區 **** 段下的「新介面工具集」會顯示最近上傳至AEM Assets例項的資產和轉譯。
+**Discover**:此區 **** 段下的新介面工具集會顯示最近上傳至AEM Assets例項的資產和轉譯。
 
 要啟用清除用戶活動資料，請從Configuration Manager中啟用&#x200B;**DAM事件清除服務**。 啟用此服務後，系統將刪除超過指定數目的登入使用者活動。
 
@@ -77,7 +79,7 @@ Adobe Experience Manager(AEM)資產首頁提供多樣化且個人化的歡迎畫
 
 >[!NOTE]
 >
->啟用Day CQ DAM Event Recorder和DAM Event Purge服務可增加對JCR的寫入作業和搜尋索引，大幅增加AEM伺服器的負載。 AEM伺服器上的額外負載可能會影響其效能。
+>啟用Day CQ DAM Event Recorder和DAM Event Purge服務可增加對JCR的寫入操作和搜索索引，這可顯著增加伺服器的負AEM載。 伺服器的額外負載AEM可能會影響其效能。
 
 >[!CAUTION]
 >
@@ -85,4 +87,4 @@ Adobe Experience Manager(AEM)資產首頁提供多樣化且個人化的歡迎畫
 >
 >Adobe建議執行大量作業的管理員和使用者避免使用「資產首頁」功能來防止使用者活動增加。 此外，管理員可以從Configuration Manager中設定&#x200B;**Day CQ DAM Event Recorder**，排除特定使用者的錄制活動。
 >
->如果您使用此功能，Adobe建議您根據伺服器負載來排程清除頻率。
+>如果您使用此功能，Adobe建議您根據伺服器負載計劃清除頻率。
