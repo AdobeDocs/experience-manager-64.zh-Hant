@@ -3,10 +3,12 @@ title: 管理資產收集
 description: 瞭解要管理資產集合的任務，例如建立、檢視、刪除、編輯和下載系列。
 contentOwner: AG
 mini-toc-levels: 1
+feature: 集合
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: dfe5d976da937162e902ba8afac862f290702f5b
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2331'
 ht-degree: 15%
 
 ---
@@ -14,7 +16,7 @@ ht-degree: 15%
 
 # 管理集合 {#managing-collections}
 
-系列是Adobe Experience Manager Assets中的一組資產。 使用系列在使用者之間共用資產。 該集可以是靜態集合或基於搜索結果的動態集合。
+系列是Adobe Experience Manager資產內的一組資產。 使用系列在使用者之間共用資產。 該集可以是靜態集合或基於搜索結果的動態集合。
 
 與資料夾不同，系列可以包含不同位置的資產。 您可以與指派不同權限層級的不同使用者共用系列，包括檢視、編輯等。
 
@@ -51,7 +53,7 @@ ht-degree: 15%
 
    >[!NOTE]
    >
-   >Experience Manager Assets可讓您建立系列的審閱工作，就像建立資產檔案夾的審閱工作一樣。
+   >「Experience Manager資產」可讓您建立系列的審閱工作，就像建立資產檔案夾的審閱工作一樣。
 
    若要新增資產至系列，請導覽至「資產」使用者介面。 如需詳細資訊，請參閱[將資產新增至系列](/help/assets/managing-collections-touch-ui.md#adding-assets-to-a-collection)。
 
@@ -94,7 +96,7 @@ ht-degree: 15%
    ![files_option](assets/files_option.png)
 
 1. 點選／按一下「儲存智慧型系列」。****
-1. 指定系列的名稱。 選擇&#x200B;**[!UICONTROL Public]**&#x200B;將具有查看器角色的DAM用戶組添加到智慧集合。
+1. 指定系列的名稱。 選擇&#x200B;**[!UICONTROL Public]**&#x200B;將具有查看器角色的DAM用戶組添加到智慧系列。
 
    ![save_collection](assets/save_collection.png)
 
@@ -110,7 +112,7 @@ ht-degree: 15%
 
    「建立智慧選 **[!UICONTROL 擇」按鈕的標籤將更改為]** 「編 **[!UICONTROL 輯智慧選擇」]**。要編輯智慧系列的設定，請從「檔案和文 **[!UICONTROL 件夾]** 」列 **[!UICONTROL 表中選擇「檔案]** 」。然後，點選/按一下「編 **[!UICONTROL 輯智慧型選取]** 」按鈕。
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 ## 將資產新增至系列{#adding-assets-to-a-collection}
 
@@ -202,7 +204,7 @@ ht-degree: 15%
 
 在「系列」控制台中，點選／按一下系列以開啟它。
 
-在系列中，AEM Asset搜尋會限制為您所檢視之系列中的資產（及其標籤和中繼資料）。 當您在資料夾內搜尋時，會傳回目前資料夾內所有相符的資產和子資料夾。 當您在系列中搜尋時，只會傳回符合的資產、檔案夾和其他系列，這些系列是系列的直接成員。
+在系列中，AEM資產搜尋會限制在您所檢視之系列中的資產（及其標籤和中繼資料）。 當您在資料夾內搜尋時，會傳回目前資料夾內所有相符的資產和子資料夾。 當您在系列中搜尋時，只會傳回符合的資產、檔案夾和其他系列，這些系列是系列的直接成員。
 
 ## 編輯系列設定{#editing-collection-settings}
 
@@ -303,6 +305,6 @@ ht-degree: 15%
 
 >[!MORELIKETHIS]
 >
->* [設定Experience Manager Assets電子郵件通知](/help/sites-administering/notification.md#assetsconfig)
+>* [設定Experience Manager資產電子郵件通知](/help/sites-administering/notification.md#assetsconfig)
 >* [建立系列的審閱工作](bulk-approval.md)
 
