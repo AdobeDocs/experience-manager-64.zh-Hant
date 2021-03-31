@@ -1,11 +1,13 @@
 ---
 title: Assets 監控最佳實務
-description: 在部署AEM例項後，監控其環境與效能的最佳實務。
+description: 在部署實例後監控其環境和性AEM能的最佳實踐。
 contentOwner: AG
+feature: 資產管理
+role: 管理員，架構師
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1769'
 ht-degree: 0%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # 資產監控最佳實踐{#assets-monitoring-best-practices}
 
-從Adobe Experience Manager(AEM)資產的角度來看，監控應包括觀察和報告下列流程和技術：
+從Adobe Experience Manager(AEM)資產的角度，監測應包括觀察和報告下列進程和技術：
 
 * 系統CPU
 * 系統記憶體使用
@@ -26,7 +28,7 @@ ht-degree: 0%
 
 * OSGi控制台運行狀況檢查
 
-通常，AEM Assets可透過兩種方式進行監控：即時監控和長期監控。
+通常，AEM Assets可以通過兩種方式進行監控：即即時監控和長期監控。
 
 ## 即時監視{#live-monitoring}
 
@@ -40,25 +42,25 @@ ht-degree: 0%
 
 * [Iftop](http://www.ex-parrot.com/pdw/iftop/):Iftop顯示有關乙太網／網路使用的詳細資訊。Iftop會根據使用乙太網的實體的通信通道統計資訊以及它們使用的頻寬量。 Iftop可以使用`yum install iftop`或`apt-get install iftop`安裝在大多數的Linux系統上。
 
-* Java Flight Recorder(JFR):Oracle提供的一種商業工具，可在非生產環境中自由使用。 如需詳細資訊，請參閱[如何使用Java Flight Recorder來診斷CQ執行階段問題](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)。
-* AEM error.log檔案：您可以調查AEM error.log檔案，以取得系統中記錄之錯誤的詳細資訊。 使用命令`tail -F quickstart/logs/error.log`來識別您應調查的錯誤。
+* Java Flight Recorder(JFR):來自Oracle的商業工具，可在非生產環境中自由使用。 如需詳細資訊，請參閱[如何使用Java Flight Recorder來診斷CQ執行階段問題](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)。
+* AEMerror.log檔案：您可以調查AEMerror.log檔案，以瞭解系統中記錄的錯誤的詳細資訊。 使用命令`tail -F quickstart/logs/error.log`來識別您應調查的錯誤。
 * [工作流程主控台](../sites-administering/workflows.md):運用工作流程主控台來監控落後或停滯的工作流程。
 
-通常，您會搭配使用這些工具，以取得有關AEM例項效能的完整概念。
+通常，您會搭配使用這些工具，以取得有關執行個體效能的完整AEM概念。
 
 >[!NOTE]
 >
->這些工具是標準工具，Adobe不直接支援。 他們不需要額外的授權。
+>這些工具是標準工具，不直接受Adobe支援。 他們不需要額外的授權。
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
 ## 長期監控{#long-term-monitoring}
 
-AEM例項的長期監控包括對受即時監控的相同部分進行較長時間的監控。 它還包括定義特定於您環境的警報。
+實例的長期監AEM控包括對即時監控的相同部分進行更長時間的監控。 它還包括定義特定於您環境的警報。
 
 ### 日誌聚合和報告{#log-aggregation-and-reporting}
 
-有幾種工具可用於聚合日誌，例如Splunk(TM)和Elastic Search/Logstash/Kabana(ELK)。 若要評估AEM例項的正常運作時間，請務必瞭解系統特定的記錄事件並根據事件建立警報。 熟悉您的開發和操作實踐有助於您更好地瞭解如何調整日誌聚合過程以生成關鍵警報。
+有幾種工具可用於聚合日誌，例如Splunk(TM)和Elastic Search/Logstash/Kabana(ELK)。 要評估實例的正常運行時AEM間，請務必瞭解特定於系統的日誌事件並根據事件建立警報。 熟悉您的開發和操作實踐有助於您更好地瞭解如何調整日誌聚合過程以生成關鍵警報。
 
 ### 環境監視{#environment-monitoring}
 
@@ -71,11 +73,11 @@ AEM例項的長期監控包括對受即時監控的相同部分進行較長時�
 * JMX MBeans
 * 外部網站
 
-您需要NewRelic(TM)和AppDynamics(TM)等外部工具來監控每個項目。 使用這些工具，您可以定義系統專用的警報，例如系統使用率高、工作流程備份、運行狀況檢查失敗或未驗證的網站存取。 Adobe不建議使用任何特定工具，而不建議使用其他工具。 尋找適合您的工具，並運用它來監控討論的項目。
+您需要NewRelic(TM)和AppDynamics(TM)等外部工具來監控每個項目。 使用這些工具，您可以定義系統專用的警報，例如系統使用率高、工作流程備份、運行狀況檢查失敗或未驗證的網站存取。 Adobe不建議使用任何特定工具而非其他工具。 尋找適合您的工具，並運用它來監控討論的項目。
 
 #### 內部應用程式監視{#internal-application-monitoring}
 
-內部應用程式監視包括監視組成AEM堆疊的應用程式元件，包括JVM、內容存放庫，以及透過平台上建立的自訂應用程式程式碼進行監視。 通常，它是通過JMX Mbeans進行的，它可由許多常用的監控解決方案直接進行監控，如SolarWinds(TM),HP OpenView(TM),Hyperic(TM),Zabbix(TM)等。 對於不支援直接連線至JMX的系統，您可編寫shell指令碼來擷取JMX資料，並以他們本身瞭解的格式將它公開給這些系統。
+內部應用程式監視包括監視構成堆疊的應用程式元AEM件，包括JVM、內容儲存庫，以及透過平台上建立的自訂應用程式程式碼進行監視。 通常，它是通過JMX Mbeans進行的，它可由許多常用的監控解決方案直接進行監控，如SolarWinds(TM),HP OpenView(TM),Hyperic(TM),Zabbix(TM)等。 對於不支援直接連線至JMX的系統，您可編寫shell指令碼來擷取JMX資料，並以他們本身瞭解的格式將它公開給這些系統。
 
 預設情況下，未啟用對JMX Mbeans的遠程訪問。 有關通過JMX進行監視的詳細資訊，請參見[使用JMX技術進行監視和管理](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html)。
 
@@ -83,7 +85,7 @@ AEM例項的長期監控包括對受即時監控的相同部分進行較長時�
 
 **JVM監控**
 
-和任何以Java為基礎的應用程式堆疊一樣，AEM會依賴透過基礎Java Virtual Machine提供給它的資源。 您可以透過JVM公開的平台MXBeans，來監視其中許多資源的狀態。 有關MXBeans的詳細資訊，請參見[使用平台MBean伺服器和平台MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)。
+與任何基於Java的應用程AEM序堆棧一樣，它取決於通過基礎Java虛擬機提供給它的資源。 您可以透過JVM公開的平台MXBeans，來監視其中許多資源的狀態。 有關MXBeans的詳細資訊，請參見[使用平台MBean伺服器和平台MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)。
 
 以下是一些可監視JVM的基線參數：
 
@@ -107,9 +109,9 @@ AEM例項的長期監控包括對受即時監控的相同部分進行較長時�
 
 **AEM監控**
 
-AEM也透過JMX公開一組統計資料和作業。 這些功能有助於評估系統運行狀況，並在潛在問題影響用戶之前找出它們。 如需詳細資訊，請參閱AEM JMX MBeans上的[documentation](/help/sites-administering/jmx-console.md)。
+AEM也透過JMX公開一組統計資料和作業。 這些功能有助於評估系統運行狀況，並在潛在問題影響用戶之前找出它們。 如需詳細資訊，請參閱JMX MBeans上的[documentation&lt;a1/AEM>。](/help/sites-administering/jmx-console.md)
 
-以下是您可針對AEM監控的一些基準參數：
+以下是一些基線參數，您可以監視AEM:
 
 複製代理
 
@@ -186,13 +188,13 @@ AEM也透過JMX公開一組統計資料和作業。 這些功能有助於評估�
 
 ## 常見問題和解決方案{#common-issues-and-resolutions}
 
-在監控程式中，如果您遇到問題，請執行下列疑難排解工作，以解決AEM例項的常見問題：
+在監控過程中，如果您遇到問題，您可以執行以下一些疑難排解工作，以解決例項的常見AEM問題：
 
 * 如果使用TarMK，請經常執行Tar壓縮。 有關詳細資訊，請參閱[維護儲存庫](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)。
 * 檢查`OutOfMemoryError`日誌。 有關詳細資訊，請參閱[分析記憶體問題](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)。
 * 檢查日誌中是否有任何對未索引查詢、樹遍歷或索引遍歷的引用。 這表示未索引的查詢或索引不足的查詢。 有關優化查詢和索引效能的最佳實踐，請參見[查詢和索引的最佳實踐](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 * 使用工作流程主控台來驗證您的工作流程是否如預期般執行。 如果可能，將多個工作流程簡化為單一工作流程。
 * 重新造訪即時監控，並尋找其他瓶頸或特定資源的高消費者。
-* 調查來自用戶端網路的出口點，以及AEM例項網路的入口點，包括發送器。 這些往往是瓶頸領域。 如需詳細資訊，請參閱[資產網路考量](assets-network-considerations.md)。
-* 調整AEM伺服器的大小。 您的AEM例項可能大小不足。 Adobe客戶服務可以幫助您識別您的伺服器是否大小不足。
+* 調查從客戶端網路出口點和到實例網路(包括調AEM度器)的入口點。 這些往往是瓶頸領域。 如需詳細資訊，請參閱[資產網路考量](assets-network-considerations.md)。
+* 升級您的AEM伺服器。 您的例項大小可能不AEM夠。 Adobe客戶服務可協助您識別伺服器的大小是否不足。
 * 檢查`access.log`和`error.log`檔案中是否有發生錯誤的項目。 尋找可能表示自訂代碼異常的模式。 將它們新增至您所監視的事件清單。
