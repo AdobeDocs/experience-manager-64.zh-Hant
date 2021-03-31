@@ -1,11 +1,13 @@
 ---
 title: GQL全文搜索
-description: 探索AEM Assets中的GQL全文搜尋功能。 使用它可根據特定中繼資料來搜尋資產，例如標題、說明和作者名稱。
+description: 探索AEM Assets的GQL全文搜索功能。 使用它可根據特定中繼資料來搜尋資產，例如標題、說明和作者名稱。
 contentOwner: AG
+feature: 搜尋，中繼資料
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '889'
 ht-degree: 2%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 2%
 
 # GQL全文搜索{#gql-full-text-search}
 
-探索AEM Assets中的GQL全文搜尋功能。 使用它可根據特定中繼資料來搜尋資產，例如標題、說明和作者名稱。
+探索AEM Assets的GQL全文搜索功能。 使用它可根據特定中繼資料來搜尋資產，例如標題、說明和作者名稱。
 
 GQL全文搜尋功能可讓您根據特定中繼資料來搜尋資產，例如標題、說明、作者等。
 
@@ -58,8 +60,8 @@ GQL全文搜尋功能可讓您根據下列中繼資料屬性來搜尋資產。 �
 | [!UICONTROL 參與者] | 投稿人：John |
 | [!UICONTROL 位置] | 位置：印度 |
 | [!UICONTROL 說明] | 說明：「範例影像」 |
-| [!UICONTROL 製作工具] | 創作工具：「Adobe Photoshop 7.0」 |
-| [!UICONTROL 版權擁有者] | copyrightowner:「Adobe Systems」 |
+| [!UICONTROL 製作工具] | 創作工具：「Adobe Photoshop7.0」 |
+| [!UICONTROL 版權擁有者] | 版權人：「Adobe Systems」 |
 | [!UICONTROL 參與者] | 投稿人：John |
 | [!UICONTROL 使用條款] | 使用條款：「保留CopyRights」 |
 | [!UICONTROL 已建立] | created:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
@@ -68,7 +70,7 @@ GQL全文搜尋功能可讓您根據下列中繼資料屬性來搜尋資產。 �
 | [!UICONTROL 關閉時間] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 時間範圍] （過期的dateontime,offtime） | facet欄位：下限……上界 |
 | [!UICONTROL 路徑] | /content/dam/&lt;資料夾名稱> |
-| [!UICONTROL PDF 標題] | pdftitle:「Adobe檔案」 |
+| [!UICONTROL PDF 標題] | pdftitle:&quot;Adobe檔案&quot; |
 | [!UICONTROL 主旨] | 主旨：「訓練」 |
 | [!UICONTROL 標記] | 標籤：「位置與旅行」 |
 | [!UICONTROL 類型] | 類型：&quot;image\png&quot; |
@@ -78,7 +80,7 @@ GQL全文搜尋功能可讓您根據下列中繼資料屬性來搜尋資產。 �
 
 以下是複雜查詢的搜尋格式範例：
 
-* 若要顯示具有多個刻面欄位的所有資產(例如：title=John Doe and creator tool = Adobe Photoshop):
+* 若要顯示具有多個刻面欄位的所有資產(例如：title=John Doe和創作工具=Adobe Photoshop):
 
 Tiltle:&quot;John Doe&quot;製作工具：Adobe&amp;ast;
 
