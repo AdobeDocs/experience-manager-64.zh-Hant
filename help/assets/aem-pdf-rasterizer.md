@@ -1,11 +1,13 @@
 ---
 title: 使用PDF點陣化器產生轉譯
-description: 使用Adobe PDF Rasterizer程式庫產生高品質的縮圖和轉譯。
+description: 使用Adobe PDF點陣化器程式庫產生高品質的縮圖和轉譯。
 contentOwner: AG
+feature: 開發人員工具，轉譯
+role: 開發人員、管理員
 translation-type: tm+mt
-source-git-commit: 0d3c5a1e68dd25b4a2f75dd1da19a186227939a7
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '720'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
@@ -13,15 +15,15 @@ ht-degree: 0%
 
 # 使用PDF點陣化器{#using-pdf-rasterizer}
 
-當您將大型且內容密集的PDF或AI檔案上傳至[!DNL Adobe Experience Manager Assets]時，預設程式庫可能無法產生正確的輸出。 相較於預設資料庫的輸出，Adobe的PDF點陣化器程式庫可產生更可靠且更精確的輸出。 Adobe建議針對下列情況使用PDF點陣化器程式庫：
+當您將大型且內容密集的PDF或AI檔案上傳至[!DNL Adobe Experience Manager Assets]時，預設程式庫可能無法產生正確的輸出。 Adobe的PDF點陣化器程式庫可產生比預設程式庫的輸出更可靠、更精確的輸出。 Adobe建議在下列情況下使用PDF點陣化器程式庫：
 
-Adobe建議針對下列項目使用PDF點陣化器程式庫：
+Adobe建議使用PDF點陣化器程式庫以進行下列工作：
 
 * 大量、內容密集的AI檔案或PDF檔案。
 * AI檔案和PDF檔案，預設會產生縮圖。
 * AI檔案搭配Pantone Matching System(PMS)色彩。
 
-使用PDF點陣化器產生的縮圖和預覽，與現成可用的輸出相比，品質更佳，因此可跨裝置提供一致的檢視體驗。 Adobe PDF Rasterizer程式庫不支援任何色域轉換。 無論來源檔案的色域為何，都會輸出為RGB。
+使用PDF點陣化器產生的縮圖和預覽，與現成可用的輸出相比，品質更佳，因此可跨裝置提供一致的檢視體驗。 Adobe PDF點陣化器程式庫不支援任何色域轉換。 無論來源檔案的色域為何，都會輸出為RGB。
 
 1. 在[軟體散發](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)的[!DNL Adobe Experience Manager]部署中安裝PDF點陣化器套件。
 
