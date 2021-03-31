@@ -5,10 +5,12 @@ uuid: 56a8c221-409f-4605-97b1-a054dd2abfab
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
+feature: 資產管理，視訊
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 2a24d7b9232f39d47d79d995251a14beb0c0f666
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '800'
 ht-degree: 8%
 
 ---
@@ -16,11 +18,11 @@ ht-degree: 8%
 
 # 管理影片資產 {#managing-video-assets}
 
-瞭解如何在Adobe Experience Manager(AEM)Assets中管理和編輯視訊資產。 此外，如果您有使用動態媒體的授權，請參閱[動態媒體視訊檔案](video.md)。
+瞭解如何在Adobe Experience Manager()資產中管理和編輯視AEM訊資產。 此外，如果您有使用Dynamic Media的授權，請參閱[Dynamic Media視訊檔案](video.md)。
 
 ## 上傳和預覽視訊資產{#uploading-and-previewing-video-assets}
 
-AEM Assets會使用副檔名MP4產生視訊資產的預覽。 如果資產的格式不是MP4，請安裝FFmpeg套件以產生預覽。 Fmpeg會建立OGG和MP4類型的視訊轉譯。 您可以在AEM Assets使用者介面中預覽這些轉譯。
+AEM Assets以擴充功能MP4產生視訊資產的預覽。 如果資產的格式不是MP4，請安裝FFmpeg套件以產生預覽。 Fmpeg會建立OGG和MP4類型的視訊轉譯。 您可以在AEM Assets使用者介面中預覽這些轉譯。
 
 1. 在「數位資產」檔案夾或子檔案夾中，導覽至您要新增數位資產的位置。
 1. 若要上傳資產，請按一下或點選工具列中的「建立&#x200B;**[!UICONTROL 」，然後選擇「檔案**[!UICONTROL  a3/>」。 ]**]**&#x200B;或者，直接將它拖曳至資產區域。 如需有關上傳作業的詳細資訊，請參閱[上傳資產](managing-assets-touch-ui.md#uploading-assets)。
@@ -38,21 +40,21 @@ AEM Assets會使用副檔名MP4產生視訊資產的預覽。 如果資產的格
 
 ## 上傳大於2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}的資產的設定
 
-依預設，AEM資產不會讓您上傳任何大於2 GB的資產，因為檔案大小限制。 但是，您可以轉到CRXDE Lite並在`/apps`目錄下建立節點，以覆蓋此限制。 節點必須具有相同的節點名稱、目錄結構和可比的節點順序屬性。
+依預設，AEM Assets不允許您上傳任何大於2 GB的資產，因為檔案大小限制。 但是，您可以通過進入CRXDE Lite並在`/apps`目錄下建立節點來覆蓋此限制。 節點必須具有相同的節點名稱、目錄結構和可比的節點順序屬性。
 
-除了AEM Assets組態外，請變更下列組態以上傳大型資產：
+除了AEM Assets配置外，請變更下列組態以上傳大型資產：
 
-* 增加代號過期時間。 請參閱Web Console中`https://[aem_server]:[port]/system/console/configMgr`的[!UICONTROL Adobe Granite CSRF Servlet]。 如需詳細資訊，請參閱[CSRF保護](/help/sites-developing/csrf-protection.md)。
-* 在Dispatcher配置中增加`receiveTimeout`。 如需詳細資訊，請參閱[Experience Manager Dispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)。
+* 增加代號過期時間。 請參閱`https://[aem_server]:[port]/system/console/configMgr`的「Web控制台」中的「Adobe花崗岩CSRF Servlet]」。 [!UICONTROL 如需詳細資訊，請參閱[CSRF保護](/help/sites-developing/csrf-protection.md)。
+* 在Dispatcher配置中增加`receiveTimeout`。 有關詳細資訊，請參見[Experience ManagerDispatcher configuration](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)。
 
 >[!NOTE]
 >
->AEM Classic使用者介面沒有2GB檔案大小限制。 此外，大型視訊的端對端工作流程也未完全受支援。
+>Classic使AEM用者介面沒有2GB檔案大小限制。 此外，大型視訊的端對端工作流程也未完全受支援。
 
 要配置較高的檔案大小限制，請在`/apps`目錄中執行以下步驟。
 
 1. 在 AEM 中，點選&#x200B;**[!UICONTROL 「工具」>「一般」>「CRXDE Lite」]**。
-1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁面中，在左側的目錄窗口中，導航至`/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`。 要查看目錄窗口，請按一下`>>`表徵圖。
+1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁的左側目錄窗口中，導航至`/libs/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`。 要查看目錄窗口，請按一下`>>`表徵圖。
 1. 在工具列中，點選「覆蓋節點」。 ****&#x200B;或者，從上 **[!UICONTROL 下文選單選取]** 「覆蓋節點」。
 1. 在「覆蓋 **[!UICONTROL 節點」對話方]** ，點選「 **[!UICONTROL 確定」]**。
 
@@ -63,15 +65,15 @@ AEM Assets會使用副檔名MP4產生視訊資產的預覽。 如果資產的格
 
 1. 從工具列中，點選「全部儲存」。****
 1. 在AEM中，點選「 **[!UICONTROL 工具 > 作業 > Web Console]**」。
-1. 在&#x200B;**[!UICONTROL Adobe Experience Manager Web Console Bundles]**&#x200B;頁面的表格&#x200B;**[!UICONTROL Name]**&#x200B;欄下，找到並點選&#x200B;**[!UICONTROL Adobe Granite Workflow External Process Job Handler]**。
-1. 在&#x200B;**[!UICONTROL Adobe Granite Workflow External Process Job Handler]**&#x200B;頁面中，將&#x200B;**[!UICONTROL Default Timeout]**&#x200B;和&#x200B;**[!UICONTROL Max Timeout]**&#x200B;欄位的秒數設為`18000`（5小時）。
+1. 在&#x200B;**[!UICONTROL Adobe Experience ManagerWeb控制台包]**&#x200B;頁面的表&#x200B;**[!UICONTROL 名稱]**&#x200B;列下，找到並點選&#x200B;**[!UICONTROL Adobe花崗岩工作流外部進程作業處理程式]**。
+1. 在&#x200B;**[!UICONTROL Adobe花崗岩工作流外部進程作業處理程式]**&#x200B;頁中，將&#x200B;**[!UICONTROL 預設超時]**&#x200B;和&#x200B;**[!UICONTROL 最大超時]**&#x200B;欄位的秒數設定為`18000`（5小時）。
 1. 點選&#x200B;**[!UICONTROL Save]**。
-1. 在AEM中，點選「**[!UICONTROL 工具>工作流程>模型]**」。
-1. 在&#x200B;**[!UICONTROL 工作流程模型]**&#x200B;頁面上，選擇&#x200B;**[!UICONTROL 動態媒體編碼視訊]**，然後點選&#x200B;**[!UICONTROL 編輯]**。
-1. 在&#x200B;**[!UICONTROL Workflow]**&#x200B;頁面上，點選兩下&#x200B;**[!UICONTROL Dynamic Media Video Service Process]**&#x200B;元件。
+1. 在AEM中，按一下「**[!UICONTROL 工具>工作流>型號]**」。
+1. 在&#x200B;**[!UICONTROL 工作流模型]**&#x200B;頁面上，選擇&#x200B;**[!UICONTROL Dynamic Media編碼視頻]**，然後點選&#x200B;**[!UICONTROL 編輯]**。
+1. 在&#x200B;**[!UICONTROL Workflow]**&#x200B;頁面上，點選兩下&#x200B;**[!UICONTROL Dynamic Media視訊服務程式]**&#x200B;元件。
 1. 在「步 **[!UICONTROL 驟屬性]** 」對話框的「常用」頁籤下，展開「 **[!UICONTROL 高級設定」]******。
 1. 在「逾 **[!UICONTROL 時]** 」欄位中，指定值 `18000`，然後點選「確定」以返回「動態媒體編碼 ******** 視訊」工作流程頁面。
-1. 在頁面頂端的&#x200B;**[!UICONTROL 動態媒體編碼視訊]**&#x200B;頁面標題下方，點選&#x200B;**[!UICONTROL 儲存]**。
+1. 在頁面頂部的&#x200B;**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;頁面標題下方，點選&#x200B;**[!UICONTROL 儲存]**。
 
 ## 發佈視訊資產{#publishing-video-assets}
 
@@ -83,7 +85,7 @@ AEM Assets會使用副檔名MP4產生視訊資產的預覽。 如果資產的格
 1. 點選&#x200B;**[!UICONTROL 預覽]**&#x200B;圖示以播放影片。
 1. 若要註解視訊，請點選&#x200B;**[!UICONTROL Annotate]**&#x200B;按鈕。 在視訊中的特定時點（畫格）加入註解。
 
-   在加上註解時，您可以在畫布上繪圖，並在繪圖中加入註解。 注釋會自動儲存在Adobe Experience Manager Assets中。
+   在加上註解時，您可以在畫布上繪圖，並在繪圖中加入註解。 注釋會自動儲存在Adobe Experience Manager資產中。
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
 
