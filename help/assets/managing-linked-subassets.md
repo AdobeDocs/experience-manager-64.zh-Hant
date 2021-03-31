@@ -2,10 +2,12 @@
 title: 管理複合資產並產生子資產。
 description: 瞭解如何從InDesign、AEMAdobe Illustrator和Photoshop檔案建立資產參考。 此外，也瞭解如何使用頁面檢視器功能來檢視多頁檔案的個別頁面，包括PDF、INDD、PPT、PPTX和AI檔案。
 contentOwner: AG
+feature: 資產管理
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: dc9ba70161f81578899416064bd03fdabe0bed5a
+source-git-commit: e46a27a1ba11b4a5973eb1ece02c8594b2ae0fc9
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1415'
 ht-degree: 0%
 
 ---
