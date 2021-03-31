@@ -2,10 +2,12 @@
 title: 擴充資產編輯器
 description: 瞭解如何使用自訂元件擴充資產編輯器的功能。
 contentOwner: AG
+feature: 開發人員工具
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '706'
 ht-degree: 13%
 
 ---
@@ -17,7 +19,7 @@ ht-degree: 13%
 
 使用預定義編輯元件的編輯器配置在[建立和配置資產編輯器頁面](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)中。
 
-除了使用預先存在的編輯器元件外，Adobe Experience Manager(AEM)開發人員也可以建立自己的元件。
+除了使用現有的編輯器元件外，Adobe Experience Manager(AEM)開發人員也可以建立自己的元件。
 
 ## 建立資產編輯器模板{#creating-an-asset-editor-template}
 
@@ -31,7 +33,7 @@ geometrixx中包含下列範例頁面：
 
 AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlibs通常載入在`init.jsp`中。
 
-與預設的clientlib載入（在核心的`init.jsp`中）相比，AEM Assets範本必須具備下列功能：
+與預設clientlib載入（在核心的`init.jsp`中）相比，AEM Assets模板必須具有以下內容：
 
 * 範本必須包含`cq.dam.edit` clientlib（而非`cq.wcm.edit`）。
 
@@ -41,7 +43,7 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlibs通常載�
 
 ### 設定JS動作{#configuring-js-actions}
 
-某些AEM Assets元件需要`component.js`中定義的JS函式。 將此檔案複製到元件目錄並將其連結。
+有些AEM Assets元件需要`component.js`中定義的JS函式。 將此檔案複製到元件目錄並將其連結。
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
@@ -51,7 +53,7 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlibs通常載�
 
 ### 其他樣式表{#additional-style-sheets}
 
-部分AEM Assets元件會使用AEM Widget程式庫。 若要在內容內容內容中正確呈現，必須載入其他樣式表。 標籤動作元件需要一個。
+有些AEM Assets元件使用WidgetAEM程式庫。 若要在內容內容內容中正確呈現，必須載入其他樣式表。 標籤動作元件需要一個。
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
