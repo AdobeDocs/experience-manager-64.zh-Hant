@@ -1,11 +1,13 @@
 ---
 title: 資產選擇器
-description: 瞭解如何使用資產選擇器來搜尋、篩選、瀏覽及擷取Adobe Experience Manager(AEM)Assets中資產的中繼資料。 此外，也瞭解如何自訂資產選擇器介面。
+description: 瞭解如何使用資產選擇器在Adobe Experience Manager()資產內搜尋、篩選、瀏覽及擷取資產的中AEM繼資料。 此外，也瞭解如何自訂資產選擇器介面。
 contentOwner: AG
+feature: 資產管理，中繼資料，搜尋
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 1de8efce9cd5cf47163cba8f0c962a9e2fc5116c
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在舊版AEM中，「資產選擇器」稱為[「資產選擇器」。](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)
+>在舊版中，資產選擇器稱為[資產選擇器](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)AEM。
 
 資產選擇器可讓您瀏覽、搜尋及篩選[!DNL Adobe Experience Manager]資產中的資產。 您也可以使用資產選擇器擷取您選取之資產的中繼資料。 若要自訂資產選擇器介面，您可以使用支援的請求參數來啟動它。 這些參數會針對特定藍本設定資產選擇器的上下文。
 
