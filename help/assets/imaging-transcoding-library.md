@@ -2,10 +2,12 @@
 title: 影像轉碼程式庫
 description: 瞭解如何設定和使用Adobe的影像轉碼程式庫。此影像處理解決方案可執行核心影像處理功能，包括編碼、轉碼、影像重新取樣和影像大小調整。
 contentOwner: AG
+feature: 轉譯，開發人員工具，資產處理
+role: 管理員
 translation-type: tm+mt
-source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
@@ -77,7 +79,7 @@ Adobe的影像轉碼程式庫是專屬的影像處理解決方案，可執行核
 
 要配置庫，請建立。conf檔案，以使用以下步驟指示庫。 您需要管理員或根用戶權限。
 
-1. 從軟體分發下載[映像轉碼庫軟體包，然後使用軟體包管理器安裝它。 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)此套件與AEM 6.5相容。
+1. 從軟體分發下載[映像轉碼庫軟體包，然後使用軟體包管理器安裝它。 ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)此套件與AEM6.5相容。
 
 1. 要瞭解`com.day.cq.dam.cq-dam-switchengine`的包ID，請登錄到Web控制台並按一下&#x200B;**[!UICONTROL OSGi > Bundles]**。 或者，若要開啟Bundles主控台，請存取`https://[aem_server:[port]/system/console/bundles/` URL。 找到`com.day.cq.dam.cq-dam-switchengine`包及其ID。
 
@@ -95,7 +97,7 @@ Adobe的影像轉碼程式庫是專屬的影像處理解決方案，可執行核
 
 1. 執行`ldconfig`命令以建立必要的連結和快取。
 
-1. 在用來啟動AEM的帳戶中，編輯`.bash_profile`檔案。 新增`LD_LIBRARY_PATH`，方法如下。
+1. 在用於啟動的帳戶中，編AEM輯`.bash_profile`檔案。 新增`LD_LIBRARY_PATH`，方法如下。
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -140,7 +142,7 @@ Adobe的影像轉碼程式庫是專屬的影像處理解決方案，可執行核
 
 1. 同步更新的[!UICONTROL DAM更新資產]工作流程模型。 儲存工作流程。
 
-驗證配置、上傳TIFF影像並監視error.log檔案。 您會注意到`INFO`訊息中提及`SwitchEngineHandlingProcess execute: executing command line`。 記錄檔提及產生的轉譯。 工作流程完成後，您就可以在AEM中檢視新的轉譯。
+驗證配置、上傳TIFF影像並監視error.log檔案。 您會注意到`INFO`訊息中提及`SwitchEngineHandlingProcess execute: executing command line`。 記錄檔提及產生的轉譯。 工作流程完成後，您可以在中檢視新轉譯AEM。
 
 >[!MORELIKETHIS]
 >
