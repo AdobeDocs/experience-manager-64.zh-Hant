@@ -2,10 +2,12 @@
 title: 新增影像地圖
 description: 瞭解如何將超連結的影像地圖新增至影像資產。
 contentOwner: AG
+feature: 資產管理
+role: 業務從業人員、管理員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -54,4 +56,4 @@ ht-degree: 0%
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   如果啟用「動態媒體」選項，請導覽至「資產」編輯器，然後點選&#x200B;**[!UICONTROL Map]**&#x200B;圖示以檢視所有套用的影像地圖。
+   如果已啟用「Dynamic Media」選項，請導覽至「資產」編輯器，然後點選&#x200B;**[!UICONTROL Map]**&#x200B;圖示以檢視所有套用的影像地圖。
