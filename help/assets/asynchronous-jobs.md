@@ -2,10 +2,12 @@
 title: 在 [!DNL Adobe Experience Manager]中配置非同步操作。
 description: 以非同步方式完成某些資源密集型任務，以優化 [!DNL Experience Manager Assets]中的效能。
 contentOwner: AG
+feature: 資產管理
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '632'
 ht-degree: 22%
 
 ---
@@ -64,7 +66,7 @@ ht-degree: 22%
 您可以修改清除任務的調度以及刪除完成任務之前保留其詳細資訊的持續時間。 您也可以設定在任何時間點保留詳細資料的已完成任務數上限。
 
 1. 在[!DNL Experience Manager]介面中，按一下「工具」>「操作」>「操作」]**>「Web控制台」]**。******[!UICONTROL **[!UICONTROL 
-1. 開啟&#x200B;**[!UICONTROL Adobe CQ DAM非同步工作清除已排程的]**&#x200B;工作。
+1. 開啟&#x200B;**[!UICONTROL Adobe CQDAM非同步作業清除計畫任務]**。
 1. 指定刪除已完成任務的天數閾值，以及歷史記錄中保留詳細資訊的最大任務數。 儲存變更。
 
    ![用於調度非同步任務清除的配置](assets/purge_job.png)
@@ -91,6 +93,6 @@ ht-degree: 22%
 
 >[!MORELIKETHIS]
 >
->* [在Experience Manager中設定電子郵件](/help/sites-administering/notification.md)。
+>* [以Experience Manager配置電子郵件](/help/sites-administering/notification.md)。
 >* [大量匯入和匯出資產的中繼資料](/help/assets/metadata-import-export.md)。
 
