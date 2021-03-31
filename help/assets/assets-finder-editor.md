@@ -2,10 +2,12 @@
 title: 「建立和配置資產編輯器」頁
 description: 瞭解如何建立自訂資產編輯器頁面並同時編輯多個資產。
 contentOwner: AG
+feature: 開發人員工具，資產管理
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3321'
 ht-degree: 1%
 
 ---
@@ -25,17 +27,17 @@ ht-degree: 1%
 
 ## 為何建立和設定資產編輯器頁面？{#why-create-and-configure-asset-editor-pages}
 
-數位資產管理正被越來越多的案例所使用。 從專業訓練使用者的小型解決方案（例如攝影師或分類學者）到更大且更多元化的使用者群組（例如商業使用者、WCM作者、記者等），專業使用者的Adobe Experience Manager(AEM)Assets強大的使用者介面可提供太多資訊，而相關人員會開始要求特定使用者介面或應用程式存取與他們相關的數位資產……
+數位資產管理正被越來越多的案例所使用。 當從專業訓練使用者的小型解決方案（例如攝影師或分類學者）移轉至更大且更多樣化的使用者群組（例如商業使用者、WCM作者、記者等）時，專業使用者的Adobe Experience Manager(AEM)Assets的強大使用者介面可提供太多資訊，而利益相關者則開始要求特定使用者介面或應用程式存取與他們相關的數位資產。
 
-這些以資產為中心的應用程式可以是內部網路中的簡單像片收藏館，員工可從貿易展覽造訪或公開網站的新聞中心上傳像片，例如Geometrixx提供的範例。 以資產為中心的應用程式也可以延伸至完整的解決方案，包括購物車、結帳和驗證程式。
+這些以資產為中心的應用程式可以是內部網路中的簡單像片收藏館，員工可從貿易展覽或公開網站的新聞中心上傳像片，例如隨附Geometrixx的範例。 以資產為中心的應用程式也可以延伸至完整的解決方案，包括購物車、結帳和驗證程式。
 
-建立以資產為中心的應用程式，在很大程度上會變成不需撰寫程式碼的設定程式，只需瞭解使用者群組及其需求，以及所使用中繼資料的知識即可。 以AEM Assets建立的資產導向應用程式可擴充：使用適中的編碼工作，可重複使用的元件來搜尋、檢視和修改資產。
+建立以資產為中心的應用程式，在很大程度上會變成不需撰寫程式碼的設定程式，只需瞭解使用者群組及其需求，以及所使用中繼資料的知識即可。 以AEM Assets公司建立的資產導向應用程式具有可擴充性：使用適中的編碼工作，可重複使用的元件來搜尋、檢視和修改資產。
 
-AEM中以資產為中心的應用程式包含資產編輯器頁面，可用來取得特定資產的詳細檢視。 資產編輯器頁面也允許編輯元資料，前提是訪問資產的用戶具有必要的權限。
+中以資產為中心的應AEM用程式包含「資產編輯器」頁面，可用來取得特定資產的詳細檢視。 資產編輯器頁面也允許編輯元資料，前提是訪問資產的用戶具有必要的權限。
 
 ## 建立並設定資產共用頁面{#creating-and-configuring-an-asset-share-page}
 
-您可自訂DAM Finder功能，並建立具有您所需所有功能的頁面，稱為「資產共用」頁面。 若要建立新的「資產共用」頁面，您可使用Geometrixx Asset Share範本新增頁面，然後自訂使用者可在該頁面上執行的動作、決定檢視者如何檢視資產，以及決定使用者如何建立查詢。
+您可自訂DAM Finder功能，並建立具有您所需所有功能的頁面，稱為「資產共用」頁面。 若要建立新的「資產共用」頁面，您可使用「資產共用」範本新增頁面，然後自訂使用者可在該頁面上執行的動作、決定檢視者如何檢視資產，並決定使用者如何建立查詢。
 
 以下是建立自訂「資產共用」頁面的一些使用案例：
 
@@ -60,11 +62,11 @@ AEM中以資產為中心的應用程式包含資產編輯器頁面，可用來�
 
 ![dam8](assets/dam8.png)
 
-使用Geometrixx DAM Asset Share範本建立的基本頁面外觀如下：
+使用「DAM資產共用」Geometrixx範本建立的基本頁面外觀如下：
 
 ![screen_shot_2012-04-18at115456am](assets/screen_shot_2012-04-18at115456am.png)
 
-若要自訂「資產共用」頁面，請使用sidekick中的元素，並編輯查詢產生器屬性。 頁面&#x200B;**[!UICONTROL Geometrixx Press Center]**&#x200B;是以此範本為基礎的自訂頁面版本：
+若要自訂「資產共用」頁面，請使用sidekick中的元素，並編輯查詢產生器屬性。 頁面&#x200B;**[!UICONTROL Geometrixx新聞中心]**&#x200B;是根據此範本自訂的頁面版本：
 
 ![screen_shot_2012-04-19at123048pm](assets/screen_shot_2012-04-19at123048pm.png)
 
@@ -160,7 +162,7 @@ AEM中以資產為中心的應用程式包含資產編輯器頁面，可用來�
 
 #### 添加謂語{#adding-predicates}
 
-AEM Assets包含許多可新增至「資產共用」頁面的謂詞。 這些功能可讓您的使用者進一步縮小搜尋範圍。 在某些情況下，它們可能會覆寫查詢產生器參數（例如，路徑參數）。
+AEM Assets包含許多可新增至「資產共用」頁面的謂語。 這些功能可讓您的使用者進一步縮小搜尋範圍。 在某些情況下，它們可能會覆寫查詢產生器參數（例如，路徑參數）。
 
 要添加謂語：
 
@@ -203,15 +205,15 @@ AEM Assets包含許多可新增至「資產共用」頁面的謂詞。 這些功
 
 1. 在&#x200B;**[!UICONTROL Websites]**&#x200B;標籤中，導覽至您要建立資產編輯器頁面的位置，然後按一下&#x200B;**[!UICONTROL New]**。
 
-1. 選擇&#x200B;**[!UICONTROL Geometrixx Asset Editor]**，然後按一下&#x200B;**[!UICONTROL Create]**。 會建立新頁面，並在&#x200B;**[!UICONTROL Websites]**&#x200B;標籤中列出該頁面。
+1. 選擇&#x200B;**[!UICONTROL Geometrixx資產編輯器]**&#x200B;並按一下&#x200B;**[!UICONTROL 建立]**。 會建立新頁面，並在&#x200B;**[!UICONTROL Websites]**&#x200B;標籤中列出該頁面。
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
-使用Geometrixx Asset Editor範本建立的基本頁面外觀如下：
+使用「Geometrixx資產編輯器」模板建立的基本頁如下所示：
 
 ![assetshare5](assets/assetshare5.bmp)
 
-若要自訂資產編輯器頁面，請使用sidekick中的元素。 從&#x200B;**[!UICONTROL Geometrixx Press Center]**&#x200B;存取的「資產編輯器」頁面是以此範本為基礎的頁面自訂版本：
+若要自訂資產編輯器頁面，請使用sidekick中的元素。 從&#x200B;**[!UICONTROL Geometrixx新聞中心]**&#x200B;存取的資產編輯器頁面是基於此模板的自定義頁面版本：
 
 ![assetshare6](assets/assetshare6.bmp)
 
@@ -237,7 +239,7 @@ AEM Assets包含許多可新增至「資產共用」頁面的謂詞。 這些功
 
 要添加資產編輯器元件：
 
-1. 在您要自訂的「資產編輯器」頁面中，在sidekick中選取&#x200B;**[!UICONTROL 資產編輯器]**。 將顯示所有可用的資產編輯器元件。
+1. 在您要自訂的「資產編輯器」頁面中，在sidekick中選取&#x200B;**[!UICONTROL Asset Editor]**。 將顯示所有可用的資產編輯器元件。
 
    >[!NOTE]
    >
@@ -278,7 +280,7 @@ AEM Assets包含許多可新增至「資產共用」頁面的謂詞。 這些功
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   如需修改中繼資料表單中可用名稱空間的詳細資訊，請參閱[自訂和擴充AEM資產](extending-assets.md)。
+   有關修改元資料表單中可用的名稱空間的資訊，請參見[自定義和擴展AEM Assets](extending-assets.md)。
 
 1. 按一下&#x200B;**[!UICONTROL Constraints]**&#x200B;頁籤。 您可以在此處選擇欄位是否為必需欄位，並根據需要添加任何約束。
 
@@ -391,14 +393,14 @@ Thumbnail元件是資產顯示所選縮圖的位置（對於許多格式，會�
 
 ## 使用「資產編輯器」頁面{#multi-editing-assets-with-the-asset-editor-page}編輯多個資產
 
-有了AEM Assets，您一次可以變更數個資產。 在擁有選取的資產後，您可以同時變更其：
+有了AEM Assets，您可以一次變更多個資產。 在擁有選取的資產後，您可以同時變更其：
 
 * 標記
 * 中繼資料
 
 若要使用「資產編輯器」頁面多重編輯資產：
 
-1. 開啟Geometrixx **[!UICONTROL 在`http://localhost:4502/content/geometrixx/en/company/press.html`按下中心]**&#x200B;頁面。
+1. 在`http://localhost:4502/content/geometrixx/en/company/press.html`開啟Geometrixx **[!UICONTROL 按中心]**&#x200B;頁。
 1. 選取資產：
 
    * 在Windows上：`Ctrl + click`每個資產。
@@ -408,7 +410,7 @@ Thumbnail元件是資產顯示所選縮圖的位置（對於許多格式，會�
 
 1. 在&#x200B;**動作**&#x200B;欄位（頁面左側）中按一下「編輯中繼資料&#x200B;]**」。**[!UICONTROL 
 
-1. 「Geometrixx **[!UICONTROL Press Center Asset Editor]**」（Geometrixx 按中心資產編輯器）頁面會在新標籤中開啟。 資產的中繼資料顯示如下：
+1. Geometrixx **[!UICONTROL 按中心資產編輯器]**&#x200B;頁面會在新標籤中開啟。 資產的中繼資料顯示如下：
 
    * 標籤（不適用於所有資產，但僅適用於少數資產）會以斜體顯示。
    * 套用至所有資產的標籤會以一般字型顯示。
