@@ -1,27 +1,29 @@
 ---
-title: AEM中資產的增強排序
-description: 瞭解AEM Assets如何部署伺服器端排序功能，以一次性排序資料夾資產或搜尋查詢，而不是在用戶端以批次排序。
+title: 增強資產排序功AEM能
+description: 瞭解AEM Assets如何部署伺服器端排序功能來一次排序資料夾資產或搜尋查詢，而不是在用戶端以批次排序。
 contentOwner: AG
+feature: 搜尋
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '444'
 ht-degree: 3%
 
 ---
 
 
-# AEM {#enhanced-sorting-of-assets-in-aem}中資產的增強排序
+# {#enhanced-sorting-of-assets-in-aem}中資產AEM的增強排序
 
-瞭解AEM Assets如何部署伺服器端排序功能，以一次性排序資料夾資產或搜尋查詢，而不是在用戶端以批次排序。
+瞭解AEM Assets如何部署伺服器端排序功能來一次排序資料夾資產或搜尋查詢，而不是在用戶端以批次排序。
 
-Adobe Experience Manager(AEM)Assets的搜尋功能已增強，可在資料夾清單檢視和搜尋結果頁面中有效率地排序大量資產。 您也可以排序時間軸項目。
+Adobe Experience Manager(AEM)資產的搜尋功能已增強，可在資料夾清單檢視和搜尋結果頁面中有效率地排序大量資產。 您也可以排序時間軸項目。
 
-AEM Assets會部署伺服器端排序，以一次性排序資料夾或搜尋查詢中的整組資產（無論大小），而不是在用戶端進行批次排序。 這樣，預取的結果可以快速顯示在使用者介面上，使排序操作更靈敏快速。
+AEM Assets部署伺服器端排序，一次對資料夾或搜索查詢中的整組資產（無論大小）進行排序，而不是在客戶端分批排序。 這樣，預取的結果可以快速顯示在使用者介面上，使排序操作更靈敏快速。
 
 ## 在清單檢視{#sorting-assets-in-list-view}中排序資產
 
-AEM Assets可讓您根據下列欄位來排序檔案夾資產：
+AEM Assets可讓您根據下列欄位來排序資料夾資產：
 
 * 地區設定
 * 狀態
@@ -87,5 +89,5 @@ AEM Assets可讓您按時間順序排序時間軸項目，例如註解、版本�
 
 1. 按一下／點選&#x200B;**[!UICONTROL 日期]**&#x200B;標籤旁的&#x200B;**[!UICONTROL 排序]**&#x200B;表徵圖。 根據您的選擇，註解會依時間順序／反向時間順序列出，並依此順序新增至資產。
 
-   ![chlimage_1-401](assets/chlimage_1-401.png)
+   ![chlimage_1-481](assets/chlimage_1-401.png)
 
