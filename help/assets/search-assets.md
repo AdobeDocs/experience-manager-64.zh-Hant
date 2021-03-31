@@ -1,19 +1,21 @@
 ---
-title: 在AEM中搜尋資產
-description: 瞭解如何使用「篩選」面板在AEM中尋找所需資產，以及如何使用顯示在搜尋中的資產。
+title: 搜尋資AEM產
+description: 瞭解如何使用「篩選」面板AEM在中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 contentOwner: AG
+feature: 搜尋，中繼資料
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 1%
+source-wordcount: '556'
+ht-degree: 2%
 
 ---
 
 
-# 在AEM {#search-assets-in-aem}中搜尋資產
+# 在&lt;a0/AEM>中搜尋資產{#search-assets-in-aem}
 
-瞭解如何使用「篩選」面板在AEM中尋找所需資產，以及如何使用顯示在搜尋中的資產。
+瞭解如何使用「篩選」面板AEM在中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 
 使用「篩選」面板來搜尋資產、資料夾、標籤和中繼資料。 您可以使用通配符星號搜索字串的部分。
 
