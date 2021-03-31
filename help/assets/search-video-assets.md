@@ -1,12 +1,14 @@
 ---
 title: 搜尋視訊資產
-description: 使用關鍵字、檔案屬性（例如Mime類型、大小或最近修改的時間戳記），在AEM Assets中快速找到您的檔案。
+description: 使用關鍵字、檔案屬性（例如Mime類型、大小或最近修改的時間戳記），在AEM Assets快速找到您的檔案。
 contentOwner: AG
+feature: 視訊，搜尋
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 2%
+source-wordcount: '582'
+ht-degree: 3%
 
 ---
 
@@ -36,7 +38,7 @@ ht-degree: 2%
 | 音訊轉碼器 | Libvorbis、Lame Mp3、AAC Encoding.Value僅儲存在視訊轉譯的中繼資料中。 |
 | 音訊位元速率 | 指定為最小值和最大值。值僅儲存在視頻轉譯的元資料中。 |
 
-1. 在&#x200B;**[!UICONTROL Experience Manager]**&#x200B;頁面的左側導軌中，點選&#x200B;**[!UICONTROL Assets]**。
+1. 在&#x200B;**[!UICONTROL Experience Manager]**&#x200B;頁面的左側導軌中，點選&#x200B;**[!UICONTROL 資產]**。
 
    如果左側邊欄不可見，請點選「切換邊欄」圖示（圖示中的線段會是深灰色或藍色）。
 
@@ -58,4 +60,4 @@ ht-degree: 2%
 
       輸入關鍵字，但不是按Enter，而是展開視訊或音訊屬性清單，然後設定您想要的值。
 
-1. （可選）在頁面底部附近，點選&#x200B;**[!UICONTROL 儲存智慧型系列]**，輸入搜尋名稱。 如果您希望將儲存的搜尋提供給Adobe Experience Manager帳戶的其他使用者，請勾選&#x200B;**[!UICONTROL Public]**。 如果您希望只有在您登入帳戶時，搜尋功能才可供使用，請取消勾選。 點選&#x200B;**[!UICONTROL Save]**。
+1. （可選）在頁面底部附近，點選&#x200B;**[!UICONTROL 儲存智慧型系列]**，輸入搜尋名稱。 如果希望將保存的搜索提供給Adobe Experience Manager帳戶的其他用戶，請選中&#x200B;**[!UICONTROL Public]**。 如果您希望只有在您登入帳戶時，搜尋功能才可供使用，請取消勾選。 點選&#x200B;**[!UICONTROL Save]**。
