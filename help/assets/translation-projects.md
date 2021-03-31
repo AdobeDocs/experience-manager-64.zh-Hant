@@ -1,11 +1,13 @@
 ---
 title: 建立翻譯項目
-description: 瞭解如何在AEM中建立翻譯專案。
+description: 瞭解如何在中建立翻譯項AEM目。
 contentOwner: AG
+feature: 轉換
+role: 架構師，管理員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1937'
 ht-degree: 22%
 
 ---
@@ -29,7 +31,7 @@ ht-degree: 22%
 
 >[!NOTE]
 >
->如果您針對複雜資產（例如PDF和InDesign檔案）啟動轉譯工作流程，則不會提交其子資產或轉譯（如果有）以進行轉譯。
+>如果您針對複雜資產(例如PDF和InDesign檔案)啟動翻譯工作流程，則不會提交其子資產或轉譯（如果有）以供翻譯。
 
 ## 建立並翻譯工作流{#create-and-translate-workflow}
 
@@ -281,7 +283,7 @@ ht-degree: 22%
 
 ## 建立臨時語言副本{#creating-temporary-language-copies}
 
-當您執行翻譯工作流程以更新具有原始資產編輯版本的語言副本時，會保留現有的語言副本，直到您核准翻譯的資產為止。 AEM Assets會將新翻譯的資產儲存在臨時位置，並在您明確核准資產後更新現有的語言副本。 如果您拒絕資產，語言副本將保持不變。
+當您執行翻譯工作流程以更新具有原始資產編輯版本的語言副本時，會保留現有的語言副本，直到您核准翻譯的資產為止。 AEM Assets將新翻譯的資產儲存在臨時位置，並在您明確核准資產後更新現有語言版本。 如果您拒絕資產，語言副本將保持不變。
 
 1. 按一下/點選「語言復本」下方的「來源根檔案夾」( **[!UICONTROL Language Copies]** )，然後按一下/點選「在資產中顯現 **** 」(Reveal in Assets)，以開啟「AEM Assets」(AEM Assets)中的檔案夾。
 
