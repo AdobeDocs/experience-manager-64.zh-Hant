@@ -1,11 +1,13 @@
 ---
-title: 將資產大量移轉至Adobe Experience Manager Assets
-description: 如何將資產匯入AEM、套用中繼資料、產生轉譯，以及啟用資產以發佈例項。
+title: 大量將資產移轉至Adobe Experience Manager資產
+description: 如何將資產匯入、AEM套用中繼資料、產生轉譯，以及啟用資產以發佈例項。
 contentOwner: AG
+feature: 移轉，轉譯，資產管理
+role: 架構師，管理員
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1791'
+source-wordcount: '1797'
 ht-degree: 11%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 11%
 
 # 資產遷移指南{#assets-migration-guide}
 
-將資產移轉至AEM時，需考慮數個步驟。 從目前的首頁擷取資產和中繼資料，不受本檔案的限制，因為不同實作之間的差異很大。 本檔案會說明如何將這些資產匯入AEM、套用其中繼資料、產生轉譯，以及啟用或發佈資產。
+將資產移轉AEM至時，需考慮數個步驟。 從目前的首頁擷取資產和中繼資料，不受本檔案的限制，因為不同實作之間的差異很大。 本檔案會說明如何將這些資產帶入、套AEM用其中繼資料、產生轉譯，以及啟用或發佈資產。
 
 ## 必備條件 {#prerequisites}
 
@@ -21,10 +23,10 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->以下資產移轉工具不屬於Adobe Experience Manager的一部分。 Adobe客戶服務不支援這些工具。
+>下列資產移轉工具不屬於Adobe Experience Manager。 Adobe客戶服務不支援這些工具。
 >
 >* ACS AEM Tools Tag Maker
->* ACS AEM工具CSV資產匯入工具
+>* ACS工AEM具CSV資產匯入工具
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Fast Action Manager
 >* 合成工作流程
@@ -33,9 +35,9 @@ ht-degree: 11%
 >
 本軟體為開放原始碼， [Apache v2授權涵蓋此軟體](https://adobe-consulting-services.github.io/pages/license.html)。若要提出問題或報告問題，請造訪ACS AEM工具和 [ACS AEM公域的GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues)[問題](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues)。
 
-## 移轉至AEM {#migrate-to-aem}
+## 移轉至AEM{#migrate-to-aem}
 
-將資產移轉至AEM需要幾個步驟，且應視為分階段程式。 遷移的階段如下：
+將資產移AEM轉至需要幾個步驟，且應視為分階段程式。 遷移的階段如下：
 
 1. 停用工作流程。
 1. 載入標籤。
@@ -56,13 +58,13 @@ ht-degree: 11%
 
 ### 收錄資產{#ingest-assets}
 
-在將資產放入系統時，效能與穩定性是重要的考量。 在Experience Manager中載入大量資料時，請確保系統運作良好。 這樣可以最大限度地減少添加資料所需的時間，並有助於避免系統過載。 這有助於防止系統崩潰，特別是在已在生產的系統中。
+在將資產放入系統時，效能與穩定性是重要的考量。 在Experience Manager中載入大量資料時，確保系統運行良好。 這樣可以最大限度地減少添加資料所需的時間，並有助於避免系統過載。 這有助於防止系統崩潰，特別是在已在生產的系統中。
 
 將資產載入系統有兩種方法：使用HTTP的推播方式或使用JCR API的推播方式。
 
 #### 推送HTTP {#push-through-http}
 
-Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載入客戶環境。 Glutton是小型Java應用程式，可從一個目錄將所有資產載入AEM例項上的另一個目錄。 您也可以使用諸如Perl指令碼之類的工具將資產發佈到儲存庫中，而不是Glutton。
+Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客戶環境。 Glutton是一個小型Java應用程式，可從一個目錄將所有資產載入例項上的另一AEM個目錄。 您也可以使用諸如Perl指令碼之類的工具將資產發佈到儲存庫中，而不是Glutton。
 
 使用推送https的方法有兩個主要的缺點：
 
@@ -73,13 +75,13 @@ Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載�
 
 #### 從本地檔案系統{#pull-from-the-local-file-system}中提取
 
-[ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)會從CSV檔案中提取資產，以匯入資產。 AEM Asset Manager API可用來將資產匯入系統並套用已設定的中繼資料屬性。 理想情況下，資產會透過網路檔案載入或透過外部磁碟機載入伺服器。
+[ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)會從CSV檔案中提取資產，以匯入資產。 Asset AEM Manager API可用來將資產匯入系統並套用已設定的中繼資料屬性。 理想情況下，資產會透過網路檔案載入或透過外部磁碟機載入伺服器。
 
 當資產未透過網路傳輸時，整體效能會大幅提升。 此方法通常是將資產載入儲存庫的最有效方法。 此外，您可以在單一步驟中匯入所有資產和中繼資料，因為此工具支援中繼資料擷取。 套用中繼資料不需要其他步驟，例如使用個別工具。
 
 ### 處理轉譯{#process-renditions}
 
-將資產載入系統後，您需要透過DAM更新資產工作流程來處理這些資產，以擷取中繼資料並產生轉譯。 在執行此步驟之前，您需要複製並修改DAM更新資產工作流程，以符合您的需求。 您可能不需要在預設工作流程中執行某些步驟，例如產生Dynamic Media Classic PTIFF或整合InDesign伺服器。
+將資產載入系統後，您需要透過DAM更新資產工作流程來處理這些資產，以擷取中繼資料並產生轉譯。 在執行此步驟之前，您需要複製並修改DAM更新資產工作流程，以符合您的需求。 您可能不需要在預設工作流程中執行某些步驟，例如產生Dynamic Media經典PTIFF或InDesign伺服器整合。
 
 根據您的需求設定工作流程後，您有兩個選項可加以執行：
 
@@ -88,7 +90,7 @@ Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載�
 
 ### 啟動資產{#activate-assets}
 
-對於具有發佈層的部署，您需要將資產啟動至發佈群。 雖然Adobe建議執行多個單一發佈例項，但將所有資產複製至單一發佈例項，然後複製該例項最有效率。 在啟動大量資產時，在觸發樹狀結構啟動後，您可能需要進行干預。 原因如下：當觸發啟動時，項目會新增至Sling工作／事件佇列。 當此佇列的大小開始超過約40,000個項目後，處理速度大幅降低。 當此隊列的大小超過100,000個項目後，系統穩定性就會開始受到影響。
+對於具有發佈層的部署，您需要將資產啟動至發佈群。 雖然Adobe建議執行多個單一發佈例項，但將所有資產複製至單一發佈例項，然後複製該例項最有效。 在啟動大量資產時，在觸發樹狀結構啟動後，您可能需要進行干預。 原因如下：當觸發啟動時，項目會新增至Sling工作／事件佇列。 當此佇列的大小開始超過約40,000個項目後，處理速度大幅降低。 當此隊列的大小超過100,000個項目後，系統穩定性就會開始受到影響。
 
 要解決此問題，可以使用[Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)管理資產複製。 這樣不需使用Sling佇列，降低開銷，同時可調節工作負載，以防止伺服器過載。 使用FAM管理複製的範例顯示在功能的檔案頁面上。
 
@@ -116,22 +118,22 @@ Adobe的「受管理服務」團隊使用名為Glutton的工具，將資料載�
 
 完成移轉後，應重新啟用DAM更新資產工作流程的啟動器，以支援轉譯產生和中繼資料擷取，以持續使用日常系統。
 
-## 跨AEM部署移轉資產{#migrate-between-aem-instances}
+## 跨部署移AEM轉資產{#migrate-between-aem-instances}
 
-雖然不是這麼常見，但有時您需要將大量資料從一個AEM例項移轉至另一個例項；例如，當您執行AEM升級、升級硬體或移轉至新的資料中心時，例如AMS移轉。
+雖然不是這麼常見，但有時您需要將大量資料從一個實例遷移AEM到另一個實例；例如，執行升級、AEM升級硬體或遷移到新資料中心（如AMS遷移）時。
 
-在這種情況下，您的資產已填入中繼資料，且已產生轉譯。 您只需專注於將資產從一個實例移至另一個實例。 在AEM例項之間移轉時，請執行下列步驟：
+在這種情況下，您的資產已填入中繼資料，且已產生轉譯。 您只需專注於將資產從一個實例移至另一個實例。 在實例之AEM間遷移時，請執行以下步驟：
 
 1. 停用工作流程：由於您要移轉轉譯以及我們的資產，所以您想要停用DAM更新資產的工作流程啟動器。
 
-1. 移轉標籤：由於您已在來源AEM例項中載入標籤，因此您可以在內容套件中建立標籤，並在目標例項上安裝套件。
+1. 移轉標籤：由於您已在來源例項中載入標籤AEM，因此您可以在內容套件中建立標籤，並將該標籤安裝在目標例項上。
 
-1. 移轉資產：建議使用兩種工具，將資產從一個AEM例項移至另一個：
+1. 移轉資產：建議使用兩種工具將資產從一個例項移AEM動至另一個例項：
 
    * **Vault Remote Copy**，或 `vlt rcp`，允許您跨網路使用vlt。您可以指定源目錄和目標目錄，並從一個實例下載所有儲存庫資料並將其載入到另一個實例。 Vlt rcp記載於[https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbitis是** Time Warner Cable為其AEM實作而開發的開放原始碼內容同步工具。由於它使用連續的資料流，與vlt rcp相比，它的延遲更低，並聲稱速度比vlt rcp快2到10倍。 Grabbit也僅支援Delta內容的同步，這可讓Grabbit在初始移轉通過完成後同步變更。
+   * **Grabbitis是** Time Warner Cable為實施而開發的開放原始碼內容同步AEM工具。由於它使用連續的資料流，與vlt rcp相比，它的延遲更低，並聲稱速度比vlt rcp快2到10倍。 Grabbit也僅支援Delta內容的同步，這可讓Grabbit在初始移轉通過完成後同步變更。
 
-1. 啟動資產：請依照針對初次移轉至AEM所記錄之[啟動資產](#activate-assets)的指示進行。
+1. 啟動資產：請依照為初始遷移而記錄的[啟動資產](#activate-assets)的指示AEM。
 
 1. 仿製發佈：和新移轉一樣，載入單一發佈執行個體並進行仿製比在兩個節點上啟動內容更有效率。 請參閱[克隆發佈。](#clone-publish)
 
