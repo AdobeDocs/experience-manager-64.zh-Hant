@@ -2,18 +2,20 @@
 title: 時間軸中的活動串流
 description: '本文說明如何在時間軸上顯示資產的活動記錄檔。 '
 contentOwner: AG
+feature: 資產管理
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 34%
+source-wordcount: '221'
+ht-degree: 33%
 
 ---
 
 
 # 時間軸中的活動串流{#activity-stream-in-timeline}
 
-此功能會在時間軸上顯示資產的活動記錄。 如果您在Adobe Experience Manager(AEM)Assets中執行下列任何資產相關作業，「活動串流」功能會更新時間軸以反映活動。
+此功能會在時間軸上顯示資產的活動記錄。 如果您在Adobe Experience Manager(AEM)資產中執行下列任一資產相關作業，「活動串流」功能會更新時間軸以反映活動。
 
 活動流中記錄了以下操作：
 
