@@ -2,10 +2,12 @@
 title: 處理資產以完成業務流程、進行審核、實現法規遵從性並保持基本的健全性
 description: 資產處理，以轉換格式、建立轉譯、管理資產、驗證資產，以及執行工作流程。
 contentOwner: AG
+feature: 工作流程，轉譯
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 73d440198028bfa6b47e9fde13f3a354a1b8445f
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1052'
 ht-degree: 2%
 
 ---
@@ -19,7 +21,7 @@ ht-degree: 2%
 
 對於資產處理，[!DNL Experience Manager]使用工作流程。 工作流程可協助自動化商業邏輯或活動。 預設會提供完成特定工作的詳細步驟，而開發人員可建立其自訂步驟。 這些步驟可依邏輯順序組合，以建立工作流程。 例如，工作流程可根據特定條件（例如內嵌在影像中的中繼資料、上傳到的資料夾、影像解析度等），自動在上傳的影像上套用浮水印。 另一個例子是工作流程，其設定為以這樣的方式浮水印影像，並同時處理多種資產管理需求，例如新增中繼資料、建立轉譯、新增智慧型標籤以進行資產搜尋、發佈至資料儲存區、設定使用者存取權限等。
 
-## Experience Manager {#default-workflows}中提供的預設工作流程
+## {#default-workflows}Experience Manager中提供的預設工作流
 
 依預設，所有上傳的資產都會使用[!UICONTROL DAM更新資產]工作流程來處理。 工作流程會針對每個上傳的資產執行，並完成基本的資產管理工作，例如轉譯產生、中繼資料回寫、頁面擷取、媒體擷取和轉碼。
 
@@ -39,7 +41,7 @@ ht-degree: 2%
 >
 >如果Classic UI中的工作流程在啟用觸控的UI中不可用，例如[!UICONTROL 請求啟用]和[!UICONTROL 請求停用]，請參閱[make workflow models](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui)。
 
-## 將工作流程套用至AEM資產{#apply-a-workflow-to-an-aem-asset}
+## 將工作流程套AEM用至資產{#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -104,7 +106,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 
 ## 最佳做法和限制{#best-practices-limitations-tips}
 
-* 設計工作流程時，請考慮您對所有類型轉譯的需求。 如果您未預見未來需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長期使用[!DNL Experience Manager]後，不需要的轉譯可能佔用大量儲存空間。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂[!DNL Experience Manager]以刪除特定轉譯，或刪除資產並再次上傳這些資產。
+* 在設計工作流程時，請考慮您對所有類型轉譯的需求。 如果您未預見未來需要轉譯，請從工作流程中移除其建立步驟。 之後無法大量刪除轉譯。 長期使用[!DNL Experience Manager]後，不需要的轉譯可能佔用大量儲存空間。 對於個別資產，您可以從使用者介面手動移除轉譯。 對於多個資產，您可以自訂[!DNL Experience Manager]以刪除特定轉譯，或刪除資產並再次上傳這些資產。
 * 依預設，[!UICONTROL DAM更新資產]工作流程包含一些建立縮圖和網頁轉譯的步驟。 如果從工作流中刪除了任何預設轉譯，則[!DNL Assets]的用戶介面無法正確顯示。
 
 >[!MORELIKETHIS]
