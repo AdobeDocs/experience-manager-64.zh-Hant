@@ -1,11 +1,13 @@
 ---
 title: 私人資料夾共用
-description: 瞭解如何在Adobe Experience Manager(AEM)Assets中建立私人資料夾，並與其他使用者共用資料夾，以及為他們指派各種權限。
+description: 瞭解如何在Adobe Experience Manager(AEM)資產中建立私人資料夾，並與其他使用者共用資料夾，以及為他們指派各種權限。
 contentOwner: AG
+feature: 協作
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '452'
 ht-degree: 6%
 
 ---
@@ -43,7 +45,7 @@ ht-degree: 6%
    >
    >您可以將各種角色（例如編輯者、擁有者或檢視器）指派給您共用資料夾的使用者。 如果您為用戶分配了「所有者」角色，則用戶對資料夾具有編輯者權限。 此外，使用者也可以與其他人共用資料夾。 如果您指派了編輯者角色，使用者可以編輯私人資料夾中的資產。 如果您指派檢視器角色，使用者只能檢視您私人資料夾中的資產。
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。根據您指派的角色，當使用者登入AEM Assets時，會為使用者指派一組權限給您的私人資料夾。
+1. 按一下「**[!UICONTROL 儲存]**」。根據您指派的角色，當使用者登入AEM Assets時，會為使用者指派一組權限給您的私人資料夾。
 1. 按一下&#x200B;**[!UICONTROL 確定]**&#x200B;以關閉確認消息。
 1. 與您共用資料夾的使用者會收到共用通知。 使用使用者的認證登入AEM Assets以檢視通知。
 
