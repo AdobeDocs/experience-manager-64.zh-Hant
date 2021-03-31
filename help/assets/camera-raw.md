@@ -1,27 +1,29 @@
 ---
 title: Camera Raw支援
-description: 瞭解如何在Adobe Experience Manager Assets中啟用Camera Raw支援。
+description: 瞭解如何在Adobe Experience Manager資產中啟用Camera Raw支援。
 contentOwner: AG
+feature: 開發人員工具
+role: 管理員
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '404'
-ht-degree: 1%
+source-wordcount: '407'
+ht-degree: 2%
 
 ---
 
 
 # 使用Camera Raw處理影像{#camera-raw-support}
 
-您可以啟用Camera Raw支援來處理原始檔案格式，例如CR2、NEF和RAF，並以JPEG格式呈現影像。 Adobe Experience Manager Assets使用「軟體散發」提供的[Camera Raw套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)支援此功能。
+您可以啟用Camera Raw支援來處理原始檔案格式，例如CR2、NEF和RAF，並以JPEG格式呈現影像。 使用「軟體散發」提供的[Camera Raw套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)，在Adobe Experience Manager資產中支援此功能。
 
 >[!NOTE]
 >
 >此功能僅支援JPEG轉譯。 它在Windows 64位元、Mac OS和RHEL 7.x上都受支援。
 
-若要在Adobe Experience Manager Assets中啟用Camera Raw支援，請依照下列步驟進行：
+若要啟用Adobe Experience Manager資產的Camera Raw支援，請遵循下列步驟：
 
-1. 從「軟體散發」下載[Camera Raw套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
+1. 從軟體分發下載[Camera Raw軟體包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)。
 
 1. 存取 `https://[aem_server]:[port]/workflow`. 開啟&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程。
 
@@ -38,9 +40,9 @@ ht-degree: 1%
 
    ![石竹](assets/chlimage_1-335.png)
 
-1. 從側面板，在「縮圖建立」步驟&#x200B;**[!UICONTROL 下方新增**[!UICONTROL  Camera Raw/DNG Handler ]**步驟。]**
+1. 從側面板，在「縮圖建立」步驟&#x200B;**[!UICONTROL 下方新增**[!UICONTROL  Camera Raw/DNG處理常式&#x200B;]**步驟。]**
 
-1. 在&#x200B;**[!UICONTROL Camera Raw/DNG Handler]**&#x200B;步驟中，在&#x200B;**[!UICONTROL Arguments]**&#x200B;標籤中新增下列設定：
+1. 在&#x200B;**[!UICONTROL Camera Raw/DNG處理常式]**&#x200B;步驟中，在&#x200B;**[!UICONTROL 參數]**&#x200B;標籤中新增下列設定：
 
    * **[!UICONTROL Mime類型]**: `image/dng` 和  `image/x-raw-(.*)`
    * **[!UICONTROL 命令]**:
@@ -52,13 +54,13 @@ ht-degree: 1%
 
    ![chlimage_1-336](assets/chlimage_1-336.png)
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
 >[!NOTE]
 >
->請確定上述組態與&#x200B;**[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]**&#x200B;組態相同。
+>請確定上述組態與「Camera Raw和DNG處理步驟&#x200B;]**組態的範例DAM更新資產」相同。**[!UICONTROL 
 
-您現在可以將Camera Raw檔案匯入AEM Assets。 安裝Camera RAW套件並設定所需的工作流程後，側窗格清單中會顯示「影像調整」選項。****
+您現在可以將相機原始檔案匯入AEM Assets。 安裝Camera Raw軟體包並配置所需的工作流後，側窗格清單中將顯示&#x200B;**[!UICONTROL Image Adjust]**&#x200B;選項。
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -68,7 +70,7 @@ ht-degree: 1%
 
 *圖：使用選項對影像進行輕量型編輯*
 
-將編輯內容儲存至Camera Raw影像後，就會產生影像的新轉譯`AdjustedPreview.jpg`。 對於「Camera Raw」以外的其他影像類型，變更會反映在所有轉譯中。
+將編輯保存到Camera Raw影像後，將為影像生成新的格式副本`AdjustedPreview.jpg`。 對於Camera Raw以外的其他影像類型，所有轉譯都會反映變更。
 
 ## 最佳做法、已知問題和限制{#best-practices}
 
