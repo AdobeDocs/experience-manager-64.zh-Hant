@@ -2,20 +2,22 @@
 title: 自訂和擴充資產
 description: 瞭解如何自訂和擴充資產共用與資產編輯器，為使用者提供特別自訂的介面和功能集。
 contentOwner: AG
+feature: 開發人員工具
+role: 開發人員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 0%
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
 
 # 自訂和擴充資產{#customizing-and-extending-assets}
 
-資產編輯器是Adobe Enterprise Manager(AEM)網站的使用者用來尋找、檢視和控制儲存庫中數位資產的主要存取點。
+資產編輯器是AdobeEnterprise Manager(AEM)網站的用戶在您的儲存庫中查找、查看和控制數字資產時的主要訪問點。
 
-身為AEM開發人員，您可以透過多種方式自訂和擴充資產編輯器，為使用者提供特別自訂的介面和功能集。
+身為開AEM發人員，您可以透過多種方式自訂和擴充資產編輯器，為使用者提供特別自訂的介面和功能集。
 
 可自訂或增強功能的下列方面：
 
@@ -36,6 +38,6 @@ ht-degree: 0%
 
 ## 自訂轉譯{#customizing-renditions}
 
-在AEM Assets術語中，轉譯是資產呈現的表單。 一般而言，特定資產可能具有多個轉譯。 例如，全彩影像可能有一個格式副本的原始大小，另一個格式副本的縮放大小，另一個格式副本的縮放大小和灰階轉換大小。
+在AEM Assets語系中，轉譯是資產呈現的形式。 一般而言，特定資產可能具有多個轉譯。 例如，全彩影像可能有一個格式副本的原始大小，另一個格式副本的縮放大小，另一個格式副本的縮放大小和灰階轉換大小。
 
 特定資產可用的轉譯可以自訂，並建立新的轉譯。
