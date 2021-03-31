@@ -2,10 +2,12 @@
 title: 從 [!DNL Adobe Experience Manager]下載數位資產。
 description: 瞭解如何從 [!DNL Adobe Experience Manager] 下載資產並啟用或停用下載功能。
 contentOwner: AG
+feature: 資產管理，資產分配
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '815'
 ht-degree: 3%
 
 ---
@@ -23,13 +25,13 @@ ht-degree: 3%
 
 若要下載資產，請依照下列步驟進行：
 
-1. 在AEM的左上角，點選AEM標誌，然後在左側導軌中點選「**[!UICONTROL Navigation]**」。
+1. 在的左上角，點AEM選標AEM志，然後在左側導軌中點選「**[!UICONTROL Navigation]**」。
 1. 在「導覽」頁面上，點選「**[!UICONTROL 資產]** > **[!UICONTROL 檔案」。]**
 1. 導覽至包含您要下載之資產的檔案夾。
 1. 選取資料夾或選取資料夾內的一或多個資產。
 1. 在工具列上，點選「**[!UICONTROL 下載」。]**
 
-   ![從Experience Manager Assets下載資產時的可用選項](/help/assets/assets/asset_download_dialog.png)
+   ![從Experience Manager資產下載資產時的可用選項](/help/assets/assets/asset_download_dialog.png)
 
    *圖：下載對話框選項。*
 
@@ -51,7 +53,7 @@ ht-degree: 3%
 
 [!DNL Experience Manager]中的預設servlet允許通過身份驗證的用戶發出任意大的併發下載請求，以建立對他們可見的資產的ZIP檔案，這些資產可能會使伺服器和網路過載。 為了降低此功能造成的潛在DoS風險，`AssetDownloadServlet` OSGi元件預設會停用於發佈例項。
 
-若要允許從DAM下載資產，例如，當使用資產共用共用共用或其他類似入口網站的實施時，請透過OSGi組態手動啟用servlet。 Adobe建議盡可能將允許的下載大小設定得盡可能低，而不會影響日常下載需求。 高價值可能會影響效能。
+若要允許從DAM下載資產，例如，當使用資產共用共用共用或其他類似入口網站的實施時，請透過OSGi組態手動啟用servlet。 Adobe建議盡可能低地設定允許的下載大小，而不會影響日常下載需求。 高價值可能會影響效能。
 
 1. 建立具有命名慣例的檔案夾，以發佈執行模式(`config.publish`)為目標：`/apps/<your-app-name>/config.publish`。 要定義運行模式的配置屬性，請參閱[運行模式](/help/sites-deploying/configure-runmodes.md#defining-configuration-properties-for-a-run-mode)。
 1. 在配置資料夾中，建立名為`com.day.cq.dam.core.impl.servlet.AssetDownloadServlet.config`的類型`nt:file`的檔案。
@@ -74,5 +76,5 @@ ht-degree: 3%
 >
 >* [下載受DRM保護的資產](drm.md)。
 >* [在Win或Mac案頭上使用Experience Manager案頭應用程式下載資產](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)。
->* [從支援的Adobe Creative Cloud應用程式中，使用Adobe Assets Link下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)。
+>* [從支援的Adobe Creative Cloud應用程式內使用Adobe資產連結下載資產](https://helpx.adobe.com/tw/enterprise/using/manage-assets-using-adobe-asset-link.html)。
 
