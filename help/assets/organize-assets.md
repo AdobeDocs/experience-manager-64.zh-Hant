@@ -2,10 +2,12 @@
 title: 組織您的數位資產
 description: 使用Experience Manager組織您的數位資產、影像、檔案、檔案夾等。
 contentOwner: AG
+feature: 資產管理，搜尋
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '811'
 ht-degree: 1%
 
 ---
@@ -35,13 +37,13 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
    * **日期型資料夾** -包含以建立日期或上次修改日期為基礎的數位資產。
 
 * 建立不可能變更的資料夾目錄，讓任何自訂或自動功能都能繼續運作。 例如，指派的處理設定檔仍可繼續運作。
-* 如果資產已發佈，則您會使用AEM將資產移至另一個檔案夾，並從其新位置重新發佈，則原始發佈的資產位置仍可使用，以及新重新發佈的資產。 但是，原始發佈的資產是&#x200B;*lost*&#x200B;至AEM，無法解除發佈。 因此，最佳實務是，先解除發佈資產，然後將其移至其他資料夾。
+* 如果資產已發佈，則您會使用AEM將資產移至另一個檔案夾，並從其新位置重新發佈，則原始已發佈的資產位置以及新重新發佈的資產仍然可用。 但是，原始發佈的資產&#x200B;*lost*&#x200B;為，且無AEM法取消發佈。 因此，最佳實務是，先解除發佈資產，然後將其移至其他資料夾。
 
 ## 使用標籤{#use-tags-to-organize-assets}組織資產
 
-使用標籤作為中繼資料，您可以輕鬆搜尋資產、使用搜尋結果建立系列、大幅提升某些資產的搜尋排名，並運用Adobe Sensei的人工智慧演算法進行資產探索。
+使用標籤作為中繼資料，您可以輕鬆搜尋資產、使用搜尋結果建立系列、大幅提升某些資產的搜尋排名，並運用Adobe Sensei的人工智慧演算法來搜尋資產。
 
-Adobe Experience Manager Assets使用自學演算法建立高度描述性的標籤，讓您只需按幾下滑鼠，就能找到合適的資產。 智慧型標籤使用Adobe Sensei，這是我們的人工智慧和機器學習架構，可接受訓練以辨識標準和特定商業標籤並套用至影像。 智慧型標籤也可識別內容、個別字詞或片語，並自動將描述性標籤套用至資產
+Adobe Experience Manager資產使用自學算法建立高描述性的標籤，只要按幾下滑鼠，就能找到正確的資產。 智慧標籤使用Adobe Sensei，這是我們的人工智慧和機器學習框架，可經過訓練，以識別並套用標準和業務特定標籤至影像。 智慧型標籤也可識別內容、個別字詞或片語，並自動將描述性標籤套用至資產
 
 如需詳細資訊，請參閱下列文章：
 
@@ -51,7 +53,7 @@ Adobe Experience Manager Assets使用自學演算法建立高度描述性的標�
 
 ## 組織為系列{#organize-as-collections}
 
-透過Experience Manager Assets中的資產收集，您可以簡化在使用者之間建立、編輯和共用資產的功能。 根據您的使用方式建立數種系列，包括包含資產、檔案夾和系列之靜態參考清單的系列，以及根據搜尋准則提取資產的系列。  您也可以使用不同位置的資產建立系列，並與具有不同存取、檢視和編輯權限等級的多名使用者共用。
+透過「Experience Manager資產」中的資產收集，您可以簡化在使用者之間建立、編輯和共用資產的功能。 根據您的使用方式建立數種系列，包括包含資產、檔案夾和系列之靜態參考清單的系列，以及根據搜尋准則提取資產的系列。  您也可以使用不同位置的資產建立系列，並與具有不同存取、檢視和編輯權限等級的多名使用者共用。
 
 如需詳細資訊，請參閱[管理系列](managing-collections-touch-ui.md)
 
@@ -71,4 +73,4 @@ Add back links to blog posts by marketing?
 * [處理中繼資料、影像和視訊的設定檔](processing-profiles.md)
 * [中繼資料設定檔](metadata-profiles.md)
 * [視訊設定檔](video-profiles.md)
-* [動態媒體影像設定檔](image-profiles.md)
+* [Dynamic Media影像描述檔](image-profiles.md)
