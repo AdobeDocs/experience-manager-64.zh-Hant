@@ -2,10 +2,12 @@
 title: 使用連結分享資產
 description: 將資產、檔案夾和系列共用為URL。
 contentOwner: AG
+feature: 連結共用，資產管理
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: f17d54315516fcf9d24c720f097db9de73517f21
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1063'
 ht-degree: 5%
 
 ---
@@ -70,9 +72,9 @@ ht-degree: 5%
 
 1. 若要檢視共用資產，請按一下傳送給使用者之電子郵件中的連結。 共用資產會顯示在[!UICONTROL Adobe Marketing Cloud]頁面中。
 
-   ![共用資產可在Adobe Marketing Cloud中使用](assets/chlimage_1-545.png)
+   ![共用資產可在Adobe Marketing Cloud使用](assets/chlimage_1-545.png)
 
-1. 若要產生資產的預覽，請按一下共用資產。 若要關閉預覽並返回至&#x200B;**[!UICONTROL Marketing Cloud]**&#x200B;頁面，請按一下工具列上的&#x200B;**[!UICONTROL Back]**。 如果您已共用資料夾，請按一下「父資料夾&#x200B;****」以返回父資料夾。
+1. 若要產生資產的預覽，請按一下共用資產。 要關閉預覽並返回至&#x200B;**[!UICONTROL Marketing Cloud]**&#x200B;頁，請按一下工具欄上的&#x200B;**[!UICONTROL 後退]**。 如果您已共用資料夾，請按一下「父資料夾&#x200B;****」以返回父資料夾。
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
