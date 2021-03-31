@@ -1,11 +1,13 @@
 ---
 title: 資產代理開發
-description: 'Proxy是使用Proxy工作者來處理工作的AEM例項。 瞭解如何設定AEM Proxy、支援的作業、Proxy元件，以及如何開發自訂Proxy工作器。 '
+description: 'Proxy是使用Proxy工AEM作者來處理工作的例項。 瞭解如何設定AEMProxy、支援的作業、Proxy元件，以及如何開發自訂Proxy工作器。 '
 contentOwner: AG
+feature: 資產處理
+role: 管理員、架構師
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -13,11 +15,11 @@ ht-degree: 0%
 
 # 資產代理開發{#assets-proxy-development}
 
-Adobe Experience Manager(AEM)Assets會使用代理來分發特定工作的處理。
+Adobe Experience Manager(AEM)資產使用代理來分發特定任務的處理。
 
-Proxy是特定（有時也是個別的）AEM例項，使用proxy工作者做為處理工作和建立結果的處理者。 代理工作器可用於各種任務。 如果是AEM Assets Proxy，則可用來載入資產，以便在AEM Assets中轉譯。 例如，[IDS代理工作者](indesign.md)使用InDesign Server來處理檔案，以便用於AEM Assets。
+Proxy是特定（有時也是個別）的例項，AEM使用Proxy工作者做為處理工作和建立結果的處理者。 代理工作器可用於各種任務。 如果是AEM Assets代理，則可用來載入資產以在AEM Assets內轉譯。 例如，[IDS代理工作者](indesign.md)使用InDesign Server來處理要在AEM Assets使用的檔案。
 
-當proxy是個別的AEM例項時，這有助於降低AEM製作例項的負載。 依預設，AEM Assets會在相同JVM（透過Proxy外部化）中執行資產處理工作，以減少AEM製作例項的負載。
+當proxy為個別的AEM例項時，這有助於減AEM少編寫例項的負載。 依預設，AEM Assets會在相同JVM（透過Proxy外部化）中執行資產處理工作，以減少製作例項AEM的負載。
 
 ## 代理（HTTP訪問）{#proxy-http-access}
 
@@ -109,11 +111,11 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >
 >[`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html)下方提供代理API的參考檔案。
 
-Proxy和Proxy工作器組態都可透過雲端服務組態取得，您可從AEM Assets **Tools**&#x200B;主控台或`/etc/cloudservices/proxy`下存取。 每個代理工作器都需要在`/etc/cloudservices/proxy`下添加一個節點，以瞭解特定於工作器的配置詳細資訊（例如`/etc/cloudservices/proxy/workername`）。
+代理和代理工作器配置都可通過雲服務配置獲得，可從AEM Assets **工具**&#x200B;控制台或`/etc/cloudservices/proxy`下訪問。 每個代理工作器都需要在`/etc/cloudservices/proxy`下添加一個節點，以瞭解特定於工作器的配置詳細資訊（例如`/etc/cloudservices/proxy/workername`）。
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[Indesign Server Proxy Worker設定](indesign.md#configuring-the-proxy-worker-for-indesign-server)和[雲端服務設定](../sites-developing/extending-cloud-config.md)。
+>如需詳細資訊，請參閱[Indesign Server Proxy Worker組態](indesign.md#configuring-the-proxy-worker-for-indesign-server)和[Cloud Services組態](../sites-developing/extending-cloud-config.md)。
 
 以下是API使用的範例：
 
@@ -132,9 +134,9 @@ Proxy和Proxy工作器組態都可透過雲端服務組態取得，您可從AEM 
 
 ### 開發自定義的代理工作器{#developing-a-customized-proxy-worker}
 
-[IDS代理工作者](indesign.md)是AEM Assets代理工作者的範例，此代理工作者已提供現成可用的功能，以外包Indesign資產的處理。
+[IDS代理工作者](indesign.md)是AEM Assets代理工作者的一個示例，該代理工作者已經提供現成可用的設備，以外包Indesign資產的處理。
 
-您也可以開發和設定您自己的AEM Assets代理工作者，以建立專業工作者，以派送和外包您的AEM Assets處理工作。
+您也可以開發和配置自己的AEM Assets代理員工，以建立專門的員工來派遣和外包您的AEM Assets處理任務。
 
 要設定您自己的自定義代理工作器，您必須：
 
@@ -176,9 +178,9 @@ Proxy和Proxy工作器組態都可透過雲端服務組態取得，您可從AEM 
 
 >[!NOTE]
 >
->AEM Assets proxy架構不提供現成可用的池機制。
+>AEM Assets代理框架不提供現成可用的池機制。
 >
->InDesign整合可讓您存取InDesign Servers(IDSPool)池。 此集區是Indesign整合專用的，不屬於AEM Assets代理架構的一部分。
+>InDesign整合可讓您存取Indesign Servers(IDSPool)池。 此集區是Indesign整合專用的，而非AEM Assets代理架構的一部份。
 
 >[!NOTE]
 >
