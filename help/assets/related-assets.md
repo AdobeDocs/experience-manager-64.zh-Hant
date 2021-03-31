@@ -2,10 +2,12 @@
 title: 相關資產
 description: 瞭解如何建立共用特定共同屬性的資產的關聯。 您也可以使用此功能來建立資產間的來源／衍生關係。
 contentOwner: AG
+feature: 資產管理，協作
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '618'
 ht-degree: 0%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 0%
 
 # 相關資產{#related-assets}
 
-Adobe Experience Manager(AEM)Assets可讓您使用「相關資產」功能，根據組織的需求手動建立資產關聯。 例如，您可以將授權檔案與類似主題上的資產或影像／視訊建立關聯。 您可以建立與共用特定共同屬性的資產關聯。 您也可以使用此功能來建立資產間的來源／衍生關係。 例如，如果您有PDF檔案是從INDD檔案產生，則可將PDF檔案與其來源INDD檔案建立關聯。
+Adobe Experience Manager(AEM)資產可讓您使用「相關資產」功能，根據組織的需求手動建立資產關聯。 例如，您可以將授權檔案與類似主題上的資產或影像／視訊建立關聯。 您可以建立與共用特定共同屬性的資產關聯。 您也可以使用此功能來建立資產間的來源／衍生關係。 例如，如果您有PDF檔案是從INDD檔案產生，則可將PDF檔案與其來源INDD檔案建立關聯。
 
 如此，您就可以彈性地將低解析度檔案（例如PDF/JPG）共用給廠商／代理商，並且僅在要求時提供高解析度檔案（例如INDD）。
 
@@ -64,11 +66,11 @@ Adobe Experience Manager(AEM)Assets可讓您使用「相關資產」功能，根
 
 ## 轉換相關資產{#translating-related-assets}
 
-使用「相關資產」功能建立資產間的來源／衍生關係，在轉譯工作流程中也很有幫助。 當您對衍生資產執行轉譯工作流程時，AEM Assets會自動擷取來源檔案所參照的任何資產，並將其納入轉譯。 這樣，源資產引用的資產與源資產和衍生資產一起折算。 例如，假設您的英文版副本包含衍生資產及其來源檔案，如所示。
+使用「相關資產」功能建立資產間的來源／衍生關係，在轉譯工作流程中也很有幫助。 當您對派生資產運行翻譯工作流時，AEM Assets會自動提取源檔案引用的任何資產，並將其包括在翻譯中。 這樣，源資產引用的資產與源資產和衍生資產一起折算。 例如，假設您的英文版副本包含衍生資產及其來源檔案，如所示。
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-如果來源檔案與其他資產相關，AEM Assets會擷取經過反應的資產，並加入它以進行轉譯。
+如果源檔案與另一個資產相關，AEM Assets將讀取經過改變的資產，並將其包含在轉換中。
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
@@ -85,7 +87,7 @@ Adobe Experience Manager(AEM)Assets可讓您使用「相關資產」功能，根
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. 選取資產，然後從工具列按一下／點選「在資產中顯現」(**[!UICONTROL Reveal in Assets]**)，以檢視資產的轉換狀態。
+1. 選取資產，然後從工具列按一下／點選「資產中顯現」(**[!UICONTROL Reveal in Assets]**)，以檢視資產的轉譯狀態。
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
