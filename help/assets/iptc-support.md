@@ -1,11 +1,13 @@
 ---
 title: 支援IPTC中繼資料
-description: 瞭解Adobe Experience Manager(AEM)Assets如何透過Adobe Bridge和其他Creative Apps支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
+description: 瞭解Adobe Experience Manager(AEM)資產如何透過Adobe Bridge和其他創意應用程式支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
 contentOwner: AG
+feature: 中繼資料
+role: 業務從業人員、管理員、領導者
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '374'
 ht-degree: 7%
 
 ---
@@ -13,9 +15,9 @@ ht-degree: 7%
 
 # 支援IPTC中繼資料{#support-for-iptc-metadata}
 
-瞭解Adobe Experience Manager(AEM)Assets如何透過Adobe Bridge和其他Creative Apps支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
+瞭解Adobe Experience Manager(AEM)資產如何透過Adobe Bridge和其他創意應用程式支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
 
-Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣泛用於描述資產。 如此，AEM Assets就可增強各方對其影像的接受度，包括攝影師、創意廣告公司、圖書館、博物館等。
+Adobe Experience Manager(AEM)資產支援IPTC中繼資料標準，該標準被廣泛用於描述資產。 如此，AEM Assets就能提升各方對影像的接受度，包括攝影師、創意廣告公司、圖書館、博物館等。
 
 資產的預設中繼資料結構現在整合了IPTC核心和IPTC擴充功能中繼資料結構，以定義完整的中繼資料屬性，讓使用者新增有關影像中顯示之人物、位置和產品的精確可靠資料。 它也支援建立影像的日期、名稱和識別碼，並提供彈性的方式來表達權限資訊。
 
@@ -34,7 +36,7 @@ Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣�
 
 ## 創意評分支援{#creative-rating-support}
 
-除了顯示個別使用者分級和匯總分級外，「屬性」頁面現在還會顯示透過Adobe Bridge和其他Creative Apps指派給資產的分級
+除了顯示個別使用者分級和匯總分級外，「屬性」頁面現在還會顯示透過Adobe Bridge和其他創意應用程式指派給資產的分級
 
 這些評等可在「進階」標 **[!UICONTROL 簽的「創作評分]** 」區段 **[!UICONTROL 下取得]** 。
 
