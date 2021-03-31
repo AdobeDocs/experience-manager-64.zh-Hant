@@ -1,14 +1,16 @@
 ---
 title: Assets 規模調整指南
-description: '最佳實務，可判斷評估部署AEM Assets所需基礎架構和資源的有效度量。 '
+description: '確定評估部署AEM Assets所需的基礎架構和資源的有效指標的最佳做法。 '
 uuid: f847c07d-2a38-427a-9c38-8cdca3a1210c
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
+feature: 資產管理
+role: 架構師，管理員
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 0%
 
 ---
@@ -16,28 +18,28 @@ ht-degree: 0%
 
 # Assets 規模調整指南 {#assets-sizing-guide}
 
-在調整Adobe Experience Manager(AEM)Assets實作環境的大小時，請務必確保在磁碟、CPU、記憶體、IO和網路總處理能力方面有充足的可用資源。 確定這些資源的數量需要瞭解系統中載入了多少資產。 如果沒有更佳的量度，您可以將現有資料庫的大小除以資料庫的年齡，以找出建立資產的比率。
+在調整Adobe Experience Manager(AEM)資產實施環境的大小時，務必確保在磁碟、CPU、記憶體、IO和網路吞吐量方面有足夠的可用資源。 確定這些資源的數量需要瞭解系統中載入了多少資產。 如果沒有更佳的量度，您可以將現有資料庫的大小除以資料庫的年齡，以找出建立資產的比率。
 
 ## 磁碟{#disk}
 
 ### DataStore {#datastore}
 
-在調整資產實作所需磁碟空間大小時，常會出錯的一個常見錯誤，是根據要傳入系統的原始影像大小來計算。 依預設，AEM會除原始影像外，建立三個轉譯，以用於轉譯AEM UI元素。 在先前的實作中，觀察到這些轉譯假設的資產大小是所擷取資產的兩倍。
+在調整資產實作所需磁碟空間大小時，常會出錯的一個常見錯誤，是根據要傳入系統的原始影像大小來計算。 依預設，AEM除了原始影像外，還會建立三個轉譯，以用於轉譯UIAEM元素。 在先前的實作中，觀察到這些轉譯假設的資產大小是所擷取資產的兩倍。
 
-除了現成可用的轉譯外，大部分使用者都會定義自訂轉譯。 除了轉譯外，AEM Assets還可讓您從常用檔案類型（例如InDesign和Illustrator）擷取子資產。
+除了現成可用的轉譯外，大部分使用者都會定義自訂轉譯。 除了轉譯外，AEM Assets還可讓您從常用檔案類型(例如InDesign和Illustrator)擷取子資產。
 
-最後，AEM的版本控制功能會將資產的復本儲存在版本記錄中。 您可以經常設定要清除的版本。 但是，許多用戶選擇長時間保留系統中的版本，這會佔用更多儲存空間。
+最後，AEM版本控制功能會將資產的副本儲存在版本記錄中。 您可以經常設定要清除的版本。 但是，許多用戶選擇長時間保留系統中的版本，這會佔用更多儲存空間。
 
 考慮到這些因素，您需要一種方法來計算可接受的精確儲存空間，以儲存用戶資產。
 
 1. 確定要載入到系統中的資產的大小和數量。
-1. 取得要上傳至AEM的資產的代表性範例。 例如，如果您打算將PSD、JPG、AI和PDF檔案載入系統，則需要每個檔案格式的多張範例影像。 此外，這些範例應代表不同檔案大小和複雜的影像。
+1. 取得要上傳至的資產的代表性範例AEM。 例如，如果您打算將PSD、JPG、AI和PDF檔案載入系統，則需要每個檔案格式的多張範例影像。 此外，這些範例應代表不同檔案大小和複雜的影像。
 1. 定義要使用的轉譯。
-1. 使用ImageMagick或Adobe的Creative Cloud應用程式在AEM中建立轉譯。 除了使用者指定的轉譯外，還可建立立即可用的轉譯。 對於實作Dynamic Media Classic的使用者，您可以使用IC二進位檔產生要儲存在AEM中的PTIFF轉譯。
-1. 如果您打算使用子資產，請針對適當的檔案類型產生子資產。 請參閱線上檔案，瞭解如何從InDesign檔案產生子頁面，或從Illustrator圖層產生PNG/PDF檔案。
+1. 使用ImageMagick或AdobeAEM的Creative Cloud應用程式建立轉譯。 除了使用者指定的轉譯外，還可建立立即可用的轉譯。 對於實作Dynamic Media經典的使用者，您可以使用IC二進位檔產生要儲存在中的PTIFF轉譯AEM。
+1. 如果您打算使用子資產，請針對適當的檔案類型產生子資產。 請參閱線上檔案，瞭解如何從InDesign檔案或從Illustrator圖層產生子頁面。
 1. 比較輸出影像、轉譯和子資產與原始影像的大小。 它允許您在載入系統時生成預期的增長系數。 例如，如果您在處理1GB的資產後，產生合併大小為3GB的轉譯和子資產，轉譯的增長率是3。
 1. 確定資產版本在系統中維護的最長時間。
-1. 確定系統中修改現有資產的頻率。 如果AEM是創意工作流程中的協作中心，變更的數量就會很高。 如果僅將完成的資產上傳到系統，則此數字會低得多。
+1. 確定系統中修改現有資產的頻率。 如果AEM在創意工作流程中用作協作中心，變更的量會很高。 如果僅將完成的資產上傳到系統，則此數字會低得多。
 1. 確定每個月有多少資產載入到系統。 如果您不確定，請確定目前可用的資產數目，並除以最舊資產的年齡，以計算大致數目。
 
 執行步驟1-9可協助您判斷下列項目：
@@ -50,7 +52,7 @@ ht-degree: 0%
 * 每月載入的新資產數
 * 分配空間的年份增長
 
-您可以在「網路規模」試算表中指定這些數字，以決定您的資料儲存所需的總空間。 此外，它也是判斷維護資產版本或修改AEM中資產對磁碟成長影響的實用工具。
+您可以在「網路規模」試算表中指定這些數字，以決定您的資料儲存所需的總空間。 它還是確定維護資產版本或修改資產對磁碟增長的影響AEM的有用工具。
 
 工具中填入的範例資料說明執行上述步驟的重要性。 如果僅根據要載入的原始映像(1TB)對資料儲存區進行大小調整，則可能將儲存庫大小低估了15倍。
 
@@ -105,13 +107,13 @@ S3實現中的延遲由背景寫入線程引入。 備份過程必須考慮此�
 
 ## 網路{#network}
 
-AEM Assets有許多使用案例，讓網路效能比我們許多AEM專案更重要。 客戶可以擁有快速的伺服器，但如果網路連線不夠大，無法支援從系統上傳和下載資產的使用者負載，則仍會顯得緩慢。 在[AEM Asset的使用者體驗（例項調整、工作流程評估和網路拓撲](assets-network-considerations.md)）考量中，有一套良好的方法可判斷使用者與AEM的網路連線中的阻塞點。
+AEM Assets有許多使用案例使網路效能比我們的許多項目更加重AEM要。 客戶可以擁有快速的伺服器，但如果網路連線不夠大，無法支援從系統上傳和下載資產的使用者負載，則仍會顯得緩慢。 在[&lt;Asset considers for user experience, AEM sizing, workflow evaluation, and network topology ](assets-network-considerations.md)中，有一種很好的方法來確定用戶與AEM Asset considerations的網路連接中的瓶頸。
 
 ## WebDAV {#webdav}
 
-如果您將AEM案頭應用程式加入組合中，網路問題會更嚴重，因為WebDAV通訊協定效率不彰。
+如果您將案頭應AEM用程式加入組合中，網路問題會因為WebDAV通訊協定的效率低下而變得更嚴重。
 
-為了說明這些效率低下的問題，Adobe在OS X上使用WebDAV測試了系統效能。開啟、編輯3.5MB的InDesign檔案，並儲存變更。 有人提出以下意見：
+為了說明這些低效率，Adobe在OS X上使用WebDAV測試了系統效能。開啟、編輯3.5MB的InDesign檔案，並儲存變更。 有人提出以下意見：
 
 * 總共產生約100個HTTP要求，以完成作業
 * 檔案已透過HTTP上傳四次
@@ -119,15 +121,15 @@ AEM Assets有許多使用案例，讓網路效能比我們許多AEM專案更重�
 * 整個操作用了42秒完成
 * 共傳輸18MB資料
 
-在分析WebDAV上檔案的平均儲存時間時，發現效能會隨著頻寬的增加而大幅提升，直到5-10Mbps等級。 因此，Adobe建議同時存取系統的每位使用者至少應有10Mbps的上傳速度和5-10Mbps的頻寬。
+在分析WebDAV上檔案的平均儲存時間時，發現效能會隨著頻寬的增加而大幅提升，直到5-10Mbps等級。 因此，Adobe建議同時訪問系統的每個用戶至少應具有10Mbps的上載速度和5-10Mbps的頻寬。
 
-如需詳細資訊，請參閱「疑難排解AEM案頭應用程式」](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)。[
+如需詳細資訊，請參閱[案頭應AEM用程式疑難排解](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)。
 
 ## 限制 {#limitations}
 
 在調整實施規模時，請務必牢記系統限制。 如果建議的實作超過這些限制，請運用創意策略，例如將資產分割為多個資產實作。
 
-檔案大小並非導致記憶體不足(OOM)問題的唯一因素。 這也取決於影像的尺寸。 啟動AEM時，提供較高的堆積大小，以避免OOM問題。
+檔案大小並非導致記憶體不足(OOM)問題的唯一因素。 這也取決於影像的尺寸。 您可以在開始時提供較高的堆大小，以避免OOM問題AEM。
 
 此外，您還可以編輯配置管理器中`com.day.cq.dam.commons.handler.StandardImageHandler`元件的閾值大小屬性，以使用大於零的中間臨時檔案。
 
@@ -139,10 +141,10 @@ While the limit for the number of nodes in a repository has not been determined,
 
 由於檔案系統限制，資料儲存中可存在的檔案數限制為21億。 儲存庫在達到資料儲存限制之前，很可能會由於節點數過多而遇到問題。
 
-如果轉譯產生不正確，請使用Camera Raw程式庫。 但是，在這種情況下，影像的最長邊不應大於65000像素。 此外，影像不應包含512 MP(512 &amp;ast;1024 &amp;ast;1024像素)」。 *資產規模無關緊要*。
+如果轉譯產生不正確，請使用Camera Raw的程式庫。 但是，在這種情況下，影像的最長邊不應大於65000像素。 此外，影像不應包含512 MP(512 &amp;ast;1024 &amp;ast;1024像素)」。 *資產規模無關緊要*。
 
-AEM的特定堆疊支援的TIFF檔案(OOTB)大小很難精確估計，因為其他因素（例如像素大小影響處理）。 AEM可能會處理大小為255 MB OOTB的檔案，但無法處理大小為18 MB的檔案，因為後者包含的像素數比前者高得多。
+由於像素大小等額外因素影響處理，因此很難精確估計具有特定堆的TIFF檔案現成可用(OOTB)AEM檔案的大小。 可以處理大AEM小為255 MB OOTB的檔案，但無法處理大小為18 MB的檔案，因為後者包含的像素數比前者要高得多。
 
 ## 資產大小{#size-of-assets}
 
-依預設，AEM可讓您上傳檔案大小高達2 GB的資產。 若要在AEM中上傳超大型資產，請參閱[上傳超大型資產的設定](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)。
+依預設，AEM可讓您上傳檔案大小高達2 GB的資產。 若要在中上傳超大AEM型資產，請參閱[上傳超大型資產的設定](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)。
