@@ -6,10 +6,12 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
+feature: 智慧型標籤，搜尋
+role: 業務從業人員
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1572'
 ht-degree: 15%
 
 ---
@@ -29,9 +31,9 @@ ht-degree: 15%
 
 一旦標籤經過訓練並準備就緒後，服務現在可以透過標籤工作流程，將這些標籤套用在資產上。
 
-在背景中，智慧型內容服務使用Adobe Sensei的AI架構，針對您的標籤結構和商業分類訓練其影像識別演算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
+在背景中，智慧型內容服務採用Adobe Sensei的AI架構，針對您的標籤結構和業務分類訓練其影像識別算法。 然後，此內容智慧會用來將相關標籤套用至不同的資產集。
 
-智慧型內容服務是位於[!DNL Adobe I/O]的雲端服務。 若要在Adobe Experience Manager(AEM)中使用它，系統管理員必須將您的AEM例項與[!DNL Adobe I/O]整合。
+智慧型內容服務是位於[!DNL Adobe I/O]的雲端服務。 要在Adobe Experience Manager(AEM)中使用它，系統管理員必須將您的AEM實例與[!DNL Adobe I/O]整合。
 
 總而言之，以下是使用智慧型內容服務的主要步驟：
 
@@ -51,15 +53,15 @@ ht-degree: 15%
 
 ## 入門 {#onboarding}
 
-智慧型內容服務可以做為AEM的附加元件購買。 購買後，系統會傳送電子郵件給您組織的管理員，並附上[!DNL Adobe I/O]的連結。
+智慧型內容服務可做為附加元件購買AEM。 購買後，系統會傳送電子郵件給您組織的管理員，並附上[!DNL Adobe I/O]的連結。
 
-管理員可依照連結來整合Smart Content Service與AEM。 若要將服務與AEM Assets整合，請參閱[設定智慧型標籤](config-smart-tagging.md)。
+管理員可以遵循此連結，將智慧型內容服務與整合AEM。 要將服務與AEM Assets整合，請參見[配置智慧標籤](config-smart-tagging.md)。
 
-當管理員設定服務並在AEM中新增使用者時，入門程式就會完成。
+當管理員配置服務並在中添加用戶時，上線過程將完成AEM。
 
 >[!NOTE]
 >
->如果您使用AEM 6.3或更舊版本，而且需要資產的自動標籤服務，請參閱[智慧型標籤](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)。 智慧型標籤不會使用AI功能，而且比「增強的智慧型標籤」功能不精確。
+>如果您使用AEM6.3或更舊版本，並需要資產的自動標籤服務，請參閱[智慧標籤](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)。 智慧型標籤不會使用AI功能，而且比「增強的智慧型標籤」功能不精確。
 
 ## 檢閱資產和標籤{#reviewing-assets-and-tags}
 
@@ -71,7 +73,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->1. 培訓是不可撤銷的過程。 Adobe建議您在標籤上訓練智慧型內容服務之前，先檢視組織中資產的標籤。
+>1. 培訓是不可撤銷的過程。 Adobe建議您先檢閱組織中資產的標籤，然後再對標籤上的智慧型內容服務進行訓練。
 >1. 請先閱讀[智慧型內容服務訓練方針](smart-tags-training-guidelines.md)，再開始任何標籤的訓練。
 >1. 當您第一次訓練智慧型內容服務時，Adobe建議您至少在兩個不同的標籤上進行訓練。
 
@@ -97,7 +99,7 @@ ht-degree: 15%
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-在為資料夾選取此選項後，AEM會自動執行訓練工作流程，以針對資料夾資產及其標籤來訓練智慧型內容服務。 依預設，培訓工作流程每週在星期六的凌晨12:30執行。
+為資料夾選擇此選項後，會自AEM動運行培訓工作流程，以便對資料夾資產及其標籤上的智慧內容服務進行培訓。 依預設，培訓工作流程每週在星期六的凌晨12:30執行。
 
 ### 隨選培訓{#on-demand-training}
 
