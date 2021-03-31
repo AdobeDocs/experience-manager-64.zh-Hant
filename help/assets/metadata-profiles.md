@@ -2,10 +2,12 @@
 title: 使用中繼資料設定檔，將預設中繼資料套用至資料夾中的所有資產
 description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資料描述檔並將它套用至資料夾資產。
 contentOwner: AG
+feature: 中繼資料
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1232'
+source-wordcount: '1236'
 ht-degree: 15%
 
 ---
@@ -17,14 +19,14 @@ ht-degree: 15%
 
 ## 新增中繼資料設定檔{#adding-a-metadata-profile}
 
-1. 點選或按一下AEM標誌，並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」，然後點選「**[!UICONTROL 建立]**」。
+1. 點選或按一AEM下標誌並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」，然後點選「建立&#x200B;**[!UICONTROL a3/>」。]**
 1. 輸入中繼資料描述檔的標題，例如範例中繼資料，然後按一下「提交&#x200B;****」。 此時將顯示元資料配置檔案的&#x200B;**[!UICONTROL 編輯表單]**。
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
 
 1. 按一下元件，並在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中設定其屬性。 例如，按一下&#x200B;**[!UICONTROL Description]**&#x200B;元件並編輯其屬性。
 
-   ![chlimage_1-401](assets/chlimage_1-481.png)
+   ![chlimage_1-481](assets/chlimage_1-481.png)
 
    編輯&#x200B;**[!UICONTROL Description]**&#x200B;元件的以下屬性：
 
@@ -33,7 +35,7 @@ ht-degree: 15%
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   您為&#x200B;**[!UICONTROL 映射至屬性]**&#x200B;指定的值會儲存為資產中繼資料節點下的屬性。 例如，如果您指定。`/jcr:content/metadata/dc:desc` AEM Assets會將值儲 **[!UICONTROL 存在資產的中繼資]** `dc:desc` 料節點上，作為Map to property的名稱。
+   您為&#x200B;**[!UICONTROL 映射至屬性]**&#x200B;指定的值會儲存為資產中繼資料節點下的屬性。 例如，如果您指定。`/jcr:content/metadata/dc:desc` 作為映射 **[!UICONTROL 至屬性的名稱]**,AEM Assets將值儲 `dc:desc` 存在資產的中繼資料節點。
 
    * **[!UICONTROL 預設值]**:使用此屬性可為中繼資料元件新增預設值。例如，如果您指定「我的說明」，則此值會指派給資產中繼資料節點上的屬性`dc:desc`。
 
@@ -101,7 +103,7 @@ ht-degree: 15%
 
 #### 從Profiles用戶介面{#applying-metadata-profiles-to-folders-from-profiles-user-interface}將元資料配置檔案應用到資料夾
 
-1. 點選AEM標誌並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」。
+1. 點選標AEM志並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」。
 1. 選擇要應用於資料夾或多個資料夾的元資料配置檔案。
 
    ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -121,7 +123,7 @@ ht-degree: 15%
 
 ### 全域套用中繼資料設定檔{#applying-a-metadata-profile-globally}
 
-除了將描述檔套用至檔案夾外，您也可以全域套用一個，如此任何檔案夾中上傳至AEM資產的內容都會套用選取的描述檔。 若要全域套用中繼資料設定檔，請遵循下列步驟：
+除了將描述檔套用至資料夾外，您也可以全域套用一個，如此任何上傳至任何資料夾中資產的AEM內容都會套用選取的描述檔。 若要全域套用中繼資料設定檔，請遵循下列步驟：
 
 1. 執行下列任一項作業：
 
@@ -129,7 +131,7 @@ ht-degree: 15%
 
       ![chlimage_1-492](assets/chlimage_1-492.png)
 
-   * 導覽至CRXDE Lite至下列節點：`/content/dam/jcr:content`。 新增屬性`metadataProfile:/etc/dam/metadata/dynamicmedia/<name_of_metadata_profile>`並點選&#x200B;**[!UICONTROL 全部儲存]**。
+   * 導航到CRXDE Lite到以下節點：`/content/dam/jcr:content`。 新增屬性`metadataProfile:/etc/dam/metadata/dynamicmedia/<name_of_metadata_profile>`並點選&#x200B;**[!UICONTROL 全部儲存]**。
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 
@@ -143,7 +145,7 @@ ht-degree: 15%
 
 要通過配置檔案用戶介面從資料夾中刪除元資料配置檔案，請執行以下步驟：
 
-1. 點選AEM標誌並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」。
+1. 點選標AEM志並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」。
 1. 選擇要從資料夾或多個資料夾中刪除的元資料配置檔案。
 1. 點選&#x200B;**[!UICONTROL 「從資料夾移除中繼資料描述檔」]**&#x200B;並選取您要用來移除描述檔的資料夾或多個資料夾，然後點選&#x200B;**[!UICONTROL Done]**。
 
@@ -151,7 +153,7 @@ ht-degree: 15%
 
 ### 透過屬性{#removing-metadata-profiles-from-folders-via-properties}從資料夾移除中繼資料描述檔
 
-1. 點選AEM標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要從中移除中繼資料描述檔的檔案夾。
+1. 點選標AEM志並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除中繼資料描述檔的資料夾。
 1. 在資料夾上點選核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇&#x200B;**[!UICONTROL 中繼資料描述檔]**&#x200B;標籤，然後從下拉式選單中選擇&#x200B;**[!UICONTROL 無]**。 點選&#x200B;**[!UICONTROL Save]**。
 
