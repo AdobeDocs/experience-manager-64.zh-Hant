@@ -2,10 +2,12 @@
 title: 將浮水印新增至您的數位資產
 description: 瞭解如何使用浮水印功能將數位水印新增至資產。
 contentOwner: AG
+feature: 資產管理
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: dfd6d022ef7d21ab6fc4ed17483890eb5766af18
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '328'
 ht-degree: 3%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] 可讓您在資產中加入數位浮水印，協助使用者驗證資產的真實性和版權所有權。[!DNL Experience Manager Assets] 支援在PNG和JPEG檔案上用作浮水印的文字。
 
-Adobe Experience Manager(AEM)Assets可讓您在影像中新增數位浮水印，協助使用者驗證資產的真實性和版權所有權。 AEM Assets支援將文字用作PNG和JPEG檔案上的浮水印。
+Adobe Experience Manager(AEM)Assets可讓您在影像中加入數位浮水印，協助使用者驗證資產的真實性和版權所有權。 AEM Assets支援在PNG和JPEG檔案上用作浮水印的文字。
 
 若要能夠套用資產上的浮水印，請在[!UICONTROL DAM更新資產]工作流程中新增浮水印步驟。
 
@@ -36,7 +38,7 @@ Adobe Experience Manager(AEM)Assets可讓您在影像中新增數位浮水印，
    ![在「資產」的「新增浮水印」步驟中提供引數](assets/arguments_add_watermark_aem_assets.png)
 
 1. 使用浮水印 **[!UICONTROL 步驟儲存DAM更新資產]** (Dam Update Asset)工作流程。
-1. 從AEM使用者介面上傳範例資產。 浮水印會以字型大小、顏色等顯示在您在上述步驟中設定的位置。
+1. 從使用者AEM介面上傳範例資產。 浮水印會以字型大小、顏色等顯示在您在上述步驟中設定的位置。
 
 若要以程式設計方式或使用動態資訊加上PDF檔案水印，請考慮使用[AEM Document Services](/help/forms/using/overview-aem-document-services.md)產品。
 
