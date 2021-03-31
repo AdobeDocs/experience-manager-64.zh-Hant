@@ -1,11 +1,13 @@
 ---
 title: 資產卸載最佳實務
-description: 建議在AEM Assets中卸載資產擷取和複製工作流程的使用案例和最佳實務。
+description: 建議在AEM Assets卸載資產接收和複製工作流的使用案例和最佳做法。
 contentOwner: AG
+feature: 資產管理
+role: 業務從業人員，管理員
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -15,17 +17,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->此功能已過時，不再支援AEM 6.4，並在AEM 6.5中移除。相應計畫。
+>此功能已過時AEM,6.4之後會在AEM6.5中移除。相應計畫。
 
-在Adobe Experience Manager(AEM)Assets中處理大型檔案和執行工作流程可能會耗用大量的CPU、記憶體和I/O資源。 尤其是，資產的大小、工作流程、使用者人數和資產擷取頻率都會影響整體系統效能。 最耗用資源的作業包括AEM資產擷取和複製工作流程。 在單一AEM製作例項上大量使用這些工作流程可能會對製作效率造成負面影響。
+在Adobe Experience Manager(AEM)Assets中處理大型檔案和執行工作流程會耗用大量CPU、記憶體和I/O資源。 尤其是，資產的大小、工作流程、使用者人數和資產擷取頻率都會影響整體系統效能。 最耗費資源的操作包括資AEM產提取和複製工作流。 在單一製作執行個體上大量使用這些工AEM作流程會對製作效率造成負面影響。
 
 將這些任務卸載到專用的工作器實例可以減少CPU、記憶體和IO開銷。 通常，卸載的思想是將消耗大量CPU/記憶體/IO資源的任務分發到專用工作器實例。 以下各節包括資產卸載的建議使用案例。
 
-## AEM Assets Offloading {#aem-assets-offloading}
+## AEM Assets卸載{#aem-assets-offloading}
 
-AEM Assets會建置原生資產特定的工作流程擴充功能，以進行卸載。 它以卸載框架提供的一般工作流程擴充為基礎，但在實施中包含其他資產特定功能。 「資產」卸載的目的，是在已上傳的資產上有效執行「DAM更新資產」工作流程。 資產卸載可讓您更精確地控制擷取工作流程。
+AEM Assets建置了原生資產特定的工作流程擴充功能以進行卸載。 它以卸載框架提供的一般工作流程擴充為基礎，但在實施中包含其他資產特定功能。 「資產」卸載的目的，是在已上傳的資產上有效執行「DAM更新資產」工作流程。 資產卸載可讓您更精確地控制擷取工作流程。
 
-## AEM Assets Offloading Components {#aem-assets-offloading-components}
+## AEM Assets卸載元件{#aem-assets-offloading-components}
 
 下圖描述了資產卸載流程中的主要元件：
 
@@ -33,7 +35,7 @@ AEM Assets會建置原生資產特定的工作流程擴充功能，以進行卸�
 
 ### DAM更新資產卸載工作流{#dam-update-asset-offloading-workflow}
 
-DAM更新資產卸載工作流程會在使用者上傳資產的主要（作者）伺服器上執行。 此工作流程是由一般工作流程啟動程式所觸發。 此卸載工作流程不會處理已上載的資產，而是使用主題&#x200B;*com/adobe/granite/workflow/offloading*&#x200B;建立新作業。 卸載工作流將添加目標工作流的名稱——在此例中為「DAM更新資產」工作流，以及資產路徑到作業裝載。 在建立卸載作業後，主實例上的卸載工作流將等待卸載作業運行。
+DAM更新資產卸載工作流程會在使用者上傳資產的主要（作者）伺服器上執行。 此工作流程是由一般工作流程啟動程式所觸發。 此卸載工作流程不會處理已上載的資產，而是使用主題&#x200B;*com/adobe/granite/workflow/offloading*&#x200B;建立新作業。 卸載工作流將添加目標工作流的名稱——在此例中為「DAM更新資產」工作流，並添加資產路徑到作業的裝載。 在建立卸載作業後，主實例上的卸載工作流將等待卸載作業運行。
 
 ### 作業管理器{#job-manager}
 
@@ -41,7 +43,7 @@ DAM更新資產卸載工作流程會在使用者上傳資產的主要（作者�
 
 ### AEM卸載{#aem-offloading}
 
-卸載框架標識分配給工作器實例的工作流卸載作業，並使用複製將它們物理地傳輸到工作器，包括它們的裝載（例如，要捕獲的映像）。
+卸載框架標識分配給工作器實例的工作流卸載作業，並使用複製將它們物理地傳輸給工作器，包括它們的裝載（例如，要捕獲的映像）。
 
 ### 工作流卸載作業使用者{#workflow-offloading-job-consumer}
 
@@ -49,7 +51,7 @@ DAM更新資產卸載工作流程會在使用者上傳資產的主要（作者�
 
 ## Sling Topology {#sling-topology}
 
-Sling拓撲會將AEM例項分組，讓它們能夠彼此感知，不受基礎永續性的影響。 Sling拓撲的這項特性可讓您建立適用於非叢集、叢集和混合藍本的拓撲。 實例可以向整個拓撲顯示屬性。 該框架提供回呼，用於監聽拓撲中的更改（實例和屬性）。 Sling拓撲為Sling分佈式作業提供基礎。
+Sling拓撲會將例AEM項分組，讓它們能夠相互感知，不受基礎持久性的影響。 Sling拓撲的這項特性可讓您建立適用於非叢集、叢集和混合藍本的拓撲。 實例可以向整個拓撲顯示屬性。 該框架提供回呼，用於監聽拓撲中的更改（實例和屬性）。 Sling拓撲為Sling分佈式作業提供基礎。
 
 ### Sling distributed jobs {#sling-distributed-jobs}
 
@@ -73,14 +75,14 @@ Sling分佈式作業提供作業和分發架構。 Granite卸載只負責將作�
 
 每個實作都是獨一無二的，因此，沒有一種「一刀切」的卸載配置。 以下章節提供有關資產擷取卸載的指引和最佳實務。
 
-資產卸載也會對系統施加間接費用，包括工序間接費用。 如果您遇到資產擷取載入的問題，Adobe建議您先改善設定，而不要卸載。 移至資產卸載前，請考慮下列選項：
+資產卸載也會對系統施加間接費用，包括工序間接費用。 如果您遇到資產擷取載入問題，Adobe建議您先改善設定，而不要卸載。 移至資產卸載前，請考慮下列選項：
 
 * 擴展硬體
 * 最佳化工作流程
 * 使用瞬時工作流程
 * 限制用於工作流的內核數
 
-如果您認為資產卸載是適合您的方法，Adobe會提供下列指引：
+如果您認為資產卸載是適合您的方法，Adobe將提供以下指導：
 
 * 建議使用TarMK部署
 * 基於TarMK的資產卸載不適用於廣泛的橫向擴展
@@ -88,11 +90,11 @@ Sling分佈式作業提供作業和分發架構。 Granite卸載只負責將作�
 
 ### 建議的資產卸載部署{#recommended-assets-offloading-deployment}
 
-有了AEM和Oak，您就可能有數種部署藍本。 對於資產卸載，建議使用共用資料儲存進行基於TarMK的部署。 下圖概述了建議的部署：
+有了AEM和Oak，您可能會有數種部署藍本。 對於資產卸載，建議使用共用資料儲存進行基於TarMK的部署。 下圖概述了建議的部署：
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-如需有關設定資料儲存區的詳細資訊，請參閱「在AEM中設定節點儲存區和資料儲存區」。[](../sites-deploying/data-store-config.md)
+有關配置資料儲存的詳細資訊，請參閱[配置](../sites-deploying/data-store-config.md)中的節點儲存AEM和資料儲存。
 
 ### 關閉自動代理管理{#turning-off-automatic-agent-management}
 
@@ -117,7 +119,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### 在作者和工作者之間使用共用資料儲存和無二進位複製{#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-建議使用無二進位複製以減少資產卸載的傳輸開銷。 要瞭解如何為共用資料儲存設定無二進位複製，請參閱[在AEM中配置節點儲存和資料儲存。 ](/help/sites-deploying/data-store-config.md)對於Assets卸載，此過程並不不同，只是涉及其他複製代理。 由於無二進位複製只適用於轉發複製代理，因此您還應對所有卸載代理使用轉發複製。
+建議使用無二進位複製以減少資產卸載的傳輸開銷。 要瞭解如何為共用資料儲存設定無二進位複製，請參見](/help/sites-deploying/data-store-config.md)中的[配置節點儲存AEM和資料儲存。 對於Assets卸載，此過程並不不同，只是涉及其他複製代理。 由於無二進位複製只適用於轉發複製代理，因此您還應對所有卸載代理使用轉發複製。
 
 ### 關閉傳輸包{#turning-off-transport-packages}
 
@@ -128,7 +130,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### 禁用工作流模型{#disabling-the-transport-of-workflow-model}的傳輸
 
-預設情況下，*DAM更新資產卸載*&#x200B;卸載工作流將工作流模型添加到作業裝載中，以調用該工作流模型。 由於此工作流程預設會遵循現成可用的&#x200B;*DAM更新資產*&#x200B;模型，因此可移除此額外的裝載。
+預設情況下，*DAM更新資產卸載*&#x200B;卸載工作流將工作流模型添加到作業裝載中，以調用該工作器。 由於此工作流程預設會遵循現成可用的&#x200B;*DAM更新資產*&#x200B;模型，因此可移除此額外的裝載。
 
 如果工作流程模型已從作業裝載中停用，請確定您使用其他工具（例如封裝管理器）分發對參考工作流程模型的變更。
 
@@ -143,7 +145,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### 優化輪詢間隔{#optimizing-the-polling-interval}
 
-工作流卸載是使用主伺服器上的外部工作流實現的，該外部工作流輪詢工作器上卸載的工作流是否完成。 外部工作流進程的預設輪詢間隔為5秒。 Adobe建議您將「資產」卸載步驟的輪詢間隔提高至少15秒，以降低主要系統的卸載開銷。
+工作流卸載是使用主伺服器上的外部工作流實現的，該外部工作流輪詢工作器上卸載的工作流是否完成。 外部工作流進程的預設輪詢間隔為5秒。 Adobe建議您將「資產」卸載步驟的輪詢間隔至少增加15秒，以減少主要卸載開銷。
 
 1. 從[http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html)開啟工作流程主控台。
 
@@ -155,7 +157,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ## 更多資源{#more-resources}
 
-本檔案著重於資產卸載。 以下是有關卸載的一些其他文檔：
+本檔案著重於資產卸載。 以下是有關卸載的其他文檔：
 
 * [卸載作業](/help/sites-deploying/offloading.md)
 * [資產工作流程卸載程式](/help/sites-administering/workflow-offloader.md)
