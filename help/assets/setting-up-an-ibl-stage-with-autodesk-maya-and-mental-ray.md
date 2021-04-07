@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
+exl-id: ecb489e2-fd6f-4163-9739-5d7ff497d305
+feature: 3D資產
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '543'
 ht-degree: 0%
 
 ---
-
 
 # 使用Autodesk Maya和Mental Ray {#setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray}設定IBL舞台
 
@@ -69,7 +71,7 @@ ht-degree: 0%
 
 1. 儲存場景，然後退出Autodesk Maya。
 
-1. 將場景和IBL PTIFF上傳至AEM，並等待上傳處理完成。
+1. 將場景和IBL PTIFF上傳至，AEM並等待上傳處理完成。
 
    請參閱[上傳資產](managing-assets-touch-ui.md#uploading-assets)。
 
@@ -77,9 +79,8 @@ ht-degree: 0%
 
    請參閱[解決檔案相關性](resolve-file-dependencies.md)。
 
-   AEM 3D可能無法偵測在舞台中設定的IBL影像。 在這種情況下，必須手動解決缺少的從屬關係。 您可以為每個缺失的從屬關係指定相同的先前上載IBL PTIFF影像。 或者，您可以指派不同的影像來進一步控制IBL效果。 解決相依性後，請務必點選&#x200B;**[!UICONTROL Save]**&#x200B;以開始重新處理。
+   AEM 3D可能無法檢測舞台上配置的IBL影像。 在這種情況下，必須手動解決缺少的從屬關係。 您可以為每個缺失的從屬關係指定相同的先前上載IBL PTIFF影像。 或者，您可以指派不同的影像來進一步控制IBL效果。 解決相依性後，請務必點選&#x200B;**[!UICONTROL Save]**&#x200B;以開始重新處理。
 
-1. 在AEM中開啟資產屬性。 將&#x200B;**[!UICONTROL Title]**&#x200B;設定為適當的字串，該字串將出現在&#x200B;**[!UICONTROL 舞台選擇器]**&#x200B;下拉式清單中。 驗證&#x200B;**[!UICONTROL Class]**&#x200B;是否設定為&#x200B;**[!UICONTROL 3D Stage]**。 儲存並退出。
+1. 在中開啟資產屬AEM性。 將&#x200B;**[!UICONTROL Title]**&#x200B;設定為適當的字串，該字串將出現在&#x200B;**[!UICONTROL 舞台選擇器]**&#x200B;下拉式清單中。 驗證&#x200B;**[!UICONTROL Class]**&#x200B;是否設定為&#x200B;**[!UICONTROL 3D Stage]**。 儲存並退出。
 
 1. 開啟3D資產、選取新階段，並驗證它是否預覽並如預期呈現。
-
