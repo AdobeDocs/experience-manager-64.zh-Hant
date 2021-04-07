@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
+feature: 配置，Scene7模式
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 4027bf6905d2e1d07c7f6adb70cbd249f8ee06a4
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '5590'
+source-wordcount: '5593'
 ht-degree: 3%
 
 ---
-
 
 # 設定 Dynamic Media - Scene7 模式 {#configuring-dynamic-media-scene-mode}
 
@@ -656,4 +658,3 @@ Adobe建議對PDF、PostScript®和PSD檔案使用下列「已調整」的工作
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
    如果您只想複製原稿，則輸入`+original`。
-
