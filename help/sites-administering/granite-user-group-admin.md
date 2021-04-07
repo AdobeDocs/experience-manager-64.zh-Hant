@@ -2,6 +2,7 @@
 title: Granite Operations —— 使用者與群組管理
 seo-title: Granite Operations —— 使用者與群組管理
 description: 瞭解Granite使用者和群組管理。
+feature: 安全性
 seo-description: 瞭解Granite使用者和群組管理。
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
@@ -9,20 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
+exl-id: bd29e81d-eb4a-4764-96f2-84e091836a8a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 4%
 
 ---
-
 
 # Granite Operations - User and Group Administration{#granite-operations-user-and-group-administration}
 
 當Granite整合JCR API規格的CRX Repository實作時，它擁有自己的使用者和群組管理。
 
-這些帳戶是[AEM帳戶](/help/sites-administering/security.md)的基礎，如果／當從[AEM使用者主控台](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)存取帳戶時，會反映使用Granite管理所做的任何帳戶變更(例如`http://localhost:4502/useradmin`)。 從「AEM使用者控制台」中，您也可以管理權限和其他AEM特定資訊。
+這些帳戶是[帳戶](/help/sites-administering/security.md)的基礎AEM，如果／從[ AEM Users console](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)存取帳戶時，將反映使用Granite管理所做的任何帳戶變更(例如`http://localhost:4502/useradmin`)。 您也可AEM以從「使用者控制台」管理權限和其AEM他特定資訊。
 
 Granite使用者和群組管理主控台都可從觸控最佳化UI的&#x200B;**[Tools](/help/sites-administering/tools-consoles.md)**&#x200B;主控台取得：
 
@@ -234,4 +235,3 @@ Granite使用者和群組管理主控台都可從觸控最佳化UI的&#x200B;**[
    ![](do-not-localize/chlimage_1-6.png)
 
 1. 系統會要求您確認刪除，然後會傳送訊息確認實際刪除已發生。
-
