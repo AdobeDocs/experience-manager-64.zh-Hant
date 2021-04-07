@@ -1,30 +1,32 @@
 ---
 title: 進階組態設定
 seo-title: 進階組態設定
-description: 瞭解適用於Maya和非Maya部署之AEM 3D整合的進階組態設定。
-seo-description: 瞭解適用於Maya和非Maya部署之AEM 3D整合的進階組態設定。
+description: 瞭解適用於Maya和非Maya部AEM署3D整合的進階組態設定。
+seo-description: 瞭解適用於Maya和非Maya部AEM署3D整合的進階組態設定。
 uuid: 016e7745-e3c3-4d77-b95a-c0e671d719e2
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: e43fd002-2954-4ef1-ac2b-e8d45afa75be
+exl-id: fdc82bca-e676-4052-b3e9-a198c685df96
+feature: 3D資產
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1383'
+source-wordcount: '1385'
 ht-degree: 1%
 
 ---
-
 
 # 高級配置設定{#advanced-configuration-settings}
 
 雖然預設組態設定適合一般使用案例，但有時可能需要您進行變更。
 
-下列進階組態設定適用於Maya和非Maya部署的AEM 3D整合。
+以下高級配置設定適用於Maya和AEM非Maya部署的3D整合。
 
-所有設定都可使用AEM中的&#x200B;**CRXDE Lite**&#x200B;存取（**[!UICONTROL 工具>一般> CRXDE Lite]**）。
+所有設定都使用&#x200B;**CRXDE Lite**(**[!UICONTROL 工具>一般>CRXDE Lite]**)AEM中的訪問。
 
 >[!NOTE]
 >
@@ -36,11 +38,11 @@ ht-degree: 1%
 
 ## 資產類型配置{#asset-types-configuration}
 
-在AEM的&#x200B;**CRXDE Lite**（**[!UICONTROL 工具>一般> CRXDE Lite]**）中，存取下列組態：
+在&#x200B;**CRXDE Lite**&#x200B;中(**[!UICONTROL 工具>一般>CRXDE Lite]**)，訪問以下配置：
 
 | 路徑 | 說明 |
 |---|---|
-| `/libs/settings/dam/v3D/assetTypes/*/Conversion` | 指定擷取期間建立之中介3D格式的檔案類型。 &#39;fbx&#39;和&#39;obj&#39;檔案格式必須為空，或&#39;fbx&#39;格式必須由Maya啟用。 |
+| `/libs/settings/dam/v3D/assetTypes/*/Conversion` | 指定擷取期間建立的中介3D格式的檔案類型。 &#39;fbx&#39;和&#39;obj&#39;檔案格式必須為空，或&#39;fbx&#39;格式必須由Maya啟用。 |
 | `/libs/settings/dam/v3D/assetTypes/*/Enabled` | 設為true或false，以在&#x200B;**[!UICONTROL assetTypes]**&#x200B;清單中啟用或停用此項目。 |
 | `/libs/settings/dam/v3D/assetTypes/*/Extension` | 指定一個或多個以逗號分隔的檔案字尾或要與此資產類型關聯的副檔名。 |
 | `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | 對於FBX和OBJ檔案格式，必須為`native`，對於Maya啟用的格式，必須為`maya`。 |
@@ -48,7 +50,7 @@ ht-degree: 1%
 
 ## 擷取設定{#ingestion-configuration}
 
-在AEM的&#x200B;**CRXDE Lite**（**[!UICONTROL 工具>一般> CRXDE Lite]**）中，存取下列組態：
+在&#x200B;**CRXDE Lite**&#x200B;中(**[!UICONTROL 工具>一般>CRXDE Lite]**)，訪問以下配置：
 
 <table> 
  <tbody> 
@@ -82,20 +84,20 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/MaxCpuPercentage</td> 
-   <td><p>指定最多使用多少CPU來擷取3D資產。</p> <p>值越高，收件速度越快，但AEM整體回應速度可能越低。 此設定是近似的。 即，隨著可用CPU核心數目的增加，精度也會提高。</p> </td> 
+   <td><p>指定最多使用多少CPU來擷取3D資產。</p> <p>值越高，收錄速度越快，但AEM整體上可能會變得反應不靈。 此設定是近似的。 即，隨著可用CPU核心數目的增加，精度也會提高。</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 雲端服務組態設定{#cloud-services-configuration-settings}
+## Cloud Services配置設定{#cloud-services-configuration-settings}
 
-您的Adobe客戶經理、布建專家或支援代表會提供下列設定的值。
+下列設定的值由您的Adobe帳戶管理員、布建專家或支援代表提供。
 
 | **路徑** | **說明** |
 |---|---|
-| `/libs/settings/dam/v3D/services/aws/accountId` | Adobe AWS帳戶的帳戶ID。 |
+| `/libs/settings/dam/v3D/services/aws/accountId` | AdobeAWS帳戶的帳戶ID。 |
 | `/libs/settings/dam/v3D/services/aws/bucketName` | S3傳輸桶的名稱；通常`aem3d`。 |
-| `/libs/settings/dam/v3D/services/aws/customerId` | Adobe指派給您組織的唯一ID。 用作AWS Cognito用戶ID。 |
+| `/libs/settings/dam/v3D/services/aws/customerId` | 由Adobe指派給您組織的唯一ID。 用作AWS Cognito用戶ID。 |
 | `/libs/settings/dam/v3D/services/aws/encryptedPassword` | 與此customerId關聯的密碼。 用作AWS Cognito密碼。 |
 | `/libs/settings/dam/v3D/services/aws/region` | 部署雲服務的AWS地區。 |
 | `/libs/settings/dam/v3D/services/aws/userPoolId` | 適用的AWS Cognito用戶池ID。 |
@@ -103,7 +105,7 @@ ht-degree: 1%
 
 ## 常見處理設定{#common-processing-settings}
 
-在AEM的&#x200B;**CRXDE Lite**（**[!UICONTROL 工具>一般> CRXDE Lite]**）中，存取下列組態：
+在&#x200B;**CRXDE Lite**&#x200B;中(**[!UICONTROL 工具>一般>CRXDE Lite]**)，訪問以下配置：
 
 | **路徑** | **說明** |
 |---|---|
@@ -113,18 +115,18 @@ ht-degree: 1%
 
 ## 渲染器配置{#renderer-configuration}
 
-在AEM的&#x200B;**CRXDE Lite**（**[!UICONTROL 工具>一般> CRXDE Lite]**）中，存取下列組態：
+在&#x200B;**CRXDE Lite**&#x200B;中(**[!UICONTROL 工具>一般>CRXDE Lite]**)，訪問以下配置：
 
 | **路徑** | **說明** |
 |---|---|
 | `/libs/settings/dam/v3D/settings/dynamicIBL` | 當設為&#x200B;**[!UICONTROL true]**&#x200B;且預先產生的光對應無法使用（即invokeLightMapsOnIngest=false）時，快速調整轉譯器會在轉譯期間建立光對應，以改善轉譯品質。 此設定可大幅增加演算時間。 設為&#x200B;**[!UICONTROL false]**&#x200B;會將這種情況下的CPU使用量降至最低，但可能導致較低的演算品質。 |
 | `/libs/settings/dam/v3D/renderers/*/Enabled` | 分別設為&#x200B;**[!UICONTROL true]**&#x200B;或&#x200B;**[!UICONTROL false]**&#x200B;以啟用或停用轉譯器。 |
 | `/libs/settings/dam/v3D/renderers/*/Display` | 可讓您變更在「演算」面板的「演算器」選取器中，針對啟用的演算器所顯示的字串。 |
-| `/libs/settings/dam/v3D/renderers/*/MaxCpuPercentage` | 指定最多使用多少CPU來呈現3D場景。 值越高，轉譯速度越快，但AEM的整體回應速度可能越慢。 此設定是近似的。 即，隨著可用CPU核心數目的增加，精度也會提高。 |
+| `/libs/settings/dam/v3D/renderers/*/MaxCpuPercentage` | 指定最多使用多少CPU來呈現3D場景。 值越高，轉譯速度越快，但AEM整體回應速度可能越低。 此設定是近似的。 即，隨著可用CPU核心數目的增加，精度也會提高。 |
 
 ## 3D資產預覽設定{#d-asset-preview-settings}
 
-在AEM的&#x200B;**CRXDE Lite**（**[!UICONTROL 工具>一般> CRXDE Lite]**）中，存取下列組態：
+在&#x200B;**CRXDE Lite**&#x200B;中(**[!UICONTROL 工具>一般>CRXDE Lite]**)，訪問以下配置：
 
 | 路徑 | 說明 |
 |---|---|
@@ -139,7 +141,7 @@ ht-degree: 1%
 
 ## 3D Sites元件設定{#d-sites-component-settings}
 
-在AEM的&#x200B;**CRXDE Lite**（**[!UICONTROL 工具>一般> CRXDE Lite]**）中，存取下列組態：
+在&#x200B;**CRXDE Lite**&#x200B;中(**[!UICONTROL 工具>一般>CRXDE Lite]**)，訪問以下配置：
 
 | 路徑 | 說明 |
 |---|---|
@@ -149,4 +151,3 @@ ht-degree: 1%
 | `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | 當設為&#x200B;**[!UICONTROL true]**&#x200B;時，載荷簾將在裝載和初始化的後半部分逐漸淡出。 當設為&#x200B;**[!UICONTROL false]**&#x200B;時，簾布保持不透明，直到裝載和初始化完成。 |
 | `/libs/settings/dam/v3D/WebGLSites/showCurtains` | 設為&#x200B;**[!UICONTROL true]**&#x200B;或&#x200B;**[!UICONTROL false]**，以啟用或停用3D網站元件的載入簾幕。 |
 | `/libs/settings/dam/v3D/WebGLSites/spinHeight` | 當自動回轉啟用並啟用時，相機的垂直位置會自動相對於3D物件的高度調整。 當設為0.5時，相機會垂直放置在物件高度的1/2處，這會導致水準線在視區中垂直置中。 值越大，相機會向下看物件並提高演算的水準線高度，值越小，相機就會向上看物件並降低水準線。 |
-
