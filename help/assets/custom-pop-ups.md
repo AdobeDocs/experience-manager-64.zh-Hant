@@ -9,20 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
+exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
+feature: 設定
+role: Administrator,Business Practitioner,Developer
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1050'
 ht-degree: 2%
 
 ---
-
 
 # 使用「快速檢視」建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 
 在電子商務體驗中使用預設的Quickview，以便顯示包含產品資訊的快顯視窗來推動購買。 不過，您可以觸發自訂內容以顯示在快顯視窗中。 根據您使用的檢視器，此功能可讓使用者按一下熱點、縮圖影像或影像地圖，以檢視資訊或相關內容。
 
-動態媒體中的下列檢視器支援快速檢視：
+Dynamic Media的下列檢視器支援快速檢視：
 
 * 互動式影像（可點選的熱點）
 * 互動式視訊（視訊播放時可點選的縮圖影像）
@@ -144,7 +146,7 @@ ht-degree: 2%
    * 互動式視訊檢視器- [事件回呼](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-event-callbacks.html)
    * 互動式視訊檢視器中的互動式資料支援- [互動式資料支援](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-video/c-html5-aem-int-video-int-data-support.html)
 
-1. 執行下列動作：
+1. 請執行下列動作：
 
    * 取消對embed代碼的setHandlers部分的注釋。
    * 映射Quickview中包含的任何其他變數。
@@ -181,7 +183,7 @@ ht-degree: 2%
 
 1. 將快顯視窗`DIV`置於HTML頁面的正文中。
 
-   其中一個元素會以ID設定，當使用者叫用Quickview時，ID會以sku值更新。 此範例也包含一個簡單按鈕，可在快顯視窗顯示後再次隱藏快顯視窗。
+   其中一個元素會以ID設定，當使用者叫用Quickview時，ID會以sku值更新。 此範例也包含一個簡單按鈕，可在快顯視窗顯示後再次隱藏。
 
    ```xml
    <div id="quickview_div" >
@@ -269,4 +271,3 @@ ht-degree: 2%
    `s7interactiveimageviewer.init()`
 
    將檢視器內嵌至主機頁面後，請務必先建立檢視器例項，然後再載入處理常式，再使用`init()`呼叫檢視器。
-
