@@ -9,22 +9,24 @@ topic-tags: dynamic-media
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
+exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
+feature: 智慧型服務
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1756'
+source-wordcount: '1758'
 ht-degree: 2%
 
 ---
-
 
 # 智慧型影像 {#smart-imaging}
 
 ## 什麼是「智慧型影像」?{#what-is-smart-imaging}
 
-智慧型影像技術運用Adobe Sensei AI功能，並運用現有的「影像預設集」，根據用戶端瀏覽器功能自動最佳化影像格式、大小和品質，以增強影像傳送效能。
+智慧型影像技術運用Adobe Sensei人工智慧功能，並運用現有的「影像預設集」，根據用戶端瀏覽器功能自動最佳化影像格式、大小和品質，以增強影像傳送效能。
 
-Smart Imaging也受益於與Adobe同級最佳的優質CDN服務完全整合的額外效能提升。 此服務在伺服器、網路和互連點之間找到最佳的Internet路由，該路由的延遲和／或資料包丟失率比Internet上的預設路由低。
+Smart Imaging還可運用與Adobe同級最佳的優質CDN服務完全整合的額外效能提升。 此服務在伺服器、網路和互連點之間找到最佳的Internet路由，該路由的延遲和／或資料包丟失率比Internet上的預設路由低。
 
 以下影像資產範例說明新增的智慧型影像最佳化：
 
@@ -45,28 +47,28 @@ Smart Imaging也受益於與Adobe同級最佳的優質CDN服務完全整合的�
 最新版Smart Imaging的增強功能：
 
 * 立即提供最佳化內容（在執行時期）。
-* 使用Adobe Sensei技術，根據影像要求中指定的品質(qlt)進行轉換。
+* 使用Adobe Sensei技術根據影像要求中指定的品質(qlt)進行轉換。
 * 智慧型影像可以使用「bfc」 URL參數關閉。
 * TTL（存留時間）獨立。 以前，Smart Imaging的最低TTL為12小時。
 * 以前，原始和衍生影像都會進行快取，而使快取失效的步驟是2個。 在最新的智慧型影像中，只會快取衍生產品，允許單步快取失效程式。
-* 使用規則集中自訂標題的客戶（例如[新增自訂標題值至影像回應|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「允許原點計時」、「X-Robot」）將受益於最新的智慧型影像，因為這些標題不會遭到封鎖，這與舊版智慧型影像不同。
+* 使用規則集中自訂標題的客戶(例如[新增自訂標題值至影像回應|Dynamic Media經典](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建議的「允許原點計時」、「X-Robot」)將受益於最新的智慧型影像，因為這些標題不會遭到封鎖，這與舊版智慧型影像不同。
 
 ## 智慧型影像處理是否有相關的授權成本？{#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-否. Smart Imaging隨附於您現有的Dynamic Media Classic或AEM Dynamic Media授權（On Prem、AMS和AEM as a Cloud Service）。
+否. Smart Imaging隨附於您現有的Dynamic Media經典或AEMDynamic Media授權(On Prem、AMSAEM及Cloud Service)。
 
 >[!NOTE]
 >
->Smart Imaging不適用於Dynamic Media - Hybrid客戶。
+>Smart Imaging不適用於Dynamic Media- Hybrid客戶。
 
 
 ## 智慧型影像處理如何運作？{#how-does-smart-imaging-work}
 
-智慧型影像功能使用Adobe Sensei根據瀏覽器功能，自動將影像轉換為最佳的格式、大小和品質：
+Smart Imaging使用Adobe Sensei，根據瀏覽器功能，自動將影像轉換為最佳格式、大小和品質：
 
 * 針對Chrome、Firefox、Microsoft Edge、Android和Opera等瀏覽器自動轉換為WebP。
 * 針對Safari等瀏覽器，自動轉換為JPEG2000。
-* 針對Internet Explorer 9+等瀏覽器自動轉換為JPEG。
+* 針對瀏覽器（例如Internet Explorer 9+）自動轉換為JPEG。
 * 對於不支援這些格式的瀏覽器，會提供原本要求的影像格式。
 
 如果原始影像大小小於智慧型影像產生的大小，則會提供原始影像。
@@ -99,22 +101,22 @@ Smart Imaging可與您現有的「影像預設集」搭配使用，並觀察您�
 
 此外，請參閱[我是否符合使用智慧型影像的資格？](#am-i-eligible-to-use-smart-imaging) 瞭解智慧型影像的預先要求。
 
-## 智慧型行銷是否可與HTTPS搭配運作？ HTTP/2如何？{#does-smart-imaging-working-with-https-how-about-http}
+## 智慧型行銷是否可搭配HTTPS運作？ HTTP/2如何？{#does-smart-imaging-working-with-https-how-about-http}
 
 智慧型影像可處理透過HTTP或HTTPS傳送的影像。 此外，它也可透過HTTP/2運作。
 
 ## 我是否符合使用智慧型影像的資格？{#am-i-eligible-to-use-smart-imaging}
 
-若要使用Smart Imaging，您公司的AEM帳戶上的Dynamic Media Classic或Dynamic Media必須符合下列需求：
+若要使用Smart Imaging，您公司的Dynamic Media經典或Dynamic Media必AEM須符合以下要求：
 
-* 使用Adobe搭售的CDN（內容放送網路）做為您授權的一部分。
+* 使用Adobe搭售的CDN（內容傳送網路）做為您授權的一部分。
 * 使用專用網域（例如`images.company.com`或`mycompany.scene7.com`），而不使用一般網域（例如`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
 若要尋找您的網域，請登入您的公司帳戶或帳戶。
 
 點選「**[!UICONTROL 設定>應用程式設定>一般設定]**」。 查找標有&#x200B;**[!UICONTROL 「已發佈伺服器名稱」的欄位。]**&#x200B;如果您目前使用一般網域，在提交技術支援票證時，可以請求移轉至您自己的自訂網域，做為此移轉的一部分。
 
-您的第一個自訂網域不需額外付費，只要取得Dynamic Media授權即可。
+您的第一個自訂網域不需額外購買Dynamic Media授權。
 
 ## 為我的帳戶啟用Smart Imaging的過程是什麼？{#what-is-the-process-for-enabling-smart-imaging-for-my-account}
 
@@ -131,41 +133,41 @@ Smart Imaging可與您現有的「影像預設集」搭配使用，並觀察您�
       按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。
 
       查找標有&#x200B;**[!UICONTROL 「已發佈伺服器名稱」的欄位。]**
-   1. 確認您是否透過Adobe使用CDN，而且未透過直接關係進行管理。
+   1. 驗證您是否透過Adobe使用CDN，而非直接關係管理。
    1. 確認您使用的是專用網域，例如`images.company.com`或`mycompany.scene7.com`，而不是通用網域，例如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
       若要尋找您的網域，請登入您的公司帳戶或帳戶。
 
       按一 **[!UICONTROL 下「設定>應用程式設定>一般設定」]**。
 
-      查找標有&#x200B;**[!UICONTROL 「已發佈伺服器名稱」的欄位。]**&#x200B;如果您目前使用一般的Dynamic Media Classic網域，則可請求移至您自己的自訂網域，做為轉換的一部分。
+      查找標有&#x200B;**[!UICONTROL 「已發佈伺服器名稱」的欄位。]**&#x200B;如果您目前使用一般的Dynamic Media經典網域，則可請求移至您自己的自訂網域，做為轉換的一部分。
    1. 指出您是否也需要此功能，才能透過HTTP/2運作。
 
 1. 技術支援將根據提交請求的順序將您添加到Smart Imaging客戶等待清單。
-1. 當Adobe準備好處理您的要求時，支援人員將會聯絡您以協調並設定目標日期。
-1. **可選**:您可以選擇在Staging中測試智慧型影像，然後Adobe將新功能推展至生產環境。
+1. 當Adobe準備好處理您的請求時，支援人員會與您聯絡以協調並設定目標日期。
+1. **可選**:您可以選擇在Adobe將新功能推送到生產環境之前，先在測試階段中測試智慧型影像。
 1. 完成後，支援會通知您。
-1. 為充份提升智慧型影像處理的效能，Adobe建議將「存留時間(TTL)」設定為24小時或更長。 TTL會定義CDN快取資產的時間長度。 要更改此設定，請：
+1. 為了最大限度地提高智慧映像的效能，Adobe建議將生存時間(TTL)設定為24小時或更長。 TTL會定義CDN快取資產的時間長度。 要更改此設定，請：
 
-   1. 如果您使用Dynamic Media Classic，請按一下「設定>應用程式設定>發佈設定>影像伺服器」。 ****&#x200B;將「**[!UICONTROL 預設用戶端快取時間」值設為「有效]**」24或更長。
-   1. 如果您使用動態媒體，請依照[這些指示](config-dynamic.md)進行。 將&#x200B;**[!UICONTROL Expiration]**&#x200B;值設為24小時或更長。
+   1. 如果您使用Dynamic Media經典，請按一下「設定>應用程式設定>發佈設定>影像伺服器」。 ****&#x200B;將「**[!UICONTROL 預設用戶端快取時間」值設為「有效]**」24或更長。
+   1. 如果使用Dynamic Media，請遵循[這些說明](config-dynamic.md)。 將&#x200B;**[!UICONTROL Expiration]**&#x200B;值設為24小時或更長。
 
 ## 我何時可以期待我的帳戶啟用Smart Imaging?{#when-can-i-expect-my-account-to-be-enabled-with-smart-imaging}
 
 請求的處理順序依技術支援部門接收的順序，依等待清單而定。
 
 >[!NOTE]
-啟用智慧型影像可能需要較長的前置時間，因為Adobe會清除快取。 因此，在任何指定時間，都只能處理少數客戶轉場。
+啟用「智慧映像」可能需要較長的前置時間，因為Adobe會清除快取。 因此，在任何指定時間，都只能處理少數客戶轉場。
 
 ## 切換到使用Smart Imaging時有哪些風險？{#what-are-the-risks-with-switching-over-to-use-smart-imaging}
 
-客戶網頁沒有風險。 不過，您應該注意到，轉換至Smart Imaging會清除CDN的快取，因為它涉及在AEM上移至Dynamic Media Classic或Dynamic Media的新組態。
+客戶網頁沒有風險。 不過，您應該注意到，轉換至Smart Imaging會清除CDN的快取，因為它涉及移至新的Dynamic MediaClassic或Dynamic Media組態AEM。
 
-在初始轉換期間，非快取的影像會直接點擊Adobe的原始伺服器，直到重新建立快取為止。 因此，Adobe計劃一次處理數個客戶轉場，以便在從我們的來源提取要求時仍能維持可接受的效能。 對於大部分客戶，快取會在約1至2天內在CDN中重新完整建立。
+在初始轉換期間，非快取的影像會直接點擊Adobe的原始伺服器，直到重新建立快取為止。 因此，Adobe計劃一次處理幾次客戶轉場，以便在從我們的來源提取請求時仍能維持可接受的效能。 對於大部分客戶，快取會在約1至2天內在CDN中重新完整建立。
 
 ## 如何驗證智慧型影像是否如預期般運作？ {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. 在您的帳戶設定智慧型影像後，請在瀏覽器上載入Dynamic Media Classic/Dynamic Media影像URL。
+1. 在您的帳戶設定智慧型影像後，請在瀏覽器上載入Dynamic Media經典/Dynamic Media影像URL。
 1. 在瀏覽器中按一下「**[!UICONTROL 檢視>開發人員>開發人員工具]**」，以開啟Chrome開發人員窗格。 或者，選擇您選擇的任何瀏覽器開發人員工具。
 
 1. 請確定開啟開發人員工具時已停用快取。
