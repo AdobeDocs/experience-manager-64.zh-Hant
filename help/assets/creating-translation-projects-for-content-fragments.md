@@ -9,18 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
+exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
+feature: 內容片段
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
 
-
 # 為內容片段建立翻譯項目{#creating-translation-projects-for-content-fragments}
 
-除了資產外，Adobe Experience Manager(AEM)Assets還支援[內容片段](content-fragments.md)（包括變數）的語言複製工作流程。 在內容片段上執行語言複製工作流程不需要其他最佳化。 在每個工作流程中，都會傳送整個內容片段以供翻譯。
+除了資產外，Adobe Experience Manager(AEM)資產還支援[內容片段](content-fragments.md)（包括變數）的語言複製工作流程。 在內容片段上執行語言複製工作流程不需要其他最佳化。 在每個工作流程中，都會傳送整個內容片段以供翻譯。
 
 您可以在內容片段上執行的工作流程類型與您為資產執行的工作流程類型完全相同。 此外，每個工作流類型中可用的選項都與資產的相應工作流類型下可用的選項相匹配。
 
@@ -53,14 +55,14 @@ ht-degree: 0%
 
 ## 轉換混合媒體片段{#translating-mixed-media-fragments}
 
-AEM可讓您翻譯包含各種類型媒體資產和系列的內容片段。 如果您翻譯包含內嵌資產的內容片段，則這些資產的翻譯副本會儲存在目標語言根目錄下。
+可讓AEM您翻譯包含各種類型媒體資產和系列的內容片段。 如果您翻譯包含內嵌資產的內容片段，則這些資產的翻譯副本會儲存在目標語言根目錄下。
 
 如果內容片段包含系列，則系列中的資產會與內容片段一起翻譯。 資產的翻譯副本會儲存在適當的目標語言根目錄中，位於符合來源語言根目錄下之來源資產實體位置的位置。
 
 若要能夠轉譯包含混合媒體的內容片段，請先編輯預設的轉譯架構，以便轉譯與內容片段關聯的內嵌資產和系列。
 
-1. 按一下／點選AEM標誌，並導覽至「**[!UICONTROL 工具>部署>雲端服務」]**。
-1. 在&#x200B;**[!UICONTROL Adobe Marketing Cloud]**&#x200B;下方找到&#x200B;**[!UICONTROL 翻譯整合]**，然後按一下／點選&#x200B;**[!UICONTROL 顯示設定]**。
+1. 按一下／點AEM選標誌，並導覽至「**[!UICONTROL 工具>部署>Cloud Services]**」。
+1. 在&#x200B;**[!UICONTROL Adobe Marketing Cloud]**&#x200B;下找到&#x200B;**[!UICONTROL 翻譯整合]** ，然後按一下／點選&#x200B;**[!UICONTROL 顯示配置]**。
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
@@ -163,4 +165,3 @@ AEM可讓您翻譯包含各種類型媒體資產和系列的內容片段。 如�
    >[!NOTE]
    >
    >將內容片段新增至現有專案或執行更新工作流程的程式與資產的對應程式類似。 有關這些程式的指導，請參閱資產的程式。
-
