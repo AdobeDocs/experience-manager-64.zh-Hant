@@ -1,26 +1,28 @@
 ---
 title: 預覽 Dynamic Media 資產
 seo-title: 預覽 Dynamic Media 資產
-description: 瞭解如何在動態媒體中預覽資產
-seo-description: 瞭解如何在動態媒體中預覽資產
+description: 瞭解如何在Dynamic Media預覽資產
+seo-description: 瞭解如何在Dynamic Media預覽資產
 uuid: f0ff2fc4-a263-4dbe-ba46-b07077b49ae0
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 77296bff-8429-4240-af93-26076ae431ec
+exl-id: ec05569a-6449-4430-9b9f-7ab051f44970
+feature: 資產管理，轉譯
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1031'
 ht-degree: 5%
 
 ---
 
-
 # 預覽 Dynamic Media 資產 {#previewing-assets}
 
-您可以使用&#x200B;**[!UICONTROL 預覽]**&#x200B;來查看客戶在其網頁瀏覽器中檢視動態媒體數位資產時的外觀。 指派給資產的預設內嵌跨裝置檢視器會用於&#x200B;**[!UICONTROL Preview]**。
+您可以使用&#x200B;**[!UICONTROL 預覽]**&#x200B;來檢視客戶在其網頁瀏覽器中檢視Dynamic Media數位資產時的外觀。 指派給資產的預設內嵌跨裝置檢視器會用於&#x200B;**[!UICONTROL Preview]**。
 
 檢視器是各種設定或「預設集」的集合，例如檢視器顯示大小、縮放行為、色彩配置、邊框、字型等，可決定使用者在電腦螢幕和行動裝置上檢視多媒體資產的方式。
 
@@ -110,4 +112,3 @@ ht-degree: 5%
   </tr>
  </tbody>
 </table>
-
