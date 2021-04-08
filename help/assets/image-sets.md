@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
+exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
+feature: 影像集
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 11%
+source-wordcount: '2066'
+ht-degree: 12%
 
 ---
-
 
 # 影像集 {#image-sets}
 
@@ -42,9 +44,9 @@ ht-degree: 11%
 
 1. [上傳多個檢視的主要影像。](#uploading-assets-in-image-sets)
 
-   首先，上傳影像集的影像。 由於使用者可在影像集檢視器中放大影像，因此當您選擇影像時，請考慮放大影像。 請確定影像在最大尺寸中至少有2000像素，以獲得最佳縮放細節。 動態媒體可以每張轉換高達2500萬像素的影像。 例如，您可使用5000 x 5000百萬像素影像或任何其他大小的組合，最高2500萬像素。
+   首先，上傳影像集的影像。 由於使用者可在影像集檢視器中放大影像，因此當您選擇影像時，請考慮放大影像。 請確定影像在最大尺寸中至少有2000像素，以獲得最佳縮放細節。 Dynamic Media每幅影像的轉譯率高達2500萬像素。 例如，您可使用5000 x 5000百萬像素影像或任何其他大小的組合，最高2500萬像素。
 
-   AEM Assets支援許多影像檔案格式，但建議使用無失真的TIFF、PNG和EPS影像。
+   AEM Assets支援許多影像檔案格式，但建議使用無損TIFF、PNG和EPS影像。
 
 1. [建立影像集。](#creating-image-sets)
 
@@ -54,7 +56,7 @@ ht-degree: 11%
 
    您也可以透過[批次集預設集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)自動建立影像集。
 
-   **重要** — 批集由IPS(Image Production System)建立，作為資產提取的一部分，並且僅在動態媒體- Scene7模式中可用。
+   **重要** — 批集由IPS（映像生產系統）建立，作為資產接收的一部分，並且僅在Dynamic Media-Scene7模式中可用。
 
    請參閱[準備要上傳和上傳檔案的影像集資產](#uploading-assets-in-image-sets)。
 
@@ -85,7 +87,7 @@ ht-degree: 11%
 
 要編輯影像集，請參閱[編輯影像集。](#editing-image-sets) 此外，您還可以檢視和編輯 [影像集屬性](managing-assets-touch-ui.md#editing-properties)。
 
-如果您在建立集時遇到問題，請參閱[疑難排解動態媒體- Scene7模式](troubleshoot-dms7.md#images-and-sets)中的影像和集。
+如果建立集時遇到問題，請參閱[疑難排解Dynamic Media-Scene7模式](troubleshoot-dms7.md#images-and-sets)中的映像和集。
 
 ## 上傳影像集{#uploading-assets-in-image-sets}中的資產
 
@@ -122,7 +124,7 @@ ht-degree: 11%
 >
 >您也可以透過[批次集預設集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)自動建立影像集。
 
-**重要：** 批次集是由IPS(Image Production System)作為資產擷取的一部分而建立，僅在動態媒體- Scene7模式中可用。
+**重要：** 批集由IPS（映像生產系統）建立，作為資產接收的一部分，僅在Dynamic Media-Scene7模式中可用。
 
 當您將資產新增至集合時，資產會自動以字母數字順序新增。 您可以在資產新增後手動重新排序或排序。
 
@@ -176,7 +178,7 @@ ht-degree: 11%
 
 您可以在使用者介面中建立影像集，或使用[批次集預設集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)自動建立影像集。
 
-**重要** — 批集由IPS  [Image Production ] Systems（IPS映像生產系統）建立，並且僅在動態媒體- Scene7模式下可用。
+**重要** — 批集由IPS  [Image Production ] Systems建立，是資產接收的一部分，僅在Dynamic Media-Scene7模式中可用。)
 
 不過，使用批集預設集建立的集合，請&#x200B;*not*&#x200B;出現在使用者介面中。 您可以以三種不同的方式檢視這些集。 （即使您在使用者介面中建立影像集，這些方法也可用）。
 
@@ -188,9 +190,9 @@ ht-degree: 11%
 
    ![chlimage_1-344](assets/chlimage_1-344.png)
 
-* 在搜索中，可以選擇&#x200B;**[!UICONTROL 過濾器]**，然後展開&#x200B;**[!UICONTROL 動態媒體]**&#x200B;並選擇&#x200B;**[!UICONTROL 集]**。
+* 在搜索中，可以選擇&#x200B;**[!UICONTROL 過濾器]**，然後展開&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;並選擇&#x200B;**[!UICONTROL 集]**。
 
-   搜尋會傳回在UI中手動建立或透過批次集預設集自動建立的相符集。 對於自動集，搜尋查詢是使用「以」搜尋准則進行，此搜尋准則與以「包含」搜尋准則為基礎的AEM搜尋不同。 將篩選器設定為&#x200B;**[!UICONTROL Sets]**&#x200B;是搜索自動集的唯一方法。
+   搜尋會傳回在UI中手動建立或透過批次集預設集自動建立的相符集。 對於自動集，搜索查詢使用「從」搜索標準執行，該搜索標準與基於「包含」搜索標準AEM的搜索標準不同。 將篩選器設定為&#x200B;**[!UICONTROL Sets]**&#x200B;是搜索自動集的唯一方法。
 
    ![chlimage_1-345](assets/chlimage_1-345.png)
 
@@ -223,7 +225,7 @@ ht-degree: 11%
    * 若要新增資產或更新現有資產，請點選&#x200B;**[!UICONTROL 新增資產]**。 導覽至資產，選取它，然後點選頁面右上角的&#x200B;**[!UICONTROL Select]**。
 
    >[!NOTE]
-   >如果您將AEM用縮圖取代為其他影像，以刪除該縮圖所使用的影像，原始資產仍會顯示。
+   >如果您將縮圖的AEM影像取代為其他影像，以刪除該影像，原始資產仍會顯示。
 
    * 若要刪除資產，請選取它，然後點選&#x200B;**[!UICONTROL 刪除資產]**。
    * 若要套用預設，請在頁面右上角附近點選&#x200B;**[!UICONTROL Preset]**，然後選取檢視器預設集。
