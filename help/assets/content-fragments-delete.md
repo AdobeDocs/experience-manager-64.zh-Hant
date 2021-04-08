@@ -9,20 +9,22 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
+exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
+feature: 內容片段
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '470'
 ht-degree: 12%
 
 ---
-
 
 # 內容片段 - 刪除考量事項 {#content-fragments-delete-considerations}
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
 
 ## 權限——刪除或不刪除{#permissions-delete-or-not-delete}
 
@@ -48,7 +50,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->另請參閱[如何在AEM](/help/sites-administering/audit-user-management-operations.md)中審核使用者管理作業。
+>另請參閱[](/help/sites-administering/audit-user-management-operations.md)中的AEMHow to Audit User Management Operations。
 
 ## 僅{#permissions-required-for-editor-functionality-only}編輯器功能所需的權限
 
@@ -97,4 +99,3 @@ ht-degree: 12%
 例如，組`content-authors-no-delete`的`remove`權限定義：
 
 ![cf-delete-03](assets/cf-delete-03.png)
-
