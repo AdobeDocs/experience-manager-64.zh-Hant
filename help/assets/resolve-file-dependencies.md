@@ -9,18 +9,20 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 05b7410b-82a1-4267-ac07-2edbc29e9ee8
+exl-id: 088d32a8-a47e-4ae6-a171-8d327d3dac64
+feature: 3D資產
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
 
-
 # 解決檔案相關性{#resolving-file-dependencies}
 
-主要3D模型檔案相依性（例如紋理映射檔案）會盡可能自動解析。 此功能是透過讓AEM在Asset檔案夾附近搜尋3D檔案中具有相同名稱的檔案來完成。 如果在「建立預覽處理」階段中無法解析一或多個相依性，資產的資訊卡會在「資訊卡檢視」**[!UICONTROL 中顯示下列紅色橫幅訊息：]**
+主要3D模型檔案相依性（例如紋理映射檔案）會盡可能自動解析。 此功能是透過在附近的AEM「資產」檔案夾中搜尋與3D檔案中相同名稱的檔案來完成。 如果在「建立預覽處理」階段中無法解析一或多個相依性，資產的資訊卡會在「資訊卡檢視」**[!UICONTROL 中顯示下列紅色橫幅訊息：]**
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
@@ -32,7 +34,7 @@ ht-degree: 0%
 
 1. 在「**[!UICONTROL 中繼資料屬性]**」頁面上，點選「**[!UICONTROL 相依性]**」標籤。
 
-   AEM無法自動解析的檔案會列在&#x200B;**[!UICONTROL 原始路徑]**&#x200B;欄下方，以紅色表示。
+   無法自AEM動解析的檔案列在&#x200B;**[!UICONTROL 原始路徑]**&#x200B;列下，以紅色表示。
 
 1. 執行下列一或多個作業：
 
@@ -50,7 +52,7 @@ ht-degree: 0%
 
    * **忽略相依項**。
 
-      如果不再需要遺失的相依性，請在&#x200B;**[!UICONTROL 參考資產]**&#x200B;欄下，在遺失檔案左側的文字欄位中輸入`n/a`，讓AEM 3D忽略檔案。
+      如果不再需要缺少的相依性，請在&#x200B;**[!UICONTROL 參考資產]**&#x200B;欄下，在遺失檔案左側的文字欄位中鍵入`n/a`，讓AEM3D忽略檔案。
 
 
 
@@ -58,4 +60,3 @@ ht-degree: 0%
 1. 點選「**[!UICONTROL 關閉]**」返回「卡片檢視」。****
 
    資產會自動重新處理，並具有新解析的相依性。
-
