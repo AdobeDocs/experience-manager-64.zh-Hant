@@ -1,28 +1,29 @@
 ---
-title: 如何在AEM中審核使用者管理作業
-seo-title: 如何在AEM中審核使用者管理作業
-description: 瞭解如何在AEM中審核使用者管理作業。
-seo-description: 瞭解如何在AEM中審核使用者管理作業。
+title: 如何審計用戶管理操AEM作
+seo-title: 如何審計用戶管理操AEM作
+description: 瞭解如何在中審核用戶管理操作AEM。
+feature: 運作
+seo-description: 瞭解如何在中審核用戶管理操作AEM。
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
+exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
 translation-type: tm+mt
-source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '320'
 ht-degree: 1%
 
 ---
 
-
-# 如何在AEM{#how-to-audit-user-management-operations-in-aem}中審核使用者管理作業
+# 如何審核{#how-to-audit-user-management-operations-in-aem}中的AEM用戶管理操作
 
 ## 簡介 {#introduction}
 
-AEM已推出記錄權限變更的功能，讓您稍後可進行審核。
+已AEM引入記錄權限更改的功能，以便稍後可以對其進行審核。
 
 此增強功能允許對用戶的權限和組分配執行審計CRUD（建立、讀取、更新、刪除）操作。 更具體地說，它將記錄：
 
