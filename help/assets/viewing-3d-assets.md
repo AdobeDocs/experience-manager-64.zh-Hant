@@ -1,24 +1,26 @@
 ---
 title: 檢視3D資產
-description: 瞭解AEM中資產詳細資訊頁面提供的互動式3D檢視器，以及如何使用它檢視3D資產。
+description: 瞭解中資產詳細資訊頁面提供的互動式3D檢視器，以AEM及如何使用它來檢視3D資產。
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+exl-id: 71f89564-a413-49f6-8d6e-c5305bf92c75
+feature: 3D資產
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1780'
 ht-degree: 2%
 
 ---
-
 
 # 檢視3D資產{#viewing-d-assets}
 
 >[!IMPORTANT]
 >
->不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更新版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) 檢視3D資產。
+>不AEM再支AEM援6.4中的3D。 Adobe建議您使用[中的3D資產功AEM能作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或&lt;a2/AEM> 6.5.3或更高版本。[](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) 檢視3D資產。
 
 本檔案說明如何在資產詳細資料中檢視3D資產，以及如何在網站中檢視3D元件中的資產。
 
@@ -28,9 +30,9 @@ ht-degree: 2%
 
 ![chlimage_1-139](assets/chlimage_1-139.png)
 
-除了在AEM 3D中使用預設階段外，您也可以使用您在協力廠商應用程式中建立並上傳至AEM的階段。
+除了在3D中使用預設階AEM段外，您也可以使用您在第三方應用程式中建立並上傳到的階段AEM。
 
-請參閱[關於AEM 3D](about-the-use-of-stages-in-aem-3d.md)中階段的使用。
+請參閱[關於3D&lt;a1/AEM>中階段的使用。](about-the-use-of-stages-in-aem-3d.md)
 
 >[!NOTE]
 >
@@ -51,9 +53,9 @@ ht-degree: 2%
 
 1. 請確定您已將3D資產上傳至AEM。
 
-   請參閱[關於在AEM](upload-processing-3d-assets.md)中上傳及處理3D資產。
+   請參閱[關於](upload-processing-3d-assets.md)中3D資產的上AEM傳和處理。
 
-1. 從AEM，在&#x200B;**[!UICONTROL Navigation]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL Assets]**。
+1. 從AEM **[!UICONTROL Navigation]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL Assets]**。
 1. 在頁面的右上角附近，從&#x200B;**[!UICONTROL View]**&#x200B;下拉式清單中，點選&#x200B;**[!UICONTROL Card View]**。
 1. 導覽至您要檢視的3D資產。
 1. 點選3D資產的資訊卡，以在資產詳細資訊頁面中開啟它。
@@ -107,7 +109,7 @@ ht-degree: 2%
 
    舞台提供環境——背景、地面和照明-3D模型可檢視。
 
-   請參閱[關於AEM 3D](about-the-use-of-stages-in-aem-3d.md)中階段的使用。
+   請參閱[關於3D&lt;a1/AEM>中階段的使用。](about-the-use-of-stages-in-aem-3d.md)
 
    * 在資產詳細資料頁面的右上角，點選&#x200B;**[!UICONTROL 相機選擇器]**&#x200B;圖示，然後選取您要套用至3D資產的相機檢視。
 
@@ -115,7 +117,7 @@ ht-degree: 2%
 
    舞台通常提供預先定義的相機。 您可以重新選取目前的相機，將它還原為預先定義的設定。
 
-   請參閱[關於AEM 3D](about-the-use-of-stages-in-aem-3d.md)中階段的使用。
+   請參閱[關於3D&lt;a1/AEM>中階段的使用。](about-the-use-of-stages-in-aem-3d.md)
 
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Save]**。
 1. 執行下列任一項作業：
@@ -130,7 +132,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->本節僅適用於用於3D資產類型（非Adobe Dimension）的傳統webGL檢視器。
+>本節僅適用於用於3D資產類型(非Adobe Dimension)的傳統webGL檢視器。
 
 視裝置類型而定，您可透過多種方式存取3D元件功能。
 
@@ -183,4 +185,3 @@ ht-degree: 2%
 1. 按住&#x200B;**ALT/option**&#x200B;鍵和滑鼠左鍵拖動攝像頭。 這樣可橫向移動照相機以允許在放大時查看對象的不同部分。 或者，按一下「軌道／平移切換」按鈕，切換至「平移」模式，然後按住滑鼠左鍵拖曳以平移相機。 ********&#x200B;再次按一下「軌道／平移」切換&#x200B;**[!UICONTROL 「軌道／平移」以回復為「軌道」模式。****]**
 1. 按一下「重設檢視器」，重設相機。 ****&#x200B;此動作會將物件重新帶入完整檢視，如果啟用，則會繼續自動回轉。
 1. 按一下&#x200B;**[!UICONTROL 全屏]**&#x200B;進入全屏模式。 使用鍵盤上的&#x200B;**[!UICONTROL Escape]**&#x200B;鍵或再次按一下&#x200B;**[!UICONTROL 全屏]**&#x200B;將3D查看器恢復為頁面嵌入模式。
-
