@@ -1,47 +1,49 @@
 ---
 title: 關於使用IBL階段
 seo-title: 關於使用IBL階段
-description: AEM 3D支援使用內建的Adobe Rapid Refine™轉譯器和協力廠商轉譯器，以影像為基礎的光源(IBL)進行互動式檢視和轉譯。
-seo-description: AEM 3D支援使用內建的Adobe Rapid Refine™轉譯器和協力廠商轉譯器，以影像為基礎的光源(IBL)進行互動式檢視和轉譯。
+description: 3DAEM支援使用內建Adobe快速調整™轉譯器和協力廠商轉譯器，以影像為基礎的光源(IBL)進行互動式檢視和轉譯。
+seo-description: 3DAEM支援使用內建Adobe快速調整™轉譯器和協力廠商轉譯器，以影像為基礎的光源(IBL)進行互動式檢視和轉譯。
 uuid: 495ba9cc-02f5-4ce5-9503-9f61ca5482db
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
+exl-id: 074ab20f-02df-4f9e-9512-93a76f5d234f
+feature: 3D資產
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '848'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
-
 # 關於使用IBL階段{#about-working-with-ibl-stages}
 
-AEM 3D支援使用內建的Adobe Rapid Refine™轉譯器和協力廠商轉譯器，以影像為基礎的光源(IBL)進行互動式檢視和轉譯。 您可以使用常用的編寫工具（例如Autodesk® Maya®或Autodesk® 3ds Max®）來建立IBL階段。
+3DAEM支援使用內建Adobe快速調整™轉譯器和協力廠商轉譯器，以影像為基礎的光源(IBL)進行互動式檢視和轉譯。 您可以使用常用的編寫工具（例如Autodesk® Maya®或Autodesk® 3ds Max®）來建立IBL階段。
 
 ## IBL的影像{#images-for-ibl}
 
 用於影像光源的影像應具有HDR（高動態範圍），以獲得最佳效果。 它們必須採用平／長格式，具有球形映射，提供對環境的全面覆蓋。
 
-目前，AEM 3D僅支援32位元TIFF。 如有必要，請使用Adobe Photoshop或類似的工具，在「Adobe Photoshop TIFF匯出」對話方塊中使用下列設定，將HDR影像轉換為TIFF:
+目前，AEM3D僅支援32位元TIFF。 如有必要，請使用Adobe Photoshop或類似工具，使用「Adobe PhotoshopTIFF匯出」對話方塊中的下列設定，將HDR影像轉換為TIFF:
 
 * **[!UICONTROL 位元深度]** - 32位元（浮動）
 * **[!UICONTROL 像素順序]** -交錯(RGBRGB)
 * **[!UICONTROL 影像壓縮]** - LZW
 * **[!UICONTROL 位元組順序]** - IBM PC
 
-雖然單一HDR影像通常足以處理IBL階段，但AEM 3D可允許最多3個不同的影像，以提供對IBL效果的額外控制：
+雖然單張HDR影像通常足以用於IBL階段，但AEM3D允許最多3張不同的影像，以提供對IBL效果的額外控制：
 
 * **漫射照明環境影像** -這種影像應該是HDR影像，但可以相對小，因為在使用影像進行漫射照明之前，會對影像進行大量濾波。
-* **反射環境影像** -此類影像用於在對象曲面中建立反射。它可以是尺寸和解析度的標準8位元RGB影像，提供所要的反射品質和清晰度。 如果指定HDR影像，AEM 3D會先將它轉換為8位元RGB，再使用專屬演算法。
-* **背景環境影像** -此類型的影像會當做背景使用。它可以是標準的8位元RGB影像，而且應具備舞台背景所需的大小／解析度／細節層級。 如果指定HDR影像，AEM 3D會使用專屬演算法將其轉換為8位元RGB。
+* **反射環境影像** -此類影像用於在對象曲面中建立反射。它可以是尺寸和解析度的標準8位元RGB影像，提供所要的反射品質和清晰度。 如果指定HDR影像，AEM3D會在使用專屬演算法之前，先將它轉換為8位元RGB。
+* **背景環境影像** -此類型的影像會當做背景使用。它可以是標準的8位元RGB影像，而且應具備舞台背景所需的大小／解析度／細節層級。 如果指定HDR影像，AEM3D會使用專屬演算法將其轉換為8位元RGB。
 
 >[!NOTE]
 >
->對於某些IBL影像，轉換算法可能存在一定的困難。 此困難可能導致背景在「預覽」或使用「快速調整」演算時過於亮或飽和。 在這種情況下，Adobe建議您使用Photoshop或類似的工具，手動將IBL影像轉換為8位元RGB影像。 請個別上傳此影像，並將它附加至舞台，做為背景環境影像。 漫射光源和反射環境影像必須永遠是32位元TIFF。
+>對於某些IBL影像，轉換算法可能存在一定的困難。 此困難可能導致背景在「預覽」或使用「快速調整」演算時過於亮或飽和。 在這種情況下，Adobe建議您使用Photoshop或類似的工具手動將IBL影像轉換為8位RGB影像。 請個別上傳此影像，並將它附加至舞台，做為背景環境影像。 漫射光源和反射環境影像必須永遠是32位元TIFF。
 
 ## 調整IBL舞台外觀{#adjusting-the-ibl-stage-appearance}
 
@@ -83,16 +85,15 @@ IBL級使用球形背景影像，預設情況下，球形背景影像直徑為20
 
 **要增加IBL級的球背景直徑**:
 
-1. 在CRXDE Lite中，導覽至您要增加其球面背景直徑的舞台。 例如，
+1. 在CRXDE Lite中，導航到要增加其球背景直徑的舞台。 例如，
 
    `/content/dam/test3d/stage-helipad.fbx`
 
 1. 將舞台節點展開到`jcr:content/metadata`。
 1. 將屬性`dam:gPlaneRadius`設為所需的毫米值。
 
-   為提高轉換效率，Adobe建議您將此值限制在您要在舞台上顯示的最大物件的最大尺寸。
+   為提高轉換效率，Adobe建議您將此值限制為要在舞台上顯示的最大對象的大約最大尺寸。
 
    例如，如果`dam:gPlaneRadius=20000`，則長度為20米的噴射平面模型會顯示良好。
 
-1. 在「CRXDE Lite」頁面的左上角附近，點選「Save All（全部保存）」。****
-
+1. 在CRXDE Lite頁面的左上角附近，點選「Save All（全部保存）」。****
