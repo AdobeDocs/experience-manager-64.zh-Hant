@@ -1,6 +1,6 @@
 ---
-title: 關於在AEM中上傳和處理3D資產
-seo-title: 關於在AEM中上傳和處理3D資產
+title: 關於上傳和處理3D資產，於AEM
+seo-title: 關於上傳和處理3D資產，於AEM
 description: 上傳和處理3D資產的最佳實務。
 seo-description: 上傳和處理3D資產的最佳實務。
 uuid: d8abf460-adff-4f0f-92ae-2c8651a17488
@@ -9,33 +9,35 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
+exl-id: 4b8b0247-0978-40b5-92e2-319cfa44b34e
+feature: 3D資產
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '868'
 ht-degree: 1%
 
 ---
 
-
-# 關於在AEM {#about-the-uploading-and-processing-of-d-assets-in-aem}中上傳和處理3D資產
+# 關於在{#about-the-uploading-and-processing-of-d-assets-in-aem}中上傳和處AEM理3D資產
 
 >[!IMPORTANT]
 >
->不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或[AEM 6.5.3或更新版本使用。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)。
+>不AEM再支AEM援6.4中的3D。 Adobe建議您使用[中的3D資產功AEM能作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia)或&lt;a2/AEM> 6.5.3或更高版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)。[
 
 使用標準上傳或同步機制，將3D資產及其相關參照的檔案匯入AEM Assets。
 
 請參閱[上傳資產](managing-assets-touch-ui.md#uploading-assets)。
 
-Adobe建議您在上傳主要3D模型檔案之前或同時上傳所有參照的檔案。 但是，這並非必要條件。
+Adobe建議您在上傳主要3D模型檔案之前或同時上傳所有參照檔案。 但是，這並非必要條件。
 
 上傳完成時，會轉換您的3D檔案，並套用其他處理程式，以準備資產供檢視和轉譯。
 
 ## 上傳3D資產{#best-practices-for-uploading-d-assets}的最佳實務
 
-* 通常，您在AEM Assets檔案夾階層中上傳3D內容的位置沒有限制。 不過，AEM 3D的自動化檔案相依性解決方案有範圍限制，可控制搜尋大型資產儲存庫所花的時間。 因此，Adobe建議您在上傳3D資產及其檔案依存項時，在合理的距離內，在每個檔案（共同的祖父資料夾）附近執行此動作。 解決檔案相依性後，您可以任意移動3D資產及其相依項，而不會遺失已建立的關係。
-* Adobe建議您在上傳&#x200B;*之前，針對3D內容*&#x200B;決定一致的資料夾結構。 以下提示是一些建議的方法，您可以採用：
+* 通常，您在AEM Assets檔案夾階層中上傳3D內容的位置並無限制。 但是AEM,3D的自動化檔案相依性解決有各種限制，可控制搜尋大型資產儲存庫所花的時間。 因此，Adobe建議您在上傳3D資產及其檔案依存項時，在合理的距離內，在每個檔案（共同的祖父資料夾）內執行此動作。 解決檔案相依性後，您可以任意移動3D資產及其相依項，而不會遺失已建立的關係。
+* Adobe建議您在上傳&#x200B;*之前，針對3D內容決定一致的資料夾結構。*&#x200B;以下提示是一些建議的方法，您可以採用：
 
    * **為您上傳的每個3D資產維護個別資料夾**。
 
@@ -113,4 +115,3 @@ Adobe建議您在上傳主要3D模型檔案之前或同時上傳所有參照的�
 >[!NOTE]
 >
 >您可以在&#x200B;**[!UICONTROL 詳細資料檢視]**&#x200B;中檢視3D資產，或在「建立預覽」階段完成後進行演算。 您不需要等待所有處理階段完成。
-
