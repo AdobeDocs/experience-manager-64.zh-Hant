@@ -9,20 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
+exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
+feature: 內容片段
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1764'
 ht-degree: 15%
 
 ---
-
 
 # 變化 - 編寫片段內容 {#variations-authoring-fragment-content}
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](../release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](../release-notes/sp-release-notes.md)。
 
 [變](content-fragments.md#constituent-parts-of-a-content-fragment) 數是內容片段的重要功能，可讓您建立和編輯主要內容的復本，以用於特定頻道和／或藍本。
 
@@ -45,7 +47,7 @@ ht-degree: 15%
 
 >[!CAUTION]
 >
->發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
+>發佈和／或參考片段後，當作AEM者開啟片段以進行重新編輯時，會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
 
 ## 編寫您的內容{#authoring-your-content}
 
@@ -379,4 +381,3 @@ ht-degree: 15%
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. 選擇&#x200B;**[!UICONTROL 同步]**，將更新並顯示變化。
-
