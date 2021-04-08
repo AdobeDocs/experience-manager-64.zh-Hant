@@ -9,20 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 96cf7c92-af98-417f-ab60-b368e3846ef8
+exl-id: 0123fb44-9f38-4d9e-9dce-7c9cfd4260e1
+feature: 內容片段，中繼資料
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '126'
+source-wordcount: '129'
 ht-degree: 9%
 
 ---
-
 
 # 中繼資料 - 片段屬性 {#metadata-fragment-properties}
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
 
 ## 編輯屬性／中繼資料{#editing-properties-meta-data}
 
@@ -43,6 +45,4 @@ ht-degree: 9%
    * **說明**
    * **標記**
    * 已建立（僅顯示）
-
    ![cfm-6420-07](assets/cfm-6420-07.png)
-
