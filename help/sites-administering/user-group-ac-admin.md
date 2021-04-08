@@ -1,21 +1,22 @@
 ---
 title: 用戶、組和訪問權限管理
 seo-title: 用戶、組和訪問權限管理
-description: 瞭解AEM中的使用者、群組和存取權限管理。
-seo-description: 瞭解AEM中的使用者、群組和存取權限管理。
+description: 瞭解中的用戶、組和訪問權限管理AEM。
+feature: 安全性
+seo-description: 瞭解中的用戶、組和訪問權限管理AEM。
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
+exl-id: 9c14e57b-019e-45ae-9e96-40424fa609c2
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '3137'
+source-wordcount: '3138'
 ht-degree: 0%
 
 ---
-
 
 # 用戶、組和訪問權限管理{#user-group-and-access-rights-administration}
 
@@ -243,7 +244,7 @@ CRX中的訪問權限評估如下：
 
 按一下GroupID（如果有）將開啟該群組的[群組管理](#group-administration)。
 
-**模** 擬者使用模擬功能，使用者可代表其他使用者工作。
+**模** 擬者使用模擬功能，使用者可以代表其他使用者工作。
 
 這表示使用者帳戶可以指定其他帳戶（使用者或群組），以便與其帳戶一起運作。 換言之，如果允許user-B模擬使用者-A，則user-B可使用user-A的完整帳戶詳細資訊（包括ID、名稱和存取權限）採取動作。
 
@@ -310,7 +311,7 @@ CRX中的訪問權限評估如下：
 1. 定義&#x200B;**Property**&#x200B;名稱。
 1. 從下拉清單中選擇&#x200B;**類型**。
 1. 定義&#x200B;**Value**。
-1. 按一下新屬性的「儲存（綠色按一下符號）」。
+1. 按一下新屬性的「儲存」（綠色按一下符號）。
 
 可使用垃圾筒符號刪除現有屬性。
 
@@ -639,11 +640,10 @@ CRX將驗證您的選擇；對於給定的承擔者，在給定節點上存在�
 
 ### 測試訪問控制策略{#testing-an-access-control-policy}
 
-1. 從CRXDE Lite工具欄中，選擇&#x200B;**工具** ，然後選擇&#x200B;**測試訪問控制……**。
+1. 從CRXDE Lite工具欄中，選擇&#x200B;**工具**，然後選擇&#x200B;**測試訪問控制……**。
 
 1. 右上方窗格會開啟新的對話方塊。 選擇要測試的&#x200B;**路徑**&#x200B;和／或&#x200B;**主體**。
 
 1. 按一下&#x200B;**Test**&#x200B;以查看您所選取的結果：
 
    ![crx_accesscontrol_test](assets/crx_accesscontrol_test.png)
-
