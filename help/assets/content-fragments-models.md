@@ -8,20 +8,22 @@ content-type: reference
 topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
+exl-id: 39ed07ec-54a6-4387-8435-e891726c411c
+feature: 內容片段
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '706'
 ht-degree: 12%
 
 ---
-
 
 # 內容片段模型 {#content-fragment-models}
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](../release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](../release-notes/sp-release-notes.md)。
 
 內容片段模型定義[內容片段](content-fragments.md)的內容結構。
 
@@ -29,7 +31,7 @@ ht-degree: 12%
 
 >[!CAUTION]
 >
->如果未啟用&#x200B;**[!UICONTROL 內容片段模型]**，則&#x200B;**[!UICONTROL 建立]**&#x200B;選項將無法用於建立新模型。
+>如果未啟用&#x200B;**[!UICONTROL 內容片段模型]**，則&#x200B;**[!UICONTROL 建立]**&#x200B;選項將不可用於建立新模型。
 
 若要啟用內容片段模型，您必須：
 
@@ -149,4 +151,3 @@ ht-degree: 12%
    >[!NOTE]
    >
    >如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型將會隨片段一起發佈。
-
