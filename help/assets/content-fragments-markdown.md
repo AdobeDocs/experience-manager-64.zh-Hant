@@ -9,20 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
+exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
+feature: 內容片段
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 11b5f915797faa691834d4286437e9e698af187d
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '554'
 ht-degree: 4%
 
 ---
-
 
 # Markdown {#markdown}
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
 
 當您在撰寫[時，內容片段編輯器會使用&#x200B;*markdown*&#x200B;語法，讓您輕鬆編寫內容：](content-fragments-variations.md#authoring-your-content)
 
@@ -219,4 +221,3 @@ ht-degree: 4%
     ` - minus sign (hyphen)`
 
     ` . dot`
-
