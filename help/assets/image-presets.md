@@ -1,24 +1,26 @@
 ---
-title: 套用動態媒體影像預設集
-seo-title: 套用動態媒體影像預設集
-description: 瞭解如何在動態媒體中套用影像預設集
-seo-description: 瞭解如何在動態媒體中套用影像預設集
+title: 套用Dynamic Media影像預設集
+seo-title: 套用Dynamic Media影像預設集
+description: 瞭解如何在Dynamic Media套用影像預設集
+seo-description: 瞭解如何在Dynamic Media套用影像預設集
 uuid: 8bafcbd0-6df0-4d5b-b2f7-116ddb4ec060
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
+exl-id: 07a4f315-a60e-456b-b02d-035b3f6ad9ad
+feature: 影像預設集
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 9%
+source-wordcount: '329'
+ht-degree: 10%
 
 ---
 
-
-# 套用動態媒體影像預設集{#applying-image-presets}
+# 套用Dynamic Media影像預設集{#applying-image-presets}
 
 「影像預設集」可讓資產動態傳遞不同大小、不同格式的影像，或動態產生的其他影像屬性。 匯出影像時，您可以選擇預設集，並依管理員指定的規格重新格式化影像。
 
@@ -32,7 +34,7 @@ ht-degree: 9%
 
 您可以隨時預覽影像，將影像預設集套用至影像。
 
-**若要套用動態媒體影像預設集**:
+**要應用Dynamic Media影像預設集**:
 
 1. 開啟資產，然後在左側導軌中點選下拉式功能表，然後點選「**[!UICONTROL 轉譯]**」。
 
@@ -56,4 +58,3 @@ ht-degree: 9%
    >如果資產和 *影像預設集尚未發佈* ，則 **[!UICONTROL URL按鈕(或]** URL **[!UICONTROL 和]****** RESS按鈕 (如果適用) 不可用。
    >
    >另請注意，影像預設集會自動發佈在Dynamic Media伺服器上。
-
