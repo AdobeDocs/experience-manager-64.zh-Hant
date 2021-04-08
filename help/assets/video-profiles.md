@@ -1,22 +1,24 @@
 ---
-title: 動態媒體視訊設定檔
-description: '動態媒體隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，可為客戶提供最佳的視訊觀賞體驗。 '
+title: Dynamic Media視訊設定檔
+description: 'Dynamic Media提供預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，可為客戶提供最佳的視訊觀賞體驗。 '
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
+exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
+feature: 視訊設定檔，視訊
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '3068'
+source-wordcount: '3071'
 ht-degree: 17%
 
 ---
 
+# Dynamic Media視頻配置檔案{#video-profiles}
 
-# 動態媒體視訊設定檔{#video-profiles}
-
-動態媒體已隨附預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 當您使用「最適化視訊編碼」設定檔來編碼主視訊時，視訊播放器會在播放期間根據客戶的網際網路連線速度自動調整視訊串流的品質。 這稱為可調式串流。
+Dynamic Media已提供預先定義的最適化視訊編碼設定檔。 此現成可用的設定檔中的設定已最佳化，讓客戶獲得最佳的檢視體驗。 當您使用「最適化視訊編碼」設定檔來編碼主視訊時，視訊播放器會在播放期間根據客戶的網際網路連線速度自動調整視訊串流的品質。 這稱為可調式串流。
 
 以下是決定影片品質的其他因素：
 
@@ -34,9 +36,9 @@ ht-degree: 17%
 >
 >若要產生視訊的中繼資料和相關的視訊影像縮圖，視訊本身需要在動態媒體中執行編碼程式。在AEM中，如果您已啟用動態媒 **** 體並設定視訊雲端服務，「動態媒體編碼視訊」工作流程會對視訊進行編碼。此工作流程會擷取工作流程處理歷程記錄和失敗資訊。
 >
->請參閱 [監控視訊編碼和YouTube發佈進度](video.md#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已啟用Dynamic Media並設定視訊雲端服務，**[!UICONTROL Dynamic Media Encode Video]**&#x200B;工作流程會在您上傳視訊時自動生效。 (如果您未使用動態媒體， **[!UICONTROL DAM更新資產工作流程將生效]** 。)
+>請參閱 [監控視訊編碼和YouTube發佈進度](video.md#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已啟用Dynamic Media並設定視訊雲端服務，**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程會在您上傳視訊時自動生效。 (如果您未使用動態媒體， **[!UICONTROL DAM更新資產工作流程將生效]** 。)
 >
->在搜尋資產時，中繼資料很實用。 縮圖是編碼期間產生的靜態視訊影像。 AEM系統需要這些視訊，並用於使用者介面，以協助您在&#x200B;**[!UICONTROL 卡片檢視]**、**[!UICONTROL 搜尋結果]**&#x200B;檢視和&#x200B;**[!UICONTROL 資產清單]**&#x200B;檢視中以視覺化方式識別視訊。 當您點選編碼視訊的&#x200B;**[!UICONTROL 轉譯]**&#x200B;圖示（畫家的浮動視窗）時，可看到產生的縮圖。
+>在搜尋資產時，中繼資料很實用。 縮圖是編碼期間產生的靜態視訊影像。 系統需要這些AEM視訊，並用於使用者介面，以協助您在&#x200B;**[!UICONTROL 卡片檢視]**、**[!UICONTROL 搜尋結果]**&#x200B;檢視和&#x200B;**[!UICONTROL 資產清單]**&#x200B;檢視中以視覺化方式識別視訊。 當您點選編碼視訊的&#x200B;**[!UICONTROL 轉譯]**&#x200B;圖示（畫家的浮動視窗）時，可看到產生的縮圖。
 
 完成視訊描述檔的建立後，即可將它套用至資料夾或多個資料夾。 請參閱[將視訊描述檔套用至資料夾。](#applying-a-video-profile-to-folders)
 
@@ -91,9 +93,9 @@ ht-degree: 17%
  </tbody> 
 </table>
 
-## 建立最適化串流{#creating-a-video-encoding-profile-for-adaptive-streaming}的動態媒體視訊編碼設定檔
+## 建立適應性串流{#creating-a-video-encoding-profile-for-adaptive-streaming}的Dynamic Media視訊編碼設定檔
 
-動態媒體已隨附預先定義的最適化視訊編碼設定檔- MP4 H.264的視訊上傳設定群組——已最佳化，以提供最佳的檢視體驗。 您可以在上傳影片時使用此設定檔。
+Dynamic Media已提供預先定義的最適化視訊編碼設定檔- MP4 H.264的視訊上傳設定群組——已最佳化以提供最佳的檢視體驗。 您可以在上傳影片時使用此設定檔。
 
 不過，如果此預先定義的描述檔不符合您的需求，您可以選擇建立自己的最適化視訊編碼描述檔。 當您使用&#x200B;**[!UICONTROL Encode for adaptive streaming]**-*最佳實務* —— 您新增至描述檔的所有編碼預設集都會經過驗證，以確保所有視訊具有相同的外觀比例。 此外，編碼視訊會視為串流的多位元速率集。
 
@@ -120,9 +122,9 @@ ht-degree: 17%
 
 完成視訊描述檔的建立後，即可將它套用至資料夾或多個資料夾。
 
-**若要建立動態媒體視訊編碼設定檔，以進行最適化串流**:
+**若要建立Dynamic Media視訊編碼設定檔，以進行最適化串流**:
 
-1. 點選或按一下AEM標誌，並導覽至「**[!UICONTROL 工具>資產>視訊設定檔]**」。
+1. 點選或按一AEM下標誌並導覽至&#x200B;**[!UICONTROL 工具>資產>視訊設定檔]**。
 1. 點選「**[!UICONTROL 建立]**」以新增視訊設定檔。
 
 1. 輸入配置檔案的名稱和說明。
@@ -151,16 +153,16 @@ ht-degree: 17%
 
 顯示處理指示器（或進度列），以便您可以視覺化地監視視頻編碼作業的進度。
 
-您也可以檢視`error.log`檔案，以監控編碼工作的進度、查看編碼是否完成，或查看任何工作錯誤。 `error.log`位於安裝AEM實例的`logs`資料夾中。
+您也可以檢視`error.log`檔案，以監控編碼工作的進度、查看編碼是否完成，或查看任何工作錯誤。 `error.log`位於安裝實例的`logs`資料夾AEM中。
 
-## 建立漸進式串流的動態媒體視訊編碼設定檔{#creating-a-video-encoding-profile-for-progressive-streaming}
+## 建立漸進式串流的Dynamic Media視訊編碼設定檔{#creating-a-video-encoding-profile-for-progressive-streaming}
 
 如果您選擇不使用「編碼」選項進行最適化串流 ****，請注意，您新增至描述檔的所有編碼預設集都會被視為個別視訊轉譯，以用於單位元速率串流或漸進式視訊傳送。此外，沒有驗證可確保所有視訊轉譯具有相同的外觀比例。
 
 視您執行的模式而定，支援的視訊格式轉碼器如下：
 
-* 動態媒體——場景7模式：H.264(.mp4)
-* 動態媒體——混合模式：H.264(.mp4)、WebM
+* Dynamic Media-Scene7模式：H.264(.mp4)
+* Dynamic Media-混合模式：H.264(.mp4)、WebM
 
 另請參閱[建立最適化串流的視訊編碼設定檔](#creating-a-video-encoding-profile-for-adaptive-streaming)。
 
@@ -170,7 +172,7 @@ ht-degree: 17%
 
 完成視訊描述檔的建立後，即可將它套用至資料夾或多個資料夾。
 
-**若要建立漸進式串流的動態媒體視訊編碼設定檔：**
+**若要建立漸進式串流的Dynamic Media視訊編碼設定檔：**
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 點選「**[!UICONTROL 建立]**」以新增視訊設定檔。
@@ -198,12 +200,12 @@ ht-degree: 17%
 
 ## 使用自訂新增的視訊編碼參數 {#using-custom-added-video-encoding-parameters}
 
-您可以編輯現有的視訊編碼設定檔，以利用在AEM中建立或編輯視訊設定檔時，使用者介面中找不到的進階視訊編碼參數。 您可自訂新增一或多個進階參數——例如&#x200B;**[!UICONTROL minBitrate]**&#x200B;和&#x200B;**[!UICONTROL maxBitrate]**-至您現有的描述檔。
+您可以編輯現有的視訊編碼描述檔，以利用在中建立或編輯視訊描述檔時，使用者介面中找不到的進階視訊編碼參數AEM。 您可自訂新增一或多個進階參數——例如&#x200B;**[!UICONTROL minBitrate]**&#x200B;和&#x200B;**[!UICONTROL maxBitrate]**-至您現有的描述檔。
 
 **若要使用自訂新增的視訊編碼參數**:
 
 1. 點選AEM標誌，然後導覽至「工 **[!UICONTROL 具 >一 般 > CRXDE Lite]**」。
-1. 從&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁面，在左側的&#x200B;**[!UICONTROL Explorer]**&#x200B;面板中，導覽至下列：
+1. 從&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁面，在左側的&#x200B;**[!UICONTROL 瀏覽器]**&#x200B;面板中，瀏覽至以下內容：
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit*`
 
@@ -260,19 +262,19 @@ ht-degree: 17%
    * 重複步驟3和4，將另一個參數新增至視訊編碼設定檔。
    * 在頁面左上角附近，點選&#x200B;**[!UICONTROL 全部儲存]**。
 
-1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁面的左上角，點選&#x200B;**[!UICONTROL Back Home]**&#x200B;圖示以返回AEM。
+1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁面的左上角，點選&#x200B;**[!UICONTROL 後門]**&#x200B;圖示以返回至AEM。
 
-### 編輯動態媒體視訊編碼設定檔{#editing-a-video-encoding-profile}
+### 編輯Dynamic Media視頻編碼配置檔案{#editing-a-video-encoding-profile}
 
 您可以編輯您建立的任何視訊編碼描述檔，以新增、編輯或刪除該描述檔中的視訊預設集。
 
-依預設，您無法編輯動態媒體隨附的預先定義、現成可用的「最適化視訊編碼」描述檔。 ****&#x200B;您可以輕鬆地複製描述檔，並使用新名稱加以儲存。 然後，您可以在複製的描述檔中編輯所需的預設集。
+依預設，您無法編輯隨附於Dynamic Media的預先定義、現成可用的「最適化視訊編碼」描述檔。 ****&#x200B;您可以輕鬆地複製描述檔，並使用新名稱加以儲存。 然後，您可以在複製的描述檔中編輯所需的預設集。
 
 另請參閱[視訊編碼的最佳實務](video.md#best-practices-for-encoding-videos)。
 
 要定義其他資產類型的高級處理參數，請參閱[配置資產處理](config-dms7.md#configuring-asset-processing)。
 
-**若要編輯動態媒體視訊編碼設定檔**:
+**要編輯Dynamic Media視頻編碼配置檔案**:
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 在&#x200B;**[!UICONTROL 視訊描述檔]**&#x200B;頁面上，勾選一個視訊描述檔名稱。
@@ -288,7 +290,7 @@ ht-degree: 17%
 
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Save]**。
 
-### 複製動態媒體視訊編碼設定檔{#copying-a-video-encoding-profile}
+### 複製Dynamic Media視頻編碼配置檔案{#copying-a-video-encoding-profile}
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 在&#x200B;**[!UICONTROL 視訊描述檔]**&#x200B;頁面上，勾選一個視訊描述檔名稱。
@@ -296,21 +298,21 @@ ht-degree: 17%
 1. 在&#x200B;**[!UICONTROL 視訊編碼描述檔]**&#x200B;頁面上，輸入描述檔的新名稱。
 1. 最佳實務是，請確定已選取「 **[!UICONTROL 最適化串流編碼]** 」核取方塊。點選資訊圖示以取得最適化串流的說明。 (如果您要複製漸進式視訊設定檔，請勿選取核取方塊。) 
 
-   在「動態媒體——混合」模式中，如果WebM視訊預設集是視訊設定檔的一部分，則無法進行最適化串流的「編碼」**[!UICONTROL ，因為所有預設集都必須是MP4。]**
+   在Dynamic Media-混合模式中，如果WebM視訊預設集是視訊設定檔的一部分，則無法進行最適化串流的&#x200B;**[!UICONTROL 編碼]**，因為所有預設集都必須是MP4。
 1. 在&#x200B;**[!UICONTROL 視訊編碼預設集]**&#x200B;標題下，新增、編輯或刪除構成描述檔的視訊編碼預設集。
 
    點選&#x200B;**[!UICONTROL Basic]**&#x200B;和&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤上每個選項旁的&#x200B;**[!UICONTROL 資訊]**&#x200B;圖示，以取得建議的設定和說明。
 
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Save]**。
 
-### 刪除動態媒體視訊編碼設定檔{#deleting-a-video-encoding-profile}
+### 刪除Dynamic Media視頻編碼配置檔案{#deleting-a-video-encoding-profile}
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 在&#x200B;**[!UICONTROL 視訊描述檔]**&#x200B;頁面上，檢查一或多個視訊描述檔名稱。
 1. 在工具列上，點選&#x200B;**[!UICONTROL Delete]**。
 1. 點選&#x200B;**[!UICONTROL 確定]**。
 
-## 將動態媒體視訊設定檔套用至資料夾{#applying-a-video-profile-to-folders}
+## 將Dynamic Media視頻配置檔案應用於資料夾{#applying-a-video-profile-to-folders}
 
 將視訊描述檔指派給檔案夾時，任何子檔案夾都會自動從其父檔案夾繼承描述檔。 這表示您只能將一個視訊描述檔指派給資料夾。 因此，請仔細考慮您上傳、儲存、使用和封存資產的檔案夾結構。
 
@@ -328,39 +330,39 @@ ht-degree: 17%
 
 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-#### 將動態媒體視訊描述檔套用至描述檔使用者介面{#applying-video-profiles-to-folders-from-profiles-user-interface}的資料夾
+#### 將Dynamic Media視頻配置檔案應用到配置檔案用戶介面{#applying-video-profiles-to-folders-from-profiles-user-interface}中的資料夾
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 選擇要應用於資料夾或多個資料夾的視頻配置檔案。
 1. 點選 **[!UICONTROL 「將描述檔套用至檔案夾」]** ，然後選取您要用來接收新上傳資產的檔案夾或多個檔案夾，並點選「套 **[!UICONTROL 用」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-#### 將動態媒體視訊描述檔套用至屬性{#applying-video-profiles-to-folders-from-properties}的資料夾
+#### 將Dynamic Media視頻配置檔案應用於屬性{#applying-video-profiles-to-folders-from-properties}中的資料夾
 
-1. 點選AEM標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊描述檔的檔案夾。
+1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊描述檔的資料夾。
 1. 在資料夾上，點選核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇「**[!UICONTROL 視頻配置檔案]**」頁籤，然後從下拉菜單中選擇配置檔案，然後按一下「保存並關閉」]**。**[!UICONTROL &#x200B;已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 
-### 全域套用動態媒體視訊設定檔{#applying-a-video-profile-globally}
+### 全域套用Dynamic Media視訊設定檔{#applying-a-video-profile-globally}
 
-除了將描述檔套用至檔案夾外，您也可以全域套用一個，如此任何檔案夾中上傳至AEM資產的內容都會套用選取的描述檔。
+除了將描述檔套用至資料夾外，您也可以全域套用一個，如此任何上傳至任何資料夾中資產的AEM內容都會套用選取的描述檔。
 
-**若要全域套用動態媒體視訊設定檔**:
+**若要在全球套用Dynamic Media視訊設定檔**:
 
-1. 導覽至CRXDE Lite至下列節點：`/content/dam/jcr:content`。
+1. 導航到CRXDE Lite到以下節點：`/content/dam/jcr:content`。
 1. 新增屬性&#x200B;**[!UICONTROL videoProfile]**:`/etc/dam/video/dynamicmedia/<name_of_video_encoding_profile>`
 1. 點選「**[!UICONTROL 全部儲存」。]**
 
 ![chlimage_1-519](assets/chlimage_1-519.png)
 
-## 從資料夾{#removing-a-video-profile-from-folders}中刪除動態媒體視頻配置檔案
+## 從資料夾{#removing-a-video-profile-from-folders}中刪除Dynamic Media視頻配置檔案
 
 從資料夾中刪除視頻配置檔案時，任何子資料夾都會自動繼承從其父資料夾中刪除的配置檔案。 不過，對檔案夾中發生的檔案處理仍維持不變。
 
 您可以從「工具」功能表內的資料夾或在資料夾內的「資料夾設定」中移除視訊描述檔 ********。本節說明如何以兩種方式從資料夾移除視訊描述檔。
 
-### 透過描述檔使用者介面{#removing-video-profiles-from-folders-via-profiles-user-interface}從資料夾移除動態媒體視訊描述檔
+### 通過Profiles用戶介面{#removing-video-profiles-from-folders-via-profiles-user-interface}從資料夾中刪除Dynamic Media視頻配置檔案
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 選擇要從資料夾或多個資料夾中刪除的視頻配置檔案。
@@ -368,9 +370,8 @@ ht-degree: 17%
 
    您可以確認視訊描述檔不再套用至資料夾，因為檔案夾名稱下方不會再顯示該名稱。
 
-### 通過「屬性{#removing-video-profiles-from-folders-via-properties}」從資料夾中刪除動態媒體視頻配置檔案
+### 通過「屬性{#removing-video-profiles-from-folders-via-properties}」從資料夾中刪除Dynamic Media視頻配置檔案
 
-1. 點選AEM標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要從中移除視訊設定檔的檔案夾。
+1. 點選標AEM志並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除視訊描述檔的檔案夾。
 1. 在資料夾上點選核取標籤以選取它，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇「**[!UICONTROL 視頻配置檔案]**」頁籤，然後從下拉菜單中選擇「**[!UICONTROL 無]**」並按一下「保存並關閉&#x200B;]**」。**[!UICONTROL &#x200B;已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
-
