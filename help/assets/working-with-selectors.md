@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
+exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
+feature: 選擇器
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '740'
 ht-degree: 19%
 
 ---
-
 
 # 使用選取工具 {#working-with-selectors}
 
@@ -30,7 +32,7 @@ ht-degree: 19%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-選擇熱點或影像映射所到的位置（而不是手動輸入）時，您使用選擇器。 只有您是AEM Sites客戶時，「網站」選擇器才能運作。 產品選擇器也需要AEM Commerce。
+選擇熱點或影像映射所到的位置（而不是手動輸入）時，您使用選擇器。 只有您是AEM Sites客戶時，網站選擇器才能運作。 產品選擇器也需要AEM商務。
 
 ## 選擇產品{#selecting-products}
 
@@ -50,11 +52,11 @@ ht-degree: 19%
 
    ![chlimage_1-523](assets/chlimage_1-523.png)
 
-   您可以點選&#x200B;**[!UICONTROL Browse]**&#x200B;並導覽至其他資料夾，以變更AEM瀏覽產品資料的位置。
+   您可以點選AEM **[!UICONTROL Browse]**&#x200B;並導覽至其他資料夾，以變更產品資料的瀏覽位置。
 
    ![chlimage_1-524](assets/chlimage_1-524.png)
 
-   點選&#x200B;**[!UICONTROL 排序方式]**&#x200B;以變更AEM依最新到最舊或最舊到最新排序。
+   點選&#x200B;**[!UICONTROL 排序方式]**&#x200B;以變更排序方式，AEM依最新至最舊或最舊至最新。
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
@@ -72,7 +74,7 @@ ht-degree: 19%
 
 ## 選擇站點{#selecting-sites}
 
-當您想要將熱點或影像地圖連結至AEM網站內管理的網頁時，請使用網站選擇器來選擇網頁。
+當您想要將熱點或影像地圖連結至網站內管理的網頁時，請使用網站選擇器來選擇網AEM頁。
 
 1. 導覽至「轉盤集」、「互動式影像」或「互動式視訊」，然後點選「動作 **** 」標籤 (僅在您已定義熱點或影像地圖時可用)。
 
@@ -88,7 +90,7 @@ ht-degree: 19%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 當您在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中點選熱點或影像地圖時，您會導覽至您指定的AEM網站頁面。
+1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果您點選熱點或影像地圖，則導覽至您指AEM定的網站頁面。
 
 ## 選擇資產{#selecting-assets}
 
@@ -105,7 +107,7 @@ ht-degree: 19%
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   您可以在&#x200B;**[!UICONTROL Path]**&#x200B;欄位中導覽至另一個檔案夾，以變更AEM瀏覽資產的位置。
+   您可以在&#x200B;**[!UICONTROL AEM路徑]**&#x200B;欄位中導覽至另一個資料夾，以變更資產的瀏覽位置。
 
    點選「**[!UICONTROL Collection]**」，僅搜尋系列中的資產。
 
@@ -118,4 +120,3 @@ ht-degree: 19%
 1. 點選核取標籤以選取資產。 資產隨即顯示。
 
    ![chlimage_1-536](assets/chlimage_1-536.png)
-
