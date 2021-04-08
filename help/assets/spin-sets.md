@@ -1,24 +1,26 @@
 ---
 title: 迴轉集
-description: 瞭解如何在動態媒體中使用回轉集。 「回轉集」(Spin Set)模擬旋轉物件的真實動作，從任何角度檢查它。
+description: 瞭解如何使用Dynamic Media的回轉集。 「回轉集」(Spin Set)模擬旋轉物件的真實動作，從任何角度檢查它。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
+feature: 迴轉集
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1845'
 ht-degree: 6%
 
 ---
-
 
 # 迴轉集 {#spin-sets}
 
 「回轉集」(Spin Set)模擬實際操作，即旋轉對象來檢查對象。 「回轉集」可讓您從任何角度檢視項目，從任何角度獲得關鍵視覺細節。
 
-回轉集可模擬360度檢視體驗。 動態媒體提供單軸回轉集，檢視器可在其中旋轉項目。 此外，使用者只需按幾下滑鼠，就可「自由格式」縮放和平移任何檢視。 這樣，用戶就可以更密切地從特定的角度檢查項目。
+回轉集可模擬360度檢視體驗。 Dynamic Media提供單軸回轉集，檢視器可在其中旋轉項目。 此外，使用者只需按幾下滑鼠，就可「自由格式」縮放和平移任何檢視。 這樣，用戶就可以更密切地從特定的角度檢查項目。
 
 回轉集由單字&#x200B;**[!UICONTROL SPINSET]**&#x200B;的橫幅指定。 此外，如果「回轉集」已發佈，則會顯示由&#x200B;**[!UICONTROL World]**&#x200B;圖示所指示的發佈日期，以及由&#x200B;**[!UICONTROL Pencil]**&#x200B;圖示所指示的最後修改日期。
 
@@ -46,7 +48,7 @@ ht-degree: 6%
    >
    >您也可以透過[批次集預設集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)自動建立回轉集。
    >
-   >*批集由IPS(Image Production System)建立，作為資產提取的一部分，並且僅在動態媒體- Scene7模式中可用*。
+   >*批集由IPS（映像生產系統）建立，作為資產接收的一部分，並且僅在Dynamic Media-Scene7模式中可用*。
 
 1. 視需要設定[回轉集檢視器預設集](managing-viewer-presets.md)。
 
@@ -70,7 +72,7 @@ ht-degree: 6%
 
 1. [將URL連結至您的Web應](linking-urls-to-yourwebapplication.md) 用程 [式或內嵌視訊或影像檢視器](embed-code.md)。
 
-   AEM Assets會建立回轉集的URL呼叫，並在您發佈回轉集後啟動這些呼叫。 您可以在預覽資產時複製這些URL。 或者，您也可以將它們內嵌在您的網站上。
+   AEM Assets會建立回轉集的URL呼叫，並在您發佈回轉集後加以啟動。 您可以在預覽資產時複製這些URL。 或者，您也可以將它們內嵌在您的網站上。
 
    選取「回轉集」，然後在左側導軌下拉式選單中選取「檢 **[!UICONTROL 視器]**」。
 
@@ -82,11 +84,11 @@ ht-degree: 6%
 
 至少，一維自旋集需要8-12個項目鏡頭，二維自旋集需要16-24個項目鏡頭。 拍攝時間必須定期，以呈現項目旋轉和翻轉的印象。 例如，如果一維回轉集包含12個鏡頭，請針對每個鏡頭旋轉項目30度(360/12)。
 
-您可以像[上傳AEM Assets](managing-assets-touch-ui.md)中的任何其他資產一樣，上傳回轉集的影像。
+您可以像[上傳AEM Assets的任何其他資產一樣，上傳回轉集的影像。](managing-assets-touch-ui.md)
 
 ### 拍攝回轉集影像的准則{#guidelines-for-shooting-spin-set-images}
 
-以下是回轉集影像的一些最佳實務。 一般而言，旋轉集中的影像越多，影像旋轉效果就越好。 不過，在集合中加入許多影像也會增加影像載入所花的時間。 AEM建議拍攝影像的下列准則，以用於回轉集：
+以下是回轉集影像的一些最佳實務。 一般而言，旋轉集中的影像越多，影像旋轉效果就越好。 不過，在集合中加入許多影像也會增加影像載入所花的時間。 AEM建議拍攝影像以用於回轉集的下列准則：
 
 * 至少，在一維回轉集中使用8-12張影像，在二維回轉集中使用16-24張影像。 至少需要8張影像才能旋轉360度。 一維回轉集比較常見，因為建立二維回轉集耗費大量人力。
 * 使用無損格式；建議使用TIFF和PNG。
@@ -102,9 +104,9 @@ ht-degree: 6%
 >
 >您也可以透過批次集預設集自動 [建立回轉集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。
 >
->批集由IPS(Image Production System)建立，作為資產提取的一部分，並且僅在動態媒體- Scene7模式中可用。
+>批集由IPS（映像生產系統）建立，作為資產接收的一部分，並且僅在Dynamic Media-Scene7模式中可用。
 >
->請參閱[設定動態媒體- Scene7模式](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)中的「建立批次集預設集以自動產生影像集和回轉集」。
+>請參閱[設定Dynamic Media-Scene7模式](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)中的「建立批次集預設集以自動產生影像集和回轉集」。
 
 **要建立回轉集：**
 
@@ -116,7 +118,7 @@ ht-degree: 6%
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-   當您建立回轉集時，可以變更回轉集縮圖，或允許AEM根據回轉集中的資產自動選取縮圖。 若要選取縮圖，請點選&#x200B;**[!UICONTROL 變更縮圖]**。選取任何影像（您也可以導覽至其他檔案夾以尋找影像）。 如果您已選取縮圖，然後決定要讓AEM從回轉集產生縮圖，請選取「切換至自動縮圖&#x200B;]**」。**[!UICONTROL 
+   當您建立回轉集時，可以變更回轉集縮圖，或AEM允許根據回轉集中的資產自動選取縮圖。 若要選取縮圖，請點選&#x200B;**[!UICONTROL 變更縮圖]**。選取任何影像（您也可以導覽至其他檔案夾以尋找影像）。 如果您已選取縮圖，然後決定AEM要從回轉集產生縮圖，請選取「切換至自動縮圖」**[!UICONTROL 。]**
 
 1. 執行下列任一項作業：
 
@@ -158,9 +160,9 @@ ht-degree: 6%
 
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
-1. 在搜索中，可以選擇&#x200B;**[!UICONTROL 過濾器]**，然後展開&#x200B;**[!UICONTROL 動態媒體]**&#x200B;並選擇&#x200B;**[!UICONTROL 集]**。
+1. 在搜索中，可以選擇&#x200B;**[!UICONTROL 過濾器]**，然後展開&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;並選擇&#x200B;**[!UICONTROL 集]**。
 
-   搜尋會傳回在使用者介面中手動建立或透過批次集預設集自動建立的相符集。 對於自動集，使用&#x200B;**[!UICONTROL Starts with]**&#x200B;搜尋准則執行搜尋查詢，該搜尋准則與基於使用&#x200B;**[!UICONTROL Contains]**&#x200B;搜尋准則的AEM搜尋不同。 將篩選器設定為&#x200B;**[!UICONTROL Sets]**&#x200B;是搜索自動集的唯一方法。
+   搜尋會傳回在使用者介面中手動建立或透過批次集預設集自動建立的相符集。 對於自動集，搜索查詢使用&#x200B;**[!UICONTROL 以]**&#x200B;搜索標準進行，該搜索標準與基於使用&#x200B;**[!UICONTROL 包含]**&#x200B;搜索標準AEM的搜索不同。 將篩選器設定為&#x200B;**[!UICONTROL Sets]**&#x200B;是搜索自動集的唯一方法。
 
    ![chlimage_1-386](assets/chlimage_1-386.png)
 
@@ -187,7 +189,7 @@ ht-degree: 6%
    * 若要重新排序影像，請將影像拖曳至新位置（選取重新排序圖示以移動項目）。
    * 若要依遞增或遞減順序排序項目，請點選欄標題。
    * 若要新增資產或更新現有資產，請點選&#x200B;**[!UICONTROL 新增資產]**。 導覽至資產，選取它，然後點選右上角附近的&#x200B;**[!UICONTROL Select]**。
-如果您將AEM用縮圖取代為其他影像，以刪除該縮圖所使用的影像，原始資產仍會顯示。
+如果您將縮圖的AEM影像取代為其他影像，以刪除該影像，原始資產仍會顯示。
    * 若要刪除資產，請選取資產並點選&#x200B;**[!UICONTROL 刪除資產]**。
    * 若要套用預設，請點選&#x200B;**[!UICONTROL Preset]**&#x200B;圖示並選取預設。
    * 要刪除整個回轉集，請導航至回轉集，選擇它，然後選擇&#x200B;**[!UICONTROL 刪除]**
