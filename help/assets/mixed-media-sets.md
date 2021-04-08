@@ -1,18 +1,20 @@
 ---
 title: 混合媒體集
-description: 瞭解如何在動態媒體中處理混合媒體集（影像、影像集、旋轉集和視訊）。
+description: 瞭解如何在Dynamic Media處理混合媒體集（影像、影像集、旋轉集和視訊）。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
+feature: 混合媒體集
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1472'
 ht-degree: 17%
 
 ---
-
 
 # 混合媒體集 {#mixed-media-sets}
 
@@ -58,7 +60,7 @@ ht-degree: 17%
 
 1. [將URL連結至您的Web應](linking-urls-to-yourwebapplication.md) 用程 [式或內嵌視訊或影像檢視器](embed-code.md)。
 
-   AEM Assets會建立「混合媒體集」的URL呼叫，並在您發佈混合媒體集後啟動這些呼叫。 您可以在預覽資產時複製這些URL。 或者，您也可以將它們內嵌在您的網站上。
+   AEM Assets會建立混合媒體集的URL呼叫，並在您發佈混合媒體集後啟動這些呼叫。 您可以在預覽資產時複製這些URL。 或者，您也可以將它們內嵌在您的網站上。
 
    選擇混合媒體集，然後在左側導軌下拉菜單中選擇&#x200B;**[!UICONTROL 查看器]**。
 
@@ -68,7 +70,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->如果您在建立集時遇到問題，請參閱[疑難排解動態媒體- Scene7模式](troubleshoot-dms7.md)。
+>如果建立集時遇到問題，請參閱[疑難排解Dynamic Media-Scene7模式](troubleshoot-dms7.md)。
 
 ## 上傳資產{#uploading-assets}
 
@@ -94,7 +96,7 @@ ht-degree: 17%
 
    >[!NOTE]
    >
-   >建立混合媒體集時，您可以變更混合媒體集縮圖，或允許AEM根據混合媒體集中的資產自動選取縮圖。 若要選取縮圖，請按一下「變更縮圖&#x200B;**[!UICONTROL 」，然後選取任何影像（您也可以導覽至其他檔案夾以尋找影像）。]**&#x200B;如果您已選取縮圖，然後決定要讓AEM從混合媒體集產生縮圖，請選取「切換至自動縮圖」**[!UICONTROL 。]**
+   >建立混合媒體集時，您可以變更混合媒體集縮圖，或AEM允許根據混合媒體集中的資產自動選取縮圖。 若要選取縮圖，請按一下「變更縮圖&#x200B;**[!UICONTROL 」，然後選取任何影像（您也可以導覽至其他檔案夾以尋找影像）。]**&#x200B;如果您已選取縮圖，然後決定要從混合媒AEM體集產生縮圖，請選取「切換至自動縮圖」**[!UICONTROL 。]**
 
 1. 點選&#x200B;**[!UICONTROL 資產選擇器]**&#x200B;以選取您要納入混合媒體集的資產。 選擇它們，然後點選&#x200B;**[!UICONTROL 選擇]**。
 
@@ -116,7 +118,7 @@ ht-degree: 17%
 
 1. 若要刪除資產，請選取對應的核取方塊，然後點選「刪除資產」。****
 1. 若要套用預設，請點選右上角的&#x200B;**[!UICONTROL Preset]**，然後選取要套用至資產的預設。
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。您新建立的「混合媒體集」會顯示在您所建立的資料夾中。
+1. 按一下「**[!UICONTROL 儲存]**」。您新建立的「混合媒體集」會顯示在您所建立的資料夾中。
 
 ## 編輯混合媒體集{#editing-mixed-media-sets}
 
@@ -153,7 +155,7 @@ ht-degree: 17%
 
    >[!NOTE]
    >
-   >* 若要編輯混合媒體集中的資產——導覽至混合媒體集。 點選（不要選取）設定，以在「AEM **[!UICONTROL 設定預覽]**」頁面中開啟它。 在左側導軌中，點選向下插入符號以開啟下拉式清單，然後點選&#x200B;**[!UICONTROL 設定成員]**。 在&#x200B;**[!UICONTROL 設定成員]**&#x200B;頁面中，將滑鼠指標暫留在資產上，然後點選&#x200B;**[!UICONTROL 編輯]**（鉛筆圖示）以開啟編輯頁面。
+   >* 若要編輯混合媒體集中的資產——導覽至混合媒體集。 點選（不要選取）設定，以在AEM **[!UICONTROL 設定預覽]**&#x200B;頁面中開啟。 在左側導軌中，點選向下插入符號以開啟下拉式清單，然後點選&#x200B;**[!UICONTROL 設定成員]**。 在&#x200B;**[!UICONTROL 設定成員]**&#x200B;頁面中，將滑鼠指標暫留在資產上，然後點選&#x200B;**[!UICONTROL 編輯]**（鉛筆圖示）以開啟編輯頁面。
    >* 要刪除整個混合介質集——從任何查看模式（如&#x200B;**[!UICONTROL Card]**&#x200B;視圖或&#x200B;**[!UICONTROL Column]**&#x200B;視圖），導航到混合介質集。 將滑鼠指標暫留在設定上，然後點選&#x200B;**[!UICONTROL Select]**（勾選圖示）。 按鍵盤上的&#x200B;**[!UICONTROL Backspace]**&#x200B;或點選&#x200B;**[!UICONTROL More]**（三個點列），然後點選&#x200B;**[!UICONTROL Delete]**。
 
 
@@ -168,4 +170,3 @@ ht-degree: 17%
 >[!NOTE]
 >
 >如果混合媒體內容未在您第一次發佈時完全進入傳送服務，您可能需要第二次發佈混合媒體集。
-
