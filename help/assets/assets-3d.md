@@ -1,55 +1,57 @@
 ---
-title: 使用AEM 3D資產
-description: 瞭解如何在AEM 3D中使用3D資產
+title: 使用AEM3D資產
+description: 瞭解如何在3D中使用3DAEM資產
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: introduction
 content-type: reference
+exl-id: 3cee9b4f-c4be-4ffc-970c-5680c8ebba47
+feature: 3D資產
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1177'
 ht-degree: 1%
 
 ---
 
-
-# 使用AEM 3D資產{#working-with-d-assets}
+# 使用AEM3D資產{#working-with-d-assets}
 
 >[!IMPORTANT]
 >
->不再支援AEM 6.4中的AEM 3D。 Adobe建議您將[AEM中的3D資產功能當做雲端服務](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或[AEM 6.5.3或更新版本使用。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
+>不AEM再支AEM援6.4中的3D。 Adobe建議您使用[中的3D資產功AEM能作為Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html)或&lt;a2/AEM> 6.5.3或更高版本。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)[
 
-AEM 3D(Adobe Experience Manager 3D)可讓您上傳、管理、檢視和演算3D內容。 針對個別物件最佳化檢視和轉譯支援。
+3DAEM(Adobe Experience Manager3D)可讓您上傳、管理、檢視和演算3D內容。 針對個別物件最佳化檢視和轉譯支援。
 
 另請參閱[AEM 3D發行說明](/help/release-notes/aem3d-release-notes.md)。
 
-另請參閱[安裝和配置AEM 3D](install-config-3d.md)。
+另請參閱[安裝和配AEM置3D](install-config-3d.md)。
 
-## 關於AEM 3D {#about-models-and-stages-in-aem-d}中的模型和階段
+## 關於3D &lt;a0/AEM>中的模型和階段{#about-models-and-stages-in-aem-d}
 
-AEM 3D可讓您在預先定義的「階段」環境中檢視和演算高品質的靜態、獨立3D模型。 基本上，舞台可為3D場景提供「光源」，並可在原生應用程式（例如Autodesk® Maya®或Autodesk 3ds Max®）中演算。 此外，舞台可以任選地包括預定義的相機、背景和地面幾何。
+3DAEM可讓您在預先定義的「階段」環境中檢視和演算高品質的靜態獨立3D模型。 基本上，舞台可為3D場景提供「光源」，並可在原生應用程式（例如Autodesk® Maya®或Autodesk 3ds Max®）中演算。 此外，舞台可以任選地包括預定義的相機、背景和地面幾何。
 
 上傳的包含光源的3D檔案會假設為舞台。 您可以在資產詳細資料頁面中開啟資產，將這些資產回復為簡單的3D物件。 點選「**[!UICONTROL 檢視屬性]**」，然後點選「**[!UICONTROL 基本]**」標籤。 在「資產類別」下拉式清單的「中繼資料」標題下，選取&#x200B;**[!UICONTROL 3D物件]**。
 
-當您建立3D模型以用於AEM 3D時，請注意下列事項：
+建立3D模型以用於3DAEM時，請注意以下事項：
 
 * 您的3D模型檔案只應包含一個物件，不含背景、地面、場景光源或相機。
 * 將模型置於接地平面上方。 當您使用提供地面平面的舞台檢視或演算時，此定位特別重要。 配置設定可用（預設為啟用），當使用快速調整預覽或渲染時，該配置設定會使對象移動到地面平面上方。 此設定不會影響使用協力廠商轉譯器（例如，透過Maya）進行轉譯，因此，不位於地面平面上方的物件可能會部分隱藏。
 * 定位模型，使其能夠以坐標系原點(0,0,0)的橫向合理居中。 如此可確保您獲得良好的互動式檢視體驗。
-* 除了紋理映射外，還支援外部檔案參照。 因此，您必須先將任何參考內容內嵌在主要模型檔案中，才能將其上傳至AEM。
+* 除了紋理映射外，還支援外部檔案參照。 因此，您必須先在主要模型檔案中內嵌任何參考內容，才能將其上傳至AEM。
 
-   請參閱[關於在AEM](upload-processing-3d-assets.md)中上傳及處理3D資產。
+   請參閱[關於](upload-processing-3d-assets.md)中3D資產的上AEM傳和處理。
 
-* 一般場景照明由舞台提供。 因此，Adobe不建議您將光源加入3D模型檔案。 可在模型中包含光源。 但是，它們必須僅特定於模型。 例如，可能需要加入額外的光源，以使被其他部分遮住的部分物件變亮。 因此，光是舞台燈就看不到。
+* 一般場景照明由舞台提供。 因此，Adobe不建議您將光源與3D模型檔案一起使用。 可在模型中包含光源。 但是，它們必須僅特定於模型。 例如，可能需要加入額外的光源，以使被其他部分遮住的部分物件變亮。 因此，光是舞台燈就看不到。
 
-## AEM 3D {#supported-files-in-aem-d}中支援的檔案
+## 3D AEM {#supported-files-in-aem-d}中支援的檔案
 
 典型的3D資產具有主模型檔案，且無或多個參照檔案。 參考的檔案包括紋理對應或&#x200B;**IBL（影像光源）**&#x200B;影像。
 
 ### 關於主3D模型檔案{#about-the-primary-d-model-file}
 
-主3D模型檔案包含實際的3D模型幾何和應用於模型曲面的（預設）材料的定義。 AEM 3D支援下列主要3D模型檔案格式：
+主3D模型檔案包含實際的3D模型幾何和應用於模型曲面的（預設）材料的定義。 AEM 3D支援以下主要3D模型檔案格式：
 
 * Wavefront OBJ檔案格式(`.obj`)
 
@@ -59,7 +61,7 @@ AEM 3D可讓您在預先定義的「階段」環境中檢視和演算高品質�
 
    Autodesk 3D檔案交換格式；二進位和ASCII格式。
 
-   當您在協力廠商應用程式中建立FBX檔案時，Adobe建議使用下列組態設定（請參閱下表）。 這些設定可協助您針對想要在AEM中使用的3D檔案取得最佳效果。 選項名稱取自&#x200B;**[!UICONTROL Autodesk Maya FBX Export Options]**&#x200B;對話框。
+   當您在協力廠商應用程式中建立FBX檔案時，Adobe建議使用下列組態設定（請參閱下表）。 這些設定可協助您針對想要使用的3D檔案取得最佳效果AEM。 選項名稱取自&#x200B;**[!UICONTROL Autodesk Maya FBX Export Options]**&#x200B;對話框。
 
 <table> 
  <tbody> 
@@ -81,7 +83,7 @@ AEM 3D可讓您在預先定義的「階段」環境中檢視和演算高品質�
   </tr> 
   <tr> 
    <td>動畫</td> 
-   <td><p>選擇或取消選擇。</p> <p>如果您選擇選取此選項，AEM 3D會忽略檔案中的動畫資訊。</p> </td> 
+   <td><p>選擇或取消選擇。</p> <p>如果選擇選取此選項， AEM 3D將忽略檔案中的動畫資訊。</p> </td> 
   </tr> 
   <tr> 
    <td>相機</td> 
@@ -93,15 +95,15 @@ AEM 3D可讓您在預先定義的「階段」環境中檢視和演算高品質�
   </tr> 
   <tr> 
    <td>設備——自動</td> 
-   <td>選取. AEM 3D在匯入時轉換。</td> 
+   <td>選取. 3DAEM在匯入時轉換。</td> 
   </tr> 
   <tr> 
    <td>軸轉換——向上軸</td> 
-   <td><p><strong>Y-up</strong></p> <p>從Maya匯出時，Y-up會提供一致的結果，而且是此AEM 3D版本中FBX檔案的偏好坐標系。</p> </td> 
+   <td><p><strong>Y-up</strong></p> <p>從Maya匯出時，Y-up會產生一致的結果，是此3D版本中FBX檔案的偏AEM好坐標系。</p> </td> 
   </tr> 
   <tr> 
    <td>內嵌媒體</td> 
-   <td>兩個選項都受支援。 如果選取內嵌，AEM 3D會將內嵌媒體擷取至與模型檔案名稱相同且附加<code>.fbm</code>的相鄰資料夾。</td> 
+   <td>兩個選項都受支援。 如果選擇嵌入，AEM3D將嵌入介質提取到與附加<code>.fbm</code>的模型檔案同名的相鄰資料夾。</td> 
   </tr> 
   <tr> 
    <td>FBX檔案格式——類型</td> 
@@ -114,7 +116,7 @@ AEM 3D可讓您在預先定義的「階段」環境中檢視和演算高品質�
  </tbody> 
 </table>
 
-如果在AEM製作伺服器上安裝並設定Autodesk Maya，則支援下列其他檔案格式：
+如果在編寫伺服器上安裝並配置了Autodesk Maya，則支援以下其他文AEM件格式：
 
 * 瑪雅汽車旅館
 
@@ -136,11 +138,11 @@ AEM 3D可讓您在預先定義的「階段」環境中檢視和演算高品質�
 * 不透明度地圖
 * 粗糙度地圖（又稱為光澤、反射率或余弦功率地圖）
 
-主要3D模型檔案中的材質可參照AEM 3D忽略的其他類型地圖。
+主3D模型檔案中的材料可以參照3D忽略的其他類型AEM的映射。
 
 ### IBL（影像光源）影像{#ibl-image-based-lighting-images}
 
-定義舞台的3D模型檔案可以引用單個IBL環境映像。 目前，AEM 3D僅支援32位元經緯度格式的TIFF影像，以用於擴散IBL和反射。 對於球面場景背景，也支援8位元RGB影像。
+定義舞台的3D模型檔案可以引用單個IBL環境映像。 目前， AEM 3D僅支援經緯度格式的32位元TIFF影像，以用於擴散IBL和反射。 對於球面場景背景，也支援8位元RGB影像。
 
 請參閱[關於使用IBL階段](working-with-ibl-stages.md)。
 
@@ -161,5 +163,4 @@ Y-up是本版次FBX檔案的首選坐標系。
 
 ## 在主3D模型檔案{#naming-materials-in-a-primary-d-model-file}中命名材料
 
-將&#x200B;*表面*&#x200B;定義為由相同材料覆蓋的3D模型的表面區域。 此材料還提供曲面的名稱。 因此，Adobe建議您依此命名主要3D模型檔案中包含的材質。 例如，使用特定名稱（例如&quot;Body&quot;、&quot;Windows&quot;、&quot;Tires&quot;或&quot;Rims&quot;），較之使用模糊名稱（例如&quot;Red&quot;、&quot;Glass&quot;、&quot;Rubber&quot;、&quot;Aluminum&quot;）。
-
+將&#x200B;*表面*&#x200B;定義為由相同材料覆蓋的3D模型的表面區域。 此材料還提供曲面的名稱。 因此，Adobe建議您相應地命名主3D模型檔案中包含的材料。 例如，使用特定名稱（例如&quot;Body&quot;、&quot;Windows&quot;、&quot;Tires&quot;或&quot;Rims&quot;），較之使用模糊名稱（例如&quot;Red&quot;、&quot;Glass&quot;、&quot;Rubber&quot;、&quot;Aluminum&quot;）。
