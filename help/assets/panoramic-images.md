@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
+exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
+feature: 全景影像
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '575'
 ht-degree: 4%
 
 ---
-
 
 # 全景影像 {#panoramic-images}
 
@@ -28,7 +30,7 @@ ht-degree: 4%
 
 * 寬高比為2。
 
-   您可以在以下位置覆寫&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;中2的預設外觀比例設定：
+   您可以在以下位置覆寫&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;中2的預設長寬比設定：
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
@@ -38,11 +40,11 @@ ht-degree: 4%
 
 若要上傳資產以搭配全景影像檢視器使用，請參閱[上傳資產](managing-assets-touch-ui.md#uploading-assets)。
 
-## 配置動態媒體經典{#configuring-dynamic-media-classic-scene}
+## 配置Dynamic Media經典{#configuring-dynamic-media-classic-scene}
 
-若要讓全景影像檢視器在AEM中正常運作，您必須將全景影像檢視器預設集與Dynamic Media Classic和Dynamic Media Classic特定中繼資料同步化，如此檢視器預設集就會在JCR中更新。 若要完成此作業，請依下列方式設定Dynamic Media Classic:
+若要讓全景影像檢視器正常運作，AEM您必須將全景影像檢視器預設集與Dynamic Media經典和Dynamic Media經典中繼資料同步化，讓檢視器預設集在JCR中更新。 要實現此目的，請按以下方式配置Dynamic Media經典：
 
-1. [登入您每個公司帳戶的Dynamic Media Classic桌](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) 面應用程式。
+1. [請登入每個公司帳戶的Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) 經典案頭應用程式。
 
 1. 在頁面的右上角附近，按一下「設定>應用程式設定>發佈設定>影像伺服器」。****
 1. 在&#x200B;**[!UICONTROL 影像伺服器發佈]**&#x200B;頁面上，從頂端附近的&#x200B;**[!UICONTROL 發佈內容]**&#x200B;下拉式選單中，選取&#x200B;**[!UICONTROL 影像伺服]**。
@@ -50,7 +52,7 @@ ht-degree: 4%
 1. 在相同的&#x200B;**[!UICONTROL 影像伺服器發佈]**&#x200B;頁面上，找到標題&#x200B;**[!UICONTROL 請求屬性]**。
 1. 在&#x200B;**[!UICONTROL 請求屬性]**&#x200B;標題下，找到&#x200B;**[!UICONTROL 回覆影像大小限制]**。 然後，在相關的&#x200B;**[!UICONTROL Width]**&#x200B;和&#x200B;**[!UICONTROL Height]**&#x200B;欄位中，增加全景影像的最大允許影像大小。
 
-   Dynamic Media Classic的限制為25,000,000像素。 寬高比為2:1的影像允許的最大大小為7000 x 3500。 不過，對於一般的桌上型電腦螢幕，4096 x 2048像素就足夠了。
+   Dynamic Media經典影像的限制為25,000,000像素。 寬高比為2:1的影像允許的最大大小為7000 x 3500。 不過，對於一般的桌上型電腦螢幕，4096 x 2048像素就足夠了。
 
    >[!NOTE]
    >
@@ -61,7 +63,7 @@ ht-degree: 4%
    * 將「請求模糊化模式」設為「已停用」。********
    * 將「請求鎖定模式」**[!UICONTROL 設定為「已禁用」]**。]****[!UICONTROL 
 
-   在AEM中使用&#x200B;**[!UICONTROL Panoramic Media]**&#x200B;元件時，必須進行這些設定。
+   使用&#x200B;**[!UICONTROL 全景媒體]**&#x200B;元件時，必須進行這些設定AEM。
 
 1. 在&#x200B;**[!UICONTROL 影像伺服器發佈]**&#x200B;頁面的左側，點選&#x200B;**[!UICONTROL 儲存]**。
 
@@ -71,11 +73,11 @@ ht-degree: 4%
 
 如果您將影像放入WCM的&#x200B;**[!UICONTROL 全景媒體]**&#x200B;元件中，而元件預留位置已收合，您可能會想要疑難排解：
 
-* 如果您遇到403 Forbidden錯誤，可能是由於要求的影像大小過大所致。 查看[配置動態媒體經典](#configuring-dynamic-media-classic-scene)中的&#x200B;*回覆影像大小限制*&#x200B;設定。
+* 如果您遇到403 Forbidden錯誤，可能是由於要求的影像大小過大所致。 查看[配置Dynamic Media經典](#configuring-dynamic-media-classic-scene)中的&#x200B;*回復影像大小限制*&#x200B;設定。
 
 * 對於資產上的&#x200B;*無效鎖定*&#x200B;或頁面上顯示的&#x200B;*剖析錯誤*，請勾選&#x200B;**[!UICONTROL 請求模糊化模式]**&#x200B;和&#x200B;**[!UICONTROL 請求鎖定模式]**&#x200B;以確保它們已停用。
 * 對於受污染的畫布錯誤，請為影像資產的先前請求設定&#x200B;**[!UICONTROL 規則集定義檔案路徑並使CTN]**&#x200B;無效。
-* 如果影像要求的大小超過支援的限制，影像品質變得非常低，請檢查「**[!UICONTROL JPEG編碼屬性>品質]**」設定是否不是空的。 **[!UICONTROL Quality]**&#x200B;欄位的典型設定為`95`。 您可以在&#x200B;**[!UICONTROL 影像伺服器發佈]**&#x200B;頁面上找到設定。 若要存取頁面，請參閱[設定動態媒體經典](#configuring-dynamic-media-classic-scene)。
+* 如果影像要求的大小超過支援的限制，影像品質變得非常低，請檢查「**[!UICONTROL JPEG編碼屬性>品質]**」設定是否不是空的。 **[!UICONTROL Quality]**&#x200B;欄位的典型設定為`95`。 您可以在&#x200B;**[!UICONTROL 影像伺服器發佈]**&#x200B;頁面上找到設定。 要訪問該頁，請參閱[配置Dynamic Media經典](#configuring-dynamic-media-classic-scene)。
 
 ## 預覽全景影像{#previewing-panoramic-images}
 
