@@ -9,20 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
+exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
+feature: 內容片段
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1511'
 ht-degree: 11%
 
 ---
-
 
 # 管理內容片段 {#managing-content-fragments}
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
 
 內容片段會儲存為&#x200B;**[!UICONTROL Assets]**，因此主要是從&#x200B;**[!UICONTROL Assets]**&#x200B;主控台管理。
 
@@ -194,9 +196,9 @@ ht-degree: 11%
 
    將退出編輯器，而不保存最新的更改。
 
-編輯您的內容片段時，AEM會自動建立版本，以確保在您&#x200B;**[!UICONTROL Cancel]**&#x200B;變更時，先前的內容可以復原：
+編輯內容片段時，會自AEM動建立版本，以確保在您&#x200B;**[!UICONTROL Cancel]**&#x200B;變更時，舊版內容可以復原：
 
-1. 當開啟內容片段以進行編輯時，AEM會檢查是否有Cookie型Token，指出是否存在&#x200B;*編輯工作階段*:
+1. 當開啟內容片段進行編輯時AEM，會檢查是否存在Cookie型Token，指出&#x200B;*編輯工作階段*&#x200B;是否存在：
 
    1. 如果找到代號，則片段會視為現有編輯工作階段的一部分。
    1. 如果代號是&#x200B;*not*，且使用者開始編輯內容，則會建立版本，並傳送此新編輯工作階段的代號給用戶端，並儲存在Cookie中。
@@ -319,7 +321,7 @@ ht-degree: 11%
 
 >[!CAUTION]
 >
->發佈和／或參考片段後，當作者開啟片段以進行重新編輯時，AEM會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
+>發佈和／或參考片段後，當作AEM者開啟片段以進行重新編輯時，會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
 
 ## 刪除片段{#deleting-a-fragment}
 
@@ -338,4 +340,3 @@ ht-degree: 11%
    >[!CAUTION]
    >
    >如果片段已在頁面中參考，您會看到警告訊息，並需要確認您要繼續執行強制刪 **[!UICONTROL 除]**。片段及其內容片段元件將會從任何內容頁面中刪除。
-
