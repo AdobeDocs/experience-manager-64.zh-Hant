@@ -1,30 +1,32 @@
 ---
-title: 將AEM 3D與Autodesk Maya整合
-seo-title: 將AEM 3D與Autodesk Maya整合
-description: 您可選擇將AEM 3D與Autodesk® Maya®軟體整合，以支援原生Maya檔案（.MA和。MB），並讓您使用任何可用的Maya轉譯器在AEM中轉譯3D資產。
-seo-description: 您可選擇將AEM 3D與Autodesk® Maya®軟體整合，以支援原生Maya檔案（.MA和。MB），並讓您使用任何可用的Maya轉譯器在AEM中轉譯3D資產。
+title: 整合AEM3D與Autodesk Maya
+seo-title: 整合AEM3D與Autodesk Maya
+description: 您可選擇將AEM3D與Autodesk® Maya®軟體整合，以支援原生Maya檔案（.MA和。MB），並讓您使用任何可用的Maya轉譯程式來轉譯AEM3D資產。
+seo-description: 您可選擇將AEM3D與Autodesk® Maya®軟體整合，以支援原生Maya檔案（.MA和。MB），並讓您使用任何可用的Maya轉譯程式來轉譯AEM3D資產。
 uuid: 07ff17b6-bdfc-4617-8b16-42aaf5c73fc7
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
+exl-id: 52ecbf81-0953-4c44-bc2c-d40e507b8d98
+feature: 3D資產
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '874'
+source-wordcount: '876'
 ht-degree: 0%
 
 ---
 
-
-# 將AEM 3D與Autodesk Maya {#integrating-aem-d-with-autodesk-maya}整合
+# 將AEM3D與Autodesk Maya {#integrating-aem-d-with-autodesk-maya}整合
 
 >[!NOTE]
 >
 >此任務是可選的，僅與Windows相關。
 
-您可選擇將AEM 3D與Autodesk® Maya®軟體整合，以支援原生Maya檔案（`.MA`和`.MB`），並讓您使用任何可用的Maya轉譯器在AEM中轉譯3D資產。
+您可選擇將AEM3D與Autodesk® Maya®軟體整合，以支援原生Maya檔案（`.MA`和`.MB`），並讓您使用任何可用的Maya轉譯程式來轉譯AEM3D資產。
 
 *此整合僅適用於Windows*。
 
@@ -32,17 +34,17 @@ ht-degree: 0%
 
 請參閱[進階組態設定](advanced-config-3d.md)。
 
-另請參閱[「整合AEM 3D與AutoDesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)」。
+另請參閱[將AEM3D與AutoDesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)整合。
 
-**若要將AEM 3D與Autodesk Maya整合**:
+**若要將AEM3D與Autodesk Maya整合**:
 
-1. 在AEM所在的相同伺服器上安裝Autodesk Maya 2016軟體。
+1. 將Autodesk Maya 2016軟體安裝在托管的同一台服AEM務器上。
 
    在安裝後，請確認您可以開啟和使用Maya，且沒有授權問題。
 
    >[!NOTE]
    >
-   >AEM僅使用Maya命令列轉換工具(`render.exe`)。 單一Maya網路授權最多可讓5部伺服器同時處理或轉譯Maya內容。
+   >僅AEM使用Maya命令行渲染工具(`render.exe`)。 單一Maya網路授權最多可讓5部伺服器同時處理或轉譯Maya內容。
 
 1. 在Maya中，啟用Autodesk FBX®增效模組。
 1. 安裝MentalRay演算增效模組或其他所需的演算程式。
@@ -60,7 +62,7 @@ ht-degree: 0%
    ![image2018-6-22_12-42-7](assets/image2018-6-22_12-42-7.png)
 
 1. 要啟用JT(Siemens PLM Open CAD)檔案格式，請導航至`/libs/settings/dam/v3D/assetTypes/jt`並將&#x200B;**[!UICONTROL Enabled]**&#x200B;屬性設定為`true`。
-1. 在AEM中，啟用Maya做為轉譯者。 首先，導覽至&#x200B;**[!UICONTROL 工具>一般> CRXDE Lite]**。
+1. 在AEM中，讓Maya成為轉譯者。 首先，導覽至&#x200B;**[!UICONTROL 工具>一般>CRXDE Lite]**。
 1. 從&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁面的左側面板，導覽至下列：
 
    `/libs/settings/dam/v3D/renderers/maya`
@@ -73,9 +75,9 @@ ht-degree: 0%
 
    Maya現在可以做為轉譯者。
 
-## 測試AEM 3D與Autodesk Maya {#testing-the-integration-of-aem-d-with-autodesk-maya}的整合
+## 測試3D與AEMAutodesk Maya {#testing-the-integration-of-aem-d-with-autodesk-maya}的整合
 
-1. 開啟「AEM資產」，然後將位於`sample-3D-content/models`的`.MA`檔案上傳至`test3d`檔案夾。
+1. 開啟AEM Assets，然後將位於`sample-3D-content/models`的`.MA`檔案上傳至`test3d`檔案夾。
 
    請注意，`sample-3D-content.zip`之前是為了驗證基本3D功能而下載的。
 
@@ -106,13 +108,13 @@ ht-degree: 0%
 
 ## 啟用Maya {#enabling-additional-formats-supported-by-maya}支援的其他格式
 
-（選用）Maya支援多種3D輸入格式，其中任何格式都可啟用，讓AEM可辨識檔案類型。 啟用後，AEM會將檔案傳送至Maya，將其轉換為可由AEM直接擷取的中介格式。
+（可選）Maya支援多種3D輸入格式，其中任何一種都可啟用，以識AEM別檔案類型。 啟用後，AEM會將檔案傳送至Maya，以轉換為中介格式，並直接由Maya接收AEM。
 
 根據格式，特徵支援可以受到限制（例如，材料可以不通過），質量／保真度可以限制（例如，反面）。 Adobe僅支援一般機制，但不支援任何特定格式轉換。
 
 請參閱[支援的資料匯入格式 | Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-69BC066D-D4D8-4B12-900C-CF42E798A5D6-htm.html)，以取得Maya支援的格式資訊。
 
-**若要啟用AEM支援的其他格式**:
+**若要啟用其他格式，請執行以下操AEM作**:
 
 1. 使用&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;導覽至`/libs/settings/dam/v3D/assetTypes`。
 1. 複製&#x200B;**[!UICONTROL jt]**&#x200B;節點。 按一下右鍵&#x200B;**[!UICONTROL jt]**&#x200B;節點並選擇&#x200B;**[!UICONTROL 複製]** ，然後按一下右鍵&#x200B;**[!UICONTROL assetTypes]**&#x200B;資料夾並選擇&#x200B;**[!UICONTROL 貼上]**。 這應會產生新節點`/apps/cq-scene7-v3D/config/assetTypes/Copy of jt`。
@@ -128,4 +130,3 @@ ht-degree: 0%
 以下螢幕抓圖以COLLADA DAE為例說明了添加的檔案格式：
 
 ![image2018-6-22_12-50-39](assets/image2018-6-22_12-50-39.png)
-
