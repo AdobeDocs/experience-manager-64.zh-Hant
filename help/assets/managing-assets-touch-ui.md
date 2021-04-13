@@ -4,15 +4,15 @@ description: 瞭解使用AEM Assets最佳化觸控式使用者介面可執行的
 contentOwner: AG
 mini-toc-levels: 1
 feature: 資產管理，搜尋，轉譯，協作
-role: 業務從業人員
+role: Business Practitioner
+exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
 workflow-type: tm+mt
-source-wordcount: '10046'
+source-wordcount: '10083'
 ht-degree: 2%
 
 ---
-
 
 # 管理您的數位資產{#managing-assets-with-the-touch-optimized-ui}
 
@@ -571,48 +571,33 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上傳PSD檔案時�
 
 請參閱[從AEM](download-assets-from-aem.md)下載資產
 
-## 發佈資產{#publishing-assets}
+## 發佈和取消發佈資產{#publish-assets}
 
-如果您發佈正在處理的資產，則只會發佈原始內容。 缺少轉譯。 等待處理完成，然後在處理完成後發佈或重新發佈資產。
+在[!DNL Experience Manager]作者上傳、處理或編輯您的資產後，您會將資產發佈至發佈伺服器。 發佈可讓資產公開使用。 取消發佈動作會從發佈伺服器移除資產，但不會從編寫伺服器移除。
 
-如果您要發佈的檔案夾包含空白檔案夾，則不會發佈空白檔案夾。
+如需[!DNL Dynamic Media]的特定資訊，請參閱[publishing [!DNL Dynamic Media] assets](publishing-dynamicmedia-assets.md)。
 
-如需Dynamic Media的詳細資訊，請參閱[發佈Dynamic Media資產](publishing-dynamicmedia-assets.md)。
+1. 導覽至您要發佈或要從發佈環境移除的資產或資產檔案夾的位置（解除發佈）。
 
-**若要發佈資產**:
+1. 選擇要取消發佈的資產或資料夾，然後從工具欄中按一下「管理出版物」 **[!UICONTROL 「管理出版物」]** 「管理出版物選項」 ![ 「選項」。 ](assets/do-not-localize/globe-publication.png)或者，若要快速發佈，請從工具列選擇「快速發佈」選項。 ****&#x200B;如果您要發佈的檔案夾包含空白檔案夾，則不會發佈空白檔案夾。
 
-1. 導覽至您要發佈的資產／資料夾的位置
+1. 根據需要選擇&#x200B;**[!UICONTROL Publish]**&#x200B;或&#x200B;**[!UICONTROL Unpublish]**&#x200B;選項。
 
-1. 從資產卡中選擇&#x200B;**[!UICONTROL Publish]**&#x200B;快速動作，或選擇資產並點選工具列中的&#x200B;**[!UICONTROL Quick Publish]**&#x200B;圖示。
-1. 如果資產引用其他資產，其引用將列在嚮導中。 只會顯示自上次發佈或未發佈後未發佈或修改的參照。 選擇要發佈的參照。
+   ![取消發佈動作](assets/unpublish_action.png)
+   *圖：發佈和取消發佈選項以及排程選項。*
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+1. 選擇&#x200B;**[!UICONTROL Now]**&#x200B;立即對資產執行操作，或選擇&#x200B;**[!UICONTROL 稍後]**&#x200B;計畫操作。 如果您選擇&#x200B;**[!UICONTROL Later]**&#x200B;選項，請選擇日期和時間。 按一下&#x200B;**[!UICONTROL 下一步]**。
 
-1. 點選&#x200B;**[!UICONTROL Publish]**&#x200B;以確認資產的啟動。
+1. 發佈時，如果資產參考其他資產，其參考會列在精靈中。 只會顯示自上次發佈以來未發佈或修改的參照。 選擇要發佈的參照。
 
-## 取消發佈資產{#unpublishing-assets}
+1. 解除發佈時，如果資產參照其他資產，請選擇您要解除發佈的參照。 按一下「取消發佈」。 ****&#x200B;在確認對話方塊中，按一下「取消」以停止動作，或按一下「取消發佈」以確認資產將在指定日期取消發佈。********
 
-解除發佈複雜資產時，僅解除發佈資產。 請避免取消發佈參照，因為其他已發佈資產可能會參照這些參照。
+瞭解與發佈或取消發佈資產或檔案夾相關的下列限制和秘訣：
 
-**若要解除發佈資產**:
-
-1. 導覽至您要從發佈環境（解除發佈）移除的資產或資產檔案夾的位置。
-
-1. 選擇要取消發佈的資產或資料夾，然後從工具列中點選「管理出版物」(**[!UICONTROL Manage Publication)]**&#x200B;圖示。
-
-   ![manage_publication](assets/manage_publication.png)
-
-1. 從清單中選擇&#x200B;**[!UICONTROL 取消發佈]**&#x200B;操作。
-
-   ![unpublish_action](assets/unpublish_action.png)
-
-1. 若要稍後解除發佈資產，請選取&#x200B;**[!UICONTROL 稍後解除發佈]**，然後選取要解除發佈資產的日期。
-1. 排程資產在發佈環境中無法使用的日期。
-1. 如果資產參考其他資產，請選擇您要取消發佈的參考。 點選&#x200B;**[!UICONTROL 取消發佈]**。
-1. 在確認對話方塊中，執行下列其中一項作業：
-
-   * 點選&#x200B;**[!UICONTROL 取消]**&#x200B;以停止動作
-   * 點選&#x200B;**[!UICONTROL 取消發佈]**&#x200B;以確認資產在指定日期未發佈（在發佈環境中不再提供）。
+* [!UICONTROL 管理出版物]的選項僅適用於具有複製權限的用戶帳戶。
+* 解除發佈複雜資產時，僅解除發佈資產。 請避免取消發佈參照，因為其他已發佈資產可能會參照這些參照。
+* 未發佈空的資料夾。
+* 如果您發佈正在處理的資產，則只會發佈原始內容。 缺少轉譯。 等待處理完成，然後在處理完成後發佈或重新發佈資產。
 
 ## 建立已關閉的用戶組{#closed-user-group}
 
@@ -766,7 +751,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
    * [快速動作](managing-assets-touch-ui.md#quick-actions)
    * 在選取資產或導覽至資產頁面後，從工具列
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. 在時間軸底部的 **[!UICONTROL 「注釋]** 」方塊中新增注釋。或者，在影像上標籤區域，並在&#x200B;**[!UICONTROL 添加註釋]**&#x200B;對話框中添加註釋。
 
