@@ -2,16 +2,16 @@
 title: AEM和Creative Cloud整合最佳實務
 description: 將部署與Adobe Creative Cloud整AEM合的最佳實務，以簡化資產轉讓工作流程並達到最高效率
 contentOwner: AG
-feature: 協作，Adobe資產連結，Experience Manager案頭應用程式
-role: 業務從業人員，管理員
+feature: 協作，Adobe資產連結，案頭應用程式
+role: Business Practitioner,Administrator
+exl-id: cb9bea05-3359-4fb4-b935-59e522a5f387
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 257355371068cdb47f75a0a17ea4831e10dc6a69
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3578'
 ht-degree: 16%
 
 ---
-
 
 # 和AEMCreative Cloud整合最佳實踐{#aem-and-creative-cloud-integration-best-practices}
 
