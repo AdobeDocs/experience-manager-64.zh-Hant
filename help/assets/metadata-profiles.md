@@ -2,8 +2,8 @@
 title: 使用中繼資料設定檔，將預設中繼資料套用至資料夾中的所有資產
 description: 瞭解資產的中繼資料設定檔。 瞭解如何建立中繼資料描述檔並將它套用至資料夾資產。
 contentOwner: AG
-feature: 中繼資料
-role: 業務從業人員，管理員
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

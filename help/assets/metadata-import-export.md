@@ -2,8 +2,8 @@
 title: 大量中繼資料匯入和匯出
 description: 本文說明如何大量匯入和匯出中繼資料。
 contentOwner: AG
-feature: 中繼資料
-role: 業務從業人員，管理員
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

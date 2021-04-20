@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 Communities 使用指南
 breadcrumb-title: Communities 指南
 user-guide-description: 建立線上體驗，例如論壇、使用者群組、學習資源和其他社交功能。
 feature-set: Experience Manager
-feature: 社群
-role: 業務從業人員
+feature: Communities
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

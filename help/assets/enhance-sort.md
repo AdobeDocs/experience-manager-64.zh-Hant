@@ -2,8 +2,8 @@
 title: 增強資產排序功AEM能
 description: 瞭解AEM Assets如何部署伺服器端排序功能來一次排序資料夾資產或搜尋查詢，而不是在用戶端以批次排序。
 contentOwner: AG
-feature: 搜尋
-role: 業務從業人員
+feature: Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

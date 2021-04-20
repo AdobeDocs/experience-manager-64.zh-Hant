@@ -2,8 +2,8 @@
 title: 使用Apache Tika來偵測數位資產的MIME類型
 description: 啟用Apache Tika可協助AEM Assets在上傳作業期間，從內容串流偵測MIME類型的資產，而非副檔名。
 contentOwner: AG
-feature: 中繼資料，開發人員工具，資產管理
-role: 管理員，架構師
+feature: Metadata,Developer Tools,Asset Management
+role: Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 查看資料夾資產和集合
 description: 為資料夾或系列中的資產設定審核工作流程，並與審核者或創意合作夥伴分享，以尋求意見回應。
 contentOwner: AG
-feature: 協作，集合
-role: 業務從業人員
+feature: Collaboration, Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

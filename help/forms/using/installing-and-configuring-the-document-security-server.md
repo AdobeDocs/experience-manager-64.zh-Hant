@@ -6,7 +6,7 @@ seo-description: '使用檔案安全性，安全地散布您以支援格式儲�
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
-role: 管理員
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 將集合發佈至 Brand Portal
 description: 瞭解如何將系列發佈及解除發佈至品牌入口網站。
 contentOwner: VG
-feature: 品牌入口網站
-role: 業務從業人員
+feature: Brand Portal
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

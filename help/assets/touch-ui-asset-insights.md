@@ -2,8 +2,8 @@
 title: 使用資產前瞻分析功能來追蹤影像的使用情況
 description: 「資產前瞻分析」功能可讓您追蹤使用者評分，以及協力廠商網站、行銷活動和Adobe創意解決方案所使用影像的使用統計資料。
 contentOwner: AG
-feature: 資產分析，資產報表
-role: 業務從業人員，管理員
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

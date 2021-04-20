@@ -2,8 +2,8 @@
 title: 大量將資產移轉至Adobe Experience Manager資產
 description: 如何將資產匯入、AEM套用中繼資料、產生轉譯，以及啟用資產以發佈例項。
 contentOwner: AG
-feature: 移轉，轉譯，資產管理
-role: 架構師，管理員
+feature: Migration,Renditions,Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

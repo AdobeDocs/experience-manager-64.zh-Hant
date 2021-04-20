@@ -2,8 +2,8 @@
 title: 影像轉碼程式庫
 description: 瞭解如何設定和使用Adobe的影像轉碼程式庫。此影像處理解決方案可執行核心影像處理功能，包括編碼、轉碼、影像重新取樣和影像大小調整。
 contentOwner: AG
-feature: 轉譯，開發人員工具，資產處理
-role: 管理員
+feature: Renditions,Developer Tools,Asset Processing
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

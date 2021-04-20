@@ -2,8 +2,8 @@
 title: 搜尋資AEM產
 description: 瞭解如何使用「篩選」面板AEM在中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 contentOwner: AG
-feature: 搜尋，中繼資料
-role: 業務從業人員
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

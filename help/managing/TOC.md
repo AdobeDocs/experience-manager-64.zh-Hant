@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 Managing 使用指南
 breadcrumb-title: Managing 指南
 user-guide-description: 了解如何管理 AEM 專案。
 feature-set: Experience Manager Sites
-feature: 部署
-role: 業務從業人員
+feature: Deploying
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

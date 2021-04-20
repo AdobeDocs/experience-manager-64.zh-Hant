@@ -2,8 +2,8 @@
 title: 資產檔案格式最佳實務
 description: 在AEM Assets提供檔案支援的最佳做法。
 contentOwner: AG
-feature: 資產管理，開發人員工具
-role: 管理員
+feature: Asset Management,Developer Tools
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

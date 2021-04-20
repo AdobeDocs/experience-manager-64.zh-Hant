@@ -2,8 +2,8 @@
 title: 大量編輯多個資產和系列的中繼資料
 description: 瞭解如何同時編輯許多資產和系列的中繼資料，以快速傳播常見的中繼資料變更。
 contentOwner: AG
-feature: 資產管理，中繼資料，系列
-role: 業務從業人員
+feature: Asset Management,Metadata,Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

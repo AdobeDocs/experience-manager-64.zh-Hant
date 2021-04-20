@@ -2,8 +2,8 @@
 title: Assets 網路考量事項
 description: 討論設計AEM Assets部署時的網路注意事項。
 contentOwner: AG
-feature: 開發人員工具
-role: 架構師，管理員
+feature: Developer Tools
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

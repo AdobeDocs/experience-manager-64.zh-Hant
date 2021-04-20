@@ -8,7 +8,7 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 指南
 breadcrumb-title: Forms 指南
 user-guide-description: 建立、管理、發佈和更新數位表單。
 feature-set: Experience Manager Forms
-role: 業務從業人員
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

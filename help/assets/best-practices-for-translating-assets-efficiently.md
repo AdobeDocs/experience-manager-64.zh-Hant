@@ -2,8 +2,8 @@
 title: 有效率地轉譯資產的最佳實務
 description: 有效管理資產的最佳做法，可同步各種翻譯版本並簡化翻譯工作流程。
 contentOwner: AG
-feature: 轉換
-role: 業務從業人員，管理員
+feature: Translation
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

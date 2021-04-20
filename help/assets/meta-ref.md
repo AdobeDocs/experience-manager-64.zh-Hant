@@ -2,8 +2,8 @@
 title: 中繼資料圖式參考
 description: '瞭解描述資產中繼資料的標準慣例，包括Dublin Core、IPTC和其他中繼資料結構。 '
 contentOwner: AG
-feature: 中繼資料
-role: 業務從業人員，管理員
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

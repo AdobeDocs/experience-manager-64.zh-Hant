@@ -2,8 +2,8 @@
 title: 搜尋 Facet
 description: 本文說明如何在中建立、修改和使用搜尋刻面AEM。
 contentOwner: AG
-feature: 搜尋
-role: 管理員、開發人員
+feature: Search
+role: Administrator,Developer
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

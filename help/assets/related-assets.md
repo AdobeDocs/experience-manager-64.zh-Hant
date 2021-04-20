@@ -2,8 +2,8 @@
 title: 相關資產
 description: 瞭解如何建立共用特定共同屬性的資產的關聯。 您也可以使用此功能來建立資產間的來源／衍生關係。
 contentOwner: AG
-feature: 資產管理，協作
-role: 業務從業人員
+feature: Asset Management,Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

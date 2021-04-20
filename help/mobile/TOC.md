@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 Mobile 使用指南
 breadcrumb-title: Mobile 指南
 user-guide-description: 建立和管理行動應用程式的內容。
 feature-set: Experience Manager Sites
-feature: 行動
-role: 業務從業人員
+feature: Mobile
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

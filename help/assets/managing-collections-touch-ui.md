@@ -3,8 +3,8 @@ title: 管理資產收集
 description: 瞭解要管理資產集合的任務，例如建立、檢視、刪除、編輯和下載系列。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 集合
-role: 業務從業人員
+feature: Collections
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 使用
 description: 根據AEM Assets部署和用於收集和處理資產的功能，確定並遵守可在負載下增強系統穩定性和效能的最佳做法。
 contentOwner: AG
-feature: 資產管理
-role: 架構師，管理員
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

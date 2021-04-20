@@ -2,8 +2,8 @@
 title: 多語言資產
 description: 瞭解如何將資產（包括二進位檔、中繼資料和標籤）轉譯為多種語言的工作流程自動化。
 contentOwner: AG
-feature: 資產管理
-role: 管理員
+feature: Asset Management
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

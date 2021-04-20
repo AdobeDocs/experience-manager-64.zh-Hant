@@ -2,8 +2,8 @@
 title: XMP回寫轉譯
 description: 瞭解回寫功XMP能如何將資產的中繼資料變更傳播至資產的所有或特定轉譯。
 contentOwner: AG
-feature: 中繼資料
-role: 業務從業人員，管理員
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

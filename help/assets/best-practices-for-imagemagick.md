@@ -2,8 +2,8 @@
 title: 安裝並配置ImageMagick以與AEM Assets合作
 description: 瞭解ImageMagick軟體、如何安裝、設定命令列處理步驟，以及使用它編輯、合成和產生影像縮圖。
 contentOwner: AG
-feature: 轉譯，開發人員工具
-role: 管理員
+feature: Renditions,Developer Tools
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

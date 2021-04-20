@@ -2,8 +2,8 @@
 title: 資產代理開發
 description: 'Proxy是使用Proxy工AEM作者來處理工作的例項。 瞭解如何設定AEMProxy、支援的作業、Proxy元件，以及如何開發自訂Proxy工作器。 '
 contentOwner: AG
-feature: 資產處理
-role: 管理員、架構師
+feature: Asset Processing
+role: Administrator, Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 有關數位資產的使用與分享的報告。
 description: ' [!DNL Adobe Experience Manager Assets] 中有關您資產的報表，可協助您瞭解數位資產的使用、活動和共用。'
 contentOwner: AG
-feature: 資產報表，資產管理
-role: 業務從業人員，管理員
+feature: Asset Reports,Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 中XMP繼資料
 description: 瞭解AEM AssetsXMP用於中繼資料管理的（可擴充中繼資料平台）中繼資料標準。 為XMP各種應用程式建立、處理和交換中繼資料提供標準格式。
 contentOwner: AG
-feature: 中繼資料
-role: 業務從業人員，管理員
+feature: Metadata
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

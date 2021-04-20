@@ -2,8 +2,8 @@
 title: 登入和登出您的數位資產以進行編輯
 description: 瞭解如何取出資產進行編輯，並在變更完成後將其存回。
 contentOwner: AG
-feature: 資產管理
-role: 業務從業人員
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

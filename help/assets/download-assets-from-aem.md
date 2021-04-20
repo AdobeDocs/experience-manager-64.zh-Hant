@@ -2,8 +2,8 @@
 title: 從 [!DNL Adobe Experience Manager]下載數位資產。
 description: 瞭解如何從 [!DNL Adobe Experience Manager] 下載資產並啟用或停用下載功能。
 contentOwner: AG
-feature: 資產管理，資產分配
-role: 業務從業人員
+feature: Asset Management,Asset Distribution
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

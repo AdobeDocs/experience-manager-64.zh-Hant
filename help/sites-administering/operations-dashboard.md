@@ -2,7 +2,7 @@
 title: 操作儀表板
 seo-title: 操作儀表板
 description: 瞭解如何使用Operations Dashboard。
-feature: 運作
+feature: Operations
 seo-description: 瞭解如何使用Operations Dashboard。
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino

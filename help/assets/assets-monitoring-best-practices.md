@@ -2,8 +2,8 @@
 title: Assets 監控最佳實務
 description: 在部署實例後監控其環境和性AEM能的最佳實踐。
 contentOwner: AG
-feature: 資產管理
-role: 管理員，架構師
+feature: Asset Management
+role: Administrator,Architect
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 將翻譯雲服務應用於資料夾
 description: 將翻譯雲服務應用於資料夾
 contentOwner: AG
-feature: 轉換
-role: 管理員
+feature: Translation
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

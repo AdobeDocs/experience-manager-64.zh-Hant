@@ -2,8 +2,8 @@
 title: 處理資產以完成業務流程、進行審核、實現法規遵從性並保持基本的健全性
 description: 資產處理，以轉換格式、建立轉譯、管理資產、驗證資產，以及執行工作流程。
 contentOwner: AG
-feature: 工作流程，轉譯
-role: 業務從業人員，管理員
+feature: Workflow,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -3,7 +3,7 @@ title: 使用AEM Assets管理您的數位資產
 description: 瞭解使用AEM Assets最佳化觸控式使用者介面可執行的各種資產管理和編輯工作
 contentOwner: AG
 mini-toc-levels: 1
-feature: 資產管理，搜尋，轉譯，協作
+feature: Asset Management,Search,Renditions,Collaboration
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
 translation-type: tm+mt

@@ -2,8 +2,8 @@
 title: 燈箱
 description: 瞭解AEM Assets的燈箱。
 contentOwner: AG
-feature: 開發人員工具，轉譯
-role: 業務從業人員，管理員
+feature: Developer Tools,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

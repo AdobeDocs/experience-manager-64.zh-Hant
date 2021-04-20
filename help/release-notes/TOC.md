@@ -6,8 +6,8 @@ user-guide-title: Adobe Experience Manager6.4發行說明
 breadcrumb-title: 發行說明
 user-guide-description: 在版本注意事項中瞭解AEM6.4的最新功能。
 feature-set: Experience Manager
-feature: 發行資訊
-role: 領導者、架構師、開發人員、資料架構師、資料工程師、管理員、業務從業人員
+feature: Release Information
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

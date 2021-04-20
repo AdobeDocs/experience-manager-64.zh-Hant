@@ -2,8 +2,8 @@
 title: Camera Raw支援
 description: 瞭解如何在Adobe Experience Manager資產中啟用Camera Raw支援。
 contentOwner: AG
-feature: 開發人員工具
-role: 管理員
+feature: Developer Tools
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

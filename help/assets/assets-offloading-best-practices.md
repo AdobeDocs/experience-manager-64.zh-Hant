@@ -2,8 +2,8 @@
 title: 資產卸載最佳實務
 description: 建議在AEM Assets卸載資產接收和複製工作流的使用案例和最佳做法。
 contentOwner: AG
-feature: 資產管理
-role: 業務從業人員，管理員
+feature: Asset Management
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

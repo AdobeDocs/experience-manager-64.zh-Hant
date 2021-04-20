@@ -2,8 +2,8 @@
 title: 在 [!DNL Adobe Experience Manager]中配置非同步操作。
 description: 以非同步方式完成某些資源密集型任務，以優化 [!DNL Experience Manager Assets]中的效能。
 contentOwner: AG
-feature: 資產管理
-role: 業務從業人員
+feature: Asset Management
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

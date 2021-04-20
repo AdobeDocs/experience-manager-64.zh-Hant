@@ -2,8 +2,8 @@
 title: 資產中的使用者體驗增強功能
 description: 本文說明6.4 Assets中的使AEM用者體驗改進。
 contentOwner: AG
-feature: 發行資訊
-role: 領導者，商業從業人員
+feature: Release Information
+role: Leader,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

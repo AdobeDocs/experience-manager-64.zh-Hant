@@ -2,8 +2,8 @@
 title: 私人資料夾共用
 description: 瞭解如何在Adobe Experience Manager(AEM)資產中建立私人資料夾，並與其他使用者共用資料夾，以及為他們指派各種權限。
 contentOwner: AG
-feature: 協作
-role: 業務從業人員
+feature: Collaboration
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

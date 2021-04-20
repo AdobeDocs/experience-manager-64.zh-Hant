@@ -2,7 +2,7 @@
 title: 安全性檢查清單
 seo-title: 安全性檢查清單
 description: 瞭解設定和部署時的各種安全性考量AEM。
-feature: 安全性
+feature: Security
 seo-description: 瞭解設定和部署時的各種安全性考量AEM。
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service

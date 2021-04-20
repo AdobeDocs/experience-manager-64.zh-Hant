@@ -2,8 +2,8 @@
 title: 透過DTM啟用資產見解
 description: 瞭解如何使用Adobe動態標籤管理(DTM)來啟用資產分析。
 contentOwner: AG
-feature: 資產分析，資產報表
-role: 業務從業人員，管理員
+feature: Asset Insights,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

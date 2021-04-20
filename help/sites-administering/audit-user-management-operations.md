@@ -2,7 +2,7 @@
 title: 如何審計用戶管理操AEM作
 seo-title: 如何審計用戶管理操AEM作
 description: 瞭解如何在中審核用戶管理操作AEM。
-feature: 運作
+feature: Operations
 seo-description: 瞭解如何在中審核用戶管理操作AEM。
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User

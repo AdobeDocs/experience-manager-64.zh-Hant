@@ -2,8 +2,8 @@
 title: 支援IPTC中繼資料
 description: 瞭解Adobe Experience Manager(AEM)資產如何透過Adobe Bridge和其他創意應用程式支援IPTC中繼資料、創意評分和新增至資產的關鍵字。
 contentOwner: AG
-feature: 中繼資料
-role: 業務從業人員、管理員、領導者
+feature: Metadata
+role: Business Practitioner,Administrator,Leader
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

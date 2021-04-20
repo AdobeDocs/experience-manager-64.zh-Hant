@@ -2,7 +2,7 @@
 title: 6中的審核日誌維護AEM
 seo-title: 6中的審核日誌維護AEM
 description: 瞭解中的審計日誌維護AEM。
-feature: 運作
+feature: Operations
 seo-description: 瞭解中的審計日誌維護AEM。
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User

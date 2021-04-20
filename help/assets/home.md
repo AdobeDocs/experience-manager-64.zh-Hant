@@ -2,8 +2,8 @@
 title: Assets 指南
 description: 本指南涵蓋所有AEM Assets任務，例如如何建立、管理、提供和最佳化數位資產。
 user-guide-title: Assets 指南
-feature: 資產管理
-role: 業務從業人員，架構師，管理員
+feature: Asset Management
+role: Business Practitioner,Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -2,8 +2,8 @@
 title: 使用 Brand Portal 設定 AEM Assets
 description: '瞭解如何使用品牌入口網站來設定AEM Assets，以便將資產和系列發佈至品牌入口網站。 '
 contentOwner: VG
-feature: 品牌入口網站
-role: 管理員
+feature: Brand Portal
+role: Administrator
 translation-type: tm+mt
 source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt

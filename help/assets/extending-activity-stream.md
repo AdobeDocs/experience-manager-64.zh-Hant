@@ -2,8 +2,8 @@
 title: 將資產與活動串流整合
 description: 說明的錄制功能AEM，以及如何設定AEM以錄制特定事件。
 contentOwner: AG
-feature: 資產管理
-role: 開發人員
+feature: Asset Management
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

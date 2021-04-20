@@ -2,8 +2,8 @@
 title: AEM Assets首頁體驗
 description: 個人化AEM Assets首頁，提供豐富的歡迎畫面體驗，包括資產相關活動的快照。
 contentOwner: AG
-feature: 開發人員工具，資產管理
-role: 管理員，業務從業人員
+feature: Developer Tools,Asset Management
+role: Administrator,Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

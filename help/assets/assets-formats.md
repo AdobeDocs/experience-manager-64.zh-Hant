@@ -2,8 +2,8 @@
 title: AEM Assets支援的檔案格式
 description: AEM Assets支援的檔案格式和MIME類型清單，以及每種格式支援的功能。
 contentOwner: AG
-feature: 資產管理，轉譯
-role: 業務從業人員，管理員
+feature: Asset Management,Renditions
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4 Classic UI編寫使用指南
 breadcrumb-title: Classic UI編寫指南
 user-guide-description: 本指南涵蓋在傳統使用者介面AEM中編寫內容的概念。
 feature-set: Experience Manager Sites
-feature: 製作
-role: 業務從業人員
+feature: Authoring
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: ca18aa3d207aa9506d22286eaaabdd0991d8e4e7
 workflow-type: tm+mt

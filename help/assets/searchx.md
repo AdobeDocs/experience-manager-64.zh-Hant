@@ -2,8 +2,8 @@
 title: 擴充資產搜尋
 description: 將AEM Assets的搜尋功能擴展至現成可用的字串搜尋以外。
 contentOwner: AG
-feature: 搜尋
-role: 開發人員
+feature: Search
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

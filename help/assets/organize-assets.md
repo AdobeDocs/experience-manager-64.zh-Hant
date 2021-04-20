@@ -2,8 +2,8 @@
 title: 組織您的數位資產
 description: 使用Experience Manager組織您的數位資產、影像、檔案、檔案夾等。
 contentOwner: AG
-feature: 資產管理，搜尋
-role: 業務從業人員
+feature: Asset Management,Search
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

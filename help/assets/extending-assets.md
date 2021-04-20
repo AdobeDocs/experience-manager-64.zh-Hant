@@ -2,8 +2,8 @@
 title: 自訂和擴充資產
 description: 瞭解如何自訂和擴充資產共用與資產編輯器，為使用者提供特別自訂的介面和功能集。
 contentOwner: AG
-feature: 開發人員工具
-role: 開發人員
+feature: Developer Tools
+role: Developer
 translation-type: tm+mt
 source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt

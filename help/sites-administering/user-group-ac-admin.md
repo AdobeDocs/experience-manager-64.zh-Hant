@@ -2,7 +2,7 @@
 title: 用戶、組和訪問權限管理
 seo-title: 用戶、組和訪問權限管理
 description: 瞭解中的用戶、組和訪問權限管理AEM。
-feature: 安全性
+feature: Security
 seo-description: 瞭解中的用戶、組和訪問權限管理AEM。
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES

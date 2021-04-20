@@ -2,8 +2,8 @@
 title: GQL全文搜索
 description: 探索AEM Assets的GQL全文搜索功能。 使用它可根據特定中繼資料來搜尋資產，例如標題、說明和作者名稱。
 contentOwner: AG
-feature: 搜尋，中繼資料
-role: 業務從業人員
+feature: Search,Metadata
+role: Business Practitioner
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

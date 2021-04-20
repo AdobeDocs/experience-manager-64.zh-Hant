@@ -2,8 +2,8 @@
 title: 資產效能調整指南
 description: 重點討論配置、AEM更改硬體、軟體和網路元件以消除瓶頸並優化AEM Assets的效能。
 contentOwner: AG
-feature: 資產管理
-role: 架構師，管理員
+feature: Asset Management
+role: Architect,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt

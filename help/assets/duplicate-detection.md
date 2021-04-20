@@ -2,8 +2,8 @@
 title: 啟用重複檢測
 description: 瞭解如何在中啟用重複資產的偵測AEM。
 contentOwner: AG
-feature: 資產管理，資產報表
-role: 業務從業人員，管理員
+feature: Asset Management,Asset Reports
+role: Business Practitioner,Administrator
 translation-type: tm+mt
 source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
