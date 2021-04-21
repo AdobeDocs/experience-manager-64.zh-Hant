@@ -9,10 +9,10 @@ user-guide-description: 本指南涵蓋在傳統使用者介面AEM中編寫內�
 feature: 製作
 role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 22%
+source-wordcount: '273'
+ht-degree: 24%
 
 ---
 
@@ -82,17 +82,9 @@ ht-degree: 22%
    + [鎖定您的Adobe Campaign](classic-personalization-ac-target.md)
 + Classic UI {#assets}中的資產編寫
    + [使用資產](classicui-assets.md)
-   + [關於使用IBL階段](classicui-stages-aem3d-ibl.md)
-   + [演算3D資產](classicui-rendering-3d.md)
-   + [檢視3D資產](classicui-view-3d-assets.md)
    + [交付Dynamic Media資產](dynamic-media-assets-delivering.md)
-   + [用Autodesk Maya和Mental Ray建立標準舞台](classicui-stages-aem3d-ad-mr.md)
    + [新增Dynamic Media資產至頁面](dynamic-media-assets-adding-to-page.md)
    + [將Dynamic Media經典(Scene7)功能添加到頁面中](manage-assets-classic-s7.md)
    + [使用 Dynamic Media](dynamic-media-assets.md)
-   + [使用 3D 資產](classicui-3dassets.md)
    + [影片](manage-assets-classic-s7-video.md)
    + [資產測試的命名慣例](asset-naming-conventions.md)
-   + [關於上傳和處理3D資產，於AEM](classicui-upload-proc-3d.md)
-   + [關於在3D中使AEM用階段](classicui-stages-aem3d.md)
-   + [解決檔案相依性](classicui-upload-proc-3d-resolve-dependencies.md)
