@@ -7,10 +7,10 @@ user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 建立、管理、提供和最佳化數位資產。
 translation-type: tm+mt
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 37%
+source-wordcount: '627'
+ht-degree: 43%
 
 ---
 
@@ -166,20 +166,3 @@ ht-degree: 37%
    + [私人資料夾共用](private-folder.md)
    + [智慧型內容服務訓練方針](smart-tags-training-guidelines.md)
    + [視訊轉譯](video-renditions.md)
-+ 3D資產{#three-d}
-   + [AEM 3D版本注意事項](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/aem3d-release-notes.html)
-   + [使用 3D 資產](assets-3d.md)
-   + [安裝和配AEM置3D](install-config-3d.md)
-   + [進階組態設定](advanced-config-3d.md)
-   + [使用Adobe Dimension資產](working-dimension-assets.md)
-   + [關於上傳和處理3D資產，於AEM](upload-processing-3d-assets.md)
-   + [解決檔案相依性](resolve-file-dependencies.md)
-   + [檢視3D資產](viewing-3d-assets.md)
-   + [演算3D資產](rendering-3d-assets.md)
-   + [關於在3D中使AEM用階段](about-the-use-of-stages-in-aem-3d.md)
-   + [用Autodesk Maya和Mental Ray建立標準舞台](setting-up-stage-with-ad-mr.md)
-   + [使用3D Sites元件](using-the-3d-sites-component.md)
-   + [整合AEM3D與Autodesk Maya](integrate-maya-with-3d.md)
-   + [關於使用IBL階段](working-with-ibl-stages.md)
-   + [整合AEM3D與Autodesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md)
-   + [用Autodesk Maya和Mental Ray建立IBL舞台](setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray.md)
