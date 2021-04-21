@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
+exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: eb55489da5e390578b2ae71be424930e9bf3efd3
 workflow-type: tm+mt
-source-wordcount: '2844'
+source-wordcount: '2813'
 ht-degree: 8%
 
 ---
-
 
 # Adobe Experience Manager6.4 {#general-release-notes-for-adobe-experience-manager}的一般發行說明
 
@@ -27,7 +27,7 @@ ht-degree: 8%
 | 版本 | 6.4 |
 | 類型 | 主要版本 |
 | 正式上市日期 | 2018 年 4 月 4 日 |
-| 建議的更新 | 請參閱[AEM發行和更新](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) |
+| 建議的更新 | 請參閱[AEM發行和更新](https://helpx.adobe.com/tw/experience-manager/aem-releases-updates.html) |
 
 ### Trivia {#trivia}
 
@@ -122,7 +122,7 @@ UI已做了各種增強功能，讓它更有生產力，也更容易使用。
 
 **體驗片段**
 
-有了「建置區塊」功能，使用相同內容但不同版面的片段建立變化變得更有效率。 除了將「體驗片段」傳送至Facebook和Pinterest之外，現在也可以將它們以優惠方式傳送至Adobe Target。
+有了「建置區塊」功能，使用相同內容但不同版面的片段建立變化變得更有效率。 除了將體驗片段傳送至Facebook和Pinterest之外，現在也可以視需要傳送至Adobe Target。
 
 **Content Services**
 
@@ -247,14 +247,6 @@ AEM6.4包含許多Dynamic Media的新功能和增強功能。 完整清單可在
 全景和VR等全新檢視器可讓您提供更身歷其境的體驗。
 
 請參閱[全景影像](/help/assets/panoramic-images.md)檔案以瞭解更多資訊。
-
-**3D資產**
-
-與[Adobe Dimension CC](https://www.adobe.com/products/dimension.html)的全新整合，此為製作3D體驗的Creative Cloud應用程式。
-
-請參閱[使用3D資產](/help/assets/assets-3d.md)檔案以瞭解更多資訊。
-
-![do-not-localize/3d](assets/do-not-localize/3d.png)
 
 ### Experience ManagerForms{#experience-manager-forms}
 
