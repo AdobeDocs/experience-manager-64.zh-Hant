@@ -2,16 +2,16 @@
 title: 使用連結分享資產
 description: 將資產、檔案夾和系列共用為URL。
 contentOwner: AG
-feature: Link Sharing,Asset Management
+feature: 連結共用，資產管理
 role: Business Practitioner
+exl-id: bf4b0acf-4103-4da1-8666-c6d9fe80c41f
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: 340061de4dc6d99e9d960613202a869ba50ed6a5
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1024'
 ht-degree: 5%
 
 ---
-
 
 # 透過連結{#asset-link-sharing}共用資產
 
@@ -28,26 +28,11 @@ ht-degree: 5%
 若要產生您要與使用者共用之資產的URL，請使用「連結共用」對話方塊。 具有管理員權限或在`/var/dam/share`位置具有讀取權限的用戶可以查看與他們共用的連結。
 
 1. 在[!DNL Assets]使用者介面中，選取要以連結形式共用的資產。
-1. 在工具列中，按一下「共用連結&#x200B;**** ![共用資產」圖示](assets/assets_share.png)。
-
-   按一下[!UICONTROL Share]後將建立的連結會提前顯示在[!UICONTROL Share Link]欄位中。 連結的預設有效期為一天。
+1. 在工具列中，按一下「共用連結&#x200B;**** ![共用資產」圖示](assets/assets_share.png)。 按一下&#x200B;**[!UICONTROL Share]**&#x200B;後將建立的連結會提前顯示在[!UICONTROL Share Link]欄位中。 在您按一下&#x200B;**[!UICONTROL Submit]**&#x200B;之前，尚未建立連結。
 
    ![與連結共用對話方塊](assets/chlimage_1-542.png)
 
    *圖：將資產共用為連結的對話方塊。*
-
-   >[!NOTE]
-   >
-   >如果您想要將[!DNL Experience Manager]作者部署的連結共用給外部實體，請確定您只針對`GET`請求公開下列URL（用於連結共用）。 出於安全原因，封鎖其他URL。
-   >
-   >* `http://[aem_server]:[port]/linkshare.html`
-   >* `http://[aem_server]:[port]/linksharepreview.html`
-   >* `http://[aem_server]:[port]/linkexpired.html`
-
-
-1. 在[!DNL Experience Manager]介面中，訪問&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**。
-
-1. 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;配置，並在&#x200B;**[!UICONTROL Domains]**&#x200B;欄位中修改以下屬性，其值針對`local`、`author`和`publish`提及。 對於`local`和`author`屬性，請分別提供本機實例和作者實例的URL。 如果運行單個[!DNL Experience Manager]作者實例，`local`和`author`屬性的值都相同。 對於「發佈」例項，請提供[!DNL Experience Manager]發佈例項的URL。
 
 1. 在「連結共用」對話方 **[!UICONTROL 塊的電子郵件地址方塊中]** ，輸入您要共用連結之使用者的電子郵件ID。您可以新增一或多個使用者。
 
@@ -62,7 +47,7 @@ ht-degree: 5%
 1. 在&#x200B;**[!UICONTROL Subject]**&#x200B;方塊中，輸入您要共用之資產的主旨。
 1. 在&#x200B;**[!UICONTROL 消息]**&#x200B;框中，輸入可選消息。
 
-1. 在&#x200B;**[!UICONTROL Expiration]**&#x200B;欄位中，指定連結停止運作的到期日和時間。 依預設，有效期是從您共用連結之日起的一週設定。
+1. 在&#x200B;**[!UICONTROL Expiration]**&#x200B;欄位中，指定連結停止運作的到期日和時間。 連結的預設有效期為一天。
 
    ![設定共用連結的到期日](assets/chlimage_1-544.png)
 
@@ -70,11 +55,7 @@ ht-degree: 5%
 
 1. 按一下&#x200B;**[!UICONTROL 「共用」]**。訊息會確認連結已透過電子郵件與使用者共用。
 
-1. 若要檢視共用資產，請按一下傳送給使用者之電子郵件中的連結。 共用資產會顯示在[!UICONTROL Adobe Marketing Cloud]頁面中。
-
-   ![共用資產可在Adobe Marketing Cloud使用](assets/chlimage_1-545.png)
-
-1. 若要產生資產的預覽，請按一下共用資產。 要關閉預覽並返回至&#x200B;**[!UICONTROL Marketing Cloud]**&#x200B;頁，請按一下工具欄上的&#x200B;**[!UICONTROL 後退]**。 如果您已共用資料夾，請按一下「父資料夾&#x200B;****」以返回父資料夾。
+1. 若要檢視共用資產，請按一下傳送給使用者之電子郵件中的連結。 若要產生資產的預覽，請按一下共用資產。 要關閉預覽，請按一下&#x200B;**[!UICONTROL Back]**。 如果您已共用資料夾，請按一下「父資料夾&#x200B;****」以返回父資料夾。
 
    ![chlimage_1-546](assets/chlimage_1-546.png)
 
@@ -103,7 +84,7 @@ ht-degree: 5%
 
    ![chlimage_1-548](assets/chlimage_1-548.png)
 
-1. 按一下／點選&#x200B;**[!UICONTROL Save]**。
+1. 按一下「**[!UICONTROL 儲存]**」。
 
 ## 配置最大資料大小{#configure-maximum-data-size}
 
@@ -124,3 +105,10 @@ ht-degree: 5%
 * 如果您無法傳送含有共用資產連結的電子郵件，或如果其他使用者無法收到您的電子郵件，請洽詢您的[!DNL Experience Manager]管理員，以瞭解[電子郵件服務是否已設定。](#configure-day-cq-mail-service)
 * 如果您無法使用連結共用功能來共用資產，請確定您擁有適當的權限。 請參閱[共用資產](#share-assets)。
 * 如果共用資產移至不同位置，其連結將停止運作。 重新建立連結並與使用者重新共用。
+
+* 如果您想要將[!DNL Experience Manager]作者部署的連結共用給外部實體，請確定您僅針對`GET`請求公開下列用於連結共用的URL。 出於安全原因，封鎖其他URL。
+
+   * `http://[aem_server]:[port]/linkshare.html`
+   * `http://[aem_server]:[port]/linksharepreview.html`
+   * `http://[aem_server]:[port]/linkexpired.html`
+   在[!DNL Experience Manager]介面中，訪問&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**。 開啟&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;配置，並在&#x200B;**[!UICONTROL Domains]**&#x200B;欄位中修改以下屬性，其值針對`local`、`author`和`publish`提及。 對於`local`和`author`屬性，請分別提供本機實例和作者實例的URL。 如果運行單個[!DNL Experience Manager]作者實例，請對`local`和`author`屬性使用相同的值。 對於「發佈」實例，請提供[!DNL Experience Manager]「發佈」實例的URL。
