@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
+exl-id: 89e45231-885a-4d35-839b-2b50239503ad
 translation-type: tm+mt
-source-git-commit: 160cc2669ac19aacdce5e96d1ba1eb4bafcb6d58
+source-git-commit: cc31f2fa2f79154749776260f7621f6631e9db4a
 workflow-type: tm+mt
-source-wordcount: '1714'
+source-wordcount: '1781'
 ht-degree: 0%
 
 ---
-
 
 # 和SPA伺服器端演算{#spa-and-server-side-rendering}
 
@@ -64,7 +64,9 @@ SSR通常在以下任一問題有明確的「是」時提供一些值：
 
 >[!NOTE]
 >
->Adobe建議針對每個環境(作AEM者、發佈、舞台等)建立個別的Adobe I/O Runtime例項。
+>Adobe建議每個環境（舞台、prod、測試等）使用單獨的Adobe I/O Runtime工作區。 這允許典型的系統開發生命週期(SDLC)模式，將不同版本的單個應用程式部署到不同的環境中。 如需詳細資訊，請參閱[專案Firefly應用程式的CI/CD檔案](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md)。
+>
+>每個例項（作者、發佈）不需要個別的工作區，除非每個例項類型的執行時期實作有所差異。
 
 ## 遠程內容渲染器配置{#remote-content-renderer-configuration}
 
