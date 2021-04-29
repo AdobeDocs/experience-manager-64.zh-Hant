@@ -1,26 +1,26 @@
 ---
 title: 報告
 seo-title: 報告
-description: 瞭解如何在AEM中使用報表。
-seo-description: 瞭解如何在AEM中使用報表。
+description: 瞭解如何在中使用報告AEM。
+seo-description: 瞭解如何在中使用報告AEM。
 uuid: d6105d54-4d38-40a4-bd60-00057b84f7b8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
+exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2815'
 ht-degree: 4%
 
 ---
 
-
 # 報告 {#reporting}
 
-為協助您監控和分析執行個體的狀態，AEM提供一組預設報表，可針對您的個別需求進行設定：
+為協助您監控和分析執行個體的狀態，AEM請提供一組預設報表，可針對個別需求進行設定：
 
 * [元件報表](#component-report)
 * [磁碟使用情況](#disk-usage)
@@ -31,13 +31,17 @@ ht-degree: 4%
 * [工作流程例項報表](#workflow-instance-report)
 * [工作流程報表](#workflow-report)
 
+>[!NOTE]
+>
+>這些報表僅適用於傳統UI。 有關現代UI中的系統監視和報告，請參閱[操作儀表板。](/help/sites-administering/operations-dashboard.md)
+
 所有報告都可從&#x200B;**工具**&#x200B;控制台訪問。 在左窗格中選擇&#x200B;**報表**，然後按兩下右窗格中的必要報表，以開啟報表供檢視和／或設定。
 
 您也可以從&#x200B;**Tools**&#x200B;控制台建立新的報表例項。 在左窗格中選擇&#x200B;**報表**，然後選擇&#x200B;**新建……**。 定義&#x200B;**Title**&#x200B;和&#x200B;**Name**，選擇所需的報表類型，然後按一下&#x200B;**Create**。 您的新報表例項會出現在清單中。 按兩下此按鈕以開啟，然後從sidekick拖曳元件以建立第一欄並啟動報表定義。
 
 >[!NOTE]
 >
->除了現成可用的標準AEM報表外，您還可以[開發您自己（完全新的）報表](/help/sites-developing/dev-reports.md)。
+>除了現成可用AEM的標準報表外，您還可以[開發您自己的（全新）報表](/help/sites-developing/dev-reports.md)。
 
 ## 報表自訂的基本概念{#the-basics-of-report-customization}
 
@@ -66,7 +70,7 @@ ht-degree: 4%
 
 欄可以新增至標準或自訂的任何報表、重新放置在報表上或從報表中移除。
 
-sidekick的&#x200B;**Components**&#x200B;標籤（可在報表頁面上使用）會列出所有可選為欄的資料類別。
+sidekick的&#x200B;**元件**&#x200B;標籤（可在報表頁面上使用）會列出所有可選為欄的資料類別。
 
 要更改資料選擇：
 
@@ -198,7 +202,7 @@ sidekick的&#x200B;**Components**&#x200B;標籤（可在報表頁面上使用）
 
 >[!NOTE]
 >
->預配置的報告不需要效能密集型報告，但仍建議在生產環境上使用每日快照。 如果可能，請在您網站上活動不多時，於一天中的某一時間執行這些每日快照；這可以使用&#x200B;**Day CQ Reporting Configuration**&#x200B;的`Daily snapshots (repconf.hourofday)`參數定義；如需如何設定此設定的詳細資訊，請參閱[OSGI Configuration](/help/sites-deploying/configuring-osgi.md)。
+>預配置的報告不需要佔用大量的效能，但仍建議在生產環境中使用每日快照。 如果可能，請在您網站上活動不多時，於一天中的某一時間執行這些每日快照；這可以使用&#x200B;**Day CQ Reporting Configuration**&#x200B;的`Daily snapshots (repconf.hourofday)`參數定義；如需如何設定此設定的詳細資訊，請參閱[OSGI Configuration](/help/sites-deploying/configuring-osgi.md)。
 
 #### 顯示限制{#display-limits}
 
@@ -541,7 +545,7 @@ sidekick的&#x200B;**Components**&#x200B;標籤（可在報表頁面上使用）
 * 報表資料基本上是使用目前使用者的權限來收集。
 * 歷史資料會使用完成報表的使用者權限來收集。
 
-在標準AEM安裝中，報表的下列權限是預設的：
+在標準安AEM裝中，報表預設了下列權限：
 
 * **使用者報表**
 
