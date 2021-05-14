@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: 設定
+exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
+source-git-commit: 1242b301d82402c28a9c070fad024b823f8cef45
 workflow-type: tm+mt
-source-wordcount: '3806'
+source-wordcount: '3561'
 ht-degree: 0%
 
 ---
-
 
 # OSGi配置設定{#osgi-configuration-settings}
 
@@ -440,29 +439,6 @@ This is paired with the Apache Sling Customized Request Data Logger.
 如需詳細資訊，請參閱[版本清除](/help/sites-deploying/version-purging.md)。
 
 **Day CQ Workflow Email Notification** Service為工作流程傳送的通知設定電子郵件設定。
-
-**Day CQSE HTTP** Service控制CQ Servlet引擎：
-
-* **NIO for HTTP**，是否使用NIO for HTTP。預設為true。 僅在啟用HTTP時使用。
-* **連接超時**，連接超時（以毫秒為單位）。此屬性同時適用於HTTP和HTTPS連接。 預設為60秒。
-
-* **啟用HTTPS,** 是否啟用HTTPS。預設為false。
-* **Session Timeout**, Default lifetime of an HTTP session specified in minutes.如果逾時為0或更少，則作業不會逾時。 預設為10分鐘。
-* **除錯記錄**，是否要寫入DEBUG級別消息。預設為false。
-* **請求緩衝區大小**，請求的緩衝區大小（以位元組為單位）。預設值為8KB。
-* **最大線程數**，用於處理請求的線程數。預設值為200。
-
-以下屬性僅在啟用HTTPS時適用。
-
-* **HTTPS Port**，監聽HTTPS要求的埠。預設為 433.
-* **NIO for HTTPS**，是否使用NIO for HTTP。預設為NIO for HTTP屬性的值。
-* **密鑰**&#x200B;庫，用於HTTPS的密鑰庫的絕對路徑。若已啟用HTTPS，則此為必要項目。
-* **密鑰庫密碼**，用於訪問密鑰庫的密碼。
-* **密鑰別名**，密鑰庫中密鑰的別名。
-* **密鑰密碼**，用於解鎖密鑰庫中的密鑰的密碼。
-* **用戶端憑證**，用戶端提供有效憑證的要求。預設為無。
-
-如需SSL相關選項的詳細資訊，請參閱[啟用HTTP Over SSL](/help/sites-administering/ssl-by-default.md)，以及如何為CQSE啟用HTTPS的完整說明。
 
 **CQ重寫器HTML剖析器工廠**
 
