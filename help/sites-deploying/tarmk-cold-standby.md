@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: 設定
+exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
+source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
 workflow-type: tm+mt
-source-wordcount: '2726'
+source-wordcount: '2713'
 ht-degree: 0%
 
 ---
-
 
 # 如何使AEM用TarMK Cold Standby{#how-to-run-aem-with-tarmk-cold-standby}運行
 
@@ -54,11 +53,11 @@ Tar微內核的冷備用容量允許一個或多個備用實例AEM連接到主�
 
 ## 其他特性{#other-characteristics}
 
-### 魯棒{#robustness}
+### 魯棒性 {#robustness}
 
 資料流設計用於自動檢測和處理連接和網路相關問題。 所有資料包都與校驗和捆綁在一起，一旦連接或損壞的資料包發生重試機制時，就會觸發。
 
-### 效能{#performance}
+### 效能 {#performance}
 
 在主實例上啟用TarMK Cold Standby對效能幾乎沒有可衡量的影響。 額外的CPU消耗非常低，額外的硬碟和網路IO不應產生和效能問題。
 
@@ -276,7 +275,7 @@ Tar微內核的冷備用容量允許一個或多個備用實例AEM連接到主�
 
 * **允許的IP範圍(`primary.allowed-client-ip-ranges`):**  —— 主要允許連接的IP範圍。
 * **安全(`secure`)：啟** 用SSL加密。為了使用此設定，必須在所有例項上啟用此設定。
-* **備用讀超時(`standby.readtimeout`)：從備** 用實例發出的請求超時（以毫秒為單位）。**建議的逾時設定為43200000。通常建議您將超時值設定為至少12小時。**
+* **備用讀超時(`standby.readtimeout`)：從備** 用實例發出的請求超時（以毫秒為單位）。使用的預設值為60000（1分鐘）。
 * **備用自動清`standby.autoclean`除():** 如果儲存的大小在同步週期上增加，請調用清除方法。
 
 >[!NOTE]
@@ -400,4 +399,3 @@ Adobe建議定期運行維護，以防止隨著時間的推移儲存庫出現過
    >[!NOTE]
    >
    >如果您未使用共用資料存放區，則必須先在主要儲存區上執行廢棄項目收集，然後再在備用儲存區上執行。
-
