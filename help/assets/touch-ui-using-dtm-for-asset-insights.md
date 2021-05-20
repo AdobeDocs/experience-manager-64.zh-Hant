@@ -2,16 +2,15 @@
 title: 透過DTM啟用資產見解
 description: 瞭解如何使用Adobe動態標籤管理(DTM)來啟用資產分析。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 資產分析，資產報表
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
-
 
 # 透過DTM {#enabling-asset-insights-through-dtm}啟用資產分析
 
@@ -26,7 +25,7 @@ Adobe動態標籤管理是可啟動數位行銷工具的工具。 酒店免費�
 1. 點選／按一AEM下標誌，並前往&#x200B;**[!UICONTROL 工具>資產>前瞻分析設定]**。
 1. [使用AEMDTMCloud Service配置實例](../sites-administering/dtm.md)
 
-   當您登入[https://dtm.adobe.com](https://dtm.adobe.com/)並從「設定檔」圖示造訪&#x200B;**[!UICONTROL 帳戶設定]**&#x200B;時，API Token應該可供使用。 從資產洞察的角度來看，此步驟不是必要步驟，因為AEM Sites與資產洞察的整合仍在進行中。
+   當您登入[https://dtm.adobe.com](https://dtm.adobe.com/)並從「設定檔」圖示造訪&#x200B;**[!UICONTROL 帳戶設定]**&#x200B;時，API Token應該可供使用。 從資產分析的角度來看，此步驟不是必需的，因為AEM Sites與資產分析的整合仍在進行中。
 
 1. 登入[https://dtm.adobe.com](https://dtm.adobe.com/)，並視情況選擇公司。
 1. 建立／開啟現有Web屬性
