@@ -6,16 +6,15 @@ audience: end-user
 user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 建立、管理、提供和最佳化數位資產。
-translation-type: tm+mt
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '625'
 ht-degree: 43%
 
 ---
 
 
-# Assets 指南  {#assets}
+# Assets 指南 {#assets}
 
 + [資產使用指南](home.md)
 + [AEM6.4資產發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
@@ -156,12 +155,12 @@ ht-degree: 43%
    + [非同步操作](asynchronous-jobs.md)
    + [燈箱](touch-ui-light-box.md)
    + [透過DTM啟用資產見解](touch-ui-using-dtm-for-asset-insights.md)
-   + [設定資產分析](touch-ui-configuring-asset-insights.md)
+   + [設定資產見解](touch-ui-configuring-asset-insights.md)
    + [將翻譯雲服務應用於資料夾](transition-cloud-services.md)
    + [在網頁中使用頁面追蹤器和內嵌代碼](touch-ui-using-page-tracker.md)
    + [管理複合資產](managing-linked-subassets.md)
    + [相關資產](related-assets.md)
-   + [資產 Insights](touch-ui-asset-insights.md)
+   + [資產見解](touch-ui-asset-insights.md)
    + [搜尋視訊資產](search-video-assets.md)
    + [私人資料夾共用](private-folder.md)
    + [智慧型內容服務訓練方針](smart-tags-training-guidelines.md)
