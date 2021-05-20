@@ -10,15 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 81ceb91d-039e-45f0-9b0c-b8233901dea8
 targetaudience: target-audience upgrader
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: 升級
+exl-id: 791da16c-bf2c-47a9-86a4-0a601a1b017e
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 3%
 
 ---
-
 
 # 升級AEM至6.4{#upgrading-to-aem}
 
@@ -51,7 +50,7 @@ ht-degree: 3%
 
 AEM6.0推出了新的Jackrabbit Oak資料庫。 持久性管理器由[微內核](/help/sites-deploying/recommended-deploys.md)替換。 從6.1版開始，不再支援CRX2。 需要執行稱為crx2oak的移轉工具，才能從5.6.1例項移轉CRX2儲存庫。 如需詳細資訊，請參閱[使用CRX2OAK移轉工具](/help/sites-deploying/using-crx2oak.md)。
 
-如果要使用Asset Insights，而您正從6.2以AEM前的版本升級，則必須移轉資產，並透過JMX Bean產生ID。 在我們的內部測試中，TarMK環境上的125K資產在一小時內就會移轉，但結果可能會有所不同。
+如果要使用Assets Insights，而您正從6.2以AEM前的版本升級，則必須移轉資產，並透過JMX Bean產生ID。 在我們的內部測試中，TarMK環境上的125K資產在一小時內就會移轉，但結果可能會有所不同。
 
 AEM6.3為`SegmentNodeStore`引進了新格式，這是TarMK實施的基礎。 如果從6.3以前的版本進行升級，AEM則需要在升級過程中進行資料庫遷移，涉及系統停機。
 
@@ -90,4 +89,3 @@ crx2oak工具命令列使用選項已變更為適合自動化的選項，並支�
 最後，在6.4開發週期中，「可持續升級」（請參閱[「可持續升級」](/help/sites-deploying/sustainable-upgrades.md)）中引進的功能可協助您遵循最佳實務，讓未來的升級更有效率、更順暢。
 
 ![6_4_upgrade_overviewforthbat-newpage3](assets/6_4_upgrade_overviewflowchart-newpage3.png)
-
