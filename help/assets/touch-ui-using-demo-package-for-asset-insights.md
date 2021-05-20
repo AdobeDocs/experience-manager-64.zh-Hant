@@ -1,17 +1,16 @@
 ---
 title: 使用示範套件獲取資產見解
-description: 使用示範套件，讓Adobe資產前瞻分析能夠從網頁擷取資料並產生前瞻分析。
+description: 使用示範套件，讓「Adobe資產前瞻分析」能夠從網頁擷取資料並產生前瞻分析。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 資產分析，資產報表
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: c6d321f5-4c48-47f2-bff1-c4da988c0e84
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
-
 
 # 使用資產分析的示範套件{#using-demo-package-for-asset-insights}
 
@@ -22,11 +21,11 @@ ht-degree: 2%
 1. 使用[設定資產前瞻分析](touch-ui-configuring-asset-insights.md)中的指示設定資產前瞻分析。
 1. 從下面下載示例AEM Assets軟體包，並從CRXDE軟體包管理器安裝該軟體包。
 
-   [取得檔案](assets/insightsdemo.zip)
+[取得檔案](assets/insightsdemo.zip)
 
 1. 下載包含下方範例網頁的ZIP檔案，並在您的本機檔案系統上解壓縮。
 
-   [取得檔案](assets/demosite.zip)
+[取得檔案](assets/demosite.zip)
 
 1. 按一下網頁，在網頁瀏覽器中開啟它。
 
