@@ -1,17 +1,16 @@
 ---
-title: 設定資產分析
+title: 設定資產見解
 description: 瞭解如何在AEM Assets設定資產分析。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 資產分析，資產報表
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '241'
 ht-degree: 10%
 
 ---
-
 
 # 設定資產分析{#configuring-asset-insights}
 
@@ -31,7 +30,7 @@ Adobe Experience Manager(AEM)資產會從Adobe Analytics回取協力AEM廠商網
    ![chlimage_1-211](assets/insights_config2.png)
 
 1. 按一下/點選「 **[!UICONTROL 驗證]**」。
-1. 驗AEM證憑證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇您要從中擷取資產分析的Adobe Analytics報表套裝。 按一下&#x200B;**[!UICONTROL 「新增」]**。
+1. 驗AEM證憑證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇您要從中擷取資料的Adobe Analytics報表套裝。 按一下&#x200B;**[!UICONTROL 「新增」]**。
 1. 設AEM定報表套裝後，按一下／點選&#x200B;**[!UICONTROL Done]**。
 
 ## 頁面追蹤器{#page-tracker}
