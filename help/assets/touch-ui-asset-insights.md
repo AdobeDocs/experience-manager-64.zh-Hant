@@ -2,18 +2,17 @@
 title: 使用資產前瞻分析功能來追蹤影像的使用情況
 description: 「資產前瞻分析」功能可讓您追蹤使用者評分，以及協力廠商網站、行銷活動和Adobe創意解決方案所使用影像的使用統計資料。
 contentOwner: AG
-feature: Asset Insights,Asset Reports
+feature: 資產分析，資產報表
 role: Business Practitioner,Administrator
-translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
-source-wordcount: '780'
-ht-degree: 8%
+source-wordcount: '794'
+ht-degree: 7%
 
 ---
 
-
-# 資產 Insights {#asset-insights}
+# 資產分析{#asset-insights}
 
 瞭解「資產前瞻分析」功能如何讓您追蹤第三方網站、行銷活動和Adobe創意解決方案中所使用資產的使用者評分和使用統計資料。
 
@@ -23,7 +22,7 @@ Assets Insights會擷取使用者活動詳細資訊，例如資產被評級、�
 
 若是「資產前瞻分析」，以從網站擷取資產的使用統計資料，您必須在網站代碼中包含資產的內嵌代碼。
 
-若要讓「資產前瞻分析」顯示資產的使用統計資料，請先設定功能，從[!DNL Adobe Analytics]擷取報告資料。 如需詳細資訊，請參閱[設定資產前瞻分析](touch-ui-configuring-asset-insights.md)。
+若要讓「資產前瞻分析」顯示資產的使用統計資料，請先設定功能，從[!DNL Adobe Analytics]擷取報告資料。 如需詳細資訊，請參閱[設定資產前瞻分析](touch-ui-configuring-asset-insights.md)。 若要使用此功能，請個別購買[!DNL Adobe Analytics]授權。 [!DNL Managed Services]的客戶會收到與[!DNL Experience Manager]搭售的[!DNL Analytics]授權。 請參閱[Managed Services產品說明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)。
 
 >[!NOTE]
 >
@@ -52,7 +51,7 @@ Assets Insights會擷取使用者活動詳細資訊，例如資產被評級、�
 
    >[!NOTE]
    >
-   >由於「資產前瞻分析」功能通常會定期從Adobe Analytics擷取「解決方案」資料，因此「解決方案」區段可能不會顯示最新資料。 顯示資料的時段取決於「資產分析」執行以擷取Analytics資料的擷取作業排程。
+   >「資產前瞻分析」功能會定期從[!DNL Adobe Analytics]擷取解決方案資料，解決方案區段可能不會顯示最新資料。 顯示資料的時段取決於資產前瞻分析執行擷取作業的排程，以擷取[!DNL Analytics]資料。
 
 1. 要以圖形方式查看某個時段內資產的效能統計資訊，請在「效能統計資訊」部分中 **[!UICONTROL 選擇該時段]** 。詳細資訊 (包括點按次數和印象) 會顯示為圖形的趨勢線。
 
@@ -60,9 +59,9 @@ Assets Insights會擷取使用者活動詳細資訊，例如資產被評級、�
 
    >[!NOTE]
    >
-   >與「解決方案」區段中的資料不同，「效能統計資料」區段會顯示最新的資料。
+   >與解決方案區段中的資料不同，效能統計資料區段會顯示最新的資料。
 
-1. 若要取得您包含在網站中的資產的內嵌代碼以取得效能資料，請點選／按一下資產縮圖下方的「取得內嵌代碼」。 ****&#x200B;如需如何將內嵌程式碼加入協力廠商網頁的詳細資訊，請參閱[使用頁面追蹤器和網頁內嵌程式碼](touch-ui-using-page-tracker.md)。
+1. 若要取得您包含在網站中的資產的內嵌代碼，以取得效能資料，請按一下資產縮圖下方的「取得內嵌代碼」。 ****&#x200B;如需如何將內嵌程式碼加入協力廠商網頁的詳細資訊，請參閱[使用頁面追蹤器和網頁內嵌程式碼](touch-ui-using-page-tracker.md)。
 
    ![chlimage_1-303](assets/chlimage_1-303.png)
 
@@ -76,7 +75,7 @@ Assets Insights會擷取使用者活動詳細資訊，例如資產被評級、�
 
 ## 排程背景工作{#scheduling-background-job}
 
-「資產前瞻分析」會定期從Adobe Analytics報表套裝擷取資產的使用資料。 根據預設，資產前瞻分析會每24小時在2 AM執行一次背景工作，以擷取資料。 不過，您可以通過從Web控制台配置&#x200B;**[!UICONTROL Adobe CQDAM資產效能報告同步作業]**&#x200B;服務來修改頻率和時間。
+「資產分析」會定期從Adobe Analytics報表套裝擷取資產的使用資料。 依預設，資產前瞻分析會在每24小時於2 AM執行背景工作，以擷取資料。 不過，您可以通過從Web控制台配置&#x200B;**[!UICONTROL Adobe CQDAM資產效能報告同步作業]**&#x200B;服務來修改頻率和時間。
 
 1. 點選AEM標誌，並前往「工 **[!UICONTROL 具 > 作業 > Web Console]**」。
 1. 開啟&#x200B;**[!UICONTROL Adobe CQDAM資產效能報告同步作業]**&#x200B;服務配置。
