@@ -3,11 +3,10 @@ title: 使用AEM Assets管理您的數位資產
 description: 瞭解使用AEM Assets最佳化觸控式使用者介面可執行的各種資產管理和編輯工作
 contentOwner: AG
 mini-toc-levels: 1
-feature: Asset Management,Search,Renditions,Collaboration
+feature: 資產管理，搜尋，轉譯，協作
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-translation-type: tm+mt
-source-git-commit: fd79ac0694d5b7af0422c546cc4a94fdf2326d37
+source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
 workflow-type: tm+mt
 source-wordcount: '10083'
 ht-degree: 2%
@@ -291,7 +290,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上傳PSD檔案時�
 |  | 行動 | 建立MP4檔案，以便在iPhone或Android行動裝置上傳送。選取一或多個寬高比，以符合您所需的解析度大小和目標資料速率。 |
 |  | 平板電腦 | 建立MP4檔案，以便在iPad或Android平板裝置上發佈。選取一或多個外觀比例，以符合您所需的解析度大小和目標資料速率。 |
 
-#### 在上載{#setting-batch-set-presets-at-upload}時設定批次集預設集
+#### 在上傳{#setting-batch-set-presets-at-upload}時設定批次集預設集
 
 如果您想從上傳的影像自動建立影像集或回轉集，請按一下您要使用之預設集的&#x200B;**[!UICONTROL 作用中]**&#x200B;欄。 您可以選取多個預設集。
 
@@ -368,7 +367,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上傳PSD檔案時�
 
 1. 在&#x200B;**[!UICONTROL Tags]**&#x200B;欄位中，選取一或多個標籤。 若要新增自訂標籤，請在方塊中輸入標籤名稱，然後按&#x200B;**[!UICONTROL Enter]**。 新標籤將保存在中AEM。
 
-   YouTube需要標籤才能發佈，並有YouTube的連結（如果找到適當的連結）。
+   YouTube需要標籤來發佈，並有YouTube的連結（如果找到適當的連結）。
 要建立標籤，需要CRX儲存庫中`/content/cq:tags/default`的寫權限。
 
 1. 若要提供資產評等，請點選&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤，然後在適當位置點選星號以指派所要的評等。
@@ -710,7 +709,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## 使用時間軸{#timeline}
+## 使用時間軸 {#timeline}
 
 **[!UICONTROL 時間軸]**&#x200B;可讓您檢視所選項目的各種事件，例如資產、注釋、註解、活動記錄檔和版本的作用中工作流程。
 
@@ -729,7 +728,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![timeline_options](assets/timeline_options.png)
 
-## 添加註釋{#annotating}
+## 新增註解 {#annotating}
 
 註解是影像或視訊中新增的註解或說明註解。 註解可讓行銷人員協作並留下有關資產的意見回應。
 
@@ -943,7 +942,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 請參閱[將工作流程套用AEM至資產](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
 
-## 關於系列{#collections}
+## 關於系列 {#collections}
 
 系列是一組已訂購的資產。 使用系列在使用者之間共用資產。
 
