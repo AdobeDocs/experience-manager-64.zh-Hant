@@ -1,8 +1,8 @@
 ---
 title: 管理內容片段
 seo-title: 管理內容片段
-description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
-seo-description: 內容片段會儲存為資產，因此主要是從資產主控台管理。
+description: 內容片段會儲存為資產，因此主要是透過Assets主控台管理。
+seo-description: 內容片段會儲存為資產，因此主要是透過Assets主控台管理。
 uuid: 0659cf03-b4e8-4b8b-bec7-0082f980115a
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,8 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
-feature: Content Fragments
+feature: 內容片段
 role: Business Practitioner
-translation-type: tm+mt
 source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
 source-wordcount: '1511'
@@ -24,19 +23,19 @@ ht-degree: 11%
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更高版本](/help/release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
 
 內容片段會儲存為&#x200B;**[!UICONTROL Assets]**，因此主要是從&#x200B;**[!UICONTROL Assets]**&#x200B;主控台管理。
 
 >[!NOTE]
 >
->然後內容片段會用於編寫頁面；請參閱[使用內容片段編寫頁面](/help/sites-authoring/content-fragments.md)。
+>內容片段隨後用於編寫頁面；請參閱使用內容片段進行頁面編寫](/help/sites-authoring/content-fragments.md)。[
 
 ## 建立內容片段{#creating-content-fragments}
 
 ### 建立內容模型{#creating-a-content-model}
 
-[在使用結](content-fragments-models.md) 構化內容建立內容片段之前，可啟用並建立內容片段模型。
+[在建立具](content-fragments-models.md) 有結構化內容的內容片段之前，請啟用並建立內容片段模型。
 
 >[!NOTE]
 >
@@ -52,11 +51,11 @@ ht-degree: 11%
 
    * 這可以是：
 
-      * [範本](/help/sites-developing/content-fragment-templates.md) -例如簡 **[!UICONTROL 單片段]**
-      * [模型](content-fragments-models.md) -用於建立需要結構化內容的片段；例如， **** Airportmodel
+      * [範本](/help/sites-developing/content-fragment-templates.md)  — 例如簡 **[!UICONTROL 單片段]**
+      * [模型](content-fragments-models.md)  — 用於建立需要結構化內容的片段；例如，機 **** 場模型
    * 將顯示所有可用的模板和模型。
 
-   選擇後，使用&#x200B;**[!UICONTROL Next]**&#x200B;繼續。
+   選取後，使用&#x200B;**[!UICONTROL Next]**&#x200B;繼續。
 
    ![cfm-6420-15](assets/cfm-6420-15.png)
 
@@ -76,19 +75,19 @@ ht-degree: 11%
 
       * **[!UICONTROL 名稱]**
 
-         姓名；將用於形成URL。
+         名稱；將用來形成URL。
 
-         強制；將會自動從標題衍生，但可以更新。
+         強制；會自動從標題衍生出，但可更新。
 
 
 1. 選擇 **[!UICONTROL Create]**  (建立) 以完成操作，然後選擇 **[!UICONTROL Open]** the fragment for editing (開啟片段以進行編輯) 或返回控制 **[!UICONTROL 台完成]**。
 
 ## 內容片段{#actions-for-a-content-fragment}的動作
 
-在&#x200B;**[!UICONTROL Assets]**&#x200B;主控台中，您的內容片段可使用一系列動作：
+在&#x200B;**[!UICONTROL Assets]**&#x200B;主控台中，一系列動作可供內容片段使用，包括：
 
-* 從工具列；在選擇片段後，所有適當的動作都可供使用。
-* 作為[快速操作](/help/sites-authoring/basic-handling.md#quick-actions);個別片段卡可用動作的子集。
+* 從工具列；選取片段後，所有適當的動作皆可使用。
+* 作為[快速操作](/help/sites-authoring/basic-handling.md#quick-actions);個別片段卡片可用的動作子集。
 
 ![cfm-6420-17](assets/cfm-6420-17.png)
 
@@ -102,19 +101,19 @@ ht-degree: 11%
 * **[!UICONTROL 結帳]**
 * **[!UICONTROL 屬性]**
 
-   * 可讓您檢視和／或編輯片段的中繼資料。
+   * 可讓您檢視和/或編輯片段的中繼資料。
 
 * **[!UICONTROL 編輯]**
 
-   * 可讓您[開啟片段，以編輯內容](content-fragments-variations.md)及其元素、變化、相關內容和中繼資料。
+   * 可讓您[開啟片段以編輯內容](content-fragments-variations.md)及其元素、變異、相關內容和中繼資料。
 
 * **[!UICONTROL 管理標記]**
 * **[!UICONTROL 至集合]**
 
-   * 將片段新增至系列。
-   * 當[將系列與片段](content-fragments-assoc-content.md#adding-associated-content)關聯時，也可以執行此動作。
+   * 新增片段至集合。
+   * 當[將集合與片段](content-fragments-assoc-content.md#adding-associated-content)關聯時，也可以執行此操作。
 
-* **[!UICONTROL 複製／貼上]**
+* **[!UICONTROL 複製/貼上]**
 * **[!UICONTROL 移動]**
 * **[!UICONTROL 快速發佈]**
 * **[!UICONTROL 管理發佈]**
@@ -122,21 +121,21 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->其中許多是[ Assets](managing-assets-touch-ui.md)和／或[案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。
+>其中許多是資產](managing-assets-touch-ui.md)和/或[案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。[
 
 ## 開啟片段編輯器{#opening-the-fragment-editor}
 
-要開啟片段進行編輯：
+若要開啟片段以進行編輯：
 
 >[!CAUTION]
 >
 >若要編輯內容片段，您需要[適當的權限](/help/sites-developing/customizing-content-fragments.md#asset-permissions)。 如果您遇到問題，請與系統管理員聯繫。
 
-1. 使用&#x200B;**[!UICONTROL Assets]**&#x200B;主控台瀏覽至內容片段的位置。
-1. 開啟片段以供編輯，方法為：
+1. 使用&#x200B;**[!UICONTROL Assets]**&#x200B;控制台導覽至內容片段的位置。
+1. 開啟片段以進行編輯，方法為：
 
-   * 按一下／點選片段連結（這取決於控制台檢視）。
-   * 選擇片段，然後從工具欄中選擇&#x200B;**[!UICONTROL 編輯]**。
+   * 按一下/點選片段或片段連結（取決於主控台檢視）。
+   * 選取片段，然後從工具列中選取&#x200B;**[!UICONTROL 編輯]**。
 
    片段編輯器將開啟：
 
@@ -144,15 +143,15 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >1. 當內容頁面上已參考片段時，會顯示訊息。
+   >1. 內容頁面上已參考片段時，會顯示訊息。
       >
       >
-   2. 使用&#x200B;**[!UICONTROL 切換側面板]**&#x200B;圖示可隱藏／顯示側面板。
+   2. 可使用&#x200B;**[!UICONTROL 切換側面板]**&#x200B;表徵圖隱藏/顯示側面板。
 
 
-1. 使用側面板中的圖示，在三種模式中導覽：
+1. 使用側面板中的圖示，導覽這三個模式：
 
-   * 變化：[編輯內容](#editing-the-content-of-your-fragment)和[管理變數](#creating-and-managing-variations-within-your-fragment)
+   * 變數：[編輯內容](#editing-the-content-of-your-fragment)和[管理變數](#creating-and-managing-variations-within-your-fragment)
    * [註解](content-fragments-variations.md#annotating-a-content-fragment)
    * [相關聯的內容](#associating-content-with-your-fragment)
    * [中繼資料](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -165,17 +164,17 @@ ht-degree: 11%
    >
    >「儲 **[!UICONTROL 存]** 」和「取 **[!UICONTROL 消」都會退出編輯器——請參閱「]**[](#save-cancel-and-versions) 儲存」、「取消」和「版本」，以取得有關這兩個選項如何對內容片段運作的完整資訊。
 
-## 保存、取消和{#save-cancel-and-versions}版本
+## 保存、取消和版本{#save-cancel-and-versions}
 
 >[!NOTE]
 >
->版本也可以從時間軸](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)建立、比較和回復。[
+>也可以從時間軸](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)建立、比較和還原版本。[
 
 編輯器有兩個選項：
 
 * **[!UICONTROL 儲存]**
 
-   將保存最新更改並退出編輯器。
+   會儲存最新變更並退出編輯器。
 
    >[!CAUTION]
    >
@@ -183,74 +182,74 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >在選擇&#x200B;**[!UICONTROL Save]**&#x200B;之前，可以保留在編輯器中，進行一系列更改。
+   >在選取&#x200B;**[!UICONTROL Save]**&#x200B;之前，可以保留在編輯器中並進行一系列更改。
 
    >[!CAUTION]
    >
-   >除了簡單地保存更改外，**[!UICONTROL Save]**&#x200B;還會更新任何引用，並確保調度程式根據需要刷新。 這些變更可能需要時間處理。 因此，對於大型／複雜／重負載系統，效能可能會受到影響。
+   >除了僅儲存您的變更，**[!UICONTROL Save]**&#x200B;也會更新任何參考，並確保視需要刷新Dispatcher。 這些變更可能需要時間處理。 因此，對於大型/複雜/重載的系統，可能會產生效能影響。
    >
    >
    >使用&#x200B;**[!UICONTROL Save]**，然後快速重新輸入片段編輯器以進行並儲存進一步的變更時，請記住這一點。
 
 * **[!UICONTROL 取消]**
 
-   將退出編輯器，而不保存最新的更改。
+   會退出編輯器，而不儲存最新變更。
 
-編輯內容片段時，會自AEM動建立版本，以確保在您&#x200B;**[!UICONTROL Cancel]**&#x200B;變更時，舊版內容可以復原：
+編輯您的內容片段AEM時，會自動建立版本，以確保在您&#x200B;**[!UICONTROL 取消]**&#x200B;變更時，可以還原先前的內容：
 
-1. 當開啟內容片段進行編輯時AEM，會檢查是否存在Cookie型Token，指出&#x200B;*編輯工作階段*&#x200B;是否存在：
+1. 開啟內容片段以編輯AEM時，會檢查是否有Cookie型Token，指出是否存在&#x200B;*編輯工作階段*:
 
-   1. 如果找到代號，則片段會視為現有編輯工作階段的一部分。
-   1. 如果代號是&#x200B;*not*，且使用者開始編輯內容，則會建立版本，並傳送此新編輯工作階段的代號給用戶端，並儲存在Cookie中。
+   1. 如果找到代號，則會將片段視為現有編輯工作階段的一部分。
+   1. 如果代號為&#x200B;*不可用，且使用者開始編輯內容，則會建立版本，並將此新編輯工作階段的代號傳送至用戶端，並儲存於Cookie中。*
 
-1. 雖然有&#x200B;*active*&#x200B;編輯工作階段，但所編輯的內容會每600秒自動儲存一次（預設）。
+1. 雖然有&#x200B;*作用中*&#x200B;編輯工作階段，但每600秒就會自動儲存所編輯的內容（預設值）。
 
    >[!NOTE]
    >
-   >使用`/conf`機制可配置自動保存間隔。
+   >可使用`/conf`機制配置自動保存間隔。
    >
    >預設值，請參閱：
    >
    >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
 1. 如果用戶選擇&#x200B;**[!UICONTROL 取消]**&#x200B;編輯，則恢復在編輯會話開始時建立的版本，並刪除令牌以結束編輯會話。
-1. 如果用戶選擇「保存」編輯，則更新的元素／變化將被保存，並且標籤被移除以結束編輯會話。****
+1. 如果使用者選取&#x200B;**[!UICONTROL Save]**&#x200B;編輯，則更新的元素/變數會持續存在，並移除代號以結束編輯工作階段。
 
 ## 編輯片段{#editing-the-content-of-your-fragment}的內容
 
-開啟片段後，您就可以使用[Valuas](content-fragments-variations.md)標籤來製作內容。
+開啟片段後，您可以使用[Variations](content-fragments-variations.md)標籤來製作內容。
 
-## 在片段{#creating-and-managing-variations-within-your-fragment}中建立和管理變化
+## 在片段{#creating-and-managing-variations-within-your-fragment}中建立和管理變異
 
-建立主版內容後，您就可以建立並管理該內容的[Valuas](content-fragments-variations.md)。
+建立主內容後，您就可以建立和管理該內容的[變體](content-fragments-variations.md)。
 
-## 將內容與片段{#associating-content-with-your-fragment}關聯
+## 將內容與您的片段{#associating-content-with-your-fragment}關聯
 
-您也可以[將內容](content-fragments-assoc-content.md)與片段關聯。 這提供了一種連接，使得資產（即影像）在添加到內容頁面時可（可選）與片段一起使用。
+您也可以[將內容](content-fragments-assoc-content.md)與片段關聯。 這會提供連線，讓資產（即影像）在新增至內容頁面時，可（選擇性）與片段搭配使用。
 
 ## 查看和編輯片段{#viewing-and-editing-the-metadata-properties-of-your-fragment}的元資料（屬性）
 
-您可以使用[[!UICONTROL 中繼資料]](content-fragments-metadata.md)標籤來檢視和編輯片段的屬性。
+您可以使用[[!UICONTROL Metadata]](content-fragments-metadata.md)索引標籤來檢視和編輯片段的屬性。
 
-## 內容片段時間軸{#timeline-for-content-fragments}
+## 內容片段{#timeline-for-content-fragments}時間軸
 
-除了標準選項外，[Timeline](managing-assets-touch-ui.md#timeline)還提供內容片段的特定資訊和動作：
+除了標準選項外，[時間軸](managing-assets-touch-ui.md#timeline)還提供內容片段的特定資訊和動作：
 
-* 檢視版本、注釋和註解的相關資訊
+* 查看有關版本、注釋和注釋的資訊
 * 版本動作
 
-   * **[[!UICONTROL 還原為此版本]](#reverting-to-a-version)** （選擇現有片段，然後選擇特定版本）
-   * **[[!UICONTROL 與目前比較]](#comparing-fragment-versions)** （選擇現有片段，然後選擇特定版本）
-   * 新增&#x200B;**[!UICONTROL Label]**&#x200B;和／或&#x200B;**[!UICONTROL Comment]**（選取現有片段，然後選取特定版本）
-   * **[!UICONTROL 另存為版本]** （選擇現有片段，然後選擇時間軸底部的向上箭頭）
+   * **[[!UICONTROL 回復到此版本]](#reverting-to-a-version)** （選擇現有片段，然後選擇特定版本）
+   * **[[!UICONTROL 與目前的]](#comparing-fragment-versions)** 比較（選取現有片段，然後選取特定版本）
+   * 新增&#x200B;**[!UICONTROL Label]**&#x200B;及/或&#x200B;**[!UICONTROL Comment]**（選取現有片段，然後選取特定版本）
+   * **[!UICONTROL 另存為版本]** （選取現有片段，然後是時間軸底部的向上箭頭）
 
-* 注釋操作
+* 註解動作
 
    * **[!UICONTROL 刪除]**
 
 >[!NOTE]
 >
->備注如下：
+>評論包括：
 >
 >* 所有資產的標準功能
 >* 在時間軸中製作
@@ -270,71 +269,71 @@ ht-degree: 11%
 
 ## 比較片段版本{#comparing-fragment-versions}
 
-在您選擇特定版本後，**[!UICONTROL Timeline]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)可從[[!UICONTROL  Timeline中使用「比較當前]**」操作。
+在您選取特定版本後，可從[[!UICONTROL 時間軸]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)中使用&#x200B;**[!UICONTROL 比較目前]**&#x200B;動作。
 
 此選項將開啟：
 
-* **[!UICONTROL Current]**（最新）版本（左）
+* **[!UICONTROL 目前]**（最新）版本（左）
 
 * 所選版本&#x200B;**v&lt;*x.y*>**（右）
 
-它們將並排顯示，其中：
+它們會並排顯示，其中：
 
-* 會反白顯示任何差異
+* 會強調顯示任何差異
 
-   * 已刪除的文字——紅色
-   * 插入的文本——綠色
-   * 已取代文字——藍色
+   * 已刪除的文本 — 紅色
+   * 插入的文本 — 綠色
+   * 已更換文字 — 藍色
 
 * 全螢幕圖示可讓您自行開啟任一版本；然後切換回平行檢視
-* 您可以&#x200B;**[!UICONTROL 將]**&#x200B;還原為特定版本
-* **[!UICONTROL Donewill]** return you to the console
+* 您可以&#x200B;**[!UICONTROL 還原]**&#x200B;到特定版本
+* **** Donewill會將您傳回主控台
 
 >[!NOTE]
 >
->比較片段時，無法編輯片段內容。
+>比較片段時無法編輯片段內容。
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
 ## 還原為{#reverting-to-a-version}版本
 
-您可以回復到特定版本的片段：
+您可以還原為片段的特定版本：
 
 * 直接從[[!UICONTROL 時間軸]](content-fragments-managing.md#timeline-for-content-fragments)。
 
-   選擇所需的版本，然後選擇&#x200B;**[!UICONTROL 恢復到此版本]**&#x200B;操作。
+   選擇所需的版本，然後選擇&#x200B;**[!UICONTROL 還原為此版本]**&#x200B;操作。
 
-* 當[比較版本與當前版本](content-fragments-managing.md#comparing-fragment-versions)時，您可以&#x200B;**[!UICONTROL 將]**&#x200B;還原為選定版本。
+* 當[將版本與當前版本](content-fragments-managing.md#comparing-fragment-versions)比較時，您可以&#x200B;**[!UICONTROL 還原]**&#x200B;到所選版本。
 
-## 發佈和引用片段{#publishing-and-referencing-a-fragment}
+## 發佈和參考片段{#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 >
 >如果您的片段是以模型為基礎，則應確定[模型已發佈](content-fragments-models.md#publishing-a-content-fragment-model)。
 >
->如果您發佈模型尚未發佈的內容片段，則選擇清單會指出此點，而模型將會隨片段一起發佈。
+>如果您發佈的內容片段尚未發佈模型，則選取清單會指出此點，且模型將會隨片段發佈。
 
-必須發佈內容片段，才能在發佈環境中使用。 可發佈：
+內容片段必須發佈以便在發佈環境中使用。 可發佈：
 
-* 建立後；從&#x200B;**[!UICONTROL Assets]**&#x200B;主控台。
-* 當您[發佈使用片段](/help/sites-authoring/content-fragments.md#publishing)的頁面時；片段將列在頁面參考中。
+* 建立後；從&#x200B;**[!UICONTROL Assets]**&#x200B;控制台。
+* 當您[發佈使用片段](/help/sites-authoring/content-fragments.md#publishing)的頁面時；片段會列在頁面參考中。
 
 >[!CAUTION]
 >
->發佈和／或參考片段後，當作AEM者開啟片段以進行重新編輯時，會顯示警告。 這會警告對片段所做的變更也會影響參照的頁面。
+>發佈和/或參考片段後，製作者開啟片段並再次編輯時AEM會顯示警告。 這將警告對片段的變更也會影響參考的頁面。
 
 ## 刪除片段{#deleting-a-fragment}
 
-要刪除片段：
+刪除片段：
 
 1. 在&#x200B;**[!UICONTROL Assets]**&#x200B;主控台中，導覽至內容片段的位置。
-1. 選擇片段。
+1. 選取片段。
 
    >[!NOTE]
    >
-   >**[!UICONTROL Delete]**&#x200B;動作不提供快速動作。
+   >**[!UICONTROL Delete]**&#x200B;動作無法作為快速動作使用。
 
-1. 從工具欄中選擇&#x200B;**[!UICONTROL Delete]**。
+1. 從工具欄中選擇&#x200B;**[!UICONTROL 刪除]**。
 1. 確認&#x200B;**[!UICONTROL Delete]**&#x200B;動作。
 
    >[!CAUTION]
