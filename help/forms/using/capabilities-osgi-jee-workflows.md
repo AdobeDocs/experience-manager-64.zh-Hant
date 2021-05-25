@@ -1,26 +1,25 @@
 ---
-title: 'OSGi和AEM Forms JEE工作流程中表單導向AEM工作流程的動作和功能 '
-seo-title: 'OSGi和AEM Forms JEE工作流程中表單導向AEM工作流程的動作和功能 '
-description: 進一步瞭解AEM Inbox和HTML Workspace支援的動作差異、OSGi和AEM Forms JEE Workflows支援的表單導向AEM Workflows功能差異，以及AEM Inbox和AEM Forms應用程式功能之間的差異。
-seo-description: 進一步瞭解AEM Inbox和HTML Workspace支援的動作差異、OSGi和AEM Forms JEE Workflows支援的表單導向AEM Workflows功能差異，以及AEM Inbox和AEM Forms應用程式功能之間的差異。
+title: 'OSGi和AEM Forms JEE工作流程上以表單為中心的AEM工作流程的動作和功能 '
+seo-title: 'OSGi和AEM Forms JEE工作流程上以表單為中心的AEM工作流程的動作和功能 '
+description: 進一步了解AEM收件匣和HTML工作區支援的動作差異、OSGi和AEM Forms JEE工作流程上以表單為中心的AEM工作流程支援的功能差異，以及AEM收件匣和AEM Forms應用程式功能之間的差異。
+seo-description: 進一步了解AEM收件匣和HTML工作區支援的動作差異、OSGi和AEM Forms JEE工作流程上以表單為中心的AEM工作流程支援的功能差異，以及AEM收件匣和AEM Forms應用程式功能之間的差異。
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
-translation-type: tm+mt
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 18%
 
 ---
 
+# OSGi和AEM Forms JEE工作流程上以表單為中心的AEM工作流程的動作和功能{#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-# OSGi和AEM Forms JEE工作流程的表單導向AEM工作流程動作與功能{#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+## AEM收件匣和HTML工作區{#aem-inbox-and-html-workspace}
 
-## AEM Inbox和HTML Workspace {#aem-inbox-and-html-workspace}
-
-AEM Inbox可用來在OSGi上執行和監控以表單為中心的AEM工作流程。 HTML工作區可讓您執行和監視AEM Forms JEE工作流程。 下表列出OSGi上的「AEM Inbox for Forms-centric AEM Workflows」和「AEM Forms JEE Workflows的HTML Workspace」中可用的重要動作。
+AEM收件匣可用來在OSGi上執行和監視以Forms為中心的AEM工作流程。 HTML工作區可讓您執行和監視AEM Forms JEE工作流程。 下表列出OSGi上以Forms為中心的AEM工作流程的AEM收件匣，以及AEM Forms JEE工作流程的HTML工作區中可用的重要動作。
 
 <table> 
  <tbody>
@@ -40,12 +39,12 @@ AEM Inbox可用來在OSGi上執行和監控以表單為中心的AEM工作流程�
    <td>支援<br /> </td> 
   </tr>
   <tr>
-   <td>將任務分配給組</td> 
+   <td>為組分配任務</td> 
    <td>支援<br /> </td> 
    <td>支援<br /> </td> 
   </tr>
   <tr>
-   <td>提交到多條路由</td> 
+   <td>向多條路由提交</td> 
    <td>支援<br /> </td> 
    <td>支援<br /> </td> 
   </tr>
@@ -60,12 +59,12 @@ AEM Inbox可用來在OSGi上執行和監控以表單為中心的AEM工作流程�
    <td>支援<br /> </td> 
   </tr>
   <tr>
-   <td>重新指派工作</td> 
+   <td>重新指派任務</td> 
    <td>支援</td> 
    <td>支援</td> 
   </tr>
   <tr>
-   <td>適應性表單的欄位層級附件</td> 
+   <td>適用性表單的欄位層級附件</td> 
    <td>支援</td> 
    <td>不支援</td> 
   </tr>
@@ -75,12 +74,12 @@ AEM Inbox可用來在OSGi上執行和監控以表單為中心的AEM工作流程�
    <td>不支援</td> 
   </tr>
   <tr>
-   <td>任務級別注釋</td> 
+   <td>任務級注釋</td> 
    <td>支援</td> 
    <td>不支援</td> 
   </tr>
   <tr>
-   <td>隊列（共用的個人隊列，從隊列中聲明任務）</td> 
+   <td>隊列（共用的個人隊列，來自隊列的聲明任務）</td> 
    <td>不支援</td> 
    <td>支援</td> 
   </tr>
@@ -97,15 +96,15 @@ AEM Inbox可用來在OSGi上執行和監控以表單為中心的AEM工作流程�
  </tbody>
 </table>
 
-## OSGi和AEM Forms JEE的表單導向AEM工作流程{#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+## OSGi和AEM Forms JEE工作流程上的表單導向AEM工作流程{#form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Management)有不同的功能集。 下表列出OSGi和AEM Forms on JEE Workflows中以表單為中心的AEM Workflows的重要功能與支援：
+OSGi和AEM Forms JEE工作流程上的表單導向AEM工作流程(JEE流程管理上的AEM Forms)有不同的功能集。 下表列出OSGi和JEE工作流程上以表單為中心的AEM工作流程和AEM Forms中功能的重要功能與支援：
 
 <table> 
  <tbody>
   <tr>
    <td>功能</td> 
-   <td>OSGi<br />上的表單導向AEM工作流程 </td> 
+   <td>OSGi<br />上以表單為中心的AEM工作流程 </td> 
    <td>AEM Forms JEE工作流程</td> 
   </tr>
   <tr>
@@ -134,12 +133,12 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
    <td>支援</td> 
   </tr>
   <tr>
-   <td>到期日後超時任務</td> 
+   <td>在到期日後超時任務</td> 
    <td>支援</td> 
    <td>支援</td> 
   </tr>
   <tr>
-   <td>工作流程中的回圈</td> 
+   <td>工作流程內的回圈</td> 
    <td>支援</td> 
    <td>支援</td> 
   </tr>
@@ -155,26 +154,26 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
   </tr>
   <tr>
    <td>電子簽名(Adobe Sign)</td> 
-   <td>支援<sup>[1]</sup></td> 
-   <td>支援<sup>[5]</sup></td> 
+   <td>支援的<sup>[1]</sup></td> 
+   <td>支援的<sup>[5]</sup></td> 
   </tr>
   <tr>
    <td>管理任務和表單應用程式</td> 
-   <td>支援<sup>[2]</sup><br /> </td> 
-   <td>支援<sup>[2]</sup></td> 
+   <td>支援的<sup>[2]</sup><br /> </td> 
+   <td>支援的<sup>[2]</sup></td> 
   </tr>
   <tr>
    <td>文件服務</td> 
-   <td>支援<sup>[3]</sup></td> 
-   <td>支援<sup>[3]</sup></td> 
+   <td>支援的<sup>[3]</sup></td> 
+   <td>支援的<sup>[3]</sup></td> 
   </tr>
   <tr>
-   <td>將完成的工作演算為最適化表單或PDF檔案</td> 
+   <td>將完成的任務渲染為最適化表單或PDF文檔</td> 
    <td>支援</td> 
    <td>支援 [4]</td> 
   </tr>
   <tr>
-   <td>與信件管理整合</td> 
+   <td>與通信管理整合</td> 
    <td>支援</td> 
    <td>支援</td> 
   </tr>
@@ -189,22 +188,22 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
    <td>不支援</td> 
   </tr>
   <tr>
-   <td>唯讀可調式表單</td> 
+   <td>唯讀適用性表單</td> 
    <td>支援</td> 
    <td>不支援</td> 
   </tr>
   <tr>
-   <td>隱藏預設保存按鈕</td> 
+   <td>隱藏預設的儲存按鈕</td> 
    <td>支援</td> 
    <td>不支援</td> 
   </tr>
   <tr>
-   <td>詳細控制工作流程詳細資訊區段</td> 
+   <td>對工作流程詳細資訊區段的精細控制</td> 
    <td>支援</td> 
    <td>不支援</td> 
   </tr>
   <tr>
-   <td>HTML5表格、互動式PDF表格、表格集<br /> </td> 
+   <td>HTML5 Forms，互動式PDF forms，表單集<br /> </td> 
    <td>不支援<br /> </td> 
    <td>支援</td> 
   </tr>
@@ -219,7 +218,7 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
    <td>支援<br /> </td> 
   </tr>
   <tr>
-   <td>起點類別</td> 
+   <td>起始點類別</td> 
    <td>不支援 </td> 
    <td>支援 </td> 
   </tr>
@@ -234,12 +233,12 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
    <td>支援 </td> 
   </tr>
   <tr>
-   <td>使用現有流程資料啟動流程<br /> </td> 
+   <td>使用現有進程資料啟動進程<br /> </td> 
    <td>不支援</td> 
    <td>支援 </td> 
   </tr>
   <tr>
-   <td>將起點另存為草稿</td> 
+   <td>將起始點另存為草稿</td> 
    <td>不支援</td> 
    <td>支援</td> 
   </tr>
@@ -249,7 +248,7 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
    <td>支援</td> 
   </tr>
   <tr>
-   <td>管理員檢視</td> 
+   <td>管理器視圖</td> 
    <td>不支援</td> 
    <td>支援<br /> </td> 
   </tr>
@@ -260,11 +259,11 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
   </tr>
   <tr>
    <td>與協力廠商應用程式整合</td> 
-   <td>支援<sup>[6]</sup></td> 
+   <td>支援的<sup>[6]</sup></td> 
    <td>支援</td> 
   </tr>
   <tr>
-   <td>工作流應用程式或起點的任務級附件</td> 
+   <td>工作流應用程式或起始點的任務級附件</td> 
    <td>不支援</td> 
    <td>支援</td> 
   </tr>
@@ -274,7 +273,7 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
    <td>支援</td> 
   </tr>
   <tr>
-   <td>變更任務逾時的標題</td> 
+   <td>更改任務超時的標題</td> 
    <td>不支援</td> 
    <td>支援</td> 
   </tr>
@@ -285,17 +284,17 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
   </tr>
   <tr>
    <td>在工作流程結束時傳送電子郵件</td> 
-   <td>支援<sup>[7]</sup></td> 
+   <td>支援的<sup>[7]</sup></td> 
    <td>支援</td> 
   </tr>
   <tr>
-   <td>分散團體之間的委派</td> 
+   <td>不相交的團體之間的委派</td> 
    <td>不支援</td> 
    <td>支援</td> 
   </tr>
   <tr>
    <td>從工作流程呼叫Web服務</td> 
-   <td>支援<sup>[6]</sup></td> 
+   <td>支援的<sup>[6]</sup></td> 
    <td>支援</td> 
   </tr>
   <tr>
@@ -321,20 +320,20 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
  </tbody>
 </table>
 
-1. 您可以在OSGi上使用表單導向的AEM工作流程來簽署已填妥的最適化表單。 OSGi上的表單導向AEM工作流程支援表單簽署。 不支援[表單簽署](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)體驗。
+1. 您可以在OSGi上使用表單導向的AEM工作流程，簽署已填入的最適化表單。 OSGi上以表單為中心的AEM工作流程支援表單簽署功能。 不支援[表單內簽署](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)體驗。
 
-1. 您需要存取AEM Inbox才能執行和監視AEM Forms OSGi AEM Workflows和HTML Workspace，以執行和監視AEM Forms JEE Workflows。
-1. 原生AEM Forms Document Services適用於OSGi上的表單導向AEM工作流程和JEE工作流程上的AEM Forms。 AEM Workflow使用原生檔案服務，在OSGi和AEM Forms JEE（流程管理）工作流程中使用表單導向的AEM工作流程。
-1. AEM Forms JEE Workflows只能轉譯最適化表單。 它不支援將最適化表單轉換為PDF檔案。
-1. AEM表單JEE工作流程沒有Adobe Sign的個別步驟。 您需要AEM表單JEE工作流程中啟用Adobe Sign的最適化表單。 如需詳細資訊，請參閱[Adobe Sign檔案](/help/forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)。
-1. 您可以使用[叫用表單資料模型服務](/help/forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p)步驟來叫用web-service服務，並張貼或擷取來自第三方應用程式的資料。
+1. 您必須存取AEM收件匣，才能執行和監視AEM Forms OSGi AEM工作流程和HTML工作區，才能執行和監視AEM Forms JEE工作流程。
+1. 原生AEM Forms檔案服務適用於OSGi上的表單導向AEM工作流程和JEE上的AEM Forms工作流程。 AEM Workflow(在OSGi和AEM Forms JEE（流程管理）工作流程上，使用以表單為中心的AEM Workflows（原生檔案服務）。
+1. AEM Forms JEE工作流程只能轉譯最適化表單。 不支援將最適化表單轉譯為PDF檔案。
+1. AEM forms JEE工作流程沒有針對Adobe Sign的個別步驟。 您需要已啟用Adobe Sign的AEM Forms JEE工作流程適用性表單。 如需詳細資訊，請參閱[Adobe Sign檔案](/help/forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)。
+1. 您可以使用[叫用表單資料模型服務](/help/forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p)步驟來叫用Web服務，並張貼或擷取來自協力廠商應用程式的資料。
 1. 您可以使用[傳送電子郵件](/help/forms/using/aem-forms-workflow-step-reference.md#send-email-step)步驟來傳送電子郵件。
 
-## AEM Inbox和AEM Forms應用程式功能{#differences-between-aem-inbox-and-aem-forms-app-features}之間的差異
+## AEM收件匣和AEM Forms應用程式功能之間的差異{#differences-between-aem-inbox-and-aem-forms-app-features}
 
-啟動以表單為中心的工作流程的兩種主要方式是使用[AEM Inbox](/help/forms/using/manage-applications-inbox.md)和AEM Forms應用程式。 不過，AEM Inbox和AEM Forms應用程式的功能不同。 AEM Inbox僅適用於[以表單為中心的工作流程](/help/forms/using/aem-forms-workflow.md)，而AEM Forms應用程式則適用於以表單為中心的工作流程以及流程管理。
+啟動以Forms為中心的工作流程的兩種主要方式是使用[AEM收件匣](/help/forms/using/manage-applications-inbox.md)和AEM Forms應用程式。 不過，AEM收件匣和AEM Forms應用程式的功能則有所不同。 AEM收件匣只能搭配[Forms導向的工作流程](/help/forms/using/aem-forms-workflow.md)運作，而AEM Forms應用程式可搭配Forms導向的工作流程及程式管理運作。
 
-下表列出AEM Inbox和AEM Forms應用程式的功能：
+下表列出AEM收件匣和AEM Forms應用程式的功能：
 
 <table> 
  <tbody>
@@ -364,22 +363,22 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
    <td><p>不支援</p> </td> 
   </tr>
   <tr>
-   <td><p>添加任務層附件</p> </td> 
+   <td><p>添加任務級附件</p> </td> 
    <td><p>支援</p> </td> 
    <td><p>支援</p> </td> 
   </tr>
   <tr>
-   <td><p>查看任務層附件</p> </td> 
+   <td><p>查看任務級附件</p> </td> 
    <td><p>支援</p> </td> 
    <td><p>支援</p> </td> 
   </tr>
   <tr>
-   <td><p>添加欄位層附件</p> </td> 
+   <td><p>添加欄位級附件</p> </td> 
    <td><p>支援</p> </td> 
    <td><p>支援</p> </td> 
   </tr>
   <tr>
-   <td><p>顯示日曆視圖</p> </td> 
+   <td><p>顯示日曆檢視</p> </td> 
    <td><p>支援</p> </td> 
    <td><p>不支援</p> </td> 
   </tr>
@@ -390,4 +389,3 @@ OSGi和AEM Forms JEE的表單導向AEM工作流程(AEM Forms on JEE Process Mana
   </tr>
  </tbody>
 </table>
-
