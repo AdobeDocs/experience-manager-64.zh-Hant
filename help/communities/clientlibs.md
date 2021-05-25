@@ -1,6 +1,6 @@
 ---
-title: Clientlibs for Communities元件
-seo-title: Clientlibs for Communities元件
+title: Communities元件的Clientlibs
+seo-title: Communities元件的Clientlibs
 description: 社群的用戶端程式庫
 seo-description: 社群的用戶端程式庫
 uuid: 0a62f629-e6af-4269-862e-0595824c329f
@@ -9,88 +9,86 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
-translation-type: tm+mt
-source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+exl-id: 9b4ed16f-3c7c-478a-a897-9b4be086988b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
 
 ---
 
-
-# Clientlibs for Communities Components {#clientlibs-for-communities-components}
+# Communities元件的Clientlibs {#clientlibs-for-communities-components}
 
 ## 簡介 {#introduction}
 
-本檔案章節說明如何新增用戶端程式庫(clientlibs)至Communities元件的頁面。
+本檔案的本節說明如何將用戶端程式庫(clientlibs)新增至Communities元件的頁面。
 
 如需基本資訊，請造訪：
 
-* [使用用戶端程式](../../help/sites-developing/clientlibs.md) 庫，提供使用詳細資訊以及除錯工具
-* [SCF的Clientlib在定](client-customize.md#clientlibs) 制SCF元件時提供有用資訊
-* [部落格：AEM Client Libraries（由範例說明）](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [使用用戶端程式](../../help/sites-developing/clientlibs.md) 庫（提供使用情況詳細資訊及除錯工具）
+* [SCF的客戶端](client-customize.md#clientlibs) 庫，在定制SCF元件時提供有用的資訊
+* [部落格：AEM用戶端程式庫（由範例說明）](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## 為何需要Clientlibs {#why-clientlibs-are-required}
 
-Clientlibs是元件正確運作(JavaScript)和樣式(CSS)的必要條件。
+元件的正常運作(JavaScript)和樣式(CSS)需要Clientlibs。
 
-當某個功能存在[社區函式](functions.md)時，所有必要的元件和配置（包括所需的clientlibs）都將出現在社區站點中。 只有當作者需要使用其他元件時，才需要新增其他clientlib。
+當功能有[社群函式](functions.md)時，所有必要的元件和設定（包括必要的clientlib）都會出現在社群網站中。 只有當作者能使用其他元件時，才需要新增其他clientlib。
 
-當所需的clientlibs遺失時，[將Communities元件新增至頁面](author-communities.md)可能會導致javascript錯誤以及意外的外觀。
+當缺少所需的clientlib時，[將Communities元件新增至頁面](author-communities.md)可能會導致javascript錯誤以及意外的外觀。
 
-### 範例：未使用Clientlibs {#example-placed-reviews-without-clientlibs}的置入審核
+### 範例：未使用Clientlibs {#example-placed-reviews-without-clientlibs}的置入評論
 
 ![chlimage_1-244](assets/chlimage_1-244.png)
 
-### 範例：Placed Reviews with Clientlibs {#example-placed-reviews-with-clientlibs}
+### 範例：使用Clientlibs {#example-placed-reviews-with-clientlibs}進行置入的審核
 
 ![chlimage_1-245](assets/chlimage_1-245.png)
 
-## 標識必需的Clientlibs {#identifying-required-clientlibs}
+## 標識所需的Clientlibs {#identifying-required-clientlibs}
 
 開發人員的基本功能資訊可識別所需的用戶端。
 
-此外，從AEM例項瀏覽至[社群元件指南](components-guide.md)可存取元件所需的clientlib類別清單。
+此外，從AEM實例瀏覽到[Community Components Guide](components-guide.md)，可以訪問元件所需的clientlib類別清單。
 
-例如，在[「檢閱」頁面](http://localhost:4502/content/community-components/en/reviews.html)的最上方，會列出所需的clientlibs
+例如，在[「檢閱」頁面](http://localhost:4502/content/community-components/en/reviews.html)的最上方，列出必要的clientlib
 
 * cq.ckeditor
 * cq.social.hbs.reviews
 
 ![chlimage_1-246](assets/chlimage_1-246.png)
 
-## 添加必需的Clientlibs {#adding-required-clientlibs}
+## 新增必要的Clientlibs {#adding-required-clientlibs}
 
-當需要將Communities元件新增至頁面時，如果元件尚未出現，則必須新增必要的clientlibs。
+需要將Communities元件新增至頁面時，必須為元件新增所需的clientlib（如果尚未出現）。
 
 使用[CRXDE|Lite](#using-crxde-lite)修改社群網站頁面的現有clientlibslist。
 
-要使用[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)為社區站點添加clientlib:
+要使用[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)為社區站點添加clientlib，請執行以下操作：
 
 * 瀏覽至[https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
-* 為要添加元件的頁找到`clientlibslist`節點
+* 找出您要新增元件之頁面的`clientlibslist`節點
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
 * 已選擇`clientlibslist`節點
 
    * 找到String[]屬性`scg:requiredClientLibs`
-   * 選擇其`Value`以訪問「字串陣列」對話框
+   * 選擇其`Value`以訪問字串陣列對話框
 
-      * 視需要向下捲動
+      * 如有必要，向下捲動
       * 選擇`+`以輸入新的客戶端庫
 
-         * 重複以新增更多用戶端程式庫
-      * 選擇&#x200B;**[!UICONTROL 確定]**
-   * 選擇&#x200B;**[!UICONTROL 全部保存]**
+         * 重複以添加更多客戶端庫
+      * 選擇&#x200B;**[!UICONTROL OK]**
+   * 選擇&#x200B;**[!UICONTROL 保存全部]**
 
 
 
 >[!NOTE]
 >
->如果網站不是社群網站，則需要搜尋網站所用用戶端程式庫的存在或位置。
+>如果網站不是社群網站，則需要探索用於網站的用戶端程式庫的存在或位置。
 
-使用[AEM Communities](getting-started.md)快速入門範例（其中`site-name`是&#x200B;*engage*），在新增審核元件時，clientliblist會以下列方式顯示：
+使用[AEM Communities](getting-started.md)快速入門範例（其中`site-name`為&#x200B;*engage*），新增審核元件時，clientliblist會如下所示：
 
-![chlimage_1-247](assets/chlimage_1-247.png)
-
+![chlimage_1-248](assets/chlimage_1-247.png)
