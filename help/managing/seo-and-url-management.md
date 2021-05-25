@@ -1,26 +1,25 @@
 ---
-title: SEO和URL管理最佳實務
-seo-title: SEO和URL管理最佳實務
-description: 瞭解SEO最佳實務和建議，以便在AEM實作上達成這些目標。
-seo-description: 瞭解SEO最佳實務和建議，以便在AEM實作上達成這些目標。
+title: SEO和URL管理最佳作法
+seo-title: SEO和URL管理最佳作法
+description: 了解在AEM實作中達成這些目標的SEO最佳作法和建議。
+seo-description: 了解在AEM實作中達成這些目標的SEO最佳作法和建議。
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
-translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+exl-id: d45fe856-4709-437b-b193-e8243a695d2c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3117'
 ht-degree: 97%
 
 ---
 
+# SEO和URL管理最佳作法{#seo-and-url-management-best-practices}
 
-# SEO和URL管理最佳實務{#seo-and-url-management-best-practices}
-
-搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，許多AEM專案都需要解決SEO問題。
+搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，許多AEM專案都需要解決SEO疑慮。
 
 本文件首先會說明在 AEM 實作中達成上述目標的幾項 [SEO 最佳作法](#seo-best-practices)與建議。接著，本文件會於第一節中再深入探討幾項更[複雜的實作步驟](#aem-configurations)。
 
@@ -219,7 +218,7 @@ Resource myPage = req.getResource();
 
 >[!NOTE]
 >
-> 編輯頁面屬性](/help/sites-authoring/editing-page-properties.md#advanced)時，可使用[別名屬性來設定`sling:alias`屬性
+> 在編輯頁面屬性](/help/sites-authoring/editing-page-properties.md#advanced)時，可使用[別名屬性設定`sling:alias`屬性
 
 #### /etc/map {#etc-map}
 
