@@ -1,22 +1,21 @@
 ---
 title: 內容片段範本
 seo-title: 內容片段範本
-description: 建立內容片段時會選取範本，並提供具有基本結構、元素和變數的新片段
-seo-description: 建立內容片段時會選取範本，並提供具有基本結構、元素和變數的新片段
+description: 建立內容片段時會選取範本，並提供具有基本結構、元素和變異的新片段
+seo-description: 建立內容片段時會選取範本，並提供具有基本結構、元素和變異的新片段
 uuid: 74675e82-26b4-4105-8031-21de51131236
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
-translation-type: tm+mt
-source-git-commit: 0e1dc3ea47f03cd2e0cbeb2bf98eeec9ccc5d64f
+exl-id: fdf1aba8-17fa-473a-9c32-7189d0628927
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 4%
 
 ---
-
 
 # 內容片段範本{#content-fragment-templates}
 
@@ -26,25 +25,25 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->[現在建議](/help/assets/content-fragments-models.md) 建立內容片段模型以建立所有片段。
+>[建議您建](/help/assets/content-fragments-models.md) 立所有片段時，使用內容片段模型。
 >
->We.Retail中的所有範例都使用內容片段模型。
+>內容片段模型用於We.Retail中的所有範例。
 
-建立內容片段時會選取範本。 它們為新碎片提供了基本結構、元素和變異。 用於內容片段的範本受Granite Configuration Manager的規範。
+建立內容片段時會選取範本。 它們為新片段提供了基本結構、元素和變異。 用於內容片段的範本需受Granite Configuration Manager的規範。
 
 現成可用的範本位於：
 
 * `/libs/settings/dam/cfm/templates`
 
-您可以在以下網址建立內容片段的網站特定範本：
+您可以在下方為內容片段建立網站特定範本：
 
 * `/apps/settings/dam/cfm/templates`
 
-   覆蓋現成可用範本或提供客戶特定、應用程式範圍範本的位置，這些範本在執行時期不會延伸／變更。
+   用於覆蓋現成可用的模板或提供客戶特定、應用程式範圍的模板的位置，這些模板不打算在運行時擴展/更改。
 
 * `/conf/global/settings/dam/cfm/templates`
 
-   需要在執行時期變更的整個客戶特定範本位置。
+   需要在執行階段變更之執行個體範圍客戶專屬範本的位置。
 
 優先順序為（降序）`/conf`、`/apps`、`/libs`。
 
@@ -52,20 +51,20 @@ ht-degree: 4%
 >
 >您&#x200B;***必須***&#x200B;不要變更`/libs`路徑中的任何項目。
 >
->這是因為下次升級實例時會覆寫`/libs`的內容（套用修補程式或功能套件時，很可能會覆寫）。
+>這是因為下次升級執行個體時會覆寫`/libs`的內容（而當您套用Hotfix或Feature Pack時，很可能會覆寫）。
 >
->配置和其他更改的建議方法為：
+>設定和其他變更的建議方法為：
 >
->1. 在`/apps`下重新建立所需項目（如`/libs`中所存在）
+>1. 在`/apps`下重新建立所需項（即`/libs`中存在的項）
    >
    >
-1. 在`/apps`中進行任何更改
+1. 在`/apps`內進行任何更改
 
 >
 
 
 
-範本之基本架構如下：
+範本的基本結構如下：
 
 ```xml
 conf
@@ -121,32 +120,32 @@ conf
   <tr> 
    <td><code>&lt;<em>template-name</em>&gt;</code></td> 
    <td><code>nt:unstructured</code></td> 
-   <td>此節點是每個模板的根節點。 它是強制的，應具有唯一的名稱。</td> 
+   <td>此節點是每個模板的根節點。 此為必要項目，且名稱應是唯一的。</td> 
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
-   <td><p><code>String</code></p> <p>required<br /> </p> </td> 
+   <td><p><code>String</code></p> <p>必要<br /> </p> </td> 
    <td>範本的標題（顯示在<strong>建立片段</strong>精靈中）。</td> 
   </tr> 
   <tr> 
    <td><code>jcr:description</code></td> 
    <td><p><code>String</code></p> <p>可選</p> </td> 
-   <td>描述模板用途的文本（顯示在<strong>建立片段</strong>嚮導中）。</td> 
+   <td>說明範本用途的文字（顯示在<strong>建立片段</strong>精靈中）。</td> 
   </tr> 
   <tr> 
    <td><code>initialAssociatedContent</code></td> 
    <td><p><code>String[]</code></p> <p>可選</p> </td> 
-   <td>預設情況下，具有系列路徑的陣列，應與新建立的內容片段相關聯。</td> 
+   <td>依預設，具有系列路徑的陣列應與新建立的內容片段相關聯。</td> 
   </tr> 
   <tr> 
    <td><code>precreateElements</code></td> 
-   <td><p><code>Boolean</code></p> <p>必要</p> </td> 
-   <td><p><code>true</code>,if the subsasets resporting the elements（master element除外）of the content fragment is created;<em>false</em>如果應「即時」建立。</p> <p><strong>注意</strong>:目前，此參數必須設為 <code>true</code>。</p> </td> 
+   <td><p><code>Boolean</code></p> <p>必填</p> </td> 
+   <td><p><code>true</code>，如果在建立內容片段時，應建立代表內容片段元素（主版元素除外）的子資產；<em>false</em>如果應「即時」建立它們。</p> <p><strong>注意</strong>:目前此參數必須設為 <code>true</code>。</p> </td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
-   <td><p><code>Long</code></p> <p>必要</p> </td> 
-   <td><p>內容結構版本；目前支援：</p> <p><strong>注意</strong>:目前，此參數必須設為 <code>2</code>。<br /> </p> </td> 
+   <td><p><code>Long</code></p> <p>必填</p> </td> 
+   <td><p>內容結構的版本；目前支援：</p> <p><strong>注意</strong>:目前此參數必須設為 <code>2</code>。<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -162,8 +161,8 @@ conf
   </tr> 
   <tr> 
    <td><code>elements</code> </td> 
-   <td><p><code>nt:unstructured</code></p> <p>必要</p> </td> 
-   <td><p>包含內容片段元素定義的節點。 它是強制性的，並且需要為<strong>Main</strong>元素包含至少一個子節點，但可以包含[1..n]子節點。</p> <p>使用模板時，元素子分支將被複製到片段的模型子分支。</p> <p>第一個元素（如CRXDE Lite中所述）被自動視為<i>main</i>元素；節點名稱無關，節點本身除了以主資產表示外，沒有特殊意義；其他元素則視為子資產處理。</p> </td> 
+   <td><p><code>nt:unstructured</code></p> <p>必填</p> </td> 
+   <td><p>包含內容片段元素定義的節點。 它是強制項，並且需要為<strong>Main</strong>元素包含至少一個子節點，但可以包含[1.n]子節點。</p> <p>使用模板時，元素子分支將被複製到片段的模型子分支。</p> <p>第一個元素(如CRXDE Lite中所檢視)會自動被視為<i>main</i>元素；節點名稱無關，節點本身除以主要資產表示外，沒有特殊意義；其他元素會以子資產的形式處理。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -180,22 +179,22 @@ conf
   <tr> 
    <td><code>&lt;<i>element-name</i>&gt;</code></td> 
    <td><code>nt:unstructured</code></td> 
-   <td>此節點定義元素。 它是強制的，應具有唯一的名稱。</td> 
+   <td>此節點定義元素。 此為必要項目，且名稱應是唯一的。</td> 
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
-   <td><p><code>String</code></p> <p>必要</p> </td> 
-   <td>元素的標題（顯示在片段編輯器的元素選擇器中）。</td> 
+   <td><p><code>String</code></p> <p>必填</p> </td> 
+   <td>元素的標題（顯示在片段編輯器的元素選取器中）。</td> 
   </tr> 
   <tr> 
    <td><code>defaultContent</code></td> 
    <td><p><code>String</code></p> <p>可選</p> <p>預設: ""</p> </td> 
-   <td>元素的初始內容；僅用於<code>precreateElements</code><i> = </i><code>true</code></td> 
+   <td>元素的初始內容；僅在<code>precreateElements</code><i> = </i><code>true</code>時使用</td> 
   </tr> 
   <tr> 
    <td><code>initialContentType</code></td> 
    <td><p><code>String</code></p> <p>可選</p> <p>預設: <code>text/html</code></p> </td> 
-   <td><p>元素的初始內容類型；僅用於<code>precreateElements</code><i> = </i><code>true</code>;目前支援：</p> 
+   <td><p>元素的初始內容類型；僅在<code>precreateElements</code><i> = </i><code>true</code>時使用；目前支援：</p> 
     <ul> 
      <li><code>text/html</code></li> 
      <li><code>text/plain</code></li> 
@@ -204,8 +203,8 @@ conf
   </tr> 
   <tr> 
    <td><code>name</code></td> 
-   <td><p><code>String</code></p> <p>必要</p> </td> 
-   <td>元素的內部名稱；必須為片段類型的唯一。</td> 
+   <td><p><code>String</code></p> <p>必填</p> </td> 
+   <td>元素的內部名稱；片段類型必須是唯一的。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -222,7 +221,7 @@ conf
   <tr> 
    <td><code>variations</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>可選</p> </td> 
-   <td>此可選節點包含內容片段的初始變化的定義。</td> 
+   <td>此選用節點包含內容片段初始變異的定義。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -238,20 +237,19 @@ conf
   </tr> 
   <tr> 
    <td><code>&lt;<i>variation-name</i>&gt;</code> </td> 
-   <td><p><code>nt:unstructured</code></p> <p>變異節點存在時所需</p> </td> 
-   <td><p>定義初始變化。<br /> 依預設，變數會新增至內容片段的所有元素。</p> <p>變數的初始內容會與個別元素相同（請參閱<code class="code">defaultContent/
+   <td><p><code>nt:unstructured</code></p> <p>若變異節點存在，則此為必要項目</p> </td> 
+   <td><p>定義初始變數。<br /> 依預設，變異會新增至內容片段的所有元素。</p> <p>變異的初始內容將與個別元素相同（請參閱<code class="code">defaultContent/
        initialContentType</code>）</p> </td> 
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
-   <td><p><code>String</code></p> <p>必要</p> </td> 
-   <td>變數的標題(顯示在片段編輯器的<strong>變數</strong>標籤中（左側欄）)。</td> 
+   <td><p><code>String</code></p> <p>必填</p> </td> 
+   <td>變異的標題(顯示在片段編輯器的<strong> Variation</strong>標籤中（左側欄）)。</td> 
   </tr> 
   <tr> 
    <td><code>jcr:desciption</code></td> 
    <td><p><code>String</code></p> <p>可選</p> <p>預設: ""</p> </td> 
-   <td>提供變化<span>（顯示在片段編輯器的<strong>變化</strong>標籤中）說明的文本。</span></td> 
+   <td>提供變異<span>的說明的文字(顯示在片段編輯器的<strong>Variation</strong>標籤中（左側欄）)。</span></td> 
   </tr> 
  </tbody> 
 </table>
-
