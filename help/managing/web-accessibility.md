@@ -1,31 +1,30 @@
 ---
 title: AEM與網頁協助工具准則
 seo-title: AEM與網頁協助工具准則
-description: 瞭解如何使用AEM建立具協助工具的網站和內容。
-seo-description: 瞭解如何使用AEM建立具協助工具的網站和內容。
+description: 了解如何使用AEM建立無障礙的網站和內容。
+seo-description: 了解如何使用AEM建立無障礙的網站和內容。
 uuid: b68281af-3e8a-4842-b762-1c59f9132795
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-accessibility, introduction
 content-type: reference
 discoiquuid: 13c7e0bd-54af-49f3-9743-075ce6f3314d
-translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+exl-id: f0ccdeae-3dbb-4dba-89cf-4c8b759da22b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 43%
 
 ---
 
-
-# AEM和Web協助工具准則{#aem-and-the-web-accessibility-guidelines}
+# AEM與網路無障礙指引{#aem-and-the-web-accessibility-guidelines}
 
 從社會、經濟和法律層面來看，無論目標對象是否有任何不方便或限制，我們都有許多動機必須盡可能方便他們存取網頁內容。因此，網路無障礙日趨成為良好網頁設計中的重要一環。
 
-建立具AEM影響力的可存取網站和內容：
+建立可存取的網站和內容，並帶來AEM的影響：
 
 * 負責設定 Adobe Experience Manager (AEM) 的管理員可確保無障礙功能可正確啟用。
-* 作者使用這些功能來建立支援WCAG 2.0主要方針的網站。
+* 作者可使用這些功能建立支援WCAG 2.0重要指引的網站。
 
    建立無障礙內容是一個過程。AEM 提供所需功能，但內容作者必須按照所需技術來建立無障礙內容。
 
@@ -35,39 +34,39 @@ ht-degree: 43%
 
 以下頁面和章節提供資訊和准則：
 
-* [設定Rich Text Editor以製作可存取的網站](/help/sites-administering/rte-accessible-content.md)
+* [設定RTF編輯器以產生無障礙網站](/help/sites-administering/rte-accessible-content.md)
 
-   管理員如何設定AEM以製作可存取內容的准則。
+   管理員如何設定AEM以製作無障礙內容的准則。
 
 * [建立可存取的內容 (符合 WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
 
-   WCAG 2.0准則提供A級和AA級符合性等級的成功標準清單。 本頁詳細說明AEM涵蓋的成功准則，以及如何在產生內容時符合這些准則。
+   WCAG 2.0指引提供A級和AA級符合層級的成功標準清單。 本頁詳細說明AEM涵蓋的成功標準，以及如何在產生內容時符合標準。
 
 * [WCAG 2.0快速指南](/help/managing/qg-wcag.md)
 
    WCAG 2.0的背景資訊。
 
-* [建立可存取的最適化表單](/help/forms/using/creating-accessible-adaptive-forms.md)
+* [建立無障礙適用性Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
 
-   Adobe Experience Manager(AEM)包含許多功能和功能，可增強不同功能使用者適用於最適化表單的可用性。 此解決方案也協助表單作者建立可存取的調適性表單。
+   Adobe Experience Manager(AEM)包含許多增強不同功能使用者適用性表單可用性的功能。 此解決方案也協助表單作者建立無障礙的最適化表單。
 
-## World Wide Web Consortium和WCAG 2.0 {#world-wide-web-consortium-and-wcag}
+## 全球資訊網協會和WCAG 2.0 {#world-wide-web-consortium-and-wcag}
 
-[全球資訊網協會 (W3C)](https://www.w3.org/) 是致力於開發網頁標準的國際社群。為協助網頁設計人員和開發人員製作可存取的網站，[Web協助工具計畫(WAI)](https://www.w3.org/WAI/)於2008年12月發佈[Web內容協助工具指南(WCAG)2.0](https://www.w3.org/TR/WCAG20/)（更新1999年發佈的原始版本）。
+[全球資訊網協會 (W3C)](https://www.w3.org/) 是致力於開發網頁標準的國際社群。為協助網頁設計人員和開發人員製作無障礙的網站，[網頁可及性推動組織(WAI)](https://www.w3.org/WAI/)於2008年12月發佈[網頁內容可及性指引(WCAG)2.0](https://www.w3.org/TR/WCAG20/)（更新1999年發佈的原始版本）。
 
 >[!NOTE]
 >
->[更新版的准則](https://www.w3.org/TR/WCAG21/)目前仍在開發中，但不會針對此AEM版本加以考慮。
+>准則[更新版本](https://www.w3.org/TR/WCAG21/)目前正在開發中，但此版本的AEM將不會考量。
 
-使用Adobe Experience Manager，內容作者和／或網站擁有者可建立符合WCAG 2.0 A級和AA級成功標準的網頁內容。
+使用Adobe Experience Manager，內容作者和/或網站擁有者就可建立符合WCAG 2.0 A級和AA級成功標準的網頁內容。
 
 我們的 [WCAG 2.0 快速指南](/help/managing/qg-wcag.md)中會強調說明 WCAG 2.0 的特定層面。
 
-### WCAG 2.0協助工具符合性級別{#wcag-accessibility-conformance-levels}
+### WCAG 2.0協助工具一致性層級{#wcag-accessibility-conformance-levels}
 
-WCAG 2.0提供了[指導方針（含相關成功標準），涵蓋無障礙環境支援等級](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)。
+WCAG 2.0提供[指引（及相關成功標準），涵蓋無障礙層級](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)。
 
-這些與AEM有關，在[ Level A和AA Conformance](/help/sites-authoring/creating-accessible-content.md)下面涵蓋。 建立網站時，您必須決定要讓網站遵循的整體等級。
+這些與AEM相關，在[A級和AA一致性](/help/sites-authoring/creating-accessible-content.md)下覆蓋。 建立網站時，您必須決定要讓網站遵循的整體等級。
 
 >[!NOTE]
 >
