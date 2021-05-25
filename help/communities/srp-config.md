@@ -10,20 +10,19 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 905b6dc5-cf17-4f58-a687-27e2910a0729
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 3%
+source-wordcount: '207'
+ht-degree: 2%
 
 ---
-
 
 # 儲存設定 {#storage-configuration}
 
 儲存配置是標識為社區內容選擇的儲存的方法，也稱為用戶生成內容(UGC)。
 
-此設定通知AEM Communities代碼，在訪問UGC時將使用哪個儲存資源提供程式(SRP)的實施，並且必須反映部署時建立AEM的拓撲。
+此設定會通知AEM Communities程式碼，在存取UGC時將使用哪個儲存資源提供者(SRP)實作，且必須反映部署AEM時建立的拓撲。
 
 有關儲存選項和部署拓撲的討論，請訪問
 
@@ -34,14 +33,14 @@ ht-degree: 3%
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-在作者環境中，要訪問儲存配置控制台
+在製作環境中，若要存取儲存設定主控台
 
-* 從全域導覽：**[!UICONTROL 工具>社區>儲存配置]**
+* 從全局導航：**[!UICONTROL 工具>社區>儲存配置]**
 
 要選擇預設JCR以外的儲存選項：
 
-* 選擇選項
-* 正確配置
+* 選取選項
+* 適當配置
 
    * 請參閱[選擇MSRP](msrp.md#select-msrp)的詳細資訊
    * 請參閱[選擇DSRP](dsrp.md#select-dsrp)的詳細資訊
@@ -51,13 +50,12 @@ ht-degree: 3%
 
 ### 關於JCR儲存{#about-jcr-storage}
 
-請注意，如果未進行任何選擇，則預設值為AEM儲存庫JCR。
+請注意，如果未選取，預設為AEM存放庫JCR。
 
-JCR是&#x200B;*not*&#x200B;作者和發佈環境共用的公用商店。 社群內容只會從建立社群內容的作者或發佈環境中看到。
+JCR是作者和發佈環境共用的公用存放區&#x200B;*not*。 社群內容只會從建立該內容的製作或發佈環境中顯示。
 
-請造訪[JCR Store](jsrp.md)以取得其他資訊。
+如需詳細資訊，請造訪[JCR商店](jsrp.md)。
 
 >[!NOTE]
 >
->在`/etc/socialconfig`下缺少節點`srpc`表示預設[JCR store](jsrp.md)。
-
+>`/etc/socialconfig`下沒有節點`srpc`表示預設[JCR store](jsrp.md)。
