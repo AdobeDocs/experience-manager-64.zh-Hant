@@ -1,8 +1,8 @@
 ---
-title: Application Manager Client JavaAPI快速入門(SOAP)
-seo-title: Application Manager Client JavaAPI快速入門(SOAP)
-description: 使用Application Manager Client可建立應用程式版本、匯出應用程式、匯入應用程式、取得AEM Forms應用程式、取得應用程式狀態、預覽AEM Forms和更新版本的應用程式封存，以及刪除AEM Forms應用程式封存。
-seo-description: 使用Application Manager Client可建立應用程式版本、匯出應用程式、匯入應用程式、取得AEM Forms應用程式、取得應用程式狀態、預覽AEM Forms和更新版本的應用程式封存，以及刪除AEM Forms應用程式封存。
+title: Application Manager客戶端JavaAPI快速入門(SOAP)
+seo-title: Application Manager客戶端JavaAPI快速入門(SOAP)
+description: 使用Application Manager Client來建立應用程式版本、導出應用程式、導入應用程式、獲取AEM Forms應用程式、獲取應用程式狀態、預覽AEM Forms和更新的應用程式存檔，以及刪除AEM Forms應用程式存檔。
+seo-description: 使用Application Manager Client來建立應用程式版本、導出應用程式、導入應用程式、獲取AEM Forms應用程式、獲取應用程式狀態、預覽AEM Forms和更新的應用程式存檔，以及刪除AEM Forms應用程式存檔。
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8369beeb-4628-40ea-9167-717f112768da
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
+# Application Manager客戶端JavaAPI快速入門(SOAP){#application-manager-client-javaapi-quick-start-soap}
 
-# Application Manager Client JavaAPI快速入門(SOAP){#application-manager-client-javaapi-quick-start-soap}
-
-Application Manager Client提供下列Java API快速入門(SOAP)。
+以下Java API快速入門(SOAP)適用於Application Manager客戶端。
 
 [快速入門（SOAP模式）:使用Java API建立應用程式版本](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
@@ -35,19 +34,19 @@ Application Manager Client提供下列Java API快速入門(SOAP)。
 
 [快速入門（SOAP模式）:使用Java API取得應用程式的狀態](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[快速入門（SOAP模式）：使用Java API預覽AEM Forms和更新版本的應用程式封存](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API預覽AEM Forms和更新的應用程式封存](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[快速入門（SOAP模式）：使用Java API刪除AEM Forms應用程式歸檔檔案](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[快速入門（SOAP模式）：使用Java API刪除AEM Forms應用程式封存](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-AEM Forms操作可以使用AEM Forms強類型API執行，連接模式應設定為SOAP。
+AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應設為SOAP。
 
 >[!NOTE]
 >
->「與AEM Forms一起寫程式」中的快速入門是基於部署在JBoss和Windows作業系統上的Forms伺服器。 但是，如果您使用其他作業系統（例如Unix），請以適用作業系統支援的路徑取代特定於Windows的路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參閱[設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM Forms進行程式設計中的快速入門是以部署在JBoss和Windows作業系統上的Forms伺服器為基礎。 但是，如果您使用其他作業系統（如Unix），則用適用作業系統支援的路徑替換特定於windows的路徑。 同樣，如果您正在使用其他J2EE應用程式伺服器，請確保指定有效的連接屬性。 請參閱[設定連線屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-creating-application-version-using-the-java-api}建立應用程式版本
 
-下列Java程式碼範例會使用JAVA API建立應用程式。
+以下Java程式碼範例會使用JAVA API建立應用程式。
 
 ```as3
 /* 
@@ -247,9 +246,9 @@ public class ExportLCA_SOAP {
 }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-importing-applications-using-the-java-api}匯入應用程式
+## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-importing-applications-using-the-java-api}導入應用程式
 
-下列Java程式碼範例會使用JAVA API匯入應用程式。
+以下Java程式碼範例使用JAVA API匯入應用程式。
 
 >[!NOTE]
 >
@@ -334,9 +333,9 @@ public class ImportLCA_SOAP {
 }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-getting-a-application-using-the-java-api}取得應用程式
+## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-getting-a-application-using-the-java-api}獲取應用程式
 
-下列Java程式碼範例會使用Java API來取得應用程式。
+下列Java程式碼範例會使用Java API取得應用程式。
 
 ```as3
 /* 
@@ -441,11 +440,11 @@ public class GetApplication_SOAP {
 }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}取得應用程式
+## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}獲取應用程式
 
-下列Java程式碼範例會使用Java API來取得應用程式。
+以下Java代碼示例使用Java API獲取應用程式。
 
-***附註**:取得AEM Forms應用程式API, getApplications()，只會傳回已部署的應用程式。*
+***注意**:取得AEM Forms應用程式API、getApplications()，只會傳回已部署的應用程式。*
 
 ```as3
 /* 
@@ -540,7 +539,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}取得應用程式的狀態
+## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}獲取應用程式的狀態
 
 ```as3
 /* 
@@ -645,9 +644,9 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## 快速啟動（SOAP模式）：使用Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}預覽LiveCycleES2和更新版本的應用程式封存
+## 快速啟動（SOAP模式）：使用Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}預覽LiveCycleES2和更新的應用程式歸檔檔案
 
-以下Java程式碼範例是用於使用Java API預覽AEM Forms和更新版本的應用程式封存。
+下列Java程式碼範例用於使用Java API預先檢視AEM Forms和更新的應用程式封存。
 
 ```as3
 /* 
@@ -724,7 +723,7 @@ public class PreviewLCA_SOAP {
 }
 ```
 
-## 快速啟動（SOAP模式）：使用Java API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}刪除應用程式封存
+## 快速入門（SOAP模式）：使用Java API {#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api}刪除應用程式歸檔檔案
 
 以下Java代碼示例用於刪除應用程式存檔。
 
@@ -819,4 +818,3 @@ public class DeleteApplication_SOAP {
     } 
 }
 ```
-
