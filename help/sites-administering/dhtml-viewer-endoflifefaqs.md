@@ -1,25 +1,24 @@
 ---
 title: DHTML 檢視器生命週期結束常見問答集
-description: 自2014年1月31日起，DHTML檢視器平台將正式停止使用。
+description: 自2014年1月31日起，DHTML檢視器平台將正式終止服務。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
-translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+exl-id: 7a9d6e97-2592-43cb-b5ab-4238409bd7f3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 9%
 
 ---
 
-
 # DHTML檢視器生命週期結束{#dhtml-viewer-end-of-life-}
 
-自2014年1月31日起，DHTML檢視器平台正式停止使用。
+DHTML檢視器平台正式終止服務，於2014年1月31日起生效。
 
-如需最新支援的檢視器，請參閱[動態媒體檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
+如需最新支援的檢視器，請參閱[Dynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
 
 <!-- **What is the change?**
 
