@@ -1,48 +1,47 @@
 ---
 title: 設定帳戶環境
 seo-title: 設定帳戶環境
-description: AEM提供您設定帳戶的功能，以及作者環境的某些方面。
-seo-description: AEM提供您設定帳戶的功能，以及作者環境的某些方面。
+description: AEM可讓您設定帳戶，以及製作環境的某些方面。
+seo-description: AEM可讓您設定帳戶，以及製作環境的某些方面。
 uuid: 79b52684-6c33-4abd-8e06-4e886be33782
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 6a7de639-9c87-4e7c-b431-e48c9cdc7982
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 12%
 
 ---
 
-
 # 設定帳戶環境{#configuring-your-account-environment}
 
-AEM提供您設定帳戶的功能，以及作者環境的某些方面。
+AEM可讓您設定帳戶，以及製作環境的某些方面。
 
-使用[帳戶設定](#account-settings)和[使用者偏好設定](#user-preferences)可定義下列選項和偏好設定：
+使用[帳戶設定](#account-settings)和[用戶首選項](#user-preferences)可以定義以下選項和首選項：
 
 * **編輯工**
-具列選擇是否要使用全局編輯工具列。此工具列會顯示在瀏覽器視窗的頂端，提供您 
-**複製**、剪 **切、**&#x200B;貼上 **、刪** **** 除按鈕，以用於該頁上的段落元件：
+具欄選擇是否要具有全局編輯工具欄。此工具列會顯示在瀏覽器視窗頂端，提供您 
+**複製**、 **剪下**、 **貼上**、刪除按鈕，以便與該頁 **** 面上的段落元件一起使用：
 
    * 需要時顯示 (預設)
    * 永遠顯示
    * 隱藏
 
 * **模擬**
-為使用 [者](/help/sites-administering/security.md#impersonating-another-user) 可代表其他使用者運作的模擬功能。
+為使用 [者可](/help/sites-administering/security.md#impersonating-another-user) 以代表其他使用者運作的模擬功能。
 
-* **語**
-言編寫環境UI所用的語言。從可用清單中選擇所需的語言。
+* ****
+語言用於製作環境UI的語言。從可用清單中選取所需語言。
 
-* **視窗管**
-理選擇下列任一項：
+* **窗口**
+管理選擇：
 
-   * 多個視窗（預設）:頁面將在新視窗中開啟。
-   * 單一視窗：頁面將在目前視窗中開啟。
+   * 多個窗口（預設）:頁面將在新視窗中開啟。
+   * 單個窗口：將在當前窗口中開啟頁面。
 
 ## 帳戶設定 {#account-settings}
 
@@ -57,11 +56,10 @@ AEM提供您設定帳戶的功能，以及作者環境的某些方面。
 
 ## 使用者偏好設定 {#user-preferences}
 
-每位使用者都可自行設定特定屬性。 這可從控制台右上角的&#x200B;**Preferences**&#x200B;對話方塊獲得。
+每個使用者都可自行設定特定屬性。 這可從控制台右上角的&#x200B;**偏好設定**&#x200B;對話方塊取得。
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 
 對話方塊提供下列選項：
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
-
