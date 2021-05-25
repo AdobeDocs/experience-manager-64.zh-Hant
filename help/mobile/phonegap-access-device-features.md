@@ -1,39 +1,38 @@
 ---
-title: 存取裝置功能
-seo-title: 存取裝置功能
-description: 請依照本頁進行，以瞭解如何建立可存取裝置功能的AEM元件。 AEM PhoneGap Kitchen Sink Github儲存庫為開發人員提供功能強大的AEM應用程式，說明許多核心Cordova API的使用情形。
-seo-description: 請依照本頁進行，以瞭解如何建立可存取裝置功能的AEM元件。 AEM PhoneGap Kitchen Sink Github儲存庫為開發人員提供功能強大的AEM應用程式，說明許多核心Cordova API的使用情形。
+title: 訪問設備功能
+seo-title: 訪問設備功能
+description: 請詳閱本頁，了解如何建立存取裝置功能的AEM元件。 AEM PhoneGap Kitchen Sink Github存放庫為開發人員提供功能齊全的AEM應用程式，說明多種核心Cordova API的使用方式。
+seo-description: 請詳閱本頁，了解如何建立存取裝置功能的AEM元件。 AEM PhoneGap Kitchen Sink Github存放庫為開發人員提供功能齊全的AEM應用程式，說明多種核心Cordova API的使用方式。
 uuid: 1996f017-21d3-4d90-9f55-95c626bc4c60
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 0019e367-8edc-4a23-bfa4-5beda266ace6
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 7f3a5081-9640-49ce-a8e7-8061fc080ec1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 0%
 
 ---
 
-
 # 訪問設備功能{#access-device-features}
 
 >[!NOTE]
 >
->Adobe建議針對需要單頁應用程式架構用戶端轉換的專案使用SPA編輯器（例如React）。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建議針對需要單頁應用程式架構用戶端轉譯（例如React）的專案使用SPA編輯器。 [了解更多](/help/sites-developing/spa-overview.md).
 
-## 建立存取裝置功能{#building-aem-components-that-access-device-features}的AEM元件
+## 建立AEM元件以存取裝置功能{#building-aem-components-that-access-device-features}
 
-[AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github儲存庫為開發人員提供功能強大的AEM應用程式，說明如何使用多個核心Cordova API。 當透過PhoneGap CLI在iOS或Android上執行時，應用程式會開啟至下列頁面，其中包含每個裝置API的連結，其中顯示：
+[AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github存放庫為開發人員提供功能齊全的AEM應用程式，說明多個核心Cordova API的使用方式。 透過PhoneGap CLI在iOS或Android上執行時，應用程式會開啟至下列頁面，其中包含示範之每個裝置API的連結：
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-這些裝置API元件的原始碼皆可在Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components)上使用。[
+這些裝置API元件的原始碼為[，可在Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components)上取得。
 
-如需每個API使用方式的詳細資訊，我建議檢視[Cordova增效模組檔案](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html)。
+如需每個API使用方式的詳細資訊，我建議參閱[Cordova外掛程式檔案](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html)。
 
 ## 後續步驟{#the-next-steps}
 
-請參閱「使用Adobe Mobile Analytics追蹤應用程式效能」[。](/help/mobile/phonegap-intro-to-app-analytics.md)
+請參閱[使用Adobe行動分析追蹤應用程式效能](/help/mobile/phonegap-intro-to-app-analytics.md)。
