@@ -1,56 +1,55 @@
 ---
-title: 6.4中的AEM儲存庫重組
-seo-title: 6.4中的AEM儲存庫重組
-description: 瞭解6.4版中資料庫重組的基AEM礎知識和推理
-seo-description: 瞭解6.4版中資料庫重組的基AEM礎知識和推理
+title: AEM 6.4中的存放庫重新調整架構
+seo-title: AEM 6.4中的存放庫重新調整架構
+description: 了解AEM 6.4中存放庫重新調整架構的基本概念和推理
+seo-description: 了解AEM 6.4中存放庫重新調整架構的基本概念和推理
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+feature: 升級
+exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
 
 ---
 
-
-# 6.4&lt;AEMa0/>中的儲存庫重組{#repository-restructuring-in-aem}
+# AEM 6.4{#repository-restructuring-in-aem}中的存放庫重新調整
 
 ## 簡介 {#introduction}
 
-在6.AEM4之前，客戶程式碼部署在JCR的不可預測區域，而這些區域可能會因升級而改變。 因此，正式發行常會覆寫自訂AEM代碼、設定或內容。 此外，客戶變更有時會覆寫產AEM品程式碼或內容，突破產品功能。
+在AEM 6.4之前，客戶代碼部署在JCR的不可預測區域，在升級時可能會有所變更。 因此，正式的AEM發行通常會覆寫自訂程式碼、設定或內容。 此外，客戶變更有時會覆寫AEM產品代碼或內容，導致產品功能中斷。
 
-透過清楚定義產AEM品程式碼和客戶程式碼的階層，可避免這些衝突。
+透過清楚定義AEM產品代碼和客戶代碼的階層，可以避免這些衝突。
 
-為此，從AEM6.4開始，並將在將來的版本中繼續，內容將從/etc重組到儲存庫中的其他資料夾，以及內容所在位置的准則，遵守以下高級規則：
+為此，從AEM 6.4開始，為了在未來版本中繼續，內容將從/etc重組為存放庫中的其他資料夾，並附上內容所在位置的准則，請遵循下列高階規則：
 
-* 產AEM品程式碼將一律放在/libs中，自訂程式碼不得覆寫它
-* 自訂代碼應放置在/apps、/content和/conf中
+* AEM產品程式碼一律會放置在/libs中，且不得由自訂程式碼覆寫
+* 自訂程式碼應放置在/apps、/content和/conf中
 
 ## 對6.4升級的影響{#impact-on-upgrades}
 
-升級至AEM6.4時，/etc下的大部分內容將複製到儲存庫中的其他資料夾中。 這些新位置是參考內容的首選位置。 不過，已嘗試將AEM6.4升級版向後與/etc資料夾中的先前位置相容，因此在大多數情況下，程式碼會繼續參考舊位置，直到客戶應用程式中主動（在許多情況下是手動）進行變更。 從時間軸的角度來看，有兩類變更：
+升級至AEM 6.4時，/etc底下的大部分內容會複製到存放庫中的其他資料夾中。 這些新位置是參考內容的偏好位置。 不過，我們已嘗試讓AEM 6.4升級回溯相容/etc資料夾中的先前位置，因此在大多數情況下，AEM程式碼會繼續參考舊位置，直到在客戶應用程式中主動（且在許多情況下手動）進行變更為止。 從時間軸的觀點來看，有兩類變更：
 
-* 有了6.4升級版——少數幾項重組變更無法向後相容，因此，在6.4升級版中應規劃並實作AEM修改。
-* 在6.5升級之前——絕大多數的重組更改都可以延遲到將來的升級後的某個時間。 如前所述，AEM6.4程式碼將繼續參考舊位置，直到修改作為客戶版本的一部分實施為止。 雖然沒有強制變更的時間表，但建議在6.5升級之前進行，因為未來的功能可能會依賴參考的新位置。 此外，特定功能的檔案將依慣例參照新位置，因此，如果仍在使用舊位置，則可能會令人混淆。
+* 透過6.4升級 — 少數的/etc重組變更無法回溯相容，因此在AEM 6.4升級中，應規劃並實作修改。
+* 在6.5升級之前 — 在將來的升級後的某個時間，絕大多數的/etc重組更改都可以延遲。 如先前所述，AEM 6.4程式碼將繼續參考舊位置，直到修改在客戶版本中實作為止。 雖然沒有應進行變更的強制時間表，但建議在6.5升級前進行，因為未來功能可能需仰賴參考的新位置。 此外，根據慣例，特定功能的檔案會參考新位置，因此，如果仍使用舊位置，則可能會造成混淆。
 
 ### 重組指南{#restructuring-guidance}
 
-在規劃升級至6.4AEM時，應參考下列每個解決方案頁面，以評估工作成果：
+規劃升級至AEM 6.4時，應參考下列各解決方案頁面，以評估工作成果：
 
-* [所有解決方案共同的儲存庫重AEM構](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
-* [AEM Sites資料庫重組](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets資料庫重組](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
-* [AEM AssetsDynamic Media資料庫重組](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
-* [AEM Forms資料庫重組](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
-* [AEM Communities資料庫重組](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
-* [AEM商務儲存庫重構](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
+* [所有AEM解決方案共同的存放庫重組](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
+* [AEM Sites存放庫重組](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
+* [AEM Assets存放庫重組](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [AEM Assets Dynamic Media存放庫重組](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
+* [AEM Forms存放庫重組](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
+* [AEM Communities存放庫重組](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
+* [AEM商務存放庫重組](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-4.md)
 
-每個頁面包含兩個區段，以對應必要變更的緊急性。 「With 6.4 Upgrade」（含6.4升級版）一節中的任何內容，都應作為6.4升級AEM專案的一部分處理。 「6.5升級版之前」下的任何項目都可視需要延遲至升級後。
+每個頁面包含與必要變更的緊急程度對應的兩個區段。 在「具有6.4升級」一節下的任何項目，都應作為AEM 6.4升級專案的一部分處理。 「6.5版升級前」下的任何項目可選擇延後至升級後。
 
-頁面上的每個條目都包含一個「重組指南」欄位，該欄位詳細說明了與新的6.4儲存庫模型一致的建議技術策略，以便以前位於/etc資料夾下的內容引用新位置。 「附加附註」欄位提供任何其他實用的內容。
+頁面上的每個條目都包含一個「重新調整指南」欄位，該欄位詳細說明了建議的技術策略，以便與新的6.4儲存庫模型保持一致，以便參照先前位於/etc資料夾下的內容的新位置。 其他「附註」欄位可提供任何其他實用內容。
