@@ -1,71 +1,70 @@
 ---
-title: SharePoint Connector授權、著作權聲明及免責聲明
-seo-title: SharePoint Connector授權、著作權聲明及免責聲明
-description: 瞭解SharePoint Connector授權、著作權聲明及免責聲明。
-seo-description: 瞭解SharePoint Connector授權、著作權聲明及免責聲明。
+title: SharePoint連接器許可證、版權聲明和免責聲明
+seo-title: SharePoint連接器許可證、版權聲明和免責聲明
+description: 了解SharePoint Connector許可證、版權聲明和免責聲明。
+seo-description: 了解SharePoint Connector許可證、版權聲明和免責聲明。
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
-translation-type: tm+mt
-source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 5%
 
 ---
 
+# SharePoint連接器許可證、版權聲明和免責聲明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-# SharePoint Connector授權、著作權聲明及免責聲明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+本節列出在MS SharePoint的Day JCR Connector中必須明確說明的所有許可證、版權聲明和免責聲明。
 
-本節列出所有必須與Day JCR Connector for MS SharePoint一起明示的授權、版權聲明和免責聲明。
+## Connector第三方庫概述{#overview-of-connector-rd-party-libraries}
 
-## 連接器第三方庫概述{#overview-of-connector-rd-party-libraries}
-
-下表列出SharePoint Connector核心庫中使用的第三方庫，以及這些庫所涵蓋的許可證、版權聲明或免責聲明：
+下表列出了SharePoint Connector核心庫中使用的第三方庫，以及其涵蓋的許可證、版權聲明或免責聲明：
 
 | 資料庫 | 授權類型 |
 |---|---|
-| annogen | [Apache](#apache) |
+| 安諾根 | [Apache](#apache) |
 | axiom-api | [Apache](#apache) |
-| 公理域 | [Apache](#apache) |
+| 公理dom | [Apache](#apache) |
 | axiom-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
 | axis2-kernel | [Apache](#apache) |
-| Backport-util-concurrent | 公共域 |
+| Backport-util-concurrent | 公用網域 |
 | commons-codec | [Apache](#apache) |
 | commons-collections | [Apache](#apache) |
 | commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| 併發 | [併發](#concurrent) （公共域） |
-| geronimo-activation_1.1.spec | [Apache](#apache) |
-| geronimo-stax-api_1.0.spec | [Apache](#apache) |
+| 併發 | [同時](#concurrent) （公共網域） |
+| geronimo-activation_1.1_spec | [Apache](#apache) |
+| geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
 | jackrabbit-jcr-commons | [Apache](#apache) |
-| 長耳野兔 | [Apache](#apache) |
-| 長耳野兔 | [Apache](#apache) |
-| jaxen | BSD |
+| jackrabbit-spi-commons | [Apache](#apache) |
+| jackrabbit-spi | [Apache](#apache) |
+| 亞申 | BSD |
 | log4j | [Apache](#apache) |
 | lucene-core | [Apache](#apache) |
-| neethi | [Apache](#apache) |
+| 尼施 | [Apache](#apache) |
 | slf4j-api | [SLF4J.ORG](#slf-j-org) |
 | slf4j-jdk14 | [SLF4J.ORG](#slf-j-org) |
 | stax-api | [Apache](#apache) |
 | wsdl4j | [Apache](#apache) |
 | wstx-asl | [Apache](#apache) |
-| 扎蘭 | [Apache](#apache) |
+| 沙蘭 | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-api | [Apache](#apache) （包含Public Domain和W3C軟體授權涵蓋的部分） |
+| xml-api | [Apache](#apache) （包含公共域和W3C軟體許可證涵蓋的部分） |
 | XmlSchema | [Apache](#apache) |
 
-## CRX第三方庫{#overview-of-crx-rd-party-libraries}概述
+## CRX第三方庫概述{#overview-of-crx-rd-party-libraries}
 
-下表列出CRX中使用的第三方資料庫，以及其涵蓋的授權、著作權聲明或免責聲明：
+下表列出CRX中使用的第三方程式庫，以及其涵蓋的授權、版權聲明或免責聲明：
 
 <table> 
  <colgroup> 
@@ -98,7 +97,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td>concurrent-1.3.4.jar</td> 
-   <td><a href="#concurrent">並行</a></td> 
+   <td><a href="#concurrent">同時</a></td> 
   </tr> 
   <tr> 
    <td>derby-10.1.2.1.jar</td> 
@@ -106,7 +105,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td>hsqldb-1.8.0.4.jar</td> 
-   <td><a href="#hypersonic-sql-group">Hypersonic SQL組</a></td> 
+   <td><a href="#hypersonic-sql-group">高超音速SQL組</a></td> 
   </tr> 
   <tr> 
    <td>jaxen-1.1-beta-6.jar</td> 
@@ -114,7 +113,7 @@ ht-degree: 5%
   </tr> 
   <tr> 
    <td>jcr-1.0.jar</td> 
-   <td><a href="#day-jcr">日JCR</a></td> 
+   <td><a href="#day-jcr">Day JCR</a></td> 
   </tr> 
   <tr> 
    <td>jdom-1.0.jar</td> 
@@ -133,7 +132,7 @@ ht-degree: 5%
    <td><a href="#pdfbox">PDFBox</a></td> 
   </tr> 
   <tr> 
-   <td>poi-2.5.1天。jar</td> 
+   <td>poi-2.5.1-day.jar</td> 
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
@@ -155,9 +154,9 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-## CQSE第三方庫{#overview-of-cqse-rd-party-libraries}概述
+## CQSE第三方庫概述{#overview-of-cqse-rd-party-libraries}
 
-下表列出了Porneat Servlet引擎中使用的第三方庫，以及它們所涵蓋的許可證、版權聲明或免責聲明：
+下表列出了Pornate Servlet引擎中使用的第三方庫，以及其所涵蓋的許可證、版權聲明或免責聲明：
 
 <table> 
  <colgroup> 
@@ -426,7 +425,7 @@ ht-degree: 5%
      limitations under the License.
 ```
 
-## 併發{#concurrent}
+## 同時 {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -567,7 +566,7 @@ ht-degree: 5%
      implementations, and test suites thereof.
 ```
 
-## 高超聲速SQL組{#hypersonic-sql-group}
+## 高超音速SQL組{#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -1094,7 +1093,7 @@ ht-degree: 5%
      (LFI#95810/Form ID#011801)
 ```
 
-## W3C檔案{#w-c-document}
+## W3C文檔{#w-c-document}
 
 ```xml
      This license came from: https://www.w3.org/Consortium/Legal/
@@ -1290,4 +1289,3 @@ database. Title to copyright in this software, database and any associated
 documentation shall at all times remain with Princeton University and 
 LICENSEE agrees to preserve same.
 ```
-
