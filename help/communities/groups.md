@@ -11,157 +11,156 @@ content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1643'
+source-wordcount: '1642'
 ht-degree: 1%
 
 ---
 
-
 # 社群群組主控台 {#community-groups-console}
 
-當社區站點的[模板結構](sites-console.md#step1)包含[組函式](functions.md#groups-function)時，「組」控制台提供建立社區組的訪問權限。
+當社群網站的[範本結構](sites-console.md#step1)包含[群組函式](functions.md#groups-function)時，「群組」主控台可提供建立社群群組的存取權。
 
-* 群組可以巢狀內嵌在其他群組中。 當新組](tools-groups.md)的[結構包含組函式時，就會發生這種情況。
-* 僅對於作者環境，有一個與站點建立嚮導類似的組建立嚮導。
-* 將「群組」功能新增至社群網站結構或社群群組結構時，成員是否可從發佈環境建立群組是可設定的。
+* 組可以嵌套在其他組內。 當新組](tools-groups.md)的[結構包含組函式時，就會發生此情況。
+* 僅適用於製作環境，會有與網站建立精靈類似的群組建立精靈。
+* 將組函式添加到社區站點結構或社區組結構時，成員是否可從發佈環境中建立組是可配置的。
 
 在包含的三個組模板中，只有`Reference Group`模板在其結構中包含組函式。
 
-社群群群組的幾個方面包括：
+社群群組的幾個方面包括：
 
-* 建立：可在作者上建立新群組，也可在發佈時選擇性建立新群組
-* 控制：群組可能是開放或機密
-* 巢狀：組可能包含零個或多個組
-
->[!NOTE]
->
->在[存在社區組控制台之前在發佈環境中建立的社區組](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)將不會列在社區組控制台中，因此，不能使用控制台進行修改。
+* 建立：可在作者上建立新群組，也可選擇在發佈時建立
+* 控制：群組可能為開啟或機密
+* 嵌套：組可以包含零個或多個組
 
 >[!NOTE]
 >
->此組控制台僅可從Communities Sites控制台訪問，不要與管理成員組的成員[組控制台](members.md)混淆。
+>在[存在社群群組控制台之前於發佈環境中建立的社群群組](https://helpx.adobe.com/in/experience-manager/6-3/communities/using/version-history.html#FeaturePack1FP1)將不會列在社群群組主控台中，因此，無法使用主控台修改。
+
+>[!NOTE]
 >
->成員組是在發佈環境中註冊的用戶組，使用[tunnel服務](deploy-communities.md#tunnel-service-on-author)從作者環境訪問。
+>此組控制台僅可從Communities Sites控制台訪問，不應與管理成員組的成員[組控制台](members.md)混淆。
+>
+>成員群組是在發佈環境中註冊，並使用[隧道服務](deploy-communities.md#tunnel-service-on-author)從製作環境存取的使用者群組。
 
 ## 群組建立 {#group-creation}
 
-要訪問組控制台：
+若要存取「群組」主控台：
 
 * 在作者上，以管理員權限登入
-* 從全域導覽：**[!UICONTROL 社群>網站]**
-* 選擇現有的社群站點資料夾以將其開啟
-* 在資料夾中選擇社區站點的實例
+* 從全局導航：**[!UICONTROL Communities > Sites]**
+* 選擇現有的社區站點資料夾以開啟它
+* 在資料夾中選取社群網站的例項
 
-   * 社群網站的結構必須包含群組功能
-   * 這些螢幕擷取畫面來自[在publish](published-site.md)上建立群組後的「快速入門」教學課程
+   * 社群網站的結構必須包含群組函式
+   * 這些螢幕擷取畫面來自[在發佈時建立群組](published-site.md)之後的快速入門教學課程
 
 ![chlimage_1-135](assets/chlimage_1-133.png)
 
-選擇&#x200B;**[!UICONTROL Groups資料夾]**&#x200B;以將其開啟。
+選擇&#x200B;**[!UICONTROL 組資料夾]**&#x200B;以開啟它。
 
-開啟時，會顯示所有現有群組，不論是在作者或發佈上建立。
+開啟時，會顯示所有現有群組（無論是在製作或發佈時建立）。
 
-在此「群組」主控台中，可以編寫新群組。
+在此「群組」主控台中，可以製作新群組。
 
 ![chlimage_1-134](assets/chlimage_1-134.png)
 
 * 選擇&#x200B;**[!UICONTROL 建立組]**&#x200B;按鈕
 
-### 步驟1:社群群組範本{#step-community-group-template}
+### 步驟1:社區組模板{#step-community-group-template}
 
-![多語言群](assets/multilingualgroup.png)
+![多語種組](assets/multilingualgroup.png)
 
 * **[!UICONTROL 社群群組標題]**:群組的顯示標題。
 
-   標題會顯示在群組的發佈網站上。
+   標題會顯示在群組的已發佈網站上。
 
 * **[!UICONTROL 社群群組說明]**:群組的說明。
 * **[!UICONTROL 社群群組根]**:群組的根路徑。
 
-   預設根目錄是父網站，但根目錄可移至網站內的任何位置。 建議不要變更它。
+   預設根為父網站，但根可移至網站內的任何位置。 不建議更改它。
 
-* **[!UICONTROL 其他可用的社群群組語言功]** 能表：使用下拉式功能表來選取可用的社群群組語言。功能表會顯示建立父社群網站的所有語言。 使用者可在這些語言中選擇，以在此單一步驟中建立多個地區設定的群組。 在相應社群網站的「群組」主控台中，以多種指定語言建立相同的群組。
+* **[!UICONTROL 其他可用的社群群組語言]** 功能表：使用下拉式功能表來選取可用的社群群組語言。功能表會顯示建立父社群網站的所有語言。 使用者可在這些語言中選取，以在這個單一步驟中建立多個地區設定中的群組。 系統會在個別社群網站的群組控制台中，以多種指定語言建立相同的群組。
 
 * **[!UICONTROL 社群群組名稱]**:顯示在URL中的群組根頁面名稱
 
-   * 重複檢查名稱，因為在建立群組後不易變更
-   * 基本URL將顯示在`Community Group Name`
-   * 若為有效的URL，請附加&quot;。html&quot;
+   * 仔細檢查名稱，因為建立群組後不易變更
+   * 基本URL將顯示在`Community Group Name`下
+   * 對於有效的URL，請附加&quot;。html&quot;
 
-      *例如*,  `http://localhost:4502/content/sites/mysight/en/mygroup.html`
+      *例如*、  `http://localhost:4502/content/sites/mysight/en/mygroup.html`
 
-* **[!UICONTROL 社群群組范]** 本功能表：使用下拉式功能表選擇可用的 [社群群組範本](tools.md)。
+* **[!UICONTROL 社區組模]** 板菜單：使用下拉式功能表來選擇可用的 [社群群組範本](tools.md)。
 
 ### 步驟2:設計{#step-design}
 
-#### 社群群組主題{#community-group-theme}
+#### 社區組主題{#community-group-theme}
 
-![社群群體主題](assets/communitygrouptheme.png)
+![社區群主題](assets/communitygrouptheme.png)
 
-此架構使用[TwitterBootstrap](https://twitterbootstrap.org/)為網站提供回應式、有彈性的設計。 可以選擇多個預先載入的Bootstrap主題之一以對所選社區組模板進行樣式化，或者可以上傳Bootstrap主題。
+此架構使用[TwitterBootstrap](https://twitterbootstrap.org/)為網站帶來回應式、彈性的設計。 可以選擇多個預載的Bootstrap主題之一來設定所選社區組模板的樣式，或者可以上載Bootstrap主題。
 
-選取後，主題將會以不透明的藍色核取標籤覆蓋。
+選取時，主題將會以不透明的藍色核取記號覆蓋。
 
 您可以選取與父網站主題不同的主題。
 
-社群網站發佈後，[可編輯屬性](#modifying-group-properties)並選取不同的主題。
+發佈社群網站後，可以[編輯屬性](#modifying-group-properties)並選取不同的主題。
 
-#### 社群群組品牌推廣{#community-group-branding}
+#### 社群群組品牌{#community-group-branding}
 
 ![chlimage_1-135](assets/chlimage_1-135.png)
 
-社群網站品牌是顯示為每個頁面上方標題的影像。 可顯示不同於其他網站頁面之群組的橫幅。
+社群網站品牌化是顯示為頁首的影像，橫跨每個頁面。 可以顯示群組的橫幅，而此橫幅與其他網站頁面不同。
 
-影像的大小應與預期的頁面在瀏覽器中顯示的大小相同，高度應為120像素。
+影像的大小應與瀏覽器中頁面的預期顯示大小一樣寬，高度應為120像素。
 
 建立或選取影像時，請記住：
 
-* 影像高度會裁切為120像素，從影像的上邊緣測量
-* 影像會固定在瀏覽器視窗的左邊緣
-* 影像沒有調整大小，因此當影像寬度為……
+* 影像高度會裁切為120個像素，從影像的上邊緣測量
+* 影像會固定至瀏覽器視窗的左側邊緣
+* 影像沒有大小調整，因此當影像寬度為……
 
-   * 小於瀏覽器寬度，影像將會水準重複
-   * 大於瀏覽器寬度時，影像會看起來會遭到裁切
+   * 小於瀏覽器寬度，影像會水準重複
+   * 大於瀏覽器的寬度，影像就會看起來被裁切
 
 ### 步驟3:設定{#step-settings}
 
-#### 協調{#moderation}
+#### 協調 {#moderation}
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
 
 依預設，會繼承父社群網站的協調者清單。
 
-您可以新增群組專屬的協調者：
+可以新增群組的特定協調者：
 
-* 搜尋成員（從發佈環境）以新增成員為協調者
+* 搜尋成員（從發佈環境）以將其新增為協調者
 
-#### 會籍{#membership}
+#### 會籍 {#membership}
 
-成員資格設定允許選擇三種保護社區組的方法之一。
+成員資格設定允許選擇以下三種方法之一來保護社區組。
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
 * 可選成員資格
 
-   如果選中此選項，則社區組是公共組。 網站成員可參與群組，並在未明確加入群組的情況下張貼。 已選取預設值。
+   如果選中，則社區組為公共組。 網站成員可以參與群組並張貼，而不需明確加入群組。 已選取預設值。
 * 必要的成員資格
 
-   如果選取此選項，則社群群群組為開啟的群組。 社群網站成員可以檢視群組的內容，但必須先加入群組，才能張貼內容。 成員通過在發佈環境中選擇`Join`按鈕加入。 未選擇預設值。
+   如果選定，則社區組為開啟的組。 社群網站成員可以查看組的內容，但必須先加入組才能發佈內容。 在發佈環境中選擇`Join`按鈕以加入成員。 未選取預設值。
 
 * 限制的成員資格
 
-   如果選取此選項，則社群群組為機密群組。 必須明確邀請社群成員。 已邀請的成員將輸入到搜索框中。 以後可以使用作者環境[成員和組控制台](members.md)添加成員。 未選擇預設值。
+   如果選中，則社區組為機密組。 必須明確邀請社群成員。 已邀請的成員將輸入到搜索框中。 稍後可使用作者環境的[成員和群組主控台](members.md)來新增成員。 未選取預設值。
 
 #### 縮圖 {#thumbnail}
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
-縮圖是要在作者和發佈時針對群組顯示的影像。
+縮圖是要在製作和發佈時針對群組顯示的影像。
 
-群組影像的最佳大小為170 x 90像素，且支援的影像格式為（例如JPG或PNG）。
+群組影像的最佳大小為170 x 90像素，且為支援的影像格式（例如JPG或PNG）。
 
 如果未新增影像，則會顯示預設影像。
 
@@ -171,31 +170,31 @@ ht-degree: 1%
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
-如果需要調整，請使用&#x200B;**Back**&#x200B;按鈕進行調整。
+如果需要任何調整，請使用&#x200B;**Back**&#x200B;按鈕進行調整。
 
-一旦選擇並啟動&#x200B;**Create**&#x200B;後，建立組的過程就無法中斷。
+一旦選擇並啟動&#x200B;**Create**&#x200B;後，建立組的過程就不能中斷。
 
-當程式完成時，新子社群網站（群組）的資訊卡會顯示在「社群網站群組」主控台中，供作者新增頁面內容或管理員修改網站屬性。
+流程完成後，新子社區站點（組）的卡將顯示在「社區站點組」控制台中，供作者添加頁面內容或管理員修改站點的屬性。
 
 ![createcommunitygroup-1](assets/createcommunitygroup-1.png)
 
 >[!NOTE]
 >
->按照[步驟1中的指定，以所有語言建立組：在各社區站點的「社區組」控制台中，使用「其他可用社區組語言」的社區組模板](groups.md#step1communitygrouptemplate)。
+>組以所有語言建立，如[步驟1中所指定：在各個社區站點的社區組控制台中，以其他可用的社區組語言顯示社區組模板](groups.md#step1communitygrouptemplate)。
 
 ## 編寫群組內容{#authoring-group-content}
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
-群組的頁面內容可使用與任何其他頁面相同的工具AEM製作。 若要開啟群組以進行製作，請選取將滑鼠指標暫留在群組卡片上時顯示的「開啟網站」圖示。
+群組的頁面內容可以使用與任何其他AEM頁面相同的工具撰寫。 若要開啟群組以進行製作，請選取將游標移至群組卡片時顯示的「開啟網站」圖示。
 
 ## 修改組屬性{#modifying-group-properties}
 
-在社群群組建立程式中指定的現有子社群網站屬性，可以透過選取將滑鼠指標暫留在群組卡片上時顯示的「編輯網站」圖示來修改：
+在社區組建立過程中指定的現有子社區站點的屬性可以通過選擇「編輯站點」表徵圖來修改，該表徵圖在將游標暫留在組卡上時顯示：
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
-下列屬性的詳細資料與[群組建立](#group-creation)區段中的說明相符。 無論是在發佈環境或作者環境中建立，任何巢狀群組皆可加以修改。
+以下屬性的詳細資訊與[Group Creation](#group-creation)部分中提供的說明相符。 任何巢狀群組都可修改，無論是在發佈環境或製作環境中建立。
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -206,30 +205,30 @@ BASIC面板允許修改
 * 社群群組標題
 * 社群群組說明
 
-不得修改社群群組名稱。
+不能修改社區組名稱。
 
-選擇不同的社群群組範本對現有社群群組網站不會有任何影響，因為範本和網站之間沒有任何連接。
+選擇不同的社區組模板對現有的社區組站點沒有影響，因為模板和站點之間沒有連接。
 
-可以改進子社區的[STRUCTURE](#modify-structure)。
+相反，可以修改子社區的[STRUCTURE](#modify-structure)。
 
 ### 修改結構{#modify-structure}
 
-STRUCTURE面板允許修改最初從作者或發佈環境建立子社區站點時選定的社區組模板建立的結構。 從面板，您可以
+「結構」面板允許修改最初從從作者或發佈環境建立子社區站點時選定的社區組模板建立的結構。 從面板，您可以
 
-* 將額外的[社群函式](functions.md)拖放至網站結構中
-* 在網站結構中的社群功能例項上：
+* 將其他[社群函式](functions.md)拖放至網站結構中
+* 在網站結構中的社群函式例項上：
 
    * **`gear icon`**
 
-      編輯設定，包括顯示標題和URL名稱，以及[特權成員群組](users.md#privilegedmembersgroups)
+      編輯設定，包括顯示標題和URL名稱，以及[特權成員組](users.md#privilegedmembersgroups)
 
    * **`trashcan icon`**
 
-      從網站結構移除（刪除）函式
+      從網站結構中移除（刪除）函式
 
    * **`grid icon`**
 
-      修改網站頂層導覽列中顯示的功能順序
+      修改網站頂層導覽列中顯示的函式順序
 
 >[!CAUTION]
 >
@@ -239,9 +238,9 @@ STRUCTURE面板允許修改最初從作者或發佈環境建立子社區站點�
 
 >[!CAUTION]
 >
->群組函式必須&#x200B;*not*&#x200B;是&#x200B;*的第一個函式，也不是站點結構中唯一的*&#x200B;函式。
+>群組函式必須&#x200B;*不*&#x200B;是站點結構中的&#x200B;*第一個或唯一的*&#x200B;函式。
 >
->任何其他函式（例如[page函式](functions.md#page-function)）必須先包含並列出。
+>必須先包含並列出任何其他函式，例如[page函式](functions.md#page-function)。
 
 #### 範例：將日曆函式添加到子社區（組）結構{#example-adding-a-calendar-function-to-a-sub-community-group-structure}
 
@@ -249,7 +248,7 @@ STRUCTURE面板允許修改最初從作者或發佈環境建立子社區站點�
 
 ### 修改設計{#modify-design}
 
-DESIGN面板允許修改主題：
+「設計」面板允許修改主題：
 
 * [社群群組主題](#community-group-theme)
 * [社群群組品牌](#community-group-branding)
@@ -262,32 +261,32 @@ DESIGN面板允許修改主題：
 
 ### 修改成員資格{#modify-membership}
 
-[MEMBERSHIP](#membership)面板僅提供資訊。 無論是選用、必要或受限制，都無法變更已建立的群組成員資格類型。
+[MEMBERSHIP](#membership)面板僅供參考。 無法更改已建立的組成員類型，無論是可選、必需還是受限。
 
 ### 修改縮圖{#modify-thumbnail}
 
-[THUMBNAIL](#thumbnail)面板允許上傳影像，以在發佈環境以及作者環境的「社群網站」群組主控台中，將社群群組呈現給網站訪客。
+[THUMBNAIL](#thumbnail)面板可讓上傳影像，以在發佈環境以及製作環境中的社群網站群組主控台中，呈現社群群組給網站訪客。
 
 ## 發佈群組{#publishing-the-group}
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-在新建或修改社群群組後，您可以選取`Publish Site`圖示來發佈（啟用）群組。
+在新建立或修改社群群組後，您可以選取`Publish Site`圖示來發佈（啟動）群組。
 
-成功發佈群組後，會出現訊息：
+成功發佈群組後，會顯示訊息：
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
 >[!CAUTION]
 >
->父社區站點和父組應已發佈。
+>應已發佈父社區站點和父組。
 >
->社群網站和巢狀群組應以自上而下的方式發佈。
+>社群網站和巢狀群組應由上而下發佈。
 
 ## 刪除組{#deleting-the-group}
 
 ![deleteicon](assets/deleteicon.png)
 
-從社群群組主控台中刪除群組，方法是選取「刪除群組」圖示，此圖示會顯示在將滑鼠暫留在群組上。
+通過選擇「刪除組」表徵圖，從社區組控制台中刪除組，該表徵圖顯示在將滑鼠懸停在組上。
 
-這會移除與群組相關的所有項目，例如永久刪除群組的所有內容，並從系統中移除使用者成員資格。
+這會刪除與組關聯的所有項，例如，組的所有內容將被永久刪除，並且用戶成員會從系統中刪除。
