@@ -1,34 +1,33 @@
 ---
 title: 建立節點
 seo-title: 建立節點
-description: '覆蓋注釋系統 '
-seo-description: '覆蓋注釋系統 '
+description: '覆蓋評論系統 '
+seo-description: '覆蓋評論系統 '
 uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
-translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+exl-id: fc044a4e-0037-405f-8c26-b388c6a98733
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 6%
 
 ---
 
-
 # 建立節點{#create-nodes}
 
-將注釋系統與自訂版本重疊，方法是將所需的最少檔案從/libs複製至/apps並在/apps中修改。
+將從/libs到/apps所需的最少檔案數複製到/apps並在/apps中修改，以自訂版本覆蓋註解系統。
 
 >[!CAUTION]
 >
->不會編輯/libs資料夾的內容，因為任何重新安裝或升級都可能會刪除或取代/libs資料夾，而/apps資料夾的內容則未受影響。
+>不會編輯/libs資料夾的內容，因為任何重新安裝或升級都可以刪除或替換/libs資料夾，而/apps資料夾的內容不會更改。
 
-在作者實例上使用[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)，首先在/apps資料夾中建立路徑，該路徑與/libs資料夾中覆蓋元件的路徑相同。
+在製作例項上使用[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)，首先在/apps資料夾中建立路徑，該路徑與/libs資料夾中重疊元件的路徑相同。
 
-要複製的路徑為
+重複的路徑為
 
 * `/libs/social/commons/components/hbs/comments/comment`
 
@@ -37,7 +36,7 @@ ht-degree: 6%
 1. 瀏覽至[http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 1. 建立`/apps/social`（如果尚未存在）
    * 選擇`/apps`節點
-   * **[!UICONTROL 「建立>資料夾……」]**
+   * **[!UICONTROL 建立>資料夾……]**
       * 輸入名稱: `social`
 1. 選擇`social`節點
    * **[!UICONTROL 建立>資料夾……]**
@@ -46,10 +45,10 @@ ht-degree: 6%
    * **[!UICONTROL 建立>資料夾……]**
       * 輸入名稱: `components`
 1. 選擇`components`節點
-   * **[!UICONTROL 建立>資料夾。.]**.
+   * **[!UICONTROL 建立>資料夾……]**.
       * 輸入名稱: `hbs`
 1. 選擇`hbs`節點
-   * **[!UICONTROL 「建立>建立元件……」]**
+   * **[!UICONTROL 建立>建立元件……]**
       * 輸入標籤：`comments`
       * 輸入標題：`Comments`
       * 輸入說明：`List of comments without showing avatars`
@@ -58,7 +57,7 @@ ht-degree: 6%
       * 按一下&#x200B;**[!UICONTROL Next]**&#x200B;直到&#x200B;**[!UICONTROL OK]**
 1. 選擇`comments`節點
 
-   * **[!UICONTROL 「建立>建立元件……」]**
+   * **[!UICONTROL 建立>建立元件……]**
 
       * 輸入標籤：`comment`
       * 輸入標題：`Comment`
@@ -66,18 +65,18 @@ ht-degree: 6%
       * 超級類型: `social/commons/components/comments/comment`
       * 輸入組：`.hidden`
       * 按一下&#x200B;**[!UICONTROL Next]**&#x200B;直到&#x200B;**[!UICONTROL OK]**
-   * 選擇&#x200B;**[!UICONTROL 全部保存]**
+   * 選擇&#x200B;**[!UICONTROL 保存全部]**
 1. 刪除預設`comments.jsp`
    * 選擇節點`/apps/social/commons/components/hbs/comments/comments.jsp`
    * 選擇&#x200B;**[!UICONTROL Delete]**
-1. 刪除預設注釋。jsp
+1. 刪除預設注釋.jsp
    * 選擇節點`/apps/social/commons/components/hbs/comments/comment/comment.jsp`
    * 選擇&#x200B;**[!UICONTROL Delete]**
-   * 選擇&#x200B;**[!UICONTROL 全部保存]**
+   * 選擇&#x200B;**[!UICONTROL 保存全部]**
 
 >[!NOTE]
 >
->為了保留繼承鏈，覆蓋元件的`Super Type`（屬性`sling:resourceSuperType`）設為與要覆蓋元件的`Super Type`相同的值，在這種情況下
+>為了保留繼承鏈，覆蓋元件的`Super Type`（屬性`sling:resourceSuperType`）設定為與要覆蓋的元件的`Super Type`相同的值，在此情況下
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
@@ -86,7 +85,7 @@ ht-degree: 6%
 
 
 
-覆蓋本身的`Type`（屬性`sling:resourceType`）必須是相對的自我參考，如此在/apps中找不到的任何內容就會在/libs中尋找。
+覆蓋圖自己的`Type`（屬性`sling:resourceType`）必須是相對的自引用，這樣在/apps中找不到的任何內容就會在/libs中尋找。
 * 名稱: `sling:resourceType`
 * 類型: `String`
 * 值: `social/commons/components/hbs/comments`
@@ -96,7 +95,6 @@ ht-degree: 6%
    * 類型: `String`
    * 值: `social/commons/components/hbs/comments/comment`
 1. 選擇綠色`[+] Add`
-   * 選擇&#x200B;**[!UICONTROL 全部保存]**
+   * 選擇&#x200B;**[!UICONTROL 保存全部]**
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
-
