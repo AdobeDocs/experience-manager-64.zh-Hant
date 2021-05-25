@@ -1,18 +1,17 @@
 ---
 title: AEM 現代化工具
 seo-title: AEM 現代化工具
-description: AEM Meduration Tools可協助您將舊有的AEM功能轉換為最新技術
-seo-description: AEM Meduration Tools可協助您輕鬆將舊有的AEM功能轉換為最新技術
+description: AEM現代化工具可協助您將舊版AEM功能轉換為最新技術
+seo-description: AEM現代化工具可協助您輕鬆將舊版AEM功能轉換為最新技術
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 55bd3036bd793a5e3b468b8b6ad595a857311865
+exl-id: cfa9fcd0-8d57-4352-9646-12a4fcf5f695
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 56%
 
 ---
-
 
 # AEM 現代化工具 {#modernization-tools}
 
@@ -23,7 +22,7 @@ ht-degree: 56%
 * [](/help/sites-authoring/default-components-foundation.md)從基礎元件轉換為核心元件[](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
 * [](website.md)從傳統 UI 轉換為觸控式 UI[](touch-ui-concepts.md)
 
-有關這些工具使用的詳細資訊，請[參見其文檔](http://opensource.adobe.com/aem-modernize-tools/)。
+有關這些工具使用的詳細資訊，請[參閱其文檔](http://opensource.adobe.com/aem-modernize-tools/)。
 
 >[!NOTE]
 >
