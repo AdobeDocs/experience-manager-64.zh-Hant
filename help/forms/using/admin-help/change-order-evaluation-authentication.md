@@ -1,30 +1,29 @@
 ---
-title: 更改驗證評估順序
-seo-title: 更改驗證評估順序
-description: '您可以變更AEM表單評估多個驗證提供者的順序。 '
-seo-description: '您可以變更AEM表單評估多個驗證提供者的順序。 '
+title: 更改驗證的評估順序
+seo-title: 更改驗證的評估順序
+description: '您可以變更AEM Forms評估多個驗證提供者的順序。 '
+seo-description: '您可以變更AEM Forms評估多個驗證提供者的順序。 '
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
-translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+exl-id: cac16c50-a85d-4e40-a590-8a0a52be893c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
+# 更改驗證評估的順序{#change-the-order-of-evaluation-for-authentication}
 
-# 更改驗證評估順序{#change-the-order-of-evaluation-for-authentication}
-
-如果您設定了多個驗證提供者，您可以變更AEM表單評估驗證的順序。 config.xml檔案中列出的驗證提供者順序會決定驗證評估順序。
+如果您設定了多個驗證提供者，則可以變更AEM表單評估驗證的順序。 config.xml檔案中列出的驗證提供程式的順序決定了驗證的評估順序。
 
 1. 在管理控制台中，按一下「設定>使用者管理>設定>匯入和匯出設定檔」。
-1. 要將當前配置設定導出到檔案，請按一下「導出」(Export)，然後將配置檔案保存到其他位置。
-1. 在檔案中查找以下節點：
+1. 要將當前配置設定導出到檔案，請按一下「導出」並將配置檔案保存到其他位置。
+1. 在檔案中找到下列節點：
 
    ```as3
     <node name="AuthSchemes"> 
@@ -44,8 +43,7 @@ ht-degree: 0%
     </node>
    ```
 
-   在`<entry key="order" value="3" />`中，編輯每個節點的值，以設定驗證評估的順序。
+   在`<entry key="order" value="3" />`中，編輯每個節點的值以設定驗證評估的順序。
 
-1. 若要匯入更新檔案，請在「使用者管理」中按一下「設定>匯入和匯出設定檔」。
-1. 按一下「瀏覽」以尋找檔案，按一下「匯入」，然後按一下「確定」。
-
+1. 若要匯入更新的檔案，請在「使用者管理」中按一下「設定>匯入和匯出設定檔」。
+1. 按一下「瀏覽」以查找檔案，按一下「導入」，然後按一下「確定」。
