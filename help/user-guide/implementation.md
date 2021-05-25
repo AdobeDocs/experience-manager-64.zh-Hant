@@ -1,24 +1,23 @@
 ---
 title: AEM 6.4實作使用指南
 seo-title: AEM 6.4實作使用指南
-description: 如何實作AEM 6.4的概觀
-seo-description: 如何實作AEM 6.4的概觀
+description: 如何實作AEM 6.4的概述
+seo-description: 如何實作AEM 6.4的概述
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+exl-id: e8434d46-b169-4408-85e7-b619c6f7b877
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 36%
 
 ---
 
+# AEM 6.4實作使用手冊{#aem-64-implementation-user-guides}
 
-# AEM 6.4實作使用者指南{#aem-64-implementation-user-guides}
+## 在AEM上開發{#developing-on-aem}
 
-## 在AEM {#developing-on-aem}上開發
-
-您是AEM開發人員嗎？ [開始在AEM上開發。](/help/sites-developing/home.md)
+您是AEM開發人員嗎？ [開始使用AEM開發。](/help/sites-developing/home.md)
 
 ## AEM的核心元件{#core-components-for-aem}
 
@@ -26,12 +25,12 @@ ht-degree: 36%
 
 ## AEM {#htl-for-aem}的HTL（HTML範本語言）
 
-[使用HTML範本語言來開發AEM。](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
+[使用HTML範本語言為AEM開發。](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
 
-## AEM的Cloud Manager {#cloud-manager-for-aem}
+## AEM適用的Cloud Manager {#cloud-manager-for-aem}
 
-[瞭解如何搭配AEM使用Cloud Manager。](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[了解如何搭配AEM使用Cloud Manager。](https://docs.adobe.com/content/help/zh-Hant/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 
-## Dispatcher Configuration {#dispatcher-configuration}
+## Dispatcher設定{#dispatcher-configuration}
 
-[使用AEM設定您的分派程式](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)
+[使用AEM設定您的Dispatcher](https://docs.adobe.com/content/help/zh-Hant/experience-manager-dispatcher/using/dispatcher.html)
