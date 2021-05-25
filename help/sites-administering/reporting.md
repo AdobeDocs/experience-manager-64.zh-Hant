@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-source-git-commit: 361964df6c25cbcfadb45dbf8fc10d5ab1258e6d
+source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
 workflow-type: tm+mt
-source-wordcount: '2815'
+source-wordcount: '2871'
 ht-degree: 4%
 
 ---
@@ -327,6 +327,11 @@ sidekick的&#x200B;**Components**&#x200B;標籤（可在報表頁面上取得）
 ![](assets/reportcomponent.png) ![reportcomponenterportcompletel](assets/reportcompentall.png)
 
 ### 磁碟使用情況 {#disk-usage}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_diskusage"
+>title="磁碟使用情況報告"
+>abstract="作為CTT計算器的輸入，使用者可以執行「http://HOST:PORT/etc/reports/diskusage.html&#39;」下的「磁碟使用情況」報表，以估計AEM存放庫的大小。 使用者也可以使用「路徑」參數(例如：&#39;http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam&#39;。"
 
 磁碟使用情況報表顯示儲存在儲存庫中的資料的相關資訊。
 
