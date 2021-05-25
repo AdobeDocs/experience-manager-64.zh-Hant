@@ -1,8 +1,8 @@
 ---
-title: Distiller服務Java API QuickStart(SOAP)
-seo-title: Distiller服務Java API QuickStart(SOAP)
-description: 使用Distiller服務Java API將PostScript檔案轉換為PDF檔案。
-seo-description: 使用Distiller服務Java API將PostScript檔案轉換為PDF檔案。
+title: Distiller Service Java API快速入門(SOAP)
+seo-title: Distiller Service Java API快速入門(SOAP)
+description: 使用Distiller Service Java API將PostScript檔案轉換為PDF檔案。
+seo-description: 使用Distiller Service Java API將PostScript檔案轉換為PDF檔案。
 uuid: 7781f074-cea4-4109-892b-118cfad4ec36
 contentOwner: admin
 content-type: reference
@@ -10,30 +10,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 59dd61d1-c6b1-4bea-b666-4aa7897384a1
 role: Developer
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0d7cdb60-e892-4644-8a72-a8068ca2e224
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
 
+# Distiller Service Java API快速入門(SOAP){#distiller-service-java-api-quickstart-soap}
 
-# Distiller服務Java API快速入門(SOAP){#distiller-service-java-api-quickstart-soap}
-
-Java API快速入門(SOAP)適用於Distiller®服務：
+Distiller®服務提供Java API快速入門(SOAP):
 
 [快速入門（SOAP模式）:使用Java API將PostScript檔案轉換為PDF檔案](distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-AEM Forms操作可以使用AEM Forms強類型API執行，連接模式應設定為SOAP。
+AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應設為SOAP。
 
 >[!NOTE]
 >
->使用表單進行寫程式的「快速AEM入門」基於部署在JBoss Application Server和Microsoft Windows作業系統上的Forms伺服器。 但是，如果您使用其他作業系統（例如UNIX），請以適用作業系統支援的路徑取代Windows特定路徑。 同樣地，如果您使用其他J2EE應用程式伺服器，請確定您指定有效的連線屬性。 請參閱[設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM表單進行程式設計中的快速入門是以部署在JBoss Application Server和Microsoft Windows作業系統上的Forms Server為基礎。 但是，如果您使用其他作業系統（如UNIX），請用適用作業系統支援的路徑取代Windows專用路徑。 同樣，如果您正在使用其他J2EE應用程式伺服器，請確保指定有效的連接屬性。 請參閱[設定連線屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api}將PostScript檔案轉換為PDF檔案
 
-下列程式碼範例會將名為*Loan.ps *的PostScript檔案轉換為名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案。 （請參閱[將PostScript轉換為PDF檔案](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents)）。
+以下代碼示例將名為*Loan.ps *的PostScript檔案轉換為名為&#x200B;*Loan.pdf*&#x200B;的PDF檔案。 （請參閱[將PostScript轉換為PDF文檔](/help/forms/developing/converting-postscript-pdf-documents.md#converting-postscript-to-pdf-documents)。）
 
 ```as3
  /* 
@@ -144,4 +143,3 @@ AEM Forms操作可以使用AEM Forms強類型API執行，連接模式應設定�
      } 
  }
 ```
-
