@@ -9,31 +9,30 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: spa
 discoiquuid: a458cc95-cd94-4f3f-9e7b-d6a5780ec4d5
-translation-type: tm+mt
-source-git-commit: a427f9e9020fba4d68f18d16e7373471429d894f
+exl-id: 1af29921-7c24-49b5-9f4c-60671641d4e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
+# SPA與Launch整合{#spa-and-launch-integration}
 
-# SPA和Launch Integration{#spa-and-launch-integration}
-
-Adobe Experience Platform Launch是在單頁應用程式(SPA)中實作Analytics、Target和Audience Manager的推薦方式。
-
->[!NOTE]
->
->「單頁應用程式(SPA)編輯器」功能需要AEM 6.4 Service Pack 2或更新版本。
->
->SPA編輯器是建議的解決方案，適用於需要以SPA架構為基礎的用戶端轉換（例如React或Angular）的專案。
-
-## 教學課程{#tutorial}
-
-若要瞭解如何將SPA與Adobe Experience Platform Launch整合，請參閱[本知識庫文章和教學課程](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)，其中將引導您完成啟動設定，並實作以Angular或React內建的Experience Cloud。
+Adobe Experience Platform Launch是在單頁應用程式(SPA)中實作Analytics、Target和Audience Manager的建議方式。
 
 >[!NOTE]
 >
->建立參考知識庫是為了讓Adobe Experience Platform Launch與不使用AEM SPA Editor的SPA整合。 這些方法也應允許Adobe Experience Platform Launch整合與使用SPA編輯器建立的SPA共存。
+>單頁應用程式(SPA)編輯器功能需要AEM 6.4 service pack 2或更新版本。
 >
->Javascript SPA程式庫與Redux搭配使用的問題尚未完全探討。 SPA編輯器的未來版本將支援Redux。
+>若專案需要SPA架構的用戶端轉譯(例如React或Angular),SPA Editor是建議的解決方案。
+
+## 教學課程 {#tutorial}
+
+若要了解如何將SPA與Adobe Experience Platform Launch整合，請參閱[本知識庫文章和教學課程](https://helpx.adobe.com/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html)，引導您完成Launch設定，並實作內建Angular或React的Experience Cloud。
+
+>[!NOTE]
+>
+>已建立參考的KB，以啟用Adobe Experience Platform Launch與SPA的整合，而不使用AEM SPA編輯器。 這些方法也應允許Adobe Experience Platform Launch整合與建置為使用SPA編輯器的SPA共存。
+>
+>Redux與Javascript SPA程式庫搭配使用的相關探討尚未完全探討。 Redux的支援預計於未來的SPA Editor版本中提供。
