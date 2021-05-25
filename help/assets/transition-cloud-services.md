@@ -2,28 +2,27 @@
 title: 將翻譯雲服務應用於資料夾
 description: 將翻譯雲服務應用於資料夾
 contentOwner: AG
-feature: Translation
+feature: 轉換
 role: Administrator
-translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+exl-id: 87883a3f-db95-41f4-b0aa-cdaeb7e6f555
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '398'
 ht-degree: 55%
 
 ---
 
-
 # 將翻譯雲服務應用於資料夾{#applying-translation-cloud-services-to-folders}
 
-Adobe Experience Manager(AEM)可讓您從您選擇的翻譯供應商取得雲端翻譯服務，以確保您的資產根據您的需求進行翻譯。
+Adobe Experience Manager(AEM)可讓您從所選翻譯提供者取得雲端型翻譯服務，確保資產能根據您的需求進行翻譯。
 
 您可以直接將翻譯雲端服務套用至資產資料夾，以便在翻譯工作流程中使用。
 
 ## 應用翻譯服務{#applying-the-translation-services}
 
-將翻譯雲端服務直接套用至您的資產資料夾，不需要在您建立或更新翻譯工作流程時設定翻譯服務。
+直接將翻譯雲端服務套用至您的資產資料夾，無需在您建立或更新翻譯工作流程時設定翻譯服務。
 
-1. 從「資產」UI中，選取您要套用轉譯服務的檔案夾。
+1. 從「資產」UI中，選取您要套用翻譯服務的資料夾。
 1. 在工具列中，按一下/點選「屬 **[!UICONTROL 性」圖示]** ，以顯示「資 **** 料夾屬性」頁面。
 
    ![chlimage_1-215](assets/chlimage_1-215.png)
@@ -33,7 +32,7 @@ Adobe Experience Manager(AEM)可讓您從您選擇的翻譯供應商取得雲端
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-1. 選擇翻譯提供器的連接器。
+1. 選擇翻譯提供程式的連接器。
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
@@ -43,13 +42,13 @@ Adobe Experience Manager(AEM)可讓您從您選擇的翻譯供應商取得雲端
 
 如果要為要用於翻譯工作流的翻譯服務應用自定義連接器。若要套用自訂連接器，請先從「封裝管理員」安裝連接器。然後，從雲端服務主控台設定連接器。在您設定連接器後，「套用轉譯服務」中所述的「雲端服務」標籤中的連接器清 [單中會顯示此連接器](transition-cloud-services.md#applying-the-translation-services)。在您應用自定義連接器並運行翻譯工作流後，翻譯項目的「 **[!UICONTROL Translation Summary]** 」 (翻譯摘要) 表徵圖會在heads **[!UICONTROL Provider]** and **[!UICONTROL Method下顯示連接器詳細資訊]**。
 
-1. 從「包管理器」安裝連接器。
-1. 按一下／點AEM選標誌，並導覽至「**[!UICONTROL 工具>部署>Cloud Services]**」。
+1. 從「封裝管理器」安裝連接器。
+1. 按一下/點選AEM標誌，然後導覽至「**[!UICONTROL 工具>部署>Cloud Services」]**。
 1. 在「雲端服務」頁面的「 **[!UICONTROL 協力廠商服務]** 」下，找 **[!UICONTROL 出您安裝的連接器]** 。
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. 按一下／點選&#x200B;**[!UICONTROL Configure now]**&#x200B;連結以開啟&#x200B;**[!UICONTROL Create Configuration]**&#x200B;對話框。
+1. 按一下/點選&#x200B;**[!UICONTROL 立即設定]**&#x200B;連結以開啟&#x200B;**[!UICONTROL 建立設定]**&#x200B;對話方塊。
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 
