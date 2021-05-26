@@ -32,14 +32,15 @@ ht-degree: 0%
 >本頁面應與下列內容一起閱讀：
 >* [重複使用內容：多網站管理員](/help/sites-administering/msm.md)。
 >* AEM 6.4中的Sites存放庫重新調整架構：
-   >   * [多站點管理器Blueprint配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
+>   * [多站點管理器Blueprint配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
    * [多網站管理員轉出設定](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
-製作網站時會使用「多網站管理員」及其API，因此這些管理工具僅用於製作環境。
+>
+>製作網站時會使用「多網站管理員」及其API，因此這些管理工具僅用於製作環境。
 
-## Java API {#overview-of-the-java-api}概述
+## Java API概述 {#overview-of-the-java-api}
 
 「多站點管理」包含以下包：
 
@@ -146,7 +147,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 ```
 
 >[!NOTE]
-`Resource`參數可以是不適應`Node`對象（如[`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html)對象）的`null`或`Resources`對象。
+>
+>`Resource`參數可以是不適應`Node`對象（如[`NonExistingResource`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/NonExistingResource.html)對象）的`null`或`Resources`對象。
 
 ## 建立新轉出設定{#creating-a-new-rollout-configuration}
 
@@ -158,7 +160,8 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 接著，當您在Blueprint或Live Copy頁面上設定轉出設定時，即可使用新的轉出設定。
 
 >[!NOTE]
-另請參閱自訂轉出的[最佳實務](/help/sites-administering/msm-best-practices.md#customizing-rollouts)。
+>
+>另請參閱自訂轉出的[最佳實務](/help/sites-administering/msm-best-practices.md#customizing-rollouts)。
 
 ### 建立轉出設定{#create-the-rollout-configuration}
 
@@ -171,12 +174,16 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
-這是您專案的自訂版本：
-   `/libs/msm/wcm/rolloutconfigs`
+   >
+   >這是您專案的自訂版本：
+   >`/libs/msm/wcm/rolloutconfigs`
+
 如果這是您的第一個設定，則必須建立。
 
    >[!NOTE]
-   您不得變更/libs路徑中的任何項目。
+   >
+   >您不得變更/libs路徑中的任何項目。
+
 這是因為下次升級執行個體時會覆寫/libs的內容（而當您套用Hotfix或Feature Pack時，很可能會覆寫）。
 設定和其他變更的建議方法為：
    * 在/apps下重新建立所需項目（即/libs中存在的項目）
@@ -686,7 +693,9 @@ MSM會使用儲存的語言和國家/地區代碼清單，來判斷與頁面語�
 
 
 >[!NOTE]
-cq-msm-lockable適用於要編輯的資源的第一子級，而且無論值定義為絕對值或相對值，它在任何更深的級上階上都無法運作。
+>
+>cq-msm-lockable適用於要編輯的資源的第一子級，而且無論值定義為絕對值或相對值，它在任何更深的級上階上都無法運作。
 
 >[!NOTE]
-當您重新啟用繼承時，即時副本頁面屬性不會自動與來源屬性同步。 如果需要，可以手動請求同步。
+>
+>當您重新啟用繼承時，即時副本頁面屬性不會自動與來源屬性同步。 如果需要，可以手動請求同步。

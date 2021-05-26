@@ -40,7 +40,7 @@ ht-degree: 5%
 
 您可以隨時暫停或還原繼承。 此外，如果您不想暫停繼承，也可以建立本機體驗。 預設情況下，除非您另有指定，否則所有頁面都使用「主版區域」。
 
-## 目標內容{#introduction-to-multisite-support-for-targeted-content}的多網站支援簡介
+## 目標內容的多網站支援簡介{#introduction-to-multisite-support-for-targeted-content}
 
 目標內容的多網站支援可立即使用，且可讓您從透過MSM管理的主版頁面推送目標內容至本機即時副本，或讓您管理此類內容的全域和本機修改。
 
@@ -56,7 +56,6 @@ ht-degree: 5%
 >
 >* 使用轉出或即時副本時，需要MSM授權。
 >* 使用與Adobe Target同步時，需要Adobe Target授權。
-
 >
 
 
@@ -92,7 +91,7 @@ ht-degree: 5%
 >
 >如需更多技術了解此功能，請參閱[如何架構目標內容的多網站管理](/help/sites-authoring/technical-multisite-targeted.md)。
 
-## 範例：根據地理{#example-targeting-content-based-on-geography}定位內容
+## 範例：根據地理定位內容{#example-targeting-content-based-on-geography}
 
 針對目標內容使用多網站可讓您共用、轉出或隔離個人化內容。 為了更好地說明如何使用此功能，請考慮您要根據地理位置控制如何推出目標內容的案例，如下列案例所示：
 
@@ -249,7 +248,6 @@ ht-degree: 5%
 >
 >* 您只能在活動中暫停或分離即時副本。
 >* 您不需要暫停或分離即時副本來擴充繼承的活動。 您一律可以為該活動建立&#x200B;**new**&#x200B;本機體驗和選件。 如果要修改現有活動，則需要暫停繼承。
-
 >
 
 

@@ -29,7 +29,6 @@ ht-degree: 4%
 >
 >* 請參閱在設定Dynamic Media — 混合模式中設定Dynamic MediaCloud Services[。](/help/assets/config-dynamic.md)
 >* 請參閱[設定Dynamic Media - Scene7模式](config-dms7.md)和[疑難排解Dynamic Media - Scene7模式](troubleshoot-dms7.md)
-
 >
 
 
@@ -175,7 +174,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 另請參閱「Adobe檢視器參考指南」中的[關於HTML5檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)。
 
-### 使用HTML5視訊檢視器{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}在桌上型電腦和行動裝置上播放視訊
+### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 針對案頭和行動最適化視訊串流，用於位元速率切換的視訊是以最適化視訊集中的所有MP4視訊為基礎。
 
@@ -563,7 +562,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
    現在您將在AEM中設定YouTube。
 
-### 在AEM {#setting-up-youtube-in-aem}中設定YouTube
+### 在AEM中設定YouTube {#setting-up-youtube-in-aem}
 
 1. 在AEM的左上角，點選AEM標誌，然後在左側導軌中，點選「 **[!UICONTROL 工具>部署>Cloud Services」]**。
 1. 在&#x200B;**[!UICONTROL 第三方服務]**&#x200B;標題下，點選「YouTube」下，點選「**[!UICONTROL 立即配置」]**。
@@ -729,7 +728,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 1. 點選&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。
 1. 在&#x200B;**[!UICONTROL YouTube發佈]**&#x200B;標題下，在&#x200B;**[!UICONTROL YouTube URL]**&#x200B;清單中，選取URL文字並複製至網頁瀏覽器，以預覽資產或新增至您的網頁內容頁面。
 
-### 取消發佈影片以從YouTube {#unpublishing-videos-to-remove-them-from-youtube}中移除影片
+### 取消發佈影片以從YouTube中移除影片 {#unpublishing-videos-to-remove-them-from-youtube}
 
 在AEM中取消發佈視訊資產時，視訊會從YouTube中移除。
 
@@ -782,7 +781,6 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
    >* Apache Sling作業佇列設定
    >* AdobeGranite工作流程外部流程作業處理常式
    >* Granite工作流程逾時佇列
-
    > 
    >您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
 
@@ -815,7 +813,6 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
    >* Apache Sling作業佇列設定
    >* AdobeGranite工作流程外部流程作業處理常式
    >* Granite工作流程逾時佇列
-
    >
    >您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
 
@@ -898,7 +895,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 1. 在列出最常發佈影片的表格中，點選影片名稱以播放影片，並查看影片的對象保留率（下拉式清單）報表。
 
-### 根據您使用Dynamic Media HTML5檢視器SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}建立的視訊檢視器檢視視訊報表
+### 根據您使用Dynamic Media HTML5檢視器SDK建立的視訊檢視器檢視視訊報表 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 如果您使用Dynamic Media提供的現成視訊檢視器，或是您根據現成視訊檢視器建立自訂檢視器預設集，則不需要其他步驟即可檢視視訊報表。 不過，如果您已根據HTML5檢視器SDK API建立自己的視訊檢視器，則請使用下列步驟，確保您的視訊檢視器將追蹤事件傳送至Dynamic Media視訊報表。
 
@@ -957,11 +954,12 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+
    appMeasurementBridge物件具有內建追蹤函式。 不過，您也可以提供自己的功能來支援多個追蹤系統或其他功能。
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## 向視頻{#adding-captions-to-video}添加字幕
+## 向視頻添加字幕{#adding-captions-to-video}
 
 您可以在單一影片或最適化影片集中新增字幕，將影片的觸角延伸至全球市場。 通過添加字幕，您可以避免對音頻進行重音，或者使用母語者為每種語言重新錄制音頻。 影片以錄制的語言播放。 外語字幕出現，使不同語言的人仍然能夠理解音頻部分。
 
@@ -1034,7 +1032,7 @@ Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格�
 
 您可以使用下列範例作為建立具有章節導覽的WebVTT檔案時所使用的格式範例：
 
-### 具有視訊章節導覽{#webvtt-file-with-video-chapter-navigation}的WebVTT檔案
+### 具有視訊章節導覽的WebVTT檔案{#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT 

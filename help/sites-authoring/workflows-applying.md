@@ -41,7 +41,6 @@ ht-degree: 15%
 >
 >* [如何將工作流程套用至DAM資產](/help/assets/assets-workflow.md)。
 >* [使用專案工作流程](/help/sites-authoring/projects-with-workflows.md).
-
 >
 
 
@@ -50,7 +49,7 @@ ht-degree: 15%
 >
 >AEM管理員可以[使用數種其他方法開始工作流程](/help/sites-administering/workflows-starting.md)。
 
-## 從Sites Console {#starting-a-workflow-from-the-sites-console}啟動工作流
+## 從Sites Console啟動工作流 {#starting-a-workflow-from-the-sites-console}
 
 您可以從以下任一位置啟動工作流程：
 
@@ -61,7 +60,7 @@ ht-degree: 15%
 
 * [在「建立工作流程精靈」中指定「工作流程詳細資訊」](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 從Sites工具欄{#starting-a-workflow-from-the-sites-toolbar}啟動工作流
+### 從Sites工具欄啟動工作流{#starting-a-workflow-from-the-sites-toolbar}
 
 您可以從&#x200B;**Sites**&#x200B;控制台的工具欄啟動工作流：
 
@@ -73,7 +72,7 @@ ht-degree: 15%
 
 1. **建立工作流**&#x200B;嚮導將幫助您[指定工作流詳細資訊](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 從時間軸{#starting-a-workflow-from-the-timeline}啟動工作流
+### 從時間軸啟動工作流{#starting-a-workflow-from-the-timeline}
 
 從&#x200B;**時間軸**&#x200B;中，可以啟動要應用到選定資源的工作流。
 
@@ -84,7 +83,7 @@ ht-degree: 15%
 
 1. **建立工作流**&#x200B;嚮導將幫助您[指定工作流詳細資訊](#specifying-workflow-details-in-the-create-workflow-wizard)。
 
-### 在建立工作流嚮導{#specifying-workflow-details-in-the-create-workflow-wizard}中指定工作流詳細資訊
+### 在建立工作流嚮導中指定工作流詳細資訊{#specifying-workflow-details-in-the-create-workflow-wizard}
 
 **建立工作流**&#x200B;嚮導將幫助您選擇工作流並指定所需的詳細資訊。
 
@@ -108,6 +107,7 @@ ht-degree: 15%
    * **封裝標題**
 
       * 您可以指定套件的標題，以協助識別。
+
    >[!NOTE]
    >
    >當為「 **** 多資源支援」配置了工作流且已選擇多個資源時，「保留工作流包」選項可用。[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
@@ -141,7 +141,7 @@ ht-degree: 15%
 
 1. 使用&#x200B;**Create**&#x200B;關閉嚮導並建立工作流實例。 通知會顯示在Sites主控台中。
 
-## 從頁面編輯器{#starting-a-workflow-from-the-page-editor}啟動工作流程
+## 從頁面編輯器啟動工作流程{#starting-a-workflow-from-the-page-editor}
 
 編輯頁面時，您可以從工具列選取&#x200B;**頁面資訊**。 下拉式功能表具有選項&#x200B;**在工作流程中開始**。 這會開啟一個對話方塊，您可在其中指定所需的工作流程，並視需要加上標題：
 
