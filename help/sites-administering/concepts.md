@@ -129,8 +129,8 @@ AEM eCommerce是使用eCommerce引擎實作：
 >這目前的用途為示範，或根據您的需求，做為自訂實作的基礎。
 >在AEM中使用以JCR為基礎的一般開發實作的AEM eCommerce為：
 >* 說明API使用方式的獨立AEM原生電子商務範例。 這可用來控制產品資料、購物車和結帳，並結合現有的資料顯示和行銷活動。 在這種情況下，產品資料庫儲存在AEM的原生存放庫(Adobe的[JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)實作)。\
-   標準AEM安裝包含[通用電子商務實作](/help/sites-administering/generic.md)的基本知識。
-
+>標準AEM安裝包含[通用電子商務實作](/help/sites-administering/generic.md)的基本知識。
+>
 
 
 ### 商務提供程式{#commerce-providers}
