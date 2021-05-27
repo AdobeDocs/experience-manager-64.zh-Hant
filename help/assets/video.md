@@ -70,10 +70,11 @@ ht-degree: 4%
 
          [檢視視訊轉譯](video-renditions.md)
 
-[管理視訊轉譯](managing-assets-touch-ui.md#managing-renditions)
+         [管理視訊轉譯](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理檢視器預設集](managing-viewer-presets.md)
       * [發佈資產](publishing-dynamicmedia-assets.md)
+      
    * 使用視訊中繼資料
 
       * 檢視編碼視訊轉譯的屬性，例如影格速率、音訊和視訊位元速率，以及轉碼器：
@@ -82,10 +83,11 @@ ht-degree: 4%
 
       * 編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
 
-[編輯視訊屬性](managing-assets-touch-ui.md#editing-properties)
+         [編輯視訊屬性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理數位資產的中繼資料](metadata.md)
       * [中繼資料結構](metadata-schemas.md)
+      
    * 檢閱、核准及註解影片
 
       * [為視訊](managing-video-assets.md#annotating-video-assets) 加上注 [解資產](managing-assets-touch-ui.md#annotating)
