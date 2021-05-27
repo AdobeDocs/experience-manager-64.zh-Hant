@@ -33,7 +33,7 @@ ht-degree: 0%
 >* [重複使用內容：多網站管理員](/help/sites-administering/msm.md)。
 >* AEM 6.4中的Sites存放庫重新調整架構：
 >   * [多站點管理器Blueprint配置](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
-   * [多網站管理員轉出設定](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
+>   * [多網站管理員轉出設定](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
 
 
 >[!CAUTION]
@@ -177,17 +177,15 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    >
    >這是您專案的自訂版本：
    >`/libs/msm/wcm/rolloutconfigs`
-
-如果這是您的第一個設定，則必須建立。
+   >如果這是您的第一個設定，則必須建立。
 
    >[!NOTE]
    >
    >您不得變更/libs路徑中的任何項目。
-
-這是因為下次升級執行個體時會覆寫/libs的內容（而當您套用Hotfix或Feature Pack時，很可能會覆寫）。
-設定和其他變更的建議方法為：
-   * 在/apps下重新建立所需項目（即/libs中存在的項目）
-   * 在/apps內進行任何變更
+   >這是因為下次升級執行個體時會覆寫/libs的內容（而當您套用Hotfix或Feature Pack時，很可能會覆寫）。
+   >設定和其他變更的建議方法為：
+   >* 在/apps下重新建立所需項目（即/libs中存在的項目）
+   >* 在/apps內進行任何變更
 
 
 1. 在此&#x200B;**Create**&#x200B;下，建立具有以下屬性的節點：
