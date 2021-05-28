@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: 配置，Scene7模式
 role: Administrator,Business Practitioner,Developer
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
 workflow-type: tm+mt
-source-wordcount: '5593'
+source-wordcount: '5596'
 ht-degree: 3%
 
 ---
@@ -75,9 +75,9 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 >
 >預設情況下，Cloud Services的配置路徑為`/content/dam`。 Dynamic Media - Scene7模式不支援任何其他設定路徑。
 
-若要設定Dynamic MediaCloud Services:
+**若要設定Dynamic MediaCloud Services:**
 
-1. 在「Experience Manager」中，點選Experience Manager標誌以存取全域導覽主控台，並點選「工具」圖示，然後點選「**[!UICONTROL Cloud Services>Dynamic Media設定」]**。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，並點選「工具」圖示，然後點選「Cloud Services **** > **[!UICONTROL Dynamic Media設定]**」。
 1. 在「 Dynamic Media Configuration Browser」頁面的左窗格中，點選&#x200B;**[!UICONTROL global]**&#x200B;並點選&#x200B;**[!UICONTROL Create]**。 請勿點選或選取[!UICONTROL global]左側的資料夾圖示。
 1. 在[!UICONTROL 建立Dynamic Media設定]頁面上，輸入標題、Dynamic Media帳戶電子郵件地址和密碼。 選取您的地區。 此資訊是透過布建電子郵件中的Adobe提供給您的。 如果您未收到電子郵件，請聯絡Adobe客戶服務。
 
@@ -107,7 +107,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 1. 若要在發佈Dynamic Media內容之前安全地預覽，您必須「允許清單」Experience Manager製作例項，才能連線至Dynamic Media:
 
    * 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後登入您的帳戶。 配置時，Adobe提供了您的憑據和登錄詳細資訊。 如果您沒有此資訊，請聯繫技術支援。
-   * 在頁面右上角的導覽列中，點選「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器]**」。
+   * 在頁面右上角的導覽列中，點選「**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**」。
    * 在「影像伺服器發佈」頁面的「發佈內容」下拉式清單中，選取「測試影像伺服」**[!UICONTROL 。]**
    * 對於「用戶端位址」篩選器，點選&#x200B;**[!UICONTROL Add]**。
    * 若要啟用（開啟）地址，請選取核取方塊。 輸入Experience Manager製作例項的IP位址（非Dispatcher IP）。
@@ -145,7 +145,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 「發佈設定」設定決定預設如何從Dynamic Media傳送資產。 如果未指定任何設定，Dynamic Media會根據「發佈設定」中定義的預設設定來傳送資產。 例如，傳送不包含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
 
-若要設定發佈設定：在Dynamic Media Classic中，點選「 **[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器]**」。
+若要設定發佈設定：在Dynamic Media Classic中，點選&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**。
 
 「影像伺服器」螢幕建立用於傳送影像的預設設定。 請參閱使用者介面以取得每個設定的說明。
 
@@ -159,7 +159,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 #### 配置應用程式常規設定{#configuring-application-general-settings}
 
-若要開啟「[!UICONTROL 應用程式一般設定]」頁面，請在「Dynamic Media Classic全域導覽列」中，點選「**[!UICONTROL 設定>應用程式設定>一般設定]**」。
+若要開啟「[!UICONTROL 應用程式一般設定]」頁面，請在「Dynamic Media Classic全域導覽列」中，點選「**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**」。
 
 **[!UICONTROL 伺服器]**  — 在帳戶布建時，Dynamic Media會自動為您的公司提供指派的伺服器。這些伺服器可用來建構您網站和應用程式的URL字串。 這些URL呼叫是您的帳戶專屬的。 除非Experience Manager支援明確指示，否則請勿更改任何伺服器名稱。
 
@@ -184,9 +184,9 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 動態媒體色彩管理可讓您為資產加上色彩校正。 透過色彩校正，擷取的資產可保留其色彩空間（RGB、CMYK、灰色）和內嵌的色彩描述檔。 當您請求動態轉譯時，會使用CMYK、RGB或灰色輸出將影像顏色校正到目標顏色空間。 請參閱[設定影像預設集](managing-image-presets.md)。
 
-要配置預設顏色屬性以在請求影像時啟用顏色校正，請執行以下操作：
+**要配置預設顏色屬性以在請求影像時啟用顏色校正，請執行以下操作：**
 
-1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後使用布建期間提供的憑證登入您的帳戶。 導航至&#x200B;**[!UICONTROL Setup > Application Setup]**。
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後使用布建期間提供的憑證登入您的帳戶。 導覽至&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]**。
 1. 展開「發 **[!UICONTROL 布設定]** 」區域並選 **[!UICONTROL 取「影像伺服器」]**。設定發 **[!UICONTROL 布例項的預設值]** ，將「發佈內容」設 **** 定為「影像伺服」。
 1. 捲動至您必須變更的屬性。 例如， **[!UICONTROL 色彩管理屬性]**&#x200B;區域中的屬性。
 
@@ -220,9 +220,9 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 請參閱[上傳資產](managing-assets-touch-ui.md#uploading-assets)。
 
-**要編輯支援格式的mime類型**
+**要編輯支援格式的mime類型：**
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，然後點選&#x200B;**[!UICONTROL 工具]**（槌子）圖示並導覽至&#x200B;**[!UICONTROL 一般>CRXDE Lite]**。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，然後點選&#x200B;**[!UICONTROL 工具]**（槌子）圖示並導覽至&#x200B;**[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**。
 1. 在左側邊欄中，導覽至下列項目：
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -246,9 +246,9 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 您可以針對Experience Manager資產中不支援的格式新增自訂MIME類型。 若要確保CRXDE Lite未刪除您在Experience Manager中新增的任何新節點，請將MIME類型移至&#x200B;**[!UICONTROL image_]**&#x200B;之前，並將其啟用值設為&#x200B;**[!UICONTROL false]**。
 
-**為不支援的格式添加自定義MIME類型**
+**若要針對不支援的格式新增自訂MIME類型：**
 
-1. 從Experience Manager，按一下「**[!UICONTROL 工具>操作> Web Console]**」。
+1. 從Experience Manager，按一下「**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**」。
 
    ![Web 主控台](assets/2019-08-02_16-13-14.png)
 
@@ -276,7 +276,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 1. 返回具有開啟的Experience Manager控制台的瀏覽器頁簽。
 
-1. 從Experience Manager，按一下「**[!UICONTROL 工具>一般>CRXDE Lite]**」。
+1. 從Experience Manager，按一下「**[!UICONTROL 工具]** > **[!UICONTROL 常規]** > **[!UICONTROL CRXDE Lite]**」。
 
    ![CRXDE Lite頁面](assets/2019-08-02_16-55-41.png)
 
@@ -320,7 +320,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
    配置時，Adobe提供了您的憑據和登錄詳細資訊。 如果您沒有此資訊，請聯繫技術支援。
 
-1. 在頁面頂端附近的導覽列中，點選「**[!UICONTROL 設定>應用程式設定>批次集預設集>預設命名]」。**
+1. 在頁面頂端附近的導覽列中，點選「**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Default Naming]**」。
 1. 選擇 **[!UICONTROL 「查看表單]** 」或「 **[!UICONTROL 查看代碼」]** ，以指定要查看的方式並輸入有關每個元素的資訊。
 
    您可以選取&#x200B;**[!UICONTROL 檢視程式碼]**&#x200B;核取方塊，檢視建立與表單選取項目一併的規則運算式值。 如果表單視圖因任何原因限制您，則可以輸入或更改這些值，以幫助定義命名約定的元素。 如果無法在表單檢視中剖析您的值，表單欄位就會變成非作用中。
@@ -354,7 +354,7 @@ Dynamic Media使用批次集預設集，將資產組織成影像集（替代影�
 
    配置時，Adobe提供了您的憑據和登錄詳細資訊。 如果您沒有此資訊，請聯繫技術支援。
 
-1. 在頁面頂端附近的導覽列中，點選「**[!UICONTROL 設定>應用程式設定>批次集預設集>批次集預設集]」。**
+1. 在頁面頂端附近的導航欄上，點選&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Batch Set Preset]**。
 
    [!UICONTROL 「檢視表單]」(如「詳細資訊」頁面的右上角所  設定)是預設檢視。
 
@@ -363,7 +363,7 @@ Dynamic Media使用批次集預設集，將資產組織成影像集（替代影�
 1. 在&#x200B;**[!UICONTROL 批集類型]**&#x200B;下拉菜單中，選擇預設類型。
 1. 執行下列任一操作：
 
-   * 如果您使用先前在&#x200B;**[!UICONTROL 應用程式設定>批集預設集>預設命名]**&#x200B;下設定的預設命名慣例，請展開&#x200B;**[!UICONTROL 資產命名慣例]**，然後在&#x200B;**[!UICONTROL 檔案命名]**&#x200B;下拉式清單中，點選&#x200B;**[!UICONTROL 預設]**。
+   * 如果您使用先前在&#x200B;**[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Default Naming]**&#x200B;下設定的預設命名慣例，請展開&#x200B;**[!UICONTROL Asset Naming Conventions]**，然後在&#x200B;**[!UICONTROL File Naming]**&#x200B;下拉式清單中，點選&#x200B;**[!UICONTROL Default A11/>。]**
    * 若要在設定預設集時定義新的命名慣例&#x200B;**[!UICONTROL 資產命名慣例]**，然後在&#x200B;**[!UICONTROL 檔案命名]**&#x200B;下拉式清單中，點選&#x200B;**[!UICONTROL 自訂]**。
 
 1. 對於[!UICONTROL 序列順序]，定義在將影像集分組後，影像的顯示順序。
@@ -409,7 +409,7 @@ spin-01-01
 
    配置時，Adobe提供了您的憑據和登錄詳細資訊。 如果您沒有此資訊，請聯繫技術支援。
 
-1. 在頁面頂端附近的導覽列中，點選&#x200B;**[!UICONTROL 設定>應用程式設定>批次集預設集>批次集預設集]**。
+1. 在頁面頂端附近的導航欄上，點選&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Batch Set Presets]** > **[!UICONTROL Batch Set Preset]**。
 
    [!UICONTROL 「檢視表單]」(如「詳細資訊」頁面的右上角所  設定)是預設檢視。
 
@@ -498,7 +498,7 @@ Adobe建議對PDF、PostScript®和PSD檔案使用以下「調整」作業參數
 
 「Granite傳輸工作流程」佇列用於&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程。 在Dynamic Media中，它用於影像擷取和處理。
 
-**更新Granite暫時工作流程佇列的方式**
+**若要更新Granite暫時工作流程佇列：**
 
 1. 導航到[https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr)並搜索&#x200B;**[!UICONTROL 隊列：Granite暫時工作流隊列]**。
 
@@ -606,14 +606,14 @@ Scene7上傳連線設定會將Experience Manager資產同步至Dynamic Media Cla
 
 #### 自訂復寫的資產篩選器{#customizing-asset-filters-for-replication}
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，並點選&#x200B;**[!UICONTROL 工具]**&#x200B;圖示並導覽至&#x200B;**[!UICONTROL 一般>CRXDE Lite]**。
+1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，並點選&#x200B;**[!UICONTROL 工具]**&#x200B;圖示並導覽至&#x200B;**[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**。
 1. 在左側資料夾樹中，導覽至`/etc/replication/agents.author/publish/jcr:content/damRenditionFilters`以檢閱篩選器。
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
 1. 若要定義篩選器的Mime類型，可以按如下方式找到Mime類型：
 
-   在左側邊欄中，展開&#x200B;**[!UICONTROL content > dam > &lt;`locate_your_asset`> > jcr:content > metadata]**，然後在表格中，找出&#x200B;**[!UICONTROL dc:format]**。
+   在左側邊欄中，展開&#x200B;**[!UICONTROL content]** > **[!UICONTROL dam]** > **[!UICONTROL `locate_your_asset`>]** > **[!UICONTROL jcr:content]** > **[!UICONTROL metadata]**，然後在右側的表格中，找出&#x200B;**[!UICONTROL dc:format]**。
 
    下圖是資產dc:format路徑的範例。
 
