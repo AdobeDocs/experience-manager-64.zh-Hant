@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: 配置，Scene7模式
 role: Administrator,Business Practitioner,Developer
-source-git-commit: a9ae157512127f27dd54063fe4e3c61b5f83b74e
+source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
 workflow-type: tm+mt
 source-wordcount: '5596'
 ht-degree: 3%
@@ -33,11 +33,11 @@ ht-degree: 3%
 
 ## 在Scene7模式{#enabling-dynamic-media-in-scene-mode}中啟用Dynamic Media
 
-[動態](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) 媒體預設為停用。若要運用動態媒體功能，您必須啟用此功能。
+[動態](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) 媒體預設為停用。若要運用Dynamic Media功能，您必須啟用此功能。
 
->[!NOTE]
+>[!WARNING]
 >
->Dynamic Media - Scene7模式僅適用於Experience Manager製作例項。 因此，您必須在「Experience Manager製作」例項上設定`runmode=dynamicmedia_scene7`，而非「Experience Manager發佈」例項。
+>Dynamic Media - Scene7模式僅適用於&#x200B;*Experience Manager製作例項*。 因此，您必須在「Experience Manager製作」例項上設定`runmode=dynamicmedia_scene7`，而不是&#x200B;*Experience Manager發佈例項。*
 
 若要啟用Dynamic Media，您必須在終端視窗中輸入以下內容，從命令列使用`dynamicmedia_scene7`執行模式啟動Experience Manager（使用的範例埠為4502）:
 
@@ -77,7 +77,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 **若要設定Dynamic MediaCloud Services:**
 
-1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，並點選「工具」圖示，然後點選「Cloud Services **** > **[!UICONTROL Dynamic Media設定]**」。
+1. 在您的「Experience Manager作者」例項中，點選Experience Manager標誌以存取全域導覽主控台，並點選「工具」圖示，然後點選「**[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media設定]**」。
 1. 在「 Dynamic Media Configuration Browser」頁面的左窗格中，點選&#x200B;**[!UICONTROL global]**&#x200B;並點選&#x200B;**[!UICONTROL Create]**。 請勿點選或選取[!UICONTROL global]左側的資料夾圖示。
 1. 在[!UICONTROL 建立Dynamic Media設定]頁面上，輸入標題、Dynamic Media帳戶電子郵件地址和密碼。 選取您的地區。 此資訊是透過布建電子郵件中的Adobe提供給您的。 如果您未收到電子郵件，請聯絡Adobe客戶服務。
 
@@ -266,7 +266,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 1. 在您剛新增的空白文字欄位中輸入`DWG=image/vnd.dwg`。
 
-   範例`DWG=image/vnd.dwg`僅供說明之用。 您在此處新增的MIME類型可能是任何其他不支援的格式。
+   範例`DWG=image/vnd.dwg`僅供示範之用。 您在此處新增的MIME類型可能是任何其他不支援的格式。
 
    ![新增mime類型範例](assets/2019-08-02_16-36-36.png)
 
@@ -306,7 +306,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 **配置預設命名**
 
-建立用於任何批集預設配方的預設命名慣例。 批集預設集定義中選擇的預設命名慣例可能是貴公司需要批生成集的全部內容。 系統會建立批集預設集，以使用您定義的預設命名慣例。 如果公司定義的預設命名有例外，您可以建立任意數量的批集預設集，其中包含特定內容集所需的替代自定義命名慣例。
+建立用於任何批集預設配方的預設命名慣例。 批集預設集定義中選定的預設命名慣例可能是貴公司生成批集所需的全部。 系統會建立批集預設集，以使用您定義的預設命名慣例。 如果公司定義的預設命名有例外，您可以建立任意數量的批集預設集，其中包含特定內容集所需的替代自定義命名慣例。
 
 雖然使用批集預設集功能不需要設定預設的命名慣例，但您可以使用它來定義要將命名慣例的多個元素組合在一個集合中。 這樣有助於簡化批集建立。
 
@@ -444,7 +444,7 @@ spin-01-01
 
    `\w+-\w+-C(\d+)`
 
-   請記住，這些運算式只是圖例用途的範例。 您可以建立規則運算式，但需視需要而定。
+   請記住，這些運算式只是示範用途的範例。 您可以建立規則運算式，但需視需要而定。
 
    >[!NOTE]
    >
