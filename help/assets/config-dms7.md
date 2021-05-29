@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: 配置，Scene7模式
 role: Administrator,Business Practitioner,Developer
-source-git-commit: f4fe70a58ded345f06f0a65809612a55e7ddfb4e
+source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
 workflow-type: tm+mt
-source-wordcount: '5596'
+source-wordcount: '5594'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 >[!WARNING]
 >
->Dynamic Media - Scene7模式僅適用於&#x200B;*Experience Manager製作例項*。 因此，您必須在「Experience Manager製作」例項上設定`runmode=dynamicmedia_scene7`，而不是&#x200B;*Experience Manager發佈例項。*
+>Dynamic Media - Scene7模式僅適用於&#x200B;*Experience Manager製作例項*。 因此，請在「Experience Manager製作」例項上設定`runmode=dynamicmedia_scene7`，而不是&#x200B;*Experience Manager發佈例項。*
 
 若要啟用Dynamic Media，您必須在終端視窗中輸入以下內容，從命令列使用`dynamicmedia_scene7`執行模式啟動Experience Manager（使用的範例埠為4502）:
 
