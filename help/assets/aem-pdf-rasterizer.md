@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 開發人員工具，轉譯
 role: Developer,Administrator
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Adobe建議針對下列項目使用PDF模擬轉譯器程式庫：
 
 使用PDF模擬轉譯器產生的縮圖和預覽比現成可用的輸出品質更好，因此可提供跨裝置一致的檢視體驗。 Adobe PDF模擬轉譯器程式庫不支援任何色域轉換。 無論來源檔案的色域為何，都會輸出至RGB。
 
-1. 從[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)在[!DNL Adobe Experience Manager]部署上安裝PDF模擬轉譯器套件。
+1. 從[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip)在[!DNL Adobe Experience Manager]部署上安裝PDF模擬轉譯器套件。
 
    >[!NOTE]
    >
