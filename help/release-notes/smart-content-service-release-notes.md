@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '528'
 ht-degree: 5%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 5%
 
 這些網站僅供客戶使用。 如果您是Adobe，需要存取權，請聯絡您的客戶經理。
 
-* [產品存取](https://login.marketing.adobe.com)
+* [產品存取](https://login.experiencecloud.adobe.com/exc-content/login.html)
 * [請前往licensing.adobe.com下載產品](https://licensing.adobe.com/)。
 * [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)上其他功能的產品更新、修補程式和套件。
 * [透過Admin Console提供客戶支援](https://adminconsole.adobe.com/)。如需詳細資訊，請參閱[新Adobe客戶支援體驗](https://docs.adobe.com/content/help/en/customer-one/using/home.html)。
