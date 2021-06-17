@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
@@ -279,7 +279,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 基礎的[`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)庫及其[`ModelRouter`](/help/sites-developing/spa-routing.md)模組（預設為啟用）負責預取並提供對與給定資源路徑關聯的模型的訪問。
 
-這兩個實體與路由概念相關，但[`ModelRouter`](/help/sites-developing/spa-routing.md)僅負責使[&#39;PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)載入與當前應用程式狀態同步的資料模型。
+這兩個實體與路由概念相關，但[`ModelRouter`](/help/sites-developing/spa-routing.md)只負責使[`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)載入與當前應用程式狀態同步的資料模型。
 
 如需詳細資訊，請參閱[SPA模型路由](/help/sites-developing/spa-routing.md)一文。
 
