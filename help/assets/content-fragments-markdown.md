@@ -12,9 +12,9 @@ discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
 feature: 內容片段
 role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '556'
 ht-degree: 4%
 
 ---
@@ -177,7 +177,7 @@ ht-degree: 4%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-若要指出程式碼的跨度，請以反勾號(&#39;)括住。 與預格式化的代碼塊不同，代碼範圍指示正常段落中的代碼。
+若要指出程式碼的範圍，請以反勾號括住(&amp;grave;)。 與預格式化的代碼塊不同，代碼範圍指示正常段落中的代碼。
 
 例如：
 
