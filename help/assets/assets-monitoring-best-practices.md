@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 資產管理
 role: Administrator,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
 workflow-type: tm+mt
-source-wordcount: '1767'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
@@ -139,7 +139,7 @@ AEM也會透過JMX公開一組統計資料和操作。 這些功能有助於評�
 
 * 系統檢查
 
-   * MBean:`org.apache.sling.healthcheck:name=systemchecks,type=HealthChec`k 
+   * MBean:`org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck*
    * 例項：一個作者，所有發佈伺服器
    * 警報閾值：狀態不確定時
@@ -147,7 +147,7 @@ AEM也會透過JMX公開一組統計資料和操作。 這些功能有助於評�
 
 * 復寫佇列
 
-   * MBean:`org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck `
+   * MBean:`org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck*
    * 例項：一個作者，所有發佈伺服器
    * 警報閾值：狀態不確定時
@@ -155,7 +155,7 @@ AEM也會透過JMX公開一組統計資料和操作。 這些功能有助於評�
 
 * 回應效能
 
-   * MBean:`org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck `
+   * MBean:`org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck*
    * 例項：所有伺服器
    * 警報持續時間：狀態不確定時
@@ -163,7 +163,7 @@ AEM也會透過JMX公開一組統計資料和操作。 這些功能有助於評�
 
 * 查詢效能
 
-   * MBean:`org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck `
+   * MBean:`org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck*
    * 例項：一個作者，所有發佈伺服器
    * 警報閾值：狀態不確定時
@@ -171,7 +171,7 @@ AEM也會透過JMX公開一組統計資料和操作。 這些功能有助於評�
 
 * 作用中組合
 
-   * MBean:org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck 
+   * MBean:org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck*
    * 例項：所有伺服器
    * 警報閾值：狀態不確定時
@@ -179,7 +179,7 @@ AEM也會透過JMX公開一組統計資料和操作。 這些功能有助於評�
 
 * 日誌錯誤
 
-   * MBean:`org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck `
+   * MBean:`org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * URL:*/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck*
    * 例項：所有伺服器
    * 警報閾值：狀態不確定時
