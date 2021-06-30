@@ -6,20 +6,20 @@ mini-toc-levels: 1
 feature: 資產管理，搜索，轉譯，協作
 role: Business Practitioner
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 04f14a57fcdc5890fe78118536cc52988a2124c3
 workflow-type: tm+mt
-source-wordcount: '10083'
+source-wordcount: '10131'
 ht-degree: 2%
 
 ---
 
-# 管理您的數位資產{#managing-assets-with-the-touch-optimized-ui}
+# 管理您的數位資產 {#managing-assets-with-the-touch-optimized-ui}
 
 了解各種資產管理和編輯工作，您可以使用AEM Assets的觸控最佳化使用者介面來執行這些工作。
 
 本文說明如何使用Adobe Experience Manager(AEM)Assets觸控最佳化使用者介面來管理和編輯資產。 如需使用者介面的基本知識，請參閱[觸控式UI的基本處理](/help/sites-authoring/basic-handling.md)。 若要管理內容片段，請參閱[管理內容片段](content-fragments-managing.md)資產。
 
-## 建立資料夾{#create-folders}
+## 建立資料夾 {#create-folders}
 
 組織資產集合時（例如所有`Nature`影像），您可以建立資料夾以將其保持在一起。 您可以使用資料夾來分類及組織資產。 AEM Assets不會要求您組織資料夾中的資產，以提高運作效率。
 
@@ -39,7 +39,7 @@ ht-degree: 2%
 * 資產檔案名稱不得包含`* / : [ \ \ ] | # % { } ? &`
 * 資產資料夾名稱不得包含`* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
 
-## 上傳資產{#uploading-assets}
+## 上傳資產 {#uploading-assets}
 
 您可以從本機資料夾或網路磁碟將各種類型的資產（包括影像、PDF檔案、RAW檔案等）上傳至AEM Assets。
 
@@ -127,7 +127,7 @@ ht-degree: 2%
 
    如果您在檔案上傳前取消上傳操作，AEM Assets會停止上傳目前的檔案並重新整理內容。 不過，不會刪除已上傳的檔案。
 
-### 串列上載{#serial-uploads}
+### 串列上傳 {#serial-uploads}
 
 大量上傳大量資產會耗用大量系統資源，這對AEM部署的效能造成負面影響。 潛在的瓶頸可能是您的網際網路連線、磁碟的讀寫操作、網頁瀏覽器對同時上傳資產時的POST請求數量的限制。 大量上傳操作可能會過早失敗或終止。 換言之，AEM資產在擷取一堆檔案時，可能會遺漏某些檔案，或完全無法擷取任何檔案。
 
@@ -135,7 +135,7 @@ ht-degree: 2%
 
 資產的串列上傳預設為啟用。 若要停用功能並允許同時上傳，請覆蓋CRXDe中的`fileupload`節點，並將`parallelUploads`屬性的值設為`true`。
 
-### 使用FTP {#uploading-assets-using-ftp}上傳資產
+### 使用FTP上傳資產 {#uploading-assets-using-ftp}
 
 Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型資產(>1 GB)或上傳整個資料夾和子資料夾，應使用FTP。 您甚至可以設定FTP上傳，以定期執行。
 
@@ -171,7 +171,7 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 
    若要取消正在進行的上傳作業，請點選&#x200B;**[!UICONTROL Duration]**&#x200B;時間旁的&#x200B;**[!UICONTROL Cancel]**。
 
-#### 上載作業選項{#upload-job-options}
+#### 上傳作業選項 {#upload-job-options}
 
 | 上傳選項 | 子選項 | 說明 |
 |---|---|---|
@@ -192,7 +192,7 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 |  | 視訊選項 | 您可以選擇「視訊預設集」來轉換視訊檔案的程式碼。<br> 請參 [閱設定eVideo上傳選項](#setting-evideo-upload-options)。 |
 |  | 批次集預設集 | 若要從上傳的檔案建立影像集或回轉集，請按一下您要使用之預設集的「作用中」欄。 您可以選取多個預設集。 您可以在Dynamic Media Classic的「應用程式設定/批次集預設集」頁面中建立預設集。<br> 請參 [閱設定批次集預設集以自動產生影像集和回轉](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 集，深入了解如何建立批次集預設集。<br> 請參閱 [在上傳時設定批次集預設集](#setting-batch-set-presets-at-upload)。 |
 
-#### 在上傳{#setting-image-editing-options-at-upload}時設定影像編輯選項
+#### 在上傳時設定影像編輯選項 {#setting-image-editing-options-at-upload}
 
 上載影像檔案（包括AI、EPS和PSD檔案）時，可以在&#x200B;**[!UICONTROL 上載作業選項]**&#x200B;對話框中執行以下編輯操作：
 
@@ -216,7 +216,7 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 |  | 填充方法 | 必要.<br> 從您設定的角位置控制像素透明度。<br> 您可以從下列填充方法中選擇： <ul><li>**Flood Fill**  — 將所有像素變為透明，與您指定並連接到的「角」相符。</li><li>**比對像素**  — 不論像素在影像上的位置為何，所有比對像素都會變成透明。</li></ul> |
 |  | 容許度 | 選填。<br> 根據您設定的「角」位置控制像素顏色匹配中允許的變化量。<br> 使用0.0值來完全匹配像素顏色，或使用1.0值來允許最大的變化。 |
 
-#### 設定PostScript和Illustrator上傳選項{#setting-postscript-and-illustrator-upload-options}
+#### 設定PostScript和Illustrator上傳選項 {#setting-postscript-and-illustrator-upload-options}
 
 上傳PostScript(EPS)或Illustrator(AI)影像檔案時，可以以多種方式格式化它們。 您可以柵格化檔案、維護透明背景、選擇解析度和選擇顏色空間。 在「PostScript選項」和「Illustrator選項」下的「上載作業選項」對話框中，可以找到格式化PostScript和Illustrator檔案的選項。
 
@@ -231,7 +231,7 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 |  | 強制為CMYK | 轉換為CMYK顏色空間。 |
 |  | 強制為灰度 | 轉換為灰度顏色空間。 |
 
-#### 設定Photoshop上傳選項{#setting-photoshop-upload-options}
+#### 設定Photoshop上傳選項 {#setting-photoshop-upload-options}
 
 PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時，可以從檔案自動建立影像模板（在「上載」螢幕上選擇「建立模板」選項）。
 
@@ -255,7 +255,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 |  | Photoshop和圖層名稱 | 在PSD檔案後面命名影像，後面跟圖層名稱或圖層編號。 如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱，則使用圖層號。 例如，在名為SpringAd的PSD檔案中，名為Price Tag的層名為Spring Ad_Price Tag。 預設名為Layer 2的層稱為Spring Ad_2。 |
 | 錨點 |  | 指定如何將影像錨定到從PSD檔案生成的分層合成生成的模板中。 預設情況下，錨點為中心。 中心錨點允許替換影像最好地填充相同的空間，而不管替換影像的長寬比如何。 當參考範本並使用參數替代時，具有替代此影像的不同方面的影像會有效佔據相同的空間。 如果您的應用程式需要替換影像以填充模板中已分配的空間，請更改為其他設定。 |
 
-#### 設定PDF上載選項{#setting-pdf-upload-options}
+#### 設定PDF上傳選項 {#setting-pdf-upload-options}
 
 上傳PDF檔案時，可以以多種方式格式化它。 您可以裁切其頁面、擷取搜尋字詞、輸入每英吋像素的解析度，然後選擇顏色空間。 PDF檔案通常包含修剪邊界、裁切標籤、註冊標籤和其他打印機標籤。 上傳PDF檔案時，您可以從頁面兩側裁切這些標籤。
 
@@ -278,7 +278,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 |  | 強制為CMYK | 轉換為CMYK顏色空間。 |
 |  | 強制為灰度 | 轉換為灰度顏色空間。 |
 
-#### 設定eVideo上傳選項{#setting-evideo-upload-options}
+#### 設定eVideo上傳選項 {#setting-evideo-upload-options}
 
 您可以從各種視訊預設集中選擇，以轉碼視訊檔案。
 
@@ -290,19 +290,19 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 |  | 行動 | 建立MP4檔案，以便在iPhone或Android行動裝置上傳送。選取一或多個外觀比例，其解析度大小和目標資料速率為您所需的。 |
 |  | 平板電腦 | 建立MP4檔案，以便在iPad或Android平板電腦裝置上傳送。選取一或多個外觀比例，其解析度大小和目標資料速率為您所需的。 |
 
-#### 在上載時設定批集預設集{#setting-batch-set-presets-at-upload}
+#### 在上傳時設定批次集預設集 {#setting-batch-set-presets-at-upload}
 
 如果您想從上傳的影像自動建立影像集或回轉集，請針對您要使用的預設集按一下&#x200B;**[!UICONTROL Active]**&#x200B;欄。 您可以選取多個預設集。
 
 請參閱[配置批集預設集以自動生成影像集和回轉集](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)以了解有關建立批集預設集的詳細資訊。
 
-### 流式上載{#streamed-uploads}
+### 串流上傳 {#streamed-uploads}
 
 如果您上傳許多資產，對AEM伺服器的I/O呼叫會大幅增加，進而降低上傳效率，甚至可能導致逾時。 AEM Assets支援資產的串流上傳。 串流上傳可避免將資產儲存在伺服器上的臨時資料夾中，然後再複製到存放庫，以減少上傳作業期間的磁碟I/O。 資料會直接傳輸至存放庫。 如此一來，上傳大型資產的時間和逾時的可能性就會降低。 AEM Assets預設會啟用串流上傳。
 
 若AEM在Servlet-api版本低於3.1的JEE伺服器上執行，則會停用串流上傳。
 
-### 解壓縮包含資產{#extract-zip-archive-containing-assets}的ZIP封存
+### 解壓縮包含資產的ZIP封存 {#extract-zip-archive-containing-assets}
 
 您可以像上傳任何其他支援的資產一樣上傳ZIP封存檔。 相同的檔案名規則適用於ZIP檔案。 AEM可讓您將ZIP封存解壓縮至DAM位置。
 
@@ -320,7 +320,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
 * 您無法同時選取兩個ZIP檔案並解壓縮。 一次只能解壓縮一個ZIP封存。
 
-## 預覽資產{#previewing-assets}
+## 預覽資產 {#previewing-assets}
 
 **若要預覽資產**:
 
@@ -389,7 +389,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 1. 點選&#x200B;**[!UICONTROL 儲存並關閉]**。
 1. 導覽至「資產」UI。 編輯的中繼資料屬性（包括標題、說明、評等等）會顯示在卡片檢視中的資產卡片上，以及清單檢視中的相關欄下。
 
-## 複製資產{#copying-assets}
+## 複製資產 {#copying-assets}
 
 複製資產或資料夾時，會複製整個資產或資料夾，及其內容結構。 複製的資產或資料夾會在目標位置複製。 來源位置的資產未變更。
 
@@ -425,7 +425,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
    >
    >在貼上操作完成之前，工具欄中會提供&#x200B;**[!UICONTROL 貼上]**&#x200B;圖示。
 
-## 移動並重新命名資產{#moving-or-renaming-assets}
+## 移動和重新命名資產 {#moving-or-renaming-assets}
 
 當您將資產（或資料夾）移至其他位置時，資產（或資料夾）不會重複，這與複製資產時不同。 資產（或資料夾）會放置在目標位置，並從來源位置移除。 您也可以在將資產移至新位置時重新命名資產。 如果您將已發佈的資產移至其他位置，則可選擇重新發佈資產。 依預設，已發佈資產的移動操作會自動取消發佈。 如果作者在移動資產時選取[!UICONTROL Republish]選項，則已移動的資產會重新發佈。
 
@@ -474,7 +474,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
    如果您未更新參考，它們會繼續指向資產的先前路徑。 如果調整參照，參照會更新為新資產路徑。
 
-### 使用拖曳操作{#move-using-drag}移動資產
+### 使用拖曳作業移動資產 {#move-using-drag}
 
 您可以將資產（或資料夾）拖曳至目標位置，將資產（或資料夾）移至同層級資料夾，而非在使用者介面中使用[!UICONTROL Move]選項。 不過，只有在清單檢視中才能執行此操作。
 
@@ -482,7 +482,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
 ![將資產拖曳至同層級資料夾中](assets/move-by-drag.gif)
 
-## 管理轉譯{#managing-renditions}
+## 管理轉譯 {#managing-renditions}
 
 1. 您可以新增或移除資產的轉譯，但原始資產除外。 導覽至您要新增或移除轉譯的資產位置。
 
@@ -536,7 +536,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
 如需子資產的相關資訊，請參閱[管理子資產](managing-linked-subassets.md)。
 
-## 刪除資產{#deleting-assets}
+## 刪除資產 {#deleting-assets}
 
 若要解析或移除其他頁面中傳入的參照，請先更新相關的參照，再刪除資產。
 
@@ -570,7 +570,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
 請參閱[從AEM](download-assets-from-aem.md)下載資產
 
-## 發佈和取消發佈資產{#publish-assets}
+## 發佈和取消發佈資產 {#publish-assets}
 
 在[!DNL Experience Manager]作者上傳、處理或編輯資產後，您會將資產發佈至發佈伺服器。 發佈可讓資產公開使用。 取消發佈動作會將資產從發佈伺服器中移除，但不會從編寫伺服器移除。
 
@@ -598,7 +598,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 * 未發佈空資料夾。
 * 如果您發佈正在處理的資產，則只會發佈原始內容。 遺失轉譯。 等待處理完成，然後處理完成後發佈或重新發佈資產。
 
-## 建立封閉用戶組{#closed-user-group}
+## 建立封閉的使用者群組 {#closed-user-group}
 
 CUG（封閉使用者群組）可用來限制存取從AEM發佈的特定資產資料夾。 如果為資料夾建立CUG，則對資料夾（包括資料夾資產和子資料夾）的訪問權限僅限於分配的成員或組。 若要存取資料夾，使用者必須使用其安全憑證登入。
 
@@ -630,14 +630,14 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 這是因為AEM Assets會等到逾時期間到期（預設為1小時），才執行背景工作，為所有新上傳/更新的資產建立中繼資料索引，並將其新增至建議清單。
 
-## 使用快速操作{#quick-actions}
+## 使用快速動作 {#quick-actions}
 
 一次只有一個資產的快速動作圖示可用。視您的裝置而定，執行下列動作以顯示快速動作圖示：
 
 * 觸摸設備：觸摸並按住。 例如，在iPad上，您可以點選並按住資產，以顯示快速動作。
 * 非接觸裝置：暫留指針。 例如，在案頭裝置上，如果將指標暫留在資產縮圖上，則會顯示快速動作列。
 
-### 導覽至並選取資產{#navigating-and-selecting-assets}
+### 導覽至並選取資產 {#navigating-and-selecting-assets}
 
 您可以使用&#x200B;**[!UICONTROL Select]**&#x200B;圖示，檢視、導覽及選取具有任何可用檢視（卡片、欄、清單）的資產。 **** 選取項目會以快速動作的形式顯示在卡片檢視中。
 
@@ -653,7 +653,7 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 如需詳細資訊，請參閱[檢視和選取資源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)。
 
-## 編輯影像{#editing-images}
+## 編輯影像 {#editing-images}
 
 AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工作。 您可以裁切、旋轉、翻轉和對影像執行其他編輯工作。 您也可以將影像地圖新增至資產。
 
@@ -779,7 +779,15 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-### 查看保存的注釋{#viewing-saved-annotations}
+### 查看保存的注釋 {#viewing-saved-annotations}
+
+一次只能查看一個批注。
+
+>[!NOTE]
+>
+>如果選擇多個注釋，則最新的注釋將顯示在用戶介面上。
+>
+>只有以PDF列印註解的資產時，才支援多選。
 
 1. 若要檢視資產的已儲存註解，請導覽至資產位置，並開啟資產的資產頁面。
 
@@ -797,11 +805,15 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 1. 點選&#x200B;**[!UICONTROL Delete]**&#x200B;以移除特定註解。
 
-### 打印注釋{#printing-annotations}
+### 打印注釋 {#printing-annotations}
 
 如果資產有註解或已經受審核工作流程，您可以將資產連同註解和審核狀態列為PDF檔案，以便離線審核。
 
 您也可以選擇僅打印注釋或查看狀態。
+
+>[!NOTE]
+>
+>在以PDF列印註解的資產時，您可以選取多個註解。
 
 長注釋可能無法在PDF檔案中正確顯示。 為獲得最佳的轉譯效果，Adobe建議您將註解限制為50個字。
 
@@ -876,7 +888,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 1. 將font-family參數設定為`Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`以配置注釋PDF檔案。 此配置預設可用，適用於所有歐洲和中日韓語言。
 1. 如果您選擇的語言與步驟2中提到的語言不同，請在預設字型系列中附加適當（以逗號分隔）的項。
 
-## 建立資產版本設定{#asset-versioning}
+## 建立資產版本設定 {#asset-versioning}
 
 版本設定會建立數位資產在特定時間點的快照。版本設定有助於在稍後將資產還原為先前狀態。 例如，如果您想要還原對資產所做的變更，請還原未編輯的資產版本。
 
@@ -938,7 +950,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    ![compare_versions](assets/compare_versions.png)
 
-### 在資產{#starting-a-workflow-on-an-asset}上啟動工作流程
+### 啟動資產的工作流程 {#starting-a-workflow-on-an-asset}
 
 請參閱[將工作流程套用至AEM資產](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
 
