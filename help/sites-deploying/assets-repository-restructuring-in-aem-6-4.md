@@ -10,34 +10,34 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: 升級
 exl-id: 3d5bbf95-bd1e-453b-b487-517a56fe727f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1139'
 ht-degree: 2%
 
 ---
 
-# AEM 6.4{#assets-repository-restructuring-in-aem}中的資產存放庫重組
+# AEM 6.4中的資產存放庫重新調整架構{#assets-repository-restructuring-in-aem}
 
 如上層[AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的存放庫重組頁面所述，升級至AEM 6.4的客戶應使用此頁面評估與影響AEM Assets解決方案的存放庫變更相關的工作量。 AEM 6.4升級程式中有些變更需要付出大量工作，有些則可延後至6.5升級。
 
 **使用6.4升級**
 
-* [雜項](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc)
+* [雜項](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
 **6.5之前的升級**
 
-* [資產/收集事件電子郵件通知範本](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#asset-collection-event-e-mail-notification-template)
-* [傳統資產共用設計](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#classic-asset-share-designs)
-* [下載資產電子郵件通知範本](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#download-asset-e-mail-notification-template)
-* [範例DRM授權](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
+* [資產/收集事件電子郵件通知範本](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [傳統資產共用設計](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [下載資產電子郵件通知範本](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [範例DRM授權](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-* [連結共用電子郵件通知模板](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [InDesign工作流程指令碼](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
-* [視訊轉碼設定](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
-* [雜項](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
+* [連結共用電子郵件通知模板](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [InDesign工作流程指令碼](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [視訊轉碼設定](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [雜項](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 
-## 使用6.4升級{#with-upgrade}
+## 使用6.4升級 {#with-upgrade}
 
 ### 雜項 {#misc}
 
@@ -62,9 +62,9 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 在6.5之前升級{#prior-to-upgrade}
+## 6.5之前的升級 {#prior-to-upgrade}
 
-### 資產/收集事件電子郵件通知範本{#asset-collection-event-e-mail-notification-template}
+### 資產/收集事件電子郵件通知範本 {#asset-collection-event-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -97,7 +97,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 傳統資產共用設計{#classic-asset-share-designs}
+### 傳統資產共用設計 {#classic-asset-share-designs}
 
 <table> 
  <tbody> 
@@ -127,7 +127,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 下載資產電子郵件通知範本{#download-asset-e-mail-notification-template}
+### 下載資產電子郵件通知範本 {#download-asset-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -160,7 +160,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### DRM許可證示例{#example-drm-licenses}
+### 範例DRM授權 {#example-drm-licenses}
 
 | **上一位置** | `/etc/dam/drm/licenses/` |
 |---|---|
@@ -168,7 +168,7 @@ ht-degree: 2%
 | **重組指導** | 不適用 |
 | **附註** | 不適用 |
 
-### 連結共用電子郵件通知模板{#link-share-e-mail-notification-template}
+### 連結共用電子郵件通知模板 {#link-share-e-mail-notification-template}
 
 <table> 
  <tbody> 
@@ -201,7 +201,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### InDesign工作流指令碼{#indesign-workflow-scripts}
+### InDesign工作流程指令碼 {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -235,7 +235,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 視頻轉碼配置{#video-transcoding-configurations}
+### 視訊轉碼設定 {#video-transcoding-configurations}
 
 <table> 
  <tbody> 
@@ -262,7 +262,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-### 檢視器預設集設定{#viewer-preset-configurations}
+### 檢視器預設集組態 {#viewer-preset-configurations}
 
 <table> 
  <tbody> 
