@@ -11,14 +11,14 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: 升級
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
-# AEM 6.4{#repository-restructuring-in-aem}中的存放庫重新調整
+# AEM 6.4中的存放庫重新調整架構{#repository-restructuring-in-aem}
 
 ## 簡介 {#introduction}
 
@@ -31,20 +31,20 @@ ht-degree: 0%
 * AEM產品程式碼一律會放置在/libs中，且不得由自訂程式碼覆寫
 * 自訂程式碼應放置在/apps、/content和/conf中
 
-## 對6.4升級的影響{#impact-on-upgrades}
+## 對6.4升級的影響 {#impact-on-upgrades}
 
 升級至AEM 6.4時，/etc底下的大部分內容會複製到存放庫中的其他資料夾中。 這些新位置是參考內容的偏好位置。 不過，我們已嘗試讓AEM 6.4升級回溯相容/etc資料夾中的先前位置，因此在大多數情況下，AEM程式碼會繼續參考舊位置，直到在客戶應用程式中主動（且在許多情況下手動）進行變更為止。 從時間軸的觀點來看，有兩類變更：
 
 * 透過6.4升級 — 少數的/etc重組變更無法回溯相容，因此在AEM 6.4升級中，應規劃並實作修改。
 * 在6.5升級之前 — 在將來的升級後的某個時間，絕大多數的/etc重組更改都可以延遲。 如先前所述，AEM 6.4程式碼將繼續參考舊位置，直到修改在客戶版本中實作為止。 雖然沒有應進行變更的強制時間表，但建議在6.5升級前進行，因為未來功能可能需仰賴參考的新位置。 此外，根據慣例，特定功能的檔案會參考新位置，因此，如果仍使用舊位置，則可能會造成混淆。
 
-### 重組指南{#restructuring-guidance}
+### 重組指導 {#restructuring-guidance}
 
 規劃升級至AEM 6.4時，應參考下列各解決方案頁面，以評估工作成果：
 
 * [所有AEM解決方案共同的存放庫重組](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [AEM Sites存放庫重組](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets存放庫重組](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md)
+* [AEM Assets存放庫重組](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
 * [AEM Assets Dynamic Media存放庫重組](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [AEM Forms存放庫重組](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [AEM Communities存放庫重組](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)
