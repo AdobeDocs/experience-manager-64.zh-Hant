@@ -3,16 +3,16 @@ title: 支援IPTC元資料
 description: 了解Adobe Experience Manager(AEM)Assets如何透過Adobe Bridge和其他Creative應用程式支援新增至資產的IPTC中繼資料、創作評等和關鍵字。
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator,Leader
+role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 7%
 
 ---
 
-# 支援IPTC元資料{#support-for-iptc-metadata}
+# 支援IPTC元資料 {#support-for-iptc-metadata}
 
 了解Adobe Experience Manager(AEM)Assets如何透過Adobe Bridge和其他Creative應用程式支援新增至資產的IPTC中繼資料、創作評等和關鍵字。
 
@@ -33,7 +33,7 @@ Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣�
 1. 視需要編輯ITPC擴充功能中繼資料屬性。
 1. 點選/按一下&#x200B;**[!UICONTROL 儲存並關閉]**&#x200B;以儲存變更。
 
-## 創意評分支援{#creative-rating-support}
+## 創意評分支援 {#creative-rating-support}
 
 除了顯示個別使用者評等和匯總評等外，「屬性」頁面現在還會顯示透過Adobe Bridge和其他創意應用程式指派給資產的評等
 
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣�
 
 不過，此屬性目前未編列索引，以避免與使用者所做的自訂變更產生任何衝突。
 
-## 關鍵字支援{#keyword-support}
+## 關鍵字支援 {#keyword-support}
 
 「屬性」頁面的&#x200B;**[!UICONTROL IPTC]**&#x200B;標籤也會顯示透過Adobe Bridge和其他創意應用程式新增至資產的關鍵字。 您也可以編輯這些關鍵字，並從&#x200B;**[!UICONTROL IPTC]**&#x200B;標籤新增更多關鍵字。
 
