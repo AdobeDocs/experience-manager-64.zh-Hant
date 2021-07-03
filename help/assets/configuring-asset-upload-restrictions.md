@@ -3,16 +3,16 @@ title: 設定資產上傳限制
 description: 了解如何設定Adobe Experience Manager(AEM)資產，以限制使用者可上傳的資產（檔案）類型。
 contentOwner: AG
 feature: 上傳，資產擷取，資產管理
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: 0d817cfa-ae06-442a-ad89-5fe619bb2eff
-source-git-commit: 440194476a89092451f9fae80b5c63f055fca54e
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 29%
 
 ---
 
-# 設定資產上傳限制{#configuring-asset-upload-restrictions}
+# 設定資產上傳限制 {#configuring-asset-upload-restrictions}
 
 您可以設定Adobe Experience Manager(AEM)資產，以限制使用者可上傳的資產（檔案）類型。 此功能可協助您避免使用者以不適當的格式上傳資產或上傳任何惡意檔案的可能性。 `Day CQ DAM Asset Upload Restriction`服務可讓您控制使用者可上傳的檔案類型。 依預設，AEM Assets可讓使用者上傳所有MIME類型的資產。 不過，您可以設定服務，限制使用者僅上傳特定MIME類型的檔案。
 
