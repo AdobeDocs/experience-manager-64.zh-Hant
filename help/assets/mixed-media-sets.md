@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
 feature: 混合媒體集
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 17%
@@ -27,7 +27,7 @@ ht-degree: 17%
 >
 >如需Assets使用者介面的詳細資訊，請參閱使用觸控式UI](managing-assets-touch-ui.md)管理資產。[
 
-## 快速入門：混合媒體集{#quick-start-mixed-media-sets}
+## 快速入門：混合媒體集 {#quick-start-mixed-media-sets}
 
 若要使用混合媒體集快速上手並執行，請執行下列步驟：
 
@@ -71,13 +71,13 @@ ht-degree: 17%
 >
 >如果建立集時遇到問題，請參閱[疑難排解Dynamic Media - Scene7模式](troubleshoot-dms7.md)。
 
-## 上傳資產{#uploading-assets}
+## 上傳資產 {#uploading-assets}
 
 首先，上傳混合媒體集的影像和視訊。由於使用者可以在混合媒體集檢視器中放大影像，因此當您選擇影像時，請務必考量放大比例。 請確定影像在最大尺寸中至少為2000像素。
 
 此外，如果您想要將回轉集或影像集新增至混合媒體集，也請建立這些回轉集或影像集。
 
-## 建立混合媒體集{#creating-mixed-media-sets}
+## 建立混合媒體集 {#creating-mixed-media-sets}
 
 您可以將影像、影像集、回轉集和視訊新增至混合媒體集。 在將檔案、影像集和回轉集新增至混合媒體集之前，請確定您的檔案、影像集和回轉集已準備好發佈。
 
@@ -119,7 +119,7 @@ ht-degree: 17%
 1. 若要套用預設集，請點選右上角的&#x200B;**[!UICONTROL 預設]**，並選取要套用至資產的預設集。
 1. 按一下「**[!UICONTROL 儲存]**」。新建立的混合媒體集會顯示在您建立它的資料夾中。
 
-## 編輯混合媒體集{#editing-mixed-media-sets}
+## 編輯混合媒體集 {#editing-mixed-media-sets}
 
 您可以直接在使用者介面[中，對混合媒體集中的資產執行各種編輯工作，如同對資產](managing-assets-touch-ui.md)中的任何資產執行一樣。 您也可以在混合媒體集中執行下列動作：
 
@@ -158,11 +158,11 @@ ht-degree: 17%
    >* 若要刪除整個混合媒體集 — 從任何檢視模式（例如&#x200B;**[!UICONTROL Card]**&#x200B;檢視或&#x200B;**[!UICONTROL Column]**&#x200B;檢視），導覽至混合媒體集。 暫留在集上，然後點選&#x200B;**[!UICONTROL 選取]**（勾選圖示）。 在鍵盤上按&#x200B;**[!UICONTROL Backspace]**，或點選&#x200B;**[!UICONTROL More]**（三個點的列），然後點選&#x200B;**[!UICONTROL Delete]**。
 
 
-## 預覽混合媒體集{#previewing-mixed-media-sets}
+## 預覽混合媒體集 {#previewing-mixed-media-sets}
 
 如需如何預覽混合媒體集的詳細資訊，請參閱[預覽資產](previewing-assets.md)。
 
-## 發佈混合媒體集{#publishing-mixed-media-sets}
+## 發佈混合媒體集 {#publishing-mixed-media-sets}
 
 如需如何發佈混合媒體集的詳細資訊，請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
