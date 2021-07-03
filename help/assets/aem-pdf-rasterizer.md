@@ -3,16 +3,16 @@ title: 使用PDF模擬轉譯器產生轉譯
 description: 使用Adobe PDF模擬轉譯器資料庫產生高品質的縮圖和轉譯。
 contentOwner: AG
 feature: 開發人員工具，轉譯
-role: Developer,Administrator
+role: Developer,Admin
 exl-id: 7d78fba9-16df-44e0-aae6-83f65e8d2bbd
-source-git-commit: 9fb023c504d8696517e7fdad61241c3d49166daa
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '724'
 ht-degree: 0%
 
 ---
 
-# 使用PDF模擬轉譯器{#using-pdf-rasterizer}
+# 使用PDF模擬轉譯器 {#using-pdf-rasterizer}
 
 將內容密集型的大型PDF或AI檔案上傳至[!DNL Adobe Experience Manager Assets]時，預設程式庫可能無法產生準確的輸出。 Adobe的PDF模擬轉譯器程式庫可產生比預設程式庫的輸出更可靠且精確的輸出。 Adobe建議在下列情況下使用PDF模擬轉譯器程式庫：
 
