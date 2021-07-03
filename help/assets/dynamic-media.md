@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
 feature: 資產管理，轉譯
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 7%
@@ -29,7 +29,7 @@ ht-degree: 7%
 >
 >[使用Adobe Experience Manager和Dynamic Media](https://helpx.adobe.com/experience-manager/using/aem_dynamic_media.html)上有社群文章。
 
-## 可以使用Dynamic Media {#what-you-can-do-with-dynamic-media}做什麼
+## 你能用Dynamic Media做什麼 {#what-you-can-do-with-dynamic-media}
 
 Dynamic Media可讓您在發佈資產之前先管理資產。 [使用數位資產](managing-assets-touch-ui.md)中會詳細說明如何使用資產。 一般主題包括上傳、下載、編輯和發佈資產；檢視及編輯屬性，以及搜尋資產。
 
@@ -54,7 +54,7 @@ Dynamic Media可讓您在發佈資產之前先管理資產。 [使用數位資�
 >
 >若要了解使用Dynamic Media與整合Dynamic Media Classic與AEM之間的差異，請參閱[Dynamic Media Classic整合與Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)。
 
-## Dynamic Media已啟用與Dynamic Media已停用{#dynamic-media-on-versus-dynamic-media-off}
+## Dynamic Media啟用與Dynamic Media停用 {#dynamic-media-on-versus-dynamic-media-off}
 
 您可以借由下列特性來判斷Dynamic Media是否已啟用（開啟）:
 
@@ -64,25 +64,25 @@ Dynamic Media可讓您在發佈資產之前先管理資產。 [使用數位資�
 
 當您按一下影像資產時，Dynamic Media [enabled](config-dynamic.md#enabling-dynamic-media)的資產檢視會不同。 Dynamic Media使用隨選HTML5檢視器。
 
-### 動態轉譯{#dynamic-renditions}
+### 動態轉譯 {#dynamic-renditions}
 
 啟用Dynamic Media時，可使用動態轉譯，例如影像和檢視器預設集（位於&#x200B;**[!UICONTROL Dynamic]**&#x200B;下）。
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
-### 影像集、旋轉集、混合媒體集{#image-sets-spins-sets-mixed-media-sets}
+### 影像集，旋轉集，混合媒體集 {#image-sets-spins-sets-mixed-media-sets}
 
 如果已啟用Dynamic Media，則可使用影像集、回轉集和混合媒體集。
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
-### PTIFF轉譯{#ptiff-renditions}
+### PTIFF轉譯 {#ptiff-renditions}
 
 啟用動態媒體的資產包括`pyramid.tiffs`。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-### 資產檢視變更{#asset-views-change}
+### 資產檢視變更 {#asset-views-change}
 
 啟用Dynamic Media後，按一下`+`和`-`按鈕即可放大和縮小。 您也可以按一下/點選以放大至特定區域。 還原功能可將您帶到原始版本，您可以按一下對角線箭頭來使影像成為全螢幕。 啟用Dynamic Media的項目如下所示：
 
