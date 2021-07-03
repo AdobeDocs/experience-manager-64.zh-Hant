@@ -3,16 +3,16 @@ title: 準備翻譯資產
 description: 建立語言根資料夾，以準備轉譯多語言資產。
 contentOwner: AG
 feature: 項目，翻譯
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 2%
 
 ---
 
-# 準備翻譯資產{#preparing-assets-for-translation}
+# 準備翻譯資產 {#preparing-assets-for-translation}
 
 多語言資產是指具有多種語言的二進位檔、中繼資料和標籤的資產。 資產的二進位檔、中繼資料和標籤通常以一種語言存在，然後轉譯為其他語言，以用於多語言專案。
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 1. 將資產新增至您的語言主要版本。
 1. 建立您需要語言副本的每種目標語言的語言根。
 
-## 建立語言根{#creating-a-language-root}
+## 建立語言根 {#creating-a-language-root}
 
 要建立語言根，請建立資料夾並使用ISO語言代碼作為Name屬性的值。 建立語言根後，您就可以在語言根的任何層級建立語言副本。
 
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 1. 按一下或點選&#x200B;**[!UICONTROL 建立]**。 語言根目錄會在Assets主控台中建立。
 
-## 查看語言根{#viewing-language-roots}
+## 查看語言根 {#viewing-language-roots}
 
 觸控最佳化UI提供「參考」面板，顯示已在AEM Assets中建立的語言根清單。
 
