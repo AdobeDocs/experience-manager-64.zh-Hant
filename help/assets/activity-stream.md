@@ -3,16 +3,16 @@ title: 時間軸中的活動資料流
 description: '本文說明如何在時間軸上顯示資產的活動記錄。 '
 contentOwner: AG
 feature: 資產管理
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 33%
 
 ---
 
-# 時間軸{#activity-stream-in-timeline}中的活動資料流
+# 時間軸中的活動資料流 {#activity-stream-in-timeline}
 
 此功能會顯示時間軸上資產的活動記錄。 如果您在Adobe Experience Manager(AEM)資產中執行下列任一資產相關操作，活動資料流功能會更新時間軸以反映活動。
 
