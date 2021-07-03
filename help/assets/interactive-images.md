@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 exl-id: 4d3299e2-269b-4a41-a979-c884c707666d
 feature: 互動影像
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '4261'
 ht-degree: 0%
@@ -31,11 +31,11 @@ ht-degree: 0%
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
-## 觀看互動式影像橫幅的建立方式{#watch-how-interactive-image-banners-are-created}
+## 觀看互動式影像橫幅的建立方式 {#watch-how-interactive-image-banners-are-created}
 
 觀看[如何建立互動式影像橫幅的10分鐘33秒逐步說明](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner)。 您也將學習如何預覽、編輯和傳送互動式影像橫幅。
 
-## 快速入門：互動式影像{#quick-start-interactive-images}
+## 快速入門：互動式影像 {#quick-start-interactive-images}
 
 下列逐步工作流程說明旨在協助您在AEM Assets中使用互動式影像快速上手並執行。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
    * 如果您使用獨立的AEM Assets和Dynamic Media，則必須複製網站上的內嵌程式碼，然後將其與現有的Quickview整合。 請參閱[整合互動式影像與您的網站](#integrating-an-interactive-image-with-your-website)。
    * 如果您使用第三方WCM（網頁內容管理員），則必須將新的互動式視訊與網站上使用的現有Quickview實作整合。 請參閱[將互動式影像與現有Quickview](#integrating-an-interactive-image-with-an-existing-quickview)整合。
 
-## （可選）識別熱點變數{#optional-identifying-hotspot-variables}
+## （可選）識別熱點變數 {#optional-identifying-hotspot-variables}
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ ht-degree: 0%
 
 您現在可以使用AEM Assets中的可購買互動式影像功能，上傳影像橫幅並新增熱點。
 
-## （可選）建立互動式影像檢視器預設集{#optional-creating-an-interactive-image-viewer-preset}
+## （可選）建立互動式影像檢視器預設集 {#optional-creating-an-interactive-image-viewer-preset}
 
 您可以選擇使用隨AEM Assets提供的預設現成互動式影像檢視器預設集，稱為&#x200B;**[!UICONTROL Shopbable_Banner]**。 或者，您可以建立自己的自訂檢視器預設集以搭配互動式影像使用。
 
@@ -214,7 +214,7 @@ ht-degree: 0%
 
    您現在可以上傳影像橫幅了。
 
-## 上傳影像橫幅{#uploading-an-image-banner}
+## 上傳影像橫幅 {#uploading-an-image-banner}
 
 如果已上傳要使用的影像，請前進到下一步[向影像橫幅添加熱點](#adding-hotspots-to-an-image-banner)。
 
@@ -226,7 +226,7 @@ ht-degree: 0%
 
    您現在可以將熱點添加到影像橫幅中；請參閱下面的下一個任務。
 
-## 將熱點添加到影像橫幅{#adding-hotspots-to-an-image-banner}
+## 向影像橫幅添加熱點 {#adding-hotspots-to-an-image-banner}
 
 您可以使用&#x200B;**[!UICONTROL 熱點管理]**&#x200B;頁面上的編輯器將熱點添加到影像橫幅。
 
@@ -315,7 +315,7 @@ d.（可選）要刪除熱點，請在影像上選擇熱點，然後點選**[!UI
    >
    >如果您正在使用熱點編輯互動式影像並裁切影像，則會刪除熱點。
 
-### （可選）預覽互動式影像{#optional-previewing-interactive-images}
+### （可選）預覽互動式影像 {#optional-previewing-interactive-images}
 
 您可以使用預覽來查看您的互動式影像在客戶看來會是什麼樣子的表示，並測試影像的熱點，以確保它們如預期般運作。
 
@@ -331,11 +331,11 @@ d.（可選）要刪除熱點，請在影像上選擇熱點，然後點選**[!UI
 1. 在「**[!UICONTROL 檢視器]**」清單中，點選「**[!UICONTROL Shopbable_Banner]**」或您建立的互動式影像檢視器預設集名稱。
 1. 點選影像上的熱點以測試其相關聯的動作。
 
-## 發佈互動式影像資產{#publishing-interactive-image-assets}
+## 發佈互動式影像資產 {#publishing-interactive-image-assets}
 
 如需如何發佈互動式影像資產的詳細資訊，請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
-## 將互動式影像與您的網站{#integrating-an-interactive-image-with-your-website}整合
+## 將互動式影像與您的網站整合 {#integrating-an-interactive-image-with-your-website}
 
 上傳橫幅影像、新增熱點至影像並發佈互動式影像後，您現在可以將其新增至網站頁面。
 
@@ -379,7 +379,7 @@ d.（可選）要刪除熱點，請在影像上選擇熱點，然後點選**[!UI
 
 您現在可以將互動式影像與網站上現有的Quickview整合。
 
-## 將互動式影像與現有的Quickview {#integrating-an-interactive-image-with-an-existing-quickview}整合
+## 將互動式影像與現有的Quickview整合 {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
 >
