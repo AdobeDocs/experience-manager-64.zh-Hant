@@ -3,16 +3,16 @@ title: 使用AEM管理資產的最佳作法
 description: 根據AEM Assets部署以及用於擷取和處理資產的功能，識別並遵循可增強負載下系統穩定性和效能的最佳實務。
 contentOwner: AG
 feature: 資產管理
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '653'
 ht-degree: 0%
 
 ---
 
-# AEM Assets最佳作法{#best-practices-for-assets}
+# AEM Assets最佳作法 {#best-practices-for-assets}
 
 Adobe Experience Manager(AEM)Assets是提供高品質數位行銷體驗的重要一環，透過提升內容速度，有助於達成業務目標。 如果您在AEM Assets內處理大量資產，或定期/定期上傳許多資產，包括影片和動態媒體，最佳化數位資產管理體驗對於提高系統效率至關重要。
 
