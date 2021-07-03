@@ -12,15 +12,15 @@ discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 exl-id: 53e53cb7-1854-44e9-9516-51bcc99378b4
 feature: 檢視器預設集
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '4236'
 ht-degree: 10%
 
 ---
 
-# 管理Dynamic Media檢視器預設集{#managing-viewer-presets}
+# 管理Dynamic Media檢視器預設集 {#managing-viewer-presets}
 
 Dynamic Media檢視器預設集是一組設定，可決定使用者在電腦畫面和行動裝置上檢視多媒體資產的方式。 如果您是管理員，可以建立檢視器預設集。 設定適用於檢視器組態選項的陣列。 例如，您可以變更檢視器的顯示大小或縮放行為。
 
@@ -37,13 +37,13 @@ Dynamic Media檢視器預設集是一組設定，可決定使用者在電腦畫�
 >
 >請注意，編輯任何預先定義的現成可用檢視器預設集&#x200B;*並不是支援的案例。*&#x200B;如果您嘗試編輯現成可用的檢視器預設集，系統會提示您使用新名稱儲存檢視器預設集。
 
-## 查看器的鍵盤輔助功能{#keyboard-accessibility-for-viewers}
+## 檢視器的鍵盤協助工具 {#keyboard-accessibility-for-viewers}
 
 所有現成可用的檢視器都支援鍵盤協助工具。
 
 另請參閱[鍵盤可訪問性和導航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
-## 管理Dynamic Media檢視器預設集{#managing-presets}
+## 管理Dynamic Media檢視器預設集 {#managing-presets}
 
 您可以點選&#x200B;**[!UICONTROL 「工具>資產>檢視器預設集」，在AEM中新增、編輯、刪除、發佈、取消發佈和預覽檢視器預設集]**。
 
@@ -53,7 +53,7 @@ Dynamic Media檢視器預設集是一組設定，可決定使用者在電腦畫�
 >
 >依預設，當您在資產的詳細資訊檢視中選取「檢視器」時，系統會顯示15個檢視器預設集。 您可以提高此限制。請參 [閱增加顯示的檢視器預設集數目](#increasing-the-number-of-viewer-presets-that-display)。
 
-## 回應式設計網頁{#viewer-support-for-responsive-designed-web-pages}的檢視器支援
+## 回應式設計網頁的檢視器支援 {#viewer-support-for-responsive-designed-web-pages}
 
 不同的網頁有不同的需求。 例如，有時您會想要的網頁提供連結，可在個別瀏覽器視窗中開啟HTML5檢視器。 在其他情況下，可能需要直接將HTML5檢視器內嵌在托管頁面上。 在後一種情況下，網頁可以具有靜態佈局。 或者，它可能&#x200B;*回應式*，且在不同裝置上或針對不同瀏覽器視窗大小顯示不同。 為符合這些需求，Dynamic Media隨附的所有預先定義且立即可用的HTML5檢視器，都支援靜態網頁和回應式設計網頁。
 
@@ -64,7 +64,7 @@ Dynamic Media檢視器預設集是一組設定，可決定使用者在電腦畫�
 >請注意，您必須先發佈所有現成可用的檢視器，才能首次使用。\
 >請參閱[發佈檢視器預設集。](#publishing-viewer-presets)
 
-## 查看器預設集系統相容性{#viewer-preset-system-compatibility}
+## 查看器預設集系統相容性  {#viewer-preset-system-compatibility}
 
 Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統完全相容：
 
@@ -75,7 +75,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 * Android平板電腦
 * 對於視頻，[Blackberry](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows Phone 8](https://msdn.microsoft.com/library/windows/apps/ff462087%28v=vs.105%29.aspx)提供了對MP4播放的額外支援。
 
-### 檢視器預設集的多媒體類型{#rich-media-types-for-viewer-presets}
+### 檢視器預設集的多媒體類型 {#rich-media-types-for-viewer-presets}
 
 建立新的檢視器預設集時，管理員可新增及自訂下列多媒體類型。
 
@@ -99,7 +99,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 | **垂直縮放** | 垂直縮放檢視器可讓您最大化產品影像檢視體驗，讓使用者能以最佳方式呈現產品。 色票的垂直位置會執行下列操作： <ul><li>確保色票位於折頁上方。 使用水準色票時，視使用者的案頭螢幕大小而定，在使用者向下捲動頁面之前，色票不可見。 將色票垂直放置在檢視器中，可確保無論使用者的螢幕大小皆可看見。</li><li>最大化主映像大小。 使用水準色票時，必須在頁面上保留空格，以確保其可見。 此定位縮小了主影像的大小。 但是，使用垂直色票版面時，您不需要分配此空間。 因此，您可以最大化主影像大小。</li></ul> |
 | **縮放** | 可讓使用者按一下區域來放大。 使用者可以按一下控制項來放大、縮小，以及將影像重設為其預設大小。 |
 
-## 現成可用的檢視器預設集清單{#list-of-out-of-the-box-viewer-presets}
+## 現成可用的檢視器預設集清單 {#list-of-out-of-the-box-viewer-presets}
 
 下表識別Dynamic Media隨附的所有預先定義且現成的檢視器預設集。
 
@@ -145,7 +145,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 | ZoomVertical_dark | 垂直縮放 | html5_zoomverticalviewer_dark.css |
 | ZoomVertical_light | 垂直縮放 | html5_zoomverticalviewer_light.css |
 
-### 支援的行動檢視器手勢矩陣{#supported-mobile-viewers-gestures-matrix}
+### 支援的行動檢視器手勢矩陣 {#supported-mobile-viewers-gestures-matrix}
 
 下表識別iOS、Android 2.x和Android 3.x裝置上支援的行動檢視器手勢。
 
@@ -159,7 +159,7 @@ Dynamic Media隨附的所有現成可用的檢視器預設集都與下列系統�
 | **撥動** | 捲動色票列 | 捲動影像 | 自旋 |
 | **弗利克** | 捲動色票列 | 捲動影像 | 自旋 |
 
-## 增加顯示{#increasing-the-number-of-viewer-presets-that-display}的Dynamic Media檢視器預設集數目
+## 增加顯示的Dynamic Media檢視器預設集數目 {#increasing-the-number-of-viewer-presets-that-display}
 
 AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;檢視資產時，會顯示多種檢視器預設集。 您可以增加或減少顯示的檢視器數量。
 
@@ -178,7 +178,7 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
 1. 在&#x200B;**[!UICONTROL limit]**&#x200B;屬性中，將數字變更為所需數字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 點選「**[!UICONTROL 儲存全部]**」。
 
-## 建立新的Dynamic Media檢視器預設集{#creating-a-new-viewer-preset}
+## 建立新的Dynamic Media檢視器預設集 {#creating-a-new-viewer-preset}
 
 建立檢視器預設集可讓您套用各種設定，以檢視資產並與資產互動。 不過，您不需要建立新的檢視器預設集。 您也可以使用AEM Assets隨附的預設現成檢視器預設集。
 
@@ -250,7 +250,7 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
 
    請參閱[發佈檢視器預設集](#publishing-viewer-presets)。
 
-## 建立互動式檢視器預設集的特殊考量事項{#special-considerations-for-creating-an-interactive-viewer-preset}
+## 建立互動式檢視器預設集的特殊考量事項 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **關於面板中影像縮圖的顯示模式**
 
@@ -296,7 +296,7 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
 
    根據上表中的範例，30秒/3個視訊子區段=每個視訊子區段的10秒顯示。
 
-### 建立轉盤橫幅檢視器預設集的特殊考量{#special-considerations-for-creating-a-carousel-banner-viewer-preset}
+### 建立轉盤橫幅檢視器預設集的特殊考量 {#special-considerations-for-creating-a-carousel-banner-viewer-preset}
 
 建立轉盤橫幅檢視器預設集時，可依下列方式存取變更熱點的樣式：
 
@@ -304,7 +304,7 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
 |---|---|---|
 | **熱點表徵圖** | 更改用於熱點的表徵圖 | 要更改熱點表徵圖影像，請在&#x200B;**[!UICONTROL Appearance]**&#x200B;頁簽的&#x200B;**[!UICONTROL Selected Component]**&#x200B;中，點選&#x200B;**[!UICONTROL ImageMapEffect]**。 在&#x200B;**[!UICONTROL Icon]**&#x200B;下，選擇&#x200B;**[!UICONTROL Background]**，然後在&#x200B;**[!UICONTROL Image]**&#x200B;欄位中導覽至您想要的背景影像。 |
 
-## 啟用或停用Dynamic Media檢視器預設集{#activating-or-deactivating-viewer-presets}
+## 啟用或停用Dynamic Media檢視器預設集 {#activating-or-deactivating-viewer-presets}
 
 使用者介面中可用的檢視器預設集，取決於哪些檢視器預設集在「製作」模式中處於作用中狀態。 依預設，建立後的檢視器預設集為&#x200B;*On*。 如果關閉預設集，您不會在「製作」模式中看到它。 如果已發佈預設集。 無論開啟或關閉，都會一律發佈。 如果清單變得太龐雜，或您不想讓檢視器預設集可供使用，您可以停用檢視器預設集。
 
@@ -315,7 +315,7 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
 
    已啟動的檢視器預設集會讓切換按鈕顯示在右側、藍色方塊內；停用的檢視器預設集會讓切換按鈕顯示在左側的淺灰色方塊內。
 
-## 發佈Dynamic Media檢視器預設集{#publishing-viewer-presets}
+## 發佈Dynamic Media檢視器預設集 {#publishing-viewer-presets}
 
 啟動（或將&#x200B;*開啟*）檢視器預設集的狀態表示它可在Dynamic Media元件、互動式媒體元件中，以及您每次檢視資產時顯示。
 
@@ -331,14 +331,14 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
 1. 選取一或多個要發佈的檢視器預設集。
 1. 在工具列上，點選&#x200B;**[!UICONTROL Publish]**&#x200B;圖示。
 
-## 排序Dynamic Media檢視器預設集{#sorting-viewer-presets}
+## 排序Dynamic Media檢視器預設集 {#sorting-viewer-presets}
 
 **若要排序Dynamic Media檢視器預設集**:
 
 1. 在AEM的左上角，點選AEM標誌，然後在左側導軌中，點選「工具 (槌子圖示) **>資產>檢視器預設集」******。
 1. 按一 **[!UICONTROL 下「標題]**」、「類型」、「發佈國 **[!UICONTROL 」或「國]********** 家預設」，依該欄標題排序。例如，按一下「 **[!UICONTROL 類型]** 」，以字母或反字母順序排序檢視器預設集類型。
 
-## 編輯Dynamic Media檢視器預設集{#editing-viewer-presets}
+## 編輯Dynamic Media檢視器預設集 {#editing-viewer-presets}
 
 請注意，編輯任何預先定義的現成可用檢視器預設集&#x200B;*並不是支援的案例。*&#x200B;如果您編輯現成可用的檢視器預設集，系統會提示您以新名稱儲存它。
 
@@ -353,7 +353,7 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
    * 點選&#x200B;**[!UICONTROL Save]**&#x200B;以儲存您的變更並返回&#x200B;**[!UICONTROL 檢視器預設集]**&#x200B;頁面。
    * 點選&#x200B;**[!UICONTROL 取消]**&#x200B;以撤消您所做的任何更改，並返回&#x200B;**[!UICONTROL 查看器預設集]**&#x200B;頁。
 
-## 刪除自訂Dynamic Media檢視器預設集{#deleting-custom-viewer-presets}
+## 刪除自訂Dynamic Media檢視器預設集 {#deleting-custom-viewer-presets}
 
 您可以刪除已建立並新增至Dynamic Media的檢視器預設集。
 
@@ -363,7 +363,7 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
 1. 在「**[!UICONTROL 檢視器預設集]**」頁面上，檢查「預設標題&#x200B;]**」，然後點選「**[!UICONTROL &#x200B;垃圾筒&#x200B;]**」圖示。**[!UICONTROL 
 1. 點選&#x200B;**[!UICONTROL Delete]**。
 
-## 將Dynamic Media檢視器預設集套用至資產{#applying-a-viewer-preset-to-an-asset}
+## 將Dynamic Media檢視器預設集套用至資產 {#applying-a-viewer-preset-to-an-asset}
 
 如果您已發佈資產和選取的檢視器， **[!UICONTROL URL]** 和 **[!UICONTROL Embed]**  (內嵌) 按鈕會在您選取檢視器預設集後顯示。
 
@@ -379,7 +379,7 @@ AEM從&#x200B;**[!UICONTROL 「詳細資料檢視」>「檢視器」]**&#x200B;�
 
    您可以[複製URL以與其他使用者共用](linking-urls-to-yourwebapplication.md)。
 
-## 使用Dynamic Media檢視器預設集傳送資產{#delivering-assets-with-viewer-presets}
+## 使用Dynamic Media檢視器預設集傳送資產 {#delivering-assets-with-viewer-presets}
 
 若要取得檢視器預設集的URL，請參閱[將URL連結至您的Web應用程式](linking-urls-to-yourwebapplication.md)。 另請參閱[在網頁上嵌入視頻查看器](embed-code.md)。
 
