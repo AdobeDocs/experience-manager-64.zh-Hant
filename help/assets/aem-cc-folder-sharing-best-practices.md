@@ -3,16 +3,16 @@ title: 與共用AEM Assets資料夾與Creative Cloud
 description: 設定和最佳實務，可讓Adobe Experience Manager Assets使用者與Adobe Creative Cloud使用者交換資產資料夾。
 contentOwner: AG
 feature: 協作
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1062'
 ht-degree: 0%
 
 ---
 
-# AEM到Creative Cloud資料夾共用最佳實務{#aem-to-creative-cloud-folder-sharing-best-practices}
+# AEM到Creative Cloud資料夾共用最佳實務 {#aem-to-creative-cloud-folder-sharing-best-practices}
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ AEM到Creative Cloud資料夾共用仰賴於AEM Assets帳戶和Creative Cloud帳
 * **Creative Cloud資產Web服務** (儲存和Creative Cloud檔案Web UI):這是共用AEM Assets資料夾的特定Creative Cloud使用者能夠接受邀請並在其Creative Cloud帳戶儲存體中查看資料夾的位置。
 * **Creative Cloud案頭應用程式**:（可選）可透過與Creative Cloud資產儲存空間同步，從創意使用者的案頭直接存取共用資料夾/檔案。
 
-## 特性和限制{#characteristics-and-limitations}
+## 特徵和限制 {#characteristics-and-limitations}
 
 * **變更的單向傳播：** 檔案變更只會傳播至一個方向 — 從資產最初建立（上傳）的系統(AEM或Creative Cloud資產)。整合不提供兩個系統之間完全自動化的雙向同步。
 
@@ -59,7 +59,7 @@ AEM到Creative Cloud資料夾共用仰賴於AEM Assets帳戶和Creative Cloud帳
 * **網路和頻寬：** 共用資料夾中的檔案和所有更新都需要通過網路在系統之間傳輸。您應確保僅共用相關檔案和更新。
 * **資料夾類型**:不支援共用類型的「資 `sling:OrderedFolder`產」資料夾。如果要共用資料夾，在AEM Assets中建立資料夾時，請勿選取「已排序」選項。
 
-## 最佳實務{#best-practices}
+## 最佳實務 {#best-practices}
 
 善用AEM來Creative Cloud資料夾共用的最佳實務包括：
 
