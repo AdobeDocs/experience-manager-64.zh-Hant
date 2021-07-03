@@ -3,9 +3,9 @@ title: 數位資產的使用與共用相關報表。
 description: ' [!DNL Adobe Experience Manager Assets] 中有關資產的報表，可協助您了解數位資產的使用情形、活動和共用情形。'
 contentOwner: AG
 feature: 資產報表，資產管理
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 6f03ee04-d2e2-47e6-892b-50fad3043a28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 8%
@@ -33,7 +33,7 @@ ht-degree: 8%
 
 ![在Web主控台中啟用資產報告](assets/reports-config-day-cq-dam-event-recorder.png)
 
-## 生成報告{#generate-reports}
+## 產生報表 {#generate-reports}
 
 [!DNL Experience Manager Assets] 會為您產生下列標準報表：
 
@@ -113,7 +113,7 @@ ht-degree: 8%
 
    按一下工具列中的「**[!UICONTROL 下載]**」 ，以下載CSV格式的報表。
 
-## 新增自訂欄{#add-custom-columns}
+## 新增自訂欄 {#add-custom-columns}
 
 您可以新增自訂欄至下列報表，以根據自訂需求顯示更多資料：
 
@@ -149,7 +149,7 @@ ht-degree: 8%
 
 1. 按一下工具列中的&#x200B;**[!UICONTROL 建立]**。 訊息會通知報表產生已開始。
 
-## 配置清除服務{#configure-purging-service}
+## 配置清除服務 {#configure-purging-service}
 
 若要移除您不再需要的報表，請從Web主控台設定「DAM報表清除」服務，以根據現有報表的數量和年齡來清除現有報表。
 
