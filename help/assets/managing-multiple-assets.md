@@ -3,16 +3,16 @@ title: 多個資產和集合的大量編輯中繼資料
 description: 了解如何同時編輯許多資產和集合的中繼資料，以快速傳播常見的中繼資料變更。
 contentOwner: AG
 feature: 資產管理，元資料，集合
-role: Business Practitioner
+role: User
 exl-id: 3541b50a-f226-4a6a-9c2a-03a5f47f1c23
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 13%
 
 ---
 
-# 管理多個資產和集合{#managing-multiple-assets-and-collections}
+# 管理多個資產和集合 {#managing-multiple-assets-and-collections}
 
 了解如何同時編輯多個資產和集合的中繼資料，以快速傳播常見的中繼資料變更。
 
@@ -29,7 +29,7 @@ AdobeEnterprise Manager(AEM)資產可讓您同時編輯多個資產的中繼資�
 >
 >大量編輯方法適用於資料夾或集合中的可用資產。 對於可跨資料夾使用或符合通用條件的資產，可以從資產搜尋結果大量更新中繼資料。
 
-## 編輯多個資產的中繼資料屬性{#editing-metadata-properties-of-multiple-assets}
+## 編輯多個資產的中繼資料屬性 {#editing-metadata-properties-of-multiple-assets}
 
 1. 在「資產」使用者介面中，導覽至您要編輯之資產的位置。
 1. 選取您要編輯公用屬性的資產。
@@ -45,7 +45,7 @@ AdobeEnterprise Manager(AEM)資產可讓您同時編輯多個資產的中繼資�
 >
 >對於單值欄位，即使您選擇「附加模式」，新元資料也不會附加到欄位中的現 **[!UICONTROL 有值]**。
 
-## 配置批量元資料更新的限制{#configure-limit-for-bulk-metadata-update}
+## 配置批量元資料更新的限制 {#configure-limit-for-bulk-metadata-update}
 
 為避免出現類似DOS的情況，AEM會限制Sling要求中支援的參數數量。 一次更新多個資產的中繼資料時，您可能會達到上限，且不會針對更多資產更新中繼資料。 AEM會在記錄中產生下列警告：
 
