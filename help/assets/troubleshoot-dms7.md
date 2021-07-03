@@ -7,19 +7,19 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: 疑難排解
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1296'
 ht-degree: 1%
 
 ---
 
-# 疑難排解Dynamic Media - Scene7模式{#troubleshooting-dynamic-media-scene-mode}
+# 疑難排解Dynamic Media - Scene7模式 {#troubleshooting-dynamic-media-scene-mode}
 
 以下檔案說明Dynamic Media執行&#x200B;**dynamicmedia_scene7**&#x200B;執行模式的疑難排解。
 
-## 設定和配置{#setup-and-configuration}
+## 設定與設定 {#setup-and-configuration}
 
 請執行下列動作，確認Dynamic Media已正確設定：
 
@@ -34,11 +34,11 @@ ht-degree: 1%
 
    此復寫代理位於Author上的&#x200B;**[!UICONTROL Agent]**&#x200B;下。
 
-## 一般（所有資產）{#general-all-assets}
+## 一般（所有資產） {#general-all-assets}
 
 以下是所有資產的一些一般提示和秘訣。
 
-### 資產同步狀態屬性{#asset-synchronization-status-properties}
+### 資產同步狀態屬性 {#asset-synchronization-status-properties}
 
 您可以在CRXDE Lite中檢閱下列資產屬性，以確認資產是否已成功從AEM同步至Dynamic Media:
 
@@ -49,11 +49,11 @@ ht-degree: 1%
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | 必須填入，才能產生URL至Dynamic Media的遠端資產。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | `success` 或 `failed:<error text>` | 集（回轉集、影像集等）、影像預設集、檢視器預設集、資產的影像地圖更新或已編輯影像的同步狀態。 |
 
-### 同步記錄{#synchronization-logging}
+### 同步記錄 {#synchronization-logging}
 
 同步錯誤和問題記錄在`error.log`(AEM伺服器目錄`/crx-quickstart/logs/`)中。 有足夠的記錄可供判斷大部分問題的根本原因，但您可以透過Sling主控台([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog))增加`com.adobe.cq.dam.ips`套件上的DEBUG記錄，以收集詳細資訊。
 
-### 移動、複製或刪除{#move-copy-delete}
+### 移動、複製或刪除 {#move-copy-delete}
 
 執行「移動」、「複製」或「刪除」操作之前，請執行以下操作：
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 * 對於影像和檢視器預設集，在執行移動、複製或刪除操作之前，請確認`https://<server>/crx/de/index.jsp#/etc/dam/presets/viewer/testpreset/jcr%3Acontent/metadata`值存在。
 * 如果遺失上述中繼資料值，您必須在移動、複製或刪除作業前重新上傳資產。
 
-### 版本控制{#version-control}
+### 版本控制 {#version-control}
 
 取代現有的Dynamic Media資產（相同名稱和位置）時，您可以選擇保留兩個資產，或取代或建立版本：
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 * Dynamic Media - Scene7模式傳送不支援建立版本。 新版本會取代傳送中的現有資產。
 
-## 影像和集{#images-and-sets}
+## 影像和集 {#images-and-sets}
 
 如果您對影像和集有問題，請參閱下列疑難排解指南。
 
