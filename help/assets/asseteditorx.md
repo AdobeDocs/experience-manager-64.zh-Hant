@@ -3,16 +3,16 @@ title: 擴充資產編輯器
 description: 了解如何使用自訂元件擴充資產編輯器的功能。
 contentOwner: AG
 feature: 開發人員工具
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 1e02a2f6-8194-46b9-b418-87103c3f4a69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '703'
 ht-degree: 13%
 
 ---
 
-# 擴充資產編輯器{#extending-asset-editor}
+# 擴充資產編輯器 {#extending-asset-editor}
 
 「資產編輯器」是在透過「資產共用」找到的資產經點按後開啟的頁面，可讓使用者編輯資產的中繼資料、縮圖、標題和標籤等方面。
 
@@ -20,7 +20,7 @@ ht-degree: 13%
 
 除了使用原先現有的編輯器元件外，Adobe Experience Manager(AEM)開發人員也可以建立自己的元件。
 
-## 建立資產編輯器範本{#creating-an-asset-editor-template}
+## 建立資產編輯器範本 {#creating-an-asset-editor-template}
 
 geometrixx中包含下列範例頁面：
 
@@ -40,7 +40,7 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlibs通常載�
 
 在大多數情況下，複製現有的範例`init.jsp`(`/apps/geometrixx/components/asseteditor/init.jsp`)應符合這些需求。
 
-### 設定JS動作{#configuring-js-actions}
+### 設定JS動作 {#configuring-js-actions}
 
 有些AEM Assets元件需要`component.js`中定義的JS函式。 將此檔案複製到元件目錄並連結。
 
@@ -50,7 +50,7 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlibs通常載�
 
 範例會在`head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)中載入此JavaScript來源。
 
-### 其他樣式表{#additional-style-sheets}
+### 其他樣式表 {#additional-style-sheets}
 
 部分AEM Assets元件使用AEM Widget程式庫。 若要在內容內容中正確轉譯，必須載入其他樣式表。 標籤動作元件需要一個。
 
@@ -58,11 +58,11 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlibs通常載�
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
 ```
 
-### Geometrixx樣式表{#geometrixx-style-sheet}
+### Geometrixx樣式表 {#geometrixx-style-sheet}
 
 範例頁面元件要求所有選取器的開頭皆為`static.css`(`/etc/designs/geometrixx/static.css`)的`.asseteditor`。 最佳實務：將所有`.asseteditor`選取器複製到樣式表，並視需要調整規則。
 
-### 表單選擇器：最終載入的資源的調整{#formchooser-adjustments-for-eventually-loaded-resources}
+### 表單選擇器：對最終載入的資源進行調整 {#formchooser-adjustments-for-eventually-loaded-resources}
 
 資產編輯器會使用表單選擇器，只要將表單選擇器和表單路徑新增至資產的URL，即可在相同表單頁面上編輯資源（在此例中是資產）。
 
@@ -121,7 +121,7 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlibs通常載�
 <title><%= title %></title>
 ```
 
-## 建立簡單表單欄位元件{#creating-a-simple-form-field-component}
+## 建立簡單表單欄位元件 {#creating-a-simple-form-field-component}
 
 此範例說明如何建立元件，以顯示已載入資產的中繼資料。
 
@@ -202,7 +202,7 @@ AEM Assets元件使用WCM edit clientlib的擴充功能。 clientlibs通常載�
 
 1. 在「 **編輯** 」模式中，新元件(例如，「範例中繼資料 **」)現在可在sidekick中使用(可在「資產編輯器」**&#x200B;群組中找到 **** )。插入元件。若要儲存中繼資料，必須將其新增至中繼資料表格。
 
-## 修改元資料選項{#modifying-metadata-options}
+## 修改中繼資料選項 {#modifying-metadata-options}
 
 您可以修改[中繼資料表單](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)中可用的命名空間。
 
