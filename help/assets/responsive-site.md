@@ -8,8 +8,8 @@ content-type: reference
 discoiquuid: 5edcc765-c374-4368-a0d9-e02a713a24f2
 exl-id: 36bb526c-a6d9-4296-8318-97ac72d6b3ba
 feature: 發佈
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 12%
@@ -49,7 +49,7 @@ ht-degree: 12%
 1. 在&#x200B;**[!UICONTROL 內嵌回應式影像]**&#x200B;對話方塊中，選取並複製回應式程式碼文字，並貼到您的網站中以存取回應式資產。
 1. 編輯內嵌程式碼中的預設中斷點，以直接比對程式碼中回應式網站的中斷點。 此外，測試在不同頁面斷點處提供的不同影像解析度。
 
-## 使用HTTP/2傳送Dynamic Media資產{#using-http-to-delivery-your-dynamic-media-assets}
+## 使用HTTP/2傳送Dynamic Media資產 {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2是全新、更新的Web通訊協定，可改善瀏覽器和伺服器的通訊方式。 它提供了更快的資訊傳輸，並降低了所需的處理能力。 支援使用HTTP/2來傳送Dynamic Media資產，以提供更理想的回應和載入時間。
 
