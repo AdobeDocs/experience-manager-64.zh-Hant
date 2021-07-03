@@ -3,16 +3,16 @@ title: Assets 監控最佳實務
 description: 部署AEM例項後，監控其環境和效能的最佳實務。
 contentOwner: AG
 feature: 資產管理
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: dd996d0bb856b9140d420d03dec446a382d10acd
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 0%
 
 ---
 
-# 資產監控最佳實務{#assets-monitoring-best-practices}
+# Assets 監控最佳實務 {#assets-monitoring-best-practices}
 
 從Adobe Experience Manager(AEM)Assets的角度來看，監控應包括觀察和報告下列程式和技術：
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 通常，AEM Assets可透過兩種方式進行監控：即即時監控和長期監控。
 
-## 即時監視{#live-monitoring}
+## 即時監視 {#live-monitoring}
 
 您應在開發的效能測試階段或高負載情況下執行即時監控，以了解環境的效能特性。 通常應使用一套工具來執行即時監控。 以下是一些建議：
 
@@ -53,15 +53,15 @@ ht-degree: 0%
 
 ![chlimage_1-142](assets/chlimage_1-142.png) ![chlimage_1-143](assets/chlimage_1-143.png)
 
-## 長期監控{#long-term-monitoring}
+## 長期監測 {#long-term-monitoring}
 
 對AEM例項進行長期監控時，會監視受即時監控的相同部分，持續較長時間。 也包含定義環境專屬的警報。
 
-### 日誌聚合和報告{#log-aggregation-and-reporting}
+### 日誌聚合和報告 {#log-aggregation-and-reporting}
 
 有數種工具可用於匯總日誌，例如Splunk(TM)和Elastic Search/Logstash/Kabana(ELK)。 若要評估AEM執行個體的正常運作時間，請務必了解系統專屬的記錄事件，並根據這些事件建立警報。 對您的開發和操作實踐有良好的了解，可幫助您更好地了解如何調整日誌聚合過程以生成關鍵警報。
 
-### 環境監視{#environment-monitoring}
+### 環境監控 {#environment-monitoring}
 
 環境監控包括監控下列項目：
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 您需要外部工具，例如NewRelic(TM)和AppDynamics(TM)來監視每個項目。 使用這些工具，您可以定義系統特有的警報，例如高系統利用率、工作流備份、運行狀況檢查失敗或未驗證的網站訪問。 Adobe不建議使用任何特定工具而非其他工具。 尋找適合您的工具，並運用它來監控討論的項目。
 
-#### 內部應用程式監視{#internal-application-monitoring}
+#### 內部應用程式監控 {#internal-application-monitoring}
 
 內部應用程式監控包括監控構成AEM堆疊的應用程式元件，包括JVM、內容存放庫，以及透過平台上建置的自訂應用程式程式碼進行監控。 一般來說，它通過JMX Mbeans來執行，這些JMX Mbeans可以直接由許多流行的監控解決方案進行監控，如SolarWinds(TM)、HP OpenView(TM)、Hyperic(TM)、Zabbix(TM)等。 對於不支援直接連接到JMX的系統，可以編寫shell指令碼以提取JMX資料，並以它們本來理解的格式將其公開到這些系統。
 
@@ -185,7 +185,7 @@ AEM也會透過JMX公開一組統計資料和操作。 這些功能有助於評�
    * 警報閾值：狀態不確定時
    * 警報定義：記錄檔中有錯誤。 檢查日誌屬性，了解問題原因的詳細資訊。
 
-## 常見問題和決議{#common-issues-and-resolutions}
+## 常見問題和解決方案  {#common-issues-and-resolutions}
 
 在監控過程中，如果您遇到問題，您可以執行以下一些疑難排解工作，以解決AEM例項的常見問題：
 
