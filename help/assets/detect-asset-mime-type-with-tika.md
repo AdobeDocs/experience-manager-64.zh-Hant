@@ -3,16 +3,16 @@ title: 使用Apache Tika偵測數位資產的MIME類型
 description: 啟用Apache Tika可協助AEM Assets在上傳作業期間（而非檔案副檔名）從內容資料流偵測資產的MIME類型。
 contentOwner: AG
 feature: 中繼資料，開發人員工具，資產管理
-role: Administrator,Architect
+role: Admin,Architect
 exl-id: 6c9e53e9-5e54-4816-9431-41e796340d1e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 3%
 
 ---
 
-# 使用Apache Tika偵測數位資產的MIME類型{#detecting-mime-type-of-assets-using-apache-tika}
+# 使用Apache Tika偵測數位資產的MIME類型 {#detecting-mime-type-of-assets-using-apache-tika}
 
 通常，Adobe Experience Manager(AEM)Assets會偵測您從其副檔名上傳的資產的MIME類型。 如果您使用Apache Tika來上傳資產，AEM Assets會在上傳作業期間從內容資料流中偵測其MIME類型，而非從副檔名。
 
