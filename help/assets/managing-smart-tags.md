@@ -6,16 +6,16 @@ uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
 feature: 智慧標籤，標籤，搜索
-role: Business Practitioner
+role: User
 exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 2%
 
 ---
 
-# 管理智慧標籤{#managing-smart-tags}
+# 管理智慧標籤 {#managing-smart-tags}
 
 您可以組織智慧標籤來移除任何可能指派給品牌影像的不準確標籤，以便僅顯示最相關的標籤。
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 1. 按一下/點 **[!UICONTROL 選「儲存]**」，然後按一下/點選「 **[!UICONTROL 確定]** 」以關閉「成功」對話方塊。
 1. 導覽至影像的屬性頁面。 請注意，您促銷的標籤被指派為高關聯性，因此在搜尋結果中會顯示得較高。
 
-## 使用智慧標籤{#understand-search-results-with-smart-tags}了解AEM搜尋結果
+## 了解AEM的智慧標籤搜尋結果 {#understand-search-results-with-smart-tags}
 
 依預設，AEM搜尋會將搜尋詞與`AND`子句結合。 使用智慧標籤不會變更此預設行為。 使用智慧標籤會新增額外的`OR`子句，以尋找套用智慧標籤中的任何搜尋詞。 例如，請考慮搜尋`woman running`。 依預設，中繼資料中只有`woman`或只有`running`關鍵字的資產不會出現在搜尋結果中。 不過，使用智慧標籤標示的`woman`或`running`資產會顯示在這類搜尋查詢中。 搜索結果是，
 
