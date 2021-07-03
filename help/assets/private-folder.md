@@ -3,16 +3,16 @@ title: 私人資料夾共用
 description: 了解如何在Adobe Experience Manager(AEM)資產中建立私人資料夾，並與其他使用者共用資料夾，以及為其指派各種權限。
 contentOwner: AG
 feature: 協作
-role: Business Practitioner
+role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 6%
 
 ---
 
-# 共用{#private-folder-sharing}的專用資料夾
+# 私人資料夾共用 {#private-folder-sharing}
 
 您可以在Adobe Experience Manager(AEM)Assets使用者介面中建立專供您使用的私人資料夾。 您可以將此私人資料夾共用給其他使用者，並為其指派各種權限。 根據您指派的權限層級，使用者可以對資料夾執行各種工作，例如在資料夾內檢視資產或編輯資產。
 
