@@ -3,22 +3,22 @@ title: 如何編輯或新增中繼資料
 description: 了解AEM Assets中的資產中繼資料，以及編輯資產中繼資料的各種方式。
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 7%
 
 ---
 
-# 如何編輯或添加元資料{#how-to-edit-or-add-metadata}
+# 如何編輯或新增中繼資料 {#how-to-edit-or-add-metadata}
 
 中繼資料是可搜尋資產的其他相關資訊。 上傳影像時，會自動擷取它。 您可以編輯現有中繼資料，或將新中繼資料屬性新增至現有欄位（例如，中繼資料欄位空白時）。
 
 由於公司需要可控且可靠的中繼資料辭匯，AEM Assets不允許臨時新增新中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 請參閱[為資產建立新中繼資料屬性](meta-edit.md#editing-metadata-schema)。
 
-## 編輯資產{#editing-metadata-for-an-asset}的中繼資料
+## 編輯資產的中繼資料 {#editing-metadata-for-an-asset}
 
 若要編輯中繼資料：
 
@@ -42,11 +42,11 @@ ht-degree: 7%
 
 [技術要求中所述的平台和檔案格式支援並啟用XMP回寫。](/help/sites-deploying/technical-requirements.md)
 
-## 編輯元資料架構{#editing-metadata-schema}
+## 編輯中繼資料結構 {#editing-metadata-schema}
 
 有關如何編輯元資料架構的詳細資訊，請參閱[編輯元資料架構表單](metadata-schemas.md#editing-metadata-schema-forms)。
 
-## 在AEM {#registering-a-custom-namespace-within-aem}中註冊自訂命名空間
+## 在AEM中註冊自訂命名空間 {#registering-a-custom-namespace-within-aem}
 
 您可以在AEM中新增您自己的命名空間。 就像有預先定義的命名空間，例如cq、jcr和sling，您也可以擁有儲存庫中繼資料和xml處理的命名空間。
 
@@ -56,7 +56,7 @@ ht-degree: 7%
 1. 若要新增命名空間，請按一下或點選底部的「**[!UICONTROL 新增]**」。
 1. 在XML命名空間約定中指定自定義命名空間（以URI的形式指定ID以及該ID的相關前置詞），然後按一下或點選&#x200B;**[!UICONTROL Save]**。
 
-## 提示和限制{#best-practices-limitations}
+## 提示和限制 {#best-practices-limitations}
 
 * 透過觸控式UI更新中繼資料會變更`dc`命名空間中的中繼資料屬性。 透過HTTP API進行的任何更新都會變更`jcr`命名空間中的中繼資料屬性。 請參閱[如何使用HTTP API](/help/assets/mac-api-assets.md#update-asset-metadata)更新中繼資料。
 
