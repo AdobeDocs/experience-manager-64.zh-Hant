@@ -3,16 +3,16 @@ title: AEM Assets首頁體驗
 description: 個人化AEM Assets首頁以提供豐富的歡迎畫面體驗，包括資產近期活動的快照。
 contentOwner: AG
 feature: 開發人員工具，資產管理
-role: Administrator,Business Practitioner
+role: Admin,User
 exl-id: f47c6da7-aa21-4f49-9c66-2a8091e19561
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 1%
 
 ---
 
-# AEM Assets首頁體驗{#aem-assets-home-page-experience}
+# AEM Assets首頁體驗 {#aem-assets-home-page-experience}
 
 個人化AEM Assets首頁以提供豐富的歡迎畫面體驗，包括資產近期活動的快照。
 
