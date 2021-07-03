@@ -3,16 +3,16 @@ title: Camera Raw支援
 description: 了解如何在Adobe Experience Manager Assets中啟用Camera Raw支援。
 contentOwner: AG
 feature: 開發人員工具
-role: Administrator
+role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
 
 ---
 
-# 使用Camera Raw處理影像{#camera-raw-support}
+# 使用Camera Raw處理影像 {#camera-raw-support}
 
 您可以啟用Camera Raw支援以處理原始檔案格式（如CR2、NEF和RAF），並以JPEG格式呈現影像。 Adobe Experience Manager Assets支援使用Software Distribution提供的[Camera Raw套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg)來執行功能。
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
 儲存對Camera Raw影像的編輯後，會為該影像產生新的轉譯`AdjustedPreview.jpg`。 對於除Camera Raw之外的其他影像類型，變更會反映在所有轉譯中。
 
-## 最佳做法、已知問題和限制{#best-practices}
+## 最佳實務、已知問題和限制 {#best-practices}
 
 功能有下列限制：
 
