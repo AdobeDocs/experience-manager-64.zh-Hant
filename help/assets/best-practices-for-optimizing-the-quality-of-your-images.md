@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: 資產管理，轉譯
-role: Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 6%
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 AEM包含超過100個dynamic media影像傳送命令，用於調整和最佳化影像及轉譯結果。 下列准則可協助您使用一些基本命令和最佳實務來簡化程式並快速取得良好結果。
 
-## 影像格式(&amp;fmt=){#best-practices-for-image-format-fmt}的最佳作法
+## 影像格式的最佳作法(&amp;fmt=) {#best-practices-for-image-format-fmt}
 
 * JPG或PNG是提供高品質且大小和重量可控影像的最佳選擇。
 * 若URL中未提供format命令，Dynamic Media影像傳送預設為JPG進行傳送。
@@ -32,7 +32,7 @@ AEM包含超過100個dynamic media影像傳送命令，用於調整和最佳化�
 
 影像格式的最佳實務，請從最常見的設定`&fmt=JPG`開始。
 
-## 影像大小{#best-practices-for-image-size}最佳實務
+## 影像大小最佳實務 {#best-practices-for-image-size}
 
 動態縮小影像大小是最常見的任務之一。 它涉及指定大小，以及（可選）使用哪個縮減取樣模式來縮小影像。
 
@@ -41,7 +41,7 @@ AEM包含超過100個dynamic media影像傳送命令，用於調整和最佳化�
 
 使用`&wid=<value>&hei=<value>&resMode=sharp2`或`&hei=<value>&resMode=sharp2`作為影像大小調整的最佳實務
 
-## 影像銳利化最佳作法{#best-practices-for-image-sharpening}
+## 影像銳利化最佳作法 {#best-practices-for-image-sharpening}
 
 影像銳利化是控制網站上影像的最複雜環節，也是常有錯誤發生的地方。 請參考[AdobeDynamic Media Classic影像品質與銳利化最佳實務](/help/assets/assets/sharpening_images.pdf)指南，進一步了解銳利化和銳利化遮色片在AEM中的運作方式。此指南同樣適用於AEM。
 
@@ -80,7 +80,7 @@ AEM包含超過100個dynamic media影像傳送命令，用於調整和最佳化�
 
 將單色參數設定保留為0。
 
-### JPEG壓縮的最佳做法(&amp;qlt=){#best-practices-for-compression-qlt}
+### JPEG壓縮的最佳做法(&amp;qlt=) {#best-practices-for-compression-qlt}
 
 * 此參數會控制JPG編碼品質。 值越高，表示影像質量越高，但檔案大小越大；或者，值越低，表示影像質量越低，但檔案大小越小。 此參數的範圍是0-100。
 * 若要最佳化品質，請勿將參數值設為100。 設定90或95與100之間的差異幾乎不可察覺，但100會不必要地增加影像檔案的大小。 因此，若要最佳化品質，同時避免影像檔案變得過大，請將`qlt=<value>`設為90或95。
@@ -93,7 +93,7 @@ AEM包含超過100個dynamic media影像傳送命令，用於調整和最佳化�
 
 請使用`&qlt=85,0`作為JPG壓縮的最佳實務。
 
-## JPEG大小調整的最佳做法(&amp;jpegSize=){#best-practices-for-jpeg-sizing-jpegsize}
+## JPEG大小調整的最佳做法(&amp;jpegSize=) {#best-practices-for-jpeg-sizing-jpegsize}
 
 如果您想要保證影像不會超過特定大小，以便傳送給記憶體有限的裝置，jpegSize就是有用的參數。
 
@@ -102,7 +102,7 @@ AEM包含超過100個dynamic media影像傳送命令，用於調整和最佳化�
 
 如果要將JPG影像傳送至記憶體有限的裝置，請設定`&jpegSize=`並新增參數`&qlt=`，這是最佳作法。
 
-## 最佳做法摘要{#best-practices-summary}
+## 最佳實務摘要 {#best-practices-summary}
 
 最佳實務是要達到高影像品質和小檔案大小，請從以下參陣列合開始：
 
