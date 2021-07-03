@@ -7,15 +7,15 @@ topic-tags: administering
 content-type: reference
 exl-id: 3602e1b9-624d-408f-a7f6-1598b62dbd22
 feature: 視訊設定檔，視訊
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3071'
 ht-degree: 17%
 
 ---
 
-# Dynamic Media視訊設定檔{#video-profiles}
+# Dynamic Media影片設定檔 {#video-profiles}
 
 Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成可用設定檔中的設定已最佳化，可為客戶提供最佳的檢視體驗。 當您使用「最適化視訊編碼」設定檔為主視訊編碼時，在播放期間，視訊播放器會根據客戶的網際網路連線速度自動調整視訊資料流的品質。 這稱為最適化串流。
 
@@ -43,7 +43,7 @@ Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成
 
 若要定義其他資產類型的進階處理參數，請參閱[設定資產處理](config-dms7.md#configuring-asset-processing)。
 
-## 最適化視訊編碼預設集{#adaptive-video-encoding-presets}
+## 適用性視訊編碼預設集 {#adaptive-video-encoding-presets}
 
 下表列出將設定檔編碼為行動裝置、平板電腦裝置和桌上型電腦的最適化視訊串流的最佳實務。 您可以將這些預設集用於任何外觀比例視訊。
 
@@ -92,7 +92,7 @@ Dynamic Media已隨附預先定義的最適化視訊編碼設定檔。 此現成
  </tbody> 
 </table>
 
-## 建立適用性串流{#creating-a-video-encoding-profile-for-adaptive-streaming}的Dynamic Media視訊編碼設定檔
+## 建立Dynamic Media視訊編碼設定檔以進行最適化串流 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定檔為一組適用於MP4 H.264的視訊上傳設定，並針對最佳的檢視體驗進行最佳化。 上傳影片時，您可以使用此設定檔。
 
@@ -148,13 +148,13 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
    * 重複步驟5-10以建立其他編碼預設集。 （最適化視訊串流需要多個視訊預設集。）
    * 在頁面的右上角，再次點選&#x200B;**[!UICONTROL Save]**&#x200B;以儲存描述檔。
 
-## 監視編碼作業的進度{#monitoring-the-progress-of-an-encoding-job}
+## 監控編碼作業的進度 {#monitoring-the-progress-of-an-encoding-job}
 
 顯示處理指標（或進度列），以便您能以視覺化方式監控視訊編碼工作的進度。
 
 您也可以檢視`error.log`檔案，以監控編碼作業的進度、查看編碼是否已完成，或查看任何作業錯誤。 在安裝AEM例項的`logs`資料夾中找到`error.log`。
 
-## 為漸進式串流建立Dynamic Media視訊編碼設定檔{#creating-a-video-encoding-profile-for-progressive-streaming}
+## 建立用於漸進式串流的Dynamic Media視訊編碼設定檔 {#creating-a-video-encoding-profile-for-progressive-streaming}
 
 如果您選擇不使用「編碼」選項進行最適化串流 ****，請注意，您新增至描述檔的所有編碼預設集都會被視為個別視訊轉譯，以用於單位元速率串流或漸進式視訊傳送。此外，沒有驗證可確保所有視訊轉譯具有相同的外觀比例。
 
@@ -263,7 +263,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 1. 在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;頁面的左上角，點選&#x200B;**[!UICONTROL Back Home]**&#x200B;圖示以返回AEM。
 
-### 編輯Dynamic Media視訊編碼設定檔{#editing-a-video-encoding-profile}
+### 編輯Dynamic Media視訊編碼設定檔 {#editing-a-video-encoding-profile}
 
 您可以編輯已建立的任何視訊編碼設定檔，以新增、編輯或刪除該設定檔中的視訊預設集。
 
@@ -289,7 +289,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Save]**。
 
-### 複製Dynamic Media視訊編碼設定檔{#copying-a-video-encoding-profile}
+### 複製Dynamic Media視訊編碼設定檔 {#copying-a-video-encoding-profile}
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 在&#x200B;**[!UICONTROL 視訊描述檔]**&#x200B;頁面上，檢查一個視訊描述檔名稱。
@@ -304,14 +304,14 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 1. 在頁面的右上角，點選&#x200B;**[!UICONTROL Save]**。
 
-### 刪除Dynamic Media視訊編碼設定檔{#deleting-a-video-encoding-profile}
+### 刪除Dynamic Media視訊編碼設定檔 {#deleting-a-video-encoding-profile}
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 在&#x200B;**[!UICONTROL 視訊描述檔]**&#x200B;頁面上，檢查一或多個視訊描述檔名稱。
 1. 在工具列上，點選&#x200B;**[!UICONTROL Delete]**。
 1. 點選&#x200B;**[!UICONTROL 確定]**。
 
-## 將Dynamic Media視訊設定檔套用至資料夾{#applying-a-video-profile-to-folders}
+## 將Dynamic Media視訊設定檔套用至資料夾 {#applying-a-video-profile-to-folders}
 
 將視訊描述檔指派給資料夾時，任何子資料夾都會自動從其父資料夾繼承描述檔。 這表示您只能將一個視訊描述檔指派給資料夾。 因此，請仔細考慮上傳、儲存、使用和封存資產的資料夾結構。
 
@@ -323,19 +323,19 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 您可以將視訊設定檔套用至特定資料夾，或全域套用至所有資產。
 
-### 將視訊設定檔套用至特定資料夾{#applying-video-profiles-to-specific-folders}
+### 將視訊設定檔套用至特定資料夾 {#applying-video-profiles-to-specific-folders}
 
 您可以從「工具」菜單或在資料夾中從「屬性」將視頻配置檔案應 **[!UICONTROL 用到資料夾]******。本節說明如何以兩種方式將視訊描述檔套用至資料夾。
 
 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-#### 從設定檔使用者介面{#applying-video-profiles-to-folders-from-profiles-user-interface}將Dynamic Media視訊設定檔套用至資料夾
+#### 從設定檔使用者介面將Dynamic Media視訊設定檔套用至資料夾 {#applying-video-profiles-to-folders-from-profiles-user-interface}
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 選取您要套用至資料夾或多個資料夾的視訊設定檔。
 1. 點選 **[!UICONTROL 「將描述檔套用至檔案夾」]** ，然後選取您要用來接收新上傳資產的檔案夾或多個檔案夾，並點選「套 **[!UICONTROL 用」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-#### 從屬性{#applying-video-profiles-to-folders-from-properties}將Dynamic Media視訊描述檔套用至資料夾
+#### 從屬性將Dynamic Media視訊設定檔套用至資料夾 {#applying-video-profiles-to-folders-from-properties}
 
 1. 點選AEM標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用視訊描述檔的資料夾。
 1. 在資料夾中，點選核取標籤以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
@@ -343,7 +343,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 
-### 全域套用Dynamic Media視訊設定檔{#applying-a-video-profile-globally}
+### 全域套用Dynamic Media影片設定檔 {#applying-a-video-profile-globally}
 
 除了將設定檔套用至資料夾之外，您也可以全域套用一個設定檔，讓任何資料夾中上傳至AEM資產的任何內容都會套用選取的設定檔。
 
@@ -355,13 +355,13 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
 ![chlimage_1-519](assets/chlimage_1-519.png)
 
-## 從資料夾{#removing-a-video-profile-from-folders}中移除Dynamic Media視訊設定檔
+## 從資料夾移除Dynamic Media視訊設定檔 {#removing-a-video-profile-from-folders}
 
 從資料夾移除視訊描述檔時，任何子資料夾都會自動從其父資料夾移除描述檔。 不過，資料夾內發生的檔案處理仍維持不變。
 
 您可以從「工具」功能表內的資料夾或在資料夾內的「資料夾設定」中移除視訊描述檔 ********。本節說明如何以兩種方式從資料夾移除視訊描述檔。
 
-### 透過設定檔使用者介面{#removing-video-profiles-from-folders-via-profiles-user-interface}從資料夾移除Dynamic Media視訊設定檔
+### 透過設定檔使用者介面從資料夾移除Dynamic Media視訊設定檔 {#removing-video-profiles-from-folders-via-profiles-user-interface}
 
 1. 點選AEM標誌並導覽至「工 **[!UICONTROL 具 > 資產 >視 訊設定檔]**」。
 1. 選取您要從資料夾或多個資料夾中移除的視訊設定檔。
@@ -369,7 +369,7 @@ Dynamic Media已隨附預先定義的適用性視訊編碼設定檔，此設定�
 
    您可以確認視訊描述檔不再套用至資料夾，因為資料夾名稱下方不再顯示該名稱。
 
-### 透過屬性{#removing-video-profiles-from-folders-via-properties}從資料夾移除Dynamic Media視訊設定檔
+### 透過屬性從資料夾移除Dynamic Media視訊設定檔 {#removing-video-profiles-from-folders-via-properties}
 
 1. 點選AEM標誌並導覽至&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除視訊描述檔的資料夾。
 1. 在資料夾中，點選核取標籤以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
