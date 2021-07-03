@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 feature: 智慧標籤，搜索
-role: Business Practitioner
+role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1570'
 ht-degree: 15%
@@ -18,7 +18,7 @@ ht-degree: 15%
 
 # 增強型智慧標記 {#enhanced-smart-tags}
 
-## 增強智慧標籤概述{#overview-of-enhanced-smart-tags}
+## 增強智慧標籤概觀 {#overview-of-enhanced-smart-tags}
 
 處理數位資產的組織，在資產中繼資料中越來越多地使用分類法控制的辭匯。 基本上，它包含員工、合作夥伴和客戶通常用來參考和搜尋特定類別的數位資產的關鍵字清單。 使用分類控制的辭匯來標籤資產，以確保透過標籤式搜尋輕鬆識別及擷取資產。
 
@@ -62,7 +62,7 @@ ht-degree: 15%
 >
 >如果您是使用AEM 6.3或較舊版本，且需要資產的自動標籤服務，請參閱[智慧標籤](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)。 智慧標籤不會使用AI功能，且比「增強智慧標籤」功能的準確度低。
 
-## 檢閱資產和標籤{#reviewing-assets-and-tags}
+## 檢閱資產和標籤 {#reviewing-assets-and-tags}
 
 上線後，您首先要識別一組標籤，以便在您的業務環境中最能描述這些影像。
 
@@ -80,7 +80,7 @@ ht-degree: 15%
 
 
 
-## 培訓智慧內容服務{#training-the-smart-content-service}
+## 訓練智慧內容服務 {#training-the-smart-content-service}
 
 為了讓智慧內容服務識別您的業務分類，請在已包含與您的業務相關標籤的一組資產上執行該分類。 經過培訓後，此服務可對類似的資產集套用相同的分類法。
 
@@ -92,7 +92,7 @@ ht-degree: 15%
 >
 >培訓工作流程僅在資料夾上執行。
 
-### 定期培訓{#periodic-training}
+### 定期培訓 {#periodic-training}
 
 您可以啟用智慧內容服務，以定期訓練資料夾內的資產和相關標籤。 開啟資產資料夾的屬性頁面，在&#x200B;**[!UICONTROL Details]**&#x200B;標籤下選擇&#x200B;**[!UICONTROL 啟用智慧標籤]**，並保存更改。
 
@@ -100,7 +100,7 @@ ht-degree: 15%
 
 為資料夾選取此選項後，AEM會自動執行訓練工作流程，以訓練資料夾資產及其標籤上的智慧內容服務。 預設情況下，培訓工作流程每週在星期六的凌晨12:30運行。
 
-### 按需培訓{#on-demand-training}
+### 隨選培訓 {#on-demand-training}
 
 您可以視需要從工作流程主控台訓練智慧內容服務。
 
@@ -115,7 +115,7 @@ ht-degree: 15%
 >
 >處理資料夾中的資產以進行訓練後，後續訓練週期中只會處理修改的資產。
 
-### 查看培訓報告{#viewing-training-reports}
+### 查看培訓報告 {#viewing-training-reports}
 
 若要檢查智慧內容服務是否在資產訓練集的標籤上接受訓練，請從報表控制台檢閱訓練工作流程報表。
 
@@ -132,7 +132,7 @@ ht-degree: 15%
 
 1. 若要下載報表，請從清單中選取報表，然後點選/按一下工具列中的「下載&#x200B;**** 」圖示。 報表會以Excel檔案的形式下載。
 
-## 自動標籤資產{#tagging-assets-automatically}
+## 自動標籤資產 {#tagging-assets-automatically}
 
 在您訓練智慧內容服務後，可以觸發標籤工作流程，自動對不同的一組類似資產套用適當標籤。
 
@@ -142,13 +142,13 @@ ht-degree: 15%
 >
 >標籤工作流程會同時在資產和資料夾上執行。
 
-### 定期標籤{#periodic-tagging}
+### 定期標籤 {#periodic-tagging}
 
 您可以啟用智慧內容服務，以定期標籤資料夾中的資產。 開啟資產資料夾的屬性頁面，在&#x200B;**[!UICONTROL Details]**&#x200B;標籤下選擇&#x200B;**[!UICONTROL 啟用智慧標籤]**，並保存更改。
 
 為資料夾選取此選項後，智慧內容服務就會自動在資料夾中標籤資產。 預設情況下，標籤工作流程每天凌晨12:00執行。
 
-### 按需標籤{#on-demand-tagging}
+### 隨需標籤 {#on-demand-tagging}
 
 您可以從下列項目觸發標籤工作流程，以立即標籤您的資產：
 
@@ -159,7 +159,7 @@ ht-degree: 15%
 >
 >如果您從時間軸執行標籤工作流程，一次最多可對15個資產套用標籤。
 
-#### 從工作流程控制台{#tagging-assets-from-the-workflow-console}標籤資產
+#### 從工作流程主控台標籤資產 {#tagging-assets-from-the-workflow-console}
 
 1. 點選/按一下AEM標誌，然後前往「工 **[!UICONTROL 具 >工 作流程 > 模型]**」。
 1. 從「工 **[!UICONTROL 作流程模型]** 」頁面中，選擇 **[!UICONTROL DAM智慧標籤資產工作流程，然後從工具列點選/按]** 一下「開始工作流程 **** 」。
@@ -173,7 +173,7 @@ ht-degree: 15%
 
    導覽至資產資料夾並檢閱標籤，以確認智慧內容服務是否已正確標籤您的資產。 如需詳細資訊，請參閱[管理智慧標籤](managing-smart-tags.md)。
 
-#### 從時間軸{#tagging-assets-from-the-timeline}標籤資產
+#### 從時間軸標籤資產 {#tagging-assets-from-the-timeline}
 
 1. 從「資產」使用者介面，選取包含您要套用智慧標籤之資產或特定資產的資料夾。
 1. 點選/按一下GlobalNav圖示，然後開啟時間軸。
