@@ -3,9 +3,9 @@ title: 搜尋 Facet
 description: 本文說明如何在AEM中建立、修改及使用搜尋Facet。
 contentOwner: AG
 feature: 搜尋
-role: Administrator,Developer
+role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2538'
 ht-degree: 21%
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 
 例如，如果要查找影像，則可以選擇要點陣圖還是向量影像。 您可以指定影像的MIME類型，進一步縮小搜尋範圍。 同樣，在搜索文檔時，可以指定格式，例如PDF或MS Word。
 
-## 新增述詞{#adding-a-predicate}
+## 新增述詞 {#adding-a-predicate}
 
 顯示在「篩選器」面板中的搜尋刻面，是使用述詞在基礎搜尋表單中定義。 若要顯示更多或不同的刻面，您可以將述詞新增至預設表單，或使用包含您所選刻面的自訂表單。
 
@@ -81,7 +81,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 1. 導覽至「資產」使用者介面中的「搜尋」面板。 「屬性述詞」會新增至面板。
 1. 在文字方塊中輸入要搜尋的資產說明。 例如，輸入「Adobe」。 執行搜尋時，說明符合「Adobe」的資產會列在搜尋結果中。
 
-## 新增選項述詞{#adding-an-options-predicate}
+## 新增選項述詞 {#adding-an-options-predicate}
 
 「選項」述詞可讓您在「篩選器」面板中新增多個搜尋選項。 您可以在「篩選」面板中選取一或多個這些選項以搜尋資產。 例如，若要根據檔案類型搜尋資產，請設定選項，例如搜尋表單中的「影像」、「多媒體」、「檔案」和「封存」。 配置這些選項後，當您在「濾鏡」面板中選擇「影像」選項時，將對GIF、JPEG、PNG等類型的資產執行搜索。
 
@@ -135,7 +135,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 1. 在&#x200B;**Description**&#x200B;欄位中，輸入可選說明，然後按一下&#x200B;**[!UICONTROL Done]**。
 1. 導覽至「搜尋」面板。 「選項謂語」已新增至&#x200B;**Search**&#x200B;面板。 **[!UICONTROL 檔案類型]**&#x200B;的選項顯示為複選框。
 
-## 新增多值屬性述詞{#adding-a-multi-value-property-predicate}
+## 新增多值屬性述詞 {#adding-a-multi-value-property-predicate}
 
 「多值屬性」述詞可讓您搜尋多個值的資產。 假設您在AEM Assets中有多個產品的影像，且每個影像的中繼資料包含與產品相關聯的SKU編號。 您可以使用此述詞來根據多個SKU編號來搜尋產品影像。
 
@@ -148,7 +148,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 1. 導覽至「資產」使用者介面中的「篩選」面板。The **[!UICONTROL Multi Value Property]** predicate is added to the panel.
 1. 在「多值」欄位中指定多個值（由分隔字元分隔），然後執行搜索。 述詞會擷取與您指定值完全相符的文字。
 
-## 新增標籤述詞{#adding-a-tags-predicate}
+## 新增標籤述詞 {#adding-a-tags-predicate}
 
 「標籤述詞」可讓您執行資產的標籤式搜尋。 依預設，AEM Assets會根據您指定的標籤，搜尋一或多個標籤相符的資產。 換言之，搜尋查詢會使用指定的標籤執行OR操作。 不過，您可以使用「比對所有標籤」選項，來搜尋包含您所指定之所有標籤的資產。
 
@@ -173,7 +173,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 
 1. 選擇&#x200B;**[!UICONTROL 「全部匹配」]**&#x200B;以搜索包含您指定的所有標籤的匹配項。
 
-## 添加其他謂語{#adding-other-predicates}
+## 新增其他述詞 {#adding-other-predicates}
 
 與新增屬性述詞或選項述詞的方式類似，您可以將下列其他述詞新增至「搜尋」面板：
 
@@ -194,7 +194,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 | [!UICONTROL 到期狀態] | 搜尋述詞，以根據資產的到期狀態來搜尋資產 | <ul><li>標籤</li><li>屬性名稱</li><li>說明</li></ul> |
 | [!UICONTROL 隱藏] | 定義要搜尋資產之隱藏欄位屬性的搜尋述詞 | <ul><li>屬性名稱</li><li>屬性值</li><li>說明</li></ul> |
 
-## 還原預設搜索Facet {#restoring-default-search-facets}
+## 還原預設搜尋Facet {#restoring-default-search-facets}
 
 依預設，在&#x200B;**[!UICONTROL 搜尋Forms]**&#x200B;頁面的&#x200B;**[!UICONTROL Assets管理員搜尋邊欄]**&#x200B;前會顯示「鎖定」圖示。 如果向表單中添加搜索Facet以指示已修改預設表單，則「鎖定」表徵圖會消失。
 
@@ -210,7 +210,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 
    刪除搜尋Facet的自訂變更後，在「搜尋表單」頁面的「資產管 **[!UICONTROL 理搜尋邊欄]** 」前會重 **** 新顯示「鎖定」圖示。
 
-## 用戶權限{#user-permissions}
+## 使用者權限 {#user-permissions}
 
 如果您未獲派管理員角色，以下是執行與搜尋刻面相關的編輯、刪除和預覽動作所需的權限清單。
 
