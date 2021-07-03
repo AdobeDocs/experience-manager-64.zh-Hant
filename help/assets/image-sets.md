@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: e00e7cc9-b777-4f9e-906d-824bcb2bbd41
 exl-id: af3f95aa-a162-4212-a20a-68b5a0e72d6d
 feature: 影像集
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2066'
 ht-degree: 12%
@@ -37,7 +37,7 @@ ht-degree: 12%
 >
 >如需Assets使用者介面的詳細資訊，請參閱使用觸控式UI](managing-assets-touch-ui.md)管理資產。[
 
-## 快速入門：影像集{#quick-start-image-sets}
+## 快速入門：影像集 {#quick-start-image-sets}
 
 快速啟動並運行：
 
@@ -88,13 +88,13 @@ ht-degree: 12%
 
 如果您建立集時遇到問題，請參閱[疑難排解Dynamic Media - Scene7模式](troubleshoot-dms7.md#images-and-sets)中的影像和集。
 
-## 上傳影像集{#uploading-assets-in-image-sets}中的資產
+## 上傳影像集中的資產 {#uploading-assets-in-image-sets}
 
-首先，上傳影像集的影像。 由於使用者可以在影像集檢視器中放大影像，因此當您選擇影像時，請考量放大比例。 請確定影像在最大尺寸中至少為2000像素。影像集支援許多影像檔案格式，但建議使用無損TIFF、PNG和EPS影像。
+首先，上傳影像集的影像。 由於使用者可以在影像集檢視器中放大影像，因此當您選擇影像時，請考量放大比例。 請確定影像在最大尺寸中至少為2000像素。影像集支援多種影像檔案格式，但建議使用無損TIFF、PNG和EPS影像。
 
 您可以像上傳[資產](managing-assets-touch-ui.md#uploading-assets)中的任何其他資產一樣，上傳影像集的影像。
 
-### 準備要上傳的影像集資產{#preparing-image-set-assets-for-upload}
+### 準備要上傳的影像集資產 {#preparing-image-set-assets-for-upload}
 
 建立影像集之前，請確定影像的大小和格式正確。
 
@@ -115,7 +115,7 @@ ht-degree: 12%
 
 
 
-## 建立影像集{#creating-image-sets}
+## 建立影像集 {#creating-image-sets}
 
 您可以透過使用者介面或API來建立影像集。 本節說明如何在使用者介面中建立影像集。
 
@@ -173,7 +173,7 @@ ht-degree: 12%
 
 1. 點選&#x200B;**[!UICONTROL 儲存]**。 新建立的「影像集」(Image Set)會顯示在您建立它的資料夾中。
 
-## 查看影像集{#viewing-image-sets}
+## 檢視影像集 {#viewing-image-sets}
 
 您可以在用戶介面中建立影像集，或自動使用[批集預設集](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)。
 
@@ -199,7 +199,7 @@ ht-degree: 12%
 >
 >您可以透過使用者介面來檢視集，如[編輯影像集](#editing-image-sets)所述。
 
-## 編輯影像集{#editing-image-sets}
+## 編輯影像集 {#editing-image-sets}
 
 您可以對影像集執行各種編輯任務，如：
 
@@ -237,10 +237,10 @@ ht-degree: 12%
 
 1. 完成編輯時，點選「**[!UICONTROL 儲存]**」。
 
-## 預覽影像集{#previewing-image-sets}
+## 預覽影像集 {#previewing-image-sets}
 
 請參閱「預覽資產](previewing-assets.md)」。[
 
-## 發佈影像集{#publishing-image-sets}
+## 發佈影像集 {#publishing-image-sets}
 
 請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
