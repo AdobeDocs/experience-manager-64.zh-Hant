@@ -7,15 +7,15 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: ebe30c07-1d76-4338-b301-49591f981688
 feature: 資產管理
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 8%
 
 ---
 
-# 發佈Dynamic Media資產{#publishing-dynamic-media-assets}
+# 發佈Dynamic Media Assets {#publishing-dynamic-media-assets}
 
 您可以選取資產並點選&#x200B;**[!UICONTROL Publish]**&#x200B;以發佈Dynamic Media資產。 發佈動態媒體資產後，您就可以透過URL或內嵌方式，將其加入網頁。
 
@@ -44,7 +44,7 @@ ht-degree: 8%
 
 如需發佈集或資產的詳細資訊，請參閱發佈資產。[](managing-assets-touch-ui.md)
 
-## HTTP/2傳送Dynamic Media資產{#http-delivery-of-dynamic-media-assets}
+## HTTP/2傳送Dynamic Media資產 {#http-delivery-of-dynamic-media-assets}
 
 AEM現在支援透過HTTP/2傳送所有Dynamic Media內容（影像和影片）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可與接受託管資產的任何應用程式整合。 然後會透過HTTP/2通訊協定來傳送已發佈的資產。 此傳遞方法可改善瀏覽器和伺服器通訊的方式，讓所有Dynamic Media資產的回應和載入時間都更佳。
 
