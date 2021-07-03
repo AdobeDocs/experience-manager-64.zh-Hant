@@ -7,8 +7,8 @@ topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: 配置，Scene7模式
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 9e9108bbfcd1c71004e494e73891d3ab0afd4d74
+role: Admin,User,Developer
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5594'
 ht-degree: 3%
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 如果您使用針對不同環境（例如開發、測試和即時生產）設定的Adobe Experience Manager，則必須為每個環境設定Dynamic MediaCloud Services。
 
-## Dynamic Media - Scene7模式{#architecture-diagram-of-dynamic-media-scene-mode}的架構圖
+## Dynamic Media - Scene7模式的架構圖 {#architecture-diagram-of-dynamic-media-scene-mode}
 
 以下架構圖表說明Dynamic Media - Scene7模式的運作方式。
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![chlimage_1](assets/chlimage_1.png)
 
-## 在Scene7模式{#enabling-dynamic-media-in-scene-mode}中啟用Dynamic Media
+## 在Scene7模式中啟用Dynamic Media {#enabling-dynamic-media-in-scene-mode}
 
 [動態](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) 媒體預設為停用。若要運用Dynamic Media功能，您必須啟用此功能。
 
@@ -45,7 +45,7 @@ ht-degree: 3%
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
-## （可選）將Dynamic Media預設集和設定從6.3移轉至6.4零停機{#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## （選用）將Dynamic Media預設集和設定從6.3移轉至6.4零停機時間 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 如果您將Experience ManagerDynamic Media從6.3升級至6.4（包括零停機部署功能），請執行下列curl命令，將CRXDE Lite中的所有預設集和設定從`/etc`移轉至`/conf`。
 
@@ -61,13 +61,13 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
-## （選用）安裝Feature Pack 18912以大量移轉資產{#installing-feature-pack}
+## （選用）安裝Feature Pack 18912以移轉大量資產 {#installing-feature-pack}
 
 Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manager上從Dynamic Media — 混合模式或Dynamic Media Classic移轉至Dynamic Media - Scene7模式。 可從Adobe Professional Services取得。
 
 如需詳細資訊，請參閱[安裝功能套件18912以移轉大量資產](bulk-ingest-migrate.md) 。
 
-## 設定Dynamic MediaCloud Services{#configuring-dynamic-media-cloud-services}
+## 設定Dynamic MediaCloud Services {#configuring-dynamic-media-cloud-services}
 
 先變更密碼，再設定Dynamic MediaCloud Services。 收到具有Dynamic Media憑證的布建電子郵件後，您必須[登入](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)至Dynamic Media Classic案頭應用程式，才能變更密碼。 預配電子郵件中提供的密碼是系統生成的，並且僅用於臨時密碼。 請務必更新密碼，以便使用正確的憑證來設定Dynamic MediaCloud Service。
 
@@ -117,7 +117,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 如果要進一步自訂配置，您可以選擇完成[（可選）在Dynamic Media - Scene7模式](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)中配置高級設定下的任何任務。
 
-## （選用）在Dynamic Media - Scene7模式{#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}中設定進階設定
+## （選用）在Dynamic Media - Scene7模式中設定進階設定 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
 如果您想進一步自訂Dynamic Media - Scene7模式的設定和設定，或最佳化其效能，您可以完成下列一或多個選用工作：
 
@@ -141,7 +141,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 * [為不支援的格式添加MIME類型](#adding-mime-types-for-unsupported-formats)
 * [建立批集預設集以自動生成影像集和回轉集](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
-#### 發佈影像伺服器{#publishing-setup-for-image-server}的設定
+#### 影像伺服器的發佈設定 {#publishing-setup-for-image-server}
 
 「發佈設定」設定決定預設如何從Dynamic Media傳送資產。 如果未指定任何設定，Dynamic Media會根據「發佈設定」中定義的預設設定來傳送資產。 例如，傳送不包含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
 
@@ -157,7 +157,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 * **[!UICONTROL 相容性屬性]**  — 此設定可讓文字層中的前導和尾隨段落，如同在3.6版中一樣處理，以提供回溯相容性。
 * **[!UICONTROL 本地化支援]**  — 這些設定可讓您管理多個地區設定屬性。它也可讓您指定地區對應字串，以便定義要在檢視器中支援各種工具提示的語言。 有關設定本地化支援的詳細資訊，請參閱[實施本地化支援時的重要注意事項](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html#image-server)。
 
-#### 配置應用程式常規設定{#configuring-application-general-settings}
+#### 配置應用程式常規設定 {#configuring-application-general-settings}
 
 若要開啟「[!UICONTROL 應用程式一般設定]」頁面，請在「Dynamic Media Classic全域導覽列」中，點選「**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**」。
 
@@ -180,7 +180,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 >
 >依預設，當您選取「轉譯」時，系統會顯示15個轉譯，當您在資產的詳細資料檢視中選取「檢視器 ******** 」時，系統會顯示15個檢視器預設集。您可以提高此限制。請參閱[增加顯示](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)或[的影像預設集數目增加顯示](managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)的檢視器預設集數目。
 
-#### 配置顏色管理{#configuring-color-management}
+#### 配置顏色管理 {#configuring-color-management}
 
 動態媒體色彩管理可讓您為資產加上色彩校正。 透過色彩校正，擷取的資產可保留其色彩空間（RGB、CMYK、灰色）和內嵌的色彩描述檔。 當您請求動態轉譯時，會使用CMYK、RGB或灰色輸出將影像顏色校正到目標顏色空間。 請參閱[設定影像預設集](managing-image-presets.md)。
 
@@ -209,7 +209,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 * 傳回RGB輸出的動態轉譯，會在`sRGB`色域中傳回。
 * 傳回CMYK輸出的動態轉譯，會在`WebCoated`色域中傳回。
 
-#### 編輯支援格式的MIME類型{#editing-mime-types-for-supported-formats}
+#### 編輯支援格式的MIME類型 {#editing-mime-types-for-supported-formats}
 
 您可以定義由Dynamic Media處理的資產類型，並自訂進階資產處理參數。 例如，您可以指定資產處理參數以執行下列動作：
 
@@ -242,7 +242,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 1. 在頁面的左上角，點選&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;以返回Experience Manager。
 
-#### 為不支援的格式添加自定義MIME類型{#adding-custom-mime-types-for-unsupported-formats}
+#### 為不支援的格式添加自定義MIME類型 {#adding-custom-mime-types-for-unsupported-formats}
 
 您可以針對Experience Manager資產中不支援的格式新增自訂MIME類型。 若要確保CRXDE Lite未刪除您在Experience Manager中新增的任何新節點，請將MIME類型移至&#x200B;**[!UICONTROL image_]**&#x200B;之前，並將其啟用值設為&#x200B;**[!UICONTROL false]**。
 
@@ -296,7 +296,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 1. 在CRXDE Lite頁面的左上角附近，按一下「**[!UICONTROL 全部保存]**」。
 
-#### 建立批集預設集以自動生成影像集和回轉集{#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
+#### 建立批集預設集以自動生成影像集和回轉集 {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
 在資產上傳至Dynamic Media時，使用批次集預設集來自動建立影像集或回轉集。
 
@@ -461,7 +461,7 @@ spin-01-01
 
    啟動預設會確保當您將資產上傳至Dynamic Media時，會套用批次集預設集以產生該集。
 
-### （可選）調整Dynamic Media - Scene7模式的效能{#optional-tuning-the-performance-of-dynamic-media-scene-mode}
+### （選用）調整Dynamic Media - Scene7模式的效能 {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 為了讓Dynamic Media - Scene7模式順利執行，Adobe建議使用下列同步效能/可擴充性微調提示：
 
@@ -494,7 +494,7 @@ Adobe建議對PDF、PostScript®和PSD檔案使用以下「調整」作業參數
 
 若要更新任何這些參數，請遵循[啟用MIME類型型資產/Dynamic Media Classic上傳工作參數support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)中的步驟。
 
-#### 更新Granite暫時工作流隊列{#updating-the-granite-transient-workflow-queue}
+#### 更新Granite暫時工作流程佇列 {#updating-the-granite-transient-workflow-queue}
 
 「Granite傳輸工作流程」佇列用於&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程。 在Dynamic Media中，它用於影像擷取和處理。
 
@@ -518,7 +518,7 @@ Adobe建議對PDF、PostScript®和PSD檔案使用以下「調整」作業參數
 
 1. 點選&#x200B;**[!UICONTROL 儲存]**。
 
-#### 更新Granite工作流隊列{#updating-the-granite-workflow-queue}
+#### 更新Granite工作流程佇列 {#updating-the-granite-workflow-queue}
 
 Granite工作流程佇列用於非暫時性的工作流程。 在Dynamic Media中，它用於透過&#x200B;**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程處理視訊。
 
@@ -540,7 +540,7 @@ Granite工作流程佇列用於非暫時性的工作流程。 在Dynamic Media�
 
 1. 點選&#x200B;**[!UICONTROL 儲存]**。
 
-#### 更新Scene7上傳連線{#updating-the-scene-upload-connection}
+#### 更新Scene7上傳連線 {#updating-the-scene-upload-connection}
 
 Scene7上傳連線設定會將Experience Manager資產同步至Dynamic Media Classic伺服器。
 
@@ -559,7 +559,7 @@ Scene7上傳連線設定會將Experience Manager資產同步至Dynamic Media Cla
 
 1. 點選&#x200B;**[!UICONTROL 儲存]**。
 
-### （可選）篩選復寫的資產{#optional-filtering-assets-for-replication}
+### （選用）篩選復寫資產 {#optional-filtering-assets-for-replication}
 
 在非Dynamic Media部署中，您會從Experience Manager製作環境復寫&#x200B;*所有*&#x200B;資產（包括影像和視訊）至Experience Manager發佈節點。 此工作流程是必要的，因為Experience Manager發佈伺服器也會傳送資產。
 
@@ -567,7 +567,7 @@ Scene7上傳連線設定會將Experience Manager資產同步至Dynamic Media Cla
 
 篩選器可讓您透過&#x200B;*排除*&#x200B;資產，避免複製到Experience Manager發佈節點。
 
-#### 使用復寫{#using-default-asset-filters-for-replication}的預設資產篩選器
+#### 針對復寫使用預設資產篩選器 {#using-default-asset-filters-for-replication}
 
 如果您是使用Dynamic Media進行影像處理、或影片，或兩者皆使用，則可使用Adobe依原樣提供的預設篩選器。 下列篩選器預設為作用中：
 
@@ -604,7 +604,7 @@ Scene7上傳連線設定會將Experience Manager資產同步至Dynamic Media Cla
 >
 >篩選器會套用至MIME類型，且不能是路徑專屬的。
 
-#### 自訂復寫的資產篩選器{#customizing-asset-filters-for-replication}
+#### 自訂復寫的資產篩選器 {#customizing-asset-filters-for-replication}
 
 1. 在Experience Manager中，點選Experience Manager標誌以存取全域導覽主控台，並點選&#x200B;**[!UICONTROL 工具]**&#x200B;圖示並導覽至&#x200B;**[!UICONTROL 一般]** > **[!UICONTROL CRXDE Lite]**。
 1. 在左側資料夾樹中，導覽至`/etc/replication/agents.author/publish/jcr:content/damRenditionFilters`以檢閱篩選器。
