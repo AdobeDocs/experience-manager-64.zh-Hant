@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
 feature: 資產管理，開發人員工具
-role: Business Practitioner
+role: User
 exl-id: 9b4f16e6-dd91-4179-9629-576d801fcf43
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 您也可以將這些格式的輸出下載到您的本機系統。
 
-## 建立宣傳資料{#creating-a-collateral}
+## 建立宣傳資料 {#creating-a-collateral}
 
 假設您想要製作可打印的數位宣傳資料，例如手冊、傳單和廣告，以供即將推出的活動之用，並與全球直銷商分享。 根據範本建立宣傳資料有助於跨管道提供統一的客戶體驗。 設計人員可以使用創意解決方案(例如InDesign)建立促銷活動範本（單頁或多頁），並將範本上傳至AEM Assets供您使用。 在建立宣傳資料之前，請先將一個或多個INDD模板上載到Experience Manager，並提前提供。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 1. （可選）按一下/點選&#x200B;**[!UICONTROL 標籤]**&#x200B;欄位旁的&#x200B;**[!UICONTROL 標籤]**&#x200B;圖示，然後為手冊選取一或多個標籤。 按一下/點選&#x200B;**[!UICONTROL 確認]**&#x200B;以確認您的選取項目。
 
-   ![chlimage_1-311](assets/chlimage_1-310.png)
+   ![chlimage_1-310](assets/chlimage_1-310.png)
 
 1. 按一下&#x200B;**[!UICONTROL 建立]**。對話方塊會確認已建立新手冊。 按一下/點選&#x200B;**[!UICONTROL 開啟]**&#x200B;以在編輯模式中開啟手冊。
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
-## 編輯宣傳資料{#editing-a-collateral}
+## 編輯宣傳資料 {#editing-a-collateral}
 
 建立宣傳資料後，您可以立即編輯它。 或者，您也可以從「範本」頁面或資產頁面開啟它。
 
@@ -166,7 +166,7 @@ ht-degree: 0%
 
    ![chlimage_1-324](assets/chlimage_1-324.png)
 
-## 合併宣傳資料{#merge-collateral}
+## 合併抵押品 {#merge-collateral}
 
 
 1. 按一下或點選「**[!UICONTROL 工具>資產]**」。
