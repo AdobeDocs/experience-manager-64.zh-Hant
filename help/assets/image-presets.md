@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 exl-id: 07a4f315-a60e-456b-b02d-035b3f6ad9ad
 feature: 影像預設集
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 10%
 
 ---
 
-# 套用Dynamic Media影像預設集{#applying-image-presets}
+# 套用Dynamic Media影像預設集 {#applying-image-presets}
 
 「影像預設集」可讓資產以動態方式傳送不同大小、不同格式的影像，或以其他動態產生的影像屬性。 在導出影像時，可以選擇預設集，該預設集還會按照管理員指定的規範重新格式化影像。
 
