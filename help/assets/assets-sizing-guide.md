@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 feature: 資產管理
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 6115e5e8-9cf5-417c-91b3-0c0c9c278b5b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1860'
 ht-degree: 0%
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 [取得檔案](assets/disk_sizing_tool.xlsx)
 
-### 共用資料儲存區{#shared-datastores}
+### 共用資料存放區 {#shared-datastores}
 
 對於大型資料存放區，您可以透過網路連接硬碟上的共用檔案資料存放區或S3資料存放區來實作共用資料存放區。 在這種情況下，個別執行個體不需要維護二進位檔的復本。 此外，共用資料存放區可促進無二進位檔復寫，並有助於減少將資產複製至發佈環境或卸載執行個體的頻寬。
 
-#### 使用案例{#use-cases}
+#### 使用案例 {#use-cases}
 
 資料存放區可在主要製作執行個體和備用製作執行個體之間共用，以將更新備用執行個體與主要執行個體中所做變更所花費的時間減至最少。 Adobe建議在主要製作例項和卸載製作例項之間共用資料存放區，以減少工作流程卸載時的開銷。 您也可以在製作與發佈執行個體之間共用資料存放區，以將復寫期間的流量減至最少。
 
@@ -69,19 +69,19 @@ ht-degree: 0%
 
 由於有些缺陷，因此不建議在所有情況下共用資料存放區。
 
-#### 單點故障{#single-point-of-failure}
+#### 單點故障 {#single-point-of-failure}
 
 有共用資料儲存，會在基礎架構中引入單點故障。 假設您的系統有一個製作和兩個發佈執行個體，每個都有自己的資料存放區。 如果其中任何一個崩潰，其他兩個仍然可以繼續運行。 但是，如果資料儲存被共用，則單個磁碟故障可能會破壞整個基礎架構。 因此，請務必維護共用資料存放區的備份，以便快速還原資料存放區。
 
 與常規磁碟架構相比，部署AWS S3服務可顯著降低故障的可能性，因此更適合用於共用資料儲存。
 
-#### 增加複雜性{#increased-complexity}
+#### 增加複雜性 {#increased-complexity}
 
 共用資料儲存區也增加了操作的複雜性，例如垃圾收集。 通常，只需按一下即可啟動獨立資料儲存的垃圾收集。 但是，共用資料儲存區除了在單個節點上運行實際集合之外，還需要對使用資料儲存的每個成員執行標籤掃描操作。
 
 對於AWS操作，實施單個中心位置（通過S3），而不是構建EBS卷的RAID陣列，可以顯著抵消系統的複雜性和操作風險。
 
-#### 效能考量{#performance-concerns}
+#### 績效考量 {#performance-concerns}
 
 共用資料存放區需要將二進位檔案儲存在所有執行個體之間共用的網路裝載驅動器上。 由於這些二進位檔是透過網路存取，因此系統效能會受到不利影響。 通過使用快速網路連接到快速磁碟陣列，可以部分減輕影響。 然而，這是個代價高昂的提議。 在AWS操作中，所有磁碟都是遠程磁碟，需要網路連接。 執行個體啟動或停止時，短暫的卷會丟失資料。
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 S3實作中的延遲是由背景寫入執行緒所引入。 備份過程必須考慮此延遲和任何卸載過程。 卸載工作開始時，S3資產可能不存在於S3中。 此外，備份時，Lucene索引可能仍不完整。 它適用於寫入S3資料存放區並從其他執行個體存取的任何時效檔案。
 
-### 節點儲存/文檔儲存{#node-store-document-store}
+### 節點儲存/文檔儲存 {#node-store-document-store}
 
 由於以下資源消耗，很難獲得NodeStore或DocumentStore的精確大小調整圖：
 
@@ -132,7 +132,7 @@ AEM Assets有許多使用案例，讓網路效能比我們許多AEM專案更重�
 
 此外，您還可以在Configuration Manager中編輯`com.day.cq.dam.commons.handler.StandardImageHandler`元件的閾值大小屬性，以使用大於零的中間臨時檔案。
 
-## 資產數上限{#maximum-number-of-assets}
+## 資產數上限 {#maximum-number-of-assets}
 
 <!-- Currently, Adobe has not tested the system for loading greater than 8 million assets. There are limitations both on the number of documents that can exist in an Oak repository and the number of files that can exist in a datastore.
 
@@ -144,6 +144,6 @@ While the limit for the number of nodes in a repository has not been determined,
 
 由於像素大小等其他因素會影響處理，因此很難準確估計AEM專用專用堆支援的TIFF檔案(OOTB)的大小。 AEM可以處理大小為255 MB OOTB的檔案，但無法處理大小為18 MB的檔案，因為後者包含的像素數量比前者要高得多。
 
-## 資產大小{#size-of-assets}
+## 資產規模 {#size-of-assets}
 
 依預設，AEM可讓您上傳檔案大小最多2 GB的資產。 若要在AEM中上傳超大型資產，請參閱[上傳超大型資產的設定](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)。
