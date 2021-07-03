@@ -3,16 +3,16 @@ title: 使用媒體處理常式和工作流程處理資產
 description: 了解各種媒體處理常式，以及如何在工作流程中使用這些處理常式來執行資產上的工作。
 contentOwner: AG
 feature: 工作流程，轉譯
-role: Business Practitioner
+role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2230'
 ht-degree: 3%
 
 ---
 
-# 使用媒體處理常式和工作流程處理資產{#processing-assets-using-media-handlers-and-workflows}
+# 使用媒體處理常式和工作流程處理資產 {#processing-assets-using-media-handlers-and-workflows}
 
 Adobe Experience Manager Assets提供一組處理資產的預設工作流程和媒體處理常式。 工作流程會定義典型的資產管理和處理任務，然後將特定任務委派給媒體處理程式，例如縮圖產生或中繼資料擷取。
 
@@ -28,7 +28,7 @@ Adobe Experience Manager Assets提供一組處理資產的預設工作流程和�
 >
 >如需Experience Manager資產支援的所有格式及各格式支援的功能說明，請參閱[資產支援的格式](assets-formats.md)頁面。
 
-## 預設媒體處理程式{#default-media-handlers}
+## 預設媒體處理常式 {#default-media-handlers}
 
 下列媒體處理常式可在Experience Manager資產內使用，並處理最常見的MIME類型：
 
@@ -60,7 +60,7 @@ Adobe Experience Manager Assets提供一組處理資產的預設工作流程和�
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-## 在工作流程中使用媒體處理常式，對資產{#using-media-handlers-in-workflows-to-perform-tasks-on-assets}執行工作
+## 在工作流程中使用媒體處理常式，對資產執行工作 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
 媒體處理常式是與工作流程搭配使用的服務。
 
@@ -70,7 +70,7 @@ Experience Manager有一些處理資產的預設工作流程。 要查看它們�
 
 下列範例說明如何增強&#x200B;**[!UICONTROL AEM Assets同步]**&#x200B;工作流程，以便為除PDF檔案外的所有資產產生子資產。
 
-### 禁用/啟用媒體處理程式{#disabling-enabling-a-media-handler}
+### 禁用/啟用媒體處理程式 {#disabling-enabling-a-media-handler}
 
 媒體處理常式可透過Apache Felix Web Management Console停用或啟用。 停用媒體處理常式時，不會對資產執行其工作。
 
@@ -81,11 +81,11 @@ Experience Manager有一些處理資產的預設工作流程。 要查看它們�
 1. 重新整理頁面：媒體處理程式旁會顯示圖示，指出其已停用。
 1. 要啟用媒體處理程式，請按一下媒體處理程式名稱旁的&#x200B;**[!UICONTROL 啟用]**。
 
-### 建立媒體處理程式{#creating-a-new-media-handler}
+### 建立媒體處理常式 {#creating-a-new-media-handler}
 
 若要支援新的媒體類型或對資產執行特定工作，必須建立媒體處理常式。 本節說明如何繼續。
 
-#### 重要類和介面{#important-classes-and-interfaces}
+#### 重要類和介面 {#important-classes-and-interfaces}
 
 開始實作的最佳方式是繼承所提供抽象實作的內容，這種實作會處理大部分內容，並提供合理的預設行為：`com.day.cq.dam.core.AbstractAssetHandler`類。
 
@@ -126,7 +126,7 @@ package my.own.stuff;/&amp;ast;&amp;ast&amp;ast;@scr.component inherit=&quot;tru
 * `com.day.cq.dam.core.AbstractAssetHandler` 類別：此類別可做為所有其他資產處理常式實施的基礎，並提供常用功能。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 類別：此類別可做為所有其他資產處理常式實施的基礎，並提供常用功能以及子資產擷取的常用功能。
 
-#### 範例：建立特定文本處理程式{#example-create-a-specific-text-handler}
+#### 範例：建立特定文字處理常式 {#example-create-a-specific-text-handler}
 
 在本節中，將建立特定的文本處理程式，該處理程式生成帶有水印的縮略圖。
 
@@ -438,7 +438,7 @@ package my.own.stuff;/&amp;ast;&amp;ast&amp;ast;@scr.component inherit=&quot;tru
 1. 複製套件組合`myBundle-0.0.1-SNAPSHOT.jar`並將其儲存在`/apps/myApp/install`下（例如使用WebDAV）。 新的文字處理常式現在在Experience Manager中處於作用中狀態。
 1. 在您的瀏覽器中，開啟Apache Felix Web Management Console。 選擇「元件」頁簽並禁用預設文本處理程式`com.day.cq.dam.core.impl.handler.TextHandler`。
 
-## 基於命令行的媒體處理程式{#command-line-based-media-handler}
+## 基於命令行的媒體處理程式 {#command-line-based-media-handler}
 
 Experience Manager可讓您在工作流程中執行任何命令列工具，以轉換資產（例如ImageMagick）並將新轉譯新增至資產。 在托管Experience Manager伺服器的磁碟上安裝命令行工具，並向工作流添加和配置進程步驟。 叫做`CommandLineProcess`的叫用過程會根據特定MIME類型進行篩選，並根據新格式副本建立多個縮圖。
 
@@ -463,7 +463,7 @@ Experience Manager可讓您在工作流程中執行任何命令列工具，以�
 * 刪除臨時目錄。
 * 根據這些轉譯建立縮圖（如果指定）。 縮圖的數字和尺寸由步驟的參數定義。
 
-### 使用ImageMagick {#an-example-using-imagemagick}的範例
+### 使用ImageMagick的範例 {#an-example-using-imagemagick}
 
 以下示例說明如何設定命令行處理步驟。 每次在Experience Manager伺服器上將具有MIME類型gif或tiff的資產新增至`/content/dam`時，原始資產的翻轉影像會與另外三個縮圖（140x100、48x48和10x250）一起建立。
 
@@ -499,7 +499,7 @@ Experience Manager可讓您在工作流程中執行任何命令列工具，以�
 1. 前往&#x200B;**[!UICONTROL CQ5 DAM]**&#x200B;主控台，例如`http://localhost:4502/libs/wcm/core/content/damadmin.html`。
 1. 開啟資產`myImage.tiff`，並確認已建立翻轉的影像和三個縮圖。
 
-#### 配置CommandLineProcess進程步驟{#configuring-the-commandlineprocess-process-step}
+#### 配置CommandLineProcess進程步驟 {#configuring-the-commandlineprocess-process-step}
 
 本節介紹如何設定 **[!UICONTROL 的Process]**`CommandLineProcess`參數。使用逗號分隔[!UICONTROL Process Arguments]的值，但不要以空格開頭值。
 
