@@ -3,9 +3,9 @@ title: 為您的數位資產加上浮水印
 description: 了解如何使用浮水印功能為資產加上數位浮水印。
 contentOwner: AG
 feature: 資產管理
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: ed01143c-b516-44f8-aceb-ad2e3f0106b2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '325'
 ht-degree: 3%
@@ -41,7 +41,7 @@ Adobe Experience Manager(AEM)Assets可讓您為影像加上數位浮水印，協
 
 若要以程式設計方式或使用動態資訊為PDF檔案加上浮水印，請考慮使用[AEM Document Services](/help/forms/using/overview-aem-document-services.md)產品。
 
-## 提示和限制{#tips-limitations}
+## 提示和限制 {#tips-limitations}
 
 * 僅支援基於文本的水印。 即使在建立[!UICONTROL 添加水印過程]時可以上載影像，影像也不會用作水印。
 * 僅支援對PNG和JPEG檔案加上水印。 其他資產格式不會加上浮水印。
