@@ -3,16 +3,16 @@ title: GQL全文搜索
 description: 探索AEM Assets中的GQL全文搜尋功能。 使用它根據特定中繼資料（例如標題、說明和作者名稱）來搜尋資產。
 contentOwner: AG
 feature: 搜尋，中繼資料
-role: Business Practitioner
+role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '879'
 ht-degree: 2%
 
 ---
 
-# GQL全文搜索{#gql-full-text-search}
+# GQL全文搜索 {#gql-full-text-search}
 
 探索AEM Assets中的GQL全文搜尋功能。 使用它根據特定中繼資料（例如標題、說明和作者名稱）來搜尋資產。
 
@@ -22,7 +22,7 @@ GQL全文搜尋功能可讓您根據特定中繼資料來搜尋資產，例如�
 
 例如，若要搜尋標題為「Target」的資產，請執行下列步驟：
 
-## 搜尋資產{#searching-assets}
+## 搜尋資產 {#searching-assets}
 
 1. 在「資產」使用者介面的工具列中，按一下或點選&#x200B;**[!UICONTROL Search]**&#x200B;圖示，以顯示「Omnisearch」方塊。
 
@@ -63,10 +63,10 @@ GQL全文搜尋功能可讓您根據下列中繼資料屬性來搜尋資產。 �
 | [!UICONTROL 版權擁有者] | 版權人：&quot;Adobe Systems&quot; |
 | [!UICONTROL 參與者] | 貢獻者：John |
 | [!UICONTROL 使用條款] | 使用條款：「保留CopyRights」 |
-| [!UICONTROL 已建立] | 已建立：YYYY-MM-DDTHH:MM:SS.000+05:30。YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL 已建立] | 已建立:YYYY-MM-DDTHH:MM:SS.000+05:30。YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 到期日] | expires:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL 準時] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30。YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL 關閉時間] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30。YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL 準時] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL 關閉時間] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL 時間範圍] （過期日期、時間） | 面向欄位：下界……上界限 |
 | [!UICONTROL 路徑] | /content/dam/&lt;資料夾名稱> |
 | [!UICONTROL PDF 標題] | pdftitle:&quot;Adobe檔案&quot; |
@@ -120,7 +120,7 @@ GQL全文搜尋功能可讓您根據下列中繼資料屬性來搜尋資產。 �
 
 全文搜索還支援 — 、^等運算子。 若要將這些字母作為字串文本進行搜索，請以雙引號將搜索表達式括住。 例如，使用「筆記本 — 美容」，而不是「筆記本 — 美容」。
 
-## Boosting搜索{#boosting-search}
+## Boosting Search {#boosting-search}
 
 您可以改善特定資產的關鍵字相關性，以協助根據關鍵字提升搜尋。 換句話說，當您根據這些關鍵字進行搜尋時，您促銷特定關鍵字的影像會顯示在搜尋結果頂端。
 
