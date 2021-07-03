@@ -3,16 +3,16 @@ title: 集合、片段和程式碼片段範本的多租用戶
 description: 根據客戶組織隔離CRX存放庫中的內容，以防止未經授權的存取。
 contentOwner: AG
 feature: 集合
-role: Architect,Administrator,Leader
+role: Architect,Admin,Leader
 exl-id: d00a671a-6707-4941-868d-fa13510b7b60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 1%
 
 ---
 
-# 集合、片段和程式碼片段範本的多租用戶{#multi-tenancy-for-collections-snippets-and-snippet-templates}
+# 集合、片段和程式碼片段範本的多租用戶 {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
 多租用戶功能可讓您根據組織首碼和組織ID來分隔CRX中的內容，以保護內容不會受到其他組織的使用者未經授權的存取。
 
