@@ -6,20 +6,20 @@ uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
 feature: 標籤，中繼資料，智慧標籤
-role: Business Practitioner
+role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 10%
 
 ---
 
-# 智慧內容服務培訓指南{#smart-content-service-training-guidelines}
+# 智慧內容服務訓練准則 {#smart-content-service-training-guidelines}
 
 為了能有效標籤您的品牌影像，智慧內容服務要求訓練影像符合特定准則。
 
-## 培訓指南{#guidelines-for-training}
+## 培訓准則 {#guidelines-for-training}
 
 為獲得最佳結果，培訓集中的影像應符合以下准則：
 
