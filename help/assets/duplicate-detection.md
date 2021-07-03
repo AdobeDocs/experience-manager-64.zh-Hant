@@ -3,16 +3,16 @@ title: 啟用重複檢測
 description: 了解如何在AEM中啟用重複資產的偵測。
 contentOwner: AG
 feature: 資產管理，資產報表
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
-# 啟用重複檢測{#enabling-duplicate-detection}
+# 啟用重複檢測 {#enabling-duplicate-detection}
 
 如果您嘗試上傳Adobe Experience Manager(AEM)資產中存在的資產，重複偵測功能會將其識別為重複。 預設會停用重複偵測。 要啟用該功能，請執行以下步驟：
 
