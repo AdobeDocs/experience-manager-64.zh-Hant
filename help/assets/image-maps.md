@@ -3,16 +3,16 @@ title: 新增影像地圖
 description: 了解如何將超連結影像地圖新增至影像資產。
 contentOwner: AG
 feature: 資產管理
-role: Business Practitioner, Administrator
+role: User,Admin
 exl-id: d6b04891-12d3-4255-a156-2e9000474fd1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '290'
 ht-degree: 0%
 
 ---
 
-# 添加影像映射{#adding-image-maps}
+# 新增影像地圖 {#adding-image-maps}
 
 了解如何將超連結影像地圖新增至影像資產。
 
