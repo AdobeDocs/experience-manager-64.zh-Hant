@@ -3,16 +3,16 @@ title: 設定Assets Insights
 description: 了解如何在AEM Assets中設定Assets Insights。
 contentOwner: AG
 feature: 資產分析，資產報表
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 10%
 
 ---
 
-# 設定資產前瞻分析{#configuring-asset-insights}
+# 設定Assets Insights {#configuring-asset-insights}
 
 Adobe Experience Manager(AEM)Assets會從Adobe Analytics擷取協力廠商網站所使用AEM資產的使用情況資料。 若要讓Assets Insights能夠擷取此資料並產生深入分析，請先設定功能以與Adobe Analytics整合。
 
@@ -33,7 +33,7 @@ Adobe Experience Manager(AEM)Assets會從Adobe Analytics擷取協力廠商網站
 1. AEM驗證您的憑證後，從&#x200B;**[!UICONTROL 報表套裝]**&#x200B;清單中，選擇您要讓Assets Insights擷取資料的Adobe Analytics報表套裝。 按一下&#x200B;**[!UICONTROL 「新增」]**。
 1. 在AEM設定您的報表套裝後，按一下/點選&#x200B;**[!UICONTROL Done]**。
 
-## 頁面追蹤器{#page-tracker}
+## 頁面追蹤器 {#page-tracker}
 
 設定Analytics帳戶後，系統會為您產生頁面追蹤器程式碼。 若要啟用Assets Insights以追蹤第三方網站中使用的AEM資產，請在網站代碼中加入頁面追蹤器代碼。 使用AEM Assets中的頁面追蹤器公用程式來產生頁面追蹤器程式碼。 如需如何將您的頁面追蹤器程式碼納入第三方網頁的詳細資訊，請參閱[在網頁中使用頁面追蹤器及內嵌程式碼](touch-ui-using-page-tracker.md)。
 
