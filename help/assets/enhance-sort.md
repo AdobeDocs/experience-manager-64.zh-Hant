@@ -3,16 +3,16 @@ title: 增強AEM中的資產排序功能
 description: 了解AEM Assets如何透過伺服器端排序功能，一次性排序資料夾資產或搜尋查詢，而非在用戶端以批次方式排序資產。
 contentOwner: AG
 feature: 搜尋
-role: Business Practitioner
+role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 3%
 
 ---
 
-# 增強AEM {#enhanced-sorting-of-assets-in-aem}中的資產排序功能
+# 增強AEM中的資產排序功能 {#enhanced-sorting-of-assets-in-aem}
 
 了解AEM Assets如何透過伺服器端排序功能，一次性排序資料夾資產或搜尋查詢，而非在用戶端以批次方式排序資產。
 
@@ -20,7 +20,7 @@ Adobe Experience Manager(AEM)Assets的搜尋功能已經過增強，現在可以
 
 AEM Assets部署了伺服器端排序功能，可一次排序資料夾或搜尋查詢中的整組資產（無論大小），而非在用戶端依批次排序。 這樣，預先擷取的結果便可快速顯示在使用者介面上，讓排序操作更具回應性和快速性。
 
-## 在清單檢視{#sorting-assets-in-list-view}中排序資產
+## 在清單檢視中排序資產 {#sorting-assets-in-list-view}
 
 AEM Assets可讓您根據下列欄位來排序資料夾資產：
 
@@ -53,7 +53,7 @@ AEM Assets可讓您根據下列欄位來排序資料夾資產：
 >
 >若要排序`Name`或`Title`欄中的值，請覆蓋`/libs/dam/gui/content/commons/availablecolumns`並將`sortable`的值變更為`True`。
 
-## 排序搜尋結果中的資產{#sorting-assets-in-search-results}
+## 排序搜尋結果中的資產 {#sorting-assets-in-search-results}
 
 您可以根據下列欄位來排序搜尋結果：
 
@@ -73,7 +73,7 @@ AEM Assets可讓您根據下列欄位來排序資料夾資產：
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
-## 在時間軸{#sorting-assets-in-timeline}中排序資產
+## 在時間軸中排序資產 {#sorting-assets-in-timeline}
 
 AEM Assets可讓您按時間順序排序時間軸項目，例如註解、版本、工作流程和活動。
 
