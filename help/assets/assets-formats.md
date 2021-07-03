@@ -3,16 +3,16 @@ title: AEM Assets支援的檔案格式
 description: AEM Assets支援的檔案格式和MIME類型清單以及每種格式支援的功能。
 contentOwner: AG
 feature: 資產管理，轉譯
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 9%
 
 ---
 
-# AEM Assets {#assets-supported-formats}支援的檔案格式
+# AEM Assets支援的檔案格式 {#assets-supported-formats}
 
 AEM Assets支援多種檔案格式，而且各種功能對不同MIME類型的支援也各有不同。
 
@@ -26,7 +26,7 @@ AEM Assets支援多種檔案格式，而且各種功能對不同MIME類型的支
 | * | 支援附加功能 |
 | - | 不適用 |
 
-## 光柵影像格式{#supported-raster-image-formats}
+## 光柵影像格式 {#supported-raster-image-formats}
 
 資產管理功能支援的點陣影像格式如下：
 
@@ -78,7 +78,7 @@ Dynamic Media功能支援的點陣影像格式如下：
 
 * 對於EPS檔案， PostScript文檔結構約定(PS-Adobe)3.0版或更新版本支援元資料回寫。
 
-## Dynamic Media {#unsupported-image-formats-dynamic-media}中不支援的點陣影像格式
+## Dynamic Media不支援的點陣影像格式 {#unsupported-image-formats-dynamic-media}
 
 下列清單說明Dynamic Media支援的點陣影像檔案格式的子類型，這些格式為&#x200B;*not*。
 
@@ -91,7 +91,7 @@ Dynamic Media功能支援的點陣影像格式如下：
 * 具有浮點資料的TIFF檔案。
 * 具有Lab色域的TIFF檔案。
 
-## PDF模擬轉譯器庫{#supported-pdf-rasterizer-library}
+## PDF模擬轉譯器程式庫 {#supported-pdf-rasterizer-library}
 
 Adobe PDF模擬轉譯器程式庫會為大型且內容密集的Adobe Illustrator和PDF檔案產生高品質的縮圖和預覽。 Adobe建議針對下列項目使用PDF模擬轉譯器程式庫：
 
@@ -101,7 +101,7 @@ Adobe PDF模擬轉譯器程式庫會為大型且內容密集的Adobe Illustrator
 
 請參閱[使用PDF模擬轉譯器](aem-pdf-rasterizer.md)。
 
-## 影像轉碼庫{#supported-image-transcoding-library}
+## 影像轉碼程式庫 {#supported-image-transcoding-library}
 
 Adobe影像轉碼程式庫是執行核心影像處理功能（例如編碼、轉碼、重新取樣和調整大小）的影像處理解決方案。
 
@@ -109,11 +109,11 @@ Adobe影像轉碼程式庫是執行核心影像處理功能（例如編碼、轉
 
 請參閱[影像轉碼程式庫](imaging-transcoding-library.md)。
 
-## Camera Raw{#supported-camera-raw}
+## Camera Raw {#supported-camera-raw}
 
 Adobe Camera Raw資料庫可讓AEM Assets擷取原始影像。 請參閱[Camera Raw支援](camera-raw.md)。
 
-## 文檔格式{#supported-document-formats}
+## 檔案格式 {#supported-document-formats}
 
 資產管理功能支援的文檔格式如下：
 
@@ -169,7 +169,7 @@ Dynamic Media功能支援的檔案格式如下：
 
 * 若要使用Dynamic Media為INDD檔案生成動態轉譯，請參閱[InDesign(INDD)檔案格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
 
-## 多媒體格式{#supported-multimedia-formats}
+## 多媒體格式 {#supported-multimedia-formats}
 
 | 格式 | 儲存 | 中繼資料管理 | 中繼資料擷取 | 縮圖產生 | FFMPEG轉碼 |
 |:---|:---:|:---:|:---:|:---:|:---:|
@@ -192,7 +192,7 @@ Dynamic Media功能支援的檔案格式如下：
 | WMV | ✓ | ✓ |  | * | * |
 | SWF | ✓ | ✓ |  |  |  |
 
-## Dynamic Media轉碼{#supported-input-video-formats-for-dynamic-media-transcoding}的輸入視訊格式
+## Dynamic Media轉碼的輸入視訊格式 {#supported-input-video-formats-for-dynamic-media-transcoding}
 
 | 影片副檔名 | 容器 | 建議的視訊轉碼器 | 不支援的視訊轉碼器 |
 |---|---|---|---|
@@ -213,7 +213,7 @@ Dynamic Media功能支援的檔案格式如下：
 | FLAC | 原生片段 | 免費無損音頻編解碼器 |  |
 | MJ2 | 動作JPEG 2000 | 運動JPEG 2000編解碼器 |  |
 
-## 存檔格式{#supported-archive-formats}
+## 封存格式 {#supported-archive-formats}
 
 下表說明支援的封存格式和通用DAM工作流程的適用性。
 
@@ -227,7 +227,7 @@ Dynamic Media功能支援的檔案格式如下：
 
 **†** 從PSD檔案中提取合併的影像。它是由Adobe Photoshop產生並包含在PSD檔案中的影像。 根據設定，合併的影像可能是實際影像，也可能不是實際影像。 使用`Deflate64`演算法建立的ZIP封存檔在AEM中的支援有限。 不支援存檔和取消存檔操作。 不過，上傳、瀏覽和下載等操作均受支援。
 
-## 其他支援的格式{#other-supported-formats}
+## 其他支援的格式 {#other-supported-formats}
 
 下表說明常見DAM工作流程對其他幾種檔案格式的適用性。
 
@@ -242,7 +242,7 @@ Dynamic Media功能支援的檔案格式如下：
 
 **#** DAM支援其他格式，用於儲存、版本設定、ACL、工作流程、發佈和中繼資料管理。
 
-## 支援的MIME類型{#supported-mime-types}
+## 支援的MIME類型 {#supported-mime-types}
 
 依預設，AEM會使用副檔名偵測檔案類型。 AEM可從檔案內容中偵測到。 若是後者，請在AEM Web主控台的[!UICONTROL Day CQ DAM Mime Type Service]中選取「從內容]偵測MIME」選項。[!UICONTROL 
 
