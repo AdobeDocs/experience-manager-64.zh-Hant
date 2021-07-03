@@ -3,20 +3,20 @@ title: 中繼資料結構參考
 description: '了解描述資產中繼資料的標準慣例，包括Dublin Core、IPTC和其他中繼資料結構。 '
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
 
 ---
 
-# 元資料架構參考{#metadata-schemata-reference}
+# 中繼資料結構參考 {#metadata-schemata-reference}
 
 以下引用包括有關特定元資料結構（按字母順序）的資訊，以及屬性及其定義的清單。
 
-## 都柏林核心{#dublin-core}
+## 都柏林核心 {#dublin-core}
 
 都柏林核心中繼資料提供一套標準化的慣例，用於描述資產，以便更容易找到。 在AEM Assets, Dublin Core描述數位資產，包括視訊、音效、影像和檔案。
 
