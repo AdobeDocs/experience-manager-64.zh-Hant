@@ -3,16 +3,16 @@ title: 將資產大量移轉至Adobe Experience Manager Assets
 description: 如何將資產帶入AEM、套用中繼資料、產生轉譯，以及啟用資產以發佈例項。
 contentOwner: AG
 feature: 移轉，轉譯，資產管理
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 11%
 
 ---
 
-# 資產移轉指南{#assets-migration-guide}
+# 資產移轉指南 {#assets-migration-guide}
 
 將資產移轉至AEM時，需考慮數個步驟。 從其當前主目錄中提取資產和元資料不屬於本文檔的範圍，因為它在實施之間差異很大。 相反地，本檔案說明如何將這些資產帶入AEM、套用其中繼資料、產生轉譯，以及啟用或發佈資產。
 
@@ -47,21 +47,21 @@ ht-degree: 11%
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
-### 禁用工作流{#disable-workflows}
+### 停用工作流程 {#disable-workflows}
 
 開始遷移之前，請禁用`DAM Update Asset`工作流的啟動器。 最好將所有資產內嵌至系統，然後批次執行工作流程。 如果您在移轉進行時已上線，您可以排程這些活動在非工作時間執行。
 
-### 載入標籤{#load-tags}
+### 載入標籤 {#load-tags}
 
 您可能已準備好將標籤分類套用至影像。 CSV資產匯入工具和中繼資料設定檔功能等工具可協助將標籤套用至資產自動化。 在此之前，請在Experience Manager中新增標籤。 [ACS AEM工具標籤製作器](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html)功能允許您使用載入到系統中的Microsoft Excel電子錶格填入標籤。
 
-### 擷取資產{#ingest-assets}
+### 內嵌資產 {#ingest-assets}
 
 將資產擷取至系統中時，效能和穩定性是重要考量。 在Experience Manager中載入大量資料時，請確保系統效能良好。 這樣可以最大限度地減少添加資料所需的時間，並有助於避免系統過載。 這有助於防止系統當機，特別是在已投入生產的系統中。
 
 將資產載入系統有兩種方法：使用HTTP的推送式方法，或使用JCR API的提取式方法。
 
-#### 推送HTTP {#push-through-http}
+#### 透過HTTP推送 {#push-through-http}
 
 Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客戶環境中。 Glutton是小型Java應用程式，會將所有資產從一個目錄載入至AEM執行個體上的另一個目錄。 您也可以使用工具（例如Perl指令碼）將資產張貼至存放庫，而不是使用Glutton。
 
@@ -72,13 +72,13 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 
 擷取資產的另一種方法是從本機檔案系統提取資產。 不過，如果您無法將外部硬碟或網路共用裝載至伺服器以執行提取式方法，則透過HTTP張貼資產是最佳選項。
 
-#### 從本地檔案系統{#pull-from-the-local-file-system}提取
+#### 從本地檔案系統提取 {#pull-from-the-local-file-system}
 
 [ACS AEM工具CSV資產匯入工具](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)從CSV檔案提取檔案系統中的資產和資產中繼資料，以匯入資產。 AEM Asset Manager API可用來將資產匯入系統，並套用已設定的中繼資料屬性。 理想情況下，資產會透過網路檔案裝載或外部驅動器裝載在伺服器上。
 
 當資產未通過網路傳輸時，整體效能會大大提高。 此方法通常是將資產載入存放庫的最有效方法。 此外，您可以透過單一步驟匯入所有資產和中繼資料，因為工具支援中繼資料擷取。 套用中繼資料不需要其他步驟，例如使用個別工具。
 
-### 處理格式副本{#process-renditions}
+### 處理轉譯 {#process-renditions}
 
 將資產載入系統後，您需要透過DAM更新資產工作流程處理資產，以擷取中繼資料並產生轉譯。 執行此步驟之前，您必須複製並修改DAM更新資產工作流程，以符合您的需求。 您不一定需要預設工作流程中的某些步驟，例如Dynamic Media Classic PTIFF產生或InDesign伺服器整合。
 
@@ -87,7 +87,7 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 1. 最簡單的方法是[ACS Commons&#39; Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html)。 此工具允許您執行查詢，並通過工作流處理查詢結果。 還有設定批大小的選項。
 1. 您可搭配「合成工 [作流程」使用ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)[](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html)。雖然此方法的參與度更高，但可讓您移除AEM工作流程引擎的額外負荷，同時最佳化伺服器資源的使用。此外，Fast Action Manager還通過動態監控伺服器資源並調節系統上的負載，進一步提高了效能。ACS Commons功能頁上提供了示例指令碼。
 
-### 啟動資產{#activate-assets}
+### 啟動資產 {#activate-assets}
 
 若是具有發佈層級的部署，您需要將資產啟動至發佈伺服器陣列。 雖然Adobe建議執行多個單一發佈執行個體，但將所有資產複製到單一發佈執行個體然後複製該執行個體最有效率。 在啟動大量資產時，觸發樹狀結構啟動後，您可能需要進行干預。 原因如下：觸發啟動時，項目會新增至Sling作業/事件佇列。 此佇列的大小開始超過約40,000個項目後，處理速度大幅放緩。 當此隊列的大小超過100,000個項後，系統穩定性就會開始受到影響。
 
@@ -101,7 +101,7 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 >
 >Adobe不維護或支援Grabbit。
 
-### 複製發佈{#clone-publish}
+### 原地複製發佈 {#clone-publish}
 
 啟動資產後，您可以複製發佈執行個體，以建立部署所需的所有復本。 克隆伺服器相當簡單，但有一些重要步驟需要記住。 若要原地複製發佈：
 
@@ -113,11 +113,11 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 1. 啟動環境。
 1. 更新作者上任何復寫代理的設定，以指向新執行個體上正確的發佈執行個體或調度程式排清代理，以指向新環境的正確調度程式。
 
-### 啟用工作流{#enable-workflows}
+### 啟用工作流程 {#enable-workflows}
 
 完成移轉後，應重新啟用DAM更新資產工作流程的啟動器，以支援產生轉譯和擷取中繼資料，以持續使用日常系統。
 
-## 跨AEM部署移轉資產{#migrate-between-aem-instances}
+## 跨AEM部署移轉資產 {#migrate-between-aem-instances}
 
 雖然並不常見，但有時候您需要將大量資料從一個AEM例項移轉至另一個例項；例如，執行AEM升級時，請升級硬體或遷移到新的資料中心，例如進行AMS遷移。
 
