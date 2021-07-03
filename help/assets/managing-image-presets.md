@@ -8,15 +8,15 @@ content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: 影像預設集
-role: Administrator,Business Practitioner
-source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
+role: Admin,User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
-source-wordcount: '3839'
+source-wordcount: '3838'
 ht-degree: 7%
 
 ---
 
-# 管理Dynamic Media影像預設集{#managing-image-presets}
+# 管理Dynamic Media影像預設集 {#managing-image-presets}
 
 影像預設集可讓AEM Assets以不同大小、不同格式，或以動態產生的其他影像屬性來動態傳送影像。 每個影像預設集代表用於顯示影像的大小調整和格式設定命令的預定義集合。 建立影像預設集時，您會選擇影像傳送的大小。 您也可以選擇格式設定命令，以便在傳送影像以供查看時優化影像的外觀。
 
@@ -30,7 +30,7 @@ ht-degree: 7%
 >
 >智慧型影像處理可與您現有的影像預設集搭配使用，並會在傳送時的最後毫秒內運用智慧，根據瀏覽器或網路連線速度進一步縮小影像檔案大小。 如需詳細資訊，請參閱[智慧影像](imaging-faq.md)。
 
-## 了解Dynamic Media影像預設集{#understanding-image-presets}
+## 了解Dynamic Media影像預設集 {#understanding-image-presets}
 
 像軟體宏一樣，「影像預設集」是儲存在名稱下的大小調整和格式設定命令的預定義集合。 若要了解「影像預設集」的運作方式，假設您的網站要求每個產品影像以不同大小、不同格式以及案頭和行動傳送的壓縮率顯示。
 
@@ -40,7 +40,7 @@ ht-degree: 7%
 
 管理員可以建立影像預設集。 若要建立影像預設集，您可以從草稿開始，也可以從現有的預設集開始，並以新名稱儲存。
 
-## 管理Dynamic Media影像預設集{#managing-image-presets-1}
+## 管理Dynamic Media影像預設集 {#managing-image-presets-1}
 
 您可以點選AEM標誌以存取全域導覽主控台，然後點選「工具」圖示並導覽至&#x200B;**[!UICONTROL Assets > Image Presets]**，以管理AEM中的影像預設集。
 
@@ -60,7 +60,7 @@ ht-degree: 7%
 >
 >當您在資產的&#x200B;**[!UICONTROL Detail]**&#x200B;檢視中選取&#x200B;**[!UICONTROL Renditions]**&#x200B;時，系統會顯示各種轉譯。 您可以增加或減少顯示的影像預設集數目。 請參閱[增加顯示](#increasing-or-decreasing-the-number-of-image-presets-that-display)的影像預設集數目。
 
-### Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式{#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
+### Adobe Illustrator(AI)、Postscript(EPS)和PDF檔案格式 {#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats}
 
 如果要支援AI、EPS和PDF檔案的獲取，以便能夠生成這些檔案格式的動態格式副本，則在建立影像預設集之前，您可能需要查看以下資訊。
 
@@ -85,7 +85,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 >
 >在&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程中， **[!UICONTROL EPS縮圖]**&#x200B;步驟會為EPS檔案生成縮圖。
 
-### PDF/AI/EPS資產中繼資料屬性{#pdf-ai-eps-asset-metadata-properties}
+### PDF/AI/EPS資產中繼資料屬性 {#pdf-ai-eps-asset-metadata-properties}
 
 | **中繼資料屬性** | **說明** |
 |---|---|
@@ -96,7 +96,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 
 點選左上角的Adobe Experience Manager，導覽至「**[!UICONTROL 工具>工作流程>模型]**」。 在「**[!UICONTROL 工作流模型]**」頁面上，選擇「**[!UICONTROL DAM更新資產]**」，然後在工具列點選「**[!UICONTROL 編輯]**」。 在「**[!UICONTROL DAM更新資產」工作流程]**&#x200B;頁面上，點選兩下「模擬PDF/AI影像預覽轉譯&#x200B;]**」處理元件以開啟其**[!UICONTROL &#x200B;步驟屬性&#x200B;]**對話方塊。**[!UICONTROL 
 
-### 柵格化PDF/AI影像預覽轉譯選項{#rasterize-pdf-ai-image-preview-rendition-options}
+### 柵格化PDF/AI影像預覽轉譯選項 {#rasterize-pdf-ai-image-preview-rendition-options}
 
 ![柵格化PDF或AI工作流的參數](assets/rasterize_pdf_ai_image_preview.png)
 
@@ -138,7 +138,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 
 **[!UICONTROL 柵格化PDF/AI影像預覽轉譯]**&#x200B;處理元件已定義最大值，以確保不會在記憶體中建立過大的影像。 此類大型映像可能會使提供給JVM（Java虛擬機）的記憶體溢出。 請務必注意，為JVM提供足夠的記憶體，以管理已配置的並行工作流數，每個工作流都有可能以最大配置的大小建立映像。
 
-### InDesign(INDD)檔案格式{#indesign-indd-file-format}
+### InDesign(INDD)檔案格式 {#indesign-indd-file-format}
 
 如果要支援導入INDD檔案，以便生成此檔案格式的動態格式副本，則在建立影像預設集之前，可能需要查看以下資訊。
 
@@ -179,7 +179,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
  </tbody> 
 </table>
 
-## 設定影像縮圖大小{#configuring-image-thumbnail-size}
+## 設定影像縮圖大小 {#configuring-image-thumbnail-size}
 
 您可以在&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程中配置這些設定，以配置縮圖的大小。 工作流程中有兩個步驟可讓您設定影像資產的縮圖大小。 雖然其中一個(**[!UICONTROL Dynamic Media處理影像資產]**)用於動態影像資產，另一個（**[!UICONTROL 處理縮圖]**）用於靜態縮圖產生，或當所有其他處理無法產生縮圖時，*兩個*&#x200B;應具有相同的設定。
 
@@ -213,7 +213,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 
 1. 點選&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存對工作流程的變更。
 
-### 增加或減少顯示{#increasing-or-decreasing-the-number-of-image-presets-that-display}的Dynamic Media影像預設集數目
+### 增加或減少顯示的Dynamic Media影像預設集數目 {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
 您建立的影像預設集在您預覽資產時可以動態轉譯。 AEM會在從&#x200B;**[!UICONTROL 「詳細資料檢視」>「轉譯」檢視資產時顯示各種動態轉譯。]**&#x200B;您可以增加或減少顯示的轉譯限制。
 
@@ -232,7 +232,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 1. 在limit屬性中，將數字變更為所需數字，例如`{empty requestPathInfo.selectors[1] ? "20" : requestPathInfo.selectors[1]}`
 1. 點選「**[!UICONTROL 儲存全部]**」。
 
-### 建立Dynamic Media影像預設集{#creating-image-presets}
+### 建立Dynamic Media影像預設集 {#creating-image-presets}
 
 建立Dynamic Media影像預設集可讓您在預覽或發佈時將這些設定套用至任何影像。
 
@@ -267,7 +267,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
-### 建立回應式影像預設集{#creating-a-responsive-image-preset}
+### 建立回應式影像預設集 {#creating-a-responsive-image-preset}
 
 若要建立回應式影像預設集，請執行[建立影像預設集](#creating-image-presets)中的步驟。 在&#x200B;**[!UICONTROL 編輯影像預設集]**&#x200B;窗口中輸入高度和寬度時，請擦除值並將其留空。
 
@@ -283,7 +283,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 >
 >在Dynamic Media — 混合模式中，您必須手動發佈影像預設集和影像資產。
 
-### 影像預設集選項{#image-preset-options}
+### 影像預設集選項 {#image-preset-options}
 
 建立或編輯影像預設集時，您有本節所述的選項。 此外，Adobe建議以下三種&#x200B;*最佳做法*&#x200B;選項選擇開始：
 
@@ -291,7 +291,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 * **[!UICONTROL 啟用簡單銳利化]**  — 請勿選取「啟 **[!UICONTROL 用簡單銳利化」]** （此銳利化濾鏡提供的控制力比「非銳利化遮色片」設定少）。
 * **[!UICONTROL 銳利化：重新取樣模]** 式 — 選 **[!UICONTROL 取雙三次]**。
 
-#### 基本頁簽選項{#basic-tab-options}
+#### 基本索引標籤選項 {#basic-tab-options}
 
 <table> 
  <tbody> 
@@ -343,7 +343,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
  </tbody>
 </table>
 
-#### 高級頁簽選項{#advanced-tab-options}
+#### 進階索引標籤選項 {#advanced-tab-options}
 
 <table>
  <tbody>
@@ -428,7 +428,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
  </tbody>
 </table>
 
-## 使用影像修飾符{#defining-image-preset-options-with-image-modifiers}定義影像預設集選項
+## 使用影像修飾元定義影像預設集選項 {#defining-image-preset-options-with-image-modifiers}
 
 除了&#x200B;**[!UICONTROL Basic]**&#x200B;和&#x200B;**[!UICONTROL Advanced]**&#x200B;標籤中可用的選項之外，您還可以定義影像修飾符，以在定義影像預設集時提供更多選項。 影像轉譯仰賴Dynamic Media影像轉譯API。 API在[HTTP通訊協定參考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html)中有詳細定義。
 
@@ -478,7 +478,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 
    ![chlimage_1-505](assets/chlimage_1-503.png)
 
-## 編輯影像預設集{#modifying-image-presets}
+## 編輯影像預設集 {#modifying-image-presets}
 
 **要編輯影像預設集**:
 
@@ -490,7 +490,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 1. 選取預設集，然後點選&#x200B;**[!UICONTROL Edit]**。
 1. 在&#x200B;**[!UICONTROL 編輯影像預設集]**&#x200B;頁面上，進行您想要的變更，然後點選&#x200B;**[!UICONTROL 儲存]**。
 
-## 發佈Dynamic Media影像預設集{#publishing-image-presets}
+## 發佈Dynamic Media影像預設集 {#publishing-image-presets}
 
 如果您執行的是Dynamic Media — 混合模式，您必須手動發佈影像預設集。
 
@@ -505,7 +505,7 @@ Adobe Illustrator的檔案格式是PDF的變體。 AEM Assets的主要差異如�
 
    ![chlimage_1-505](assets/chlimage_1-505.png)
 
-## 刪除Dynamic Media影像預設集{#deleting-image-presets}
+## 刪除Dynamic Media影像預設集 {#deleting-image-presets}
 
 1. 在AEM中，點選AEM標誌以存取全域導覽主控台。
 1. 點選&#x200B;**[!UICONTROL 工具]**&#x200B;圖示，然後導覽至&#x200B;**[!UICONTROL 資產>影像預設集]**。
