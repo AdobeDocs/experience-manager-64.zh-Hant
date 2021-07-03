@@ -3,9 +3,9 @@ title: 中繼資料結構
 description: '中繼資料結構會定義屬性頁面的配置，以及為資產顯示的中繼資料屬性。 了解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '2536'
 ht-degree: 12%
@@ -54,7 +54,7 @@ ht-degree: 12%
 >
 >若要檢視結構表單的子表單，請按一下/點選結構表單名稱。
 
-## 添加元資料架構表單{#adding-a-metadata-schema-form}
+## 新增中繼資料結構表單 {#adding-a-metadata-schema-form}
 
 1. 若要將自訂範本新增至清單，請按一下工具列中的&#x200B;**[!UICONTROL Create]** 。
 
@@ -66,7 +66,7 @@ ht-degree: 12%
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
-## 編輯元資料結構表單{#editing-metadata-schema-forms}
+## 編輯中繼資料結構表單 {#editing-metadata-schema-forms}
 
 您可以編輯新增或現有的中繼資料結構表單。 中繼資料結構表單包含下列項目：
 
@@ -87,7 +87,7 @@ ht-degree: 12%
 
 1. 要配置元件，請選擇該元件並在&#x200B;**[!UICONTROL Settings]**&#x200B;頁簽中修改其屬性。
 
-### 「生成表單」頁簽{#components-within-the-build-form-tab}中的元件
+### 「構建表單」頁簽中的元件 {#components-within-the-build-form-tab}
 
 **[!UICONTROL 建置表單]**&#x200B;索引標籤會列出您在架構表單中使用的表單項目。 **[!UICONTROL 設定]**&#x200B;標籤提供您在&#x200B;**[!UICONTROL 建置表單]**&#x200B;標籤中選擇的每個項的屬性。 下表列出&#x200B;**[!UICONTROL Build Form]**&#x200B;索引標籤中可用的表單項目：
 
@@ -108,7 +108,7 @@ ht-degree: 12%
 | [!UICONTROL 資產評等] | 新增至顯示資產評等選項。 |
 | [!UICONTROL 關聯式中繼資料] | 「新增」可控制資產屬性頁面中其他中繼資料索引標籤的顯示。 |
 
-### 編輯元資料元件{#editing-the-metadata-component}
+### 編輯中繼資料元件 {#editing-the-metadata-component}
 
 要編輯表單上元資料元件的屬性，請按一下該元件，然後在&#x200B;**[!UICONTROL Settings]**&#x200B;頁簽中編輯以下屬性的全部或子集。
 
@@ -158,11 +158,11 @@ ht-degree: 12%
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### 在JSON檔案{#specifying-properties-in-json-file}中指定屬性
+### 在JSON檔案中指定屬性 {#specifying-properties-in-json-file}
 
 您不必在「設定」標籤中指定選項的屬 **[!UICONTROL 性]** ，而是可以透過指定對應的索引鍵值配對，來定義JSON檔案中的選項。在「 **[!UICONTROL JSON路徑」欄位中指定JSON檔案的]** 路徑。
 
-### 在架構表單{#adding-deleting-a-tab-in-the-schema-form}中添加或刪除頁簽
+### 在架構表單中新增或刪除索引標籤 {#adding-deleting-a-tab-in-the-schema-form}
 
 架構編輯器可讓您新增或刪除標籤。預設模式表單包 **[!UICONTROL 括Basic]**、 **[!UICONTROL Advanced]** 、 **[!UICONTROL IPTC]**&#x200B;和 **** IPTC Extension頁籤，預設情況下。
 
@@ -172,7 +172,7 @@ ht-degree: 12%
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-## 刪除元資料結構表單{#deleting-metadata-schema-forms}
+## 刪除中繼資料結構表單 {#deleting-metadata-schema-forms}
 
 AEM可讓您僅刪除自訂結構描述表單。 它不會讓您刪除預設的結構描述表單/範本。 不過，您可以刪除這些表單中的任何自訂變更。
 
@@ -186,15 +186,15 @@ AEM可讓您僅刪除自訂結構描述表單。 它不會讓您刪除預設的�
 >
 >您無法刪除AEM Assets中立即可用的中繼資料結構表單。
 
-## MIME類型{#schema-forms-for-mime-types}的架構表單
+## MIME類型的架構表單 {#schema-forms-for-mime-types}
 
 AEM Assets提供各種現成MIME類型的預設表單。 不過，您可以為各種MIME類型的資產新增自訂表單。
 
-### 為MIME類型{#adding-new-forms-for-mime-types}添加新表單
+### 為MIME類型添加新表單 {#adding-new-forms-for-mime-types}
 
 在適當的表單類型下建立新表單。例如，要為`image/png`子類型添加新模板，請在`image`表單下建立表單。 方案表單的標題是子類型名稱。在此案例中，標題為`png`。
 
-### 對各種MIME類型{#using-an-existing-schema-template-for-various-mime-types}使用現有架構模板
+### 對各種MIME類型使用現有架構模板 {#using-an-existing-schema-template-for-various-mime-types}
 
 您可以將現有範本用於不同的MIME類型。 例如，對於MIME類型`image/png`的資產，請使用`image/jpeg`表單。
 
@@ -221,11 +221,11 @@ AEM Assets會對應下列MIME類型和結構表單：
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
 
-## 授予對元資料結構{#granting-access-to-metadata-schemas}的訪問權
+## 授予中繼資料結構的存取權 {#granting-access-to-metadata-schemas}
 
 中繼資料結構功能僅供管理員使用。 但是，管理員可以通過在`/conf`資料夾上提供&#x200B;**[!UICONTROL Create]**、**[!UICONTROL Modify]**&#x200B;和&#x200B;**[!UICONTROL Delete]**&#x200B;權限，為非管理員用戶提供訪問權限。
 
-## 應用資料夾特定元資料{#applying-folder-specific-metadata}
+## 套用資料夾特定中繼資料 {#applying-folder-specific-metadata}
 
 AEM Assets可讓您定義中繼資料結構的變體，並套用至特定資料夾。
 
@@ -263,7 +263,7 @@ AEM Assets可讓您定義中繼資料結構的變體，並套用至特定資料�
 1. 按一下&#x200B;**[!UICONTROL 確定]**&#x200B;以關閉成功訊息。
 1. 導覽至您套用已修改中繼資料結構的資料夾。
 
-## 定義強制中繼資料{#defining-mandatory-metadata}
+## 定義必要中繼資料 {#defining-mandatory-metadata}
 
 您可以在資料夾層級定義必填欄位，這會對上傳至資料夾的資產強制執行。 如果您上傳的資產上傳之前定義之必填欄位的中繼資料遺失，「卡片」檢視的資產上會顯示遺失中繼資料的視覺指示。
 
