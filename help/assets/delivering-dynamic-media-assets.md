@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 exl-id: e5110a90-ddc9-4244-8466-f91adfca8469
 feature: 資產管理
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 11%
 
 ---
 
-# 傳送Dynamic Media資產{#delivering-dynamic-media-assets}
+# 傳送Dynamic Media資產 {#delivering-dynamic-media-assets}
 
 視訊和影像皆然，您如何傳送動態媒體資產取決於網站的實作方式。
 
@@ -48,7 +48,7 @@ ht-degree: 11%
 * [使 CDN 快取內容失效](invalidate-cdn-cached-content.md)
 * [使用規則集轉換 URL](using-rulesets-to-transform-urls.md)
 
-## HTTP/2傳送Dynamic Media資產{#http-delivery-of-dynamic-media-assets}
+## HTTP/2傳送Dynamic Media資產 {#http-delivery-of-dynamic-media-assets}
 
 AEM現在支援透過HTTP/2傳送所有Dynamic Media內容（影像和影片）。 也就是說，影像或視訊的已發佈URL或內嵌程式碼可與接受託管資產的任何應用程式整合。 然後會透過HTTP/2通訊協定來傳送已發佈的資產。 此傳遞方法可改善瀏覽器和伺服器通訊的方式，讓所有Dynamic Media資產的回應和載入時間都更佳。
 
