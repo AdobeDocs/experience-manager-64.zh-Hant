@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: 配置，混合模式
-role: Administrator,Business Practitioner,Developer
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: Admin,User,Developer
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 1%
 
 ---
 
-# 配置Dynamic Media — 混合模式{#configuring-dynamic-media-hybrid-mode}
+# 配置Dynamic Media — 混合模式 {#configuring-dynamic-media-hybrid-mode}
 
 Dynamic Media — 需要啟用並設定混合功能，才能使用。 根據您的使用案例，Dynamic Media有數個[支援的設定](#supported-dynamic-media-configurations)。
 
@@ -44,15 +44,15 @@ AEM發佈節點會繼續提供其他內容，例如Dynamic Media檢視器、網�
 
 如果您是Dynamic Media的客戶，則必須使用混合式傳送作為所有Dynamic Media內容的傳送機制。
 
-## 影片的混合發佈架構{#hybrid-publishing-architecture-for-videos}
+## 影片的混合發佈架構 {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-506](assets/chlimage_1-506.png)
 
-## 影像的混合發佈架構{#hybrid-publishing-architecture-for-images}
+## 影像混合發佈架構 {#hybrid-publishing-architecture-for-images}
 
 ![chlimage_1-507](assets/chlimage_1-507.png)
 
-## 支援的Dynamic Media配置{#supported-dynamic-media-configurations}
+## 支援的Dynamic Media設定 {#supported-dynamic-media-configurations}
 
 後面的設定任務參考下列術語：
 
@@ -175,7 +175,7 @@ AEM發佈節點會繼續提供其他內容，例如Dynamic Media檢視器、網�
    * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access日誌會記錄透過`/is/image`和`/is/content`對Dynamic Media提出的每個請求。
    這些記錄檔僅在啟用Dynamic Media時使用。 從&#x200B;**[!UICONTROL system/console/status-Bundlelist]**&#x200B;頁面產生的&#x200B;**下載完整**&#x200B;套件中未包含這些檔案；如果您有Dynamic Media問題，在呼叫客戶支援時，請將這兩個記錄附加至問題。
 
-### 如果將AEM安裝到其他埠或上下文路徑…… {#if-you-installed-aem-to-a-different-port-or-context-path}
+### 如果您將AEM安裝至不同的連接埠或內容路徑…… {#if-you-installed-aem-to-a-different-port-or-context-path}
 
 如果要將[AEM部署到應用程式伺服器](/help/sites-deploying/application-server-install.md)並啟用Dynamic Media，則需要在外部化程式中配置&#x200B;**self**&#x200B;域。 否則，動態媒體資產的資產縮圖產生將無法正常運作。
 
@@ -193,7 +193,7 @@ AEM發佈節點會繼續提供其他內容，例如Dynamic Media檢視器、網�
 >[!NOTE]
 在[AEM Quickstart獨立部署](/help/sites-deploying/deploy.md)中，通常不需要配置&#x200B;**self**&#x200B;域，因為埠號和上下文路徑可以自動配置。 但是，如果所有網路介面都關閉，則需要配置&#x200B;**self**&#x200B;域。
 
-## 禁用Dynamic Media {#disabling-dynamic-media}
+## 停用Dynamic Media  {#disabling-dynamic-media}
 
 預設不會啟用動態媒體。 不過，如果您先前已啟用動態媒體，您稍後可能會想要將其關閉。
 
@@ -215,7 +215,7 @@ AEM發佈節點會繼續提供其他內容，例如Dynamic Media檢視器、網�
    停用Dynamic Media執行模式後，會自動略過產生`qdam.pyramid.tiff`轉譯的工作流程步驟。 這也會停用動態轉譯支援和其他Dynamic Media功能。
    另請注意，設定AEM伺服器後，當Dynamic Media執行模式停用時，在該執行模式下上傳的所有資產現在都無效。
 
-## （選用）將Dynamic Media預設集和設定從6.3移轉至6.4零停機時間{#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## （選用）將Dynamic Media預設集和設定從6.3移轉至6.4零停機時間 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
 如果您要將AEM Dynamic Media從6.3升級至6.4(現在包含零停機時間（也稱為「選擇加入」）部署)，則需要執行下列curl命令，將CRXDE Lite中的所有預設集和設定從`/etc`移轉至`/conf`。
 
@@ -229,7 +229,7 @@ AEM發佈節點會繼續提供其他內容，例如Dynamic Media檢視器、網�
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
-## 配置映像複製{#configuring-image-replication}
+## 配置映像複製 {#configuring-image-replication}
 
 Dynamic Media影像傳送的運作方式是從AEM Author發佈影像資產（包括視訊縮圖），並將其複製至Adobe的隨選復寫服務（復寫服務URL）。 然後會透過隨需影像傳送服務（影像服務URL）來傳送資產。
 
@@ -248,7 +248,7 @@ Dynamic Media影像傳送的運作方式是從AEM Author發佈影像資產（包
 超過最大記憶體限制的映像將被拒絕。
 要更改PTIFF建立的記憶體限制，請導航至&#x200B;**[!UICONTROL 工具>操作> Web Console > Adobe CQ Scene7 PTiffManager]**&#x200B;並更改`maxMemory`值。
 
-### 設定驗證{#setting-up-authentication}
+### 設定驗證 {#setting-up-authentication}
 
 您需要在作者上設定復寫驗證，才能將影像復寫至Dynamic Media影像傳送服務。 要執行此操作，請取得KeyStore，然後將其儲存在&#x200B;**[!UICONTROL dynamic-media-replication]**&#x200B;使用者下，並加以設定。 您的公司管理員應在配置過程中收到包含KeyStore檔案和必要憑據的歡迎電子郵件。 如果您未收到此訊息，請連絡客戶服務。
 
@@ -304,7 +304,7 @@ Dynamic Media影像傳送的運作方式是從AEM Author發佈影像資產（包
 
 1. 點選&#x200B;**[!UICONTROL 確定]**。
 
-### 驗證Dynamic Media的複製代理{#validating-the-replication-agent-for-dynamic-media}
+### 驗證Dynamic Media的復寫代理 {#validating-the-replication-agent-for-dynamic-media}
 
 要驗證動態媒體的複製代理，請執行以下操作：
 
@@ -334,7 +334,7 @@ Replication test succeeded
 
 在設定驗證時，以下是您在其解決方案中可能遇到的問題。 在檢查這些選項之前，請確保已設定複製。
 
-#### 問題：HTTP狀態代碼401，帶消息 — 需要授權{#problem-http-status-code-with-message-authorization-required}
+#### 問題：HTTP狀態代碼401，帶消息 — 需要授權 {#problem-http-status-code-with-message-authorization-required}
 
 此問題可能是由於未能為`dynamic-media-replication`用戶設定KeyStore所致。
 
@@ -359,7 +359,7 @@ Replication test to s7delivery:https://s7bern.macromedia.com:8580/is-publish/
 
 **解決方案**:檢查是否已 `KeyStore` 儲存至 **[!UICONTROL dynamic-media-]** replicationuser，並且提供正確的密碼。
 
-#### 問題：無法解密密鑰 — 無法解密資料{#problem-could-not-decrypt-key-could-not-decrypt-data}
+#### 問題：無法解密密鑰 — 無法解密資料 {#problem-could-not-decrypt-key-could-not-decrypt-data}
 
 ```xml
 Replication test to s7delivery:https://<localhost>:8580/is-publish/
@@ -395,7 +395,7 @@ java.io.IOException: Failed to execute request 'https://replicate-na.assetsadobe
 
 **解決方案**:請確定AEM Author上的java程式將系統屬性 **-Djavax.net.ssl.trustStore=** 設為有效的信任存放區。
 
-#### 問題：KeyStore未設定或未初始化{#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
+#### 問題：KeyStore未設定或未初始化 {#problem-keystore-is-either-not-set-up-or-it-is-not-initialized}
 
 此問題可能是由Hotfix或覆寫&#x200B;**[!UICONTROL dynamic-media-user]**&#x200B;或&#x200B;**[!UICONTROL keystore]**&#x200B;節點的功能套件所造成。
 
@@ -458,7 +458,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
 1. 在頁面的左上角附近，點選「**[!UICONTROL Save All]**」。
 
-### 測試配置{#testing-your-configuration}
+### 測試您的設定 {#testing-your-configuration}
 
 Adobe建議您對配置執行端對端測試。
 
@@ -482,7 +482,7 @@ Adobe建議您對配置執行端對端測試。
 
 另一種測試已傳送資產的方法，是將req=exists附加至URL。
 
-## 設定Dynamic MediaCloud Services{#configuring-dynamic-media-cloud-services}
+## 設定Dynamic MediaCloud Services {#configuring-dynamic-media-cloud-services}
 
 Dynamic Media雲端服務提供雲端服務的支援，例如混合發佈及傳送影像和視訊、視訊分析、視訊編碼等。
 
@@ -505,7 +505,7 @@ Dynamic Media雲端服務提供雲端服務的支援，例如混合發佈及傳�
 1. 點選&#x200B;**[!UICONTROL 儲存]**&#x200B;以返回Dynamic Media設定瀏覽器頁面。
 1. 點選AEM標誌以存取全域導覽主控台。
 
-## 配置視頻報告{#configuring-video-reporting}
+## 設定視訊報表 {#configuring-video-reporting}
 
 您可以使用Dynamic Media — 混合模式，在AEM的多個安裝間設定視訊報表。
 
@@ -518,7 +518,7 @@ Dynamic Media雲端服務提供雲端服務的支援，例如混合發佈及傳�
 
 1. 驗證和調試包安裝。
 
-### 在設定第一個製作節點{#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}後建立[!DNL Video Analytics]預設套件
+### 在設定第一個製作節點後建立[!DNL Video Analytics]預設套件 {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
 完成此任務後，您將擁有包含[!DNL Video Analytics]預設集的包檔案。 這些預設集包含報表套裝、追蹤伺服器、追蹤命名空間，以及Marketing Cloud組織ID（若有）。
 
@@ -532,7 +532,7 @@ Dynamic Media雲端服務提供雲端服務的支援，例如混合發佈及傳�
 1. 建立套件。
 1. 下載或共用[!DNL Video Analytics]預設套件，以便與後續的新製作節點共用。
 
-### 先安裝[!DNL Video Analytics]預設套件，再設定其他製作節點{#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### 先安裝[!DNL Video Analytics]預設套件，再設定其他製作節點 {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 請務必在&#x200B;_之前完成&#x200B;**[!UICONTROL Dynamic Media配置（6.3之前）]**的此任務。_&#x200B;若未這麼做，將會建立另一個未使用的報表套裝。 此外，即使視訊報表仍可正常運作，資料收集仍未最佳化。
 
@@ -542,7 +542,7 @@ Dynamic Media雲端服務提供雲端服務的支援，例如混合發佈及傳�
 1. 安裝[!DNL Video Analytics]預設包。
 1. 配置&#x200B;**[!UICONTROL Dynamic Media配置（6.3之前）]**。
 
-### 驗證和調試軟體包安裝{#verifying-and-debugging-the-package-installation}
+### 驗證和調試包安裝 {#verifying-and-debugging-the-package-installation}
 
 1. 執行下列任一操作以驗證軟體包，並在必要時調試軟體包安裝：
 
@@ -589,13 +589,13 @@ Dynamic Media雲端服務提供雲端服務的支援，例如混合發佈及傳�
 
    如果在您設定&#x200B;**[!UICONTROL Dynamic Media設定（6.3之前）]**&#x200B;服務之前執行視訊報表，也會顯示此錯誤。
 
-### 疑難排解視訊報表設定{#troubleshooting-the-video-reporting-configuration}
+### 疑難排解視訊報表設定 {#troubleshooting-the-video-reporting-configuration}
 
 * 安裝期間，有時連線至Analytics API伺服器會逾時。 安裝會重試連線20次，但仍會失敗。 發生此情況時，記錄檔會記錄多個錯誤。 搜尋 `SiteCatalystReportService`.
 * 若先未安裝[!DNL Video Analytics]預設集套件，可能會建立新的報表套裝。
 * 從AEM 6.3升級至AEM 6.4或AEM 6.4.1，然後設定&#x200B;**[!UICONTROL Dynamic Media設定（6.3之前）]**&#x200B;仍會建立報表套裝。 此問題已知且已在AEM 6.4.2中修正。
 
-### 關於[!DNL Video Analytics]預設集{#about-the-video-analytics-preset}
+### 關於[!DNL Video Analytics]預設集 {#about-the-video-analytics-preset}
 
 [!DNL Video Analytics]預設集（有時簡稱為分析預設集）會儲存在Dynamic Media中的檢視器預設集旁。 基本上與檢視器預設集相同，但包含用來設定AppMeasurement和視訊心率報表的資訊。
 
@@ -608,7 +608,7 @@ Dynamic Media雲端服務提供雲端服務的支援，例如混合發佈及傳�
 
 AEM 6.4及更新版本會在`/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`儲存此預設集
 
-## 複製目錄設定{#replicating-catalog-settings}
+## 複製目錄設定 {#replicating-catalog-settings}
 
 您必須透過JCR，在設定程式中發佈自己的預設目錄設定。 要複製目錄設定：
 
@@ -623,14 +623,14 @@ AEM 6.4及更新版本會在`/conf/global/settings/dam/dm/presets/analytics/jcr:
 1. 點選「**[!UICONTROL 復寫]**」標籤。
 1. 點選&#x200B;**[!UICONTROL 復寫]**。
 
-## 複製查看器預設集{#replicating-viewer-presets}
+## 複製查看器預設集 {#replicating-viewer-presets}
 
 若要使用檢視器預設集傳送資產，您必須復寫/發佈檢視器預設集。 （必須啟動&#x200B;_和_&#x200B;所有檢視器預設集，才能取得資產的URL或內嵌程式碼。） 如需詳細資訊，請參閱[發佈檢視器預設集](managing-viewer-presets.md#publishing-viewer-presets) 。
 
 >[!NOTE]
 依預設，當您選取&#x200B;**[!UICONTROL 轉譯]**&#x200B;時，系統會顯示各種轉譯，當您在資產的詳細資料檢視中選取&#x200B;**[!UICONTROL 檢視器]**&#x200B;時，系統會顯示各種檢視器預設集。 您可以增加或減少顯示的數量。 請參閱[增加顯示](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)或[的影像預設集數目增加顯示](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)的檢視器預設集數目。
 
-## 篩選複製資產{#filtering-assets-for-replication}
+## 篩選復寫資產 {#filtering-assets-for-replication}
 
 在非Dynamic Media部署中，您會從AEM製作環境復寫&#x200B;_所有_&#x200B;資產（包括影像和視訊）至AEM發佈節點。 此工作流程是必要的，因為AEM發佈伺服器也會傳送資產。
 
@@ -644,7 +644,7 @@ AEM 6.4及更新版本會在`/conf/global/settings/dam/dm/presets/analytics/jcr:
 
 這些篩選器可讓您透過&#x200B;_排除_&#x200B;資產，避免複製到AEM發佈節點。
 
-### 對復寫{#using-default-asset-filters-for-replication}使用預設資產篩選器
+### 針對復寫使用預設資產篩選器 {#using-default-asset-filters-for-replication}
 
 如果您是在生產&#x200B;_或_ 2)中使用Dynamic Media for 1)影像和視訊，則可以使用我們依現狀提供的預設篩選器。 下列篩選器預設為作用中：
 
@@ -692,7 +692,7 @@ AEM 6.4及更新版本會在`/conf/global/settings/dam/dm/presets/analytics/jcr:
 >[!NOTE]
 篩選器會套用至mime類型，且不能是路徑特定。
 
-### 為僅限視訊的部署設定資產篩選器{#setting-up-asset-filters-for-video-only-deployments}
+### 為僅限視訊的部署設定資產篩選器 {#setting-up-asset-filters-for-video-only-deployments}
 
 如果您只將Dynamic Media用於視訊，請依照下列步驟設定復寫的資產篩選器：
 
@@ -709,7 +709,7 @@ AEM 6.4及更新版本會在`/conf/global/settings/dam/dm/presets/analytics/jcr:
 
 這會設定AEM發佈例項以傳送視訊海報影像以及播放所需的視訊中繼資料，而視訊本身是由Dynamic Media雲端服務傳送。 篩選器也會從復寫中排除發佈執行個體不需要的原始視訊和靜態縮圖轉譯。
 
-### 在非生產部署{#setting-up-asset-filters-for-imaging-in-non-production-deployments}中設定影像處理的資產篩選器
+### 在非生產部署中設定影像處理的資產篩選器 {#setting-up-asset-filters-for-imaging-in-non-production-deployments}
 
 如果您在非生產部署中使用Dynamic Media進行影像處理，請依照下列步驟設定復寫的資產篩選器：
 
@@ -736,7 +736,7 @@ AEM 6.4及更新版本會在`/conf/global/settings/dam/dm/presets/analytics/jcr:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
-### 自訂復寫的資產篩選器{#customizing-asset-filters-for-replication}
+### 自訂復寫的資產篩選器 {#customizing-asset-filters-for-replication}
 
 （可選）要自訂復寫的資產篩選器：
 
@@ -794,7 +794,7 @@ AEM 6.4及更新版本會在`/conf/global/settings/dam/dm/presets/analytics/jcr:
 
 如果只想複製原始檔案，則輸入`+original`。
 
-## 配置Dynamic Media影像伺服器設定{#configuring-dynamic-media-image-server-settings}
+## 配置Dynamic Media Image Server設定 {#configuring-dynamic-media-image-server-settings}
 
 設定Dynamic Media Image Server包括編輯Adobe CQ Scene7 ImageServer套件組合和Adobe CQ Scene7 PlatformServer套件組合。
 
@@ -873,7 +873,7 @@ Dynamic Media在啟用](#enabling-dynamic-media)後即可運作[。 不過，您
    | **[!UICONTROL 快取最大大小]** | 200000000 | 響應快取的最大大小（以位元組為單位）。 |
    | **[!UICONTROL 快取最大條目數]** | 100000 | 快取中允許的最大條目數。 |
 
-### 預設清單設定{#default-manifest-settings}
+### 預設資訊清單設定 {#default-manifest-settings}
 
 預設資訊清單可讓您設定用於產生Dynamic Media傳送回應的預設值。 您可以微調質量（JPEG質量、解析度、重採樣模式）、快取（過期），並防止渲染太大的影像(defaultpix、defaultthumbpix、maxpix)。
 
@@ -948,7 +948,7 @@ Dynamic Media在啟用](#enabling-dynamic-media)後即可運作[。 不過，您
  </tbody> 
 </table>
 
-## 設定Dynamic Media色彩管理{#configuring-dynamic-media-color-management}
+## 設定Dynamic Media色彩管理 {#configuring-dynamic-media-color-management}
 
 Dynamic Media色彩管理可讓您為預覽的資產進行色彩校正。
 
@@ -979,7 +979,7 @@ Adobe色彩管理使用ICC設定檔，這是由國際色彩協會(ICC)定義的�
 
 1. 安裝功能套件。
 
-### 配置預設顏色配置檔案{#configuring-the-default-color-profiles}
+### 設定預設顏色設定檔 {#configuring-the-default-color-profiles}
 
 安裝Feature Pack後，需要配置適當的預設顏色配置檔案，以在請求RGB或CMYK影像資料時啟用顏色校正。
 
@@ -1251,7 +1251,7 @@ Adobe色彩管理使用ICC設定檔，這是由國際色彩協會(ICC)定義的�
 * 傳回RGB輸出的動態轉譯，會在`sRGB`色域中傳回。
 * 傳回CMYK輸出的動態轉譯，會在`WebCoated`色域中傳回。
 
-## 傳送資產{#delivering-assets}
+## 傳遞資產 {#delivering-assets}
 
 完成上述所有工作後，即會從影像或視訊服務提供啟動的Dynamic Media資產。 在AEM中，此功能會顯示在&#x200B;**[!UICONTROL 複製影像URL]**、**[!UICONTROL 複製檢視器URL]**、**[!UICONTROL 內嵌檢視器代碼]**&#x200B;和WCM中。
 
@@ -1296,6 +1296,6 @@ Adobe色彩管理使用ICC設定檔，這是由國際色彩協會(ICC)定義的�
  </tbody> 
 </table>
 
-### WCM Dynamic Media和互動式媒體元件{#wcm-dynamic-media-and-interactive-media-components}
+### WCM Dynamic Media和互動式媒體元件 {#wcm-dynamic-media-and-interactive-media-components}
 
 參考Dynamic Media和互動式媒體元件的WCM頁面參考傳送服務。
