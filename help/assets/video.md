@@ -7,8 +7,8 @@ topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: 影片
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '10393'
 ht-degree: 4%
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 本節說明如何在Dynamic Media中使用影片。
 
-## 快速入門：影片{#quick-start-videos}
+## 快速入門：影片 {#quick-start-videos}
 
 下列逐步工作流程說明旨在協助您透過Dynamic Media中的最適化視訊集快速上手並執行。 在每個步驟之後，會交叉參照主題標題，以取得詳細資訊。
 
@@ -29,6 +29,7 @@ ht-degree: 4%
 >
 >* 請參閱在設定Dynamic Media — 混合模式中設定Dynamic MediaCloud Services[。](/help/assets/config-dynamic.md)
 >* 請參閱[設定Dynamic Media - Scene7模式](config-dms7.md)和[疑難排解Dynamic Media - Scene7模式](troubleshoot-dms7.md)
+
 >
 
 
@@ -70,11 +71,10 @@ ht-degree: 4%
 
          [檢視視訊轉譯](video-renditions.md)
 
-         [管理視訊轉譯](managing-assets-touch-ui.md#managing-renditions)
+[管理視訊轉譯](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理檢視器預設集](managing-viewer-presets.md)
       * [發佈資產](publishing-dynamicmedia-assets.md)
-      
    * 使用視訊中繼資料
 
       * 檢視編碼視訊轉譯的屬性，例如影格速率、音訊和視訊位元速率，以及轉碼器：
@@ -83,11 +83,10 @@ ht-degree: 4%
 
       * 編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
 
-         [編輯視訊屬性](managing-assets-touch-ui.md#editing-properties)
+[編輯視訊屬性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理數位資產的中繼資料](metadata.md)
       * [中繼資料結構](metadata-schemas.md)
-      
    * 檢閱、核准及註解影片
 
       * [為視訊](managing-video-assets.md#annotating-video-assets) 加上注 [解資產](managing-assets-touch-ui.md#annotating)
@@ -117,7 +116,7 @@ ht-degree: 4%
 
 
 
-## 在Dynamic Media中使用視訊{#working-with-video-in-dynamic-media}
+## 在Dynamic Media中使用影片 {#working-with-video-in-dynamic-media}
 
 Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品質的最適化視訊，以在多個畫面間串流，包括桌上型電腦、iOS、Android、Blackberry和Windows行動裝置。 適用性視訊集將以不同位速率和格式（如400 kbps、800 kbps和1000 kbps）編碼的相同視訊的版本分組。 台式電腦或行動裝置會偵測可用頻寬。
 
@@ -164,7 +163,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 
 另請參閱「AdobeDynamic Media檢視器參考指南」中的[關於HTML5檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)。
 
-## 最佳實務：使用HTML5視訊檢視器{#best-practice-using-the-html-video-viewer}
+## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
 Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可以使用它們來避免與HTML5視訊播放相關的許多常見問題，以及與行動裝置相關的問題，例如缺乏最適化串流傳送以及案頭瀏覽器觸及率有限。
 
@@ -176,7 +175,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 另請參閱「Adobe檢視器參考指南」中的[關於HTML5檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)。
 
-### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊{#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
+### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
 針對案頭和行動最適化視訊串流，用於位元速率切換的視訊是以最適化視訊集中的所有MP4視訊為基礎。
 
@@ -263,17 +262,17 @@ HLS（HTTP即時串流）是適用性視訊串流的Apple標準，可根據網�
  </tbody>
 </table>
 
-## Dynamic Media視訊解決方案架構{#architecture-of-dynamic-media-video-solution}
+## Dynamic Media視訊解決方案架構 {#architecture-of-dynamic-media-video-solution}
 
 下圖顯示影片的整體製作工作流程，這些影片會透過DMGateway上傳和編碼，並供公眾使用。
 
 ![chlimage_1-427](assets/chlimage_1-427.png)
 
-## 影片的混合發佈架構{#hybrid-publishing-architecture-for-videos}
+## 影片的混合發佈架構 {#hybrid-publishing-architecture-for-videos}
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
-## 編碼視訊的最佳作法{#best-practices-for-encoding-videos}
+## 編碼視訊的最佳作法 {#best-practices-for-encoding-videos}
 
 如果您 **** 已啟用動態媒體並設定視訊雲端服務，「動態媒體編碼視訊」工作流程會對視訊進行編碼。此工作流程會擷取工作流程處理歷程記錄和失敗資訊。請參閱 [監控視訊編碼和YouTube發佈進度](#monitoring-video-encoding-and-youtube-publishing-progress)。如果您已啟用Dynamic Media並設定視訊雲端服務，當您上傳視訊時，**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;工作流程會自動生效。 (如果您未使用Dynamic Media, **[!UICONTROL DAM更新資產]**&#x200B;工作流程將生效。)
 
@@ -284,7 +283,7 @@ HLS（HTTP即時串流）是適用性視訊串流的Apple標準，可根據網�
 * 文章：*流101:基本概念 — 編碼解碼器、頻寬、資料速率和解析度：* [www.adobe.com/go/learn_s7_streaming101_en](https://www.adobe.com/go/learn_s7_streaming101_en)。
 * 影片：*視訊編碼基本知識：* [www.adobe.com/go/learn_s7_encoding_en](https://www.adobe.com/go/learn_s7_encoding_en)。
 
-### 源視頻檔案{#source-video-files}
+### 源視頻檔案 {#source-video-files}
 
 為視訊檔案編碼時，請使用盡可能高品質的來源視訊檔案。 請避免使用先前編碼的視訊檔案，因為這些檔案已經壓縮，而進一步編碼會造成品質欠佳的視訊。
 
@@ -296,7 +295,7 @@ HLS（HTTP即時串流）是適用性視訊串流的Apple標準，可根據網�
 | 1280 X 720 | 16:9 | 3000 - 6000 kbps，視訊中的運動量而定。 |
 | 1920 X 1080 | 16時9分 | 6000 - 8000 kbps，視訊中的運動量而定。 |
 
-### 獲取檔案的元資料{#obtaining-a-file-s-metadata}
+### 取得檔案的中繼資料 {#obtaining-a-file-s-metadata}
 
 您可以使用視訊編輯工具檢視其中繼資料，或使用專為取得中繼資料而設計的應用程式，以取得檔案的中繼資料。 以下是使用協力廠商應用程式MediaInfo來取得視訊檔案中繼資料的指示：
 
@@ -384,13 +383,13 @@ HLS（HTTP即時串流）是適用性視訊串流的Apple標準，可根據網�
 | 720便士 | 720 | 大螢幕 |
 | 1080便士 | 1080 | 高清大螢幕 |
 
-### Fps（每秒幀數）{#fps-frames-per-second}
+### Fps（每秒幀數） {#fps-frames-per-second}
 
 在美國和日本，大多數視頻以每秒29.97幀(fps)拍攝；在歐洲，大多數視頻以25幀/秒的速度拍攝。 以24 fps拍攝。
 
 選擇符合主視訊檔案的fps速率的視訊編碼預設集。 例如，如果主視訊是25 fps，請選擇編碼預設集(25 fps)。 依預設，所有自訂編碼都使用主視訊檔案的fps。 因此，建立視訊編碼預設集時，您不需要明確指定fps設定。
 
-### 視訊編碼維度{#video-encoding-dimensions}
+### 視訊編碼維度 {#video-encoding-dimensions}
 
 為獲得最佳結果，請選取編碼維度，使來源視訊是所有已編碼視訊的整數倍。
 
@@ -412,7 +411,7 @@ HLS（HTTP即時串流）是適用性視訊串流的Apple標準，可根據網�
    <td><p>來源</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>編碼</p> </td> 
@@ -424,7 +423,7 @@ HLS（HTTP即時串流）是適用性視訊串流的Apple標準，可根據網�
    <td><p>編碼</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>編碼</p> </td> 
@@ -435,7 +434,7 @@ HLS（HTTP即時串流）是適用性視訊串流的Apple標準，可根據網�
  </tbody> 
 </table>
 
-### 編碼視頻檔案格式{#encoded-video-file-format}
+### 編碼視訊檔案格式 {#encoded-video-file-format}
 
 Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用H.264視訊轉碼器，因此可提供高品質的視訊，但檔案大小壓縮。
 
@@ -461,7 +460,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 您也可以[取消發佈視訊，以從YouTube](#unpublishing-videos-to-remove-them-from-youtube)中移除視訊。
 
-### 配置Google雲設定{#configuring-google-cloud-settings}
+### 配置Google雲端設定 {#configuring-google-cloud-settings}
 
 若要發佈至YouTube，您需要Google帳戶。 如果您有GMAIL帳戶，則您已有Google帳戶。 如果您沒有Google帳戶，便可輕鬆建立帳戶。 您需要帳戶，因為您需要憑證才能將影片資產發佈至YouTube。 如果您已建立帳戶，請略過此任務，然後繼續[建立YouTube通道](#creating-a-youtube-channel)。
 
@@ -526,7 +525,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
    現在您將建立YouTube管道。
 
-### 建立YouTube通道{#creating-a-youtube-channel}
+### 建立YouTube管道 {#creating-a-youtube-channel}
 
 若要將影片發佈至YouTube，您必須擁有一或多個管道。 如果您已建立YouTube管道，可以略過此工作，然後前往&#x200B;**新增標籤以進行發佈**。
 
@@ -548,13 +547,13 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
    現在您將新增發佈的標籤。
 
-### 新增要發佈的標籤{#adding-tags-for-publishing}
+### 新增要發佈的標籤 {#adding-tags-for-publishing}
 
 若要發佈至YouTube的影片，AEM會將標籤關聯至一或多個YouTube頻道。 若要新增要發佈的標籤，請參閱[管理標籤](/help/sites-administering/tags.md)。
 
 或者，如果您想在AEM中使用預設標籤，可以跳過此任務並轉至[啟用YouTube Publish複製代理](#enabling-the-youtube-publish-replication-agent)。
 
-### 啟用YouTube Publish復寫代理{#enabling-the-youtube-publish-replication-agent}
+### 啟用YouTube Publish復寫代理 {#enabling-the-youtube-publish-replication-agent}
 
 1. 在AEM的左上角，點選AEM標誌，然後在左側導軌中，點選「 **[!UICONTROL 工具>部署>復寫>製作上的代理」]**。
 1. 在&#x200B;**[!UICONTROL 作者代理]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL YouTube Publish(youtube)]**。
@@ -609,7 +608,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
    現在您可將影片發佈至YouTube頻道。
 
-### （選用）自動設定已上傳影片的預設YouTube屬性{#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
+### （選用）自動設定已上傳影片的預設YouTube屬性 {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
 您可以在上傳影片時自動設定YouTube屬性。 您需在AEM中建立中繼資料處理設定檔，才能達成此目的。
 
@@ -681,7 +680,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
    請參 [閱中繼資料](metadata-profiles.md)[描述檔和視訊描述檔](video-profiles.md)。
 
-### 將影片發佈至您的YouTube頻道{#publishing-videos-to-your-youtube-channel}
+### 將影片發佈至您的YouTube頻道 {#publishing-videos-to-your-youtube-channel}
 
 現在，您將先前新增的標籤與視訊資產建立關聯。 此程式可讓AEM知道要發佈至您的YouTube管道的資產。
 
@@ -704,7 +703,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
    您可以選擇驗證您的YouTube頻道上已發佈的視訊。
 
-### （選用）驗證YouTube上發佈的影片{#optional-verifying-the-published-video-on-youtube}
+### （選用）驗證YouTube上發佈的影片 {#optional-verifying-the-published-video-on-youtube}
 
 您可以監控YouTube發佈（或取消發佈）的進度。
 
@@ -714,7 +713,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 八小時後，如果您仍看到顯示「已上傳（處理，請稍候）」的狀態訊息，請嘗試從我們的網站移除視訊，然後再次上傳。****
 
-### 將YouTube URL連結到Web應用程式{#linking-youtube-urls-to-your-web-application}
+### 將YouTube URL連結至您的Web應用程式 {#linking-youtube-urls-to-your-web-application}
 
 您可以取得YouTube URL字串，此字串在您發佈影片後由Dynamic Media產生。 複製YouTube URL時，剪貼簿會隨即顯示，因此您可以視需要將其貼至網站或應用程式中的頁面。
 
@@ -730,7 +729,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 1. 點選&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。
 1. 在&#x200B;**[!UICONTROL YouTube發佈]**&#x200B;標題下，在&#x200B;**[!UICONTROL YouTube URL]**&#x200B;清單中，選取URL文字並複製至網頁瀏覽器，以預覽資產或新增至您的網頁內容頁面。
 
-### 取消發佈影片以從YouTube中移除影片 {#unpublishing-videos-to-remove-them-from-youtube}
+### 取消發佈影片以將其從YouTube中移除 {#unpublishing-videos-to-remove-them-from-youtube}
 
 在AEM中取消發佈視訊資產時，視訊會從YouTube中移除。
 
@@ -748,11 +747,11 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 1. 在資產選取模式中，選取一或多個已發佈的視訊資產。
 1. 在工具列上，點選&#x200B;**[!UICONTROL 取消發佈>取消發佈]**。
 
-## 監控視訊編碼和YouTube發佈進度{#monitoring-video-encoding-and-youtube-publishing-progress}
+## 監控視訊編碼和YouTube發佈進度 {#monitoring-video-encoding-and-youtube-publishing-progress}
 
 當您將新視訊上傳至已套用視訊編碼的資料夾，或將視訊發佈至youtube時，可以透過多種方式監控視訊編碼/youtube發佈的進展（或失敗）。 實際YouTube發佈進度僅可透過記錄檔取得，但會以下列程式說明的其他方式列出該進度是否失敗或成功。 此外，當YouTube發佈工作流程或視訊編碼完成或中止時，您可能會收到電子郵件通知。
 
-### 監控進度{#monitoring-progress}
+### 監控進度 {#monitoring-progress}
 
 若要監控進度(包括編碼失敗/YouTube發佈):
 
@@ -783,6 +782,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
    >* Apache Sling作業佇列設定
    >* AdobeGranite工作流程外部流程作業處理常式
    >* Granite工作流程逾時佇列
+
    > 
    >您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
 
@@ -815,6 +815,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
    >* Apache Sling作業佇列設定
    >* AdobeGranite工作流程外部流程作業處理常式
    >* Granite工作流程逾時佇列
+
    >
    >您可以調整這些 **[!UICONTROL 配置中]****[!UICONTROL 的重試]**、重試延遲 **[!UICONTROL ,]** 以及超時屬性。
 
@@ -827,7 +828,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 1. 您可能會收到有關中止或失敗工作流程作業的電子郵件通知。 管理員可設定這些電子郵件通知。
 請參閱[設定電子郵件通知](#configuring-e-mail-notifications)。
 
-#### 配置電子郵件通知{#configuring-e-mail-notifications}
+#### 配置電子郵件通知 {#configuring-e-mail-notifications}
 
 您可能需要管理權限才能訪問&#x200B;**[!UICONTROL 工具]**&#x200B;菜單。
 
@@ -853,7 +854,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
    >
    >這些電子郵件是YouTube專屬的，且是一般工作流程電子郵件通知的外掛程式。 因此，您可能會收到兩組電子郵件通知： **Day CQ Workflow Email Notification Service**&#x200B;中提供的一般通知，以及根據您的組態設定而為YouTube指定的一組通知。
 
-## 檢視視訊報表{#viewing-video-reports}
+## 檢視視訊報表 {#viewing-video-reports}
 
 執行Dynamic Media — 混合模式時，即可使用視訊報表；執行Dynamic Media - Scene7模式時，無法使用報表。
 
@@ -956,12 +957,11 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
-
    appMeasurementBridge物件具有內建追蹤函式。 不過，您也可以提供自己的功能來支援多個追蹤系統或其他功能。
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
-## 向視頻添加字幕{#adding-captions-to-video}
+## 為視頻添加字幕 {#adding-captions-to-video}
 
 您可以在單一影片或最適化影片集中新增字幕，將影片的觸角延伸至全球市場。 通過添加字幕，您可以避免對音頻進行重音，或者使用母語者為每種語言重新錄制音頻。 影片以錄制的語言播放。 外語字幕出現，使不同語言的人仍然能夠理解音頻部分。
 
@@ -1020,7 +1020,7 @@ Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格�
 
       注意標題路徑末尾的`,1`。 緊接在路徑中的.vtt副檔名後面，您可以選擇分別將設為`,1`或`,0`，以啟用（開啟）或停用（關閉）視訊播放器列上的隱藏式字幕按鈕。
 
-## 將章節標籤新增至視訊{#adding-chapter-markers-to-video}
+## 新增章節標籤至視訊 {#adding-chapter-markers-to-video}
 
 您可以將章節標籤新增至單一視訊或最適化視訊集，讓您更輕鬆觀看和導覽長型視訊。 當使用者播放視訊時，他們可以點選視訊時間軸上的章節標籤（也稱為視訊清除程式），輕鬆導覽至其興趣點，或立即跳至新的內容、示範、教學課程等。
 
@@ -1034,7 +1034,7 @@ Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格�
 
 您可以使用下列範例作為建立具有章節導覽的WebVTT檔案時所使用的格式範例：
 
-### 具有視訊章節導覽的WebVTT檔案{#webvtt-file-with-video-chapter-navigation}
+### 具有視訊章節導覽的WebVTT檔案 {#webvtt-file-with-video-chapter-navigation}
 
 ```xml
 WEBVTT 
@@ -1102,7 +1102,7 @@ Cost-efficient access to rapidly evolving technology.
      </tbody> 
     </table>
 
-## 關於視訊縮圖{#about-video-thumbnails}
+## 關於視訊縮圖 {#about-video-thumbnails}
 
 您可以從Dynamic Media自動產生的十個縮圖影像中選擇其一，以新增至您的影片。 在AEM Sites、AEM Mobile或AEM Screens的製作環境中，將視訊資產與Dynamic Media元件搭配使用時，視訊播放器會顯示您選取的縮圖。 縮圖可當成靜態圖片，最能代表整個視訊的內容，進一步鼓勵使用者點選「播放」按鈕。
 
@@ -1116,7 +1116,7 @@ Cost-efficient access to rapidly evolving technology.
 >
 >自訂視訊縮圖僅在您執行Dynamic Media — 混合模式時才可用。
 
-### 新增視訊縮圖{#adding-a-video-thumbnail}
+### 新增影片縮圖 {#adding-a-video-thumbnail}
 
 1. 導覽至您要新增視訊縮圖的已上傳視訊資產。
 1. 在資產選擇模式中，從&#x200B;**[!UICONTROL 清單檢視]**&#x200B;或&#x200B;**[!UICONTROL 卡片檢視]**&#x200B;點選視訊資產。
@@ -1135,7 +1135,7 @@ Cost-efficient access to rapidly evolving technology.
 
    請參閱[設定視訊縮圖產生的預設時間間隔](#configuring-the-default-time-interval-that-video-thumbnails-are-generated)。
 
-#### 配置生成視頻縮略圖的預設時間間隔{#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
+#### 設定產生視訊縮圖的預設時間間隔 {#configuring-the-default-time-interval-that-video-thumbnails-are-generated}
 
 當您設定並儲存新的預設時間間隔時，您的變更會自動僅套用至您未來上傳的視訊。 它不會自動將新預設值套用至您先前上傳的影片。 對於現有視頻，必須重新生成縮略圖。
 
@@ -1161,7 +1161,7 @@ Cost-efficient access to rapidly evolving technology.
 
    請參閱[新增視訊縮圖。](#adding-a-video-thumbnail)
 
-### 新增自訂視訊縮圖{#adding-a-custom-video-thumbnail}
+### 新增自訂視訊縮圖 {#adding-a-custom-video-thumbnail}
 
 >[!NOTE]
 >
