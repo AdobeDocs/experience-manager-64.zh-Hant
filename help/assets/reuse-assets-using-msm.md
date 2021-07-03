@@ -4,16 +4,16 @@ description: 在衍生自父資產並連結至父資產的多個頁面/資料夾
 contentOwner: AG
 mini-toc-levels: 1
 feature: 資產管理，多站點管理員
-role: Business Practitioner,Administrator,Architect
+role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '3172'
 ht-degree: 9%
 
 ---
 
-# 對[!DNL Assets] {#reuse-assets-using-msm-for-assets}使用MSM重複使用資產
+# 對[!DNL Assets]使用MSM重複使用資產 {#reuse-assets-using-msm-for-assets}
 
 [!DNL Adobe Experience Manager]中的多站點管理器(MSM)功能使用戶能夠重複使用一次創作的內容，並跨多個Web位置重複使用。 數位資產與[!DNL Assets]功能的MSM相同。 對[!DNL Assets]使用MSM，您可以：
 
@@ -25,9 +25,9 @@ ht-degree: 9%
 
 若要將MSM用於[!DNL Assets]，請至少安裝[!DNL Experience Manager] 6.4 Service Pack 5。 如需詳細資訊，請參閱[最新Service Pack](/help/release-notes/sp-release-notes.md)發行說明。
 
-## 了解優點和概念{#understand-benefits-concepts}
+## 了解優點和概念 {#understand-benefits-concepts}
 
-### 其運作方式及優點{#how-it-works-the-benefits}
+### 運作方式與優點 {#how-it-works-the-benefits}
 
 若要了解在多個Web位置重複使用相同內容（文字和資產）的使用案例，請參閱[可能的MSM案例](/help/sites-administering/msm.md)。 [!DNL Experience Manager] 維護原始資產與其連結副本之間的連結，稱為即時副本(LC)。維護的連結可將集中的變更推送至多個即時副本。 這樣可以更快地更新，同時消除管理重複副本的限制。 變更的傳播是無誤的，是集中的。 此功能允許儲存受選定即時副本限制的更新空間。 使用者可以分離連結（即中斷繼承），並進行下次更新主副本並執行變更時不會覆寫的本機編輯。 您可以對一些選取的中繼資料欄位或整個資產進行分離。 它允許靈活地在本機更新原來繼承自主副本的資產。
 
@@ -37,7 +37,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 * 您可以暫停即時關係以更新即時副本，或移除少數有限欄位的繼承。 對來源的修改不再套用至即時副本。
 
-### 資產術語MSM辭匯表{#glossary-msm-for-assets}
+### MSM資產術語表 {#glossary-msm-for-assets}
 
 * **來源：** 原始資產或資料夾。從中派生即時副本的主副本。
 
@@ -59,7 +59,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 * **分離：** 不可撤銷地移除即時副本資產/資料夾的即時關係。分離操作後，即時副本永遠不會接收來自源的更新，並且不再是即時副本。 請參閱[remove relationship](#remove-live-relationship)。
 
-## 建立資產的即時副本{#create-live-copy-asset}
+## 建立資產的即時副本 {#create-live-copy-asset}
 
 若要從一或多個來源資產或資料夾建立即時副本，請遵循下列其中一項操作：
 
@@ -91,7 +91,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 >
 >移動源或即時副本時，將保留關係。 刪除即時副本時，將刪除關係。
 
-## 查看源和Live Copy {#view-properties-statuses-source-and-lc}的各種屬性和狀態
+## 查看源副本和即時副本的各種屬性和狀態 {#view-properties-statuses-source-and-lc}
 
 您可以從AEM使用者介面的各個區域，檢視即時副本的資訊和MSM相關狀態，例如關係、同步、轉出等。 下列兩種方法適用於資產和資料夾：
 
@@ -102,7 +102,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 >
 >要檢查幾個單獨Live Copy的狀態，請使用第一個方法檢查&#x200B;**[!UICONTROL Properties]**&#x200B;頁。 要檢查多個即時副本的狀態，請使用第二個方法檢查&#x200B;**[!UICONTROL 關係狀態]**&#x200B;頁。
 
-### 即時副本{#information-status-of-one-lc}的資訊和狀態
+### 即時副本的資訊和狀態 {#information-status-of-one-lc}
 
 若要檢查即時副本資產或資料夾的資訊和狀態，請遵循下列步驟。
 
@@ -112,7 +112,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 1. 如果子資產借用即時副本設定，您可以啟用或停用。
 1. 您可以選擇即時副本的選項，以繼承父項的轉出設定或變更設定。
 
-### 資料夾{#information-status-of-all-lcs-of-folder}的所有即時副本的資訊和狀態
+### 資料夾所有即時副本的資訊和狀態 {#information-status-of-all-lcs-of-folder}
 
 [!DNL Experience Manager] 提供一個控制台，用於檢查源資料夾的所有即時副本的樣式。此主控台會顯示所有子資產的狀態。
 
@@ -126,7 +126,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 >
 >您可以快速查看其他資料夾的即時副本狀態，而無需瀏覽太多。 從&#x200B;**[!UICONTROL 即時副本概述]**&#x200B;介面的中上部更改資料夾。
 
-### 源{#quick-actions-from-references-rail-for-source}的「參考」邊欄中的快速操作
+### 從「參考」(References)邊欄為源執行快速操作 {#quick-actions-from-references-rail-for-source}
 
 對於來源資產或資料夾，您可以看到下列資訊，並直接從「參考」邊欄採取下列動作：
 
@@ -144,7 +144,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 ![對於特定即時副本，選取來源資產時，可從「參考」邊欄存取暫停關係或變更轉出設定的選項](assets/lc_edit_referencerail.png)
 
-### 從「參考」邊欄快速動作，即時副本{#quick-actions-from-references-rail-for-live-copy}
+### 從「參考」邊欄快速動作即時副本 {#quick-actions-from-references-rail-for-live-copy}
 
 若為即時複製資產或資料夾，您可以看到下列資訊，並直接從「參考」邊欄採取下列動作：
 
@@ -156,11 +156,11 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 ![在「參考」(References)邊欄中，所選即時副本的可用動作](assets/lc_referencerail.png)
 
-## 將修改從源傳播到即時副本{#propagate-modifications-from-source-to-live-copies}
+## 將修改從來源傳播至即時副本 {#propagate-modifications-from-source-to-live-copies}
 
 修改來源後，變更可以透過同步動作或轉出動作傳播至即時副本。 若要了解這兩個動作之間的差異，請參閱[字彙表](#glossary-msm-for-assets)。
 
-### 轉出動作{#rollout-action}
+### 轉出動作 {#rollout-action}
 
 您可以從來源資產啟動轉出動作，並更新所有或部分選取的即時副本。
 
@@ -178,7 +178,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 ![將來源修改轉出至所選即時副本](assets/lc_rollout_dialog.png)
 
-### 關於同步操作{#about-synchronize-action}
+### 關於同步操作 {#about-synchronize-action}
 
 同步操作只會將修改從源提取到所選的即時副本。 同步動作會尊重並維護取消繼承後完成的本機修改。 不會覆寫本機修改，且取消的繼承不會重新建立。 您可以透過三種方式啟動同步動作。
 
@@ -188,7 +188,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 | [!UICONTROL 屬性]頁中的工具欄 | 在您已開啟即時副本屬性時啟動同步。 | 請參閱[同步即時副本](#synchronize-live-copy) |
 | [!UICONTROL 即時副本概] 觀主控台 | 選取來源資料夾或[!UICONTROL 即時副本概述]主控台已開啟時，快速同步多個資產（不一定全部）。 一次會針對一個資產起始同步動作，但是這是一次就多個資產同步的更快方式。 | 請參閱即時副本資料夾中許多資產的動作](#take-actions-on-many-assets-in-lcfolder)[ |
 
-### 同步即時副本{#synchronize-live-copy}
+### 同步即時副本 {#synchronize-live-copy}
 
 若要啟動同步動作，請開啟即 **[!UICONTROL 時副本的「屬性]** 」頁面，按一下「即時 **** 副本」，然後從工具列按一下所要的動作。
 
@@ -200,7 +200,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 >
 >如果掛起關係，則工具欄中不提供同步操作。 雖然同步動作可在[!UICONTROL 參考]邊欄中使用，但即使成功轉出，修改也不會傳播。
 
-## 掛起和恢復關係{#suspend-and-resume-relationship}
+## 暫停和恢復關係 {#suspend-and-resume-relationship}
 
 您可以暫時暫停關係，以防止即時副本收到對來源資產或資料夾所做的修改。 也可以恢復關係，以便即時副本開始從來源接收修改。
 
@@ -208,7 +208,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 或者，您也可以從即時副本概述主控台，快速暫停或繼續即時副本資料夾中多 **[!UICONTROL 個資產的關係]** 。請參 [閱對即時副本資料夾中的許多資產採取動作](#take-actions-on-many-assets-in-lcfolder)。
 
-## 對即時副本{#make-local-modifications-to-live-copy}進行本機修改
+## 對即時副本進行本機修改 {#make-local-modifications-to-live-copy}
 
 Live Copy是建立原始源時的副本。 即時副本的中繼資料值繼承自來源。 中繼資料欄位個別地維護與來源資產之個別欄位的繼承。
 
@@ -218,7 +218,7 @@ Live Copy是建立原始源時的副本。 即時副本的中繼資料值繼承�
 
 ![重設動作會覆寫本機編輯，並將即時副本部分與其來源連結](assets/lc_reset.png)
 
-## 刪除即時關係{#remove-live-relationship}
+## 移除即時關係 {#remove-live-relationship}
 
 您可以使用「分離」操作完全刪除源和即時副本之間的關係。 分離即時副本後，即時副本會變成獨立資產或資料夾。 分離後會立即在AEM介面中顯示為新資產。 要從源分離即時副本，請執行以下步驟。
 
@@ -232,7 +232,7 @@ Live Copy是建立原始源時的副本。 即時副本的中繼資料值繼承�
 
 或者，您也可以從&#x200B;**[!UICONTROL 即時副本概述]**&#x200B;主控台快速分離即時副本資料夾中的多個資產。 請參 [閱對即時副本資料夾中的許多資產採取動作](#take-actions-on-many-assets-in-lcfolder)。
 
-## 對即時副本資料夾{#take-actions-on-many-assets-in-lcfolder}中的許多資產執行動作
+## 對即時副本資料夾中的許多資產採取動作 {#take-actions-on-many-assets-in-lcfolder}
 
 如果即時副本資料夾中有多個資產，對每個資產啟動動作可能會相當繁瑣。 您可以從即時副本主控台快速對許多資產起始基本動作。 上述方法仍適用於個別資產。
 
@@ -257,7 +257,7 @@ AEM可讓您使用MSM Java API擴充功能。 對於Assets，擴充的作用與�
 >* 針對資產的MSM不支援在頁面屬性上設定MSM鎖定（觸控式UI）。
 
 
-## 資產管理任務對即時副本{#impact-of-asset-management-tasks-on-live-copies}的影響
+## 資產管理任務對Live Copy的影響 {#impact-of-asset-management-tasks-on-live-copies}
 
 即時副本和來源是可在一定程度上作為數位資產進行管理的資產或資料夾。 AEM中的某些資產管理工作會對Live Copy產生特定影響。
 
@@ -278,7 +278,7 @@ AEM可讓您使用MSM Java API擴充功能。 對於Assets，擴充的作用與�
 * 針對資產的MSM不支援在頁面屬性上設定MSM鎖定（觸控式UI）。
 * 針對資產的MSM，僅使用標準轉出設定。 其他轉出設定無法供MSM用於資產。
 
-## MSM對資產的限制{#limitations-of-msm-for-assets}
+## MSM對資產之限制 {#limitations-of-msm-for-assets}
 
 以下為MSM對資產之限制。
 
