@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 feature: 工作流程，資產管理，轉譯
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1382'
 ht-degree: 2%
 
 ---
 
-# 關於處理中繼資料、影像和視訊的設定檔{#profiles-for-processing-metadata-images-and-videos}
+# 關於處理中繼資料、影像和視訊的設定檔 {#profiles-for-processing-metadata-images-and-videos}
 
 設定檔是套用至上傳至資料夾之資產的選項方式。 例如，您可以指定要將哪些中繼資料描述檔和視訊編碼描述檔套用至您上傳的視訊資產。 或者，要套用至影像資產以適當裁切的影像設定檔。
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 >
 >即使您在指派了相同設定檔的兩個資料夾之間移動資產，也會是相同的情況。
 
-## 重新處理資料夾{#reprocessing-assets}中的資產
+## 重新處理資料夾中的資產 {#reprocessing-assets}
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ ht-degree: 2%
 
    若要監控工作流程或檢查其進度，請從AEM主控台頁面按一下「**[!UICONTROL 工具>工作流程]**」。 在「工作流實例」頁上，選擇工作流。 在菜單欄上，按一下&#x200B;**[!UICONTROL 開啟歷史記錄]**。 您也可以從同一「工作流實例」頁終止、掛起或更名選定的工作流。
 
-### 調整重新處理工作流{#adjusting-load}的批大小
+### 調整重新處理工作流的批大小 {#adjusting-load}
 
 （選用）重新處理工作流程的預設批次大小為每個工作50個資產。 此最佳批次大小由執行重新處理的資產的平均資產大小和mime類型所控制。 值越高，表示在單一重新處理作業中會有許多檔案。 因此，處理橫幅會在AEM資產上停留較長時間。 但是，如果平均檔案大小為1 MB或以下，則建議將值增加到幾百個，但Adobe不超過1000。 如果檔案的平均大小為大百兆位元組，則Adobe建議您將批處理大小降低至10。
 
