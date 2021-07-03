@@ -3,16 +3,16 @@ title: 整合AEM Assets與Adobe InDesign Server
 description: 了解如何整合AEM Assets與InDesign Server。
 contentOwner: AG
 feature: 發佈
-role: Administrator
+role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 3%
 
 ---
 
-# 將AEM Assets與Adobe InDesign Server整合{#integrating-aem-assets-with-indesign-server}
+# 整合AEM Assets與Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
 Adobe Experience Manager(AEM)Assets使用：
 
@@ -39,7 +39,7 @@ Adobe Experience Manager(AEM)Assets使用：
 
 
 
-## 提取的運作方式{#how-the-extraction-works}
+## 提取的運作方式 {#how-the-extraction-works}
 
 InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立的檔案、產生轉譯、擷取&#x200B;*所有*&#x200B;媒體（例如視訊）並儲存為資產：
 
@@ -76,7 +76,7 @@ InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立�
    * 擷取的文字和檔案會儲存在AEM Assets中。
    * 所有轉譯都會儲存在AEM Assets中、資產本身。
 
-## 將InDesign Server與AEM {#integrating-the-indesign-server-with-aem}整合
+## 將InDesign Server與AEM整合 {#integrating-the-indesign-server-with-aem}
 
 若要整合InDesign Server以便與AEM Assets搭配使用，並在設定Proxy後，您需要：
 
@@ -87,7 +87,7 @@ InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立�
 
 1. 為InDesign Server](#configuring-the-proxy-worker-for-indesign-server)配置[代理工作器。
 
-### 安裝InDesign Server{#installing-the-indesign-server}
+### 安裝InDesign Server {#installing-the-indesign-server}
 
 若要安裝並啟動InDesign Server以搭配AEM使用：
 
@@ -111,7 +111,7 @@ InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立�
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### 設定AEM Assets工作流程{#configuring-the-aem-assets-workflow}
+### 設定AEM Assets工作流程 {#configuring-the-aem-assets-workflow}
 
 AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包含數個InDesign專屬的處理步驟：
 
@@ -167,7 +167,7 @@ AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包�
 
 * **頁面設計**:產生產生的頁面時要使用的頁面設計。
 
-### 為InDesign Server{#configuring-the-proxy-worker-for-indesign-server}配置代理工作器
+### 配置代理工作器以InDesign Server {#configuring-the-proxy-worker-for-indesign-server}
 
 >[!NOTE]
 >
@@ -185,7 +185,7 @@ AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包�
 
 1. 按一下&#x200B;**[!UICONTROL OK]**&#x200B;以儲存。
 
-### 配置Day CQ連結外部化程式{#configuring-day-cq-link-externalizer}
+### 配置Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
 如果InDesign Server和AEM位於不同的主機上，或其中一個或兩個應用程式在預設埠上無法正常工作，請配置&#x200B;**Day CQ Link Externalizer**&#x200B;以設定InDesign Server的主機名、埠和內容路徑。
 
@@ -195,7 +195,7 @@ AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包�
 
    ![連結外部化程式設定](assets/link-externalizer-config.png)
 
-### 啟用InDesign Server{#enabling-parallel-job-processing-for-indesign-server}的並行作業處理
+### 為InDesign Server啟用並行作業處理 {#enabling-parallel-job-processing-for-indesign-server}
 
 您現在可以為ID啟用平行作業處理。
 
@@ -238,7 +238,7 @@ AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包�
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
-## 啟用對Adobe InDesign伺服器10.0或更新版本{#enabling-support-for-indesign-server-or-higher}的支援
+## 啟用對Adobe InDesign server 10.0或更新版本的支援 {#enabling-support-for-indesign-server-or-higher}
 
 對於InDesign伺服器10.0或更高版本，請執行以下步驟以啟用多會話支援。
 
@@ -250,7 +250,7 @@ AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包�
 >
 >對於與[!DNL Assets]的[!DNL InDesign Server]整合，請使用多核處理器，因為單核系統不支援整合所需的會話支援功能。
 
-## 配置Experience Manager憑據{#configure-aem-credentials}
+## 配置Experience Manager憑據 {#configure-aem-credentials}
 
 您可以變更從AEM例項存取InDesign伺服器的預設管理員憑證（使用者名稱和密碼），而不會中斷與Adobe InDesign伺服器的整合。
 
