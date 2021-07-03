@@ -3,16 +3,16 @@ title: 使用智慧內容服務設定資產標籤。
 description: 了解如何使用智慧內容服務在 [!DNL Adobe Experience Manager]中設定智慧標籤和增強智慧標籤。
 contentOwner: AG
 feature: 智慧標籤，標籤
-role: Administrator
+role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 34%
 
 ---
 
-# 使用智慧內容服務{#configure-asset-tagging-using-the-smart-content-service}設定資產標籤
+# 使用智慧內容服務設定資產標籤 {#configure-asset-tagging-using-the-smart-content-service}
 
 您可以使用[!DNL Adobe Developer Console]將[!DNL Adobe Experience Manager]與智慧內容服務整合。 使用此配置可從[!DNL Experience Manager]內訪問智慧內容服務。
 
@@ -38,7 +38,7 @@ ht-degree: 34%
 
 若要啟用增強智慧標籤，除了上述外，還請安裝最新的[Experience ManagerService Pack](https://helpx.adobe.com/tw/experience-manager/aem-releases-updates.html)。
 
-## 建立智慧內容服務設定以取得公開憑證{#obtain-public-certificate}
+## 建立智慧內容服務設定以取得公開憑證 {#obtain-public-certificate}
 
 公開證書允許您在[!DNL Adobe Developer Console]上驗證配置檔案。
 
@@ -92,7 +92,7 @@ ht-degree: 34%
 
 1. 存取[https://console.adobe.io](https://console.adobe.io)並導覽至&#x200B;**[!UICONTROL 整合]**&#x200B;頁面上的現有智慧內容服務。 上傳新憑證。 如需詳細資訊，請參閱[建立Adobe開發人員控制台整合](#create-adobe-i-o-integration)中的指示。
 
-## 建立Adobe開發人員控制台整合{#create-adobe-i-o-integration}
+## 建立Adobe開發人員控制台整合 {#create-adobe-i-o-integration}
 
 若要使用智慧內容服務API，請在Adobe開發人員控制台中建立整合，以取得[!UICONTROL API金鑰](在Adobe開發人員控制台整合的[!UICONTROL 用戶端ID]欄位中產生)、 [!UICONTROL 技術帳戶ID]、 [!UICONTROL 組織ID]和[!UICONTROL 用戶端密碼]&lt;a10/&lt;A1/>智慧資產服務設定[!DNL Experience Manager]中的雲配置1/>。
 
@@ -116,7 +116,7 @@ ht-degree: 34%
 
    *圖：Adobe開發人員控制台中整合的詳細資訊*
 
-## 配置智慧內容服務{#configure-smart-content-service}
+## 設定智慧內容服務 {#configure-smart-content-service}
 
 若要設定整合，請使用Adobe開發人員控制台整合中的[!UICONTROL TECHNICAL ACCOUNT ID]、[!UICONTROL ORGANIZATION ID]、[!UICONTROL CLIENT SECRET]和[!UICONTROL CLIENT ID]欄位值。 建立智慧標籤雲端設定可讓您驗證[!DNL Experience Manager]部署中的API請求。
 
@@ -149,7 +149,7 @@ ht-degree: 34%
 
    驗證結果將顯示在同一對話框中。
 
-## 在DAM更新資產工作流程中啟用智慧標籤（選用）{#enable-smart-tagging-in-the-update-asset-workflow-optional}
+## 在DAM更新資產工作流程中啟用智慧標籤（選用） {#enable-smart-tagging-in-the-update-asset-workflow-optional}
 
 1. 在[!DNL Experience Manager]中，轉至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。
 
