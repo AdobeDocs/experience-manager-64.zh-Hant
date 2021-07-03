@@ -9,8 +9,8 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
 feature: 互動式影片，影片
-role: Business Practitioner
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: User
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '5975'
 ht-degree: 4%
@@ -25,7 +25,7 @@ ht-degree: 4%
 
 另請參閱[互動式影像](interactive-images.md)。
 
-## 互動式視訊的實際運作{#interactive-video-in-action}
+## 互動式視訊的實際運作 {#interactive-video-in-action}
 
 若要檢視互動式可購買視訊的實際運作，請按一下「[ Live Demos](https://landing.adobe.com/tw/na/dynamic-media/ctir-2755/live-demos.html)」，捲動至頁面上的&#x200B;**[!UICONTROL Shopbable Media]**&#x200B;標題，然後按一下可購買視訊。
 
@@ -41,20 +41,20 @@ ht-degree: 4%
 >
 >如果您建立互動式視訊，以在使用者點按縮圖影像時啟動網頁，某些裝置會阻擋快顯網頁開啟。 在這種情況下，您必須更改設備上的彈出窗口阻止程式設定。 例如，在Apple iPhone 6上，點選&#x200B;**[!UICONTROL Settings]** > **Safari** > **Block Pop-ups**，然後將控制項滑動至&#x200B;**[!UICONTROL Off]**。 現在，當您播放互動式視訊並按一下縮圖時，如果您想要開啟快顯視窗，則會提示您。 若您接受，則會開啟網頁。
 
-## 觀看互動式視訊的建立方式{#watch-how-interactive-videos-are-created}
+## 觀看互動式視訊的建立方式 {#watch-how-interactive-videos-are-created}
 
 觀看如何建立互動式視訊的7分 [鐘30秒逐步解說](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveVideo)[](https://outv.omniture.com?v=s4NHQ2dzqd7hIqWjeG2sIdyNWsTWyupA)。
 \
  (雖然視訊逐步說明已加上「隨選資產」品牌，但AEM Assets中的「互動式視訊」仍適用原則和步驟。) 
 
-## Adobe客戶成功網路研討會{#adobe-customer-success-webinar}
+## Adobe客戶成功網路研討會 {#adobe-customer-success-webinar}
 
 「在AEM Assets中使用互動式視訊、連結共用和YouTube共用」網路研討會教您如何使用互動式視訊和其他功能，將轉換導向的事件連結至您的視訊行銷內容。
 
 >[!NOTE]
 [在AEM Assets中使用互動式影片、連結共用和YouTube共用](https://adobecustomersuccess.adobeconnect.com/p1yxzdo4aec/)。
 
-## 快速入門：互動式影片{#quick-start-interactive-videos}
+## 快速入門：互動影片 {#quick-start-interactive-videos}
 
 下列逐步工作流程說明旨在協助您在Dynamic Media中快速上手並執行互動式影片。
 
@@ -102,7 +102,7 @@ ht-degree: 4%
 
    如果您使用第三方WCM（網頁內容管理員），則必須將新的互動式視訊與網站上使用的現有Quickview實作整合。 請參閱[將互動式視訊與現有Quickview](#integrating-an-interactive-video-with-an-existing-quickview)整合。
 
-## （可選）識別Quickview變數{#optional-identifying-quickview-variables}
+## （可選）識別Quickview變數 {#optional-identifying-quickview-variables}
 
 >[!NOTE]
 只有在以下情況為真時才需要此任務：
@@ -231,7 +231,7 @@ ht-degree: 4%
 
 您現在可以上傳視訊及其相關的縮圖資產。
 
-## （可選）建立互動式視訊檢視器預設集{#optional-creating-an-interactive-video-viewer-preset}
+## （可選）建立互動式視訊檢視器預設集 {#optional-creating-an-interactive-video-viewer-preset}
 
 如果您要使用預設的現成互動式視訊檢視器預設類型`Shoppable_Video_dark`或`Shoppable_Video_light`，可跳過此任務並繼續下一步。
 
@@ -263,7 +263,7 @@ ht-degree: 4%
 
    現在為影片增加互動功能。
 
-## 為視頻添加交互功能{#adding-interactivity-to-your-video}
+## 為視訊新增互動功能 {#adding-interactivity-to-your-video}
 
 使用「建立互動式視訊」頁面上的就地視覺編輯器，將時間軸區段新增至視訊。
 
@@ -504,11 +504,11 @@ ht-degree: 4%
 
    新增時間軸區段並發佈互動式視訊後，您就可以將其新增至現有的網站登陸頁面。 請參閱[將互動式視訊與您的網站整合。](#integrating-an-interactive-video-with-your-website)
 
-## 發佈互動式視訊資產{#publishing-interactive-video-assets}
+## 發佈互動式視訊資產 {#publishing-interactive-video-assets}
 
 如需如何發佈互動式視訊資產的詳細資訊，請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
-## 將互動式視訊與您的網站{#integrating-an-interactive-video-with-your-website}整合
+## 將互動式視訊與您的網站整合 {#integrating-an-interactive-video-with-your-website}
 
 上傳影片、新增時間軸區段並發佈互動式影片後，您現在可以將其新增至現有網站。
 
@@ -570,7 +570,7 @@ ht-degree: 4%
 
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
-## 將互動式視訊與現有的Quickview {#integrating-an-interactive-video-with-an-existing-quickview}整合
+## 將互動式視訊與現有的Quickview整合 {#integrating-an-interactive-video-with-an-existing-quickview}
 
 >[!NOTE]
 只有當您是獨立AEM Assets客戶時，才適用此工作。
