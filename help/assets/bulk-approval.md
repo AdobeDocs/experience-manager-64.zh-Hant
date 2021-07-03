@@ -3,9 +3,9 @@ title: 查看資料夾資產和集合
 description: 為資料夾或集合中的資產設定審核工作流程，並與審核者或創意合作夥伴共用，以尋求意見回饋。
 contentOwner: AG
 feature: 協作，集合
-role: Business Practitioner
+role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '816'
 ht-degree: 21%
@@ -24,7 +24,7 @@ Adobe Experience Manager(AEM)Assets可讓您為資料夾或集合中的資產設
 
 審核者完成審核（批准或拒絕資產）後，您會收到審核完成通知。
 
-## 建立資料夾{#creating-a-review-task-for-folders}的審核任務
+## 為資料夾建立審核任務 {#creating-a-review-task-for-folders}
 
 1. 從「資產」使用者介面中，選取您要建立檢閱工作的資料夾。
 1. 從工具列中點選/按一下「建 **[!UICONTROL 立檢閱工作]** 」圖示，以開啟「 **** 檢閱工作」頁面。如果您在工具列中看不到圖示，請點選/按一下「更 **[!UICONTROL 多]** 」，然後選取圖示。
@@ -72,7 +72,7 @@ Adobe Experience Manager(AEM)Assets可讓您為資料夾或集合中的資產設
 
    ![review_status_listview](assets/review_status_listview.png)
 
-## 為集合{#creating-a-review-task-for-collections}建立審核任務
+## 為集合建立審核任務 {#creating-a-review-task-for-collections}
 
 1. 從「集合」頁中，選擇要為其建立審閱任務的集合。
 1. 從工具列中點選/按一下「建 **[!UICONTROL 立檢閱工作]** 」圖示，以開啟「 **** 檢閱工作」頁面。如果您在工具列中看不到圖示，請點選/按一下「更 **[!UICONTROL 多]** 」，然後選取圖示。
