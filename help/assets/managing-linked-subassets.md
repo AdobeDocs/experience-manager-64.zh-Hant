@@ -3,16 +3,16 @@ title: 管理複合資產並產生子資產。
 description: 了解如何從InDesign、Adobe Illustrator和Photoshop檔案建立AEM資產的參考。 也了解如何使用頁面檢視器功能來檢視多頁檔案的個別頁面，包括PDF、INDD、PPT、PPTX和AI檔案。
 contentOwner: AG
 feature: 資產管理
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1412'
 ht-degree: 0%
 
 ---
 
-# 使用子資產{#managing-compound-assets}管理複合資產
+# 使用子資產管理複合資產 {#managing-compound-assets}
 
 Adobe Experience Manager(AEM)Assets可識別上傳的檔案是否包含對存放庫中已存在資產的參考。 此功能僅支援檔案格式。 如果上傳的資產包含AEM資產的任何參考，上傳和參考的資產之間會建立雙向連結。
 
@@ -41,7 +41,7 @@ AEM Assets支援&#x200B;**雙向參考**。 您可以在上傳之檔案的資產
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
-## Adobe InDesign:將資產新增為參考{#add-aem-assets-as-references-in-adobe-indesign}
+## Adobe InDesign:新增資產作為參考 {#add-aem-assets-as-references-in-adobe-indesign}
 
 若要從InDesign檔案中參考AEM資產，請將AEM資產拖曳至InDesign檔案，或將InDesign檔案匯出為ZIP檔案。
 
@@ -53,11 +53,11 @@ AEM Assets中已有參考的資產。 您可以透過[設定InDesign伺服器](i
 
 上傳INDD檔案時，系統會查詢存放庫中具有`xmpMM:InstanceID`和`xmpMM:DocumentID`屬性的資產，以擷取參考。
 
-### 拖曳資產以建立參考{#create-references-by-dragging-aem-assets}
+### 拖曳資產以建立參考 {#create-references-by-dragging-aem-assets}
 
 此程式類似於[在Adobe Illustrator](#refai)中新增資產作為參考。
 
-### 匯出ZIP檔案{#create-references-to-aem-assets-by-exporting-a-zip-file}以建立資產的參考
+### 匯出ZIP檔案以建立資產的參考 {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. 執行[建立工作流模型](/help/sites-developing/workflows-models.md)中的步驟以建立新工作流。
 1. 使用Adobe InDesign的[封裝功能](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html)匯出檔案。 Adobe InDesign可將檔案和連結的資產匯出為套件。 在此情況下，匯出的資料夾會包含`Links`資料夾，其中包含InDesign檔案中的子資產。 `Links`資料夾與INDD檔案位於同一資料夾中。
@@ -83,7 +83,7 @@ AEM Assets中已有參考的資產。 您可以透過[設定InDesign伺服器](i
 >
 >複合資產內的資產也可根據其檔案ID和例項ID來參照。 此功能僅適用於Adobe Illustrator和Adobe Photoshop版本。 對於其他資產，參照是根據主要複合資產中連結資產的相對路徑，如舊版AEM所述。
 
-## 建立子資產{#generate-subassets}
+## 建立子資產 {#generate-subassets}
 
 針對多頁格式的支援資產(PDF檔案、AI檔案、Microsoft PowerPoint和Apple Keynote檔案，以及Adobe InDesign檔案),AEM可產生對應至原始資產每個個別頁面的子資產。 這些子資產連結至&#x200B;*parent*&#x200B;資產，並促進多頁檢視。 就所有其他用途而言，子資產在AEM中會被視為一般資產。
 
@@ -103,13 +103,13 @@ AEM Assets中已有參考的資產。 您可以透過[設定InDesign伺服器](i
 
 尤其是Microsoft Word文檔，請執行&#x200B;**[!UICONTROL DAM Parse Word Documents]**&#x200B;工作流。 它從Microsoft Word文檔的內容生成`cq:Page`元件。 從文檔中提取的影像從`cq:Page`元件中引用。 即使停用子資產產生，也會擷取這些影像。
 
-## 查看子資產{#viewing-subassets}
+## 檢視子資產 {#viewing-subassets}
 
 只有產生子資產，且該子資產可供選取的多頁資產使用時，才會顯示子資產。 若要檢視產生的子資產，請開啟多頁面資產。 在頁面的左上方區域，按一下「![左側邊欄圖示](assets/do-not-localize/aem_leftrail_contentonly.png)」，然後按一下清單中的「**[!UICONTROL 子資產]**」。 當您從清單中選取&#x200B;**[!UICONTROL 子資產]**&#x200B;時。 或者，使用鍵盤快捷鍵`alt + 5`。
 
 ![檢視多頁資產的子資產](assets/view_subassets_simulation.gif)
 
-## 查看多頁檔案{#view-pages-of-a-multi-page-file}的頁
+## 檢視多頁檔案的頁面 {#view-pages-of-a-multi-page-file}
 
 您可以使用AEM Assets的「頁面檢視器」功能，檢視多頁檔案，例如PDF、INDD、PPT、PPTX和AI檔案。 開啟多頁資產，然後按一下頁面左上角的「**[!UICONTROL 檢視頁面]**」 。 開啟的「頁面檢視器」會顯示資產的頁面，以及瀏覽及縮放每個頁面的控制項。
 
@@ -129,7 +129,7 @@ AEM Assets中已有參考的資產。 您可以透過[設定InDesign伺服器](i
 
 * **** 按一下左側邊欄圖示後，左側邊欄 ![的時](assets/do-not-localize/aem_leftrail_contentonly.png) 間線選項會顯示檔案的活動資料流。
 
-## 最佳做法和限制{#best-practice-limitation-tips}
+## 最佳實務和限制 {#best-practice-limitation-tips}
 
 * 子資產產生對於任何Experience Manager部署都可能耗用大量資源。 如果您在上傳複雜資產時產生子資產，請在「DAM更新資產」工作流程中新增步驟。 如果您要隨需產生子資產，請建立個別的工作流程以產生子資產。 專用的工作流程可讓您略過DAM更新資產工作流程中的其他步驟，並儲存計算資源。
 
