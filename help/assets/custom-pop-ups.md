@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 exl-id: 56b070e4-b445-4488-acff-685b7ce5785f
 feature: 設定
-role: Administrator,Business Practitioner,Developer
-source-git-commit: a842c45f0a0597f4c7f143974a550874258e5382
+role: Admin,User,Developer
+source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
 
 ---
 
-# 使用Quickviews {#using-quickviews-to-create-custom-pop-ups}建立自訂快顯視窗
+# 使用Quickviews建立自訂快顯視窗 {#using-quickviews-to-create-custom-pop-ups}
 
 預設的「快速檢視」用於電子商務體驗，其中會顯示包含產品資訊的快顯視窗以促進購買。 不過，您可以觸發自訂內容以顯示在快顯視窗中。 根據您使用的檢視器，此功能可讓使用者按一下熱點、縮圖影像或影像地圖，以查看資訊或相關內容。
 
