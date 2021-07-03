@@ -3,16 +3,16 @@ title: 在網頁中使用頁面追蹤器和內嵌程式碼
 description: 了解如何將頁面追蹤器和內嵌JavaScript程式碼加入您的網站程式碼中，讓Adobe Analytics能擷取資產的使用資料。
 contentOwner: AG
 feature: 資產報表
-role: Architect,Administrator
+role: Architect,Admin
 exl-id: b0154c9c-a671-43fb-8733-274a35307a34
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
 
 ---
 
-# 在網頁{#using-page-tracker-and-embed-code-in-web-pages}中使用頁面追蹤器和內嵌程式碼
+# 在網頁中使用頁面追蹤器和內嵌程式碼 {#using-page-tracker-and-embed-code-in-web-pages}
 
 頁面追蹤器是您納入協力廠商網站程式碼中的JavaScript程式碼，可讓Adobe Analytics擷取這些網站上Adobe Experience Manager(AEM)資產的使用資料。
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 </html>
 ```
 
-## 新增頁面追蹤器程式碼{#adding-page-tracker-code}
+## 新增頁面追蹤器程式碼 {#adding-page-tracker-code}
 
 您可以在網站程式碼的標題區段中新增頁面追蹤器程式碼。 下列程式碼片段顯示範例網頁中包含的頁面追蹤器程式碼：
 
@@ -79,7 +79,7 @@ ht-degree: 0%
  </head>
 ```
 
-## 新增內嵌程式碼{#adding-embed-code}
+## 新增內嵌程式碼 {#adding-embed-code}
 
 您可將內嵌程式碼新增至網站程式碼的內文中。 下列程式碼片段顯示範例網頁中包含的內嵌程式碼：
 
