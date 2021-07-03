@@ -3,16 +3,16 @@ title: 搜尋視訊資產
 description: 使用關鍵字、檔案屬性（例如Mime類型、大小或最近修改的時間戳記），在AEM Assets中快速尋找您的檔案。
 contentOwner: AG
 feature: 視頻，搜索
-role: Business Practitioner
+role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '580'
 ht-degree: 2%
 
 ---
 
-# 搜尋視訊資產{#searching-video-assets}
+# 搜尋視訊資產 {#searching-video-assets}
 
 為了節省瀏覽可能數百個視訊的時間和精力，請使用關鍵字、檔案屬性（如檔案類型）或最近修改的時間戳記來快速找到您的檔案。
 
