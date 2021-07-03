@@ -3,16 +3,16 @@ title: 階層式中繼資料
 description: 本文說明如何定義資產的階層式中繼資料。
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 13%
 
 ---
 
-# 級聯元資料{#cascading-metadata}
+# 階層式中繼資料 {#cascading-metadata}
 
 本文說明如何定義資產的階層式中繼資料。
 
@@ -33,7 +33,7 @@ ht-degree: 13%
 * 根據在另一個欄位中指定的值，變更特定欄位所顯示的選項。
 * 根據其他欄位中指定的值，在特定欄位中設定預設中繼資料值。
 
-## 在AEM {#configure-cascading-metadata-in-aem}中配置級聯元資料
+## 在AEM中設定階層式中繼資料 {#configure-cascading-metadata-in-aem}
 
 假設您要根據選取的資產類型顯示階層式中繼資料。 一些範例
 
