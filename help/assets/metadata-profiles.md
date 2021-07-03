@@ -3,9 +3,9 @@ title: 使用中繼資料設定檔，將預設中繼資料套用至資料夾中�
 description: 了解資產的中繼資料設定檔。 了解如何建立中繼資料設定檔，並將其套用至資料夾資產。
 contentOwner: AG
 feature: 中繼資料
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 15%
@@ -16,7 +16,7 @@ ht-degree: 15%
 
 中繼資料設定檔可讓您將預設中繼資料套用至資料夾內的資產。 建立中繼資料描述檔並將其套用至資料夾。 您隨後上傳至資料夾的任何資產都會繼承您在中繼資料設定檔中設定的預設中繼資料。
 
-## 新增中繼資料設定檔{#adding-a-metadata-profile}
+## 新增中繼資料設定檔 {#adding-a-metadata-profile}
 
 1. 點選或按一下AEM標誌，並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」，然後點選「**[!UICONTROL 建立]**」。
 1. 輸入元資料配置檔案的標題，例如「示例元資料」，然後按一下&#x200B;**[!UICONTROL Submit]**。 將顯示元資料配置檔案的&#x200B;**[!UICONTROL 編輯表單]**。
@@ -61,7 +61,7 @@ ht-degree: 15%
 
    ![chlimage_1-485](assets/chlimage_1-485.png)
 
-## 複製元資料配置檔案{#copying-a-metadata-profile}
+## 複製中繼資料設定檔 {#copying-a-metadata-profile}
 
 1. 從&#x200B;**[!UICONTROL 中繼資料描述檔]**&#x200B;頁面中，選取描述檔以製作其復本。
 
@@ -73,7 +73,7 @@ ht-degree: 15%
 
    ![chlimage_1-487](assets/chlimage_1-487.png)
 
-## 刪除元資料配置檔案{#deleting-a-metadata-profile}
+## 刪除中繼資料設定檔 {#deleting-a-metadata-profile}
 
 1. 從&#x200B;**[!UICONTROL 中繼資料描述檔]**&#x200B;頁面中，選取要刪除的描述檔。
 
@@ -82,7 +82,7 @@ ht-degree: 15%
 1. 按一下工具列中的&#x200B;**[!UICONTROL 刪除中繼資料描述檔]** 。
 1. 在對話框中，按一下&#x200B;**[!UICONTROL Delete]**&#x200B;以確認刪除操作。 元資料設定檔會從清單中刪除。
 
-## 將元資料配置檔案應用於資料夾{#applying-a-metadata-profile-to-folders}
+## 將中繼資料設定檔套用至資料夾 {#applying-a-metadata-profile-to-folders}
 
 將元資料配置檔案分配給資料夾時，任何子資料夾都會自動從其父資料夾繼承配置檔案。 這表示您只能將一個中繼資料描述檔指派給資料夾。 因此，請仔細考慮上傳、儲存、使用和封存資產的資料夾結構。
 
@@ -94,13 +94,13 @@ ht-degree: 15%
 
 您可以將中繼資料設定檔套用至特定資料夾，或全域套用至所有資產。
 
-### 將元資料配置檔案應用於特定資料夾{#applying-metadata-profiles-to-specific-folders}
+### 將中繼資料設定檔套用至特定資料夾 {#applying-metadata-profiles-to-specific-folders}
 
 您可以從「工具」菜單或者在資料夾內的「屬性」中，將元資料配置檔案應 **[!UICONTROL 用到資料夾]******。本節說明如何以兩種方式將中繼資料描述檔套用至資料夾。
 
 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-#### 從設定檔使用者介面{#applying-metadata-profiles-to-folders-from-profiles-user-interface}將中繼資料設定檔套用至資料夾
+#### 從設定檔使用者介面將中繼資料設定檔套用至資料夾 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
 1. 點選AEM標誌並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」。
 1. 選取您要套用至資料夾或多個資料夾的中繼資料設定檔。
@@ -109,7 +109,7 @@ ht-degree: 15%
 
 1. 點選「**[!UICONTROL 將中繼資料描述檔套用至資料夾」]**，然後選取您要用來接收新上傳資產的資料夾或多個資料夾，並點選「**[!UICONTROL Done]**」。 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-#### 從「屬性」 {#applying-metadata-profiles-to-folders-from-properties}將元資料配置檔案應用到資料夾
+#### 從屬性將元資料配置檔案應用到資料夾 {#applying-metadata-profiles-to-folders-from-properties}
 
 1. 在左側導軌中，點選&#x200B;**[!UICONTROL Assets]**，然後導覽至您要套用中繼資料描述檔的資料夾。
 1. 在資料夾中，點選核取標籤以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
@@ -120,7 +120,7 @@ ht-degree: 15%
 
    已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
-### 全域{#applying-a-metadata-profile-globally}套用中繼資料設定檔
+### 全域套用中繼資料設定檔 {#applying-a-metadata-profile-globally}
 
 除了將設定檔套用至資料夾之外，您也可以全域套用一個設定檔，讓任何資料夾中上傳至AEM資產的任何內容都會套用選取的設定檔。 若要全域套用中繼資料設定檔，請遵循下列步驟：
 
@@ -134,13 +134,13 @@ ht-degree: 15%
 
       ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## 從資料夾{#removing-a-metadata-profile-from-folders}中刪除元資料配置檔案
+## 從資料夾中移除中繼資料描述檔 {#removing-a-metadata-profile-from-folders}
 
 從資料夾移除中繼資料描述檔時，任何子資料夾都會自動從其父資料夾移除描述檔。 不過，資料夾內發生的檔案處理仍維持不變。
 
 您可以從「工具」功能表內的資料夾或在資料夾內的「屬性」中移除中繼資料描述檔，或從「屬性」中移除中繼資料描述檔，或從「屬性」中移除中繼資料描述檔，或從「工具 **[!UICONTROL 」功能表]** 移除中繼資料描述檔 ****。本節將說明如何以兩種方式從資料夾中移除中繼資料描述檔。
 
-### 透過設定檔使用者介面{#removing-metadata-profiles-from-folders-via-profiles-user-interface}從資料夾移除中繼資料設定檔
+### 透過設定檔使用者介面，從資料夾移除中繼資料設定檔 {#removing-metadata-profiles-from-folders-via-profiles-user-interface}
 
 若要透過設定檔使用者介面從資料夾移除中繼資料設定檔，請執行下列步驟：
 
@@ -150,7 +150,7 @@ ht-degree: 15%
 
    您可以確認中繼資料描述檔不再套用至資料夾，因為資料夾名稱下方不再顯示該名稱。
 
-### 通過屬性{#removing-metadata-profiles-from-folders-via-properties}從資料夾中刪除元資料配置檔案
+### 透過「屬性」從資料夾移除中繼資料描述檔 {#removing-metadata-profiles-from-folders-via-properties}
 
 1. 點選AEM標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除中繼資料描述檔的資料夾。
 1. 在資料夾中，點選核取標籤以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
