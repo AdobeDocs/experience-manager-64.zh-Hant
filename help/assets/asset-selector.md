@@ -3,16 +3,16 @@ title: 資產選擇器
 description: 了解如何使用資產選擇器，在Adobe Experience Manager(AEM)Assets中搜尋、篩選、瀏覽及擷取資產的中繼資料。 同時了解如何自訂資產選擇器介面。
 contentOwner: AG
 feature: 資產管理，元資料，搜索
-role: Business Practitioner
+role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '496'
 ht-degree: 1%
 
 ---
 
-# 資產選擇器{#asset-selector}
+# 資產選擇器 {#asset-selector}
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 您可以將任何網頁（無論其是否屬於CQ容器）與資產選擇器(`https://[AEM_server]:[port]/aem/assetpicker.html`)整合。
 
-## 內容參數{#contextual-parameters}
+## 內容參數 {#contextual-parameters}
 
 您可以在URL中傳遞下列要求參數，以在特定內容中啟動資產選取器：
 
@@ -42,7 +42,7 @@ ht-degree: 1%
 | assettype(S) | 影像、文檔、多媒體、檔案 | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=images`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=documents`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=multimedia`</li> <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&assettype=archives`</li> | 使用此選項，根據傳遞的值來篩選資產類型。 |
 | mimetype | 資產的mimetype(s)(`/jcr:content/metadata/dc:format`)（也支援通配符） | <ul><li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=image/png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&?mimetype=*png`</li>  <li>`http://localhost:4502/aem/assetpicker.html?viewmode=search&mimetype=*presentation`</li>  <li>`http://localhost:4502/aem/assetpicker?viewmode=search&mimetype=*presentation&mimetype=*png`</li></ul> | 使用它根據MIME類型篩選資產 |
 
-## 使用資產選擇器{#using-the-asset-selector}
+## 使用資產選擇器 {#using-the-asset-selector}
 
 1. 若要存取資產選取器介面，請前往`https://[AEM_server]:[port]/aem/assetpicker`。
 1. 導覽至所需的資料夾，然後選取一或多個資產。
