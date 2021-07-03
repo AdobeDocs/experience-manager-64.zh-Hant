@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 exl-id: 6bd68afe-bd54-4482-bd6e-cb318868c8d0
 feature: 選擇器
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 19%
@@ -33,7 +33,7 @@ ht-degree: 19%
 
 選擇熱點或影像映射的位置時（而不是手動輸入），使用的是選擇器。 「網站選取器」只有在您是AEM Sites客戶時才有效。 產品選擇器也需要AEM Commerce。
 
-## 選擇產品{#selecting-products}
+## 選擇產品 {#selecting-products}
 
 當您想要熱點或影像地圖為產品目錄中的特定產品提供快速檢視時，請使用產品選取器來選擇產品。
 
@@ -71,7 +71,7 @@ ht-degree: 19%
 
    ![chlimage_1-528](assets/chlimage_1-528.png)
 
-## 選擇站點{#selecting-sites}
+## 選擇網站 {#selecting-sites}
 
 當您想要將熱點或影像地圖連結到AEM網站內管理的網頁時，請使用網站選擇器來選擇網頁。
 
@@ -91,7 +91,7 @@ ht-degree: 19%
 
 1. 在&#x200B;**[!UICONTROL 預覽]**&#x200B;模式中，如果點選熱點或影像地圖，則導覽至您指定的AEM網站頁面。
 
-## 選取資產{#selecting-assets}
+## 選取資產 {#selecting-assets}
 
 使用此選取器來選擇要用於轉盤橫幅、互動式視訊、影像集、混合媒體集和回轉集的影像。 在互動式視訊中，當您點選&#x200B;**[!UICONTROL **[!UICONTROL  Content ]**標籤中的「選取資產」]**&#x200B;時，即可使用資產選取器。 在轉盤集中，當您建立新投影片時，可使用資產選取器。 在影像集、混合媒體集和回轉集中，當您分別建立新的影像集、混合媒體集或回轉集時，可使用資產選擇器。
 
