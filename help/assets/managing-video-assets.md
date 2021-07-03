@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: 資產管理，影片
-role: Business Practitioner
+role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 了解如何在Adobe Experience Manager(AEM)資產中管理和編輯視訊資產。 此外，如果您有權使用Dynamic Media，請參閱[Dynamic Media視訊檔案](video.md)。
 
-## 上傳和預覽視訊資產{#uploading-and-previewing-video-assets}
+## 上傳和預覽視訊資產 {#uploading-and-previewing-video-assets}
 
 AEM Assets會以副檔名MP4產生視訊資產的預覽。 如果資產的格式不是MP4，請安裝FFmpeg套件以產生預覽。 FFmpeg建立OGG和MP4類型的視頻轉譯。 您可以在AEM Assets使用者介面中預覽這些轉譯。
 
@@ -37,7 +37,7 @@ AEM Assets會以副檔名MP4產生視訊資產的預覽。 如果資產的格式
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
-## 上傳大於2 GB {#configuration-to-upload-video-assets-that-are-larger-than-gb}資產的設定
+## 上傳大於2 GB資產的設定 {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
 根據預設，由於檔案大小限制，AEM Assets不會讓您上傳超過2 GB的任何資產。 但是，您可以轉到CRXDE Lite並在`/apps`目錄下建立節點來覆寫此限制。 節點必須具有相同的節點名稱、目錄結構和順序的可比節點屬性。
 
@@ -74,11 +74,11 @@ AEM Assets會以副檔名MP4產生視訊資產的預覽。 如果資產的格式
 1. 在「逾 **[!UICONTROL 時]** 」欄位中，指定值 `18000`，然後點選「確定」以返回「動態媒體編碼 ******** 視訊」工作流程頁面。
 1. 在頁面頂端附近，在&#x200B;**[!UICONTROL Dynamic Media編碼視訊]**&#x200B;頁面標題下方，點選&#x200B;**[!UICONTROL 儲存]**。
 
-## 發佈視訊資產{#publishing-video-assets}
+## 發佈視訊資產 {#publishing-video-assets}
 
 視訊資產發佈後，您就可以透過URL或內嵌在網頁中，加入這些資產。 請參閱[發佈資產](publishing-dynamicmedia-assets.md)。
 
-## 為視訊資產加上注釋{#annotating-video-assets}
+## 為視訊資產加上注釋 {#annotating-video-assets}
 
 1. 從「資產」主控台，點選資產卡片上的&#x200B;**[!UICONTROL 編輯]**&#x200B;圖示，以顯示資產詳細資訊頁面。
 1. 點選&#x200B;**[!UICONTROL 預覽]**&#x200B;圖示以播放視訊。
