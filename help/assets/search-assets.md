@@ -3,16 +3,16 @@ title: 在AEM中搜尋資產
 description: 了解如何使用「篩選器」面板在AEM中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 contentOwner: AG
 feature: 搜尋，中繼資料
-role: Business Practitioner
+role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 1%
 
 ---
 
-# 在AEM {#search-assets-in-aem}中搜尋資產
+# 在AEM中搜尋資產 {#search-assets-in-aem}
 
 了解如何使用「篩選器」面板在AEM中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
    ![number_of_searches](assets/number_of_searches.png)
 
-## 搜索檔案類型{#search-for-file-types}
+## 搜尋檔案類型 {#search-for-file-types}
 
 「篩選器」面板可協助您為搜尋體驗增加更精細的度，並讓搜尋功能更為通用。 您可以輕鬆深入到所需的詳細程度。
 
@@ -62,13 +62,13 @@ ht-degree: 1%
 
 ![檔案](assets/documents.png)
 
-## 根據檔案大小{#search-based-on-file-size}進行搜索
+## 根據檔案大小搜尋 {#search-based-on-file-size}
 
 使用&#x200B;**檔案大小**&#x200B;述詞來根據資產大小來搜尋資產。 您可以指定大小範圍的下限和上限以縮小搜尋範圍。 您也可以指定單位，例如千位元組、兆位元組等。
 
 ![unit_of_measure](assets/unit_of_measure.png)
 
-## 根據上次修改資產的時間進行搜尋{#search-based-on-when-assets-are-last-modified}
+## 根據上次修改資產的時間進行搜尋 {#search-based-on-when-assets-are-last-modified}
 
 如果您管理進行中資產或監控審核工作流程，則可以根據準確的時間戳記搜尋上次修改資產的時間。 例如，指定資產修改前後的日期。
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 ![timestamp](assets/timestamp.png)
 
-## 根據狀態{#search-based-on-status}進行搜索
+## 根據狀態進行搜索 {#search-based-on-status}
 
 使用&#x200B;**Status**&#x200B;述詞，根據各種狀態類型（例如發佈、核准、結帳和過期）來搜尋資產。
 
@@ -92,7 +92,7 @@ ht-degree: 1%
 
 ![核准](assets/approval.png)
 
-## 根據前瞻分析資料{#search-based-on-insights-data}進行搜尋
+## 根據前瞻分析資料進行搜尋 {#search-based-on-insights-data}
 
 使用&#x200B;**Insights**&#x200B;述詞，根據從各種創意應用程式取得的使用統計資料來搜尋資產。 使用資料分組如下：
 
