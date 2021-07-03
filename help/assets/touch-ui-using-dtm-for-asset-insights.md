@@ -3,16 +3,16 @@ title: 透過DTM啟用Assets Insights
 description: 了解如何使用AdobeDynamic Tag Management(DTM)來啟用Assets Insights。
 contentOwner: AG
 feature: 資產分析，資產報表
-role: Business Practitioner,Administrator
+role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: edba9586711ee5c0e5549dbe374226e878803178
+source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
 workflow-type: tm+mt
 source-wordcount: '682'
 ht-degree: 0%
 
 ---
 
-# 透過DTM啟用資產分析{#enabling-asset-insights-through-dtm}
+# 透過DTM啟用Assets Insights {#enabling-asset-insights-through-dtm}
 
 Adobe動態標籤管理是啟用數位行銷工具的工具。 此服務免費提供給Adobe Analytics客戶。 您可以自訂追蹤代碼，讓協力廠商CMS解決方案能使用Assets Insights，或使用DTM插入Assets Insights標籤。 僅支援並提供影像見解。
 
