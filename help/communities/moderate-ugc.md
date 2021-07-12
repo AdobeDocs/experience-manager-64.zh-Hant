@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
-role: Administrator
+role: Admin
 exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 0%
 
 ---
 
-# 調節社區內容{#moderating-community-content}
+# 調節社群內容 {#moderating-community-content}
 
 ## 概覽 {#overview}
 
@@ -42,7 +42,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
    發佈環境中的協調可由管理員和社群協調者直接在發佈內容的頁面上執行。
 
-## 協調動作{#moderation-actions}
+## 協調動作 {#moderation-actions}
 
 可對發佈內容(UGC)執行的動作會依使用者身分和環境而有所不同。 下表使用下列術語，根據使用者身分描述各種角色：
 
@@ -132,7 +132,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
  </tbody>
 </table>
 
-### 編輯/刪除{#edit-delete}
+### 編輯/刪除 {#edit-delete}
 
 貼文發表後，建立者、管理員或社群版主可以編輯或刪除貼文。
 
@@ -154,7 +154,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 版主可能不允許UGC在已發佈的網站上保持可見。 對於管理員和社群協調者，貼文仍可供使用，且會加上垃圾訊息注釋。
 
-### 關閉/重新開啟{#close-reopen}
+### 關閉/重新開啟 {#close-reopen}
 
 「關閉」動作會針對整個對話線程（論壇主題或初始評論）執行，並包含所有後續貼文或回覆。
 
@@ -164,7 +164,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 管理員或社群協調者可以執行「關閉/重新開啟」動作。
 
-### 標幟/取消標幟{#flag-unflag}
+### 標幟/取消標幟 {#flag-unflag}
 
 標幟是任何已登入成員（內容的建立者除外）的方法，用以指出貼文內容有問題。 標籤後，會出現取消標幟圖示，讓相同的成員取消標幟內容。
 
@@ -176,7 +176,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 「允許」動作是UGC的選項，其已標籤、拒絕或未在預先審核的系統中核准。 「允許」動作會清除任何已標幟或已拒絕/垃圾訊息狀態，並封存任何已標幟資料。
 
-## 常見的協調概念{#common-moderation-concepts}
+## 常見的協調概念 {#common-moderation-concepts}
 
 ### 預先協調 {#premoderation}
 
@@ -188,7 +188,7 @@ UGC經過預先審核後，貼文在經過協調動作核准後，才會顯示�
 
 * [論壇](forum.md)、 [構思](ideation-feature.md)、 [QnA](working-with-qna.md)和日曆 [](calendar.md) 設定 **** 標籤，勾選 **[!UICONTROL 已審核]**
 
-### 垃圾郵件檢測{#spam-detection}
+### 垃圾郵件檢測 {#spam-detection}
 
 垃圾訊息偵測是自動協調功能，可將提交的使用者產生的內容標示為垃圾訊息，以篩選掉不想要的片段。 啟用後，它會根據預先設定的垃圾訊息集合來識別使用者產生的內容是否為垃圾訊息。 預設的垃圾郵件字詞提供於
 
@@ -240,7 +240,7 @@ UGC經過預先審核後，貼文在經過協調動作核准後，才會顯示�
 
 AEM社群提供*watchword analyzer *作為評估[情緒](#sentiment)的程式中的步驟。 關注字詞對情緒值的貢獻，是因為張貼內容中使用的負面和正面關注字詞，以及禁止字詞的比較。
 
-#### 設定情緒和關注字詞{#configure-sentiment-and-watchwords}
+#### 設定情緒和觀看字詞 {#configure-sentiment-and-watchwords}
 
 正面和負面觀看字清單可自訂，因為可以是情緒規則。
 
@@ -276,7 +276,7 @@ AEM社群提供*watchword analyzer *作為評估[情緒](#sentiment)的程式中
 
 ![crxde](assets/crxde.png)
 
-### 版主權限{#moderator-permissions}
+### 版主權限 {#moderator-permissions}
 
 將下列權限指派給相同資源時，統稱為&#x200B;**`moderator permissions`**:
 
