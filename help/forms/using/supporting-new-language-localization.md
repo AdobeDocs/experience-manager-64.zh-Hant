@@ -9,18 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
 feature: 適用性表單
-role: Administrator
+role: Admin
 exl-id: 9f0e7284-ac11-406d-8d8c-7682f1d66fff
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
-# 支援適用性表單本地化{#supporting-new-locales-for-adaptive-forms-localization}的新語言環境
+# 支援最適化表單本地化的新地區設定 {#supporting-new-locales-for-adaptive-forms-localization}
 
-## 關於語言環境字典{#about-locale-dictionaries}
+## 關於語言環境字典 {#about-locale-dictionaries}
 
 最適化表單的本地化需要兩種語言環境字典：
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 **全域** 字典AEM用戶端資料庫中有兩個全域字典，管理為JSON物件。這些字典包含預設錯誤訊息、月份名稱、貨幣符號、日期和時間模式等。 您可以在CRXDe Lite中找到這些字典，網址為/libs/fd/xfaforms/clientlibs/I18N。 這些位置包含每個區域設定的單獨資料夾。 由於全域字典通常不會經常更新，因此為每個區域設定保留個別的JavaScript檔案，可讓瀏覽器快取，並減少在同一伺服器上存取不同最適化表單時的網路頻寬使用。
 
-### 自適性表單的本地化如何運作{#how-localization-of-adaptive-form-works}
+### 最適化表單的本地化運作方式 {#how-localization-of-adaptive-form-works}
 
 呈現最適化表單時，它會以指定順序查看下列參數，以識別請求的地區設定：
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 如果所請求區域的客戶端庫不存在，則它檢查客戶端庫中是否存在語言代碼。 例如，如果請求的地區設定為`en_ZA`（南非英語），並且`en_ZA`的客戶端庫不存在，則適用性表單將使用`en`（英語）語言的客戶端庫（如果存在）。 但是，如果沒有任何字典，適用性表單會將字典用於`en`地區設定。
 
-## 添加對不支援的語言環境{#add-localization-support-for-non-supported-locales}的本地化支援
+## 添加對不支援的語言環境的本地化支援 {#add-localization-support-for-non-supported-locales}
 
 AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利文(it)、德文(de)、日文(ja)、葡萄牙文 — 巴西文(pt-BR)、中文 — (zh-CN)、中文 — 台灣(zh-TW)和韓文(ko-KR)地區設定來本地化最適化表單內容。
 
@@ -60,7 +60,7 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
 1. [為字典添加地區支援](/help/forms/using/supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [重新啟動伺服器](/help/forms/using/supporting-new-language-localization.md#p-restart-the-server-p)
 
-### 向指南本地化服務{#add-a-locale-to-the-guide-localization-service-br}添加區域設定
+### 向指南本地化服務添加區域設定 {#add-a-locale-to-the-guide-localization-service-br}
 
 1. 前往 `https://[server]:[port]/system/console/configMgr`.
 1. 按一下可編輯&#x200B;**指南本地化服務**&#x200B;元件。
@@ -68,7 +68,7 @@ AEM Forms目前支援以英文(en)、西班牙文(es)、法文(fr)、義大利�
 
 ![指南本地化服務](assets/configservice.png)
 
-### 為區域設定{#add-xfa-client-library-for-a-locale-br}添加XFA客戶端庫
+### 為地區設定新增XFA用戶端程式庫 {#add-xfa-client-library-for-a-locale-br}
 
 在`etc/<folderHierarchy>`下建立類型`cq:ClientLibraryFolder`（類別`xfaforms.I18N.<locale>`）的節點，並將下列檔案添加到客戶端庫：
 
@@ -82,7 +82,7 @@ I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
 ```
 
-### 為區域設定{#add-adaptive-form-client-library-for-a-locale-br}添加最適化表單客戶端庫
+### 為區域設定新增最適化表單用戶端程式庫 {#add-adaptive-form-client-library-for-a-locale-br}
 
 在`etc/<folderHierarchy>`下建立類型`cq:ClientLibraryFolder`的節點，類別為`guides.I18N.<locale>`，依賴項為`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`和`guide.common`。 &quot;
 
@@ -99,7 +99,7 @@ i18n.js
 LogMessages.js
 ```
 
-### 為字典{#add-locale-support-for-the-dictionary-br}添加區域設定支援
+### 為字典添加地區支援 {#add-locale-support-for-the-dictionary-br}
 
 僅當添加的`<locale>`不在`en`、`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr`之間時，才執行此步驟。
 
@@ -112,11 +112,11 @@ LogMessages.js
 
 `<locale>`將顯示在`https://[server]:[port]/libs/cq/i18n/translator.html`。
 
-### 重新啟動伺服器{#restart-the-server}
+### 重新啟動伺服器 {#restart-the-server}
 
 重新啟動AEM伺服器，讓新增的地區設定生效。
 
-## 新增西班牙文{#sample-libraries-for-adding-support-for-spanish}支援的范常式式庫
+## 新增西班牙文支援的范常式式庫 {#sample-libraries-for-adding-support-for-spanish}
 
 新增西班牙文支援的用戶端程式庫範例
 
