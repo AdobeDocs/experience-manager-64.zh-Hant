@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
-role: Administrator
+role: Admin
 exl-id: 0bfa0e65-c4cd-4c37-b42b-bff1b777a7be
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 9%
 
 ---
 
-# 安裝相容性包{#compatibility-package}
+# 安裝相容性套件 {#compatibility-package}
 
 在AEM Forms 6.4上安裝相容性套件可讓您使用AEM Forms 6.3的通信管理資產以及過時的適用性表單範本和頁面
 
@@ -35,7 +35,7 @@ AEMFD相容性套件可讓您使用AEM Forms 6.4上AEM Forms 6.3和6.2的下列�
 
 如需詳細資訊，請參閱安裝相容性套件](/help/forms/using/compatibility-package.md#assetsmadecompatible)讓資產與AEM Forms 6.4相容。[
 
-## 新增對AEM Forms 6.3和6.2資產在AEM Forms 6.4中的支援{#add-support-for-aem-forms-and-assets-in-aem-forms}
+## 新增對AEM Forms 6.3和AEM Forms 6.4中6.2資產的支援 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 執行升級後，請執行下列動作以安裝AEMFD相容性套件，並讓您的資產與6.4相容：
 
