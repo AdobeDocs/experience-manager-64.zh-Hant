@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Administrator
+role: Admin
 exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 3%
@@ -26,7 +26,7 @@ ht-degree: 3%
 >
 >建立[社群網站](sites-console.md)、[社群網站範本](sites.md)、[社群群組範本](tools-groups.md)和[社群功能](functions.md)的主控台僅用於製作環境。
 
-## 站點模板控制台{#site-templates-console}
+## 網站範本主控台 {#site-templates-console}
 
 在製作環境中，前往社群網站主控台
 
@@ -42,7 +42,7 @@ ht-degree: 3%
 
 這會顯示包含3個子面板的網站編輯器面板：
 
-### 基本資訊{#basic-info}
+### 基本資訊 {#basic-info}
 
 ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -83,7 +83,7 @@ ht-degree: 3%
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-### 組函式的組模板{#group-templates-for-groups-function}
+### 組功能的組模板 {#group-templates-for-groups-function}
 
 在網站範本中加入群組函式時，設定需要指定在發佈環境中建立新群組時允許的群組範本選擇。
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
-## 編輯網站範本{#edit-site-template}
+## 編輯網站範本 {#edit-site-template}
 
 在主[站點模板控制台](#site-templates-console)中查看站點模板時，可以選擇現有站點模板進行編輯。
 
