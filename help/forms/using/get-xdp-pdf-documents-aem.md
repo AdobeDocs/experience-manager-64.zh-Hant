@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
-role: Administrator
+role: Admin
 exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
 
 ---
 
-# 在AEM Forms中取得XDP和PDF檔案{#getting-xdp-and-pdf-documents-in-aem-forms}
+# 在AEM Forms中取得XDP和PDF檔案 {#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## 概覽 {#overview}
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 >
 >請確定您是`form-power-users`群組的成員，才能上傳XDP檔案。 請連絡您的管理員以成為群組的成員。
 
-## 上傳表單{#uploading-forms}
+## 上傳表單 {#uploading-forms}
 
 1. 存取`https://[server]:[port]/aem/forms.html`以登入AEM Forms使用者介面。
 1. 導覽至您要上傳表單的資料夾，或導覽至包含表單的資料夾。
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 上傳完成後，背景工作流程會根據資產的預覽，為每個資產產生縮圖。 較新版本的資產（如果上傳）會覆寫現有資產。
 
-### 保護模式{#protected-mode}
+### 保護模式 {#protected-mode}
 
 AEM Forms伺服器可讓您執行JavaScript程式碼。 惡意JavaScript程式碼可能會損害AEM Forms環境。 受保護模式會限制AEM Forms僅從信任的資產和位置執行XDP檔案。 AEM Forms UI中可用的所有XDP都視為信任的資產。
 
@@ -71,7 +71,7 @@ AEM Forms伺服器可讓您執行JavaScript程式碼。 惡意JavaScript程式�
 1. 開啟行動Forms設定以進行編輯。
 1. 取消選擇「保護模式」選項，然後按一下「**保存**」。 已禁用受保護模式。
 
-## 更新引用的XFA表單{#updating-referenced-xfa-forms}
+## 更新參考的XFA表單 {#updating-referenced-xfa-forms}
 
 在AEM Forms中，最適化表單或其他XFA表單範本都可參照XFA表單範本。 此外，範本可以參照資源或其他XFA範本。
 
