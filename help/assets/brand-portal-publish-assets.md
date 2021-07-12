@@ -3,9 +3,9 @@ title: 將資料夾發佈至 Brand Portal
 description: 了解如何將資產發佈和取消發佈至Brand Portal。
 contentOwner: VG
 feature: 品牌入口網站
-role: Business Practitioner
+role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 36%
