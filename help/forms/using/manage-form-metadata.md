@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 28549db2-e2f2-4a25-b0b1-785237d9d941
-role: Administrator
+role: Admin
 exl-id: d10bc3e9-66a6-4cb2-b484-da338259f1c8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1995'
 ht-degree: 1%
 
 ---
 
-# 管理表單元資料{#manage-form-metadata}
+# 管理表單中繼資料 {#manage-form-metadata}
 
 ## 概覽  {#overview-nbsp}
 
@@ -42,7 +42,7 @@ AEM Forms支援下列資產類型：
 * 資源
 * XFS
 
-### 元資料的詳細清單{#extensive-list-of-metadata-nbsp}
+### 中繼資料的完整清單 {#extensive-list-of-metadata-nbsp}
 
 以下是AEM Forms支援的中繼資料屬性詳細清單：
 
@@ -173,7 +173,7 @@ AEM Forms支援下列資產類型：
  </tbody> 
 </table>
 
-## 查看表單元資料{#view-form-metadata-nbsp}
+## 檢視表單中繼資料 {#view-form-metadata-nbsp}
 
 資產有現有的屬性值，可以以唯讀模式檢視。 此中繼資料源於表單上傳或表單建立時。
 
@@ -203,11 +203,11 @@ AEM Forms支援下列資產類型：
    * 右側面板包含以唯讀模式（分佈在各種標籤間）顯示的中繼資料屬性。
 
 
-## 添加/更新表單元資料值{#add-update-form-metadata-values-nbsp}
+## 新增/更新表單中繼資料值 {#add-update-form-metadata-values-nbsp}
 
 您可以編輯現有中繼資料屬性的值，或將新值新增至現有中繼資料屬性欄位（例如，中繼資料欄位空白時）。
 
-### 更新元資料屬性值{#update-metadata-property-values}
+### 更新元資料屬性值 {#update-metadata-property-values}
 
 1. 請依照上一節中提及的步驟，開啟屬性頁面，供檢視所選表單的現有中繼資料。
 
