@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
-role: Administrator
+role: Admin
 exl-id: 2007336d-d75c-4e01-af81-181751c04cfe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2542'
 ht-degree: 2%
@@ -30,7 +30,7 @@ ht-degree: 2%
 >
 >建立[社群網站](sites-console.md)、[社群網站範本](sites.md)、[社群群組範本](tools-groups.md)和[社群功能](functions.md)的主控台僅用於製作環境。
 
-## 社區功能控制台{#community-functions-console}
+## 社區功能控制台 {#community-functions-console}
 
 在製作環境中，若要進入社群功能主控台
 
@@ -38,13 +38,13 @@ ht-degree: 2%
 
 ![chlimage_1-379](assets/chlimage_1-379.png)
 
-## 預先建立的函式{#pre-built-functions}
+## 預先建立的函式 {#pre-built-functions}
 
 以下是隨AEM Communities提供的功能簡要說明。 每個函式都由一或多個AEM頁面組成，這些頁面包含連線到功能中的Communities元件，該功能可輕鬆整合到[社群網站範本](sites.md)中。
 
 社群網站範本提供社群網站的結構，包括登入、使用者設定檔、通知、傳訊、網站功能表、搜尋、貼圖和品牌推廣功能。
 
-### 標題和URL設定{#title-and-url-settings}
+### 標題和URL設定 {#title-and-url-settings}
 
 **** 標題和 **** URL是所有社群函式通用的屬性。
 
@@ -161,7 +161,7 @@ ht-degree: 2%
    * 如果未勾選，則可選取社群網站允許的一或多個命名空間。
    * 已勾選預設值。
 
-### 精選內容函式{#featured-content-function}
+### 精選內容功能 {#featured-content-function}
 
 精選內容函式是一個頁面，其中[精選內容元件](featured.md)設定為允許新增及刪除註解。
 
@@ -201,7 +201,7 @@ ht-degree: 2%
 * **[!UICONTROL 允許精]**
 選內容如果勾選此選項，就能將構想識別為精 [選內容](featured.md)。已勾選預設值。
 
-### 組函式{#groups-function}
+### 組函式 {#groups-function}
 
 >[!CAUTION]
 >
@@ -355,7 +355,7 @@ QnA函式是一個具有[QnA元件](working-with-qna.md)的頁，該元件用於
 
 選取`Open Community Function`圖示，以進入作者編輯模式，以編寫頁面內容及修改功能元件的設定。
 
-### 配置元件{#configuring-components}
+### 配置元件 {#configuring-components}
 
 社群函式以AEM Blueprint的即時副本的形式實施，其詳細資訊記錄在[Multi Site Manager](../../help/sites-administering/msm.md)下。
 
