@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
-role: Administrator
+role: Admin
 exl-id: 0e906f67-b908-4c41-b243-e4f90100ce5d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 0%
 
 ---
 
-# 配置消息{#configuring-messaging}
+# 設定傳訊 {#configuring-messaging}
 
 ## 概覽 {#overview}
 
@@ -30,19 +30,19 @@ AEM Communities的傳訊功能可讓登入的網站訪客（成員）相互傳�
 
 如需開發人員的其他資訊，請參閱[Messaging Essentials](essentials-messaging.md)。
 
-## 報文傳送操作服務{#messaging-operations-service}
+## 報文傳送操作服務 {#messaging-operations-service}
 
 [AEM Communities報文傳送操作服務](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl)標識處理報文傳送相關請求的端點、服務應用於儲存報文的資料夾，如果報文可能包含檔案附件，則允許哪些檔案類型。
 
 對於使用[Communities Sites控制台](sites-console.md)建立的社區站點，服務實例已存在，收件箱設定為`/mail/community/inbox`。
 
-### 社區消息傳送操作服務{#community-messaging-operations-service}
+### 社區消息傳送操作服務 {#community-messaging-operations-service}
 
 如下所示，使用[站點建立嚮導](sites-console.md)建立的站點存在服務的配置。 選取設定旁的鉛筆圖示，即可檢視或編輯設定：
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-### 新配置{#new-configuration}
+### 新配置 {#new-configuration}
 
 若要新增新設定，請選取服務名稱旁的加號「**+**」圖示：
 
