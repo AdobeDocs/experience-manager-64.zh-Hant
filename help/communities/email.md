@@ -10,16 +10,16 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
-role: Administrator
+role: Admin
 exl-id: 0a0222e7-ca30-4603-94ad-582005b2de11
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 0%
 
 ---
 
-# 配置電子郵件{#configuring-email}
+# 設定電子郵件 {#configuring-email}
 
 AEM Communities使用電子郵件
 
@@ -32,7 +32,7 @@ AEM Communities使用電子郵件
 >
 >通知和訂閱的電子郵件必須僅在[主要發佈者](deploy-communities.md#primary-publisher)上設定。
 
-## 預設郵件服務配置{#default-mail-service-configuration}
+## 預設郵件服務配置 {#default-mail-service-configuration}
 
 通知和訂閱均需要預設郵件服務。
 
@@ -63,7 +63,7 @@ AEM Communities使用電子郵件
 * **[!UICONTROL SMTP使用SSL]**:若勾選此選項，將會傳送安全電子郵件。請確保埠已設定為465或SMTP伺服器所需的埠。
 * **[!UICONTROL 除錯電子郵件]**:如果選中此選項，則啟用SMTP伺服器交互的記錄。
 
-## AEM Communities電子郵件設定{#aem-communities-email-configuration}
+## AEM Communities電子郵件設定 {#aem-communities-email-configuration}
 
 配置[預設郵件服務](#default-mail-service-configuration)後，此版本中包含的`AEM Communities Email Reply Configuration` OSGi配置的兩個現有實例將開始工作。
 
@@ -89,7 +89,7 @@ AEM Communities使用電子郵件
 
 ![chlimage_1-99](assets/chlimage_1-99.png)
 
-### 通知的配置{#configuration-for-notifications}
+### 通知的設定 {#configuration-for-notifications}
 
 `AEM Communities Email Reply Configuration` OSGi設定及「名稱」電子郵件的例項適用於通知功能。 此功能不包含電子郵件回覆。
 
@@ -103,7 +103,7 @@ AEM Communities使用電子郵件
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
-### 訂閱的配置{#configuration-for-subscriptions}
+### 訂閱的設定 {#configuration-for-subscriptions}
 
 對於「社群」訂閱，可以透過回覆電子郵件來啟用或停用成員張貼內容的能力。
 
@@ -133,11 +133,11 @@ AEM Communities使用電子郵件
 
 * **[!UICONTROL 範本根路徑]**:電子郵件是使用儲存在此根路徑的範本建立。預設值為`/etc/community/templates/subscriptions-email`。
 
-## 配置輪詢導入程式{#configure-polling-importer}
+## 設定輪詢匯入工具 {#configure-polling-importer}
 
 若要將電子郵件帶入存放庫，您必須設定輪詢匯入工具，並手動在存放庫中設定其屬性。
 
-### 新增輪詢匯入工具{#add-new-polling-importer}
+### 新增輪詢匯入工具 {#add-new-polling-importer}
 
 * 在主要發佈者上
 * 以管理員權限登錄
@@ -163,7 +163,7 @@ AEM Communities使用電子郵件
 
 * 選擇&#x200B;**[!UICONTROL OK]**
 
-### 調整新輪詢導入程式的協定{#adjust-protocol-for-new-polling-importer}
+### 調整新輪詢導入程式的協定 {#adjust-protocol-for-new-polling-importer}
 
 保存新輪詢配置後，需要進一步修改訂閱電子郵件導入程式的屬性，以便將協定從`POP3`更改為`emailreply`
 
