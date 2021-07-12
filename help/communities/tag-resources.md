@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
-role: Administrator
+role: Admin
 exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
 
 ---
 
-# 標籤啟用資源{#tagging-enablement-resources}
+# 標籤啟用資源 {#tagging-enablement-resources}
 
 ## 概覽 {#overview}
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 * [將標籤套用至啟用](resources.md#create-a-resource) 資源，以便可斷斷續續篩選
 * [發佈啟用資源](resources.md#publish)
 
-## 社群網站標籤{#community-site-tags}
+## 社群網站標籤 {#community-site-tags}
 
 建立或編輯社群網站時，[標籤設定](sites-console.md#tagging)會選取現有標籤命名空間的子集，以設定網站功能可用的標籤範圍。
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ![chlimage_1-420](assets/chlimage_1-420.png)
 
-## 目錄標籤命名空間{#catalog-tag-namespaces}
+## 目錄標籤命名空間 {#catalog-tag-namespaces}
 
 目錄功能使用標籤來定義本身。 在社群網站中設定目錄函式時，要選擇的標籤命名空間集由社群網站設定的標籤命名空間範圍定義。
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ![chlimage_1-421](assets/chlimage_1-421.png)
 
-## 將標籤套用至啟用資源{#applying-tags-to-enablement-resources}
+## 將標籤套用至啟用資源 {#applying-tags-to-enablement-resources}
 
 勾選`Show in Catalog`時，啟用資源和學習路徑會顯示在所有目錄中。 將標籤新增至資源和學習路徑可允許預先篩選至特定目錄，以及在目錄UI中進行篩選。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 
 ![chlimage_1-422](assets/chlimage_1-422.png)
 
-## 在發佈時查看目錄{#viewing-catalog-on-publish}
+## 在發佈時檢視目錄 {#viewing-catalog-on-publish}
 
 從製作環境設定完所有內容並發佈後，就能在發佈環境中體驗使用目錄尋找啟用資源的體驗。
 
