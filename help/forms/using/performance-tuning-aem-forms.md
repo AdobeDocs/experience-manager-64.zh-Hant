@@ -8,9 +8,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
-role: Administrator
+role: Admin
 exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '900'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 本文探討您可實作的策略和最佳實務，以減少瓶頸並最佳化AEM Forms部署的效能。
 
-## 快取設定{#cache-settings}
+## 快取設定 {#cache-settings}
 
 您可以在以下網址使用AEM Web設定主控台中的&#x200B;**Mobile Forms設定**&#x200B;元件，以設定及控制AEM Forms的快取策略：
 
@@ -46,7 +46,7 @@ AEM Forms的預設快取設定可能不足以達到最佳效能。 因此，建�
 >
 >如果您使用AEM Dispatcher來快取最適化表單，也會快取包含已預填資料表單的最適化表單。 如果從AEM Dispatcher快取提供這類表單，可能會導致為使用者提供預先填入或過時的資料。 因此，請使用AEM Dispatcher來快取不使用預填資料的最適化表單。 此外，Dispatcher快取不會自動使快取片段無效。 因此，請勿將其用於快取表單片段。 對於這類表單和片段，請使用[適用性表單快取](/help/forms/using/configure-adaptive-forms-cache.md)。
 
-## JVM參數{#jvm-parameters}
+## JVM參數 {#jvm-parameters}
 
 為獲得最佳效能，建議使用以下JVM `init`參數來配置`Java heap`和`PermGen`。
 
@@ -61,7 +61,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 >
 >建議的設定用於Windows 2008 R2 8 Core和OracleHotSpot 1.7（64位）JDK，應根據您的系統配置進行放大或縮小。
 
-## 使用Web伺服器{#using-a-web-server}
+## 使用Web伺服器 {#using-a-web-server}
 
 適用性表單和HTML5表單會以HTML5格式呈現。 結果的輸出可能會很大，具體取決於表單大小和表單中的影像等因素。 若要最佳化資料傳輸，建議的方法是使用要求提供來源的Web伺服器來壓縮HTML回應。 此方法可減少回應大小、網路流量，以及在伺服器與用戶端電腦之間串流資料所需的時間。
 
@@ -140,7 +140,7 @@ Apache可以使用HTTP通訊協定與CRX通訊。 這些設定是用於使用HTT
 
    要訪問crx伺服器，請使用`https://[server]:80`，其中`server`是運行Apache伺服器的伺服器的名稱。
 
-## 在執行AEM Forms {#using-an-antivirus-on-server-running-aem-forms}的伺服器上使用防病毒
+## 在執行AEM Forms的伺服器上使用防病毒 {#using-an-antivirus-on-server-running-aem-forms}
 
 運行防病毒軟體的伺服器上的效能可能會下降。 始終開啟防病毒（訪問掃描）軟體掃描系統的所有檔案。 這可能會減緩伺服器速度，並影響AEM Forms的效能。
 
