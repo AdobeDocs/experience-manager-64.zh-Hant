@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: a972fb35-38a7-4b83-99bd-6a6dddf8043b
-role: Administrator
+role: Admin
 exl-id: ef486673-30fe-410a-83cf-c55be6064ce4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 1%
 
 ---
 
-# 為AEM Forms安裝{#choosing-a-persistence-type-for-an-aem-forms-installation}選擇持久性類型
+# 為AEM Forms安裝選擇持續性類型 {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
 明智地選擇持續性類型。 它可協助您建立有效且可擴充的AEM Forms環境。
 
