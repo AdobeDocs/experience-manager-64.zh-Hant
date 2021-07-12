@@ -3,9 +3,9 @@ title: 將集合發佈至 Brand Portal
 description: 了解如何將集合發佈和取消發佈至Brand Portal。
 contentOwner: VG
 feature: 品牌入口網站
-role: Business Practitioner
+role: User
 exl-id: c2c6759e-f763-405e-9e45-5a90b9d32df2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 21%
