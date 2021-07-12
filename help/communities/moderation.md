@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Administrator
+role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 3%
 
 ---
 
-# 協調控制台{#moderation-console}
+# 協調控制台 {#moderation-console}
 
 在AEM Communities中，管理員和社群協調者（指派為協調者的受信任社群成員）可從製作和發佈環境中大量協調社群內容[。](moderate-ugc.md)
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 只有以管理員或` [moderator permissions](in-context.md#identifyingtrustedmembers)`成員身分登入後，才可執行協調任務。
 
-## 發佈環境訪問{#publish-environment-access}
+## 發佈環境存取 {#publish-environment-access}
 
 從已發佈的社群網站存取「協調」主控台是透過管理連結，此連結會在社群協調者登入時顯示。
 
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 ![moderationconsole-publish](assets/moderationconsole-publish.png)
 
-## 製作環境存取{#author-environment-access}
+## 製作環境存取 {#author-environment-access}
 
 在製作環境中，若要進入「協調」主控台
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 * **[工具列](#toolbar)**
 * **[內容區域](#content-area)**
 
-### 頂端導覽列{#top-navigation-bar}
+### 頂端導覽列 {#top-navigation-bar}
 
 所有主控台的頂端導覽列都為常數。 如需詳細資訊，請參閱[基本處理](../../help/sites-authoring/basic-handling.md)。
 
@@ -107,7 +107,7 @@ ht-degree: 3%
 >
 >內容區域具有&#x200B;*無限捲動*，這意味著它允許您繼續滾動，直到達到內容的結尾。 即使在捲動時，工具列仍停留在內容區域上方的固定可見位置。
 
-### 篩選邊欄{#filter-rail}
+### 篩選邊欄 {#filter-rail}
 
 ![chlimage_1-472](assets/chlimage_1-472.png)
 
@@ -171,7 +171,7 @@ ht-degree: 3%
 
 ![內容類型](assets/content-types.png)
 
-#### 其他內容類型{#additional-content-types}
+#### 其他內容類型 {#additional-content-types}
 
 若要新增要篩選的其他資源：
 
@@ -229,7 +229,7 @@ ht-degree: 3%
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-## 協調動作{#moderation-actions}
+## 協調動作 {#moderation-actions}
 
 [在內](moderate-ugc.md#moderation-actions) 容區域中進行的一或多個選取項目，或在檢視內容詳細資料時，可執行協調動作掃描。
 
@@ -237,7 +237,7 @@ ht-degree: 3%
 
 若要協調內容區域中的單一貼文，請用滑鼠（案頭）將滑鼠移到貼文上，或按住貼文（行動）上的手指，使貼文上顯示按鈕。 對單一內容詳細資料執行作業時，只有刪除動作會提示進行確認。
 
-### 協調多個貼文{#moderating-multiple-posts}
+### 協調多個貼文 {#moderating-multiple-posts}
 
 按一下貼文上的`Select`圖示，進入大量選取模式：
 
@@ -255,7 +255,7 @@ ht-degree: 3%
 
 ![bulk審核](assets/bulkmoderate.png)
 
-### 協調單一貼文{#moderating-a-single-post}
+### 協調單一貼文 {#moderating-a-single-post}
 
 在單選模式中，可以
 
@@ -286,7 +286,7 @@ ht-degree: 3%
 
 #### 允許 {#allow}
 
-![chlimage_1-401](assets/chlimage_1-481.png)
+![chlimage_1-481](assets/chlimage_1-481.png)
 
 使用單一貼文時，當貼文遭到標籤或拒絕時，「允許」圖示會出現。 如果已標籤，選取「允許」將會清除所有標幟。
 
