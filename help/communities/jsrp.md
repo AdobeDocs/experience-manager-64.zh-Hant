@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
-role: Administrator
+role: Admin
 exl-id: 73c59497-43fe-4e15-afda-e3cf5264696e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 0%
 
 ---
 
-# JSRP - JCR儲存資源提供程式{#jsrp-jcr-storage-resource-provider}
+# JSRP - JCR儲存資源提供商 {#jsrp-jcr-storage-resource-provider}
 
 ## 關於JSRP {#about-jsrp}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 * 選擇&#x200B;**[!UICONTROL JCR儲存資源提供程式(JSRP)]**
 * 選擇&#x200B;**[!UICONTROL 提交]**
 
-### 發佈配置{#publishing-the-configuration}
+### 發佈設定 {#publishing-the-configuration}
 
 雖然JSRP是預設設定，但為了確保在發佈環境中設定相同的設定：
 
@@ -59,7 +59,7 @@ ht-degree: 0%
    * 選擇&#x200B;**[!UICONTROL 激活]**
 
 
-## 管理用戶資料{#managing-user-data}
+## 管理使用者資料 {#managing-user-data}
 
 如需&#x200B;*users*、*user profiles*&#x200B;和&#x200B;*user groups*&#x200B;的相關資訊，通常在發佈環境中輸入，請瀏覽
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ## 疑難排解 {#troubleshooting}
 
-### UGC在JCR中不可見{#ugc-not-visible-in-jcr}
+### UGC在JCR中不可見 {#ugc-not-visible-in-jcr}
 
 檢查儲存選項的設定，確認JSRP已設為預設提供者。 依預設，儲存資源提供者為JSRP。
 
@@ -79,11 +79,11 @@ ht-degree: 0%
    * 不包含[srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc)節點，表示儲存提供者為JSRP
    * 如果srpc節點存在且包含節點[defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration),defaultconfiguration的屬性應將JSRP定義為預設提供程式
 
-### Author例項{#ugc-not-visible-on-author-instance}上未顯示UGC
+### UGC在製作執行個體上不可見 {#ugc-not-visible-on-author-instance}
 
 這不是錯誤。 JSRP的一項特點，是在發佈環境中輸入的社群內容只會顯示在發佈環境中。
 
-### 發佈實例{#ugc-not-visible-on-publish-instance}上不顯示UGC
+### UGC在發佈執行個體上不可見 {#ugc-not-visible-on-publish-instance}
 
 如果單個發佈實例或部署了發佈群集，則按照[UGC Not Visible in JCR](#ugc-not-visible-in-jcr)的說明操作。
 
