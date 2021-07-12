@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
-role: Administrator
+role: Admin
 exl-id: c9406aae-288e-4cdf-ac01-cb26b423639e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1141'
 ht-degree: 1%
 
 ---
 
-# 高級計分和徽章{#advanced-scoring-and-badges}
+# 進階計分和徽章 {#advanced-scoring-and-badges}
 
 ## 概覽 {#overview}
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 >
 >要使用高級計分和標籤功能，請安裝[專家身份識別包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)。
 
-## 可配置計分引擎{#configurable-scoring-engine}
+## 可配置計分引擎 {#configurable-scoring-engine}
 
 進階計分引擎提供OSGi設定，其中包含影響進階計分演算法的參數。
 
@@ -88,7 +88,7 @@ ht-degree: 1%
 
    預設值為 50。
 
-## 高級計分規則{#advanced-scoring-rules}
+## 進階計分規則 {#advanced-scoring-rules}
 
 在基本計分中，已知獲得徽章所需的數量。
 
@@ -118,7 +118,7 @@ ht-degree: 1%
 
 如果秒數檔案遺失，進階計分引擎會擲回錯誤。
 
-## 高級簽名規則{#advanced-badging-rules}
+## 進階徽章規則 {#advanced-badging-rules}
 
 高級簽名規則屬性與[基本簽名規則屬性](implementing-scoring.md#badging-rules)不同。
 
@@ -133,9 +133,9 @@ ht-degree: 1%
 | badgingType | 字串 | （必要）將計分引擎識別為「基本」或「進階」。 若設為「進階」，則預設值為「basic」。 |
 | scoringRules | 字串[] | （可選）一個多值字串，用於將標籤規則限制為由列出的評分規則標識的評分事件。示例項：/etc/community/scoring/rules/adv-comments-scoring預設值為無限制。 |
 
-## 包含的規則和徽章{#included-rules-and-badge}
+## 包含的規則和徽章 {#included-rules-and-badge}
 
-### 包含的徽章{#included-badge}
+### 包含的徽章 {#included-badge}
 
 此測試版包含一個獎勵型專家徽章：
 
@@ -155,7 +155,7 @@ ht-degree: 1%
 * [啟用元件的徽章](implementing-scoring.md#enable-badges-for-component)
 * [套用規則](implementing-scoring.md#apply-rules-to-content)
 
-### 包含計分規則和子規則{#included-scoring-rules-and-sub-rules}
+### 包含計分規則和子規則 {#included-scoring-rules-and-sub-rules}
 
 測試版包含[論壇函式](functions.md#forum-function)的兩個進階計分規則（論壇和論壇功能的註解元件各一個）:
 
@@ -187,7 +187,7 @@ ht-degree: 1%
 * `rules` 應位於具有每個人讀取權限的儲存庫位置
    * 規則名稱必須是唯一的，無論位置為何
 
-### 包含標籤規則{#included-badging-rules}
+### 包含徽章規則 {#included-badging-rules}
 
 此發行包含兩個與[進階論壇和留言分數規則](#included-scoring-rules-and-sub-rules)對應的進階標籤規則。
 
