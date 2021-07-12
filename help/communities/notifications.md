@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
-role: Administrator
+role: Admin
 exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 0%
 
 ---
 
-# 社區通知{#communities-notifications}
+# Communities通知 {#communities-notifications}
 
 ## 概覽 {#overview}
 
@@ -64,7 +64,7 @@ AEM Communities提供通知區段，顯示已登入社群成員感興趣的事�
 
 * 成員配置檔案已配置為允許其他成員遵循
 
-## 來自以下的通知{#notifications-from-following}
+## 來自下列的通知 {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -80,7 +80,7 @@ AEM Communities提供通知區段，顯示已登入社群成員感興趣的事�
 * 對於特定條目，如論壇主題、QnA問題或部落格文章
    * 跟蹤該特定條目的所有活動
 
-## 管理通知設定{#managing-notification-settings}
+## 管理通知設定 {#managing-notification-settings}
 
 通過從「通知」頁中選擇「通知設定」連結，每個成員都可以管理接收通知的方式。
 
@@ -98,9 +98,9 @@ AEM Communities提供通知區段，顯示已登入社群成員感興趣的事�
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
-## 查看通知{#viewing-notifications}
+## 檢視通知 {#viewing-notifications}
 
-### Web通知{#web-notifications}
+### Web通知 {#web-notifications}
 
 建立的[精靈社群網站](sites-console.md)現在包含橫幅上方網站標題列中`Notifications`功能的連結。 與訊息不同，會為每個社群網站建立通知，而訊息必須在網站建立程式期間啟用。
 
@@ -108,7 +108,7 @@ AEM Communities提供通知區段，顯示已登入社群成員感興趣的事�
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
-### 電子郵件通知{#email-notifications}
+### 電子郵件通知 {#email-notifications}
 
 啟用電子郵件通道時，成員會收到包含指向Web上內容的連結的電子郵件。
 
