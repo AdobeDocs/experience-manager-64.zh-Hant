@@ -8,16 +8,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: dd18f7b5-882d-4e81-ab3d-85f1e5d74992
-role: Administrator
+role: Admin
 exl-id: 6a610e9d-beec-486d-b1d2-78b5fec44c52
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '311'
 ht-degree: 1%
 
 ---
 
-# 配置最適化表單快取{#configure-adaptive-forms-cache}
+# 設定最適化表單快取 {#configure-adaptive-forms-cache}
 
 快取是一種縮短資料存取時間、減少延遲並改善輸入/輸出(I/O)速度的機制。 適用性表單快取僅會儲存適用性表單的HTML內容和JSON結構，而不儲存任何預先填入的資料。 有助於縮短在用戶端上轉譯最適化表單或檔案所需的時間。 專為最適化表單而設計，也支援最適化檔案。
 
@@ -29,7 +29,7 @@ ht-degree: 1%
 >
 >開發自訂元件時，請在用於開發的伺服器上，停用最適化表單快取。
 
-## 配置快取{#configure-the-cache}
+## 配置快取 {#configure-the-cache}
 
 執行下列步驟以設定最適化表單快取：
 
