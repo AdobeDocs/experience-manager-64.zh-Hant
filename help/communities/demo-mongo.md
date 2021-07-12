@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
-role: Administrator
+role: Admin
 exl-id: e32fc619-6226-48c6-bbd7-1910963d1036
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
 
 ---
 
-# 如何設定演示{#how-to-setup-mongodb-for-demo}的MongoDB
+# 如何設定示範的MongoDB {#how-to-setup-mongodb-for-demo}
 
 ## 簡介 {#introduction}
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 >
 >如果在&#x200B;*AEM之後啟動MongoDB*，則&#x200B;**重新啟動**&#x200B;所有&#x200B;**AEM**&#x200B;執行個體，以便它們正確地連接到MongoDB。
 
-### 示範生產選項：安裝MongoDB複製副本集{#demo-production-option-setup-mongodb-replica-set}
+### 示範生產選項：安裝MongoDB複製副本集 {#demo-production-option-setup-mongodb-replica-set}
 
 以下命令是在localhost上設定具有3個節點的複製副本集的示例：
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 
 * java -Dbootstrap_confdir=。/solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar
 
-## 將MongoDB標識為公用儲存{#identify-mongodb-as-common-store}
+## 將MongoDB標識為通用儲存 {#identify-mongodb-as-common-store}
 
 啟動製作並發佈AEM例項（如有必要）。
 
@@ -159,7 +159,7 @@ ht-degree: 0%
 
 1. 只要檢視[作者例項](http://localhost:4502/content/community-components/en/comments.html)上的註解（可能仍以管理員/管理員身分登入）。
 
-   ![chlimage_1-112](assets/chlimage_1-192.png)
+   ![chlimage_1-192](assets/chlimage_1-192.png)
 
    注意：雖然作者上的&#x200B;*asipath*&#x200B;下有JCR節點，但這些節點是用於SCF框架的。 實際的UGC不在JCR中，而是在MongoDB中。
 
@@ -178,7 +178,7 @@ ht-degree: 0%
 
 ## 疑難排解 {#troubleshooting}
 
-### 未出現UGC {#no-ugc-appears}
+### 未顯示UGC {#no-ugc-appears}
 
 1. 確保MongoDB已安裝並正常運行。
 
