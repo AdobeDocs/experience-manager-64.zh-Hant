@@ -7,16 +7,16 @@ uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
-role: Administrator
+role: Admin
 exl-id: 8cbace00-c354-4f37-a781-04cadd441419
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 0%
 
 ---
 
-# Forms JEE工作流程 |處理用戶資料{#forms-jee-workflows-handling-user-data}
+# Forms JEE工作流程 |處理用戶資料 {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 工作流進程由一系列按指定順序執行的步驟組成。 每個步驟都會執行特定動作，例如指派任務給使用者或傳送電子郵件訊息。 程式可與資產、使用者帳戶和服務互動，並可使用下列任何方法觸發：
 
@@ -28,11 +28,11 @@ AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 
 
 如需建立AEM Forms JEE工作流程程式的詳細資訊，請參閱[Workbench說明](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/WorkbenchHelp.pdf)。
 
-## 用戶資料和資料儲存{#user-data-and-data-stores}
+## 使用者資料和資料儲存 {#user-data-and-data-stores}
 
 當進程被觸發並隨著進行，它將捕獲有關進程參與者的資料、參與者在與進程關聯的表單中輸入的資料以及添加到表單的附件。 資料會儲存在AEM Forms JEE伺服器資料庫中，若已設定，某些資料（例如附件）會儲存在全域檔案儲存(GDS)目錄中。 GDS目錄可在共用檔案系統或資料庫上配置。
 
-## 訪問和刪除用戶資料{#access-and-delete-user-data}
+## 存取和刪除使用者資料 {#access-and-delete-user-data}
 
 觸發進程時，將生成唯一的進程實例ID和長期調用ID，並與進程實例關聯。 您可以根據長期調用ID訪問和刪除進程實例的資料。 您可以推斷已提交其任務的進程啟動器或進程參與者的用戶名的進程實例的長期調用ID。
 
@@ -42,7 +42,7 @@ AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 
 * **從發佈AEM例項啟動的程式**:從AEM發佈例項觸發的所有程式例項不會擷取啟動器的相關資訊。但是，用戶資料可以以與流程相關聯的形式捕獲，該過程儲存在工作流變數中。
 * **通過電子郵件啟動的流程**:發件者的電子郵件ID在資料庫表的不透明blob列中被捕 `tb_job_instance` 獲為屬性，無法直接查詢。
 
-### 當工作流啟動器或參與者已知{#initiator-participant}時標識進程實例ID
+### 在已知工作流啟動器或參與者時標識進程實例ID {#initiator-participant}
 
 執行以下步驟來標識工作流啟動器或參與者的進程實例ID:
 
@@ -131,7 +131,7 @@ AEM Forms JEE工作流程提供設計、建立和管理業務流程的工具。 
 
    有關詳細資訊，請參閱[類ProcessManager](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)的Java API參考。
 
-1. 檢查工作流實例的狀態。 如果狀態不是2(COMPLETE)或4(TERMINATED)，請呼叫下列方法以先終止執行個體：
+1. 檢查工作流實例的狀態。 如果狀態不是2(COMPLETE)或4(TERMINATED)，請先呼叫以下方法以終止實例：
 
    `ProcessManager.terminateProcess(<long_lived_invocation_id>)`。
 
