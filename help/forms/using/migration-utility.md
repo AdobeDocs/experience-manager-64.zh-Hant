@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
-role: Administrator
+role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 3%
@@ -32,7 +32,7 @@ ht-degree: 3%
 >
 >如果升級不當，若是通信管理資產，您可以在每次匯入資產時執行移轉。 若是通信管理移轉，您必須安裝Forms相容性套件。
 
-## 遷移方法{#approach-to-migration}
+## 遷移方法 {#approach-to-migration}
 
 您可以從AEM Forms 6.3或6.2 [升級](/help/forms/using/upgrade.md)至AEM Forms 6.4的最新版本，或執行全新安裝。 根據您是升級了以前的安裝還是執行了最新安裝，您需要執行以下操作之一：
 
@@ -65,7 +65,7 @@ ht-degree: 3%
 * 資產撰寫器設定對通信管理設定的變更。
 * 資產會移至資料夾下，且名稱如「現有文字」和「現有清單」。
 
-## 使用遷移實用程式{#using-the-migration-utility}
+## 使用移轉公用程式 {#using-the-migration-utility}
 
 ### 運行遷移實用程式 {#runningmigrationutility}
 
