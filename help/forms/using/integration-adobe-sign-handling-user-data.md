@@ -8,16 +8,16 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Adobe Sign
-role: Administrator
+role: Admin
 exl-id: c2061de7-8627-4595-b96c-aa2d6abffddd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
-# 與Adobe Sign整合 |處理用戶資料{#integration-with-adobe-sign-handling-user-data}
+# 與Adobe Sign整合 |處理用戶資料 {#integration-with-adobe-sign-handling-user-data}
 
 AEM Forms與Adobe Sign整合，以啟用最適化表單中的電子簽名工作流程，以處理法律、銷售、工資單、人力資源管理工作流程的表單或協定。 它允許單一和多用戶簽名、循序和同時的簽名工作流、以匿名或登錄用戶身份簽名表單，以及多種驗證用戶的方法。
 
@@ -29,7 +29,7 @@ AEM Forms與Adobe Sign整合，以啟用最適化表單中的電子簽名工作�
 
 Adobe Sign啟用的最適化表單包括與簽署者相關的資訊，且可能包含最適化表單所收集的其他使用者資料。 Adobe Sign服務會儲存具有合約內簽名的使用者資料。 合約會儲存在AEM Forms雲端服務中設定的Adobe Sign伺服器上。 此外，如果最適化表單設定為使用Forms Portal提交動作，則合約資料會與表單資料一起儲存在表單入口網站資料存放區中。
 
-## 訪問和刪除用戶資料{#access-and-delete-user-data}
+## 存取和刪除使用者資料 {#access-and-delete-user-data}
 
 用戶資料在協定中收集，但不保存在任何服務表中。 Adobe Sign可讓管理員自行選擇如何管理其在服務中控制的資料。 Adobe Sign服務的隱私權管理員可以根據要求者的電子郵件地址列出或移除合約。
 
