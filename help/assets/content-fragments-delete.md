@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 exl-id: 43b11355-ee21-421c-8809-cd8a0443a03a
 feature: 內容片段
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 12%
@@ -25,7 +25,7 @@ ht-degree: 12%
 >
 >某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
 
-## 權限 — 刪除或不刪除{#permissions-delete-or-not-delete}
+## 權限 — 刪除或不刪除 {#permissions-delete-or-not-delete}
 
 刪除內容的能力強大，但可能很敏感，許多行業需要限制和控制這些權限的分配方式。
 
@@ -51,7 +51,7 @@ ht-degree: 12%
 >
 >另請參閱[如何在AEM](/help/sites-administering/audit-user-management-operations.md)中審核用戶管理操作。
 
-## 僅{#permissions-required-for-editor-functionality-only}編輯器功能所需的權限
+## 僅編輯器功能所需的權限 {#permissions-required-for-editor-functionality-only}
 
 對於需要編輯/更新內容片段而不允許他們刪除整個片段的使用者 ****，必須指派特定權限，因為內容片段編輯器的基本操作要求可以刪除暫時的子元素。
 
