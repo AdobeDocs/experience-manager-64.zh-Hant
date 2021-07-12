@@ -11,8 +11,8 @@ content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
 feature: 內容片段
-role: Business Practitioner
-source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1511'
 ht-degree: 11%
@@ -31,9 +31,9 @@ ht-degree: 11%
 >
 >內容片段隨後用於編寫頁面；請參閱使用內容片段進行頁面編寫](/help/sites-authoring/content-fragments.md)。[
 
-## 建立內容片段{#creating-content-fragments}
+## 建立內容片段 {#creating-content-fragments}
 
-### 建立內容模型{#creating-a-content-model}
+### 建立內容模型 {#creating-a-content-model}
 
 [在建立具](content-fragments-models.md) 有結構化內容的內容片段之前，請啟用並建立內容片段模型。
 
@@ -41,7 +41,7 @@ ht-degree: 11%
 >
 >如需範本的詳細資訊，請參閱[開發內容片段](/help/sites-developing/customizing-content-fragments.md);用於簡單內容片段。
 
-### 建立內容片段{#creating-a-content-fragment}
+### 建立內容片段 {#creating-a-content-fragment}
 
 建立內容片段的方法（基本上）對於簡單和結構化片段都相同：
 
@@ -82,7 +82,7 @@ ht-degree: 11%
 
 1. 選擇 **[!UICONTROL Create]**  (建立) 以完成操作，然後選擇 **[!UICONTROL Open]** the fragment for editing (開啟片段以進行編輯) 或返回控制 **[!UICONTROL 台完成]**。
 
-## 內容片段{#actions-for-a-content-fragment}的動作
+## 內容片段的動作 {#actions-for-a-content-fragment}
 
 在&#x200B;**[!UICONTROL Assets]**&#x200B;主控台中，一系列動作可供內容片段使用，包括：
 
@@ -123,7 +123,7 @@ ht-degree: 11%
 >
 >其中許多是資產](managing-assets-touch-ui.md)和/或[案頭應用程式](https://helpx.adobe.com/tw/experience-manager/desktop-app/aem-desktop-app.html)的標準動作。[
 
-## 開啟片段編輯器{#opening-the-fragment-editor}
+## 開啟片段編輯器 {#opening-the-fragment-editor}
 
 若要開啟片段以進行編輯：
 
@@ -164,7 +164,7 @@ ht-degree: 11%
    >
    >「儲 **[!UICONTROL 存]** 」和「取 **[!UICONTROL 消」都會退出編輯器——請參閱「]**[](#save-cancel-and-versions) 儲存」、「取消」和「版本」，以取得有關這兩個選項如何對內容片段運作的完整資訊。
 
-## 保存、取消和版本{#save-cancel-and-versions}
+## 儲存、取消和版本 {#save-cancel-and-versions}
 
 >[!NOTE]
 >
@@ -215,23 +215,23 @@ ht-degree: 11%
 1. 如果用戶選擇&#x200B;**[!UICONTROL 取消]**&#x200B;編輯，則恢復在編輯會話開始時建立的版本，並刪除令牌以結束編輯會話。
 1. 如果使用者選取&#x200B;**[!UICONTROL Save]**&#x200B;編輯，則更新的元素/變數會持續存在，並移除代號以結束編輯工作階段。
 
-## 編輯片段{#editing-the-content-of-your-fragment}的內容
+## 編輯片段的內容 {#editing-the-content-of-your-fragment}
 
 開啟片段後，您可以使用[Variations](content-fragments-variations.md)標籤來製作內容。
 
-## 在片段{#creating-and-managing-variations-within-your-fragment}中建立和管理變異
+## 在片段中建立和管理變體 {#creating-and-managing-variations-within-your-fragment}
 
 建立主內容後，您就可以建立和管理該內容的[變體](content-fragments-variations.md)。
 
-## 將內容與您的片段{#associating-content-with-your-fragment}關聯
+## 將內容與您的片段關聯 {#associating-content-with-your-fragment}
 
 您也可以[將內容](content-fragments-assoc-content.md)與片段關聯。 這會提供連線，讓資產（即影像）在新增至內容頁面時，可（選擇性）與片段搭配使用。
 
-## 查看和編輯片段{#viewing-and-editing-the-metadata-properties-of-your-fragment}的元資料（屬性）
+## 檢視和編輯片段的中繼資料（屬性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 您可以使用[[!UICONTROL Metadata]](content-fragments-metadata.md)索引標籤來檢視和編輯片段的屬性。
 
-## 內容片段{#timeline-for-content-fragments}時間軸
+## 內容片段時間軸 {#timeline-for-content-fragments}
 
 除了標準選項外，[時間軸](managing-assets-touch-ui.md#timeline)還提供內容片段的特定資訊和動作：
 
@@ -267,7 +267,7 @@ ht-degree: 11%
 
 ![cfm-6420-19](assets/cfm-6420-19.png)
 
-## 比較片段版本{#comparing-fragment-versions}
+## 比較片段版本 {#comparing-fragment-versions}
 
 在您選取特定版本後，可從[[!UICONTROL 時間軸]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)中使用&#x200B;**[!UICONTROL 比較目前]**&#x200B;動作。
 
@@ -295,7 +295,7 @@ ht-degree: 11%
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## 還原為{#reverting-to-a-version}版本
+## 回復為版本  {#reverting-to-a-version}
 
 您可以還原為片段的特定版本：
 
@@ -305,7 +305,7 @@ ht-degree: 11%
 
 * 當[將版本與當前版本](content-fragments-managing.md#comparing-fragment-versions)比較時，您可以&#x200B;**[!UICONTROL 還原]**&#x200B;到所選版本。
 
-## 發佈和參考片段{#publishing-and-referencing-a-fragment}
+## 發佈和參考片段 {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
 >
@@ -322,7 +322,7 @@ ht-degree: 11%
 >
 >發佈和/或參考片段後，製作者開啟片段並再次編輯時AEM會顯示警告。 這將警告對片段的變更也會影響參考的頁面。
 
-## 刪除片段{#deleting-a-fragment}
+## 刪除片段 {#deleting-a-fragment}
 
 刪除片段：
 
