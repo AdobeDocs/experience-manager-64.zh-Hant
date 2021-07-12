@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
-role: Administrator
+role: Admin
 exl-id: ac399a66-0f3b-4f95-969e-a4109c260d1d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 >
 >建立[社群網站](sites-console.md)、[社群網站範本](sites.md)、[社群群組範本](tools-groups.md)和[社群功能](functions.md)的主控台僅用於製作環境。
 
-## 組模板控制台{#group-templates-console}
+## 群組範本主控台 {#group-templates-console}
 
 在製作環境中，若要存取群組範本主控台
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 ![組板](assets/groupstemplate.png)
 
-## 建立組模板{#create-goup-template}
+## 建立群組範本 {#create-goup-template}
 
 若要開始建立新的組模板，請選擇&#x200B;**[!UICONTROL Create]**
 
@@ -91,7 +91,7 @@ ht-degree: 2%
 
 將所有需要的函式拖放至範本產生器區域並完成設定後，請選取右上角的&#x200B;**[!UICONTROL Save]**。
 
-## 編輯群組範本{#edit-group-template}
+## 編輯群組範本 {#edit-group-template}
 
 在主[組模板控制台](#group-templates-console)中查看社區組時，可以選擇現有組模板進行編輯。
 
