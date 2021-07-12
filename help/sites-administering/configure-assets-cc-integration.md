@@ -2,16 +2,16 @@
 title: 設定AEM Assets與Experience Cloud的整合
 description: 了解如何設定AEM Assets與Experience Cloud的整合。
 feature: 資產管理
-role: Business Practitioner, Architect, Administrator
+role: User, Architect, Admin
 exl-id: f8629c30-1901-4b6e-b5a6-e46ee3c72fba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1017'
 ht-degree: 1%
 
 ---
 
-# 使用Experience Cloud{#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}設定AEM Assets整合
+# 設定AEM Assets與Experience Cloud的整合 {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
 如果您是Adobe Experience Cloud客戶，可以將Adobe Experience Manager Assets內的資產與Adobe Creative Cloud同步，反之亦然。 您也可以將資產與Experience Cloud同步，反之亦然。 您可以透過[!DNL Adobe I/O]設定此同步。 更新的[!DNL Adobe Marketing Cloud]名稱為[!DNL Adobe Experience Cloud]。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 >Sharing assets between Adobe Experience Cloud and Adobe Creative Cloud requires administrator privileges on the AEM instance.
 -->
 
-## 建立應用程式{#create-an-application}
+## 建立應用程式 {#create-an-application}
 
 1. 登入[https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/)存取Adobe開發人員閘道介面。
 
@@ -62,7 +62,7 @@ ht-degree: 1%
    >
    >請確定您沒有無意中複製&#x200B;**[!UICONTROL 應用程式密碼]**，而非&#x200B;**[!UICONTROL 應用程式ID]**。
 
-## 新增配置以Experience Cloud{#add-a-new-configuration}
+## 新增設定至Experience Cloud {#add-a-new-configuration}
 
 1. 按一下您本機AEM Assets例項使用者介面上的AEM標誌，並導覽至&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL LegacyCloud Services]**。
 
@@ -90,7 +90,7 @@ ht-degree: 1%
 
 1. 在設定頁面中，按一下&#x200B;**[!UICONTROL 顯示公開金鑰]**&#x200B;以顯示為執行個體產生的公開金鑰。 或者，按一下&#x200B;**[!UICONTROL 下載OAuth閘道的公開金鑰]**&#x200B;以下載包含公開金鑰的檔案。 接著，開啟檔案以顯示公開金鑰。
 
-## 啟用同步{#enable-synchronization}
+## 啟用同步 {#enable-synchronization}
 
 1. 使用過程[的最後一個步驟中提到的以下方法之一顯示公鑰，向Experience Cloud](#add-a-new-configuration)添加新配置。 按一下「**[!UICONTROL 顯示公開密鑰]**」。
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 1. 按一下&#x200B;**[!UICONTROL 更新]**。 立即將資產與AEM Assets例項同步。
 
-## 測試同步{#test-the-synchronization}
+## 測試同步 {#test-the-synchronization}
 
 1. 按一下本地AEM Assets實例的用戶介面上的AEM徽標，並導航至&#x200B;**[!UICONTROL Tools]**> **[!UICONTROL Deployment]**> **[!UICONTROL Replication]**以查找為同步建立的複製配置檔案。
 1. 在&#x200B;**[!UICONTROL 復寫]**&#x200B;頁面上，按一下作者&#x200B;]**上的**[!UICONTROL &#x200B;代理。
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 1. 當復寫結束時，在測試結果結尾處檢查是否有成功訊息。
 
-## 將用戶添加到Experience Cloud{#add-users-to-experience-cloud}
+## 新增使用者至Experience Cloud {#add-users-to-experience-cloud}
 
 1. 使用管理員憑證登入Experience Cloud。
 1. 從導軌中，轉到&#x200B;**[!UICONTROL Administration]**，然後按一下&#x200B;**[!UICONTROL Launch Enterprise Dashboard]**。
@@ -123,7 +123,7 @@ ht-degree: 1%
    >
    >只有您新增至Experience Cloud的使用者才可以在AEM Assets和Creative Cloud之間共用資產。
 
-## 在AEM Assets和Experience Cloud之間交換資產{#exchange-assets-between-aem-and-experience-cloud}
+## 在AEM Assets和Experience Cloud之間交換資產 {#exchange-assets-between-aem-and-experience-cloud}
 
 1. 登入AEM Assets。
 1. 在「資產」主控台中，建立資料夾並上傳一些資產至該資料夾。 例如，建立資料夾&#x200B;**mc-demo**&#x200B;並上傳資產至該資料夾。
