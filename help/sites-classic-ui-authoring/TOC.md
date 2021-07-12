@@ -7,8 +7,8 @@ user-guide-title: AEM 6.4傳統UI編寫使用手冊
 breadcrumb-title: 傳統UI編寫指南
 user-guide-description: 本指南涵蓋傳統使用者介面中AEM的製作概念。
 feature: 製作
-role: Business Practitioner
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 24%
@@ -16,7 +16,7 @@ ht-degree: 24%
 ---
 
 
-# AEM 6.4傳統UI編寫使用手冊{#classic-ui}
+# AEM 6.4傳統UI編寫使用手冊 {#classic-ui}
 
 + [傳統UI編寫指南概述](home.md)
 + 傳統UI編寫簡介{#introduction}
