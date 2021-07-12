@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Administrator
+role: Admin
 exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 2%
 
 ---
 
-# DSRP — 關係資料庫儲存資源提供程式{#dsrp-relational-database-storage-resource-provider}
+# DSRP — 關係資料庫儲存資源提供程式 {#dsrp-relational-database-storage-resource-provider}
 
 ## 關於DSRP {#about-dsrp}
 
@@ -36,9 +36,9 @@ ht-degree: 2%
 >預設儲存配置現在儲存在「conf path(`/conf/global/settings/community/srpc/defaultconfiguration`)」中，而非etc路徑(`/etc/socialconfig/srpc/defaultconfiguration`)中。 建議您遵循[移轉步驟](#migration-steps-0dt)，使defaultsrp如預期般運作。
 
 
-## 關係資料庫配置{#relational-database-configuration}
+## 關係資料庫配置 {#relational-database-configuration}
 
-### MySQL配置{#mysql-configuration}
+### MySQL配置 {#mysql-configuration}
 
 MySQL安裝可通過使用不同的資料庫（架構）名稱以及不同的連接(server:port)在同一連接池中啟用功能和公共儲存(DSRP)之間共用。
 
@@ -107,7 +107,7 @@ Solr安裝可透過使用不同集合在節點存放區(Oak)和公用存放區(S
 
 * 選擇&#x200B;**[!UICONTROL 提交]**
 
-### 預設srp {#migration-steps-0dt}的零停機遷移步驟
+### 預設srp的零停機遷移步驟 {#migration-steps-0dt}
 
 請依照下列步驟，確保defaultsrp頁面[http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)如預期般運作：
 
@@ -117,7 +117,7 @@ Solr安裝可透過使用不同集合在節點存放區(Oak)和公用存放區(S
 1. 複製舊配置`/etc/socialconfig_old/srpc/defaultconfiguration`，以取代上一步中已刪除的節點(`/conf/global/settings/community/srpc/defaultconfiguration`)。
 1. 刪除舊的etc節點`/etc/socialconfig_old`。
 
-## 發佈配置{#publishing-the-configuration}
+## 發佈設定 {#publishing-the-configuration}
 
 DSRP必須識別為所有製作和發佈執行個體上的通用商店。
 
@@ -134,14 +134,14 @@ DSRP必須識別為所有製作和發佈執行個體上的通用商店。
 * 確保未選擇`Only Modified`。
 * 選擇&#x200B;**[!UICONTROL 激活]**
 
-## 管理用戶資料{#managing-user-data}
+## 管理使用者資料 {#managing-user-data}
 
 如需&#x200B;*users*、*user profiles*&#x200B;和&#x200B;*user groups*&#x200B;的相關資訊，通常在發佈環境中輸入，請瀏覽
 
 * [使用者同步](sync.md)
 * [管理使用者和使用者群組](users.md)
 
-## DSRP {#reindexing-solr-for-dsrp}的索爾重新索引
+## DSRP的重新索引解決方案 {#reindexing-solr-for-dsrp}
 
 若要重新索引DSRP Solr，請依照[重新索引MSRP](msrp.md#msrp-reindex-tool)的檔案操作，但為DSRP重新索引時，請改用此URL:**/services/social/datastore/rdb/reindex**
 
