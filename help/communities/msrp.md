@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Administrator
+role: Admin
 exl-id: 65d37adc-d5fa-4171-bb7f-05b631cad180
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 1%
 
 ---
 
-# MSRP - MongoDB儲存資源提供程式{#msrp-mongodb-storage-resource-provider}
+# MSRP - MongoDB儲存資源提供程式 {#msrp-mongodb-storage-resource-provider}
 
 ## 關於MSRP {#about-msrp}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
       * [安裝標準MLS](solr.md#installing-standard-mls)
       * [安裝進階MLS](solr.md#installing-advanced-mls)
 
-## MongoDB配置{#mongodb-configuration}
+## MongoDB配置 {#mongodb-configuration}
 
 ### 選擇MSRP {#select-msrp}
 
@@ -100,7 +100,7 @@ URL用於以獨立模式與Solr通訊的URL。如果在SolrCloud模式中執行�
 >
 >預設為名稱`communities`的mongoDB資料庫不應設定為用於[節點儲存或資料（二進位）儲存](../../help/sites-deploying/data-store-config.md)的資料庫的名稱。 另請參閱[AEM 6](../../help/sites-deploying/storage-elements-in-aem-6.md)中的儲存元素。
 
-### MongoDB複製副本集{#mongodb-replica-set}
+### MongoDB複製副本集 {#mongodb-replica-set}
 
 對於生產環境，強烈建議設定一個複製副本集，即實現主次複製和自動故障切換的MongoDB伺服器群集。
 
@@ -108,7 +108,7 @@ URL用於以獨立模式與Solr通訊的URL。如果在SolrCloud模式中執行�
 
 要使用副本集並了解如何定義應用程式和MongoDB實例之間的連接，請訪問MongoDB的[連接字串URI格式](https://docs.mongodb.org/manual/reference/connection-string/)文檔。
 
-#### 用於連接到副本集{#example-url-for-connecting-to-a-replica-set}的示例Url
+#### 用於連接到副本集的示例Url  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -139,7 +139,7 @@ Solr安裝可透過使用不同集合在節點存放區(Oak)和公用存放區(M
 1. 重新索引MSRP
 請參閱[MSRP重新索引工具](#msrp-reindex-tool)節
 
-## 發佈配置{#publishing-the-configuration}
+## 發佈設定 {#publishing-the-configuration}
 
 MSRP必須識別為所有製作和發佈執行個體上的通用商店。
 
@@ -152,14 +152,14 @@ MSRP必須識別為所有製作和發佈執行個體上的通用商店。
       * 瀏覽至`/etc/socialconfig/srpc/`
    * 選擇&#x200B;**[!UICONTROL 激活]**
 
-## 管理用戶資料{#managing-user-data}
+## 管理使用者資料 {#managing-user-data}
 
 如需&#x200B;*users*、*user profiles*&#x200B;和&#x200B;*user groups*&#x200B;的相關資訊，通常在發佈環境中輸入，請瀏覽
 
 * [使用者同步](sync.md)
 * [管理使用者和使用者群組](users.md)
 
-## MSRP重新索引工具{#msrp-reindex-tool}
+## MSRP重新索引工具 {#msrp-reindex-tool}
 
 安裝新組態檔或修復損壞的Solr索引時，會出現HTTP端點來重新索引MSRP的Solr。
 
@@ -176,7 +176,7 @@ MSRP必須識別為所有製作和發佈執行個體上的通用商店。
 * 如果記憶體有問題，請指定較小的數字
 * 如果速度有問題，請指定較大的數字以增加速度
 
-### 使用cURL命令{#running-msrp-reindex-tool-using-curl-command}執行MSRP重新索引工具
+### 使用cURL命令執行MSRP重新索引工具 {#running-msrp-reindex-tool-using-curl-command}
 
 下列cURL命令顯示HTTP要求對儲存在MSRP中的UGC重新編列索引的必要條件。
 
@@ -205,7 +205,7 @@ cURL -u *signin* -d *data* *reindex-url*
 >
 >如果您是[重新索引DSRP Solr](dsrp.md)，則URL為&#x200B;**/services/social/datastore/rdb/reindex**
 
-### MSRP重新索引範例{#msrp-reindex-example}
+### MSRP重新索引範例 {#msrp-reindex-example}
 
 ```shell
 curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo/' http://localhost:4503/services/social/datastore/mongo/reindex
@@ -217,7 +217,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
 
 ## 疑難排解 {#troubleshooting}
 
-### MongoDB {#ugc-not-visible-in-mongodb}中不顯示UGC
+### UGC在MongoDB中不可見 {#ugc-not-visible-in-mongodb}
 
 檢查儲存選項的設定，確認MSRP已設為預設提供者。 依預設，儲存資源提供者為JSRP。
 
@@ -228,7 +228,7 @@ curl -s -u admin:admin -d 'batchSize=10000&path=/content/usergenerated/asi/mongo
    * 不包含[srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc)節點，表示儲存提供者為JSRP
    * 如果srpc節點存在且包含節點[defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration),defaultconfiguration的屬性應將MSRP定義為預設提供者
 
-### 升級{#ugc-disappears-after-upgrade}後UGC消失
+### 升級後UGC消失 {#ugc-disappears-after-upgrade}
 
 如果從現有的AEM Communities 6.0網站升級，在升級至AEM Communities 6.3後，必須轉換任何預先存在的UGC，以符合[SRP](srp.md) API所需的結構。
 
@@ -238,11 +238,11 @@ GitHub上提供開放原始碼工具，目的如下：
 
 移轉工具可自訂，以從舊版AEM社群匯出UGC，匯入至AEM Communities 6.1或更新版本。
 
-### 錯誤 — 未定義的欄位提供程式id {#error-undefined-field-provider-id}
+### 錯誤 — 未定義欄位提供程式ID {#error-undefined-field-provider-id}
 
 如果日誌中出現以下錯誤，則表示Solr架構檔案配置不正確。
 
-#### JsonMappingException:未定義的欄位提供程式id {#jsonmappingexception-undefined-field-provider-id}
+#### JsonMappingException:未定義欄位提供程式id {#jsonmappingexception-undefined-field-provider-id}
 
 ```xml
 Caused by: com.fasterxml.jackson.databind.JsonMappingException: undefined field provider_id
@@ -257,7 +257,7 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 * XML配置檔案被複製到正確的Solr位置
 * 新配置檔案替換現有配置檔案後，Solr重新啟動
 
-### MongoDB的安全連接失敗{#secure-connection-to-mongodb-fails}
+### MongoDB安全連接失敗 {#secure-connection-to-mongodb-fails}
 
 如果嘗試使MongoDB伺服器的安全連接由於缺少類定義而失敗，則必須更新MongoDB驅動程式包`mongo-java-driver`，該包可從公共Maven儲存庫獲得。
 
