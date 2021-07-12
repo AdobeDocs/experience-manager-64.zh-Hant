@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
-role: Administrator
+role: Admin
 exl-id: b5d20819-3a3f-4b9e-99a3-e7ae5ae28baf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 4%
 
 ---
 
-# 社區站點{#communities-sites}
+# 社群網站 {#communities-sites}
 
 本節內容適用於管理AEM Communities且熟悉AEM Communities功能的使用者。
 
@@ -30,9 +30,9 @@ ht-degree: 4%
 * [開始使用AEM Communities](getting-started.md)
 * [AEM Communities啟用快速入門](getting-started-enablement.md)
 
-## 管理和配置主題{#administration-and-configuration-topics}
+## 管理和設定主題 {#administration-and-configuration-topics}
 
-### Communities站點建立和管理{#communities-site-creation-and-management}
+### Communities站點建立和管理 {#communities-site-creation-and-management}
 
 * Communities [consoles](consoles.md)
 
@@ -78,7 +78,7 @@ AEM Communities的主要功能是透過登入的網站訪客（成員）產生�
 * [訂閱](subscriptions.md):讓成員使用外部電子郵件與社群互動
 * [傳訊](messaging.md):讓成員能使用內部訊息與社群互動
 
-### 啟用功能{#enablement-features}
+### 啟用功能 {#enablement-features}
 
 * [配置啟用](enablement.md):正確設定啟用功能的必要資訊
 * [Analytics設定](analytics.md):啟用Adobe Analytics for Communities功能的必要資訊
@@ -98,7 +98,7 @@ AEM Communities的主要功能是透過登入的網站訪客（成員）產生�
 
 請參閱其他Communities特定資訊的部署頁面，如[Upgrading](upgrade.md)、[Dispatcher](dispatcher.md)和[Replication](deploy-communities.md#replication-agents-on-author)。
 
-## 相關社群檔案{#related-communities-documentation}
+## 相關社群檔案 {#related-communities-documentation}
 
 * 請造訪[部署Communities](deploy-communities.md)以了解建議的部署。
 
