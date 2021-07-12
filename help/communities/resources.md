@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
-role: Administrator
+role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 4%
 
 ---
 
-# 啟用資源控制台{#enablement-resources-console}
+# 啟用資源控制台 {#enablement-resources-console}
 
 對於AEM Communities，資源控制台是[啟用管理員](users.md)建立、管理資源並將資源指派給啟用社群網站成員的位置。
 
@@ -59,7 +59,7 @@ ht-degree: 4%
 
 學習路徑是一組邏輯的啟用資源，這些資源分組在一起，以方便分配給成員。
 
-### 成員組{#members-group}
+### 成員組 {#members-group}
 
 建立社群網站時，在建立[網站特定使用者群組](users.md)時，會使用為URL指定的網站名稱，這些使用者群組設定了各種角色的各種權限。 所有這些自動建立的群組都會加上前置詞`Community *<site-name>*`。
 
@@ -69,9 +69,9 @@ ht-degree: 4%
 
 對於[啟用社區](overview.md#enablement-community)，建議將站點設為私有，然後需要管理員將用戶添加到成員組。
 
-## 訪問社區站點的啟用資源{#accessing-a-community-site-s-enablement-resources}
+## 存取社群網站的啟用資源 {#accessing-a-community-site-s-enablement-resources}
 
-### 導航到Communities資源{#navigate-to-communities-resources}
+### 導覽至Communities資源 {#navigate-to-communities-resources}
 
 在製作環境中，前往資源主控台
 
@@ -79,7 +79,7 @@ ht-degree: 4%
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-### 選擇社區站點{#select-a-community-site}
+### 選擇社區站點 {#select-a-community-site}
 
 「社區資源」控制台將顯示所有社區站點。
 
@@ -103,7 +103,7 @@ ht-degree: 4%
 
 ![chlimage_1-167](assets/chlimage_1-167.png)
 
-## 建立資源{#create-a-resource}
+## 建立資源 {#create-a-resource}
 
 ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -122,7 +122,7 @@ ht-degree: 4%
 
 當資源是課程的一部分時，學習路徑只應將成員分配給學習路徑。 可在建立啟用資源後添加分配。
 
-### 1基本資訊{#basic-info}
+### 1基本資訊 {#basic-info}
 
 ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -166,7 +166,7 @@ ht-degree: 4%
 
 * 選擇&#x200B;**[!UICONTROL Next]**
 
-### 2添加內容{#add-content}
+### 2新增內容 {#add-content}
 
 ![chlimage_1-170](assets/chlimage_1-170.png)
 
@@ -224,7 +224,7 @@ ht-degree: 4%
 
       物理站點的位置，如教室……
 
-#### 新增的視訊資源{#example-of-an-added-video-resource}範例
+#### 新增的視訊資源範例 {#example-of-an-added-video-resource}
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -288,7 +288,7 @@ ht-degree: 4%
 
 成功建立啟用資源後，系統會將新建立的資源選取，並返回「資源」主控台。 在此控制台中，[可以管理資源](#managing-a-resource)。
 
-## 建立學習路徑{#create-a-learning-path}
+## 建立學習路徑 {#create-a-learning-path}
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
@@ -401,7 +401,7 @@ ht-degree: 4%
 >
 >如果成員同時註冊了啟用資源和引用該資源的學習路徑，則其分配將同時顯示學習路徑中的單個資源和資源。
 
-## 管理資源{#managing-a-resource}
+## 管理資源 {#managing-a-resource}
 
 管理單一啟用資源
 
@@ -521,7 +521,7 @@ Analytics時間軸報表會顯示此啟用資源的事件在一段時間內的�
 
 「評等」報表以已對啟用資源進行評等的使用者人數為基礎，顯示每個星級評等的數量，接著是總評等數和平均評等的摘要。
 
-#### 報表摘要{#report-summary}
+#### 報表摘要 {#report-summary}
 
 對於啟用資源，報表摘要是清單
 
@@ -551,7 +551,7 @@ Analytics時間軸報表會顯示此啟用資源的事件在一段時間內的�
 
 您可以使用`Show / hide columns`選擇器選取欄，以調整表格的顯示。
 
-#### 以CSV格式下載報表{#download-report-as-csv}
+#### 以CSV格式下載報表 {#download-report-as-csv}
 
 「報表摘要」表格可使用控制台上方的按鈕以CSV格式下載。
 
