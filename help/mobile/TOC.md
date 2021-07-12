@@ -6,8 +6,8 @@ user-guide-title: AEM 6.4 Mobile 使用指南
 breadcrumb-title: Mobile 指南
 user-guide-description: 建立和管理行動應用程式的內容。
 feature: 行動
-role: Business Practitioner
-source-git-commit: 1a7ecec2f3c2618bb6d0280a8f9a66754cd8a1a3
+role: User
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 11%
