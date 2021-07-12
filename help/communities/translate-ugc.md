@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
-role: Administrator
+role: Admin
 exl-id: b8cbc429-b0c3-4f6e-a15f-4aef54733c8e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1117'
 ht-degree: 0%
 
 ---
 
-# 轉譯使用者產生的內容{#translating-user-generated-content}
+# 轉譯使用者產生的內容 {#translating-user-generated-content}
 
 AEM Communities的翻譯功能將[翻譯頁面內容](../../help/sites-administering/translation.md)的概念擴展到使用[社交元件框架(SCF)元件](scf.md)發佈到社區站點的用戶生成內容(UGC)。
 
@@ -40,7 +40,7 @@ UGC的翻譯可讓網站訪客和成員透過移除語言障礙來體驗全球�
 
 當除了翻譯服務提供者之外配置翻譯整合框架時，站點的每個語言副本可以共用UGC的單個線程，從而提供跨語言副本的全局通信。 配置的[全局共用儲存](#global-translation-of-ugc)使整個線程可以顯示，而不管從哪個語言副本查看它，都不能顯示討論線程。 此外，可以配置多個翻譯整合配置，為全局參與者的邏輯分組（例如按區域）指定不同的全局共用儲存。
 
-## 預設翻譯服務{#the-default-translation-service}
+## 預設翻譯服務 {#the-default-translation-service}
 
 AEM Communities包含[試用授權](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) ，適用於[預設翻譯服務](../../help/sites-administering/tc-msconf.md)，適用於多種語言。
 
@@ -52,7 +52,7 @@ AEM Communities包含[試用授權](../../help/sites-administering/tc-msconf.md#
 >
 >對於生產系統，需要許可的翻譯服務。 如果未獲得許可，預設翻譯服務應為[關閉](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors)。
 
-## UGC {#global-translation-of-ugc}的全局轉換
+## UGC的全球翻譯 {#global-translation-of-ugc}
 
 當網站有多個[語言副本](../../help/sites-administering/tc-prep.md)時，預設翻譯服務不識別在一個網站上輸入的UGC可能與在另一個網站上輸入的UGC有關，就像UGC基本上由同一元件（包含該元件的頁面的語言副本）產生一樣。
 
@@ -70,7 +70,7 @@ AEM Communities包含[試用授權](../../help/sites-administering/tc-msconf.md#
 >
 >沒有移轉工具可將語言特定內容移動或合併至全域共用存放區。
 
-### 翻譯整合配置{#translation-integration-configuration}
+### 翻譯整合設定 {#translation-integration-configuration}
 
 若要建立新的翻譯整合，將翻譯服務連接器與製作執行個體上的網站整合：
 
@@ -90,7 +90,7 @@ AEM Communities包含[試用授權](../../help/sites-administering/tc-msconf.md#
 
 * 選擇&#x200B;**[!UICONTROL 可用配置]**&#x200B;旁的`[+]`表徵圖以建立新配置
 
-#### 建立配置對話框{#create-configuration-dialog}
+#### 建立配置對話框 {#create-configuration-dialog}
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
@@ -106,7 +106,7 @@ AEM Communities包含[試用授權](../../help/sites-administering/tc-msconf.md#
 
 * 選擇&#x200B;**[!UICONTROL 建立]**
 
-#### 翻譯配置對話框{#translation-config-dialog}
+#### 翻譯設定對話方塊 {#translation-config-dialog}
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -132,7 +132,7 @@ AEM Communities包含[試用授權](../../help/sites-administering/tc-msconf.md#
 
 新的翻譯整合雲端服務需要啟動至發佈環境。 與網站建立關聯後，如果尚未啟用，則啟動工作流程會在發佈與其關聯的頁面時，提示發佈此雲端服務設定。
 
-## 管理翻譯設定{#managing-translation-settings}
+## 管理翻譯設定 {#managing-translation-settings}
 
 >[!NOTE]
 >
@@ -144,7 +144,7 @@ AEM Communities包含[試用授權](../../help/sites-administering/tc-msconf.md#
 >
 >當網站訪客是匿名的，或未在其設定檔中指定語言偏好設定時，偏好的語言為頁面範本的基本語言。
 
-### 用戶首選項{#user-preference}
+### 用戶首選項 {#user-preference}
 
 #### 使用者設定檔 {#user-profile}
 
@@ -156,6 +156,6 @@ AEM Communities包含[試用授權](../../help/sites-administering/tc-msconf.md#
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
-### 社區站點設定{#community-site-setting}
+### 社群網站設定 {#community-site-setting}
 
 建立社群網站時，可以啟用和設定翻譯選項。 翻譯設定對匿名網站訪客可檢視的內容有效，但使用者的設定檔設定會覆寫。
