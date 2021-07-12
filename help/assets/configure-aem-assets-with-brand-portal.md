@@ -3,9 +3,9 @@ title: 使用 Brand Portal 設定 AEM Assets
 description: '了解如何使用Brand Portal設定AEM Assets，以將資產和集合發佈至Brand Portal。 '
 contentOwner: VG
 feature: 品牌入口網站
-role: Administrator
+role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1649'
 ht-degree: 37%
@@ -281,14 +281,14 @@ Brand Portal已成功設定為您的AEM Assets製作例項。 您現在可以：
 * [從 AEM Assets 發佈集合到 Brand Portal](../assets/brand-portal-publish-collection.md)
 * [設定Asset ](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) Source ，讓Brand Portal使用者能夠貢獻資產並將資產發佈至AEM Assets。
 
-## 升級配置{#upgrade-integration-64}
+## 升級配置 {#upgrade-integration-64}
 
 請依所列順序執行下列步驟以升級現有設定：
 1. [驗證正在運行的作業](#verify-jobs)
 1. [刪除現有配置](#delete-existing-configuration)
 1. [建立設定](#configure-new-integration-64)
 
-### 驗證正在運行的作業{#verify-jobs}
+### 驗證正在運行的作業 {#verify-jobs}
 
 進行任何修改之前，請確定您的AEM Assets製作執行個體上未執行任何發佈工作。 為此，您可以驗證所有四個複製代理，並確保隊列是理想/空的。
 
@@ -306,11 +306,11 @@ Brand Portal已成功設定為您的AEM Assets製作例項。 您現在可以：
 
 1. 找出您Brand Portal租用戶的復寫代理。
 
-   確保所有復寫代理的&#x200B;**Queue均為Idle**，沒有任何發佈作業處於活動狀態。
+   確保所有復寫代理的&#x200B;**Queue均為Idle**，則沒有任何發佈作業處於活動狀態。
 
    ![](assets/test-integration3.png)
 
-### 刪除現有配置{#delete-existing-configuration}
+### 刪除現有配置 {#delete-existing-configuration}
 
 刪除現有配置時，必須運行以下檢查清單。
 * 刪除所有四個複製代理
