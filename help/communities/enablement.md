@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 765a3d9b-4552-403e-872c-fdf684ac271d
-role: Administrator
+role: Admin
 exl-id: 01cfc774-8ae1-48c0-a7e3-5836c4b39bff
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
 
-# 配置啟用功能{#configuring-enablement-features}
+# 配置啟用功能 {#configuring-enablement-features}
 
 ## 概覽 {#overview}
 
@@ -52,7 +52,7 @@ Analytics與Adobe Analytics的整合新增了完整的報表功能，並支援An
 
 * **Dispatcher**
 
-## 配置步驟{#configuration-steps}
+## 配置步驟 {#configuration-steps}
 
 以下是啟用社群的必要步驟。
 
