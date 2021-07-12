@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
-role: Administrator
+role: Admin
 exl-id: 766711ea-f3d3-49ab-8346-4e4477c261bd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 5%
 
 ---
 
-# 報表控制台{#reports-console}
+# 報表主控台 {#reports-console}
 
 ## 概覽 {#overview}
 
@@ -34,9 +34,9 @@ ht-degree: 5%
 
 表格報表可匯出為.csv格式，以供後續處理。
 
-## 報表主控台{#reporting-consoles}
+## 報表主控台 {#reporting-consoles}
 
-### 社群網站報表{#reports-for-community-sites}
+### 社群網站報表 {#reports-for-community-sites}
 
 * 從全局導航：**[!UICONTROL 導覽>社群>報表]**
 * 選擇
@@ -48,7 +48,7 @@ ht-degree: 5%
       * 為所選社區站點、內容類型和時段生成報告
          ![chlimage_1-156](assets/chlimage_1-156.png)
 
-### 啟用資源和學習路徑報表{#reports-for-enablement-resources-and-learning-paths}
+### 啟用資源和學習路徑報表 {#reports-for-enablement-resources-and-learning-paths}
 
 * 從全局導航：**[!UICONTROL 導覽>社群>資源]**
 * 選擇現有啟用社區站點
@@ -138,6 +138,6 @@ ht-degree: 5%
 
 ## 疑難排解 {#troubleshooting}
 
-### 未列出社區站點{#no-community-sites-listed}
+### 未列出社區站點 {#no-community-sites-listed}
 
 如果未列出社群網站，請確定已為網站啟用Adobe Analytics。 如果選擇分配的報表，請確保分配函式位於社區站點的結構中。
