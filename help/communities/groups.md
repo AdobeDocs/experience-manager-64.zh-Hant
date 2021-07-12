@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
-role: Administrator
+role: Admin
 exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1642'
 ht-degree: 1%
@@ -57,7 +57,7 @@ ht-degree: 1%
    * 社群網站的結構必須包含群組函式
    * 這些螢幕擷取畫面來自[在發佈時建立群組](published-site.md)之後的快速入門教學課程
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 選擇&#x200B;**[!UICONTROL 組資料夾]**&#x200B;以開啟它。
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 * 選擇&#x200B;**[!UICONTROL 建立組]**&#x200B;按鈕
 
-### 步驟1:社區組模板{#step-community-group-template}
+### 步驟1:社群群組範本 {#step-community-group-template}
 
 ![多語種組](assets/multilingualgroup.png)
 
@@ -94,9 +94,9 @@ ht-degree: 1%
 
 * **[!UICONTROL 社區組模]** 板菜單：使用下拉式功能表來選擇可用的 [社群群組範本](tools.md)。
 
-### 步驟2:設計{#step-design}
+### 步驟2:設計 {#step-design}
 
-#### 社區組主題{#community-group-theme}
+#### 社群群組主題 {#community-group-theme}
 
 ![社區群主題](assets/communitygrouptheme.png)
 
@@ -108,9 +108,9 @@ ht-degree: 1%
 
 發佈社群網站後，可以[編輯屬性](#modifying-group-properties)並選取不同的主題。
 
-#### 社群群組品牌{#community-group-branding}
+#### 社群群品牌推廣 {#community-group-branding}
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+![chlimage_1-133](assets/chlimage_1-135.png)
 
 社群網站品牌化是顯示為頁首的影像，橫跨每個頁面。 可以顯示群組的橫幅，而此橫幅與其他網站頁面不同。
 
@@ -125,7 +125,7 @@ ht-degree: 1%
    * 小於瀏覽器寬度，影像會水準重複
    * 大於瀏覽器的寬度，影像就會看起來被裁切
 
-### 步驟3:設定{#step-settings}
+### 步驟3:設定 {#step-settings}
 
 #### 協調 {#moderation}
 
@@ -166,7 +166,7 @@ ht-degree: 1%
 
 ![chlimage_1-139](assets/chlimage_1-139.png)
 
-### 步驟4:建立組{#step-create-group}
+### 步驟4:建立群組 {#step-create-group}
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
@@ -182,13 +182,13 @@ ht-degree: 1%
 >
 >組以所有語言建立，如[步驟1中所指定：在各個社區站點的社區組控制台中，以其他可用的社區組語言顯示社區組模板](groups.md#step1communitygrouptemplate)。
 
-## 編寫群組內容{#authoring-group-content}
+## 製作群組內容 {#authoring-group-content}
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
 群組的頁面內容可以使用與任何其他AEM頁面相同的工具撰寫。 若要開啟群組以進行製作，請選取將游標移至群組卡片時顯示的「開啟網站」圖示。
 
-## 修改組屬性{#modifying-group-properties}
+## 修改組屬性 {#modifying-group-properties}
 
 在社區組建立過程中指定的現有子社區站點的屬性可以通過選擇「編輯站點」表徵圖來修改，該表徵圖在將游標暫留在組卡上時顯示：
 
@@ -198,7 +198,7 @@ ht-degree: 1%
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
-### 修改基本{#modify-basic}
+### 修改基本 {#modify-basic}
 
 BASIC面板允許修改
 
@@ -211,7 +211,7 @@ BASIC面板允許修改
 
 相反，可以修改子社區的[STRUCTURE](#modify-structure)。
 
-### 修改結構{#modify-structure}
+### 修改結構 {#modify-structure}
 
 「結構」面板允許修改最初從從作者或發佈環境建立子社區站點時選定的社區組模板建立的結構。 從面板，您可以
 
@@ -242,11 +242,11 @@ BASIC面板允許修改
 >
 >必須先包含並列出任何其他函式，例如[page函式](functions.md#page-function)。
 
-#### 範例：將日曆函式添加到子社區（組）結構{#example-adding-a-calendar-function-to-a-sub-community-group-structure}
+#### 範例：將日曆函式添加到子社區（組）結構 {#example-adding-a-calendar-function-to-a-sub-community-group-structure}
 
 ![chlimage_1-144](assets/chlimage_1-144.png)
 
-### 修改設計{#modify-design}
+### 修改設計 {#modify-design}
 
 「設計」面板允許修改主題：
 
@@ -255,19 +255,19 @@ BASIC面板允許修改
 
    * 捲動至面板底部以變更品牌影像
 
-### 修改設定{#modify-settings}
+### 修改設定 {#modify-settings}
 
 「設定」面板可讓您新增社群[協調者](#moderation)。
 
-### 修改成員資格{#modify-membership}
+### 修改成員資格 {#modify-membership}
 
 [MEMBERSHIP](#membership)面板僅供參考。 無法更改已建立的組成員類型，無論是可選、必需還是受限。
 
-### 修改縮圖{#modify-thumbnail}
+### 修改縮圖 {#modify-thumbnail}
 
 [THUMBNAIL](#thumbnail)面板可讓上傳影像，以在發佈環境以及製作環境中的社群網站群組主控台中，呈現社群群組給網站訪客。
 
-## 發佈群組{#publishing-the-group}
+## 發佈群組 {#publishing-the-group}
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -283,7 +283,7 @@ BASIC面板允許修改
 >
 >社群網站和巢狀群組應由上而下發佈。
 
-## 刪除組{#deleting-the-group}
+## 刪除群組 {#deleting-the-group}
 
 ![deleteicon](assets/deleteicon.png)
 
