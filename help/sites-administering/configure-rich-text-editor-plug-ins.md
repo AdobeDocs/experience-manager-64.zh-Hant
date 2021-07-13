@@ -1,16 +1,17 @@
 ---
 title: 設定RTF編輯器外掛程式
-description: 了解如何設定AEM RTF編輯器外掛程式以啟用個別功能。
+description: 了解如何設定Adobe Experience Manager RTF編輯器外掛程式以啟用個別功能。
 contentOwner: AG
 exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: ec5154eb517740f5888dc44ad0e932d9ee469be6
 workflow-type: tm+mt
-source-wordcount: '4204'
-ht-degree: 1%
+source-wordcount: '4216'
+ht-degree: 0%
 
 ---
 
-# 配置RTF編輯器插件{#configure-the-rich-text-editor-plug-ins}
+
+# 設定RTF編輯器外掛程式 {#configure-the-rich-text-editor-plug-ins}
 
 可透過一系列外掛程式使用RTE功能，每個外掛程式都具有features屬性。 您可以配置功能屬性以啟用或禁用一個或多個RTE功能。 本文說明如何具體設定RTE外掛程式。
 
@@ -18,7 +19,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->使用CRXDE Lite時，建議使用「全部儲存」定期儲存變更。
+>使用CRXDE Lite時，建議使用[!UICONTROL Save All]選項定期保存更改。
 
 ## 啟動外掛程式並設定features屬性 {#activateplugin}
 
@@ -28,7 +29,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->各自的rtePlugins節點稱為&lt;*rtePlugins-node*>以避免本文中的重複。
+>各自的`rtePlugins`節點稱為`<rtePlugins-node>`，以避免本文中的重複。
 
 1. 使用CRXDE Lite，找出專案的文字元件。
 1. 在配置任何RTE插件之前，建立`<rtePlugins-node>`的父節點（如果不存在）:
@@ -51,7 +52,7 @@ ht-degree: 1%
    * **名稱** `rtePlugins`
    * **類型** `nt:unstructured`
 
-1. 為每個要啟用的外掛程式建立節點：
+1. 在下方，為每個您要啟用的外掛程式建立節點：
 
    * **類型** `nt:unstructured`
    * **** 命名所需外掛程式的外掛程式ID
@@ -87,7 +88,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-## 了解Findreplace外掛程式{#understand--findreplace-plugin}
+## 了解Findreplace外掛程式 {#understand--findreplace-plugin}
 
 `findreplace`外掛程式不需要任何設定。 它是現成的。
 
@@ -101,11 +102,11 @@ ht-degree: 1%
 
 * **瀏覽器模式**:使用瀏覽器的預設貼上實作來貼上文字。它不是推薦的方法，因為它可能引入不想要的標籤。
 
-* **純文字模式**:將剪貼簿內容貼為純文字。在AEM元件中插入之前，它會先從複製的內容中移除所有樣式和格式元素。
+* **純文字模式**:將剪貼簿內容貼為純文字。在[!DNL Experience Manager]元件中插入之前，它會先從複製的內容中移除樣式和格式的所有元素。
 
 * **MS Word模式**:從MS Word複製時，貼上帶有格式的文本（包括表格）。不支援從其他源（如網頁或MS Excel）複製和貼上文本，並且僅保留部分格式。
 
-### 配置RTE工具欄{#configure-paste-options-available-on-the-rte-toolbar}上可用的「貼上」選項
+### 配置RTE工具欄上可用的「貼上」選項  {#configure-paste-options-available-on-the-rte-toolbar}
 
 您可以在RTE工具列中提供以下三個圖示的一部分、全部或全部不提供給作者：
 
@@ -117,14 +118,11 @@ ht-degree: 1%
 
 若要設定RTE以顯示必要的圖示，請遵循下列步驟。
 
-1. 導覽至元件；例如：
-
-   `/apps/<myProject>/components/text`
-
+1. 導覽至您的元件，例如`/apps/<myProject>/components/text`。
 1. 導航到節點`rtePlugins/edit`。 如果節點不存在，請參閱[啟用外掛程式](#activateplugin)。
 1. 在`edit`節點上建立`features`屬性，並添加一個或多個功能。 儲存所有變更。
 
-### 配置「貼上」(Ctrl+V)表徵圖和快捷方式{#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}的行為
+### 配置「貼上」(Ctrl+V)表徵圖和快捷方式的行為 {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
 您可以使用下列步驟預先設定「貼上」(Ctrl+V)]**圖示的行為。**[!UICONTROL &#x200B;此設定也定義作者用來貼上內容的鍵盤快速鍵Ctrl+V的行為。
 
@@ -178,55 +176,21 @@ ht-degree: 1%
    所有屬性均為&#x200B;**Type** `Boolean`，因此，在相應的&#x200B;**Value**&#x200B;中，可以選擇或刪除複選標籤以啟用或禁用該功能。
 
    >[!NOTE]
-   若未明確定義，則會使用預設值true，並接受格式。
+   >
+   >若未明確定義，則會使用預設值true，並接受格式。
 
-1. 也可以使用其他屬性或節點範圍來定義其他格式，這些格式也應用於`htmlPasteRules`節點：
+1. 也可以使用其他屬性或節點範圍來定義其他格式，這些格式也應用於`htmlPasteRules`節點。 儲存所有變更。
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>屬性</strong></td> 
-   <td><strong>類型</strong></td> 
-   <td><strong>說明</strong></td> 
-  </tr> 
-  <tr> 
-   <td>allowBlockTags</td> 
-   <td>String[]</td> 
-   <td><p>定義允許的區塊標籤清單。</p> <p>可能的區塊標籤包括（其中包括）:</p> 
-    <ul> 
-     <li>標題(h1、h2、h3)</li> 
-     <li>第(p)段</li> 
-     <li>清單(ol, ul)</li> 
-     <li>表（表）</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>fallbackBlockTag</td> 
-   <td>字串</td> 
-   <td><p>定義用於任何區塊的區塊標籤，這些區塊的區塊標籤具有未包含在allowBlockTags中的區塊標籤。</p> <p> p在大多數情況下都足夠。</p> </td> 
-  </tr> 
-  <tr> 
-   <td>表格</td> 
-   <td>nt:unstructured</td> 
-   <td><p>定義貼上表時的行為。<br /> </p> <p>此節點必須具有屬性<code>allow</code>（類型<code>Boolean</code>），以定義是否允許貼上表。</p> <p>如果將<code>allow</code>設定為<code>false</code>，則必須指定屬性<code>ignoreMode</code>（類型<code> String</code>）以定義如何處理貼上的表內容。 <code>ignoreMode</code>的有效值為：</p> 
-    <ul> 
-     <li><code>remove</code>:刪除表內容。</li> 
-     <li><code>paragraph</code>:將表格儲存格轉換為段落。</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>清單</td> 
-   <td>nt：非結構化</td> 
-   <td><p>定義貼上清單時的行為。<br /> </p> <p>必須具有屬性<code>allow</code>（類型<code>Boolean</code>），才能定義是否允許貼上清單。</p> <p>如果將<code>allow</code>設定為<code>false</code>，則必須指定屬性<code>ignoreMode</code>（類型<code>String</code>）以定義如何處理貼上的任何清單內容。 <code>ignoreMode</code>的有效值為：</p> 
-    <ul> 
-     <li><code>remove</code>:移除清單內容。</li> 
-     <li><code>paragraph</code>:將清單項目轉換為段落。</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
-</table>
+可以對`htmlPasteRules`使用以下屬性。
 
-有效`htmlPasteRules`結構的示例：
+| 屬性 | 類型 | 說明 |
+|---|---|---|
+| `allowBlockTags` | 字串 | 定義允許的區塊標籤清單。 一些可能的區塊標籤包括： <ul> <li>標題(h1、h2、h3)</li> <li>第(p)段</li> <li>清單(ol, ul)</li> <li>表（表）</li> </ul> |
+| `fallbackBlockTag` | 字串 | 定義用於任何塊的塊標籤，這些塊標籤具有未包含在`allowBlockTags`中的塊標籤。 `p` 在大多數情況下都足夠了。 |
+| 表格 | nt:unstructured | 定義貼上表格時的行為。 此節點必須具有屬性`allow`（類型布林值），才能定義是否允許貼上表。 如果允許設定為`false`，則必須指定屬性`ignoreMode`（類型字串）以定義如何處理貼上的表內容。 `ignoreMode`的有效值為： <ul> <li>`remove`:刪除表內容。</li> <li>`paragraph`:將表格儲存格轉換為段落。</li> </ul> |
+| 清單 | nt：非結構化 | 定義貼上清單時的行為。 必須具有屬性`allow`（類型布林值），才能定義是否允許貼上清單。 如果將`allow`設定為`false`，則必須指定屬性`ignoreMode`（類型字串）以定義如何處理貼上的任何清單內容。 `ignoreMode`的有效值為： <ul><li> `remove`:移除清單內容。</li> <li>`paragraph`:將清單項目轉換為段落。</li> </ul> |
+
+以下是有效`htmlPasteRules`結構的示例。
 
 ```xml
 "htmlPasteRules": {
@@ -248,13 +212,9 @@ ht-degree: 1%
 }
 ```
 
-1. 儲存所有變更。
-
 ## 配置文本樣式 {#textstyles}
 
-作者可套用樣式以變更部分文字的外觀。 樣式以您在CSS樣式表中預先定義的CSS類別為基礎。 程式化內容會使用`class`屬性括在`span`標籤中，以參照CSS類別。 例如：
-
-`<span class=monospaced>Monospaced Text Here</span>`
+作者可套用樣式以變更部分文字的外觀。 樣式以您在CSS樣式表中預先定義的CSS類別為基礎。 程式化內容會使用`class`屬性括在`span`標籤中，以參照CSS類別。 例如， `<span class=monospaced>Monospaced Text Here</span>`。
 
 首次啟用樣式外掛程式時，沒有可用的預設樣式。 快顯清單為空。 若要為作者提供樣式，請執行下列動作：
 
@@ -262,10 +222,11 @@ ht-degree: 1%
 * 指定樣式表的位置。
 * 指定可從「樣式」下拉清單中選取的個別樣式。
 
-對於以後的（重新）配置，例如要添加更多樣式，請僅按照說明參考新樣式表並指定其他樣式。
+對於以後的配置，例如要添加更多樣式，請僅按照說明參考新樣式表並指定其他樣式。
 
 >[!NOTE]
-也可為[表或表單元格](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)定義樣式。 這些設定需要個別的程式。
+>
+>您可以定義[表或表單元格](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)的樣式。 這些設定需要個別的程式。
 
 ### 啟用樣式下拉式選取器清單 {#styleselectorlist}
 
@@ -281,7 +242,8 @@ ht-degree: 1%
 1. 儲存所有變更。
 
 >[!NOTE]
-啟用樣式外掛程式後，樣式下拉式清單會顯示在編輯對話方塊中。 但清單為空，因為未設定樣式。
+>
+>啟用樣式外掛程式後，樣式下拉式清單會顯示在編輯對話方塊中。 但清單為空，因為未設定樣式。
 
 ### 指定樣式表位置 {#locationofstylesheet}
 
@@ -295,17 +257,22 @@ ht-degree: 1%
    * **值** 您要包括的每個樣式表的路徑和檔案名。使用存放庫路徑。
 
    >[!NOTE]
-   您隨後可以將參照添加到其他樣式表。
+   >
+   >您隨後可以將參照添加到其他樣式表。
 
 1. 儲存所有變更。
 
 >[!NOTE]
-在對話方塊（傳統UI）中使用RTE時，您可能想要指定針對RTF編輯而最佳化的樣式表。 由於技術限制，CSS內容在編輯器中會遺失，因此您可能想要模擬此內容以改善WYSIWYG體驗。
-RTF編輯器使用ID為`CQrte`的容器DOM元素，可用來提供不同樣式以供檢視和編輯：
-`#CQ td {`
-` // defines the style for viewing }`
-`#CQrte td {`
-` // defines the style for editing }`
+>
+>在對話方塊（傳統UI）中使用RTE時，您可能想要指定針對RTF編輯而最佳化的樣式表。 由於技術限制，CSS內容在編輯器中會遺失，因此您可能想要模擬此內容以改善WYSIWYG體驗。
+>
+>RTF編輯器使用ID為`CQrte`的容器DOM元素，可用來提供不同樣式以供檢視和編輯：
+>
+>`#CQ td {`
+>` // defines the style for viewing }`
+>
+>`#CQrte td {`
+>` // defines the style for editing }`
 
 ### 指定快顯清單中可用的樣式 {#stylesindropdown}
 
@@ -341,10 +308,12 @@ RTF編輯器使用ID為`CQrte`的容器DOM元素，可用來提供不同樣式�
 在RTE中創作的任何文本都放置在塊標籤中，預設值為`<p>`。 啟用`paraformat`外掛程式後，可使用下拉式選取清單，指定可指派給段落的其他區塊標籤。 段落格式通過分配正確的塊標籤來確定段落類型。 作者可使用「格式」選取器來選取及指派。 範例區塊標籤除其他外包括標準段落&lt;p>和標題&lt;h1>、&lt;h2>等。
 
 >[!CAUTION]
-此外掛程式不適用於結構複雜的內容，例如清單或表格。
+>
+>此外掛程式不適用於結構複雜的內容，例如清單或表格。
 
 >[!NOTE]
-如果無法將塊標籤（例如&lt;hr>標籤）分配給段落，則對於參數格式插件來說，它不是有效的使用案例。
+>
+>如果無法將塊標籤（例如&lt;hr>標籤）分配給段落，則對於參數格式插件來說，它不是有效的使用案例。
 
 首次啟用「段落格式」插件時，沒有預設的段落格式可用。 快顯清單為空。 要向作者提供段落格式，請執行以下操作：
 
@@ -457,9 +426,9 @@ RTF編輯器使用ID為`CQrte`的容器DOM元素，可用來提供不同樣式�
 
 屬性儲存後，代表的字元會顯示在CRXDE中。 請參閱下方的一半範例。 重複上述步驟，讓作者可使用更多特殊字元。
 
-![在CRXDE中，新增要在RTE工具列中使用的單一字元](assets/chlimage_1-412.png)
+![在CRXDE中，添加要在RTE工具欄中可用的單個字](assets/chlimage_1-412.png "元在CRXDE中，添加要在RTE工具欄中可用的單個字元")
 
-在CRXDE中，新增要在RTE工具列中使用的單一字元
+
 
 ### 定義字元範圍 {#definerangechar}
 
@@ -578,7 +547,7 @@ RTF編輯器使用ID為`CQrte`的容器DOM元素，可用來提供不同樣式�
 啟動拼字檢查外掛程式時，RTE會針對每種適當語言使用字典。 然後根據網站的語言來選取這些檔案，方法是提取子樹的語言屬性或從URL中提取語言；例如， `/en/`分支被檢查為英文，`/de/`分支被檢查為德文。
 
 >[!NOTE]
-如果針對未安裝的語言嘗試了檢查，則會看到消息`Spell checking failed`。 標準字典位於`/libs/cq/spellchecker/dictionaries`，以及相應的自述檔案。 請勿修改檔案。
+如果嘗試檢查未安裝的語言，則會看到消息`Spell checking failed`。 標準字典位於`/libs/cq/spellchecker/dictionaries`，以及相應的自述檔案。 請勿修改檔案。
 
 標準AEM安裝包括美式英語(`en_us`)和英式英語(`en_gb`)的字典。 若要新增更多字典，請遵循下列步驟。
 
@@ -738,7 +707,7 @@ RTE可讓作者還原或重做最後幾次編輯。 依預設，歷史記錄中�
 
          * **名稱** `targetInternal`
          * **類型** `String`
-         * **** 評估內部連結的目標(僅在「模式」為時使 `auto`用)
+         * **** 評估內部連結的目標(僅在模式為時使 `auto`用)
       * 外部連結的目標：
 
          * **名稱** `targetExternal`
