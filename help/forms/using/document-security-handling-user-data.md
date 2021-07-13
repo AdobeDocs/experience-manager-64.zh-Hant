@@ -7,22 +7,22 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
-role: Administrator
+role: Admin
 exl-id: eeffd886-8955-46eb-aa6d-dd4da5e8570c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
 
 ---
 
-# 檔案安全性 |處理用戶資料{#document-security-handling-user-data}
+# 檔案安全性 |處理用戶資料 {#document-security-handling-user-data}
 
 AEM Forms檔案安全性可讓您建立、儲存預先定義的安全性設定，並將其套用至您的檔案。 它確保只有授權用戶才能使用文檔。 您可以使用策略保護文檔。 策略是資訊的集合，包括安全設定和授權用戶清單。 您可以將原則套用至一或多個檔案，並授權新增至AEM Forms JEE使用者管理的使用者。
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
-## 用戶資料和資料儲存{#user-data-and-data-stores}
+## 使用者資料和資料儲存 {#user-data-and-data-stores}
 
 文檔安全儲存與受保護文檔相關的策略和資料，包括資料庫中的用戶資料，如My Sql 、Oracle、MS SQL Server和IBM DB2。 此外，在用戶管理中儲存的策略中授權用戶的資料。 如需儲存在使用者管理中的資料相關資訊，請參閱[Forms使用者管理：處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
 
@@ -81,7 +81,7 @@ AEM Forms檔案安全性可讓您建立、儲存預先定義的安全性設定�
  </tbody> 
 </table>
 
-## 訪問和刪除用戶資料{#access-and-delete-user-data}
+## 存取和刪除使用者資料 {#access-and-delete-user-data}
 
 您可以訪問和導出資料庫中用戶的文檔安全資料，如果需要，可以永久刪除該資料。
 
@@ -95,7 +95,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 知道主體ID後，即可匯出或刪除使用者資料。
 
-### 導出用戶資料{#export-user-data}
+### 匯出使用者資料 {#export-user-data}
 
 運行以下資料庫命令，從資料庫表導出主ID的用戶資料。 在`select`命令中，將`<principal_id>`替換為要導出其資料的用戶的主ID。
 
@@ -131,7 +131,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 要獲取系統中某個用戶的完整資料，必須從用戶管理資料庫訪問和導出資料。 如需詳細資訊，請參閱[Forms使用者管理：處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
 
-### 刪除用戶資料{#delete-user-data}
+### 刪除使用者資料 {#delete-user-data}
 
 執行以下操作以從資料庫表中刪除主體ID的文檔安全資料。
 
