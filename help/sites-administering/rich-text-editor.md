@@ -3,14 +3,14 @@ title: 設定RTF編輯器
 description: 了解如何設定AEM RTF編輯器。
 contentOwner: AG
 exl-id: 2d5e9ada-1567-43dc-ab19-6891e20e1d0b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 160f403d2ec9bfbede75fac2c4315314f98ab27e
 workflow-type: tm+mt
 source-wordcount: '2661'
 ht-degree: 0%
 
 ---
 
-# 配置RTF編輯器{#configure-the-rich-text-editor}
+# 設定RTF編輯器 {#configure-the-rich-text-editor}
 
 RTF編輯器(RTE)為作者提供多種編輯文字內容的功能。 WYSIWYG文字編輯體驗提供圖示、選取方塊、工具列和功能表。
 
@@ -54,7 +54,7 @@ RTF編輯器(RTE)為作者提供多種編輯文字內容的功能。 WYSIWYG文�
 >[!NOTE]
 在觸控式UI的內嵌編輯模式中，無法使用來源編輯功能。 您無法以全螢幕模式拖曳影像。 所有其他功能都可在所有模式中運作。
 
-### 內嵌編輯{#inline-editing}
+### 內嵌編輯 {#inline-editing}
 
 開啟時（按兩下/按一下速度緩慢），您可以在頁面內編輯內容。 提供包含基本選項的緊湊型工具列。
 
@@ -64,7 +64,7 @@ RTF編輯器(RTE)為作者提供多種編輯文字內容的功能。 WYSIWYG文�
 
 在傳統UI中，按兩下元件時速度緩慢，可進行內嵌編輯，而橘色外框會醒目顯示內容。 如果「內容尋找器」已開啟，則視窗頂端會顯示包含可用RTE格式選項的工具列。 如果「內容尋找器」未開啟，則不會顯示格式選項，您只能編輯基本文字。
 
-### 全螢幕編輯{#full-screen-editing}
+### 全螢幕編輯 {#full-screen-editing}
 
 AEM元件可以以全螢幕檢視開啟，隱藏頁面內容並佔據可用螢幕。 請考慮以全螢幕編輯詳細的內嵌編輯版本，因為它提供最多的編輯選項。 使用內嵌編輯模式時，可從緊湊工具列按一下![rte_fullscreen](assets/rte_fullscreen.png)以開啟。
 
@@ -74,7 +74,7 @@ AEM元件可以以全螢幕檢視開啟，隱藏頁面內容並佔據可用螢�
 
 *圖：在觸控式UI中以全螢幕模式編輯時，詳細的RTE工具列*
 
-### 對話框編輯{#dialog-editing}
+### 對話方塊編輯 {#dialog-editing}
 
 在傳統UI中按兩下元件時，會開啟一個對話方塊以編輯內容。 對話框將在現有頁面的頂部開啟。 在某些特定情況下，對話方塊會以快顯視窗的形式開啟。 例如，當文本元件是多列頁面佈局中列的一部分時，對話框的可用區域較小。
 
@@ -107,26 +107,26 @@ RTE的基本功能會由適當外掛程式特定節點上的`features`屬性值�
 
 | 外掛程式ID | 功能 | 說明 |
 |--- |--- |--- |
-| 編輯 | 剪下複製貼上 — 預設貼上 — plaintext paste-wordhtml | [剪下、複製和三種貼上模式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
+| 編輯 | 剪下複製貼上 — 預設貼上 — plaintext paste-wordhtml | [剪下、複製和三種貼上模式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#text-styles)。 |
 | [芬德雷普萊斯](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | 查找替換 | 查找和替換。 |
-| [格式](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | 粗體斜體下划線 | [基本文字格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
+| [格式](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | 粗體斜體下划線 | [基本文字格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#text-styles)。 |
 | [影像](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | 影像 | 基本影像支援（從內容或內容尋找器拖曳）。 根據瀏覽器，支援對作者有不同的行為 |
-| [鍵](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 若要定義此值，請參閱[標籤大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)。 |
+| [鍵](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | 若要定義此值，請參閱[標籤大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tab-size)。 |
 | [證明](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | justifleft justifycenter justifyright | 段落對齊。 |
-| [連結](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | 修改連結取消連結錨點 | [超連結和錨點](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles)。 |
-| [清單](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 已訂購的縮進 | 此外掛程式可同時控制[縮排和清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin);包括巢狀清單。 |
-| [miscools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 其他工具允許作者輸入[特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar)或編輯HTML源。 此外，如果要定義自己的清單，也可以新增整個[範圍的特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar)。 |
-| Paraformat | paraformat | 預設段落格式為段落、標題1、標題2和標題3（`<p>`、`<h1>`、`<h2>`和`<h3>`）。 您可以[添加更多段落格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats)或擴展清單。 |
-| 拼字檢查 | 核取文字 | [語言感知的拼字檢查程式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)。 |
-| 樣式 | 樣式 | 支援使用CSS類別的樣式。 [如果您想](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) 要新增（或擴充）您自己的樣式範圍以搭配文字使用，請新增文字樣式。 |
+| [連結](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | 修改連結取消連結錨點 | [超連結和錨點](/help/sites-administering/configure-rich-text-editor-plug-ins.md#link-styles)。 |
+| [清單](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | 已訂購的縮進 | 此外掛程式可同時控制[縮排和清單](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indent-margin);包括巢狀清單。 |
+| [miscools](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars sourceedit | 其他工具允許作者輸入[特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#special-char)或編輯HTML源。 此外，如果要定義自己的清單，也可以新增整個[範圍的特殊字元](/help/sites-administering/configure-rich-text-editor-plug-ins.md#define-range-char)。 |
+| Paraformat | paraformat | 預設段落格式為段落、標題1、標題2和標題3（`<p>`、`<h1>`、`<h2>`和`<h3>`）。 您可以[添加更多段落格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#para-formats)或擴展清單。 |
+| 拼字檢查 | 核取文字 | [語言感知的拼字檢查程式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#add-dict)。 |
+| 樣式 | 樣式 | 支援使用CSS類別的樣式。 [如果您想](/help/sites-administering/configure-rich-text-editor-plug-ins.md#text-styles) 要新增（或擴充）您自己的樣式範圍以搭配文字使用，請新增文字樣式。 |
 | 上標 | 下標上標 | 基本格式的擴充功能，新增子指令碼和超指令碼。 |
-| 表格 | 表remotetable insertrow removerow insertcolumn removecolumn cellprops mergells sliptcellselectrow選擇列 | 如果要為整個表或單個單元格添加自己的樣式，請參閱[配置表樣式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)。 |
-| 復原 | 撤消重做 | [還原和重做](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory)操作的歷史記錄大小。 |
+| 表格 | 表remotetable insertrow removerow insertcolumn removecolumn cellprops mergells sliptcellselectrow選擇列 | 如果要為整個表或單個單元格添加自己的樣式，請參閱[配置表樣式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#table-styles)。 |
+| 復原 | 撤消重做 | [還原和重做](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undo-history)操作的歷史記錄大小。 |
 
 >[!NOTE]
 對話方塊模式中不支援全螢幕外掛程式。 使用`dialogFullScreen`設定將工具列配置為全螢幕模式。
 
-## 了解配置路徑和位置{#understand-the-configuration-paths-and-locations}
+## 了解設定路徑和位置 {#understand-the-configuration-paths-and-locations}
 
 當您[啟用RTE外掛程式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#activateplugin)時，您為作者提供的[RTE編輯（和UI）](#editingmodes)模式會決定設定詳細資訊的位置：
 
@@ -159,7 +159,7 @@ RTE的基本功能會由適當外掛程式特定節點上的`features`屬性值�
 
 在觸控式對話方塊中使用RTE時，必須將屬性`useFixedInlineToolbar`設為true，才能避免問題。
 
-## 就地自定義編輯{#customizing-in-place-editing}
+## 就地自訂編輯 {#customizing-in-place-editing}
 
 您可以設定下列屬性，以定義文字編輯器開始的HTML選取器：
 
@@ -168,7 +168,7 @@ RTE的基本功能會由適當外掛程式特定節點上的`features`屬性值�
 
 對話框模式的對應屬性為`name`。
 
-## 啟用外掛程式{#enable-rte-functionalities-by-activating-plug-ins}以啟用RTE功能
+## 啟用外掛程式以啟用RTE功能 {#enable-rte-functionalities-by-activating-plug-ins}
 
 可透過一系列外掛程式使用RTE功能，每個外掛程式都具有features屬性。 您可以配置features屬性，以啟用或停用每個外掛程式的各種功能。
 
@@ -283,7 +283,7 @@ AEM 6.4 Service Pack 3之後，RTE中從使用者介面設定到內容原則下�
 </text>
 ```
 
-## 切換至CoralUI 2 RTF編輯器{#switch-to-coralui-rich-text-editor}
+## 切換至CoralUI 2 RTF編輯器 {#switch-to-coralui-rich-text-editor}
 
 在頁面上，您可以包含CoralUI 2 RTE clientlib或CoralUI 3 RTE clientlib。 依預設，RTF編輯器包含CoralUI 3 RTE clientlib。 若要切換至CoralUI 2 RTE，請執行下列步驟。
 
@@ -323,7 +323,7 @@ CoralUI 2 RTE使用handlebars範本進行外掛程式對話。 因此，CoralUI 
 
 上述選項可用來擴充和自訂您自己的RTE。 例如，若要在建立連結時列出頁面中可用的錨點，您可以提供您自己的`LinkPlugin`實作。
 
-## 已知限制{#known-limitations}
+## 已知限制 {#known-limitations}
 
 AEM RTE功能有下列限制：
 
