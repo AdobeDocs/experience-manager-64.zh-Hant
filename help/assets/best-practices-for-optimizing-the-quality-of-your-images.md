@@ -8,9 +8,9 @@ content-type: reference
 exl-id: 2e90bea1-eaac-457b-8588-b18d3a6e8d91
 feature: 資產管理，轉譯
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
 workflow-type: tm+mt
-source-wordcount: '1466'
+source-wordcount: '1464'
 ht-degree: 6%
 
 ---
@@ -45,7 +45,7 @@ AEM包含超過100個dynamic media影像傳送命令，用於調整和最佳化�
 
 影像銳利化是控制網站上影像的最複雜環節，也是常有錯誤發生的地方。 請參考[AdobeDynamic Media Classic影像品質與銳利化最佳實務](/help/assets/assets/sharpening_images.pdf)指南，進一步了解銳利化和銳利化遮色片在AEM中的運作方式。此指南同樣適用於AEM。
 
-另請參閱[使用非銳利化遮色片銳利化影像](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html)。
+另請參閱[使用非銳利化遮色片銳利化影像](https://helpx.adobe.com/photoshop/using/adjusting-image-sharpness-blur.html)。
 
 透過AEM，您可以在擷取、傳送或兩者時銳利化影像。 但是，在大多數情況下，您只應使用一種或另一種方法來銳化影像，但不應同時使用兩種方法。 傳送時在URL上銳利化影像，通常能提供最佳結果。
 
