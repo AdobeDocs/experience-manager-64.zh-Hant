@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 資產處理
 role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 0%
@@ -108,7 +108,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->[`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html)下方提供Proxy API的參考檔案。
+>[`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/commons/proxy/package-summary.html)下方提供Proxy API的參考檔案。
 
 Proxy和Proxy工作程式設定皆可透過雲端服務設定取得，可從AEM Assets **Tools**&#x200B;主控台或`/etc/cloudservices/proxy`下存取。 每個代理工作器應在`/etc/cloudservices/proxy`下添加一個節點，以了解工作器特定配置詳細資訊（例如`/etc/cloudservices/proxy/workername`）。
 
