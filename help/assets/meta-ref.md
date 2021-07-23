@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 中繼資料
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 簡單的都柏林核心元資料元素集(DCMES)包含下表中列出的15個元資料元素。 每個都柏林核心元素都是選用元素，且可重複。 您可以像新增或刪除媒體類型特定中繼資料一樣，新增或刪除都柏林核心中繼資料資訊。
 
-除了DCMES之外，還有由Dublin Core Initiative建立的其他元資料元素。 如需詳細資訊，請參閱[都柏林核心計畫](http://dublincore.org/) 。
+除了DCMES之外，還有由Dublin Core Initiative建立的其他元資料元素。 如需詳細資訊，請參閱[都柏林核心計畫](https://dublincore.org/) 。
 
 | 屬性 | 說明 |
 |---|---|
