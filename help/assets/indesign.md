@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 發佈
 role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 3%
@@ -64,7 +64,7 @@ InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立�
    >
    >IDML是以XML為基礎的格式，可在InDesign檔案中呈現&#x200B;*everything*。 會使用[Zip](https://www.techterms.com/definition/zip)壓縮，以壓縮套件形式儲存。
    >
-   >有關詳細資訊，請參閱[Adobe InDesign交換格式INX和IDML](http://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8)。
+   >有關詳細資訊，請參閱[Adobe InDesign交換格式INX和IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8)。
 
    >[!CAUTION]
    >
