@@ -5,9 +5,9 @@ contentOwner: AG
 feature: 工作流程，轉譯
 role: User
 exl-id: 7694c68d-0a17-4052-8fbe-9bf45b229e81
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: e7fdddadff41f8b03dc466da531f850d45bcee9d
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2227'
 ht-degree: 3%
 
 ---
@@ -442,7 +442,7 @@ package my.own.stuff;/&amp;ast;&amp;ast&amp;ast;@scr.component inherit=&quot;tru
 
 Experience Manager可讓您在工作流程中執行任何命令列工具，以轉換資產（例如ImageMagick）並將新轉譯新增至資產。 在托管Experience Manager伺服器的磁碟上安裝命令行工具，並向工作流添加和配置進程步驟。 叫做`CommandLineProcess`的叫用過程會根據特定MIME類型進行篩選，並根據新格式副本建立多個縮圖。
 
-下列轉換可以自動執行，並儲存在Experience Manager資產中：
+下列轉換可以自動執行並儲存在[!DNL Experience Manager Assets]中：
 
 * 使用[ImageMagick](https://www.imagemagick.org/script/index.php)和[Ghostscript](https://www.ghostscript.com/)的EPS和AI轉換
 * 使用[FFmpeg](https://ffmpeg.org/)進行FLV視訊轉碼
