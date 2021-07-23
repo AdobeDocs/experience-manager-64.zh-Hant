@@ -5,10 +5,10 @@ contentOwner: AG
 feature: 轉換
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1935'
-ht-degree: 22%
+source-wordcount: '1942'
+ht-degree: 21%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 22%
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 
-1. 從&#x200B;**[!UICONTROL 目標語言]**&#x200B;清單中，選擇要建立資料夾結構的語言。
+1. 從&#x200B;**[!UICONTROL 目標語言]**&#x200B;清單中，選擇要為其建立資料夾結構的語言。
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -313,4 +313,4 @@ ht-degree: 22%
 
 1. 導覽至「資產」主控台，並開啟每個翻譯資產的「屬性」頁面，以檢視翻譯的中繼資料。
 
-如需有效轉譯資產中繼資料的秘訣，請參閱有效轉譯中繼資料的[5步驟](https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)。
+如需有效轉譯資產中繼資料的秘訣，請參閱此封存頁面，內容關於[5步驟，以有效轉譯中繼資料](https://web.archive.org/web/20181217033517/https://blogs.adobe.com/experiencedelivers/experience-management/translate_aemassets_metadata/)。
