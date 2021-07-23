@@ -5,14 +5,14 @@ contentOwner: AG
 feature: 標籤，中繼資料
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
 
-# 管理數位資產的中繼資料{#managing-metadata-for-digital-assets}
+# 管理數位資產的中繼資料 {#managing-metadata-for-digital-assets}
 
 [!DNL Adobe Experience Manager Assets] 保留每個資產的中繼資料。它可讓資產分類和組織更輕鬆，並協助尋找特定資產的人。 能夠從上傳至[!DNL Experience Manager Assets]的檔案中擷取中繼資料，中繼資料管理與創意工作流程整合。 您可以使用資產保留和管理中繼資料，並根據資產的中繼資料自動組織和處理資產。
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 * [如何編輯或新增中繼資料](meta-edit.md)。
 * [中繼資料結構參考](meta-ref.md)。
 
-## 為什麼需要元資料{#why-we-need-metadata}
+## 為什麼我們需要元資料 {#why-we-need-metadata}
 
 中繼資料是指資料的相關資料。 在這方面，資料是指您的數位資產，例如影像。 中繼資料對於有效管理資產至關重要。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 基於這些原因，[!DNL Assets]提供您建立、管理和交換數位資產中繼資料的正確方式。
 
-## 元資料的類型{#types-of-metadata}
+## 中繼資料的類型 {#types-of-metadata}
 
 兩種基本的中繼資料類型是技術中繼資料和描述性中繼資料。
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 手動建立描述性中繼資料資訊的成本很高。 因此，制定標準是為了方便跨軟體系統和組織交換元資料。 [!DNL Experience Manager Assets] 支援元資料管理的所有相關標準。
 
-## 編碼標準{#encoding-standards}
+## 編碼標準 {#encoding-standards}
 
 在檔案中內嵌中繼資料有多種方式。 支援一系列編碼標準：
 
@@ -100,11 +100,11 @@ Exif的一個主要限制是一些常見的影像檔案格式（如BMP、GIF或P
 
 Exif定義的中繼資料欄位通常屬於技術性質，在描述性中繼資料管理中的使用有限。 因此，[!DNL Experience Manager Assets]提供Exif屬性到[公共元資料結構](metadata-schemas.md)和[XMP](xmp-writeback.md)的映射。
 
-### 其他元資料{#other-metadata}
+### 其他中繼資料 {#other-metadata}
 
 可從檔案嵌入的其他元資料包括[!DNL Microsoft Word]、[!DNL PowerPoint]、[!DNL Excel]等。
 
-## 元資料架構{#metadata-schemata}
+## 中繼資料結構 {#metadata-schemata}
 
 中繼資料結構是可用於各種應用程式的一組預先定義的中繼資料屬性定義。 屬性一律與資產相關聯，這表示屬性是資源的「關於」。
 
@@ -112,7 +112,7 @@ Exif定義的中繼資料欄位通常屬於技術性質，在描述性中繼資�
 
 支援的中繼資料結構列於下方。
 
-### 標準元資料{#standard-metadata}
+### 標準中繼資料 {#standard-metadata}
 
 * DC - [!DNL Dublin Core]是一組重要且廣泛使用的元資料。
 * DICOM — 醫學中的數字影像和通信。
@@ -121,7 +121,7 @@ Exif定義的中繼資料欄位通常屬於技術性質，在描述性中繼資�
 * XMP - [!DNL Extensible Metadata Platform]。
 * `xmpBJ`  — 基本工作票證。
 
-### 應用程式特定元資料{#application-specific-metadata}
+### 應用程式專屬中繼資料 {#application-specific-metadata}
 
 應用程式專用中繼資料包含技術和描述性中繼資料。 如果您使用此類中繼資料，其他應用程式可能無法使用中繼資料。 例如，不同的影像呈現應用程式可能無法訪問[!DNL Adobe Photoshop]元資料。 您可以建立將應用程式特定屬性變更為標準屬性的工作流程步驟。
 
@@ -137,7 +137,7 @@ Exif定義的中繼資料欄位通常屬於技術性質，在描述性中繼資�
 * PDF和PDF/X。
 * Photoshop和psAux - [!DNL Adobe Photoshop]。
 
-### Digital Rights Management元資料{#digital-rights-management-metadata}
+### Digital Rights Management中繼資料 {#digital-rights-management-metadata}
 
 * CC - [!DNL Creative Commons].
 * [!DNL XMPRights]。
@@ -147,26 +147,26 @@ Exif定義的中繼資料欄位通常屬於技術性質，在描述性中繼資�
 * PUR — 稜鏡使用權。
 * `xmpPlus` - PLUS與XMP整合。
 
-### 攝影專用中繼資料{#photography-specific-metadata}
+### 攝影專用中繼資料 {#photography-specific-metadata}
 
 * Exif — 相機的技術資訊，包括GPS位置。
 * CRS - [!DNL Camera Raw]架構。
 * `iptc4xmpCore` 和 `iptc4xmpExt`.
 * TIFF — 影像中繼資料（不僅適用於TIFF影像）。
 
-### 打印特定元資料{#print-specific-metadata}
+### 特定於打印的元資料 {#print-specific-metadata}
 
 * PDF和PDF/X - Adobe PDF和協力廠商應用程式。
-* PRISM - [發佈行業標準元資料的要求](https://www.prismstandard.org)。
+* PRISM - [發佈行業標準元資料的要求](http://www.prismstandard.org/specifications/)。
 * XMP - [!DNL Extensible Metadata Platform]。
 * `xmpPG`  — 分頁文字的XMP中繼資料。
 
-### 多媒體特定元資料{#multimedia-specific-metadata}
+### 多媒體特定中繼資料 {#multimedia-specific-metadata}
 
 * `xmpDM` - [!DNL Dynamic Media].
 * `xmpMM`  — 媒體管理。
 
-## 中繼資料導向的工作流程{#metadata-driven-workflows}
+## 中繼資料導向的工作流程 {#metadata-driven-workflows}
 
 建立中繼資料導向的工作流程可協助您自動執行某些程式，進而提高效率。 在元資料驅動的工作流中，工作流管理系統讀取該工作流，並因此執行一些預定義的操作。 例如，您可以使用中繼資料導向工作流程的一些方式：
 
