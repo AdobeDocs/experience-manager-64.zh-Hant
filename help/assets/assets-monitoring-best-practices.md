@@ -5,7 +5,7 @@ contentOwner: AG
 feature: 資產管理
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 4048c4c76a892e3bb32dbbeef140b5dc9ebffad3
 workflow-type: tm+mt
 source-wordcount: '1766'
 ht-degree: 0%
@@ -37,7 +37,7 @@ ht-degree: 0%
 * [排名](https://man7.org/linux/man-pages/man1/top.1.html):Top是開啟儀表板的Linux命令，該儀表板顯示使用情況統計資訊，包括CPU、記憶體和IO使用情況。它提供執行個體上所發生情況的概觀。
 * [頂端](https://hisham.hm/htop/):Htop是互動式程式檢視器。除了Top提供的功能外，它還提供詳細的CPU和記憶體使用。 Htop可以在大多數使用`yum install htop`或`apt-get install htop`的Linux系統上安裝。
 
-* [Iotop](http://guichaz.free.fr/iotop/):Iotop是磁碟IO使用情況的詳細儀表板。它顯示的條形和儀表，用於描述使用磁碟IO的過程及其使用量。 使用`yum install iotop`或`apt-get install iotop`,Iotop可安裝在大多數Linux系統上。
+* [Iotop](https://guichaz.free.fr/iotop/):Iotop是磁碟IO使用情況的詳細儀表板。它顯示的條形和儀表，用於描述使用磁碟IO的過程及其使用量。 使用`yum install iotop`或`apt-get install iotop`,Iotop可安裝在大多數Linux系統上。
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/):Iftop顯示有關乙太網/網路使用的詳細資訊。Iftop會針對使用乙太網的實體顯示每個通訊通道的統計資料，以及其使用的頻寬量。 Iftop可以安裝在使用`yum install iftop`或`apt-get install iftop`的大多數Linux系統上。
 
