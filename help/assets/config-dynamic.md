@@ -10,7 +10,7 @@ discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 exl-id: 1e122f97-ac37-44f5-a1cd-bf53ffda6f5b
 feature: 配置，混合模式
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 9bd173e99c2bbedc77afb11b4c1eac423c62ef30
 workflow-type: tm+mt
 source-wordcount: '7796'
 ht-degree: 1%
@@ -801,7 +801,7 @@ AEM 6.4及更新版本會在`/conf/global/settings/dam/dm/presets/analytics/jcr:
 >[!NOTE]
 Dynamic Media在啟用](#enabling-dynamic-media)後即可運作[。 不過，您可以選擇配置Dynamic Media Image Server以符合特定規格或需求，以微調安裝。
 
-**先決條件**: __ 配置Dynamic Media Image Server之前，請確保Windows的VM包括Microsoft Visual C++庫的安裝。必須有這些程式庫才能執行Dynamic Media Image Server。 您可以在[此處](https://www.microsoft.com/en-us/download/details.aspx?id=14632)下載Microsoft Visual C++ 2010可再分發包(x64)。
+**先決條件**: __ 配置Dynamic Media Image Server之前，請確保Windows的VM包括Microsoft Visual C++庫的安裝。必須有這些程式庫才能執行Dynamic Media Image Server。 您可以在[此處](https://www.microsoft.com/en-us/download/details.aspx?id=26999)下載Microsoft Visual C++ 2010可再分發包(x64)。
 
 **若要設定Dynamic Media影像伺服器設定**:
 
