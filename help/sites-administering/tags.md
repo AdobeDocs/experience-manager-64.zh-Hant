@@ -10,7 +10,7 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 * 啟用資源（請參閱[標籤啟用資源](/help/communities/functions.md#catalog-function)）
 
-## 標籤功能{#tag-features}
+## 標籤功能 {#tag-features}
 
 AEM中標籤的部分功能包括：
 
@@ -58,7 +58,7 @@ AEM中標籤的部分功能包括：
    * 請務必使用標籤來封裝標籤
    * 確保[標籤權限](#setting-tag-permissions)啟用讀取存取
 
-## 標籤控制台{#tagging-console}
+## 標籤主控台 {#tagging-console}
 
 「標籤」控制台用於建立和管理標籤及其分類。 一個目標是避免有許多類似標籤與基本相同的項目相關：例如頁面和頁面，鞋類和鞋類。
 
@@ -76,7 +76,7 @@ AEM中標籤的部分功能包括：
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsole.png)
 
-### 建立命名空間{#creating-a-namespace}
+### 建立命名空間 {#creating-a-namespace}
 
 要建立新的命名空間，請選擇&#x200B;**`Create Namespace`**&#x200B;表徵圖。
 
@@ -97,7 +97,7 @@ AEM中標籤的部分功能包括：
 
 * 選擇&#x200B;**建立**
 
-### 標籤{#operations-on-tags}上的操作
+### 標籤操作 {#operations-on-tags}
 
 選取命名空間或其他標籤可執行下列操作：
 
@@ -117,7 +117,7 @@ AEM中標籤的部分功能包括：
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
-### 選擇命名空間標籤{#selecting-a-namespace-tag}
+### 選取命名空間標籤 {#selecting-a-namespace-tag}
 
 首次選取時，如果命名空間不包含任何標籤，則屬性會顯示在右側，否則會顯示子標籤。 選取的每個標籤都會顯示其所包含的標籤，或如果沒有子標籤，則顯示其屬性。
 
@@ -125,7 +125,7 @@ AEM中標籤的部分功能包括：
 
 ![chlimage_1-186](assets/chlimage_1-186.png) ![chlimage_1-187](assets/chlimage_1-187.png)
 
-### 查看標籤屬性{#viewing-tag-properties}
+### 檢視標籤屬性 {#viewing-tag-properties}
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -133,7 +133,7 @@ AEM中標籤的部分功能包括：
 
 ![chlimage_1-109](assets/chlimage_1-189.png)
 
-### 顯示標籤引用{#showing-tag-references}
+### 顯示標籤參考 {#showing-tag-references}
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
@@ -147,9 +147,9 @@ AEM中標籤的部分功能包括：
 
 將滑鼠游標暫留在參照上時，參照的路徑會顯示為工具提示。
 
-![chlimage_1-112](assets/chlimage_1-192.png)
+![chlimage_1-192](assets/chlimage_1-192.png)
 
-### 建立標籤{#creating-tags}
+### 建立標籤 {#creating-tags}
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -170,7 +170,7 @@ AEM中標籤的部分功能包括：
 
 * 選擇&#x200B;**建立**
 
-### 編輯標籤{#editing-tags}
+### 編輯標籤 {#editing-tags}
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
@@ -182,7 +182,7 @@ AEM中標籤的部分功能包括：
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-### 移動標籤{#moving-tags}
+### 移動標籤 {#moving-tags}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -205,10 +205,9 @@ AEM中標籤的部分功能包括：
 名為初始顯示當前 
 `name`標籤的。可輸入新的`name`。
 
-* 
 * 選擇&#x200B;**保存**
 
-### 正在合併標籤{#merging-tags}
+### 合併標籤 {#merging-tags}
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
@@ -231,7 +230,7 @@ AEM中標籤的部分功能包括：
 >
 >移動或合併參考的標籤時，標籤不會實際刪除，因此可以維護參考。
 
-### 發佈標籤{#publishing-tags}
+### 發佈標籤 {#publishing-tags}
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -239,19 +238,19 @@ AEM中標籤的部分功能包括：
 
 若要發佈分類（命名空間和子標籤），最佳作法是建立命名空間的[套件](/help/sites-administering/package-manager.md)（請參閱[分類根節點](/help/sites-developing/framework.md#taxonomy-root-node)）。 建立套件之前，請務必將[權限](#setting-tag-permissions)套用至命名空間。
 
-### 取消發佈標籤{#unpublishing-tags}
+### 取消發佈標籤 {#unpublishing-tags}
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
 選取命名空間或其他標籤時，選取**`Unpublish`**圖示會停用製作環境中的標籤，並將其從發佈環境中移除。 與`Delete`操作類似，如果選取的標籤是容器標籤，則其所有子標籤將在製作環境中停用，並從發佈環境中移除。
 
-### 刪除標籤{#deleting-tags}
+### 刪除標籤 {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
 選取命名空間或其他標籤時，選取**`Delete`**圖示會從製作環境中永久移除標籤。 如果標籤已發佈，也會從發佈環境中移除。 如果選取的標籤是容器標籤，其所有子標籤也將一併移除。
 
-## 設定標籤權限{#setting-tag-permissions}
+## 設定標籤權限 {#setting-tag-permissions}
 
 標籤權限為[&#39;secure（預設為）&#39;](/help/sites-administering/production-ready.md);發佈環境的最佳實務，需要明確允許標籤有讀取權限。 基本上，在對作者設定權限後，請建立標籤命名空間的套件，並在所有發佈執行個體上安裝套件即可。
 
@@ -282,11 +281,11 @@ AEM中標籤的部分功能包括：
       * 從包管理器中選擇`Replicate`
 
 
-## 管理不同語言的標籤{#managing-tags-in-different-languages}
+## 管理不同語言中的標籤 {#managing-tags-in-different-languages}
 
 標籤的`title`屬性可以翻譯成多種語言。 翻譯後，可以根據用戶語言或頁面語言顯示相應的標籤`title`。
 
-### 以多種語言定義標籤標題{#defining-tag-titles-in-multiple-languages}
+### 定義多種語言的標籤標題 {#defining-tag-titles-in-multiple-languages}
 
 以下說明如何將標籤&#x200B;**Animals**&#x200B;的`title`從英語翻譯成德語和法語。
 
