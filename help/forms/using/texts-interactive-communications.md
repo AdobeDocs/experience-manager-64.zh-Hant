@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 feature: 互動式通訊
 exl-id: a689aead-7b39-4d66-8922-ae8910c5e9ef
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '2251'
 ht-degree: 0%
 
 ---
 
-# 互動式通信中的文本{#texts-in-interactive-communications}
+# 互動式通信中的文本 {#texts-in-interactive-communications}
 
 建立和編輯要用於互動式通信的文本文檔片段 — 文本是用於構建互動式通信的四種文檔片段類型之一。 其他三個是條件、清單和版面片段。
 
@@ -88,8 +88,6 @@ Interactive Communication中的文本文檔片段支援以下類型的動態資�
 
 * 要允許代理在[使用代理UI準備和發送互動式通信](/help/forms/using/prepare-send-interactive-communication.md)時編輯代理UI中的FDM屬性值，請點選該屬性的&#x200B;**`[D]`**&#x200B;鎖定表徵圖，並確保其處於解鎖狀態。 屬性的預設狀態已鎖定，代理無法在代理UI中編輯屬性。
 
-* 
-
 您也可以使用表單資料模型屬性來建構用於顯示或隱藏部分內容的規則。 如需詳細資訊，請參閱[在文字](#rules)中建立規則。
 
 ## 在文字檔案片段中建立和使用變數 {#variables}
@@ -104,7 +102,7 @@ Interactive Communication中的文本文檔片段支援以下類型的動態資�
 
 在建立或編輯文本文檔片段時，可以建立和插入變數。 您建立的變數會顯示在代理UI的「資料」索引標籤中。 代理在[使用代理UI](/help/forms/using/prepare-send-interactive-communication.md)準備和發送互動式通信時指定變數的值。
 
-### 建立變數{#create-variables}
+### 建立變數 {#create-variables}
 
 1. 在左窗格中，點選&#x200B;**[!UICONTROL 變數]**。
 
@@ -146,7 +144,7 @@ Interactive Communication中的文本文檔片段支援以下類型的動態資�
 * 關聯表單資料模型的屬性
 * 您可能在文字中建立的任何變數
 
-### 在文本{#create-rules-in-text}中建立規則
+### 在文字中建立規則 {#create-rules-in-text}
 
 1. 在建立或編輯文字時，選取要使用規則條件化的文字字串、段落或內容。
 
@@ -249,7 +247,7 @@ Interactive Communication中的文本文檔片段支援以下類型的動態資�
 
 文字編輯器內建支援210個特殊字元。 管理員可以透過自訂](/help/forms/using/custom-special-characters.md)來新增對更多/自訂特殊字元的支援。[
 
-## 搜索和替代文字{#search-features}
+## 搜索和替代文字 {#search-features}
 
 處理包含大量文字的文字檔案片段時，您需要搜尋特定的文字字串。 您也可能需要將特定文字字串取代為替代字串。
 
