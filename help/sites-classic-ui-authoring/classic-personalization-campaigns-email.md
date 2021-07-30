@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 exl-id: 5e97f7bd-d668-423d-9f65-7dcc8fb1943a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 3%
@@ -45,7 +45,7 @@ ht-degree: 3%
 >
 >如果您更新電子郵件提供者、進行飛行測試或傳送電子報，如果電子報未先發佈至「發佈」執行個體，或者「發佈」執行個體無法使用，則這些操作會失敗。 請務必發佈電子報，並確認Publish執行個體已開啟並執行。
 
-## 建立新聞稿體驗{#creating-a-newsletter-experience}
+## 建立電子報體驗 {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
@@ -102,7 +102,7 @@ ht-degree: 3%
 
 1. 按一下&#x200B;**OK**&#x200B;以儲存。
 
-## 將內容新增至Newsletters {#adding-content-to-newsletters}
+## 將內容新增至電子報 {#adding-content-to-newsletters}
 
 您可以像在任何AEM元件中一樣，將內容（包括動態內容）新增至電子報。 在Geometrixx中，電子報範本有某些元件可用來新增和修改電子報中的內容。
 
@@ -119,7 +119,7 @@ ht-degree: 3%
 
 1. 若要插入變數，請從清單中選取變數，然後按一下&#x200B;**插入**。 變數會從設定檔填入。
 
-## 個人化電子報{#personalizing-newsletters}
+## 個人化電子報 {#personalizing-newsletters}
 
 您可以在電子報的Text元件中插入預先定義的變數，以個人化電子報Geometrixx。 變數的值繼承自使用者設定檔中的資訊。
 
@@ -141,7 +141,7 @@ ht-degree: 3%
 
    ![mc_newsletter_testvariables](assets/mc_newsletter_testvariables.png)
 
-## 測試不同電子郵件客戶端中的電子報{#testing-newsletters-in-different-e-mail-clients}
+## 在不同的電子郵件客戶端中測試電子報 {#testing-newsletters-in-different-e-mail-clients}
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ ht-degree: 3%
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-## 自訂新聞稿設定{#customizing-newsletter-settings}
+## 自訂電子報設定 {#customizing-newsletter-settings}
 
 雖然只有授權的使用者可以傳送電子報，但您應自訂下列內容：
 
@@ -189,8 +189,6 @@ ht-degree: 3%
 
    ![mcm_newsletter_settings](assets/mcm_newsletter_settings.png)
 
-1. 
-
    1. 輸入&#x200B;**From**&#x200B;電子郵件地址
    1. 如有必要，修改電子郵件的&#x200B;**主旨**。
    1. 從下拉清單中選擇&#x200B;**預設收件者清單**。
@@ -198,7 +196,7 @@ ht-degree: 3%
 
    當您測試或傳送電子報時，收件者會收到包含指定電子郵件地址和主旨的電子郵件。
 
-## 飛行測試通訊{#flight-testing-newsletters}
+## 飛行測試快訊 {#flight-testing-newsletters}
 
 雖然飛行測試並非強制性，但在您發送電子報之前，您可能想要加以測試，以確保它以您想要的方式顯示。
 
@@ -222,7 +220,7 @@ ht-degree: 3%
 
 1. 輸入要發送電子報的測試郵件地址，然後按一下&#x200B;**Send**。 如果要變更設定檔，請在用戶端內容中載入另一個設定檔。 要執行此操作，請按CTRL+ALT+c並選取「載入」並載入設定檔。
 
-## 傳送電子報{#sending-newsletters}
+## 傳送電子報 {#sending-newsletters}
 
 您可以從電子報或清單中傳送電子報。 描述了兩個過程。
 
@@ -236,7 +234,7 @@ ht-degree: 3%
 >
 >如果您更新電子郵件提供者、進行飛行測試或傳送電子報，如果電子報未先發佈至「發佈」執行個體，或者「發佈」執行個體無法使用，則這些操作會失敗。 請務必發佈電子報，並確認Publish執行個體已開啟並執行。
 
-### 從促銷活動{#sending-newsletters-from-a-campaign}傳送電子報
+### 從行銷活動傳送電子報 {#sending-newsletters-from-a-campaign}
 
 若要從行銷活動內傳送電子報：
 
@@ -262,7 +260,7 @@ ht-degree: 3%
    >
    >請確定您是其中一位收件者，以確保收到電子報。
 
-### 從清單{#sending-newsletters-from-a-list}傳送電子報
+### 從清單傳送電子報 {#sending-newsletters-from-a-list}
 
 若要從清單傳送電子報：
 
@@ -288,11 +286,11 @@ ht-degree: 3%
 
    您的電子報會傳送給選取的收件者。
 
-## 訂閱電子報{#subscribing-to-a-newsletter}
+## 訂閱電子報 {#subscribing-to-a-newsletter}
 
 本節說明如何訂閱電子報。
 
-### 訂閱電子報{#subscribing-to-a-newsletter-1}
+### 訂閱電子報 {#subscribing-to-a-newsletter-1}
 
 若要訂閱電子報(以Geometrixx網站為例):
 
