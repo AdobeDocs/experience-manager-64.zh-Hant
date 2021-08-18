@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 7aa28e36-6b31-4447-b800-cab2dc78c93c
 exl-id: ef622ac3-d96d-48bf-bfb2-61516d9deb5c
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '680'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ configMgrii。找到**[!UICONTROL AEM Communities實用程式]**配置
 
 ### 無JSP元件模板 {#no-jsp-component-templates}
 
-[社交元件框架](scf.md)(SCF)使用`HandlebarsJS`(HBS)模板語言來取代AEM 6.0之前使用的Java Server Pages(JSP)。
+[社交元件架構](scf.md)(SCF)使用[HandlebarsJS](https://handlebarsjs.com/)(HBS)範本語言，取代AEM 6.0之前使用的Java伺服器頁面(JSP)。
 
 在AEM 6.0中，JSP元件會保留在相同位置的新HBS架構元件旁，而HBS元件通常位於名為「hbs」的子資料夾中。
 
