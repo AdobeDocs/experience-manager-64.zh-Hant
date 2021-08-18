@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '2145'
+source-wordcount: '2187'
 ht-degree: 1%
 
 ---
@@ -147,21 +147,21 @@ AEM 6.4 Communities GA包含Communities套件。 若要了解AEM 6.4 [Communitie
 
 [enablement](overview.md#enablement-community)功能需要AEM Communities SCORM引擎。 AEM Communities 6.4版支援的Scorm套件包括：
 
-* **[cq -social-scorm -package,1.2.11版](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**。所有AEM 6.4 Communities版本均支援此SCORM套件。
+* **[cq -social-scorm -package,1.2.11版](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-pkg)**。所有AEM 6.4 Communities版本均支援此SCORM套件。
 
-* **[cq-social-scorm-package,2.2.2版](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** 包含 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) 引擎。AEM 6.4.2.x以上支援此SCORM套件。
+* **[cq-social-scorm-package,2.2.2版](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)** 包含 [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) 引擎。AEM 6.4.2.x以上支援此SCORM套件。
 
-對於新安裝的SCORM引擎，應使用包含[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)（為[ cq -social- scorm -package, version 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)）的包。 以便您能播放SCORM 2017支援的學習資源。
+對於新安裝的SCORM引擎，應使用包含[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)（為[ cq -social- scorm -package, version 2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)）的包。 以便您能播放SCORM 2017支援的學習資源。
 
 <!--This section used to be an accordion until converted to straight Markdown. When accordions are enabled, revert-->
 
 ### 首次安裝SCORM包
 
-1. 安裝2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**的**[ cq-social-scorm-package
+1. 安裝2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg).**的**[ cq-social-scorm-package
 1. 從cq實例下載&#x200B;**`/libs/social/config/scorm/database_scormengine_data.sql`**&#x200B;並在mysql伺服器中執行該實例，以建立升級的scormEngineDB架構。
 1. 從發佈者的`https://<hostname>;:<port>/system/console/configMgr`，在CSRF篩選器的「排除路徑」屬性中新增`/content/communities/scorm/RecordResults`。
 
-如果製作的課程內容需要SCORM 2017.1，現有的SCORM安裝可升級為&#x200B;[**cq-social-scorm-package，版本2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)（使用[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)）。
+如果製作的課程內容需要SCORM 2017.1，現有的SCORM安裝可升級為&#x200B;[**cq-social-scorm-package，版本2.2.2**](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)（使用[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)）。
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ AEM 6.4 Communities GA包含Communities套件。 若要了解AEM 6.4 [Communitie
 ### 升級SCORM引擎版本
 
 1. 備份ScormEngineDB架構。
-1. 安裝2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg).**的**[ cq-social-scorm-package
+1. 安裝2.2.2](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg).**的**[ cq-social-scorm-package
 1. 從`/libs/social/config/scorm/ScormEngine.zip`下載套件並解壓縮。
 1. 轉到已提取目錄的&#x200B;**安裝程式**&#x200B;資料夾。
 1. 在檔案&#x200B;**[!UICONTROL EngineInstall.xml]**&#x200B;中使用`scorm db connection url`更新`SystemDatabaseConnectionString`。
@@ -197,7 +197,8 @@ AEM 6.4 Communities GA包含Communities套件。 若要了解AEM 6.4 [Communitie
 您可從Adobe存放庫取得進階MLS下載（也稱為「phasetwo」）:
 
 * AEM-SOLR-MLS-phasetwo
-若要取得進階MLS套件，請參閱檔案部署區段中的[AEM進階MLS](deploy-communities.md#aem-advanced-mls) 。
+
+   若要取得進階MLS套件，請參閱檔案部署區段中的[AEM進階MLS](deploy-communities.md#aem-advanced-mls) 。
 
    * 1.2.40版，2016年4月6日
    * 下載AEM-SOLR-MLS-phasetwo-1.2.40.zip
