@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1506'
 ht-degree: 0%
 
 ---
@@ -125,7 +125,7 @@ HTTP API支援為PhoneGap應用程式、原生應用程式及其他整合和綜�
 
 ## Handlebars JS範本語言 {#handlebars-js-templating-language}
 
-新框架中更明顯的變化之一是使用`Handlebars JS`模板語言(HBS)，這是一種用於伺服器客戶端渲染的常用開源技術。
+新架構中更顯著的變更之一，是使用[Handlebars JS](https://handlebarsjs.com/)範本語言(HBS)，這是伺服器用戶端轉譯的熱門開放原始碼技術。
 
 HBS指令碼簡單、無邏輯、在伺服器和客戶端上編譯、易於覆蓋和定制，並且自然地與客戶端UX綁定，因為HBS支援客戶端呈現。
 
