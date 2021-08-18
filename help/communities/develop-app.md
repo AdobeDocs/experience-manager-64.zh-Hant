@@ -10,22 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: cd036e4a-0884-4ba0-83e9-7013583bbbae
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '611'
-ht-degree: 2%
+source-wordcount: '573'
+ht-degree: 3%
 
 ---
 
-# 開發沙箱應用程式{#develop-sandbox-application}
+# 開發沙箱應用程式 {#develop-sandbox-application}
 
 在本節中，現在已在[初始應用程式](initial-app.md)節中設定了模板，並在[初始內容](initial-content.md)節中建立了初始頁，可以使用基礎指令碼開發應用程式，包括啟用Communities元件的創作功能。 本節結束時，網站將可正常運作。
 
-## 使用Foundation頁面指令碼{#using-foundation-page-scripts}
+## 使用Foundation頁面指令碼 {#using-foundation-page-scripts}
 
 新增呈現播放頁面範本的元件時建立的預設指令碼，會修改為包含基礎頁面的head.jsp和本機body.jsp。
 
-### 超級資源類型{#super-resource-type}
+### 超級資源類型 {#super-resource-type}
 
 第一步是向`/apps/an-scf-sandbox/components/playpage`節點添加資源超類型屬性，使其繼承超類型的指令碼和屬性。
 
@@ -42,7 +42,7 @@ ht-degree: 2%
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
-### 頭和正文指令碼{#head-and-body-scripts}
+### 頭部和身體指令碼 {#head-and-body-scripts}
 
 1. 在&#x200B;**CRXDE Lite**&#x200B;瀏覽器窗格中，導覽至`/apps/an-scf-sandbox/components/playpage`並連按兩下檔案`playpage.jsp`以在編輯窗格中開啟它。
 
@@ -118,7 +118,7 @@ ht-degree: 2%
 
 **在編輯模式下，在瀏覽器中檢視頁面：**
 
-* 標準UI:[http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html](http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.md)
+* 標準 UI: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 您不僅應該看到標題&#x200B;**社群播放**，還應該看到用於編輯頁面內容的UI。
 
@@ -126,13 +126,13 @@ ht-degree: 2%
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
-* 傳統UI:[http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* 傳統 UI: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 以下是傳統UI中播放頁面的顯示方式，包括搭配內容尋找器(cf):
 
 ![chlimage_1-233](assets/chlimage_1-233.png)
 
-## 社區元件{#communities-components}
+## Communities元件 {#communities-components}
 
 要啟用Communities元件進行創作，請按照以下說明開始：
 
@@ -165,7 +165,7 @@ ht-degree: 2%
 
 在這個簡單範例中，根頁面會靜態設定，以重新導向至英文頁面，日後可能開發為具有播放頁面連結的主要登陸頁面。
 
-將瀏覽器URL變更為根頁面：[http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
+將瀏覽器URL變更為根頁面：`http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
 * 選取頁面資訊圖示
 * 選擇&#x200B;**[!UICONTROL 開啟屬性]**
