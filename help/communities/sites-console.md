@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 role: Admin
 exl-id: f1408709-5402-4f55-bd37-9943fe828af0
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3237'
 ht-degree: 3%
 
 ---
@@ -116,7 +116,7 @@ Communities Sites控制台顯示任何現有的社區站點。 在此控制台�
 
 ![Sitetheme-1](assets/sitetheme-1.png)
 
-此架構使用[TwitterBootstrap](https://twitterbootstrap.org/)為網站帶來回應式、彈性的設計。 可以選擇多個預載的Bootstrap主題之一來設定所選社區站點模板的樣式，或者可以上傳Bootstrap主題。
+架構使用`Twitter Bootstrap`為網站帶來回應式、彈性的設計。 可以選擇多個預載的Bootstrap主題之一來設定所選社區站點模板的樣式，或者可以上傳Bootstrap主題。
 
 選取時，主題將會以不透明的藍色核取記號覆蓋。
 
