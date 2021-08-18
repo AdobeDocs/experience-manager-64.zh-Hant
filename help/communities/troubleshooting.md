@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: 1a1de20d-53f6-4787-92e3-e12f30d925d3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 1%
@@ -23,13 +23,13 @@ ht-degree: 1%
 
 ## 已知問題 {#known-issues}
 
-### Dispatcher重新擷取失敗{#dispatcher-refetch-fails}
+### Dispatcher重新擷取失敗 {#dispatcher-refetch-fails}
 
 將Dispatcher 4.1.5與較新版本的Jetty搭配使用時，重新擷取可能會在等候請求逾時後，導致「無法從遠端伺服器接收回應」。
 
 使用Dispatcher 4.1.6或更新版本將可解決此問題。
 
-### 從CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq}升級後無法存取論壇貼文
+### 從CQ 5.4升級後無法存取論壇貼文 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 如果論壇是在CQ 5.4上建立且張貼的主題，然後網站升級至AEM 5.6.1或更新版本，嘗試檢視現有貼文可能會導致頁面錯誤：
 
@@ -54,15 +54,15 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 製作和發佈時失敗不同。 在製作時，會以靜默方式失敗，而只是不顯示論壇主題。 發佈時，會在頁面上擲回錯誤。
 
-如需詳細資訊，請參閱[com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API 。
+如需詳細資訊，請參閱[com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API 。
 
-## 常見問題{#common-concerns}
+## 共同關注 {#common-concerns}
 
-### 記錄中的警告：已棄用的Handlebars {#warning-in-logs-handlebars-deprecated}
+### 記錄中的警告：已棄用Handlebars {#warning-in-logs-handlebars-deprecated}
 
 在啟動期間（不是第1次 — 但之後的每次），記錄中可能會顯示下列警告：
 
-* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39;已由&#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;取代
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39;已由「com.adobe.cq.social.handlebars.I18nHelper@15bac645」取代
 
 此警告可以安全地忽略，因為[SCF](scf.md#handlebarsjavascripttemplatinglanguage)使用的jkanck.handlebars.Handlebars具有自己的i18n輔助實用程式。 啟動時，會以AEM專用的[i18n helper](handlebars-helpers.md#i-n)取代。 此警告由第三方程式庫產生，以確認現有協助程式的覆寫。
 
@@ -81,7 +81,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 23.04.2014 14:21:18.990 *WARN* [pool-5-thread-3] org.apache.sling.jcr.resource.internal.OakResourceListener processOsgiEventQueue: Resource at /var/replication/data/1f799fb4-0aeb-4660-aadb-705657f16048/b9/b91f1690-87e8-41d8-a78e-cd2259f837c8/jcr:content not found, which is not expected for an added or modified node
 ```
 
-### 日誌中出錯：IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}的NoClassDefFoundError
+### 日誌中出錯：IndexElementFactory的NoClassDefFoundError {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
 將AEM 5.6.1 GA升級至最新cq-socialcommunities-pkg-1.4.x或AEM 6.0會在啟動期間導致記錄檔中發生錯誤，條件會自行解決，重新啟動時未看到錯誤即為證明。
 
