@@ -1,8 +1,8 @@
 ---
 title: 呈現Forms
-seo-title: 呈現Forms
+seo-title: Rendering Forms
 description: 使用Forms服務建立互動式資料擷取用戶端應用程式，以驗證、處理、轉換及傳遞通常在Designer中建立的表單。 表單作者可開發單一表單設計，讓Forms服務在各種瀏覽器環境中以PDF、SWF或HTML格式轉譯。
-seo-description: 使用Forms服務建立互動式資料擷取用戶端應用程式，以驗證、處理、轉換及傳遞通常在Designer中建立的表單。 表單作者可開發單一表單設計，讓Forms服務在各種瀏覽器環境中以PDF、SWF或HTML格式轉譯。
+seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
 uuid: 68d7b7bc-7730-4a83-b7b9-ebe2a29d6c51
 contentOwner: admin
 content-type: reference
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -57,4 +57,3 @@ Forms服務可讓您建立互動式資料擷取用戶端應用程式，以驗證
 * 計算表單資料。 （請參閱[計算表單資料](/help/forms/developing/calculating-form-data.md)。）
 * 優化應用程式。 (請參閱[最佳化Forms服務的效能](/help/forms/developing/optimizing-performance-forms-service.md)。)
 
-   ***提示&#x200B;**:Adobe開發人員網站包含以下文章，討論如何建立調用Forms服務並呈現表單的ASP.NET應用程式。請參閱[建立表單呈現ASP.NET應用程式](https://www.adobe.com/devnet/livecycle/articles/asp_net.html)。*

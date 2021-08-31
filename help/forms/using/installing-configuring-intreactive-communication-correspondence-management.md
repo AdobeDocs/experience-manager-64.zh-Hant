@@ -1,17 +1,17 @@
 ---
 title: 安裝和配置互動式通信
-seo-title: 安裝和配置互動式通信
+seo-title: Install and configure Interactive Communications
 description: '安裝及設定AEM Forms互動式通訊，以建立業務通訊、檔案、對帳單、利益通知、行銷郵件、帳單和歡迎套件。 '
-seo-description: '安裝及設定AEM Forms互動式通訊，以建立業務通訊、檔案、對帳單、利益通知、行銷郵件、帳單和歡迎套件。 '
+seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: c09b5743-3cbc-49ff-977a-b6b3eb81b160
 topic-tags: installing
 discoiquuid: 674c6b68-8a04-4cd3-a63e-9968ca686948
 role: Admin
 exl-id: c7aaa81d-d140-44d9-9144-0cbf6ec5d650
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1420'
-ht-degree: 5%
+source-wordcount: '1386'
+ht-degree: 4%
 
 ---
 
@@ -146,7 +146,7 @@ AEM Forms提供一些強制和選用設定。 強制設定包括設定BouncyCast
 
 #### 安裝相容性包 {#install-compatibility-package}
 
-互動式通訊是在AEM 6.4 Forms中建立客戶通訊的預設且建議方法。 如果您已從舊版升級或移轉，並計畫繼續使用信函（通信管理），請安裝[AEMFD相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)。
+互動式通訊是在AEM 6.4 Forms中建立客戶通訊的預設且建議方法。 如果您已從舊版升級或移轉，並計畫繼續使用信函（通信管理），請安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
 
 AEMFD相容性套件可讓您在AEM 6.4 Forms上使用來自AEM 6.3 Forms和AEM 6.2 Forms的下列資產：
 

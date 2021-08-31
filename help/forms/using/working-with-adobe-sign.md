@@ -1,24 +1,24 @@
 ---
 title: 在最適化表單中使用Adobe Sign
-seo-title: 在最適化表單中使用Adobe Sign
+seo-title: Using Adobe Sign in an adaptive form
 description: '啟用最適化表單的電子簽名(Adobe Sign)工作流程，以自動化簽署工作流程、簡化單一和多簽名流程，以及從行動裝置以電子方式簽署表單。 '
-seo-description: 啟用最適化表單的電子簽名(Adobe Sign)工作流程，以自動化簽署工作流程、簡化單一和多簽名流程，以及從行動裝置以電子方式簽署表單。
+seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: 9c65dc44-c1a5-44df-8659-6efbe347575b
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
-feature: 適用性Forms,Adobe Sign
+feature: Adaptive Forms, Adobe Sign
 exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '3596'
+source-wordcount: '3562'
 ht-degree: 0%
 
 ---
 
-# 在適用性表單{#using-adobe-sign-in-an-adaptive-form}中使用Adobe Sign
+# 在最適化表單中使用Adobe Sign {#using-adobe-sign-in-an-adaptive-form}
 
 啟用最適化表單的電子簽名(Adobe Sign)工作流程，以自動化簽署工作流程、簡化單一和多簽名流程，以及從行動裝置以電子方式簽署表單。
 
@@ -49,7 +49,7 @@ Adobe Sign與AEM Forms的整合支援：
 * 確保已將AEM Forms雲端服務設定為使用Adobe Sign。 如需詳細資訊，請參閱[將Adobe Sign與AEM Forms整合](/help/forms/using/adobe-sign-integration-adaptive-forms.md)。
 * 讓簽署者清單保持就緒。 您至少需要每個簽署者的電子郵件地址。
 
-## 為最適化表單{#configure-adobe-sign-for-an-adaptive-form}設定Adobe Sign
+## 設定最適化表單的Adobe Sign {#configure-adobe-sign-for-an-adaptive-form}
 
 執行下列步驟來設定最適化表單的Adobe Sign:
 
@@ -69,7 +69,7 @@ Adobe Sign與AEM Forms的整合支援：
 
 [為Adobe簽署建立最適化](/help/forms/using/working-with-adobe-sign.md#create-an-adaptive-form-for-adobe-sign) 表單說明建立基本最適化表單的步驟。請參閱[建立最適化表單](/help/forms/using/creating-adaptive-form.md) ，以了解建立最適化表單時可用的其他選項。
 
-#### 為Adobe Sign {#create-an-adaptive-form-for-adobe-sign}建立最適化表單
+#### 建立適用於Adobe Sign的最適化表單 {#create-an-adaptive-form-for-adobe-sign}
 
 執行下列步驟以建立適用於Adobe Sign的最適化表單：
 
@@ -211,7 +211,7 @@ Adobe Sign有各種欄位可放置在最適化表單上。 這些欄位接受各
 
 您的表單簽署體驗已就緒。 您可以預覽表單以驗證簽署體驗。 簽署者收到透過電子郵件簽署的表單時，會在已發佈的表單上顯示「Adobe Sign區塊」欄位。 此體驗也稱為表單外簽署體驗。 您也可以為第一個簽署者設定表單內簽署體驗，以取得詳細步驟，請參閱[建立表單內簽署體驗](/help/forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)。
 
-## 為最適化表單{#configure-cloud-signatures-for-an-adaptive-form}配置雲端簽名
+## 為最適化表單配置雲端簽名 {#configure-cloud-signatures-for-an-adaptive-form}
 
 雲端數位簽名或遠程簽名是新一代的數位簽名，可跨案頭、移動和網路運行，並滿足簽名者驗證的最高級合規性和保證。 您可以使用雲端數位簽名來簽署最適化表單。
 
@@ -248,7 +248,7 @@ Adobe Sign有各種欄位可放置在最適化表單上。 這些欄位接受各
    * [為最適化表單選取「提交動作」](#selectsubmitactionforanadaptiveform)
 
 
-## 建立表單內簽署體驗{#create-in-form-signing-experience}
+## 建立表單內簽署體驗 {#create-in-form-signing-experience}
 
 使用者也可以在填寫表單時簽署最適化表單。 此體驗也稱為表單內簽署體驗。 表單內簽署體驗僅適用於多個簽署者環境中的第一位歌手。 執行下列步驟，為最適化表單建立表單內簽署體驗：
 
@@ -257,7 +257,7 @@ Adobe Sign有各種欄位可放置在最適化表單上。 這些欄位接受各
 
 ![in-form-signing-experience](assets/in-form-signing-experience.png)
 
-### 添加和配置簽名步驟元件{#add-and-configure-the-signature-step-component}
+### 添加和配置簽名步驟元件 {#add-and-configure-the-signature-step-component}
 
 使用「簽名步驟」元件提供一個區域，以電子方式對填寫的表單進行簽名。 呈現包含簽名步驟元件的部分時，它將顯示可簽名的PDF填充表單版本。 簽名步驟元件佔用表單可用的全寬。 建議在包含簽名步驟元件的區段上不要有任何其他元件。
 
@@ -283,7 +283,7 @@ Adobe Sign有各種欄位可放置在最適化表單上。 這些欄位接受各
    >* Adobe Sign啟用的適用性表單不支援使用「簽名步驟」元件，在區段或面板上使用「提交」按鈕。 您可以在手動提交或自動提交的簽名步驟之後新增摘要步驟，在使用[Adobe Sign Configuration Service](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status)設定的間隔後觸發。
 
 
-### 配置感謝頁面或摘要步驟元件{#configure-the-thank-you-page-or-summary-step-component}
+### 設定感謝頁面或摘要步驟元件 {#configure-the-thank-you-page-or-summary-step-component}
 
 **摘要步驟**&#x200B;元件會自動提交表單，填入自訂摘要頁面中的資訊，並顯示已提交表單的摘要。 它也會在傳回地圖中取得所需資訊。 摘要步驟元件會取用表單可用的全寬度。 建議在包含摘要步驟元件的區段上不要有任何其他元件。
 
@@ -301,7 +301,7 @@ Adobe Sign有各種欄位可放置在最適化表單上。 這些欄位接受各
 
 **問：我可以在最適化表單的靜態文字元件中使用Adobe Sign文字標籤嗎？**
 
-**答案：** 是，您可以在文字元件中使用文字標籤，將Adobe Sign欄位新增至已啟用 [適用性表單的記錄檔](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) （僅限自動產生記錄檔案選項）。若要了解建立文字標籤的程式和規則，請參閱[Adobe Sign檔案](https://helpx.adobe.com/sign/help/text-tags.html)。 另請注意，適用性表單對文字標籤的支援有限。 您可以使用文字標籤，僅建立Adobe Sign區塊支援的欄位。
+**答案：** 是，您可以在文字元件中使用文字標籤，將Adobe Sign欄位新增至已啟用 [適用性表單的記錄檔](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) （僅限自動產生記錄檔案選項）。若要了解建立文字標籤的程式和規則，請參閱[Adobe Sign檔案](https://experienceleague.adobe.com/docs/document-cloud-learn/sign-learning-hub/admin-set-up/advanced-tasks-admins/adobe-sign-text-tagging.html)。 另請注意，適用性表單對文字標籤的支援有限。 您可以使用文字標籤，僅建立Adobe Sign區塊支援的欄位。
 
 **問：AEM Forms同時提供Adobe Sign區塊和簽名步驟元件。這些功能可以同時在最適化表單中使用嗎？**
 

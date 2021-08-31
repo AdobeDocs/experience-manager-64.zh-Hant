@@ -1,8 +1,8 @@
 ---
 title: 在JEE環境中強化AEM Forms
-seo-title: 在JEE環境中強化AEM Forms
+seo-title: Hardening Your AEM Forms on JEE Environment
 description: 了解各種安全性強化設定，以增強AEM Forms在企業內部網路中執行的JEE安全性。
-seo-description: 了解各種安全性強化設定，以增強AEM Forms在企業內部網路中執行的JEE安全性。
+seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
 uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 5aa02fae-b9dd-45bf-9826-16e9e5686727
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '7347'
+source-wordcount: '7304'
 ht-degree: 0%
 
 ---
@@ -632,7 +632,7 @@ JEE Web應用程式上每個AEM Forms的下列應用程式根URL。 您應僅設
 
 跨站請求偽造(CSRF)攻擊利用網站對用戶的信任來傳輸用戶未授權和無意的命令。 攻擊的設定方式是在網頁中包括連結或指令碼，或在電子郵件中包括URL，以訪問用戶已經通過身份驗證的其他站點。
 
-例如，您可能在同時瀏覽其他網站時登入Administration Console。 其中一個網頁可以包括具有`src`屬性的HTML影像標籤，該屬性指向受害網站上的伺服器端指令碼。 利用Web瀏覽器提供的基於Cookie的會話身份驗證機制，攻擊網站可以向該受害伺服器端指令碼發送惡意請求，偽裝成合法用戶。 如需更多範例，請參閱[https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)#Examples)。
+例如，您可能在同時瀏覽其他網站時登入Administration Console。 其中一個網頁可以包括具有`src`屬性的HTML影像標籤，該屬性指向受害網站上的伺服器端指令碼。 利用Web瀏覽器提供的基於Cookie的會話身份驗證機制，攻擊網站可以向該受害伺服器端指令碼發送惡意請求，偽裝成合法用戶。
 
 CSRF共有下列特性：
 
@@ -674,7 +674,7 @@ AEM Forms on JEE使用反向連結篩選功能來封鎖CSRF攻擊。 本節使�
 
 ### 管理反向連結篩選 {#managing-referer-filtering}
 
-AEM Forms on JEE提供「反向連結篩選器」，用以指定可存取您伺服器資源的反向連結。 依預設，反向連結篩選器不會篩選使用安全HTTP方法(例如GET)的請求，除非&#x200B;*CSRF_CHECK_GETS*&#x200B;設為true。 如果「允許的反向連結」項目的連接埠號設為0，無論連接埠號為何，JEE上的AEM Forms都會允許來自該主機的所有具有反向連結的請求。 如果未指定埠號，則僅允許來自預設埠80(HTTP)或埠443(HTTPS)的請求。 如果刪除允許的反向連結清單中的所有項目，則會停用反向連結篩選。
+AEM Forms on JEE提供「反向連結篩選器」，用以指定可存取您伺服器資源的反向連結。 依預設，反向連結篩選器不會篩選使用安全HTTP方法的請求，例如GET，除非&#x200B;*CSRF_CHECK_GETS*&#x200B;設為true。 如果「允許的反向連結」項目的連接埠號設為0，無論連接埠號為何，JEE上的AEM Forms都會允許來自該主機的所有具有反向連結的請求。 如果未指定埠號，則僅允許來自預設埠80(HTTP)或埠443(HTTPS)的請求。 如果刪除允許的反向連結清單中的所有項目，則會停用反向連結篩選。
 
 首次安裝Document Services時，「允許的反向連結」清單會以安裝Document Services的伺服器的地址更新。 伺服器的條目包括伺服器名稱、IPv4地址、啟用IPv6時的IPv6地址、環回地址和本地主機條目。 主機作業系統會傳回新增至允許反向連結清單的名稱。 例如，IP位址為10.40.54.187的伺服器將包含下列項目：`https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`。 對於主機作業系統重新調整的任何不合格名稱（沒有IPv4地址、 IPv6地址或合格域名的名稱）允許清單不會更新。 修改「允許的反向連結」清單以符合您的業務環境。 請勿使用預設的「允許反向連結」清單，在生產環境中部署表單伺服器。 修改任何「允許的反向連結」、「反向連結例外」或URI後，請務必重新啟動伺服器，讓變更生效。
 
@@ -697,7 +697,7 @@ AEM Forms on JEE提供API來管理「允許的反向連結例外狀況」清單�
 
 如需API的詳細資訊，請參閱* AEM Forms on JEE API參考*。
 
-使用&#x200B;***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION***&#x200B;清單來定義全局級別上允許的反向連結例外，即定義適用於所有應用程式的例外。 此清單僅包含具有絕對路徑(例如`/index.html`)或相對路徑(例如`/sample/`)。 您也可以將規則運算式附加至相對URI的結尾，例如`/sample/(.)*`。
+使用&#x200B;***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION***&#x200B;清單來定義全局級別上允許的反向連結例外，即定義適用於所有應用程式的例外。 此清單僅包含具有絕對路徑（例如`/index.html`）或相對路徑（例如`/sample/`）的URI。 您也可以將規則運算式附加至相對URI的結尾，例如`/sample/(.)*`。
 
 ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION***&#x200B;清單ID在`com.adobe.idp.um.api`命名空間的`UMConstants`類中定義為常數，可在`adobe-usermanager-client.jar`中找到。 您可以使用AEM Forms API建立、修改或編輯此清單。 例如，若要建立「全域允許反向連結例外」清單，請使用：
 

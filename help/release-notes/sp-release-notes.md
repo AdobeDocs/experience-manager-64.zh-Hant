@@ -1,22 +1,22 @@
 ---
 title: AEM 6.4 Service Pack發行說明
-seo-title: AEM 6.4 Service Pack發行說明
+seo-title: AEM 6.4 Service Pack Release Notes
 description: Adobe Experience Manager 6.4 Service Pack專屬的發行說明。
-seo-description: Adobe Experience Manager 6.4 Service Pack專屬的發行說明。
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Service Packs.
 uuid: 49a710a8-7cd5-47de-9a96-7af7f3c00dfc
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '21579'
-ht-degree: 22%
+source-wordcount: '21557'
+ht-degree: 23%
 
 ---
 
-# AEM 6.4 Service Pack發行說明{#aem-service-pack-release-notes}
+# AEM 6.4 Service Pack發行說明 {#aem-service-pack-release-notes}
 
 ## 發行資訊 {#release-information}
 
@@ -27,7 +27,7 @@ ht-degree: 22%
 | 日期 | 2020 年 3 月 5 日 |
 | 下載URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip)上的AEM 6.4.8.0 |
 
-## AEM 6.4.8.0 {#what-s-included-in-aem}中包含的內容
+## AEM 6.4.8.0包含的項目 {#what-s-included-in-aem}
 
 AEM 6.4.8.0為重要更新，包含自2018年4月&#x200B;**全面發行AEM 6.4以來所推出的新功能、客戶要求的重要增強功能以及效能、穩定性、安全性等改善項目。**
 
@@ -51,7 +51,7 @@ AEM 6.4.8.0為重要更新，包含自2018年4月&#x200B;**全面發行AEM 6.4�
 
 * 將ContextHub中隨附的jQuery版本更新至3.2.1。
 
-## 更改清單{#list-of-changes}
+## 變更清單 {#list-of-changes}
 
 ### 網站 {#sites}
 
@@ -122,7 +122,7 @@ AEM 6.4.8.0為重要更新，包含自2018年4月&#x200B;**全面發行AEM 6.4�
 
 * 權限問題會導致在Blueprint內移動頁面時顯示錯誤(NPR-32610)。
 
-### WCM — 頁面編輯器{#wcm-page-editor-6480}
+### WCM頁面編輯器 {#wcm-page-editor-6480}
 
 * 嘗試將元件新增至具有特定URL格式的頁面時，瀏覽器停止回應(NPR-32368、NPR-31917)。
 
@@ -164,7 +164,7 @@ AEM 6.4.8.0為重要更新，包含自2018年4月&#x200B;**全面發行AEM 6.4�
 
 * 在「網站」頁面上提交或放棄表單時，Analytics沒有顯示適當的結果(NPR-31359)。
 
-### 先前Service Pack {#hotfixes-and-feature-packs-included-in-previous-service-packs}中包含的Hotfix和Feature Pack
+### 先前Service Pack包含的Hotfix和Feature Pack {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
 #### AEM 6.4.7.0 {#experience-manager-6470}
 
@@ -272,7 +272,7 @@ AEM 6.4.7.0的部分關鍵重點為：
 
 * 儲存內容片段模型時，日期和時間欄位中的時間會設為00:00(NPR-30540)。
 
-##### 整合{#integrations-6470}
+##### 整合 {#integrations-6470}
 
 * 設定AdobeLaunch時，程式庫URL中會加上正斜線(/)(NPR-30700)。
 
@@ -1042,7 +1042,7 @@ AEM 6.4.3.0的部分關鍵重點為：
 * 改善FormData處理。
 * 改善多欄位內項目命名的處理方式。
 * 改善選取期間預留位置項目（卡片檢視和清單檢視）的處理方式。
-* 新增Managed Services的AdobeIMS驗證和Admin Console支援。
+* 新增Managed Services的Adobe IMS驗證和Admin Console支援。
 
 **資產**
 
@@ -1757,10 +1757,10 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的部分重點為：
 * （個人化）圖示在切換至「卡片」檢視時會變形。 NPR-23373、NPR-23374：CQ-4240018、CQ-4240019 的 Hotfix
 * （個人化）對象控制台不顯示nt：資料夾類型。 NPR-23375：CQ-4242293 的 Hotfix
 * 在發佈執行個體上將元件設為目標時，顯示目標元件之前的預設體驗時會出現閃爍畫面。NPR-23415：CQ-4242038 的 Hotfix
-* (AdobeIMS主控台)刪除後重新顯示AccessTokenProvider OSGi服務設定。 NPR-23520：CQ-4208250 的 Hotfix
+* （Adobe IMS主控台）刪除後， AccessTokenProvider OSGi服務設定會重新顯示。 NPR-23520：CQ-4208250 的 Hotfix
 * 中繼資料夾結構出現設定參考複寫失敗。NPR-23485：CQ-4242751 的 Hotfix
 * （個人化）由代理servlet封鎖的clientlib。 NPR-23521：CQ-4240995 的 Hotfix
-* (AdobeIMS主控台)在設定精靈中不會擷取已註冊的雲端解決方案。 NPR-23977：CQ-4244549 的 Hotfix
+* (Adobe IMS Console)在設定精靈中不會擷取已註冊的雲端解決方案。 NPR-23977：CQ-4244549 的 Hotfix
 * 在沒有HTML擴充功能的頁面上載入目標內容時，會產生無限回圈。 NPR-23522：CQ-4223600 的 Hotfix
 * 繼承的Dynamic Tag Management設定參考的頁面啟動失敗。 NPR-23485：CQ-4242751 的 Hotfix
 
@@ -2089,7 +2089,7 @@ AEM 6.4.1.0 中包含的內容套件清單
 
 ### 安裝6.4.8.0 {#install}
 
-#### 設定要求{#setup-requirements}
+#### 設定需求 {#setup-requirements}
 
 <!--
 
@@ -2115,7 +2115,7 @@ AEM 6.4.1.0 中包含的內容套件清單
 >
 >Adobe不建議移除或解除安裝AEM 6.4.8.0套件。
 
-### 通過包管理器{#install-the-service-pack-via-package-share}安裝Service Pack
+### 透過封裝管理器安裝Service Pack {#install-the-service-pack-via-package-share}
 
 執行下列步驟將Service Pack安裝在現有AEM 6.4執行個體上：
 
@@ -2125,7 +2125,7 @@ AEM 6.4.1.0 中包含的內容套件清單
 
 >[!NOTE]
 >
->**在安裝6.4.8.4期間，Package Manager UI的對話方塊有時會過早退出**
+>**在安裝6.4.8.0期間，Package Manager UI的對話方塊有時會過早退出**
 >
 >因此，建議在存取執行個體之前，等待錯誤記錄穩定下來。 在確保安裝成功之前，用戶必須等待與卸載更新程式捆綁相關的特定日誌。 這通常會在Safari上發生，但可能會在任何瀏覽器上間歇性發生。
 
@@ -2152,7 +2152,7 @@ B.使用套件管理器](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 >[!NOTE]
 >成功安裝套件時，會顯示資訊性訊息，指出已成功安裝內容套件，例如&#x200B;**&quot;已成功安裝AEM-6.4-Service-Pack-7Content Package。&quot;**
 
-### 更新Dynamic Media檢視器(5.10.1){#update-dynamic-media-viewers}
+### 更新Dynamic Media檢視器(5.10.1) {#update-dynamic-media-viewers}
 
 <p id="Dynamic">AEM 6.4.8.0包含新版Dynamic Media檢視器(5.10.1)，可啟用在「影像預設集」頁面上檢查重複名稱。 建議Dynamic Media客戶執行下列命令，將方塊檢視器預設集開啟至最新狀態。
 
@@ -2160,7 +2160,7 @@ B.使用套件管理器](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 
 會將新的檢視器預設集複製到/conf位置。
 
-### 安裝AEM Forms附加元件套件{#install-aem-forms-add-on-package}
+### 安裝AEM Forms附加元件套件 {#install-aem-forms-add-on-package}
 
 #### 安裝AEM Forms附加元件 {#installaemformsaddon}
 
@@ -2170,13 +2170,13 @@ B.使用套件管理器](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 
 >[!NOTE]
 >
->AEM 6.4.8.0包含新版[AEM Forms相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT)。 如果您使用舊版AEM Forms相容性套件並更新至AEM 6.4.8.0，請在安裝Forms附加元件套件後安裝最新版AEM Forms相容性套件。
+>AEM 6.4.8.0包含新版[AEM Forms相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。 如果您使用舊版AEM Forms相容性套件並更新至AEM 6.4.8.0，請在安裝Forms附加元件套件後安裝最新版AEM Forms相容性套件。
 
 1. 確認您已安裝AEM Service Pack。
 1. 下載適用於您作業系統的[AEM Forms發行版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)中列出的對應表單附加套件。
 1. 按照[安裝AEM forms附加元件套件](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package)中所述安裝Forms附加元件套件。
 
-### 安裝AEM Forms JEE安裝程式{#install-aem-forms-jee-installer}
+### 安裝AEM Forms JEE安裝程式 {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
@@ -2239,7 +2239,7 @@ B.使用套件管理器](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
    * `com.adobe.granite.maintenance.impl.TaskScheduler` 在granite/operations/maintenance中未找到維護窗口
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`:unbindAndiment方法擲回例外狀況(java.lang.IllegalStateException:服務已註銷)。這些錯誤不需要任何動作，因為它們不會影響您的AEM例項。
 
-### 已解決的問題{#resolved-issues}
+### 已解決的問題 {#resolved-issues}
 
 **AEM 6.4.4.0**
 
@@ -2269,7 +2269,7 @@ AEM 6.4.8.0 中包含的內容套件清單
 * [AEM 6.4 檔案](https://helpx.adobe.com/tw/support/experience-manager/6-4.html)
 * 訂閱 [Adobe 優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)
 
-### 受限站點{#restricted-sites-new}
+### 受限網站 {#restricted-sites-new}
 
 這些網站僅供客戶使用。 如果您是Adobe，且需要存取權，請連絡您的客戶經理。
 

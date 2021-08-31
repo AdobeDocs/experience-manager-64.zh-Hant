@@ -1,8 +1,8 @@
 ---
 title: 設定當天的訊息
-seo-title: 設定當天的訊息
+seo-title: Setting the message of the day
 description: 當天的訊息可讓您設定要顯示在工作區使用者介面的歡迎頁面上的訊息。
-seo-description: 當天的訊息可讓您設定要顯示在工作區使用者介面的歡迎頁面上的訊息。
+seo-description: The message of the day let you set a message to be displayed on the Welcome page in the Workspace user interface.
 uuid: 9c664438-6fc0-498e-bb3f-4c6bcb9414a7
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 0%
+source-wordcount: '174'
+ht-degree: 1%
 
 ---
 
-# 設定日{#setting-the-message-of-the-day}的消息
+# 設定當天的訊息 {#setting-the-message-of-the-day}
 
 您可以設定要顯示在工作區使用者介面的歡迎頁面上的訊息。
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 * &lt;textformat> 文字格式標籤
 * &lt;u> 底線標籤&lt;/u>
 
-如需支援標籤的詳細資訊，請參閱[Flex語言參考](https://www.adobe.com/support/documentation/en/flex/)中TextField類別的`htmlText`屬性定義。
+如需支援標籤的詳細資訊，請參閱[Flex語言參考](https://flex.apache.org/)中TextField類別的`htmlText`屬性定義。
 
-## 設定日{#set-the-message-of-the-day}的消息
+## 設定當天的訊息 {#set-the-message-of-the-day}
 
 1. 在管理控制台中，按一下「服務>工作區>當天訊息」。
 1. 在「日」方塊的訊息中，提供要顯示在歡迎畫面上的文字。

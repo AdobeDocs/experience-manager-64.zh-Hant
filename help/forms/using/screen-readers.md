@@ -1,33 +1,33 @@
 ---
 title: HTML5表單的螢幕助讀程式
-seo-title: HTML5表單的螢幕助讀程式
+seo-title: Screen readers for HTML5 forms
 description: 列出HTML5表單支援的螢幕助讀程式。
-seo-description: 列出HTML5表單支援的螢幕助讀程式。
+seo-description: Lists the screen readers supported with HTML5 forms.
 uuid: 035354e2-957f-4eb6-bc16-4ca96ec7ac74
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
-feature: 行動表單
+feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 1%
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
-# HTML5表單的螢幕助讀程式{#screen-readers-for-html-forms}
+# HTML5表單的螢幕助讀程式 {#screen-readers-for-html-forms}
 
 HTML5表單元件會將XFA表單範本轉譯為HTML5格式。 所有支援HTML5的標準瀏覽器都可轉譯這些表單。 為支援PDF和HTML5表單的類似資料擷取體驗，PDF forms的版面會保留在HTML5表單中。
 
 HTML5表單使用標準HTML結構，可讓HTML的一般協助工具與這些表單搭配使用。 如果表單是根據無障礙表單的最佳實務設計，則可搭配任何支援的螢幕助讀程式使用。 此外，還啟用了鍵盤導航。
 
-## 無障礙標準{#accessibility-standards}
+## 無障礙標準 {#accessibility-standards}
 
-HTML5表單符合第508節中已知例外的協助工具規定。 如需詳細資訊，請參閱HTML5表單的[VPAT](https://www.adobe.com/mena_en/accessibility/compliance/livecycle-mobile-forms-es4-section-508-vpat.html) 。
+HTML5表單符合第508節中已知例外的協助工具規定。 如需詳細資訊，請參閱HTML5表單的[VPAT](http://wwwimages.adobe.com/content/dam/acom/en/accessibility/compliance/pdfs/livecycle-mobile-forms-es4-section-508-vpat.pdf) 。
 
-## HTML5表單的認證螢幕閱讀器{#certified-screen-readers-for-html-forms}
+## HTML5表單的認證螢幕閱讀器 {#certified-screen-readers-for-html-forms}
 
 * Microsoft Windows上的JAWS 14.0
 * Mac OS X和iPad上的VoiceOver

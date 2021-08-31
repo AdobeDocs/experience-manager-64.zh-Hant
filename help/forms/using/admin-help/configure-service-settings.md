@@ -1,8 +1,8 @@
 ---
 title: 配置服務設定
-seo-title: 配置服務設定
+seo-title: Configure service settings
 description: 了解如何配置服務設定。
-seo-description: 了解如何配置服務設定。
+seo-description: Learn how to configure service settings.
 uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: be1f8c59-b5d8-4d87-af7b-1034d73e7e83
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10710'
+source-wordcount: '10683'
 ht-degree: 0%
 
 ---
 
-# 配置服務設定{#configure-service-settings}
+# 配置服務設定 {#configure-service-settings}
 
 您可以使用「服務管理」頁面，為屬於AEM表單的每個服務配置設定。 可用的設定會依所設定的服務而有所不同。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 1. 按一下「儲存」以儲存變更，或按一下「取消」以捨棄變更。
 1. 選中服務名稱旁邊的複選框，然後按一下「啟動」以重新啟動服務。
 
-## 審核工作流服務設定{#audit-workflow-service-settings}
+## 審核工作流服務設定 {#audit-workflow-service-settings}
 
 Workbench提供記錄執行階段執行的程式例項，然後播放這些例項，以觀察程式的行為。 （請參閱[Workbench說明](https://www.adobe.com/go/learn_aemforms_workbench_63)。） 若要節省表單伺服器檔案系統上的空間，您可以限制記錄所儲存資料的處理程式數量。 您可以配置審核工作流服務(`AuditWorkflowService`)的以下屬性：
 
@@ -44,7 +44,7 @@ Workbench提供記錄執行階段執行的程式例項，然後播放這些例�
 
 **MaxNumberOfRecordingEntries:** 可針對每個記錄儲存的最大資料項數。資料項是有關進程中操作的資訊。 為操作的每次執行儲存多個條目，例如操作是否開始、操作是否完成以及引導操作的路由是否完成。 當進程可以包括許多操作執行時（例如，當遇到無限循環時），此屬性非常有用。 預設值為 50。
 
-## 條碼式表單服務設定{#barcoded-forms-service-settings}
+## 條碼式表單服務設定 {#barcoded-forms-service-settings}
 
 條碼式表單服務`(BarcodedFormsService)`從掃描的影像中提取條碼資料。 該服務接受條碼格式（TIFF或PDF）作為輸入，並提取由條碼編碼的資料的機器表示。
 
@@ -66,7 +66,7 @@ Workbench提供記錄執行階段執行的程式例項，然後播放這些例�
 
 **資料來源名稱：** 用於維護批次處理作業之狀態和歷史記錄資訊的資料來源名稱。指定的資料源必須支援全局(XA)事務。
 
-## 中央遷移橋服務（已廢止）設定{#central-migration-bridge-service-settings}
+## 中央遷移橋服務（已廢止）設定 {#central-migration-bridge-service-settings}
 
 中央遷移橋服務(`CentralMigrationBridge`)調用Adobe Central Pro Output Server（中央）功能的子集，其中包括JFMERGE、JFTRANS和XMLIMPORT命令。 Central Migration Bridge服務操作可讓您在AEM表單中重複使用下列中央資產：
 
@@ -108,7 +108,7 @@ Content Repository Connector for IBM FileNet允許您建立與儲存在IBM FileN
 
 此設定的預設值為`/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects`。
 
-## 轉換PDF服務設定{#convert-pdf-service-settings}
+## 轉換PDF服務設定 {#convert-pdf-service-settings}
 
 「轉換PDF」服務(`ConvertPdfService`)將PDF文檔轉換為PostScript和多種影像格式（JPEG、JPEG 2000、PNG和TIFF）。 將PDF文檔轉換為PostScript對於在任何PostScript打印機上基於伺服器的無人值守打印非常有用。 將PDF檔案轉換為多頁TIFF檔案，對於在不支援PDF檔案的內容管理系統中封存檔案而言，是很實用的做法。
 
@@ -130,7 +130,7 @@ Content Repository Connector for IBM FileNet允許您建立與儲存在IBM FileN
 
 **將平滑套用至影像：** 套用平滑以將影像的突然變更最小化。
 
-## Distiller服務設定{#distiller-service-settings}
+## Distiller服務設定 {#distiller-service-settings}
 
 Distiller服務(`DistillerService`)通過網路將PostScript、封裝的PostScript(EPS)和PRN檔案轉換為PDF檔案。
 
@@ -154,11 +154,11 @@ Distiller服務(`DistillerService`)通過網路將PostScript、封裝的PostScri
 
 **池大小：** 池的初始大小。部署Distiller服務時，此數字用於確定建立並分配給等待調用請求的空閒池的服務實施實例的數量。 然後，服務容器可以立即響應調用請求，而不需要首先初始化服務實例。
 
-## 文檔管理服務設定{#document-management-service-settings}
+## 文檔管理服務設定 {#document-management-service-settings}
 
 >[!NOTE]
 >
->Adobe®LiveCycle® Content Services ES（已過時）是隨LiveCycle安裝的內容管理系統。 它使用戶能夠設計、管理、監控和優化以人為中心的流程。 內容服務（已過時）支援將於12/31/2014終止。 請參閱[Adobe產品生命週期文檔](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。 若要了解如何設定內容服務（已淘汰），請參閱[管理內容服務](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)。
+>Adobe®LiveCycle® Content Services ES（已過時）是隨LiveCycle安裝的內容管理系統。 它使用戶能夠設計、管理、監控和優化以人為中心的流程。 內容服務（已過時）支援將於12/31/2014終止。 請參閱[Adobe產品生命週期文檔](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
 
 文檔管理服務(`DocumentManagementService`)使進程能夠使用由內容服務提供的內容管理功能（已廢止）。 文檔管理操作提供了在內容管理系統中維護空間和內容所需的基本任務。 此類任務的示例包括複製、刪除、移動、檢索和儲存內容、建立空間和關聯，以及獲取和設定內容屬性。
 
@@ -168,7 +168,7 @@ Distiller服務(`DistillerService`)通過網路將PostScript、封裝的PostScri
 
 **HTTP連接埠：** 用於存取內容服務的連接埠（已過時）。預設值為 8080。
 
-## 電子郵件服務設定{#email-service-settings}
+## 電子郵件服務設定 {#email-service-settings}
 
 電子郵件通常用於發佈內容，或在自動化流程中提供狀態資訊。 電子郵件服務(`EmailService`)使進程能夠從POP3或IMAP伺服器接收電子郵件，並將電子郵件發送到SMTP伺服器。
 
@@ -208,7 +208,7 @@ Distiller服務(`DistillerService`)通過網路將PostScript、封裝的PostScri
 * 如果使用安全套接字層協定，請選擇SSL。
 * 如果使用傳輸層安全性，請選取TLS。
 
-## 加密服務設定{#encryption-service-settings}
+## 加密服務設定 {#encryption-service-settings}
 
 加密服務(`EncryptionService`)允許您加密和解密文檔。 文檔被加密後，其內容將變得不可讀。 授權用戶可以解密該文檔以獲得對內容的訪問。 如果PDF檔案使用密碼加密，使用者必須先指定開啟的密碼，才能在Adobe Reader或Adobe Acrobat中檢視該檔案。 同樣，如果PDF文檔用證書加密，則用戶必須用與用於加密PDF文檔的證書（私鑰）對應的公鑰解密PDF文檔。
 
@@ -228,7 +228,7 @@ Distiller服務(`DistillerService`)通過網路將PostScript、封裝的PostScri
 
 **相容性模式：**
 
-## FTP服務設定{#ftp-service-settings}
+## FTP服務設定 {#ftp-service-settings}
 
 FTP服務(`FTP`)可讓程式與FTP伺服器互動。 FTP服務操作可從FTP伺服器擷取檔案、將檔案放在FTP伺服器上，以及從FTP伺服器刪除檔案。 例如，從程式產生的報表等檔案可儲存在FTP伺服器上以供發佈。 或者，外部系統可能根據進程中的先前步驟生成一些檔案。 在該過程的後續步驟中，檔案可被傳輸到遠程位置。
 
@@ -242,7 +242,7 @@ FTP服務(`FTP`)可讓程式與FTP伺服器互動。 FTP服務操作可從FTP伺
 
 **預設密碼：** 與指定的使用者名稱搭配使用，以便與FTP伺服器進行驗證的密碼。
 
-## 生成PDF服務設定{#generate-pdf-service-settings}
+## 生成PDF服務設定 {#generate-pdf-service-settings}
 
 生成PDF服務(`GeneratePDFService`)將各種原生格式的檔案轉換為PDF文檔，並將PDF文檔轉換為多種檔案格式。
 
@@ -284,7 +284,7 @@ FTP服務(`FTP`)可讓程式與FTP伺服器互動。 FTP服務操作可從FTP伺
 
 如果第一次轉換嘗試所耗用的時間少於指定的逾時期間，則重試PDF轉換。 例如，如果逾時期間為270秒，且第一次嘗試使用200秒，PDF產生器將重新嘗試轉換。 如果第一次嘗試本身耗用了270秒，則不會重試轉換。
 
-## 參考線ES4實用程式服務設定{#guides-es4-utilities-service-settings}
+## 指南ES4實用程式服務設定 {#guides-es4-utilities-service-settings}
 
 建立指南時，指南中嵌入了一些資源，如指南定義。 資源也可以存在，作為儲存於本機或AEM表單伺服器上之應用程式資產的參考。 本指南不包含資料，且提交位置和輸入的值不適用於所有外部環境。
 
@@ -325,7 +325,7 @@ FTP服務(`FTP`)可讓程式與FTP伺服器互動。 FTP服務操作可從FTP伺
 
 **macKeySeed:** 用於產生安全URL的種子值。此選項時，系統不會重新整理金鑰。 在不同伺服器上設定相同種子，會導致這些伺服器產生相容的安全URL。 如果負載平衡器後面使用了多個表單伺服器，則此功能可能會很實用。 輸入隨機的字元和數字序列作為種子。
 
-### 在伺服器群集{#using-guides-in-a-server-cluster}中使用參考線
+### 在伺服器群集中使用指南 {#using-guides-in-a-server-cluster}
 
 在未使用黏著工作階段的伺服器叢集中轉譯指南會因NullPointerException而失敗。 「參考線」請求會運用安全URL，依預設，這些URL對其產生所在的伺服器是唯一的。 在使用黏著工作階段的叢集中，當請求點擊叢集中的節點後，該工作階段或使用者的所有後續請求都會專門路由至該伺服器，而且一切正常。 在不使用黏著工作階段的叢集中，後續請求可能會點擊叢集中的任何伺服器。 如果請求點擊的伺服器不是原始伺服器，則無法解析安全URL。
 
@@ -337,7 +337,7 @@ macKeySeed值是隨機數產生器的種子，用於產生安全URL。 設定此
 
 必須重新啟動群集，因為macSeedValue在系統啟動時為只讀。 所有節點都需要重新啟動才能讀取值，因為它們會獨立使用此值，以使用種子值初始化其內部隨機數。
 
-## JDBC服務設定{#jdbc-service-settings}
+## JDBC服務設定 {#jdbc-service-settings}
 
 JDBC服務(`JdbcService`)使進程能夠與資料庫交互。
 
@@ -345,7 +345,7 @@ JDBC服務(`JdbcService`)使進程能夠與資料庫交互。
 
 **資料源名稱：** 一個字串值，它表示用於連接到資料庫伺服器的資料源的JNDI名稱。必須在承載表單伺服器的應用程式伺服器上定義資料源。 預設值是AEM表單資料庫的資料源的JNDI名稱。
 
-## JMS服務設定{#jms-service-settings}
+## JMS服務設定 {#jms-service-settings}
 
 JMS服務(`JMS`)允許與Java消息傳送系統(JMS)提供程式交互，這些提供程式實現了點對點消息傳送和發佈/訂閱消息傳送。
 
@@ -383,7 +383,7 @@ JMS服務可使用以下設定。
 
 `name1=value1;name2=value2`
 
-## LDAP服務設定{#ldap-service-settings}
+## LDAP服務設定 {#ldap-service-settings}
 
 LDAP服務(`LDAPService`)提供查詢LDAP目錄的操作。 LDAP目錄通常用於儲存組織中的人員、組和服務的資訊。
 
@@ -407,7 +407,7 @@ LDAP服務可使用以下設定。
 
 `property=value;property=value;...`
 
-## Microsoft SharePoint配置服務設定{#microsoft-sharepoint-configuration-service-settings}
+## Microsoft SharePoint配置服務設定 {#microsoft-sharepoint-configuration-service-settings}
 
 Microsoft SharePoint配置服務`(MSSharePointConfigService)`允許您指定具有模擬權限的AEM Forms用戶的憑據。 有關模擬權限的資訊，請參閱[配置Microsoft SharePoint的連接器](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)。
 
@@ -450,7 +450,7 @@ Microsoft SharePoint配置服務`(MSSharePointConfigService)`允許您指定具�
 
 **移除時Android擦去：** 指定當Android裝置上發生原則違規時會發生什麼事。選取此選項時，會刪除帳戶。 若未選取此選項，則會刪除儲存的帳戶密碼和快取資料。 在用戶修正策略違規之前，不會再進行同步嘗試。
 
-## 輸出服務設定{#output-service-settings}
+## 輸出服務設定 {#output-service-settings}
 
 輸出服務`(OutputService)`使您能夠將XML表單資料與在AEM Forms Designer中建立的表單設計合併，以建立以下格式之一的文檔輸出流：
 
@@ -473,7 +473,7 @@ Microsoft SharePoint配置服務`(MSSharePointConfigService)`允許您指定具�
 
 在處理大型資料檔案或在繁忙的伺服器上操作時，可能需要增加輸出服務超時。 要更改超時值，請確保硬體伺服器有足夠的記憶體，並且記憶體可用於Java應用程式伺服器堆。 預設值為 `180`.
 
-## PDFG配置服務設定{#pdfg-config-service-settings}
+## PDFG配置服務設定 {#pdfg-config-service-settings}
 
 下列設定可用於PDFG配置服務(`PDFGConfigService`)。
 
@@ -495,7 +495,7 @@ Microsoft SharePoint配置服務`(MSSharePointConfigService)`允許您指定具�
 
 **PDFG清理掃描秒數：** 如需詳細資訊，請參閱作業過期秒數區段。
 
-**工作過期秒數：** 產生PDF服務會在轉換輸入檔案時立即刪除這些檔案。它會暫時儲存輸出檔案，時間長度由PDFG清除掃描秒數和作業過期秒數設定決定。
+**工作過期秒數：** 產生PDF服務會在轉換輸入檔案時立即刪除這些檔案。它會暫時儲存輸出檔案，時間長度由PDFG清理掃描秒數和作業過期秒數設定決定。
 
 「作業過期秒數」設定指定檔案或空資料夾在符合刪除條件之前必須具有的版本。 PDFG清理掃描秒數設定指定清理線程掃描可刪除檔案的臨時資料夾的頻率。
 
@@ -505,7 +505,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **預設地區：** 用於覆寫部署「生成PDF」服務的伺服器的預設地區（國家/地區+語言）。如果此參數未指定，則預設區域設定由部署服務的作業系統確定。 此參數會控制將錯誤訊息傳回API的語言。
 
-## 表單工作流資料服務服務設定{#forms-workflow-data-services-service-settings}
+## 表單工作流資料服務服務設定 {#forms-workflow-data-services-service-settings}
 
 下列服務會擴充Data Services並公開Workspace用來與伺服器通訊的組合程式。 除非Adobe支援指示您執行此操作，否則請勿更改這些服務的配置選項。 這些服務不是直接存取的：
 
@@ -513,7 +513,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 * `ProcessManagementLcdsPropertyService`
 * `ProcessManagementLcdsTaskService`
 
-## 遠程服務設定{#remoting-service-settings}
+## 遠程服務設定 {#remoting-service-settings}
 
 大部分的服務都已設定好，您才能透過(AEM表單已過時)AEM Forms Remoting存取。 有關(AEM表單已過時)AEM表單遠程處理的資訊，請參閱[使用AEM表單寫程式](https://adobe.com/go/learn_aemforms_programming_63)。
 
@@ -523,7 +523,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **允許序列化不可序列化類：** 大多數AEM表單端點只允許使用可序列化類來調用。在較舊版本中，遠程化端點允許使用非可序列化類來從基於Flex的客戶端調用。 為了防止APS11-15中描述的安全漏洞，已變更。 如果要繼續將非可序列化類與Flex Remoting端點一起使用，請選中此複選框。
 
-## 儲存庫服務設定{#repository-service-settings}
+## 儲存庫服務設定 {#repository-service-settings}
 
 存放庫服務(`RepositoryService`)為AEM表單提供資源儲存和管理服務。 開發人員建立應用程式時，可以在存放庫中部署資產，而非在檔案系統中部署。 這些資產可以包括任何類型的宣傳材料，包括XML表單、PDF forms(包括Acrobat表單)、表單片段、影像、配置檔案、策略、SWF檔案、DDX檔案、XML架構、WSDL檔案和測試資料。
 
@@ -535,7 +535,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **提供者服務：** 用作儲存提供者的服務名稱。預設值為RepositoryProviderService。
 
-## 簽名服務設定{#signature-service-settings}
+## 簽名服務設定 {#signature-service-settings}
 
 簽名服務(`SignatureService`)可讓您的組織保護其分發和接收的Adobe PDF檔案的安全性和隱私。 此服務使用數位簽名和認證，以確保檔案不會遭到更改。 更改文檔會破壞其簽名。 由於安全功能應用於文檔本身，因此文檔在整個生命週期中都保持安全並受到控制；防火牆外、離線下載時，以及將防火牆提交回您的組織時。
 
@@ -575,7 +575,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **憑證存留期快取：** 在快取中以線上或透過其他方式擷取之憑證存留期。預設值為1天。
 
-### 傳輸選項{#transport-options}
+### 傳輸選項 {#transport-options}
 
 **代理主機：** 代理主機的URL。僅在提供了某些有效值時使用。 無預設值。
 
@@ -591,7 +591,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **通訊端逾時：** 發生通訊端逾時（等待資料傳輸時）之前等待的最長時間（以秒為單位）。最小值為1，最大值為3600。 預設值為 30。
 
-### 路徑驗證選項{#path-validation-options}
+### 路徑驗證選項 {#path-validation-options}
 
 **需要顯式策略：** 指定路徑是否必須對與簽名者證書的信任錨點關聯的至少一個證書策略有效。預設值為false。
 
@@ -609,7 +609,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **鏈構建期間需要有效的證書籤名：** 指定鏈構建器是否需要用於構建鏈的證書的有效簽名。選中此複選框後，鏈生成器將不會在證書上生成具有無效RSA簽名的鏈。 請考慮鏈CA > ICA > EE，其中CA在ICA上的簽名無效。 如果此設定為true，則鏈式構建將停止在ICA，而CA不會包含在鏈中。 如果此設定為false，則會產生完整的3憑證鏈。 此設定不會影響DSA簽名。 預設值為false。
 
-### 時間戳提供程式選項{#timestamp-provider-options}
+### 時間戳提供程式選項 {#timestamp-provider-options}
 
 **TSP伺服器URL:** 預設時間戳記提供者的URL。僅在提供了某些有效值時使用。 無預設值。
 
@@ -629,7 +629,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **忽略TimeStamp伺服器擴展**:選擇「 **忽略TimeStamp伺** 服器擴展」選項，以阻止AEM Forms伺服器與指定的時間戳伺服器聯繫。選取選項有助於避免因AEM Forms與時間戳記伺服器之間的連線逾時而發生的程式失敗。
 
-### 證書吊銷清單選項{#certificate-revocation-list-options}
+### 證書吊銷清單選項 {#certificate-revocation-list-options}
 
 **請首先查閱本地URI:** 指定是否應將本地URI或CRL查找中提供的CRL位置指定為優先於證書中指定的任何位置，以便進行吊銷檢查。預設值為false。
 
@@ -645,7 +645,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **在CRL中需要AKI擴展：** 指定是否必須將授權密鑰標識符擴展包含在CRL中。預設值為false。
 
-### 聯機證書狀態協定選項{#online-certificate-status-protocol-options}
+### 聯機證書狀態協定選項 {#online-certificate-status-protocol-options}
 
 **OCSP伺服器URL:** 預設OCSP伺服器的URL。是否使用透過此URL指定的OCSP伺服器取決於「要查詢的URL」選項設定。 無預設值。
 
@@ -671,7 +671,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **需要OCSP ISIS-MTT CertHash擴充功能：** 指定OCSP回應中是否必須包含憑證公開金鑰雜湊擴充功能。預設值為false。
 
-### {#error-handling-options-for-debugging}調試的錯誤處理選項
+### 調試的錯誤處理選項 {#error-handling-options-for-debugging}
 
 **下次API呼叫時清除憑證快取：** 指定下次呼叫簽名服務作業時是否要清除憑證快取。呼叫操作後，此選項會設回false。 預設值為false。
 
@@ -679,7 +679,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **在下次API呼叫時清除OCSP快取：** 指定是否在下次呼叫簽名服務作業時清除OCSP快取。呼叫操作後，此選項會設回false。 預設值為false。
 
-## 已觀看資料夾服務設定{#watched-folder-service-settings}
+## 已觀看資料夾服務設定 {#watched-folder-service-settings}
 
 「觀看資料夾」服務(`WatchedFolder`)配置所有觀看資料夾端點的共同屬性。 它也提供受監視資料夾端點的預設值。 （請參閱[設定觀看的資料夾端點](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)。） 外部用戶端應用程式不會叫用它，或用於在Workbench中建立的程式。
 
@@ -744,7 +744,7 @@ PDFG清理掃描秒數的預設值為`43200`（12小時）。 作業過期秒數
 
 **限制：** 選取此選項時，會限制AEM表單在任何指定時間處理的已觀看資料夾作業數量。Batch Size值確定作業的最大數量（請參閱關於限制）。
 
-## Web服務設定{#web-service-service-settings}
+## 網站服務設定 {#web-service-service-settings}
 
 Web服務服務(`WebService`)使進程能夠調用Web服務操作。
 
@@ -776,7 +776,7 @@ Web服務可使用下列設定。
 * cms
 * jceks
 
-## XSLT轉換服務設定{#xslt-transformation-service-settings}
+## XSLT轉換服務設定 {#xslt-transformation-service-settings}
 
 XSLT轉換服務(`XSLTService`)使進程能夠在XML文檔上應用可擴展樣式表語言轉換(XSLT)。
 
@@ -784,13 +784,13 @@ XSLT轉換服務(`XSLTService`)使進程能夠在XML文檔上應用可擴展樣�
 
 **工廠名稱：** 用於執行XSLT轉換的Java類的完全限定名稱。如果未指定值，則使用運行表單伺服器的Java虛擬機中配置的預設工廠。
 
-## 修改服務{#modifying-security-settings-for-a-service}的安全設定
+## 修改服務的安全設定 {#modifying-security-settings-for-a-service}
 
 forms伺服器可讓您為每個服務配置安全設定，從而允許您按服務級別配置細粒度的訪問控制。
 
 已安裝預設安全性設定檔，然後可依您的系統需求進行設定。 每個安全配置檔案都有一個關聯的域，並在用戶級別或組級別建立。
 
-### 修改服務{#modify-security-settings-for-a-service}的安全設定
+### 修改服務的安全設定 {#modify-security-settings-for-a-service}
 
 1. 在管理控制台中，按一下「服務」>「應用程式和服務」>「服務管理」。
 1. 在「服務管理」頁上，按一下要配置的服務。
@@ -837,16 +837,16 @@ forms伺服器可讓您為每個服務配置安全設定，從而允許您按服
 
 1. 按一下「新增」。
 
-### 從安全配置檔案{#remove-the-principal-from-a-security-profile}中刪除主體
+### 從安全配置檔案中刪除主體 {#remove-the-principal-from-a-security-profile}
 
 1. 在「服務管理」頁上，選擇要配置的服務。
 1. 按一下&#x200B;**Security**&#x200B;頁簽，選擇要刪除的安全配置檔案，然後按一下&#x200B;**Remove**。
 
-## 配置服務{#configuring-pooling-for-a-service}的池
+## 為服務配置池 {#configuring-pooling-for-a-service}
 
 每個服務都可以利用池功能來處理傳入的調用請求。 使用服務池可確保服務實例一次由單個線程調用，並在調用請求間重複使用，這可能導致效能的提高。 您也可以使用集區來指定「最大非同步服務實例數」選項，該選項允許服務限制並行處理的請求數。
 
-### 啟用池{#enable-pooling}
+### 啟用集區 {#enable-pooling}
 
 1. 在管理控制台中，按一下「服務」>「應用程式和服務」>「服務管理」。
 1. 在「服務管理」頁上，按一下要配置的服務。
@@ -858,7 +858,7 @@ forms伺服器可讓您為每個服務配置安全設定，從而允許您按服
 1. 在「調用等待超時」框中，輸入等待服務可用於調用請求的毫秒數。 如果未指定此設定的值，則預設值為0，因此不會有等待時間。
 1. 按一下「儲存」。
 
-### 刪除池{#remove-pooling}
+### 移除集區 {#remove-pooling}
 
 1. 在管理控制台中，按一下「服務」>「應用程式和服務」>「服務管理」。
 1. 在「服務管理」頁上，按一下要配置的服務。

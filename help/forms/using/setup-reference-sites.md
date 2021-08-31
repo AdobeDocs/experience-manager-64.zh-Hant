@@ -1,22 +1,22 @@
 ---
 title: 設定AEM Forms參考網站
-seo-title: 設定AEM Forms參考網站
+seo-title: Set up and configure AEM Forms reference sites
 description: AEM Forms參考網站示範如何使用AEM Forms在組織中實作端對端工作流程。
-seo-description: AEM Forms參考網站示範如何使用AEM Forms在組織中實作端對端工作流程。
+seo-description: AEM Forms reference sites showcase how you can use AEM Forms to implement end-to-end workflow in an organization.
 uuid: 087d58a1-d84e-49ac-a82d-4e7fc708f00f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: 933084f92d116111dbfea55d52b1ad60ae691505
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2936'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
 
-# 設定和配置AEM Forms參考網站{#set-up-and-configure-aem-forms-reference-sites}
+# 設定AEM Forms參考網站 {#set-up-and-configure-aem-forms-reference-sites}
 
 AEM Forms提供參考網站實作，以示範AEM Forms如何協助金融服務行業和政府組織，隨時隨地在任何裝置上將其複雜的交易轉換為簡單而吸引人的數位體驗。
 
@@ -40,7 +40,7 @@ We.Finance和We.Gov參考網站會繪製真實的使用案例，以便與現有�
 
 * 與Adobe Sign整合，以安全方式簽署及提交最適化表單。
 
-## 設定參考站點{#prerequisites-and-steps-to-set-up-reference-sites}的先決條件和步驟
+## 設定參考網站的必要條件和步驟 {#prerequisites-and-steps-to-set-up-reference-sites}
 
 設定參考網站之前，請確定您有下列項目：
 
@@ -135,7 +135,7 @@ We.Finance和We.Gov參考網站會繪製真實的使用案例，以便與現有�
  </tbody> 
 </table>
 
-## 安裝並配置AEM Forms {#install-and-configure-aem-forms}
+## 安裝及設定AEM Forms {#install-and-configure-aem-forms}
 
 依照[在OSGi](/help/forms/using/installing-configuring-aem-forms-osgi.md)上安裝和設定AEM Forms中所述，安裝和部署AEM Forms。
 
@@ -153,7 +153,7 @@ We.Finance和We.Gov參考網站會繪製真實的使用案例，以便與現有�
 
 ## 配置Day CQ Link Externalizer configuration {#externalizer}
 
-在AEM中，**Externalizer**&#x200B;是OSGI服務，可讓您以程式設計方式轉換資源路徑(例如/path/to/my/page)填入外部和絕對URL(例如，https://www.mycompany.com/path/to/my/page)，方法是使用預先設定的DNS來預先修正路徑。 請參閱[將URL外部化](/help/sites-developing/externalizer.md)。
+在AEM中，**Externalizer**&#x200B;是OSGI服務，可讓您以程式設計方式將資源路徑（例如/path/to/my/page）轉換為外部和絕對URL(例如https://www.mycompany.com/path/to/my/page)，方法是使用預先設定的DNS來預先固定路徑。 請參閱[將URL外部化](/help/sites-developing/externalizer.md)。
 
 >[!CAUTION]
 >
@@ -262,7 +262,7 @@ AEM DS服務設定是參考網站使用案例中電子郵件通訊的發佈執�
    * 轉至&#x200B;**[!UICONTROL Sales > We.Finance Auto Insurance]**，然後按一下&#x200B;**[!UICONTROL Import]**。
    * 轉至&#x200B;**[!UICONTROL Sales > We.Finance Home Mortgage]**，然後按一下&#x200B;**[!UICONTROL Import]**。
 
-## 為Microsoft Dynamics {#configure-oauth-cloud-service-for-microsoft-dynamics}配置OAuth雲端服務
+## 為Microsoft Dynamics配置OAuth雲端服務 {#configure-oauth-cloud-service-for-microsoft-dynamics}
 
 在AEM Forms中設定OAuth雲端服務，以啟用AEM Forms與Microsoft Dynamics之間的通訊。 執行下列步驟，在AEM製作和發佈執行個體上設定OAuthCloud Service:
 
@@ -289,7 +289,7 @@ AEM DS服務設定是參考網站使用案例中電子郵件通訊的發佈執�
 
 1. 點選&#x200B;**[!UICONTROL 儲存]**。
 
-## 設定參考網站Adobe Sign雲端服務{#sign-service}
+## 設定參考網站Adobe Sign雲端服務 {#sign-service}
 
 對製作和發佈例項執行下列動作：
 
@@ -322,13 +322,13 @@ AEM DS服務設定是參考網站使用案例中電子郵件通訊的發佈執�
 1. 儲存設定。
 1. （**僅作者例項**）前往&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL 資料來源]** > **[!UICONTROL 全域]**。 選擇&#x200B;**[!UICONTROL roi-rest]**&#x200B;並點選&#x200B;**[!UICONTROL 屬性]**。 點選「**[!UICONTROL 驗證設定]**」，並將「驗證類型&#x200B;]**」設為「**[!UICONTROL &#x200B;基本驗證&#x200B;]**」。**[!UICONTROL &#x200B;指定`admin`/ `admin`作為用於訪問服務的用戶名/密碼。 點選&#x200B;**[!UICONTROL 儲存並關閉]**。
 
-## 與Marketing Cloud整合{#integrate-with-marketing-cloud}
+## 與Marketing Cloud整合 {#integrate-with-marketing-cloud}
 
 您可以整合AEM Forms與Adobe Analytics和Adobe Target。 雖然Adobe Analytics可協助您產生報表並分析最適化表單的效能，但Adobe Target可協助您提供個人化體驗，並針對最適化表單執行A/B測試。
 
 請執行下列動作，在AEM Forms中設定Adobe Analytics和Adobe Target。
 
-### 配置Adobe Analytics {#configure-adobe-analytics}
+### 設定Adobe Analytics {#configure-adobe-analytics}
 
 AEM Forms與Adobe Analytics的整合可讓您監控及分析客戶與表單和檔案的互動情形。 它可協助您找出並修正問題區域，並採取行動以提高轉換率。
 
@@ -354,7 +354,7 @@ AEM Forms與Adobe Analytics的整合可讓您監控及分析客戶與表單和�
 
    參考網站提供分析報告，內含信用卡、住房抵押和兒童支援使用案例的種子資料。 有關種子資料的配置，請參閱[We.Finance參考站點逐步說明](/help/forms/using/finance-reference-site-walkthrough.md)和[We.Gov參考站點逐步說明](/help/forms/using/gov-reference-site-walkthrough.md)。
 
-### 配置目標{#configure-target}
+### 設定Target {#configure-target}
 
 參考網站會展示AEM Forms與Adobe Target的整合，讓您在最適化檔案中加入目標式和個人化內容。 此外，還可建立最適化表單的A/B測試。
 
@@ -383,7 +383,7 @@ AEM Forms與Adobe Analytics的整合可讓您監控及分析客戶與表單和�
 
 信用卡申請和住房抵押申請使用案例演示了如何執行A/B測試，並演示了報告的示範用途。 如需逐步說明，請參閱[We.Finance參考網站逐步說明](/help/forms/using/finance-reference-site-walkthrough.md)。
 
-## 下一步{#next-step}
+## 下一步 {#next-step}
 
 現在，您都已準備好探索參考網站。 如需參考網站工作流程和步驟的詳細資訊，請參閱：
 

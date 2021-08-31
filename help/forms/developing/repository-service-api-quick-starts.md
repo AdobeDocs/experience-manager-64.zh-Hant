@@ -1,8 +1,8 @@
 ---
 title: 儲存庫服務API快速入門
-seo-title: 儲存庫服務API快速入門
+seo-title: Repository Service API Quick Starts
 description: 使用AEM Forms Repository服務可建立資料夾、編寫資源、列出資源、讀取資源、更新資源、搜索資源、建立資源間關係、鎖定資源、管理訪問控制清單以及刪除資源。
-seo-description: 使用AEM Forms Repository服務可建立資料夾、編寫資源、列出資源、讀取資源、更新資源、搜索資源、建立資源間關係、鎖定資源、管理訪問控制清單以及刪除資源。
+seo-description: Use the AEM Forms Repository service to create a folder, write  a resource, list resources, reading a resource, update a resource, search for resources, create relationships between resources, locking a resource, managing access control lists, and delete a resource.
 uuid: 9c307e6e-d9a4-4021-8493-9f28a745dedb
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 859a2b57-df90-4030-9061-c454d07cb753
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
-# 儲存庫服務API快速入門{#repository-service-api-quick-starts}
+# 儲存庫服務API快速入門 {#repository-service-api-quick-starts}
 
 下列快速入門適用於AEM Forms存放庫服務。
 
@@ -60,9 +60,9 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
 
 >[!NOTE]
 >
->預設不存在Applications/FormsApplication。 若要遵循快速入門，請使用Workbench建立此應用程式。 有關使用Workbench建立應用程式的資訊，請參閱[流程設計快速入門](https://help.adobe.com/en_US/livecycle/11.0/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7fc4.html)。
+>預設不存在Applications/FormsApplication。 若要遵循快速入門，請使用Workbench建立此應用程式。 有關使用Workbench建立應用程式的資訊，請參閱[流程設計快速入門](http://www.adobe.com/go/learn_aemforms_workbench_64)。
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}建立資料夾
+## 快速入門（SOAP模式）:使用Java API建立資料夾 {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
 以下Java代碼示例在以下位置`/Applications/FormsApplication/1.0/`建立名為&#x200B;*FormsFolder*&#x200B;的資料夾。 （請參閱[建立資料夾](/help/forms/developing/aem-forms-repository.md#creating-folders)。）
 
@@ -168,7 +168,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}編寫資源
+## 快速入門（SOAP模式）:使用Java API編寫資源 {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
 以下Java代碼示例將名為&#x200B;*loan.xdp*&#x200B;的資源寫入儲存庫中。 資源會新增至`/Applications/FormsApplication/1.0/FormsFolder`位置。 （請參閱[寫入資源](/help/forms/developing/aem-forms-repository.md#writing-resources)。）
 
@@ -296,7 +296,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}列出資源
+## 快速入門（SOAP模式）:使用Java API列出資源 {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
 以下Java代碼示例列出位於`Applications/FormsApplication/1.0/FormsFolder`中的資源。 （請參閱[列出資源](/help/forms/developing/aem-forms-repository.md#listing-resources)。）
 
@@ -395,7 +395,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-reading-a-resource-using-the-java-api}讀取資源
+## 快速入門（SOAP模式）:使用Java API讀取資源 {#quick-start-soap-mode-reading-a-resource-using-the-java-api}
 
 以下Java代碼示例從儲存庫中讀取名為&#x200B;*Loan.xdp*&#x200B;的資源。 XDP檔案位於`/Applications/FormsApplication/1.0/FormsFolder/`中。 （請參閱[讀取資源](/help/forms/developing/aem-forms-repository.md#reading-resources)。）
 
@@ -496,7 +496,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}更新資源
+## 快速入門（SOAP模式）:使用Java API更新資源 {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
 以下Java代碼示例通過修改其說明更新`/Applications/FormsApplication/1.0/FormsFolder`。 （請參閱[更新資源](/help/forms/developing/aem-forms-repository.md#updating-resources)。）
 
@@ -608,7 +608,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-searching-for-resources-using-the-java-api}搜索資源
+## 快速入門（SOAP模式）:使用Java API搜尋資源 {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
 
 以下Java代碼示例在`Applications/FormsApplication/1.0/FormsFolder`中搜索Loan.xdp。 （請參閱[搜索資源](/help/forms/developing/aem-forms-repository.md#searching-for-resources)。）
 
@@ -732,7 +732,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}建立資源之間的關係
+## 快速入門（SOAP模式）:使用Java API建立資源之間的關係 {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
 下列Java程式碼範例會建立AEM Forms存放庫中兩個資源之間的關係。 （請參閱[建立資源關係](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)。）
 
@@ -873,7 +873,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-locking-a-resource-using-the-java-api}鎖定資源
+## 快速入門（SOAP模式）:使用Java API鎖定資源 {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
 以下Java代碼示例鎖定/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp。 （請參閱[鎖定資源](/help/forms/developing/aem-forms-repository.md#locking-resources)。）
 
@@ -984,7 +984,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}管理存取控制清單
+## 快速入門（SOAP模式）:使用Java API管理存取控制清單 {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
 
 以下Java代碼示例讀取並建立儲存庫中的訪問控制清單(ACL)。
 
@@ -1099,7 +1099,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  }
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}刪除資源
+## 快速入門（SOAP模式）:使用Java API刪除資源 {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
 以下Java代碼示例從`Applications/FormsApplication/1.0/FormsFolder`中刪除Loan.xdp。 如果此XDP檔案未位於此資料夾中，則會引發例外狀況。 （請參閱[刪除資源](/help/forms/developing/aem-forms-repository.md#deleting-resources)。）
 

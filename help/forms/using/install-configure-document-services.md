@@ -1,16 +1,16 @@
 ---
 title: 安裝和配置文檔服務
-seo-title: 安裝和配置文檔服務
+seo-title: Installing and configuring document services
 description: 安裝AEM Forms檔案服務，以建立、組合、分發、封存PDF檔案、新增數位簽名以限制檔案存取，以及將條碼式表單解碼。
-seo-description: 安裝AEM Forms檔案服務，以建立、組合、分發、封存PDF檔案、新增數位簽名以限制檔案存取，以及將條碼式表單解碼。
+seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4295'
+source-wordcount: '4251'
 ht-degree: 2%
 
 ---
@@ -85,7 +85,6 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 >* 在以UNIX為基礎的作業系統上，PDF產生器支援WebKit和PhantomJS轉換路由，以將HTML檔案轉換為PDF檔案。
 
 >
-
 
 
 ### 基於UNIX的作業系統的額外需求 {#extrarequirements}
@@ -208,7 +207,6 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 >
 
 
-
 安裝Acrobat後，開啟Microsoft Word。 在&#x200B;**Acrobat**&#x200B;標籤上，按一下「建立PDF **」 ，並將電腦上可用的.doc或.docx檔案轉換為PDF檔案。**&#x200B;如果轉換成功，AEM Forms已準備好搭配PDF產生器服務使用Acrobat。
 
 ### 設定環境變數 {#setup-environment-variables}
@@ -260,8 +258,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 一般而言，您�
 >* 如果在基於UNIX的平台上使用OpenOffice，請運行以下命令以設定路徑變數：
 
 >
->  
-`export OpenOffice_PATH=/opt/openoffice.org4`
+>  `export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### （僅適用於IBM WebSphere）配置IBM SSL套接字提供程式 {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -387,7 +384,6 @@ PDF產生器服務提供WebKit、WebCapture和PhantomJS路由或方法，將HTML
 >
 
 
-
 ## 安裝AEM Forms附加元件套件 {#install-aem-forms-add-on-package}
 
 AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM Forms檔案服務和其他AEM Forms功能。 執行下列步驟以安裝套件：
@@ -440,7 +436,7 @@ AEM Forms附加元件套件是部署至AEM的應用程式。 此套件包含AEM 
 
 ### 設定本機使用者帳戶以執行PDF產生器服務  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
 
-執行PDF產生器服務需要本機使用者帳戶。 有關建立本地用戶的步驟，請參閱在Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)中建立用戶帳戶或在基於UNIX的平台](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/4/html/Step_by_Step_Guide/s1-starting-create-account.html)中建立用戶帳戶。[[
+執行PDF產生器服務需要本機使用者帳戶。 有關建立本地用戶的步驟，請參閱在Windows](https://support.microsoft.com/en-us/help/13951/windows-create-user-account)中建立用戶帳戶或在基於UNIX的平台中建立用戶帳戶。[
 
 1. 開啟「[AEM Forms PDF生成器配置](http://localhost:4502/libs/fd/pdfg/config/ui.html)」頁。
 

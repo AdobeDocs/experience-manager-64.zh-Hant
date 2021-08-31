@@ -1,8 +1,8 @@
 ---
 title: 以寫程式方式管理端點
-seo-title: 以寫程式方式管理端點
+seo-title: Programmatically Managing Endpoints
 description: 使用Endpoint Registry服務添加EJB端點、添加SOAP端點、添加監視資料夾端點、添加電子郵件端點、添加遠程處理端點、添加Task Manager端點、修改端點、刪除端點以及檢索端點連接器資訊。
-seo-description: 使用Endpoint Registry服務添加EJB端點、添加SOAP端點、添加監視資料夾端點、添加電子郵件端點、添加遠程處理端點、添加Task Manager端點、修改端點、刪除端點以及檢索端點連接器資訊。
+seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
 uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10849'
+source-wordcount: '10791'
 ht-degree: 0%
 
 ---
 
-# 以寫程式方式管理端點{#programmatically-managing-endpoints}
+# 以寫程式方式管理端點 {#programmatically-managing-endpoints}
 
 **關於端點註冊表服務**
 
@@ -53,7 +53,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 * 移除端點（請參閱[移除端點](programmatically-endpoints.md#removing-endpoints)。）
 * 檢索端點連接器資訊（請參閱[檢索端點連接器資訊](programmatically-endpoints.md#retrieving-endpoint-connector-information)。）
 
-## 添加EJB終結點{#adding-ejb-endpoints}
+## 添加EJB終結點 {#adding-ejb-endpoints}
 
 可以使用AEM Forms Java API以寫程式方式將EJB端點添加到服務中。 通過將EJB端點添加到服務中，可以使客戶端應用程式使用EJB模式調用該服務。 也就是說，在設定調用AEM Forms所需的連接屬性時，可以選擇EJB模式。 （請參閱[設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
 
@@ -65,7 +65,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >通常，EJB端點預設會添加到服務中。但是，EJB端點可以添加到以寫程式方式部署的進程中，或者在刪除EJB端點時添加到該進程中，並且必須重新添加。
 
-### 步驟{#summary-of-steps}的摘要
+### 步驟摘要 {#summary-of-steps}
 
 要將EJB端點添加到服務，請執行以下任務：
 
@@ -116,7 +116,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#adding-an-ejb-endpoint-using-the-java-api}添加EJB終結點
+### 使用Java API添加EJB端點 {#adding-an-ejb-endpoint-using-the-java-api}
 
 使用Java API添加EJB端點：
 
@@ -156,7 +156,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 添加SOAP端點{#adding-soap-endpoints}
+## 添加SOAP端點 {#adding-soap-endpoints}
 
 您可以使用AEM Forms Java API以程式設計方式將SOAP端點新增至服務。 通過添加SOAP端點，可以使客戶端應用程式能夠使用SOAP模式調用服務。 也就是說，在設定調用AEM Forms所需的連接屬性時，可以選擇SOAP模式。
 
@@ -168,7 +168,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >通常，SOAP端點預設會添加到服務中。但是，SOAP端點可以添加到以寫程式方式部署的進程中，或者在刪除SOAP端點時添加，並且必須重新添加。
 
-### 步驟{#summary_of_steps-1}的摘要
+### 步驟摘要 {#summary_of_steps-1}
 
 要向服務添加SOAP端點，請執行以下任務：
 
@@ -221,7 +221,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#add-a-soap-endpoint-using-the-java-api}添加SOAP端點
+### 使用Java API添加SOAP端點 {#add-a-soap-endpoint-using-the-java-api}
 
 使用Java API將SOAP端點新增至服務：
 
@@ -261,7 +261,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 添加監視的資料夾端點{#adding-watched-folder-endpoints}
+## 添加監視的資料夾端點 {#adding-watched-folder-endpoints}
 
 您可以使用AEM Forms Java API以程式設計方式將「監看資料夾」端點新增至服務。 新增「監看資料夾」端點，可讓使用者將檔案（例如PDF檔案）放入資料夾。 將檔案放在資料夾中時，會叫用已設定的服務並處理檔案。 服務執行指定操作後，會將修改的檔案保存在指定的輸出資料夾中。 已設定以固定速率間隔或cron排程（例如每週一、週三和週五中午）掃描受監視的資料夾。
 
@@ -275,7 +275,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >無法使用Web服務添加「監視的資料夾」端點。
 
-### 步驟{#summary_of_steps-2}的摘要
+### 步驟摘要 {#summary_of_steps-2}
 
 要將「監看資料夾」端點添加到服務，請執行以下任務：
 
@@ -323,7 +323,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 * **url**:指定已監視的資料夾位置。在群集環境中，此值必須指向可從群集中的每台電腦訪問的共用網路資料夾。
 * **非同步**:將調用類型標識為非同步或同步。只能同步調用瞬態和同步進程。 預設值為true。 建議使用非同步。
-* **cronExpression**:由石英用於調度輸入目錄的輪詢。有關配置cron表達式的詳細資訊，請參閱[https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html](https://quartz.sourceforge.net/javadoc/org/quartz/CronTrigger.html)。
+* **cronExpression**:由石英用於調度輸入目錄的輪詢。
 * **purgeDuration**:這是必填屬性。結果資料夾中的檔案和資料夾早於此值時將被清除。 此值以天計量。 此屬性有助於確保結果資料夾未滿。 值為–1天表示絕不刪除結果資料夾。 預設值為–1。
 * **repeatInterval**:掃描「觀看」資料夾以進行輸入的間隔（秒）。除非啟用限制，否則此值應比處理平均作業的時間長；否則，系統可能會變得過載。 預設值為 5。
 * **repeatCount**:監視的資料夾掃描資料夾或目錄的次數。值–1表示掃描不確定。 預設值為–1。
@@ -389,7 +389,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#add-a-watched-folder-endpoint-using-the-java-api}新增「監看資料夾」端點
+### 使用Java API新增「監看資料夾」端點 {#add-a-watched-folder-endpoint-using-the-java-api}
 
 使用AEM Forms Java API新增「監看資料夾」端點：
 
@@ -461,7 +461,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 監看的資料夾配置值常數檔案{#watched-folder-configuration-values-constant-file}
+### 監看的資料夾配置值常數檔案 {#watched-folder-configuration-values-constant-file}
 
 [快速入門：使用Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api)新增「監看資料夾」端點時，會使用必須是Java專案一部分的常數檔案，以便編譯快速入門。 此常數檔案表示在添加「監看資料夾」端點時必須設定的配置值。 以下Java代碼表示常數檔案。
 
@@ -494,7 +494,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
         }
 ```
 
-## 新增電子郵件端點{#adding-email-endpoints}
+## 新增電子郵件端點 {#adding-email-endpoints}
 
 您可以使用AEM Forms Java API，以程式設計方式將電子郵件端點新增至服務。 通過添加電子郵件端點，用戶可以向指定的電子郵件帳戶發送包含一個或多個檔案附件的電子郵件。 然後叫用配置服務操作並處理這些檔案。 服務執行指定操作後，會向發送者發送一封電子郵件，其中修改的檔案作為檔案附件。
 
@@ -508,7 +508,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >您無法使用Web服務來添加電子郵件端點。
 
-### 步驟{#summary_of_steps-3}的摘要
+### 步驟摘要 {#summary_of_steps-3}
 
 要向服務添加電子郵件端點，請執行以下任務：
 
@@ -634,7 +634,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#add-an-email-endpoint-using-the-java-api}新增電子郵件端點
+### 使用Java API新增電子郵件端點 {#add-an-email-endpoint-using-the-java-api}
 
 使用Java API新增電子郵件端點：
 
@@ -706,7 +706,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 電子郵件配置值常數檔案{#email-configuration-values-constant-file}
+### 電子郵件配置值常數檔案 {#email-configuration-values-constant-file}
 
 [快速入門：使用Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api)新增電子郵件端點會使用必須是Java專案一部分的常數檔案，以便編譯快速入門。 此常數檔案代表新增電子郵件端點時必須設定的設定值。 以下Java代碼表示常數檔案。
 
@@ -746,7 +746,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
  }
 ```
 
-## 添加遠程終結點{#adding-remoting-endpoints}
+## 新增遠端端點 {#adding-remoting-endpoints}
 
 >[!NOTE]
 >
@@ -766,7 +766,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >不能使用Web服務添加Remoting端點。
 
-### 步驟{#summary_of_steps-4}的摘要
+### 步驟摘要 {#summary_of_steps-4}
 
 要從服務中刪除端點，請執行以下任務：
 
@@ -819,7 +819,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#add-a-remoting-endpoint-using-the-java-api}添加遠程端點
+### 使用Java API新增遠端端點 {#add-a-remoting-endpoint-using-the-java-api}
 
 使用Java API新增遠端端點：
 
@@ -859,7 +859,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 添加TaskManager終結點{#adding-taskmanager-endpoints}
+## 添加TaskManager端點 {#adding-taskmanager-endpoints}
 
 您可以使用AEM Forms Java API以程式設計方式將TaskManager端點新增至服務。 通過將TaskManager端點添加到服務，可使Workspace用戶調用該服務。 也就是說，在工作區中工作的用戶可以調用具有相應TaskManager終結點的進程。
 
@@ -867,7 +867,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >不能使用Web服務添加TaskManager終結點。
 
-### 步驟{#summary_of_steps-5}的摘要
+### 步驟摘要 {#summary_of_steps-5}
 
 要將TaskManager端點添加到服務，請執行以下任務：
 
@@ -930,7 +930,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#add-a-taskmanager-endpoint-using-the-java-api}添加TaskManager終結點
+### 使用Java API添加TaskManager終結點 {#add-a-taskmanager-endpoint-using-the-java-api}
 
 使用Java API添加TaskManager終結點：
 
@@ -980,7 +980,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 修改端點{#modifying-endpoints}
+## 修改端點 {#modifying-endpoints}
 
 您可以使用AEM Forms Java API以程式設計方式修改現有端點。 通過修改端點，可以更改端點的行為。 例如，假設「監看資料夾」端點指定用作監看資料夾的資料夾。 您可以用程式設計方式修改屬於「監看資料夾」端點的設定值，使另一個資料夾可作為監看資料夾運作。 有關屬於「觀看資料夾」端點的配置值的資訊，請參閱[添加觀看資料夾端點](programmatically-endpoints.md#adding-watched-folder-endpoints)。
 
@@ -990,7 +990,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >不能使用Web服務修改端點。
 
-### 步驟{#summary_of_steps-6}的摘要
+### 步驟摘要 {#summary_of_steps-6}
 
 要修改端點，請執行以下任務：
 
@@ -1042,7 +1042,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#modifying-an-endpoint-using-the-java-api}修改端點
+### 使用Java API修改端點 {#modifying-an-endpoint-using-the-java-api}
 
 使用Java API修改端點：
 
@@ -1082,7 +1082,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 移除端點{#removing-endpoints}
+## 移除端點 {#removing-endpoints}
 
 您可以使用AEM Forms Java API以程式設計方式從服務中移除端點。 移除端點後，無法使用端點啟用的叫用方法叫用服務。 例如，如果從服務中刪除SOAP端點，則無法使用SOAP模式調用服務。
 
@@ -1092,7 +1092,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >不能使用Web服務刪除終結點。
 
-### 步驟{#summary_of_steps-7}的摘要
+### 步驟摘要 {#summary_of_steps-7}
 
 要從服務中刪除端點，請執行以下任務：
 
@@ -1136,7 +1136,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#removing-an-endpoint-using-the-java-api}移除端點
+### 使用Java API移除端點 {#removing-an-endpoint-using-the-java-api}
 
 使用Java API移除端點：
 
@@ -1170,7 +1170,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 檢索端點連接器資訊{#retrieving-endpoint-connector-information}
+## 檢索端點連接器資訊 {#retrieving-endpoint-connector-information}
 
 您可以使用AEM Forms API以程式設計方式擷取端點連接器的相關資訊。 連接器使端點能夠使用各種調用方法調用服務。 例如，「觀看資料夾」連接器可讓端點使用觀看資料夾叫用服務。 通過以寫程式方式檢索關於端點連接器的資訊，您可以檢索與連接器關聯的配置值，如需要哪些配置值以及哪些配置值是可選的。
 
@@ -1184,7 +1184,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 >
 >本主題使用`ConnectorRegistryClient` API來擷取端點連接器的相關資訊。 (請參閱[AEM Forms API參考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。)
 
-### 步驟{#summary_of_steps-8}的摘要
+### 步驟摘要 {#summary_of_steps-8}
 
 要檢索端點連接器資訊，請執行以下任務：
 
@@ -1233,7 +1233,7 @@ Endpoint Registry服務提供以寫程式方式管理端點的功能。 例如�
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### 使用Java API {#retrieve-endpoint-connector-information-using-the-java-api}檢索端點連接器資訊
+### 使用Java API擷取端點連接器資訊 {#retrieve-endpoint-connector-information-using-the-java-api}
 
 使用Java API檢索端點連接器資訊：
 

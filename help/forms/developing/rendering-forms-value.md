@@ -1,8 +1,8 @@
 ---
 title: 依值呈現Forms
-seo-title: 依值呈現Forms
+seo-title: Rendering Forms By Value
 description: 使用Forms API(Java)，透過Java API和網站服務API來依值轉譯表單。
-seo-description: 使用Forms API(Java)，透過Java API和網站服務API來依值轉譯表單。
+seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
 uuid: b932cc54-662f-40ae-94e0-20ac82845f3b
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: 50c34781-45e3-4255-a997-44f694527c92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
 
-# 按值{#rendering-forms-by-value}呈現Forms
+# 依值呈現Forms {#rendering-forms-by-value}
 
 通常，在Designer中建立的表單設計會參照Forms服務而傳遞。 表單設計可能很大，因此，參照傳遞這些設計會更有效率，以避免必須依值匯整表單設計位元組。 Forms服務也可以快取表單設計，這樣在快取時，就不需要持續讀取表單設計。
 
@@ -45,7 +45,7 @@ Forms服務也可以解析連結內容在表單設計中的位置。 例如，�
 >
 >如需Forms服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
-## 步驟{#summary-of-steps}的摘要
+## 步驟摘要 {#summary-of-steps}
 
 要按值呈現表單，請執行以下步驟：
 
@@ -77,7 +77,7 @@ Forms服務也可以解析連結內容在表單設計中的位置。 例如，�
 
 >[!NOTE]
 >
->如果要在表單內顯示資料，必須在`xfa:datasets`元素內指定資料。 如需XFA架構的相關資訊，請前往[https://partners.adobe.com/public/developer/xml/index_arch.html](https://partners.adobe.com/public/developer/xml/index_arch.html)。
+>如果要在表單內顯示資料，必須在`xfa:datasets`元素內指定資料。 如需XFA架構的相關資訊，請前往[https://www.pdfa.org/norm-refs/XFA-3_3.pdf](https://www.pdfa.org/norm-refs/XFA-3_3.pdf)。
 
 **將表單資料流寫入客戶端Web瀏覽器**
 
@@ -99,7 +99,7 @@ Forms服務依值轉譯表單時，會傳回您必須寫入用戶端網頁瀏覽
 
 [建立可轉譯Forms的網頁應用程式](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## 使用Java API {#render-a-form-by-value-using-the-java-api}按值呈現表單
+## 使用Java API依值呈現表單 {#render-a-form-by-value-using-the-java-api}
 
 使用Forms API(Java)依值轉譯表單：
 
@@ -150,7 +150,7 @@ Forms服務依值轉譯表單時，會傳回您必須寫入用戶端網頁瀏覽
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## 使用網站服務API {#render-a-form-by-value-using-the-web-service-api}依值呈現表單
+## 使用網站服務API依值呈現表單 {#render-a-form-by-value-using-the-web-service-api}
 
 使用Forms API（網站服務），依值轉譯表單：
 

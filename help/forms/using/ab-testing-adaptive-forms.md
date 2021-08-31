@@ -1,22 +1,22 @@
 ---
 title: 建立和管理最適化表單的A/B測試
-seo-title: 建立和管理最適化表單的A/B測試
+seo-title: Create and manage A/B test for adaptive forms
 description: AEM Forms與Adobe Target整合，可執行最適化表單的A/B測試，以增強客戶體驗並改善轉換率。
-seo-description: AEM Forms與Adobe Target整合，可執行最適化表單的A/B測試，以增強客戶體驗並改善轉換率。
+seo-description: AEM Forms integrates with Adobe Target that allows running A/B tests for adaptive forms to enhance customer experience and improve conversion rates.
 uuid: c41aea04-f4d9-41b9-b1a8-df2bb710354c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
 exl-id: e330a8e8-4d55-4723-921b-812cb243f420
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
 
-# 建立和管理最適化表單的A/B測試{#create-and-manage-a-b-test-for-adaptive-forms}
+# 建立和管理最適化表單的A/B測試 {#create-and-manage-a-b-test-for-adaptive-forms}
 
 ## 概覽 {#overview-br}
 
@@ -30,11 +30,11 @@ AEM Forms與Adobe Marketing Cloud解決方案Adobe Target整合，可跨多個�
 
 開始建立和分析最適化表單的A/B測試之前，您需要設定Target伺服器，並將其整合至AEM Forms。
 
-### 設定目標{#set-up-target}
+### 設定Target {#set-up-target}
 
 若要將AEM與Target整合，請確定您擁有有效的Adobe Target帳戶。 向Adobe Target註冊時，您會收到用戶端代碼。 您需要用戶端代碼、與Target帳戶相關聯的電子郵件，以及密碼，才能將AEM與Target連線。
 
-用戶端代碼可識別Adobe Target客戶帳戶，並在呼叫Adobe Target伺服器時作為URL中的子網域使用。 繼續操作之前，請確保您的憑據允許您登錄[https://testandtarget.omniture.com/](https://testandtarget.omniture.com/)。
+用戶端代碼可識別Adobe Target客戶帳戶，並在呼叫Adobe Target伺服器時作為URL中的子網域使用。 在繼續操作之前，登錄[https://experience.adobe.com/](https://experience.adobe.com/)，如果您有訪問權限，請查看[!UICONTROL 快速訪問]部分中的[!DNL Adobe Target]選項。
 
 ### 在AEM Forms中整合Target {#integrate-target-in-aem-forms}
 
@@ -76,8 +76,7 @@ AEM Forms與Adobe Marketing Cloud解決方案Adobe Target整合，可跨多個�
 >
 >如果您稍後更新已設定的Target URL，請務必更新任何執行中的A/B測試，使其指向目前的URL。 有關更新A/B測試的資訊，請參閱[更新A/B測試](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p)。
 
-
-## 在AEM {#create-audiences-within-aem}中建立對象
+## 在AEM中建立對象 {#create-audiences-within-aem}
 
 AEM可讓您建立對象，並用於A/B測試。 您在AEM中建立的對象可在AEM Forms中使用。 執行下列步驟以在AEM中建立對象：
 
@@ -94,7 +93,7 @@ AEM可讓您建立對象，並用於A/B測試。 您在AEM中建立的對象可�
 
 您可以在為表單設定A/B測試時選取對象，如下所示。
 
-## 建立A/B測試{#create-a-b-test}
+## 建立A/B測試 {#create-a-b-test}
 
 執行下列步驟以建立最適化表單的A/B測試。
 
@@ -127,7 +126,7 @@ AEM可讓您建立對象，並用於A/B測試。 您在AEM中建立的對象可�
 
 您的A/B測試現在正在執行，系統會根據指定的分送，隨機提供指定的對象。
 
-## 更新A/B測試{#update-a-b-test}
+## 更新A/B測試 {#update-a-b-test}
 
 您可以更新執行中A/B測試的對象和體驗分配。 若要這麼做：
 
@@ -138,7 +137,7 @@ AEM可讓您建立對象，並用於A/B測試。 您在AEM中建立的對象可�
 1. 視需要更新對象和體驗分送。
 1. 按一下&#x200B;**更新**。
 
-## 檢視和分析A/B測試報表{#view-and-analyze-a-b-test-report}
+## 檢視和分析A/B測試報表 {#view-and-analyze-a-b-test-report}
 
 在您允許A/B測試在所需期間執行後，您就可以產生報表，並檢查哪個體驗已導致更好的轉換。 您可以宣告效能較佳的體驗為獲勝者，或選擇執行其他A/B測試。 要執行此操作，請執行以下步驟：
 

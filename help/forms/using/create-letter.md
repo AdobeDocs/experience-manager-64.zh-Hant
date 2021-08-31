@@ -1,24 +1,24 @@
 ---
 title: 建立字母
-seo-title: 建立字母
+seo-title: Create Letter
 description: '本主題提供建立信函、新增資料模組及附件，以及在通信管理中預覽信函的步驟。 '
-seo-description: '本主題提供建立信函、新增資料模組及附件，以及在通信管理中預覽信函的步驟。 '
+seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
-feature: 通信管理
+feature: Correspondence Management
 exl-id: 8fa14b30-013c-4a23-bebf-2262e8212461
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '4015'
+source-wordcount: '3989'
 ht-degree: 2%
 
 ---
 
 # 建立字母 {#create-letter}
 
-## 通信管理工作流{#correspondence-management-workflow}
+## 通信管理工作流程 {#correspondence-management-workflow}
 
 「通信管理」工作流程包含四個階段：
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 1. 信函建立
 1. 後處理
 
-### 模板建立{#template-creation}
+### 範本建立 {#template-creation}
 
 下圖顯示建立通信模板的典型工作流。
 
@@ -45,11 +45,11 @@ ht-degree: 2%
 
 1. 作者預覽信函並提交以進行後期處理。 有關[後處理](/help/forms/using/submit-letter-topostprocess.md)的詳細資訊。
 
-#### 使用通信管理{#using-letter-templates-provided-with-correspondence-management}隨附的信函模板
+#### 使用通信管理隨附的信函模板 {#using-letter-templates-provided-with-correspondence-management}
 
 您可以選擇修改和重複使用通信管理提供的模板，而不是從頭建立佈局模板。 您可以使用設計工具來快速修改範本的品牌、資料和內容欄位，以符合您組織的需求。 有關通信管理模板的詳細資訊，請參閱[參考信函模板](/help/forms/using/reference-cm-layout-templates.md)。
 
-### 文檔片段建立{#document-fragment-creation}
+### 檔案片段建立 {#document-fragment-creation}
 
 文檔片段是通信的可重複使用的部分\元件，使用它可以合成信函\通信。
 
@@ -67,27 +67,27 @@ ht-degree: 2%
 
 條件可讓您根據提供的資料，定義建立通信時包含的內容。 條件以控制變數的形式說明。 變數可以是資料字典元素或預留位置。 新增條件時，您可以選擇根據控制變數的值包含資產。 條件具有以運算式為基礎的單一輸出。 根據目前條件變數，第一個運算式發現為true。 其值會成為條件的輸出。
 
-#### 佈局片段{#layout-fragment}
+#### 版面片段 {#layout-fragment}
 
 版面片段是可用於一或多個字母的版面。 配置片段用於建立可重複的模式，尤其是動態表格。 版面可包含典型的表單欄位，例如「地址」和「參考編號」。 它還包含表示目標區域的空子形式。 配置(XDP)在Designer中建立，然後上傳到Forms和Documents](/help/forms/using/get-xdp-pdf-documents-aem.md)。[
 
-### 信函建立{#letter-creation}
+### 信函建立 {#letter-creation}
 
 有兩種方式可產生傳送給客戶的通信：用戶驅動和系統驅動。
 
-#### 用戶驅動{#user-driven}
+#### 使用者導向 {#user-driven}
 
 面向客戶的員工（如索賠調整員或案例工作人員）可以建立自定義的通信。 使用簡單且直覺的信函填寫介面，商務使用者可新增可選文字至信函，在即時預覽信函時個人化可編輯的內容。 然後，他們可以將自訂通信提交到後端流程。
 
 ![用戶驅動、定製的通信](assets/02.png)
 
-#### 系統驅動{#system-driven}
+#### 系統驅動 {#system-driven}
 
 通信產生是由事件觸發器驅動而自動化。 例如，通過將預定義模板與公民資料合併而生成發送給公民的提醒通知，以提示她進行預繳稅款申報。 最終信函可以透過電子郵件、列印、傳真或封存。
 
 ![系統驅動的通信](assets/us_cm_generate.png)
 
-### 後處理{#post-processing}
+### 後處理 {#post-processing}
 
 最終通信可傳送至後端處理，以進行後期處理。 通信可以是：
 
@@ -97,13 +97,13 @@ ht-degree: 2%
 1. 轉換為可搜尋的PDF檔案，其中包含用於封存和稽核用途的所有必要中繼資料。
 1. 包含在PDFPortfolio中，其中包含更多檔案，例如行銷資料。 然後，PDFPortfolio便可作為最終通信傳送。
 
-### 通信管理解決方案體系結構{#correspondence-management-solution-architecture}
+### 通信管理解決方案體系結構 {#correspondence-management-solution-architecture}
 
 下圖概述信函解決方案的範例架構。
 
 ![信函解決方案架構](assets/us_cm_architecture_es3.png)
 
-## 解構字母{#deconstructing-a-letter}
+## 解構一封信 {#deconstructing-a-letter}
 
 此取消通知文檔是典型通信的示例：
 
@@ -144,7 +144,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 在構造字母之前分析它{#analyze-a-letter-before-you-construct-it}
+## 在建立信之前分析信函 {#analyze-a-letter-before-you-construct-it}
 
 分析每封信函，找出組成信函的各種片段。 「應用程式專員」會分析產生的對應。
 
@@ -164,7 +164,7 @@ ht-degree: 2%
 * 方案還提供：項目所需的技能集和工具。
 * 規劃實作的最佳實務。 「高級實施概述。
 
-## 執行分析{#benefits-of-performing-the-analysis}的好處
+## 執行分析的好處 {#benefits-of-performing-the-analysis}
 
 **內容** 重用您擁有生成通信所需的新內容的統一清單。許多信函都有許多內容，例如頁首、頁尾、免責聲明和介紹，這些內容可在各信函中重複使用。 所有此類通用內容都可由專家建立和批准一次，然後在許多通信中重複使用。
 
@@ -174,7 +174,7 @@ ht-degree: 2%
 
 **估計字母的復** 雜度請務必確定建立特定通信的複雜度。此分析有助於確定建立信函範本所需的時間和技能集。 這進而有助於評估實施信函解決方案的資源和成本。
 
-## 通信複雜性{#correspondence-complexity}
+## 通信複雜性 {#correspondence-complexity}
 
 通過分析以下參數，可以確定通信的複雜性：
 
@@ -217,7 +217,7 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-## 建立字母{#overview-of-creating-a-letter}概述
+## 建立信函概述 {#overview-of-creating-a-letter}
 
 1. 選取適當的版面，作為信函的底部，並建立信函。
 1. 新增資料模組或版面片段至信函並加以設定。
@@ -231,15 +231,15 @@ ht-degree: 2%
 * [相容性套件](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html)。安裝相容性套件以檢視&#x200B;**Forms**&#x200B;頁面上的&#x200B;**字母**&#x200B;選項。
 
 * 字母XDP([layout](/help/forms/using/document-fragments.md))。
-* 構成字母部分的其他XDP（[佈局片段](/help/forms/using/document-fragments.md)）。 XDP\Layouts是在[Designer](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/)中建立的。
+* 構成字母部分的其他XDP（[佈局片段](/help/forms/using/document-fragments.md)）。 XDP\Layouts是在[Designer](http://www.adobe.com/go/learn_aemforms_designer_64)中建立的。
 
 * 相關的[資料字典](/help/forms/using/data-dictionary.md)（可選）。
 * 您要在通信中使用的[資料模組](/help/forms/using/document-fragments.md)。
-* [測](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) 試資料將XML檔案與測試資料移植到其中。如果您使用資料字典，則需要測試資料。
+* [測](/help/forms/using/data-dictionary.md#p-working-with-test-data-p) 試資料將測試資料移植到XML檔案中。如果您使用資料字典，則需要測試資料。
 
-## 建立信函範本{#create-a-letter-template}
+## 建立信函範本 {#create-a-letter-template}
 
-### 選擇佈局並輸入字母屬性{#select-a-layout-and-enter-the-letter-properties}
+### 選擇佈局並輸入字母屬性 {#select-a-layout-and-enter-the-letter-properties}
 
 1. 選擇&#x200B;**Forms** > **字母**。
 
@@ -268,7 +268,7 @@ ht-degree: 2%
 
    **下一個**:點選「開 **啟**」時，「通信管理」會顯示版面的表示，並列出版面(XDP)中的所有元件。繼續插入[資料模組和版面片段並進行設定](/help/forms/using/create-letter.md#p-insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them-p)。
 
-### 在信函中插入資料模組和版面片段並加以設定{#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
+### 在信函中插入資料模組和版面片段並加以設定 {#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them}
 
 建立通信後，您點選「開啟」時，「通信管理」會顯示版面的表示，並列出版面(XDP)中的所有子表單/目標區域。 在每個目標區域中，您可以選擇插入資料模組或配置片段（然後插入配置片段中的資料模組）。
 
@@ -341,7 +341,7 @@ ht-degree: 2%
 
 1. 指定連結後，點選&#x200B;**Next**。 「通信管理」顯示「附件」螢幕。
 
-### 設定附件{#set-up-the-attachments}
+### 設定附件 {#set-up-the-attachments}
 
 1. 選擇&#x200B;**添加資產**。
 1. 在「選取資產」畫面中，點選要與信函一起附加的資產，然後點選&#x200B;**Done**。 您必須先將資產上傳至Assets。 建議您只附加PDF和Microsoft Office文檔，但也可以附加影像。 如需在DAM中上傳資產的詳細資訊，請參閱[上傳資產](/help/assets/managing-assets-touch-ui.md)。
@@ -355,7 +355,7 @@ ht-degree: 2%
 
 在通信管理中建立信函模板後，最終用戶/代理/聲明調整器可以在CCR用戶介面中開啟信函，並通過輸入資料、設定內容和管理附件來建立通信。 如需詳細資訊，請參閱[建立通信](/help/forms/using/create-correspondence.md)。
 
-## 每個欄位{#types-of-linkage-available-for-each-of-the-fields}可用的連結類型
+## 每個欄位可用的連結類型 {#types-of-linkage-available-for-each-of-the-fields}
 
 下表說明了哪些類型的連結可用於各種類型的欄位。
 

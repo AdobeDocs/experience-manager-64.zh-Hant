@@ -1,8 +1,8 @@
 ---
 title: 管理憑證和憑證的基本知識
-seo-title: 管理憑證和憑證的基本知識
+seo-title: Basics of managing certificates and credentials
 description: 了解管理憑證和憑證的基本知識。
-seo-description: 了解管理憑證和憑證的基本知識。
+seo-description: Learn about the basics of managing certificates and credentials.
 uuid: f421e206-e7b5-416c-b9fb-974094f10a66
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
-# 管理證書和憑據的基本知識{#basics-of-managing-certificates-and-credentials}
+# 管理憑證和憑證的基本知識 {#basics-of-managing-certificates-and-credentials}
 
 *憑據*&#x200B;包含簽名或標識文檔所需的私鑰資訊。 *certificate*&#x200B;是您為信任配置的公鑰資訊。 AEM forms使用憑證和憑證有數種用途：
 
@@ -35,7 +35,7 @@ AEM Forms不提供產生金鑰組的任何選項。 不過，您可以使用工�
 
 [https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html](https://docs.oracle.com/cd/E19798-01/821-1841/gjrgy/index.html)
 
-[https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html](https://blogs.adobe.com/livecycle/2010/01/creating_ssl_keys_and_certific.html)
+[https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL](https://helpcenter.gsx.com/hc/en-us/articles/115015960428-How-to-Generate-a-Self-Signed-Certificate-and-Private-Key-using-OpenSSL)
 
 支援下列簽名類型，並可以在AEM表單中匯入：
 

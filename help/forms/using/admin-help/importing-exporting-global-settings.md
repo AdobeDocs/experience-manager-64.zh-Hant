@@ -1,8 +1,8 @@
 ---
 title: 匯入和匯出全域設定
-seo-title: 匯入和匯出全域設定
+seo-title: Importing and exporting global settings
 description: 您可以匯入和匯出工作區的搜尋範本定義和全域設定。
-seo-description: 您可以匯入和匯出工作區的搜尋範本定義和全域設定。
+seo-description: You can import and export search template definitions and global settings for Workspace.
 uuid: 8f1f210d-e850-4b2c-bb5a-942fa8299791
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: 9eabafbe-2193-4799-9bdd-c2be42ead0b9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
 
-# 導入和導出全局設定{#importing-and-exporting-global-settings}
+# 匯入和匯出全域設定 {#importing-and-exporting-global-settings}
 
 您可以匯入和匯出工作區的搜尋範本定義和全域設定。
 
@@ -33,13 +33,13 @@ ht-degree: 0%
 >
 >如果更改全局設定檔案中的事件屬性，則必須重新啟動伺服器。
 
-## 導入搜索模板定義{#import-a-search-template-definition}
+## 導入搜索模板定義 {#import-a-search-template-definition}
 
 1. 在管理控制台中，按一下「服務>工作區>全域管理」。
 1. 在「導入搜索模板定義」框下，按一下「選擇檔案」並選擇搜索模板。 您只能匯入原本從工作區例項匯出的搜尋範本定義。
 1. 按一下「匯入」。
 
-## 導出搜索模板定義{#export-a-search-template-definition}
+## 導出搜索模板定義 {#export-a-search-template-definition}
 
 1. 在「全局管理」(Global Administration)頁面的「導出搜索模板」(Export search template definition)下，按一下「全部列出」(List All)。
 1. 在搜索模板清單中，選擇要導出的模板。
@@ -50,17 +50,17 @@ ht-degree: 0%
 
 1. 按一下「匯出」 ，然後將檔案儲存在電腦上。
 
-## 導入全局設定{#import-global-settings}
+## 匯入全域設定 {#import-global-settings}
 
 1. 在「全局管理」頁的「導入全局設定」下，按一下「選擇檔案」並選擇全局設定檔案。 全域設定檔案必須是XML格式。
 1. 按一下「匯入」。
 
-## 導出全局設定{#export-global-settings}
+## 匯出全域設定 {#export-global-settings}
 
 1. 在「全局管理」頁的「導出全局設定」下，按一下「導出」。
 1. 將檔案儲存在電腦上。
 
-## 工作區全局設定{#workspace-global-settings}
+## 工作區全域設定 {#workspace-global-settings}
 
 您可以修改全域設定檔案；但是，您可能希望編輯的唯一設定是JChannelConnectionProperties、formViewOnly和specialRoutes設定。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 工作區全域設定檔案包含下列設定：
 
-### specialRoutes設定{#specialroutes-settings}
+### specialRoutes設定 {#specialroutes-settings}
 
 *specialRoutes*&#x200B;設定指定工作區中批准和拒絕的特殊路由的屬性。 某些情況下，這些路由的按鈕會顯示在工作區的任務卡上，用戶無需開啟表單即可選擇它們。 您可以修改全局設定檔案中的specialRoutes設定，以添加用於批准和拒絕的自定義名稱，或建立其他路由。
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 **client_specialRoutes_names:** 用於從資源檔案中查找自定義字串值的鍵。此設定中的每個條目都需要包含名稱和樣式的值。
 
-### JGroup設定{#jgroup-settings}
+### JGroup設定 {#jgroup-settings}
 
 只有在您從AdobeLiveCycleES 2.5或更舊版本升級時，才會顯示這些設定。
 
@@ -104,15 +104,13 @@ ht-degree: 0%
 
 **server_remoteevents_JGroupName:** 用於遠程事件通信的JGroup的名稱。此值是隨機產生的，以避免叢集中的衝突。 此值不應變更。
 
-如需JGroup和Workspace的其他資訊，請參閱[JGroup和AEM Forms Workspace — 說明](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html)。
-
-### formView settings {#formview-settings}
+### formView設定 {#formview-settings}
 
 **client_formView_openFormInFullScreen:** 若要以全螢幕模式顯示工作區中的所有表單，請將此選項設為true。預設情況下，此選項會設為false，且表單不會以全螢幕模式顯示。 請注意，用戶服務包含一個選項，用於以全螢幕模式開啟與任務關聯的文檔。 這可讓您根據每個程式控制顯示。
 
 **client_routes_formViewOnly:** 設為True時，路由不會顯示在工作區的卡片檢視或清單檢視中。預設值為False，表示路由會顯示在卡片檢視和清單檢視中。
 
-### 其他設定{#other-settings}
+### 其他設定 {#other-settings}
 
 **client_mimeTypes_openOutsideBrowser:** 將在Workspace瀏覽器實例外部開啟的文檔的MIME類型。如果貴組織的程式需要其他MIME類型，請在此處指定。 預設值為：
 
@@ -126,7 +124,7 @@ ht-degree: 0%
 
 **client_pollingInterval:** 設定Flex Workspace上(JEE上的AEM表單已過時)所使用的輪詢間隔（以秒為單位），以偵測新的和修改的任務。預設為3秒。 這對AEM Forms Workspace無效。
 
-**client_systemContext_name:** 指定自訂名稱（例如公民），以顯示在AEM Forms Workspace中任務附件的「新增者」欄位（位於「附件」標籤中）中。
+**client_systemContext_name:** 指定自訂名稱（例如公民），以顯示在AEM Forms Workspace中任務附件的「新增者」欄位（位於「附件」索引標籤中）中。
 
 若要定義自訂名稱：
 

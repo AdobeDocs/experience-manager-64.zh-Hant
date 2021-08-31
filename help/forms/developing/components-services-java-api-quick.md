@@ -1,8 +1,8 @@
 ---
 title: 元件和服務Java APIQ快速入門(SOAP)
-seo-title: 元件和服務Java APIQ快速入門(SOAP)
+seo-title: Components and Services Java APIQuick Start(SOAP)
 description: 使用「元件和服務Java API快速入門」部署元件、設定服務的執行上下文、禁用服務安全性、啟動服務、修改服務配置值以及刪除元件。
-seo-description: 使用「元件和服務Java API快速入門」部署元件、設定服務的執行上下文、禁用服務安全性、啟動服務、修改服務配置值以及刪除元件。
+seo-description: Use the Components and Services Java API Quick Start to deploy a component, set the execution context of a service, disable service security, start a service, modify service configuration values, and remove components.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,14 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
 
-# 元件和服務Java API快速入門(SOAP){#components-and-services-java-apiquick-start-soap}
+# 元件和服務Java API快速入門(SOAP) {#components-and-services-java-apiquick-start-soap}
 
 元件和服務均可使用Java API快速入門(SOAP)。
 
@@ -46,9 +46,9 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
 
 >[!NOTE]
 >
->如果您有自訂元件，並且使用SOAP或EJB協定來調用同一本地伺服器上的DSC，並且這些調用在升級後停止工作，則使用in-VM([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://help.adobe.com/en_US/AEMForms/6-3/ProgramLC/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html#DSC_IN_VM_PASSTHROUGH_STRATEGY))調用策略。 使用預設的ServiceClientFactory的VM內DSC調用方法，並且不使用SOAP或EJB協定構建ServiceClientFactory。
+>如果您有自訂元件，並且使用SOAP或EJB協定來調用同一本地伺服器上的DSC，並且這些調用在升級後停止工作，則使用in-VM([DSC_IN_VM_PASSTHROUGH_STRATEGY](https://www.adobe.io/experience-manager/reference-materials/6-4/forms/programlc/javadoc/com/adobe/idp/dsc/clientsdk/ServiceClientFactoryProperties.html))調用策略。 使用預設的ServiceClientFactory的VM內DSC調用方法，並且不使用SOAP或EJB協定構建ServiceClientFactory。
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}部署元件
+## 快速入門（SOAP模式）:使用Java API部署元件 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
 以下Java示例部署了基於名為&#x200B;*adobe-emailSample-dsc.jar*&#x200B;的JAR檔案的元件。
 
@@ -150,7 +150,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}設定服務的執行內容
+## 快速入門（SOAP模式）:使用Java API設定服務的執行內容 {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
 以下Java代碼示例將Run-As Invoker執行上下文設定為名為&#x200B;*EncryptDocument*&#x200B;的示例服務。
 
@@ -242,7 +242,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}禁用服務安全
+## 快速入門（SOAP模式）:使用Java API停用服務安全性 {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
 以下Java代碼示例禁用了示例EncryptDocument服務以及從此服務（設定值和加密服務）中調用的服務的安全性。
 
@@ -355,7 +355,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-starting-a-service-using-the-java-api}啟動服務
+## 快速入門（SOAP模式）:使用Java API啟動服務 {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
 以下Java代碼示例啟動名為&#x200B;*SendEmailService*&#x200B;的服務。
 
@@ -413,7 +413,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}修改服務配置值
+## 快速入門（SOAP模式）:使用Java API修改服務配置值 {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
 
 以下Java示例修改屬於SendEmail服務的配置值。
 
@@ -525,7 +525,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門（SOAP模式）:使用Java API {#quick-start-soap-mode-removing-components-using-the-java-api}移除元件
+## 快速入門（SOAP模式）:使用Java API移除元件 {#quick-start-soap-mode-removing-components-using-the-java-api}
 
 下列Java程式碼範例會使用Java API來移除元件。
 

@@ -1,19 +1,19 @@
 ---
 title: 配置客戶端和伺服器選項
-seo-title: 配置客戶端和伺服器選項
+seo-title: Configuring client and server optionsn
 description: 了解如何配置各種客戶端和伺服器選項，如伺服器配置設定、文檔安全形色和事件審核。
-seo-description: 了解如何配置各種客戶端和伺服器選項，如伺服器配置設定、文檔安全形色和事件審核。
+seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
 uuid: 1f9f9886-726e-4fad-9ff8-0ff11eef653e
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
-feature: 文件安全性
+feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '10283'
+source-wordcount: '10250'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 註冊電子郵件包含註冊頁面的連結，以及如何註冊的資訊。 在受邀的使用者註冊後，檔案安全性會發出包含啟動頁面連結的啟動電子郵件。 啟用後，帳戶會維持有效，直到您停用或刪除為止。
 
-如果啟用內置註冊，則只需指定一次SMTP伺服器、註冊電子郵件詳細資訊、訪問功能，以及重置密碼電子郵件資訊。 在啟用內置註冊之前，請確保已在「用戶管理」中建立本地域，並已將「文檔安全邀請用戶」角色分配給組織中的相應用戶和組。 （請參閱[添加本地域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[建立和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。） 如果您未使用內建註冊，則必須使用AEM Forms SDK建立自己的使用者註冊系統。 請參閱[使用AEM表單進行程式設計中「開發AEM表單的SPI」的說明。 ](https://www.adobe.com/go/learn-aemforms-programming-63)如果不使用內置註冊選項，建議您在激活電子郵件和客戶端登錄螢幕中配置一條消息，以通知用戶如何聯繫管理員以獲取新密碼或其他資訊。
+如果啟用內置註冊，則只需指定一次SMTP伺服器、註冊電子郵件詳細資訊、訪問功能，以及重置密碼電子郵件資訊。 在啟用內置註冊之前，請確保已在「用戶管理」中建立本地域，並已將「文檔安全邀請用戶」角色分配給組織中的相應用戶和組。 （請參閱[添加本地域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[建立和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。） 如果您未使用內建註冊，則必須使用AEM Forms SDK建立自己的使用者註冊系統。 請參閱[使用AEM表單進行程式設計中「開發AEM表單的SPI」的說明。 ](/help/forms/developing/introducing-java-api-soap-quick.md)如果不使用內置註冊選項，建議您在激活電子郵件和客戶端登錄螢幕中配置一條消息，以通知用戶如何聯繫管理員以獲取新密碼或其他資訊。
 
 **啟用和配置邀請的用戶註冊**
 

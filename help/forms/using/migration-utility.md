@@ -1,8 +1,8 @@
 ---
 title: 移轉 AEM Forms 資產和文件
-seo-title: 移轉 AEM Forms 資產和文件
+seo-title: Migrate AEM Forms assets and documents
 description: 移轉公用程式可讓您將AEM Forms資產和檔案從AEM 6.3 Forms或舊版移轉至AEM 6.4 Forms。
-seo-description: 移轉公用程式可讓您將AEM Forms資產和檔案從AEM 6.3 Forms或舊版移轉至AEM 6.4 Forms。
+seo-description: The Migration utility allows you to Migrate AEM Forms assets and documents from AEM 6.3 Forms or prior versions to AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
 topic-tags: correspondence-management, installing
@@ -12,10 +12,10 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 3%
+source-wordcount: '1829'
+ht-degree: 1%
 
 ---
 
@@ -38,13 +38,13 @@ ht-degree: 3%
 
 **就地升級**
 
-如果您執行就地升級，升級的執行個體已擁有資產和檔案。 不過，在使用資產和文檔之前，您需要安裝[AEMFD相容性包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)（包括通信管理相容性包）
+如果您執行就地升級，升級的執行個體已擁有資產和檔案。 不過，在使用資產和文檔之前，您需要安裝[AEMFD相容性包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)（包括通信管理相容性包）
 
 然後，您需要透過[執行移轉公用程式](#runningmigrationutility)來更新資產和檔案。
 
 **如果安裝不到位**
 
-如果安裝過程不當（最新），則您必須先安裝[AEMFD相容性套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)（包括通信管理相容性套件），才能使用資產和檔案。
+如果安裝過程不當（最新），則您必須先安裝[AEMFD相容性套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)（包括通信管理相容性套件），才能使用資產和檔案。
 
 然後，您需要在新設定上匯入資產套件（zip或cmp），然後透過[執行移轉公用程式](#runningmigrationutility)來更新資產和檔案。 由於[向後相容性相關](/help/sites-deploying/backward-compatibility.md)的更改，crx-repository中一些資料夾的位置被更改。 手動從先前的設定將相依性（自訂程式庫和資產）匯出並匯入至全新環境。
 
@@ -107,15 +107,12 @@ ht-degree: 3%
    >這些元件可在適用性Forms編輯器的規則編輯器中開啟，以便移轉。
    >
    >* 若要在自訂元件中移轉規則和指令碼（若從6.3升級則非必要），請點選「適用性Forms自訂元件移轉」，在下一個畫面中，點選「開始移轉」。 下列項目會移轉：
-      >
-      >  
-   * 使用規則編輯器（6.1 FP1和更新版本）建立的規則和指令碼
+   >
+   >  * 使用規則編輯器（6.1 FP1和更新版本）建立的規則和指令碼
    >  * 在6.1及舊版UI中使用「指令碼」索引標籤建立的指令碼
    >* 若要移轉範本（若從6.3升級則非必要），請點選「適用性Forms範本移轉」，然後在下一個畫面中點選「開始移轉」。 下列項目會移轉：
-
-      >
-      >  
-   * 舊範本 — 使用AEM 6.1 Forms或更舊版本，在/apps下建立的最適化表單範本。 這包括範本元件中定義的指令碼。
+   >
+   >  * 舊範本 — 使用AEM 6.1 Forms或更舊版本，在/apps下建立的最適化表單範本。 這包括範本元件中定義的指令碼。
    >  * 新範本 — 使用/conf底下的範本編輯器建立的最適化表單範本。 這包括移轉使用規則編輯器建立的規則和指令碼。
 
 

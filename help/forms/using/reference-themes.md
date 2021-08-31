@@ -1,23 +1,23 @@
 ---
 title: 參考主題
-seo-title: 參考主題
+seo-title: Reference Themes
 description: 'AEM Forms提供可透過Software Distribution取得，且用來設定表單樣式的最適化表單主題。 '
-seo-description: 'AEM Forms提供可透過Software Distribution取得，且用來設定表單樣式的最適化表單主題。 '
+seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '552'
 ht-degree: 0%
 
 ---
 
-# 參考主題{#reference-themes}
+# 參考主題 {#reference-themes}
 
-[](/help/forms/using/themes.md) 它們可讓您在不深入了解CSS的情況下建立表單樣式。除了預設主題，您還可以安裝[AEM-FORMS.-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES)套件來取得下列主題：
+[](/help/forms/using/themes.md) 它們可讓您在不深入了解CSS的情況下建立表單樣式。除了預設主題，您還可以安裝[AEM Forms附加元件套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)以取得下列主題：
 
 * 柏利
 * 執行
@@ -49,7 +49,7 @@ Beryl主題由[We.Gov適用性表單](/help/forms/using/gov-reference-site-walkt
 
 [按一下放大](assets/exec-1.png)
 
-## 執行燈{#exec-light}
+## 執行燈 {#exec-light}
 
 Exec Light主題使用空格來建立無縫體驗。 「下一頁」(Next)和「提交」(Submit)按鈕可獲得實線填充和3D陰影。 左側的選定頁簽會顯示箭頭，而非雙勾號。
 ![執行燈主題](assets/exec-light.png)
@@ -82,7 +82,7 @@ Ultramarine主題使用深藍色陰影來突出顯示元件，如頁簽、面板
 
 [按一下放大](assets/urbane-1.png)
 
-## 美國網頁設計標準{#u-s-web-design-standards}
+## 美國網頁設計標準 {#u-s-web-design-standards}
 
 美國網頁設計標準主題（如名稱所示）使用美國網頁設計標準草案網站中描述的字型和樣式。 聯邦組織使用Web標準，在聯邦政府網站上建立一致的Web體驗。
 ![美國網頁設計標準主題](assets/us-web-standards.png)

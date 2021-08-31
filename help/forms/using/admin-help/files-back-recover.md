@@ -1,8 +1,8 @@
 ---
 title: 要備份和恢復的檔案
-seo-title: 要備份和恢復的檔案
+seo-title: Files to back up and recover
 description: 本文檔介紹必須備份的應用程式和資料檔案。
-seo-description: 本文檔介紹必須備份的應用程式和資料檔案。
+seo-description: This document describes the application and data files that must be backed up.
 uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2142'
 ht-degree: 0%
 
 ---
 
-# 要備份和恢復的檔案{#files-to-back-up-and-recover}
+# 要備份和恢復的檔案 {#files-to-back-up-and-recover}
 
 以下各節將詳細說明必須備份的應用程式和資料檔案。
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 * 如果需要關閉群集環境中的節點進行備份，請確保在主節點之前關閉輔助節點。 否則，可能會導致叢集或伺服器不一致。 此外，主節點應在任何次節點之前上線。
 * 對於群集的還原操作，應停止群集中每個節點的應用程式伺服器。
 
-## 全局文檔儲存目錄{#global-document-storage-directory}
+## 全局文檔儲存目錄 {#global-document-storage-directory}
 
 GDS是一個目錄，用於儲存進程內使用的長期檔案。 長期檔案的存留期可跨越一或多次啟動AEM表單系統，且可跨越數天甚至數年。 這些長期使用的檔案可以包含PDF、原則和表單範本。 長期檔案是許多AEM表單部署整體狀態的關鍵部分。 如果某些或所有長期文檔丟失或損壞，表單伺服器可能會變得不穩定。
 
@@ -35,7 +35,7 @@ GDS是一個目錄，用於儲存進程內使用的長期檔案。 長期檔案�
 
 GDS的位置是在AEM表單安裝過程中或更新時使用管理控制台確定的。 除了為GDS保留高可用性位置之外，您還可以為文檔啟用資料庫儲存。 請參見[將資料庫用於文檔儲存時的備份選項](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)。
 
-### GDS位置{#gds-location}
+### GDS位置 {#gds-location}
 
 如果在安裝期間將位置設定保留為空，則該位置預設為應用程式伺服器安裝下的目錄。 必須備份應用程式伺服器的以下目錄：
 
@@ -52,17 +52,17 @@ GDS的位置是在AEM表單安裝過程中或更新時使用管理控制台確�
 
 如果原始位置不再可用，則在恢復期間，GDS的位置可以更改。 （請參閱[在恢復期間更改GDS位置](/help/forms/using/admin-help/recovering-aem-forms-data.md#changing-the-gds-location-during-recovery)。）
 
-### 將資料庫用於文檔儲存{#backup-options-when-database-is-used-for-document-storage}時的備份選項
+### 將資料庫用於文檔儲存時的備份選項 {#backup-options-when-database-is-used-for-document-storage}
 
 您可以使用管理控制台在AEM表單資料庫中啟用AEM表單檔案儲存。 即使此選項保留資料庫中的所有永久性文檔，AEM表單仍需要基於檔案系統的GDS目錄，因為它用於儲存與AEM表單的會話和調用相關的永久和臨時檔案和資源。
 
 在管理控制台的「核心繫統設定」中或通過使用Configuration Manager選擇「在資料庫中啟用文檔儲存」選項時，AEM表單不允許快照備份模式和滾動備份模式。 因此，您不需要使用AEM表單來管理備份模式。 如果使用此選項，則在啟用該選項後，您應僅備份GDS一次。 從備份中恢復AEM表單時，無需更名GDS或恢復GDS的備份目錄。
 
-## AEM存放庫{#aem-repository}
+## AEM存放庫 {#aem-repository}
 
 如果在安裝AEM表單時設定crx-repository，則會建立AEM存放庫(crx-repository)。 crx-repository目錄的位置是在AEM表單安裝過程中確定的。 AEM存放庫備份和還原需要資料庫和GDS，才能在AEM表單中使用一致的AEM表單資料。 AEM存放庫包含通信管理解決方案、Forms manager和AEM Forms Workspace的資料。
 
-### 通信管理解決方案{#correspondence-management-solution}
+### 通信管理解決方案 {#correspondence-management-solution}
 
 通信管理解決方案可集中處理和管理安全、個人化及互動式通信的建立、組合及傳遞。 它可讓您透過從建立到封存的簡化程式，從預先核准和自訂撰寫的內容，快速組合對應內容。 因此，您的客戶可以及時、準確、方便、安全且相關的通訊。 您的業務通過簡化的流程實現客戶交互的最大價值，並將成本和風險降至最低，以便輕鬆、快速和高效地完成。
 
@@ -82,7 +82,7 @@ AEM Forms Workspace與的功能相符(JEE上的AEM Forms已遭取代)Flex Worksp
 
 它允許在不使用Flash Player和Adobe Reader的客戶端上進行任務管理。 除了PDF forms和Flex表單外，可方便HTML Forms的轉譯。
 
-## AEM forms資料庫{#aem-forms-database}
+## AEM forms資料庫 {#aem-forms-database}
 
 AEM表單資料庫儲存諸如表單對象、服務配置、進程狀態和對GDS和內容儲存根目錄（針對內容服務）中檔案的資料庫引用等內容。 資料庫備份可以即時執行而不中斷服務，並且恢復可以在特定時間點或特定更改。 本節介紹如何配置資料庫，以便即時備份資料庫。
 
@@ -92,7 +92,7 @@ AEM表單資料庫儲存諸如表單對象、服務配置、進程狀態和對GD
 
 >[!NOTE]
 >
->Adobe®LiveCycle® Content Services ES（已過時）是隨LiveCycle安裝的內容管理系統。 它使用戶能夠設計、管理、監控和優化以人為中心的流程。 內容服務（已過時）支援將於12/31/2014終止。 請參閱[Adobe產品生命週期文檔](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。 若要了解如何設定內容服務（已淘汰），請參閱[管理內容服務](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)。
+>Adobe®LiveCycle® Content Services ES（已過時）是隨LiveCycle安裝的內容管理系統。 它使用戶能夠設計、管理、監控和優化以人為中心的流程。 內容服務（已過時）支援將於12/31/2014終止。 請參閱[Adobe產品生命週期文檔](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
 
 ### DB2 {#db2}
 
@@ -104,7 +104,7 @@ AEM表單資料庫儲存諸如表單對象、服務配置、進程狀態和對GD
 
 IBM擁有一套工具和幫助系統來幫助資料庫管理員管理其備份和恢復任務：
 
-* IBM DB2 Archive Log Accelerator（請參閱[IBM DB2 Archive Log Accelerator for z/OS User&#39;s Guide](https://publib.boulder.ibm.com/infocenter/dzichelp/v2r2/topic/com.ibm.db2tools.alc.doc.ug/alcugb20.pdf?noframes=true)。）
+* IBM DB2歸檔日誌加速器
 * IBM DB2 Data Archive專家（請參閱[ IBM DB2 Data Archive Expert使用手冊和參考](https://publib.boulder.ibm.com/infocenter/mptoolic/v1r0/topic/com.ibm.db2tools.aeu.doc.ug/ahxugb13.pdf?noframes=true)。）
 
 DB2具有將資料庫備份到Tivoli Storage Manager的內置功能。 通過使用Tivoli Storage Manager, DB2備份可以儲存在其他介質或本地硬碟上。
@@ -151,11 +151,11 @@ binlog_format=mixed
 log-bin=logname
 ```
 
-## 內容儲存根目錄（僅限內容服務）{#content-storage-root-directory-content-services-only}
+## 內容儲存根目錄（僅限內容服務） {#content-storage-root-directory-content-services-only}
 
 內容儲存根目錄包含內容服務（已過時）儲存庫，儲存所有文檔、對象和索引。 必須備份內容儲存根目錄樹。 本節介紹如何為獨立環境和群集環境確定內容儲存根目錄的位置。
 
-### 內容儲存根位置（獨立環境）{#content-storage-root-location-stand-alone-environment}
+### 內容儲存根位置（獨立環境） {#content-storage-root-location-stand-alone-environment}
 
 安裝內容服務（已過時）時會建立內容儲存根目錄。 在AEM表單安裝過程中確定內容儲存根目錄的位置。
 
@@ -173,7 +173,7 @@ log-bin=logname
 
 如果/backup-lucene-indexes目錄不存在，請備份/lucene-indexes目錄，該目錄也位於內容儲存根目錄中。 如果/backup-lucene-indexes目錄存在，則不要備份/lucene-indexes目錄，因為它可能會導致錯誤。
 
-### 內容儲存根位置（群集環境）{#content-storage-root-location-clustered-environment}
+### 內容儲存根位置（群集環境） {#content-storage-root-location-clustered-environment}
 
 在群集環境中安裝Content Services（已過時）時，內容儲存根目錄將拆分為兩個不同的目錄：
 
@@ -195,7 +195,7 @@ log-bin=logname
 
 索引根目錄的預設位置是每個節點上的&#x200B;*[aem-forms root]*/lucene-indexes。
 
-## 客戶安裝的字型{#customer-installed-fonts}
+## 客戶安裝的字型 {#customer-installed-fonts}
 
 如果您在AEM表單環境中安裝了其他字型，則必須分別進行備份。 備份在管理控制台中「設定>核心繫統>配置」下指定的所有Adobe和客戶字型目錄。 確保備份整個字型目錄。
 

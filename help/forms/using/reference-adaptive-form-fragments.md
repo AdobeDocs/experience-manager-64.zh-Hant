@@ -1,25 +1,25 @@
 ---
 title: 參考最適化表單片段
-seo-title: 參考最適化表單片段
+seo-title: Reference adaptive form fragments
 description: 'AEM Forms提供最適化表單片段，供您作為資產來快速建立表單。 '
-seo-description: 'AEM Forms提供最適化表單片段，供您作為資產來快速建立表單。 '
+seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '414'
 ht-degree: 1%
 
 ---
 
-# 參考最適化表單片段{#reference-adaptive-form-fragments}
+# 參考最適化表單片段 {#reference-adaptive-form-fragments}
 
 [適用性](/help/forms/using/adaptive-form-fragments.md) 表單會分割一組欄位，或包含一組欄位的面板，供您在建立表單時使用。它可讓您輕鬆快速地建立表單。 您可以使用側欄中的資產瀏覽器，將最適化表單片段拖放至表單中，也可以在表單編輯器中編輯。
 
-針對最適化表單作者，參考片段提供於AEM Forms套件[AEM-FORMS.-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS)中。 包含下列片段：
+針對最適化表單作者，[AEM Forms附加套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中提供參考片段。 包含下列片段：
 
 * 地址
 * 連絡人資訊
@@ -50,33 +50,33 @@ ht-degree: 1%
 
 [按一下放大](assets/contact-info-1.png)
 
-## 信用卡資訊{#credit-card-information}
+## 信用卡資訊 {#credit-card-information}
 
 包括用於捕獲信用卡資訊的欄位，這些資訊可用於處理付款。
 [ ![信用卡資訊片段](assets/cc-info.png)](assets/cc-info-1.png)
 
-## 當前就業{#current-employment}
+## 當前就業 {#current-employment}
 
 包括用於獲取當前雇傭詳細資訊的欄位，如雇傭狀態、雇傭欄位、指定、組織和加入日期。
 ![當前雇傭片段](assets/current-emp.png)
 
 [按一下放大](assets/current-emp-1.png)
 
-## 相依項資訊{#dependents-information}
+## 相依項資訊 {#dependents-information}
 
 包括欄位，以指定一個或多個相依項的相關資訊，如其名稱、關係和年齡，以表格格式顯示。
 ![相依資訊片段](assets/dependents-info.png)
 
 [按一下放大](assets/dependents-info-1.png)
 
-## 就業歷史{#employment-history}
+## 就業史 {#employment-history}
 
 包括用於捕獲雇傭歷史記錄的欄位。 它允許新增多個組織。
 ![就業歷史片段](assets/emp-history.png)
 
 [按一下放大](assets/emp-history-1.png)
 
-## 收支{#income-expenditure}
+## 收支 {#income-expenditure}
 
 包括用於獲取每月現金流和費用的欄位。 Forms若要求使用者提供財務詳細資料，可使用此片段擷取收入和支出。
 ![收入和支出部分](assets/income.png)
@@ -90,14 +90,14 @@ ht-degree: 1%
 
 [按一下放大](assets/name-1.png)
 
-## 條款與條件{#terms-conditions}
+## 條款與條件 {#terms-conditions}
 
 指定提交表單之前，用戶要接受的條款和條件。
 ![條款與條件片段](assets/tnc.png)
 
 [按一下放大](assets/tnc-1.png)
 
-## 使用手寫的詞語和條件{#terms-conditions-with-scribble}
+## 使用手寫的條款與條件 {#terms-conditions-with-scribble}
 
 指定使用者在提交表單前接受和簽署的條款與條件。
 ![使用手寫的條款與條件](assets/tnc-scribble.png)
