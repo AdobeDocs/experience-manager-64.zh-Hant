@@ -1,8 +1,8 @@
 ---
 title: 使用內容片段
-seo-title: 使用內容片段
+seo-title: Working with Content Fragments
 description: 了解內容片段可如何讓您設計、建立、組織及使用不受頁面影響的內容。
-seo-description: 了解內容片段可如何讓您設計、建立、組織及使用不受頁面影響的內容。
+seo-description: Learn how Content Fragments allow you to design, create, curate and use page-independent content.
 uuid: aa5acda2-4c20-4fe7-929d-6c065b252cf2
 contentOwner: Alison Heimoz
 topic-tags: content-fragments
@@ -10,11 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 exl-id: e2804707-7b75-4fae-937e-9e258481878f
-feature: 內容片段
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 5d523aa135e02b7d06241188c3b4a1d4502f4204
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1984'
 ht-degree: 3%
 
 ---
@@ -91,8 +91,7 @@ AEM內容片段可用來說明及管理結構化內容。 結構化內容定義�
 >* **體驗** 片段內容已完整規劃；網頁的片段。
 
 >
->
-體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
+>體驗片段可以包含內容片段形式的內容，但不能以相反的方式。
 >
 >如需詳細資訊，請參閱[了解AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)中的內容片段和體驗片段。
 
