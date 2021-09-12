@@ -2,12 +2,12 @@
 title: 與共用AEM Assets資料夾與Creative Cloud
 description: 設定和最佳實務，可讓Adobe Experience Manager Assets使用者與Adobe Creative Cloud使用者交換資產資料夾。
 contentOwner: AG
-feature: 協作
+feature: Collaboration
 role: User,Admin
 exl-id: 7e2adfcc-410d-4574-8f7e-39aceecfdd4b
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1062'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ AEM到Creative Cloud資料夾共用仰賴於AEM Assets帳戶和Creative Cloud帳
 整合包含下列元素：
 
 * **AEM Assets** 伺服器部署在企業網路中（受管服務或內部部署）:資料夾共用會在此啟動。
-* **Adobe Marketing Cloud Assets核心服務**:充當AEM和Creative Cloud儲存服務之間的中介。使用整合之公司的管理員需要在Marketing Cloud組織與AEM Assets例項之間建立信任關係。 它們也[定義已核准Creative Cloud共同作業人員的清單](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets),AEM Assets使用者也可以共用資料夾以提供額外安全性。
+* **Adobe Marketing Cloud Assets核心服務**:充當AEM和Creative Cloud儲存服務之間的中介。使用整合之公司的管理員需要在Marketing Cloud組織與AEM Assets例項之間建立信任關係。 它們也[定義已核准Creative Cloud共同作業人員的清單](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html#assets),AEM Assets使用者也可以共用資料夾以提供額外安全性。
 * **Creative Cloud資產Web服務** (儲存和Creative Cloud檔案Web UI):這是共用AEM Assets資料夾的特定Creative Cloud使用者能夠接受邀請並在其Creative Cloud帳戶儲存體中查看資料夾的位置。
 * **Creative Cloud案頭應用程式**:（可選）可透過與Creative Cloud資產儲存空間同步，從創意使用者的案頭直接存取共用資料夾/檔案。
 

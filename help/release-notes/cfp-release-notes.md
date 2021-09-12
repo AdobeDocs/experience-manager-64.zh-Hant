@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack專用的發行說�
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '4680'
+source-wordcount: '4676'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 10%
 | 必備條件 | [AEM 6.4 Service Pack 8(6.4.8.0)](sp-release-notes.md) |
 | 下載URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
 
-## AEM 6.4.8.4 {#what-s-included-in-aem}中包含的內容
+## AEM 6.4.8.4包含的項目 {#what-s-included-in-aem}
 
 AEM Cumulative Fix Pack 6.4.8.4為重要更新，包含自2020年3月正式發行AEM 6.4 Service Pack 8(6.4.8.0)以來累積的多項內部及客戶修正。
 
@@ -39,7 +39,7 @@ AEM 6.4.8.4是依存於AEM 6.4 Service Pack 8的Cumulative Fix Pack(CFP)。 安�
 
 * 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.24 版。
 
-如需CFP和其他發行版本的相關資訊，請參閱[AEM更新發行工具定義](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html?lang=en)
+如需CFP和其他發行版本的相關資訊，請參閱[AEM更新發行工具定義](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.4修正下列問題。
 
@@ -69,7 +69,7 @@ Adobe Experience Manager 6.4.8.4修正下列問題。
 
 * 升級至Experience Manager6.4.8.3後開啟頁面的屬性時，主控台中會開始出現JavaScript錯誤(NPR-35649)。
 
-### 表單 {#forms-6484}
+### Forms {#forms-6484}
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Adobe Experience Manager 6.4.8.4修正下列問題。
 
 如需安全性更新的資訊，請參閱[Experience Manager安全性佈告欄頁面](https://helpx.adobe.com/security/products/experience-manager.html)。
 
-## 先前版本 Cumulative Fix Pack 中包含的 Hotfix 和 Feature Pack{#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
+## 先前版本 Cumulative Fix Pack 中包含的 Hotfix 和 Feature Pack {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
 ### Adobe Experience Manager 6.4.8.3 {#experience-manager-6483}
 
@@ -140,11 +140,11 @@ Adobe Experience Manager 6.4.8.3修正下列問題。
 * 開始每日或每週維護任務時會傳回`NullPointerException`(NPR-34702)。
 * [!DNL Apache Sling Health Check]工具已過時。 請改為使用[模式偵測器](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/upgrading/pattern-detector.html)來偵測內容違規(NPR-33929)。
 
-#### 整合{#integrations-6483}
+#### 整合 {#integrations-6483}
 
 * 在從資料夾導覽至[!UICONTROL Audiences]頁面時， [!UICONTROL Create]按鈕會出現在[!UICONTROL Audiences]頁面上(NPR-35152)。
 
-#### 使用者介面{#ui-6483}
+#### 使用者介面 {#ui-6483}
 
 * [!UICONTROL Omnisearch]使用者介面上的[!UICONTROL 篩選器]搜尋面板也會傳回執行搜尋所在位置以外的其他位置結果(NPR-34877)。
 * 在[!UICONTROL Omnisearch]使用者介面上關閉[!UICONTROL 篩選器]面板時，左側邊欄不會重設為[!UICONTROL 內容]選取項目，這會防止重新開啟[!UICONTROL 篩選器]面板(NPR-34483)。
@@ -161,7 +161,7 @@ Adobe Experience Manager 6.4.8.3修正下列問題。
 
 * 當集合中有超過15種產品時，集合只會顯示前15種產品(NPR-34494)。
 
-#### 表單 {#forms-6483}
+#### Forms {#forms-6483}
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ Adobe Experience Manager 6.4.8.2修正了下列問題。
 
 * 資產的[!UICONTROL 管理出版物]頁面損毀，其中的選項無法運作(CQ-4302509)。
 
-**動態媒體**
+**Dynamic Media**
 
 * 將影像描述檔新增至具有多個（例如11）外觀比例的資料夾時，智慧型裁切功能會因錯誤而失敗(NPR-34083)。
 
@@ -260,12 +260,12 @@ Adobe Experience Manager 6.4.8.2修正了下列問題。
 * 維護任務調度程式啟動和停止維護任務的頻率比配置太高(NPR-33520)。
 * 無法在升級的Experience Manager執行個體上使用診斷工具下載記錄檔(NPR-34419)。
 
-#### 整合{#integrations-6482}
+#### 整合 {#integrations-6482}
 
 * 為從[!DNL Adobe Dynamic Tag Management]移轉的程式庫產生[!DNL Adobe Launch]程式庫URL時，不會考慮`library_path`的值。 此外，移轉的程式庫使用與[!DNL Adobe Launch]程式庫不同的首碼。 (NPR-34238).
 * 更新頁面屬性時，繼承自雲端服務的屬性不會持續存在(NPR-33865)。
 
-#### 使用者介面{#ui-6482}
+#### 使用者介面 {#ui-6482}
 
 * 在搜尋頁面上顯示選取資產的計數不正確(NPR-33540)。
 
@@ -273,7 +273,7 @@ Adobe Experience Manager 6.4.8.2修正了下列問題。
 
 * 透過管理控制台新增的社群群組現有使用者，會在社群群組主控台中進行任何修改時從使用者清單中移除(NPR-34312)。
 
-#### 表單 {#forms-6482}
+#### Forms {#forms-6482}
 
 >[!NOTE]
 >
@@ -390,7 +390,7 @@ Adobe Experience Manager 6.4.8.1修正下列問題。
 * 使用`ScriptProcessor` API來縮制JavaScript程式庫時，記錄檔會顯示錯誤訊息，指出JavaScript程式碼不符合嚴格模式。 API不提供啟用或停用嚴格模式的選項。 (NPR-32746).
 * SQL查詢執行較長的時間（例如7小時）時，AEM停止回應(NPR-33043)。
 
-#### 使用者介面{#ui-6481}
+#### 使用者介面 {#ui-6481}
 
 * 使用選擇對話框搜索或瀏覽路徑時，選擇對話框顯示所選JCR節點的所有內容，而不只顯示影像(NPR-32712)。
 
@@ -398,7 +398,7 @@ Adobe Experience Manager 6.4.8.1修正下列問題。
 
 * 執行轉譯工作時記錄中出現`NullPointerException`錯誤(NPR-32220)。
 
-#### 整合{#integrations-6481}
+#### 整合 {#integrations-6481}
 
 * 適用於JSON的跨網站指令碼(NPR-32745)。
 
@@ -416,7 +416,7 @@ Adobe Experience Manager 6.4.8.1修正下列問題。
 
 * 左側邊欄中的[!UICONTROL 時間軸]選項的載入時間比預期的長(NPR-32850)。
 
-#### 表單 {#forms-6481}
+#### Forms {#forms-6481}
 
 >[!NOTE]
 >
@@ -435,7 +435,7 @@ Adobe Experience Manager 6.4.8.1修正下列問題。
 
 ## 安裝6.4.8.4 {#install}
 
-### 設定要求{#setup-requirements}
+### 設定需求 {#setup-requirements}
 
 <!--
 
@@ -472,7 +472,7 @@ Adobe Experience Manager 6.4.8.1修正下列問題。
 
 >[!NOTE]
 >
->**在安裝6.4.8.4期間，Package Manager UI的對話方塊有時會過早退出**
+>**在安裝6.4.8.0期間，Package Manager UI的對話方塊有時會過早退出**
 >
 >因此，建議在存取執行個體之前，等待錯誤記錄穩定下來。 在確保安裝成功之前，用戶必須等待與卸載更新程式捆綁相關的特定日誌。 這通常會在Safari上發生，但可能會在任何瀏覽器上間歇性發生。
 
@@ -499,7 +499,7 @@ B.使用套件管理器](https://docs.adobe.com/content/docs/en/crx/2-3/how_to/p
 >[!NOTE]
 >成功安裝套件時，會顯示提供資訊的訊息，指出已成功安裝內容套件，例如&#x200B;**&quot;已成功安裝AEM-6.4-Service-Pack-8Content Package。&quot;**
 
-### 更新Dynamic Media檢視器(5.10.1){#update-dynamic-media-viewers}
+### 更新Dynamic Media檢視器(5.10.1) {#update-dynamic-media-viewers}
 
 AEM 6.4.8.4包含新版Dynamic Media檢視器(5.10.1)，可啟用在「影像預設集」頁面上檢查重複名稱。 建議Dynamic Media客戶執行下列命令，將方塊檢視器預設集開啟至最新狀態。
 
@@ -507,7 +507,7 @@ AEM 6.4.8.4包含新版Dynamic Media檢視器(5.10.1)，可啟用在「影像預
 
 會將新的檢視器預設集複製到/conf位置。
 
-### 安裝AEM Forms附加元件套件{#install-aem-forms-add-on-package}
+### 安裝AEM Forms附加元件套件 {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -518,10 +518,10 @@ AEM 6.4.8.4包含新版Dynamic Media檢視器(5.10.1)，可啟用在「影像預
 >如果您未使用AEM Forms，請略過。 AEM Forms中的修正是透過個別的附加套件提供。
 
 1. 確認您已安裝AEM Cumulative Fix Pack。
-1. 下載適用於您作業系統的[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates)中列出的對應表單附加套件。
+1. 下載適用於您作業系統的[AEM Forms發行版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates)中列出的對應表單附加套件。
 1. 按照[安裝AEM forms附加元件套件](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package)中所述安裝Forms附加元件套件。
 
-### 安裝AEM Forms JEE安裝程式{#install-aem-forms-jee-installer}
+### 安裝AEM Forms JEE安裝程式 {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
@@ -584,9 +584,9 @@ AEM 6.4.8.4 中包含的內容套件清單
 * [AEM 6.4 發行說明](../release-notes/release-notes.md)
 * [AEM 產品頁面](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM 6.4 檔案](https://helpx.adobe.com/tw/support/experience-manager/6-4.html)
-* 訂閱 [Adobe 優先產品更新](https://www.adobe.com/subscription/priority-product-update.html)
+* 訂閱 [Adobe 優先產品更新](https://www.adobe.com/tw/subscription/priority-product-update.html)
 
-## 受限站點{#restricted-sites-new}
+## 受限網站 {#restricted-sites-new}
 
 這些網站僅供客戶使用。 如果您是Adobe，且需要存取權，請連絡您的客戶經理。
 

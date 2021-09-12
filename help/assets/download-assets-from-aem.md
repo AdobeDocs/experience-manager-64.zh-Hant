@@ -2,12 +2,12 @@
 title: 從 [!DNL Adobe Experience Manager]下載數位資產。
 description: 了解如何從 [!DNL Adobe Experience Manager] 下載資產，以及啟用或停用下載功能。
 contentOwner: AG
-feature: 資產管理，資產分發
+feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '807'
 ht-degree: 3%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 您可以更新Dispatcher設定以封鎖任何資產下載請求，借此在[!DNL Experience Manager]發佈執行個體上停用`Asset Download Servlet`。 您也可以直接透過OSGi主控台手動停用servlet。
 
-1. 若要透過Dispatcher設定來封鎖資產下載請求，請編輯`dispatcher.any`設定，並將規則新增至[篩選器區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-access-to-content-filter)。 `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. 若要透過Dispatcher設定來封鎖資產下載請求，請編輯`dispatcher.any`設定，並將規則新增至[篩選器區段](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-access-to-content-filter)。 `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 若要在發佈執行個體上停用OSGi元件，請在`http://[aem_server]:[port]/system/console/components`存取OSGi主控台。 找到`com.day.cq.dam.core.impl.servlet.AssetDownloadServlet`並按一下&#x200B;**[!UICONTROL 禁用]**。
 

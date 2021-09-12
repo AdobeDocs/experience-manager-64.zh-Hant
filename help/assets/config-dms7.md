@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
-feature: 配置，Scene7模式
+feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '5594'
+source-wordcount: '5589'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 ## 設定Dynamic MediaCloud Services {#configuring-dynamic-media-cloud-services}
 
-先變更密碼，再設定Dynamic MediaCloud Services。 收到具有Dynamic Media憑證的布建電子郵件後，您必須[登入](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)至Dynamic Media Classic案頭應用程式，才能變更密碼。 預配電子郵件中提供的密碼是系統生成的，並且僅用於臨時密碼。 請務必更新密碼，以便使用正確的憑證來設定Dynamic MediaCloud Service。
+先變更密碼，再設定Dynamic MediaCloud Services。 收到具有Dynamic Media憑證的布建電子郵件後，您必須[登入](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)至Dynamic Media Classic案頭應用程式，才能變更密碼。 預配電子郵件中提供的密碼是系統生成的，並且僅用於臨時密碼。 請務必更新密碼，以便使用正確的憑證來設定Dynamic MediaCloud Service。
 
 >[!NOTE]
 >

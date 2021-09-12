@@ -2,12 +2,12 @@
 title: 管理複合資產並產生子資產。
 description: 了解如何從InDesign、Adobe Illustrator和Photoshop檔案建立AEM資產的參考。 也了解如何使用頁面檢視器功能來檢視多頁檔案的個別頁面，包括PDF、INDD、PPT、PPTX和AI檔案。
 contentOwner: AG
-feature: 資產管理
+feature: Asset Management
 role: User,Admin
 exl-id: 9fa44b26-76f7-48e2-a9df-4fd1c0074158
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1408'
 ht-degree: 0%
 
 ---
@@ -119,7 +119,7 @@ AEM Assets中已有參考的資產。 您可以透過[設定InDesign伺服器](i
 
 工具列、左側邊欄和「頁面檢視器」控制項中提供下列選項：
 
-* **[!UICONTROL 案頭]** 動作，使用AEM案頭應用程式來開啟或顯示特定的子資產。如果您使用AEM案頭應用程式，請參閱如何[設定案頭動作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2)。
+* **[!UICONTROL 案頭]** 動作，使用AEM案頭應用程式來開啟或顯示特定的子資產。如果您使用AEM案頭應用程式，請參閱如何[設定案頭動作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
 * **** 「屬性」選項會開  啟特定子資產的「屬性」頁面。
 

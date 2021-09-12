@@ -5,12 +5,12 @@ uuid: 56a8c221-409f-4605-97b1-a054dd2abfab
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
-feature: 資產管理，影片
+feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 1795b0faed0570e8130c1ba60de07bda49db8fde
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '793'
 ht-degree: 8%
 
 ---
@@ -44,7 +44,7 @@ AEM Assets會以副檔名MP4產生視訊資產的預覽。 如果資產的格式
 除了AEM Assets設定外，請變更下列設定以上傳大型資產：
 
 * 增加代號過期時間。 請參閱`https://[aem_server]:[port]/system/console/configMgr`的Web主控台中的[!UICONTROL AdobeGranite CSRF Servlet]。 有關詳細資訊，請參見[CSRF protection](/help/sites-developing/csrf-protection.md)。
-* 增加Dispatcher設定中的`receiveTimeout`。 如需詳細資訊，請參閱[Experience ManagerDispatcher設定](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#renders-options)。
+* 增加Dispatcher設定中的`receiveTimeout`。 如需詳細資訊，請參閱[Experience ManagerDispatcher設定](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)。
 
 >[!NOTE]
 >

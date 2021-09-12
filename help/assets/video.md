@@ -6,11 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
-feature: 影片
+feature: Video
 role: User
-source-git-commit: 1d5f9be7aa1e45ebaf689922396832e82c63321f
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '10387'
+source-wordcount: '10384'
 ht-degree: 4%
 
 ---
@@ -31,7 +31,6 @@ ht-degree: 4%
 >* 請參閱[設定Dynamic Media - Scene7模式](config-dms7.md)和[疑難排解Dynamic Media - Scene7模式](troubleshoot-dms7.md)
 
 >
-
 
 
 1. **執行下列** 操作，上傳Dynamic Media影片：
@@ -73,7 +72,7 @@ ht-degree: 4%
 
          [檢視視訊轉譯](video-renditions.md)
 
-         [管理視訊轉譯](managing-assets-touch-ui.md#managing-renditions)
+[管理視訊轉譯](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理檢視器預設集](managing-viewer-presets.md)
       * [發佈資產](publishing-dynamicmedia-assets.md)
@@ -85,7 +84,7 @@ ht-degree: 4%
 
       * 編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
 
-         [編輯視訊屬性](managing-assets-touch-ui.md#editing-properties)
+[編輯視訊屬性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理數位資產的中繼資料](metadata.md)
       * [中繼資料結構](metadata-schemas.md)
@@ -163,7 +162,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 
 <!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-另請參閱「AdobeDynamic Media檢視器參考指南」中的[關於HTML5檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only)。
+另請參閱「AdobeDynamic Media檢視器參考指南」中的[關於HTML5檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html#viewers-for-aem-assets-only)。
 
 ## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 

@@ -2,12 +2,12 @@
 title: ' [!DNL Adobe Experience Manager Assets] 簡介'
 description: 了解什麼是數位資產管理、其使用案例，以及 [!DNL Adobe Experience Manager Asset] 產品。
 contentOwner: AG
-feature: 資產管理
+feature: Asset Management
 role: Leader,Architect,User
 exl-id: 9292871d-3b10-49f8-ac1a-4770b4e44048
-source-git-commit: cd9ffec186c5ab4c5f0e0996043724797e0516d1
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '861'
 ht-degree: 13%
 
 ---
@@ -52,7 +52,7 @@ Assets managed within [!DNL Experience Manager] DAM can then be accessed via the
 
 資產是數位檔案、影像、視訊或音訊（或其中一部分），可以多次轉譯也可以有子資產（例如photoshop檔案中的圖層、PowerPoint檔案中的投影片、PDF中的頁面、ZIP中的檔案）。
 
-資產基本上是二進位加中繼資料加轉譯加子資產。如需詳細資訊，請參閱[DAM效能指南](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html?lang=en) 。
+資產基本上是二進位加中繼資料加轉譯加子資產。如需詳細資訊，請參閱[DAM效能指南](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/performance-tuning-guidelines.html) 。
 
 >[!CAUTION]
 >

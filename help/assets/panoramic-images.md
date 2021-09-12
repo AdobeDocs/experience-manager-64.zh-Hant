@@ -6,11 +6,11 @@ topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 exl-id: 51150d51-865e-4b8e-9990-ca755e4c7778
-feature: 全景影像
+feature: Panoramic Images
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '581'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 為了讓全景影像檢視器在AEM中正常運作，您必須將全景影像檢視器預設集與Dynamic Media Classic和Dynamic Media Classic專用中繼資料同步，以便在JCR中更新檢視器預設集。 若要完成此操作，請以下列方式設定Dynamic Media Classic:
 
-1. [針對每個公司帳戶登入您的Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) Classic案頭應用程式。
+1. [針對每個公司帳戶登入您的Dynamic Media ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app) Classic案頭應用程式。
 
 1. 在頁面的右上角附近，按一下「**[!UICONTROL 設定>應用程式設定>發佈設定>影像伺服器]**」。
 1. 在「**[!UICONTROL 影像伺服器發佈]**」頁面上，從頂端附近的「**[!UICONTROL 發佈內容]**」下拉式選單中，選取「**[!UICONTROL 影像伺服]**」。

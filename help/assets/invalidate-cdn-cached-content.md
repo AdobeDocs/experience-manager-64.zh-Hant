@@ -1,8 +1,8 @@
 ---
 title: 使 CDN 快取內容失效
-seo-title: 使 CDN 快取內容失效
+seo-title: Invalidating your CDN cached content
 description: 使您的CDN（內容傳遞網路）快取內容失效可讓您快速更新由Dynamic Media傳送的資產，而不必等待快取過期。
-seo-description: 使您的CDN（內容傳遞網路）快取內容失效可讓您快速更新由Dynamic Media傳送的資產，而不必等待快取過期。
+seo-description: Invalidating your CDN (Content Delivery Network) cached content lets you quickly update assets that are delivered by Dynamic Media, instead of waiting for the cache to expire.
 uuid: 0fd88e31-9745-4c98-a245-9f5d0766cad4
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: e6c9b50b-c27c-48bf-b3c0-9994e7bf6d7e
 exl-id: 335c7a78-a00f-451b-8e53-225830d429c6
-feature: 資產管理，CDN快取
+feature: Asset Management,CDN Cache
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 28%
+source-wordcount: '638'
+ht-degree: 29%
 
 ---
 
@@ -29,7 +29,7 @@ Dynamic Media資產由CDN快取，以便快速傳遞。 不過，當您更新資
 
 1. 登入您的Dynamic Media Classic案頭應用程式。
 
-   [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app)
+   [Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)
 
    配置時Adobe提供了您的憑據和登錄。 如果您沒有此資訊，請聯繫技術支援。
 
