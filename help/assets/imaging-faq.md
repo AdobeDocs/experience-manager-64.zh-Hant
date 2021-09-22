@@ -1,6 +1,6 @@
 ---
 title: 智慧型影像
-description: 智慧型影像處理利用每個用戶的獨特觀看特性，自動提供針對其體驗而優化的適當影像，從而獲得更好的效能和參與度。
+description: 智慧型影像處理會套用每個使用者的獨特檢視特性，自動提供針對其體驗最佳化的適當影像，進而提供更佳的效能和參與度。
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 content-type: reference
@@ -9,9 +9,9 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 exl-id: 2f24c4bc-8071-4403-b959-00db0f08db34
 feature: Smart Services
 role: User
-source-git-commit: e43e25fa1d0df2c2b5b72e49c5a54ca88c000ad2
+source-git-commit: cab72662c62dbc6caa05265b350aed26f21e6824
 workflow-type: tm+mt
-source-wordcount: '2547'
+source-wordcount: '2561'
 ht-degree: 1%
 
 ---
@@ -91,7 +91,7 @@ ht-degree: 1%
 
 最新版智慧影像處理的增強功能：
 
-* 使用最新智慧型影像處理改善網頁的Google SEO排名。
+* 改善使用最新智慧型影像處理之網頁的Google SEO排名。
 * 立即提供最佳化內容（執行階段）。
 * 使用Adobe Sensei技術根據影像要求中指定的品質(qlt)進行轉換。
 * 可以使用「bfc」URL參數關閉智慧影像處理。
@@ -193,7 +193,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 | Europe, Middle East, Africa | 13 Aug 2021 |
 | Asia-Pacific | 22 Jul 2021 | -->
 
-1. [使用Admin Console建立支援案例。](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. [使用Admin Console建立支援案例。](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html)
 1. 在您的支援案例中提供下列資訊：
 
    1. 主要聯繫人姓名、電子郵件、電話。
@@ -237,7 +237,7 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 
 在初始轉變期間，非快取的影像會直接點擊Adobe的原始伺服器，直到重新建置快取為止。 因此，Adobe計劃一次處理一些客戶轉變，以在從Adobe來源提取請求時維持可接受的效能。 對於大部分的客戶，快取會在約1至2天內，於CDN中重新完全建立。
 
-## 如何驗證智慧型影像是否如預期般運作？  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
+## 如何驗證智慧型影像是否如預期般運作？ {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
 1. 使用智慧型影像設定帳戶後，請在瀏覽器上載入Dynamic Media Classic/Dynamic Media影像URL。
 1. 在瀏覽器中，按一下「**[!UICONTROL 檢視]** > **[!UICONTROL 開發人員]** > **[!UICONTROL 開發人員工具]**」，開啟Chrome開發人員窗格。 或者，選擇您選擇的任何瀏覽器開發人員工具。
@@ -281,3 +281,9 @@ Adobe is working on a permanent fix that does not require you to append `bfc=off
 * Experience Manager網站核心元件預設會設定以進行DPR最佳化。 為避免因伺服器端智慧型影像處理DPR最佳化而造成影像過大，一律會將`dpr=off`新增至Experience Manager網站核心元件Dynamic Media影像。
 * 根據預設，為了將Dynamic Media Foundation元件設定為DPR最佳化，為了避免因伺服器端智慧型影像處理DPR最佳化而造成影像過大，一律會將`dpr=off`新增至Dynamic Media Foundation元件影像。 即使客戶在DM Foundation元件中取消選取DPR最佳化，伺服器端智慧型影像處理DPR也不會生效。 總之，在DM基礎元件中，DPR優化僅基於DM基礎元件級別設定而生效。
 * 任何檢視器端DPR最佳化都會與伺服器端智慧型影像處理DPR最佳化搭配運作，而不會導致影像大小過大。 換言之，無論DPR是由檢視器處理的，例如只有啟用縮放的檢視器中的主檢視，伺服器端智慧型影像處理DPR值都不會觸發。 同樣地，只要檢視器元素（例如色票和縮圖）沒有DPR處理，就會觸發伺服器端智慧型影像處理DPR值。
+
+>[!MORELIKETHIS]
+>
+>* [使用新一代影像格式WebP和AVIF進行影像優化。](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+>
+
