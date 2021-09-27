@@ -2,12 +2,12 @@
 title: 透過DTM啟用Assets Insights
 description: 了解如何使用AdobeDynamic Tag Management(DTM)來啟用Assets Insights。
 contentOwner: AG
-feature: 資產分析，資產報表
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Adobe動態標籤管理是啟用數位行銷工具的工具。 此服務免費�
 
 >[!CAUTION]
 >
->AdobeDTM已過時，改用Adobe Experience Platform Launch，很快將到達[生命週期結束](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建議您[使用Launch進行資產前瞻分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
+>AdobeDTM已過時，改用[!DNL Adobe Experience Platform]，很快將到達[生命週期結束](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建議您[對於資產前瞻分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)使用 [!DNL Adobe Experience Platform] 。
 
 執行下列步驟以透過DTM啟用Assets Insights:
 
-1. 點選/按一下AEM標誌，然後前往「**[!UICONTROL 工具>資產>前瞻分析設定]**」。
+1. 點選/按一下AEM標誌，然後前往「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 前瞻分析設定]**」。
 1. [使用DTM設定AEM例項Cloud Service](../sites-administering/dtm.md)
 
    一旦您登入[https://dtm.adobe.com](https://dtm.adobe.com/)並從「設定檔」圖示造訪&#x200B;**[!UICONTROL 帳戶設定]**,API代號就應可供使用。 從Assets Insights的觀點來看，不需要執行此步驟，因為AEM Sites與Assets Insights的整合仍在進行中。

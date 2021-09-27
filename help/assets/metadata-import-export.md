@@ -2,12 +2,12 @@
 title: 大量中繼資料匯入和匯出
 description: 本文說明如何大量匯入和匯出中繼資料。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: 956cdec4-2ba8-43c9-9122-564d764f4681
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '640'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ AEM Assets可讓您使用CSV檔案大量匯入資產中繼資料。 您可以匯
    | [!UICONTROL 批次大小] | 要匯入中繼資料的批次中的資產數。 預設值為 50。最大值為100。 |
    | [!UICONTROL 欄位分隔符號] | 預設值為`,` — 逗號。 您可以指定任何其他字元。 |
    | [!UICONTROL 多值分隔符號] | 中繼資料值的分隔符號。 預設值為`|` — 縱線字元。 |
-   | [!UICONTROL 啟動工作流程] | 預設為False。 設為true和預設的啟動器設定對`DAM Metadata WriteBack Workflow`生效(會將中繼資料寫入二進位XMP資料)。 啟用啟動工作流程會對系統產生效能影響。 |
+   | [!UICONTROL 啟動工作流程] | 預設為False。 設為true時，`DAM Metadata WriteBack Workflow`的預設設定生效(會將中繼資料寫入二進位XMP資料)。 啟用工作流程會對系統造成效能影響。 |
    | [!UICONTROL 資產路徑欄名稱] | 定義含有資產的CSV檔案的欄名稱。 |
 
 1. 從工具列點選/按一下「**[!UICONTROL 匯入]**」。 匯入中繼資料後，通知會傳送至您的通知收件匣。 導覽至資產屬性頁面，並確認是否已為資產正確匯入中繼資料值。
