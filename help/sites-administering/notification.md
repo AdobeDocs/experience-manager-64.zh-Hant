@@ -1,8 +1,8 @@
 ---
 title: 設定電子郵件通知
-seo-title: 設定電子郵件通知
+seo-title: Configuring Email Notification
 description: 了解如何在AEM中設定電子郵件通知。
-seo-description: 了解如何在AEM中設定電子郵件通知。
+seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: ea12035c-09b6-4197-ab23-c27fe71e7432
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 3a206c2fa8c18876b6e1481e2feb86857b5219c4
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1134'
 ht-degree: 1%
 
 ---
 
-# 配置電子郵件通知{#configuring-email-notification}
+# 設定電子郵件通知{#configuring-email-notification}
 
 AEM會傳送電子郵件通知給下列使用者：
 
@@ -37,7 +37,7 @@ AEM會傳送電子郵件通知給下列使用者：
 >
 >使用AEM時，有數種方法可管理這類服務的組態設定；如需詳細資訊和建議實務，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md) 。
 
-## 配置郵件服務{#configuring-the-mail-service}
+## 設定郵件服務 {#configuring-the-mail-service}
 
 若要讓AEM能夠傳送電子郵件，**Day CQ Mail Service**&#x200B;必須正確設定。 您可以在Web主控台中檢視設定。 使用AEM時，有數種方法可管理這類服務的組態設定；如需詳細資訊和建議實務，請參閱[設定OSGi](/help/sites-deploying/configuring-osgi.md) 。
 
@@ -56,7 +56,7 @@ AEM會傳送電子郵件通知給下列使用者：
 
 ![chlimage_1-276](assets/chlimage_1-276.png)
 
-## 配置電子郵件通知通道{#configuring-the-email-notification-channel}
+## 設定電子郵件通知通道 {#configuring-the-email-notification-channel}
 
 當您訂閱頁面或論壇事件通知時，預設會將寄件者電子郵件地址設為`no-reply@acme.com`。 您可以在Web主控台中設定&#x200B;**通知電子郵件通道**&#x200B;服務，以變更此值。
 
@@ -82,7 +82,7 @@ AEM會傳送電子郵件通知給下列使用者：
 
 1. 儲存檔案。
 
-## 配置工作流電子郵件通知服務{#configuring-the-workflow-email-notification-service}
+## 設定工作流程電子郵件通知服務 {#configuring-the-workflow-email-notification-service}
 
 當您收到工作流程電子郵件通知時，寄件者電子郵件地址和主機URL首碼都會設為預設值。 您可以在Web主控台中設定&#x200B;**Day CQ Workflow Email Notification Service**&#x200B;以變更這些值。 若您這麼做，建議您將變更保留在存放庫中。
 
@@ -90,11 +90,11 @@ AEM會傳送電子郵件通知給下列使用者：
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
-### 頁面通知的電子郵件範本{#email-templates-for-page-notification}
+### 頁面通知的電子郵件範本 {#email-templates-for-page-notification}
 
 頁面通知的電子郵件範本位於下方：
 
-`/etc/notification/email/default/com.day.cq.wcm.core.page`
+`/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
 預設英文模板(`en.txt`)的定義如下：
 
@@ -115,13 +115,13 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### 自訂頁面通知的電子郵件範本{#customizing-email-templates-for-page-notification}
+#### 自訂頁面通知的電子郵件範本 {#customizing-email-templates-for-page-notification}
 
 若要自訂頁面通知的英文電子郵件範本：
 
 1. 在CRXDE中，開啟檔案：
 
-   `/etc/notification/email/default/com.day.cq.wcm.core.page/en.txt`
+   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
 1. 根據您的需求修改檔案。
 1. 儲存變更。
@@ -150,7 +150,7 @@ This is an automatically generated message. Please do not reply.
 
    PageModified => /content/geometrixx/en/products
 
-### 論壇通知{#email-templates-for-forum-notification}的電子郵件模板
+### 論壇通知的電子郵件範本 {#email-templates-for-forum-notification}
 
 論壇通知的電子郵件範本位於：
 
@@ -173,7 +173,7 @@ footer=\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### 自訂論壇通知{#customizing-email-templates-for-forum-notification}的電子郵件範本
+#### 為論壇通知自訂電子郵件範本 {#customizing-email-templates-for-forum-notification}
 
 若要自訂論壇通知的英文電子郵件範本：
 
@@ -201,11 +201,11 @@ This is an automatically generated message. Please do not reply.
 
 * `${forum.path}`，即論壇頁面的路徑。
 
-### 工作流通知{#email-templates-for-workflow-notification}的電子郵件模板
+### 工作流通知的電子郵件範本 {#email-templates-for-workflow-notification}
 
 工作流程通知的電子郵件範本（英文）位於：
 
-`/etc/workflow/notification/email/default/en.txt`
+`/libs/settings/workflow/notification/email/default/en.txt`
 
 定義如下：
 
@@ -228,13 +228,13 @@ View the overview in your ${host.prefix}/aem/inbox\n \
 This is an automatically generated message. Please do not reply.
 ```
 
-#### 自定義工作流通知{#customizing-email-templates-for-workflow-notification}的電子郵件模板
+#### 自訂工作流程通知的電子郵件範本 {#customizing-email-templates-for-workflow-notification}
 
 若要自訂工作流程事件通知的英文電子郵件範本：
 
 1. 在CRXDE中，開啟檔案：
 
-   `/etc/workflow/notification/email/default/en.txt`
+   `/libs/settings/workflow/notification/email/default/en.txt`
 
 1. 根據您的需求修改檔案。
 1. 儲存變更。
@@ -286,15 +286,15 @@ subject=<text_1>
 * `${payload.path}`，裝載的路徑
 * `${host.prefix}`，主機首碼，例如：http://localhost:4502
 
-### 為新語言{#adding-an-email-template-for-a-new-language}添加電子郵件模板
+### 新增新語言的電子郵件範本 {#adding-an-email-template-for-a-new-language}
 
 為新語言添加模板：
 
 1. 在CRXDE中，新增下方的檔案`<language-code>.txt`:
 
-   * `/etc/notification/email/default/com.day.cq.wcm.core.page` :頁面通知
+   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` :頁面通知
    * `/etc/notification/email/default/com.day.cq.collab.forum` :論壇通知
-   * `/etc/workflow/notification/email/default` :工作流通知
+   * `/libs/settings/workflow/notification/email/default` :工作流通知
 
 1. 使檔案適應語言。
 1. 儲存變更。
