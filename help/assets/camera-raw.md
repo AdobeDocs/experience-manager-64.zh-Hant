@@ -2,12 +2,12 @@
 title: Camera Raw支援
 description: 了解如何在Adobe Experience Manager Assets中啟用Camera Raw支援。
 contentOwner: AG
-feature: 開發人員工具
+feature: Developer Tools
 role: Admin
 exl-id: 637c57ae-55a6-4032-9821-b55839b3e567
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '403'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
 >
 >請確定上述設定與&#x200B;**[!UICONTROL 使用Camera Raw和DNG處理步驟]**&#x200B;設定的範例DAM更新資產相同。
 
-您現在可以將相機原始檔案匯入AEM Assets。 安裝Camera Raw包並配置所需的工作流後，側窗格清單中將顯示&#x200B;**[!UICONTROL Image Adjust]**&#x200B;選項。
+您現在可以將相機原始檔案匯入[!DNL Experience Manager]資產。 安裝Camera Raw包並配置所需的工作流後，側窗格清單中將顯示&#x200B;**[!UICONTROL Image Adjust]**&#x200B;選項。
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -77,4 +77,4 @@ ht-degree: 1%
 
 * 此功能僅支援JPEG轉譯。 Windows 64位元、Mac OS和RHEL 7.x均支援此功能。
 * RAW和DNG格式不支援中繼資料回寫。
-* Camera Raw程式庫對一次可處理的總像素有限制。 目前，無論先遇到什麼條件，最多都可以處理65000個檔案長邊的像素，或512 MP。
+* Camera Raw程式庫對一次可處理的總像素有限制。 目前，無論先遇到什麼條件，最多都可處理檔案長邊的65000像素，或512 MP。

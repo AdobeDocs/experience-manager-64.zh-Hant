@@ -3,12 +3,12 @@ title: 使用MSM重複使用資產
 description: 在衍生自父資產並連結至父資產的多個頁面/資料夾中使用資產。 資產會與主要副本保持同步，只要按幾下，就會從父資產接收更新。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 資產管理，多站點管理員
+feature: Asset Management,Multi Site Manager
 role: User,Admin,Architect
 exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3172'
+source-wordcount: '3159'
 ht-degree: 9%
 
 ---
@@ -64,7 +64,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 若要從一或多個來源資產或資料夾建立即時副本，請遵循下列其中一項操作：
 
 * **方法1**:選取來源資產，然後按一 **[!UICONTROL 下頂端]** 的「 **[!UICONTROL 建立]**  >即時複製自」工具列。
-* **方法2**:在AEM使用者介面中， **[!UICONTROL 按一下]** 從介面右上角的「建立>即時複製」。
+* **方法2**:在使 [!DNL Experience Manager] 用者介面中， **[!UICONTROL 按一下介]** 面右上角的「建立>即時複製」 。
 
 您可以一次建立資產或資料夾的即時副本。 您可以建立衍生自資產或即時副本本身之資料夾的即時副本。
 
@@ -73,15 +73,15 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 若要使用第一個方法建立Live Copy，請執行下列步驟：
 
 1. 選取來源資產或資料夾。 在工具列中，按一下&#x200B;**[!UICONTROL 建立>即時副本]**。
-   ![從AEM介面建立即時副本](assets/lc_create1.png)
+   ![從介面建立即 [!DNL Experience Manager] 時副本](assets/lc_create1.png)
 1. 選取來源資產或資料夾。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 提供標題和名稱。 資產沒有子項。 建立資料夾的即時副本時，您可以選擇包含或排除子項。
 1. 選取轉出設定。 按一下&#x200B;**[!UICONTROL 建立]**。
 
 若要使用第二種方法建立即時副本，請依照下列步驟操作：
 
-1. 在AEM介面中，從右上角按一下「建立>即時副本」]**。**[!UICONTROL 
-   ![從AEM介面建立即時副本](assets/lc_create2.png)
+1. 在[!DNL Experience Manager]介面中，從右上角按一下「建立」>「即時副本」]**。**[!UICONTROL 
+   ![從介面建立即 [!DNL Experience Manager] 時副本](assets/lc_create2.png)
 1. 選取來源資產或資料夾。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 選擇目標資料夾。 按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 提供標題和名稱。 資產沒有子項。 建立資料夾的即時副本時，您可以選擇包含或排除子項。
@@ -93,7 +93,7 @@ MSM會維護來源資產與其即時副本之間的即時關係，以便：
 
 ## 查看源副本和即時副本的各種屬性和狀態 {#view-properties-statuses-source-and-lc}
 
-您可以從AEM使用者介面的各個區域，檢視即時副本的資訊和MSM相關狀態，例如關係、同步、轉出等。 下列兩種方法適用於資產和資料夾：
+您可以從[!DNL Experience Manager]使用者介面的各個區域檢視即時副本的資訊和MSM相關狀態，例如關係、同步、轉出等。 下列兩種方法適用於資產和資料夾：
 
 * 選取即時複製資產，並在其&#x200B;**[!UICONTROL 屬性]**&#x200B;頁面中尋找資訊。
 * 從&#x200B;**[!UICONTROL 即時副本控制台]**&#x200B;中選擇源資料夾並查找每個即時副本的詳細資訊。
@@ -220,7 +220,7 @@ Live Copy是建立原始源時的副本。 即時副本的中繼資料值繼承�
 
 ## 移除即時關係 {#remove-live-relationship}
 
-您可以使用「分離」操作完全刪除源和即時副本之間的關係。 分離即時副本後，即時副本會變成獨立資產或資料夾。 分離後會立即在AEM介面中顯示為新資產。 要從源分離即時副本，請執行以下步驟。
+您可以使用「分離」操作完全刪除源和即時副本之間的關係。 分離即時副本後，即時副本會變成獨立資產或資料夾。 在分離後，它會立即在[!DNL Experience Manager]介面中顯示為新資產。 要從源分離即時副本，請執行以下步驟。
 
 1. 選取即時複製資產或資料夾。 從工具欄按一下「**[!UICONTROL 屬性]**」。 或者，使用鍵盤快捷鍵`p`。
 1. 按一下「**[!UICONTROL 即時副本]**」。 按一下工具欄中的&#x200B;**[!UICONTROL 分離]**。 從顯示的對話框中按一下&#x200B;**[!UICONTROL 分離]**。
@@ -243,7 +243,7 @@ Live Copy是建立原始源時的副本。 即時副本的中繼資料值繼承�
 
 ## 延伸資產的MSM {#extend-msm-for-assets}
 
-AEM可讓您使用MSM Java API擴充功能。 對於Assets，擴充的作用與搭配MSM for Site時的作用相同。 如需詳細資訊，請參閱[擴充MSM](../sites-developing/extending-msm.md)及下列章節，以取得特定工作的資訊：
+[!DNL Experience Manager] 可讓您使用MSM Java API擴充功能。對於Assets，擴充的作用與搭配MSM for Site時的作用相同。 如需詳細資訊，請參閱[擴充MSM](../sites-developing/extending-msm.md)及下列章節，以取得特定工作的資訊：
 
 * [API概觀](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [建立新的同步操作](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
@@ -259,7 +259,7 @@ AEM可讓您使用MSM Java API擴充功能。 對於Assets，擴充的作用與�
 
 ## 資產管理任務對Live Copy的影響 {#impact-of-asset-management-tasks-on-live-copies}
 
-即時副本和來源是可在一定程度上作為數位資產進行管理的資產或資料夾。 AEM中的某些資產管理工作會對Live Copy產生特定影響。
+即時副本和來源是可在一定程度上作為數位資產進行管理的資產或資料夾。 [!DNL Experience Manager]中的某些資產管理任務對即時副本有特定影響。
 
 * 複製即時副本時，會建立具有與第一個即時副本相同來源的即時副本資產。
 * 當您移動源或其即時副本時，將保留即時關係。

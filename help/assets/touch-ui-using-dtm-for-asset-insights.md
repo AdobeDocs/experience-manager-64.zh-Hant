@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: d19cea4d-5395-479d-b303-4529ae2c0bf2
-source-git-commit: 2b3a6972d703314d56d3dc711fb6a514cb1942d5
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '679'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -22,10 +22,10 @@ Adobe動態標籤管理是啟用數位行銷工具的工具。 此服務免費�
 
 執行下列步驟以透過DTM啟用Assets Insights:
 
-1. 點選/按一下AEM標誌，然後前往「**[!UICONTROL 工具]** > **[!UICONTROL 資產]** > **[!UICONTROL 前瞻分析設定]**」。
-1. [使用DTM設定AEM例項Cloud Service](../sites-administering/dtm.md)
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Insights Configuration]**。
+1. [使用DTMCloud Service配置 [!DNL Experience Manager] 實例](../sites-administering/dtm.md)
 
-   一旦您登入[https://dtm.adobe.com](https://dtm.adobe.com/)並從「設定檔」圖示造訪&#x200B;**[!UICONTROL 帳戶設定]**,API代號就應可供使用。 從Assets Insights的觀點來看，不需要執行此步驟，因為AEM Sites與Assets Insights的整合仍在進行中。
+   一旦您登入[https://dtm.adobe.com](https://dtm.adobe.com/)並從「設定檔」圖示造訪&#x200B;**[!UICONTROL 帳戶設定]**,API代號就應可供使用。 從資產分析的觀點來看，不需要執行此步驟，因為[!DNL Experience Manager Sites]與資產分析的整合仍在進行中。
 
 1. 登入[https://dtm.adobe.com](https://dtm.adobe.com/)，並視情況選取公司。
 1. 建立/開啟現有Web屬性
@@ -43,7 +43,7 @@ Adobe動態標籤管理是啟用數位行銷工具的工具。 此服務免費�
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. 點選/按一下AEM標誌，然後前往「**[!UICONTROL 工具>資產]**」。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往「**[!UICONTROL 工具>資產]**」。
 1. 點選/按一下&#x200B;**[!UICONTROL 前瞻分析頁面追蹤器]**，複製追蹤器程式碼，然後貼到您在步驟6中開啟的「指令碼」對話方塊中。 儲存變更。
 
    >[!NOTE]

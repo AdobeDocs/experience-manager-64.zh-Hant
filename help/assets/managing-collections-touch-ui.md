@@ -3,12 +3,12 @@ title: 管理資產集合
 description: 了解管理資產集合的工作，例如建立、檢視、刪除、編輯和下載集合。
 contentOwner: AG
 mini-toc-levels: 1
-feature: 集合
+feature: Collections
 role: User
 exl-id: cadfc569-5725-4012-9f73-864243ba7743
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2326'
 ht-degree: 15%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 15%
 
    「建立智慧選 **[!UICONTROL 擇」按鈕的標籤將更改為]** 「編 **[!UICONTROL 輯智慧選擇」]**。要編輯智慧系列的設定，請從「檔案和文 **[!UICONTROL 件夾]** 」列 **[!UICONTROL 表中選擇「檔案]** 」。然後，點選/按一下「編 **[!UICONTROL 輯智慧型選取]** 」按鈕。
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 ## 新增資產至集合 {#adding-assets-to-a-collection}
 
@@ -195,7 +195,7 @@ ht-degree: 15%
 
 ## 搜尋集合 {#searching-collections}
 
-您可以從集合控制台搜尋集合。 當您在Omnisearch方塊中搜尋關鍵字時，AEM Assets會搜尋系列名稱、中繼資料，以及新增至系列的標籤。
+您可以從集合控制台搜尋集合。 當您在Omnisearch方塊中搜尋關鍵字時，[!DNL Experience Manager]資產會搜尋集合名稱、中繼資料，以及新增至集合的標籤。
 
 如果您從頂層搜尋集合，則搜尋結果中只會傳回個別的集合。 集合內的資產或資料夾會遭排除。 在所有其他情況下（例如在個別集合或資料夾階層中），會傳回所有相關資產、資料夾和集合。
 
@@ -203,7 +203,7 @@ ht-degree: 15%
 
 在「系列」主控台中，點選/按一下系列以開啟它。
 
-在系列中，AEM Asset搜尋會限制為您檢視之系列中的資產（及其標籤和中繼資料）。 在資料夾內搜尋時，會傳回目前資料夾內所有相符的資產和子資料夾。 在集合內搜尋時，系統只會傳回相符的資產、資料夾和其他集合，這些集合是集合的直接成員。
+在系列中，搜尋會限制為您檢視之系列中的資產（及其標籤和中繼資料）。 在資料夾內搜尋時，會傳回目前資料夾內所有相符的資產和子資料夾。 在集合內搜尋時，系統只會傳回相符的資產、資料夾和其他集合，這些集合是集合的直接成員。
 
 ## 編輯集合設定 {#editing-collection-settings}
 
@@ -305,5 +305,5 @@ ht-degree: 15%
 >[!MORELIKETHIS]
 >
 >* [設定Experience Manager資產電子郵件通知](/help/sites-administering/notification.md#assetsconfig)
-* [為集合建立審核任務](bulk-approval.md)
+>* [為集合建立審核任務](bulk-approval.md)
 

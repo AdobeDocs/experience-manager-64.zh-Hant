@@ -2,12 +2,12 @@
 title: 建立翻譯專案
 description: 了解如何在AEM中建立翻譯專案。
 contentOwner: AG
-feature: 轉換
+feature: Translation
 role: Architect,Admin
 exl-id: 1b931fef-eed0-4758-993d-cdf8d478fb6f
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1939'
 ht-degree: 21%
 
 ---
@@ -282,9 +282,9 @@ ht-degree: 21%
 
 ## 建立臨時語言副本 {#creating-temporary-language-copies}
 
-當您執行翻譯工作流程以使用原始資產的編輯版本更新語言副本時，會保留現有語言副本，直到您核准翻譯的資產為止。 AEM Assets會將新翻譯的資產儲存在臨時位置，並在您明確核准資產後更新現有的語言副本。 如果您拒絕資產，語言副本將維持不變。
+當您執行翻譯工作流程以使用原始資產的編輯版本更新語言副本時，會保留現有語言副本，直到您核准翻譯的資產為止。 [!DNL Experience Manager] 資產會將新翻譯的資產儲存在臨時位置，並在您明確核准資產後更新現有語言副本。如果您拒絕資產，語言副本將維持不變。
 
-1. 按一下/點選「語言復本」下方的「來源根檔案夾」( **[!UICONTROL Language Copies]** )，然後按一下/點選「在資產中顯現 **** 」(Reveal in Assets)，以開啟「AEM Assets」(AEM Assets)中的檔案夾。
+1. 按一下/點選「語言復本」下方的「來源根檔案夾」( **[!UICONTROL Language Copies]** )，然後按一下/點選「在資產中顯現 **** 」(Reveal in Assets)，以開啟「 Assets」(AEM Assets)中的檔案夾。[!DNL Experience Manager]
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 

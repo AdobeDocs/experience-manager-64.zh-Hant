@@ -1,13 +1,13 @@
 ---
 title: 如何編輯或新增中繼資料
-description: 了解AEM Assets中的資產中繼資料，以及編輯資產中繼資料的各種方式。
+description: 了解 [!DNL Experience Manager] Assets中的資產中繼資料，以及您可編輯資產中繼資料的各種方式。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '479'
 ht-degree: 7%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 7%
 
 中繼資料是可搜尋資產的其他相關資訊。 上傳影像時，會自動擷取它。 您可以編輯現有中繼資料，或將新中繼資料屬性新增至現有欄位（例如，中繼資料欄位空白時）。
 
-由於公司需要可控且可靠的中繼資料辭匯，AEM Assets不允許臨時新增新中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 請參閱[為資產建立新中繼資料屬性](meta-edit.md#editing-metadata-schema)。
+由於公司需要可控且可靠的中繼資料辭匯，[!DNL Experience Manager]資產不允許臨機新增新中繼資料屬性。 雖然作者無法為資產新增中繼資料欄位，但開發人員可以。 請參閱[為資產建立新中繼資料屬性](meta-edit.md#editing-metadata-schema)。
 
 ## 編輯資產的中繼資料 {#editing-metadata-for-an-asset}
 
@@ -28,7 +28,7 @@ ht-degree: 7%
    * 從資產縮圖中，選取&#x200B;**[!UICONTROL 檢視屬性]**&#x200B;快速動作。
    * 從資產頁面，按一下/點選工具列中的&#x200B;**[!UICONTROL 檢視屬性]**&#x200B;圖示![資訊圖示](assets/do-not-localize/info_icon.png)。
 
-   資產頁面會顯示資產的所有中繼資料。 此中繼資料上傳（擷取）至AEM Assets時會自動擷取。
+   資產頁面會顯示資產的所有中繼資料。 此中繼資料上傳（擷取）至[!DNL Experience Manager]資產時會自動擷取。
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -46,7 +46,7 @@ ht-degree: 7%
 
 有關如何編輯元資料架構的詳細資訊，請參閱[編輯元資料架構表單](metadata-schemas.md#editing-metadata-schema-forms)。
 
-## 在AEM中註冊自訂命名空間 {#registering-a-custom-namespace-within-aem}
+## 在[!DNL Experience Manager]中註冊自訂命名空間 {#registering-a-custom-namespace-within-aem}
 
 您可以在AEM中新增您自己的命名空間。 就像有預先定義的命名空間，例如cq、jcr和sling，您也可以擁有儲存庫中繼資料和xml處理的命名空間。
 

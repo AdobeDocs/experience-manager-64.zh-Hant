@@ -2,19 +2,19 @@
 title: 視訊轉譯
 description: 視訊轉譯
 contentOwner: AG
-feature: 視訊，轉譯
+feature: Video,Renditions
 role: User
 exl-id: 9fc93034-e83a-42b5-901d-7867b4a850a8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
 
 # 視訊轉譯 {#video-renditions}
 
-Adobe Experience Manager(AEM)Assets會針對各種格式的視訊資產產生視訊轉譯，包括OGG、FLV等。
+Adobe Experience Manager Assets會針對各種格式的視訊資產產生視訊轉譯，包括OGG、FLV等。
 
 AEM Assets支援媒體資產的靜態和動態轉譯（DM編碼的轉譯）。
 

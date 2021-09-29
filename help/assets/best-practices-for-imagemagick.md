@@ -1,44 +1,44 @@
 ---
-title: 安裝並設定ImageMagick以與AEM Assets搭配使用
+title: 安裝並配置ImageMagick以與 [!DNL Experience Manager] Assets一起使用
 description: 了解ImageMagick軟體、如何安裝、設定命令列處理步驟，以及使用它來編輯、撰寫和從影像產生縮圖。
 contentOwner: AG
-feature: 轉譯，開發人員工具
+feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
 
-# 安裝並設定ImageMagick以與AEM Assets搭配使用 {#install-and-configure-imagemagick-to-work-with-aem-assets}
+# 安裝並配置ImageMagick以與[!DNL Experience Manager Assets]一起使用 {#install-and-configure-imagemagick-to-work-with-aem-assets}
 
 ImageMagick是用於建立、編輯、合成或轉換點陣圖影像的軟體插件。 它可以讀取和寫入各種格式（超過200個）的影像，包括PNG、JPEG、JPEG-2000、GIF、TIFF、DPX、EXR、WebP、Postscript、PDF和SVG。 使用ImageMagick調整影像大小、翻轉、鏡像、旋轉、扭曲、剪切和轉換影像。 您還可以使用ImageMagick調整影像顏色、應用各種特殊效果，或繪製文本、線、多邊形、橢圓和曲線。
 
-從命令列使用Adobe Experience Manager(AEM)媒體處理常式，透過ImageMagick處理影像。 若要使用ImageMagick使用各種檔案格式，請參閱[Assets檔案格式最佳實務](assets-file-format-best-practices.md)。 若要了解所有支援的檔案格式，請參閱[Assets supported formats](assets-formats.md)。
+從命令列使用Adobe Experience Manager媒體處理常式，以透過ImageMagick處理影像。 若要使用ImageMagick使用各種檔案格式，請參閱[Assets檔案格式最佳實務](assets-file-format-best-practices.md)。 若要了解所有支援的檔案格式，請參閱[Assets supported formats](assets-formats.md)。
 
-要使用ImageMagick處理大型檔案，請考慮高於通常的記憶體要求、IM策略所需的潛在更改以及對效能的整體影響。 記憶體需求取決於各種因素，如解析度、位深度、顏色配置檔案和檔案格式。 如果要使用ImageMagick處理非常大的檔案，請正確對AEM伺服器進行基準測試。 最後提供一些實用的資源。
+要使用ImageMagick處理大型檔案，請考慮高於通常的記憶體要求、IM策略所需的潛在更改以及對效能的整體影響。 記憶體需求取決於各種因素，如解析度、位深度、顏色配置檔案和檔案格式。 如果要使用ImageMagick處理非常大的檔案，請正確對[!DNL Experience Manager]伺服器進行基準測試。 最後提供一些實用的資源。
 
 >[!NOTE]
 >
->如果您在Adobe Managed Services(AMS)上使用AEM，如果您打算處理大量大型PSD或PSB檔案，請聯絡Adobe客戶服務。 Experience Manager可能無法處理超過30000 x 23000像素的高解析度PSB檔案。
+>如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，如果您打算處理大量大型PSD或PSB檔案，請聯絡Adobe客戶服務。 Experience Manager可能無法處理超過30000 x 23000像素的高解析度PSB檔案。
 
 ## 安裝ImageMagick {#installing-imagemagick}
 
 各種作業系統均提供多個版本的ImageMagic安裝檔案。 使用適合您作業系統的版本。
 
 1. 下載適合您作業系統的[ImageMagick安裝檔案](https://www.imagemagick.org/script/download.php)。
-1. 若要在托管AEM伺服器的磁碟上安裝ImageMagick，請啟動安裝檔案。
+1. 要在[!DNL Experience Manager]伺服器所在的磁碟上安裝ImageMagick，請啟動安裝檔案。
 
 1. 將路徑環境變數設定為ImageMagic安裝目錄。
 1. 要檢查安裝是否成功，請執行`identify -version`命令。
 
 ## 設定命令行處理步驟 {#set-up-the-command-line-process-step}
 
-您可以為您的特定使用案例設定命令列處理步驟。 每次在AEM伺服器上將JPEG影像檔案新增至`/content/dam`時，執行下列步驟以產生翻轉的影像和縮圖（140x100、48x48、319x319和1280）:
+您可以為您的特定使用案例設定命令列處理步驟。 每次在[!DNL Experience Manager]伺服器上將JPEG影像檔案新增至`/content/dam`時，執行下列步驟以產生翻轉的影像和縮圖（140x100、48x48、319x319和1280x1280）:
 
-1. 在AEM伺服器上，前往工作流程主控台(`https://[aem_server]:[Port]/workflow`)，並開啟&#x200B;**[!UICONTROL DAM Update Asset]**&#x200B;工作流程模型。
+1. 在[!DNL Experience Manager]伺服器上，前往工作流程主控台(`https://[aem_server]:[Port]/workflow`)，並開啟&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程模型。
 1. 從&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流模型中，開啟&#x200B;**[!UICONTROL EPS縮圖（由ImageMagick提供技術）]**&#x200B;步驟。
 1. 在&#x200B;**[!UICONTROL 參數頁簽]**&#x200B;中，將`image/jpeg`添加到&#x200B;**[!UICONTROL Mime類型]**&#x200B;清單中。
 
@@ -73,7 +73,7 @@ ImageMagick是用於建立、編輯、合成或轉換點陣圖影像的軟體插
    ![web_enabled](assets/web_enabled.png)
 
 1. 儲存工作流程。
-1. 若要檢查ImageMagic是否能正確處理影像，請上傳JPG影像至AEM Assets。 驗證是否為翻轉的影像生成格式副本。
+1. 要檢查ImageMagic是否能夠正確處理影像，請將JPG影像上傳到[!DNL Assets]。 驗證是否為翻轉的影像生成格式副本。
 
 ## 緩解安全漏洞 {#mitigating-security-vulnerabilities}
 
@@ -88,10 +88,10 @@ ImageMagick是用於建立、編輯、合成或轉換點陣圖影像的軟體插
 
 >[!MORELIKETHIS]
 >
->* [使用AEM Assets處理各種檔案格式的最佳實務](assets-file-format-best-practices.md)
-* [ImageMagick的命令列選項](https://www.imagemagick.org/script/command-line-options.php)
-* [ImageMagick使用的基本和進階範例](https://www.imagemagick.org/Usage/)
-* [ImageMagick適用的資產效能調整](performance-tuning-guidelines.md)
-* [AEM Assets支援的完整檔案格式清單](assets-formats.md)
-* [了解影像的檔案格式和記憶體成本](https://www.scantips.com/basics1d.html)
+>* [處理各種檔案格式的最佳實務，使用 [!DNL Assets]](assets-file-format-best-practices.md)
+>* [ImageMagick的命令列選項](https://www.imagemagick.org/script/command-line-options.php)
+>* [ImageMagick使用的基本和進階範例](https://www.imagemagick.org/Usage/)
+>* [ImageMagick適用的資產效能調整](performance-tuning-guidelines.md)
+>* [支援的完整檔案格式清單 [!DNL Assets]](assets-formats.md)
+>* [了解影像的檔案格式和記憶體成本](https://www.scantips.com/basics1d.html)
 

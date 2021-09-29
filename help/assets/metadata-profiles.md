@@ -2,12 +2,12 @@
 title: 使用中繼資料設定檔，將預設中繼資料套用至資料夾中的所有資產
 description: 了解資產的中繼資料設定檔。 了解如何建立中繼資料設定檔，並將其套用至資料夾資產。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: a7b0f1d6-7deb-4565-8c7f-27cad7cd6bf8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1226'
 ht-degree: 15%
 
 ---
@@ -18,14 +18,14 @@ ht-degree: 15%
 
 ## 新增中繼資料設定檔 {#adding-a-metadata-profile}
 
-1. 點選或按一下AEM標誌，並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」，然後點選「**[!UICONTROL 建立]**」。
+1. 點選或按一下[!DNL Experience Manager]標誌，並導覽至&#x200B;**[!UICONTROL 工具>資產>中繼資料描述檔]**，然後點選&#x200B;**[!UICONTROL 建立]**。
 1. 輸入元資料配置檔案的標題，例如「示例元資料」，然後按一下&#x200B;**[!UICONTROL Submit]**。 將顯示元資料配置檔案的&#x200B;**[!UICONTROL 編輯表單]**。
 
    ![chlimage_1-480](assets/chlimage_1-480.png)
 
 1. 按一下元件，然後在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中配置其屬性。 例如，按一下&#x200B;**[!UICONTROL Description]**&#x200B;元件並編輯其屬性。
 
-   ![chlimage_1-401](assets/chlimage_1-481.png)
+   ![chlimage_1-481](assets/chlimage_1-481.png)
 
    編輯&#x200B;**[!UICONTROL Description]**&#x200B;元件的以下屬性：
 
@@ -34,7 +34,7 @@ ht-degree: 15%
 
    ![chlimage_1-482](assets/chlimage_1-482.png)
 
-   您為&#x200B;**[!UICONTROL Map to property]**&#x200B;指定的值會儲存為資產中繼資料節點下的屬性。 例如，如果您指定。`/jcr:content/metadata/dc:desc` AEM Assets會將值 **[!UICONTROL 對應至屬性]**，並將值儲 `dc:desc` 存在資產的中繼資料節點。
+   您為&#x200B;**[!UICONTROL Map to property]**&#x200B;指定的值會儲存為資產中繼資料節點下的屬性。 例如，如果您指定。`/jcr:content/metadata/dc:desc` 當「對應至屬 **[!UICONTROL 性」的名稱為]**&#x200B;時， [!DNL Experience Manager] 資產會將值儲 `dc:desc` 存在資產的中繼資料節點。
 
    * **[!UICONTROL 預設值]**:使用此屬性為元資料元件添加預設值。例如，如果您指定「My description」，則此值會指派給資產中繼資料節點的屬性`dc:desc`。
 
@@ -102,7 +102,7 @@ ht-degree: 15%
 
 #### 從設定檔使用者介面將中繼資料設定檔套用至資料夾 {#applying-metadata-profiles-to-folders-from-profiles-user-interface}
 
-1. 點選AEM標誌並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」。
+1. 點選[!DNL Experience Manager]標誌並導覽至&#x200B;**[!UICONTROL 工具>資產>中繼資料描述檔]**。
 1. 選取您要套用至資料夾或多個資料夾的中繼資料設定檔。
 
    ![chlimage_1-490](assets/chlimage_1-490.png)
@@ -122,7 +122,7 @@ ht-degree: 15%
 
 ### 全域套用中繼資料設定檔 {#applying-a-metadata-profile-globally}
 
-除了將設定檔套用至資料夾之外，您也可以全域套用一個設定檔，讓任何資料夾中上傳至AEM資產的任何內容都會套用選取的設定檔。 若要全域套用中繼資料設定檔，請遵循下列步驟：
+除了將設定檔套用至資料夾之外，您也可以全域套用一個設定檔，如此一來任何資料夾中上傳至[!DNL Experience Manager]資產的任何內容都會套用選取的設定檔。 若要全域套用中繼資料設定檔，請遵循下列步驟：
 
 1. 執行下列任一操作：
 
@@ -144,7 +144,7 @@ ht-degree: 15%
 
 若要透過設定檔使用者介面從資料夾移除中繼資料設定檔，請執行下列步驟：
 
-1. 點選AEM標誌並導覽至「**[!UICONTROL 工具>資產>中繼資料描述檔]**」。
+1. 點選[!DNL Experience Manager]標誌並導覽至&#x200B;**[!UICONTROL 工具>資產>中繼資料描述檔]**。
 1. 選取要從資料夾或多個資料夾中移除的中繼資料設定檔。
 1. 點選&#x200B;**[!UICONTROL 從資料夾移除中繼資料描述檔]**&#x200B;並選取您要用來從中移除描述檔的資料夾或多個資料夾，然後點選&#x200B;**[!UICONTROL Done]**。
 
@@ -152,7 +152,7 @@ ht-degree: 15%
 
 ### 透過「屬性」從資料夾移除中繼資料描述檔 {#removing-metadata-profiles-from-folders-via-properties}
 
-1. 點選AEM標誌並導覽&#x200B;**[!UICONTROL Assets]**，然後導覽至您要移除中繼資料描述檔的資料夾。
+1. 點選[!DNL Experience Manager]標誌並導覽&#x200B;**[!UICONTROL 資產]**，然後導覽至您要移除中繼資料描述檔的資料夾。
 1. 在資料夾中，點選核取標籤以選取，然後點選&#x200B;**[!UICONTROL 屬性]**。
 1. 選擇&#x200B;**[!UICONTROL 元資料配置檔案]**&#x200B;頁簽，然後從下拉菜單中選擇&#x200B;**[!UICONTROL 無]**。 點選&#x200B;**[!UICONTROL 儲存]**。
 

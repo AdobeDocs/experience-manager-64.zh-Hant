@@ -1,28 +1,28 @@
 ---
 title: 擴充資產搜尋
-description: 將AEM Assets的搜尋功能擴充至現成可用的依字串資產搜尋以外。
+description: 依字串將 [!DNL Experience Manager] 資產的搜尋功能擴充至現成可用的搜尋功能。
 contentOwner: AG
-feature: 搜尋
+feature: Search
 role: Developer
 exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '820'
 ht-degree: 14%
 
 ---
 
-# 擴充資產搜尋{#extending-assets-search}
+# 擴充資產搜尋 {#extending-assets-search}
 
-您可以擴充Adobe Experience Manager(AEM)Assets搜尋功能。 AEM Assets會立即依字串搜尋資產。
+您可以擴充Adobe Experience Manager Assets搜尋功能。 [!DNL Experience Manager]資產現成可依字串搜尋資產。
 
 搜尋是透過QueryBuilder介面完成，因此可以使用數個述詞自訂搜尋。 您可以在以下目錄中覆蓋預設謂詞集：`/apps/dam/content/search/searchpanel/facets`。
 
-您也可以新增其他標籤至AEM Assets管理面板。
+您也可以將其他索引標籤新增至[!DNL Experience Manager]資產管理面板。
 
 >[!CAUTION]
 >
->自AEM 6.4起，已棄用傳統UI。 如需公告，請參閱[已過時和已移除的功能](../release-notes/deprecated-removed-features.md)。 建議您使用觸控式UI。 如需自訂項目，請參閱[搜尋Facet](search-facets.md)。
+>自[!DNL Experience Manager] 6.4起，已棄用傳統UI。 如需公告，請參閱[已過時和已移除的功能](../release-notes/deprecated-removed-features.md)。 建議您使用觸控式UI。 如需自訂項目，請參閱[搜尋Facet](search-facets.md)。
 
 ## 覆蓋 {#overlaying}
 
@@ -34,10 +34,9 @@ ht-degree: 14%
 >
 >預設情況下，/ `apps`下的目錄結構不存在，需要建立。 請確定節點類型與/ `libs`底下的節點類型相符。
 
+## 新增索引標籤 {#adding-tabs}
 
-## 添加頁簽{#adding-tabs}
-
-您可以在「AEM Assets管理員」中設定其他「搜尋」標籤，以新增其他「搜尋」標籤。 要建立其他頁簽：
+您可以在「[!DNL Experience Manager]資產管理」中設定其他「搜尋」標籤，以新增這些標籤。 要建立其他頁簽：
 
 1. 如果資料夾結構`/apps/wcm/core/content/damadmin/tabs,`尚未存在，請建立它，然後從`/libs/wcm/core/content/damadmin`複製`tabs`節點並貼上它。
 1. 視需要建立並設定第二個標籤。
@@ -46,17 +45,17 @@ ht-degree: 14%
    >
    >建立第二個Siteadminsearchpanel時，請務必設定`id`屬性，以防止表單衝突。
 
-## 建立自定義謂詞{#creating-custom-predicates}
+## 建立自訂述詞 {#creating-custom-predicates}
 
-AEM Assets隨附一組預先定義的述詞，可用來自訂「資產共用」頁面。 以此方式自訂資產共用在[建立和設定資產共用頁面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)中。
+[!DNL Experience Manager] 資產隨附一組預先定義的述詞，可用來自訂「資產共用」頁面。以此方式自訂資產共用在[建立和設定資產共用頁面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)中。
 
-除了使用預先存在的謂語外，AEM開發人員也可以使用[Query Builder API](/help/sites-developing/querybuilder-api.md)建立自己的謂語。
+除了使用預先存在的謂語外，[!DNL Experience Manager]開發人員也可使用[查詢產生器API](/help/sites-developing/querybuilder-api.md)建立自己的謂語。
 
 建立自定義謂詞需要有關[Widget框架](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)的基本知識。
 
 最佳實務是複製現有的述詞並加以調整。 示例謂語位於`/libs/cq/search/components/predicates`中。
 
-### 範例：建立簡單屬性述詞{#example-build-a-simple-property-predicate}
+### 範例：建立簡單屬性述詞 {#example-build-a-simple-property-predicate}
 
 若要建立屬性述詞：
 
@@ -152,7 +151,7 @@ AEM Assets隨附一組預先定義的述詞，可用來自訂「資產共用」�
    >
    >搜尋時，請務必準確輸入詞語，包括正確的大小寫。
 
-### 範例：建立簡單組述詞{#example-build-a-simple-group-predicate}
+### 範例：建立簡單群組述詞 {#example-build-a-simple-group-predicate}
 
 若要建立群組述詞：
 
@@ -254,7 +253,7 @@ AEM Assets隨附一組預先定義的述詞，可用來自訂「資產共用」�
 1. 導覽至您的瀏覽器，並在範例頁面（例如`press.html`）上切換至設計模式，並啟用謂語段落系統的新元件（例如&#x200B;**left**）。
 1. 在&#x200B;**Edit**&#x200B;模式中，新元件現在可在sidekick中使用（可在&#x200B;**Search**&#x200B;群組中找到）。 在&#x200B;**謂詞**&#x200B;列中插入元件。
 
-### 已安裝的謂詞小部件{#installed-predicate-widgets}
+### 已安裝的謂詞小工具 {#installed-predicate-widgets}
 
 下列述詞可作為預先設定的ExtJS介面工具集使用。
 
@@ -302,8 +301,8 @@ AEM Assets隨附一組預先定義的述詞，可用來自訂「資產共用」�
 | searchCallback | 函數 | 觸發搜尋的回呼。 預設為 `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | 數量 | 觸發searchCallback前的逾時。 預設為800毫秒 |
 
-## 自定義搜索結果{#customizing-search-results}
+## 自訂搜尋結果 {#customizing-search-results}
 
-在「資產共用」頁面上呈現搜尋結果的方式由選取的鏡頭控制。 AEM Assets隨附一組預先定義的鏡頭，可用來自訂「資產共用」頁面。 以此方式自訂資產共用在[建立和設定資產共用頁面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)中。
+在「資產共用」頁面上呈現搜尋結果的方式由選取的鏡頭控制。 [!DNL Experience Manager] 資產隨附一組預先定義的鏡頭，可用來自訂「資產共用」頁面。以此方式自訂資產共用在[建立和設定資產共用頁面](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)中。
 
-除了使用預先存在的鏡頭外，AEM開發人員也可以自行建立鏡頭。
+除了使用預先存在的鏡片外，[!DNL Experience Manager]開發人員也可以自行建立鏡片。

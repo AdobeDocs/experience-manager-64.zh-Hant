@@ -2,19 +2,19 @@
 title: 簽入和簽出您的數字資產以進行編輯
 description: 了解如何簽出要編輯的資產，以及在變更完成後重新簽入。
 contentOwner: AG
-feature: 資產管理
+feature: Asset Management
 role: User
 exl-id: 0c79ed42-0acd-426e-8e14-412bb4117585
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '393'
 ht-degree: 4%
 
 ---
 
 # 資產中的簽入和簽出檔案 {#check-in-and-check-out-files-in-assets}
 
-Adobe Experience Manager(AEM)資產可讓您簽出要編輯的資產，並在您完成變更後重新簽入。 結帳資產後，您只能編輯、注釋、發佈、移動或刪除資產。 簽出資產會鎖定資產。 在您將資產簽回AEM Assets之前，其他使用者無法對資產執行任何這些操作。 不過，他們仍可以變更鎖定資產的中繼資料。
+Adobe Experience Manager Assets可讓您簽出資產以進行編輯，並在您完成變更後重新簽入。 結帳資產後，您只能編輯、注釋、發佈、移動或刪除資產。 簽出資產會鎖定資產。 在您將資產簽回[!DNL Experience Manager]資產之前，其他使用者無法對資產執行任何這些操作。 不過，他們仍可以變更鎖定資產的中繼資料。
 
 若要簽出或簽入資產，您需要這些資產的「寫入」存取權。
 
@@ -58,13 +58,13 @@ Adobe Experience Manager(AEM)資產可讓您簽出要編輯的資產，並在您
 
    ![chlimage_1-475](assets/chlimage_1-475.png)
 
-   已修改的資產會簽入AEM Assets，供其他使用者編輯。
+   已修改的資產已簽入[!DNL Assets]，可供其他使用者編輯。
 
 ## 強制簽入 {#forced-check-in}
 
 管理員可以簽入其他用戶簽出的資產。
 
-1. 以管理員身分登入AEM Assets。
+1. 以管理員身分登入[!DNL Assets]。
 1. 從「資產」UI中，選取一或多個已由其他使用者簽出的資產。
 
    ![chlimage_1-476](assets/chlimage_1-476.png)

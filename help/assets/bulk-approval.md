@@ -2,12 +2,12 @@
 title: 查看資料夾資產和集合
 description: 為資料夾或集合中的資產設定審核工作流程，並與審核者或創意合作夥伴共用，以尋求意見回饋。
 contentOwner: AG
-feature: 協作，集合
+feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '811'
 ht-degree: 21%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 21%
 
 為資料夾或集合中的資產設定審核工作流程，並與審核者或創意合作夥伴共用，以尋求意見回饋。
 
-Adobe Experience Manager(AEM)Assets可讓您為資料夾或集合中的資產設定臨機檢閱工作流程，並與審核者或創意合作夥伴共用，以尋求意見反應。
+Adobe Experience Manager Assets可讓您為資料夾或集合中的資產設定臨機檢閱工作流程，並與審核者或創意合作夥伴共用，以尋求意見反應。
 
 您可以將審核工作流與項目關聯，或建立獨立的審核任務。
 
@@ -52,7 +52,7 @@ Adobe Experience Manager(AEM)Assets可讓您為資料夾或集合中的資產設
    ![review_name](assets/review_name.png)
 
 1. 點選/按一 **[!UICONTROL 下提交]**，然後點選/按一 **[!UICONTROL 下完成]** ，以關閉確認訊息。新任務的通知將發送給批准者。
-1. 以核准者身分登入AEM Assets，並導覽至Assets UI。 若要核准資產，請按一下/點選「**[!UICONTROL 通知]**」圖示，然後從清單中選取檢閱工作。
+1. 以核准者身分登入[!DNL Experience Manager]資產，並導覽至資產UI。 若要核准資產，請按一下/點選「**[!UICONTROL 通知]**」圖示，然後從清單中選取檢閱工作。
 
    ![通知](assets/notification.png)
 
@@ -96,7 +96,7 @@ Adobe Experience Manager(AEM)Assets可讓您為資料夾或集合中的資產設
    ![task_details-collection](assets/task_details-collection.png)
 
 1. 點選/按一 **[!UICONTROL 下提交]**，然後點選/按一 **[!UICONTROL 下完成]** ，以關閉確認訊息。新任務的通知將發送給批准者。
-1. 以核准者身分登入AEM Assets，並導覽至Assets主控台。 若要核准資產，請點選/按一下「**[!UICONTROL 通知]**」圖示，然後從清單中選取檢閱工作。
+1. 以核准者身分登入[!DNL Experience Manager]資產，並導覽至資產主控台。 若要核准資產，請點選/按一下「**[!UICONTROL 通知]**」圖示，然後從清單中選取檢閱工作。
 1. 在「復 **[!UICONTROL 查任務]** 」頁中，檢查複查任務的詳細資訊，然後點選/按一下「 **[!UICONTROL 複查」]**。
 1. 集合中的所有資產都會顯示在審核頁面上。 選取資產，然後點選/按一下&#x200B;**[!UICONTROL 核准/拒絕]**&#x200B;圖示，以視情況核准或拒絕資產。
 

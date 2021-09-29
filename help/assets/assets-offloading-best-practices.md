@@ -1,13 +1,13 @@
 ---
 title: 資產卸載最佳實務
-description: 在AEM Assets中卸載資產擷取和復寫工作流程的建議使用案例和最佳實務。
+description: 在 [!DNL Experience Manager] Assets中卸載資產擷取和復寫工作流程的建議使用案例和最佳實務。
 contentOwner: AG
-feature: 資產管理
+feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1820'
+source-wordcount: '1805'
 ht-degree: 0%
 
 ---
@@ -16,17 +16,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->此功能已由AEM 6.4起淘汰，並在AEM 6.5中移除。請據此規劃。
+>此功能從[!DNL Experience Manager] 6.4起淘汰，並在[!DNL Experience Manager] 6.5中移除。請據此規劃。
 
-在Adobe Experience Manager(AEM)中處理大型檔案和執行工作流程時，資產可能會耗用相當多的CPU、記憶體和I/O資源。 尤其是資產的大小、工作流程、使用者人數和資產擷取頻率可能會影響整體系統效能。 最耗用資源的作業包括AEM資產擷取和復寫工作流程。 在單一AEM製作例項上大量使用這些工作流程可能會對製作效率造成負面影響。
+在Adobe Experience Manager Assets中處理大型檔案和執行工作流程可能會耗用大量CPU、記憶體和I/O資源。 尤其是資產的大小、工作流程、使用者人數和資產擷取頻率可能會影響整體系統效能。 耗用最多資源的作業包括資產擷取和復寫工作流程。 在單一製作例項上大量使用這些工作流程可能會對製作效率造成負面影響。
 
 將這些任務卸載到專用的工作實例可以減少CPU、記憶體和IO開銷。 通常，卸載的思想是將佔用大量CPU/記憶體/IO資源的任務分發到專用的工作實例。 以下章節包含資產卸載的建議使用案例。
 
-## AEM Assets卸載 {#aem-assets-offloading}
+## [!DNL Experience Manager Assets] 卸載 {#aem-assets-offloading}
 
-AEM Assets會實作用於卸載的原生資產專屬工作流程擴充功能。 它以卸載架構提供的一般工作流程擴充功能為基礎，但在實施中包含其他資產專屬功能。 「資產」卸載的目標是對上傳的資產執行DAM更新資產工作流程。 資產卸載可讓您進一步控制擷取工作流程。
+[!DNL Experience Manager] Assets會實作原生資產專屬的工作流程擴充功能，以進行卸載。它以卸載架構提供的一般工作流程擴充功能為基礎，但在實施中包含其他資產專屬功能。 「資產」卸載的目標是對上傳的資產執行DAM更新資產工作流程。 資產卸載可讓您進一步控制擷取工作流程。
 
-## AEM Assets卸載元件 {#aem-assets-offloading-components}
+## [!DNL Experience Manager] 資產卸載元件 {#aem-assets-offloading-components}
 
 下圖描述資產卸載流程中的主要元件：
 
@@ -40,7 +40,7 @@ AEM Assets會實作用於卸載的原生資產專屬工作流程擴充功能。 
 
 作業管理器將新作業分發給工作實例。 在設計發佈機制時，請務必考慮主題啟用。 只能將作業指派給啟用作業主題的例項。 在主要上禁用主題`com/adobe/granite/workflow/offloading`，並在工作人員上啟用該主題，以確保將該作業分配給該工作人員。
 
-### AEM卸載 {#aem-offloading}
+### [!DNL Experience Manager] 卸載 {#aem-offloading}
 
 卸載框架標識分配給工作實例的工作流卸載作業，並使用複製將它們物理地傳輸給工作，包括它們的裝載（例如要捕獲的影像）。
 
@@ -50,7 +50,7 @@ AEM Assets會實作用於卸載的原生資產專屬工作流程擴充功能。 
 
 ## Sling拓撲 {#sling-topology}
 
-Sling拓撲可將AEM例項分組，並讓它們可互相感知，不受基礎持續性影響。 Sling拓撲的這項特性可讓您為非叢集、叢集和混合情境建立拓撲。 實例可向整個拓撲顯示屬性。 該框架提供用於偵聽拓撲（實例和屬性）中的更改的回調。 Sling拓撲為Sling分佈式作業提供了基礎。
+Sling拓撲將[!DNL Experience Manager]實例分組，使它們能夠彼此感知，而不受基礎持久性的影響。 Sling拓撲的這項特性可讓您為非叢集、叢集和混合情境建立拓撲。 實例可向整個拓撲顯示屬性。 該框架提供用於偵聽拓撲（實例和屬性）中的更改的回調。 Sling拓撲為Sling分佈式作業提供了基礎。
 
 ### Sling分佈式作業 {#sling-distributed-jobs}
 
@@ -89,7 +89,7 @@ Sling分佈式作業提供作業和分發框架。 Granite卸載只會處理作�
 
 ### 建議的資產卸載部署 {#recommended-assets-offloading-deployment}
 
-透過AEM和Oak，可能有數種部署案例。 若為資產卸載，建議使用共用資料存放區的TarMK型部署。 下圖概述建議的部署：
+若使用[!DNL Experience Manager]和Oak，可能有數個部署案例。 若為資產卸載，建議使用共用資料存放區的TarMK型部署。 下圖概述建議的部署：
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 

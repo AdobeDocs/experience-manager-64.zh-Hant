@@ -2,31 +2,31 @@
 title: 將集合發佈至 Brand Portal
 description: 了解如何將集合發佈和取消發佈至Brand Portal。
 contentOwner: VG
-feature: 品牌入口網站
+feature: Brand Portal
 role: User
 exl-id: c2c6759e-f763-405e-9e45-5a90b9d32df2
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '323'
 ht-degree: 21%
 
 ---
 
 # 將集合發佈至 Brand Portal {#publish-collections-to-brand-portal}
 
-身為Adobe Experience Manager(AEM)Assets管理員，您可以將集合發佈至貴組織的AEM Assets Brand Portal例項。 不過，您必須先整合AEM Assets與Brand Portal。 如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)。
+身為Adobe Experience Manager Assets管理員，您可以將集合發佈至組織的[!DNL Experience Manager Assets Brand Portal]例項。 不過，您必須先將Assets與Brand Portal整合。 如需詳細資訊，請參閱[使用 Brand Portal 設定 Assets](configure-aem-assets-with-brand-portal.md)。
 
-如果您後續修改了AEM Assets中的原始系列，在您再次發佈系列之前，Brand Portal不會反映這些變更。 此特性可確保Brand Portal中無法使用進行中的變更。 Brand Portal 僅提供管理員發佈的已核准變更。
+如果您後續在Assets中修改原始集合，在您再次發佈集合之前，Brand Portal不會反映這些變更。 此特性可確保Brand Portal中無法使用進行中的變更。 Brand Portal 僅提供管理員發佈的已核准變更。
 
 >[!NOTE]
 >
->內容片段無法發佈至 Brand Portal。因此，如果您在AEM作者上選取內容片段，則無法使用&#x200B;**[發佈至Brand Portal]**&#x200B;動作。
+>內容片段無法發佈至 Brand Portal。因此，如果您在[!DNL Experience Manager]作者上選取內容片段，則無法使用&#x200B;**[發佈至Brand Portal]**&#x200B;動作。
 >
->如果從AEM Author將包含內容片段的集合發佈至Brand Portal，則除了內容片段以外，資料夾的所有內容都會複製到Brand Portal介面。
+>如果從「[!DNL Experience Manager]作者」發佈包含內容片段的集合至Brand Portal，則除了內容片段以外，資料夾的所有內容都會複製到Brand Portal介面。
 
 ## 將集合發佈至Brand Portal {#publish-a-collection-to-brand-portal}
 
-1. 在AEM Assets UI中，點選/按一下AEM標誌。 然後，從&#x200B;**[!UICONTROL 導覽]**&#x200B;頁面前往&#x200B;**[!UICONTROL 資產>集合]**。
+1. 在「資產」UI中，點選/按一下[!DNL Experience Manager]標誌。 然後，從&#x200B;**[!UICONTROL 導覽]**&#x200B;頁面前往&#x200B;**[!UICONTROL 資產>集合]**。
 2. 在集合控制台中，選取您要發佈至Brand Portal的集合。
 
    ![select_collection](assets/select_collection.png)
@@ -43,9 +43,9 @@ ht-degree: 21%
 
 ## 取消發佈集合 {#unpublish-collections}
 
-您可以取消發佈從AEM Assets發佈至Brand Portal的集合。 取消發佈原始集合後，Brand Portal使用者將無法再使用集合的副本。
+您可以從Assets取消發佈集合到Brand Portal。 取消發佈原始集合後，Brand Portal使用者將無法再使用集合的副本。
 
-1. 在AEM Assets例項的集合控制台中，選取您要取消發佈的集合。
+1. 在[!DNL Assets]例項的集合控制台中，選取您要取消發佈的集合。
 
    ![select_collection-1](assets/select_collection-1.png)
 

@@ -2,13 +2,13 @@
 title: 搜尋 Facet
 description: 本文說明如何在AEM中建立、修改及使用搜尋Facet。
 contentOwner: AG
-feature: 搜尋
+feature: Search
 role: Admin,Developer
 exl-id: ef1c0b57-68cc-460e-ae45-e16b079194c2
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '2538'
-ht-degree: 21%
+source-wordcount: '2530'
+ht-degree: 19%
 
 ---
 
@@ -30,7 +30,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 
 如需全文搜尋，請將全文述詞新增至表單。 使用屬性述詞來搜尋符合您指定之單一屬性的資產。 使用「選項」述詞來搜尋符合特定屬性之一或多個值的資產。 新增日期範圍述詞以搜尋在指定日期範圍內建立的資產。
 
-1. 點選/按一下AEM標誌，然後前往「工具 **[!UICONTROL >一般]** >搜 **[!UICONTROL 尋表格]******」。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**。
 1. 從「搜尋Forms」頁面，選取「**[!UICONTROL Assets管理搜尋邊欄]**」，然後點選「**Edit** ![aemassets_edit](assets/aemassets_edit.png)」。
 
    ![找出並選取「資產管理搜尋邊欄」](assets/assets_admin_searchrail.png)
@@ -39,7 +39,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 
    >[!NOTE]
    >
-   >若要使用舊版AEM預先設定之&#x200B;**Assets管理搜尋邊欄**&#x200B;的資料夾搜尋功能，請執行下列步驟：
+   >若要使用先前[!DNL Experience Manager]版本中預先設定之&#x200B;**資產管理搜尋邊欄**&#x200B;的資料夾搜尋功能，請執行下列步驟：
    > 
    >1. 導覽至CRX-DE中的&#x200B;*/conf/global/settings/dam/search/facets/assets/jcr:content/items*。
    >1. 刪除&#x200B;**type**&#x200B;節點。
@@ -117,7 +117,7 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 >
 >Options述詞是自訂包裝函式，包含用來演示所述行為的屬性述詞。 目前沒有可用於本機支援此功能的REST端點。
 
-1. 點選AEM標誌，然後前往「**[!UICONTROL 工具>一般>搜尋Forms]**」。
+1. 點選[!DNL Experience Manager]標誌，然後前往「**[!UICONTROL 工具>一般>搜尋Forms]**」。
 1. 從「搜 **[!UICONTROL 尋表單」頁面]** ，選取「資 ****&#x200B;產管理搜尋邊欄」，然後點選「編輯」圖示。
 1. 在「編 **[!UICONTROL 輯搜索表單]** 」頁中，將「選 **[!UICONTROL 項謂詞」從]** 「選擇謂詞 **** 」頁籤拖到主窗格。
 1. 在「設 **[!UICONTROL 定]** 」標籤中，輸入屬性的標籤和名稱。例如，若要根據資產的格式來搜尋資產，請為標籤指定好記的名稱，例如「檔案類 **[!UICONTROL 型」]**。指定在屬性欄位中根據其執行搜索的屬性，例如 `jcr:content/metadata/dc:format.`
@@ -137,9 +137,9 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 
 ## 新增多值屬性述詞 {#adding-a-multi-value-property-predicate}
 
-「多值屬性」述詞可讓您搜尋多個值的資產。 假設您在AEM Assets中有多個產品的影像，且每個影像的中繼資料包含與產品相關聯的SKU編號。 您可以使用此述詞來根據多個SKU編號來搜尋產品影像。
+「多值屬性」述詞可讓您搜尋多個值的資產。 假設您在[!DNL Experience Manager]資產中有多個產品的影像，且每個影像的中繼資料包含與產品相關聯的SKU編號。 您可以使用此述詞來根據多個SKU編號來搜尋產品影像。
 
-1. 按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >一 **[!UICONTROL 般]** > **[!UICONTROL 搜尋表格]**」。
+1. 按一下[!DNL Experience Manager]標誌，然後前往&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**。
 1. 在「搜尋Forms」頁面上，選取「**[!UICONTROL Assets管理搜尋邊欄]**」，點選「**Edit** ![aemassets_edit](assets/aemassets_edit.png)」。
 1. 在「編輯搜索表單」頁中，將「 **[!UICONTROL Multi Value Property Predicate]** 」從「 **[!UICONTROL Select Predicate]** 」頁籤拖動到主窗格。
 1. 在&#x200B;**[!UICONTROL Settings]**&#x200B;標籤中，輸入謂語的標籤和佔位符文本。 指定在屬性欄位中根據其執行搜索的屬性名稱，例如`jcr:content/metadata/dc:value`。 您也可以使用選取對話方塊來選取節點。
@@ -150,9 +150,9 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 
 ## 新增標籤述詞 {#adding-a-tags-predicate}
 
-「標籤述詞」可讓您執行資產的標籤式搜尋。 依預設，AEM Assets會根據您指定的標籤，搜尋一或多個標籤相符的資產。 換言之，搜尋查詢會使用指定的標籤執行OR操作。 不過，您可以使用「比對所有標籤」選項，來搜尋包含您所指定之所有標籤的資產。
+「標籤述詞」可讓您執行資產的標籤式搜尋。 依預設， [!DNL Experience Manager]資產會根據您指定的標籤，搜尋一或多個符合的標籤。 換言之，搜尋查詢會使用指定的標籤執行OR操作。 不過，您可以使用「比對所有標籤」選項，來搜尋包含您所指定之所有標籤的資產。
 
-1. 按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >一 **[!UICONTROL 般]** > **[!UICONTROL 搜尋表格]**」。
+1. 按一下[!DNL Experience Manager]標誌，然後前往&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Search Forms]**。
 1. 從「搜尋Forms」頁面，選取「**[!UICONTROL Assets管理搜尋邊欄]**」，然後點選「**Edit** ![aemassets_edit](assets/aemassets_edit.png)」。
 1. 在「編輯搜索表單」頁中，將&#x200B;**[!UICONTROL 標籤謂詞]**&#x200B;從「選擇謂詞」頁簽拖動到主窗格。
 1. 在「設定」標籤中，輸入謂語的預留位置文字。 指定屬性欄位中要根據其執行搜尋的屬性名稱，例如&#x200B;*jcr:content/metadata/cq:tags*。 或者，您也可以從選取對話方塊中選取CRXDE中的節點。
@@ -223,6 +223,6 @@ Adobe Experience Manager(AEM)Assets在整個企業範圍內部署，能儲存許
 >[!MORELIKETHIS]
 >
 >* [擴充資產的搜尋](searchx.md)
-* [搜尋資產](search-assets.md)
-* [搜尋視訊資產](search-video-assets.md)
+>* [搜尋資產](search-assets.md)
+>* [搜尋視訊資產](search-video-assets.md)
 

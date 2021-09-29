@@ -2,12 +2,12 @@
 title: 準備翻譯資產
 description: 建立語言根資料夾，以準備轉譯多語言資產。
 contentOwner: AG
-feature: 項目，翻譯
+feature: Projects,Translation
 role: User,Admin
 exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '448'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 多語言資產是指具有多種語言的二進位檔、中繼資料和標籤的資產。 資產的二進位檔、中繼資料和標籤通常以一種語言存在，然後轉譯為其他語言，以用於多語言專案。
 
-在Adobe Experience Manager(AEM)資產中，多語言資產會包含在資料夾中，每個資料夾都包含不同語言的資產。
+在Adobe Experience Manager Assets中，多語言資產會包含在資料夾中，每個資料夾都包含不同語言的資產。
 
 每個語言資料夾都稱為語言副本。 語言副本的根資料夾（稱為語言根）標識語言副本中內容的語言。 例如， */content/dam/it*&#x200B;是義大利文語言副本的義大利文根。 語言副本必須使用[正確配置的語言根](preparing-assets-for-translation.md#creating-a-language-root)，以便在執行源資產翻譯時定位正確的語言。
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 ## 查看語言根 {#viewing-language-roots}
 
-觸控最佳化UI提供「參考」面板，顯示已在AEM Assets中建立的語言根清單。
+觸控最佳化UI提供「參考」面板，顯示已在[!DNL Experience Manager]資產中建立的語言根清單。
 
 1. 在Assets控制台中，選取您要建立語言副本的主要語言。
 1. 按一下或點選GlobalNav表徵圖，然後選擇&#x200B;**[!UICONTROL References]**&#x200B;以開啟「Reference」窗格。

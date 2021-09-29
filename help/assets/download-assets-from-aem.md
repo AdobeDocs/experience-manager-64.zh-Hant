@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management,Asset Distribution
 role: User
 exl-id: bfe4d597-1080-4de5-a100-73a5175863d7
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '806'
 ht-degree: 3%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 若要下載資產，請依照下列步驟操作：
 
-1. 在AEM的左上角，點選AEM標誌，然後在左側導軌中，點選「**[!UICONTROL Navigation]**」。
+1. 在AEM的左上角，點選[!DNL Experience Manager]標誌，然後在左側導軌中，點選&#x200B;**[!UICONTROL Navigation]**。
 1. 在「導覽」頁面上，點選「**[!UICONTROL 資產]** > **[!UICONTROL 檔案」。]**
 1. 導覽至包含您要下載之資產的資料夾。
 1. 選取資料夾，或在資料夾內選取一或多個資產。

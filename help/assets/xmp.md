@@ -1,30 +1,30 @@
 ---
 title: XMP中繼資料
-description: 了解AEM Assets用於中繼資料管理的XMP（可擴充中繼資料平台）中繼資料標準。 XMP提供標準格式，供多種應用程式建立、處理和交換中繼資料。
+description: 了解 [!DNL Experience Manager] Assets用於中繼資料管理的XMP（可擴充中繼資料平台）中繼資料標準。 XMP提供標準格式，供多種應用程式建立、處理和交換中繼資料。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '816'
+source-wordcount: '810'
 ht-degree: 19%
 
 ---
 
 # XMP 中繼資料 {#xmp-metadata}
 
-XMP（可擴充中繼資料平台）是AEM Assets用於所有中繼資料管理的中繼資料標準。 XMP提供標準格式，供多種應用程式建立、處理和交換中繼資料。
+XMP（可擴充中繼資料平台）是[!DNL Experience Manager]資產用於所有中繼資料管理的中繼資料標準。 XMP提供標準格式，供多種應用程式建立、處理和交換中繼資料。
 
-除了提供可嵌入到所有檔案格式的通用元資料編碼，XMP還提供豐富的[內容模型](xmp.md#xmp-core-concepts)，並受Adobe](xmp.md#advantages-of-xmp)和其他公司支援[，因此XMP的用戶與AEM Assets相結合擁有一個強大的平台來構建。
+除了提供可嵌入到所有檔案格式的通用元資料編碼，XMP還提供豐富的[內容模型](xmp.md#xmp-core-concepts)，並受Adobe](xmp.md#advantages-of-xmp)和其他公司支援[，因此XMP的用戶與[!DNL Experience Manager] Assets結合後，擁有強大的平台可以構建。
 
 [XMP規格](https://www.adobe.com/devnet/xmp.html)可從Adobe取得。
 
 ## 什麼是XMP? {#what-is-xmp}
 
-AEM Assets原生支援XMP — 由Adobe牽頭的可擴充中繼資料平台。 XMP是處理和儲存數位資產中標準化和專屬中繼資料的標準。 XMP的設計是通用標準，可讓多個應用程式有效處理中繼資料。
+[!DNL Experience Manager] Assets原本支援XMP — 由Adobe牽頭的可擴充中繼資料平台。XMP是處理和儲存數位資產中標準化和專屬中繼資料的標準。 XMP的設計是通用標準，可讓多個應用程式有效處理中繼資料。
 
-例如，生產專業人員可在Adobe的應用程式中使用內建的XMP支援，以傳遞多種檔案格式的資訊。 AEM Assets存放庫會擷取XMP中繼資料，並使用它來管理內容生命週期，並提供建立自動化工作流程的功能。
+例如，生產專業人員可在Adobe的應用程式中使用內建的XMP支援，以傳遞多種檔案格式的資訊。 [!DNL Experience Manager]資產存放庫會擷取XMP中繼資料，並使用中繼資料來管理內容生命週期，並提供建立自動化工作流程的功能。
 
 XMP借由提供資料模型、儲存模型和結構，標準化中繼資料的定義、建立和處理方式。 本節將介紹所有這些概念。
 

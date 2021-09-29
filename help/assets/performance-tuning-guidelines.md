@@ -1,24 +1,24 @@
 ---
 title: 資產效能調整指南
-description: 關於AEM配置、硬體、軟體和網路元件的更改的關鍵重點領域，以消除瓶頸並優化AEM Assets的效能。
+description: ' [!DNL Experience Manager] configuration, changes to hardware, software, and network components to remove bottlenecks and optimize the performance of [!DNL Experience Manager] Assets的主要重點區域。'
 contentOwner: AG
-feature: 資產管理
+feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '3208'
+source-wordcount: '3151'
 ht-degree: 0%
 
 ---
 
 # 資產效能調整指南 {#assets-performance-tuning-guide}
 
-Adobe Experience Manager(AEM)資產設定包含許多硬體、軟體和網路元件。 根據您的部署方案，您可能需要對硬體、軟體和網路元件進行特定配置更改，以消除效能瓶頸。
+Adobe Experience Manager Assets設定包含許多硬體、軟體和網路元件。 根據您的部署方案，您可能需要對硬體、軟體和網路元件進行特定配置更改，以消除效能瓶頸。
 
-此外，識別並遵守某些硬體和軟體最佳化准則有助於建立健全的基礎，讓您的AEM Assets部署符合效能、延展性和可靠性方面的期望。
+此外，確定並遵守某些硬體和軟體優化指南有助於構建完善的基礎，使您的[!DNL Experience Manager]資產部署能夠滿足對效能、可擴充性和可靠性的期望。
 
-AEM Assets效能不佳，可能會影響使用者互動式效能、資產處理、下載速度等方面的體驗。
+[!DNL Experience Manager]資產效能不佳，可能會影響使用者在互動式效能、資產處理、下載速度等方面的體驗。
 
 事實上，效能最佳化是您在為任何專案建立目標量度之前所執行的基本任務。
 
@@ -26,7 +26,7 @@ AEM Assets效能不佳，可能會影響使用者互動式效能、資產處理�
 
 ## 平台 {#platform}
 
-雖然AEM在多種平台上都受支援，但Adobe在Linux和Windows上對原生工具的支援最強，這有助於提供最佳效能並簡化實作。 您最好部署64位元作業系統，以符合AEM Assets部署的高記憶體需求。 如同任何AEM部署，您應盡可能實作TarMK。 雖然TarMK無法擴展至單一製作例項以外，但其執行效能比MongoMK好。 您可以新增TarMK卸載例項，以提升AEM Assets部署的工作流程處理能力。
+雖然在多種平台上支援[!DNL Experience Manager]，但Adobe在Linux和Windows上發現了對本機工具的最大支援，這有助於實現最佳效能並簡化實施。 理想情況下，您應部署64位作業系統，以滿足[!DNL Experience Manager]資產部署的高記憶體要求。 如同任何[!DNL Experience Manager]部署，您應盡可能實作TarMK。 雖然TarMK無法擴展至單一製作例項以外，但其執行效能比MongoMK好。 您可以新增TarMK卸載例項，以提升[!DNL Experience Manager]資產部署的工作流程處理能力。
 
 ### 臨時資料夾 {#temp-folder}
 
@@ -51,7 +51,7 @@ mkfs -q /dev/ram1 800000
 
 ### Java版本 {#java-version}
 
-由於Oracle自2015年4月起已停止發行Java 7更新，因此Adobe建議在Java 8上部署AEM Assets。 在某些情況下，它表現出改進的效能。
+由於Oracle自2015年4月起已停止發行Java 7更新，因此Adobe建議在Java 8上部署[!DNL Experience Manager]資產。 在某些情況下，它表現出改進的效能。
 
 ### JVM參數 {#jvm-parameters}
 
@@ -67,7 +67,7 @@ mkfs -q /dev/ram1 800000
 
 ### 檔案資料儲存配置 {#file-data-store-configuration}
 
-建議所有AEM Assets使用者將資料存放區與區段存放區分開。 此外，配置`maxCachedBinarySize`和`cacheSizeInMB`參數有助於最大化效能。 將`maxCachedBinarySize`設定為快取中可保存的最小檔案大小。 指定`cacheSizeInMB`內用於資料儲存的記憶體內快取的大小。 Adobe建議您將此值設定為堆大小總計的2-10%之間。 不過，負載/效能測試有助於確定理想的設定。
+建議所有[!DNL Experience Manager]資產使用者將資料存放區與區段存放區分開。 此外，配置`maxCachedBinarySize`和`cacheSizeInMB`參數有助於最大化效能。 將`maxCachedBinarySize`設定為快取中可保存的最小檔案大小。 指定`cacheSizeInMB`內用於資料儲存的記憶體內快取的大小。 Adobe建議您將此值設定為堆大小總計的2-10%之間。 不過，負載/效能測試有助於確定理想的設定。
 
 ### 配置緩衝映像快取的最大大小 {#configure-the-maximum-size-of-the-buffered-image-cache}
 
@@ -75,7 +75,7 @@ mkfs -q /dev/ram1 800000
 
 在OSGi Web控制台中配置緩衝快取大小。 在`https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`，以位元組為單位設定屬性`cq.dam.image.cache.max.memory`。 例如，1073741824為1 GB(1024 x 1024 x 1024 = 1 GB)。
 
-從AEM 6.1 SP1，如果要使用`sling:osgiConfig`節點來配置此屬性，請確保將資料類型設定為Long。 如需詳細資訊，請參閱資產上傳期間的[CQBufferedImageCache取用堆。](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)
+在[!DNL Experience Manager] 6.1 SP1中，如果您使用`sling:osgiConfig`節點來配置此屬性，請確保將資料類型設定為Long。 如需詳細資訊，請參閱資產上傳期間的[CQBufferedImageCache取用堆。](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)
 
 ### 共用資料儲存 {#shared-data-stores}
 
@@ -110,10 +110,10 @@ accessKey=<snip>
 
 Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆，這會對上傳和損毀檔案造成負面影響。 對於大型檔案上傳，請確保用戶有有線連接到網路，因為WiFi網路很快就飽和了。 有關確定網路瓶頸的指南，請參閱[資產調整指南](assets-sizing-guide.md)。 要通過分析網路拓撲來評估網路效能，請參閱[資產網路考量](assets-network-considerations.md)。
 
-主要地，您的網路最佳化策略取決於可用頻寬的量，以及AEM執行個體的負載。 常見的配置選項（包括防火牆或代理）有助於提高網路效能。 請謹記以下幾點：
+主要取決於可用頻寬量和[!DNL Experience Manager]實例上的負載。 常見的配置選項（包括防火牆或代理）有助於提高網路效能。 請謹記以下幾點：
 
-* 視您的執行個體類型（小、中、大）而定，請確定您的AEM執行個體有足夠的網路頻寬。 如果AEM是在AWS上托管，則適當的頻寬分配尤其重要。
-* 如果您的AEM執行個體托管在AWS上，則您可以使用通用的擴展策略來獲益。 如果使用者預期會有高負載，請更新執行個體。 縮減其大小以適度/低負載。
+* 根據您的實例類型（小、中、大），確保您的[!DNL Experience Manager]實例有足夠的網路頻寬。 如果[!DNL Experience Manager]是在AWS上托管，則適當的頻寬分配尤其重要。
+* 如果您的[!DNL Experience Manager]實例托管在AWS上，則您可以通過通用的擴展策略受益。 如果使用者預期會有高負載，請更新執行個體。 縮減其大小以適度/低負載。
 * HTTPS:大部分的使用者都有可偵聽HTTP流量的防火牆，這可能會對上傳檔案或在上傳作業期間損毀的檔案造成負面影響。
 * 大檔案上載：確保用戶有到網路的有線連接（WiFi連接快速飽和）。
 
@@ -125,9 +125,9 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 
 >[!NOTE]
 >
->在AEM 6.3中，「DAM更新資產」工作流程預設會設為「暫時」。在此情況下，您可以略過下列程式。
+>在[!DNL Experience Manager] 6.3中，「DAM更新資產」工作流預設為「暫時」。在此情況下，您可以跳過以下過程。
 
-1. 在您要設定的AEM執行個體上開啟`http://localhost:4502/miscadmin`。
+1. 在要配置的[!DNL Experience Manager]實例上開啟`http://localhost:4502/miscadmin`。
 
 1. 從導覽樹狀結構中，展 **[!UICONTROL 開「工具]** >工 **[!UICONTROL 作流程]** >模 **[!UICONTROL 型>]** dam ****」。
 1. 按兩下&#x200B;**[!UICONTROL DAM更新資產]**。
@@ -136,7 +136,7 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 
    >[!NOTE]
    >
-   >有些功能不支援暫時性工作流程。 如果您的AEM Assets部署需要這些功能，請勿設定暫時性工作流程。
+   >有些功能不支援暫時性工作流程。 如果您的[!DNL Experience Manager]資產部署需要這些功能，請勿設定暫時性工作流程。
 
    如果無法使用暫時性工作流程，請定期執行工作流程清除，刪除封存的DAM更新資產工作流程，以確保系統效能不會降低。
 
@@ -150,9 +150,9 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 
 ### 最大並行作業數 {#maximum-parallel-jobs}
 
-預設情況下，AEM運行的最大並行作業數等於伺服器上的處理器數。 此設定的問題在於，在負載過重的期間，所有處理器都會被DAM更新資產工作流程佔用，使UI回應速度變慢，並防止AEM執行其他可保護伺服器效能和穩定的程式。 作為一個良好做法，請執行以下步驟，將此值設定為伺服器上可用處理器的一半：
+預設情況下，[!DNL Experience Manager]運行的最大並行作業數等於伺服器上的處理器數。 此設定的問題在於，在負載過重的期間，所有處理器都會被DAM更新資產工作流程佔用，使UI回應速度變慢，並防止[!DNL Experience Manager]執行其他可保護伺服器效能和穩定性的程式。 作為一個良好做法，請執行以下步驟，將此值設定為伺服器上可用處理器的一半：
 
-1. 在AEM作者上，前往[http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent)。
+1. 在[!DNL Experience Manager]作者上，前往[http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent)。
 1. 在與您的實施相關的每個工作流程佇列上，按一下「編輯」 ，例如「Granite暫時性工作流程佇列」 。
 1. 更改「最大並行作業數」的值，然後按一下「保存」。
 
@@ -162,7 +162,7 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 
 若是大量耗用資源的工作流程或工作流程（例如視訊轉碼），您可以將DAM更新資產工作流程卸載至第二個製作例項。 卸載的問題通常是，卸載工作流程處理後儲存的任何負載都會被執行個體之間往返複製內容的成本所抵消。
 
-自AEM 6.2起，透過AEM 6.1的Feature Pack，您可以使用無二進位檔的復寫來執行卸載。 在此模型中，製作例項共用通用資料存放區，且只會透過轉送復寫來回傳送中繼資料。 雖然此方法適用於共用檔案資料存放區，但S3資料存放區可能會有問題。 由於背景寫入執行緒可能會導致延遲，因此在卸載作業開始之前，資產可能尚未寫入資料存放區。
+從[!DNL Experience Manager] 6.2開始，使用[!DNL Experience Manager] 6.1的Feature Pack，您可以使用無二進位檔的復寫執行卸載。 在此模型中，製作例項共用通用資料存放區，且只會透過轉送復寫來回傳送中繼資料。 雖然此方法適用於共用檔案資料存放區，但S3資料存放區可能會有問題。 由於背景寫入執行緒可能會導致延遲，因此在卸載作業開始之前，資產可能尚未寫入資料存放區。
 
 ### DAM更新資產設定 {#dam-update-asset-configuration}
 
@@ -184,7 +184,7 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 
 許多Sites客戶會實作影像servlet，在要求影像時調整大小並裁切影像，這會對發佈例項造成額外負載。 不過，只要可快取這些影像，就可緩解挑戰。
 
-另一種方法是使用Dynamic Media Classic技術，完全切斷影像處理。 此外，您可以部署Brand Portal，不僅能接管AEM基礎架構的轉譯產生責任，還能接管整個發佈層級。
+另一種方法是使用Dynamic Media Classic技術，完全切斷影像處理。 此外，您可以部署Brand Portal，它不僅接管[!DNL Experience Manager]基礎架構的轉譯產生責任，還接管整個發佈層。
 
 #### ImageMagick {#imagemagick}
 
@@ -209,13 +209,13 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 
 >[!CAUTION]
 >
->如果ImageMagick使用所有可用磁碟空間，配置錯誤可能會使伺服器不穩定。 使用ImageMagick處理大型檔案所需的策略更改可能會影響AEM效能。 有關詳細資訊，請參閱[安裝和配置ImageMagick](best-practices-for-imagemagick.md)。
+>如果ImageMagick使用所有可用磁碟空間，配置錯誤可能會使伺服器不穩定。 使用ImageMagick處理大型檔案所需的策略更改可能會影響[!DNL Experience Manager]效能。 有關詳細資訊，請參閱[安裝和配置ImageMagick](best-practices-for-imagemagick.md)。
 
 >[!NOTE]
 >
 >可在`/usr/lib64/ImageMagick-*/config/`下找到ImageMagick `policy.xml`和`configure.xml`檔案，而不是`/etc/ImageMagick/`。 有關配置檔案位置的詳細資訊，請參閱[ImageMagick文檔](https://www.imagemagick.org/script/resources.php)。
 
-如果您在Adobe Managed Services(AMS)上使用AEM，如果您打算處理大量大型PSD或PSB檔案，請聯絡Adobe客戶服務。 Experience Manager可能無法處理超過30000 x 23000像素的高解析度PSB檔案。
+如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，如果您打算處理大量大型PSD或PSB檔案，請聯絡Adobe客戶服務。 Experience Manager可能無法處理超過30000 x 23000像素的高解析度PSB檔案。
 
 <!-- 
 
@@ -307,12 +307,12 @@ XMP回寫會在AEM中修改中繼資料時更新原始資產，結果如下：
 
 ### Lucene索引配置 {#lucene-index-configurations}
 
-您可以對Oak索引設定進行一些最佳化，以協助改善AEM Assets效能：
+您可以對Oak索引設定進行一些最佳化，以協助改善[!DNL Experience Manager]資產效能：
 
 更新LuceneIndexProvider配置：
 
 1. 導覽至/system/console/configMgrorg.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-1. 在AEM 6.2之前的版本中啟用&#x200B;**[!UICONTROL CopyOnRead 、 CopyOnWrite和預先擷取索引檔案]**。這些值預設在AEM 6.2及更新版本中啟用。
+1. 在[!DNL Experience Manager] 6.2之前的版本中啟用&#x200B;**[!UICONTROL CopyOnRead 、 CopyOnWrite和預取索引檔案]** 。這些值預設在[!DNL Experience Manager] 6.2及更新版本中啟用。
 
 更新索引配置以改進重新索引時間：
 
@@ -367,7 +367,7 @@ XMP回寫會在AEM中修改中繼資料時更新原始資產，結果如下：
 
 如果您的使用者不需要搜尋資產內容（例如搜尋PDF檔案中包含的文字），則可停用此功能以改善索引效能。
 
-1. 前往AEM套件管理器/crx/packmgr/index.jsp
+1. 前往[!DNL Experience Manager]套件管理器/crx/packmgr/index.jsp
 1. 上傳並安裝以下套件
 
 [取得檔案](assets/disable_indexingbinarytextextraction-10.zip)
@@ -380,13 +380,13 @@ XMP回寫會在AEM中修改中繼資料時更新原始資產，結果如下：
 
 ### 大型檔案 {#large-files}
 
-與AEM中的大型檔案有兩個主要的已知問題。 當檔案的大小大於2 GB時，冷備用同步可能會出現記憶體不足的情況。 在某些情況下，它會阻止備用同步運行。 在其他情況下，會造成主要執行個體當機。 此案例適用於AEM中大於2GB的任何檔案，包括內容套件。
+與AEM中的大型檔案有兩個主要的已知問題。 當檔案的大小大於2 GB時，冷備用同步可能會出現記憶體不足的情況。 在某些情況下，它會阻止備用同步運行。 在其他情況下，會造成主要執行個體當機。 此情況適用於[!DNL Experience Manager]中大於2GB的任何檔案，包括內容包。
 
 同樣，當檔案在使用共用S3資料儲存時達到2GB大小時，檔案可能需要一些時間才能從快取完全保存到檔案系統。 因此，使用無二進位複製時，可能無法在複製完成之前保存二進位資料。 此情況可能會導致問題，尤其是如果資料的可用性很重要，例如在卸載情況下。
 
 ## 效能測試 {#performance-testing}
 
-對於每個AEM部署，建立效能測試制度，以便快速找出並解決瓶頸。 以下是需要關注的一些關鍵領域。
+對於每個[!DNL Experience Manager]部署，建立一個能快速識別並解決瓶頸的效能測試制度。 以下是需要關注的一些關鍵領域。
 
 ### 網路測試 {#network-testing}
 
@@ -398,14 +398,14 @@ XMP回寫會在AEM中修改中繼資料時更新原始資產，結果如下：
 * 使用網路基準工具
 * 對Dispatcher進行測試
 
-### AEM例項測試 {#aem-instance-testing}
+### [!DNL Experience Manager] 執行個體測試 {#aem-instance-testing}
 
-為了透過有效的CPU使用率和負載共用來將延遲降至最低並實現高吞吐量，請定期監控AEM執行個體的效能。 特別是：
+為了通過高效的CPU利用率和負載共用將延遲降至最低並實現高吞吐量，請定期監控[!DNL Experience Manager]實例的效能。 特別是：
 
-* 對AEM例項執行載入測試
+* 對[!DNL Experience Manager]實例運行負載測試
 * 監控上傳效能和UI回應
 
-## AEM Assets績效檢查清單 {#aem-assets-performance-checklist}
+## [!DNL Experience Manager] 資產績效檢查清單 {#aem-assets-performance-checklist}
 
 * 啟用HTTPS來繞過任何企業HTTP流量偵測器。
 * 使用有線連線上傳大量資產。
@@ -420,4 +420,4 @@ XMP回寫會在AEM中修改中繼資料時更新原始資產，結果如下：
 * 優化Lucene索引配置。
 * 使用最新的Service Pack和Hotfix來最佳化索引。 請向Adobe客戶服務洽詢，以了解有哪些其他索引最佳化措施可供使用。
 * 使用`guessTotal`優化查詢效能。
-* 如果您設定AEM以從檔案內容偵測檔案類型(在[!UICONTROL AEM Web Console]中設定[!UICONTROL Day CQ DAM Mime Type Service])，請在非尖峰時段大量上傳許多檔案，因為操作耗用大量資源。
+* 如果您設定[!DNL Experience Manager]以從檔案內容偵測檔案類型（在[!UICONTROL [!DNL Experience Manager] Web Console]中設定[!UICONTROL  Day CQ DAM Mime Type Service]），請在非尖峰時段大量上傳許多檔案，因為操作耗用大量資源。

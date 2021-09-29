@@ -1,27 +1,27 @@
 ---
-title: 使用AEM Assets管理您的數位資產
-description: 了解各種資產管理和編輯工作，您可以使用AEM Assets的觸控最佳化使用者介面來執行這些工作
+title: 使用 [!DNL Experience Manager] 資產管理數位資產
+description: 了解各種資產管理和編輯工作，您可以使用 [!DNL Experience Manager] Assets的觸控最佳化使用者介面來執行這些工作
 contentOwner: AG
 mini-toc-levels: 1
-feature: 資產管理，搜索，轉譯，協作
+feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: cdee53ea75faa2e6d1a1ec6ca7aa8bf8b8840e46
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '10131'
+source-wordcount: '10078'
 ht-degree: 2%
 
 ---
 
 # 管理您的數位資產 {#managing-assets-with-the-touch-optimized-ui}
 
-了解各種資產管理和編輯工作，您可以使用AEM Assets的觸控最佳化使用者介面來執行這些工作。
+了解您可使用[!DNL Experience Manager]資產觸控最佳化使用者介面執行的各種資產管理和編輯工作。
 
-本文說明如何使用Adobe Experience Manager(AEM)Assets觸控最佳化使用者介面來管理和編輯資產。 如需使用者介面的基本知識，請參閱[觸控式UI的基本處理](/help/sites-authoring/basic-handling.md)。 若要管理內容片段，請參閱[管理內容片段](content-fragments-managing.md)資產。
+本文說明如何使用Adobe Experience Manager Assets觸控最佳化使用者介面來管理和編輯資產。 如需使用者介面的基本知識，請參閱[觸控式UI的基本處理](/help/sites-authoring/basic-handling.md)。 若要管理內容片段，請參閱[管理內容片段](content-fragments-managing.md)資產。
 
 ## 建立資料夾 {#create-folders}
 
-組織資產集合時（例如所有`Nature`影像），您可以建立資料夾以將其保持在一起。 您可以使用資料夾來分類及組織資產。 AEM Assets不會要求您組織資料夾中的資產，以提高運作效率。
+組織資產集合時（例如所有`Nature`影像），您可以建立資料夾以將其保持在一起。 您可以使用資料夾來分類及組織資產。 [!DNL Experience Manager] 資產不需要您整理資料夾中的資產，就能更妥善地運作。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ## 上傳資產 {#uploading-assets}
 
-您可以從本機資料夾或網路磁碟將各種類型的資產（包括影像、PDF檔案、RAW檔案等）上傳至AEM Assets。
+您可以從本機資料夾或網路磁碟將各種類型的資產（包括影像、PDF檔案、RAW檔案等）上傳至[!DNL Experience Manager]資產。
 
 >[!NOTE]
 >
@@ -79,11 +79,11 @@ ht-degree: 2%
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   若要取消持續上傳，請按一下進度列旁的`X`按鈕。 取消上傳作業時，AEM Assets會刪除資產已部分上傳的部分。
+   若要取消持續上傳，請按一下進度列旁的`X`按鈕。 取消上傳操作時，[!DNL Experience Manager]資產會刪除資產部分上傳的部分。
 
    能夠繼續上傳在低頻寬情況和網路故障中特別有用，因為上傳大型資產需要很長時間。 您可以暫停上傳操作，並在情況改善時稍後繼續。 繼續時，上傳會從您暫停的點開始。
 
-   在上傳作業期間，AEM會將要上傳的資產部分儲存為CRX存放庫中的資料區塊。 上傳完成時，AEM會將這些區塊整合至存放庫中的單一資料區塊。
+   在上傳作業期間，[!DNL Experience Manager]會將要上傳的資產部分儲存為CRX存放庫中的資料區塊。 上傳完成時，[!DNL Experience Manager]會將這些區塊整合至存放庫中的單一資料區塊。
 
    要配置未完成的區塊上載作業的清除任務，請轉到`https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`。
 
@@ -99,7 +99,7 @@ ht-degree: 2%
    >
    >如果啟用&#x200B;**[!UICONTROL 資產前瞻分析]**&#x200B;以追蹤Adobe Analytics的曝光次數/點按次數，此重新產生的資產ID會讓Adobe Analytics上為資產擷取的資料失效。
 
-   如果您上傳的資產存在於AEM Assets中， **[!UICONTROL 偵測到的重複項目]**&#x200B;對話方塊會警告您嘗試上傳重複資產。 只有現有資產二進位的SHA 1檢查加總值符合您上傳之資產的檢查加總值時，才會顯示對話方塊。 在這種情況下，資產的名稱並不重要。 換言之，如果資產的二進位檔的SHA 1值相同，則對話方塊甚至可能會針對名稱不同的資產顯示。
+   如果您上傳的資產存在於[!DNL Experience Manager]資產中， **[!UICONTROL 偵測到的重複項目]**&#x200B;對話方塊會警告您嘗試上傳重複資產。 只有現有資產二進位的SHA 1檢查加總值符合您上傳之資產的檢查加總值時，才會顯示對話方塊。 在這種情況下，資產的名稱並不重要。 換言之，如果資產的二進位檔的SHA 1值相同，則對話方塊甚至可能會針對名稱不同的資產顯示。
 
    >[!NOTE]
    >
@@ -107,9 +107,9 @@ ht-degree: 2%
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   點選&#x200B;**[!UICONTROL Keep]**&#x200B;以在AEM Assets中保留重複資產。 點選&#x200B;**[!UICONTROL 刪除]**&#x200B;以刪除您上傳的重複資產。
+   點選&#x200B;**[!UICONTROL Keep]**&#x200B;以在[!DNL Experience Manager]資產中保留重複資產。 點選&#x200B;**[!UICONTROL 刪除]**&#x200B;以刪除您上傳的重複資產。
 
-   AEM Assets可防止您上傳檔案名稱中含有禁止字元的資產。 如果您嘗試上傳包含不允許的字元的資產，AEM Assets會顯示有關檔案名稱中是否有禁止字元的警告訊息，並停止上傳，直到您移除這些字元或以允許的名稱上傳為止。
+   [!DNL Experience Manager] 資產可防止您上傳檔案名稱中含有禁止字元的資產。如果您嘗試上傳包含不允許的字元的資產，[!DNL Experience Manager]資產會顯示有關檔案名稱中是否包含禁止字元的警告訊息，並停止上傳，直到您移除這些字元或上傳並加上允許的名稱為止。
 
    為了適合貴組織的特定檔案命名慣例，**[!UICONTROL 上傳資產]**&#x200B;對話方塊可讓您為上傳的檔案指定長名稱。
 
@@ -125,13 +125,13 @@ ht-degree: 2%
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   如果您在檔案上傳前取消上傳操作，AEM Assets會停止上傳目前的檔案並重新整理內容。 不過，不會刪除已上傳的檔案。
+   如果您在檔案上傳前取消上傳操作，[!DNL Experience Manager]資產會停止上傳目前的檔案並重新整理內容。 不過，不會刪除已上傳的檔案。
 
 ### 串列上傳 {#serial-uploads}
 
-大量上傳大量資產會耗用大量系統資源，這對AEM部署的效能造成負面影響。 潛在的瓶頸可能是您的網際網路連線、磁碟的讀寫操作、網頁瀏覽器對同時上傳資產時的POST請求數量的限制。 大量上傳操作可能會過早失敗或終止。 換言之，AEM資產在擷取一堆檔案時，可能會遺漏某些檔案，或完全無法擷取任何檔案。
+大量上傳大量資產會耗用大量系統資源，這可能會對[!DNL Experience Manager]部署的效能造成負面影響。 潛在的瓶頸可能是您的網際網路連線、磁碟的讀寫操作、網頁瀏覽器對同時上傳資產時的POST請求數量的限制。 大量上傳操作可能會過早失敗或終止。 換言之，[!DNL Experience Manager]資產在擷取一堆檔案時可能會遺漏某些檔案，或完全無法擷取任何檔案。
 
-為了克服此情況，在大量上傳作業期間，AEM Assets會一次擷取一個資產（串列上傳），而非同時擷取所有資產。
+為了克服此情況，在批量上傳操作期間，[!DNL Experience Manager]資產一次內嵌一個資產（串列上傳），而非同時內嵌所有資產。
 
 資產的串列上傳預設為啟用。 若要停用功能並允許同時上傳，請覆蓋CRXDe中的`fileupload`節點，並將`parallelUploads`屬性的值設為`true`。
 
@@ -145,9 +145,9 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 
 >[!NOTE]
 >
->若要在Dynamic Media - Scene7模式中透過FTP上傳資產，請在AEM作者上安裝Feature Pack(FP)18912。 請連絡Adobe客戶服務以存取FP-18912並完成FTP帳戶的設定。 請參閱[安裝Feature Pack 18912以移轉大量資產](/help/assets/bulk-ingest-migrate.md)。
+>若要在[!DNL Experience Manager]作者上透過Dynamic Media - Scene7模式安裝Feature Pack(FP)18912中的FTP上傳資產。 請連絡Adobe客戶服務以存取FP-18912並完成FTP帳戶的設定。 請參閱[安裝Feature Pack 18912以移轉大量資產](/help/assets/bulk-ingest-migrate.md)。
 >
->如果您使用FTP上傳資產，則會忽略AEM中指定的上傳設定。 系統會改用Dynamic Media Classic中定義的檔案處理規則。
+>如果您使用FTP上傳資產，則會忽略[!DNL Experience Manager]中指定的上傳設定。 系統會改用Dynamic Media Classic中定義的檔案處理規則。
 
 **使用FTP上傳資產**
 
@@ -167,7 +167,7 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 1. 在「**[!UICONTROL 上傳工作選項]**」對話方塊的右下角，點選「**[!UICONTROL 儲存]**」。
 1. 在&#x200B;**[!UICONTROL Upload]**&#x200B;頁面的右下角，點選&#x200B;**[!UICONTROL Submit Upload]**。
 
-   若要檢視上傳進度，請在全域導覽列上，點選&#x200B;**[!UICONTROL 工作]**。 **[!UICONTROL 作業]**&#x200B;頁面顯示上傳進度。 您可以繼續在AEM中工作，並隨時返回Dynamic Media Classic的「工作」頁面，以檢閱進行中的工作。
+   若要檢視上傳進度，請在全域導覽列上，點選&#x200B;**[!UICONTROL 工作]**。 **[!UICONTROL 作業]**&#x200B;頁面顯示上傳進度。 您可以繼續在[!DNL Experience Manager]中工作，並隨時返回Dynamic Media Classic的「工作」頁面，以檢閱進行中的工作。
 
    若要取消正在進行的上傳作業，請點選&#x200B;**[!UICONTROL Duration]**&#x200B;時間旁的&#x200B;**[!UICONTROL Cancel]**。
 
@@ -177,11 +177,11 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 |---|---|---|
 | 工作名稱 |  | 在文本欄位中預填的預設名稱包括用戶輸入的名稱部分和日期和時間戳。 您可以使用預設名稱，或輸入您為此上傳作業建立的名稱。 <br>作業以及其他上傳和發佈作業會記錄在「作業」頁面上，您可在此檢查作業的狀態。 |
 | 上傳後發佈 |  | 自動發佈您上傳的資產。 |
-| 在任何資料夾中覆寫相同的基本資產名稱（不論副檔名為何） |  | 如果您希望上傳的檔案以相同名稱取代現有檔案，請選取此選項。 此選項的名稱可能不同，具體取決於&#x200B;**[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**&#x200B;中的設定。 |
+| 任何檔案夾內若有基本資產名稱相同者 (無論副檔名為何)，將予以覆寫 |  | 如果您希望上傳的檔案以相同名稱取代現有檔案，請選取此選項。 此選項的名稱可能不同，具體取決於&#x200B;**[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**&#x200B;中的設定。 |
 | 上傳時解壓縮ZIP或TAR檔案 |  |  |
 | 作業選項 |  | 點選/按一下&#x200B;**[!UICONTROL 作業選項]**&#x200B;以開啟[!UICONTROL 上傳作業選項]對話方塊，並選擇影響整個上傳作業的選項。 所有檔案類型的這些選項都相同。<br>您可以從「應用程式一般設定」頁面開始，選擇上傳檔案的預設選項。要開啟此頁，請選擇&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**。 點選&#x200B;**[!UICONTROL 預設上傳選項]**&#x200B;按鈕以開啟[!UICONTROL 上傳作業選項]對話方塊。 |
 |  | 時間 | 選取一次性或循環。 若要設定循環作業，請選擇「重複」選項（每日、每週、每月或自訂），以指定何時要重複執行FTP上傳作業。 然後視需要指定排程選項。 |
-|  | 包含子資料夾 | 上傳要上傳之資料夾內的所有子資料夾。 您上傳的資料夾及其子資料夾的名稱會自動輸入AEM Assets。 |
+|  | 包含子資料夾 | 上傳要上傳之資料夾內的所有子資料夾。 您上傳的資料夾及其子資料夾名稱會自動輸入[!DNL Experience Manager]資產。 |
 |  | 裁切選項 | 要從影像的側面手動裁切，請選擇「裁切」菜單，然後選擇「手動」。 然後輸入要從影像的任何一側或每一側裁切的像素數。 影像被裁切的程度取決於影像檔案中的ppi設定（每英吋像素）。 例如，如果影像顯示150 ppi，而您在「上」、「右」、「下」和「左」文字方塊中輸入75，則會從每側裁切半英吋。<br> 要自動從影像中裁切空白像素，請開啟「裁切」菜單，選擇「手動」，然後在「頂部」、「右」、「底部」和「左側」欄位中輸入像素測量，以便從側面裁切。您也可以在「裁切」菜單上選擇「修剪」，然後選擇以下選項：<br> **根據** <ul><li>**顏色**  — 選擇顏色選項。然後選取「角」菜單，選擇影像的角，該角的顏色最能代表要裁切的空白顏色。</li><li>**透明度**  — 選擇「透明度」選項。<br> **容差**  — 拖動滑桿以指定0到1的容差。對於基於顏色的修剪，請指定0以僅在像素與您在影像的角中選定的顏色完全匹配時裁剪像素。接近1的數字會產生更多的顏色差異。<br>要根據透明度進行修剪，請指定0隻在像素為透明時裁剪像素。接近1的數字使透明度更高。</li></ul><br>請注意，這些裁切選項不具破壞性。 |
 |  | 色彩描述檔選項 | 建立用於傳送的最佳化檔案時，請選擇色彩轉換：<ul><li>預設顏色保留：當影像包含顏色空間資訊時，保持源影像的顏色；沒有顏色轉換。 目前幾乎所有的影像都已內嵌適當的色彩設定檔。 但是，如果CMYK源影像不包含嵌入的顏色配置檔案，則這些顏色將轉換為sRGB（標準紅綠藍）顏色空間。 sRGB是在網頁上顯示影像的建議色域。</li><li>保留原始顏色空間：保留原始顏色，點上不進行任何顏色轉換。 對於沒有內嵌顏色描述檔的影像，任何顏色轉換都使用在「發佈」設定中設定的預設顏色描述檔來完成。 顏色配置檔案可能與使用此選項建立的檔案中的顏色不一致。 因此，建議您使用「預設顏色保留」選項。</li><li>「自定義自」>「轉換為」<br>開啟菜單，以便選擇「轉換自」和「轉換為顏色空間」。 此高級選項將覆蓋嵌入源檔案中的任何顏色資訊。 當您提交的所有影像都包含不正確或遺失的色彩設定檔資料時，請選取此選項。</li></ul> |
 |  | 影像編輯選項 | 可以保留影像中的剪裁蒙版，並選擇顏色輪廓。<br> 請參閱 [在上傳時設定影像編輯選項](#setting-image-editing-options-at-upload)。 |
@@ -206,7 +206,7 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 | 選項 | 子選項 | 說明 |
 |---|---|---|
 | 從剪裁路徑建立遮色片 |  | 根據影像的剪裁路徑資訊建立影像的遮色片。 此選項適用於使用已建立剪裁路徑的影像編輯應用程式建立的影像。 |
-| 遮色片銳利化 |  | 可讓您微調最終縮減取樣影像的銳利化濾鏡效果，控制效果的強度、效果半徑（如像素所測），以及忽略的對比度閾值。<br> 此效果使用的選項與Photoshop的遮色片銳利化濾鏡相同。與名稱相反，「遮色片銳利化」是銳利化濾鏡。 在「銳利化遮色片」(Unsharp Masking)下，設定所需的選項。 以下說明設定選項： |
+| 不銳利化遮色片 |  | 可讓您微調最終縮減取樣影像的銳利化濾鏡效果，控制效果的強度、效果半徑（如像素所測），以及忽略的對比度閾值。<br> 此效果使用的選項與Photoshop的遮色片銳利化濾鏡相同。與名稱相反，「遮色片銳利化」是銳利化濾鏡。 在「銳利化遮色片」(Unsharp Masking)下，設定所需的選項。 以下說明設定選項： |
 |  | 數量 | 控制套用至邊緣像素的對比度。<br> 把它想成效果的強度。Dynamic Media中「遮色片銳利化」的量值與Adobe Photoshop中的量值之間的主要差異，是Photoshop的量範圍介於1%到500%之間。 而在Dynamic Media中，值範圍是0.0到5.0。在Photoshop中，5.0的值大致等於500%;值0.9等於90%，以此類推。 |
 |  | 半徑 | 控制效果的半徑。 值範圍是0-250。<br> 此效果在影像中的所有像素上運行，並從所有方向的所有像素輻射出來。半徑以像素計量。 例如，要獲得類似於2000 x 2000像素影像和500 x 500像素影像的銳利化效果，可以在2000 x 2000像素影像上設定兩個像素的半徑，在500 x 500像素影像上設定一個像素的半徑值。 較大的值用於具有較多像素的影像。 |
 |  | 臨界值 | 臨界值是套用遮色片銳利化濾鏡時會忽略的對比範圍。 請務必避免在使用此濾波器時對影像引入「雜訊」。 值範圍為0-255，即灰度影像中的亮度階數。 0=黑色，128=50%灰色，255=白色。<br> 例如，閾值為12會忽略輕微的變化是膚色亮度以避免加上雜訊，但仍會加上邊緣對比度至對比區域，例如睫毛與皮膚相遇的區域。<br> 例如，如果您有某人臉的照片，「不銳利化遮色片」會影響影像的對比部分，例如睫毛和皮膚相遇以建立明顯的對比區域，以及平滑的皮膚本身。即使最平滑的皮膚也表現出亮度值的細微變化。 如果您未使用臨界值，濾鏡會強調外觀像素中的這些細微變化。 然後，產生噪音和不期望的效果，同時增加對睫毛的對比度，增強銳度。<br> 為避免此問題，會引入臨界值，告知篩選器忽略不會大幅改變對比度的像素，例如平滑外觀。<br> 在前面顯示的拉鍊圖中，注意拉鍊旁邊的紋理。由於閾值太低，無法抑制雜訊，因此會產生影像雜訊。 |
@@ -248,7 +248,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 | 維護圖層 |  | 將PSD中的圖層（如果有的話）分割為個別資產。 資產層仍與PSD相關聯。 通過在「詳細資訊」視圖中開啟PSD檔案並選取圖層面板，可以查看它們。 |
 | 建立範本 |  | 從PSD檔案中的圖層建立模板。 |
 | 擷取文字 |  | 擷取文字，讓使用者能在檢視器中搜尋文字。 |
-| 將圖層擴展到背景大小 |  | 將撕開的影像層的大小擴展到背景層的大小。 |
+| 延伸圖層以符合背景大小 |  | 將撕開的影像層的大小擴展到背景層的大小。 |
 | 圖層命名 |  | PSD檔案中的圖層將作為單獨的影像上載。 |
 |  | 圖層名稱 | 在影像在PSD檔案中的圖層名稱之後命名影像。 例如，原始PSD檔案中名為「價格標籤」的圖層會變成名為「價格標籤」的影像。 但是，如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱（背景、第1層、第2層等），則影像的名稱是以PSD檔案中的圖層編號而非預設圖層名稱來命名。 |
 |  | Photoshop和圖層編號 | 在PSD檔案中的圖層編號後命名影像，忽略原始圖層名稱。 影像的名稱為Photoshop檔案名稱及附加的圖層編號。 例如，名為Spring Ad.psd的檔案的第二層名為Spring Ad_2，即使它在Photoshop中具有非預設名稱亦然。 |
@@ -273,10 +273,10 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 | 從多頁PDF自動產生eCatalog |  | 從PDF檔案自動建立eCatalog。 eCatalog以您上傳的PDF檔案命名。 （只有在上傳PDF檔案時柵格化該檔案時，才可使用此選項。） |
 | 解析度 |  | 確定解析度設定。 此設定決定PDF檔案中每英吋顯示的像素數。 預設為150。 |
 | 色彩空間 |  | 選擇「顏色空間」菜單，並為PDF檔案選擇一個顏色空間。 大多數PDF檔案都有RGB和CMYK顏色影像。 RGB色域更適合線上檢視。 |
-|  | 自動檢測 | 保留PDF檔案的顏色空間。 |
-|  | 強制為RGB | 轉換為RGB色域。 |
-|  | 強制為CMYK | 轉換為CMYK顏色空間。 |
-|  | 強制為灰度 | 轉換為灰度顏色空間。 |
+|  | 自動偵測 | 保留PDF檔案的顏色空間。 |
+|  | 強制為 RGB | 轉換為RGB色域。 |
+|  | 強制為 CMYK | 轉換為CMYK顏色空間。 |
+|  | 強制為灰階 | 轉換為灰度顏色空間。 |
 
 #### 設定eVideo上傳選項 {#setting-evideo-upload-options}
 
@@ -298,17 +298,17 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
 ### 串流上傳 {#streamed-uploads}
 
-如果您上傳許多資產，對AEM伺服器的I/O呼叫會大幅增加，進而降低上傳效率，甚至可能導致逾時。 AEM Assets支援資產的串流上傳。 串流上傳可避免將資產儲存在伺服器上的臨時資料夾中，然後再複製到存放庫，以減少上傳作業期間的磁碟I/O。 資料會直接傳輸至存放庫。 如此一來，上傳大型資產的時間和逾時的可能性就會降低。 AEM Assets預設會啟用串流上傳。
+如果您上傳許多資產，對[!DNL Experience Manager]伺服器的I/O呼叫會大幅增加，進而降低上傳效率，甚至導致逾時。 [!DNL Experience Manager] Assets支援串流上傳資產。串流上傳可避免將資產儲存在伺服器上的臨時資料夾中，然後再複製到存放庫，以減少上傳作業期間的磁碟I/O。 資料會直接傳輸至存放庫。 如此一來，上傳大型資產的時間和逾時的可能性就會降低。 預設會在[!DNL Experience Manager]資產中啟用串流上傳。
 
-若AEM在Servlet-api版本低於3.1的JEE伺服器上執行，則會停用串流上傳。
+對於在Servlet-api版本小於3.1的JEE伺服器上執行的[!DNL Experience Manager]，會停用串流上傳。
 
 ### 解壓縮包含資產的ZIP封存 {#extract-zip-archive-containing-assets}
 
-您可以像上傳任何其他支援的資產一樣上傳ZIP封存檔。 相同的檔案名規則適用於ZIP檔案。 AEM可讓您將ZIP封存解壓縮至DAM位置。
+您可以像上傳任何其他支援的資產一樣上傳ZIP封存檔。 相同的檔案名規則適用於ZIP檔案。 [!DNL Experience Manager] 可讓您將ZIP封存解壓縮至DAM位置。
 
 一次選擇一個ZIP存檔，按一下&#x200B;**[!UICONTROL 解壓縮存檔]**，然後選擇目標資料夾。 選擇一個選項以處理衝突（如果有）。 如果ZIP檔案中的資產已存在於目的地資料夾中，您可以選取下列其中一個選項：略過擷取、取代現有檔案、透過重新命名來保留兩個資產，或建立新版本。
 
-提取完成後，AEM會在通知區域中通知您。 AEM擷取郵遞區號時，您可以繼續工作而不中斷提取作業。
+提取完成後，[!DNL Experience Manager]會在通知區域中通知您。 當[!DNL Experience Manager]提取郵遞區號時，您可以繼續工作而不中斷提取。
 
 ![郵遞區號解壓縮通知](assets/zip_extract_notification.png)
 
@@ -413,7 +413,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
    >[!NOTE]
    >
-   >如果您複製相同位置的資產，AEM會自動產生名稱的變異。 例如，如果您複製名為Square的資產，AEM會自動產生副本的標題，作為Square1。
+   >如果您複製相同位置的資產， [!DNL Experience Manager]會自動產生名稱的變異。 例如，如果您複製名為Square的資產， [!DNL Experience Manager]會自動產生其復本的標題，作為Square1。
 
 1. 點選工具列中的&#x200B;**[!UICONTROL 貼上]**&#x200B;資產圖示：
 
@@ -500,7 +500,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
    >[!NOTE]
    >
-   >依預設，AEM Assets不會以預覽模式顯示資產的原始轉譯。 如果您是管理員，可以使用覆蓋來設定AEM Assets，以在預覽模式中顯示原始轉譯。
+   >依預設，[!DNL Experience Manager]資產不會以預覽模式顯示資產的原始轉譯。 如果您是管理員，可以使用覆蓋來設定[!DNL Experience Manager]資產，以在預覽模式中顯示原始轉譯。
 
 1. 選取轉譯以檢視或刪除轉譯。
 
@@ -520,7 +520,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
    >
    >如果您從「轉譯」面板選取轉譯 **** ，工具列會變更上下文，並僅顯示與轉譯相關的動作。未顯示&#x200B;**[!UICONTROL Upload Rendition]**&#x200B;圖示等選項。 若要在工具列中檢視這些選項，請導覽至資產的詳細資訊頁面。
 
-   您可以為要顯示在影像或視訊資產詳細資訊頁面中的轉譯設定維度。 AEM Assets會根據您指定的維度，顯示包含精確或最接近維度的轉譯。
+   您可以為要顯示在影像或視訊資產詳細資訊頁面中的轉譯設定維度。 [!DNL Experience Manager] Assets會根據您指定的維度，顯示包含精確或最接近維度的轉譯。
 
    若要在資產詳細資料層級設定影像的轉譯尺寸，請覆蓋&#x200B;**[!UICONTROL renditionpicker]**&#x200B;節點`libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker`並設定width屬性的值。 設定屬性大 **[!UICONTROL 小 (長) (KB]** )以取代寬度，以根據影像大小自訂資產詳細資料頁面上的轉譯。對於基於大小的定製，如果匹配的格式副本的大小大於原始格式副本的大小，則屬性&#x200B;**[!UICONTROL preferOriginal]**&#x200B;會為原始格式副本指定首選項。
 
@@ -615,10 +615,10 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
    ![login_page](assets/login_page.png)
 
-   如果您未指定登入頁面的路徑，AEM會在發佈執行個體中顯示預設登入頁面。
+   如果您未指定登入頁面的路徑，[!DNL Experience Manager]會在發佈執行個體中顯示預設登入頁面。
 
 1. 發佈資料夾，然後嘗試從發佈執行個體存取資料夾。 隨即顯示登入畫面。
-1. 如果您是CUG成員，請輸入您的安全憑據。 資料夾會在AEM驗證您後顯示。
+1. 如果您是CUG成員，請輸入您的安全憑據。 資料夾會在[!DNL Experience Manager]驗證您後顯示。
 
 ## 搜尋資產 {#searching-assets}
 
@@ -628,7 +628,7 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 對於最近上傳的資產，在您於Omnisearch方塊中輸入時，系統不會立即在顯示的建議清單中顯示其中繼資料（包括標題、標籤等）。
 
-這是因為AEM Assets會等到逾時期間到期（預設為1小時），才執行背景工作，為所有新上傳/更新的資產建立中繼資料索引，並將其新增至建議清單。
+這是因為[!DNL Experience Manager]資產會等到逾時期間（預設為1小時）過後，才執行背景工作，為所有新上傳/更新的資產建立中繼資料索引，並將其新增至建議清單。
 
 ## 使用快速動作 {#quick-actions}
 
@@ -655,7 +655,7 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 ## 編輯影像 {#editing-images}
 
-AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工作。 您可以裁切、旋轉、翻轉和對影像執行其他編輯工作。 您也可以將影像地圖新增至資產。
+[!DNL Experience Manager]資產介面中的編輯工具可讓您對影像資產執行小型編輯工作。 您可以裁切、旋轉、翻轉和對影像執行其他編輯工作。 您也可以將影像地圖新增至資產。
 
 具有下列格式的檔案支援影像編輯：
 
@@ -715,7 +715,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 在[集合控制台](managing-collections-touch-ui.md#navigating-the-collections-console)中， **[!UICONTROL 全部顯示]**&#x200B;清單提供僅查看注釋和工作流的選項。 此外，時間軸只會針對控制台中列出的頂層集合顯示。 如果您導覽至任何系列內，畫面不會顯示。
 
-**** 時間連結包含 [數個內容片段專用的選項](content-fragments-managing.md#timeline-for-content-fragments);此功能需 [要AEM 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md) 或更新版本。
+**** 時間連結包含 [數個內容片段專用的選項](content-fragments-managing.md#timeline-for-content-fragments);此功能需 [[!DNL Experience Manager] 要6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md) 或更新版本。
 
 **要使用時間軸**:
 
@@ -732,9 +732,9 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 註解是在影像或影片中新增的註解或說明性附註。 註解可讓行銷人員共同作業，並提供資產的相關意見。
 
-只有HTML5相容視訊格式的瀏覽器才支援視訊註解。 AEM Assets支援的視訊格式取決於瀏覽器。
+只有HTML5相容視訊格式的瀏覽器才支援視訊註解。 [!DNL Experience Manager]資產支援的視訊格式取決於瀏覽器。
 
-針對內容片段，在編輯器](content-fragments-variations.md#annotating-a-content-fragment)中建立[註解；此功能需要[AEM 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md)或更新版本。
+針對內容片段，在編輯器](content-fragments-variations.md#annotating-a-content-fragment)中建立[註解；此功能需要[[!DNL Experience Manager] 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md)或更高版本。
 
 您可以先新增多個註解，再儲存。
 
@@ -769,7 +769,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. 點選&#x200B;**[!UICONTROL 關閉]**&#x200B;以退出&#x200B;**[!UICONTROL Annotation]**&#x200B;模式。
-1. 若要檢視通知，請使用Aaron MacDonald的憑證登入AEM Assets，然後點選&#x200B;**[!UICONTROL Notifications]**&#x200B;圖示以檢視通知。
+1. 若要檢視通知，請使用Aaron MacDonald的憑證登入[!DNL Experience Manager]資產，然後點選&#x200B;**[!UICONTROL Notifications]**&#x200B;圖示以檢視通知。
 
 1. 若要選擇不同的顏色，以便區分使用者，請點選&#x200B;**[!UICONTROL Profile]**&#x200B;圖示，然後點選&#x200B;**[!UICONTROL My Preferences]**。
 
@@ -861,12 +861,12 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    返回轉譯的PDF檔案並重新整理。 重新整理的PDF會反映您所做的變更。
 
-**要打印外文注釋**:如果資產包含外文（尤其是非拉丁語）的註解，您必須先在AEM伺服器上設定CQ-DAM-Handler-Gibson字型管理器服務，才能列印這些註解。在配置CQ-DAM-Handler-Gibson字型管理器服務時，提供所需語言字型的位置路徑。
+**要打印外文注釋**:如果資產包含外文（尤其是非拉丁語）的註解，您必須先在伺服器上設定CQ-DAM-Handler-Gibson字型管理器服務， [!DNL Experience Manager] 才能列印這些註解。在配置CQ-DAM-Handler-Gibson字型管理器服務時，提供所需語言字型的位置路徑。
 
 1. 從URL [https://&lt;server>開啟&#x200B;**[!UICONTROL CQ-DAM-Handler-Gibson字型管理器服務]**&#x200B;配置頁：&lt;port>/system/console/configMgr/com.day.cq.dam.handler.fontmanager.impl.FontManager服務Impl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl)。
 1. 要配置&#x200B;**[!UICONTROL CQ-DAM-Handler-Gibson字型管理器服務]**，請執行以下操作之一：
 
-   * 在&#x200B;**[!UICONTROL 系統字型]**&#x200B;目錄選項中，指定系統上字型目錄的完整路徑。 例如，如果您是Mac用戶，則可以在&#x200B;**[!UICONTROL System Fonts]**&#x200B;目錄選項中將路徑指定為`/Library/Fonts`。 AEM會從此目錄中擷取字型。
+   * 在&#x200B;**[!UICONTROL 系統字型]**&#x200B;目錄選項中，指定系統上字型目錄的完整路徑。 例如，如果您是Mac用戶，則可以在&#x200B;**[!UICONTROL System Fonts]**&#x200B;目錄選項中將路徑指定為`/Library/Fonts`。 [!DNL Experience Manager] 從此目錄中讀取字型。
    * 在&#x200B;**[!UICONTROL crx-quickstart]**&#x200B;資料夾內建立名為&#x200B;**fonts**&#x200B;的目錄。 **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** 會自動在位置擷取字 `crx-quickstart/fonts`型。您可以從&#x200B;**[!UICONTROL Adobe伺服器字型]**&#x200B;目錄選項內覆蓋此預設路徑。
    * 在系統中為字型建立新資料夾，並將所需的字型儲存在資料夾中。 然後，在&#x200B;**[!UICONTROL Customer Fonts]**&#x200B;目錄選項中指定該資料夾的完整路徑。
 
@@ -875,9 +875,9 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
    * 在font-family選項中包含字串`<font_family_name_of_custom_font, sans-serif>`。 例如，如果要以CJK（中文、日文和韓文）打印注釋，請在字型系列選項中包含字串`Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`。 如果要以印地語打印注釋，請下載相應的字型，並將字型系列配置為Arial Unicode MS、Noto Sans、Noto Sans CJK JP、Noto Sans Devanagari、sans-serif。
 
-1. 重新啟動AEM執行個體。
+1. 重新啟動[!DNL Experience Manager]實例。
 
-以下是如何配置AEM以在CJK（中文、日文和韓文）中打印注釋的示例：
+以下是如何配置[!DNL Experience Manager]以在CJK（中文、日文和韓文）中打印注釋的示例：
 
 1. 從以下連結下載Google Noto CJK字型，並將其儲存在字型管理器服務中配置的字型目錄中。
 
@@ -894,9 +894,9 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 以下是您建立版本的案例：
 
-* 您可以修改不同應用程式中的影像，並上傳至AEM Assets。 會建立影像版本，以免覆寫原始影像。
+* 您可以修改不同應用程式中的影像，並上傳至[!DNL Experience Manager]資產。 會建立影像版本，以免覆寫原始影像。
 * 您可以編輯資產的中繼資料。
-* 您可以使用AEM案頭應用程式來結帳現有資產並儲存變更。 每次儲存資產時都會建立新版本。
+* 您使用[!DNL Experience Manager]案頭應用程式來結帳現有資產並儲存變更。 每次儲存資產時都會建立新版本。
 
 您也可以透過工作流程啟用自動版本設定。 當您建立資產的版本時，中繼資料和轉譯會與版本一併儲存。 轉譯是相同影像的替代項目，例如上傳之JPEG檔案的PNG轉譯。
 
@@ -952,7 +952,7 @@ AEM Assets介面中的編輯工具可讓您對影像資產執行小型編輯工�
 
 ### 啟動資產的工作流程 {#starting-a-workflow-on-an-asset}
 
-請參閱[將工作流程套用至AEM資產](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
+請參閱[將工作流程套用至 [!DNL Experience Manager] asset](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset)。
 
 ## 關於集合 {#collections}
 

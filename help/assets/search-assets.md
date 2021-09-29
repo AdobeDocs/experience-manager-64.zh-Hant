@@ -1,20 +1,20 @@
 ---
 title: 在AEM中搜尋資產
-description: 了解如何使用「篩選器」面板在AEM中尋找所需資產，以及如何使用顯示在搜尋中的資產。
+description: 了解如何使用「篩選器」面板在 [!DNL Experience Manager] 中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 contentOwner: AG
-feature: 搜尋，中繼資料
+feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
 
-# 在AEM中搜尋資產 {#search-assets-in-aem}
+# 在[!DNL Experience Manager]中搜尋資產 {#search-assets-in-aem}
 
-了解如何使用「篩選器」面板在AEM中尋找所需資產，以及如何使用顯示在搜尋中的資產。
+了解如何使用「篩選器」面板在[!DNL Experience Manager]中尋找所需資產，以及如何使用顯示在搜尋中的資產。
 
 使用「篩選」面板來搜尋資產、資料夾、標籤和中繼資料。 您可以使用萬用字元星號來搜尋字串的部分。
 

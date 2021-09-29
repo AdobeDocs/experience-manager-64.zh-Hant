@@ -1,34 +1,34 @@
 ---
 title: 資料夾中繼資料結構
-description: 本文說明如何在AEM Assets中為資產資料夾建立中繼資料結構
+description: 本文說明如何在 [!DNL Experience Manager] Assets中建立資產資料夾的中繼資料結構
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 286a4f26-c0ad-4691-80d8-d17ba1a2dfe0
 discoiquuid: 92eacea5-7511-48ce-8a72-ff4552ebb07d
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: 1bc72dac-41f7-4593-aaea-d48ebd94b43e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 10%
+source-wordcount: '1076'
+ht-degree: 7%
 
 ---
 
 # 資料夾中繼資料結構 {#folder-metadata-schema}
 
-本文說明如何在AEM Assets中為資產資料夾建立中繼資料結構。
+本文說明如何為[!DNL Experience Manager]資產中的資產資料夾建立中繼資料結構。
 
-Adobe Experience Manager(AEM)Assets可讓您建立資產資料夾的中繼資料結構，定義資料夾屬性頁面中顯示的配置和中繼資料。
+Adobe Experience Manager Assets可讓您建立資產資料夾的中繼資料結構，定義資料夾屬性頁面中顯示的配置和中繼資料。
 
 >[!NOTE]
 >
->此功能需要AEM 6.4並且至少部署Service Pack 2。 如需AEM 6.4 Service Pack詳細資訊，請參閱以下[發行說明](/help/release-notes/sp-release-notes.md)。
+>此功能需要[!DNL Experience Manager] 6.4並且至少部署了Service Pack 2。 有關[!DNL Experience Manager] 6.4 Service Pack的詳細資訊，請參閱以下[發行說明](/help/release-notes/sp-release-notes.md)。
 
 ## 新增資料夾中繼資料結構表單 {#add-a-folder-metadata-schema-form}
 
 使用資料夾中繼資料結構Forms編輯器，建立和編輯資料夾的中繼資料結構。
 
-1. 點選/按一下 AEM 標誌，然後前往&#x200B;**[!UICONTROL 「工具」]**>**[!UICONTROL 「資產」]**>**[!UICONTROL 「資料夾中繼資料結構描述」]**。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Assets]** **[!UICONTROL Folder Metadata結構]**。
 1. 在「資料夾中繼資料結構Forms」頁面中，點選/按一下「**[!UICONTROL 建立]**」。
 1. 指定表單的名稱，然後點選/按一下「**[!UICONTROL 建立]**」。 新架構表單會列在「架構Forms」頁面中。
 
@@ -117,7 +117,7 @@ Adobe Experience Manager(AEM)Assets可讓您建立資產資料夾的中繼資料
 
 ### 從「資料夾元資料結構」頁指定到結構 {#assign-to-a-schema-from-the-folder-metadata-schema-page}
 
-1. 點選/按一下 AEM 標誌，然後前往&#x200B;**[!UICONTROL 「工具」]**>**[!UICONTROL 「資產」]**>**[!UICONTROL 「資料夾中繼資料結構描述」]**。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**。
 1. 從「資料夾元資料結構Forms」頁中，選擇要應用於資料夾的結構表單。
 1. 在工具列中，點選/按一下「**[!UICONTROL 套用至資料夾」]**。
 
@@ -134,7 +134,7 @@ Adobe Experience Manager(AEM)Assets可讓您建立資產資料夾的中繼資料
 
 建立資料夾時，您可以指派資料夾中繼資料結構。 如果系統中至少存在一個資料夾元資料架構，則在&#x200B;**[!UICONTROL 建立資料夾]**&#x200B;對話框中將顯示額外的清單。 您可以選取所需的結構。 預設情況下，不選擇任何架構。
 
-1. 從AEM Assets使用者介面，從工具列點選/按一下「建立&#x200B;**** 」。
+1. 從[!DNL Assets]使用者介面，從工具列點選/按一下&#x200B;**[!UICONTROL 建立]**。
 1. 指定資料夾的標題和名稱。
 1. 從「資料夾元資料結構」清單中，選擇所需的結構。 然後，點選/按一下&#x200B;**[!UICONTROL 「建立」]**。
 

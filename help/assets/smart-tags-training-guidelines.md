@@ -5,12 +5,12 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 uuid: 1c011496-be6e-470b-9da8-48db8c6d1108
 contentOwner: AG
 discoiquuid: a5aab094-8b2d-4a23-890f-be6f9e5137bd
-feature: 標籤，中繼資料，智慧標籤
+feature: Tagging,Metadata,Smart Tags
 role: User
 exl-id: 14241f8d-fd0b-4bcf-b2bb-1d0e52bf7748
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '455'
 ht-degree: 10%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 10%
 
 ![說明性影像，以說明訓練准則](assets/do-not-localize/coherence.png)
 
-**涵蓋範圍**:訓練中的影像應該有足夠的多樣性。其理念是提供一些相當多樣化的範例，讓AEM學會專注於正確的事物。 如果您要在視覺上不同的影像上套用相同的標籤，請至少包含五種類型的範例。
+**涵蓋範圍**:訓練中的影像應該有足夠的多樣性。其理念是提供一些相當多樣的範例，讓[!DNL Experience Manager]學會專注於正確的事物。 如果您要在視覺上不同的影像上套用相同的標籤，請至少包含五種類型的範例。
 
 例如，對於標籤&#x200B;*model-down-pose*，包括與下面突出顯示的影像類似的更多訓練影像，以便服務在標籤期間更準確地識別類似影像。
 
@@ -53,7 +53,7 @@ ht-degree: 10%
 
 * 無法識別影像中的細微差異。 例如，纖薄與普通襯衫。
 * 無法根據影像的微小模式/部分識別標籤。 例如T恤上的標誌。
-* 在支援AEM的地區設定中支援標籤。 如需語言清單，請參閱[智慧內容服務發行說明](/help/release-notes/smart-content-service-release-notes.md)。
+* 在支援[!DNL Experience Manager]的地區設定中支援標籤。 如需語言清單，請參閱[智慧內容服務發行說明](/help/release-notes/smart-content-service-release-notes.md)。
 
 若要使用智慧標籤來搜尋資產（一般或增強），請使用「資產全域搜尋」（全文搜尋）。 智慧標籤沒有單獨的搜尋述詞。
 

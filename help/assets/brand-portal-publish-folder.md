@@ -2,27 +2,27 @@
 title: 將資料夾發佈至 Brand Portal
 description: 了解如何將資料夾發佈和取消發佈至Brand Portal。
 contentOwner: VG
-feature: 品牌入口網站
+feature: Brand Portal
 role: User
 exl-id: f41ab750-5780-42ae-a131-5bc748280215
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 28%
+source-wordcount: '552'
+ht-degree: 27%
 
 ---
 
 # 將資料夾發佈至 Brand Portal {#publish-folders-to-brand-portal}
 
-身為Adobe Experience Manager(AEM)Assets管理員，您可以將資產和資料夾發佈至貴組織的AEM Assets Brand Portal例項（或將發佈工作流程排程至稍後的日期/時間）。 不過，您必須先整合AEM Assets與Brand Portal。 如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)。
+身為Adobe Experience Manager Assets管理員，您可以將資產和資料夾發佈至組織的[!DNL Experience Manager Assets Brand Portal]例項（或將發佈工作流程排程至稍後的日期/時間）。 但您必須先將[!DNL Experience Manager Assets]與[!DNL Brand Portal]整合。 如需詳細資訊，請參閱[使用Brand Portal](configure-aem-assets-with-brand-portal.md)設定 [!DNL Experience Manager Assets] 。
 
 發佈資產或資料夾後，Brand Portal的使用者就能使用它。
 
-如果您後續修改了AEM Assets中的原始資產或資料夾，在您重新發佈資產或資料夾之前，這些變更不會反映在Brand Portal中。 這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
+如果您後續修改[!DNL Assets]中的原始資產或資料夾，在您重新發佈資產或資料夾之前，變更不會反映在Brand Portal中。 這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
 
 ## 將資料夾發佈至 Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. 從AEM Assets介面中，暫留在所需的資料夾上，然後從快速動作中選取&#x200B;**[!UICONTROL 發佈]**&#x200B;選項。
+1. 從[!DNL Assets]介面中，暫留在所需的資料夾上，然後從快速操作中選擇&#x200B;**[!UICONTROL Publish]**&#x200B;選項。
 
    或者，選取所需的資料夾，然後依照進一步步驟操作。
 
@@ -57,11 +57,11 @@ ht-degree: 28%
 
 ## 從 Brand Portal 取消發佈資料夾 {#unpublish-folders-from-brand-portal}
 
-您可以從AEM Author例項中取消發佈，以移除任何已發佈至Brand Portal的資產資料夾。 取消發佈原始資料夾後，Brand Portal 使用者將無法再取用資料夾副本。
+您可以從[!DNL Experience Manager]製作例項中取消發佈，以移除已發佈至Brand Portal的任何資產資料夾。 取消發佈原始資料夾後，Brand Portal 使用者將無法再取用資料夾副本。
 
 您可以選擇從Brand Portal快速取消發佈資料夾，或排程以後的日期和時間。 若要從 Brand Portal 取消發佈資產資料夾：
 
-1. 從AEM Author例項的AEM Assets介面中，選取您要取消發佈的資料夾。
+1. 在[!DNL Experience Manager]製作例項的[!DNL Assets]介面中，選取您要取消發佈的資料夾。
 
    ![publish2bp-1](assets/publish2bp-1.png)
 

@@ -2,12 +2,12 @@
 title: XMP回寫至轉譯
 description: 了解XMP回寫功能如何將資產的中繼資料變更傳播至資產的所有或特定轉譯。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '775'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ XMP回寫功能可讓您將中繼資料變更傳播至資產的所有或特定�
 
 ![中繼資料](assets/metadata.png)
 
-在此情況下，AEM Assets會針對儲存在資產階層中的資產中繼資料，在`dc:title`參數中儲存對&#x200B;**[!UICONTROL Title]**&#x200B;屬性的變更。
+在此情況下， [!DNL Experience Manager]資產會針對儲存於資產階層的資產中繼資料，在`dc:title`參數中儲存對&#x200B;**[!UICONTROL Title]**&#x200B;屬性的變更。
 
 ![metadata_stored](assets/metadata_stored.png)
 
@@ -67,13 +67,13 @@ PTIFF轉譯只會以Dynamic Media混合模式建立並儲存在本機。 儲存�
 
 [!DNL Experience Manager Assets] 支援封鎖清單和允許的清單篩選XMP中繼資料的屬性/節點，這些中繼資料會從資產二進位檔讀取，並在內嵌資產時儲存在JCR中。
 
-使用封鎖清單進行篩選可讓您匯入除了為排除指定的屬性以外的所有XMP中繼資料屬性。 但是，對於具有大量XMP中繼資料的資產類型（例如1000個節點，具有10,000個屬性），要篩選的節點名稱並不總是事先知道。 如果使用已封鎖的清單進行篩選，可匯入大量具有大量XMP中繼資料的資產，AEM例項或叢集可能會遇到穩定性問題，例如觀察佇列不暢。
+使用封鎖清單進行篩選可讓您匯入除了為排除指定的屬性以外的所有XMP中繼資料屬性。 但是，對於具有大量XMP中繼資料的資產類型（例如1000個節點，具有10,000個屬性），要篩選的節點名稱並不總是事先知道。 如果使用封鎖清單進行篩選可匯入大量具有大量XMP中繼資料的資產，[!DNL Experience Manager]例項或叢集可能會遇到穩定性問題，例如觀察佇列阻塞。
 
 透過允許的清單篩選XMP中繼資料可讓您定義要匯入的XMP屬性，借此解決此問題。 如此一來，會忽略任何其他或未知的XMP屬性。 為了向後相容性，您可以將其中一些屬性新增到使用已封鎖清單的篩選器中。
 
 >[!NOTE]
 >
->篩選只適用於資產二進位檔中從XMP來源衍生的屬性。 對於從非XMP來源衍生的屬性（例如EXIF和IPTC格式），篩選無法運作。 例如，資產建立日期儲存在EXIF TIFF中名為`CreateDate`的屬性中。 AEM將此值儲存在名為`exif:DateTimeOriginal`的中繼資料欄位中。 由於來源為非XMP來源，因此篩選對此屬性無效。
+>篩選只適用於資產二進位檔中從XMP來源衍生的屬性。 對於從非XMP來源衍生的屬性（例如EXIF和IPTC格式），篩選無法運作。 例如，資產建立日期儲存在EXIF TIFF中名為`CreateDate`的屬性中。 [!DNL Experience Manager] 將此值儲存在名為的中繼資料欄位 `exif:DateTimeOriginal`中。由於來源為非XMP來源，因此篩選對此屬性無效。
 
 1. 從`https://[aem_server]:[port]/system/console/configMgr`開啟Configuration Manager。
 1. 開啟&#x200B;**[!UICONTROL Adobe CQ DAM XmpFilter]**&#x200B;設定。

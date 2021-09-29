@@ -2,12 +2,12 @@
 title: 處理資產以完成業務流程、進行審核、實現法規遵從性並保持基本的健全性
 description: 資產處理功能，可轉換格式、建立轉譯、管理資產、驗證資產及執行工作流程。
 contentOwner: AG
-feature: 工作流程，轉譯
+feature: Workflow,Renditions
 role: User,Admin
 exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1032'
 ht-degree: 2%
 
 ---
@@ -40,7 +40,7 @@ ht-degree: 2%
 >
 >如果傳統UI中可用的工作流程在觸控式啟用的UI中無法使用，例如[!UICONTROL 請求啟用]和[!UICONTROL 請求停用]，請參閱[建立工作流程模型](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui)。
 
-## 將工作流程套用至AEM資產 {#apply-a-workflow-to-an-aem-asset}
+## 將工作流程套用至[!DNL Experience Manager]資產 {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
@@ -111,7 +111,7 @@ TBD: Add animated GIF for these steps instead of all these screenshots.
 >[!MORELIKETHIS]
 >
 >* [套用並參與工作流程](/help/sites-authoring/workflows.md)
-* [建立工作流模型並擴展工作流功能](/help/sites-developing/workflows.md)
-* [執行工作流程的方法](/help/sites-administering/workflows-starting.md)
-* [工作流程最佳實務](/help/sites-developing/workflows-best-practices.md)
+>* [建立工作流模型並擴展工作流功能](/help/sites-developing/workflows.md)
+>* [執行工作流程的方法](/help/sites-administering/workflows-starting.md)
+>* [工作流程最佳實務](/help/sites-developing/workflows-best-practices.md)
 

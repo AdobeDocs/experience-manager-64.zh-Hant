@@ -1,20 +1,20 @@
 ---
 title: Assets檔案格式最佳實務
-description: AEM Assets中檔案支援的最佳實務。
+description: ' [!DNL Experience Manager] Assets中檔案支援的最佳實務。'
 contentOwner: AG
-feature: 資產管理，開發人員工具
+feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
 # Assets檔案格式最佳實務 {#assets-file-format-best-practices}
 
-AEM Assets支援許多專屬和協力廠商檔案格式程式庫，以符合使用者的不同檔案支援需求。 支援的Adobe程式庫包括Adobe Camera Raw、Gibson、Adobe PDF Rasterizer和Adobe InDesign Server。 此外，AEM Assets支援協力廠商程式庫，包括ImageMagick、TwelveMunes等。
+[!DNL Experience Manager Assets] 支援許多專有和第三方檔案格式庫，以滿足用戶的不同檔案支援需求。支援的Adobe程式庫包括Adobe Camera Raw、Gibson、Adobe PDF Rasterizer和Adobe InDesign Server。 此外， [!DNL Assets]支援第三方程式庫，包括ImageMagick、TwelkeMunkes等。
 
 如需支援的檔案格式，請參閱[Assets supported formats](assets-formats.md)。
 
@@ -27,7 +27,7 @@ AEM Assets支援許多專屬和協力廠商檔案格式程式庫，以符合使�
 
 Adobe Camera Raw庫支援CMYK顏色配置檔案作為輸入。 但是，它只支援JPEG格式的輸出，並以RGB顏色空間生成輸出。 它不會在縮圖中保留源檔案顏色空間（例如CMYK）。
 
-如需詳細資訊，請參閱AEM Assets中的[Camera Raw支援](camera-raw.md)。
+如需詳細資訊，請參閱[!DNL Assets]中的[Camera Raw支援](camera-raw.md)。
 
 ## Adobe PDF模擬轉譯器資料庫 {#adobe-pdf-rasterizer-library}
 
@@ -41,7 +41,7 @@ Adobe Camera Raw庫支援CMYK顏色配置檔案作為輸入。 但是，它只�
 
 ## Adobe InDesign伺服器 {#adobe-indesign-cc-server}
 
-Adobe建議您使用Adobe InDesign伺服器來擷取Adobe InDesign專用轉譯，例如IDML和HTML。 如需詳細資訊，請參閱[在Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)中將AEM資產新增為參考。
+Adobe建議您使用Adobe InDesign伺服器來擷取Adobe InDesign專用轉譯，例如IDML和HTML。 如需詳細資訊，請參閱在Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)中將 [!DNL Experience Manager] 資產新增為參考。[
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -58,7 +58,7 @@ Adobe建議在下列情況下使用ImageMagick程式庫：
 * 保持透明度
 * 處理PSD和PSB檔案
 
-若要了解如何在AEM中設定ImageMagic程式庫，請參閱[使用ImageMagick](media-handlers.md#an-example-using-imagemagick)。 如需最佳用法，請參閱[設定ImageMagick](best-practices-for-imagemagick.md)的最佳實務。
+要了解如何在[!DNL Experience Manager]中設定ImageMagic庫，請參閱[使用ImageMagick](media-handlers.md#an-example-using-imagemagick)。 如需最佳用法，請參閱[設定ImageMagick](best-practices-for-imagemagick.md)的最佳實務。
 
 ## 影像轉碼程式庫 {#image-transcoding-library}
 

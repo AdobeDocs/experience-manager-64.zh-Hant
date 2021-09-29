@@ -2,12 +2,12 @@
 title: 中繼資料結構參考
 description: '了解描述資產中繼資料的標準慣例，包括Dublin Core、IPTC和其他中繼資料結構。 '
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '392'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 ## 都柏林核心 {#dublin-core}
 
-都柏林核心中繼資料提供一套標準化的慣例，用於描述資產，以便更容易找到。 在AEM Assets, Dublin Core描述數位資產，包括視訊、音效、影像和檔案。
+都柏林核心中繼資料提供一套標準化的慣例，用於描述資產，以便更容易找到。 在[!DNL Experience Manager]資產中，都柏林核心描述數字資產，包括視頻、聲音、影像和文檔。
 
 簡單的都柏林核心元資料元素集(DCMES)包含下表中列出的15個元資料元素。 每個都柏林核心元素都是選用元素，且可重複。 您可以像新增或刪除媒體類型特定中繼資料一樣，新增或刪除都柏林核心中繼資料資訊。
 
@@ -31,7 +31,7 @@ ht-degree: 2%
 | 建立者 | 負責建立內容的人員或公司。 |
 | 日期 | 與資產相關聯的日期或期間。 |
 | 說明 | 資產的詳細資訊。 |
-| 格式 | 資產的檔案格式、實體媒體或維度。 AEM使用dc:format表示資產的mime類型。 |
+| 格式 | 資產的檔案格式、實體媒體或維度。 [!DNL Experience Manager] 使用dc:format表示資產的mime類型。 |
 | 識別碼 | 資產的唯一參考。 |
 | 語言 | 資產的語言（例如，英文）。 |
 | 發佈者 | 負責使資產可用的人員或公司。 |

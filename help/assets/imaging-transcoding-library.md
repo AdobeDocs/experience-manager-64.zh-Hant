@@ -2,13 +2,13 @@
 title: 影像轉碼程式庫
 description: 了解如何設定和使用Adobe的影像轉碼程式庫，此影像處理解決方案可執行核心影像處理功能，包括編碼、轉碼、影像重新取樣和影像重新調整大小。
 contentOwner: AG
-feature: 轉譯，開發人員工具，資產處理
+feature: Renditions,Developer Tools,Asset Processing
 role: Admin
 exl-id: 0314626d-e846-4f10-950e-6c1ceb7f4c06
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 1%
+source-wordcount: '958'
+ht-degree: 0%
 
 ---
 
@@ -78,7 +78,7 @@ Imaging Condricing Library提供CMYK支援和完整Alpha支援，但CMYK -Alpha�
 
 若要設定程式庫，請建立.conf檔案，使用下列步驟指出程式庫。 您需要管理員或根權限。
 
-1. 從Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)下載[影像轉碼程式庫套件，並使用套件管理器進行安裝。 套件與AEM 6.5相容。
+1. 從Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)下載[影像轉碼程式庫套件，並使用套件管理器進行安裝。 該包與[!DNL Experience Manager] 6.5相容。
 
 1. 若要知道`com.day.cq.dam.cq-dam-switchengine`的套件組合ID，請登入Web主控台，然後點選&#x200B;**[!UICONTROL OSGi >套件組合]**。 或者，要開啟套件組合控制台，請訪問`https://[aem_server:[port]/system/console/bundles/` URL。 找到`com.day.cq.dam.cq-dam-switchengine`套件組合及其ID。
 
@@ -109,7 +109,7 @@ Imaging Condricing Library提供CMYK支援和完整Alpha支援，但CMYK -Alpha�
 
 更新[!UICONTROL  DAM更新資產]工作流程，以使用程式庫處理影像。
 
-1. 點選/按一下AEM標誌，然後前往「工 **[!UICONTROL 具 >工 作流程 > 模型]**」。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往「**[!UICONTROL 工具>工作流程>模型」]**。
 
 1. 從&#x200B;**[!UICONTROL 工作流模型]**&#x200B;頁面，在編輯模式下開啟&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流模型。
 

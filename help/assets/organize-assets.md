@@ -2,12 +2,12 @@
 title: 組織您的數位資產
 description: 使用Experience Manager組織您的數位資產、影像、檔案、資料夾等。
 contentOwner: AG
-feature: 資產管理，搜索
+feature: Asset Management,Search
 role: User
 exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '803'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 擷取Microsoft Office和PDF檔案的所有數位資產、中繼資料和內容，並使其可供搜尋。 搜尋可針對資產進行精密的篩選，並完全尊重適當的權限。 數位資產管理的中繼資料將詳細說明中繼資料。
 
-AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層方式組織資料夾，或使用標籤等方式，以無序、隨選的方式組織資料夾。 使用者可以在DAM Asset Editor中編輯標籤，以顯示子資產、轉譯和中繼資料。
+[!DNL Experience Manager] 資產支援多種組織內容的方式。您可以使用資料夾以階層方式組織資料夾，或使用標籤等方式，以無序、隨選的方式組織資料夾。 使用者可以在DAM Asset Editor中編輯標籤，以顯示子資產、轉譯和中繼資料。
 
 ## 在資料夾中組織資產 {#organize-using-folders}
 
@@ -36,7 +36,7 @@ AEM Assets支援多種組織內容的方式。 您可以使用資料夾以階層
    * **日期型資料夾**  — 包含以建立日期或上次修改日期為基礎的數位資產。
 
 * 建立不可能變更的資料夾目錄，以便任何自訂或自動化都能繼續運作。 例如，指派的處理設定檔可繼續運作。
-* 如果資產已發佈，則您可以使用AEM將資產移至其他資料夾，然後從新位置重新發佈，仍可使用原始發佈的資產位置，以及新重新發佈的資產。 但原始已發佈資產是&#x200B;*lost*，因此無法取消發佈。 因此，最佳作法是先取消發佈資產，然後將其移至其他資料夾。
+* 如果資產已發佈，則您可使用[!DNL Experience Manager]將資產移至其他資料夾，並從新位置重新發佈，則仍可使用原始發佈的資產位置，以及新重新發佈的資產。 但原始發佈的資產是&#x200B;*lost*&#x200B;到[!DNL Experience Manager]，無法取消發佈。 因此，最佳作法是先取消發佈資產，然後將其移至其他資料夾。
 
 ## 使用標籤組織資產 {#use-tags-to-organize-assets}
 

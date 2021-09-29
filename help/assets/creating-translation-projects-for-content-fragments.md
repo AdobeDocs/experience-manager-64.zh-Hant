@@ -1,8 +1,8 @@
 ---
 title: 建立內容片段的翻譯專案
-seo-title: 建立內容片段的翻譯專案
+seo-title: Creating Translation Projects for Content Fragments
 description: 了解如何翻譯內容片段。
-seo-description: 了解如何翻譯內容片段。
+seo-description: Learn how to translate content fragments.
 uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: heimoz
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
-feature: 內容片段
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '968'
 ht-degree: 0%
 
 ---
@@ -54,13 +54,13 @@ ht-degree: 0%
 
 ## 轉譯混合媒體片段 {#translating-mixed-media-fragments}
 
-AEM可讓您翻譯包含各種類型媒體資產和集合的內容片段。 如果您翻譯的內容片段包含內嵌資產，則這些資產的翻譯副本會儲存在目標語言根目錄下。
+[!DNL Experience Manager] 可讓您翻譯包含各種類型媒體資產和集合的內容片段。如果您翻譯的內容片段包含內嵌資產，則這些資產的翻譯副本會儲存在目標語言根目錄下。
 
 如果內容片段包含集合，則集合內的資產會與內容片段一併翻譯。 資產的翻譯副本儲存在與來源語言根目錄下來源資產的實際位置相符的位置的適當目標語言根目錄中。
 
 若要翻譯包含混合媒體的內容片段，請先編輯預設的翻譯架構，以啟用翻譯與內容片段相關聯的內嵌資產和集合。
 
-1. 按一下/點選AEM標誌，然後導覽至「**[!UICONTROL 工具>部署>Cloud Services」]**。
+1. 按一下/點選[!DNL Experience Manager]標誌，然後導覽至「**[!UICONTROL 工具>部署>Cloud Services」]**。
 1. 在&#x200B;**[!UICONTROL Adobe Marketing Cloud]**&#x200B;下找到&#x200B;**[!UICONTROL 翻譯整合]**，然後按一下/點選&#x200B;**[!UICONTROL 顯示設定]**。
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

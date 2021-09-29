@@ -1,24 +1,24 @@
 ---
 title: Lightbox
-description: 了解AEM Assets中的Lightbox。
+description: 了解 [!DNL Experience Manager] Assets中的Lightbox。
 contentOwner: AG
-feature: 開發人員工具，轉譯
+feature: Developer Tools,Renditions
 role: User,Admin
 exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
 
 # Lightbox {#lightbox}
 
-了解AEM Assets中的Lightbox。
+了解[!DNL Experience Manager]資產中的Lightbox。
 
 Lightbox是特殊類型的集合，可輕鬆存取資產。 您可以快速存取Lightbox以新增或刪除資產。 它可作為您的個人影像庫。
 
-如果您是Adobe Experience Manager(AEM)Assets使用者，當您首次登入應用程式時，會自動建立Lightbox。 這是您的專屬登入。 其他使用者無法存取您的燈箱。
+如果您是Adobe Experience Manager Assets使用者，當您首次登入應用程式時，會自動建立Lightbox。 這是您的專屬登入。 其他使用者無法存取您的燈箱。
 
 ## 將資產新增至燈箱 {#adding-assets-to-lightbox}
 

@@ -2,19 +2,19 @@
 title: 時間軸中的活動資料流
 description: '本文說明如何在時間軸上顯示資產的活動記錄。 '
 contentOwner: AG
-feature: 資產管理
+feature: Asset Management
 role: User,Admin
 exl-id: 52fa2d59-177f-49ca-a480-7213ce0ca7d7
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 33%
+source-wordcount: '211'
+ht-degree: 21%
 
 ---
 
 # 時間軸中的活動資料流 {#activity-stream-in-timeline}
 
-此功能會顯示時間軸上資產的活動記錄。 如果您在Adobe Experience Manager(AEM)資產中執行下列任一資產相關操作，活動資料流功能會更新時間軸以反映活動。
+此功能會顯示時間軸上資產的活動記錄。 如果您在[!DNL Adobe Experience Manager Assets]中執行下列任何資產相關操作，活動資料流功能會更新時間軸以反映活動。
 
 活動資料流中記錄下列操作：
 
@@ -29,7 +29,7 @@ ht-degree: 33%
 
 將從儲存日誌檔案的CRX位置提取要在時 `/var/audit/com.day.cq.dam/content/dam` 間軸中顯示的活動日誌。
 
-此外，當上傳新資產或修改現有資產並透過 [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html) 或 [AEM案頭應用程式簽入AEM時，會記錄時間軸活動](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)。
+此外，當上傳新資產或修改現有資產並透過[Adobe資產連結](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html)或[[!DNL Experience Manager] 案頭應用程式](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html)簽入Experience Manager時，會記錄時間軸活動。
 
 >[!NOTE]
 >

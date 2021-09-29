@@ -2,13 +2,13 @@
 title: 使用Assets Insights功能追蹤影像的使用情況
 description: 「資產前瞻分析」功能可讓您追蹤使用者評等，以及第三方網站、行銷活動和Adobe創意解決方案所使用影像的使用統計資料。
 contentOwner: AG
-feature: 資產分析，資產報表
+feature: Asset Insights,Asset Reports
 role: User,Admin
 exl-id: a9604b09-1c83-4c1e-aff7-13107b898cb3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 7%
+source-wordcount: '793'
+ht-degree: 6%
 
 ---
 
@@ -77,7 +77,7 @@ Assets Insights會擷取使用者活動詳細資料，例如資產被評分、�
 
 Assets Insights會定期從Adobe Analytics報表套裝擷取資產的使用資料。 根據預設，Assets Insights會每24小時在凌晨2:00執行背景工作，以擷取資料。 不過，您可以透過從Web主控台設定&#x200B;**[!UICONTROL Adobe CQ DAM資產效能報表同步工作]**&#x200B;服務，以修改頻率和時間。
 
-1. 點選AEM標誌，並前往「工 **[!UICONTROL 具 > 作業 > Web Console]**」。
+1. 點選[!DNL Experience Manager]標誌，然後前往「**[!UICONTROL 工具>操作> Web Console]**」。
 1. 開啟&#x200B;**[!UICONTROL Adobe CQ DAM資產效能報表同步工作]**&#x200B;服務設定。
 
    ![chlimage_1-304](assets/chlimage_1-304.png)

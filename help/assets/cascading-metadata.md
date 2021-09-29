@@ -2,13 +2,13 @@
 title: 階層式中繼資料
 description: 本文說明如何定義資產的階層式中繼資料。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: ea6187e8-075d-4666-afc5-01c97deccc11
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 13%
+source-wordcount: '977'
+ht-degree: 12%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 13%
 * 根據在另一個欄位中指定的值，變更特定欄位所顯示的選項。
 * 根據其他欄位中指定的值，在特定欄位中設定預設中繼資料值。
 
-## 在AEM中設定階層式中繼資料 {#configure-cascading-metadata-in-aem}
+## 在[!DNL Experience Manager]中配置級聯元資料 {#configure-cascading-metadata-in-aem}
 
 假設您要根據選取的資產類型顯示階層式中繼資料。 一些範例
 
@@ -42,7 +42,7 @@ ht-degree: 13%
 
 無論選擇的資產類型為何，都將版權資訊顯示為必填欄位。
 
-1. 點選/按一下AEM標誌，然後前往「工 **[!UICONTROL 具]** >資 **[!UICONTROL 產]** >中繼 **[!UICONTROL 資料結構]**」。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往&#x200B;**[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Metadata結構]**。
 1. 在「方 **[!UICONTROL 案表單]** 」頁中，選擇方案表單，然後從工具欄點選/單 **[!UICONTROL 擊「編輯]** 」以編輯方案。
 
    ![select_form](assets/select_form.png)
@@ -60,7 +60,7 @@ ht-degree: 13%
 1. 機碼值組是提供給表單使用者的選項。 您可以手動或從JSON檔案提供索引鍵值配對。
 
    * 若要手動指定值，請選取「手動新增&#x200B;****」，然後點選/按一下「新增選擇&#x200B;****」並指定選項文字和值。 例如，指定視訊、PDF、Word和影像資產類型。
-   * 若要動態從JSON檔案擷取值，請選取&#x200B;**[!UICONTROL 透過JSON路徑新增]**&#x200B;並提供JSON檔案的路徑。 AEM會在表單顯示給使用者時即時擷取機碼值組。
+   * 若要動態從JSON檔案擷取值，請選取&#x200B;**[!UICONTROL 透過JSON路徑新增]**&#x200B;並提供JSON檔案的路徑。 [!DNL Experience Manager] 當表單顯示給使用者時，會即時擷取機碼值組。
 
    兩個選項互斥。 您無法從JSON檔案匯入選項並手動編輯。
 

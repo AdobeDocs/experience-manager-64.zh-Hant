@@ -1,8 +1,8 @@
 ---
 title: 將Dynamic Media視訊或影像檢視器內嵌在網頁上
-seo-title: 將Dynamic Media視訊或影像檢視器內嵌在網頁上
+seo-title: Embedding the Dynamic Media Video or Image viewer on a web page
 description: 了解如何將Dynamic Media視訊或影像內嵌在網頁上
-seo-description: 了解如何將動態媒體視訊或影像內嵌在網頁上
+seo-description: Learn how to embed Dynamic media video or images on a web page
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,12 +10,12 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 exl-id: bff564a8-e982-4e1a-a9b5-05e44e3e4d46
-feature: 元件
+feature: Components
 role: User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 20%
+source-wordcount: '367'
+ht-degree: 21%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 20%
 
 當您想 **** 要播放視訊或檢視內嵌在網頁上的資產時，請使用「內嵌代碼」功能。您可將內嵌代碼複製到剪貼簿，以便貼到網頁中。「內嵌代碼」對話方塊中不允許編 **[!UICONTROL 輯代碼]** 。
 
-只有在&#x200B;_not_&#x200B;使用AEM作為WCM時，才內嵌URL。 如果您使用AEM作為WCM，請直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)[
+只有在您使用[!DNL Experience Manager]作為WCM時，才內嵌URL _不_。 如果您使用[!DNL Experience Manager]作為WCM，請直接在頁面上新增資產。](adding-dynamic-media-assets-to-pages.md)[
 
 請參閱[將URL連結到Web應用程式。](linking-urls-to-yourwebapplication.md)
 

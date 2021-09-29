@@ -1,27 +1,27 @@
 ---
-title: 整合AEM Assets與Adobe InDesign Server
-description: 了解如何整合AEM Assets與InDesign Server。
+title: 整合 [!DNL Experience Manager] 資產與Adobe InDesign Server
+description: 了解如何將 [!DNL Experience Manager] Assets與InDesign Server整合。
 contentOwner: AG
-feature: 發佈
+feature: Publishing
 role: Admin
 exl-id: d80562f7-071c-460a-9c68-65f48d36fbd9
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1703'
-ht-degree: 3%
+source-wordcount: '1674'
+ht-degree: 4%
 
 ---
 
-# 整合AEM Assets與Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
+# 整合資產與Adobe InDesign Server {#integrating-aem-assets-with-indesign-server}
 
-Adobe Experience Manager(AEM)Assets使用：
+Adobe Experience Manager Assets使用：
 
-* 分配特定處理任務的負載的代理。 Proxy是與Proxy工作人員通訊以完成特定任務的AEM例項，以及傳送結果的其他AEM例項。
+* 分配特定處理任務的負載的代理。 Proxy是與Proxy工作者通訊以完成特定任務的[!DNL Experience Manager]例項，以及傳送結果的其他[!DNL Experience Manager]例項。
 * 定義和管理特定任務的代理工作。
 
 這可以涵蓋各種任務；例如，使用Adobe InDesign Server來處理檔案。
 
-若要將您使用AEM Assets Proxy建立的檔案完全上傳至Adobe InDesign。 這會使用代理工作程式與Adobe InDesign Server通訊，其中會執行[scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)以擷取中繼資料，並為AEM Assets產生各種轉譯。 在雲配置中，代理工作程式可啟用InDesign Server和AEM實例之間的雙向通信。
+若要將檔案完全上傳至您使用Adobe InDesign Proxy建立的[!DNL Experience Manager]資產。 這會使用代理工作器與Adobe InDesign Server通訊，其中會執行[scripts](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)以擷取中繼資料，並為[!DNL Experience Manager]資產產生各種轉譯。 在雲配置中，代理工作器啟用InDesign Server與[!DNL Experience Manager]實例之間的雙向通信。
 
 >[!NOTE]
 >
@@ -29,25 +29,23 @@ Adobe Experience Manager(AEM)Assets使用：
 >
 >* [InDesign](https://www.adobe.com/products/indesign.html)\
    >  這可讓您設計用於列印和/或數位分送的頁面配置。
-   >
-   >
-* [InDesign Server](https://www.adobe.com/products/indesignserver.html)\
+>
+>* [InDesign Server](https://www.adobe.com/products/indesignserver.html)\
    >  此引擎使您能夠根據您使用InDesign建立的內容以寫程式方式建立自動化文檔。 其運作方式為提供其[ExtendScript](https://www.adobe.com/devnet/scripting.html)引擎介面的服務。\
-   >  指令碼是在ExtendScript中撰寫，類似javascript。 有關Indesign指令碼的資訊，請參見[https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
+   >  指令碼是以類似JavaScript的ExtendScript撰寫。 如需Adobe InDesign指令碼的相關資訊，請參閱[https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
 
 >
-
 
 
 ## 提取的運作方式 {#how-the-extraction-works}
 
-InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立的檔案、產生轉譯、擷取&#x200B;*所有*&#x200B;媒體（例如視訊）並儲存為資產：
+InDesign Server可與[!DNL Experience Manager]資產整合，以便上傳以InDesign(`.indd`)建立的檔案、產生轉譯、擷取&#x200B;*所有*&#x200B;媒體（例如視訊）並儲存為資產：
 
 >[!NOTE]
 >
->舊版AEM可擷取XMP和縮圖，現在可擷取所有媒體。
+>舊版[!DNL Experience Manager]可擷取XMP和縮圖，現在可擷取所有媒體。
 
-1. 將`.indd`檔案上傳至AEM Assets。
+1. 將`.indd`檔案上傳至[!DNL Experience Manager]資產。
 1. 框架通過SOAP（簡單對象訪問協定）將命令指令碼發送到InDesign Server。
 
    此命令指令碼將：
@@ -58,7 +56,7 @@ InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立�
       * 會擷取結構、文字和任何媒體檔案。
       * 會產生PDF和JPG轉譯。
       * 會產生HTML和IDML轉譯。
-   * 將產生的檔案發回AEM Assets。
+   * 將產生的檔案發回[!DNL Experience Manager]資產。
 
    >[!NOTE]
    >
@@ -68,20 +66,20 @@ InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立�
 
    >[!CAUTION]
    >
-   >如果未安裝或未設定InDesign Server，您仍可將`.indd`檔案上傳至AEM。 不過，產生的轉譯將限制為`png`和`jpeg`，您將無法產生`html`、`idml`或頁面轉譯。
+   >如果未安裝或未配置InDesign Server，則仍可將`.indd`檔案上載到[!DNL Experience Manager]中。 不過，產生的轉譯將限制為`png`和`jpeg`，您將無法產生`html`、`idml`或頁面轉譯。
 
 1. 擷取和轉譯產生後：
 
    * 此結構會複製到`cq:Page`（轉譯類型）。
-   * 擷取的文字和檔案會儲存在AEM Assets中。
-   * 所有轉譯都會儲存在AEM Assets中、資產本身。
+   * 擷取的文字和檔案會儲存在[!DNL Experience Manager]資產中。
+   * 所有轉譯都會儲存在[!DNL Experience Manager]資產中，位於資產本身。
 
-## 將InDesign Server與AEM整合 {#integrating-the-indesign-server-with-aem}
+## 將InDesign Server與[!DNL Experience Manager]整合 {#integrating-the-indesign-server-with-aem}
 
-若要整合InDesign Server以便與AEM Assets搭配使用，並在設定Proxy後，您需要：
+若要整合InDesign Server以與[!DNL Experience Manager]資產搭配使用，並在設定Proxy後，您需要：
 
 1. [安裝InDesign Server](#installing-the-indesign-server)。
-1. 如果需要，請[設定AEM Assets工作流程](#configuring-the-aem-assets-workflow)。
+1. 如有需要，請[設定 [!DNL Experience Manager] 資產工作流程](#configuring-the-aem-assets-workflow)。
 
    只有在預設值不適合您的例項時，才需要這個選項。
 
@@ -89,7 +87,7 @@ InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立�
 
 ### 安裝InDesign Server {#installing-the-indesign-server}
 
-若要安裝並啟動InDesign Server以搭配AEM使用：
+要安裝並啟動InDesign Server以用於[!DNL Experience Manager]:
 
 1. 下載並安裝Adobe InDesign Server。
 
@@ -111,16 +109,16 @@ InDesign Server可與AEM Assets整合，以便上傳以InDesign(`.indd`)建立�
    >
    >`<ids-installation-dir>/InDesignServer.com -port 8080 > ~/temp/INDD-logfile.txt 2>&1`
 
-### 設定AEM Assets工作流程 {#configuring-the-aem-assets-workflow}
+### 設定[!DNL Experience Manager]資產工作流程 {#configuring-the-aem-assets-workflow}
 
-AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包含數個InDesign專屬的處理步驟：
+[!DNL Experience Manager] 資產有預先設定的工 **作流程DAM更新資產**，其中有數個處理步驟是專門用於InDesign:
 
 * [媒體提取](#media-extraction)
 * [頁面提取](#page-extraction)
 
 此工作流程是以預設值設定的，這些預設值可針對您在各種製作執行個體上的設定進行調整（這是標準工作流程，因此可在[編輯工作流程](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)下取得詳細資訊）。 如果您使用預設值（包括SOAP埠），則無需配置。
 
-設定後，將InDesign檔案上傳至AEM Assets（透過任何一般方法）將觸發處理資產和準備各種轉譯所需的工作流程。 將`.indd`檔案上傳至AEM Assets以確認您看見ID在`<*your_asset*>.indd/Renditions`下建立的不同轉譯，借此測試您的設定
+設定後，將InDesign檔案上傳至[!DNL Experience Manager]資產（透過任何一般方法）將觸發處理資產和準備各種轉譯所需的工作流程。 將`.indd`檔案上傳至[!DNL Experience Manager]資產以確認您看見ID在`<*your_asset*>.indd/Renditions`下建立的不同轉譯，借此測試您的設定
 
 #### 媒體提取 {#media-extraction}
 
@@ -142,13 +140,13 @@ AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包�
 >
 >請 勿變更ExtendScript程式庫。程式庫提供與Sling通訊所需的HTTP功能。 此設定會指定要傳送至Adobe InDesign Server以供其使用的程式庫。
 
-由「媒體擷取」工作流程步驟執行的`ThumbnailExport.jsx`指令碼會產生JPG格式的縮圖轉譯。 「處理縮圖」工作流程步驟會使用此轉譯，以產生AEM所需的靜態轉譯。
+由「媒體擷取」工作流程步驟執行的`ThumbnailExport.jsx`指令碼會產生JPG格式的縮圖轉譯。 「處理縮圖」工作流步驟將使用此格式副本生成[!DNL Experience Manager]所需的靜態格式副本。
 
-您可以設定「處理縮圖」工作流程步驟，以產生不同大小的靜態轉譯。 請確定您沒有移除預設值，因為AEM Assets UI需要這些預設值。 最後，「刪除影像預覽轉譯」工作流程步驟會移除.jpg縮圖轉譯，因為這已不再需要。
+您可以設定「處理縮圖」工作流程步驟，以產生不同大小的靜態轉譯。 請確定您沒有移除預設值，因為[!DNL Experience Manager]資產UI需要這些預設值。 最後，「刪除影像預覽轉譯」工作流程步驟會移除.jpg縮圖轉譯，因為這已不再需要。
 
 #### 頁面提取 {#page-extraction}
 
-這會從擷取的元素建立AEM頁面。 擷取處理常式可用來從轉譯（目前為HTML或IDML）中擷取資料。 然後，系統會使用此資料建立使用PageBuilder的頁面。
+這會從擷取的元素建立[!DNL Experience Manager]頁面。 擷取處理常式可用來從轉譯（目前為HTML或IDML）中擷取資料。 然後，系統會使用此資料建立使用PageBuilder的頁面。
 
 若要自訂，您可以編輯「頁 **[!UICONTROL 面擷取]** 」步驟 **的「引** 數」標籤。
 
@@ -187,7 +185,7 @@ AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包�
 
 ### 配置Day CQ Link Externalizer {#configuring-day-cq-link-externalizer}
 
-如果InDesign Server和AEM位於不同的主機上，或其中一個或兩個應用程式在預設埠上無法正常工作，請配置&#x200B;**Day CQ Link Externalizer**&#x200B;以設定InDesign Server的主機名、埠和內容路徑。
+如果InDesign Server和[!DNL Experience Manager]位於不同的主機上，或其中一個或兩個應用程式在預設埠上不工作，請配置&#x200B;**Day CQ Link Externalizer**&#x200B;以設定InDesign Server的主機名稱、埠和內容路徑。
 
 1. 在URL `https://[AEM_server]:[port]/system/console/configMgr`訪問Configuration Manager。
 1. 找到配置&#x200B;**[!UICONTROL Day CQ Link Externalizer]**。 按一下&#x200B;**[!UICONTROL 編輯]**&#x200B;以開啟。
@@ -252,7 +250,7 @@ AEM Assets有預先設定的工作流程&#x200B;**DAM更新資產**，其中包�
 
 ## 配置Experience Manager憑據 {#configure-aem-credentials}
 
-您可以變更從AEM例項存取InDesign伺服器的預設管理員憑證（使用者名稱和密碼），而不會中斷與Adobe InDesign伺服器的整合。
+您可以更改預設管理員憑據（用戶名和密碼），以便從[!DNL Experience Manager]實例訪問InDesign伺服器，而不中斷與Adobe InDesign伺服器的整合。
 
 1. 前往 `/etc/cloudservices/proxy.html`.
 1. 在對話方塊中，指定新的使用者名稱和密碼。

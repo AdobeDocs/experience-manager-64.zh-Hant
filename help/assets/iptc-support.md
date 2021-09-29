@@ -1,22 +1,22 @@
 ---
 title: 支援IPTC元資料
-description: 了解Adobe Experience Manager(AEM)Assets如何透過Adobe Bridge和其他Creative應用程式支援新增至資產的IPTC中繼資料、創作評等和關鍵字。
+description: 了解Adobe Experience Manager Assets如何透過Adobe Bridge和其他創意應用程式支援新增至資產的IPTC中繼資料、創意評等和關鍵字。
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '364'
 ht-degree: 7%
 
 ---
 
 # 支援IPTC元資料 {#support-for-iptc-metadata}
 
-了解Adobe Experience Manager(AEM)Assets如何透過Adobe Bridge和其他Creative應用程式支援新增至資產的IPTC中繼資料、創作評等和關鍵字。
+了解Adobe Experience Manager Assets如何透過Adobe Bridge和其他創意應用程式支援新增至資產的IPTC中繼資料、創意評等和關鍵字。
 
-Adobe Experience Manager(AEM)Assets支援IPTC中繼資料標準，此標準廣泛用於說明資產。 這樣，AEM Assets就增強了各方對其影像的接受度，包括攝影師、創意機構、圖書館、博物館等。
+Adobe Experience Manager Assets支援IPTC中繼資料標準，此標準被廣泛用於描述資產。 這樣，[!DNL Experience Manager Assets]增強了各方對其影像的接受，包括攝影師、創意機構、圖書館、博物館等。
 
 資產的預設中繼資料結構現在整合了IPTC核心和IPTC擴充功能中繼資料結構，以定義完整的中繼資料屬性，讓使用者能新增關於影像中顯示之人員、位置和產品的精確且可靠資料。 此外，也支援建立影像的日期、名稱和識別碼，以及彈性的權限資訊表達方式。
 

@@ -1,20 +1,20 @@
 ---
 title: 私人資料夾共用
-description: 了解如何在Adobe Experience Manager(AEM)資產中建立私人資料夾，並與其他使用者共用資料夾，以及為其指派各種權限。
+description: 了解如何在Adobe Experience Manager Assets中建立私人資料夾，並與其他使用者共用資料夾，以及為其指派各種權限。
 contentOwner: AG
-feature: 協作
+feature: Collaboration
 role: User
 exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '445'
 ht-degree: 6%
 
 ---
 
 # 私人資料夾共用 {#private-folder-sharing}
 
-您可以在Adobe Experience Manager(AEM)Assets使用者介面中建立專供您使用的私人資料夾。 您可以將此私人資料夾共用給其他使用者，並為其指派各種權限。 根據您指派的權限層級，使用者可以對資料夾執行各種工作，例如在資料夾內檢視資產或編輯資產。
+您可以在Adobe Experience Manager Assets使用者介面中建立專供您使用的私人資料夾。 您可以將此私人資料夾共用給其他使用者，並為其指派各種權限。 根據您指派的權限層級，使用者可以對資料夾執行各種工作，例如在資料夾內檢視資產或編輯資產。
 
 1. 在「資產」主控台中，從工具列點選/按一下「建立&#x200B;**** 」，然後從功能表選擇「 **[!UICONTROL 資料夾]** 」。
 
@@ -44,9 +44,9 @@ ht-degree: 6%
    >
    >您可以將各種角色（例如編輯者、擁有者或檢視者）指派給您共用資料夾的使用者。 如果您將「擁有者」角色指派給使用者，則使用者對資料夾具有「編輯者」權限。 此外，使用者可與其他人共用資料夾。 如果您指派編輯者角色，使用者可以編輯您私人資料夾中的資產。 如果您指派檢視器角色，使用者只能檢視您私人資料夾中的資產。
 
-1. 按一下「**[!UICONTROL 儲存]**」。根據您指派的角色，當使用者登入AEM Assets時，系統會為使用者指派一組權限給您的私人資料夾。
+1. 按一下「**[!UICONTROL 儲存]**」。根據您指派的角色，當使用者登入[!DNL Experience Manager]資產時，系統會為使用者指派一組私人資料夾的權限。
 1. 按一下&#x200B;**[!UICONTROL 確定]**&#x200B;以關閉確認訊息。
-1. 您與其共用資料夾的使用者會收到共用通知。 以使用者的認證登入AEM Assets以檢視通知。
+1. 您與其共用資料夾的使用者會收到共用通知。 使用使用者的憑證登入[!DNL Experience Manager]資產以檢視通知。
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 

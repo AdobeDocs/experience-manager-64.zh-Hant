@@ -1,13 +1,13 @@
 ---
 title: 搜尋視訊資產
-description: 使用關鍵字、檔案屬性（例如Mime類型、大小或最近修改的時間戳記），在AEM Assets中快速尋找您的檔案。
+description: 使用關鍵字、檔案屬性（如Mime類型、大小或最近修改的時間戳記），在 [!DNL Experience Manager] Assets中快速找到您的檔案。
 contentOwner: AG
-feature: 視頻，搜索
+feature: Video,Search
 role: User
 exl-id: d5f0beb2-e59f-47cd-8e83-698d8a1dcec3
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '577'
 ht-degree: 2%
 
 ---

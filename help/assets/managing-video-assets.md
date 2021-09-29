@@ -8,20 +8,20 @@ discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,Video
 role: User
 exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '787'
 ht-degree: 8%
 
 ---
 
 # 管理影片資產 {#managing-video-assets}
 
-了解如何在Adobe Experience Manager(AEM)資產中管理和編輯視訊資產。 此外，如果您有權使用Dynamic Media，請參閱[Dynamic Media視訊檔案](video.md)。
+了解如何在Adobe Experience Manager Assets中管理和編輯視訊資產。 此外，如果您有權使用Dynamic Media，請參閱[Dynamic Media視訊檔案](video.md)。
 
 ## 上傳和預覽視訊資產 {#uploading-and-previewing-video-assets}
 
-AEM Assets會以副檔名MP4產生視訊資產的預覽。 如果資產的格式不是MP4，請安裝FFmpeg套件以產生預覽。 FFmpeg建立OGG和MP4類型的視頻轉譯。 您可以在AEM Assets使用者介面中預覽這些轉譯。
+[!DNL Experience Manager] Assets會以MP4擴充功能產生視訊資產的預覽。如果資產的格式不是MP4，請安裝FFmpeg套件以產生預覽。 FFmpeg建立OGG和MP4類型的視頻轉譯。 您可以在[!DNL Experience Manager] Assets使用者介面中預覽這些轉譯。
 
 1. 在「數位資產」資料夾或子資料夾中，導覽至您要新增數位資產的位置。
 1. 若要上傳資產，請按一下或點選工具列中的「**[!UICONTROL 建立]**」，然後選擇「**[!UICONTROL 檔案]**」。 或者，直接將其拖曳至資產區域。 如需上傳操作的詳細資訊，請參閱[上傳資產](managing-assets-touch-ui.md#uploading-assets)。
@@ -39,16 +39,16 @@ AEM Assets會以副檔名MP4產生視訊資產的預覽。 如果資產的格式
 
 ## 上傳大於2 GB資產的設定 {#configuration-to-upload-video-assets-that-are-larger-than-gb}
 
-根據預設，由於檔案大小限制，AEM Assets不會讓您上傳超過2 GB的任何資產。 但是，您可以轉到CRXDE Lite並在`/apps`目錄下建立節點來覆寫此限制。 節點必須具有相同的節點名稱、目錄結構和順序的可比節點屬性。
+根據預設，由於檔案大小限制，[!DNL Experience Manager]資產不會讓您上傳超過2 GB的任何資產。 但是，您可以轉到CRXDE Lite並在`/apps`目錄下建立節點來覆寫此限制。 節點必須具有相同的節點名稱、目錄結構和順序的可比節點屬性。
 
-除了AEM Assets設定外，請變更下列設定以上傳大型資產：
+除了[!DNL Experience Manager]資產設定，請變更下列設定以上傳大型資產：
 
 * 增加代號過期時間。 請參閱`https://[aem_server]:[port]/system/console/configMgr`的Web主控台中的[!UICONTROL AdobeGranite CSRF Servlet]。 有關詳細資訊，請參見[CSRF protection](/help/sites-developing/csrf-protection.md)。
 * 增加Dispatcher設定中的`receiveTimeout`。 如需詳細資訊，請參閱[Experience ManagerDispatcher設定](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)。
 
 >[!NOTE]
 >
->AEM Classic使用者介面沒有2GB的檔案大小限制。 此外，大型視訊的端對端工作流程也未完全支援。
+>[!DNL Experience Manager]傳統用戶介面沒有2 GB檔案大小限制。 此外，大型視訊的端對端工作流程也未完全支援。
 
 要配置更高的檔案大小限制，請在`/apps`目錄中執行以下步驟。
 

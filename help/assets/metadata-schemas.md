@@ -2,13 +2,13 @@
 title: 中繼資料結構
 description: '中繼資料結構會定義屬性頁面的配置，以及為資產顯示的中繼資料屬性。 了解如何建立自訂中繼資料結構、編輯中繼資料結構，以及如何將中繼資料結構套用至資產。  '
 contentOwner: AG
-feature: 中繼資料
+feature: Metadata
 role: User,Admin
 exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 12%
+source-wordcount: '2524'
+ht-degree: 11%
 
 ---
 
@@ -174,7 +174,7 @@ ht-degree: 12%
 
 ## 刪除中繼資料結構表單 {#deleting-metadata-schema-forms}
 
-AEM可讓您僅刪除自訂結構描述表單。 它不會讓您刪除預設的結構描述表單/範本。 不過，您可以刪除這些表單中的任何自訂變更。
+[!DNL Experience Manager] 可讓您僅刪除自訂結構描述表單。它不會讓您刪除預設的結構描述表單/範本。 不過，您可以刪除這些表單中的任何自訂變更。
 
 若要刪除表單，請選取表單並按一下&#x200B;**[!UICONTROL Delete]**&#x200B;圖示。
 
@@ -184,11 +184,11 @@ AEM可讓您僅刪除自訂結構描述表單。 它不會讓您刪除預設的�
 
 >[!NOTE]
 >
->您無法刪除AEM Assets中立即可用的中繼資料結構表單。
+>您無法刪除[!DNL Experience Manager]資產中現成可用的中繼資料結構表單。
 
 ## MIME類型的架構表單 {#schema-forms-for-mime-types}
 
-AEM Assets提供各種現成MIME類型的預設表單。 不過，您可以為各種MIME類型的資產新增自訂表單。
+[!DNL Experience Manager] Assets提供各種現成MIME類型的預設表單。不過，您可以為各種MIME類型的資產新增自訂表單。
 
 ### 為MIME類型添加新表單 {#adding-new-forms-for-mime-types}
 
@@ -205,7 +205,7 @@ AEM Assets提供各種現成MIME類型的預設表單。 不過，您可以為�
 | `exposedmimetype` | 要映射的現有表單的名稱 | `String` | `image/jpeg` |
 | `mimetypes` | 使用`exposedmimetype`屬性中定義的表單的MIME類型清單 | `String` | `image/png` |
 
-AEM Assets會對應下列MIME類型和結構表單：
+[!DNL Experience Manager] Assets會對應下列MIME類型和結構表單：
 
 | 結構表單 | MIME類型 |
 |---|---|
@@ -227,7 +227,7 @@ AEM Assets會對應下列MIME類型和結構表單：
 
 ## 套用資料夾特定中繼資料 {#applying-folder-specific-metadata}
 
-AEM Assets可讓您定義中繼資料結構的變體，並套用至特定資料夾。
+[!DNL Experience Manager] 資產可讓您定義中繼資料結構的變體，並套用至特定資料夾。
 
 例如，您可以定義預設中繼資料結構的變體，並將其套用至資料夾。 套用修改後的結構時，會覆寫套用至資料夾內資產的原始預設中繼資料結構。
 
@@ -239,7 +239,7 @@ AEM Assets可讓您定義中繼資料結構的變體，並套用至特定資料�
 
 如果資料夾有子資料夾，如果子資料夾層級套用了不同的結構，則子資料夾內的資產會繼承子資料夾層級所套用結構的中繼資料。 但是，如果子資料夾層級未套用結構或相同結構，子資料夾資產則會繼承父資料夾層級所套用結構的中繼資料。
 
-1. 按一下 AEM 標誌，然後導覽至&#x200B;**[!UICONTROL 「工具」>「資產」>「中繼資料結構描述」]**。此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
+1. 按一下[!DNL Experience Manager]標誌，然後導覽至&#x200B;**[!UICONTROL 工具>資產>中繼資料結構]**。 此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
 1. 選取表單前的核取方塊，例如預設中繼資料表單，然後按一下或點選&#x200B;**[!UICONTROL Copy]**&#x200B;圖示，並儲存為自訂表單。 指定表單的自訂名稱，例如`my_default`。 或者，您也可以建立自訂表單。
 
    ![chlimage_1-184](assets/chlimage_1-184.png)
@@ -269,9 +269,9 @@ AEM Assets可讓您定義中繼資料結構的變體，並套用至特定資料�
 
 >[!NOTE]
 >
->根據其他欄位的值，中繼資料欄位可定義為必填欄位。 在「卡片」檢視中，AEM不會顯示有關這類必要中繼資料欄位遺失中繼資料的警告訊息。
+>根據其他欄位的值，中繼資料欄位可定義為必填欄位。 在「卡片」檢視中，[!DNL Experience Manager]不會顯示有關此類必要中繼資料欄位遺失中繼資料的警告訊息。
 
-1. 按一下 AEM 標誌，然後導覽至&#x200B;**[!UICONTROL 「工具」>「資產」>「中繼資料結構描述」]**。此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
+1. 按一下[!DNL Experience Manager]標誌，然後導覽至&#x200B;**[!UICONTROL 工具>資產>中繼資料結構]**。 此時會顯示&#x200B;**[!UICONTROL 「中繼資料結構描述表單」]**&#x200B;頁面。
 1. 將預設中繼資料表單儲存為自訂表單。 例如，將其儲存為`my_default`。
 
    ![chlimage_1-109](assets/chlimage_1-189.png)
@@ -284,10 +284,10 @@ AEM Assets可讓您定義中繼資料結構的變體，並套用至特定資料�
 
 1. 導覽至資料夾，並上傳一些資產，其中遺失您新增至自訂表單之必填欄位的中繼資料。 資產的「卡片」檢視會顯示必填欄位中缺少中繼資料的訊息。
 
-   ![chlimage_1-112](assets/chlimage_1-192.png)
+   ![chlimage_1-192](assets/chlimage_1-192.png)
 
-1. （可選）訪問`http://[server]:[port]/system/console/components/`。 配置並啟用預設禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`元件。 設定AEM檢查資產上中繼資料有效性的頻率。
-此設定會將屬性`hasValidMetadata`新增至jcr:content的資產。 使用此屬性，AEM可以篩選搜尋結果。
+1. （可選）訪問`http://[server]:[port]/system/console/components/`。 配置並啟用預設禁用的`com.day.cq.dam.core.impl.MissingMetadataNotificationJob`元件。 設定[!DNL Experience Manager]檢查資產上中繼資料是否有效的頻率。
+此設定會將屬性`hasValidMetadata`新增至jcr:content的資產。 使用此屬性[!DNL Experience Manager]可以篩選搜索結果。
 
 >[!NOTE]
 >
@@ -295,4 +295,4 @@ AEM Assets可讓您定義中繼資料結構的變體，並套用至特定資料�
 
 >[!CAUTION]
 >
->中繼資料驗證檢查耗用大量資源，且可能會影響您的系統效能。 據此安排檢查。 如果AEM部署存在效能問題，請嘗試禁用此作業。
+>中繼資料驗證檢查耗用大量資源，且可能會影響您的系統效能。 據此安排檢查。 如果[!DNL Experience Manager]部署存在效能問題，請嘗試禁用此作業。

@@ -1,24 +1,24 @@
 ---
 title: Assets Proxy Development
-description: 'Proxy是使用Proxy背景工作處理工作的AEM例項。 了解如何設定AEM代理、支援的操作、代理元件，以及如何開發自訂代理程式。 '
+description: '代理是 [!DNL Experience Manager] instance that uses proxy workers to process jobs. Learn how to configure an [!DNL Experience Manager] 代理，支援的操作、代理元件以及如何開發自定義代理工作器。 '
 contentOwner: AG
-feature: 資產處理
+feature: Asset Processing
 role: Admin, Architect
 exl-id: c7511326-697e-4749-ab46-513cdbaa00d8
-source-git-commit: fc725206728e238ab9da1fb30cee8fb407257b62
+source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
 # Assets Proxy Development {#assets-proxy-development}
 
-Adobe Experience Manager(AEM)Assets會使用Proxy來分送特定工作的處理作業。
+Adobe Experience Manager Assets會使用代理來分發特定工作的處理作業。
 
-代理是特定（有時也是獨立的）AEM實例，它使用代理工作者作為處理者，負責處理工作並建立結果。 代理工作器可用於各種任務。 若是AEM Assets Proxy，則可用來載入資產，以便在AEM Assets內呈現。 例如， [IDS代理工作器](indesign.md)使用InDesign Server處理要在AEM Assets中使用的檔案。
+代理是特定（有時也是獨立的）[!DNL Experience Manager]實例，它使用代理工作者作為負責處理任務和建立結果的處理者。 代理工作器可用於各種任務。 若為[!DNL Experience Manager]資產代理，則可用來載入資產，以便在[!DNL Experience Manager]資產內呈現。 例如， [IDS代理工作器](indesign.md)使用InDesign Server處理要在[!DNL Experience Manager]資產中使用的檔案。
 
-當Proxy是個別的AEM例項時，有助於減少AEM製作例項的負載。 依預設，AEM Assets會在相同JVM（透過Proxy外部化）中執行資產處理工作，以減少AEM製作例項的負載。
+當Proxy是個別的[!DNL Experience Manager]例項時，這有助於減少[!DNL Experience Manager]製作例項的負載。 依預設，[!DNL Experience Manager]資產會在相同JVM（透過Proxy外部化）中執行資產處理任務，以減少[!DNL Experience Manager]製作例項的負載。
 
 ## 代理（HTTP訪問） {#proxy-http-access}
 
@@ -110,7 +110,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >
 >[`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/commons/proxy/package-summary.html)下方提供Proxy API的參考檔案。
 
-Proxy和Proxy工作程式設定皆可透過雲端服務設定取得，可從AEM Assets **Tools**&#x200B;主控台或`/etc/cloudservices/proxy`下存取。 每個代理工作器應在`/etc/cloudservices/proxy`下添加一個節點，以了解工作器特定配置詳細資訊（例如`/etc/cloudservices/proxy/workername`）。
+Proxy和Proxy工作程式設定皆可透過雲端服務設定取得，可從[!DNL Experience Manager] Assets **Tools**&#x200B;主控台或`/etc/cloudservices/proxy`下存取。 每個代理工作器應在`/etc/cloudservices/proxy`下添加一個節點，以了解工作器特定配置詳細資訊（例如`/etc/cloudservices/proxy/workername`）。
 
 >[!NOTE]
 >
@@ -133,9 +133,9 @@ Proxy和Proxy工作程式設定皆可透過雲端服務設定取得，可從AEM 
 
 ### 開發自定義代理工作器 {#developing-a-customized-proxy-worker}
 
-[IDS代理工作器](indesign.md)是AEM Assets代理工作器的範例，該工作器已提供現成可用來委外Indesign資產的處理作業。
+[IDS代理工作器](indesign.md)是[!DNL Experience Manager]資產代理工作器的範例，此工作器已提供現成可用的功能，可將Indesign資產的處理作業外判。
 
-您也可以開發並設定自己的AEM Assets Proxy工作人員，以建立專門的工作人員，以派送和委外您的AEM Assets處理任務。
+您也可以開發和配置自己的[!DNL Experience Manager]資產代理工作人員，以建立專門工作人員來派送和外包您的[!DNL Experience Manager]資產處理任務。
 
 設定您自己的自訂代理工作程式時，您必須：
 
@@ -177,12 +177,12 @@ Proxy和Proxy工作程式設定皆可透過雲端服務設定取得，可從AEM 
 
 >[!NOTE]
 >
->AEM Assets代理框架不提供的是池機制。
+>[!DNL Experience Manager]資產代理框架不提供現成可用的池機制。
 >
->InDesign整合允許訪問內部設計伺服器池(IDSPool)。 此集區是Indesign整合專用，而非AEM Assets Proxy架構的一部分。
+>InDesign整合允許訪問內部設計伺服器池(IDSPool)。 此集區是Indesign整合專用，而非[!DNL Experience Manager]資產代理架構的一部分。
 
 >[!NOTE]
 >
 >結果同步：
 >
->若有n個例項使用相同的Proxy，處理結果會與Proxy一起。 是用戶端（AEM作者）的工作，使用與建立工作時提供給用戶端的相同唯一作業ID來要求結果。 代理只需完成該作業，並使結果準備好被請求。
+>若有n個例項使用相同的Proxy，處理結果會與Proxy一起。 是用戶端的工作（[!DNL Experience Manager]作者），使用與建立工作時提供給用戶端的相同唯一作業ID來請求結果。 代理只需完成該作業，並使結果準備好被請求。

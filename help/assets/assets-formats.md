@@ -1,22 +1,22 @@
 ---
-title: AEM Assets支援的檔案格式
-description: AEM Assets支援的檔案格式和MIME類型清單以及每種格式支援的功能。
+title: ' [!DNL Experience Manager] Assets支援的檔案格式'
+description: Assets支援的檔案格式和MIME類型清單以及每種格式支援的功能。
 contentOwner: AG
-feature: 資產管理，轉譯
+feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '1635'
 ht-degree: 9%
 
 ---
 
-# AEM Assets支援的檔案格式 {#assets-supported-formats}
+# [!DNL Adobe Experience Manager Assets]中支援的檔案格式 {#assets-supported-formats}
 
-AEM Assets支援多種檔案格式，而且各種功能對不同MIME類型的支援也各有不同。
+[!DNL Experience Manager Assets] 支援多種檔案格式，而且每種功能對不同MIME類型的支援各不相同。
 
-若要將AEM Assets與其他符合標準的數位資產管理(DAM)解決方案和案頭軟體整合，請使用Adobe的可擴充中繼資料平台(XMP)。
+若要將[!DNL Assets]與其他符合標準的數位資產管理(DAM)解決方案和案頭軟體整合，請使用Adobe的可擴展元資料平台(XMP)。
 
 使用圖例來了解支援層級。
 
@@ -111,7 +111,7 @@ Adobe影像轉碼程式庫是執行核心影像處理功能（例如編碼、轉
 
 ## Camera Raw {#supported-camera-raw}
 
-Adobe Camera Raw資料庫可讓AEM Assets擷取原始影像。 請參閱[Camera Raw支援](camera-raw.md)。
+Adobe Camera Raw程式庫可讓[!DNL Assets]擷取原始影像。 請參閱[Camera Raw支援](camera-raw.md)。
 
 ## 檔案格式 {#supported-document-formats}
 
@@ -244,7 +244,7 @@ Dynamic Media功能支援的檔案格式如下：
 
 ## 支援的MIME類型 {#supported-mime-types}
 
-依預設，AEM會使用副檔名偵測檔案類型。 AEM可從檔案內容中偵測到。 若是後者，請在AEM Web主控台的[!UICONTROL Day CQ DAM Mime Type Service]中選取「從內容]偵測MIME」選項。[!UICONTROL 
+預設情況下， [!DNL Experience Manager]會使用副檔名檢測檔案類型。 [!DNL Experience Manager] 可從檔案的內容中偵測。對於後者，在[!DNL Experience Manager] Web控制台的[!UICONTROL Day CQ DAM Mime Type Service]中，選取[!UICONTROL 從內容]檢測MIME選項。
 
 支援的MIME類型清單可在`/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`的CRXDE Lite中取得。
 

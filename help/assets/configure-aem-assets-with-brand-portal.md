@@ -2,19 +2,19 @@
 title: 使用 Brand Portal 設定 AEM Assets
 description: '了解如何使用Brand Portal設定AEM Assets，以將資產和集合發佈至Brand Portal。 '
 contentOwner: VG
-feature: 品牌入口網站
+feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
 workflow-type: tm+mt
-source-wordcount: '1649'
+source-wordcount: '1646'
 ht-degree: 37%
 
 ---
 
 # 使用 Brand Portal 設定 AEM Assets {#configure-integration-64}
 
-Adobe Experience Manager(AEM)資產是透過[!DNL Adobe I/O]以Brand Portal設定，其中會擷取IMS代號，以便授權您的Brand Portal租用戶。
+Adobe Experience Manager資產是透過[!DNL Adobe I/O]以Brand Portal設定，其中會擷取IMS代號，以便授權您的Brand Portal租用戶。
 
 >[!NOTE]
 >

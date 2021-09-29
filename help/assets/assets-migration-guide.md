@@ -2,13 +2,13 @@
 title: 將資產大量移轉至Adobe Experience Manager Assets
 description: 如何將資產帶入AEM、套用中繼資料、產生轉譯，以及啟用資產以發佈例項。
 contentOwner: AG
-feature: 移轉，轉譯，資產管理
+feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 11%
+source-wordcount: '1772'
+ht-degree: 8%
 
 ---
 
@@ -24,19 +24,18 @@ ht-degree: 11%
 >
 >下列資產移轉工具不屬於Adobe Experience Manager。 Adobe客戶服務不支援這些工具。
 >
->* ACS AEM Tools Tag Maker
->* ACS AEM工具CSV資產匯入工具
+>* ACS [!DNL Experience Manager]工具標籤製作器
+>* ACS [!DNL Experience Manager]工具CSV資產匯入工具
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Fast Action Manager
 >* 合成工作流程
 
 >
->
-本軟體為開放原始碼， [Apache v2授權涵蓋此軟體](https://adobe-consulting-services.github.io/pages/license.html)。若要提出問題或報告問題，請造訪ACS AEM工具和 [ACS AEM公域的GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues)[問題](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues)。
+>本軟體為開放原始碼， [Apache v2授權涵蓋此軟體](https://adobe-consulting-services.github.io/pages/license.html)。若要提出問題或報告問題，請造訪ACS 工具和 [ [!DNL Experience Manager] ACS 公域的GitHub](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues)[ [!DNL Experience Manager] 問題](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues)。
 
-## 移轉至AEM {#migrate-to-aem}
+## 遷移至[!DNL Experience Manager] {#migrate-to-aem}
 
-將資產移轉至AEM需要數個步驟，且應視為分階段的程式。 移轉階段如下：
+將資產移轉至[!DNL Experience Manager]需要數個步驟，且應視為分階段程式。 移轉階段如下：
 
 1. 停用工作流程。
 1. 載入標籤。
@@ -53,7 +52,7 @@ ht-degree: 11%
 
 ### 載入標籤 {#load-tags}
 
-您可能已準備好將標籤分類套用至影像。 CSV資產匯入工具和中繼資料設定檔功能等工具可協助將標籤套用至資產自動化。 在此之前，請在Experience Manager中新增標籤。 [ACS AEM工具標籤製作器](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html)功能允許您使用載入到系統中的Microsoft Excel電子錶格填入標籤。
+您可能已準備好將標籤分類套用至影像。 CSV資產匯入工具和中繼資料設定檔功能等工具可協助將標籤套用至資產自動化。 在此之前，請在Experience Manager中新增標籤。 [ACS [!DNL Experience Manager] 工具標籤製作器](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html)功能允許您使用載入到系統中的Microsoft Excel電子錶格填入標籤。
 
 ### 內嵌資產 {#ingest-assets}
 
@@ -63,7 +62,7 @@ ht-degree: 11%
 
 #### 透過HTTP推送 {#push-through-http}
 
-Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客戶環境中。 Glutton是小型Java應用程式，會將所有資產從一個目錄載入至AEM執行個體上的另一個目錄。 您也可以使用工具（例如Perl指令碼）將資產張貼至存放庫，而不是使用Glutton。
+Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客戶環境中。 Glutton是一個小型Java應用程式，它將所有資產從一個目錄載入到[!DNL Experience Manager]實例上的另一個目錄。 您也可以使用工具（例如Perl指令碼）將資產張貼至存放庫，而不是使用Glutton。
 
 使用透過https推送的方式有兩個主要缺點：
 
@@ -74,7 +73,7 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 
 #### 從本地檔案系統提取 {#pull-from-the-local-file-system}
 
-[ACS AEM工具CSV資產匯入工具](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)從CSV檔案提取檔案系統中的資產和資產中繼資料，以匯入資產。 AEM Asset Manager API可用來將資產匯入系統，並套用已設定的中繼資料屬性。 理想情況下，資產會透過網路檔案裝載或外部驅動器裝載在伺服器上。
+[ACS [!DNL Experience Manager] 工具CSV資產匯入工具](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)從檔案系統提取資產，並從CSV檔案提取資產中繼資料以匯入資產。 [!DNL Experience Manager] Asset Manager API可用來將資產匯入系統，並套用已設定的中繼資料屬性。 理想情況下，資產會透過網路檔案裝載或外部驅動器裝載在伺服器上。
 
 當資產未通過網路傳輸時，整體效能會大大提高。 此方法通常是將資產載入存放庫的最有效方法。 此外，您可以透過單一步驟匯入所有資產和中繼資料，因為工具支援中繼資料擷取。 套用中繼資料不需要其他步驟，例如使用個別工具。
 
@@ -85,7 +84,7 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 根據您的需求設定工作流程後，您有兩個選項可執行：
 
 1. 最簡單的方法是[ACS Commons&#39; Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html)。 此工具允許您執行查詢，並通過工作流處理查詢結果。 還有設定批大小的選項。
-1. 您可搭配「合成工 [作流程」使用ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)[](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html)。雖然此方法的參與度更高，但可讓您移除AEM工作流程引擎的額外負荷，同時最佳化伺服器資源的使用。此外，Fast Action Manager還通過動態監控伺服器資源並調節系統上的負載，進一步提高了效能。ACS Commons功能頁上提供了示例指令碼。
+1. 您可搭配「合成工 [作流程」使用ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)[](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html)。雖然此方法的參與度要高得多，但可讓您移除[!DNL Experience Manager]工作流程引擎的額外負荷，同時最佳化伺服器資源的使用。 此外，Fast Action Manager還通過動態監控伺服器資源並調節系統上的負載，進一步提高了效能。ACS Commons功能頁上提供了示例指令碼。
 
 ### 啟動資產 {#activate-assets}
 
@@ -93,7 +92,7 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 
 若要解決此問題，您可以使用[快速動作管理員](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)來管理資產復寫。 這樣就不需要使用Sling佇列，降低開銷，同時限制工作負載以防止伺服器過載。 功能的檔案頁面上顯示了使用FAM管理復寫的範例。
 
-將資產傳送至發佈農場的其他選項包括使 [用vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html)[或oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)，這些工具是Jackrabbit的一部份。另一個選擇是針對您的AEM基礎架構使用開放來源工具，稱為 [Grabbit](https://github.com/TWCable/grabbit)，該工具聲稱其效能比vlt快。
+將資產傳送至發佈農場的其他選項包括使 [用vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html)[或oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)，這些工具是Jackrabbit的一部份。另一個選項是對[!DNL Experience Manager]基礎架構使用開放源碼工具，該工具稱[Grabbit](https://github.com/TWCable/grabbit)，該工具聲稱其效能比vlt快。
 
 對於其中任何方法，請注意製作例項上的資產未顯示為已啟動。 若要處理以正確啟動狀態標籤這些資產，您也需執行指令碼，將資產標示為已啟動。
 
@@ -117,20 +116,20 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 
 完成移轉後，應重新啟用DAM更新資產工作流程的啟動器，以支援產生轉譯和擷取中繼資料，以持續使用日常系統。
 
-## 跨AEM部署移轉資產 {#migrate-between-aem-instances}
+## 跨[!DNL Experience Manager]部署移轉資產 {#migrate-between-aem-instances}
 
-雖然並不常見，但有時候您需要將大量資料從一個AEM例項移轉至另一個例項；例如，執行AEM升級時，請升級硬體或遷移到新的資料中心，例如進行AMS遷移。
+雖然並不像以前那麼常見，但有時您需要將大量資料從一個[!DNL Experience Manager]實例遷移到另一個實例；例如，執行[!DNL Experience Manager]升級時，請升級硬體，或遷移到新的資料中心，例如進行AMS遷移。
 
-在此情況下，資產已填入中繼資料，且已產生轉譯。 您只需專注於將資產從一個執行個體移至另一個執行個體。 在AEM例項之間移轉時，請執行下列步驟：
+在此情況下，資產已填入中繼資料，且已產生轉譯。 您只需專注於將資產從一個執行個體移至另一個執行個體。 在[!DNL Experience Manager]執行個體之間移轉時，請執行下列步驟：
 
 1. 停用工作流程：由於您要移轉轉譯項目和我們的資產，因此想要停用DAM更新資產的工作流程啟動器。
 
-1. 移轉標籤：因為您已在來源AEM例項中載入標籤，所以您可以在內容套件中建置標籤，並在目標例項上安裝該套件。
+1. 移轉標籤：由於您已在源[!DNL Experience Manager]實例中載入了標籤，因此您可以在內容包中建立標籤，並在目標實例上安裝該包。
 
-1. 移轉資產：建議使用兩種工具，將資產從一個AEM例項移至另一個例項：
+1. 移轉資產：建議使用兩種工具將資產從一個[!DNL Experience Manager]例項移至另一個例項：
 
    * **Vault Remote Copy**(或 `vlt rcp`)允許您跨網路使用vlt。您可以指定源目錄和目標目錄，然後vlt從一個實例下載所有儲存庫資料並將其載入到另一個實例。 Vlt rcp記錄在[https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **** Grabbitis是Time Warner Cable為實作AEM而開發的開放原始碼內容同步工具。因為它使用連續的資料流，與vlt rcp相比，它的延遲更低，並聲稱速度比vlt rcp快2到10倍。 Grabbit也僅支援增量內容的同步，這可讓其在完成初始遷移過程後同步更改。
+   * **** Grabbitis是Time Warner Cable為實作而開發的開放原始碼內容同步 [!DNL Experience Manager] 工具。因為它使用連續的資料流，與vlt rcp相比，它的延遲更低，並聲稱速度比vlt rcp快2到10倍。 Grabbit也僅支援增量內容的同步，這可讓其在完成初始遷移過程後同步更改。
 
 1. 啟動資產：遵循針對初始移轉至AEM而記錄的[啟用資產](#activate-assets)指示。
 

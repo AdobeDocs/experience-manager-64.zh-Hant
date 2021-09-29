@@ -6,13 +6,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
-feature: 智慧標籤，搜索
+feature: Smart Tags,Search
 role: User
 exl-id: 21a9f130-ea91-45bf-adc8-8a73a2a00c77
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 15%
+source-wordcount: '1514'
+ht-degree: 14%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 15%
 
 在背景中，智慧內容服務會使用Adobe Sensei的AI架構，根據您的標籤結構和商業分類訓練其影像識別演算法。 然後，系統會使用此內容智慧，將相關標籤套用至不同的資產集。
 
-智慧內容服務是托管於[!DNL Adobe I/O]的雲端服務。 若要在Adobe Experience Manager(AEM)中使用，系統管理員必須將您的AEM執行個體與[!DNL Adobe I/O]整合。
+智慧內容服務是托管於[!DNL Adobe I/O]的雲端服務。 若要在Adobe Experience Manager中使用它，系統管理員必須將您的[!DNL Experience Manager]例項與[!DNL Adobe I/O]整合。
 
 總而言之，以下是使用智慧內容服務的主要步驟：
 
@@ -52,15 +52,11 @@ ht-degree: 15%
 
 ## 入門 {#onboarding}
 
-智慧內容服務可作為AEM的附加元件購買。 購買後，系統會傳送電子郵件給您組織的管理員，並附上[!DNL Adobe I/O]連結。
+智慧內容服務可作為[!DNL Experience Manager]的附加元件購買。 購買後，系統會傳送電子郵件給您組織的管理員，並附上[!DNL Adobe I/O]連結。
 
-管理員可依照該連結整合智慧內容服務與AEM。 若要將服務與AEM Assets整合，請參閱[設定智慧標籤](config-smart-tagging.md)。
+管理員可以依照該連結，將智慧內容服務與[!DNL Experience Manager]整合。 若要將服務與[!DNL Experience Manager]資產整合，請參閱[設定智慧標籤](config-smart-tagging.md)。
 
-管理員設定服務並在AEM中新增使用者時，上線程式就會完成。
-
->[!NOTE]
->
->如果您是使用AEM 6.3或較舊版本，且需要資產的自動標籤服務，請參閱[智慧標籤](https://helpx.adobe.com/experience-manager/6-3/assets/using/touch-ui-smart-tags.html)。 智慧標籤不會使用AI功能，且比「增強智慧標籤」功能的準確度低。
+管理員設定服務並在[!DNL Experience Manager]中新增使用者時，上線程式便會完成。
 
 ## 檢閱資產和標籤 {#reviewing-assets-and-tags}
 
@@ -77,7 +73,6 @@ ht-degree: 15%
 >1. 第一次訓練智慧內容服務時，Adobe建議您至少在兩個不同的標籤上訓練智慧內容服務。
 
 >
-
 
 
 ## 訓練智慧內容服務 {#training-the-smart-content-service}
@@ -98,13 +93,13 @@ ht-degree: 15%
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-為資料夾選取此選項後，AEM會自動執行訓練工作流程，以訓練資料夾資產及其標籤上的智慧內容服務。 預設情況下，培訓工作流程每週在星期六的凌晨12:30運行。
+為資料夾選取此選項後， [!DNL Experience Manager]會自動執行訓練工作流程，以訓練資料夾資產及其標籤上的智慧內容服務。 預設情況下，培訓工作流程每週在星期六的凌晨12:30運行。
 
 ### 隨選培訓 {#on-demand-training}
 
 您可以視需要從工作流程主控台訓練智慧內容服務。
 
-1. 點選/按一下AEM標誌，然後前往「工 **[!UICONTROL 具 >工 作流程 > 模型]**」。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往「**[!UICONTROL 工具>工作流程>模型」]**。
 1. 從「工 **[!UICONTROL 作流模型]** 」頁面中，選擇「智 **[!UICONTROL 慧標籤培訓」工作流程，然後從工具列點選/]** 按一下「開始工作流程 **** 」。
 1. 在&#x200B;**[!UICONTROL 執行工作流程]**&#x200B;對話方塊中，瀏覽至裝載資料夾，其中包含用於訓練服務的已標籤資產。
 1. 指定工作流程的標題並新增註解。 然後，點選/按一下&#x200B;**[!UICONTROL 執行]**。 資產和標籤會提交以供訓練。
@@ -119,7 +114,7 @@ ht-degree: 15%
 
 若要檢查智慧內容服務是否在資產訓練集的標籤上接受訓練，請從報表控制台檢閱訓練工作流程報表。
 
-1. 點選/按一下AEM標誌，然後前往「工 **[!UICONTROL 具 >資 產 > 報表]**」。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往「**[!UICONTROL 工具>資產>報表」]**。
 1. 在「資產 **[!UICONTROL 報表」頁面]** ，點選/按一下「 **[!UICONTROL 建立」]**。
 1. 選取「智 **[!UICONTROL 慧標籤訓練]** 」報表，然後從工具列點選/ **[!UICONTROL 按「下一步]** 」。
 1. 指定報表的標題和說明。在「 **[!UICONTROL 排程報表]**」下，保 **[!UICONTROL 留「現在]** 」選項。如果您想要排程報表以供稍後使用，請選 **[!UICONTROL 取]** 「稍後」並指定日期和時間。然後，點選/按一 **[!UICONTROL 下工具列]** 中的「建立」。
@@ -161,7 +156,7 @@ ht-degree: 15%
 
 #### 從工作流程主控台標籤資產 {#tagging-assets-from-the-workflow-console}
 
-1. 點選/按一下AEM標誌，然後前往「工 **[!UICONTROL 具 >工 作流程 > 模型]**」。
+1. 點選/按一下[!DNL Experience Manager]標誌，然後前往「**[!UICONTROL 工具>工作流程>模型」]**。
 1. 從「工 **[!UICONTROL 作流程模型]** 」頁面中，選擇 **[!UICONTROL DAM智慧標籤資產工作流程，然後從工具列點選/按]** 一下「開始工作流程 **** 」。
 
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)

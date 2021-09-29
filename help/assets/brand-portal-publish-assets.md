@@ -2,29 +2,29 @@
 title: 將資料夾發佈至 Brand Portal
 description: 了解如何將資產發佈和取消發佈至Brand Portal。
 contentOwner: VG
-feature: 品牌入口網站
+feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 36%
+source-wordcount: '403'
+ht-degree: 30%
 
 ---
 
 # 將資產發佈至 Brand Portal {#publish-assets-to-brand-portal}
 
-身為Adobe Experience Manager(AEM)Assets管理員，您可以將資產發佈至貴組織的AEM Assets Brand Portal例項（或將發佈工作流程排程至稍後的日期/時間）。 不過，您必須先使用Brand Portal設定AEM Assets。 如需詳細資訊，請參閱[使用 Brand Portal 設定 AEM Assets](configure-aem-assets-with-brand-portal.md)。
+身為Adobe Experience Manager Assets管理員，您可以將資產發佈至組織的[!DNL Experience Manager Assets Brand Portal]例項（或將發佈工作流程排程至稍後的日期/時間）。 但您必須先使用[!DNL Brand Portal]配置[!DNL Assets]。 如需詳細資訊，請參閱[使用 [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md)設定 [!DNL Assets] 。
 
 發佈資產後，Brand Portal的使用者即可使用資產。
 
-如果您後續修改AEM Assets中的原始資產，在您重新發佈資產之前，這些變更不會反映在Brand Portal中。 這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
+如果您後續在[!DNL Assets]中修改原始資產，在您重新發佈資產前，變更不會反映在Brand Portal中。 這項功能可確保對進行中工作所作的變更不會出現在 Brand Portal 中。Brand Portal 僅提供管理員發佈的已核准變更。
 
-復寫成功後，您就可以將資產、資料夾和集合發佈至Brand Portal。 若要將資產發佈至Brand Portal，請依照下列步驟操作：
+復寫成功後，您可以將資產、資料夾和集合發佈至[!DNL Brand Portal]。 若要將資產發佈至Brand Portal，請依照下列步驟操作：
 
 >[!NOTE]
 >
->Adobe 建議將發佈時間交錯開來，尤其建議選擇非尖峰時段，如此 AEM 作者才不會佔用過多資源。
+>Adobe建議將發佈時間錯開，最好在非尖峰時段進行，這樣[!DNL Experience Manager]作者就不會佔用過多的資源。
 
 1. 從「資產」主控台，暫留在所需的資產上，並從快速動作中選取&#x200B;**[!UICONTROL 發佈]**&#x200B;選項。
 

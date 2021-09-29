@@ -2,19 +2,19 @@
 title: 有效轉譯資產的最佳實務
 description: 高效管理資產的最佳做法，以同步各種翻譯版本並簡化翻譯工作流程。
 contentOwner: AG
-feature: 轉換
+feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
 
 # 有效轉譯資產的最佳實務 {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager(AEM)Assets支援多語言工作流程，將數位資產的二進位檔、中繼資料和標籤轉譯為多個地區設定，以及管理翻譯的資產。 如需詳細資訊，請參閱[多語言資產](multilingual-assets.md)。
+Adobe Experience Manager Assets支援多語言工作流程，將數位資產的二進位檔、中繼資料和標籤轉譯為多個地區設定，以及管理翻譯的資產。 如需詳細資訊，請參閱[多語言資產](multilingual-assets.md)。
 
 為了有效管理資產以確保不同翻譯版本保持同步，請在執行翻譯工作流程之前建立資產的[語言副本](preparing-assets-for-translation.md)。
 
@@ -43,7 +43,7 @@ Adobe Experience Manager(AEM)Assets支援多語言工作流程，將數位資產
 
 1. 啟用&#x200B;*設定上次修改日期*&#x200B;工作流。
 
-   *DAM MetaData回寫*&#x200B;工作流程會設定資產的上次修改日期。 由於您在步驟2中停用此工作流程，AEM Assets將無法再將資產的上次修改日期保持為最新。 因此，請啟用&#x200B;*設定上次修改日期*&#x200B;工作流程，確保資產的上次修改日期為最新狀態。 具有過時的上次修改日期的資產可能會導致錯誤。
+   *DAM MetaData回寫*&#x200B;工作流程會設定資產的上次修改日期。 由於您在步驟2中停用此工作流程，因此[!DNL Experience Manager Assets]無法再將資產的上次修改日期保持為最新。 因此，請啟用&#x200B;*設定上次修改日期*&#x200B;工作流程，確保資產的上次修改日期為最新狀態。 具有過時的上次修改日期的資產可能會導致錯誤。
 
 1. [設定翻譯整合架構，](/help/sites-administering/tc-tic.md) 以停止轉譯資產二進位檔。取消選取「資產」標籤下的「轉譯資產」選項，以停止轉譯Asset二進位檔。
 1. 使用[多語言資產工作流程](multilingual-assets.md)翻譯資產中繼資料/標籤。
