@@ -1,22 +1,22 @@
 ---
 title: 透過Oak-run Jar建立索引
-seo-title: 透過Oak-run Jar建立索引
+seo-title: Indexing via the Oak-run Jar
 description: 了解如何透過Oak-run Jar執行索引。
-seo-description: 了解如何透過Oak-run Jar執行索引。
+seo-description: Learn how to perform indexing via the Oak-run Jar.
 uuid: 09a83ab9-92ec-4b55-8d24-2302f28fc2e4
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
 exl-id: b85fc608-9653-4491-8557-f66a0a7da5ea
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 809a62eeca8b8e30e010beea7d594ced165e8faa
 workflow-type: tm+mt
-source-wordcount: '879'
+source-wordcount: '870'
 ht-degree: 0%
 
 ---
 
-# 透過Oak-run Jar{#indexing-via-the-oak-run-jar}建立索引
+# 透過Oak-run Jar建立索引{#indexing-via-the-oak-run-jar}
 
 Oak-run支援命令列上的所有索引使用案例，不需從JMX層級操作。 oak-run方法的優點包括：
 
@@ -62,7 +62,7 @@ Oak-run支援命令列上的所有索引使用案例，不需從JMX層級操作�
 >
 >有關此情境的詳細資訊，請參閱[使用案例3 — 重新索引](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing)。
 
-### SegmentNodeStore和DocumentNodeStore {#textpre-extraction}的文字預先擷取
+### SegmentNodeStore和DocumentNodeStore的文字預先擷取 {#textpre-extraction}
 
 [文字預先擷取](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-perform-text-pre-extraction) (AEM 6.3中已存在的功能)可用來縮短重新索引的時間。文本預取可與所有重新索引方法結合使用。
 
@@ -74,7 +74,7 @@ Oak-run支援命令列上的所有索引使用案例，不需從JMX層級操作�
 >
 >橘色表示AEM必須位於維護視窗中的活動。
 
-### 使用oak-run.jar {#onlinere-indexingformongomk}為MongoMK或RDBMK線上重新索引
+### 使用oak-run.jar為MongoMK或RDBMK線上重新索引 {#onlinere-indexingformongomk}
 
 >[!NOTE]
 >
@@ -100,25 +100,25 @@ Oak-run支援命令列上的所有索引使用案例，不需從JMX層級操作�
 
    * 對於發佈伺服器陣列，必須針對所有OR執行單一發佈上的步驟，然後複製其他伺服器的設定(複製AEM例項時，請採取所有通常的操作);sling.id — 應連結至此處的項目)
 
-### TarMK {#onlinere-indexingfortarmk}的線上重新索引
+### TarMK的線上重新索引 {#onlinere-indexingfortarmk}
 
 >[!NOTE]
 >
 >有關此情況的詳細資訊，請參閱[Online Reindex - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestore)。
 
-這是導入oak-run.jar新索引功能之前所使用的方法。 若要這麼做，請在Oak索引上設定`reindex=true`屬性。
+這是導入oak-run.jar新索引功能前所使用的方法。 若要這麼做，請在Oak索引上設定`reindex=true`屬性。
 
 如果索引的時間和效能影響是客戶可接受的，則可以使用此方法。 中小型AEM安裝通常會採用此方式。
 
 ![6](assets/6.png)
 
-### 使用oak-run.jar {#onlinere-indexingtarmkusingoak-run-jar}線上重新索引TarMK
+### 使用oak-run.jar線上重新索引TarMK {#onlinere-indexingtarmkusingoak-run-jar}
 
 >[!NOTE]
 >
 >有關此情況的詳細資訊，請參閱[聯機重新索引 — SegmentNodeStore - AEM實例正在運行](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning)。
 
-TarMK的線上重新索引比上述說明中的線上TarkMK重新索引更快。 但是，它還需要在維護窗口期間執行，其方法是窗口將更短，並且需要執行更多步驟來重新索引。
+使用oak-run.jar線上重新索引TarMK的速度比上述[ TarMK](#onlinere-indexingfortarmk)線上重新索引的速度快。 但是，在維護窗口期間也需要執行；提到窗口將更短，需要執行更多步驟來重新索引。
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ TarMK的線上重新索引比上述說明中的線上TarkMK重新索引更快。
 
 ![7](assets/7.png)
 
-### 使用oak-run.jar {#offlinere-indexingtarmkusingoak-run-jar}離線重新索引TarMK
+### 使用oak-run.jar離線重新索引TarMK {#offlinere-indexingtarmkusingoak-run-jar}
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ TarMK的離線重新索引是TarMK最簡單的`oak-run.jar`型重新索引方法
 
 ![8](assets/8.png)
 
-### 使用oak-run.jar {#out-of-bandre-indexingtarmkusingoak-run-jar}為TarMK建立帶外重新索引
+### 使用oak-run.jar進行帶外重新索引TarMK  {#out-of-bandre-indexingtarmkusingoak-run-jar}
 
 >[!NOTE]
 >
@@ -170,13 +170,13 @@ TarMK的離線重新索引是TarMK最簡單的`oak-run.jar`型重新索引方法
 
 有關詳細資訊，請參閱[ACS Ensure Index文檔](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html)以了解詳細資訊。
 
-### 使用oak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}在TarMK上建立和更新索引定義
+### 使用oak-run.jar在TarMK上建立和更新索引定義 {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
 如果使用非`oak-run.jar`方法重新索引對時間或效能的影響太大，則可使用以下基於`oak-run.jar`的方法來導入和重新索引基於TarMK的AEM安裝中的Lucene索引定義。
 
 ![10](assets/10.png)
 
-### 使用oak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}在MonogMK上建立和更新索引定義
+### 使用oak-run.jar在MonogMK上建立和更新索引定義 {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
 如果使用非`oak-run.jar`方法重新索引對時間或效能的影響太大，則可使用以下基於`oak-run.jar`的方法來導入和重新索引基於MongoMK的AEM安裝中的Lucene索引定義。
 
