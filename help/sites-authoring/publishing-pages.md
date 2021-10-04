@@ -1,18 +1,18 @@
 ---
 title: 發佈頁面
-seo-title: 發佈頁面
+seo-title: Publishing Pages
 description: 發佈頁面
-seo-description: 'null'
+seo-description: null
 uuid: 1222859d-ef8d-462e-a125-b76e6cfec26d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: d01eee7602945b8d3cb3ad004ccf5ad6cbc4c73c
 workflow-type: tm+mt
-source-wordcount: '1631'
-ht-degree: 7%
+source-wordcount: '1680'
+ht-degree: 6%
 
 ---
 
@@ -31,16 +31,13 @@ ht-degree: 7%
 >
 >* **發佈/取消發佈**
    >  這些是可讓您的內容在您的發佈環境（或不可）上公開的動作的主要辭彙。
-   >
-   >
-* **啟用/停用**
+>
+>* **啟用/停用**
    >  這些詞語等同於發佈/取消發佈。
-   >
-   >
-* **複製/複製**
+>
+>* **複製/複製**
    >  這些技術術語說明資料（例如頁面內容、檔案、程式碼、使用者註解）在某個環境間移動的情形，例如發佈或反向複製使用者註解時。
 >
-
 
 
 >[!NOTE]
@@ -54,7 +51,6 @@ ht-degree: 7%
 >
 
 
-
 ## 發佈頁面 {#publishing-pages-2}
 
 您可以根據您的位置發佈：
@@ -62,7 +58,7 @@ ht-degree: 7%
 * [從頁面編輯器](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [從網站主控台](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
 
-### 從編輯器{#publishing-from-the-editor}發佈
+### 從編輯器發佈 {#publishing-from-the-editor}
 
 如果您正在編輯頁面，則可直接從編輯器發佈頁面。
 
@@ -92,7 +88,11 @@ ht-degree: 7%
 >
 >從編輯器發佈是淺層發佈，亦即只會發佈/發佈選取的頁面/頁面，而不會發佈任何子頁面。
 
-### 從主控台{#publishing-from-the-console}發佈
+>[!NOTE]
+>
+>無法發佈編輯器中由[別名](/help/sites-authoring/editing-page-properties.md#advanced)存取的頁面。 編輯器中的發佈選項僅適用於透過其實際路徑存取的頁面。
+
+### 從主控台發佈 {#publishing-from-the-console}
 
 在網站主控台中，有兩個發佈選項：
 
@@ -208,7 +208,7 @@ ht-degree: 7%
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
-## 取消發佈頁面{#unpublishing-pages}
+## 取消發佈頁面 {#unpublishing-pages}
 
 取消發佈頁面會將其從您的發佈環境中移除，讓讀者無法再使用它。
 
@@ -217,11 +217,15 @@ ht-degree: 7%
 * [從頁面編輯器](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [從網站主控台](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
-### 從編輯器{#unpublishing-from-the-editor}取消發佈
+### 從編輯器取消發佈 {#unpublishing-from-the-editor}
 
 編輯頁面時，如果您想要取消發佈該頁面，請在&#x200B;**頁面資訊**&#x200B;功能表中選取&#x200B;**取消發佈頁面**，就像您要[發佈頁面](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)一樣。
 
-### 從控制台{#unpublishing-from-the-console}取消發佈
+>[!NOTE]
+>
+>編輯器中由[別名](/help/sites-authoring/editing-page-properties.md#advanced)存取的頁面無法取消發佈。 編輯器中的發佈選項僅適用於透過其實際路徑存取的頁面。
+
+### 從主控台取消發佈 {#unpublishing-from-the-console}
 
 就像您[使用「管理出版物」選項來發佈](/help/sites-authoring/publishing-pages.md#manage-publication)一樣，您也可以使用它來取消發佈。
 
@@ -236,7 +240,7 @@ ht-degree: 7%
 
 1. 若要完成取消發佈，請繼續執行精靈，如同發佈頁面[一樣。](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-## 發佈和取消發佈樹{#publishing-and-unpublishing-a-tree}
+## 發佈和取消發佈樹 {#publishing-and-unpublishing-a-tree}
 
 當您輸入或更新相當多的內容頁面時（所有頁面都位於相同的根頁面下），在一個動作中發佈整個樹狀結構會較為容易。
 
@@ -265,7 +269,7 @@ ht-degree: 7%
 
 1. [按正常方式繼續「管](#manage-publication) 理出版物」嚮導以完成樹的發佈或取消發佈。
 
-## 確定發佈狀態{#determining-publication-status}
+## 確定發佈狀態 {#determining-publication-status}
 
 您可以判斷頁面的發佈狀態：
 
