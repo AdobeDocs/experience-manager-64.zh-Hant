@@ -1,24 +1,24 @@
 ---
 title: 如何使用TarMK冷待機執行AEM
-seo-title: 如何使用TarMK冷待機執行AEM
+seo-title: How to Run AEM with TarMK Cold Standby
 description: 了解如何建立、設定和維護TarMK冷備用設定。
-seo-description: 了解如何建立、設定和維護TarMK冷備用設定。
+seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 27fd2b64-8983-40be-910e-1776a16e127c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
-feature: 設定
+feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: e22d12ee2096548e8303521b4c7dac79e7385f49
+source-git-commit: 63367e85f66d7830183403af6ad32ecca9dc8396
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2727'
 ht-degree: 0%
 
 ---
 
-# 如何使用TarMK冷備運行AEM{#how-to-run-aem-with-tarmk-cold-standby}
+# 如何使用TarMK冷待機執行AEM{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## 簡介 {#introduction}
 
@@ -34,7 +34,17 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 >
 >如需更多可用部署的資訊，請參閱[建議部署](/help/sites-deploying/recommended-deploys.md)頁面。
 
-## 其運作方式{#how-it-works}
+>[!NOTE]
+>
+>設定備用實例或從主節點派生出來時，它僅允許訪問以下兩個控制台（用於管理相關活動）:
+>
+>* CRXDE Lite
+>* OSGI Web主控台
+
+>
+>無法存取其他主控台。
+
+## 運作方式 {#how-it-works}
 
 在主AEM實例上，開啟一個TCP埠並監聽傳入的消息。 目前，從伺服器將向主伺服器發送兩種類型的消息：
 
@@ -51,7 +61,7 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-## 其他特性{#other-characteristics}
+## 其他特性 {#other-characteristics}
 
 ### 魯棒性 {#robustness}
 
@@ -73,7 +83,7 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 >
 >建議在作為Coldy待機設定一部分的Dispatcher與伺服器之間新增負載平衡器。 應將負載平衡器配置為僅將用戶通信定向到&#x200B;**primary**&#x200B;實例，以確保一致性，並防止通過Cold Standby機制以外的其他方式在備用實例上複製內容。
 
-## 建立AEM TarMK冷備設定{#creating-an-aem-tarmk-cold-standby-setup}
+## 建立AEM TarMK冷待機設定 {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
@@ -83,8 +93,7 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 >* 來自org.apache.jackrabbit.oak。**plugins**.segment.SegmentNodeStoreService至org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 
 >
->
-請務必進行必要的設定調整，以反映此變更。
+>請務必進行必要的設定調整，以反映此變更。
 
 要建立TarMK冷備用安裝，首先需要通過將主安裝資料夾的整個安裝資料夾執行檔案系統拷貝到新位置來建立備用實例。 然後，您可以以將指定其角色（`primary`或`standby`）的執行模式來啟動每個執行個體。
 
@@ -207,8 +216,7 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 >
 >請前往&#x200B;*http://localhost:4502/system/console/status-slingsettings*&#x200B;並檢查&#x200B;**&quot;Run Modes&quot;**&#x200B;行，即可完成此操作。
 
-
-## 首次同步{#first-time-synchronization}
+## 首次同步 {#first-time-synchronization}
 
 準備完成且首次啟動備用後，當備用接近主伺服器時，執行個體之間會有大量網路流量。 您可以查閱記錄，以觀察同步的狀態。
 
@@ -284,7 +292,7 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 >
 >若要確保涵蓋此範圍，最佳方式是刪除待機上的&#x200B;*sling.id*&#x200B;檔案，然後重新啟動執行個體。
 
-## 故障轉移過程{#failover-procedures}
+## 故障轉移過程 {#failover-procedures}
 
 如果主實例因任何原因而失敗，您可以通過更改啟動運行模式來設定其中一個備用實例以承擔主實例的角色，如下所述：
 
@@ -306,7 +314,7 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 1. 向負載平衡器添加新主。
 1. 建立並啟動新的備用實例。 如需詳細資訊，請參閱上述[建立AEM TarMK冷備用設定](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)的程式。
 
-## 將Hotfix應用於冷備機設定{#applying-hotfixes-to-a-cold-standby-setup}
+## 將Hotfix套用至冷待機設定 {#applying-hotfixes-to-a-cold-standby-setup}
 
 建議將hotfix套用至冷態設定，方法是將它們安裝至主要執行個體，然後將其複製至新的冷態備用執行個體，並安裝hotfix。
 
@@ -359,7 +367,7 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 * `TransferredSegments:` 轉移給此客戶的區段總數。
 * `TransferredSegmentBytes:`傳輸到此客戶端的位元組總數。
 
-## 冷備用儲存庫維護{#cold-standby-repository-maintenance}
+## 冷備用儲存庫維護 {#cold-standby-repository-maintenance}
 
 ### 修訂清除 {#revision-clean}
 
