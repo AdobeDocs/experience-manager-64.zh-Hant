@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: e2ab924b-53cb-4011-8c0a-9e8e59dd2f16
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -37,4 +37,4 @@ Adobe Experience Manager Assets是提供高品質數位行銷體驗的重要一�
 * [[!DNL Experience Manager] 和Creative Cloud整合最](aem-cc-integration-best-practices.md)
 佳實務您可以透過多 [!DNL Experience Manager] 種方式整合部署與Creative Cloud。遵循一些最佳實務來簡化您的整合和資產轉移工作流程，有助於實現最高效率。 本指南包含將[!DNL Experience Manager]資產與Adobe Creative Cloud整合的相關最佳實務。
 * （已廢止）[[!DNL Experience Manager] Creative Cloud資料夾共用最佳實務](aem-cc-folder-sharing-best-practices.md)
-您可以設定[!DNL Experience Manager] ，讓DAM中的使用者與Creative Cloud(CC)使用者共用資料夾，以便在Creative Cloud資產服務中以共用資料夾的形式使用。 此功能可用於創意團隊與DAM使用者之間交換檔案。 本指南說明運用[!DNL Experience Manager]Creative Cloud資料夾共用功能的最佳實務。
+您可以設定[!DNL Experience Manager] ，讓DAM中的使用者與Creative Cloud使用者共用資料夾，以便在Creative Cloud資產服務中以共用資料夾的形式使用。 此功能可用於創意團隊與DAM使用者之間交換檔案。 本指南說明運用[!DNL Experience Manager]Creative Cloud資料夾共用功能的最佳實務。

@@ -10,9 +10,9 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: d750c852b6367d753d18be57c8910bf5671fd5e8
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2751'
 ht-degree: 6%
 
 ---
@@ -107,7 +107,7 @@ UI已經過多種增強功能，讓工作效率更高，使用更輕鬆。
 * [存放庫重新調整](/help/sites-deploying/repository-restructuring.md):大幅重組（主要是/etc），以便更輕鬆地升級並促進實施最佳做法
 * 有關升級的更一般資訊，請參閱[此頁](/help/sites-deploying/upgrade.md)以了解更多詳細資訊。
 
-### Experience Manager網站 {#experience-manager-sites}
+### Experience Manager Sites {#experience-manager-sites}
 
 [AEM Sites和Add-ons](sites.md)中變更的完整清單。
 
@@ -135,7 +135,7 @@ AEM 6.4完成對下一代元件模型的轉換。 AEM 6.3中推出的核心元�
 
 #### Screens附加元件 {#screens-add-on}
 
-AEM Screens代表的是在所有行銷管道（包括數位看板和資訊站網路）中提供一致的訊息。 AEM 6.4新增在Microsoft Windows和Google Chrome OS硬體上執行Signage Player的支援。 此外，還提供了對遠程設備管理和計畫（通道組）的增強功能。
+AEM Screens代表的是在所有行銷管道（包括數位看板和資訊站網路）中提供一致的訊息。 AEM 6.4新增在Microsoft Windows和Google Chrome OS硬體上執行Singgare Player的支援。 此外，還提供了對遠程設備管理和計畫（通道組）的增強功能。
 
 如需Screens更新的詳細資訊，請參閱[AEM Screens使用手冊](https://docs.adobe.com/content/help/zh-Hant/experience-manager-screens/user-guide/aem-screens-introduction.html)。
 
@@ -181,13 +181,13 @@ AEM 6.4 Communities會公開[現成可用的API](/help/communities/user-ugc-mana
 
 ![assignmentcatalog](assets/assignmentcatalog.png)
 
-### Experience Manager資產 {#experience-manager-assets}
+### Experience Manager Assets {#experience-manager-assets}
 
 AEM 6.4為Assets提供數項新功能和增強功能，包括全新、改良的CreativeCloud整合、重要的人工智慧創新、改善的中繼資料管理、報表增強功能，以及整體使用者體驗改善。 [AEM Assets](assets.md)中可用更改的完整清單。 此版本的重點為：
 
 **Adobe資產連結**
 
-AdobeCreative Cloud中的企業資產連結可簡化創意人員與行銷人員在內容建立程式中的協作。 這是Creative Cloud中企業的新原生功能，可將Photoshop CC、Illustrator CC和InDesignCC連接至AEM ，創意人員無需離開其首選工具。
+AdobeCreative Cloud中的企業資產連結可簡化創意人員與行銷人員在內容建立程式中的協作。 這是Creative Cloud中企業的新原生功能，可將Photoshop、Illustrator和InDesign連接至AEM，創意人員無需離開其選擇的工具。
 
 若要深入了解此功能、必要條件及存取方式，請參閱[Adobe資產連結](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html)。
 
@@ -217,7 +217,7 @@ AEM 6.4中的資產報表已進行大幅修改，其中包含新的報表架構�
 
 多項增強功能可改善Assets使用者的瀏覽、搜尋和管理體驗，例如捲動體驗、搜尋返回按鈕、改良的搜尋篩選條件等。 [AEM Assets](assets.md)中可用的完整清單。
 
-**品牌入口網站**
+**Brand Portal**
 
 中繼資料、報表、數位權限、登入體驗和發佈資產發佈效能等領域的各種增強功能。 若要了解新的增強功能，請參閱[AEM Assets Brand Portal的新功能](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
@@ -247,7 +247,7 @@ AEM 6.4包含許多Dynamic Media的新功能和增強功能。 完整清單可�
 
 請參閱[全景影像](/help/assets/panoramic-images.md)檔案以深入了解。
 
-### Experience ManagerForms {#experience-manager-forms}
+### Experience Manager Forms {#experience-manager-forms}
 
 AEM 6.4 Forms提供數項新功能和增強功能。 重點包括：
 
@@ -255,7 +255,7 @@ AEM 6.4 Forms提供數項新功能和增強功能。 重點包括：
 * 從業務應用程式預填互動式通信
 * 工作流程現代化和行動背景工作支援
 * 延遲載入片段
-* 單跳從LiveCycle升級到Experience ManagerForms 6.4
+* 單跳從LiveCycle升級到Experience Manager Forms 6.4
 
 有關[AEM Forms](forms.md)發行說明頁面的更多詳細資訊。 此外，如需新功能和改善功能及檔案資源的相關資訊，請參閱AEM 6.4 Forms的[新功能和增強功能摘要。](/help/forms/using/whats-new.md)
 
@@ -304,11 +304,11 @@ Adobe已制定程式和程式，以收集、排定優先順序及追蹤以客戶
 
 * Adobe Experience Manager案頭應用程式（[閱讀更多內容](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)和[下載](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html)）
 
-* 新增增強PDF模擬轉譯器（[了解詳情](/help/assets/aem-pdf-rasterizer.md)和[download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg)）的套件
+* 新增增強PDF模擬轉譯器([read more](/help/assets/aem-pdf-rasterizer.md) and [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))的套件
 
 * 添加擴展RAW影像支援的包（[了解詳情](/help/assets/camera-raw.md)）
 
-**表單**
+**Forms**
 
 * AEM Forms功能的套件：
 
