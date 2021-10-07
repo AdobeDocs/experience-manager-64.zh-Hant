@@ -1,23 +1,23 @@
 ---
 title: 使用者、群組和存取權限管理
-seo-title: 使用者、群組和存取權限管理
+seo-title: User, Group and Access Rights Administration
 description: 了解AEM中的使用者、群組和存取權限管理。
-feature: 安全性
-seo-description: 了解AEM中的使用者、群組和存取權限管理。
+feature: Security
+seo-description: Learn about user, group and access rights administration in AEM.
 uuid: 30e0d4dc-261d-4dc2-aff7-29179eca1cc2
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 exl-id: 9c14e57b-019e-45ae-9e96-40424fa609c2
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3120'
 ht-degree: 0%
 
 ---
 
-# 用戶、組和訪問權限管理{#user-group-and-access-rights-administration}
+# 使用者、群組和存取權限管理{#user-group-and-access-rights-administration}
 
 啟用對CRX存放庫的存取涉及多個主題：
 
@@ -59,15 +59,15 @@ ht-degree: 0%
 
 CRX可讓您設定使用者和群組帳戶的存取權限。 評估的基本原則隨後適用於這兩者。
 
-## 如何評估訪問權限{#how-access-rights-are-evaluated}
+## 如何評估存取權限 {#how-access-rights-are-evaluated}
 
 >[!NOTE]
 >
->CRX實現了JSR-283](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html)定義的[訪問控制。
+>CRX實現了JSR-283](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)定義的[訪問控制。
 >
 >CRX存放庫的標準安裝設定為使用資源型存取控制清單。 此為JSR-283存取控制的可能實作，以及Jackrabbit隨附的其中一項實作。
 
-### 主體與主體{#subjects-and-principals}
+### 主體與主體 {#subjects-and-principals}
 
 評估存取權限時，CRX使用兩個重要概念：
 
@@ -91,7 +91,7 @@ CRX可讓您設定使用者和群組帳戶的存取權限。 評估的基本原�
       指派給使用者所屬任何群組的所有權利。
    然後，結果將用於允許或拒絕對所請求資源的訪問。
 
-#### 編譯主題{#compiling-the-list-of-access-rights-for-a-subject}的訪問權限清單
+#### 編製主題的訪問權清單 {#compiling-the-list-of-access-rights-for-a-subject}
 
 在CRX中，主體取決於：
 
@@ -114,8 +114,7 @@ CRX可讓您設定使用者和群組帳戶的存取權限。 評估的基本原�
 >
 
 
-
-### 解析請求和訪問權限{#resolving-request-and-access-rights}
+### 解決請求和訪問權限 {#resolving-request-and-access-rights}
 
 CRX處理請求時，會比較來自主旨的存取請求與存放庫節點上的存取控制清單：
 
@@ -123,7 +122,7 @@ CRX處理請求時，會比較來自主旨的存取請求與存放庫節點上�
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
-### 優先順序{#order-of-precedence}
+### 優先順序 {#order-of-precedence}
 
 CRX中的存取權限評估如下：
 
@@ -212,7 +211,7 @@ CRX中的存取權限評估如下：
  </tbody> 
 </table>
 
-## 用戶管理{#user-administration}
+## 使用者管理 {#user-administration}
 
 標準對話框用於&#x200B;**用戶管理**。
 
@@ -226,7 +225,7 @@ CRX中的存取權限評估如下：
 **屬性**
 
 * ****
-帳戶的UserIDShort名稱，用於存取CRX時。
+帳戶的UserIDShort名稱，用於存取CRX。
 
 * **主**
 體名稱帳戶的全文名稱。
@@ -235,7 +234,7 @@ CRX中的存取權限評估如下：
 使用此帳戶存取CRX時需要密碼。
 
 * ****
-ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
+ntlmhash自動為每個新帳戶分配，並在更改密碼時更新。
 
 * 您可以定義名稱、類型和值，以新增屬性。 按一下每個新屬性的「儲存」（綠色勾號）。
 
@@ -251,13 +250,13 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 
 如果帳戶模擬另一個帳戶，就很難看到。 日誌檔案不包含有關事件上發生了模擬的事實的資訊。 因此，如果使用者B模擬使用者A，則所有事件看起來都像是由使用者A個人執行。
 
-### 建立用戶帳戶{#creating-a-user-account}
+### 建立使用者帳戶 {#creating-a-user-account}
 
 1. 開啟&#x200B;**User Administration**&#x200B;對話框。
 1. 按一下「**建立用戶**」。
 1. 然後，您可以輸入「屬性」：
 
-   * **** 帳戶名稱為的UserID。
+   * **** UserID作為帳戶名稱。
    * **** 登入時需要密碼。
    * **Principal** Name（主體名稱），提供全文名稱。
    * **中** 間路徑，可用於形成樹結構。
@@ -279,8 +278,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 >
 
 
-
-### 更新用戶帳戶{#updating-a-user-account}
+### 更新使用者帳戶 {#updating-a-user-account}
 
 1. 使用&#x200B;**User Administration**&#x200B;對話框開啟所有帳戶的清單視圖。
 
@@ -289,7 +287,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 1. 進行更改，然後按一下該條目的「保存」（綠色勾號）。
 1. 按一下&#x200B;**關閉**&#x200B;以完成，或按一下&#x200B;**清單……**&#x200B;以返回所有用戶帳戶的清單。
 
-### 刪除用戶帳戶{#removing-a-user-account}
+### 移除使用者帳戶 {#removing-a-user-account}
 
 1. 使用&#x200B;**User Administration**&#x200B;對話框開啟所有帳戶的清單視圖。
 
@@ -302,7 +300,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 >
 >未移除存取權限項目。 這確保了歷史的完整性。
 
-### 定義屬性{#defining-properties}
+### 定義屬性 {#defining-properties}
 
 您可以為新帳戶或現有帳戶定義&#x200B;**屬性**:
 
@@ -316,13 +314,13 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 
 除了「密碼」之外，無法編輯屬性，必須刪除並重新建立屬性。
 
-#### 更改密碼{#changing-the-password}
+#### 更改密碼 {#changing-the-password}
 
 **Password**&#x200B;是一種特殊屬性，可通過按一下&#x200B;**Change Password**&#x200B;連結進行更改。
 
 您也可以從CRX Explorer的&#x200B;**Security**&#x200B;功能表變更自己使用者帳戶的密碼。
 
-### 定義模擬器{#defining-an-impersonator}
+### 定義模擬器 {#defining-an-impersonator}
 
 您可以為新帳戶或現有帳戶定義「模擬」：
 
@@ -333,7 +331,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 
 1. 按一下新屬性的「保存」（綠色勾號）。
 
-## 組管理{#group-administration}
+## 群組管理 {#group-administration}
 
 標準對話框用於&#x200B;**組管理**。
 
@@ -368,7 +366,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 >
 >將「擁有者」、「編輯者」或「檢視者」角色指派給任何資產資料夾上的使用者時，系統就會建立新群組。 對於定義角色的每個資料夾，組名的格式為`mac-default-<foldername>`。
 
-### 建立組帳戶{#creating-a-group-account}
+### 建立群組帳戶 {#creating-a-group-account}
 
 1. 開啟&#x200B;**組管理**&#x200B;對話框。
 1. 按一下「**建立組**」。
@@ -384,7 +382,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
    1. 請參閱&#x200B;**群組成員資格**。
    1. 管理&#x200B;**成員**。
 
-### 更新組帳戶{#updating-a-group-account}
+### 更新群組帳戶 {#updating-a-group-account}
 
 1. 使用&#x200B;**組管理**&#x200B;對話框開啟所有帳戶的清單視圖。
 
@@ -393,7 +391,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 1. 進行更改，然後按一下該條目的「保存」（綠色勾號）。
 1. 按一下&#x200B;**關閉**&#x200B;以完成，或按一下&#x200B;**清單……**&#x200B;以返回所有組帳戶的清單。
 
-### 刪除組帳戶{#removing-a-group-account}
+### 移除群組帳戶 {#removing-a-group-account}
 
 1. 使用&#x200B;**組管理**&#x200B;對話框開啟所有帳戶的清單視圖。
 
@@ -406,7 +404,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 >
 >未移除存取權限項目。 這確保了歷史的完整性。
 
-### 定義屬性{#defining-properties-1}
+### 定義屬性 {#defining-properties-1}
 
 您可以為新帳戶或現有帳戶定義屬性：
 
@@ -432,7 +430,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 
 或刪除具有垃圾桶符號的現有成員。
 
-## 訪問權限管理{#access-right-management}
+## 訪問權限管理 {#access-right-management}
 
 使用CRXDE Lite的&#x200B;**訪問控制**&#x200B;頁簽，您可以定義訪問控制策略並分配相關權限。
 
@@ -455,7 +453,7 @@ ntlmhash自動為每個新帳戶分配並在更改密碼時更新。
 * **有效的訪**
 問控制策略這些是現在對任何訪問請求生效的訪問控制策略。它們顯示從本地策略和從父項繼承的任何策略派生的聚合策略。
 
-### 策略選擇{#policy-selection}
+### 策略選擇 {#policy-selection}
 
 可以為以下項選擇策略：
 
@@ -471,7 +469,7 @@ Principal（主體）在儲存庫中註冊的主體。
 
    您可以鍵入&#x200B;**主體**&#x200B;名稱，或按一下欄位右側的表徵圖以開啟&#x200B;**選擇主體**&#x200B;對話框。
 
-   這可讓您&#x200B;**搜尋**&#x200B;以尋找&#x200B;**使用者**&#x200B;或&#x200B;**群組**。 從結果清單中選擇所需的主體，然後按一下&#x200B;**OK**&#x200B;將值帶回上一個對話框。
+   這可讓您&#x200B;**搜尋****使用者**&#x200B;或&#x200B;**群組**。 從結果清單中選擇所需的主體，然後按一下&#x200B;**OK**&#x200B;將值帶回上一個對話框。
 
 ![crx_accesscontrol_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
@@ -578,7 +576,7 @@ Principal（主體）在儲存庫中註冊的主體。
  </tbody> 
 </table>
 
-### 註冊新權限{#registering-new-privileges}
+### 註冊新權限 {#registering-new-privileges}
 
 您也可以註冊新權限：
 
@@ -592,7 +590,7 @@ Principal（主體）在儲存庫中註冊的主體。
 
 1. 按一下&#x200B;**OK**&#x200B;以儲存。 該權限現在可供選擇。
 
-### 添加訪問控制項{#adding-an-access-control-entry}
+### 添加訪問控制項 {#adding-an-access-control-entry}
 
 1. 選擇您的資源並開啟&#x200B;**Access Control**&#x200B;頁簽。
 
@@ -621,7 +619,7 @@ Principal（主體）在儲存庫中註冊的主體。
 
 CRX將驗證您的選擇；對於給定的主體，給定節點上存在（最多）1個拒絕和1個允許進入。 實施一律會清除多餘的項目，並確保允許和拒絕項目中不會列出相同的權限。
 
-### 訂購本地訪問控制策略{#ordering-local-access-control-policies}
+### 訂購本地訪問控制策略 {#ordering-local-access-control-policies}
 
 清單中的順序指示應用策略的順序。
 
@@ -631,13 +629,13 @@ CRX將驗證您的選擇；對於給定的主體，給定節點上存在（最�
 
 1. **Local**&#x200B;和&#x200B;**有效訪問控制策略**&#x200B;的表中將顯示更改。
 
-### 刪除訪問控制策略{#removing-an-access-control-policy}
+### 刪除訪問控制策略 {#removing-an-access-control-policy}
 
 1. 在&#x200B;**本地訪問控制策略**&#x200B;的表中，按一下條目右側的紅色表徵圖(-)。
 
 1. 該條目將從&#x200B;**Local**&#x200B;和&#x200B;**有效訪問控制策略**&#x200B;的表中刪除。
 
-### 測試訪問控制策略{#testing-an-access-control-policy}
+### 測試訪問控制策略 {#testing-an-access-control-policy}
 
 1. 從CRXDE Lite工具欄中，選擇&#x200B;**工具**，然後選擇&#x200B;**測試訪問控制……**。
 

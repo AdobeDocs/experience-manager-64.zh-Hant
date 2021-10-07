@@ -1,8 +1,8 @@
 ---
 title: 查詢產生器述詞參考
-seo-title: 查詢產生器述詞參考
+seo-title: Query Builder Predicate Reference
 description: 查詢產生器API的完整述詞參考。
-seo-description: 查詢產生器API的完整述詞參考。
+seo-description: Complete predicate reference for the Query Builder API.
 uuid: af0e269e-7d52-4032-b22e-801c7b5dccfa
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 2bcc2be9-1e8a-44b5-add2-370b9ff80de8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
 workflow-type: tm+mt
-source-wordcount: '2323'
+source-wordcount: '2310'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ boolproperty相對屬性路徑，例如
 `myFeatureEnabled` 或 `jcr:content/myFeatureEnabled`
 
 * ****
-要檢查屬性的值， &quot; 
+要檢查屬性的值，為&quot; 
 `true`&quot; 或 &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
@@ -221,7 +221,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-將結果限制為當前會話具有指定[JCR權限的項目。](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+將結果限制為當前會話具有指定[JCR權限](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)的項目。
 
 這是僅限篩選的謂語，無法使用搜尋索引。 不支援小面擷取。
 
@@ -455,7 +455,7 @@ group.2_group.type=dam:Asset
 
 * **p.guessTotal**
 
-   建議：避免計算全部結果總計，而這可能會造成很大成本；指示最大總計的數字（例如1000，該數字為用戶提供了對粗大和精確數字的足夠反饋，使結果更小）或「 `true`」，以僅計算最小所需的`p.offset` + `p.limit`
+   建議：避免計算全部結果總計，而這可能會造成很大成本；指示最大總計的數字（例如1000，該數字為用戶提供了對粗大和精確數字的足夠反饋，以便小結果）或&quot; `true`&quot;以僅計算最小所需的`p.offset` + `p.limit`
 
 * **p.expert**
 
@@ -502,7 +502,7 @@ group.2_group.type=dam:Asset
 #### 屬性 {#properties-20}
 
 * ****
-要查找相似節點的節點的相似絕對路徑
+相似絕對路徑到要查找相似節點的節點
 
 * ****
 指向子代節點或 
