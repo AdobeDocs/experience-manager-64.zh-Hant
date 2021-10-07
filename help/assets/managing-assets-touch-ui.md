@@ -6,7 +6,7 @@ mini-toc-levels: 1
 feature: Asset Management,Search,Renditions,Collaboration
 role: User
 exl-id: aa1a702b-18dd-496b-a6e0-aa593af6e57c
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '10078'
 ht-degree: 2%
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ## 上傳資產 {#uploading-assets}
 
-您可以從本機資料夾或網路磁碟將各種類型的資產（包括影像、PDF檔案、RAW檔案等）上傳至[!DNL Experience Manager]資產。
+您可以從本機資料夾或網路磁碟將各種類型的資產(包括影像、PDF檔案、RAW檔案等)上傳至[!DNL Experience Manager]資產。
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ ht-degree: 2%
 
    ![create_menu](assets/create_menu.png)
 
-   若要選取多個檔案，請按Ctrl/Command鍵，然後在檔案選取器對話方塊中選取資產。 在iPad中，一次只能選取一個檔案。
+   若要選取多個檔案，請按Ctrl/Command鍵，然後在檔案選取器對話方塊中選取資產。 從iPad中，一次只能選取一個檔案。
 
    您可以暫停上傳大型資產（大於500 MB），稍後從同一頁繼續。 點選上傳開始時顯示的進度列旁的&#x200B;**[!UICONTROL 暫停]**&#x200B;圖示。
 
@@ -145,14 +145,14 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 
 >[!NOTE]
 >
->若要在[!DNL Experience Manager]作者上透過Dynamic Media - Scene7模式安裝Feature Pack(FP)18912中的FTP上傳資產。 請連絡Adobe客戶服務以存取FP-18912並完成FTP帳戶的設定。 請參閱[安裝Feature Pack 18912以移轉大量資產](/help/assets/bulk-ingest-migrate.md)。
+>若要在[!DNL Experience Manager]作者上透過Dynamic Media - Scene7模式安裝Feature Pack(FP)18912中的FTP上傳資產。 請連絡Adobe客戶支援以存取FP-18912，並完成FTP帳戶的設定。 請參閱[安裝Feature Pack 18912以移轉大量資產](/help/assets/bulk-ingest-migrate.md)。
 >
 >如果您使用FTP上傳資產，則會忽略[!DNL Experience Manager]中指定的上傳設定。 系統會改用Dynamic Media Classic中定義的檔案處理規則。
 
 **使用FTP上傳資產**
 
 1. 使用您選擇的FTP用戶端，使用您從布建電子郵件收到的FTP使用者名稱和密碼登入FTP伺服器。 在FTP用戶端中，將檔案或資料夾上傳至FTP伺服器。
-1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後使用從布建電子郵件接收的憑證登入您的帳戶。
+1. 開啟[Dynamic Media Classic案頭應用程式](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然後使用從設定電子郵件接收的憑證登入您的帳戶。
 1. 在全域導覽列上，點選&#x200B;**[!UICONTROL Upload]**。
 1. 在&#x200B;**[!UICONTROL Upload]**&#x200B;頁面左上角附近，點選&#x200B;**[!UICONTROL Via FTP]**&#x200B;標籤。
 1. 在頁面左側，選擇要上傳檔案的FTP資料夾；在頁面的右側，選擇目標資料夾。
@@ -162,7 +162,7 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 
    >[!NOTE]
    >
-   >當您透過FTP上傳資產時，您在Dynamic Media Classic中設定的上傳工作選項，會取代AEM中設定的資產處理參數。
+   >當您透過FTP上傳資產時，您在Dynamic Media Classic中設定的上傳工作選項會取代AEM中設定的資產處理參數。
 
 1. 在「**[!UICONTROL 上傳工作選項]**」對話方塊的右下角，點選「**[!UICONTROL 儲存]**」。
 1. 在&#x200B;**[!UICONTROL Upload]**&#x200B;頁面的右下角，點選&#x200B;**[!UICONTROL Submit Upload]**。
@@ -187,14 +187,14 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 |  | 影像編輯選項 | 可以保留影像中的剪裁蒙版，並選擇顏色輪廓。<br> 請參閱 [在上傳時設定影像編輯選項](#setting-image-editing-options-at-upload)。 |
 |  | Postscript選項 | 您可以柵格化PostScript®檔案、裁切檔案、維護透明背景、選擇解析度，以及選擇顏色空間。<br> 請參 [閱設定PostScript和Illustrator上傳選項](#setting-postscript-and-illustrator-upload-options)。 |
 |  | Photoshop選項 | 您可以從Adobe® Photoshop®檔案建立範本、維護圖層、指定圖層的命名方式、擷取文字，以及指定如何將影像錨定到範本中。<br> 請注意，AEM不支援範本。<br> 請參 [閱設定Photoshop上傳選項](#setting-photoshop-upload-options)。 |
-|  | PDF選項 | 您可以柵格化檔案、提取搜索詞和連結、自動生成eCatalog、設定解析度，以及選擇顏色空間。<br> 請注意，AEM不支援eCatalog。<br> 請參 [閱設定PDF上傳選項](#setting-pdf-upload-options)。 |
+|  | PDF選項 | 您可以柵格化檔案、提取搜索詞和連結、自動生成eCatalog、設定解析度，以及選擇顏色空間。<br> 請注意，AEM不支援eCatalog。<br> 請參閱 [設定PDF上傳選項](#setting-pdf-upload-options)。 |
 |  | Illustrator選項 | 您可以柵格化Adobe Illustrator®檔案、維護透明背景、選擇解析度，以及選擇顏色空間。<br> 請參 [閱設定PostScript和Illustrator上傳選項](#setting-postscript-and-illustrator-upload-options)。 |
 |  | 視訊選項 | 您可以選擇「視訊預設集」來轉換視訊檔案的程式碼。<br> 請參 [閱設定eVideo上傳選項](#setting-evideo-upload-options)。 |
-|  | 批次集預設集 | 若要從上傳的檔案建立影像集或回轉集，請按一下您要使用之預設集的「作用中」欄。 您可以選取多個預設集。 您可以在Dynamic Media Classic的「應用程式設定/批次集預設集」頁面中建立預設集。<br> 請參 [閱設定批次集預設集以自動產生影像集和回轉](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 集，深入了解如何建立批次集預設集。<br> 請參閱 [在上傳時設定批次集預設集](#setting-batch-set-presets-at-upload)。 |
+|  | 批次集預設集 | 若要從上傳的檔案建立影像集或回轉集，請按一下您要使用之預設集的「作用中」欄。 您可以選取多個預設集。 在Dynamic Media Classic的「應用程式設定/批集預設集」頁面中建立預設集。<br> 請參 [閱設定批次集預設集以自動產生影像集和回轉](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) 集，深入了解如何建立批次集預設集。<br> 請參閱 [在上傳時設定批次集預設集](#setting-batch-set-presets-at-upload)。 |
 
 #### 在上傳時設定影像編輯選項 {#setting-image-editing-options-at-upload}
 
-上載影像檔案（包括AI、EPS和PSD檔案）時，可以在&#x200B;**[!UICONTROL 上載作業選項]**&#x200B;對話框中執行以下編輯操作：
+上傳影像檔案(包括AI、EPS和PSD檔案)時，您可以在&#x200B;**[!UICONTROL 上傳工作選項]**&#x200B;對話方塊中執行下列編輯動作：
 
 * 從影像邊緣裁切空白字元（請參閱上表說明）。
 * 從影像的側面手動裁切（請參閱上表中的說明）。
@@ -227,15 +227,15 @@ Dynamic Media可透過FTP伺服器批次上傳資產。 如果您要上傳大型
 | 解析度 |  | 確定解析度設定。 此設定決定檔案中每英吋顯示的像素數。 |
 | 色彩空間 |  | 選擇「顏色空間」菜單，然後從以下顏色空間選項中選擇： |
 |  | 自動檢測 | 保留檔案的顏色空間。 |
-|  | 強制為RGB | 轉換為RGB色域。 |
+|  | 強制為RGB | 轉換為RGB顏色空間。 |
 |  | 強制為CMYK | 轉換為CMYK顏色空間。 |
 |  | 強制為灰度 | 轉換為灰度顏色空間。 |
 
 #### 設定Photoshop上傳選項 {#setting-photoshop-upload-options}
 
-PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時，可以從檔案自動建立影像模板（在「上載」螢幕上選擇「建立模板」選項）。
+PSD(Photoshop檔案)檔案最常用於建立影像範本。 上傳PSD檔案時，可以從檔案自動建立影像範本（在「上傳」畫面上選取「建立範本」選項）。
 
-如果您使用檔案建立模板，Dynamic Media會從PSD檔案中建立多個含圖層的影像；它會為每個圖層建立一個影像。
+如果您使用檔案建立範本，Dynamic Media會從含圖層的PSD檔案建立多個影像；它會為每個圖層建立一個影像。
 
 使用上述的&#x200B;**[!UICONTROL 裁切選項]**&#x200B;和&#x200B;**[!UICONTROL 顏色設定檔選項]**，搭配Photoshop上傳選項。
 
@@ -245,19 +245,19 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
 | 選項 | 子選項 | 說明 |
 |---|---|---|
-| 維護圖層 |  | 將PSD中的圖層（如果有的話）分割為個別資產。 資產層仍與PSD相關聯。 通過在「詳細資訊」視圖中開啟PSD檔案並選取圖層面板，可以查看它們。 |
+| 維護圖層 |  | 將PSD中的圖層（如果有的話）分割為個別資產。 資產層仍與PSD相關聯。 您可以在「詳細資訊」視圖中開啟PSD檔案並選取圖層面板來查看它們。 |
 | 建立範本 |  | 從PSD檔案中的圖層建立模板。 |
 | 擷取文字 |  | 擷取文字，讓使用者能在檢視器中搜尋文字。 |
 | 延伸圖層以符合背景大小 |  | 將撕開的影像層的大小擴展到背景層的大小。 |
-| 圖層命名 |  | PSD檔案中的圖層將作為單獨的影像上載。 |
-|  | 圖層名稱 | 在影像在PSD檔案中的圖層名稱之後命名影像。 例如，原始PSD檔案中名為「價格標籤」的圖層會變成名為「價格標籤」的影像。 但是，如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱（背景、第1層、第2層等），則影像的名稱是以PSD檔案中的圖層編號而非預設圖層名稱來命名。 |
+| 圖層命名 |  | PSD檔案中的圖層會上傳為個別影像。 |
+|  | 圖層名稱 | 在影像的圖層名稱后面命名PSD檔案。 例如，原始PSD檔案中名為「價格標籤」的圖層會變成名為「價格標籤」的影像。 但是，如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱（背景、第1層、第2層等），則影像的名稱將以其PSD檔案中的圖層編號而非預設圖層名稱命名。 |
 |  | Photoshop和圖層編號 | 在PSD檔案中的圖層編號後命名影像，忽略原始圖層名稱。 影像的名稱為Photoshop檔案名稱及附加的圖層編號。 例如，名為Spring Ad.psd的檔案的第二層名為Spring Ad_2，即使它在Photoshop中具有非預設名稱亦然。 |
 |  | Photoshop和圖層名稱 | 在PSD檔案後面命名影像，後面跟圖層名稱或圖層編號。 如果PSD檔案中的圖層名稱是預設的Photoshop圖層名稱，則使用圖層號。 例如，在名為SpringAd的PSD檔案中，名為Price Tag的層名為Spring Ad_Price Tag。 預設名為Layer 2的層稱為Spring Ad_2。 |
-| 錨點 |  | 指定如何將影像錨定到從PSD檔案生成的分層合成生成的模板中。 預設情況下，錨點為中心。 中心錨點允許替換影像最好地填充相同的空間，而不管替換影像的長寬比如何。 當參考範本並使用參數替代時，具有替代此影像的不同方面的影像會有效佔據相同的空間。 如果您的應用程式需要替換影像以填充模板中已分配的空間，請更改為其他設定。 |
+| 錨點 |  | 指定如何將影像錨定在從PSD檔案生成的分層合成生成的模板中。 預設情況下，錨點為中心。 中心錨點允許替換影像最好地填充相同的空間，而不管替換影像的長寬比如何。 當參考範本並使用參數替代時，具有替代此影像的不同方面的影像會有效佔據相同的空間。 如果您的應用程式需要替換影像以填充模板中已分配的空間，請更改為其他設定。 |
 
 #### 設定PDF上傳選項 {#setting-pdf-upload-options}
 
-上傳PDF檔案時，可以以多種方式格式化它。 您可以裁切其頁面、擷取搜尋字詞、輸入每英吋像素的解析度，然後選擇顏色空間。 PDF檔案通常包含修剪邊界、裁切標籤、註冊標籤和其他打印機標籤。 上傳PDF檔案時，您可以從頁面兩側裁切這些標籤。
+上傳PDF檔案時，可以以多種方式格式化該檔案。 您可以裁切其頁面、擷取搜尋字詞、輸入每英吋像素的解析度，然後選擇顏色空間。 PDF檔案通常包含修剪邊界、裁切標籤、註冊標籤和其他打印機標籤。 上傳PDF檔案時，您可以從頁面的兩側裁切這些標籤。
 
 >[!NOTE]
 >
@@ -268,13 +268,13 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 | 選項 | 子選項 | 說明 |
 |---|---|---|
 | 處理 | 光柵化 | （預設）拆分PDF檔案中的頁面，並將向量圖形轉換為點陣圖影像。 選擇此選項可建立eCatalog。 |
-| 提取 | 搜尋字詞 | 從PDF檔案中擷取字詞，以便在eCatalog檢視器中按關鍵字搜尋檔案。 |
+| 提取 | 搜尋字詞 | 從PDF檔案中擷取字詞，以便在eCatalog檢視器中依關鍵字搜尋檔案。 |
 |  | 連結 | 從PDF檔案中擷取連結，並將其轉換為eCatalog檢視器中使用的影像地圖。 |
-| 從多頁PDF自動產生eCatalog |  | 從PDF檔案自動建立eCatalog。 eCatalog以您上傳的PDF檔案命名。 （只有在上傳PDF檔案時柵格化該檔案時，才可使用此選項。） |
-| 解析度 |  | 確定解析度設定。 此設定決定PDF檔案中每英吋顯示的像素數。 預設為150。 |
-| 色彩空間 |  | 選擇「顏色空間」菜單，並為PDF檔案選擇一個顏色空間。 大多數PDF檔案都有RGB和CMYK顏色影像。 RGB色域更適合線上檢視。 |
-|  | 自動偵測 | 保留PDF檔案的顏色空間。 |
-|  | 強制為 RGB | 轉換為RGB色域。 |
+| 從多個頁面自動產生eCatalogPDF |  | 從PDF檔案自動建立eCatalog。 eCatalog會以您上傳的PDF檔案命名。 (只有在上傳PDF檔案時柵格化該檔案時，才可使用此選項。) |
+| 解析度 |  | 確定解析度設定。 此設定決定每英吋顯示的PDF檔案像素數。 預設為150。 |
+| 色彩空間 |  | 選擇「顏色空間」菜單，然後為PDF檔案選擇顏色空間。 大多數PDF檔案都有RGB和CMYK顏色影像。 線上檢視較偏好RGB色域。 |
+|  | 自動偵測 | 保留PDF檔案的色域。 |
+|  | 強制為 RGB | 轉換為RGB顏色空間。 |
 |  | 強制為 CMYK | 轉換為CMYK顏色空間。 |
 |  | 強制為灰階 | 轉換為灰度顏色空間。 |
 
@@ -287,8 +287,8 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 | 適應性影片 |  | 單一編碼預設集可搭配任何外觀比例來建立視訊，以傳送至行動裝置、平板電腦和桌上型電腦。 使用此預設集編碼的已上傳來源影片會以固定高度設定。 不過，寬度會自動縮放以保留視訊的外觀比例。 <br>最佳實務是使用最適化視訊編碼。 |
 | 單一編碼預設集 | 排序編碼預設集 | 選取「名稱」或「大小」 ，依名稱或解析度大小，排序「案頭」、「行動裝置」和「平板電腦」底下列出的編碼預設集。 |
 |  | 桌面 | 建立MP4檔案，以向台式電腦提供流式或漸進式視頻體驗。選擇一個或多個寬高比，其解析度大小和目標資料速率符合您的要求。 |
-|  | 行動 | 建立MP4檔案，以便在iPhone或Android行動裝置上傳送。選取一或多個外觀比例，其解析度大小和目標資料速率為您所需的。 |
-|  | 平板電腦 | 建立MP4檔案，以便在iPad或Android平板電腦裝置上傳送。選取一或多個外觀比例，其解析度大小和目標資料速率為您所需的。 |
+|  | 行動 | 建立MP4檔案，以便在iPhone或Android行動裝置上傳送。選取一或多個長寬比，其中包含您想要的解析度大小和目標資料速率。 |
+|  | 平板電腦 | 建立MP4檔案，以便在iPad或Android平板電腦裝置上傳送。選取一或多個外觀比例，其中包含所需的解析度大小和目標資料速率。 |
 
 #### 在上傳時設定批次集預設集 {#setting-batch-set-presets-at-upload}
 
@@ -554,7 +554,7 @@ PSD(Photoshop檔案)檔案最常用於建立影像範本。 上載PSD檔案時�
 
 1. 在確認對話方塊中，點選：
 
-   * **** 取消操作
+   * **** 取消停止操作
    * **** 刪除以根據下列項目確認動作：
 
       * 如果資產沒有參考，則會刪除資產。
@@ -643,7 +643,7 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 ![select_quick_action](assets/select_quick_action.png)
 
-在清單檢視中，將滑鼠圖示暫留在縮圖上方的清單中資產/資料夾名稱之前時，會顯示&#x200B;**[!UICONTROL Select]**。
+在清單檢視中，當您將滑鼠圖示暫留在縮圖上方，且位於清單中資產/資料夾的名稱之前時，會顯示&#x200B;**[!UICONTROL Select]**。
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
@@ -715,7 +715,7 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 在[集合控制台](managing-collections-touch-ui.md#navigating-the-collections-console)中， **[!UICONTROL 全部顯示]**&#x200B;清單提供僅查看注釋和工作流的選項。 此外，時間軸只會針對控制台中列出的頂層集合顯示。 如果您導覽至任何系列內，畫面不會顯示。
 
-**** 時間連結包含 [數個內容片段專用的選項](content-fragments-managing.md#timeline-for-content-fragments);此功能需 [[!DNL Experience Manager] 要6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md) 或更新版本。
+**** 時間點包含 [數個內容片段專用的選項](content-fragments-managing.md#timeline-for-content-fragments);此功能需 [[!DNL Experience Manager] 要6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md) 或更新版本。
 
 **要使用時間軸**:
 
@@ -750,7 +750,7 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
    * [快速動作](managing-assets-touch-ui.md#quick-actions)
    * 選取資產或導覽至資產頁面後，從工具列
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. 在時間軸底部的 **[!UICONTROL 「注釋]** 」方塊中新增注釋。或者，在影像上標籤一個區域，並在&#x200B;**[!UICONTROL Add Annotation]**&#x200B;對話框中添加註釋。
 
@@ -787,7 +787,7 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 >
 >如果選擇多個注釋，則最新的注釋將顯示在用戶介面上。
 >
->只有以PDF列印註解的資產時，才支援多選。
+>僅支援多選，以便將註解的資產列印為PDF。
 
 1. 若要檢視資產的已儲存註解，請導覽至資產位置，並開啟資產的資產頁面。
 
@@ -807,15 +807,15 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
 ### 打印注釋 {#printing-annotations}
 
-如果資產有註解或已經受審核工作流程，您可以將資產連同註解和審核狀態列為PDF檔案，以便離線審核。
+如果資產有註解，或已經受審核工作流，則您可以將資產連同注釋和審核狀態打印為PDF檔案，以便離線審核。
 
 您也可以選擇僅打印注釋或查看狀態。
 
 >[!NOTE]
 >
->在以PDF列印註解的資產時，您可以選取多個註解。
+>您可以在將已註解的資產列印為PDF時選取多個註解。
 
-長注釋可能無法在PDF檔案中正確顯示。 為獲得最佳的轉譯效果，Adobe建議您將註解限制為50個字。
+長注釋可能無法在PDF檔案中正確呈現。 為獲得最佳的轉譯效果，Adobe建議您將註解限制為50個字。
 
 要打印注釋和審閱狀態，請點選&#x200B;**[!UICONTROL Print]**&#x200B;表徵圖，然後按照嚮導中的說明操作。 只有當資產至少為其分配了一個批注或審閱狀態時，**[!UICONTROL 打印]**&#x200B;表徵圖才會出現在工具欄中。
 
@@ -837,13 +837,13 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-1. 從&#x200B;**[!UICONTROL 打印]**&#x200B;對話框中，選擇要在PDF上顯示注釋或審閱狀態的位置。 例如，如果希望在包含打印影像的頁面的右上角打印注釋或狀態，請使用&#x200B;**[!UICONTROL 左上角]**（預設）設定。
+1. 從&#x200B;**[!UICONTROL 打印]**&#x200B;對話框中，選擇要在PDF上顯示注釋或查看狀態的位置。 例如，如果希望在包含打印影像的頁面的右上角打印注釋或狀態，請使用&#x200B;**[!UICONTROL 左上角]**（預設）設定。
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
-   您可以根據要在打印的PDF中顯示注釋或狀態的位置選擇其他設定。 如果希望注釋或狀態顯示在與打印資產不同的頁面中，請選擇&#x200B;**[!UICONTROL 下一頁]**。
+   您可以根據要在打印PDF中顯示注釋或狀態的位置選擇其他設定。 如果希望注釋或狀態顯示在與打印資產不同的頁面中，請選擇&#x200B;**[!UICONTROL 下一頁]**。
 
-1. 點選&#x200B;**[!UICONTROL 列印]**。 根據您在步驟2中選擇的選項，生成的PDF在指定位置顯示注釋或狀態。 例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **** ，則生成的輸出類似於此處所示的PDF檔案。
+1. 點選&#x200B;**[!UICONTROL 列印]**。 根據您在步驟2中選擇的選項，產生的PDF會在指定位置顯示註解或狀態。 例如，如果您選擇使用左上角設定打印注釋和審閱狀態 **** ，則生成的輸出類似於此處所示的PDF檔案。
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -855,22 +855,22 @@ CUG是限制存取資產的額外方式。 您也可以為資料夾設定登入�
    >
    >如果資產有子資產，您可以列印所有子資產及其特定的頁面註解。
 
-   要修改所呈現PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從&#x200B;**[!UICONTROL Configuration Manager]**&#x200B;開啟&#x200B;**[!UICONTROL 注釋PDF配置]**，並修改所需的選項。 例如，若要變更已核准狀態的顯示顏色，請修改對應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參閱[批注](managing-assets-touch-ui.md#annotating)。
+   要修改呈現的PDF檔案的外觀，例如注釋和狀態的字型顏色、大小和樣式、背景顏色，請從&#x200B;**[!UICONTROL Configuration Manager]**&#x200B;開啟&#x200B;**[!UICONTROL 注釋PDF配置]**，並修改所需的選項。 例如，若要變更已核准狀態的顯示顏色，請修改對應欄位中的顏色代碼。 有關更改批注的字型顏色的資訊，請參閱[批注](managing-assets-touch-ui.md#annotating)。
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-   返回轉譯的PDF檔案並重新整理。 重新整理的PDF會反映您所做的變更。
+   返回呈現的PDF檔案並重新整理。 重新整理的PDF會反映您所做的變更。
 
 **要打印外文注釋**:如果資產包含外文（尤其是非拉丁語）的註解，您必須先在伺服器上設定CQ-DAM-Handler-Gibson字型管理器服務， [!DNL Experience Manager] 才能列印這些註解。在配置CQ-DAM-Handler-Gibson字型管理器服務時，提供所需語言字型的位置路徑。
 
 1. 從URL [https://&lt;server>開啟&#x200B;**[!UICONTROL CQ-DAM-Handler-Gibson字型管理器服務]**&#x200B;配置頁：&lt;port>/system/console/configMgr/com.day.cq.dam.handler.fontmanager.impl.FontManager服務Impl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl)。
 1. 要配置&#x200B;**[!UICONTROL CQ-DAM-Handler-Gibson字型管理器服務]**，請執行以下操作之一：
 
-   * 在&#x200B;**[!UICONTROL 系統字型]**&#x200B;目錄選項中，指定系統上字型目錄的完整路徑。 例如，如果您是Mac用戶，則可以在&#x200B;**[!UICONTROL System Fonts]**&#x200B;目錄選項中將路徑指定為`/Library/Fonts`。 [!DNL Experience Manager] 從此目錄中讀取字型。
+   * 在&#x200B;**[!UICONTROL 系統字型]**&#x200B;目錄選項中，指定系統上字型目錄的完整路徑。 例如，如果您是Mac用戶，可以在&#x200B;**[!UICONTROL System Fonts]**&#x200B;目錄選項中將路徑指定為`/Library/Fonts`。 [!DNL Experience Manager] 從此目錄中讀取字型。
    * 在&#x200B;**[!UICONTROL crx-quickstart]**&#x200B;資料夾內建立名為&#x200B;**fonts**&#x200B;的目錄。 **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** 會自動在位置擷取字 `crx-quickstart/fonts`型。您可以從&#x200B;**[!UICONTROL Adobe伺服器字型]**&#x200B;目錄選項內覆蓋此預設路徑。
    * 在系統中為字型建立新資料夾，並將所需的字型儲存在資料夾中。 然後，在&#x200B;**[!UICONTROL Customer Fonts]**&#x200B;目錄選項中指定該資料夾的完整路徑。
 
-1. 從URL [https://&lt;server>存取&#x200B;**[!UICONTROL Annotation PDF]**&#x200B;配置：&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig)。
+1. 從URL [https://&lt;server>存取&#x200B;**[!UICONTROL AnnotationPDF]**&#x200B;配置：&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig)。
 1. 使用正確的字型系列集配置&#x200B;**[!UICONTROL 注釋PDF]**，如下所示：
 
    * 在font-family選項中包含字串`<font_family_name_of_custom_font, sans-serif>`。 例如，如果要以CJK（中文、日文和韓文）打印注釋，請在字型系列選項中包含字串`Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`。 如果要以印地語打印注釋，請下載相應的字型，並將字型系列配置為Arial Unicode MS、Noto Sans、Noto Sans CJK JP、Noto Sans Devanagari、sans-serif。

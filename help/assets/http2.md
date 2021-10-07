@@ -1,8 +1,8 @@
 ---
 title: HTTP2內容傳送
-seo-title: HTTP2內容傳送
+seo-title: HTTP2 Delivery of Content
 description: HTTP/2改進了瀏覽器和伺服器的通信方式，允許更快地傳輸資訊，同時降低所需的處理能力。
-seo-description: HTTP/2改進了瀏覽器和伺服器的通信方式，允許更快地傳輸資訊，同時降低所需的處理能力。
+seo-description: HTTP/2 improves the way browsers and servers communicate, allowing for faster transfer of information while reducing the amount of needed processing power.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 exl-id: 59cd9f8c-6d01-448d-bf57-bdc9fd2e381b
-feature: 資產管理
+feature: Asset Management
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '705'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ HTTP/2改進了瀏覽器和伺服器的通信方式，允許更快地傳輸資�
 
 Adobe自己的測試得出以下結果：
 
-* 針對影像，視裝置和瀏覽器而定，回應時間已改善7%至28%。 iOS裝置上效能提升最顯著。
+* 針對影像，視裝置和瀏覽器而定，回應時間已改善7%至28%。 效能提升最顯著的是iOS裝置。
 * 對於檢視器，載入時間效能提升了15%。
 
 下列示範說明HTTP/1與HTTP/2載入的差異：
@@ -60,7 +60,7 @@ Adobe自己的測試得出以下結果：
 
 您必須啟動切換至HTTP/2的請求；不會自動為您完成。
 
-1. 啟動技術支援請求以切換到HTTP2。 請參閱[存取AEM支援入口網站](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)。
+1. 啟動技術支援請求以切換到HTTP2。 請參閱[存取客戶支援入口網站](https://helpx.adobe.com/experience-manager/kb/accessing-aem-support-portal.html)。
 
    1. 在您的支援請求中提供下列資訊：
 

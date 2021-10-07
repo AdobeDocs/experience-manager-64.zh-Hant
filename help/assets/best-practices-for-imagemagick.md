@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Renditions,Developer Tools
 role: Admin
 exl-id: 9aeda88a-fd66-4fad-b496-3352a6ecab81
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ImageMagick是用於建立、編輯、合成或轉換點陣圖影像的軟體插
 
 >[!NOTE]
 >
->如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，如果您打算處理大量大型PSD或PSB檔案，請聯絡Adobe客戶服務。 Experience Manager可能無法處理超過30000 x 23000像素的高解析度PSB檔案。
+>如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，如果您打算處理大量大型PSD或PSB檔案，請聯絡Adobe客戶支援。 Experience Manager可能無法處理超過30000 x 23000像素的高解析度PSB檔案。
 
 ## 安裝ImageMagick {#installing-imagemagick}
 
@@ -36,10 +36,10 @@ ImageMagick是用於建立、編輯、合成或轉換點陣圖影像的軟體插
 
 ## 設定命令行處理步驟 {#set-up-the-command-line-process-step}
 
-您可以為您的特定使用案例設定命令列處理步驟。 每次在[!DNL Experience Manager]伺服器上將JPEG影像檔案新增至`/content/dam`時，執行下列步驟以產生翻轉的影像和縮圖（140x100、48x48、319x319和1280x1280）:
+您可以為您的特定使用案例設定命令列處理步驟。 每次在[!DNL Experience Manager]伺服器上將JPEG影像檔案新增至`/content/dam`時，執行下列步驟以產生翻轉的影像和縮圖（140x100、48x48、319x319和1280）:
 
 1. 在[!DNL Experience Manager]伺服器上，前往工作流程主控台(`https://[aem_server]:[Port]/workflow`)，並開啟&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程模型。
-1. 從&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流模型中，開啟&#x200B;**[!UICONTROL EPS縮圖（由ImageMagick提供技術）]**&#x200B;步驟。
+1. 從&#x200B;**[!UICONTROL DAM更新資產]**&#x200B;工作流程模型中，開啟&#x200B;**[!UICONTROL EPS縮圖（由ImageMagick提供技術）]**&#x200B;步驟。
 1. 在&#x200B;**[!UICONTROL 參數頁簽]**&#x200B;中，將`image/jpeg`添加到&#x200B;**[!UICONTROL Mime類型]**&#x200B;清單中。
 
    ![mime_types_jpeg](assets/mime_types_jpeg.png)
@@ -73,7 +73,7 @@ ImageMagick是用於建立、編輯、合成或轉換點陣圖影像的軟體插
    ![web_enabled](assets/web_enabled.png)
 
 1. 儲存工作流程。
-1. 要檢查ImageMagic是否能夠正確處理影像，請將JPG影像上傳到[!DNL Assets]。 驗證是否為翻轉的影像生成格式副本。
+1. 要檢查ImageMagic是否能夠正確處理影像，請將JPG影像上載到[!DNL Assets]。 驗證是否為翻轉的影像生成格式副本。
 
 ## 緩解安全漏洞 {#mitigating-security-vulnerabilities}
 

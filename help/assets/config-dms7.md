@@ -8,7 +8,7 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: a750c5425e33c2a115aab581b71862c1d30cf166
 workflow-type: tm+mt
 source-wordcount: '5589'
 ht-degree: 3%
@@ -63,7 +63,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 ## （選用）安裝Feature Pack 18912以移轉大量資產 {#installing-feature-pack}
 
-Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manager上從Dynamic Media — 混合模式或Dynamic Media Classic移轉至Dynamic Media - Scene7模式。 可從Adobe Professional Services取得。
+Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manager時從Dynamic Media — 混合模式或Dynamic Media Classic移轉至Dynamic Media - Scene7模式。 可從Adobe Professional Services取得。
 
 如需詳細資訊，請參閱[安裝功能套件18912以移轉大量資產](bulk-ingest-migrate.md) 。
 
@@ -79,7 +79,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 1. 在您的「Experience Manager作者」例項中，點選Experience Manager標誌以存取全域導覽主控台，並點選「工具」圖示，然後點選「**[!UICONTROL Cloud Services]** > **[!UICONTROL Dynamic Media設定]**」。
 1. 在「 Dynamic Media Configuration Browser」頁面的左窗格中，點選&#x200B;**[!UICONTROL global]**&#x200B;並點選&#x200B;**[!UICONTROL Create]**。 請勿點選或選取[!UICONTROL global]左側的資料夾圖示。
-1. 在[!UICONTROL 建立Dynamic Media設定]頁面上，輸入標題、Dynamic Media帳戶電子郵件地址和密碼。 選取您的地區。 此資訊是透過布建電子郵件中的Adobe提供給您的。 如果您未收到電子郵件，請聯絡Adobe客戶服務。
+1. 在[!UICONTROL 建立Dynamic Media設定]頁面上，輸入標題、Dynamic Media帳戶電子郵件地址和密碼。 選取您的地區。 此資訊是透過布建電子郵件中的Adobe提供給您的。 如果您未收到電子郵件，請聯絡Adobe客戶支援。
 
    點選&#x200B;**[!UICONTROL 連線至Dynamic Media]**。
 
@@ -145,7 +145,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 「發佈設定」設定決定預設如何從Dynamic Media傳送資產。 如果未指定任何設定，Dynamic Media會根據「發佈設定」中定義的預設設定來傳送資產。 例如，傳送不包含解析度屬性的影像請求，會產生具有預設物件解析度設定的影像。
 
-若要設定發佈設定：在Dynamic Media Classic中，點選&#x200B;**[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**。
+若要設定發佈設定：在Dynamic Media Classic中，點選「**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 發佈設定]** > **[!UICONTROL 影像伺服器]**」。
 
 「影像伺服器」螢幕建立用於傳送影像的預設設定。 請參閱使用者介面以取得每個設定的說明。
 
@@ -159,11 +159,11 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 #### 配置應用程式常規設定 {#configuring-application-general-settings}
 
-若要開啟「[!UICONTROL 應用程式一般設定]」頁面，請在「Dynamic Media Classic全域導覽列」中，點選「**[!UICONTROL 設定]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**」。
+若要開啟「[!UICONTROL 應用程式一般設定]」頁面，請在「Dynamic Media Classic全域導覽列」中，點選「**[!UICONTROL Setup]** > **[!UICONTROL 應用程式設定]** > **[!UICONTROL 一般設定]**」。
 
 **[!UICONTROL 伺服器]**  — 在帳戶布建時，Dynamic Media會自動為您的公司提供指派的伺服器。這些伺服器可用來建構您網站和應用程式的URL字串。 這些URL呼叫是您的帳戶專屬的。 除非Experience Manager支援明確指示，否則請勿更改任何伺服器名稱。
 
-**[!UICONTROL 覆寫影像]**  - Dynamic Media不允許兩個檔案具有相同的名稱。每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：無論是取代原始檔案還是變成重複檔案。 重複資產會以「–1」重新命名（例如chair.tif已重新命名為chair-1.tif）。 這些選項會影響上傳至與原始檔案不同資料夾的資產，或副檔名與原始檔案不同的資產（例如JPG、TIF或PNG）。
+**[!UICONTROL 覆寫影像]**  - Dynamic Media不允許兩個檔案具有相同的名稱。每個項目的URL ID（檔案名稱減去副檔名）必須是唯一的。 這些選項指定如何上傳取代資產：無論是取代原始檔案還是變成重複檔案。 重複資產會以「–1」重新命名（例如chair.tif已重新命名為chair-1.tif）。 這些選項會影響上傳至與原始資料夾不同的資料夾的資產，或副檔名與原始資料夾不同的資產(例如JPG、TIF或PNG)。
 
 * **[!UICONTROL 在目前資料夾中覆寫，使用相同的基本影像名稱/擴充功能]**  — 此選項是最嚴格的取代規則。它要求您將取代影像上傳至與原始影像相同的資料夾，且取代影像的副檔名與原始影像相同。 如果這些需求未達成，則會建立重複項目。
 
@@ -182,7 +182,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 #### 配置顏色管理 {#configuring-color-management}
 
-動態媒體色彩管理可讓您為資產加上色彩校正。 透過色彩校正，擷取的資產可保留其色彩空間（RGB、CMYK、灰色）和內嵌的色彩描述檔。 當您請求動態轉譯時，會使用CMYK、RGB或灰色輸出將影像顏色校正到目標顏色空間。 請參閱[設定影像預設集](managing-image-presets.md)。
+動態媒體色彩管理可讓您為資產加上色彩校正。 透過色彩校正，擷取的資產可保留其色彩空間(RGB、CMYK、灰色)和內嵌的色彩設定檔。 當您請求動態格式副本時，將使用CMYK、RGB或灰度輸出將影像顏色更正到目標顏色空間中。 請參閱[設定影像預設集](managing-image-presets.md)。
 
 **要配置預設顏色屬性以在請求影像時啟用顏色校正，請執行以下操作：**
 
@@ -244,7 +244,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
 #### 為不支援的格式添加自定義MIME類型 {#adding-custom-mime-types-for-unsupported-formats}
 
-您可以針對Experience Manager資產中不支援的格式新增自訂MIME類型。 若要確保CRXDE Lite未刪除您在Experience Manager中新增的任何新節點，請將MIME類型移至&#x200B;**[!UICONTROL image_]**&#x200B;之前，並將其啟用值設為&#x200B;**[!UICONTROL false]**。
+您可以針對Experience Manager Assets中不支援的格式新增自訂MIME類型。 若要確保CRXDE Lite未刪除您在Experience Manager中新增的任何新節點，請將MIME類型移至&#x200B;**[!UICONTROL image_]**&#x200B;之前，並將其啟用值設為&#x200B;**[!UICONTROL false]**。
 
 **若要針對不支援的格式新增自訂MIME類型：**
 
@@ -452,7 +452,7 @@ spin-01-01
 
 1. 對於&#x200B;**[!UICONTROL 設定命名]**&#x200B;和&#x200B;**[!UICONTROL 建立約定]**，請在&#x200B;**[!UICONTROL 資產命名約定]**&#x200B;中定義的基礎名稱中指定尾碼或前置詞。
 
-   此外，定義回轉集在Dynamic Media Classic資料夾結構中建立的位置。
+   此外，定義回轉集在Dynamic Media Classic資料夾結構內建立的位置。
 
    如果您定義大量集，請將它們與包含資產本身的資料夾分開。 例如，建立「回轉集」資料夾，將產生的集放置在此處。
 
@@ -472,7 +472,7 @@ spin-01-01
 
 #### 更新預定義的作業參數以處理不同的檔案格式
 
-上傳檔案時，您可以調整工作參數以加快處理速度。 例如，如果上傳PSD檔案，但不想以模板形式處理這些檔案，則可以將圖層提取設定為false(off)。 在這種情況下，調整的作業參數如下所示：`process=None&createTemplate=false`。
+上傳檔案時，您可以調整工作參數以加快處理速度。 例如，如果您上傳PSD檔案，但不想以範本形式處理，則可將圖層擷取設為false(off)。 在這種情況下，調整的作業參數如下所示：`process=None&createTemplate=false`。
 
 如果您確實要開啟範本建立，請使用下列參數：`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`。
 
@@ -492,7 +492,7 @@ Adobe建議對PDF、PostScript®和PSD檔案使用以下「調整」作業參數
 
 <!-- CQDOC-17657 for PSD entry in table above -->
 
-若要更新任何這些參數，請遵循[啟用MIME類型型資產/Dynamic Media Classic上傳工作參數support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)中的步驟。
+若要更新任何這些參數，請依照[啟用MIME類型型資產/Dynamic Media Classic上傳工作參數support](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)中的步驟操作。
 
 #### 更新Granite暫時工作流程佇列 {#updating-the-granite-transient-workflow-queue}
 
@@ -542,7 +542,7 @@ Granite工作流程佇列用於非暫時性的工作流程。 在Dynamic Media�
 
 #### 更新Scene7上傳連線 {#updating-the-scene-upload-connection}
 
-Scene7上傳連線設定會將Experience Manager資產同步至Dynamic Media Classic伺服器。
+Scene7上傳連線設定會將Experience Manager Assets同步至Dynamic Media Classic伺服器。
 
 **若要更新Scene7上傳連線：**
 
@@ -623,7 +623,7 @@ Scene7上傳連線設定會將Experience Manager資產同步至Dynamic Media Cla
 
    若要讓此篩選器套用至所有影像，而不論其格式為何，請將值設為`image/*`，其中`*`是套用至任何格式之所有影像的規則運算式。
 
-   要使濾鏡僅應用於類型為JPEG的影像，請輸入一個值`image/jpeg`。
+   要讓篩選器僅應用於類型JPEG的影像，請輸入`image/jpeg`值。
 
 1. 定義您要包含或排除在復寫中的轉譯。
 

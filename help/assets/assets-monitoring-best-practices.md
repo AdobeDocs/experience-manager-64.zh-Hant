@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Admin,Architect
 exl-id: edbb275a-5ead-4ed2-8708-29e766081d75
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1745'
 ht-degree: 0%
@@ -195,5 +195,5 @@ ht-degree: 0%
 * 使用工作流程主控台來確認您的工作流程是否如預期般執行。 如有可能，將多個工作流程簡化為單一工作流程。
 * 重新訪問即時監視，並查找任何特定資源的其他瓶頸或高消費者。
 * 調查來自客戶端網路的輸出點和到[!DNL Experience Manager]實例網路（包括調度程式）的入口點。 這些經常是瓶頸區。 如需詳細資訊，請參閱[資產網路考量事項](assets-network-considerations.md)。
-* 更新[!DNL Experience Manager]伺服器的大小。 您的[!DNL Experience Manager]實例可能大小不足。 Adobe客戶服務可協助您識別伺服器的大小是否不足。
+* 更新[!DNL Experience Manager]伺服器的大小。 您的[!DNL Experience Manager]實例可能大小不足。 Adobe客戶支援可協助您識別伺服器的大小是否不足。
 * 檢查`access.log`和`error.log`檔案，以了解是否有問題發生的前後條目。 尋找可能表示自訂程式碼異常的模式。 將它們新增至您監視的事件清單。

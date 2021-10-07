@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Architect,Admin
 exl-id: 6c1bff46-f9e0-4638-9374-a9e820d30534
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '3151'
 ht-degree: 0%
@@ -112,8 +112,8 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 
 主要取決於可用頻寬量和[!DNL Experience Manager]實例上的負載。 常見的配置選項（包括防火牆或代理）有助於提高網路效能。 請謹記以下幾點：
 
-* 根據您的實例類型（小、中、大），確保您的[!DNL Experience Manager]實例有足夠的網路頻寬。 如果[!DNL Experience Manager]是在AWS上托管，則適當的頻寬分配尤其重要。
-* 如果您的[!DNL Experience Manager]實例托管在AWS上，則您可以通過通用的擴展策略受益。 如果使用者預期會有高負載，請更新執行個體。 縮減其大小以適度/低負載。
+* 根據您的實例類型（小、中、大），確保您的[!DNL Experience Manager]實例有足夠的網路頻寬。 如果[!DNL Experience Manager]托管於AWS，則適當的頻寬分配尤其重要。
+* 如果您的[!DNL Experience Manager]例項托管於AWS，則您可使用通用的縮放政策來獲益。 如果使用者預期會有高負載，請更新執行個體。 縮減其大小以適度/低負載。
 * HTTPS:大部分的使用者都有可偵聽HTTP流量的防火牆，這可能會對上傳檔案或在上傳作業期間損毀的檔案造成負面影響。
 * 大檔案上載：確保用戶有到網路的有線連接（WiFi連接快速飽和）。
 
@@ -184,7 +184,7 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 
 許多Sites客戶會實作影像servlet，在要求影像時調整大小並裁切影像，這會對發佈例項造成額外負載。 不過，只要可快取這些影像，就可緩解挑戰。
 
-另一種方法是使用Dynamic Media Classic技術，完全切斷影像處理。 此外，您可以部署Brand Portal，它不僅接管[!DNL Experience Manager]基礎架構的轉譯產生責任，還接管整個發佈層。
+另一種方法是使用Dynamic Media Classic技術完全放棄影像處理。 此外，您可以部署Brand Portal，它不僅接管[!DNL Experience Manager]基礎架構的轉譯產生責任，還接管整個發佈層。
 
 #### ImageMagick {#imagemagick}
 
@@ -215,7 +215,7 @@ Adobe建議啟用HTTPS，因為許多公司都有可偵聽HTTP流量的防火牆
 >
 >可在`/usr/lib64/ImageMagick-*/config/`下找到ImageMagick `policy.xml`和`configure.xml`檔案，而不是`/etc/ImageMagick/`。 有關配置檔案位置的詳細資訊，請參閱[ImageMagick文檔](https://www.imagemagick.org/script/resources.php)。
 
-如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，如果您打算處理大量大型PSD或PSB檔案，請聯絡Adobe客戶服務。 Experience Manager可能無法處理超過30000 x 23000像素的高解析度PSB檔案。
+如果您在Adobe Managed Services(AMS)上使用[!DNL Experience Manager]，如果您打算處理大量大型PSD或PSB檔案，請聯絡Adobe客戶支援。 Experience Manager可能無法處理超過30000 x 23000像素的高解析度PSB檔案。
 
 <!-- 
 
@@ -365,7 +365,7 @@ XMP回寫會在AEM中修改中繼資料時更新原始資產，結果如下：
 
 禁用Lucene文本提取：
 
-如果您的使用者不需要搜尋資產內容（例如搜尋PDF檔案中包含的文字），則可停用此功能以改善索引效能。
+如果您的使用者不需要搜尋資產內容(例如搜尋PDF檔案中包含的文字)，則您可以停用此功能來改善索引效能。
 
 1. 前往[!DNL Experience Manager]套件管理器/crx/packmgr/index.jsp
 1. 上傳並安裝以下套件
@@ -418,6 +418,6 @@ XMP回寫會在AEM中修改中繼資料時更新原始資產，結果如下：
 * 從「DAM更新資產」工作流程中移除不必要的步驟。
 * 設定工作流程和版本清除。
 * 優化Lucene索引配置。
-* 使用最新的Service Pack和Hotfix來最佳化索引。 請向Adobe客戶服務洽詢，以了解有哪些其他索引最佳化措施可供使用。
+* 使用最新的Service Pack和Hotfix來最佳化索引。 請向Adobe客戶支援洽詢任何其他可用的索引最佳化。
 * 使用`guessTotal`優化查詢效能。
 * 如果您設定[!DNL Experience Manager]以從檔案內容偵測檔案類型（在[!UICONTROL [!DNL Experience Manager] Web Console]中設定[!UICONTROL  Day CQ DAM Mime Type Service]），請在非尖峰時段大量上傳許多檔案，因為操作耗用大量資源。

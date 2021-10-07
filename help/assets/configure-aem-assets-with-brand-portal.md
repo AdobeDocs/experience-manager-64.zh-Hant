@@ -5,7 +5,7 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: 8910716cf6b5c4e872db8d965200787de7c2d121
 workflow-type: tm+mt
 source-wordcount: '1646'
 ht-degree: 37%
@@ -67,7 +67,7 @@ Adobe Experience Manager資產是透過[!DNL Adobe I/O]以Brand Portal設定，�
 
 * [AEM 6.4 Service Pack發行說明](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**如果您** 找不到最新的AEM套件或Service Pack，請聯絡客戶服務。
+**如果您** 找不到最新的AEM套件或Service Pack，請聯絡客戶支援。
 
 ## 建立設定 {#configure-new-integration-64}
 
@@ -98,7 +98,7 @@ IMS 設定包括兩個步驟：
 
 1. 登入您的AEM Assets Author例項
 預設URL:http:// localhost:4502/aem/start.html
-1. 從&#x200B;**Tools** ![Tools](assets/tools.png)面板，導覽至&#x200B;**[!UICONTROL Security]** >> **[!UICONTROL AdobeIMS設定]**。
+1. 從&#x200B;**Tools** ![Tools](assets/tools.png)面板，導覽至&#x200B;**[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS Configurations]**。
 
    ![Adobe IMS 帳戶設定 UI](assets/ims-config1.png)
 
@@ -306,7 +306,7 @@ Brand Portal已成功設定為您的AEM Assets製作例項。 您現在可以：
 
 1. 找出您Brand Portal租用戶的復寫代理。
 
-   確保所有復寫代理的&#x200B;**Queue均為Idle**，則沒有任何發佈作業處於活動狀態。
+   確保所有復寫代理的&#x200B;**Queue均為Idle**，沒有任何發佈作業處於活動狀態。
 
    ![](assets/test-integration3.png)
 
@@ -315,7 +315,7 @@ Brand Portal已成功設定為您的AEM Assets製作例項。 您現在可以：
 刪除現有配置時，必須運行以下檢查清單。
 * 刪除所有四個複製代理
 * 刪除雲端服務
-* 刪除MAC用戶
+* 刪除MAC使用者
 
 執行下列步驟以刪除現有配置：
 

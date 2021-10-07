@@ -1,8 +1,8 @@
 ---
 title: 安裝Feature Pack 18912以移轉大量資產
-seo-title: 安裝Feature Pack 18912以移轉大量資產
+seo-title: Installing Feature Pack 18912 for bulk asset migration
 description: Feature Pack 18912可讓您透過FTP大量內嵌資產，或在AEM中將資產從Dynamic Media Classic移轉至Dynamic Media。 此選用功能套件提供Adobe支援。
-seo-description: Feature Pack 18912可讓您透過FTP大量內嵌資產，或在AEM中將資產從Dynamic Media Classic移轉至Dynamic Media。 此選用功能套件提供Adobe支援。
+seo-description: Feature pack 18912 lets you either bulk ingest assets by way of FTP, or migrate assets from Dynamic Media Classic to Dynamic Media in AEM. This optional feature pack is available from Adobe support.
 uuid: 316d77e3-3d61-4cf0-8955-726ee54e268c
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,11 +10,11 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 6198e613-a867-49a8-b9a5-a05e7889821c
 exl-id: f9bb59f6-39a5-4804-8abe-12783d4162c9
-feature: 設定
+feature: Configuration
 role: Admin,User
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Feature Pack 18912可讓您透過FTP將資產大量直接內嵌至AEM上的Dynam
 
 >[!NOTE]
 >
->雖然您可以使用Feature Pack自行將資產從Dynamic Media Classic大量移轉至Dynamic Media — 在AEM中使用Scene 7模式，或使用Dynamic Media Classic的FTP功能大量移轉資產，但由於相關複雜性，Adobe不建議使用&#x200B;*not*&#x200B;此方法。
+>雖然您可以使用Feature Pack，自行將資產從Dynamic Media Classic大量移轉至Dynamic Media — 以AEM的Scene 7模式，或是使用Dynamic Media Classic的FTP功能大量移轉資產，但由於相關複雜性，Adobe不建議使用&#x200B;*not*&#x200B;此方法。
 >
 >因此，透過[Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html)的移轉專案僅支援&#x200B;**&#x200B;等移轉功能套件。
 
@@ -39,12 +39,12 @@ Feature Pack 18912可讓您透過FTP將資產大量直接內嵌至AEM上的Dynam
 
 1. 在您的AEM例項中，導覽至「**[!UICONTROL 工具>安全性>使用者>建立使用者]**」。 此服務用戶必須具有`/content/dam`的讀/寫權限。
 1. 在&#x200B;**[!UICONTROL ID]**&#x200B;和&#x200B;**[!UICONTROL 密碼]**&#x200B;欄位中，輸入用戶名和密碼；例如`FTP User`。 此名稱會以建立資產的使用者身分顯示在時間軸中。 從FTP上傳資產時，會將資產上傳至FTP伺服器並推送至AEM時，視為已建立資產。
-1. 請聯絡[Adobe企業支援以取得Experience Manager](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)，要求存取Feature Pack 18912以進行下載。 聯絡支援人員時，您可能需要下列資訊：
+1. 如需Experience Manager](https://helpx.adobe.com/tw/contact/enterprise-support.ec.html)，請聯絡[Adobe客戶支援，以要求存取Feature Pack 18912以供下載。 聯絡支援人員時，您可能需要下列資訊：
 
    * 您Author例項的伺服器IP位址，包括連接埠號（依預設，連接埠號為4502）。
    * AEM服務使用者使用者名稱和密碼。
 
-1. AdobeAEM企業支援提供FTP憑證和Feature Pack 18912的存取權。
+1. AdobeAEM客戶支援提供FTP憑證，以及Feature Pack 18912的存取權。
 
 1. 收到Feature Pack 18912時，請安裝它。
 

@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Migration,Renditions,Asset Management
 role: Architect,Admin
 exl-id: 31da9f3d-460a-4b71-9ba0-7487f1b159cb
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: 63a4304a1a10f868261eadce74a81148026390b6
 workflow-type: tm+mt
 source-wordcount: '1772'
 ht-degree: 8%
@@ -22,7 +22,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->下列資產移轉工具不屬於Adobe Experience Manager。 Adobe客戶服務不支援這些工具。
+>下列資產移轉工具不屬於Adobe Experience Manager。 Adobe客戶支援不支援這些工具。
 >
 >* ACS [!DNL Experience Manager]工具標籤製作器
 >* ACS [!DNL Experience Manager]工具CSV資產匯入工具
@@ -52,7 +52,7 @@ ht-degree: 8%
 
 ### 載入標籤 {#load-tags}
 
-您可能已準備好將標籤分類套用至影像。 CSV資產匯入工具和中繼資料設定檔功能等工具可協助將標籤套用至資產自動化。 在此之前，請在Experience Manager中新增標籤。 [ACS [!DNL Experience Manager] 工具標籤製作器](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html)功能允許您使用載入到系統中的Microsoft Excel電子錶格填入標籤。
+您可能已準備好將標籤分類套用至影像。 CSV資產匯入工具和中繼資料設定檔功能等工具可協助將標籤套用至資產自動化。 在此之前，請在Experience Manager中新增標籤。 [ACS [!DNL Experience Manager] 工具標籤製作器](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html)功能可讓您使用載入至系統的Microsoft Excel試算表填入標籤。
 
 ### 內嵌資產 {#ingest-assets}
 
@@ -79,7 +79,7 @@ Adobe的Managed Services團隊使用名為Glutton的工具，將資料載入客�
 
 ### 處理轉譯 {#process-renditions}
 
-將資產載入系統後，您需要透過DAM更新資產工作流程處理資產，以擷取中繼資料並產生轉譯。 執行此步驟之前，您必須複製並修改DAM更新資產工作流程，以符合您的需求。 您不一定需要預設工作流程中的某些步驟，例如Dynamic Media Classic PTIFF產生或InDesign伺服器整合。
+將資產載入系統後，您需要透過DAM更新資產工作流程處理資產，以擷取中繼資料並產生轉譯。 執行此步驟之前，您必須複製並修改DAM更新資產工作流程，以符合您的需求。 您可能不需要預設工作流程中的某些步驟，例如Dynamic Media Classic PTIFF產生或InDesign伺服器整合。
 
 根據您的需求設定工作流程後，您有兩個選項可執行：
 
