@@ -1,19 +1,19 @@
 ---
 title: AEM 6.4中的存放庫重新調整架構
-seo-title: AEM 6.4中的存放庫重新調整架構
+seo-title: Repository Restructuring in AEM 6.4
 description: 了解AEM 6.4中存放庫重新調整架構的基本概念和推理
-seo-description: 了解AEM 6.4中存放庫重新調整架構的基本概念和推理
+seo-description: Learn about the basics and reasoning behind the repository restructuring in AEM 6.4
 uuid: e9cd3e88-e352-44a8-9b97-69488d3267cb
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
-feature: 升級
+feature: Upgrading
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: 8665f708a336134340a3f1abe2aa17622fa142f1
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 * [所有AEM解決方案共同的存放庫重組](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [AEM Sites存放庫重組](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [AEM Assets存放庫重組](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+* [AEM Assets存放庫重組](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
 * [AEM Assets Dynamic Media存放庫重組](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [AEM Forms存放庫重組](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [AEM Communities存放庫重組](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)

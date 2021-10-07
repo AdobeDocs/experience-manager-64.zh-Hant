@@ -6,11 +6,11 @@ audience: end-user
 user-guide-title: AEM 6.4 Deploying 指南
 breadcrumb-title: Deploying 指南
 user-guide-description: 進一步了解 Adobe Experience Manager 6.4 的安裝、部署和架構，包括我們的 Adobe Managed Services 雲端部署。
-feature: 部署
+feature: Deploying
 role: Architect
-source-git-commit: 17c9f8523992b5ba87125c77d3e4f70f86f89c58
+source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '370'
 ht-degree: 9%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 9%
    + [AEM 6.4中的存放庫重新調整架構](repository-restructuring.md)
    + [AEM 6.4中的常見存放庫重新調整架構](all-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4中的Sites存放庫重新調整](sites-repository-restructuring-in-aem-6-4.md)
-   + [AEM 6.4中的資產存放庫重新調整架構](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=en)
+   + [AEM 6.4中的資產存放庫重新調整架構](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
    + [Dynamic Media 6.4中的存放庫重新調整架構](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Forms 6.4中的存放庫重新調整架構](forms-repository-restructuring-in-aem-6-4.md)
    + [AEM 6.4中的電子商務存放庫重新調整](ecommerce-repository-restructuring-in-aem-6-4.md)
