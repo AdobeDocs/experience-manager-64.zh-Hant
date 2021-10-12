@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: 877eade71c2ec57ff534ba2649275111c5326d75
 workflow-type: tm+mt
 source-wordcount: '10384'
 ht-degree: 4%
@@ -72,7 +72,7 @@ ht-degree: 4%
 
          [檢視視訊轉譯](video-renditions.md)
 
-         [管理視訊轉譯](managing-assets-touch-ui.md#managing-renditions)
+[管理視訊轉譯](managing-assets-touch-ui.md#managing-renditions)
 
       * [管理檢視器預設集](managing-viewer-presets.md)
       * [發佈資產](publishing-dynamicmedia-assets.md)
@@ -84,7 +84,7 @@ ht-degree: 4%
 
       * 編輯視訊的屬性，例如標題、說明和標籤、自訂中繼資料欄位：
 
-         [編輯視訊屬性](managing-assets-touch-ui.md#editing-properties)
+[編輯視訊屬性](managing-assets-touch-ui.md#editing-properties)
 
       * [管理數位資產的中繼資料](metadata.md)
       * [中繼資料結構](metadata-schemas.md)
@@ -142,11 +142,11 @@ Dynamic Media中的視訊是端對端解決方案，可讓您輕鬆發佈高品�
    * 產生最適化視訊集時，會包含MP4視訊。
    * **注意**:主視訊/來源視訊不會新增至最適化視訊集。
 
-* 所有HTML5視訊檢視器中的視訊字幕。
+* 所有HTML5個視訊檢視器中的視訊字幕。
 * 透過完整的中繼資料支援，組織、瀏覽和搜尋視訊，以有效管理視訊資產。
 * 將最適化視訊集傳送至網路以及桌上型電腦和行動裝置，包括iPhone、iPad、Android、Blackberry和Windows電話。
 
-多種iOS平台均支援最適化視訊串流。 請參閱[Adobe檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)。
+多種iOS平台均支援最適化視訊串流。 請參閱[Adobe檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)。
 
 Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位置找到支援此視頻格式的Blackberry設備：[Blackberry](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482)上支援的視頻格式。
 
@@ -166,7 +166,7 @@ Dynamic Media支援MP4 H.264視訊的行動視訊播放。 您可以在以下位
 
 ## 最佳實務：使用HTML5視訊檢視器 {#best-practice-using-the-html-video-viewer}
 
-Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可以使用它們來避免與HTML5視訊播放相關的許多常見問題，以及與行動裝置相關的問題，例如缺乏最適化串流傳送以及案頭瀏覽器觸及率有限。
+Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可以使用它們來避免許多與HTML5視訊播放相關的常見問題，以及與行動裝置相關的問題，例如缺乏最適化串流傳送以及案頭瀏覽器觸及率有限。
 
 在播放器的設計端，您可以使用標準網頁開發工具來設計所有視訊播放器的功能。 例如，您可以使用HTML5和CSS來設計按鈕、控制項和自訂海報影像背景，以協助您以自訂外觀觸及客戶。
 
@@ -174,7 +174,7 @@ Dynamic Media HTML5視訊檢視器預設集是強大的視訊播放器。 您可
 
 結合為單一播放器，即可使用HTML5和CSS設計播放元件、內嵌播放，以及根據瀏覽器功能使用最適化和漸進式串流，將多媒體內容的觸及範圍擴展至案頭和行動使用者，並確保簡化的視訊體驗。
 
-另請參閱「Adobe檢視器參考指南」中的[關於HTML5檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)。
+另請參閱「HTML檢視器參考指南」中的[關於Adobe5檢視器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html)。
 
 ### 使用HTML5視訊檢視器在桌上型電腦和行動裝置上播放視訊 {#playback-of-video-on-desktop-computers-and-mobile-devices-using-the-html-video-viewer}
 
@@ -358,7 +358,7 @@ For advice about video encoding, see the following:
 
 ### 解析度 {#resolution}
 
-**** 解析度以像素說明視訊檔案的高度和寬度。大部分的源視頻都以高解析度儲存（例如1920 x 1080）。 為了串流目的，來源視訊會壓縮為較小的解析度（640 x 480或更小）。
+**** 解析度以像素表示視訊檔案的高度和寬度。大部分的源視頻都以高解析度儲存（例如1920 x 1080）。 為了串流目的，來源視訊會壓縮為較小的解析度（640 x 480或更小）。
 
 解析度和資料速率是決定視訊品質的兩個整體連結因素。 若要維持相同的視訊品質，視訊檔案中的像素數目越多（解析度越高），資料速率就必須越高。 例如，請考慮解析度為320 x 240和解析度為640 x 480的視頻檔案中每幀的像素數：
 
@@ -415,7 +415,7 @@ For advice about video encoding, see the following:
    <td><p>來源</p> </td> 
    <td><p>1920x1080</p> </td> 
    <td><p>1</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>編碼</p> </td> 
@@ -464,15 +464,15 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 您也可以[取消發佈視訊，以從YouTube](#unpublishing-videos-to-remove-them-from-youtube)中移除視訊。
 
-### 配置Google雲端設定 {#configuring-google-cloud-settings}
+### 配置Google Cloud設定 {#configuring-google-cloud-settings}
 
 若要發佈至YouTube，您需要Google帳戶。 如果您有GMAIL帳戶，則您已有Google帳戶。 如果您沒有Google帳戶，便可輕鬆建立帳戶。 您需要帳戶，因為您需要憑證才能將影片資產發佈至YouTube。 如果您已建立帳戶，請略過此任務，然後繼續[建立YouTube通道](#creating-a-youtube-channel)。
 
 >[!NOTE]
 >
->在編寫本文時，以下步驟是正確的。 不過，谷歌會不經通知就定期更新其網站。 因此，這些步驟可能略有不同。
+>在編寫本文時，以下步驟是正確的。 不過，Google會不經通知便定期更新其網站。 因此，這些步驟可能略有不同。
 
-**配置Google雲端設定：**
+**若要配置Google Cloud設定：**
 
 1. 建立新的Google帳戶。
 
@@ -481,7 +481,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
    如果您已有Google帳戶，請跳至下一個步驟。
 
 1. 前往[https://cloud.google.com/](https://cloud.google.com/)。
-1. 在「Google雲端平台」頁面的頂端附近，點選「**[!UICONTROL 主控台]**」。 您可能需要使用您的Google帳戶憑證登入&#x200B;**。**
+1. 在Google Cloud Platform頁面的頂端附近，點選&#x200B;**[!UICONTROL Console]**。 您可能需要使用您的Google帳戶憑證登入&#x200B;**。**
 1. 在&#x200B;**[!UICONTROL 控制面板]**&#x200B;頁面上，點選&#x200B;**[!UICONTROL 建立專案]**。
 1. 在&#x200B;**[!UICONTROL 新建項目]**&#x200B;對話框中，在項目名稱中輸入。
 
@@ -535,7 +535,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 >[!CAUTION]
 >
->請確定您已在YouTube &amp;ast;before&amp;ast；中設定一或多個通道您可以在AEM的「YouTube設定」下新增管道(請參閱下方的「在AEM](#setting-up-youtube-in-aem)中設定YouTube」)。 [若您未執行此動作，則不會收到任何警告，指出沒有現有管道。 不過，新增管道時仍會發生Google驗證，但無法選擇要傳送視訊的管道。
+>請確定您已在YouTube &amp;ast;before&amp;ast；中設定一或多個通道您可以在AEM的「YouTube設定」下新增管道(請參閱下方的「在AEM](#setting-up-youtube-in-aem)中設定YouTube」)。 [若您未執行此動作，則不會收到任何警告，指出沒有現有管道。 不過，新增頻道時仍會發生Google驗證，但無法選擇要傳送視訊的頻道。
 
 **若要建立YouTube管道：**
 
@@ -575,11 +575,11 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 1. 點選&#x200B;**[!UICONTROL 建立]**。
 1. 在&#x200B;**[!UICONTROL YouTube帳戶設定]**&#x200B;對話方塊的&#x200B;**[!UICONTROL 應用程式名稱]**&#x200B;欄位中，輸入Google專案ID。
 
-   您最初設定Google Cloud設定時，已指定專案ID。
+   您先前初次設定Google Cloud設定時，已指定專案ID。
 
    保持&#x200B;**[!UICONTROL YouTube帳戶設定]**&#x200B;對話框開啟；你稍後會回來。
 
-1. 使用純文字編輯器，開啟您先前在「設定Google雲端」設定工作中下載並儲存的JSON檔案。
+1. 使用純文字編輯器，開啟先前在設定Google雲端設定工作中下載並儲存的JSON檔案。
 1. 選取並複製整個JSON文字。
 1. 返回&#x200B;**[!UICONTROL YouTube帳戶設定]**&#x200B;對話方塊。 在「 **[!UICONTROL JSON設定」欄位中]** ，貼上JSON文字。
 1. 點選&#x200B;**[!UICONTROL 確定]**。
@@ -902,13 +902,13 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
 1. 在列出最常發佈影片的表格中，點選影片名稱以播放影片，並查看影片的對象保留率（下拉式清單）報表。
 
-### 根據您使用Dynamic Media HTML5檢視器SDK建立的視訊檢視器，檢視視訊報表 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### 根據您使用Dynamic Media HTML5檢視器SDK建立的視訊檢視器檢視視訊報表 {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
-如果您使用Dynamic Media提供的現成視訊檢視器，或是您根據現成視訊檢視器建立自訂檢視器預設集，則不需要其他步驟即可檢視視訊報表。 不過，如果您已根據HTML5檢視器SDK API建立自己的視訊檢視器，則請使用下列步驟，確保您的視訊檢視器將追蹤事件傳送至Dynamic Media視訊報表。
+如果您使用Dynamic Media提供的現成視訊檢視器，或是您根據現成視訊檢視器建立自訂檢視器預設集，則不需要其他步驟即可檢視視訊報表。 不過，如果您已根據HTML5檢視器SDK API建立自己的視訊檢視器，則請使用下列步驟來確保您的視訊檢視器將追蹤事件傳送至Dynamic Media視訊報表。
 
-使用[AdobeDynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html)和[HTML5檢視器SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)建立您自己的視訊檢視器。
+使用[AdobeDynamic Media檢視器參考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)和[HTML5檢視器SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)建立您自己的視訊檢視器。
 
-若要根據您使用HTML5檢視器SDK API建立的視訊檢視器來檢視視訊報表：
+若要根據您使用Viewer SDK API建立的視訊檢視器來檢視視訊報表，請執行下列動作：
 
 1. 導覽至任何已發佈的視訊資產。
 1. 在資產頁面的左上角附近，從下拉式清單中選取「檢 **[!UICONTROL 視器]**」。
@@ -917,7 +917,7 @@ Dynamic Media建議使用MP4 H.264視訊編碼預設集。 由於MP4檔案使用
 
    `videoViewer.setParam("config2", "<value>");`
 
-   `config2`參數可在HTML5檢視器中啟用追蹤。 也是公司專屬的預設集，其中包含視訊報表和客戶專屬Adobe Analytics設定的設定資訊。
+   `config2`參數可啟用「HTML5檢視器」中的追蹤。 也是公司專屬的預設集，其中包含視訊報表和客戶專屬Adobe Analytics設定的設定資訊。
 
    config2參數的正確值可在 **[!UICONTROL Embed Code]**  (內嵌代碼) 和copy **[!UICONTROL URL (複製UICONTROL URL) 函式]** 中找到。在複製 **[!UICONTROL URL命令的URL中]** ，要尋找的參數為 `&config2=<value>` 。值幾乎總是 `companypreset`會出現，但在某些情況下 `companypreset-1`, `companypreset-2`它也可以是、等等。
 
@@ -1032,11 +1032,11 @@ Dynamic Media可將註解檔案轉換為JSON（JavaScript物件標籤法）格�
 >
 >使用的視訊播放器必須支援使用章節標籤。 Dynamic Media視訊播放器確實支援章節標籤，但使用協力廠商視訊播放器則否。
 
-如有需要，您可以使用章節建立並品牌化您自己的自訂視訊檢視器，而不是使用視訊檢視器預設集。 如需使用章節導覽建立自己HTML5檢視器的指示，請在AdobeHTML5檢視器SDK API中，參考`s7sdk.video.VideoPlayer`和`s7sdk.video.VideoScrubber`類別下的「使用修飾元自訂行為」標題。 請參閱[HTML5檢視器SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)檔案。
+如有需要，您可以使用章節建立並品牌化您自己的自訂視訊檢視器，而不是使用視訊檢視器預設集。 有關使用章節導覽建立您自己的HTML5檢視器的說明，請在AdobeHTML5檢視器SDK API中，參考`s7sdk.video.VideoPlayer`和`s7sdk.video.VideoScrubber`類別下的「使用修飾元自訂行為」標題。 請參閱[HTML5檢視器SDK API](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)檔案。
 
 您為視訊建立章節清單的方式與建立字幕的方式大致相同。 即，建立WebVTT檔案。 但請注意，此檔案必須與您可能也使用的任何WebVTT標題檔案分開；不能將字幕和章節合併為一個WebVTT檔案。
 
-您可以使用下列範例作為建立具有章節導覽的WebVTT檔案時所使用的格式範例：
+您可以使用下列範例，作為建立具有章節導覽的WebVTT檔案時所使用格式的範例：
 
 ### 具有視訊章節導覽的WebVTT檔案 {#webvtt-file-with-video-chapter-navigation}
 
