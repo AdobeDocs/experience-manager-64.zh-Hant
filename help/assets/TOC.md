@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 建立、管理、提供和最佳化數位資產。
-source-git-commit: d9649477328b3249dae396bbdca0f660c9c8faca
+source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 42%
+source-wordcount: '636'
+ht-degree: 41%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 42%
    + [Dynamic Media 影像設定檔](image-profiles.md)
    + [智慧型影像](imaging-faq.md)
    + [影片](s7-video.md)
-   + [將Dynamic Media Classic功能新增至您的頁面](scene7.md)
+   + [將Dynamic Media Classic功能新增至頁面](scene7.md)
    + [HTTP2 傳送內容](http2.md)
    + [傳送 Dynamic Media 資產](delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中啟用超連結保護](hotlink-protection.md)
@@ -72,7 +72,7 @@ ht-degree: 42%
    + [使 CDN 快取內容失效](invalidate-cdn-cached-content.md)
    + [安裝Feature Pack 18912以移轉大量資產](bulk-ingest-migrate.md)
    + [使用選取工具](working-with-selectors.md)
-+ 擴充資產{#extending}
++ 擴充資產 {#extending}
    + [自訂和擴充資產](extending-assets.md)
    + [使用媒體處理常式和工作流程處理資產](media-handlers.md)
    + [擴充資產搜尋](searchx.md)
@@ -81,7 +81,7 @@ ht-degree: 42%
    + [擴充資產編輯器](asseteditorx.md)
    + [Assets HTTP API](mac-api-assets.md)
    + [Assets Proxy Development](proxy.md)
-+ 管理資產{#administer}
++ 管理資產 {#administer}
    + [Assets支援的格式](assets-formats.md)
    + [搜尋 Facet](search-facets.md)
    + [管理資產的中繼資料](metadata.md)
@@ -138,7 +138,7 @@ ht-degree: 42%
    + [內容片段 - 刪除考量事項](content-fragments-delete.md)
    + [內容片段 — Markdown](content-fragments-markdown.md)
    + [建立內容片段的翻譯專案](creating-translation-projects-for-content-fragments.md)
-+ 管理資產{#managing}
++ 管理資產 {#managing}
    + [使用觸控最佳化 UI 來管理資產](managing-assets-touch-ui.md)
    + [管理多個資產和集合](managing-multiple-assets.md)
    + [資產選擇器](asset-selector.md)
@@ -165,3 +165,7 @@ ht-degree: 42%
    + [私人資料夾共用](private-folder.md)
    + [智慧內容服務訓練准則](smart-tags-training-guidelines.md)
    + [視訊轉譯](video-renditions.md)
++ 與其他解決方案的整合 {#integrations}
+   + [與 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [安裝 [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-install.md)
+   + [設定 [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-configure.md)
