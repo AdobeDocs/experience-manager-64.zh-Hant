@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 建立、管理、提供和最佳化數位資產。
-source-git-commit: 18901a6b1e5035e16cb4f30a040ec8a42f704d87
+source-git-commit: ac358965790694a51d866a4cdb97810b0983bbca
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 41%
 
 ---
@@ -104,6 +104,7 @@ ht-degree: 41%
    + [使用PDF模擬轉譯器](aem-pdf-rasterizer.md)
    + [設定資產上傳限制](configuring-asset-upload-restrictions.md)
    + [AEM與Creative Cloud整合最佳實務](aem-cc-integration-best-practices.md)
+   + [設定Adobe資產連結](configure-asset-link.md)
    + [將AEM Assets與InDesign伺服器整合](indesign.md)
    + [中繼資料設定檔](metadata-profiles.md)
    + [Digital Rights Management資產](drm.md)
