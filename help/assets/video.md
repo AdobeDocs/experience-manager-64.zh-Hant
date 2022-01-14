@@ -8,9 +8,9 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 7f4e44eb75ccae4a9ab1d95171b95a5e9fe48f64
+source-git-commit: 18ab491812b1bcc8ceee14e311bd15c0c8dd32fa
 workflow-type: tm+mt
-source-wordcount: '10383'
+source-wordcount: '10401'
 ht-degree: 4%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 4%
       * 深入了解 [組織數位資產](organize-assets.md).
    * 將您的主要來源影片上傳至資料夾。 將視訊新增至資料夾時，會根據您指派給資料夾的視訊處理設定檔進行編碼。
 
-      * Dynamic Media主要支援長度最多30分鐘的簡短影片。
+      * Dynamic Media主要支援長度上限30分鐘、解析度超過50 x 50的短片影片。
       * 您可以上傳每個高達15 GB的視訊檔案。
       * [上傳您的影片](managing-video-assets.md#uploading-and-previewing-video-assets).
       * 深入了解 [支援的輸入檔案格式](assets-formats.md#supported-multimedia-formats).
@@ -288,7 +288,7 @@ For advice about video encoding, see the following:
 
 為視訊檔案編碼時，請使用盡可能高品質的來源視訊檔案。 請避免使用先前編碼的視訊檔案，因為這些檔案已經壓縮，而進一步編碼會造成品質欠佳的視訊。
 
-* Dynamic Media主要支援長度最多30分鐘的簡短影片。
+* Dynamic Media主要支援長度上限30分鐘、解析度超過50 x 50的短片影片。
 * 您可以上傳最多15 GB的主要來源視訊檔案。
 
 下表說明了在對源視頻檔案進行編碼之前，您應該具有的建議大小、外觀比例和最小比特率：
@@ -1153,7 +1153,7 @@ Cost-efficient access to rapidly evolving technology.
 
    如果看不到「目錄」面板，則可能需要點選「首頁」標籤左側的>>圖示。
 
-1. 在右下角的 **[!UICONTROL 屬性]** 分頁，雙點 `thumbnailtime`.
+1. 在右下角的 **[!UICONTROL 屬性]** 分頁，點按兩下 `thumbnailtime`.
 1. 在「編輯縮圖時間」對話方塊中，使用文字欄位以百分比輸入間隔值。
 
    * 點選加號(+)圖示以新增一或多個間隔值欄位。 您可能需要捲動至對話方塊底部，才能查看圖示。
