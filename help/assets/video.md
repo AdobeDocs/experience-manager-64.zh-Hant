@@ -8,7 +8,7 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: 642ade44cac29d38533cfe724f69ba95e691a647
+source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
 workflow-type: tm+mt
 source-wordcount: '10401'
 ht-degree: 4%
@@ -29,7 +29,6 @@ ht-degree: 4%
 >
 >* 請參閱 [在配置Dynamic Media — 混合模式下配置Dynamic MediaCloud Services。](/help/assets/config-dynamic.md)
 >* 請參閱 [配置Dynamic Media-Scene7模式](config-dms7.md) 和 [診斷Dynamic Media-Scene7模式](troubleshoot-dms7.md)
-
 >
 
 
@@ -46,7 +45,7 @@ ht-degree: 4%
       * 瞭解有關 [組織數字資產](organize-assets.md)。
    * 將主源視頻上載到資料夾。 將視頻添加到資料夾時，會根據分配給資料夾的視頻處理配置檔案對它們進行編碼。
 
-      * Dynamic Media主要支援長度最長為30分鐘、解析度最低大於50 x 50的短格式視頻。
+      * Dynamic Media主要支援長度最長為30分鐘、解析度最低大於25 x 25的短格式視頻。
       * 您可以上傳每個高達15 GB的視頻檔案。
       * [上傳視頻](managing-video-assets.md#uploading-and-previewing-video-assets)。
       * 瞭解有關 [支援的輸入檔案格式](assets-formats.md#supported-multimedia-formats)。
@@ -288,7 +287,7 @@ For advice about video encoding, see the following:
 
 對視頻檔案進行編碼時，請使用盡可能高質量的源視頻檔案。 避免使用以前編碼的視頻檔案，因為這些檔案已經壓縮，而進一步編碼會造成質量欠佳的視頻。
 
-* Dynamic Media主要支援長度最長為30分鐘、解析度最低大於50 x 50的短格式視頻。
+* Dynamic Media主要支援長度最長為30分鐘、解析度最低大於25 x 25的短格式視頻。
 * 您可以上載每個高達15 GB的主源視頻檔案。
 
 下表介紹了在對源視頻檔案進行編碼之前應具有的建議大小、長寬比和最小比特率：
