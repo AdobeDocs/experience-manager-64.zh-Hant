@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets 指南
 breadcrumb-title: Assets 指南
 user-guide-description: 建立、管理、提供和最佳化數位資產。
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 42%
+source-wordcount: '646'
+ht-degree: 41%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 42%
    + [Dynamic Media 影片設定檔](video-profiles.md)
    + [Dynamic Media 影像設定檔](image-profiles.md)
    + [智慧型影像](imaging-faq.md)
+   + [具有客戶端設備像素比的智慧成像](client-side-dpr.md)
    + [影片](s7-video.md)
    + [HTTP2 傳送內容](http2.md)
    + [傳送 Dynamic Media 資產](delivering-dynamic-media-assets.md)
@@ -166,7 +167,7 @@ ht-degree: 42%
    + [專用資料夾共用](private-folder.md)
    + [智慧內容服務培訓指南](smart-tags-training-guidelines.md)
    + [視頻呈現](video-renditions.md)
-+ 與其他解決方案的整合 {#integrations}
++ 和其他解決方案整合 {#integrations}
    + [與 [!DNL Adobe Workfront]](workfront-integrations.md)
    + [安裝 [!DNL enhanced connector] 為 [!DNL Workfront]](workfront-connector-install.md)
    + [配置 [!DNL enhanced connector] 為 [!DNL Workfront]](workfront-connector-configure.md)
