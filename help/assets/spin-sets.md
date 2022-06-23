@@ -8,7 +8,7 @@ content-type: reference
 exl-id: 47cb6d40-a5c4-4f6a-9794-bd2eddfaa7d0
 feature: Spin Sets
 role: User
-source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
+source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
 workflow-type: tm+mt
 source-wordcount: '1923'
 ht-degree: 6%
@@ -31,7 +31,7 @@ ht-degree: 6%
 
 建立「旋轉集」時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
-| 限制類型 | 最佳實踐 | 已實現的限制 |
+| 限制類型 | 最佳實踐 | 強加的限制 |
 | --- | --- | --- |
 | 每2D集的最大行/列數 | 每組12-18頁圖片 | 1000 |
 
@@ -117,7 +117,7 @@ ht-degree: 6%
 
 建立「旋轉集」時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
-| 限制類型 | 最佳實踐 | 已實現的限制 |
+| 限制類型 | 最佳實踐 | 強加的限制 |
 | --- | --- | --- |
 | 每2D集的最大行/列數 | 每組12-18頁圖片 | 1000 |
 
