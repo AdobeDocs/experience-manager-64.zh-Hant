@@ -216,9 +216,9 @@ ht-degree: 15%
    + [JCR整合](jcr-integration.md)
    + [程式碼範例](code-samples.md)
    + [排除慢速查詢的故障](troubleshooting-slow-queries.md)
-+ Mobile網{#mobileweb}
-   + [Mobile網](mobile-web.md)
++ 移動Web{#mobileweb}
+   + [移動Web](mobile-web.md)
    + [建立設備組篩選器](groupfilters.md)
    + [網頁響應性設計](responsive.md)
-   + [為Mobile設備建立站點](mobile.md)
+   + [為移動設備建立站點](mobile.md)
    + [模擬器](emulators.md)

@@ -11,7 +11,7 @@ role: User
 source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
 workflow-type: tm+mt
 source-wordcount: '3729'
-ht-degree: 3%
+ht-degree: 4%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 3%
    + [用於AEM Forms的體系結構和部署拓撲](using/aem-forms-architecture-deployment.md)
    + [為AEM Forms安裝選擇持久性類型](using/choosing-persistence-type-for-aem-forms.md)
    + 在OSGi上安裝AEM Forms {#osgi-installation}
-      + [OSGi上支援AEM的表單平台](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
+      + [OSGi上支援AEM的表單平台](https://helpx.adobe.com/tw/experience-manager/6-4/sites/deploying/using/technical-requirements.html)
       + [安裝和配置文檔服務](using/install-configure-document-services.md)
       + [安裝和配置資料捕獲功能](using/installing-configuring-aem-forms-osgi.md)
       + [在OSGi上安裝和配置以Forms為中心的工作流](using/installing-configuring-forms-centric-workflow-on-osgi.md)

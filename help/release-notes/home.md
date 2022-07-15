@@ -35,7 +35,7 @@ AEM 發行說明涵蓋有關最新版 AEM 的重要資訊，包括新功能、�
 | [部署使用手冊](/help/sites-deploying/home.md) | 本指南向您介紹的基本信AEM息。 |
 | [開發使用手冊](/help/sites-developing/home.md) | 瞭解如何構建實AEM例。 |
 | [管理使用手冊](/help/managing/home.md) | 本指南介紹如何成功管AEM理項目。 |
-| [Mobile使用手冊](/help/mobile/home.md) | 本指南介紹如何為移動應用程式建立和管理內容。 |
+| [移動使用手冊](/help/mobile/home.md) | 本指南介紹如何為移動應用程式建立和管理內容。 |
 | [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | 本指南介紹如何與Livefyre共用用戶生成的內容。 |
 
 ## 關鍵資AEM源
