@@ -1,16 +1,17 @@
 ---
 title: Dynamic Media限制
-description: '瞭解建立映像集或旋轉集或上載PDF時的最佳做法和強制限制。 還瞭解Dynamic Media查看器不支援的Web瀏覽器和作業系統組合。 '
+description: 瞭解建立映像集或旋轉集或上載PDF時的最佳做法和強制限制。 還瞭解Dynamic Media查看器不支援的Web瀏覽器和作業系統組合。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: 77b2643c91092a9a08b67fb5ad06a96a79f4deea
+exl-id: 0269ff24-582b-40f8-95e3-3ff4ac3a792f
+source-git-commit: efe93bcf60e0b71fded10ccb77da38c789e08ef9
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 6%
+source-wordcount: '254'
+ht-degree: 4%
 
 ---
 
@@ -20,11 +21,10 @@ ht-degree: 6%
 
 本主題包括以下部分：
 
-* Dynamic Media對資產類型的最佳做法和強制限制
+* [Dynamic Media對資產類型的最佳做法和強制限制](#best-practice-enforced-limits)
+* [不支援的Web瀏覽器和Dynamic Media查看器的作業系統組合](#unsupported-browser-os)
 
-<!-- * Unsupported web browser and operating system combinations for Dynamic Media Viewers -->
-
-## Dynamic Media對資產類型的最佳做法和強制限制
+## Dynamic Media對資產類型的最佳做法和強制限制 {#best-practice-enforced-limits}
 
 在建立「旋轉集」或「映像集」或上載頁面提取PDF時，Adobe建議採用以下最佳做法並強制實施以下限制：
 
@@ -36,21 +36,18 @@ ht-degree: 6%
 | **旋轉集**  — 每2D集的最大行/列數 | 每組12-18頁圖片 | 1000 | 不適用 |
 | **PDF**  — 要考慮提取的PDF的最大頁數 |  | 5000（用於新上載） | 100(所有PDF) |
 
-<!-- NO PDF UPLOAD OPTION IN AEMaaCS | **PDF** - Maximum number of pages for a PDF to be considered for extraction |  | 5000 (for new uploads) | 100 | -->
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
+## 不支援的Web瀏覽器和Dynamic Media查看器的作業系統組合 {#unsupported-browser-os}
 
-
-<!-- ## Unsupported web browser and operating system combinations for Dynamic Media Viewers
-
-Dynamic Media Viewers do not support following combinations of web browser and operating system.
+Dynamic Media查看器不支援以下Web瀏覽器和作業系統組合。
 
 * Internet Explorer 11 + Windows 7
 * Internet Explorer 11 + Windows 8.1
 * Internet Explorer 11 + Windows Phone 8.1
-* Internet Explorer 11 + Windows Phone 8.1 Update
-* Safari 6 + iOS 6.0.1
-* Safari 7 + iOS 7.1
-* Safari 7 + macOS X 10.9 Mavericks
-* Safari 8 + iOS 8.4
-* Safari 8 + macOS X 10.10 Yosemite -->
+* Internet Explorer 11 + Windows Phone 8.1更新
+* Safari 6 +iOS6.0.1
+* Safari 7 +iOS7.1
+* Safari 7 + OS X 10.9小牛隊
+* Safari 8 +iOS8.4
+* Safari 8 + OS X 10.10 Yosemite
