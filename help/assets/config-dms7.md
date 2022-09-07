@@ -8,9 +8,9 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: 4fdb290ddd7493a7ddbe399ebb76189718cff989
+source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
 workflow-type: tm+mt
-source-wordcount: '5614'
+source-wordcount: '5619'
 ht-degree: 3%
 
 ---
@@ -93,8 +93,8 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
 
       >[!IMPORTANT]
       >
-      >在Experience Manager例項上，僅支援一個Cloud Services中的Dynamic Media設定；請勿新增多個設定。 Experience Manager例項上的多個Dynamic Media設定為 _not_ 支援或建議Adobe。<!-- CQDOC-19579 and CQDOC-19612 -->
-   * **[!UICONTROL 公司根資料夾路徑]**
+      >在Experience Manager例項上，僅支援一個Cloud Services中的Dynamic Media設定；請勿新增多個設定。 Experience Manager例項上的多個Dynamic Media設定為 *not* 支援或建議Adobe。<!-- CQDOC-19579 and CQDOC-19612 -->
+   * **[!UICONTROL 公司根資料夾路徑]**  — 您公司的根資料夾路徑。
    * **[!UICONTROL 發佈資產]**  — 選項 **[!UICONTROL 立即]** 表示上傳資產時，系統會擷取資產並立即提供URL/內嵌。 發佈資產不需要使用者干預。 選項 **[!UICONTROL 啟動時]** 表示您必須先明確發佈資產，才能提供URL/內嵌連結。
    * **[!UICONTROL 安全預覽伺服器]**  — 可讓您指定安全轉譯預覽伺服器的URL路徑。 也就是說，產生轉譯後，Experience Manager可以安全地存取和預覽遠端Dynamic Media轉譯(不會將任何二進位檔傳回至Experience Manager執行個體)。
 
