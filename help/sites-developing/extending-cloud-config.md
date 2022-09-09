@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '564'
 ht-degree: 3%
 
 ---
@@ -27,8 +27,8 @@ ht-degree: 3%
 * 設定（例如屬性/段落）繼承自父項。
 * 依路徑從分析節點參考。
 * 可輕鬆擴充。
-* 具有彈性，可應付更複雜的設定，例如[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)。
-* 支援相依性(例如[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)外掛程式需要[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)設定)。
+* 具有彈性，可應付更複雜的配置，例如 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* 支援相依性(例如 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 外掛程式需要 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 設定)。
 
 ## 結構 {#structure}
 
@@ -49,7 +49,7 @@ ht-degree: 3%
    * 配置模板
    * 配置元件
 
-模板和元件必須從基模板繼承`sling:resourceSuperType`:
+範本和元件必須繼承 `sling:resourceSuperType` 從基礎模板：
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -67,7 +67,7 @@ ht-degree: 3%
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-並定義指向自訂元件的`resourceType`。
+並定義 `resourceType` 指向自訂元件。
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -104,9 +104,9 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 
 `/etc/cloudservices/<service-name>`
 
-### 內容模型{#content-model}
+### 內容模型 {#content-model}
 
-內容模型儲存為`cq:Page`，其位於：
+內容模型儲存為 `cq:Page` 在下：
 
 `/etc/cloudservices/<service-name>(/*)`
 
@@ -117,10 +117,10 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-配置儲存在子節點`jcr:content`下。
+配置儲存在子節點下 `jcr:content`.
 
-* 修正了在對話方塊中定義的屬性，應直接儲存在`jcr:node`上。
-* 動態元素（使用`parsys`或`iparsys`）使用子節點來儲存元件資料。
+* 修正在對話方塊中定義的屬性應儲存在 `jcr:node` 直接。
+* 動態元素(使用 `parsys` 或 `iparsys`)使用子節點來儲存元件資料。
 
 ```xml
 /etc/cloudservices/service/config/jcr:content as nt:unstructured
@@ -133,36 +133,36 @@ propertyname
 
 ### API {#api}
 
-如需API的參考檔案，請參閱[com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html)。
+如需API的參考檔案，請參閱 [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
 
-### AEM整合{#aem-integration}
+### AEM整合 {#aem-integration}
 
-可用服務列在&#x200B;**頁面屬性**&#x200B;對話框的&#x200B;**Cloud Services**&#x200B;頁簽中（繼承自`foundation/components/page`或`wcm/mobile/components/page`的任何頁面）。
+可用服務列於 **Cloud Services** 的 **頁面屬性** 對話框（從繼承的任何頁） `foundation/components/page` 或 `wcm/mobile/components/page`)。
 
 索引標籤也提供：
 
 * 可啟用服務的位置連結
 * 從路徑欄位中選擇配置（服務的子節點）
 
-#### 密碼加密{#password-encryption}
+#### 密碼加密 {#password-encryption}
 
 儲存服務的使用者憑證時，應加密所有密碼。
 
-您可以新增隱藏的表單欄位來達到此目的。 此欄位的屬性名稱中應包含注釋`@Encrypted`;即，對於`password`欄位，名稱將寫為：
+您可以新增隱藏的表單欄位來達成此目標。 此欄位應具有註解 `@Encrypted` 在屬性名稱中；即為 `password` 欄位名稱將寫入為：
 
 `password@Encrypted`
 
-然後， `EncryptionPostProcessor`會自動加密屬性（使用`CryptoSupport`服務）。
+然後會自動加密屬性(使用 `CryptoSupport` 服務) `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->這類似於標準` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)`注釋。
+>這類似於標準 ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` 註解。
 
 >[!NOTE]
 >
->依預設，`EcryptionPostProcessor`只會加密對`/etc/cloudservices`提出的`POST`請求。
+>依預設， `EcryptionPostProcessor` 僅加密 `POST` 向 `/etc/cloudservices`.
 
-#### 服務頁jcr:content節點{#additional-properties-for-service-page-jcr-content-nodes}的其他屬性
+#### 服務頁jcr:content節點的其他屬性 {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table> 
  <tbody> 
@@ -172,7 +172,7 @@ propertyname
   </tr> 
   <tr> 
    <td>componentReference</td> 
-   <td>要自動包含在頁面中的元件的參考路徑。<br /> 這可用於其他功能和JS包含。<br /> 這包括所包含頁面上的<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 元件(通常在標籤之 <code>body</code> 前)。<br /> 在Analytics和Target中，我們會使用此功能來包含其他功能，例如追蹤訪客行為的JavaScript呼叫。</td> 
+   <td>要自動包含在頁面中的元件的參考路徑。<br /> 這可用於其他功能和JS包含。<br /> 這包括頁面上的元件，其中<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 包含在內(通常是在 <code>body</code> 標籤)。<br /> 在Analytics和Target中，我們會使用此功能來包含其他功能，例如追蹤訪客行為的JavaScript呼叫。</td> 
   </tr> 
   <tr> 
    <td>說明</td> 
@@ -209,16 +209,15 @@ propertyname
  </tbody> 
 </table>
 
-### 使用案例{#use-cases}
+### 使用案例 {#use-cases}
 
 預設會提供下列服務：
 
-* [追蹤器片段](/help/sites-administering/external-providers.md) （Google、WebTrends等）
+* [追蹤器片段](/help/sites-administering/external-providers.md) (Google、WebTrends等)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-* [Search&amp;Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >
->另請參閱[建立自訂Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)。
+>另請參閱 [建立自訂Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md).

@@ -6,12 +6,12 @@ audience: end-user
 user-guide-title: AEM 6.4傳統UI編寫使用手冊
 breadcrumb-title: 傳統UI編寫指南
 user-guide-description: 本指南涵蓋傳統使用者介面中AEM的製作概念。
-feature: 製作
+feature: Authoring
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 24%
+source-wordcount: '265'
+ht-degree: 25%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 24%
 # AEM 6.4傳統UI編寫使用手冊 {#classic-ui}
 
 + [傳統UI編寫指南概述](home.md)
-+ 傳統UI編寫簡介{#introduction}
++ 傳統UI編寫簡介 {#introduction}
    + [作者的第一步](classic-page-author-first-steps.md)
    + [在傳統UI中編寫](classicui.md)
    + [使用作者環境](author-env.md)
@@ -43,14 +43,13 @@ ht-degree: 24%
    + [為行動裝置製作頁面](classic-feature-mobile.md)
    + [頁面製作元件](classic-page-author-edit-mode.md)
    + [編輯頁面時的鍵盤快速鍵](classic-page-author-keyboard-shortcuts.md)
-+ 網站和頁面功能{#siteandpage}
++ 網站和頁面功能 {#siteandpage}
    + [使用內容片段進行頁面編寫](classic-page-author-content-fragments.md)
    + [回應式版面](classic-page-author-responsive-layout.md)
    + [使用頁面版本](classic-page-author-work-with-versions.md)
    + [使用標記](classic-feature-tags.md)
    + [支架](classic-feature-scaffolding.md)
    + [在設計模式中配置元件](classic-page-author-design-mode.md)
-   + [新增Search&amp;Promote功能至您的頁面](classic-feature-search-promote.md)
    + [元件](classic-page-author-default-components.md)
 + 工作流程 {#workflows}
    + [參與工作流程](classic-workflows-participating.md)
@@ -63,7 +62,7 @@ ht-degree: 24%
    + [提升啟動](classic-launches-promoting.md)
 + 個性化 {#personalization}
    + [了解區段](classic-personalization-campaigns-segmentation.md)
-   + [行銷活動管理](classic-personalization-campaigns.md)
+   + [Campaign Management](classic-personalization-campaigns.md)
    + [茶匙和策略](classic-personalization-campaigns-teasers-strategy.md)
    + [著陸頁面](classic-personalization-campaigns-landingpage.md)
    + [目標選件](classic-personalization-campaigns-target-offers.md)
@@ -79,7 +78,7 @@ ht-degree: 24%
    + [使用Adobe Campaign](classic-personalization-ac.md)
    + [Adobe Campaign元件](classic-personalization-ac-components.md)
    + [定位您的Adobe Campaign](classic-personalization-ac-target.md)
-+ 在傳統UI {#assets}中編寫資產
++ 在傳統UI中編寫資產 {#assets}
    + [使用資產](classicui-assets.md)
    + [傳送Dynamic Media資產](dynamic-media-assets-delivering.md)
    + [將Dynamic Media Assets新增至頁面](dynamic-media-assets-adding-to-page.md)
