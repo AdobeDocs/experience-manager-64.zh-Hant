@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b2888dd2d523488b416550d5826f8cf077a25e32
+source-git-commit: 5e6376f84b69022aec078d9f2f9163aaa8a0a37c
 workflow-type: tm+mt
-source-wordcount: '3483'
+source-wordcount: '3459'
 ht-degree: 0%
 
 ---
@@ -247,8 +247,6 @@ OSGi &quot;*提供標準化基元，允許從小型、可重複使用和協作�
 * **指令碼用戶**  — 此可選屬性可指定用於讀取指令碼的儲存庫用戶帳戶。 如果未指定帳戶，則 `admin` 預設會使用使用者。
 
 * **預設擴充功能** 將使用預設行為的擴充功能清單。 這表示資源類型的最後一個路徑區段可作為指令碼名稱使用。
-
-**Day Commons GFX字型幫助程式** 渲染圖形時，可使用DrawText嵌入文本。 為此，您也可以安裝您自己的字型：
 
 * 定義 **字型路徑** 搜索項目特定字型。
 
