@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: b06865e213fd20ed328104642eda812d4dfe43ed
+source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3460'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 OSGi &quot;*提供標準化基元，允許從小型、可重複使用和協作的元件構建應用程式。 這些元件可組成應用程式並部署*」。
 
-這樣可以輕鬆管理捆綁包，因為它們可以單獨停止、安裝和啟動。 會自動處理互依性。 每個OSGi元件(請參閱 [OSGi規範](https://www.osgi.org/Specifications/HomePage))包含在其中一個不同套件組合中。 使用AEM時，有數種方法可管理這類套件組合的組態設定；請參閱 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以取得詳細資訊和建議的實務。
+這樣可以輕鬆管理捆綁包，因為它們可以單獨停止、安裝和啟動。 會自動處理互依性。 每個OSGi元件(請參閱 [OSGi規範](https://docs.osgi.org/specification/))包含在其中一個不同套件組合中。 使用AEM時，有數種方法可管理這類套件組合的組態設定；請參閱 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以取得詳細資訊和建議的實務。
 
 下列OSGi組態設定（根據套件組合列出）與專案實作相關。 並非所有列出的設定都需要調整，有些設定可協助您了解AEM的運作方式。
 
