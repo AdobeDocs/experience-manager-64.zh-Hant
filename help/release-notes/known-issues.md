@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: 7f80933dfe8439bbd57ef85ece96399f7ec39f64
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 * **Omnisearch:** 左側邊欄述詞與Omnisearch伺服器請求(GRANITE-20524)一起運作
 * **Omnisearch:** Omnisearch不支援內容路徑(GRANITE-16044)
 
-## 資產 {#assets}
+## Assets {#assets}
 
 * **搜尋**:如果搜尋字串的開頭為空白字元，搜尋不會傳回任何結果 [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
@@ -133,14 +133,14 @@ ht-degree: 3%
 
 (CQ-4238462)
 
-### Adobe Sign整合
+### Acrobat Sign整合
 
-* Adobe Sign排程器間歇性停止運作，因此表單待定符號不會移至提交。 若要解決問題，請重新啟動 **Apache Sling排程器支援** 從AEM web主控台套件： https://[*伺服器*]:[*埠*]/system/console/bundles。
+* Acrobat Sign排程器間歇性停止運作，因此表單待定符號不會移至提交。 若要解決問題，請重新啟動 **Apache Sling排程器支援** 從AEM web主控台套件： https://[*伺服器*]:[*埠*]/system/console/bundles。
 
 ### 適用性Forms製作
 
 * 適用性表單中的圖表元件佔用的空間通常比較多。
 * 在Forms Manager UI中儲存適用性表單、適用性表單片段或互動式通訊的屬性時，會傳回例外狀況。
 * Android 6.0 Samsung 裝置不遵循為適用性表單文字方塊指定的字元數上限。(參考編號 CQ-4235205)
-* 當您從Apple iOS裝置提交包含標準HTML上傳欄位的表單時，有時不會傳送檔案內容，而會在另一端收到0位元組檔案。 Apple iOS 15.1已修正問題。
+* 從 Apple iOS 裝置提交包含標準 HTML 上傳欄位的表單時，有時不會傳送檔案內容並在另一端收到 0 位元組檔案。Apple iOS 15.1 提供此問題的修正。
 

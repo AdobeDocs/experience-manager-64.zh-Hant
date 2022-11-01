@@ -8,7 +8,7 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 指南
 breadcrumb-title: Forms 指南
 user-guide-description: 建立、管理、發佈和更新數位表單。
 role: User
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
 workflow-type: tm+mt
 source-wordcount: '3729'
 ht-degree: 4%
@@ -119,7 +119,7 @@ ht-degree: 4%
       + [Forms JEE工作流程](using/forms-workflow-jee-handling-user-data.md)
       + [表單入口網站](using/forms-portal-handling-user-data.md)
       + [通信管理](using/correspondence-management-handling-user-data.md)
-      + [與Adobe Sign整合](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+      + [與Acrobat Sign整合](/help/forms/using/integration-adobe-sign-handling-user-data.md)
       + [文件安全性](/help/forms/using/document-security-handling-user-data.md)
    + 強化AEM Forms環境 {#hardening-aem-forms-environment}
       + [在OSGi環境中強化和保護AEM表單](using/hardening-securing-aem-forms-environment.md)
@@ -161,7 +161,7 @@ ht-degree: 4%
 + 適用性Forms — 進階編寫 {#adaptive-forms-advanced-authoring}
    + [使用JSON結構建立最適化表單](using/adaptive-form-json-schema-form-model.md)
    + [使用XML結構建立最適化表單](using/adaptive-form-xml-schema-form-model.md)
-   + [在最適化表單中使用Adobe Sign](using/working-with-adobe-sign.md)
+   + [在最適化表單中使用Acrobat Sign](using/working-with-adobe-sign.md)
    + [建立和使用主題](using/themes.md)
    + [適用性表單規則編輯器](using/rule-editor.md)
    + [從適用性表單叫用表單資料模型服務的API](using/invoke-form-data-model-services.md)
@@ -181,7 +181,7 @@ ht-degree: 4%
    + [自動測試最適化表單](using/calvin.md)
    + [最適化表單的樣式結構](using/styling-constructs-adaptive-forms.md)
    + [同步適用性Forms與XFA表單範本](using/synchronizing-adaptive-forms-xfa.md)
-   + [整合Adobe Sign與AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
+   + [整合Acrobat Sign與AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [建立和管理表單中資產的審核](using/create-reviews-forms.md)
    + [適用性表單的標準驗證錯誤訊息](using/standard-validation-error-messages-adaptive-forms.md)
 + 互動式通訊 {#interactive-communications}
