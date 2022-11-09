@@ -1,21 +1,21 @@
 ---
 title: 相關聯的內容
-seo-title: 相關聯的內容
+seo-title: Associated Content
 description: 關聯內容提供連線，讓資產可在新增至內容頁面時（選擇性）與片段搭配使用。
-seo-description: 關聯內容提供連線，讓資產可在新增至內容頁面時（選擇性）與片段搭配使用。
+seo-description: Associated content provides the connection so that assets can be (optionally) used with the fragment when it is added to a content page.
 uuid: 1bc1eefa-7a7c-43be-a8a8-0d153d60c5c4
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 exl-id: af4f25d4-a784-47fe-bca4-75c8d373f7d2
-feature: 內容片段
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 14%
+source-wordcount: '229'
+ht-degree: 15%
 
 ---
 
@@ -23,17 +23,17 @@ ht-degree: 14%
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用 [AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md).
 
-關聯內容提供連線，以便當資產（亦即）新增至內容頁面時，可（選擇性）與片段搭配使用。 這可讓[提供在頁面](/help/sites-authoring/content-fragments.md#using-associated-content)上使用內容片段時可存取的資產範圍，同時有助於縮短搜尋適當資產所需的時間。
+關聯內容提供連線，以便當資產（亦即）新增至內容頁面時，可（選擇性）與片段搭配使用。 這可提供彈性，方法為 [在頁面上使用內容片段時，提供可存取的資產範圍](/help/sites-authoring/content-fragments.md#using-associated-content)，同時有助於縮短搜尋適當資產所需的時間。
 
 ## 新增相關內容 {#adding-associated-content}
 
 >[!NOTE]
 >
->有各種方法可將[視覺資產（例如影像）](content-fragments.md#fragments-with-visual-assets)新增至片段和/或頁面。
+>有多種方法可新增 [視覺資產（例如影像）](content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
 
-若要建立關聯，您必須先[將媒體資產新增至集合](managing-collections-touch-ui.md#adding-assets-to-a-collection)。 完成後，您可以：
+要建立關聯，首先需要 [將您的媒體資產新增至集合](managing-collections-touch-ui.md#adding-assets-to-a-collection). 完成後，您可以：
 
 1. 開啟您的片段，然後從 **[!UICONTROL 側面板選取]** 「關聯內容」。
 
@@ -54,7 +54,7 @@ ht-degree: 14%
 
 關聯集合後，您可以：
 
-* **** 移除關聯。
-* **新增** 資產至集合。
+* **移除** 協會。
+* **新增資產** 到集合。
 * 選取資產以執行進一步動作。
 * 編輯資產。

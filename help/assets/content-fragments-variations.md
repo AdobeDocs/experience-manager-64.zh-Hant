@@ -1,20 +1,20 @@
 ---
 title: 變化 - 編寫片段內容
-seo-title: 變化 - 編寫片段內容
+seo-title: Variations - Authoring Fragment Content
 description: 變異可讓您製作片段的內容，然後根據用途建立該內容的變異（如果需要）。
-seo-description: 變異可讓您製作片段的內容，然後根據用途建立該內容的變異（如果需要）。
+seo-description: Variations allow you to author content for the fragment, then create variations of that content according to purpose (if required).
 uuid: affccda0-be5f-47d2-85b6-8701b77ac932
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 exl-id: 15a5fdc9-2878-4f95-83ee-02a2899aeb43
-feature: 內容片段
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1738'
 ht-degree: 15%
 
 ---
@@ -23,23 +23,23 @@ ht-degree: 15%
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](../release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用 [AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](../release-notes/sp-release-notes.md).
 
-[](content-fragments.md#constituent-parts-of-a-content-fragment) 變數是內容片段的重要功能，因為可讓您建立和編輯主要內容的復本，以用於特定頻道和/或案例。
+[變異](content-fragments.md#constituent-parts-of-a-content-fragment) 是內容片段的重要功能，因為它們可讓您建立和編輯主要內容的復本，以用於特定頻道和/或案例。
 
-從&#x200B;**Variations**&#x200B;標籤，您可以：
+從 **變異** 標籤：
 
-* [輸入](#authoring-your-content) 片段的內容
-* [建立和管](#managing-variations) 理Mastercontent的變 **** 數
+* [輸入內容](#authoring-your-content) 您的片段
+* [建立和管理變數](#managing-variations) 的 **主版** 內容
 
 根據要編輯的資料類型執行一系列其他動作；例如：
 
-* [將視覺化資產插入您的片段](#inserting-assets-into-your-fragment) （影像）
-* 在[RTF](#rich-text)、[純文字](#plain-text)和[Markdown](#markdown)之間進行編輯
+* [將視覺化資產插入片段](#inserting-assets-into-your-fragment) （影像）
+* 在之間選擇 [RTF](#rich-text), [純文字](#plain-text) 和 [Markdown](#markdown) 編輯
 
 * [上傳內容](#uploading-content)
 
-* [檢視索引鍵統計](#viewing-key-statistics) （關於多行文字）
+* [查看關鍵統計資訊](#viewing-key-statistics) （關於多行文本）
 * [摘要文字](#summarizing-text)
 
 * [將變數與主內容同步](#synchronizing-with-master)
@@ -50,14 +50,14 @@ ht-degree: 15%
 
 ## 編寫內容 {#authoring-your-content}
 
-當您開啟內容片段進行編輯時，**Variations**&#x200B;標籤將依預設開啟。 您可以在此為「主版」或您擁有的任何變體製作內容。 您可以：
+當您開啟內容片段進行編輯時， **變異** 標籤預設為開啟。 您可以在此為「主版」或您擁有的任何變體製作內容。 您可以：
 
-* 直接在&#x200B;**Valiations**&#x200B;標籤中進行編輯
-* 開啟[全螢幕編輯器](#full-screen-editor)以：
+* 直接在中進行編輯 **變異** 標籤
+* 開啟 [全螢幕編輯器](#full-screen-editor) 至：
 
-   * 選擇[Format](#formats)
-   * 查看更多編輯選項（[ RTF](#rich-text)格式）
-   * 存取[actions](#actions)的範圍
+   * 選取 [格式](#formats)
+   * 查看更多編輯選項( [RTF](#rich-text) 格式)
+   * 存取範圍 [動作](#actions)
 
 例如：
 
@@ -69,7 +69,7 @@ ht-degree: 15%
 
 * 使用結構化內容編輯片段
 
-   結構化片段包含內容模型中定義之各種資料類型的各種欄位。 對於任何多行欄位，[全螢幕編輯器](#full-screen-editor)都可用。
+   結構化片段包含內容模型中定義之各種資料類型的各種欄位。 對於任何多行欄位， [全螢幕編輯器](#full-screen-editor) 的URL區段。
 
    ![cfm-6420-16](assets/cfm-6420-16.png)
 
@@ -81,21 +81,21 @@ ht-degree: 15%
 
 全螢幕編輯器提供：
 
-* 存取各種[動作](#actions)
-* 視[format](#formats)，其他格式選項([RTF](#rich-text))而定
+* 存取各種 [動作](#actions)
+* 視 [格式](#formats)，其他格式選項([RTF](#rich-text))
 
 ### 動作 {#actions}
 
-當全螢幕編輯器（即多行文字）開啟時，下列動作也可用（適用於所有[formats](#formats)）:
+下列動作也可供使用(適用於 [格式](#formats))，當全螢幕編輯器（即多行文字）開啟時：
 
-* 選取[format](#formats)（[Rtf](#rich-text), [純文字](#plain-text), [Markdown](#markdown)）
+* 選取 [格式](#formats) ([RTF](#rich-text), [純文字](#plain-text), [Markdown](#markdown))
 * [顯示文本統計資訊](#viewing-key-statistics)
 * [上傳內容](#uploading-content)
 * [與主版同步](#synchronizing-with-master) （編輯變數時）
 * [摘要文字](#summarizing-text)
-* [](content-fragments-variations.md#annotating-a-content-fragment) 註解您的文字
+* [注釋](content-fragments-variations.md#annotating-a-content-fragment) 您的文字
 
-* [將視覺化資產插入您的片段](#inserting-assets-into-your-fragment) （影像）
+* [將視覺化資產插入片段](#inserting-assets-into-your-fragment) （影像）
 
 ### 格式 {#formats}
 
@@ -130,11 +130,11 @@ RTF編輯可讓您設定格式：
    * 拼字檢查程式
    * [註解](content-fragments-variations.md#annotating-a-content-fragment)
 
-也可從全螢幕編輯器存取[actions](#actions)。
+此 [動作](#actions) 也可從全螢幕編輯器存取。
 
 ### 純文字 {#plain-text}
 
-純文字檔案允許快速輸入內容，而不需格式設定或標籤資訊。 您也可以開啟全螢幕編輯器，以進一步[actions](#actions)。
+純文字檔案允許快速輸入內容，而不需格式設定或標籤資訊。 您也可以開啟全螢幕編輯器以進一步 [動作](#actions).
 
 >[!CAUTION]
 >
@@ -144,7 +144,7 @@ RTF編輯可讓您設定格式：
 
 >[!NOTE]
 >
->如需完整資訊，請參閱[Markdown](content-fragments-markdown.md)檔案。
+>如需完整資訊，請參閱 [Markdown](content-fragments-markdown.md) 檔案。
 
 這可讓您使用Markdown來設定文字格式。 您可以定義：
 
@@ -158,7 +158,7 @@ RTF編輯可讓您設定格式：
 * 程式碼區塊
 * 反斜線逸出
 
-您也可以開啟全螢幕編輯器，以進一步[actions](#actions)。
+您也可以開啟全螢幕編輯器以進一步 [動作](#actions).
 
 >[!CAUTION]
 >
@@ -180,13 +180,13 @@ RTF編輯可讓您設定格式：
 
 >[!NOTE]
 >
->在更為技術的層面上，系統保留其評分的句子，以根據特定算法提供資訊密度和唯一性的&#x200B;*最佳比例*。
+>在更技術性的層面上，系統會保留其評分為提供的句子 *資訊密度和唯一性的最佳比* 根據具體算法。
 
 >[!CAUTION]
 >
 >內容片段必須具備有效的語言資料夾作為上階；這可用來決定要使用的語言模型。
 >
->例如，`en/`如下列路徑：
+>例如， `en/` 如下列路徑所示：
 >
 >`/content/dam/my-brand/en/path-down/my-content-fragment`
 
@@ -200,19 +200,17 @@ RTF編輯可讓您設定格式：
 >* [德文(de)來自Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 >* [Software Distribution的義大利文(it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 >* [Software Distribution的西班牙文(es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-
 >
 
 
-
-1. 選擇&#x200B;**[!UICONTROL 主版]**&#x200B;或所需的變數。
+1. 選擇 **[!UICONTROL 主版]** 或所需的變數。
 1. 開啟全螢幕編輯器。
 
-1. 從工具欄中選擇&#x200B;**[!UICONTROL 摘要文本]**。
+1. 選擇 **[!UICONTROL 摘要文字]** 的上界。
 
    ![cf-17](assets/cf-17.png)
 
-1. 指定目標字數，然後選擇&#x200B;**[!UICONTROL Start]**:
+1. 指定目標字數並選取 **[!UICONTROL 開始]**:
 1. 原始文本與建議的總結並排顯示：
 
    * 任何要刪除的句子都以紅色突出顯示，並帶有字串。
@@ -221,21 +219,21 @@ RTF編輯可讓您設定格式：
 
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
-1. 選擇&#x200B;**[!UICONTROL 匯總]**&#x200B;以確認更改。
+1. 選擇 **[!UICONTROL 摘要]** 以確認變更。
 
 ### 為內容片段加上註解 {#annotating-a-content-fragment}
 
 若要注釋片段：
 
-1. 選擇&#x200B;**[!UICONTROL 主版]**&#x200B;或所需的變數。
+1. 選擇 **[!UICONTROL 主版]** 或所需的變數。
 1. 開啟全螢幕編輯器。
-1. 選取一些文字。 「**[!UICONTROL 注釋]**」表徵圖可用。
+1. 選取一些文字。 此 **[!UICONTROL 注釋]** 圖示即可使用。
 
    ![cfm-6420-24](assets/cfm-6420-24.png)
 
 1. 對話方塊將會開啟。 您可以在此輸入注釋。
 
-1. 關閉全螢幕編輯器，並&#x200B;**[!UICONTROL 儲存]**&#x200B;片段。
+1. 關閉全螢幕編輯器，並 **[!UICONTROL 儲存]** 片段。
 
 ### 查看、編輯、刪除注釋 {#viewing-editing-deleting-annotations}
 
@@ -249,27 +247,27 @@ RTF編輯可讓您設定格式：
 
 * 刪除應用了注釋的整個文本時，注釋也會被刪除。
 
-* 在片段編輯器中選取&#x200B;**[!UICONTROL Annotations]**&#x200B;標籤，即可列出及刪除。
+* 您可以選取 **[!UICONTROL 註解]** 頁簽。
 
    ![cfm-6420-25](assets/cfm-6420-25.png)
 
-* 可在[時間軸](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments)中查看和刪除所選片段。
+* 可在 [時間表](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) ，針對所選片段。
 
 ### 在片段中插入資產 {#inserting-assets-into-your-fragment}
 
-若要簡化製作內容片段的程式，您可以直接將[Assets](managing-assets-touch-ui.md)（影像）新增至片段。
+若要簡化編寫內容片段的程式，您可以新增 [資產](managing-assets-touch-ui.md) （影像）直接傳至片段。
 
-這些檔案將添加到片段的段落序列中，而無需任何格式；在頁面](/help/sites-authoring/content-fragments.md)上使用/參考[片段時，可執行格式設定。
+這些檔案將添加到片段的段落序列中，而無需任何格式；若 [頁面上使用/參考片段](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 >
 >無法在參考頁面上移動或刪除這些資產，必須在片段編輯器中完成此操作。
 >
->不過，必須在[頁面編輯器](/help/sites-authoring/content-fragments.md)中完成資產的格式化（例如大小）。 片段編輯器中資產的表示純粹是為了編寫內容流程。
+>不過，必須在 [頁面編輯器](/help/sites-authoring/content-fragments.md). 片段編輯器中資產的表示純粹是為了編寫內容流程。
 
 >[!NOTE]
 >
->有各種方法可將[images](content-fragments.md#fragments-with-visual-assets)新增至片段和/或頁面。
+>有多種方法可新增 [影像](content-fragments.md#fragments-with-visual-assets) 至片段和/或頁面。
 
 1. 將游標置於要添加影像的位置。
 1. 使用「插 **[!UICONTROL 入資產]** 」圖示開啟搜尋對話方塊。
@@ -297,25 +295,25 @@ RTF編輯可讓您設定格式：
 
 ### 建立變異 {#creating-a-variation}
 
-變數可讓您取用&#x200B;**Master**&#x200B;內容，並根據用途（如有需要）加以變更。
+變數可讓您 **主版** 內容，並視需要加以變更。
 
 要建立新變數：
 
 1. 開啟您的片段，並確認側面板可見。
-1. 從側面板的表徵圖欄中選擇&#x200B;**[!UICONTROL 變異]**。
-1. 選擇&#x200B;**[!UICONTROL 建立變異]**。
+1. 選擇 **[!UICONTROL 變異]** 從側面板的表徵圖欄中。
+1. 選擇 **[!UICONTROL 建立變異]**.
 1. 將會開啟對話方塊，指定新變 **[!UICONTROL 數的]****[!UICONTROL 「標題」(Title)和「說明」(Description]** )。
 1. 選擇 **[!UICONTROL 添加]**;片段 **[!UICONTROL Master]** 將會複製到新的變數，現在會開啟供編 [輯](#editing-a-variation)。
 
    >[!NOTE]
    >
-   >建立新變異時，一律會複製&#x200B;**Master**，而非目前開啟的變異。
+   >建立新變異時，一律 **主版** 會複製，而非目前開啟的變數。
 
 ### 編輯變異 {#editing-a-variation}
 
 您可以在下列任一項之後，變更變異內容：
 
-* [建立您的變異](#creating-a-variation)。
+* [建立變異](#creating-a-variation).
 * 開啟現有片段，然後從側面板選取所需的變數。
 
 ![cfm-6420-26](assets/cfm-6420-26.png)
@@ -324,35 +322,35 @@ RTF編輯可讓您設定格式：
 
 要更名現有變數：
 
-1. 開啟您的片段，然後從側面板選取&#x200B;**[!UICONTROL 變體]**。
+1. 開啟您的片段並選取 **[!UICONTROL 變異]** 從側面板。
 1. 選取所需的變數。
-1. 從&#x200B;**[!UICONTROL Actions]**&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL Rename]**。
+1. 選擇 **[!UICONTROL 重新命名]** 從 **[!UICONTROL 動作]** 下拉。
 
 1. 在產生的對 **[!UICONTROL 話方塊中]** ，輸入新的「 **** 標題」和/或「說明」。
 
-1. 確認&#x200B;**[!UICONTROL Rename]**&#x200B;動作。
+1. 確認 **[!UICONTROL 重新命名]** 動作。
 
 >[!NOTE]
 >
->這只會影響變數&#x200B;**Title**。
+>這只會影響變數 **標題**.
 
 ### 刪除變數 {#deleting-a-variation}
 
 要刪除現有變數：
 
-1. 開啟您的片段，然後從側面板選取&#x200B;**[!UICONTROL 變體]**。
+1. 開啟您的片段並選取 **[!UICONTROL 變異]** 從側面板。
 1. 選取所需的變數。
-1. 從&#x200B;**[!UICONTROL Actions]**&#x200B;下拉式清單中選擇&#x200B;**[!UICONTROL Delete]**。
+1. 選擇 **[!UICONTROL 刪除]** 從 **[!UICONTROL 動作]** 下拉。
 
-1. 確認對話方塊中的&#x200B;**[!UICONTROL Delete]**&#x200B;動作。
+1. 確認 **[!UICONTROL 刪除]** 動作。
 
 >[!NOTE]
 >
->無法刪除&#x200B;**Master**。
+>無法刪除 **主版**.
 
 ### 與主伺服器同步 {#synchronizing-with-master}
 
-**** Master是內容片段的必要部分，根據定義，它保留內容的主副本，而變數保留該內容的個別更新和定製版本。更新主版時，這些變更也可能與變更相關，因此需要傳播至變更。
+**主版** 是內容片段的必要部分，並且根據定義，它保留內容的主副本，而變化保留該內容的個別更新和定製版本。 更新主版時，這些變更也可能與變更相關，因此需要傳播至變更。
 
 編輯變體時，您可以存取動作，將變體的目前元素與主版同步。 這可讓您自動將對Master所做的變更複製到所需的變數。
 
@@ -366,11 +364,11 @@ RTF編輯可讓您設定格式：
 >
 >將變 *更從變更傳輸&#x200B;**至Master*** ，不提供選項。
 
-1. 在片段編輯器中開啟內容片段。 請確定已編輯&#x200B;**主版**。
+1. 在片段編輯器中開啟內容片段。 確保 **主版** 已編輯。
 2. 選擇特定變數，然後從以下任一項選擇適當的同步操作：
 
-   * **Actions**&#x200B;下拉式選取器 — **與主版**&#x200B;同步目前元素
-   * 全螢幕編輯器的工具列 — **與主版同步**
+   * the **動作** 下拉式選取器 —  **與主版同步目前元素**
+   * 全螢幕編輯器的工具列 —  **與主版同步**
 
 3. 主版和變異會並排顯示：
 
@@ -379,4 +377,4 @@ RTF編輯可讓您設定格式：
 
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
-4. 選擇&#x200B;**[!UICONTROL Synchronize]**，將更新並顯示變數。
+4. 選擇 **[!UICONTROL 同步]**，變數會更新並顯示。

@@ -2,19 +2,19 @@
 title: Markdown
 seo-title: Markdown
 description: 您編寫內容時，內容片段編輯器會使用Markdown語法，讓您輕鬆撰寫內容。
-seo-description: 您編寫內容時，內容片段編輯器會使用Markdown語法，讓您輕鬆撰寫內容。
+seo-description: When you are authoring, the content fragment editor uses markdown syntax to allow you to easily write content.
 uuid: 12b185a5-3d87-4d7c-8d09-8cc2726009a8
-contentOwner: Alison Heimoz
+contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 exl-id: 209f0e02-b883-4104-8358-01cab15e5db2
-feature: 內容片段
+feature: Content Fragments
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '535'
 ht-degree: 4%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md)。
+>某些內容片段功能需要應用 [AEM 6.4 Service Pack 2(6.4.2.0)或更新版本](/help/release-notes/sp-release-notes.md).
 
-當您是[authoring](content-fragments-variations.md#authoring-your-content)時，內容片段編輯器會使用&#x200B;*markdown*&#x200B;語法，讓您輕鬆撰寫內容：
+當您 [製作](content-fragments-variations.md#authoring-your-content)，內容片段編輯器使用 *markdown* 語法可讓您輕鬆撰寫內容：
 
 ![markdown編輯器](/help/assets/assets/cfm-6420-08.png)
 
@@ -71,7 +71,7 @@ ht-degree: 4%
 
 您可以建立內嵌連結和參考連結。
 
-在這兩種樣式中，連結文字會以方括弧`[]`分隔。
+在這兩種樣式中，連結文字會以方括弧分隔 `[]`.
 
 以下是內嵌連結的範例：
 
@@ -141,7 +141,7 @@ ht-degree: 4%
 
 您可以建立已排序和未排序的清單。
 
-若要建立無序清單，請使用&amp;ast;符號。 例如：
+要建立無序清單，請使用&amp;ast;符號。 例如：
 
     `* item in list`
 
@@ -177,7 +177,7 @@ ht-degree: 4%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-若要指出程式碼的範圍，請以反勾號括住(&amp;grave;)。 與預格式化的代碼塊不同，代碼範圍指示正常段落中的代碼。
+若要指出程式碼的跨度，請以反勾號括住代碼(&grave;)。 與預格式化的代碼塊不同，代碼範圍指示正常段落中的代碼。
 
 例如：
 
@@ -193,7 +193,7 @@ ht-degree: 4%
 
 ## 反斜線逸出 {#backslash-escapes}
 
-您可以使用反斜線逸出來產生文字字元，這些字元在格式語法中有特殊意義。 例如，如果您想要以常值星號括住單字（而非HTML &lt;em>標籤），您可以在星號前使用反斜線，例如：
+您可以使用反斜線逸出來產生文字字元，這些字元在格式語法中有特殊意義。 例如，如果您想要以常值星號(而非HTML標籤)圍住單字，則可以在星號前使用反斜線，例如：
 
     `\\*literal asterisks\\*`
 
