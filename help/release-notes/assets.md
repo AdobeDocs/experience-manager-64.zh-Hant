@@ -10,10 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 55e904cb24bac68c0b1bbea59786cb4c0c711d61
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1647'
-ht-degree: 2%
+source-wordcount: '1641'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 2%
 
 AdobeCreative Cloud中的企業資產連結可簡化創意人員與行銷人員在內容建立程式中的協作。 這是企業Creative Cloud中的新原生功能，可直接從Adobe Photoshop、Adobe Illustrator或Adobe InDesign連線至AEM Assets，而不需離開這些工具。
 
-若要進一步了解功能、必要條件及存取方式，請參閱[Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html)頁面。
+若要進一步了解功能、必要條件及存取方式，請參閱 [Adobe資產連結](https://helpx.adobe.com/tw/enterprise/using/adobe-asset-link.html) 頁面。
 
 ## 增強智慧標籤(由Adobe Sensei提供技術支援) {#enhanced-smart-tags-powered-by-adobe-sensei}
 
@@ -34,11 +34,11 @@ AEM 6.4除了於AEM 6.3中啟動的智慧標籤外，也導入了以人工智慧
 * 智慧內容服務學習客戶的業務分類法，並使用該分類法來自動標籤數位資產，除了通用標籤外，還有與客戶相關的標籤。 它可大幅改善資產發現能力，並縮短上市時間。
 * Adobe Sensei提供智慧內容服務，可讓您根據業務分類訓練影像識別演算法。 然後，系統會使用此內容智慧，對類似資產套用相關標籤。
 
-若要使用AEM Assets增強智慧標籤，請安裝AEM 6.4](https://helpx.adobe.com/tw/experience-manager/aem-releases-updates.html)的[最新Service Pack。
+若要使用AEM Assets增強智慧標籤，請安裝 [最新的AEM 6.4 Service Pack](https://helpx.adobe.com/tw/experience-manager/aem-releases-updates.html).
 
 ## 智慧翻譯搜尋(由Adobe Sensei提供技術支援) {#smart-translation-search-powered-by-adobe-sensei}
 
-AEM 6.4推出智慧翻譯搜尋功能，以支援多語言搜尋案例。 現在，擁有跨多個地區設定的全球分散團隊的客戶可以存取不同語言的搜尋功能，而無須執行成本高昂且耗時的翻譯工作流程。
+AEM 6.4引入了智慧翻譯搜尋功能，以支援多語言搜尋案例。 現在，擁有跨多個地區設定的全球分散團隊的客戶可以存取不同語言的搜尋功能，而無須執行成本高昂且耗時的翻譯工作流程。
 
 * 無需手動干預即可翻譯搜尋查詢。
 * 智慧標籤會以英文產生，並會機器翻譯成其他語言。
@@ -74,7 +74,7 @@ AEM 6.4可大幅改善瀏覽、搜尋、多頁資產和管理工具等領域的�
 
 目錄
 
-* 改善使用者體驗，與範本使用者介面保持一致。 如需詳細資訊，請參閱[目錄製作程式](../sites-administering/catalog-producer.md)。
+* 改善使用者體驗，與範本使用者介面保持一致。 如需詳細資訊，請參閱 [目錄製作者](../sites-administering/catalog-producer.md).
 
 ## 中繼資料 {#metadata}
 
@@ -105,7 +105,7 @@ AEM 6.4提供重大資產報告增強功能：
 
 ## AEM 桌面應用程式 {#aem-desktop-app}
 
-AEM案頭應用程式已更新至1.8版，與AEM 6.4相容。AEM案頭應用程式的完整變更清單提供在專用的[AEM案頭應用程式發行說明](https://docs.adobe.com/content/help/zh-Hant/experience-manager-desktop-app/using/release-notes.html)檔案中。\
+AEM案頭應用程式已更新至1.8版，與AEM 6.4相容。AEM案頭應用程式的完整變更清單提供於專用的 [AEM案頭應用程式發行說明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) 檔案。\
 以下是自AEM 6.3發行以來的AEM案頭應用程式重點清單：
 
 * 可在背景上傳階層式資料夾。
@@ -117,8 +117,8 @@ AEM案頭應用程式已更新至1.8版，與AEM 6.4相容。AEM案頭應用程�
 
 為了更輕鬆存取檔案和最佳實務，您可以取得下列檔案：
 
-* [使用手冊](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)，針對使用應用程式的使用者。
-* [安裝指南](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/install-upgrade.html)，旨在讓管理員設定AEM和AEM案頭應用程式以搭配使用
+* [使用手冊](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)，針對使用應用程式的使用者。
+* [安裝指南](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/install-upgrade.html)，旨在讓管理員設定AEM和AEM案頭應用程式以共同運作
 
 ## 分層儲存 {#tiered-storage}
 
@@ -127,7 +127,7 @@ AEM 6.4包含一組支援各種分層儲存首選項和實施生命週期規則�
 * 用戶可以隨意選擇儲存類並稍後更改儲存類，並定義將資產從一個類儲存到另一個類的規則，或管理其資產的生命週期。
 * 使用者透過選擇不同的AWS或Azure來降低儲存成本。
 
-有關支援平台的概述，請參閱[技術要求檔案](../sites-deploying/technical-requirements.md)。
+如需支援平台的概觀，請參閱 [技術需求檔案](../sites-deploying/technical-requirements.md).
 
 ## 已關閉的使用者群組 {#closed-user-group}
 
@@ -138,7 +138,7 @@ AEM 6.4包含一組支援各種分層儲存首選項和實施生命週期規則�
 
 Dynamic Media 6.4版支援新模式：透過AEM Assets網頁UI上傳和管理主資產，而Dynamic Media雲端傳送服務會在背景處理動態轉譯和其他動態媒體功能。
 
-在此模式中(首先於[AEM 6.3 Feature Pack 14410和18912](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html)版本推出)，使用者可透過現代AEM Assets網頁UI從端對端資產管理和動態媒體功能中獲益，同時仍可運用回溯相容於Dynamic Media Classic(Scene7)的傳送服務，包括未變的傳送URL。
+在此模式中(先於 [AEM 6.3 Feature Pack 14410和18912](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes/dynamic-media-featurepack-14410.html))，使用者便能透過現代AEM Assets網頁UI獲得端對端資產管理和動態媒體功能，同時仍可運用回溯相容於Dynamic Media Classic(Scene7)的傳送服務，包括未變更的傳送URL。
 
 此外，AEM 6.4也推出了Adobe Sensei提供的新功能、VR和3D等新興媒體的增強功能、Dynamic Media檢視器，以及互動式影像和轉盤橫幅中的體驗片段支援。
 
@@ -147,9 +147,9 @@ Dynamic Media 6.4版支援新模式：透過AEM Assets網頁UI上傳和管理主
 * 智慧型裁切功能會自動提供影像的非破壞性裁切，以保留回應式設計的興趣點。 您可以預覽已裁切的建議，並視需要手動調整。
 * 此功能還支援為產品影像自動生成色票。 自動色票產生有助於自動將顏色色票、圖樣色票或兩者新增至產品影像。
 
-如需詳細資訊，請參閱[影像設定檔](../assets/image-profiles.md)檔案。
+請參閱 [影像設定檔](../assets/image-profiles.md) 檔案以深入了解。
 
-另請參閱[將Dynamic Media資產新增至頁面](../assets/adding-dynamic-media-assets-to-pages.md)檔案，以進一步了解如何搭配Dynamic Media元件使用智慧型裁切。
+另請參閱 [將Dynamic Media Assets新增至頁面](../assets/adding-dynamic-media-assets-to-pages.md) 說明檔案，進一步了解如何搭配Dynamic Media元件使用智慧型裁切。
 
 ### 智慧型影像 {#smart-imaging}
 
@@ -157,12 +157,12 @@ Dynamic Media 6.4版支援新模式：透過AEM Assets網頁UI上傳和管理主
 * 影像會根據瀏覽器功能自動轉換為不同格式。
 * 影像品質設定是分別在瀏覽器中決定並套用。 這種智慧使有限的頻寬和較低的連接速度都能接受映像載入效能。
 
-請參閱[智慧影像](../assets/imaging-faq.md)檔案以深入了解。
+請參閱 [智慧型影像](../assets/imaging-faq.md) 檔案以深入了解。
 
 ### 新興媒體和檢視器增強功能 {#emerging-media-amp-viewer-enhancements}
 
 * 支援新的檢視器，為使用者提供更好、沈浸式的體驗。
-* 全景查看器有助於吸引用戶，並提供更好的體驗室場景、屬性、位置和景觀的功能。 若要了解詳情，請參閱[全景影像](../assets/panoramic-images.md)檔案。
+* 全景查看器有助於吸引用戶，並提供更好的體驗室場景、屬性、位置和景觀的功能。 請參閱 [全景影像](../assets/panoramic-images.md) 要學習的檔案。
 
 * VR檢視器可為屬性、位置和景觀提供身臨其境的體驗。
 * 針對產品影像最佳化的垂直影像檢視器。

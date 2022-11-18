@@ -4,9 +4,9 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack專用的發行說�
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 1d5d2ef3840a40df7c3b223c7b5835e41553e9f1
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '4693'
+source-wordcount: '4681'
 ht-degree: 10%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 10%
 | 類型 | Cumulative Fix Pack |
 | 日期 | 2021 年 2 月 25 日 |
 | 必備條件 | [AEM 6.4 Service Pack 8(6.4.8.0)](sp-release-notes.md) |
-| 下載URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
+| 下載 URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-4.0.zip) |
 
 ## AEM 6.4.8.4包含的項目 {#what-s-included-in-aem}
 
@@ -43,7 +43,7 @@ AEM 6.4.8.4是依存於AEM 6.4 Service Pack 8的Cumulative Fix Pack(CFP)。 安�
 
 Adobe Experience Manager 6.4.8.4修正下列問題。
 
-### 網站 {#sites-6484}
+### Sites {#sites-6484}
 
 * 安裝Experience ManagerService Pack 6.4.8.2後，使用者無法編輯內容片段模型，並遇到下列錯誤：
 
@@ -91,7 +91,7 @@ Adobe Experience Manager 6.4.8.4修正下列問題。
 
 **AEMForms-6.4.0-0027中修正的問題**
 
-* （僅限JEE）Apache Log4j2回報的重大安全性弱點(CVE-2021-44228和CVE-2021-45046)。
+* (僅限 JEE) 針對 Apache Log4j2 回報的重大安全漏洞 (CVE-2021-44228 和 CVE-2021-45046)。
 
 如需安全性更新的詳細資訊，請參閱 [Experience Manager安全性佈告欄頁面](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -105,7 +105,7 @@ AEM 6.4.8.3是依存於AEM 6.4 Service Pack 8的Cumulative Fix Pack(CFP)。 安�
 
 在AEM 6.4.8.3中，內建存放庫(Apache Jackrabbit Oak)更新至1.8.23版。
 
-如需CFP和其他發行版本的相關資訊，請參閱 [AEM更新發行工具定義](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+如需CFP和其他發行版本的相關資訊，請參閱 [AEM更新發行工具定義](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.3修正下列問題。
 
@@ -199,7 +199,7 @@ AEM 6.4.8.2是依存於AEM 6.4 Service Pack 8的Cumulative Fix Pack(CFP)。 安�
 
 在AEM 6.4.8.2中，內建存放庫(Apache Jackrabbit Oak)更新至1.8.22版。
 
-如需CFP和其他發行版本的相關資訊，請參閱 [AEM更新發行工具定義](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+如需CFP和其他發行版本的相關資訊，請參閱 [AEM更新發行工具定義](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2修正了下列問題。
 
@@ -229,7 +229,7 @@ Adobe Experience Manager 6.4.8.2修正了下列問題。
 * 傳送資訊至用戶端時，使用者輸入內容未針對各種元件進行適當編碼(NPR-33696)。
 * 結尾為 `childrenlist.html` 顯示HTML頁面，而非404回應。 這類URL容易遭受跨網站指令碼攻擊(NPR-33441)。
 
-#### 資產 {#assets-6482}
+#### Assets {#assets-6482}
 
 * 上傳PDF檔案的文字擷取無法運作，且PDF檔案中某些字詞的全文搜尋無法擷取該PDF檔案(NPR-34165)。
 
@@ -319,7 +319,7 @@ Adobe Experience Manager 6.4.8.2修正了下列問題。
 
 * 無法在托管的AWS中設定表單資料模型 [!DNL Experience Manager Forms Linux] 環境(NPR-33617)。
 
-**設計工具**
+**Designer**
 
 * 當 [!DNL Acrobat DC] 安裝在 [!DNL Experience Manager] Forms伺服器、 **[!UICONTROL 分發表單]** 選項在 [!DNL Experience Manager Designer] 6.x版(NPR-34325)。
 
@@ -345,7 +345,7 @@ AEM 6.4.8.1的部分關鍵重點為：
 * 移除與Adobe Experience Manager的套件共用整合。
 * 內建存放庫 (Apache Jackrabbit Oak) 更新至 1.8.21 版。
 
-如需CFP和其他發行版本的相關資訊，請參閱 [AEM更新發行工具定義](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
+如需CFP和其他發行版本的相關資訊，請參閱 [AEM更新發行工具定義](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1修正下列問題。
 
@@ -523,7 +523,7 @@ AEM 6.4.8.4包含新版Dynamic Media檢視器(5.10.1)，可啟用在「影像預
 
 1. 確認您已安裝AEM Cumulative Fix Pack。
 1. 下載列於的對應表單附加套件 [AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html#forms-updates) 作業系統。
-1. 依照 [安裝AEM Forms附加元件套件](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. 依照 [安裝AEM Forms附加元件套件](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### 安裝AEM Forms JEE安裝程式 {#install-aem-forms-jee-installer}
 
@@ -563,7 +563,7 @@ AEM 6.4.8.4包含新版Dynamic Media檢視器(5.10.1)，可啟用在「影像預
 | 區域 | 功能 | 替代方案 | 版本 |
 |---|---|---|---|
 | 資產 | 管理子資產的標籤動作 | 無替換 | AEM 6.4.2.0 |
-| Assets 與 Adobe Creative Cloud 整合 | AEM 6.2 引入了 [AEM 對 Creative Cloud 資料夾共用](https://docs.adobe.com/content/help/zh-Hant/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，作為讓 Creative 使用者存取 AEM 資產的方式。Creative Cloud 應用程式推出的新功能 Adobe Asset Link 提供了更優異的使用者體驗，以及更強大的存取功能，可直接從 Photoshop、InDesign 和 Illustrator 中存取 AEM 的資產。 Adobe 將不會再對資料夾共用功能提供近一步的增強項目。雖然AEM中包含此功能，但強烈建議客戶使用取代。 | Adobe資產連結或案頭應用程式。 如需更多資訊，請參閱 [AEM Creative Cloud 整合](/help/assets/aem-cc-integration-best-practices.md)文章。 | AEM 6.4.4.0 |
+| Assets 與 Adobe Creative Cloud 整合 | AEM 6.2 引入了 [AEM 對 Creative Cloud 資料夾共用](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，作為讓 Creative 使用者存取 AEM 資產的方式。Creative Cloud 應用程式推出的新功能 Adobe Asset Link 提供了更優異的使用者體驗，以及更強大的存取功能，可直接從 Photoshop、InDesign 和 Illustrator 中存取 AEM 的資產。 Adobe 將不會再對資料夾共用功能提供近一步的增強項目。雖然AEM中包含此功能，但強烈建議客戶使用取代。 | Adobe資產連結或案頭應用程式。 如需更多資訊，請參閱 [AEM Creative Cloud 整合](/help/assets/aem-cc-integration-best-practices.md)文章。 | AEM 6.4.4.0 |
 
 ## 已知問題 {#known-issues}
 
@@ -595,4 +595,4 @@ AEM 6.4.8.4 中包含的內容套件清單
 這些網站僅供客戶使用。 如果您是Adobe，且需要存取權，請連絡您的客戶經理。
 
 * [透過licensing.adobe.com下載產品](https://licensing.adobe.com/)
-* [聯絡客戶支援](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
+* [聯絡客戶支援](https://experienceleague.adobe.com/docs/customer-one/using/home.html)

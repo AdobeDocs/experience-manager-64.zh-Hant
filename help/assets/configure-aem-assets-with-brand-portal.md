@@ -1,14 +1,14 @@
 ---
 title: 使用 Brand Portal 設定 AEM Assets
-description: '了解如何使用Brand Portal設定AEM Assets，以將資產和集合發佈至Brand Portal。 '
+description: 了解如何使用Brand Portal設定AEM Assets，以將資產和集合發佈至Brand Portal。
 contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: a50cd2b50191b86ac27cc228944c6c9e917b08cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1646'
-ht-degree: 37%
+source-wordcount: '1642'
+ht-degree: 36%
 
 ---
 
@@ -271,14 +271,14 @@ IMS 設定包括兩個步驟：
    >
    >請避免停用任何復寫代理，因為這可能會導致某些資產的復寫失敗。
    >
-   >請確定所有四個復寫代理均已設定，以避免逾時錯誤。 請參閱 [疑難排解平行發佈至Brand Portal的問題](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >請確定所有四個復寫代理均已設定，以避免逾時錯誤。 請參閱 [疑難排解平行發佈至Brand Portal的問題](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal已成功設定為您的AEM Assets製作例項。 您現在可以：
 
 * [從 AEM Assets 發佈資產到 Brand Portal](../assets/brand-portal-publish-assets.md)
 * [從 AEM Assets 發佈資料夾到 Brand Portal](../assets/brand-portal-publish-folder.md)
 * [從 AEM Assets 發佈集合到 Brand Portal](../assets/brand-portal-publish-collection.md)
-* [配置Asset Sourcing](https://docs.adobe.com/content/help/zh-Hant/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 讓Brand Portal使用者貢獻資產並將資產發佈至AEM Assets。
+* [配置Asset Sourcing](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) 讓Brand Portal使用者貢獻資產並將資產發佈至AEM Assets。
 
 ## 升級配置 {#upgrade-integration-64}
 

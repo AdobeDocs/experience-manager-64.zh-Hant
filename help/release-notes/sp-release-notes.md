@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '21547'
+source-wordcount: '21517'
 ht-degree: 23%
 
 ---
@@ -1291,7 +1291,7 @@ AEM 6.4.2.0的部分關鍵重點為：
 * 新增對MongoDB Enterprise 3.6的支援。
 * Sites頁面編輯器新增了內容內編輯和合成的支援，其中包含在React或Angular中建置的用戶端元件，並搭配 <a href="../sites-developing/spa-walkthrough.md">AEM SPA Editor JS SDK</a>.
 * 內容片段增強功能：新增可在文字欄位中加上注釋，並並排比較版本的功能。
-* 新增 [整合Adobe Stock](/help/assets/aem-assets-adobe-stock.md) 讓使用者直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 如需詳細資訊，請參閱 [搭配Adobe Stock資產使用AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
+* 新增 [整合Adobe Stock](/help/assets/aem-assets-adobe-stock.md) 讓使用者直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 如需詳細資訊，請參閱 [搭配Adobe Stock資產使用AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html).
 * 新增Assets支援動態條件式中繼資料結構，以及為資產資料夾設定中繼資料結構的功能。
 * 在每個元件中新增設定，以啟用/停用資料夾縮圖建立/更新功能。
 * 頁面編寫時的影像編輯器增強功能。
@@ -1338,7 +1338,7 @@ AEM 6.4.2.0的部分關鍵重點為：
 * 開啟/關閉時間會儲存在crx/de中，但不會在頁面屬性UI主控台中擷取相同內容。 NPR-25154：CQ-4243431 的 Hotfix
 * 樣式系統中斷對話框的初始屬性值。 NPR-25648：CQ-4250073 的 Hotfix
 * 在cq:htmlTag節點中定義cq:tagName屬性時，如果透過JSP包含元件，則不會考慮標籤名稱。 NPR-24154：CQ-4244120 的 Hotfix
-* 針對巢狀的 parsys 元件，一律從多個可用元件中套用滿足設計的第一個元件 (最短巢狀路徑)。如需詳細資訊，請參閱[設計路徑解析](https://docs.adobe.com/content/help/zh-Hant/experience-manager-64/developing/platform/templates/page-templates-static.html)。NPR-24973：CQ-4246276 的 Hotfix
+* 針對巢狀的 parsys 元件，一律從多個可用元件中套用滿足設計的第一個元件 (最短巢狀路徑)。如需詳細資訊，請參閱[設計路徑解析](https://experienceleague.adobe.com/docs/experience-manager-64/developing/platform/templates/page-templates-static.html)。NPR-24973：CQ-4246276 的 Hotfix
 * 將文字貼入RTE元件時，會顯示快顯對話方塊，但無法正確轉譯。 NPR-24895：CQ-4245901 的 Hotfix
 * (RTE)強制欄位指標的績效問題。 NPR-24894：CQ-4241895 的 Hotfix
 * （頁面元件）新增元件至Parsys時，會從右側裁切，而出現裝置框架寬度。 NPR-25536：CQ-4238224 的 Hotfix
@@ -1553,7 +1553,7 @@ AEM 6.4.2.0表單的關鍵重點為：
 * 新增功能，讓使用者對多個服務使用相同的WSDL檔案。
 * 從日期選擇器下拉式清單中移除不支援的時間戳記模式。
 * 新增在OSGI中隱藏xfaf和pdf的支援。
-* 新增支援以使用 [交易報告功能](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) 內部部署。
+* 新增支援以使用 [交易報告功能](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) 內部部署。
 * 新增程式碼，以在條件規則編輯器中不顯示子變數。
 
 **Forms 附加元件套件**
@@ -1656,17 +1656,17 @@ AEM 6.4.2.0表單的關鍵重點為：
 
 **資產**
 
-* 新增 [整合Adobe Stock](/help/assets/aem-assets-adobe-stock.md) 讓使用者直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 如需詳細資訊，請參閱 [搭配AEM資產使用Adobe Stock資產](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779：CQ-30857 的 Hotfix
+* 新增 [整合Adobe Stock](/help/assets/aem-assets-adobe-stock.md) 讓使用者直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 如需詳細資訊，請參閱 [搭配AEM資產使用Adobe Stock資產](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779：CQ-30857 的 Hotfix
 * 新增對動態條件式中繼架構的支援。 如需詳細資訊，請參閱 [階層式中繼資料](/help/assets/cascading-metadata.md). NPR-25189：CQ-4237413 的 Hotfix
 * 在內容片段上啟用「資產下載」選項。 如需詳細資訊，請參閱 [資產報表](/help/assets/asset-reports.md). NPR-25186：CQ-4237410 的 Hotfix
 * 可為資產資料夾設定中繼資料結構。 如需詳細資訊，請參閱 [資料夾中繼資料結構](/help/assets/folder-metadata-schema.md) 並參考其 [組態設定](#configuration-settings-required-for-npr) 安裝AEM 6.4.2.0後。 NPR-21268：CQ-4221574 的 Hotfix
 
 **網站**
 
-* 允許編輯內容片段而不具有刪除權限。 如需詳細資訊，請參閱 [自訂和擴充內容片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793：CQ-4248750 的 Hotfix
-* 新增為內容片段加上注釋的功能。 如需詳細資訊，請參閱 [變體製作片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188：CQ-4235336 的 Hotfix
-* 版本設定：並排比較內容片段。 如需詳細資訊，請參閱 [管理內容片段](https://docs.adobe.com/content/help/en/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187：CQ-4237412 的 Hotfix
-* 影像編輯器增強功能已支援至AEM 6.4.2.0。如需詳細資訊，請參閱 [影像編輯器](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24467
+* 允許編輯內容片段而不具有刪除權限。 如需詳細資訊，請參閱 [自訂和擴充內容片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793：CQ-4248750 的 Hotfix
+* 新增為內容片段加上注釋的功能。 如需詳細資訊，請參閱 [變體製作片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188：CQ-4235336 的 Hotfix
+* 版本設定：並排比較內容片段。 如需詳細資訊，請參閱 [管理內容片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-managing.html#comparing-fragment-versions). NPR-25187：CQ-4237412 的 Hotfix
+* 影像編輯器增強功能已支援至AEM 6.4.2.0。如需詳細資訊，請參閱 [影像編輯器](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24467
 
 **包含的OSGI套件組合和內容套件**
 
@@ -1900,7 +1900,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的部分重點為：
 
 **DAM — 智慧標籤**
 
-* 簡介 [增強智慧標籤](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
+* 簡介 [增強智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951
 
 **Forms**
 
@@ -1908,7 +1908,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的部分重點為：
 
 AEM Forms 的關鍵重點為：
 
-* AEM Forms簡介 [交易報告功能](https://docs.adobe.com/content/help/en/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) 追蹤並保留已提交的表單、已處理的檔案和已轉譯的檔案等交易記錄計數，以便在AEM Forms部署中執行。 它提供產品使用情況的深入分析，並協助商務使用者了解數位處理量。
+* AEM Forms簡介 [交易報告功能](https://experienceleague.adobe.com/docs/experience-manager-64/forms/transaction-reports/transaction-reports-overview.html) 追蹤並保留已提交的表單、已處理的檔案和已轉譯的檔案等交易記錄計數，以便在AEM Forms部署中執行。 它提供產品使用情況的深入分析，並協助商務使用者了解數位處理量。
 * 啟用XML表單的PDF/UA支援。
 * 為Clientlib新增allowProxy = true **aemfd.ccm.channel.contentpage**
 * 更新程式碼，將進階標題搜尋設為包含而非等於。
@@ -2066,12 +2066,12 @@ AEM Forms 的關鍵重點為：
 
 **資產**
 
-* 新增「增強智慧標籤」的功能。 如需詳細資訊，請參閱 [增強智慧標籤](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951：CQ-4234883 的 Hotfix
+* 新增「增強智慧標籤」的功能。 如需詳細資訊，請參閱 [增強智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951：CQ-4234883 的 Hotfix
 * 在InDesign中導入AEM Assets參考。 如需詳細資訊，請參閱 [AEM Assets參考InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
 
 **網站**
 
-* （頁面編寫）影像編輯器增強功能。 如需詳細資訊，請參閱 [影像編輯器](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html). NPR-24267：CQ-4245502 的 Hotfix
+* （頁面編寫）影像編輯器增強功能。 如需詳細資訊，請參閱 [影像編輯器](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24267：CQ-4245502 的 Hotfix
 
 **包含的 OSGI 套件組合和內容套件**
 
@@ -2172,7 +2172,7 @@ B.使用 [來自套件管理器的HTTP API](/help/sites-administering/package-ma
 
 1. 確認您已安裝AEM Service Pack。
 1. 下載列於的對應表單附加套件 [AEM Forms版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 作業系統。
-1. 依照 [安裝AEM Forms附加元件套件](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+1. 依照 [安裝AEM Forms附加元件套件](https://experienceleague.adobe.com/docs/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
 
 ### 安裝AEM Forms JEE安裝程式 {#install-aem-forms-jee-installer}
 
@@ -2227,7 +2227,7 @@ B.使用 [來自套件管理器的HTTP API](/help/sites-administering/package-ma
 | 區域 | 功能 | 替代方案 | 版本 |
 |---|---|---|---|
 | 資產 | 管理子資產的標籤動作 | 無替換 | AEM 6.4.2.0 |
-| Assets 與 Adobe Creative Cloud 整合 | AEM 6.2 引入了 [AEM 對 Creative Cloud 資料夾共用](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，作為讓 Creative 使用者存取 AEM 資產的方式。Creative Cloud 應用程式推出的新功能 Adobe Asset Link 提供了更優異的使用者體驗，以及更強大的存取功能，可直接從 Photoshop、InDesign 和 Illustrator 中存取 AEM 的資產。 Adobe 將不會再對資料夾共用功能提供近一步的增強項目。雖然AEM中包含此功能，但強烈建議客戶使用取代。 | Adobe資產連結或案頭應用程式。 如需更多資訊，請參閱 [AEM Creative Cloud 整合](/help/assets/aem-cc-integration-best-practices.md)文章。 | AEM 6.4.4.0 |
+| Assets 與 Adobe Creative Cloud 整合 | AEM 6.2 引入了 [AEM 對 Creative Cloud 資料夾共用](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，作為讓 Creative 使用者存取 AEM 資產的方式。Creative Cloud 應用程式推出的新功能 Adobe Asset Link 提供了更優異的使用者體驗，以及更強大的存取功能，可直接從 Photoshop、InDesign 和 Illustrator 中存取 AEM 的資產。 Adobe 將不會再對資料夾共用功能提供近一步的增強項目。雖然AEM中包含此功能，但強烈建議客戶使用取代。 | Adobe資產連結或案頭應用程式。 如需更多資訊，請參閱 [AEM Creative Cloud 整合](/help/assets/aem-cc-integration-best-practices.md)文章。 | AEM 6.4.4.0 |
 
 ### 已知問題 {#known-issues}
 
@@ -2273,4 +2273,4 @@ AEM 6.4.8.0 中包含的內容套件清單
 
 * [請前往licensing.adobe.com下載產品](https://licensing.adobe.com/).
 * 產品更新、修補程式和包，以獲得 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [透過Admin Console提供客戶支援](https://adminconsole.adobe.com/). 如需詳細資訊，請參閱 [全新Adobe客戶支援體驗](https://docs.adobe.com/content/help/en/customer-one/using/home.html).
+* [透過Admin Console提供客戶支援](https://adminconsole.adobe.com/). 如需詳細資訊，請參閱 [全新Adobe客戶支援體驗](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

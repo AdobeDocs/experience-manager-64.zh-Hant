@@ -4,9 +4,9 @@ seo-title: Developing AEM Components
 description: AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內容。
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3477'
+source-wordcount: '3475'
 ht-degree: 1%
 
 ---
@@ -427,7 +427,7 @@ GITHUB上的程式碼
 
 >[!NOTE]
 >
->現在，使用時，可在UI中輕鬆設定元件例項的自動建立 [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 和可編輯的範本。 請參閱 [建立頁面範本](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 有關定義與指定介質類型自動關聯的元件的詳細資訊。
+>現在，使用時，可在UI中輕鬆設定元件例項的自動建立 [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和可編輯的範本。 請參閱 [建立頁面範本](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 有關定義與指定介質類型自動關聯的元件的詳細資訊。
 
 ## 使用AEM Brackets擴充功能 {#using-the-aem-brackets-extension}
 

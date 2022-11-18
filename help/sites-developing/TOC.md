@@ -8,9 +8,9 @@ breadcrumb-title: Developing 指南
 user-guide-description: 本指南說明如何建立 AEM 執行個體。
 feature: Developing
 role: Developer
-source-git-commit: 35aea0e087334a1c1e6a708f2182bd9dee799dc0
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '884'
 ht-degree: 15%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 15%
       + [開發（一般）](generic.md)
       + [使用SAP開發Commerce Cloud](sap-commerce-cloud.md)
 + 元件{#components}
-   + [核心元件](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html)
+   + [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
    + [樣式系統](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/style-system.html)
    + [元件概觀](components.md)
    + [AEM元件 — 基本概念](components-basics.md)

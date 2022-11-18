@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.4 Forms 指南
 breadcrumb-title: Forms 指南
 user-guide-description: 建立、管理、發佈和更新數位表單。
 role: User
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '3729'
+source-wordcount: '3721'
 ht-degree: 4%
 
 ---
@@ -20,9 +20,9 @@ ht-degree: 4%
 
 + [AEM 6.4 Forms指南](home.md)
 + 發行說明 {#release-notes-new-features}
-   + [發行說明](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
+   + [發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [新功能摘要](using/whats-new.md)
-   + [過時的功能](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [過時的功能](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
 + 快速入門 {#getting-started}
    + [AEM Forms簡介](using/introduction-aem-forms.md)
    + [製作最適化表單簡介](using/introduction-forms-authoring.md)
@@ -573,8 +573,8 @@ ht-degree: 4%
    + [流程報告中的臨機查詢](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [疑難排解程式報告](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + 開發人員參考 {#developer-reference}
-   + [開發人員基本知識](https://docs.adobe.com/content/help/en/experience-manager-64/developing/home.html)
-   + [HTML 範本語言](https://docs.adobe.com/content/help/zh-Hant/experience-manager-htl/using/overview.html)
+   + [開發人員基本知識](https://experienceleague.adobe.com/docs/experience-manager-64/developing/home.html)
+   + [HTML 範本語言](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
    + [AEM外掛程式以偵錯適用性表單](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API參考](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API參考](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html)

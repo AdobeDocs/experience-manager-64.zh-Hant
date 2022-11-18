@@ -1,21 +1,21 @@
 ---
 title: Livefyre Feature Pack 2.0.6發行說明
-seo-title: Livefyre Feature Pack 2.0.6發行說明
+seo-title: Livefyre Feature Pack 2.0.6 Release Notes
 description: Livefyre Feature Pack 2.0.6發行說明
-seo-description: Livefyre Feature Pack 2.0.6發行說明
+seo-description: Livefyre Feature Pack 2.0.6 Release Notes
 uuid: 81ee0527-72c3-4530-80f1-c802ddbe62d0
 products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 1%
+source-wordcount: '643'
+ht-degree: 2%
 
 ---
 
-# Livefyre Feature Pack 2.0.6發行說明{#livefyre-feature-pack-release-notes}
+# Livefyre Feature Pack 2.0.6發行說明 {#livefyre-feature-pack-release-notes}
 
 ## 發行資訊 {#release-information}
 
@@ -24,11 +24,11 @@ ht-degree: 1%
 | 版本 | 2.0.6 |
 | 類型 | 功能發行 |
 | 日期 | 2018 年 8 月 31 日 |
-| 下載URL | 請聯絡您的管理員 |
-| 相容性(*) | AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1 |
+| 下載 URL | 請聯絡您的管理員 |
+| 相容性 (*) | AEM 6.4 SP1、6.4、6.3 GA和6.2 SP1 |
 | 說明 | 此套件可讓您整合Livefyre領先業界的組織功能與您的AEM執行個體，讓您在數分鐘內將寶貴的使用者產生內容(UGC)從社交網路發佈至您的網站。 |
 
-## Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack}包含的內容
+## Livefyre Feature Pack 2.0.6包含的內容 {#what-is-included-in-livefyre-feature-pack}
 
 此套件整合了Livefyre領先業界的組織功能與您的AEM例項，讓您能在數分鐘內將寶貴的使用者產生內容(UGC)從社交網路發佈至您的網站。 此套件有三種不同的元件：
 
@@ -49,20 +49,20 @@ ht-degree: 1%
 * 將您現有的產品目錄流暢整合至Livefyre，以促進使用者在您網站中的參與和轉換，並提供可購買的UGC體驗。
 * 編輯或刪除AEM Commerce Product Catalog中的項目，並自動更新Livefyre中的變更。
 
-如需安裝說明，請參閱[與Livefyre整合](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)。
+如需安裝的說明，請參閱 [與Livefyre整合](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html).
 
-### 其他發行資訊{#additional-release-information}
+### 其他發行資訊 {#additional-release-information}
 
-由於更新會影響Instagram非業務使用者帳戶的內容匯總，因此我們無法代表您張貼意見或自動檢查作者的回覆。 [按一下這裡以了解更多資訊](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/)。
+由於更新會影響Instagram非業務使用者帳戶的內容匯總，因此我們無法代表您張貼意見或自動檢查作者的回覆。 [按一下這裡以了解更多資訊](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/).
 
 >[!NOTE]
 >
 >Livefyre Feature Pack 2.0.6不支援AEM Classic UI。
 
-#### 新功能或改進{#new-feature-or-improvement}
+#### 新功能或改善 {#new-feature-or-improvement}
 
 * 新增在Livefyre中設定權限要求社交帳戶前，可搜尋UGC的功能。 您必須設定社交帳戶以要求權限，或如果您擁有內容，則必須覆寫權限要求。
-* Instagram和Twitter [UGC權限要求工作流程](https://docs.adobe.com/content/help/en/experience-manager-64/administering/integration/livefyre.html)已更新，以符合最新的API。
+* Instagram和Twitter [UGC權限要求工作流程](https://experienceleague.adobe.com/docs/experience-manager-64/administering/integration/livefyre.html) 已更新，以符合最新的API。
 * 權限狀態和適當的動作現在會顯示在權限請求畫面上。
 
 #### 錯誤修正 {#bug-fixes}

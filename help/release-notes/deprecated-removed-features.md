@@ -2,10 +2,10 @@
 title: 過時和移除的功能
 description: Adobe Experience Manager 6.4中已棄用和已移除功能的發行說明。
 exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
-source-git-commit: dcc36e499517f3f35d5f1d849802c4a5c35121bd
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1310'
-ht-degree: 13%
+source-wordcount: '1308'
+ht-degree: 14%
 
 ---
 
@@ -22,7 +22,7 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## 過時的功能 {#deprecated-features}
 
-下表列出AEM 6.4已標示為過時的功能。一般而言，未來版本中預計移除的功能會先設為過時，並提供替代選項。
+下表列出AEM 6.4中已標示為過時的功能。一般而言，未來版本中預計移除的功能會先設為過時，並提供其他選項。
 
 建議客戶檢視是否在目前的部署中使用這些功能，並規劃變更實作，改為使用所提供的替代方案。
 
@@ -36,9 +36,9 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 入口網站Director | Portal Director是一組功能，可在第三方伺服器中通過Portlet托管AEM內容。 Adobe不打算對下列位置下的Portal Director功能進一步增強。 AEM 6.4已包含入口網站Director，從舊版升級的客戶可繼續依原樣使用。 請注意，Portal Direct在淘汰時仍完全受支援。 <ul><li>/libs/portal/director</li></ul> | Adobe不計畫提供替代。 |
 | Portlet元件 | /foundation/components/portlet下的Portlet元件允許將AEM中的JSR Portlet作為元件進行托管。 Adobe不打算對Portlet元件功能進行進一步的增強。 AEM 6.4包含Portlet元件，從舊版升級的客戶可以繼續使用。 請注意，Portlet元件在過時時仍完全受支援。 | Adobe不計畫提供替代。 |
 | Forms | 由於不再支援Adobe中心產品，已不再支援Adobe中心移轉橋服務。 | 無替換 |
-| Forms | 已棄用在Query和OperationOptions中使用JSONObject。 不建議使用下列API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用`IValueMap` API |
+| Forms | 已棄用在Query和OperationOptions中使用JSONObject。 不建議使用下列API: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | 使用 `IValueMap` API |
 | Forms | 已棄用的中央遷移橋服務。 | 不提供替代。 |
-| 資產 | 自AEM 6.4起，已不再使用「資產卸載」。 |  |
+| Assets | 自AEM 6.4起，已不再使用「資產卸載」。 |  |
 | 開發人員 | Lodash/underscore客戶端庫。 Adobe不計畫進一步維護和更新作為分發（快速入門）的Lodash/underscore客戶端庫 | Adobe建議仍需使用Lodash/底線的客戶，將其程式碼新增至其專案程式碼基底。 |
 
 <!-- Original HTML table that came from helpx during migration.
@@ -146,13 +146,12 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 
 ## 移除的功能 {#removed-features}
 
-下表列出已從AEM 6.4中移除的功能。先前版本的這些功能標示為
-已棄用。
+下表列出已從AEM 6.4中移除的功能。舊版有這些功能標示為過時。
 
 | 區域 | 功能 | 替代方案 |
 |---|---|---|
-| 與[!DNL Experience Cloud]整合 | 您可以透過[!DNL Adobe I/O]使用設定，將資產與[!DNL Experience Cloud]同步。 [!DNL Adobe Experience Cloud] 先前稱為 [!DNL Adobe Marketing Cloud]。 | 如果您有任何查詢，請聯繫[Adobe客戶支援](https://experienceleague.adobe.com/?support-solution=General#support)。 |
-| AnalyticsActivity Map | AEM中包含的Activity Map版本。 | 由於 Adobe Analytics API 中的安全性變更，AEM 中包含的 Activity Map 版本已無法再使用。現在應該使用Adobe Analytics](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap外掛程式。 |
+|  與 [!DNL Experience Cloud] 整合 | 您可以將資產同步至 [!DNL Experience Cloud] 透過 [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] 先前稱為 [!DNL Adobe Marketing Cloud]. | 如果您有任何疑問，請與 [Adobe客戶支援](https://experienceleague.adobe.com/?support-solution=General#support). |
+| AnalyticsActivity Map | AEM中包含的Activity Map版本。 | 由於 Adobe Analytics API 中的安全性變更，AEM 中包含的 Activity Map 版本已無法再使用。此 [ActivityMap外掛程式由Adobe Analytics提供](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 現在應該使用。 |
 | 元件 — Forms | 表單驗證碼（基礎/元件/表單/驗證碼） | 請改用ReCaptcha by Google元件 |
 | 元件 | 投影片放映（基礎/元件/投影片放映） | 無替換 |
 | 元件 | Flash(foundation/components/flash) | 無替換 |
@@ -179,4 +178,4 @@ Adobe 持續評估產品功能，以更新或替代的方式來改善或取代�
 | 區域 | 功能 | 公告 |
 |---|---|---|
 | 瀏覽器支援 | Microsoft Internet Explorer | AEM 6.4是支援Microsoft Internet Explorer 11的最後一個版本。 |
-| Foundation | UI架構 | Adobe在2019年淘汰Coral UI 2元件。 AEM 6.4完全以Coral UI 3為基礎(隨AEM 6.2推出)。 Adobe建議已使用Coral 2建立自訂UI的客戶和合作夥伴，將這些UI重構至Coral 3。 Adobe提供將Coral 2對話方塊轉換為Coral 3 - [了解詳情。](/help/sites-developing/modernization-tools.md) |
+| Foundation | UI架構 | Adobe在2019年淘汰Coral UI 2元件。 AEM 6.4完全以Coral UI 3為基礎(隨AEM 6.2推出)。 Adobe建議已使用Coral 2建立自訂UI的客戶和合作夥伴，將這些UI重構至Coral 3。 Adobe提供將Coral 2對話方塊轉換為Coral 3的工具 —  [了解詳情。](/help/sites-developing/modernization-tools.md) |

@@ -1,8 +1,8 @@
 ---
 title: AEM Communities中的使用者和UGC管理服務
-seo-title: AEM Communities中的使用者和UGC管理服務
-description: '使用API來大量刪除和大量匯出使用者產生的內容，並停用使用者帳戶。 '
-seo-description: '使用API來大量刪除和大量匯出使用者產生的內容，並停用使用者帳戶。 '
+seo-title: User and UGC Management Service in AEM Communities
+description: 使用API來大量刪除和大量匯出使用者產生的內容，並停用使用者帳戶。
+seo-description: Use APIs to bulk delete and bulk export user generated content, and disable user account.
 uuid: f4663825-eac8-4ef5-8253-46875e0cd71d
 contentOwner: mgulati
 content-type: reference
@@ -11,9 +11,9 @@ topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
 role: Admin
 exl-id: f4adc53d-6809-4d89-a3dd-5d783e938a63
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '582'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,15 @@ ht-degree: 0%
 >
 >GDPR是以下各節中的範例，但涵蓋的詳細資訊適用於所有資料保護和隱私權法規；例如GDPR、CCPA等
 
-AEM Communities會公開API的現成可用功能，以管理使用者設定檔和大量管理使用者產生的內容(UGC)。 啟用後，**UserUgcManagement**&#x200B;服務可讓有權限的使用者（社群管理員和協調者）停用使用者設定檔，以及為特定使用者大量刪除或大量匯出UGC。 這些API也讓客戶資料的控制者和處理者能符合歐盟一般資料保護規範(GDPR)和其他GDPR啟發的隱私權規範。
+AEM Communities會公開API的現成可用功能，以管理使用者設定檔和大量管理使用者產生的內容(UGC)。 啟用後， **UserUgcManagement** 服務可讓有權限的使用者（社群管理員和協調者）停用使用者設定檔，以及為特定使用者大量刪除或大量匯出UGC。 這些API也讓客戶資料的控制者和處理者能符合歐盟一般資料保護規範(GDPR)和其他GDPR啟發的隱私權規範。
 
-如需詳細資訊，請參閱Adobe隱私權中心](https://www.adobe.com/privacy/general-data-protection-regulation.html)的[GDPR頁面。
+如需詳細資訊，請參閱 [Adobe隱私權中心的GDPR頁面](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->如果您在AEM Communities](analytics.md)網站中設定了[Adobe Analytics，則擷取的使用者資料會傳送至Adobe Analytics伺服器。 Adobe Analytics提供的API可讓您存取、匯出和刪除使用者資料，並遵守GDPR。 如需詳細資訊，請參閱[提交存取和刪除請求](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)。
+>如果您已設定 [Adobe Analytics在AEM Communities](analytics.md) 網站上，擷取的使用者資料會傳送至Adobe Analytics伺服器。 Adobe Analytics提供的API可讓您存取、匯出和刪除使用者資料，並遵守GDPR。 如需詳細資訊，請參閱 [提交存取和刪除請求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
-若要使用這些API，您必須啟動UserUgcManagement服務以啟用`/services/social/ugcmanagement`端點。 若要啟用此服務，請安裝[GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)上可用的[範例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)。 然後，使用與下列類似的http要求，以適當的參數點擊您社群網站的發佈執行個體上的端點：
+若要使用這些API，您必須啟用 `/services/social/ugcmanagement` 端點，方法是啟用UserUgcManagement服務。 若要啟用此服務，請安裝 [範例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) 可於 [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). 然後，使用與下列類似的http要求，以適當的參數點擊您社群網站的發佈執行個體上的端點：
 
 `http://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation<getUgc>`
 
@@ -53,7 +53,7 @@ AEM Communities會公開API的現成可用功能，以管理使用者設定檔�
 
 ## 刪除用戶的UGC {#delete-the-ugc-of-a-user}
 
-**deleteUserUgc(ResourceResolver resourceResolver, String user)** 有助於從系統中刪除某個使用者的所有UGC。
+**deleteUserUgc(ResourceResolver resourceResolver, String user)** 有助於從系統中刪除某個用戶的所有UGC。
 
 * **使用者**:使用者的可授權ID。
 
@@ -87,4 +87,4 @@ AEM Communities會公開API的現成可用功能，以管理使用者設定檔�
 
 >[!NOTE]
 >
->deleteUserAccount()API僅會停用系統中的使用者設定檔，並移除UGC。 但是，若要從系統中刪除用戶配置檔案，請導航到&#x200B;**CRXDE Lite**:[https://&lt;server>/crx/de](http://localhost:4502/crx/de)，找出使用者節點並將其刪除。
+>deleteUserAccount()API僅會停用系統中的使用者設定檔，並移除UGC。 不過，若要從系統刪除使用者設定檔，請導覽至 **CRXDE Lite**: [https://&lt;server>/crx/de](http://localhost:4502/crx/de)，找出使用者節點並將其刪除。

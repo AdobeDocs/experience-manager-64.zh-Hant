@@ -1,20 +1,20 @@
 ---
 title: MSM最佳實務
-seo-title: MSM最佳實務
+seo-title: MSM Best Practices
 description: 尋找由Adobe工程和諮詢團隊編譯的最佳實務，協助您快速上手並執行AEM多網站管理員。
-seo-description: 尋找由Adobe工程和諮詢團隊編譯的最佳實務，協助您快速上手並執行AEM多網站管理員。
+seo-description: Find best practices compiled by Adobe engineering and consulting teams to help get up and running with the AEM Multi Site Manager.
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
-feature: 多站點管理員
+feature: Multi Site Manager
 exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
-source-git-commit: 3ee650d0810a03878b4b0a58708ea3600fa28ff2
+source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 1%
+source-wordcount: '1522'
+ht-degree: 0%
 
 ---
 
@@ -24,12 +24,12 @@ ht-degree: 1%
 
 MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主要部分，並橫跨組織和地理區域。 因此，強烈建議您在規劃網站時，務必謹慎規劃MSM實作：
 
-* 開始實作前，請務必小心&#x200B;**規劃結構和內容流**。
+* 小心 **規劃結構和內容流程** 開始實作之前。
 * **視需要自訂，但盡可能少。** 雖然MSM支援高度自訂（例如轉出設定），但針對網站效能、可靠性和可升級性，通常最佳實務是將自訂降至最低。
-* 及早建立&#x200B;**governance**&#x200B;模型，並據此訓練使用者，以確保成功。 從治理角度來看，最佳做法是&#x200B;**最小化本地內容生成者擁有的將內容分配給其他本地用戶及其各自的即時副本/連接內容的權限。**&#x200B;這是因為不受管理、鏈式繼承可以顯著增加MSM結構的複雜性，並損害其效能和可靠性。
+* 建立 **治理** 及早建模，並據此訓練使用者，以確保成功。 從治理角度來看，最佳實務是 **盡量減少本地內容製作者的權威** 將內容分配/連線至其他本機使用者及其各自的即時副本。 這是因為不受管理、鏈式繼承可以顯著增加MSM結構的複雜性，並損害其效能和可靠性。
 
-* 一旦您的結構有計畫，內容流程、自動化和控管 — **原型，並在開始即時實施之前徹底測試您的系統**。
-* 請記住，**Adobe諮詢與領先的系統整合商**&#x200B;擁有透過MSM進行內容自動化規劃與實作的豐富經驗，因此可協助您開始使用MSM專案，以及完成整個實作。
+* 一旦您的結構、內容流、自動化和治理存在計畫 —  **原型和徹底測試您的系統**，再開始即時實作。
+* 請記住 **Adobe咨詢和領先的系統整合商** 擁有透過MSM進行內容自動化規劃與實作的豐富經驗，因此可協助您開始使用MSM專案，以及完成整個實作。
 
 >[!NOTE]
 >
@@ -37,30 +37,26 @@ MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主�
 >
 >* [MSM常見問題集](https://helpx.adobe.com/experience-manager/kb/index/msm_faq.html)
 >* [疑難排解MSM問題](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-msm-issues.html)
-
 >
-
 
 
 >[!NOTE]
 >
->您也可以使用[參考元件](/help/sites-authoring/default-components-foundation.md#reference)來重複使用單一頁面或段落。 但請記住：
+>您也可以使用 [參考元件](/help/sites-authoring/default-components-foundation.md#reference) 重複使用單頁或段落。 但請記住：
 >
 >* MSM更靈活，可對同步的內容和時間進行微調控制。
->* [現在](https://docs.adobe.com/content/help/zh-Hant/experience-manager-core-components/using/introduction.html) 建議將核心元件置於基礎元件之上。
-
+>* [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 現在已建議用於基礎元件。
 >
 
 
+## 即時副本來源和Blueprint設定 {#live-copy-sources-and-blueprint-configurations}
 
-## 即時副本來源和Blueprint設定{#live-copy-sources-and-blueprint-configurations}
-
-請記住，可使用[常規頁面](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)或[Blueprint設定](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)來建立即時副本。 兩者皆為有效的使用案例。
+請記住，您可使用 [一般頁面](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 或 [Blueprint設定](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 兩者皆為有效的使用案例。
 
 使用Blueprint配置的額外好處是：
 
-* 允許作者在Blueprint上使用&#x200B;**轉出**&#x200B;選項 — 將修改（明確）推送至繼承自此Blueprint的Live Copy。
-* 允許作者使用&#x200B;**建立網站**;這可讓使用者輕鬆選取語言並設定即時副本的結構。
+* 允許作者使用 **轉出** blueprint上的選項 — 將修改推送（明確）至繼承自此blueprint的即時副本。
+* 允許作者使用 **建立網站**;這可讓使用者輕鬆選取語言並設定即時副本的結構。
 * 為與Blueprint有關係的Live Copy定義預設轉出設定。
 
 如果未參考Blueprint設定，則只能從即時副本本身啟動轉出，實際上是從來源提取內容。
@@ -71,7 +67,7 @@ MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主�
 >
 >CUG組無法從Blueprint導出到Live Copy。 設定Live Copy時，請針對此進行規劃。
 
-## 元件和容器同步{#components-and-container-synchronization}
+## 元件和容器同步 {#components-and-container-synchronization}
 
 一般而言，MSM中關於元件同步的轉出規則為：
 
@@ -84,25 +80,25 @@ MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主�
 
 >[!NOTE]
 >
->將屬性`cq:isContainer`新增至元件，以將其指定為容器。
+>新增屬性 `cq:isContainer` 元件來將其指定為容器。
 
 ## 建立網站 {#create-site}
 
 請注意，AEM有兩種建立Live Copy的主要方法：
 
-* 當[建立即時副本時](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
+* 當 [建立即時副本](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
    這可視為較通用的方法，可讓您從任何頁面建立即時副本。 即時副本的內容結構完全符合來源。
 
-* 當[建立站點時](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
+* 當 [建立網站](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
    這是更專業的方法，主要用於以多語言結構建立網站。
 
 建立網站時，請謹記以下幾點：
 
-* 若要建立新網站，您需要[blueprint設定](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)。
+* 若要建立新網站，您需要 [Blueprint設定](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * 若要允許選取要在新網站中建立的語言路徑，對應的語言根必須存在於Blueprint（來源）中。
-* 一旦將[新網站建立為即時副本](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)（使用&#x200B;**Create**，然後使用&#x200B;**Site**），此即時副本的前兩個層級為&#x200B;*shallow*。 頁面的子項不屬於即時關係，但如果找到符合觸發器的即時關係，則轉出仍會下降。
+* 一次a [新網站已建立為即時副本](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (使用 **建立**，然後 **網站**)，此即時副本的前兩個層級為 *淺*. 頁面的子項不屬於即時關係，但如果找到符合觸發器的即時關係，則轉出仍會下降。
 
    有助於避免：
 
@@ -110,13 +106,13 @@ MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主�
    * 手動新增語言根目錄正下方的內容，
    * 不會導致轉出時自動將此新內容傳送到即時副本。
 
-## MSM和多語言網站{#msm-and-multilingual-websites}
+## MSM與多語言網站 {#msm-and-multilingual-websites}
 
 MSM可以以兩種方式協助建立多語言網站：
 
 * 建立語言主版時。
 
-   * 雖然MSM本身&#x200B;**不提供內容翻譯**，但可與提供內容的第三方翻譯連接器整合。 請注意：
+   * 而MSM本身 **不提供內容翻譯**，則可與具備此功能的協力廠商翻譯連接器整合。 請注意：
 
       * MSM可讓您取消頁面和/或元件層級的繼承。 這有助於防止下次轉出時覆寫已翻譯的內容（來自即時副本，而來自Blueprint的尚未翻譯內容）。
       * 某些第三方翻譯連接器會自動管理MSM繼承內容。
@@ -129,17 +125,17 @@ MSM可以以兩種方式協助建立多語言網站：
 
    * 例如，從法語母版到特定國家的網站，如法國/法語、加拿大/法語、瑞士/法語。
 
-如需詳細資訊，請參閱[翻譯多語言網站的內容](/help/sites-administering/translation.md)和[翻譯最佳實務](/help/sites-administering/tc-bp.md)。
+如需詳細資訊，請參閱 [轉譯多語言網站的內容](/help/sites-administering/translation.md) 和 [翻譯最佳實務](/help/sites-administering/tc-bp.md).
 
-## 結構變更與轉出{#structure-changes-and-rollouts}
+## 結構變更和轉出 {#structure-changes-and-rollouts}
 
 Blueprint/來源樹狀結構中對內容結構的修改在即時副本中的反映不同。 這取決於修改類型：
 
-* **** 在Blueprint中建立新頁面後，透過標準轉出設定轉出後，會在Live Copy中建立對應的頁面。
+* **建立** blueprint中的新頁面使用標準轉出設定轉出後，將會導致在即時副本中建立對應的頁面。
 
-* **** 使用標準轉出設定轉出後，Blueprint中的刪除頁面將導致從Live Copy中刪除對應的頁面。
+* **刪除** blueprint中的頁面在透過標準轉出設定轉出後，將會導致從即時副本中刪除對應的頁面。
 
-* **** 使用標準轉出設定轉出 **** 後，在Blueprint中移動頁面不會導致對應頁面在Live Copy中移動：
+* **移動** 藍圖中的頁面 **not** 使用標準轉出設定轉出後，導致對應的頁面移至Live Copy中：
 
    * 此行為的原因是頁面移動隱含地包含頁面刪除。 這可能會在發佈時導致非預期的行為，因為刪除作者上的頁面會自動在發佈時停用對應的內容。 這也可能對相關項目（例如連結、書籤等）產生連結效應。
    * 會更新個別即時副本頁面中的內容繼承，以反映其來源在Blueprint中的新位置。
@@ -147,7 +143,7 @@ Blueprint/來源樹狀結構中對內容結構的修改在即時副本中的反�
 
 >[!NOTE]
 >
->這隻適用於[轉出觸發器](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers)。
+>這隻適用於 [轉出觸發時](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/msm-sync.html#rollout-triggers).
 
 * 建立自訂轉出設定：
 
@@ -171,20 +167,20 @@ Blueprint/來源樹狀結構中對內容結構的修改在即時副本中的反�
          這可確保即時副本中不會刪除任何內容，或從發佈停用。
 
 
-## 自訂轉出{#customizing-rollouts}
+## 自訂轉出 {#customizing-rollouts}
 
-MSM轉出設定可高度自訂。 請注意，自動轉出可能會產生深遠的後果。 最佳實務是，您應事先謹慎規劃&#x200B;*very*，例如：
+MSM轉出設定可高度自訂。 請注意，自動轉出可能會產生深遠的後果。 作為最佳實務，您應規劃 *very* 例如，請務必先小心：
 
-* 自動轉出；例如，若使用[onModify觸發器](#onmodify),
-* 自定義[節點類型/屬性](#node-types-properties),
+* 自動轉出；例如，使用 [onModify觸發器](#onmodify),
+* 自訂 [節點類型/屬性](#node-types-properties),
 * 啟動後續工作流，
 * 和/或在轉出中啟用內容。
 
 ### onModify {#onmodify}
 
-使用[轉出觸發器](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify`時，您應考量：
+使用 [轉出觸發](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` 您應考慮：
 
-* 使用`onModify`觸發器自動轉出可能會對製作效能造成負面影響，因為它們會在&#x200B;*every*&#x200B;頁面修改後觸發轉出。
+* 使用自動轉出 `onModify` 觸發器可能會對製作效能造成負面影響，因為它們會在 *ever* 頁面修改。
 
 * 轉出結果可能與預期的不同，如下所示：
 
@@ -193,13 +189,13 @@ MSM轉出設定可高度自訂。 請注意，自動轉出可能會產生深遠�
 
 * 如果同一資源同時更新，使用此類轉出設定可能會導致提交衝突。
 
-因此，如果自動轉出啟動的好處超過任何潛在的效能問題，建議您&#x200B;*僅*&#x200B;使用`onModify`觸發器。
+因此，建議您 *僅限* use `onModify` 如果自動轉出啟動的好處超過任何潛在的效能問題，就會觸發。
 
-### 節點類型/屬性{#node-types-properties}
+### 節點類型/屬性 {#node-types-properties}
 
 請記住：
 
-* 除了自訂轉出動作，MSM也可讓您自訂正在轉出的節點屬性。 [MSM OSGi設定可讓您排除節點類型](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)，以避免從來源複製到即時副本。
+* 除了自訂轉出動作，MSM也可讓您自訂正在轉出的節點屬性。 此 [MSM OSGi設定可讓您排除節點類型](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) 從來源複製到即時副本。
 
 ## 更多資訊 {#further-information}
 
