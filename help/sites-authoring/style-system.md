@@ -156,7 +156,6 @@ ht-degree: 2%
 >1. HTL優先於所有項目： `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然後，在多個活動樣式中，會採用元件策略中配置的樣式清單中的第一個樣式。
 >1. 最後，元件 `cq:htmlTag`/ `cq:tagName` 會視為後援值。
-
 >
 
 
