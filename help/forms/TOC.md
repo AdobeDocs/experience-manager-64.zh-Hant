@@ -22,7 +22,7 @@ ht-degree: 4%
 + 發行說明 {#release-notes-new-features}
    + [發行說明](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/forms.html)
    + [新功能摘要](using/whats-new.md)
-   + [過時的功能](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html)
+   + [過時的功能](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=zh-Hant)
 + 快速入門 {#getting-started}
    + [AEM Forms簡介](using/introduction-aem-forms.md)
    + [製作最適化表單簡介](using/introduction-forms-authoring.md)
@@ -67,9 +67,9 @@ ht-degree: 4%
       + [在JEE上使用JBoss整套工具安裝和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
       + [安裝和設定AEM Forms Document Security伺服器](using/installing-and-configuring-the-document-security-server.md)
       + [準備安裝AEM Forms（單一伺服器）](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
-      + [在JEE for JBoss上安裝和部署Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
-      + [在JEE for WebLogic上安裝和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
-      + [在WebSphere適用的JEE上安裝和部署Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
+      + [在JEE for JBoss上安裝和部署Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_installJBoss_64_tw)
+      + [在JEE for WebLogic上安裝和部署AEM Forms](http://www.adobe.com/go/learn_aemforms_installWebLogic_64_tw)
+      + [在WebSphere適用的JEE上安裝和部署Adobe Experience Manager Forms](http://www.adobe.com/go/learn_aemforms_installWebSphere_64_tw)
       + [安裝AEM Forms Workbench](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
       + [安裝及設定 Designer](using/installing-configuring-designer.md)
       + [準備安裝AEM Forms（伺服器叢集）](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
@@ -368,7 +368,7 @@ ht-degree: 4%
    + [使AEM能夠搜索受文檔安全保護的PDF和Microsoft Office文檔](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Protect代表其他使用者的檔案](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
-   + [使用設計工具](http://www.adobe.com/go/learn_aemforms_designer_64)
+   + [使用設計工具](http://www.adobe.com/go/learn_aemforms_designer_64_tw)
    + [設計器快速入門Tutorials](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
    + [設計工具範例](http://www.adobe.com/go/learn_aemforms_designer_samples_64)
    + [設計人員指令碼基本知識](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64)

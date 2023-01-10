@@ -11,7 +11,7 @@ role: Developer
 source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
 workflow-type: tm+mt
 source-wordcount: '884'
-ht-degree: 15%
+ht-degree: 24%
 
 ---
 
@@ -20,12 +20,12 @@ ht-degree: 15%
 
 + [開發使用手冊概述](home.md)
 + 開發人員簡介{#introduction}
-   + [開始開發 AEM Sites - WKND 教學課程](getting-started.md)
+   + [開發 AEM Sites 快速入門 - WKND 教學課程](getting-started.md)
    + [AEM核心概念](the-basics.md)
    + [AEM觸控式UI的結構](touch-ui-structure.md)
    + [AEM觸控式UI的概念](touch-ui-concepts.md)
    + [AEM開發 — 准則和最佳實務](dev-guidelines-bestpractices.md)
-   + [使用用戶端端程式庫](clientlibs.md)
+   + [使用用戶端程式庫](clientlibs.md)
    + [開發與頁面差異](pagediff.md)
    + [編輯器限制](editor-limitations.md)
    + [CSRF保護框架](csrf-protection.md)
@@ -55,7 +55,7 @@ ht-degree: 15%
       + [查詢產生器 API](querybuilder-api.md)
    + 標記{#tagging}
       + [標記](tags.md)
-      + [AEM標籤架構](framework.md)
+      + [AEM 標記框架](framework.md)
       + [在AEM應用程式中建立標籤](building.md)
    + [自訂由錯誤處理常式顯示的頁面](customizing-errorhandler-pages.md)
    + [自訂節點類型](custom-nodetypes.md)
@@ -79,8 +79,8 @@ ht-degree: 15%
    + [AEM元件 — 基本概念](components-basics.md)
    + [開發AEM元件](developing-components.md)
    + [開發AEM元件 — 程式碼範例](developing-components-samples.md)
-   + [內容服務的JSON匯出工具](json-exporter.md)
-   + [為元件啟用JSON匯出](json-exporter-components.md)
+   + [內容服務的 JSON 匯出工具](json-exporter.md)
+   + [為元件啟用 JSON 匯出](json-exporter-components.md)
    + [影像編輯器](image-editor.md)
    + [裝飾標記](decoration-tag.md)
    + [使用隱藏條件](hide-conditions.md)
@@ -101,19 +101,19 @@ ht-degree: 15%
       + [開發Forms（傳統UI）](developing-forms.md)
 + 無頭式體驗管理{#headless}
    + [無頭與混合搭配AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [為元件啟用JSON匯出](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
+   + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + 單頁應用程式{#spas}
-      + [SPA簡介和逐步說明](spa-walkthrough.md)
-      + [SPA WKND教學課程](spa-wknd.md)
+      + [SPA 簡介和逐步解說](spa-walkthrough.md)
+      + [SPA WKND 教學課程](spa-wknd.md)
       + [AEM中的SPA快速入門 — React](spa-getting-started-react.md)
       + [AEM中SPA快速入門 — Angular](spa-getting-started-angular.md)
       + [針對 SPA 實作 React元件](spa-implementing-react-component.md)
-      + [SPA深度潛水](spa-deep-dives.md)
-      + [SPA編輯器概述](spa-overview.md)
-      + [開發SPA for AEM](spa-architecture.md)
-      + [SPA Blueprint](spa-blueprint.md)
-      + [SPA頁面元件](spa-page-component.md)
-      + [SPA的動態模型與元件對應](spa-dynamic-model-to-component-mapping.md)
+      + [SPA 深入探討](spa-deep-dives.md)
+      + [SPA 編輯器概觀](spa-overview.md)
+      + [針對 AEM 開發 SPA](spa-architecture.md)
+      + [SPA 藍圖](spa-blueprint.md)
+      + [SPA 頁面元件](spa-page-component.md)
+      + [動態模型到元件對應 適用於SPA](spa-dynamic-model-to-component-mapping.md)
       + [SPA模型路由](spa-routing.md)
       + [SPA與Adobe Experience Platform Launch整合](spa-launch.md)
       + [SPA和伺服器端轉譯](spa-ssr.md)
@@ -135,16 +135,16 @@ ht-degree: 15%
    + [如何使用VLT工具](ht-vlttool.md)
    + [如何使用代理伺服器工具](ht-proxy-server.md)
    + [AEM Brackets擴充功能](aem-brackets.md)
-   + [AEM Developer Tools for Eclipse](aem-eclipse.md)
+   + [Eclipse 適用的 AEM 開發人員工具](aem-eclipse.md)
    + [AEM Repo Tool](aem-repo-tool.md)
-+ 個性化{#personlization}
++ 個人化{#personlization}
    + [ContextHub](contexthub.md)
    + [ContextHub Javascript API參考資料](contexthub-api.md)
-   + [擴充ContextHub](ch-extend.md)
+   + [延伸 ContextHub](ch-extend.md)
    + [新增ContextHub至頁面及存取商店](ch-adding.md)
    + [範例ContextHub存放區候選項](ch-samplestores.md)
    + [範例ContextHub UI模組類型](ch-samplemodules.md)
-   + [ContextHub診斷](ch-diagnostics.md)
+   + [ContextHub 診斷](ch-diagnostics.md)
    + [針對目標內容開發](target.md)
    + ClientContext{#client-context}
       + [詳細的客戶端上下文](client-context.md)

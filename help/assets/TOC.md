@@ -9,7 +9,7 @@ user-guide-description: 建立、管理、提供和最佳化數位資產。
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 41%
+ht-degree: 45%
 
 ---
 
@@ -31,9 +31,9 @@ ht-degree: 41%
    + [時間軸中的活動資料流](activity-stream.md)
    + [處理資產](assets-workflow.md)
    + [新增影像地圖](image-maps.md)
-   + [使用MSM重複使用資產](reuse-assets-using-msm.md)
-+ 動態媒體{#dynamic}
-   + [Dynamic Media電子報封存(依Experience League)](dynamic-media-newsletter.md)
+   + [使用 MSM 重複使用資產](reuse-assets-using-msm.md)
++ Dynamic Media{#dynamic}
+   + [Experience League 的 Dynamic Media 電子報](dynamic-media-newsletter.md)
    + [建立 Dynamic Media](administering-dynamic-media.md)
    + [使用 Dynamic Media](dynamic-media.md)
    + [設定 Dynamic Media - Scene7 模式](config-dms7.md)
@@ -48,19 +48,19 @@ ht-degree: 41%
    + [Dynamic Media 影片設定檔](video-profiles.md)
    + [Dynamic Media 影像設定檔](image-profiles.md)
    + [智慧型影像](imaging-faq.md)
-   + [具有用戶端裝置像素比率的智慧影像](client-side-dpr.md)
+   + [具有用戶端裝置像素比的智慧型影像](client-side-dpr.md)
    + [影片](s7-video.md)
    + [HTTP2 傳送內容](http2.md)
    + [傳送 Dynamic Media 資產](delivering-dynamic-media-assets.md)
    + [在 Dynamic Media 中啟用超連結保護](hotlink-protection.md)
-   + [Dynamic Media限制](limitations.md)
+   + [Dynamic Media 限制](limitations.md)
    + [影像集](image-sets.md)
    + [混合媒體集](mixed-media-sets.md)
    + [迴轉集](spin-sets.md)
    + [全景影像](panoramic-images.md)
    + [影片](video.md)
-   + [互動影像](interactive-images.md)
-   + [互動影片](interactive-videos.md)
+   + [互動式影像](interactive-images.md)
+   + [互動式影片](interactive-videos.md)
    + [輪播橫幅](carousel-banners.md)
    + [使用「快速檢視」建立自訂快顯視窗](custom-pop-ups.md)
    + [為回應式網站傳送最佳化影像](responsive-site.md)
@@ -169,6 +169,6 @@ ht-degree: 41%
    + [智慧內容服務訓練准則](smart-tags-training-guidelines.md)
    + [視訊轉譯](video-renditions.md)
 + 和其他解決方案整合 {#integrations}
-   + [與 [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [與  [!DNL Adobe Workfront] 整合](workfront-integrations.md)
    + [安裝 [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-install.md)
    + [設定 [!DNL enhanced connector] for [!DNL Workfront]](workfront-connector-configure.md)
