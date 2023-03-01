@@ -8,9 +8,9 @@ breadcrumb-title: Administering 指南
 user-guide-description: 了解 AEM 的管理事項。
 feature: Administering
 role: Admin
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 9dcaf2538e5f968b25ce4f643ac307eff295d07d
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '633'
 ht-degree: 24%
 
 ---
@@ -116,7 +116,6 @@ ht-degree: 24%
    + [與第三方服務整合](third-party-services.md)
    + [與Salesforce整合](salesforce.md)
    + [整合 Adobe Target](target.md)
-   + [與 Livefyre 整合](livefyre.md)
    + [整合 Adobe Analytics](adobeanalytics.md)
    + [連接Adobe Analytics和建立框架](adobeanalytics-connect.md)
    + [設定Adobe Analytics的連結追蹤](adobeanalytics-link.md)
@@ -136,7 +135,6 @@ ht-degree: 24%
    + [選擇加入Adobe Analytics和Adobe Target](opt-in.md)
    + [AEM門戶和門戶](aem-as-portal.md)
    + [與Dynamic Media Classic整合](scene7.md)
-   + [AEM Livefyre 指導方針](aem-livefyre-recipes.md)
    + [疑難排解整合問題](troubleshooting-integration-issues.md)
    + [與BrightEdge Content Optimizer整合](brightedge.md)
    + [電子郵件範本最佳作法](best-practices-for-email-templates.md)
