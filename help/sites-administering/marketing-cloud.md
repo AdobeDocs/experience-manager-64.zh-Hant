@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
-source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
+source-git-commit: 8220795bbf0c92ead3bb68dd6f8bbb48cc9ca2cd
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '862'
 ht-degree: 1%
 
 ---
@@ -95,16 +95,8 @@ Adobe Experience Manager 6.3已移除Audience Manager整合。
 
 <!-- Search&Promote was end of life September 1, 2022. For information about integrating Adobe Experience Manager and Search&Promote, see [Integrating with Adobe Search&Promote](/help/sites-administering/search-and-promote.md). -->
 
-## 與Adobe Campaign整合 {#integrating-with-adobe-campaign}
+## 與 Adobe Campaign 整合 {#integrating-with-adobe-campaign}
 
 [Adobe Campaign](https://www.adobe.com/solutions/campaign-management.html) 可讓您直接在Adobe Experience Manager中管理電子郵件傳送內容。
 
 如需Adobe Experience Manager如何與Adobe Campaign整合的詳細資訊，請參閱 [與Adobe Campaign整合](/help/sites-administering/campaignstandard.md).
-
-## 與 Livefyre 整合 {#integrating-with-livefyre}
-
-了解Adobe Experience Manager和Livefyre:
-
-* [Livefyre快速入門](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
-
-* [Livefyre與Adobe Experience Manager](/help/sites-administering/livefyre.md)
