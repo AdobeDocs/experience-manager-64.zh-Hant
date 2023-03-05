@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 exl-id: 9a779cde-dfdf-4d70-a452-5e7d12bf3f28
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: 79ff6834acd2bc1105bbea798d946cd7354474d5
 workflow-type: tm+mt
 source-wordcount: '1819'
 ht-degree: 2%
@@ -116,7 +116,7 @@ AEM Managed Services是數位體驗管理的完整解決方案。 它在雲端�
 
 透過AEM Managed Services，客戶可實現下列優點：
 
-**加速上市時間：** 透過Adobe Managed Services的彈性雲端基礎架構，組織可以快速規劃、啟動並最佳化成功的數位體驗。 Adobe無需額外的資金、硬體或軟體即可管理雲架構，Adobe的客戶成功工程師可提供AEM架構、布建、自訂以連接後端應用程式和上線最佳實踐方面的幫助。
+**加速上市時間：** 透過Adobe Managed Services的彈性雲端基礎架構，組織可以快速規劃、啟動並最佳化成功的數位體驗。 Adobe無需額外的資金、硬體或軟體即可管理雲架構，Adobe的客戶成功工程師、AEM架構的幫助、資源調配、連接後端應用程式的定製以及上線最佳實踐。
 
 **更高的效能：** 為您的企業提供可靠的數字型驗，提供4種服務可用性選項：99.5%、99.9%、99.95%和99.99%。 此外，它還允許自動備份和多模式災難恢復模型，以幫助確保可靠性和應急管理。
 
