@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: Adobe Experience Manager 6.4發行說明
 breadcrumb-title: 發行說明
 user-guide-description: 在發行說明中了解AEM 6.4的最新新功能。
-feature: 發行資訊
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 21%
+source-wordcount: '87'
+ht-degree: 19%
 
 ---
 
