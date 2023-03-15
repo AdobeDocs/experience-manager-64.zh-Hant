@@ -1,8 +1,8 @@
 ---
-title: Dynamic Media影像設定檔
-seo-title: Dynamic Media image profiles
+title: Dynamic Media 影像設定檔
+seo-title: Dynamic Media Image Profiles
 description: 建立包含遮色片銳利化設定、智慧型裁切或智慧型色票（或兩者）的影像描述檔，然後將描述檔套用至影像資產的資料夾。
-seo-description: Create image profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
+seo-description: Create Image Profiles that contain settings for unsharp mask, and smart crop or smart swatch, or both, then apply the profile to a folder of image assets.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -12,16 +12,16 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 0abf095e352215cf6f83a409b34975bf8c5b0239
+source-git-commit: c413f31498cdccf8ceea4afc225c570a40ba1819
 workflow-type: tm+mt
-source-wordcount: '2893'
-ht-degree: 10%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Dynamic Media影像設定檔 {#image-profiles}
+# Dynamic Media 影像設定檔 {#image-profiles}
 
-上傳影像時，您可以透過將影像設定檔套用至資料夾，在上傳時自動裁切影像。
+上傳影像時，您可以透過將影像描述檔套用至資料夾，在上傳時自動裁切影像。
 
 >[!NOTE]
 >
@@ -44,18 +44,21 @@ ht-degree: 10%
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
-智慧型裁切座標取決於外觀比例。 也就是說，對於影像設定檔中的各種智慧型裁切設定，如果在影像設定檔中新增的維度的長寬比相同，則會將相同的長寬比傳送至動態媒體。 因此，Adobe建議您使用相同的裁切區域。 這麼做可確保對影像設定檔中使用的不同維度沒有影響。
+智慧型裁切座標取決於外觀比例。 也就是說，對於影像設定檔中的每個智慧型裁切設定，如果影像設定檔中新增的維度的長寬比相同，則會將相同的長寬比傳送至Dynamic Media。 因此，Adobe建議您使用相同的裁切區域。 這樣做可確保對影像設定檔中使用的不同維度沒有影響。
 
-請注意，您建立的每個智慧型裁切產生都需要額外處理。 例如，新增超過五個智慧型裁切長寬比可能會導致資產擷取速度緩慢。 這也可能導致系統負載增加。 由於您可以在資料夾層級套用智慧型裁切，因此Adobe建議您在資料夾上使用智慧型裁切 *僅限* 需要的地方。
+您建立的每個智慧型裁切產生都需要額外處理。 例如，新增超過五個智慧型裁切長寬比可能會導致資產擷取速度緩慢。 這也可能導致系統負載增加。 由於您可以在資料夾層級套用智慧型裁切，因此Adobe建議您在資料夾上使用智慧型裁切 *僅限* 需要的地方。
 
 **定義影像設定檔中智慧型裁切的准則**
 為了控制智慧型裁切的使用，並為處理時間和裁切的儲存進行最佳化，Adobe建議下列准則和提示：
 
-* 請避免建立具有相同寬度和高度值的重複智慧型裁切設定檔。
-* 根據裁切維度為智慧型裁切命名，而非根據最終用途。 這麼做有助於最佳化多個頁面上使用單一維度的重複項目。
+* 將套用智慧型裁切的影像資產必須至少為50 x 50像素或更大。 &lt;!— CQDOC-20087>
+* 不允許使用包含重複智慧型裁切維度的影像設定檔。 &lt;!— CQDOC-20087>
+* 不允許設定智慧型裁切選項的重複命名影像描述檔。 &lt;!— CQDOC-20087>
 * 為特定資料夾和子資料夾建立頁面式/資產類型式的影像設定檔，而非套用至所有資料夾或所有資產的通用智慧型裁切設定檔。
 * 您套用至子資料夾的影像設定檔會覆寫套用至資料夾的影像設定檔。
 * 理想情況下，每個影像要有10-15個智慧裁切，以針對螢幕比例和處理時間進行最佳化。
+<!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
 
 您有兩個影像裁切選項可供選擇。 您也可以選擇自動建立顏色和影像色票，或保留目標解析度間的裁切內容。
 
@@ -91,7 +94,7 @@ ht-degree: 10%
   <tr> 
    <td>顏色及影像樣本</td> 
    <td>大量產生每個影像的影像色票。</td> 
-   <td><p><strong>附註</strong>:Dynamic Media Classic不支援智慧色票。</p> <p>從顯示顏色或紋理的產品影像自動定位並生成高質量色板。</p> <p>要使用顏色和影像色板，請選擇 <strong>智慧型裁切</strong> 從「裁切選項」下拉式清單，然後在「顏色」和「影像色票」的右側，啟用（開啟）功能。 在「寬度」和「高度」文本框中輸入像素值。</p> <p>雖然所有影像裁切都可從「轉譯」邊欄使用，但僅透過「複製URL」功能使用色票。 請注意，您必須使用自己的檢視元件，才能在網站上轉譯色票。 (此例外為輪播橫幅。 Dynamic Media提供輪播橫幅中所用色票的檢視元件。)</p> <p><strong>使用影像色票</strong></p> <p>影像色票的URL簡單明瞭。 即：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>where <code>:Swatch</code> 會附加至資產請求。</p> <p><strong>使用顏色色板</strong></p> <p>若要使用顏色色票，請建立 <code>req=userdata</code> 請求，並包含下列項目：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，下列是Dynamic Media Classic中的色票資產：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>以下是色票資產對應的 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>此 <code>req=userdata</code> 回應如下：</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>附註</strong>:Dynamic Media Classic不支援智慧色票。</p> <p>從顯示顏色或紋理的產品影像自動定位並生成高質量色板。</p> <p>要使用顏色和影像色板，請選擇 <strong>智慧型裁切</strong> 從「裁切選項」下拉式清單，然後在「顏色」和「影像色票」的右側，啟用（開啟）功能。 在「寬度」和「高度」文本框中輸入像素值。</p> <p>雖然所有影像裁切都可從「轉譯」邊欄使用，但僅透過「複製URL」功能使用色票。 您必須使用自己的檢視元件，才能在網站上轉譯色票。 (此規則的例外是輪播橫幅。 Dynamic Media提供輪播橫幅中所用色票的檢視元件。)</p> <p><strong>使用影像色票</strong></p> <p>影像色票的URL非常直接：</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>where <code>:Swatch</code> 會附加至資產請求。</p> <p><strong>使用顏色色板</strong></p> <p>若要使用顏色色票，請建立 <code>req=userdata</code> 請求，並包含下列項目：</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>例如，下列是Dynamic Media Classic中的色票資產：</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>以下是色票資產對應的 <code>req=userdata</code> URL:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>此 <code>req=userdata</code> 回應如下：</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -100,10 +103,10 @@ ht-degree: 10%
 
 ## 不銳利化遮色片 {#unsharp-mask}
 
-您使用 **不銳利化遮色片** 來微調最終縮減取樣影像的銳利化濾鏡效果。 您可以控制效果的強度、效果半徑 (以像素計量)，以及將忽略的對比度臨界值。此效果使用的選項與Adobe Photoshop的「遮色片銳利化」篩選器相同。
+您使用 **不銳利化遮色片** 來微調最終縮減取樣影像的銳利化濾鏡效果。 您可以控制效果的強度、效果半徑（以像素計量），以及忽略的對比度臨界值。 此效果使用的選項與Adobe Photoshop的「遮色片銳利化」篩選器相同。
 
 >[!NOTE]
-不銳利化遮色片只會套用至縮減取樣超過50%的PTIFF（金字塔Tiff）內縮減縮放的轉譯。 這表示PTIFF中大小最大的轉譯不受遮色片銳利化影響，而大小較小的轉譯（例如縮圖）則會變更（且會顯示遮色片銳利化）。
+不銳利化遮色片只會套用至縮減取樣超過50%的PTIFF（金字塔Tiff）內縮減縮放的轉譯。 這表示PTIFF中大小最大的轉譯不受遮色片銳利化影響，而大小較小的轉譯（例如縮圖）則會更改（並顯示遮色片銳利化）。
 
 在 **不銳利化遮色片**，您有下列篩選選項：
 
@@ -137,10 +140,10 @@ ht-degree: 10%
 **建立Dynamic Media影像設定檔的方式**:
 
 1. 點選AEM標誌並導覽至 **[!UICONTROL 工具>資產>影像設定檔]**.
-1. 點選 **[!UICONTROL 建立]** 以新增新的影像設定檔。
+1. 點選 **[!UICONTROL 建立]** 來新增影像設定檔。
 1. 輸入描述檔名稱和值，以用於遮色片、裁切或色票，或兩者。
 
-   您可能會發現，使用符合預定用途的設定檔名稱會很有幫助。 例如，如果要建立僅生成色板的配置檔案(即，禁用（關閉）智慧裁切，啟用（開啟）顏色和影像色板)，則可以使用配置檔案名「智慧色板」。
+   您可能會發現，使用符合預定用途的設定檔名稱會很有幫助。 例如，如果要建立僅生成色板的配置檔案（其中禁用了智慧裁切並啟用了顏色和影像色板），則可以使用配置檔案名「智慧色板」。
 
    另請參 [閱智慧型裁切和智慧型色票選項](#crop-options)[和遮色片銳利化](#unsharp-mask)。
 
@@ -151,7 +154,7 @@ ht-degree: 10%
 ## 編輯或刪除Dynamic Media影像設定檔 {#editing-or-deleting-image-profiles}
 
 1. 點選AEM標誌並導覽至 **[!UICONTROL 工具>資產>影像設定檔]**.
-1. 選取您要編輯或移除的影像設定檔。 若要編輯，請選取 **[!UICONTROL 編輯影像處理設定檔]**. 若要移除，請選取 **[!UICONTROL 刪除影像處理設定檔]**.
+1. 選擇要編輯或刪除的「影像配置檔案」。 若要編輯，請選取 **[!UICONTROL 編輯影像處理設定檔]**. 若要移除，請選取 **[!UICONTROL 刪除影像處理設定檔]**.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -159,26 +162,26 @@ ht-degree: 10%
 
 ## 將Dynamic Media影像設定檔套用至資料夾 {#applying-an-image-profile-to-folders}
 
-將映像配置檔案分配給資料夾時，任何子資料夾都會自動從其父資料夾繼承配置檔案。 這表示您只能將一個影像設定檔指派給資料夾。 因此，請仔細考慮上傳、儲存、使用和封存資產的資料夾結構。
+將映像配置檔案分配給資料夾時，任何子資料夾都會自動從其父資料夾繼承配置檔案。 此工作流程表示您只能將一個影像設定檔指派給資料夾。 因此，請仔細考慮上傳、儲存、使用和封存資產的資料夾結構。
 
-如果您將不同的影像配置檔案分配給資料夾，則新配置檔案將覆蓋前一個配置檔案。 先前的資料夾資產維持不變。 新設定檔會套用至稍後新增至資料夾的資產。
+如果為資料夾分配了不同的影像配置檔案，則新配置檔案將覆蓋前一個配置檔案。 先前的資料夾資產維持不變。 新設定檔會套用至稍後新增至資料夾的資產。
 
-在使用者介面中，會以卡片中顯示之設定檔的名稱來指出已指派給設定檔的資料夾。
+在用戶介面中，會以卡片中顯示的配置檔案名稱來指示已為其分配配置檔案的資料夾。
 
-將智慧型裁切新增至現有的影像設定檔時，您需要重新觸發 [DAM更新資產工作流程](assets-workflow.md) 如果您想要為資產存放庫中的現有資產產生裁切。
+將智慧型裁切新增至現有的影像設定檔時，必須擷取 [DAM更新資產工作流程](assets-workflow.md) 如果您想要為資產存放庫中的現有資產產生裁切。
 
 您可以將影像設定檔套用至特定資料夾，或全域套用至所有資產。
 
 ### 將Dynamic Media影像設定檔套用至特定資料夾 {#applying-image-profiles-to-specific-folders}
 
-您可以從「工具」菜單或在資料夾內的「屬性」中將影像配置檔案應 **[!UICONTROL 用到資料夾]******。本節將說明如何以兩種方式將映像配置檔案應用於資料夾。
+您可以從 **[!UICONTROL 工具]** ，或者如果您位於資料夾中，則從 **[!UICONTROL 屬性]**. 本節介紹如何以兩種方式將映像配置檔案應用到資料夾。
 
 已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
 #### 從設定檔使用者介面將Dynamic Media影像設定檔套用至資料夾 {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. 點選AEM標誌並導覽至 **[!UICONTROL 工具>資產>影像設定檔]**.
-1. 選取您要套用至資料夾或多個資料夾的影像設定檔。
+1. 選擇要應用於資料夾或多個資料夾的影像配置檔案。
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
@@ -186,7 +189,7 @@ ht-degree: 10%
 
 #### 從屬性將Dynamic Media影像設定檔套用至資料夾 {#applying-image-profiles-to-folders-from-properties}
 
-1. 點選AEM標誌並導覽至 **[!UICONTROL 資產]**. 然後導覽至您要套用影像設定檔之資料夾的父資料夾。
+1. 點選AEM標誌並導覽至 **[!UICONTROL 資產]**. 然後導覽至您要套用影像描述檔之資料夾的父資料夾。
 1. 在資料夾中，點選核取記號以選取，然後點選 **[!UICONTROL 屬性]**.
 1. 點選「影 **[!UICONTROL 像描述檔]** 」標籤。從「描 **[!UICONTROL 述檔名稱]** 」下拉式清單中，選取描述檔，然後點選「 **[!UICONTROL 儲存並關閉」]**。已為其分配配置檔案的資料夾將通過資料夾名稱正下方的配置檔案名稱顯示來指示。
 
@@ -194,7 +197,7 @@ ht-degree: 10%
 
 ### 全域套用Dynamic Media影像設定檔 {#applying-an-image-profile-globally}
 
-除了將設定檔套用至資料夾之外，您也可以全域套用一個設定檔，讓任何資料夾中上傳至AEM資產的任何內容都會套用選取的設定檔。
+除了將設定檔套用至資料夾之外，您也可以全域套用一個設定檔，讓任何資料夾中上傳至AEM Assets的任何內容都已套用選取的設定檔。
 
 **全域套用Dynamic Media影像設定檔的方式**:
 
@@ -219,16 +222,15 @@ ht-degree: 10%
 
 編輯智慧型裁切並儲存後，變更會傳播至您對特定影像使用裁切的所有位置。
 
-您可以視需要重新執行智慧型裁切，以再次產生其他裁切。
+如有必要，您可以重新執行智慧型裁切，再次產生其他裁切。
 
 另請參閱 [編輯多個影像的智慧型裁切或智慧型色票](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **要編輯單個影像的智慧裁切或智慧色票**:
 
 1. 點選AEM標誌並導覽至 **[!UICONTROL 資產]**，然後套用至智慧型裁切或智慧型色票影像描述檔的資料夾。
-
 1. 點選資料夾以開啟其內容。
-1. 點選您要調整其智慧型裁切或智慧型色票的影像。
+1. 使用您要調整的智慧型裁切或智慧型色票點選影像。
 1. 在工具列中，點選 **[!UICONTROL 智慧型裁切]**.
 
 1. 執行下列任一操作：
@@ -242,15 +244,15 @@ ht-degree: 10%
 
 ## 編輯多個影像的智慧型裁切或智慧型色票 {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-將包含「智慧裁切」的影像配置檔案應用到資料夾後，該資料夾中的所有影像都將應用裁切。 如果需要，您可以 *手動* 重新對齊或調整多個影像中智慧型裁切窗口的大小，以進一步細化其焦點。
+將包含智慧型裁切的影像配置檔案應用到資料夾後，該資料夾中的所有影像都將應用裁切。 如果需要，您可以 *手動* 重新對齊或調整多個影像中智慧型裁切窗口的大小，以進一步細化其焦點。
 
 編輯智慧型裁切並儲存後，變更會傳播至您對特定影像使用裁切的所有位置。
 
-您可以視需要重新執行智慧型裁切，以再次產生其他裁切。
+如有必要，您可以重新執行智慧型裁切，再次產生其他裁切。
 
 **要編輯多個影像的智慧型裁切或智慧型色票**:
 
-1. 點選AEM標誌並導覽至 **[!UICONTROL 資產]**，則會套用至智慧型裁切或智慧型色票影像設定檔的資料夾。
+1. 點選AEM標誌並導覽至 **[!UICONTROL 資產]**，則會套用至智慧型裁切或智慧型色票影像描述檔的資料夾。
 1. 在資料夾上，點選 **[!UICONTROL 更多動作]** (...)圖示，然後點選 **[!UICONTROL 智慧型裁切]**.
 
 1. 在 **[!UICONTROL 編輯智慧裁切]** 頁面，執行下列任一操作：
@@ -291,23 +293,23 @@ ht-degree: 10%
 
 1. 在頁面的右上角附近，點選 **[!UICONTROL 儲存]**. 然後點選 **[!UICONTROL 關閉]** 返回資產資料夾。
 
-## 從資料夾中移除影像設定檔 {#removing-an-image-profile-from-folders}
+## 從資料夾中刪除映像配置檔案 {#removing-an-image-profile-from-folders}
 
-當您從資料夾中移除影像設定檔時，任何子資料夾都會自動從其父資料夾中繼承移除設定檔。 不過，資料夾內發生的檔案處理仍維持不變。
+從資料夾中移除影像配置檔案時，任何子資料夾都會自動從其父資料夾中繼承移除配置檔案。 不過，資料夾內發生的檔案處理仍維持不變。
 
-您可以從「工具」功能表內的資料夾中移除影像配置檔案，或者如果您位於資料夾中，則可以從「屬性」( **[!UICONTROL Properties)中移除影像配置檔案]******。本節將說明如何以兩種方式從資料夾中刪除映像配置檔案。
+您可以從 **[!UICONTROL 工具]** ，或者如果您位於資料夾中，則從 **[!UICONTROL 屬性]**. 本節介紹如何以兩種方式從資料夾中刪除映像配置檔案。
 
-### 透過設定檔使用者介面從資料夾移除Dynamic Media影像設定檔 {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### 透過Profiles使用者介面從資料夾中移除Dynamic Media影像設定檔 {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. 點選AEM標誌並導覽至 **[!UICONTROL 工具>資產>影像設定檔]**.
 1. 選擇要從資料夾或多個資料夾中刪除的影像配置檔案。
 1. 點選 **[!UICONTROL 「從資料夾移除處理描述檔」]** ，然後選取您要用來從中移除描述檔的資料夾或多個資料夾，並點選「 **[!UICONTROL 移除」]**。
 
-   您可以確認影像設定檔不再套用至資料夾，因為資料夾名稱下方不再顯示該名稱。
+   您可以確認「影像描述檔」不再套用至資料夾，因為名稱不再出現在資料夾名稱下方。
 
 ### 透過屬性從資料夾移除Dynamic Media影像設定檔 {#removing-image-profiles-from-folders-via-properties}
 
-1. 點選AEM標誌並導覽 **[!UICONTROL 資產]** ，然後轉到要從中刪除影像配置檔案的資料夾。
+1. 點選AEM標誌並導覽 **[!UICONTROL 資產]** ，然後轉到要從中刪除映像配置檔案的資料夾。
 1. 在資料夾中，點選核取記號以選取，然後點選 **[!UICONTROL 屬性]**.
 1. 選取 **[!UICONTROL 影像設定檔]** 標籤。
 1. 從 **[!UICONTROL 設定檔名稱]** 下拉清單，選擇 **[!UICONTROL 無]**，然後點選 **[!UICONTROL 儲存並關閉]**.
