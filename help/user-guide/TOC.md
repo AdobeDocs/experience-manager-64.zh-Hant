@@ -5,12 +5,12 @@ audience: end-user
 user-guide-title: AEM 6.4使用手冊
 user-guide-description: 概略說明了解、安裝、管理和使用AEM 6.4所需的所有必要資源。
 contentOwner: Chris Bohnert
-feature: 發行資訊
+feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 4%
+source-wordcount: '60'
+ht-degree: 1%
 
 ---
 

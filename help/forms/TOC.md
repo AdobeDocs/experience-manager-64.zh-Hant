@@ -126,7 +126,7 @@ ht-degree: 4%
       + [JEE版AEM Forms的一般安全性考量事項](using/general-security-considerations.md)
       + [在JEE環境中強化AEM Forms](using/hardening-aem-forms-jee-environment.md)
       + [配置JEE上AEM Forms的安全管理設定](using/configuring-secure-administration-settings-aem.md)
-+ 表單資料模型 {#form-data-model}
++ 表單資料模式 {#form-data-model}
    + [AEM Forms資料整合簡介](using/data-integration.md)
    + [設定資料來源](using/configure-data-sources.md)
    + [Microsoft Dynamics Odata設定](using/ms-dynamics-odata-configuration.md)

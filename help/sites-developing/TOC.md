@@ -39,8 +39,8 @@ ht-degree: 25%
    + [Sling 速查表](sling-cheatsheet.md)
    + [使用 Sling 介面卡](sling-adapters.md)
    + [標籤程式庫](taglib.md)
-   + 範本{#templates}
-      + [範本](templates.md)
+   + 範例{#templates}
+      + [範例](templates.md)
       + [頁面範本 — 可編輯 ](page-templates-editable.md)
       + [頁面範本 — 靜態](page-templates-static.md)
       + [內容片段範本](content-fragment-templates.md)
@@ -99,7 +99,7 @@ ht-degree: 25%
       + [使用和擴充Widget（傳統UI）](widgets.md)
       + [使用xtype（傳統UI）](xtypes.md)
       + [開發Forms（傳統UI）](developing-forms.md)
-+ 無頭式體驗管理{#headless}
++ Headless 體驗管理{#headless}
    + [無頭與混合搭配AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
    + [為元件啟用 JSON 匯出](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + 單頁應用程式{#spas}
@@ -172,7 +172,7 @@ ht-degree: 25%
       + [雲端服務設定](extending-cloud-config.md)
       + [建立自訂Cloud Service](extending-cloud-config-custom-cloud.md)
    + [建立自訂擴充功能](extending-campaign-extensions.md)
-   + 表單{#extending-forms}
+   + Forms{#extending-forms}
       + [建立自訂表單對應](extending-campaign-form-mapping.md)
       + [使用Adobe Campaign表單元件建立自訂AEM頁面範本](extending-campaign-custom-template.md)
       + [Request Analysis Script](analyze-request.md)

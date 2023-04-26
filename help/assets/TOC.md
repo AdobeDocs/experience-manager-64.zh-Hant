@@ -9,7 +9,7 @@ user-guide-description: 建立、管理、提供和最佳化數位資產。
 source-git-commit: 5d4d0c86a9d9e3eaaaca1e795260e8e49567ea73
 workflow-type: tm+mt
 source-wordcount: '649'
-ht-degree: 45%
+ht-degree: 44%
 
 ---
 
@@ -142,7 +142,7 @@ ht-degree: 45%
    + [內容片段 — Markdown](content-fragments-markdown.md)
    + [建立內容片段的翻譯專案](creating-translation-projects-for-content-fragments.md)
 + 管理資產 {#managing}
-   + [使用觸控最佳化 UI 來管理資產](managing-assets-touch-ui.md)
+   + [使用觸控最佳化UI管理資產](managing-assets-touch-ui.md)
    + [管理多個資產和集合](managing-multiple-assets.md)
    + [資產選擇器](asset-selector.md)
    + [管理集合](managing-collections-touch-ui.md)
