@@ -58,7 +58,7 @@ ht-degree: 9%
    + [成員和群組管理主控台](members.md)
    + [協調控制台](moderation.md)
    + [Communities工具](tools.md)
-   + [網站範本](sites.md)
+   + [網站範例](sites.md)
    + [群組範本](tools-groups.md)
    + [社群功能](functions.md)
    + [儲存設定](srp-config.md)
@@ -142,7 +142,7 @@ ht-degree: 9%
    + [使用Maven for Communities](maven.md)
    + [命名慣例](naming-conventions.md)
    + [SocialUtils重構](socialutils.md)
-+ 製作 {#authoring}
++ 編寫 {#authoring}
    + [Communities元件](author-communities.md)
    + [Communities元件基本知識](basics.md)
    + [活動資料流功能](activities.md)
