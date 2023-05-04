@@ -1,5 +1,5 @@
 ---
-title: 配置翻譯整合框架
+title: 設定翻譯整合框架
 seo-title: Configuring the Translation Integration Framework
 description: 了解如何配置翻譯整合框架。
 seo-description: Learn how to configure the Translation Integration Framework.
@@ -11,26 +11,30 @@ content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: e68b5a5c-e12a-4b7b-b607-451ef8fdeff0
-source-git-commit: a9459872f9ce8e68dccb46e7dfddebe9eeb39bd4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 1%
+source-wordcount: '1586'
+ht-degree: 5%
 
 ---
 
-# 配置翻譯整合框架{#configuring-the-translation-integration-framework}
+# 設定翻譯整合框架{#configuring-the-translation-integration-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 翻譯整合框架與第三方翻譯服務整合，以協調AEM內容的翻譯。
 
-* 連接到翻譯服務提供商。
-* 建立翻譯整合架構設定。
+* 連接到您的翻譯服務提供者。
+* 建立翻譯整合框架設定。
 * 將雲端設定與您的頁面建立關聯。
 
-如需AEM中內容翻譯功能的概觀，請參閱[多語言網站的翻譯內容](/help/sites-administering/translation.md)。
+如需AEM中內容翻譯功能的概觀，請參閱 [轉譯多語言網站的內容](/help/sites-administering/translation.md).
 
-## 連接到翻譯服務提供商 {#connecting-to-a-translation-service-provider}
+## 連接到翻譯服務提供者 {#connecting-to-a-translation-service-provider}
 
-建立將AEM連接至翻譯服務提供者的雲端設定。 AEM預設包含連接到Microsoft Translator的功能。
+建立將AEM連接至翻譯服務提供者的雲端設定。 AEM預設包含連線至Microsoft Translator的功能。
 下列翻譯廠商提供翻譯專案的新API實作。 深入了解整合的連結：
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (AdobeExchange首要合作夥伴)
@@ -48,16 +52,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->若要尋找最新的人文和機器翻譯提供者清單，請查看下列頁面：
+>若要尋找最新的人文和機器翻譯提供者清單，請查看以下頁面：
 >
 >
 >* [AEM人文翻譯](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM機器翻譯](https://www.adobe.com/go/aem-machine-translation-connectors)
-
 >
 
 
-安裝連接器封裝後，您可以為連接器建立雲端設定。 通常，您需要提供認證以驗證翻譯服務。 有關為Microsoft Translator連接器添加雲配置的資訊，請參閱[與Microsoft Translator整合](/help/sites-administering/tc-msconf.md)。
+安裝連接器封裝後，您可以為連接器建立雲端設定。 通常，您需要提供認證以驗證翻譯服務。 如需為Microsoft Translator連接器新增雲端設定的詳細資訊，請參閱 [與Microsoft翻譯人員整合](/help/sites-administering/tc-msconf.md).
 
 您可以視需要為相同連接器建立多個雲端設定。 例如，為您與相同供應商擁有的每個帳戶或項目建立一個配置。
 
@@ -65,19 +68,19 @@ ht-degree: 1%
 
 ## 建立翻譯整合設定 {#creating-a-translation-integration-configuration}
 
-建立翻譯整合架構設定，以指定如何翻譯您的內容。 設定包含下列資訊：
+建立翻譯整合架構設定，以指定如何翻譯您的內容。 設定包括以下資訊：
 
-* 要使用哪個翻譯服務提供商。
-* 無論是人翻譯還是機器翻譯。
+* 要使用哪個翻譯服務提供者.
+* 是否進行人工翻譯或機器翻譯.
 * 是否翻譯與頁面或資產相關聯的其他內容，例如標籤。
 
 建立框架配置後，可將雲配置與要根據配置翻譯的頁面相關聯。 當翻譯過程開始時，翻譯工作流程會根據相關的框架配置進行。
 
 當您網站的不同區段有不同的翻譯需求時，請據此建立多個架構設定。 例如，多語言網站包含英文、西班牙文和日文語言副本。 網站擁有者使用兩個不同的翻譯服務提供者提供西班牙文和日文翻譯。 因此，框架的兩個配置已配置。 每個配置使用不同的翻譯服務提供程式。
 
-配置翻譯整合框架後，您可以[將其與使用該框架的頁面](/help/sites-administering/tc-prep.md)關聯。
+配置翻譯整合框架後，您可以 [將其與頁面建立關聯](/help/sites-administering/tc-prep.md) 用它。
 
-**注意：** 如需AEM內容翻譯功能的概觀，請參閱 [多語言網站的翻譯內容](/help/sites-administering/translation.md)。
+**注意：** 如需AEM中內容翻譯功能的概觀，請參閱 [轉譯多語言網站的內容](/help/sites-administering/translation.md).
 
 架構的單一設定可控制如何翻譯頁面內容、社群內容和資產。
 ![chlimage_1-386](assets/translation-config-64.jpg)
@@ -131,17 +134,17 @@ Sites屬性可控制頁面內容轉譯的執行方式。
 
 ### Communities配置屬性 {#communities-configuration-properties}
 
-Communities屬性可控制如何執行使用者產生的內容翻譯。 翻譯使用者產生的內容一律使用機器翻譯。 如需詳細資訊，請參閱[轉譯使用者產生的內容](/help/communities/translate-ugc.md)。
+Communities屬性可控制如何執行使用者產生的內容翻譯。 翻譯使用者產生的內容一律使用機器翻譯。 如需詳細資訊，請參閱 [轉譯使用者產生的內容](/help/communities/translate-ugc.md).
 
 | 屬性 | 說明 |
 |---|---|
 | 翻譯提供者 | 選擇要執行翻譯的翻譯提供程式。 建立雲配置的提供程式將顯示在清單中。 |
 | 內容類別 | 描述要翻譯的內容的類別。 翻譯內容時，類別可能會影響術語和措辭的選擇。 |
-| 選擇要用作全局共用儲存的區域設定 | （可選）選擇儲存UGC的地區設定後，來自所有語言副本的貼文將出現在一個全域對話中。 根據慣例，為網站的[基語](/help/communities/sites-console.md#translation)選擇語言環境。 選擇「不共用儲存」將禁用全局翻譯。 預設情況下，全局翻譯將被禁用。 |
+| 選擇要用作全局共用儲存的區域設定 | （可選）選擇儲存UGC的地區設定後，來自所有語言副本的貼文將出現在一個全域對話中。 根據慣例，選擇 [基礎語言](/help/communities/sites-console.md#translation) 的URL區段。 選擇「不共用儲存」將禁用全局翻譯。 預設情況下，全局翻譯將被禁用。 |
 
 ### Assets設定屬性 {#assets-configuration-properties}
 
-資產屬性可控制如何設定資產。 如需轉譯資產的詳細資訊，請參閱[建立資產的語言副本](/help/assets/translation-projects.md)。
+資產屬性可控制如何設定資產。 如需轉譯資產的詳細資訊，請參閱 [建立資產的語言復本](/help/assets/translation-projects.md).
 
 <table> 
  <tbody> 
@@ -207,7 +210,7 @@ Communities屬性可控制如何執行使用者產生的內容翻譯。 翻譯�
 
 如有需要，您可以在子代頁面上覆寫關聯。 例如，網站的內容大多與服裝有關。 不過，有一個分頁描述了公司。 網站的根頁面與「翻譯整合架構」相關聯，該架構會使用「服裝」類別指定機器翻譯。 描述公司的分支使用框架，該框架使用「一般」類別執行機器翻譯。
 
-此外，對於頁面上的任何社區[SCF元件](/help/communities/scf.md)，用戶生成的內容(UGC)將包括用戶翻譯內容的能力。 如需詳細資訊，請參閱[轉譯使用者產生的內容](/help/communities/translate-ugc.md)。
+此外，對於任何社區 [SCF元件](/help/communities/scf.md) 在頁面上，使用者產生的內容(UGC)將包含使用者翻譯內容的功能。 如需詳細資訊，請參閱 [翻譯使用者產生的內容](/help/communities/translate-ugc.md).
 
 ### 將頁面與翻譯提供者關聯 {#associating-a-page-with-a-translation-provider}
 

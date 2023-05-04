@@ -1,8 +1,8 @@
 ---
 title: 日曆要點
-seo-title: 日曆要點
+seo-title: Calendar Essentials
 description: 日曆功能概觀
-seo-description: 日曆功能概觀
+seo-description: Calendar feature overview
 uuid: 14ff7a83-b2a7-4f7e-8ee7-88f336329a1a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,18 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 88932a3c-ba7f-47ba-9e0b-206755c2d42e
 exl-id: cdf5e5d3-a78c-4f32-ad40-665876392a97
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '221'
-ht-degree: 2%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
-# 日曆要點{#calendar-essentials}
+# 日曆要點 {#calendar-essentials}
 
-本頁面提供使用日曆功能的基本資訊。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-## 客戶端{#essentials-for-client-side}的要點
+此頁面提供使用日曆功能的基本資訊。
+
+## 用戶端的要點 {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -48,14 +52,14 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong> 屬性</strong></td> 
-   <td>請參閱<a href="calendar.md">使用日曆</a></td> 
+   <td>請參閱 <a href="calendar.md">使用日曆</a></td> 
   </tr>
  </tbody>
 </table>
 
 * [用戶端自訂](client-customize.md)
 
-## 伺服器端{#essentials-for-server-side}的要點
+## 伺服器端的Essentials {#essentials-for-server-side}
 
 * [日曆API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
@@ -65,17 +69,17 @@ ht-degree: 2%
 
 ### 日曆功能 {#calendar-function}
 
-包含[日曆函式](functions.md#calendar-function)的社區站點結構將具有配置的c `alendar`元件。 日曆功能支援標識[特權成員用戶組](users.md#privileged-members-group)。
+包含 [日曆函式](functions.md#calendar-function) 將配置c `alendar`元件。 日曆功能支援識別 [特權成員用戶組](users.md#privileged-members-group).
 
-### 存取日曆貼文(UGC){#accessing-calendar-posts-ugc}
+### 存取日曆貼文(UGC) {#accessing-calendar-posts-ugc}
 
-自AEM 6.1社群起，UGC使用[公用商店](working-with-srp.md)包括程式化存取UGC，而不論選擇的儲存選項（例如ASRP、MSRP或JSRP）。
+自AEM 6.1社群起，請使用 [公用商店](working-with-srp.md) 針對UGC包括可程式化地存取UGC，而無論選擇的儲存選項（例如ASRP、MSRP或JSRP）。
 
-**UGC在存放庫中的位置和格式可能會變更，恕不另行警告**。
+**UGC在存放庫中的位置和格式可能會變更，恕不另行警告**.
 
 請參閱：
 
-* [儲存資源提供程式概述](srp.md)  — 簡介和儲存庫使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP公用程式方法與範例
+* [儲存資源提供程式概述](srp.md)  — 簡介和存放庫使用概觀
+* [SRP和UGC要點](srp-and-ugc.md) - SRP實用程式方法和示例
 * [使用SRP存取UGC](accessing-ugc-with-srp.md)  — 編碼准則
-* [SocialUtils重構](socialutils.md)  — 將棄用的公用程式方法對應至目前的SRP公用程式方法
+* [SocialUtils重構](socialutils.md)  — 將已棄用的實用程式方法映射到當前SRP實用程式方法

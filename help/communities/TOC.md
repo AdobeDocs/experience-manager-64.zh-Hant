@@ -7,7 +7,8 @@ breadcrumb-title: Communities 指南
 user-guide-description: 建立線上體驗，例如論壇、使用者群組、學習資源和其他社交功能。
 feature: Communities
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '506'
 ht-degree: 9%
@@ -16,6 +17,7 @@ ht-degree: 9%
 
 
 # AEM 6.4 Communities 使用指南 {#communities}
+
 
 + [AEM Communities概述](home.md)
 + AEM Communities簡介 {#introduction}
@@ -58,7 +60,7 @@ ht-degree: 9%
    + [成員和群組管理主控台](members.md)
    + [協調控制台](moderation.md)
    + [Communities工具](tools.md)
-   + [網站範例](sites.md)
+   + [網站範本](sites.md)
    + [群組範本](tools-groups.md)
    + [社群功能](functions.md)
    + [儲存設定](srp-config.md)

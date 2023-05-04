@@ -1,8 +1,8 @@
 ---
 title: 可重複使用元件的說明
-seo-title: 可重複使用元件的說明
+seo-title: Description of reusable components
 description: 可重複使用元件的完整清單，包含檔案名稱和相依性，可協助您將AEM Forms工作區元件整合在網頁應用程式中。
-seo-description: 可重複使用元件的完整清單，包含檔案名稱和相依性，可協助您將AEM Forms工作區元件整合在網頁應用程式中。
+seo-description: A complete list of reusable components with filenames and dependencies, to help you integrate AEM Forms workspace component in your web applications.
 uuid: 8e6accc7-0935-4d7b-b838-d23676df5cda
 contentOwner: robhagat
 content-type: reference
@@ -10,16 +10,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 exl-id: 2790a2d3-444a-4c13-99b0-ea31923fc547
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1257'
+source-wordcount: '1267'
 ht-degree: 9%
 
 ---
 
-# 可重複使用的元件{#description-of-reusable-components}的說明
+# 可重複使用元件的說明 {#description-of-reusable-components}
 
-AEM Forms工作區由[可重複使用](/help/forms/using/integrating-html-ws-components-web.md)元件組成，這些元件在CRX™中以特定[資料夾結構](/help/forms/using/folder-structure.md)組織。 每個元件在資料夾結構中指定的位置都有模型、檢視和範本檔案、其他元件檔案的JavaScript™相依性、元件監聽的事件，以及在AEM Forms工作區中觸發這些事件的JavaScript物件。 此處提供了具有組成檔案名和依賴項的可重複使用元件的完整清單。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+AEM Forms工作區由 [可重複](/help/forms/using/integrating-html-ws-components-web.md) 組織在特定 [資料夾結構](/help/forms/using/folder-structure.md) 在CRX™。 每個元件在資料夾結構中指定的位置都有模型、檢視和範本檔案、其他元件檔案的JavaScript™相依性、元件監聽的事件，以及在AEM Forms工作區中觸發這些事件的JavaScript物件。 此處提供了具有組成檔案名和依賴項的可重複使用元件的完整清單。
 
 ## 任務清單 {#tasklist}
 
@@ -400,7 +404,7 @@ AEM Forms工作區由[可重複使用](/help/forms/using/integrating-html-ws-com
     <ul> 
      <li><p>已更改 — 類別模型 </p></li> 
      <li><p>childrenRected — 類別模型 </p></li> 
-     <li><p>category:selected -categorylist模型 </p></li> 
+     <li><p>category:selected - categorylist模型 </p></li> 
     </ul></td> 
   </tr> 
  </tbody> 
@@ -446,7 +450,7 @@ AEM Forms工作區由[可重複使用](/help/forms/using/integrating-html-ws-com
    <td><p>已監聽的事件（事件名稱 — 觸發器）</p></td> 
    <td> 
     <ul> 
-     <li><p>category:selected -categorylist模型 </p></li> 
+     <li><p>category:selected - categorylist模型 </p></li> 
      <li><p>allStartpointsRechated - categorylist模型 </p></li> 
     </ul></td> 
   </tr> 
@@ -529,7 +533,7 @@ AEM Forms工作區由[可重複使用](/help/forms/using/integrating-html-ws-com
    <td><p>已監聽的事件（事件名稱 — 觸發器）</p> </td> 
    <td> 
     <ul> 
-     <li><p>category:selected -categorylist模型</p> </li> 
+     <li><p>category:selected - categorylist模型</p> </li> 
      <li><p>change:invokedTask - startpointlist模型</p> </li> 
      <li><p>change:formUrl — 任務模型</p> </li> 
      <li><p>startpoint:selected - startpointlist模型</p> </li> 
@@ -924,7 +928,7 @@ AEM Forms工作區由[可重複使用](/help/forms/using/integrating-html-ws-com
    <td> 
     <ul> 
      <li>userImageUrlRechitd - userinfo模型</li> 
-     <li>sessionRexended - userinfo model <br /> </li> 
+     <li>sessionRenewed - userinfo模型 <br /> </li> 
      <li>sessionExpired - userinfo模型 </li> 
     </ul> </td> 
   </tr> 

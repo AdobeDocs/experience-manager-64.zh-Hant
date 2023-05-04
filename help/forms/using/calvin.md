@@ -1,29 +1,33 @@
 ---
 title: 自動測試最適化表單
-seo-title: 自動測試最適化表單
+seo-title: Automate testing of adaptive forms
 description: 使用Calvin，您可以在CRXDE中建立測試案例，並直接在網頁瀏覽器中運行UI測試，以徹底測試您的最適化表單。
-seo-description: 使用Calvin，您可以在CRXDE中建立測試案例，並直接在網頁瀏覽器中運行UI測試，以徹底測試您的最適化表單。
+seo-description: Using Calvin you can create test cases in CRXDE and run UI tests directly in the web browser to thoroughly test your adaptive forms.
 uuid: 2a89d1c0-58f6-4bbf-a367-5fe659851c13
 contentOwner: gtalwar
 content-type: reference
 topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
-feature: 適用性表單
+feature: Adaptive Forms
 exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1284'
-ht-degree: 1%
+source-wordcount: '1289'
+ht-degree: 2%
 
 ---
 
-# 自動測試最適化表單{#automate-testing-of-adaptive-forms}
+# 自動測試最適化表單 {#automate-testing-of-adaptive-forms}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 最適化表單是客戶互動的必備項目。 務必透過您在表單中所做的每項變更（例如推出新的修正套件或變更表單中的規則）來測試最適化表單。 不過，功能測試適用性表單及其中的每個欄位可能都很繁瑣。
 
-Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin使用[Hobbes](/help/sites-developing/hobbes.md)的用戶介面運行測試，並提供以下工具：
+Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 卡爾文利用 [霍布斯](/help/sites-developing/hobbes.md)用於運行測試的用戶介面，並提供以下工具：
 
 * 用於建立測試的JavaScript API。
 * 用於運行測試的用戶介面。
@@ -57,7 +61,7 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
    <td><p>運算式規則</p> <p> </p> </td> 
    <td> 
     <ul> 
-     <li>表單對象（如計算、可見、在退出欄位後執行指令碼，在執行相關UI操作後執行）的相關表達式是否？<br /> </li> 
+     <li>表單物件（例如計算、可見、在退出欄位後執行指令碼）的相關運算式是否在執行相關的UI操作後執行？<br /> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -88,20 +92,20 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
 
 使用此文章建立測試案例之前，您需要了解下列事項：
 
-* 使用[Hobbes](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)建立測試套裝並執行測試案例
+* 使用建立測試套裝和執行測試案例 [霍布斯](https://docs.adobe.com/docs/en/aem/6-3/develop/components/hobbes.html)
 * [Hobbes JavaScript API](https://docs.adobe.com/docs/en/aem/6-2/develop/ref/test-api/index.html)
 * [Calvin JavaScript API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)
 
-## 範例：使用霍布斯作為測試架構{#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}，建立最適化表單的測試套裝
+## 範例：使用霍布斯作為測試架構，為最適化表單建立測試套裝 {#example-create-a-test-suite-for-an-adaptive-form-using-hobbes-as-testing-framework}
 
 下列範例會逐步引導您建立測試套裝，以測試多個最適化表單。 您需要為每個需要測試的表單建立個別的測試案例。 依照類似下列步驟的操作並修改步驟11中的JavaScript程式碼，您可以建立自己的測試套裝來測試最適化表單。
 
-1. 前往網頁瀏覽器中的CRXDE Lite:`https://[server]:[port]/crx/de`。
-1. 按一下右鍵/etc/clientlibs子資料夾，然後按一下&#x200B;**[!UICONTROL 「建立」>「建立節點」]**。 輸入名稱（此處為afTestRegistration），將節點類型指定為cq:ClientLibraryFolder，然後按一下&#x200B;**[!UICONTROL OK]**。
+1. 前往網頁瀏覽器中的CRXDE Lite: `https://[server]:[port]/crx/de`.
+1. 以滑鼠右鍵按一下/etc/clientlibs子資料夾，然後按一下 **[!UICONTROL 建立>建立節點]**. 輸入名稱（此處為afTestRegistration），將節點類型指定為cq:ClientLibraryFolder，然後按一下 **[!UICONTROL 確定]**.
 
    clientlibs資料夾包含應用程式（JS和Init）的註冊方面。 建議您在clientlibs資料夾中註冊所有特定於表單的霍布斯測試套裝物件。
 
-1. 在新建立的節點（此處為afTestRegistration）中指定以下屬性值，然後按一下&#x200B;**[!UICONTROL Save All]**。 這些屬性可協助霍布斯將資料夾識別為測試。 若要在其他用戶端程式庫中重複使用此用戶端程式庫作為相依性，請將其命名為granite.testing.calvin.tests。
+1. 在新建立的節點（此處為afTestRegistration）中指定以下屬性值，然後按一下 **[!UICONTROL 全部儲存]**. 這些屬性可協助霍布斯將資料夾識別為測試。 若要在其他用戶端程式庫中重複使用此用戶端程式庫作為相依性，請將其命名為granite.testing.calvin.tests。
 
 <table> 
  <tbody> 
@@ -112,7 +116,7 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
   </tr> 
   <tr> 
    <td><p>類別</p> </td> 
-   <td><p>String[]</p> </td> 
+   <td><p>字串[]</p> </td> 
    <td><p>granite.testing.hobbes.tests, granite.testing.calvin.tests</p> </td> 
   </tr> 
   <tr> 
@@ -129,7 +133,7 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
 
 ![1_aftestregistration](assets/1_aftestregistration.png)
 
-1. 按一下右鍵測試節點（此處&#x200B;**afTestRegistration）**，然後按一下&#x200B;**[!UICONTROL 建立>建立檔案]**。 將檔案命名為js.txt，然後按一下「**[!UICONTROL 確定]**」。
+1. 以滑鼠右鍵按一下測試節點（此處） **afTestRegistration)** 然後按一下 **[!UICONTROL 建立>建立檔案]**. 將檔案命名為js.txt，然後按一下 **[!UICONTROL 確定]**.
 1. 在js.txt檔案中，新增下列文字：
 
    ```
@@ -137,9 +141,9 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
    js.txt
    ```
 
-1. 按一下「**[!UICONTROL 儲存全部]**」 ，然後關閉js.txt檔案。
-1. 按一下右鍵測試節點（此處&#x200B;**afTestRegistration）**，然後按一下&#x200B;**[!UICONTROL 建立>建立檔案]**。 將檔案命名為init.js，然後按一下&#x200B;**[!UICONTROL OK]**。
-1. 將下列程式碼複製到init.js檔案中，然後按一下&#x200B;**[!UICONTROL Save All]**:
+1. 按一下 **[!UICONTROL 全部儲存]** 然後關閉js.txt檔案。
+1. 以滑鼠右鍵按一下測試節點（此處） **afTestRegistration)** 按一下 **[!UICONTROL 建立>建立檔案]**. 將檔案命名為init.js，然後按一下 **[!UICONTROL 確定]**.
+1. 將下列程式碼複製到init.js檔案中，然後按一下 **[!UICONTROL 全部儲存]**:
 
    ```
    (function(window, hobs) {
@@ -155,9 +159,9 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
    }(window, window.hobs));
    ```
 
-   上述程式碼會建立名為&#x200B;**適用性表單 — 示範測試**&#x200B;的測試套裝。 若要建立具有不同名稱的測試套裝，請據此變更名稱。
+   上述程式碼會建立名為 **適用性表單 — 示範測試**. 若要建立具有不同名稱的測試套裝，請據此變更名稱。
 
-1. 按一下&#x200B;**[!UICONTROL 建立]** > **建立節點**&#x200B;以在要測試的每個表單的clientlib資料夾下建立節點。 此示例使用名為&#x200B;**testForm**&#x200B;的節點來測試名為&#x200B;**testForm** `.`的最適化表單，然後指定以下屬性，然後按一下&#x200B;**[!UICONTROL OK]**:
+1. 按一下 **[!UICONTROL 建立]** > **建立節點** 為要測試的每個表單在clientlib資料夾下建立節點。 此範例使用名為 **testForm** 以測試 **testForm** `.`指定下列屬性，然後按一下 **[!UICONTROL 確定]**:
 
    * 名稱：testForm（您的表單名稱）
    * 類型：cq:ClientLibraryFolder
@@ -166,7 +170,7 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
 
    | **屬性** | **類型** | **值** |
    |---|---|---|
-   | 類別 | String[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
+   | 類別 | 字串[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
    | 相依性 | 字串[] | granite.testing.calvin.tests |
 
    >[!NOTE]
@@ -175,9 +179,9 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
 
    ![2_testformproperties](assets/2_testformproperties.png)
 
-1. 按一下右鍵為測試表單建立的資料夾（此處為testForm），然後選擇&#x200B;**[!UICONTROL 建立>建立檔案]**。 將檔案命名為scriptingTest.js，並將下列程式碼新增至檔案中，然後按一下「**[!UICONTROL 儲存全部」。]**
+1. 按一下右鍵為測試表單建立的資料夾（此處為testForm），然後選擇 **[!UICONTROL 建立>建立檔案]**. 將檔案命名為scriptingTest.js，並將下列程式碼新增至檔案中，然後按一下 **[!UICONTROL 全部儲存。]**
 
-   若要使用下列程式碼來測試另一個最適化表單，請在&#x200B;**navigateTo**（行11、36和62）中變更表單的路徑和名稱，以及個別的測試案例。 有關用於測試表單和表單對象不同方面的API的詳細資訊，請參閱[Calvin API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html)。
+   若要使用下列程式碼來測試另一個最適化表單，請在 **navigateTo** （第11、36和62行）和相應的測試用例。 如需測試表單和表單物件不同層面之API的詳細資訊，請參閱 [卡爾文API](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
    ```
    (function(window, hobs) {
@@ -271,21 +275,21 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
     }(window, window.hobs));
    ```
 
-   已建立測試案例。 繼續執行測試案例，透過Hobbes測試最適化表單。 有關運行測試案例的步驟，請參閱[使用自動測試在測試您的UI中執行測試](/help/sites-developing/hobbes.md)。
+   已建立測試案例。 繼續執行測試案例，透過Hobbes測試最適化表單。 如需執行測試案例的步驟，請參閱 [使用自動化測試在測試您的UI中執行測試](/help/sites-developing/hobbes.md).
 
 您也可以將套件安裝在附加的檔案SampleTestPackage.zip中，以取得與範例中說明的步驟相同的結果：使用霍布斯作為測試架構，為最適化表單建立測試套裝。
 
 [取得檔案](assets/sampletestpackage.zip)
 
-## 使用自動測試{#testing-your-ui-using-automated-tests}測試您的UI
+## 使用自動化測試來測試您的UI {#testing-your-ui-using-automated-tests}
 
-### 運行單個測試套件{#running-a-single-test-suite}
+### 執行單一測試套裝 {#running-a-single-test-suite}
 
 測試套裝可個別執行。 當您執行測試套裝時，頁面會隨著測試案例及其動作執行而變更，結果會在測試完成後顯示。 圖示會指出結果。
 
-勾選記號圖示表示通過的測試：![複選標籤](assets/checkmark.png)
+勾選記號圖示表示通過的測試： ![勾號](assets/checkmark.png)
 
-「X」圖示表示測試失敗：![cross](assets/cross.png)
+「X」圖示表示測試失敗： ![交叉](assets/cross.png)
 
 若要執行測試套裝：
 
@@ -305,7 +309,7 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-測試AEM最適化表單的步驟與測試AEM UI的步驟類似。 如需測試最適化表單的詳細資訊，請參閱[測試UI](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html)中的下列主題：
+測試AEM最適化表單的步驟與測試AEM UI的步驟類似。 如需測試最適化表單的詳細資訊，請參閱 [測試您的UI](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html):
 
 * 檢視測試套裝
 * 執行多個測試
@@ -315,7 +319,7 @@ Calvin允許您在網路瀏覽器中自動測試您的最適化表單。 Calvin�
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>詞彙</strong></td> 
+   <td><strong>術語</strong></td> 
    <td><strong>說明</strong></td> 
   </tr> 
   <tr> 

@@ -1,8 +1,8 @@
 ---
 title: Communities元件的Clientlibs
-seo-title: Communities元件的Clientlibs
+seo-title: Clientlibs for Communities Components
 description: 社群的用戶端程式庫
-seo-description: 社群的用戶端程式庫
+seo-description: Client-side libraries for Communities
 uuid: 0a62f629-e6af-4269-862e-0595824c329f
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,14 +10,18 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
 exl-id: 9b4ed16f-3c7c-478a-a897-9b4be086988b
-source-git-commit: 9178c3a01e7f450d3794f41605fb3788231c88c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 0%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
 # Communities元件的Clientlibs {#clientlibs-for-communities-components}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 簡介 {#introduction}
 
@@ -25,16 +29,16 @@ ht-degree: 0%
 
 如需基本資訊，請造訪：
 
-* [使用用戶端程式](../../help/sites-developing/clientlibs.md) 庫（提供使用情況詳細資訊及除錯工具）
-* [SCF的客戶端](client-customize.md#clientlibs) 庫，在定制SCF元件時提供有用的資訊
+* [使用用戶端程式庫](../../help/sites-developing/clientlibs.md) 提供使用詳情和調試工具
+* [SCF的Clientlibs](client-customize.md#clientlibs) 在定制SCF元件時提供有用資訊
 
 ## 為何需要Clientlibs {#why-clientlibs-are-required}
 
 元件的正常運作(JavaScript)和樣式(CSS)需要Clientlibs。
 
-當功能有[社群函式](functions.md)時，所有必要的元件和設定（包括必要的clientlib）都會出現在社群網站中。 只有當作者能使用其他元件時，才需要新增其他clientlib。
+當存在 [社群功能](functions.md) 針對功能，所有必要的元件和設定（包括必要的clientlib）都會顯示在社群網站中。 只有當作者能使用其他元件時，才需要新增其他clientlib。
 
-當缺少所需的clientlib時，[將Communities元件新增至頁面](author-communities.md)可能會導致javascript錯誤以及意外的外觀。
+缺少所需的clientlib時， [將社群元件新增至頁面](author-communities.md) 可能會導致javascript錯誤和意外的外觀。
 
 ### 範例：未使用Clientlibs的置入評論 {#example-placed-reviews-without-clientlibs}
 
@@ -48,9 +52,9 @@ ht-degree: 0%
 
 開發人員的基本功能資訊可識別所需的用戶端。
 
-此外，從AEM實例瀏覽到[Community Components Guide](components-guide.md)，可以訪問元件所需的clientlib類別清單。
+此外，從AEM例項瀏覽至 [社群元件指南](components-guide.md) 提供對元件所需的clientlib類別清單的訪問。
 
-例如，在[「檢閱」頁面](http://localhost:4502/content/community-components/en/reviews.html)的最上方，列出必要的clientlib
+例如，在 [審核頁面](http://localhost:4502/content/community-components/en/reviews.html) 列出的必要clientlib為
 
 * cq.ckeditor
 * cq.social.hbs.reviews
@@ -61,26 +65,26 @@ ht-degree: 0%
 
 需要將Communities元件新增至頁面時，必須為元件新增所需的clientlib（如果尚未出現）。
 
-使用[CRXDE|Lite](#using-crxde-lite)修改社群網站頁面的現有clientlibslist。
+使用 [CRXDE|Lite](#using-crxde-lite) 修改社區站點頁的現有clientlibslist。
 
-要使用[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)為社區站點添加clientlib，請執行以下操作：
+為社區站點添加clientlib：使用 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md):
 
-* 瀏覽至[https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
-* 找出您要新增元件之頁面的`clientlibslist`節點
+* 瀏覽至 [https://&lt;server>:&lt;port>/crx/de](http://localhost:4502/crx/de)
+* 找出 `clientlibslist` 節點，用於要添加元件的頁面
 
    * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
-* 已選擇`clientlibslist`節點
+* 使用 `clientlibslist` 已選節點
 
-   * 找到String[]屬性`scg:requiredClientLibs`
-   * 選擇其`Value`以訪問字串陣列對話框
+   * 找出字串[] 屬性 `scg:requiredClientLibs`
+   * 選取其 `Value` 訪問「字串陣列」對話框
 
       * 如有必要，向下捲動
-      * 選擇`+`以輸入新的客戶端庫
+      * 選擇 `+` 要輸入新客戶端庫
 
          * 重複以添加更多客戶端庫
-      * 選擇&#x200B;**[!UICONTROL OK]**
-   * 選擇&#x200B;**[!UICONTROL 保存全部]**
+      * 選擇 **[!UICONTROL 確定]**
+   * 選擇 **[!UICONTROL 全部儲存]**
 
 
 
@@ -88,6 +92,6 @@ ht-degree: 0%
 >
 >如果網站不是社群網站，則需要探索用於網站的用戶端程式庫的存在或位置。
 
-使用[AEM Communities](getting-started.md)快速入門範例（其中`site-name`為&#x200B;*engage*），新增審核元件時，clientliblist會如下所示：
+使用 [開始使用AEM Communities](getting-started.md) 範例，其中 `site-name` is *參與*，新增reviews元件時，此為clientliblist的顯示方式：
 
 ![chlimage_1-247](assets/chlimage_1-247.png)

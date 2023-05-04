@@ -1,8 +1,8 @@
 ---
 title: 使用標記
-seo-title: 使用標記
+seo-title: Using Tags
 description: 標籤是快速且簡單的網站內容分類方法
-seo-description: 標籤是快速且簡單的網站內容分類方法
+seo-description: Tags are a quick and easy method of classifying content within a website
 uuid: a91f8724-fc35-4f40-b21c-bee90429765b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,21 +10,25 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: d0b0e47b-e68d-407d-9d06-deca2039dede
 exl-id: 846a925a-673e-4051-a673-1a9236701f0a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 3%
+source-wordcount: '711'
+ht-degree: 4%
 
 ---
 
 # 使用標記 {#using-tags}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 標籤是快速且簡單的網站內容分類方法。 標籤可以被視為可附加至頁面、資產或其他內容的關鍵字或標籤，以使搜索能夠找到該內容和相關內容。
 
-* 請參閱[管理標籤](/help/sites-administering/tags.md) ，了解如何建立和管理標籤以及套用了哪些內容標籤的資訊。
-* 請參閱[開發人員的標籤](/help/sites-developing/tags.md) ，以取得關於標籤架構以及在自訂應用程式中包含和擴充標籤的資訊。
+* 請參閱 [管理標籤](/help/sites-administering/tags.md) ，以取得建立和管理標籤以及套用內容標籤的相關資訊。
+* 請參閱 [為開發人員進行標籤](/help/sites-developing/tags.md) 以取得標籤架構的相關資訊，以及在自訂應用程式中包含和擴充標籤。
 
-## 使用標籤{#ten-reasons-to-use-tagging}的十個理由
+## 使用標籤的十個理由 {#ten-reasons-to-use-tagging}
 
 1. 組織內容：標籤可讓作者更輕鬆，因為他們可以輕鬆快速地組織內容。
 
@@ -48,15 +52,15 @@ ht-degree: 3%
 
 設計網站的內容結構和資產的中繼資料結構時，請考慮提供的精簡且可存取的方法標籤。
 
-## 套用標籤{#applying-tags}
+## 套用標籤 {#applying-tags}
 
-在製作環境中，作者可以存取頁面屬性並在&#x200B;**標籤/關鍵字**&#x200B;欄位中輸入一或多個標籤，以套用標籤。
+在製作環境中，作者可透過存取頁面屬性並在 **標籤/關鍵字** 欄位。
 
-若要套用預先定義的標籤](/help/sites-administering/tags.md)，請在&#x200B;**頁面屬性**&#x200B;視窗中使用&#x200B;**標籤**&#x200B;欄位和&#x200B;**選擇標籤**&#x200B;視窗。 [「標 **準標籤** 」標籤是預設的命名空間，這表示分類 `namespace-string:` 沒有前置詞。
+要應用 [預先定義的標籤](/help/sites-administering/tags.md)，在 **頁面屬性** 視窗使用 **標籤** 欄位和 **選擇標籤** 窗口。 「標 **準標籤** 」標籤是預設的命名空間，這表示分類 `namespace-string:` 沒有前置詞。
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
-### 發佈標籤{#publishing-tags}
+### 發佈標籤 {#publishing-tags}
 
 和頁面一樣，您可以在標籤和命名空間上執行下列動作：
 
@@ -74,18 +78,18 @@ ht-degree: 3%
 
 * 停用選取的標籤。
 
-## 標籤雲{#tag-clouds}
+## 標籤雲 {#tag-clouds}
 
 標籤雲端會顯示一組標籤，可針對目前頁面、整個網站或最常存取的網站。 標籤雲是強調使用者所關心之問題的一種方式。 用來顯示標籤的文字大小，會因其使用而異。
 
-[Tag Cloud](/help/sites-authoring/default-components-foundation.md#tag-cloud)元件（一般元件群組）用來將Tag Cloud新增至頁面。
+此 [Tag Cloud](/help/sites-authoring/default-components-foundation.md#tag-cloud) 元件（一般元件群組）可用來將標籤雲新增至頁面。
 
-## 在標籤上搜索{#searching-on-tags}
+## 在標籤上搜尋 {#searching-on-tags}
 
 您可以在製作和發佈環境中搜尋標籤。
 
-### 使用搜索元件{#using-search-component}
+### 使用搜尋元件 {#using-search-component}
 
-將[搜尋元件](/help/sites-authoring/default-components-foundation.md#search)新增至頁面，可提供搜尋功能，其中包含標籤，且可同時用於製作和發佈環境。
+新增 [搜尋元件](/help/sites-authoring/default-components-foundation.md#search) 至頁面提供搜尋功能，其中包含標籤，可同時用於製作和發佈環境。
 
 ![chlimage_1-93](assets/chlimage_1-93.png)

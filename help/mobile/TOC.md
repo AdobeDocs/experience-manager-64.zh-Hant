@@ -7,7 +7,8 @@ breadcrumb-title: Mobile 指南
 user-guide-description: 建立和管理行動應用程式的內容。
 feature: Mobile
 role: User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 10%
@@ -41,7 +42,7 @@ ht-degree: 10%
    + [內容屬性和節點](content-properties.md)
    + [建立共用資源導出配置](creating-shared-resources-export-configuration.md)
    + [建立和新增範本和元件](mobile-ondemand-app-templates.md)
-   + [最佳作法](best-practices-aem-mobile.md)
+   + [最佳做法](best-practices-aem-mobile.md)
    + [建立文章匯出設定](creating-article-export-configuration.md)
    + [具有內容同步的行動裝置](mobile-ondemand-contentsync.md)
    + [行動應用程式的頁面範本](apps-architecture.md)

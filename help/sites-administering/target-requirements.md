@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 exl-id: f47e5c6a-ed52-4493-83bd-73e5e693d117
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 0%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
 # 與Adobe Target整合的必要條件{#prerequisites-for-integrating-with-adobe-target}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 作為 [整合AEM與Adobe Target](/help/sites-administering/target.md)，您需要向Adobe Target註冊、設定復寫代理，以及在發佈節點上保護活動設定。
 

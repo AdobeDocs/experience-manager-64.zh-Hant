@@ -8,15 +8,19 @@ uuid: d8215dbf-2dbe-43cb-a5c1-dc1cb412a204
 contentOwner: AEM Docs
 discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 1%
+source-wordcount: '1661'
+ht-degree: 2%
 
 ---
 
 
 # 不發佈，但不DELETE為內容片段模型自訂資料類型{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 [內容片段](/help/assets/content-fragments.md) 根據 [內容片段模型](/help/assets/content-fragments-models.md). 這些模型是由 [元素](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) 不同資料類型。
 
@@ -139,7 +143,7 @@ ht-degree: 1%
    <td>布林值</td> 
   </tr> 
   <tr> 
-   <td>日期時間</td> 
+   <td>日期和時間</td> 
    <td>日曆</td> 
    <td>次</td> 
   </tr> 
@@ -333,7 +337,7 @@ ht-degree: 1%
 
    1. 若要存取變數，此元件應延伸：
 
-      `/libs/dam/cfm/models/editor/components/datatypeproperties/base`*
+      `/libs/dam/cfm/models/editor/components/datatypeproperties/base`* *
 
    1. 元件應可透過下列方式納入：
 

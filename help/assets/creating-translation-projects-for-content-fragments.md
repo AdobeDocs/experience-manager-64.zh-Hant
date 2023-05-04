@@ -12,14 +12,18 @@ discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 exl-id: 4b9fd241-82db-466e-95bd-6d212717801d
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 2%
+source-wordcount: '1004'
+ht-degree: 3%
 
 ---
 
 # 建立內容片段的翻譯專案 {#creating-translation-projects-for-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 除了資產，Adobe Experience Manager(AEM)Assets還支援的語言復本工作流程 [內容片段](content-fragments.md) （包括變數）。 在內容片段上執行語言副本工作流程不需要額外的最佳化。 在每個工作流程中，會傳送整個內容片段以供翻譯。
 

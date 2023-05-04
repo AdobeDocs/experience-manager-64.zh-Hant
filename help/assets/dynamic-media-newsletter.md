@@ -6,14 +6,18 @@ solution: Experience Manager, Dynamic Media Classic
 exl-id: aa02c811-0296-4a02-b745-e70aeb9d1e97
 feature: Collaboration,Dynamic Media Classic
 role: Admin,User
-source-git-commit: 79ff6834acd2bc1105bbea798d946cd7354474d5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1113'
 ht-degree: 0%
 
 ---
 
 # ![Dynamic Media電子報標誌](/help/assets/assets/dynamic-media-newsletter-logo.png)
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >

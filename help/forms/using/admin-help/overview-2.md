@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
 exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 0%
+source-wordcount: '375'
+ht-degree: 1%
 
 ---
 
 # 管理憑證和憑證的基本知識 {#basics-of-managing-certificates-and-credentials}
 
-*憑據*&#x200B;包含簽名或標識文檔所需的私鑰資訊。 *certificate*&#x200B;是您為信任配置的公鑰資訊。 AEM forms使用憑證和憑證有數種用途：
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-* Acrobat Reader DC擴充功能使用憑證來啟用PDF檔案中的Adobe Reader使用權限。 (請參閱[設定憑證以與Acrobat Reader DC擴充功能搭配使用](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)。)
-* 您可以設定Rights Management以顯示憑證，僅供信任發行者在Acrobat中使用。 (請參閱[配置Rights Management顯示設定](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)。) 證書中必須包含通用名稱(CN)。
-* 簽名服務訪問證書和憑據。 有關簽名服務的詳細資訊，請參閱[服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+A *憑據* 包含簽署或識別檔案所需的私密金鑰資訊。 A *憑證* 是您為信任設定的公開金鑰資訊。 AEM forms使用憑證和憑證有數種用途：
+
+* Acrobat Reader DC擴充功能會使用憑證，啟用PDF檔案中的Adobe Reader使用權限。 (請參閱 [設定憑證以與Acrobat Reader DC擴充功能搭配使用](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* 您可以設定Rights Management以顯示憑證，僅供信任發行者在Acrobat中使用。 (請參閱 [配置Rights Management顯示設定](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) 證書中必須包含通用名稱(CN)。
+* 簽名服務訪問證書和憑據。 有關簽名服務的詳細資訊，請參見 [服務參考](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **產生配對金鑰**
 

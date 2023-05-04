@@ -1,28 +1,32 @@
 ---
 title: 參考最適化表單片段
 seo-title: Reference adaptive form fragments
-description: 'AEM Forms提供最適化表單片段，供您作為資產來快速建立表單。 '
+description: AEM Forms提供最適化表單片段，供您作為資產來快速建立表單。
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 1%
+source-wordcount: '450'
+ht-degree: 2%
 
 ---
 
 # 參考最適化表單片段 {#reference-adaptive-form-fragments}
 
-[適用性](/help/forms/using/adaptive-form-fragments.md) 表單會分割一組欄位，或包含一組欄位的面板，供您在建立表單時使用。它可讓您輕鬆快速地建立表單。 您可以使用側欄中的資產瀏覽器，將最適化表單片段拖放至表單中，也可以在表單編輯器中編輯。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-針對最適化表單作者，[AEM Forms附加套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中提供參考片段。 包含下列片段：
+[最適化表單片段](/help/forms/using/adaptive-form-fragments.md) 是一組欄位，或是包含一組欄位的面板，在您建立表單時可以使用這些欄位。 它可讓您輕鬆快速地建立表單。 您可以使用側欄中的資產瀏覽器，將最適化表單片段拖放至表單中，也可以在表單編輯器中編輯。
+
+針對最適化表單作者， [AEM Forms附加元件套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html). 包含下列片段：
 
 * 地址
-* 連絡人資訊
+* 聯絡資訊
 * 信用卡資訊
 * 當前就業
 * 相依項資訊
@@ -32,7 +36,7 @@ ht-degree: 1%
 * 條款與條件
 * 使用手寫的條款與條件
 
-安裝套件時，會在Forms與檔案下方建立包含參考片段的參考片段資料夾。 有關安裝軟體包的資訊，請參閱[如何使用軟體包](/help/sites-administering/package-manager.md)。
+安裝套件時，會在Forms與檔案下方建立包含參考片段的參考片段資料夾。 如需安裝套件，請參閱 [如何使用套件](/help/sites-administering/package-manager.md).
 
 ![列出的所有片段](assets/ootb-frags.png)
 
@@ -43,7 +47,7 @@ ht-degree: 1%
 
 [按一下放大](assets/address.png)
 
-## 連絡人資訊 {#contact-information}
+## 聯絡資訊 {#contact-information}
 
 包括用於捕獲電話號碼和電子郵件地址的欄位。
 ![聯繫資訊片段](assets/contact-info.png)

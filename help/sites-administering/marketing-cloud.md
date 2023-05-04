@@ -6,14 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
-source-git-commit: 8220795bbf0c92ead3bb68dd6f8bbb48cc9ca2cd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '862'
-ht-degree: 1%
+source-wordcount: '898'
+ht-degree: 2%
 
 ---
 
 # 與Adobe Marketing Cloud整合{#integrating-with-the-adobe-marketing-cloud}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 此 [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html)，包含功能強大的網站分析和網站最佳化產品，可提供可操作的即時資料和深入分析，以推動成功的線上計畫。 它為線上業務優化提供了整合而開放的平台。 雲包含整合式應用程式，可收集和釋放客戶洞察力，以優化客戶贏取、轉換和保留工作，以及內容的建立和分發。
 

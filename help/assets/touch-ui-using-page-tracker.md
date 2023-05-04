@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Reports
 role: Architect,Admin
 exl-id: b0154c9c-a671-43fb-8733-274a35307a34
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 2%
 
 ---
 
 # 在網頁中使用頁面追蹤器和內嵌程式碼 {#using-page-tracker-and-embed-code-in-web-pages}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 頁面追蹤器是您納入協力廠商網站程式碼中的JavaScript程式碼，可讓Adobe Analytics擷取這些網站上Adobe Experience Manager資產的使用資料。
 

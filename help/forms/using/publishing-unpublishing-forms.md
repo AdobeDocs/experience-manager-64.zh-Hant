@@ -10,14 +10,18 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 exl-id: 1afef311-c1e6-48ec-ae23-dbd553a99ac6
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1449'
 ht-degree: 0%
 
 ---
 
 # 發佈和取消發佈表單和檔案 {#publishing-and-unpublishing-forms-and-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM Forms可讓您輕鬆建立、發佈和取消發佈表單。 如需AEM Forms的詳細資訊，請參閱 [管理表單簡介](/help/forms/using/introduction-managing-forms.md).
 

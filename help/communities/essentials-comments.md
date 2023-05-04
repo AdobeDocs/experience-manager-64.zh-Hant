@@ -1,8 +1,8 @@
 ---
 title: 注釋要點
-seo-title: 注釋要點
+seo-title: Comments Essentials
 description: 註解元件概觀
-seo-description: 註解元件概觀
+seo-description: Comments component overview
 uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,20 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 3d5396b5-10e5-49bc-aa11-5a3df93d70c3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '357'
-ht-degree: 3%
+source-wordcount: '388'
+ht-degree: 4%
 
 ---
 
-# 注釋要點{#comments-essentials}
+# 注釋要點 {#comments-essentials}
 
-本頁提供了使用注釋系統（注釋元件）的要點，以及管理成員發佈注釋或回覆時生成的用戶生成內容(UGC)的選項。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+本頁提供了使用注釋系統（注釋元件）的要點，以及管理成員發佈注釋或答復時生成的用戶生成內容(UGC)的選項。
 
 評論部件建立評論系統，使得每個單獨的帖子由評論部件（單數）表示。 頁面上包含的註解系統。 注釋系統將在調用時建立各個注釋。
 
-## 客戶端{#essentials-for-client-side}的要點
+## 用戶端的要點 {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -33,7 +37,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>包括</strong></a></td> 
-   <td>是 — 可在<i>design </i>模式中編輯屬性</td> 
+   <td>是 — 可在中編輯屬性 <i>設計 </i>模式</td> 
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>Clientlibs</strong></a></td> 
@@ -49,14 +53,14 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 屬性</strong></td> 
-   <td> 請參閱<a href="comments.md">使用注釋</a></td> 
+   <td> 請參閱 <a href="comments.md">使用注釋</a></td> 
   </tr>
  </tbody>
 </table>
 
 [用戶端自訂](client-customize.md)
 
-### 每頁{#one-instance-per-page}一個實例
+### 每頁一個例項 {#one-instance-per-page}
 
 分頁和使用URL來快取和連結時，每個註解系統的URL必須是唯一的。 因此，每頁僅允許一個注釋系統例項。
 
@@ -69,7 +73,7 @@ ht-degree: 3%
 * [QnA](qna-essentials.md)
 * [評論](reviews-basics.md)
 
-### 標誌原因清單{#flag-reason-list}
+### 標誌原因清單 {#flag-reason-list}
 
 您可將flagreasonlist.hbs新增至應用程式以覆寫中的內容，以自訂標幟原因清單
 
@@ -77,7 +81,7 @@ ht-degree: 3%
 
 這適用於擴充註解系統的任何元件。
 
-## 伺服器端{#essentials-for-server-side}的要點
+## 伺服器端的Essentials {#essentials-for-server-side}
 
 * [注釋API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
@@ -85,18 +89,18 @@ ht-degree: 3%
 
 * [伺服器端自訂](server-customize.md)
 
-### 存取已張貼的留言(UGC){#accessing-posted-comments-ugc}
+### 存取已張貼的留言(UGC) {#accessing-posted-comments-ugc}
 
 UGC應使用其中一種標準的協調方法來協調。\
-請參閱[協調使用者產生的內容](moderate-ugc.md)。
+請參閱 [協調使用者產生的內容](moderate-ugc.md).
 
-自AEM 6.1社群起，UGC使用[公用商店](working-with-srp.md)包括程式化存取UGC，而不論選擇的儲存選項（例如ASRP、MSRP或JSRP）。
+自AEM 6.1社群起，請使用 [公用商店](working-with-srp.md) 針對UGC包括可程式化地存取UGC，而無論選擇的儲存選項（例如ASRP、MSRP或JSRP）。
 
-**UGC在存放庫中的位置和格式可能會變更，恕不另行警告**。
+**UGC在存放庫中的位置和格式可能會變更，恕不另行警告**.
 
 請參閱：
 
-* [儲存資源提供程式概述](srp.md)  — 簡介和儲存庫使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP公用程式方法與範例
+* [儲存資源提供程式概述](srp.md)  — 簡介和存放庫使用概觀
+* [SRP和UGC要點](srp-and-ugc.md) - SRP實用程式方法和示例
 * [使用SRP存取UGC](accessing-ugc-with-srp.md)  — 編碼准則
-* [SocialUtils重構](socialutils.md)  — 將棄用的公用程式方法對應至目前的SRP公用程式方法
+* [SocialUtils重構](socialutils.md)  — 將已棄用的實用程式方法映射到當前SRP實用程式方法

@@ -1,26 +1,30 @@
 ---
 title: Content Services
-seo-title: 內容服務
-description: 內容服務
-seo-description: 'null'
+seo-title: Content Services
+description: Content Services
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e900d93e-f7cd-4a0d-a866-7fc6c7882797
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 3%
+source-wordcount: '337'
+ht-degree: 4%
 
 ---
 
-
 # Content Services{#content-services}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe建議針對需要單頁應用程式架構用戶端轉譯（例如React）的專案使用SPA編輯器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建議針對需要單頁應用程式架構用戶端轉譯（例如React）的專案使用SPA編輯器。 [深入了解](/help/sites-developing/spa-overview.md).
 
 >[!CAUTION]
 >
@@ -42,9 +46,9 @@ Content Services引進了數種新的AEM結構，讓開發人員無需了解該�
 >
 >開始使用「內容服務」之前，請務必啟用「內容服務」標幟。 若要啟用在應用程式中建立和管理模型，您必須在設定瀏覽器中啟用資料模型。
 >
->如需詳細資訊，請參閱&#x200B;**[管理內容服務](/help/mobile/developing-content-services.md)** 。
+>請參閱 **[管理內容服務](/help/mobile/developing-content-services.md)** 以取得詳細資訊。
 >
->如需詳細資訊，請參閱[設定瀏覽器檔案](/help/sites-administering/configurations.md) 。
+>請參閱 [設定瀏覽器檔案](/help/sites-administering/configurations.md) 以取得更多資訊。
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -52,4 +56,3 @@ Content Services引進了數種新的AEM結構，讓開發人員無需了解該�
 
 * 儲存庫中的模型
 * 轉譯和傳送
-

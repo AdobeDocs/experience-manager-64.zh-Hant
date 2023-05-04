@@ -1,8 +1,8 @@
 ---
 title: AEM Foundation與存放庫
-seo-title: AEM Foundation與存放庫
+seo-title: AEM Foundation & Repository
 description: Adobe Experience Manager 6.3 AEM平台和存放庫專屬發行說明。
-seo-description: Adobe Experience Manager 6.3 AEM平台和存放庫專屬發行說明。
+seo-description: Release notes specific to Adobe Experience Manager 6.3 AEM Platform and Repository.
 uuid: 147b38d0-cf87-467c-a52d-3399d4af7e6e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,16 +10,20 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: e5dd9d0d-6d67-4430-aeb3-2be91356f624
 exl-id: 6f131247-d35e-4298-958f-35b94ff08c58
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '733'
-ht-degree: 2%
+source-wordcount: '755'
+ht-degree: 3%
 
 ---
 
-# AEM Foundation &amp; Repository {#aem-foundation-repository}
+# AEM Foundation與存放庫 {#aem-foundation-repository}
 
-## 更改清單{#list-of-changes}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 變更清單 {#list-of-changes}
 
 ### 存放庫 {#repository}
 
@@ -35,17 +39,15 @@ ht-degree: 2%
    * MongoMK的持續修訂清除取代了排程的清除維護
 
 * 改善檔案記錄檔的修訂清除效率
-* 請參閱[Apache Jackrabbit Oak Jira v. 1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt)、[Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt)及[Apache Jackrabbit Oak Jira v. 1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt)，以取得修正問題的完整概覽。
+* 請參閱 [Apache Jackrabbit Oak Jira v1.8.0](https://archive.apache.org/dist/jackrabbit/oak/1.8.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.8.1](https://archive.apache.org/dist/jackrabbit/oak/1.8.1/RELEASE-NOTES.txt) 和 [阿帕奇·傑克拉布特·奧克·吉拉訴1.8.2](https://archive.apache.org/dist/jackrabbit/oak/1.8.2/RELEASE-NOTES.txt) 以取得已修正問題的完整概述。
 
 >[!CAUTION]
 >
->* 自AEM 6.3以來出現的新版Oak Segment Tar需要移轉存放庫。 如果您從舊版TarMK升級，或想從其他類型的永續性切換新的區段Tar，此步驟為必要步驟。 如需新區段Tar有何優點的詳細資訊，請參閱[移轉至Oak區段Tar常見問題集](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar)。
-
+>* 自AEM 6.3以來出現的新版Oak Segment Tar需要移轉存放庫。 如果您從舊版TarMK升級，或想從其他類型的永續性切換新的區段Tar，此步驟為必要步驟。 如需新區段Tar的優點的詳細資訊，請參閱 [移轉至Oak Segment Tar常見問題集](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 >
 
 
-
-### 搜索和索引{#search-amp-indexing}
+### 搜尋與索引 {#search-amp-indexing}
 
 * 透過oak-run(CLI)增強對建立作業索引的支援：
 
@@ -55,11 +57,11 @@ ht-degree: 2%
    * 重新索引
 
 * 降低Lucene相關儲存庫的增長，以全面提高系統效能
-* 同步Lucene屬性索引[（更多資訊）](https://wiki.apache.org/jackrabbit/Synchronous%20Lucene%20Property%20Indexes)
+* 同步Lucene屬性索引 [（更多資訊）](https://wiki.apache.org/jackrabbit/Synchronous%20Lucene%20Property%20Indexes)
 * Index Manager中的「說明查詢」現在支援AEM QueryBuilder語法
 * 「索引管理器」現在公開索引度量：大小、上次更新和一致性檢查
 
-### 使用者介面{#user-interface}
+### 使用者介面 {#user-interface}
 
 * UI已經過多種增強功能，讓生產力更高，使用更輕鬆。
 * 新增內容樹狀結構邊欄，以快速導覽階層。 這會與清單檢視結合，還原傳統UI互動模型。
@@ -71,10 +73,8 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->* Adobe不打算對傳統UI進行進一步的增強。 AEM 6.4已包含傳統UI，而從舊版升級的客戶可繼續依原樣使用。 請注意，舊版UI在被取代時仍完全支援[了解詳情](/help/sites-deploying/ui-recommendations.md)。
-
+>* Adobe不打算對傳統UI進行進一步的增強。 AEM 6.4已包含傳統UI，而從舊版升級的客戶可繼續依原樣使用。 請注意，舊版UI在淘汰時仍完全支援 [了解詳情](/help/sites-deploying/ui-recommendations.md).
 >
-
 
 
 ### 內容發佈 {#content-distribution}
@@ -113,7 +113,7 @@ ht-degree: 2%
 * 升級複雜性評估：全新模式偵測器工具，可評估升級的複雜度。
 * 可持續升級：導入API介面和內容分類，協助您在整個開發週期中，輕鬆遵循最佳實務，以有效率且順暢地升級至下一個版本。
 * 存放庫重新調整：大幅重組（主要是/等）以促進更輕鬆的升級並促進實施最佳實務。 [了解詳情。](/help/sites-deploying/repository-restructuring.md)
-* 有關這些功能的詳細資訊，請參閱[升級文檔](/help/sites-deploying/upgrade.md)。
+* 請參閱 [升級檔案](/help/sites-deploying/upgrade.md) 以取得這些功能的詳細資訊。
 
 ### 雲端服務 {#cloud-services}
 
@@ -125,7 +125,7 @@ ht-degree: 2%
 * 增強並簡化使用者建立UI，支援多個使用者設定檔。
 * 改善使用者大型群組成員資格的效能。
 
-### 專案和工作流程{#projects-and-workflows}
+### 專案和工作流程 {#projects-and-workflows}
 
 * 觸控式UI工作流程編輯器，以更簡化的方式管理工作流程模型。
 * 支援在維護任務中清除項目任務。

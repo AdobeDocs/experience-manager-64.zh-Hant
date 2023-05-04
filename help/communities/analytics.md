@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2800'
 ht-degree: 4%
 
 ---
 
 # Communities功能的Analytics設定 {#analytics-configuration-for-communities-features}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 概觀 {#overview}
 
@@ -339,8 +343,20 @@ Analytic雲服務和架構現已完成。 一旦建立社群網站並啟用此An
 
 ```xml
 # present in default sitepage.hbs
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # only one scf-js-site-title class should be included
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # this example sets it to be hidden as it serves no visual purpose
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 <div
     class="navbar-brand scf-js-site-title"
     href="{{siteUrl}}.html"
@@ -522,11 +538,11 @@ Adobe Analytics憑證會經過加密。 為方便製作者與發佈者之間復�
 
 * 在 `jcr:content` 語言根節點
 
-   * 例如， `/content/sites/engage/en/jcr:content`
+   * 例如 `/content/sites/engage/en/jcr:content`
 
 * 導覽至為Analytics報表設定的元件
 
-   * 例如， `analytics/reportConfigs/social_forum_components_hbs_topic`
+   * 例如 `analytics/reportConfigs/social_forum_components_hbs_topic`
 
 * 注意建立的時段
 

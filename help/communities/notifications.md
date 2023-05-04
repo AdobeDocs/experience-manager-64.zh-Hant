@@ -1,8 +1,8 @@
 ---
 title: Communities通知
-seo-title: Communities通知
+seo-title: Communities Notifications
 description: AEM Communities會通知顯示已登入社群成員感興趣的事件
-seo-description: AEM Communities會通知顯示已登入社群成員感興趣的事件
+seo-description: AEM Communities has notifications that display events of interest to the signed-in community member
 uuid: d6ef12f1-7367-49a5-b891-56800a38b2ab
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,20 +11,24 @@ content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 role: Admin
 exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
+source-wordcount: '557'
+ht-degree: 2%
 
 ---
 
 # Communities通知 {#communities-notifications}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 AEM Communities提供通知區段，顯示已登入社群成員感興趣的事件。
 
-通知類似於[activities](essentials-activities.md)和[subscriptions](subscriptions.md)，因為它們可能是由
+通知類似 [活動](essentials-activities.md) 和 [訂閱](subscriptions.md) 因為
 
 * 成員發佈內容
 * 選擇跟隨另一成員的成員
@@ -33,34 +37,34 @@ AEM Communities提供通知區段，顯示已登入社群成員感興趣的事�
 活動和訂閱中的通知的區別為
 
 * 通知區段的連結一律會顯示在社群網站的標題中
-   * 活動要求將[活動資料流函式](functions.md#activity-stream-function)包含在社群網站的結構中
-   * 訂閱需要[電子郵件的設定](email.md)
+   * 活動需要 [活動流函式](functions.md#activity-stream-function) 包含在社群網站結構中
+   * 訂閱需要 [電子郵件設定](email.md)
 * 通知的實施是通過可擴展和可插拔的通道
    * 活動僅可在Web上使用
    * 訂閱僅限使用電子郵件
 
-自Communities [FP1](deploy-communities.md#latestfeaturepack)起，可用的通知通道為
+As of Communities [FP1](deploy-communities.md#latestfeaturepack)，可用的通知通道為
 
-* 使用`Notifications`連結存取的Web通道
+* 網路通道，使用 `Notifications` 連結
 * 電子郵件通道，正確設定電子郵件時可用
 
 未來的通道包括行動裝置和案頭裝置。
 
-### 需求 {#requirements}
+### 要求 {#requirements}
 
 **設定電子郵件**
 
 必須設定電子郵件，電子郵件通道才能運作通知。
 
-有關設定電子郵件的說明，請參閱[配置電子郵件](analytics.md)。
+如需設定電子郵件的指示，請參閱 [設定電子郵件](analytics.md).
 
 **啟用跟蹤**
 
-必須配置元件以啟用以下功能。 允許下列功能：[blog](blog-feature.md)、[forum](forum.md)、[QnA](working-with-qna.md)、[日曆](calendar.md)、[filelibrary](file-library.md)和[注釋](comments.md)。
+必須配置元件以啟用以下功能。 允許下列項目的功能 [部落格](blog-feature.md), [論壇](forum.md), [QnA](working-with-qna.md), [日曆](calendar.md), [檔案庫](file-library.md)，和 [評論](comments.md).
 
 請注意
 
-* 在社區[站點模板](sites.md)和[組模板](tools-groups.md)中使用的元件可能已配置為允許以下操作
+* 社群中使用的元件 [網站範本](sites.md) 和 [群組範本](tools-groups.md) 可能已配置為允許以下操作
 
 * 成員配置檔案已配置為允許其他成員遵循
 
@@ -68,11 +72,11 @@ AEM Communities提供通知區段，顯示已登入社群成員感興趣的事�
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
-**Follow**&#x200B;按鈕提供了一種方法，可以將條目作為活動、訂閱和/或通知跟蹤。 每次選擇&#x200B;**Follow**&#x200B;按鈕時，都可以開啟或關閉選擇。 `Email Subscriptions`選項僅在配置時存在。
+此 **追隨** 按鈕提供可在活動、訂閱和/或通知後跟隨項目的方法。 每次 **追隨** 按鈕，則可以開啟或關閉選取項。 此 `Email Subscriptions` 只有在配置後才會顯示選擇。
 
-如果選擇了下列任何方法，則按鈕的文本將更改為&#x200B;**Following**。 為方便起見，可以選取`Unfollow All`來關閉所有方法。
+如果選取下列任何方法，按鈕的文字會變更為 **追隨**. 為方便起見，您可以選擇 `Unfollow All` 切換所有方法。
 
-將顯示&#x200B;**Follow**&#x200B;按鈕
+此 **追隨** 按鈕將出現
 
 * 查看其他成員的配置檔案時
 * 在主功能頁面，如論壇、QnA和部落格
@@ -88,7 +92,7 @@ AEM Communities提供通知區段，顯示已登入社群成員感興趣的事�
 
 ![chlimage_1-255](assets/chlimage_1-255.png)
 
-電子郵件通道依賴於電子郵件](email.md)的適當[配置，提供與Web通道相同的設定。
+依賴適當 [電子郵件設定](email.md)，提供與網頁頻道相同的設定。
 
 電子郵件通道預設為關閉。
 
@@ -102,9 +106,9 @@ AEM Communities提供通知區段，顯示已登入社群成員感興趣的事�
 
 ### Web通知 {#web-notifications}
 
-建立的[精靈社群網站](sites-console.md)現在包含橫幅上方網站標題列中`Notifications`功能的連結。 與訊息不同，會為每個社群網站建立通知，而訊息必須在網站建立程式期間啟用。
+A [嚮導建立的社群站點](sites-console.md) 現在包含連結至 `Notifications` 功能。 與訊息不同，會為每個社群網站建立通知，而訊息必須在網站建立程式期間啟用。
 
-訪問已發佈的站點時，選擇`Notifications`連結將顯示該成員的所有通知。
+造訪已發佈的網站時，請選取 `Notifications` 連結將顯示成員的所有通知。
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 

@@ -12,14 +12,18 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 exl-id: 895103c8-df58-40f0-85d6-e29637edce53
 feature: Image Profiles
 role: Admin,User
-source-git-commit: 56d711eb5aa87a2aa4c5476bae0627afccc579d1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2960'
 ht-degree: 7%
 
 ---
 
 # Dynamic Media 影像設定檔 {#image-profiles}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 上傳影像時，您可以透過將影像描述檔套用至資料夾，在上傳時自動裁切影像。
 

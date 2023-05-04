@@ -1,31 +1,35 @@
 ---
 title: 最適化表單元件的內嵌樣式
-seo-title: 適用性表單元件的內嵌CSS屬性
+seo-title: Inline CSS properties for adaptive form components
 description: 您可以在適用性表單上套用自訂樣式，也可以在適用性表單的個別元件上套用內嵌CSS屬性。
-seo-description: 您可以在適用性表單上套用自訂樣式，也可以在適用性表單的個別元件上套用內嵌CSS屬性。
+seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
-feature: 適用性表單
+feature: Adaptive Forms
 exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 2%
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
-# 適用性表單元件的內嵌樣式{#inline-styling-of-adaptive-form-components}
+# 最適化表單元件的內嵌樣式 {#inline-styling-of-adaptive-form-components}
 
-您可以使用[主題編輯器](/help/forms/using/themes.md)指定樣式，以定義最適化表單的整體外觀和樣式。 此外，您也可以將內嵌CSS樣式套用至個別的最適化表單元件，並即時預覽變更。 內嵌樣式會覆寫主題中提供的樣式。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-## 套用內嵌CSS屬性{#apply-inline-css-properties}
+您可以使用 [主題編輯器](/help/forms/using/themes.md). 此外，您也可以將內嵌CSS樣式套用至個別的最適化表單元件，並即時預覽變更。 內嵌樣式會覆寫主題中提供的樣式。
+
+## 套用內嵌CSS屬性 {#apply-inline-css-properties}
 
 若要將內嵌樣式新增至元件：
 
-1. 在表單編輯器中開啟表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中，點選![canvas-drop-down](assets/canvas-drop-down.png) > **Style**。
-1. 在頁面中選取元件，然後點選「編輯」按鈕![edit-button](assets/edit-button.png)。 樣式屬性在側欄中開啟。
+1. 在表單編輯器中開啟表單，並將模式變更為樣式模式。 若要將模式變更為樣式模式，請在頁面工具列中，點選 ![畫布下拉式清單](assets/canvas-drop-down.png) > **樣式**.
+1. 在頁面中選取元件，然後點選「編輯」按鈕 ![編輯按鈕](assets/edit-button.png). 樣式屬性在側欄中開啟。
 
    您也可以從側欄的表單階層樹狀結構中選取元件。 表單層次結構樹在側欄中作為表單對象可用。
 
@@ -43,9 +47,9 @@ ht-degree: 2%
    * 進階（可讓您編寫元件的自訂CSS）
 
 1. 同樣地，您也可以為元件的其他部分（如Widget、Caption和Help）應用樣式。
-1. 點選&#x200B;**完成**&#x200B;以確認變更，或點選&#x200B;**取消**&#x200B;以捨棄變更。
+1. 點選 **完成** 確認變更或 **取消** 放棄更改。
 
-## 範例：欄位元件{#example-inline-styles-for-a-field-component}的內嵌樣式
+## 範例：欄位元件的內嵌樣式 {#example-inline-styles-for-a-field-component}
 
 下列影像說明套用內嵌樣式之前和之後的文字欄位。
 
@@ -96,8 +100,8 @@ ht-degree: 2%
  </tbody> 
 </table>
 
-![套用內嵌樣式後的文字方塊樣](assets/applied-style.png)
-**式圖：** *套用內嵌樣式屬性後的文字方塊元件*
+![套用內嵌樣式之後的文字方塊樣式](assets/applied-style.png)
+**圖：** *套用內嵌樣式屬性後的文字方塊元件*
 
 依照上述步驟，您可以選取其他元件（例如面板、提交按鈕和選項按鈕）並設定其樣式。
 

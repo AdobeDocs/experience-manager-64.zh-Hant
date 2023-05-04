@@ -1,8 +1,8 @@
 ---
 title: 調節社群內容
-seo-title: 調節社群內容
+seo-title: Moderating Community Content
 description: 協調概念和動作
-seo-description: 協調概念和動作
+seo-description: Moderation concepts and actions
 uuid: a24d09e7-3260-4eec-844e-97e6849c94d8
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,24 +11,28 @@ content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 role: Admin
 exl-id: 9865b366-b9e5-40f3-8863-789ccfb792f5
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1519'
-ht-degree: 0%
+source-wordcount: '1548'
+ht-degree: 1%
 
 ---
 
 # 調節社群內容 {#moderating-community-content}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 當成員（登入網站訪客）透過與下列其中一個社群元件互動來發佈來自已發佈社群網站的內容時，會建立社群內容(也稱為使用者產生的內容(UGC)):
 
 * [部落格](blog-feature.md):成員發佈部落格文章或評論
 * [日曆](calendar.md):發佈日曆事件或留言的成員
-* [評論](comments.md):成員發佈評論或回複評論
+* [註解](comments.md):成員發佈評論或回複評論
 * [論壇](forum.md):成員發佈新主題或回復主題
-* [構想](ideation-feature.md):成員發佈構想或留言
+* [構思](ideation-feature.md):成員發佈構想或留言
 * [QnA](working-with-qna.md):成員可建立問題或回答問題
 * [評論](reviews.md):評分項目時，成員會張貼留言
 
@@ -36,7 +40,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 * [大量協調主控台](moderation.md)
 
-   管理員和[社群協調者](users.md)可在公用環境中存取「協調」主控台，也可由製作環境中的管理員存取。 當社群內容儲存在[公用存放區](working-with-srp.md)中時，就可能發生此情況。
+   管理員和 [社群協調者](users.md) 以及作者環境中的管理員。 當社群內容儲存在 [公用商店](working-with-srp.md).
 
 * [內容內協調](in-context.md)
 
@@ -47,9 +51,9 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 可對發佈內容(UGC)執行的動作會依使用者身分和環境而有所不同。 下表使用下列術語，根據使用者身分描述各種角色：
 
 * `Admin`\
-   [community-administrators](users.md)組的成員用戶
+   屬於 [社群管理員](users.md) 群組
 * `Moderator`
-社群協調者 [群](users.md#publishenvironmentusersandgroups) 組的成員(具 [有協調者權限](in-context.md#moderatorpermissions))
+成員 [社群協調者](users.md#publishenvironmentusersandgroups) 群組(具有 [版主權限](in-context.md#moderatorpermissions))
 * `Creator`\
    發佈內容的使用者
 * `Member`\
@@ -63,14 +67,14 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
    <td> </td> 
    <td><strong>管理員</strong></td> 
    <td><strong>版主</strong></td> 
-   <td><strong>產生器</strong></td> 
+   <td><strong>建立者</strong></td> 
    <td><strong>成員</strong></td> 
    <td><strong>訪客</strong></td> 
-   <td><strong>事件<br />已觸發</strong></td> 
+   <td><strong>事件<br /> 觸發</strong></td> 
    <td><strong>已預先審核</strong></td> 
   </tr>
   <tr>
-   <td><strong>編輯/<br />刪除</strong></td> 
+   <td><strong>編輯/<br /> 刪除</strong></td> 
    <td>X</td> 
    <td>X</td> 
    <td>X</td> 
@@ -100,7 +104,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
    <td> </td> 
   </tr>
   <tr>
-   <td><strong>關閉/<br />重新開啟</strong></td> 
+   <td><strong>關閉/<br /> 重新開啟</strong></td> 
    <td>X</td> 
    <td>X</td> 
    <td> </td> 
@@ -110,7 +114,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
    <td>X<br /> </td> 
   </tr>
   <tr>
-   <td><strong>標幟/<br />取消標幟</strong></td> 
+   <td><strong>標幟/<br /> 取消標幟</strong></td> 
    <td>X</td> 
    <td>X</td> 
    <td> </td> 
@@ -144,7 +148,7 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 選取「剪下」動作後，內容會複製到剪貼簿。 多則貼文可以複製，並以群組形式移動至新位置。
 
-![](assets/cutugc.png) ![cutugcputbackugc](assets/putbackugc.png)
+![cutugc](assets/cutugc.png) ![putbackugc](assets/putbackugc.png)
 
 在另一個位置，當剪貼簿中出現內容時，新貼文旁會顯示「貼上」按鈕，其中數字代表將貼上的貼文數量。 「貼上」按鈕包含清除剪貼簿而非貼上的選項。
 
@@ -180,13 +184,13 @@ UGC的調節有助於識別正面貢獻以及限制負面貢獻（例如垃圾�
 
 ### 預先協調 {#premoderation}
 
-UGC經過預先審核後，貼文在經過協調動作核准後，才會顯示在已發佈的網站上。 在建立[社群網站](sites-console.md)期間，核取方塊` [Content is Premoderated](sites-console.md#moderation)`將啟用整個網站的預先協調。 將元件放在頁面上後，即可使用其編輯對話方塊中的設定，將支援協調的元件設定為預先協調：
+UGC經過預先審核後，貼文在經過協調動作核准後，才會顯示在已發佈的網站上。 建立 [社群網站](sites-console.md)，勾選方塊 ` [Content is Premoderated](sites-console.md#moderation)` 會為整個網站啟用預先協調。 將元件放在頁面上後，即可使用其編輯對話方塊中的設定，將支援協調的元件設定為預先協調：
 
-* [](comments.md) 評論和 [評論](reviews.md)
+* [註解](comments.md) 和 [評論](reviews.md)
 
-   在「**[!UICONTROL 使用者協調]**」標籤上，勾選「**[!UICONTROL 預先協調]**」
+   on **[!UICONTROL 使用者協調]** 標籤，核取 **[!UICONTROL 預先協調]**
 
-* [論壇](forum.md)、 [構思](ideation-feature.md)、 [QnA](working-with-qna.md)和日曆 [](calendar.md) 設定 **** 標籤，勾選 **[!UICONTROL 已審核]**
+* [論壇](forum.md), [識別](ideation-feature.md), [QnA](working-with-qna.md)，和 [日曆](calendar.md) on **[!UICONTROL 設定]** 標籤，核取 **[!UICONTROL 已審核]**
 
 ### 垃圾郵件檢測 {#spam-detection}
 
@@ -194,7 +198,7 @@ UGC經過預先審核後，貼文在經過協調動作核准後，才會顯示�
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`。
 
-但是，要自定義或擴展預設垃圾郵件字詞，請在/apps目錄中建立一組字詞，並遵循預設垃圾郵件字詞的結構，方法為[overlay](overlay-comments.md)。
+但是，要自定義或擴展預設垃圾郵件字詞，請通過 [覆蓋](overlay-comments.md).
 
 使用者產生的包含垃圾訊息字詞的貼文（涵蓋所有內容類型，例如部落格、論壇和留言），在貼文上方會標示為「此貼文已分類為垃圾訊息」。
 
@@ -204,10 +208,10 @@ UGC經過預先審核後，貼文在經過協調動作核准後，才會顯示�
 
 要啟用垃圾郵件檢測引擎，請執行以下步驟：
 
-1. 開啟[Web控制台](http://localhost:4502/system/console/configMgr)，方法是前往`/system/console/configMgr`。
+1. 開啟 [Web主控台](http://localhost:4502/system/console/configMgr)，前往 `/system/console/configMgr`.
 
-1. 找出&#x200B;**[!UICONTROL AEM Communities自動協調]**&#x200B;設定，並加以編輯。
-1. 新增`SpamProcess`項目。
+1. 找出 **[!UICONTROL AEM Communities自動協調]** 設定，並加以編輯。
+1. 新增 `SpamProcess` 的下界。
 
 ![垃圾郵件處理](assets/spamprocess.png)
 
@@ -217,9 +221,9 @@ UGC經過預先審核後，貼文在經過協調動作核准後，才會顯示�
 
 ### 情緒 {#sentiment}
 
-情緒是根據貼文(UGC)中呈現的正面和負面關鍵字([watchwords](#configuringwatchwords))數目計算。
+情緒是根據正面和負面關鍵字的數量([觀看詞](#configuringwatchwords))存在於貼文(UGC)中。
 
-情緒分析使用一組預先設定的規則，並計算UGC的情緒。 預設規則位於`/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+情緒分析使用一組預先設定的規則，並計算UGC的情緒。 預設規則位於 `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
 規則產生的值從1（所有負面，無正面字詞）到10（所有正面，無負面字詞）。 情緒值5為中性情緒，為預設值。
 
@@ -234,51 +238,51 @@ UGC經過預先審核後，貼文在經過協調動作核准後，才會顯示�
 
 分析後，情緒會與UGC一起儲存。
 
-在[大量協調控制台](moderation.md)中，可以根據情緒是負面、中性或正面來篩選和檢視UGC。
+從 [大量協調控制台](moderation.md)，您可以根據情緒是負面、中性或正面來篩選及檢視UGC。
 
 #### 口碑 {#watchwords}
 
-AEM社群提供*watchword analyzer *作為評估[情緒](#sentiment)的程式中的步驟。 關注字詞對情緒值的貢獻，是因為張貼內容中使用的負面和正面關注字詞，以及禁止字詞的比較。
+AEM社群提供*watchword analyzer *作為評估程式的步驟 [情緒](#sentiment). 關注字詞對情緒值的貢獻，是因為張貼內容中使用的負面和正面關注字詞，以及禁止字詞的比較。
 
 #### 設定情緒和觀看字詞 {#configure-sentiment-and-watchwords}
 
 正面和負面觀看字清單可自訂，因為可以是情緒規則。
 
-預設的監視字詞清單可以作為節點的屬性在儲存庫中輸入，類似於預設值，或者通過使用字詞清單配置OSGi服務`sentimentprocess.name`來覆蓋預設值。
+預設的監看字清單可以作為儲存庫中節點的屬性輸入，類似於預設值，或通過配置OSGi服務來覆蓋預設值 `sentimentprocess.name`用詞清單。
 
-也可以修改&#x200B;**sentimentprocess.name**&#x200B;以參考一組自訂情緒規則的位置。
+此 **sentimentprocess.name** 也可修改以參考自訂情緒規則集的位置。
 
 若要設定情緒和口號：
 
 * 在製作例項上
 * 以管理員身分登入
-* 開啟[Web控制台](http://localhost:4502/system/console/configMgr)
-* 找到`sentimentprocess.name`
+* 開啟 [Web主控台](http://localhost:4502/system/console/configMgr)
+* 找出 `sentimentprocess.name`
 * 選取要在編輯模式中開啟的設定
 
 ![情緒過程](assets/sentimentprocess.png)
 
-* **正**
-面關注字詞(Besitive Watchwords)導致正面情緒覆寫預設值的以逗號分隔的字詞清單。預設為空白清單。
+* **正面的口號**
+導致正面情緒覆寫預設值的以逗號分隔字詞清單。 預設為空白清單。
 
-* **負**
-面字詞(Negative Watchwords)導致負面情緒且覆寫預設值的以逗號分隔的字詞清單。預設為空白清單。
+* **負面觀看詞**
+導致負面情緒的字詞清單（以逗號分隔）會覆寫預設值。 預設為空白清單。
 
-* **監視詞節點的顯**
-式路徑包含預設值的節點的儲存庫位置 
-`positive` 和指 `negative` 定預設監看字的屬性。預設值為`/libs/settings/community/watchwords/default`。
+* **觀看詞節點的明確路徑**
+包含預設值的節點的儲存庫位置 
+`positive` 和 `negative` 指定預設監看字的屬性。 預設為 `/libs/settings/community/watchwords/default`.
 
-* **情緒**
-規則根據正面和負面關鍵字計算情緒之規則的存放庫位置。預設為 
+* **情緒規則**
+根據正面和負面關鍵字計算情緒之規則的存放庫位置。 預設為 
 `/libs/cq/workflow/components/workflow/social/sentiments/rules` （不過，不再涉及任何工作流程）。
 
-以下是當`Explicit Path to Watchwords Node`設為`/libs/settings/community/watchwords/default`時，預設關注字詞的自訂項目範例。
+以下是預設關注字詞的自訂項目範例，當 `Explicit Path to Watchwords Node` 設為 `/libs/settings/community/watchwords/default`.
 
 ![crxde](assets/crxde.png)
 
 ### 版主權限 {#moderator-permissions}
 
-將下列權限指派給相同資源時，統稱為&#x200B;**`moderator permissions`**:
+將下列權限指派給相同資源時，統稱為 **`moderator permissions`**:
 
 * `Read`
 * **`Modify`**

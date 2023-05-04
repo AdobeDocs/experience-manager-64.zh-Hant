@@ -1,22 +1,26 @@
 ---
 title: 資產卸載最佳實務
-description: 在 [!DNL Experience Manager] Assets中卸載資產擷取和復寫工作流程的建議使用案例和最佳實務。
+description: 在中卸載資產擷取和復寫工作流程的建議使用案例和最佳實務 [!DNL Experience Manager] 資產。
 contentOwner: AG
 feature: Asset Management
 role: User,Admin
 exl-id: 3ecc8988-add1-47d5-80b4-984beb4d8dab
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1841'
 ht-degree: 0%
 
 ---
 
 # 資產卸載最佳實務 {#assets-offloading-best-practices}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 >[!WARNING]
 >
->此功能從[!DNL Experience Manager] 6.4起淘汰，並在[!DNL Experience Manager] 6.5中移除。請據此規劃。
+>此功能已淘汰 [!DNL Experience Manager] 6.4以上，並於 [!DNL Experience Manager] 6.5.據此計畫。
 
 在Adobe Experience Manager Assets中處理大型檔案和執行工作流程可能會耗用大量CPU、記憶體和I/O資源。 尤其是資產的大小、工作流程、使用者人數和資產擷取頻率可能會影響整體系統效能。 耗用最多資源的作業包括資產擷取和復寫工作流程。 在單一製作例項上大量使用這些工作流程可能會對製作效率造成負面影響。
 
@@ -24,7 +28,7 @@ ht-degree: 0%
 
 ## [!DNL Experience Manager Assets] 卸載 {#aem-assets-offloading}
 
-[!DNL Experience Manager] Assets會實作原生資產專屬的工作流程擴充功能，以進行卸載。它以卸載架構提供的一般工作流程擴充功能為基礎，但在實施中包含其他資產專屬功能。 「資產」卸載的目標是對上傳的資產執行DAM更新資產工作流程。 資產卸載可讓您進一步控制擷取工作流程。
+[!DNL Experience Manager] Assets會實作原生資產專屬的工作流程擴充功能，以進行卸載。 它以卸載架構提供的一般工作流程擴充功能為基礎，但在實施中包含其他資產專屬功能。 「資產」卸載的目標是對上傳的資產執行DAM更新資產工作流程。 資產卸載可讓您進一步控制擷取工作流程。
 
 ## [!DNL Experience Manager] 資產卸載元件 {#aem-assets-offloading-components}
 
@@ -34,11 +38,11 @@ ht-degree: 0%
 
 ### DAM更新資產卸載工作流程 {#dam-update-asset-offloading-workflow}
 
-「DAM更新資產卸載」工作流程會在使用者上傳資產的主要（作者）伺服器上執行。 此工作流程由一般工作流程啟動器觸發。 此卸載工作流程不會處理上傳的資產，而是使用主題&#x200B;*com/adobe/granite/workflow/offloading*&#x200B;建立新作業。 卸載工作流程會新增目標工作流程的名稱，也就是「DAM更新資產」工作流程，以及資產的路徑至工作的裝載。 建立卸載作業後，主實例上的卸載工作流將等待卸載作業運行。
+「DAM更新資產卸載」工作流程會在使用者上傳資產的主要（作者）伺服器上執行。 此工作流程由一般工作流程啟動器觸發。 此卸載工作流程不會處理上傳的資產，而是使用主題建立新作業 *com/adobe/granite/workflow/offloading*. 卸載工作流程會新增目標工作流程的名稱，也就是「DAM更新資產」工作流程，以及資產的路徑至工作的裝載。 建立卸載作業後，主實例上的卸載工作流將等待卸載作業運行。
 
 ### 工作經理 {#job-manager}
 
-作業管理器將新作業分發給工作實例。 在設計發佈機制時，請務必考慮主題啟用。 只能將作業指派給啟用作業主題的例項。 在主要上禁用主題`com/adobe/granite/workflow/offloading`，並在工作人員上啟用該主題，以確保將該作業分配給該工作人員。
+作業管理器將新作業分發給工作實例。 在設計發佈機制時，請務必考慮主題啟用。 只能將作業指派給啟用作業主題的例項。 停用主題 `com/adobe/granite/workflow/offloading` 在主系統上，並在工作人員上啟用它，以確保將工作分配給該工作人員。
 
 ### [!DNL Experience Manager] 卸載 {#aem-offloading}
 
@@ -46,11 +50,11 @@ ht-degree: 0%
 
 ### 工作流程卸載作業使用者 {#workflow-offloading-job-consumer}
 
-在工作人員上寫入作業後，作業管理員會呼叫負責&#x200B;*com/adobe/granite/workflow/offloading*&#x200B;主題的作業使用者。 接著，工作使用者會對資產執行DAM更新資產工作流程。
+一旦在員工上寫了工作，工作經理就會呼叫負責的工作消費者 *com/adobe/granite/workflow/offloading* 主題。 接著，工作使用者會對資產執行DAM更新資產工作流程。
 
 ## Sling拓撲 {#sling-topology}
 
-Sling拓撲將[!DNL Experience Manager]實例分組，使它們能夠彼此感知，而不受基礎持久性的影響。 Sling拓撲的這項特性可讓您為非叢集、叢集和混合情境建立拓撲。 實例可向整個拓撲顯示屬性。 該框架提供用於偵聽拓撲（實例和屬性）中的更改的回調。 Sling拓撲為Sling分佈式作業提供了基礎。
+Sling拓撲組 [!DNL Experience Manager] 例項，可讓它們彼此感知，不受基礎持續性影響。 Sling拓撲的這項特性可讓您為非叢集、叢集和混合情境建立拓撲。 實例可向整個拓撲顯示屬性。 該框架提供用於偵聽拓撲（實例和屬性）中的更改的回調。 Sling拓撲為Sling分佈式作業提供了基礎。
 
 ### Sling分佈式作業 {#sling-distributed-jobs}
 
@@ -89,28 +93,28 @@ Sling分佈式作業提供作業和分發框架。 Granite卸載只會處理作�
 
 ### 建議的資產卸載部署 {#recommended-assets-offloading-deployment}
 
-若使用[!DNL Experience Manager]和Oak，可能有數個部署案例。 若為資產卸載，建議使用共用資料存放區的TarMK型部署。 下圖概述建議的部署：
+使用 [!DNL Experience Manager] 和Oak，可能有數個部署案例。 若為資產卸載，建議使用共用資料存放區的TarMK型部署。 下圖概述建議的部署：
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-如需設定資料存放區的詳細資訊，請參閱[設定AEM](../sites-deploying/data-store-config.md)中的節點存放區和資料存放區。
+如需設定資料存放區的詳細資訊，請參閱 [在AEM中設定節點儲存區和資料儲存區](../sites-deploying/data-store-config.md).
 
 ### 關閉自動代理管理 {#turning-off-automatic-agent-management}
 
 Adobe建議您關閉自動代理管理，因為它不支援無二進位複製，在設定新的卸載拓撲時可能會造成混淆。 此外，它不會自動支援無二進位複製所需的正向複製流。
 
-1. 從URL `http://localhost:4502/system/console/configMgr`開啟Configuration Manager。
-1. 開啟`OffloadingAgentManager`(`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`)的配置。
+1. 從URL開啟Configuration Manager `http://localhost:4502/system/console/configMgr`.
+1. 開啟 `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`)。
 1. 禁用自動代理管理。
 
 ### 使用正向複製 {#using-forward-replication}
 
 預設情況下，卸載傳輸使用反向複製將卸載的資產從工作器拉回到主伺服器。 反向複製代理不支援無二進位複製。 您應將卸載配置為使用轉發複製將卸載的資產從工作器推回主伺服器。
 
-1. 如果您使用反向複製從預設配置遷移，請禁用或刪除主和工作器上名為「 `offloading_outbox`」和「 `offloading_reverse_*`」的所有代理，其中&amp;ast;代表target例項的Sling id。
-1. 在每個工作器上，建立指向主工作器的新轉發複製代理。 該過程與從主代理到工作代理建立轉發代理相同。 有關設定卸載複製代理的說明，請參閱[建立卸載的複製代理](../sites-deploying/offloading.md#creating-replication-agents-for-offloading)。
-1. 開啟`OffloadingDefaultTransporter`(`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`)的配置。
-1. 將屬性`default.transport.agent-to-master.prefix`的值從`offloading_reverse`變更為`offloading`。
+1. 如果您使用反向複製從預設配置遷移，請禁用或刪除名為「 `offloading_outbox`&quot;和&quot; `offloading_reverse_*`&quot;在主和工作器上，其中&amp;ast;代表target例項的Sling id。
+1. 在每個工作器上，建立指向主工作器的新轉發複製代理。 該過程與從主代理到工作代理建立轉發代理相同。 請參閱 [建立要卸載的複製代理](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) 有關設定卸載複製代理的說明。
+1. 開啟 `OffloadingDefaultTransporter`  (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`)。
+1. 變更屬性的值 `default.transport.agent-to-master.prefix` 從 `offloading_reverse` to `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
 TBD: Update the property in the last step when GRANITE-30586 is fixed.
@@ -118,24 +122,24 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 ### 在作者和背景工作之間使用共用資料存放區和無二進位復寫  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
-建議使用無二進位檔復寫，以減少資產卸載的傳輸開銷。 若要了解如何為共用資料存放區設定無二進位檔復寫，請參閱[在AEM](/help/sites-deploying/data-store-config.md)中設定節點存放區和資料存放區。 資產卸載的程式並不不同，只是涉及其他復寫代理。 因為無二進位複製只與轉發複製代理一起使用，因此您也應對所有卸載代理使用轉發複製。
+建議使用無二進位檔復寫，以減少資產卸載的傳輸開銷。 要了解如何為共用資料儲存設定無二進位複製，請參閱 [在AEM中設定節點儲存和資料儲存](/help/sites-deploying/data-store-config.md). 資產卸載的程式並不不同，只是涉及其他復寫代理。 因為無二進位複製只與轉發複製代理一起使用，因此您也應對所有卸載代理使用轉發複製。
 
 ### 關閉運輸包 {#turning-off-transport-packages}
 
 依預設，卸載會建立包含卸載作業和作業裝載（原始資產）的內容包，並使用單一復寫請求傳輸此單一卸載包。 使用無二進位檔的復寫時，建立這些卸載套件會產生反作用，因為在建立套件時，會將二進位檔序列化至套件中。 可以關閉這些傳輸包的使用，這會導致卸載作業和負載在多個複製請求中傳輸，每個有效負載條目各一個。 這樣，就可以利用無二進位複製的好處。
 
-1. 在[http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)開啟&#x200B;*OffloadingDefaultTransporter*&#x200B;元件的元件配置
-1. 禁用屬性&#x200B;*複製包(default.transport.contentpackage)*。
+1. 開啟的元件設定 *卸載DefaultTransporter* 元件於 [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
+1. 停用屬性 *復寫套件(default.transport.contentpackage)*.
 
 ### 禁用工作流模型的傳輸 {#disabling-the-transport-of-workflow-model}
 
-依預設，*DAM更新資產卸載*&#x200B;卸載工作流程會新增要在背景工作上呼叫的工作流程模型至工作裝載。 由於此工作流程預設會遵循現成可用的&#x200B;*DAM更新資產*&#x200B;模型，因此可以移除此額外的裝載。
+依預設， *DAM更新資產卸載* 卸載工作流將添加工作流模型，以調用工作負載到作業裝載。 因為此工作流程會遵循現成可用的 *DAM更新資產* 模型時，可移除此額外的裝載。
 
 如果從作業裝載中停用工作流模型，請務必使用其他工具（例如封裝管理器）將變更分發至參考的工作流模型。
 
 若要停用工作流程模型的傳輸，請修改「DAM更新資產卸載」工作流程。
 
-1. 從[http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html)開啟工作流控制台。
+1. 從開啟工作流程主控台 [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 1. 開啟「模型」(Models)頁簽。
 1. 開啟「DAM更新資產卸載」工作流程模型。
 1. 開啟「DAM工作流程卸載」步驟的步驟屬性。
@@ -146,7 +150,7 @@ TBD: Update the property in the last step when GRANITE-30586 is fixed.
 
 工作流程卸載是使用主要伺服器上的外部工作流程來實施的，該工作流程會輪詢背景工作上已卸載的工作流程是否完成。 外部工作流進程的預設輪詢間隔為5秒。 Adobe建議您將「資產」卸載步驟的輪詢間隔至少增加至15秒，以減少主要伺服器的卸載開銷。
 
-1. 從[http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html)開啟工作流控制台。
+1. 從開啟工作流程主控台 [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
 1. 開啟「模型」(Models)頁簽。
 1. 開啟「DAM更新資產卸載」工作流程模型。

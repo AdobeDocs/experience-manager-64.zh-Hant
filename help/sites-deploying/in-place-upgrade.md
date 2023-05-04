@@ -1,44 +1,48 @@
 ---
 title: 執行就地升級
-seo-title: 執行就地升級
+seo-title: Performing an In-Place Upgrade
 description: 了解如何執行就地升級。
-seo-description: 了解如何執行就地升級。
+seo-description: Learn how to perform an in-place upgrade.
 uuid: c7428dc0-2b9e-401d-8f80-19e936f6d739
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
-feature: 升級
+feature: Upgrading
 exl-id: 70c5ef98-1004-46d0-b805-9435613ec36b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1263'
 ht-degree: 0%
 
 ---
 
 # 執行就地升級{#performing-an-in-place-upgrade}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
->本頁概述AEM 6.4的升級過程。如果您有部署到應用程式伺服器的安裝，請參閱[應用程式伺服器安裝的升級步驟](/help/sites-deploying/app-server-upgrade.md)。
+>本頁概述AEM 6.4的升級過程。如果您有部署到應用程式伺服器的安裝，請參閱 [應用程式伺服器安裝的升級步驟](/help/sites-deploying/app-server-upgrade.md).
 
-## 升級前步驟{#pre-upgrade-steps}
+## 升級前步驟 {#pre-upgrade-steps}
 
-執行升級前，必須完成幾個步驟。 有關詳細資訊，請參閱[升級代碼和自定義](/help/sites-deploying/upgrading-code-and-customizations.md)和[升級前維護任務](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。 此外，請確定您的系統符合新版AEM的需求。 請參閱模式偵測器如何協助您評估升級的複雜性，並參閱[規劃升級](/help/sites-deploying/upgrade-planning.md)的升級範圍和需求一節以取得詳細資訊。
+執行升級前，必須完成幾個步驟。 請參閱 [升級程式碼和自訂](/help/sites-deploying/upgrading-code-and-customizations.md) 和 [升級前維護任務](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) 以取得更多資訊。 此外，請確定您的系統符合新版AEM的需求。 請參閱模式偵測器如何協助您評估升級的複雜度，並參閱升級範圍和需求一節。 [規劃升級](/help/sites-deploying/upgrade-planning.md) 以取得更多資訊。
 
-## 遷移必備條件{#migration-prerequisites}
+## 移轉必要條件 {#migration-prerequisites}
 
-* **最低必要Java版本：** 移轉工具僅適用於Java 7及更新版本。請注意，對於AEM 6.3和更高版本，Oracle的JRE 8和IBM的JRE 7和8是唯一支援的版本。
+* **最低必要Java版本：** 移轉工具只適用於Java 7及更新版本。 請注意，對於AEM 6.3及更高版本，Oracle的JRE 8和IBM的JRE 7和8是唯一支援的版本。
 
-* **升級執行個體：** 如果您從5.6 **版以前的版本升級**，請依照升級說明檔案6.0版中所述的程式，確定您已執行AEM 6.0就地升級。
+* **升級實例：** 如果您從版本升級 **大於5.6**，請依照升級說明檔案6.0版中所述的程式，確認您已執行AEM 6.0就地升級。
 
-## 準備AEM Quickstart jar檔案{#prep-quickstart-file}
+## 準備AEM Quickstart jar檔案 {#prep-quickstart-file}
 
 1. 停止執行個體（如果執行中）。
 
-1. 下載新的AEM jar檔案，並使用它取代`crx-quickstart`資料夾外部的舊檔案。
+1. 下載新的AEM jar檔案，並使用它來取代 `crx-quickstart` 檔案夾。
 
 1. 運行以解壓縮新的快速啟動Jar:
 
@@ -46,20 +50,18 @@ ht-degree: 0%
    java -Xmx4096m -jar aem-quickstart.jar -unpack
    ```
 
-## 內容儲存庫遷移{#content-repository-migration}
+## 內容存放庫移轉 {#content-repository-migration}
 
-如果您要從AEM 6.3升級，則不需要進行此移轉。若是6.3以前的版本，Adobe提供工具可將存放庫移轉至AEM 6.3中出現的新版Oak Segment Tar。此工具是快速入門套件的一部分，且對於將使用TarMK的任何升級，均強制執行。 使用MongoMK的環境升級不需要存放庫移轉。 如需新區段Tar格式的優點的詳細資訊，請參閱[移轉至Oak區段Tar常見問題集](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)。
+如果您要從AEM 6.3升級，則不需要進行此移轉。若是6.3以前的版本，Adobe提供工具可將存放庫移轉至AEM 6.3中出現的新版Oak Segment Tar。此工具是快速入門套件的一部分，且對於將使用TarMK的任何升級，均強制執行。 使用MongoMK的環境升級不需要存放庫移轉。 如需新區段Tar格式的優點的詳細資訊，請參閱 [移轉至Oak Segment Tar常見問題集](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-實際移轉是使用標準AEM Quickstart jar檔案執行，此檔案會使用新的`-x crx2oak`選項執行，此選項會執行crx2oak工具，以簡化升級並使其更穩健。
+實際遷移是使用標準AEM Quickstart Jar檔案執行的，使用新 `-x crx2oak` 選項，執行crx2oak工具以簡化升級並使其更強大。
 
 >[!NOTE]
 >
->如果您使用CRX2Oak Quickstart擴充功能執行TarMK存放庫內容移轉，您可以將下列項目新增至移轉命令列，以移除&#x200B;**samplecontent**&#x200B;執行模式：
+>如果您使用CRX2Oak Quickstart擴充功能執行TarMK存放庫內容移轉，您可以移除 **samplecontent** 在migration命令列中新增下列項目以執行模式：
 >
 >* `--promote-runmode nosamplecontent`
-
 >
-
 
 
 要確定應運行的命令，請使用以下命令：
@@ -68,7 +70,7 @@ ht-degree: 0%
 java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<YOUR_PROFILE>> <<ADDITIONAL_FLAGS>>
 ```
 
-其中`<<YOUR_PROFILE>>`和`<<ADDITIONAL_FLAGS>>`被下表中列出的設定檔和標幟取代：
+其中 `<<YOUR_PROFILE>>` 和 `<<ADDITIONAL_FLAGS>>` 會以下表中列出的設定檔和標幟取代：
 
 <table> 
  <tbody> 
@@ -123,27 +125,27 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 **在以下情況下，您可能還需要其他交換機：**
 
-* 如果在Java記憶體映射未正確處理的Windows系統上執行升級，請將`--disable-mmap`參數添加到命令中。
+* 如果您在Java記憶體映射未正確處理的Windows系統上執行升級，請添加 `--disable-mmap` 參數。
 
-* 如果您使用Java 7，請在`-Xmx`參數後面新增`-XX:MaxPermSize=2048m`參數。
+* 如果您使用Java 7，請新增 `-XX:MaxPermSize=2048m` 參數 `-Xmx` 參數。
 
-如需使用crx2oak工具的其他指示，請參閱使用[CRX2Oak移轉工具](/help/sites-deploying/using-crx2oak.md)。 如有需要，可手動升級crx2oak helper JAR，方法是在解壓縮快速入門程式後，以較新版本手動取代它。 其在AEM安裝資料夾中的位置為：`<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`。 最新版的CRX2Oak移轉工具可從Adobe存放庫下載：[https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
+如需使用crx2oak工具的其他指示，請參閱使用 [CRX2Oak移轉工具](/help/sites-deploying/using-crx2oak.md). 如有需要，可手動升級crx2oak helper JAR，方法是在解壓縮快速入門程式後，以較新版本手動取代它。 其在AEM安裝資料夾中的位置為： `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. 最新版的CRX2Oak移轉工具可從Adobe存放庫下載： [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/crx2oak/)
 
-如果移轉成功完成，則工具會退出，退出代碼為零。 此外，在位於AEM安裝目錄`crx-quickstart/logs`下的`upgrade.log`檔案中檢查WARN和ERROR消息，因為這些消息可能表示遷移過程中發生的非致命錯誤。
+如果移轉成功完成，則工具會退出，退出代碼為零。 此外，檢查 `upgrade.log` 檔案，位於 `crx-quickstart/logs` 在AEM安裝目錄中，因為這些可能表示移轉期間發生非致命錯誤。
 
-檢查`crx-quickstart/install`資料夾下的配置檔案。 如果需要移轉，則會更新以反映目標存放庫。
+檢查下方的組態檔 `crx-quickstart/install` 檔案夾。 如果需要移轉，則會更新以反映目標存放庫。
 
 >[!NOTE]
 >
->雖然`FileDataStore`是AEM 6.3安裝的新預設值，但不需要使用外部資料存放區。 雖然建議使用外部資料存放區作為生產部署的最佳實務，但升級並非先決條件。 由於升級AEM中已存在複雜性，建議您執行升級而不執行資料存放區移轉。 如有需要，可在之後以單獨作業的方式執行資料存放區移轉。
+>同時 `FileDataStore` 是AEM 6.3安裝的新預設值，不需要使用外部資料存放區。 雖然建議使用外部資料存放區作為生產部署的最佳實務，但升級並非先決條件。 由於升級AEM中已存在複雜性，建議您執行升級而不執行資料存放區移轉。 如有需要，可在之後以單獨作業的方式執行資料存放區移轉。
 
-## 疑難排解移轉問題{#troubleshooting-migration-issues}
+## 疑難排解移轉問題 {#troubleshooting-migration-issues}
 
 如果您從6.3升級，請略過本節。雖然提供的crx2oak設定檔應符合大部分客戶的需求，但有時需要其他參數。 如果您在移轉期間遇到錯誤，環境的某些方面可能需要提供其他設定選項。 若是如此，您可能會遇到下列錯誤：
 
-**不會複製查核點，因為未指定外部資料存放區。這會導致第一個開始時對完整的存放庫重新編製索引。 使用 — skip-checkpoint強制遷移，或查看https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration以了解更多資訊。**
+**不會複製查核點，因為未指定外部資料存放區。 這會導致第一個開始時對完整的存放庫重新編製索引。 使用 — skip-chreckpoint強制移轉，或參閱https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration以取得詳細資訊。**
 
-由於某些原因，移轉程式需要存取資料存放區中的二進位檔，且找不到。 若要指定資料存放區設定，請在移轉命令的`<<ADDITIONAL_FLAGS>>`部分加入下列標幟：
+由於某些原因，移轉程式需要存取資料存放區中的二進位檔，且找不到。 若要指定您的資料存放區設定，請在 `<<ADDITIONAL_FLAGS>>` 遷移命令的一部分：
 
 **S3資料存放區：**
 
@@ -151,7 +153,7 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 --src-s3config=/path/to/SharedS3DataStore.config --src-s3datastore=/path/to/datastore
 ```
 
-其中`/path/to/SharedS3DataStore.config`代表S3資料存放區設定檔案的路徑，而`/path/to/datastore`代表S3資料存放區的路徑。
+其中 `/path/to/SharedS3DataStore.config` 代表S3資料存放區設定檔案的路徑，且 `/path/to/datastore` 代表S3資料存放區的路徑。
 
 **對於檔案資料儲存：**
 
@@ -159,21 +161,21 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 --src-datastore=/path/to/datastore
 ```
 
-其中`/path/to/datastore`代表檔案資料存放區的路徑。
+其中 `/path/to/datastore` 代表檔案資料存放區的路徑。
 
-## 執行升級{#performing-the-upgrade}
+## 執行升級 {#performing-the-upgrade}
 
 **如果使用S3:**
 
-1. 移除與舊版S3連接器相關聯的`crx-quickstart/install`下方的任何jar。
+1. 移除下方的任何jar `crx-quickstart/install` 與舊版S3連接器相關聯。
 
-1. 從[https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)下載1.8.x S3連接器的最新版本
+1. 請從下載1.8.x S3連接器的最新版本 [https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.oak.s3connector/)
 
-1. 將包解壓縮到臨時資料夾，並將`jcr_root/libs/system/install`的內容複製到`crx-quickstart/install`資料夾。
+1. 將包解壓到臨時資料夾並複製 `jcr_root/libs/system/install` 到 `crx-quickstart/install` 檔案夾。
 
-### 確定正確的升級開始命令{#determining-the-correct-upgrade-start-command}
+### 確定正確的升級開始命令 {#determining-the-correct-upgrade-start-command}
 
-若要執行升級，請務必使用jar檔案啟動AEM以開啟執行個體。 若要升級至6.4，請在[延遲內容遷移](/help/sites-deploying/lazy-content-migration.md)中查看其他內容重組和遷移選項，您可以使用upgrade命令選擇這些選項。
+若要執行升級，請務必使用jar檔案啟動AEM以開啟執行個體。 若要升級至6.4，另請參閱 [延遲內容移轉](/help/sites-deploying/lazy-content-migration.md) 使用升級命令進行選擇。
 
 請注意，從開始指令碼啟動AEM將不會啟動升級。 大多數客戶都使用啟動指令碼啟動AEM，並且已自定義此啟動指令碼以包括用於環境配置的交換機，如記憶體設定、安全證書等。 因此，我們建議按照此過程確定正確的升級命令：
 
@@ -189,7 +191,7 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.2.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-1. 修改命令，方法是使用作為`crx-quickstart`資料夾的同級的新jar替換現有jar的路徑（在本例中為`crx-quickstart/app/aem-quickstart*.jar`）。 以上一個命令為例，我們的命令會是：
+1. 通過替換現有jar的路徑( `crx-quickstart/app/aem-quickstart*.jar` 在本例中)，新jar是 `crx-quickstart` 檔案夾。 以上一個命令為例，我們的命令會是：
 
    ```shell
    /usr/bin/java -server -Xmx1024m -XX:MaxPermSize=256M -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.4.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
@@ -197,10 +199,10 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
    這將確保所有正確的記憶體設定、自定義運行模式和其他環境參數都應用於升級。 升級完成後，執行個體可從未來啟動的開始指令碼開始。
 
-## 部署升級的代碼庫{#deploy-upgraded-codebase}
+## 部署升級的代碼庫 {#deploy-upgraded-codebase}
 
-完成就地升級程式後，應部署更新的程式碼基底。 在[升級代碼和自訂頁面](/help/sites-deploying/upgrading-code-and-customizations.md)中，可找到更新代碼庫以在AEM目標版本中運作的步驟。
+完成就地升級程式後，應部署更新的程式碼基底。 更新程式碼基底以在目標版AEM中運作的步驟，請參閱 [「升級代碼和自定義」頁](/help/sites-deploying/upgrading-code-and-customizations.md).
 
-## 執行升級後檢查和故障排除{#perform-post-upgrade-check-troubleshooting}
+## 執行升級後檢查和疑難排解 {#perform-post-upgrade-check-troubleshooting}
 
-請參閱[升級後檢查和疑難排解](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)。
+請參閱 [升級後檢查和疑難排解](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).

@@ -8,14 +8,18 @@ contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 exl-id: 6172d936-9348-4f3f-a437-6465dd156f3b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 20%
+source-wordcount: '914'
+ht-degree: 19%
 
 ---
 
 # OSGi和AEM Forms JEE工作流程上以表單為中心的AEM工作流程的動作和功能  {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## AEM收件匣和HTML工作區 {#aem-inbox-and-html-workspace}
 
@@ -108,7 +112,7 @@ OSGi和AEM Forms JEE工作流程上的表單導向AEM工作流程(JEE流程管�
    <td>AEM Forms JEE工作流程</td> 
   </tr>
   <tr>
-   <td>調適型表單</td> 
+   <td>最適化表單</td> 
    <td>支援</td> 
    <td>支援<br /> </td> 
   </tr>

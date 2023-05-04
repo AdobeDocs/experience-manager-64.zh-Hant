@@ -1,8 +1,8 @@
 ---
 title: 工作區概觀
-seo-title: 工作區概觀
+seo-title: Overview of Workspace
 description: 工作區可讓使用者開始、參與及追蹤業務流程。 讓我們進一步了解工作區。
-seo-description: 工作區可讓使用者開始、參與及追蹤業務流程。 讓我們進一步了解工作區。
+seo-description: The workspace lets users start, participate in, and track business processes. Let us learn more about the workspace.
 uuid: 25374641-a70b-485a-8d34-5d7b156c08e8
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
 exl-id: f33f9ef9-95a7-47cb-8d13-19f24f1b463e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
+source-wordcount: '162'
+ht-degree: 3%
 
 ---
 
-# 工作區概述{#overview-of-workspace}
+# 工作區概觀 {#overview-of-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 工作區可讓使用者開始、參與及追蹤業務流程。
 

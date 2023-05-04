@@ -1,17 +1,12 @@
 ---
-source-git-commit: 787f33c60cbe2affdea0af732289d2663ad97bfb
+source-git-commit: 89ad0c9a050076678ce8a801d9f9af4ea508bd39
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '84'
-ht-degree: 0%
+source-wordcount: '68'
+ht-degree: 7%
 
 ---
 # Adobe Experience Manager 6.4檔案
 
-這是Adobe Experience Manager 6.4檔案的儲存庫。 本檔案涵蓋安裝、管理、編寫使用以及如何自訂AEM。
+此為Adobe Experience Manager 6.4檔案的存放庫。 本檔案涵蓋安裝、管理、製作使用，以及如何自訂AEM。
 
-歡迎您對本檔案的貢獻。 請參閱下列資源：
-
-* [compiting.](contributing.md) md有關如何對文檔進行貢獻的概述。
-* [guidelines.](guidelines.md) md有關稿件中預期內容以及如何編寫檔案稿件的概述。
-* [行為准則。](code-of-conduct.md) md有關我們在您參與本檔案專案時預期的行為標準的概述。
+AEM 6.4已到延伸支援的結束，因此本檔案不再更新，且此存放庫已封存。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).

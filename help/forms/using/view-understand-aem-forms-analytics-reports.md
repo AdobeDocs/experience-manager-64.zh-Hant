@@ -1,34 +1,38 @@
 ---
 title: 檢視並了解AEM Forms分析報表
-seo-title: 檢視並了解AEM Forms分析報表
+seo-title: View and understand AEM Forms analytics reports
 description: AEM Forms與Adobe Analytics整合，提供您已發佈適用性表單的摘要和詳細分析。
-seo-description: AEM Forms與Adobe Analytics整合，提供您已發佈適用性表單的摘要和詳細分析。
+seo-description: AEM Forms integrates with Adobe Analytics and provides you summary and detailed analytics about your published adaptive forms.
 uuid: 193f472d-4aa3-4c31-b3c7-b5a2957dfb3d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
 exl-id: 0483b6ed-676a-4272-a00e-23d53a979b07
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 0%
+source-wordcount: '1086'
+ht-degree: 2%
 
 ---
 
-# 檢視並了解AEM Forms分析報表{#view-and-understand-aem-forms-analytics-reports}
+# 檢視並了解AEM Forms分析報表 {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms與Adobe Analytics整合，可讓您擷取及追蹤已發佈表單和檔案的效能量度。 分析這些量度的目的，是根據讓表單或檔案更實用所需的變更資料，做出明智的決策。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-## 設定分析{#setting-up-analytics}
+Adobe Experience Manager Forms與Adobe Analytics整合，可讓您擷取及追蹤已發佈表單和檔案的效能量度。 分析這些指標背後的目標是根據有關使表單或文件更有用所需的變更資料做出明智的決策。
 
-AEM Forms中的分析功能屬於AEM Forms附加套件的一部分。 有關安裝附加軟體包的資訊，請參閱[安裝和配置AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md)。
+## 設定分析 {#setting-up-analytics}
 
-除了附加套件之外，您還需要Adobe Analytics帳戶。 如需解決方案的相關資訊，請參閱[Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)。
+AEM Forms中的分析功能屬於AEM Forms附加套件的一部分。 如需安裝附加套件的詳細資訊，請參閱 [安裝和設定AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
-取得AEM Forms附加元件套件和Adobe Analytics帳戶後，請整合Adobe Analytics帳戶與AEM Forms，並啟用對表單或檔案的追蹤，如[設定分析和報表](/help/forms/using/configure-analytics-forms-documents.md)所述。
+除了附加套件之外，您還需要Adobe Analytics帳戶。 如需解決方案的相關資訊，請參閱 [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-## 如何記錄用戶交互資訊{#how-user-interaction-information-is-recorded}
+取得AEM Forms附加元件套件和Adobe Analytics帳戶後，請將Adobe Analytics帳戶與AEM Forms整合，並啟用表單或檔案的追蹤，如 [設定分析和報表](/help/forms/using/configure-analytics-forms-documents.md).
+
+## 如何記錄使用者互動資訊 {#how-user-interaction-information-is-recorded}
 
 使用者與表單互動時，會記錄互動內容並傳送至Analytics伺服器。 下列清單指出各種使用者活動的伺服器呼叫：
 
@@ -46,25 +50,25 @@ AEM Forms中的分析功能屬於AEM Forms附加套件的一部分。 有關安�
 >
 >這份清單並非詳盡無遺。
 
-## 檢視分析報表{#summary-report}
+## 檢視分析報表 {#summary-report}
 
 執行下列步驟來檢視分析報表：
 
-1. 在`https://[hostname]:[port]`登入AEM入口網站
-1. 按一下「**Forms > Forms與檔案**」。
+1. 登入AEM入口網站： `https://[hostname]:[port]`
+1. 按一下 **Forms > Forms與檔案**.
 
 1. 選取您要檢視分析報表的表單。
-1. 選取&#x200B;**更多> Analytics報表**。
+1. 選擇 **更多> Analytics報表**.
 
 ![analyticsreport](assets/analyticsreport.png)
 
-**A.** Analytics報表命令
+**答：** Analytics報表命令
 
 AEM Forms會針對表單和表單中每個面板顯示analytics報表，如下所示。
 
 ![最適化表單的摘要報表](assets/analyticsdashboard_callout.png)
 
-**A.** 轉 **換B.** 表單層級摘 **要C.** 面板層級摘要 **D.** 訪客的瀏覽器 — 篩選 **E.** 訪客的OS — 篩選 **F.** 訪客的語言 — 篩選
+**答：** 轉換 **B.** 表單層級摘要 **C.** 面板層級摘要 **D.** 訪客的瀏覽器 — 篩選器 **E.** 訪客作業系統 — 篩選器 **F.** 訪客語言 — 篩選器
 
 依預設，會顯示最近7天的分析報表。 您可以檢視最近15天、最近1個月等的報表，或指定日期範圍。
 
@@ -74,7 +78,7 @@ AEM Forms會針對表單和表單中每個面板顯示analytics報表，如下�
 
 ![日期範圍](assets/date-range.png)
 
-## 適用性和HTML5表單的轉換圖表{#conversions-graph-for-adaptive-and-html-forms}
+## 最適化和HTML5表單的轉換圖表 {#conversions-graph-for-adaptive-and-html-forms}
 
 表單層級轉換圖表可讓您深入分析表單在下列關鍵績效指標(KPI)上的表現情形：
 
@@ -84,31 +88,31 @@ AEM Forms會針對表單和表單中每個面板顯示analytics報表，如下�
 
 ![轉換圖](assets/conversion-graph.png)
 
-## 適用性表單和HTML5表單的Analytics報表{#analytics-report-for-adaptive-and-html-forms}
+## 適用於最適化和HTML5表單的Analytics報表 {#analytics-report-for-adaptive-and-html-forms}
 
 表單層級摘要區段可讓您深入分析表單在下列關鍵績效指標(KPI)上的表現情形：
 
-* **平均填充時間**:填寫表單的平均逗留時間。當使用者花時間在表單上但未提交時，該時間不會納入此計算中。
+* **平均填充時間**:填寫表單的平均逗留時間。 當使用者花時間在表單上但未提交時，該時間不會納入此計算中。
 * **轉譯**:表單呈現或開啟的次數
 
 * **草稿**:表單已儲存為草稿的次數
 * **提交**:提交表單的次數
 * **中止**:使用者開始填寫表單後未填妥表單而離開的次數
-* **不重複訪客**:不重複訪客呈現表單的次數。如需獨特訪客的詳細資訊，請參閱[獨特訪客、造訪和客戶行為](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)。
+* **不重複訪客**:不重複訪客呈現表單的次數。 如需不重複訪客的詳細資訊，請參閱 [不重複訪客、造訪和客戶行為](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
 ![擴充的表單層級摘要分析報表](assets/analytics-report.png)
 
-## 面板報告{#bottom-summary-report}
+## 面板報表 {#bottom-summary-report}
 
 面板層級摘要區段提供表單中每個面板的下列資訊：
 
 * **平均填充時間**:面板平均逗留時間，無論是否提交表單
 
-* **遇到錯誤**:使用者在面板欄位上遇到的平均錯誤數。「遇到的錯誤」是透過將欄位中的總錯誤除以表單的轉譯次數而得。
+* **遇到錯誤**:使用者在面板欄位上遇到的平均錯誤數。 「遇到的錯誤」是透過將欄位中的總錯誤除以表單的轉譯次數而得。
 
-* **存取的說明**:使用者存取面板中欄位之內容內說明的平均次數。「已存取幫助」的到達方式是將欄位的「幫助」被存取的總次數除以表單的轉譯次數。
+* **已訪問的幫助**:使用者存取面板中欄位之內容內說明的平均次數。 「已存取幫助」的到達方式是將欄位的「幫助」被存取的總次數除以表單的轉譯次數。
 
-### 詳細面板報告{#detailed-panel-report}
+### 詳細面板報告 {#detailed-panel-report}
 
 您也可以按一下「面板報表」中面板的名稱，以檢視每個面板的詳細資訊。
 
@@ -120,17 +124,17 @@ AEM Forms會針對表單和表單中每個面板顯示analytics報表，如下�
 
 * **時間報表** （預設）:顯示填寫面板中每個欄位所花費的秒數
 * **錯誤報告**:顯示使用者在填入欄位時遇到的錯誤數
-* **說明報告**:存取特定欄位的說明次數
+* **說明報表**:存取特定欄位的說明次數
 
 如果有多個面板，您可以在這些面板之間導覽。
 
-### 篩選器：瀏覽器、作業系統和語言{#filters-browser-os-and-language}
+### 篩選器：瀏覽器、作業系統和語言 {#filters-browser-os-and-language}
 
 「瀏覽器分送」、「作業系統分送」和「語言分送」表格會依照表單使用者的瀏覽器、作業系統和語言，顯示轉譯、訪客和提交內容。 預設情況下，這些表最多顯示5個條目。 您可以按一下「顯示更多」來顯示更多項目，按一下「顯示更少」來返回一般的五個或更少項目。
 
-若要進一步篩選分析資料，您可以按一下任何表格中的項目。 例如，如果您在「瀏覽器分送」表格中按一下Google Chrome，則報表會再次呈現，並包含與Google Chrome瀏覽器相關的資料，如下所示：
+若要進一步篩選分析資料，您可以按一下任何表格中的項目。 例如，若您在「瀏覽器分送」表格中按一下Google Chrome，報表會再次呈現，並包含與Google Chrome瀏覽器相關的資料，如下所示：
 
-![套用至Analytics報表的篩選 — Google Chrome  ](assets/filter.png)
+![套用至Analytics報表的篩選 — Google Chrome ](assets/filter.png)
 
 如果您在套用篩選器後檢視面板報表，則面板報表資料也會根據套用的篩選器顯示。
 
@@ -142,8 +146,8 @@ AEM Forms會針對表單和表單中每個面板顯示analytics報表，如下�
 
 ![關閉按鈕以移除套用的篩選](assets/close-filter.png)
 
-## A/B測試{#a-b-testing}
+## A/B測試 {#a-b-testing}
 
 如果您已啟用A/B測試並為表單進行設定，報表頁面會有一個下拉式清單，您可以用來顯示A/B測試報表。 A/B測試報表會依照您的設定，顯示兩個表單版本的比較效能。
 
-如需A/B測試的詳細資訊，請參閱[建立和管理適用性表單的A/B測試](/help/forms/using/ab-testing-adaptive-forms.md)。
+如需A/B測試的詳細資訊，請參閱 [建立和管理最適化表單的A/B測試](/help/forms/using/ab-testing-adaptive-forms.md).

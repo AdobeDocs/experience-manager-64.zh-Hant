@@ -1,8 +1,8 @@
 ---
 title: 整合登錄頁面與Adobe Analytics
-seo-title: 整合登錄頁面與Adobe Analytics
+seo-title: Integrating Landing Pages with Adobe Analytics
 description: 了解如何將登錄頁面與Adobe Analytics整合。
-seo-description: 了解如何將登錄頁面與Adobe Analytics整合。
+seo-description: Learn how to integrate landing pages with Adobe Analytics.
 uuid: 8f6672d1-497f-4ccb-b3cc-f6120fc467ba
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: 2923ae94-375a-4c44-a08f-f992eb08000a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 0%
+source-wordcount: '412'
+ht-degree: 1%
 
 ---
 
-# 將登錄頁面與Adobe Analytics整合{#integrating-landing-pages-with-adobe-analytics}
+# 整合登錄頁面與Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM已透過下列呼叫動作(CTA)元件，將登錄頁面解決方案與[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst)整合：
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+AEM已將登錄頁面解決方案與 [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) 使用下列動作呼叫(CTA)元件：
 
 1. 點進元件
 1. 圖形連結元件
@@ -28,11 +32,11 @@ AEM已透過下列呼叫動作(CTA)元件，將登錄頁面解決方案與[Adobe
 
 ## 必備條件 {#prerequisites}
 
-Adobe建議您進行[現有的AEM-Adobe Analytics整合](/help/sites-administering/adobeanalytics.md)，了解此整合的運作方式。
+Adobe建議您執行 [現有AEM-Adobe Analytics整合](/help/sites-administering/adobeanalytics.md) 以了解此整合的運作方式。
 
-## 可用於映射{#components-available-for-mapping}的元件
+## 可用於映射的元件 {#components-available-for-mapping}
 
-在AEM中，顯示於sidekick中的&#x200B;**動作呼叫**&#x200B;元件 — **點進連結**&#x200B;和&#x200B;**GraphicalLink** — 可對應至Adobe Analytics變數。
+在AEM中， **行動要求** 元件 —  **ClickThroughLink** 和 **GraphicalLink**  — 顯示在sidekick的此處，可對應至Adobe Analytics變數。
 
 ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 
@@ -89,7 +93,7 @@ Adobe建議您進行[現有的AEM-Adobe Analytics整合](/help/sites-administeri
 </table>
 
 1. 從內容尋找器將這些公開的屬性對應至任何Adobe Analytics變數。 架構現已可供使用。
-1. 您現在可以建立新的登錄頁面，或開啟具有現有CTA元件的現有登錄頁面，然後從sidekick按一下&#x200B;**Page Properties**&#x200B;中的&#x200B;**Cloud Services**&#x200B;標籤(在觸控最佳化的UI中，選取&#x200B;**開啟屬性**，然後按一下&#x200B;**Cloud Services**)，並設定框架以與登錄頁面搭配使用。 從下拉式清單中選取架構。
+1. 您現在可以建立新的登錄頁面，或使用現有的CTA元件開啟現有的登錄頁面，然後按一下 **Cloud Services** 標籤 **頁面屬性** 從sidekick(在觸控最佳化的UI中，選取 **開啟屬性** 按一下 **Cloud Services**)及設定框架以搭配登陸頁面使用。 從下拉式清單中選取架構。
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 

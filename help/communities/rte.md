@@ -1,8 +1,8 @@
 ---
 title: RTF編輯器要點
-seo-title: RTF編輯器要點
+seo-title: Rich Text Editor Essentials
 description: RTF編輯器功能概觀
-seo-description: RTF編輯器功能概觀
+seo-description: Rich text Editor feature overview
 uuid: f96015cc-114b-431a-a5ba-dc195c2a0b83
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,28 +10,32 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
 exl-id: d236a8d3-20ad-4568-a7c2-87d146aa0532
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 3%
+source-wordcount: '266'
+ht-degree: 5%
 
 ---
 
-# RTF編輯器要點{#rich-text-editor-essentials}
+# RTF編輯器要點 {#rich-text-editor-essentials}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 RTF編輯器(RTE)提供使用標籤輸入文本的功能。
 
-針對Communities元件，雖然類似於製作環境](../../help/sites-authoring/rich-text-editor.md)中的[ RTF編輯器，但會影響在發佈環境中輸入的文字。
+對於Communities元件，與 [製作環境中的RTF編輯器](../../help/sites-authoring/rich-text-editor.md)，則會影響在發佈環境中輸入的文字。
 
 ![chlimage_1-410](assets/chlimage_1-410.png)
 
-## 啟用RTF編輯器{#enabling-rich-text-editor}
+## 啟用RTF編輯器 {#enabling-rich-text-editor}
 
-允許使用者產生內容(UGC)的社群元件可啟用以允許RTE。 視元件是否已新增至頁面或包含在[函式](functions.md)中而定，RTE可能預設為啟用或不啟用。
+允許使用者產生內容(UGC)的社群元件可啟用以允許RTE。 視元件已新增至頁面或包含在 [函式](functions.md),RTE預設為啟用或不啟用。
 
-如果未啟用，只需輸入[作者編輯模式](sites-console.md#authoring-site-content)，選擇要編輯的元件，然後選擇`Rich Text Editor`複選框。
+如果未啟用，只需輸入 [作者編輯模式](sites-console.md#authoring-site-content)，選取要編輯的元件，然後選取 `Rich Text Editor` 核取方塊。
 
 RTE適用於下列Communities元件：
 
@@ -46,23 +50,23 @@ RTE適用於下列Communities元件：
 
 ## 自訂 {#customization}
 
-RTF編輯器可自訂，因為實作是以[CKEditor](https://www.ckeditor.com/)為基礎。
+RTF編輯器可自訂，因為實作是根據 [CKEditor](https://www.ckeditor.com/).
 
-Communities元件的當前配置位於`cq.social.  scf   clientlib`，位於
+Communities元件的目前設定位於 `cq.social.  scf   clientlib`，位於
 
 `/libs/clientlibs/social/commons/scf/ckrte.js`
 
 不建議修改cq.social.scf clientlib，因為日後的升級可能會覆寫任何編輯。
 
-### 自訂範例：內嵌連結{#example-customization-inline-links}
+### 自訂範例：內嵌連結 {#example-customization-inline-links}
 
 基於安全性考慮，預設情況下，向成員呈現的富文本表徵圖集中不包含超連結選項。 在UGC中允許href時，其雜訊能力較強。
 
 要將超連結選項添加到工具欄，請執行以下操作：
 
-* 添加名為&quot; `links`&quot;的工具欄
+* 添加名為「 `links`&quot;
    * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
-* 選擇&#x200B;**[!UICONTROL 保存全部]**
+* 選擇 **[!UICONTROL 全部儲存]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}
 

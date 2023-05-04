@@ -1,8 +1,8 @@
 ---
 title: 體驗已發佈的網站
-seo-title: 體驗已發佈的網站
+seo-title: Experience the Published Site
 description: 瀏覽已發佈的啟用網站
-seo-description: 瀏覽已發佈的啟用網站
+seo-description: Browse to a published site for enablement
 uuid: 1bfefa8a-fd9c-4ca8-b2ff-add79776c8ae
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,28 +10,32 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 exl-id: bdf91013-2136-464a-a637-a3047144ec98
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 1%
+source-wordcount: '1262'
+ht-degree: 3%
 
 ---
 
-# 體驗已發佈的網站{#experience-the-published-site}
+# 體驗已發佈的網站 {#experience-the-published-site}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 
 **[⇐建立並指派啟用資源](resource.md)**
 
-## 瀏覽到發佈時的新網站{#browse-to-new-site-on-publish}
+## 在發佈時瀏覽到新站點 {#browse-to-new-site-on-publish}
 
-現在，新建立的社群網站及其啟用資源和學習路徑已經發佈完畢，您就可以體驗啟用教學課程網站。
+現在新建立的社群網站及其啟用資源和學習路徑已經發佈完畢，您就可以體驗啟用教學課程網站。
 
 首先，瀏覽至建立網站時顯示的URL，然後在發佈伺服器上，例如
 
 * 作者URL = [http://localhost:4502/content/sites/enable/en.html](http://localhost:4502/content/sites/enable/en.html)
 * 發佈URL = [http://localhost:4503/content/sites/enable/en.html](http://localhost:4503/content/sites/enable/en.html)
 
-若已設定[預設首頁](enablement-create-site.md#changethedefaulthomepage)，則只要瀏覽至[http://localhost:4503/](http://localhost:4503/)即應啟動網站。
+若 [預設首頁已設定](enablement-create-site.md#changethedefaulthomepage)，然後只要瀏覽至 [http://localhost:4503/](http://localhost:4503/) 應該啟動網站。
 
 首次到達已發佈的網站時，網站訪客通常尚未登入，且為匿名。
 
@@ -39,44 +43,44 @@ ht-degree: 1%
 
 ![chlimage_1-433](assets/chlimage_1-433.png)
 
-## 匿名網站訪客{#anonymous-site-visitor}
+## 匿名網站訪客 {#anonymous-site-visitor}
 
 此私人啟用社群網站的登入頁面會立即顯示匿名網站訪客。 請注意，您無法自行註冊或登入Facebook或Twitter。
 
-請注意，首頁顯示四個功能表項目：`Assignments, Ski Catalog, What's New`和`Discussions`，但若未登入，則無法達到。
+請注意，首頁顯示四個功能表項目： `Assignments, Ski Catalog, What's New` 和 `Discussions`，但若未登入，則無法取得任何內容。
 
 >[!NOTE]
 >
 >可授予對啟用網站的匿名存取權，而不允許網站訪客自行註冊。\
->如果啟用資源設為`show in catalog`和`allow anonymous access`，則匿名網站訪客可以在目錄中檢視資源。
+>如果啟用資源設為 `show in catalog` 和 `allow anonymous access`，則匿名網站訪客可以檢視目錄中的資源。
 
-### 在JCR {#prevent-anonymous-access-on-jcr}上防止匿名訪問
+### 在JCR上防止匿名訪問 {#prevent-anonymous-access-on-jcr}
 
-已知限制會透過jcr內容和json向匿名訪客公開社群網站內容，不過已針對網站內容停用&#x200B;**[!UICONTROL 允許匿名存取]**。 不過，您可以使用Sling限制來控制此行為，作為因應措施。
+已知限制會透過jcr內容和json向匿名訪客公開社群網站內容，不過 **[!UICONTROL 允許匿名訪問]** 已針對網站內容停用。 不過，您可以使用Sling限制來控制此行為，作為因應措施。
 
 若要保護您的社群網站內容，不讓匿名使用者透過jcr內容和json存取，請遵循下列步驟：
 
-1. 在AEM製作例項上，前往https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html。
+1. 在AEM Author例項上，前往https://&lt;host>:&lt;port>/editor.html/content/site/&lt;sitename>.html。
 
    >[!NOTE]
    >
    >請勿前往本地化網站。
 
-1. 前往&#x200B;**[!UICONTROL 頁面屬性]**。
+1. 前往 **[!UICONTROL 頁面屬性]**.
 
    ![page-properties-1](assets/page-properties-1.png)
 
-1. 前往&#x200B;**[!UICONTROL 進階]**&#x200B;標籤。
-1. 啟用&#x200B;**[!UICONTROL 身份驗證要求]**。
+1. 前往 **[!UICONTROL 進階]** 標籤。
+1. 啟用 **[!UICONTROL 驗證需求]**.
 
    ![site-authentication-1](assets/site-authentication-1.png)
 
-1. 新增登入頁面的路徑。 例如， `/content/......./GetStarted`。
+1. 新增登入頁面的路徑。 例如， `/content/......./GetStarted`.
 1. 發佈頁面。
 
-## 已註冊成員{#enrolled-member}
+## 已註冊成員 {#enrolled-member}
 
-此體驗依賴於`Riley Taylor`和`Sidney Croft`正在建立的[](enablement-setup.md#publishcreateenablementmembers)和[被分配](resource.md#settings)*滑雪課程*&#x200B;學習路徑的用戶，通過其&#x200B;*社區滑雪課程*&#x200B;組的成員身份。
+此體驗需仰賴使用者 `Riley Taylor` 和 `Sidney Croft` being [已建立](enablement-setup.md#publishcreateenablementmembers) 和 [已分配](resource.md#settings) 到 *滑雪課* 通過會員身份學習 *社區滑雪班* 群組。
 
 登入方式
 
@@ -105,21 +109,21 @@ ht-degree: 1%
 
 ![chlimage_1-435](assets/chlimage_1-435.png)
 
-選取&#x200B;*滑雪課程*&#x200B;將顯示學習路徑所參考的兩個啟用資源。
+選取 *滑雪課* 會顯示學習路徑所參考的兩個啟用資源。
 
 ![chlimage_1-436](assets/chlimage_1-436.png)
 
-選擇&#x200B;*滑雪課程1*&#x200B;將開啟啟用資源的詳細資訊頁面。
+選取 *滑雪課程1* 將開啟啟用資源的詳細資訊頁面。
 
-從詳細資訊頁，成員能夠學習[rate](rating.md)課程並添加[注釋](comments.md)。 任何成員活動都會反映在網站的「新增功能」區段中。
+從詳細資訊頁面，成員可以學習， [比率](rating.md) 課程和新增 [評論](comments.md). 任何成員活動都會反映在網站的「新增功能」區段中。
 
 與啟用資源的互動會顯示在作者環境中可存取的「報表」區段中。
 
 ![chlimage_1-437](assets/chlimage_1-437.png)
 
-### 滑雪目錄{#ski-catalog}
+### 滑雪目錄 {#ski-catalog}
 
-「滑雪目錄」頁面是使用`Tutorial`命名空間中的標籤標籤的啟用資源目錄。 兩個&#x200B;*滑雪課程*&#x200B;資源使用`Skiing`標籤進行標籤，這樣，如果選取`All`或`Tutorial: Sports / Skiing`以外的任何標籤，則不顯示任何內容。
+「滑雪目錄」頁面是使用 `Tutorial` 命名空間。 兩個 *滑雪課* 資源會加上標籤 `Skiing` 標籤，如果 `All` 或 `Tutorial: Sports / Skiing` 選取時，不會顯示任何內容。
 
 如果未直接或通過學習路徑為成員分配啟用資源，則可以與目錄內的啟用資源交互，並通過注釋和評級提供反饋。
 
@@ -127,9 +131,9 @@ ht-degree: 1%
 
 ### 討論 {#discussions}
 
-除了對啟用資源（[當啟用](enablement-create-site.md#step33asettings)時）進行評分和評論外，建立`Enablement Tutorial`的社群網站範本還包括[論壇函式](functions.md#forum-function)(標題為`Discussions)`。
+除了對啟用資源評分和加以註解([啟用時間](enablement-create-site.md#step33asettings))，此群體網站範本 `Enablement Tutorial` 已建立包含 [論壇功能](functions.md#forum-function) (標題為 `Discussions)`.
 
-選取`Discussions`連結並張貼主題。
+選取 `Discussions`連結並張貼主題。
 
 登出並以Sidney Croft（西德尼/密碼）的身分登入並回覆問題，以及關注主題。
 
@@ -137,24 +141,24 @@ ht-degree: 1%
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-### 新功能 {#what-s-new}
+### 新增功能 {#what-s-new}
 
-`What's New`功能表項目是此社群網站結構中[活動資料流函式](functions.md#activity-stream-function)的標題。
+此 `What's New` 功能表項目是 [活動流函式](functions.md#activity-stream-function) 在此社區站點的結構中。
 
-仍以Sidney登入，請選取`What's New`連結以顯示活動。
+仍以Sidney的身分登入，請選取 `What's New` 連結以顯示活動。
 
 ![chlimage_1-440](assets/chlimage_1-440.png)
 
-## 受信任的社區成員{#trusted-community-member}
+## 受信任的社區成員 {#trusted-community-member}
 
-此體驗假設已指派` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)`協調者](enablement-create-site.md#moderation)和[資源連絡人](resource.md#settings)的角色。[
+此體驗假設 ` [Quinn Harper](enablement-setup.md#publishcreateenablementmembers)` 已指派 [版主](enablement-create-site.md#moderation) 和 [資源聯繫人](resource.md#settings).
 
 登入方式
 
 * `Username: quinn`
 * `Password: password`
 
-登錄後，請注意新的菜單項`Administration`出現，因為該成員被賦予版主角色。
+登入後，請注意有新的功能表項目， `Administration`，因為會員被賦予版主角色。
 
 ![chlimage_1-441](assets/chlimage_1-441.png)
 
@@ -162,24 +166,24 @@ ht-degree: 1%
 
 ### 管理 {#administration}
 
-現在，是由兩個使用者（`Riley Taylor`和`Sidney Croft. By s`）選取`Administration`連結來存取協調控制台的活動，Quinn可以使用[大量協調控制台](moderation.md)來協調其貼文。
+這是兩個學習者的活動， `Riley Taylor` 和 `Sidney Croft. By s`選擇 `Administration`連結以存取「協調控制台」，Quinn就能使用 [大量協調控制台](moderation.md) 以協調其貼文。
 
-選取側面板圖示會切換開啟用於搜尋社群內容的篩選器。
+選取側面板圖示，即可開啟用於搜尋社群內容的篩選器。
 
 將游標暫留在留言卡上會顯示協調動作。
 
 ![chlimage_1-442](assets/chlimage_1-442.png)
 
-## 作者報告{#reports-on-author}
+## 作者報告 {#reports-on-author}
 
 存取學習者報告和培訓資源有兩種方式。
 
-在作者上，導覽至&#x200B;**Communities, [Resources console](resources.md)**，管理啟用資源，並在選取社群網站後，便可產生報表
+在作者上，導覽至 **社區， [資源主控台](resources.md)**，可管理啟用資源，並在選取社群網站後，為產生報表
 
 * 所有啟用資源和學習路徑
 * 一條特定的啟用資源或學習路徑
 
-導覽至&#x200B;**Communities, [Reports console](reports.md)**，然後根據
+導覽至 **社區， [報表主控台](reports.md)**，並根據
 
 * 賦予啟用資源和學習路徑
 * 在特定時段內張貼至社群網站
@@ -196,53 +200,53 @@ ht-degree: 1%
    * 日曆
    * 日曆事件
 
-### 資源控制台{#resources-console}
+### 資源主控台 {#resources-console}
 
 只要進行一些活動並在發佈時與資源互動，就能檢視作者的報表。
 
 * 論作者
 * 使用管理權限登入
-* 從主功能表導覽至&#x200B;**[!UICONTROL 社群>資源]**
-* 選擇`Enablement Tutorial`站點
-* 選擇`Report`表徵圖以查看所有資源的摘要
-* 選擇資源，然後為該資源的報表選擇`Report`表徵圖
+* 從主功能表導覽至 **[!UICONTROL 社群>資源]**
+* 選取 `Enablement Tutorial` 網站
+* 選取 `Report`表徵圖，顯示所有資源的摘要
+* 選取資源，然後 `Report`圖示
 
 請注意，顯示Adobe Analytics資料可能為時過早，這可能需要1到12小時的時間才會顯示。 不過，基本的SCORM報表已可供使用。
 
-#### 滑雪課資源報告{#ski-lessons-resource-report}
+#### 滑雪課資源報告 {#ski-lessons-resource-report}
 
 ![chlimage_1-443](assets/chlimage_1-443.png)
 
-#### 滑雪課程使用者報表{#ski-lessons-user-report}
+#### 滑雪課程使用者報表 {#ski-lessons-user-report}
 
-* 選擇&#x200B;**[!UICONTROL Communities >資源]**
+* 選擇 **[!UICONTROL 社群>資源]**
 
-* 開啟卡片`Enablement Tutorial`
-* 開啟卡片`Ski Lessons`
+* 開卡 `Enablement Tutorial`
+* 開卡 `Ski Lessons`
 * `select Report, User Report`
 
 ![chlimage_1-444](assets/chlimage_1-444.png)
 
-### 報表控制台{#reports-console}
+### 報表主控台 {#reports-console}
 
 「報表」控制台可產生
 
-* **** 任何啟用社群網站的指派
-* **** 任何社群網站的檢視
-* **** 任何社群網站的貼文
+* **分配** 任何啟用社群網站
+* **檢視** 適用於任何社群網站
+* **貼文** 適用於任何社群網站
 
 對於分配報表：
 
 * 論作者
 * 使用管理權限登入
-* 導覽至&#x200B;**[!UICONTROL Communities > Reports > Assignments Report]**
-* 從下拉菜單中選擇&#x200B;**[!UICONTROL 站點]**（選擇`Enablement Tutorial`）
+* 導覽至 **[!UICONTROL Communities >報表>分配報表]**
+* 選取 **[!UICONTROL 網站]** 從下拉式功能表(選取 `Enablement Tutorial`)
 
-* 選擇&#x200B;**[!UICONTROL 組]**（選擇`Community Ski Class`）
+* 選擇 **[!UICONTROL 群組]** （選取） `Community Ski Class`)
 
-* 選擇&#x200B;**[!UICONTROL 分配]**（選擇`Ski Lessons`）
+* 選取 **[!UICONTROL 分配]** （選取） `Ski Lessons`)
 
-* 選擇&#x200B;**[!UICONTROL 生成]**
+* 選擇 **[!UICONTROL 產生]**
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -250,14 +254,14 @@ ht-degree: 1%
 
 * 論作者
 * 使用管理權限登入
-* 導覽至&#x200B;**[!UICONTROL Communities > Reports > Views Report]**
-* 從下拉菜單中選擇&#x200B;**[!UICONTROL 站點]**（選擇`Enablement Tutorial`）
+* 導覽至 **[!UICONTROL 社群>報表>檢視報表]**
+* 選取 **[!UICONTROL 網站]** 從下拉式功能表(選取 `Enablement Tutorial`)
 
-* 選擇&#x200B;**[!UICONTROL 內容類型]**（選擇`all`）
+* 選擇 **[!UICONTROL 內容類型]** （選取） `all`)
 
-* 選擇&#x200B;**[!UICONTROL 日期範圍]**（選擇`Last 7 days`）
+* 選取 **[!UICONTROL 日期範圍]** （選取） `Last 7 days`)
 
-* 選擇&#x200B;**[!UICONTROL 生成]**
+* 選擇 **[!UICONTROL 產生]**
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 

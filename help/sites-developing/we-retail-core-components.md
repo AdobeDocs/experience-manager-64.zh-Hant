@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b77d0e6b-3005-4dba-8e88-70b4d04b1eba
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 3%
+source-wordcount: '571'
+ht-degree: 4%
 
 ---
 
 # 在We.Retail中試用核心元件{#trying-out-core-components-in-we-retail}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 核心元件是現代化、有彈性的元件，具有輕鬆的擴充性，並可輕鬆整合至您的專案。 核心元件是以數種主要設計原則為基礎而建立，例如HTL、可用性、現成可用性、可設定性、版本設定和擴充性。 We.Retail已建置在核心元件上。
 

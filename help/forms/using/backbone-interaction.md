@@ -1,34 +1,38 @@
 ---
 title: 骨幹互動
-seo-title: 骨幹互動
+seo-title: Backbone interaction
 description: 關於在AEM Forms工作區中使用骨幹JavaScript模型的概念資訊。
-seo-description: 關於在AEM Forms工作區中使用骨幹JavaScript模型的概念資訊。
+seo-description: Conceptual information about use of Backbone JavaScript models in AEM Forms workspace.
 uuid: c70da848-e514-42bc-a59b-44a7c00aa529
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d363eec3-172b-413e-9743-ed51804ea1e9
 exl-id: f726cb73-732c-4893-bdb5-10ddcf4a340a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 0%
+source-wordcount: '470'
+ht-degree: 1%
 
 ---
 
-# 骨幹交互{#backbone-interaction}
+# 骨幹互動 {#backbone-interaction}
 
-骨幹是一個庫，可幫助在Web應用程式中建立和遵循MVC體系結構。 骨幹的基本思想是將介面組織成邏輯視圖，由模型支援，每個模型在模型更改時可獨立更新，而無需重繪頁面。 有關骨幹的詳細資訊，請參閱[https://backbonejs.org](https://backbonejs.org/)。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+骨幹是一個庫，可幫助在Web應用程式中建立和遵循MVC體系結構。 骨幹的基本思想是將介面組織成邏輯視圖，由模型支援，每個模型在模型更改時可獨立更新，而無需重繪頁面。 有關骨幹的詳細資訊，請參見 [https://backbonejs.org](https://backbonejs.org/).
 
 一些重要概念如下：
 
-**骨幹** 模型包含資料，以及與此資料相關的大部分邏輯。
+**骨幹模型** 包含資料，以及與此資料相關的大部分邏輯。
 
-**骨** 乾視圖用於表示相應模型的狀態。骨幹視圖的行為實際上類似於控制器，監聽用戶介面事件（如用戶點擊）或模型事件（如資料更改），並酌情修改用戶介面。
+**骨幹視圖** 用於表示相應模型的狀態。 骨幹視圖的行為實際上類似於控制器，監聽用戶介面事件（如用戶點擊）或模型事件（如資料更改），並酌情修改用戶介面。
 
-**HTML范** 本包裝函式範本，其預留位置由模型填入。
+**HTML範本** 包裝模板，該模板中填充了佔位符。
 
-**AEM Forms** workspace包含數個個別元件。每個元件：
+**AEM Forms workspace** 包含數個個別元件。 每個元件：
 
 * 表示單個邏輯用戶介面元素。
 * 可以是類似元件的集合。

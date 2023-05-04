@@ -1,23 +1,27 @@
 ---
 title: 參考主題
 seo-title: Reference Themes
-description: 'AEM Forms提供可透過Software Distribution取得，且用來設定表單樣式的最適化表單主題。 '
+description: AEM Forms提供可透過Software Distribution取得，且用來設定表單樣式的最適化表單主題。
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 uuid: a39bc3da-0bb8-4f11-b0d5-9403cfc6e384
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 78d7d4b6-95dd-429b-870b-30aba5a3fea3
 exl-id: 6a298571-d6ff-473f-af58-a45a0c7e6175
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
 
 # 參考主題 {#reference-themes}
 
-[](/help/forms/using/themes.md) 它們可讓您在不深入了解CSS的情況下建立表單樣式。除了預設主題，您還可以安裝[AEM Forms附加元件套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)以取得下列主題：
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+[主題](/help/forms/using/themes.md) 讓您在不深入了解CSS的情況下建立表單樣式。 除了預設主題，您還可以安裝[AEM Forms附加元件套件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html):
 
 * 柏利
 * 執行
@@ -34,13 +38,13 @@ ht-degree: 0%
 
 此套件中包含的主題具有回應性，且這些主題中的樣式已針對行動裝置和案頭顯示器定義。 多種裝置上的現代瀏覽器，都能輕鬆演算以其中一種主題套用的表單。
 
-有關安裝包的詳細資訊，請參閱[如何使用包](/help/sites-administering/package-manager.md)。
+如需安裝套件的詳細資訊，請參閱 [如何使用套件](/help/sites-administering/package-manager.md).
 
 ## 柏利 {#beryl}
 
-Beryl主題由[We.Gov適用性表單](/help/forms/using/gov-reference-site-walkthrough.md)使用，並強調背景影像、透明度和大型平面表徵圖的使用。 在下方的螢幕擷圖中，您可以看到Beryl主題的外觀，以及它如何增強表單的樣式。
-![Beryl主](assets/beryl.png)
-[題按一下放大](assets/beryl-1.png)
+柏力爾主題由使用 [We.Gov最適化表單](/help/forms/using/gov-reference-site-walkthrough.md)，並強調背景影像、透明度和大型平面圖示的使用。 在下方的螢幕擷圖中，您可以看到Beryl主題的外觀，以及它如何增強表單的樣式。
+![柏利主題](assets/beryl.png)
+[按一下放大](assets/beryl-1.png)
 
 ## 執行 {#exec}
 

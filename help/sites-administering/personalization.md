@@ -1,8 +1,8 @@
 ---
-title: 個性化
-seo-title: 個性化
+title: 個人化
+seo-title: Personalization
 description: 了解AEM中的個人化。
-seo-description: 了解AEM中的個人化。
+seo-description: Learn about personalization in AEM.
 uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 841f54da-962a-4fa7-a295-571e2178ed23
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 1%
+source-wordcount: '1723'
+ht-degree: 2%
 
 ---
 
-# 個性化 {#personalization}
+# 個人化 {#personalization}
 
-## 什麼是個人化？{#what-is-personalization}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 什麼是個人化？ {#what-is-personalization}
 
 如今，網際網路、外聯網或內聯網網站上的內容量不斷增加。
 
@@ -54,11 +58,11 @@ ht-degree: 1%
 * 簡單篩選：根據用戶和/或組級別的預定義配置檔案進行選擇。
 * 協作/建議篩選：使用者行為會根據預先定義的規則進行註冊。 這些規則是基於與志同道合的個體所觀察到的行為。 收集的資訊用於定制向用戶顯示的資訊，特別是以建議的形式。
 
-## 如何及何時使用個人化？{#how-and-when-can-personalization-be-used}
+## 如何及何時使用個人化？ {#how-and-when-can-personalization-be-used}
 
 個人化在許多情況下都可使用，例如：
 
-### 內聯網頁{#intranet-pages}
+### 內部網頁 {#intranet-pages}
 
 * 內容可以根據用戶的位置、部門和/或角色來提供 — 該用戶已在內部網路中定義。
 * 根據可用的選擇，用戶可以進行進一步的選擇。
@@ -70,15 +74,15 @@ ht-degree: 1%
 * 向其市場中高度專業化的部分提供網站的公司，例如為醫生提供專門網站的製藥公司。
 * 提供網站以讓客戶檢視經常帳戶和帳單資訊的公司；例如電話提供商。
 
-### 銷售和發佈網站{#sales-site}
+### 銷售和分銷網站 {#sales-site}
 
 * 銷售和分銷網站(例如Amazon)可以結合使用者設定檔、使用者的銷售記錄和其瀏覽記錄，就使用者下一步可能感興趣的內容提供建議。
 
-### 搜索網站{#search-site}
+### 搜尋網站 {#search-site}
 
 * 許多主要的搜索引擎網站都有非常強大的分析工具，記錄用戶行為、他們使用的搜索詞以及他們實際訪問的網站。 然後，這將用於定制提供的內容，特別是在顯示廣告方面。
 
-### 要考慮的個人化和點的強項{#strengths-of-personalization-and-points-to-consider}
+### 個人化和要考慮的點的優點 {#strengths-of-personalization-and-points-to-consider}
 
 以下是應使用個人化的原因：
 
@@ -103,11 +107,11 @@ ht-degree: 1%
 #### 快取 {#caching}
 
 * 快取是使用者在效能和準確度方面會看到的一環，也就是網站提供個人化內容的速度，而且是否一律為最新狀態。
-* 快取是設定個人化時的重要考量，您必須花時間確保使用正確的實作。
+* 快取是設定個人化時的關鍵考量，您必須花時間確保使用正確的實作。
 
 >[!TIP]
 >
->在[效能最佳化檔案中，將進一步討論個人化對效能和相關快取主題的影響。](/help/sites-deploying/configuring-performance.md)
+>檔案中會進一步討論個人化對效能和相關快取主題的影響 [效能最佳化。](/help/sites-deploying/configuring-performance.md)
 
 ##### 規則的正確性 {#accuracy}
 
@@ -115,7 +119,7 @@ ht-degree: 1%
 * 最讓使用者感到沮喪的莫過於內容因規則邏輯不正確而被強制執行或拒絕。
 * 因此，必須仔細考慮規則 — 前景中會有使用者的需求。 這可能需要很多努力，而且不會被低估；定義業務規則通常比實作個人化時的技術努力更重要。
 
-#### 何時使用{#when-to-use}
+#### 使用時機 {#when-to-use}
 
 * 和網路上的許多功能一樣，個人化也應謹慎使用。 它的使用真的會讓使用者受益嗎？ 應該始終是第一個考慮 — 或者是否可以通過其他方法以更少的努力實現預期目標。 個人化可能會冒成為使用者設定一次（以了解其運作方式）和一次的功能的風險，因為這並沒有帶來真正的優勢。
 * 個人化只有在內容為動態（以某種方式依賴使用者）時才有意義。 如果所有使用者都看到相同的內容，就不需要個人化了。
@@ -124,7 +128,7 @@ ht-degree: 1%
 
 * 許多用戶都關心資料保護和安全。 尤其是關於追蹤其在網路上瀏覽時的行為時擷取的資料。
 
-## 個人化與存取{#personalization-and-access}
+## 個人化與存取 {#personalization-and-access}
 
 個人化應與存取控制分開考慮，但兩者確實相互關聯。
 
@@ -132,7 +136,7 @@ ht-degree: 1%
 
 不過，存取控制可用來建立個人化表單。 如果您允許或拒絕使用者存取內容，這將不可避免地影響使用者選擇可用的內容，進而個人化其網頁體驗。
 
-## 可用於個人化的元件{#components-available-for-personalization}
+## 可用於個人化的元件 {#components-available-for-personalization}
 
 AEM提供各種元件，供個人化使用。 有些可讓使用者登入及編輯其設定檔，有些則可讓使用者設定特定頁面：
 
@@ -167,11 +171,11 @@ AEM提供各種元件，供個人化使用。 有些可讓使用者登入及編�
 | 標記雲 | 標籤雲端，以圖形方式顯示您網站中標籤的選取項目 |
 | Teaser | 顯示在主要頁面上的內容（通常是影像），以「挑選」使用者存取基礎內容。 |
 
-## 個人化和社群內容{#personalization-and-community-content}
+## 個人化和社群內容 {#personalization-and-community-content}
 
-部落格、論壇和日曆等社群功能會產生社群內容，通常稱為使用者產生的內容(UGC)。 在由多個AEM例項([publish farm](/help/communities/topologies.md))組成的發佈環境中輸入UGC時，一個主要問題是如何在所有例項間同步UGC。
+部落格、論壇和日曆等社群功能會產生社群內容，通常稱為使用者產生的內容(UGC)。 在包含多個AEM例項的發佈環境中輸入UGC時( [發佈農場](/help/communities/topologies.md))，主要問題之一是如何在所有執行個體間同步UGC。
 
-若使用[AEM Communities 6.1](/help/communities/overview.md)擴充功能，此問題可透過使用UGC](/help/communities/working-with-srp.md)的[公用存放區來解決。 針對個人化，社群包含[社交登入](/help/communities/social-login.md) — 提供網站訪客登入Facebook和Twitter選項的功能。
+使用 [AEM Communities 6.1](/help/communities/overview.md) 擴充功能，此問題可透過 [UGC的常用儲存](/help/communities/working-with-srp.md). 針對個人化，社群包括 [社交登入](/help/communities/social-login.md)  — 提供網站訪客登入Facebook和Twitter的選項。
 
 若沒有Communities擴充功能，解決UGC一致性問題的各種方法為：
 

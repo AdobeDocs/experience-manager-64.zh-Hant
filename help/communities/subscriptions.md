@@ -1,8 +1,8 @@
 ---
 title: Communities 訂閱
-seo-title: Communities 訂閱
-description: '社群成員透過電子郵件與其他成員互動 '
-seo-description: '社群成員透過電子郵件與其他成員互動 '
+seo-title: Communities Subscriptions
+description: 社群成員透過電子郵件與其他成員互動
+seo-description: Community members interact with other members through email
 uuid: a4b98769-c219-4e18-8e80-9a806ab979ff
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,48 +11,52 @@ content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 role: Admin
 exl-id: 8a756328-0405-49b7-b94d-3dd5a87c782a
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 1%
+source-wordcount: '387'
+ht-degree: 3%
 
 ---
 
 # Communities 訂閱 {#communities-subscriptions}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-自社群[FP1](deploy-communities.md#latestfeaturepack)起，社群成員可透過電子郵件使用稱為訂閱的功能與社群互動。
+## 概觀 {#overview}
 
-訂閱類似於[notifications](notifications.md)，因為成員在遵循部落格文章、論壇主題或QnA問題時可以訂閱。
+As of Communities [FP1](deploy-communities.md#latestfeaturepack)，社群成員可能會使用稱為訂閱的功能，透過電子郵件與社群互動。
+
+訂閱類似於 [通知](notifications.md) 在關注部落格文章、論壇主題或QnA問題時，可以訂閱。
 
 訂閱與通知的區別在於：
 
 * 跟隨其他成員時，成員不得訂閱
-* 成員執行的唯一操作是選擇`Email Subscriptions`
+* 成員只需選擇 `Email Subscriptions` 追隨
 * 設定電子郵件回覆時，成員只要回覆收到的電子郵件，即可有效地張貼內容
 
-### 需求 {#requirements}
+### 要求 {#requirements}
 
 **設定電子郵件**
 
 必須設定電子郵件，訂閱才能正常運作，成員才能透過電子郵件回覆。
 
-有關設定電子郵件的說明，請參閱[配置電子郵件](email.md)。
+如需設定電子郵件的指示，請參閱 [設定電子郵件](email.md).
 
 **啟用訂閱與追蹤**
 
-必須配置元件，以啟用以下訂閱&#x200B;*和*。 允許訂閱的功能包括[blog](blog-feature.md)、[forum](forum.md)和[QnA](working-with-qna.md)。
+必須配置元件以啟用訂閱 *和* 下。 允許訂閱的功能為 [部落格](blog-feature.md), [論壇](forum.md) 和 [QnA](working-with-qna.md).
 
 ## 來自下列項目的訂閱 {#subscriptions-from-following}
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
-**Follow**&#x200B;按鈕提供了一種方法，可以將條目作為活動、訂閱和/或通知跟蹤。 每次選擇&#x200B;**Follow**&#x200B;按鈕時，都可以開啟或關閉選擇。
+此 **追隨** 按鈕提供可在活動、訂閱和/或通知後跟隨項目的方法。 每次 **追隨** 按鈕，則可以開啟或關閉選取項。
 
-如果選擇了下列任何方法，則按鈕的文本將更改為&#x200B;**Following**。 為方便起見，可以選取`Unfollow All`來關閉所有方法。
+如果選取下列任何方法，按鈕的文字會變更為 **追隨**. 為方便起見，您可以選擇 `Unfollow All` 切換所有方法。
 
-只有當論壇、QnA或部落格配置為啟用電子郵件訂閱時，**Follow**&#x200B;按鈕才會包含`Email Subscriptions`選項。 此按鈕隨即顯示
+此 **追隨** 按鈕將包含 `Email Subscriptions` 選項（僅當將論壇、QnA或部落格配置為啟用電子郵件訂閱時）。 此按鈕隨即顯示
 
 * 在啟用的論壇、QnA或部落格的主功能頁面上
 
@@ -64,12 +68,12 @@ ht-degree: 1%
 
 ## 透過電子郵件回覆 {#reply-by-email}
 
-當電子郵件設定為[以通過電子郵件](email.md#configure-polling-importer)回復時，訂閱的成員將收到一封包含已發佈內容的電子郵件和指向線上內容的連結。
+電子郵件為 [已設定為以電子郵件回覆](email.md#configure-polling-importer)，訂閱的成員將會收到一封包含已張貼內容的電子郵件，以及線上內容的連結。
 
 如果他們回覆電子郵件，他們在回覆中輸入的內容將顯示為線上內容。
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
-發佈回覆所需的時間由[輪詢匯入工具的更新間隔](email.md#configure-polling-importer)控制。
+張貼回覆所花的時間，由 [輪詢匯入工具的更新間隔](email.md#configure-polling-importer).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)

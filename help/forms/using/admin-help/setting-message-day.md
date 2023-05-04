@@ -10,32 +10,36 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 1%
+source-wordcount: '210'
+ht-degree: 3%
 
 ---
 
 # 設定當天的訊息 {#setting-the-message-of-the-day}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 您可以設定要顯示在工作區使用者介面的歡迎頁面上的訊息。
 
 如有需要，您可以使用AdobeFlash®播放器支援的HTML標籤來設定文字外觀的格式：
 
-* &lt;a> 錨點標籤&lt;/a>
-* &lt;b> 粗體標籤&lt;/b>
+* &lt;a> 錨點標籤
+* &lt;b> 粗體標籤
 * &lt;br> 中斷標籤
-* &lt;font> 字型標籤&lt;/font>
+* &lt;font> 字型標籤
 * &lt;img> 影像標籤
-* &lt;i> 斜體標籤&lt;/i>
+* &lt;i> 斜體標籤
 * &lt;li> 清單項目標籤
 * &lt;p> 段落標籤
-* &lt;span> 跨度標籤&lt;/span>
+* &lt;span> 跨度標籤
 * &lt;textformat> 文字格式標籤
-* &lt;u> 底線標籤&lt;/u>
+* &lt;u> 底線標籤
 
-如需支援標籤的詳細資訊，請參閱[Flex語言參考](https://flex.apache.org/)中TextField類別的`htmlText`屬性定義。
+如需支援標籤的詳細資訊，請參閱 `htmlText` 屬性 [Flex語言參考](https://flex.apache.org/).
 
 ## 設定當天的訊息 {#set-the-message-of-the-day}
 

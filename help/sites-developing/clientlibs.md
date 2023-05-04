@@ -1,5 +1,5 @@
 ---
-title: 使用用戶端端程式庫
+title: 使用用戶端程式庫
 seo-title: Using Client-Side Libraries
 description: AEM提供用戶端程式庫資料夾，可讓您將用戶端程式碼儲存在存放庫中、將其組織為類別，以及定義將每類程式碼提供給用戶端的時間和方式
 seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 exl-id: ba604611-03cb-4f97-8ff6-1a559b52263b
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2848'
+source-wordcount: '2884'
 ht-degree: 1%
 
 ---
 
-# 使用用戶端端程式庫{#using-client-side-libraries}
+# 使用用戶端程式庫{#using-client-side-libraries}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 現代網站嚴重依賴由複雜JavaScript和CSS程式碼驅動的用戶端處理。 組織並最佳化此程式碼的服務可能是個複雜的問題。
 

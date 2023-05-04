@@ -1,8 +1,8 @@
 ---
 title: 追蹤跳出的電子郵件
-seo-title: 追蹤跳出的電子郵件
+seo-title: Tracking Bounced Emails
 description: 當您傳送電子報給許多使用者時，清單中通常會有一些無效的電子郵件地址。 將電子報傳送到這些地址退回。 AEM能夠管理這些退信，而且在超出設定的退信計數器後，可以停止傳送電子報至這些地址。
-seo-description: 當您傳送電子報給許多使用者時，清單中通常會有一些無效的電子郵件地址。 將電子報傳送到這些地址退回。 AEM能夠管理這些退信，而且在超出設定的退信計數器後，可以停止傳送電子報至這些地址。
+seo-description: When you send a newsletter to many users, there are usually some invalid emails addresses in the list. Sending newsletters to those addresses bounce back. AEM is capable of managing those bounces and can stop sending newsletters to those addresses after the configured bounce counter is exceeded.
 uuid: 749959f2-e6f8-465f-9675-132464c65f11
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,34 +10,38 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 exl-id: 3be35bb8-3485-42a6-8195-c3e95d097856
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 0%
+source-wordcount: '747'
+ht-degree: 1%
 
 ---
 
 # 追蹤跳出的電子郵件{#tracking-bounced-emails}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 >[!NOTE]
 >
 >Adobe沒有計畫進一步增強對AEM SMTP服務所傳送已開啟/退信電子郵件的追蹤。
 >
->建議[運用Adobe Campaign及其AEM整合](/help/sites-administering/campaign.md)。
+>建議是 [運用Adobe Campaign及其AEM整合](/help/sites-administering/campaign.md).
 
 當您傳送電子報給許多使用者時，清單中通常會有一些無效的電子郵件地址。 將電子報傳送到這些地址退回。 AEM能夠管理這些退信，而且在超過設定的退信計數器後，可以停止傳送電子報給這些地址。 預設情況下，跳出率會設為3，但可設定。
 
 若要設定AEM以追蹤退信電子郵件，您必須設定AEM以輪詢收到退信電子郵件的現有信箱（通常是您指定傳送電子報的「寄件者」電子郵件地址）。 AEM會輪詢此收件匣，並匯入所有位於輪詢設定中指定之路徑下的電子郵件。 接著會觸發工作流程，以搜尋使用者內退回的電子郵件地址，並據此更新使用者的bounceCounter屬性值。 超過設定的最大跳出數後，會從電子報清單中移除該使用者。
 
-## 設定摘要匯入工具{#configuring-the-feed-importer}
+## 設定摘要匯入工具 {#configuring-the-feed-importer}
 
 摘要匯入工具可讓您重複從外部來源將內容匯入存放庫。 使用此摘要匯入工具的設定，AEM會檢查寄件者的信箱中是否有退信的電子郵件。
 
 若要設定摘要匯入工具以追蹤退回的電子郵件：
 
-1. 在&#x200B;**工具**&#x200B;中，選取摘要匯入工具。
+1. 在 **工具**，選取摘要匯入工具。
 
-1. 按一下&#x200B;**Add**&#x200B;以建立新配置。
+1. 按一下 **新增** 來建立新配置。
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -53,7 +57,7 @@ ht-degree: 0%
 
    **POP3配置屬性：**
 
-   `pop3.leave.on.server`:定義是否在伺服器上保留消息。設為true可將郵件保留在伺服器上，否則為false。 預設為true。
+   `pop3.leave.on.server`:定義是否在伺服器上保留消息。 設為true可將郵件保留在伺服器上，否則為false。 預設為true。
 
    **POP3示例：**
 
@@ -67,7 +71,7 @@ ht-degree: 0%
 
    `imap.flag.SEEN`：為新消息/未顯示的消息設定false，為已讀取的消息設定true
 
-   如需標幟的完整清單，請參閱[https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html)。
+   請參閱 [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) 標幟的完整清單。
 
    **IMAP示例：**
 
@@ -78,13 +82,13 @@ ht-degree: 0%
 
 1. 儲存設定。
 
-## 配置新聞稿服務元件{#configuring-the-newsletter-service-component}
+## 設定新聞稿服務元件 {#configuring-the-newsletter-service-component}
 
 設定摘要匯入工具後，您需要設定寄件者地址和退信計數器。
 
 若要設定電子報服務：
 
-1. 在`<host>:<port>/system/console/configMgr`的OSGi主控台中，導覽至&#x200B;**MCM電子報**。
+1. 在OSGi主控台中， `<host>:<port>/system/console/configMgr` 並導覽至 **MCM電子報**.
 
 1. 設定服務並在完成時儲存變更。
 

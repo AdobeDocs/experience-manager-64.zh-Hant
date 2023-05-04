@@ -1,8 +1,8 @@
 ---
 title: 使用管理員視圖管理組織層次結構中的任務
-seo-title: 使用管理員視圖管理組織層次結構中的任務
+seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: 管理員和組織主管如何在AEM Forms工作區的「待辦事項」標籤中存取及處理其直接和間接報表的工作。
-seo-description: 管理員和組織主管如何在AEM Forms工作區的「待辦事項」標籤中存取及處理其直接和間接報表的工作。
+seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
 uuid: a44d5a64-c03a-4337-8577-b121e6202449
 contentOwner: robhagat
 content-type: reference
@@ -10,28 +10,32 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 exl-id: 28877528-2f91-4ee0-b9d8-c7df364ed803
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '379'
-ht-degree: 0%
+source-wordcount: '380'
+ht-degree: 1%
 
 ---
 
-# 使用管理器視圖{#managing-tasks-in-an-organizational-hierarchy-using-manager-view}管理組織層次結構中的任務
+# 使用管理員視圖管理組織層次結構中的任務 {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 在AEM Forms工作區中，管理員現在可以存取指派給階層中任何人的工作（直接或間接報表），並對其執行各種動作。 這些工作可在AEM Forms工作區的「待辦事項」標籤中取得。 直接報表工作支援的動作包括：
 
-**** 轉發將任務從直接報告轉發給任何用戶。
+**前進** 將任務從直接報告轉發給任何用戶。
 
-**** ClaimClaim直接報表的任務。
+**索賠** 申請直接報告的任務。
 
-**Claim &amp;** OpenClaim是直接報表的任務，並在經理的待辦事項清單中自動開啟它。
+**聲明和開啟** 申請直接報表的任務，並在經理的待辦事項清單中自動開啟它。
 
-**** 拒絕拒絕其他用戶轉發到直接報告的任務。此選項適用於其他使用者轉送至直接報表的任務。
+**拒絕** 拒絕其他用戶轉發到直接報告的任務。 此選項適用於其他使用者轉送至直接報表的任務。
 
-AEM Forms僅限使用者存取使用者具有存取控制(ACL)的任務。 這樣的檢查可確保用戶只能獲取具有訪問權限的任務。 使用協力廠商網站服務和實作來定義階層，組織可以自訂經理的定義，並直接製作報表以符合其需求。
+AEM Forms僅限使用者存取使用者具有存取控制(ACL)的工作。 這樣的檢查可確保用戶只能獲取具有訪問權限的任務。 使用協力廠商網站服務和實作來定義階層，組織可以自訂經理的定義，並直接製作報表以符合其需求。
 
-1. 建立DSC。 如需詳細資訊，請參閱[使用AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63)寫程式指南中的「開發AEM Forms的元件」主題。
+1. 建立DSC。 如需詳細資訊，請參閱以下主題中的「開發AEM Forms的元件」主題： [使用AEM Forms進行程式設計](https://www.adobe.com/go/learn_aemforms_programming_63) 指南。
 1. 在DSC中，為階層管理定義新SPI，以定義AEM Forms使用者內的直接報表和階層。 以下是範例Java™程式碼片段。
 
    ```as3
@@ -111,7 +115,7 @@ AEM Forms僅限使用者存取使用者具有存取控制(ACL)的任務。 這�
    </component>
    ```
 
-1. 透過Workbench部署DSC。 重新啟動`ProcessManagementTeamTasksService`服務。
+1. 透過Workbench部署DSC。 重新啟動 `ProcessManagementTeamTasksService` 服務。
 1. 您可能需要重新整理瀏覽器，或重新登出/登入使用者。
 
 下列畫面說明如何存取直接報表的工作和可用的動作。

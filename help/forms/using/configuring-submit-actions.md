@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 feature: Adaptive Forms
 exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 0%
+source-wordcount: '1546'
+ht-degree: 1%
 
 ---
 
 # 設定提交動作 {#configuring-the-submit-action}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 提交動作簡介 {#introduction-to-submit-actions}
 

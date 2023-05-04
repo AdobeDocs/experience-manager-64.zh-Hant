@@ -10,18 +10,22 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
 exl-id: 3609ad29-f5b4-4426-8bbc-7c2e38f9b140
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 0%
+source-wordcount: '343'
+ht-degree: 1%
 
 ---
 
 # 設定Acrobat Reader DC擴充功能以擷取資料 {#configuring-acrobat-reader-dc-extensions-for-data-capture}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 如果AEM表單安裝的使用者使用內容服務的資料擷取功能（已淘汰），建議您為這些使用者建立具有唯讀存取權的角色。
 
-***注意**:Adobe®LiveCycle® Content Services ES（已過時）是隨LiveCycle安裝的內容管理系統。 它使用戶能夠設計、管理、監控和優化以人為中心的流程。 內容服務（已過時）支援將於12/31/2014終止。
+***附註**:Adobe®LiveCycle® Content Services ES（已過時）是隨LiveCycle安裝的內容管理系統。 它使用戶能夠設計、管理、監控和優化以人為中心的流程。 內容服務（已過時）支援將於12/31/2014終止。
 
 資料捕獲要求您分配用戶角色以訪問SampleReaderExtensionsCredential。 您可以分配標準的信任管理員角色，但請考慮，此角色為一般的非管理用戶提供了強大的管理員權限，這些權限可以控制PKI信任設定和管理PKI憑據，這可能會危及在生產環境中安裝AEM表單的安全。 建議AEM Forms系統管理員建立僅授予信任儲存區唯讀存取權的角色，並將此新角色指派給使用資料擷取的非管理員使用者。
 

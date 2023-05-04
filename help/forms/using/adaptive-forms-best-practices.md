@@ -9,16 +9,20 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4108'
+source-wordcount: '4144'
 ht-degree: 0%
 
 ---
 
 # 使用最適化表單的最佳實務 {#best-practices-for-working-with-adaptive-forms}
 
-## 總覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 Adobe Experience Manager(AEM)表單可協助您將複雜的交易轉換為簡單、令人愉悅的數位體驗。 但是，它需要協調努力，以實施、構建、執行和維護高效和高效的AEM Forms生態系統。
 

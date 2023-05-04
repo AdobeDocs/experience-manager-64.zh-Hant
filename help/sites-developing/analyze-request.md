@@ -2,7 +2,7 @@
 title: Request Analysis Script
 seo-title: Request Analysis Script
 description: 製作請求分析指令碼以便於分析access.log檔案，生成可讀報表以供後續處理
-seo-description: 製作請求分析指令碼以便於分析access.log檔案，生成可讀報表以供後續處理
+seo-description: The request analysis script is made to ease the analysis of the access.log files producing a readable report for later processing
 uuid: 24eff3c6-5748-46f3-a30c-4a3a6427ce1d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,24 +10,28 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 1b5e0ccf-4157-45e3-8caf-1d6739d7d9d2
 exl-id: 8582bbca-c11a-4880-88ba-da22e0301dba
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 2%
+source-wordcount: '207'
+ht-degree: 4%
 
 ---
 
-# 請求分析指令碼{#request-analysis-script}
+# Request Analysis Script{#request-analysis-script}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 下載 {#download}
 
-製作此指令碼是為了便於分析`access.log`檔案，這些檔案產生可讀報表以供後續處理。
+製作此指令碼是為了方便分析 `access.log` 產生可讀報表以供後續處理的檔案。
 
 [取得檔案](assets/analyse-access.sh)
 
 ## 說明 {#description}
 
-製作此指令碼是為了便於分析`access.log`檔案，這些檔案產生可讀報表以供後續處理。
+製作此指令碼是為了方便分析 `access.log` 產生可讀報表以供後續處理的檔案。
 
 它會產生總體請求數、GET與POST、隨時間等變化的請求分配。
 
@@ -37,7 +41,7 @@ ht-degree: 2%
 
 從檔案內的註解中擷取，該註解會告訴您如何執行：
 
-分析CQ `access.log`外推各種資訊，並在`stdout`上產生Markdown輸出。
+分析CQ `access.log` 外推各種資訊，並產生Markdown輸出， `stdout`.
 
 ## 使用狀況 {#usage}
 

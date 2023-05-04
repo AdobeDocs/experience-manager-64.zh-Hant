@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 feature: Adaptive Forms
 exl-id: 4b6d3533-cd1f-4944-b580-49fd90fcf87a
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2053'
 ht-degree: 0%
 
 ---
 
 # 建立最適化表單 {#creating-an-adaptive-form}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## <strong>建立最適化表單</strong> {#strong-create-an-adaptive-form-strong}
 

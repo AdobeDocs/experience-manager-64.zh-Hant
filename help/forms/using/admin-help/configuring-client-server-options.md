@@ -11,21 +11,25 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10250'
+source-wordcount: '10286'
 ht-degree: 0%
 
 ---
 
 # 配置文檔安全伺服器 {#configure-the-document-security-server}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 1. 在管理控制台中，按一下「服務」>「文檔安全」>「配置」>「伺服器配置」。
 1. 配置設定並按一下「確定」。
 
 ## 伺服器配置設定 {#server-configuration-settings}
 
-**基本URL:** 基本檔案安全URL，包含伺服器名稱和埠。附加至基礎的資訊會建立連線URL。 例如，會附加/edc/Main.do以存取網頁。 使用者也會透過此URL回應外部使用者註冊邀請。
+**基本URL:** 包含伺服器名稱和埠的基本文檔安全URL。 附加至基礎的資訊會建立連線URL。 例如，會附加/edc/Main.do以存取網頁。 使用者也會透過此URL回應外部使用者註冊邀請。
 
 如果您使用IPv6，請輸入基本URL作為電腦名或DNS名。 如果您使用數字IP位址，Acrobat將無法開啟受原則保護的檔案。 此外，請為伺服器使用HTTP安全(HTTPS)URL。
 
@@ -33,42 +37,42 @@ ht-degree: 0%
 >
 >基本URL嵌入到受策略保護的檔案中。 客戶端應用程式使用基本URL連回伺服器。 安全檔案將繼續包含基本URL，即使稍後已變更亦然。 如果您變更基本URL，則需要為所有連接的用戶端更新設定資訊。
 
-**預設離線租用期：** 用戶離線使用受保護文檔的預設時間長度。建立策略時，此設定將確定「自動離線租賃期」設定的初始值。 （請參閱建立和編輯原則。） 當租賃期過期時，收件人必須再次同步文檔以繼續使用它。
+**預設離線租用期：** 用戶離線使用受保護文檔的預設時間長度。 建立策略時，此設定將確定「自動離線租賃期」設定的初始值。 （請參閱建立和編輯原則。） 當租賃期過期時，收件人必須再次同步文檔以繼續使用它。
 
-有關離線租賃和同步如何工作的討論，請參見[有關配置離線租賃和同步的入門課程](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html)。
+有關離線租賃和同步如何工作的討論，請參見 [配置離線租賃和同步的入門課程](https://blogs.adobe.com/security/2009/05/primer_on_configuring_offline.html).
 
-**預設的離線同步期間：** 任何文檔在最初受保護時離線使用的時間上限。
+**預設離線同步期間：** 任何文檔在最初受保護時離線使用的時間上限。
 
-**用戶端工作階段逾時：** 如果透過用戶端應用程式登入的使用者未與檔案安全性互動，則檔案安全性在經過一段時間後會中斷連線，單位為分鐘。
+**客戶端會話超時：** 如果通過客戶端應用程式登錄的用戶沒有與文檔安全性交互，則在經過該時間後，文檔安全性將斷開連接（以分鐘為單位）。
 
-**允許匿名用戶訪問：** 選擇此選項以啟用建立共用策略和個人策略的功能，允許匿名用戶開啟受策略保護的文檔。（沒有帳戶的用戶可以訪問該文檔，但無法登錄到文檔安全性，或使用其他受策略保護的文檔。）
+**允許匿名用戶訪問：** 選擇此選項以啟用建立共用和個人策略的功能，使匿名用戶能夠開啟受策略保護的文檔。 （沒有帳戶的用戶可以訪問該文檔，但無法登錄到文檔安全性，或使用其他受策略保護的文檔。）
 
-**停用對第7版用戶端的存取：** 指定使用者是否可使用Acrobat或Reader7.0連線至伺服器。選取此選項時，使用者必須使用Acrobat或Reader8.0及更新版本，才能完成PDF檔案的檔案安全性作業。 如果策略要求在開啟受策略保護的文檔時，Acrobat或Reader8.0及更高版本必須以認證模式運行，則應禁用對Acrobat或Reader7的訪問。 （請參閱指定使用者和群組的檔案權限）。
+**禁用對第7版客戶端的訪問：** 指定使用者是否可使用Acrobat或Reader7.0連線至伺服器。 選取此選項時，使用者必須使用Acrobat或Reader8.0及更新版本，才能完成PDF檔案的檔案安全作業。 如果策略要求在開啟受策略保護的文檔時，Acrobat或Reader8.0及更高版本必須以認證模式運行，則應禁用對Acrobat或Reader7的訪問。 （請參閱指定使用者和群組的檔案權限）。
 
-**允許對每個文檔進** 行離線訪問選擇此選項以指定對每個文檔的離線訪問。如果啟用此設定，則用戶將只能離線訪問用戶至少聯機開啟過一次的文檔。
+**允許對每個文檔進行離線訪問** 選擇此選項以指定每個文檔的離線訪問。 如果啟用此設定，則用戶將只能離線訪問用戶至少聯機開啟過一次的文檔。
 
-**允許用戶名密碼驗證：** 選擇此選項以允許客戶端應用程式在連接到伺服器時使用用戶名/密碼驗證。
+**允許用戶名密碼驗證：** 選擇此選項可使客戶端應用程式在連接到伺服器時使用用戶名/密碼驗證。
 
-**允許Kerberos身份驗證：** 選擇此選項以使客戶端應用程式在連接到伺服器時能夠使用Kerberos身份驗證。
+**允許Kerberos身份驗證：** 選擇此選項可使客戶端應用程式在連接到伺服器時使用Kerberos身份驗證。
 
-**允許客戶端證書驗證：** 選擇此選項以使客戶端應用程式在連接到伺服器時可以使用證書驗證。
+**允許客戶端證書驗證：** 選擇此選項可使客戶端應用程式在連接到伺服器時使用證書身份驗證。
 
-**允許擴** 展身份驗證選擇啟用擴展身份驗證，然後輸入擴展身份驗證登錄URL。
+**允許擴展身份驗證** 選擇以啟用擴展身份驗證，然後輸入擴展身份驗證登錄URL。
 
-選擇此選項可使客戶端應用程式使用擴展身份驗證。 擴充驗證提供自訂驗證程式，以及AEM Forms伺服器上設定的不同驗證選項。 例如，使用者現在可以體驗SAML驗證，而非AEM表單使用者名稱/密碼，從Acrobat和Reader用戶端。 依預設，登陸URL包含&#x200B;*localhost*&#x200B;作為伺服器名稱。 用完全限定的主機名替換伺服器名。 如果尚未啟用延伸驗證，則會自動從基礎URL填入登錄URL中的主機名稱。 請參閱[添加擴展身份驗證提供程式](configuring-client-server-options.md#add-the-extended-authentication-provider)。
+選擇此選項可使客戶端應用程式使用擴展身份驗證。 擴充驗證提供自訂驗證程式，以及AEM Forms伺服器上設定的不同驗證選項。 例如，使用者現在可以體驗SAML驗證，而非AEM表單使用者名稱/密碼，從Acrobat和Reader用戶端。 依預設，登陸URL包含 *localhost* 作為伺服器名稱。 用完全限定的主機名替換伺服器名。 如果尚未啟用延伸驗證，則會自動從基礎URL填入登錄URL中的主機名稱。 請參閱 [添加擴展身份驗證提供程式](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
-***注意&#x200B;**:Adobe Acrobat 11.0.6版及更新版本支援Apple Mac OS X的延伸驗證。*
+***附註&#x200B;**:Apple Mac OS X支援Adobe Acrobat 11.0.6版及更新版本的延伸驗證。*
 
-**延伸驗證的偏好HTML控制** 寬度指定在Acrobat中開啟以輸入使用者憑證的延伸驗證對話方塊寬度。
+**擴展驗證的首選HTML控制寬度** 指定在Acrobat中開啟以輸入使用者憑證的延伸驗證對話方塊寬度。
 
-**延伸驗證的偏好HTML控制** 高度指定在Acrobat中開啟以輸入使用者憑證的延伸驗證對話方塊的高度。
+**擴展驗證的首選HTML控制高度** 指定在Acrobat中開啟以輸入使用者憑證的延伸驗證對話方塊的高度。
 
-***注意&#x200B;**:此對話框的寬度和高度限制如下：*
+***附註&#x200B;**:此對話框的寬度和高度限制如下：*
 寬度：最小= 400，最大= 900
 
 高度：最低= 450;上限= 800
 
-**啟用客戶端憑據快取：** 選擇此選項可允許用戶快取其憑據（用戶名和密碼）。快取使用者的認證時，他們不必在每次開啟檔案或按一下Adobe Acrobat中「管理安全性原則」頁面上的「重新整理」按鈕時輸入其認證。 您可以指定使用者必須再次提供其憑證的天數。 將天數設為0可無限期快取憑據。
+**啟用客戶端憑據快取：** 選擇此選項可允許用戶快取其憑據（用戶名和密碼）。 快取使用者的認證時，他們不必在每次開啟檔案或按一下Adobe Acrobat中「管理安全性原則」頁面上的「重新整理」按鈕時輸入其認證。 您可以指定使用者必須再次提供其憑證的天數。 將天數設為0可無限期快取憑據。
 
 ## 配置文檔安全用戶和管理員 {#configuring-document-security-users-and-administrators}
 
@@ -76,7 +80,7 @@ ht-degree: 0%
 
 您的AEM表單環境包含一或多個具有建立使用者和群組適當權限的管理員使用者。 如果貴組織正在使用文檔安全性，則至少還必須為一個管理員分配管理受邀用戶和本地用戶的權限。
 
-管理員還必須具有管理控制台用戶角色才能訪問管理控制台。 （請參閱[建立和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。）
+管理員還必須具有管理控制台用戶角色才能訪問管理控制台。 (請參閱 [建立和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 ### 設定可見的使用者和群組 {#configuring-visible-users-and-groups}
 
@@ -84,9 +88,9 @@ ht-degree: 0%
 
 可見的用戶和組清單對策略集協調器可見，用於限制最終用戶在選擇要添加到策略的用戶或組時可以瀏覽的域。 如果未執行此任務，則策略集協調器將找不到要添加到策略的任何用戶或組。 任何給定的策略集都可以有多個策略集協調器。
 
-1. 在您以檔案安全性安裝及設定AEM表單環境後，請在「使用者管理」中設定所有適當的網域。<!-- Fix broken link (See Setting up and managing domains) -->
+1. 在您以檔案安全性安裝及設定AEM表單環境後，請在「使用者管理」中設定所有適當的網域。 <!-- Fix broken link (See Setting up and managing domains) -->
 
-   ***注意&#x200B;**:必須先建立域，然後才能建立任何策略。*
+   ***附註&#x200B;**:必須先建立域，然後才能建立任何策略。*
 
 1. 在管理控制台中，按一下「服務」>「文檔管理」>「策略」，然後按一下「策略集」頁簽。
 1. 選擇「全局策略集」，然後按一下「可見用戶和組」頁簽。
@@ -100,25 +104,25 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 >[!NOTE]
 >
->Adobe Acrobat 11.0.6版及更新版本支援Apple Mac OS X的延伸驗證。
+>Apple Mac OS X支援Adobe Acrobat 11.0.6版及更新版本的延伸驗證。
 
 1. 獲取部署的示例WAR檔案。 請參閱適合您的應用程式伺服器的安裝指南。
-1. 請確定表單伺服器的基本URL是完全限定的名稱，而不是IP位址，且是HTTPS URL。 請參閱[伺服器配置設定](configuring-client-server-options.md#server-configuration-settings)。
-1. 從「伺服器配置」頁啟用「擴展身份驗證」。 請參閱[伺服器配置設定](configuring-client-server-options.md#server-configuration-settings)。
-1. 在「使用者管理」設定檔案中新增所需的SSO重新導向URL。 請參閱[新增延伸驗證的SSO重新導向URL](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication) 。
+1. 請確定表單伺服器的基本URL是完全限定的名稱，而不是IP位址，且是HTTPS URL。 請參閱 [伺服器配置設定](configuring-client-server-options.md#server-configuration-settings).
+1. 從「伺服器配置」頁啟用「擴展身份驗證」。 請參閱 [伺服器配置設定](configuring-client-server-options.md#server-configuration-settings).
+1. 在「使用者管理」設定檔案中新增所需的SSO重新導向URL。 請參閱 [新增SSO重新導向URL以進行延伸驗證](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
 ### 新增SSO重新導向URL以進行延伸驗證 {#add-sso-redirect-urls-for-extended-authentication}
 
-啟用擴展身份驗證後，用戶在Acrobat XI或ReaderXI中開啟受策略保護的文檔時，將獲得身份驗證對話框。 此對話框載入您在文檔安全伺服器設定中指定為擴展身份驗證登錄URL的HTML頁。 請參閱[伺服器配置設定](configuring-client-server-options.md#server-configuration-settings)。
+啟用擴展身份驗證後，用戶在Acrobat XI或ReaderXI中開啟受策略保護的文檔時，將獲得身份驗證對話框。 此對話框載入您在文檔安全伺服器設定中指定為擴展身份驗證登錄URL的HTML頁。 請參閱 [伺服器配置設定](configuring-client-server-options.md#server-configuration-settings).
 
 >[!NOTE]
 >
->Adobe Acrobat 11.0.6版及更新版本支援Apple Mac OS X的延伸驗證。
+>Apple Mac OS X支援Adobe Acrobat 11.0.6版及更新版本的延伸驗證。
 
 1. 在管理控制台中，按一下「設定>使用者管理>設定>匯入和匯出設定檔」。
 1. 按一下「導出」，然後將配置檔案保存到磁碟。
 1. 在編輯器中開啟檔案，然後找到AllowedUrls節點。
-1. 在`AllowedUrls`節點中，新增下列行：`<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
+1. 在 `AllowedUrls` 節點，添加以下行： `<entry key="sso-l" value="/ssoexample/login.jsp"/> <entry key="sso-s" value="/ssoexample"/> <entry key="sso-o" value="/ssoexample/logout.jsp"/>`
 
    ```as3
    <entry key="sso-l" value="/ssoexample/login.jsp"/> 
@@ -130,9 +134,9 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 ## 配置離線安全性 {#configuring-offline-security}
 
-文檔安全性提供了離線使用受策略保護的文檔的能力，而無需連接網際網路或網路。 此功能要求策略允許離線訪問，如[指定用戶和組的文檔權限](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups)中所述。 在離線使用具有此策略的文檔之前，收件人必須在聯機時開啟該文檔並在提示時按一下「是」啟用離線訪問。 還可請求接收者驗證其身份。 然後，在策略中指定的離線租用期間內，收件人可以離線使用文檔。
+文檔安全性提供了離線使用受策略保護的文檔的能力，而無需連接網際網路或網路。 此功能要求策略允許離線訪問，如 [指定用戶和組的文檔權限](/help/forms/using/admin-help/creating-policies.md#specify-the-document-permissions-for-users-and-groups). 在離線使用具有此策略的文檔之前，收件人必須在聯機時開啟該文檔並在提示時按一下「是」啟用離線訪問。 還可請求接收者驗證其身份。 然後，在策略中指定的離線租用期間內，收件人可以離線使用文檔。
 
-離線租用期結束時，收件者必須線上開啟檔案，或使用Acrobat或Acrobat Reader DC擴充功能表命令進行同步，才能再次與檔案安全性同步。 (請參閱&#x200B;*Acrobat說明*&#x200B;或適當的&#x200B;*Acrobat Reader DC擴充功能說明*。)
+離線租用期結束時，收件者必須線上開啟檔案，或使用Acrobat或Acrobat Reader DC擴充功能表命令進行同步，才能再次與檔案安全性同步。 (請參閱 *Acrobat說明* 或適當 *Acrobat Reader DC擴充功能說明*.)
 
 由於允許離線訪問的文檔需要在離線儲存檔案的電腦上快取關鍵材料，因此，如果未經授權的用戶能夠獲取關鍵材料，則檔案可能會受到損害。 為了彌補這一可能性，提供了計畫和手動密鑰變換選項，您可以配置這些選項以防止未經授權的人使用密鑰訪問文檔。
 
@@ -148,7 +152,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 ### 管理密鑰滾動 {#manage-key-rollovers}
 
-檔案安全性使用加密演算法和授權來保護檔案。 當對文檔進行加密時，文檔安全性將生成並管理稱為&#x200B;*DocKey*&#x200B;的解密密鑰，該密鑰將傳遞給客戶端應用程式。 如果保護文檔的策略允許離線訪問，則還為每個對文檔具有離線訪問權限的用戶生成一個稱為&#x200B;*主密鑰*&#x200B;的離線密鑰。
+檔案安全性使用加密演算法和授權來保護檔案。 當它加密文檔時，文檔安全性將生成並管理稱為的解密密鑰 *DocKey* 會傳遞至用戶端應用程式。 如果保護文檔的策略允許離線訪問，則離線密鑰稱為 *主鍵* 也會為每個離線存取檔案的使用者產生。
 
 >[!NOTE]
 >
@@ -182,7 +186,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 1. 在文檔安全頁上，按一下「配置」>「密鑰管理」。
 1. 按一下「Rolver Keys Now（立即變換密鑰）」 ，然後按一下「OK（確定）」。
-1. 等10分鐘。 伺服器日誌中顯示以下日誌消息：`Done RightsManagement key rollover for`*N* `principals`。 其中&#x200B;*N*&#x200B;是文檔安全系統中的用戶數。
+1. 等10分鐘。 伺服器日誌中顯示以下日誌消息： `Done RightsManagement key rollover for`*N* `principals`. 其中 *N* 是文檔安全系統中的用戶數。
 1. 按一下「Rolver Keys Now（立即變換密鑰）」 ，然後按一下「OK（確定）」。
 1. 等10分鐘。
 
@@ -212,7 +216,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
    * 要審核類別中的所有事件，請選擇「全部」。
    * 要僅審核某些事件，請取消選擇「全部」，然後選中要審核的事件旁邊的複選框。
 
-      （請參閱[事件審核選項](configuring-client-server-options.md#event-auditing-options)。）
+      (請參閱 [事件審核選項](configuring-client-server-options.md#event-auditing-options).)
 
 1. 按一下「確定」。
 
@@ -274,7 +278,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 1. 在管理控制台中，按一下「服務」>「文檔安全」>「配置」>「事件管理」。
 1. 在「刪除審核事件」下，指定「刪除審核事件早於」框中的天數。
-1. 按一下「刪除」。 按一下「匯出」。 如果要取消刪除，請按一下取消刪除。 如果其他用戶已計畫刪除，則在導出完成之前，取消刪除按鈕不可用。 如果其他用戶已計畫導出，則「取消刪除」按鈕不可用。 要檢查計畫的刪除是否已開始或已完成，請按一下刷新。
+1. 按一下刪除。按一下「匯出」。 如果要取消刪除，請按一下取消刪除。 如果其他用戶已計畫刪除，則在導出完成之前，取消刪除按鈕不可用。 如果其他用戶已計畫導出，則「取消刪除」按鈕不可用。 要檢查計畫的刪除是否已開始或已完成，請按一下刷新。
 
 ### 事件審核選項 {#event-auditing-options}
 
@@ -282,73 +286,73 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 **檔案事件**
 
-**查看文檔：** 收件者查看受策略保護的文檔。
+**查看文檔：** 收件人查看受策略保護的文檔。
 
-**關閉文檔：** 收件者關閉受策略保護的文檔。
+**關閉文檔：** 收件人將關閉受策略保護的文檔。
 
-**打印低** 解析度收件人打印具有指定低解析度選項的受策略保護文檔。
+**打印低解析度** 收件人打印具有指定的低解析度選項的受策略保護文檔。
 
-**打印高解析度：** 收件人打印具有指定高解析度選項的受策略保護文檔。
+**打印高解析度：** 收件人打印具有指定的高解析度選項的受策略保護文檔。
 
-**將注釋添加到文檔** ：收件人將注釋添加到PDF文檔。
+**向文檔添加註釋：** 收件者會將註解新增至PDF檔案。
 
 **撤消文檔：** 用戶或管理員撤消對受策略保護文檔的訪問。
 
-**取消撤銷文檔：** 用戶或管理員重新註冊對受策略保護文檔的訪問。
+**取消撤消文檔：** 用戶或管理員重新對受策略保護的文檔進行訪問。
 
-**表單填寫：** 收件者將資訊輸入可填寫表單的PDF檔案中。
+**表單填寫：** 收件者將資訊輸入可填寫的PDF檔案中。
 
-**移除原則：** 發佈者從檔案中移除原則，以取消安全性保護。
+**已刪除策略：** 發佈者從文檔中刪除策略以撤消安全保護。
 
-**變更檔案撤銷URL:** 來自API層級的呼叫會變更指定的撤銷URL，以存取取代已撤銷檔案的新檔案。
+**更改文檔吊銷URL:** 來自API層級的呼叫會變更指定的撤銷URL，以存取取代已撤銷檔案的新檔案。
 
-**修改文檔：** 收件人更改受策略保護的文檔的內容。
+**修改文檔：** 收件人更改受策略保護文檔的內容。
 
-**簽署檔案：** 收件者簽署檔案。
+**簽署文檔：** 收件者簽署檔案。
 
-**保護新檔案：** 使用者套用原則以保護檔案。
+**保護新文檔：** 用戶應用策略以保護文檔。
 
-**在文檔上切換策略：** 用戶或管理員切換附加到文檔的策略。
+**文檔上的切換策略：** 用戶或管理員將切換附加到文檔的策略。
 
-**將文檔發佈為：** 在伺服器上註冊一個新文檔，其documentName和許可證與現有文檔相同，且這些文檔沒有父子關係。可使用AEM Forms SDK觸發此事件。
+**將文檔發佈為：** 在伺服器上註冊一個文檔，其documentName和許可與現有文檔相同，並且這些文檔沒有父子關係。 可使用AEM Forms SDK觸發此事件。
 
-**迭代文檔：** 在伺服器上註冊一個新文檔，其documentName和許可與現有文檔相同，且這些文檔具有父子關係。可使用AEM Forms SDK觸發此事件。
+**迭代文檔：** 在伺服器上註冊一個文檔，其documentName和許可證與現有文檔相同，並且這些文檔具有父子關係。 可使用AEM Forms SDK觸發此事件。
 
 **策略事件**
 
-**建立策略：** 用戶或管理員建立策略。
+**已建立策略：** 用戶或管理員建立策略。
 
-**啟用原則：** 管理員可讓原則可用。
+**啟用的策略：** 管理員使策略可用。
 
-**已更改策略：** 用戶或管理員更改了策略。
+**更改的策略：** 用戶或管理員更改策略。
 
 **禁用的策略：** 管理員使策略不可用。
 
 **已刪除的策略：** 用戶或管理員刪除策略。
 
-**變更原則擁有者：** 來自API層級的呼叫會變更原則擁有者。
+**更改策略所有者：** 來自API層級的呼叫會變更原則擁有者。
 
 **使用者事件**
 
-**已刪除的使用者：** 管理員會刪除使用者帳戶。
+**已刪除用戶：** 管理員會刪除使用者帳戶。
 
-**註冊受邀的使用者：** 外部使用者註冊檔案安全性。
+**註冊受邀用戶：** 外部用戶註冊到文檔安全性。
 
-**成功登入：** 管理員或使用者成功登入。
+**成功登入：** 管理員或使用者成功登入嘗試。
 
-**受邀的使用者：** 檔案安全性邀請使用者註冊。
+**受邀用戶：** 檔案安全性邀請使用者註冊。
 
-**已啟用的使用者：** 外部使用者透過啟用電子郵件中的URL來啟用其帳戶，或是管理員會啟用帳戶。
+**激活的用戶：** 外部使用者透過啟用電子郵件中的URL來啟用其帳戶，或是管理員會啟用帳戶。
 
-**變更密碼：** 受邀的使用者變更其密碼，或管理員重設本機使用者的密碼。
+**更改密碼：** 被邀請的用戶更改其密碼，或管理員重置本地用戶的密碼。
 
-**登入失敗：** 管理員或使用者嘗試登入失敗。
+**登錄失敗：** 管理員或用戶嘗試登錄失敗。
 
-**停用的使用者：** 管理員會停用本機使用者帳戶。
+**已停用的使用者：** 管理員禁用本地用戶帳戶。
 
-**設定檔更新：** 受邀的使用者變更其名稱、組織名稱及密碼。
+**配置檔案更新：** 受邀的用戶更改其名稱、組織名稱和密碼。
 
-**帳戶已鎖定：** 管理員會鎖定帳戶。
+**帳戶已鎖定：** 管理員鎖定帳戶。
 
 **策略集事件**
 
@@ -360,17 +364,17 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 **系統事件**
 
-**目錄同步完成：** 「事件」頁中不提供此資訊。「域管理」頁上將顯示當前目錄同步資訊，包括當前同步狀態和上次同步的時間。 若要存取管理控制台中的「網域管理」頁面，請按一下「設定>使用者管理>網域管理」 。
+**目錄同步完成：** 「事件」頁面無法取得此資訊。 「域管理」頁上將顯示當前目錄同步資訊，包括當前同步狀態和上次同步的時間。 若要存取管理控制台中的「網域管理」頁面，請按一下「設定>使用者管理>網域管理」 。
 
-**用戶端啟用離線存取：** 使用者啟用離線存取，存取受使用者電腦上伺服器保護的檔案。
+**客戶端啟用離線訪問：** 用戶允許離線訪問用戶電腦上的伺服器所保護的文檔。
 
-**已同** 步的ClientClient應用程式必須與伺服器同步資訊以允許離線訪問。
+**同步的客戶端** 客戶端應用程式必須與伺服器同步資訊以允許離線訪問。
 
-**版本不符：** 與伺服器不相容的AEM Forms SDK版本已嘗試連線至伺服器。
+**版本不匹配：** 與伺服器不相容的AEM Forms SDK版本嘗試連線至伺服器。
 
-**目錄同步資訊：** 「事件」頁中不提供此資訊。「域管理」頁上將顯示當前目錄同步資訊，包括當前同步狀態和上次同步的時間。 若要存取管理控制台中的「網域管理」頁面，請按一下「設定>使用者管理>網域管理」 。
+**目錄同步資訊：** 「事件」頁面無法取得此資訊。 「域管理」頁上將顯示當前目錄同步資訊，包括當前同步狀態和上次同步的時間。 若要存取管理控制台中的「網域管理」頁面，請按一下「設定>使用者管理>網域管理」 。
 
-**伺服器配置更改：** 對通過網頁或通過導入config.xml檔案手動完成的伺服器配置所做的更改。這包括對基本URL、會話超時、登錄鎖定、目錄設定、密鑰滾動、外部註冊的SMTP伺服器設定、水印配置、顯示選項等的更改。
+**伺服器配置更改：** 通過網頁或通過導入config.xml檔案手動完成對伺服器配置的更改。 這包括對基本URL、會話超時、登錄鎖定、目錄設定、密鑰滾動、外部註冊的SMTP伺服器設定、水印配置、顯示選項等的更改。
 
 ## 配置擴展使用情況跟蹤 {#configuring-extended-usage-tracking}
 
@@ -382,13 +386,13 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 ### 啟用或停用延伸使用量追蹤 {#enable-or-disable-extended-usage-tracking}
 
-開始之前，請確保已啟用「伺服器審核」。 有關審核的詳細資訊，請參閱[配置事件審核和隱私設定](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings)。
+開始之前，請確保已啟用「伺服器審核」。 請參閱 [配置事件審核和隱私設定](configuring-client-server-options.md#configuring-event-auditing-and-privacy-settings) ，了解有關審核的詳細資訊。
 
 1. 在管理控制台中，按一下「服務>檔案安全性>設定>稽核和隱私權設定」 。
 1. 若要設定延伸使用量追蹤，請在「啟用追蹤」下方選取「是」或「否」。
 1. 若要在登入頁面上設定「允許收集詳細使用資料」核取方塊的選取，在「啟用追蹤」預設值下，選取「是」或「否」。
 
-要查看跟蹤的事件，可以使用「事件」頁上的「文檔事件」篩選器。 使用JavaScript追蹤的事件會標示為「詳細使用追蹤」。 有關事件的詳細資訊，請參閱[監視事件](/help/forms/using/admin-help/monitoring-events.md#monitoring-events)。
+要查看跟蹤的事件，可以使用「事件」頁上的「文檔事件」篩選器。 使用JavaScript追蹤的事件會標示為「詳細使用追蹤」。 請參閱 [監控事件](/help/forms/using/admin-help/monitoring-events.md#monitoring-events) 以取得事件的詳細資訊。
 
 ## 配置文檔安全顯示設定 {#configure-document-security-display-settings}
 
@@ -397,15 +401,15 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 ### 顯示設定 {#display-settings}
 
-**要針對搜尋結果顯示的列數：** 執行搜尋時在頁面上顯示的列數。
+**要針對搜索結果顯示的行：** 執行搜尋時在頁面上顯示的列數。
 
 **用戶端登入對話方塊的自訂**
 
 這些設定控制當用戶通過客戶端應用程式登錄到文檔安全時，在登錄提示中顯示的文本。
 
-**歡迎文字：** 歡迎訊息文字，例如「請使用您的使用者名稱和密碼登入」。歡迎郵件文本應包含有關如何登錄文檔安全以及如何聯繫組織中的管理員或其他指定支援人員以獲得幫助的資訊。 例如，如果外部用戶忘記密碼或需要註冊或登錄過程方面的幫助，則可能需要聯繫管理員。 歡迎文字的長度上限為512個字元。
+**歡迎文字：** 歡迎郵件文本，如「請使用您的用戶名和密碼登錄」。 歡迎郵件文本應包含有關如何登錄文檔安全以及如何聯繫組織中的管理員或其他指定支援人員以獲得幫助的資訊。 例如，如果外部用戶忘記密碼或需要註冊或登錄過程方面的幫助，則可能需要聯繫管理員。 歡迎文字的長度上限為512個字元。
 
-**使用者名稱文字：** 使用者名稱方塊的文字標籤。
+**用戶名文本：** 用戶名框的文本標籤。
 
 **密碼文本：** 密碼框的文本標籤。
 
@@ -413,21 +417,21 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 這些設定控制證書驗證對話框中顯示的文本。
 
-**選擇驗證類型文本：** 顯示的文本，用於引導用戶選擇驗證類型。
+**選擇驗證類型文本：** 顯示的文字，用於引導用戶選擇驗證類型。
 
-**選擇憑證文字：** 顯示的文字，用來引導使用者選取憑證類型。
+**選擇證書文本：** 顯示的文字，用於引導用戶選擇證書類型。
 
-**憑證不可用錯誤文字：** 當選取的憑證無法使用時，最多要顯示512個字元的訊息。
+**證書不可用錯誤文本：** 當選取的憑證無法使用時，最多會顯示512個字元的訊息。
 
 **客戶端證書顯示的定製**
 
-**僅顯示受信任的憑據發行者：** 選擇此選項時，客戶端應用程式僅向用戶顯示配置AEM表單為受信任的憑據發行者的證書（請參閱管理證書和憑據）。未選中此選項時，將向用戶顯示用戶系統上所有證書的清單。
+**僅顯示受信任的憑據發行者：** 選中此選項時，客戶端應用程式只向用戶顯示配置為信任的AEM表單的憑據發行商的證書（請參閱管理證書和憑據）。 未選中此選項時，將向用戶顯示用戶系統上所有證書的清單。
 
 ## 配置動態水印 {#configure-dynamic-watermarks}
 
-使用文檔安全性，可以配置動態水印選項的預設設定，在建立策略時可以應用該選項。 *水印*&#x200B;是疊加在文檔中文本上的影像。 它對於跟蹤文檔的內容非常有用，並有助於識別非法使用該內容。
+使用文檔安全性，可以配置動態水印選項的預設設定，在建立策略時可以應用該選項。 A *水印* 是疊加在文檔中文本上的影像。 它對於跟蹤文檔的內容非常有用，並有助於識別非法使用該內容。
 
-動態浮水印可由由定義的變數（例如使用者ID、日期和自訂文字）組成的文字，或PDF內的豐富內容組成。 可以使用多個元素配置水印，每個元素都有自己的定位和格式。
+動態水印可由由定義的變數（如使用者ID、日期和自訂文字）組成的文字，或由PDF內的豐富內容組成。 可以使用多個元素配置水印，每個元素都有自己的定位和格式。
 
 水印不可編輯，因此是確保文檔內容機密性的更安全的方法。 動態水印還確保水印顯示足夠的用戶特定資訊以用作進一步分發文檔的威懾。
 
@@ -445,14 +449,14 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 通常，您使用基於PDF的水印來包括圖形內容，如徽標或特殊符號，如版權或註冊商標。
 
-通過修改文檔安全配置檔案，可以更改水印元素數和PDF檔案大小的限制。 請參閱[更改水印配置參數](configuring-client-server-options.md#change-the-watermark-configuration-parameters)。
+可以通過修改文檔安全配置檔案來更改水印元素數和PDF檔案大小的限制。 請參閱 [更改水印配置參數](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
 
 配置水印時，請記住以下事項：
 
-* 您不能使用受密碼保護的PDF文檔作為水印元素。 但是，如果您建立的水印包含其他不受密碼保護的元素，則這些元素將作為水印的一部分應用。
-* 您可以變更要用作浮水印元素的最大PDF檔案大小。 但是，在離線同步應用此水印的文檔時，用作水印的大型PDF文檔會降低效能。 請參閱[更改水印配置參數](configuring-client-server-options.md#change-the-watermark-configuration-parameters)。
-* 只有選定PDF的第一頁作為水印。 請確定您要顯示為浮水印的資訊在第一頁本身上可用。
-* 即使可以指定PDF文檔的縮放比例，如果您打算在頁首、頁尾或邊距中將PDF用作水印，請考慮PDF的頁面大小和佈局。
+* 不能將受密碼保護的PDF文檔用作水印元素。 但是，如果您建立的水印包含其他不受密碼保護的元素，則這些元素將作為水印的一部分應用。
+* 您可以更改要用作水印元素的最大PDF檔案大小。 但是，用作水印的大型PDF文檔在離線同步應用了此類水印的文檔期間會降低效能。 請參閱 [更改水印配置參數](configuring-client-server-options.md#change-the-watermark-configuration-parameters).
+* 僅將所選PDF的第一頁用作水印。 請確定您要顯示為浮水印的資訊在第一頁本身上可用。
+* 即使可以指定PDF文檔的縮放比例，如果您打算在頁首、頁尾或邊距中將PDF用作水印，請考慮頁面大小和佈局。
 * 指定字型名稱時，請正確輸入名稱。 AEM forms會替換您指定的字型（如果該字型不存在於開啟文檔的客戶端電腦中）。
 * 如果選擇文本作為水印內容，則將縮放選項指定為適合頁面大小對寬度不同的頁面無效。
 * 當指定水印元素的位置時，請確保沒有多個元素具有相同的位置。 如果兩個水印元素具有相同的位置，如中心，則它們在文檔上會重疊，並按添加到水印的順序顯示。
@@ -462,11 +466,11 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 某些客戶端應用程式可能不支援動態水印。 請參閱適當的Acrobat Reader DC擴充功能說明。 此外，請記住以下支援動態水印的Acrobat版本：
 
-* 您不能使用受密碼保護的PDF文檔作為水印元素。
+* 不能將受密碼保護的PDF文檔用作水印元素。
 * Acrobat和Adobe Reader 10之前的版本不支援下列浮水印功能：
 
    * PDF水印
-   * 浮水印中的多個元素(Text/PDF)
+   * 浮水印中的多個元素(文字/PDF)
    * 進階選項，例如頁面範圍或顯示選項
    * 文本格式選項，如指定的字型、字型名稱和顏色。 不過，舊版Acrobat和Reader會以預設字型和顏色顯示文字內容。
 
@@ -484,27 +488,27 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 1. 按一下新增。
 1. 在「名稱」框中，鍵入新水印的名稱。
 
-   ***注意&#x200B;**:水印或水印元素的名稱或說明中不能使用某些特殊字元。請參閱[編輯策略的注意事項](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies)中列出的限制。*
+   ***附註&#x200B;**:水印或水印元素的名稱或說明中不能使用某些特殊字元。 請參閱 [編輯原則的考量事項](/help/forms/using/admin-help/creating-policies.md#considerations-for-editing-policies).*
 
 1. 在「名稱」(Name)下，在加號旁，為水印元素（如Header）輸入有意義的名稱，然後添加說明，然後展開加號以顯示選項。
-1. 在「源」下，選擇「文本」或「PDF」形式的水印類型。
+1. 在「源」下，選擇「文本」或「PDF」的水印類型。
 1. 如果選擇了「文本」，請執行以下操作：
 
    * 選擇要包括的水印類型。 如果選擇「自定義文本」，請在相鄰框中鍵入要為水印顯示的文本。 請記住將作為浮水印顯示的文本長度。
    * 為水印文本的文本內容指定文本格式屬性，如字型名稱、字型大小、前景顏色和背景顏色。 將前景和背景顏色指定為十六進位值。
 
-      ***注意&#x200B;**:如果選擇「適合頁面大小」縮放選項，則字型大小屬性不可用於編輯。*
+      ***附註&#x200B;**:如果選擇「適合頁面大小」縮放選項，則字型大小屬性不可用於編輯。*
 
-1. 如果為富水印選項選擇了PDF，請按一下「選擇水印PDF」旁的&#x200B;**瀏覽**&#x200B;以選擇要用作水印的PDF文檔。
+1. 如果您選擇了富水印選項的PDF，請按一下 **瀏覽** 選擇水印PDF旁邊的，以選擇要用作水印的PDF文檔。
 
-   ***注意&#x200B;**:請勿使用受密碼保護的PDF檔案。如果指定受密碼保護的PDF作為水印元素，則不會應用水印。*
+   ***附註&#x200B;**:請勿使用受密碼保護的PDF檔案。 如果指定受密碼保護的PDF作為水印元素，則不會應用水印。*
 
 1. 在「用作背景」下，選擇「是」或「否」。
 
-   ***注意**:目前，水印會出現在前景中，而與此設定無關。*
+   ***附註**:目前，水印會出現在前景中，而與此設定無關。*
 
 1. 要控制文檔上顯示水印的位置，請配置「垂直對齊」和「水準對齊」選項。
-1. 選擇適合頁面大小，或選擇%並在框中鍵入百分比。 值必須是整數，而非分數。 要配置水印大小，可以使用頁的百分比值，或者設定水印以適合頁的大小。
+1. 選擇適合頁面大小，或選擇%並在框中鍵入百分比。 值必須是整數，而非分數。 要配置水印大小，可以使用頁的百分比值或設定水印以適合頁的大小。
 1. 在「旋轉」(Rotation)框中，鍵入要旋轉水印的度。 範圍是–180到180。 使用負值逆時針旋轉水印。 值必須是整數，而非分數。
 1. 在「不透明度」框中，鍵入百分比。 使用整數，而非小數。
 1. 在「進階選項」下，設定下列項目：
@@ -517,7 +521,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
    選擇要讓浮水印出現的位置。 預設情況下，水印會同時出現在軟拷貝（聯機）和硬拷貝（打印）上。
 
-1. 如果需要，請按一下「浮水印元素」下的「**新建**」以添加更多水印元素。
+1. 按一下 **新增** 在「浮水印元素」下添加更多水印元素（如有必要）。
 1. 按一下「確定」。
 
 ### 編輯動態水印模板 {#edit-a-dynamic-watermark-template}
@@ -539,7 +543,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 您組織外部的使用者可透過檔案安全性進行註冊。 已邀請的註冊和激活其帳戶的用戶可以使用其電子郵件地址和註冊時建立的密碼登錄到文檔安全。 已註冊的受邀用戶可以使用他們具有權限的受策略保護的文檔。
 
-當受邀的使用者啟動後，就會成為本機使用者。 可使用「受邀」和「本地用戶」區域來配置和管理本地用戶。 （請參閱[管理受邀和本地用戶帳戶](/help/forms/using/admin-help/invited-local-user-accounts.md#managing-invited-and-local-user-accounts)。）
+當受邀的使用者啟動後，就會成為本機使用者。 可使用「受邀」和「本地用戶」區域來配置和管理本地用戶。 (請參閱 [管理受邀和本機使用者帳戶](/help/forms/using/admin-help/invited-local-user-accounts.md#managing-invited-and-local-user-accounts).)
 
 根據您為受邀用戶啟用的功能，他們還可以使用以下文檔安全功能：
 
@@ -554,7 +558,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 註冊電子郵件包含註冊頁面的連結，以及如何註冊的資訊。 在受邀的使用者註冊後，檔案安全性會發出包含啟動頁面連結的啟動電子郵件。 啟用後，帳戶會維持有效，直到您停用或刪除為止。
 
-如果啟用內置註冊，則只需指定一次SMTP伺服器、註冊電子郵件詳細資訊、訪問功能，以及重置密碼電子郵件資訊。 在啟用內置註冊之前，請確保已在「用戶管理」中建立本地域，並已將「文檔安全邀請用戶」角色分配給組織中的相應用戶和組。 （請參閱[添加本地域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[建立和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。） 如果您未使用內建註冊，則必須使用AEM Forms SDK建立自己的使用者註冊系統。 請參閱[使用AEM表單進行程式設計中「開發AEM表單的SPI」的說明。 ](/help/forms/developing/introducing-java-api-soap-quick.md)如果不使用內置註冊選項，建議您在激活電子郵件和客戶端登錄螢幕中配置一條消息，以通知用戶如何聯繫管理員以獲取新密碼或其他資訊。
+如果啟用內置註冊，則只需指定一次SMTP伺服器、註冊電子郵件詳細資訊、訪問功能，以及重置密碼電子郵件資訊。 在啟用內置註冊之前，請確保已在「用戶管理」中建立本地域，並已將「文檔安全邀請用戶」角色分配給組織中的相應用戶和組。 (請參閱 [新增本機網域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) 和 [建立和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) 如果您未使用內建註冊，則必須使用AEM Forms SDK建立自己的使用者註冊系統。 請參閱「開發AEM表單的SPI」相關說明，位於 [使用AEM表單進行程式設計](/help/forms/developing/introducing-java-api-soap-quick.md). 如果不使用內置註冊選項，建議您在激活電子郵件和客戶端登錄螢幕中配置一條消息，以通知用戶如何聯繫管理員以獲取新密碼或其他資訊。
 
 **啟用和配置邀請的用戶註冊**
 
@@ -575,41 +579,41 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 ### 排除或包含外部使用者或群組 {#exclude-or-include-an-external-user-or-group}
 
-您可以限制某些外部用戶或用戶組的註冊與文檔安全性。 例如，此選項對於允許存取特定使用者群組但排除屬於群組的特定個人非常有用。
+您可以限制某些外部用戶或用戶組的註冊與文檔安全性。 例如，此選項對於允許存取特定使用者群組但排除屬於該群組的特定個人非常有用。
 
 下列設定位於「邀請的用戶註冊」頁面的「電子郵件限制篩選器」區域中。
 
-**排除：** 輸入要排除的使用者或群組的電子郵件地址。若要排除多個使用者或群組，請在新行上輸入每個電子郵件地址。 要排除屬於特定域的所有用戶，請輸入通配符和域名。 例如，要排除example.com域中的所有用戶，請輸入&amp;ast;.example.com。
+**排除：** 輸入要排除的使用者或群組的電子郵件地址。 若要排除多個使用者或群組，請在新行上輸入每個電子郵件地址。 要排除屬於特定域的所有用戶，請輸入通配符和域名。 例如，要排除example.com域中的所有用戶，請輸入&amp;ast;.example.com。
 
-**包含：** 輸入要包含之使用者或群組的電子郵件地址。若要包含多個使用者或群組，請在新行上輸入每個電子郵件地址。 要包括屬於特定域的所有用戶，請輸入通配符和域名。 例如，要將所有用戶納入example.com域，請輸入&amp;ast;.example.com。
+**包含：** 輸入要包含的使用者或群組的電子郵件地址。 若要包含多個使用者或群組，請在新行上輸入每個電子郵件地址。 要包括屬於特定域的所有用戶，請輸入通配符和域名。 例如，要將所有用戶包括在example.com域中，請輸入&amp;ast;.example.com。
 
 ### 伺服器和註冊帳戶參數 {#server-and-registration-account-parameters}
 
 下列設定位於「受邀用戶註冊」頁面的「常規設定」區域中。
 
-**SMTP主機：** SMTP伺服器的主機名。SMTP伺服器管理傳出的電子郵件通知，以註冊並啟用受邀的使用者帳戶。
+**SMTP主機：** SMTP伺服器的主機名。 SMTP伺服器管理傳出的電子郵件通知，以註冊並啟用受邀的使用者帳戶。
 
 如果SMTP主機需要，請在「SMTP伺服器帳戶名」和「SMTP伺服器帳戶密碼」框中鍵入所需資訊，以連接到SMTP伺服器。 有些組織沒有執行此要求。 如果需要資訊，請咨詢系統管理員。
 
-**SMTP伺服器套接字類名：** SMTP伺服器的套接字類名。例如， javax.net.ssl.SSLSocketFactory。
+**SMTP伺服器套接字類名：** SMTP伺服器的套接字類名。 例如， javax.net.ssl.SSLSocketFactory。
 
-**電子郵件內容類型：** 接受的MIME類型，例如text/plain或text/html。
+**電子郵件內容類型：** 接受的MIME類型，如text/plain或text/html。
 
-**電子郵件編碼：** 傳送電子郵件時要使用的編碼格式。您可以指定任何編碼，例如Unicode的UTF-8，拉丁文的ISO-8859-1。 預設為UTF-8。
+**電子郵件編碼：** 傳送電子郵件訊息時要使用的編碼格式。 您可以指定任何編碼，例如Unicode的UTF-8，拉丁文的ISO-8859-1。 預設為UTF-8。
 
-**重新導向電子郵件地址：** 當您指定此設定的電子郵件地址時，會將任何新邀請傳送至提供的地址。此設定可用於測試用途。
+**重新導向電子郵件地址：** 當您指定此設定的電子郵件地址時，會將任何新邀請傳送至提供的地址。 此設定可用於測試用途。
 
-**使用本機網域：** 選取適當的網域。在新安裝時，請確定您是使用「使用者管理」建立網域。 如果這是升級，則在升級期間會建立外部使用者網域，可供使用。
+**使用本機網域：** 選取適當的網域。 在新安裝時，請確定您是使用「使用者管理」建立網域。 如果這是升級，則在升級期間會建立外部使用者網域，可供使用。
 
-**對SMTP伺服器使用SSL:** 選擇此選項以為SMTP伺服器啟用SSL。
+**對SMTP伺服器使用SSL:** 選擇此選項可為SMTP伺服器啟用SSL。
 
-**在註冊頁面上顯示登入連結：** 在為受邀使用者顯示的註冊頁面上顯示登入連結。
+**在註冊頁面上顯示登錄連結：** 在為受邀使用者顯示的註冊頁面上顯示登入連結。
 
 **為SMTP伺服器啟用傳輸層安全性(TLS)**
 
 1. 開啟管理主控台。
 
-   管理控制台的預設位置為`https://<server>:<port>/adminui`。
+   管理控制台的預設位置為 `https://<server>:<port>/adminui`.
 
 1. 導覽至「首頁>服務>檔案安全性>設定>受邀的使用者註冊」 。
 1. 在「邀請的用戶註冊」中，指定所有配置設定，然後按一下「確定」。
@@ -621,7 +625,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
    >**SMTP主機：** smtp.office365.com
    >**埠：** 587
 
-1. 接下來，您需要更新config.xml。 請參閱[啟用SMTP以實現傳輸層安全(TLS)的配置](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls)
+1. 接下來，您需要更新config.xml。 請參閱 [為傳輸層安全(TLS)啟用SMTP的配置](configuring-client-server-options.md#configuration-to-enable-smtp-for-transport-layer-security-tls)
 
 >[!NOTE]
 >
@@ -635,11 +639,11 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 下列設定位於「邀請的用戶註冊」頁面的「邀請電子郵件配置」區域中。
 
-**寄件者：** 寄送邀請電子郵件的電子郵件地址。「寄件者」電子郵件地址的預設格式為postmaster@[your_installation_domain].com。
+**開始日期：** 傳送邀請電子郵件的來源電子郵件地址。 「寄件者」電子郵件地址的預設格式為postmaster@[your_installation_domain].com。
 
-**主旨：** 邀請電子郵件訊息的預設主旨。
+**主題：** 邀請電子郵件訊息的預設主旨。
 
-**逾時：** 如果外部使用者未註冊，則註冊邀請過期的天數。預設值為30天。
+**逾時：** 如果外部用戶未註冊，則註冊邀請過期的天數。 預設值為30天。
 
 **訊息：** 邀請使用者註冊之訊息內文中顯示的文字。
 
@@ -655,13 +659,13 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 >
 >此外，建議您在登入畫面上設定訊息，以建議外部使用者如何聯絡其管理員以取得新密碼或其他資訊。
 
-**寄件者：** 寄送啟動電子郵件的電子郵件地址。此電子郵件地址從註冊者的電子郵件主機接收失敗的傳送通知，以及收件者回覆註冊電子郵件而傳送的任何訊息。 「寄件者」電子郵件地址的預設格式為postmaster@[your_installation_domain].com。
+**開始日期：** 從中傳送啟動電子郵件的電子郵件地址。 此電子郵件地址從註冊者的電子郵件主機接收失敗的傳送通知，以及收件者回覆註冊電子郵件而傳送的任何訊息。 「寄件者」電子郵件地址的預設格式為postmaster@[your_installation_domain].com。
 
-**主旨：** 啟用電子郵件訊息的預設主旨。
+**主題：** 啟動電子郵件訊息的預設主旨。
 
-**逾時：** 如果使用者未啟用帳戶，則啟動邀請過期的天數。預設值為30天。
+**逾時：** 如果使用者未啟用帳戶，則啟動邀請過期的天數。 預設值為30天。
 
-**訊息：** 顯示在訊息內文中的文字，指出需要啟用收件者的使用者帳戶。您可能還想要包括一些資訊，如如何聯繫管理員以獲取新密碼。
+**訊息：** 在郵件正文中顯示的文本，用於指明需要激活收件人的用戶帳戶。 您可能還想要包括一些資訊，如如何聯繫管理員以獲取新密碼。
 
 ### 設定密碼重設電子郵件 {#configure-a-password-reset-email}
 
@@ -669,19 +673,19 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 下列設定位於「受邀用戶註冊」頁的「重置密碼電子郵件」區域中。
 
-**寄件者：** 寄送密碼重設電子郵件的電子郵件地址。「寄件者」電子郵件地址的預設格式為postmaster@[your_installation_domain].com。
+**開始日期：** 從中發送密碼重置電子郵件的電子郵件地址。 「寄件者」電子郵件地址的預設格式為postmaster@[your_installation_domain].com。
 
-**主旨：** 重設電子郵件訊息的預設主旨。
+**主題：** 重設電子郵件訊息的預設主旨。
 
-**消息：** 消息正文中顯示的文本是一條消息，指明收件人的外部用戶密碼已重置。
+**訊息：** 在消息正文中顯示的文本是一條消息，指示收件人的外部用戶密碼被重置。
 
 ## 使用戶和組能夠建立策略 {#enable-users-and-groups-to-create-policies}
 
 「配置」頁具有指向「我的策略」頁的連結，可在該頁中指定哪些最終用戶可以建立我的策略，以及哪些用戶和組在搜索結果中可見。 「我的策略」頁有兩個頁簽：
 
-**「建立原則」標籤：** 用來設定使用者權限以建立自訂原則。
+**「建立策略」頁簽：** 用於配置用戶權限以建立自定義策略。
 
-**「可見的使用者和群組」索引標籤：** 用來控制哪些使用者和群組可在使用者搜尋結果中顯示。超級用戶或策略集管理員需要選擇在「用戶管理」中建立的域，並將其添加到每個策略集的可見用戶和組中。 此清單對策略集協調器是可見的，用於在選擇將用戶添加到策略時設定策略集協調器可以瀏覽的域的限制。
+**「可見用戶和組」頁簽：** 用於控制哪些用戶和組在用戶搜索結果中可見。 超級用戶或策略集管理員需要選擇在「用戶管理」中建立的域，並將其添加到每個策略集的可見用戶和組中。 此清單對策略集協調器是可見的，用於在選擇將用戶添加到策略時設定策略集協調器可以瀏覽的域的限制。
 
 在授予使用者建立自訂原則的權限之前，請先考量您希望個別使用者擁有多少存取或控制權。 此外，請考慮讓使用者和群組在搜尋中可見時的公開程度。
 
@@ -714,7 +718,7 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 1. 在文檔安全頁上，按一下配置>我的策略。
 1. 在「我的策略」頁上，按一下「可見的用戶和組」頁簽。
-1. 要使域中的用戶和組可見，請按一下「添加域」，選擇域，然後按一下「添加」。 若要移除網域，請選取網域名稱旁的核取方塊，然後按一下刪除。
+1. 要使域中的用戶和組可見，請按一下「添加域」，選擇域，然後按一下「添加」。 要刪除域，請選中域名旁的複選框，然後按一下刪除。
 
 ## 手動編輯文檔安全配置檔案 {#manually-editing-the-document-security-configuration-file}
 
@@ -757,21 +761,21 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 在文檔安全配置檔案中，可以指定自動背景同步的預設頻率。 此設定用作預設超時期客戶端應用程式，除非客戶端顯式設定自己的超時值。
 
-1. 導出文檔安全配置檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
-1. 在編輯器中開啟配置檔案，並找到`PolicyServer`節點。 在該節點下，找到`ServerSettings`節點。
-1. 在`ServerSettings`節點中，添加以下條目並保存檔案：
+1. 導出文檔安全配置檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. 在編輯器中開啟設定檔案，然後找出 `PolicyServer` 節點。 在該節點下，找出 `ServerSettings` 節點。
+1. 在 `ServerSettings` 節點，添加以下條目，然後保存檔案：
 
    `<entry key="BackgroundSyncFrequency" value="`*時間* `"/>`
 
-   其中&#x200B;*time*&#x200B;是自動背景同步之間的秒數。 如果將此值發送到`0`，則始終會進行同步。 預設值為`14400`秒（每四小時）。
+   where *時間* 是自動背景同步之間的秒數。 如果您將此值傳送至 `0`，則一律會進行同步。 預設值為 `14400` 秒（每四小時）。
 
-1. 匯入設定檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
+1. 匯入設定檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### 拒絕特定應用程式的文檔安全服務 {#denying-document-security-services-for-specific-applications}
 
 您可以配置文檔安全性以拒絕對符合特定條件的應用程式提供服務。 條件可以指定單一屬性，例如平台名稱，也可以指定多組屬性。 此功能可協助您控制檔案安全性必須處理的要求。 此功能的部分應用程式如下：
 
-* **收入保護：** 您可能想要拒絕任何不支援您收入慣例之用戶端應用程式的存取權。
+* **收入保護：** 您可能會想要拒絕任何不支援您收入慣例之用戶端應用程式的存取權。
 * **應用程式相容性：** 某些應用程式可能與文檔安全伺服器的策略或行為不相容。
 
 當客戶端應用程式嘗試建立與文檔安全性的連結時，它們會提供應用程式、版本和平台資訊。 文檔安全性將此資訊與從文檔安全配置檔案獲取的拒絕設定進行比較。
@@ -780,9 +784,9 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 拒絕服務功能要求客戶端應用程式使用文檔安全性C++客戶端SDK 8.2版或更新版本。 以下Adobe產品在請求文檔安全服務時提供產品資訊：
 
-* Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard及更新版本
+* Adobe Acrobat 9.0 Professional/Acrobat 9.0 Standard和更新版本
 * Adobe Reader 9.0和更新版本
-* 適用於Microsoft Office 8.2和更新版本的Acrobat Reader DC擴充功能
+* Acrobat Reader DC Microsoft Office 8.2及更新版本的擴充功能
 
 用戶端應用程式會使用檔案安全性C++用戶端SDK中的用戶端API，從檔案安全性要求服務。 用戶端API請求包括平台和SDK版本資訊（預編譯至用戶端API），以及從用戶端應用程式取得的產品資訊。
 
@@ -796,32 +800,32 @@ AEM forms提供您可針對環境自訂的範例設定。 執行下列步驟：
 
 如果有任何資訊不適用，客戶端應用程式將相應欄位留空。
 
-數個Adobe應用程式在請求文檔安全服務時包括產品資訊，包括Acrobat、Adobe Reader和適用於Microsoft Office的Acrobat Reader DC擴展。
+數個Adobe應用程式在請求檔案安全服務時都包含產品資訊，包括Acrobat、Adobe Reader和Microsoft Office的Acrobat Reader DC擴充功能。
 
 **Acrobat和Adobe Reader**
 
 當Acrobat或Adobe Reader向檔案安全性要求服務時，會提供下列產品資訊：
 
-* **整合商：** Adobe Systems, Inc.
+* **整合商：** Adobe Systems公司
 * **Integrator版本：** 1.0
 * **應用程式系列：** Acrobat
 * **應用程式名稱：** Acrobat
 * **應用程式版本：** 9.0.0
 
-**Acrobat Reader DC Extensions for Microsoft Office**
+**Acrobat Reader DC Microsoft Office擴充功能**
 
-Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Word、Microsoft Excel和Microsoft PowerPoint的Microsoft Office產品搭配使用的外掛程式。 當它請求服務時，它提供以下資訊：
+Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Office產品Microsoft Word、Microsoft Excel和Microsoft PowerPoint搭配使用的外掛程式。 當它請求服務時，它提供以下資訊：
 
 * **整合商：** Adobe Systems Incorporated
 * **Integrator版本：** 8.2
 * **應用程式系列：** Acrobat Reader DC Microsoft Office擴充功能
 * **應用程式名稱：** Microsoft Word、Microsoft Excel或Microsoft PowerPoint
-* **應用程式版本：** 2003或2007
+* **應用程式版本：** 2003年或2007年
 
 **配置文檔安全性以拒絕特定應用程式的服務**
 
-1. 導出文檔安全配置檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
-1. 在編輯器中開啟配置檔案，並找到`PolicyServer`節點。 將`ClientVersionRules`節點添加為`PolicyServer`節點的直接子節點（如果不存在）:
+1. 導出文檔安全配置檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. 在編輯器中開啟設定檔案，然後找出 `PolicyServer` 節點。 新增 `ClientVersionRules` 節點作為的直接子節點 `PolicyServer` 節點，如果其中一個不存在，則：
 
    ```as3
     <node name="ClientVersionRules"> 
@@ -853,18 +857,18 @@ Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Word、Microsof
 
    其中：
 
-   `SDKPlatforms` 指定托管客戶端應用程式的平台。可能的值包括：
+   `SDKPlatforms` 指定托管客戶端應用程式的平台。 可能的值包括：
 
    * Microsoft Windows
    * Apple OS X
    * Sun Solaris
    * HP-UX
 
-   `SDKVersions` 指定客戶端應用程式使用的文檔安全性C++客戶端API的版本。例如， `"8.2"`。
+   `SDKVersions` 指定客戶端應用程式使用的文檔安全性C++客戶端API的版本。 例如， `"8.2"`.
 
    `APPFamilies` 由用戶端API定義。
 
-   `AppName`指定客戶端應用程式的名稱。逗號是名稱分隔符號。 若要在名稱中加入逗號，請以反斜線(\)字元逸出。 例如， *&quot;Adobe Systems\, Inc.&quot;*。
+   `AppName`指定客戶端應用程式的名稱。 逗號是名稱分隔符號。 若要在名稱中加入逗號，請以反斜線(\)字元逸出。 例如， *&quot;Adobe Systems\，公司&quot;*.
 
    `AppVersions` 指定客戶端應用程式的版本。
 
@@ -872,9 +876,9 @@ Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Word、Microsof
 
    `IntegratorVersions` 是外掛程式或整合應用程式的版本。
 
-1. 對於每組附加的拒絕資料，添加另一個&#x200B;*MyEntryName*&#x200B;元素。
+1. 對於每一組附加的拒絕資料，添加另一組 *MyEntryName* 元素。
 1. 儲存設定檔案。
-1. 匯入設定檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
+1. 匯入設定檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 **範例**
 
@@ -921,7 +925,7 @@ Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Word、Microsof
  </node>
 ```
 
-在此示例中，來自Microsoft PowerPoint 2007或Microsoft PowerPoint 2010安裝Microsoft Office的Acrobat Reader DC擴展的所有請求都被拒絕。
+在此範例中，來自Microsoft PowerPoint 2007或Microsoft PowerPoint 2010安裝Microsoft Office適用的Acrobat Reader DC擴充功能的所有請求皆遭拒絕。
 
 ```as3
  <node name="ClientVersionRules"> 
@@ -946,75 +950,75 @@ Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Word、Microsof
 
 預設情況下，您最多可以在水印中指定五個元素。 此外，要用作水印的PDF文檔的檔案大小上限為100KB。 您可以在config.xml檔案中變更這些參數。
 
-***注意&#x200B;**:您應謹慎變更這些參數。*
+***附註&#x200B;**:您應謹慎變更這些參數。*
 
-1. 導出文檔安全配置檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
-1. 在編輯器中開啟配置檔案，並找到`ServerSettings`節點。
-1. 在`ServerSettings`節點中，新增下列項目並儲存檔案：`<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
+1. 導出文檔安全配置檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. 在編輯器中開啟設定檔案，然後找出 `ServerSettings` 節點。
+1. 在 `ServerSettings` 節點，添加以下條目，然後保存檔案： `<entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>`
 
-   第一個項目*檔案大小上限*是PDF浮水印元素允許的最大檔案大小(KB)。 預設為100KB。
+   第一個項目*最大檔案大小*是PDF水印元素允許的最大檔案大小(KB)。 預設為100KB。
 
-   第二個條目&#x200B;*max elements*&#x200B;是允許在水印中的最大元素數。 預設為5。
+   第二條， *最大元素* 是浮水印中允許的最大元素數。 預設為5。
 
    ```as3
    <entry key="maximumSizeOfWatermarkElement" value="max filesize in KB"/> 
    <entry key="maximumWatermarkElementsPerWatermark" value="max elements"/>
    ```
 
-1. 匯入設定檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
+1. 匯入設定檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### 停用外部連結 {#disabling-external-links}
 
-許多文檔安全用戶在使用「正確管理」用戶介面時，無法訪問外部連結，如&#x200B;**www.adobe.com**:
+許多檔案安全性使用者無法存取外部連結，例如 **www.adobe.com** 當他們使用正確的管理用戶介面時：
 
-* https://[host]:[port]/adminui
-* https://[host]:[port]/edc。
+* https://[主機]:[埠]/adminui
+* https://[主機]:[埠]/edc。
 
 對config.xml所做的以下更改將禁用Right Management用戶介面中的所有外部連結。
 
-1. 導出文檔安全配置檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
-1. 在編輯器中開啟配置檔案，並找到`DisplaySettings`節點。
-1. 若要停用所有外部連結，請在`DisplaySettings`節點中新增下列項目，然後儲存檔案：`<entry key="ExternalLinksAllowed" value="false"/>`
+1. 導出文檔安全配置檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. 在編輯器中開啟設定檔案，然後找出 `DisplaySettings` 節點。
+1. 若要停用所有外部連結，請在 `DisplaySettings` 節點，添加以下條目，然後保存檔案： `<entry key="ExternalLinksAllowed" value="false"/>`
 
    ```as3
    <entry key="ExternalLinksAllowed" value="false"/>
    ```
 
-1. 匯入設定檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
+1. 匯入設定檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### 為傳輸層安全(TLS)啟用SMTP的配置 {#configuration-to-enable-smtp-for-transport-layer-security-tls}
 
 下列config.xml變更為「邀請的使用者註冊」功能啟用TLS支援。
 
-1. 導出文檔安全配置檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
-1. 在編輯器中開啟配置檔案，並找到`DisplaySettings`節點。
-1. 找出下列節點：`<node name="ExternalUser">`
+1. 導出文檔安全配置檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. 在編輯器中開啟設定檔案，然後找出 `DisplaySettings` 節點。
+1. 找出下列節點： `<node name="ExternalUser">`
 
    ```as3
    <node name="ExternalUser">
    ```
 
-1. 將`ExternalUser`節點中`SmtpUseTls`鍵的值設定為&#x200B;**true**。
-1. 將`ExternalUser`節點中`SmtpUseSsl`鍵的值設定為&#x200B;**false**。
-1. 保存`config.xml`。
-1. 匯入設定檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
+1. 設定 `SmtpUseTls` 鍵 `ExternalUser` 節點到 **true**.
+1. 設定 `SmtpUseSsl` 鍵 `ExternalUser` 節點到 **false**.
+1. 儲存 `config.xml`.
+1. 匯入設定檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### 禁用文檔安全文檔的SOAP端點 {#disable-soap-endpoints-for-document-security-documents}
 
 對config.xml所做的以下更改將禁用文檔安全文檔的SOAP端點。
 
-1. 導出文檔安全配置檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
-1. 在編輯器中開啟設定檔案，並找到下列節點：`<node name="DRM">`
+1. 導出文檔安全配置檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
+1. 在編輯器中開啟設定檔案，並找到下列節點： `<node name="DRM">`
 
    ```as3
    <node name="DRM">
    ```
 
-1. 在DRM節點中，找到`entry`節點：
+1. 在DRM節點中，找到 `entry` 節點：
 
    `<entry key="AllowUnencryptedVoucher" value="true"/>`
 
-1. 要禁用文檔安全文檔的SOAP端點，請將值屬性設定為&#x200B;**false**。
+1. 要禁用文檔安全文檔的SOAP端點，請將值屬性設定為 **false**.
 
    ```as3
    <node name="DRM"> 
@@ -1024,8 +1028,8 @@ Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Word、Microsof
    </node>
    ```
 
-1. 保存`config.xml`。
-1. 匯入設定檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
+1. 儲存 `config.xml`.
+1. 匯入設定檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
 ### 提高文檔安全伺服器的可擴充性 {#increasingscalability}
 
@@ -1033,9 +1037,9 @@ Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Word、Microsof
 
 通過限制發送到客戶端的資訊，可以提高文檔安全伺服器的可擴充性。 向客戶端發送的資訊量減少，從而提高了可擴充性、縮短了響應時間，並且提高了伺服器的效能。 執行下列步驟以提高可擴充性：
 
-1. 導出文檔安全配置檔案。 （請參閱[手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
+1. 導出文檔安全配置檔案。 (請參閱 [手動編輯文檔安全配置檔案](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 1. 在編輯器中開啟配置檔案，並找到「伺服器設定」節點。
-1. 在ServerSettings節點中，將`DisableGlobalOfflineSynchronizationData`屬性的值設定為`true`。
+1. 在ServerSettings節點中，設定 `DisableGlobalOfflineSynchronizationData`屬性 `true`.
 
    `<entry key="DisableGlobalOfflineSynchronizationData" value="true"/>`
 
@@ -1043,6 +1047,6 @@ Acrobat Reader DC Extensions for Microsoft Office是與Microsoft Word、Microsof
 
    >[!NOTE]
    >
-   >預設情況下，`DisableGlobalOfflineSynchronizationData`鍵的值設為`false`。
+   >依預設， `DisableGlobalOfflineSynchronizationData`鍵設為 `false`.
 
-1. 儲存並匯入設定檔案。 （請參閱[手動編輯文檔安全配置檔案](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file)。）
+1. 儲存並匯入設定檔案。 (請參閱 [手動編輯文檔安全配置檔案](/help/forms/using/admin-help/configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)

@@ -1,5 +1,5 @@
 ---
-title: MSM最佳實務
+title: MSM 最佳做法
 seo-title: MSM Best Practices
 description: 尋找由Adobe工程和諮詢團隊編譯的最佳實務，協助您快速上手並執行AEM多網站管理員。
 seo-description: Find best practices compiled by Adobe engineering and consulting teams to help get up and running with the AEM Multi Site Manager.
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 feature: Multi Site Manager
 exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 0%
+source-wordcount: '1558'
+ht-degree: 2%
 
 ---
 
-# MSM最佳實務{#msm-best-practices}
+# MSM 最佳做法{#msm-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 一般 {#general}
 
@@ -51,7 +55,7 @@ MSM是可自動部署內容的可設定架構。 實作通常涉及網站的主�
 
 ## 即時副本來源和Blueprint設定 {#live-copy-sources-and-blueprint-configurations}
 
-請記住，您可使用 [一般頁面](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 或 [Blueprint設定](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 兩者皆為有效的使用案例。
+請記住，您可使用 [一般頁面](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 或 [Blueprint設定](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 兩者都是有效的使用案例。
 
 使用Blueprint配置的額外好處是：
 
@@ -201,7 +205,7 @@ MSM轉出設定可高度自訂。 請注意，自動轉出可能會產生深遠�
 
 本頁及以下各頁涵蓋相關問題：
 
-* [建立和同步Live Copy](/help/sites-administering/msm-livecopy.md)
-* [Live Copy概述主控台](/help/sites-administering/msm-livecopy-overview.md)
-* [配置Live Copy同步](/help/sites-administering/msm-sync.md)
-* [MSM轉出衝突](/help/sites-administering/msm-rollout-conflicts.md)
+* [建立和同步 Live Copy](/help/sites-administering/msm-livecopy.md)
+* [Live Copy 概觀主控台](/help/sites-administering/msm-livecopy-overview.md)
+* [設定 Live Copy 同步](/help/sites-administering/msm-sync.md)
+* [MSM 推出衝突](/help/sites-administering/msm-rollout-conflicts.md)

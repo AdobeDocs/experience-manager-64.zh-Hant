@@ -1,31 +1,35 @@
 ---
-title: 最佳作法
-seo-title: 最佳作法
+title: 最佳做法
+seo-title: Best Practices
 description: 製作最佳實務說明如何以盡可能最有效率和最有效的方式使用AEM。 這份不斷增加的主題清單包含AEM中的多個領域。
-seo-description: 製作最佳實務說明如何以盡可能最有效率和最有效的方式使用AEM。 這份不斷增加的主題清單包含AEM中的多個領域。
+seo-description: Authoring best practices describe how to use AEM in the most efficient and most effective way possible. This growing list of topics includes a variety of areas in AEM.
 uuid: d1f58335-0aa6-4b35-bdcd-cf6051bd1439
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 3%
+source-wordcount: '315'
+ht-degree: 4%
 
 ---
 
 
-# 最佳作法{#best-practices}
+# 最佳做法{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 製作最佳實務說明如何以盡可能最有效率和最有效的方式使用AEM。 這份不斷增加的主題清單包含AEM中的多個領域。
 
 以下幾方面提供有關最佳做法的檔案：
 
-* [資產](#assets)
-* [網站](#sites)
-* [表單](#forms)
+* [Assets](#assets)
+* [Sites](#sites)
+* [Forms](#forms)
 
 如需管理、部署和維護或開發的最佳實務，請參閱下列其中一項：
 
@@ -35,7 +39,7 @@ ht-degree: 3%
 
 下面的表中描述了特定文檔並連結到這些文檔。
 
-## 資產 {#assets}
+## Assets {#assets}
 
 以下主題說明有關資產的最佳實務，包括動態媒體功能和Scene 7整合：
 
@@ -64,14 +68,14 @@ ht-degree: 3%
  </tbody>
 </table>
 
-## 網站 {#sites}
+## Sites {#sites}
 
 管理和編寫網站內容有一些最佳實務，概述如下：
 
-編寫：[製作環境和工具](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) — 提供如何製作頁面的概觀。
+編寫： [製作環境和工具](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md)  — 提供如何編寫頁面的概觀。
 
-## 表單 {#forms}
+## Forms {#forms}
 
-適用性表單：[使用最適化表單的最佳實務](/help/forms/using/adaptive-forms-best-practices.md) — 說明設定、製作和自訂最適化表單的最佳實務。
+適用性表單： [使用最適化表單的最佳實務](/help/forms/using/adaptive-forms-best-practices.md)  — 說明設定、製作和自訂最適化表單的最佳實務。
 
-HTML5表單：[設計HTML5表單的最佳實務](/help/forms/using/best-practices-for-html5-forms.md) — 說明處理HTML5表單版面與設計的最佳實務。
+HTML5表單： [設計HTML5表單的最佳實務](/help/forms/using/best-practices-for-html5-forms.md)  — 說明處理HTML5表單版面與設計的最佳實務。

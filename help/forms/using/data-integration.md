@@ -1,23 +1,27 @@
 ---
 title: AEM Forms資料整合
-seo-title: AEM Forms資料整合
+seo-title: AEM Forms Data Integration
 description: 資料整合可讓您將AEM Forms與不同的資料來源整合，並建立表單資料模型，以建立及使用最適化表單和互動式通訊。
-seo-description: 資料整合可讓您將AEM Forms與不同的資料來源整合，並建立表單資料模型，以建立及使用最適化表單和互動式通訊。
+seo-description: Data Integration lets you integrate AEM Forms with disparate data sources and create form data model to create and work with adaptive forms and interactive communications.
 uuid: 58f65ae0-cf54-4249-92c7-64b557e30491
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
-feature: 表單資料模型
+feature: Form Data Model
 exl-id: 8cbd3fb0-3c87-433e-bfd7-0f93216a5de7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
+source-wordcount: '595'
+ht-degree: 1%
 
 ---
 
-# AEM Forms資料整合簡介{#aem-forms-data-integration}
+# AEM Forms資料整合簡介 {#aem-forms-data-integration}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 資料整合可讓您將AEM Forms與不同的資料來源整合，並建立表單資料模型，以建立及使用最適化表單和互動式通訊。
 
@@ -29,7 +33,7 @@ AEM Forms應用程式（例如最適化表單和互動式通訊）需要與資�
 
 雖然分散的模組化系統有其自身的優點，但挑戰在於整合和建立資料源之間的資料關聯。 資料整合是功能高效的企業基礎架構的關鍵，該基礎架構具有與應用程式連接的不同資料源，用於交換業務資料。
 
-## 資料整合概述{#data-integration-overview}
+## 資料整合概觀 {#data-integration-overview}
 
 ![aem-forms-data-integration](assets/aem-forms-data-integeration.png)
 
@@ -47,7 +51,7 @@ AEM Forms資料整合可讓您設定不同的資料來源，並將其與AEM Form
 * 使用最適化表單規則叫用資料來源服務/操作
 * 將提交的最適化表單資料寫入資料來源
 
-## 開始使用資料整合{#get-started-with-data-integration}
+## 開始使用資料整合 {#get-started-with-data-integration}
 
 實作資料整合的第一步，是識別並設定資料來源，以儲存您要在最適化表單和互動式通訊使用案例中運用的資訊。 接下來，您將建立一個表單資料模型，該模型使用來自一個或多個資料源的資料模型對象、屬性和服務。 您可以根據表單資料模型建立最適化表單和互動式通訊，互動式通訊中的最適化表單欄位或預留位置會系結至個別資料來源屬性。
 

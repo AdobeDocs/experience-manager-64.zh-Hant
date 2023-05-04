@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 7%
+source-wordcount: '1109'
+ht-degree: 8%
 
 ---
 
 # 已知問題 {#known-issues}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 本頁保留2018年4月發行的Adobe Experience Manager 6.4已知問題清單。 如需已知問題的詳細資訊， [聯絡支援](https://helpx.adobe.com/tw/support/experience-manager.html).
 
@@ -46,7 +50,7 @@ ht-degree: 7%
 * 選擇 **[!UICONTROL 始終關閉]**.
 * 重新啟動瀏覽器。
 
-## 平台 {#platform}
+## Platform {#platform}
 
 * **操作儀表板：** 備份檔案缺少.zip副檔名時，進度列不會顯示。 (GRANITE-10713)
 * **HTL:** 套件宣告中尾隨空白字元的Java Use物件會凍結SightlyJavaCompilerService(GRANITE-20836)

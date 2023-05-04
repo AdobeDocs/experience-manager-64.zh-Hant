@@ -1,25 +1,29 @@
 ---
 title: AEM Forms簡介
-seo-title: AEM Forms簡介
+seo-title: Introduction to AEM Forms
 description: 透過Adobe Experience Manager Forms，商務使用者可將吸引人、回應式和最適化的表單整合至網頁和行動網站，簡化數位註冊程式，並提高客戶轉換率。
-seo-description: 透過Adobe Experience Manager Forms，商務使用者可將吸引人、回應式和最適化的表單整合至網頁和行動網站，簡化數位註冊程式，並提高客戶轉換率。
+seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: 9e9a164a-4a74-4096-98b8-800ea610edd8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
-feature: 適用性表單
+feature: Adaptive Forms
 exl-id: 0a79111d-e42f-4eb6-8bc4-ab97424e7f90
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 0%
+source-wordcount: '946'
+ht-degree: 10%
 
 ---
 
-# AEM Forms簡介{#introduction-to-aem-forms}
+# AEM Forms簡介 {#introduction-to-aem-forms}
 
-如需AEM Forms最新功能和增強功能的相關資訊，請參閱[AEM Forms的新功能](/help/forms/using/whats-new.md)。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+如需AEM Forms最新功能和增強功能的相關資訊，請參閱 [AEM Forms的新功能](/help/forms/using/whats-new.md).
 
 ## 關於AEM Forms {#about-aem-forms}
 
@@ -29,13 +33,13 @@ AEM Forms將表單製作、管理和發佈與通信管理功能、檔案安全�
 
 AEM Forms運用並延伸您現有XFA表單投資和AdobeLiveCycle解決方案的功能。
 
-在大型企業中，表單通常只需建立一次，然後通過複製到內容管理系統來重複使用。 保持大型表單資料庫的最新狀態並使其可被發現，這是一個相當大的挑戰。 AEM提供可自訂的Forms入口網站，確保客戶在網頁和行動裝置頻道間都能找到並存取所需表單。
+在大型企業中，表單通常是建立一次並透過複製到內容管理系統來重複使用。保持大型表單資料庫的最新狀態並使其可被發現，這是一個相當大的挑戰。 AEM 提供可自訂的表單入口網站，確保客戶可透過 Web 和行動管道找到並存取他們需要的表單。
 
-AEM Forms提供的表單管理工具不僅可讓您管理最適化表單，還可管理XFA表單、PDF forms和相關資產。 如需詳細資訊，請參閱[管理表單簡介](/help/forms/using/introduction-managing-forms.md)。
+AEM Forms提供的表單管理工具不僅可讓您管理最適化表單，還可管理XFA表單、PDF forms和相關資產。 如需詳細資訊，請參閱 [管理表單簡介](/help/forms/using/introduction-managing-forms.md).
 
 ![](do-not-localize/4th-draft.gif)
 
-### 關鍵功能{#key-capabilities}
+### 關鍵功能 {#key-capabilities}
 
 總而言之，AEM Forms提供了功能強大的表單管理功能，如以下功能，可減少手動流程並提高客戶滿意度。
 
@@ -47,7 +51,7 @@ AEM Forms提供的表單管理工具不僅可讓您管理最適化表單，還�
 * 與Adobe Document Cloud eSign Services或Scribble整合，以電子方式簽署包含機密資訊的檔案
 * 自動化表單發佈功能，以及透過多個管道提供及時、個人化且一致的通訊的能力
 
-## AEM表單類型{#aem-form-types}
+## AEM表單類型 {#aem-form-types}
 
 AEM Forms可讓您擴充新表單和現有表單以建立：
 
@@ -60,13 +64,13 @@ PDF forms可離線填寫、儲存於本機，並可在您下次上線時傳送�
 
 **HTML表單**
 
-HTML5瀏覽器型表單可在行動裝置和案頭瀏覽器上檢視。 您可以使用手寫或電子簽名服務以電子方式簽署HTML表單。
+HTML5瀏覽器型表單可在行動裝置和案頭瀏覽器上檢視。 您可以使用手寫或eSign服務以電子方式簽署HTML表單。
 
-**適用性表單**
+**調適型表單**
 
 視需要新增或移除欄位或區段，最適化表單可動態適應使用者回應。 AEM可讓您重複使用AdobeXML表單範本，以建立最適化表單。
 
-### 支援的功能{#supported-features}
+### 支援的功能 {#supported-features}
 
 所有表單類型都支援下列功能：
 
@@ -77,9 +81,9 @@ HTML5瀏覽器型表單可在行動裝置和案頭瀏覽器上檢視。 您可�
 * 協助工具設計和檢查
 * 可在伺服器端儲存表單
 * 支援檔案附件
-* 與HTML工作區整合以擷取資料
+* 與HTML工作區整合以進行資料擷取
 
-## 離線資料收集{#offline-data-collection-br}
+## 離線資料收集 {#offline-data-collection-br}
 
 提交表單資料後，Adobe Experience Manager會將表單資料與現有系統、業務規則及必要人員連結。
 
@@ -89,7 +93,7 @@ AEM Forms提供Forms Workspace，此行動應用程式可將您的數位業務�
 
 **使用Forms Workspace進行離線資料收集的優點**
 
-* 簡單易用的HTML工作區應用程式，用於任務指派和追蹤
+* 簡單易用的HTML工作區應用程式，用於任務分配和跟蹤
 * 拖放式工作流程設計環境
 * 企業內容管理連接器(ECM)
 * 開放標準支援，包括XML和SOAP，以連接表單資料與企業系統
@@ -99,15 +103,15 @@ AEM Forms提供Forms Workspace，此行動應用程式可將您的數位業務�
 
 ![](do-not-localize/3rd-draft.gif)
 
-## 個性化通信{#personalized-communication}
+## 個人化通訊 {#personalized-communication}
 
-高效自助式數位體驗的重要元件，是及時傳達個人化資訊，供使用者從任何位置和裝置存取。 個人化和及時的通訊可改善轉換率和使用者滿意度。
+高效率自助服務數位體驗的一個重要組成元件是及時通訊，使用者可以從任何地方在任何裝置上存取個人化的資訊。個人化和及時的通訊可以提高轉換率和使用者滿意度。
 
 使用AEM Forms，業務使用者可以透過自訂檔案範本、納入後端程式的資訊，以及包括互動式元件，建立引人入勝的個人化使用者體驗。 直觀的用戶介面幫助非技術用戶開發業務規則，這些規則根據查詢決定何時生成通信，或啟動用戶生成的響應。
 
-個人化文檔（如收據、歡迎工具包和對帳單）可以輕鬆地跨多個渠道傳送。 組織可以推動流向個性化的Web門戶，從而導致註冊或購買其他服務。
+個人化文檔（如收據、歡迎工具包和對帳單）可以輕鬆地跨多個渠道傳送。 組織可以將流量吸引到個人化的 Web 入口網站，進而讓使用者註冊或購買額外的服務。
 
-**主要功能**
+**重要功能**
 
 * 支援範本、內容區塊、業務規則等的通信製作環境
 * 文檔轉換和匯編
@@ -117,4 +121,4 @@ AEM Forms提供Forms Workspace，此行動應用程式可將您的數位業務�
 * AEM Forms的檔案安全附加元件，包括加密、使用原則、追蹤和稽核
 
 ![](do-not-localize/layout-02.png)
-**圖：** *簡化個人化通訊工作流程*
+**圖：** *簡化的個人化通訊工作流程*

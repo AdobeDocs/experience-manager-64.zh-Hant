@@ -1,24 +1,28 @@
 ---
 title: 預覽表單
-seo-title: 預覽表單
+seo-title: Previewing a form
 description: 您可以在發佈或啟動表單之前進行預覽，確保表單符合預期。 預覽選項可能因支援的表單類型而異。
-seo-description: 您可以在發佈或啟動表單之前進行預覽，確保表單符合預期。 預覽選項可能因支援的表單類型而異。
+seo-description: You can preview your forms before publishing or activating to ensure it meets the expectations. Preview options may vary across the supported form types.
 uuid: 9ec359ea-f518-441c-9c3d-e3c1ea07a532
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
-feature: 適用性表單
+feature: Adaptive Forms
 exl-id: 130bdc9f-b19e-4b7d-a6ad-ef5097c9cf41
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '401'
 ht-degree: 3%
 
 ---
 
-# 預覽表單{#previewing-a-form}
+# 預覽表單 {#previewing-a-form}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 在AEM Forms中，您可以預覽存放庫中顯示的表單和檔案。 預覽有助於確切了解表單發佈給使用者時的外觀和行為。
 
@@ -38,7 +42,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td>PDF表單</td> 
-   <td>使用資料預覽和預覽PDF<br /> </td> 
+   <td>PDF預覽和預覽資料<br /> </td> 
   </tr>
   <tr>
    <td>適用性表單</td> 
@@ -51,13 +55,13 @@ ht-degree: 3%
  </tbody>
 </table>
 
-## 預覽表單{#previewing-a-form-1}
+## 預覽表單 {#previewing-a-form-1}
 
-1. 選取您要預覽的資產，然後按一下動作工具列中的「預覽![aem6forms_preview](assets/aem6forms_preview.png)」 。
+1. 選取您要預覽的資產，然後按一下「預覽」 ![aem6forms_preview](assets/aem6forms_preview.png) （在操作工具欄中）。
 
    >[!NOTE]
    >
-   >若要選取資產，請從預設的卡片檢視切換至清單檢視。 按一下![aem6formsviewlist](assets/aem6forms_viewlist.png)或![aem6formsviewcard](assets/aem6forms_viewcard.png)以切換檢視。
+   >若要選取資產，請從預設的卡片檢視切換至清單檢視。 按一下 ![aem6forms_viewlist](assets/aem6forms_viewlist.png) 或 ![aem6forms_viewcard](assets/aem6forms_viewcard.png) 切換檢視。
 
 1. 按一下「預覽」會列出適用於所選資產類型的可能預覽選項。 按一下所需的選項，在新索引標籤中呈現選取的資產。
 
@@ -69,7 +73,7 @@ ht-degree: 3%
 
 ## 以資料預覽 {#preview-with-data}
 
-選擇「**預覽資料**」時，您可以看到表單中輸入的真實資料外觀。 使用資料預覽選項可讓您上傳包含範例使用者資料的XML。 範例使用者資料可用來以您選擇的格式填入預覽表單。
+選取 **使用資料預覽**，您就會看到表單中輸入的真實資料外觀。 使用資料預覽選項可讓您上傳包含範例使用者資料的XML。 範例使用者資料可用來以您選擇的格式填入預覽表單。
 
-1. 選取資產，按一下「預覽![aem6forms_preview](assets/aem6forms_preview.png)」，然後選取「預覽資料&#x200B;**」。**
+1. 選取資產，按一下「預覽」 ![aem6forms_preview](assets/aem6forms_preview.png)，然後選取 **使用資料預覽**.
 1. 在「預覽表單」對話框中，將FormData作為XML檔案提供。 按一下「預覽」，使用XML中的合併資料呈現表單。

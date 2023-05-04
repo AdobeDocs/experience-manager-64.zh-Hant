@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 exl-id: 89e45231-885a-4d35-839b-2b50239503ad
-source-git-commit: 199ee2b38cbffc2b97e0fd3c25d828a7e5718bf3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1807'
 ht-degree: 2%
 
 ---
 
 # SPA和伺服器端轉譯{#spa-and-server-side-rendering}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >單頁應用程式(SPA)編輯器功能需要 [AEM 6.4 service pack 2](https://helpx.adobe.com/tw/experience-manager/6-4/release-notes/sp-release-notes.html) 或更新版本。
@@ -190,7 +194,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 預設處理常式的設定必須依照一節所述進行設定 [遠端內容轉譯器設定](#remote-content-renderer-configuration).
 
-### 遠端內容轉譯器使用狀況 {#usage}
+###遠端內容轉譯器使用狀況 {#usage}
 
 若要讓servlet擷取並傳回可插入頁面的某些內容：
 

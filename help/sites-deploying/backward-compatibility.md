@@ -1,30 +1,34 @@
 ---
 title: AEM 6.4的向後相容性
-seo-title: AEM 6.4的向後相容性
+seo-title: Backward Compatibility in AEM 6.4
 description: 了解如何讓您的應用程式和設定與AEM 6.4相容
-seo-description: 了解如何讓您的應用程式和設定與AEM 6.4相容
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.4
 uuid: 2fa8525e-7f3b-4096-ac85-01c2c76bc9ac
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
-feature: 升級
+feature: Upgrading
 exl-id: 5798100a-e03a-43f8-9189-ae51c06e192b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: '522'
+ht-degree: 1%
 
 ---
 
-# AEM 6.4{#backward-compatibility-in-aem}中的向後相容性
+# AEM 6.4的向後相容性{#backward-compatibility-in-aem}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 >[!NOTE]
 >
->有關不在「相容性包」範圍內的內容和配置更改的清單，請參閱AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的[儲存庫重組。
+>有關不在相容性包範圍內的內容和配置更改的清單，請參見 [AEM 6.4中的存放庫重新調整架構](/help/sites-deploying/repository-restructuring.md).
 
 在AEM 6.4中，所有功能都是針對回溯相容性而開發。
 
@@ -40,7 +44,7 @@ ht-degree: 0%
 
 ![screen_shot_2018-04-05at43339pm](assets/screen_shot_2018-04-05at43339pm.png)
 
-相容性包有兩種模式：**已啟用路由**&#x200B;和&#x200B;**已禁用路由**。
+相容性包有兩種模式： **已啟用路由** 和 **已禁用路由**.
 
 這可讓AEM 6.4以三種模式執行：
 
@@ -62,7 +66,7 @@ ht-degree: 0%
 
 ## 設定方法 {#how-to-set-up}
 
-AEM 6.3相容性套件可使用套件管理器以套件形式安裝。 您可以從Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63)網站下載[AEM 6.3相容性套件。
+AEM 6.3相容性套件可使用套件管理器以套件形式安裝。 您可以下載 [來自Software Distribution的AEM 6.3相容性套件](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) 頁簽。
 
 安裝相容性套件後，即可使用OSGI配置中的交換機來啟用或禁用路由，如下所示：
 

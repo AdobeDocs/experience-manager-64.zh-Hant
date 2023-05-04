@@ -1,8 +1,8 @@
 ---
 title: OSGI套件組合
-seo-title: OSGI套件組合
+seo-title: OSGI Bundles
 description: 管理OSGi套件組合的秘訣
-seo-description: 管理OSGi套件組合的秘訣
+seo-description: Tips for managing your OSGi bundles
 uuid: 07af7089-a233-4e5b-928c-76ddc0af8839
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,37 +10,41 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12
 exl-id: 19df20a9-7c89-4dfa-8eca-81c4a14c21ff
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 0%
+source-wordcount: '387'
+ht-degree: 1%
 
 ---
 
 # OSGI套件組合{#osgi-bundles}
 
-## 使用語義版本設定{#use-semantic-versioning}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-在[https://semver.org/](https://semver.org/)可找到語義版本編號的商定最佳做法。
+## 使用語義版本 {#use-semantic-versioning}
 
-## 請勿嵌入OSGi套件組合{#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}中嚴格要求的更多類和jar
+有關語義版本編號的商定最佳做法，請參見 [https://semver.org/](https://semver.org/).
 
-應將通用程式庫分解為個別套件。 這可讓這些檔案在您的套件組合中重複使用。 在OSGI套件組合中包裝&#x200B;*JAR*&#x200B;時，請務必檢查線上來源，查看之前是否有人已這麼做。 查找現有捆綁包裝的一些常見位置包括：Apache Felix、Apache Sling、Apache Geronimo、Apache ServiceMix、Eclipse套件配方和SpringSource Enterprise套件存放庫。
+## 請勿嵌入OSGi套件組合中嚴格需要的更多類和jar {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-## 取決於所需的最低捆綁版本{#depend-on-the-lowest-needed-bundle-versions}
+應將通用程式庫分解為個別套件。 這可讓這些檔案在您的套件組合中重複使用。 包裝 *JAR* 在OSGI套件組合中，請務必檢查線上來源，以查看之前是否有人已執行此動作。 查找現有捆綁包裝的一些常見位置包括：Apache Felix、Apache Sling、Apache Geronimo、Apache ServiceMix、Eclipse套件配方和SpringSource Enterprise套件存放庫。
+
+## 視所需套件版本最低而定 {#depend-on-the-lowest-needed-bundle-versions}
 
 對於POM檔案中的編譯時間相依性，一律取決於需要的最低版本，可公開所需的API。 這可提高回溯相容性，並讓回轉修正程式更容易移植至舊版。
 
-## 從OSGi套件組合{#export-a-minimal-set-of-packages-from-osgi-bundles}導出最小的套件集
+## 從OSGi套件組合導出最小的套件集 {#export-a-minimal-set-of-packages-from-osgi-bundles}
 
 匯出套件後，我們即建立可供其他人依賴的API。 請務必盡量少匯出，並確認要匯出的是API。 取用私人方法/類別並將其公開比取用先前匯出的項目並使其為私人容易得多。
 
-實作應一律放在個別的&#x200B;*impl*&#x200B;套件中。 依預設，*maven-bundle-plugin*&#x200B;將匯出專案中名稱不含&#x200B;*impl*&#x200B;的任何項目。
+實作應一律放置在個別 *impl* 包。 依預設， *maven-bundle-plugin* 會匯出專案中沒有 *impl* 以其名義。
 
-## 始終顯式定義導出{#always-explicitly-define-a-semantic-version-for-each-package-exported}的每個包的語義版本
+## 始終顯式定義導出的每個包的語義版本 {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 
 這可讓API的消費者與您一同成長。 執行此操作時，請始終遵循語義版本設定最佳實務。 這可讓API的消費者了解新版本中預期的變更類型。
 
-## 包含公開{#include-metatype-information-where-exposed}的元類型資訊
+## 包含公開的元類型資訊 {#include-metatype-information-where-exposed}
 
-借由指定有意義的中繼類型資訊，可讓您在Felix主控台中更輕鬆了解您的服務和元件。 SCR注釋和屬性的清單可在以下位置找到：[https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html)。
+借由指定有意義的中繼類型資訊，可讓您在Felix主控台中更輕鬆了解您的服務和元件。 SCR注釋和屬性的清單可在以下位置找到： [https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/scr-annotations.html).

@@ -12,14 +12,18 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: c85e442a-eb24-4eda-a49b-089e5988150d
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '6642'
+source-wordcount: '6678'
 ht-degree: 8%
 
 ---
 
 # 基礎元件{#foundation-components}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -601,13 +605,13 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
-### 引用 {#reference}
+### 參考 {#reference}
 
 此 **參考** 元件可讓您參照AEM網站其他頁面（在目前例項內）的文字。 然後，所引用段落的內容就會顯示為位於當前頁面上。 當來源段落變更時，內容將會更新（可能需要重新整理頁面）。
 
 * **段落引用**
 
-   * **引用**
+   * **參考**
 
       指定您要參考的頁面和段落（包括內容）的路徑。
 

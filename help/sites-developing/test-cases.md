@@ -1,8 +1,8 @@
 ---
 title: 定義測試案例
-seo-title: 定義測試案例
+seo-title: Defining your Test Cases
 description: 您的測試案例應根據使用案例和詳細的需求規格
-seo-description: 您的測試案例應根據使用案例和詳細的需求規格
+seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
 uuid: 82dff825-da58-49a2-bf35-f5bb905e523d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 exl-id: ad529be3-9d31-492f-943f-ef3e99e13586
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 0%
+source-wordcount: '565'
+ht-degree: 1%
 
 ---
 
-# 定義您的測試案例{#defining-your-test-cases}
+# 定義測試案例{#defining-your-test-cases}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 您的測試案例應以下列項目為基礎：
 
@@ -39,7 +43,7 @@ ht-degree: 0%
 
 自動化測試用例的前景顯然很有吸引力，因為它可以消除重複性任務。
 
-## 手動測試與自動測試{#manual-versus-automated-tests}
+## 手動測試與自動測試 {#manual-versus-automated-tests}
 
 不過，自動化測試案例是一項重大投資，因此應考慮某些方面：
 
@@ -48,22 +52,20 @@ ht-degree: 0%
 * 只有大項目才真正可行。
 * 當為測試或長期發行計畫產生多個發行時即適用。
 
-## 測試特定方面{#testing-specific-aspects}
+## 測試特定方面 {#testing-specific-aspects}
 
 在測試AEM時，需特別注意一些特定詳細資訊：
 
 製作和發佈環境
 
-不過，在[Environments](/help/sites-developing/the-basics.md#environments)中，值得強調AEM在測試方面的決定因素。
+不過， [環境](/help/sites-developing/the-basics.md#environments) 有必要強調AEM在測試方面的決定性因素。
 
 您必須將AEM視為兩個應用程式：
 
-* **作者**環境
-此例項可讓作者輸入及發佈內容。
+* the **作者** 環境此例項可讓作者輸入和發佈內容。
 這有一小組(er)可預測的用戶，對於這些用戶，特定功能和效能至關重要。
-* **發佈**環境
-此例項以發佈的形式呈現網站，供訪客存取。
-這通常會有較大的使用者集，其中流量並不總是100%可預測。 效能仍至關重要 — 在回應請求時。 還必須考慮快取和負載平衡。
+* the **發佈** 環境此例項以發佈的表單呈現網站，供訪客存取。
+這通常會有較大的使用者集，其中的流量並不總是100%可預測。 效能仍至關重要 — 在回應請求時。 還必須考慮快取和負載平衡。
 
 雖然軟體與此相同，但它們：
 
@@ -75,7 +77,7 @@ ht-degree: 0%
 
 換句話說，它們必須分別測試，並搭配不同的測試案例。
 
-**個性化**
+**個人化**
 
 測試個人化時，應使用多個使用者帳戶重複每個個別使用案例，以證明行為。
 
@@ -89,15 +91,15 @@ ht-degree: 0%
 
 * **準確度**;確保網站訪客看到內容更新。
 * **連續性**;確保當一台伺服器關閉時該網站仍可用。
-* **** ClustersClusters用於提供：
-   * ****
-故障轉移如果一台伺服器出現故障，群集中的其他伺服器將接管處理。
-   * ****
-採用完全故障轉移的效能負載平衡提高了群集的效能。
+* **叢集** 群集用於提供：
+   * **故障轉移**
+如果一台伺服器出現故障，群集中的其他伺服器將接管處理。
+   * **效能**
+通過完全故障轉移實現負載平衡可提高群集的效能。
 
 當用於客戶項目時，必須測試群集以確認配置的正確操作。
 
-## 測試第三方軟體{#testing-third-party-software}
+## 測試第三方軟體 {#testing-third-party-software}
 
 任何與AEM介面的第三方軟體都將在詳細需求規格中參考。
 

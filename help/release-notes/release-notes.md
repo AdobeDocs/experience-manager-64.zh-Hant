@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 exl-id: ee034595-2d2a-4887-86c4-6bf0770da6a2
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2729'
-ht-degree: 6%
+source-wordcount: '2765'
+ht-degree: 5%
 
 ---
 
 # Adobe Experience Manager 6.4的一般發行說明 {#general-release-notes-for-adobe-experience-manager}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 發行資訊 {#release-information}
 
@@ -28,9 +32,9 @@ ht-degree: 6%
 | 正式發行日期 | 2018 年 4 月 4 日 |
 | 建議的更新 | 請參閱 [AEM版本和更新](https://helpx.adobe.com/tw/experience-manager/aem-releases-updates.html) |
 
-### Trivia {#trivia}
+### 特里維亞 {#trivia}
 
-此版Adobe Experience Manager的發行週期從2017年4月27日開始，經過22次反覆品質保證和錯誤修正，並於2018年3月22日結束。 這一版發行中修正的客戶相關問題，包括加強與新功能，總共有 704 個。
+此版Adobe Experience Manager的發行週期從2017年4月27日開始，經過22次反覆品質保證和錯誤修正，並於2018年3月22日結束。 此版本中修正的客戶相關問題（包括增強功能和新功能）總數為704。
 
 Adobe Experience Manager 6.4自2018年4月4日起全面推出。
 
@@ -38,7 +42,7 @@ Adobe Experience Manager 6.4自2018年4月4日起全面推出。
 >
 >Adobe建議安裝最新的Service Pack，因為所有新功能套件僅透過 [Service Pack](https://helpx.adobe.com/tw/experience-manager/maintenance-releases-roadmap.html).
 
-## 新功能 {#what-s-new}
+## 新增功能 {#what-s-new}
 
 Adobe Experience Manager 6.4 是 Adobe Experience Manager 6.3 程式碼庫的升級版本。此版本提供全新的增強功能、重要客戶修正、高優先順序的客戶增強功能，以及針對產品穩定化的一般錯誤修正。其中也包含大部分的Adobe Experience Manager 6.3 Feature Pack、Hotfix和Service Pack版本。
 
@@ -185,11 +189,11 @@ AEM 6.4社群公開 [現成可用的API](/help/communities/user-ugc-management-s
 
 AEM 6.4為Assets提供數項新功能和增強功能，包括全新、改良的CreativeCloud整合、重要的人工智慧創新、改善的中繼資料管理、報表增強功能，以及整體使用者體驗改善。 中可用變更的完整清單 [AEM Assets](assets.md). 此版本的重點為：
 
-**Adobe資產連結**
+**Adobe Asset Link**
 
 AdobeCreative Cloud中的企業資產連結可簡化創意人員與行銷人員在內容建立程式中的協作。 這是Creative Cloud中企業的新原生功能，可將Photoshop、Illustrator和InDesign連接至AEM，創意人員無需離開其選擇的工具。
 
-若要深入了解此功能、必要條件及存取方式，請參閱 [Adobe資產連結](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+若要深入了解此功能、必要條件及存取方式，請參閱 [Adobe資產連結](https://www.adobe.com/tw/creativecloud/business/enterprise/adobe-asset-link.html).
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
@@ -209,7 +213,7 @@ AEM案頭應用程式已更新至與AEM 6.4相容的1.8版。AEM案頭應用程�
 
 各種增強功能包括可同時匯入和匯出大量資產和進階中繼資料建構的中繼資料，例如 [階層式中繼資料](/help/assets/cascading-metadata.md).
 
-**報表**
+**報告**
 
 AEM 6.4中的資產報表已進行大幅修改，提供新的報表架構、使用者體驗，以及更多適用於客戶使用案例的OOTB報表。 若要了解如何產生各種報表，請參閱 [資產報表](/help/assets/asset-reports.md).
 

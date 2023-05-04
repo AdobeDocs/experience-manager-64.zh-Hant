@@ -1,8 +1,8 @@
 ---
 title: 編輯頁面時的註解
-seo-title: 編輯頁面時的註解
+seo-title: Annotations when Editing a Page
 description: 將內容新增至網站的頁面通常要經過實際發佈前的討論。 為此，許多與內容直接相關的元件允許您添加註釋。
-seo-description: 將內容新增至網站的頁面通常要經過實際發佈前的討論。 為此，許多與內容直接相關的元件允許您添加註釋。
+seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -11,14 +11,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
 
 # 編輯頁面時的註解{#annotations-when-editing-a-page}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 將內容新增至網站的頁面通常要經過實際發佈前的討論。 為此，許多與內容直接相關的元件（例如，與版面相對）允許您添加註釋。
 
@@ -44,7 +48,7 @@ ht-degree: 0%
 
 根據段落設計，注釋可作為上下文菜單上的選項（通常是在所需段落上滑鼠右鍵）或作為段落編輯欄上的按鈕使用。
 
-無論是哪種情況，請選擇&#x200B;**注釋**。 將對段落應用彩色註解，您將立即處於「編輯」模式，允許您直接添加文本：
+無論是哪種情況，請選擇 **注釋**. 將對段落應用彩色註解，您將立即處於「編輯」模式，允許您直接添加文本：
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
@@ -71,7 +75,7 @@ ht-degree: 0%
 >註解無法添加到已被其他用戶鎖定的頁面。
 
 
-## 注釋草繪{#annotation-sketches}
+## 注釋草繪 {#annotation-sketches}
 
 >[!NOTE]
 >
@@ -79,9 +83,7 @@ ht-degree: 0%
 >
 >* 將不會顯示圖示。
 >* 將不顯示在其他瀏覽器中建立的現有草繪。
-
 >
-
 
 
 草繪是注釋的一種特徵，允許您在瀏覽器窗口（可見部分）上的任意位置建立簡單的線圖形：
@@ -97,12 +99,12 @@ ht-degree: 0%
 
    * 直線：
 
-      按住`ALT`並按一下起始點和終止點；按兩下即可完成。
+      按住 `ALT` 按一下起點和終點；按兩下即可完成。
 
 * 退出草繪方式後，可以按一下草繪線以選取該草繪。
 * 通過選取草繪，然後將其拖動到所需位置來移動草繪。
 * 草圖會覆蓋內容。 這表示在草繪的4個角內，不能按一下基礎段落；例如，如果您需要編輯或存取連結。 如果這成為問題（例如，您有一個草圖覆蓋了頁面的很大區域），則將適當的注釋最小化，因為這也會使所有相關草圖最小化，從而允許您訪問基礎區域。
-* 要刪除單個草繪 — 選擇所需的草繪，然後按&#x200B;**Delete**&#x200B;鍵（**fn**-**MAC上的背景空間**）。
+* 要刪除單個草繪 — 選取所需草繪，然後按 **刪除** 鍵(**fn**-**空格** 在MAC上)。
 
 * 如果移動或複製段落，則任何相關注釋及其草繪也將移動或複製；他們對該款的立場將保持不變。
 * 如果刪除注釋，則附加到該注釋的所有草繪也將被刪除。

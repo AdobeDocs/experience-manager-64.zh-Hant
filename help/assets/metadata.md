@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: 05bbf89a-4cf5-49bb-aea8-a585c641eda2
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1446'
 ht-degree: 5%
 
 ---
 
 # 管理數位資產的中繼資料 {#managing-metadata-for-digital-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 [!DNL Adobe Experience Manager Assets] 保留每個資產的中繼資料。 它可讓資產分類和組織更輕鬆，並協助尋找特定資產的人。 能夠從上傳至的檔案中擷取中繼資料 [!DNL Experience Manager Assets]，中繼資料管理會與創意工作流程整合。 您可以使用資產保留和管理中繼資料，並根據資產的中繼資料自動組織和處理資產。
 

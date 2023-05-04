@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 0%
+source-wordcount: '714'
+ht-degree: 2%
 
 ---
 
 # 自訂主控台{#customizing-the-consoles}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
@@ -37,7 +41,7 @@ AEM提供多種機制，讓您自訂主控台(和 [頁面製作功能](/help/sit
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱：
+>如需進一步詳細資訊，請參閱：
 >
 >* 使用和建立 [clientlibs](/help/sites-developing/clientlibs.md).
 >* 使用和建立 [覆蓋](/help/sites-developing/overlays.md).

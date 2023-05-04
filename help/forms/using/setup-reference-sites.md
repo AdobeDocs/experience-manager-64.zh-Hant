@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2911'
-ht-degree: 2%
+source-wordcount: '2947'
+ht-degree: 3%
 
 ---
 
 # 設定AEM Forms參考網站 {#set-up-and-configure-aem-forms-reference-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM Forms提供參考網站實作，以示範AEM Forms如何協助金融服務行業和政府組織，隨時隨地在任何裝置上將其複雜的交易轉換為簡單而吸引人的數位體驗。
 
@@ -69,22 +73,22 @@ We.Finance和We.Gov參考網站會繪製真實的使用案例，以便與現有�
   </tr> 
   <tr> 
    <td><a href="#installaemforms">安裝及設定AEM Forms</a></td> 
-   <td>製作和發佈</td> 
+   <td>作者和發佈</td> 
    <td>安裝及設定AEM Forms製作和發佈執行個體。</td> 
   </tr> 
   <tr> 
    <td><a href="#ssl">配置SSL</a></td> 
-   <td>製作和發佈<br /> </td> 
+   <td>作者和發佈<br /> </td> 
    <td>啟用HTTP over SSL以安全地與Acrobat Sign通訊。</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">配置Day CQ Link Externalizer configuration</a></p> </td> 
-   <td>製作和發佈<br /> </td> 
+   <td>作者和發佈<br /> </td> 
    <td><p>參考網站使用案例會針對不同的交易傳送電子郵件。 透過電子郵件傳送電子報時，須使用此設定。 它可確保URL和影像指向發佈例項。 </p> </td> 
   </tr> 
   <tr> 
    <td><a href="#cqmail">設定Day CQ Mail Service</a></td> 
-   <td>製作和發佈</td> 
+   <td>作者和發佈</td> 
    <td>電子郵件通訊所需。</td> 
   </tr> 
   <tr> 
@@ -104,22 +108,22 @@ We.Finance和We.Gov參考網站會繪製真實的使用案例，以便與現有�
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#optional-import-sample-data-into-microsoft-dynamics">將範例資料匯入Microsoft Dynamics</a></td> 
-   <td>製作和發佈</td> 
+   <td>作者和發佈</td> 
    <td>信用卡申請、住房抵押申請和住房保險申請逐步導入樣本資料</td> 
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">為Microsoft Dynamics設定OAuth雲端服務</a></td> 
-   <td>製作和發佈</td> 
+   <td>作者和發佈</td> 
    <td>在AEM Forms中設定OAuth雲端服務，以啟用AEM Forms與Microsoft Dynamics之間的通訊。 </td> 
   </tr> 
   <tr> 
    <td><a href="#scheduler">設定Acrobat Sign排程器</a></td> 
-   <td>製作和發佈<br /> </td> 
+   <td>作者和發佈<br /> </td> 
    <td>變更排程器的設定，每兩分鐘檢查一次狀態。</td> 
   </tr> 
   <tr> 
    <td><a href="#sign-service">設定參考網站Acrobat SignCloud Service</a></td> 
-   <td>製作和發佈<br /> </td> 
+   <td>作者和發佈<br /> </td> 
    <td>隨參考站點包一起提供的配置，需要使用有效憑據重新配置。</td> 
   </tr> 
   <tr> 
@@ -129,7 +133,7 @@ We.Finance和We.Gov參考網站會繪製真實的使用案例，以便與現有�
   </tr> 
   <tr> 
    <td><a href="#fdm">修改表單資料模型的Rest服務Swagger檔案</a></td> 
-   <td>製作和發佈<br /> </td> 
+   <td>作者和發佈<br /> </td> 
    <td>修改您環境的服務。</td> 
   </tr> 
  </tbody> 

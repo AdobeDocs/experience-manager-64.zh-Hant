@@ -1,8 +1,8 @@
 ---
 title: 為卸載建立並佔用作業
-seo-title: 為卸載建立並佔用作業
+seo-title: Creating and Consuming Jobs for Offloading
 description: Apache Sling Discovery功能提供Java API，可讓您建立使用JobManager作業和JobConsumer服務
-seo-description: Apache Sling Discovery功能提供Java API，可讓您建立使用JobManager作業和JobConsumer服務
+seo-description: The Apache Sling Discovery feature provides a Java API that enables you to create JobManager jobs and JobConsumer services that consume them
 uuid: d6a5beb0-0618-4b61-9b52-570862eac920
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,40 +10,44 @@ topic-tags: platform
 content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 exl-id: ec5253cd-7f1e-4408-9765-8aaa9a81095c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
-# 建立和使用卸載的作業{#creating-and-consuming-jobs-for-offloading}
+# 為卸載建立並佔用作業{#creating-and-consuming-jobs-for-offloading}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 Apache Sling Discovery功能提供Java API，可讓您建立使用JobManager作業和JobConsumer服務。
 
-有關建立卸載拓撲和配置主題消耗的資訊，請參閱[卸載作業](/help/sites-deploying/offloading.md)。
+如需建立卸載拓撲和配置主題消耗的相關資訊，請參閱 [卸載作業](/help/sites-deploying/offloading.md).
 
-## 處理作業負載{#handling-job-payloads}
+## 處理作業負載 {#handling-job-payloads}
 
 卸載框架定義了用於標識作業裝載的兩個作業屬性。 卸載複製代理使用這些屬性來標識要複製到拓撲中實例的資源：
 
-* `offloading.job.input.payload`:以逗號分隔的內容路徑清單。內容會複製到執行作業的執行個體。
-* `offloading.job.output.payload`:以逗號分隔的內容路徑清單。作業執行完成後，作業裝載將複製到建立作業的執行個體上的這些路徑。
+* `offloading.job.input.payload`:以逗號分隔的內容路徑清單。 內容會複製到執行作業的執行個體。
+* `offloading.job.output.payload`:以逗號分隔的內容路徑清單。 作業執行完成後，作業裝載將複製到建立作業的執行個體上的這些路徑。
 
-使用`OffloadingJobProperties`列舉來參照屬性名稱：
+使用 `OffloadingJobProperties` 枚舉以引用屬性名稱：
 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
 
 作業不需要裝載。 但是，如果作業需要操作資源，並且作業被卸載到未建立該作業的電腦上，則需要裝載。
 
-## 建立卸載作業{#creating-jobs-for-offloading}
+## 建立卸載作業 {#creating-jobs-for-offloading}
 
 建立調用JobManager.addJob方法的客戶端，以建立自動選擇的JobConsumer執行的作業。 提供以下資訊以建立作業：
 
 * 主題：工作主題。
 * 名稱：（可選）
-* 屬性映射：`Map<String, Object>`物件，包含任何數量的屬性，例如輸入有效負載路徑和輸出有效負載路徑。 此映射對象可用於執行該作業的JobConsumer對象。
+* 屬性映射：A `Map<String, Object>` 包含任何數量屬性的物件，例如輸入裝載路徑和輸出裝載路徑。 此映射對象可用於執行該作業的JobConsumer對象。
 
 下列範例服務會為指定主題和輸入裝載路徑建立工作。
 
@@ -93,17 +97,17 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-當為`com/adobe/example/offloading`主題和`/content/geometrixx/de/services`裝載調用JobGeneratorImpl.createJob時，日誌包含以下消息：
+為 `com/adobe/example/offloading` 主題和 `/content/geometrixx/de/services` 裝載：
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
 ```
 
-## 開發工作消費者{#developing-a-job-consumer}
+## 發展就業消費者 {#developing-a-job-consumer}
 
-若要使用作業，請開發實作`org.apache.sling.event.jobs.consumer.JobConsumer`介面的OSGi服務。 使用`JobConsumer.PROPERTY_TOPICS`屬性識別要使用的主題。
+若要使用工作，請開發實施 `org.apache.sling.event.jobs.consumer.JobConsumer` 介面。 識別要使用的主題，使用 `JobConsumer.PROPERTY_TOPICS` 屬性。
 
-下列JobConsumer實作範例會註冊至`com/adobe/example/offloading`主題。 使用者只會將裝載內容節點的「已使用」屬性設為true。
+下列範例JobConsumer實作註冊至 `com/adobe/example/offloading` 主題。 使用者只會將裝載內容節點的「已使用」屬性設為true。
 
 ```java
 package com.adobe.example.offloading;
@@ -180,7 +184,7 @@ MyJobConsumer類別會為/content/geometrixx/de/services的輸入裝載產生下
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
-## Maven依賴項{#maven-dependencies}
+## Maven相依性 {#maven-dependencies}
 
 將下列相依性防禦項目新增至您的pom.xml檔案，讓Maven可解析卸載相關類別。
 

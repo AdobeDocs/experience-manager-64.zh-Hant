@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: a797ec42-e6bf-457e-91d7-0430b4671a68
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '626'
 ht-degree: 6%
 
 ---
 
 # 設定Android Studio專案並建置Android應用程式 {#set-up-the-android-studio-project-and-build-the-android-app}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 本文內容適用於建置AEM Forms App 6.3.1.1及更新版本。 如需從AEM Forms應用程式6.3原始碼原始碼建立應用程式，請參閱 [設定Eclipse專案並建置Android™應用程式](/help/forms/using/setup-eclipse-project-build-installer.md).
 

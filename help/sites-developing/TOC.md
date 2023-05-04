@@ -8,7 +8,8 @@ breadcrumb-title: Developing 指南
 user-guide-description: 本指南說明如何建立 AEM 執行個體。
 feature: Developing
 role: Developer
-source-git-commit: dbebe8ceaa629d04cee279e21a15594c54f0ba26
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 25%
@@ -39,8 +40,8 @@ ht-degree: 25%
    + [Sling 速查表](sling-cheatsheet.md)
    + [使用 Sling 介面卡](sling-adapters.md)
    + [標籤程式庫](taglib.md)
-   + 範例{#templates}
-      + [範例](templates.md)
+   + 範本{#templates}
+      + [範本](templates.md)
       + [頁面範本 — 可編輯 ](page-templates-editable.md)
       + [頁面範本 — 靜態](page-templates-static.md)
       + [內容片段範本](content-fragment-templates.md)

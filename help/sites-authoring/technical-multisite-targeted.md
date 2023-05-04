@@ -1,8 +1,8 @@
 ---
 title: 如何架構目標內容的多網站管理
-seo-title: 如何架構目標內容的多網站管理
+seo-title: How Multisite Management for Targeted Content is Structured
 description: 圖表顯示如何架構目標內容的多網站支援
-seo-description: 圖表顯示如何架構目標內容的多網站支援
+seo-description: A diagram shows how multisite support for targeted content is structured
 uuid: 2d30cdf0-ab77-490d-aac0-db3a0d417a58
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 7dd851ab-3fa7-426e-89cb-08b67e9b5999
 exl-id: 28c45577-e5cd-4706-b5b2-227279126ad9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '196'
-ht-degree: 12%
+source-wordcount: '213'
+ht-degree: 10%
 
 ---
 
 # 如何架構目標內容的多網站管理{#how-multisite-management-for-targeted-content-is-structured}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 下圖顯示如何架構目標內容的多網站支援。
 
-區域會顯示在&#x200B;**/content/campaigns/&lt;brand>**&#x200B;下方，依預設，每個品牌都有自動建立的主版區域。 每個區域都包含其專屬的活動、體驗和選件集。
+區域顯示在下方 **/content/campaigns/&lt;brand>** 預設情況下，每個品牌都有自動建立的主版區域。 每個區域都包含其專屬的活動、體驗和選件集。
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 

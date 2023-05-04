@@ -1,8 +1,8 @@
 ---
-title: 'AdobeAEM Managed Services的IMS驗證和Admin Console支援 '
-seo-title: 'AdobeAEM Managed Services的IMS驗證和Admin Console支援 '
+title: 適用於AEM Managed Services的Adobe IMS驗證和Admin Console支援
+seo-title: Adobe IMS Authentication and Admin Console Support for AEM Managed Services
 description: 了解如何在AEM中使用Admin Console。
-seo-description: 了解如何在AEM中使用Admin Console。
+seo-description: Learn how to use the Admin Console in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 38bbad03-aead-43d3-a28c-cc716955ddfb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1785'
 ht-degree: 14%
 
 ---
 
-# AdobeAEM Managed Services的IMS驗證和Admin Console支援{#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+# 適用於AEM Managed Services的Adobe IMS驗證和Admin Console支援 {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -25,7 +29,7 @@ ht-degree: 14%
 
 ## 簡介 {#introduction}
 
-AEM 6.4.3.0為&#x200B;**AEM Managed Services**&#x200B;客戶推出AEM例項和AdobeIMS(Identity Management系統)驗證的Admin Console支援。
+AEM 6.4.3.0推出AEM例項和Adobe IMS(Identity Management系統)驗證的Admin Console支援 **AEM Managed Services** 客戶。
 
 AEM上線至Admin Console可讓AEM Managed Services客戶在一個主控台中管理所有Experience Cloud使用者。 可將使用者和群組指派給與AEM例項相關聯的產品設定檔，讓他們登入特定例項。
 
@@ -41,19 +45,19 @@ AEM上線至Admin Console可讓AEM Managed Services客戶在一個主控台中�
 
 ## 架構 {#architecture}
 
-IMS驗證的運作方式是在AEM和AdobeIMS端點之間使用OAuth通訊協定。 使用者新增至IMS且擁有Adobe身分識別後，就可以使用IMS憑證登入AEM Managed Services執行個體。
+IMS驗證的運作方式是在AEM和Adobe IMS端點之間使用OAuth通訊協定。 使用者新增至IMS且擁有Adobe身分識別後，就可以使用IMS憑證登入AEM Managed Services執行個體。
 
 使用者登入流程如下所示，系統會將使用者重新導向至IMS，並選擇性地導向至客戶IDP以進行SSO驗證，然後重新導向回AEM。
 
 ![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
-## 如何設定{#how-to-set-up}
+## 如何設定 {#how-to-set-up}
 
-### 在 Admin Console 中佈建組織{#onboarding-organizations-to-admin-console}
+### 在 Admin Console 中佈建組織 {#onboarding-organizations-to-admin-console}
 
-客戶必須上線Admin Console才能使用AdobeIMS進行AEM驗證。
+客戶必須上線Admin Console才能使用Adobe IMS進行AEM驗證。
 
-首先，AdobeIMS中應布建一個組織。 Adobe企業客戶在[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html)中會顯示為IMS組織。
+第一步，客戶應該有已布建於Adobe IMS中的組織。 Adobe企業客戶在 [Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-console.html).
 
 AEM Managed Services客戶應已布建組織，且在IMS布建過程中，將可在Admin Console中提供客戶例項，以管理使用者權益和存取權。
 
@@ -71,11 +75,11 @@ AEM Managed Services客戶應已布建組織，且在IMS布建過程中，將可
 
 >[!NOTE]
 >
->如需AdobeIdentity Management基本知識的詳細資訊，包括IDP設定，請參閱本頁文章[。](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)
+>如需AdobeIdentity Management基本知識的詳細資訊，包括IDP設定，請參閱文章 [此頁面。](https://helpx.adobe.com/tw/enterprise/using/set-up-identity.html)
 >
->有關企業管理和Admin Console的詳細資訊，請參閱本頁[文章](https://helpx.adobe.com/tw/enterprise/managing/user-guide.html)。
+>有關企業管理和Admin Console的詳細資訊，請參閱文章 [本頁](https://helpx.adobe.com/tw/enterprise/managing/user-guide.html).
 
-### 在Admin Console{#onboarding-users-to-the-admin-console}中引導用戶
+### 將使用者加入Admin Console {#onboarding-users-to-the-admin-console}
 
 根據客戶的規模和偏好設定，建立使用者的方式有三種：
 
@@ -91,7 +95,7 @@ AEM Managed Services客戶應已布建組織，且在IMS布建過程中，將可
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### Admin ConsoleUI {#file-upload-in-the-admin-console-ui}中的檔案上傳
+#### 在Admin ConsoleUI中上傳檔案 {#file-upload-in-the-admin-console-ui}
 
 為方便建立使用者，可上傳CSV檔案以大量新增使用者：
 
@@ -113,7 +117,7 @@ AEM Managed Services客戶應已布建組織，且在IMS布建過程中，將可
 
 [https://github.com/adobe-apiplatform/user-sync.py/releases/latest](https://github.com/adobe-apiplatform/user-sync.py/releases/latest)
 
-請注意，搶鮮版2.4RC1提供建立動態群組的支援，可在此處找到：[https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
+請注意，搶鮮版2.4RC1提供建立動態群組的支援，可在此處找到： [https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1](https://github.com/adobe-apiplatform/user-sync.py/releases/tag/v2.4rc1)
 
 此版本的主要功能是能在 Admin Console 中動態對應新 LDAP 群組，以取得使用者成員資格，並且建立動態使用者群組。
 
@@ -123,15 +127,15 @@ AEM Managed Services客戶應已布建組織，且在IMS布建過程中，將可
 
 >[!NOTE]
 >
->有關「用戶同步工具」的詳細資訊，請參閱[文檔頁](https://adobe-apiplatform.github.io/user-sync.py/en/)。
+>有關「用戶同步工具」的詳細資訊，請參閱 [檔案頁面](https://adobe-apiplatform.github.io/user-sync.py/en/).
 >
 >
->使用者同步工具需要使用[here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)中描述的程式，註冊為Adobe I/O用戶端UMAPI。
+>使用者同步工具必須依照所述程式，註冊為Adobe I/O用戶端UMAPI [此處](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->您可以在[此處](https://www.adobe.io/apis/cloudplatform/console.html)找到Adobe I/O主控台檔案。
+>您可以找到Adobe I/O主控台檔案 [此處](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->此[location](https://www.adobe.io/apis/cloudplatform/umapi-new.html)涵蓋用戶同步工具使用的用戶管理API。
+>本檔案將說明使用者同步工具所使用的使用者管理API [位置](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -145,7 +149,7 @@ AEM Managed Services客戶應已布建組織，且在IMS布建過程中，將可
 
 ![screen_shot_2018-09-17at105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-在此範例中，組織&#x200B;*AEM-MS-Onboard*&#x200B;有32個執行個體，橫跨不同的拓撲和環境，例如Stage、Prod等。
+在此範例中，組織 *AEM-MS-Onboard* 有32個執行個體，橫跨不同的拓撲和環境，如Stage、Prod等。
 
 ![screen_shot_2018-09-17at105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 
@@ -163,7 +167,7 @@ AEM Managed Services客戶應已布建組織，且在IMS布建過程中，將可
 
 ### 登入AEM {#logging-into-aem}
 
-#### 本地管理員登錄{#local-admin-login}
+#### 本機管理員登入 {#local-admin-login}
 
 AEM可繼續支援管理員使用者的本機登入，因為登入畫面可以選取本機登入：
 
@@ -171,7 +175,7 @@ AEM可繼續支援管理員使用者的本機登入，因為登入畫面可以�
 
 #### IMS 登入 {#ims-based-login}
 
-若是其他使用者，在例項上設定 IMS 後，即可使用 IMS 登入。使用者會先按一下&#x200B;**使用Adobe登入**&#x200B;按鈕，如下所示：
+若是其他使用者，在執行個體上設定 IMS 後，即可使用 IMS 登入。使用者會先按一下 **使用Adobe登入** 按鈕，如下所示：
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -189,7 +193,7 @@ AEM可繼續支援管理員使用者的本機登入，因為登入畫面可以�
 
 ![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
-### 遷移現有用戶{#migrating-existing-users}
+### 移轉現有使用者 {#migrating-existing-users}
 
 若現有AEM例項使用其他驗證方法，且現在正移轉至IMS，則需要進行移轉步驟。
 
@@ -197,13 +201,13 @@ AEM存放庫中的現有使用者（來源為本機、透過LDAP或SAML）可移
 
 此公用程式將由您的AMS團隊執行，作為IMS布建的一部分。
 
-### 在AEM {#managing-permissions-and-acls-in-aem}中管理權限和ACL
+### 在AEM中管理權限和ACL {#managing-permissions-and-acls-in-aem}
 
 AEM將繼續管理存取控制和權限，這可透過分離來自IMS的使用者群組(例如下列範例中的AEM-GRP-008)和定義權限和存取控制的本機群組來達成。 可將從IMS同步的使用者群組指派給本機群組，並繼承權限。
 
 以下範例中，我們會示範將同步的群組新增至本機 *Dam_Users* 群組。
 
-在此，也將使用者指派給Admin Console中的幾個群組。 (請注意，可使用使用者同步工具從LDAP同步使用者和群組，或在本機建立，請參閱上述&#x200B;**將使用者引導至Admin Console**&#x200B;一節)。
+在此，也將使用者指派給Admin Console中的幾個群組。 (請注意，可使用使用者同步工具從LDAP同步使用者和群組，或在本機建立，請參閱區段 **將使用者加入Admin Console** 以上)。
 
 >[!NOTE]
 >
@@ -223,6 +227,6 @@ AEM將繼續管理存取控制和權限，這可透過分離來自IMS的使用�
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 
-如下所示，群組&#x200B;*AEM-GRP_008*&#x200B;繼承DAM使用者的權限。 這是管理同步群組權限的有效方式，也常用於LDAP型驗證方法。
+如下所示， *AEM-GRP_008* 會繼承DAM使用者的權限。 這是管理同步群組權限的有效方式，也常用於LDAP型驗證方法。
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)

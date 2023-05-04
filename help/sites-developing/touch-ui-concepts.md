@@ -1,8 +1,8 @@
 ---
 title: AEM觸控式UI的概念
-seo-title: AEM觸控式UI的概念
+seo-title: Concepts of the AEM Touch-Enabled UI
 description: 透過AEM 5.6Adobe，針對製作環境導入了全新觸控最佳化UI，並提供回應式設計
-seo-description: 透過AEM 5.6Adobe，針對製作環境導入了全新觸控最佳化UI，並提供回應式設計
+seo-description: With AEM 5.6 Adobe introduced a new touch-optimized UI with responsive design for the author environment
 uuid: 8ec6514e-f623-40be-a7bf-2e85bf4385ca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 exl-id: a89cf964-cc9f-46d7-afd8-150d48948513
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2218'
-ht-degree: 0%
+source-wordcount: '2233'
+ht-degree: 1%
 
 ---
 
 # AEM觸控式UI的概念{#concepts-of-the-aem-touch-enabled-ui}
 
-透過AEM 5.6Adobe，針對製作環境導入了新的觸控式UI，其中包含[回應式設計](/help/sites-authoring/responsive-layout.md)。 這與原有的傳統UI有很大不同，因為它設計為可在觸控式和桌上型電腦裝置上運作。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+透過AEM 5.6Adobe，推出全新觸控式UI，具有 [回應式設計](/help/sites-authoring/responsive-layout.md) 供作者使用。 這與原有的傳統UI有很大不同，因為它設計為可在觸控式和桌上型電腦裝置上運作。
 
 此觸控式UI現在是AEM的標準UI，取代傳統UI。
 
@@ -39,14 +43,14 @@ ht-degree: 0%
 
    * 時間軸
    * 引用
-   * 濾鏡
+   * 篩選條件
 
 * 導覽標題，同樣會上下文相關，可顯示：
 
    * 指出您目前使用的主控台和/或該主控台內的位置
    * 左側邊欄的選取項目
    * 階層連結
-   * 訪問適當的&#x200B;**Create**&#x200B;操作
+   * 適當的 **建立** 動作
    * 檢視選取項目
 
 * 內容區域：
@@ -60,12 +64,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->幾乎所有AEM功能都已移植至觸控式UI。 但在某些有限的情況下，功能會回復為傳統UI。 如需詳細資訊，請參閱[觸控式UI功能狀態](/help/release-notes/touch-ui-features-status.md)。
+>幾乎所有AEM功能都已移植至觸控式UI。 但在某些有限的情況下，功能會回復為傳統UI。 請參閱 [觸控式UI功能狀態](/help/release-notes/touch-ui-features-status.md) 以取得更多資訊。
 
 觸控式UI是由Adobe設計，以提供多項產品的使用者體驗一致性。 其基礎為：
 
-* **Coral UI** (CUI)為觸控式UI的Adobe視覺樣式實作。Coral UI提供您的產品/專案/網頁應用程式採用UI視覺風格所需的一切。
-* **Granite** UI元件是使用Coral UI建置。
+* **Coral UI** (CUI)觸控式UI的Adobe視覺樣式實作。 Coral UI提供您的產品/專案/網頁應用程式採用UI視覺風格所需的一切。
+* **Granite UI** 元件是使用Coral UI建置。
 
 觸控式UI的基本原則為：
 
@@ -77,9 +81,9 @@ ht-degree: 0%
 * 包含內嵌測試
 * 由下而上的設計，以確保這些原則適用於每個元素和元件
 
-如需觸控式UI結構的進一步概覽，請參閱[AEM觸控式UI結構](/help/sites-developing/touch-ui-structure.md)一文。
+如需觸控式UI結構的進一步概覽，請參閱文章 [AEM觸控式UI的結構](/help/sites-developing/touch-ui-structure.md).
 
-## AEM技術堆疊{#aem-technology-stack}
+## AEM技術堆疊 {#aem-technology-stack}
 
 AEM以Granite平台為基礎，而Granite平台除其他外包含Java內容存放庫。
 
@@ -101,7 +105,7 @@ Granite是Adobe的Open Web堆疊，提供多種元件，包括：
 >
 >Granite在Adobe中以開放開發專案的形式執行：對程式碼、討論和問題的貢獻來自整個公司。
 >
->不過，Granite是開放原始碼專案&#x200B;**而非**。 它主要以數個開放原始碼專案為基礎（尤其是Apache Sling、Felix、Jackrabbit和Lucene），但Adobe在公開項目與內部專案之間划出明確界限。
+>不過，Granite是 **not** 開放原始碼專案。 它主要以數個開放原始碼專案為基礎（尤其是Apache Sling、Felix、Jackrabbit和Lucene），但Adobe在公開項目與內部專案之間划出明確界限。
 
 ## Granite UI {#granite-ui}
 
@@ -137,7 +141,7 @@ Granite UI:
 
 * [Granite UI管理元件](#granite-ui-administration-components)
 
-### 客戶端與伺服器端{#client-side-vs-server-side}
+### 用戶端與伺服器端 {#client-side-vs-server-side}
 
 Granite UI中的客戶端與伺服器通訊由超文字、而非物件組成，因此不需要客戶端了解業務邏輯
 
@@ -146,15 +150,15 @@ Granite UI中的客戶端與伺服器通訊由超文字、而非物件組成，�
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
-#### 用戶端{#client-side}
+#### 用戶端 {#client-side}
 
-此功能會使用HTML辭匯的擴充功能，讓作者可表達建立互動式網頁應用程式的意圖。 這是[WAI-ARIA](https://www.w3.org/TR/wai-aria/)和[微格式](http://microformats.org/)的類似方法。
+這會使用HTML辭匯的擴充功能，讓作者可表達建立互動式網頁應用程式的意圖。 這是類似的方法 [瓦伊阿里亞](https://www.w3.org/TR/wai-aria/) 和 [微格式](http://microformats.org/).
 
 它主要包含由JS和CSS程式碼解譯的互動模式（例如非同步提交表單）集合，會在用戶端上執行。 用戶端的作用是增強標籤（以伺服器可負擔的超媒體形式提供）以提供互動性。
 
 用戶端獨立於任何伺服器技術。 只要伺服器提供適當的標籤，用戶端就能發揮其作用。
 
-目前，JS和CSS程式碼會以Granite [clientlibs](/help/sites-developing/clientlibs.md)的形式傳送，位於類別下：
+目前JS和CSS程式碼是以Granite傳送 [clientlibs](/help/sites-developing/clientlibs.md) 在類別下：
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -162,9 +166,9 @@ Granite UI中的客戶端與伺服器通訊由超文字、而非物件組成，�
 
 `granite.ui.content`
 
-#### 伺服器端{#server-side}
+#### 伺服器端 {#server-side}
 
-這是由Sling元件的集合所組成，這些元件可讓作者快速&#x200B;*撰寫*&#x200B;網頁應用程式。 開發人員開發元件，作者將元件組合成網頁應用程式。 伺服器端的角色是為用戶端提供超媒體可承受性（標籤）。
+這是由Sling元件集合所組成，可讓作者 *撰寫* 網路應用程式。 開發人員開發元件，作者將元件組合成網頁應用程式。 伺服器端的角色是為用戶端提供超媒體可承受性（標籤）。
 
 目前，元件位於Granite存放庫的：
 
@@ -174,7 +178,7 @@ Granite UI中的客戶端與伺服器通訊由超文字、而非物件組成，�
 
 `granite.ui.content`
 
-### 與傳統UI {#differences-with-the-classic-ui}的差異
+### 與傳統UI的差異 {#differences-with-the-classic-ui}
 
 Granite UI與ExtJS（用於傳統UI）之間的差異也值得關注：
 
@@ -207,9 +211,9 @@ Granite UI與ExtJS（用於傳統UI）之間的差異也值得關注：
  </tbody> 
 </table>
 
-### Granite UI基礎元件{#granite-ui-foundation-components}
+### Granite UI Foundation元件 {#granite-ui-foundation-components}
 
-[Granite UI基礎元件](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)提供建置任何UI所需的基本建置區塊。 其中包括：
+此 [Granite UI基礎元件](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) 提供建置任何UI所需的基本建置區塊。 其中包括：
 
 * 按鈕
 * 超連結
@@ -219,9 +223,9 @@ Granite UI與ExtJS（用於傳統UI）之間的差異也值得關注：
 
 `/libs/granite/ui/components/foundation`
 
-此程式庫包含每個Coral元素的Granite UI元件。 元件由內容驅動，其配置駐留在儲存庫中。 這樣就可以撰寫Granite UI應用程式，而不需手寫HTML標籤。
+此程式庫包含每個Coral元素的Granite UI元件。 元件由內容驅動，其配置駐留在儲存庫中。 這可以不用手寫HTML標籤，即可組成Granite UI應用程式。
 
-目的：
+用途:
 
 * HTML元素的元件模型
 * 組分組合物
@@ -235,7 +239,7 @@ Granite UI與ExtJS（用於傳統UI）之間的差異也值得關注：
 
 此基礎元件庫可供其他程式庫使用或擴充。
 
-### ExtJS和對應的Granite UI元件{#extjs-and-corresponding-granite-ui-components}
+### ExtJS和對應的Granite UI元件 {#extjs-and-corresponding-granite-ui-components}
 
 升級ExtJS程式碼以使用Granite UI時，下列清單可方便地概述ExtJS xtypes和節點類型，以及其相等的Granite UI資源類型。
 
@@ -264,15 +268,15 @@ Granite UI與ExtJS（用於傳統UI）之間的差異也值得關注：
 | `cq:TabPanel` | `granite/ui/components/foundation/container` `granite/ui/components/foundation/layouts/tabs` |
 | `cq:panel` | `granite/ui/components/foundation/container` |
 
-### Granite UI管理元件{#granite-ui-administration-components}
+### Granite UI管理元件 {#granite-ui-administration-components}
 
-[Granite UI管理元件](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)以基礎元件為基礎而構建，以提供任何管理應用程式皆可實施的通用建置區塊。 其中包括：
+此 [Granite UI管理元件](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) 在foundation元件上建置，以提供任何管理應用程式皆可實施的通用建置模組。 其中包括：
 
 * 全域導覽列
 * 邊欄（骨架）
 * 搜尋面板
 
-目的：
+用途:
 
 * 管理應用程式的統一外觀
 * 管理應用程式Rad
@@ -297,17 +301,13 @@ Coral UI(CUI)是Adobe觸控式UI視覺風格的實作，專為提供跨多個產
 >* Adobe企業宣傳資料、廣告和演示文稿。
 >* Adobe品牌應用程式的UI（字型不得隨時供其他用途使用）。
 >* 有次要的自訂。
-
 >
->
-請避免在下列項目中使用Coral UI:
+>請避免在下列項目中使用Coral UI:
 >
 >* 與Adobe無關的文檔和其他項目。
 >* 內容建立環境（其中之前的項目可能由其他人產生）。
 >* 未明確連結至Adobe的應用程式/元件/網頁。
-
 >
-
 
 
 Coral UI是開發網頁應用程式的基礎要素集合。
@@ -316,24 +316,24 @@ Coral UI是開發網頁應用程式的基礎要素集合。
 
 設計為從頭開始模組化，每個模組根據其主要角色形成一個不同的層。 儘管這些層設計為相互支援，但如果需要，也可以獨立使用。 這可讓您在任何支援HTML的環境中實作Coral的使用者體驗。
 
-透過Coral UI，不強制使用特定開發模式和/或平台。 Coral的主要目標是提供統一、簡潔的HTML5標籤，不受發出此標籤的實際方法影響。 這可用於用戶端或伺服器端轉譯、範本、JSP、PHP，甚至AdobeFlashRIA應用程式 — 僅舉幾個例子。
+透過Coral UI，不強制使用特定開發模式和/或平台。 Coral的主要目標是提供統一且清潔的HTML5標籤，不受發出此標籤所使用的實際方法所影響。 這可用於用戶端或伺服器端轉譯、範本、JSP、PHP，甚至AdobeFlashRIA應用程式 — 僅舉幾個例子。
 
-### HTML元素 — 標籤層{#html-elements-the-markup-layer}
+### HTML元素 — 標籤層 {#html-elements-the-markup-layer}
 
 HTML元素提供所有基本UI元素（包括導覽列、按鈕、功能表、邊欄等）的共同外觀和風格。
 
 在最基本的層級，HTML元素是具有專用類別名稱的HTML標籤。 更複雜的元素可由多個標籤組成，並彼此巢狀（以特定方式）。
 
-CSS可用來提供實際的外觀。 為了能夠輕鬆自訂外觀和風格（例如品牌化），實際樣式值被聲明為變數，在運行時由[LESS](https://lesscss.org/)前置處理器擴展。
+CSS可用來提供實際的外觀。 為了能輕鬆自訂外觀和風格（例如品牌），實際樣式值會宣告為由 [較少](https://lesscss.org/) 運行時的前置處理器。
 
-目的：
+用途:
 
 * 提供具有通用外觀和風格的基本UI元素
 * 提供預設網格系統
 
 實施:
 
-* 具有受[bootstrap](https://twitter.github.com/bootstrap/)啟發的樣式的HTML標籤
+* HTML標籤，靈感來源為 [引導](https://twitter.github.com/bootstrap/)
 * 類在LESS檔案中定義
 * 表徵圖定義為字型Sprite
 
@@ -346,7 +346,7 @@ CSS可用來提供實際的外觀。 為了能夠輕鬆自訂外觀和風格（�
 
 顯示為：
 
-![chlimage_1-109](assets/chlimage_1-189.png)
+![chlimage_1-189](assets/chlimage_1-189.png)
 
 外觀和風格以LESS定義，並以專用的類別名稱系結至元素（為了簡潔起見，已縮短下列擷取）:
 
@@ -368,32 +368,32 @@ CSS可用來提供實際的外觀。 為了能夠輕鬆自訂外觀和風格（�
 @baseFontFamily: @sansFontFamily;
 ```
 
-### 元素外掛程式{#element-plugins}
+### 元素外掛程式 {#element-plugins}
 
-許多HTML元素需要顯示某種動態行為，例如開啟和關閉快顯功能表。 這是元素外掛程式的角色，可透過使用JavaScript操控DOM來完成此類工作。
+許多HTML元素必須顯示某種動態行為，例如開啟和關閉快顯功能表。 這是元素外掛程式的角色，可透過使用JavaScript操控DOM來完成此類工作。
 
 外掛程式可以是：
 
-* 設計用於運作於特定DOM元素。 例如，對話方塊外掛程式預期會找到`DIV class=dialog`
-* 一般性。 例如，佈局管理器提供`DIV`或`LI`元素清單的佈局
+* 設計用於運作於特定DOM元素。 例如，對話方塊外掛程式會尋找 `DIV class=dialog`
+* 一般性。 例如，配置管理器提供任何 `DIV` 或 `LI` 元素
 
 外掛程式行為可透過下列其中一種方式，以參數自訂：
 
 * 透過Javascript呼叫傳遞參數
-* 使用與HTML標籤系結的專用`data-*`屬性
+* 使用專用 `data-*` 連結到HTML標籤的屬性
 
 雖然開發人員可為任何外掛程式選取最佳方法，但經驗法則是使用：
 
-* `data-*` 與HTML配置相關的選項的屬性。例如，若要指定欄數
+* `data-*` 屬性，以取得與HTML配置相關的選項。 例如，若要指定欄數
 * 與資料相關的功能的API選項/類別。 例如，建構要顯示的項目清單
 
-相同的概念用於實作表單驗證。 對於要驗證的元素，必須將所需的輸入表單指定為自訂`data-*`屬性。 然後，此屬性將用作驗證插件的選項。
+相同的概念用於實作表單驗證。 對於要驗證的元素，您必須將所需的輸入表單指定為自訂 `data-*` 屬性。 然後，此屬性將用作驗證插件的選項。
 
 >[!NOTE]
 >
->應盡可能使用HTML5原生表單驗證，並/或加以擴充。
+>HTML5原生表單驗證應盡可能使用和/或展開。
 
-目的：
+用途:
 
 * 為HTML元素提供動態行為
 * 提供純CSS無法使用的自訂配置
@@ -403,9 +403,9 @@ CSS可用來提供實際的外觀。 為了能夠輕鬆自訂外觀和風格（�
 實施:
 
 * jQuery外掛程式，系結至特定DOM元素
-* 使用`data-*`屬性來自訂行為
+* 使用 `data-*` 屬性自訂行為
 
-範例標籤的擷取（請注意指定為data-&amp;ast；的選項）;屬性):
+示例標籤的提取(注意指定為data-&amp;ast的選項；屬性):
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -439,22 +439,22 @@ $(‘.cards’).cardlayout ();
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
-`cardLayout`外掛程式會根據各自的高度並同時考慮父項的寬度，來排列包含的`UL`元素。
+此 `cardLayout` 外掛程式會佈置 `UL` 元素，並考慮父項的寬度。
 
-### HTML元素小工具{#html-elements-widgets}
+### HTML元素小工具 {#html-elements-widgets}
 
 介面工具集會將一或多個基本元素與Javascript外掛程式結合，以形成「較高層級」的UI元素。 這些元素可實作比單一元素更複雜的行為，以及更複雜的外觀和感覺。 標籤選取器或邊欄Widget是不錯的範例。
 
-介面工具集可觸發並監聽自訂事件，以與頁面上的其他介面工具集合作。 有些小工具實際上是使用Coral HTML元素的原生jQuery小工具。
+介面工具集可觸發並監聽自訂事件，以與頁面上的其他介面工具集合作。 有些小工具實際上是使用CoralHTML元素的原生jQuery小工具。
 
-目的：
+用途:
 
 * 實作表現複雜行為的較高層級UI元素
 * 觸發和處理事件
 
 實施:
 
-* jQuery plugin + HTML標籤
+* jQuery plugin +HTML標籤
 * 可利用客戶端/伺服器端模板
 
 示例標注為：
@@ -470,7 +470,7 @@ $(".tagManager").tagsManager({
         prefilled: ["Pisa", "Rome"] })
 ```
 
-外掛程式會發出HTML標籤（此標籤會使用基本元素，而這些元素可能在內部使用其他外掛程式）:
+外掛程式會發出HTML標籤（此標籤會使用基本元素，而可能在內部使用其他外掛程式）:
 
 ```
 <span>Pisa</span>
@@ -488,9 +488,9 @@ $(".tagManager").tagsManager({
 
 這會顯示為：
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
-### 實用程式庫{#utility-library}
+### 實用程式庫 {#utility-library}
 
 此程式庫是javascript協助程式外掛程式和/或函式的集合，其為：
 
@@ -501,7 +501,7 @@ $(".tagManager").tagsManager({
 
 雖然HTML元素插件和小部件可能依賴實用程式庫提供的功能，但實用程式庫不能對元素或小部件本身有任何硬依賴性。
 
-目的：
+用途:
 
 * 提供通用功能
 * 事件匯流排實作

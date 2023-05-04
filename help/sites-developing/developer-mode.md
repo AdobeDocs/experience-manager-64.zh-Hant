@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 0%
+source-wordcount: '722'
+ht-degree: 2%
 
 ---
 
 # 開發人員模式{#developer-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 在AEM中編輯頁面時， [模式](/help/sites-authoring/author-environment-tools.md#page-modes) 可用，包括開發人員模式。 這會開啟一個側面板，其中包含數個標籤，為開發人員提供目前頁面的相關資訊。 這三個標籤是：
 
@@ -33,7 +37,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->開發人員模式：
+>開發人員模式:
 >
 >* 僅適用於觸控式UI（編輯頁面時）。
 >* 在行動裝置上或案頭上的小視窗上皆無法使用（因空間限制）。

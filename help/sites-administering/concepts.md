@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
 feature: Commerce Integration Framework
 exl-id: 8140db99-fec6-4efd-87d9-62efd157d54a
-source-git-commit: 31d6111a82a3cbfef22970d05280b0d3fd1c0de7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4524'
-ht-degree: 1%
+source-wordcount: '4560'
+ht-degree: 2%
 
 ---
 
 # 概念{#concepts}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 整合框架提供以下機制和組成部分：
 
@@ -43,13 +47,12 @@ ht-degree: 1%
 >* [SAPCommerce Cloud](/help/sites-administering/sap-commerce-cloud.md)
 >
 >* [SalesforceCommerce Cloud](https://github.com/adobe/commerce-salesforce)
-
 >
 
 
 >[!CAUTION]
 >
->[eCommerce整合架構](https://www.adobe.com/solutions/web-experience-management/commerce.html)為AEM附加元件。
+>此 [電子商務整合框架](https://www.adobe.com/solutions/web-experience-management/commerce.html) 是AEM附加元件。
 >
 >您的銷售代表將能夠根據相應引擎提供完整詳細資訊。
 
@@ -135,8 +138,8 @@ AEM eCommerce是使用eCommerce引擎實作：
 >
 >在AEM中使用以JCR為基礎的一般開發實作的AEM eCommerce為：
 >
->* 說明API使用方式的獨立AEM原生電子商務範例。 這可用來控制產品資料、購物車和結帳，並結合現有的資料顯示和行銷活動。 在這種情況下，產品資料庫儲存在AEM的原生存放庫(Adobe的[JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html)實作)。\
-   >  標準AEM安裝包含[通用電子商務實作](/help/sites-administering/generic.md)的基本知識。
+>* 說明API使用方式的獨立AEM原生電子商務範例。 這可用來控制產品資料、購物車和結帳，並結合現有的資料顯示和行銷活動。 在此情況下，產品資料庫會儲存在AEM的原生存放庫(Adobe的實作 [JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/index.html))。\
+   >  標準AEM安裝包含 [一般電子商務實作](/help/sites-administering/generic.md).
 
 
 ### 商務提供者 {#commerce-providers}
@@ -159,14 +162,14 @@ AEM目前提供兩個商務提供者範例：
 >
 >geometrixx匯入工具使用CSV檔案；實作上方的註解中會說明接受的結構（允許自訂屬性）。
 
-[ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)維護（通過[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)）[ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)和[CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)介面的實施清單。 這些欄位會列在匯入工具精靈的&#x200B;**匯入工具/商務提供者**&#x200B;下拉式欄位中（以`commerceProvider`屬性作為名稱）。
+此 [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) 維護(通過 [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings))實作清單  [ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 和 [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 介面。 這些會列於 **匯入工具/商務提供者** 匯入工具精靈的下拉式欄位(使用 `commerceProvider` 屬性（以名稱形式）。
 
 從下拉式清單中取得特定匯入工具/商務提供者時，必須在下列任一項中定義其所需的任何補充資料（視匯入工具類型而定）:
 
 * `/apps/commerce/gui/content/catalogs/importblueprintswizard/importers`
 * `/apps/commerce/gui/content/products/importproductswizard/importers`
 
-適當`importers`資料夾下的資料夾必須符合匯入工具名稱；例如：
+適當 `importers` 資料夾必須符合匯入工具名稱；例如：
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
@@ -188,7 +191,7 @@ AEM目前提供兩個商務提供者範例：
    * 所有管道的行銷內容。
    * 促銷活動.
    * 憑單.
-   * 促銷活動.
+   * 行銷活動.
 
 * 瀏覽者/購物者：
 
@@ -207,17 +210,17 @@ AEM目前提供兩個商務提供者範例：
 
 #### 結構與行銷類別 {#structural-versus-marketing-categories}
 
-如果可區分以下兩個類別，則可讓您以有意義的結構（`cq:Page`節點的樹狀結構）來清楚顯示URL，因此非常接近傳統的AEM內容管理):
+如果可區分下列兩個類別，則可讓您以有意義的結構（樹狀結構）來清楚顯示URL `cq:Page` )，因此非常接近經典AEM內容管理):
 
 * *結構*類別
 
-   定義&#x200B;*什麼是產品*&#x200B;的類別樹；例如：
+   定義的類別樹 *什麼是產品*;例如：
 
    `/products/mens/shoes/sneakers`
 
-* ** 行銷類別
+* *行銷* 類別
 
-   a *產品可以屬於*&#x200B;的所有其他類別；例如：
+   所有其他類別a *產品可屬於*;例如：
 
    `/special-offers/christmas/shoes`)
 
@@ -230,9 +233,9 @@ AEM目前提供兩個商務提供者範例：
 * 直接在AEM中維護（一般）。
 * 在eCommerce引擎中維護，並可在AEM中使用。
 
-   視需要而定，其為[synchronized](#catalog-maintenance-data-synchronization)，或直接存取；例如，在每個頁面請求上，都會從電子商務引擎擷取高度波動和關鍵資料，例如產品價格，以確保這些資料始終是最新的。
+   視其資料類型而定 [已同步](#catalog-maintenance-data-synchronization) 視需要或直接存取；例如，在每個頁面請求上，都會從電子商務引擎擷取高度波動和關鍵資料，例如產品價格，以確保這些資料始終是最新的。
 
-無論是哪種情況，當產品資料輸入/匯入AEM時，都可從&#x200B;**Products**&#x200B;主控台看到。 在此，產品的卡片和清單檢視會顯示下列資訊：
+在任何情況下，當產品資料已輸入/匯入AEM時，可從 **產品** 控制台。 在此，產品的卡片和清單檢視會顯示下列資訊：
 
 * 影像
 * SKU代碼
@@ -298,15 +301,15 @@ AEM目前提供兩個商務提供者範例：
 
 ## 目錄 {#catalogs}
 
-目錄會將產品資料分組在一起，以方便管理並讓購物者呈現。 目錄通常是根據語言、地理區域、品牌、季數、嗜好、體育等屬性來建構。
+目錄會將產品資料分組在一起，以方便管理並讓購物者呈現。 目錄通常是根據語言、地理區域、品牌、季節、嗜好、體育等屬性來建構。
 
 ### 目錄結構 {#catalog-structure}
 
 #### 多語言目錄 {#catalogs-in-multiple-languages}
 
-AEM支援多種語言的產品內容。 要求資料時，整合架構會從目前的樹狀結構中擷取語言（例如，`/content/geometrixx-outdoors/en_US`底下頁面的`en_US`）。
+AEM支援多種語言的產品內容。 請求資料時，整合架構會從目前的樹狀結構中擷取語言(例如， `en_US` 在 `/content/geometrixx-outdoors/en_US`)。
 
-對於多語言商店，您可以分別匯入每個語言樹的目錄（或透過[MSM](/help/sites-administering/msm.md)複製目錄）。
+對於多語言商店，您可以為每個語言樹單獨導入目錄(或通過 [MSM](/help/sites-administering/msm.md))。
 
 #### 多品牌目錄 {#catalogs-for-multiple-brands}
 
@@ -327,8 +330,8 @@ AEM支援多種語言的產品內容。 要求資料時，整合架構會從目�
 
 產品資料的進一步變更將不可避免：
 
-* 對於一般實作，這些可透過[product editor](/help/sites-administering/generic.md#editing-product-information)來管理
-* 使用[eCommerce引擎時，必須同步更改](#data-synchronization-with-an-ecommerce-engine-ongoing)
+* 對於一般實作，這些可透過 [產品編輯器](/help/sites-administering/generic.md#editing-product-information)
+* 使用 [必須同步變更的電子商務引擎](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
 #### 與電子商務引擎進行資料同步（持續） {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
@@ -338,7 +341,7 @@ AEM支援多種語言的產品內容。 要求資料時，整合架構會從目�
 
 這取決於資料類型：
 
-* 將[週期同步與變更](/help/sites-developing/sap-commerce-cloud.md#product-synchronization-and-publishing)的資料饋送一起使用。
+* A [週期性同步與更改資料源一起使用](/help/sites-developing/sap-commerce-cloud.md#product-synchronization-and-publishing).
 
    除此之外，您還可以為快速更新選擇特定更新。
 
@@ -408,7 +411,7 @@ AEM eCommerce實作必須考慮效能測試：
 
 * 內容卷
 
-   * 資產
+   * Assets
    * 本地化的I18內置產品和SKU
 
 * 使用者活動：
@@ -454,7 +457,7 @@ AEM eCommerce實作必須考慮效能測試：
 * 在您的技術堆棧中，規劃非常分工的內容訪問模型和服務。 這是一般的最佳實務，但更重要的是，在最佳化階段，您可以為經常讀取的資料（且您不想用來填入套件快取）新增應用程式快取。
 
    例如，屬性管理通常是快取的理想候選項，因為它與透過產品匯入更新的資料有關。
-* 請考慮使用[代理頁面](/help/sites-administering/concepts.md#proxy-pages)。
+* 考慮使用 [代理頁面](/help/sites-administering/concepts.md#proxy-pages).
 
 ### 目錄區段頁面 {#catalog-section-pages}
 
@@ -470,7 +473,7 @@ AEM eCommerce實作必須考慮效能測試：
 
 產品頁面提供有關個別產品的完整資訊。 也會反映的動態更新；例如，在電子商務引擎上註冊的價格變更。
 
-產品頁面是使用&#x200B;**Product**&#x200B;元件的AEM頁面；例如，在&#x200B;**商務產品**&#x200B;範本中：
+產品頁面是使用的AEM頁面 **產品** 元件；例如，在 **商務產品** 範本：
 
 ![ecommerce_nairobirunnersgreen](assets/ecommerce_nairobirunnersgreen.png)
 
@@ -491,9 +494,9 @@ AEM eCommerce實作必須考慮效能測試：
 
 ### 產品元件 {#product-component}
 
-可將&#x200B;**Product**&#x200B;元件新增至任何具有提供所需中繼資料的上層頁面（即`cartPage`和`cartObject`的路徑）的頁面。 在演示站點中，Geometrixx Outdoors由`UserInfo.jsp`提供。
+此 **產品** 元件可新增至任何具有上層頁面且提供必要中繼資料(亦即連往 `cartPage` 和 `cartObject`)。 在演示站點中，Geometrixx Outdoors由提供 `UserInfo.jsp`.
 
-也可以根據您的個別需求自訂&#x200B;**Product**&#x200B;元件。
+此 **產品** 元件也可根據您的個別需求加以自訂。
 
 ### 代理頁 {#proxy-pages}
 
@@ -501,7 +504,7 @@ AEM eCommerce實作必須考慮效能測試：
 
 建立目錄會使用每個產品的10個節點，因為它為每個產品提供可在AEM內更新和自訂的個別元件。 如果您的目錄包含數百或甚至數千種產品，則會造成這麼大數量的節點問題。 若要避免任何問題，您可以使用Proxy頁面建立目錄。
 
-代理頁使用不包含任何實際產品內容的雙節點結構（`cq:Page`和`jcr:content`）。 內容會在請求時參考產品資料和範本頁面而產生。
+代理頁使用雙節點結構( `cq:Page` 和 `jcr:content`)不包含任何實際產品內容。 內容會在請求時參考產品資料和範本頁面而產生。
 
 然而，這是一種取捨。 您將無法在AEM中自訂產品資訊，因此將會使用標準範本（為您的網站定義）。
 
@@ -528,7 +531,7 @@ AEM eCommerce實作必須考慮效能測試：
 在AEM中：
 
 * 憑單是使用網站控制台建立/編輯的頁面型元件。
-* **憑證**&#x200B;元件提供：
+* 此 **憑單** 元件提供：
 
    * 憑證管理的轉譯者；這顯示當前購物車中的任何憑單。
    * 用於管理（添加/刪除）憑證的編輯對話框（表單）。
@@ -538,7 +541,7 @@ AEM eCommerce實作必須考慮效能測試：
 
 >[!NOTE]
 >
->AEM使用&#x200B;**憑單**&#x200B;一詞，這與&#x200B;**抵用券**&#x200B;一詞同義。
+>AEM使用詞語 **憑單**，這是術語的同義詞 **抵用券**.
 
 ### 促銷活動 {#promotions}
 
@@ -548,7 +551,7 @@ AEM eCommerce實作必須考慮效能測試：
 * 長期客戶可獲得所有訂單的折扣。
 * 在明確的時間段內提供的售價。
 * 當客戶的上一訂單超過特定金額時，客戶會收到憑單。
-* 購買&#x200B;*product-X*&#x200B;的客戶在&#x200B;*product-Y*（配對產品）上可獲得折扣。
+* 購買的客戶 *product-X* 優惠 *product-Y* （配對產品）。
 
 促銷活動通常不是由產品資訊經理維護，而是由行銷經理維護：
 
@@ -566,10 +569,10 @@ AEM eCommerce實作必須考慮效能測試：
    * 促銷管理的推薦者和對話
    * 用於呈現和編輯升級處理程式專用的配置參數的子元件
 
-在AEM中，促銷活動也整合至[促銷活動管理](/help/sites-authoring/personalization.md):
+在AEM中，促銷活動也整合至 [Campaign Management](/help/sites-authoring/personalization.md):
 
-* a [campaign](/help/sites-authoring/personalization.md)指定開/關時間
-* [](/help/sites-authoring/personalization.md) ** 行銷活動中的體驗可用來根據對應的受眾區段，將資產（預告頁面、促銷活動等）分組
+* a [行銷活動](/help/sites-authoring/personalization.md) 指定開/關時間
+* [體驗](/help/sites-authoring/personalization.md) *with* 促銷活動可用來根據對應的受眾區段，將資產（預告頁面、促銷活動等）分組
 
 促銷活動可在體驗中進行，或直接在促銷活動中進行：
 
@@ -579,7 +582,7 @@ AEM eCommerce實作必須考慮效能測試：
 
    `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
-   在體驗中，因此會在區段(`ordervalueover100`)解析時自動觸發。
+   在體驗中，因此會在區段( `ordervalueover100`)解析。
 
 * 如果促銷活動未出現在體驗中（僅顯示在促銷活動中），則無法自動套用至對象。 但是，如果購物者在購物車中輸入憑單，且該憑單參考促銷，則仍可引發此憑證。
 
@@ -591,9 +594,9 @@ AEM eCommerce實作必須考慮效能測試：
 
 >[!NOTE]
 >
->[hybris促](https://www.hybris.com/modules/promotion) 銷活動 [和hybris ](https://www.hybris.com/en/modules/voucher) voucherscover影響購物車且與定價相關的一切。促銷活動專用的行銷內容（例如橫幅等）不屬於Hybris促銷活動。
+>[hybris促銷活動](https://www.hybris.com/modules/promotion) 和 [hybris憑單](https://www.hybris.com/en/modules/voucher) 涵蓋影響購物車及與定價相關的所有項目。 促銷活動專用的行銷內容（例如橫幅等）不屬於Hybris促銷活動。
 
-## 個性化 {#personalization}
+## 個人化 {#personalization}
 
 ### 客戶註冊和帳戶 {#customer-registration-and-accounts}
 
@@ -622,7 +625,7 @@ AEM eCommerce實作必須考慮效能測試：
 >
 >使用電子商務引擎時，您需要確保為登入AEM例項的使用者建立的帳戶會複製（例如透過工作流程）至與該引擎通訊的任何其他AEM例項。
 >
->否則，這些其他AEM例項也會嘗試為引擎中的相同使用者建立帳戶。 這些動作會因來自引擎的`DuplicateUidException`而失敗。
+>否則，這些其他AEM例項也會嘗試為引擎中的相同使用者建立帳戶。 這些動作會因 `DuplicateUidException` 來自引擎。
 
 ### 客戶註冊 {#customer-sign-up}
 
@@ -648,7 +651,7 @@ AEM eCommerce實作必須考慮效能測試：
 
 來自電子商務引擎的交易資料與關於購物者的個人資訊結合。 AEM將部分資料用作設定檔資料。 AEM中的表單動作會將資訊寫回電子商務引擎。
 
-有一個頁面可讓您輕鬆管理帳戶資訊。 您可以按一下geometrixx頁面頂端的&#x200B;**My Account**，或導覽至`/content/geometrixx-outdoors/en/user/account.html`來存取它。
+有一個頁面可讓您輕鬆管理帳戶資訊。 您可以按一下 **我的帳戶** 在geometrixx頁面頂端，或導覽至 `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
@@ -664,11 +667,11 @@ AEM eCommerce實作必須考慮效能測試：
 
 您可以選擇預設地址。
 
-可通過按一下&#x200B;**通訊簿**&#x200B;或導航到`/content/geometrixx-outdoors/en/user/account/address-book.html`，從&#x200B;**我的帳戶**&#x200B;頁訪問通訊簿元件。
+可從以下位置訪問通訊簿元件： **我的帳戶** 按一下 **通訊簿** 或 `/content/geometrixx-outdoors/en/user/account/address-book.html`.
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
-可以按一下「**添加新地址……」**&#x200B;在通訊簿中添加新地址。 它會開啟一個表單，您可以填寫該表單，然後按一下「**新增地址**」。
+您可以按一下 **添加新地址……** 在通訊簿中添加新地址。 它會開啟一個表單，您可以填寫，然後按一下 **添加地址**.
 
 >[!NOTE]
 >
@@ -678,10 +681,10 @@ AEM eCommerce實作必須考慮效能測試：
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
-地址會保存在`user_home/profile/addresses`以下。\
+地址持續保存在下方 `user_home/profile/addresses`.\
 例如，若為Alison Parker，則位於/home/users/geometrixx/aparker@geometrixx.info/profile/addresses下
 
-您可以選擇想要哪個位址作為預設，此資訊會保存在購物者的設定檔中，而非包含該位址。 設定檔屬性`address.default`是使用選定值地址的路徑設定的。
+您可以選擇想要哪個位址作為預設，此資訊會保存在購物者的設定檔中，而非包含該位址。 設定檔屬性 `address.default` 是以選定值地址的路徑設定的。
 
 ### 客戶特定定價 {#customer-specific-pricing}
 
@@ -733,12 +736,12 @@ AEM eCommerce實作必須考慮效能測試：
 
 無論是哪種情況，項目都會在登入/登出期間（但僅在相同的電腦/瀏覽器上）保留在購物車中（且可以還原）。 例如：
 
-* 以`anonymous`的形式瀏覽並將產品新增至購物車
-* 登入為`Allison Parker` — 購物車空白
+* 瀏覽 `anonymous` 並將產品新增至購物車
+* 以 `Allison Parker`  — 她的購物車空了
 * 將產品新增至購物車
-* 登出 — 購物車會顯示`anonymous`的產品
+* 登出 — 購物車會顯示 `anonymous`
 
-* 以`Allison Parker`重新登入 — 其產品已還原
+* 重新登入 `Allison Parker`  — 她的產品已恢復
 
 >[!NOTE]
 >
@@ -746,7 +749,7 @@ AEM eCommerce實作必須考慮效能測試：
 
 >[!NOTE]
 >
->不建議使用`admin`帳戶測試還原購物車內容，因為這可能與電子商務引擎的`admin`帳戶（例如hybris）衝突。
+>不建議使用 `admin` 帳戶，因為這可能與 `admin` eCommerce引擎的帳戶（例如hybris）。
 
 >[!NOTE]
 >
@@ -826,7 +829,7 @@ AEM eCommerce實作必須考慮效能測試：
 
 >[!NOTE]
 >
->建立順序精靈中使用的欄位取決於為該位置定義的觸控最佳化架構。 在一般範例中，這可從以下網址找到：\
+>建立順序精靈中使用的欄位取決於為該位置定義的觸控最佳化架構。 在一般範例中，這可在下列網址找到：\
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 在AEM內保留訂單時，Order Console會針對每筆訂單顯示下列內容：
@@ -866,7 +869,7 @@ AEM eCommerce實作必須考慮效能測試：
 
 ### 訂單確認 {#confirmation-of-order}
 
-順序已在螢幕上確認，並可使用[順序追蹤](#order-tracking)來追蹤。
+順序會在畫面上確認，且可使用 [訂購追蹤](#order-tracking).
 
 ## 搜尋 {#search-features}
 
@@ -877,6 +880,6 @@ AEM eCommerce實作必須考慮效能測試：
 若需要更徹底的實作，您可以：
 
 * 使用您需要的功能擴充預設搜尋元件。
-* 在`CommerceService`中實作搜尋方法，然後在搜尋頁面上使用電子商務搜尋元件。
+* 在 `CommerceService` 然後在您的搜尋頁面上使用電子商務搜尋元件。
 
 使用電子商務引擎時，電子商務搜尋API可在電子商務引擎解決方案中完全實作，因此您可以使用現成可用的電子商務搜尋元件。 多面搜索允許您搜索JCR和/或引擎：

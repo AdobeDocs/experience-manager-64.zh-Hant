@@ -1,8 +1,8 @@
 ---
 title: 使用作者環境
-seo-title: 使用作者環境
+seo-title: Working with the Author Environment
 description: 製作環境可讓您執行與製作（包括頁面製作和管理資產）相關的工作，以及產生和維護網站上的內容時所需的管理工作。
-seo-description: 製作環境可讓您執行與製作（包括頁面製作和管理資產）相關的工作，以及產生和維護網站上的內容時所需的管理工作。
+seo-description: The author environment allows you to perform tasks related to authoring (including page authoring and managing assets) and administering tasks you need when generating and maintaining the content on your website.
 uuid: ebeaa2c3-05b0-4108-8e84-69b9ba48cfbe
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,24 +10,28 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 exl-id: 8421a092-6e99-4c05-9647-c0cc76667c85
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# 使用製作環境{#working-with-the-author-environment}
+# 使用作者環境{#working-with-the-author-environment}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->下列檔案著重於傳統UI。 如需在現代化觸控式UI中編寫的詳細資訊，請參閱[標準編寫檔案](/help/assets/assets.md)。
+>下列檔案著重於傳統UI。 如需在現代化觸控式UI中編寫的相關資訊，請參閱 [標準製作檔案](/help/assets/assets.md).
 
 製作環境可讓您執行與下列項目相關的工作：
 
-* [編寫](/help/sites-authoring/author.md) (包括 [頁面](/help/sites-authoring/qg-page-authoring.md) 撰寫和 [管理資產](/help/assets/assets.md))
+* [製作](/help/sites-authoring/author.md) (包括 [頁面編寫](/help/sites-authoring/qg-page-authoring.md) 和 [管理資產](/help/assets/assets.md))
 
-* [](/help/sites-administering/administer-best-practices.md) 管理產生和維護網站上的內容時所需的工作
+* [管理](/help/sites-administering/administer-best-practices.md) 產生和維護網站上的內容時所需的任務
 
 提供兩個圖形用戶介面來實現此目的，這些介面可通過任何現代瀏覽器訪問：
 
@@ -37,15 +41,15 @@ ht-degree: 1%
    * 主要是綠色。
    * 專為在桌上型電腦上使用而設計。
    * 不再維護。
-   * 以下檔案著重於此傳統UI。 如需在現代化觸控式UI中編寫的相關資訊，請參閱[標準製作檔案](/help/sites-authoring/author.md)。
+   * 以下檔案著重於此傳統UI。 如需在現代化觸控式UI中編寫的相關資訊，請參閱 [標準製作檔案](/help/sites-authoring/author.md).
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. 觸控式UI
 
    * 這是現代的標準AEM UI。
    * 它主要呈灰色，介面乾淨平整。
-   * 專為在觸控和桌上型裝置上使用（針對觸控最佳化）而設計。 所有裝置的外觀和感覺都一樣，但[檢視和選取資源](/help/sites-authoring/basic-handling.md)略有不同（點選與點按）。
-   * 如需使用觸控式UI製作的詳細資訊，請參閱[標準製作檔案](/help/sites-authoring/author.md)。 下列檔案著重於傳統UI。
+   * 專為在觸控和桌上型裝置上使用（針對觸控最佳化）而設計。 不過，所有裝置的外觀和感覺都一樣 [檢視和選取資源](/help/sites-authoring/basic-handling.md) 略有不同（點選與點按）。
+   * 請參閱 [標準製作檔案](/help/sites-authoring/author.md) 如需進一步了解如何使用觸控式UI製作。 下列檔案著重於傳統UI。
 
    * 桌面:
    ![chlimage_1-150](assets/chlimage_1-150.png)

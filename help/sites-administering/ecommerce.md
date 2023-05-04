@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
 exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 1%
+source-wordcount: '792'
+ht-degree: 3%
 
 ---
 
 # 電子商務{#ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 * [概念](/help/sites-administering/concepts.md)
 * [管理（一般）](/help/sites-administering/generic.md)
@@ -35,7 +39,7 @@ Adobe提供兩個版本的Commerce Integration Framework:
 | 前端 | AEM伺服器端轉譯的頁面 | 混合頁面應用程式（混合演算） |
 | 產品目錄 |  — 產品匯入工具、編輯器、AEM中的快取 <br> — 包含AEM或Proxy頁面的一般目錄 |  — 無產品匯入 <br> — 一般範本 <br> — 透過連接器提供隨選資料 |
 | 可擴充性 |  — 最多可支援數百萬種產品（取決於使用案例） <br> - Dispatcher上的快取 |  — 無卷限制 <br> — 快取Dispatcher或CDN |
-| 標準化資料模型 | 否 | 是，MagentoGraphQL架構 |
+| 標準化資料模型 | 否 | 是，MagentoGraphQL結構 |
 | 可用性 | 是：<br> - SAPCommerce Cloud(更新擴充功能以支援AEM 6.4和Hybris 5（預設），並維持與Hybris 4的相容性 <br>- SalesforceCommerce Cloud(Connector開源支援AEM 6.4) | 是，透過GitHub透過開放原始碼。 <br> Magento Commerce(支援Magento2.3.2（預設），並與Magento2.3.1相容)。 |
 | 使用時機 | 有限的使用案例：對於可能需要匯入小型靜態目錄的情況 | 大多數使用案例中的首選解決方案 |
 
@@ -133,7 +137,7 @@ AEM eCommerce提供：
 * 該框架是可擴展的。
 * 框架不提供現成可用的網站。 要使框架適應您的規範，始終需要進行一定數量的開發工作。
 
-### 為什麼？ {#why}
+### 原因為何？ {#why}
 
 * 提供快速實現定制電子商務站點所需的基本機制。
 * Tp提供開發真實電子商務站點所需的靈活性。

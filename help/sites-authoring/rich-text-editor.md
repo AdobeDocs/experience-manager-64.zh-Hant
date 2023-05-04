@@ -1,8 +1,8 @@
 ---
 title: 使用RTF編輯器來製作內容
-seo-title: 使用RTF編輯器來製作內容
+seo-title: Using the Rich Text Editor to Author Content
 description: 使用RTF編輯器在AEM中製作文字。
-seo-description: 使用RTF編輯器在AEM中製作文字。
+seo-description: Using the Rich Text Editor to author text in AEM.
 uuid: d8dc5989-7a1c-4bab-88fd-040c2c9aa69f
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,24 +10,28 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
 exl-id: 26d912e1-d8ee-44fc-8c82-ccc66551ddc1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 4%
+source-wordcount: '325'
+ht-degree: 5%
 
 ---
 
-# 使用RTF編輯器來製作內容{#using-the-rich-text-editor-to-author-content}
+# 使用RTF編輯器來製作內容 {#using-the-rich-text-editor-to-author-content}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 RTF編輯器(RTE)是在AEM頁面中編寫文字的基本建置區塊。 許多元件（如文字、文字、影像和表格）都以RTE為基礎。
 
 >[!NOTE]
 >
->將巢狀清單複製到RTE時無法如預期運作。 從Microsoft Word複製巢狀清單時，在將文字貼入RTE後，您需要手動清除清單。
+>將巢狀清單複製到RTE時無法如預期運作。 從Microsoft Word複製巢狀清單時，在RTE中貼上文字後，您需要手動清除清單。
 
-## 就地編輯{#in-place-editing}
+## 就地編輯 {#in-place-editing}
 
-只要點選或按一下，選取文字型元件就會顯示[元件工具列](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。
+只要點選或按一下，選取以文字為基礎的元件就會顯示 [元件工具列](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste).
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -51,13 +55,13 @@ RTF編輯器(RTE)是在AEM頁面中編寫文字的基本建置區塊。 許多�
 
 * **儲存**
 
-## 全螢幕編輯{#full-screen-editing}
+## 全螢幕編輯 {#full-screen-editing}
 
 對於基於文本的元件，從工具欄中選擇全螢幕模式將開啟RTF編輯器並隱藏其餘的頁面內容。
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-全螢幕模式會顯示管理員所設定的RTF編輯器所有選項。 視管理員或AEM開發人員提供的設定](../sites-administering/rich-text-editor.md)而定，AEM例項[中的這些變數可能有所不同。 如果您發現缺少選項，請要求管理員讓它可用。
+全螢幕模式會顯示管理員所設定的RTF編輯器所有選項。 這些變數可能會因AEM例項而異 [視設定而定](../sites-administering/rich-text-editor.md) 由管理員或AEM開發人員提供。 如果您發現缺少選項，請要求管理員讓它可用。
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 

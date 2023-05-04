@@ -1,5 +1,5 @@
 ---
-title: 建立和同步Live Copy
+title: 建立和同步 Live Copy
 seo-title: Creating and Synchronizing Live Copies
 description: 了解如何建立和同步Live Copy。
 seo-description: Learn how to create and synchronize Live Copies.
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 feature: Multi Site Manager
 exl-id: 13d044bd-fa61-4e24-ac1d-69a6f10847a4
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4006'
-ht-degree: 1%
+source-wordcount: '4042'
+ht-degree: 2%
 
 ---
 
-# 建立和同步Live Copy{#creating-and-synchronizing-live-copies}
+# 建立和同步 Live Copy{#creating-and-synchronizing-live-copies}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 您可以從頁面或Blueprint設定建立即時副本，然後可以管理繼承和同步。
 
@@ -329,11 +333,11 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份即時副本頁�
 
 建立即時副本時，即時副本設定會儲存在複製頁面的根頁面上。 根頁面的所有子頁面都會繼承即時副本設定。 livecopy頁面上的元件也會繼承即時副本設定。
 
-您可以暫停即時副本頁面的即時副本繼承，以便變更頁面屬性和元件。 暫停繼承時，頁面屬性和元件不再與源同步。
+您可以暫停即時副本頁面的即時副本繼承，以便變更頁面屬性和元件。 當您暫停繼承時，頁面屬性和元件將不再與來源同步。
 
 >[!NOTE]
 >
->您也可以 [分離即時副本](#detaching-a-live-copy) 從其藍圖中刪除所有連接。 「分離」(Detach)操作是永久的且不可逆的。
+>您也可以 [分離即時副本](#detaching-a-live-copy) 從其藍圖中刪除所有連接。 分離動作是永久性且無法復原。
 
 >[!NOTE]
 >
@@ -360,7 +364,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份即時副本頁�
 1. 選擇 **暫停** 的上界。
 1. 從以下項目中選取適當的選項：
 
-   * **擱置**
+   * **暫停**
    * **暫停子項**
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -572,7 +576,7 @@ Blueprint頁面（在Blueprint設定中參照）提供您一份即時副本頁�
 
    如需使用此功能的完整資訊，請參閱 [頁面差異](/help/sites-authoring/page-diff.md).
 
-## 分離即時副本 {#detaching-a-live-copy}
+## 分離 Live Copy {#detaching-a-live-copy}
 
 「分離」會永久移除即時副本與其來源/藍圖頁面之間的即時關係。 所有與MSM相關的屬性會從Live Copy中移除，而Live Copy頁面會變成獨立Copy。
 

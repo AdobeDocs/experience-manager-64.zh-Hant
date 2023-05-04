@@ -1,36 +1,40 @@
 ---
 title: 自定義用於路由操作的影像
-seo-title: 自定義用於路由操作的影像
+seo-title: Customize images used in route actions
 description: 在AEM Forms工作區中自訂路由動作中使用的影像LiveCycle。
-seo-description: 在AEM Forms工作區中自訂路由動作中使用的影像LiveCycle。
+seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 7b1f60e7-c8fa-43b6-bef4-88b42e7bbc36
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 0%
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 
-# 自定義路由操作{#customize-images-used-in-route-actions}中使用的影像
+# 自定義用於路由操作的影像 {#customize-images-used-in-route-actions}
 
-要自定義路由操作中使用的影像，請執行[自定義的一般步驟](/help/forms/using/generic-steps-html-workspace-customization.md)中所述的步驟，以及本文所述的步驟。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-## 路由操作的影像{#images-for-route-actions}
+要自定義路由操作中使用的影像，請執行 [自訂的一般步驟](/help/forms/using/generic-steps-html-workspace-customization.md) 以及本文所述步驟。
+
+## 路由操作的影像 {#images-for-route-actions}
 
 1. 為新路由操作在以下位置添加定義CSS中影像的樣式：
 
    `/apps/ws/css/newStyle.css`
 
-   例如：新增名為`myStyle1`的新樣式（如下所示），並使用WebDAV客戶端將影像檔案`myStyleIcon1.png`上傳到`/apps/ws/image`s資料夾。
+   例如：新增名為 `myStyle1`如下所示，並上傳影像檔案 `myStyleIcon1.png` 到 `/apps/ws/image`使用WebDAV客戶端的資料夾。
 
    >[!NOTE]
    >
-   >有關WebDAV訪問的詳細資訊，請參閱[https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html)。
+   >有關WebDAV訪問的詳細資訊，請參見 [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
 
    >[!NOTE]
    >
@@ -44,13 +48,13 @@ ht-degree: 0%
        }
    ```
 
-## 任務清單任務操作彈出式菜單{#task-list-task-action-popup}
+## 任務清單任務操作彈出窗口 {#task-list-task-action-popup}
 
-1. 建立任務清單操作彈出式菜單，請參閱[構建AEM Forms工作區代碼](introduction-customizing-html-workspace.md#building-html-workspace-code)。 需要使用開發套件。
+1. 建立任務清單操作彈出式菜單，請參閱 [建立AEM Forms工作區程式碼](introduction-customizing-html-workspace.md#building-html-workspace-code). 需要使用開發套件。
 
-1. 將`/libs/ws/js/runtime/templates/task.html`複製到`/apps/ws/js/runtime/templates/task.html`。
+1. 複製 `/libs/ws/js/runtime/templates/task.html` to `/apps/ws/js/runtime/templates/task.html`.
 
-1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱相同，請在`/apps/ws/js/runtime/templates/task.html`中修改以下代碼：
+1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱相同，請在 `/apps/ws/js/runtime/templates/task.html`:
 
    ```
    <%if(routeList == null){%>
@@ -80,7 +84,7 @@ ht-degree: 0%
                <%}%>
    ```
 
-1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱不同，請在`/apps/ws/js/runtime/templates/task.html`中修改以下代碼。 它添加`if-else` servlet條件的堆棧，以將樣式與路由操作名映射。
+1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱不同，請在 `/apps/ws/js/runtime/templates/task.html`. 它會新增 `if-else` servlet條件來映射具有路由操作名稱的樣式。
 
 ```
 <%if(routeList == null){%>
@@ -116,11 +120,11 @@ To
             <%}%>
 ```
 
-## 任務詳細資訊任務操作彈出式菜單{#task-details-task-action-popup}
+## 「任務詳細資訊」任務操作彈出式菜單 {#task-details-task-action-popup}
 
-1. 將`/libs/ws/js/runtime/templates/taskdetails.html`複製到`/apps/ws/js/runtime/templates/taskdetails.html`。
+1. 複製 `/libs/ws/js/runtime/templates/taskdetails.html` to `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱相同，請在`/apps/ws/js/runtime/templates/taskdetails.html`中修改以下代碼：
+1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱相同，請在 `/apps/ws/js/runtime/templates/taskdetails.html`:
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -140,7 +144,7 @@ To
                        <%}%>
    ```
 
-1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱不同，請在`/apps/ws/js/runtime/templates/taskdetails.html`中修改以下代碼。 它添加一個`if-else` servlet條件棧，以將樣式與路由操作名映射。
+1. 如果CSS樣式的名稱與來自伺服器的路由操作名稱不同，請在 `/apps/ws/js/runtime/templates/taskdetails.html`. 它會新增 `if-else` servlet條件來映射具有路由操作名稱的樣式。
 
    ```
    <%for (var i = 0; i < availableCommands.directCommands.length; i++) {%>
@@ -168,7 +172,7 @@ To
                <%}%>
    ```
 
-1. 開啟`/apps/ws/js/registry.js`進行編輯，並尋找下列文字：\
+1. 開啟 `/apps/ws/js/registry.js` 編輯並尋找下列文字：\
    `"text!/lc/libs/ws/js/runtime/templates/taskdetails.html"`
 
 1. 將文字取代為：\

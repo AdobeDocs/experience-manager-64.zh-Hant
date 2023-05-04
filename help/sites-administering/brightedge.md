@@ -1,8 +1,8 @@
 ---
 title: 與BrightEdge Content Optimizer整合
-seo-title: 與BrightEdge Content Optimizer整合
+seo-title: Integrating with BrightEdge Content Optimizer
 description: 了解如何整合AEM與BrightEdge Content Optimizer。
-seo-description: 了解如何整合AEM與BrightEdge Content Optimizer。
+seo-description: Learn about integrating AEM with BrightEdge Content Optimizer.
 uuid: 7075dd3c-2fd6-4050-af1c-9b16ad4366ec
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: 46d0513c-04b2-41ed-bb56-e0778fa5fd10
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 0%
+source-wordcount: '531'
+ht-degree: 2%
 
 ---
 
 # 與BrightEdge Content Optimizer整合{#integrating-with-brightedge-content-optimizer}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 建立BrightEdge雲端設定，以便AEM可使用BrightEdge帳戶的認證進行連線。 如果您使用多個帳戶，則可建立多個設定。
 
@@ -35,7 +39,7 @@ ht-degree: 0%
 1. 輸入設定的標題。 （可選）鍵入用於將配置儲存在儲存庫中的節點的名稱。 按一下建立。
 1. 在「BrightEdge Content Optimizer配置」對話框中，鍵入BrightEdge帳戶的用戶名和密碼，然後按一下「確定」。
 
-## 編輯BrightEdge配置{#editing-a-brightedge-configuration}
+## 編輯BrightEdge組態 {#editing-a-brightedge-configuration}
 
 視需要修改BrightEdge設定的使用者名稱和密碼。 修改會影響使用設定的所有頁面。
 
@@ -47,7 +51,7 @@ ht-degree: 0%
 1. 按一下您要編輯的組態名稱。
 1. 按一下「編輯」，修改屬性值，然後按一下「確定」。
 
-## 將頁面與BrightEdge配置{#associating-pages-with-a-brightedge-configuration}關聯
+## 將頁面與BrightEdge組態關聯 {#associating-pages-with-a-brightedge-configuration}
 
 將頁面與BrightEdge設定關聯，以將頁面資料傳送至BrightEdge服務進行分析。 將頁面與配置關聯時，子頁面將繼承關聯。 通常，您會將網站的首頁建立關聯，以便從所有頁面傳送資料至BrightEdge。
 
@@ -59,7 +63,7 @@ ht-degree: 0%
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-## 激活BrightEdge配置{#activating-a-brightedge-configuration}
+## 啟用BrightEdge組態 {#activating-a-brightedge-configuration}
 
 啟動BrightEdge設定，以在發佈執行個體上複製該設定，並讓已發佈頁面與BrightEdge服務互動。
 

@@ -8,15 +8,19 @@ uuid: 5bcfb5d8-37d4-4a0e-882d-bc8a1bac6ba7
 contentOwner: AEM Docs
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 0%
+source-wordcount: '622'
+ht-degree: 1%
 
 ---
 
 
 # 不發佈，但不DELETE自訂內容片段模型{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 內容片段模型編輯器是以 `Formbuilder`，繼承自：
 

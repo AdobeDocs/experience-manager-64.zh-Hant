@@ -1,8 +1,8 @@
 ---
 title: 使用Remoting叫用AEM Forms
-seo-title: 使用Remoting叫用AEM Forms
+seo-title: Invoking AEM Forms using Remoting
 description: 使用「移除」來叫用AEM Forms程式，以叫用在Workbench中建立的程式。 您可以從使用Flex建置的用戶端應用程式叫用AEM Forms程式。
-seo-description: 使用「移除」來叫用AEM Forms程式，以叫用在Workbench中建立的程式。 您可以從使用Flex建置的用戶端應用程式叫用AEM Forms程式。
+seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
 uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
@@ -11,26 +11,30 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: de8ba694-0b68-4442-bd50-5ba6d845749c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4654'
+source-wordcount: '4657'
 ht-degree: 0%
 
 ---
 
-# 使用Remoting {#invoking-aem-forms-using-remoting}叫用AEM Forms
+# 使用Remoting叫用AEM Forms {#invoking-aem-forms-using-remoting}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 在Workbench中建立的程式可透過使用遠端叫用。 也就是說，您可以從使用Flex建置的用戶端應用程式叫用AEM Forms程式。 此功能以資料服務為基礎。
 
 >[!NOTE]
 >
->使用Remoting時，建議您叫用在Workbench中建立的程式，而非AEM Forms服務。 但可以直接叫用AEM Forms服務。 (請參閱使用AEM Forms開發人員中心的遠端加密PDF檔案)。
+>使用Remoting時，建議您叫用在Workbench中建立的程式，而非AEM Forms服務。 但可以直接叫用AEM Forms服務。 (請參閱使用AEM Forms開發人員中心上的遠端來加密PDF檔案)。
 
 >[!NOTE]
 >
 >如果AEM Forms服務未設定為允許匿名存取，來自Flex用戶端的請求會導致Web瀏覽器疑難排解。 用戶必須輸入用戶名和密碼憑據。
 
-可使用Remoting調用以下名為`MyApplication/EncryptDocument`的AEM Forms短期進程。 （有關此進程的資訊，如其輸入值和輸出值，請參閱[短期進程示例](/help/forms/developing/aem-forms-processes.md)。）
+以下AEM Forms短期過程已命名 `MyApplication/EncryptDocument`，可使用Remoting叫用。 (有關此過程的資訊，如其輸入值和輸出值，請參閱 [短期流程示例](/help/forms/developing/aem-forms-processes.md).)
 
 ![iu_iu_encryptdocumentprocess2](assets/iu_iu_encryptdocumentprocess2.png)
 
@@ -40,17 +44,17 @@ ht-degree: 0%
 
 叫用此程式時，會執行下列動作：
 
-1. 獲取作為輸入值傳遞的不安全PDF文檔。 此操作基於`SetValue`操作。 輸入參數的名稱為`inDoc`，其資料類型為`document`。 （`document`資料類型是Workbench內的可用資料類型。）
-1. 使用密碼加密PDF檔案。 此操作基於`PasswordEncryptPDF`操作。 此進程的輸出值的名稱為`outDoc` ，代表密碼加密的PDF文檔。 outDoc的資料類型為`document`。
-1. 將密碼加密的PDF文檔另存為PDF檔案到本地檔案系統。 此操作基於`WriteDocument`操作。
+1. 獲取作為輸入值傳遞的不安全PDF文檔。 此動作以 `SetValue` 操作。 輸入參數的名稱為 `inDoc` 其資料類型 `document`. ( `document` 資料類型是Workbench中可用的資料類型。)
+1. 使用密碼加密PDF文檔。 此動作以 `PasswordEncryptPDF` 操作。 此過程的輸出值的名稱為 `outDoc` 和代表密碼加密的PDF檔案。 outDoc的資料類型為 `document`.
+1. 將密碼加密的PDF文檔作為PDF檔案保存到本地檔案系統。 此動作以 `WriteDocument` 操作。
 
 >[!NOTE]
 >
->`MyApplication/EncryptDocument`程式不以現有的AEM Forms程式為基礎。 若要遵循程式碼範例，請使用Workbench建立名為`MyApplication/EncryptDocument`的程式。
+>此 `MyApplication/EncryptDocument` 程式不以現有的AEM Forms程式為基礎。 若要遵循程式碼範例，請建立以下程式： `MyApplication/EncryptDocument` 使用Workbench。
 
 >[!NOTE]
 >
->有關使用遠程調用長壽命進程的資訊，請參閱[調用以人為中心的長壽命進程](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)。
+>有關使用遠程調用長期進程的資訊，請參見 [調用以人為中心的長壽命過程](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
 **另請參閱**
 
@@ -70,19 +74,19 @@ ht-degree: 0%
 
 [使用HTTP Token建立執行SSO驗證的Flash Builder應用程式](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
-如需如何在Flex圖表控制項中顯示處理資料的資訊，請參閱在Flex圖表](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html)中顯示AEM Forms處理資料。[
+如需如何在Flex圖表控制項中顯示處理資料的資訊，請參閱 [在AEM Forms圖表中顯示Flex處理資料](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
 
 >[!NOTE]
 >
->*請務必將crossdomain.xml檔案放置在正確位置。例如，假設您在JBoss上部署了AEM Forms，請將此檔案放置在下列位置：&lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war*
+>*請務必將crossdomain.xml檔案放置在正確位置。 例如，假設您在JBoss上部署了AEM Forms，請將此檔案放置在下列位置： &lt;install_directory>\Adobe_Experience_Manager_forms\jboss\server\lc_turnkey\deploy\jboss-web.deployer\ROOT.war。*
 
-## 包含AEM Forms Flex程式庫檔案{#including-the-aem-forms-flex-library-file}
+## 包含AEM Forms Flex程式庫檔案 {#including-the-aem-forms-flex-library-file}
 
 若要使用Remoting以程式設計方式叫用AEM Forms程式，請將adobe-remoting-provider.swc檔案新增至您Flex專案的類別路徑。 此SWC檔案位於以下位置：
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-   其中， &lt;*install_directory*>是安裝AEM Forms的目錄。
+   其中&lt;*install_directory*>是安裝AEM Forms的目錄。
 
 **另請參閱**
 
@@ -94,15 +98,15 @@ ht-degree: 0%
 
 [驗證使用Flex建置的用戶端應用程式](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
-## 使用Remoting {#handling-documents-with-remoting}處理文檔
+## 使用遠程處理文檔 {#handling-documents-with-remoting}
 
-AEM Forms中使用的最重要的非原始Java類型之一是`com.adobe.idp.Document`類。 調用AEM Forms操作通常需要文檔。 它主要是PDF文檔，但可包含其他文檔類型，如SWF、HTML、XML或DOC檔案。 (請參閱[使用Java API](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)將資料傳遞至AEM Forms服務。)
+AEM Forms中使用的最重要非原始Java類型之一，是 `com.adobe.idp.Document` 類別。 調用AEM Forms操作通常需要文檔。 它主要是PDF文檔，但可以包含其他文檔類型，如SWF、HTML、XML或DOC檔案。 (請參閱 [使用Java API將資料傳遞至AEM Forms服務](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
 
-以Flex建置的用戶端應用程式無法直接要求檔案。 例如，您無法啟動Adobe Reader來要求產生PDF檔案的URL。 對文檔類型（如PDF和Microsoft Word文檔）的請求將返回結果為URL。 用戶端有責任顯示URL的內容。 文檔管理服務有助於生成URL和內容類型資訊。 對XML文檔的請求將返回結果中的完整XML文檔。
+以Flex建置的用戶端應用程式無法直接要求檔案。 例如，您無法啟動Adobe Reader來要求產生PDF檔案的URL。 檔案類型(例如PDF和Microsoft Word檔案)的請求會傳回URL的結果。 用戶端有責任顯示URL的內容。 文檔管理服務有助於生成URL和內容類型資訊。 對XML文檔的請求將返回結果中的完整XML文檔。
 
-### 將文檔作為輸入參數{#passing-a-document-as-an-input-parameter}傳遞
+### 將文檔作為輸入參數傳遞 {#passing-a-document-as-an-input-parameter}
 
-以Flex建置的用戶端應用程式無法將檔案直接傳遞至AEM Forms程式。 相反，客戶端應用程式使用`mx.rpc.livecycle.DocumentReference`ActionScript類的實例，將輸入參數傳遞到需要`com.adobe.idp.Document`實例的操作。 Flex用戶端應用程式有幾個設定`DocumentReference`物件的選項：
+以Flex建置的用戶端應用程式無法將檔案直接傳遞至AEM Forms程式。 相反地，用戶端應用程式會使用 `mx.rpc.livecycle.DocumentReference` ActionScript類，將輸入參數傳遞到預期 `com.adobe.idp.Document` 例項。 Flex用戶端應用程式有數個選項可用來設定 `DocumentReference` 物件：
 
 * 當文檔位於伺服器上且其檔案位置已知時，將DocumentReference對象的referenceType屬性設定為REF_TYPE_FILE。 將fileRef屬性設定為檔案的位置，如下例所示：
 
@@ -128,13 +132,13 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server’s default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* 當檔案不在伺服器上時，請使用「遠端上傳servlet」將檔案上傳至AEM Forms。 AEM Forms的新功能是上傳安全檔案。 上傳安全檔案時，您必須使用具有* 「檔案上傳應用程式使用者」*角色的使用者。 沒有此角色，用戶無法上載安全文檔。 建議您使用單一登入來上傳安全檔案。 （請參閱[使用Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)傳遞安全文檔以調用進程。）
+* 當檔案不在伺服器上時，請使用「遠端上傳servlet」將檔案上傳至AEM Forms。 AEM Forms的新功能是上傳安全檔案。 上傳安全檔案時，您必須使用具有* 「檔案上傳應用程式使用者」*角色的使用者。 沒有此角色，用戶無法上載安全文檔。 建議您使用單一登入來上傳安全檔案。 (請參閱 [使用遠程功能傳遞安全文檔以調用進程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
    >[!NOTE]
-   如果將AEM Forms設定為允許上載不安全的文檔，則可以使用沒有「文檔上載應用程式用戶」角色的用戶來上載文檔。 用戶也可以具有「文檔上載」權限。 不過，如果將AEM Forms設定為僅允許安全文檔，請確保用戶具有「文檔上載應用程式用戶」角色或「文檔上載」權限。 請參閱[將AEM Forms設定為接受安全和不安全的檔案](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)*。
+   如果將AEM Forms設定為允許上載不安全的文檔，則可以使用沒有「文檔上載應用程式用戶」角色的用戶來上載文檔。 用戶也可以具有「文檔上載」權限。 不過，如果將AEM Forms設定為僅允許安全文檔，請確保用戶具有「文檔上載應用程式用戶」角色或「文檔上載」權限。 請參閱 [設定AEM Forms以接受安全和不安全的檔案](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)*.
 
-   您對指定的上傳URL使用標準Flash上傳功能：`https://SERVER:PORT/remoting/lcfileupload`。 然後，只要`Document`類型的輸入參數為預期值，就可以使用`DocumentReference`對象
-   ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`「遠程快速入門」使用「遠程上傳servlet」將PDF檔案傳遞到進 `MyApplication/EncryptDocument`程。(請參閱[使用(AEM表單已過時)AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)傳遞不安全的檔案，以叫用短期處理程式。)
+   您對指定的上傳URL使用標準Flash上傳功能： `https://SERVER:PORT/remoting/lcfileupload`. 然後，您就可以使用 `DocumentReference` 對象，只要輸入類型的參數 `Document` 是預期的
+   ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`「遠程快速入門」使用「遠程上載servlet」將PDF檔案傳遞到 `MyApplication/EncryptDocument`程式。 (請參閱 [使用(AEM表單已過時)AEM Forms Remoting傳遞不安全的檔案，以叫用短期處理程式](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
 
 ```java
  
@@ -167,11 +171,11 @@ function completeHandler(event: DataEvent): void  { 
 }
 ```
 
-「遠程快速入門」使用「遠程上傳servlet」將PDF檔案傳遞到`MyApplication/EncryptDocument`進程。 (請參閱[使用(AEM表單已過時)AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)傳遞不安全的檔案，以叫用短期處理程式。)
+「遠程快速入門」使用「遠程上載servlet」將PDF檔案傳遞到 `MyApplication/EncryptDocument`程式。 (請參閱 [使用(AEM表單已過時)AEM Forms Remoting傳遞不安全的檔案，以叫用短期處理程式](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
 
-### 將文檔傳回客戶端應用程式{#passing-a-document-back-to-a-client-application}
+### 將文檔傳回客戶端應用程式 {#passing-a-document-back-to-a-client-application}
 
-客戶端應用程式接收類型為`mx.rpc.livecycle.DocumentReference`的對象，用於返回`com.adobe.idp.Document`實例作為輸出參數的服務操作。 由於客戶端應用程式處理的是ActionScript對象而非Java，因此您無法將基於Java的文檔對象傳回到Flex客戶端。 伺服器會為檔案產生URL，並將URL傳回用戶端。 `DocumentReference`對象的`referenceType`屬性指定內容是位於`DocumentReference`對象中，還是必須從`DocumentReference.url`屬性中的URL中檢索。 `DocumentReference.contentType`屬性指定文檔的類型。
+客戶端應用程式接收類型的對象 `mx.rpc.livecycle.DocumentReference` 返回 `com.adobe.idp.Document` 例項作為輸出參數。 由於客戶端應用程式處理的是ActionScript對象而非Java，因此您無法將基於Java的文檔對象傳回到Flex客戶端。 伺服器會為檔案產生URL，並將URL傳回用戶端。 此 `DocumentReference` 物件 `referenceType` 屬性會指定內容是否位於 `DocumentReference` 物件或必須從 `DocumentReference.url` 屬性。 此 `DocumentReference.contentType` 屬性指定文檔的類型。
 
 **另請參閱**
 
@@ -185,29 +189,29 @@ function completeHandler(event: DataEvent): void  { 
 
 [使用遠程功能傳遞安全文檔以調用進程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
-## 通過使用Remoting {#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting}傳遞不安全文檔來調用短期進程
+## 使用Remoting傳遞不安全的文檔以調用短期進程 {#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting}
 
 若要從使用Flex建置的應用程式叫用AEM Forms程式，請執行下列工作：
 
-1. 建立`mx:RemoteObject`實例。
-1. 建立`ChannelSet`實例。
+1. 建立 `mx:RemoteObject` 例項。
+1. 建立 `ChannelSet` 例項。
 1. 傳遞所需的輸入值。
 1. 處理傳回值。
 
 >[!NOTE]
-本節探討當AEM Forms設定為上傳不安全的檔案時，如何叫用AEM Forms程式和上傳檔案。 有關如何調用AEM Forms進程和上傳安全文檔以及如何配置AEM Forms以接受安全和不安全文檔的資訊，請參閱[使用Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)傳遞安全文檔以調用進程。
+本節探討當AEM Forms設定為上傳不安全的檔案時，如何叫用AEM Forms程式和上傳檔案。 如需如何叫用AEM Forms程式和上傳安全檔案，以及如何設定AEM Forms以接受安全和不安全檔案的相關資訊，請參閱 [使用遠程功能傳遞安全文檔以調用進程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **建立mx:RemoteObject實例**
 
-您可以建立`mx:RemoteObject`例項，以叫用在Workbench中建立的AEM Forms程式。 若要建立`mx:RemoteObject`例項，請指定以下值：
+您建立 `mx:RemoteObject` 例項，叫用在Workbench中建立的AEM Forms程式。 建立 `mx:RemoteObject` 例項，請指定下列值：
 
-* **id:** 代表要叫 `mx:RemoteObject` 用的程式的例項名稱。
-* **目的地：** 要叫用的AEM Forms程式名稱。例如，要調用`MyApplication/EncryptDocument`進程，請指定`MyApplication/EncryptDocument`。
+* **id:** 的名稱 `mx:RemoteObject` 代表要叫用的程式的例項。
+* **目的地：** 要叫用的AEM Forms程式的名稱。 例如，若要叫用 `MyApplication/EncryptDocument` 進程，指定 `MyApplication/EncryptDocument`.
 * **結果：** 處理結果的Flex方法的名稱。
 
-在`mx:RemoteObject`標籤中，指定`<mx:method>`標籤，該標籤指定進程調用方法的名稱。 通常，Forms調用方法的名稱為`invoke`。
+在 `mx:RemoteObject` 標籤，指定 `<mx:method>` 用於指定進程調用方法名稱的標籤。 通常，Forms呼叫方法的名稱為 `invoke`.
 
-以下代碼示例建立調用`MyApplication/EncryptDocument`進程的`mx:RemoteObject`實例。
+下列程式碼範例會建立 `mx:RemoteObject` 調用實例 `MyApplication/EncryptDocument` 程式。
 
 ```as3
  <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);"> 
@@ -217,7 +221,7 @@ function completeHandler(event: DataEvent): void  { 
 
 **建立通道至AEM Forms**
 
-用戶端應用程式可在MXML或ActionScript中指定通道以叫用AEM Forms，如下列ActionScript範例所示。 通道必須是`AMFChannel`、`SecureAMFChannel`、`HTTPChannel`或`SecureHTTPChannel`。
+用戶端應用程式可在MXML或ActionScript中指定通道以叫用AEM Forms，如下列ActionScript範例所示。 管道必須是 `AMFChannel`, `SecureAMFChannel`, `HTTPChannel`，或 `SecureHTTPChannel`.
 
 ```as3
      ... 
@@ -231,13 +235,13 @@ function completeHandler(event: DataEvent): void  { 
      ...
 ```
 
-將`ChannelSet`例項指派給`mx:RemoteObject`例項的`channelSet`欄位（如上一個程式碼範例所示）。 通常，在調用`ChannelSet.addChannel`方法時，您會在導入語句中導入通道類，而不是指定完全限定的名稱。
+指派 `ChannelSet` 例項 `mx:RemoteObject` instance&#39;s `channelSet` 欄位（如上一個程式碼範例所示）。 通常，您會在匯入陳述式中匯入通道類，而不是在叫用 `ChannelSet.addChannel` 方法。
 
 **傳遞輸入值**
 
-在Workbench中建立的程式可取用零個或多個輸入參數，並傳回輸出值。 客戶端應用程式在`ActionScript`對象內傳遞輸入參數，其欄位與屬於AEM Forms進程的參數相對應。 名為`MyApplication/EncryptDocument`的短期進程需要一個名為`inDoc`的輸入參數。 進程公開的操作名稱為`invoke`（短期進程的預設名稱）。 (請參閱[使用叫用AEM Forms(AEM表單已淘汰)AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
+在Workbench中建立的程式可取用零個或多個輸入參數，並傳回輸出值。 客戶端應用程式在 `ActionScript` 物件，其欄位對應至屬於AEM Forms程式的參數。 短期過程，命名為 `MyApplication/EncryptDocument`，需要一個輸入參數： `inDoc`. 進程公開的操作的名稱為 `invoke` （短期流程的預設名稱）。 (請參閱 [使用叫用AEM Forms(AEM表單已淘汰)AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-以下代碼示例將PDF文檔傳遞至`MyApplication/EncryptDocument`進程：
+以下程式碼範例將PDF檔案傳遞至 `MyApplication/EncryptDocument` 程式：
 
 ```as3
      ... 
@@ -252,11 +256,11 @@ function completeHandler(event: DataEvent): void  { 
      ...
 ```
 
-在此程式碼範例中，`pdfDocument`是包含不安全PDF檔案的`DocumentReference`例項。 有關`DocumentReference`的資訊，請參閱[使用(AEM表單已過時)AEM Forms Remoting](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)處理文檔。
+在此程式碼範例中， `pdfDocument` 是 `DocumentReference` 包含不安全PDF檔案的例項。 如需 `DocumentReference`，請參閱 [使用(AEM表單已淘汰)AEM Forms Remoting處理檔案](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
 
 **叫用服務的特定版本**
 
-您可以在呼叫的參數映射中使用`_version`參數來叫用特定版本的Forms服務。 例如，要調用`MyApplication/EncryptDocument`服務的1.2版：
+您可以使用 `_version` 參數。 例如，若要叫用1.2版的 `MyApplication/EncryptDocument` 服務：
 
 ```as3
  var params:Object = new Object(); 
@@ -265,11 +269,11 @@ function completeHandler(event: DataEvent): void  { 
  var token:AsyncToken = echoService.echoString(params);
 ```
 
-`version`參數必須是包含單一句號的字串。 句點的左、主、右、次版本的值必須是整數。 如果未指定此參數，則調用頭活動版本。
+此 `version` 參數必須是包含單一句號的字串。 句點的左、主、右、次版本的值必須是整數。 如果未指定此參數，則調用頭活動版本。
 
 **處理傳回值**
 
-AEM Forms進程輸出參數被反序列化為ActionScript對象，客戶機應用程式從這些對象中按名稱提取特定參數，如以下示例所示。 （`MyApplication/EncryptDocument`進程的輸出值名為`outDoc`。）
+AEM Forms進程輸出參數被反序列化為ActionScript對象，客戶機應用程式從這些對象中按名稱提取特定參數，如以下示例所示。 (輸出值 `MyApplication/EncryptDocument` 進程已命名 `outDoc`.)
 
 ```as3
      ... 
@@ -280,18 +284,18 @@ AEM Forms進程輸出參數被反序列化為ActionScript對象，客戶機應�
 
 **調用MyApplication/EncryptDocument進程**
 
-您可以執行下列步驟來叫用`MyApplication/EncryptDocument`程式：
+您可以叫用 `MyApplication/EncryptDocument` 程式，請執行下列步驟：
 
-1. 透過ActionScript或MXML建立`mx:RemoteObject`例項。 請參閱建立mx:RemoteObject實例。
-1. 設定`ChannelSet`例項以與AEM Forms通訊，並將其與`mx:RemoteObject`例項建立關聯。 請參閱建立管道至AEM Forms。
-1. 調用ChannelSet的`login`方法或服務的`setCredentials`方法以指定用戶標識符值和口令。 （請參閱[使用單一登入](invoking-aem-forms-using-remoting.md#using-single-sign-on)。）
-1. 將不安全的PDF檔案填入`mx.rpc.livecycle.DocumentReference`執行個體，以傳遞至`MyApplication/EncryptDocument`程式。 （請參閱[將文檔作為輸入參數傳遞](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter)。）
-1. 呼叫`mx:RemoteObject`執行個體的`invoke`方法，以加密PDF檔案。 傳遞包含輸入參數（不安全的PDF檔案）的`Object`。 請參閱傳遞輸入值。
-1. 擷取從程式傳回的密碼加密PDF檔案。 請參閱處理傳回值。
+1. 建立 `mx:RemoteObject` 例項(透過ActionScript或MXML)。 請參閱建立mx:RemoteObject實例。
+1. 設定 `ChannelSet` 例項以與AEM Forms通訊，並將其與 `mx:RemoteObject` 例項。 請參閱建立管道至AEM Forms。
+1. 呼叫ChannelSet的 `login` 方法或服務的 `setCredentials` 指定用戶標識符值和密碼的方法。 (請參閱 [使用單一登入](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
+1. 填入 `mx.rpc.livecycle.DocumentReference` 例項，其中包含不安全的PDF檔案，可傳遞至 `MyApplication/EncryptDocument` 程式。 (請參閱 [將文檔作為輸入參數傳遞](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
+1. 呼叫以加密PDF檔案 `mx:RemoteObject` instance&#39;s `invoke` 方法。 傳遞 `Object` 包含輸入參數(這是不安全的PDF文檔)。 請參閱傳遞輸入值。
+1. 檢索從進程返回的密碼加密PDF文檔。 請參閱處理傳回值。
 
 [快速入門：使用(AEM表單已過時)AEM Forms Remoting傳遞不安全的檔案，以叫用短期處理程式](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
 
-## 驗證使用Flex {#authenticating-client-applications-built-with-flex}建立的客戶端應用程式
+## 驗證使用Flex建置的用戶端應用程式 {#authenticating-client-applications-built-with-flex}
 
 AEM Forms使用者管理員可透過數種方式驗證來自Flex應用程式的遠端請求，包括透過中央登入服務、基本驗證和自訂驗證執行AEM Forms單一登入。 當未啟用單一登入或匿名存取時，Remoting請求會導致基本驗證（預設值）或自訂驗證。
 
@@ -300,24 +304,24 @@ AEM Forms使用者管理員可透過數種方式驗證來自Flex應用程式的�
 對於自定義身份驗證，伺服器向客戶端發送一個錯誤，以指示需要身份驗證。
 
 >[!NOTE]
-有關使用HTTP令牌執行身份驗證的資訊，請參閱[建立使用HTTP令牌執行SSO身份驗證的Flash Builder應用程式](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)。
+如需使用HTTP代號執行驗證的詳細資訊，請參閱 [使用HTTP Token建立執行SSO驗證的Flash Builder應用程式](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
-### 使用自定義身份驗證{#using-custom-authentication}
+### 使用自訂驗證 {#using-custom-authentication}
 
-通過在遠程端點上將身份驗證方法從「基本」更改為「自定義」，可在管理控制台中啟用自定義身份驗證。 如果使用自定義身份驗證，則您的客戶端應用程式將調用`ChannelSet.login`方法以登錄，調用`ChannelSet.logout`方法以註銷。
+通過在遠程端點上將身份驗證方法從「基本」更改為「自定義」，可在管理控制台中啟用自定義身份驗證。 如果您使用自訂驗證，您的用戶端應用程式會呼叫 `ChannelSet.login` 登入方法和 `ChannelSet.logout` 登出的方法。
 
 >[!NOTE]
-在舊版AEM Forms中，您會呼叫`RemoteObject.setCredentials`方法，將憑證傳送至目的地。 在元件首次嘗試連接到伺服器之前，`setCredentials`方法實際上並未將憑據傳遞到伺服器。 因此，如果元件發出了故障事件，則無法確定是由於身份驗證錯誤還是其他原因而發生故障。 當您呼叫`ChannelSet.login`方法時，會連線至伺服器，以便您能立即處理驗證問題。 雖然您可以繼續使用`setCredentials`方法，但建議您使用`ChannelSet.login`方法。
+在舊版AEM Forms中，您會呼叫 `RemoteObject.setCredentials` 方法。 此 `setCredentials` 直到元件首次嘗試連線至伺服器時，方法才會實際將憑證傳遞至伺服器。 因此，如果元件發出了故障事件，則無法確定是由於身份驗證錯誤還是其他原因而發生故障。 此 `ChannelSet.login` 方法會在您呼叫時連線至伺服器，以便您能立即處理驗證問題。 雖然您可以繼續使用 `setCredentials` 方法，建議您使用 `ChannelSet.login` 方法。
 
-由於多個目的地可以使用相同的通道和相應的ChannelSet對象，因此登錄到一個目的地會將用戶登錄到使用相同通道或通道的任何其他目的地。 如果兩個元件將不同的憑據應用於同一ChannelSet對象，則使用最後應用的憑據。 如果多個元件使用相同的已驗證ChannelSet對象，則調用`logout`方法會將所有元件記錄出目標。
+由於多個目的地可以使用相同的通道和相應的ChannelSet對象，因此登錄到一個目的地會將用戶登錄到使用相同通道或通道的任何其他目的地。 如果兩個元件將不同的憑據應用於同一ChannelSet對象，則使用最後應用的憑據。 如果多個元件使用相同的已驗證ChannelSet物件，請呼叫 `logout` 方法會將所有元件記錄出目的地。
 
-以下示例將`ChannelSet.login`和`ChannelSet.logout`方法與RemoteObject控制項一起使用。 此應用程式會執行下列動作：
+下列範例使用 `ChannelSet.login` 和 `ChannelSet.logout` 方法。 此應用程式會執行下列動作：
 
-* 在`creationComplete`處理程式中建立`ChannelSet`對象，該對象表示`RemoteObject`元件使用的通道
-* 響應按鈕點擊事件，呼叫`ROLogin`函式，將憑證傳遞至伺服器
+* 建立 `ChannelSet` 物件(在 `creationComplete` 代表 `RemoteObject` 元件
+* 呼叫 `ROLogin` 函式，以回應按鈕點按事件
 * 使用RemoteObject元件將字串發送到伺服器以響應按鈕點擊事件。 伺服器將相同的字串返回到RemoteObject元件
 * 使用RemoteObject元件的結果事件在TextArea控制項中顯示字串
-* 響應按鈕點擊事件，呼叫`ROLogout`函式以註銷伺服器
+* 借由呼叫 `ROLogout` 函式，以回應按鈕點按事件
 
 ```as3
  <?xml version=”1.0”?> 
@@ -439,9 +443,9 @@ AEM Forms使用者管理員可透過數種方式驗證來自Flex應用程式的�
  </mx:Application>
 ```
 
-`login`和`logout`方法會傳回AsyncToken物件。 將事件處理常式指派給AsyncToken物件，讓結果事件處理成功的呼叫，並讓錯誤事件處理失敗。
+此 `login` 和 `logout` 方法會傳回AsyncToken物件。 將事件處理常式指派給AsyncToken物件，讓結果事件處理成功的呼叫，並讓錯誤事件處理失敗。
 
-### 使用單一登入{#using-single-sign-on}
+### 使用單一登入 {#using-single-sign-on}
 
 AEM forms使用者可以連線至多個AEM Forms網頁應用程式來執行工作。 當使用者從一個Web應用程式移至另一個應用程式時，要求他們個別登入每個Web應用程式並不有效。 AEM Forms單一登入機制可讓使用者登入一次，然後存取任何AEM Forms Web應用程式。 由於AEM Forms開發人員可建立用於AEM Forms的用戶端應用程式，因此他們也必須能夠運用單一登入機制。
 
@@ -456,19 +460,19 @@ AEM Forms開發人員撰寫用戶端應用程式以擴充「表單指南」的�
 
 您可以撰寫自行登入和登出的用戶端應用程式，以略過AEM Forms單一登入機制。 如果您略過單一登入機制，便可對您的應用程式使用基本或自訂驗證。
 
-由於此機制未使用AEM Forms單一登入機制，因此不會將驗證Cookie寫入用戶端。 登錄憑據儲存在遠程通道的`ChannelSet`對象中。 因此，您對相同`ChannelSet`發出的任何`RemoteObject`呼叫，都會在這些憑證的內容中進行。
+由於此機制未使用AEM Forms單一登入機制，因此不會將驗證Cookie寫入用戶端。 登入憑證會儲存在 `ChannelSet` 遠端通道的物件。 因此， `RemoteObject` 你同樣打的電話 `ChannelSet` 是在這些全權證書的範圍內作出的。
 
-### 在AEM Forms中設定單一登入{#setting-up-single-sign-on-in-aem-forms}
+### 在AEM Forms中設定單一登入 {#setting-up-single-sign-on-in-aem-forms}
 
 若要在AEM Forms中使用單一登入，請安裝表單工作流程元件（包括集中登入服務）。 使用者成功登入後，集中式登入服務會傳回驗證Cookie給使用者。 後續對Forms Web應用程式提出的每個請求都包含Cookie。 如果Cookie有效，系統會將使用者視為已驗證，不需要再次登入。
 
-### 編寫使用單一登錄{#writing-a-client-application-that-uses-single-sign-on}的客戶端應用程式
+### 編寫使用單一登錄的客戶端應用程式 {#writing-a-client-application-that-uses-single-sign-on}
 
-當您利用單一登入機制時，您會希望使用者在啟動用戶端應用程式之前，使用集中式登入服務登入。 也就是說，客戶端應用程式不會通過瀏覽器登錄，也不會通過調用`ChannelSet.login`方法登錄。
+當您利用單一登入機制時，您會希望使用者在啟動用戶端應用程式之前，使用集中式登入服務登入。 也就是說，用戶端應用程式不會透過瀏覽器登入，或是呼叫 `ChannelSet.login` 方法。
 
 如果您使用AEM Forms單一登入機制，請將「遠端」端點設定為使用自訂驗證，而非基本驗證。 否則，使用基本驗證時，驗證錯誤會造成瀏覽器挑戰，您不希望使用者看到。 反之，您的應用程式會偵測驗證錯誤，然後顯示訊息，指示使用者使用集中登入服務登入。
 
-客戶端應用程式使用`RemoteObject`元件通過遠程端點訪問AEM Forms，如以下示例所示。
+用戶端應用程式透過遠端端點使用 `RemoteObject` 元件，如下列範例所示。
 
 ```as3
  <?xml version="1.0"?> 
@@ -521,7 +525,7 @@ AEM Forms開發人員撰寫用戶端應用程式以擴充「表單指南」的�
 
 若要登出AEM Forms並使工作階段無效，必須從用戶端的電腦刪除驗證Cookie。 由於單一登入的目的是讓使用者只登入一次，因此您不希望用戶端應用程式刪除Cookie。 此動作會有效登出使用者。
 
-因此，調用客戶端應用程式中的`RemoteObject.logout`方法會在客戶端上生成一條錯誤消息，指定會話未註銷。 使用者可改為使用集中登入服務來登出及刪除驗證Cookie。
+因此，呼叫 `RemoteObject.logout` 客戶端應用程式中的方法在客戶端上生成一條錯誤消息，該錯誤消息指定會話未註銷。 使用者可改為使用集中登入服務來登出及刪除驗證Cookie。
 
 **在Flex應用程式仍在執行時登出**
 
@@ -539,16 +543,16 @@ AEM Forms開發人員撰寫用戶端應用程式以擴充「表單指南」的�
 
 [使用遠程功能傳遞安全文檔以調用進程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)
 
-## 使用Remoting {#passing-secure-documents-to-invoke-processes-using-remoting}傳遞安全文檔以調用進程
+## 使用遠程功能傳遞安全文檔以調用進程 {#passing-secure-documents-to-invoke-processes-using-remoting}
 
-叫用需要一或多個檔案的程式時，您可以將安全檔案傳遞至AEM Forms。 通過傳遞安全文檔，您可以保護業務資訊和機密文檔。 在這種情況下，文檔可以指PDF文檔、XML文檔、Word文檔等。 將AEM Forms設為允許安全檔案時，必須將安全檔案從寫入Flex的用戶端應用程式傳遞至AEM Forms。 (請參閱[將AEM Forms設定為接受安全和不安全的檔案](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)。)
+叫用需要一或多個檔案的程式時，您可以將安全檔案傳遞至AEM Forms。 通過傳遞安全文檔，您可以保護業務資訊和機密文檔。 在這種情況下，文檔可以指PDF文檔、XML文檔、Word文檔等。 將AEM Forms設為允許安全檔案時，必須將安全檔案從寫入Flex的用戶端應用程式傳遞至AEM Forms。 (請參閱 [設定AEM Forms以接受安全和不安全的檔案](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-傳遞安全檔案時，請使用單一登入，並指定具有*檔案上傳應用程式使用者*角色的AEM表單使用者。 沒有此角色，用戶無法上載安全文檔。 您可以以程式設計方式將角色指派給使用者。 （請參閱[管理角色和權限](/help/forms/developing/users.md#managing-roles-and-permissions)。）
+傳遞安全檔案時，請使用單一登入，並指定具有*檔案上傳應用程式使用者*角色的AEM表單使用者。 沒有此角色，用戶無法上載安全文檔。 您可以以程式設計方式將角色指派給使用者。 (請參閱 [管理角色和權限](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 建立新角色並希望該角色的成員上載安全文檔時，請確保指定「文檔上載」權限。
 
-AEM Forms支援名為`getFileUploadToken`的操作，該操作會傳回傳遞至上傳servlet的Token。 `DocumentReference.constructRequestForUpload`方法需要連同`LC.FileUploadAuthenticator.getFileUploadToken`方法傳回的代號的URL來存取AEM Forms。 此方法會傳回`URLRequest`物件，用於呼叫上傳servlet。 下列程式碼會示範此應用程式邏輯。
+AEM Forms支援名為 `getFileUploadToken` 會傳回傳遞至上傳servlet的Token。 此 `DocumentReference.constructRequestForUpload` 方法需要連同AEM Forms傳回的代號， `LC.FileUploadAuthenticator.getFileUploadToken` 方法。 此方法會傳回 `URLRequest` 用於上傳servlet調用的對象。 下列程式碼會示範此應用程式邏輯。
 
 ```as3
      ... 
@@ -603,22 +607,22 @@ AEM Forms支援名為`getFileUploadToken`的操作，該操作會傳回傳遞至
 
 )
 
-### 將AEM Forms設定為接受安全和不安全的檔案{#configuring-aem-forms-to-accept-secure-and-unsecure-documents}
+### 設定AEM Forms以接受安全和不安全的檔案 {#configuring-aem-forms-to-accept-secure-and-unsecure-documents}
 
 您可以使用管理控制台來指定將檔案從Flex用戶端應用程式傳遞至AEM Forms程式時，檔案是否安全。 依預設，AEM Forms會設定為接受安全檔案。 您可以執行下列步驟，將AEM Forms設定為接受安全檔案：
 
 1. 登入管理控制台。
-1. 按一下「**設定**」。
-1. 按一下「**核心繫統設定**」。
-1. 按一下「**配置**」。
+1. 按一下 **設定**.
+1. 按一下 **核心繫統設定**.
+1. 按一下 **配置**.
 1. 確保未選取「允許從Flex應用程式上傳非安全檔案」選項。
 
 >[!NOTE]
 若要設定AEM Forms以接受不安全的檔案，請選取「允許從Flex應用程式上傳非安全的檔案」選項。 然後重新啟動應用程式或服務，以確保設定生效。
 
-### 快速入門：使用Remoting {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}傳遞安全文檔以調用短期進程
+### 快速入門：使用Remoting傳遞安全文檔以調用短期進程 {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 
-以下代碼示例調用`MyApplication/EncryptDocument.`用戶必須登錄才能按一下「選擇檔案」按鈕，該按鈕用於上載PDF檔案並調用該進程。 也就是說，一旦用戶通過驗證，就會啟用「選擇檔案」按鈕。 下圖顯示使用者通過驗證後的Flex用戶端應用程式。 請注意已驗證核取方塊已啟用。
+下列程式碼範例會叫用 `MyApplication/EncryptDocument.`用戶必須登錄才能按一下「選擇檔案」按鈕，該按鈕用於上載PDF檔案並調用進程。 也就是說，一旦用戶通過驗證，就會啟用「選擇檔案」按鈕。 下圖顯示使用者通過驗證後的Flex用戶端應用程式。 請注意已驗證核取方塊已啟用。
 
 ![iu_iu_secureremotelogin](assets/iu_iu_secureremotelogin.png)
 
@@ -882,11 +886,11 @@ AEM Forms支援名為`getFileUploadToken`的操作，該操作會傳回傳遞至
 
 [驗證使用Flex建置的用戶端應用程式](invoking-aem-forms-using-remoting.md#authenticating-client-applications-built-with-flex)
 
-## 使用Remoting {#invoking-custom-component-services-using-remoting}調用自定義元件服務
+## 使用遠程調用自定義元件服務 {#invoking-custom-component-services-using-remoting}
 
 您可以使用Remoting叫用自訂元件中的服務。 例如，請考慮包含客戶服務的銀行元件。 您可以使用寫入Flex的用戶端應用程式，叫用屬於客戶服務的作業。 您必須先建立銀行自定義元件，才能執行與此部分關聯的快速啟動。
 
-客戶服務公開名為`createCustomer`的操作。 本討論介紹如何建立調用客戶服務並建立客戶的Flex客戶端應用程式。 此操作需要一個代表新客戶的`com.adobe.livecycle.sample.customer.Customer`類型的複雜對象。 下圖顯示了調用客戶服務並建立新客戶的客戶端應用程式。 `createCustomer`操作返回客戶標識符值。 識別碼值會顯示在「客戶識別碼」文字方塊中。
+客戶服務公開的操作名為 `createCustomer`. 本討論介紹如何建立調用客戶服務並建立客戶的Flex客戶端應用程式。 此操作需要類型複雜的對象 `com.adobe.livecycle.sample.customer.Customer` 代表新客戶。 下圖顯示了調用客戶服務並建立新客戶的客戶端應用程式。 此 `createCustomer` 操作返回客戶標識符值。 識別碼值會顯示在「客戶識別碼」文字方塊中。
 
 ![iu_iu_flexnewcust](assets/iu_iu_flexnewcust.png)
 
@@ -930,20 +934,20 @@ AEM Forms支援名為`getFileUploadToken`的操作，該操作會傳回傳遞至
   </tr> 
   <tr> 
    <td><p>txtCustId</p></td> 
-   <td><p>指定新帳戶所屬的客戶識別碼值。 此文本框由客戶服務<code>createCustomer</code>操作的返回值填充。 </p></td> 
+   <td><p>指定新帳戶所屬的客戶識別碼值。 此文本框由客戶服務的返回值填入 <code>createCustomer</code> 操作。 </p></td> 
   </tr> 
  </tbody> 
 </table>
 
-### 映射AEM Forms複雜資料類型{#mapping-aem-forms-complex-data-types}
+### 對應AEM Forms複雜資料類型 {#mapping-aem-forms-complex-data-types}
 
-有些AEM Forms作業需要複雜的資料類型作為輸入值。 這些複雜的資料類型定義了操作使用的運行時值。 例如，客戶服務的`createCustomer`操作需要`Customer`實例，該實例包含服務所需的運行時值。 若沒有複雜類型，客戶服務會擲回例外狀況，而不執行操作。
+有些AEM Forms作業需要複雜的資料類型作為輸入值。 這些複雜的資料類型定義了操作使用的運行時值。 例如，客戶服務 `createCustomer` 操作需要 `Customer` 包含服務所需的執行時間值的例項。 若沒有複雜類型，客戶服務會擲回例外狀況，而不執行操作。
 
 叫用AEM Forms服務時，建立對應至必要AEM Forms複雜類型的ActionScript物件。 對於操作需要的每種複雜資料類型，建立一個單獨的ActionScript對象。
 
-在ActionScript類別中，使用`RemoteClass`中繼資料標籤來對應至AEM Forms複雜類型。 例如，在調用客戶服務的`createCustomer`操作時，建立映射到`com.adobe.livecycle.sample.customer.Customer`資料類型的ActionScript類。
+在ActionScript類別中，使用 `RemoteClass` 中繼資料標籤，以對應至AEM Forms複雜類型。 例如，叫用客戶服務 `createCustomer` 操作，建立映射到的ActionScript類 `com.adobe.livecycle.sample.customer.Customer` 資料類型。
 
-以下名為Customer的ActionScript類說明如何映射到AEM Forms資料類型`com.adobe.livecycle.sample.customer.Customer`。
+以下名為Customer的ActionScript類會說明如何對應至AEM Forms資料類型 `com.adobe.livecycle.sample.customer.Customer`.
 
 ```as3
  package customer 
@@ -964,18 +968,18 @@ AEM Forms支援名為`getFileUploadToken`的操作，該操作會傳回傳遞至
 
 AEM Forms複雜類型的完全限定資料類型將分配給別名標籤。
 
-ActionScript類的欄位與屬於AEM Forms複雜類型的欄位匹配。 客戶ActionScript類中的六個欄位與屬於`com.adobe.livecycle.sample.customer.Customer`的欄位匹配。
+ActionScript類的欄位與屬於AEM Forms複雜類型的欄位匹配。 客戶ActionScript類中的6個欄位與屬於 `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
-要確定屬於Forms複雜類型的欄位名稱，最好在Web瀏覽器中查看服務的WSDL。 WSDL指定服務的複雜類型和相應的資料成員。 以下WSDL用於客戶服務：*https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.*
+要確定屬於Forms複雜類型的欄位名稱，最好在Web瀏覽器中查看服務的WSDL。 WSDL指定服務的複雜類型和相應的資料成員。 以下WSDL用於客戶服務： *https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl。*
 
 客戶ActionScript類屬於名為customer的包。 建議您將對應至複雜AEM Forms資料類型的所有ActionScript類別放入自己的套件中。 在Flex專案的src資料夾中建立資料夾，並將ActionScript檔案置於資料夾中，如下圖所示。
 
 ![iu_iu_customeras](assets/iu_iu_customeras.png)
 
-### 快速入門：使用Remoting {#quick-start-invoking-the-customer-custom-service-using-remoting}調用客戶自定義服務
+### 快速入門：使用遠程調用客戶自定義服務 {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-以下代碼示例調用客戶服務並建立新客戶。 執行此程式碼範例時，請務必填寫所有文字方塊。 同時，請確定您建立對應至`com.adobe.livecycle.sample.customer.Customer`的Customer.as檔案。
+以下代碼示例調用客戶服務並建立新客戶。 執行此程式碼範例時，請務必填寫所有文字方塊。 同時，請確定您建立對應至的Customer.as檔案 `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 在執行此快速啟動之前，您必須建立並部署銀行自定義元件。

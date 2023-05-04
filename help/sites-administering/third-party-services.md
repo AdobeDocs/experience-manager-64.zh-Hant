@@ -1,8 +1,8 @@
 ---
 title: 與第三方服務整合
-seo-title: 與第三方服務整合
+seo-title: Integrating with Third-Party Services
 description: 了解如何將AEM與協力廠商服務整合。
-seo-description: 了解如何將AEM與協力廠商服務整合。
+seo-description: Learn how to integrate AEM with third party services.
 uuid: bfafd00b-46bc-4af2-b3e8-874afb1ed697
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 exl-id: 9a3857fd-4f62-4293-950b-75626e4dcf50
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 10%
+source-wordcount: '362'
+ht-degree: 11%
 
 ---
 
 # 與第三方服務整合{#integrating-with-third-party-services}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 透過AEM，您可以立即整合下列非Adobe產品：
 
@@ -26,43 +30,43 @@ ht-degree: 10%
 * ExactTarget — 電子郵件行銷
 * Facebook Connect — 社交網路
 * 一般Analytics程式碼片段 — analytics
-* Microsoft翻譯工具或其他機器翻譯提供程式
+* Microsoft翻譯工具或其他機器翻譯提供者
 * Pushwoosh連線 — 應用程式 — 推播通知
 * Salesforce — 銷售和CRM軟體
 * Silverpop參與 — 行銷自動化、電子郵件、行動裝置和社交
 * Twitter — 社交網路
 * YouTube — 影片分享
 
-此外，您可以將AEM與[Marketing Cloud](/help/sites-administering/marketing-cloud.md)及[Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)整合。
+此外，您可以將AEM與 [Marketing Cloud](/help/sites-administering/marketing-cloud.md) 和 [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-## 與Salesforce整合{#integrating-with-salesforce}
+## 與Salesforce整合 {#integrating-with-salesforce}
 
 Salesforce.com 是領導朝向社交企業轉變的企業雲端運算公司。
 
-有關整合AEM網站和Salesforce的資訊，請參閱[與Salesforce整合](/help/sites-administering/salesforce.md)。
+如需整合AEM網站和Salesforce的相關資訊，請參閱 [與Salesforce整合](/help/sites-administering/salesforce.md).
 
-## 與Silverpop Engage整合{#integrating-with-silverpop-engage}
+## 與Silverpop Engage整合 {#integrating-with-silverpop-engage}
 
 >[!NOTE]
 >
->Silverpop Engage整合無法立即使用。 若要將AEM與Silverpop Engage整合，請從Package Share下載套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content)。[
+>Silverpop Engage整合無法立即使用。 若要整合AEM與Silverpop Engage, [下載套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem620/product/cq-mcm-integrations-silverpop-content) 從包共用。
 
 Silverpop Engage提供行銷自動化、電子郵件、行動裝置和社交功能。
 
-如需整合AEM網站和ExactTarget的相關資訊，請參閱[與Silverpop整合Engage](/help/sites-administering/silverpop.md)。
+如需整合AEM網站和ExactTarget的詳細資訊，請參閱 [與Silverpop Engage整合](/help/sites-administering/silverpop.md).
 
-## 與ExactTarget整合{#integrating-with-exacttarget}
+## 與ExactTarget整合 {#integrating-with-exacttarget}
 
 任何大小規模的組織都可透過 ExactTarget 的電子郵件行銷解決方案，來設計與提供可正確鎖定目標、關鍵性業務，及完全整合的電子郵件促銷活動。
 
-如需整合AEM網站和ExactTarget的相關資訊，請參閱[設定ExactTarget](/help/sites-administering/exacttarget.md)。
+如需整合AEM網站和ExactTarget的詳細資訊，請參閱 [設定ExactTarget](/help/sites-administering/exacttarget.md).
 
-## 與Facebook和Twitter整合{#integrating-with-facebook-and-twitter}
+## 整合Facebook和Twitter {#integrating-with-facebook-and-twitter}
 
 Facebook和Twitter是熱門的社交網路服務。 AEM與Facebook和Twitter的整合可讓組織針對擁有的數位屬性提供Facebook或Twitter登入選項，然後根據設定檔資訊個人化使用者體驗。 行銷人員也可以將設定檔資訊與來自其他來源的資料（例如客戶關係管理系統或網站設定檔）結合，以建立客戶的統一檢視。
 
-如需詳細資訊，請參閱[社交登入](/help/communities/social-login.md) 。
+請參閱 [社交登入](/help/communities/social-login.md) 以取得更多資訊。
 
-## 與其他提供程式整合{#integrating-with-other-providers}
+## 與其他提供者整合 {#integrating-with-other-providers}
 
-AEM可讓您使用[一般分析程式碼片段連線至其他外部提供者。](/help/sites-administering/external-providers.md)
+AEM可讓您透過 [一般Analytics程式碼片段。](/help/sites-administering/external-providers.md)

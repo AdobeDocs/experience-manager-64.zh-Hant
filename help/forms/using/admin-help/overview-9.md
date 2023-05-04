@@ -1,8 +1,8 @@
 ---
 title: Forms工作流程概觀
-seo-title: Forms工作流程概觀
+seo-title: Overview of Forms workflow
 description: Forms工作流程可讓使用者設計、管理和最佳化以人為中心的流程。 使用表單工作流程，用戶還可以管理連接系統和人員的自動化業務流程應用程式。
-seo-description: Forms工作流程可讓使用者設計、管理和最佳化以人為中心的流程。 使用表單工作流程，用戶還可以管理連接系統和人員的自動化業務流程應用程式。
+seo-description: Forms workflow lets users design, manage, and optimize human-centric processes. Using forms workflow, users can also manage automated business-process applications that connect systems and people.
 uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 exl-id: df534e6d-ec34-4851-bbd2-5b9b06d1da10
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 2%
+source-wordcount: '290'
+ht-degree: 3%
 
 ---
 
-# Forms工作流程概述{#overview-of-forms-workflow}
+# Forms工作流程概觀 {#overview-of-forms-workflow}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 Forms工作流程可讓使用者設計、管理和最佳化以人為中心的流程。 使用表單工作流程，用戶還可以管理連接系統和人員的自動化業務流程應用程式。
 
@@ -26,7 +30,7 @@ Forms工作流程可讓使用者設計、管理和最佳化以人為中心的流
 <table>
  <thead>
   <tr>
-   <th><p>頁面</p></th> 
+   <th><p>Page</p></th> 
    <th><p>任務</p></th> 
    <th><p>請參閱</p></th> 
   </tr> 

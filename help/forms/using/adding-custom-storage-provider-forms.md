@@ -1,40 +1,44 @@
 ---
 title: 草稿和提交元件的自訂儲存
-seo-title: 草稿和提交元件的自訂儲存
+seo-title: Custom storage for drafts and submissions component
 description: 了解如何為草稿和提交自訂使用者資料的儲存。
-seo-description: 了解如何為草稿和提交自訂使用者資料的儲存。
+seo-description: See how to customize the storage of user data for drafts and submissions.
 uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
-feature: 表單入口網站
+feature: Forms Portal
 exl-id: 22f78940-de5f-4e16-b1f8-c3762d81802b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 1%
+source-wordcount: '347'
+ht-degree: 2%
 
 ---
 
-# 草稿和提交元件的自訂儲存{#custom-storage-for-drafts-and-submissions-component}
+# 草稿和提交元件的自訂儲存 {#custom-storage-for-drafts-and-submissions-component}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 AEM Forms可讓您將表單儲存為草稿。 草稿功能可讓您維護進行中表單，您可以從任何裝置完成並稍後提交。
 
-依預設，AEM Forms會將與表單草稿和提交相關的使用者資料儲存在Publish執行個體的`/content/forms/fp`節點中。 此外，AEM Forms入口網站元件也提供資料服務，供您自訂為草稿和提交儲存使用者資料的實作。 例如，您可以將使用者資料儲存在資料存放區中。
+依預設，AEM Forms會在 `/content/forms/fp` 節點。 此外，AEM Forms入口網站元件也提供資料服務，供您自訂為草稿和提交儲存使用者資料的實作。 例如，您可以將使用者資料儲存在資料存放區中。
 
 ## 必備條件  {#prerequisites}
 
-* 啟用[forms portal元件](/help/forms/using/enabling-forms-portal-components.md)
-* 建立[forms portal頁面](/help/forms/using/creating-form-portal-page.md)
-* 啟用[表單入口網站的最適化表單](/help/forms/using/draft-submission-component.md)
-* 了解自訂儲存的[實作詳細資料](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* 啟用 [forms portal元件](/help/forms/using/enabling-forms-portal-components.md)
+* 建立 [表單入口網頁](/help/forms/using/creating-form-portal-page.md)
+* 啟用 [forms portal適用性表單](/help/forms/using/draft-submission-component.md)
+* 學習 [自訂儲存的實作詳細資訊](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## 草稿資料服務{#draft-data-service}
+## 草稿資料服務 {#draft-data-service}
 
-若要自訂草稿的使用者資料儲存，您需要實作`DraftDataService`介面的所有方法。 下列范常式式碼說明方法和引數。
+若要自訂草稿的使用者資料儲存，您必須實作 `DraftDataService` 介面。 下列范常式式碼說明方法和引數。
 
 ```java
 /**
@@ -97,9 +101,9 @@ public interface DraftDataService {
 }
 ```
 
-## 提交資料服務{#submission-data-service}
+## 提交資料服務 {#submission-data-service}
 
-若要自訂提交之使用者資料的儲存，您必須實作`SubmitDataService`介面的所有方法。 下列范常式式碼說明方法和引數。
+若要自訂提交的使用者資料儲存，您必須實作 `SubmitDataService` 介面。 下列范常式式碼說明方法和引數。
 
 ```java
 /**

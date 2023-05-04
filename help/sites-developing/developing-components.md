@@ -4,14 +4,18 @@ seo-title: Developing AEM Components
 description: AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內容。
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3475'
+source-wordcount: '3511'
 ht-degree: 1%
 
 ---
 
 # 開發AEM元件{#developing-aem-components}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內容。
 
@@ -59,7 +63,7 @@ AEM元件可用來保留、格式化及轉譯可在您的網頁上使用的內�
 
 >[!NOTE]
 >
->此 [內容片段元件](/help/sites-developing/customizing-content-fragments.md) 也可自訂和延伸，不過必須考慮完整結構和與Assets的關係。
+>此 [內容片段元件](/help/sites-developing/customizing-content-fragments.md) 也可以自訂和擴充，不過必須考慮完整結構和與Assets的關係。
 
 ### 自訂現有元件對話方塊 {#customizing-a-existing-component-dialog}
 

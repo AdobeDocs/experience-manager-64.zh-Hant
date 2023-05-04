@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
 exl-id: 43376dfd-9cef-46f5-af14-21e379fbb79a
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 2%
+source-wordcount: '1214'
+ht-degree: 4%
 
 ---
 
 # AEM中的SPA快速入門 — React {#getting-started-with-spas-in-aem-react}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在AEM中為使用SPA架構建立的網站順暢地編輯內容。
 
@@ -38,11 +42,11 @@ SPA製作功能提供全方位的解決方案，可支援AEM中的SPA。 本文�
 
 如需SPA在AEM中如何運作的詳細資訊，請參閱下列檔案：
 
-* [SPA簡介和逐步說明](/help/sites-developing/spa-walkthrough.md)
+* [SPA 簡介和逐步解說](/help/sites-developing/spa-walkthrough.md)
 
 * [SPA製作簡介](/help/sites-developing/spa-overview.md)
 
-* [SPA Blueprint](/help/sites-developing/spa-blueprint.md)
+* [SPA 藍圖](/help/sites-developing/spa-blueprint.md)
 
 >[!NOTE]
 >
@@ -124,7 +128,7 @@ module.exports = {
 
 ### AEM 專案原型 {#aem-project-archetype}
 
-任何AEM專案皆應運用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，可支援使用React或Angular的SPA專案，並運用SPA SDK。
+任何 AEM 專案都應利用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並利用 SPA SDK。
 
 ## 應用程式結構 {#application-structure}
 

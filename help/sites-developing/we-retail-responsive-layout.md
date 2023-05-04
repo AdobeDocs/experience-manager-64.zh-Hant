@@ -1,8 +1,8 @@
 ---
 title: 在We.Retail中嘗試回應式版面
-seo-title: 在We.Retail中嘗試回應式版面
+seo-title: Trying out Responsive Layout in We.Retail
 description: 在We.Retail中嘗試回應式版面
-seo-description: 'null'
+seo-description: null
 uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,24 +10,28 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: ccb792f7-e837-4790-818f-e2c446328e71
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 1%
+source-wordcount: '283'
+ht-degree: 3%
 
 ---
 
-# 在We.Retail{#trying-out-responsive-layout-in-we-retail}中嘗試回應式版面
+# 在We.Retail中嘗試回應式版面{#trying-out-responsive-layout-in-we-retail}
 
-所有We.Retail頁面都使用「版面容器」元件來實作回應式設計。 版面容器提供段落系統，可讓您將元件置於回應式格線內。 此網格可根據設備/窗口大小和格式重新排列佈局。 此元件在頁面編輯器中與&#x200B;**Layout**&#x200B;模式搭配使用，可讓您根據裝置建立和編輯您的回應式版面。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-## 嘗試{#trying-it-out}
+所有We.Retail頁面都使用「版面容器」元件來實作回應式設計。 版面容器提供段落系統，可讓您將元件置於回應式格線內。 此網格可根據設備/窗口大小和格式重新排列佈局。 該元件與 **版面** 模式，可讓您根據裝置建立和編輯回應式版面。
+
+## 試試 {#trying-it-out}
 
 1. 在語言主分支的「體驗」部分編輯「北極衝浪」頁。
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. 切換至&#x200B;**預覽**，以查看將呈現給網站訪客的頁面。 向下捲動至挪威北部&#x200B;*的「Aloha sirits」文章的內容。*
+1. 切換至 **預覽** 來查看對網站訪客呈現的頁面樣式。 向下捲動至文章內容 *挪威北部的阿羅哈神*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -47,4 +51,4 @@ ht-degree: 1%
 
 ## 更多資訊 {#further-information}
 
-有關詳細資訊，請參閱創作文檔[響應式佈局](/help/sites-authoring/responsive-layout.md)或管理員文檔[配置佈局容器和佈局模式](/help/sites-administering/configuring-responsive-layout.md)以了解完整的技術詳細資訊。
+有關詳細資訊，請參閱創作文檔 [回應式版面](/help/sites-authoring/responsive-layout.md) 或管理員文檔 [配置佈局容器和佈局模式](/help/sites-administering/configuring-responsive-layout.md) 以取得完整的技術詳細資訊。

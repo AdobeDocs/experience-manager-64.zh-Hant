@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 977d07d2-36cf-4799-bcfe-991cf89a612a
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '2006'
 ht-degree: 0%
 
 ---
 
 # 配置OSGi{#configuring-osgi}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 [OSGi](https://www.osgi.org/) 是Adobe Experience Manager(AEM)技術堆疊中的基本元素。 它可用來控制AEM的複合套件組合及其設定。
 
@@ -194,7 +198,7 @@ Web Console不會顯示儲存庫中已儲存變更的位置，但可輕鬆找到
    * `config`  — 所有運行模式
    * `config.author`  — 適用於製作環境
    * `config.publish`  — 適用於發佈環境
-   * `config.<run-mode>`  — 酌情
+   * `config.<run-mode>` - 依需要
 
 1. 若 **設定** 或 **工廠配置** 是必要的。
 1. 要配置的單個參數；包括需要重新建立的任何現有參數定義。

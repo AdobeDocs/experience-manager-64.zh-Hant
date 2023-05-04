@@ -1,22 +1,26 @@
 ---
 title: AEM Forms工作區中使用的API
-seo-title: AEM Forms工作區中使用的API
+seo-title: APIs used in AEM Forms workspace
 description: 公開的Java和JavaScript API與LiveCycleAEM Forms工作區的方法，這些API公開供自訂和自動化使用。
-seo-description: 公開的Java和JavaScript API與LiveCycleAEM Forms工作區的方法，這些API公開供自訂和自動化使用。
+seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
 uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 1d74fdb9-c118-45f7-93c6-116cacb2f1c4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1020'
-ht-degree: 0%
+source-wordcount: '1033'
+ht-degree: 1%
 
 ---
 
-# AEM Forms工作區{#apis-used-in-aem-forms-workspace}中使用的API
+# AEM Forms工作區中使用的API {#apis-used-in-aem-forms-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 下列API用於AEM Forms工作區。
 
@@ -50,7 +54,7 @@ ht-degree: 0%
    <td>submitTask</td> 
    <td>ProcessManagementDocumentHandlingService</td> 
    <td>提交</td> 
-   <td>它提交與任務相關聯的文檔對象（並依次提交進程）。</td> 
+   <td>它提交與任務關聯的文檔對象（並依次提交進程）。</td> 
   </tr>
   <tr>
    <td>getRootEndpointCategories</td> 
@@ -236,7 +240,7 @@ ht-degree: 0%
    <td>getAllQueues<br /> </td> 
    <td>ProcessManagementQueueService<br /> </td> 
    <td>getAllQueues<br /> </td> 
-   <td>它獲取登錄用戶可訪問的所有隊列（擁有、共用和組隊列）。<br /> </td> 
+   <td>它獲得可登錄用戶訪問的所有隊列（擁有、共用和組隊列）。<br /> </td> 
   </tr>
   <tr>
    <td>getOutOfOfficeSettings</td> 
@@ -266,7 +270,7 @@ ht-degree: 0%
    <td>getProcessInstance<br /> </td> 
    <td>ProcessManagementProcessService<br /> </td> 
    <td>getProcessInstance<br /> </td> 
-   <td>它讀取進程實例的詳細資訊。<br /> </td> 
+   <td>它會擷取處理程式例項的詳細資訊。<br /> </td> 
   </tr>
   <tr>
    <td>getProcessInstances</td> 

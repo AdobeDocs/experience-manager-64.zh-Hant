@@ -6,16 +6,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 7566e1bc-8571-4b3c-b420-4324026bd4dd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 20%
+source-wordcount: '911'
+ht-degree: 19%
 
 ---
 
 # 工具主控台{#tools-consoles}
 
-**「工具」**&#x200B;主控台可供存取多種特殊工具，協助您管理網站、數位資產和內容存放庫的其他方面。根據您使用的UI，目前&#x200B;**工具**&#x200B;控制台有兩種類型：
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+**「工具」**&#x200B;主控台可供存取多種特殊工具，協助您管理網站、數位資產和內容存放庫的其他方面。目前有兩種 **工具** 主控台取決於您使用的UI:
 
 * [工具 — 傳統UI](#tools-classic-ui)
 * [工具 — 觸控最佳化UI](#tools-touch-optimized-ui)
@@ -35,19 +39,19 @@ ht-degree: 20%
    <td>用於管理多個站點的集中點。</td> 
   </tr> 
   <tr> 
-   <td>客戶端上下文配置<br /> </td> 
+   <td>用戶端內容設定<br /> </td> 
    <td> </td> 
-   <td><a href="/help/sites-developing/client-context.md">用戶端內容</a>代表動態組合的使用者資料集合。 預設和Marketing Cloud設定保留在此處。<br /> </td> 
+   <td>此 <a href="/help/sites-developing/client-context.md">用戶端內容</a> 代表動態組合的使用者資料集合。 預設和Marketing Cloud設定保留在此處。<br /> </td> 
   </tr> 
   <tr> 
    <td>Cloud Services配置<br /> </td> 
    <td> </td> 
-   <td>保留與<a href="/help/sites-administering/marketing-cloud.md">整合Adobe Marketing Cloud</a>相關的設定。</td> 
+   <td>保持與 <a href="/help/sites-administering/marketing-cloud.md">與Adobe Marketing Cloud整合</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">商務</a></td> 
    <td> </td> 
-   <td>提供對匯入工具和各種產品資料的存取。</td> 
+   <td>提供匯入工具和各種產品資料的存取權。</td> 
   </tr> 
   <tr> 
    <td>DAM -Digital Rights Management<br /> </td> 
@@ -57,7 +61,7 @@ ht-degree: 20%
   <tr> 
    <td>DAM — 健康情況檢查程式<br /> </td> 
    <td> </td> 
-   <td>比較<code>/var/dam</code>和<code>/content/dam</code>並檢查<br />是否有任何不一致。 然後，可以同步或刪除列出的任何檔案/資料夾。 資料夾比較的節點類型可在Web控制台中配置。</td> 
+   <td>比較 <code>/var/dam</code> 和 <code>/content/dam</code> 和檢查<br /> 任何不一致之處。 然後，可以同步或刪除列出的任何檔案/資料夾。 資料夾比較的節點類型可在Web控制台中配置。</td> 
   </tr> 
   <tr> 
    <td>DAM -AdobeIndesign<br /> </td> 
@@ -72,7 +76,7 @@ ht-degree: 20%
   <tr> 
    <td><a href="/help/sites-administering/dashboards.md">控制面板</a></td> 
    <td> </td> 
-   <td>可讓您建立報表控制面板；這些功能提供可自訂的方式，來定義顯示統一資料的頁面。</td> 
+   <td>可讓您建立報表控制面板；這些提供可自訂的方式來定義顯示統一資料的頁面。</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-developing/designer.md">設計</a></td> 
@@ -90,7 +94,7 @@ ht-degree: 20%
    <td>保留收到的表單提交清單。</td> 
   </tr> 
   <tr> 
-   <td>匯入工具 — <a href="/help/sites-administering/bulk-editor.md">大量編輯器</a></td> 
+   <td>匯入工具 —  <a href="/help/sites-administering/bulk-editor.md">大量編輯器</a></td> 
    <td> </td> 
    <td>可讓您搜尋項目並大量編輯。 您也可以將內容（大量）匯出並匯入存放庫。</td> 
   </tr>
@@ -125,17 +129,17 @@ ht-degree: 20%
    <td>套件管理器的替代連結，可顯示已為AEM WCM載入的套件。 類似於CRX的套件管理器中顯示的資訊。</td> 
   </tr> 
   <tr> 
-   <td>複製 — <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">複製代理</a></td> 
+   <td>復寫 —  <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">復寫代理</a></td> 
    <td> </td> 
    <td>用於在發佈頁面時將資料從作者複製到發佈，或透過反向復寫將使用者評論從發佈環境傳回給作者。</td> 
   </tr> 
   <tr> 
-   <td>導入程式 — <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">激活樹</a></td> 
+   <td>匯入工具 —  <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">激活樹</a></td> 
    <td> </td> 
    <td>從「網站」標籤，您可以啟動個別頁面。 當您輸入或更新相當多的內容頁面時（所有頁面都位於相同的根頁面下），在一個動作中啟動整個樹狀結構會較為容易。 您也可以執行「乾式執行」來模擬啟動，並反白顯示要啟動的頁面。</td> 
   </tr> 
   <tr> 
-   <td><a href="/help/sites-administering/reporting.md">報表</a></td> 
+   <td><a href="/help/sites-administering/reporting.md">報告</a></td> 
    <td> </td> 
    <td>AEM提供一系列自訂報表，可讓您建立自訂報表及/或開發您自己的報表。</td> 
   </tr> 
@@ -145,7 +149,7 @@ ht-degree: 20%
    <td>透過支架，您可以建立表單（支架），其欄位可反映您想要的頁面結構，然後使用此表單根據此結構輕鬆建立頁面。</td> 
   </tr> 
   <tr> 
-   <td>安全性 — <a href="/help/sites-administering/notification.md">自助服務配置</a> </td> 
+   <td>安全性 —  <a href="/help/sites-administering/notification.md">自助服務配置 </a> </td> 
    <td> </td> 
    <td>可讓您設定使用者在建立帳戶或重設密碼時，自動收到的電子郵件，以及確認已重設的密碼。</td> 
   </tr> 
@@ -157,7 +161,7 @@ ht-degree: 20%
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>預設SRP配置。 請參閱<a href="/help/communities/srp-config.md">儲存配置</a>控制台。</td> 
+   <td>預設SRP配置。 請參閱 <a href="/help/communities/srp-config.md">儲存配置</a> 控制台。</td> 
   </tr> 
   <tr> 
    <td>任務管理</td> 
@@ -170,7 +174,7 @@ ht-degree: 20%
    <td>沒有與此條目相關的活動功能。</td> 
   </tr> 
   <tr> 
-   <td>版本設定 — <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
+   <td>版本設定 —  <a href="/help/sites-deploying/version-purging.md">清除版本</a></td> 
    <td> </td> 
    <td>可讓您視需要清除頁面版本。</td> 
   </tr> 
@@ -182,7 +186,7 @@ ht-degree: 20%
   <tr> 
    <td>觀看詞</td> 
    <td> </td> 
-   <td>已棄用. 請參閱<a href="/help/communities/moderate-ugc.md#watchwords">調節社群內容</a></td> 
+   <td>已棄用. 請參閱 <a href="/help/communities/moderate-ugc.md#watchwords">調節社群內容</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">工作流程</a></td> 
@@ -202,18 +206,18 @@ ht-degree: 20%
    <th>用途</th> 
   </tr> 
   <tr> 
-   <td>製作</td> 
+   <td>編寫</td> 
    <td> </td> 
    <td> </td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-classic-ui-authoring/classic-personalization-campaigns.md">促銷活動</a></td> 
+   <td><a href="/help/sites-classic-ui-authoring/classic-personalization-campaigns.md">行銷活動</a></td> 
    <td>管理您的行銷活動。</td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-authoring/launches.md">啟動</a></td> 
+   <td><a href="/help/sites-authoring/launches.md">Launch</a></td> 
    <td>管理您的行銷啟動項。</td> 
   </tr> 
   <tr> 
@@ -253,12 +257,12 @@ ht-degree: 20%
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-deploying/replication.md">複寫</a></td> 
+   <td><a href="/help/sites-deploying/replication.md">複製</a></td> 
    <td>建立並管理多個網站。</td> 
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/reporting.md">報表</a></td> 
+   <td><a href="/help/sites-administering/reporting.md">報告</a></td> 
    <td>建立和監測自訂報表.<br /> </td> 
   </tr> 
   <tr> 

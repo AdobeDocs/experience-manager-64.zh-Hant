@@ -1,8 +1,8 @@
 ---
 title: 查看系統資訊
-seo-title: 查看系統資訊
+seo-title: View system information
 description: 了解如何檢視資源監控圖表，以及執行AEM表單之伺服器的相關資訊。
-seo-description: 了解如何檢視資源監控圖表，以及執行AEM表單之伺服器的相關資訊。
+seo-description: Learn how you can view resource monitoring charts and information about the server that is running AEM forms.
 uuid: 983c1cc7-a8b3-48b2-a4c8-7b28a2e32537
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: e4542335-fcee-4506-965a-5bfe79f4b29a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
 
-# 查看系統資訊{#view-system-information}
+# 查看系統資訊 {#view-system-information}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 「系統」頁簽顯示資源監視圖表和運行AEM表單的伺服器的相關資訊。 若要存取此資訊，請在管理控制台中，按一下頁面右上角的「健康狀態監視器」 。 如果您在群集環境中運行AEM表單，則顯示的資訊是從伺服器清單中選擇的節點。
 
@@ -39,19 +43,19 @@ ht-degree: 0%
 
 **虛擬機：** 伺服器上的Java虛擬機(JVM)版本。
 
-**虛擬機供應商：**  JVM的製造商。
+**虛擬機供應商：** JVM的製造商。
 
 **虛擬機版本：** JVM版本號
 
 **電腦名稱：** 安裝AEM表單之伺服器的主機名稱。
 
-**啟動時間：** 伺服器已執行的時間（以小時和分鐘為單位）。
+**啟動時間：** 伺服器運行的時間（以小時和分鐘為單位）。
 
-**即時編譯器：** 所使用編譯器的名稱。
+**即時編譯器：** 使用的編譯器的名稱。
 
 **編譯時間：** 編譯所花費的時間。
 
-**即時執行緒數目：** AEM表單系統中目前存在的執行緒總數。
+**即時線程數：** AEM表單系統中目前存在的執行緒總數。
 
 **線程數峰值：** 系統上記錄的最大即時線程數。
 
@@ -59,27 +63,27 @@ ht-degree: 0%
 
 **卸載的類數：** 從JVM卸載的類數。
 
-**最小堆：** 已使用的最小堆量。
+**最小堆：** 已使用的堆的最小數量。
 
-**最大堆：** 已使用的最大堆量。
+**最大堆：** 已使用的堆的最大數量。
 
 **作業系統名稱：** AEM表單伺服器上執行的作業系統名稱。
 
 **作業系統版本：** AEM表單伺服器上執行的作業系統版本號。
 
-**作業系統拱：** JVM運行的作業系統架構。
+**作業系統拱：** 運行JVM的作業系統體系結構。
 
 **處理器數：** 系統上的處理器數。
 
-**虛擬機參數：**  JVM使用的參數。
+**虛擬機參數：** JVM使用的參數。
 
 **類路徑：** JVM使用的類路徑。
 
-**程式庫路徑：** JVM使用的程式庫路徑。
+**程式庫路徑：** JVM使用的庫路徑。
 
-**引導類路徑：**  JVM使用的引導類路徑。
+**引導類路徑：** JVM使用的引導類路徑。
 
-**應用程式伺服器類型：** 用於執行AEM表單的應用程式伺服器類型。
+**應用程式伺服器類型：** 用於運行AEM表單的應用程式伺服器類型。
 
 **應用程式伺服器版本：** 用於運行AEM表單的應用程式伺服器的版本號。
 
@@ -87,16 +91,16 @@ ht-degree: 0%
 
 **安裝日期：** 安裝AEM表單的日期（yyyy-mm-dd格式）。
 
-**AEM forms版本：** 已安裝的AEM forms版本。
+**AEM forms版本：** 已安裝的AEM表單版本。
 
-**修補程式版本：** AEM forms修補程式編號。
+**修補程式版本：** AEM forms修補程式號。
 
 **資料庫名稱：** AEM表單使用的資料庫類型。
 
-**資料庫版本：** AEM表單所使用資料庫的版本號。
+**資料庫版本：** AEM表單使用的資料庫版本號。
 
 **資料庫驅動器名稱：** JVM用於連接到資料庫的驅動程式的名稱。
 
 **資料庫驅動程式版本：** JVM用於連接到資料庫的驅動程式的版本。
 
-使用&#x200B;**保存**&#x200B;按鈕，可以將此系統資訊保存在屬性檔案中。
+此 **儲存** 按鈕可將此系統資訊保存在屬性檔案中。

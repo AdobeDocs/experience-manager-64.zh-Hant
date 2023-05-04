@@ -1,8 +1,8 @@
 ---
 title: 自訂歡迎控制台（傳統UI）
-seo-title: 自訂歡迎控制台（傳統UI）
+seo-title: Customizing the Welcome Console (Classic UI)
 description: 歡迎控制台提供AEM中各種控制台和功能的連結清單
-seo-description: 歡迎控制台提供AEM中各種控制台和功能的連結清單
+seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
 uuid: 4ef20cef-2d7a-417d-b36b-ed4fa56cd511
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 11b791f6-b14f-4f50-a64a-27a9501adeb7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '486'
-ht-degree: 6%
+source-wordcount: '500'
+ht-degree: 9%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 6%
 
 >[!CAUTION]
 >
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+>[!CAUTION]
+>
 >本頁面說明傳統UI。
 >
->如需標準觸控式UI的詳細資訊，請參閱[自訂主控台](/help/sites-developing/customizing-consoles-touch.md)。
+>請參閱 [自訂主控台](/help/sites-developing/customizing-consoles-touch.md) 如需標準觸控式UI的詳細資訊。
 
 歡迎控制台提供AEM中各種控制台和功能的連結清單。
 
@@ -31,16 +35,16 @@ ht-degree: 6%
 
 您可以設定可見的連結。 可為特定使用者和/或群組定義。 要採取的動作取決於目標類型（這與其所在控制台的區段相關）:
 
-* [主控台](#links-in-main-console-left-pane)  — 主控台中的連結（左窗格）
-* [資源、檔案和參考、功能](#links-in-sidebar-right-pane)  — 側欄（右窗格）中的連結
+* [主控制台](#links-in-main-console-left-pane)  — 主控制台中的連結（左窗格）
+* [資源、文檔和參考、功能](#links-in-sidebar-right-pane)  — 側欄中的連結（右窗格）
 
-## 主控台中的連結（左窗格）{#links-in-main-console-left-pane}
+## 主控台中的連結（左窗格） {#links-in-main-console-left-pane}
 
 這會列出AEM的主要主控台。
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
-### 配置主控台連結是否可見{#configuring-whether-main-console-links-are-visible}
+### 設定主控台連結是否可見 {#configuring-whether-main-console-links-are-visible}
 
 節點層級權限會決定該連結是否可見。 相關節點包括：
 
@@ -54,7 +58,7 @@ ht-degree: 6%
 
 * **收件匣：** `/libs/cq/workflow/content/inbox`
 
-* **用戶：** `/libs/cq/security/content/admin`
+* **使用者:** `/libs/cq/security/content/admin`
 
 * **工具：** `/libs/wcm/core/content/misc`
 
@@ -62,17 +66,17 @@ ht-degree: 6%
 
 例如：
 
-* 要限制對&#x200B;**工具**&#x200B;的訪問，請從
+* 若要限制 **工具**，從中刪除讀訪問
 
    `/libs/wcm/core/content/misc`
 
-如需如何設定所需權限的詳細資訊，請參閱[安全性區段](/help/sites-administering/security.md)。
+請參閱 [安全性部分](/help/sites-administering/security.md) 以取得如何設定所需權限的詳細資訊。
 
-### 側欄中的連結（右窗格）{#links-in-sidebar-right-pane}
+### 側欄中的連結（右窗格） {#links-in-sidebar-right-pane}
 
 ![cq_welcomcreensidebar](assets/cq_welcomescreensidebar.png)
 
-這些連結基於以下路徑下對節點的&#x200B;*和*&#x200B;讀取訪問：
+這些連結是以 *和* 讀取以下路徑下的節點訪問權限：
 
 `/libs/cq/core/content/welcome`
 
@@ -97,11 +101,11 @@ ht-degree: 6%
    <td><code>/libs/cq/core/content/welcome/resources/taskmanager</code></td> 
   </tr> 
   <tr> 
-   <td> 複寫</td> 
+   <td> 複製</td> 
    <td><code>/libs/cq/core/content/welcome/resources/replication</code></td> 
   </tr> 
   <tr> 
-   <td> 報表</td> 
+   <td> 報告</td> 
    <td><code>/libs/cq/core/content/welcome/resources/reports</code></td> 
   </tr> 
   <tr> 
@@ -159,7 +163,7 @@ ht-degree: 6%
  </tbody> 
 </table>
 
-#### 配置側欄連結是否可見{#configuring-whether-sidebar-links-are-visible}
+#### 配置是否顯示側欄連結 {#configuring-whether-sidebar-links-are-visible}
 
 您可以移除對代表連結之節點的讀取存取權，以隱藏連結，不讓特定使用者或群組看到。
 
@@ -177,38 +181,36 @@ ht-degree: 6%
 
 例如：
 
-* 若要移除&#x200B;**Reports**&#x200B;的連結，請移除
+* 移除連結至 **報表**，從中刪除讀訪問
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* 要刪除指向&#x200B;**Packages**&#x200B;的連結，請從
+* 移除連結至 **套件**，從中刪除讀訪問
 
    `/libs/cq/core/content/welcome/features/packages`
 
-如需如何設定所需權限的詳細資訊，請參閱[安全性區段](/help/sites-administering/security.md)。
+請參閱 [安全性部分](/help/sites-administering/security.md) 以取得如何設定所需權限的詳細資訊。
 
-### 連結選擇機制{#link-selection-mechanism}
+### 連結選擇機制 {#link-selection-mechanism}
 
-在`/libs/cq/core/components/welcome/welcome.jsp`中，使用由[ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html)組成，它對具有以下屬性的節點執行查詢：
+在 `/libs/cq/core/components/welcome/welcome.jsp` 使用 [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html)，會對具有屬性的節點執行查詢：
 
-* `jcr:mixinTypes` 值：  `cq:Console`
+* `jcr:mixinTypes` 值為: `cq:Console`
 
 >[!NOTE]
 >
 >執行以下查詢以查看現有清單：
 >
 >* `select * from cq:Console`
-
 >
 
 
+當使用者或群組對具有mixin的節點沒有讀取權限時 `cq:Console`，則該節點不會被 `ConsoleUtil` 搜尋，因此控制台不會列出它。
 
-當用戶或組對具有mixin `cq:Console`的節點沒有讀取權限時，該節點不會被`ConsoleUtil`搜索檢索，因此它不會列在控制台上。
+### 新增自訂項目 {#adding-a-custom-item}
 
-### 新增自訂項目{#adding-a-custom-item}
+此 [連結選擇機制](#link-selection-mechanism) 可用來將您自己的自訂項目新增至連結清單。
 
-[連結選擇機制](#link-selection-mechanism)可用來將您自己的自訂項目新增至連結清單。
+新增自訂項目至清單 `cq:Console` 混合至您的介面工具集或資源。 這可透過定義屬性來完成：
 
-將`cq:Console` mixin新增至介面工具集或資源，將自訂項目新增至清單。 這可透過定義屬性來完成：
-
-* `jcr:mixinTypes` 值：  `cq:Console`
+* `jcr:mixinTypes` 值為: `cq:Console`

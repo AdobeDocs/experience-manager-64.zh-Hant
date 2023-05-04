@@ -1,8 +1,8 @@
 ---
 title: 配置JEE上AEM Forms的安全管理設定
-seo-title: 配置JEE上AEM Forms的安全管理設定
+seo-title: Configuring Secure Administration Settings for AEM Forms on JEE
 description: 了解如何管理使用者帳戶和服務，雖然這些是私人開發環境中的必要項目，但在JEE上的AEM Forms生產環境中並非必要項目。
-seo-description: 了解如何管理使用者帳戶和服務，雖然這些是私人開發環境中的必要項目，但在JEE上的AEM Forms生產環境中並非必要項目。
+seo-description: Learn how to administer user accounts and services that, although required in a private development environment, are not required in a production environment of AEM Forms on JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 980d420c-a768-4634-9b8c-3f1d7327285d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
 
 # 配置JEE上AEM Forms的安全管理設定 {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 了解如何管理使用者帳戶和服務，雖然這些是私人開發環境中的必要項目，但在JEE上的AEM Forms生產環境中並非必要項目。
 
@@ -41,14 +45,14 @@ AEM Forms on JEE服務一律需要至少SOAP存取權。 這些服務通常為Wo
             https://[host name]:[port]/adminui
    ```
 
-1. 按一下「**服務>應用程式和服務>首選項**」。
+1. 按一下 **「服務」>「應用程式和服務」>「首選項」**.
 1. 設定「首選項」以在同一頁上查看最多200個服務和端點。
-1. 按一下「**服務** > **應用程式和服務** > **端點管理**」。
-1. 從&#x200B;**Provider**&#x200B;清單中選擇&#x200B;**EJB**，然後按一下&#x200B;**Filter**。
-1. 要禁用所有EJB端點，請選擇清單中每個端點旁邊的複選框，然後按一下&#x200B;**禁用**。
-1. 按一下「**Next**」，然後對所有EJB端點重複上一步。 在禁用終結點之前，請確保在「提供程式」列中列出了EJB。
-1. 從&#x200B;**Provider**&#x200B;清單中選擇&#x200B;**SOAP**，然後按一下&#x200B;**Filter**。
-1. 要刪除SOAP端點，請選中清單中每個端點旁邊的複選框，然後按一下&#x200B;**Remove**。 請勿移除下列端點：
+1. 按一下 **服務** > **應用程式和服務** > **端點管理**.
+1. 選擇 **EJB** 從 **提供者** 清單，然後按一下 **篩選**.
+1. 要禁用所有EJB端點，請選中清單中每個端點旁邊的複選框，然後按一下 **停用**.
+1. 按一下 **下一個** 對所有EJB端點重複上一步。 在禁用終結點之前，請確保在「提供程式」列中列出了EJB。
+1. 選擇 **SOAP** 從 **提供者** 清單，然後按一下 **篩選**.
+1. 要刪除SOAP端點，請選中清單中每個端點旁邊的複選框，然後按一下 **移除**. 請勿移除下列端點：
 
    * AuthenticationManagerService
    * DirectoryManager服務
@@ -64,7 +68,7 @@ AEM Forms on JEE服務一律需要至少SOAP存取權。 這些服務通常為Wo
    * WorkspaceSingleSignOn
    * ApplicationManager
 
-1. 按一下「**下一步**」，然後對不在上述清單中的SOAP端點重複上一步。 移除端點之前，請確定SOAP列在「提供者」欄中。
+1. 按一下 **下一個** 並對不在上述清單中的SOAP端點重複上一步。 移除端點之前，請確定SOAP列在「提供者」欄中。
 
 ## 禁用對服務的非必需匿名訪問 {#disabling-non-essential-anonymous-access-to-services}
 
@@ -76,9 +80,9 @@ AEM Forms on JEE服務一律需要至少SOAP存取權。 這些服務通常為Wo
             https://[host name]:[port]/adminui
    ```
 
-1. 按一下「**服務>應用程式和服務>服務管理**」。
+1. 按一下 **服務>應用程式和服務>服務管理**.
 1. 按一下要禁用的服務的名稱（例如AuthenticationManagerService）。
-1. 按一下&#x200B;**安全頁簽**，取消選擇&#x200B;**允許的匿名訪問**，然後按一下&#x200B;**保存**。
+1. 按一下 **「安全」頁簽**，取消選取 **允許匿名訪問**，然後按一下 **儲存**.
 1. 完成下列服務的步驟3和4:
 
    * AuthenticationManagerService
@@ -119,8 +123,8 @@ AEM Forms on JEE服務一律需要至少SOAP存取權。 這些服務通常為Wo
             https://[host name]:[port]/adminui
    ```
 
-1. 按一下「**設定>使用者管理>設定>匯入和匯出設定檔**」。
-1. 按一下&#x200B;**Export**&#x200B;以使用現有的AEM Forms設定產生config.xml檔案。
+1. 按一下 **設定>使用者管理>設定>匯入和匯出設定檔**.
+1. 按一下 **匯出** 若要使用現有的AEM Forms設定產生config.xml檔案。
 1. 在編輯器中開啟XML檔案，並找到下列項目：
 
    `<entry key=”assertionValidityInMinutes” value=”120”/>`
@@ -128,4 +132,4 @@ AEM Forms on JEE服務一律需要至少SOAP存取權。 這些服務通常為Wo
 1. 將值變更為大於5的任何數字（以分鐘為單位），然後儲存檔案。
 1. 在管理控制台中，導覽至匯入和匯出組態檔頁面。
 1. 輸入修改的config.xml檔案的路徑，或按一下「瀏覽」導航到該檔案。
-1. 按一下&#x200B;**Import**&#x200B;以上載修改的config.xml檔案，然後按一下&#x200B;**OK**。
+1. 按一下 **匯入** 上傳修改的config.xml檔案，然後按一下 **確定**.

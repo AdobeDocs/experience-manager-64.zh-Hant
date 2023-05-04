@@ -1,8 +1,8 @@
 ---
 title: 元件側載
-seo-title: 元件側載
+seo-title: Component Sideloading
 description: 將網頁設計為簡單的單頁應用程式時，會根據網站訪客所選取的項目動態變更顯示內容，Communities元件會側載相當實用
-seo-description: 將網頁設計為簡單的單頁應用程式時，會根據網站訪客所選取的項目動態變更顯示內容，Communities元件會側載相當實用
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,16 +10,20 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
 exl-id: 12fdc503-29b6-4970-a883-c22162f7a9eb
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 1%
 
 ---
 
-# 元件側載{#component-sideloading}
+# 元件側載 {#component-sideloading}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 將網頁設計為簡單的單頁應用程式時，會根據網站訪客所選取的項目動態變更顯示內容，Communities元件側載相當實用。
 
@@ -33,7 +37,7 @@ ht-degree: 0%
 
 1. [將元件新增至DOM](#dynamically-add-component-to-dom)
 
-1. [使用下列](#sideload-by-invoking-scf) 兩種方法之一側載元件：
+1. [側載元件](#sideload-by-invoking-scf) 使用下列兩種方法之一：
 
 * [動態包含](#dynamic-inclusion)
    * 引導所有動態添加的元件
@@ -42,7 +46,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->不支援對[非現有資源](scf.md#add-or-include-a-communities-component)進行側載。
+>的側載 [非現有資源](scf.md#add-or-include-a-communities-component) 不支援。
 
 ## 動態新增元件至DOM {#dynamically-add-component-to-dom}
 
@@ -52,11 +56,11 @@ ht-degree: 0%
 
 無論使用什麼標籤，元素至少必須包含以下兩個屬性，以符合正常的SCF根元素模式：
 
-* **data-component-**
-id新增元件的有效路徑
+* **data-component-id**
+新增元件的有效路徑
 
-* **data-scf-**
-componentresourceType元件
+* **data-scf-component**
+元件的resourceType
 
 以下是新增備注元件的範例：
 
@@ -69,9 +73,9 @@ componentresourceType元件
 </div>
 ```
 
-## 調用SCF {#sideload-by-invoking-scf}進行側載
+## 調用SCF進行側載 {#sideload-by-invoking-scf}
 
-### 動態包含{#dynamic-inclusion}
+### 動態包含 {#dynamic-inclusion}
 
 動態包含使用引導請求，導致SCF檢查DOM並引導頁面上找到的所有SCF元件。
 
@@ -79,7 +83,7 @@ componentresourceType元件
 
 $(document)。trigger(SCF.events.BOOTSTRAP_REQUEST);
 
-### 動態載入{#dynamic-loading}
+### 動態載入 {#dynamic-loading}
 
 動態載入可以控制載入SCF元件。
 
@@ -87,4 +91,4 @@ $(document)。trigger(SCF.events.BOOTSTRAP_REQUEST);
 
 SCF.addComponent(document.getElementById(*someId*));
 
-其中&#x200B;*someId*&#x200B;是&#x200B;**data-component-id**&#x200B;屬性的值。
+其中 *someId* 是 **data-component-id** 屬性。

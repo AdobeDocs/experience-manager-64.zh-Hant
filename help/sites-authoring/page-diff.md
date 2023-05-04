@@ -1,8 +1,8 @@
 ---
 title: 頁面差異
-seo-title: 頁面差異
+seo-title: Page Diff
 description: 頁面差異功能可方便地並排比較兩個頁面，並強調顯示其差異。
-seo-description: 頁面差異功能可方便地並排比較兩個頁面，並強調顯示其差異。
+seo-description: The page diff feature allows for the convenient side-by-side comparison of two pages with their differences highlighted.
 uuid: cf029ed8-606e-4f12-ac8e-5ea9ebd70b1b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 exl-id: 1b1fa592-a145-4abe-a455-df24d551b937
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '708'
 ht-degree: 1%
 
 ---
 
 # 頁面差異{#page-diff}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 簡介 {#introduction}
 
@@ -27,22 +31,22 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->如果您執行的是AEM 6.4.3之前的版本，使用者必須在節點`/content/versionhistory`上擁有&#x200B;**修改/建立/刪除**&#x200B;權限，才能使用此功能。
+>如果您執行的是AEM 6.4.3之前的版本，使用者必須具備 **修改/建立/刪除** 節點的權限 `/content/versionhistory` 以便使用功能。
 >
->如需此功能的詳細技術資訊，請參閱[開發與頁面差異](/help/sites-developing/pagediff.md#operation-details)。
+>請參閱 [開發與頁面差異](/help/sites-developing/pagediff.md#operation-details) 如需此功能的詳細技術資訊。
 
 ## 使用 {#use}
 
 並排差異可以比較：
 
-* [版本](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page)  — 具有目前狀態的舊版頁面
-* [Live Copy](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page)  - Live Copy及其Blueprint
-* [啟動](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page)  — 啟動及其來源
+* [版本](/help/sites-authoring/working-with-page-versions.md#comparing-a-version-with-current-page)  — 具有其當前狀態的頁面的早期版本
+* [Live Copies](/help/sites-administering/msm-livecopy.md#comparing-a-live-copy-page-with-a-blueprint-page) - Live Copy及其Blueprint
+* [啟動](/help/sites-authoring/launches-editing.md#comparing-a-launch-page-to-its-source-page)  — 透過其來源啟動
 * [語言副本](/help/sites-administering/tc-manage.md#comparing-language-copies)  — 翻譯前後的頁面（重新）
 
 請參閱有關如何在這些內容中啟動差異的各個主題。
 
-### 差異的表示{#presentation-of-differences}
+### 差異的表示 {#presentation-of-differences}
 
 無論比較的內容為何，差異的呈現方式都保持不變。
 
@@ -75,7 +79,7 @@ ht-degree: 1%
 >
 >比較語言副本時，會停用醒目提示，因為在翻譯中，所有變更和醒目提示都沒有好處。
 
-### 全螢幕和退出{#fullscreen-and-exiting}
+### 全螢幕和退出 {#fullscreen-and-exiting}
 
 若要著重於特定內容，您可以按一下並排差異的任一「側」全螢幕圖示，將其放大至完整瀏覽器視窗。
 
@@ -101,7 +105,7 @@ ht-degree: 1%
 * 差異無法檢測影像旋轉。
 * 如果移動了頁面，則無法再對移動前進行的任何版本執行差異。
 
-   * 如果您遇到差異問題，請檢查頁面的[時間軸](/help/sites-authoring/basic-handling.md#timeline)以查看頁面是否已移動。
+   * 如果您遇到差異問題，請檢查 [時間表](/help/sites-authoring/basic-handling.md#timeline) ，查看頁面是否已移動。
 
 >[!NOTE]
 >
@@ -109,4 +113,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如需有關頁面差異機制操作以及可能影響頁面差異的限制的詳細資訊，請參閱此功能的[開發人員檔案](/help/sites-developing/pagediff.md)。
+>有關頁面差異機制操作以及可能影響頁面差異的限制的詳細資訊，請參見 [開發人員檔案](/help/sites-developing/pagediff.md) 功能。

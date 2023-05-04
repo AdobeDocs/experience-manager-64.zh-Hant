@@ -1,5 +1,5 @@
 ---
-title: 為元件啟用JSON匯出
+title: 為元件啟用 JSON 匯出
 seo-title: Enabling JSON Export for a Component
 description: 元件可適合根據建模器架構產生其內容的JSON匯出。
 seo-description: Components can be adapted to generate JSON export of their content based on a modeler framework.
@@ -10,14 +10,18 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: ce9a1c1f-a37b-4765-b87e-5b2359312cfe
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 4%
+source-wordcount: '572'
+ht-degree: 8%
 
 ---
 
-# 為元件啟用JSON匯出{#enabling-json-export-for-a-component}
+# 為元件啟用 JSON 匯出{#enabling-json-export-for-a-component}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 元件可適合根據建模器架構產生其內容的JSON匯出。
 
@@ -58,7 +62,7 @@ Sling Model實作類別必須加上下列註解：
 >
 >此 `ExporterConstants` 和 `ComponentExporter` 課程來自 `com.adobe.cq.export.json` 捆綁。
 
-### 使用多個選取器 {#multiple-selectors}
+### 使用多個選擇器 {#multiple-selectors}
 
 雖然不是標準使用案例，但除了 `model` 選取器。
 
@@ -97,5 +101,5 @@ GITHUB上的程式碼
 
 * [內容片段模型](/help/assets/content-fragments-models.md)
 * [使用內容片段製作](/help/sites-authoring/content-fragments.md)
-* [內容服務的JSON匯出工具](/help/sites-developing/json-exporter.md)
+* [內容服務的 JSON 匯出工具](/help/sites-developing/json-exporter.md)
 * [核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 和 [內容片段元件](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)

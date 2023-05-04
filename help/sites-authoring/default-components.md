@@ -10,14 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 8b83e8d2-09ad-4010-a69a-2af1907a1ca6
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 1%
+source-wordcount: '463'
+ht-degree: 2%
 
 ---
 
 # 元件{#components}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager(AEM)隨附各種現成可用的元件，可為網站作者提供完整的功能。 可於 [編輯頁面](/help/sites-authoring/editing-content.md) 和會依主要功能區域（稱為元件群組）分組，以輔助篩選。
 

@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
 exl-id: dcd54a52-f610-4c68-8547-39562c062d84
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 11%
+source-wordcount: '1013'
+ht-degree: 12%
 
 ---
 
 # 管理對象{#managing-audiences}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 Audiences Console可讓您建立、組織和管理Adobe Target帳戶的對象，或管理ContextHub或用戶端內容的區段：
 
@@ -80,9 +84,9 @@ Audiences Console可讓您建立、組織和管理Adobe Target帳戶的對象，
 1. 在 **Adobe Target設定** 對話框，選擇目標配置，然後點選或按一下 **確定**.
 1. 在「規則#1」區域中，點選或按一下屬性類型，然後在可用的欄位中輸入任何屬性資訊。 完成後，選取屬性右側的勾選記號以儲存。 請參閱 [屬性及其選項](#attributes-and-their-options) ，了解所有屬性的資訊。
 1. 按一 **下「新增規則** 」以新增其他規則。視需要輸入任意數量的規則。規則會與布林運算子AND結合，這表示對象必須符合每個規則的所有要求才能符合活動的資格。
-1. 點選或按一下 **下一個**.
+1. 點選或按一下&#x200B;**下一步**。
 1. 輸入對象的名稱，然後點選或按一下 **儲存**.
-1. 點選或按一下 **儲存**. 您的對象會列在對象清單中。
+1. 點選或按一下&#x200B;**儲存**。您的對象會列在對象清單中。
 
 ### 屬性及其選項 {#attributes-and-their-options}
 

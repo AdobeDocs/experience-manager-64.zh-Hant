@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: 268edb9b-0f52-44c4-a75c-d9dfe39e7d17
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 10%
+source-wordcount: '517'
+ht-degree: 11%
 
 ---
 
 # 在We.Retail中試用可編輯的範本{#trying-out-editable-templates-in-we-retail}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 使用可編輯的範本，建立和維護範本不再是開發人員專屬的工作。 一種稱為模板作者的超級用戶現在可以建立模板。 開發人員仍需要設定環境、建立用戶端程式庫和建立要使用的元件，但是當這些基本功能準備就緒後，範本作者就可以彈性地建立和設定範本，而不需要開發專案。
 

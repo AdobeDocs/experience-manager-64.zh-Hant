@@ -1,8 +1,8 @@
 ---
-title: 組合非互動式PDF檔案
-seo-title: 組合非互動式PDF檔案
+title: 組合非互動式PDF文檔
+seo-title: Assembling Non-Interactive PDF Documents
 description: 使用非互動式PDF表單作為輸入，使用Java API和Web服務API來組合非互動式PDF檔案。
-seo-description: 使用非互動式PDF表單作為輸入，使用Java API和Web服務API來組合非互動式PDF檔案。
+seo-description: Use a non-interactive PDF form as input to assemble a non-interactive PDF document using the Java API and Web Service API.
 uuid: 0c7adeb4-9a3a-4ec5-ba33-c3642928d4ea
 contentOwner: admin
 content-type: reference
@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 role: Developer
 exl-id: d4e40d68-781d-4fc8-8557-bf36462ca1d9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1800'
+source-wordcount: '1811'
 ht-degree: 0%
 
 ---
 
-# 組合非互動式PDF文檔{#assembling-non-interactive-pdf-documents}
+# 組合非互動式PDF文檔 {#assembling-non-interactive-pdf-documents}
 
-使用互動式PDF表單作為輸入時，您可以組合非互動式PDF檔案。 也就是說，假設您有一個表單，使用者可使用該表單在其欄位中輸入資料。 您可以將表單傳遞至組合器服務，導致組合器服務返回PDF文檔，該文檔阻止用戶將資料輸入到其欄位中。 此文檔是非互動式PDF表單。 例如，下圖顯示代表互動式表單的抵押申請。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+使用互動式PDF表單作為輸入時，您可以組合非互動式PDF檔案。 也就是說，假設您有一個表單，使用者可使用該表單在其欄位中輸入資料。 您可以將該表單傳遞到組合器服務，導致組合器服務返回一個PDF文檔，該文檔阻止用戶將資料輸入到其欄位中。 此文檔是非互動式PDF表單。 例如，下圖顯示代表互動式表單的抵押申請。
 
 在本討論中，假定使用了以下DDX文檔。
 
@@ -35,27 +39,27 @@ ht-degree: 0%
  </DDX>
 ```
 
-在此DDX文檔中，請注意源屬性被分配了值`inDoc`。 在僅將一個輸入的PDF文檔傳遞到組合器服務並返回一個PDF文檔，並調用`invokeOneDocument`操作的情況下，將值`inDoc`分配給PDF源屬性。 調用`invokeOneDocument`操作時，`inDoc`值是必須在DDX文檔中指定的預定義鍵。
+在此DDX文檔中，請注意源屬性被分配了值 `inDoc`. 在只將一個輸入PDF文檔傳遞到組合器服務並返回一個PDF文檔的情況下，您將調用 `invokeOneDocument` 操作，指定值 `inDoc` 至PDF來源屬性。 叫用 `invokeOneDocument` 操作， `inDoc` 值是必須在DDX文檔中指定的預定義鍵。
 
-相反，將兩個或兩個以上輸入的PDF文檔傳遞到組合器服務時，可以調用`invokeDDX`操作。 在此情況下，將輸入PDF文檔的檔案名分配給`source`屬性。
+相反地，當將兩個或更多輸入PDF文檔傳遞到組合器服務時，可以調用 `invokeDDX` 操作。 在此情況下，將輸入PDF文檔的檔案名分配給 `source` 屬性。
 
-此DDX文檔包含`NoXFA`元素，該元素指示組合器服務返回非互動式PDF文檔。
+此DDX文檔包含 `NoXFA` 元素，指示組合器服務返回非交互PDF文檔。
 
-如果輸入的PDF檔案是以Acrobat表單或靜態XFA表單為基礎，則組合器服務可以組合非互動式PDF檔案，而輸出服務不是AEM表單安裝的一部分。 不過，如果輸入的PDF檔案是動態XFA表單，則輸出服務必須是AEM表單安裝的一部分。 如果組裝動態XFA表單時，輸出服務不屬於AEM表單安裝的一部分，則會擲回例外狀況。 請參閱[建立文檔輸出流](/help/forms/developing/creating-document-output-streams.md)。
-
->[!NOTE]
->
->閱讀本節之前，建議您先熟悉使用組合器服務組合PDF文檔。 本節不討論概念，例如建立包含輸入文檔的集合對象，或了解如何從返回的集合對象中提取結果。 （請參閱[以程式設計方式組合PDF文檔](/help/forms/developing/programmatically-assembling-pdf-documents.md)。）
+如果輸入PDF文檔基於Acrobat表單或靜態XFA表單，則組合器服務可以組合非互動式PDF文檔，而輸出服務不是AEM表單安裝的一部分。 不過，如果輸入PDF檔案是動態XFA表單，則輸出服務必須是AEM表單安裝的一部分。 如果組裝動態XFA表單時，輸出服務不屬於AEM表單安裝的一部分，則會擲回例外狀況。 請參閱 [建立文檔輸出流](/help/forms/developing/creating-document-output-streams.md).
 
 >[!NOTE]
 >
->有關組合器服務的詳細資訊，請參閱[AEM Forms的服務參考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>閱讀本節之前，建議您熟悉使用組合器服務來組合PDF文檔。 本節不討論概念，例如建立包含輸入文檔的集合對象，或了解如何從返回的集合對象中提取結果。 (請參閱 [以寫程式方式組合PDF文檔](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
->有關DDX文檔的詳細資訊，請參閱[組合器服務和DDX引用](https://www.adobe.com/go/learn_aemforms_ddx_63)。
+>有關組合器服務的詳細資訊，請參見 [AEM Forms服務參考](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## 步驟{#summary-of-steps}的摘要
+>[!NOTE]
+>
+>有關DDX文檔的詳細資訊，請參見 [組合器服務和DDX參考](https://www.adobe.com/go/learn_aemforms_ddx_63).
+
+## 步驟摘要 {#summary-of-steps}
 
 要組合非互動式PDF文檔，請執行以下任務：
 
@@ -65,7 +69,7 @@ ht-degree: 0%
 1. 參考互動式PDF檔案。
 1. 設定運行時選項。
 1. 組合PDF文檔。
-1. 儲存非互動式PDF檔案。
+1. 保存非互動式PDF文檔。
 
 **包含項目檔案**
 
@@ -87,23 +91,23 @@ ht-degree: 0%
 
 **參考現有的DDX文檔**
 
-必須參考DDX文檔才能組合PDF文檔。 此DDX文檔必須包含`NoXFA`元素，該元素指示組合器服務返回非互動式PDF文檔。
+必須引用DDX文檔來組合PDF文檔。 此DDX文檔必須包含 `NoXFA` 元素，指示組合器服務返回非交互PDF文檔。
 
 **參考互動式PDF檔案**
 
-必須引用互動式PDF文檔並將其傳遞到組合器服務，才能返回非互動式PDF文檔。
+交互PDF文檔必須被引用並傳遞到組合器服務以返回非交互PDF文檔。
 
 **設定運行時選項**
 
 您可以設定運行時選項，以控制組合器服務在執行作業時的行為。 例如，您可以設定一個選項，指示組合器服務在遇到錯誤時繼續處理作業。
 
-**組合PDF檔案**
+**組合PDF文檔**
 
-建立組合器服務客戶端、引用DDX文檔、引用互動式PDF文檔和設定運行時選項後，可以調用`invokeOneDocument`操作。 因為只有一個輸入的PDF文檔會傳遞到組合器服務，並且返回了單個文檔，所以可以使用`invokeOneDocument`操作，而不是使用`invokeDDX`操作。
+建立組合器服務客戶端、引用DDX文檔、引用交互PDF文檔和設定運行時選項後，可以調用 `invokeOneDocument` 操作。 因為只有一個輸入PDF文檔被傳遞到組合器服務，並且返回了單個文檔，所以可以使用 `invokeOneDocument` 操作 `invokeDDX` 操作。
 
-**儲存非互動式PDF檔案**
+**保存非互動式PDF文檔**
 
-如果僅將單個PDF文檔傳遞到組合器服務，組合器服務將返回單個文檔，而不是集合對象。 也就是說，調用`invokeOneDocument`操作時，返回單個文檔。 由於本節中引用的DDX文檔包含建立非互動式PDF文檔的說明，因此組合器服務返回可另存為PDF檔案的非互動式PDF文檔。
+如果僅將單個PDF文檔傳遞到組合器服務，組合器服務將返回單個文檔，而不是集合對象。 也就是說，叫用 `invokeOneDocument` 操作時，將返回單個文檔。 由於本節中引用的DDX文檔包含建立非互動式PDF文檔的說明，因此組合器服務返回可另存為PDF檔案的非互動式PDF文檔。
 
 **另請參閱**
 
@@ -111,9 +115,9 @@ ht-degree: 0%
 
 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[以程式設計方式組合PDF檔案](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[以寫程式方式組合PDF文檔](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-## 使用Java API {#assemble-a-non-interactive-pdf-document-using-the-java-api}組合非互動式PDF檔案
+## 使用Java API組合非互動式PDF檔案 {#assemble-a-non-interactive-pdf-document-using-the-java-api}
 
 使用組合器服務API(Java)組合非互動式PDF文檔：
 
@@ -123,105 +127,105 @@ ht-degree: 0%
 
 1. 建立組合器客戶端。
 
-   * 建立包含連接屬性的`ServiceClientFactory`對象。
-   * 使用其建構子並傳遞`ServiceClientFactory`物件，以建立`AssemblerServiceClient`物件。
+   * 建立 `ServiceClientFactory` 包含連接屬性的對象。
+   * 建立 `AssemblerServiceClient` 對象，使用其建構子並傳遞 `ServiceClientFactory` 物件。
 
 1. 參考現有的DDX文檔。
 
-   * 使用DDX文檔的建構子並傳遞指定DDX檔案位置的字串值，建立代表DDX文檔的`java.io.FileInputStream`對象。
-   * 使用其建構子並傳遞`java.io.FileInputStream`物件，以建立`com.adobe.idp.Document`物件。
+   * 建立 `java.io.FileInputStream` 表示DDX文檔的對象，方法是使用其建構子並傳遞指定DDX檔案位置的字串值。
+   * 建立 `com.adobe.idp.Document` 對象，使用其建構子並傳遞 `java.io.FileInputStream` 物件。
 
 1. 參考互動式PDF檔案。
 
-   * 使用其建構子並傳遞互動式PDF檔案的位置，以建立`java.io.FileInputStream`物件。
-   * 建立`com.adobe.idp.Document`物件並傳遞包含PDF檔案的`java.io.FileInputStream`物件。 此`com.adobe.idp.Document`物件會傳遞至`invokeOneDocument`方法。
+   * 建立 `java.io.FileInputStream` 對象，使用其建構子並傳遞互動式PDF文檔的位置。
+   * 建立 `com.adobe.idp.Document` 物件，並傳遞 `java.io.FileInputStream` 包含PDF文檔的對象。 此 `com.adobe.idp.Document` 物件會傳遞至 `invokeOneDocument` 方法。
 
 1. 設定運行時選項。
 
-   * 使用其建構子建立`AssemblerOptionSpec`物件，以儲存執行時選項。
-   * 通過調用屬於`AssemblerOptionSpec`對象的方法來設定運行時選項以滿足您的業務要求。 例如，要指示組合器服務在發生錯誤時繼續處理作業，請調用`AssemblerOptionSpec`對象的`setFailOnError`方法並傳遞`false`。
+   * 建立 `AssemblerOptionSpec` 使用其建構子儲存執行時選項的物件。
+   * 通過調用屬於的方法來設定運行時選項以滿足您的業務需求 `AssemblerOptionSpec` 物件。 例如，要指示組合器服務在發生錯誤時繼續處理作業，請調用 `AssemblerOptionSpec` 物件 `setFailOnError` 方法和傳遞 `false`.
 
 1. 組合PDF文檔。
 
-   調用`AssemblerServiceClient`對象的`invokeOneDocument`方法並傳遞以下值：
+   叫用 `AssemblerServiceClient` 物件 `invokeOneDocument` 方法，並傳遞下列值：
 
-   * 代表DDX文檔的`com.adobe.idp.Document`對象。 確保此DDX文檔包含PDF源元素的`inDoc`值。
-   * 包含互動式PDF檔案的`com.adobe.idp.Document`物件。
-   * `com.adobe.livecycle.assembler.client.AssemblerOptionSpec`對象，它指定運行時選項，包括預設字型和作業日誌級別。
+   * A `com.adobe.idp.Document` 表示DDX文檔的對象。 確保此DDX文檔包含值 `inDoc` (針對PDF來源元素)。
+   * A `com.adobe.idp.Document` 包含互動式PDF文檔的對象。
+   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 指定運行時選項的對象，包括預設字型和作業日誌級別。
 
-   `invokeOneDocument`方法返回包含非互動式PDF文檔的`com.adobe.idp.Document`對象。
+   此 `invokeOneDocument` 方法傳回 `com.adobe.idp.Document` 包含非互動式PDF文檔的對象。
 
-1. 儲存非互動式PDF檔案。
+1. 保存非互動式PDF文檔。
 
-   * 建立`java.io.File`物件，並確定副檔名為.pdf。
-   * 調用`Document`對象的`copyToFile`方法，將`Document`對象的內容複製到檔案。 請確定您使用`invokeOneDocument`方法傳回的`Document`物件。
+   * 建立 `java.io.File` 物件，並確定副檔名為.pdf。
+   * 叫用 `Document` 物件 `copyToFile` 複製內容的方法 `Document` 物件。 請確定您使用 `Document` 物件 `invokeOneDocument` 方法傳回。
 
 * &quot;快速入門（SOAP模式）:使用Java API組裝非互動式PDF檔案」
 
-## 使用Web服務API {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}組合非互動式PDF文檔
+## 使用Web服務API組合非互動式PDF檔案 {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
 使用組合器服務API（Web服務）組合非互動式PDF文檔：
 
 1. 包含專案檔案。
 
-   建立使用MTOM的Microsoft .NET項目。 確保使用以下WSDL定義：`http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`。
+   建立使用MTOM的Microsoft .NET專案。 確保使用以下WSDL定義： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
 
    >[!NOTE]
    >
-   >將`localhost`取代為托管AEM Forms之伺服器的IP位址。
+   >取代 `localhost` 和托管AEM Forms之伺服器的IP位址。
 
 1. 建立組合器客戶端。
 
-   * 使用其預設建構子建立`AssemblerServiceClient`物件。
-   * 使用`System.ServiceModel.EndpointAddress`建構子建立`AssemblerServiceClient.Endpoint.Address`物件。 將指定WSDL的字串值傳遞到AEM Forms服務（例如`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您不需要使用`lc_version`屬性。 建立服務參考時，會使用此屬性。
-   * 獲取`AssemblerServiceClient.Endpoint.Binding`欄位的值，建立`System.ServiceModel.BasicHttpBinding`對象。 將傳回值轉換為`BasicHttpBinding`。
-   * 將`System.ServiceModel.BasicHttpBinding`物件的`MessageEncoding`欄位設為`WSMessageEncoding.Mtom`。 此值可確保使用MTOM。
+   * 建立 `AssemblerServiceClient` 物件，使用其預設建構函式。
+   * 建立 `AssemblerServiceClient.Endpoint.Address` 物件，使用 `System.ServiceModel.EndpointAddress` 建構子。 將指定WSDL的字串值傳遞至AEM Forms服務(例如 `http://localhost:8080/soap/services/AssemblerService?blob=mtom`)。 您不需要使用 `lc_version` 屬性。 建立服務參考時，會使用此屬性。
+   * 建立 `System.ServiceModel.BasicHttpBinding` 物件，方法是取得 `AssemblerServiceClient.Endpoint.Binding` 欄位。 將傳回值轉換為 `BasicHttpBinding`.
+   * 設定 `System.ServiceModel.BasicHttpBinding` 物件 `MessageEncoding` 欄位至 `WSMessageEncoding.Mtom`. 此值可確保使用MTOM。
    * 通過執行以下任務來啟用基本HTTP身份驗證：
 
-      * 將AEM表單使用者名稱指派給欄位`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
-      * 將相應的密碼值分配給欄位`AssemblerServiceClient.ClientCredentials.UserName.Password`。
-      * 將常數值`HttpClientCredentialType.Basic`指派給欄位`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 將常數值`BasicHttpSecurityMode.TransportCredentialOnly`指派給欄位`BasicHttpBindingSecurity.Security.Mode`。
+      * 將AEM表單使用者名稱指派給欄位 `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * 為欄位分配相應的密碼值 `AssemblerServiceClient.ClientCredentials.UserName.Password`.
+      * 指派常數值 `HttpClientCredentialType.Basic` 欄位 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 指派常數值 `BasicHttpSecurityMode.TransportCredentialOnly` 欄位 `BasicHttpBindingSecurity.Security.Mode`.
 
 1. 參考現有的DDX文檔。
 
-   * 使用其建構子建立`BLOB`物件。 `BLOB`對象用於儲存DDX文檔。
-   * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示DDX文檔的檔案位置以及在中開啟檔案的模式。
-   * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 通過獲取`System.IO.FileStream`對象的`Length`屬性，可以確定位元組陣列的大小。
-   * 叫用`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞位元組陣列、起始位置和資料流長度以讀取。
-   * 為`MTOM`欄位指定位元組陣列的內容，以填入`BLOB`物件。
+   * 建立 `BLOB` 物件，使用其建構子。 此 `BLOB` 對象用於儲存DDX文檔。
+   * 建立 `System.IO.FileStream` 對象，方法是調用其建構子並傳遞一個字串值，該字串值表示DDX文檔的檔案位置以及在中開啟檔案的模式。
+   * 建立位元組陣列，用於儲存 `System.IO.FileStream` 物件。 您可以取得 `System.IO.FileStream` 物件 `Length` 屬性。
+   * 叫用 `System.IO.FileStream` 物件 `Read` 方法。 傳遞位元組陣列、起始位置和資料流長度以讀取。
+   * 填入 `BLOB` 對象，通過賦值 `MTOM` 位元組陣列內容的欄位。
 
 1. 參考互動式PDF檔案。
 
-   * 使用其建構子建立`BLOB`物件。 `BLOB`對象用於儲存輸入的PDF文檔。 此`BLOB`物件會以引數的形式傳遞至`invokeOneDocument`。
-   * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示輸入PDF文檔的檔案位置以及在中開啟檔案的模式。
-   * 建立儲存`System.IO.FileStream`對象內容的位元組陣列。 通過獲取`System.IO.FileStream`對象的`Length`屬性，可以確定位元組陣列的大小。
-   * 叫用`System.IO.FileStream`物件的`Read`方法，以串流資料填入位元組陣列。 傳遞位元組陣列、起始位置和資料流長度以讀取。
-   * 為`MTOM`欄位指定位元組陣列的內容，以填入`BLOB`物件。
+   * 建立 `BLOB` 物件，使用其建構子。 此 `BLOB` 對象用於儲存輸入PDF文檔。 此 `BLOB` 物件會傳遞至 `invokeOneDocument` 作為引數。
+   * 建立 `System.IO.FileStream` 對象，方法是調用其建構子並傳遞一個字串值，該字串值表示輸入PDF文檔的檔案位置以及在中開啟檔案的模式。
+   * 建立位元組陣列，用於儲存 `System.IO.FileStream` 物件。 您可以取得 `System.IO.FileStream` 物件 `Length` 屬性。
+   * 叫用 `System.IO.FileStream` 物件 `Read` 方法。 傳遞位元組陣列、起始位置和資料流長度以讀取。
+   * 填入 `BLOB` 對象，通過賦值 `MTOM` 位元組陣列內容的欄位。
 
 1. 設定運行時選項。
 
-   * 使用其建構子建立`AssemblerOptionSpec`物件，以儲存執行時選項。
-   * 為屬於`AssemblerOptionSpec`對象的資料成員分配值，以設定運行時選項以滿足您的業務要求。 例如，要指示組合器服務在發生錯誤時繼續處理作業，請將`false`分配給`AssemblerOptionSpec`對象的`failOnError`資料成員。
+   * 建立 `AssemblerOptionSpec` 使用其建構子儲存執行時選項的物件。
+   * 為屬於的資料成員指定值，以設定運行時選項以滿足您的業務需求 `AssemblerOptionSpec` 物件。 例如，要指示組合器服務在發生錯誤時繼續處理作業，請分配 `false` 到 `AssemblerOptionSpec` 物件 `failOnError` 資料成員。
 
 1. 組合PDF文檔。
 
-   調用`AssemblerServiceClient`對象的`invokeOneDocument`方法並傳遞以下值：
+   叫用 `AssemblerServiceClient` 物件 `invokeOneDocument` 方法，並傳遞下列值：
 
-   * 代表DDX文檔的`BLOB`對象
-   * 代表互動式PDF檔案的`BLOB`物件
-   * 指定運行時選項的`AssemblerOptionSpec`對象
+   * A `BLOB` 表示DDX文檔的對象
+   * A `BLOB` 表示互動式PDF文檔的對象
+   * 安 `AssemblerOptionSpec` 指定運行時選項的對象
 
-   `invokeOneDocument`方法返回包含非互動式PDF文檔的`BLOB`對象。
+   此 `invokeOneDocument` 方法傳回 `BLOB` 包含非互動式PDF文檔的對象。
 
-1. 儲存非互動式PDF檔案。
+1. 保存非互動式PDF文檔。
 
-   * 通過調用其建構子並傳遞一個字串值來建立`System.IO.FileStream`對象，該字串值表示非互動式PDF文檔的檔案位置以及在中開啟檔案的模式。
-   * 建立位元組陣列，用於儲存`invokeOneDocument`方法返回的`BLOB`對象的內容。 獲取`BLOB`對象的`MTOM`欄位的值，填入位元組陣列。
-   * 通過調用其建構子並傳遞`System.IO.FileStream`對象來建立`System.IO.BinaryWriter`對象。
-   * 調用`System.IO.BinaryWriter`對象的`Write`方法並傳遞位元組陣列，將位元組陣列的內容寫入PDF檔案。
+   * 建立 `System.IO.FileStream` 對象，方法是調用其建構子並傳遞一個字串值，該字串值表示非互動式PDF文檔的檔案位置以及在中開啟檔案的模式。
+   * 建立位元組陣列，用於儲存 `BLOB` 物件 `invokeOneDocument` 方法傳回。 取得 `BLOB` 物件 `MTOM` 欄位。
+   * 建立 `System.IO.BinaryWriter` 對象，調用其建構子並傳遞 `System.IO.FileStream` 物件。
+   * 調用 `System.IO.BinaryWriter` 物件 `Write` 方法，並傳遞位元組陣列。
 
-* 「快速入門(MTOM):使用Web服務API組裝非互動式PDF檔案」。
+* 「快速入門(MTOM):使用Web服務API組裝非互動式PDF文檔」。
 
 **另請參閱**
 

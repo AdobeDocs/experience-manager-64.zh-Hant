@@ -1,23 +1,27 @@
 ---
 title: 使用XML結構建立最適化表單
-seo-title: 使用XML結構建立最適化表單
+seo-title: Creating adaptive forms using XML Schema
 description: 適用性表單可以使用XML結構作為表單模型，讓您運用現有的XSD範本建立適用性表單。 您可以從XSD拖放架構元素至最適化表單。
-seo-description: 適用性表單可以使用XML結構作為表單模型，讓您運用現有的XSD範本建立適用性表單。 您可以從XSD拖放架構元素至最適化表單。
+seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
 uuid: a5f5d423-9b83-47e8-b0fa-88210d0d18d9
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
-feature: 適用性表單
+feature: Adaptive Forms
 exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1080'
 ht-degree: 3%
 
 ---
 
-# 使用XML結構{#creating-adaptive-forms-using-xml-schema}建立最適化表單
+# 使用XML結構建立最適化表單 {#creating-adaptive-forms-using-xml-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 必備條件 {#prerequisites}
 
@@ -26,7 +30,7 @@ ht-degree: 3%
 * [建立最適化表單](/help/forms/using/creating-adaptive-form.md)
 * [XML架構](https://www.w3.org/TR/xmlschema-2/)
 
-## 使用XML架構作為表單模型{#using-an-xml-schema-as-form-model}
+## 使用XML架構作為表單模型 {#using-an-xml-schema-as-form-model}
 
 AEM Forms支援使用現有XML結構作為表單模型來建立最適化表單。 此XML架構表示組織中的後端系統產生或使用資料的結構。
 
@@ -81,7 +85,7 @@ XML架構由簡單和複雜的元素類型組成。 元素具有將規則新增�
  </tbody> 
 </table>
 
-## 示例XML架構{#sample-xml-schema}
+## 範例XML架構 {#sample-xml-schema}
 
 以下是XML架構的範例。
 
@@ -129,7 +133,7 @@ XML架構由簡單和複雜的元素類型組成。 元素具有將規則新增�
 >
 >確保XML架構只有一個根元素。 不支援具有多個根元素的XML架構。
 
-## 使用XML架構{#adding-special-properties-to-fields-using-xml-schema}向欄位添加特殊屬性
+## 使用XML架構向欄位添加特殊屬性 {#adding-special-properties-to-fields-using-xml-schema}
 
 您可以將下列屬性新增至XML結構元素，以將特殊屬性新增至相關適用性表單的欄位。
 
@@ -170,12 +174,10 @@ XML架構由簡單和複雜的元素類型組成。 元素具有將規則新增�
 >
 >* 大寫元素名稱的第一個字元
 >* 在駝峰大小寫邊界插入空白字元。
-
 >
->
-例如，如果新增`userFirstName`架構元素，適用性表單中產生的註解為`User First Name`。
+>例如，若您新增 `userFirstName` 綱要元素，最適化表單中產生的註解為 `User First Name`.
 
-## 限制最適化表單元件{#limit-acceptable-values-for-an-adaptive-form-component}的可接受值
+## 限制最適化表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
 您可以將下列限制新增至XML架構元素，以限制最適化表單元件可接受的值：
 
@@ -185,7 +187,7 @@ XML架構由簡單和複雜的元素類型組成。 元素具有將規則新增�
    <td><p><strong> 結構屬性</strong></p> </td> 
    <td><p><strong>資料類型</strong></p> </td> 
    <td><p><strong>說明</strong></p> </td> 
-   <td><p><strong>元件</strong></p> </td> 
+   <td><p><strong>Component</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p><code>totalDigits</code></p> </td> 
@@ -221,7 +223,7 @@ XML架構由簡單和複雜的元素類型組成。 元素具有將規則新增�
   </tr> 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>布林值 (Boolean)</p> </td> 
+   <td><p>布林值</p> </td> 
    <td><p>如果為true，則表單元件中指定的數值或日期必須小於為maximum屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須小於或等於為最大屬性指定的數值或日期。</p> </td> 
    <td> 
     <ul> 
@@ -232,7 +234,7 @@ XML架構由簡單和複雜的元素類型組成。 元素具有將規則新增�
   </tr> 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>布林值 (Boolean)</p> </td> 
+   <td><p>布林值</p> </td> 
    <td><p>如果為true，則表單元件中指定的數值或日期必須大於為最小屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須大於或等於為最小屬性指定的數值或日期。</p> </td> 
    <td> 
     <ul> 
@@ -293,21 +295,21 @@ XML架構由簡單和複雜的元素類型組成。 元素具有將規則新增�
 
 **如何知道樹中的哪個元素與哪個XML元素關聯？**
 
-當您連按兩下「內容尋找器」中的元素時，快顯視窗會顯示欄位名稱和名為`bindRef`的屬性。 此屬性會將樹元素映射到架構中的元素或屬性。
+當您連按兩下「內容尋找器」中的元素時，快顯視窗會顯示欄位名稱和名為 `bindRef`. 此屬性會將樹元素映射到架構中的元素或屬性。
 
 ![XML架構元素的bindref欄位](assets/dblclick.png)
 
-bindRef</code>欄位顯示樹元素與方案中的元素或屬性之間的關聯。
+bindRef</code> 欄位顯示樹元素與架構中的元素或屬性之間的關聯。
 
 >[!NOTE]
 >
->屬性的`bindRef`值中有`@`符號，以便與元素區分。 例如， `/config/projectDetails/@duration`。
+>屬性具有 `@` 符號 `bindRef`值來區分元素。 例如， `/config/projectDetails/@duration`.
 
 **為什麼我無法為可重複的子表單拖曳子表單的個別元素（從任何複雜類型產生的結構）（minOccours或maxOccurs值大於1）?**
 
 在可重複的子表單中，您必須使用完整的子表單。 如果您只想要選擇性欄位，請使用整個結構並刪除不需要的結構。
 
-**我在「內容尋找器」中有一個長而複雜的結構。如何找到特定元素？**
+**我在「內容尋找器」中有一個長而複雜的結構。 如何尋找特定元素？**
 
 您有兩個選項：
 
@@ -316,4 +318,4 @@ bindRef</code>欄位顯示樹元素與方案中的元素或屬性之間的關聯
 
 **什麼是bindRef?**
 
-`bindRef`是適用性表單元件與架構元素或屬性之間的連線。 它指定`XPath` ，從此元件或欄位捕獲的值在輸出XML中可用。 從預填（預填）XML預填欄位值時，也會使用`bindRef`。
+A `bindRef` 是適用性表單元件與結構元素或屬性之間的連線。 這決定了 `XPath` 其中，從此元件或欄位捕獲的值在輸出XML中可用。 A `bindRef`從預填（預填）的XML預填欄位值時，也會使用。

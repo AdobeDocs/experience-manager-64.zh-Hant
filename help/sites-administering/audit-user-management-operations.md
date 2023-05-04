@@ -1,9 +1,9 @@
 ---
 title: 如何在AEM中稽核使用者管理作業
-seo-title: 如何在AEM中稽核使用者管理作業
+seo-title: How to Audit User Management Operations in AEM
 description: 了解如何在AEM中稽核使用者管理作業。
-feature: 運作
-seo-description: 了解如何在AEM中稽核使用者管理作業。
+feature: Operations
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,14 +11,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
-# 如何審核AEM{#how-to-audit-user-management-operations-in-aem}中的用戶管理操作
+# 如何在AEM中稽核使用者管理作業{#how-to-audit-user-management-operations-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 簡介 {#introduction}
 
@@ -30,24 +34,24 @@ AEM已導入記錄權限變更的功能，以便稍後進行稽核。
 * 要新增至群組的使用者
 * 現有用戶或組的權限更改
 
-預設情況下，這些條目將寫入`error.log`檔案。 為了更方便進行監控，建議將其重新導向至單獨的日誌檔案。 有關如何執行此操作的更多資訊，請參閱以下段落。
+依預設，這些項目會寫入 `error.log` 檔案。 為了更方便進行監控，建議將其重新導向至單獨的日誌檔案。 有關如何執行此操作的更多資訊，請參閱以下段落。
 
-## 將輸出重定向到單獨的日誌檔案{#redirecting-the-output-to-a-separate-log-file}
+## 將輸出重定向到單獨的日誌檔案 {#redirecting-the-output-to-a-separate-log-file}
 
-若要將記錄輸出重新導向至個別的記錄檔，您需要建立新的&#x200B;**Apache Sling Logger**&#x200B;設定。 在以下範例中，我們將使用`useraudit.log`作為個別檔案的名稱。
+若要將記錄輸出重新導向至個別的記錄檔，您將需要建立新 **Apache Sling Logging Logger** 設定。 我們會用 `useraudit.log` 做為下列範例中個別檔案的名稱。
 
-1. 瀏覽至`https://<serveraddress>:<serverport>/system/console/configMgr`，前往Web主控台
-1. 搜尋&#x200B;**Apache Sling Logging Logger Configuration**。 然後，按條目右側的「+」以建立新的工廠配置。
+1. 瀏覽至 `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. 搜尋 **Apache Sling Logging Logger Configuration**. 然後，按條目右側的「+」以建立新的工廠配置。
 1. 建立下列設定：
 
    * **記錄層級：** 資訊
-   * **記錄檔：** logs/useraudit.log
-   * **訊息模式：** 層級預設
+   * **日誌檔案：** logs/useraudit.log
+   * **消息模式：** 級別預設值
    * **記錄器：** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizabledServlet
 
-   要在&#x200B;**記錄器**&#x200B;欄位中輸入兩個記錄器，您需要輸入第一個記錄器的名稱，然後按「+」按鈕並輸入第二個記錄器的名稱來建立另一個欄位。
+   若要將兩個記錄器輸入 **記錄器** 欄位，您需要輸入第一個記錄器的名稱，然後按「+」按鈕並輸入第二個記錄器的名稱，以建立另一個欄位。
 
-## 輸出示例{#example-output}
+## 範例輸出 {#example-output}
 
 如果已正確設定，輸出應如下所示：
 

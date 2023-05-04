@@ -1,7 +1,7 @@
 ---
-title: 開始開發 AEM Sites - WKND 教學課程
+title: 開發 AEM Sites 快速入門 - WKND 教學課程
 seo-title: Getting Started Developing AEM Sites - WKND Tutorial
-description: 剛開發AEM? 需要重新整理最佳實務嗎？ 這是開始的地方！ 本多部分教學課程的目標是教導剛接觸AEM的開發人員如何使用最新標準和技術在AEM中實作網站。
+description: 第一次開發 AEM？需要複習最佳做法？這是開始的地方！這個由多個部分組成的教學課程的目標是指導 AEM 新手開發人員如何使用最新的標準和技術在 AEM 中實作網站。
 seo-description: New to developing AEM? Need a refresher on best practices? This is the place to start! The goal for this multi-part tutorial is to teach a developer who is new to AEM how to implement a website in AEM using the latest standards and technologies.
 uuid: 42db7bc5-5818-40e4-83b4-0cafc1acac42
 contentOwner: User
@@ -10,30 +10,34 @@ content-type: reference
 topic-tags: introduction
 discoiquuid: 54e48abc-be75-4477-83fa-bd74d5b995af
 exl-id: 82554eb8-34a0-4877-b92c-56ee662dda97
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 21%
+source-wordcount: '289'
+ht-degree: 66%
 
 ---
 
-# 開始開發 AEM Sites - WKND 教學課程{#getting-started-developing-aem-sites-wknd-tutorial}
+# 開發 AEM Sites 快速入門 - WKND 教學課程{#getting-started-developing-aem-sites-wknd-tutorial}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 概觀 {#overview}
 
-剛開發AEM? 需要重新整理最佳實務嗎？ 這是開始的地方！
+第一次開發 AEM？需要複習最佳做法？這是開始的地方！
 
-本多部分教學課程的目標是教導剛接觸AEM的開發人員如何使用最新標準和技術在AEM中實作網站。 希望在本教學課程結束時，您能了解AEM平台的基本基礎，並了解一些常見設計模式的知識。
+這個由多個部分組成的教學課程的目標是指導 AEM 新手開發人員如何使用最新的標準和技術在 AEM 中實作網站。希望在本教學課程結束時，您將了解 AEM 平台的基本知識和一些常見設計模式的知識。
 
 ## WKND 開發人員教學課程 {#wknd-developer-tutorial}
 
 教學課程已推出 [此處](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant) 或按一下下方的影像。
 
-[![點按影像](assets/screen_shot_2018-11-23at152453.png)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+[![點按影像](assets/screen_shot_2018-11-23at152453.png)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant)
 
 ## 核心概念 {#core-concepts}
 
-本教學課程實作運用AEM的許多強大功能。 網站的實作方式為：
+教學課程實作利用 AEM 的許多強大功能。此網站將使用以下項目實作：
 
 * [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)

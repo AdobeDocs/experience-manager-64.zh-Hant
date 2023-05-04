@@ -1,30 +1,34 @@
 ---
 title: 應用程式伺服器安裝的升級步驟
-seo-title: 應用程式伺服器安裝的升級步驟
+seo-title: Upgrade Steps for Application Server Installations
 description: 了解如何升級透過應用程式伺服器部署的AEM例項。
-seo-description: 了解如何升級透過應用程式伺服器部署的AEM例項。
+seo-description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
-feature: 升級
+feature: Upgrading
 exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
 
 # 應用程式伺服器安裝的升級步驟{#upgrade-steps-for-application-server-installations}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 本節介紹為了更新AEM以安裝應用程式伺服器而需要遵循的過程。
 
-此程式中的所有範例都使用JBoss做為應用程式伺服器，且表示您已部署AEM的有效版本。 此程式的用途是記錄從&#x200B;**AEM 5.6版到6.3**&#x200B;所執行的升級。
+此程式中的所有範例都使用JBoss做為應用程式伺服器，且表示您已部署AEM的有效版本。 此程式旨在記錄從 **AEM 5.6版至6.3版**.
 
-1. 首先，啟動JBoss。 在大多數情況下，您可以通過從終端運行以下命令來運行`standalone.sh`啟動指令碼：
+1. 首先，啟動JBoss。 在大多數情況下，您可以執行 `standalone.sh` 啟動指令碼，通過從終端運行此命令：
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -56,7 +60,7 @@ ht-degree: 0%
 
 1. 請執行下列動作，刪除sling.properties檔案中的必要屬性：
 
-   1. 開啟位於`crx-quickstart/launchpad/sling.properties`的檔案
+   1. 開啟位於的檔案 `crx-quickstart/launchpad/sling.properties`
    1. 步驟文字移除下列屬性並儲存檔案：
 
       1. `sling.installer.dir`
@@ -70,9 +74,9 @@ ht-degree: 0%
 
 1. 移除不再需要的檔案和資料夾。 您需要明確移除的項目包括：
 
-   * **launchpad/startup資料夾**。 您可以在終端機中執行下列命令以刪除它：`rm -rf crx-quickstart/launchpad/startup`
-   * **base.jar檔案**:`find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * **BootstrapCommandFile_timestamp.txt檔案**:`rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * 此 **launchpad/startup資料夾**. 您可以在終端機中執行下列命令以刪除它： `rm -rf crx-quickstart/launchpad/startup`
+   * 此 **base.jar檔案**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * 此 **BootstrapCommandFile_timestamp.txt檔案**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. 將新移轉的區段存放區複製到其適當位置：
 
@@ -86,9 +90,9 @@ ht-degree: 0%
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. 接下來，您需要建立包含將與新升級執行個體搭配使用之OSGi設定的資料夾。 更具體地說，需要在&#x200B;**crx-quickstart**&#x200B;下建立名為install的資料夾。
+1. 接下來，您需要建立包含將與新升級執行個體搭配使用之OSGi設定的資料夾。 更具體地說，名為「安裝」的資料夾必須建立在 **crx-quickstart**.
 
-1. 現在，建立要與AEM 6.3搭配使用的節點儲存區和資料儲存區。您可以在&#x200B;**crx-quickstart\install**&#x200B;下建立兩個檔案，其名稱如下：
+1. 現在，建立將與AEM 6.3搭配使用的節點儲存區和資料儲存區。您可以在下方建立兩個檔案，其名稱如下 **crx-quickstart\install**:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
@@ -98,11 +102,11 @@ ht-degree: 0%
 
 1. 編輯組態檔，使其可供使用。 更具體而言：
 
-   * 將下列行新增至&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * 將下列行新增至 **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
       `customBlobStore=true`
 
-   * 然後將下列行加入&#x200B;**org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
+   * 然後將下列行加入 **org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config**:
 
       ```
       path=./crx-quickstart/repository/datastore
@@ -115,13 +119,13 @@ ht-degree: 0%
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. 您現在需要變更AEM 6.3 war檔案中的執行模式。 為此，首先建立一個臨時資料夾，用於容納AEM 6.3戰爭。 此示例中資料夾的名稱為&#x200B;**temp**。 複製戰爭檔案後，從臨時資料夾內執行以擷取其內容：
+1. 您現在需要變更AEM 6.3 war檔案中的執行模式。 為此，首先建立一個臨時資料夾，用於容納AEM 6.3戰爭。 此範例中的資料夾名稱為 **溫度**. 複製戰爭檔案後，從臨時資料夾內執行以擷取其內容：
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. 提取內容後，轉到&#x200B;**WEB-INF**&#x200B;資料夾並編輯`web.xml`檔案以更改運行模式。 要查找XML中設定它們的位置，請查找`sling.run.modes`字串。 找到此檔案後，請變更下一行程式碼中的執行模式，預設會將其設為製作：
+1. 擷取內容後，請前往 **WEB-INF** 資料夾和編輯 `web.xml` 檔案來變更執行模式。 要查找XML中設定它們的位置，請查找 `sling.run.modes` 字串。 找到此檔案後，請變更下一行程式碼中的執行模式，預設會將其設為製作：
 
    ```shell
    <param-value >author</param-value>

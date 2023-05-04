@@ -1,8 +1,8 @@
 ---
 title: 主題自訂
-seo-title: 主題自訂
+seo-title: Theme Customization
 description: 如何自訂AEM Forms應用程式的主題。
-seo-description: 如何自訂AEM Forms應用程式的主題。
+seo-description: How to customize the theme of your AEM Forms app.
 uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: fb1e0bec-c943-4468-920d-8ef360a01365
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 0%
+source-wordcount: '259'
+ht-degree: 2%
 
 ---
 
 # 主題自訂 {#theme-customization}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 您可以自訂HTML程式碼和CSS檔案，為AEM Forms應用程式提供獨特的組織專屬外觀和風格。 例如，您可以更改任務或起始點的背景顏色和高度。 下列範例提供變更的指示：
 
@@ -29,17 +33,17 @@ ht-degree: 0%
 
 1. 開啟您的專案。
 
-   * 若為iOS，請在Xcode中開啟`Capture.xcodeproj`
+   * iOS，開啟 `Capture.xcodeproj` 在Xcode中
    * 若為Android，請在Eclipse中開啟Android專案。
-   * 對於Windows，在Visual Studio中開啟`MWSWindows.sln`。
+   * 對於Windows，請開啟 `MWSWindows.sln` 在Visual Studio。
 
 1. 導覽至範本資料夾。
 
-   * 在Xcode中，導覽至「**擷取> www > wsmobile > js >執行階段>範本**」資料夾。
-   * 在Eclipse中，導覽至「**assets > www > wsmobile > js > runtime > templates**」資料夾。
-   * 在Visual Studio中，導航至&#x200B;**MWSindows > www > wsmobile > js > runtime > templates**&#x200B;資料夾。
+   * 在Xcode中，導覽至 **擷取> www > wsmobile > js >執行階段>範本** 檔案夾。
+   * 在Eclipse中，導覽至 **「資產」 > 「www」 > 「js」 > 「執行階段」** 檔案夾。
+   * 在Visual Studio中，導覽至 **MWSwindows > www > wsmobile > js > runtime >範本** 檔案夾。
 
-1. 開啟`template.html`檔案進行編輯。
+1. 開啟 `template.html` 檔案進行編輯。
 1. 找出下列字串：
 
    ```
@@ -50,9 +54,9 @@ ht-degree: 0%
                  <%} else 
    ```
 
-   將其替換為`<%`。
+   替換為 `<%`.
 
-1. 在`template.html`檔案中找到以下代碼：
+1. 在 `template.html` 檔案：
 
    ```
    <ul id="task_menu_list">
@@ -64,7 +68,7 @@ ht-degree: 0%
                                    </li>
    ```
 
-1. 請對下一行加上註解並儲存檔案。
+1. 對下一行加上註解並儲存檔案。
 
    ```
    task.availableCommands.directCommands[1]%>">
@@ -74,13 +78,13 @@ ht-degree: 0%
 
 1. 導覽至CSS資料夾。
 
-   * 在Xcode中，導覽至&#x200B;**Capture > www > wsmobile > css**。
-   * 在Eclipse中，導覽至&#x200B;**assets > www > wsmobile > css**。
-   * 在Visual Studio中，導航至&#x200B;**MWSindows > www > wsmobile > css**。
+   * 在Xcode中，導覽至 **Capture > www > wsmobile > css**.
+   * 在Eclipse中，導覽至 **assets > www > wsmobile > css**.
+   * 在Visual Studio中，導航至 **MWSWindows > www > wsmobile > css**.
 
-1. 開啟`_style.css`檔案進行編輯。
-1. 對於背景影像，將`#323232`變更為`#fff`。
-1. 保存更改並關閉`_style.css`檔案。
+1. 開啟 `_style.css` 檔案進行編輯。
+1. 若為背景影像，請變更 `#323232` to `#fff`.
+1. 儲存變更並關閉 `_style.css` 檔案。
 1. 開啟AEM Forms應用程式。
 
    AEM Forms應用程式現在會顯示指示，而非說明。

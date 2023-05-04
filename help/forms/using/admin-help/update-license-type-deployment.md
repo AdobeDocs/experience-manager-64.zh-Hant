@@ -1,8 +1,8 @@
 ---
 title: 更新部署的許可證類型
-seo-title: 更新部署的許可證類型
+seo-title: Update the license type for the deployment
 description: 使用管理控制台中的「更改許可證」頁更新部署的許可證類型。
-seo-description: 使用管理控制台中的「更改許可證」頁更新部署的許可證類型。
+seo-description: Update the license type for the deployment by using the Change License page in administration console.
 uuid: 0152635e-2c00-4944-b9b6-64b368589a91
 contentOwner: admin
 content-type: reference
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
 exl-id: 07671470-59dd-4290-be9a-465fcd89ac2d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 1%
 
 ---
 
-# 更新部署的許可證類型{#update-the-license-type-for-the-deployment}
+# 更新部署的許可證類型 {#update-the-license-type-for-the-deployment}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 在AEM表單安裝程式中，您使用Configuration Manager來設定和部署您需要的AEM表單模組。 預設情況下，這些模組配置了60天評估許可證。 使用管理控制台中的「更改許可證」頁可更改部署的許可證類型。 當前部署的模組將顯示在「更改許可證」頁上。
 
@@ -34,7 +38,7 @@ ht-degree: 0%
 >
 >許可證更改適用於所有已部署的模組。 在更改許可類型之前，請取消部署任何未獲許可的模組。 如果部署的模組清單包含您從Adobe購買的模組以外的模組，則不要選擇生產許可證類型。
 
-## 更新許可證類型{#update-the-license-type}
+## 更新許可證類型 {#update-the-license-type}
 
 1. 在管理控制台中，按一下「授權」。
 1. 閱讀AEM Forms最終用戶許可協定，如果您同意協定的條款，請選擇「我接受」，然後按一下「下一步」。
@@ -42,8 +46,8 @@ ht-degree: 0%
 
    * **EVAL:** 60天評估許可證
    * **開發：** 永久開發授權
-   * **NFR:** 2年評估許可證
-   * **IDEV:** 1年Adobe開發人員計畫訂購
+   * **NFR:** 2年評估許可
+   * **IDEV:** 訂購Adobe Developer計畫1年
    * **生產：** 永久授權
 
 1. 選擇是，許可證更改對所有已部署的模組有效。

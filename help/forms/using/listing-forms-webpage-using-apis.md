@@ -1,28 +1,32 @@
 ---
 title: 使用API列出網頁上的表單
-seo-title: 使用API列出網頁上的表單
+seo-title: Listing forms on a web page using APIs
 description: 以程式設計方式查詢Forms Manager，以擷取已篩選的表單清單並顯示在您自己的網頁上。
-seo-description: 以程式設計方式查詢Forms Manager，以擷取已篩選的表單清單並顯示在您自己的網頁上。
+seo-description: Programmatically query Forms Manager to retrieve a filtered list of forms and display on your own web pages.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
-source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+exl-id: e42b7cdf-9a70-4ff6-8283-7bbc3690ca05
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 1%
+source-wordcount: '729'
+ht-degree: 2%
 
 ---
 
+# 使用API列出網頁上的表單 {#listing-forms-on-a-web-page-using-apis}
 
-# 使用API {#listing-forms-on-a-web-page-using-apis}列出網頁上的表單
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM Forms提供REST型搜尋API，網頁開發人員可使用此API來查詢及擷取符合搜尋條件的一組表單。 您可以使用API根據各種篩選條件來搜尋表單。 回應物件包含表單屬性、屬性，以及轉譯表單端點。
 
-若要使用REST API搜尋表單，請使用下述的查詢參數，在`https://[server]:[port]/libs/fd/fm/content/manage.json`將GET要求傳送至伺服器。
+若要使用REST API搜尋表單，請傳送GET要求至 `https://[server]:[port]/libs/fd/fm/content/manage.json` 搭配查詢參數，如下所述。
 
-## 查詢參數{#query-parameters}
+## 查詢參數 {#query-parameters}
 
 <table>
  <tbody>
@@ -32,9 +36,9 @@ AEM Forms提供REST型搜尋API，網頁開發人員可使用此API來查詢及�
   </tr>
   <tr>
    <td>func<br /> </td>
-   <td><p>指定要呼叫的函式。 若要搜尋表單，請將<code>func </code>屬性的值設為<code>searchForms</code>。</p> <p>例如， <code class="code">
+   <td><p>指定要呼叫的函式。 若要搜尋表單，請設定 <code>func </code>屬性至 <code>searchForms</code>.</p> <p>例如， <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong>注意：</strong> <em>此參數為必要項目。</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>注意：</strong> <em>此參數為必填項。</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -49,7 +53,7 @@ AEM Forms提供REST型搜尋API，網頁開發人員可使用此API來查詢及�
     </ul> </td>
   </tr>
   <tr>
-   <td>relation<br /> </td>
+   <td>關係<br /> </td>
    <td>指定要擷取的相關資產以及搜尋結果。 您可以選擇下列其中一個選項來擷取相關資產：
     <ul>
      <li><strong>無關係</strong>:請勿擷取相關資產。</li>
@@ -78,8 +82,8 @@ AEM Forms提供REST型搜尋API，網頁開發人員可使用此API來查詢及�
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>在上述範例中， </p>
     <ul>
      <li><strong>名稱</strong>:指定要搜索的屬性名稱。</li>
-     <li><strong>值</strong>:指定要搜索的屬性的值。</li>
-     <li><strong>運算元</strong>:指定在搜索時應用的運算子。支援下列運算子：
+     <li><strong>value</strong>:指定要搜索的屬性的值。</li>
+     <li><strong>運算子</strong>:指定在搜索時應用的運算子。 支援下列運算子：
       <ul>
        <li>EQ — 等於 </li>
        <li>NEQ — 不等於</li>
@@ -106,7 +110,7 @@ AEM Forms提供REST型搜尋API，網頁開發人員可使用此API來查詢及�
        entityBuilder.add("orderings", orderingsArray.toString());</code></p>
     <ul>
      <li><strong>名稱</strong>:指定用於排序搜索結果的屬性名稱。</li>
-     <li><strong>條件</strong>:指定結果的順序。order屬性接受以下值：
+     <li><strong>條件</strong>:指定結果的順序。 order屬性接受以下值：
       <ul>
        <li>ASC — 使用ASC以升序排列結果。<br /> </li>
        <li>DES — 使用DES以降序排列結果。</li>
@@ -115,7 +119,7 @@ AEM Forms提供REST型搜尋API，網頁開發人員可使用此API來查詢及�
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>指定是否檢索二進位內容。 <code>includeXdp</code>屬性適用於<code>FORM</code>、<code>PDFFORM</code>和<code>PRINTFORM</code>類型的資產。</td>
+   <td>指定是否檢索二進位內容。 此 <code>includeXdp</code> 屬性適用於類型的資產 <code>FORM</code>, <code>PDFFORM</code>，和 <code>PRINTFORM</code>.</td>
   </tr>
   <tr>
    <td>assetType</td>
@@ -124,7 +128,7 @@ AEM Forms提供REST型搜尋API，網頁開發人員可使用此API來查詢及�
  </tbody>
 </table>
 
-## 範例要求{#sample-request}
+## 範例要求 {#sample-request}
 
 ```
 func : searchForms
@@ -144,7 +148,7 @@ statements: [{"name":"name","value":"*Claim.xdp","operator":"CONTAINS"},
 orderings:[{"name" :“lastModifiedDate“:”order”:”ASC”}]
 ```
 
-## 範例回應{#sample-response}
+## 範例回應 {#sample-response}
 
 ```
 [

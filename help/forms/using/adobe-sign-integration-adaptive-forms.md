@@ -10,14 +10,18 @@ topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 feature: Adaptive Forms, Acrobat Sign
 exl-id: e7c27623-a889-4bd5-bfff-cfe513cd1a35
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '967'
+source-wordcount: '1003'
 ht-degree: 13%
 
 ---
 
 # 整合Acrobat Sign與AEM Forms {#integrate-adobe-sign-with-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 Acrobat Sign可啟用最適化表單的電子簽名工作流程。 電子簽名有助於改善處理法律、銷售、薪資、人力資源管理及許多領域文件的工作流程。
 

@@ -2,14 +2,18 @@
 title: 如何使用Apache Maven建立AEM專案
 description: 本檔案說明如何根據Apache Maven設定AEM專案
 exl-id: 6ae0e387-468b-4cea-9e3f-0816d67b7621
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '147'
+source-wordcount: '183'
 ht-degree: 10%
 
 ---
 
 # 如何使用Apache Maven建立AEM專案 {#how-to-build-aem-projects-using-apache-maven}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM 6.4遵循套件管理和專案結構的最新最佳實務，這是由適用於內部部署和AMS實作的最新AEM專案原型所實作。
 

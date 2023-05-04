@@ -1,8 +1,8 @@
 ---
 title: JEE版AEM Forms的一般安全性考量事項
-seo-title: JEE版AEM Forms的一般安全性考量事項
+seo-title: General Security Considerations for AEM Forms on JEE
 description: 了解如何準備在JEE環境中強化AEM Forms。
-seo-description: 了解如何準備在JEE環境中強化AEM Forms。
+seo-description: Learn how to prepare for hardening your AEM Forms on JEE environment.
 uuid: c5f6ffc7-b987-4541-ab60-e97b4ff5b2a4
 content-type: reference
 topic-tags: Security
@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
 role: Admin
 exl-id: cde40670-ce9d-4b96-92d3-9e56cb15bdce
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1127'
 ht-degree: 1%
 
 ---
 
 # JEE版AEM Forms的一般安全性考量事項 {#general-security-considerations-for-aem-forms-on-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 了解如何準備在JEE環境中強化AEM Forms。
 
@@ -89,7 +93,7 @@ ht-degree: 1%
 * 啟用安全Cookie
 * 關閉不需要的埠
 * 按IP地址或域限制客戶端
-* 使用Java™ Security Manager以寫程式方式限制權限
+* 使用Java™ Security Manager以程式設計方式限制權限
 
 如需JEE上AEM Forms支援之應用程式伺服器的安全性資訊，請參閱下表中的資源。
 
@@ -103,7 +107,7 @@ ht-degree: 1%
  <tbody>
   <tr> 
    <td><p>OracleWebLogic®</p> </td> 
-   <td><p>請前往<a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>搜尋了解WebLogic安全性。</p> </td> 
+   <td><p>在以下位置搜索了解WebLogic安全 <a href="https://download.oracle.com/docs/">https://download.oracle.com/docs/</a>.</p> </td> 
   </tr> 
   <tr> 
    <td><p>IBM WebSphere®</p> </td> 
@@ -149,12 +153,12 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td><p>Oracle® 12c</p> </td> 
-   <td><p>請參閱<a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle12g檔案</a>中的安全性章節</p> </td> 
+   <td><p>請參閱 <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle12g檔案</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-下表說明在AEM Forms on JEE設定程式期間需要開啟的預設埠。 如果您是通過https連接，請相應地調整埠資訊和IP地址。 有關配置埠的詳細資訊，請參閱應用程式伺服器的&#x200B;*在JEE*&#x200B;上安裝和部署AEM Forms檔案。
+下表說明在AEM Forms on JEE設定程式期間需要開啟的預設埠。 如果您是通過https連接，請相應地調整埠資訊和IP地址。 有關配置埠的詳細資訊，請參閱 *在JEE上安裝和部署AEM Forms* 應用程式伺服器的文檔。
 
 <table> 
  <thead> 
@@ -217,13 +221,13 @@ JBoss Application Server使用8080作為預設HTTP埠。 JBoss也具有預先配
 
 1. 開啟下列檔案進行編輯：
 
-   單伺服器安裝：[JBoss root]/standalone/configuration/standalone.xml
+   單伺服器安裝： [JBoss根]/standalone/configuration/standalone.xml
 
-   群集安裝：[JBoss root]/domain/configuration/domain.xml
+   群集安裝： [JBoss根]/domain/configuration/domain.xml
 
-1. 將&#x200B;**&lt;socket-binding>**&#x200B;標籤中&#x200B;**port**&#x200B;屬性的值更改為自定義埠號。 例如，下列程式使用埠8090:
+1. 變更 **埠** 屬性 **&lt;socket-binding>** 標籤為自訂連接埠號。 例如，下列程式使用埠8090:
 
-   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot; />
+   &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. 儲存並關閉檔案。
 1. 重新啟動JBoss應用程式伺服器。
@@ -244,13 +248,13 @@ AEM Forms on JEE使用AEM Forms on JEE資料庫來儲存敏感檔案密鑰資訊
 
 在JEE上執行AEM Forms的應用程式伺服器需要其自己的設定，才能透過應用程式伺服器上設定的資料來源存取您的資料庫。 確保應用程式伺服器不會在其資料源配置檔案中以明文形式公開資料庫密碼。
 
-lc_[database].xml檔案不應包含明文格式的密碼。 請向應用程式伺服器供應商咨詢如何為應用程式伺服器加密這些密碼。
+lc_[資料庫].xml檔案不應包含明文格式的密碼。 請向應用程式伺服器供應商咨詢如何為應用程式伺服器加密這些密碼。
 
 >[!NOTE]
 >
 >JEE JBoss上的AEM Forms統包安裝程式會加密資料庫密碼。
 
-IBM WebSphere Application Server和OracleWebLogic Server預設情況下可能會加密資料源密碼。 不過，請向應用程式伺服器檔案確認，以確保發生此情況。
+IBM WebSphere應用程式伺服器和OracleWebLogic伺服器預設會加密資料源密碼。 不過，請向應用程式伺服器檔案確認，以確保發生此情況。
 
 ### 保護儲存在信任儲存中的私鑰 {#protecting-the-private-key-stored-in-trust-store}
 

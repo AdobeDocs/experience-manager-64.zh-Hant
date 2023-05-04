@@ -10,14 +10,18 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
-source-git-commit: 5dd282cc91721a3d53bdf29d5fbb978a52c3704e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2898'
 ht-degree: 6%
 
 ---
 
 # 報告 {#reporting}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 為協助您監視和分析執行個體的狀態，AEM提供一系列預設報表，可依您的個別需求進行設定：
 

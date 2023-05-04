@@ -10,14 +10,18 @@ topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: d0cdb15d-196a-44e3-bd98-91588b6979ab
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1495'
 ht-degree: 1%
 
 ---
 
 # AEM 6.4中的Sites存放庫重新調整{#sites-repository-restructuring-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 如父項所述 [AEM 6.4中的存放庫重新調整架構](/help/sites-deploying/repository-restructuring.md) 頁面中，升級至AEM 6.4的客戶應使用此頁面評估與影響AEM Sites解決方案的存放庫變更相關的工作量。 AEM 6.4升級程式中有些變更需要付出大量工作，有些則可延後至6.5升級。
 
@@ -311,7 +315,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>附註</strong></td> 
-   <td>不適用<br /> </td> 
+   <td>N/A<br /> </td> 
   </tr>
  </tbody>
 </table>

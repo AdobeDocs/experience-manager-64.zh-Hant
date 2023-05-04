@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Authoring User Guide
 description: 本指南說明在AEM中編寫的概念。
 seo-description: Explains the concepts of authoring in AEM.
 exl-id: c507de40-d840-4457-ae40-59c81afbe7aa
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 29%
+source-wordcount: '340'
+ht-degree: 27%
 
 ---
 
 # AEM 6.4 Authoring 使用指南
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 本指南說明在AEM中編寫的概念。
 
@@ -44,7 +48,7 @@ ht-degree: 29%
 * [AEM教學課程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher使用手冊](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)
 * [HTL使用手冊](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
-* [核心元件使用手冊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心元件使用手冊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en))
 * [GDPR 整備](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 85048fe4-ca1b-41fa-8e19-6eeb8dd09962
 exl-id: ae0463de-271f-47c0-b947-f6d149ded8ab
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '945'
 ht-degree: 4%
 
 ---
 
 # 設定Visual Studio項目並構建Windows應用程式 {#set-up-the-visual-studio-project-and-build-the-windows-app}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM Forms提供AEM Forms應用程式的完整原始碼。 源包含構建自定義工作區應用程式的所有元件。 原始碼檔案， `adobe-lc-mobileworkspace-src-<version>.zip`是 `adobe-aemfd-forms-app-src-pkg-<version>.zip` 封裝。
 
@@ -89,7 +93,7 @@ AEM Forms提供AEM Forms應用程式的完整原始碼。 源包含構建自定�
 
 1. 視需要在參數中進行變更，例如應用程式組建的版本和輸出位置。
 
-   ![createapppackeswizard2](assets/createapppackageswizard2.png)
+   ![createapppackageswizard2](assets/createapppackageswizard2.png)
 
 1. 建置專案後，您可以使用以下項目安裝應用程式：
 

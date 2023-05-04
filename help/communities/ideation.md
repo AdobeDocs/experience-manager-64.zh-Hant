@@ -1,8 +1,8 @@
 ---
 title: 構想要點
-seo-title: 構想要點
+seo-title: Ideation Essentials
 description: 構思功能概觀
-seo-description: 構思功能概觀
+seo-description: Ideation feature overview
 uuid: abaf03ee-8bf4-4241-96c3-474c95a30a88
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,18 +10,22 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a9e4f2f0-d1ff-40c0-abcf-645e40586a84
 exl-id: 7fb68293-c6e3-4793-b433-205bcfc23e20
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 3%
+source-wordcount: '142'
+ht-degree: 6%
 
 ---
 
-# 構想要點{#ideation-essentials}
+# 構想要點 {#ideation-essentials}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 本頁面提供使用構思功能的基本資訊，這類功能類似於論壇，但能儲存為草稿，且提供更協作的風格。
 
-## 客戶端{#essentials-for-client-side}的要點
+## 用戶端的要點 {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -47,7 +51,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 屬性</strong></td> 
-   <td>請參閱<a href="ideation-feature.md">構想功能</a></td> 
+   <td>請參閱 <a href="ideation-feature.md">構思功能</a></td> 
   </tr>
  </tbody>
 </table>
@@ -56,4 +60,4 @@ ht-degree: 3%
 
 ### 創意力功能 {#ideation-function}
 
-包括[標識函式](functions.md#ideation-function)的社區站點結構包括配置的`ideation`元件。
+包含 [標識函式](functions.md#ideation-function)，包含已設定的 `ideation` 元件。

@@ -1,8 +1,8 @@
 ---
 title: 協調控制台
-seo-title: 協調控制台
+seo-title: Moderation Console
 description: 如何存取「協調」主控台
-seo-description: 如何存取「協調」主控台
+seo-description: How to access the Moderation console
 uuid: 920124b9-af6f-4622-adb6-b8e294c5607d
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,24 +11,28 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 3%
+source-wordcount: '1883'
+ht-degree: 4%
 
 ---
 
 # 協調控制台 {#moderation-console}
 
-在AEM Communities中，管理員和社群協調者（指派為協調者的受信任社群成員）可從製作和發佈環境中大量協調社群內容[。](moderate-ugc.md)
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-管理員和社群協調者也可以在發佈環境中執行[內文協調](in-context.md)。
+在AEM Communities，大量 [協調社群內容](moderate-ugc.md) 管理員和社群協調者（指派為協調者的受信任社群成員）皆可從製作和發佈環境中使用。
 
-所有[社群網站](sites-console.md)的功能是`Administration`功能表項目，可供具有管理權限登入的使用者使用。 `Administration`連結提供對協調控制台的存取。
+管理員和社群協調者也可以執行 [內容內協調](in-context.md) 在發佈環境中。
+
+所有功能 [社群網站](sites-console.md) 是 `Administration`功能表項目。 此 `Administration`連結可讓您存取「協調」主控台。
 
 從「協調」控制台，管理員和社群協調者將有權存取所有使用者產生的內容(UGC)，且他們有權協調這些內容。 如果允許協調多個網站，則可以檢視所有網站的貼文，或依所選社群網站進行篩選。
 
-有關更多詳細資訊，請訪問[管理用戶和用戶組](users.md)。
+如需更多詳細資訊，請造訪 [管理使用者和使用者群組](users.md).
 
 「協調」控制台支援：
 * 大量執行協調工作
@@ -36,7 +40,7 @@ ht-degree: 3%
 * 查看UGC詳細資訊
 * 檢視UGC作者詳細資訊
 
-只有以管理員或` [moderator permissions](in-context.md#identifyingtrustedmembers)`成員身分登入後，才可執行協調任務。
+僅當以管理員或具有的成員身份登錄時 ` [moderator permissions](in-context.md#identifyingtrustedmembers)`，即可執行協調工作。
 
 ## 發佈環境存取 {#publish-environment-access}
 
@@ -52,13 +56,13 @@ ht-degree: 3%
 
 在製作環境中，若要進入「協調」主控台
 
-* 從全局導航：**[!UICONTROL 導覽>社群>協調]**
+* 從全局導航： **[!UICONTROL 導覽>社群>協調]**
 
-只有以管理員身分登入，或以` [moderator permissions](in-context.md#identifyingtrustedmembers)`成員身分登入後，才能執行協調工作。 顯示的唯一社區內容是允許登錄的成員協調的社區內容。
+僅在以管理員身分登入，或以 ` [moderator permissions](in-context.md#identifyingtrustedmembers)`，即可執行協調工作。 顯示的唯一社區內容是允許登錄的成員協調的社區內容。
 
 >[!NOTE]
 >
->只有當選擇的SRP實作通用商店時，發佈環境中的UGC才會顯示於作者。 例如，預設情況下，儲存為JSRP，這不是製作和發佈的常見存放區。 請參閱[社群內容儲存](working-with-srp.md)。
+>只有當選擇的SRP實作通用商店時，發佈環境中的UGC才會顯示於作者。 例如，預設情況下，儲存為JSRP，這不是製作和發佈的常見存放區。 請參閱 [社群內容儲存](working-with-srp.md).
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
@@ -72,13 +76,13 @@ ht-degree: 3%
 
 ### 頂端導覽列 {#top-navigation-bar}
 
-所有主控台的頂端導覽列都為常數。 如需詳細資訊，請參閱[基本處理](../../help/sites-authoring/basic-handling.md)。
+所有主控台的頂端導覽列都為常數。 如需詳細資訊，請參閱 [基本處理](../../help/sites-authoring/basic-handling.md).
 
 ### 工具列 {#toolbar}
 
 工具列位於頂端導覽列下方，在左側提供下列切換開關：
 
-* [篩](moderation.md#filter-rail) 選欄會開啟邊欄，供您選擇要篩選內容的屬性。
+* [篩選邊欄](moderation.md#filter-rail) 開啟邊欄，供您選擇要篩選內容的屬性。
 
 工具列位於頂端導覽列下方，在左側提供下列切換開關：
 
@@ -99,13 +103,13 @@ ht-degree: 3%
 * 貼文的位置
 * 發佈時
 * 貼文的回覆數
-* [](moderate-ugc.md#sentiment) 與貼文相關聯的情緒
+* [情緒](moderate-ugc.md#sentiment) 與貼文相關聯
 * 如果已核准，則會顯示核取記號
 * 如果有附件，則顯示回形針
 
 >[!NOTE]
 >
->內容區域具有&#x200B;*無限捲動*，這意味著它允許您繼續滾動，直到達到內容的結尾。 即使在捲動時，工具列仍停留在內容區域上方的固定可見位置。
+>內容區域具有 *無限滾動*，這表示在您到達內容結尾之前，它可讓您繼續捲動。 即使在捲動時，工具列仍停留在內容區域上方的固定可見位置。
 
 ### 篩選邊欄 {#filter-rail}
 
@@ -113,11 +117,11 @@ ht-degree: 3%
 
 側面板圖示會開啟篩選邊欄。 顯示在內容區域左側的篩選欄會提供不同的篩選器，每個篩選器都對顯示在內容區域中的參考UGC有立竿見影的效果。
 
-每個類別中的篩選器是&#x200B;**OR**&#x200B;集合，不同類別中的篩選器是&#x200B;**AND**&#x200B;集合。
+每個類別中的篩選器包括 **或**&#x200B;整合在一起，而不同類別中的篩選器 **和**&#x200B;一起。
 
-例如，如果您同時檢查&#x200B;**問題**&#x200B;和&#x200B;**答案**，您會看到內容為&#x200B;**問題** *或* **答案**。
+例如，如果您同時檢查 **問題** 和 **回答**，您會看到 **問題** *或* an **回答**.
 
-但是，如果檢查&#x200B;**Question**&#x200B;和&#x200B;**Pending**，您將只看到&#x200B;**Question**&#x200B;且為&#x200B;**Pending**&#x200B;的內容。
+不過，如果您檢查 **問題** 和 **待定**，您只會看到 **問題** 和 **待定**.
 
 >[!NOTE]
 >
@@ -147,7 +151,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->當管理員存取大量協調控制台時，會顯示對UGC的所有參考，包括未透過[網站建立精靈](sites-console.md)建立的網站，例如Geometrixx範例。
+>當管理員存取大量協調控制台時，會顯示對UGC的所有參考，包括未以 [網站建立精靈](sites-console.md)，例如Geometrixx範例。
 >
 >當受信任的社群成員在發佈時存取大量協調主控台時，系統只會顯示針對該成員獲授權協調之社群網站所建立之UGC的參考，並可使用網站篩選器加以篩選。
 
@@ -177,8 +181,8 @@ ht-degree: 3%
 
 * 在製作例項上
 * 以管理員身分登入
-* 開啟[Web控制台](http://localhost:4502/system/console/configMgr)
-* 找到`AEM Communities Moderation Dashboard Filters`
+* 開啟 [Web主控台](http://localhost:4502/system/console/configMgr)
+* 找出 `AEM Communities Moderation Dashboard Filters`
 * 選取要在編輯模式中開啟的設定
 * 輸入要對其進行篩選的元件的ResourceType
    * 例如，要篩選包含的投票元件，請輸入：\
@@ -189,7 +193,7 @@ ht-degree: 3%
 * 選擇保存
 * 重新整理Communities — 協調主控台
 
-結果是`Content Type`篩選組下的`Voting`新的可選篩選器。
+結果是新的可選過濾器，用於 `Voting`在 `Content Type` 篩選群組。
 
 選取該篩選器時，控制面板的內容將顯示UGC，該UGC符合任何輸入的ResourceType。
 
@@ -207,7 +211,7 @@ ht-degree: 3%
 
 標幟會限制所顯示的參考UGC會被標幟或隱藏的貼文。
 
-標籤內容後，它會保持標籤狀態，直到您再次選擇&#x200B;**[!UICONTROL Flag]**&#x200B;按鈕以取消該內容的標籤為止。 請注意，沒有標幟層級，例如重要或後續動作。
+標籤內容後，會持續標籤該內容，直到您借由選取 **[!UICONTROL 標幟]** 按鈕。 請注意，沒有標幟層級，例如重要或後續動作。
 
 ![chlimage_1-476](assets/chlimage_1-476.png)
 
@@ -225,21 +229,21 @@ ht-degree: 3%
 
 #### 情緒 {#sentiment}
 
-[](moderate-ugc.md#sentiment) 情緒會以正面、負面或中性的情緒值，限制對貼文顯示的參考UGC。
+[情緒](moderate-ugc.md#sentiment) 以正面、負面或中性的情緒值，限制對貼文顯示的參考UGC。
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
 ## 協調動作 {#moderation-actions}
 
-[在內](moderate-ugc.md#moderation-actions) 容區域中進行的一或多個選取項目，或在檢視內容詳細資料時，可執行協調動作掃描。
+[協調動作](moderate-ugc.md#moderation-actions) 可在內容區域中或檢視內容詳細資料時，執行一或多個選取項目。
 
-若要大量協調貼文，在內容區域中按一下貼文上的「選取」(![selecticon](assets/selecticon.png))圖示，該圖示會以滑鼠（案頭）將游標暫留在貼文上，或按住貼文上的手指（行動裝置）。 這樣，您就會進入多選模式，現在只要按一下，即可選取要大量協調的後續貼文。 使用工具列上顯示的按鈕，對選取的貼文執行協調動作。 所有動作都會提示進行確認。
+若要大量協調貼文，請在內容區域中按一下「選取」( ![選擇](assets/selecticon.png))圖示，此圖示會顯示在透過滑鼠（案頭）暫留在貼文上，或按住手指（行動）。 這樣，您就會進入多選模式，現在只要按一下，即可選取要大量協調的後續貼文。 使用工具列上顯示的按鈕，對選取的貼文執行協調動作。 所有動作都會提示進行確認。
 
 若要協調內容區域中的單一貼文，請用滑鼠（案頭）將滑鼠移到貼文上，或按住貼文（行動）上的手指，使貼文上顯示按鈕。 對單一內容詳細資料執行作業時，只有刪除動作會提示進行確認。
 
 ### 協調多個貼文 {#moderating-multiple-posts}
 
-按一下貼文上的`Select`圖示，進入大量選取模式：
+按一下 `Select` 圖示（在貼文中）:
 
 ![select-icon](assets/select-icon.png)
 
@@ -266,7 +270,7 @@ ht-degree: 3%
 * [拒絕](#deny)
 * [刪除](#delete)
 * [關閉](#close)
-* 檢視[協調歷史記錄](#moderation-history)
+* 檢視 [協調歷史記錄](#moderation-history)
 * [檢視詳情](#viewdetails)
 
 仲裁動作圖示上方的卡片檢視上是貼文的文字，下方是指出
@@ -294,7 +298,7 @@ ht-degree: 3%
 
 ![chlimage_1-482](assets/chlimage_1-482.png)
 
-**拒絕**&#x200B;協調動作僅適用於已協調的內容，除非在多選模式中，否則不會出現在未協調的內容上。
+此 **拒絕** 協調動作僅適用於已協調的內容，除了在多選模式中，不會出現在未協調的內容上。
 
 未協調的內容一律會獲核准。
 
@@ -332,7 +336,7 @@ ht-degree: 3%
 
 使用單一貼文時，可以以詳細模式開啟UGC來檢視更多詳細資訊。
 
-若要這麼做，請將滑鼠指標暫留在貼文上以顯示`View Detail`圖示，並選取該圖示以顯示包含貼文詳細資料的面板。
+若要這麼做，請將滑鼠指標暫留在貼文上以顯示 `View Detail` 圖示，然後選取該圖示，以顯示包含貼文詳細資料的面板。
 
 若要返回顯示多個UGC貼文的內容區域，請在檢視詳細資料窗格右上角選取X。
 

@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 2a9be3b7-b325-4d74-a5bc-8d24db491920
 exl-id: 04adbbc9-9e4c-4c64-aab1-20b17bd75bb5
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1479'
 ht-degree: 0%
 
 ---
 
 # 將元件資料與Adobe Analytics屬性對應{#mapping-component-data-with-adobe-analytics-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 將元件新增至架構，以收集要傳送至Adobe Analytics的資料。 旨在收集分析資料的元件會將資料儲存在適當的 **CQ變數**. 將這類元件新增至架構時，架構會顯示CQ變數清單，以便您能將每個變數 **Analytics變數**.
 

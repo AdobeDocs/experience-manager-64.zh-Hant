@@ -1,28 +1,32 @@
 ---
 title: 中繼資料結構參考
-description: '了解描述資產中繼資料的標準慣例，包括Dublin Core、IPTC和其他中繼資料結構。 '
+description: 了解描述資產中繼資料的標準慣例，包括Dublin Core、IPTC和其他中繼資料結構。
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 883bebc6-8bbc-43b1-91e5-9e2bf2470b6e
-source-git-commit: 937c9425e276f67486fba1d4563799fe68d35cc7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 2%
+source-wordcount: '428'
+ht-degree: 3%
 
 ---
 
 # 中繼資料結構參考 {#metadata-schemata-reference}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 以下引用包括有關特定元資料結構（按字母順序）的資訊，以及屬性及其定義的清單。
 
 ## 都柏林核心 {#dublin-core}
 
-都柏林核心中繼資料提供一套標準化的慣例，用於描述資產，以便更容易找到。 在[!DNL Experience Manager]資產中，都柏林核心描述數字資產，包括視頻、聲音、影像和文檔。
+都柏林核心中繼資料提供一套標準化的慣例，用於描述資產，以便更容易找到。 在 [!DNL Experience Manager] Assets, the Dublin Core描述數字資產，包括視頻、聲音、影像和文檔。
 
 簡單的都柏林核心元資料元素集(DCMES)包含下表中列出的15個元資料元素。 每個都柏林核心元素都是選用元素，且可重複。 您可以像新增或刪除媒體類型特定中繼資料一樣，新增或刪除都柏林核心中繼資料資訊。
 
-除了DCMES之外，還有由Dublin Core Initiative建立的其他元資料元素。 如需詳細資訊，請參閱[都柏林核心計畫](https://dublincore.org/) 。
+除了DCMES之外，還有由Dublin Core Initiative建立的其他元資料元素。 請參閱 [都柏林核心計畫](https://dublincore.org/) 以取得更多資訊。
 
 | 屬性 | 說明 |
 |---|---|

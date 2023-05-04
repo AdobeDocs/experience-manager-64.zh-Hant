@@ -1,8 +1,8 @@
 ---
 title: 編輯頁面時的註解
-seo-title: 編輯頁面時的註解
+seo-title: Annotations when Editing a Page
 description: 許多與內容直接相關的元件允許您添加註釋
-seo-description: 許多與內容直接相關的元件允許您添加註釋
+seo-description: Many components directly related to content allow you to add an annotation
 uuid: 157be55c-8ab8-472e-be32-0dcc02bfa41d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: 65e534ec-7f73-4333-b225-7adf082f66d5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 0%
+source-wordcount: '670'
+ht-degree: 1%
 
 ---
 
 # 編輯頁面時的註解{#annotations-when-editing-a-page}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 將內容新增至網站的頁面通常要經過實際發佈前的討論。 為此，許多與內容直接相關的元件（例如，與版面相對）允許您添加註釋。
 
@@ -41,22 +45,22 @@ ht-degree: 0%
 
 ## 註解 {#annotations}
 
-特殊的[mode](/help/sites-authoring/author-environment-tools.md#page-modes)用於建立和查看注釋。
+特別 [模式](/help/sites-authoring/author-environment-tools.md#page-modes) 用於建立和查看注釋。
 
 >[!NOTE]
 >
->別忘了，[comments](/help/sites-authoring/basic-handling.md#timeline)也可用於在頁面上提供意見。
+>別忘了 [評論](/help/sites-authoring/basic-handling.md#timeline) 也可在頁面上提供意見反應。
 
 >[!NOTE]
 >
 >您可以為多種資源加上注釋：
 >
 >* [為資產加上註解](/help/assets/managing-assets-touch-ui.md#annotating)
-* [為視訊資產加上註解](/help/assets/managing-video-assets.md#annotating-video-assets)
+>* [為視訊資產加上註解](/help/assets/managing-video-assets.md#annotating-video-assets)
+>
 
 
-
-### 為元件{#annotating-a-component}加上註解
+### 註解元件 {#annotating-a-component}
 
 「注釋」模式可讓您在內容上建立、編輯、移動或刪除注釋：
 
@@ -67,12 +71,14 @@ ht-degree: 0%
    您現在可以檢視任何現有的註解。
 
    >[!NOTE]
-   要退出「注釋」模式，請點選/按一下頂部工具欄右側的「注釋」表徵圖（x符號）。
+   >
+   >要退出「注釋」模式，請點選/按一下頂部工具欄右側的「注釋」表徵圖（x符號）。
 
 1. 按一下/點選「新增附註」圖示（工具列左側的加號）以開始新增附註。
 
    >[!NOTE]
-   若要停止新增註解（並返回檢視），請點選/按一下頂端工具列左側的「取消」圖示（白色圓圈中的x符號）。
+   >
+   >若要停止新增註解（並返回檢視），請點選/按一下頂端工具列左側的「取消」圖示（白色圓圈中的x符號）。
 
 1. 按一下/點選所需元件（可以注釋的元件將用藍色邊框突出顯示）以添加註釋並開啟對話框：
 
@@ -113,9 +119,9 @@ ht-degree: 0%
 1. 要退出「注釋」模式，並返回以前使用的模式，請點選/按一下頂部工具欄右側的「注釋」表徵圖（x符號）。
 
 >[!NOTE]
-註解無法添加到已被其他用戶鎖定的頁面。
+>註解無法添加到已被其他用戶鎖定的頁面。
 
-### 注釋指示器{#annotation-indicator}
+### 注釋指示器 {#annotation-indicator}
 
 註解不會在「編輯」模式中顯示，但工具列右上角的徽章會顯示目前頁面有多少註解。 徽章會取代預設的「註解」圖示，但仍可作為快速連結，切換至「注釋」模式或從「注釋」模式切換：
 

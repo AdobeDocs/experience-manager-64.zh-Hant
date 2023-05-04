@@ -1,8 +1,8 @@
 ---
 title: 內容屬性和節點
-seo-title: 內容屬性和節點
-description: '請詳閱本頁面，了解內容屬性和節點。  '
-seo-description: '請詳閱本頁面，了解內容屬性和節點。  '
+seo-title: Content Properties and Nodes
+description: 請詳閱本頁面，了解內容屬性和節點。
+seo-description: Follow this page to learn about content properties and nodes.
 uuid: 2dad52c8-5b6c-4b90-8498-62217a9a27fc
 contentOwner: User
 content-type: reference
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 exl-id: 85a367fe-a124-42af-ae3e-fe4d10425ea1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '391'
 ht-degree: 20%
 
 ---
 
-# 內容屬性和節點{#content-properties-and-nodes}
+# 內容屬性和節點 {#content-properties-and-nodes}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
->Adobe建議針對需要單頁應用程式架構用戶端轉譯（例如React）的專案使用SPA編輯器。 [了解更多](/help/sites-developing/spa-overview.md).
+>Adobe建議針對需要單頁應用程式架構用戶端轉譯（例如React）的專案使用SPA編輯器。 [深入了解](/help/sites-developing/spa-overview.md).
 
 文章、橫幅和集合在AEM中會以cq:Pages來呈現。
 
@@ -29,7 +33,7 @@ ht-degree: 20%
 
 下表說明內容屬性和節點。
 
-## 通用整合屬性{#common-integration-properties}
+## 常見整合屬性 {#common-integration-properties}
 
 | **屬性名稱** | **類型** | **預設值或預期值** | **說明** |
 |---|---|---|---|
@@ -40,7 +44,7 @@ ht-degree: 20%
 | dps-lastUploaded | 日期 |  | 上次從AEM上傳至AEM Mobile的日期 |
 | dps-lastUpploadedBy | String:userid |  | 從AEM執行上次上傳請求至AEM Mobile的id使用者 |
 
-## 核心元資料屬性{#core-metadata-properties}
+## 核心中繼資料屬性 {#core-metadata-properties}
 
 | 屬性名稱 | 類型 | 預設值或預期值 |
 |--- |--- |--- |
@@ -50,7 +54,7 @@ ht-degree: 20%
 | dps-shortAbstract | 字串 |  |
 | dps-department | 字串 |  |
 | dps-category | 字串 |  |
-| dps-keywords | String[] |  |
+| dps-keywords | 字串[] |  |
 | dps-internalKeywords | 字串[] |  |
 | dps-imperience | 字串[] | 重要性來自{&quot;low&quot;、&quot;normal&quot;、&quot;high&quot;} |
 
@@ -60,7 +64,7 @@ ht-degree: 20%
 |---|---|---|
 | dps-author | 字串 |  |
 | dps-authorURL | 字串 |  |
-| dps-hideFromBrowsePage | 布林值 (Boolean) |  |
+| dps-hideFromBrowsePage | 布林值 |  |
 | dps-access | 字串 | ProtectedAccess來自{&quot;protected&quot;、&quot;metered&quot;、&quot;free&quot;} |
 | **Social** |  |  |
 | dps-socialShareURL | 字串 |  |
@@ -80,14 +84,14 @@ ht-degree: 20%
 |--- |--- |--- |
 | dps-productId | 字串 |  |
 | dps-readingPosition | 字串 | 從{&quot;reset&quot;,&quot;retain&quot;} |
-| dps-horizontalSwipe | 布林值 (Boolean) |  |
-| dps-allowDownload | 布林值 (Boolean) |  |
+| dps-horizontalSwipe | 布林值 |  |
+| dps-allowDownload | 布林值 |  |
 | dps-openDefault | 字串 | 從{&quot;browsePage&quot;,&quot;contentView&quot;} |
 | dps配置 | 字串 |  |
 
-## 內容節點{#content-nodes}
+## 內容節點 {#content-nodes}
 
-### 公共節點{#common-nodes}
+### 公用節點 {#common-nodes}
 
 | 節點名稱 | 類型 | 預設值或預期值 | 說明 |
 |--- |--- |--- |--- |

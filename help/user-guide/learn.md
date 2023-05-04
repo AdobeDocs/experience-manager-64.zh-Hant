@@ -6,14 +6,18 @@ seo-description: An description of the essential capabilities of AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: 5cb966c3-1e19-47c8-a691-067f6d4680c0
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 6%
+source-wordcount: '432'
+ht-degree: 9%
 
 ---
 
 # 了解AEM 6.4功能 {#learn-about-aem-64-capabilities}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## AEM Sites {#aem-sites}
 
@@ -40,11 +44,11 @@ AEM Forms將表單製作、管理和發佈與通信管理功能、檔案安全�
 
 ## AEM Screens {#aem-screens}
 
-Screens是Adobe Experience Manager的功能，可讓您發佈動態的互動式數位體驗和互動，其中包含不同類型的螢幕，並搭配完整的數位行銷平台。  [了解更多.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Screens是Adobe Experience Manager的功能，可讓您發佈動態的互動式數位體驗和互動，其中包含不同類型的螢幕，並搭配完整的數位行銷平台。  [深入了解.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-Communities是Adobe Experience Manager的一項功能，可協助您建立線上社群體驗，包括論壇、使用者群組、學習資源和其他對客戶、員工和您的品牌有價值的社交功能。 [了解更多.](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)
+Communities是Adobe Experience Manager的一項功能，可協助您建立線上社群體驗，包括論壇、使用者群組、學習資源和其他對客戶、員工和您的品牌有價值的社交功能。 [深入了解.](https://business.adobe.com/products/experience-manager/sites/aem-sites.html)
 
 ## AEM Livefyre {#aem-livefyre}
 

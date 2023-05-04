@@ -1,8 +1,8 @@
 ---
 title: 設定帳戶環境
-seo-title: 設定帳戶環境
+seo-title: Configuring your account environment
 description: AEM可讓您設定帳戶，以及製作環境的某些方面
-seo-description: AEM可讓您設定帳戶，以及製作環境的某些方面
+seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
 uuid: 01e76771-9ac8-4919-9e50-0a63826177d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,30 +10,34 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '517'
 ht-degree: 8%
 
 ---
 
 # 設定帳戶環境{#configuring-your-account-environment}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 AEM可讓您設定帳戶，以及製作環境的某些方面。
 
-使用[header](/help/sites-authoring/basic-handling.md#the-header)中的[User](/help/sites-authoring/user-properties.md#user-settings)選項以及相關的[My Preferences](#my-preferences)對話框，可以修改用戶選項。
+使用 [使用者](/help/sites-authoring/user-properties.md#user-settings) 選項 [標題](/help/sites-authoring/basic-handling.md#the-header) 和 [我的偏好設定](#my-preferences) 對話框中，可以修改用戶選項。
 
 ## 使用者設定 {#user-settings}
 
-**User**&#x200B;設定對話框允許您訪問：
+此 **使用者** 「設定」對話方塊可讓您存取：
 
 * 模擬為
 
-   * 透過[模擬為](/help/sites-administering/security.md#impersonating-another-user)功能，使用者可以代表其他使用者運作。
+   * 使用 [模擬為](/help/sites-administering/security.md#impersonating-another-user) 功能使用者可以代表其他使用者運作。
 
 * 設定檔
 
-   * 提供指向[用戶設定](/help/sites-administering/security.md)的便利連結)
+   * 提供您 [使用者設定](/help/sites-administering/security.md))
 
 * [我的喜好設定](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -43,7 +47,7 @@ AEM可讓您設定帳戶，以及製作環境的某些方面。
 
 ## 我的喜好設定 {#my-preferences}
 
-**My Preferences**&#x200B;對話框通過標題中的[User](/help/sites-authoring/user-properties.md#user-settings)選項訪問。
+此 **我的偏好設定** 對話方塊是透過 [使用者](/help/sites-authoring/user-properties.md#user-settings) 選項。
 
 每個使用者都可為自己設定特定屬性。
 
@@ -102,7 +106,7 @@ AEM可讓您設定帳戶，以及製作環境的某些方面。
 
 * **使用傳統製作體驗**
 
-   此選項會啟用[傳統UI](/help/sites-classic-ui-authoring/home.md)型頁面編寫。 預設會使用標準UI。
+   此選項啟用 [傳統UI](/help/sites-classic-ui-authoring/home.md)頁面編寫。 預設會使用標準UI。
 
 * **啟用資產首頁**
 

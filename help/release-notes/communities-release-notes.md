@@ -2,7 +2,7 @@
 title: AEM Communities發行說明
 seo-title: AEM Communities
 description: Adobe Experience Manager 6.4 Communities專屬發行說明。
-seo-description: Adobe Experience Manager 6.4 Communities專屬發行說明。
+seo-description: Release notes specific to Adobe Experience Manager 6.4 Communities.
 uuid: 2de9f511-2a61-4003-9b2c-d6728bc9d57a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,20 +10,24 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 exl-id: 3a341e72-01c5-4c63-8942-6320e5b08440
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '327'
-ht-degree: 4%
+source-wordcount: '353'
+ht-degree: 5%
 
 ---
 
-# AEM Communities發行說明{#aem-communities-release-notes}
+# AEM Communities發行說明 {#aem-communities-release-notes}
 
-本節提供自6.3版以來AEM Communities的改善項目資訊。 若要深入了解新功能，請參閱[AEM 6.4 Communities的新功能](/help/communities/whats-new-aem-communities.md)。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-若要取得最新版本，請參閱檔案的[ Deploying Communities](/help/communities/deploy-communities.md#latest-releases)區段。
+本節提供自6.3版以來AEM Communities的改善項目資訊。 若要進一步了解新功能，請參閱 [AEM 6.4社群的新功能](/help/communities/whats-new-aem-communities.md).
 
-## 主要改進{#main-improvements}
+若要取得最新版本，請參閱 [部署社群](/help/communities/deploy-communities.md#latest-releases) 一節。
+
+## 主要改善 {#main-improvements}
 
 社群網站:
 
@@ -60,17 +64,17 @@ ht-degree: 4%
 
 與AEM 6.4的基礎變更整體相容。
 
-注意：AEM 6.3也提供這些功能。請查看AEM Communities發行說明，了解[6.3](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html)。
+注意：AEM 6.3也提供這些功能。請參閱AEM Communities發行說明，了解 [6.3](https://helpx.adobe.com/tw/experience-manager/6-3/release-notes.html).
 
 ## 已知問題 {#known-issues}
 
-* **協調**  — 無法從大量協調UI中將父貼文以單一刪除操作的形式刪除(CQ-4236797)
+* **協調**  — 無法從大量協調UI中以單一刪除操作的形式刪除父貼文(CQ-4236797)
 * **主控台**  — 忘記使用者名稱或密碼連結會重新導向至登入頁面，而非對應的密碼擷取表單(CQ-4237682)
 
-## 選擇功能{#select-features}
+## 選擇功能 {#select-features}
 
-專家評分（*由Sensei*&#x200B;提供支援） — 用於啟用遊戲化，這是鼓勵和獎勵寶貴社群行為的有效方式。 它也可用於識別專家以供建議或行銷之用。
+專家評分(*由Sensei提供*) — 用來啟用遊戲化，這是鼓勵和獎勵寶貴社群行為的有效方式。 它也可用於識別專家以供建議或行銷之用。
 
 ## 示威 {#demonstrations}
 
-使用AEM Communities示範案例和新的We.Retail參考實作時，可使用GitHub.com上公開提供的[AEM示範電腦](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)來示範所有這些功能。
+所有這些功能都可透過 [AEM示範電腦](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) 使用AEM Communities示範案例時，以及新的We.Retail參考實作時，可在GitHub.com上公開取得。

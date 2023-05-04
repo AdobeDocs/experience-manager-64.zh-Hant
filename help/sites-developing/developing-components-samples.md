@@ -4,14 +4,18 @@ seo-title: Developing AEM Components - Code Samples
 description: 本節提供一些範例，說明如何為AEM建立自己的元件。
 seo-description: This section provides some examples on how to create your own components for AEM.
 exl-id: c205046f-9e60-4010-9ae3-be7d02d45248
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 3%
+source-wordcount: '253'
+ht-degree: 5%
 
 ---
 
 # 開發AEM元件 — 程式碼範例{#developing-aem-components-code-samples}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 本節提供一些範例，說明如何為AEM建立自己的元件。
 

@@ -1,29 +1,33 @@
 ---
 title: 表單集於AEM Forms
-seo-title: 表單集於AEM Forms
-description: 本文會介紹表單集，並說明如何透過將HTML5表單拼接來建立表單集。 本文還說明如何將xml資料預填到表單集，以及如何在流程管理中使用表單集。
-seo-description: 本文會介紹表單集，並說明如何透過將HTML5表單拼接來建立表單集。 本文還說明如何將xml資料預填到表單集，以及如何在流程管理中使用表單集。
+seo-title: Form set in AEM Forms
+description: 本文介紹表單集，並說明如何透過將表單HTML5來建立表單集。 本文還說明如何將xml資料預填到表單集，以及如何在流程管理中使用表單集。
+seo-description: This article introduces form set and explains how to create form sets by stitching together HTML5 forms. This article also explains how you can prefill xml data to a form set and how you can use form sets in process management.
 uuid: 20ff948a-db5c-45b9-84e7-cacdeae44ebe
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: d90f80e7-0c5d-4c56-93a2-c3888b1cbf30
-feature: 行動表單
+feature: Mobile Forms
 exl-id: 0d52400a-5a04-4e0b-8fc2-b8d1799f1c08
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2873'
+source-wordcount: '2861'
 ht-degree: 0%
 
 ---
 
-# AEM Forms中設定的表單{#form-set-in-aem-forms}
+# 表單集於AEM Forms {#form-set-in-aem-forms}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 客戶通常需要提交多份表單才能申請服務或福利。 它涉及尋找所有相關表格；分別填寫、提交和追蹤。 此外，他們必須在各個表單中多次填寫常見詳細資訊。 若整個程式涉及大量表單，則會變得繁瑣且容易出錯。 AEM Forms的表單集功能有助於簡化這類案例的使用者體驗。
 
-表單集是HTML5表單的集合，分組在一起，並以單一表單集的形式向使用者呈現。 當最終用戶開始填寫表單集時，他們將從一個表單無縫轉換到另一個表單。 最後，只需按一下即可提交所有表單。
+表單集是HTML5份表單的集合，這些表單分組在一起，並以單一表單集的形式向使用者呈現。 當最終用戶開始填寫表單集時，他們將從一個表單無縫轉換到另一個表單。 最後，只需按一下即可提交所有表單。
 
 AEM Forms為表單作者提供直覺式的使用者介面，以建立、設定和管理表單集。 身為作者，您可以依照您希望使用者遵循的特定順序來排序表單。 此外，您也可以對個別表單套用條件或資格運算式，以根據使用者輸入控制其可見度。 例如，您可以將配偶詳細資訊表設定為只有在婚姻狀態指定為「已婚」時才顯示。
 
@@ -31,13 +35,13 @@ AEM Forms為表單作者提供直覺式的使用者介面，以建立、設定�
 
 AEM Forms應用程式也支援表單集，讓您的現場員工能夠離線建立表單集、造訪客戶、輸入資料，並稍後與AEM Forms伺服器同步，以便將表單資料提交至業務流程。
 
-## 建立和管理表單集{#creating-and-managing-form-set}
+## 建立和管理表單集 {#creating-and-managing-form-set}
 
 您可以將使用設計工具建立的多個XDP或表單範本關聯至表單集。 然後，可以使用表單集根據用戶在初始表單中輸入的值及其配置檔案有選擇地呈現XDP。
 
-使用[AEM Forms使用者介面](/help/forms/using/introduction-managing-forms.md)管理所有表單、表單集和相關資產。
+使用 [AEM Forms使用者介面](/help/forms/using/introduction-managing-forms.md) 管理所有表單、表單集和相關資產。
 
-### 建立表單集{#create-a-form-set}
+### 建立表單集 {#create-a-form-set}
 
 要建立表單集，請執行以下操作：
 
@@ -66,14 +70,14 @@ AEM Forms應用程式也支援表單集，讓您的現場員工能夠離線建�
 
    * 表單順序：拖放表單以重新排序。 表單順序會定義在AEM Forms應用程式中向使用者顯示表單的順序，以及獨立轉譯。
    * 表單識別碼：為要在適用性運算式中使用的表單指定唯一的標識。
-   * 資料根：對於表單集中的每個表單，作者可以設定XPATH，將特定表單的資料放在已提交XML中。 依預設，值為/。 如果表單集中的所有表單都是架構綁定，並且共用相同的XML架構，則可以更改此值。 建議表單中的每個欄位在XDP中指定適當的資料系結。 如果兩個不同表單中的兩個欄位共用共同的資料系結，則第二個表單中的欄位會顯示第一個表單的預先填入值。 請勿將具有相同內部內容的兩個子表單綁定到相同的XML節點。 有關表單集的XML結構的詳細資訊，請參閱[為表單集預填XML](/help/forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p)。
+   * 資料根：對於表單集中的每個表單，作者可以設定XPATH，將特定表單的資料放在已提交XML中。 依預設，值為/。 如果表單集中的所有表單都是架構綁定，並且共用相同的XML架構，則可以更改此值。 建議表單中的每個欄位在XDP中指定適當的資料系結。 如果兩個不同表單中的兩個欄位共用共同的資料系結，則第二個表單中的欄位會顯示第一個表單的預先填入值。 請勿將具有相同內部內容的兩個子表單綁定到相同的XML節點。 有關表單集的XML結構的詳細資訊，請參見 [為表單集預填XML](/help/forms/using/formset-in-aem-forms.md#p-prefill-xml-for-form-set-p).
    * 適用性運算式：指定會評估布林值的JavaScript運算式，並指出表單集中的表單是否符合填寫條件。 若為false，系統不會要求使用者，甚至會顯示要填入的表單。 運算式通常以此表單之前擷取之欄位的值為基礎。 運算式也包含對表單集API fs.valueOf的呼叫，以擷取使用者在表單集欄位中填入的值：
 
-   *fs.valueOf(&lt;form Identifier=&quot;&quot;>,  &lt;fieldsom expression=&quot;&quot;>)>  &lt;value>*
+   *fs.valueOf(&lt;form identifier=&quot;&quot;>, &lt;fieldsom expression=&quot;&quot;>)> &lt;value>*
 
    例如，如果表單集中有兩個表單：業務費用和差旅費用，您可以在「適用性表達式」欄位中為這兩種表單添加JavaScript代碼段，以檢查用戶在表單中的費用類型輸入。 如果用戶選擇「業務費用」，則「業務費用」表單將呈現給最終用戶。 或者，如果用戶選擇差旅費，則會向最終用戶呈現不同的表單。 如需詳細資訊，請參閱適用性運算式。
 
-   此外，作者也可以選擇使用每列右角出現的「刪除」圖示從表單集中移除表單，或使用工具列中的「**+**」圖示新增另一組表單。 此「**+**」表徵圖將用戶引導回嚮導中用於「選擇表單」的上一步。 現有選擇將保持不變，並且必須使用該頁上的「添加到表單集」表徵圖將進行的任何其他選擇添加到表單集中。
+   此外，作者也可以選擇使用每列右角出現的「刪除」圖示，從表單集中移除表單，或使用「**+**「 」表徵圖。 此「**+**「 」表徵圖將用戶引導回嚮導中用於「選擇表單」的上一步。 現有選擇將保持不變，並且必須使用該頁上的「添加到表單集」表徵圖將進行的任何其他選擇添加到表單集中。
 
    ![表單集：配置表單](assets/createformset2.png)
 
@@ -81,7 +85,7 @@ AEM Forms應用程式也支援表單集，讓您的現場員工能夠離線建�
    >
    >表單集中使用的所有表單均由AEM Forms使用者介面管理。
 
-### 管理表單集{#managing-a-form-set}
+### 管理表單集 {#managing-a-form-set}
 
 建立表單集後，您可以對該表單集執行下列動作：
 
@@ -92,17 +96,17 @@ AEM Forms應用程式也支援表單集，讓您的現場員工能夠離線建�
 * 開始/管理審閱：建立表單集後，按一下「開始審閱」即可設定其審閱。 表單集審核開始後，將向用戶顯示「管理審核」選項。 在「管理審閱」螢幕上，您可以更新/結束審閱。 對於您新增的審核，您可以檢查審核並添加註釋（如有必要）。
 * 刪除：刪除完整的表單集。 已刪除表單集中的表單會保留在存放庫中。
 * 發佈/取消發佈：這會發佈/取消發佈表單集，以及其包含的所有表單和這些表單的相關資產。
-* 預覽：預覽提供兩個選項：以HTML格式預覽（無資料），以及以範例資料自訂預覽。
+* 預覽：預覽提供兩個選項：預覽為HTML（無資料），並使用範例資料自訂預覽。
 * 檢視/編輯屬性：您可以檢視/編輯所選表單集的中繼資料屬性。
 
 ![createformset3](assets/createformset3.png)
 
-### 編輯表單集{#edit-a-form-set}
+### 編輯表單集 {#edit-a-form-set}
 
 要編輯表單集，請執行以下操作：
 
 1. 選取「Forms > Forms和檔案」。
-1. 找出您要編輯的表單集。 將滑鼠指標暫留在滑鼠指標上，然後選取「編輯」(![editicon](assets/editicon.png))。
+1. 找出您要編輯的表單集。 將滑鼠指標暫留在滑鼠指標上，然後選取「編輯」( ![編輯](assets/editicon.png))。
 1. 在「配置表單」頁中，可以編輯以下內容：
 
    * 表單順序
@@ -112,13 +116,13 @@ AEM Forms應用程式也支援表單集，讓您的現場員工能夠離線建�
 
    您也可以按一下相關的「刪除」圖示，從表單集中刪除表單。
 
-## 流程管理{#form-set-in-process-management}中設定的表單
+## 流程管理中的表單集 {#form-set-in-process-management}
 
 使用AEM Forms管理使用者介面建立表單集後，您就可以使用Workbench在起始點或指派任務活動中使用表單集。
 
-### 使用任務或起始點{#using-form-set-in-task-or-start-point}中的表單集
+### 在任務或起始點中使用表單集 {#using-form-set-in-task-or-start-point}
 
-1. 設計流程時，在「指定任務/起始點」的「演示和資料」部分下，選擇&#x200B;**使用CRX資產**。 CRX資產瀏覽器隨即顯示。
+1. 設計流程時，在「分配任務/起始點」的「演示和資料」部分下，選擇 **使用CRX資產**. CRX資產瀏覽器隨即顯示。
 
    ![設計流程：使用CRX資產](assets/formsetinprocessmgmt1.png)
 
@@ -128,7 +132,7 @@ AEM Forms應用程式也支援表單集，讓您的現場員工能夠離線建�
 
 1. 選擇表單集並按一下「確定」。
 
-## 適用性運算式{#eligibility-expressions}
+## 適用性運算式 {#eligibility-expressions}
 
 表單集中的適用性運算式可用來定義並動態控制顯示給使用者的表單。 例如，只有在使用者屬於特定年齡群組時，才顯示特定表單。 使用Forms Manager指定和編輯適用性運算式。
 
@@ -160,9 +164,9 @@ var formUid = "form1";
  var fieldSOM = “xfa.form.form1.subform1.field1"; fs.valueOf(formUid, fieldSOM);
 ```
 
-## 預填表單集{#prefill-xml-for-form-set}的XML
+## 為表單集預填XML {#prefill-xml-for-form-set}
 
-表單集是多個HTML5表單的集合，這些表單具有共同或不同的結構。 表單集支援使用XML檔案預填表單欄位。 您可以將XML檔案與表單集關聯，這樣，當您在表單集中開啟表單時，表單中的某些欄位就會被預先計算。
+表單集是多個HTML5個表單的集合，這些表單具有共同或不同的結構。 表單集支援使用XML檔案預填表單欄位。 您可以將XML檔案與表單集關聯，這樣，當您在表單集中開啟表單時，表單中的某些欄位就會被預先計算。
 
 預填XML檔案是使用表單集URL的dataRef參數指定的。 dataRef參數指定與表單集合併的資料XML檔案的絕對路徑。
 
@@ -183,7 +187,7 @@ form3
 欄位\
 form3field
 
-每個表單都有一個名為&quot;field&quot;的通用命名欄位和一個名為&quot;form&lt;i>field&quot;的唯一命名欄位。
+每個表單都有一個通用的命名欄位（名為「field」）和一個唯一命名的欄位(名為「formfield」)。
 
 您可以使用具有以下結構的XML預填此表單集：
 
@@ -248,7 +252,7 @@ form3field
 >
 >如果有兩個表單具有重疊的資料根，或者一個表單的元素層次結構與另一個表單的資料根層次結構重疊，則在預填xml中，會合併重疊元素的值。 提交XML的結構與預填XML類似，但提交XML的包裝標籤較多，結尾附加了一些表單集上下文資料標籤。
 
-### 預填XML元素說明{#prefill-xml-elements-description}
+### 預填XML元素說明 {#prefill-xml-elements-description}
 
 建立預填XML檔案的語法規則：
 
@@ -280,7 +284,7 @@ form3field
 
 `formset`
 
-基數：[1]
+基數： [1]
 
 submitXML:P
 
@@ -302,9 +306,9 @@ prefillXML:O
 
 `children: xfa:datasets`
 
-此標籤表示HTML5表單XML的開頭。 如果預填XML中存在或沒有預填XML，則會在提交XML中添加該XML。 可從預填XML中移除此標籤。
+此標籤表示HTML5表單XML的開始。 如果預填XML中存在或沒有預填XML，則會在提交XML中添加該XML。 可從預填XML中移除此標籤。
 
-### XFA：資料集{#xfa-datasets}
+### XFA：資料集 {#xfa-datasets}
 
 `parent elements: xdp:xdp`
 
@@ -316,7 +320,7 @@ prefillXML:O
 
 `children: xfa:data`
 
-### XFA:DATA {#xfa-data}
+### XFA：資料 {#xfa-data}
 
 `parent elements: xfa:datasets`
 
@@ -346,15 +350,15 @@ prefillXML:O
 
 根元素標籤的名稱
 
-如果預填XML中有根元素，該元素的名稱也會取用於提交XML。 如果沒有預填xml，則rootElement的名稱是表單集中第一個表單的根子表單的名稱，該表單集的dataRoot屬性設定為「/」。 如果沒有這樣的形式，則rootElement名稱為&#x200B;**fs_dummy_root**，這是保留的關鍵字。
+如果預填XML中有根元素，該元素的名稱也會取用於提交XML。 如果沒有預填xml，則rootElement的名稱是表單集中第一個表單的根子表單的名稱，該表單集的dataRoot屬性設定為「/」。 如果沒有此類形式，則rootElement名稱為 **fs_dummy_root**，即保留關鍵字。
 
-## AEM Forms應用程式中設定的表單{#formset-in-workspace-app}
+## AEM Forms應用程式中設定的表單 {#formset-in-workspace-app}
 
 AEM Forms應用程式可讓現場工作人員將其行動裝置與AEM Forms伺服器同步，並處理其工作。 即使裝置離線，應用程式仍會透過將資料儲存在裝置本機而運作。 使用注釋功能（如照片），現場工作人員可以提供準確的資訊以整合到業務流程中。
 
-如需AEM Forms應用程式的詳細資訊，請參閱[AEM Forms應用程式](/help/forms/using/aem-forms-app.md)。
+如需AEM Forms應用程式的詳細資訊，請參閱 [AEM Forms應用程式](/help/forms/using/aem-forms-app.md).
 
-## 已知限制 — 表單集{#known-limitations-patterns-not-fully-supported-in-form-set}中未完全支援模式
+## 已知限制 — 表單集中未完全支援模式 {#known-limitations-patterns-not-fully-supported-in-form-set}
 
 表單集未完全支援以下資料模式：
 

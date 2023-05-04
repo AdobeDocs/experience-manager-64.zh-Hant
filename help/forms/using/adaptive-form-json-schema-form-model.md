@@ -1,22 +1,26 @@
 ---
 title: 使用JSON結構建立最適化表單
-seo-title: 使用JSON結構建立最適化表單
-description: '適用性表單可以使用JSON結構描述作為表單模型，讓您運用現有的JSON結構描述來建立適用性表單。 '
-seo-description: '適用性表單可以使用JSON結構描述作為表單模型，讓您運用現有的JSON結構描述來建立適用性表單。 '
+seo-title: Creating adaptive forms using JSON Schema
+description: 適用性表單可以使用JSON結構描述作為表單模型，讓您運用現有的JSON結構描述來建立適用性表單。
+seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
 uuid: e73b4b4c-6ad7-4400-b776-5892549970c3
 topic-tags: develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
-feature: 適用性表單
+feature: Adaptive Forms
 exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1235'
-ht-degree: 2%
+source-wordcount: '1243'
+ht-degree: 3%
 
 ---
 
-# 使用JSON結構{#creating-adaptive-forms-using-json-schema}建立最適化表單
+# 使用JSON結構建立最適化表單 {#creating-adaptive-forms-using-json-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 必備條件 {#prerequisites}
 
@@ -25,9 +29,9 @@ ht-degree: 2%
 * [建立最適化表單](/help/forms/using/creating-adaptive-form.md)
 * [JSON結構](https://json-schema.org/)
 
-## 使用JSON結構作為表單模型{#using-a-json-schema-as-form-model}
+## 使用JSON結構描述作為表單模型  {#using-a-json-schema-as-form-model}
 
-AEM Forms支援使用現有的JSON結構描述作為表單模型來建立最適化表單。 此JSON結構表示組織中後端系統產生或使用資料的結構。 您使用的JSON結構應符合[v4規範](https://json-schema.org/draft-04/schema)。
+AEM Forms支援使用現有的JSON結構描述作為表單模型來建立最適化表單。 此JSON結構表示組織中後端系統產生或使用資料的結構。 您使用的JSON結構應符合 [v4規格](https://json-schema.org/draft-04/schema).
 
 使用JSON結構描述的主要功能為：
 
@@ -66,29 +70,29 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
    <td><br /> <br /> 文字欄位<br /> <br /> <br /> </td> 
   </tr> 
   <tr> 
-   <td>number屬性<br /> </td> 
-   <td>子類型設定為float<br />的數值欄位 </td> 
+   <td>數字屬性<br /> </td> 
+   <td>子類型設定為float的數值欄位<br /> </td> 
   </tr> 
   <tr> 
    <td>整數屬性<br /> </td> 
-   <td>子類型設為整數<br />的數值欄位 </td> 
+   <td>子類型設為整數的數值欄位<br /> </td> 
   </tr> 
   <tr> 
-   <td>布爾屬性<br /> </td> 
+   <td>布林屬性<br /> </td> 
    <td>切換<br /> </td> 
   </tr> 
   <tr> 
-   <td>對象屬性<br /> </td> 
+   <td>物件屬性<br /> </td> 
    <td>面板<br /> </td> 
   </tr> 
   <tr> 
    <td>陣列屬性</td> 
-   <td>最小值和最大值分別等於minItems和maxItems的可重複面板。 僅支援同質陣列。 因此，項約束必須是對象，而不是陣列。<br /> </td> 
+   <td>最小值和最大值分別等於minItems和maxItems的可重複面板。 僅支援同質陣列。 因此，項約束必須是對象而不是陣列。<br /> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### 公用架構屬性{#common-schema-properties}
+### 公用架構屬性 {#common-schema-properties}
 
 適用性表單使用JSON結構描述中的可用資訊來對應每個產生的欄位。 特別是：
 
@@ -104,7 +108,7 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
 * 模式屬性在適用性表單中設定為驗證模式（規則運算式）。
 * JSON結構描述檔案的副檔名必須保留為.schema.json。 例如， &lt;filename>.schema.json。
 
-## JSON結構描述範例{#sample-json-schema}
+## 範例JSON結構描述 {#sample-json-schema}
 
 以下是JSON結構描述的範例。
 
@@ -286,7 +290,7 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
 }
 ```
 
-### 可重複使用的架構定義{#reusable-schema-definitions}
+### 可重複使用的架構定義 {#reusable-schema-definitions}
 
 定義索引鍵可用來識別可重複使用的結構描述。 可重複使用的架構定義用於建立片段。 這類似於在XSD中識別複雜類型。 以下提供定義的範例JSON結構描述：
 
@@ -317,9 +321,9 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
 
 上例定義了客戶記錄，其中每個客戶都有發運和計費地址。 地址的結構相同（地址具有街道地址、城市地址和州地址），因此最好不要複製地址。 此外，欄位的新增和刪除也方便您日後進行任何變更。
 
-## JSON結構定義{#pre-configuring-fields-in-json-schema-definition}中的預先配置欄位
+## JSON結構定義中的預先設定欄位 {#pre-configuring-fields-in-json-schema-definition}
 
-您可以使用&#x200B;**aem:afProperties**&#x200B;屬性來預先設定JSON結構描述欄位，以對應至自訂最適化表單元件。 以下列出範例：
+您可以使用 **aem:afProperties** 屬性來預先設定JSON結構描述欄位，以對應至自訂最適化表單元件。 以下列出範例：
 
 ```
 {
@@ -339,7 +343,7 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
 }
 ```
 
-## 限制最適化表單元件{#limit-acceptable-values-for-an-adaptive-form-component}的可接受值
+## 限制最適化表單元件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
 您可以將下列限制新增至JSON結構描述元素，以限制最適化表單元件可接受的值：
 
@@ -349,7 +353,7 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
    <td><p><strong> 結構屬性</strong></p> </td> 
    <td><p><strong>資料類型</strong></p> </td> 
    <td><p><strong>說明</strong></p> </td> 
-   <td><p><strong>元件</strong></p> </td> 
+   <td><p><strong>Component</strong></p> </td> 
   </tr> 
   <tr> 
    <td><p><code>maximum</code></p> </td> 
@@ -375,7 +379,7 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
   </tr> 
   <tr> 
    <td><p><code>exclusiveMaximum</code></p> </td> 
-   <td><p>布林值 (Boolean)</p> </td> 
+   <td><p>布林值</p> </td> 
    <td><p>如果為true，則表單元件中指定的數值或日期必須小於為maximum屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須小於或等於為最大屬性指定的數值或日期。</p> </td> 
    <td> 
     <ul> 
@@ -386,7 +390,7 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
   </tr> 
   <tr> 
    <td><p><code>exclusiveMinimum</code></p> </td> 
-   <td><p>布林值 (Boolean)</p> </td> 
+   <td><p>布林值</p> </td> 
    <td><p>如果為true，則表單元件中指定的數值或日期必須大於為最小屬性指定的數值或日期。</p> <p>如果為false，則表單元件中指定的數值或日期必須大於或等於為最小屬性指定的數值或日期。</p> </td> 
    <td> 
     <ul> 
@@ -437,7 +441,7 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
  </tbody> 
 </table>
 
-## 不支援的構造{#non-supported-constructs}
+## 不支援的構造  {#non-supported-constructs}
 
 適用性表單不支援下列JSON結構：
 
@@ -452,7 +456,7 @@ JSON結構包含簡單且複雜的元素類型。 元素具有將規則新增至
 
 在可重複的子表單中，您必須使用完整的子表單。 如果您只想要選擇性欄位，請使用整個結構並刪除不需要的結構。
 
-**我在「內容尋找器」中有一個長而複雜的結構。如何找到特定元素？**
+**我在「內容尋找器」中有一個長而複雜的結構。 如何尋找特定元素？**
 
 您有兩個選項：
 

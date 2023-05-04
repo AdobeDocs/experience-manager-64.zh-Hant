@@ -9,14 +9,18 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1431'
 ht-degree: 1%
 
 ---
 
 # 疑難排解Dynamic Media - Scene7模式 {#troubleshooting-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 以下檔案說明Dynamic Media執行的疑難排解 **dynamicmedia_scene7** 運行模式。
 

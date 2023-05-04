@@ -9,14 +9,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 8d7282dd-1e21-4862-af04-0daaea431e2c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1348'
 ht-degree: 2%
 
 ---
 
 # 樣式系統{#style-system}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 樣式系統允許模板作者在元件的內容策略中定義樣式類，以便內容作者能夠在編輯頁面上的元件時選擇它們。 這些樣式可作為元件的替代視覺變化，讓元件更具彈性。
 
@@ -156,6 +160,7 @@ ht-degree: 2%
 >1. HTL優先於所有項目： `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然後，在多個活動樣式中，會採用元件策略中配置的樣式清單中的第一個樣式。
 >1. 最後，元件 `cq:htmlTag`/ `cq:tagName` 會視為後援值。
+
 >
 
 

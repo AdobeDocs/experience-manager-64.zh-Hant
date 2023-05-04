@@ -10,14 +10,18 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: d561bb0a-352f-4be2-95ed-32dd1e2b4019
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3741'
+source-wordcount: '3777'
 ht-degree: 1%
 
 ---
 
 # 檢查清單 — 進一步參考{#the-checklist-further-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 本頁提供進一步詳細資訊，以詳細闡述及/或增強 [管理專案 — 最佳實務檢查清單](/help/managing/best-practices.md).
 
@@ -34,7 +38,7 @@ ht-degree: 1%
 請考量您將使用的AEM功能，以及對您設計的影響；例如：
 
 * [商務](/help/sites-administering/ecommerce.md)
-* [畫面](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [標記](/help/sites-administering/tags.md)
 * [多網站管理與翻譯](/help/sites-administering/msm-and-translation.md)
@@ -44,7 +48,7 @@ ht-degree: 1%
 
 此外，請檢查 [發行說明](/help/release-notes/release-notes.md)，以查看何時新增任何新功能。
 
-### Integrations {#integrations}
+### 整合 {#integrations}
 
 AEM可與其他Adobe產品及/或協力廠商服務整合。 這些功能可增加您可支配的功能。
 
@@ -64,7 +68,7 @@ AEM可與其他Adobe產品及/或協力廠商服務整合。 這些功能可增�
 
 ## 基本基本准則 {#basic-ground-rules}
 
-與任何項目一樣，盡快建立基本規則至關重要。 這些包括：
+與任何項目一樣，盡快建立基本規則至關重要。 這些類別包括：
 
 >[!NOTE]
 >
@@ -175,7 +179,7 @@ AEM可與其他Adobe產品及/或協力廠商服務整合。 這些功能可增�
 * 如果設定為過低波動，則不能突出顯示
 * 以確保可重複及一致地測量
 * 以平衡所測量的不同因素
-* 某些量度會與測試環境相關，但有些量度應反映實際情況，因為它們必須可測量且可重複，在您的生產網站上
+* 某些量度會與測試環境相關，但有些量度應反映實際情況，因為它們必須可測量，且可重複，在您的生產網站上
 * 根據量度對網站的重要性排列量度的優先順序
 * 將量度限制為可實際監控的集合
 
@@ -568,7 +572,7 @@ AEM可與其他Adobe產品及/或協力廠商服務整合。 這些功能可增�
  </tbody>
 </table>
 
-## 進一步閱讀 {#further-reading}
+## 延伸閱讀 {#further-reading}
 
 此外，以下幾節特別感興趣：
 
@@ -576,12 +580,12 @@ AEM可與其他Adobe產品及/或協力廠商服務整合。 這些功能可增�
 * [技術需求](/help/sites-deploying/technical-requirements.md)
 * [監視和維護您的執行個體](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### 最佳作法 {#best-practices}
+### 最佳做法 {#best-practices}
 
 Adobe針對所有階段和對象提供進一步的最佳實務：
 
 * [部署](/help/sites-deploying/best-practices.md)
-* [製作](/help/sites-authoring/best-practices.md)
+* [編寫](/help/sites-authoring/best-practices.md)
 * [管理](/help/sites-administering/administer-best-practices.md)
 * [開發](/help/sites-developing/best-practices.md)
 * [專案管理](/help/managing/best-practices.md)

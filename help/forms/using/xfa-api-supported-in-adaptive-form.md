@@ -1,22 +1,26 @@
 ---
 title: XDP型最適化表單的XFA支援
-seo-title: XDP型最適化表單的XFA支援
+seo-title: XFA support in XDP-based adaptive forms
 description: 列出適用性表單中支援的XFA事件、屬性、指令碼和驗證。
-seo-description: 列出適用性表單中支援的XFA事件、屬性、指令碼和驗證。
+seo-description: Lists supported XFA events, properties, scripts, and validation in adaptive forms.
 uuid: 2f976de3-2cdf-4bbb-acd1-048a498930f0
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
-feature: 適用性表單
+feature: Adaptive Forms
 exl-id: 86596819-8108-409e-af14-4634e8a1959d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '719'
 ht-degree: 5%
 
 ---
 
-# XDP型適用性表單{#xfa-support-in-xdp-based-adaptive-forms}中的XFA支援
+# XDP型最適化表單的XFA支援 {#xfa-support-in-xdp-based-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 簡介 {#introduction}
 
@@ -30,7 +34,7 @@ ht-degree: 5%
 
 本文列出適用性表單中採用的支援XFA事件、屬性和驗證，並說明如何在適用性表單中覆寫它們。
 
-## 適用性表單{#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}中支援的XFA元素及其對應
+## 支援的XFA元素及其在最適化表單中的對應 {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### 欄位 {#fields}
 
@@ -140,39 +144,39 @@ ht-degree: 5%
    <td><p>以最適化表單對應至簡短說明屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>標題<em>（所有欄位類型）</em></p> </td> 
+   <td><p>字幕<em> （所有欄位類型）</em></p> </td> 
    <td><p>以最適化表單對應至Title屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>displayFormat<em>（所有欄位類型）</em></p> </td> 
+   <td><p>displayFormat<em> （所有欄位類型）</em></p> </td> 
    <td><p>以最適化表單對應至「顯示模式」。</p> </td> 
   </tr>
   <tr>
-   <td><p>rawValue<em>（所有欄位類型）</em></p> </td> 
+   <td><p>rawValue<em> （所有欄位類型）</em></p> </td> 
    <td><p>已對應至適用性表單中的值屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>項目<em>（清單框，複選框）</em></p> </td> 
+   <td><p>項目<em> （清單框、複選框）</em></p> </td> 
    <td><p>以最適化表單對應至options屬性。 您可以使用Options運算式來覆寫它。</p> </td> 
   </tr>
   <tr>
-   <td><p>maxChar<em>（文字欄位）</em></p> </td> 
+   <td><p>maxChar<em> （文字欄位）</em></p> </td> 
    <td><p>以最適化表單對應至允許的字元數上限屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>多行<em>（文本欄位）</em></p> </td> 
+   <td><p>多線<em> （文字欄位）</em></p> </td> 
    <td><p>以最適化表單對應至「允許多行」屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>fracDigit<em>（數值欄位，小數欄位）</em></p> </td> 
+   <td><p>fracDigit<em> （數值欄位、小數欄位）</em></p> </td> 
    <td><p>以最適化形式映射到Frac數字屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>leadDigit<em>（數值欄位，小數欄位）</em></p> </td> 
+   <td><p>leadDigit<em> （數值欄位、小數欄位）</em></p> </td> 
    <td><p>以最適化表單對應至Lead digits屬性。</p> </td> 
   </tr>
   <tr>
-   <td><p>multiSelect<em>（清單框）</em></p> </td> 
+   <td><p>multiSelect<em> （清單框）</em></p> </td> 
    <td><p>以最適化表單對應至允許多個選取屬性。</p> </td> 
   </tr>
  </tbody>
@@ -202,7 +206,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>validationState </p> </td> 
-   <td><p>此指令碼在運行時執行，無法以最適化形式覆蓋。<br /> </p> </td> 
+   <td><p>此指令碼會在執行階段執行，且無法以最適化表單覆寫。<br /> </p> </td> 
   </tr>
   <tr>
    <td><p>退出 </p> </td> 
@@ -210,7 +214,7 @@ ht-degree: 5%
   </tr>
   <tr>
    <td><p>按一下（按鈕欄位）</p> </td> 
-   <td><p>已對應至按鈕的「點按」運算式。</p> </td> 
+   <td><p>對應至按鈕的「點按」運算式。</p> </td> 
   </tr>
   <tr>
    <td><p>支援伺服器端指令碼</p> </td> 

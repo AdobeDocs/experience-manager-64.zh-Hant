@@ -10,14 +10,18 @@ discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Acrobat Sign
 role: Admin
 exl-id: c2061de7-8627-4595-b96c-aa2d6abffddd
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 0%
+source-wordcount: '399'
+ht-degree: 1%
 
 ---
 
 # 與Acrobat Sign整合 |處理用戶資料 {#integration-with-adobe-sign-handling-user-data}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM Forms與Acrobat Sign整合，以啟用最適化表單中的電子簽名工作流程，以處理法律、銷售、工資單、人力資源管理工作流程的表單或協定。 它允許單一和多用戶簽名、循序和同時的簽名工作流、以匿名或登錄用戶身份簽名表單，以及多種驗證用戶的方法。
 

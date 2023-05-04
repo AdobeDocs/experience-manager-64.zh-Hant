@@ -1,8 +1,8 @@
 ---
 title: 使用Maven for Communities
-seo-title: 使用Maven for Communities
+seo-title: Using Maven for Communities
 description: AEM Communities API jar和AEM Uber API jar
-seo-description: AEM Communities API jar和AEM Uber API jar
+seo-description: AEM Communities API jar and AEM Uber API jar
 uuid: ea37a89a-db6c-4018-8ab9-f5717e6c0421
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,20 +10,24 @@ topic-tags: developing
 content-type: reference
 discoiquuid: a726c904-aadd-4678-be84-9e05808ab8be
 exl-id: d86411b9-6ed1-4091-bf5c-d46b4e518da4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 0%
+source-wordcount: '150'
+ht-degree: 4%
 
 ---
 
-# 使用Maven作為社區{#using-maven-for-communities}
+# 使用Maven for Communities {#using-maven-for-communities}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 AEM Communities檔案的本節另外包括：
 
-* [使用Apache Maven建立AEM專案](../../help/sites-developing/ht-projects-maven.md)。
+* [使用Apache Maven建立AEM專案](../../help/sites-developing/ht-projects-maven.md).
 
 只有一種「uber」工件可以取代單個工件：
 
@@ -35,9 +39,9 @@ AEM Communities檔案的本節另外包括：
 >
 >建議您與最新的Communities版本保持最新。
 >
->請參閱[最新版本](deploy-communities.md#latest-releases)區段，識別最新版本。
+>請參閱 [最新發行](deploy-communities.md#latest-releases) 區段來識別最新版本。
 
-## Maven相依性範例{#maven-dependency-example}
+## Maven相依性範例 {#maven-dependency-example}
 
 ```xml
 <dependency>
@@ -50,10 +54,14 @@ AEM Communities檔案的本節另外包括：
 
 >[!NOTE]
 >
->請參閱[AEM Uber jar存放庫](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)以識別最新的Uber jar工件。
+>請參閱 [AEM Uber jar存放庫](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) 識別最新的Uber jar工具。
 
 <!--
 # Using Maven for Communities {#using-maven-for-communities}
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 
 ## Overview {#overview}
 

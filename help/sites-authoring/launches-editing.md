@@ -1,5 +1,5 @@
 ---
-title: 編輯啟動
+title: 編輯 Launch
 seo-title: Editing Launches
 description: 為頁面（或一組頁面）建立啟動後，您可以編輯頁面啟動復本中的內容。
 seo-description: After creating a launch for your page (or set of pages) you can edit the content in the launch copy of the page(s).
@@ -11,14 +11,18 @@ topic-tags: site-features
 discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 9f208b13-08eb-4305-b712-379e9b9b041e
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '525'
 ht-degree: 20%
 
 ---
 
-# 編輯啟動{#editing-launches}
+# 編輯 Launch{#editing-launches}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 編輯啟動頁面 {#editing-launch-pages}
 
@@ -65,7 +69,7 @@ livecopy可用來將來源 *分支的內容*** 同步到啟動分支 (以便讓�
 
    * the [啟動主控台](/help/sites-authoring/launches.md#the-launches-console):
 
-      * 選擇 **編輯**.
+      * 選取&#x200B;**編輯**。
    * [參考（網站控制台）](/help/sites-authoring/launches.md#launches-in-references-sites-console) 顯示可用操作：
 
       * 選擇 **編輯啟動**.

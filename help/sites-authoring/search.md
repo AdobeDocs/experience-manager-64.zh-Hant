@@ -1,8 +1,8 @@
 ---
 title: 搜尋
-seo-title: 搜尋
+seo-title: Search
 description: 通過全面的搜索更快地查找內容
-seo-description: 通過全面的搜索更快地查找內容
+seo-description: Find your content faster with comprehensive search
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,26 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '548'
 ht-degree: 7%
 
 ---
 
 # 搜尋{#search-features}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 AEM的製作環境提供多種搜尋內容的機制，視資源類型而定。
 
 >[!NOTE]
 >
->在製作環境之外，也提供其他搜尋機制，例如[查詢產生器](/help/sites-developing/querybuilder-api.md)和[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。
+>在製作環境之外，也可使用其他機制進行搜尋，例如 [查詢產生器](/help/sites-developing/querybuilder-api.md) 和 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## 搜索基本知識{#search-basics}
+## 搜尋基本知識 {#search-basics}
 
 您可以從頂端工具列使用搜尋功能：
 
@@ -35,17 +39,17 @@ AEM的製作環境提供多種搜尋內容的機制，視資源類型而定。
 
 * 搜尋特定關鍵字、路徑或標籤。
 * 根據資源特定條件進行篩選，例如修改的日期、頁面狀態、檔案大小等。
-* 根據上述條件定義並使用[已儲存的搜尋](#saved-searches) - 。
+* 定義和使用 [儲存的搜尋](#saved-searches)  — 根據上述標準。
 
 >[!NOTE]
 >
->只要搜尋邊欄可見，也可使用快捷鍵`/`（正斜線）叫用搜尋。
+>也可使用快捷鍵叫用搜尋 `/` （正斜線）。
 
-## 搜尋與篩選 {#search-and-filter}
+## 搜尋和篩選 {#search-and-filter}
 
 若要搜尋及篩選資源：
 
-1. 開啟&#x200B;**搜尋**（工具列中有放大鏡）並輸入您的搜尋詞。 將會提供建議，並可以選取：
+1. 開啟 **搜尋** （在工具列中放大鏡）並輸入您的搜尋詞。 將會提供建議，並可以選取：
 
    ![screen_shot_2018-03-23at101404](assets/screen_shot_2018-03-23at101404.png)
 
@@ -53,14 +57,14 @@ AEM的製作環境提供多種搜尋內容的機制，視資源類型而定。
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. 如有需要，您可以移除位置篩選器（在您要移除的篩選器上選取&#x200B;**X**），以搜尋所有主控台/資源類型。
+1. 如有需要，您可以移除位置篩選器(選取 **X** 在您要移除的篩選器上)，以搜尋所有主控台/資源類型。
 1. 將顯示結果，並根據控制台和相關資源類型分組。
 
-   您可以選擇特定資源（以便執行進一步的操作），或通過選擇所需的資源類型進行細化；例如&#x200B;**查看所有站點**:
+   您可以選擇特定資源（以便執行進一步的操作），或通過選擇所需的資源類型進行細化；例如 **查看所有站點**:
 
    ![screen_shot_2018-03-23at101523](assets/screen_shot_2018-03-23at101523.png)
 
-1. 如果您想要進一步深入研究，請選取邊欄符號（左上角）以開啟側面板&#x200B;**篩選器與選項**。
+1. 如果要進一步深入，請選擇「邊欄」符號（左上）以開啟側面板 **篩選器和選項**.
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 
@@ -78,7 +82,7 @@ AEM的製作環境提供多種搜尋內容的機制，視資源類型而定。
    >搜尋條件可能有所不同：
    >
    >* 視您選取的資源類型而定；例如，資產和社群條件是可理解的專門性。
-   >* 您可以自訂[搜尋Forms](/help/sites-administering/search-forms.md)的例項(適合AEM內的位置)。
+   >* 您的例項作為 [搜尋Forms](/help/sites-administering/search-forms.md) 可自訂(適合AEM內的位置)。
 
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
@@ -99,11 +103,11 @@ AEM的製作環境提供多種搜尋內容的機制，視資源類型而定。
 
 除了按範圍廣泛的Facet進行搜索外，您還可以保存特定搜索配置以便檢索，並在以後階段使用：
 
-1. 定義搜索標準並選擇&#x200B;**Save**。
+1. 定義您的搜尋條件並選取 **儲存**.
 
    ![screen_shot_2018-03-23at101710-1](assets/screen_shot_2018-03-23at101710-1.png)
 
-1. 指派名稱，然後使用&#x200B;**Save**&#x200B;確認：
+1. 指派名稱，然後使用 **儲存** 若要確認：
 
    ![screen_shot_2018-03-23at101852](assets/screen_shot_2018-03-23at101852.png)
 
@@ -113,8 +117,8 @@ AEM的製作環境提供多種搜尋內容的機制，視資源類型而定。
 
 1. 儲存後，您可以：
 
-   * 使用&#x200B;**x**（根據已保存的搜索的名稱）啟動新查詢（不會刪除已保存的搜索本身）。
-   * **編輯已保存的搜索**，更改搜索條件，然後重 **** 新保存。
+   * 使用 **x** （根據已保存的搜索的名稱）以啟動新查詢（不會刪除已保存的搜索本身）。
+   * **編輯保存的搜索**，變更搜尋條件，然後 **儲存** 。
 
 通過選擇保存的搜索並按一下搜索面板底部的「編 **輯保存的搜索** 」(Edit Saved Search)，可以修改保存的搜索。
 

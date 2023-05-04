@@ -4,14 +4,18 @@ seo-title: AEM 6.4 Managing User Guide
 description: 本指南說明如何成功管理AEM專案
 seo-description: Covers how to manage an AEM project successfully
 exl-id: 4fa34d1f-c41e-4b9b-98d3-8c364a60776d
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 29%
+source-wordcount: '342'
+ht-degree: 27%
 
 ---
 
 # AEM 6.4 Managing 使用指南
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 本指南說明如何成功管理AEM專案
 
@@ -44,7 +48,7 @@ ht-degree: 29%
 * [AEM教學課程](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher使用手冊](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hant)
 * [HTL使用手冊](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=zh-Hant)
-* [核心元件使用手冊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心元件使用手冊](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hant)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=en)
 * [GDPR 整備](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)

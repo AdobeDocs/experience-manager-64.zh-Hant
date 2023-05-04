@@ -12,14 +12,18 @@ content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 role: Admin
 exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1865'
 ht-degree: 1%
 
 ---
 
 # 移轉 AEM Forms 資產和文件 {#migrate-aem-forms-assets-and-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 移轉公用程式會轉換 [適用性Forms資產](/help/forms/using/introduction-forms-authoring.md), [雲配置](/help/sites-developing/extending-cloud-config.md)，和 [通信管理資產](/help/forms/using/cm-overview.md) 從舊版中使用的格式轉換為AEM 6.4 Forms中使用的格式。 當您執行移轉公用程式時，會移轉下列項目：
 

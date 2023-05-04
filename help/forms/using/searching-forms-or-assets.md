@@ -1,8 +1,8 @@
 ---
 title: 搜尋表單和資產
-seo-title: 搜尋表單和資產
+seo-title: Searching for forms and assets
 description: 您可以使用AEM搜尋在AEM例項中搜尋表單和資產。 基本和進階搜尋可讓您快速找到資產。
-seo-description: 您可以使用AEM搜尋在AEM例項中搜尋表單和資產。 基本和進階搜尋可讓您快速找到資產。
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,20 +10,24 @@ topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 role: Admin
 exl-id: c6e5c19a-9d93-470f-916e-7ef06c3de141
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 3%
+source-wordcount: '720'
+ht-degree: 4%
 
 ---
 
 # 搜尋表單和資產 {#searching-for-forms-and-assets}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 您可以使用文字字串或文字字串以及萬用字元來搜尋表單或表單資產。 您也可以使用「搜尋」面板中各種類別可用的條件來縮小搜尋範圍。
 
 選取一或多個條件並指定文字字串時，文字和條件的交集會以搜尋結果傳回。 搜尋結果與提供的表單和資產中繼資料一樣好。
 
-按一下![aem6forms_search](assets/aem6forms_search.png)以顯示或隱藏搜尋面板。
+按一下 ![aem6forms_search](assets/aem6forms_search.png)，以顯示或隱藏搜尋面板。
 
 ## 基本搜尋 {#basic-search}
 
@@ -37,10 +41,10 @@ Adobe Experience Manager會在中繼資料屬性中搜尋輸入的文字，並�
 
 * 使用表單和資產中繼資料屬性進行搜尋。
 * 如果鍵入多個單詞，則搜索操作將匹配用於搜索的完整文本。
-* 搜尋不區分大小寫。 例如，當您輸入`geometrixx`時，標題為`Geometrixx`、`GEOMETRIXX`和`GeoMetRixx`的資產會顯示在搜尋結果中。
+* 搜尋不區分大小寫。 例如，當您輸入 `geometrixx`，標題為資產 `Geometrixx`, `GEOMETRIXX`，和 `GeoMetRixx` 會顯示在搜尋結果中。
 
 * 不支援字詞的部分匹配。 要使用部分字串進行搜索，請使用&amp;ast;萬用字元。 不過，如果搜尋查詢符合完整的字詞，則會顯示對應的表單或資產。
-* 搜尋期間會考慮額外空格，且不會加以修剪。 例如，`My form`與`My form`不同。
+* 搜尋期間會考慮額外空格，且不會加以修剪。 例如， `My form` 與的搜索查詢不同 `My form`.
 
 * 如果元資料屬性中欄位的資料和顯示值不同，則不能將顯示值用作搜索參數。 例如，您無法根據狀態（如已修改或已發佈）進行搜索，因為這些屬性以不同的格式儲存。
 
@@ -87,7 +91,7 @@ Adobe Experience Manager會在中繼資料屬性中搜尋輸入的文字，並�
   </tr>
   <tr>
    <td>表單範本<br /> </td> 
-   <td>搜索所有表單模板。<br /> </td> 
+   <td>搜尋所有表單範本。<br /> </td> 
   </tr>
   <tr>
    <td>PDF表單</td> 
@@ -103,7 +107,7 @@ Adobe Experience Manager會在中繼資料屬性中搜尋輸入的文字，並�
   </tr>
   <tr>
    <td>資源</td> 
-   <td>搜索所有資源。<br /> </td> 
+   <td>搜尋所有資源。<br /> </td> 
   </tr>
  </tbody>
 </table>

@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 exl-id: 654387e3-d837-4bde-a9e4-962862ad69e9
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1570'
 ht-degree: 7%
 
 ---
 
 # 連接Adobe Analytics和建立框架{#connecting-to-adobe-analytics-and-creating-frameworks}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 若要在Adobe Analytics中追蹤AEM頁面的網頁資料，請建立Adobe Analytics Cloud服務設定和Adobe Analytics架構：
 

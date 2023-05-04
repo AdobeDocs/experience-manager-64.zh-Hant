@@ -1,5 +1,5 @@
 ---
-title: 開發SPA for AEM
+title: 針對 AEM 開發 SPA
 seo-title: Developing SPAs for AEM
 description: 本文提出在請前端開發人員開發SPA for AEM時應考慮的重要問題，並概述AEM的SPA架構，以備在AEM上部署開發的SPA時時所銘記。
 seo-description: This article presents important questions to consider when engaging a front-end developer to develop a SPA for AEM as well as gives an overview of the architecture of AEM with respect to SPAs to keep in mind when deploying a developed SPA on AEM.
@@ -10,16 +10,20 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
 exl-id: 7b9f21eb-22f6-42f7-8dc7-770601ef51fc
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 1%
+source-wordcount: '2185'
+ht-degree: 5%
 
 ---
 
-# 開發SPA for AEM{#developing-spas-for-aem}
+# 針對 AEM 開發 SPA{#developing-spas-for-aem}
 
-單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用SPA架構建立網站，而作者則想在AEM中為使用此架構建立的網站順暢地編輯內容。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+單頁應用程式 (SPA) 可為網站使用者提供引人入勝的體驗。開發人員希望能使用 SPA 框架建立網站，而作者則想在 AEM 中為使用這類框架建立網站，順暢地編輯內容。
 
 本文提出在請前端開發人員開發SPA for AEM時應考慮的重要問題，並概述AEM在AEM上部署的架構。
 
@@ -31,16 +35,16 @@ ht-degree: 1%
 
 ## AEM 專案原型 {#aem-project-archetype}
 
-任何AEM專案皆應運用 [AEM專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，可支援使用React或Angular的SPA專案，並運用SPA SDK。
+任何 AEM 專案都應利用 [AEM 專案原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hant)，它支援使用 React 或 Angular 的 SPA 專案並利用 SPA SDK。
 
 ## SPA的AEM開發原則 {#spa-development-principles-for-aem}
 
-在AEM上開發單頁應用程式時，會假設前端開發人員在建立SPA時遵守標準最佳實務。 若您是前端開發人員，請遵循這些一般最佳實務以及幾項AEM專屬原則，您的SPA將可與 [AEM及其內容製作功能](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
+在 AEM 開發單頁應用程式是假設前端開發人員在建立 SPA 時有遵守標準最佳做法。若您是前端開發人員，請遵循這些一般最佳實務以及幾項AEM專屬原則，您的SPA將可與 [AEM及其內容製作功能](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa).
 
 * **[便攜性](/help/sites-developing/spa-architecture.md#portability) -** 與任何元件一樣，元件應盡可能便攜。 SPA應使用可攜式且可重複使用的元件來建置，以避免引用內容結構的靜態路徑。
 * **[AEM驅動器站點結構](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**  — 前端開發人員建立元件並擁有其內部結構，但需仰賴AEM來定義網站的內容結構。
 * **[動態演算](/help/sites-developing/spa-architecture.md#dynamic-rendering) -** 所有轉譯應為動態。
-* **[動態路由](#dynamic-routing) -** SPA負責路由，AEM會監聽路由，並據此擷取元件資料。 任何路由都應是動態的。
+* **[動態路由](#dynamic-routing) -** SPA負責路由，AEM會監聽路由，並據此擷取元件資料。 任何路由也應該是動態的。
 
 在開發SPA時，如果您應牢記這些原則，在啟用所有支援的AEM製作功能時，將盡可能提供靈活且未來的驗證。
 
@@ -159,7 +163,7 @@ SPA應僅依賴內容的動態轉譯。 這是AEM擷取並轉譯內容結構的�
 
 1. **擴充提供的 `Container` 頁面和容器類別**
 
-   頁面和段落系統應擴展此類，以便對內部元件的委派能夠正常工作。
+   頁面和段落系統應擴展此類，以使對內部元件的委派能夠正常工作。
 
 1. **實作使用HTML5的路由解決方案 `History` API。**
 

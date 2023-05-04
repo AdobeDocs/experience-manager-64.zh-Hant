@@ -1,24 +1,28 @@
 ---
 title: Web 主控台
-seo-title: Web 主控台
+seo-title: Web Console
 description: 了解如何在AEM中使用Web主控台。
-seo-description: 了解如何在AEM中使用Web主控台。
+seo-description: Learn how to use the web console in AEM.
 uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: e03d2075-1d65-4ab3-b1bb-0bae925824c6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 2%
+source-wordcount: '755'
+ht-degree: 3%
 
 ---
 
 # Web 主控台{#web-console}
 
-AEM中的Web主控台以[Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)為基礎。 Apache Felix是社群的努力成果，目的是實作OSGi R4服務平台，其中包含OSGi架構和標準服務。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+AEM中的Web主控台以 [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix是社群的努力成果，目的是實作OSGi R4服務平台，其中包含OSGi架構和標準服務。
 
 >[!NOTE]
 >
@@ -28,25 +32,25 @@ AEM中的Web主控台以[Apache Felix Web Management Console](https://felix.apac
 
 Web主控台提供一系列標籤，用於維護OSGi套件組合，包括：
 
-* [配置](#configuration):用於配置OSGi套件組合，因此是配置AEM系統參數的基礎機制
+* [設定](#configuration):用於配置OSGi套件組合，因此是配置AEM系統參數的基礎機制
 * [套件組合](#bundles):用於安裝套件
 * [元件](#components):用於控制AEM所需元件的狀態
 
 所做的任何更改都會立即應用於運行的系統。 不需要重新啟動。
 
-可從`../system/console`存取主控台；例如：
+此主控台可從 `../system/console`;例如：
 
 `http://localhost:4502/system/console/components`
 
 ## 設定 {#configuration}
 
-**Configuration**&#x200B;頁簽用於配置OSGi包，因此是配置AEM系統參數的基礎機制。
+此 **設定** tab可用來設定OSGi套件組合，因此是設定AEM系統參數的基礎機制。
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[使用Web控制台進行OSGi配置](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 。
+>請參閱 [使用Web控制台進行OSGi配置](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 以取得詳細資訊。
 
-**Configuration**&#x200B;頁簽可通過以下任一項訪問：
+此 **設定** 標籤可透過下列任一方存取：
 
 * 下拉式功能表：
 
@@ -105,7 +109,7 @@ Web主控台提供一系列標籤，用於維護OSGi套件組合，包括：
 
 ## 套件組合 {#bundles}
 
-**Bundles**&#x200B;標籤是安裝AEM所需OSGi套件組合的機制。 索引標籤可透過下列任一方法存取：
+此 **套件組合** tab是安裝AEM所需OSGi套件組合的機制。 索引標籤可透過下列任一方法存取：
 
 * 下拉式功能表：
 
@@ -123,7 +127,7 @@ Web主控台提供一系列標籤，用於維護OSGi套件組合，包括：
 
 * **安裝或更新**
 
-   您可以&#x200B;**瀏覽**&#x200B;來查找包含捆綁包的檔案，並指定它是否應立即&#x200B;**啟動**，以及在哪個&#x200B;**啟動級別**。
+   您可以 **瀏覽** 尋找包含套件的檔案，並指定是否應該 **開始** 立即 **開始層級**.
 
 * **重新載入**
 
@@ -153,11 +157,11 @@ Web主控台提供一系列標籤，用於維護OSGi套件組合，包括：
 
 >[!NOTE]
 >
->建議在&#x200B;**更新**&#x200B;之後執行&#x200B;**刷新包**。
+>之後 **更新** 建議您執行 **刷新包**.
 
 ## 元件 {#components}
 
-**元件**&#x200B;頁簽允許您啟用和/或禁用各種元件。 可透過下列任一方存取：
+此 **元件** 索引標籤可讓您啟用和/或停用各種元件。 可透過下列任一方存取：
 
 * 下拉式功能表：
 

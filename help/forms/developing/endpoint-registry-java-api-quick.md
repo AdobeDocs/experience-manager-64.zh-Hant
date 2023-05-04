@@ -1,8 +1,8 @@
 ---
 title: 端點註冊表Java API快速入門(SOAP)
-seo-title: 端點註冊表Java API快速入門(SOAP)
+seo-title: Endpoint Registry Java API QuickStart(SOAP)
 description: 使用Endpoint Registry Java API添加EJB端點、添加SOAP端點、添加Watched資料夾端點、添加Email端點、添加遠程端點、添加TaskManager端點、修改端點、刪除端點以及檢索端點連接器資訊。
-seo-description: 使用Endpoint Registry Java API添加EJB端點、添加SOAP端點、添加Watched資料夾端點、添加Email端點、添加遠程端點、添加TaskManager端點、修改端點、刪除端點以及檢索端點連接器資訊。
+seo-description: Use the Endpoint Registry Java API to add an EJB endpoint, add a SOAP endpoint, add a Watched folder endpoint, add an Email endpoint, add a remoting endpoint, add a TaskManager endpoint, modify an endpoint, remove an endpoint, and retrieve endpoint connector information.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
 exl-id: 70816a79-a200-4afa-8602-bf3c414665ea
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
-# 端點註冊表Java API快速入門(SOAP){#endpoint-registry-java-api-quickstart-soap}
+# 端點註冊表Java API快速入門(SOAP) {#endpoint-registry-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 Endpoint Registry可使用Java API快速入門(SOAP)。
 
@@ -44,15 +48,15 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
 
 >[!NOTE]
 >
->使用AEM表單進行程式設計中的快速入門是以Forms為基礎（如果您使用其他作業系統，例如Unix），請以適用作業系統支援的路徑取代windows特定路徑。 同樣，如果您正在使用其他J2EE應用程式伺服器，請確保指定有效的連接屬性。 請參閱[設定連線屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM表單進行程式設計中的快速入門是以Forms為基礎（如果您使用其他作業系統，例如Unix），請以適用作業系統支援的路徑取代windows特定路徑。 同樣，如果您正在使用其他J2EE應用程式伺服器，請確保指定有效的連接屬性。 請參閱 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
 >無法使用Web服務來使用端點。
 
-## 快速入門：使用Java API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}添加EJB終結點
+## 快速入門：使用Java API添加EJB端點 {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-以下Java代碼示例將EJB終結點添加到名為&#x200B;*MyApplication/EncryptDocument*&#x200B;的服務中。 （請參閱[添加EJB端點](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)。）
+以下Java代碼示例將EJB端點添加到名為的服務 *MyApplication/EncryptDocument*. (請參閱 [添加EJB終結點](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
 ```as3
  /* 
@@ -149,9 +153,9 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門：使用Java API {#quickstart-adding-a-soap-endpoint-using-the-java-api}添加SOAP端點
+## 快速入門：使用Java API添加SOAP端點 {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-以下Java代碼示例將SOAP端點添加到名為&#x200B;*MyApplication/EncryptDocument*&#x200B;的服務中。 （請參閱[添加SOAP端點](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)。）
+以下Java代碼示例將SOAP端點添加到名為 *MyApplication/EncryptDocument*. (請參閱 [添加SOAP端點](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```as3
  /* 
@@ -249,13 +253,13 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門：使用Java API {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}新增「監看資料夾」端點
+## 快速入門：使用Java API新增「監看資料夾」端點 {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-以下Java代碼示例將「監看資料夾」端點添加到名為&#x200B;*MyApplication/EncryptDocument*&#x200B;的服務中。 （請參閱[新增觀看的資料夾端點](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints)。）
+以下Java代碼示例將「監看資料夾」端點添加到名為 *MyApplication/EncryptDocument*. (請參閱 [添加監視的資料夾端點](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->您必須在專案中包含WatchedFolderEndpointConfigConstants.java檔案，才能編譯並執行下列快速入門。 （請參閱[觀看的資料夾組態值常數檔案](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)。）
+>您必須在專案中包含WatchedFolderEndpointConfigConstants.java檔案，才能編譯並執行下列快速入門。 (請參閱 [監看的資料夾配置值常數檔案](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```as3
  /* 
@@ -384,13 +388,13 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門：使用Java API {#quickstart-adding-an-email-endpoint-using-the-java-api}新增電子郵件端點
+## 快速入門：使用Java API新增電子郵件端點 {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-以下Java代碼示例向名為&#x200B;*MyApplication/EncryptDocument* t的服務添加了Email端點。（請參閱[新增電子郵件端點](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)。）
+以下Java代碼示例將Email端點添加到名為 *MyApplication/EncryptDocument* t.(請參閱 [新增電子郵件端點](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
->您必須在專案中包含EmailEndpointConfigConstants.java檔案，才能編譯並執行下列快速入門。 （請參閱[電子郵件配置值常數檔案](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)。）
+>您必須在專案中包含EmailEndpointConfigConstants.java檔案，才能編譯並執行下列快速入門。 (請參閱 [電子郵件配置值常數檔案](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```as3
  /* 
@@ -527,9 +531,9 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門：使用Java API {#quickstart-adding-a-remoting-endpoint-using-the-java-api}添加遠程端點
+## 快速入門：使用Java API新增遠端端點 {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-以下Java代碼示例將遠程端點添加到名為&#x200B;*MyApplication/EncryptDocument*&#x200B;的服務。 （請參閱[添加遠程端點](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)。）
+以下Java代碼示例將Remoteing端點添加到名為 *MyApplication/EncryptDocument*. (請參閱 [新增遠端端點](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
 ```as3
  /* 
@@ -632,9 +636,9 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門：使用Java API {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}添加TaskManager終結點
+## 快速入門：使用Java API添加TaskManager終結點 {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-以下Java代碼示例將TaskManager端點添加到名為&#x200B;*MyApplication/EncryptDocument*&#x200B;的服務。 請注意，類別的名稱為&#x200B;*EncryptProcess*。 （請參閱[添加TaskManager終結點](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)。）
+以下Java代碼示例將TaskManager端點添加到名為 *MyApplication/EncryptDocument*. 請注意，類別的名稱為 *EncryptProcess*. (請參閱 [添加TaskManager端點](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```as3
  /* 
@@ -741,9 +745,9 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門：使用Java API {#quickstart-modifying-an-endpoint-using-the-java-api}修改端點
+## 快速入門：使用Java API修改端點 {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-以下Java代碼示例修改了「監視資料夾」端點。端點用於&#x200B;*MyApplication/EncryptDocument*&#x200B;進程。 監看的資料夾變更為`C:\NewWatchedFolder`。 （請參閱[修改端點](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints)。）
+以下Java代碼示例修改了「監看資料夾」端點。端點為 *MyApplication/EncryptDocument* 程式。 已監看的資料夾變更為 `C:\NewWatchedFolder`. (請參閱 [修改端點](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```as3
  /* 
@@ -891,9 +895,9 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門：使用Java API {#quickstart-removing-an-endpoint-using-the-java-api}移除端點
+## 快速入門：使用Java API移除端點 {#quickstart-removing-an-endpoint-using-the-java-api}
 
-以下Java代碼從名為&#x200B;*MyApplication/EncryptDocument*&#x200B;的服務中刪除EJB終結點。 （請參閱[移除端點](/help/forms/developing/programmatically-endpoints.md#removing-endpoints)。）
+以下Java代碼從名為的服務中刪除EJB終結點 *MyApplication/EncryptDocument*. (請參閱 [移除端點](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
 ```as3
  /* 
@@ -1010,9 +1014,9 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
  
 ```
 
-## 快速入門：使用Java API {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}檢索端點連接器資訊
+## 快速入門：使用Java API擷取端點連接器資訊 {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-以下Java代碼將檢索有關「監看資料夾」端點的資訊。 會擷取並顯示每個設定值的相關資訊。 此程式碼清單會指定每個設定值為必要或選用。 此外，還會顯示每個設定值的名稱和值。 （請參閱[檢索端點連接器資訊](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)。）
+以下Java代碼將檢索有關「監看資料夾」端點的資訊。 會擷取並顯示每個設定值的相關資訊。 此程式碼清單會指定每個設定值為必要或選用。 此外，還會顯示每個設定值的名稱和值。 (請參閱 [檢索端點連接器資訊](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ```as3
  /* 

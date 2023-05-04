@@ -1,22 +1,26 @@
 ---
 title: 適用性表單關鍵字
-seo-title: 適用性表單關鍵字
+seo-title: Adaptive forms keywords
 description: 您無法在最適化表單中將這些保留字當作識別碼。
-seo-description: 您無法在最適化表單中將這些保留字當作識別碼。
+seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
 uuid: 79e77692-2f0c-493b-8c2c-c408ff3dcece
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
-feature: 適用性表單
+feature: Adaptive Forms
 exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 4%
+source-wordcount: '244'
+ht-degree: 6%
 
 ---
 
-# 適用性表單關鍵字{#adaptive-forms-keywords}
+# 適用性表單關鍵字 {#adaptive-forms-keywords}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 適用性表單關鍵字是預先定義、保留的識別碼，對適用性表單有特殊意義。 您無法在適用性表單中將這些關鍵字當作識別碼。 下表列出所有為適用性表單保留識別碼的關鍵字。
 
@@ -240,4 +244,4 @@ ht-degree: 4%
  </tbody>
 </table>
 
-除了上述關鍵字，請避免使用與[適用性表單JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)類似的名稱。
+除了上述關鍵字，請避免使用類似 [適用性表單JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).

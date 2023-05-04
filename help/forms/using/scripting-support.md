@@ -11,14 +11,18 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: 2194bbbb-22d9-4422-aefb-9651fd795ca3
-source-git-commit: aa70ce1b05353e0d6f234c59df673486c8fa5082
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3894'
+source-wordcount: '3930'
 ht-degree: 6%
 
 ---
 
 # 支援HTML5表單的指令碼 {#scripting-support-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 HTML5表單支援的JavaScript、FormCalc屬性和方法如下：
 
@@ -720,7 +724,7 @@ HTML5表單支援的JavaScript、FormCalc屬性和方法如下：
    <td> </td> 
   </tr> 
   <tr> 
-   <td>字幕</td> 
+   <td>caption</td> 
    <td>標題對象描述與表單設計對象關聯的描述性標籤。</td> 
    <td> </td> 
   </tr> 
@@ -948,7 +952,7 @@ HTML5表單支援的JavaScript、FormCalc屬性和方法如下：
    <td>無</td> 
   </tr> 
   <tr> 
-   <td>字幕</td> 
+   <td>caption</td> 
    <td>標題對象描述與表單設計對象關聯的描述性標籤。<br /> </td> 
    <td>無</td> 
   </tr> 
@@ -1216,7 +1220,7 @@ FormCalc是XFA專用的語言，用於建立電子錶單中心邏輯和計算根
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. 詞彙()
+   1. 術語()
 
 1. **邏輯函式**
 

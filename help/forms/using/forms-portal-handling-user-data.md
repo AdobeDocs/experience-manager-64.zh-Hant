@@ -1,8 +1,8 @@
 ---
 title: Forms入口網站 |處理用戶資料
-seo-title: Forms入口網站 |處理用戶資料
-description: AEM Forms入口網站提供元件，可讓您在AEM Sites頁面上列出最適化表單、HTML5表單和其他Forms資產。 了解Forms入口網站如何儲存草稿和已提交表單的資料。 深入了解如何為已設定資料存放區中的登入匿名使用者存取草稿和已提交的表單資料，並視需要將其刪除。
-seo-description: AEM Forms入口網站提供元件，可讓您在AEM Sites頁面上列出最適化表單、HTML5表單和其他Forms資產。 了解Forms入口網站如何儲存草稿和已提交表單的資料。 深入了解如何為已設定資料存放區中的登入匿名使用者存取草稿和已提交的表單資料，並視需要將其刪除。
+seo-title: Forms Portal | Handling user data
+description: AEM Forms入口網站提供元件，可讓您用來在AEM Sites頁面上列出最適化表單、HTML5表單和其他Forms資產。 了解Forms入口網站如何儲存草稿和已提交表單的資料。 深入了解如何為設定的資料存放區中的登入匿名使用者存取草稿和已提交的表單資料，並視需要將其刪除。
+seo-description: AEM Forms portal provides components that you can use to list adaptive forms, HTML5 forms, and other Forms assets on AEM Sites page. Learn how Forms portal stores data for draft and submitted forms. Dig deeper on how to access draft and submitted forms data for logged-in and anonymous users in the configured data stores, and if required, delete it.
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
@@ -10,25 +10,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 role: Admin
 exl-id: 05dbb6ee-09fd-44ee-bb8b-a3f3ebb32f5a
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
+source-wordcount: '951'
+ht-degree: 1%
 
 ---
 
 # Forms入口網站 |處理用戶資料 {#forms-portal-handling-user-data}
 
-AEM Forms入口網站提供元件，可讓您在AEM Sites頁面上列出最適化表單、HTML5表單和其他Forms資產。 此外，您也可以設定它，以顯示登入使用者的草稿和已提交的最適化表單及HTML5表單。 如需表單入口網站的詳細資訊，請參閱[在入口網站上發佈表單的簡介](/help/forms/using/introduction-publishing-forms.md)。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-登入的使用者將最適化表單儲存為草稿或提交時，表單會顯示在表單入口網站的「草稿」和「提交」索引標籤中。 草稿或已提交表單的資料會儲存在為AEM部署設定的資料存放區中。 匿名用戶的草稿和提交不會顯示在表單門戶頁面上；但是，資料儲存在配置的資料儲存中。 有關詳細資訊，請參閱[為草稿和提交配置儲存服務](/help/forms/using/configuring-draft-submission-storage.md)。
+AEM Forms入口網站提供元件，可讓您用來在AEM Sites頁面上列出最適化表單、HTML5表單和其他Forms資產。 此外，您也可以設定它，以顯示已登入使用者的草稿和已提交最適化表單，以及HTML5表單。 如需表單入口網站的詳細資訊，請參閱 [在入口網站發佈表單簡介](/help/forms/using/introduction-publishing-forms.md).
+
+登入的使用者將最適化表單儲存為草稿或提交時，表單會顯示在表單入口網站的「草稿」和「提交」索引標籤中。 草稿或已提交表單的資料會儲存在為AEM部署設定的資料存放區中。 匿名用戶的草稿和提交不會顯示在表單門戶頁面上；但是，資料儲存在配置的資料儲存中。 如需詳細資訊，請參閱 [配置草稿和提交的儲存服務](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## 使用者資料和資料儲存 {#user-data-and-data-stores}
 
 Forms入口網站會在下列情況下儲存草稿和已提交表單的資料：
 
-* 在最適化表單中設定的提交動作為&#x200B;**Forms Portal Submit Action**。
-* 對於「**Forms Portal提交操作**」以外的提交操作，在最適化表單容器的&#x200B;**提交**&#x200B;屬性中啟用「**[!UICONTROL 在表單入口]**&#x200B;中儲存資料」選項。
+* 在最適化表單中設定的提交動作為 **Forms Portal提交動作**.
+* 用於提交除 **Forms Portal提交動作**, **[!UICONTROL 將資料儲存在表單入口網站中]** 選項 **提交** 適用性表單容器的屬性。
 
 針對登入和匿名使用者的每份草稿和提交表單，表單入口網站會儲存下列資料：
 
@@ -58,7 +62,7 @@ Forms入口網站會在下列情況下儲存草稿和已提交表單的資料：
   <tr> 
    <td><p>資料庫</p> </td> 
    <td><p>AEM author例項和資料庫表存放庫</p> </td> 
-   <td>資料庫表<code>data</code>、<code>metadata</code>和 <code>additionalmetadata</code></td> 
+   <td>資料庫表 <code>data</code>, <code>metadata</code>，和 <code>additionalmetadata</code></td> 
   </tr> 
  </tbody> 
 </table>
@@ -69,19 +73,19 @@ Forms入口網站會在下列情況下儲存草稿和已提交表單的資料：
 
 ### AEM例項 {#aem-instances}
 
-登入與匿名使用者的AEM例項（製作、發佈或遠端）中，所有草稿與提交的表單資料都會儲存在適用AEM存放庫的`/content/forms/fp/`節點中。 每次登入或匿名的使用者儲存草稿或提交表單時，都會產生每個附件的`draft ID`或`submission ID`、`user data ID`和隨機`ID`（若適用），且會與個別草稿或提交相關聯。
+登入和匿名使用者的AEM例項（製作、發佈或遠端）中，所有草稿和已提交的表單資料都會儲存在 `/content/forms/fp/` 適用AEM存放庫的節點。 每次登入或匿名使用者儲存草稿或提交表單時， `draft ID` 或 `submission ID`, `user data ID`，和隨機 `ID` 會針對每個附件（若適用）產生，而與個別草稿或提交內容相關聯。
 
 #### 存取使用者資料 {#access-user-data}
 
-登入的使用者儲存草稿或提交表單時，會以其使用者ID建立子節點。 例如，使用者ID為`srose`的Sarah Rose的草稿和提交資料會儲存在AEM存放庫的`/content/forms/fp/srose/`節點中。 在使用者ID節點內，資料以階層結構組織。
+登入的使用者儲存草稿或提交表單時，會以其使用者ID建立子節點。 例如，使用者ID為的Sarah Rose的草稿和提交資料 `srose` 儲存於 `/content/forms/fp/srose/` 節點。 在使用者ID節點內，資料以階層結構組織。
 
-下表說明`srose`所有草稿的資料如何儲存在AEM存放庫中。
+下表說明所有草稿的資料依 `srose` 儲存在AEM存放庫中。
 
 >[!NOTE]
 >
->在`/content/forms/fp/srose/submit/`節點下，針對`srose`提交的表單複製了`drafts`之類的確切結構。
+>精確的結構，如 `drafts` 針對 `srose` 在 `/content/forms/fp/srose/submit/` 節點。
 >
->`anonymous`使用者提交的所有草稿和提交都儲存在`/content/forms/fp/anonymous/`節點下，該節點會為`draft`和`submit`節點下的所有匿名使用者組織草稿和提交。
+>所有草稿和提交者 `anonymous` 使用者會儲存在 `/content/forms/fp/anonymous/` 節點，為所有匿名用戶組織草稿和提交 `draft` 和 `submit` 節點。
 
 | 節點 | 說明 |
 |---|---|
@@ -95,9 +99,9 @@ Forms入口網站會在下列情況下儲存草稿和已提交表單的資料：
 
 #### 刪除使用者資料 {#delete-user-data}
 
-若要從AEM系統的登入使用者草稿和提交中完全刪除使用者資料，您必須從製作節點中刪除特定使用者的`user ID`節點。 您必須從所有適用的AEM例項手動刪除資料。
+若要從AEM系統完全刪除登入使用者的草稿和提交中的使用者資料，您必須刪除 `user ID` 節點（來自製作節點的特定使用者）。 您必須從所有適用的AEM例項手動刪除資料。
 
-所有匿名使用者的草稿和提交資料都儲存在`/content/forms/fp/anonymous`下的公用`drafts`和`submit`節點中。 除非已知某些可識別資訊，否則無法查找特定匿名用戶的資料。在這種情況下，您可以在AEM儲存庫中搜索標識匿名用戶的資訊，並從所有適用的AEM實例中手動刪除包含該資訊的節點，以從AEM系統中刪除資料。 但是，要刪除所有匿名用戶的資料，可以刪除`anonymous`節點，以刪除所有匿名用戶的草稿和提交資料。
+所有匿名使用者的草稿和提交資料都儲存在 `drafts` 和 `submit` 節點 `/content/forms/fp/anonymous`. 除非已知某些可識別資訊，否則無法查找特定匿名用戶的資料。在這種情況下，您可以在AEM儲存庫中搜索標識匿名用戶的資訊，並從所有適用的AEM實例中手動刪除包含該資訊的節點，以從AEM系統中刪除資料。 不過，若要刪除所有匿名使用者的資料，您可以刪除 `anonymous` 節點，移除所有匿名使用者的草稿和提交資料。
 
 ### 資料庫 {#database}
 
@@ -109,7 +113,7 @@ Forms入口網站會在下列情況下儲存草稿和已提交表單的資料：
 
 #### 存取使用者資料 {#access-user-data-1}
 
-要訪問資料庫表中登錄用戶和匿名用戶的草稿和提交資料，請運行以下資料庫命令。 在查詢中，將`logged-in user`替換為要訪問其資料的用戶ID，或將`anonymous`替換為匿名用戶。
+要訪問資料庫表中登錄用戶和匿名用戶的草稿和提交資料，請運行以下資料庫命令。 在查詢中取代 `logged-in user` 使用您要存取其資料的使用者ID，或使用 `anonymous` 匿名用戶。
 
 ```sql
 select * from metadata, data, additionalmetadatatable where metadata.owner = 'logged-in user' and metadata.id = additionalmetadatatable.id and metadata.userdataID = data.id
@@ -117,7 +121,7 @@ select * from metadata, data, additionalmetadatatable where metadata.owner = 'lo
 
 #### 刪除使用者資料 {#delete-user-data-1}
 
-要從資料庫表中刪除登錄用戶的草稿和提交資料，請運行以下資料庫命令。 在查詢中，將`logged-in user`替換為要刪除其資料的用戶ID，或將`anonymous`替換為匿名用戶。 請注意，要從資料庫中刪除特定匿名用戶的資料，需要使用一些可識別資訊找到該資料，並從包含該資訊的資料庫表中刪除該資料。
+要從資料庫表中刪除登錄用戶的草稿和提交資料，請運行以下資料庫命令。 在查詢中取代 `logged-in user` 使用您要刪除其資料的使用者ID，或使用 `anonymous` 匿名用戶。 請注意，要從資料庫中刪除特定匿名用戶的資料，需要使用一些可識別資訊找到該資料，並從包含該資訊的資料庫表中刪除該資料。
 
 ```sql
 DELETE FROM metadata, data, additionalmetadatatable USING metadata INNER JOIN data ON metadata.userdataID = data.id INNER JOIN additionalmetadatatable ON metadata.id = additionalmetadatatable.id WHERE metadata.owner = 'logged-in user'

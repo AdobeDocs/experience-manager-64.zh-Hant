@@ -1,25 +1,29 @@
 ---
 title: 通信管理配置屬性
-seo-title: 通信管理配置屬性
+seo-title: Correspondence Management Configuration Properties
 description: 本主題說明如何使用解決方案專屬設定修改資產撰寫器。 本主題詳細說明您可編輯的屬性，以及其說明、預設值和可接受的值。
-seo-description: 本主題說明如何使用解決方案專屬設定修改資產撰寫器。 本主題詳細說明您可編輯的屬性，以及其說明、預設值和可接受的值。
+seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
 uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: f2955419-c680-44a7-9913-c594b4577551
-feature: 通信管理
+feature: Correspondence Management
 exl-id: 102e4f39-192e-4cc1-a249-4b6bc641919d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 3%
+source-wordcount: '881'
+ht-degree: 4%
 
 ---
 
-# 通信管理配置屬性{#correspondence-management-configuration-properties}
+# 通信管理配置屬性 {#correspondence-management-configuration-properties}
 
-若要設定這些屬性，請在瀏覽器中開啟下列URL:`https://<server>:<port>/<contextPath>/system/console/configMgr`並選擇&#x200B;**通信管理配置**。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+若要設定這些屬性，請在瀏覽器中開啟下列URL: `https://<server>:<port>/<contextPath>/system/console/configMgr` 選取 **通信管理配置**.
 
 通信管理具有以下配置屬性：
 
@@ -34,19 +38,19 @@ ht-degree: 3%
   <tr> 
    <td><p>縮排</p> </td> 
    <td>模組上的縮進<p> </p> </td> 
-   <td><p>12.7毫米</p> </td> 
+   <td><p>12.7mm</p> </td> 
    <td><p>任何數字</p> </td> 
   </tr> 
   <tr> 
    <td>數字最小寬度</td> 
    <td>使用羅馬數字以外的編號清單時，要在項目符號/數字欄位上應用的最小寬度</td> 
-   <td>8.0毫米</td> 
+   <td>8.0mm</td> 
    <td>任何數字</td> 
   </tr> 
   <tr> 
    <td><p>羅馬數字最小寬度</p> </td> 
    <td><p>使用羅馬數字時，要在項目符號/數字欄位上應用的最小寬度</p> </td> 
-   <td><p>12.7毫米</p> </td> 
+   <td><p>12.7mm</p> </td> 
    <td><p>任何數字</p> </td> 
   </tr> 
   <tr> 
@@ -56,7 +60,7 @@ ht-degree: 3%
    <td>HTML轉譯/PDF轉譯</td> 
   </tr> 
   <tr> 
-   <td><p>啟用CCR PDF突出顯示</p> </td> 
+   <td><p>啟用CCRPDF突出顯示</p> </td> 
    <td><p>在建立通信應用程式中啟用對PDF的突出顯示</p> </td> 
    <td><p>true</p> </td> 
    <td><p>true / false</p> </td> 
@@ -104,8 +108,8 @@ ht-degree: 3%
    <td><p>任何數字</p> </td> 
   </tr> 
   <tr> 
-   <td><p>PDF文檔參數名稱</p> </td> 
-   <td><p>後續處理中PDF文檔的參數名</p> </td> 
+   <td><p>PDF文檔參數名</p> </td> 
+   <td><p>後處理中PDF文檔的參數名</p> </td> 
    <td><p>inPDFDoc</p> </td> 
    <td><p>任何字串變數名稱</p> </td> 
   </tr> 
@@ -129,7 +133,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td><p>PDF提交類型</p> </td> 
-   <td><p>PDF提交類型（從「建立通信」應用程式提交時生成的PDF類型）</p> </td> 
+   <td><p>PDF提交類型(從「建立通信」應用程式提交時生成的PDF類型)</p> </td> 
    <td><p>nonInteractive</p> </td> 
    <td><p>互動/非互動</p> </td> 
   </tr> 
@@ -161,7 +165,7 @@ ht-degree: 3%
    <td><p>資料編輯格式</p> </td> 
    <td><p>編輯資料的格式。 將資料寫入為字串或從字串分析資料時，會使用此方法</p> </td> 
    <td><p>locale=en_US;dateFormat=dd-MM-yyyy;numberDecimalSeparator=.;numberGroupSeparator=,;numberUseGroupSeparator=true</p> </td> 
-   <td>—<p> </p> </td> 
+   <td>--<p> </p> </td> 
   </tr> 
   <tr> 
    <td><p>在發佈時管理信函例項</p> </td> 
@@ -244,18 +248,18 @@ ht-degree: 3%
   <tr> 
    <td><p>CM用戶根</p> </td> 
    <td><p>包含所有通信管理用戶資產的資料夾的URL</p> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
    <td><p>有效的資料夾位置</p> </td> 
   </tr> 
   <tr> 
    <td><p>字母快取大小</p> </td> 
-   <td><p>指定要保留在快取中的字母數上限。</p> <p>更改此值將導致<code>in-memory</code>快取的清除。</p> </td> 
+   <td><p>指定要保留在快取中的字母數上限。</p> <p>若變更此值，將會導致 <code>in-memory</code> 快取。</p> </td> 
    <td><p>100</p> </td> 
    <td><p>任何數值</p> </td> 
   </tr> 
   <tr> 
    <td><p>啟用信函快取</p> </td> 
-   <td><p>啟用/停用信函快取。</p> <p>更改此值將導致<code>in-memory </code>快取的清除。</p> </td> 
+   <td><p>啟用/停用信函快取。</p> <p>若變更此值，將會導致 <code>in-memory </code> 快取。</p> </td> 
    <td><p>true</p> </td> 
    <td><p>true / false</p> </td> 
   </tr> 
@@ -291,7 +295,7 @@ ht-degree: 3%
   </tr> 
   <tr> 
    <td><p>調試目錄 </p> <p> </p> </td> 
-   <td>用於調試的檔案系統資料夾位置。 如果目錄不是<code>exists</code>，則不會生成調試轉儲。</td> 
+   <td>用於調試的檔案系統資料夾位置。 如果目錄不是 <code>exists</code>，則不會產生除錯轉儲。</td> 
    <td>acm.debugDirectory</td> 
    <td> </td> 
   </tr> 

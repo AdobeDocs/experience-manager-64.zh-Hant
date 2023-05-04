@@ -10,16 +10,20 @@ topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 feature: Adaptive Forms
 exl-id: 62f1ddd3-9fc2-49dd-b588-0c3520e1cdd2
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3045'
+source-wordcount: '3081'
 ht-degree: 2%
 
 ---
 
 # 製作最適化表單簡介  {#introduction-to-authoring-adaptive-forms}
 
-## 總覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 最適化表單可讓您建立吸引人、回應式、動態且最適化的表單。 AEM Forms提供直覺式使用者介面和現成可用的元件，供您建立及使用最適化表單。 您可以選擇根據表單模型或結構建立最適化表單，或不使用表單模型。 必須仔細選擇不僅符合您要求而且擴展您現有基礎設施投資和資產的表單模型。 您可以從下列選項中選擇，以建立最適化表單：
 

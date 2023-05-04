@@ -9,14 +9,18 @@ topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 role: Admin
 exl-id: 45b0fb99-9f7f-47e6-a4de-4db321867f8f
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 6%
+source-wordcount: '1833'
+ht-degree: 8%
 
 ---
 
 # 安裝和配置資料捕獲功能 {#install-and-configure-data-capture-capabilities}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 安裝及設定最適化表單、PDF forms和HTML5 Forms。 設定Adobe Analytics和Adobe Target以使用最適化表單，以根據使用者的設定檔分析表單的使用情形，並鎖定使用者。
 
@@ -195,7 +199,7 @@ Acrobat Sign可啟用最適化表單的電子簽名工作流程。 電子簽名�
 
 #### 設定Adobe Analytics {#configure-adobe-analytics}
 
-AEM Forms與Adobe Analytics整合，可讓您擷取及追蹤已發佈表單和檔案的效能量度。 分析這些量度的目的，是根據讓表單或檔案更實用所需的變更資料，做出明智的決策。
+AEM Forms與Adobe Analytics整合，可讓您擷取及追蹤已發佈表單和檔案的效能量度。 分析這些指標背後的目標是根據有關使表單或文件更有用所需的變更資料做出明智的決策。
 
 若要搭配AEM Forms使用Adobe Analytics，請參閱 [設定分析和報表](/help/forms/using/configure-analytics-forms-documents.md).
 

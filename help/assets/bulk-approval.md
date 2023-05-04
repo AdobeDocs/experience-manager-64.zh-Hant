@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '847'
 ht-degree: 21%
 
 ---
 
 # 查看資料夾資產和集合 {#review-folder-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 為資料夾或集合中的資產設定審核工作流程，並與審核者或創意合作夥伴共用，以尋求意見回饋。
 
@@ -31,17 +35,17 @@ Adobe Experience Manager Assets可讓您為資料夾或集合中的資產設定�
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. （可選）從&#x200B;**[!UICONTROL Project]**&#x200B;清單中，選擇要與審閱任務關聯的項目。 預設情況下，選擇&#x200B;**[!UICONTROL None]**&#x200B;選項。 如果您不想將任何項目與審閱任務關聯，請保留此選擇。
+1. （選用）從 **[!UICONTROL 專案]** 清單中，選擇要與審閱任務關聯的項目。 依預設， **[!UICONTROL 無]** 選項。 如果您不想將任何項目與審閱任務關聯，請保留此選擇。
 
    >[!NOTE]
    >
-   >只有您具有編輯者層級權限（或更高）的專案會顯示在&#x200B;**[!UICONTROL Projects]**&#x200B;清單中。
+   >在 **[!UICONTROL 專案]** 清單。
 
-1. 輸入複核任務的名稱，然後從&#x200B;**[!UICONTROL 分配到]**&#x200B;清單中選擇批准者。
+1. 輸入複核任務的名稱，然後從 **[!UICONTROL 指派給]** 清單。
 
    >[!NOTE]
    >
-   >在&#x200B;**[!UICONTROL 分配到]**&#x200B;清單中，所選項目的成員/組可作為批准者。
+   >所選項目的成員/組在 **[!UICONTROL 指派給]** 清單。
 
 1. 輸入複核任務的說明、任務優先順序和到期日。
 
@@ -52,7 +56,7 @@ Adobe Experience Manager Assets可讓您為資料夾或集合中的資產設定�
    ![review_name](assets/review_name.png)
 
 1. 點選/按一 **[!UICONTROL 下提交]**，然後點選/按一 **[!UICONTROL 下完成]** ，以關閉確認訊息。新任務的通知將發送給批准者。
-1. 以核准者身分登入[!DNL Experience Manager]資產，並導覽至資產UI。 若要核准資產，請按一下/點選「**[!UICONTROL 通知]**」圖示，然後從清單中選取檢閱工作。
+1. 登入 [!DNL Experience Manager] 以核准者身分瀏覽至資產UI。 若要核准資產，請按一下/點選 **[!UICONTROL 通知]** 表徵圖，然後從清單中選擇審閱任務。
 
    ![通知](assets/notification.png)
 
@@ -61,7 +65,7 @@ Adobe Experience Manager Assets可讓您為資料夾或集合中的資產設定�
 
    ![review_task](assets/review_task.png)
 
-1. 點選/按一下工具列中的&#x200B;**[!UICONTROL Complete]**&#x200B;圖示。 在對話方塊中，輸入註解，然後點選/按一下&#x200B;**[!UICONTROL Complete]**&#x200B;以確認。
+1. 點選/按一下 **[!UICONTROL 完成]** 圖示。 在對話方塊中，輸入註解，然後點選/按一下  **[!UICONTROL 完成]** 確認。
 1. 導覽至「資產」UI，然後開啟資料夾。 資產的核准狀態圖示會同時顯示在「卡片」和「清單」檢視中。
 
    **卡片檢視**
@@ -79,30 +83,30 @@ Adobe Experience Manager Assets可讓您為資料夾或集合中的資產設定�
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. （可選）從&#x200B;**[!UICONTROL Project]**&#x200B;清單中，選擇要與審閱任務關聯的項目。 預設情況下，選擇&#x200B;**[!UICONTROL None]**&#x200B;選項。 如果您不想將任何項目與審閱任務關聯，請保留此選擇。
+1. （選用）從 **[!UICONTROL 專案]** 清單中，選擇要與審閱任務關聯的項目。 依預設， **[!UICONTROL 無]** 選項。 如果您不想將任何項目與審閱任務關聯，請保留此選擇。
 
    >[!NOTE]
    >
-   >只有您具有編輯者層級權限（或更高）的專案會顯示在&#x200B;**[!UICONTROL Projects]**&#x200B;清單中。
+   >在 **[!UICONTROL 專案]** 清單。
 
-1. 輸入複核任務的名稱，然後從&#x200B;**[!UICONTROL 分配到]**&#x200B;清單中選擇批准者。
+1. 輸入複核任務的名稱，然後從 **[!UICONTROL 指派給]** 清單。
 
    >[!NOTE]
    >
-   >在&#x200B;**[!UICONTROL 分配到]**&#x200B;清單中，所選項目的成員/組可作為批准者。
+   >所選項目的成員/組在 **[!UICONTROL 指派給]** 清單。
 
 1. 輸入複核任務的說明、任務優先順序和到期日。
 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. 點選/按一 **[!UICONTROL 下提交]**，然後點選/按一 **[!UICONTROL 下完成]** ，以關閉確認訊息。新任務的通知將發送給批准者。
-1. 以核准者身分登入[!DNL Experience Manager]資產，並導覽至資產主控台。 若要核准資產，請點選/按一下「**[!UICONTROL 通知]**」圖示，然後從清單中選取檢閱工作。
+1. 登入 [!DNL Experience Manager] 作為核准者的資產，並導覽至「資產」主控台。 若要核准資產，請點選/按一下 **[!UICONTROL 通知]** 表徵圖，然後從清單中選擇審閱任務。
 1. 在「復 **[!UICONTROL 查任務]** 」頁中，檢查複查任務的詳細資訊，然後點選/按一下「 **[!UICONTROL 複查」]**。
-1. 集合中的所有資產都會顯示在審核頁面上。 選取資產，然後點選/按一下&#x200B;**[!UICONTROL 核准/拒絕]**&#x200B;圖示，以視情況核准或拒絕資產。
+1. 集合中的所有資產都會顯示在審核頁面上。 選取資產，然後點選/按一下 **[!UICONTROL 批准/拒絕]** 圖示以視情況核准或拒絕資產。
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. 點選/按一下工具列中的&#x200B;**[!UICONTROL Complete]**&#x200B;圖示。 在對話方塊中，輸入註解，然後點選/按一下&#x200B;**[!UICONTROL Complete]**&#x200B;以確認。
+1. 點選/按一下 **[!UICONTROL 完成]** 圖示。 在對話方塊中，輸入註解，然後點選/按一下 **[!UICONTROL 完成]** 確認。
 1. 導覽至「集合」主控台，然後開啟集合。 資產的核准狀態圖示會同時顯示在「卡片」和「清單」檢視中。
 
    **卡片檢視**

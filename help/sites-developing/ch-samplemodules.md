@@ -1,8 +1,8 @@
 ---
 title: 範例ContextHub UI模組類型
-seo-title: 範例ContextHub UI模組類型
+seo-title: Sample ContextHub UI Module Types
 description: ContextHub提供數個範例UI模組，您可在解決方案中使用
-seo-description: ContextHub提供數個範例UI模組，您可在解決方案中使用
+seo-description: ContextHub provides several sample UI modules that you can use in your solutions
 uuid: af1a8fa1-8f8b-49c8-b2ca-ba92c955871e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
 exl-id: 637ec80e-320f-4cf7-b09a-9f3cbf47bb63
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 0%
+source-wordcount: '1212'
+ht-degree: 1%
 
 ---
 
-# 範例ContextHub UI模組類型{#sample-contexthub-ui-module-types}
+# 範例ContextHub UI模組類型 {#sample-contexthub-ui-module-types}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ContextHub提供數個範例UI模組，您可在解決方案中使用。 提供下列資訊：
 
@@ -25,18 +29,18 @@ ContextHub提供數個範例UI模組，您可在解決方案中使用。 提供�
 * 在何處查找原始碼，以便您可以開啟它以學習。
 * 如何設定UI模組。
 
-有關將UI模組添加到ContextHub的資訊，請參閱[添加UI模組](/help/sites-administering/contexthub-config.md#adding-a-ui-module)。 有關開發UI模組的資訊，請參閱[建立ContextHub UI模組類型](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)。
+如需將UI模組新增至ContextHub的相關資訊，請參閱 [新增UI模組](/help/sites-administering/contexthub-config.md#adding-a-ui-module). 如需開發UI模組的相關資訊，請參閱 [建立ContextHub UI模組類型](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
-## contexthub.base UI模組類型{#contexthub-base-ui-module-type}
+## contexthub.base UI模組類型 {#contexthub-base-ui-module-type}
 
 contexthub.base UI模組類型是所有其他UI模組類型的基本類型。 因此，它提供轉譯儲存資料的通用功能。
 
 提供下列功能：
 
-* **標題和圖示：** 指定UI模組的標題和圖示。您可以使用URL或Coral UI圖示庫來參照圖示。
+* **標題和圖示：** 指定UI模組的標題和圖示。 您可以使用URL或Coral UI圖示庫來參照圖示。
 * **儲存資料：** 識別要從中擷取資料的一或多個儲存。
 * **內容：** 指定UI模組中顯示的內容，與ContextHub工具列中顯示的內容相同。
-* **彈出式內容：** 指定在按一下或點選UI模組時，出現在彈出式視窗中的內容。
+* **彈出式內容：** 指定在按一下或點選UI模組時，彈出視窗中顯示的內容。
 * **全螢幕模式：** 控制是否允許全螢幕模式。
 
 原始碼位於/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js。
@@ -45,33 +49,33 @@ contexthub.base UI模組類型是所有其他UI模組類型的基本類型。 �
 
 使用JSON格式的Javascript物件來設定contexthub.base UI模組。 納入下列任一屬性以設定UI模組功能：
 
-* **影像：** 要顯示為圖示之影像的URL。
-* **圖示：** Coral UI圖 [示類](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 別的名稱。如果您同時為圖示和影像屬性指定值，則會使用影像。
+* **影像：** 要顯示為圖示的影像URL。
+* **圖示：** 名稱 [Coral UI圖示](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) 類別。 如果您同時為圖示和影像屬性指定值，則會使用影像。
 
-* **title:** UI模組的標題。當指標暫停在UI模組圖示上時，標題就會顯示。
-* **fullscreen:** 指出UI模組是否支援全螢幕模式的布林值。使用`true`支援全螢幕，使用`false`防止全螢幕模式。
+* **標題：** UI模組的標題。 當指標暫停在UI模組圖示上時，標題就會顯示。
+* **全螢幕：** 指出UI模組是否支援全螢幕模式的布林值。 使用 `true` 支援全螢幕和 `false` 防止全螢幕模式。
 
-* **範本：** Handlebarstemplate，指 [](https://handlebarsjs.com/) 定要在ContextHub工具列中呈現的內容。最多使用兩個`<p>`標籤。
+* **範本：** A [手把](https://handlebarsjs.com/) 指定要在ContextHub工具列中呈現內容的範本。 最多使用兩個 `<p>` 標籤。
 
-* **storeMapping:** 索引鍵/存放區對應。使用Handlebar範本中的索引鍵存取相關聯的ContextHub存放區資料。
-* **list:** 按一下UI模組時，在彈出式視窗中顯示為清單的項目陣列。如果包含此項目，請勿包含popoverTemplate。 值是物件的陣列，具有下列鍵值：
+* **storeMapping:** 金鑰/存放區對應。 使用Handlebar範本中的索引鍵存取相關聯的ContextHub存放區資料。
+* **清單：** 按一下UI模組時，要在彈出視窗中顯示為清單的項目陣列。 如果包含此項目，請勿包含popoverTemplate。 值是物件的陣列，具有下列鍵值：
 
    * 標題：要針對此項目顯示的文本
    * 影像：（選用）應顯示在左側的影像URL
    * 圖示：（可選）左側應顯示的CUI表徵圖類；如果指定影像，則忽略
-   * 已選取：（可選）一個布林值，它指定是否應將此項顯示為選定項(true=selected)。 依預設，選取的項目會以粗體字型顯示。 使用`listType`屬性來配置其他外觀（請參見下面）。
+   * 已選取：（可選）一個布林值，它指定是否應將此項顯示為選定項(true=selected)。 依預設，選取的項目會以粗體字型顯示。 使用 `listType` 屬性來設定其他外觀（請參閱下文）。
 
-* **listType:** 用於彈出式清單項目的樣式。使用下列其中一個值：
+* **listType:** 用於彈出式清單項目的樣式。 使用下列其中一個值：
 
    * 勾號
    * 核取方塊
    * 廣播
 
-* **popoverTemplate:** Handlebars範本，指定當按一下UI模組時，要在彈出視窗中呈現的內容。如果包括此項目，則不要包括`list`項目。
+* **pover範本：** Handlebars範本，指定當按一下UI模組時，要在彈出式視窗中呈現的內容。 如果您包括此項目，請勿包括 `list` 項目。
 
 ### 範例 {#example}
 
-下列範例會設定contexthub.base UI模組，以顯示[contexthub.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate)存放區的資訊。 `template`項目示範如何使用`storeMapping`項目建立的索引鍵，從存放區取得資料。
+下列範例會設定contexthub.base UI模組，以顯示 [contexthub.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) 儲存。 此 `template` 項目示範如何使用 `storeMapping` 項目已建立。
 
 ```xml
 {
@@ -86,9 +90,9 @@ contexthub.base UI模組類型是所有其他UI模組類型的基本類型。 �
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-## contexthub.browserinfo UI模組類型{#contexthub-browserinfo-ui-module-type}
+## contexthub.browserinfo UI模組類型 {#contexthub-browserinfo-ui-module-type}
 
-contexthub.browserinfo UI模組會顯示用戶端網頁瀏覽器和作業系統的相關資訊。 根據[contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate)儲存候選項，從surferinfo儲存中獲得資訊。
+contexthub.browserinfo UI模組會顯示用戶端網頁瀏覽器和作業系統的相關資訊。 資訊從Surferinfo存放區取得，根據 [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) 儲存候選項。
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -107,9 +111,9 @@ contexthub.browserinfo UI模組的例項不需要「詳細設定」的值。 下
 }
 ```
 
-## contexthub.datetime UI模組類型{#contexthub-datetime-ui-module-type}
+## contexthub.datetime UI模組類型 {#contexthub-datetime-ui-module-type}
 
-contexthub.datetime UI模組顯示儲存在名為datetime的儲存中的日期和時間，該儲存基於[contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate)儲存候選。
+contexthub.datetime UI模組顯示儲存在名為datetime(基於 [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) 儲存候選項。
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -132,9 +136,9 @@ contexthub.datetime UI模組的實例不需要「詳細配置」的值。 下列
 }
 ```
 
-## contexthub.location UI模組類型{#contexthub-location-ui-module-type}
+## contexthub.location UI模組類型 {#contexthub-location-ui-module-type}
 
-contexthub.location UI模組會顯示用戶端的經度和緯度。 模組會提供彈出視窗，顯示Google地圖，您可以按一下該地圖來變更目前位置。 模組從名為geolocation的ContextHub儲存區獲取資訊，該儲存區基於[contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate)儲存候選。
+contexthub.location UI模組會顯示用戶端的經度和緯度。 模組提供彈出視窗，可顯示Google地圖，您可以按一下該地圖來變更目前位置。 模組從名為geolocation的ContextHub存放區(以 [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) 儲存候選項。
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
@@ -175,9 +179,9 @@ contexthub.location UI模組的例項不需要「詳細設定」的值。 下列
 }
 ```
 
-## contexthub.screen-orientation UI模組類型{#contexthub-screen-orientation-ui-module-type}
+## contexthub.screen-orientation UI模組類型 {#contexthub-screen-orientation-ui-module-type}
 
-contexthub.screen-orientation UI模組會顯示用戶端的目前螢幕方向。 雖然預設為停用，但模組會提供彈出視窗，讓您選取方向。 該模組從ContextHub儲存區獲取資訊，該儲存區命名模擬器基於[granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate)儲存候選。
+contexthub.screen-orientation UI模組會顯示用戶端的目前螢幕方向。 雖然預設為停用，但模組會提供彈出視窗，讓您選取方向。 模組從ContextHub儲存區獲取資訊，該儲存區命名的模擬器基於 [granite.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) 儲存候選項。
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
@@ -185,7 +189,7 @@ UI模組的來源位於/libs/granite/contexthub/components/modules/screen-orient
 
 ### 設定 {#configuration-5}
 
-Contexthub.screen-orientation UI模組的例項不需要「詳細設定」的值。 下列JSON文字代表模組的預設設定。 請注意，預設情況下，`clickable`屬性為`false`。 如果覆蓋將`clickable`設定為`true`的預設配置，按一下模組將顯示彈出窗口，您可以在其中選擇方向。
+Contexthub.screen-orientation UI模組的例項不需要「詳細設定」的值。 下列JSON文字代表模組的預設設定。 請注意， `clickable` 屬性為 `false` 依預設。 如果您覆寫要設定的預設設定 `clickable` to `true`，按一下模組會顯示快顯視窗，您可在其中選取方向。
 
 ```xml
 {
@@ -199,9 +203,9 @@ Contexthub.screen-orientation UI模組的例項不需要「詳細設定」的值
 }
 ```
 
-## contexthub.tagcloud UI模組類型{#contexthub-tagcloud-ui-module-type}
+## contexthub.tagcloud UI模組類型 {#contexthub-tagcloud-ui-module-type}
 
-contexthub.tagcloud UI模組會顯示標籤的相關資訊。 在工具列上，UI模組會顯示標籤數。 彈出式功能表會顯示新增標籤的標籤雲和文字方塊。 UI模組從名為tagcloud的ContextHub存放區取得資訊，該存放區是以[contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store)存放區候選項為基礎。
+contexthub.tagcloud UI模組會顯示標籤的相關資訊。 在工具列上，UI模組會顯示標籤數。 彈出式功能表會顯示新增標籤的標籤雲和文字方塊。 UI模組會從名為tagcloud的ContextHub存放區(以 [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) 儲存候選項。
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -223,9 +227,9 @@ Contexthub.tagcloud UI模組的例項不需要「詳細設定」的值。 下列
 }
 ```
 
-## granite.profile UI模組類型{#granite-profile-ui-module-type}
+## granite.profile UI模組類型 {#granite-profile-ui-module-type}
 
-granite.profile ContextHub UI模組會顯示目前使用者的顯示名稱。 彈出式功能會顯示使用者的登入名稱，並讓您變更顯示名稱的值。 UI模組從名為profile的ContextHub存放區取得資訊，該存放區是以[granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate)存放候選項為基礎。
+granite.profile ContextHub UI模組會顯示目前使用者的顯示名稱。 彈出式功能會顯示使用者的登入名稱，並讓您變更顯示名稱的值。 UI模組會從名為設定檔的ContextHub存放區(以 [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) 儲存候選項。
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 

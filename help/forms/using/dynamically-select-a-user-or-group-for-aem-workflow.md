@@ -8,14 +8,18 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 0%
+source-wordcount: '956'
+ht-degree: 1%
 
 ---
 
 # 動態選取以AEM Forms為中心的工作流程步驟的使用者或群組 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 了解如何在執行階段為AEM Forms工作流程選取使用者或群組。
 

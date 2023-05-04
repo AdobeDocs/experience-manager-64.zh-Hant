@@ -8,14 +8,18 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5619'
+source-wordcount: '5655'
 ht-degree: 3%
 
 ---
 
 # 設定 Dynamic Media - Scene7 模式 {#configuring-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 如果您使用針對不同環境（例如開發、測試和即時生產）設定的Adobe Experience Manager，則必須為每個環境設定Dynamic MediaCloud Services。
 
@@ -105,7 +109,7 @@ Feature Pack 18912可讓您透過FTP大量內嵌資產，或在Experience Manage
    >
    >啟動資產後，任何更新都會立即上線發佈至S7傳送。
 
-   ![dynamicmediaconfiguration_updated](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. 點選 **[!UICONTROL 儲存]**.
 1. 若要在發佈Dynamic Media內容之前安全地預覽，您必須「允許清單」Experience Manager製作例項，才能連線至Dynamic Media:
@@ -550,7 +554,7 @@ Scene7上傳連線設定會將Experience Manager Assets同步至Dynamic Media Cl
 
 **若要更新Scene7上傳連線：**
 
-1. 導航到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. 瀏覽到 `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. 在 [!UICONTROL 連接數] 欄位和/或 [!UICONTROL 活動作業超時] 欄位，視需要變更數字。
 
    此 **[!UICONTROL 連接數]** 設定會控制Experience Manager上傳至Dynamic Media所允許的HTTP連線數量上限；通常，十個連線的預先定義值就足夠了。

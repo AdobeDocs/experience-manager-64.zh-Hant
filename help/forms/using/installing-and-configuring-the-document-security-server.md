@@ -1,21 +1,25 @@
 ---
 title: 安裝和配置文檔安全伺服器
-seo-title: 安裝和配置文檔安全伺服器
-description: '使用文檔安全性來安全地分發您以支援的格式保存的任何資訊。 只有授權用戶才能訪問受保護的文檔。 '
-seo-description: '使用文檔安全性來安全地分發您以支援的格式保存的任何資訊。 只有授權用戶才能訪問受保護的文檔。 '
+seo-title: Installing and configuring the document security server
+description: 使用文檔安全性來安全地分發您以支援的格式保存的任何資訊。 只有授權用戶才能訪問受保護的文檔。
+seo-description: Use document security to safely distribute any information that you have saved in a supported format. Only authorized users can access protected documents.
 uuid: 04c67a84-01ad-45b7-a590-822b1c067d52
 contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 9ce5e89b-76c9-464d-9caf-26a387c698fa
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 0%
+source-wordcount: '642'
+ht-degree: 1%
 
 ---
 
 # 安裝和配置文檔安全伺服器 {#installing-and-configuring-the-document-security-server}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 使用文檔安全性來安全地分發您以支援的格式保存的任何資訊。 只有授權用戶才能訪問受保護的文檔。
 
@@ -25,11 +29,11 @@ Adobe Experience Manager Forms檔案安全性可確保只有獲授權的使用�
 
 策略儲存在Document Security伺服器上；通過客戶端應用程式將策略應用到文檔。 將策略應用於文檔時，策略中指定的機密設定將保護文檔包含的資訊。 您可以將受策略保護的文檔分發給受策略授權的收件人。
 
-文檔安全性還提供了客戶端、查看器和索引器，以保護文檔、查看受保護的文檔以及為受保護的文檔編製索引。 有關文檔安全性的詳細資訊，請參閱[關於文檔安全性](/help/forms/using/admin-help/document-security.md)。
+文檔安全性還提供了客戶端、查看器和索引器，以保護文檔、查看受保護的文檔以及為受保護的文檔編製索引。 有關文檔安全性的詳細資訊，請參見 [關於檔案安全性](/help/forms/using/admin-help/document-security.md).
 
 ## 部署拓撲  {#deployment-topology}
 
-檔案安全性功能僅可在JEE上的AEM Forms中使用。 在JEE上需要單一AEM Forms例項。 您也可以視需要建立AEM Forms伺服器的叢集或伺服器陣列。 以下拓撲是運行文檔安全功能的指示性拓撲。 有關拓撲的詳細資訊，請參閱[AEM Forms](aem-forms-architecture-deployment.md)的體系結構和部署拓撲。
+檔案安全性功能僅可在JEE上的AEM Forms中使用。 在JEE上需要單一AEM Forms例項。 您也可以視需要建立AEM Forms伺服器的叢集或伺服器陣列。 以下拓撲是運行文檔安全功能的指示性拓撲。 有關拓撲的詳細資訊，請參見 [適用於AEM Forms的架構和部署拓撲](aem-forms-architecture-deployment.md).
 
 <!--fix above link-->
 
@@ -43,9 +47,9 @@ Adobe Experience Manager Forms檔案安全性可確保只有獲授權的使用�
 
 執行下列步驟以在JEE上安裝和設定AEM Forms:
 
-1. 從[Adobe授權網站(LWS)](https://licensing.adobe.com/)下載JEE版AEM 6.4 Forms安裝程式。 您需要有效的維護和支援合同才能下載安裝程式。
-1. 請閱讀JEE支援平台上的[AEM Forms檔案](/help/forms/using/aem-forms-jee-supported-platforms.md)，並確保有軟體、硬體、作業系統、應用程式伺服器、資料庫、JDK和其他基礎架構已準備好在JEE上安裝AEM Forms。
-1. （僅限非完整安裝）請閱讀[準備安裝AEM Forms單一伺服器](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)或[準備安裝AEM Forms伺服器叢集](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)，並準備讓您的環境在JEE上安裝和設定AEM Forms。
+1. 從下載AEM 6.4 Forms on JEE安裝程式 [Adobe授權網站(LWS)](https://licensing.adobe.com/). 您需要有效的維護和支援合同才能下載安裝程式。
+1. 閱讀 [AEM Forms on JEE支援平台檔案](/help/forms/using/aem-forms-jee-supported-platforms.md) 並確保軟體、硬體、作業系統、應用程式伺服器、資料庫、JDK和其他基礎架構已準備好在JEE上安裝AEM Forms。
+1. （僅非全包安裝）閱讀 [準備安裝AEM Forms單一伺服器](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64) 或 [準備安裝AEM Forms伺服器叢集](https://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64) 並準備好您的環境，以在JEE上安裝和設定AEM Forms。
 1. 根據您的環境和應用程式伺服器，選擇以下文檔之一，然後按照說明完成安裝
 
    * [使用JBoss統包在JEE上安裝和部署AEM Forms](https://www.adobe.com/go/learn_aemforms_installTurnkey_64)

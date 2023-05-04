@@ -1,5 +1,5 @@
 ---
-title: 使用定位模式製作目標內容
+title: 使用定位模式編寫目標內容
 seo-title: Authoring Targeted Content Using Targeting Mode
 description: 鎖定目標模式和Target元件提供工具，用於建立體驗的內容
 seo-description: Targeting mode and the Target component provide tools for creating content for experiences
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
 exl-id: 9b973d03-fd0a-4c22-8045-7dddc024e553
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5349'
+source-wordcount: '5385'
 ht-degree: 6%
 
 ---
 
-# 使用定位模式製作目標內容{#authoring-targeted-content-using-targeting-mode}
+# 使用定位模式編寫目標內容{#authoring-targeted-content-using-targeting-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 使用AEM的「定位」模式製作目標內容。 鎖定目標模式和Target元件提供工具來建立體驗的內容：
 
@@ -291,7 +295,7 @@ ht-degree: 6%
    >如果由管理員設定，則可能需要明確設定位置。
    >
    >管理員可以決定是否需要在 **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
-   >要要求用戶輸入位置，請選中「強制 **位置** 」複選框。
+   要要求用戶輸入位置，請選中「強制 **位置** 」複選框。
 
 1. 選取您要建立選件的體驗。
 1. 建立選件：
@@ -572,19 +576,19 @@ ht-degree: 6%
    所有量度也有您可定義的進階設定。 選擇 **進階設定** 來存取那些。 請參閱上表中成功量度計算方式的定義，並參閱 [Adobe Target檔案](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
-   >必須至少定義一個目標。
+   必須至少定義一個目標。
 
    ![chlimage_1-85](assets/chlimage_1-85.png)
 
    >[!NOTE]
-   >如果量度中缺少資訊，量度周圍會出現紅線。
+   如果量度中缺少資訊，量度周圍會出現紅線。
 
 1. 按一下 **新增量度** 設定其他成功量度。
 
    ![chlimage_1-86](assets/chlimage_1-86.png)
 
    >[!NOTE]
-   >您可以按一下或點選三個點，然後按一下或點選，以移除其他目標 **刪除**. AEM要求您至少定義一個目標。
+   您可以按一下或點選三個點，然後按一下或點選，以移除其他目標 **刪除**. AEM要求您至少定義一個目標。
 
 1. 如果您想要進一步控製成功量度的計算方式，請按一下或點選 **進階設定** 來存取那些。
 1. 按一下「**儲存**」。
@@ -606,7 +610,7 @@ ht-degree: 6%
 如果載入設定檔時頁面上出現非預期的內容，請檢查此清單中每個項目的設定。
 
 >[!NOTE]
->如果您使用A/B測試，則模擬體驗時會根據流量百分比顯示。 這是由Adobe Target控制，可能會導致作者產生非預期的結果。 （_author活動會與特定設定同步，以允許在模擬期間重新評估。） 作者可能需要重新整理，才能根據其流量設定查看其他體驗。
+如果您使用A/B測試，則模擬體驗時會根據流量百分比顯示。 這是由Adobe Target控制，可能會導致作者產生非預期的結果。 （_author活動會與特定設定同步，以允許在模擬期間重新評估。） 作者可能需要重新整理，才能根據其流量設定查看其他體驗。
 
 若要模擬訪客的體驗，請使用下列工具：
 
@@ -699,7 +703,7 @@ ht-degree: 6%
 </table>
 
 >[!NOTE]
->選取元件並將其設為可目標時，AEM也會取代元件並插入Adobe Target元件。 (Adobe Target元件不僅會在您手動新增至頁面時使用，也會在您定位現有元件時使用。)
+選取元件並將其設為可目標時，AEM也會取代元件並插入Adobe Target元件。 (Adobe Target元件不僅會在您手動新增至頁面時使用，也會在您定位現有元件時使用。)
 
 如果您選取「用戶端內容」（用戶端）作為引擎：
 

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2912'
+source-wordcount: '2948'
 ht-degree: 2%
 
 ---
 
 # 管理一般電子商務{#administering-generic-ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM通用解決方案提供管理存放在存放庫中的商務資訊的方法（與使用外部電子商務引擎相反）。 這包括：
 
@@ -224,7 +228,7 @@ AEM通用解決方案提供管理存放在存放庫中的商務資訊的方法�
 
 您可以使用CRXDE Lite修改現有小面或新增小面：
 
-1. 導航到:
+1. 瀏覽到:
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
@@ -386,7 +390,7 @@ AEM通用解決方案提供管理存放在存放庫中的商務資訊的方法�
 1. 導覽至您要新增元件的頁面。
 1. 將元件拖放至頁面中。
 1. 從 [資產瀏覽器](/help/sites-authoring/author-environment-tools.md#assets-browser).
-1. 您可以:
+1. 您可以執行下列兩個動作中的一個:
 
    * 按一下元件，然後按一下「編輯」圖示
    * 按兩下

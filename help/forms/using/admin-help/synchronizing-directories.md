@@ -1,5 +1,5 @@
 ---
-title: '同步目錄 '
+title: 同步目錄
 seo-title: Synchronizing directories
 description: 了解如何使用手動或計畫同步將用戶管理資料庫與源目錄伺服器的更改同步。
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '1016'
 ht-degree: 0%
 
 ---
 
 # 同步目錄 {#synchronizing-directories}
 
-要同步域，您可以選擇執行手動或計畫的同步。 *手動同步*&#x200B;同步任何選定域。 *計畫同步*&#x200B;同步所有域。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+要同步域，您可以選擇執行手動或計畫的同步。 A *手動同步* 同步任何選定域。 A *排程同步* 同步所有域。
 
 目錄同步用於將您在目錄設定中指定的目錄伺服器的詳細資訊提取到用戶管理資料庫中。 之後，如果目錄伺服器上發生更改或更新，您也可以手動同步。 例如，如果新增了使用者和群組或對使用者帳戶進行了變更，則可以執行手動同步。
 
@@ -35,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe®LiveCycle® Content Services ES（已過時）是隨LiveCycle安裝的內容管理系統。 它使用戶能夠設計、管理、監控和優化以人為中心的流程。 內容服務（已過時）支援將於12/31/2014終止。 請參閱[Adobe產品生命週期文檔](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
+>Adobe®LiveCycle® Content Services ES（已過時）是隨LiveCycle安裝的內容管理系統。 它使用戶能夠設計、管理、監控和優化以人為中心的流程。 內容服務（已過時）支援將於12/31/2014終止。 請參閱 [Adobe產品生命週期檔案](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## 啟用增量目錄同步 {#enable-delta-directory-synchronization}
 
@@ -53,7 +57,7 @@ ht-degree: 0%
 
 1. 在管理控制台中，按一下「設定>使用者管理>網域管理」。
 1. 在「增量同步」(Delta Synch)下，選中複選框，然後按一下「保存」(Save)。
-1. 編輯將使用增量目錄同步功能的每個企業域的目錄設定。 在「用戶設定」和「組設定」頁上，找到「修改時間戳」設定，並輸入`modify TimeStamp`作為值。 有關編輯企業域的詳細資訊，請參閱[編輯和轉換現有域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)。
+1. 編輯將使用增量目錄同步功能的每個企業域的目錄設定。 在「用戶設定」和「組設定」頁上，找到「修改時間戳」設定並輸入 `modify TimeStamp` 作為值。 如需編輯企業網域的詳細資訊，請參閱 [編輯和轉換現有網域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## 在同步期間啟用或禁用詳細記錄 {#enable-or-disable-detailed-logging-during-synchronization}
 
@@ -77,7 +81,7 @@ ht-degree: 0%
 1. （可選）若要將使用者和群組資訊推送至內容服務（已淘汰），請選取此選項，將使用者和群組推送至已註冊的外部主要儲存提供者選項。 透過「使用者和群組」頁面新增使用者和群組時，也適用此選項。
 1. 為要同步的每個企業域選擇複選框，然後按一下「立即同步」。
 
-   如果選擇多個域，則可同時運行所有域的域同步。 但是，如果單獨選擇域，則一次只能運行一個域同步。
+   如果選擇多個域，則可以同時運行所有域的域同步。 但是，如果單獨選擇域，則一次只能運行一個域同步。
 
 ## 計畫目錄同步 {#schedule-directory-synchronization}
 

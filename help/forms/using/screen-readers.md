@@ -10,14 +10,18 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
 exl-id: c27eb771-d390-4534-8e67-f1277550e760
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '337'
-ht-degree: 0%
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
 # HTML5表單的螢幕助讀程式 {#screen-readers-for-html-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 HTML5表單元件會將XFA表單範本轉譯為HTML5格式。 所有支援HTML5的標準瀏覽器都可轉譯這些表單。 為了支援PDF和HTML5表單的類似資料擷取體驗，PDF forms的版面會保留在HTML5表單中。
 

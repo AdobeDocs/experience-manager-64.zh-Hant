@@ -1,8 +1,8 @@
 ---
 title: 指定XCI配置選項
-seo-title: 指定XCI配置選項
+seo-title: Specify XCI configuration options
 description: 了解如何指定XCI設定選項。
-seo-description: 了解如何指定XCI設定選項。
+seo-description: Learn how to specify XCI configuration options.
 uuid: cf9e544d-63cd-4fad-8f89-bdb46eeef409
 contentOwner: admin
 content-type: reference
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f38ebd69-8d1c-49b6-824f-4bf0ec8a8953
 exl-id: 5156bb1c-8ad6-498c-aaf7-6474ffa8c83c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 1%
+source-wordcount: '165'
+ht-degree: 4%
 
 ---
 
-# 指定XCI配置選項{#specify-xci-configuration-options}
+# 指定XCI配置選項 {#specify-xci-configuration-options}
 
-輸出可讓您指定用於呈現的自訂XCI檔案。 （請參閱[指定輸出的檔案位置](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)。） 依預設，輸出會覆寫XCI檔案中指定的部分選項，包括：
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+輸出可讓您指定用於呈現的自訂XCI檔案。 (請參閱 [指定輸出的檔案位置](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).) 依預設，輸出會覆寫XCI檔案中指定的部分選項，包括：
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

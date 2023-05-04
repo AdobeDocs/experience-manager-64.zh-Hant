@@ -1,8 +1,8 @@
 ---
 title: WCAG 2.0快速指南
-seo-title: WCAG 2.0快速指南
+seo-title: Quick Guide to WCAG 2.0
 description: 閱讀WCAG 2.0無障礙指引的快速概述。
-seo-description: 閱讀WCAG 2.0無障礙指引的快速概述。
+seo-description: Read a quick overview of the WCAG 2.0 accessibility guidelines.
 uuid: a5cf463e-89e9-4cc0-9c91-69a1fd3d8ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,18 +10,22 @@ topic-tags: managing-accessibility
 content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
 exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1708'
 ht-degree: 82%
 
 ---
 
-# WCAG 2.0{#quick-guide-to-wcag}快速指南
+# WCAG 2.0快速指南{#quick-guide-to-wcag}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM的開發目的，是為了最大程度地遵循「網頁內容可及性指引」：
 
-[網頁內容可及性指引2.0版(WCAG2)](https://www.w3.org/TR/WCAG/)是由[全球資訊網協會(W3C)](https://www.w3.org/)根據其[網頁可及性計畫(WAI)](https://www.w3.org/WAI/)所制定的一組國際公認的指引。
+此 [網頁內容可及性指引2.0版(WCAG2)](https://www.w3.org/TR/WCAG/) 是國際公認的准則 [全球資訊網協會(W3C)](https://www.w3.org/) 在 [網路無障礙計畫(WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.0 包含一系列無需仰賴技術的指引和成功標準，有助身心障礙人士存取與使用網路內容。這些標準可為網路內容作者、設計人員和開發人員提供建議，確保他們製作的資源能盡可能方便讓更多使用者存取，無論使用者有任何身心障礙，例如視障、聽力損失、學習障礙、年齡相關限制等均可使用。
 
@@ -35,11 +39,11 @@ WCAG 2.0 包含一系列無需仰賴技術的指引和成功標準，有助身�
 
 WCAG 2.0 的目的是提供符合以下條件的指引：
 
-* 是&#x200B;**技術無關：**
+* 是 **技術無關：**
 
-   換言之，可套用至多種網頁內容格式（而不只是HTML）的准則。 因此，WCAG 2.0 可涵蓋的範圍包括以 PDF、Flash、JavaScript 和其他目前和未來網路技術所產生或提供的內容。這旨在解決WCAG 1.0公認的弱點，因為WCAG以HTML為主，而犧牲其他網頁內容格式。
+   換言之，可套用至多種網頁內容格式的指引，而不只是HTML。 因此，WCAG 2.0 可涵蓋的範圍包括以 PDF、Flash、JavaScript 和其他目前和未來網路技術所產生或提供的內容。這旨在解決WCAG 1.0公認的弱點，因為WCAG 1.0以犧牲其他網頁內容格式為代價，著重於HTML。
 
-* 為&#x200B;**可測試：**
+* 是 **測試：**
 
    每則指引的編寫方式都能客觀測試，以確保無障礙專家小組一般都同意該指引已符合要求。 無障礙指引的挑戰之一在於，雖然部分指引可接受技術性檢驗，但其他部分仍需人為判斷，才能確定是否確實符合要求。WCAG 2.0的編寫目的，是為了減少WCAG 1.0指引和檢查點中出現的主觀性。
 
@@ -90,11 +94,11 @@ WCAG 2.0包含四項無障礙設計的重要原則。 說明如下：
 
 ### WCAG 2.0 資源 {#wcag-resources}
 
-* [WCAG 2.0所有相關檔案的概述](https://www.w3.org/WAI/intro/wcag.php);
+* [所有WCAG 2.0相關檔案的概述](https://www.w3.org/WAI/intro/wcag.php);
 * [說明不同元件彼此間的關係](https://www.w3.org/WAI/intro/wcag20);
 * [WCAG 2.0 常見問題](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
-### Techniques for WCAG 2.0 (WCAG 2.1 的專用技術) {#techniques-for-wcag}
+### Techniques for WCAG 2.0 (WCAG 2.1 的專用技術)  {#techniques-for-wcag}
 
 WCAG 2.0 的專用技術闡明於《[Techniques for WCAG 2.0](https://www.w3.org/TR/WCAG20-TECHS/)》(WCAG 2.1 的專用技術) 頁面中。
 
@@ -119,7 +123,7 @@ WCAG 2.0 的專用技術闡明於《[Techniques for WCAG 2.0](https://www.w3.org
 
 技術清單尚未完整，WAI 仍持續以新範例來更新清單，藉此反映網路技術、設計方式和研究發現的發展。因此，非常建議您定期檢查技術清單中的新增內容。
 
-### Understanding WCAG 2.0 (了解 WCAG 2.1) {#understanding-wcag}
+### Understanding WCAG 2.0 (了解 WCAG 2.1)  {#understanding-wcag}
 
 此部分透過一系列文件提供建議，協助讀者了解特定指引和成功標準的目的。您可以[下載簡介，並取得其他詳細資訊的連結](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/Overview.html)。
 
@@ -139,7 +143,7 @@ WCAG 2.0 的專用技術闡明於《[Techniques for WCAG 2.0](https://www.w3.org
 
 您可在如下章節找到範例：[了解成功標準 1.1.1 (「非文字內容」)](https://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/text-equiv-all.html)。
 
-### How to Meet WCAG 2.0 (如何達成 WCAG 2.1) {#how-to-meet-wcag}
+### How to Meet WCAG 2.0 (如何達成 WCAG 2.1)  {#how-to-meet-wcag}
 
 《[How To Meet WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/)》(如何達成 WCAG 2.1) 頁面中提供「如何達成」指引的相關章節。該節提供 WCAG 的替代性簡報，將指引內容精簡至與讀者自身興趣或環境最相關的部分。讀者可以指定特定網路內容技術 (例如階層式樣式表或指令碼) 或指定特定優先層級，藉此篩選想要檢視的成功標準技術。
 

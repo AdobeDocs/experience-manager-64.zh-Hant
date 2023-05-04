@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 exl-id: d0da9390-2167-47ee-82fd-8c81d8d68a3e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '21517'
+source-wordcount: '21553'
 ht-degree: 23%
 
 ---
 
 # AEM 6.4 Service Pack發行說明 {#aem-service-pack-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 發行資訊 {#release-information}
 
@@ -96,7 +100,7 @@ AEM 6.4.8.0為重要更新，包含自AEM 6.4全面推出以來所推出的新�
 
 * 無法使用WinZip開啟從DAM下載的ZIP檔案(NPR-31745)。
 
-### Integrations {#integrations-6480}
+### 整合 {#integrations-6480}
 
 * 此 **公司** 和 **報表** 套裝下拉式功能表會隱藏一次 **報表來源** 在Experience Manager雲端服務中設定Adobe Analytics時選取(NPR-31729)。
 
@@ -181,7 +185,7 @@ AEM 6.4.7.0的部分關鍵重點為：
 * 重新處理和批次上傳的批次大小和工作流程步驟逾時現在可從Dynamic Media的UI設定。
 * 此 `pdfBrochure` 已在Scene 7雲端設定中設為false，以在IPS儲存記憶體。
 
-##### 資產 {#assets-6470}
+##### Assets {#assets-6470}
 
 **產品增強功能**
 
@@ -250,7 +254,7 @@ AEM 6.4.7.0的部分關鍵重點為：
 
 * PDF檔案沒有編列索引，且內容無法搜尋(CQ-4278916)。
 
-##### 網站 {#sites-6470}
+##### Sites {#sites-6470}
 
 * 當啟動以「僅促銷已修改的頁面」升級，並完成具有已修改頁面的「促銷」啟動時，只有已修改的頁面似乎會升級。 此外，當要升級的清單正確時，未修改的頁面仍顯示在清單底部(NPR-31314)。
 
@@ -282,7 +286,7 @@ AEM 6.4.7.0的部分關鍵重點為：
 
 * 將webconsole安全提供程式套件組合版本更新為1.2.4，以從webconsolesecurityprovider移除launchpad啟動器api的相依性(NPR-30885)。
 
-##### 平台 {#platform-6470}
+##### Platform {#platform-6470}
 
 * 未儲存 Jetty 型 HTTP 服務的緩衝區大小設定更新 (NPR-30925)。
 
@@ -410,7 +414,7 @@ AEM 6.4.6.0的部分關鍵重點為：
 * 無法透過簽入功能鎖定內容片段。 NPR-29923：CQ-4258785 的 Hotfix
 * SAML驗證處理常式中的簽名驗證失敗。 NPR-30379:GRANITE-26567的反向移植請求
 
-**複寫**
+**複製**
 
 * JCR工作階段/資源解析程式在OAuth實作期間，每次復寫至MAC / Brand Portal時都會遭到洩漏。 NPR-30000：Granite-26196 的 Hotfix
 
@@ -424,7 +428,7 @@ AEM 6.4.6.0的部分關鍵重點為：
 * 無法從Sites主控台執行目錄Blueprint。 NPR-29829：CQ-4271461 的 Hotfix
 * 產品中使用的資產不會在資產的「參考」區段中顯示任何對產品的參考，而資產路徑在移動資產時不會更新。 NPR-30542：CQ-4270247 的 Hotfix
 
-**平台**
+**Platform**
 
 * AEM預設郵件傳送者無法透過TLS v1.2傳送郵件至遠端SMTP伺服器。NPR-30476:GRANITE-26605的Hotfix
 
@@ -482,7 +486,7 @@ AEM 6.4.6.0的部分關鍵重點為：
 * 建立通信UI(CCR UI)會因錯誤變數（物件物件）而間歇性失敗。 NPR-29983：CQ-4273874 的 Hotfix
 * 當檔案片段的說明包含特殊字元，例如屬性中小於(&lt;)、大於(>)和&amp;符號時，信函草稿重新載入會失敗，但有例外。 NPR-29930：CQ-4252762 的 Hotfix
 
-**HTML5Forms**
+**HTML5 Forms**
 
 * 以瀏覽模式使用 NonVisual Desktop Access 來讀取 HTML5 Forms時，Chrome 瀏覽器在表單設計中的每個可縮放向量圖形 (SVG) 之前讀到「graphic」。NPR-30450：CQ-4274732 的 Hotfix
 
@@ -524,7 +528,7 @@ AEM 6.4.5.0的部分關鍵重點為：
 * 已停用 `AssetDownloadServlet` 依預設，AEM發佈執行個體上會有OSGi元件。 如需詳細資訊，請參閱 [從AEM下載資產](/help/assets/download-assets-from-aem.md).
 * 啟用資產的多網站管理員支援。 如需詳細資訊，請參閱 [使用MSM對資產重複使用資產](/help/assets/reuse-assets-using-msm.md).
 
-**資產**
+**Assets**
 
 * 檔案名稱中帶有縮寫符號的資產不會同步至Dynamic Media。 NPR-29538：CQ-4270592 的 Hotfix
 * 更新 DAM DMGateway 介面以提供 S3 多部分支援。NPR-29740：CQ-4226303 的 Hotfix
@@ -561,7 +565,7 @@ AEM 6.4.5.0的部分關鍵重點為：
 * 升級至AEM 6.4.3後，資產報表的查詢限制相關問題。NPR-28588:CQ-4262022、CQ-4260697的Hotfix
 * 下載功能會透過 assetdownload servlet 運用 AEM Assets 讓匿名使用者下載所有資產。NPR-27315、CQ-4254732的Hotfix
 
-**網站**
+**Sites**
 
 * JCR申訴標籤名稱應根據標籤標題自動填入。 NPR-28990：CQ-4199411 的 Hotfix
 * 在頁面屬性中新增的某些欄位上看不到取消繼承按鈕。 NPR-29079：CQ-4265686 的 Hotfix
@@ -591,7 +595,7 @@ AEM 6.4.5.0的部分關鍵重點為：
 * 無法將標籤大量新增至具有現有不同標籤的頁面。 NPR-28729：CQ-4262922 的 Hotfix
 * 網站管理員中未顯示排程啟動圖示。 NPR-28725：CQ-4263917 的 Hotfix
 
-**複寫**
+**複製**
 
 * 復寫代理元件中出現敏感資訊洩漏漏洞。 NPR-29612、NPR-24951:GRANITE-25070的Hotfix
 * cq/replication/components/agent元件中，使用者提供的資料沒有在輸出上逸出，導致儲存型跨網站指令碼(XSS)漏洞。 CQ-4266263 的 Hotfix
@@ -604,7 +608,7 @@ AEM 6.4.5.0的部分關鍵重點為：
 
 * AEM社群報表沒有顯示在AEM製作例項中。 CQ-4266294 的 Hotfix
 
-**平台**
+**Platform**
 
 * 安裝套件時，套件管理器中出現跨網站指令碼(XSS)。 NPR-29734、NPR-29713、NPR-29630:GRANITE-26161、GRANITE-
 * 多個儲存且反映的跨網站指令碼(XSS)，呈CRXDE Lite。 NPR-29634：GRANITE-26049 的 Hotfix
@@ -701,7 +705,7 @@ AEM 6.4.5.0表單的關鍵重點為：
 * 「建立通信UI」(CCR UI)中看不到在變數上設定的工具提示。 NPR-29739：CQ-4250533 的 Hotfix
 * 無法從信函中複製或貼上Omnisearch。 NPR-29808：CQ-4270783 的 Hotfix
 
-**HTML5Forms**
+**HTML5 Forms**
 
 * 在文字中新增空格時，文字欄位不允許填入到結尾。 NPR-28844：CQ-4260239 的 Hotfix
 
@@ -731,7 +735,7 @@ AEM 6.4.5.0表單的關鍵重點為：
 
 **包含 Feature Pack**
 
-**資產**
+**Assets**
 
 * 啟用資產的多網站管理員支援。 如需詳細資訊，請參閱 [使用MSM對資產重複使用資產](/help/assets/reuse-assets-using-msm.md). NPR-26450：CQ-4259922 的 Hotfix
 
@@ -767,7 +771,7 @@ AEM 6.4.4.0的部分關鍵重點為：
 * 新增檢查，忽略內容片段clientlibs中數字輸入多欄位的空白值。
 * 啟用對Microsoft Translator Text API v3的支援。
 
-**資產**
+**Assets**
 
 * ACP和股票整合遷移至AEM 6.4.4.0 NPR-27632
 * 稍後發佈含子資料夾的空白資產資料夾會使子資料夾消失。 NPR-27558：CQ-4254701 的 Hotfix
@@ -785,7 +789,7 @@ AEM 6.4.4.0的部分關鍵重點為：
 * 服務解析器未在SiteCatalyst配置中關閉。 NPR-28015：CQ-4259397 的 Hotfix
 * 在DAM中移動資產不會在Scene7上造成類似移動（p2p設定）。 NPR-28313：CQ-4261091 的 Hotfix
 
-**網站**
+**Sites**
 
 * （傳統UI）轉出清單中會顯示即時副本的一小部分。 NPR-28598、NPR-28574：CQ-4263410 的 Hotfix
 * 當cq:master為空或無效時，LiveRelationshipManagerImpl會擲回例外。 NPR-28590：CQ-4263115 的 Hotfix
@@ -832,7 +836,7 @@ AEM 6.4.4.0的部分關鍵重點為：
 
 * com.day.cq.personalization.impl.TeaserResourceEventHandler進入無限回圈，並導致發佈例項上的節點更新。 CQ-4263096 的 Hotfix
 
-**複寫**
+**複製**
 
 * 建立復寫內容com.day.cq.replication.AccessDeniedException時出錯。 NPR-28314：CQ-4261401 的 Hotfix
 * 在復寫代理中將使用者代理id設為管理員時，會話洩漏。 NPR-28220：CQ-4255517 的 Hotfix
@@ -852,7 +856,7 @@ AEM 6.4.4.0的部分關鍵重點為：
 * 如果6.4.4套用至6.4.3,Adobe Stock整合將無法運作。CQ-4266009的Hotfix
 * 即使在應用SP3修補程式後，仍缺少CF模型的連結。 CQ-4259029 的 Hotfix
 
-**平台**
+**Platform**
 
 * （傳統UI）升級至6.4.2後，基本報表元件中沒有編輯按鈕可用。NPR-28560:CQ-4262825的Hotfix
 * 使用結合property.operation=like和property.depth的查詢時，結果為InvalidQueryException。 NPR-28570：CQ-4262652 的 Hotfix
@@ -1003,13 +1007,13 @@ AEM 6.4.4.0表單的關鍵重點為：
 
 **包含 Feature Pack**
 
-**網站**
+**Sites**
 
 * 內容片段版本設定比較AEM 6.4的差異改善。NPR-26760:CQ-4248839的FP
 * AEM 6.4的內容片段變異差異改善。NPR-27866:CQ-4248839的FP
 * OSGI設定中的啟用功能 **AEM工作流程撤回功能標幟**. 撤回動作應在設定標幟後終止工作流程例項。 NPR-26451：CQ-4259090 的 Hotfix
 
-**平台**
+**Platform**
 
 * 增強的查詢產生器Facet擷取採用Oak API，適用於6.4。NPR-26674:CQ-4230337的FP
 
@@ -1043,7 +1047,7 @@ AEM 6.4.3.0的部分關鍵重點為：
 * 改善選取期間預留位置項目（卡片檢視和清單檢視）的處理方式。
 * 新增Managed Services的Adobe IMS驗證和Admin Console支援。
 
-**資產**
+**Assets**
 
 * 如果啟用「IDS分離」選項，「DAM更新資產」工作流程不會從INDD檔案中擷取參考。 NPR-26243;CQ-4250933的Hotfix
 * 使用資產大量編輯器發佈資產時，不會顯示成功訊息。 NPR-26252;CQ-4251688的Hotfix。
@@ -1060,7 +1064,7 @@ AEM 6.4.3.0的部分關鍵重點為：
 * 「元資料編輯器」頁包含無效項參數的Null指針異常。 NPR-26169;CQ-4241368的Hotfix。
 * 如果下拉式清單有選擇規則，且套用了必要規則，則在中繼資料編輯器中無法滿足必要規則。 NPR-27479;CQ-4251428的Hotfix
 
-**網站**
+**Sites**
 
 * 使用者可以使用內容原則，以內嵌全螢幕模式控制RTF編輯器功能，但無法使用內容原則控制「編輯對話方塊」RTF編輯器功能。 NPR-26750：CQ-4241130 的 Hotfix
 * 從全螢幕切換至浮動式對話方塊時，RTF編輯器將無法使用。 浮動檢視包含兩個RTF編輯器。 NPR-25589：CQ-4206008 的 Hotfix
@@ -1102,7 +1106,7 @@ AEM 6.4.3.0的部分關鍵重點為：
 
 * Dynamic Media不會對某些類型的資產使用已設定的Proxy。 NPR-10727;CQ-4244871的Hotfix
 
-**平台**
+**Platform**
 
 * org.apache.sling.i18n的效能問題。 NPR-26812：SLING-7543 的 Hotfix
 * 輸入XML的格式化和部署後，無法查看節點屬性。 NPR-26198：CQ-4250448 的 Hotfix
@@ -1126,7 +1130,7 @@ AEM 6.4.3.0的部分關鍵重點為：
 
 * 安裝AEM 6.4 Service Pack 2後無法登入存放庫。 NPR-27171：Granite-23317 的 Hotfix
 
-**複寫**
+**複製**
 
 * 稽核記錄仍會開啟，而作用中工作階段會持續增加，每天約750次。 NPR-27062：CQ-4241350 的 Hotfix
 
@@ -1307,7 +1311,7 @@ AEM 6.4.2.0的部分關鍵重點為：
 * 將GCC更新至最新版本。
 * 將SAML移至新的外部IDP同步。
 
-**資產**
+**Assets**
 
 * pptx檔案的子資產產生不包含任何影像和縮圖。 NPR-24286：CQ-4217986 的 Hotfix
 * migrateAllAssets — 新增批次處理支援，並改善將UUID新增至舊資產的AEM方法。 NPR-24861：CQ-4242863 和 CQ-4247874 的 Hotfix
@@ -1329,7 +1333,7 @@ AEM 6.4.2.0的部分關鍵重點為：
 * 選取資產或資料夾時，瀏覽器主控台中的欄檢視出現Javascript錯誤。 NPR-25939：CQ-4250228 的 Hotfix
 * （欄檢視）無法識別工作，因為主要檔案顯示為空白項目。 NPR-25903：CQ-4246307 的 Hotfix
 
-**網站**
+**Sites**
 
 * AEM 6.2上資料來源.jsp的查詢與AEM 6.4不同。NPR-24968:CQ-4244235的Hotfix
 * （傳統UI）無法將標籤新增至頁面。 NPR-25255、NPR-25612：CQ-4249615 的 Hotfix
@@ -1372,7 +1376,7 @@ AEM 6.4.2.0的部分關鍵重點為：
 * 目標引擎 (mbox.js、at.js) 沒有使用損害 URL 而使用包含冒號的 URL，這可能因為某些部署而失敗。NPR-25339：CQ-4237854 的 Hotfix
 * （啟動）LibraryDownloadProcess儲存錯誤的libraryUri值。 NPR-25330：CQ-4250006 的 Hotfix
 
-**平台**
+**Platform**
 
 * 重新索引環 |在從6.3就地升級至6.4期間執行BinaryTextExtraction時執行NPE。Granite的Hotfix - 21677
 * 內部已標籤路徑的跨界覆寫/libs/cq/cloudserviceconfigs/templates/configpage/jcr:content — 執行模式偵測器時發生問題。 NPR-25036：CQ-4248597 的 Hotfix
@@ -1654,14 +1658,14 @@ AEM 6.4.2.0表單的關鍵重點為：
 
 **包含 Feature Pack**
 
-**資產**
+**Assets**
 
 * 新增 [整合Adobe Stock](/help/assets/aem-assets-adobe-stock.md) 讓使用者直接從AEM使用者介面搜尋、預覽、儲存及授權Adobe Stock資產。 如需詳細資訊，請參閱 [搭配AEM資產使用Adobe Stock資產](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html). NPR-15779：CQ-30857 的 Hotfix
 * 新增對動態條件式中繼架構的支援。 如需詳細資訊，請參閱 [階層式中繼資料](/help/assets/cascading-metadata.md). NPR-25189：CQ-4237413 的 Hotfix
 * 在內容片段上啟用「資產下載」選項。 如需詳細資訊，請參閱 [資產報表](/help/assets/asset-reports.md). NPR-25186：CQ-4237410 的 Hotfix
 * 可為資產資料夾設定中繼資料結構。 如需詳細資訊，請參閱 [資料夾中繼資料結構](/help/assets/folder-metadata-schema.md) 並參考其 [組態設定](#configuration-settings-required-for-npr) 安裝AEM 6.4.2.0後。 NPR-21268：CQ-4221574 的 Hotfix
 
-**網站**
+**Sites**
 
 * 允許編輯內容片段而不具有刪除權限。 如需詳細資訊，請參閱 [自訂和擴充內容片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-delete.html). NPR-25793：CQ-4248750 的 Hotfix
 * 新增為內容片段加上注釋的功能。 如需詳細資訊，請參閱 [變體製作片段](https://experienceleague.adobe.com/docs/experience-manager-64/assets/fragments/content-fragments-variations.html#annotating-a-content-fragment). NPR-25188：CQ-4235336 的 Hotfix
@@ -1702,7 +1706,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的部分重點為：
 * platform.clientlibs修正的主動式反向移植。
 * 當沒有輸入至明確dataType時，防止自動執行指令碼（解析CVE-2015-9251）。
 
-**資產**
+**Assets**
 
 * 重新開啟資產屬性頁面時，階層式下拉式清單值顯示空白。 NPR-23042：CQ-4238761 的 Hotfix
 * 非管理員使用者無法使用mylinkshare頁面上的共用連結和頁面連結NPR-23044:CQ-4239004的Hotfix
@@ -1713,7 +1717,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的部分重點為：
 * 由Scene7ListInfoProvider提取XMP中繼資料需要大量資源。 NPR-23754
 * (dam-delivery)HTTP轉送器不遵守HTTP代理設定。 NPR-24002：CQ-4244140 的 Hotfix
 
-**網站**
+**Sites**
 
 * 移動時重新命名頁面時，頁面移動成功，但重新命名功能無法運作。 NPR-22923：CQ-4235907 的 Hotfix
 * 發佈指向 Adobe Campaigns 中匯入工具頁面的 Live Copy 頁面時發生錯誤。NPR-23053：CQ-4237164 的 Hotfix
@@ -1762,7 +1766,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的部分重點為：
 * 在沒有HTML擴充功能的頁面上載入目標內容時，會產生無限回圈。 NPR-23522：CQ-4223600 的 Hotfix
 * 繼承的動態Tag Management組態參考頁面的啟動失敗。 NPR-23485：CQ-4242751 的 Hotfix
 
-**平台**
+**Platform**
 
 * （傳統UI）（觸控式UI）嘗試透過資產搜尋結構中的標籤述詞來瀏覽標籤時，標籤選擇器未顯示，且擲回例外狀況。 NPR-23049：CQ-4239371 的 Hotfix
 * （傳統UI）使用xtype=tags的元件會傳回null，且無法從標籤的eth清單中選取。 NPR-23050：CQ-4239937 的 Hotfix
@@ -1817,7 +1821,7 @@ AEM 6.4.1.0可安裝在AEM 6.4 GA上。 Service Pack的部分重點為：
 * (MSM)轉出效能改善。 CQ-4231488 的 Hotfix
 * (MSM)事件接聽中實際發生的事件與事件處理之間的時間差。 CQ-4227766 的 Hotfix
 
-**畫面**
+**Screens**
 
 * 螢幕頁面因screens-core-pkg:1.4.42的相依性遺失而失敗，並出現錯誤。CQ-4245918的Hotfix
 
@@ -1965,7 +1969,7 @@ AEM Forms 的關鍵重點為：
 * 組合器服務中的事務記錄。 CQ-4245018、CQ-4245017、CQ-4245016的Hotfix。
 * 使用DDX完成PDF/轉換時，不會報告交易。 CQ-4246039 的 Hotfix
 
-**Forms經理**
+**Forms Manager**
 
 * FM CREATE按鈕清單按字母順序排序。 CQ-4242307 的 Hotfix
 
@@ -2064,12 +2068,12 @@ AEM Forms 的關鍵重點為：
 
 **包含 Feature Pack**
 
-**資產**
+**Assets**
 
 * 新增「增強智慧標籤」的功能。 如需詳細資訊，請參閱 [增強智慧標籤](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/enhanced-smart-tags.html). NPR-21951：CQ-4234883 的 Hotfix
 * 在InDesign中導入AEM Assets參考。 如需詳細資訊，請參閱 [AEM Assets參考InDesign](/help/assets/managing-linked-subassets.md). NPR-23386
 
-**網站**
+**Sites**
 
 * （頁面編寫）影像編輯器增強功能。 如需詳細資訊，請參閱 [影像編輯器](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/image-editor.html). NPR-24267：CQ-4245502 的 Hotfix
 
@@ -2226,7 +2230,7 @@ B.使用 [來自套件管理器的HTTP API](/help/sites-administering/package-ma
 
 | 區域 | 功能 | 替代方案 | 版本 |
 |---|---|---|---|
-| 資產 | 管理子資產的標籤動作 | 無替換 | AEM 6.4.2.0 |
+| Assets | 管理子資產的標籤動作 | 無替換 | AEM 6.4.2.0 |
 | Assets 與 Adobe Creative Cloud 整合 | AEM 6.2 引入了 [AEM 對 Creative Cloud 資料夾共用](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，作為讓 Creative 使用者存取 AEM 資產的方式。Creative Cloud 應用程式推出的新功能 Adobe Asset Link 提供了更優異的使用者體驗，以及更強大的存取功能，可直接從 Photoshop、InDesign 和 Illustrator 中存取 AEM 的資產。 Adobe 將不會再對資料夾共用功能提供近一步的增強項目。雖然AEM中包含此功能，但強烈建議客戶使用取代。 | Adobe資產連結或案頭應用程式。 如需更多資訊，請參閱 [AEM Creative Cloud 整合](/help/assets/aem-cc-integration-best-practices.md)文章。 | AEM 6.4.4.0 |
 
 ### 已知問題 {#known-issues}

@@ -7,14 +7,18 @@ uuid: 57c872d6-c6ca-4f78-a98c-f9487f1d673c
 contentOwner: AEM Docs
 discoiquuid: f2bd4d96-55a5-4fbd-bede-1747c2ec63c8
 exl-id: f8e25989-6ed3-4b35-95e5-fbfd7c51d622
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4637'
+source-wordcount: '4673'
 ht-degree: 0%
 
 ---
 
 # Forms上以OSGi為中心的工作流程 — 步驟參考 {#forms-centric-workflow-on-osgi-step-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## Forms Workflow步驟 {#forms-workflow-steps}
 

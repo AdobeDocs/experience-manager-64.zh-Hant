@@ -3,14 +3,18 @@ title: 設定RTF編輯器
 description: 了解如何設定AEM RTF編輯器。
 contentOwner: AG
 exl-id: 2d5e9ada-1567-43dc-ab19-6891e20e1d0b
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2659'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
 
 # 設定RTF編輯器 {#configure-the-rich-text-editor}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 RTF編輯器(RTE)為作者提供多種編輯文字內容的功能。 WYSIWYG文字編輯體驗提供圖示、選取方塊、工具列和功能表。
 

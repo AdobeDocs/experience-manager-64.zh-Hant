@@ -1,8 +1,8 @@
 ---
 title: JSRP - JCR儲存資源提供商
-seo-title: JSRP - JCR儲存資源提供商
+seo-title: JSRP - JCR Storage Resource Provider
 description: JSRP通常最適合一個發佈例項和一個製作例項的示範或開發環境
-seo-description: JSRP通常最適合一個發佈例項和一個製作例項的示範或開發環境
+seo-description: JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance
 uuid: 358a43c1-4137-4300-8443-c0d7166968ad
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 role: Admin
 exl-id: 73c59497-43fe-4e15-afda-e3cf5264696e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 0%
+source-wordcount: '477'
+ht-degree: 2%
 
 ---
 
 # JSRP - JCR儲存資源提供商 {#jsrp-jcr-storage-resource-provider}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 關於JSRP {#about-jsrp}
 
@@ -26,7 +30,7 @@ ht-degree: 0%
 
 由於部署簡單，JSRP通常最適合一個發佈執行個體和一個製作執行個體的示範或開發環境。
 
-另請參閱[SRP選項的特性](working-with-srp.md#characteristics-of-srp-options)和[建議拓撲](topologies.md)。
+另請參閱 [SRP選項的特點](working-with-srp.md#characteristics-of-srp-options) 和 [建議的拓撲](topologies.md).
 
 ## 設定 {#configuration}
 
@@ -34,16 +38,16 @@ ht-degree: 0%
 
 依預設，JSRP是UGC的儲存選項。
 
-[儲存配置控制台](srp-config.md)允許選擇預設儲存配置，以確定要使用的SRP實施。
+此 [儲存配置控制台](srp-config.md) 允許選擇預設儲存配置，以確定要使用的SRP實施。
 
 在製作環境中，前往儲存設定主控台
 
-* 從全局導航：**[!UICONTROL 工具>社區>儲存配置]**
+* 從全局導航： **[!UICONTROL 工具>社區>儲存配置]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-* 選擇&#x200B;**[!UICONTROL JCR儲存資源提供程式(JSRP)]**
-* 選擇&#x200B;**[!UICONTROL 提交]**
+* 選擇 **[!UICONTROL JCR儲存資源提供商(JSRP)]**
+* 選擇 **[!UICONTROL 提交]**
 
 ### 發佈設定 {#publishing-the-configuration}
 
@@ -51,17 +55,17 @@ ht-degree: 0%
 
 * 在作者上：
 
-   * 從全局導航：**[!UICONTROL 工具>部署>複製]**
-   * 選擇&#x200B;**[!UICONTROL 激活樹]**
+   * 從全局導航： **[!UICONTROL 工具>部署>復寫]**
+   * 選擇 **[!UICONTROL 激活樹]**
    * **[!UICONTROL 開始路徑]**:
 
-      * 瀏覽至`/conf/global/settings/community/srpc/`
-   * 選擇&#x200B;**[!UICONTROL 激活]**
+      * 瀏覽至 `/conf/global/settings/community/srpc/`
+   * 選擇 **[!UICONTROL 啟動]**
 
 
 ## 管理使用者資料 {#managing-user-data}
 
-如需&#x200B;*users*、*user profiles*&#x200B;和&#x200B;*user groups*&#x200B;的相關資訊，通常在發佈環境中輸入，請瀏覽
+如需 *使用者*, *使用者設定檔* 和 *使用者群組*，通常會在發佈環境中輸入，請造訪
 
 * [使用者同步](sync.md)
 * [管理使用者和使用者群組](users.md)
@@ -74,10 +78,10 @@ ht-degree: 0%
 
 在所有製作和發佈AEM例項上，重新造訪儲存設定主控台或檢查AEM存放庫：
 
-* 在JCR中，如果[/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
+* 在JCR中，如果 [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * 不包含[srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc)節點，表示儲存提供者為JSRP
-   * 如果srpc節點存在且包含節點[defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration),defaultconfiguration的屬性應將JSRP定義為預設提供程式
+   * 不包含 [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) 節點，表示儲存提供者為JSRP
+   * 如果srpc節點存在且包含節點 [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration),defaultconfiguration的屬性應將JSRP定義為預設提供者
 
 ### UGC在製作執行個體上不可見 {#ugc-not-visible-on-author-instance}
 
@@ -85,7 +89,7 @@ ht-degree: 0%
 
 ### UGC在發佈執行個體上不可見 {#ugc-not-visible-on-publish-instance}
 
-如果單個發佈實例或部署了發佈群集，則按照[UGC Not Visible in JCR](#ugc-not-visible-in-jcr)的說明操作。
+如果單一發佈執行個體或部署了發佈叢集，請依照 [UGC在JCR中不可見](#ugc-not-visible-in-jcr).
 
 如果已部署發佈伺服器陣列，JSRP的一個特點是，社群內容只會顯示在發佈執行個體上。
 

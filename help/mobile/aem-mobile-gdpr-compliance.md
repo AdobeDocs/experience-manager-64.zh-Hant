@@ -1,26 +1,30 @@
 ---
 title: AEM Mobile - GDPR整備
-seo-title: AEM Mobile - GDPR整備
+seo-title: AEM Mobile - GDPR Readiness
 description: 「AEM Mobile - GDPR整備」
-seo-description: 'null'
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: 2b73e843-690b-4cf3-9b8f-936b70c84406
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '728'
 ht-degree: 1%
 
 ---
 
-# AEM Mobile - GDPR整備{#aem-mobile-gdpr-readiness}
+# AEM Mobile - GDPR整備 {#aem-mobile-gdpr-readiness}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!IMPORTANT]
 >
 >GDPR是以下各節中的範例，但涵蓋的詳細資訊適用於所有資料保護和隱私權法規；例如GDPR、CCPA等
 
-## AEM Mobile GDPR支援{#aem-mobile-gdpr-support}
+## AEM Mobile GDPR支援 {#aem-mobile-gdpr-support}
 
 AEM Mobile已準備好協助客戶履行其GDPR法規遵循義務。 不會將個人資料儲存在AEM Mobile中。 如果您已布建，則可使用Adobe ID登入Adobe Experience Mobile。
 
@@ -28,13 +32,13 @@ AEM Mobile已準備好協助客戶履行其GDPR法規遵循義務。 不會將�
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe的數位發佈產品(在AEM Mobile之前)支援Adobe的GDPR整備計畫。 請參閱[https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html)。 以下將詳細說明Digital Publishing Suite產品中GDPR相關功能的支援，包括如何與Adobe合作以起始GDPR請求。
+Adobe的數位發佈產品(在AEM Mobile之前)支援Adobe的GDPR整備計畫。 請參閱 [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). 以下將詳細說明Digital Publishing Suite產品中GDPR相關功能的支援，包括如何與Adobe合作以起始GDPR請求。
 
 若要確保不會將AEM Mobile與舊版Digital Publishing Suite產品混淆，您可以在此處登入Digital Publishing Suite產品：
 
 [https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
-### 起始GDPR請求{#initiating-a-gdpr-request}
+### 起始GDPR請求 {#initiating-a-gdpr-request}
 
 請連絡Adobe客戶服務，以起始Digital Publishing Suite的GDPR請求。
 
@@ -42,17 +46,17 @@ Adobe的數位發佈產品(在AEM Mobile之前)支援Adobe的GDPR整備計畫。
 
 必要:
 
-* 客戶合約ID:*dpsc-contractId*
+* 客戶合約ID: *dpsc-contractId*
 
 至少提供下列1項：
 
-* 一般使用者的客戶提供的OAuth ID（用於客戶直接權限系統的ID）:*dpsc-directEntitlementId*
-* 若為Windows應用程式使用者，一般使用者的App Store ID:*dpsc-windowsAppStoreId*
-* 一般使用者用來與DPS應用程式互動的電子郵件地址：*email*
+* 一般使用者的客戶提供的OAuth ID（用於客戶直接權限系統的ID）: *dpsc-directEntitlementId*
+* 若為Windows應用程式使用者，一般使用者的App Store ID: *dpsc-windowsAppStoreId*
+* 一般使用者用來與DPS應用程式互動的電子郵件地址： *電子郵件*
 
-### 常見問題集(FAQ){#frequently-asked-questions-faq}
+### 常見問題集(FAQ) {#frequently-asked-questions-faq}
 
-**起始Adobe請求時，DELETE是否會刪除我的App Store購買項目？**
+**起始Adobe請求時，DELETE是否會刪除我的App Store購買？**
 
 Adobe會刪除其擁有的應用程式商店購買項目（訂閱等）的資訊 但App商店的購買量仍會記錄在案。 如果應用程式（一般使用者）登入App Store，系統會再次擷取這些收據並傳送至Adobe，之後再將這些收據視為新購買，並由應用程式還原以重新存取。
 
@@ -72,7 +76,7 @@ Adobe幾乎沒有直接與特定使用者建立關聯的資訊。 它會使用�
 
 無. 有資料會受到追蹤，但是在應用程式層級（非個人）。 這包括啟動、當機、關閉、活動、購買或對開本覆蓋等事件。 不會追蹤地理位置、名稱、裝置ID或IP位址。
 
-**最終用戶提供了其資訊，但找不到任何內容。為什麼不？**
+**最終用戶提供了其資訊，但找不到任何內容。 為什麼不呢？**
 
 隨著Digital Publishing Suite產品的演化，服務實作已變更，且更多資料已模糊化。 如果使用者提供的資料找不到任何資料，表示無法將使用者的資料追蹤回該人員。
 

@@ -1,8 +1,8 @@
 ---
 title: 會員供款限制
-seo-title: 會員供款限制
+seo-title: Member Contribution Limits
 description: 貢獻限制功能可讓您限制貢獻內容，以防垃圾郵件
-seo-description: 貢獻限制功能可讓您限制貢獻內容，以防垃圾郵件
+seo-description: Contribution limits feature lets you limit the contributions to protect against spam
 uuid: 99b2a855-3f0d-41a0-9572-517a7f29af9f
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,22 +11,26 @@ content-type: reference
 discoiquuid: d855aac2-f34d-402f-9dc3-c7ad494b45f2
 role: Admin
 exl-id: fc7ce4d0-2051-4a67-a0d6-baf615e09ca4
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 0%
+source-wordcount: '470'
+ht-degree: 1%
 
 ---
 
 # 會員供款限制 {#member-contribution-limits}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 貢獻限制功能可限制社群成員的貢獻，作為防止垃圾郵件的工具。
 
 當成員受限時，超過允許的貢獻數的任何帖子都會導致超出限制且帖子被拒絕的警報。 然後，社區成員可以前往社區消息中心並聯繫社區管理員，該管理員可以在適當時移除限制。
 
-貢獻限制可以從[成員控制台](members.md)中個別啟用，和/或設定為在網站訪客成為新成員時自動啟用。
+貢獻限制可從 [成員控制台](members.md) 和/或設為當網站訪客成為新成員時自動啟用。
 
 使用「成員」控制台，社區管理員可以隨時主動為成員刪除貢獻限制，或者在成員向提出此請求的社區管理員發送消息時主動刪除。
 
@@ -42,18 +46,18 @@ ht-degree: 0%
 
 * 在主要發佈者上
 * 以管理員權限登入
-* 訪問[Web控制台](../../help/sites-deploying/configuring-osgi.md)
+* 存取 [Web主控台](../../help/sites-deploying/configuring-osgi.md)
 
    * 例如， [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* 找到`AEM Communities User Generated Content Contribution Limits Configuration`
+* 找出 `AEM Communities User Generated Content Contribution Limits Configuration`
 * 選取編輯圖示
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
 * **[!UICONTROL 自動套用UGC貢獻限制]**
 
-   如果勾選此選項，當使用者註冊為社群成員時，會自動對使用者設定貢獻限制。 這反映在社區成員的配置檔案中，並可從[members控制台](members.md)啟用/禁用。 從允許的網域清單中取得電子郵件地址的新成員永不受限。
+   如果勾選此選項，當使用者註冊為社群成員時，會自動對使用者設定貢獻限制。 這會反映在社群成員的設定檔中，並可從 [成員控制台](members.md). 從允許的網域清單中取得電子郵件地址的新成員永不受限。
 
    預設為未勾選。
 
@@ -73,7 +77,7 @@ ht-degree: 0%
 
    一或多個電子郵件網域的允許清單。 選取+圖示以進行其他項目。
 
-   自動套用UGC貢獻限制時，網域允許清單中含有電子郵件地址的使用者不受影響。 例如，如果域`mycompany.com`被添加到域清單中，則電子郵件地址`me@mycompany.com`的成員從不限制發佈。
+   自動套用UGC貢獻限制時，網域允許清單中含有電子郵件地址的使用者不受影響。 例如，如果網域 `mycompany.com` 會新增至網域清單，然後是具有電子郵件地址的成員 `me@mycompany.com` 從不限制發佈。
 
    預設為空的允許清單。
 

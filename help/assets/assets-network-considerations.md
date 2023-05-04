@@ -1,18 +1,22 @@
 ---
 title: Assets 網路考量事項
-description: 討論設計 [!DNL Experience Manager] 資產部署時的網路考量事項。
+description: 討論設計 [!DNL Experience Manager] 資產部署。
 contentOwner: AG
 feature: Developer Tools
 role: Architect,Admin
 exl-id: f8f9d86f-a5e3-46ac-8d96-c2e44eac9c93
-source-git-commit: cc6de21180c9fff74f7d64067db82f0c11ac9333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '999'
-ht-degree: 0%
+source-wordcount: '1035'
+ht-degree: 1%
 
 ---
 
 # 資產網路考量事項 {#assets-network-considerations}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 了解您的網路與了解Adobe Experience Manager Assets同樣重要。 網路可能會影響上傳、下載和使用者體驗。 繪製網路拓撲圖有助於識別網路中必須修復的瓶頸和次優區域，以提高網路效能和用戶體驗。
 
@@ -20,10 +24,10 @@ ht-degree: 0%
 
 * 從客戶端設備（如電腦、移動設備和平板電腦）到網路的連接
 * 公司網路的拓撲
-* 從公司網路和[!DNL Experience Manager]環境上行到Internet
-* [!DNL Experience Manager]環境的拓撲
-* 定義[!DNL Experience Manager]網路介面的同時使用者
-* 定義[!DNL Experience Manager]實例的工作流
+* 從公司網路和 [!DNL Experience Manager] 環境
+* 拓撲 [!DNL Experience Manager] 環境
+* 定義 [!DNL Experience Manager] 網路介面
+* 定義的 [!DNL Experience Manager] 執行個體
 
 ## 從客戶端設備到公司網路的連接 {#connectivity-from-the-client-device-to-the-corporate-network}
 
@@ -47,13 +51,13 @@ ht-degree: 0%
 
 該圖表顯示公司網路內的上行鏈路速度高於通常使用的網路。 這些管道是共用資源。 如果共用交換機應處理50個客戶端，它可能會是一個咽喉點。 在初始圖中，只有兩台電腦共用特定連接。
 
-## 從公司網路和[!DNL Experience Manager]環境上行到Internet {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## 從公司網路和 [!DNL Experience Manager] 環境 {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
 在Internet和VPC連接上考慮未知因素非常重要，因為由於峰值負載或大規模提供商中斷，網際網路上的頻寬可能會受損。 一般來說，網際網路連接是可靠的。 然而，它有時會引入「斷點」。
 
-在從公司網路到網際網路的上行鏈路上，可以使用頻寬提供其他服務。 請務必了解[!DNL Assets]可以專用或優先排定多少頻寬。 例如，如果1Gbps鏈路的利用率為80%，則您只能為[!DNL Experience Manager]資產分配最多20%的頻寬。
+在從公司網路到網際網路的上行鏈路上，可以使用頻寬提供其他服務。 請務必了解，可以為 [!DNL Assets]. 例如，如果1Gbps鏈路的利用率為80%，則您只能為 [!DNL Experience Manager] 資產。
 
 企業防火牆和代理還可以通過多種不同的方式來影響頻寬。 此類設備可以使用服務質量、每用戶頻寬限制或每主機位元速率限制來排定頻寬優先順序。 這些是需要檢查的重要選項，因為這些選項可能會對Assets使用者體驗造成重大影響。
 
@@ -63,21 +67,21 @@ ht-degree: 0%
 
 從示例圖中，可以得出6個設備共用10Mbps的概念通道。 視運用的資產規模而定，這可能不足以滿足使用者的期望。
 
-## [!DNL Experience Manager]環境的拓撲 {#topology-of-the-aem-environment}
+## 拓撲 [!DNL Experience Manager] 環境 {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-設計[!DNL Experience Manager]環境的拓撲需要詳細了解系統配置以及網路在用戶環境中的連接方式。
+設計 [!DNL Experience Manager] 環境需要詳細了解系統配置以及網路在用戶環境中的連接方式。
 
 範例案例包含一個發佈伺服器陣列，其中有五部伺服器、一個S3二進位存放區，以及設定了動態媒體。
 
-Dispatcher會與外部世界和[!DNL Experience Manager]例項這兩個實體共用100Mbps的連線。 若要同時上傳和下載作業，您應將此數字除以二。 連接的外部儲存器使用單獨的連接。
+Dispatcher與外部世界和 [!DNL Experience Manager] 例項。 若要同時上傳和下載作業，您應將此數字除以二。 連接的外部儲存器使用單獨的連接。
 
-[!DNL Experience Manager]實例與多個服務共用1Gbps連接。 從網路拓撲的角度看，它等同於使用不同的服務共用一個通道。
+此 [!DNL Experience Manager] 實例與多個服務共用1Gbps連接。 從網路拓撲的角度看，它等同於使用不同的服務共用一個通道。
 
-查看從客戶端設備到[!DNL Experience Manager]實例的網路，最小的阻塞點似乎是10Mbit企業防火牆限制。 您可以在[資產規模調整指南](assets-sizing-guide.md)中的調整計算器中使用這些值來判斷使用者體驗。
+從客戶端設備到 [!DNL Experience Manager] 例如，最小的chokepoint似乎是10Mbit企業防火牆限制。 您可以在 [資產規模調整指南](assets-sizing-guide.md) 以決定使用者體驗。
 
-## 定義[!DNL Experience Manager]實例的工作流 {#defined-workflows-of-the-aem-instance}
+## 定義的 [!DNL Experience Manager] 執行個體 {#defined-workflows-of-the-aem-instance}
 
 考慮網路效能時，請務必考量系統中將發生的工作流程和發佈。 此外，您使用的S3或其他網路連接儲存和I/O請求佔用網路頻寬。 因此，即使在完全優化的網路中，效能也可能受磁碟I/O的限制。
 

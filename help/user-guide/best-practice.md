@@ -6,14 +6,18 @@ seo-description: Resources for best practices, troubleshooting and training for 
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 exl-id: ba222869-1268-481d-b342-27ea12b15999
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '409'
-ht-degree: 1%
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
 # AEM 6.4最佳作法 {#aem-64-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 我可以在何處進一步了解AEM的訓練或教育？ {#training}
 
@@ -47,7 +51,7 @@ AEM在組織中有許多用途，其範圍足夠廣，可跨公司提供功能�
 * [AEM Communities快速入門](/help/communities/getting-started.md)
 * [AEM Livefyre快速入門](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/c-getting-started.html)
 
-我們還有 [WKND教學課程，此教學課程是使用AEM建立第一個網站的逐步指南](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) 以及 [部署我們的Digital Foundation解決方案的逐步方式](https://experienceleague.adobe.com/#courses)，其中AEM是關鍵建置區塊。
+我們還有 [WKND教學課程，此教學課程是使用AEM建立第一個網站的逐步指南](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hant) 以及 [部署我們的Digital Foundation解決方案的逐步方式](https://experienceleague.adobe.com/#courses)，其中AEM是關鍵建置區塊。
 
 ## 建議的AEM部署 {#deployments}
 

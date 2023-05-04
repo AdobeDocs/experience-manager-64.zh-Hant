@@ -1,8 +1,8 @@
 ---
 title: 頁面製作元件
-seo-title: 頁面製作元件
+seo-title: Components for Page Authoring
 description: 從sidekick的「元件」標籤和「插入新元件」選取器（在「拖曳元件或資產到此處」區域中連按兩下）編輯頁面時，可使用元件。
-seo-description: 從sidekick的「元件」標籤和「插入新元件」選取器（在「拖曳元件或資產到此處」區域中連按兩下）編輯頁面時，可使用元件。
+seo-description: The components are available when editing a page from the Components tab of the sidekick and the Insert New Component selector (when you double-click in the Drag components or assets here area).
 uuid: 6e4db6b1-af52-4b54-88a5-b82634f264fa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,18 +10,22 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 exl-id: b6c8c2b8-78d1-43a3-80b5-3535183ebf20
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
 source-wordcount: '6177'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
-# 頁面編寫元件{#components-for-page-authoring}
+# 頁面製作元件{#components-for-page-authoring}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 為標準網頁編寫內容時，會使用下列元件。 它們構成標準AEM安裝可用的元件子集。
 
-有些可透過sidekick立即使用，其他則可使用[設計模式](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md)來啟用/停用。
+有些可透過sidekick立即使用，其他則可使用 [設計模式](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md) 啟用/停用。
 
 >[!CAUTION]
 >
@@ -29,9 +33,9 @@ ht-degree: 7%
 >
 >您可能已根據您的執行個體明確開發自訂元件，以符合您的需求。 這些元件甚至可能與此處討論的某些元件具有相同的名稱。
 
-從Sidekick的&#x200B;**Components**&#x200B;標籤和&#x200B;**Insert New Component**&#x200B;選擇器（在&#x200B;**Drag components or assets here**&#x200B;區域中按兩下時）編輯頁面[時，這些元件可用。](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)
+元件可在 [編輯頁面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) 從 **元件** sidekick和 **插入新元件** 選取器(當您在 **將元件或資產拖曳至此處** )。
 
-您可以選取元件，並將其拖曳至頁面上的必要位置，然後依序[編輯內容和屬性](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)。
+您可以選取元件，並將其拖曳至頁面上的必要位置，然後 [編輯內容和屬性](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties).
 
 元件會根據各種類別（元件群組）排序，包括（用於頁面編寫）:
 
@@ -58,26 +62,26 @@ ht-degree: 7%
 * 設備螢幕：行動裝置通常會顯示網頁，使其在整個畫面中延伸。
 * Web瀏覽器窗口大小：筆記型電腦和台式電腦的用戶可以調整Web瀏覽器窗口的大小。
 
-例如，當在手機上開啟網頁時，元件會產生小型影像，而當在平板電腦上開啟中型影像時，元件會產生中型影像。 在筆記型電腦上，當在最大化的Web瀏覽器中開啟頁面時，元件會建立並傳遞大型影像。 當調整Web瀏覽器大小以適合部分螢幕時，元件會透過傳送較小的影像並重新整理檢視來適應。
+例如，當在手機上開啟網頁時，元件會產生小型影像，而當在平板電腦上開啟中型影像時，元件會產生中型影像。 在筆記型電腦上，當在最大化的Web瀏覽器中開啟頁面時，元件會建立並傳遞大型影像。 當調整Web瀏覽器的大小以適合螢幕的一部分時，元件會透過傳送較小的影像並重新整理檢視來適應。
 
-#### 支援的影像格式{#supported-image-formats}
+#### 支援的影像格式 {#supported-image-formats}
 
 您可以搭配適用性影像元件使用下列副檔名的影像檔案：
 
 * .jpg
 * .jpeg
 * .PNG
-* .gif &amp;ast;&amp;ast
+* .gif &amp;ast;&amp;ast;
 
 >[!CAUTION]
 >
->&amp;ast;&amp;astAEM不支援動畫.gif檔案進行最適化轉譯。
+>&amp;ast;&amp;ast;AEM不支援動畫.gif檔案進行最適化轉譯。
 
-#### 影像大小和質量{#images-sizes-and-quality}
+#### 影像大小和品質 {#images-sizes-and-quality}
 
 下表列出為給定視區寬度生成的影像寬度。 計算所生成的影像的高度以保持恆定的長寬比，並且影像邊緣內不出現空白。 裁切可用來避免空格。
 
-當影像是JPEG影像時，視區大小也會影響JPEG質量。 可能有以下JPEG質量：
+當影像為JPEG影像時，檢視區大小也可能影響JPEG品質。 可能的JPEG質量如下：
 
 * 低(0.42)
 * 中(0.82)
@@ -132,9 +136,9 @@ ht-degree: 7%
 
       適用性影像元件不使用此屬性。
 
-#### 擴展自適應影像元件{#extending-the-adaptive-image-component}
+#### 擴展自適應影像元件 {#extending-the-adaptive-image-component}
 
-如需自訂適用性影像元件的相關資訊，請參閱[了解適用性影像元件](/help/sites-developing/responsive.md#using-adaptive-images)。
+如需自訂適用性影像元件的相關資訊，請參閱 [了解自適應影像元件](/help/sites-developing/responsive.md#using-adaptive-images).
 
 ### 傳送 {#carousel}
 
@@ -151,8 +155,8 @@ ht-degree: 7%
 
 這兩個標籤提供：
 
-* ****
-輪播您可在此處指定輪播的運作方式：
+* **輪播**
+您可在此指定輪播的運作方式：
 
    * 播放速度
 
@@ -164,14 +168,14 @@ ht-degree: 7%
 
       下拉式功能表提供各種選項；例如， Prev / Next按鈕，右上角的開關。
 
-* ****
-清單您可在此處指定如何將頁面納入輪播：
+* **清單**
+您可以在此處指定如何將頁面納入輪播：
 
    * **使用以下方式產生清單**
 
       建立頁面清單有數種方式 — 子頁面、固定清單、搜尋或進階搜尋（以下皆說明）。
 
-      請注意，無論您選擇哪種方法，清單中包含的頁面若已有與頁面相關聯的影像，則會顯示在輪播中的影像。 如果該頁面的「頁面屬性」下沒有指定頁面的影像，您應該在開始前將影像與頁面建立關聯，否則輪播會顯示空白（或大部分為空白）頁面。 請參閱[編輯頁面屬性](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)。
+      請注意，無論您選擇哪種方法，清單中包含的頁面若已有與頁面相關聯的影像，則會顯示在輪播中的影像。 如果該頁面的「頁面屬性」下沒有指定頁面的影像，您應該在開始前將影像與頁面建立關聯，否則輪播會顯示空白（或大部分為空白）頁面。 請參閱 [編輯頁面屬性](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md).
 
       將根據您選擇的新面板的項目顯示：
 
@@ -184,25 +188,25 @@ ht-degree: 7%
 
          * **頁面**
 
-            選取頁面清單。 使用`+`添加更多條目和上/下按鈕來調整順序。
+            選取頁面清單。 使用 `+` 添加更多條目和上/下按鈕以調整順序。
       * **搜尋選項**
 
          * **開始**
 
             手動輸入或使用選取器輸入起始路徑。
 
-         * **搜索**
-查詢您可以輸入純文字檔案搜索查詢。
+         * **搜尋查詢**
+您可以輸入純文字檔案搜索查詢。
       * **進階搜尋的選項**
 
          * **QueryBuilder 述詞記號**
 
             您可以使用查詢建立器述詞標籤法輸入搜尋查詢。 例如，您可以輸入&quot;fulltext=Marketing&quot;，讓其內容中具有&quot;Marketing&quot;的所有頁面都顯示在輪播中。
 
-            如需查詢運算式和進一步範例的完整討論，請參閱[QueryBuilder API](/help/sites-developing/querybuilder-api.md)。
+            請參閱 [QueryBuilder API](/help/sites-developing/querybuilder-api.md) 以完整討論查詢運算式和其他範例。
    * **排序方式**
 
-      從下拉式選單中選取`jcr:title`、`jcr:created`、`cq:lastModified`或`cq:template`。
+      選擇 `jcr:title`, `jcr:created`, `cq:lastModified`，或 `cq:template` 從下拉式功能表。
 
    * **限制**
 
@@ -214,7 +218,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->您可以為Adobe Experience Manager建立自訂輪播元件，以顯示位於AEM DAM中的數位資產。 如需詳細資訊，請參閱[建立Adobe Experience Manager的自訂轉盤元件](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)。
+>您可以為Adobe Experience Manager建立自訂輪播元件，以顯示位於AEM DAM中的數位資產。 如需詳細資訊，請參閱 [建立適用於Adobe Experience Manager的自訂轉盤元件](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
 
 ### 圖表 {#chart}
 
@@ -250,7 +254,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->您可以建立自訂AEM圖表控制項，以顯示位於AEM JCR中的資料。 如需詳細資訊，請參閱在圖表中顯示Adobe Experience Manager資料](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html) 。[
+>您可以建立自訂AEM圖表控制項，以顯示位於AEM JCR中的資料。 如需詳細資訊，請參閱 [在圖表中顯示Adobe Experience Manager資料](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
 
 ### 內容片段 {#content-fragment}
 
@@ -260,7 +264,7 @@ ht-degree: 7%
 >
 >內容片段元件可在傳統UI Sidekick中看到，但無法使用其他函式。
 
-[內容](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) 片段會建立並管理為不受頁面影響的資產。然後，您可以在編寫內容頁面時使用這些片段及其變體。
+[內容片段](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) 會建立並管理為不受頁面影響的資產。 然後，您可以在編寫內容頁面時使用這些片段及其變體。
 
 ### Design Importer {#design-importer}
 
@@ -286,7 +290,7 @@ ht-degree: 7%
 
 ### 外部 {#external}
 
-外部應用程式整合元件(**External**)可讓您使用iframe將外部應用程式嵌入AEM頁面。
+外部應用程式整合元件(**外部**)可讓您使用iframe將外部應用程式內嵌至您的AEM頁面。
 
 * **外部**
 
@@ -306,13 +310,13 @@ ht-degree: 7%
 
       定義iframe的大小
 
-外部應用程式整合到AEM頁面的段落系統中；例如，使用`https://en.wikipedia.org/wiki/Main_Page`的Target應用程式時：
+外部應用程式整合到AEM頁面的段落系統中；例如，使用 `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
 >[!NOTE]
 >
->例如，根據您的使用案例，其他選項可用於整合外部應用程式。 [Portlet的整合](/help/sites-administering/aem-as-portal.md)。
+>例如，根據您的使用案例，其他選項可用於整合外部應用程式。 the [整合Portlet](/help/sites-administering/aem-as-portal.md).
 
 ### 閃光燈 {#flash}
 
@@ -360,7 +364,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
 您可以上傳影像，然後編輯和操控影像（例如裁切、旋轉、新增連結/標題/文字）。
 
-您可以直接將影像從[內容尋找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)拖放至元件或其「編輯」對話方塊。 您也可以按兩下「編輯」對話方塊中央區域的，以瀏覽本機檔案系統並上傳影像。 「編輯」對話方塊的兩個索引標籤也控制影像的所有定義和操作：
+您可以從 [內容尋找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) 直接到元件或其「編輯」對話方塊。 您也可以按兩下「編輯」對話方塊中央區域的，以瀏覽本機檔案系統並上傳影像。 「編輯」對話方塊的兩個索引標籤也控制影像的所有定義和操作：
 
 ![dc_image](assets/dc_image.png)
 
@@ -368,9 +372,9 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 >
 >無法使用Internet Explorer監控上傳進度。
 >
->Internet Explorer使用者需要上傳影像，然後按一下&#x200B;**Ok**，然後重新開啟影像，以在預覽中查看已上傳的檔案，並能夠執行修改（即裁切）。
+>Internet Explorer使用者需上傳影像，然後按一下 **確定** 然後重新開啟影像，在預覽中查看已上傳的檔案，並能夠執行修改（即裁切）。
 >
->如需AEM所使用HTML5功能的詳細資訊，請參閱[認證平台](/help/release-notes/release-notes.md#certifiedplatforms)一節。
+>請參閱 [認證平台](/help/release-notes/release-notes.md#certifiedplatforms) 區段，以取得AEM所使用HTML5功能的詳細資訊。
 
 載入影像時，您可以設定下列項目：
 
@@ -414,7 +418,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
    設定影像的高度和寬度。
 
-最終影像（具有&#x200B;**Title**&#x200B;和&#x200B;**Description**）可顯示為：
+最終影像(包含 **標題** 和 **說明**)可顯示為：
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
@@ -422,7 +426,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
 >[!CAUTION]
 >
->雖然傳統UI中提供「配置」容器元件，但觸控式UI中僅提供其完整功能。 如需詳細資訊，請參閱[回應式配置](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md)。
+>雖然傳統UI中提供「配置」容器元件，但觸控式UI中僅提供其完整功能。 如需詳細資訊，請參閱 [回應式版面](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### 清單 {#list}
 
@@ -438,19 +442,19 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
       * **子頁面的選項**
 
-         * **** 的子項（上層頁面）
+         * **兒童** （上層頁面）
 
             手動或使用選取器指定路徑。 保留為空白，以使用目前頁面作為上層頁面。
       * **固定清單的選項**
 
-         * **頁面**  — 選取頁面清單。使用+添加更多條目，使用上/下按鈕調整順序。
+         * **頁面**  — 選擇頁面清單。 使用+添加更多條目以及上/下按鈕來調整順序。
       * **搜尋選項**
 
-         * **開始於**  — 手動輸入或使用選取器輸入起始路徑。搜索查詢您可以輸入純文字檔案搜索查詢。
+         * **開始於**  — 手動或使用選取器輸入起始路徑。 搜索查詢您可以輸入純文字檔案搜索查詢。
       * **進階搜尋的選項**
 
-         * **Querybuilder述詞標籤法**  — 您可以使用Querybuilder述詞標籤法輸入搜尋查詢。例如，您可以輸入&quot;fulltext=Marketing&quot;，讓其內容中具有&quot;Marketing&quot;的所有頁面都顯示在輪播中。 如需查詢運算式和進一步範例的完整討論，請參閱[QueryBuilder API](/help/sites-developing/querybuilder-api.md)。
-      * **標籤**  — 指定上 **層頁面**、標 **記/** 關鍵字以及您所需的符合條件。
+         * **Querybuilder述詞標籤法**  — 您可以使用查詢建立器述詞標籤法輸入搜尋查詢。 例如，您可以輸入&quot;fulltext=Marketing&quot;，讓其內容中具有&quot;Marketing&quot;的所有頁面都顯示在輪播中。 請參閱 [QueryBuilder API](/help/sites-developing/querybuilder-api.md) 以完整討論查詢運算式和其他範例。
+      * **標籤**  — 指定 **上層頁面**, **標籤/關鍵字** 和您所需的符合條件。
    * **顯示為**
 
       您希望項目的列出方式；包括連結、預告和新聞。
@@ -476,7 +480,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
 
 
-下列範例顯示&#x200B;**List**&#x200B;元件，其顯示子頁面清單的方式（設計由網站設計的自訂CSS定義控制）。
+下列範例顯示 **清單** 元件顯示子頁面清單的方式（設計由網站設計的自訂CSS定義控制）。
 
 ![dc_list_use](assets/dc_list_use.png)
 
@@ -484,7 +488,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
 這些欄位提供「使用者名稱」和「密碼」欄位。
 
-![chlimage_1-21](assets/chlimage_1-29.png)
+![chlimage_1-29](assets/chlimage_1-29.png)
 
 您可以設定：
 
@@ -508,7 +512,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
    * 重新導向至
 
-      您可以指定在使用者登入後，應開啟的網站頁面。
+      您可以指定在使用者登入後，應該開啟的網站頁面。
 
 * 已登入
 
@@ -534,13 +538,13 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
 ![chlimage_1-30](assets/chlimage_1-30.png)
 
-### 引用 {#reference}
+### 參考 {#reference}
 
-**Reference**&#x200B;元件可讓您參照AEM網站其他頁面（在目前例項內）的文字。 然後，所引用段落的內容就會顯示為位於當前頁面上。 當來源段落變更時，內容將會更新（可能需要重新整理頁面）。
+此 **參考** 元件可讓您參照AEM網站其他頁面（在目前例項內）的文字。 然後，所引用段落的內容就會顯示為位於當前頁面上。 當來源段落變更時，內容將會更新（可能需要重新整理頁面）。
 
 * **段落引用**
 
-   * **引用**
+   * **參考**
 
       指定您要參考的頁面和段落（包括內容）的路徑。
 
@@ -574,7 +578,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
    * **節點類型**
 
-      如果搜索限制為特定節點類型，請在此列出它們；例如`cq:Page`。
+      如果搜索限制為特定節點類型，請在此列出它們；例如， `cq:Page`.
 
    * **搜尋路徑:**
 
@@ -622,7 +626,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
       顯示在後續搜尋頁面連結上的名稱。
 
-下列範例顯示從標準安裝的根目錄搜尋字詞&#x200B;*geometrixx*&#x200B;後的搜尋元件。 這也說明結果的分頁：
+下列範例顯示搜尋字詞後的搜尋元件 *geometrixx* 從標準安裝的根目錄。 這也說明結果的分頁：
 
 ![dc_search_use](assets/dc_search_use.png)
 
@@ -640,8 +644,8 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
 * **Sitemap**
 
-   * **清**
-單的起始位置的根PathPath。
+   * **根路徑**
+清單的起始路徑。
 
 ### Slideshow {#slideshow}
 
@@ -653,7 +657,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
    * **新增幻燈片**
 
-      您可以使用&#x200B;**Add**（和&#x200B;**Remove**）按鈕指定選擇的幻燈片。
+      您可以使用 **新增** (和 **移除**)按鈕。
 
    * **標題**
 
@@ -673,11 +677,11 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
 >[!NOTE]
 >
->**表**&#x200B;元件基於[RTF編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md),**[Text](#text)**&#x200B;元件亦然。
+>此 **表格** 元件以 [RTF編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)，亦即 **[文字](#text)** 元件。
 >
->建議將&#x200B;**表**&#x200B;元件用於表，但也可以使用&#x200B;**文本**&#x200B;元件來構建表。
+>建議使用 **表格** 表的元件，但也可使用 **文字** 元件。
 
-**Table**&#x200B;元件已預配置為讓您構建、填充和格式化表。 使用對話框，可以通過以下任一方法配置表並建立內容：
+此 **表格** 元件已預先設定，可讓您建構、填入表格並設定表格格式。 使用對話框，可以通過以下任一方法配置表並建立內容：
 
 * 從頭開始
 * 從外部編輯器（如Excel、OpenOffice、Notepad等）複製並貼上試算表或表格。
@@ -700,7 +704,7 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
    從中收集要顯示的標籤。 從頁面、包含所有子項或所有標籤的頁面中選取。
 
-* **頁面**
+* **Page**
 
    選取要參考的頁面。
 
@@ -708,21 +712,21 @@ Flash元件可讓您載入Flash影片。 您可以從內容尋找器將Flash資�
 
    顯示的標籤是否應作為連結。
 
-如需套用標籤的詳細資訊，請造訪[使用標籤](/help/sites-classic-ui-authoring/classic-feature-tags.md)。
+如需套用標籤的詳細資訊，請造訪 [使用標籤](/help/sites-classic-ui-authoring/classic-feature-tags.md).
 
 ### 文字 {#text}
 
 >[!NOTE]
 >
->**Text**&#x200B;元件以[RTF編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)為基礎，**[Table](#table)**&#x200B;元件亦然。
+>此 **文字** 元件以 [RTF編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)，亦即 **[表格](#table)** 元件。
 >
->建議將&#x200B;**表**&#x200B;元件用於表，但也可以使用&#x200B;**文本**&#x200B;元件來構建表。
+>建議使用 **表格** 表的元件，但也可使用 **文字** 元件。
 
-Text元件允許您使用WYSIWYG編輯器輸入文本塊，該編輯器提供了由[RTF編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)提供的功能。 通過選擇表徵圖，可以設定文本的格式，包括字型特性、對齊方式、連結、清單和縮進。
+Text元件可讓您使用WYSIWYG編輯器輸入文字區塊，並搭配 [RTF編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). 通過選擇表徵圖，可以設定文本的格式，包括字型特性、對齊方式、連結、清單和縮進。
 
 ![dc_text](assets/dc_text.png)
 
-開啟&#x200B;**Edit**&#x200B;對話框的&#x200B;**Styles**&#x200B;頁簽時，還可以設定：
+當您開啟 **樣式** 的 **編輯** 對話框，您也可以設定：
 
 * **空格字元**
 * **文字樣式**
@@ -731,15 +735,15 @@ Text元件允許您使用WYSIWYG編輯器輸入文本塊，該編輯器提供了
 
 ![dc_text_use](assets/dc_text_use.png)
 
-如需Text元件和RTF編輯器提供之功能的詳細資訊，請參閱[RTF編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)頁面。
+如需Text元件和RTF編輯器提供之功能的詳細資訊，請參閱 [RTF編輯器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) 頁面。
 
-#### 就地編輯{#inplace-editing}
+#### 就地編輯 {#inplace-editing}
 
-除了以對話方塊為基礎的RTF編輯模式外， AEM也提供[就地編輯](/help/sites-authoring/editing-content.md)，讓您直接編輯顯示在頁面版面中的文字。
+除了以對話方塊為基礎的RTF編輯模式，AEM也提供 [就地編輯](/help/sites-authoring/editing-content.md)，可直接編輯顯示在頁面版面中的文字。
 
 ### 文字和影像 {#text-image}
 
-文字和影像元件會新增文字區塊和影像。 您也可以個別新增和編輯文字和影像。 如需詳細資訊，請參閱[Text](#text)和[Image](#image)元件。
+文字和影像元件會新增文字區塊和影像。 您也可以個別新增和編輯文字和影像。 請參閱 [文字](#text) 和 [影像](#image) 元件以取得詳細資訊。
 
 ![chlimage_1-32](assets/chlimage_1-32.png) ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -747,7 +751,7 @@ Text元件允許您使用WYSIWYG編輯器輸入文本塊，該編輯器提供了
 
 * **元件樣式** (**樣式**)
 
-   您可以在此向左或向右對齊影像。 預設值為&#x200B;**左**&#x200B;對齊，與左側的影像對齊。
+   您可以在此向左或向右對齊影像。 預設為 **Left** 對齊，與左側的影像對齊。
 
 * **影像屬性** (**進階影像屬性**)
 
@@ -802,22 +806,22 @@ Text元件允許您使用WYSIWYG編輯器輸入文本塊，該編輯器提供了
 
    從下拉式清單中選取「小」或「大」。 小即生成為影像。 大是作為文本生成的。
 
-下列範例顯示顯示的&#x200B;**Title**&#x200B;元件；設計由網站專用的CSS決定。
+下列範例顯示 **標題** 元件顯示；設計由網站專用的CSS決定。
 
 ![dc_title_use](assets/dc_title_use.png)
 
 ### 影片 {#video}
 
-**Video**&#x200B;元件可讓您將預先定義且現成可用的視訊元素放置在頁面上。
+此 **影片** 元件可讓您將預先定義且現成可用的視訊元素放置在頁面上。
 
-另請參閱[設定您的視訊設定檔](/help/sites-administering/config-video.md#configuringvideoprofiles)以搭配HTML5元素使用。
+另請參閱 [設定您的視訊設定檔](/help/sites-administering/config-video.md#configuringvideoprofiles) 用於HTML5元素。
 
 將元件的例項放在頁面上後，您可以設定：
 
 * 影片
 
    * **視訊資產**  — 上傳或放置您的視訊資產。
-   * **大小**  — 視訊的原生大小(寬x高（以像素為單位）)會出現在「大小」旁的方塊中（請參閱上方）。如果您想要覆寫視訊的原生維度，請在此手動輸入寬度和高度維度。 按一下&#x200B;**OK**&#x200B;關閉對話框。
+   * **大小**  — 視訊的原生大小(寬x高（像素）)會出現在「大小」旁的方塊中（請參閱上方）。 如果您想要覆寫視訊的原生維度，請在此手動輸入寬度和高度維度。 按一下 **確定** 關閉對話。
 
 >[!NOTE]
 >
@@ -826,9 +830,7 @@ Text元件允許您使用WYSIWYG編輯器輸入文本塊，該編輯器提供了
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (Flash影片)
-
 >
-
 
 
 ## 欄 {#columns}
@@ -863,7 +865,7 @@ Text元件允許您使用WYSIWYG編輯器輸入文本塊，該編輯器提供了
 
 >[!NOTE]
 >
->如需AEM Forms的相關資訊，請參閱[AEM Forms說明](/help/forms/home.md)。
+>請參閱 [AEM Forms說明](/help/forms/home.md) 以取得AEM Forms的相關資訊。
 
 Forms是由數個不同元件所建置：
 
@@ -879,15 +881,15 @@ Forms是由數個不同元件所建置：
 
    設定檔元件與用於社交協作的訪客設定檔，以及需要訪客個人化的其他區域相關。
 
-以下是範例表單；它由&#x200B;**Form**&#x200B;元件（開頭和結尾）組成，其中兩個&#x200B;**Form Text**&#x200B;欄位用於輸入，一個&#x200B;**General Text**&#x200B;欄位用於導入文本，一個&#x200B;**Submit**&#x200B;按鈕。
+以下是範例表單；由 **表單** 元件（開始和結束），有兩個 **表單文字** 輸入欄位， **一般文字** 用於導入文本的欄位和 **提交** 按鈕。
 
 ![dc_form](assets/dc_form.png)
 
 >[!NOTE]
 >
->有關進一步開發和自訂表單的資訊，請參閱[開發Forms頁面](/help/sites-developing/developing-forms.md)。 這包括新增動作、限制、預先載入欄位，以及使用指令碼來呼叫服務以採取動作等。
+>有關進一步開發和自訂表單的資訊，請參閱 [開發Forms頁面](/help/sites-developing/developing-forms.md). 這包括新增動作、限制、預先載入欄位，以及使用指令碼來呼叫服務以採取動作等。
 
-### 表單元件常見的設定{#settings-common-to-many-form-components}
+### 表單元件的常見設定（多個） {#settings-common-to-many-form-components}
 
 雖然每個表單元件的用途不同，但許多元件都包含類似的選項和參數。
 
@@ -950,10 +952,10 @@ Forms是由數個不同元件所建置：
 
       這取決於表單元件類型，但提供一個或多個按一下框，以指明此欄位或此欄位的某些部分是/是必需的。
 
-   * **必填訊息**  — 通知使用者此欄位為必填的訊息；必填欄位也會標籤為和星號。
-   * **約束**  — 可用於選取的約束取決於窗體元件類型。
-   * **約束**
-消息通知用戶所需的消息。
+   * **必要訊息**  — 通知用戶此欄位為必填欄位的消息；必填欄位也會標籤為和星號。
+   * **限制**  — 可用於選擇的約束取決於表單元件類型。
+   * **約束消息**
+通知使用者需要的訊息。
 
 * **樣式**
 
@@ -967,9 +969,9 @@ Forms是由數個不同元件所建置：
 
    * **CSS**
 
-### 表單（元件）{#form-component}
+### 表單（元件） {#form-component}
 
-表單元件使用&#x200B;**表單開始**&#x200B;和&#x200B;**表單結束**&#x200B;元素定義表單的開始和結束。 這些一律會配對，以確保表單已正確定義。
+表單元件會使用 **表單開始** 和 **表單結尾** 元素。 這些一律會配對，以確保表單已正確定義。
 
 ![dc_form-1](assets/dc_form-1.png)
 
@@ -981,16 +983,16 @@ Forms是由數個不同元件所建置：
 
 * **表單**
 
-   * **感謝頁**
-面要參考的頁面感謝訪客提供其輸入。如果保留為空白，表單會在提交後重新顯示。
-   * **開**
-始工作流確定提交表單後觸發的工作流。
+   * **感謝頁面**
+要參考的頁面，感謝訪客提供其輸入。 如果保留為空白，表單會在提交後重新顯示。
+   * **開始工作流程**
+決定提交表單後觸發的工作流程。
 
 * **進階**
 
    * **動作類型**
 
-      表單需要動作。 動作會定義透過使用者提交的資料（類似於HTML中的action=）觸發以執行的操作。 有些客戶需要相應的&#x200B;**Action Configuration**。
+      表單需要動作。 動作會定義使用者提交的資料(類似於HTML中的action=)所觸發的執行操作。 有些需要對應 **動作設定**.
 
       標準AEM安裝中包含一系列動作類型：
 
@@ -1027,11 +1029,11 @@ Forms是由數個不同元件所建置：
 
       這是一個可選欄位，它指定儲存庫中節點的路徑。 如果此節點的屬性與欄位名稱匹配，則表單上的相應欄位將預載這些屬性的值。 如果不存在匹配項，則欄位包含預設值。
 
-      使用&#x200B;**載入路徑**，您可以使用必填欄位中的值預先載入表單。 請參閱[預先載入表單值](/help/sites-developing/developing-forms.md#preloading-form-values)。
+      使用 **載入路徑** 您可以預先載入必填欄位中的值。 請參閱 [預先載入表單值](/help/sites-developing/developing-forms.md#preloading-form-values).
 
    * **用戶端驗證**
 
-      指示此表單是否需要客戶端驗證（伺服器驗證&#x200B;*always*&#x200B;發生）。 這可與&#x200B;**Forms驗證碼**&#x200B;元件一起實現。
+      指示此表單是否需要客戶端驗證（伺服器驗證） *always* 發生。) 這可與 **Forms驗證碼** 元件。
 
    * **驗證資源類型**
 
@@ -1046,17 +1048,17 @@ Forms是由數個不同元件所建置：
          `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
    * **動作設定**
 
-      **Action Configuration**&#x200B;中可用的選項取決於所選&#x200B;**Action Type**:
+      中可用的選項 **動作設定** 取決於 **動作類型** 已選取：
 
       * **帳戶請求**
 
-         * **「建立帳**
-戶」頁建立新帳戶時使用的頁。
+         * **「建立帳戶」頁**
+建立新帳戶時使用的頁面。
       * **建立內容**
 
          * 內容路徑
 
-            表單傾印之任何內容的內容路徑。 輸入以斜線`/`結尾的路徑。 斜線表示，對於每個表單埠，在指定位置建立新節點；例如：
+            表單傾印之任何內容的內容路徑。 輸入以斜線結尾的路徑 `/`. 斜線表示，對於每個表單埠，在指定位置建立新節點；例如：
 
             `/forms/feedback/`
 
@@ -1074,7 +1076,7 @@ Forms是由數個不同元件所建置：
 
          * **資源類型**
 
-            若已設定，則會將此項目新增至每個註解中，作為`sling:resourceType`
+            若已設定，這會新增至每個註解，如 `sling:resourceType`
 
          * **檢視選擇器**
       * **建立銷售機會**
@@ -1098,7 +1100,7 @@ Forms是由數個不同元件所建置：
 
          * **檢視資料...**
 
-            按一下此按鈕可在批量編輯器中訪問有關表單結果的資訊。 從這裡，您可以將資訊匯出至`.tsv`（以Tab分隔）檔案（例如，在Excel試算表中使用）。
+            按一下此按鈕可在批量編輯器中訪問有關表單結果的資訊。 從這裡，您可以將資訊匯出至 `.tsv` （以Tab分隔）檔案（例如，在Excel試算表中使用）。
       * **郵件**
 
          * **從**
@@ -1129,7 +1131,7 @@ Forms是由數個不同元件所建置：
 
          * **內容路徑**
 
-            表單傾印之任何內容的內容路徑。 輸入以斜線`/`結尾的路徑。 斜線表示，對於每個表單埠，在指定位置建立新節點；例如：
+            表單傾印之任何內容的內容路徑。 輸入以斜線結尾的路徑 `/`. 斜線表示，對於每個表單埠，在指定位置建立新節點；例如：
 
             `/forms/feedback/`
 
@@ -1138,7 +1140,7 @@ Forms是由數個不同元件所建置：
             按一下此按鈕可在批量編輯器中訪問有關表單結果的資訊。 從這裡，您可以將資訊匯出為.tsv（以Tab分隔）檔案（例如，在Excel試算表中使用）。
       * **透過上傳存放內容**
 
-         此選項與&#x200B;**儲存內容**&#x200B;相同。
+         此選項與 **儲存內容**.
 
       * **取消訂閱者的訂閱**
 
@@ -1217,9 +1219,9 @@ Forms是由數個不同元件所建置：
 
 >[!NOTE]
 >
->使用&#x200B;**項載入路徑**&#x200B;可以用值預載複選框組清單。
+>使用 **項目載入路徑** 您可以使用值預載複選框組清單。
 >
->請參閱[預先載入多個值的表單欄位](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)。
+>請參閱 [預先載入多個值的表單欄位](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### 信用卡詳細資料 {#credit-card-details}
 
@@ -1237,9 +1239,9 @@ Forms是由數個不同元件所建置：
 
 >[!NOTE]
 >
->使用&#x200B;**項目載入路徑**，您可以使用值預載下拉清單。
+>使用 **項目載入路徑** 您可以使用值預先載入下拉式清單。
 >
->請參閱[預先載入多個值的表單欄位](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)。
+>請參閱 [預先載入多個值的表單欄位](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### 檔案上傳 {#file-upload}
 
@@ -1249,7 +1251,7 @@ Forms是由數個不同元件所建置：
 
 >[!NOTE]
 >
->您可以建立自訂上傳元件，將檔案上傳至Sling Servlet。 如需詳細資訊，請參閱[將檔案上傳至Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html)。
+>您可以建立自訂上傳元件，將檔案上傳至Sling Servlet。 如需詳細資訊，請參閱 [上傳檔案至Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
 
 ### 隱藏欄位 {#hidden-field}
 
@@ -1261,7 +1263,7 @@ Forms是由數個不同元件所建置：
 >
 >您也可以自訂表單，以根據表單中其他欄位的值顯示或隱藏特定表單元件。 只有在特定條件下才需要欄位時，變更表單欄位的可見性會很實用。
 >
->請參閱[顯示和隱藏表單元件](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components)。
+>請參閱 [顯示和隱藏表單元件](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### 影像按鈕 {#image-button}
 
@@ -1294,7 +1296,7 @@ Forms是由數個不同元件所建置：
 此元件為使用者提供下列兩個欄位：
 
 * 密碼的輸入
-* 重複輸入密碼以檢查以確認輸入正確。
+* 重複輸入密碼以檢查輸入是否正確。
 
 使用預設設定時，元件將顯示為：
 
@@ -1310,9 +1312,9 @@ Forms是由數個不同元件所建置：
 
 >[!NOTE]
 >
->使用&#x200B;**項目載入路徑**&#x200B;可以用值預載無線電組。
+>使用 **項目載入路徑** 您可以使用值預先載入選項組。
 >
->請參閱[預先載入多個值的表單欄位](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)。
+>請參閱 [預先載入多個值的表單欄位](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### 提交按鈕 {#submit-button}
 
@@ -1354,7 +1356,7 @@ Forms是由數個不同元件所建置：
 
 ![dc_form_text](assets/dc_form_text.png)
 
-### 工作流提交按鈕{#workflow-submit-button-s}
+### 工作流程提交按鈕 {#workflow-submit-button-s}
 
 這可讓您建立「提交」按鈕，以用於工作流程。
 

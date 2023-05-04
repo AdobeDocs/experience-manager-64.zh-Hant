@@ -1,32 +1,36 @@
 ---
 title: 互動式通訊製作UI簡介
-seo-title: 介紹您可用來製作互動式通訊的各種使用者介面元素
+seo-title: An introduction to the various user interface elements you can use to author Interactive Communication
 description: 介紹您可用來製作互動式通訊的各種使用者介面元素
-seo-description: 介紹您可用來製作互動式通訊的各種使用者介面元素
+seo-description: An introduction to the various user interface elements you can use to author Interactive Communication
 uuid: 4e301b9a-76a1-4beb-9d67-dbd0a3bdd2e4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
-feature: 互動式通訊
+feature: Interactive Communication
 exl-id: 1537490b-71b3-4ab3-b8d1-d85eac88d857
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1317'
+source-wordcount: '1321'
 ht-degree: 3%
 
 ---
 
-# 互動式通訊製作UI {#introduction-to-interactive-communication-authoring-ui}簡介
+# 互動式通訊製作UI簡介 {#introduction-to-interactive-communication-authoring-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 介紹您可用來製作互動式通訊的各種使用者介面元素
 
-創作[互動式通信](/help/forms/using/interactive-communications-overview.md)的用戶介面是直觀的，並提供以下內容來創作互動式通信的打印和Web通道：
+製作的使用者介面 [互動式通訊](/help/forms/using/interactive-communications-overview.md) 是直觀的，並提供以下內容來編寫互動式通信的打印和web通道：
 
 * WYSIWYG拖放檔案編輯器
 * 資產的整合存放庫 — 上傳至伺服器並在伺服器上建立的資產可在互動式通訊製作介面的資產瀏覽器中使用
 
-當您[建立新通信或編輯現有的Interactive Communication](/help/forms/using/create-interactive-communication.md)時，請使用以下用戶介面元素：
+當您 [建立新的或編輯現有的互動式通信](/help/forms/using/create-interactive-communication.md)，則會使用下列使用者介面元素：
 
 * [側欄](#sidebar)
 * [頁面工具列](#page-toolbar)
@@ -36,7 +40,7 @@ ht-degree: 3%
 
 ![互動式通訊製作使用者介面](assets/form-editor.png)
 
-**A.側** 欄 **B.** 頁面工具 **列C.** 內容區域
+**答：** 側欄 **B.** 頁面工具列 **C.** 內容區域
 
 ## 側欄 {#sidebar}
 
@@ -44,7 +48,7 @@ ht-degree: 3%
 
 [按一下放大](assets/sidebar-comps-1.png)
 
-**A.** 管道瀏 **覽器B.** 內容瀏覽器 **C.** 屬性瀏覽器 **D.** 資產瀏覽器 **E.** 元件瀏覽器 **F.** 資料來源瀏覽器 — 資料模型 **G.** 資料來源瀏覽器 — 主內容
+**答：** 頻道瀏覽器 **B.** 內容瀏覽器 **C.** 屬性瀏覽器 **D.** 資產瀏覽器 **E.** 元件瀏覽器 **F.** 資料來源瀏覽器 — 資料模型 **G.** 資料來源瀏覽器 — 主內容
 
 側欄包括：
 
@@ -60,7 +64,7 @@ ht-degree: 3%
 
    可讓您編輯元件的屬性。 屬性會根據元件而變更。 例如，要查看文檔容器的屬性：
 
-   選取元件，然後點選![欄位層級](assets/field-level.png) > **檔案容器**，然後點選![cmpr](assets/cmppr.png)。
+   選取元件，然後點選 ![欄位層級](assets/field-level.png) > **文檔容器**，然後點選 ![cppr](assets/cmppr.png).
 
 * **資產瀏覽器**
 
@@ -70,61 +74,61 @@ ht-degree: 3%
 
    包括可用於構建文檔的打印和Web通道的元件。 您可以將元件拖曳至互動式通訊以新增元素，並視需求設定新增的元素。 下表說明「元件」瀏覽器中列出的用於列印和Web通道的元件：
 
-| **元件** | **Print Channel** | **Web Channel** | **功能** |
+| **Component** | **Print Channel** | **Web Channel** | **功能** |
 |---|---|---|---|
 | 圖表 | ✓ | ✓ | 新增圖表，供您在互動式通訊中使用，以視覺化方式呈現從表單資料模型收集項目擷取的二維資料。 |
 | 文件片段 | ✓ | ✓ | 可讓您將可重複使用的元件、文字、清單或條件新增至互動式通訊。 添加到互動式通信的可重複使用的元件可以是基於表單資料模型的元件，也可以是沒有表單資料模型的元件。 |
 | 影像 | ✓ | ✓ | 讓您插入影像。 |
-| 面板 | - | ✓ | 「面板」元件是將其他元件分組在一起的佔位符，它控制如何在互動式通信中佈置一組元件。 面板元件也可讓您讓一組元件可為一般使用者重複，例如填入教育認證所需的多個項目。 也建議將每個面板用於具有多個標籤的互動式通訊的標籤。 |
+| 面板 | - | ✓ | 「面板」元件是將其他元件分組在一起的佔位符，它控制如何在「互動式通信」中佈置一組元件。 面板元件也可讓您讓一組元件可為一般使用者重複，例如填入教育認證所需的多個項目。 也建議將每個面板用於具有多個標籤的互動式通訊的標籤。 |
 | 表格 | &amp;ast; | ✓ | 新增表格以整理行和欄中的資料。 |
-| 目標區域 | &amp;ast;&amp;ast | ✓ | 在Web通道中插入目標區域，以組織Web通道特定的元件。 |
+| 目標區域 | &amp;ast;&amp;ast; | ✓ | 在Web通道中插入目標區域，以組織Web通道特定的元件。 |
 | 文字 | - | ✓ | 將文本添加到互動式通信的Web通道中。 文本可以利用表單資料模型對象來使內容動態。 |
 
 &amp;ast;在「列印」通道中使用「版面片段」來新增表格。
 
-&amp;ast;&amp;ast在「列印」通道中，目標區域在XDP/列印範本中預先定義。 無法使用互動式通信編寫UI添加新的目標區域。
+&amp;ast;&amp;ast;在「列印」通道中，目標區域在XDP/列印範本中預先定義。 無法使用互動式通信編寫UI添加新的目標區域。
 
 * **資料來源瀏覽器**
 
-   「資料來源瀏覽器」會在您建立互動式通訊時選取的表單資料模型中顯示可用的資料來源。
+   資料來源瀏覽器會在您建立互動式通訊時選取的表單資料模型中顯示可用的資料來源。
 
-### 使用元件{#key-points-for-working-with-components}的關鍵點
+### 使用元件的關鍵點 {#key-points-for-working-with-components}
 
 使用互動式通訊元件時的要點如下：
 
-* 每個元件都具有控制其外觀和功能的關聯屬性。 要配置元件的屬性，請點選元件並點選![cmppr](assets/cmppr.png)以在「屬性」瀏覽器中開啟元件屬性。
-* 元件以其元素名稱來識別。 點選![cmppr](assets/cmppr.png)時，您可以變更屬性瀏覽器中的「元素名稱」欄位值，以變更元件的名稱。 「元素名稱」欄位僅接受字母、數字、連字型大小(-)和底線(_)。 不允許使用其他特殊字元，元素名稱應以字母開頭。
+* 每個元件都具有控制其外觀和功能的關聯屬性。 若要設定元件的屬性，請點選元件並點選 ![cppr](assets/cmppr.png) 在「屬性」瀏覽器中開啟元件屬性。
+* 元件以其元素名稱來識別。 當您點選 ![cppr](assets/cmppr.png)，您可以變更屬性瀏覽器中的「元素名稱」欄位值，以變更元件的名稱。 「元素名稱」欄位僅接受字母、數字、連字型大小(-)和底線(_)。 不允許使用其他特殊字元，元素名稱應以字母開頭。
 * 只要「互動式通信」上顯示標題，您就可以修改編輯器中內嵌的「互動式通信」元件的「標題」屬性，而無需開啟「屬性」瀏覽器。 若要這麼做：
 
    1. 點選以選取具有Title屬性且其Hide title屬性已停用的元件。
-   1. 點選![aem_6_3_edit](assets/aem_6_3_edit.png)以讓標題可編輯。
+   1. 點選 ![aem_6_3_edit](assets/aem_6_3_edit.png) 讓標題可編輯。
    1. 修改標題並點選「Return（返回）」鍵，或點選元件外部的任何位置以儲存變更。 點選Esc鍵以捨棄變更。
 
-## 元件工具欄{#component-toolbar}
+## 元件工具列 {#component-toolbar}
 
 ![](do-not-localize/toolbar.png)
 
 選取元件時，您會看到工具列可供您使用。 您可以獲得剪切、貼上、移動和指定元件屬性的選項。 您的選項為：
 
-答：**配置**:點選&#x200B;**設定**&#x200B;時，側邊欄中會顯示元件屬性。
+答： **設定**:當您點選 **設定**，元件屬性會顯示在側邊欄中。
 
-B.**編輯規則**:點選「編輯規則」時，會出現「規則編輯器」，您可在其中編輯和建立所選元件的規則。 在規則編輯器中，您也可以選取其他表單物件（元件），並編輯/建立這些表單物件的規則。
+B. **編輯規則**:點選「編輯規則」時，會出現「規則編輯器」，您可在其中編輯和建立所選元件的規則。 在規則編輯器中，您也可以選取其他表單物件（元件），並編輯/建立這些表單物件的規則。
 
-C.**Copy**:您可以使用複製選項來複製元件，並貼到互動式通訊中的其他位置。
+C. **複製**:您可以使用複製選項來複製元件，並貼到互動式通訊中的其他位置。
 
-D.**剪下**:在「交互通信」中，可以使用剪切選項將元件從一個位置移動到另一個位置。
+D. **剪下**:在「交互通信」中，可以使用剪切選項將元件從一個位置移動到另一個位置。
 
-E.**Delete**:可讓您從互動式通訊中刪除元件。
+E. **刪除**:可讓您從互動式通訊中刪除元件。
 
-F.**插入元件**:可讓您在選取的元件上方插入元件。
+F. **插入元件**:可讓您在選取的元件上方插入元件。
 
-G.**貼上**:可讓您使用上述選項來貼上您剪下或複製的元件。
+G. **貼上**:可讓您使用上述選項來貼上您剪下或複製的元件。
 
-H.**組**:如果您想要剪下、複製或貼上多個元件，可讓您選取多個元件。
+H. **群組**:如果您想要剪下、複製或貼上多個元件，可讓您選取多個元件。
 
-我。**Parent**:可讓您選取元件的父項。
+我。 **父級**:可讓您選取元件的父項。
 
-J.**更多**:提供更多選項以使用所選元件。
+J. **更多**:提供更多選項以使用所選元件。
 
 * 檢視SOM運算式（僅適用於面板）
 * 在面板中對對象進行分組（僅適用於面板）
@@ -134,13 +138,13 @@ J.**更多**:提供更多選項以使用所選元件。
 * 新增面板工具列（僅適用於面板）
 * 更換（不適用於面板）
 
-## 頁面工具欄{#page-toolbar}
+## 頁面工具列 {#page-toolbar}
 
 頂部的「頁面」工具欄提供了選項，可以預覽互動式通信並更改其屬性。 您可以在編寫互動式通訊時加以預覽，並據此進行變更。 在頁面工具列中，您會看到：
 
-* 切換「側面板」 ![切換 — 側面板](assets/toggle-side-panel.png):讓您顯示或隱藏側欄。
-* 頁面資訊![頁面資訊ad](assets/pageinformationad.png):可讓您檢視頁面屬性。
-* 模擬器![標尺](assets/ruler.png):可讓您模擬不同顯示大小（例如平板電腦和手機）的互動式通訊外觀。
+* 切換側面板 ![切換側面板](assets/toggle-side-panel.png):讓您顯示或隱藏側欄。
+* 頁面資訊 ![pageinformationad](assets/pageinformationad.png):可讓您檢視頁面屬性。
+* 模擬器 ![尺標](assets/ruler.png):可讓您模擬不同顯示大小（例如平板電腦和手機）的互動式通訊外觀。
 * 編輯：可讓您選取其他模式，例如：編輯、樣式、開發人員和設計。
 
    * 編輯：可讓您編輯互動式通訊及其元件的屬性。 例如，新增元件、拖放影像並指定必填欄位。

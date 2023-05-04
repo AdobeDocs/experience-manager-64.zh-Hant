@@ -1,26 +1,30 @@
 ---
 title: 使用模式檢測器評估升級複雜性
-seo-title: 使用模式檢測器評估升級複雜性
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: 了解如何使用模式偵測器來評估升級的複雜性。
-seo-description: 了解如何使用模式偵測器來評估升級的複雜性。
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
-feature: 升級
+feature: Upgrading
 exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '536'
+ht-degree: 3%
 
 ---
 
 # 使用模式檢測器評估升級複雜性{#assessing-the-upgrade-complexity-with-the-pattern-detector}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 此功能可讓您偵測使用中的模式，以檢查現有AEM例項的升級性：
 
@@ -31,7 +35,7 @@ ht-degree: 2%
 
 ## 設定方法 {#how-to-set-up}
 
-模式偵測器會以[一個套件](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)形式個別發行，適用於以AEM 6.5升級為目標的6.1到6.5之任何來源AEM版本。 可使用[軟體包管理器](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html)進行安裝。
+模式偵測器會以 [一個包](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)  使用以AEM 6.5升級為目標的任何來源AEM 6.1到6.5版。 可使用 [封裝管理員](https://helpx.adobe.com/tw/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## 使用方式 {#how-to-use}
 
@@ -41,7 +45,7 @@ ht-degree: 2%
 >
 >* 提高檢測率
 >* 避免業務關鍵型實例出現任何延遲\
-   >同時，建議您在預備環境&#x200B;**上執行**，盡可能接近使用者應用程式、內容和設定領域的生產環境。
+   >同時建議執行 **在測試環境中** 在使用者應用程式、內容和設定方面，與生產環境盡可能接近。
 
 
 您可以使用數種方法來檢查「模式偵測器」輸出：
@@ -49,17 +53,17 @@ ht-degree: 2%
 * **透過Felix Inventory主控台：**
 
 1. 前往AEM Web Console，瀏覽至：https://<i></i>serveraddress:serverport/system/console/configMgr
-1. 選取&#x200B;**狀態 — 模式偵測器**，如下圖所示：
+1. 選擇 **狀態 — 模式偵測器** 如下圖所示：
 
    ![螢幕截圖 — 2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **透過以反應文字為基礎或一般JSON介面**
 
-* **透過反應式JSON行介面**，在每行中分別產生JSON檔案。
+* **透過反應式JSON線條介面**，每行會產生個別的JSON檔案。
 
 以下詳細說明這兩種方法：
 
-## 無功介面{#reactive-interface}
+## 無功介面 {#reactive-interface}
 
 被動介面允許在檢測到懷疑時立即處理違規報告。
 
@@ -68,7 +72,7 @@ ht-degree: 2%
 1. 純文字介面
 1. JSON介面
 
-## 處理純文字檔案介面{#handling-the-plain-text-interface}
+## 處理純文字介面 {#handling-the-plain-text-interface}
 
 輸出中的資訊將格式化為一系列事件條目。 有兩個管道：一個用於發佈違規，另一個用於發佈當前進度。
 
@@ -84,7 +88,7 @@ curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-dete
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-可使用`grep`命令篩選進度：
+可使用 `grep` 命令：
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -98,9 +102,9 @@ curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-dete
 2018-02-13T14:19:35.685+01:00 [PROGRESS] Finished in period=PT13.782
 ```
 
-## 處理JSON介面{#handling-the-json-interface}
+## 處理JSON介面 {#handling-the-json-interface}
 
-同樣地，JSON在發佈後也可以使用[jq工具](https://stedolan.github.io/jq/)來處理。
+同樣地，您也可以使用 [jq工具](https://stedolan.github.io/jq/) 一發佈。
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -210,7 +214,7 @@ curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-dete
 
 >[!NOTE]
 >
->建議的方法是將curl的整個輸出儲存到檔案中，然後透過`jq`或`grep`處理它，以篩選資訊類型。
+>建議的方法是將整個輸出從curl儲存至檔案，然後透過 `jq` 或 `grep` 來篩選資訊類型。
 
 ## 檢測範圍 {#scope}
 

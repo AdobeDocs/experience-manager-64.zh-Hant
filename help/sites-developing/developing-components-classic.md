@@ -4,14 +4,18 @@ seo-title: Developing AEM Components (Classic UI)
 description: 傳統UI使用ExtJS來建立小工具集，以提供元件的外觀和風格。 HTL不是建議使用的AEM指令碼語言。
 seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
 exl-id: 725e4f82-7019-4365-9c01-b5d95ea2a8fa
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2391'
-ht-degree: 0%
+source-wordcount: '2427'
+ht-degree: 1%
 
 ---
 
 # 開發AEM元件（傳統UI）{#developing-aem-components-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 傳統UI使用ExtJS來建立小工具集，以提供元件的外觀和風格。 由於這些Widget的性質，元件與傳統UI和 [觸控式UI](/help/sites-developing/developing-components.md).
 

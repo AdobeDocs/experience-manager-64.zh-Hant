@@ -1,8 +1,8 @@
 ---
 title: 按贊要點
-seo-title: 按贊要點
+seo-title: Liking Essentials
 description: 按贊元件概觀
-seo-description: 按贊元件概觀
+seo-description: Liking component overview
 uuid: 89f16859-c901-4090-8e16-363b95c508de
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,22 +11,26 @@ content-type: reference
 discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: 509d1fb4-a88d-4438-a618-ba063adb6fb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 1%
+source-wordcount: '326'
+ht-degree: 2%
 
 ---
 
-# 按贊要點{#liking-essentials}
+# 按贊要點 {#liking-essentials}
 
-按贊元件（[tally](tally.md)子類）是一個有用的工具，它允許成員通過僅選擇心臟表徵圖來表達對特定內容的正面意見。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-允許將贊元件的多個例項放在相同頁面上；每個實例都必須配置唯一的`tally name`屬性。
+按贊元件， [計數](tally.md) 子類是一種有用的工具，它允許成員通過僅選擇心臟表徵圖來表達對特定內容的正面意見。
+
+允許將贊元件的多個例項放在相同頁面上；每個執行個體都必須以唯一 `tally name` 屬性。
 
 不支援匿名張貼贊。 網站訪客必須註冊並登入才能參與按贊。 已登入的訪客（成員）可隨時切換為開啟或關閉。
 
-## 客戶端{#essentials-for-client-side}的要點
+## 用戶端的要點 {#essentials-for-client-side}
 
 <table> 
  <tbody> 
@@ -36,7 +40,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>包括</strong></a></td> 
-   <td>是 — 可在<i>design </i>模式中編輯屬性</td> 
+   <td>是 — 可在中編輯屬性 <i>設計 </i>模式</td> 
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
@@ -52,14 +56,14 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td><strong>屬性</strong></td> 
-   <td><p>請參閱<a href="liking.md">使用贊</a></p> </td> 
+   <td><p>請參閱 <a href="liking.md">使用贊</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 * [用戶端自訂](client-customize.md)
 
-## 伺服器端{#essentials-for-server-side}的要點
+## 伺服器端的Essentials {#essentials-for-server-side}
 
 * [Tally API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
@@ -67,18 +71,18 @@ ht-degree: 1%
 
 * [伺服器端自訂](server-customize.md)
 
-### 訪問已發佈的投票(UGC){#accessing-posted-voting-ugc}
+### 訪問已發佈的投票(UGC) {#accessing-posted-voting-ugc}
 
 UGC應使用其中一種標準的協調方法來協調。\
-請參閱[協調使用者產生的內容](moderate-ugc.md)。
+請參閱 [協調使用者產生的內容](moderate-ugc.md).
 
-自AEM 6.1社群起，UGC使用[公用商店](working-with-srp.md)包括程式化存取UGC，而不論選擇的儲存選項（例如ASRP、MSRP或JSRP）。
+自AEM 6.1社群起，請使用 [公用商店](working-with-srp.md) 針對UGC包括可程式化地存取UGC，而無論選擇的儲存選項（例如ASRP、MSRP或JSRP）。
 
-**UGC在存放庫中的位置和格式可能會變更，恕不另行警告**。
+**UGC在存放庫中的位置和格式可能會變更，恕不另行警告**.
 
 請參閱：
 
-* [儲存資源提供程式概述](srp.md)  — 簡介和儲存庫使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP公用程式方法與範例
+* [儲存資源提供程式概述](srp.md)  — 簡介和存放庫使用概觀
+* [SRP和UGC要點](srp-and-ugc.md) - SRP實用程式方法和示例
 * [使用SRP存取UGC](accessing-ugc-with-srp.md)  — 編碼准則
-* [SocialUtils重構](socialutils.md)  — 將棄用的公用程式方法對應至目前的SRP公用程式方法
+* [SocialUtils重構](socialutils.md)  — 將已棄用的實用程式方法映射到當前SRP實用程式方法

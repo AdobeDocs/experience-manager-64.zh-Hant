@@ -1,8 +1,8 @@
 ---
 title: 元件、功能和功能要點
-seo-title: 元件、功能和功能要點
+seo-title: Component, Function and Feature Essentials
 description: 社群網站、範本和群組如何運作
-seo-description: 社群網站、範本和群組如何運作
+seo-description: How community sites, templates, and groups function
 uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,22 +10,26 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: bde29d3a-8bc8-4c30-b764-a2fa1ac34069
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '245'
 ht-degree: 17%
 
 ---
 
-# 元件、函式和功能要點{#component-function-and-feature-essentials}
+# 元件、功能和功能要點 {#component-function-and-feature-essentials}
 
-AEM Communities功能要求網站訪客必須成為成員，並先登入[社群網站](overview.md#communitiessites)，才能張貼內容。 因此，[社區站點模板](sites.md)被設計為包括登錄功能以及用戶配置檔案、消息、搜索、協調和翻譯。[](sites-console.md)
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-當所選社區站點模板中包含[社區組函式](functions.md#groups-function)時，社區站點將支援成員建立社區組。
+AEM Communities功能要求網站訪客成為成員並登入 [社群網站](overview.md#communitiessites) 之後才能發佈內容。 因此， [社群網站範本](sites.md)，來源為社群網站 [已建立](sites-console.md)，設計上包含登入功能，以及使用者設定檔、傳訊、搜尋、協調和翻譯。
+
+社群網站可支援成員在 [社區組功能](functions.md#groups-function) 包含在選定的社區站點模板中。
 
 以下是Communities元件、功能和功能的基本資訊連結。
 
-## 基本元件{#base-components}
+## 基本元件 {#base-components}
 
 * [評論](essentials-comments.md)
 * [評論](reviews-basics.md)
@@ -36,7 +40,7 @@ AEM Communities功能要求網站訪客必須成為成員，並先登入[社群�
    * [投票](essentials-voting.md)
    * *民調問答（不再提供）*
 
-## 具有函式{#components-with-functions}的元件
+## 具有函式的元件 {#components-with-functions}
 
 * [活動資料流](essentials-activities.md)
 * [指定任務](essentials-assignments.md)
@@ -69,10 +73,10 @@ AEM Communities功能要求網站訪客必須成為成員，並先登入[社群�
 
 ## Javadocs {#javadocs}
 
-[線上javadocs](../../help/sites-developing/reference-materials.md)反映AEM 6.3版本中可用的API。\
-Communities API位於`com.adobe.cq.social.*`套件中。
+此 [線上javadoc](../../help/sites-developing/reference-materials.md) 反映AEM 6.3版中可用的API。\
+Communities API位於 `com.adobe.cq.social.*` 套件。
 
-對於每個[功能包](deploy-communities.md#latestfeaturepack)，將提供javadoc jar。 如需詳細資訊，請造訪[使用Maven for Communities](maven.md#javadocs)。
+針對每個 [功能包](deploy-communities.md#latestfeaturepack)，將可使用javadoc jar。 如需詳細資訊，請造訪 [使用Maven for Communities](maven.md#javadocs).
 
 ## 其他資訊 {#additional-information}
 

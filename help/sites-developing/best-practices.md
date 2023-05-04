@@ -1,5 +1,5 @@
 ---
-title: 最佳作法
+title: 最佳做法
 seo-title: Best Practices
 description: Adobe工程與諮詢團隊已為AEM開發人員開發了一套完整的最佳實務
 seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: a2a299b5-a15a-47d9-a9d8-83f45917d080
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 8%
+source-wordcount: '498'
+ht-degree: 9%
 
 ---
 
-# 最佳作法{#best-practices}
+# 最佳做法{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 開發人員最佳實務 — 快速入門 {#best-practices-for-developers-getting-started}
 
@@ -50,7 +54,7 @@ Adobe 工程和顧問團隊已經為 AEM 開發人員發展出一組完整的最
 * [製作最佳實務](/help/sites-authoring/best-practices.md)
 * [部署最佳實務](/help/sites-deploying/best-practices.md)
 
-## 網站 {#sites}
+## Sites {#sites}
 
 管理和編寫網站內容有一些最佳實務，概述如下：
 

@@ -1,31 +1,35 @@
 ---
 title: 自訂追蹤表格
-seo-title: 自訂追蹤表格
+seo-title: Customize tracking tables
 description: 在顯示於AEM Forms工作區之追蹤標籤的任務表格中，自訂使用者程式詳細資訊的顯示方式。
-seo-description: 在顯示於AEM Forms工作區之追蹤標籤的任務表格中，自訂使用者程式詳細資訊的顯示方式。
+seo-description: How-to customize the display of the details of user processes in the task table displayed in the tracking tab of AEM Forms workspace.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 5f925f47-3123-4a27-aea1-0a1c1fba7bb6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 2%
+source-wordcount: '366'
+ht-degree: 4%
 
 ---
 
 # 自訂追蹤表格{#customize-tracking-tables}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 AEM Forms工作區中的追蹤標籤可用來顯示與登入使用者有關的程式例項詳細資訊。 若要檢視追蹤表格，請先在左側窗格中選取程式名稱，以便在中間窗格中查看其執行個體清單。 在右窗格中選擇一個進程實例以查看該實例生成的任務表。 預設情況下，表列顯示以下任務屬性（任務模型中的相應屬性以括弧表示）:
 
 * ID ( `taskId`)
 * 名稱 ( `stepName`)
-* 說明 ( `instructions`)
+* 指示 ( `instructions`)
 * 選取的動作 ( `selectedRoute`)
-* 建立時間(`createTime`)
-* 完成時間(`completeTime`)
+* 建立時間( `createTime`)
+* 完成時間( `completeTime`)
 * 所有者 ( `currentAssignment.queueOwner`)
 
 任務模型中可用於顯示在任務表中的剩餘屬性為：
@@ -115,9 +119,9 @@ AEM Forms工作區中的追蹤標籤可用來顯示與登入使用者有關的�
  </tbody> 
 </table>
 
-對於任務表中的以下自定義項，您需要在原始碼中執行語義更改。 請參閱[自訂AEM Forms工作區簡介](/help/forms/using/introduction-customizing-html-workspace.md) ，了解如何使用工作區SDK進行語意變更，並從已變更的來源建立縮制套件。
+對於任務表中的以下自定義項，您需要在原始碼中執行語義更改。 請參閱 [自訂AEM Forms工作區簡介](/help/forms/using/introduction-customizing-html-workspace.md) 如何使用工作區SDK進行語義變更，並從變更的來源建立縮制套件。
 
-## 更改表列及其順序{#changing-table-columns-and-their-order}
+## 更改表列及其順序 {#changing-table-columns-and-their-order}
 
 1. 要修改表中顯示的任務屬性及其順序，請配置檔案/ws/js/runtime/templates/processinstancehistory.html :
 
@@ -153,11 +157,11 @@ AEM Forms工作區中的追蹤標籤可用來顯示與登入使用者有關的�
    </table>
    ```
 
-## 排序追蹤表格{#sorting-a-tracking-table}
+## 排序追蹤表格 {#sorting-a-tracking-table}
 
 要在按一下列標題時對任務清單表進行排序：
 
-1. 在檔案`js/runtime/views/processinstancehistory.js`中註冊`.fixedTaskTableHeader th`的點擊處理程式。
+1. 註冊點擊處理程式 `.fixedTaskTableHeader th` 檔案中 `js/runtime/views/processinstancehistory.js`.
 
    ```as3
    events: {
@@ -167,7 +171,7 @@ AEM Forms工作區中的追蹤標籤可用來顯示與登入使用者有關的�
    }
    ```
 
-   在處理程式中，調用`js/runtime/util/history.js`的`onTaskTableHeaderClick`函式。
+   在處理常式中，叫用 `onTaskTableHeaderClick` 函式 `js/runtime/util/history.js`.
 
    ```as3
    onTaskTableHeaderClick: function (event) {
@@ -175,7 +179,7 @@ AEM Forms工作區中的追蹤標籤可用來顯示與登入使用者有關的�
    }
    ```
 
-1. 公開`js/runtime/util/history.js`中的`TaskTableHeaderClick`方法。
+1. 公開 `TaskTableHeaderClick` 方法輸入 `js/runtime/util/history.js`.
 
    該方法從點擊事件中查找任務屬性，對該屬性上的任務清單進行排序，並使用排序的任務清單呈現任務表。
 

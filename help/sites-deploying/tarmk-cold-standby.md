@@ -11,14 +11,18 @@ topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: ce025f42bcd7105b83aa6a931e091aa21269a6f3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2760'
 ht-degree: 0%
 
 ---
 
 # 如何使用TarMK冷待機執行AEM{#how-to-run-aem-with-tarmk-cold-standby}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 簡介 {#introduction}
 
@@ -89,7 +93,6 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 >
 >* 來自org.apache.jackrabbit.oak。**外掛程式**.segment.standby.store.StandbyStoreService轉至org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* 來自org.apache.jackrabbit.oak。**外掛程式**.segment.SegmentNodeStoreService至org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >請務必進行必要的設定調整，以反映此變更。
 
@@ -274,7 +277,7 @@ Tar Micro Kernel的「冷備用」容量允許一個或多個備用AEM實例連�
 
 * **模式(`mode`):** 這會選擇執行個體的執行模式。
 
-* **埠（埠）:** 用於通信的埠。 預設為 `8023`.
+* **埠（埠）:** 用於通信的埠。 預設為 `8023`。
 
 * **主主機(`primary.host`):**  — 主實例的主機。 此設定僅適用於待機。
 * **同步間隔(`interval`):**  — 此設定確定同步請求之間的間隔，並且僅適用於備用實例。

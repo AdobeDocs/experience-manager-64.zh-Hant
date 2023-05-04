@@ -8,7 +8,8 @@ breadcrumb-title: Authoring 指南
 user-guide-description: 了解在 AEM 中建立內容和編寫的重要概念。
 feature: Authoring
 role: User
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 49%
@@ -29,7 +30,7 @@ ht-degree: 49%
    + [您的收件匣](inbox.md)
    + [鍵盤快速鍵 控制台](keyboard-shortcuts.md)
    + [選取您的UI](select-ui.md)
-+ 製作 {#authoring}
++ 編寫 {#authoring}
    + [製作環境和工具](author-environment-tools.md)
    + [編輯頁面時的註解](annotations.md)
    + [建立及組織頁面](managing-pages.md)
@@ -44,7 +45,7 @@ ht-degree: 49%
    + [為行動裝置製作頁面](mobile.md)
    + [製作時疑難排解AEM](troubleshooting.md)
    + [編輯頁面時的鍵盤快速鍵](page-authoring-keyboard-shortcuts.md)
-   + [最佳作法](best-practices.md)
+   + [最佳做法](best-practices.md)
 + 網站和頁面功能 {#siteandpage}
    + [使用標記](tags.md)
    + [建立頁面範本](templates.md)
@@ -65,9 +66,9 @@ ht-degree: 49%
    + [創意專案與PIM整合](managing-product-information.md)
    + [使用專案工作流程](projects-with-workflows.md)
 + 啟動 {#launches}
-   + [啟動](launches.md)
-   + [建立啟動 ](launches-creating.md)
-   + [編輯啟動](launches-editing.md)
+   + [Launch](launches.md)
+   + [建立 Launch](launches-creating.md)
+   + [編輯 Launch](launches-editing.md)
    + [提升啟動](launches-promoting.md)
 + 工作流程 {#workflows}
    + [使用工作流程](workflows.md)
@@ -81,7 +82,7 @@ ht-degree: 49%
 + 個人化 {#personalization}
    + [個人化](personalization.md)
    + [使用 ContextHub 資料預覽頁面](ch-previewing.md)
-   + [使用定位模式製作目標內容](content-targeting-touch.md)
+   + [使用定位模式編寫目標內容](content-targeting-touch.md)
    + [在多個網站中使用目標內容](multisite-support-targeted-content.md)
    + [如何架構目標內容的多網站管理](technical-multisite-targeted.md)
    + [管理活動](activitylib.md)

@@ -1,5 +1,5 @@
 ---
-title: SPA Blueprint
+title: SPA 藍圖
 seo-title: SPA Blueprint
 description: 本檔案說明任何SPA架構在AEM中實作可編輯SPA元件時，都應履行的一般、獨立於架構合約。
 seo-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
@@ -9,14 +9,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: b46f0325ddbf68b65270c8e741e06469c584ae4d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2090'
-ht-degree: 0%
+source-wordcount: '2126'
+ht-degree: 1%
 
 ---
 
-# SPA Blueprint{#spa-blueprint}
+# SPA 藍圖{#spa-blueprint}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 為了讓作者能使用AEM SPA編輯器來編輯SPA的內容，SPA必須符合一些要求，本檔案將加以說明。
 
@@ -60,7 +64,7 @@ ht-degree: 0%
 
 模型中呈現的每個項目都包含 `:type` 公開AEM資源類型的欄位。 裝載時，前端元件可使用從基礎庫接收的模型片段來呈現自身。
 
-#### 元件映射的動態模型 {#dynamic-model-to-component-mapping}
+#### 動態模型到元件對應 {#dynamic-model-to-component-mapping}
 
 如需有關Javascript SPA SDK for AEM中如何發生動態模型與元件對應的詳細資訊，請參閱文章 [SPA的動態模型與元件對應](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
@@ -283,7 +287,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 繼續參閱檔案，了解簡單的SPA如何運作並親自試驗SPA [AEM中的SPA快速入門](/help/sites-developing/spa-getting-started-react.md).
 
-## 進一步閱讀 {#further-reading}
+## 延伸閱讀 {#further-reading}
 
 如需AEM中SPA的詳細資訊，請參閱下列檔案：
 

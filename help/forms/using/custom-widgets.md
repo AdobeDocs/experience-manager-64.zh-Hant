@@ -1,39 +1,43 @@
 ---
 title: 在HTML5表單中建立自訂外觀
-seo-title: 在HTML5表單中建立自訂外觀
+seo-title: Create custom appearances in HTML5 forms
 description: 您可以將自訂Widget外掛至行動Forms。 您可以擴展現有的jQuery Widget，或開發您自己的自訂Widget。
-seo-description: 您可以將自訂Widget外掛至行動Forms。 您可以擴展現有的jQuery Widget，或開發您自己的自訂Widget。
+seo-description: You can plug in custom widgets to a Mobile Forms. You can extend existing jQuery Widgets or develop your own custom widgets.
 uuid: afb16f42-e404-478b-82dd-4b5b59c4f184
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
-feature: 行動表單
+feature: Mobile Forms
 exl-id: e9e53b6d-6403-4d37-bac1-efaff0317f34
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 0%
+source-wordcount: '676'
+ht-degree: 1%
 
 ---
 
-# 在HTML5表單中建立自定義外觀{#create-custom-appearances-in-html-forms}
+# 在HTML5表單中建立自訂外觀 {#create-custom-appearances-in-html-forms}
 
-您可以將自訂Widget外掛至行動Forms。 您可以擴展現有的jQuery Widget，或使用外觀框架開發自己的自定義Widget。 XFA引擎使用各種小工具，有關詳細資訊，請參閱適用性和HTML5表單](/help/forms/using/introduction-widgets.md)的[外觀架構。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-![預設和自訂介面工具集](assets/custom-widgets.jpg)
-**的範例：** *預設和自訂介面工具集的範例*
+您可以將自訂Widget外掛至行動Forms。 您可以擴展現有的jQuery Widget，或使用外觀框架開發自己的自定義Widget。 XFA引擎使用各種小工具，請參閱 [最適化和HTML5表單的外觀架構](/help/forms/using/introduction-widgets.md) 以取得詳細資訊。
 
-## 將自訂Widget與HTML5表單整合{#integrating-custom-widgets-with-html-forms}
+![預設和自訂介面工具集的範例](assets/custom-widgets.jpg)
+**圖：** *預設和自訂介面工具集的範例*
+
+## 將自訂Widget與HTML5表單整合 {#integrating-custom-widgets-with-html-forms}
 
 ### 建立設定檔  {#create-a-profile-nbsp}
 
-您可以建立設定檔或選擇現有設定檔以新增自訂介面工具集。 有關建立配置式的詳細資訊，請參閱[建立自定義配置式](/help/forms/using/custom-profile.md)。
+您可以建立設定檔或選擇現有設定檔以新增自訂介面工具集。 如需建立設定檔的詳細資訊，請參閱 [建立自訂設定檔](/help/forms/using/custom-profile.md).
 
-### 建立Widget {#create-a-widget}
+### 建立介面工具集 {#create-a-widget}
 
-HTML5表單提供介面工具集架構的實作，可延伸以建立新介面工具集。 實作是jQuery Widget *abstractWidget*，可延伸以編寫新Widget。 只有延伸/覆寫下列功能，新介面工具集才能運作。
+HTML5表單提供介面工具集架構的實作，可延伸以建立新介面工具集。 實作為jQuery Widget *abstractWidget* 可延伸以編寫新介面工具集。 只有延伸/覆寫下列功能，新介面工具集才能運作。
 
 <table> 
  <tbody> 
@@ -43,11 +47,11 @@ HTML5表單提供介面工具集架構的實作，可延伸以建立新介面工
   </tr> 
   <tr> 
    <td>轉譯</td> 
-   <td>呈現函式返回構件的預設HTML元素的jQuery對象。 預設的HTML元素應為可聚焦類型。 例如， &lt;a&gt;、&lt;input&gt;和&lt;li&gt;。 傳回的元素會作為$userControl使用。 如果$userControl指定了上述約束，則AbstractWidget類的函式將如預期工作，否則某些常見API（焦點、按一下）需要更改。 </td> 
+   <td>呈現函式返回Widget預設HTML元素的jQuery對象。 預設HTML元素應為可聚焦類型。 例如， &lt;a&gt;, &lt;input&gt;，和 &lt;li&gt;. 傳回的元素會作為$userControl使用。 如果$userControl指定了上述約束，則AbstractWidget類的函式將如預期工作，否則某些常見API（焦點、按一下）需要更改。 </td> 
   </tr> 
   <tr> 
    <td>getEventMap</td> 
-   <td>傳回映射以將HTML事件轉換為XFA事件。 <br /> {<br /> blur:XFA_EXIT_EVENT,<br /> }<br /> 此範例顯示模糊是HTML事件，而XFA_EXIT_EVENT是對應的XFA事件。 </td> 
+   <td>傳回對應以將HTML事件轉換為XFA事件。 <br /> {<br /> 模糊：XFA_EXIT_EVENT,<br /> }<br /> 此範例顯示模糊是HTML事件，而XFA_EXIT_EVENT是對應的XFA事件。 </td> 
   </tr> 
   <tr> 
    <td>getOptionsMap</td> 
@@ -68,7 +72,7 @@ HTML5表單提供介面工具集架構的實作，可延伸以建立新介面工
  </tbody> 
 </table>
 
-若要建立您自己的介面工具集，請在上述建立的設定檔中，納入JavaScript檔案的參考，該檔案包含覆寫的函式和新新增的函式。 例如， *sliderNumericFieldWidget*&#x200B;是數值欄位的介面工具集。 若要在您的設定檔中於標題區段使用介面工具集，請加入下列行：
+若要建立您自己的介面工具集，請在上述建立的設定檔中，納入JavaScript檔案的參考，該檔案包含覆寫的函式和新新增的函式。 例如， *sliderNumericFieldWidget* 是數值欄位的介面工具集。 若要在您的設定檔中於標題區段使用介面工具集，請加入下列行：
 
 ```
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -76,7 +80,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### 使用XFA指令碼引擎註冊自訂Widget  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-當自訂介面工具集程式碼準備就緒時，請使用`registerConfig`[表單橋接器](/help/forms/using/form-bridge-apis.md)的API，向指令碼引擎註冊介面工具集。 此參數會以widgetConfigObject為輸入。
+當自訂介面工具集程式碼準備就緒時，請使用 `registerConfig`適用於 [表單網橋](/help/forms/using/form-bridge-apis.md). 此參數會以widgetConfigObject為輸入。
 
 ```
 window.formBridge.registerConfig("widgetConfig",

@@ -1,24 +1,28 @@
 ---
 title: 升級後卸載的過時套件組合清單
-seo-title: 升級後卸載的過時套件組合清單
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: 詳細說明升級至AEM 6.3時自動解除安裝的套件組合的清單。
-seo-description: 詳細說明升級至AEM 6.3時自動解除安裝的套件組合的清單。
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
-feature: 升級
+feature: Upgrading
 exl-id: 0f075a01-f286-4e16-9061-4e902c553eb9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 0%
+source-wordcount: '203'
+ht-degree: 2%
 
 ---
 
-# 升級{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}後卸載的過時套件組合清單
+# 升級後卸載的過時套件組合清單{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -28,7 +32,7 @@ ht-degree: 0%
 
 **AEM 6.1:**
 
-* org.eclipse.equinox.region，版本1.1.0.v20120522-1841，活動
+* org.eclipse.equinox.region,1.1.0.v20120522-1841版，活動
 * org.apache.sling.installer.factory.subsems，版本1.0.0，活動
 * org.apache.aries.subsystem.core，版本1.2.0，活動
 * org.apache.aries.subsystem.api，版本1.1.0，活動

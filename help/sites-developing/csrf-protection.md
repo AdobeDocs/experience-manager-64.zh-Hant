@@ -1,8 +1,8 @@
 ---
 title: CSRF保護框架
-seo-title: CSRF保護框架
+seo-title: The CSRF Protection Framework
 description: 該框架利用令牌來保證客戶端請求的合法性
-seo-description: 該框架利用令牌來保證客戶端請求的合法性
+seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
 uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: 533c348e-517f-4d70-a89c-bfc87f71a633
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
 # CSRF保護框架{#the-csrf-protection-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 除了Apache Sling Referrer Filter外，Ache還提供新的CSRF保護架構，以防止這類攻擊。
 
@@ -27,22 +31,22 @@ ht-degree: 0%
 >
 >匿名使用者的發佈例項上沒有代號。
 
-## 需求 {#requirements}
+## 要求 {#requirements}
 
-### 相依關係 {#dependencies}
+### 相依性 {#dependencies}
 
-任何依賴`granite.jquery`相關性的元件都將自動受益於CSRF保護框架。 如果任何元件的情況不是這樣，則必須先將相依性聲明為`granite.csrf.standalone`，然後才能使用框架。
+仰賴 `granite.jquery` 依賴性將自動受益於CSRF保護框架。 如果任何元件的情況不是這樣，則必須聲明相依性 `granite.csrf.standalone` 之後才能使用框架。
 
-### 複製加密密鑰{#replicating-crypto-keys}
+### 複製加密密鑰 {#replicating-crypto-keys}
 
-若要使用代號，您必須將`/etc/keys/hmac`二進位檔複製到部署中的所有例項。 將HMAC密鑰複製到所有實例的一個方便方法是建立包含密鑰的包，並通過包管理器在所有實例上安裝它。
-
->[!NOTE]
->
->也請務必進行必要的[Dispatcher設定變更](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)，以便使用CSRF保護架構。
+若要使用代號，您必須復寫 `/etc/keys/hmac` 二進位至部署中的所有執行個體。 將HMAC密鑰複製到所有實例的一個方便方法是建立包含密鑰的包，並通過包管理器在所有實例上安裝它。
 
 >[!NOTE]
 >
->如果您將資訊清單快取與網頁應用程式搭配使用，請務必將「**&amp;ast;**」新增至資訊清單，以確保Token不會讓CSRF代號產生呼叫離線。 如需詳細資訊，請參閱此[link](https://www.w3.org/TR/offline-webapps/)。
+>請確定您也必須 [Dispatcher設定變更](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) 以便使用CSRF保護框架。
+
+>[!NOTE]
 >
->如需CSRF攻擊的詳細資訊及緩解方法，請參閱[跨網站請求偽造OWASP頁面](https://owasp.org/www-community/attacks/csrf)。
+>如果您將資訊清單快取與Web應用程式搭配使用，請務必新增「**&amp;ast;**」，以確定代號不會使CSRF代號產生呼叫離線。 如需詳細資訊，請參閱 [連結](https://www.w3.org/TR/offline-webapps/).
+>
+>如需CSRF攻擊的詳細資訊以及緩解這些攻擊的方法，請參閱 [「跨網站請求偽造OWASP」頁](https://owasp.org/www-community/attacks/csrf).

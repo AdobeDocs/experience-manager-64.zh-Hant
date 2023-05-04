@@ -1,8 +1,8 @@
 ---
 title: 網站範本
-seo-title: 網站範本
+seo-title: Site Templates
 description: 如何存取網站範本主控台
-seo-description: 如何存取網站範本主控台
+seo-description: How to access the Site Templates console
 uuid: d2f7556e-7e43-424e-82f1-41790aeb2d98
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,34 +11,38 @@ content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 role: Admin
 exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 3%
+source-wordcount: '490'
+ht-degree: 4%
 
 ---
 
 # 網站範本 {#site-templates}
 
-站點模板控制台與[組模板](tools-groups.md)控制台非常相似，該控制台側重於社區組所關心的功能。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+「網站範本」主控台與 [群組範本](tools-groups.md) 主控台，專注於社群群組感興趣的功能。
 
 >[!NOTE]
 >
->建立[社群網站](sites-console.md)、[社群網站範本](sites.md)、[社群群組範本](tools-groups.md)和[社群功能](functions.md)的主控台僅用於製作環境。
+>建立 [社群網站](sites-console.md), [社群網站範本](sites.md), [社群群組範本](tools-groups.md) 和 [社群功能](functions.md) 僅供製作環境使用。
 
 ## 網站範本主控台 {#site-templates-console}
 
 在製作環境中，前往社群網站主控台
 
-* 從全局導航：**[!UICONTROL 工具>社群>網站範本]**
+* 從全局導航： **[!UICONTROL 工具>社群>網站範本]**
 
-此控制台顯示可從中建立[社區站點](sites-console.md)的模板，並允許建立新的站點模板。
+此主控台會顯示 [社群網站](sites-console.md) 可建立，並允許建立新網站範本。
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
 ## 建立網站範本 {#create-site-template}
 
-若要開始建立新網站範本，請選取`Create`。
+若要開始建立新網站範本，請選取 `Create`.
 
 這會顯示包含3個子面板的網站編輯器面板：
 
@@ -48,14 +52,14 @@ ht-degree: 3%
 
 在「基本資訊」面板上，會設定名稱、說明，以及範本是否啟用或停用：
 
-* **[!UICONTROL 社區站點模板名]**
-稱模板名稱id
+* **[!UICONTROL 社區站點模板名稱]**
+範本名稱id
 
-* **[!UICONTROL 社區站點模板說]**
-明模板說明
+* **[!UICONTROL 社群網站範本說明]**
+範本說明
 
-* **[!UICONTROL 禁用/啟]**
-用切換開關控制模板是否可引用
+* **[!UICONTROL 禁用/啟用]**
+控制模板是否可引用的切換開關
 
 ### 縮圖 {#thumbnail}
 
@@ -69,7 +73,7 @@ ht-degree: 3%
 
 若要新增社群功能，請依網站功能表連結的顯示順序從右側拖曳至左側。 建立網站時，樣式會套用至範本。
 
-例如，如果您想要首頁，請從程式庫拖曳Page函式，並放置在範本產生器下。 這會導致頁面設定對話方塊開啟。 有關配置對話框的資訊，請參閱[函式控制台](functions.md)。
+例如，如果您想要首頁，請從程式庫拖曳Page函式，並放置在範本產生器下。 這會導致頁面設定對話方塊開啟。 請參閱 [函式主控台](functions.md) ，了解有關配置對話框的資訊。
 
 根據此範本，繼續拖放社群網站所需的任何其他社群功能。
 
@@ -77,9 +81,9 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->群組函式必須&#x200B;*不*&#x200B;是站點結構中的&#x200B;*第一個或唯一的*&#x200B;函式。
+>組函式必須 *not* be *第一，也不是唯一* 功能。
 >
->必須先包含並列出任何其他函式，例如[page函式](functions.md#page-function)。
+>任何其他函式，例如 [頁面函式](functions.md#page-function)，必須包含在內並列出。
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -89,7 +93,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->組函式必須&#x200B;*不*&#x200B;是站點結構中的&#x200B;*第一個或唯一的*&#x200B;函式。
+>組函式必須 *not* be *第一，也不是唯一* 功能。
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -99,6 +103,6 @@ ht-degree: 3%
 
 ## 編輯網站範本 {#edit-site-template}
 
-在主[站點模板控制台](#site-templates-console)中查看站點模板時，可以選擇現有站點模板進行編輯。
+在主要 [網站範本主控台](#site-templates-console)，您可以選取現有網站範本進行編輯。
 
-此程式提供與建立網站範本[相同的面板。](#create-site-template)
+此程式提供與 [建立網站範本](#create-site-template).

@@ -1,8 +1,8 @@
 ---
 title: 內容片段範本
-seo-title: 內容片段範本
+seo-title: Content Fragment Templates
 description: 建立內容片段時會選取範本，並提供具有基本結構、元素和變異的新片段
-seo-description: 建立內容片段時會選取範本，並提供具有基本結構、元素和變異的新片段
+seo-description: Templates are selected when creating a content fragmen and provide the new fragment with the basic structure, element, and variation
 uuid: 74675e82-26b4-4105-8031-21de51131236
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 8c399a27-abdb-41fb-bd76-f30d22f1d68f
 exl-id: fdf1aba8-17fa-473a-9c32-7189d0628927
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 4%
+source-wordcount: '668'
+ht-degree: 5%
 
 ---
 
@@ -21,11 +21,15 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->某些內容片段功能需要應用[AEM 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md)。
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >
->[建議您建](/help/assets/content-fragments-models.md) 立所有片段時，使用內容片段模型。
+>某些內容片段功能需要應用 [AEM 6.4 Service Pack 2(6.4.2.0)](/help/release-notes/sp-release-notes.md).
+
+>[!CAUTION]
+>
+>[內容片段模型](/help/assets/content-fragments-models.md) 現在建議您建立所有片段。
 >
 >內容片段模型用於We.Retail中的所有範例。
 
@@ -45,23 +49,21 @@ ht-degree: 4%
 
    需要在執行階段變更之執行個體範圍客戶專屬範本的位置。
 
-優先順序為（降序）`/conf`、`/apps`、`/libs`。
+優先順序順序為（降序） `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->您&#x200B;***必須***&#x200B;不要變更`/libs`路徑中的任何項目。
+>您 ***必須*** 不會變更 `/libs` 路徑。
 >
->這是因為下次升級執行個體時會覆寫`/libs`的內容（而當您套用Hotfix或Feature Pack時，很可能會覆寫）。
+>這是因為 `/libs` 下次升級執行個體時即會覆寫（而當您套用Hotfix或Feature Pack時，很可能會覆寫）。
 >
 >設定和其他變更的建議方法為：
 >
->1. 在`/apps`下重新建立所需項（即`/libs`中存在的項）
-   >
-   >
-1. 在`/apps`內進行任何更改
+>1. 重新建立所需項目(亦即， `/libs`)底下 `/apps`
+>
+>1. 在內進行任何變更 `/apps`
 
 >
-
 
 
 範本的基本結構如下：
@@ -124,13 +126,13 @@ conf
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
-   <td><p><code>String</code></p> <p>必要<br /> </p> </td> 
-   <td>範本的標題（顯示在<strong>建立片段</strong>精靈中）。</td> 
+   <td><p><code>String</code></p> <p>必填<br /> </p> </td> 
+   <td>範本的標題(顯示於 <strong>建立片段</strong> 精靈)。</td> 
   </tr> 
   <tr> 
    <td><code>jcr:description</code></td> 
    <td><p><code>String</code></p> <p>可選</p> </td> 
-   <td>說明範本用途的文字（顯示在<strong>建立片段</strong>精靈中）。</td> 
+   <td>說明範本用途的文字(顯示於 <strong>建立片段</strong> 精靈)。</td> 
   </tr> 
   <tr> 
    <td><code>initialAssociatedContent</code></td> 
@@ -140,12 +142,12 @@ conf
   <tr> 
    <td><code>precreateElements</code></td> 
    <td><p><code>Boolean</code></p> <p>必填</p> </td> 
-   <td><p><code>true</code>，如果在建立內容片段時，應建立代表內容片段元素（主版元素除外）的子資產；<em>false</em>如果應「即時」建立它們。</p> <p><strong>注意</strong>:目前此參數必須設為 <code>true</code>。</p> </td> 
+   <td><p><code>true</code>，如果在建立內容片段時，應建立代表內容片段元素（主版元素除外）的子資產； <em>false</em> 如果應該「即時」建立它們。</p> <p><strong>附註</strong>:目前此參數必須設為 <code>true</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
    <td><p><code>Long</code></p> <p>必填</p> </td> 
-   <td><p>內容結構的版本；目前支援：</p> <p><strong>注意</strong>:目前此參數必須設為 <code>2</code>。<br /> </p> </td> 
+   <td><p>內容結構的版本；目前支援：</p> <p><strong>附註</strong>:目前此參數必須設為 <code>2</code>.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -162,7 +164,7 @@ conf
   <tr> 
    <td><code>elements</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>必填</p> </td> 
-   <td><p>包含內容片段元素定義的節點。 它是強制項，並且需要為<strong>Main</strong>元素包含至少一個子節點，但可以包含[1.n]子節點。</p> <p>使用模板時，元素子分支將被複製到片段的模型子分支。</p> <p>第一個元素(如CRXDE Lite中所檢視)會自動被視為<i>main</i>元素；節點名稱無關，節點本身除以主要資產表示外，沒有特殊意義；其他元素會以子資產的形式處理。</p> </td> 
+   <td><p>包含內容片段元素定義的節點。 此為必要項目，需要包含 <strong>主要</strong> 元素，但可以包含[1..n]子節點。</p> <p>使用模板時，元素子分支將被複製到片段的模型子分支。</p> <p>第一個元素(如CRXDE Lite中所檢視)會自動被視為 <i>main</i> 元素；節點名稱無關，節點本身除以主要資產表示外，沒有特殊意義；其他元素會以子資產的形式處理。</p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -189,12 +191,12 @@ conf
   <tr> 
    <td><code>defaultContent</code></td> 
    <td><p><code>String</code></p> <p>可選</p> <p>預設: ""</p> </td> 
-   <td>元素的初始內容；僅在<code>precreateElements</code><i> = </i><code>true</code>時使用</td> 
+   <td>元素的初始內容；僅使用 <code>precreateElements</code><i> = </i><code>true</code></td> 
   </tr> 
   <tr> 
    <td><code>initialContentType</code></td> 
    <td><p><code>String</code></p> <p>可選</p> <p>預設: <code>text/html</code></p> </td> 
-   <td><p>元素的初始內容類型；僅在<code>precreateElements</code><i> = </i><code>true</code>時使用；目前支援：</p> 
+   <td><p>元素的初始內容類型；僅使用 <code>precreateElements</code><i> = </i><code>true</code>;目前支援：</p> 
     <ul> 
      <li><code>text/html</code></li> 
      <li><code>text/plain</code></li> 
@@ -238,18 +240,18 @@ conf
   <tr> 
    <td><code>&lt;<i>variation-name</i>&gt;</code> </td> 
    <td><p><code>nt:unstructured</code></p> <p>若變異節點存在，則此為必要項目</p> </td> 
-   <td><p>定義初始變數。<br /> 依預設，變異會新增至內容片段的所有元素。</p> <p>變異的初始內容將與個別元素相同（請參閱<code class="code">defaultContent/
-       initialContentType</code>）</p> </td> 
+   <td><p>定義初始變數。<br /> 依預設，變異會新增至內容片段的所有元素。</p> <p>變異的初始內容將與個別元素相同(請參閱 <code class="code">defaultContent/
+       initialContentType</code>)</p> </td> 
   </tr> 
   <tr> 
    <td><code>jcr:title</code></td> 
    <td><p><code>String</code></p> <p>必填</p> </td> 
-   <td>變異的標題(顯示在片段編輯器的<strong> Variation</strong>標籤中（左側欄）)。</td> 
+   <td>變異的標題(顯示在片段編輯器的 <strong>變異</strong> 標籤（左側欄）。</td> 
   </tr> 
   <tr> 
    <td><code>jcr:desciption</code></td> 
    <td><p><code>String</code></p> <p>可選</p> <p>預設: ""</p> </td> 
-   <td>提供變異<span>的說明的文字(顯示在片段編輯器的<strong>Variation</strong>標籤中（左側欄）)。</span></td> 
+   <td>提供變異說明的文字 <span>(顯示在片段編輯器的 <strong>變異</strong> 標籤（左側欄）。</span></td> 
   </tr> 
  </tbody> 
 </table>

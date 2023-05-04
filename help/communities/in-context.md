@@ -1,8 +1,8 @@
 ---
 title: 內容內協調
-seo-title: 內容內協調
+seo-title: In-Context Moderation
 description: 如何執行版主動作
-seo-description: 如何執行版主動作
+seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,22 +11,26 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 1%
+source-wordcount: '825'
+ht-degree: 2%
 
 ---
 
 # 內容內協調 {#in-context-moderation}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 若為AEM Communities，管理員和信任的社群成員可直接在發佈社群內容的發佈頁面上執行協調。
 
-使用[協調控制台](moderation.md)時，針對內容顯示的資訊包含已發佈頁面的連結，以允許存取在內文中協調時可用的其他協調動作。
+使用 [協調控制台](moderation.md)，則針對內容顯示的資訊包含已發佈頁面的連結，以允許存取在內文中協調時可用的其他協調動作。
 
 ## 協調動作 {#moderation-actions}
 
-請瀏覽協調概述，取得[協調動作](moderate-ugc.md#moderation-actions)的說明。
+請造訪協調概觀，以取得 [協調動作](moderate-ugc.md#moderation-actions).
 
 ## 協調UI {#moderation-ui}
 
@@ -40,13 +44,13 @@ ht-degree: 1%
 
 ## 範例 {#example}
 
-使用[AEM Communities快速入門時建立的[Geometrixx參與](http://localhost:4503/content/sites/engage/en.html)網站，即可在論壇中快速設定執行緒，以在其上體驗發佈環境中的各種協調活動，如下所示。](getting-started.md)
+使用 [Geometrixx參與](http://localhost:4503/content/sites/engage/en.html) 網站建立時 [開始使用AEM Communities](getting-started.md)，您可以在論壇中快速設定執行緒，在其上體驗發佈環境中的各種協調活動，如下所示。
 
 Aaron McDonald(aaron.mcdonald@mailinator.com)在建立網站時，將他加入社群參與協調者團體，成為值得信賴的社群成員。
 
-Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](members.md)添加為社區參與成員組的成員。
+Rebekah Larsen(rebekah.larsen@trashymail.com)可使用 [成員控制台](members.md).
 
-有關社群使用者群組的詳細資訊，請訪問[管理使用者和使用者群組](users.md)。
+如需社群使用者群組的詳細資訊，請造訪 [管理使用者和使用者群組](users.md).
 
 ### 建立論壇貼文 {#create-the-forum-posts}
 
@@ -96,9 +100,9 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ### 新成員(#4) {#new-member}
 
-在作者上，以管理員身分登入，並使用[Members console](members.md) ，然後使用「登出」 ，將Boyd Larsen(boyd.larsen@dodgit.com)新增為community-engage-members群組的新成員。
+在作者上，以管理員身分登入，並使用 [成員控制台](members.md)，然後登出。
 
-在發佈時，以Boyd Larsen身份登錄並通過選擇`Forum` ，然後選擇`Read more`作為蜂鳥貼文訪問線程。
+在發佈時，以Boyd Larsen身分登入，並透過選取 `Forum`，然後 `Read more` 為蜂鳥貼。
 
 注意
 
@@ -123,7 +127,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ![communityadmin-forum](assets/communityadmin-forum.png)
 
-選取「管理」功能表項目，以從發佈環境存取[協調控制台](moderation.md)。
+選擇「管理」菜單項以訪問 [協調控制台](moderation.md) 從發佈環境。
 
 請注意，對於管理員，所有可協調的內容都是可見的，而不只是來自Geometrixx參與社群網站的內容。
 
@@ -146,7 +150,7 @@ Rebekah Larsen(rebekah.larsen@trashymail.com)可以使用[Members console](membe
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-選取「管理」功能表項目，以從發佈環境存取[協調控制台](moderation.md)。
+選擇「管理」菜單項以訪問 [協調控制台](moderation.md) 從發佈環境。
 
 請注意，對於社群版主，只會看到來自Geometrixx參與社群網站的可協調內容。
 

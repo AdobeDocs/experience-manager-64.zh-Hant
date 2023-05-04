@@ -10,18 +10,22 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 1%
+source-wordcount: '1677'
+ht-degree: 2%
 
 ---
 
 # AEM Assets發行說明 {#aem-assets-release-notes}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 本發行說明涵蓋AEM 6.4 Assets中完成的主要功能、重點和增強功能。 如需詳細資訊，請遵循提供的連結。
 
-## Adobe資產連結 {#adobe-asset-link}
+## Adobe Asset Link {#adobe-asset-link}
 
 AdobeCreative Cloud中的企業資產連結可簡化創意人員與行銷人員在內容建立程式中的協作。 這是企業Creative Cloud中的新原生功能，可直接從Adobe Photoshop、Adobe Illustrator或Adobe InDesign連線至AEM Assets，而不需離開這些工具。
 
@@ -84,7 +88,7 @@ AEM 6.4提供多種進階中繼資料管理功能，可大規模管理中繼資�
 * 新增「大量中繼資料匯入」功能，可匯入CSV檔案以新增中繼資料，一次更新多個資產的現有中繼資料。 此操作為非同步操作，不會影響系統效能。 完成後，系統會透過AEM通知系統通知使用者。
 * 使用中繼資料結構工具新增階層式和內容中繼資料。 現在可以定義相依性鏈，以及欄位之間的值對應。 您也可以定義顯示/隱藏中繼資料表單欄位的內容。 這樣，您隨時都只能根據其他欄位的值顯示相關欄位。
 
-## 報表 {#reports}
+## 報告 {#reports}
 
 AEM 6.4提供重大資產報告增強功能：
 

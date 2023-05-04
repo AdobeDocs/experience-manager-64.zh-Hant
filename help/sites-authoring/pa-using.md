@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 6509c0ce-fc3a-4248-8dc7-db10602c30d6
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '475'
 ht-degree: 11%
 
 ---
 
 # 查看頁面分析資料{#seeing-page-analytics-data}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 使用頁面分析資料來評估頁面內容的有效性。
 

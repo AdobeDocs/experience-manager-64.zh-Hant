@@ -1,24 +1,28 @@
 ---
 title: 增強AEM中的資產排序功能
-description: '了解Assets如何透過伺服器端排序功能，一次性排序資料夾資產或搜尋查詢，而非在用戶端以批次方式排序。 [!DNL Experience Manager] '
+description: 了解如何 [!DNL Experience Manager] Assets透過伺服器端排序功能，一次性排序資料夾資產或搜尋查詢，而非在用戶端以批次方式排序資產。
 contentOwner: AG
 feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 3%
+source-wordcount: '469'
+ht-degree: 5%
 
 ---
 
-# 增強[!DNL Experience Manager]中的資產排序 {#enhanced-sorting-of-assets-in-aem}
+# 增強中的資產排序功能 [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-了解[!DNL Experience Manager]資產如何透過伺服器端排序功能，一次性排序資料夾資產或搜尋查詢，而非在用戶端以批次方式排序。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+了解如何 [!DNL Experience Manager] Assets透過伺服器端排序功能，一次性排序資料夾資產或搜尋查詢，而非在用戶端以批次方式排序資產。
 
 Adobe Experience Manager Assets的搜尋功能已經過增強，現在可以在資料夾清單檢視和搜尋結果頁面中，有效排序大量資產。 您也可以排序時間軸項目。
 
-[!DNL Experience Manager] Assets會部署伺服器端排序功能，一次對資料夾或搜尋查詢中的整組資產（無論大小）排序，而非在用戶端以批次方式排序。這樣，預先擷取的結果便可快速顯示在使用者介面上，讓排序操作更具回應性和快速性。
+[!DNL Experience Manager] Assets會部署伺服器端排序功能，一次對資料夾或搜尋查詢中的整組資產（無論大小）排序，而非在用戶端以批次方式排序。 這樣，預先擷取的結果便可快速顯示在使用者介面上，讓排序操作更具回應性和快速性。
 
 ## 在清單檢視中排序資產 {#sorting-assets-in-list-view}
 
@@ -32,7 +36,7 @@ Adobe Experience Manager Assets的搜尋功能已經過增強，現在可以在�
 * 修改日期
 * 發佈日期
 * 使用狀況
-* 點按數
+* 點擊次數
 * 印象
 * 已簽出
 
@@ -51,7 +55,7 @@ Adobe Experience Manager Assets的搜尋功能已經過增強，現在可以在�
 
 >[!NOTE]
 >
->若要排序`Name`或`Title`欄中的值，請覆蓋`/libs/dam/gui/content/commons/availablecolumns`並將`sortable`的值變更為`True`。
+>若要排序 `Name` 或 `Title`欄，覆蓋 `/libs/dam/gui/content/commons/availablecolumns` 並變更 `sortable` to `True`.
 
 ## 排序搜尋結果中的資產 {#sorting-assets-in-search-results}
 
@@ -78,14 +82,14 @@ Adobe Experience Manager Assets的搜尋功能已經過增強，現在可以在�
 [!DNL Assets] 可讓您按時間順序排序時間軸項目，例如註解、版本、工作流程和活動。
 
 1. 從「資產」UI中，選取您要顯示時間軸的資產。
-1. 按一下/點選GolbalNav圖示，然後選取&#x200B;**[!UICONTROL 時間軸]**。
+1. 按一下/點選「全域導覽」圖示，然後選取 **[!UICONTROL 時間表]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. 在時間軸中，從清單中選取項目。 例如，選取&#x200B;**[!UICONTROL Comments]**&#x200B;以顯示與資產相關聯的註解清單。
+1. 在時間軸中，從清單中選取項目。 例如，選取 **[!UICONTROL 註解]** 顯示與資產相關聯的註解清單。
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. 按一下/點選&#x200B;**[!UICONTROL Date]**&#x200B;標籤旁的&#x200B;**[!UICONTROL 排序]**&#x200B;圖示。 註解會根據您的選取，以時間順序/反向時間順序列出，並依此順序新增至資產。
+1. 按一下/點選 **[!UICONTROL 排序]** 表徵圖 **[!UICONTROL 日期]** 標籤。 註解會根據您的選取，以時間順序/反向時間順序列出，並依此順序新增至資產。
 
-   ![chlimage_1-481](assets/chlimage_1-401.png)
+   ![chlimage_1-401](assets/chlimage_1-401.png)

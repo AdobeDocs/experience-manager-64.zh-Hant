@@ -4,14 +4,18 @@ description: Adobe Experience Manager 6.4 Cumulative Fix Pack專用的發行說�
 contentOwner: AK
 mini-toc-levels: 1
 exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4681'
+source-wordcount: '4717'
 ht-degree: 10%
 
 ---
 
 # AEM 6.4 Cumulative Fix Pack 發行說明 {#aem-cumulative-fix-pack-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 發行資訊 {#release-information}
 
@@ -65,7 +69,7 @@ Adobe Experience Manager 6.4.8.4修正下列問題。
 
 * 間歇性ImageServer錯誤導致403響應，並導致以下幾種功能的失敗： [!DNL Experience Manager]. (CQ-4308565)
 
-### Integrations {#integrations-6484}
+### 整合 {#integrations-6484}
 
 * 升級至Experience Manager6.4.8.3後開啟頁面的屬性時，主控台中會開始出現JavaScript錯誤(NPR-35649)。
 
@@ -109,7 +113,7 @@ AEM 6.4.8.3是依存於AEM 6.4 Service Pack 8的Cumulative Fix Pack(CFP)。 安�
 
 Adobe Experience Manager 6.4.8.3修正下列問題。
 
-#### 網站 {#sites-6483}
+#### Sites {#sites-6483}
 
 * 當您更新內容片段變化的文字時，主內容片段的內容會更新，而非變化(NPR-35080)。
 
@@ -138,7 +142,7 @@ Adobe Experience Manager 6.4.8.3修正下列問題。
 * 在 [!UICONTROL 檢視器預設集編輯器]，編輯時 [!UICONTROL PanoramicImage/PanoramicImage_VR] 預設集，在 `PanoramicView` 元件， `PANORAMICVIEW_AUTOROTATE` 修飾符標籤不可用(CQ-4302043)。
 * 取消發佈影片的來源 [!DNL Experience Manager] 不會取消發佈已設定之Dynamic Media Classic上的最適化視訊集。 (CQ-4304405).
 
-#### 平台 {#platform-6483}
+#### Platform {#platform-6483}
 
 * 此 `emitUseStrict` 為Google關閉編譯器(GCC)處理器函式添加標籤 `com.adobe.granite.ui.clientlibs.impl.HtmlLibraryManagerImpl`. 此標幟會抑制 `use strict` 指示(NPR-34830)。
 * A `NullPointerException` 在開始每日或每週維護任務時傳回(NPR-34702)。
@@ -203,7 +207,7 @@ AEM 6.4.8.2是依存於AEM 6.4 Service Pack 8的Cumulative Fix Pack(CFP)。 安�
 
 Adobe Experience Manager 6.4.8.2修正了下列問題。
 
-#### 網站 {#sites-6482}
+#### Sites {#sites-6482}
 
 * 若 `RolloutConfigManagerFactoryImpl` 無法載入轉出設定，不會嘗試載入遺失的設定。 它會傳回快取設定(NPR-34091)。
 * 在文本核心元件中，使用源HTML編輯選項後， `em` 標籤已移除(NPR-34080)。
@@ -258,7 +262,7 @@ Adobe Experience Manager 6.4.8.2修正了下列問題。
 
 * 此 [!UICONTROL PANORAMICVIEW_AUTOOTATE] 修飾符標籤從中缺少 [!UICONTROL 行為] 標籤 [!UICONTROL 檢視器預設集編輯器] 第(CQ-4302043)頁。
 
-#### 平台 {#platform-6482}
+#### Platform {#platform-6482}
 
 * 的預設值 **[!UICONTROL 連接超時]** 和 **[!UICONTROL 通訊端逾時]** 未指定預設代理（發佈）組態的設定(NPR-33708)。
 * 維護任務調度程式啟動和停止維護任務的頻率比配置太高(NPR-33520)。
@@ -349,7 +353,7 @@ AEM 6.4.8.1的部分關鍵重點為：
 
 Adobe Experience Manager 6.4.8.1修正下列問題。
 
-#### 網站 {#sites-6481}
+#### Sites {#sites-6481}
 
 * 匿名使用者可存取CRX DE Lite功能(NPR-33522)。
 * 當LiveCopy中的本機元件名稱與Blueprint中的元件名稱相同，且從Blueprint中推出元件時，_msm_moved一詞不會新增至本機元件的名稱(NPR-33207)。
@@ -367,7 +371,7 @@ Adobe Experience Manager 6.4.8.1修正下列問題。
 * Salesforce整合容易受到SSRF攻擊(NPR-32671)。
 * PreferencesServlet中反映的XSS(NPR-33439)。
 
-#### 資產 {#assets-6481}
+#### Assets {#assets-6481}
 
 * 資產計數不會因清單檢視中選取項目的變更而變更(NPR-33285)。
 
@@ -387,7 +391,7 @@ Adobe Experience Manager 6.4.8.1修正下列問題。
 
 * SSRF在Experience Manager中的漏洞(NPR-33437)。
 
-#### 平台 {#platform-6481}
+#### Platform {#platform-6481}
 
 * 此 [!DNL Sling] 若 `sling:match` 對應項目建立於 `/etc/maps` (NPR-33308)。
 * 停用頁面時會觸發所有排清代理(NPR-32941)。
@@ -562,7 +566,7 @@ AEM 6.4.8.4包含新版Dynamic Media檢視器(5.10.1)，可啟用在「影像預
 
 | 區域 | 功能 | 替代方案 | 版本 |
 |---|---|---|---|
-| 資產 | 管理子資產的標籤動作 | 無替換 | AEM 6.4.2.0 |
+| Assets | 管理子資產的標籤動作 | 無替換 | AEM 6.4.2.0 |
 | Assets 與 Adobe Creative Cloud 整合 | AEM 6.2 引入了 [AEM 對 Creative Cloud 資料夾共用](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html)功能，作為讓 Creative 使用者存取 AEM 資產的方式。Creative Cloud 應用程式推出的新功能 Adobe Asset Link 提供了更優異的使用者體驗，以及更強大的存取功能，可直接從 Photoshop、InDesign 和 Illustrator 中存取 AEM 的資產。 Adobe 將不會再對資料夾共用功能提供近一步的增強項目。雖然AEM中包含此功能，但強烈建議客戶使用取代。 | Adobe資產連結或案頭應用程式。 如需更多資訊，請參閱 [AEM Creative Cloud 整合](/help/assets/aem-cc-integration-best-practices.md)文章。 | AEM 6.4.4.0 |
 
 ## 已知問題 {#known-issues}

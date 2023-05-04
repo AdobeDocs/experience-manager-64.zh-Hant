@@ -1,24 +1,28 @@
 ---
 title: 使用sendToPrinter API
-seo-title: 使用sendToPrinter API
+seo-title: Using the sendToPrinter API
 description: 使用sendToPrinter服務將文檔發送到打印機。
-seo-description: 使用sendToPrinter服務將文檔發送到打印機。
+seo-description: Using the sendToPrinter service to send a document to printer.
 uuid: c6a3fe8d-ec19-4350-b4a6-4c3d1971b501
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
 exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 13%
+source-wordcount: '398'
+ht-degree: 14%
 
 ---
 
 # 使用sendToPrinter API {#using-the-sendtoprinter-api}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 在AEM Forms中，您可以使用SendToPrinter服務將文檔發送到打印機。 SendToPrinter服務支援以下打印訪問機制：
 
@@ -34,7 +38,7 @@ ht-degree: 13%
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**:輸出服務支援通用Internet檔案系統(CIFS)打印協定。
 
-## 使用SendToPrinter服務{#using-sendtoprinter-service}
+## 使用SendToPrinter服務 {#using-sendtoprinter-service}
 
 下表列出：
 
@@ -52,8 +56,8 @@ ht-degree: 13%
 | LPD | 有效 | 無效 | 表示找不到打印機的異常。 |
 | LPD | 有效 | 有效 | 成功打印作業。 |
 | CUPS | 空白 | 任何 | 表示必要參數sPrintServerUri不能為空的異常。 |
-| 杯 | 無效 | 任何 | 表示找不到打印機的異常。 |
-| 杯 | 有效 | 任何 | 打印作業成功。 |
+| CUPS | 無效 | 任何 | 表示找不到打印機的異常。 |
+| CUPS | 有效 | 任何 | 打印作業成功。 |
 | DirectIP | 空白 | 任何 | 表示必要參數sPrintServerUri不能為空的異常。 |
 | DirectIP | 無效 | 任何 | 表示找不到打印機的異常。 |
 | DirectIP | 有效 | 任何 | 打印作業成功。 |
@@ -61,12 +65,12 @@ ht-degree: 13%
 | CIFS | 無效 | 任何 | 使用CIFS打印時出現未知錯誤。 |
 | CIFS | 空白 | 任何 | 表示必要參數sPrintServerUri不能為空的異常。 |
 
-## 驗證支援{#authentication-support}
+## 驗證支援 {#authentication-support}
 
 只有CIFS打印才支援身份驗證。 要驗證，請在PrinterSpec中提供用戶名/密碼/域。 您可以透過執行下列步驟，使用AEM Granite CyprotoSupport Service加密密碼：
 
-1. 轉到https://&lt;server>:&lt;port>/system/console。
+1. 前往https://&lt;server>:&lt;port>/system/console。
 
-1. 轉至&#x200B;**[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**。
+1. 前往 **[!UICONTROL 主要]** > **[!UICONTROL 加密支援]**.
 
-1. 輸入一些純文字，然後按一下&#x200B;**[!UICONTROL Protect]**。
+1. 輸入一些純文字，然後按一下 **[!UICONTROL Protect]**.

@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
 # 元件和服務Java API快速入門(SOAP) {#components-and-services-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 元件和服務均可使用Java API快速入門(SOAP)。
 
@@ -42,7 +46,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
 
 >[!NOTE]
 >
->使用AEM表單進行程式設計中的快速入門是以部署在JBoss和Windows作業系統上的Forms伺服器為基礎。 但是，如果您使用其他作業系統（如Unix），請以適用作業系統支援的路徑取代windows特定路徑。 同樣，如果您正在使用其他J2EE應用程式伺服器，請確保指定有效的連接屬性。 請參閱[設定連線屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+>使用AEM表單進行程式設計中的快速入門是以部署在JBoss和Windows作業系統上的Forms伺服器為基礎。 但是，如果您使用其他作業系統（如Unix），請以適用作業系統支援的路徑取代windows特定路徑。 同樣，如果您正在使用其他J2EE應用程式伺服器，請確保指定有效的連接屬性。 請參閱 [設定連接屬性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -50,7 +54,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
 
 ## 快速入門（SOAP模式）:使用Java API部署元件 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-以下Java示例部署了基於名為&#x200B;*adobe-emailSample-dsc.jar*&#x200B;的JAR檔案的元件。
+以下Java示例部署了基於名為的JAR檔案的元件 *adobe-emailSample-dsc.jar*.
 
 ```as3
  /* 
@@ -152,7 +156,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
 
 ## 快速入門（SOAP模式）:使用Java API設定服務的執行內容 {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-以下Java代碼示例將Run-As Invoker執行上下文設定為名為&#x200B;*EncryptDocument*&#x200B;的示例服務。
+以下Java代碼示例將「運行方式調用程式」執行上下文設定為一個名為 *EncryptDocument*.
 
 ```as3
  /* 
@@ -244,7 +248,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
 
 ## 快速入門（SOAP模式）:使用Java API停用服務安全性 {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
-以下Java代碼示例禁用了示例EncryptDocument服務以及從此服務（設定值和加密服務）中調用的服務的安全性。
+以下Java代碼示例禁用了示例EncryptDocument服務以及從此服務中調用的服務（設定值和加密服務）的安全性。
 
 ```as3
  /* 
@@ -357,7 +361,7 @@ AEM Forms操作可使用AEM Forms強制類型API來執行，且連線模式應�
 
 ## 快速入門（SOAP模式）:使用Java API啟動服務 {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-以下Java代碼示例啟動名為&#x200B;*SendEmailService*&#x200B;的服務。
+以下Java代碼示例將啟動名為 *SendEmailService*.
 
 ```as3
  package com.adobe.sample.servicemanager; 

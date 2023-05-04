@@ -6,14 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '600'
 ht-degree: 3%
 
 ---
 
 # 雲端服務設定{#cloud-service-configurations}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 配置旨在提供用於儲存服務配置的邏輯和結構。
 
@@ -148,7 +152,7 @@ propertyname
 
 儲存服務的使用者憑證時，應加密所有密碼。
 
-您可以新增隱藏的表單欄位來達成此目標。 此欄位應具有註解 `@Encrypted` 在屬性名稱中；即為 `password` 欄位名稱將寫入為：
+您可以新增隱藏的表單欄位來達到此目的。 此欄位應具有註解 `@Encrypted` 在屬性名稱中；即為 `password` 欄位名稱將寫入為：
 
 `password@Encrypted`
 

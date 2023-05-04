@@ -1,8 +1,8 @@
 ---
 title: AEM開發 — 准則和最佳實務
-seo-title: AEM開發 — 准則和最佳實務
+seo-title: AEM Development - Guidelines and Best Practices
 description: 在AEM上開發的准則和最佳實務
-seo-description: 在AEM上開發的准則和最佳實務
+seo-description: Guidelines and best practices for developing on AEM
 uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,20 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 26c9098b-f810-4c3d-a6c8-9a5fbcd307dd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1105'
-ht-degree: 0%
+source-wordcount: '1127'
+ht-degree: 1%
 
 ---
 
 # AEM開發 — 准則和最佳實務{#aem-development-guidelines-and-best-practices}
 
-## 使用範本和元件的指南{#guidelines-for-using-templates-and-components}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 使用範本和元件的准則 {#guidelines-for-using-templates-and-components}
 
 AEM元件和範本提供強大的工具套件。 開發人員可使用這些功能，為網站業務使用者、編輯和管理員提供調整其網站以適應不斷變化的業務需求（內容靈活性）的功能，同時保留網站的統一版面配置（品牌保護）。
 
@@ -48,15 +52,15 @@ AEM元件和範本提供強大的工具套件。 開發人員可使用這些功�
 * 為您的自訂元件提供必要的彈性和設定功能。
 * 充分運用AEM段落系統（parsys &amp; iparsys元件）的強大功能和彈性。
 
-### 自訂元件和其他元素{#customizing-components-and-other-elements}
+### 自訂元件和其他元素 {#customizing-components-and-other-elements}
 
 建立自己的元件或自訂現有元件時，最簡單（最安全）的做法是重複使用現有定義。 同樣的原則也適用於AEM內的其他元素，例如錯誤處理常式。
 
-您可以複製並覆寫現有定義來完成此操作。 換句話說，將定義從`/libs`複製到`/apps/<your-project>`。 此`/apps`中的新定義可根據您的需求更新。
+您可以複製並覆寫現有定義來完成此操作。 換言之，將定義從 `/libs` to `/apps/<your-project>`. 此新定義，位於 `/apps`，可根據您的需求更新。
 
 >[!NOTE]
 >
->如需詳細資訊，請參閱[使用覆蓋](/help/sites-developing/overlays.md) 。
+>請參閱 [使用覆蓋](/help/sites-developing/overlays.md) 以取得更多詳細資訊。
 
 例如：
 
@@ -64,7 +68,7 @@ AEM元件和範本提供強大的工具套件。 開發人員可使用這些功�
 
    這涉及覆蓋元件定義：
 
-   * 複製現有元件，在`/apps/<website-name>/components/<MyComponent>`中建立新元件資料夾：
+   * 在中建立新元件資料夾 `/apps/<website-name>/components/<MyComponent>` 複製現有元件：
 
       * 例如，要自定義文本元件副本：
 
@@ -82,17 +86,17 @@ AEM元件和範本提供強大的工具套件。 開發人員可使用這些功�
 
 >[!CAUTION]
 >
->**不得**&#x200B;更改`/libs`路徑中的任何內容。
+>您 **不能** 改變 `/libs` 路徑。
 >
->這是因為下次升級執行個體時會覆寫`/libs`的內容（而當您套用Hotfix或Feature Pack時，很可能會覆寫）。
+>這是因為 `/libs` 下次升級執行個體時即會覆寫（而當您套用Hotfix或Feature Pack時，很可能會覆寫）。
 >
 >針對設定和其他變更：
 >
->1. 將`/libs`中的項目複製到`/apps`
->1. 在`/apps`中進行任何更改
+>1. 複製項目 `/libs` to `/apps`
+>1. 在 `/apps`
 
 
-## 何時使用JCR查詢，何時不使用{#when-to-use-jcr-queries-and-when-not-to-use-them}
+## JCR查詢的使用時機和不使用時機 {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 正確使用時，JCR查詢是功能強大的工具。 這些規則適合：
 
@@ -111,16 +115,15 @@ JCR查詢絕不應用於純轉譯請求。 例如，JCR查詢不適用於
 
 >[!NOTE]
 >
->如果您使用[查詢產生器](/help/sites-developing/querybuilder-api.md)，則會使用JCR查詢，因為查詢產生器會在引擎罩下產生JCR查詢。
+>如果您使用 [查詢產生器](/help/sites-developing/querybuilder-api.md)，您會使用JCR查詢，因為查詢產生器會在標題下產生JCR查詢。
 
-
-## 安全考量事項{#security-considerations}
+## 安全性考量事項 {#security-considerations}
 
 >[!NOTE]
 >
->也值得參考[安全性檢查清單](/help/sites-administering/security-checklist.md)。
+>也值得參考 [安全檢查清單](/help/sites-administering/security-checklist.md).
 
-### JCR（儲存庫）會話{#jcr-repository-sessions}
+### JCR（儲存庫）會話 {#jcr-repository-sessions}
 
 您應使用使用者工作階段，而非管理工作階段。 這表示您應使用：
 
@@ -128,13 +131,13 @@ JCR查詢絕不應用於純轉譯請求。 例如，JCR查詢不適用於
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protect反對跨網站指令碼(XSS){#protect-against-cross-site-scripting-xss}
+### Protect反對跨網站指令碼(XSS) {#protect-against-cross-site-scripting-xss}
 
 跨網站指令碼(XSS)可讓攻擊者將程式碼插入其他使用者檢視的網頁。 惡意Web用戶可利用此安全漏洞繞過訪問控制。
 
 AEM會套用在輸出時篩選所有使用者提供的內容的原則。 在開發和測試期間，防止XSS的優先順序最高。
 
-此外，Web應用程式防火牆（如Apache](https://modsecurity.org)的[mod_security）可提供對部署環境安全的可靠、集中的控制，並保護其免受以前未檢測到的跨站點指令碼攻擊。
+此外，Web應用程式防火牆，例如 [Apache的mod_security](https://modsecurity.org)，可提供對部署環境安全性的可靠中央控制，並防止先前未偵測到的跨網站指令碼攻擊。
 
 >[!CAUTION]
 >
@@ -146,7 +149,7 @@ XSSAPI速查表。
 
 [取得檔案](assets/xss_cheat_sheet_2016.pdf)
 
-### 保護機密資訊的通信{#securing-communication-for-confidential-information}
+### 保護機密資訊的通信 {#securing-communication-for-confidential-information}
 
 至於任何網際網路應用程式，請務必在傳輸機密資訊時
 
@@ -155,16 +158,16 @@ XSSAPI速查表。
 
 這適用於對系統保密的資訊（如配置或管理訪問），以及對其用戶保密的資訊（如其個人詳細資訊）
 
-## 相異開發任務{#distinct-development-tasks}
+## 獨特的開發任務 {#distinct-development-tasks}
 
-### 自定義錯誤頁{#customizing-error-pages}
+### 自訂錯誤頁面 {#customizing-error-pages}
 
 可針對AEM自訂錯誤頁面。 建議您這麼做，這樣執行個體就不會在內部伺服器錯誤上顯示Sling追蹤。
 
-如需完整詳細資訊，請參閱[自訂錯誤處理常式](/help/sites-developing/customizing-errorhandler-pages.md)顯示的錯誤頁面。
+請參閱 [自定義錯誤處理程式顯示的錯誤頁](/help/sites-developing/customizing-errorhandler-pages.md) 以取得完整詳細資訊。
 
-### 在Java進程{#open-files-in-the-java-process}中開啟檔案
+### 在Java進程中開啟檔案 {#open-files-in-the-java-process}
 
-由於AEM可以存取大量檔案，因此建議為AEM明確配置Java進程](/help/sites-deploying/configuring.md#open-files-in-the-java-process)開啟的檔案數。[
+由於AEM可以存取大量檔案，因此建議將 [開啟Java進程的檔案](/help/sites-deploying/configuring.md#open-files-in-the-java-process) 為AEM明確設定。
 
 為了盡量減少此問題的發展，應確保盡快（有意義地）正確關閉任何開啟的檔案。

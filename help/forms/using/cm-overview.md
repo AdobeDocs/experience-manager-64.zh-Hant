@@ -1,23 +1,27 @@
 ---
 title: 通信管理概述
-seo-title: 通信管理
+seo-title: Correspondence Management
 description: 本主題提供通信管理的概觀。
-seo-description: 本主題提供通信管理的概觀。
+seo-description: This topic gives you an overview of Correspondence Management.
 uuid: fa230c7e-fef1-4996-bdda-1637b36dac68
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
-feature: 通信管理
+feature: Correspondence Management
 exl-id: 3cda92c9-5f3e-4704-a52b-55eda3b3fd2a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '253'
 ht-degree: 2%
 
 ---
 
-# 通信管理概述{#correspondence-management-overview}
+# 通信管理概述 {#correspondence-management-overview}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 簡介 {#introduction}
 
@@ -25,7 +29,7 @@ ht-degree: 2%
 
 ## 優點 {#benefits}
 
-### 高效且高效{#efficient-and-productive}
+### 高效且高效 {#efficient-and-productive}
 
 它可簡化處理，讓您能夠：
 

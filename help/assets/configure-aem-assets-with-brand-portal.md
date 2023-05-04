@@ -5,14 +5,18 @@ contentOwner: VG
 feature: Brand Portal
 role: Admin
 exl-id: cde35555-259f-4d16-999f-2b93d597b8a5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1678'
 ht-degree: 36%
 
 ---
 
 # 使用 Brand Portal 設定 AEM Assets {#configure-integration-64}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager Assets是透過Brand Portal設定， [!DNL Adobe I/O]，會擷取IMS代號，以授權您的Brand Portal租用戶。
 

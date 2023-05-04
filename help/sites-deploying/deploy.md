@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 exl-id: 9a779cde-dfdf-4d70-a452-5e7d12bf3f28
-source-git-commit: 79ff6834acd2bc1105bbea798d946cd7354474d5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1819'
-ht-degree: 2%
+source-wordcount: '1855'
+ht-degree: 3%
 
 ---
 
 # 部署和維護{#deploying-and-maintaining}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 在此頁面中，您會找到：
 
@@ -52,7 +56,7 @@ ht-degree: 2%
 * [設定作法文章](/help/sites-deploying/ht-deploy.md)
 * [Web 主控台](/help/sites-deploying/web-console.md)
 * [疑難排解復寫](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳作法](/help/sites-deploying/best-practices.md)
+* [最佳做法](/help/sites-deploying/best-practices.md)
 * [部署社群](/help/communities/deploy-communities.md)
 * [AEM Platform簡介](/help/sites-deploying/platform.md)
 * [效能准則](/help/sites-deploying/performance-guidelines.md)
@@ -94,7 +98,7 @@ AEM伺服器為 **Java型** 並在支援該平台的大部分作業系統上運�
 
 這些實例與安裝的軟體相同。 它們僅由配置區別。 此外，大部分安裝都使用Dispatcher:
 
-* **Dispatcher**:靜態Web伺服器(Apache httpd、Microsoft IIS等) 與AEM dispatcher模組搭配增強。 它會快取由發佈例項產生的網頁，以提升效能。
+* **Dispatcher**:靜態Web伺服器(Apache httpd、Microsoft IIS等) 與AEM dispatcher模組搭配增強。 它快取發佈執行個體產生的網頁以提升效能。
 
 此設定有許多進階選項和說明，但製作、發佈和調度程式的基本模式是大部分部署的核心。 首先，我們將專注於一個相對簡單的機構。 下面將討論高級部署選項。
 
@@ -292,7 +296,7 @@ AEM會啟動網頁瀏覽器，並自動將其重新導向至適當的頁面，�
 
 登入後，您即可存取AEM。 如需詳細資訊，請參閱下列內容（視您的角色而定）:
 
-* [製作](/help/sites-authoring/home.md)
+* [編寫](/help/sites-authoring/home.md)
 * [管理](/help/sites-administering/home.md)
 * [開發](/help/sites-developing/home.md)
 * [管理](/help/managing/best-practices.md)
@@ -313,7 +317,7 @@ AEM會啟動網頁瀏覽器，並自動將其重新導向至適當的頁面，�
 * [設定作法文章](/help/sites-deploying/ht-deploy.md)
 * [Web 主控台](/help/sites-deploying/web-console.md)
 * [疑難排解復寫](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳作法](/help/sites-deploying/best-practices.md)
+* [最佳做法](/help/sites-deploying/best-practices.md)
 * [部署社群](/help/communities/deploy-communities.md)
 * [AEM Platform簡介](/help/sites-deploying/platform.md)
 * [效能准則](/help/sites-deploying/performance-guidelines.md)

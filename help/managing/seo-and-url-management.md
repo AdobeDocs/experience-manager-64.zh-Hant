@@ -1,8 +1,8 @@
 ---
 title: SEO和URL管理最佳作法
-seo-title: SEO和URL管理最佳作法
+seo-title: SEO and URL Management Best Practices
 description: 了解在AEM實作中達成這些目標的SEO最佳作法和建議。
-seo-description: 了解在AEM實作中達成這些目標的SEO最佳作法和建議。
+seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -10,22 +10,26 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 exl-id: d45fe856-4709-437b-b193-e8243a695d2c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3117'
-ht-degree: 97%
+source-wordcount: '3133'
+ht-degree: 96%
 
 ---
 
 # SEO和URL管理最佳作法{#seo-and-url-management-best-practices}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 搜尋引擎最佳化 (SEO) 已成為許多行銷人員的重點考量。因此，許多AEM專案都需要解決SEO疑慮。
 
 本文件首先會說明在 AEM 實作中達成上述目標的幾項 [SEO 最佳作法](#seo-best-practices)與建議。接著，本文件會於第一節中再深入探討幾項更[複雜的實作步驟](#aem-configurations)。
 
-## SEO 最佳作法 {#seo-best-practices}
+## SEO 最佳做法 {#seo-best-practices}
 
-本節說明幾項一般 SEO 最佳作法。
+本節說明幾項一般 SEO 最佳做法。
 
 ### URL {#urls}
 
@@ -145,7 +149,7 @@ String myParam = req.getParameter("myParam");
 * URL 本身會遺失 SEO 值。存取網站 (包括搜尋引擎) 的使用者不會從 URL 收到任何語意值，因為 URL 代表程式設計路徑，而非內容階層。
 * URL 中存在查詢參數，代表 Dispatcher 將無法對回應進行快取。
 * 如果要保護此 servlet 的安全，您需要在 servlet 中實作自己的自訂安全邏輯。
-* Dispatcher 必須經過審慎設定以公開 `/bin/myApp/myServlet`。僅僅公開 `/bin`，會使網站訪客可存取不應向他們開放的特定 servlet。
+* Dispatcher 必須經過審慎設定以公開 `/bin/myApp/myServlet`。僅公開 `/bin`，會使網站訪客可存取不應向他們開放的特定 servlet。
 
 #### Sling servlet (向下一個層級) {#sling-servlets-one-level-down}
 
@@ -157,7 +161,7 @@ Sling servlet 可讓您以相反的方式註冊 servlet。您不需要指定 ser
 @SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
 ```
 
-在這種情況下，URL 所處理的資源 (`myPageType` 資源的例項) 可在 servlet 中自動供訪客存取。如要存取該資源，請呼叫：
+在這種情況下，URL 所處理的資源 (`myPageType` 資源的執行個體) 可在 servlet 中自動供訪客存取。如要存取該資源，請呼叫：
 
 ```
 Resource myPage = req.getResource();
@@ -182,7 +186,7 @@ Resource myPage = req.getResource();
 
 #### 虛名 URL {#vanity-urls}
 
-如果作者為了推銷目的而想要讓某個網頁可從第二個位置存取，採用以逐頁方式定義的 AEM 虛名 URL 也許是個好方法。若要新增網頁的虛名 URL，請在&#x200B;**[!UICONTROL 網站]**&#x200B;控制台導覽至該頁面，並編輯頁面屬性。在&#x200B;**[!UICONTROL 基本]**&#x200B;標籤底部，您會看到可新增虛名 URL 的區段。別忘了，如果某個網頁可透過多個 URL 存取，該頁的 SEO 值就會遭到分割，因此您應將標準 URL 標籤新增至該頁才能避免此問題。
+如果作者為了推銷目的而想要讓某個網頁可從第二個位置存取，採用以逐頁方式定義的 AEM 虛名 URL 也許是個好方法。若要新增網頁的虛名 URL，請在&#x200B;**[!UICONTROL 網站]**&#x200B;控制台導覽至該頁面，並編輯頁面屬性。在&#x200B;**[!UICONTROL 基本]**&#x200B;標籤底部，您會看到可新增虛名 URL 的區段。別忘了，如果某個網頁可透過多個 URL 存取，該頁的 SEO 值就會遭到分割，因此您應將標準 URL 標記新增至該頁才能避免此問題。
 
 #### 本地化的網頁名稱 {#localized-page-names}
 
@@ -218,7 +222,7 @@ Resource myPage = req.getResource();
 
 >[!NOTE]
 >
-> 在編輯頁面屬性](/help/sites-authoring/editing-page-properties.md#advanced)時，可使用[別名屬性設定`sling:alias`屬性
+> 此 `sling:alias` 屬性可透過 [編輯頁面屬性時的別名屬性](/help/sites-authoring/editing-page-properties.md#advanced)
 
 #### /etc/map {#etc-map}
 
@@ -314,9 +318,9 @@ Resource myPage = req.getResource();
 </VirtualHost>
 ```
 
-### 標準 URL 標籤 {#canonical-url-tags}
+### 標準 URL 標記 {#canonical-url-tags}
 
-標準 URL 標籤是放置在 HTML 文件開頭的連結標籤，可釐清搜尋引擎在建立內容索引時應如何處理網頁。它們可帶來的好處是，即使連向網頁的 URL 可能有些差異，也可確保系統對其他版本的網頁建立相同索引。
+標準 URL 標記是放置在 HTML 文件開頭的連結標記，可釐清搜尋引擎在建立內容索引時應如何處理網頁。它們可帶來的好處是，即使連向網頁的 URL 可能有些差異，也可確保系統對其他版本的網頁建立相同索引。
 
 舉例來說，如果網站想要提供適合列印的網頁版本，搜尋引擎可能會對此版本與一般版本分開建立索引。但標準標籤會告訴搜尋引擎兩者是相同版本。
 
@@ -353,7 +357,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### 實作 robots.txt 以保護開發環境 {#implementing-robots-txt-to-protect-development-environments}
 
-搜尋引擎在對網站進行編目之前，*必須*&#x200B;先檢查網站的根目錄中是否有 `robots.txt` 檔案。我們在此強調「必須」，是因為雖然 Google、Yahoo 或 Bing 等主流搜尋引擎都會這麼做，但有些外國搜尋引擎卻並不如此。
+搜尋引擎在對網站進行編目之前，*必須*&#x200B;先檢查網站根中是否有 `robots.txt` 檔案。我們在此強調「必須」，是因為雖然 Google、Yahoo 或 Bing 等主流搜尋引擎都會這麼做，但有些外國搜尋引擎卻並不如此。
 
 封鎖使用者存取整個網站的最簡單方式，是將名為 `robots.txt` 的檔案置於網站根目錄中，且含有以下內容：
 
@@ -364,7 +368,7 @@ Disallow: /
 
 或者，您可以在即時環境中選擇不允許某些不希望建立索引的路徑。
 
-將 `robots.txt` 檔案置於網站根目錄時應注意，Dispatcher 排清請求可能會清除此檔案，且 URL 對應可能會將網站根目錄置於與 Apache HTTP 伺服器設定中已定義的 `DOCROOT` 不同之處。因此，常見的方式是將此檔案放置在根目錄的作者例項上，並複製到發佈例項。
+將 `robots.txt` 檔案置於網站根目錄時應注意，Dispatcher 排清請求可能會清除此檔案，且 URL 對應可能會將網站根目錄置於與 Apache HTTP 伺服器設定中已定義的 `DOCROOT` 不同之處。因此，常見的方式是將此檔案放置在網站根目的作者執行個體上，並複製到發佈執行個體。
 
 ### 在 AEM 上建置 XML Sitemap {#building-an-xml-sitemap-on-aem}
 
@@ -395,7 +399,7 @@ Disallow: /
 
 如需詳細資訊，請參考下列其他資源：
 
-* [資源映射](/help/sites-deploying/resource-mapping.md)
+* [資源對應](/help/sites-deploying/resource-mapping.md)
 * [https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url](https://moz.com/blog/seo-cheat-sheet-anatomy-of-a-url)
 * [https://moz.com/blog/15-seo-best-practices-for-structuring-urls](https://moz.com/blog/15-seo-best-practices-for-structuring-urls)
 * [https://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/](https://mysiteauditor.com/blog/top-10-most-important-seo-tips-for-url-optimization/)

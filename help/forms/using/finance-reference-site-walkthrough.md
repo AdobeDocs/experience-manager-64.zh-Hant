@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9201'
+source-wordcount: '9237'
 ht-degree: 0%
 
 ---
 
 # We.金融參考網站逐步說明 {#we-finance-reference-site-walkthrough}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 先決條件 {#pre-requisites}
 
@@ -795,7 +799,7 @@ We.Finance Wealth Management的情景包含以下角色：
 
 莎拉·羅斯正計畫投資一隻共同基金。 她是We.Finance的現有客戶，因此，她訪問We.Finance門戶以探索可用的共同基金。 她前往財富管理部，開啟了We.Finance藍籌股增長基金頁面。 該頁包含招股說明書的連結，其中包含有關當前和歷史價格、月度業績、行業多元化、支出、費用、稅金的詳細資訊，以及關於這些基金的更多資訊。
 
-![幻燈片1](assets/slide1.png)
+![slide1](assets/slide1.png)
 
 #### 運作方式 {#how-it-works-17}
 

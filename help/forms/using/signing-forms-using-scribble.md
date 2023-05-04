@@ -9,14 +9,18 @@ topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 feature: Adaptive Forms
 exl-id: a870c4b7-4040-4bd8-b477-286ebe6a4b01
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
 
 # 使用手寫簽名將電子簽名應用到表單 {#apply-electronic-signatures-to-a-form-using-scribble-signatures}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 您可以使用 **手寫簽名** 元件與 **簽名步驟** 在最適化表單上繪製（手寫）簽名的元件。 簽名步驟元件顯示最適化表單的PDF版本。 您需要啟用「記錄檔」選項或基於表單模板的最適化表單，才能使用「簽名」步驟元件。
 

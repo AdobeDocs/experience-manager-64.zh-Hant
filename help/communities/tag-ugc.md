@@ -1,8 +1,8 @@
 ---
 title: 標籤使用者產生的內容
-seo-title: 標籤使用者產生的內容
+seo-title: Tagging User Generated Content
 description: 標籤使用者產生的內容(UGC)是社群成員如何協助其他成員搜尋內容的方法
-seo-description: 標籤使用者產生的內容(UGC)是社群成員如何協助其他成員搜尋內容的方法
+seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,20 +11,24 @@ content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 role: Admin
 exl-id: 834df392-df38-498c-9e2a-489484e20e0a
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 3%
+source-wordcount: '263'
+ht-degree: 5%
 
 ---
 
 # 標籤使用者產生的內容 {#tagging-user-generated-content}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 標籤使用者產生的內容(UGC)是社群成員可協助其他成員搜尋內容的方式。
 
-標籤通常是由作者和管理員在製作環境中套用。 標籤UGC是唯一的，因為UGC標籤是由發佈環境中的社群成員套用。
+標籤通常是由作者和管理員在製作環境中套用。 標籤UGC的獨特之處在於，UGC標籤是由發佈環境中的社群成員套用。
 
 這兩個應用程式的標籤命名空間和分類相同。
 
@@ -40,11 +44,11 @@ ht-degree: 3%
 
 ## 管理標籤 {#administering-tags}
 
-請參閱[管理標籤](../../help/sites-administering/tags.md#tagging-console)，以了解如何建立和管理標籤命名空間和分類。
+請參閱 [管理標籤](../../help/sites-administering/tags.md#tagging-console) ，用於建立和管理標籤命名空間和分類。
 
-如需開發人員資訊，請參閱[Tag Essentials](tag.md) 。
+請參閱 [標籤要點](tag.md) 以取得開發人員資訊。
 
-請參閱[使用Social Tag Cloud](tagcloud.md) ，將Social Tag Cloud元件新增至頁面，以利使用套用的標籤來搜尋已張貼的UGC。
+請參閱 [使用Social Tag Cloud](tagcloud.md) 新增Social標籤雲端元件至頁面，以方便使用套用的標籤來搜尋已張貼的UGC。
 
 ### 標籤權限 {#tag-permissions}
 
@@ -52,8 +56,8 @@ ht-degree: 3%
 
 由於標籤會在發佈環境中套用至UGC，因此必須為社群成員啟用讀取權限，才能夠選取要套用的標籤。
 
-請參閱[設定標籤權限](../../help/sites-administering/tags.md#setting-tag-permissions)。
+請參閱 [設定標籤權限](../../help/sites-administering/tags.md#setting-tag-permissions).
 
-以下是當管理員將讀取權限應用於組`*Community Engage Members*`的`/etc/tag/discussions`時，CRXDE中顯示的方式。
+管理員將讀取權限套用至時，CRXDE中的顯示方式如下 `/etc/tag/discussions` 組 `*Community Engage Members*`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)

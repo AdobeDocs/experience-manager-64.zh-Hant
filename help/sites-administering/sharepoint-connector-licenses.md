@@ -1,8 +1,8 @@
 ---
-title: SharePoint連接器許可證、版權聲明和免責聲明
-seo-title: SharePoint連接器許可證、版權聲明和免責聲明
-description: 了解SharePoint Connector許可證、版權聲明和免責聲明。
-seo-description: 了解SharePoint Connector許可證、版權聲明和免責聲明。
+title: SharePoint Connector授權、版權聲明及免責聲明
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
+description: 了解SharePoint Connector授權、版權聲明和免責聲明。
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,20 +10,24 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
 exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 5%
+source-wordcount: '398'
+ht-degree: 19%
 
 ---
 
-# SharePoint連接器許可證、版權聲明和免責聲明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# SharePoint Connector授權、版權聲明及免責聲明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-本節列出在MS SharePoint的Day JCR Connector中必須明確說明的所有許可證、版權聲明和免責聲明。
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
-## Connector第三方庫概述{#overview-of-connector-rd-party-libraries}
+本節列出與MS SharePoint的Day JCR Connector有關的所有必須明確說明的許可證、版權聲明和免責聲明。
 
-下表列出了SharePoint Connector核心庫中使用的第三方庫，以及其涵蓋的許可證、版權聲明或免責聲明：
+## Connector第三方程式庫概述 {#overview-of-connector-rd-party-libraries}
+
+下表列出SharePoint Connector核心程式庫內使用的第三方程式庫，以及其涵蓋的授權、版權聲明或免責聲明：
 
 | 資料庫 | 授權類型 |
 |---|---|
@@ -40,7 +44,7 @@ ht-degree: 5%
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| 併發 | [同時](#concurrent) （公共網域） |
+| 併發 | [同時](#concurrent) （公共域） |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -59,10 +63,10 @@ ht-degree: 5%
 | wstx-asl | [Apache](#apache) |
 | 沙蘭 | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-api | [Apache](#apache) （包含公共域和W3C軟體許可證涵蓋的部分） |
+| xml-api | [Apache](#apache) （包含公共域和W3C軟體許可證所涵蓋的部分） |
 | XmlSchema | [Apache](#apache) |
 
-## CRX第三方庫概述{#overview-of-crx-rd-party-libraries}
+## CRX第三方資料庫概述 {#overview-of-crx-rd-party-libraries}
 
 下表列出CRX中使用的第三方程式庫，以及其涵蓋的授權、版權聲明或免責聲明：
 
@@ -154,7 +158,7 @@ ht-degree: 5%
  </tbody> 
 </table>
 
-## CQSE第三方庫概述{#overview-of-cqse-rd-party-libraries}
+## CQSE第三方資料庫概述 {#overview-of-cqse-rd-party-libraries}
 
 下表列出了Pornate Servlet引擎中使用的第三方庫，以及其所涵蓋的許可證、版權聲明或免責聲明：
 
@@ -437,7 +441,7 @@ ht-degree: 5%
      <a href="https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf" TARGET="_blank" >https://gee.cs.oswego.edu/dl/classes/EDU/oswego/cs/dl/util/sun-u.c.license.pdf</a>
 ```
 
-## 日JCR {#day-jcr}
+## Day JCR {#day-jcr}
 
 ```xml
      Day Management AG ("Licensor") is willing to license this 
@@ -566,7 +570,7 @@ ht-degree: 5%
      implementations, and test suites thereof.
 ```
 
-## 高超音速SQL組{#hypersonic-sql-group}
+## 高超音速SQL組 {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -1093,7 +1097,7 @@ ht-degree: 5%
      (LFI#95810/Form ID#011801)
 ```
 
-## W3C文檔{#w-c-document}
+## W3C檔案 {#w-c-document}
 
 ```xml
      This license came from: https://www.w3.org/Consortium/Legal/
@@ -1179,7 +1183,7 @@ ht-degree: 5%
      (last updated by reagle on 1999/04/99.)
 ```
 
-## W3C軟體{#w-c-software}
+## W3C軟體 {#w-c-software}
 
 ```xml
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>

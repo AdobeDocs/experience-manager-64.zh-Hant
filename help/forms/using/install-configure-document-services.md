@@ -8,14 +8,18 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: b3eea94d-87f1-49b3-aabc-cdb32629ef20
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4249'
+source-wordcount: '4285'
 ht-degree: 2%
 
 ---
 
 # 安裝和配置文檔服務 {#installing-and-configuring-document-services}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM Forms提供一組OSGi服務，以完成不同的檔案層級操作，例如建立、組合、分發和歸檔PDF檔案、添加數字簽名以限制對文檔的訪問以及解碼條碼式表單等服務。 這些服務包含在AEM Forms附加元件套件中。 這些服務統稱為文檔服務。 可用文檔服務及其主要功能的清單如下：
 

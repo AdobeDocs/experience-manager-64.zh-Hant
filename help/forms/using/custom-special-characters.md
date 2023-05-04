@@ -1,25 +1,29 @@
 ---
 title: 通信管理中的自訂特殊字元
-seo-title: 通信管理中的自訂特殊字元
+seo-title: Custom special characters in Correspondence Management
 description: 了解如何在通信管理中新增自訂特殊字元。
-seo-description: 了解如何在通信管理中新增自訂特殊字元。
+seo-description: Learn how to add custom special characters in Correspondence Management.
 uuid: ac4f1353-f1ef-43b7-8e80-aba56a155e3f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
-feature: 通信管理
+feature: Correspondence Management
 exl-id: a6206ae1-b71b-4066-b7a0-ce39a60d6dd0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '657'
+source-wordcount: '675'
 ht-degree: 1%
 
 ---
 
-# 通信管理{#custom-special-characters-in-correspondence-management}中的自訂特殊字元
+# 通信管理中的自訂特殊字元 {#custom-special-characters-in-correspondence-management}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 通信管理內建210個特殊字元的預設支援，您可輕鬆將其插入字母中。
 
@@ -31,8 +35,8 @@ ht-degree: 1%
 
 可以在字母中插入特殊字元：
 
-* 在[文字編輯器](/help/forms/using/document-fragments.md#createtext)中
-* 在[可編輯的通信中的內嵌模組](/help/forms/using/create-correspondence.md#managecontent)
+* 在 [文字編輯器](/help/forms/using/document-fragments.md#createtext)
+* 在 [可編輯的內嵌模組](/help/forms/using/create-correspondence.md#managecontent)
 
 ![specialcharactersinlinemodule](assets/specialcharactersinlinemodule.png)
 
@@ -42,10 +46,10 @@ ht-degree: 1%
 
 使用下列步驟來新增對自訂特殊字元的支援：
 
-1. 前往`https://[server]:[port]/[ContextPath]/crx/de`並以管理員身分登入。
-1. 在應用程式資料夾中，建立名為&#x200B;**[!UICONTROL specialcharacters]**&#x200B;的資料夾，其路徑/結構類似於specialcharacters資料夾（位於libs下的textEditorConfig資料夾中）:
+1. 前往 `https://[server]:[port]/[ContextPath]/crx/de` 並以管理員身分登入。
+1. 在應用程式資料夾中，建立名為 **[!UICONTROL 特殊字元]** 具有與specialcharacters資料夾類似的路徑/結構（位於libs下的textEditorConfig資料夾中）:
 
-   1. 按一下右鍵以下路徑上的&#x200B;**指定字元**&#x200B;資料夾，然後選擇&#x200B;**覆蓋節點**:
+   1. 以滑鼠右鍵按一下 **特殊字元** 資料夾（位於以下路徑），然後選取 **覆蓋節點**:
 
       `/libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters`
 
@@ -55,7 +59,7 @@ ht-degree: 1%
 
       **覆蓋位置：** /apps/
 
-      **匹配節點類型：已** 勾選
+      **匹配節點類型：** 已勾選
 
       >[!NOTE]
       >
@@ -66,23 +70,23 @@ ht-degree: 1%
       >* 安裝功能套件
 
 
-   1. 按一下&#x200B;**OK**，然後按一下&#x200B;**Save All**。 指定路徑中建立了指定字元資料夾。
+   1. 按一下 **確定** 然後按一下 **全部儲存**. 指定路徑中建立了指定字元資料夾。
 
       建立覆蓋後，驗證節點結構標籤。 使用覆蓋在/apps中建立的每個節點，應具有與該節點在/libs中定義的相同類別和屬性。 如果/apps位置下的節點結構中缺少任何屬性或標籤，請將其標籤與/libs中的對應節點同步。
 
-1. 確保&#x200B;**[!UICONTROL textEditorConfig]**&#x200B;節點具有以下屬性和值：
+1. 確保 **[!UICONTROL textEditorConfig]** 節點具有以下屬性和值：
 
    | 名稱 | 類型 | 值 |
    |---|---|---|
    | cmConfigurationType | 字串 | cmTextEditorConfiguration |
    | cssPath | 字串 | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. 按一下右鍵以下路徑上的&#x200B;**[!UICONTROL 指定字元]**&#x200B;資料夾，然後選擇&#x200B;**建立>子節點**，然後按一下&#x200B;**保存全部**:
+1. 以滑鼠右鍵按一下 **[!UICONTROL 特殊字元]** 資料夾（位於以下路徑），然後選取 **建立>子節點** 然後按一下 **全部儲存**:
 
-   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
+   /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;yourchildnode>
 
 1. 刷新文本編輯器\建立通信UI頁。 您新增的節點是UI中特殊字元清單中的最後一個節點。
-1. 按一下「**全部保存**」。
+1. 按一下 **全部儲存**.
 1. 視需要變更特殊字元：
 
 <table> 

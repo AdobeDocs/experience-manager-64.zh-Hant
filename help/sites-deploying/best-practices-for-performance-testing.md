@@ -4,14 +4,18 @@ seo-title: Best Practices for Performance Testing
 description: 本文概述用於效能測試的總體戰略和方法，以及一些可用於協助該過程的工具。
 seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 exl-id: 8d0863be-108d-49d8-8243-ea5e404ed64c
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1928'
 ht-degree: 0%
 
 ---
 
 # 效能測試最佳實務{#best-practices-for-performance-testing}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 簡介 {#introduction}
 

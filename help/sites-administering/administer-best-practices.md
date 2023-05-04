@@ -1,26 +1,30 @@
 ---
-title: 最佳作法
+title: 最佳做法
 description: 了解由Adobe工程和諮詢團隊編譯的Adobe Experience Manager最佳實務，以協助管理員快速上手並執行。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 8c41dba4-bedc-4747-b67d-fd89d71c8b2c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 3%
+source-wordcount: '573'
+ht-degree: 8%
 
 ---
 
-# 最佳作法{#best-practices}
+# 最佳做法{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 最佳實務說明如何以盡可能最有效率和最有效的方式開發、管理或使用AEM。 這份不斷增加的主題清單包含AEM中的多個領域。
 
 以下幾方面提供有關最佳做法的檔案：
 
-* [資產](#assets)
-* [網站](#sites)
+* [Assets](#assets)
+* [Sites](#sites)
 
 如需製作、部署和維護或開發的最佳實務，請參閱下列其中一項：
 
@@ -30,7 +34,7 @@ ht-degree: 3%
 
 下面的表中描述了特定文檔並連結到這些文檔。
 
-## 資產 {#assets}
+## Assets {#assets}
 
 以下主題說明有關Assets的最佳實務，包括Dynamic Media功能和Dynamic Media Classic整合：
 
@@ -53,8 +57,8 @@ ht-degree: 3%
   </tr>
   <tr>
    <td>影像預設集選項</td> 
-   <td>了解<a href="/help/assets/managing-image-presets.md#understanding-image-presets">影像預設集</a>和<a href="/help/assets/managing-image-presets.md#image-preset-options">影像預設集最佳作法</a></td> 
-   <td>在<a href="/help/assets/managing-image-presets.md">管理影像預設集</a>的檔案中，以下主題說明了哪些影像預設集以及選擇影像預設集選項的最佳做法。</td> 
+   <td>了解 <a href="/help/assets/managing-image-presets.md#understanding-image-presets">影像預設集</a> 和 <a href="/help/assets/managing-image-presets.md#image-preset-options">影像預設集最佳作法</a></td> 
+   <td>作為 <a href="/help/assets/managing-image-presets.md">管理影像預設集</a>，以下主題說明哪些影像預設集以及選取影像預設集選項的最佳實務。</td> 
   </tr>
   <tr>
    <td>Dynamic Media與Dynamic Media Classic直接整合</td> 
@@ -64,7 +68,7 @@ ht-degree: 3%
  </tbody>
 </table>
 
-## 網站 {#sites}
+## Sites {#sites}
 
 管理和編寫網站內容有一些最佳實務，概述如下：
 
@@ -73,7 +77,7 @@ ht-degree: 3%
   <tr>
    <td>GDPR法規遵循</td> 
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites GDPR法規遵循</a></td> 
-   <td>歐盟資料隱私權一般資料保護規範自2018年5月起生效。 AEM Sites符合GDPR。 本頁引導客戶完成在AEM Sites中處理GDPR請求的程式。 它說明了儲存的私人資料位置，以及如何手動或使用程式碼移除這些資料。</td> 
+   <td>歐盟資料隱私權一般資料保護規範自2018年5月起生效。 AEM Sites符合GDPR。 本頁引導客戶完成在AEM Sites中處理GDPR請求的程式。 它描述了儲存私人資料的位置，以及如何以手動方式或使用程式碼移除它們。</td> 
   </tr>
   <tr>
    <td>定義執行個體的預設UI。</td> 
@@ -82,7 +86,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td>多網站管理</td> 
-   <td><a href="/help/sites-administering/msm-best-practices.md">MSM最佳實務</a></td> 
+   <td><a href="/help/sites-administering/msm-best-practices.md">MSM 最佳做法</a></td> 
    <td>使用MSM來自動部署內容的最佳作法。 </td> 
   </tr>
   <tr>

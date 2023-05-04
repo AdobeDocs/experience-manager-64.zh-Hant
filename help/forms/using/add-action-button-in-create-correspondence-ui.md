@@ -10,20 +10,24 @@ topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 feature: Correspondence Management
 exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1891'
 ht-degree: 1%
 
 ---
 
 # 在建立通信UI中新增自訂動作/按鈕 {#add-custom-action-button-in-create-correspondence-ui}
 
-## 概覽 {#overview}
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
+## 概觀 {#overview}
 
 通信管理解決方案可讓您將自訂動作新增至「建立通信」使用者介面。
 
-本檔案中的案例說明如何在「建立通信使用者介面」中建立按鈕，以共用附加至電子郵件的審核PDF格式信函。
+本檔案中的案例說明如何在「建立通信使用者介面」中建立按鈕，以共用信函作為附加至電子郵件的審核PDF。
 
 ### 必備條件 {#prerequisites}
 
@@ -42,10 +46,10 @@ ht-degree: 1%
 
 ### 將按鈕新增至建立通信使用者介面 {#add-the-button-to-the-create-correspondence-user-interface}
 
-1. 前往`https://[server]:[port]/[ContextPath]/crx/de`並以管理員身分登入。
-1. 在應用程式資料夾中，建立名為`defaultApp`的資料夾，其路徑/結構類似於defaultApp資料夾（位於設定資料夾中）。 使用下列步驟建立資料夾：
+1. 前往 `https://[server]:[port]/[ContextPath]/crx/de` 並以管理員身分登入。
+1. 在應用程式資料夾中，建立名為 `defaultApp` 路徑/結構類似defaultApp資料夾（位於設定資料夾中）。 使用下列步驟建立資料夾：
 
-   * 按一下右鍵以下路徑的&#x200B;**[!UICONTROL defaultApp]**&#x200B;資料夾，然後選擇&#x200B;**[!UICONTROL 覆蓋節點]**:
+   * 以滑鼠右鍵按一下 **[!UICONTROL defaultApp]** 資料夾（位於以下路徑），然後選取 **[!UICONTROL 覆蓋節點]**:
 
       /libs/fd/cm/config/defaultApp/
 
@@ -57,23 +61,23 @@ ht-degree: 1%
 
       **[!UICONTROL 覆蓋位置：]** /apps/
 
-      **[!UICONTROL 匹配節點類型：已]** 勾選
+      **[!UICONTROL 匹配節點類型：]** 已勾選
 
       ![覆蓋節點](assets/2_defaultappoverlaynode.png)
 
    * 按一下&#x200B;**[!UICONTROL 「確定」]**。
-   * 按一下「**[!UICONTROL 全部保存]**」。
+   * 按一下 **[!UICONTROL 全部儲存]**.
 
 1. 複製/apps分支下的acmExtensionsConfig.xml檔案（存在於/libs分支下）。
 
    * 前往「/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml」
 
-   * 以滑鼠右鍵按一下acmExtensionsConfig.xml檔案，然後選取&#x200B;**[!UICONTROL Copy]**。
+   * 以滑鼠右鍵按一下acmExtensionsConfig.xml檔案，然後選取 **[!UICONTROL 複製]**.
 
       ![複製acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
-   * 按一下右鍵位於「/apps/fd/cm/config/defaultApp/，」的&#x200B;**[!UICONTROL defaultApp]**&#x200B;資料夾，然後選擇&#x200B;**[!UICONTROL 貼上]**。
-   * 按一下「**[!UICONTROL 全部保存]**」。
+   * 以滑鼠右鍵按一下 **[!UICONTROL defaultApp]** 資料夾（位於「/apps/fd/cm/config/defaultApp/，」），然後選取 **[!UICONTROL 貼上]**.
+   * 按一下 **[!UICONTROL 全部儲存]**.
 
 1. 連按兩下您新在應用程式資料夾中建立的acmExtentionsConfig.xml副本。 檔案隨即開啟供編輯。
 1. 找出下列程式碼：
@@ -110,7 +114,7 @@ ht-degree: 1%
    | 標籤 | 要在動作按鈕上顯示的標籤 |
    | 工具提示 | 按鈕的工具提示文字，當使用者將游標暫留在按鈕上時，就會顯示此文字。 |
    | styleName | 應用於操作按鈕的自定義樣式的名稱。 |
-   | permissionName | 只有當使用者擁有permissionName所指定的權限時，才會顯示對應的動作。 將permissionName指定為`forms-users`時，所有用戶都可以訪問此選項。 |
+   | permissionName | 只有當使用者擁有permissionName所指定的權限時，才會顯示對應的動作。 將permissionName指定為 `forms-users`，所有使用者都能存取此選項。 |
    | actionHandler | 用戶按一下按鈕時調用的ActionHandler類的完全限定名稱。 |
 
    除了上述參數外，還可能有其他與customAction相關聯的設定。 這些附加配置可通過CustomAction對象提供給處理程式。
@@ -118,16 +122,16 @@ ht-degree: 1%
    | **名稱** | **說明** |
    |---|---|
    | serviceName | 如果customAction包含名為serviceName的子標籤，則按一下相關按鈕/連結時，將調用一個進程，該進程的名稱由serviceName標籤表示。 確保此進程與Letter PostProcess具有相同的簽名。 在服務名稱中新增「Forms Workflow->」首碼。 |
-   | 標籤名稱中包含cm_前置詞的參數 | 如果customAction包含以名稱cm_開頭的子標籤，則在後置處理（無論是信函後置處理或serviceName標籤所代表的特殊處理）中，這些參數可在輸入XML代碼中刪除的相關標籤下使用。 |
+   | 標籤名稱中包含cm_前置詞的參數 | 如果customAction包含以名稱cm_開頭的子標籤，則在後置處理（無論是信函後置處理或serviceName標籤所代表的特殊處理）中，這些參數可在輸入XML代碼中的相關標籤下使用，並刪除cm_前置詞。 |
    | actionName | 每當貼文處理因點按而發生時，提交的XML都會在標籤下方包含一個特殊標籤，其名稱為使用者動作的名稱。 |
 
-1. 按一下「**[!UICONTROL 全部保存]**」。
+1. 按一下 **[!UICONTROL 全部儲存]**.
 
 #### 在/apps分支中建立具有屬性檔案的區域設定資料夾 {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 ACMExtensionsMessages.properties檔案包含「建立通信」用戶介面中各欄位的標籤和工具提示消息。 為了讓自訂動作/按鈕正常運作，請在/apps分支中製作此檔案的復本。
 
-1. 按一下右鍵以下路徑上的&#x200B;**[!UICONTROL locale]**&#x200B;資料夾，然後選擇&#x200B;**[!UICONTROL 覆蓋節點]**:
+1. 以滑鼠右鍵按一下 **[!UICONTROL 地區]** 資料夾（位於以下路徑），然後選取 **[!UICONTROL 覆蓋節點]**:
 
    /libs/fd/cm/config/defaultApp/locale
 
@@ -137,21 +141,21 @@ ACMExtensionsMessages.properties檔案包含「建立通信」用戶介面中各
 
    **[!UICONTROL 覆蓋位置：]** /apps/
 
-   **[!UICONTROL 匹配節點類型：已]** 勾選
+   **[!UICONTROL 匹配節點類型：]** 已勾選
 
 1. 按一下&#x200B;**[!UICONTROL 「確定」]**。
-1. 按一下「**[!UICONTROL 全部保存]**」。
-1. 按一下右鍵以下檔案，然後選擇&#x200B;**[!UICONTROL Copy]**:
+1. 按一下 **[!UICONTROL 全部儲存]**.
+1. 按一下右鍵以下檔案並選擇 **[!UICONTROL 複製]**:
 
    `/libs/fd/cm/config/defaultApp/locale/ACMExtensionsMessages.properties`
 
-1. 按一下右鍵以下路徑上的&#x200B;**[!UICONTROL locale]**&#x200B;資料夾，然後選擇&#x200B;**[!UICONTROL 貼上]**:
+1. 以滑鼠右鍵按一下 **[!UICONTROL 地區]** 資料夾（位於以下路徑），然後選取 **[!UICONTROL 貼上]**:
 
    `/apps/fd/cm/config/defaultApp/locale/`
 
    ACMExtensionsMessages.properties檔案是在地區設定資料夾中複製的。
 
-1. 要將新添加的自定義操作/按鈕的標籤本地化，請為`/apps/fd/cm/config/defaultApp/locale/`中的相關區域設定建立ACMExtensionsMessages.properties檔案。
+1. 要將新添加的自定義操作/按鈕的標籤本地化，請為中的相關區域設定建立ACMExtensionsMessages.properties檔案 `/apps/fd/cm/config/defaultApp/locale/`.
 
    例如，若要將本文中建立的自訂動作/按鈕翻譯為當地語系化，請建立名為ACMExtensionsMessages_fr.properties的檔案，並輸入下列項目：
 
@@ -159,7 +163,7 @@ ACMExtensionsMessages.properties檔案包含「建立通信」用戶介面中各
 
    同樣地，您可以在此檔案中新增更多屬性，例如工具提示和樣式。
 
-1. 按一下「**[!UICONTROL 全部保存]**」。
+1. 按一下 **[!UICONTROL 全部儲存]**.
 
 #### 重新啟動Adobe資產撰寫器建置區塊套件組合 {#restart-the-adobe-asset-composer-building-block-bundle}
 
@@ -193,13 +197,13 @@ ACMExtensionsMessages.properties檔案包含「建立通信」用戶介面中各
 
 1. 前往 `https://[server]:[port]/[ContextPath]/crx/de`. 如有必要，請以管理員身分登入。
 
-1. 在應用程式資料夾中，在CRX的/apps分支中建立名為`js`的資料夾，其結構類似於以下資料夾：
+1. 在應用程式資料夾中，建立名為 `js` (位於CRX的/apps分支中，其結構類似於下列資料夾：
 
    `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
    使用下列步驟建立資料夾：
 
-   1. 以滑鼠右鍵按一下以下路徑的&#x200B;**[!UICONTROL js]**&#x200B;資料夾，然後選取&#x200B;**[!UICONTROL 覆蓋節點]**:
+   1. 以滑鼠右鍵按一下 **[!UICONTROL js]** 資料夾（位於以下路徑），然後選取 **[!UICONTROL 覆蓋節點]**:
 
       `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
@@ -209,21 +213,21 @@ ACMExtensionsMessages.properties檔案包含「建立通信」用戶介面中各
 
       **[!UICONTROL 覆蓋位置：]** /apps/
 
-      **[!UICONTROL 匹配節點類型：已]** 勾選
+      **[!UICONTROL 匹配節點類型：]** 已勾選
 
    1. 按一下&#x200B;**[!UICONTROL 「確定」]**。
-   1. 按一下「**[!UICONTROL 全部保存]**」。
+   1. 按一下 **[!UICONTROL 全部儲存]**.
 
 1. 在js資料夾中，使用按鈕的動作處理程式碼，建立名為ccrcustomization.js的檔案，步驟如下：
 
-   1. 按一下右鍵以下路徑的&#x200B;**[!UICONTROL js]**&#x200B;資料夾，然後選擇&#x200B;**[!UICONTROL 建立>建立檔案]**:
+   1. 以滑鼠右鍵按一下 **[!UICONTROL js]** 資料夾（位於以下路徑），然後選取 **[!UICONTROL 建立>建立檔案]**:
 
       `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/js`
 
       將檔案命名為ccrcustomization.js。
 
    1. 連按兩下ccrcustomization.js檔案，以在CRX中開啟它。
-   1. 在檔案中，貼上下列程式碼，然後按一下&#x200B;**[!UICONTROL 儲存全部]**:
+   1. 在檔案中，貼上下列程式碼，然後按一下 **[!UICONTROL 全部儲存]**:
 
       ```
       /* for adding and handling custom actions in Extensible Toolbar.
@@ -322,14 +326,14 @@ ACMExtensionsMessages.properties檔案包含「建立通信」用戶介面中各
       '</div>';
       ```
 
-### 添加LiveCycle進程以啟用<span class="acrolinxCursorMarker"></span>操作 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### 新增LiveCycle程式以啟用動作 <span class="acrolinxCursorMarker"></span>處理 {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 在此案例中，請啟用下列元件，這些元件是附加元件.zip檔案的一部分：
 
 * DSC元件罐(`DSCSample.jar`)
-* 發送供複查流程LCA的信函(`SendLetterForReview.lca`)
+* 發送供審查流程LCA(`SendLetterForReview.lca`)
 
-下載並解壓縮`components.zip`檔案以取得`DSCSample.jar`和`SendLetterForReview.lca`檔案。 按照以下過程中的指定使用這些檔案。
+下載並解壓縮 `components.zip` 檔案 `DSCSample.jar` 和 `SendLetterForReview.lca` 檔案。 按照以下過程中的指定使用這些檔案。
 
 [取得檔案](assets/components.zip)
 
@@ -341,10 +345,10 @@ ACMExtensionsMessages.properties檔案包含「建立通信」用戶介面中各
 
 LCA進程在LiveCycle伺服器上運行，需要伺服器地址和登錄憑據。
 
-1. 前往`https://[server]:[port]/system/console/configMgr`並以管理員身分登入。
-1. 找到「AdobeLiveCycle用戶端SDK設定」 ，然後按一下「**[!UICONTROL 編輯]**」（編輯圖示）。 「配置」面板隨即開啟。
+1. 前往 `https://[server]:[port]/system/console/configMgr` 並以管理員身分登入。
+1. 找出AdobeLiveCycle用戶端SDK設定，然後按一下 **[!UICONTROL 編輯]** （編輯圖示）。 「配置」面板隨即開啟。
 
-1. 輸入以下詳細資訊，然後按一下&#x200B;**[!UICONTROL Save]**:
+1. 輸入以下詳細資訊，然後按一下 **[!UICONTROL 儲存]**:
 
    * **[!UICONTROL 伺服器Url]**:操作處理程式代碼使用的Send For Review服務的LC伺服器的URL。
    * **[!UICONTROL 使用者名稱]**:LC伺服器的管理員用戶名
@@ -360,34 +364,34 @@ LCA進程在LiveCycle伺服器上運行，需要伺服器地址和登錄憑據�
 >
 >若要檢視此程式的功用，或自行建立類似程式，您需要Workbench。
 
-1. 以管理員身分登入Livecycle Server adminui at `https:/[lc server]/:[lc port]/adminui`。
+1. 以管理員身分登入Livecycle Server adminui，網址為 `https:/[lc server]/:[lc port]/adminui`.
 
-1. 導航至&#x200B;**[!UICONTROL 首頁>服務>應用程式和服務>應用程式管理]**。
+1. 導覽至 **[!UICONTROL 首頁>服務>應用程式和服務>應用程式管理]**.
 
 1. 如果SendLetterForReview應用程式已存在，請跳過此過程中的其餘步驟，否則繼續執行後續步驟。
 
    ![UI中的SendLetterForReview應用程式](assets/12_applicationmanagementlc.png)
 
-1. 按一下&#x200B;**[!UICONTROL Import]**。
+1. 按一下 **[!UICONTROL 匯入]**.
 
-1. 按一下「**[!UICONTROL 選擇檔案]**」並選擇「**[!UICONTROL SendLetterForReview.lca]**」。
+1. 按一下 **[!UICONTROL 選擇檔案]** 選取 **[!UICONTROL SendLetterForReview.lca]**.
 
    ![選擇SendLetterForReview.lca檔案](assets/14_sendletterforreview_lca.png)
 
-1. 按一下「**[!UICONTROL 預覽]**」。
+1. 按一下 **[!UICONTROL 預覽]**.
 
-1. 選取&#x200B;**[!UICONTROL 匯入完成時將資產部署至執行階段]**。
+1. 選擇 **[!UICONTROL 匯入完成時，將資產部署至執行階段]**.
 
-1. 按一下&#x200B;**[!UICONTROL Import]**。
+1. 按一下 **[!UICONTROL 匯入]**.
 
 #### 將ServiceName添加到AllowListed服務清單 {#adding-servicename-to-the-allowlisted-service-list}
 
 在AEM伺服器中提及您要存取AEM伺服器的LiveCycle服務。
 
-1. 以管理員身分登入`https:/[host]/:[port]/system/console/configMgr`。
+1. 以管理員身分登入 `https:/[host]/:[port]/system/console/configMgr`.
 
-1. 找到並按一下&#x200B;**[!UICONTROL AdobeLiveCycle用戶端SDK設定]**。 AdobeLiveCycle用戶端SDK設定面板隨即顯示。
-1. 在「服務名稱」清單中，按一下+表徵圖並添加服務名&#x200B;**[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**。
+1. 找到並按一下 **[!UICONTROL AdobeLiveCycle用戶端SDK設定]**. AdobeLiveCycle用戶端SDK設定面板隨即顯示。
+1. 在「服務名稱」清單中，按一下+圖示並新增服務名稱 **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**.
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
@@ -395,50 +399,50 @@ LCA進程在LiveCycle伺服器上運行，需要伺服器地址和登錄憑據�
 
 在此案例中，若要讓通信管理能夠傳送電子郵件，請在LiveCycle伺服器中設定電子郵件服務。
 
-1. 以管理員憑證登入Livecycle Server adminui at `https:/[lc server]:[lc port]/adminui`。
+1. 使用管理員憑證登入Livecycle Server adminui，網址為 `https:/[lc server]:[lc port]/adminui`.
 
-1. 導航至&#x200B;**[!UICONTROL 首頁>服務>應用程式和服務>服務管理]**。
+1. 導覽至 **[!UICONTROL 首頁>服務>應用程式和服務>服務管理]**.
 
-1. 找到並按一下&#x200B;**[!UICONTROL EmailService]**。
+1. 找到並按一下 **[!UICONTROL EmailService]**.
 
-1. 在&#x200B;**[!UICONTROL SMTP主機]**&#x200B;中，配置電子郵件服務。
+1. 在 **[!UICONTROL SMTP主機]**，設定電子郵件服務。
 
 1. 按一下「**[!UICONTROL 儲存]**」。
 
 #### 配置DSC服務 {#configure-the-dsc-service}
 
-若要使用通信管理API，請下載`DSCSample.jar`（附於本檔案中，作為`components.zip`的一部分）並上傳至LiveCycle伺服器。 將`DSCSample.jar`檔案上傳至LiveCycle伺服器後，AEM伺服器會使用`DSCSample.jar`檔案來存取renderLetter API。
+若要使用通信管理API，請下載 `DSCSample.jar` (附於本檔案，作為 `components.zip`)並上傳至LiveCycle伺服器。 在 `DSCSample.jar` 檔案上傳至LiveCycle伺服器，AEM伺服器會使用 `DSCSample.jar` 檔案來存取renderLetter API。
 
-如需詳細資訊，請參閱[將AEM Forms與AdobeLiveCycle連線](/help/forms/using/aem-livecycle-connector.md)。
+如需詳細資訊，請參閱 [將AEM Forms與AdobeLiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
-1. 更新`DSCSample.jar`中cmsa.properties中的AEM伺服器URL，該位置如下：
+1. 更新cmsa.properties中的AEM伺服器URL，位於 `DSCSample.jar`，位於下列位置：
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. 在設定檔案中提供下列參數：
 
-   * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
-   * **crx.username** = AEM使用者名稱
-   * **crx.password** = AEM密碼
-   * **crx.appRoot** =/content/apps/cm
+   * **crx.serverUrl**=https:/[主機]/:[埠]/[內容路徑]/[AEM URL]
+   * **crx.username**= AEM使用者名稱
+   * **crx.password**= AEM密碼
+   * **crx.appRoot**=/content/apps/cm
 
    >[!NOTE]
    >
    >每次在伺服器端進行任何更改時，請重新啟動伺服器。
 
-   `DSCSample.jar`檔案使用`renderLetter` API。 如需renderLetter API的詳細資訊，請參閱[介面LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
+   此 `DSCSample.jar` 檔案使用 `renderLetter` API。 如需renderLetter API的詳細資訊，請參閱 [介面LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### 在JEE上將DSC匯入AEM Forms {#import-dsc-to-livecyle}
 
-`DSCSample.jar` 檔案使用 `renderLetter` API，從C作為輸入提供的XML資料將字母轉譯為PDF位元組。如需renderLetter和其他API的詳細資訊，請參閱[Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)。
+`DSCSample.jar` 檔案使用 `renderLetter` 從C作為輸入提供的XML資料中，將字母轉譯為PDF位元組的API。 如需renderLetter和其他API的詳細資訊，請參閱 [信函轉譯服務](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 1. 啟動Workbench並登入。
-1. 選擇&#x200B;**[!UICONTROL 窗口>顯示視圖>元件]**。 元件檢視會新增至Workbench ES2。
+1. 選擇 **[!UICONTROL 「窗口」>「顯示視圖」>「元件」]**. 元件檢視會新增至Workbench ES2。
 
-1. 按一下右鍵&#x200B;**[!UICONTROL 元件]**&#x200B;並選擇&#x200B;**[!UICONTROL 安裝元件]**。
+1. 按一下右鍵 **[!UICONTROL 元件]** 選取 **[!UICONTROL 安裝元件]**.
 
-1. 通過檔案瀏覽器選擇`DSCSample.jar`檔案，然後按一下&#x200B;**[!UICONTROL Open]**。
-1. 按一下右鍵&#x200B;**[!UICONTROL RenderWrapper]**&#x200B;並選擇&#x200B;**[!UICONTROL 啟動元件]**。 如果元件啟動，元件名稱旁會出現綠色箭頭。
+1. 選取 `DSCSample.jar` 檔案，然後按一下 **[!UICONTROL 開啟]**.
+1. 按一下右鍵 **[!UICONTROL RenderWrapper]** 選取 **[!UICONTROL 開始元件]**. 如果元件啟動，元件名稱旁會出現綠色箭頭。
 
 ## 發送信函以供審核 {#send-letter-for-review}
 
@@ -446,10 +450,10 @@ LCA進程在LiveCycle伺服器上運行，需要伺服器地址和登錄憑據�
 
 1. 清除瀏覽器快取。
 
-1. 在「建立通信」UI中，按一下「**[!UICONTROL 信函審核]**」並指定審核者的電子郵件ID。
+1. 在建立通信UI中，按一下 **[!UICONTROL 信件審閱]** 並指定審核者的電子郵件ID。
 
-1. 按一下&#x200B;**[!UICONTROL Submit]**。
+1. 按一下 **[!UICONTROL 提交]**.
 
 ![森德雷維](assets/sendreview.png)
 
-審核者從系統收到一封電子郵件，信件為PDF附件。
+審核者從系統收到一封電子郵件，信件作為PDF附件。

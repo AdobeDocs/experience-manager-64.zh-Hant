@@ -1,8 +1,8 @@
 ---
 title: 社交元件架構
-seo-title: 社交元件架構
+seo-title: Social Component Framework
 description: 社交元件框架(SCF)簡化了配置、定制和擴展Communities元件的過程
-seo-description: 社交元件框架(SCF)簡化了配置、定制和擴展Communities元件的過程
+seo-description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
 uuid: 23b4418d-b91c-46fc-bf42-1154ef79fe5a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,29 +10,33 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 9264c888-a583-40eb-9178-273146f8a12b
-source-git-commit: a70f874ad7fcae59ee4c6ec20e23ffb2e339590b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1506'
-ht-degree: 0%
+source-wordcount: '1524'
+ht-degree: 1%
 
 ---
 
 # 社交元件架構 {#social-component-framework}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 社交元件架構(SCF)簡化了在伺服器端和用戶端配置、自訂和擴充Communities元件的程式。
 
 該框架的好處：
 
 * **功能**:80%的使用案例可輕鬆自訂，即可立即使用
-* **可外觀**:CSS樣式的HTML屬性使用方式一致
+* **可外觀**:一致地使用CSS樣式的HTML屬性
 * **可擴充**:元件實施是物件導向的，輕鬆實現業務邏輯 — 易於在伺服器上添加增量業務登錄
-* **彈性**:輕鬆顯示和自訂的簡單無邏輯JavaScript範本
-* **可存取**:HTTP API支援從任何用戶端（包括行動應用程式）張貼
-* **可攜式**:將整合/嵌入任何基於技術構建的網頁
+* **靈活**:輕鬆顯示和自訂的簡單無邏輯JavaScript範本
+* **無障礙**:HTTP API支援從任何用戶端（包括行動應用程式）張貼
+* **攜帶型**:將整合/嵌入任何基於技術構建的網頁
 
-使用互動式[社群元件指南](components-guide.md)探索製作或發佈執行個體。
+使用互動式探索製作或發佈例項 [社群元件指南](components-guide.md).
 
-## 概覽 {#overview}
+## 概觀 {#overview}
 
 在SCF中，元件由SocialComponent POJO、Handlebars JS範本（用於呈現元件）和CSS（用於設定元件樣式）組成。
 
@@ -51,18 +55,18 @@ SocialComponent API可延伸，以提供用戶端對檢視層或HTTP用戶端所
 若要自訂或擴充元件，您只會將覆蓋圖和擴充功能寫入/apps目錄，簡化升級至未來版本的程式。
 
 * 用於外觀
-   * 只有[CSS需要編輯](client-customize.md#skinning-css)
+   * 僅 [CSS需要編輯](client-customize.md#skinning-css)
 * 外觀
    * 變更JS範本和CSS
 * 外觀、風格和UX
-   * 變更JS範本、CSS和[延伸/覆寫Javascript](client-customize.md#extending-javascript)
+   * 變更JS範本、CSS和 [延伸/覆寫Javascript](client-customize.md#extending-javascript)
 * 修改「JS範本」或「GET端點」可用的資訊
-   * 擴充[SocialComponent](server-customize.md#socialcomponent-interface)
+   * 擴充 [SocialComponent](server-customize.md#socialcomponent-interface)
 * 在操作期間添加自定義處理
-   * 編寫[OperationExtension](server-customize.md#operationextension-class)
+   * 撰寫 [操作擴展](server-customize.md#operationextension-class)
 * 新增自訂操作的方式
-   * 建立新的[Sling後操作](server-customize.md#postoperation-class)
-   * 視需要使用現有的[OperationServices](server-customize.md#operationservice-class)
+   * 建立新 [Sling後操作](server-customize.md#postoperation-class)
+   * 使用現有 [OperationServices](server-customize.md#operationservice-class) 視需要
    * 視需要新增Javascript程式碼，從用戶端叫用您的操作
 
 ## 伺服器端架構 {#server-side-framework}
@@ -73,9 +77,9 @@ SocialComponent API可延伸，以提供用戶端對檢視層或HTTP用戶端所
 
 Java API提供抽象類別和介面，這些類別和介面可輕鬆繼承或子類別。
 
-主要類在[伺服器端自訂](server-customize.md)頁面上描述。
+主要類在 [伺服器端自訂](server-customize.md) 頁面。
 
-請訪問[儲存資源提供程式概述](srp.md)了解如何使用UGC。
+瀏覽 [儲存資源提供程式概述](srp.md) 了解如何使用UGC。
 
 ### HTTP API {#http-api}
 
@@ -83,14 +87,14 @@ HTTP API支援為PhoneGap應用程式、原生應用程式及其他整合和綜�
 
 ### HTTP API -GET要求 {#http-api-get-requests}
 
-架構會針對每個SocialComponent提供HTTP型API端點。 端點的存取方式為使用「.social.json」選取器+擴充功能傳送GET要求至資源。 使用Sling時，會將要求傳送至`DefaultSocialGetServlet`。
+架構會針對每個SocialComponent提供HTTP型API端點。 端點的存取方式為使用「.social.json」選取器+擴充功能傳送GET要求至資源。 使用Sling時，系統會將要求傳送至 `DefaultSocialGetServlet`.
 
-`DefaultSocialGetServlet`
+ `DefaultSocialGetServlet`
 
-1. 將資源(resourceType)傳遞至`SocialComponentFactoryManager`並接收能夠選取代表資源的`SocialComponent`的SocialComponentFactory。
+1. 將資源(resourceType)傳遞至 `SocialComponentFactoryManager`並接收能夠選擇 `SocialComponent`代表資源。
 
-1. 調用工廠並接收能夠處理資源和請求的`SocialComponent`。
-1. 叫用`SocialComponent`，處理要求並傳回結果的JSON表示。
+1. 調用工廠並接收 `SocialComponent`能夠處理資源和請求。
+1. 調用 `SocialComponent`，會處理要求並傳回結果的JSON表示法。
 1. 傳回JSON回應給用戶端。
 
 **`GET Request`**
@@ -113,25 +117,25 @@ HTTP API支援為PhoneGap應用程式、原生應用程式及其他整合和綜�
 
 ### 儲存資源提供程式(SRP) {#storage-resource-provider-srp}
 
-若要了解如何處理儲存在[社群內容存放區](working-with-srp.md)中的UGC，請參閱
+若要了解如何處理儲存在 [社群內容存放區](working-with-srp.md)，請參閱
 
-* [儲存資源提供程式概述](srp.md)  — 簡介和儲存庫使用概述
-* [SRP和UGC Essentials](srp-and-ugc.md)  - SRP API公用程式方法與範例
+* [儲存資源提供程式概述](srp.md)  — 簡介和存放庫使用概觀
+* [SRP和UGC要點](srp-and-ugc.md) - SRP API公用程式方法與範例
 * [使用SRP存取UGC](accessing-ugc-with-srp.md)  — 編碼准則
 
 ### 伺服器端自訂 {#server-side-customizations}
 
-有關自定義伺服器端Communities元件的業務邏輯和行為的資訊，請訪問[伺服器端自定義](server-customize.md)。
+瀏覽 [伺服器端自訂](server-customize.md) 有關在伺服器端自訂Communities元件的業務邏輯和行為的資訊。
 
 ## Handlebars JS範本語言 {#handlebars-js-templating-language}
 
-新架構中更顯著的變更之一，是使用[Handlebars JS](https://handlebarsjs.com/)範本語言(HBS)，這是伺服器用戶端轉譯的熱門開放原始碼技術。
+新框架中更明顯的變化之一是使用 [Handlebars JS](https://handlebarsjs.com/) 範本語言(HBS)，這是用於伺服器用戶端轉譯的熱門開放原始碼技術。
 
 HBS指令碼簡單、無邏輯、在伺服器和客戶端上編譯、易於覆蓋和定制，並且自然地與客戶端UX綁定，因為HBS支援客戶端呈現。
 
-此架構提供數個[Handlebars helpers](handlebars-helpers.md)，在開發SocialComponents時相當實用。
+此架構提供 [手把手幫手](handlebars-helpers.md) 在開發SocialComponents時很有用。
 
-在伺服器上，Sling解析GET請求時，會識別將用來回應請求的指令碼。 如果指令碼是HBS範本(.hbs),Sling會將要求委派給Handlebars引擎。 然後，Handlebars引擎將從適當的SocialComponentFactory中取得SocialComponent、建立內容並轉譯HTML。
+在伺服器上，Sling解析GET請求時，會識別將用來回應請求的指令碼。 如果指令碼是HBS範本(.hbs),Sling會將要求委派給Handlebars引擎。 然後，Handlebars引擎將從適當的SocialComponentFactory中取得SocialComponent、建立內容並呈現HTML。
 
 ### 無訪問限制 {#no-access-restriction}
 
@@ -143,9 +147,9 @@ Handlebars(HBS)範本檔案(.hbs)類似於.jsp和.html範本檔案，但它們�
 
 ### 添加或包含社區元件 {#add-or-include-a-communities-component}
 
-大部分的Communities元件必須&#x200B;*新增*&#x200B;作為Sling可定址資源。 在模板中選擇的幾個Communities元件可以&#x200B;*包括*&#x200B;作為非現有資源，以允許動態地包含和定制寫入用戶生成內容(UGC)的位置。
+大多數Communities元件必須 *新增* 作為Sling可定址資源時。 Communities的一些元件可能是 *包含* 在範本中作為非現有資源，以允許動態包含和自訂寫入使用者產生內容(UGC)的位置。
 
-無論是哪種情況，元件的[必要的客戶端庫](clientlibs.md)也必須存在。
+無論是哪種情況，元件的 [必要的客戶端庫](clientlibs.md) 也必須有。
 
 **新增元件**
 
@@ -155,7 +159,7 @@ Handlebars(HBS)範本檔案(.hbs)類似於.jsp和.html範本檔案，但它們�
 
 **包含元件**
 
-包括元件是指在範本內新增參考至[&quot;non-existing&quot; resource](srp.md#for-non-existing-resources-ners)(no JCR node)的程式，例如使用指令碼語言。
+包括元件是指將參照新增至 [「非現有」資源](srp.md#for-non-existing-resources-ners) （無JCR節點），例如使用指令碼語言。
 
 自AEM 6.1起，當元件以動態方式包含而非新增時，即可在製作*設計*模式中編輯元件的屬性。
 
@@ -166,13 +170,13 @@ Handlebars(HBS)範本檔案(.hbs)類似於.jsp和.html範本檔案，但它們�
 * [評論](reviews-basics.md)
 * [投票](essentials-voting.md)
 
-[社區元件指南](components-guide.md)允許切換可包含的元件，使其不被添加到要包含的元件。
+此 [社群元件指南](components-guide.md) 允許切換可包含的元件，使其不會新增至包含中。
 
-**使用Handlebarstemplating** 語言時，會使用include helper來包含非現有資 [源，](handlebars-helpers.md#include) 方法是指定其resourceType:
+**使用Handlebars時** 範本語言，則會使用 [包含協助程式](handlebars-helpers.md#include) 通過指定其resourceType:
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 
-**使用JSP**&#x200B;時，會使用標籤cq包含 [資源：include](../../help/sites-developing/taglib.md#lt-cq-include):
+**使用JSP時**，則會使用標籤包含資源 [cq:include](../../help/sites-developing/taglib.md#lt-cq-include):
 
 ```
 <cq:include path="votes" 
@@ -181,17 +185,17 @@ Handlebars(HBS)範本檔案(.hbs)類似於.jsp和.html範本檔案，但它們�
 
 >[!NOTE]
 >
->若要動態地將元件新增至頁面，而非將元件新增或加入範本，請參閱[元件側載](sideloading.md)。
+>若要動態新增元件至頁面，而非將元件新增或加入範本，請參閱 [元件側載](sideloading.md).
 
 ### Handlebars Helpers {#handlebars-helpers}
 
-有關SCF中可用的自定義幫助器的清單和說明，請參閱[SCF Handlebars Helpers](handlebars-helpers.md)。
+請參閱 [SCF Handlebars幫助器](handlebars-helpers.md) 以獲取SCF中提供的自定義幫助程式的清單和說明。
 
 ## 用戶端架構 {#client-side-framework}
 
 ### 模型檢視Javascript架構 {#model-view-javascript-framework}
 
-此架構包含[Backbone.js](https://www.backbonejs.org/)的擴充功能，此為模型檢視的JavaScript架構，可協助開發豐富的互動式元件。 物件導向的性質支援可擴展/可重複使用的框架。 借由HTTP API可簡化用戶端與伺服器之間的通訊。
+此架構包含 [骨幹.js](https://www.backbonejs.org/)，此元件為模型檢視的JavaScript架構，以促進開發豐富的互動式元件。 物件導向的性質支援可擴展/可重複使用的框架。 借由HTTP API可簡化用戶端與伺服器之間的通訊。
 
 該框架利用伺服器端Handlebars模板來呈現客戶端的元件。 這些模型以HTTP API產生的JSON回應為基礎。 視圖將自身綁定到由Handlebars模板生成的HTML，並提供交互性。
 
@@ -205,7 +209,7 @@ Handlebars(HBS)範本檔案(.hbs)類似於.jsp和.html範本檔案，但它們�
 
 ### 用戶端自訂 {#client-side-customizations}
 
-若要自訂用戶端上Communities元件的外觀和行為，請參考[用戶端自訂](client-customize.md)，其中包含下列資訊：
+若要自訂用戶端上Communities元件的外觀和行為，請參閱 [用戶端自訂](client-customize.md)，其中包含下列資訊：
 
 * [覆蓋](client-customize.md#overlays)
 * [擴充功能](client-customize.md#extensions)
@@ -216,10 +220,10 @@ Handlebars(HBS)範本檔案(.hbs)類似於.jsp和.html範本檔案，但它們�
 
 ## 功能和元件要點 {#feature-and-component-essentials}
 
-[功能和元件要件](essentials.md)區段中有關開發人員的基本資訊。
+開發人員的基本資訊如 [功能和元件要點](essentials.md) 區段。
 
-可在[編碼指南](code-guide.md)部分找到其他開發人員資訊。
+如需其他開發人員資訊，請參閱 [編碼准則](code-guide.md) 區段。
 
 ## 疑難排解 {#troubleshooting}
 
-[疑難排解](troubleshooting.md)一節將說明常見問題和已知問題。
+常見問題和已知問題於 [疑難排解](troubleshooting.md) 區段。

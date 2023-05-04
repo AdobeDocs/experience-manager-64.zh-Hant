@@ -1,22 +1,26 @@
 ---
 title: 檔案安全性 |處理用戶資料
-seo-title: 檔案安全性 |處理用戶資料
+seo-title: Document Security | Handling user data
 description: AEM Forms檔案安全性可讓您建立、儲存預先定義的安全性設定，並將其套用至您的檔案。 它確保只有授權用戶才能使用文檔。 了解文檔安全性如何組織資料庫表中的資料、訪問和導出資料庫中用戶的文檔安全資料，如果需要，可以永久刪除它。
-seo-description: AEM Forms檔案安全性可讓您建立、儲存預先定義的安全性設定，並將其套用至您的檔案。 它確保只有授權用戶才能使用文檔。 了解文檔安全性如何組織資料庫表中的資料、訪問和導出資料庫中用戶的文檔安全資料，如果需要，可以永久刪除它。
+seo-description: AEM Forms document security allows you to create, store, and apply predefined security settings to your documents. It ensures that only authorized users can use the documents. Learn how document security organizes data in database tables, access and export document security data for users in the databases, and if required, delete it permanently.
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 role: Admin
 exl-id: eeffd886-8955-46eb-aa6d-dd4da5e8570c
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1032'
 ht-degree: 0%
 
 ---
 
 # 檔案安全性 |處理用戶資料 {#document-security-handling-user-data}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 AEM Forms檔案安全性可讓您建立、儲存預先定義的安全性設定，並將其套用至您的檔案。 它確保只有授權用戶才能使用文檔。 您可以使用策略保護文檔。 策略是資訊的集合，包括安全設定和授權用戶清單。 您可以將原則套用至一或多個檔案，並授權新增至AEM Forms JEE使用者管理的使用者。
 
@@ -24,7 +28,7 @@ AEM Forms檔案安全性可讓您建立、儲存預先定義的安全性設定�
 
 ## 使用者資料和資料儲存 {#user-data-and-data-stores}
 
-文檔安全儲存與受保護文檔相關的策略和資料，包括資料庫中的用戶資料，如My Sql 、Oracle、MS SQL Server和IBM DB2。 此外，在用戶管理中儲存的策略中授權用戶的資料。 如需儲存在使用者管理中的資料相關資訊，請參閱[Forms使用者管理：處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
+文檔安全性儲存與受保護文檔相關的策略和資料，包括資料庫中的用戶資料，如My Sql、Med Sql、MS SQL Server和IBM DB2。 此外，在用戶管理中儲存的策略中授權用戶的資料。 如需儲存在使用者管理中的資料相關資訊，請參閱 [Forms使用者管理：處理使用者資料](/help/forms/using/user-management-handling-user-data.md).
 
 下表映射了文檔安全性如何在資料庫表中組織資料。
 
@@ -64,7 +68,7 @@ AEM Forms檔案安全性可讓您建立、儲存預先定義的安全性設定�
   </tr> 
   <tr> 
    <td><code>EdcPolicyXmlEntity</code></td> 
-   <td>儲存活動策略的XML檔案。 策略XML<sup> </sup>包含對與該策略關聯的用戶的主ID的引用。 策略XML儲存為Blob對象。</td> 
+   <td>儲存活動策略的XML檔案。 策略XML<sup> </sup>包含與策略關聯的用戶的主體ID的引用。 策略XML儲存為Blob對象。</td> 
   </tr> 
   <tr> 
    <td><code>EdcPolicyArchiveEntity</code></td> 
@@ -85,9 +89,9 @@ AEM Forms檔案安全性可讓您建立、儲存預先定義的安全性設定�
 
 您可以訪問和導出資料庫中用戶的文檔安全資料，如果需要，可以永久刪除該資料。
 
-要從資料庫導出或刪除用戶資料，您需要使用資料庫客戶端連接到資料庫，並根據用戶的某些個人身份資訊查找主ID。 例如，要使用登錄ID檢索用戶的主ID，請在資料庫上運行以下`select`命令。
+要從資料庫導出或刪除用戶資料，您需要使用資料庫客戶端連接到資料庫，並根據用戶的某些個人身份資訊查找主ID。 例如，要使用登錄ID檢索用戶的主體ID，請運行以下 `select` 命令。
 
-在`select`命令中，將`<user_login_id>`替換為要從`EdcPrincipalUserEntity`資料庫表中檢索其主ID的用戶的登錄ID。
+在 `select` 命令，替換 `<user_login_id>` 使用您要從 `EdcPrincipalUserEntity` 資料庫表。
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -97,11 +101,11 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 ### 匯出使用者資料 {#export-user-data}
 
-運行以下資料庫命令，從資料庫表導出主ID的用戶資料。 在`select`命令中，將`<principal_id>`替換為要導出其資料的用戶的主ID。
+運行以下資料庫命令，從資料庫表導出主ID的用戶資料。 在 `select` 命令，替換 `<principal_id>` 具有您要匯出其資料之使用者的主要ID。
 
 >[!NOTE]
 >
->以下命令在My SQL和IBM DB2資料庫中使用資料庫表名。 在Oracle和MS SQL資料庫上運行這些命令時，請在命令中將`EdcPolicySetPrincipalEntity`替換為`EdcPolicySetPrincipalEnt`。
+>以下命令在My SQL和IBM DB2資料庫中使用資料庫表名。 在Oracle和MS SQL資料庫上運行這些命令時，請替換 `EdcPolicySetPrincipalEntity` with `EdcPolicySetPrincipalEnt` 中。
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -127,16 +131,16 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->若要從`EdcAuditEntity`表格匯出資料，請使用以[EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)為參數的[EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API，以根據`principalId`、`policyId`或`licenseId`匯出稽核資料。
+>若要從匯出資料， `EdcAuditEntity` 表格，使用 [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) 採用的API [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) 作為參數，以根據 `principalId`, `policyId`，或 `licenseId`.
 
-要獲取系統中某個用戶的完整資料，必須從用戶管理資料庫訪問和導出資料。 如需詳細資訊，請參閱[Forms使用者管理：處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
+要獲取系統中某個用戶的完整資料，必須從用戶管理資料庫訪問和導出資料。 如需詳細資訊，請參閱 [Forms使用者管理：處理使用者資料](/help/forms/using/user-management-handling-user-data.md).
 
 ### 刪除使用者資料 {#delete-user-data}
 
 執行以下操作以從資料庫表中刪除主體ID的文檔安全資料。
 
 1. 關閉AEM Forms伺服器。
-1. 運行以下資料庫命令，從資料庫表中刪除主ID的資料以確保文檔安全。 在`Delete`命令中，將`<principal_id>`替換為要刪除其資料的用戶的主ID。
+1. 運行以下資料庫命令，從資料庫表中刪除主ID的資料以確保文檔安全。 在 `Delete` 命令，替換 `<principal_id>` 具有您要刪除其資料之使用者的主體ID。
 
    ```sql
    Delete from EdcPrincipalKeyEntity where principalid = '<principal_id>';
@@ -152,17 +156,17 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
    >[!NOTE]
    >
-   >若要從`EdcAuditEntity`表格刪除資料，請使用以[EventManager.deleteEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html)EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)為參數的[EventManager.deleteEvents API，以根據`principalId`、`policyId`或`licenseId`刪除稽核資料。
+   >若要從 `EdcAuditEntity` 表格，使用 [EventManager.deleteEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) 採用的API [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) 作為參數，以根據 `principalId`, `policyId`，或 `licenseId`.
 
-1. 活動策略和歸檔策略XML檔案分別儲存在`EdcPolicyXmlEntity`和`EdcPolicyArchiveEntity`資料庫表中。 要從這些表中刪除用戶的資料，請執行以下操作：
+1. 活動和歸檔的策略XML檔案儲存在 `EdcPolicyXmlEntity` 和 `EdcPolicyArchiveEntity` 資料庫表。 要從這些表中刪除用戶的資料，請執行以下操作：
 
-   1. 開啟`EdcPolicyXMLEntity`或`EdcPolicyArchiveEntity`表中每行的XML blob，並提取XML檔案。 XML檔案與下面所示的檔案類似。
+   1. 開啟 `EdcPolicyXMLEntity` 或 `EdcPolicyArchiveEntity` 表格並解壓縮XML檔案。 XML檔案與下面所示的檔案類似。
    1. 編輯XML檔案以刪除主體ID的blob。
    1. 對另一個檔案重複步驟1和2。
 
    >[!NOTE]
    >
-   >必須刪除`Principal`標籤中的完整blob，主體ID才能刪除，否則策略XML可能已損壞或無法使用。
+   >您必須移除 `Principal` 主ID或策略XML的標籤可能已損壞或不可用。
 
    ```xml
    <ns2:Principal PrincipalNameType="USER">
@@ -191,25 +195,25 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
    <ns2:Permission PermissionName="ns3:com.adobe.aps.pdf.printLow" Access="ALLOW"/>
    ```
 
-   除了直接從`EdcPolicyXmlEntity`表格刪除資料外，您還可以透過下列兩種方式達成此目標：
+   除了直接從 `EdcPolicyXmlEntity` 表格，您還可以透過以下兩種方式達成此目標：
 
    **使用管理控制台**
 
-   1. 以管理員身分登入Forms JEE管理主控台，網址為https://[*server*]:[*port*]/adminui。
-   1. 導航到&#x200B;**[!UICONTROL 服務>文檔安全>策略集]**。
+   1. 以管理員身分，前往https://登入Forms JEE管理主控台&#x200B;[*伺服器*]:[*埠*]/adminui。
+   1. 導覽至 **[!UICONTROL 「服務」>「文檔安全」>「策略集」]**.
    1. 開啟策略集，然後從策略中刪除用戶。
 
    **使用文檔安全網頁**
 
    具有建立個人策略權限的文檔安全用戶可以從其策略中刪除用戶資料。 若要這麼做：
 
-   1. 擁有個人策略的用戶登錄到其文檔安全網頁：https://[*server*]:[*port*]/edc。
-   1. 導覽至「**[!UICONTROL 服務>檔案安全性>我的原則]**」。
+   1. 擁有個人策略的用戶登錄其文檔安全網頁(網址為https://)[*伺服器*]:[*埠*]/edc。
+   1. 導覽至 **[!UICONTROL 「服務」>「文檔安全」>「我的策略」]**.
    1. 開啟原則，然後從原則中刪除使用者。
 
    >[!NOTE]
    >
-   >管理員可以使用管理控制台，從&#x200B;**[!UICONTROL 服務>文檔安全性>我的策略]**&#x200B;中其他用戶的個人策略中搜索、訪問和刪除用戶資料。
+   >管理員可從下列位置的其他使用者的個人原則中搜尋、存取及刪除使用者資料： **[!UICONTROL 「服務」>「文檔安全」>「我的策略」]** 使用管理控制台。
 
-1. 從用戶管理資料庫中刪除主體ID的資料。 如需詳細步驟，請參閱[Forms使用者管理 |處理使用者資料](/help/forms/using/user-management-handling-user-data.md)。
+1. 從用戶管理資料庫中刪除主體ID的資料。 如需詳細步驟，請參閱 [Forms使用者管理 |處理用戶資料](/help/forms/using/user-management-handling-user-data.md).
 1. 啟動AEM Forms伺服器。

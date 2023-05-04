@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 66c19394-9d2f-4bdd-9c17-f0ec8090f0b4
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '785'
 ht-degree: 8%
 
 ---
 
 # We.Retail參考實作{#we-retail-reference-implementation}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 ## 簡介 {#introduction}
 
@@ -88,7 +92,7 @@ We.Retail在技術上更穩健，利用最新的AEM技術來提高靈活性和�
 | 可編輯的範本 | 適用於所有頁面 | 不可用 |
 | HTL | 所有元件 | 有限 |
 | 定位 | 適用於所有頁面 | 僅Geometrixx Outdoors |
-| 畫面 | 可用 | 不可用 |
+| Screens | 可用 | 不可用 |
 | 行動 | 不可用 | 可用 |
 | 手稿 | 不可用 | 可用 |
 | 輪播，下載，圖表元件 | 不可用 | 可用 |

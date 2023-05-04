@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: platform
 discoiquuid: d8ee3b57-633a-425e-bf36-646f0e0bad52
 exl-id: 3faf9d09-8899-4916-b768-8ff39900b959
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1862'
-ht-degree: 0%
+source-wordcount: '1898'
+ht-degree: 1%
 
 ---
 
 # 開發（一般）{#developing-generic}
+
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -328,9 +332,9 @@ public class AxisFilter implements VariantFilter {
       * `String CommerceSession.getProductPrice(Product product)`
 
 
-**儲存**
+**儲存空間**
 
-* 儲存
+* 儲存空間
 
    * 在AEM-generic案例中，購物車儲存在 [ClientContext](/help/sites-administering/client-context.md)
 

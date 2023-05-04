@@ -2,7 +2,7 @@
 title: AEM Forms on OSGi Groups and Privileges
 seo-title: AEM Forms on OSGi Groups and Privileges
 description: 將使用者指派至群組，以在OSGi上管理AEM Forms
-seo-description: 將使用者指派至群組，以在OSGi上管理AEM Forms
+seo-description: Assign users to the groups to manage AEM Forms on OSGi
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -11,20 +11,24 @@ topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 role: Admin
 exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '290'
+ht-degree: 3%
 
 ---
 
 # AEM Forms on OSGi Groups and Privileges {#aem-forms-on-osgi-groups-and-privileges}
 
+>[!CAUTION]
+>
+>AEM 6.4已結束延伸支援，本檔案不再更新。 如需詳細資訊，請參閱 [技術支援期](https://helpx.adobe.com//tw/support/programs/eol-matrix.html). 尋找支援的版本 [此處](https://experienceleague.adobe.com/docs/).
+
 將使用者指派至群組，以在OSGi上管理AEM Forms
 
-您可以[建立群組](/help/sites-administering/user-group-ac-admin.md#group-administration)，並將原則及[使用者](/help/sites-administering/user-group-ac-admin.md#user-administration)指派給AEM中的群組。 這些策略控制屬於組的用戶的權限。
+您可以 [建立群組](/help/sites-administering/user-group-ac-admin.md#group-administration) 並分配策略和 [使用者](/help/sites-administering/user-group-ac-admin.md#user-administration) 至AEM中的群組。 這些策略控制屬於組的用戶的權限。
 
-安裝[AEM Forms附加元件套件](/help/forms/using/installing-configuring-aem-forms-osgi.md)後，本文提及的群組（例如forms-user和forms-power-user）就可自動供指派。 下表列出使用者可根據群組指派在OSGi上為AEM Forms執行的任務：
+安裝後 [AEM Forms附加元件套件](/help/forms/using/installing-configuring-aem-forms-osgi.md)，本文提及的群組（例如forms-user和forms-power-user）會自動可供指派。 下表列出使用者可根據群組指派在OSGi上為AEM Forms執行的任務：
 
 <table> 
  <tbody>
@@ -63,7 +67,7 @@ ht-degree: 1%
     </ul> </td> 
   </tr>
   <tr>
-   <td>範本作者<sup>[2]</sup></td> 
+   <td>範本作者 <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>建立並預覽最適化表單或互動式通訊範本</li> 
