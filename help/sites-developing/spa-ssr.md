@@ -194,7 +194,7 @@ public class CustomRemoteContentRendererRequestHandlerImpl implements RemoteCont
 
 預設處理常式的設定必須依照一節所述進行設定 [遠端內容轉譯器設定](#remote-content-renderer-configuration).
 
-###遠端內容轉譯器使用狀況 {#usage}
+### 遠端內容轉譯器使用狀況 {#usage}
 
 若要讓servlet擷取並傳回可插入頁面的某些內容：
 
